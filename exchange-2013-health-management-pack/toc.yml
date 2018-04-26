@@ -1,0 +1,141 @@
+- name: Indicateurs d'intégration du pack d'administration Exchange 2013
+  href: exchange-2013-management-pack-health-sets.md
+  items:
+  - name: Dépannage de l'indicateur d'intégrité ActiveSync
+    href: troubleshooting-activesync-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité ActiveSync.Protocol
+    href: troubleshooting-activesync-protocol-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité ActiveSync.Proxy
+    href: troubleshooting-activesync-proxy-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité AD
+    href: troubleshooting-ad-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité Antimalware
+    href: troubleshooting-antimalware-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité AntiSpam
+    href: troubleshooting-antispam-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité Autodiscover
+    href: troubleshooting-autodiscover-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité Autodiscover.Protocol
+    href: troubleshooting-autodiscover-protocol-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité Autodiscover.Proxy
+    href: troubleshooting-autodiscover-proxy-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité Classification
+    href: troubleshooting-classification-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité ClientAccess.Proxy
+    href: troubleshooting-clientaccess-proxy-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité Compliance
+    href: troubleshooting-compliance-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité DataProtection
+    href: troubleshooting-dataprotection-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité DiskSpace
+    href: troubleshooting-diskspace-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité ECP
+    href: troubleshooting-ecp-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité ECP.Proxy
+    href: troubleshooting-ecp-proxy-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité EDS
+    href: troubleshooting-eds-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité EventAssistants
+    href: troubleshooting-eventassistants-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité EWS
+    href: troubleshooting-ews-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité EWS.Protocol
+    href: troubleshooting-ews-protocol-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité EWS.Proxy
+    href: troubleshooting-ews-proxy-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité FfoQuarantine
+    href: troubleshooting-ffoquarantine-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité FfoTransport
+    href: troubleshooting-ffotransport-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité FfoUmc
+    href: troubleshooting-ffoumc-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité FfoWebService
+    href: troubleshooting-ffowebservice-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité FIPS
+    href: troubleshooting-fips-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité FreeBusy
+    href: troubleshooting-freebusy-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité FrontendTransport
+    href: troubleshooting-frontendtransport-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité de transport HUB
+    href: troubleshooting-hubtransport-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité IMAP
+    href: troubleshooting-imap-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité IMAP.Protocol
+    href: troubleshooting-imap-protocol-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité IMAP.Proxy
+    href: troubleshooting-imap-proxy-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité MailboxMigration
+    href: troubleshooting-mailboxmigration-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité MailboxSpace
+    href: troubleshooting-mailboxspace-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité MailboxTransport
+    href: troubleshooting-mailboxtransport-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité Mailflow
+    href: troubleshooting-mailflow-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité Memory
+    href: troubleshooting-memory-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité MessageTracing
+    href: troubleshooting-messagetracing-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité Monitoring
+    href: troubleshooting-monitoring-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité MRS
+    href: troubleshooting-mrs-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité MSExchangeCertificateDeployment
+    href: troubleshooting-msexchangecertificatedeployment-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité Network
+    href: troubleshooting-network-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité OAB
+    href: troubleshooting-oab-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité OAB.Proxy
+    href: troubleshooting-oab-proxy-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité Outlook
+    href: troubleshooting-outlook-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité Outlook.Protocol
+    href: troubleshooting-outlook-protocol-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité Outlook.Proxy
+    href: troubleshooting-outlook-proxy-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité OWA
+    href: troubleshooting-owa-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité OWA.Protocol
+    href: troubleshooting-owa-protocol-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité OWA.Protocol.Dep
+    href: troubleshooting-owa-protocol-dep-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité OWA.Proxy
+    href: troubleshooting-owa-proxy-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité POP
+    href: troubleshooting-pop-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité POP.Protocol
+    href: troubleshooting-pop-protocol-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité POP.Proxy
+    href: troubleshooting-pop-proxy-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité PowershellDataProvider
+    href: troubleshooting-powershelldataprovider-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité PublicFolders
+    href: troubleshooting-publicfolders-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité PushNotifications.Protocol
+    href: troubleshooting-pushnotifications-protocol-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité RemoteMonitoring
+    href: troubleshooting-remotemonitoring-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité RPS
+    href: troubleshooting-rps-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité RPS.Proxy
+    href: troubleshooting-rps-proxy-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité Search
+    href: troubleshooting-search-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité SiteMailbox
+    href: troubleshooting-sitemailbox-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité SMTP
+    href: troubleshooting-smtp-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité Store
+    href: troubleshooting-store-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité Transport
+    href: troubleshooting-transport-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité UM
+    href: troubleshooting-um-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité UM.CallRouter
+    href: troubleshooting-um-callrouter-health-set.md
+  - name: Dépannage de l'indicateur d'intégrité UM.Protocol
+    href: troubleshooting-um-protocol-health-set.md
+  - name: Dépannage de l’indicateur d’intégrité UserThrottling
+    href: troubleshooting-userthrottling-health-set.md
