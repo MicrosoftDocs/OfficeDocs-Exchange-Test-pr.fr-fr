@@ -1,0 +1,93 @@
+- name: Déploiements hybrides Exchange Server 2013
+  href: exchange-server-hybrid-deployments-exchange-2013-help.md
+  items:
+  - name: Assistant de configuration hybride
+    href: hybrid-configuration-wizard-exchange-2013-help.md
+  - name: FAQ de l’assistant Configuration hybride
+    href: hybrid-configuration-wizard-faqs-exchange-2013-help.md
+  - name: Configuration requise pour un déploiement hybride
+    href: hybrid-deployment-prerequisites-exchange-2013-help.md
+  - name: Conditions requises pour les certificats dans le cadre de déploiements hybrides
+    href: certificate-requirements-for-hybrid-deployments-exchange-2013-help.md
+  - name: Options de transport dans les déploiements hybrides Exchange
+    href: transport-options-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Routage de transport dans les déploiements hybrides Exchange
+    href: transport-routing-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Gestion hybride dans les déploiements hybrides Exchange
+    href: hybrid-management-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Partage des disponibilités dans des déploiements hybrides Exchange
+    href: shared-free-busy-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Rôles serveur dans les déploiements hybrides Exchange
+    href: server-roles-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Gestion des droits relatifs à l’information (IRM) dans des déploiements hybrides Exchange
+    href: irm-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Autorisations dans les déploiements hybrides Exchange
+    href: permissions-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Serveurs de transport Edge avec déploiements hybrides
+    href: edge-transport-servers-with-hybrid-deployments-exchange-2013-help.md
+  - name: Authentification unique avec les déploiements hybrides
+    href: single-sign-on-with-hybrid-deployments-exchange-2013-help.md
+  - name: Paramètres du périphérique Exchange ActiveSync avec des déploiements hybrides Exchange
+    href: exchange-activesync-device-settings-with-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Facteurs de performances et meilleures pratiques pour les migrations hybrides
+    href: performance-factors-and-best-practices-for-hybrid-migrations-exchange-2013-help.md
+  - name: Comment et quand désaffecter vos serveurs Exchange locaux dans un déploiement hybride
+    href: how-and-when-to-decommission-your-on-premises-exchange-servers-in-a-hybrid-deployment-exchange-2013-help.md
+  - name: Procédures de déploiement hybride
+    href: hybrid-deployment-procedures-exchange-2013-help.md
+    items:
+    - name: Création d'un déploiement hybride avec l’assistant Configuration hybride
+      href: create-a-hybrid-deployment-with-the-hybrid-configuration-wizard-exchange-2013-help.md
+    - name: Déplacement de boîtes aux lettres entre des organisations locales et Exchange Online dans des déploiements hybrides
+      href: move-mailboxes-between-on-premises-and-exchange-online-organizations-in-hybrid-deployments-exchange-2013-help.md
+    - name: Configurer des dossiers publics locaux hérités dans le cadre d’un déploiement hybride
+      href: configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+    - name: Configurer les dossiers publics Exchange 2013 pour un déploiement hybride
+      href: configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+    - name: Configurer les dossiers publics Exchange Online pour un déploiement hybride
+      href: configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+    - name: Configurer Exchange pour prendre en charge des autorisations de boîtes aux lettres déléguées dans un déploiement hybride
+      href: configure-exchange-to-support-delegated-mailbox-permissions-in-a-hybrid-deployment-exchange-2013-help.md
+    - name: Configuration des pièces jointes actuelles avec OneDrive Entreprise et Exchange 2016 en local
+      href: configure-document-collaboration-with-onedrive-for-business-and-exchange-2016-on-premises-exchange-2013-help.md
+    - name: Configurer des groupes Office 365 avec un environnement Exchange hybride local
+      href: configure-office-365-groups-with-on-premises-exchange-hybrid-exchange-2013-help.md
+    - name: Création d’une archive informatique pour une boîte aux lettres principale locale dans un déploiement hybride
+      href: create-a-cloud-based-archive-for-an-on-premises-primary-mailbox-in-an-exchange-hybrid-deployment-exchange-online-help.md
+    - name: Simplifier l’URL d’Outlook Web App pour une configuration hybride d’Office 365
+      href: simplify-the-outlook-web-app-url-for-office-365-hybrid-exchange-2013-help.md
+    - name: Dépannage d’un déploiement hybride
+      href: troubleshoot-a-hybrid-deployment-exchange-2013-help.md
+  - name: Déploiements hybrides avec Exchange 2013 et Exchange 2007
+    href: hybrid-deployments-with-exchange-2013-and-exchange-2007-exchange-2013-help.md
+    items:
+    - name: Rôles serveur dans les déploiements hybrides Exchange 2013/Exchange 2007
+      href: server-roles-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+    - name: Gestion hybride dans les déploiements hybrides Exchange 2013/Exchange 2007
+      href: hybrid-management-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+    - name: Serveurs de transport Edge dans les déploiements hybrides Exchange 2013/Exchange 2007
+      href: edge-transport-servers-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+    - name: Options de transport dans les déploiements hybrides Exchange 2013/Exchange 2007
+      href: transport-options-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+    - name: Routage de transport dans les déploiements hybrides Exchange 2013/Exchange 2007
+      href: transport-routing-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+  - name: Déploiements hybrides avec Exchange 2013 et Exchange 2010
+    href: hybrid-deployments-with-exchange-2013-and-exchange-2010-exchange-2013-help.md
+    items:
+    - name: Rôles serveur dans les déploiements hybrides Exchange 2013/Exchange 2010
+      href: server-roles-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+    - name: Gestion hybride dans les déploiements hybrides Exchange 2013/Exchange 2010
+      href: hybrid-management-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+    - name: Serveurs de transport Edge dans les déploiements hybrides Exchange 2013/Exchange 2010
+      href: edge-transport-servers-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+    - name: Options de transport dans les déploiements hybrides Exchange 2013/Exchange 2010
+      href: transport-options-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+    - name: Routage de transport dans les déploiements hybrides Exchange 2013/Exchange 2010
+      href: transport-routing-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+  - name: À propos de la documentation Exchange
+    href: about-exchange-documentation-exchange-2013-help.md
+    items:
+    - name: Accessibilité pour les personnes présentant un handicap
+      href: accessibility-for-people-with-disabilities-exchange-2013-help.md
+    - name: Copyright tiers
+      href: third-party-copyright-notices-exchange-2013-help.md
