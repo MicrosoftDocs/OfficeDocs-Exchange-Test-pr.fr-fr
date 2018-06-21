@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2017-07-25_
+_<strong>Dernière rubrique modifiée :</strong>2017-07-25_
 
 **Résumé** : Préparation de votre environnement Exchange pour pouvoir configurer un déploiement hybride.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-09_
 
 Cette rubrique vous présente le processus de configuration de déploiement hybride Exchange, les fonctions et options de déploiement hybride dont vous disposez ainsi que le moteur de configuration hybride qui exécute les principales actions nécessaires à la fois à la configuration et la mise à jour d’un déploiement hybride.
 
