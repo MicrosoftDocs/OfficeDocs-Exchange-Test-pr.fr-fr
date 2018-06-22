@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-04-29_
+_<strong>Dernière rubrique modifiée :</strong>2016-04-29_
 
 La configuration d’un déploiement hybride dans Exchange avec l’assistant de configuration hybride minimise considérablement le risque que le déploiement hybride rencontre des problèmes. Toutefois, certains points types n’appartenant pas au champ d’application de l’assistant de configuration hybride peuvent, s’ils ne sont pas correctement configurés, poser des problèmes dans un déploiement hybride. Cette rubrique traite des points communs suivants susceptibles de poser des problèmes, et décrit les étapes de base permettant de vérifier ou de corriger des problèmes :
 

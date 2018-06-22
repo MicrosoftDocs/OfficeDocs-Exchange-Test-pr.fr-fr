@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-09_
 
 Cette documentation se compose d'un ensemble de procédures et de rubriques conceptuelles organisées par sujet ou par technologie utilisée par Microsoft Exchange. Vous pouvez accéder à chaque rubrique directement depuis la table des matières dans le volet gauche, à partir d'un lien figurant dans une autre rubrique d'aide, à partir des résultats d'une recherche ou à partir de votre propre liste personnalisée de rubriques favorites.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2018-04-16_
+_<strong>Dernière rubrique modifiée :</strong>2018-04-16_
 
 Généralement, le rôle serveur de transport Edge est un rôle facultatif déployé sur un ordinateur dans un réseau de l’organisation Exchange. Il est conçu pour minimiser la surface d’attaque de l’organisation. Le rôle serveur de transport Edge gère tout le flux de messagerie côté Internet, qui offre des services de relais SMTP et d’hôte actif pour les serveurs Exchange locaux internes de votre organisation.
 

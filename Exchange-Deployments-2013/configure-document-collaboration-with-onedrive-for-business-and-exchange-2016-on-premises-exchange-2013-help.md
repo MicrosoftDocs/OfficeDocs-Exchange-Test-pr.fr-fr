@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-09_
 
 **Résumé** : Comment permettre à vos utilisateurs Exchange Server 2016 localement de tirer parti de l’utilisation de la collaboration sur des documents avec OneDrive Entreprise et SharePoint Online dans une configuration hybride.
 

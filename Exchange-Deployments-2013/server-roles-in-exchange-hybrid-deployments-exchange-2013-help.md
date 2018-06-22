@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-09_
 
 Vous pouvez configurer des déploiements hybrides basés sur Exchange 2013 et Exchange 2016. Les rôles qui doivent être configurés pour prendre en charge un déploiement hybride dépendent de la version de Exchange que vous utilisez.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-15_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-15_
 
 Microsoft s’engage à faciliter l’utilisation de ses produits et services pour tous. Les sections suivantes fournissent des informations sur les fonctionnalités, produits et services visant à faciliter l’accès des personnes à mobilité réduite à Microsoft:
 

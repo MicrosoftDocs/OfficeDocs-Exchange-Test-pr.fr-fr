@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2017-10-02_
+_<strong>Dernière rubrique modifiée :</strong>2017-10-02_
 
 Dans un déploiement Exchange hybride, vous pouvez soit déplacer des boîtes aux lettres Exchange locales vers l’organisation Exchange Online, soit déplacer des boîtes aux lettres Exchange Online vers l’organisation Exchange. Quand vous déplacez des boîtes aux lettres entre des organisations Exchange locales et Exchange Online, vous utilisez des lots de migration pour effectuer la demande de déplacement de boîte aux lettres à distance. Cette approche vous permet de déplacer des boîtes aux lettres existantes au lieu de créer des boîtes aux lettres utilisateur, puis d’y importer des informations utilisateur. Cette approche diffère de la migration de boîtes aux lettres utilisateur à partir d’une organisation Exchange locale vers Exchange Online dans le cadre d’une migration Exchange complète vers le nuage. Les déplacements de boîtes aux lettres décrits dans cette rubrique font partie de la gestion administrative d’Exchange dans le cadre d’une relation de coexistence à plus long terme entre les organisations Exchange locales et Exchange Online.
 
@@ -67,7 +67,7 @@ Avant de déplacer des boîtes aux lettres à messagerie unifiée vers Exchange 
 
 Avant d’effectuer des migrations de déplacement à distance par embarquement et débarquement dans un déploiement Exchange hybride, nous vous recommandons de créer des points de terminaison de migration à distance Exchange. Le point de terminaison de migration contient les paramètres de connexion pour un serveur Exchange local exécutant le service proxy MRS requis pour effectuer des migrations de déplacement à distance vers et à partir d’Exchange Online.
 
-Pour connaître les procédures pas à pas, consultez la rubrique [Création de points de terminaison de migration](https://technet.microsoft.com/fr-fr/library/jj874458\(v=exchg.150\)).
+Pour connaître les procédures pas à pas, consultez la rubrique Création de points de terminaison de migration.
 
 ## Étape 2 : Activation du service proxy MRS
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2017-01-20_
+_<strong>Dernière rubrique modifiée :</strong>2017-01-20_
 
 Dans un déploiement hybride Exchange, vous pouvez configurer une boîte aux lettres principale locale avec une boîte aux lettres d’archivage informatique dans Exchange Online.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-04-29_
+_<strong>Dernière rubrique modifiée :</strong>2016-04-29_
 
 Le partage des informations de disponibilité (également appelées disponibilité de calendrier) entre les utilisateurs d’une organisation locale et ceux d’une organisation Exchange Online est l’un des principaux avantages d’un déploiement hybride. Les utilisateurs des deux organisations peuvent consulter leurs calendriers mutuels, comme s’ils se trouvaient physiquement dans la même organisation. Cela facilite et optimise la planification des réunions et des ressources.
 

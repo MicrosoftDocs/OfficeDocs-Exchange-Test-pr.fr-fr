@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-09_
 
 Il existe de nombreux chemins pour migrer des données à partir d’une organisation de messagerie sur site vers Office 365. Lorsque vous planifiez une migration vers Office 365, une des questions courantes concerne la façon d’améliorer les performances de migration des données et la rapidité de migration. Cet article traite des performances de migration pour les déploiements hybrides Exchange. Pour obtenir des informations sur les autres méthodes de migration, voir [Performances de la migration Office 365 et des pratiques recommandées](http://go.microsoft.com/fwlink/p/?linkid=623651).
 

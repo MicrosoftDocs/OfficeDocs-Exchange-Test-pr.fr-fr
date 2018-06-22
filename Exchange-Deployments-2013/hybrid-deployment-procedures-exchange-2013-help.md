@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2017-06-14_
+_<strong>Dernière rubrique modifiée :</strong>2017-06-14_
 
 La configuration et la gestion de déploiements hybrides sont plus faciles que jamais grâce aux dernières améliorations apportées à l’assistant de configuration hybride. Que vous souhaitiez vous connecter à votre organisation Exchange locale et à votre organisation Exchange Online pour une coexistence à long terme ou dans le cadre d’une stratégie de migration vers le nuage, la configuration d’un déploiement hybride est la première étape pour votre organisation Exchange.
 
