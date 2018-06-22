@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Il existe de nombreux chemins pour migrer des données à partir d’une organisation de messagerie sur site vers Office 365. Lorsque vous planifiez une migration vers Office 365, une des questions courantes concerne la façon d’améliorer les performances de migration des données et la rapidité de migration. Cet article traite des performances de migration pour les déploiements hybrides Exchange. Pour obtenir des informations sur les autres méthodes de migration, voir [Performances de la migration Office 365 et des pratiques recommandées](http://go.microsoft.com/fwlink/p/?linkid=623651).
 
@@ -82,7 +82,7 @@ En plus de l’application des meilleures pratiques décrites précédemment, no
 
 Par exemple, lors de migrations réelles chez des clients, nous avons obtenu un débit régulier de 30 Go/heure avec la configuration suivante :
 
-  - **Réseau **  Canal sortant 500 Mo vers Internet ; réseau interne sur 1 Go avec dorsale principale fibre de 10 Go.
+  - **Réseau**  Canal sortant 500 Mo vers Internet ; réseau interne sur 1 Go avec dorsale principale fibre de 10 Go.
 
   - **Matériel**   Caractéristiques des deux serveurs (physiques) Accès au client/Concentrateur:
     
