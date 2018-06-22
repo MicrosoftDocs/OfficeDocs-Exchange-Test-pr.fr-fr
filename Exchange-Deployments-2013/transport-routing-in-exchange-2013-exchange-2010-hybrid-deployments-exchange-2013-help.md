@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-07-29_
+_**Dernière rubrique modifiée :** 2016-07-29_
 
 Cette rubrique traite des options de routage dont vous disposez pour les messages entrants en provenance d'Internet et les messages sortant vers Internet.
 
@@ -53,9 +53,9 @@ Lors de la planification et de la configuration de votre déploiement hybride, v
 
 L’itinéraire emprunté par les messages envoyés aux destinataires de votre organisation locale et de votre organisation Exchange Online varie selon la manière dont vous décidez de configurer votre enregistrement MX dans votre déploiement hybride. Nous vous recommandons de le configurer pour qu’il pointe vers Exchange Online Protection (EOP) dans Office 365, car cette configuration garantit un filtrage du courrier indésirable extrêmement précis. L’assistant Configuration hybride ne configure pas le routage pour les messages Internet entrants d’une organisation locale ou Exchange Online. Vous devez configurer manuellement votre enregistrement MX si vous souhaitez modifier la manière dont vos messages Internet entrants sont remis.
 
-  - **Si vous modifiez votre enregistrement MX pour qu’il pointe vers le service Microsoft Exchange Online Protection (EOP) dans Office 365 : **  Nous vous recommandons cette configuration pour les déploiements hybrides. Tous les messages envoyés à un destinataire dans l’une des deux organisations seront d’abord acheminés via l’organisation Exchange Online. Un message adressé à un destinataire situé dans votre organisation locale sera d’abord acheminé via l’organisation Exchange Online, puis remis au destinataire de votre organisation locale. Cet itinéraire est recommandé si votre organisation Exchange Online compte un plus grand nombre de destinataires que votre organisation locale et si vous voulez que les messages soient filtrés par EOP. Cette option de configuration est requise pour qu’Exchange Online Protection puisse analyser et bloquer les courriers indésirables.
+  - **Si vous modifiez votre enregistrement MX pour qu’il pointe vers le service Microsoft Exchange Online Protection (EOP) dans Office 365 :**  Nous vous recommandons cette configuration pour les déploiements hybrides. Tous les messages envoyés à un destinataire dans l’une des deux organisations seront d’abord acheminés via l’organisation Exchange Online. Un message adressé à un destinataire situé dans votre organisation locale sera d’abord acheminé via l’organisation Exchange Online, puis remis au destinataire de votre organisation locale. Cet itinéraire est recommandé si votre organisation Exchange Online compte un plus grand nombre de destinataires que votre organisation locale et si vous voulez que les messages soient filtrés par EOP. Cette option de configuration est requise pour qu’Exchange Online Protection puisse analyser et bloquer les courriers indésirables.
 
-  - **Si vous décidez de conserver votre enregistrement MX pointant vers votre organisation locale : **  Tous les messages envoyés à un destinataire d’une des deux organisations seront d’abord acheminés via votre organisation locale. Un message adressé à un destinataire situé dans Exchange Online sera d’abord acheminé via votre organisation locale, puis remis au destinataire dans Exchange Online. Cet itinéraire peut être utile aux organisations appliquant des stratégies de conformité qui exigent que les messages envoyés depuis ou vers une organisation soient examinés par une solution de journalisation. Si vous choisissez cette option, Exchange Online Protection ne pourra pas analyser les courriers indésirables de manière efficace.
+  - **Si vous décidez de conserver votre enregistrement MX pointant vers votre organisation locale :**  Tous les messages envoyés à un destinataire d’une des deux organisations seront d’abord acheminés via votre organisation locale. Un message adressé à un destinataire situé dans Exchange Online sera d’abord acheminé via votre organisation locale, puis remis au destinataire dans Exchange Online. Cet itinéraire peut être utile aux organisations appliquant des stratégies de conformité qui exigent que les messages envoyés depuis ou vers une organisation soient examinés par une solution de journalisation. Si vous choisissez cette option, Exchange Online Protection ne pourra pas analyser les courriers indésirables de manière efficace.
 
 Pour plus d’informations, voir [Meilleures pratiques en matière de flux de messagerie pour Exchange Online et Office 365 (aperçu)](https://technet.microsoft.com/fr-fr/library/jj937232\(v=exchg.150\)).
 
