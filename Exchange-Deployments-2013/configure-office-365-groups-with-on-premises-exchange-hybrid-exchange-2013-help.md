@@ -19,7 +19,7 @@ Découvrez comment permettre aux utilisateurs d’Exchange en local d’utiliser
 
 Groupes est un service d’Office 365 qui permet aux équipes de communiquer, de planifier des réunions et de collaborer sur des documents plus facilement. Toutes les informations partagées avec un groupe, à partir des messages électroniques envoyés au groupe, vers les fichiers stockés dans les bibliothèques OneDrive Entreprise ou SharePoint du groupe, sont disponibles pour tous les membres d’un groupe. Si vous avez configuré un déploiement hybride entre votre organisation Exchange locale et Office 365, vous pouvez mettre des groupes créés dans Office 365 à la disposition de vos utilisateurs en local en effectuant les étapes décrites dans cette rubrique.
 
->  [!IMPORTANT]  
+> [!IMPORTANT]  
 > L’utilisation de Groupes Office 365 avec des utilisateurs locaux dans un déploiement Exchange hybride est une nouvelle fonctionnalité. Comme il s’agit d’une nouveauté, vous pouvez rencontrer des problèmes lors de la configuration. N’oubliez pas de consulter la section Problèmes connus à la fin de cette rubrique pour corriger les problèmes que vous pouvez rencontrer.</td>
 
 
@@ -105,8 +105,7 @@ Le domaine SMTP principal d’un Groupe Office 365 est appelé un *domaine de gr
     > [!NOTE]  
     > Le format de cette valeur d’enregistrement DNS est <em>&lt;domain key&gt;</em>.mail.protection.outlook.com. Pour connaître votre clé de domaine, consultez l’article <a href="https://support.office.microsoft.com/fr-fr/article/gather-the-information-you-need-to-create-office-365-dns-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67?ui=en-us%26rs=en-us%26ad=us">Recueillez les informations nécessaires pour créer des enregistrements DNS Office 365</a>.
     
-
-</td>
+    </td>
     </tr>
     <tr class="even">
     <td><p>autodiscover.groups.contoso.com</p></td>
