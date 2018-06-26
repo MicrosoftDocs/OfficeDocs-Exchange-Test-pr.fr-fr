@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-09_
 
 **Résumé** : Instructions permettant aux utilisateurs Exchange Online d’accéder aux dossiers publics en local dans votre environnement Exchange 2013.
 

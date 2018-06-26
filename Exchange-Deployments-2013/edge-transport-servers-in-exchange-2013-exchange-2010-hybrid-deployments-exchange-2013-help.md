@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 Cette rubrique est en cours de rédaction.  
 
-_**Sapplique à :**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-09_
 
 Les serveurs de transport Edge dans Microsoft Exchange sont déployés dans le réseau de périmètre local d’une organisation. Ce sont des ordinateurs non liés à un domaine qui gèrent le flux de messagerie côté Internet et font office de relais SMTP et d’hôte actif pour les serveurs Exchange de votre réseau interne.
 

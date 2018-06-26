@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**Dernière rubrique modifiée :**2016-11-11_
+_<strong>Dernière rubrique modifiée :</strong>2016-11-11_
 
 Découvrez comment configurer une URL pour Outlook sur le web (Outlook Web App) pour les utilisateurs de boîte aux lettres cloud dans un environnement hybride.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 Cette rubrique est en cours de rédaction.  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-09_
 
 Un déploiement hybride vous permet d'étendre l'éventail de fonctionnalités proposé et le contrôle administratif que vous exercez dans votre organisation Exchange Server locale vers le nuage. Un déploiement hybride sert également de support à une solution d'archivage en nuage pour vos boîtes aux lettres locales avec l'archivage Exchange Online et peut également servir d'étape intermédiaire à la migration définitive de vos boîtes aux lettres locales vers Exchange Online.
 

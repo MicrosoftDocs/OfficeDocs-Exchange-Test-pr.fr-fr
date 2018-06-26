@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 Cette rubrique est en cours de rédaction.  
 
-_**Sapplique à :**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-09_
 
 Lors de la configuration d'un déploiement hybride dans une organisation Exchange 2007, vous devez installer au moins un serveur Exchange 2013 avec les rôles serveurs d'accès au client et de boîtes aux lettres dans votre organisation Exchange 2007 existante. Les serveurs d'accès au client et de boîtes aux lettres Exchange 2013 coordonnent les communications entre votre organisation Exchange 2007 locale existante et l'organisation Exchange Online. Cette communication englobe le transport des messages et les fonctionnalités de messagerie entre l'organisation locale et l'organisation Exchange Online.
 

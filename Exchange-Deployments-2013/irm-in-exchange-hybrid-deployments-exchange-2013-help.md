@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-09_
 
 **Résumé** : Fonctionnement de la gestion des droits relatifs à l’information (IRM) dans un environnement hybride Exchange et configuration des fonctionnalités IRM pour qu’elles fonctionnent entre Exchange Online et vos serveurs Exchange locaux.
 

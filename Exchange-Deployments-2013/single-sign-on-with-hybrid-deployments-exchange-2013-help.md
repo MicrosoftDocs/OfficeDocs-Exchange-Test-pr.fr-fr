@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-01-29_
+_<strong>Dernière rubrique modifiée :</strong>2016-01-29_
 
 L’authentification unique permet aux utilisateurs d’accéder à la fois à l’organisation locale et à l’organisation Office 365 avec un nom d’utilisateur et un mot de passe uniques. Elle offre aux utilisateurs une expérience d’authentification familière et permet aux administrateurs de contrôler facilement les stratégies de compte pour les boîtes aux lettres de l’organisation Exchange Online à l’aide des outils de gestion Active Directory locaux. Bien que vous ne soyez pas obligé de configurer un déploiement hybride avec l’authentification unique activée, nous vous recommandons vivement de le faire. Sans l’authentification unique, les utilisateurs doivent se souvenir de deux ensembles d’informations d’identification, un pour votre organisation locale et un pour Office 365. L’authentification unique présente d’autres avantages :
 

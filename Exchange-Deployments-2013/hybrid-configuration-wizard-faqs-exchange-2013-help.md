@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-09_
 
 Microsoft a publié un nouvel assistant de configuration hybride qui simplifie la configuration d’un déploiement hybride, offre plus de flexibilité avec votre configuration hybride et vous assure d’exécuter en permanence la version la plus récente des services. Cette version de l’assistant hybride est intégrée à Exchange 2016 et aux versions de Exchange 2013 commençant par la mise à jour cumulative 10, mais vous pouvez le télécharger même si vous exécutez une mise à jour cumulative Exchange 2013 antérieure ou Exchange 2010 Service Pack 3 (SP3).
 

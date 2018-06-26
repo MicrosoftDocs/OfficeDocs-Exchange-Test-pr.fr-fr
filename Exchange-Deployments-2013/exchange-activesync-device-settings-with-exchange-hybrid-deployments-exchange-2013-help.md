@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-01-27_
+_<strong>Dernière rubrique modifiée :</strong>2016-01-27_
 
 Les appareils Exchange ActiveSync sont maintenant reconfigurés automatiquement lorsqu’une boîte aux lettres est déplacée d’une organisation Exchange locale vers Office 365. Exchange ActiveSync détecte le nouvel emplacement de la boîte aux lettres dans Office 365 et met à jour sa configuration pour communiquer directement avec Office 365. L’appareil Exchange ActiveSync ne tentera pas de contacter le serveur Exchange local après avoir été correctement redirigé vers Office 365. À quelques exceptions près (plus de détails ci-dessous), l’utilisateur n’a plus besoin de configurer manuellement son appareil pour que la messagerie continue à fonctionner.
 
