@@ -13,6 +13,7 @@ ms.translationtype: HT
 
  
 
+
 _<strong>Sapplique à :</strong>Exchange Server 2016_
 
 _<strong>Dernière rubrique modifiée :</strong>2016-12-09_
@@ -82,7 +83,7 @@ En plus de l’application des meilleures pratiques décrites précédemment, no
 
 Par exemple, lors de migrations réelles chez des clients, nous avons obtenu un débit régulier de 30 Go/heure avec la configuration suivante :
 
-  - **Réseau **  Canal sortant 500 Mo vers Internet ; réseau interne sur 1 Go avec dorsale principale fibre de 10 Go.
+  - **Réseau**  Canal sortant 500 Mo vers Internet ; réseau interne sur 1 Go avec dorsale principale fibre de 10 Go.
 
   - **Matériel**   Caractéristiques des deux serveurs (physiques) Accès au client/Concentrateur:
     
