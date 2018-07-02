@@ -125,18 +125,8 @@ Il est possible de configurer la quantité maximale de connexions MRSProxy pour 
 
     Set-WebServicesVirtualDirectory -Identity "EWS (Default Web Site)" -MRSMaxConnections <number between 0 and unlimited; default is 100>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour la plupart des migrations de clients, il est inutile de modifier la valeur de MRSMaxConnections par défaut. Si vous devez protéger le serveur source contre la surcharge de migration, vous pouvez réduire le nombre de connexions. Ce paramètre s’applique pour chaque serveur MRSProxy. Si un client a deux serveurs MRSProxy, chacun défini pour 10 connexions, il obtiendra 20 (2x10) comme quantité totale de connexions de MRSProxy. Pour plus d’informations sur la configuration du service MRSProxy dans votre organisation Exchange 2010 sur site, consultez la rubrique <a href="http://technet.microsoft.com/fr-fr/library/ee732395.aspx">Démarrer le service MRSProxy sur un serveur d’accès client distant</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour la plupart des migrations de clients, il est inutile de modifier la valeur de MRSMaxConnections par défaut. Si vous devez protéger le serveur source contre la surcharge de migration, vous pouvez réduire le nombre de connexions. Ce paramètre s’applique pour chaque serveur MRSProxy. Si un client a deux serveurs MRSProxy, chacun défini pour 10 connexions, il obtiendra 20 (2x10) comme quantité totale de connexions de MRSProxy. Pour plus d’informations sur la configuration du service MRSProxy dans votre organisation Exchange 2010 sur site, consultez la rubrique <a href="http://technet.microsoft.com/fr-fr/library/ee732395.aspx">Démarrer le service MRSProxy sur un serveur d’accès client distant</a>.
 
 
 ## Facteur 4 : le réseau

@@ -27,18 +27,8 @@ Par défaut, l’utilisateur utilisé pour créer le client Office 365 devient 
 
 Vous pouvez ajouter des administrateurs supplémentaires dans l'organisation Exchange Online, selon le type de gestion à mettre en place. Par exemple, vous pouvez ajouter des administrateurs d'organisation et de destinataires supplémentaires, permettre aux utilisateurs spécialistes d'effectuer des tâches de conformité telles que la détection, configurer des autorisations personnalisées et davantage. La gestion de toutes les autorisations Exchange Online pour les administrateurs Office 365 doit être effectuée dans l'organisation Exchange Online à l'aide du Centre d'administration Exchange (CAE) ou Remote PowerShell.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il n'existe pas de transfert d'autorisations entre l'organisation locale et l'organisation Office 365. Les autorisations que vous avez définies dans l'organisation locale doivent être recréées dans l'organisation Office 365.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Il n'existe pas de transfert d'autorisations entre l'organisation locale et l'organisation Office 365. Les autorisations que vous avez définies dans l'organisation locale doivent être recréées dans l'organisation Office 365.
 
 
 Pour plus d'informations, consultez les rubriques [Gérer des groupes de rôles](https://technet.microsoft.com/fr-fr/library/jj657480\(v=exchg.150\)) et [Gérer les membres de groupes de rôles](https://technet.microsoft.com/fr-fr/library/jj657492\(v=exchg.150\)).
@@ -53,18 +43,8 @@ Les autorisations suivantes **sont** prises en charge :
 
   - **Accès total** Il est possible d’octroyer à une boîte aux lettres se trouvant sur un serveur Exchange local l’autorisation **Accès total** à une boîte aux lettres Office 365, et inversement. Par exemple, il est possible d’octroyer à une boîte aux lettres Office 365 l’autorisation **Accès total** à une boîte aux lettres partagée locale. Les utilisateurs doivent ouvrir leur boîte aux lettres à l’aide du client de bureau Outlook. Les autorisations de boîtes aux lettres déléguées ne sont pas prises en charge dans Outlook sur le web.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les utilisateurs peuvent être invités à entrer des informations d’identification supplémentaires lorsqu’ils accèdent pour la première fois à une boîte aux lettres qui se trouve dans l’autre organisation et l’ajoutent à leur profil Outlook.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les utilisateurs peuvent être invités à entrer des informations d’identification supplémentaires lorsqu’ils accèdent pour la première fois à une boîte aux lettres qui se trouve dans l’autre organisation et l’ajoutent à leur profil Outlook.
 
 
   - **Envoyer de la part de** Il est possible d’octroyer à une boîte aux lettres se trouvant sur un serveur Exchange local l’autorisation **Envoyer de la part de** à une boîte aux lettres Office 365, et inversement. Par exemple, il est possible d’octroyer à une boîte aux lettres Office 365 l’autorisation **Envoyer de la part de** à une boîte aux lettres partagée locale. Les utilisateurs doivent ouvrir leur boîte aux lettres à l’aide du client de bureau Outlook. Les autorisations de boîtes aux lettres déléguées ne sont pas prises en charge dans Outlook sur le web.
@@ -75,18 +55,8 @@ Les autorisations suivantes **sont** prises en charge :
 
   - **Éléments privés** Lors de l’ajout d’un délégué, l’option peut être configurée pour autoriser un utilisateur avec des autorisations de dossier pour afficher les éléments de calendrier privés.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>À partir de février 2018 la fonctionnalité prise en charge d’un accès complet, envoyer sur place et dossier droits entre forêts est déployée et devrait être terminé en avril 2018.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> À partir de février 2018 la fonctionnalité prise en charge d’un accès complet, envoyer sur place et dossier droits entre forêts est déployée et devrait être terminé en avril 2018.
 
 
 Les autorisations ou fonctionnalités suivantes **ne sont pas** prises en charge :

@@ -130,36 +130,16 @@ La base de clients hybride étant très diversifiée, il est difficile d’essay
 
 2.  En supposant que vous avez déjà déplacé toutes les boîtes aux lettres vers Exchange Online, vous pouvez pointer les enregistrements DNS de découverte automatique et MX vers Exchange Online, plutôt que vers l’environnement local. Pour plus d’informations, consultez la rubrique [Référence : Enregistrements DNS externes pour Office 365](http://technet.microsoft.com/fr-fr/library/hh852557.aspx).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Veillez à mettre à jour les DNS interne et externe, ou vous rencontrerez peut-être un comportement de connectivité client incohérent.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > Veillez à mettre à jour les DNS interne et externe, ou vous rencontrerez peut-être un comportement de connectivité client incohérent.
 
 
 3.  Ensuite, vous devez supprimer les valeurs de point de connexion de service sur vos serveurs Exchange. Cela garantit qu’aucun point de connexion de service n’est renvoyé, et que le client utilisera à la place la méthode DNS pour la découverte automatique. Voici un exemple :
     
         Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri $Null
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si votre environnement comporte des serveurs Exchange 2007, vous devrez exécuter une commande similaire sur vos serveurs Exchange 2007 pour annuler les paramètres.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si votre environnement comporte des serveurs Exchange 2007, vous devrez exécuter une commande similaire sur vos serveurs Exchange 2007 pour annuler les paramètres.
 
 
 4.  Il y a des connecteurs entrants et sortants créés par l’Assistant Configuration hybride que vous souhaiterez supprimer. Pour ce faire, procédez comme suit :
@@ -226,52 +206,22 @@ L’illustration ci-dessous décrit l’état final réel :
 
 1.  Exécutez `Get-OrganizationConfig |fl PublicFoldersEnabled` et assurez-vous qu’il n’est pas défini sur À distance. S’il est défini sur À distance et que vous souhaitez continuer à accéder aux dossiers publics, vous devez les migrer vers Exchange Online. Pour plus d’informations sur la façon de procéder, consultez la rubrique [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](https://technet.microsoft.com/fr-fr/library/dn874017\(v=exchg.150\)).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si la migration des dossiers publics vers Exchange Online n’est pas une option et que vous en avez toujours besoin pour vos utilisateurs, vous ne devez pas poursuivre.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > Si la migration des dossiers publics vers Exchange Online n’est pas une option et que vous en avez toujours besoin pour vos utilisateurs, vous ne devez pas poursuivre.
 
 
 2.  Après avoir déplacé toutes les boîtes aux lettres vers Exchange Online, la première chose que vous pouvez faire pour désaffecter la plupart des serveurs Exchange est de pointer les enregistrements DNS de découverte automatique et MX vers Exchange Online, plutôt que vers l’environnement local. Pour plus d’informations, consultez la rubrique [Référence : Enregistrements DNS externes pour Office 365](http://technet.microsoft.com/fr-fr/library/hh852557.aspx).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Veillez à mettre à jour les DNS interne et externe, ou vous rencontrerez peut-être des comportements de connectivité client et de flux de messagerie incohérents.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > Veillez à mettre à jour les DNS interne et externe, ou vous rencontrerez peut-être des comportements de connectivité client et de flux de messagerie incohérents.
 
 
 3.  Ensuite, vous devez supprimer les valeurs de point de connexion de service sur vos serveurs Exchange. Cela garantit qu’aucun point de connexion de service n’est renvoyé, et que le client utilisera à la place la méthode DNS pour la découverte automatique. Voici un exemple :
     
         Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri $Null
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si votre environnement comporte des serveurs Exchange 2007, vous devrez exécuter une commande similaire sur vos serveurs Exchange 2007 pour annuler les paramètres.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si votre environnement comporte des serveurs Exchange 2007, vous devrez exécuter une commande similaire sur vos serveurs Exchange 2007 pour annuler les paramètres.
 
 
 4.  Pour éviter que les objets de configuration hybride soient recréés à l’avenir, vous devez supprimer l’objet de configuration hybride d’Active Directory. Pour ce faire, ouvrez l’environnement Exchange Management Shell et exécutez la commande suivante :

@@ -61,20 +61,9 @@ Création d'une boîte aux lettres d'archivage informatique pour un utilisateur 
 
 7.  La création d’un compte d’utilisateur correspondant dans Office 365 par la synchronisation d’annuaires peut prendre jusqu’à 30 minutes.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Mt589761.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Dans le Centre d’administration Office 365, accédez à <strong>Intégrité</strong> &gt; <strong>État de la synchronisation d’annuaires</strong> pour savoir quand la synchronisation d’annuaires s’est produite pour la dernière fois.</td>
-    </tr>
-    </tbody>
-    </table>
-
-
+    > [!TIP]
+	> Dans le Centre d’administration Office 365, accédez à <strong>Intégrité</strong> &gt; <strong>État de la synchronisation d’annuaires</strong> pour savoir quand la synchronisation d’annuaires s’est produite pour la dernière fois.
+    
 8.  Après avoir vérifié que la synchronisation d’annuaires a été réalisée après que vous avez créé la boîte aux lettres locale, dans le Centre d’administration Office 365, accédez à **Utilisateurs** \> **Utilisateurs actifs**, puis sélectionnez le nouveau compte d’utilisateur Office 365 créé pour la nouvelle boîte aux lettres locale.
 
 9.  Sur la page de propriétés utilisateur qui s’affiche, cliquez sur **Modifier** dans la section **Licences des produits**.
@@ -121,20 +110,9 @@ Retour au début
 
 9.  La création de la boîte aux lettres d’archivage informatique par la synchronisation d’annuaires peut prendre jusqu’à 30 minutes. Passez à l’étape 2 pour savoir comment vérifier que la boîte aux lettres d’archivage informatique a été créée. Une fois la boîte aux lettres d’archivage créée, l’utilisateur peut y accéder à l’aide d’Outlook ou d’Outlook sur le web.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Mt589761.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Dans le Centre d’administration Office 365, accédez à <strong>Intégrité</strong> &gt; <strong>État de la synchronisation d’annuaires</strong> pour savoir quand la synchronisation d’annuaires s’est produite pour la dernière fois.</td>
-    </tr>
-    </tbody>
-    </table>
-
-
+    > [!TIP]
+	> Dans le Centre d’administration Office 365, accédez à <strong>Intégrité</strong> &gt; <strong>État de la synchronisation d’annuaires</strong> pour savoir quand la synchronisation d’annuaires s’est produite pour la dernière fois.
+    
 Retour au début
 
 ## Étape 2 : Vérifiez que la boîte aux lettres d’archivage informatique est créée.

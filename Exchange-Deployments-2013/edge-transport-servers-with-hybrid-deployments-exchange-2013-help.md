@@ -23,32 +23,12 @@ Généralement, le rôle serveur de transport Edge est un rôle facultatif dépl
 
 Les organisations Exchange 2016 souhaitant utiliser les serveurs de transport Edge ont la possibilité de déployer des serveurs de transport Edge exécutant la dernière version des produits Exchange 2016 et des versions plus récentes, Exchange 2013 ou Exchange 2010. Utilisez les serveurs de transport Edge si vous ne souhaitez pas exposer les serveurs Exchange internes directement sur Internet. Lorsque vous déployez un serveur de transport Edge dans un déploiement hybride, Exchange Online, via le service Exchange Online Protection, se connecte à votre serveur de transport Edge pour remettre les messages. Le serveur de transport Edge doit ensuite remettre les messages au serveur de boîtes aux lettres Exchange local dans lequel se trouve la boîte aux lettres du destinataire.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ne placez aucun serveur, service ou périphérique entre vos serveurs Exchange locaux et Office 365 traitant ou modifiant le trafic SMTP. Le flux de messagerie sécurisée entre votre organisation Exchange locale et Office 365 dépend des informations contenues dans les messages envoyés au sein de l’organisation. Les pare-feu autorisant le trafic SMTP sur le port TCP 25 sans modification sont pris en charge. Si un serveur, un service ou un périphérique traite un message envoyé entre votre organisation Exchange locale et Office 365, ces informations sont supprimées. Dans ce cas, le message n’est plus considéré comme interne à votre organisation et est soumis à un filtrage anti-courrier indésirable, aux règles de journal et de transport, ainsi qu’à d’autres stratégies ne s’appliquant normalement pas à celui-ci.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Ne placez aucun serveur, service ou périphérique entre vos serveurs Exchange locaux et Office 365 traitant ou modifiant le trafic SMTP. Le flux de messagerie sécurisée entre votre organisation Exchange locale et Office 365 dépend des informations contenues dans les messages envoyés au sein de l’organisation. Les pare-feu autorisant le trafic SMTP sur le port TCP 25 sans modification sont pris en charge. Si un serveur, un service ou un périphérique traite un message envoyé entre votre organisation Exchange locale et Office 365, ces informations sont supprimées. Dans ce cas, le message n’est plus considéré comme interne à votre organisation et est soumis à un filtrage anti-courrier indésirable, aux règles de journal et de transport, ainsi qu’à d’autres stratégies ne s’appliquant normalement pas à celui-ci.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous utilisez d’autres serveurs de transport Edge Exchange dans d’autres emplacements qui ne géreront pas de transport hybride, il n’est pas nécessaire de les mettre à niveau afin de prendre en charge un déploiement hybride. Toutefois, si à l’avenir vous souhaitez qu’EOP se connecte à d’autres serveurs de transport Edge pour le transport hybride, ceux-ci doivent exécuter la dernière version du produit Exchange 2016 et des versions plus récentes, Exchange 2010 ou Exchange 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Si vous utilisez d’autres serveurs de transport Edge Exchange dans d’autres emplacements qui ne géreront pas de transport hybride, il n’est pas nécessaire de les mettre à niveau afin de prendre en charge un déploiement hybride. Toutefois, si à l’avenir vous souhaitez qu’EOP se connecte à d’autres serveurs de transport Edge pour le transport hybride, ceux-ci doivent exécuter la dernière version du produit Exchange 2016 et des versions plus récentes, Exchange 2010 ou Exchange 2013.
 
 
 ## Ajout d'un serveur de transport Edge à un déploiement hybride

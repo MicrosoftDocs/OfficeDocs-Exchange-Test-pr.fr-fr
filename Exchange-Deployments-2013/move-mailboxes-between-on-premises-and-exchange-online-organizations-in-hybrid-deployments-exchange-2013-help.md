@@ -21,21 +21,10 @@ Dans un déploiement Exchange hybride, vous pouvez soit déplacer des boîtes au
 
 Pour en savoir plus sur la migration d’organisations Exchange locales vers Exchange Online, consultez la page [Méthodes de migration des comptes de messagerie vers Office 365](https://go.microsoft.com/fwlink/p/?linkid=524030).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour accomplir les procédures de déplacement de boîtes aux lettres décrites dans cette rubrique, vous devez avoir configuré un déploiement hybride entre vos organisations Echange locale et Exchange Online. Pour plus d'informations sur les déploiements hybrides, consultez la rubrique <a href="exchange-server-hybrid-deployments-exchange-2013-help.md">Déploiements hybrides Exchange Server</a>.<br />
+> [!IMPORTANT]
+> Pour accomplir les procédures de déplacement de boîtes aux lettres décrites dans cette rubrique, vous devez avoir configuré un déploiement hybride entre vos organisations Echange locale et Exchange Online. Pour plus d'informations sur les déploiements hybrides, consultez la rubrique <a href="exchange-server-hybrid-deployments-exchange-2013-help.md">Déploiements hybrides Exchange Server</a>.<br />
 <br />
-Avant de déplacer des boîtes aux lettres à messagerie unifiée vers Exchange Online, vous devez vérifier que Skype Entreprise 2015 en local, Skype Entreprise Online et Exchange Online répondent tous aux exigences spécifiées dans <a href="hybrid-deployment-prerequisites-exchange-2013-help.md">Configuration requise pour un déploiement hybride</a>. Pour plus d’informations sur la façon de mapper vos stratégies de boîte aux lettres à messagerie unifiée locales sur les stratégies dans Exchange Online, voir <a href="https://technet.microsoft.com/fr-fr/library/bb124903(v=exchg.150)">Set-UMMailboxPolicy</a>.</td>
-</tr>
-</tbody>
-</table>
-
+> Avant de déplacer des boîtes aux lettres à messagerie unifiée vers Exchange Online, vous devez vérifier que Skype Entreprise 2015 en local, Skype Entreprise Online et Exchange Online répondent tous aux exigences spécifiées dans <a href="hybrid-deployment-prerequisites-exchange-2013-help.md">Configuration requise pour un déploiement hybride</a>. Pour plus d’informations sur la façon de mapper vos stratégies de boîte aux lettres à messagerie unifiée locales sur les stratégies dans Exchange Online, voir <a href="https://technet.microsoft.com/fr-fr/library/bb124903(v=exchg.150)">Set-UMMailboxPolicy</a>.>
 
 ## Ce qu'il faut savoir avant de commencer
 
@@ -49,18 +38,8 @@ Avant de déplacer des boîtes aux lettres à messagerie unifiée vers Exchange 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](https://technet.microsoft.com/fr-fr/library/jj150484\(v=exchg.150\)).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Mt589761.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Étape 1: Création d'un point de terminaison de migration
@@ -97,34 +76,14 @@ Dans le CAE sur un serveur Exchange, l'Assistant Déplacement de migration à di
 
 5.  Dans la page **Entrez les informations d'identification du compte d'utilisateur Windows**, entrez le nom du compte d'administrateur local dans le champ de texte **Nom de l'administrateur local**, puis entrez le mot de passe associé à ce compte dans le champ de texte **Mot de passe de l'administrateur local**. Par exemple, « corp\\administrator » et un mot de passe. Cliquez sur **Suivant**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous avez déjà créé un point de terminaison de migration, vous allez recevoir une invite de confirmation de point de terminaison pour cette étape. Si vous avez créé plusieurs points de terminaison de migration, vous devez en choisir un dans le menu déroulant des points de terminaison de migration.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous avez déjà créé un point de terminaison de migration, vous allez recevoir une invite de confirmation de point de terminaison pour cette étape. Si vous avez créé plusieurs points de terminaison de migration, vous devez en choisir un dans le menu déroulant des points de terminaison de migration.
 
 
 6.  Dans la page **Confirmez le point de terminaison de migration**, vérifiez que le nom de domaine complet (FQDN) de votre serveur Exchange local apparaît lorsque l’assistant confirme le point de terminaison de migration. Par exemple, « mail.contoso.com ». Cliquez sur **Suivant**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le service proxy MRS sur les serveurs Exchange limite automatiquement les demandes de déplacement de boîte aux lettres lorsque vous sélectionnez plusieurs boîtes aux lettres à déplacer vers Exchange Online. Le temps total nécessaire au déplacement dépend du nombre total de boîtes aux lettres sélectionnées, de leur taille et de la configuration du proxy MRS. Pour plus d’informations sur la personnalisation du proxy MRS, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/bb232205(v=exchg.150)">Limitation des messages</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le service proxy MRS sur les serveurs Exchange limite automatiquement les demandes de déplacement de boîte aux lettres lorsque vous sélectionnez plusieurs boîtes aux lettres à déplacer vers Exchange Online. Le temps total nécessaire au déplacement dépend du nombre total de boîtes aux lettres sélectionnées, de leur taille et de la configuration du proxy MRS. Pour plus d’informations sur la personnalisation du proxy MRS, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/bb232205(v=exchg.150)">Limitation des messages</a>.
 
 
 7.  Dans la page **Configuration du déplacement**, dans le champ de texte **Nouveau lot de migration**, entrez un nom pour le lot de migration. Utilisez la flèche bas ![Icône de flèche vers le bas](images/JJ906432.ef5ca57d-a033-457b-bd92-6361877c33d0(EXCHG.150).gif "Icône de flèche vers le bas") pour sélectionner le **Domaine de remise cible pour les boîtes aux lettres faisant l’objet d’une migration vers Office 365**. Dans la plupart des déploiements hybrides, il s’agit du domaine SMTP principal utilisé pour les boîtes aux lettres de l’organisation locale Exchange Online. Par exemple, contoso.mail.onmicrosoft.com. Vérifiez que l’option **Déplacer la boîte aux lettres principale avec la boîte aux lettres d’archivage** est activée, puis cliquez sur **Suivant**.
@@ -145,18 +104,8 @@ Dans le CAE sur un serveur Exchange, l'Assistant Déplacement de migration à di
 
 5.  Dans la page **Confirmez le point de terminaison de migration**, vérifiez que le nom de domaine complet (FQDN) de votre serveur Exchange local apparaît lorsque l’assistant confirme le point de terminaison de migration. Par exemple, « mail.contoso.com ». Cliquez sur **Suivant**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le service proxy MRS sur les serveurs Exchange limite automatiquement les demandes de déplacement de boîte aux lettres lorsque vous sélectionnez plusieurs boîtes aux lettres à déplacer vers Exchange Online. Le temps total nécessaire au déplacement dépend du nombre total de boîtes aux lettres sélectionnées, de leur taille et des propriétés du proxy MRS. Pour plus d’informations sur la personnalisation du proxy MRS, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/bb232205(v=exchg.150)">Limitation des messages</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le service proxy MRS sur les serveurs Exchange limite automatiquement les demandes de déplacement de boîte aux lettres lorsque vous sélectionnez plusieurs boîtes aux lettres à déplacer vers Exchange Online. Le temps total nécessaire au déplacement dépend du nombre total de boîtes aux lettres sélectionnées, de leur taille et des propriétés du proxy MRS. Pour plus d’informations sur la personnalisation du proxy MRS, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/bb232205(v=exchg.150)">Limitation des messages</a>.
 
 
 6.  Sur la page **Configuration de la migration**, dans le champ de texte **Nouveau nom de lot de migration**, entrez un nom pour le lot de migration. Entrez ensuite le domaine de remise cible dans le champ **Domaine de remise cible pour les boîtes aux lettres faisant l’objet d’une migration vers Office 365**. Dans la plupart des déploiements hybrides, il s’agit du domaine SMTP principal utilisé pour les boîtes aux lettres de l’organisation locale et pour celles de l’organisation Exchange Online. Par exemple, contoso.com.

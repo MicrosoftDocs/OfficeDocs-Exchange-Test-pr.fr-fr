@@ -116,18 +116,8 @@ Les conditions préalables suivantes doivent être réunies pour la configuratio
 
   - **EdgeSync**   Si vous avez déployé des serveurs de transport Edge dans votre organisation locale et que vous souhaitez configurer les serveurs de transport Edge pour le transport de messagerie sécurisée hybride, vous devez configurer EdgeSync avant d’utiliser l’assistant de configuration hybride. Vous devez également exécuter EdgeSync chaque fois que vous appliquez une nouvelle mise à jour cumulative ou un correctif cumulatif à un serveur de transport Edge.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Bien qu'EdgeSync soit une condition préalable aux déploiements avec des serveurs de transport Edge, d'autres paramètres de configuration de transport manuel seront requis lors de la configuration de serveurs de transport Edge pour le transport de messagerie sécurisée hybride.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > Bien qu'EdgeSync soit une condition préalable aux déploiements avec des serveurs de transport Edge, d'autres paramètres de configuration de transport manuel seront requis lors de la configuration de serveurs de transport Edge pour le transport de messagerie sécurisée hybride.
     
     Pour plus d'informations, consultez la rubrique [Serveurs de transport Edge avec déploiements hybrides](edge-transport-servers-with-hybrid-deployments-exchange-2013-help.md).
 
@@ -141,19 +131,9 @@ Les conditions préalables suivantes doivent être réunies pour la configuratio
     
       - Stratégies de boîte aux lettres de messagerie unifiée créées dans Exchange Online qui reflètent les noms des stratégies de boîte aux lettres de messagerie unifiée dans votre organisation locale.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Vous pouvez mapper plusieurs stratégies de boîte aux lettres de messagerie unifiée locale avec une stratégie de boîte aux lettres de messagerie unifiée dans Exchange Online. Si vous souhaitez effectuer cette action, vous devez utiliser l’environnement de ligne de commande Exchange Management Shell pour mapper manuellement chaque stratégie de boîte aux lettres de messagerie unifiée locale sur une stratégie Exchange Online.</td>
-        </tr>
-        </tbody>
-        </table>
-    
+        > [!NOTE]
+		> Vous pouvez mapper plusieurs stratégies de boîte aux lettres de messagerie unifiée locale avec une stratégie de boîte aux lettres de messagerie unifiée dans Exchange Online. Si vous souhaitez effectuer cette action, vous devez utiliser l’environnement de ligne de commande Exchange Management Shell pour mapper manuellement chaque stratégie de boîte aux lettres de messagerie unifiée locale sur une stratégie Exchange Online.
+            
     Pour plus d’informations, consultez [Intégration des systèmes téléphoniques à la messagerie unifiée](https://technet.microsoft.com/fr-fr/library/jj673558\(v=exchg.150\)), [Gestionnaire de téléphonie pour Exchange 2013](https://technet.microsoft.com/fr-fr/library/ee364753\(v=exchg.150\)) et [Configuration de la messagerie vocale PBX cloud - Aide pour l’administrateur](https://go.microsoft.com/fwlink/p/?linkid=826207).
 
 ## Ports, points de terminaison et protocoles de déploiement hybride
