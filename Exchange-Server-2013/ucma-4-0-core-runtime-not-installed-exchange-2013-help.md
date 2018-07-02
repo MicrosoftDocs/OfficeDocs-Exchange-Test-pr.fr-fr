@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Impossible de poursuivre le programme d’installation de Microsoft Exchange Server 2013, car l’ordinateur local requiert une mise à jour logicielle. Vous devez installer cette mise à jour avant de pouvoir poursuivre le programme d’installation d’Exchange 2013.
 

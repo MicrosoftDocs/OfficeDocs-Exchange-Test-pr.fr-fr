@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Cette rubrique décrit la procédure de déploiement d'Exchange 2013 dans une topologie inter-forêts avec Microsoft Forefront Identity Manager 2010 R2 SP1. Pour déployer Exchange 2013 dans une topologie inter-forêts, vous devez commencer par installer Exchange 2013 dans chaque forêt, puis connecter les forêts de sorte que les utilisateurs puissent voir les données d'adresse et de disponibilité des forêts.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-08-26_
+_**Dernière rubrique modifiée :** 2013-08-26_
 
 La messagerie unifiée Microsoft Exchange vous permet de créer un ou plusieurs standards automatiques de messagerie unifiée en fonction des besoins de votre organisation. Contrairement aux autres composants de messagerie unifiée, tels que les plans de numérotation et les passerelles IP de messagerie unifiée, vous n'êtes pas obligé de créer des standards automatiques de messagerie unifiée. Toutefois, les standards automatiques aident des appelants internes et externes à localiser des utilisateurs ou départements d'une organisation et à leur transférer des appels. Cette rubrique présente la fonctionnalité de standard automatique de la messagerie unifiée.
 

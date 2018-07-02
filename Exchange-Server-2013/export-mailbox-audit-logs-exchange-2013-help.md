@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Lorsque l’audit de boîte aux lettres est activé pour une boîte aux lettres, Microsoft Exchange entre les informations dans le *journal d’audit de la boîte aux lettres* chaque fois qu’un utilisateur autre que le propriétaire accède à la boîte aux lettres. Chaque entrée du journal inclut des informations sur qui a accédé à la boîte aux lettres et quand, les actions effectuées par le non-propriétaire, et si l’action a réussi. Par défaut, les entrées dans le journal d’audit de boîtes aux lettres sont conservées pendant 90 jours. Vous pouvez utiliser le journal d’audit de la boîte aux lettres pour déterminer si un utilisateur autre que le propriétaire a accédé à une boîte aux lettres.
 

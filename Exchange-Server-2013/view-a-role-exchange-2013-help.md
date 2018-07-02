@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Les rôles de gestion peuvent être répertoriés de différentes façons en fonction des informations que vous souhaitez obtenir. Par exemple, vous pouvez choisir de renvoyer uniquement les rôles d’un type de rôle donné, les rôles qui contiennent uniquement des cmdlets et des paramètres spécifiques ou encore afficher les détails d’un rôle de gestion précis. Pour plus d’informations sur les rôles de gestion dans Microsoft Exchange Server 2013, voir [Présentation des rôles de gestion](understanding-management-roles-exchange-2013-help.md).
 

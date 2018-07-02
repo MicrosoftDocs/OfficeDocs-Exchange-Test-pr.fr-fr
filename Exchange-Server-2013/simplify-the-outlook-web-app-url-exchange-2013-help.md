@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-07-16_
+_**Dernière rubrique modifiée :** 2015-07-16_
 
 **Résumé** : Utilisez les procédures décrites dans cet article pour simplifier l’URL que les utilisateurs de votre organisation utilisent pour accéder à OWA dans Exchange 2013.
 

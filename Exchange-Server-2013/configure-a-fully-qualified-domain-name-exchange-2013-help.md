@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-09_
+_**Dernière rubrique modifiée :** 2012-11-09_
 
 Vous pouvez configurer une passerelle IP de messagerie unifiée soit avec une adresse IP soit avec un nom de domaine complet. Lorsque vous créez une passerelle IP de messagerie unifiée, vous devez définir l’adresse IP ou le nom de domaine complet configuré sur la passerelle VoIP, le PBX IP ou le contrôleur de frontière de session (SBC) que vous utilisez. Vous pouvez modifier l'adresse IP ou le nom de domaine complet après la création de la passerelle IP de messagerie unifiée.
 

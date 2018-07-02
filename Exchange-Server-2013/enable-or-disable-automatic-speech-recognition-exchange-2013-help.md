@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-12-12_
+_**Dernière rubrique modifiée :** 2012-12-12_
 
 Vous pouvez activer votre standard automatique de messagerie unifiée pour la reconnaissance vocale automatique. Une fois la reconnaissance vocale activée, les appelants peuvent répondre oralement aux messages du standard automatique et se déplacer dans le système de menus. Par défaut, un standard automatique n'est pas à reconnaissance vocale lorsque vous le créez. Après que vous avez activé la reconnaissance vocale pour le standard automatique, les appelants ne peuvent plus utiliser que des commandes vocales pour naviguer dans le système de menus du standard automatique car les entrées à tonalité n'opèrent plus.
 

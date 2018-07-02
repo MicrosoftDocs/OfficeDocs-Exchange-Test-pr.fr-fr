@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-09-22_
+_**Dernière rubrique modifiée :** 2014-09-22_
 
 L'indicateur d'intégrité ActiveSync.Proxy surveille l'intégrité de l'infrastructure Exchange ActiveSync sur vos serveurs d'accès au client. Si vous recevez une alerte indiquant que l'indicateur d'intégrité ActiveSync.Proxy n'est pas intègre, cela signifie qu'un problème affecte peut-être les composants Exchange ActiveSync sur le serveur d'accès au client mentionné dans l'alerte.
 

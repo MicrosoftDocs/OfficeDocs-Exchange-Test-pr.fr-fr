@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Une *file d'attente* est un emplacement d'hébergement temporaire pour les messages attendant de passer à l'étape suivante de traitement ou de remise à destination. Chaque file d'attente représente un ensemble logique de messages traités par un serveur Exchange dans un ordre spécifique. Dans Microsoft Exchange Server 2013, les files d'attente conservent les messages avant, pendant et après leur remise. Il existe des files d'attente sur les serveurs de boîtes aux lettres et les serveurs de transport Edge. Dans cette rubrique, nous appelons les serveurs de boîtes aux lettres et serveurs de transport Edge *serveurs de transport*.
 

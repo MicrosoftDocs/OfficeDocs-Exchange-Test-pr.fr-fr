@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-05_
+_**Dernière rubrique modifiée :** 2012-11-05_
 
 Après avoir supprimé un groupement de postes de messagerie unifiée (MU), la passerelle IP de messagerie unifiée associée au groupe ne gère plus les appels entrants et n’y répond plus. Si la suppression du groupement de postes de messagerie unifiée laisse la passerelle IP de messagerie unifiée sans aucun groupement de postes configuré restant, la passerelle IP n’est plus en mesure de traiter les appels de la messagerie unifiée.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 *L'archivage local* permet de reprendre le contrôle des données de messagerie de l’organisation en supprimant le besoin de recourir aux fichiers .pst et d'autoriser les utilisateurs à stocker les messages dans une *boîte aux lettres d’archivage* accessible dans MicrosoftOutlook 2010 et les versions ultérieures et dans Microsoft OfficeOutlook Web App.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Les organisations qui séparent la gestion des objets Microsoft Exchange Server 2013 et des objets Active Directory utilisent un modèle d’*autorisations fractionnées*. Les autorisations fractionnées permettent aux organisations d’attribuer des autorisations spécifiques et des tâches correspondantes à des groupes spécifiques au sein de l’organisation. Cette séparation du travail aide à maintenir les normes et les flux de travail et contribue au contrôle des modifications dans l’organisation.
 

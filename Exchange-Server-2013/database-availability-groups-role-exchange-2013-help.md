@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion `Database Availability Groups` permet aux administrateurs de gérer les groupes de disponibilité de base de données dans une organisation. Les administrateurs pour lesquels ce rôle est attribué directement ou indirectement sont les administrateurs au plus haut niveau responsables de la configuration haute disponibilité d’une organisation.
 

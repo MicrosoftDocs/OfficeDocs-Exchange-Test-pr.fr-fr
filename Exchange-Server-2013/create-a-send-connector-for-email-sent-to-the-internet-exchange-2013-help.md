@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-23_
+_**Dernière rubrique modifiée :** 2015-01-23_
 
 Par défaut, Microsoft Exchange Server 2013 ne vous permet pas d’envoyer des messages électroniques en dehors de votre domaine. Pour envoyer des messages électroniques en dehors de votre domaine, vous devez créer un connecteur d’envoi. La figure suivante illustre le flux de messagerie lorsque vous créez un connecteur d’envoi pour envoyer les messages électroniques vers Internet.
 

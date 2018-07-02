@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-30_
+_**Dernière rubrique modifiée :** 2012-11-30_
 
 Après la suppression d’un standard automatique de messagerie unifiée, les appels entrants auxquels le standard automatique de messagerie unifiée répondait doivent recevoir une réponse d’un opérateur humain. Si un standard automatique de messagerie unifiée est associé à un plan de numérotation de messagerie unifiée en tant que standard automatique par défaut, il ne peut pas être supprimé.
 

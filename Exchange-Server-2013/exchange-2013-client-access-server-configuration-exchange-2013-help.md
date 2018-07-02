@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-07-25_
+_**Dernière rubrique modifiée :** 2017-07-25_
 
 Après avoir installé le serveur d’accès au client Exchange 2013, vous pouvez exécuter diverses tâches de configuration. Bien que le serveur d’accès au client dans Exchange 2013 ne gère pas le traitement des protocoles clients, plusieurs paramètres doivent lui être appliqués, notamment les paramètres de répertoire virtuel et de certificat.
 

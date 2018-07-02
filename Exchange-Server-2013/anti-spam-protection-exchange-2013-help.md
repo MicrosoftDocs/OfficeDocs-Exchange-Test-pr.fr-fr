@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-06_
+_**Dernière rubrique modifiée :** 2015-03-06_
 
 Les *expéditeurs de courrier indésirable*, ou expéditeurs malveillants, utilisent différentes techniques pour envoyer du courrier indésirable dans votre organisation. Aucun outil ou processus n'est capable d'éliminer la totalité du courrier indésirable. Néanmoins, Microsoft Exchange Server 2013 offre une méthode en couche, multi-niveaux et multi-facettes pour réduire le nombre de ces messages indésirables. Exchange utilise des agents de transport pour fournir une protection contre le courrier indésirable et les agents intégrés qui sont disponibles dans Exchange 2013 sont relativement identiques à ceux de Microsoft Exchange Server 2010.
 

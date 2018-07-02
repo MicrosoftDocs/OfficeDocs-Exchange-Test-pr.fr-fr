@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-11-17_
+_**Dernière rubrique modifiée :** 2016-11-17_
 
 Vous pouvez configurer des paramètres anti-courrier indésirable spécifiques sur des boîtes aux lettres individuelles qui diffèrent de ceux qui sont appliqués aux autres boîtes aux lettres de votre organisation Exchange. Lorsque vous configurez un paramètre anti-courrier indésirable sur une boîte aux lettres, ce paramètre remplace le paramètre correspondant de filtre du contenu dans l’ensemble de l’organisation ou d’anti-courrier indésirable de configuration de l’organisation.
 

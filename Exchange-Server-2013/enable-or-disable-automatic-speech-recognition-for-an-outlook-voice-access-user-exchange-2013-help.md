@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez configurer la reconnaissance vocale automatique pour un utilisateur qui est activé pour la messagerie unifiée et la messagerie vocale. Lorsque la reconnaissance vocale est activée sur la boîte aux lettres d’un utilisateur d’Outlook Voice Access, celui-ci peut naviguer dans les menus de la boîte aux lettres via des commandes vocales. La reconnaissance vocale automatique est activée par défaut. Si la reconnaissance vocale est désactivée, l’utilisateur doit se servir d’entrées DTMF (numérotation en fréquences vocales), également appelées entrées à tonalité, pour naviguer dans les menus.
 

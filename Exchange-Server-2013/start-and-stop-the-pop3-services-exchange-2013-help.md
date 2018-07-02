@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-03-13_
+_**Dernière rubrique modifiée :** 2013-03-13_
 
 Par défaut, les deux services POP3 (service Microsoft Exchange POP3 et service de serveur principal Microsoft Exchange POP3) ne sont pas démarrés sur les ordinateurs exécutant MicrosoftExchange Server 2013. Vous devez démarrer ces deux services pour permettre à vos clients de messagerie de se connecter à Exchange à l'aide de POP3. Une fois ces services démarrés, Exchange 2013 accepte les communications non sécurisées des clients POP3 sur le port 110 et sur le port 995 utilisant SSL (Secure Sockets Layer).
 

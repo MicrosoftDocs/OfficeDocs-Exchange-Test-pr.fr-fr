@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les autorisations requises pour configurer une stratégie de messagerie et les fonctionnalités de compatibilité varient en fonction de la procédure en cours ou de la cmdlet que vous voulez exécuter. Pour plus d'informations sur la stratégie de messagerie et la conformité, voir [Stratégie et conformité de messagerie](messaging-policy-and-compliance-exchange-2013-help.md).
 

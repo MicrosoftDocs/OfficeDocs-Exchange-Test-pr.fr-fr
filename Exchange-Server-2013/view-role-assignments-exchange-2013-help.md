@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Les attributions du rôle de gestion affectent un rôle de gestion à l’utilisateur. Pour plus d’informations sur les attributions de rôles de gestion dans Microsoft Exchange Server 2013, voir [Présentation des attributions de rôles de gestion](understanding-management-role-assignments-exchange-2013-help.md).
 

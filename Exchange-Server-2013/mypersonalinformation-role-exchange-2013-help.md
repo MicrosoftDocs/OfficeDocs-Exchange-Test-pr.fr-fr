@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-17_
+_**Dernière rubrique modifiée :** 2012-10-17_
 
 Le rôle de gestion `MyPersonalInformation` permet aux utilisateurs d’afficher et de modifier leur site Web, leur adresse et leur numéro de téléphone personnel. Il s’agit d’un rôle personnalisé créé à partir du rôle parent [Rôle MyContactInformation](mycontactinformation-role-exchange-2013-help.md).
 

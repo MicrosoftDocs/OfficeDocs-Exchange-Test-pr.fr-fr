@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 L'indicateur d'intégrité POP vous permet de surveiller l'intégrité et la disponibilité globales du service Microsoft Exchange POP3 et de la connectivité au client POP3. L'indicateur d'intégrité POP est étroitement lié aux indicateurs d'intégrité suivants :
 

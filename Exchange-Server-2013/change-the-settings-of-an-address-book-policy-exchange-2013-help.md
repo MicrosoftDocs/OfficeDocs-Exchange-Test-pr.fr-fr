@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-03-30_
+_**Dernière rubrique modifiée :** 2016-03-30_
 
 Après avoir créé une stratégie de carnet d’adresses, vous pouvez afficher ou modifier son nom, ainsi que la liste d’adresses globale, le carnet d’adresses en mode hors connexion, la liste de salles et les listes d’adresses affectés.
 

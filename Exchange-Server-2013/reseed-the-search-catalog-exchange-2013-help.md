@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Si le catalogue d'indexation de contenu d'une copie de base de données de boîte aux lettres est corrompu, vous devrez peut-être réamorcer le catalogue. Les index de contenu corrompus sont indiqués dans le journal des événements d'application par l'événement suivant.
 

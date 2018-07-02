@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-30_
+_**Dernière rubrique modifiée :** 2012-10-30_
 
 Cette rubrique définit les composants principaux associés à la gestion des enregistrements (MRM) dans Microsoft Exchange Server 2013 de messagerie. MRM est une technologie de gestion des enregistrements dans Exchange 2013 qui aide les organisations à réduire les risques associés à la messagerie et autres communications. MRM rend plus faciles à conserver les messages nécessaires pour se conformer à la stratégie d'entreprise, aux réglementations gouvernementales ou besoins juridiques et supprimer le contenu qui a ne juridique ou économique.
 

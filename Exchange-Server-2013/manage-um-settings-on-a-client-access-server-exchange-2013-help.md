@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-09_
+_**Dernière rubrique modifiée :** 2013-04-09_
 
 Après avoir installé un serveur d'accès au client exécuté sur le service routeur d'appels de messagerie unifiée Microsoft Exchange, vous pouvez configurer plusieurs options, notamment le nombre d'appels simultanés, les ports d'écoute TCP et TLS (Transport Layer Security), l'état et le mode de démarrage.
 

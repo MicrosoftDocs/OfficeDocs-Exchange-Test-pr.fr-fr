@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 La planification du dimensionnement et des capacités pour Exchange Server 2013 représente une partie essentielle de votre déploiement Exchange 2013. La configuration d'un système en vue d'optimiser ses performances est un processus itératif. Prenez le temps de comprendre toutes les variables qui affectent votre système, notamment le profil utilisateur, l'architecture et le matériel. Grâce à ces connaissances, vous pouvez établir des mesures de comparaison pour vos systèmes et apporter des ajustements pour améliorer les performances du système. Pour plus d'informations et de conseils sur la planification du dimensionnement et des capacités pour votre organisation Exchange, consultez l'article du blog de l'équipe Exchange sur le [dimensionnement Dimensionnement des déploiements Exchange 2013](https://go.microsoft.com/fwlink/p/?linkid=301990) et [Recommandations en matière de performances Exchange Server 2013](exchange-server-2013-performance-recommendations-exchange-2013-help.md).
 

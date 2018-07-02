@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013 SP1_
+_**Sapplique à :** Exchange Server 2013 SP1_
 
-_**Dernière rubrique modifiée :**2015-12-02_
+_**Dernière rubrique modifiée :** 2015-12-02_
 
 Les permutations et les basculements sont deux formes de panne rencontrées dans Microsoft Exchange Server 2013.
 

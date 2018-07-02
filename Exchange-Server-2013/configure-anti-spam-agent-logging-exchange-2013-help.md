@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 La journalisation de l’agent permet d’enregistrer les actions effectuées par des agents de blocage du courrier indésirable Exchange spécifiques. Les informations écrites dans le journal de l'Agent dépendent de l'Agent, de l'événement SMTP et de l'action réalisée sur le message.
 

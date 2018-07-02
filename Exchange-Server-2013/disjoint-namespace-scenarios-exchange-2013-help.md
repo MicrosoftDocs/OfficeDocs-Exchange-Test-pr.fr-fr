@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Cette rubrique contient des informations sur le concept des espaces de noms disjoints et les scénarios pris en charge pour déployer Microsoft Exchange 2013 dans un domaine contenant un espace de noms disjoint.
 

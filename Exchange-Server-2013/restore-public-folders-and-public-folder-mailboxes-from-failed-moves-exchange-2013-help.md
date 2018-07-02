@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-13_
+_**Dernière rubrique modifiée :** 2013-02-13_
 
 Si une demande de déplacement pour un dossier public ou une boîte aux lettres de dossiers publics échoue, vous pouvez restaurer le dossier ou la boîte aux lettres du moment que les conditions suivantes soient remplies :
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les professionnels de l’information utilisent fréquemment la messagerie pour échanger des informations confidentielles. Pour sécuriser ces informations, les organisations peuvent utiliser la gestion des droits relatifs à l’information (IRM) afin d’appliquer une protection permanente au contenu de la messagerie. Étant donné que les appareils mobiles sont de plus en plus utilisés pour accéder à la messagerie électronique, il est important que les utilisateurs des appareils mobiles soient en mesure de créer et d’utiliser du contenu protégé par IRM.
 

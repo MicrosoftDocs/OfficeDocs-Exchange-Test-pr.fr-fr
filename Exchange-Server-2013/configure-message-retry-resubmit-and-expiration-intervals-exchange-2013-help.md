@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-12-16_
+_**Dernière rubrique modifiée :** 2014-12-16_
 
 Microsoft Exchange Server 2013 vous permet de configurer les intervalles de nouvelle tentative, de renvoi et d'expiration des messages dans le service de transport sur des serveurs de boîtes aux lettres et de transport Edge. Pour obtenir des descriptions de ces paramètres, consultez la rubrique [Intervalles de nouvelle tentative, de renvoi et d’expiration des messages](message-retry-resubmit-and-expiration-intervals-exchange-2013-help.md).
 

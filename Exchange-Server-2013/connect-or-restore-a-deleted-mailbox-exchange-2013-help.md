@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-05-04_
+_**Dernière rubrique modifiée :** 2015-05-04_
 
 Le Centre d'administration Exchange (CAE) ou l'environnement de ligne de commande vous permet de connecter une boîte aux lettres supprimée à un compte d'utilisateur Active Directory. Lorsque vous supprimez une boîte aux lettres, Exchange conserve celle-ci dans la base de données de boîtes aux lettres et change son état en « désactivé ». Le compte d'utilisateur Active Directory associé est également supprimé. La boîte aux lettres est conservée tant que le délai de rétention des boîtes aux lettres supprimées n’a pas expiré. Ce délai est défini par défaut à 30 jours. Une fois ce délai passé, la boîte aux lettres est supprimée définitivement (ou *purgée*) de la base de données de boîtes aux lettres.
 

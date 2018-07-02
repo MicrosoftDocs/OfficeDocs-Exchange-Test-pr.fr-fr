@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion `Role Management` permet aux administrateurs de gérer les groupes de rôles de gestion, les stratégies d’attribution de rôle, les rôles de gestion, ainsi que les entrées, attributions et étendues de rôle au sein d’une organisation.
 

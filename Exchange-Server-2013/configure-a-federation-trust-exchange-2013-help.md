@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-07-26_
+_**Dernière rubrique modifiée :** 2017-07-26_
 
 Une approbation de fédération établit une relation d’approbation entre une organisation Microsoft Exchange 2013 et le système d’authentification Azure Active Directory. En configurant une approbation de fédération, vous pouvez configurer le partage fédéré avec d’autres organisations Exchange fédérées, afin de permettre le partage d’informations de disponibilité de calendrier entre les destinataires. Le partage fédéré peut être configuré entre deux organisations Exchange 2013 fédérées ou entre une organisation Exchange 2013 fédérée et des organisations Exchange 2010 fédérées. Vous pouvez également configurer le partage avec une organisation Office 365.
 

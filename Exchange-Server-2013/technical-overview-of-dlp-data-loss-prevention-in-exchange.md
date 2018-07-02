@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Découvrez les stratégies DLP dans Exchange Server 2013 et Exchange Online, notamment leur contenu et la façon de les tester. Vous allez également découvrir une nouvelle fonctionnalité dans Exchange DLP.
 

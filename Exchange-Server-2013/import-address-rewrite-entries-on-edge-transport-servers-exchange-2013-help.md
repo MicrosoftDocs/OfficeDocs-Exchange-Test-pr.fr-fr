@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Vous pouvez créer en bloc ou importer des informations de réécriture d’adresses dans un serveur de transport Edge à l’aide d’un fichier de valeurs séparées par des virgules (CSV). La liste suivante décrit les scénarios courants qui nécessitent une telle opération :
 

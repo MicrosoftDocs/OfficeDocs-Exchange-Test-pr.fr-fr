@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez définir la langue par défaut pour un plan de numérotation de messagerie unifiée. Chaque plan de numérotation que vous créez utilise initialement l'anglais (en-US) comme langue par défaut. Le module linguistique anglais (en-US) est installé sur toutes les versions de Microsoft Exchange Server 2013 et ne peut pas être supprimé.
 

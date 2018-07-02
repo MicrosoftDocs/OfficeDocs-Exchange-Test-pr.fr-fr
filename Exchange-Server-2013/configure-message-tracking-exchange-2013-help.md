@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-18_
+_**Dernière rubrique modifiée :** 2013-02-18_
 
 Le suivi des messages enregistre l'activité de transport SMTP de tous les messages transférés depuis et vers le service de transport ou les boîtes aux lettres sur un serveur de boîtes aux lettres Microsoft Exchange Server 2013. Les journaux de suivi des messages sont utiles pour les investigations sur les messages ainsi que pour l'analyse, les rapports et le dépannage du flux de messagerie.
 

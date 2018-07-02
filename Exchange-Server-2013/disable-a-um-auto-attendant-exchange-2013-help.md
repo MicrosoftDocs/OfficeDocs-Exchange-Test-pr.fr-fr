@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-05_
+_**Dernière rubrique modifiée :** 2012-11-05_
 
 Par défaut, lorsqu'un standard automatique de messagerie unifiée est créé, il présente l'état Désactivé. Après avoir créé le standard automatique de messagerie unifiée, vous pouvez en modifier le statut pour contrôler s'il peut répondre à des appels entrants. Par exemple, vous pouvez désactiver le standard automatique de messagerie unifiée lorsque vous enregistrez ou réenregistrez des messages et des messages d'assistance vocaux personnalisés.
 

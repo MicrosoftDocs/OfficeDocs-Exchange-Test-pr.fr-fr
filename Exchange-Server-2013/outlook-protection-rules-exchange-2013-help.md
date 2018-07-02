@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Chaque jour, les professionnels de l’information échangent des informations sensibles par courrier électronique, y compris des données et des rapports financiers, des informations relatives aux clients et aux employés, et des informations et spécifications confidentielles relatives aux produits. Dans Microsoft Exchange Server 2013, Microsoft Outlook et Microsoft OfficeOutlook Web App, les utilisateurs peuvent protéger les messages avec la gestion des droits relatifs à l’information (IRM) en appliquant un modèle de stratégie des droits des services AD RMS (Active Directory Rights Management Services). Pour cela, AD RMS doit être déployé au sein de l’organisation. Pour plus d’informations sur AD RMS, voir [Services AD RMS (Active Directory Rights Management Services)](https://go.microsoft.com/fwlink/p/?linkid=129823).
 

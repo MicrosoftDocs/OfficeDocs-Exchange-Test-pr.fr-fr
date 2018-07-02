@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-08-06_
+_**Dernière rubrique modifiée :** 2014-08-06_
 
 Dans certaines instances, vous voudrez peut-être configurer un domaine accepté pour une division dans laquelle certains destinataires, ou tous, dans le domaine ne disposent pas de boîtes aux lettres dans votre organisation Exchange. Cela peut se produire, par exemple, lorsqu'une organisation partage le même espace d’adressage SMTP avec plusieurs systèmes de messagerie différents. Dans ces cas, vous pouvez configurer un domaine accepté en tant que domaine de relais interne.
 

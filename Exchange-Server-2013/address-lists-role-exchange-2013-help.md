@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion `Address Lists` permet aux administrateurs de créer, modifier, afficher et supprimer des listes d’adresse, des listes d’adresses globales (GAL), des stratégies de carnet d’adresses et des listes d’adresses en mode hors connexion dans une organisation.
 

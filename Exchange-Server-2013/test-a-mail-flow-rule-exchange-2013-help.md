@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Chaque fois que vous créez une règle de flux de messagerie Exchange (également appelée règle de transport), vous devez la tester avant de l’activer. Ainsi, si vous créez accidentellement une condition qui ne fait pas exactement ce que vous voulez ou qui interagit avec d’autres règles de manière inattendue, vous ne subirez aucune conséquence inattendue.
 

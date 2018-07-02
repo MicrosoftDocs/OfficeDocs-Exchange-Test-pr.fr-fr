@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-04-29_
+_**Dernière rubrique modifiée :** 2013-04-29_
 
 Une base de données de boîtes aux lettres est une unité de granularité où les boîtes aux lettres sont créées et stockées. Une base de données de boîtes aux lettres est stockée sous forme de fichier (.edb) de base de données Exchange. Dans Microsoft Exchange Server 2013, vous pouvez configurer les propriétés spécifiques à chaque base de données de boîtes aux lettres.
 

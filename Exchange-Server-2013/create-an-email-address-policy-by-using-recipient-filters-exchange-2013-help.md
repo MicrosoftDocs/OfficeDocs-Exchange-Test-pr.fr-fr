@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-16_
+_**Dernière rubrique modifiée :** 2012-10-16_
 
 Vous pouvez utiliser l'environnement de ligne de commande Exchange Management Shell pour créer une stratégie d'adresse de messagerie à l'aide de filtres des destinataires. Pour plus d'informations sur les stratégies d'adresse de messagerie, consultez la rubrique [Stratégies d'adresse de messagerie](email-address-policies-exchange-2013-help.md).
 

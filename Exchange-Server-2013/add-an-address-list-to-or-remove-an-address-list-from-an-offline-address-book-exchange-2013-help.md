@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-12-16_
+_**Dernière rubrique modifiée :** 2014-12-16_
 
 Vous pouvez utiliser l'environnement de ligne de commande Exchange Management Shell pour ajouter ou supprimer une liste d'adresses dans un carnet d'adresses en mode hors connexion. Par défaut, il existe un carnet d'adresses en mode hors connexion appelé Carnet d'adresses en mode hors connexion par défaut, qui contient la liste d'adresses globale. Les carnets d'adresses en mode hors connexion sont générés sur la base des listes d'adresses qu'ils contiennent. Pour créer des carnets d'adresses en mode hors connexion personnalisés que les utilisateurs peuvent télécharger, vous pouvez ajouter ou supprimer des listes d'adresses dans les carnets d'adresses en mode hors connexion.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-01_
+_**Dernière rubrique modifiée :** 2015-01-01_
 
 Une relation organisationnelle permet aux utilisateurs de votre organisation Exchange de partager des informations de disponibilité de calendrier avec une organisation Office 365 ou une autre organisation Exchange sur site. Vous souhaiterez peut-être modifier les paramètres d’une relation organisationnelle, tels que la modification du nom, la désactivation temporaire du partage du calendrier, la modification du niveau d’accès ou des groupes de sécurité qui partageront des calendriers.
 

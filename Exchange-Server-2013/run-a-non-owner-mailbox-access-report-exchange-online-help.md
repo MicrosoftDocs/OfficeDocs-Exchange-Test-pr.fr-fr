@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online_
+_**Sapplique à :** Exchange Online_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le rapport d’accès aux boîtes aux lettres par des non-propriétaires dans le Centre d’administration Exchange répertorie les boîtes aux lettres auxquelles un individu autre que la personne qui possède la boîte aux lettres a accédé. Lorsqu’un non-propriétaire accède à une boîte aux lettres, Microsoft Exchange enregistre les informations à propos de cette action dans un journal d’audit de la boîte aux lettres stocké comme un message électronique dans un dossier caché dans la boîte aux lettres qui est auditée. Les entrées de ce journal sont affichées comme résultats de la recherche et incluent une liste de boîtes aux lettres auxquelles un non-propriétaire a accédé, qui a accédé à la boîte aux lettres et quand, les actions exécutées par le non-propriétaire et si l’action a réussi. Par défaut, les entrées du journal d’audit de boîtes aux lettres sont conservées pendant 90 jours.
 

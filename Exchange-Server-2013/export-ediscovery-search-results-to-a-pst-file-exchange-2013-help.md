@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-09-07_
+_**Dernière rubrique modifiée :** 2017-09-07_
 
 Vous pouvez utiliser l’outil d’exportation d’eDiscovery dans le Centre d’administration Exchange (EAC) pour exporter les résultats d’une recherche d’e-Discovery en Place dans un fichier de données Outlook, également appelé un fichier PST. Les administrateurs peuvent distribuer les résultats de la recherche à d’autres personnes au sein de votre organisation, comme un gestionnaire de ressources humaines ou enregistrements, ou de s’opposer à conseiller dans un cas juridique. Une fois les résultats de la recherche sont exportés vers un fichier PST, vous ou autres utilisateurs peuvent les ouvrir dans Outlook pour visualiser ou imprimer les messages renvoyés dans les résultats de recherche. Fichiers PST peuvent également être ouvert dans l’e-Discovery de tiers et des applications. Cette rubrique vous indique comment effectuer cette opération, ainsi que résoudre les problèmes que vous pouvez avoir.
 

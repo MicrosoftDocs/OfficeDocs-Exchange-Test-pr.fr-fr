@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-04_
+_**Dernière rubrique modifiée :** 2012-10-04_
 
 [Création d’un carnet d’adresses en mode hors connexion](create-an-offline-address-book-exchange-2013-help.md)
 

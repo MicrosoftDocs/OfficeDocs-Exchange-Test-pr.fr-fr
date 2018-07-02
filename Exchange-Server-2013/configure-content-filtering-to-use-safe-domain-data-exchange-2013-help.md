@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-12-16_
+_**Dernière rubrique modifiée :** 2014-12-16_
 
 Les données de domaine autorisé correspondent à un domaine entier (par exemple, @contoso.com) stocké dans la liste des expéditeurs autorisés d’un utilisateur. Par défaut, l’agent de filtrage du contenu n’utilise pas les données de domaine autorisé pour identifier les expéditeurs autorisés à contourner le filtrage de contenu.
 

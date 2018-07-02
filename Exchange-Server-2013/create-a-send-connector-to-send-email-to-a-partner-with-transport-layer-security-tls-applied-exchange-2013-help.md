@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-15_
+_**Dernière rubrique modifiée :** 2012-10-15_
 
 Si vous voulez être certain d’établir des communications sûres et chiffrées avec un partenaire, vous pouvez créer un connecteur d’envoi configuré pour forcer l’application de TLS (Transport Layer Security) aux messages envoyés à un domaine partenaire. TLS permet une communication sécurisée sur Internet.
 

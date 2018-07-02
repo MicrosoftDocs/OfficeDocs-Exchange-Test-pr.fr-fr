@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Dans Active Directory, la *forêt* représente la limite extérieure de votre service d'annuaire. Vous pouvez créer des connecteurs d'envoi pour activer la communication entre les forêts. Dans cet exemple, les connecteurs utilisent une authentification de base.
 

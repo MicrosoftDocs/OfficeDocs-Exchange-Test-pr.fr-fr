@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-08-27_
+_**Dernière rubrique modifiée :** 2014-08-27_
 
 Après avoir créé une recherche de découverte électronique locale, vous pouvez la modifier pour choisir d'autres paramètres de recherche. Par exemple, vous pouvez modifier les boîtes aux lettres à rechercher, les plages de dates, les mot clés, les options de journalisation, ou encore spécifier une boîte aux lettres de découverte différente pour stocker les résultats de la recherche. Les modifications que vous apportez aux propriétés de la recherche seront utilisées lors du redémarrage de la recherche.
 

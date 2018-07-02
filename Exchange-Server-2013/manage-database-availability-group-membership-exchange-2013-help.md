@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-08-13_
+_**Dernière rubrique modifiée :** 2014-08-13_
 
 Lorsque vous ajoutez un serveur à un groupe de disponibilité de base de données (DAG), il coopère avec les autres serveurs de ce groupe afin de fournir une récupération automatique au niveau de la base de données en cas de défaillance de base de données, de serveur ou du réseau. Si vous supprimez un serveur d’un groupe de disponibilité de base de données (DAG), il n’est plus automatiquement protégé contre les défaillances.
 

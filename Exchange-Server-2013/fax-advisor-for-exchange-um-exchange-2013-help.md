@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 La messagerie unifiée Microsoft repose sur des solutions de partenaires de télécopie agréés pour des fonctionnalités de télécopie améliorées, telles que la télécopie sortante ou le routage de télécopie. Par défaut, les utilisateurs ne sont pas configurés pour autoriser la remise de messages de télécopie entrants à un utilisateur à extension messagerie unifiée. Les serveurs Exchange envoient les demandes de télécopie à une solution de partenaire de télécopie agréé. Le serveur du partenaire de télécopie reçoit les données et les envoie à la boîte aux lettres du destinataire dans un message électronique avec la télécopie incluse en tant que pièce jointe au format .tif. Pour plus d'informations, consultez la rubrique [Activation de la réception de télécopies pour les utilisateurs de messagerie vocale](enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md).
 

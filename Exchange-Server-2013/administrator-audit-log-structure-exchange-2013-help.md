@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les journaux d’audit de l’administrateur contiennent un enregistrement de tous les cmdlets et paramètres exécutés dans l’environnement de la ligne de commande Exchange Management Shell et par le Centre d’administration Exchange (EAC). Ils sont créés à la demande lorsque vous exécutez le rapport du journal d’audit de l’administrateur dans le Centre d’administration Exchange (CAE), ou lorsque vous exécutez la cmdlet **New-AdminAuditLogSearch** dans l’environnement de ligne de commande Exchange Management Shell. Pour plus d’informations sur les journaux d’audit, voir [Connexion au service d’audit administrateur](administrator-audit-logging-exchange-2013-help.md).
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-12-02_
+_**Dernière rubrique modifiée :** 2013-12-02_
 
 Vous pouvez effectuer des recherches dans les journaux d’audit de l’administrateur pour savoir qui a apporté des changements de configuration à l’organisation, aux serveurs et aux destinataires. Ceci peut s’avérer utile lorsque vous tentez d’identifier la cause d’un comportement inattendu, de confondre un administrateur malveillant ou bien de vous assurer que les exigences en matière de conformité sont respectées. Pour plus d’informations sur l’enregistrement dans des journaux d’audit de l’administrateur, consultez la rubrique [Connexion au service d’audit administrateur](administrator-audit-logging-exchange-2013-help.md).
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-17_
+_**Dernière rubrique modifiée :** 2013-02-17_
 
 Outlook Web App prend en charge l'intégration d'Outlook Web App et de Microsoft Lync Server 2013. Lorsque l'intégration avec Lync Server 2013 est configurée et que la messagerie instantanée est activée dans Outlook Web App, les utilisateurs peuvent démarrer des sessions de messagerie instantanée ou y répondre à l'aide d'Outlook Web App.
 

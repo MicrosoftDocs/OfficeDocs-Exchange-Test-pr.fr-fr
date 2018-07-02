@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-02-01_
+_**Dernière rubrique modifiée :** 2016-02-01_
 
 Les utilisateurs envoient et reçoivent du courrier électronique tous les jours. S’ils ne sont pas gérés, les messages électroniques générés et reçus chaque jour risquent d’inonder les utilisateurs, de réduire leur productivité et d’exposer votre entreprise à de nombreux risques. La gestion du cycle de vie de la messagerie est une composante essentielle pour la plupart des organisations.
 
@@ -47,9 +47,9 @@ Vous pouvez utiliser des stratégies de rétention pour appliquer une rétention
 
 **Déplacer les messages vers les boîtes aux lettres d’archivage**   Dans cette stratégie, vous implémentez des stratégies de gestion des enregistrements de messagerie qui déplacent des éléments vers la boîte aux lettres de l’utilisateur. Une boîte aux lettres d’archivage représente du stockage supplémentaire pour les utilisateurs qui gèrent des contenus anciens ou rarement sollicités. Les balises de rétention qui déplacent des éléments sont également connues sous le nom de *stratégies d’archivage*. Dans la même stratégie de rétention, vous pouvez combiner une balise de stratégie par défaut et des balises personnelles pour déplacer des éléments, et une balise de stratégie par défaut, des balises de stratégie de rétention et des balises personnelles pour supprimer des éléments. Pour en savoir plus sur les stratégies d’archivage, voir :
 
-  - **Exchange Server 2013:** [Archivage inaltérable dans Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md)
+  - **Exchange Server 2013:**  [Archivage inaltérable dans Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md)
 
-  - **Exchange Online:** [Boîtes aux lettres d’archivage dans Exchange Online](https://technet.microsoft.com/fr-fr/library/dn922147\(v=exchg.150\))
+  - **Exchange Online:**  [Boîtes aux lettres d’archivage dans Exchange Online](https://technet.microsoft.com/fr-fr/library/dn922147\(v=exchg.150\))
 
 <table>
 <thead>

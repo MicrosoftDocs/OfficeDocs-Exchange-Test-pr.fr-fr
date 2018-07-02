@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez autoriser tous les utilisateurs associés à un plan de numérotation de messagerie unifiée à recevoir des messages de télécopie dans leur boîte aux lettres. Par défaut, les utilisateurs à extension messagerie unifiée associés à un plan de numérotation de messagerie unifiée peuvent recevoir des messages de télécopie. Pour autoriser les utilisateurs à extension messagerie unifiée à recevoir des messages de télécopie dans leur boîte aux lettres, le plan de numérotation doit être configuré de manière à accepter les appels de télécopie entrants. Vous devez également activer la fonctionnalité de télécopie sur la stratégie de boîte aux lettres et pour l'utilisateur. Par défaut, cette fonctionnalité est activée sur les plans de numérotation et les stratégies de boîte aux lettres ainsi que pour les utilisateurs. Cependant, il peut arriver que ces paramètres par défaut changent et que les utilisateurs à extension messagerie unifiée ne puissent pas recevoir de messages de télécopie.
 

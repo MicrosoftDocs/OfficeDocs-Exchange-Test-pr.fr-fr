@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Pour consulter des informations détaillées à propos des appels gérés par les serveurs Exchange un jour donné, exportez les données d'appel de ce jour du rapport de statistiques des appels. Les données d'appel quotidiennes, disponibles pour les 90 derniers jours, vous permettent de diagnostiquer les problèmes liés à la qualité audio ou aux appels rejetés et fournissent des informations concernant les audits et les rapports sur les serveurs Exchange de votre organisation.
 

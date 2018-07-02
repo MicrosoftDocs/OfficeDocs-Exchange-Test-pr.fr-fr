@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-06-16_
+_**Dernière rubrique modifiée :** 2014-06-16_
 
 Vous pouvez utiliser la fonctionnalité de portabilité de base de données pour déplacer une base de données de boîtes aux lettres Microsoft Exchange Server 2013 entre des serveurs de boîtes aux lettres Exchange 2013 de la même organisation. Cela permet de réduire la durée globale de récupération pour certains scénarios de défaillance. Pour plus d'informations, consultez la rubrique [Portabilité des bases de données](database-portability-exchange-2013-help.md).
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-10-01_
+_**Dernière rubrique modifiée :** 2014-10-01_
 
 L'*Assistant Dossier géré* est un Assistant de boîte aux lettres MicrosoftExchange qui applique les paramètres de rétention de messages configurés dans les stratégies de rétention.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Par défaut, chaque plan de numérotation de messagerie unifiée utilise un fichier .wav standard dédié au message d'accueil qui est lu aux appelants, y compris les utilisateurs d'Outlook Voice Access qui composent un numéro Outlook Voice Access qui a été configuré. Cependant, vous pouvez créer un fichier .wav ou .wma pour le message d'accueil, puis l'activer dans le plan de numérotation de messagerie unifiée.
 

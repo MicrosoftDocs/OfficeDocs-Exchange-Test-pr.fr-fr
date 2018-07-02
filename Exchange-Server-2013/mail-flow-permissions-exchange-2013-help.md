@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les autorisations requises pour effectuer les tâches relatives au flux de messagerie varient en fonction de la procédure exécutée ou de la cmdlet que vous voulez exécuter. Pour plus d’informations sur les fonctionnalités de transport, voir [Flux de messagerie](mail-flow-exchange-2013-help.md).
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-04-13_
+_**Dernière rubrique modifiée :** 2016-04-13_
 
 Une fois que vous avez créé une stratégie de boîte aux lettres Outlook Web App, vous pouvez configurer diverses options pour contrôler les fonctionnalités dont disposent les utilisateurs dans Outlook Web App. Par exemple, vous pouvez activer ou désactiver des règles de boîte de réception, ou créer une liste de types de fichiers autorisés pour les pièces jointes.
 

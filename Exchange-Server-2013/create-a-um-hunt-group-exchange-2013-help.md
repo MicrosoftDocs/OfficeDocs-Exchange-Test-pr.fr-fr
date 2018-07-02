@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-16_
+_**Dernière rubrique modifiée :** 2013-04-16_
 
 Un groupement de postes de messagerie unifiée est une représentation logique d'un groupement de postes PBX (Private Branch eXchange) ou PBX IP. Un groupement de postes de messagerie unifiée sert de connexion ou de lien entre une passerelle IP de messagerie unifiée et un plan de numérotation de messagerie unifiée.
 

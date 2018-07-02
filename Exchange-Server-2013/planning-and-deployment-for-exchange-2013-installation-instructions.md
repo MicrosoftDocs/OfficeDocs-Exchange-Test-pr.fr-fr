@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Avez-vous besoin d’aide pour effectuer une installation d’Exchange ? Cet article fournit des conseils pour préparer un déploiement de Microsoft Exchange Server 2013, ainsi que des liens vers des articles dont vous aurez besoin au cours du déploiement.
 

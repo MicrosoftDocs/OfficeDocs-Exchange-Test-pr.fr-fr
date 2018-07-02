@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-17_
+_**Dernière rubrique modifiée :** 2015-04-17_
 
 Le service de recherche Exchange indexe de nombreuses propriétés d'éléments, notamment l'expéditeur, les destinataires, le corps des messages et les pièces jointes aux messages électroniques.
 

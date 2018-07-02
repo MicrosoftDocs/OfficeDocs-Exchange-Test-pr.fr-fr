@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-13_
+_**Dernière rubrique modifiée :** 2013-02-13_
 
 Vous pouvez définir l'adresse d'un partenaire d'aperçu de messagerie vocale dans une stratégie de boîte aux lettres de messagerie unifiée. Une fois que vous avez défini l'adresse du partenaire d'aperçu de messagerie vocale sur une stratégie de boîte aux lettres de messagerie unifiée, le paramètre s'applique à tous les utilisateurs à extension messagerie unifiée liés à cette stratégie de boîte aux lettres.
 

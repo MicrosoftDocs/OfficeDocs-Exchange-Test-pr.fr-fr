@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2012-11-12_
+_**Dernière rubrique modifiée :** 2012-11-12_
 
 Le programme d’installation de Microsoft Exchange Server 2013 a détecté que vous tentez d’exécuter le programme d’installation sur un contrôleur de domaine Active Directory et que l’une des remarques suivante est vraie :
 

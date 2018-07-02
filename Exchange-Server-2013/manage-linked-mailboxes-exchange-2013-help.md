@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-27_
+_**Dernière rubrique modifiée :** 2012-11-27_
 
 Les boîtes aux lettres liées sont les boîtes aux lettres des utilisateurs qui y accèdent par une forêt séparée et approuvée. Les boîtes aux lettres liées peuvent être utiles pour les organisations qui déploient Exchange dans une forêt ressource. Le scénario de forêt de ressources permet à une organisation de centraliser Exchange dans une forêt unique, tout en permettant d’accéder à l’organisation Exchange avec des comptes d’utilisateur situés dans une ou plusieurs forêts approuvées (appelées *forêts de comptes*). Le compte d’utilisateur qui accède à la boîte aux lettres liée n’existe pas dans la forêt où Exchange est déployé. Par conséquent, un compte d’utilisateur désactivé existant dans la même forêt qu’Exchange est créé et associé à la boîte aux lettres liée correspondante.
 
@@ -454,7 +454,7 @@ Utilisez la section **Délégation de boîtes aux lettres** pour attribuer des a
 
   - **Envoyer sous**   Cette autorisation permet aux utilisateurs autres que le propriétaire de la boîte aux lettres d’utiliser la boîte aux lettres pour envoyer des messages. Une fois cette autorisation attribuée à un délégué, tout message envoyé par un délégué depuis cette boîte aux lettres s’affiche comme s’il était envoyé par le propriétaire de la boîte aux lettres. Cette autorisation ne permet pas toutefois pas à un délégué de se connecter à la boîte aux lettres de l’utilisateur.
 
-  - **Envoyer au nom de**   Cette autorisation permet également à un délégué d’utiliser cette boîte aux lettres pour envoyer des messages. Cependant, une fois cette autorisation attribuée à un délégué, l’adresse **De :** de tous les messages envoyés par le délégué indique que le message a été envoyé par le délégué, au nom du propriétaire de la boîte aux lettres.
+  - **Envoyer au nom de**   Cette autorisation permet également à un délégué d’utiliser cette boîte aux lettres pour envoyer des messages. Cependant, une fois cette autorisation attribuée à un délégué, l’adresse **De :**  de tous les messages envoyés par le délégué indique que le message a été envoyé par le délégué, au nom du propriétaire de la boîte aux lettres.
 
   - **Accès total**   Cette autorisation permet à un délégué de se connecter à la boîte aux lettres de l’utilisateur et d’afficher le contenu de la boîte aux lettres. Cependant, une fois cette autorisation attribuée à un délégué, celui-ci ne peut pas envoyer de messages depuis cette boîte aux lettres. Pour permettre à un délégué d’envoyer des courriers électroniques depuis la boîte aux lettres de l’utilisateur, vous devez attribuer au délégué l’autorisation Envoyer sous ou Envoyer au nom de.
 

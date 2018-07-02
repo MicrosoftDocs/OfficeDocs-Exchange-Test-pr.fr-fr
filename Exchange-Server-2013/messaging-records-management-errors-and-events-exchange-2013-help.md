@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 La gestion des enregistrements de messagerie (MRM) génère des événements que vous pouvez consulter dans l'Observateur d'événements. Cela vous permet de dépanner et de vérifier les performances de l'Assistant Dossier géré. L'Observateur d'événements suit les types d'événements suivants, dans l'ordre d'importance ci-après :
 

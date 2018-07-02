@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Vous pouvez importer et exporter les fichiers audio que vous avez enregistrés pour les utiliser dans les plans de numérotation et les standards automatiques de messagerie unifiée (MU). Par exemple, vous devez exporter et enregistrer une copie d’un fichier audio si vous effectuez une mise à niveau à partir d’une version précédente d’Exchange. Vous pourriez également avoir besoin d'importer une copie d'une invite audio enregistrée avant de configurer un plan de numérotation ou un standard automatique.
 

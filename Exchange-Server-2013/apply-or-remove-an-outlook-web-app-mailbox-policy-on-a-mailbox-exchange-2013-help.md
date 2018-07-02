@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-12_
+_**Dernière rubrique modifiée :** 2012-10-12_
 
 Vous pouvez appliquer une stratégie de boîtes aux lettres Outlook Web App à une ou à plusieurs boîtes aux lettres ou en supprimer une en utilisant l'EAC ou le Shell.
 
@@ -51,7 +51,7 @@ Vous pouvez appliquer une stratégie de boîtes aux lettres Outlook Web App à u
 
 2.  Dans le volet de travail, sélectionnez la boîte aux lettres à laquelle vous souhaitez appliquer une stratégie de boîte aux lettres Outlook Web App. Vous pouvez également sélectionner plusieurs boîtes aux lettres.
 
-3.  **Si vous avez sélectionné une boîte aux lettres :**
+3.  **Si vous avez sélectionné une boîte aux lettres :** 
     
     1.  Faites défiler le volet d'informations jusqu'à **Connectivité de messagerie** et cliquez sur **Afficher les détails**.
     
@@ -59,7 +59,7 @@ Vous pouvez appliquer une stratégie de boîtes aux lettres Outlook Web App à u
     
     3.  Cliquez sur **Enregistrer** pour attribuer la stratégie sélectionnée à la boîte aux lettres sélectionnée.
     
-    **Si vous avez sélectionné plusieurs boîtes aux lettres :**
+    **Si vous avez sélectionné plusieurs boîtes aux lettres :** 
     
     1.  Faites défiler le volet d'informations jusqu'à **Outlook Web App** et cliquez sur **Attribuer une stratégie**.
     

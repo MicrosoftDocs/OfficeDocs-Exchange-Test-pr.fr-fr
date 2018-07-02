@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-13_
+_**Dernière rubrique modifiée :** 2013-02-13_
 
 Vous pouvez définir un ID de partenaire d'aperçu de messagerie vocale dans une stratégie de boîte aux lettres de messagerie unifiée. Après avoir défini cet ID dans une stratégie de boîte aux lettres de messagerie unifiée, le paramètre s'applique à tous les utilisateurs à extension messagerie unifiée associés à cette même stratégie.
 

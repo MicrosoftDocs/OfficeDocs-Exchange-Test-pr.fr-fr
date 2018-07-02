@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-14_
+_**Dernière rubrique modifiée :** 2012-10-14_
 
 Les listes d’adresses sont un ensemble d’objets destinataire et autres objets Active Directory. Une liste d’adresses est applicable dès que la règle de filtrage de la liste d’adresses a été modifiée. Pour mettre à jour l’appartenance à la liste d’adresses afin d’inclure de nouveaux destinataires et supprimer ceux qui ne correspondent plus aux critères de filtrage, vous devez appliquer la liste d’adresses.
 

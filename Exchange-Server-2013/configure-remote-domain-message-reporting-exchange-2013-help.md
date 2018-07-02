@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Vous pouvez utiliser Exchange Management Shell pour configurer la façon dont les courriers électroniques sont envoyés et reçus via des domaines distants. Lisez les informations ci-dessous pour savoir comment utiliser Exchange Management Shell afin de configurer la façon dont Exchange gère les rapports de remise et de non-remise.
 

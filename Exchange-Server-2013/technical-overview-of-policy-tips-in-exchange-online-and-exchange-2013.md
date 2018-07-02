@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-07-22_
+_**Dernière rubrique modifiée :** 2015-07-22_
 
 Vous pouvez contribuer à empêcher les utilisateurs de messagerie électronique Microsoft Outlook, Outlook Web App (OWA) et OWA pour les appareils de votre organisation d’envoyer de manière inappropriée des informations sensibles en créant des stratégies de protection contre la perte de données comprenant des messages de notification *Conseil de stratégie*. De manière similaire aux infos-courrier introduits dans Microsoft Exchange Server 2010, les messages de notification de conseil de stratégie s'affichent à l'attention des utilisateurs dans Outlook pendant qu'ils composent leur courrier électronique. Les messages de notification Conseil de stratégie apparaissent seulement si un élément du courrier électronique de l’expéditeur semble ne pas respecter une stratégie DLP mise en place et que cette stratégie comprend une règle pour avertir l’expéditeur dès que les conditions que vous établissez sont remplies. Pour plus d'informations générales sur la protection contre la perte de données, consultez la rubrique [Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md).
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-05_
+_**Dernière rubrique modifiée :** 2013-02-05_
 
 [Désactivation ou activation du service de recherche Exchange](disable-or-enable-exchange-search-exchange-2013-help.md)
 

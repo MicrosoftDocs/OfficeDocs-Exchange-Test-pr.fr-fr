@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-09-11_
+_**Dernière rubrique modifiée :** 2014-09-11_
 
 Si votre organisation utilise des formulaires pour recueillir des informations sensibles, les utilisateurs peuvent essayer d’envoyer ces formulaires par message électronique à des contacts extérieurs, ce qui entraîne un risque de sécurité. La protection contre la perte de données (DLP) dans Exchange vous aide à protéger ces informations en les détectant avec la [Création d’une empreinte numérique de document](overview-of-document-fingerprinting-in-exchange.md). Pour utiliser la création d’une empreinte numérique de document, il suffit de télécharger un formulaire vierge, tel qu’un document de propriété intellectuelle, un formulaire officiel ou un autre formulaire standard utilisé dans votre organisation. Ensuite, ajoutez l’empreinte numérique de document obtenue à une stratégie DLP ou à une règle de transport. Voici comment procéder.
 

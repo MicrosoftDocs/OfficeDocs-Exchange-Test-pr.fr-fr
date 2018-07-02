@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion `MyDiagnostics` permet à chaque utilisateur d’effectuer des diagnostics de base sur leur boîte aux lettres comme, par exemple, la récupération des informations de diagnostics de calendrier.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-19_
+_**Dernière rubrique modifiée :** 2013-02-19_
 
 Microsoft Exchange Server 2013 prend en charge la désactivation de l'authentification TLS pour la communication SMTP entre serveurs de boîtes aux lettres dans certaines topologies où des contrôleurs d'optimisation de réseau étendu (WOC) compressent le trafic SMTP.
 

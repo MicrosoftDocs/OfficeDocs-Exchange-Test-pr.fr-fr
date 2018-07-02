@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-08-21_
+_**Dernière rubrique modifiée :** 2012-08-21_
 
 Microsoft Exchange Server 2013 inclut plusieurs rôles de gestion par défaut. Les rôles suivants sont attribués aux groupes de rôles de gestion ou aux stratégies d’attribution des rôles de gestion sous la forme de diverses combinaisons qui accordent des autorisations pour la gestion et l’utilisation des fonctionnalités proposées par Exchange 2013. Pour plus d’informations sur les rôles, voir [Présentation des rôles de gestion](understanding-management-roles-exchange-2013-help.md).
 

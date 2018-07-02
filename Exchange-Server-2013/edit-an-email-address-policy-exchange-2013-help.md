@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-12-10_
+_**Dernière rubrique modifiée :** 2012-12-10_
 
 Les stratégies d'adresse de messagerie génèrent des adresses de messagerie principales et secondaires pour vos destinataires (utilisateurs, contacts et groupes), afin qu'ils puissent recevoir et envoyer des messages.
 

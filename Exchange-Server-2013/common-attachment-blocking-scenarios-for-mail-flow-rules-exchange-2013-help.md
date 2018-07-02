@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-02-23_
+_**Dernière rubrique modifiée :** 2017-02-23_
 
 Votre organisation peut exiger le blocage ou le rejet de certains types de messages afin de répondre aux exigences juridiques ou de conformité, ou pour répondre à des besoins spécifiques de l’entreprise. Voici quelques exemples de scénarios courants permettant de bloquer toutes les pièces jointes que vous pouvez configurer à l’aide des règles de transport dans Exchange :
 

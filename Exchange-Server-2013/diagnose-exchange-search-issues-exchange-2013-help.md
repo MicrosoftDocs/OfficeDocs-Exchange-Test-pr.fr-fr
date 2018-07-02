@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Exchange Search indexe les boîtes aux lettres et les pièces jointes prises en charge dans les boîtes aux lettres Exchange. Avec l’augmentation des volumes de courriers électroniques, l’augmentation des tailles de boîtes aux lettres et des quotas de stockage, la mise en service des boîtes aux lettres d’archivage pour les utilisateurs, et la découverte électronique inaltérable pour effectuer des recherches de découverte, Exchange Search est un composant essentiel des serveurs de boîtes aux lettres dans votre organisation Microsoft Exchange Server 2013. Les problèmes liés à Exchange Search peuvent avoir une incidence sur la productivité des utilisateurs et la fonctionnalité de découverte électronique inaltérable.
 

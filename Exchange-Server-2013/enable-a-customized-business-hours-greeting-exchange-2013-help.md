@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-19_
+_**Dernière rubrique modifiée :** 2013-04-19_
 
 Vous pouvez activer un message d'accueil personnalisé pendant les heures d'ouverture pour un standard automatique de messagerie unifiée. Le message d'accueil des heures d'ouverture est la première chose que les appelants entendent lorsqu'un standard automatique de messagerie unifiée répond à leurs appels pendant les heures d'ouverture. Vous souhaitez certainement personnaliser le message d'accueil.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-03-17_
+_**Dernière rubrique modifiée :** 2016-03-17_
 
 La *résolution des destinataires* est le processus de développement et de résolution de tous les destinataires d'un message. L'action de résolution des destinataires met en correspondance un destinataire avec l'objet Active Directory approprié au sein de l'organisation Microsoft Exchange. L'action de développement des destinataires affiche tous les groupes de distribution en une liste de destinataires individuels. La résolution des destinataires permet une application correcte des règles de limites des messages et des destinataires alternatifs à chaque destinataire.
 
@@ -37,7 +37,7 @@ La *résolution de niveau supérieur* est la première étape de la résolution 
 
 ## Adresses de messagerie des destinataires
 
-Une résolution de niveau supérieur commence par un message et la liste initiale, non développée, des destinataires de l'*enveloppe de message*. L'enveloppe de message contient les commandes utilisées pour la transmission des messages via les serveurs de messagerie SMTP. L'adresse de messagerie de l'expéditeur est contenue dans la commande **MAIL FROM:** . L'adresse de messagerie de chaque destinataire est contenue dans une commande **RCPT TO:** distincte. L'expéditeur et les destinataires d'enveloppe sont généralement créés à partir de l'expéditeur et des destinataires des champs d'en-tête `To:`, `From:`, `Cc:` et `Bcc:` de l'en-tête du message. Ce n'est toutefois pas toujours le cas. Les champs d'en-tête `To:`, `From:`, `Cc:` et `Bcc:` d'un message sont aisément falsifiables et peuvent ne pas correspondre aux adresses électroniques réelles d'expéditeur ou de destinataire utilisées pour transmettre le message.
+Une résolution de niveau supérieur commence par un message et la liste initiale, non développée, des destinataires de l'*enveloppe de message*. L'enveloppe de message contient les commandes utilisées pour la transmission des messages via les serveurs de messagerie SMTP. L'adresse de messagerie de l'expéditeur est contenue dans la commande **MAIL FROM:**  . L'adresse de messagerie de chaque destinataire est contenue dans une commande **RCPT TO:**  distincte. L'expéditeur et les destinataires d'enveloppe sont généralement créés à partir de l'expéditeur et des destinataires des champs d'en-tête `To:`, `From:`, `Cc:` et `Bcc:` de l'en-tête du message. Ce n'est toutefois pas toujours le cas. Les champs d'en-tête `To:`, `From:`, `Cc:` et `Bcc:` d'un message sont aisément falsifiables et peuvent ne pas correspondre aux adresses électroniques réelles d'expéditeur ou de destinataire utilisées pour transmettre le message.
 
 ## Adresses de messagerie encapsulées
 
@@ -156,11 +156,11 @@ Le filtre LDAP utilisé pour la résolution d'adresse est décrit comme suit :
 
   - Pour tous les autres types d'adresses de messagerie, l'attribut Active Directory **proxyAddresses** du destinataire est utilisé comme filtre LDAP.
 
-Si l'adresse de messagerie utilisée dans le message ne correspond pas à l'adresse SMTP principale de l'objet Active Directory correspondant, le catégoriseur réécrit l'adresse de messagerie dans le message pour la faire correspondre à l'adresse SMTP principale. L'adresse de messagerie d'origine est enregistrée dans l'entrée `ORCPT=` de la commande **RCPT TO:** dans l'enveloppe de message.
+Si l'adresse de messagerie utilisée dans le message ne correspond pas à l'adresse SMTP principale de l'objet Active Directory correspondant, le catégoriseur réécrit l'adresse de messagerie dans le message pour la faire correspondre à l'adresse SMTP principale. L'adresse de messagerie d'origine est enregistrée dans l'entrée `ORCPT=` de la commande **RCPT TO:**  dans l'enveloppe de message.
 
 ## Restrictions applicables au message de l'expéditeur
 
-La taille utilisée pour la restriction de la taille du message de l'expéditeur est la valeur du champ d'en-tête **X-MS-Exchange-Organization-OriginalSize:** dans l'en-tête du message. Exchange utilise ce champ d'en-tête pour enregistrer la taille d'origine du message quand il est entré dans l'organisation Exchange. Chaque fois qu'un message est vérifié par rapport aux limites de taille de message spécifiées, la valeur la plus faible de l'en-tête de la taille de message actuelle ou de la taille de message d'origine est utilisée. La taille du message peut varier en raison de la conversion de contenu, du codage et du traitement par l'agent. Si ce champ d'en-tête n'existe pas, il est créé à l'aide de la valeur de taille de message actuelle. Si le message est trop volumineux, une notification d'échec de remise est générée et tout traitement de message supplémentaire est interrompu.
+La taille utilisée pour la restriction de la taille du message de l'expéditeur est la valeur du champ d'en-tête **X-MS-Exchange-Organization-OriginalSize:**  dans l'en-tête du message. Exchange utilise ce champ d'en-tête pour enregistrer la taille d'origine du message quand il est entré dans l'organisation Exchange. Chaque fois qu'un message est vérifié par rapport aux limites de taille de message spécifiées, la valeur la plus faible de l'en-tête de la taille de message actuelle ou de la taille de message d'origine est utilisée. La taille du message peut varier en raison de la conversion de contenu, du codage et du traitement par l'agent. Si ce champ d'en-tête n'existe pas, il est créé à l'aide de la valeur de taille de message actuelle. Si le message est trop volumineux, une notification d'échec de remise est générée et tout traitement de message supplémentaire est interrompu.
 
 La limite du nombre de destinataires de l'expéditeur n'est appliquée que dans le service de transport sur le premier serveur de boîte aux lettres qui traite le message. Le nombre de destinataires de l'enveloppe de message non développé d'origine est comparé à la limite de destinataires de l'expéditeur. Le nombre de destinataires de l'enveloppe de message non développé d'origine est utilisé pour éviter les problèmes de remise partielle de message qui se produisaient dans Microsoft Exchange Server 2003 quand des listes de distribution imbriquées utilisaient des serveurs d'expansion distants.
 
@@ -244,7 +244,7 @@ La liste suivante décrit les messages de notification de remise disponibles :
 
   - **Notification d'état de remise**   Cette notification décrit le résultat de la tentative de remise d'un message. Pour plus d'informations sur les messages de notification d'état de remise, consultez la rubrique [Notifications d’état de remise et notifications d’échec de remise dans Exchange 2013](dsns-and-ndrs-in-exchange-2013-exchange-2013-help.md).
 
-  - **Notification de disposition de message**   Cette notification décrit le statut d'un message après qu'il a été remis avec succès à un destinataire. Une notification de lecture et une notification de non-lecture sont des exemples de notifications de disposition de message. Les messages de notification de disposition de messages sont définis dans la norme RFC 2298 et sont contrôlés par le champ d'en-tête **Disposition-Notification-To:** dans l'en-tête du message. Les paramètres de notification de disposition de message qui utilisent le champ d'en-tête `Disposition-Notification-To:` sont compatibles avec un grand nombre de serveurs de messages différents. Il est également possible de définir les paramètres de notification de disposition de message à l'aide des propriétés MAPI dans Microsoft Outlook et Exchange.
+  - **Notification de disposition de message**   Cette notification décrit le statut d'un message après qu'il a été remis avec succès à un destinataire. Une notification de lecture et une notification de non-lecture sont des exemples de notifications de disposition de message. Les messages de notification de disposition de messages sont définis dans la norme RFC 2298 et sont contrôlés par le champ d'en-tête **Disposition-Notification-To:**  dans l'en-tête du message. Les paramètres de notification de disposition de message qui utilisent le champ d'en-tête `Disposition-Notification-To:` sont compatibles avec un grand nombre de serveurs de messages différents. Il est également possible de définir les paramètres de notification de disposition de message à l'aide des propriétés MAPI dans Microsoft Outlook et Exchange.
 
   - **Notification d'échec de remise**   Cette notification indique à l'expéditeur du message qu'il n'a pas été possible de remettre ce dernier aux destinataires spécifiés.
 
@@ -268,7 +268,7 @@ Quand un message qui n'est pas un message de notification de remise est envoyé 
 
   - Si la redirection de la notification est définie sur l'expéditeur du message, les paramètres de demande de notification ne sont pas modifiés.
 
-  - Si la redirection de la notification n'est pas définie, tous les paramètres de demande de notification sont supprimés. L'entrée `NOTIFY=NEVER` est ajoutée à la commande **RCPT TO:** pour chaque destinataire figurant dans l'enveloppe de message.
+  - Si la redirection de la notification n'est pas définie, tous les paramètres de demande de notification sont supprimés. L'entrée `NOTIFY=NEVER` est ajoutée à la commande **RCPT TO:**  pour chaque destinataire figurant dans l'enveloppe de message.
 
   - Si la redirection de la notification est définie sur le gestionnaire du groupe de distribution, tous les paramètres de demande de notification sont supprimés, à l'exception des notifications d'échec de remise, qui sont envoyées au gestionnaire du groupe de distribution.
 
@@ -364,13 +364,13 @@ La liste complète des destinataires de messages étant développée et résolue
 
 La résolution des destinataires applique une bifurcation à un message si les conditions suivantes sont vraies :
 
-  - Quand l'expéditeur du message indiqué dans **MAIL FROM:**, dans l'enveloppe de message, est mis à jour. Par exemple, quand le paramètre *ReportToManagerEnabled* d'un groupe de distribution a la valeur `$true`.
+  - Quand l'expéditeur du message indiqué dans **MAIL FROM:** , dans l'enveloppe de message, est mis à jour. Par exemple, quand le paramètre *ReportToManagerEnabled* d'un groupe de distribution a la valeur `$true`.
 
   - Quand des messages de réponse automatique, tels que des notifications d'état de remise, des notifications d'absence du bureau et des rapports de rappel, doivent être supprimés.
 
   - Lors de l'expansion de destinataires alternatifs.
 
-  - Quand un champ d'en-tête **Resent-From:** doit être ajouté à l'en-tête du message. Les champs d'en-tête Resent sont des champs informatifs qui permettent de déterminer si un message a été transféré par un utilisateur. Les champs d'en-tête Resent sont utilisés de façon à ce que le message apparaisse au destinataire comme s'il était envoyé directement par l'expéditeur d'origine. Le destinataire peut afficher l'en-tête de message pour voir qui a transféré le message. Les champs d'en-tête Resent sont définis dans la section 3.6.6 de la norme RFC 2822.
+  - Quand un champ d'en-tête **Resent-From:**  doit être ajouté à l'en-tête du message. Les champs d'en-tête Resent sont des champs informatifs qui permettent de déterminer si un message a été transféré par un utilisateur. Les champs d'en-tête Resent sont utilisés de façon à ce que le message apparaisse au destinataire comme s'il était envoyé directement par l'expéditeur d'origine. Le destinataire peut afficher l'en-tête de message pour voir qui a transféré le message. Les champs d'en-tête Resent sont définis dans la section 3.6.6 de la norme RFC 2822.
 
   - Quand l'historique de l'expansion du groupe de distribution doit être transmis.
 

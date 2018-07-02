@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le filtrage génère différentes vues des messages figurant dans les files d'attente. La spécification de critères de filtrage vous permet d'identifier rapidement des messages et d'agir sur ces derniers. Lors de l'envoi d'un message électronique à plusieurs destinataires, le message peut se trouver dans plusieurs files d'attente. Quand vous filtrez les messages en fonction de leurs propriétés, vous pouvez localiser des messages dans toutes les files d'attente. Les scénarios suivants illustrent la manière dont vous pouvez utiliser le filtrage des messages pour gérer le flux de messagerie :
 

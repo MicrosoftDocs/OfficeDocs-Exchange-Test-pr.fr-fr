@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Vous pouvez utiliser les informations de cette rubrique afin de surveiller l’intégrité et l’état des copies de base de données de boîtes aux lettres pour les groupes de disponibilité de base de données (DAG), pour recueillir des informations de diagnostic et pour configurer le seuil de surveillance d’espace disque faible.
 

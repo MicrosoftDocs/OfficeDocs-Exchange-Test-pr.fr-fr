@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-03-26_
+_**Dernière rubrique modifiée :** 2018-03-26_
 
 **Résumé** : Utilisez ces procédures pour déplacer vos dossiers publics Exchange 2007 et Exchange 2010 vers Office 365.
 

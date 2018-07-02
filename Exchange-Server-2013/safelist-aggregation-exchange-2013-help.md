@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-09-30_
+_**Dernière rubrique modifiée :** 2013-09-30_
 
 Dans Microsoft Exchange Server 2013, le terme *agrégation de listes fiables* désigne la fonction de blocage du courrier indésirable partagée par Microsoft Outlook et Exchange. Cette fonctionnalité collecte les données des listes de blocage du courrier indésirable des destinataires sûrs, des expéditeurs sûrs, des expéditeurs bloqués et des informations de contact que les utilisateurs Outlook configurent ; elle met ces données à disposition des agents Exchange de blocage du courrier indésirable.
 

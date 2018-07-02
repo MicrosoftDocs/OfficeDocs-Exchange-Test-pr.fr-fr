@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-15_
+_**Dernière rubrique modifiée :** 2016-12-15_
 
 Lorsque vous configurez vos réseaux de téléphonie et de données pour une messagerie unifiée dans Microsoft Exchange Server 2013, vous devez configurer les passerelles VoIP pour leur permettre de communiquer avec les serveurs d’accès au client qui exécutent le service Routeur d’appel de messagerie unifiée de Microsoft Exchange et avec les serveurs de boîtes aux lettres qui exécutent le service de messagerie unifiée de Microsoft Exchange. Vous devez également configurer les passerelles VoIP pour leur permettre de communiquer avec les PBX (Private Branch eXchange) au sein de votre organisation. Vous pouvez utiliser les informations et liens de cette rubrique pour configurer une passerelle VoIP et permettre ainsi la communication avec un PBX.
 

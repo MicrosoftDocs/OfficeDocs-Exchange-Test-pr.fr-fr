@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-28_
+_**Dernière rubrique modifiée :** 2012-11-28_
 
 Si des utilisateurs se servent de POP3 ou IMAP4 pour se connecter à leurs boîtes aux lettres Microsoft Exchange Server 2013, ils doivent avoir connaissance des paramètres de serveurs appropriés pour effectuer la connexion. Après une installation par défaut d’Exchange 2013, vos utilisateurs ne peuvent pas consulter leurs propres paramètres de serveur POP3 ou IMAP4 entrants ou paramètres de serveur SMTP sortants. Cependant, vous pouvez configurer Exchange pour permettre à vos utilisateurs de consulter leurs propres paramètres à l’aide de MicrosoftOutlook Web App.
 

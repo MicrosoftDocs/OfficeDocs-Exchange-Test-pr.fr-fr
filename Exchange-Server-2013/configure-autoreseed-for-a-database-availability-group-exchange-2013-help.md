@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-04-15_
+_**Dernière rubrique modifiée :** 2013-04-15_
 
 AutoReseed est une fonction qui permet de restaurer rapidement la redondance des bases de données après une erreur du disque. En cas de défaillance du disque, les copies de bases de données stockées sur le disque sont automatiquement réamorcées sur un disque de rechange préconfiguré sur le serveur de boîtes aux lettres. Suivez les étapes indiquées dans la présente rubrique pour configurer AutoReseed pour un groupe de disponibilité de base de données.
 

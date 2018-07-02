@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server, Exchange Server 2013_
+_**Sapplique à :** Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Microsoft Exchange Server 2013 comprend un large éventail d’autorisations prédéfinies, basées sur le modèle des autorisations du contrôle d’accès basé sur un rôle (RBAC), que vous pouvez utiliser de manière immédiate pour donner facilement des autorisations à vos administrateurs et utilisateurs. Vous pouvez utiliser les autorisations proposées par Exchange 2013 afin que votre nouvelle organisation soit opérationnelle rapidement.
 

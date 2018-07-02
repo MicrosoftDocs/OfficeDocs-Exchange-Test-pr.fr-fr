@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-11-16_
+_**Dernière rubrique modifiée :** 2016-11-16_
 
 Si le contenu d'une boîte aux lettres de dossiers publics commence à dépasser vos quotas de boîte aux lettres, vous devrez peut-être déplacer des dossiers publics vers une autre boîte aux lettres de dossiers publics. Vous pouvez faire cela de deux manières. Pour déplacer un ou plusieurs dossiers publics qui ne contiennent pas de sous-dossiers, vous pouvez utiliser les cmdlets **PublicFolderMoveRequest**. Si vous devez déplacer une branche entière de dossier public (qui comprend le dossier public parent et tous les sous-dossiers), vous pouvez utiliser le script `Move-PublicFolderBranch.ps1` disponible lors de l'installation d'Exchange 2013.
 

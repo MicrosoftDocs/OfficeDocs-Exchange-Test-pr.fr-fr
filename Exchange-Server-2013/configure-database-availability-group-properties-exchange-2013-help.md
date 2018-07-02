@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-06-24_
+_**Dernière rubrique modifiée :** 2014-06-24_
 
 Vous pouvez utiliser le Centre d’administration Exchange (CAE) ou l’environnement de ligne de commande Exchange Management Shell pour configurer les propriétés du groupe de disponibilité de base de données (DAG), y compris l’adresse IP du DAG, ainsi que le serveur et répertoire témoins utilisés par le groupe de disponibilité de base de données. L’environnement de ligne de commande Exchange Management Shell vous permet de configurer les propriétés du DAG qui ne sont pas accessibles dans le CAE, telles que les informations relatives au serveur et répertoire témoins de remplacement, le port TCP utilisé pour la réplication et le mode de coordination de l’activation du centre de données (DAC).
 

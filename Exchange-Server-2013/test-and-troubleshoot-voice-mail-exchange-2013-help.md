@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-06-25_
+_**Dernière rubrique modifiée :** 2013-06-25_
 
 Après avoir installé les serveurs d’accès au client et de boîtes aux lettres dans votre organisation, vous devrez peut-être tester la fonctionnalité de la messagerie unifiée (UM). Vous serez amené à utiliser les cmdlets et les outils de diagnostic inclus dans Exchange 2013 ou l’outil de dépannage de la messagerie unifiée dans les situations suivantes :
 

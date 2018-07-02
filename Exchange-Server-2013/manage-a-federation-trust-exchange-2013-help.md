@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-01_
+_**Dernière rubrique modifiée :** 2015-01-01_
 
 Une approbation de fédération établit une relation d’approbation entre une organisation Microsoft Exchange 2013 et le système d’authentification Azure Active Directory et prend en charge le partage fédéré avec d’autres organisations Exchange fédérées. Normalement, vous ne devriez pas avoir à gérer ni à modifier l’approbation de fédération qui a été créée. Toutefois, dans certaines circonstances, il sera peut-être nécessaire d’ajouter ou de supprimer des domaines fédérés ou de redéfinir le domaine utilisé afin de configurer l’identificateur de l’organisation (OrgID) pour l’approbation de fédération.
 

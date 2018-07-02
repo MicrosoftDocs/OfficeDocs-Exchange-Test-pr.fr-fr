@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-06-19_
+_**Dernière rubrique modifiée :** 2014-06-19_
 
 Pour effectuer une installation sans assistance, vous devez installer Microsoft Exchange Server 2013 depuis l'invite de commandes. Pour de plus amples informations sur la planification et le déploiement d'Exchange 2013, consultez la rubrique [Planification et déploiement](planning-and-deployment-for-exchange-2013-installation-instructions.md).
 

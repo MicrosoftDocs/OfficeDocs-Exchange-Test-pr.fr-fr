@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez définir des stratégies de code confidentiel en relation avec une stratégie de boîte aux lettres de messagerie unifiée. Les stratégies de boîte aux lettres de messagerie unifiée peuvent être configurées pour augmenter le niveau de sécurité des utilisateurs à extension messagerie unifiée qui utilisent Outlook Voice Access en exigeant d'eux qu'ils se conforment aux stratégies de code confidentiel prédéfinies pour votre organisation.
 

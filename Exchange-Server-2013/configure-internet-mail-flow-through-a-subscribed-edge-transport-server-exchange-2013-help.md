@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Pour établir la messagerie Internet via un serveur de transport Edge, abonnez le serveur de transport Edge à un site Active Directory. Ceci crée automatiquement les deux connecteurs d’envoi requis pour le flux de messagerie Internet :
 

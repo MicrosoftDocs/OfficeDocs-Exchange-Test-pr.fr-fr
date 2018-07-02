@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les compteurs de performances de cette rubrique contrôlent l'Assistant Dossier géré quand il implémente la gestion des enregistrements de messagerie (MRM) pour Microsoft Exchange Server 2010. Étant donné que l'exécution de l'Assistant Dossier géré est un processus consommant une quantité importante de ressources, vous devez l'exécuter uniquement lorsque votre serveur peut tolérer la charge supplémentaire. Nous vous recommandons également de contrôler les performances lors de l'exécution de l'Assistant Dossier géré. En plus des compteurs de performances répertoriés dans cette rubrique, vous pouvez également demander à contrôler les compteurs de performances supplémentaires qui analysent des éléments tels que les performances de disque et l'utilisation de l'UC.
 

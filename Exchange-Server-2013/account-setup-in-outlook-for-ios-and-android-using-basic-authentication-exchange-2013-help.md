@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-04-30_
+_**Dernière rubrique modifiée :** 2018-04-30_
 
 **Résumé** : Comment les utilisateurs de votre organisation Exchange 2013 peuvent rapidement configurer leurs comptes Outlook pour iOS et Android à l’aide de l’authentification de base.
 

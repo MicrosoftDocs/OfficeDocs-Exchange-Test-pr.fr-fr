@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-11-09_
+_**Dernière rubrique modifiée :** 2015-11-09_
 
 **Résumé** : Comment configurer des dossiers publics, y compris en leur attribuant des autorisations dans le Centre d’administration Exchange.
 

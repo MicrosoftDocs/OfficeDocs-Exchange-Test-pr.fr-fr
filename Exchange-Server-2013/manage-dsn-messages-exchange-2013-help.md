@@ -18,9 +18,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-20_
+_**Dernière rubrique modifiée :** 2013-02-20_
 
 Microsoft Exchange Server 2013 utilise des notifications d'état de remise (DSN) pour fournir des notifications d'échec de remise et d'autres messages d'état aux expéditeurs de messages. Vous pouvez utiliser les DSN intégrés ou créer des messages DSN personnalisés pour répondre aux exigences de votre organisation.
 

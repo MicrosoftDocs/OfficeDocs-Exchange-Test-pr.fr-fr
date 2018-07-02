@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-14_
+_**Dernière rubrique modifiée :** 2015-01-14_
 
 Cette rubrique fournit des solutions et des informations à propos des erreurs courantes qui peuvent se produire lorsque vous utilisez le script RollAlternateServiceAccountPassword.ps1.
 

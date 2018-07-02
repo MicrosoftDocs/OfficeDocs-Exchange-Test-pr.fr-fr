@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Microsoft La messagerie unifiée Exchange permet de remettre des messages vocaux à des boîtes aux lettres et permet aux utilisateurs de recevoir des télécopies dans leur boîte aux lettres. Dans la messagerie unifiée, une télécopie est envoyée à la boîte aux lettres d’un utilisateur sous la forme d’un message électronique auquel est joint un fichier image de format .tif. L’utilisateur peut ouvrir le fichier attaché à l’aide d’une application logicielle capable d’ouvrir et d’afficher des fichiers image portant l’extension .tif. Cette rubrique présente la télécopie et la manière dont elle fonctionne dans la messagerie unifiée.
 

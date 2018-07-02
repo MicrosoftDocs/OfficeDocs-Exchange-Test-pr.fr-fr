@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2016, Office 365_
+_**Sapplique à :** Exchange Online, Exchange Server 2016, Office 365_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Utilisez le Centre d’administration Exchange (CAE) ou l’environnement de ligne de commande Exchange Management Shell pour créer un groupe de distribution dans votre organisation Exchange ou pour activer la messagerie sur un groupe existant dans Active Directory.
 

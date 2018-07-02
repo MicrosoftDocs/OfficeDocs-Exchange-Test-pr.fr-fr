@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-16_
+_**Dernière rubrique modifiée :** 2012-11-16_
 
 Le composant logiciel enfichable Services de la console de gestion (MMC) Microsoft ou cmd.exe à l'invite de commandes vous permet de démarrer le service routeur des appels de messagerie unifiée MicrosoftExchange sur un serveur d'accès au client. Par défaut, le service routeur des appels de messagerie unifiée MicrosoftExchange démarre après l'installation d'un serveur d'accès au client. Cependant, il est parfois nécessaire de redémarrer ou d'arrêter le service routeur des appels de messagerie unifiée MicrosoftExchange manuellement, par exemple, si après avoir mis le serveur d'accès au client hors connexion, vous devez le remettre en ligne.
 

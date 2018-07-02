@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion `User Options` permet aux administrateurs d'afficher les options Outlook Web App d'un utilisateur au sein d'une organisation. Ce rôle peut être utilisé pour diagnostiquer des problèmes de configuration.
 

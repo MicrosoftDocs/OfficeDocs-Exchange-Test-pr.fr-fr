@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-16_
+_**Dernière rubrique modifiée :** 2012-11-16_
 
 Vous pouvez utiliser le composant logiciel enfichable Services de Microsoft Management Console (MMC) ou cmd.exe à l'invite de commandes pour arrêter le service de messagerie unifiée MicrosoftExchange sur un serveur de boîtes aux lettres. Dans certaines circonstances, vous serez amené à interrompre ce service, par exemple, quand le serveur de boîtes aux lettres doit être mis hors connexion. Quand vous arrêtez le service de messagerie unifiée Microsoft Exchange, le serveur de boîtes aux lettres ne peut ni accepter, ni traiter les appels entrants.
 

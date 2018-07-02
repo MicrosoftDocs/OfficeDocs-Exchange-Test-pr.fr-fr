@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Lorsqu’un utilisateur supprime des éléments du dossier par défaut Éléments supprimés à l’aide des touches Suppr., Maj+Suppr. ou de l’action **Vider le dossier Éléments supprimés**, les éléments sont déplacés vers le dossier **Éléments récupérables/Suppressions**. La durée pendant laquelle les éléments supprimés sont conservés dans ce dossier est basée sur les paramètres de rétention des éléments supprimés configurés pour la base de données de boîtes aux lettres ou la boîte aux lettres. Par défaut, une base de données de boîtes aux lettres est configurée pour conserver des éléments supprimés pendant 14 jours. Le quota d’avertissements des éléments récupérables et le quota d’éléments récupérables sont respectivement définis à 20 Go et 30 Go.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Les étendues des rôles de gestion déterminent quels objets sont mis à la disposition de l’utilisateur pour que ceux-ci puissent être modifiés à l’aide des cmdlets et des paramètres qui lui sont attribués. En ajoutant une étendue de gestion, vous pouvez configurer les attributions des rôles de gestion afin que les utilisateurs puissent administrer des serveurs, des bases de données, des destinataires et des objets spécifiques au sein de votre organisation, sans pouvoir modifier d’autres objets.
 

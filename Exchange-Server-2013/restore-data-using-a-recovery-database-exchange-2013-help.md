@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-10-01_
+_**Dernière rubrique modifiée :** 2014-10-01_
 
 Une base de données de récupération constitue un type de base de données de boîtes aux lettres spécial, qui vous permet de monter une base de données de boîtes aux lettres restaurée et d’en extraire les données, dans le cadre d’une opération de récupération. Un groupe de stockage de récupération vous permet de récupérer des données à partir d'une sauvegarde ou d'une copie de base de données sans interrompre l'accès des utilisateurs aux données actuelles.
 

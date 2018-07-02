@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Le suivi du pipeline capture des copies de messages électroniques pendant qu'ils transitent dans le pipeline de transport du service de transport ou du service de transport de boîtes aux lettres sur un serveur de boîtes aux lettres et sur des serveurs de transport Edge.
 

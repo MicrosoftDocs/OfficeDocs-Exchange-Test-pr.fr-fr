@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2014-10-23_
+_**Dernière rubrique modifiée :** 2014-10-23_
 
 Avant de pouvoir créer un dossier public, vous devez d'abord créer une boîte aux lettres de dossiers publics. Les boîtes aux lettres de dossiers publics contiennent des informations sur la hiérarchie et le contenu des dossiers publics. La première boîte aux lettres de dossiers publics que vous créez est la boîte aux lettres de hiérarchie principale et contient l'unique exemplaire de la hiérarchie dans lequel les opérations d'écriture sont autorisées. Toutes les autres boîtes aux lettres de dossiers publics que vous créez sont des boîtes aux lettres secondaires et contiennent une copie en lecture seule de la hiérarchie.
 

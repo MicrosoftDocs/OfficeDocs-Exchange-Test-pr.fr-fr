@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les messages électroniques et leurs pièces jointes contiennent de plus en plus souvent des informations professionnelles cruciales telles que des spécifications de produit, des documents portant sur la stratégie de l’entreprise, des données financières ou des informations d’identification personnelle telles que des détails de contact, des numéros de sécurité sociale, des numéros de cartes de crédit et des données sur les employés. Il existe un certain nombre de réglementations propres à l’industrie et locales un peu partout dans le monde qui régissent la collecte, l’enregistrement et la divulgation des informations d’identification personnelle.
 

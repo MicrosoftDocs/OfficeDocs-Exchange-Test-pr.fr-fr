@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-02-15_
+_**Dernière rubrique modifiée :** 2014-02-15_
 
 Les stratégies de partage permettent à des utilisateurs individuels de votre organisation Exchange de partager des informations de disponibilité de calendrier avec d’autres organisations Exchange fédérées, des organisations Exchange non fédérées et des utilisateurs Internet individuels. Au cours des opérations normales, vous pouvez changer des propriétés de stratégie de partage. Vous pouvez par exemple modifier des règles de partage, modifier le niveau d’accès de disponibilité, désactiver temporairement une stratégie de partage ou supprimer intégralement une stratégie de partage.
 

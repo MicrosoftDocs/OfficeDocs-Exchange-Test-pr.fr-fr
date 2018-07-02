@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Vous pouvez ajouter une clause d’exclusion de responsabilité de messagerie électronique, une clause d’exclusion de responsabilité juridique, un énoncé de divulgation, une signature ou toute autre information en haut ou au bas des messages électroniques qui entrent dans votre organisation ou qui en sortent. Ceci peut être nécessaire pour des raisons juridiques, légales ou réglementaires, pour identifier les messages électroniques potentiellement dangereux ou pour d’autres raisons propres à votre organisation.
 

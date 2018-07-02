@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-05_
+_**Dernière rubrique modifiée :** 2012-11-05_
 
 Dans certaines situations, vous pouvez avoir besoin de déplacer un utilisateur à extension messagerie unifiée vers un autre plan de numérotation de messagerie unifiée ou de modifier le plan de numérotation qui est associé à cet utilisateur. Vous pouvez, par exemple, vouloir déplacer un utilisateur à extension messagerie unifiée depuis un plan de numérotation des numéros de poste vers un plan de numérotation URI SIP.
 

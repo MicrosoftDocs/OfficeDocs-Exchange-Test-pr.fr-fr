@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le programme d’installation de Microsoft Exchange Server 2013 a détecté que vous tentez d’installer le rôle serveur d’accès au client. Cependant, il est déjà installé sur l’ordinateur.
 

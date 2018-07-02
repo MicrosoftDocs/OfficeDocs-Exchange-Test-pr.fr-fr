@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Cette rubrique décrit les cmdlets les plus fréquemment utilisées disponibles dans la version de publication (RTM) et les versions ultérieures de Microsoft Exchange Server 2013. Elle fournit également des exemples de leur utilisation.
 

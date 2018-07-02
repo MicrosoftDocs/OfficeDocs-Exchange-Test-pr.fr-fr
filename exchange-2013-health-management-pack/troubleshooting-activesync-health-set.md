@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 L'indicateur d'intégrité Exchange ActiveSync surveille l'intégrité globale du service ActiveSync pour les clients mobiles au sein de votre organisation. L'indicateur d'intégrité ActiveSync est étroitement lié aux indicateurs d'intégrité suivants :
 

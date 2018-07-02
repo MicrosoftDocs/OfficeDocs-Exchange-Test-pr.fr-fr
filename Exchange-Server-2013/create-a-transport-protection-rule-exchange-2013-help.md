@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez utiliser des règles de protection de transport pour appliquer une protection de droits permanente aux messages en fonction de leurs propriétés, telles que l’expéditeur, le destinataire, l’objet et le contenu du message.
 

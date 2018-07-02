@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-05-04_
+_**Dernière rubrique modifiée :** 2016-05-04_
 
 Vous pouvez afficher ou modifier les détails au sein de vos stratégies DLP sans utiliser le Centre d’administration Exchange (EAC) ou les applets de commande Environnement de ligne de commande Exchange Management Shell en exportant les stratégies, enregistrant dans un fichier XML, la modification de ce fichier XML. En règle générale vous souhaitez ensuite réimporter le fichier XML dans Exchange. De cette façon, les stratégies peuvent être modifiés indépendamment du Exchange. Toutefois, ils doivent répondre aux exigences de format spécifique, également appelés schéma XML, afin de fonctionner correctement.
 

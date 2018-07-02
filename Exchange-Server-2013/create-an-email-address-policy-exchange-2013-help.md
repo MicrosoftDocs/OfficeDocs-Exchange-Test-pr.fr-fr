@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-12-10_
+_**Dernière rubrique modifiée :** 2012-12-10_
 
 Pour qu'un destinataire puisse recevoir ou envoyer des messages électroniques, il doit avoir une adresse de messagerie. Les stratégies d’adresse de messagerie génèrent des adresses de messagerie principale et secondaire pour vos destinataires (incluant les utilisateurs, les contacts et les groupes), de façon à ce qu’ils puissent recevoir et envoyer des messages.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Vous pouvez utiliser le script RollAlternateServiceAccountPassword.ps1 dans Exchange Server 2013 pour mettre à jour des informations d'identification de compte de service de substitution (informations d'identification ASA) et distribuer la mise à jour aux serveurs d'accès au client spécifiés.
 

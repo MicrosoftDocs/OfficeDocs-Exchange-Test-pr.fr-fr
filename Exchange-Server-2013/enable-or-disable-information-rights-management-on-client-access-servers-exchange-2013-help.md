@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Lorsque vous activez la gestion des droits relatifs à l’information (IRM) sur des serveurs d’accès au client, vous activez les fonctionnalités suivantes :
 

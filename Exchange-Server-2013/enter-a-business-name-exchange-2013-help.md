@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-19_
+_**Dernière rubrique modifiée :** 2013-04-19_
 
 Vous pouvez entrer le nom de votre entreprise dans la zone **Nom de l'entreprise** d'un standard automatique de messagerie unifiée. Par défaut, aucun nom d'entreprise n'est défini. Si vous entrez le nom d'une entreprise, un message d'accueil par défaut incluant le nom de l'entreprise est lu aux appelants quand ces derniers appellent le standard automatique de messagerie unifiée.
 

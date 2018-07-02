@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013 SP1_
+_**Sapplique à :** Exchange Online, Exchange Server 2013 SP1_
 
-_**Dernière rubrique modifiée :**2017-03-29_
+_**Dernière rubrique modifiée :** 2017-03-29_
 
 S’assurer que les utilisateurs ont une bonne expérience de messagerie a toujours été l’objectif principal des administrateurs de système de messagerie. Pour aider à garantir la disponibilité et la fiabilité de votre organisation Microsoft Exchange Server 2013, tous les aspects du système doivent être surveillés activement, et tous les problèmes détectés doivent être résolus rapidement. Dans les versions précédentes de Exchange, la surveillance des composants critiques du système impliquait généralement l’utilisation d’une application externe telle que Microsoft System Center 2012 Operations Manager pour collecter des données et pour fournir des actions de récupération pour des problèmes détectés à la suite de l’analyse des données recueillies. Exchange 2010 et les versions antérieures incluaient des manifestes d’intégrité et des moteurs de corrélation sous la forme de packs de gestion. Ces composants permettaient à Operations Manager de déterminer si un composant particulier était intègre ou non. En outre, Operations Manager utilisait également l’infrastructure de la cmdlet de diagnostic intégrée à Exchange 2010 pour exécuter des transactions synthétiques pour divers aspects du système.
 

@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-05-27_
+_**Dernière rubrique modifiée :** 2014-05-27_
 
 Après avoir créé une boîte aux lettres d'utilisateur, vous pouvez y apporter des modifications et définir des propriétés supplémentaires via le Centre d'administration Exchange (CAE) ou l'environnement de ligne de commande Exchange Management Shell.
 
@@ -463,7 +463,7 @@ Utilisez la section **Délégation de boîtes aux lettres** pour attribuer des a
 
   - **Envoyer sous**   Cette autorisation permet aux utilisateurs autres que le propriétaire de la boîte aux lettres d'utiliser la boîte aux lettres pour envoyer des messages. Une fois cette autorisation attribuée à un délégué, tout message envoyé par un délégué depuis cette boîte aux lettres s'affiche comme s'il était envoyé par le propriétaire de la boîte aux lettres. Toutefois, cette autorisation ne permet pas à un délégué de se connecter à la boîte aux lettres de l’utilisateur.
 
-  - **Envoyer de la part de**   Cette autorisation permet également à un délégué d'utiliser cette boîte aux lettres pour envoyer des messages. Cependant, une fois cette autorisation attribuée à un délégué, l'adresse **De :** de tous les messages envoyés par le délégué indique que le message a été envoyé par le délégué, au nom du propriétaire de la boîte aux lettres.
+  - **Envoyer de la part de**   Cette autorisation permet également à un délégué d'utiliser cette boîte aux lettres pour envoyer des messages. Cependant, une fois cette autorisation attribuée à un délégué, l'adresse **De :**  de tous les messages envoyés par le délégué indique que le message a été envoyé par le délégué, au nom du propriétaire de la boîte aux lettres.
 
   - **Accès total**   Cette autorisation permet à un délégué de se connecter à la boîte aux lettres de l’utilisateur et d’afficher le contenu de la boîte aux lettres. Cependant, une fois cette autorisation attribuée à un délégué, celui-ci ne peut pas envoyer de messages depuis cette boîte aux lettres. Pour permettre à un délégué d’envoyer des courriers électroniques depuis la boîte aux lettres de l’utilisateur, vous devez attribuer au délégué l’autorisation Envoyer sous ou Envoyer au nom de.
 

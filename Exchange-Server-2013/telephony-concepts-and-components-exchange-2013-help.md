@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-25_
+_**Dernière rubrique modifiée :** 2013-04-25_
 
 Si vous planifiez et déployez la messagerie unifiée MicrosoftExchange 2013 sur votre réseau, vous devez comprendre le fonctionnement des réseaux de téléphonie et de la messagerie unifiée. Cette rubrique offre une vue d'ensemble des composants et des concepts relatifs à l'infrastructure de téléphonie qui vous aideront à planifier et à déployer des serveurs exécutant la messagerie unifiée Exchange 2013.
 

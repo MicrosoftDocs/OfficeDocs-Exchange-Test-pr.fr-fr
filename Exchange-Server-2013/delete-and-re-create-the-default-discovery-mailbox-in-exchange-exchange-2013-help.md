@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-05-04_
+_**Dernière rubrique modifiée :** 2016-05-04_
 
 Vous pouvez utiliser l’environnement de ligne de commande Exchange Management Shell pour supprimer la boîte aux lettres de découverte par défaut, la recréer, puis lui attribuer des autorisations.
 

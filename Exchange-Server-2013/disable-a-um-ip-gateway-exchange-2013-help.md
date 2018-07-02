@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-13_
+_**Dernière rubrique modifiée :** 2012-11-13_
 
 Par défaut, lorsque vous créez une passerelle IP de messagerie unifiée, cette passerelle est activée. Lorsque cette passerelle est créée, pour désactiver le fonctionnement de la passerelle définissez sont état à « désactivé ». Après avoir désactivé cette passerelle, la passerelle VoIP, le PBX (Private Branch eXchange) IP ou le contrôleur de frontière de session (SBC) configuré pour l’utilisation ne peut plus traiter les appels entrants de messagerie unifiée.
 

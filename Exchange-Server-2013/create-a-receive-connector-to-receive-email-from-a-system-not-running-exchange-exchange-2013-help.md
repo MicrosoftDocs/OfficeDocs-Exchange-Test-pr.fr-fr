@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Il peut exister une situation dans laquelle vous voulez recevoir des messages provenant d’un système n’exécutant pas Exchange. Par exemple, vous avez un dispositif Network Appliance qui effectue des contrôles de stratégies et vous acheminez des messages vers votre serveur Exchange. Dans ce cas, nous supposons que le dispositif utilise le protocole SMTP. Sinon, vous devez utiliser un connecteur étranger ou un connecteur d’agent de remise.
 

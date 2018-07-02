@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-06-25_
+_**Dernière rubrique modifiée :** 2013-06-25_
 
 Une fois que vous avez installé les serveurs d’accès au client et de boîtes aux lettres et que vous avez configuré la messagerie unifiée, vous pouvez utiliser plusieurs tests de diagnostic et une application de téléphonie logicielle pour tester la connectivité téléphonique et le fonctionnement des services de messagerie unifiée.
 

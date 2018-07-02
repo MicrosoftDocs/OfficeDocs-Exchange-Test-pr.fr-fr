@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-11_
+_**Dernière rubrique modifiée :** 2012-11-11_
 
 Vous pouvez spécifier le nombre de secondes correspondant à la durée de silence autorisée par le système lors de l’enregistrement d’un message vocal avant qu’il ne soit mis fin à l’appel. Pour la plupart des organisations, cette valeur doit être définie par défaut sur 5 secondes.
 

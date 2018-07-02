@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-05_
+_**Dernière rubrique modifiée :** 2012-11-05_
 
 Vous pouvez désactiver la messagerie unifiée (MU) pour un utilisateur à extension messagerie unifiée. Lorsque vous effectuez cette opération, l'utilisateur ne peut plus utiliser les fonctionnalités de messagerie vocale unifiées. Si vous préférez, lorsque vous désactivez la messagerie unifiée pour un utilisateur, vous pouvez conserver les paramètres de messagerie unifiée pour l'utilisateur.
 

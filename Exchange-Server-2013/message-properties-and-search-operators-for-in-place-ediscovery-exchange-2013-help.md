@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Cette rubrique décrit les propriétés des messages électroniques Exchange que vous pouvez effectuer une recherche à l’aide de la découverte électronique locale et de l’archive permanente dans Exchange Server 2013 et Exchange Online. Elle décrit également les opérateurs de recherche booléens et d’autres techniques de requête de recherche qui permettent d’affiner les résultats de recherche de la découverte électronique.
 

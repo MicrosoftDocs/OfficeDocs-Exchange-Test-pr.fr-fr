@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-12-20_
+_**Dernière rubrique modifiée :** 2017-12-20_
 
 Les conditions et les exceptions des règles de flux de messagerie (également nommées règles de transport) identifient les messages auxquels la règle est appliquée ou non. Par exemple, si la règle ajoute une clause d’exclusion de responsabilité aux messages, vous pouvez configurer la règle de telle sorte qu’elle s’applique uniquement aux messages qui contiennent des mots spécifiques, aux messages envoyés par des utilisateurs spécifiques ou à tous les messages, à l’exception de ceux envoyés par les membres d’un groupe spécifique. Collectivement, les conditions et les exceptions des règles de flux de messagerie sont également appelées *prédicats*, car pour chaque condition, il existe une exception correspondante qui utilise les mêmes paramètres et la même syntaxe. La seule différence réside dans le fait que les conditions spécifient les messages à inclure, tandis que les exceptions spécifient les messages à exclure.
 

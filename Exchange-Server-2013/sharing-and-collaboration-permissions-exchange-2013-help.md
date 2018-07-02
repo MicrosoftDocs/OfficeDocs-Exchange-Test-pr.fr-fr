@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les autorisations requises pour configurer des fonctionnalités de partage et collaboration varient en fonction de la procédure en cours ou de la cmdlet que vous voulez exécuter. Pour plus d’informations sur le partage et la collaboration, voir [Collaboration](collaboration-exchange-2013-help.md) et [Partage](sharing-exchange-2013-help.md).
 

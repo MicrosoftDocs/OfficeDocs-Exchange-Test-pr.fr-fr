@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Le filtrage des pièces jointes est effectué par l’agent de filtrage des pièces jointes, uniquement disponible sur les serveurs de transport Edge. Le filtrage des pièces jointes peut permettre d’empêcher les fichiers joints aux messages électroniques d’entrer dans votre organisation. Vous pouvez configurer une ou plusieurs entrées de filtre de pièce jointe pour filtrer les pièces jointes soit par type de contenu, soit par nom de fichier.
 

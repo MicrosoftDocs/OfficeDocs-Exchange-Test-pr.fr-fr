@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-02_
+_**Dernière rubrique modifiée :** 2012-10-02_
 
 Les étendues des rôles de gestion déterminent les objets à la disposition d'un utilisateur, lequel peut ensuite modifier ces objets à l'aide des cmdlets et des paramètres qui lui sont associés. Si vous n'utilisez plus une étendue, vous pouvez la supprimer. Pour plus d’informations sur les étendues de rôles de gestion dans Exchange Server 2013, voir [Présentation des portées du rôle de gestion](understanding-management-role-scopes-exchange-2013-help.md).
 

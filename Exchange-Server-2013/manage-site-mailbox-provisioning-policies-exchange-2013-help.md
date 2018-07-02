@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Les stratégies de mise en service des boîtes aux lettres de site s'appliquent uniquement aux messages électroniques envoyés à la boîte aux lettres de site ou à partir de celle-ci, ainsi qu'à la taille de la boîte aux lettres de site sur le serveur Exchange.
 

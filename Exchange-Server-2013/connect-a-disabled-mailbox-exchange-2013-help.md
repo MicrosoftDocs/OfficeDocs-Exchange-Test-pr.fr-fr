@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-13_
+_**Dernière rubrique modifiée :** 2012-11-13_
 
 Le Centre d’administration Exchange ou l’environnement de ligne de commande Exchange Management Shell vous permet de connecter une boîte aux lettres désactivée à un compte utilisateur Active Directory. Lorsque vous désactivez une boîte aux lettres, Exchange conserve celle-ci dans la base de données de boîtes aux lettres et change son état pour « désactivé ». Les attributs Exchange sont également supprimés du compte utilisateur Active Directory, mais le compte utilisateur est conservé. La boîte aux lettres est conservée tant que le délai de rétention des boîtes aux lettres supprimées n’a pas expiré. Ce délai est défini par défaut à 30 jours. Une fois ce délai passé, la boîte aux lettres est supprimée définitivement (ou *purgée*) de la base de données de boîtes aux lettres.
 

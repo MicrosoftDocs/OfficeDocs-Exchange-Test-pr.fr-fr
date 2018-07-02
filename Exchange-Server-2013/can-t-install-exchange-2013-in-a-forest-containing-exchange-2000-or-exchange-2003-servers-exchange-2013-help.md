@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Microsoft Exchange Server 2013 ne peut pas poursuivre son exécution car un ou plusieurs ordinateurs exécutant Exchange 2000 Server ou Exchange Server 2003 ont été détectés dans la forêt Active Directory. Avant de pouvoir installer Exchange 2013, tous les serveurs Exchange 2000 et Exchange 2003 doivent être supprimés de la forêt. Les boîtes aux lettres, les dossiers publics et tous les autres objets ou composants Exchange doivent être mis à niveau vers Exchange Server 2007 ou Exchange Server 2010. Vous ne pouvez pas mettre à niveau d’Exchange 2000 ou Exchange 2003 directement vers Exchange 2013.
 

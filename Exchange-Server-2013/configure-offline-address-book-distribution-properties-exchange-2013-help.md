@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-14_
+_**Dernière rubrique modifiée :** 2012-10-14_
 
 Pour chaque point de distribution de carnet d’adresses en mode hors connexion dans Exchange, vous pouvez configurer deux adresses URL : une adresse URL interne accessible uniquement depuis votre réseau d’entreprise interne et une adresse URL externe accessible depuis Internet.
 

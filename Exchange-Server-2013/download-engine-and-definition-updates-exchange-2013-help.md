@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Les administrateurs de Microsoft Exchange Server 2013 peuvent télécharger manuellement les mises à jour du moteur anti-programmes malveillants et des définitions (signature). Nous vous recommandons fortement de télécharger les mises à jour du moteur et des définitions sur votre serveur Exchange avant de le mettre en production.
 

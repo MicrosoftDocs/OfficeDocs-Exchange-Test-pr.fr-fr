@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion `MyRetentionPolicies` permet à chaque utilisateur d’afficher ses balises de rétention et d’afficher et de modifier les paramètres et valeurs par défaut de ces balises.
 

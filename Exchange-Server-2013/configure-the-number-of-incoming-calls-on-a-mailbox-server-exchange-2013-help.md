@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-23_
+_**Dernière rubrique modifiée :** 2013-02-23_
 
 Vous pouvez configurer le nombre de connexions entrantes simultanées qu'un serveur de boîtes aux lettres qui exécute le service de messagerie unifiée Microsoft Exchange acceptera. Cela inclut tous les appels entrants, y compris Outlook Voice Access, répondre aux appels, les standards automatiques et les appels de télécopie. Lorsque vous augmentez le nombre de connexions simultanées sur un serveur de boîtes aux lettres, davantage de ressources système est requises que si vous réduisez le nombre d'appels simultanés. Réduction du nombre d'appels simultanés est particulièrement important sur les ordinateurs plus lents sur lequel sont installés les services de messagerie unifiée. La plage pour le nombre d'appels vocaux simultanés est 0 à 200. Le paramètre par défaut est 100.
 

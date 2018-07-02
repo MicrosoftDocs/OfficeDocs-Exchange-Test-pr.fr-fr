@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-09-25_
+_**Dernière rubrique modifiée :** 2012-09-25_
 
 L’Afficheur des files d’attente est un composant logiciel enfichable Microsoft Management Console qui est installé sur un serveur de boîtes aux lettres ou le serveur de transport Edge. Il se trouve dans la section **Outils de flux de messagerie** de la console Boîte à outils Exchange. Cet outil vous permet d'afficher des informations concernant les files d'attente sur un serveur de transport et les messages se trouvant dans ces files d'attente. En outre, il vous permet d'effectuer des actions de gestion sur les files d'attente et les éléments de courrier. L'Afficheur des files d'attente est utile pour résoudre les problèmes de flux de messagerie et identifier le courrier indésirable.
 

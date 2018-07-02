@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-02_
+_**Dernière rubrique modifiée :** 2012-11-02_
 
 La mise à jour, également appelée *amorçage*, est un processus au cours duquel une copie de base de données de boîtes aux lettres est ajoutée à un autre serveur de boîtes aux lettres dans un groupe de disponibilité de base de données. La copie ajoutée devient la base de données de référence pour la copie passive dans laquelle les fichiers journaux copiés à partir de la copie active sont relus. L'amorçage est nécessaire dans les cas suivants :
 

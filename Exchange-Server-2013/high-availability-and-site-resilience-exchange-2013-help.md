@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-15_
+_**Dernière rubrique modifiée :** 2016-12-15_
 
 Vous pouvez protéger vos bases de données de boîtes aux lettres Exchange Server 2013 et les données qu’elles contiennent en configurant vos bases de données et serveurs de boîtes aux lettres pour la haute disponibilité et la résilience de site. Exchange 2013 réduit les coûts et la complexité du déploiement d’une solution de messagerie à hautes disponibilité et résilience, tout en fournissant des niveaux de disponibilité de données et de service élevés et en prenant en charge les boîtes aux lettres volumineuses.
 

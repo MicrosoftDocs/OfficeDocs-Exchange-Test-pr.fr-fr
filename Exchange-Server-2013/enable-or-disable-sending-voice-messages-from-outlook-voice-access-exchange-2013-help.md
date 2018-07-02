@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-12-13_
+_**Dernière rubrique modifiée :** 2012-12-13_
 
 Vous pouvez autoriser les utilisateurs d'Outlook Voice Access à envoyer des messages vocaux à d'autres utilisateurs à extension messagerie unifiée associés au même plan de numérotation, ou au contraire les empêcher de le faire.
 

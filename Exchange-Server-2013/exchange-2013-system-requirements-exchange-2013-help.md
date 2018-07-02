@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Découvrez la configuration requise pour Exchange 2013 avant d’installer Exchange 2013. Par exemple, vous allez découvrir la configuration matérielle, la configuration réseau et la configuration du système d’exploitation requises.
 

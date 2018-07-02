@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Vous pouvez désactiver la fonctionnalité Aperçu de messagerie vocale pour les utilisateurs associés à la stratégie de boîte aux lettres de messagerie unifiée. La désactivation de ce paramètre empêche les utilisateurs de recevoir le texte d'un message vocal dans le corps d'un message électronique ou d'un SMS. Par défaut, cette option est activée.
 

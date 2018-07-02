@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les professionnels de l’information utilisent de plus en plus la messagerie pour échanger des informations confidentielles. Pour permettre de sécuriser ces informations, les organisations peuvent utiliser la gestion des droits relatifs à l’information (IRM) pour appliquer une protection permanente au contenu de la messagerie. Avant Microsoft Exchange Server 2010, l’utilisation efficace de la protection IRM était limitée aux clients d’Outlook. Dans Exchange Server 2007, les utilisateurs de Microsoft Outlook Web Access devaient télécharger le complément de gestion des droits relatifs à l’information pour Microsoft Internet Explorer afin de pouvoir accéder au contenu protégé par IRM.
 

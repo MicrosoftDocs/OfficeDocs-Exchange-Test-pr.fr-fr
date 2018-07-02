@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2017-07-25_
+_**Dernière rubrique modifiée :** 2017-07-25_
 
 La messagerie unifiée nécessite d'intégrer Microsoft Exchange au système de téléphonie existant de votre organisation. Un déploiement réussi nécessite une analyse attentive de votre infrastructure de téléphonie existante et d'effectuer les étapes de planification correctes pour déployer la messagerie unifiée.
 

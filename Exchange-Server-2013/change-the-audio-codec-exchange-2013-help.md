@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 La messagerie unifiée peut utiliser un codec parmi quatre pour créer des messages vocaux : MP3, Windows Media Audio (WMA), Group System Mobile (GSM) 06.10 et G.711 Pulse Code Modulation (PCM) Linear. Par défaut, lorsque vous créez un plan de numérotation de messagerie unifiée, celui-ci utilise le codec audio MP3 pour enregistrer des messages vocaux. Le format audio MP3 est très utilisé par plusieurs systèmes d'exploitation, clients de messageries et lecteurs MP3. Toutefois, après la création du plan de numérotation de messagerie unifiée, vous pouvez le configurer pour utiliser divers formats audio, dont les codecs audio suivants : WMA, GSM 06.10 ou G.711 PCM Linear. Pour pouvoir écouter le message vocal, vous devez installer un logiciel audio compatible sur le téléphone mobile ou l'ordinateur.
 

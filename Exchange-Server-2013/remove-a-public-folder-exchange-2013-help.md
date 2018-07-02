@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-11-16_
+_**Dernière rubrique modifiée :** 2016-11-16_
 
 Vous devrez peut-être supprimer des dossiers publics qui ne sont plus utilisés dans votre organisation. Pour vous aider à choisir les dossiers publics à supprimer, consultez la rubrique [Affichage des statistiques des dossiers publics et des éléments des dossiers publics](view-statistics-for-public-folders-and-public-folder-items-exchange-2013-help.md).
 

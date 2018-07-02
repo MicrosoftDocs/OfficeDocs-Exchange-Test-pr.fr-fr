@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Dans le cadre de la planification de protection de vos données, il est important de comprendre les différentes manières de protéger les données et de déterminer celle qui convient le mieux à votre organisation. La planification de protection des données est un processus complexe qui dépend des nombreuses décisions que vous prenez au cours de la phase de planification de votre déploiement.
 

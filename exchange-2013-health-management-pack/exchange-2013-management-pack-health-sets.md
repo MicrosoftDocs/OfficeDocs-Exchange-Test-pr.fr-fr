@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**Dernière rubrique modifiée :**2013-05-17_
+_**Dernière rubrique modifiée :** 2013-05-17_
 
 Le pack d'administration Exchange Server 2013 repose sur la fonctionnalité de disponibilité gérée de Microsoft Exchange Server 2013. Dans la disponibilité gérée, chaque composant d'Exchange Server 2013 se contrôle lui-même au moyen de sondes, de moniteurs et de répondeurs. Tous les composants qui implémentent la disponibilité gérée sont appelés *informations d'intégrité*. La liste suivante fournit un guide de résolution des problèmes pour toutes les informations d'intégrité disponibles dans Exchange 2013 :
 

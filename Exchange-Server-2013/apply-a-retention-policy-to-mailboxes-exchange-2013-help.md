@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-10-01_
+_**Dernière rubrique modifiée :** 2014-10-01_
 
 À l’aide des stratégies de rétention, vous pouvez regrouper une ou plusieurs balises de rétention et les appliquer aux boîtes aux lettres pour que les paramètres de rétention des messages soient utilisés. Une boîte aux lettres ne peut pas avoir plusieurs stratégies de rétention.
 

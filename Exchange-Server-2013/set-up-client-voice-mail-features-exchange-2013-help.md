@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-20_
+_**Dernière rubrique modifiée :** 2013-02-20_
 
 Cette rubrique décrit les fonctionnalités du client qui octroient aux utilisateurs à extension messagerie unifiée Exchange un accès à la messagerie électronique et aux messages vocaux de leur boîte aux lettres. Ces fonctionnalités vous permettent d'offrir aux utilisateurs un accès simplifié à la messagerie vocale et à la messagerie électronique, ainsi qu'une expérience utilisateur globale améliorée.
 

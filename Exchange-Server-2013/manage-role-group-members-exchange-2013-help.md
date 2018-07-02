@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-08_
+_**Dernière rubrique modifiée :** 2012-10-08_
 
 Cette rubrique vous explique comment ajouter, supprimer et afficher les membres d’un groupe de rôles de gestion dans Microsoft Exchange Server 2013. Pour plus d’informations sur les groupes de rôles dans Exchange 2013, consultez la rubrique [Présentation des groupes de rôles de gestion](understanding-management-role-groups-exchange-2013-help.md).
 

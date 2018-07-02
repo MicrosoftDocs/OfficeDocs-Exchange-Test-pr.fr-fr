@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez activer une annonce ayant valeur d’informations sur un plan de numérotation de messagerie unifiée. Les annonces ayant valeur d’informations sont utilisées pour des annonces générales qui changent plus fréquemment que le message de bienvenue ou pour des annonces requises par des stratégies de conformité d’entreprise.
 

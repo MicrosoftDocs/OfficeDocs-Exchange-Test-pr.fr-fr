@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 La réécriture d’adresses modifie les adresses de messagerie des expéditeurs et des destinataires dans les messages entrant dans votre organisation ou en sortant par le biais d’un serveur de transport Edge. Deux agents de transport sur le serveur de transport Edge fournissent la fonctionnalité de réécriture : l’agent de réécriture d’adresses pour les messages entrants et l’agent de réécriture d’adresses pour les messages sortants. La principale raison de la réécriture d’adresses sur les messages sortants est de présenter un seul domaine de messagerie cohérent aux destinataires externes. La principale raison de la réécriture d’adresses sur les messages entrants est de délivrer les messages au bon destinataire.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-05-30_
+_**Dernière rubrique modifiée :** 2013-05-30_
 
 Vous créez une stratégie de boîte aux lettres Outlook Web App pour appliquer un ensemble courant de paramètres de stratégies. Les stratégies de boîte aux lettres Outlook Web App sont utiles pour l'application et la normalisation des paramètres, par exemple les paramètres de pièces jointes, pour des groupes spécifiques d'utilisateurs.
 

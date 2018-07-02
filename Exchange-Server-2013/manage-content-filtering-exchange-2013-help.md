@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 L’agent de filtrage du contenu permet de filtrer du contenu. Il filtre tous les messages en provenance de tous les connecteurs de réception sur le serveur Exchange. Seuls les messages provenant de sources non authentifiées sont filtrés.
 

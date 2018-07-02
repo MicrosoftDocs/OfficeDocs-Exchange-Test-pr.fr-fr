@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Après avoir créé une passerelle IP de messagerie unifiée, vous pouvez afficher ou configurer divers paramètres. Par exemple, vous pouvez configurer l'adresse IP ou un nom de domaine complet, ainsi que les paramètres des appels sortants, et activer ou désactiver l'indicateur d'attente des messages.
 

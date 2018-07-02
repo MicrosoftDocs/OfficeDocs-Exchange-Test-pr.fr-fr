@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-14_
+_**Dernière rubrique modifiée :** 2012-10-14_
 
 Cette rubrique décrit la suppression d’une liste d’adresses. Vous ne pouvez pas supprimer la liste d’adresses globale (GAL) par défaut.
 

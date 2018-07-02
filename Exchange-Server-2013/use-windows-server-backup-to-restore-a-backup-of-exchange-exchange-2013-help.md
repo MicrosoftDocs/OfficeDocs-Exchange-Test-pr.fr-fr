@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-06-18_
+_**Dernière rubrique modifiée :** 2014-06-18_
 
 Vous pouvez utiliser la Sauvegarde Windows Server pour sauvegarder et restaurer des bases de données Exchange. Exchange inclut un plug-in pour la Sauvegarde Windows Server vous permettant d’effectuer des sauvegardes basées sur le service VSS (Volume Shadow Copy Service) des données Exchange. Pour plus d’informations, consultez la rubrique [Utilisation de la Sauvegarde Windows Server pour sauvegarder et restaurer des données Exchange](using-windows-server-backup-to-back-up-and-restore-exchange-data-exchange-2013-help.md).
 

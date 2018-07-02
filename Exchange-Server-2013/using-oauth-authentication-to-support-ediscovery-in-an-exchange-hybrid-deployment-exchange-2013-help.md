@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Pour effectuer des recherches de découverte électronique entre différents locaux dans une organisation hybride Exchange 2013, vous devrez configurer l’authentification OAuth (Open Authorization) entre vos organisations Exchange sur site et Exchange Online afin de pouvoir utiliser la découverte électronique locale pour effectuer des recherches dans des boîtes aux lettres sur site et dans le cloud. L’authentification OAuth prend en charge les scénarios de découverte électronique suivants dans un déploiement hybride Exchange :
 

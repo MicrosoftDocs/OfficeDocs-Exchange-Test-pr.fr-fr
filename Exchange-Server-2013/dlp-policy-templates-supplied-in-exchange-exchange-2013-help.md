@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Avec Microsoft Exchange Server 2013 et Exchange Online, vous pouvez utiliser des modèles de stratégie de protection contre la perte de données (DLP) comme point de départ pour générer des stratégies DLP qui vous permettent de satisfaire vos exigences en termes réglementation spécifique et de stratégie d'entreprise. Vous pouvez modifier les modèles afin de répondre aux besoins spécifiques de votre organisation.
 

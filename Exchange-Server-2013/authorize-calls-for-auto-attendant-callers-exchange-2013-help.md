@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Vous pouvez activer des autorisations de numérotation sur un standard automatique de messagerie unifiée. Les autorisations de numérotation sur un standard automatique permettent d'empêcher des utilisateurs qui appellent le standard automatique d'effectuer des appels téléphoniques nationaux/régionaux ou internationaux, c'est-à-dire de recourir à un *automate d'appels*. L'automate d'appels intervient quand la messagerie unifiée effectue un appel sortant pour un utilisateur après que celui-ci a appelé un numéro de téléphone configuré sur un standard automatique de messagerie unifiée.
 

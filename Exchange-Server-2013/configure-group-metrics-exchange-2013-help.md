@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Les infos-courrier qui fournissent des informations sur la taille des groupes de distribution et des groupes de distribution dynamique s'appuient sur des données de mesures de groupe. Les données de mesures de groupe sont générées sur les serveurs de boîtes aux lettres désignés. Pour plus d'informations sur les mesures de groupe, consultez la rubrique [Mesures de groupe et les infos-courrier](group-metrics-and-mailtips-exchange-2013-help.md).
 

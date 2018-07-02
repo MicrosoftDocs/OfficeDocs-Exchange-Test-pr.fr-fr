@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-03-18_
+_**Dernière rubrique modifiée :** 2016-03-18_
 
 Une stratégie personnalisée de protection contre la perte de données (DLP) vous permet d'établir des conditions, règles et actions qui vous aident à répondre aux besoins spécifiques de votre organisation, et qui peuvent ne pas être traitées dans l'un des modèles DLP préexistants.
 

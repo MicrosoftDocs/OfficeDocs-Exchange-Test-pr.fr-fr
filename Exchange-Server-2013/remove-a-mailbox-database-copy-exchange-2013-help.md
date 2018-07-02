@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-06_
+_**Dernière rubrique modifiée :** 2012-11-06_
 
 Ces procédures vous montrent comment supprimer une copie d’une base de données de boîtes aux lettres. Vous ne pouvez pas utiliser ces procédures pour supprimer la dernière copie de la base de données de boîtes aux lettres. Pour obtenir des instructions détaillées sur la manière de supprimer la dernière copie d’une base de données de boîtes aux lettres, voir [Remove a mailbox database](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md) ou [Remove-MailboxDatabase](https://technet.microsoft.com/fr-fr/library/aa997931\(v=exchg.150\)).
 

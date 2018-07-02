@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-06-24_
+_**Dernière rubrique modifiée :** 2016-06-24_
 
 Dans le client Outlook, les utilisateurs de votre organisation peuvent ajouter des dossiers publics à leur dossier **Favoris**. Ensuite, en fonction des stratégies de votre organisation, ils peuvent utiliser Outlook sur le web pour ajouter ces mêmes dossiers publics à leurs favoris et effectuer certaines fonctions qu’ils utilisent dans le client Outlook dans Outlook sur le web.
 

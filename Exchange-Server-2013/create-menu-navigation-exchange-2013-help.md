@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-05_
+_**Dernière rubrique modifiée :** 2012-11-05_
 
 Vous pouvez utiliser la page **nouvelle entrée de navigation de menu** pour créer un seul ou plusieurs mappages de touches pour les entreprises ou les heures creuses du menu principal vous invite à fournir les standards automatiques. Vous pouvez définir l'action qui sera effectuée lors d'une touche du clavier du téléphone est activée, par exemple, transférez l'appel vers un numéro de poste ou un autre standard automatique.
 

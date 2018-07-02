@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Lorsque vous déplacez une boîte aux lettres, vous la déplacez depuis une *base de données de boîtes aux lettres source* vers une *base de données de boîtes aux lettres cible*. La base de données de boîtes aux lettres cible peut se trouver sur le même serveur, sur un serveur différent, dans un domaine ou un site Active Directory différents, ou encore dans une autre forêt.
 

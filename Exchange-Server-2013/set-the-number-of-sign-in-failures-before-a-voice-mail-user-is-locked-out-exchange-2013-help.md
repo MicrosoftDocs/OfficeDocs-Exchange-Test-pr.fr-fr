@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez configurer le nombre d'échecs de connexion autorisé avant le verrouillage de la boîte aux lettres d'un utilisateur d'Outlook Voice Access. Le nombre d'échecs de connexion autorisé avant le verrouillage d'un utilisateur de messagerie vocale est configuré dans une stratégie de boîte aux lettres de messagerie unifiée et s'applique à tous les utilisateurs à extension messagerie unifiée qui y sont associés. Par défaut, cette valeur est définie sur 15.
 

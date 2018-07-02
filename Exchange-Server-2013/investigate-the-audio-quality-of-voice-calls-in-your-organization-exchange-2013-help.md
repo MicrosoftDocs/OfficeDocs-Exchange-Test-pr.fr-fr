@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Si votre organisation rencontre des problèmes avec la qualité audio des appels de messagerie unifiée et des messages vocaux, utilisez le rapport Statistiques d'appels pour vous aider à comprendre ce qui provoque les problèmes.
 

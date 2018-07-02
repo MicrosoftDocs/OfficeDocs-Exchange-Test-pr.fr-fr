@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-15_
+_**Dernière rubrique modifiée :** 2012-10-15_
 
 Dans Microsoft Exchange Server 2013, la haute disponibilité du transport est chargée de conserver les copies redondantes des messages avant et après leur remise réussie. Exchange 2013 améliore les fonctionnalités de haute disponibilité du transport introduites dans Exchange Server 2010, avec notamment la redondance des clichés instantanés et la benne de transport pour veiller à ce que les messages ne se perdent pas pendant le transit.
 

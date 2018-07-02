@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Cette rubrique décrit l’utilisation de la console de gestion de stratégies de groupes (GPMC) pour configurer la liste de recherche de suffixe DNS. Dans certains scénarios Microsoft Exchange 2013, si vous possédez un espace de noms disjoint, vous devez configurer la liste de recherche de suffixe DNS pour inclure plusieurs suffixes DNS.
 

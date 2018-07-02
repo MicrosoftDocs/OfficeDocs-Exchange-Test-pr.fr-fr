@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-13_
+_**Dernière rubrique modifiée :** 2012-11-13_
 
 Vous pouvez activer ou désactiver les appels sortants sur une passerelle IP de messagerie unifiée. Quand vous désactivez l'option **Autoriser les appels sortants via cette passerelle IP de messagerie unifiée** dans les propriétés de la passerelle IP de messagerie unifiée, vous configurez cette passerelle IP pour qu'elle n'accepte pas les appels sortants et ne les envoie pas sur une passerelle VoIP, un PBX IP ou un contrôleur de frontière de session (SBC). Bien que le paramètre **Autoriser les appels sortants via cette passerelle IP de messagerie unifiée** détermine si la passerelle IP de messagerie unifiée peut établir des appels sortants pour les utilisateurs, il n'affecte pas les transferts d'appels ou les appels entrants provenant d'une passerelle VoIP, d'un PBX IP ou d'un SBC.
 

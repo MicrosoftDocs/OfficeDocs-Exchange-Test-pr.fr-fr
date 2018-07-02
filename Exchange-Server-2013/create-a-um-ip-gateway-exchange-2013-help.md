@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-16_
+_**Dernière rubrique modifiée :** 2013-04-16_
 
 Quand vous créez une passerelle IP de messagerie unifiée, vous autorisez les serveurs Exchange à se connecter à une nouvelle passerelle VoIP (Voix sur IP), un PBX (Private Branch eXchange) à extension SIP (Session Initiation Protocol), un PBX IP ou un contrôleur de frontière de session (SBC). Immédiatement après avoir créé une passerelle IP de messagerie unifiée, vous devez créer un groupement de postes de messagerie unifiée, puis associez ce dernier à la passerelle IP de messagerie unifiée. Vous pouvez associer la passerelle IP de messagerie unifiée à un ou plusieurs plans de numérotation de messagerie unifiée en créant un ou plusieurs groupements de postes de messagerie unifiée.
 

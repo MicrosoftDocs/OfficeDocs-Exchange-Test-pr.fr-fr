@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-02_
+_**Dernière rubrique modifiée :** 2012-11-02_
 
 Il peut être nécessaire de suspendre ou de reprendre une copie de base de données pour différentes raisons, par exemple la maintenance du disque contenant la copie de la base de données, ou pour suspendre l’activation de la copie d’une base de données individuelle à des fins de récupération d’urgence.
 

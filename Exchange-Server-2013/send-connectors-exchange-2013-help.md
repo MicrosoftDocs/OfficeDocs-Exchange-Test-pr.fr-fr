@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-15_
+_**Dernière rubrique modifiée :** 2012-10-15_
 
 Dans Microsoft Exchange Server 2013, un connecteur d’envoi contrôle le flux des messages sortants vers le serveur de réception. Ils sont configurés sur les serveurs de boîtes aux lettres exécutant le service de transport. Le plus souvent, vous configurez un connecteur d’envoi pour envoyer les messages électroniques sortants vers un hôte actif ou directement vers leur destinataire, via DNS.
 

@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-10-04_
+_**Dernière rubrique modifiée :** 2017-10-04_
 
 Les contacts de messagerie sont des objets de service d'annuaire à extension messagerie qui contiennent des informations sur les personnes ou les organisations qui existent en dehors de votre organisation Exchange ou Exchange Online. Chaque contact de messagerie dispose d'une adresse de messagerie externe. Pour plus d'informations sur les contacts de messagerie, consultez la rubrique [Recipients](recipients-exchange-2013-help.md).
 

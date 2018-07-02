@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Pour assurer une protection en cas de suppressions accidentelles ou malveillantes et pour faciliter les tâches de détection couramment effectuées avant ou pendant la période de litige ou d’enquête, Microsoft Exchange Server 2013 et Exchange Online utilisent le dossier Éléments récupérables. Le dossier Éléments récupérables remplace la fonctionnalité communément appelée *conteneur de dépôt* dans les versions précédentes d’Exchange. Le dossier Éléments récupérables est utilisé par les fonctionnalités Exchange suivantes :
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion `Team Mailboxes` permet aux administrateurs de définir une ou plusieurs stratégie(s) d’approvisionnement de boîtes aux lettres de site et de gérer des boîtes aux lettres de site au sein de l’organisation. Les administrateurs auxquels est attribué ce rôle peuvent gérer des boîtes aux lettres de site qu’ils ne possèdent pas.
 

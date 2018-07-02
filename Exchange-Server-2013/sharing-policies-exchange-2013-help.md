@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-02-15_
+_**Dernière rubrique modifiée :** 2014-02-15_
 
 Dans le cadre du partage fédéré, les stratégies de partage permettent un partage établi par utilisateur, et de personne à personne, des informations de calendrier avec différents types d’utilisateurs externes. Les stratégies de partage sont attribuées aux boîtes aux lettres d’utilisateur et permettent à vos utilisateurs de gérer eux-mêmes et de partager leurs informations de disponibilité (y compris le dossier Calendrier) avec des destinataires appartenant à des organisations Office 365 externes ou à d’autres organisations Exchange sur site fédérées. Si vous voulez partager des calendriers avec des destinataires qui n’appartiennent à aucun de ces types d’organisations, certaines stratégies de partage permettent le partage d’informations de calendrier de personne à personne avec n’importe quel destinataire grâce à la publication de calendrier Internet.
 

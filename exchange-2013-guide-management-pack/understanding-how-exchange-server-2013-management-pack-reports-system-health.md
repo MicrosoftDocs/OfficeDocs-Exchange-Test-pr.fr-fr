@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**Dernière rubrique modifiée :** 2015-03-09_
+_**Dernière rubrique modifiée :**  2015-03-09_
 
 Cette rubrique fournit des informations sur la manière dont le pack d'administration Exchange Server 2013 analyse l'intégrité du système Exchange et génère des rapports à ce sujet. Dans le pack d'administration Exchange 2013, les informations relatives à l'état d'intégrité sont regroupées de façon simple. Chaque fois que les informations d'intégrité sont douteuses et que le répondeur d'escalade est déclenché, l'événement suivant est journalisé dans le journal des événements Windows :
 

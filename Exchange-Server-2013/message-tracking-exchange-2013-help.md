@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Dans Microsoft Exchange Server 2013, le journal de suivi des messages est un enregistrement détaillé de toute l'activité de messagerie, regroupant les messages échangés avec le service de transport sur les serveurs de boîtes aux lettres, les boîtes aux lettres sur les serveurs de boîtes aux lettres et les serveurs de transport Edge. Les journaux de suivi des messages sont utiles pour les investigations sur les messages ainsi que pour l'analyse, les rapports et le dépannage du flux de messagerie.
 
@@ -120,15 +120,15 @@ Les informations sont écrites dans chaque fichier journal jusqu'à ce que la ta
 
 Les fichiers journaux de suivi des messages sont des fichiers texte contenant des données au format CSV (valeurs séparées par des virgules). Chaque fichier journal de suivi des messages comporte un en-tête avec les informations suivantes :
 
-  - **\#Software:**   Nom du logiciel ayant créé le fichier journal de suivi des messages. Généralement, la valeur est Microsoft Exchange Server.
+  - **\#Software:**    Nom du logiciel ayant créé le fichier journal de suivi des messages. Généralement, la valeur est Microsoft Exchange Server.
 
-  - **\#Version:**   Numéro de version du logiciel ayant créé le fichier journal de suivi des messages. Actuellement, la valeur actuelle est 15.0.0.0.
+  - **\#Version:**    Numéro de version du logiciel ayant créé le fichier journal de suivi des messages. Actuellement, la valeur actuelle est 15.0.0.0.
 
-  - **\#Log-Type:**   Type de journal, à savoir Journal de suivi des messages.
+  - **\#Log-Type:**    Type de journal, à savoir Journal de suivi des messages.
 
-  - **\#Date:**   Date-heure UTC de création du fichier journal. La date-heure UTC est représentée au format de date-heure ISO 8601 : yyyy-mm-dd*yyyy-mm-dd*Thh:mm:ss.fff*hh:mm:ss.fff*Z, où yyyyy*yyyy* = année, mm*mm* = mois, dd*dd* = jour, T indique le début du composant temps, hh*hh* = heure, mm*mm* = minute, ss*ss* = seconde, fff*fff* = fractions de seconde et Z correspond à Zulu (qui est une autre manière de désigner le temps universel).
+  - **\#Date:**    Date-heure UTC de création du fichier journal. La date-heure UTC est représentée au format de date-heure ISO 8601 : yyyy-mm-dd*yyyy-mm-dd*Thh:mm:ss.fff*hh:mm:ss.fff*Z, où yyyyy*yyyy* = année, mm*mm* = mois, dd*dd* = jour, T indique le début du composant temps, hh*hh* = heure, mm*mm* = minute, ss*ss* = seconde, fff*fff* = fractions de seconde et Z correspond à Zulu (qui est une autre manière de désigner le temps universel).
 
-  - **\#Fields:**   Noms de champ séparés par des virgules, utilisés dans les fichiers journaux de suivi des messages.
+  - **\#Fields:**    Noms de champ séparés par des virgules, utilisés dans les fichiers journaux de suivi des messages.
 
 Retour au début
 

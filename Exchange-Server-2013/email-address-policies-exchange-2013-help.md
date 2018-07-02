@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-07-21_
+_**Dernière rubrique modifiée :** 2016-07-21_
 
 Les destinataires (utilisateurs, ressources, contacts et groupes) sont tout objet à extension messagerie dans Active Directory auquel Microsoft Exchange peut remettre ou router des messages. Pour qu'un destinataire puisse recevoir ou envoyer des messages électroniques, il doit avoir une adresse de messagerie. Les stratégies d’adresse de messagerie génèrent les adresses de messagerie principales et secondaires pour vos destinataires, de façon à ce qu’ils puissent recevoir et envoyer des messages.
 

@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Après avoir créé une stratégie de boîte aux lettres de messagerie unifiée, vous pouvez afficher ou configurer plusieurs paramètres. Par exemple, vous pouvez configurer les fonctionnalités de messagerie unifiée comme l'aperçu des messages vocaux ou la lecture sur téléphone ainsi que d'autres options de sécurité, telles que la messagerie vocale protégée et les paramètres de stratégie de code confidentiel.
 
@@ -116,9 +116,9 @@ Pour découvrir d'autres tâches de gestion relatives aux stratégies de boîte 
             
             Le texte entré dans cette zone peut être du texte brut. Il peut également contenir des balises de mise en forme HTML simples pour le mettre en évidence ou pour ajouter des liens hypertexte vers un autre contenu.
             
-            **Exemple 1 :** si vous avez des questions ou des suggestions sur le service de messagerie vocale, appelez le service d'assistance sur le poste 4200.
+            **Exemple 1 :**  si vous avez des questions ou des suggestions sur le service de messagerie vocale, appelez le service d'assistance sur le poste 4200.
             
-            **Exemple 2 :** si vous avez des questions ou des suggestions sur le \<b\>service de messagerie vocale\</b\>, appelez le service d'assistance sur le poste 4200 ou visitez notre site web à l'adresse \<a href=”http://emp.contoso.com/itinfo/vmail”\>\</a\>.
+            **Exemple 2 :**  si vous avez des questions ou des suggestions sur le \<b\>service de messagerie vocale\</b\>, appelez le service d'assistance sur le poste 4200 ou visitez notre site web à l'adresse \<a href=”http://emp.contoso.com/itinfo/vmail”\>\</a\>.
         
           - **Lorsque le code confidentiel Outlook Voice Access d'un utilisateur est réinitialisé**   Le texte saisi dans cette zone de texte est inclus dans le message électronique envoyé aux utilisateurs à extension messagerie unifiée quand leur code confidentiel de messagerie unifiée est réinitialisé.
             

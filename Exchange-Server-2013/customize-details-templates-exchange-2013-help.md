@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-09-25_
+_**Dernière rubrique modifiée :** 2012-09-25_
 
 L’éditeur de modèles de détails permet de personnaliser la présentation d’interface utilisateur graphique (GUI) côté client des propriétés d’objet accessibles à l’aide de listes d’adresses dans MicrosoftOutlook. Par exemple, quand un utilisateur ouvre une liste d'adresses dans Outlook, les propriétés d'un objet particulier sont présentées telles que définies par le modèle de détails dans l'organisation Exchange. Vous pouvez personnaliser les objets en modifiant les tailles de champ, en ajoutant ou supprimant des champs ou des onglets, ainsi qu'en réorganisant les champs. La disposition de ces modèles peut varier en fonction de la langue.
 

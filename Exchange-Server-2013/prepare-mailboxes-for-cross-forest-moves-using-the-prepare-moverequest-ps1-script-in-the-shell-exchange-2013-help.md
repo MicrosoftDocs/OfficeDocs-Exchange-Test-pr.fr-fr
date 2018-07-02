@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-11-22_
+_**Dernière rubrique modifiée :** 2017-11-22_
 
-**Résumé:** Apprenez à gérer les déplacements de boîtes aux lettres de forêt croisée et les migrations de Exchange 2013 à l’aide du script MoveRequest.ps1-préparer dans le Environnement de ligne de commande Exchange Management Shell.
+**Résumé:**  Apprenez à gérer les déplacements de boîtes aux lettres de forêt croisée et les migrations de Exchange 2013 à l’aide du script MoveRequest.ps1-préparer dans le Environnement de ligne de commande Exchange Management Shell.
 
 Microsoft Exchange 2013 prend en charge les déplacements de boîtes aux lettres et de migrations à l’aide des applets de commande **New-MoveRequest** et **New-MigrationBatch** . Vous pouvez également déplacer la boîte aux lettres via Exchange Administration Center (EAC). Vous pouvez déplacer un Exchange 2010 ou une boîte aux lettres de Exchange 2013 d’une forêt de Exchange source pour une forêt de Exchange 2013 cible.
 

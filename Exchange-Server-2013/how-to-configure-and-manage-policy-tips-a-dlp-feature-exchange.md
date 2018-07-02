@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les conseils de stratégie sont des notes d’information qui apparaissent lorsque vous composez un message électronique. L’objectif du conseil de stratégie est d’avertir les utilisateurs qu’ils sont peut-être en train de violer les pratiques ou les stratégies professionnelles que vous appliquez dans le cadre des stratégies de protection contre la perte de données (DLP) que vous avez définies. Les procédures suivantes vous aideront à commencer à utiliser les conseils de stratégie. Pour en savoir plus, regardez cette vidéo.
 

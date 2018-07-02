@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 L’activation des notifications Push pour OWA pour les périphériques (OWA pour iPhone et OWA pour iPad) pour un déploiement sur site de Microsoft Exchange 2013 permet à l’utilisateur de recevoir des mises à jour sur l’icône Outlook Web App sur son OWA pour iPhone et OWA pour iPad, qui indique le nombre de messages non vus dans sa boîte de réception. Si les notifications push ne sont ni configurées ni activées, un utilisateur disposant d’OWA pour les périphériques n’a aucun moyen de savoir si sa boîte de réception contient des messages non vus, sans lancer l’application. Quand un nouveau message est disponible, le badge OWA pour les périphériques est mis à jour sur le périphérique de l’utilisateur et ressemble au badge ci-après.
 
@@ -242,7 +242,7 @@ Le résultat attendu doit être semblable à la sortie suivante.
 
 Une fois les étapes précédentes effectuées, les notifications Push peuvent être testées par l’une des opérations suivantes :
 
-  - **Envoi d’un message électronique de test à la boîte aux lettres de l’utilisateur :**
+  - **Envoi d’un message électronique de test à la boîte aux lettres de l’utilisateur :** 
     
     1.  Configurez un compte sur un périphérique mobile dans OWA pour les périphériques afin de vous abonner aux notifications.
     

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-08-05_
+_**Dernière rubrique modifiée :** 2014-08-05_
 
 Vous pouvez contrôler la façon dont les utilisateurs de votre organisation Exchange utilisent les ressources en modifiant les paramètres de limitation par défaut.
 

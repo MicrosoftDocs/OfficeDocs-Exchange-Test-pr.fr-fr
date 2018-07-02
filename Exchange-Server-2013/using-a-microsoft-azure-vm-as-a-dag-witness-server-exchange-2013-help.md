@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Exchange Server 2013 permet de configurer vos bases de données de boîtes aux lettres dans un groupe de disponibilité de base de données (DAG) pour le basculement de centre de données automatique. Cette configuration nécessite trois emplacements physiques distincts : deux centres de données pour les serveurs de boîtes aux lettres et un troisième emplacement pour placer le serveur témoin pour le groupe de disponibilité de base de données (DAG). Les organisations n'ayant que deux emplacements physiques peuvent maintenant bénéficier aussi d'un basculement de centre de données automatique en utilisant une machine virtuelle de serveur de fichiers Microsoft Azure comme serveur témoin du groupe de disponibilité de base de données (DAG).
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Project Server 2013_
+_**Sapplique à :** Exchange Server 2013, Project Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-11_
+_**Dernière rubrique modifiée :** 2013-02-11_
 
 L'indicateur d'intégrité SiteMailbox surveille l'intégrité et l'accessibilité globales des boîtes aux lettres de site au sein de votre organisation.
 

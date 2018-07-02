@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Vous créez un connecteur de réception de type **Interne** lorsque vous voulez recevoir du courrier depuis un serveur Exchange. Utilisez ce type de connecteur pour contrôler le routage du courrier au sein de votre organisation : par exemple, lorsque vous voulez router du courrier depuis le service de transport d'un serveur de boîtes aux lettres vers un serveur de transport Edge ou depuis un serveur de boîtes aux lettres vers un autre.
 

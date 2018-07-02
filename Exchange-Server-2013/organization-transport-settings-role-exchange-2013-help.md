@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion `Organization Transport Settings` permet aux administrateurs de gérer les paramètres de transport dans l'ensemble de l'organisation, notamment les messages système, la configuration d'un site Active Directory et les paramètres de configuration du transport applicables à l'ensemble de l'organisation.
 

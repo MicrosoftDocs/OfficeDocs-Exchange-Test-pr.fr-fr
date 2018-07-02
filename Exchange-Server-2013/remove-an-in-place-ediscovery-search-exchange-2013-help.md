@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-07-14_
+_**Dernière rubrique modifiée :** 2014-07-14_
 
 Dans Microsoft Exchange Server 2013, vous pouvez utiliser la découverte électronique locale pour rechercher un contenu de boîte aux lettres. Vous pouvez supprimer une recherche de découverte électronique locale à tout moment. Lorsque vous supprimez une recherche de découverte électronique locale, les résultats de recherche sont supprimés de la boîte aux lettres de découverte.
 

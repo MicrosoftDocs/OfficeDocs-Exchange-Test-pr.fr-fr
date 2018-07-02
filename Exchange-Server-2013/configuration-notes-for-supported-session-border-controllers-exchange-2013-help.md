@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2017-07-25_
+_**Dernière rubrique modifiée :** 2017-07-25_
 
 Les contrôleurs de frontière de session (SBC) vous permettent de connecter votre réseau téléphonique local à un centre de données Microsoft via une connexion WAN publique dédiée. Un contrôleur de frontière de session (SBC) opère au périmètre de votre réseau IP local et se connecte à un deuxième contrôleur de frontière de session dans un centre de données Microsoft.
 

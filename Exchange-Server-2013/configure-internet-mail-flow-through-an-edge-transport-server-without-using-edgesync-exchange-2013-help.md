@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-01-23_
+_**Dernière rubrique modifiée :** 2017-01-23_
 
 Nous vous recommandons d’utiliser le processus d’abonnement Edge pour établir le flux de messagerie entre votre organisation Exchange et un serveur de transport Edge. Toutefois, certaines situations peuvent vous empêcher d’abonner le serveur de transport Edge à votre organisation Exchange à l’aide du processus d’abonnement Edge. Pour établir manuellement le flux de messagerie entre votre organisation Exchange et un serveur de transport Edge, vous devez créer et configurer les connecteurs d’envoi et de réception sur le serveur de transport Edge et les serveurs de boîtes aux lettres dans l’organisation Exchange.
 

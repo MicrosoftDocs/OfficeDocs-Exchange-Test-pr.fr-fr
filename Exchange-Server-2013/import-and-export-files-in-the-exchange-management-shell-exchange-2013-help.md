@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Microsoft Exchange Server 2013 utilise l’interface de ligne de commande Windows PowerShell à distance pour établir une connexion entre le serveur et la station de travail à partir de laquelle vous administrez Exchange et le serveur qui exécute Exchange 2013 que vous administrez. Dans Exchange 2013, ceci est appelé l’environnement de ligne de commande Exchange Management Shell distant. Même si vous administrez le serveur Exchange 2013 local, l'environnement de ligne de commande Exchange Management Shell distant permet d'établir la connexion. Pour plus d'informations sur l'environnement de ligne de commande Exchange Management Shell local et distant, voir [Utilisation de PowerShell avec Exchange 2013 (Exchange Management Shell)](https://technet.microsoft.com/fr-fr/library/bb123778\(v=exchg.150\)).
 

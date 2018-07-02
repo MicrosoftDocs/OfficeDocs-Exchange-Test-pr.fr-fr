@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-03_
+_**Dernière rubrique modifiée :** 2013-04-03_
 
 Vous pouvez extraire des informations de code confidentiel d'un utilisateur à extension de messagerie unifiée. Quand un utilisateur a été activé pour la messagerie unifiée et qu'un code confidentiel a été généré ou créé, le code confidentiel est chiffré et stocké dans la boîte aux lettres de l'utilisateur.
 

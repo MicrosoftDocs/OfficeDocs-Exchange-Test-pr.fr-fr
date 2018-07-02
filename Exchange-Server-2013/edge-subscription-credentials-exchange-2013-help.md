@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Cette rubrique explique la façon dont le processus d’abonnement Edge configure des informations d’identification utilisées pour aider à sécuriser le processus de synchronisation EdgeSync et la façon dont EdgeSync utilise ces informations d’identification pour établir une connexion LDAP sécurisée entre un serveur de boîtes aux lettres Exchange 2013 et un serveur de transport Edge. Pour plus d’informations sur le processus d’abonnement Edge, consultez la rubrique [Abonnements Edge](edge-subscriptions-exchange-2013-help.md).
 

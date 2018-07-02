@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-19_
+_**Dernière rubrique modifiée :** 2013-04-19_
 
 Vous pouvez activer un message d'information automatique pour un standard automatique de messagerie unifiée. Lorsqu'il est activé, le message d'information automatique est lu immédiatement après le message d'accueil pendant les heures d'ouverture ou en dehors des heures d'ouverture. Par défaut, aucun message d'information automatique n'est configuré. Pour activer un message d'information automatique, créez un fichier .wav ou .wma à utiliser comme message, puis configurez le standard automatique pour utiliser ce fichier audio.
 

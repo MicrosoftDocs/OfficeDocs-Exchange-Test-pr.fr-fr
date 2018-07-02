@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-02-01_
+_**Dernière rubrique modifiée :** 2016-02-01_
 
 Dans Exchange Server 2013 et Exchange Online, vous pouvez utiliser des stratégies d’archivage pour déplacer automatiquement des éléments de boîte aux lettres vers des archives personnelles (locales) ou des archives en nuage. Les stratégies d’archivage sont des balises de rétention qui utilisent l’action de rétention **Déplacer vers l’archive**.
 
@@ -25,9 +25,9 @@ Vous pouvez modifier les balises de rétention incluses dans la stratégie par d
 
 Pour découvrir d’autres tâches de gestion associées aux archives, consultez :
 
-  - **Exchange Server 2013:** [Gestion des archives permanentes dans Exchange 2013](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md)
+  - **Exchange Server 2013:**  [Gestion des archives permanentes dans Exchange 2013](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md)
 
-  - **Exchange Online:** [Activer ou désactiver une boîte aux lettres d’archivage dans Exchange Online](https://technet.microsoft.com/fr-fr/library/jj984357\(v=exchg.150\))
+  - **Exchange Online:**  [Activer ou désactiver une boîte aux lettres d’archivage dans Exchange Online](https://technet.microsoft.com/fr-fr/library/jj984357\(v=exchg.150\))
 
 <table>
 <thead>

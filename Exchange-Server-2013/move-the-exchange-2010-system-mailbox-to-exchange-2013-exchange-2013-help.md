@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Dans Exchange 2010, la boîte aux lettres système Microsoft Exchange est une boîte aux lettres d’arbitrage permettant de stocker les données à l’échelle de l’organisation, telles que les journaux d’audit de l’administrateur, les métadonnées des recherches de découverte électronique, ainsi que les données de messagerie unifiée, telles que les menus, les plans de numérotation et les messages d’accueil personnalisés. La boîte aux lettres système Microsoft Exchange est nommée **SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}** ; le nom complet est **Microsoft Exchange**.
 

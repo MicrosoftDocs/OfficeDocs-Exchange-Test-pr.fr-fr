@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Si un serveur de boîtes aux lettres membre d’un groupe de disponibilité de base de données est perdu ou tombe en panne, et s’il est irrécupérable et doit être remplacé, vous pouvez effectuer une opération de récupération de ce serveur. Le programme d’installation de Microsoft Exchange Server 2013 inclut le commutateur */m:RecoverServer* qui permet d’exécuter les opérations de récupération du serveur. Lorsque vous exécutez le programme d’installation avec le commutateur */m:RecoverServer*, il lit les informations de configuration à partir d’Active Directory pour un serveur ayant le même nom que celui à partir duquel vous exécutez l’installation. Une fois que les informations de configuration du serveur sont récupérées depuis Active Directory, les fichiers et les services d’origine d’Exchange sont installés sur le serveur et les rôles et les paramètres qui étaient stockés dans Active Directory lui sont appliqués.
 

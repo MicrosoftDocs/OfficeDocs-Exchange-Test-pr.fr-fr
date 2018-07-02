@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion Org Custom Apps permet aux administrateurs d'afficher et de modifier les applications de leur organisation et d'ajouter des applications personnalisées à partir d'un fichier ou d'une URL.
 

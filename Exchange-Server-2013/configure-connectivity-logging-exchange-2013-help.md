@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-18_
+_**Dernière rubrique modifiée :** 2013-02-18_
 
 L'enregistrement de la connectivité enregistre l'activité de connexion sortante utilisée pour transmettre des messages en provenance d'un service de transport sur le serveur Exchange. L'enregistrement de la connectivité recueille des données sur la source de connexion, la destination, le nombre de messages et les octets transmis, ainsi que des informations sur les échecs de connexion.
 

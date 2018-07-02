@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Microsoft La messagerie unifiée Exchange 2013 nécessite l'utilisation de plusieurs ports TCP et UDP (User Datagram Protocol) pour établir une communication entre les serveurs Exchange 2013 et d'autres périphériques. En autorisant l'accès via ces ports IP, vous permettez à la messagerie unifiée de fonctionner correctement. Cette rubrique présente les ports TCP et UDP utilisés dans la messagerie unifiée Exchange 2013.
 

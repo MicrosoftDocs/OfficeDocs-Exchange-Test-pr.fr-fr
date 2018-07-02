@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-12_
+_**Dernière rubrique modifiée :** 2012-10-12_
 
 Dans Exchange Server 2013, vous pouvez utiliser les journaux Information Rights Management (IRM) pour surveiller les opérations IRM et résoudre les problèmes liés à ces dernières. L’enregistrement des transactions IRM est activé par défaut.
 

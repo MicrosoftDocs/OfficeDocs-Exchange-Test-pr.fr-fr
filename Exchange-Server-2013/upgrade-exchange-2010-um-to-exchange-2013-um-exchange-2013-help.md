@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Lorsque vous procédez à une mise à niveau d’une organisation Microsoft Exchange 2010 avec messagerie unifiée vers une messagerie unifiée Exchange 2013, certaines étapes sont obligatoires, tandis que d’autres ont déjà été accomplies dans le cadre du déploiement de la messagerie unifiée Exchange 2010. Selon votre environnement de téléphonie et les composants de messagerie unifiée précédemment créés et configurés pour la prise en charge de la messagerie unifiée dans Exchange 2010, il se peut que vous deviez déployer des équipements te téléphonie supplémentaires tels que des passerelles VoIP, des PBX IP, ou des PBX traditionnels ou SIP, ainsi que créer et configurer d'éventuels composants de messagerie unifiée supplémentaires requis pour la messagerie unifiée Exchange 2013.
 

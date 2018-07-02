@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-08-09_
+_**Dernière rubrique modifiée :** 2016-08-09_
 
 Vous pouvez gérer des informations sensibles par le biais de stratégies DLP en important un fichier qui contient les paramètres de stratégie des informations. Modèles de stratégie DLP peuvent être développés indépendamment d’Exchange en tant que fichiers XML. Toutefois, ils doivent satisfaire les conditions de format spécifique pour fonctionner correctement. Autrement, les stratégies qui sont exportés à partir d’une version antérieure d’Exchange peuvent être importés dans Microsoft Exchange Server 2013.
 

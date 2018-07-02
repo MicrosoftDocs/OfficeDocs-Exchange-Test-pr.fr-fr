@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion de prévention des pertes de données (DLP, Data Loss Prevention) permet aux administrateurs de créer et gérer des stratégies DLP et les règles intrinsèques, qui peuvent affecter la remise des messages dans l’ensemble d’une organisation. Qui plus est, ce rôle permet aux administrateurs de configurer des conseils de stratégie qui apparaissent dans les clients de messagerie et de gérer les rapports de violation des stratégies DLP. Ce rôle DLP permet également d’accéder aux règles de transport Microsoft Exchange. Pour plus d’informations sur les règles de transport dans Exchange, consultez les rubriques suivantes :
 

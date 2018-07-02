@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Par le biais des groupes de rôles de gestion liés dans Microsoft Exchange Server 2013, vous pouvez lier un groupe de rôles d’une forêt de ressources Exchange 2013 à un groupe de sécurité universel d’une forêt utilisateur étrangère. Ceci est utile lorsque vous voulez que les administrateurs disposant d’un compte dans la forêt utilisateur gèrent les serveurs exécutant Exchange dans la forêt de ressources. Pour plus d’informations sur les groupes de rôles liés, voir [Présentation des groupes de rôles de gestion](understanding-management-role-groups-exchange-2013-help.md).
 

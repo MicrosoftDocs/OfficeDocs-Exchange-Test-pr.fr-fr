@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-10-03_
+_**Dernière rubrique modifiée :** 2014-10-03_
 
 Dans Microsoft Exchange Server 2013, plusieurs améliorations ont été apportées aux règles de transport. Cette rubrique décrit brièvement quelques-unes des principales modifications et améliorations apportées. Pour plus d’informations sur les règles de transport, consultez la rubrique [Règles de transport ou de flux de messagerie](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
 

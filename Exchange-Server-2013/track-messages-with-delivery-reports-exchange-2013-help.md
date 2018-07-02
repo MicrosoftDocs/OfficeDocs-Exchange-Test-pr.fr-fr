@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-13_
+_**Dernière rubrique modifiée :** 2012-10-13_
 
 La fonction Rapports de remise est un outil de suivi des messages du Centre d'administration Exchange qui permet d'obtenir l'état de remise de messages électroniques qui ont été envoyés ou reçus par des utilisateurs inclus dans le carnet d'adresses de votre organisation et qui se référaient à un objet donné. Vous pouvez suivre les informations de remise des messages envoyés ou reçus par une boîte aux lettres spécifique dans votre organisation. Le contenu relatif au corps du message n'est pas retourné dans un rapport de remise ; toutefois, la ligne d'objet est affichée dans les résultats. Vous pouvez suivre les messages jusqu'à 14 jours après leur envoi ou leur réception.
 
@@ -55,7 +55,7 @@ Utiliser le Centre d'administration Exchange pour examiner un rapport de remise
 
 2.  Entrez les informations suivantes :
     
-      - **\* Boîte aux lettres sur laquelle faire porter la recherche :** Cliquez sur **Parcourir** pour sélectionner la boîte aux lettres dans le carnet d'adresses, puis cliquez sur **OK**. La sélection de la boîte aux lettres sur laquelle faire porter la recherche est obligatoire.
+      - **\* Boîte aux lettres sur laquelle faire porter la recherche :**  Cliquez sur **Parcourir** pour sélectionner la boîte aux lettres dans le carnet d'adresses, puis cliquez sur **OK**. La sélection de la boîte aux lettres sur laquelle faire porter la recherche est obligatoire.
     
       - Sélectionnez l'une des options suivantes :
         

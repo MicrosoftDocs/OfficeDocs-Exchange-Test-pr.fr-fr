@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-05_
+_**Dernière rubrique modifiée :** 2012-11-05_
 
 Vous pouvez activer ou désactiver les appels à partir des utilisateurs qui ne sont pas activés pour la messagerie unifiée. Par défaut, la messagerie unifiée autorise le transfert via un standard automatique des appels entrants provenant d’appelants non authentifiés aux utilisateurs à extension messagerie unifiée. Lorsque cette option est activée, les utilisateurs externes à l’organisation peuvent transférer des appels aux utilisateurs à extension messagerie unifiée.
 

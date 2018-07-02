@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Un *groupe de rôles de gestion* est un groupe de sécurité universel utilisé dans le modèle d’autorisations de contrôle d’accès basé sur les rôles (RBAC) dans Microsoft Exchange Server 2013. Un groupe de rôles de gestion simplifie l’attribution des rôles de gestion à un groupe d’utilisateurs. Le même ensemble de rôles est attribué à tous les membres d’un groupe de rôles. Des rôles administrateurs et spécialistes sont attribués aux groupes de rôles. Ils définissent les principales tâches administratives dans Exchange 2013 comme la gestion de l’organisation, la gestion des destinataires et d’autres tâches. Les groupes de rôles vous permettent d’attribuer plus facilement un plus grand ensemble d’autorisations à un groupe d’administrateurs et d’utilisateurs spécialistes.
 

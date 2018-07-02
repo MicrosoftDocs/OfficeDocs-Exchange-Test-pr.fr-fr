@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le suivi du pipeline capture des copies des messages électroniques en provenance d'un expéditeur spécifique pendant qu'ils transitent dans le service de transport sur des serveurs de boîtes aux lettres, dans le service de remise de transport de boîtes aux lettres sur des serveurs de boîtes aux lettres ou dans des serveurs de transport Edge. Le suivi du pipeline capture des informations détaillées sur les modifications que chaque agent de transport applique aux messages figurant dans le pipeline de transport dans des fichiers d'instantané de message. En examinant le contenu des fichiers instantanés de message, vous pouvez déterminer si les agents de transport ont appliqués les modifications que vous avez prévues aux messages figurant dans le pipeline de transport. Si vous dépannez un problème, vous devez déterminer quel agent de transport en est la cause. Vous pouvez ensuite concentrer vos efforts de dépannage sur cet agent pour résoudre le problème. Puis, vous pouvez afficher de nouveau les fichiers instantanés de message pour vérifier que votre solution fonctionne.
 

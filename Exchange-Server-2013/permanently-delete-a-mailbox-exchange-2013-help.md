@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-16_
+_**Dernière rubrique modifiée :** 2012-11-16_
 
 Lorsque vous supprimez définitivement des boîtes aux lettres actives et des boîtes aux lettres déconnectées, tous les contenus des boîtes aux lettres sont purgés de la base de données des boîtes aux lettres Exchange, et la perte des données est définitive. Lorsque vous supprimez définitivement une boîte aux lettres active, le compte utilisateur Active Directory associé est également supprimé.
 

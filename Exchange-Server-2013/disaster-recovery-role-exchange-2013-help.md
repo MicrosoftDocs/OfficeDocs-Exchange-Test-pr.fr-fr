@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion `Disaster Recovery` permet aux administrateurs de restaurer des boîtes aux lettres et des bases de données de boîtes aux lettres, de créer des bases de données de boîtes aux lettres, mais aussi de procéder à des basculements (switchover et switchback) pour les groupes de disponibilité de base de données dans une organisation.
 

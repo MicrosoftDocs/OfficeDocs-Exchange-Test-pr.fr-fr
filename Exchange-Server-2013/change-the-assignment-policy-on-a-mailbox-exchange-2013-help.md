@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-08_
+_**Dernière rubrique modifiée :** 2012-10-08_
 
 Vous pouvez modifier la stratégie d’attribution de rôle de gestion affectée à une boîte aux lettres. Lorsque vous modifiez la stratégie d’attribution d’une boîte aux lettres, la modification prend effet dès que l’utilisateur actualise la connexion (par exemple, lorsqu’il se connecte de nouveau à sa boîte aux lettres ou qu’il ouvre la page d’options de la boîte aux lettres). Pour plus d’informations sur les stratégies d’attribution dans Microsoft Exchange Server 2013, consultez la rubrique [Présentation des stratégies d’attribution de rôle de gestion](understanding-management-role-assignment-policies-exchange-2013-help.md).
 

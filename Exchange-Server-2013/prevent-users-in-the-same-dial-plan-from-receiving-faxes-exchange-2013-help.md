@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez empêcher les utilisateurs à extension messagerie unifiée associés à un plan de numérotation de messagerie unifiée de recevoir des messages de télécopie. Par défaut, les utilisateurs à extension messagerie unifiée associés à un plan de numérotation de messagerie unifiée peuvent recevoir des messages de télécopie. Toutefois, il se peut que vous vouliez empêcher les utilisateurs associés à un plan de numérotation de messagerie unifiée particulier de recevoir des messages de télécopie.
 

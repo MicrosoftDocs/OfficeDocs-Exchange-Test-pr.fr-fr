@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2014-12-02_
+_**Dernière rubrique modifiée :** 2014-12-02_
 
 Impossible de poursuivre le programme d’installation de Microsoft Exchange Server 2013 car l’utilisateur connecté ne dispose pas des autorisations de compte requises pour effectuer des mises à jour globales d’Active Directory.
 

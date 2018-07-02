@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Cette procédure indique comment configurer un connecteur de réception pour recevoir des courriers électroniques sécurisés d’un partenaire. Utilisez cette procédure lorsque vous devez chiffrer les messages que vous échangez avec un partenaire approuvé. Le connecteur est configuré pour accepter uniquement les connexions des serveurs qui s’authentifient avec le protocole TLS (Transport Layer Security).
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez configurer le port TCP qui est utilisé pour écouter les requêtes SIP (Session Initiation Protocol) sur une passerelle IP de messagerie unifiée. Par défaut, lors de la création d'une passerelle IP de messagerie unifiée, le numéro du port d'écoute SIP TCP est défini sur 5060. Le port d'écoute SIP TCP ne peut pas être configuré ou modifié à l'aide du Centre d'administration Exchange (CAE). Vous devez configurer le numéro du port d'écoute TCP SIP à l'aide de la cmdlet **Set-UMIPGateway**.
 

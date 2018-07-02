@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-05-17_
+_**Dernière rubrique modifiée :** 2013-05-17_
 
 La connexion au service d'audit administrateur dans Microsoft Exchange Server 2013 vous permet de créer une entrée de journal chaque fois qu'une cmdlet est exécutée. Les entrées de journal vous fournissent des informations sur la cmdlet qui a été exécutée, les paramètres utilisés, l'utilisateur qui a exécuté la cmdlet et les objets concernés. Pour plus d'informations sur l'enregistrement dans des journaux d'audit de l'administrateur, consultez la rubrique [Connexion au service d’audit administrateur](administrator-audit-logging-exchange-2013-help.md).
 

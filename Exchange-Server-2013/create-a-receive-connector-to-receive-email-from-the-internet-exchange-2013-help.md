@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-15_
+_**Dernière rubrique modifiée :** 2012-10-15_
 
 Cette procédure illustre comment configurer un connecteur de réception pour recevoir des messages électroniques depuis Internet.
 

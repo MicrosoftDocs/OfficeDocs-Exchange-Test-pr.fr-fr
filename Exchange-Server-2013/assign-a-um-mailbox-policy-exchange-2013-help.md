@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-30_
+_**Dernière rubrique modifiée :** 2012-11-30_
 
 Lorsque vous activez un utilisateur pour la messagerie unifiée et la messagerie vocale, vous devez sélectionner une stratégie de boîte aux lettres de messagerie unifiée qui sera associée à la boîte aux lettres de l’utilisateur. Vous pouvez modifier la stratégie de boîte aux lettres de messagerie unifiée associée à la boîte aux lettres de l’utilisateur, une fois qu’il a été activé pour la messagerie unifiée.
 

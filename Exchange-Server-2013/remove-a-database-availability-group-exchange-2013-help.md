@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-16_
+_**Dernière rubrique modifiée :** 2012-11-16_
 
 Vous pouvez supprimer rapidement et facilement un groupe de disponibilité de base de données (DAG). Vous pouvez utiliser le Centre d'administration Exchange (CAE) ou l’environnement de ligne de commande Exchange Management pour supprimer un groupe de disponibilité de base de données.
 

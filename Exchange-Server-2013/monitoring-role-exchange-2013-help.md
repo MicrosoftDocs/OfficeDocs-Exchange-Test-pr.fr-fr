@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle d'analyse permet aux administrateurs d'analyser les services Exchange et la disponibilité des composants dans une organisation. Ce rôle peut aussi être utilisé avec les comptes de service employés par les applications d'analyse pour recueillir des informations sur l'état des serveurs exécutant Exchange.
 

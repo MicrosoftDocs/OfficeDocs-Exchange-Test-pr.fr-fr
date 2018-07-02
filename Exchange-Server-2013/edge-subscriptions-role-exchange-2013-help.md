@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion `Edge Subscriptions` permet aux administrateurs de gérer la configuration des abonnements et la synchronisation Edge entre les serveurs de transport Edge Microsoft Exchange Server 2010 et les serveurs de boîtes aux lettres Microsoft Exchange Server 2013 d’une organisation.
 

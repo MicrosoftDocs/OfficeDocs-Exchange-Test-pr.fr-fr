@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-05-07_
+_**Dernière rubrique modifiée :** 2014-05-07_
 
 Dans Microsoft Exchange Server 2013, vous pouvez utiliser l'Afficheur des files d'attente dans la boîte à outils Exchange ou l'environnement de ligne de commande Exchange Management Shell pour gérer les messages dans les files d'attente. Pour plus d'informations sur l'utilisation des cmdlets de gestion des messages dans l'environnement de ligne de commande Exchange Management Shell, consultez la rubrique [Utilisation de l’environnement de ligne de commande Exchange Management Shell pour gérer les files d’attente](use-the-exchange-management-shell-to-manage-queues-exchange-2013-help.md).
 

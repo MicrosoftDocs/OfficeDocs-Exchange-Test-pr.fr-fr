@@ -13,11 +13,11 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
-**Résumé :** Décrit comment utiliser l’authentification Kerberos à l’aide de serveurs d’accès au client avec équilibrage de charge dans Exchange 2013.
+**Résumé :**  Décrit comment utiliser l’authentification Kerberos à l’aide de serveurs d’accès au client avec équilibrage de charge dans Exchange 2013.
 
 Afin d’utiliser l’authentification Kerberos avec des serveurs d’accès au client avec équilibrage de charge, vous devez suivre les étapes de configuration décrites dans cet article.
 
@@ -63,7 +63,7 @@ Lorsque vous configurez le compte ASA, gardez ces recommandations à l’esprit
 
   - **Mot de passe du compte.** Le mot de passe que vous fournissez lorsque vous créez le compte sera utilisé. Ainsi, lorsque vous créez le compte, vous devez utiliser un mot de passe complexe et veiller à ce qu’il soit conforme aux exigences de mot de passe de votre organisation.
 
-**Pour créer le compte ASA en tant que compte d’ordinateur, procédez comme suit :**
+**Pour créer le compte ASA en tant que compte d’ordinateur, procédez comme suit :** 
 
 1.  Sur un ordinateur avec jonction à un domaine, exécutez Windows PowerShell ou l’environnement de ligne de commande Exchange Management Shell.
     
@@ -75,7 +75,7 @@ Lorsque vous configurez le compte ASA, gardez ces recommandations à l’esprit
     
         New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]
     
-    **Exemple :**
+    **Exemple :** 
     
         New-ADComputer -Name EXCH2013ASA -AccountPassword (Read-Host 'Enter password' -AsSecureString) -Description 'Alternate Service Account credentials for Exchange' -Enabled:$True -SamAccountName EXCH2013ASA
     
@@ -85,7 +85,7 @@ Lorsque vous configurez le compte ASA, gardez ces recommandations à l’esprit
     
         Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
     
-    **Exemple :**
+    **Exemple :** 
     
         Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
     
@@ -314,7 +314,7 @@ Voici un exemple de la sortie qui est affichée lorsque vous exécutez la comman
 
 Avant d’associer les SPN au compte ASA, vous devez vérifier que les SPN cibles ne sont pas déjà associés à un autre compte de la forêt. Les informations d’identification ASA doivent être le seul compte de la forêt auquel ces noms SPN sont associés. Vous pouvez vérifier qu’aucun autre compte de la forêt n’est associé aux noms de principaux du service en exécutant la commande **setspn** à partir de la ligne de commande.
 
-**Pour vérifier qu’un SPN n’est pas déjà associé à un compte dans une forêt en exécutant la commande setspn, procédez comme suit :**
+**Pour vérifier qu’un SPN n’est pas déjà associé à un compte dans une forêt en exécutant la commande setspn, procédez comme suit :** 
 
 1.  Appuyez sur **Démarrer**. Dans la zone **Recherche**, saisissez **Invite de commandes**, puis, dans la liste des résultats, sélectionnez **Invite de commandes**.
 
@@ -328,7 +328,7 @@ Avant d’associer les SPN au compte ASA, vous devez vérifier que les SPN cibl
     
     La commande ne doit retourner aucune donnée. Si elle renvoie des données, cela signifie qu’un autre compte est déjà associé au SPN. Répétez une fois cette étape pour chaque SPN que vous souhaitez associer au compte ASA.
 
-**Pour associer un SPN à des informations d'identification ASA à l’aide de la commande setspn, procédez comme suit :**
+**Pour associer un SPN à des informations d'identification ASA à l’aide de la commande setspn, procédez comme suit :** 
 
 1.  Appuyez sur **Démarrer**. Dans la zone **Recherche**, saisissez **Invite de commandes**, puis, dans la liste des résultats, sélectionnez **Invite de commandes**.
 
@@ -342,7 +342,7 @@ Avant d’associer les SPN au compte ASA, vous devez vérifier que les SPN cibl
     
     Exécutez une fois la commande suivante pour chaque SPN que vous souhaitez associer aux informations d’identification du compte ASA.
 
-**Pour vérifier que vous avez associé les noms SPN aux informations d’identification ASA à l’aide de la commande setspn, procédez comme suit :**
+**Pour vérifier que vous avez associé les noms SPN aux informations d’identification ASA à l’aide de la commande setspn, procédez comme suit :** 
 
 1.  Appuyez sur **Démarrer**. Dans la zone **Recherche**, saisissez **Invite de commandes**, puis, dans la liste des résultats, sélectionnez **Invite de commandes**.
 
@@ -378,7 +378,7 @@ Après avoir correctement configuré Kerberos et le compte ASA, vérifiez que 
 
 Le service d’hôte de service Microsoft Exchange (MSExchangeServiceHost) sur le serveur d’accès au client est chargé de la gestion des informations d’identification du compte ASA. Si ce service n’est pas en cours d’exécution, l’authentification Kerberos n’est pas possible. Par défaut, le service est configuré pour se lancer automatiquement au démarrage de l’ordinateur.
 
-**Pour vérifier que le service d’hôte de service Microsoft Exchange est démarré, procédez comme suit :**
+**Pour vérifier que le service d’hôte de service Microsoft Exchange est démarré, procédez comme suit :** 
 
 1.  Cliquez sur **Démarrer**, entrez **services.msc** puis sélectionnez **services.msc** dans la liste.
 
@@ -390,7 +390,7 @@ Le service d’hôte de service Microsoft Exchange (MSExchangeServiceHost) sur
 
 Lorsque vous avez configuré le compte ASA sur chaque serveur d’accès au client, vous avez exécuté la cmdlet **set-ClientAccessServer**. Une fois que vous avez exécuté cette cmdlet, vous pouvez utiliser les journaux pour connaître les connexions Kerberos ayant fonctionné.
 
-**Pour vérifier que Kerberos fonctionne correctement à l’aide du fichier journal HttpProxy, procédez comme suit :**
+**Pour vérifier que Kerberos fonctionne correctement à l’aide du fichier journal HttpProxy, procédez comme suit :** 
 
 1.  Dans un éditeur de texte, accédez au dossier où est stocké le journal HttpProxy. Par défaut, le journal est stocké dans le dossier suivant :
     

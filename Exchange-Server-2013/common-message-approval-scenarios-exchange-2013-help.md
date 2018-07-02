@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-09-29_
+_**Dernière rubrique modifiée :** 2014-09-29_
 
 Votre organisation peut exiger que certains types de messages soient approuvés pour répondre aux exigences légales ou de conformité, ou pour mettre en œuvre un flux de travail d’entreprise spécifique. Voici quelques exemples de scénarios courants que vous pouvez configurer à l’aide d’Exchange :
 

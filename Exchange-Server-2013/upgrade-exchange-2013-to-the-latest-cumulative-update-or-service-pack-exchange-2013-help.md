@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-09-04_
+_**Dernière rubrique modifiée :** 2015-09-04_
 
 Si vous disposez de Microsoft Exchange Server 2013, vous pouvez le mettre à niveau vers la mise à jour cumulative la plus récente ou le Service Pack le plus récent pour Exchange 2013. Vous pouvez utiliser l’Assistant Configuration d’Exchange 2013 pour mettre à niveau la version d'Exchange 2013 que vous utilisez actuellement. Pour plus d’informations sur la mise à jour cumulative la plus récente ou le Service Pack le plus récent pour Exchange 2013, consultez la rubrique [Mises à jour pour Exchange 2013](updates-for-exchange-2013-exchange-2013-help.md). Pour en savoir plus sur Exchange 2013, consultez la rubrique [Nouveautés d'Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md).
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-15_
+_**Dernière rubrique modifiée :** 2013-02-15_
 
 Vous pouvez spécifier le mode de démarrage du service routeur des appels de messagerie unifiée Microsoft Exchange sur un serveur d'accès au client. Par défaut, le serveur d'accès au client démarre en mode TCP, mais si vous utilisez la sécurité TLS (Transport Layer Security) pour chiffrer le trafic VoIP (Voice over IP), vous devez configurer le serveur d'accès au client pour utiliser le mode TLS ou Double. Nous vous recommandons de configurer les serveurs d'accès au client avec le mode de démarrage Double. En effet, tous les serveurs d'accès au client et de boîtes aux lettres peuvent répondre aux appels entrants pour tous les plans de numérotation de messagerie unifiée, et les paramètres de sécurité de ces plans de numérotation peuvent être différents. Si vous modifiez le mode de démarrage, vous devez redémarrer le service routeur des appels de messagerie unifiée Microsoft Exchange pour que la modification soit prise en compte.
 

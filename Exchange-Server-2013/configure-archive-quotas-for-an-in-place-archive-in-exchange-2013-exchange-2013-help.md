@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-12-04_
+_**Dernière rubrique modifiée :** 2012-12-04_
 
 Lors de déploiements locaux, des archivages locaux sont créés avec des quotas de stockage illimités par défaut. En conséquence, vous devez modifier les propriétés d’une boîte aux lettres pour établir des quotas de stockage pour l’archivage. Vous pouvez définir les quotas suivants pour un archivage :
 

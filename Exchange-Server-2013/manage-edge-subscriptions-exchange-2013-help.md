@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-04-16_
+_**Dernière rubrique modifiée :** 2018-04-16_
 
 Cette rubrique fournit des informations détaillées sur une variété de tâches de gestion d’abonnement Edge.
 

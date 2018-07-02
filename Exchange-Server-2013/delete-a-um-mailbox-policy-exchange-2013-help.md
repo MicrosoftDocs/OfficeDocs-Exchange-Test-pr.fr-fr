@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-05_
+_**Dernière rubrique modifiée :** 2012-11-05_
 
 Lorsque vous supprimez une stratégie de boîte aux lettres de messagerie unifiée, celle-ci n’est plus être accessible pour être associée à des destinataires activés pour la messagerie unifiée. Vous ne pouvez pas supprimer une stratégie de boîte aux lettres de messagerie unifiée si celle-ci est référencée par des boîtes aux lettres à extension messagerie unifiée, et vous ne pouvez pas supprimer un plan de numérotation de messagerie unifiée si une stratégie de boîte aux lettres de messagerie unifiée lui est associée.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-22_
+_**Dernière rubrique modifiée :** 2013-04-22_
 
 Cette rubrique contient des termes et définitions utilisés en relation avec la messagerie unifiée.
 

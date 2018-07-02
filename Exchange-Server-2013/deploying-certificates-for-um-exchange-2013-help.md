@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-29_
+_**Dernière rubrique modifiée :** 2013-04-29_
 
 L'authentification TLS (Transport Layer Security) mutuelle permet d'activer la messagerie unifiée pour chiffrer les données échangées entre vos serveurs Microsoft Exchange 2013 et des passerelles VoIP, PBX IP, contrôleurs de frontière de session (SBC) et Microsoft Lync Server. Les certificats lient l'identité du propriétaire de certificat à une paire de clés électroniques (publique et privée) utilisées pour chiffrer et signer numériquement les informations.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez afficher ou définir les fonctions de messagerie unifiée et de messagerie vocale, ainsi que les paramètres de configuration d'un utilisateur activé pour la messagerie unifiée ou vocale. Par exemple, vous pouvez effectuer les opérations suivantes :
 

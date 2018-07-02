@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Le rôle serveur de transport Edge a été réintroduit dans Exchange Service Pack 1. Il offre une protection renforcée contre le courrier indésirable au sein des organisations Exchange. Le serveur de transport Edge applique également des stratégies aux messages en cours de transport entre des organisations. Ce rôle serveur est déployé dans le réseau de périmètre et en dehors de la forêt Active Directory. Contrairement aux serveurs d’accès au client ou de boîtes aux lettres, les serveurs de transport Edge ne disposent pas d’un accès direct à Active Directory pour obtenir des informations sur les destinataires et la configuration. Ils utilisent les services AD LDS (Active Directory Lightweight Directory Services) pour le stockage local des informations de configuration et de destinataire.
 

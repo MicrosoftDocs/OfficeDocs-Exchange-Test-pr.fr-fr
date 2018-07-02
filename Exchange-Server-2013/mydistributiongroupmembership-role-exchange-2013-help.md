@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion `MyDistributionGroupMembership` permet à des utilisateurs individuels d’afficher et de modifier leur appartenance aux groupes de distribution d’une organisation, à condition que ces groupes de distribution permettent la modification de l’appartenance.
 

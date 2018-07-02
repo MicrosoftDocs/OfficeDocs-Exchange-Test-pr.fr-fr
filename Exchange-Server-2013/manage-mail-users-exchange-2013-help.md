@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les utilisateurs de messagerie sont semblables aux contacts de messagerie. Tous deux disposent d'adresses de messagerie externes, contiennent des informations sur des personnes extérieures à votre organisation Exchange ou Exchange Online et peuvent être affichés dans le carnet d'adresses partagé et d'autres listes d'adresses. Toutefois, contrairement à un contact de messagerie, un utilisateur de messagerie dispose d'informations d'identification d'ouverture de session dans votre organisation Exchange ou Office 365 et peut accéder à des ressources. Pour plus d'informations, consultez la rubrique [Recipients](recipients-exchange-2013-help.md).
 
@@ -74,8 +74,7 @@ Les utilisateurs de messagerie sont semblables aux contacts de messagerie. Tous 
 
 4.  Dans le champ **\* Adresse de messagerie externe**, saisissez l’adresse de messagerie externe de l’utilisateur de messagerie. Les messages électroniques envoyés à ce contact sont transférés à cette adresse de messagerie. Ce champ est obligatoire.
 
-5.  
-    
+5.      
     Activez l'une des options suivantes :
     
       - **Utilisateur existant**   Activez cette option pour activer la messagerie d'un utilisateur existant.
@@ -84,8 +83,7 @@ Les utilisateurs de messagerie sont semblables aux contacts de messagerie. Tous 
     
       - **Nouvel utilisateur**   Activez cette option pour créer un compte d'utilisateur dans Active Directory et pour activer la messagerie de l'utilisateur. Si vous activez cette option, vous devrez saisir les informations de compte d'utilisateur requises.
 
-6.  
-    
+6.      
     Si vous avez sélectionné **Nouvel utilisateur** à l'étape 5, complétez les champs suivants dans la page **Nouvel utilisateur de messagerie**. Sinon, passez à l'étape 7.
     
       - **Prénom**   Ce champ permet d'entrer le prénom de l'utilisateur de messagerie.
@@ -164,7 +162,7 @@ Les utilisateurs de messagerie sont semblables aux contacts de messagerie. Tous 
         
         Si vous cochez cette case, une boîte de dialogue invitera le nouvel utilisateur de messagerie à modifier son mot de passe lors de sa première ouverture de session. L'utilisateur de messagerie ne sera autorisé à effectuer aucune tâche tant que le mot de passe n'aura pas été modifié.
 
-7.  
+7. 
     
     Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer l'utilisateur de messagerie.
 
@@ -306,7 +304,7 @@ Utilisez la section **Coordonnées** pour afficher ou modifier les coordonnées 
 
 La section **Organisation** permet d'enregistrer des informations détaillées sur le rôle de l'utilisateur dans l'organisation. Ces informations s'affichent dans le carnet d'adresses. Aussi, vous pouvez créer un organigramme virtuel accessible à partir de clients de messagerie, tels qu’Outlook.
 
-  - **Titre   **Cette zone permet d'afficher ou de modifier le titre du destinataire.
+  - **Titre** Cette zone permet d'afficher ou de modifier le titre du destinataire.
 
   - **Service**   Cette zone permet d'afficher ou de modifier le service dans lequel l'utilisateur travaille. Ce champ permet de créer des conditions de destinataire pour des groupes de distribution dynamiques, des stratégies d'adresse de messagerie ou des listes d'adresses.
 

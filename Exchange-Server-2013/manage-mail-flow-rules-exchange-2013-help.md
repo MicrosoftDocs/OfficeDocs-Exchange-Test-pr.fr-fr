@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les règles de flux de messagerie, également appelées règles de transport vous permettent de rechercher des conditions spécifiques sur les messages qui circulent dans votre organisation, et de prendre des mesures les concernant. Cette rubrique vous montre comment créer, copier, classer, activer ou désactiver, supprimer ou importer ou exporter des règles, et comment surveiller l’utilisation de ces règles.
 
@@ -176,9 +176,9 @@ Le CAE vous permet de créer des règles de flux de messagerie à partir d’un 
     
     3.  Pour spécifier des exceptions, cliquez sur **Ajouter une exception**, puis sélectionnez les exceptions dans la liste déroulante **Sauf si...** Vous pouvez retirer des exceptions de la liste en cliquant sur **Supprimer X** en regard de celles-ci.
     
-    4.  Pour que cette règle prenne effet après une date donnée, cliquez sur **Activer cette règle à la date suivante :** et spécifie une date. Notez que la règle restera active avant cette date, mais qu'elle ne sera pas traitée.
+    4.  Pour que cette règle prenne effet après une date donnée, cliquez sur **Activer cette règle à la date suivante :**  et spécifie une date. Notez que la règle restera active avant cette date, mais qu'elle ne sera pas traitée.
         
-        De même, vous pouvez choisir de ne plus traiter la règle à une date donnée. Pour ce faire, cliquez sur **Cette règle expire à la date suivante :** et spécifie une date. Notez que la règle restera active, mais qu'elle ne sera pas traitée.
+        De même, vous pouvez choisir de ne plus traiter la règle à une date donnée. Pour ce faire, cliquez sur **Cette règle expire à la date suivante :**  et spécifie une date. Notez que la règle restera active, mais qu'elle ne sera pas traitée.
     
     5.  Vous pouvez choisir de ne plus ajouter d'autres règles lorsque cette règle traite un message. Pour ce faire, cliquez sur **Ne plus traiter de règles**. Si vous activez cette option et qu'un message est traité par cette règle, aucune autre règle n'est traitée pour ce message.
     

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-07-28_
+_**Dernière rubrique modifiée :** 2016-07-28_
 
 Cette rubrique décrit les techniques permettant de faire correspondre les éléments Pattern et Evidence dans un fichier XML de protection contre la pertes de données (DLP, Data Loss Prevention) destiné à accueillir votre package de règles de types d'informations sensibles. Vous devez d'abord créer un fichier XML bien formé, puis l'importer en utilisant le Centre d'administration Exchange (CAE) ou l'environnement de ligne de commande Exchange Management Shell qui vous aideront à créer votre solution DLP Microsoft Exchange Server 2013. Vous devez disposer d'un fichier XML DLP avant d'utiliser les méthodes de correspondance décrites ci-dessous. Pour plus d'informations sur la définition de vos modèles DLP et fichiers XML, consultez la rubrique [Définition de vos modèles DLP et types d'informations](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md).
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez spécifier le texte envoyé à un utilisateur quand ce dernier reçoit un message vocal protégé, mais que son client ne prend pas en charge la Gestion des droits relatifs à l'information (IRM) ou la Gestion des droits Windows.
 

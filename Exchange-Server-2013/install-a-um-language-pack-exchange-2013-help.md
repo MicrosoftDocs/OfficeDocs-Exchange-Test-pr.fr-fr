@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Pour qu’une langue soit disponible dans la liste des langues de messagerie unifiée disponibles dans un plan de numérotation ou un standard automatique de messagerie unifiée, vous devez préalablement installer le module linguistique de messagerie unifiée approprié. Pour installer le module linguistique sur un serveur de boîtes aux lettres qui exécute le service de messagerie unifiée Microsoft Exchange, exécutez le fichier exécutable à extraction automatique spécifique de la langue ou la commande **setup.exe /AddUmLanguagePack**. Avant de pouvoir installer un module linguistique de messagerie unifiée, vous devez d’abord le télécharger sur un dossier local sur le serveur de boîtes aux lettres. Vous pouvez télécharger des modules linguistiques de messagerie unifiée sur la page des [modules linguistiques de messagerie unifiée pour Exchange Server 2013](https://go.microsoft.com/fwlink/p/?linkid=266542). Il existe un fichier exécutable distinct pour chaque langue.
 

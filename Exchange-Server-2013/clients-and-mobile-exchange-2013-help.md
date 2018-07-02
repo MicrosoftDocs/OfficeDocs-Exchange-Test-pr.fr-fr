@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Différents clients peuvent être utilisés pour accéder aux informations d’une boîte aux lettres Exchange Server 2013. Il peut s’agir de programmes de bureau, tels que Microsoft Outlook, Outlook Web App ou de clients mobiles, tels que des téléphones mobiles, des tablettes et autres dispositifs mobiles. Chacun de ces clients offrent un large éventail de fonctionnalités.
 

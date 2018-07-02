@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-12-12_
+_**Dernière rubrique modifiée :** 2012-12-12_
 
 Vous pouvez activer ou désactiver l'accès à Outlook Voice Access pour les utilisateurs à extension messagerie unifiée associés à une stratégie de boîte aux lettres de messagerie unifiée. Outlook Voice Access est une fonctionnalité utilisée par les utilisateurs à extension messagerie unifiée pour accéder à leur boîte aux lettres sur un téléphone. Par défaut, ce paramètre est activé.
 

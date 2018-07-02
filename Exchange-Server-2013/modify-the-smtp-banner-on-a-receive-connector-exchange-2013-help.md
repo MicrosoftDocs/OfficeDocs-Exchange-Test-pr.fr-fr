@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 La *bannière SMTP* est la réponse de la connexion SMTP qu'un serveur de messagerie SMTP distant reçoit une fois connecté à un connecteur de réception configuré sur un ordinateur exécutant Microsoft Exchange Server 2013.
 

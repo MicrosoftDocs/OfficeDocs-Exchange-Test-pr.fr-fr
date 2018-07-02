@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-12-18_
+_**Dernière rubrique modifiée :** 2013-12-18_
 
 Vous pouvez utiliser le Centre d'administration Exchange (CAE) ou l'environnement de ligne de commande Exchange Mangement Shell pour importer ou exporter une infrastructure à clé publique (PKI) interne auto-signée ou un certificat commercial tiers. Pour la messagerie unifiée, vous pouvez utiliser un des certificats suivants tant pour le service de messagerie unifiée Microsoft Exchange que le service routeur d'appels de messagerie unifiée Microsoft Exchange. Vous pouvez utiliser le même certificat pour les deux services, ou un certificat distinct pour chacun d'eux.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-12_
+_**Dernière rubrique modifiée :** 2012-10-12_
 
 L’Éditeur de modèles de détails ne contient pas de bouton **Annuler** ; vous ne pouvez pas non plus utiliser de raccourci clavier pour annuler une action. Pour annuler un ajout apporté au modèle, vous devez utiliser la touche SUPPR. Pour annuler une suppression, vous devez appliquer de nouveau le paramètre. Vous pouvez également rétablir les paramètres originaux en quittant l’Éditeur de modèles de détails sans enregistrer les modifications. Pour annuler des modifications après les avoir enregistrées, vous pouvez restaurer le modèle. Lorsque vous restaurez un modèle, toute la personnalisation est perdue et la configuration originale du modèle est restaurée.
 

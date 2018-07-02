@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez ajouter du texte au message électronique envoyé lors de la réception d'un message de télécopie par un utilisateur pour qui la messagerie vocale de messagerie unifiée et la réception de télécopies sont activées, et lorsque la stratégie de boîte aux lettres de messagerie unifiée a été configurée correctement pour utiliser un fournisseur de télécopie. Par défaut, le texte inclus quand un utilisateur à extension messagerie unifiée reçoit un message de télécopie indique uniquement que l'utilisateur a reçu un message de télécopie. Vous pouvez toutefois créer un message personnalisé en ajoutant du texte dans la zone **Lorsqu'un utilisateur reçoit un message de télécopie** dans une stratégie de boîte aux lettres de messagerie unifiée. Par exemple, le texte peut inclure des informations sur les stratégies de sécurité système et décrire la façon correcte de traiter les messages de télécopie dans votre organisation. Une fois le texte ajouté, il est inclus dans chaque message électronique envoyé lorsque les utilisateurs à extension messagerie unifiée associés à la stratégie de boîte aux lettres de messagerie unifiée reçoivent un message de télécopie.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Dans Microsoft Exchange Server 2013 et Exchange Online, la gestion des enregistrements de messagerie (MRM) permet aux organisations de gérer le cycle de vie des messages électroniques et de réduire les risques juridiques associés aux communications par messagerie électronique et par d’autres moyens. La gestion des enregistrements de messagerie facilite la conservation des messages nécessaire pour se conformer à la stratégie de la société, aux réglementations gouvernementales ou aux exigences légales, ainsi que la suppression du contenu dépourvu de valeur légale ou commerciale.
 

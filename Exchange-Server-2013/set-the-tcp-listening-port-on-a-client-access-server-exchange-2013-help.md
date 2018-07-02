@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-09_
+_**Dernière rubrique modifiée :** 2013-04-09_
 
 Vous pouvez configurer le port TCP qui est utilisé pour écouter les demandes SIP sur un serveur d'accès au client exécutant le service routeur des appels de messagerie unifiée Microsoft Exchange. Par défaut, quand vous installez un serveur d'accès au client, le numéro du port d'écoute TCP SIP est défini sur 5060 et le serveur d'accès au client démarre en mode TCP. Le port d'écoute TCP SIP ne peut pas être configuré à l'aide du Centre d'administration Exchange (CAE). Vous devez configurer le numéro du port d'écoute TCP SIP à l'aide de la cmdlet **Set-UMCallRouterSettings**.
 

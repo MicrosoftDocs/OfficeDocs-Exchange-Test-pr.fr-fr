@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Cette rubrique fournit des informations sur les ports réseau utilisés par MicrosoftExchange Server 2013 pour la communication avec les clients de messagerie, les serveurs de messagerie Internet et autres services extérieurs à votre organisation Exchange locale. Avant d’aborder ce sujet en détail, saisissons d’abord les règles de base suivantes :
 
@@ -41,7 +41,7 @@ Ports réseau requis pour la messagerie unifiée
 
 Les ports réseau nécessaires pour que les clients de messagerie accèdent aux boîtes aux lettres et aux autres services de l’organisation Exchange sont décrits dans le schéma et le tableau ci-après.
 
-**Remarques :**
+**Remarques :** 
 
   - La destination de ces clients et services est un serveur d’accès au client. Il peut s’agir d’un serveur d’accès au client autonome, ou d’un serveur d’accès au client et d’un serveur de boîtes aux lettres installé sur le même ordinateur.
 

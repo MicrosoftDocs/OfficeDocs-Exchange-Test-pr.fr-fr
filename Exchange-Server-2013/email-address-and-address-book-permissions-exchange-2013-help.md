@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les autorisations requises pour configurer des adresses de messagerie et des fonctionnalités de carnets d’adresses dépendent de la procédure exécutée ou de la cmdlet que vous voulez exécuter. Pour plus d’informations sur les adresses de messagerie et les carnets d’adresses, consultez la rubrique [Adresses de messagerie et carnets d’adresses](email-addresses-and-address-books-exchange-2013-help.md).
 

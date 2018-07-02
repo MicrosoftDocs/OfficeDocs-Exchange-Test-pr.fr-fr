@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-06-15_
+_**Dernière rubrique modifiée :** 2016-06-15_
 
 Les dossiers publics sont conçus pour assurer un accès partagé et offrir une manière simple et efficace de collecter, d'organiser et de partager des informations avec d'autres personnes dans votre groupe de travail ou votre organisation. Activer la messagerie d'un dossier public permet aux utilisateurs de publier dans le dossier public en y envoyant un message électronique. Quand la messagerie est activée pour un dossier public, des paramètres supplémentaires sont disponibles pour ce dossier public dans le Centre d’administration Exchange (CAE), tels que les adresses de messagerie et les quotas de messagerie. Dans l'environnement de ligne de commande Exchange Management Shell, avant d'activer la messagerie d'un dossier public, vous utilisez la cmdlet **Set-PublicFolder** pour gérer tous ses paramètres. Une fois la messagerie activée pour le dossier public, vous utilisez les cmdlets **Set-PublicFolder** et **Set-MailPublicFolder** pour gérer les paramètres.
 

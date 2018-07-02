@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Outlook Voice Access contient deux interfaces : l'interface utilisateur téléphonique et l'interface utilisateur vocale. Par défaut, lorsque les utilisateurs se connectent à Outlook Voice Access, ils peuvent accéder à leur calendrier, leur messagerie électronique ainsi qu'à leurs contacts personnels, et effectuer des recherches dans le répertoire. Vous pouvez utiliser l'environnement de ligne de commande Exchange Management Shell pour interdire aux utilisateurs l'accès à une ou plusieurs de ces fonctionnalités quand ils utilisent Outlook Voice Access pour accéder à leur boîte aux lettres. Lorsque vous modifiez les fonctionnalités Outlook Voice Access sur une stratégie de boîte aux lettres de messagerie unifiée, vos modifications affectent tous les utilisateurs qui sont associés à cette stratégie.
 

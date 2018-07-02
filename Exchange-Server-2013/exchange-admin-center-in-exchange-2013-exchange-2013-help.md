@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-17_
+_**Dernière rubrique modifiée :** 2015-03-17_
 
 Le Centre d’administration Exchange (CAE) et la console de gestion web de Microsoft Exchange Server 2013 optimisée pour les déploiements Exchange locaux, en ligne et hybrides. Le CAE remplace la Console de gestion Exchange (EMC) et le Panneau de configuration Exchange (ECP) qui étaient les deux interfaces utilisées pour la gestion d’Exchange Server 2010.
 

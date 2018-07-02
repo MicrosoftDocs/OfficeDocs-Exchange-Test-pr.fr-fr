@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez inclure texte supplémentaire dans le message électronique qui est envoyé aux utilisateurs lorsque leur code confidentiel de la messagerie vocale ou de la messagerie unifiée (MU) est réinitialisée. Pour cela, en entrant un texte personnalisé dans la zone **lors Outlook Voice Access code confidentiel d'un utilisateur est réinitialisé** sur une stratégie de boîte aux lettres de messagerie unifiée. Le texte personnalisé peut inclure, par exemple, des informations relatives à la sécurité pour les utilisateurs à extension messagerie unifiée.
 

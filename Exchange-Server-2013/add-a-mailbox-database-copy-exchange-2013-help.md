@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-30_
+_**Dernière rubrique modifiée :** 2012-10-30_
 
 Lorsque vous ajoutez une copie de base de données de boîtes aux lettres, la réplication continue est automatiquement activée entre la base de données existante et la copie de la base de données. Une identité sous la forme \<*DatabaseName*\>\\\<*HostMailboxServerName*\> est automatiquement attribuée aux copies de base de données. Par exemple, la copie de la base de données DB1 hébergée sur le serveur MBX3 doit être DB1\\MBX3.
 

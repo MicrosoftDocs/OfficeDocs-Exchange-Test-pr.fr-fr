@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Vous pouvez interdire les notifications de messagerie vocale auprès des utilisateurs pour les appels reçus par une passerelle IP de messagerie unifiée. Si vous activez ce paramètre, la passerelle IP de messagerie unifiée peut recevoir et envoyer des messages SIP NOTIFY pour les utilisateurs. L'indicateur d'attente des messages est activé par défaut. Il autorise l'envoi de notifications de message en attente aux utilisateurs, mais vous pouvez le désactiver en fonction de vos besoins.
 

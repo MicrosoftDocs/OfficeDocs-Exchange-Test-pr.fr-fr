@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les marquages de courrier indésirable vous aident à diagnostiquer les problèmes de courrier indésirable en appliquant des métadonnées de diagnostic, ou « marquages », telles que des informations spécifiques à un expéditeur, des résultats de validation du puzzle et des résultats de filtrage du contenu, aux messages à mesure qu’ils sont soumis aux fonctionnalités de blocage du courrier indésirable qui filtrent les messages entrants en provenance d’Internet. Il existe trois marquages de courrier indésirable : le seuil de probabilité de courrier d’hameçonnage, le seuil de probabilité de courrier indésirable et l’ID de l’expéditeur.
 

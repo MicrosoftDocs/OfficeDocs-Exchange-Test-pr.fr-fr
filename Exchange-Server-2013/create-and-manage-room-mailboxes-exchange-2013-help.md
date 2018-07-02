@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-02-02_
+_**Dernière rubrique modifiée :** 2017-02-02_
 
 Durée d'exécution estimée : 5 minutes.
 
@@ -294,7 +294,7 @@ Dans le champ **Info-courrier**, vous pouvez ajouter une info-courrier pour aler
 
 ## Utiliser Exchange PowerShell pour modifier les propriétés d’une boîte aux lettres de salle
 
-Utilisez les ensembles suivants de cmdlets pour afficher ou modifier les propriétés d'une boîte aux lettres de salle :**Get-Mailbox** et **Set-Mailbox** pour afficher et modifier les propriétés générales et les adresses de messagerie des boîtes aux lettres de salles. Utilisez les cmdlets **Get-CalendarProcessing** et **Set-CalendarProcessing** pour afficher et modifier les délégués et les options de réservation.
+Utilisez les ensembles suivants de cmdlets pour afficher ou modifier les propriétés d'une boîte aux lettres de salle :** Get-Mailbox** et **Set-Mailbox** pour afficher et modifier les propriétés générales et les adresses de messagerie des boîtes aux lettres de salles. Utilisez les cmdlets **Get-CalendarProcessing** et **Set-CalendarProcessing** pour afficher et modifier les délégués et les options de réservation.
 
   - **Get-User** et **Set-User**   Utilisez ces cmdlets pour afficher et définir les propriétés générales (ex. emplacement, nom d'un service et nom d'une société).
 

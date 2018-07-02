@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-05_
+_**Dernière rubrique modifiée :** 2012-11-05_
 
 Par défaut, lorsqu’une passerelle IP de messagerie unifiée (MU) est créée, elle présente l’état Activé. Toutefois, vous devrez peut-être désactiver la passerelle IP de messagerie unifiée pour la mettre hors connexion et ne pas autoriser les appels entrants ou sortants. Après avoir créé une passerelle IP de messagerie unifiée, vous pouvez contrôler son exécution et sa fonctionnalité en définissant sa variable d’état sur Activé ou Désactivé.
 

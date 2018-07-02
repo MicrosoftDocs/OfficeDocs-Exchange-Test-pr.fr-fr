@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-01-31_
+_**Dernière rubrique modifiée :** 2018-01-31_
 
 Le *Role Based Access Control* (RBAC) constitue le modèle d’autorisations dans Microsoft Exchange Server 2013. Grâce au contrôle d’accès basé sur un rôle, vous n’avez pas besoin de modifier et de gérer les listes de contrôle d’accès, ce qui était le cas dans Exchange Server 2007. Les listes de contrôle d’accès impliquaient plusieurs contraintes dans Exchange 2007, notamment de modifier les listes de contrôle d’accès sans effets involontaires, de gérer tous les changements apportés aux listes par le biais des mises à niveau et de résoudre les problèmes liés à une utilisation non standard de ces mêmes listes.
 

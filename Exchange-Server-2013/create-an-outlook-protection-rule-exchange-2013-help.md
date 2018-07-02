@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 À l'aide des règles de protection de Microsoft Outlook, vous pouvez protéger des messages avec la Gestion des droits relatifs à l'information, en appliquant un modèle de services Active Directory RMS (Rights Management Services) dans Outlook 2010, avant l'envoi des messages.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Une *stratégie d’attributions de rôles de gestion* contient un ou plusieurs rôles de gestion des utilisateurs finals qui leur permettent de gérer leur propre boîte aux lettres Microsoft Exchange Server 2013 et la configuration du groupe de distribution. Les stratégies d’attributions de rôle, qui font partie du modèle d’autorisation du contrôle d’accès basé sur un rôle dans Exchange 2013 vous permettent de contrôler quels paramètres de configuration de groupe de distribution et de boîte aux lettres spécifique peuvent être modifiés par vos utilisateurs finals. Différents groupes d’utilisateurs peuvent bénéficier de stratégies d’attribution de rôle spécialisées.
 

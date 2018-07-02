@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Vous pouvez importer les fichiers audio contenant des messages d'accueil personnalisés, des annonces, des menus et des messages d'assistance vocaux de la messagerie unifiée Exchange 2007 vers la messagerie unifiée Exchange 2013. À l'aide d'un script de l'environnement de ligne de commande Exchange Management Shell, les messages d'assistance vocaux sont importés dans une boîte aux lettres système Exchange nommée {e0dc1c29-89c3-4034-b678-e6c29d823ed9}, créée lors de l'installation de Microsoft Exchange 2013. Cette boîte aux lettres système est utilisée dans la messagerie unifiée pour stocker les messages d'accueil, les annonces, les menus, les messages d'assistance vocaux et les rapports de messagerie unifiée du plan de numérotation et du standard automatique.
 

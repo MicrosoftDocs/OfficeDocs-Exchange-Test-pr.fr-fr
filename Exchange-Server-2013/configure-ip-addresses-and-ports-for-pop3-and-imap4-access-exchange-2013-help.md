@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-28_
+_**Dernière rubrique modifiée :** 2012-11-28_
 
 Le Centre d’administration Exchange et l’environnement de ligne de commande Exchange Management Shell vous permettent de configurer des services POP3 et IMAP4 Microsoft Exchange pour utiliser des adresses IP et des ports qui diffèrent des paramètres par défaut.
 

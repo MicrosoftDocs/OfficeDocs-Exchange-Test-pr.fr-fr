@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-01-09_
+_**Dernière rubrique modifiée :** 2014-01-09_
 
 L'agent de routage des stratégies de carnet d'adresses est un agent de transport exécuté sur le serveur de boîtes aux lettres qui contrôle la manière dont les destinataires sont résolus dans votre organisation. Quand l’agent de routage des stratégies de carnet d’adresses est installé et configuré, les utilisateurs affectés à plusieurs LAG apparaissent en tant que destinataires externes, dans le sens où ils ne peuvent pas afficher les cartes de visite de destinataires externes.
 

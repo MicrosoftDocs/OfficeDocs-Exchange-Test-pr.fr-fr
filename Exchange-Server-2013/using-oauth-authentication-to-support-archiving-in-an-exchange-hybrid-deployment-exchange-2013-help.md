@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Si vous êtes dans un déploiement hybride Exchange 2013 et que vous utilisez l’archivage Exchange Online pour Exchange Server, vous devez configurer l’authentification OAuth entre vos organisations sur site et les organisations Exchange Online après la mise à niveau vers la mise à jour cumulative 5 d’Exchange 2013. L’archivage Exchange Online vous permet de disposer d’une archive sur le cloud pour vos utilisateurs avec des boîtes aux lettres sur site. Dans ce scénario, l’assistant de gestion des enregistrements de messagerie (MRM) sur votre serveur de boîtes aux lettres local applique des stratégies d’archivage et déplace automatiquement les messages de la boîte aux lettres d’un utilisateur vers son archive sur le cloud. Dans la mise à jour cumulative 5 d’Exchange 2013, l’authentification OAuth est utilisée.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-05_
+_**Dernière rubrique modifiée :** 2012-11-05_
 
 Lorsque vous affichez les propriétés d'un groupement de postes de messagerie unifiée (MU), vous pouvez afficher les propriétés associée liées un groupe de recherche de MU unique ou à tous les groupements de postes de messagerie unifiée associées à une seule passerelle IP de messagerie unifiée. Si aucun paramètre n'est spécifié, tous les groupes de postes de messagerie unifiée seront retournées. Vous ne pouvez pas utiliser le CAE pour afficher les propriétés du groupe de recherche ; la messagerie unifiée Vous devez utiliser l'interpréteur de commandes.
 

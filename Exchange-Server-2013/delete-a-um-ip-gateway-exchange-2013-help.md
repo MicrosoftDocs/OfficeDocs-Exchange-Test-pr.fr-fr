@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Quand vous supprimez une passerelle IP de messagerie unifiée, les serveurs Exchange ne peuvent plus accepter d'appels entrants de la passerelle VoIP, du protocole SIP à extension PBX, du PBX IP ou du contrôleur de frontière de session (SBC) associés à la passerelle IP de messagerie unifiée.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-15_
+_**Dernière rubrique modifiée :** 2013-02-15_
 
 Vous pouvez spécifier le mode de démarrage du service de messagerie unifiée Microsoft Exchange sur un serveur de boîtes aux lettres. Par défaut, le serveur de boîtes aux lettres démarre en mode TCP. Cependant, si vous utilisez TLS (Transport Layer Security) pour chiffrer le trafic VoIP (Voice over IP), vous devez configurer le serveur de boîtes aux lettres pour utiliser le mode TLS ou Double. nous vous recommandons de configurer les serveurs de boîtes aux lettres pour utiliser le mode de démarrage Double. En effet, tous les serveurs d'accès au client et de boîtes aux lettres peuvent répondre aux appels entrants pour tous les plans de numérotation de messagerie unifiée, qui peuvent comporter différents paramètres de sécurité (Non sécurisé, Sécurisé SIP ou Sécurisé). Si vous modifiez le mode de démarrage, vous devez redémarrer le service de messagerie unifiée Microsoft Exchange pour que la modification soit prise en compte.
 

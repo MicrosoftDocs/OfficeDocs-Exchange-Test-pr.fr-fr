@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-29_
+_**Dernière rubrique modifiée :** 2012-11-29_
 
 Les utilisateurs peuvent configurer plusieurs périphériques mobiles pour la synchronisation avec Microsoft Exchange Server 2013. Vous pouvez utiliser l’EAC ou le Shell pour afficher la liste des téléphones mobiles associés à un utilisateur spécifique.
 

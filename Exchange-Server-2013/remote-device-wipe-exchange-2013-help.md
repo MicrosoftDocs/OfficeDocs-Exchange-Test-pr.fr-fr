@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-09-19_
+_**Dernière rubrique modifiée :** 2012-09-19_
 
 Les téléphones mobiles, les tablettes et les autres périphériques peuvent stocker des données d’entreprise sensibles et fournir un accès à de nombreuses ressources d’entreprise. Si un périphérique mobile est perdu ou volé, ces données peuvent être compromises. Grâce aux stratégies de boîte aux lettres de périphérique mobile Microsoft Exchange, vous pouvez ajouter un mot de passe obligatoire sur vos périphériques mobiles. Si tel est le cas, les utilisateurs doivent entrer un mot de passe pour accéder à leur périphérique mobile. Outre l’activation d’un mot de passe d’appareil, il est recommandé de configurer vos périphériques mobiles pour qu’un mot de passe soit automatiquement demandé après une période d’inactivité. La combinaison d’un mot de passe de l’appareil et du verrouillage d’inactivité améliore la sécurité de l’accès à vos données d’entreprise.
 

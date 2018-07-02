@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-09-30_
+_**Dernière rubrique modifiée :** 2015-09-30_
 
 Grâce à la fonctionnalité d’enregistrement d’audit de boîte aux lettres, vous pouvez suivre les sessions ouvertes dans une boîte aux lettres, tout comme les actions entreprises tant que l’utilisateur est connecté. Lorsque vous activez l’enregistrement d’audit de boîte aux lettres, certaines actions réalisées par les administrateurs et les délégués sont enregistrées par défaut. Aucune des actions entreprises par le propriétaire de la boîte aux lettres ne sont enregistrées. Pour plus d’informations sur les enregistrements d’audit dans les boîtes aux lettres, voir [Enregistrement d’audit dans les boîtes aux lettres](mailbox-audit-logging-exchange-2013-help.md).
 

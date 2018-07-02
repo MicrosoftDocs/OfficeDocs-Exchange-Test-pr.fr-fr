@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Dans Microsoft Exchange Server 2013, les messages pour lesquels la remise échoue sont soumis à divers délais de nouvelle tentative, de renvoi et d'expiration, en fonction de la source et de la destination du message. Une *Nouvelle tentative* est une nouvelle tentative de connexion à la destination. Un *renvoi* est l'action qui consiste à renvoyer les messages à la file d'attente de soumission afin que le catégoriseur les traite une nouvelle fois. Le message *expire* une fois que toutes les tentatives de remise ont échoué au cours d’une période spécifiée. Après l'expiration d'un message, l'expéditeur est notifié de l'échec de la remise. Le message est alors supprimé de la file d'attente.
 

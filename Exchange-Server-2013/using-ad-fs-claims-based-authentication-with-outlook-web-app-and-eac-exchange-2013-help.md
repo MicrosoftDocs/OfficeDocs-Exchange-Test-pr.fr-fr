@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013 SP1_
+_**Sapplique à :** Exchange Server 2013 SP1_
 
-_**Dernière rubrique modifiée :**2017-04-14_
+_**Dernière rubrique modifiée :** 2017-04-14_
 
 **Résumé** :
 
@@ -444,17 +444,17 @@ Vous pouvez également créer des approbations de partie de confiance et des rè
 
 3.  Exécutez les deux cmdlets suivantes pour créer les approbations de partie de confiance. Dans cet exemple, les règles de revendication seront également configurées.
 
-**IssuanceAuthorizationRules.txt contient :**
+**IssuanceAuthorizationRules.txt contient :** 
 
     @RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");
 
-**IssuanceTransformRules.txt contient :**
+**IssuanceTransformRules.txt contient :** 
 
     @RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value); 
     
     @RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
 
-**Exécutez les commandes suivantes :**
+**Exécutez les commandes suivantes :** 
 
     [string]$IssuanceAuthorizationRules=Get-Content -Path C:\IssuanceAuthorizationRules.txt
     

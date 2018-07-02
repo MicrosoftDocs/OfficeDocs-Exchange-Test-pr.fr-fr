@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Vous pouvez effectuer des recherches de manière synchrone sur les entrées de journaux d’audit de boîte aux lettres d’une boîte aux lettres et afficher les résultats de la recherche dans l’environnement de ligne de commande Exchange Management Shell.
 

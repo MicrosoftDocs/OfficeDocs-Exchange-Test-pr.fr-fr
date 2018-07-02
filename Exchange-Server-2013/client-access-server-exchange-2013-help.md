@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-07-02_
+_**Dernière rubrique modifiée :** 2014-07-02_
 
 Dans Microsoft Exchange 2013, nous avons apportées des modifications architecturales majeures aux rôles de serveur Exchange. À la place des cinq rôles serveur déjà présents dans Exchange 2010 et Exchange 2007, nous avons réduit à trois le nombre de rôles serveur dans Exchange 2013 : le serveur d’accès au client et le serveur de boîtes aux lettres, et avec le Service Pack 1, le rôle serveur de transport Edge.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Tous les jours, les travailleurs de l’information utilisent les messageries électroniques pour échanger des informations sensibles. Par exemple : rapports et états financiers, contrats juridiques, informations confidentielles sur des produits, comptes rendus et prévisions de ventes, analyses de la concurrence, données d’études et de brevets et informations sur les clients et le personnel. Puisqu’il est maintenant possible d’accéder à sa messagerie électronique de n’importe quel endroit du monde, les boîtes aux lettres se sont transformées en référentiels contenant de gros volumes d’informations potentiellement sensibles. En conséquence, la fuite d’informations peut représenter une sérieuse menace pour les entreprises. Pour contribuer à la prévention des fuites d’informations, Microsoft Exchange Server 2013 inclut des fonctions de gestion des droits relatifs à l’information (IRM) qui offrent une protection persistante, en ligne et hors connexion, des messages électroniques et des pièces jointes.
 

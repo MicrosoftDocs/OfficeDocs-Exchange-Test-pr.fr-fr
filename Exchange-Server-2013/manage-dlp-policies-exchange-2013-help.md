@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-14_
+_**Dernière rubrique modifiée :** 2015-01-14_
 
 Vous pouvez afficher, modifier ou supprimer des stratégies de protection contre la perte de données (DLP) dans Microsoft Exchange, via le Centre d'administration Exchange (CAE) ou l'environnement de ligne de commande Exchange Management Shell.
 

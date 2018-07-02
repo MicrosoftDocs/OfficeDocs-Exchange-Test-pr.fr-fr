@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-29_
+_**Dernière rubrique modifiée :** 2013-04-29_
 
 Vous pouvez utiliser l'Assistant nouveau certificat Exchange dans le CAE ou le Shell pour créer des certificats auto-signés ou les demandes de certificats pour un certificat interne infrastructure à clé publique (PKI). De messagerie unifiée (MU), vous pouvez utiliser une de ces certificats pour le service de messagerie unifiée de Microsoft Exchange et les services Microsoft Exchange Unified Messaging routeur d'appels. Vous pouvez utiliser le même certificat pour les deux services ou un certificat différent pour chaque service. Vous pouvez également acheter et importer un certificat commercial tiers pour les services de messagerie unifiée. Si vous utilisez un certificat auto-signé pour la messagerie unifiée, vous devrez inclure le nom des serveurs de boîtes aux lettres et d'accès au Client dans le nom du sujet (SAN).
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez récupérer un serveur perdu à l’aide de la commande **Setup /m:RecoverServer** dans Microsoft Exchange Server 2013. La plupart des paramètres pour un ordinateur exécutant Exchange 2013 sont stockés dans Active Directory. La commande */m:RecoverServer* récupère un serveur Exchange portant le même nom à l’aide des paramètres et autres informations enregistrés dans Active Directory.
 

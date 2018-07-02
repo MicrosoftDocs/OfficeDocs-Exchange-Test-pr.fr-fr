@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-03-15_
+_**Dernière rubrique modifiée :** 2013-03-15_
 
 Vous pouvez supprimer une stratégie de boîte aux lettres MicrosoftOutlook Web App d'une organisation Exchange à l'aide du Centre d'administration Exchange (CAE) ou de l'environnement de ligne de commande Exchange Management Shell.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Vous pouvez activer la fonctionnalité Aperçu de messagerie vocale si elle a été désactivée pour les utilisateurs associés à une stratégie de boîte aux lettres de messagerie unifiée. L'activation de ce paramètre permet aux utilisateurs de recevoir le texte d'un message vocal dans le corps d'un message électronique ou d'un SMS. Le paramètre par défaut est Activé.
 

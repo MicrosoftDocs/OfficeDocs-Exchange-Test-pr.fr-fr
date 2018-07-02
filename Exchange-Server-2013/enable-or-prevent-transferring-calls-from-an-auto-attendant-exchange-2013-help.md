@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez autoriser ou empêcher les appelants de transférer des appels à des utilisateurs via un standard automatique. Cette option est activée par défaut et permet aux appelants de transférer des appels aux utilisateurs à extension messagerie unifiée du plan de numérotation de messagerie unifiée qui est associé au standard automatique de messagerie unifiée.
 

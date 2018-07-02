@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Par défaut, Microsoft Exchange Server 2013 fait référence aux objets de lien de site IP dans Active Directory pour faciliter l’identification du chemin de routage le moins coûteux. Cependant, si vous constatez que les coûts propres aux liens de sites IP et les schémas de flux de trafic Active Directory ne sont pas optimaux pour le routage de la messagerie dans Exchange, vous pouvez configurer les paramètres d’Active Directory qui sont uniquement utilisés par Exchange pour faciliter l’optimisation du flux de messagerie.
 

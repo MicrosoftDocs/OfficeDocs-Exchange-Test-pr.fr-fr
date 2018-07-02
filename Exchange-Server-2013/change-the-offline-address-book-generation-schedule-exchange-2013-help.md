@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-12-05_
+_**Dernière rubrique modifiée :** 2012-12-05_
 
 Un carnet d’adresses en mode hors connexion est une copie de carnet d’adresses qui a été téléchargée de manière qu’un utilisateur Outlook puisse accéder aux informations qu’il contient tout en étant déconnecté du serveur. Vous pouvez configurer le carnet d’adresses en mode hors connexion à l’aide des paramètres *OABGeneratorWorkCycle* et *OABGeneratorWorkCycleCheckpoint* de la cmdlet Set-MailboxServer.
 

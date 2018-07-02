@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-05-03_
+_**Dernière rubrique modifiée :** 2018-05-03_
 
 La protection contre la perte de données (DLP) dans Exchange inclut 80 types d’informations sensibles prêts à être utilisés dans le cadre de vos stratégies DLP. Cette rubrique répertorie tous les types d’informations sensibles et illustre les éléments recherchés par une stratégie DLP lorsqu’elle détecte chacun de ces types. Un type d’informations sensibles est défini par un modèle qui peut être identifié par une fonction ou une expression régulière. En outre, une preuve probante, telle que les mots clés et les sommes de contrôle, peut servir à identifier un type d’informations sensibles. Le niveau de confiance et la proximité sont également utilisés dans le processus d’évaluation.
 

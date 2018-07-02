@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Vous pouvez activer des autorisations de numérotation sur un plan de numérotation de messagerie unifiée. Les autorisations de numérotation sur un plan de numérotation permettent d'empêcher des utilisateurs Outlook Voice Access non authentifiés d'effectuer des appels téléphoniques nationaux/régionaux ou internationaux, c'est-à-dire de recourir à la *numérotation externe*. La numérotation externe intervient lorsque la messagerie unifiée effectue un appel sortant pour un utilisateur après qu'il a appelé un numéro de téléphone Outlook Voice Access configuré sur un plan de messagerie unifiée. Quand vous configurez un paramètre sur un plan de numérotation de messagerie unifiée, il s'applique à tous les utilisateurs non authentifiés qui appellent un numéro Outlook Voice Access.
 

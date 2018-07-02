@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-03-26_
+_**Dernière rubrique modifiée :** 2018-03-26_
 
 **Résumé** : Cet article explique comment déplacer des dossiers publics à partir d’Exchange 2007 ou Exchange 2010 vers Exchange 2013.
 

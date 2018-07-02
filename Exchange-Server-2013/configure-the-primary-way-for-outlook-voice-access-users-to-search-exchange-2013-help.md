@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Lors de la création d'un plan de numérotation de messagerie unifiée, vous pouvez configurer les méthodes principale et secondaire que les appelants vont utiliser pour rechercher des noms et retrouver un utilisateur quand ils appellent un numéro Outlook Voice Access ou un standard automatique de messagerie unifiée associé au plan de numérotation. Les appelants peuvent utiliser des entrées à tonalité pour retrouver un utilisateur à extension messagerie unifiée.
 

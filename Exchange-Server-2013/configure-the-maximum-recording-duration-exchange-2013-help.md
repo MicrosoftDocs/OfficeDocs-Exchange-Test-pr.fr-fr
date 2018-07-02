@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-09_
+_**Dernière rubrique modifiée :** 2012-11-09_
 
 Vous pouvez spécifier le nombre maximal de minutes autorisé pour chaque enregistrement vocal lorsqu’un appelant laisse un message vocal. Cette valeur peut être définie sur un nombre compris entre 1 et 100. Pour la plupart des organisations, cette valeur doit être définie à la valeur par défaut de 20 minutes. La définition d’une valeur trop basse risque de provoquer la déconnexion de longs messages vocaux avant qu’ils ne soient terminés. La définition d’une valeur trop élevée permet aux utilisateurs d’enregistrer des messages vocaux relativement longs dans leur boîte de réception.
 

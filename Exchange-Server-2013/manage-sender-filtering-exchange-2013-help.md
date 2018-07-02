@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
-Le filtrage des expéditeurs est fourni par l'agent de filtrage des expéditeurs. L'agent de filtrage des expéditeurs s'appuie sur l'en-tête SMTP **MAIL FROM:** pour déterminer l’action à effectuer (le cas échéant) pour un message entrant.
+Le filtrage des expéditeurs est fourni par l'agent de filtrage des expéditeurs. L'agent de filtrage des expéditeurs s'appuie sur l'en-tête SMTP **MAIL FROM:**  pour déterminer l’action à effectuer (le cas échéant) pour un message entrant.
 
 Lorsque la fonctionnalité de filtrage des expéditeurs est activée sur un serveur Exchange, elle filtre tous les messages transmis via l'ensemble des connecteurs de réception présents.
 

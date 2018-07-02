@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-17_
+_**Dernière rubrique modifiée :** 2012-11-17_
 
 Par défaut, le standard automatique de messagerie unifiée utilise le fuseau horaire du serveur de boîtes aux lettres sur lequel il est créé. Toutefois, dans certains cas, vous pouvez être amené à changer de fuseau horaire pour un standard automatique de messagerie unifiée. Par exemple, si vous disposez de deux plans de numérotation de messagerie unifiée et que chaque plan représente un fuseau horaire différent, vous devez configurer un standard automatique de messagerie unifiée afin que le fuseau horaire soit identique à celui du serveur de boîtes aux lettres et que l’autre standard automatique de messagerie unifiée ait un fuseau horaire différent de celui du serveur de boîtes aux lettres.
 

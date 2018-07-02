@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-11_
+_**Dernière rubrique modifiée :** 2012-10-11_
 
 Après avoir créé une stratégie de carnet d'adresses (ABP) vous devez l'affecter à des utilisateurs de boîtes aux lettres. Aucune stratégie de carnet d'adresses par défaut n'est affectée aux utilisateurs à la création de leur compte utilisateur. Si vous n'affectez pas de stratégie de carnet d'adresses à un utilisateur, ce dernier pourra accéder à la liste d'adresses globale (LAG) de toute votre organisation via Outlook et Outlook Web App. Pour en savoir plus, voir [Stratégies de carnet d’adresses](address-book-policies-exchange-2013-help.md).
 

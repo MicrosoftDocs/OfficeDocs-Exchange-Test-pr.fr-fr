@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Outlook Voice Access contient deux interfaces : une interface utilisateur de téléphonie (TUI) et une interface utilisateur vocale (VUI). Vous pouvez configurer les paramètres de l'interface utilisateur de téléphonie à extension messagerie quand l'utilisateur accède à une boîte aux lettres à l'aide du système de messagerie unifiée d'Exchange 2013. Lorsque vous modifiez les paramètres de l'interface utilisateur téléphone à extension messagerie sur une stratégie de boîte aux lettres de messagerie unifiée. Les modifications affectent tous les utilisateurs qui sont associés à la stratégie de boîte aux lettres de messagerie unifiée. Vous pouvez modifier les paramètres d'interface utilisateur de téléphonie suivants sur une stratégie de boîte aux lettres de messagerie unifiée :
 

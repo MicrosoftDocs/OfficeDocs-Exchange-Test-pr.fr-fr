@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Si un utilisateur signale des problèmes de qualité audio au niveau de ses appels de messagerie unifiée, vous pouvez utiliser le rapport des journaux des appels des utilisateurs pour mieux comprendre l'origine des problèmes.
 

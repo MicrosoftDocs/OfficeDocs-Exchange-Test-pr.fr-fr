@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-01_
+_**Dernière rubrique modifiée :** 2012-11-01_
 
 Chaque copie de base de données de boîtes aux lettres possède ses propres propriétés que vous pouvez configurer. Celles-ci incluent le délai, le cas échéant, d’attente de relecture et de troncation, ainsi que le numéro de préférence d’activation. Pour plus d’informations sur le délai d’attente de relecture, le délai d’attente de troncation et le numéro de préférence d’activation, voir [Gestion des copies de base de données de boîtes aux lettres](managing-mailbox-database-copies-exchange-2013-help.md).
 

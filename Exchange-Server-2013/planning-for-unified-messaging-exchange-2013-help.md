@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Lorsque vous planifiez votre déploiement de votre messagerie unifiée, de nombreux facteurs doivent être pris en compte pour aboutir à un déploiement correct. Vous devez connaître les différents éléments de la messagerie unifiée, ainsi que chaque composant et fonction de façon à pouvoir planifier correctement l’infrastructure et le déploiement de la messagerie unifiée. L'allocation de temps à la planification et à la résolution de ces problèmes contribue à éviter des problèmes lors du déploiement d'une messagerie unifiée au sein de vitre organisation.
 

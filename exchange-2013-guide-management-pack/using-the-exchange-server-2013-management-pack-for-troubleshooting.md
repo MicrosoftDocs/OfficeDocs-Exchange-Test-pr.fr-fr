@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**Dernière rubrique modifiée :** 2013-04-09_
+_**Dernière rubrique modifiée :**  2013-04-09_
 
 La rubrique [Mise en route avec le pack d'administration Exchange Server 2013](getting-started-with-exchange-server-2013-management-pack.md) offre une vue d'ensemble du tableau de bord du pack d'administration. Elle vous décrit comment ce dernier peut vous aider à résoudre un problème. L'exemple suivant vous permettra de mieux appréhender le processus. Prenons l'exemple du scénario suivant :
 

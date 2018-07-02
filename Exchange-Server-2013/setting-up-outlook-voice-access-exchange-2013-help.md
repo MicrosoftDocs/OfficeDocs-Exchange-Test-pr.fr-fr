@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Microsoft Outlook Voice Access permet aux utilisateurs à extension messagerie unifiée (MU) d’accéder à leurs boîtes aux lettres à l’aide d’un téléphone analogique, numérique ou mobile.
 

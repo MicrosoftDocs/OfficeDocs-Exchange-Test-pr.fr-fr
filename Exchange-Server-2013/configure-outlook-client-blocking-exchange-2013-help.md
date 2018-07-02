@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Dans Exchange Server 2013, vous pouvez utiliser les stratégies de rétention ou les dossiers gérés pour assurer la gestion des enregistrements de messagerie (MRM). Seuls les utilisateurs de Microsoft Outlook 2010 et versions ultérieures ont accès à l’ensemble des fonctionnalités client des stratégies de rétention. Toutefois, les stratégies de rétention sont appliquées au serveur de boîtes aux lettres par l’Assistant Dossier géré, quelle que soit la version du client Outlook utilisée. Les clients Outlook antérieurs ne présentent pas la fonctionnalité MRM de ces fonctions. Par exemple, comme Outlook 2007 ne prend pas en charge les stratégies de rétention, les utilisateurs ne peuvent pas appliquer de balises personnelles aux éléments ou aux dossiers.
 

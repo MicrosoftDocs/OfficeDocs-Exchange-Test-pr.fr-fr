@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-16_
+_**Dernière rubrique modifiée :** 2012-10-16_
 
 Le répertoire virtuel OAB est la distribution de l’OAB. Par défaut, lors de l’installation de Microsoft Exchange Server 2013, un répertoire virtuel nommé carnet d’adresses en mode hors connexion est créé sur le site Web interne par défaut des services Internet (IIS). Si vous avez des utilisateurs côté client qui se connectent à Microsoft Outlook en dehors du pare-feu de votre organisation, vous pouvez ajouter un site Web externe. De la même façon, lorsque vous exécutez la cmdlet **New-OABVirtualDirectory** dans l’environnement de ligne de commande Exchange Management Shell, un répertoire virtuel nommé OAB est créé sur le site Web par défaut des services Internet (IIS) sur le serveur Exchange local.
 

@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-12_
+_**Dernière rubrique modifiée :** 2012-10-12_
 
 Les listes d’adresses sont un ensemble d’objets destinataire et autres objets Active Directory. Chaque liste d’adresses peut contenir un ou plusieurs types d’objets (par exemple, des utilisateurs, des contacts, des groupes, des dossiers publics, des ressources de conférence et d’autres ressources). Les listes d’adresses fournissent également un mécanisme pour partitionner les objets à extension messagerie d’Active Directory au bénéfice de groupes d’utilisateurs spécifiques.
 

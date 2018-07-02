@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-15_
+_**Dernière rubrique modifiée :** 2013-02-15_
 
 Si vous utilisez plusieurs carnets d'adresses en mode hors connexion dans votre organisation, il existe plusieurs méthodes pour déterminer quels destinataires téléchargent quels carnets d'adresses en mode hors connexion :
 

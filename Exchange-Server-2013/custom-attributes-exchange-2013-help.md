@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-17_
+_**Dernière rubrique modifiée :** 2012-10-17_
 
 Microsoft Exchange Server 2013 comprend 15 attributs d’extension. Vous pouvez utiliser ces attributs pour ajouter des informations sur un destinataire, comme l’ID d’un employé, l’unité d’organisation, ou autre valeur personnalisée pour laquelle aucun attribut n’existe. Ces attributs personnalisés sont désignés dans Active Directory de **ms-Exch-Extension-Attribute1** à **ms-Exch-Extension-Attribute15**. Dans l’environnement de ligne de commande Exchange Management Shell, les paramètres correspondants sont *CustomAttribute1* à *CustomAttribute15*. Ces attributs ne sont pas utilisés par tous les composants Exchange. Ils peuvent servir au stockage de données Active Directory sans devoir étendre le schéma Active Directory.
 

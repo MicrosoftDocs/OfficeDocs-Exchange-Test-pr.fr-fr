@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2010, Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2010, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-04-01_
+_**Dernière rubrique modifiée :** 2018-04-01_
 
 **Résumé** : Cet article explique comment fonctionnent les mots de passe et la sécurité dans Outlook pour iOS et Android avec Exchange Server.
 

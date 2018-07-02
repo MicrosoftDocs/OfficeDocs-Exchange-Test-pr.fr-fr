@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-03-08_
+_**Dernière rubrique modifiée :** 2013-03-08_
 
 Après avoir créé un standard automatique de messagerie unifiée, les appels entrants via le numéro de téléphone externe, auxquels répond normalement un opérateur humain, reçoivent une réponse du standard automatique. Contrairement aux autres composants de messagerie unifiée, tels que les plans de numérotation de messagerie unifiée et les passerelles IP de messagerie unifiée, vous n'êtes pas obligé de créer des standards automatiques de messagerie unifiée. Toutefois, les standards automatiques aident des appelants internes et externes à localiser des utilisateurs ou départements d'une organisation et à leur transférer des appels.
 

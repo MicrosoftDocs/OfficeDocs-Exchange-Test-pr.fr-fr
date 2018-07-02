@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 La redondance des clichés instantanés a été introduite dans Microsoft Exchange Server 2010 pour fournir des copies redondantes des messages avant leur remise à des boîtes aux lettres. Dans Exchange 2010, la redondance des clichés instantanés retardait la suppression d'un message de la base de données de transport sur un serveur de transport jusqu'à ce que le serveur vérifie le saut suivant dans la remise achevée du chemin de remise du message. Si le saut suivant échouait avant de signaler la réussite de la remise au serveur de transport, ce dernier soumettait de nouveau le message à ce saut suivant. Les serveurs Exchange 2010 utilisaient XSHADOW pour annoncer leur prise en charge de la redondance des clichés instantanés. Si un serveur SMTP ne prenait pas en charge la redondance des clichés instantanés, Exchange 2010 utilisait un accusé de réception retardé basé sur un intervalle de temps configuré sur le connecteur de réception pour faire une copie redondante du message.
 

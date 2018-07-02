@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-06_
+_**Dernière rubrique modifiée :** 2013-02-06_
 
 Vos utilisateurs transportent chaque jour des informations confidentielles dans leurs poches. Si l'un d'entre eux perd son téléphone mobile, vos données peuvent passer entre les mains d'une autre personne. Si le cas se présente, vous pouvez utiliser le Centre d'administration Exchange (CAE) ou l'environnement de ligne de commande Exchange Management Shell pour réinitialiser son téléphone et effacer toutes les données de l'utilisateur et de l'entreprise.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Dans Exchange Online et Exchange Server 2013, vous pouvez utiliser des stratégies de rétention pour gérer le cycle de vie de la messagerie. Les stratégies de rétention sont appliquées en créant des balises de rétention, en les ajoutant à une stratégie de rétention et en appliquant la stratégie aux utilisateurs de la boîte aux lettres.
 

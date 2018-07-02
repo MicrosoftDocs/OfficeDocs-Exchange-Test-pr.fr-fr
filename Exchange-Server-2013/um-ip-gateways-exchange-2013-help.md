@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2014-06-24_
+_**Dernière rubrique modifiée :** 2014-06-24_
 
 Une passerelle IP de messagerie unifiée représente un périphérique matériel de passerelle VoIP, de PBX IP ou de contrôleur de limite de session (SBC) physique. Pour pouvoir utiliser une passerelle VoIP, un PBX IP ou un SBC afin de répondre aux appels entrants et d'effectuer des appels sortants pour les utilisateurs de messagerie vocale, une passerelle IP de messagerie unifiée doit être créée dans le service d'annuaire.
 

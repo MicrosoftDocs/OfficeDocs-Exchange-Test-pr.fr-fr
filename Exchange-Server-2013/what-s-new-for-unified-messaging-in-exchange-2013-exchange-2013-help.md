@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Dans Microsoft Exchange Server 2013, nous améliorons les versions antérieures d'Exchange, en introduisant de nouvelles fonctionnalités et des changements architecturaux. La messagerie unifiée (UM) dans Exchange 2013 comprend les mêmes fonctionnalités que Exchange 2010 et Exchange 2007, cependant la messagerie unifiée n'est plus un rôle de serveur distinct. Il s'agit désormais d'un composant des fonctionnalités liées à la voix offertes dans Exchange 2013.
 

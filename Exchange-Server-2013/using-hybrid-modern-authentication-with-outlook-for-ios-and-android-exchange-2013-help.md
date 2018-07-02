@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-04-19_
+_**Dernière rubrique modifiée :** 2018-04-19_
 
 **Résumé** : Découvrez comment les administrations peuvent déployer les fonctionnalités de l’authentification moderne hybride et de la suite Enterprise Mobility + Security pour qu’elles soient prises en charge par les boîtes aux lettres Exchange locales dans Outlook pour iOS et Android.
 

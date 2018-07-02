@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-14_
+_**Dernière rubrique modifiée :** 2013-02-14_
 
 Vous pouvez utiliser le Centre d'administration Exchange ou l'environnement de ligne de commande pour gérer les langues de la messagerie unifiée sur les serveurs de boîtes aux lettres qui exécutent le service de messagerie unifiée Microsoft Exchange. Toutefois, pour supprimer une langue de la liste d'un plan de numérotation de messagerie unifiée, vous devez supprimer le module linguistique de messagerie unifiée approprié du serveur de boîtes aux lettres en utilisant la commande **Setup.exe /RemoveUmLanguagePack**. Une fois que vous avez supprimé le module linguistique de messagerie unifiée du serveur de boîtes aux lettres, la langue n'est plus disponible lorsque vous configurez un plan de numérotation de messagerie unifiée ou un standard automatique de messagerie unifiée. Pour afficher les modules linguistiques de messagerie unifiée installés, vous devez afficher les propriétés du serveur de boîtes aux lettres ou utiliser la cmdlet **Get-UMService**.
 

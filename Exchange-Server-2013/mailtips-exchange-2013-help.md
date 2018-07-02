@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-04-28_
+_**Dernière rubrique modifiée :** 2017-04-28_
 
 Les infos-courrier sont des messages d'information qui s'affichent lorsque les utilisateurs composent un message. Microsoft Exchange Server 2013 analyse le message, notamment la liste des destinataires auxquels il est destiné. Si un problème potentiel est détecté, les infos-courrier avertissent les utilisateurs avant d'envoyer le message. Grâce aux informations fournies par les infos-courrier, les expéditeurs peuvent adapter le message qu'ils rédigent pour éviter des situations indésirables ou des rapports de non-remise.
 

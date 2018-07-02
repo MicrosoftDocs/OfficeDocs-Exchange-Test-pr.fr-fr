@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Dans la messagerie unifiée, un codec audio est utilisé pour stocker des messages vocaux. Un autre codec est utilisé entre une passerelle VoIP ou un PBX (Private Branch eXchange) IP et le serveur de boîtes aux lettres exécutant le service de messagerie unifiée Microsoft Exchange ou le serveur d'accès au client exécutant le service routeur des appels de messagerie unifiée Microsoft Exchange. La messagerie unifiée est compatible avec les quatre codecs audio suivants pour créer et stocker des messages vocaux :
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Si vous voulez être sûr de recevoir des messages spécifiques, vous pouvez créer une règle de transport Exchange qui garantit que ces messages contournent votre dossier de courrier non trié. Consultez la rubrique [Utiliser l’encombrement pour trier les messages à priorité basse dans Outlook Web App](https://go.microsoft.com/fwlink/p/?linkid=528411) pour plus d’informations sur la fonction Courrier non trié.
 

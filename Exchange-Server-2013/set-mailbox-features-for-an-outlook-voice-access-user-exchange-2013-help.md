@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Les paramètres de l'interface utilisateur de téléphonie (TUI) sont utilisés quand un utilisateur accède au système de messagerie unifiée par le biais d'Outlook Voice Access. Lorsque vous modifiez les paramètres de configuration de l'interface utilisateur de téléphonie d'un utilisateur à extension messagerie unifiée, vous modifiez les propriétés et les valeurs correspondantes dans la boîte aux lettres de l'utilisateur.
 

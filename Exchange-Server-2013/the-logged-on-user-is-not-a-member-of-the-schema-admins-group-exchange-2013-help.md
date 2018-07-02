@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2014-12-02_
+_**Dernière rubrique modifiée :** 2014-12-02_
 
 Impossible de poursuivre le programme d’installation de Microsoft Exchange Server 2013 car le compte d’utilisateur exécutant le processus de mise à jour de schéma Active Directory n’est pas un membre des groupes Administrateurs du schéma et Administrateurs de l’entreprise.
 

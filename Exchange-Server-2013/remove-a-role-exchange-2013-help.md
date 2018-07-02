@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Les rôles de gestion qui ne sont plus requis peuvent être supprimés de votre organisation. Vous ne pouvez supprimer que les rôles de gestion que vous avez créés. Les rôles de gestion intégrés ne peuvent pas être supprimés. Pour plus d’informations sur les rôles de gestion dans Microsoft Exchange Server 2013, voir [Présentation des rôles de gestion](understanding-management-roles-exchange-2013-help.md).
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Les autorisations partagées vous permettent, en tant qu’administrateur de Microsoft Exchange Server 2013, de créer les principaux de sécurité Active Directory (les utilisateurs par exemple), puis de les configurer comme destinataires d’Exchange. À l’inverse des autorisations fractionnées, qui permettent de répartir les tâches de gestion entre les groupes d’administrateurs Exchange et d’administrateurs Active Directory, les autorisations partagées n’ont pas recours à la séparation des tâches.
 

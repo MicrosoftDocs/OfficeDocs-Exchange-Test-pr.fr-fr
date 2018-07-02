@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-01_
+_**Dernière rubrique modifiée :** 2012-11-01_
 
 Une *stratégie de noms de groupes* vous permet de standardiser et de gérer les noms de groupes de distribution créés par les utilisateurs dans votre organisation. Vous pouvez exiger qu'un préfixe et un suffixe spécifiques soient ajoutés au nom pour le groupe de distribution lorsqu'il est créé, et vous pouvez empêcher que des mots spécifiques soient utilisés. Cela vous aide à réduire l'utilisation de mots inappropriés dans les noms de groupe.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-16_
+_**Dernière rubrique modifiée :** 2013-04-16_
 
 Vous pouvez ajouter des serveurs d'accès au client et des serveurs de boîtes aux lettres aux plans de numérotation URI SIP. Vous ne pouvez pas associer de serveurs d'accès au client et de serveurs de boîtes aux lettres à des plans de numérotation E.164 ou à numéro de poste, mais les serveurs répondront à tous les appels entrants.
 

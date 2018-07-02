@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Project Server 2013_
+_**Sapplique à :** Exchange Server 2013, Project Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 L’indicateur d’intégrité **FIPS** surveille l’intégrité globale des paramètres des normes FIPS (Federal Information Processing Standard) sur des serveurs Exchange. Pour plus d’informations sur les normes FIPS 140, consultez la rubrique [Validation des normes FIPS 140](http://go.microsoft.com/fwlink/p/?linkid=521913).
 

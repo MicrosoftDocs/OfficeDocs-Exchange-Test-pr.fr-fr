@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Vous pouvez définir les options de l’Afficheur des files d’attente pour ajuster le nombre d’éléments affichés dans la page et la fréquence d’actualisation automatique. La fréquence d’actualisation automatique détermine la fréquence de mise à jour des résultats de l’Afficheur des files d’attente.
 

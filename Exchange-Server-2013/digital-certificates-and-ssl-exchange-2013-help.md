@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-08-26_
+_**Dernière rubrique modifiée :** 2013-08-26_
 
 Le protocole SSL (Secure Sockets Layer) permet de sécuriser les communications entre un client et un serveur. Pour Exchange Server 2013, le protocole SSL permet de sécuriser les communications entre le serveur et les clients. Les clients peuvent être des téléphones mobiles, des ordinateurs faisant partie du réseau d'une organisation et des ordinateurs extérieurs au réseau d'une organisation.
 

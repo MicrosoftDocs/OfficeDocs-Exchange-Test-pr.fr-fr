@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 La mise en quarantaine du courrier indésirable est une fonctionnalité de l’agent de filtrage du contenu qui réduit le risque de perte de messages légitimes. La mise en quarantaine du courrier indésirable fournit un emplacement de stockage temporaire pour les messages identifiés comme courrier indésirable, qui ne doivent pas être remis à une boîte aux lettres d’utilisateur au sein de l’organisation.
 
@@ -206,7 +206,7 @@ Utilisez l’une des procédures suivantes selon la version de Microsoft Outlook
 
 7.  Dans la boîte de dialogue **Personnalisation de l'affichage : Messages**, cliquez sur **Afficher les champs**.
 
-8.  Dans la boîte de dialogue **Afficher les champs**, dans la liste déroulante **Sélectionner les champs disponibles dans :**, accédez à la fin de la liste et sélectionnez **Formulaires**.
+8.  Dans la boîte de dialogue **Afficher les champs**, dans la liste déroulante **Sélectionner les champs disponibles dans :** , accédez à la fin de la liste et sélectionnez **Formulaires**.
 
 9.  Dans la boîte de dialogue **Sélectionner les formulaires d’entreprise pour ce dossier**, dans le champ **Formulaires sélectionnés**, sélectionnez **Message**, puis cliquez sur **Supprimer**. Dans le champ **Formulaires personnels**, sélectionnez **Formulaire d’extension de mise en quarantaine**, puis cliquez sur **Ajouter**. Lorsque vous avez terminé, cliquez sur **Fermer**.
 

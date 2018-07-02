@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Par défaut, les répertoires de collecte et de relecture existent sur chaque serveur de boîtes aux lettres Microsoft Exchange Server 2013 ou serveur de transport Edge. Les fichiers de message électronique correctement mis en forme que vous copiez dans le répertoire de collecte ou de relecture sont soumis à des fins de remise. Le répertoire de collecte est utilisé par des administrateurs pour tester le flux de messagerie ou par des applications qui doivent créer et soumettre leurs propres messages. Le répertoire de relecture reçoit des messages de serveurs de passerelle étrangers et peut servir à déposer de nouveau des messages exportés par les administrateurs à partir des files d'attente de serveurs Exchange.
 

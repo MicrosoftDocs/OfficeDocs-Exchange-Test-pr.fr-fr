@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les déploiements hybrides Exchange 2013 uniquement configurent l’authentification OAuth lors de l’utilisation de l’Assistant Configuration hybride. Pour les déploiements hybrides Exchange 2013/2010 et Exchange 2013/2007 mixtes, la nouvelle connexion d’authentification basée sur OAuth de déploiement hybride entre les organisations Office 365 et Exchange locales n’est pas configurée par l’Assistant Configuration hybride. Ces déploiements continuent à utiliser le processus d’approbation de fédération par défaut. Toutefois, certaines fonctionnalités d’Exchange 2013 sont totalement disponibles dans votre organisation uniquement en utilisant le nouveau protocole d’authentification OAuth d’Exchange.
 

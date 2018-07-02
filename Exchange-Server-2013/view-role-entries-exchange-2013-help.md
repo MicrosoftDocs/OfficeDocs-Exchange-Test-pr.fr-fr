@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Chaque entrée de rôle de gestion représente une cmdlet unique ou un script. Les paramètres inclus dans une entrée de rôle déterminent les paramètres sur la cmdlet ou le script auxquels un utilisateur peut accéder.
 

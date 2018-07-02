@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-02-20_
+_**Dernière rubrique modifiée :** 2014-02-20_
 
 Configurez une relation organisationnelle pour partager des informations de calendrier avec un partenaire commercial externe. Les administrateurs Exchange peuvent configurer une relation organisationnelle avec une organisation Office 365 ou avec une autre organisation Exchange sur site. Si vous souhaitez partager des calendriers avec une autre organisation Exchange sur site, les deux administrateurs Exchange sur site doivent configurer une relation d’authentification avec le nuage (également appelée « fédération ») et satisfaire à la configuration logicielle requise minimale.
 

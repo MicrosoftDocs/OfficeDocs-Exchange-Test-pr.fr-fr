@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-23_
+_**Dernière rubrique modifiée :** 2013-04-23_
 
 Outlook Voice Access est une fonctionnalité de la messagerie unifiée qui permet aux utilisateurs de relever leurs messages électroniques et vocaux, ainsi que de gérer leur calendrier et leurs contacts personnels en utilisant un téléphone analogique, numérique ou mobile. Ils peuvent interagir avec leur boîte aux lettres en utilisant le clavier de leur téléphone ou des commandes vocales, mais doivent utiliser le clavier pour rechercher un utilisateur dans l'annuaire de votre organisation.
 

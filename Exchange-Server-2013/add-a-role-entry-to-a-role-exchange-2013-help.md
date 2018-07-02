@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-04_
+_**Dernière rubrique modifiée :** 2012-10-04_
 
 Si vous souhaitez accorder l’accès à une cmdlet, vous devez ajouter l’entrée de rôle de gestion associée à un rôle de gestion. Une fois l’entrée ajoutée au rôle, les utilisateurs auxquels ce rôle est attribué pourront accéder à la cmdlet. Pour plus d’informations sur les entrées de rôles de gestion dans Microsoft Exchange Server 2013, voir [Présentation des rôles de gestion](understanding-management-roles-exchange-2013-help.md).
 

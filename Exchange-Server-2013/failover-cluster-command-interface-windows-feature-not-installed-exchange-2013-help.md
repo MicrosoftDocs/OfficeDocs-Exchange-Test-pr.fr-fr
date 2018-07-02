@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2014-12-03_
+_**Dernière rubrique modifiée :** 2014-12-03_
 
 Le programme d’installation de Microsoft Exchange Server 2013 ne peut pas continuer, car une fonctionnalité Windows requise fait défaut sur l’ordinateur local. Vous devez installer cette fonctionnalité Windows pour poursuivre l’installation d’Exchange 2013.
 

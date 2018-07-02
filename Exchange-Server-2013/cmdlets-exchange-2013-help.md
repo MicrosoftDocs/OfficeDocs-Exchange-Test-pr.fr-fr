@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Une *cmdlet* (prononcez « command-let ») est la plus petite unité de fonctionnalité dans Exchange Management Shell. Les cmdlets ressemblent à des commandes intégrées dans d’autres interfaces de commande interactive, par exemple, la commande `dir` trouvée dans `cmd.exe`. Comme ces commandes familières, les cmdlets peuvent être appelées directement depuis la ligne de commande dans Exchange Management Shell et exécutées dans le contexte de l’interface de commande active, pas comme processus à part.
 

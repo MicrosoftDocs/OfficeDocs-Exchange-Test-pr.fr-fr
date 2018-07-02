@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-14_
+_**Dernière rubrique modifiée :** 2012-11-14_
 
 Le Centre d’administration Exchange (EAC) ou l’environnement de ligne de commande Exchange Management Shell vous permet d’activer ou de désactiver Outlook Web App pour une boîte aux lettres utilisateur. Si Outlook Web App est activé, un utilisateur peut utiliser Outlook Web App pour envoyer et recevoir un message électronique. Si Outlook Web App est désactivé, la boîte aux lettres continue de recevoir des messages électroniques et un utilisateur peut y accéder pour envoyer et recevoir des messages électroniques via un client MAPI comme Microsoft Outlook ou un client de messagerie électronique POP ou IMAP, en supposant que la boîte aux lettres soit activée pour accepter un accès de ces clients.
 

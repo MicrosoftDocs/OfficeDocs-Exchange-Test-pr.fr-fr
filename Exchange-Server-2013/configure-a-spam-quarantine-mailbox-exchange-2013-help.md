@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-19_
+_**Dernière rubrique modifiée :** 2013-02-19_
 
 Les messages identifiés comme courrier indésirable par l'agent de filtrage du contenu peuvent être dirigés vers une boîte aux lettres de mise en quarantaine du courrier indésirable. Si le seuil de quarantaine du seuil de probabilité de courrier indésirable (SCL) est activé, tous les messages mis en quarantaine sont inclus dans des rapports de non-remise (NDR) et envoyés à l'adresse SMTP que vous avez indiquée comme boîte aux lettres de mise en quarantaine de courrier indésirable. Vous pouvez examiner les messages mis en quarantaine et les libérer à l'aide de la fonction Envoyer à nouveau de Microsoft Outlook.
 

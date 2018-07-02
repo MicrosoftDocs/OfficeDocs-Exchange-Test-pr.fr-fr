@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Les autorisations fractionnées activent deux groupes distincts, tels que les administrateurs Active Directory et les administrateurs Microsoft Exchange Server 2013, pour gérer leurs services, objets et attributs respectifs. Les administrateurs Active Directory gèrent les principaux de sécurité, tels que les utilisateurs, qui fournissent les autorisations permettant d’accéder à une forêt Active Directory. Les administrateurs Exchange gèrent les attributs relatifs à Exchange sur les objets Active Directory, ainsi que la création et la gestion d’objets spécifiques à Exchange.
 

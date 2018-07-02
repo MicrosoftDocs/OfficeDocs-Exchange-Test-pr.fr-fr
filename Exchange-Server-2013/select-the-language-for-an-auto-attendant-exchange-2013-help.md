@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez configurer le paramètre de langue d'invite par défaut sur un standard automatique de messagerie unifiée. Le paramètre de langue disponible sur un standard automatique de messagerie unifiée vous permet de configurer la langue d'invite par défaut sur le standard automatique. Lorsque vous utilisez les invites système par défaut pour le standard automatique, il s'agit de la langue que l'appelant entend lorsque le standard automatique répond à l'appel entrant. Ce paramètre de langue affecte seulement les invites système par défaut qui sont fournies après que vous avez installé le serveur de boîtes aux lettres qui exécute le service de messagerie unifiée Microsoft Exchange. Ce paramètre est sans effet sur les invites personnalisées configurées sur un standard automatique. Les langues disponibles sont basées sur les modules linguistiques de messagerie unifiée installés sur le serveur de boîtes aux lettres.
 

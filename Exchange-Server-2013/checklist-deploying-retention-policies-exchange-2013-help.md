@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Utilisez cette liste de vérification pour déployer des stratégies de rétention dans votre organisation Microsoft Exchange Server 2013. Avant de commencer avec cette liste de vérification, assurez-vous d’avoir bien assimilé les concepts présentés dans les rubriques suivantes :
 

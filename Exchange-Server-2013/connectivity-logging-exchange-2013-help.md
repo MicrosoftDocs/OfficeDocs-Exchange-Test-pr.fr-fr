@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 La journalisation de connexion consigne l’activité de connexion sortante utilisée pour transmettre des messages en provenance d’un service de transport sur le serveur Exchange. Le but du journal de connectivité n’est pas de suivre la transmission des messages électroniques individuels. Le journal de connectivité suit plutôt l’activité de connexion de la source à la destination, indépendamment du nombre de messages transmis. L’enregistrement de la connectivité est disponible dans le service de transport frontal sur les serveurs d’accès au client, le service de transport sur ​​des serveurs de boîtes aux lettres et la boîte aux lettres du service de transport sur ​​des serveurs de boîtes aux lettres. La liste suivante décrit les types d’information enregistrés dans le journal de connectivité :
 

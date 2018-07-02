@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-05_
+_**Dernière rubrique modifiée :** 2012-11-05_
 
 Vous pouvez activer les mappages de touches heures pour un standard automatique de messagerie unifiée (MU). Après avoir créé un standard automatique de messagerie unifiée, une invite de commandes du système par défaut sera utilisé pour les heures ouvrées message d'accueil que les appelants entendront après que les heures ouvrées message de bienvenue de menu principal est émis. Les heures par défaut business indique de l'invite de commandes de menu principal, « Welcome to du standard automatique de Microsoft Exchange ». Car aucun mappage de clés n'est définis par défaut, aucune option de menu est disponible pour les appelants, et ils entendent uniquement l'invite du menu principal par défaut.
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**Dernière rubrique modifiée :**2017-02-08_
+_**Dernière rubrique modifiée :** 2017-02-08_
 
 Le rôle Mes applications ReadWriteMailbox permet aux utilisateurs individuels d’ajouter des compléments qui demandent l’autorisation ReadWriteMailbox dans leur manifeste.
 

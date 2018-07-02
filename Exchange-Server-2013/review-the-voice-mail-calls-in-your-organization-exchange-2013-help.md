@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez utiliser le rapport statistiques d'appel pour afficher des informations sur le type et le statut des appels entrants gérés par les serveurs Exchange de votre organisation. Le rapport fournit des informations statistiques sur les appels transférés vers ou passés par la messagerie unifiée (MU) pour votre organisation. Vous pouvez utiliser ces informations pour effectuer le suivi de l'utilisation pour la planification de la capacité, surveiller et dépanner la disponibilité et la qualité audio de la messagerie unifiée et à résoudre les problèmes d'appels ayant échoué.
 

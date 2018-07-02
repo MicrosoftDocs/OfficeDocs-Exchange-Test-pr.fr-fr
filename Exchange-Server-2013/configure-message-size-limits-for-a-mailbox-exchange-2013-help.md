@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-12_
+_**Dernière rubrique modifiée :** 2012-11-12_
 
 Le Centre d’administration Exchange (EAC) et l’environnement de ligne de commande Exchange Management Shell vous permettent de configurer des limites de taille de messages pour une boîte aux lettres utilisateur. Ces limites permettent de contrôler la taille des messages qu’un utilisateur peut envoyer et recevoir. Par défaut, lorsqu’une boîte aux lettres est créée, aucun limite de tailles pour les messages envoyés ou reçus n’est définie.
 

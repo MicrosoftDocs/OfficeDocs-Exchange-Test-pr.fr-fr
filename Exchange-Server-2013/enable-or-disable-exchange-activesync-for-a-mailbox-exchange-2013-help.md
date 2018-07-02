@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-13_
+_**Dernière rubrique modifiée :** 2012-11-13_
 
 Vous pouvez utiliser le Centre d’administration Exchange ou l’environnement de ligne de commande Exchange Management Shell pour activer ou désactiver Microsoft Exchange ActiveSync pour une boîte aux lettres utilisateur. Exchange ActiveSync est un protocole client qui permet à des utilisateurs de synchroniser un appareil mobile avec sa boîte aux lettres Exchange. Exchange ActiveSync est activé par défaut lorsqu’une boîte aux lettres utilisateur est créée. Pour en savoir plus, consultez la rubrique [Exchange ActiveSync](exchange-activesync-exchange-2013-help.md).
 

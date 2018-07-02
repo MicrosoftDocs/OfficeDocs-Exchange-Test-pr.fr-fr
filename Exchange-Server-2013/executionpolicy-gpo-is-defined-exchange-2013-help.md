@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-15_
+_**Dernière rubrique modifiée :** 2016-12-15_
 
 Le programme d’installation de Microsoft Exchange Server 2013 ne peut pas continuer car l’objet de stratégie de groupe **ExecutionPolicy** définissant l’une ou les deux stratégies suivantes a été détecté :
 

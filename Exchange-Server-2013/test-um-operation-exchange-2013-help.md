@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-06-25_
+_**Dernière rubrique modifiée :** 2013-06-25_
 
 Cette rubrique explique comment utiliser l’environnement Shell pour tester le fonctionnement de votre système de messagerie vocale. Lorsque vous exécutez la procédure suivante, le serveur de boîtes aux lettres exécutant le service de messagerie unifiée de Microsoft Exchange lance un appel SIP (Session Initiation Protocol) de diagnostic, puis retourne une variable d’état d’intégrité des services de messagerie unifiée.
 

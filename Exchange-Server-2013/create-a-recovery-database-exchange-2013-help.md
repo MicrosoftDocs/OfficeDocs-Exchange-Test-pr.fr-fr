@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-01-21_
+_**Dernière rubrique modifiée :** 2013-01-21_
 
 Vous pouvez utiliser l’environnement de ligne de commande Exchange Management Shell pour créer une base de données de récupération, un type particulier de base de données de boîtes aux lettres qui sert à monter et à extraire des données à partir de la base de données restaurée dans le cadre d’une opération de récupération. Une fois que vous avez créé une base de données de récupération, vous pouvez déplacer une base de données de boîtes aux lettres récupérée ou restaurée dans la base de données de récupération puis en extraire des données à l’aide de la cmdlet [New-MailboxRestoreRequest](https://technet.microsoft.com/fr-fr/library/ff829875\(v=exchg.150\)). Après extraction, les données peuvent ensuite être exportées dans un dossier ou fusionnées dans une boîte aux lettres existante. Les bases de données de récupération vous permettent de récupérer des données à partir d’une sauvegarde ou d’une copie de base de données sans perturber l’accès des utilisateurs aux données actuelles.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-05-04_
+_**Dernière rubrique modifiée :** 2016-05-04_
 
 Parfois, il est logique d’avoir une deuxième opinion sur un message avant de le remettre. En tant qu’administrateur Exchange, vous pouvez configurer cela. Ce processus est appelé *modération* et l’approbateur est appelé *modérateur*. En fonction du type de message qui requiert une approbation, vous pouvez utiliser l’une des deux approches suivantes :
 

@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Lorsqu'un utilisateur de messagerie vocale à extension messagerie unifiée voit sa boîte aux lettres verrouillée sous Outlook Voice Access parce qu'il a tenté plusieurs fois de se connecter à l'aide d'un code confidentiel incorrect ou qu'il l'a oublié, vous pouvez utiliser l'une des procédures suivantes pour réinitialiser le code confidentiel de l'utilisateur. Lors de la réinitialisation du code confidentiel Outlook Voice Access d'un utilisateur, vous pouvez configurer la messagerie unifiée de manière à ce qu'elle génère automatiquement un code confidentiel, ou le spécifier manuellement. Le nouveau code confidentiel est envoyé à l'utilisateur par courrier électronique. Vous pouvez spécifier des options de code confidentiel supplémentaires, comme exiger que l'utilisateur définisse un nouveau code confidentiel lors de la première connexion. Les utilisateurs peuvent également réinitialiser leur code confidentiel de messagerie unifiée à l'aide de Outlook ou Outlook Web App.
 

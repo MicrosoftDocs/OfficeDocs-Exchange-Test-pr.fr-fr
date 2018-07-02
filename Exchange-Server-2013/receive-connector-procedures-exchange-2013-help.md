@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-09-23_
+_**Dernière rubrique modifiée :** 2012-09-23_
 
 [Créez un connecteur de réception pour recevoir des courriers électroniques depuis l'Internet](create-a-receive-connector-to-receive-email-from-the-internet-exchange-2013-help.md)
 

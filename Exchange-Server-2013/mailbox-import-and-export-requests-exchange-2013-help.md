@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Grâce aux jeux de cmdlets **MailboxImportRequest** ou **MailboxExportRequest** de l’environnement de ligne de commande Exchange Management Shell, vous pouvez importer ou exporter des données en provenance et à destination de fichiers .pst. Après avoir lancé une demande d’importation ou d’exportation de boîte aux lettres, le service de réplication de boîtes aux lettres Microsoft Exchange va achever le traitement de manière asynchrone. Le service de réplication de boîtes aux lettres réside sur tous les serveurs d’accès au client Exchange 2010 et il permet de déplacer des boîtes aux lettres et d’importer, puis d’exporter des fichiers .pst.
 

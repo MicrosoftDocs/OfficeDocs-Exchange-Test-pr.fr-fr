@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-11-10_
+_**Dernière rubrique modifiée :** 2015-11-10_
 
 Les autorisations requises pour effectuer des tâches pour les clients et périphériques mobiles varient en fonction de la procédure effectuée ou de la cmdlet que vous voulez exécuter. Pour plus d’informations sur les fonctionnalités de clients et de périphériques mobiles, voir [Clients et mobilité](clients-and-mobile-exchange-2013-help.md).
 

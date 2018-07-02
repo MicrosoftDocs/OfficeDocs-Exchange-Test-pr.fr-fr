@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-30_
+_**Dernière rubrique modifiée :** 2012-11-30_
 
 Vous pouvez configurer un standard automatique de messagerie unifiée à reconnaissance vocale doté d'un standard automatique de secours DTMF (numérotation en fréquences vocales). Un standard automatique de secours DTMF est utilisé lorsque le standard automatique de messagerie unifiée à reconnaissance vocale ne comprend pas ou ne reconnaît pas les entrées vocales de l'appelant. En cas d'utilisation d'un standard automatique de secours DTMF, l'appelant doit utiliser des entrées DTMF, également appelées entrées à tonalité, pour naviguer dans le système de menus du standard automatique, épeler un nom d'utilisateur ou utiliser un message de menu personnalisé. Si aucun standard automatique de secours DTMF n'a été configuré et si le nombre maximal d'entrées vocales est dépassé parce que le système n'a pas compris ce que disait l'appelant, le système répond par le message d'assistance vocale suivant : « Désolé de n'avoir pu vous aider. Veuillez rappeler plus tard. »
 

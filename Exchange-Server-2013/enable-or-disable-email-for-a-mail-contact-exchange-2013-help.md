@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-12-05_
+_**Dernière rubrique modifiée :** 2012-12-05_
 
 Vous pouvez désactiver la messagerie électronique pour un contact de messagerie existant dans votre organisation Exchange. Lorsque vous désactivez la messagerie électronique pour un contact de messagerie, la suppression s'effectue dans Exchange et dans le carnet d’adresse de votre organisation. Si le contact de messagerie est membre d’un groupe de distribution, le contact ne reçoit plus les messages envoyés au groupe. En outre, les attributs Exchange sont supprimés de l’objet de contact a extension messagerie dans Active Directory, mais le contact et ses attributs non Exchange (comme des informations relatives aux contacts et à l’organisation) sont conservés dans Active Directory.
 

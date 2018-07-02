@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Chaque boîte aux lettres Microsoft Exchange est constituée d’un compte d’utilisateur Active Directory et de données de boîte aux lettres stockées dans la base de données de boîtes aux lettres Exchange. Toutes les données de configuration d’une boîte aux lettres sont stockées dans les attributs d’Exchange de l’objet utilisateur Active Directory. La base de données de boîtes aux lettres contient les données de messagerie de la boîte aux lettres associée au compte d’utilisateur. La figure suivante illustre les composants d’une boîte aux lettres.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 L'optimisation des performances Exchange Server 2013 et la résolution des problèmes sont plus efficaces lorsque votre environnement a été correctement dimensionné et planifiée. Même si Exchange 2013 a été conçu pour simplifier l'infrastructure des ressources sous-jacente, il peut encore consommer une grande quantité de ressources système, telles que la mémoire, la capacité de stockage et la capacité du processeur.
 

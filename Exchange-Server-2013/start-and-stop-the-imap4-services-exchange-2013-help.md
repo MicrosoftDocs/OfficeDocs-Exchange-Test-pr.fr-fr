@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-05_
+_**Dernière rubrique modifiée :** 2012-10-05_
 
 Par défaut, les deux services IMAP4, Microsoft Exchange IMAP4 service et le service IMAP4 principal de Microsoft Exchange, ne sont pas démarrés sur les ordinateurs exécutant MicrosoftExchange Server 2013. Vous devez démarrer ces deux services pour permettre à vos clients de messagerie de se connecter à Exchange à l'aide d'IMAP4. Une fois que vous avez activé ces services, Exchange 2013 accepte les communications non sécurisées de clients IMAP4 sur le port 143 et sur le port 993 en utilisant Secure Sockets Layer (SSL).
 

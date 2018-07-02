@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 L’outil de dépannage de la messagerie unifiée Microsoft Exchange 2010 est une cmdlet de l’environnement de ligne de commande Exchange Management Shell appelée **Test-ExchangeUMCallFlow**. Vous pouvez utiliser cet outil pour mener une série de tests de diagnostic à l’encontre de la messagerie unifiée de votre organisation. Si l’un des tests échoue, l’outil indique la raison de l’échec et les solutions possibles pour résoudre le problème. Vous pouvez utiliser l’outil de dépannage de la messagerie unifiée uniquement sur les serveurs Exchange 2010 ou version ultérieure.
 

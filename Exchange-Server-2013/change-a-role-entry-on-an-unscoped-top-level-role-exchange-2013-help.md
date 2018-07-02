@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Les entrées de rôle de gestion sur des rôles de haut niveau non délimités font référence aux scripts et cmdlets non-Exchange, ainsi qu’à leurs paramètres, que vous voulez rendre accessibles à ceux auxquels le rôle est attribué. En modifiant les paramètres disponibles sur une entrée de rôle, vous gérez ce que ceux auxquels le rôle est attribué peuvent faire avec le script ou la cmdlet non-Exchange. Pour plus d’informations sur les entrées des rôles non délimitées, voir [Présentation des rôles de gestion](understanding-management-roles-exchange-2013-help.md).
 

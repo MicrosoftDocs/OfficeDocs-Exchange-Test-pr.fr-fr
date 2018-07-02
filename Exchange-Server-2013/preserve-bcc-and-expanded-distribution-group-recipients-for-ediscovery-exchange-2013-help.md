@@ -13,15 +13,15 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Office 365 Enterprise_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Office 365 Enterprise_
 
-_**Dernière rubrique modifiée :**2017-06-19_
+_**Dernière rubrique modifiée :** 2017-06-19_
 
 Place maintenez Litigation Hold et [les stratégies de rétention Office 365](http://go.microsoft.com/fwlink/?linkid=827811) (créé dans le Centre de conformité et sécurité dans Office 365 ) permettent de conserver le contenu des boîtes aux lettres afin de répondre aux exigences de l’e-Discovery et de conformité réglementaire. Informations sur les destinataires adressé directement dans les champs à et Cc les champs d’un message est inclus par défaut dans tous les messages, mais votre organisation peut demander la possibilité de rechercher et de reproduire des informations sur tous les destinataires d’un message. Cela inclut :
 
-  - **Les destinataires spécifiés dans le champ Cci d’un message :** les destinataires en copie carbone invisible sont stockés dans le message qui se trouve dans la boîte aux lettres de l’expéditeur, mais ne figurent pas dans les en-têtes du message remis aux destinataires.
+  - **Les destinataires spécifiés dans le champ Cci d’un message :**  les destinataires en copie carbone invisible sont stockés dans le message qui se trouve dans la boîte aux lettres de l’expéditeur, mais ne figurent pas dans les en-têtes du message remis aux destinataires.
 
-  - **Les destinataires de groupe de distribution étendu :** les destinataires qui reçoivent le message car ils sont membres d’un groupe de distribution auquel le message a été adressé, figurent dans le champ À, Cc ou Cci.
+  - **Les destinataires de groupe de distribution étendu :**  les destinataires qui reçoivent le message car ils sont membres d’un groupe de distribution auquel le message a été adressé, figurent dans le champ À, Cc ou Cci.
 
 Exchange Online et Exchange Server 2013 (à jour Cumulative 7 et versions ultérieures) conservent des informations sur la Cci et destinataires de groupes de distribution de développé. Vous pouvez rechercher ces informations à l’aide d’une recherche d’e-Discovery en Place dans le Centre d’administration Exchange (FAC) ou une recherche de contenu dans le Centre de conformité et sécurité.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 La distribution automatique des boîtes aux lettres est une fonctionnalité de Microsoft Exchange Server 2013 qui sélectionne de manière aléatoire une base de données de boîtes aux lettres afin de stocker une boîte aux lettres nouvelle ou déplacée lorsqu’aucune base de données n’est explicitement spécifiée. Cette fonctionnalité peut s’avérer utile lorsque vous souhaitez autoriser de jeunes administrateurs ou membres du service d’assistance à créer des boîtes aux lettres sans connaître les bases de données dans lesquelles les boîtes aux lettres doivent être créées.
 

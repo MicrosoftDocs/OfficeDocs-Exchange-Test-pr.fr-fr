@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-04_
+_**Dernière rubrique modifiée :** 2013-02-04_
 
 Étant donné que le Centre d'administration Exchange (CAE) est une console de gestion basée sur le web dans Exchange Server 2013, vous y accédez en utilisant l'URL du répertoire virtuel du Panneau de configuration Exchange (ECP) dans un navigateur Internet. Cette rubrique vous montre comment trouver l'URL du répertoire virtuel du Panneau de configuration Exchange.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-07-11_
+_**Dernière rubrique modifiée :** 2012-07-11_
 
 Direct Push est une fonction intégrée à Microsoft Exchange Server 2013. Direct push conserve la fonction de périphérique mobile en cours via une connexion réseau cellulaire ou sans fil. Il informe le périphérique mobile lorsque de nouvelles informations sont prêtes à être synchronisées.
 

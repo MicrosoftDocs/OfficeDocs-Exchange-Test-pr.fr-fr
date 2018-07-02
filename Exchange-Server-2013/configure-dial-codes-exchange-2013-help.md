@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez configurer des codes de numérotation, des préfixes de numéros et des formats de numéros que la messagerie unifiée utilise pour effectuer des appels entrants et sortants pour des utilisateurs à extension messagerie unifiée. Dans la plupart des cas, vous devrez configurer un plan de numérotation avec les codes de numérotation, les préfixes et les formats de numéros actuellement configurés dans votre réseau téléphonique.
 

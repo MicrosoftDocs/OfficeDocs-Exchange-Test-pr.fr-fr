@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-05-20_
+_**Dernière rubrique modifiée :** 2013-05-20_
 
 Pour des questions de sécurité, certaines organisations peuvent souhaiter restreindre l'accès au centre d'administration Exchange (CAE) pour les utilisateurs provenant d'Internet. Cette procédure vous indique comment désactiver l'accès au CAE. Cette procédure n'empêche pas l'accès des utilisateurs aux options dans Outlook Web App.
 

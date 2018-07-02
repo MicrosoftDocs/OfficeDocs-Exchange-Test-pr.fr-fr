@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-04-28_
+_**Dernière rubrique modifiée :** 2017-04-28_
 
 Vous pouvez utiliser des règles de flux de messagerie (également appelées règles de transport) pour identifier les messages qui transitent par votre organisation Exchange 2013 et agir sur ceux-ci. Les règles de flux de messagerie sont semblables aux règles de boîte de réception disponibles dans Outlook et Outlook Web App. La principale différence réside dans le fait que les règles de flux de messagerie agissent sur les messages pendant qu’ils sont en transit, et non une fois qu’ils ont été remis dans la boîte aux lettres. Les règles de flux de messagerie contiennent un plus vaste ensemble de conditions, d’exceptions et d’actions, ce qui vous offre plus de souplesse pour mettre en place plusieurs types de stratégies de messagerie.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Suite au lancement de Windows Phone 8, Windows 8 et Windows RT, un certain nombre d'appareils prennent en charge Exchange ActiveSync et les stratégies de boîte aux lettres d'appareil mobile. Chaque système d'exploitation d'appareil prend en charge un ensemble spécifique de paramètres de stratégie de boîte aux lettres d'appareil mobile.
 

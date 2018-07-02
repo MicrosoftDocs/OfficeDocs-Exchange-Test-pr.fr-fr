@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-11-12_
+_**Dernière rubrique modifiée :** 2015-11-12_
 
 Les autorisations requises pour configurer une haute disponibilité varient en fonction de la procédure en cours ou de la cmdlet que vous voulez exécuter. Pour plus d'informations sur la haute disponibilité, voir [Haute disponibilité et résilience de site](high-availability-and-site-resilience-exchange-2013-help.md).
 

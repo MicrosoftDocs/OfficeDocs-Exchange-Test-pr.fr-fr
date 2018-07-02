@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le *codage de transfert de contenu* définit des méthodes de codage permettant de transformer les données de messages électroniques binaires au format de texte brut US-ASCII. Cette transformation permet au message de transiter sur des serveurs de messagerie SMTP plus anciens qui ne prennent en charge que les messages en texte US-ASCII. Le codage de transfert de contenu est défini dans la norme RFC 2045. La méthode de codage de transfert est stockée dans le champ d’en-tête **Content-Transfer-Encoding** du message. Dans Microsoft Exchange Server 2013, les méthodes de codage de transfert suivantes sont disponibles :
 

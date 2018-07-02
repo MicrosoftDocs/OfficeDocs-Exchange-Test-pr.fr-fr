@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2018-04-17_
+_**Dernière rubrique modifiée :** 2018-04-17_
 
 Vous pouvez utiliser le Centre d’administration Exchange (EAC) ou Exchange PowerShell pour gérer l’accès utilisateur aux compléments pour Outlook.
 
@@ -63,11 +63,11 @@ Pour des tâches de gestion supplémentaires, consultez la rubrique [Application
 
 4.  Si vous voulez que les utilisateurs puissent utiliser le complément, cochez la case **Mettre ce complément à disposition des utilisateurs dans votre organisation**, puis sélectionnez l’option souhaitée.
     
-      - **Facultatif, option activée par défaut :** utilisez ce paramètre si vous souhaitez autoriser les utilisateurs à désactiver le complément.
+      - **Facultatif, option activée par défaut :**  utilisez ce paramètre si vous souhaitez autoriser les utilisateurs à désactiver le complément.
     
-      - **Facultatif, option désactivée par défaut :** utilisez ce paramètre si vous souhaitez autoriser les utilisateurs à activer le complément.
+      - **Facultatif, option désactivée par défaut :**  utilisez ce paramètre si vous souhaitez autoriser les utilisateurs à activer le complément.
     
-      - **Obligatoire, option toujours activée. Les utilisateurs ne peuvent pas désactiver ce complément :** utilisez ce paramètre si vous ne voulez pas que les utilisateurs puissent désactiver le complément.
+      - **Obligatoire, option toujours activée. Les utilisateurs ne peuvent pas désactiver ce complément :**  utilisez ce paramètre si vous ne voulez pas que les utilisateurs puissent désactiver le complément.
 
 5.  Cliquez sur **Enregistrer**.
 

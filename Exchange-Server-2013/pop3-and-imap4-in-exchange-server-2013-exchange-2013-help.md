@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-08-16_
+_**Dernière rubrique modifiée :** 2016-08-16_
 
 Découvrez les différences entre les protocoles POP3 et IMAP4 dans Exchange Server 2013 et comment configurer des options afin d’accéder aux boîtes aux lettres Exchange 2013 de divers programmes de messagerie électronique.
 

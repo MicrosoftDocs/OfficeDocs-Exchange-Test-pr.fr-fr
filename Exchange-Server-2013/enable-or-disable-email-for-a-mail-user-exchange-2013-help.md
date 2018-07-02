@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-14_
+_**Dernière rubrique modifiée :** 2012-11-14_
 
 Vous pouvez désactiver la messagerie pour un utilisateur de messagerie existant dans votre organisation Exchange. Lorsque vous désactivez la messagerie pour un utilisateur de messagerie, elle est supprimée d’Exchange et du carnet d’adresses de votre organisation. Si l’utilisateur de messagerie est membre d’un groupe de distribution, l’utilisateur ne reçoit plus la messagerie envoyée au groupe. De plus, les attributs d’Exchange sont supprimés de l’objet utilisateur dans Active Directory. Toutefois, cet objet et ses attributs non Exchange (tels que les coordonnées et les informations sur l’organisation) sont conservés dans Active Directory.
 

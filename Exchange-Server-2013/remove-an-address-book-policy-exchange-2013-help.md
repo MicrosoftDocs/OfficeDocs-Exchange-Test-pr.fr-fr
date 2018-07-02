@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-03-25_
+_**Dernière rubrique modifiée :** 2014-03-25_
 
 Utilisez cette procédure pour supprimer une stratégie de carnet d’adresses (ABP).
 

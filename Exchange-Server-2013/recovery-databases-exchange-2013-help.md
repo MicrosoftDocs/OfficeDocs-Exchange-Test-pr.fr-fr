@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-02_
+_**Dernière rubrique modifiée :** 2012-11-02_
 
 Une base de données de récupération (RDB) est une base de données de boîtes aux lettres spéciale qui vous permet de monter une base de données de boîtes aux lettres restaurée et d’extraire des données à partir de la base de données restaurée, dans le cadre d’une opération de récupération. La cmdlet [New-MailboxRestoreRequest](https://technet.microsoft.com/fr-fr/library/ff829875\(v=exchg.150\)) permet d’extraire des données d’une base de données de récupération. Une fois extraites, les données peuvent être exportées dans un dossier ou fusionnées avec les données d’une boîte aux lettres existante. Les bases de données de récupération vous permettent de récupérer des données à partir d’une sauvegarde ou d’une copie de base de données sans perturber l’accès des utilisateurs aux données actuelles.
 

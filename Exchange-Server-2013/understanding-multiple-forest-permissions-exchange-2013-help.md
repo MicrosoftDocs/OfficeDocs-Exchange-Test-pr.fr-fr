@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 De nombreuses entreprises déploient plusieurs forêts pour créer des limites de sécurité dans leurs organisations. L'utilisation de plusieurs forêts aide les administrateurs à définir ces limites de sécurité afin de mieux répondre aux exigences, qu'il s'agisse de garantir qu'un nombre restreint de personnes ait accès aux ressources ou de segmenter les services au sein d'une organisation.
 

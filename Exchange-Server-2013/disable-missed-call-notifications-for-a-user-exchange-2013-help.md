@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-12-09_
+_**Dernière rubrique modifiée :** 2012-12-09_
 
 Vous pouvez activer ou désactiver les notifications d'appels en absence pour une stratégie de boîte aux lettres de messagerie unifiée à l'aide de l'environnement de ligne de commande Exchange Management Shell ou du Centre d'administration Exchange (CAE). Une notification d'appel en absence est un message électronique envoyé à un utilisateur quand celui-ci ne répond pas à un appel entrant et que l'appelant ne laisse pas de message vocal. Ce message électronique diffère de celui qui contient le message vocal laissé pour un utilisateur.
 

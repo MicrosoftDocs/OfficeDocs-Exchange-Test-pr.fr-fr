@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016, Office 365_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016, Office 365_
 
-_**Dernière rubrique modifiée :**2017-05-19_
+_**Dernière rubrique modifiée :** 2017-05-19_
 
 **Résumé** : Topologies Exchange les plus récentes prises en charge permettant aux utilisateurs d’accéder aux dossiers publics avec Outlook 2016 pour Mac.
 

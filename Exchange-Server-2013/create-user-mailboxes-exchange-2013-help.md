@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-04-12_
+_**Dernière rubrique modifiée :** 2013-04-12_
 
 Les boîtes aux lettres sont le type de destinataire le plus courant utilisé par les professionnels de l'information dans une organisation Exchange. Chaque boîte aux lettres est associée à un compte d'utilisateur Active Directory. L'utilisateur peut se servir de la boîte aux lettres pour envoyer et recevoir des messages, ainsi que pour stocker des messages, des rendez-vous, des tâches, des notes et des documents. Utilisez le Centre d'administration Exchange ou l'environnement de ligne de commande Exchange Management Shell pour créer des boîtes aux lettres utilisateur
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 La régulation du flux est une fonctionnalité d'analyse des ressources du système fournie par le service Microsoft Exchange Transport sur les serveurs de transport Edge et de boîtes aux lettres dans Microsoft Exchange 2013.
 

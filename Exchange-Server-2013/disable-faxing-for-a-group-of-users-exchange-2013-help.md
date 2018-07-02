@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez désactiver les télécopies entrantes pour des utilisateurs associés à une stratégie de boîte aux lettres de messagerie unifiée. Par défaut, quand vous activez la messagerie unifiée pour des utilisateurs, ces derniers ne peuvent pas recevoir de messages de télécopie tant que vous n'avez pas spécifié l'URI du serveur de partenaire de télécopie, déployé un serveur de partenaire de télécopie et activé la fonctionnalité de télécopie sur une stratégie de boîte aux lettres de messagerie unifiée. Si l'option autorisant les télécopies entrantes est désactivée dans le plan de numérotation de messagerie unifiée, les utilisateurs associés à la stratégie de boîte aux lettres de messagerie unifiée ne pourront pas recevoir de télécopies. De même, si l'option autorisant les télécopies entrantes est désactivée sur un utilisateur individuel, celui-ci ne pourra pas recevoir de télécopies.
 

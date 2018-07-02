@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-13_
+_**Dernière rubrique modifiée :** 2012-10-13_
 
 Par défaut, Exchange inclut une stratégie d'adresse de messagerie qui spécifie l'alias du destinataire comme partie locale de l'adresse de messagerie et utilise le domaine accepté par défaut. La partie locale d'une adresse de messagerie correspond au nom qui apparaît devant le signe @. Cette stratégie d'adresse de messagerie s'applique à tous les utilisateurs au sein de l'organisation. Vous ne pouvez pas supprimer cette stratégie.
 

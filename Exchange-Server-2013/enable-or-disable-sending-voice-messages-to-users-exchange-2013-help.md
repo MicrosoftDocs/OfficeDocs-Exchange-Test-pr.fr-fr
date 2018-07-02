@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-12-13_
+_**Dernière rubrique modifiée :** 2012-12-13_
 
 Vous pouvez permettre aux appelants d’envoyer des messages vocaux aux utilisateurs à partir d’un standard automatique de messagerie unifiée ou les empêcher de le faire. Par défaut, cette option est activée et permet aux appelants d’envoyer des messages vocaux aux utilisateurs d’un plan de numérotation de messagerie unifiée associé au standard automatique de messagerie unifiée. Si vous désactivez cette option, le standard automatique n’invitera pas les appelants à envoyer un message vocal via une invite du système.
 

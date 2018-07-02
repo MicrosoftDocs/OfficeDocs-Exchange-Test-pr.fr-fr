@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le transfert du courrier vous permet de configurer une boîte aux lettres pour transférer les messages électroniques qu’elle reçoit vers la boîte aux lettres d’un autre utilisateur, appartenant ou non à votre organisation.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-04_
+_**Dernière rubrique modifiée :** 2015-01-04_
 
 Une approbation de fédération établit une relation d’approbation entre une organisation Microsoft Exchange 2013 et le système d’authentification Azure Active Directory, et prend en charge le partage avec d’autres organisations Exchange fédérées. La suppression d’une approbation de fédération de votre organisation Exchange locale entraîne la désactivation du partage fédéré avec d’autres organisations Exchange fédérées et avec des organisations Office 365 connectées à votre organisation dans le cadre d’un déploiement hybride. Vous devriez réfléchir attentivement aux répercussions globales d’une suppression d’approbation de fédération sur votre organisation.
 

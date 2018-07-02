@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-03-27_
+_**Dernière rubrique modifiée :** 2017-03-27_
 
 Exchange 2013 utilise plus de ressources système que les versions antérieures d'Exchange. En dimensionnant correctement votre infrastructure Exchange 2013, puis en vérifiant certaines configurations recommandées pour les composants liés à Exchange dans cette infrastructure, vous pouvez créer les conditions d'un déploiement aux performances optimales.
 

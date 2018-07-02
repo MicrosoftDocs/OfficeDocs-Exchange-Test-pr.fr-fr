@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**Dernière rubrique modifiée :**2017-02-28_
+_**Dernière rubrique modifiée :** 2017-02-28_
 
 Cette rubrique explique comment mettre à jour le certificat de fédération auto-signé qui est utilisé dans une approbation de fédération :
 

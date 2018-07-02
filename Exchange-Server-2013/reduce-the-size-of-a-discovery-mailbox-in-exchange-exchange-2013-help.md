@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Vous avez une boîte aux lettres de découverte qui a dépassé la limite de 50 Go ? Vous pouvez résoudre ce problème en créant des boîtes aux lettres de découverte et en copiant les résultats de la recherche de la grande boîte aux lettres de découverte dans les nouvelles.
 

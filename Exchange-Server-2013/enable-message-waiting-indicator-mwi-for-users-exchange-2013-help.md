@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Vous pouvez activer ou désactiver la fonction Indicateur d'attente des messages pour les utilisateurs associés à une stratégie de boîte aux lettres de messagerie unifiée. L'Indicateur de message en attente est une fonctionnalité de la plupart des systèmes de messagerie vocale hérités. Dans sa forme la plus courante, il allume un voyant sur téléphone de l'abonné à la messagerie vocale pour indiquer la présence d'un nouveau message vocal. L'indicateur d'attente des messages peut également envoyer un SMS sur le téléphone mobile d'un utilisateur à extension messagerie unifiée. Le paramètre par défaut est Activé.
 

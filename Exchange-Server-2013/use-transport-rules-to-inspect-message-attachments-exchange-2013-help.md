@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-27_
+_**Dernière rubrique modifiée :** 2015-03-27_
 
 Vous pouvez analyser des pièces jointes des messages électroniques au sein de votre organisation en définissant des règles de transport. Exchange fournit des règles de transport qui offrent la possibilité d’examiner les pièces jointes des messages électroniques dans le cadre de vos exigences en matière de sécurité et de conformité de la messagerie. Lorsque vous analysez les pièces jointes, vous pouvez agir sur les messages en fonction du contenu ou des caractéristiques de ces pièces jointes. Voici quelques tâches concernant les pièces jointes que vous pouvez effectuer à l’aide des règles de transport :
 

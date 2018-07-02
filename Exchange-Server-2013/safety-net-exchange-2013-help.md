@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Dans Microsoft Exchange Server 2013, le principal mécanisme de haute disponibilité des boîtes aux lettres est le groupe de disponibilité de base de données (DAG). Pour plus d'informations sur les groupes de disponibilité de base de données, consultez la rubrique [Gestion de groupes de disponibilité de base de données](managing-database-availability-groups-exchange-2013-help.md). La *benne de transport* a été introduite pour la première fois dans Exchange 2007 et a été ultérieurement améliorée dans Exchange 2010 pour fournir des copies redondantes des messages qui ont été remis aux boîtes aux lettres des groupes de disponibilité de base de données. Dans Exchange 2010, la benne de transport permettait de se protéger contre une perte de données en tenant à jour une file d'attente de messages remis qui n'avaient pas été répliqués vers les copies de base de données de boîtes aux lettres passives du groupe de disponibilité de base de données. Lorsqu'une défaillance de la base de données de boîtes aux lettres ou du serveur exigeait la promotion d'une copie obsolète de la base de données de boîtes aux lettres, les messages contenus dans la benne de transport étaient automatiquement renvoyés à la nouvelle copie active de la base de données de boîtes aux lettres.
 

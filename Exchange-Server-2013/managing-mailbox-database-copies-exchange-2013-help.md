@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-08-26_
+_**Dernière rubrique modifiée :** 2016-08-26_
 
 Après avoir créé un groupe de disponibilité de base de données, l’avoir configuré et renseigné avec des membres de serveur de boîtes aux lettres, vous pouvez utiliser le Centre d’administration Exchange (CAE) ou l’environnement de ligne de commande Exchange Management Shell pour ajouter des copies de base de données de boîtes aux lettres de manière flexible et granulaire.
 

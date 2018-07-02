@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Vous pouvez configurer des règles d’informations sensibles au sein de vos stratégies de protection contre la perte de données (DLP) Microsoft Exchange afin de détecter des données très spécifiques dans les messages électroniques. Cette rubrique vous permettra de comprendre comment ces règles sont appliquées et comment les messages sont évalués. Vous pouvez éviter les interruptions de flux de travail pour les utilisateurs de la messagerie et atteindre un haut degré de précision dans les détections DLP si vous savez comment vos règles sont appliquées. Nous allons utiliser la règle relative aux informations de carte de crédit fournie par Microsoft comme exemple. Lorsque vous activez une règle de transport ou une stratégie DLP, l’agent des règles de transport Exchange compare tous les messages que les utilisateurs envoient aux ensembles de règles que vous créez.
 

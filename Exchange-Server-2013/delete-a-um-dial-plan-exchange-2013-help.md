@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-11_
+_**Dernière rubrique modifiée :** 2012-11-11_
 
 Vous pouvez supprimer un plan de numérotation de messagerie unifiée. Une fois que vous supprimez le plan de numérotation de messagerie unifiée, il ne sera plus disponible pour les passerelles IP de messagerie unifiée, les stratégies de boîte aux lettres de messagerie unifiée et les groupements de postes de messagerie unifiée. Vous ne pouvez pas supprimer un plan de numérotation de messagerie unifiée s’il est référencé par des stratégies de boîte aux lettres de messagerie unifiée, par des standards automatiques de messagerie unifiée, par des passerelles IP de messagerie unifiée ou par des groupements de postes de messagerie unifiée, ou s’il est associé à ces éléments.
 

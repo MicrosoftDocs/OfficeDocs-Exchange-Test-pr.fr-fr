@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 La compréhension des options et des besoins de stockage pour le rôle serveur de boîtes aux lettres dans Microsoft Exchange Server 2013 constitue un aspect vital de votre solution de conception de stockage de serveurs de boîtes aux lettres.
 

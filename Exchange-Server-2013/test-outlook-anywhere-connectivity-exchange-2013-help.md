@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez tester la connectivité de bout en bout d’Outlook Anywhere du client à l’aide de l’environnement de ligne de commande Exchange Management Shell ou de l’analyseur de connectivité à distance Exchange (ExRCA). Il inclut des tests de connectivité via le service de découverte automatique, la création d’un profil utilisateur et la connexion à la boîte aux lettres utilisateur. Toutes les valeurs requises sont extraites du service de découverte automatique.
 

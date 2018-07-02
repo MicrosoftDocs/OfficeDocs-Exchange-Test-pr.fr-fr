@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-01-17_
+_**Dernière rubrique modifiée :** 2013-01-17_
 
 Vous pouvez utiliser l'Afficheur des files d'attente de la Boîte à outils Exchange pour afficher les propriétés d'un message mis en file d'attente en vue de sa remise.
 

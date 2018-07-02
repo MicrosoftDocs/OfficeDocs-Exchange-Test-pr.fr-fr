@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Vous pouvez utiliser l'environnement de ligne de commande Exchange Management Shell pour afficher une liste d'agents de transport dans le pipeline de transport sur des serveurs de boîtes aux lettres et d'accès au client Microsoft Exchange Server 2013. Plus particulièrement, la cmdlet **Get-TransportPipeline** affiche des informations sur les types d'agents de transport suivants dans le pipeline de transport :
 

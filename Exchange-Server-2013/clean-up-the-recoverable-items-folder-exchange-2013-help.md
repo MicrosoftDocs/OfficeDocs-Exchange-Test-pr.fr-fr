@@ -21,9 +21,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-09-30_
+_**Dernière rubrique modifiée :** 2015-09-30_
 
 Le dossier Éléments récupérables (connu dans les versions antérieures d’Exchange sous le nom de *conteneur de dépôt*) existe pour assurer une protection en cas de suppressions accidentelles ou malveillantes et pour faciliter les tâches de détection couramment effectuées avant ou pendant un litige ou des recherches. Pour plus d’informations sur le dossier Éléments récupérables, voir [Dossier Éléments récupérables](recoverable-items-folder-exchange-2013-help.md).
 

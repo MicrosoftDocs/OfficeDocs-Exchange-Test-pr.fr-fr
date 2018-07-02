@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013 SP1_
+_**Sapplique à :** Exchange Server 2013 SP1_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Vous pouvez utiliser le CAE ou l’environnement de ligne de commande Exchange Management Shell pour désactiver ou supprimer une boîte aux lettres dans Exchange 2013. Lorsqu’une boîte aux lettres est désactivée ou supprimée, Exchange la conserve dans la base de données de boîtes aux lettres et change son état en désactivé. Les boîtes aux lettres désactivées et supprimées sont conservées dans la base de données de boîtes aux lettres jusqu’à l’expiration de la période de rétention de la boîte aux lettres supprimée, qui est de 30 jours par défaut. À l’expiration de la période de rétention, la boîte aux lettres est définitivement supprimée ou *vidée*.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-02-01_
+_**Dernière rubrique modifiée :** 2016-02-01_
 
 L’archivage inaltérable vous permet de reprendre le contrôle des données de messagerie de votre organisation en supprimant le besoin de recourir aux fichiers de magasin personnel (.pst) et en vous autorisant à répondre au besoin de rétention de messages et aux exigences relatives à la découverte électronique de votre organisation. Lorsque l’archivage est activé, les utilisateurs peuvent stocker des messages dans une boîte aux lettres d’archivage, accessible à l’aide de MicrosoftOutlook et Outlook Web App.
 

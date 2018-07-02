@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion Réinitialiser le mot de passe permet aux utilisateurs de réinitialiser leurs propres mots de passe et aux administrateurs de réinitialiser les mots de passe des utilisateurs dans une organisation.
 

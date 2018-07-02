@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server, Exchange Server 2010, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server, Exchange Server 2010, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Si le pays de résidence de votre organisation ou de certains de vos utilisateurs a modifié sa stratégie de reconnaissance de l'heure d’été, ou a modifié le décalage horaire local par rapport au temps universel coordonné (UTC), vous devez peut-être mettre à jour Microsoft Windows, Microsoft Exchange, Microsoft Outlook ou d’autres programmes pour intégrer ces modifications.
 

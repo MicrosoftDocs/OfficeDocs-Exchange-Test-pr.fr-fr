@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-09-22_
+_**Dernière rubrique modifiée :** 2012-09-22_
 
 [Création d'une stratégie de boîte aux lettres Outlook Web App](create-an-outlook-web-app-mailbox-policy-exchange-2013-help.md)
 

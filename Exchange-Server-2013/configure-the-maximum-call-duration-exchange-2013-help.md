@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-09_
+_**Dernière rubrique modifiée :** 2012-11-09_
 
 Vous pouvez spécifier le nombre maximal de minutes correspondant à la durée pendant laquelle un appel entrant peut être connecté au système sans être transféré à un numéro de poste valide avant qu’il ne soit mis fin à l’appel. Pour la plupart des organisations, cette valeur doit être définie par défaut sur:  30 minutes. Ce paramètre s’applique à tous les appels, y compris les appels entrants Outlook Voice Access, les appels vocaux internes à l’organisation, les appels vocaux transitant par les standards automatiques de messagerie unifiée et les appels de télécopie externes.
 

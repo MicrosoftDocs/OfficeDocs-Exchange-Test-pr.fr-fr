@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-11-16_
+_**Dernière rubrique modifiée :** 2014-11-16_
 
 Une charge de travail Exchange est une fonctionnalité, un protocole ou un service de serveur Exchange explicitement défini à des fins de gestion des ressources système Exchange. Chaque charge de travail Exchange consomme des ressources système telles que le processeur, des opérations de base de données de boîtes aux lettres ou des requêtes Active Directory pour exécuter les demandes des utilisateurs ou des tâches en arrière-plan. Des exemples de charge de travail Exchange sont Outlook Web App, Exchange ActiveSync, la migration de boîte aux lettres et les Assistants de boîtes aux lettres.
 

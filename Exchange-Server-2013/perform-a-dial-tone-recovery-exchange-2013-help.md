@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-06-27_
+_**Dernière rubrique modifiée :** 2014-06-27_
 
 À l'aide de la portabilité de tonalité, les utilisateurs peuvent disposer d'une boîte aux lettres temporaire pour envoyer et recevoir des messages pendant que leur boîte aux lettres est restaurée ou réparée. La boîte aux lettres temporaire peut se trouver sur le même serveur de boîtes aux lettres Exchange 2013 ou sur tout autre serveur de boîtes aux lettres Exchange 2013 de votre organisation. Le processus d'utilisation de la portabilité de tonalité est appelé « récupération de tonalité » et implique la création d'une base de données vide sur un serveur de boîtes aux lettres pour remplacer la base de données endommagée. Pour plus d'informations, consultez la rubrique [Portabilité de tonalité](dial-tone-portability-exchange-2013-help.md).
 

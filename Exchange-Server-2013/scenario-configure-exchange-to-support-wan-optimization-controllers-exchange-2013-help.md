@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-09-28_
+_**Dernière rubrique modifiée :** 2012-09-28_
 
 Dans Microsoft Exchange Server 2013, le chiffrement TLS est obligatoire pour toutes les communications SMTP entre les serveurs de boîtes aux lettres dans le service de transport. Cela augmente la sécurité globale des communications du service de transport entre les serveurs de boîtes aux lettres. Toutefois, dans certaines topologies utilisant des contrôleurs d'optimisation de réseau étendu (WOC), le chiffrement TLS du trafic SMTP peut être indésirable. Dans ce genre de scénario, vous pouvez désactiver le chiffrement TLS pour les communications du service de transport entre serveurs de boîtes aux lettres.
 

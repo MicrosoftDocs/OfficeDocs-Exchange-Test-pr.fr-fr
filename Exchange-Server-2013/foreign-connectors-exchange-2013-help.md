@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-09-25_
+_**Dernière rubrique modifiée :** 2012-09-25_
 
 Un connecteur étranger remet des messages à un serveur ou un système étranger qui n’utilise pas SMTP comme mécanisme de transport principal. On peut citer en exemple un serveur de passerelle de télécopie. Un connecteur étranger utilise un répertoire de dépôt local ou partagé pour envoyer des messages sortants au système étranger en transférant des fichiers. Les connecteurs étrangers sont créés dans le service de transport d’un serveur de boîtes aux lettres Microsoft Exchange Server 2013.
 

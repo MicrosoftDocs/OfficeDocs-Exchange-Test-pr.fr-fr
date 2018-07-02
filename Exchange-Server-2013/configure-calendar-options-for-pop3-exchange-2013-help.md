@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-27_
+_**Dernière rubrique modifiée :** 2012-11-27_
 
 L’environnement de ligne de commande Exchange Management Shell vous permet de configurer des paramètres d’accès au calendrier pour vos utilisateurs qui se connectent à leurs boîtes aux lettres via des connexions POP3. Les paramètres que vous spécifiez déterminent la manière dont vos utilisateurs POP3 peuvent accéder à leur calendrier et échanger des informations de calendrier (par exemple, organiser ou répondre à une demande de réunion) avec d’autres utilisateurs.
 

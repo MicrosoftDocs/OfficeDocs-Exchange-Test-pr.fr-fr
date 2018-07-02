@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Lors de l'installation de la messagerie unifiée, un jeu courant de fichiers audio par défaut est utilisé pour le système de messagerie vocale ainsi que les invites de menu et les messages d'accueil, et des messages d'information automatiques sont installés. Même si vous pouvez créer un standard automatique de messagerie unifiée complet ou un plan de numérotation qui utilise uniquement les messages audio par défaut, ces derniers sont trop génériques pour constituer une interface publique acceptable pour de nombreuses sociétés. Cette rubrique présente les invites système et de menu, les messages d'accueil et les messages d'information automatiques utilisés par les plans de numérotation et les standards automatiques de messagerie unifiée, ainsi que leur utilisation lorsque les appelants accèdent au système de messagerie unifiée.
 

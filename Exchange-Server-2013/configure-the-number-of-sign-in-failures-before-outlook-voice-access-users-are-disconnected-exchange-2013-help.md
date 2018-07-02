@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-09_
+_**Dernière rubrique modifiée :** 2012-11-09_
 
 Vous pouvez spécifier le nombre autorisé d’échecs de tentatives de connexion successives avant de déconnecter un appelant. La valeur de ce paramètre est comprise entre 1 et 20. La définition d’une valeur trop basse peut incommoder les utilisateurs. Pour la plupart des organisations, cette valeur doit être définie par défaut sur trois tentatives.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-07-21_
+_**Dernière rubrique modifiée :** 2015-07-21_
 
 À des fins d'équilibrage de la charge ou de déplacement de ressources plus près de leur emplacement géographique, vous pouvez avoir besoin de déplacer une boîte aux lettres de dossiers publics vers une autre base de données de boîtes aux lettres. À l'instar du déplacement d'une boîte aux lettres normale, vous utilisez les cmdlets **MoveRequest** pour déplacer une boîte aux lettres de dossiers publics. Pour plus d'informations sur le déplacement des boîtes aux lettres, consultez la rubrique [Déplacements de boîtes aux lettres dans Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md).
 

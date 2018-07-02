@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-04-26_
+_**Dernière rubrique modifiée :** 2017-04-26_
 
 La conversion d’une boîte aux lettres en une boîte aux lettres de type différent est très semblable à la procédure dans Exchange 2010. Vous devez toujours utiliser la cmdlet Set-Mailbox dans l’interpréteur de commandes pour réaliser la conversion.
 

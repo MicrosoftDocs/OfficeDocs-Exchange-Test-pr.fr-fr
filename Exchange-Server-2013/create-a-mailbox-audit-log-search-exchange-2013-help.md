@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-11_
+_**Dernière rubrique modifiée :** 2012-10-11_
 
 Vous pouvez créer une recherche asynchrone des journaux d’audit d’une ou plusieurs boîtes aux lettres et demander l’envoi des résultats de la recherche par courrier électronique, sous forme de fichier XML, aux adresses désignées.
 

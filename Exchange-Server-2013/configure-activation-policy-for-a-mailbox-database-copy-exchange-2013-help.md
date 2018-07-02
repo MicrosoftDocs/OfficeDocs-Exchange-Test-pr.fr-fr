@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-02_
+_**Dernière rubrique modifiée :** 2012-11-02_
 
 L’*activation* est le processus de transformation d’une copie passive de la base de données de boîtes aux lettres en une copie active. L’activation est exécutée automatiquement par le système dans le cadre d’une opération de basculement de base de données ou de serveur, mais peut aussi être effectuée manuellement par un administrateur dans le cadre d'une opération de switchover de base de données ou de serveur. Le blocage d’une base de données empêche cette dernière de devenir la copie active lors d’un basculement de base de données ou de serveur.
 

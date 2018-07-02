@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-13_
+_**Dernière rubrique modifiée :** 2012-10-13_
 
 La stratégie de noms de groupes pour les groupes de distribution est appliquée uniquement aux groupes créés par l'utilisateur. Lorsque d'autres administrateurs ou vous-même utilisez le Centre d'administration Exchange pour créer des groupes de distribution, la stratégie de noms de groupes est ignorée et n'est pas appliquée au nom de groupe.
 

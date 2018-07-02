@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez autoriser un utilisateur à extension messagerie unifiée à recevoir des télécopies. Par défaut, quand vous activez la messagerie unifiée pour un utilisateur, ce dernier peut recevoir des télécopies si vous activez la fonctionnalité de télécopie et si vous configurez l'URI d'un partenaire de télécopie sur la stratégie de boîte aux lettres de messagerie unifiée associée à l'utilisateur. La fonctionnalité de télécopie peut être activée ou désactivée sur les plans de numérotation de messagerie unifiée, les stratégies de boîte aux lettres de messagerie unifiée ou la boîte aux lettres d'un utilisateur à extension messagerie unifiée.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-14_
+_**Dernière rubrique modifiée :** 2013-02-14_
 
 Pour répondre aux besoins d'un individu, d'un service informatique ou de l'entreprise, vous devez désactiver ou suspendre temporairement la gestion des enregistrements de messagerie (MRM) d'un utilisateur en particulier ou d'un serveur de boîtes aux lettres. La désactivation ou la suspension de la gestion des enregistrements de messagerie peut s'avérer nécessaire dans les cas suivants :
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Vous pouvez reconnaître un message de notification d’état de remise (DSN) personnalisé à partir de sa syntaxe. L’identité est le GUID du message DSN personnalisé ou une chaîne composée des valeurs suivantes :
 

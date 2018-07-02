@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le programme d’installation de Microsoft Exchange Server 2013 crée par défaut une boîte aux lettres de découverte. Dans Exchange Online, une boîte aux lettres de découverte est également créée par défaut. Les boîtes aux lettres de découverte servent de boîtes aux lettres cibles pour les recherches [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md) dans le Centre d’administration Exchange (CAE). Vous pouvez créer des boîtes aux lettres de découverte supplémentaires si nécessaire. Une fois que vous avez créé une boîte aux lettres de découverte, vous devez attribuer des autorisations d’accès total aux utilisateurs concernés afin qu’ils puissent accéder aux résultats de recherche eDiscovery (découverte électronique) qui sont copiés dans la boîte aux lettres de découverte.
 

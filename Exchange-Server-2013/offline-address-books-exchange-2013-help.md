@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2010, Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2010, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-11-16_
+_**Dernière rubrique modifiée :** 2014-11-16_
 
 Un carnet d’adresses en mode hors connexion est une copie d’un ensemble de listes d’adresses téléchargé pour permettre à un utilisateur de Microsoft Outlook d’accéder au carnet d’adresses, tout en étant déconnecté du serveur. Microsoft Exchange génère de nouveaux fichiers de carnet d’adresses en mode hors connexion, les compresse, puis les place dans un partage local. Vous pouvez déterminer quelles listes d’adresses sont rendues accessibles aux utilisateurs travaillant hors connexion et configurer également la manière dont les carnets d’adresses sont répartis.
 

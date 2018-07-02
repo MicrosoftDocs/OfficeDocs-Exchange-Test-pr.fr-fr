@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2010, Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2010, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-04-01_
+_**Dernière rubrique modifiée :** 2018-04-01_
 
 **Résumé** : Cet article décrit comment Exchange ActiveSync vous permet de gérer des appareils mobiles avec Outlook pour iOS et Android dans votre organisation Exchange locale.
 

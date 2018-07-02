@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Project Server 2013_
+_**Sapplique à :** Exchange Server 2013, Project Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 L'indicateur d'intégrité du Panneau de configuration Exchange (ECP) surveille l'intégrité globale du Centre d'administration Exchange (CAE) et du service de paramètres utilisateur d'Outlook Web App (OWA). L'indicateur d'intégrité du Panneau de configuration Exchange est étroitement lié au suivant :
 

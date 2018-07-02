@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-03-27_
+_**Dernière rubrique modifiée :** 2017-03-27_
 
 Les dossiers publics sont conçus pour assurer un accès partagé et offrir une manière simple et efficace de collecter, d'organiser et de partager des informations avec d'autres personnes de votre groupe de travail ou de votre organisation. Les dossiers publics aident à organiser un contenu sous la forme d’une hiérarchie profonde, facile à parcourir. Les utilisateurs peuvent voir la hiérarchie complète dans Outlook, ce qui leur permet de parcourir aisément le contenu qui les intéresse.
 

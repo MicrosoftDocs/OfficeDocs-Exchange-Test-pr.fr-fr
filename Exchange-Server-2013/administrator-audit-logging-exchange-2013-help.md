@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-03-05_
+_**Dernière rubrique modifiée :** 2018-03-05_
 
 Vous pouvez utiliser l'enregistrement d'audit administrateur dans Microsoft Exchange Server 2013 pour enregistrer toutes les modifications apportées par un utilisateur ou un administrateur de votre organisation. En conservant un journal des modifications, vous pouvez suivre les modifications jusqu'à la personne qui les a effectuées, renforcer vos journaux de modifications avec des enregistrements détaillés de la modification telle qu'elle a été mise en place, vous conformer aux exigences et demandes réglementaires sur les découvertes et bien plus.
 

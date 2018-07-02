@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-01_
+_**Dernière rubrique modifiée :** 2012-11-01_
 
 L'activation de la copie d'une base de données de boîtes aux lettres consiste à désigner une copie passive spécifique comme nouvelle copie active d'une base de données de boîtes aux lettres. Ce processus est parfois appelé *basculement de base de données*. Un basculement de base de données implique le démontage de la base de données actuellement active et le montage de la copie de la base de données sur le serveur spécifié en tant que nouvelle copie de base de données de boîtes aux lettres active. La copie de la base de données qui va devenir la base de données de boîtes aux lettres active doit être intègre et opérationnelle.
 

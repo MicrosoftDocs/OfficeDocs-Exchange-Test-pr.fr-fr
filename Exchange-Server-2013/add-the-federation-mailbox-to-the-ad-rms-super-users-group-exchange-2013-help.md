@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Pour les fonctionnalités suivantes de Microsoft Exchange Server 2013 gestion des droits relatifs à l’Information (IRM) est activée, vous devez ajouter la boîte aux lettres de fédération (une boîte aux lettres système créé par Exchange 2013 le programme d’installation) pour le groupe de super utilisateurs sur un cluster des [Services AD RMS (Active Directory Rights Management Services) (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx) de votre organisation :
 

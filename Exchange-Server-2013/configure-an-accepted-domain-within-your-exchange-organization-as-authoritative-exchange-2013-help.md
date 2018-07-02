@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-02-17_
+_**Dernière rubrique modifiée :** 2014-02-17_
 
 Si un domaine appartenant à votre organisation héberge des boîtes aux lettres pour tous les destinataires dans un espace de noms SMTP, ce domaine est considéré comme faisant autorité. Par défaut, un domaine accepté est configuré comme faisant autorité pour l’organisation Exchange. Si votre organisation dispose de plusieurs espaces de noms SMTP, vous pouvez configurer plusieurs domaines acceptés faisant autorité.
 

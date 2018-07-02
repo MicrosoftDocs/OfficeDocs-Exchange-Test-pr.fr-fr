@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-07-07_
+_**Dernière rubrique modifiée :** 2015-07-07_
 
 **Résumé** : Utilisez le CAE ou Shell pour définir des quotas de stockage pour des boîtes aux lettres spécifiques.
 

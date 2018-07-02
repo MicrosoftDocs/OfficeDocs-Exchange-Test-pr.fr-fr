@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-29_
+_**Dernière rubrique modifiée :** 2012-11-29_
 
 Le Centre d’administration Exchange ou l’environnement de ligne de commande Exchange Management Shell vous permet d’appliquer des restrictions sur la manière dont les messages sont remis à des destinataires individuels. Les restrictions de remise de messages sont utiles pour établir qui peut envoyer des messages aux utilisateurs de votre organisation. Par exemple, vous pouvez configurer une boîte aux lettres pour accepter ou refuser des messages envoyés par un utilisateur spécifique ou pour accepter des messages provenant uniquement des utilisateurs de votre organisation.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-06-11_
+_**Dernière rubrique modifiée :** 2013-06-11_
 
 Lorsque vous intégrez Microsoft Lync Server à la messagerie unifiée Exchange, vous devez exécuter le script ExchUcUtil.ps1 dans l’environnement Shell. Le script ExchUcUtil.ps1 effectue les opérations suivantes :
 

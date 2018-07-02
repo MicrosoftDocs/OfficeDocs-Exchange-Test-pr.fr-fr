@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-04-16_
+_**Dernière rubrique modifiée :** 2018-04-16_
 
 Bienvenue dans Microsoft Exchange Server 2013 \! Cette rubrique contient des informations importantes à connaître afin de déployer Exchange 2013. Veuillez lire entièrement cette rubrique avant de commencer votre déploiement.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 La messagerie unifiée permet non seulement aux utilisateurs d’accéder à la messagerie vocale, mais également de créer un ou plusieurs standards automatiques de messagerie unifiée en fonction des besoins de l’organisation. Les standards automatiques de messagerie unifiée permettent de créer un système de menus vocal pour une organisation, qui laisse les appelants internes et externes localiser, passer ou transférer des appels à des utilisateurs ou des services d’une organisation.
 

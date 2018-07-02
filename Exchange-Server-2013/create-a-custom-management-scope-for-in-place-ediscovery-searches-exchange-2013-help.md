@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-21_
+_**Dernière rubrique modifiée :** 2015-01-21_
 
 Vous pouvez utiliser une étendue de gestion personnalisée pour permettre à des personnes ou à des groupes spécifiques d'utiliser la découverte électronique sur place pour rechercher un sous-ensemble de boîtes aux lettres dans votre organisation Exchange 2013 ou Exchange Online. Par exemple, vous pouvez permettre à un gestionnaire de découverte de rechercher uniquement les boîtes aux lettres des utilisateurs dans un emplacement ou un service spécifique. Pour cela, vous pouvez créer une étendue de gestion personnalisée. Cette étendue de gestion personnalisée utilise un filtre de destinataire pour contrôler les boîtes aux lettres qui peuvent être recherchées. Les étendues de filtre de destinataire utilisent des filtres pour cibler des destinataires spécifiques en fonction du type de destinataire ou d'autres propriétés de destinataire.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-06_
+_**Dernière rubrique modifiée :** 2013-02-06_
 
 Les informations d'intégrité ActiveSync.Protocol surveillent l'intégrité globale du protocole des communications Exchange ActiveSync sur vos serveurs de boîtes aux lettres. Si vous recevez une alerte signalant que les informations d'intégrité ActiveSync.Protocol ne sont pas bonnes, cela indique qu'un problème affecte peut-être les composants ActiveSync sur le serveur de boîtes aux lettres mentionné dans l'alerte.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion `View-Only Recipients` permet aux administrateurs d‘afficher la configuration des destinataires, comme les boîtes aux lettres, les utilisateurs de messagerie, les contacts de messagerie, les groupes de distribution et les groupes de distribution dynamique.
 

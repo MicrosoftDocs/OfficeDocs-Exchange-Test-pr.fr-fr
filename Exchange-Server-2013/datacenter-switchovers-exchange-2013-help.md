@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013 SP1_
+_**Sapplique à :** Exchange Server 2013 SP1_
 
-_**Dernière rubrique modifiée :**2016-03-17_
+_**Dernière rubrique modifiée :** 2016-03-17_
 
 Dans une configuration de résilience de site, la récupération automatique suite à une défaillance au niveau du site peut se produire dans un DAG, ce qui permet au système de messagerie de conserver un état fonctionnel. Cette configuration nécessite au moins trois emplacements, car elle nécessite le déploiement de membres du DAG dans deux emplacements et le déploiement du serveur témoin du DAG dans un troisième emplacement.
 

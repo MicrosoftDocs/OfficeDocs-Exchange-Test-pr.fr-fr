@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Microsoft Exchange Server 2010 et Exchange Server 2007 disposent de plusieurs rôles serveur : accès au client, boîte aux lettres, transport Hub, messagerie unifiée et transport Edge. Avec Exchange Server 2013, nous avons réduit le nombre de rôles serveur, qui étaient cinq et sont désormais trois : accès au client, boîte aux lettres et transport Edge. La messagerie unifiée est maintenant considérée comme un composant ou une sous-fonction des fonctionnalités vocales proposées dans Exchange 2013. (Pour plus de détails sur les modifications, voir la section « Architecture Exchange 2013 » dans [Nouveautés d'Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md).)
 

@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-13_
+_**Dernière rubrique modifiée :** 2015-04-13_
 
 Les domaines distants sont des domaines SMTP externes à votre organisation Microsoft Exchange. Vous pouvez créer des entrées de domaine distant pour définir les paramètres des messages transférés entre votre organisation Exchange et des domaines externes spécifiques. Les paramètres de l'entrée de domaine distant pour un domaine externe spécifique remplacent les paramètres du domaine distant par défaut qui s'appliquent normalement à tous les destinataires externes. Les paramètres du domaine distant s'appliquent à l'ensemble de l'organisation Exchange.
 

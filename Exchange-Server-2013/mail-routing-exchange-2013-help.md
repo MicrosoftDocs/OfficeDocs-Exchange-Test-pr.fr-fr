@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 La principale tâche du service de transport qui est présent sur tous les serveurs de boîtes aux lettres de votre organisation Microsoft Exchange Server 2013 de router les messages provenant d'utilisateurs et de sources externes vers leurs destinations finales. Les décisions de routage sont prises lors de la catégorisation des messages. Le catégoriseur est un composant du service de transport sur un serveur de boîtes aux lettres, qui traite tous les messages entrants et détermine l'action à leur appliquer en fonction des informations relatives à leurs destinations.
 

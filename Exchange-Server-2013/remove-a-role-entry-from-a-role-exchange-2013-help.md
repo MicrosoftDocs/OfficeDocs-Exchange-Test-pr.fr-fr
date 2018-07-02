@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Les entrées de rôle d'un rôle de gestion déterminent les cmdlets et les paramètres qui sont disponibles pour un rôle de gestion. Si vous supprimez des entrées de rôles ou des paramètres d'une entrée de rôle, vous pouvez limiter les actions que les utilisateurs associés au rôle de gestion peuvent effectuer. Pour plus d’informations sur les entrées de rôles de gestion dans Microsoft Exchange Server 2013, voir [Présentation des rôles de gestion](understanding-management-roles-exchange-2013-help.md).
 

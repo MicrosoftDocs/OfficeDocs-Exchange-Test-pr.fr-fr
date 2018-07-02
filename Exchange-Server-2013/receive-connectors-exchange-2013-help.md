@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Les connecteurs de réception contrôlent le flux de messages entrants à destination de votre organisation Exchange. Ils sont configurés sur des ordinateurs exécutant Microsoft Exchange Server 2013 avec le service de transport ou dans le service frontal d’un serveur d’accès au client. Ils peuvent être créés dans le Centre d’administration Exchange ou l’environnement de ligne de commande Exchange Management Shell.
 

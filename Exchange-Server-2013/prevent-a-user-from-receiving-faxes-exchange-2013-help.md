@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Empêcher un utilisateur de messagerie unifiée (MU) de recevoir des télécopies. Découvrez comment modifier les paramètres de télécopie pour les utilisateurs de MU nouveaux et existants.
 

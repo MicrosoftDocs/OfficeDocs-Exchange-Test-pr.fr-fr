@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-09-29_
+_**Dernière rubrique modifiée :** 2016-09-29_
 
 Les serveurs de transport Edge réduisent la surface d’attaque en traitant tout le flux de messagerie Internet, ce qui fournit des services d’hôte actif et de relais SMTP (Simple Mail Transfer Protocol) pour votre organisation Exchange. Les agents exécutés sur le serveur de transport Edge fournissent des couches supplémentaires de sécurité et de protection des messages. Ces agents fournissent une protection contre le courrier indésirable et appliquent des règles de transport pour contrôler le flux de messagerie.
 

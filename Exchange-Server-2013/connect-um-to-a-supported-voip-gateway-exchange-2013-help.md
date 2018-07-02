@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-19_
+_**Dernière rubrique modifiée :** 2013-04-19_
 
 Lorsque vous installez une messagerie unifiée, vous devez configurer les passerelles VoIP (Voice over IP), les PBX IP, les PBX compatibles SIP ou les contrôleurs de frontière de session (SBC) sur votre réseau pour communiquer avec les serveurs d'accès au client qui exécutent le service routeur des appels de messagerie unifiée Microsoft Exchange et les serveurs de boîtes aux lettres qui exécutent le service de messagerie unifiée de votre organisation Exchange. Vous devez également configurer des serveurs d'accès au client et de boîtes aux lettres pour communiquer avec des passerelles VoIP, des PBX IP, des PBX compatibles SIP ou des contrôleurs de frontière de session (SBC).
 

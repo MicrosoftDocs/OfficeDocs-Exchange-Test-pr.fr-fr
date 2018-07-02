@@ -13,23 +13,23 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-11-16_
+_**Dernière rubrique modifiée :** 2017-11-16_
 
 Vous pouvez utiliser un fichier CSV pour migrer en bloc un nombre important de boîtes aux lettres d’utilisateurs. Vous pouvez spécifier un fichier CSV lorsque vous utilisez le Centre d’administration Exchange (CAE) ou la cmdlet **New-MigrationBatch** dans l’Environnement de ligne de commande Exchange Management Shell pour créer un lot de migration. L’utilisation d’un fichier CSV pour spécifier plusieurs utilisateurs à migrer dans un lot de migration est prise en charge dans les scénarios de migration suivants :
 
   - **Déplacements à l'intérieur d'organisations Exchange locales**
     
-      - **Déplacement local :** Un déplacement local est l'opération par laquelle vous déplacez des boîtes aux lettres d'une base de données de boîtes aux lettres vers une autre. Un déplacement local se produit au sein d'une forêt unique.
+      - **Déplacement local :**  Un déplacement local est l'opération par laquelle vous déplacez des boîtes aux lettres d'une base de données de boîtes aux lettres vers une autre. Un déplacement local se produit au sein d'une forêt unique.
     
-      - **Déplacement d'entreprise inter-forêts :** Un déplacement d'entreprise inter-forêts consiste à déplacer des boîtes aux lettres vers une autre forêt. Un déplacement inter-forêts peut être entrepris soit à partir de la forêt cible qui est celle vers laquelle vous voulez déplacer les boîtes aux lettres, soit à partir de la forêt source, qui est celle hébergeant actuellement les boîtes aux lettres.
+      - **Déplacement d'entreprise inter-forêts :**  Un déplacement d'entreprise inter-forêts consiste à déplacer des boîtes aux lettres vers une autre forêt. Un déplacement inter-forêts peut être entrepris soit à partir de la forêt cible qui est celle vers laquelle vous voulez déplacer les boîtes aux lettres, soit à partir de la forêt source, qui est celle hébergeant actuellement les boîtes aux lettres.
 
   - **Embarquement et débarquement Exchange Online**
     
-      - **Migration de déplacement à distance par embarquement :** Dans un déploiement Exchange hybride, vous pouvez déplacer des boîtes aux lettres à partir d'une organisation Exchange locale vers Exchange Online. Cette opération est également appelée migration de déplacement à distance par *embarquement* parce qu'elle consiste à embarquer des boîtes aux lettres dans Exchange Online.
+      - **Migration de déplacement à distance par embarquement :**  Dans un déploiement Exchange hybride, vous pouvez déplacer des boîtes aux lettres à partir d'une organisation Exchange locale vers Exchange Online. Cette opération est également appelée migration de déplacement à distance par *embarquement* parce qu'elle consiste à embarquer des boîtes aux lettres dans Exchange Online.
     
-      - **Migration de déplacement à distance par débarquement :** Vous pouvez également opérer une migration de déplacement à distance par *débarquement*, qui consiste à migrer des boîtes aux lettres Exchange Online vers votre organisation Exchange locale.
+      - **Migration de déplacement à distance par débarquement :**  Vous pouvez également opérer une migration de déplacement à distance par *débarquement*, qui consiste à migrer des boîtes aux lettres Exchange Online vers votre organisation Exchange locale.
         
         <table>
         <thead>
@@ -44,9 +44,9 @@ Vous pouvez utiliser un fichier CSV pour migrer en bloc un nombre important de b
         </tbody>
         </table>
     
-      - **Migration Exchange intermédiaire :**  Vous pouvez également migrer un sous-ensemble de boîtes aux lettres à partir d'une organisation Exchange locale vers Exchange Online. Il s'agit d'un autre type de migration par embarquement. Une migration Exchange intermédiaire permet de migrer uniquement des boîtes aux lettres Exchange 2003 et Exchange 2007. Une migration intermédiaire ne permet pas de migrer des boîtes aux lettres Exchange 2010 et Exchange 2013. Avant d'exécuter une migration intermédiaire, vous devez utiliser une synchronisation d'annuaires ou une autre méthode pour mettre en service les utilisateurs du courrier électronique au sein de votre organisation Exchange Online.
+      - **Migration Exchange intermédiaire :**   Vous pouvez également migrer un sous-ensemble de boîtes aux lettres à partir d'une organisation Exchange locale vers Exchange Online. Il s'agit d'un autre type de migration par embarquement. Une migration Exchange intermédiaire permet de migrer uniquement des boîtes aux lettres Exchange 2003 et Exchange 2007. Une migration intermédiaire ne permet pas de migrer des boîtes aux lettres Exchange 2010 et Exchange 2013. Avant d'exécuter une migration intermédiaire, vous devez utiliser une synchronisation d'annuaires ou une autre méthode pour mettre en service les utilisateurs du courrier électronique au sein de votre organisation Exchange Online.
     
-      - **Migration IMAP :** Ce type de migration par embarquement migre des données de boîtes aux lettres à partir d'un serveur IMAP (y compris Exchange) vers Exchange Online. Pour une migration IMAP, vous devez mettre en service des boîtes aux lettres dans Exchange Online avant de migrer leurs données.
+      - **Migration IMAP :**  Ce type de migration par embarquement migre des données de boîtes aux lettres à partir d'un serveur IMAP (y compris Exchange) vers Exchange Online. Pour une migration IMAP, vous devez mettre en service des boîtes aux lettres dans Exchange Online avant de migrer leurs données.
 
 <table>
 <thead>

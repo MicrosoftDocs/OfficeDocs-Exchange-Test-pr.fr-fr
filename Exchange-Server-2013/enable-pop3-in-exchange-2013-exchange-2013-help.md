@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-03-28_
+_**Dernière rubrique modifiée :** 2017-03-28_
 
 Découvrez comment activer la connectivité client POP3 dans Exchange 2016 à l’aide de Microsoft Management Console (MMC) ou d’Environnement de ligne de commande Exchange Management Shell (EMS).
 

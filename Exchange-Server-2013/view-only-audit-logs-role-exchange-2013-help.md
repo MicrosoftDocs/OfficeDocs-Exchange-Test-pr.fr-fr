@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion `View-Only Audit Logs` permet aux administrateurs et aux utilisateurs experts d’effectuer des recherches dans les journaux d’audit de l’administrateur d’une organisation.
 

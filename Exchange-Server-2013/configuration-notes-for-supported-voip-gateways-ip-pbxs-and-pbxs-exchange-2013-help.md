@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Cette page contient des liens vers des remarques de configuration qui ont été créées et testées par Microsoft ou un partenaire fournisseur de passerelle VoIP. Quand Microsoft ou un partenaire déploie la messagerie unifiée avec une nouvelle configuration de passerelle VoIP, de PBX ou de PBX IP, les conditions requises et les paramètres de configuration sont documentés. Ces informations servent à créer des remarques sur la configuration.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Cette rubrique décrit les autorisations nécessaires pour configurer une organisation Microsoft Exchange Server 2013. Les groupes de sécurité universels qui sont associés aux groupes de rôles de gestion, et autres groupes et principaux de sécurité Windows sont ajoutés aux listes de contrôle d'accès (ACL) de divers objets Active Directory. Les listes de contrôle d'accès déterminent les opérations qui peuvent être réalisées sur chaque objet. En comprenant les autorisations accordées à chaque groupe de rôles, groupe de sécurité ou principal de sécurité, vous pouvez déterminer les autorisations minimales requises pour installer Exchange 2013.
 

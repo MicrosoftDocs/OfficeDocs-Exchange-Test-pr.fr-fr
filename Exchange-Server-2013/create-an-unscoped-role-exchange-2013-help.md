@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-06-09_
+_**Dernière rubrique modifiée :** 2014-06-09_
 
 Un rôle de gestion non délimité peut être utilisé pour fournir aux administrateurs et aux utilisateurs spécialistes l’accès aux scripts Windows PowerShell et aux cmdlets non Exchange. Vous pouvez soit créer un rôle de niveau supérieur non délimité et ajouter des scripts ou des cmdlets non Exchange à ce rôle, ou bien créer un rôle basé sur un rôle de niveau supérieur existant non délimité. Après la création et la personnalisation d’un rôle non délimité, ce dernier peut être attribué à des groupes de rôles de gestion, des utilisateurs et des groupes universels de sécurité (USG). Les rôles non délimités ne peuvent pas être attribués à des stratégies d’attribution de rôle de gestion. Pour plus d’informations sur les rôles non délimités, voir [Présentation des rôles de gestion](understanding-management-roles-exchange-2013-help.md).
 

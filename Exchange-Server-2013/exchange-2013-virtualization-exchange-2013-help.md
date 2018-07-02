@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-08-08_
+_**Dernière rubrique modifiée :** 2017-08-08_
 
 Vous pouvez déployer Microsoft Exchange Server 2013 dans un environnement virtualisé. Cette rubrique propose une vue d’ensemble des scénarios pris en charge pour le déploiement d’Exchange 2013 sur un logiciel de virtualisation de matériel.
 

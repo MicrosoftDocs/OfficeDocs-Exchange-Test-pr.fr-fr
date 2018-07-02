@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 L’Assistant de déploiement du serveur Exchange est un outil web qui vous aide au cours de votre déploiement de Microsoft Exchange Server 2016 et Exchange Server 2013. L’Assistant de déploiement vous pose quelques questions sur votre environnement actuel, puis génère une liste de contrôle et des procédures personnalisées qui contribuent à simplifier le déploiement. Pour accéder à l’Assistant de déploiement, consultez la rubrique [Assistant de déploiement Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=277105).
 

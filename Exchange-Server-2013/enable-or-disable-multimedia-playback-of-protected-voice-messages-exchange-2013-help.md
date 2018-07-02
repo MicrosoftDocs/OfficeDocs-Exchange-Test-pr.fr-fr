@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez obliger les utilisateurs qui reçoivent des messages vocaux protégés à recourir à la fonctionnalité Émettre au téléphone pour consulter leurs messages. Sinon, au cas où le logiciel client ne prend pas en charge la gestion des droits, les utilisateurs doivent utiliser Outlook Voice Access.
 

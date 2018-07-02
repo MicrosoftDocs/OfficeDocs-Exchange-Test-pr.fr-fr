@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-14_
+_**Dernière rubrique modifiée :** 2012-11-14_
 
 Lorsque vous activez un utilisateur pour la messagerie unifiée et l’associez à un plan de numérotation SIP URI, deux adresses proxy EUM sont créées : l’une contient le numéro de poste de l’utilisateur et l’autre, une adresse SIP pour l’utilisateur. Le numéro de poste est utilisé lorsque l’utilisateur appelle un numéro Outlook Voice Access.
 

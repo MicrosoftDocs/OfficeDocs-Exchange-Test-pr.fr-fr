@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 L’Agent d’analyse de protocole fournit la réputation de l'expéditeur. La réputation de l'expéditeur bloque les messages en fonction de diverses caractéristiques de l'expéditeur. La fonctionnalité de réputation de l'expéditeur s'appuie sur des données conservées relatives à l'expéditeur pour déterminer, le cas échéant, l'action à appliquer à un message entrant.
 

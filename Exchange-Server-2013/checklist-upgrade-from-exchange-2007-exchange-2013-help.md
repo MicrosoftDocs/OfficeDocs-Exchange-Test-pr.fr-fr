@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Utilisez cette liste de contrôle pour effectuer une mise à niveau de Microsoft Exchange Server 2007 vers Exchange Server 2013. Avant de commencer avec cette liste de contrôle, assurez-vous d'avoir bien assimilé les concepts présentés dans :
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-04-02_
+_**Dernière rubrique modifiée :** 2018-04-02_
 
 **Résumé** : Les articles suivants contiennent des informations destinées aux administrateurs sur l’architecture et la sécurité d’Outlook pour iOS et Android dans un environnement local Exchange 2013.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 La *limitation des messages* désigne un ensemble de limitations défini d'après le nombre de messages et de connexions qu'un ordinateur Microsoft Exchange Server 2013 peut traiter. Ces limites évitent l’épuisement accidentel ou intentionnel des ressources système sur le serveur Exchange.
 

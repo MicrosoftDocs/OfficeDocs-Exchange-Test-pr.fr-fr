@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-30_
+_**Dernière rubrique modifiée :** 2013-04-30_
 
 Après avoir créé un standard automatique de messagerie unifiée, vous pouvez afficher ou configurer plusieurs paramètres. Par exemple, vous pouvez ajouter, supprimer et modifier les numéros de poste associés au standard automatique. Vous pouvez également activer ou désactiver la reconnaissance vocale du standard automatique et modifier les messages d'accueil utilisés pendant et en dehors des heures d'ouverture.
 

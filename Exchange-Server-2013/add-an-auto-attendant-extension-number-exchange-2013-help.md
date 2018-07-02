@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-05_
+_**Dernière rubrique modifiée :** 2012-11-05_
 
 Vous pouvez configurer un numéro de poste ou plusieurs numéros de poste sur un standard automatique de messagerie unifiée (MU). Lorsque vous ajoutez un numéro de poste à un standard automatique de messagerie unifiée, ce numéro utilisable par les appelants à appeler dans le standard automatique. Également, vous devrez peut-être ajouter des numéros de poste, car il existe plus d'un numéro de poste que les appelants peuvent utiliser pour accéder à un standard automatique. Par défaut, aucun des numéros de poste ne sont configurées lorsque vous créez un standard automatique.
 

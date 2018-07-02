@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Certains systèmes téléphoniques PBX (Private Branch eXchange) et PBX IP existants permettent à l'appelant de marquer un message vocal comme privé, empêchant ainsi le destinataire de le transférer à un tiers. Dans les systèmes de messagerie vocale intégrés, il est possible d'accéder à un message vocal de plusieurs façons, ce qui rend délicate la tâche d'empêcher que les messages marqués comme étant privés soient écoutés par un tiers à qui ils ne sont pas destinés.
 

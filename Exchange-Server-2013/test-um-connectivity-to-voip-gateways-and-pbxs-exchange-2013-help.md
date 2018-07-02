@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2014-09-17_
+_**Dernière rubrique modifiée :** 2014-09-17_
 
 Vous pouvez tester le fonctionnement de la messagerie unifiée (MU) et l’équipement téléphonique connecté associé. Quand vous exécutez la procédure suivante, le serveur de boîtes aux lettres et d’accès au client teste le fonctionnement de bout en bout complet du système de messagerie vocale. Cela inclut les composants téléphoniques connectés aux serveurs de boîtes aux lettres et d’accès au client, notamment les passerelles VoIP, les PBX (autocommutateurs privés), les PBX IP et le câblage.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-16_
+_**Dernière rubrique modifiée :** 2012-11-16_
 
 Le composant logiciel enfichable Services de la console de gestion (MMC) Microsoft ou cmd.exe à l'invite de commandes vous permet d'arrêter le service routeur des appels de messagerie unifiée MicrosoftExchange sur un serveur d'accès au client. Dans certaines circonstances, vous êtes amené à arrêter ce service, par exemple, si vous devez mettre le serveur d'accès au client hors connexion. Lorsque vous arrêtez le service routeur des appels de messagerie unifiée MicrosoftExchange, le serveur d'accès au client n'est pas en mesure d'accepter ni de traiter des appels entrants.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 La journalisation de table de routage enregistre régulièrement un instantané de la table de routage utilisée par Microsoft Exchange Server 2013 pour acheminer les messages vers leurs destinations.
 

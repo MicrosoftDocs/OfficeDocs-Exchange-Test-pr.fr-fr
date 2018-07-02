@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-08-22_
+_**Dernière rubrique modifiée :** 2016-08-22_
 
 **Résumé** : Utilisez ces procédures pour permettre aux utilisateurs OWA de votre organisation Exchange 2013 de partager des informations de disponibilité du calendrier avec des organisations externes.
 

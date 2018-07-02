@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Pour déployer correctement une messagerie unifiée, vous devez bien connaître les concepts de téléphonie de base et les composants téléphoniques. Une fois les principes de téléphonie acquis, vous pouvez intégrer la messagerie unifiée à votre organisation Exchange. Les concepts de base et les composants sont les suivants :
 

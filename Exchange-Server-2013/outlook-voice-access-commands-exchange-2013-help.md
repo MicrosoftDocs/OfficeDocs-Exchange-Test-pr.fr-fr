@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Outlook Voice Access permet aux utilisateurs à extension messagerie unifiée d'accéder à leur boîte aux lettres à l'aide d'un téléphone analogique, numérique ou mobile. Grâce au système de menus d'Outlook Voice Access, les utilisateurs à extension messagerie unifiée peuvent lire des messages électroniques, écouter des messages vocaux, interagir avec leur calendrier Outlook, accéder à leurs contacts personnels et gérer les options personnelles, par exemple, configurer leur code confidentiel Outlook Voice Access ou enregistrer des messages vocaux. Cette rubrique décrit la liste des commandes Outlook Voice Access et la manière dont les utilisateurs peuvent s'en servir lorsqu'ils accèdent à leur boîte aux lettres en appelant un numéro Outlook Voice Access.
 

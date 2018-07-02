@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Comme dans les versions précédentes d'Exchange, vous pouvez utiliser l'environnement de ligne de commande Exchange Management Shell dans Microsoft Exchange Server 2013 pour consulter des informations sur les files d'attente et les messages qu'elles contiennent, ainsi que pour effectuer des actions de gestion sur ces éléments. Dans Exchange 2013, il existe des files d'attente sur les serveurs de boîtes aux lettres et les serveurs de transport Edge. Dans cette rubrique, nous appelons ces serveurs *serveurs de transport*.
 

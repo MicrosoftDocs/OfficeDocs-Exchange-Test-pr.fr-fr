@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 La messagerie unifiée dans Microsoft Exchange Server 2013 inclut le même ensemble de fonctionnalités que dans Microsoft Exchange 2010 et Microsoft Exchange 2007, avec cependant quelques améliorations et modifications architecturales. Notez que la messagerie unifiée n’est plus un rôle serveur distinct. Il s'agit désormais d'un composant des fonctionnalités liées à la voix offertes dans Exchange 2013.
 

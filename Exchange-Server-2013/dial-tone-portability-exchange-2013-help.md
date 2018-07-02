@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-01-28_
+_**Dernière rubrique modifiée :** 2013-01-28_
 
 La portabilité de tonalité est une fonctionnalité de Microsoft Exchange Server 2013 qui offre une solution de continuité de l'activité limitée en cas de pannes nuisant au fonctionnement d'une base de données de boîtes aux lettres, d'un serveur ou d'un site entier. La portabilité de tonalité permet aux utilisateurs de disposer d'une boîte aux lettres temporaire pour envoyer et recevoir des messages électroniques pendant que leur boîte aux lettres est restaurée ou réparée. La boîte aux lettres temporaire peut être située sur le même serveur de boîtes aux lettres Exchange 2013 ou sur un autre serveur de boîtes aux lettres Exchange 2013 dans votre organisation qui contient des bases de données possédant la même version de schéma de base de données. Cela permet à un autre serveur d'héberger les boîtes aux lettres d'utilisateurs qui étaient auparavant sur un serveur qui n'est plus disponible. Les clients qui prennent en charge le service de découverte automatique sont automatiquement redirigés vers le nouveau serveur sans qu'il soit nécessaire de mettre à jour manuellement le profil de Bureau des utilisateurs. Une fois que les données de la boîte aux lettres d'origine d'un utilisateur sont restaurées, un administrateur peut fusionner la boîte aux lettres restaurée et la boîte aux lettres de tonalité dans une boîte aux lettres mise à jour.
 

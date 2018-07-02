@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-10-13_
+_**Dernière rubrique modifiée :** 2012-10-13_
 
 une fois que vous avez connecté votre réseau téléphonique ou que vous avez intégré Microsoft Lync Server à la messagerie unifiée Exchange et lorsque vous avez créé et configuré les composants de messagerie unifiée requis, vous devrez configurer la messagerie vocale pour vos utilisateurs.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-10-04_
+_**Dernière rubrique modifiée :** 2017-10-04_
 
 Un groupe de sécurité à extension messagerie peut être utilisé pour distribuer des messages et accorder des autorisations d’accès aux ressources dans Active Directory. Pour plus d’informations, consultez la rubrique [Recipients](recipients-exchange-2013-help.md).
 

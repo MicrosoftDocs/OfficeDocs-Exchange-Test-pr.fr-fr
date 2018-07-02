@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-02-21_
+_**Dernière rubrique modifiée :** 2014-02-21_
 
 Cette rubrique décrit les procédures à suivre pour apporter manuellement des modifications à la configuration concernant la façon dont un serveur de transport Edge gère le flux de messagerie. Ces procédures sont conçues pour répondre à des scénarios spécifiques. À moins que votre organisation ait des besoins spécifiques impliquant la modification manuelle de la configuration, il est recommandé d’utiliser la configuration par défaut lors de l’abonnement aux serveurs de transport Edge.
 

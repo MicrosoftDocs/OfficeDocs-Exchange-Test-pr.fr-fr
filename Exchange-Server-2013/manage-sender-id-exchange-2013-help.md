@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 La fonctionnalité d’ID de l’expéditeur est fournie par l’agent d’ID de l’expéditeur. L’ID de l’expéditeur valide l’origine des messages électroniques en vérifiant l’adresse IP de l’expéditeur par rapport à celle du prétendu propriétaire du domaine de l’expéditeur. Le filtrage de l’ID de l’expéditeur est effectué sur les messages entrants en provenance d’Internet mais qui ne sont pas authentifiés. Ces messages sont traités comme des messages externes.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Comprendre l'intégrité et les performances du serveur est primordial pour concevoir et gérer une infrastructure de messagerie hautement performante. Microsoft Exchange Server 2013 apporte des améliorations à l'intégrité et aux performances du serveur.
 

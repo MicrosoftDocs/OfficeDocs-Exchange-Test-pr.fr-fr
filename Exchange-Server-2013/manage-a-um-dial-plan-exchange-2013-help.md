@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2018-04-26_
+_**Dernière rubrique modifiée :** 2018-04-26_
 
 Une fois que vous avez créé un plan de numérotation de messagerie unifiée, vous pouvez afficher et configurer différents paramètres. Par exemple, vous avez la possibilité de configurer le niveau de sécurité VoIP (Voice over IP), le codec audio et les restrictions de numérotation. Les paramètres que vous configurez dans le plan de numérotation de messagerie unifiée affectent tous les utilisateurs associés au plan de numérotation via une stratégie de boîte aux lettres de messagerie unifiée.
 

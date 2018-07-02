@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Lorsque les utilisateurs d'Outlook Voice Access composent un numéro Outlook Voice Access, ils sont invités à entrer leur code confidentiel qui permet au système de messagerie vocale de les authentifier. Une fois authentifiés, ils peuvent accéder à la messagerie vocale, à la messagerie électronique, au calendrier et aux informations de contact personnelles de leur boîte aux lettres à partir de n'importe quel téléphone.
 

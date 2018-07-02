@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2017-03-27_
+_**Dernière rubrique modifiée :** 2017-03-27_
 
 Comment faire pour permettre aux utilisateurs d’Exchange 2013 ou Exchange 2016 à accès Exchange 2010 ou antérieures (également connu sous le nom dossiers publics hérités) des dossiers publics.
 

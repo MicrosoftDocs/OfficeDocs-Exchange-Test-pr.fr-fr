@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Microsoft Exchange Server 2013 est disponible dans deux éditions serveur : Standard Edition et Enterprise Edition. Enterprise Edition peut évoluer et atteindre jusqu’à 50 bases de données montées par serveur dans les versions finalisées (RTM) et de mise à jour cumulative 1 (CU1), et jusqu’à 100 bases de données montées par serveur dans la mise à jour cumulative 2 (CU2) et versions ultérieures ; Standard Edition est limitée à 5 bases de données montées par serveur. Une base de données montée est une base de données en cours d’utilisation. Il peut s’agir d’une base de données de boîtes aux lettres active qui est montée afin d’être utilisée par les clients, ou une base de données de boîtes aux lettres passive montée dans la récupération pour la réplication et la relecture de journal. Vous pouvez créer plus de bases de données que les limites décrites ci-dessus, mais vous ne pouvez monter que le nombre maximal indiqué plus haut. La base de données de récupération n’entre pas dans cette limite.
 

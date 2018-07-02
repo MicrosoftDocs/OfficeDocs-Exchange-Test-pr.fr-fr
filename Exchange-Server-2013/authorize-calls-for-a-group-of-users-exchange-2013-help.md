@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Vous pouvez activer des autorisations de numérotation sur une stratégie de boîte aux lettres de messagerie unifiée. Les autorisations de numérotation sur une stratégie de boîte aux lettres vous permettent d'interdire à des utilisateurs authentifiés Outlook Voice Access associés à la stratégie de boîte aux lettres de messagerie unifiée d'effectuer des appels nationaux/régionaux ou internationaux, c'est-à-dire de recourir à la *numérotation externe*. La numérotation externe intervient lorsque la messagerie unifiée effectue un appel sortant pour un utilisateur après qu'il a appelé un numéro de téléphone Outlook Voice Access configuré sur un plan de messagerie unifiée. Les paramètres que vous configurez dans une stratégie de boîte aux lettres de messagerie unifiée sont appliqués à tous les utilisateurs à extension messagerie unifiée associés à la stratégie de boîte aux lettres de messagerie unifiée.
 

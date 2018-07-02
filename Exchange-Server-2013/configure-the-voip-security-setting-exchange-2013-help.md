@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2014-10-16_
+_**Dernière rubrique modifiée :** 2014-10-16_
 
 Vous pouvez activer la sécurité VoIP (Voice over IP) pour un plan de numérotation de messagerie unifiée. Par défaut, lorsqu'un plan de numérotation de messagerie unifiée est créé, il utilise un mode non sécurisé ou aucun chiffrement. Les serveurs Exchange peuvent répondre à des appels pour un ou plusieurs plans de numérotation de messagerie unifiée et peuvent répondre à des appels pour des plans de numérotation qui disposent de paramètres de sécurité VoIP différents. Dans Office 365 et Exchange Online, le mode sécurisé est obligatoire et ne peut pas être désactivé.
 

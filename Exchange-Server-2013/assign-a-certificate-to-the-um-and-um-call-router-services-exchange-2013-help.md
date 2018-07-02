@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-29_
+_**Dernière rubrique modifiée :** 2013-04-29_
 
 Vous pouvez utiliser le CAE ou le Shell pour attribuer un interne, auto-signé infrastructure à clé publique (PKI), ou un certificat commercial tiers pour les services Exchange spécifiques. Lorsque vous utilisez l’applet de commande **New-ExchangeCertificate** pour assigner un certificat pour les services Exchange avec le paramètre *Services* , vous êtes invité à assigner le certificat pour les services Exchange. Si vous utilisez le CAE pour créer un certificat, vous permet d’assigner le certificat pour les services Exchange ne sont pas demander à l’Assistant nouveau certificat Exchange. Vous devez modifier les propriétés du certificat et d’assigner le certificat en activant les services que vous souhaitez assigner à.
 

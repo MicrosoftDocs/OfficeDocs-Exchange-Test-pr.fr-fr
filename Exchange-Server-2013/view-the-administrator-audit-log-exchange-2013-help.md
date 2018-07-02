@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-05-03_
+_**Dernière rubrique modifiée :** 2016-05-03_
 
 Dans Microsoft Exchange Online Protection (EOP), Microsoft Exchange Online et Microsoft Exchange 2013, vous pouvez utiliser le Centre d’administration Exchange (CAE) pour rechercher et afficher des entrées dans le *journal d’audit de l’administrateur*. Le journal d’audit de l’administrateur enregistre des actions spécifiques, basées sur la cmdlet Environnement de ligne de commande Exchange Management Shell, effectuées par les administrateurs et les utilisateurs disposant de privilèges d’administration. Les entrées du journal d’audit de l’administrateur vous fournissent des informations sur la cmdlet qui a été exécutée, les paramètres utilisés, l’utilisateur qui a exécuté la cmdlet et les objets concernés.
 

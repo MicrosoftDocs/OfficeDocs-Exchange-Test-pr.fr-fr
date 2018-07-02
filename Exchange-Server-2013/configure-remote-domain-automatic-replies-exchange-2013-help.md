@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Vous pouvez utiliser Exchange Management Shell pour configurer la façon dont les courriers électroniques sont envoyés et reçus via des domaines distants. La démonstration suivante montre comment utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer la manière dont Exchange gère les réponses automatiques.
 

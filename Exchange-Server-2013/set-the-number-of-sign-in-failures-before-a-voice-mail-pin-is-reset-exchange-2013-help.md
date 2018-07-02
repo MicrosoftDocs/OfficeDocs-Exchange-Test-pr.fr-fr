@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez configurer le nombre d'échecs de connexion autorisés avant la réinitialisation du code confidentiel pour un utilisateur d'Outlook Voice Access sur une valeur comprise entre 1 et 998. La valeur par défaut est 5. Le nombre d'échecs de connexion autorisés avant la réinitialisation d'un code confidentiel est configuré pour une stratégie de boîte aux lettres de messagerie unifiée et s'applique à tous les utilisateurs d'Outlook Voice Access associés à cette stratégie.
 

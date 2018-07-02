@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les professionnels de l’information ont souvent besoin de collaborer avec des destinataires, fournisseurs, partenaires et clients externes et de partager leurs informations de disponibilité (également appelées disponibilités de calendrier). La fédération dans Microsoft Exchange Server 2013 facilite ces efforts de collaboration. Le terme *fédération* désigne l’infrastructure d’approbation sous-jacente qui prend en charge le *partage fédéré*, un moyen facile pour les utilisateurs de partager des informations de calendrier avec les destinataires d’autres organisations fédérées externes. Pour en savoir plus sur le partage fédéré, voir [Partage](sharing-exchange-2013-help.md).
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-18_
+_**Dernière rubrique modifiée :** 2012-11-18_
 
 Vous pouvez autoriser le service de messagerie unifiée de Microsoft Exchange sur un serveur de boîtes aux lettres pour répondre aux nouveaux appels ou l'empêcher de cette opération. Par défaut, un serveur de boîtes aux lettres est dans un état activé après son installation. Lorsque vous configurez le serveur de boîtes aux lettres d'accepter des messages vocaux entrants, télécopie, standard automatique et les appels Outlook Voice Access, vous utilisez l'applet de commande **Set-ServerComponentState** .
 

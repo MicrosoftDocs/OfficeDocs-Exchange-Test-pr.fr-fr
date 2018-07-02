@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Grâce au partage fédéré disponible dans Exchange Server 2013, les utilisateurs peuvent partager des informations avec des destinataires au sein d’organisations fédérées externes. comme le partage de leurs informations de disponibilité (aussi connue sous le nom de disponibilité du calendrier) à des fins de planification ou, en fonction de la nature de la relation professionnelle, le partage d’informations de calendrier plus détaillées. Pour en savoir plus sur le partage fédéré, voir [Partage](sharing-exchange-2013-help.md).
 

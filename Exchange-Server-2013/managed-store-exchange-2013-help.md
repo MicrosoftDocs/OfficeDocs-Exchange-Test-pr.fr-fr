@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-07-14_
+_**Dernière rubrique modifiée :** 2014-07-14_
 
 Toutes les versions antérieures d’Exchange Server, d’Exchange Server 4.0 à Exchange Server 2010, prennent en charge l’exécution d’une seule instance du processus de la banque d’informations (Store.exe) sur le rôle serveur de boîte aux lettres. Cette instance de banque unique héberge toutes les bases de données sur le serveur : actives, passives, retardées et de récupération. Dans les architectures Exchange précédentes, il y avait parfois une isolation minime, voire inexistante, entre les différentes bases de données hébergées sur un serveur de boîtes aux lettres. Un problème avec une seule base de données de boîtes aux lettres peut avoir un impact négatif sur toutes les autres bases de données, et les incidents résultant d’un endommagement de boîte aux lettres peuvent influer sur le service pour tous les utilisateurs dont les bases de données sont hébergées sur ce serveur.
 

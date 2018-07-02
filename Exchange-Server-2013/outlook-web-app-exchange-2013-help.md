@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Découvrez Outlook Web App, autrement connu sous le nom Outlook Web Access dans les versions de Microsoft Exchange antérieures à 2010. Cet article fournit un vue d’ensemble rapide, ainsi que des liens vers des informations utiles.
 

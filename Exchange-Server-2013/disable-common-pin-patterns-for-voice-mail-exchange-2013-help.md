@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez activer ou désactiver des modèles courants de codes confidentiels de messagerie unifiée pour des utilisateurs d'Outlook Voice Access. Si vous activez ou désactivez des paramètres de modèles courants de codes confidentiels dans une stratégie de boîte aux lettres de messagerie unifiée, la configuration qui en résulte s'applique à tous les utilisateurs à messagerie unifiée associés à cette stratégie. Par défaut, les utilisateurs à extension messagerie unifiée ne peuvent pas utiliser les modèles courants lorsqu'ils créent un code confidentiel.
 

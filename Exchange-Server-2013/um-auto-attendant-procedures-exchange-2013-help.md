@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-01-30_
+_**Dernière rubrique modifiée :** 2013-01-30_
 
 [Configurer un standard automatique de messagerie unifiée](set-up-a-um-auto-attendant-exchange-2013-help.md)
 

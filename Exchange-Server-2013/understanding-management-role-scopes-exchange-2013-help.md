@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Les *étendues des rôles de gestion* permettent de définir l’étendue spécifique de l’impact ou de l’influence d’un rôle de gestion lorsqu’une attribution de rôle de gestion est créée. Lorsque vous appliquez une étendue, la personne attribuée au rôle ne peut que modifier les objets contenus dans cette étendue. Une personne attribuée au rôle peut être un groupe de rôles de gestion, un rôle de gestion, une stratégie d’attribution de rôle de gestion, un utilisateur ou un groupe de sécurité universel. Pour plus d’informations sur les rôles de gestion, voir [Présentation du contrôle d'accès basé sur un rôle](understanding-role-based-access-control-exchange-2013-help.md).
 

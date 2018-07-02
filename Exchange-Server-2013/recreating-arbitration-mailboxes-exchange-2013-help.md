@@ -13,7 +13,7 @@ ms.translationtype: MT
 
  
 
-_**Dernière rubrique modifiée :**2018-01-17_
+_**Dernière rubrique modifiée :** 2018-01-17_
 
 **Résumé** : À propos des boîtes aux lettres d’arbitrage dans Exchange 2013 et de la façon de les recréer.
 

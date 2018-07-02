@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-09-25_
+_**Dernière rubrique modifiée :** 2012-09-25_
 
 Cette rubrique décrit l’utilisation de l’Afficheur des files d’attente de la Boîte à outils Exchange pour exporter des listes de messages ou de files d’attente.
 

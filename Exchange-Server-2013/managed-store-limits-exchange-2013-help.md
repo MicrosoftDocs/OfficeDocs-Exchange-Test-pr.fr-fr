@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**Dernière rubrique modifiée :**2016-09-15_
+_**Dernière rubrique modifiée :** 2016-09-15_
 
 **Résumé** : À propos des limites de connexion de banque gérée et de leur configuration.
 

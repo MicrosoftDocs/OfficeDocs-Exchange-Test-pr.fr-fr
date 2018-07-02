@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-11-15_
+_**Dernière rubrique modifiée :** 2013-11-15_
 
 Après la création d’un carnet d’adresses en mode hors connexion ou la modification de ses paramètres, les modifications ne sont accessibles aux utilisateurs qu’une fois le processus de génération de carnet d’adresses en mode hors connexion (OABGen) terminé.
 

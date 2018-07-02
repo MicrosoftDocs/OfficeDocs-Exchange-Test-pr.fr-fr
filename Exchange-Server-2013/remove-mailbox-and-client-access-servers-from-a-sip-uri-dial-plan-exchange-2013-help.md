@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-16_
+_**Dernière rubrique modifiée :** 2013-04-16_
 
 Vous pouvez supprimer les serveurs d'accès au client et de boîtes aux lettres des plans de numérotation URI SIP. Lors du déploiement de Microsoft Lync Server, pour permettre aux appels sortants de fonctionner correctement, vous devez ajouter manuellement tous les serveurs d'accès au client et de boîtes aux lettres aux plans de numérotation URI SIP créés pour Lync Server. Cependant, il est possible que vous deviez supprimer un serveur d'accès au client ou de boîtes aux lettres de votre déploiement Lync, par exemple si vous effectuez une opération de maintenance ou si vous déconnectez le serveur.
 

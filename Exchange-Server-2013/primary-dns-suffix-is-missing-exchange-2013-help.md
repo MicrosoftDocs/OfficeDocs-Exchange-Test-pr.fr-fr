@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2014-01-15_
+_**Dernière rubrique modifiée :** 2014-01-15_
 
 Le programme d’installation de Microsoft Exchange Server 2013 ne peut pas continuer car le suffixe DNS principal de l’ordinateur sur lequel vous installez Exchange n’a pas été configuré.
 

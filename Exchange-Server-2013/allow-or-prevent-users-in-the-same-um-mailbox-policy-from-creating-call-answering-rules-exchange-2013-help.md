@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez également permettre ou empêcher des utilisateurs qui sont associées à une stratégie de boîte aux lettres de messagerie unifiée de configurer des règles de répondeur automatique. Si l'option de configuration des règles de répondeur automatique est désactivée sur un plan de numérotation de messagerie unifiée, la fonctionnalité Règles de répondeur automatique n'est pas accessible aux utilisateurs à extension messagerie unifiée associés à la stratégie de boîte aux lettres de messagerie unifiée. Par défaut, cette option est activée.
 

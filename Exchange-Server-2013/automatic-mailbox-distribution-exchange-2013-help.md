@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-08-13_
+_**Dernière rubrique modifiée :** 2013-08-13_
 
 Lorsque vous créez ou déplacez une boîte aux lettres, ou que vous activez la messagerie d’un utilisateur existant, cette boîte aux lettres doit être stockée dans une base de données de boîtes aux lettres. Dans Microsoft Exchange Server 2013, vous pouvez décider de laisser Exchange choisir la base de données à votre place à l’aide de la distribution automatique de boîtes aux lettres.
 

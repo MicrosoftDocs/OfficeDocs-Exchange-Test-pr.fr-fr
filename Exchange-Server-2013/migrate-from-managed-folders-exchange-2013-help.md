@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Dans Microsoft Exchange Server 2013, la gestion des enregistrements de messagerie (MRM) s’effectue à l’aide de balises et de stratégies de rétention. Une stratégie de rétention est un groupe de balises de rétention applicables à une boîte aux lettres. Pour plus d’informations, consultez la rubrique [Balises et stratégies de rétention](retention-tags-and-retention-policies-exchange-2013-help.md). Les dossiers gérés, technologie de la fonctionnalité MRM introduite dans Exchange Server 2007, ne sont pas pris en charge.
 

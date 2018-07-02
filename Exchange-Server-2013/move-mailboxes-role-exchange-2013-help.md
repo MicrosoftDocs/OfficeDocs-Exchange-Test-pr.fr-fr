@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion `Move Mailboxes` permet aux administrateurs de déplacer des boîtes aux lettres entre les différents serveurs d’une organisation, et entre les serveurs de l’organisation locale et ceux d’une autre organisation.
 

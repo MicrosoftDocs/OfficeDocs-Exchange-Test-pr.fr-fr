@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-03-27_
+_**Dernière rubrique modifiée :** 2017-03-27_
 
 Cette rubrique contient une liste des questions fréquemment posées concernant les dossiers publics d’Exchange Server 2013. Pour en savoir plus sur les dossiers publics, voir [Dossiers publics](public-folders-exchange-2013-help.md).
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-18_
+_**Dernière rubrique modifiée :** 2012-11-18_
 
 Vous pouvez autoriser le service Microsoft Exchange Unified Messaging routeur d'appels sur un serveur d'accès au Client pour répondre aux nouveaux appels ou l'empêcher de cette opération. Par défaut, un serveur d'accès au Client est dans un état activé après son installation. Lorsque vous configurez le serveur d'accès Client d'accepter des messages vocaux entrants, télécopie, standard automatique et les appels Outlook Voice Access, vous utilisez l'applet de commande **Set-ServerComponentState** .
 

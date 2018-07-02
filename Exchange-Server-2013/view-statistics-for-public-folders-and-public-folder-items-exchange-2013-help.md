@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-14_
+_**Dernière rubrique modifiée :** 2013-02-14_
 
 Cette rubrique explique comment obtenir des statistiques sur un dossier public, telles que le nom complet, l'heure de création, l'heure de la dernière modification par l'utilisateur, le dernier accès de l'utilisateur et la taille de l'élément. Vous pouvez utiliser ces informations pour décider de supprimer ou de conserver des dossiers publics.
 

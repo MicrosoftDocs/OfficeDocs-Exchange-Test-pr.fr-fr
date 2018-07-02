@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013 SP1_
+_**Sapplique à :** Exchange Online, Exchange Server 2013 SP1_
 
-_**Dernière rubrique modifiée :**2013-12-02_
+_**Dernière rubrique modifiée :** 2013-12-02_
 
 Vous pouvez utiliser les cmdlets de rapports d’intégrité intégrés pour effectuer diverses tâches liées à la disponibilité gérée, telles que :
 

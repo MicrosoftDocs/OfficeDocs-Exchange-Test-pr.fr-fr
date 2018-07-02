@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Vous pouvez configurer la messagerie unifiée pour permettre aux utilisateurs de se connecter à leur messagerie vocale sans utiliser de code confidentiel. Par défaut, les utilisateurs d'Outlook Voice Access sont invités à saisir un code confidentiel pour se connecter à leur boîte aux lettres et accéder à leurs messages vocaux et électroniques, leur calendrier, leurs contacts personnels, l'annuaire et les options personnelles.
 

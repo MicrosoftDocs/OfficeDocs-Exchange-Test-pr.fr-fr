@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-19_
+_**Dernière rubrique modifiée :** 2012-11-19_
 
 Cette rubrique explique comment activer, désactiver, afficher et modifier la propriété des agents d’extension de cmdlet dans Microsoft Exchange Server 2013. Pour plus d’informations sur les agents d’extension de cmdlet dans Exchange 2013, voir [Agents d’extension des cmdlets](cmdlet-extension-agents-exchange-2013-help.md).
 

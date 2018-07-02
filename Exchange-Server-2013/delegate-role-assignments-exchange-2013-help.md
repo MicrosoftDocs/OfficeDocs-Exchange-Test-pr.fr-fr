@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-02_
+_**Dernière rubrique modifiée :** 2012-10-02_
 
 La délégation de rôles de gestion permet aux bénéficiaires d'un rôle d'attribuer un rôle de gestion spécifique à d'autres groupes de rôles de gestion, à des stratégies d'attribution de rôles de gestion, à des utilisateurs ou à des groupes de sécurité universels. Par défaut, seuls les membres du groupe de rôles de gestion Gestion de l'organisation peuvent déléguer des attributions de rôles. Lorsqu'une nouvelle installation de Microsoft Exchange Server 2013 est déployée, seul le compte d'utilisateur qui a servi à installer Exchange 2013 est membre du groupe de rôles Gestion de l'organisation.
 

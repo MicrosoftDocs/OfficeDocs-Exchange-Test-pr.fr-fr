@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Chaque entrée de rôle de gestion représente une cmdlet unique. En ajoutant ou en supprimant des paramètres dans une entrée de rôle, qui est alors ajoutée à un rôle de gestion, vous contrôlez la disponibilité des paramètres sur la cmdlet. Pour plus d’informations sur les entrées de rôles de gestion dans Microsoft Exchange Server 2013, voir [Présentation des rôles de gestion](understanding-management-roles-exchange-2013-help.md).
 

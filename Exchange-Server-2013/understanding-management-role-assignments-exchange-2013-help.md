@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-04_
+_**Dernière rubrique modifiée :** 2012-10-04_
 
 Une *attribution de rôle de gestion*, qui fait partie du modèle d’autorisation du contrôle d’accès basé sur un rôle dans Microsoft Exchange Server 2013, est le lien existant entre un rôle de gestion et un utilisateur de rôle. Un *utilisateur de rôle* est un groupe de rôles, une stratégie d’attribution de rôles, un utilisateur ou un groupe universel de sécurité (USG). Un rôle doit être attribué à un utilisateur de rôle pour entrer en vigueur. Pour plus d'informations sur le contrôle d'accès basé sur un rôle, consultez la rubrique [Présentation du contrôle d'accès basé sur un rôle](understanding-role-based-access-control-exchange-2013-help.md).
 

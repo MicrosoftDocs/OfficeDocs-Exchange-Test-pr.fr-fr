@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez indiquer si vous souhaitez que des utilisateurs individuels puissent créer et gérer leurs propres règles de réponse aux appels en configurant les propriétés de leur boîte aux lettres. Par défaut, ils peuvent créer des règles de répondeur automatique.
 

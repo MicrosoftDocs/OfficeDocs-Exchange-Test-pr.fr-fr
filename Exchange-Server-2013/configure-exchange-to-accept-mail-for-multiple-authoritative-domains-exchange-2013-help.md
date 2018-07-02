@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-06-15_
+_**Dernière rubrique modifiée :** 2016-06-15_
 
 Microsoft Exchange Server 2013 permet d'ajouter facilement à votre organisation plusieurs domaines faisant autorité. Toutefois, après avoir ajouté un domaine faisant autorité, vous devez choisir la manière de l'utiliser au sein de votre organisation. Par exemple :
 

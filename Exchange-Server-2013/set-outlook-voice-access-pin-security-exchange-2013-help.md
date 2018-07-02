@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-16_
+_**Dernière rubrique modifiée :** 2013-04-16_
 
 Quand des utilisateurs de la messagerie unifiée se connectent au système de messagerie vocale au moyen d'un téléphone, ils utilisent Outlook Voice Access pour accéder au système de menus. Pour pouvoir accéder au système de messagerie vocale, le système invite les utilisateurs à entrer leur code confidentiel. En tant qu'administrateur, vous pouvez configurer des paramètres et des critères de code confidentiel et effectuer des tâches de gestion des codes confidentiels. Quand la messagerie unifiée a été activée pour un utilisateur et qu'un code confidentiel a été généré, le code confidentiel est chiffré et stocké dans la boîte aux lettres de l'utilisateur.
 

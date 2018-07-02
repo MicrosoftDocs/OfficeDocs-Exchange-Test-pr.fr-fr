@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-07-14_
+_**Dernière rubrique modifiée :** 2014-07-14_
 
 Vous pouvez arrêter ou redémarrer une recherche par découverte électronique locale à tout moment. Par exemple, pour modifier les propriétés de recherche telles que les mots-clés ou les boîtes aux lettres recherchées, vous devez commencer par arrêter une recherche. Vous pouvez alors redémarrer la recherche après avoir apporté les modifications requises.
 

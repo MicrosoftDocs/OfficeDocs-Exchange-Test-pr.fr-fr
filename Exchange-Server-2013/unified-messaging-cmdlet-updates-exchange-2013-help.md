@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Beaucoup de cmdlets messagerie unifiée (MU) qui existaient dans Exchange Server 2010 ont été transféré pour Exchange Server 2013, mais il y a eu des changements à certains de ces cmdlets. En outre, les nouvelles cmdlets ont été ajoutées pour Exchange 2013.
 

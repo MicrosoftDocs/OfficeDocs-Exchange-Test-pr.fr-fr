@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Vous pouvez spécifier si le format TNEF (Transport Neutral Encapsulation Format) doit être conservé ou supprimé des messages sortants de l’organisation Exchange. Le format TNEF, également appelé format RTF d’Outlook ou format RTF d’Exchange, est un format propre à Microsoft permettant d’encapsuler les propriétés de message MAPI. Toutes les versions de MicrosoftOutlook sont parfaitement compatibles avec le format TNEF. Outlook Web App convertit le format TNEF en MAPI et affiche les messages formatés. Cependant, d’autres clients de messagerie non compatibles affichent généralement des messages au format TNEF en texte brut avec des pièces jointes Winmail.dat ou Win.dat.
 

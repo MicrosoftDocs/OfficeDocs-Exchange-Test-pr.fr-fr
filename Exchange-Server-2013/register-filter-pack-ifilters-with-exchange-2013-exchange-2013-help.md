@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les règles de transport comportant des conditions d’analyse de pièces jointes effectuent une extraction de texte lors de l’analyse du contenu des pièces jointes. Exchange 2013 peut analyser la plupart des types de pièces jointes les plus couramment utilisées en mode natif. Des types de pièces jointes supplémentaires peuvent être inclus en enregistrant des iFilters dans Exchange 2013. Cette rubrique vous explique comment enregistrer des iFilters publiés par Microsoft et des éditeurs tiers.
 

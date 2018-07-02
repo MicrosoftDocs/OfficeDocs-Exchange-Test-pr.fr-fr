@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Les plans de numérotation de messagerie unifiée constituent le composant principal de la messagerie unifiée et sont indispensables pour un déploiement correct de la messagerie unifiée sur votre réseau. Les sections suivantes présentent les plans de numérotation de messagerie unifiée et la façon dont ils sont utilisés dans un déploiement de messagerie unifiée.
 

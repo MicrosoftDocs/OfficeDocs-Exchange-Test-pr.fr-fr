@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-12-16_
+_**Dernière rubrique modifiée :** 2012-12-16_
 
 Vous pouvez inclure du texte supplémentaire dans le message électronique envoyé quand un utilisateur à extension messagerie vocale de messagerie unifiée reçoit un message vocal. Par défaut, le texte inclus dans un message vocal indique uniquement que l'appelant a reçu un message vocal. Vous pouvez toutefois créer un message personnalisé en ajoutant du texte dans la zone **Lorsqu'un utilisateur reçoit un message vocal** dans une stratégie de boîte aux lettres de messagerie unifiée. Par exemple, le texte peut inclure des informations sur les stratégies de sécurité système et décrire la façon correcte de traiter les messages vocaux dans votre organisation. Une fois le texte ajouté, il est inclus dans chaque message électronique envoyé lorsque les utilisateurs à messagerie unifiée associés à la stratégie de boîte aux lettres de messagerie unifiée reçoivent un message vocal.
 

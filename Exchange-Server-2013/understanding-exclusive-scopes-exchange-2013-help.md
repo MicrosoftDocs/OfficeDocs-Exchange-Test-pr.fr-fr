@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les *étendues exclusives* constituent un type particulier d’étendue de gestion explicite qui peut être associée à des attributions de rôle de gestion. Les étendues exclusives permettent de gérer les situations où vous possédez un groupe d’objets très importants (comme la boîte aux lettres d’un PDG) et souhaitez contrôler précisément les personnes ayant accès à la gestion de ces objets.
 

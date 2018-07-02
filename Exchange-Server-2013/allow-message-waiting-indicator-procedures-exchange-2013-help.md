@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-05-03_
+_**Dernière rubrique modifiée :** 2013-05-03_
 
 [Autoriser les messages en attente indicateur (MWI) sur une passerelle IP de messagerie unifiée](allow-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md)
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les personnes et ressources qui échangent des messages constituent le noyau de tout système de collaboration et de messagerie. Dans une organisation Exchange, ces personnes et ressources sont appelées *destinataires*. Un destinataire est un objet à extension messagerie dans Active Directory auquel Microsoft Exchange peut remettre ou router des messages.
 

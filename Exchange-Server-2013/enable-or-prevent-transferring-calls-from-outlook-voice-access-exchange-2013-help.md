@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez autoriser les utilisateurs d'Outlook Voice Access à transférer des appels vers un utilisateur associé à un plan de numérotation de messagerie unifiée, ou les en empêcher. Par défaut, cette option et l'option **Laisser des messages vocaux sans faire sonner le téléphone de l'utilisateur**sont activées. Les utilisateurs Outlook Voice Access peuvent ainsi transférer des appels vers de utilisateurs du même plan de numérotation et leur laisser un message. Ce paramètre s'applique uniquement aux utilisateurs d'Outlook Voice Access qui ont entré leur code confidentiel et sont authentifiés.
 

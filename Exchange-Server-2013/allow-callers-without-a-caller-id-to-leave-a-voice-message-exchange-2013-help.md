@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez également autoriser ou empêcher les utilisateurs à extension messagerie unifiée à recevoir des messages vocaux d'appelants anonymes. Par défaut, lorsque les utilisateurs sont activés pour la messagerie unifiée et la messagerie vocale, ils peuvent recevoir des appels anonymes sans informations d'ID d'appelant.
 

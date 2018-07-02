@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez configurer un partenaire d'aperçu de messagerie vocale dans une stratégie de boîte aux lettres de messagerie unifiée. Une fois que vous avez configuré les paramètres correspondants, tels que l'ID partenaire d'aperçu de messagerie vocale et Adresse du partenaire d'aperçu de messagerie vocale dans le cadre de la stratégie de boîte aux lettres de messagerie unifiée, ils s'appliquent à tous les utilisateurs à extension messagerie unifiée associés à cette stratégie.
 

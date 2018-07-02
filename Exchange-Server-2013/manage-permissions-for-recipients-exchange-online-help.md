@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-04-20_
+_**Dernière rubrique modifiée :** 2018-04-20_
 
 Vous pouvez utiliser le CAE ou l'environnement de ligne de commande pour attribuer à des utilisateurs ou à des groupes (appelés *délégués*) des autorisations leur permettant d'ouvrir ou d'envoyer des messages à partir d'autres boîtes aux lettres. Des autorisations peuvent être attribuées à des boîtes aux lettres utilisateur, à des boîtes aux lettres associées, à des boîtes aux lettres de ressources et à des boîtes aux lettres partagées. Vous pouvez également attribuer des autorisations à des groupes de distribution, à des groupes de distribution dynamique et à des groupes de sécurité à extension messagerie pour permettre à des délégués d'envoyer des messages de la part de ces groupes. Vous pouvez attribuer à des délégués les autorisations suivantes pour accéder à des boîtes aux lettres ou envoyer des messages de la part de boîtes aux lettres ou de groupes :
 

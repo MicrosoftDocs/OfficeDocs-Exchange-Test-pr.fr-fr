@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les serveurs de transport Edge stockent leurs informations de configuration dans les services AD LDS. Vous pouvez installer plusieurs serveurs de transport Edge dans le réseau de périmètre et utiliser un tourniquet (round robin) DNS pour équilibrer le trafic réseau entre les serveurs de transport Edge. Le tourniquet est un mécanisme simple utilisé par les serveurs DNS pour partager et distribuer les charges pour les ressources réseau.
 

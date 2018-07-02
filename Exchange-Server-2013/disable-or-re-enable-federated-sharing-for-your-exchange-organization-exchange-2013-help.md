@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-02-17_
+_**Dernière rubrique modifiée :** 2014-02-17_
 
 Il peut arriver que vous soyez amené à désactiver temporairement un partage fédéré pour votre organisation. Au lieu de supprimer l’approbation de fédération existante ou les relations d’organisation et les stratégies de partage dont vous pourriez avoir besoin a l’avenir, vous pouvez simplement désactiver l’identificateur d’organisation (OrgID) de l’approbation de fédération.
 

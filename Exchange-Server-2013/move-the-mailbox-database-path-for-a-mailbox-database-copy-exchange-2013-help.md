@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-05-07_
+_**Dernière rubrique modifiée :** 2014-05-07_
 
 Une fois qu’une base de données de boîtes aux lettres est créée, vous pouvez la placer sur un autre volume, dossier, emplacement ou chemin à l’aide du CAE ou de l’environnement de ligne de commande Exchange Management Shell. Pour obtenir des instructions détaillées sur la procédure de déplacement du chemin d’une base de données pour une base de données de boîtes aux lettres non répliquée, consultez la rubrique [Move a mailbox database path](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md).
 

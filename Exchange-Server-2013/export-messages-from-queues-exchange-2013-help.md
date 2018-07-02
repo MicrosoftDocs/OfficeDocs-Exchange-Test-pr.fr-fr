@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-05-05_
+_**Dernière rubrique modifiée :** 2014-05-05_
 
 Lorsque vous exportez un message d'une file d'attente vers un fichier, le message n'est pas supprimé de la file d'attente. Une copie du message est faite dans la localisation spécifiée comme un fichier de texte en clair. Le fichier résultant peut être affiché dans une application, comme un éditeur de texte ou une application cliente de messagerie, ou le fichier de message peut être soumis de nouveau en utilisant le répertoire de relecture sur tout autre serveur de boîtes aux lettres ou serveur de transport Edge à l'intérieur ou à l'extérieur de l'organisation Exchange.
 

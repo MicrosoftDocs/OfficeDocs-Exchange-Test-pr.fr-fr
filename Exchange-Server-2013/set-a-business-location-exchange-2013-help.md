@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-23_
+_**Dernière rubrique modifiée :** 2013-02-23_
 
 Vous pouvez spécifier l'adresse d'une entreprise sur un standard automatique de messagerie unifiée afin que l'adresse soit lue aux appelants. Par défaut, aucune adresse d'entreprise n'est entrée.
 

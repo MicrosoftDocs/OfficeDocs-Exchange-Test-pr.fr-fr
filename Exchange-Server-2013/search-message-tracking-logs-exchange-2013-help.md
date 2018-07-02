@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-25_
+_**Dernière rubrique modifiée :** 2013-02-25_
 
 Dans Microsoft Exchange Server 2013, le journal de suivi des messages est un enregistrement détaillé de toute l'activité de messagerie, regroupant les messages échangés avec le service de transport sur les serveurs de boîtes aux lettres, les boîtes aux lettres sur les serveurs de boîtes aux lettres et les serveurs de transport Edge.
 
@@ -99,7 +99,7 @@ Cet exemple effectue une recherche dans les journaux de suivi des messages à l'
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour rechercher dans les journaux de suivi des messages les entrées de messages sur plusieurs serveurs
 
-Généralement, la valeur dans le champ d'en-tête **MessageID:** demeure constante tant que le message se déplace dans l'organisation Exchange. Cette propriété est appelée **InternetMessageId** dans les utilitaires d'affichage des files d'attente et **MessageId** dans les utilitaires d'affichage des journaux de suivi des messages. Après avoir déterminé la valeur de la propriété `MessageID:` d'un message spécifique, vous pouvez rechercher des informations concernant ce message dans les journaux de suivi des messages sur chaque serveur de boîtes aux lettres de votre organisation Exchange.
+Généralement, la valeur dans le champ d'en-tête **MessageID:**  demeure constante tant que le message se déplace dans l'organisation Exchange. Cette propriété est appelée **InternetMessageId** dans les utilitaires d'affichage des files d'attente et **MessageId** dans les utilitaires d'affichage des journaux de suivi des messages. Après avoir déterminé la valeur de la propriété `MessageID:` d'un message spécifique, vous pouvez rechercher des informations concernant ce message dans les journaux de suivi des messages sur chaque serveur de boîtes aux lettres de votre organisation Exchange.
 
 Pour rechercher toutes les entrées des journaux de suivi des messages correspondant à un message spécifique sur tous les serveurs de boîtes aux lettres, utilisez la syntaxe suivante :
 
@@ -107,7 +107,7 @@ Pour rechercher toutes les entrées des journaux de suivi des messages correspon
 
 Cet exemple recherche dans les journaux de suivi des messages sur tous les serveurs de boîtes aux lettres Exchange 2013 à l'aide des critères de recherche suivants :
 
-  - Recherche les entrées associées à un message dont la valeur de la propriété **MessageID:** correspond à `<ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com>`. Notez que vous pouvez omettre les crochets (`<``>`). Si ce n'est pas le cas; vous devez mettre la valeur de **MessageID:** entre guillemets.
+  - Recherche les entrées associées à un message dont la valeur de la propriété **MessageID:**  correspond à `<ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com>`. Notez que vous pouvez omettre les crochets (`<``>`). Si ce n'est pas le cas; vous devez mettre la valeur de **MessageID:**  entre guillemets.
 
   - Pour chaque entrée, affiche les champs **date-time**, **server-hostname**, **client-hostname**, **source**, **event-id** et **recipient-address**.
 

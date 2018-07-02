@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-06-16_
+_**Dernière rubrique modifiée :** 2016-06-16_
 
 Un domaine accepté est un espace de noms SMTP quel qu’il soit pour lequel une organisation Microsoft Exchange Server 2013 envoie ou reçoit du courrier électronique. Les domaines acceptés incluent les domaines pour lesquels l’organisation Exchange fait autorité. Une organisation Exchange fait autorité lorsqu’elle gère la remise des messages pour les destinataires dans le domaine accepté. Les domaines acceptés incluent également les domaines pour lesquels l’organisation Exchange reçoit des messages et les relaie vers un serveur de messagerie situé en dehors de l’organisation pour la remise au destinataire.
 

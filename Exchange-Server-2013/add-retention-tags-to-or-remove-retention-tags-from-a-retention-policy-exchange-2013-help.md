@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-02_
+_**Dernière rubrique modifiée :** 2015-03-02_
 
 Vous pouvez ajouter des balises de rétention à une stratégie de rétention au moment de sa création ou ultérieurement. Pour plus d’informations sur la création d’une stratégie de rétention, comme la procédure à suivre pour ajouter simultanément des balises de rétention, consultez la rubrique [Créer une stratégie de rétention](create-a-retention-policy-exchange-2013-help.md).
 

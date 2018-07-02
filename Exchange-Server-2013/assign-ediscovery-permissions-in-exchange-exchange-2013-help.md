@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-10-02_
+_**Dernière rubrique modifiée :** 2014-10-02_
 
 Si vous souhaitez que les utilisateurs puissent utiliser la découverte électronique sur place (In-Place eDiscovery) Microsoft Exchange Server 2013, vous devez d’abord les autoriser en les ajoutant au groupe de rôles Gestion de la découverte. Les membres du groupe de rôles Gestion de la découverte ont les autorisations de boîtes aux lettres Accès total pour la boîte aux lettres de découverte qui est créée par le programme d’installation Exchange.
 

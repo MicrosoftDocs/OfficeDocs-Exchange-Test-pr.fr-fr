@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-08-22_
+_**Dernière rubrique modifiée :** 2016-08-22_
 
 Les éléments suivants vous aident à configurer le déchargement SSL pour les protocoles et les services connexes sur les serveurs d’accès client Exchange 2013 avec le Service Pack 1 (SP1). Si vous avez plusieurs serveurs d’accès client, vous devez effectuer les étapes requises pour chaque protocole ou service sur tous les serveurs d’accès client avec SP1 de votre organisation locale. Cela ne veut pas dire que chaque serveur d’accès client de votre organisation doit être configuré de manière identique. Si vous mettez à niveau vers des mises à jour cumulatives ou des Service Packs plus récents et que vous souhaitez continuer à utiliser le déchargement SSL, vous devez effectuer les étapes suivantes de nouveau après la mise à niveau ou l’application de ces mises à jour sur les serveurs d’accès client Exchange 2013.
 

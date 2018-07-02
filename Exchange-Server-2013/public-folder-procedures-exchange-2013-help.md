@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-08-02_
+_**Dernière rubrique modifiée :** 2017-08-02_
 
 **Résumé** : Créez et gérez des dossiers publics avec les articles suivants.
 

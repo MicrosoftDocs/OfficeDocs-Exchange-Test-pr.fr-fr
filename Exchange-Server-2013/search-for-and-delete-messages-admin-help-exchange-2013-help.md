@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-12-20_
+_**Dernière rubrique modifiée :** 2017-12-20_
 
 Les administrateurs peuvent utiliser la cmdlet **Search-Mailbox** pour faire une recherche dans des boîtes aux lettres utilisateur, puis supprimer des messages d’une boîte aux lettres.
 

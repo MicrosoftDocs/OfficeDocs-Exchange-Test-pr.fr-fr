@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-17_
+_**Dernière rubrique modifiée :** 2012-10-17_
 
 Vous pouvez créer un rôle de gestion, modifier des entrées de rôle de gestion, ajouter une portée si besoin et attribuer le rôle à un utilisateur. Les cas dans lesquels vous devrez effectuer cette procédure sont assez rares. Avant de devoir créer un rôle de gestion, vérifiez d'abord si un rôle de gestion intégré peut être utilisé. Pour obtenir une liste des rôles de gestion intégrés, voir [Rôles de gestion intégrés](built-in-management-roles-exchange-2013-help.md).
 

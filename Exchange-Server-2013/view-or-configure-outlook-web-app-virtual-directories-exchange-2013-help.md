@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-08-12_
+_**Dernière rubrique modifiée :** 2013-08-12_
 
 Le Centre d'administration Exchange (CAE) ou l'environnement de ligne de commande Exchange Management Shell permet d'afficher ou de configurer les propriétés d'un répertoire virtuel Outlook Web App.
 

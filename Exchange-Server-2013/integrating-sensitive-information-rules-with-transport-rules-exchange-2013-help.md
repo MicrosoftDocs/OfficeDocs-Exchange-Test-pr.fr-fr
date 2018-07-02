@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-14_
+_**Dernière rubrique modifiée :** 2015-01-14_
 
 Dans Microsoft Exchange, vous pouvez créer des stratégies DLP qui contiennent des règles non seulement pour les classifications de messages traditionnelles et les règles de transport existantes, mais vous pouvez également les combiner avec des règles pour les informations sensibles figurant dans des messages. Le cadre des règles de transport existantes offre de nombreuses possibilités de définition des stratégies de messagerie couvrant l'ensemble des contrôles logiciels et matériels. Exemples :
 

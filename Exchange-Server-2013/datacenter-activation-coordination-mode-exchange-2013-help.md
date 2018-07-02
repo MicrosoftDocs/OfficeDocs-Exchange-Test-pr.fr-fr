@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-07-14_
+_**Dernière rubrique modifiée :** 2014-07-14_
 
 Le mode de coordination de l’activation du centre de données est une propriété de groupe de disponibilité de base de données. Ce mode est désactivé par défaut et doit être activé pour tous les groupes de disponibilité de base de données constitués d’au moins deux membres qui utilisent la réplication continue. Il ne doit pas être activé pour les groupes de disponibilité de base de données en mode de réplication tierce, sauf indication contraire du fournisseur tiers.
 

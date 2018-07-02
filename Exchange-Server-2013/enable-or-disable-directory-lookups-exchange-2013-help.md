@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-05-10_
+_**Dernière rubrique modifiée :** 2016-05-10_
 
 Vous pouvez activer les recherches dans l'annuaire afin que les personnes qui appellent un standard automatique de messagerie unifiée puissent rechercher des noms dans l'annuaire uniquement l'aide du clavier de leur téléphone (les entrées vocales ne sont pas prises en charge). Ce paramètre est activé par défaut. Si ce paramètre est désactivé, les appelants ne pourront pas rechercher une personne spécifique dans l'annuaire à l'aide du système de numérotation multifréquence ou de commandes vocales.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013 SP1_
+_**Sapplique à :** Exchange Online, Exchange Server 2013 SP1_
 
-_**Dernière rubrique modifiée :**2015-11-30_
+_**Dernière rubrique modifiée :** 2015-11-30_
 
 La disponibilité gérée effectue un sondage continu pour détecter d’éventuels problèmes avec les composants Exchange ou leurs dépendances. Cette fonctionnalité effectue également des actions de récupération pour s'assurer que l’utilisateur final ne rencontre aucun problème avec l’un de ces composants. Toutefois, il peut arriver que les paramètres prédéfinis ne conviennent pas à votre environnement. Les sondes, les moniteurs et les répondeurs de disponibilité gérée peuvent être personnalisés en créant une substitution.
 

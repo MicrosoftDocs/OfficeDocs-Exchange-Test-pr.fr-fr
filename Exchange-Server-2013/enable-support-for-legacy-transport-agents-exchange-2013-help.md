@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Dans Microsoft Exchange Server 2013, les agents de transport qui ont été créés à l'aide de la version 4.0 de Microsoft .NET Framework sont pris en charge par défaut. Exchange 2013 prend en charge les agents de transport créés à l'aide des versions antérieures de .NET Framework, mais leur prise en charge n'est pas activée par défaut. Pour activer la prise en charge des agents de transports hérités, vous devez modifier le fichier de configuration de l'application XML approprié. Les fichiers que vous devez modifier diffèrent selon l'emplacement d'installation de l'agent de transport :
 

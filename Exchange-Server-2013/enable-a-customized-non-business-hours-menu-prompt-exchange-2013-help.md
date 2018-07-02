@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-03-22_
+_**Dernière rubrique modifiée :** 2013-03-22_
 
 Vous pouvez personnaliser l'invite de menu qui sera utilisée par un standard automatique de messagerie unifiée en dehors des heures d'ouverture. Après avoir créé un standard automatique de messagerie unifiée, une invite du système par défaut (« Bienvenue dans la messagerie unifiée ») est l'invite de menu qu'entendent les appelants une fois que le message d'accueil en dehors des heures d'ouverture est lu. Même si l'invite du système ne doit pas être remplacée ni modifiée, vous pouvez personnaliser les messages d'accueil et les invites de menu qui sont utilisés avec les standards automatiques de messagerie unifiée. Après avoir créé un fichier audio d'invite de menu en dehors des heures d'ouverture personnalisé, vous devez activer les entrées de navigation du menu sur le standard automatique de messagerie unifiée en dehors des heures d'ouverture.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-12-16_
+_**Dernière rubrique modifiée :** 2012-12-16_
 
 Quand la boîte aux lettres d'un utilisateur est activée pour la messagerie vocale de messagerie unifiée, un message d'accueil sur la messagerie unifiée est envoyé à l'utilisateur. Ce message contient les informations de code confidentiel qui permettent à l'utilisateur d'accéder pour la première fois au système de messagerie vocale.
 

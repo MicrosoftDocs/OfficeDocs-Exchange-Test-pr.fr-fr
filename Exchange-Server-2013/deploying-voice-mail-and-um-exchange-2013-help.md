@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 La messagerie unifiée (MU) Microsoft Exchange vous permet d’offrir des services de messagerie vocale aux utilisateurs de votre organisation. Lors du déploiement de la messagerie unifiée, vous devez intégrer votre déploiement Exchange Server au circuit de téléphonie existant de votre organisation ou à Microsoft Lync Server. Un déploiement réussi nécessite une analyse attentive de votre infrastructure de téléphonie existante et d’effectuer les étapes de planification appropriées pour déployer et gérer la messagerie vocale dans la messagerie unifiée. Si vous intégrez Exchange à Lync Server, vous devez également vous familiariser avec ce produit.
 

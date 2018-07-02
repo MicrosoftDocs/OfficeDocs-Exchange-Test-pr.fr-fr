@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-12-31_
+_**Dernière rubrique modifiée :** 2017-12-31_
 
 Le Centre d’administration Exchange ou l’Environnement de ligne de commande Exchange Management Shell vous permet d’activer ou de désactiver MAPI pour une boîte aux lettres utilisateur. Lorsque MAPI est activé, Outlook ou un autre client de messagerie électronique peut accéder à la boîte aux lettres d’un utilisateur. Lorsque MAPI est désactivé, ni Outlook ni un autre client de messagerie électronique ne peut y accéder. Cependant, la boîte aux lettres continue de recevoir des messages électroniques et, en supposant que la boîte aux lettres est configurée pour prendre en charge l’accès par ces clients, un utilisateur peut y accéder pour envoyer et recevoir des messages en utilisant Outlook Web App, un client de messagerie électronique POP ou IMAP.
 

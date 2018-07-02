@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2017-03-13_
+_**Dernière rubrique modifiée :** 2017-03-13_
 
 **Résumé** : Vue d’ensemble des compléments pour Outlook, qui fonctionnent avec Outlook sur les ordinateurs Windows et MacIntosh, sur les appareils mobiles et dans Outlook Web App et Outlook sur le web.
 

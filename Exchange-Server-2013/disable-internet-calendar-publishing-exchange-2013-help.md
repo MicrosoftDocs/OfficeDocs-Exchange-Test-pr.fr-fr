@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-02-15_
+_**Dernière rubrique modifiée :** 2014-02-15_
 
 La manière dont vous désactivez une publication de calendrier Internet dépend de la façon dont vous l’avez activée. Si vous avez créé un stratégie de partage dédiée à la publication de calendrier Internet, vous pouvez désactiver la stratégie ou la supprimer en même temps. Si vous avez configuré une publication de calendrier Internet en tant que règle de partage dans une stratégie de partage par défaut, vous pouvez simplement retirer la règle de partage pour le domaine **Anonyme**.
 

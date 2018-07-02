@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-14_
+_**Dernière rubrique modifiée :** 2012-11-14_
 
 Lorsque vous activez un utilisateur pour la messagerie unifiée et l’associez à un plan de numérotation de postes téléphoniques, une adresse proxy EUM contenant le numéro de poste de l’utilisateur est créée pour ce dernier. Vous devez définir au moins un numéro de poste pour la messagerie unifiée à utiliser afin que la messagerie vocale puisse être transférée vers la boîte aux lettres de l’utilisateur. Le numéro de poste est également utilisé lorsque l’utilisateur appelle un numéro Outlook Voice Access.
 

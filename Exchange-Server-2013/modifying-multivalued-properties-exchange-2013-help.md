@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Une propriété à valeurs multiples est une propriété qui peut contenir plusieurs valeurs. Par exemple, la propriété **BlockedRecipients** sur l’objet **RecipientFilterConfig** peut accepter plusieurs adresses de destinataire, par exemple :
 

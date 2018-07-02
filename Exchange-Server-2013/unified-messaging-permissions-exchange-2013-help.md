@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les autorisations nécessaires pour effectuer des tâches sur les serveurs d’accès au client qui exécutent le service routeur des appels de messagerie unifiée Microsoft Exchange et les serveurs de boîtes aux lettres qui exécutent le service de messagerie unifiée Microsoft Exchange varient selon la procédure en cours ou la cmdlet que vous souhaitez exécuter.
 

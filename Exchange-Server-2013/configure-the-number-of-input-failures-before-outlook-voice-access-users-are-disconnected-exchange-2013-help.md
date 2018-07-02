@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-09_
+_**Dernière rubrique modifiée :** 2012-11-09_
 
 Vous pouvez configurer combien de données incorrectes des utilisateurs qui appellent un numéro Outlook Voice Access peuvent entrer avant d'être déconnectés. Ce paramètre s'applique aux utilisateurs d'Outlook Voice Access et aux appelants non authentifiés qui utilisent la recherche dans l'annuaire.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-12-16_
+_**Dernière rubrique modifiée :** 2014-12-16_
 
 La cmdlet **Get-QueueDigest** vous permet d’afficher des informations concernant une partie ou la totalité des files d’attente au sein de votre organisation Exchange à l’aide d’une seule commande.
 

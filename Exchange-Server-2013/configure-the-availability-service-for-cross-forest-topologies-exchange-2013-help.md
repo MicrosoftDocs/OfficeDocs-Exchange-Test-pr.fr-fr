@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-10-22_
+_**Dernière rubrique modifiée :** 2014-10-22_
 
 Le service de disponibilité optimise les données de disponibilité des professionnels de l’information en fournissant des informations de disponibilité sécurisées, cohérentes et à jour aux clients exécutant Microsoft Outlook. Par défaut, ce service est installé avec Exchange Server 2013. Dans les topologies inter-forêts où tous les clients qui se connectent exécutent Outlook, le service de disponibilité est la seule méthode d’extraction des informations de disponibilité. L’environnement de ligne de commande Exchange Management Shell permet de configurer le service de disponibilité pour des topologies inter-forêts.
 

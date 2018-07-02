@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 La gestion des protocoles client de Microsoft Exchange ActiveSync, Microsoft Outlook Web App, POP3, IMAP4, du service de découverte automatique, des services Web Exchange et du service de disponibilité s’opère dans trois secteurs différents : le Centre d’administration Exchange (EAC), l’environnement de ligne de commande Exchange Management Shell et le gestionnaire Microsoft Internet Information Services (IIS). Les paramètres gérés dans chacun des emplacements varient selon le protocole client.
 

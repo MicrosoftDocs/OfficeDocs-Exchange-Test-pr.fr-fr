@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Microsoft Exchange Server 2013 utilise le concept de « *déploiement incrémentiel* » aussi bien pour la haute disponibilité que pour la résilience de site. Il vous suffit d’installer au moins deux serveurs de boîtes aux lettres Exchange 2013 en mode autonome. Ensuite, vous les configurez, ainsi que les bases de données de boîtes aux lettres, de manière incrémentielle pour obtenir une haute disponibilité et une résilience de site, selon les besoins.
 

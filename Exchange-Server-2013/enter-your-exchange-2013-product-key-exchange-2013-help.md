@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Une clé de produit indique à Exchange Server 2013 que vous avez acheté une licence Standard Edition ou Enterprise Edition. Si la clé de produit que vous avez achetée correspond à une licence Enterprise Edition, elle vous permet de monter plus de cinq bases de données par serveur et vous fournit toutes les options disponibles avec une licence Standard Edition. Pour en savoir plus sur la gestion des licences Exchange, voir [Exchange 2013 : éditions et versions](exchange-2013-editions-and-versions-exchange-2013-help.md).
 

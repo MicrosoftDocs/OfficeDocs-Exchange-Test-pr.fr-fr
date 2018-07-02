@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-19_
+_**Dernière rubrique modifiée :** 2013-04-19_
 
 Lors de la configuration des heures d'ouverture pour un standard automatique de messagerie unifiée, vous devez définir les heures d'ouverture de votre organisation ainsi que les messages d'accueil et les messages d'assistance vocaux pendant les heures d'ouverture que les appelants entent quand ils appellent un numéro de poste configuré sur le standard automatique. Si l'appelant contacte le standard automatique en dehors des heures d'ouverture que vous définissez, il entend les messages d'accueil et les messages d'assistance vocaux en dehors des heures d'ouverture.
 

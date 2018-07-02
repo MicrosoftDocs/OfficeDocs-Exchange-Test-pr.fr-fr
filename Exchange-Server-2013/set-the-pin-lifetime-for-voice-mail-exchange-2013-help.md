@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez configurer la durée de vie du code confidentiel pour les utilisateurs à messagerie unifiée. La durée de vie du code confidentiel correspond au temps maximum pendant lequel un code confidentiel Outlook Voice Access reste valide pour vos destinataires à extension messagerie unifiée. Le paramètre de durée de vie du code confidentiel est configuré dans une stratégie de boîte aux lettres de messagerie unifiée et appliqué à tous les utilisateurs à messagerie unifiée associés à la stratégie de boîte aux lettres de messagerie unifiée.
 

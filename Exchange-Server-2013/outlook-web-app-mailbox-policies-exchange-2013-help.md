@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-05_
+_**Dernière rubrique modifiée :** 2012-10-05_
 
 Utilisez les stratégies de boîte aux lettres Microsoft Outlook Web App pour créer des stratégies au niveau de l’organisation et gérer l’accès aux fonctionnalités dans Outlook Web App.
 

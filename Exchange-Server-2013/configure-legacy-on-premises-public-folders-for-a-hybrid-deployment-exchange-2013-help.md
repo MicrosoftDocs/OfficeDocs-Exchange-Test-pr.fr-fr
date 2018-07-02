@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2018-05-22_
+_**Dernière rubrique modifiée :** 2018-05-22_
 
 **Résumé** : Suivez les étapes décrites dans cet article pour synchroniser les dossiers publics entre Office 365 et votre déploiement local Exchange 2007 ou Exchange 2010.
 

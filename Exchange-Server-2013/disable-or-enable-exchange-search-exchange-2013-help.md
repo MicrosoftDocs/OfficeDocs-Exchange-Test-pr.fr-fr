@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-05-07_
+_**Dernière rubrique modifiée :** 2014-05-07_
 
 Par défaut, le service de recherche Exchange est activé pour toutes les nouvelles bases de données de boîtes aux lettres et ne requiert aucune configuration supplémentaire. Cependant, si vous souhaitez interrompre le service de recherche Exchange de l'indexation du contenu de la boîte aux lettres, vous pouvez le désactiver pour des bases de données de boîtes aux lettres individuelles ou un serveur de boîtes aux lettres entier.
 

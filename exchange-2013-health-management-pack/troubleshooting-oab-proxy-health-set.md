@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Project Server 2013_
+_**Sapplique à :** Exchange Server 2013, Project Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 L'indicateur d'intégrité OAB.Proxy surveille la disponibilité de l'infrastructure proxy du carnet d'adresses en mode hors connexion (OBA) sur le serveur d'accès au client (CAS).
 

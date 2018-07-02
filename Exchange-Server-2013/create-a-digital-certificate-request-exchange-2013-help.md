@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Dans Exchange Server 2013, vous pouvez gérer des certificats à l’aide du centre d’administration Exchange ou de Shell. Le centre d’administration Exchange comprend une nouvelle interface utilisateur de gestion des certificats. Sur cette nouvelle interface utilisateur, vous pouvez créer des certificats, modifier un certificat existant ou en supprimer.
 

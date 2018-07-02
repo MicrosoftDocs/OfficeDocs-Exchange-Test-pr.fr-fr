@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-16_
+_**Dernière rubrique modifiée :** 2012-11-16_
 
 Vous pouvez utiliser le composant logiciel enfichable Services de la console de gestion Microsoft (MMC) ou cmd.exe à l'invite de commandes pour démarrer le service de messagerie unifiée Microsoft Exchange sur un serveur de boîtes aux lettres. Par défaut, le service de messagerie unifiée MicrosoftExchange est lancé après l'installation d'un serveur de boîtes aux lettres. Cependant, dans certains cas, vous êtes amené à redémarrer le service de messagerie unifiée Microsoft Exchange manuellement, par exemple lorsque vous mettez le serveur de boîtes aux lettres hors connexion et que vous devez ensuite le remettre en ligne.
 

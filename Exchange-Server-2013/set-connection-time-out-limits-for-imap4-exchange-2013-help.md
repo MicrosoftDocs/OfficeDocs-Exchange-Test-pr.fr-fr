@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-28_
+_**Dernière rubrique modifiée :** 2012-11-28_
 
 Vous pouvez utiliser le Centre d’administration Exchange ou l’environnement de ligne de commande Exchange Management pour configurer les limites de délai de connexion pour les connexions IMAP4 inactives authentifiées et non authentifiées.
 

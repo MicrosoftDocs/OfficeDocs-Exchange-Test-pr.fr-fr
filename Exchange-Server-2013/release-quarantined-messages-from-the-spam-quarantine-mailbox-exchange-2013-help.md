@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez utiliser Microsoft Outlook pour récupérer un message mis en quarantaine à partir de la boîte aux lettres de mise en quarantaine du courrier indésirable.
 

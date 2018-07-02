@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Quand vous activez la messagerie unifiée pour un utilisateur, un ensemble par défaut de propriétés est appliqué à l'utilisateur pour lui permettre d'utiliser les fonctionnalités de messagerie vocale incluses dans la messagerie unifiée. Après avoir activé la messagerie vocale pour un utilisateur, vous avez la possibilité d'ajouter une adresse SIP (Session Initiation Protocol) pour l'utilisateur si une stratégie de boîte aux lettres de messagerie unifiée liée à un plan de numérotation URI SIP lui a été attribuée. Vous pouvez aussi ajouter un numéro E.164 pour l'utilisateur si une stratégie de boîte aux lettres de messagerie unifiée liée à un plan de numérotation E.164 lui a été attribuée. Dans les deux cas, un numéro de poste doit être configuré pour l'utilisateur.
 

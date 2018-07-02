@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-04-21_
+_**Dernière rubrique modifiée :** 2014-04-21_
 
 La gestion des certificats dans un déploiement Exchange Server est l’une des tâches administratives les plus importantes. Il est primordial de s’assurer que les certificats sont installés et configurés de manière appropriée dans le but de fournir une infrastructure de messagerie sécurisée pour l’entreprise. Dans Exchange 2010, la console de gestion Exchange était la méthode principale de gestion des certificats. Dans Exchange 2013, la fonctionnalité de gestion des certificats se fait dans la console d’administration Exchange, la nouvelle interface utilisateur administrative d’Exchange 2013. Exchange 2013 vise à alléger la charge de travail des administrateurs en minimisant le nombre de certificats à gérer et le nombre d’opérations de certificat à effectuer, ainsi qu’en permettant une gestion centralisée.
 

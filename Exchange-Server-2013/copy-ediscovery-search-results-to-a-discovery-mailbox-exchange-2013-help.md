@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-02-24_
+_**Dernière rubrique modifiée :** 2014-02-24_
 
 Une fois la recherche de découverte électronique inaltérable créée, vous pouvez copier les résultats obtenus dans une boîte aux lettres de découverte via le CAE. Vous pouvez également utiliser l’interpréteur de commandes pour démarrer une recherche de découverte électronique créée à l’aide de la cmdlet **New-MailboxSearch**, qui va copier les résultats vers la boîte aux lettres de découverte spécifiée lors de la création de la recherche.
 

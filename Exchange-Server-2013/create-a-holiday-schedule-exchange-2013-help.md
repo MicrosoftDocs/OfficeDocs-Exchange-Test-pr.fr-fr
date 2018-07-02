@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-19_
+_**Dernière rubrique modifiée :** 2013-04-19_
 
 Vous pouvez définir les date et heure de fermeture de votre organisation pour les vacances et d'autres occasions. Entre les dates de début et les dates de fin spécifiées, les appelants qui accèdent au standard automatique de messagerie unifiée entendent le message d'accueil pendant les congés spécifiés lors de la configuration du calendrier des vacances. Après avoir entendu le message d'accueil pendant les congés que vous avez spécifiés, l'appelant entend le message d'accueil et les invites de menu en dehors des heures d'ouverture.
 

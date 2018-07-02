@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-17_
+_**Dernière rubrique modifiée :** 2012-10-17_
 
 Vous pouvez avoir un scénario dans lequel vous voulez envoyer et recevoir des messages d'un serveur passerelle de fax qui n'utilise pas SMTP comme mécanisme de transport principal. Suivez les étapes indiquées dans la présente procédure pour créer un connecteur étranger qui remet à et reçoit des messages d'un système étranger.
 

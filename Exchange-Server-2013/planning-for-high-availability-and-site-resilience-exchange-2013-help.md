@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Pendant la phase de planification, les architectes, administrateurs et autres intervenants sur le système doivent identifier les impératifs de l’entreprise et de l’architecture pour le déploiement, en particulier les exigences de haute disponibilité et de résilience de site.
 

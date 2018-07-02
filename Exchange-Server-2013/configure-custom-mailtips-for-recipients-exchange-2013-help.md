@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-06-01_
+_**Dernière rubrique modifiée :** 2014-06-01_
 
 Les *Infos-courrier* sont des messages informatifs à l'intention des utilisateurs, qui s'affichent dans la barre d'informations dans Outlook Web App et Microsoft Outlook 2010 ou version ultérieure quand un utilisateur effectue l'une des opérations suivantes en composant un message électronique :
 

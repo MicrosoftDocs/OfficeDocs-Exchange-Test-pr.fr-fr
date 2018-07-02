@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-12-12_
+_**Dernière rubrique modifiée :** 2012-12-12_
 
 Vous pouvez activer ou désactiver la fonction Émettre au téléphone pour les utilisateurs associés à une stratégie de boîte aux lettres de messagerie unifiée. Cette option est activée par défaut et permet aux utilisateurs de lire leurs messages vocaux sur un téléphone. Cette option n'est pas disponible pour les utilisateurs à messagerie unifiée qui disposent d'une boîte aux lettres sur un serveur Microsoft Exchange Server 2007.
 

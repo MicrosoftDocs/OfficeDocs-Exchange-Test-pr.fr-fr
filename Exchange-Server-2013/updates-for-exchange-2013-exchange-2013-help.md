@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-03-20_
+_**Dernière rubrique modifiée :** 2018-03-20_
 
 Découvrez les modifications apportées au processus de mise à jour de Microsoft Exchange Server 2013. Cet article fournit également des liens vers des informations sur les fonctionnalités et les améliorations incluses dans les versions précédentes et la version actuelle d’Exchange 2013.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-01-28_
+_**Dernière rubrique modifiée :** 2014-01-28_
 
 Une copie de base de données de boîte aux lettres retardée est configurée avec un délai d'attente de relecture supérieur à 0. L'activation et la récupération d'une copie de base de données de boîte aux lettres retardée constitue un processus simple si vous souhaitez que la base de données relise tous les fichiers journaux et active la copie de base de données. Si vous souhaitez relire les fichiers journaux jusqu'à un moment spécifique dans le temps, l'opération se complique car il vous faut manipuler manuellement les fichiers journaux et exécuter Eseutil.
 

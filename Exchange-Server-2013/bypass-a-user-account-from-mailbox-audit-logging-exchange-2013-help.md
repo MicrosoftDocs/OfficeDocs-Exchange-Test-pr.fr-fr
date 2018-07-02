@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-05-21_
+_**Dernière rubrique modifiée :** 2013-05-21_
 
 Lorsque vous activez la fonctionnalité d'enregistrement d'audit pour une boîte aux lettres, les événements d'accès à la boîte aux lettres spécifiée (par exemple, accès à un dossier ou un message, ou suppression permanente d'un message) sont enregistrés. Toutefois, l'accès par certains comptes autorisés, tels que les comptes utilisés par des outils tiers ou aux fins de surveillance licite, peut entraîner la création d'un grand nombre d'entrées de journal d'audit de boîte aux lettres et s'avérer être sans intérêt pour votre organisation.
 

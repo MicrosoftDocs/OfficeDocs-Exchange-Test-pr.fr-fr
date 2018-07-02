@@ -13,7 +13,7 @@ ms.translationtype: MT
 
  
 
-_**Dernière rubrique modifiée :**2018-03-26_
+_**Dernière rubrique modifiée :** 2018-03-26_
 
 **Résumé** : Cet article explique comment déplacer des dossiers publics modernes d’Exchange 2013 vers Office 365.
 

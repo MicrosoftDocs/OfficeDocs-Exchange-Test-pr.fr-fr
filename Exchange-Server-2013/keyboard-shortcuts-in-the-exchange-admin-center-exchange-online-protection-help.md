@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Microsoft s'engage à faciliter l'utilisation de ses produits et services pour tous. Les sections suivantes fournissent des informations sur les raccourcis clavier qui permettent aux personnes à mobilité réduite d'accéder plus facilement à Microsoft Exchange et aux autres produits et services Microsoft.
 

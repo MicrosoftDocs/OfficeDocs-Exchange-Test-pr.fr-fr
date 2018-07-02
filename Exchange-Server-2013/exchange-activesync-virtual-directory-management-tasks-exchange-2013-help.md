@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-05_
+_**Dernière rubrique modifiée :** 2012-10-05_
 
 Vous pouvez gérer plusieurs de ces paramètres d’application Exchange ActiveSync dans Exchange Server 2013 via le répertoire virtuel Exchange ActiveSync. Un répertoire virtuel est utilisé par Internet Information Services (IIS) pour autoriser l’accès à une application web, par exemple Exchange ActiveSync. Certains des paramètres du répertoire virtuel, que vous pouvez gérer pour Exchange ActiveSync incluent l’authentification, de sécurité et de création de rapports.
 

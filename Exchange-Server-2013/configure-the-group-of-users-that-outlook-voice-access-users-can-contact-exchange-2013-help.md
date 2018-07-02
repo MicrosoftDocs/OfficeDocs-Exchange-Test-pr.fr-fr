@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-09_
+_**Dernière rubrique modifiée :** 2012-11-09_
 
 Vous pouvez préciser les utilisateurs pouvant recevoir des appels transférés ou des messages vocaux parmi les utilisateurs de Outlook Voice Access. Par défaut, l’option **Dans ce plan de commutation seulement** est sélectionnée. Vous pouvez modifier ce paramètre pour permettre aux utilisateurs de Outlook Voice Access de transférer des appels ou d'envoyer des messages vocaux aux utilisateurs de toute l'organisation, à un standard automatique de messagerie unifiée ou à un numéro d'extension spécifique.
 

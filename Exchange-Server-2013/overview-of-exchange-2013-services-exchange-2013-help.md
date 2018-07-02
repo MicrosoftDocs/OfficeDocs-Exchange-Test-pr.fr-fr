@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-10-20_
+_**Dernière rubrique modifiée :** 2017-10-20_
 
 Lors de l’installation de Exchange Server 2013, le programme d’installation exécute un ensemble de tâches qui installent de nouveaux services dans Microsoft Windows. Un service est un processus en arrière-plan qui peut être lancé lors du démarrage du serveur par le Gestionnaire de contrôle des services Windows. Les services sont conçus pour fonctionner de façon indépendante et sans intervention de l’administrateur de fichiers exécutables. Un service peut s’exécuter à un mode de console ou un mode de graphical user interface (interface utilisateur).
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-04_
+_**Dernière rubrique modifiée :** 2015-01-04_
 
 Une relation d’organisation permet aux utilisateurs de votre organisation Exchange de partager des informations de disponibilité de calendrier avec une organisation Office 365 ou une autre organisation Exchange sur site. Vous pouvez supprimer une relation d’organisation pour désactiver le partage de calendrier avec l’autre organisation.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Vous pouvez créer des entrées de domaine distant pour définir les paramètres de transfert de messages entre l’organisation Microsoft Exchange Server 2013 et les domaines à l’extérieur de votre organisation Exchange. Lorsque vous créez une entrée de domaine distant, vous contrôlez les types de messages envoyés à ce domaine. Vous pouvez également appliquer des stratégies de format de message et des jeux de caractères acceptables aux messages envoyés par des utilisateurs de votre organisation au domaine distant. Les paramètres pour les domaines distants sont des paramètres de configuration globaux pour l’organisation Exchange.
 

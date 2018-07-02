@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-12_
+_**Dernière rubrique modifiée :** 2015-03-12_
 
 Vous pouvez configurer un téléphone mobile, tel qu'un téléphone Windows, de façon à pouvoir utiliser MicrosoftExchange ActiveSync. Vous devez effectuer cette procédure sur chaque téléphone mobile appartenant à votre organisation.
 

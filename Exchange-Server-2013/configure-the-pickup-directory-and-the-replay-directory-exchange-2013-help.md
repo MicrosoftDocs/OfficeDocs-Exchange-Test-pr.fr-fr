@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Le répertoire de collecte et le répertoire de relecture sont utilisés par le service de transport sur les serveurs de boîtes aux lettres et sur les serveurs de transport Edge pour insérer des fichiers de messages directement dans le pipeline de transport. Les fichiers de message électronique correctement mis en forme que vous copiez dans le répertoire de collecte ou de relecture sont soumis à des fins de remise. Le répertoire de collecte est utilisé par des administrateurs pour tester le flux de messagerie ou par des applications qui doivent créer et soumettre leurs propres messages. Le répertoire de relecture reçoit des messages provenant de serveurs de passerelle étrangers non SMTP et retransmet les messages que vous avez exportés à partir des files d’attente des serveurs Microsoft Exchange.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous devez configurer correctement les passerelles VoIP et les autocommutateurs privés (PBX) lorsque vous déployez la messagerie unifiée dans votre organisation. Si vous déployez la messagerie unifiée dans un environnement hybride, vous devrez également configurer correctement vos contrôleurs de frontière de session. Pour ce faire, vous devez configurer l’interface ou les interfaces des passerelles VoIP, les autocommutateurs privés IP et les contrôleurs de frontière de session que vous utilisez pour communiquer avec les serveurs d’accès au client qui exécutent le service de routage des appels de la messagerie unifiée de Microsoft Exchange et avec les serveurs de boîtes aux lettres qui exécutent le service de messagerie unifiée de Microsoft Exchange.
 

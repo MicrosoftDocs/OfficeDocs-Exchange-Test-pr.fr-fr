@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 La messagerie unifiée Exchange Microsoft propose une fonctionnalité appelée Aperçu de messagerie vocale. Celle-ci utilise la reconnaissance vocale automatique (ASR) pour ajouter aux messages vocaux une version texte de leur contenu audio. La reconnaissance vocale n'est pas extrêmement précise, surtout si elle est utilisée pour enregistrer des sons transmis par téléphone qui contiennent des voix et des bruits inconnus. Certaines organisations nécessitent systématiquement des transcriptions parfaites (ou presque) des messages. Le programme Partenaires d'aperçu de messagerie vocale peut aider à satisfaire leurs exigences.
 

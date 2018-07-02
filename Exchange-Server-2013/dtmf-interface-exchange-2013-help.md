@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Dans la messagerie unifiée, les appelants peuvent utiliser des entrées DTMF (numérotation en fréquences vocales), également appelées numérotation multifréquence, et des entrées vocales pour interagir avec le système. La méthode utilisée par les appelants dépend de la configuration des standards automatiques et des plans de numérotation de messagerie unifiée.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les autorisations requises pour effectuer les tâches de configuration des rôles de gestion varient en fonction de la procédure exécutée ou de la cmdlet que vous voulez exécuter. Pour plus d'informations sur les rôles de gestion, voir [Présentation des rôles de gestion](understanding-management-roles-exchange-2013-help.md).
 

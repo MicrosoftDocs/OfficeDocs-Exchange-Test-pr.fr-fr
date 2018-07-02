@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Configurez une relation organisationnelle pour partager des informations de calendrier avec un partenaire commercial externe. Une relation organisationnelle peut être configurée entre deux organisations Exchange 2013 fédérées ou entre une organisation Exchange 2013 fédérée et des organisations Exchange 2010 fédérées. Vous pouvez également configurer une relation organisationnelle entre votre organisation Exchange sur site et une organisation Office 365.
 

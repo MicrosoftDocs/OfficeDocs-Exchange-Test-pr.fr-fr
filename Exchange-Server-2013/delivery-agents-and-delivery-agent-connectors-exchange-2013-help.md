@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Un agent de remise peut remettre des messages à partir de votre environnement Exchange Server SMTP à un système qui n’utilise pas le protocole SMTP. Chaque agent de remise est associé à un connecteur d’agent de remise qui place en attente les messages acheminés à un agent de remise pour le traitement et la livraison au système ou périphérique non-SMTP.
 

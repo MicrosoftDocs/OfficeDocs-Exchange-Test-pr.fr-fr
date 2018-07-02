@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-07-02_
+_**Dernière rubrique modifiée :** 2013-07-02_
 
 Le serveur proxy du service de réplication de boîtes aux lettres (proxy MRS) facilite les déplacements de boîtes aux lettres inter-forêts et les migrations de déplacement à distance entre votre organisation Exchange locale et Exchange Online. Dans Exchange 2013, le proxy MRS est inclus dans le rôle serveur de boîtes aux lettres (également appelé *Serveur de boîtes aux lettres*). Durant les migrations de déplacement à distance et inter-forêts, un serveur d'accès au client agit en tant que proxy pour les demandes de déplacement entrantes pour le serveur de boîtes aux lettres. Par défaut, la capacité d'un serveur d'accès au client d'accepter ces demandes est désactivée. Pour permettre au serveur d'accès au client d'accepter des demandes de déplacement entrantes, vous devez activer le point de terminaison du proxy MRS.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion `Recipient Policies` permet aux administrateurs de gérer des stratégies de destinataire, comme des stratégies de limitation, des stratégies de boîte aux lettres Microsoft Office Outlook Web App et des stratégie de périphériques mobiles, au sein d’une organisation.
 

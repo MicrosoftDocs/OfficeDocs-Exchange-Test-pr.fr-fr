@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez configurer plusieurs adresses de messagerie pour une même boîte aux lettres. Les adresses supplémentaires sont appelées *adresses proxy*. Une adresse proxy permet à un utilisateur de recevoir un e-mail envoyé à une adresse de messagerie différente. Tous les e-mails envoyés à l’adresse proxy de l’utilisateur sont réceptionnés à son adresse de messagerie principale, également appelée *adresse SMTP principale* ou *adresse de réponse par défaut*.
 

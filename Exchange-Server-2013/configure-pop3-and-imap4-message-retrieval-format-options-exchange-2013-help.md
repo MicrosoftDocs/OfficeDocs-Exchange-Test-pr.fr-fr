@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Vous pouvez configurer le format de récupération des messages pour les utilisateurs qui se connectent à leur messagerie électronique à l’aide de POP3 et d’IMAP4. Les options de récupération des messages peuvent être configurées au niveau du serveur à l’aide du Centre d’administration Exchange (CAE) ou de l’environnement de ligne de commande Exchange Management Shell ou au niveau de l’utilisateur via l’environnement de ligne de commande Exchange Management Shell.
 

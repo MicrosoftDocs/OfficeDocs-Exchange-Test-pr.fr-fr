@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 L'attribution de rôles de gestion permet d'attribuer un rôle de gestion à un utilisateur ou à un groupe de sécurité universel. En attribuant un rôle à un utilisateur ou à un groupe de sécurité universel, vous autorisez ces utilisateurs à effectuer des tâches qui dépendent de cmdlets ou de scripts et permettez à leurs paramètres d'être définis sur le rôle de gestion.
 

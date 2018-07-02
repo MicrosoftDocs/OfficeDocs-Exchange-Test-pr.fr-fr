@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2014-12-02_
+_**Dernière rubrique modifiée :** 2014-12-02_
 
 La configuration de Microsoft Exchange Server 2013 ne peut pas continuer, car le compte actuel n’est pas connecté à un domaine Active Directory. Vous devez vous connecter à l'aide d'un compte Active Directory ayant les autorisations requises pour installer Exchange Server 2013.
 

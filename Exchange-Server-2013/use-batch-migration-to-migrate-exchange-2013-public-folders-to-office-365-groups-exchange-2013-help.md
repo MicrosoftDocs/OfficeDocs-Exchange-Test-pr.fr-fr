@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-03-26_
+_**Dernière rubrique modifiée :** 2018-03-26_
 
 **Résumé** : Comment déplacer vos dossiers publics Exchange 2013 vers Groupes Office 365.
 
@@ -77,7 +77,7 @@ Avant de commencer, vérifiez que vous avez téléchargé et enregistré tous le
 
   - **LockAndSavePublicFolderProperties.ps1**. Ce script met les dossiers publics en lecture seule pour empêcher toute modification, et transfère les propriétés de messagerie des dossiers publics (à condition que les dossiers publics soient à extension messagerie) aux groupes cibles, qui redirigent les e-mails à partir de dossiers publics aux groupes cibles. Ce script sauvegarde également les entrées d’autorisation et les propriétés de messagerie avant de les modifier.
 
-  - **LockAndSavePublicFolderProperties.strings.psd1:** Ce fichier de support est utilisé par le script `LockAndSavePublicFolderProperties.ps1`.
+  - **LockAndSavePublicFolderProperties.strings.psd1:**  Ce fichier de support est utilisé par le script `LockAndSavePublicFolderProperties.ps1`.
 
   - **UnlockAndRestorePublicFolderProperties.ps1**. Ce script restaure les droits d’accès et les propriétés de messagerie des dossiers publics à l’aide de fichiers de sauvegarde créés par `LockandSavePublicFolderProperties.ps1`.
 

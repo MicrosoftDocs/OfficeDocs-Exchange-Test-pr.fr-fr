@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-17_
+_**Dernière rubrique modifiée :** 2013-02-17_
 
 Vous pouvez configurer le port de Transport Layer Security (TLS) qui est utilisé pour écouter les requêtes SIP sur un serveur d'accès au Client qui exécute le service Microsoft Exchange Unified Messaging routeur d'appels. Par défaut, lorsque vous installez un serveur d'accès au Client, le numéro de port d'écoute TLS SIP est défini à 5061.
 

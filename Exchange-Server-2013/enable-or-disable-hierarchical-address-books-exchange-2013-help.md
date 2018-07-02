@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez configurer un carnet d’adresses hiérarchique, une fonctionnalité dont les utilisateurs disposent dans Microsoft Outlook 2010 ou versions ultérieures. Avec un carnet d’adresses hiérarchique, les utilisateurs peuvent rechercher des destinataires dans leur organisation Exchange en utilisant une hiérarchie d’organisation basée sur la structure hiérarchique ou d’ancienneté. Pour en savoir plus sur les carnets d’adresses hiérarchiques, consultez la rubrique [Carnets d’adresses hiérarchiques](hierarchical-address-books-exchange-2013-help.md).
 

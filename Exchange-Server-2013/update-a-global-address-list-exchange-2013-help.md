@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-12-16_
+_**Dernière rubrique modifiée :** 2014-12-16_
 
 Vous pouvez utiliser l'environnement de ligne de commande Exchange Management Shell pour mettre à jour une liste d'adresses globale (LAG). Une liste d'adresses globale (LAG) est un répertoire qui contient les entrées de chaque groupe, utilisateur et contact dans la mise en œuvre de MicrosoftExchange d'une organisation.
 

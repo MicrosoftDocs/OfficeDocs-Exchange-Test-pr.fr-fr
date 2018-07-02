@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les filtres de l’étendue du rôle de gestion servent à définir des étendues de gestion personnalisables. Les filtres d’étendue vous permettent de créer une étendue correspondant à la manière dont vous segmentez vos destinataires, bases de données et serveurs pour que les administrateurs gèrent uniquement les objets auxquels ils doivent accéder. Les filtres d’étendue de gestion peuvent utiliser presque toutes les propriétés d’objet destinataire, base de données ou serveur.
 

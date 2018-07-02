@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-12-16_
+_**Dernière rubrique modifiée :** 2014-12-16_
 
 La liste d'adresses globale (LAG) est un répertoire qui contient les entrées de chaque groupe, utilisateur et contact dans la mise en œuvre de MicrosoftExchange dans une organisation. Si votre organisation utilise la stratégie de carnet d'adresses, vous pouvez également créer des LAG supplémentaires. Pour plus d'informations, consultez la rubrique [Stratégies de carnet d’adresses](address-book-policies-exchange-2013-help.md).
 

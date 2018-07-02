@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Un numéro Outlook Voice Access permet à un utilisateur activé pour la messagerie unifiée et la messagerie vocale d'accéder à sa boîte aux lettres à l'aide d'Outlook Voice Access. Lorsque vous configurez un numéro Outlook Voice Access ou un numéro d'accès d'abonné dans un plan de numérotation, les utilisateurs à extension messagerie unifiée peuvent appeler le numéro, se connecter à leur boîte aux lettres et accéder à leurs informations personnelles de messagerie électronique, de messagerie vocale, de calendrier et de contact.
 

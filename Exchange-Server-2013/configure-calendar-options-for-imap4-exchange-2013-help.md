@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-27_
+_**Dernière rubrique modifiée :** 2012-11-27_
 
 Vous pouvez utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer les paramètres d’accès au calendrier des utilisateurs qui se connectent à leurs boîtes aux lettres à l’aide de connexions IMAP4. Les paramètres que vous spécifiez déterminent la manière dont vos utilisateurs IMAP4 peuvent accéder à leur calendrier et échangent des informations de calendrier (par exemple, envoyer ou répondre à une demande de réunion) avec d’autres utilisateurs.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Pour toutes les tâches de gestion liées à la réécriture d’adresses et aux agents de réécriture d’adresses, utilisez l’environnement de ligne de commande Exchange Management Shell sur un serveur de transport Edge. Pour plus d’informations sur la réécriture d’adresses, consultez la rubrique [Réécriture d’adresses sur des serveurs de transport Edge](address-rewriting-on-edge-transport-servers-exchange-2013-help.md).
 

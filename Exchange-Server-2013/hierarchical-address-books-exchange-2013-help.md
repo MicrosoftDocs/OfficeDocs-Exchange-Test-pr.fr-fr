@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-03-26_
+_**Dernière rubrique modifiée :** 2014-03-26_
 
 Le carnet d’adresses hiérarchique permet aux utilisateurs de rechercher des destinataires dans leur carnet d’adresses à l’aide d’une hiérarchie d’organisation. Normalement, les utilisateurs sont limités à la LAG par défaut et à ses propriétés de destinataire, et la structure de la LAG ne reflète pas souvent les relations hiérarchiques ou d’ancienneté des destinataires de votre organisation. Le fait de pouvoir personnaliser un carnet d’adresses hiérarchique reflétant la structure métier propre à votre organisation permet à vos utilisateurs de trouver efficacement les destinataires internes.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2014-09-17_
+_**Dernière rubrique modifiée :** 2014-09-17_
 
 Vous pouvez utiliser l'environnement de ligne de commande pour activer l'enregistrement des invites et des messages d'accueil personnalisés pour les plans de numérotation et les standards automatiques de messagerie unifiée à l'aide de l'interface utilisateur de téléphonie (TUI). Cela peut être utile si vous voulez modifier une annonce ou un message d'accueil personnalisés à l'aide du CAE ou de l'environnement de ligne de commande, ou en cas d'urgence telle que la fermeture d'une organisation pour des raisons météorologiques. Lorsque vous modifiez une annonce ou un message d’accueil personnalisé sur un standard automatique de messagerie unifiée, vous devez modifier l’enregistrement d’invite de la TUI sur le plan de numérotation auquel le standard automatique de messagerie unifiée est lié.
 

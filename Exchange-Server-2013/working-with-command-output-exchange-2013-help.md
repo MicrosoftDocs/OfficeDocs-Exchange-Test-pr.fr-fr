@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Exchange Management Shell offre plusieurs méthodes que vous pouvez utiliser pour mettre en forme la sortie de la commande. Cette rubrique aborde les sujets suivants :
 

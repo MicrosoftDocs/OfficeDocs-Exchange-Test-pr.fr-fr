@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-11-15_
+_**Dernière rubrique modifiée :** 2017-11-15_
 
 Il existe plusieurs cas de figure dans lesquels vous pourriez être amené à exporter ou importer des balises de rétention, par exemple :
 

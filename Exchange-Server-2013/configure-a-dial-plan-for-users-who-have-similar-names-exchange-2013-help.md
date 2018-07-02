@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Vous pouvez configurer un plan de numérotation de messagerie unifiée pour spécifier les informations fournis aux appelants quand les utilisateurs possèdent des noms identiques ou similaires. La messagerie unifiée utilise ce paramètre pour différencier les utilisateurs dont les noms sont identiques ou similaires et pour fournir ces informations aux appelants. Quand un appelant ou un utilisateur d'Outlook Voice Access est invité à entrer des lettres pour rechercher un utilisateur particulier, il arrive parfois que plus d'un nom corresponde à la saisie de l'appelant. Vous pouvez utiliser l'une des options disponibles pour fournir à un appelant davantage d'informations lui permettant de localiser l'utilisateur qu'il tente de contacter.
 

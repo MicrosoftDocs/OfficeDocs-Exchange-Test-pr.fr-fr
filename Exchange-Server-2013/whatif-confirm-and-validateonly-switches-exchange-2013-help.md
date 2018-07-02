@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-04_
+_**Dernière rubrique modifiée :** 2012-10-04_
 
 Les administrateurs et les auteurs de scripts expérimentés, de même que les administrateurs qui débutent avec Exchange et les scripts, peuvent tirer parti de l'utilisation des commutateurs *WhatIf*, *Confirm* et *ValidateOnly*. Les commutateurs suivants vous aident à contrôler comment sont exécutées vos commandes et à indiquer exactement ce que fera une commande avant d’affecter les données. Cette fonctionnalité est surtout importante lorsque vous opérez une transition de votre environnement de test à votre environnement de production et pendant que vous transférez de nouveaux scripts ou commandes.
 

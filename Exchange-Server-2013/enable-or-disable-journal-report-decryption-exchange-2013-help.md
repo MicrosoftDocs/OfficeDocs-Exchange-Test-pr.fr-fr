@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Décryptage de rapport de journal l’activation permet de joindre une copie de décryptage d’un message protégé par des droits à l’état du journal de l’agent de journalisation. Avant d’activer le déchiffrement de rapport de journal, vous devez ajouter la boîte aux lettres fédéré de remise pour le groupe de super utilisateurs configuré sur votre serveur de [Services AD RMS (Active Directory Rights Management Services) (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx) .
 

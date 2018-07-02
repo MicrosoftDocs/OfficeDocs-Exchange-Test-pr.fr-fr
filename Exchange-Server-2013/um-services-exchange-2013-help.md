@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-18_
+_**Dernière rubrique modifiée :** 2012-11-18_
 
 Les serveurs d'accès au client qui exécutent le service routeur d'appels de messagerie unifiée Microsoft Exchange et les serveurs de boîtes aux lettres qui exécutent le service de messagerie unifiée Microsoft Exchange vous permettent de déployer une messagerie unifiée et des fonctionnalités de messagerie vocale pour les utilisateurs de votre organisation.
 

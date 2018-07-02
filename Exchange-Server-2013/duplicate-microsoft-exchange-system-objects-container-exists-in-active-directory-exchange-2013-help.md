@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2013-02-18_
+_**Dernière rubrique modifiée :** 2013-02-18_
 
 Le programme d'installation de Microsoft Exchange Server 2013 ne peut pas continuer, car il a détecté un conteneur d'objets système Microsoft Exchange dupliqué dans le contexte d'appellation de domaine Active Directory. Quand le programme d'installation détecte un conteneur d'objets système Microsoft Exchange dupliqué, vous devez supprimer le conteneur dupliqué avant de pouvoir continuer l'installation. S'il existe un conteneur d'objets système Microsoft Exchange dupliqué, vous ne pouvez pas résoudre le problème en réexécutant **DomainPrep**. Vous devez identifier et supprimer le conteneur dupliqué qui est incorrect.
 

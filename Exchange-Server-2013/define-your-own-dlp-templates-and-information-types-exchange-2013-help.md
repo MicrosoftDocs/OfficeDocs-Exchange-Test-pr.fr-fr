@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-14_
+_**Dernière rubrique modifiée :** 2015-01-14_
 
 Vous pouvez construire des modèles de stratégie de protection contre la perte de données (DLP) sous forme de fichiers XML indépendants de Microsoft Exchange Server 2013 et les importer ensuite au moyen du Centre d'administration Exchange (CAE) ou de l'environnement de ligne de commande Exchange Management Shell. Cette rubrique décrit la procédure et les détails de la création et de l'adaptation des fichiers XML DLP pour les utiliser dans une solution DLP. Il n'est pas indispensable de développer vos propres fichiers XML DLP, car le Centre d'administration Exchange (CAE) offre un moyen d'être rapidement opérationnel avec les modèles de stratégie DLP et les règles de transport existants pour analyser des messages.
 

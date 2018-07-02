@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-17_
+_**Dernière rubrique modifiée :** 2012-10-17_
 
 Le rôle de gestion `MyName` permet à chaque utilisateur d’afficher et de modifier son nom complet et son champ Notes. Il s’agit d’un rôle personnalisé créé à partir du rôle parent [Rôle MyProfileInformation](myprofileinformation-role-exchange-2013-help.md).
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013 SP1_
+_**Sapplique à :** Exchange Server 2013 SP1_
 
-_**Dernière rubrique modifiée :**2014-06-23_
+_**Dernière rubrique modifiée :** 2014-06-23_
 
 Un basculement de serveur est une opération effectuée dans le but de déplacer toutes les copies de base de données de boîtes aux lettres actives du serveur de boîtes aux lettres actuel vers un ou plusieurs autres serveurs de boîtes aux lettres au sein d'un groupe de disponibilité de base de données. Cette tâche est effectuée dans le cadre de la préparation d’une interruption programmée pour le serveur de boîtes aux lettres actuel.
 

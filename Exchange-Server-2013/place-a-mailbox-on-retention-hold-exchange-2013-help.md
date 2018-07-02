@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-14_
+_**Dernière rubrique modifiée :** 2012-10-14_
 
 L’activation du blocage de rétention pour une boîte de lettres suspend le traitement de la stratégie de rétention ou de la stratégie de boîte aux lettres de dossier géré sur cette boîte aux lettres. Le blocage de rétention est conçu pour les situations impliquant un utilisateur en vacances ou momentanément absent.
 

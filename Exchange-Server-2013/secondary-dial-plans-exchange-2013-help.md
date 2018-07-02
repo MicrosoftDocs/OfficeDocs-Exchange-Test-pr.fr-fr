@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Quand vous activez la messagerie unifiée pour un utilisateur, vous devez attribuer un numéro de poste et une stratégie de boîte aux lettres de messagerie unifiée qui associera l'utilisateur à un plan de numérotation de messagerie unifiée Après avoir activé la messagerie unifiée pour l'utilisateur, vous pouvez attribuer des numéros de poste supplémentaires pour cet utilisateur dans le même plan de numérotation, mais les numéros de poste au sein de ce plan de numérotation doivent être uniques. Dans certains déploiements, le même numéro de poste doit être attribué à un utilisateur dans deux plans de numérotation distincts. Si c'est le cas, vous pouvez associer l'utilisateur à un plan de numérotation de messagerie unifiée secondaire. Cette opération peut être utile, par exemple, si l'utilisateur possède deux téléphones physiques ou se déplace d'un lieu à un autre.
 

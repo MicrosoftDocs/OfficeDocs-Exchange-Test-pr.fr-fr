@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le filtrage des connexions est une fonctionnalité de blocage du courrier indésirable de Microsoft Exchange Server 2013 qui autorise ou bloque les messages électronique selon la source du message. Le filtrage des connexions est effectué par l’agent de filtrage des connexions, qui est uniquement disponible sur les serveurs de transport Edge. L’agent de filtrage des connexions s’appuie sur l’adresse IP du serveur de messagerie expéditeur pour déterminer les mesures à prendre, s’il y en a, concernant un message entrant.
 

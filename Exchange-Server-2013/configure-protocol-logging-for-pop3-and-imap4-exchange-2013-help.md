@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-27_
+_**Dernière rubrique modifiée :** 2012-11-27_
 
 Vous pouvez utiliser l’environnement de ligne de commande Exchange Management Shell pour activer, désactiver ou modifier les paramètres d’enregistrement dans le journal de protocole pour POP3 et IMAP4. Par défaut, l'enregistrement dans le journal de protocole n'est pas activé.
 

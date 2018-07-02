@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-19_
+_**Dernière rubrique modifiée :** 2013-02-19_
 
 Grace à la messagerie unifiée, les utilisateurs de l'organisation Exchange peuvent recevoir tous leurs messages électroniques et messages vocaux dans une seule boîte aux lettres. La fonctionnalité de messagerie unifiée et les fonctions de messagerie vocale augmentent sensiblement la productivité de l’utilisateur et active une messagerie plus flexible au sein d’une organisation.
 
@@ -99,7 +99,7 @@ Après avoir créé une boîte aux lettres Exchange pour l'utilisateur, vous pou
     
     Vous devez indiquer un numéro de poste valide pour l’utilisateur ; le numéro doit comporter le nombre de chiffres spécifié dans le plan de numérotation. Vous ne pouvez entrer que des caractères numériques ou des chiffres de 1 à 20. Le numéro de poste type est composé de 3 à 7 chiffres et est configuré sur le plan de numérotation auquel la stratégie de boîte aux lettres est liée et à partir duquel elle est attribuée à l'utilisateur.
 
-3.  **Paramètres de code confidentiel pour l'utilisateur :**
+3.  **Paramètres de code confidentiel pour l'utilisateur :** 
     
       - **Code confidentiel configuré automatiquement**   Ce paramètre génère automatiquement un code confidentiel pour l'utilisateur à extension messagerie à utiliser pour l'accès à la messagerie vocale via Outlook Voice Access. Il s’agit du paramètre par défaut. Lorsque vous cliquez sur ce bouton, un code confidentiel est automatiquement généré d’après les stratégies de code confidentiel configurées dans la stratégie de boîte aux lettres de messagerie unifiée attribuée à l’utilisateur. Il est recommandé d’utiliser ce paramètre afin de protéger le code confidentiel de l’utilisateur. Le code confidentiel est envoyé à l’utilisateur dans le message de bienvenue qu’il reçoit après avoir été activé pour la messagerie unifiée. Par défaut, il devra modifier ce code confidentiel lorsqu’il se connecte pour la première fois à sa boîte aux lettres pour accéder à sa messagerie vocale.
     

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-09-25_
+_**Dernière rubrique modifiée :** 2012-09-25_
 
 Le suivi de la conversion de contenu capture les erreurs dans la conversion de contenu MAPI réalisées par le service de transport de boîtes aux lettres sur les messages entrants et sortants dans un serveur de boîtes aux lettres Microsoft Exchange Server 2013.
 

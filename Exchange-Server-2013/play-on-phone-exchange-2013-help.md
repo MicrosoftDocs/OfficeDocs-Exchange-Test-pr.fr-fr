@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-25_
+_**Dernière rubrique modifiée :** 2013-04-25_
 
 Après l'arrivée d'un message vocal, les utilisateurs peuvent choisir d'écouter ce dernier à l'aide des haut-parleurs ou du casque de leur ordinateur ou d'utiliser la fonctionnalité Lire sur le téléphone. La fonctionnalité Lire sur le téléphone est incluse dans Microsoft Outlook et Outlook Web App, et les paramètres de cette fonctionnalité se trouvent dans la section **Lire sur le téléphone** sous les options **Messagerie vocale**. Cette rubrique décrit la manière dont un utilisateur à extension messagerie unifiée peut utiliser la fonctionnalité Lire sur le téléphone.
 

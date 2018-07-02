@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-12-16_
+_**Dernière rubrique modifiée :** 2014-12-16_
 
 Par défaut, lorsque vous installez le rôle serveur de boîtes aux lettres, un carnet d'adresses en mode hors connexion par défaut basé sur le Web, nommé Carnet d'adresses en mode hors connexion par défaut, est créé. Vous pouvez définir n'importe quel carnet d'adresses en mode hors connexion dans votre organisation Exchange comme carnet d'adresses en mode hors connexion par défaut. Ce nouveau carnet d'adresses en mode hors connexion par défaut est associé à toutes les nouvelles bases de données de boîtes aux lettres. Vous ne pouvez avoir qu'un seul carnet d'adresses en mode hors connexion par défaut dans votre organisation. Si vous supprimez le carnet d'adresses en mode hors connexion par défaut, MicrosoftExchange n'affecte pas automatiquement un autre carnet d'adresses en mode hors connexion par défaut. Vous devez désigner manuellement un autre carnet d'adresses en mode hors connexion par défaut.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-07-31_
+_**Dernière rubrique modifiée :** 2015-07-31_
 
 Avec les composants WebPart MicrosoftOfficeOutlook Web App, vous pouvez spécifier la boîte aux lettres à ouvrir, le dossier à ouvrir dans la boîte aux lettres et l’affichage du contenu à utiliser.
 
@@ -185,13 +185,13 @@ Les composants WebPart Outlook Web App peuvent également être entrés manuelle
 
 Les exemples ci-dessous montrent comment accéder directement aux affichages courants d’Outlook Web App :
 
-  - **Boîte de réception :** https://*\<server name\>*/owa/?cmd=contents\&module=inbox
+  - **Boîte de réception :**  https://*\<server name\>*/owa/?cmd=contents\&module=inbox
 
-  - **Calendrier (aujourd’hui) :**https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&exsvurl=1
+  - **Calendrier (aujourd’hui) :** https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&exsvurl=1
 
-  - **Calendrier (semaine) :** https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=weekly\&exsvurl=1
+  - **Calendrier (semaine) :**  https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=weekly\&exsvurl=1
 
-  - **Calendrier (mois) :** https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=monthly\&exsvurl=1
+  - **Calendrier (mois) :**  https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=monthly\&exsvurl=1
 
 ## Pour plus d'informations
 

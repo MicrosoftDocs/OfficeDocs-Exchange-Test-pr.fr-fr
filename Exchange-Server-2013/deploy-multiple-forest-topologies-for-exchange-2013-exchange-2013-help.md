@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Cette rubrique offre une vue d'ensemble du déploiement de Microsoft Exchange Server 2013 dans des topologies à forêts multiples. Vous trouverez des informations sur les sujets suivants :
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-07_
+_**Dernière rubrique modifiée :** 2013-02-07_
 
 Dans certaines situations, vous pouvez avoir besoin d'acheminer un message électronique via un hôte actif tiers, tel que lors d'une instance dans laquelle vous avez un Network Appliance pour lequel vous voulez exécuter des vérifications de stratégie sur des messages sortant.
 

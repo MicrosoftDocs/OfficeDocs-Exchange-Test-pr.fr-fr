@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-02_
+_**Dernière rubrique modifiée :** 2012-10-02_
 
 Les rôles de gestion sont attribués à des utilisateurs ou à un groupe de sécurité universelle. Si vous supprimez l'attribution d'un rôle, les utilisateurs auxquels ce rôle est attribué n'auront plus accès aux cmdlets disponibles pour ce rôle. Pour plus d’informations sur les attributions de rôles de gestion dans Microsoft Exchange Server 2013, voir [Présentation des attributions de rôles de gestion](understanding-management-role-assignments-exchange-2013-help.md).
 

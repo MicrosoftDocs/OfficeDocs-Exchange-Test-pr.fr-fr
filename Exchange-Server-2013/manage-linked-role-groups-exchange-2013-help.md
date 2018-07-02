@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-09_
+_**Dernière rubrique modifiée :** 2012-10-09_
 
 Vous pouvez utiliser un groupe de rôles de gestion liés pour permettre aux membres d’un groupe de sécurité universel (USG) d’une forêt Active Directory étrangère de gérer une organisation Microsoft Exchange Server 2013 au sein d’une forêt Active Directory de ressources. En associant un USG dans une forêt étrangère à un groupe de rôles liés, les membres de cet USG reçoivent les autorisations octroyées par les rôles de gestion attribués au groupe de rôles liés. Pour plus d’informations sur les groupes de rôles liés, voir [Présentation des groupes de rôles de gestion](understanding-management-role-groups-exchange-2013-help.md).
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-07-21_
+_**Dernière rubrique modifiée :** 2015-07-21_
 
 Dans MicrosoftExchange Server 2013 et Exchange Online, le service de recherche Exchange comprend des filtres destinés à indexer les types de formats de fichiers les plus courants inclus en tant que pièces jointes de messages. Vous pouvez également installer des filtres pour indexer des types de fichiers supplémentaires.
 

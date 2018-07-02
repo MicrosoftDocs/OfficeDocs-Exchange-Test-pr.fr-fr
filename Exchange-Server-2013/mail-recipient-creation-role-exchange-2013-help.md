@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion `Mail Recipient Creation` permet aux administrateurs de créer des boîtes aux lettres, des utilisateurs de messagerie, des contacts de messagerie, des groupes de distribution et des groupes de distribution dynamique dans une organisation. Ce rôle peut être associé au rôle `Mail Recipients` pour permettre la création de destinataires et la gestion des destinataires. Pour plus d’informations, voir [Rôle des destinataires de messagerie](mail-recipients-role-exchange-2013-help.md).
 

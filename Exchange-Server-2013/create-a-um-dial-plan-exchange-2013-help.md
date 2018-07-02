@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-16_
+_**Dernière rubrique modifiée :** 2013-04-16_
 
 Un plan de numérotation de messagerie unifiée contient des informations de configuration relatives à votre réseau téléphonique. Un plan de numérotation de messagerie unifiée établit un lien entre le numéro de poste téléphonique d'un utilisateur à extension messagerie vocale et sa boîte aux lettres. Lorsque vous créez un plan de numérotation de messagerie unifiée, vous pouvez configurer le nombre de chiffres des numéros de postes, le type d'URI (Uniform Resource Identifier) et les paramètres de sécurité VoIP (Voice over IP) pour le plan de numérotation.
 

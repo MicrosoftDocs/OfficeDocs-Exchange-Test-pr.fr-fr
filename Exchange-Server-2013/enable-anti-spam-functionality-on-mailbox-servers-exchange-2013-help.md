@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-01-23_
+_**Dernière rubrique modifiée :** 2014-01-23_
 
 Dans Microsoft Exchange Server 2013, les agents anti-spam suivants sont disponibles dans le service de transport des serveurs de boîtes aux lettres, mais ils ne sont pas installés par défaut :
 

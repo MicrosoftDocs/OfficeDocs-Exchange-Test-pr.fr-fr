@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion `UM Mailboxes` permet aux administrateurs de gérer la configuration de messagerie unifiée des boîtes aux lettres et d’autres destinataires au sein d’une organisation.
 

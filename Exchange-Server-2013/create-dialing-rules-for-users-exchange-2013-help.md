@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les groupes de règles de numérotation comprennent des entrées de règles de numérotation. Les règles de numérotation sont utilisées pour modifier un numéro de téléphone avant son envoi à un système téléphonique local (PBX) ou PBX IP pour les appels sortants. Les règles de numérotation ont deux fonctions :
 

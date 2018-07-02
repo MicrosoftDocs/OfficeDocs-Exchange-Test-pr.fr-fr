@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Cette rubrique décrit la procédure de déploiement de Microsoft Exchange 2013 dans une topologie de forêt ressource Exchange. Une forêt ressource Exchange est également appelée forêt Exchange dédiée. Cette rubrique suppose que vous n’avez pas de topologie Exchange 2013 existante.
 

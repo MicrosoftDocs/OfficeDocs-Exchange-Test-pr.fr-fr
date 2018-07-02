@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Microsoft Exchange 2013 prend en charge les migrations et les déplacements de boîtes aux lettres à l'aide des cmdlets **New-MoveRequest** et **New-MigrationBatch**. Vous pouvez également déplacer la boîte aux lettres via le Centre d'administration Exchange (CAE). Vous pouvez déplacer une boîte aux lettres depuis une forêt Exchange source vers une forêt Exchange 2010 cible.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les demandes de restauration de boîte aux lettres sont utilisées pour restaurer les boîtes aux lettres déconnectées. Une boîte aux lettres déconnectée est une boîte aux lettres d'une base de données de boîtes aux lettres Exchange qui n'est associée à aucun compte d'utilisateur Active Directory. Les boîtes aux lettres sont déconnectées lorsqu’elles sont désactivées, supprimées ou déplacés vers une autre base de données. Pour plus d'informations, consultez la rubrique [Boîtes aux lettres déconnectées](disconnected-mailboxes-exchange-2013-help.md).
 

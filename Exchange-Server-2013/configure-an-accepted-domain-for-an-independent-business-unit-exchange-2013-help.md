@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-02-17_
+_**Dernière rubrique modifiée :** 2014-02-17_
 
 Il peut vous arriver de devoir configurer un domaine accepté pour une division indépendante avec des serveurs de messagerie externes à votre organisation Exchange. Dans ce type de situations, vous pouvez configurer le domaine accepté en tant que domaine de relais externe.
 

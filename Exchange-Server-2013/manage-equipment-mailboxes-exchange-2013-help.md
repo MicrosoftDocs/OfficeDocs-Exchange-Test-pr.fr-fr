@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-10-09_
+_**Dernière rubrique modifiée :** 2014-10-09_
 
 Une *boîte aux lettres d’équipement* est une boîte aux lettres de ressources affectée à une ressource spécifique autre qu’un emplacement, telle qu’un ordinateur portable, un projecteur, un microphone ou un véhicule de société. Après qu'un administrateur a créé une boîte aux lettres d'équipement, les utilisateurs peuvent facilement réserver un équipement donné en incluant la boîte aux lettres d'équipement correspondante dans la demande de réunion. Vous pouvez utiliser le CAE et l’environnement de ligne de commande Exchange Management Shell pour créer une boîte aux lettres d'équipement ou en modifier les propriétés. Pour plus d’informations, consultez la rubrique [Recipients](recipients-exchange-2013-help.md).
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez archiver du contenu Lync Online, tel que des conversations de messagerie instantanée, dans la boîte aux lettres d’un utilisateur dans Exchange Online. Dans les déploiements locaux, vous pouvez archiver du contenu Lync 2013 dans les boîtes aux lettres Exchange 2013. Dans les environnements en ligne et locaux, vous devez placer la boîte aux lettres de l’utilisateur en conservation pour litige ou en conservation inaltérable. Lorsque le contenu Lync est définitivement supprimé par un utilisateur dont la boîte aux lettres est soumise à une obligation de conservation pour litige, le contenu Lync archivé est conservé dans le dossier Éléments récupérables dans la boîte aux lettres de l’utilisateur. Le contenu n’est pas visible par les utilisateurs, mais il est inclus dans les recherches eDiscovery.
 

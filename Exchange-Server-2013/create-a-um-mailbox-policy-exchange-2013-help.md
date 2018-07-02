@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-03-08_
+_**Dernière rubrique modifiée :** 2013-03-08_
 
 Vous pouvez créer une stratégie de boîte aux lettres de messagerie unifiée pour appliquer un jeu commun de paramètres de stratégie de messagerie unifiée, par exemple, des paramètres de stratégie de code confidentiel ou des restrictions d'appel, à une série de boîtes aux lettres activées pour la messagerie unifiée. Les stratégies de boîte aux lettres de messagerie unifiée associent un utilisateur à extension messagerie unifiée à un plan de numérotation de messagerie unifiée et appliquent un ensemble commun de stratégies ou de paramètres de sécurité à plusieurs boîtes aux lettres à extension messagerie unifiée. Elles sont utiles pour l'application et la standardisation des paramètres de configuration de la messagerie unifiée pour les utilisateurs à extension messagerie unifiée.
 

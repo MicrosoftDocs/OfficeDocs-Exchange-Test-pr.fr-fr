@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Les attributions du rôle de gestion affectent un rôle de gestion à l’utilisateur. La modification de l’attribution de rôle vous permet de contrôler les objets que peuvent modifier les utilisateurs auxquels un rôle a été attribué. Les étendues de rôle de gestion appliquées aux attributions de rôle remplacent l’étendue d’écriture implicite du rôle. Cependant, l’étendue de lecture implicite du rôle s’applique toujours. Les étendues que vous appliquez ne peuvent pas renvoyer d’objets en dehors de l’étendue de lecture implicite du rôle.
 

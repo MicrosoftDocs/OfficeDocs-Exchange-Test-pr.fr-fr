@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-12-16_
+_**Dernière rubrique modifiée :** 2012-12-16_
 
 Vous pouvez configurer la méthode à utiliser pour les utilisateurs dotés de noms similaires dans les options **Accès au carnet d'adresses et à l'opérateur** du standard automatique, ou vous pouvez conserver le paramètre par défaut sur le standard automatique et configurer ce dernier sur le plan de numérotation associé au standard automatique. Par défaut, un standard automatique peut supprimer l'ambiguïté entre plusieurs utilisateurs ayant le même nom ou un nom similaire, car le paramètre par défaut sur le standard automatique est **Hériter du plan de commutation des appels**.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-12-16_
+_**Dernière rubrique modifiée :** 2014-12-16_
 
 Cette rubrique décrit la création d'une liste d'adresses en utilisant des filtres de destinataires. Pour en savoir plus sur les listes d'adresses, consultez la rubrique [Listes d’adresses](address-lists-exchange-2013-help.md).
 

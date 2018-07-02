@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Vous pouvez ajouter des scripts et des cmdlets non-Exchange à des rôles de gestion de haut niveau non délimités si vous voulez que les nouveaux scripts ou les nouvelles cmdlets non-Exchange soient disponibles pour les rôles non délimités existants. Ces scripts et cmdlets non-Exchange sont ajoutés en tant qu’entrées de rôles de gestion à des rôles de gestion de haut niveau non délimités. Ils peuvent alors être ajoutés par ces entrées de rôles de haut niveau non délimités ou tout autre rôle non délimité dérivé des rôles de haut niveau. Pour plus d’informations sur les entrées des rôles non délimitées, voir [Présentation des rôles de gestion](understanding-management-roles-exchange-2013-help.md).
 

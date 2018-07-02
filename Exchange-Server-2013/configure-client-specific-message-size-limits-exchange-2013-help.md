@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-01-26_
+_**Dernière rubrique modifiée :** 2017-01-26_
 
 Dans Microsoft Exchange Server 2013, différentes limites de taille s'appliquent aux messages circulant au sein votre organisation Exchange. Pour plus d'informations, consultez la rubrique [Tailles limites des messages](message-size-limits-exchange-2013-help.md).
 

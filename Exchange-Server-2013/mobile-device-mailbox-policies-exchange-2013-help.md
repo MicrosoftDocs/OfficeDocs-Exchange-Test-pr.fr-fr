@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-06-16_
+_**Dernière rubrique modifiée :** 2016-06-16_
 
 Dans MicrosoftExchange Server 2013, vous pouvez créer des stratégies de boîte aux lettres d’appareil mobile pour appliquer un ensemble commun de stratégies ou de paramètres de sécurité à un ensemble d’utilisateurs. Après avoir déployé Exchange ActiveSync dans votre organisation Exchange 2013, vous pouvez créer des stratégies de boîte aux lettres d'appareil mobile ou modifier des stratégies existantes. Une stratégie de boîte aux lettres d'appareil mobile par défaut est créée lors de l'installation d'Exchange 2013. Cette stratégie de boîte aux lettres d'appareil mobile par défaut est automatiquement attribuée à tous les utilisateurs.
 

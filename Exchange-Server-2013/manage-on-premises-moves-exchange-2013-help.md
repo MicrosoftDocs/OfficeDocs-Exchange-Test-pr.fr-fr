@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-25_
+_**Dernière rubrique modifiée :** 2013-02-25_
 
 Une demande de déplacement désigne le processus de déplacement d'une boîte aux lettres d'une base de données de boîtes aux lettres à une autre. Une demande de déplacement local est un déplacement de boîte aux lettres qui se produit dans une seule forêt. Dans Microsoft Exchange Server 2013, les boîtes aux lettres et les boîtes aux lettres d'archivage personnel peuvent se trouver sur des bases de données distinctes. À l'aide de la fonctionnalité de demande de déplacement, vous pouvez déplacer la boîte aux lettres principale et l'archive qui y est associée sur la même base de données ou sur des bases de données séparées. Les procédures décrites dans cette rubrique vous aideront à effectuer des déplacements de boîtes aux lettres locales.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-09-13_
+_**Dernière rubrique modifiée :** 2012-09-13_
 
 Les procédures suivantes vous permettent d’effectuer la gestion des autorisations avancées. Vous devrez utiliser uniquement ces procédures si les groupes de rôles de gestion et les stratégies d’attribution des rôles de gestion ne correspondent pas aux besoins de votre organisation.
 

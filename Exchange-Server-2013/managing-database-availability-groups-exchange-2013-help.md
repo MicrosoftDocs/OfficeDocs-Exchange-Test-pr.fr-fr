@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-10-04_
+_**Dernière rubrique modifiée :** 2017-10-04_
 
 Un groupe de disponibilité de base de données (DAG) est composé d’un maximum de 16 serveurs de boîtes aux lettres Microsoft Exchange Server 2013 qui permettent une récupération automatique au niveau de la base de données en cas de défaillance d’une base de données, d’un serveur ou du réseau. Les groupes de disponibilité de base de données (DAG) utilisent la réplication continue et un sous-ensemble de technologies de clustering avec basculement Windows pour fournir la haute disponibilité et la résilience de site. Les serveurs de boîtes aux lettres d’un groupe de disponibilité de base de données (DAG) se surveillent mutuellement pour détecter les défaillances. Lorsqu’un serveur de boîtes aux lettres est ajouté à un groupe de disponibilité de base de données, il fonctionne avec les autres serveurs du groupe de disponibilité de base de données pour assurer la récupération automatique des défaillances de la base de données.
 

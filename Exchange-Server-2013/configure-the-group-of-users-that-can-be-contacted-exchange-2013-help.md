@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-12-09_
+_**Dernière rubrique modifiée :** 2012-12-09_
 
 Vous pouvez indiquer le groupe d'utilisateurs que les appelants peuvent contacter sur un standard automatique de messagerie unifiée. Par défaut, les appelants peuvent contacter les utilisateurs appartenant au même plan de numérotation associé au standard automatique de messagerie unifiée. Toutefois, vous pouvez modifier le regroupement d'utilisateurs afin de permettre aux appelants de transférer des appels ou d'envoyer des messages vocaux à des utilisateurs présents dans le carnet d'adresses d'une organisation ou à un ensemble spécifique d'utilisateurs.
 

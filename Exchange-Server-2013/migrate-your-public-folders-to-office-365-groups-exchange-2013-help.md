@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2010, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2010, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-09-25_
+_**Dernière rubrique modifiée :** 2017-09-25_
 
 **Résumé** : Pourquoi devez-vous ou ne devez-vous pas migrer vos dossiers publics Exchange vers Groupes Office 365.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Lors de la création d'un plan de numérotation, vous pouvez configurer les *méthodes de numérotation par nom* principale et secondaire, autrement dit la manière dont les appelants peuvent rechercher des noms. Les appelants utilisent ces méthodes de numérotation par nom pour rechercher des noms afin de localiser et de contacter un utilisateur quand ils appellent un numéro Outlook Voice Access ou quand ils appellent un standard automatique de messagerie unifiée associé au plan de numérotation. Les appelants peuvent utiliser des entrées à tonalité pour retrouver un utilisateur à extension messagerie unifiée.
 

@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-11-22_
+_**Dernière rubrique modifiée :** 2017-11-22_
 
-**Résumé:** en savoir plus sur la préparation des boîtes aux lettres pour les déplacements entre forêts dans Exchange 2013.
+**Résumé:**  en savoir plus sur la préparation des boîtes aux lettres pour les déplacements entre forêts dans Exchange 2013.
 
 Microsoft Exchange 2013 prend en charge les déplacements de boîtes aux lettres et de migrations à l’aide d’Exchange Management Shell, en particulier, des applets de commande **New-MoveRequest** et **New-MigrationBatch** . Vous pouvez également déplacer la boîte aux lettres via Exchange Administration Center (EAC). Notez que vous pouvez déplacer des boîtes aux lettres Exchange 2010 et Exchange 2013 vers une forêt Exchange 2013.
 

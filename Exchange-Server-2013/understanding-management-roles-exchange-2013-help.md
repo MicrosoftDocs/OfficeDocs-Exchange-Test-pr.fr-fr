@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Les rôles de gestion font partie du modèle d'autorisations de contrôle d'accès basé sur les rôles (Role Based Access Control ou RBAC) utilisé dans Microsoft Exchange Server 2013. Les rôles agissent en tant que regroupement logique de cmdlets qui sont associées pour fournir un accès afin d'afficher ou de modifier la configuration des composants Exchange 2013, comme les boîtes aux lettres, les règles de transport et les destinataires. Les rôles de gestion peuvent ensuite être associés à un niveau supérieur pour former des regroupements plus importants, appelés groupes de rôles de gestion et stratégies d'attribution de rôle de gestion, lesquels permettent de gérer des zones de fonctionnalités et la configuration des destinataires. Les groupes de rôles et les stratégies d'attribution de rôle accordent respectivement des autorisations aux administrateurs et aux utilisateurs finals. Pour plus d'informations sur les groupes de rôles de gestion et les stratégies d'attribution de rôle de gestion, consultez la rubrique [Présentation du contrôle d'accès basé sur un rôle](understanding-role-based-access-control-exchange-2013-help.md).
 

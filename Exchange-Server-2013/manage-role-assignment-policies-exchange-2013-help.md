@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-09_
+_**Dernière rubrique modifiée :** 2012-10-09_
 
 Si vous voulez personnaliser les autorisations que vous accordez à un groupe d'utilisateurs finaux, vous devez créer une stratégie d'attribution de rôle de gestion personnalisée. Vous pouvez personnaliser la stratégie d'attribution que vous créez de sorte qu'elle réponde aux besoins spécifiques de vos utilisateurs finaux. Pour plus d’informations sur les stratégies d’attribution dans Microsoft Exchange Server 2013, consultez la rubrique [Présentation des stratégies d’attribution de rôle de gestion](understanding-management-role-assignment-policies-exchange-2013-help.md).
 

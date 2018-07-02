@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-01-17_
+_**Dernière rubrique modifiée :** 2018-01-17_
 
 La découverte électronique sur place utilise une boîte aux lettres système pour stocker les métadonnées de recherche de la découverte électronique sur place. Le nom affiché de cette boîte aux lettres système de découverte est **SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}**. Les boîtes aux lettres système n’étant pas visibles dans le centre d'administration Exchange (EAC) ni dans les listes d’adresses Exchange, elles sont rarement supprimées par inadvertance.
 

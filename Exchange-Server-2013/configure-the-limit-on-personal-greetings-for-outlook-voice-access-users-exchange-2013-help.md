@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-05_
+_**Dernière rubrique modifiée :** 2012-11-05_
 
 Le paramètre de **limite de message d'accueil (en minutes)** vous permet d'entrer le nombre maximal de minutes pendant lesquelles les utilisateurs associés à la stratégie de boîte aux lettres de messagerie unifiée (MU) peuvent utiliser pour enregistrer leurs messages d'accueil vocaux. Ce paramètre s'applique à la fois leurs messages vocaux standard et leurs messages d'accueil vocaux d'absence du bureau. Par défaut, la durée d'accueil maximale est définie sur 5 minutes. Toutefois, vous pouvez configurer le message d'accueil de durée à toute valeur comprise entre 1 et 10 minutes au maximum.
 

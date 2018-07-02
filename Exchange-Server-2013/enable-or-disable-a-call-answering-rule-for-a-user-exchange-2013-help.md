@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Vous pouvez utiliser l'environnement de ligne de commande Exchange Management Shell pour activer ou désactiver une ou plusieurs règles de répondeur automatique pour un utilisateur. Vous pouvez également utiliser les cmdlets **Enable-UMCallAnsweringRule** ou **Disable-UMCallAnsweringRule** dans un script de l'environnement de ligne de commande Exchange Management Shell pour activer ou désactiver une ou plusieurs règles de répondeur automatique pour différents utilisateurs.
 

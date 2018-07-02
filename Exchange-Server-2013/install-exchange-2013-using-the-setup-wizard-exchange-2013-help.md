@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-06-19_
+_**Dernière rubrique modifiée :** 2014-06-19_
 
 Cette rubrique explique comment utiliser l’Assistant Installation de Microsoft Exchange Server 2013 pour installer les rôles de boîte aux lettres et d’accès au client Exchange 2013 sur un ordinateur. Pour de plus amples informations sur la planification et le déploiement d'Exchange 2013, consultez la rubrique [Planification et déploiement](planning-and-deployment-for-exchange-2013-installation-instructions.md).
 

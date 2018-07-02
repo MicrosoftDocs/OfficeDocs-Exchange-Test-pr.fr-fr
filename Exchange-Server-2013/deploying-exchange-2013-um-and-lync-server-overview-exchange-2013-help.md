@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 La messagerie unifiée et Microsoft Lync Server peuvent être déployés simultanément afin de fournir aux utilisateurs de l’organisation une messagerie vocale, une messagerie instantanée, un indicateur de présence utilisateur amélioré, une fonctionnalité de conférence audio/vidéo ainsi qu’une expérience de messagerie et de courrier électronique intégrée. La messagerie unifiée est utilisée pour assurer les services de répondeur automatique, Outlook Voice Access et de standard automatique. Microsoft Lync Server permet de tirer parti des fonctions plus avancées d’Enterprise Voice, comme la messagerie instantanée, une fonctionnalité de conférence ainsi que des appels entrants et sortants. Cette rubrique décrit la procédure de configuration de la messagerie unifiée et de Microsoft Lync Server de sorte que ces fonctionnalités soient prises en charge.
 
