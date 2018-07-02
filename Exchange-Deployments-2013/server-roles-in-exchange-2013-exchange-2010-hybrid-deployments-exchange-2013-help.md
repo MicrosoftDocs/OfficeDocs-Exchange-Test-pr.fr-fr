@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 Cette rubrique est en cours de rédaction.  
 
-_**Sapplique à :**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-02-16_
+_<strong>Dernière rubrique modifiée :</strong>2017-02-16_
 
 Lors de la configuration d’un déploiement hybride dans une organisation Exchange 2010, vous devez installer au moins un serveur Exchange 2013 avec les rôles serveur d’accès au client et serveur de boîtes aux lettres dans votre organisation Exchange 2010 existante. Les serveurs d’accès au client et de boîtes aux lettres Exchange 2013 coordonnent les communications entre votre organisation Exchange 2010 sur site existante et l’organisation Exchange Online. Cette communication englobe le transport des messages et les caractéristiques de messagerie entre l’organisation sur site et l’organisation Exchange Online.
 

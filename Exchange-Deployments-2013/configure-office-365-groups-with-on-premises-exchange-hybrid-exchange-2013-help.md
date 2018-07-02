@@ -13,24 +13,15 @@ ms.translationtype: HT
 
  
 
-_**Dernière rubrique modifiée :**2016-12-06_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-06_
 
 Découvrez comment permettre aux utilisateurs d’Exchange en local d’utiliser des Groupes Office 365 dans un déploiement hybride.
 
 Groupes est un service d’Office 365 qui permet aux équipes de communiquer, de planifier des réunions et de collaborer sur des documents plus facilement. Toutes les informations partagées avec un groupe, à partir des messages électroniques envoyés au groupe, vers les fichiers stockés dans les bibliothèques OneDrive Entreprise ou SharePoint du groupe, sont disponibles pour tous les membres d’un groupe. Si vous avez configuré un déploiement hybride entre votre organisation Exchange locale et Office 365, vous pouvez mettre des groupes créés dans Office 365 à la disposition de vos utilisateurs en local en effectuant les étapes décrites dans cette rubrique.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L’utilisation de Groupes Office 365 avec des utilisateurs locaux dans un déploiement Exchange hybride est une nouvelle fonctionnalité. Comme il s’agit d’une nouveauté, vous pouvez rencontrer des problèmes lors de la configuration. N’oubliez pas de consulter la section Problèmes connus à la fin de cette rubrique pour corriger les problèmes que vous pouvez rencontrer.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> L’utilisation de Groupes Office 365 avec des utilisateurs locaux dans un déploiement Exchange hybride est une nouvelle fonctionnalité. Comme il s’agit d’une nouveauté, vous pouvez rencontrer des problèmes lors de la configuration. N’oubliez pas de consulter la section Problèmes connus à la fin de cette rubrique pour corriger les problèmes que vous pouvez rencontrer.</td>
+
 
 
 ## Conditions préalables
@@ -110,20 +101,11 @@ Le domaine SMTP principal d’un Groupe Office 365 est appelé un *domaine de gr
     <td><p>groups.contoso.com</p></td>
     <td><p>MX</p></td>
     <td><p>groups-contoso-com.mail.protection.outlook.com</p>
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le format de cette valeur d’enregistrement DNS est <em>&lt;domain key&gt;</em>.mail.protection.outlook.com. Pour connaître votre clé de domaine, consultez l’article <a href="https://support.office.microsoft.com/fr-fr/article/gather-the-information-you-need-to-create-office-365-dns-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67?ui=en-us%26rs=en-us%26ad=us">Recueillez les informations nécessaires pour créer des enregistrements DNS Office 365</a>.</td>
-    </tr>
-    </tbody>
-    </table>
-
-</td>
+    
+    > [!NOTE]  
+    > Le format de cette valeur d’enregistrement DNS est <em>&lt;domain key&gt;</em>.mail.protection.outlook.com. Pour connaître votre clé de domaine, consultez l’article <a href="https://support.office.microsoft.com/fr-fr/article/gather-the-information-you-need-to-create-office-365-dns-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67?ui=en-us%26rs=en-us%26ad=us">Recueillez les informations nécessaires pour créer des enregistrements DNS Office 365</a>.
+    
+    </td>
     </tr>
     <tr class="even">
     <td><p>autodiscover.groups.contoso.com</p></td>
@@ -133,37 +115,17 @@ Le domaine SMTP principal d’un Groupe Office 365 est appelé un *domaine de gr
     </tbody>
     </table>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Mt668829.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si l’enregistrement DNS MX pour le domaine de groupe est défini sur le serveur Exchange local, le flux de messagerie ne fonctionne pas correctement entre les utilisateurs de l’organisation Exchange en local et le Groupe Office 365.</td>
-    </tr>
-    </tbody>
-    </table>
+   > [!CAUTION]  
+   > Si l’enregistrement DNS MX pour le domaine de groupe est défini sur le serveur Exchange local, le flux de messagerie ne fonctionne pas correctement entre les utilisateurs de l’organisation Exchange en local et le Groupe Office 365.
 
 
 4.  Ajoutez le domaine de groupe au connecteur d’envoi hybride, créé par l’Assistant Configuration hybride dans votre organisation Exchange en local, à l’aide de la commande suivante.
     
         Set-SendConnector -Identity "Outbound to Office 365" -AddressSpaces "contoso.mail.onmicrosoft.com","groups.contoso.com"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si le connecteur d’envoi n’est pas mis à jour, ou si le domaine de groupe n’est pas ajouté sous la forme d’un domaine accepté dans l’organisation Exchange en local, le courrier électronique envoyé à partir d’une boîte aux lettres en local ne sera pas remis au groupe, sauf si le groupe est configuré pour recevoir du courrier provenant d’expéditeurs externes.</td>
-    </tr>
-    </tbody>
-    </table>
-
+    > [!NOTE]  
+    > Si le connecteur d’envoi n’est pas mis à jour, ou si le domaine de groupe n’est pas ajouté sous la forme d’un domaine accepté dans l’organisation Exchange en local, le courrier électronique envoyé à partir d’une boîte aux lettres en local ne sera pas remis au groupe, sauf si le groupe est configuré pour recevoir du courrier provenant d’expéditeurs externes.
+    
 
 ## Comment savoir si cela a fonctionné ?
 

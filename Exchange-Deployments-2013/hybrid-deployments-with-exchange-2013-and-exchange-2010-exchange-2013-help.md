@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 Cette rubrique est en cours de rédaction.  
 
-_**Sapplique à :**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-07-07_
+_<strong>Dernière rubrique modifiée :</strong>2015-07-07_
 
 La configuration et la gestion de déploiements hybrides basés sur Exchange 2013 avec Exchange 2010 sont plus faciles que jamais grâce aux dernières améliorations apportées à l’Assistant Configuration hybride et aux modifications architecturales intégrées dans Microsoft Exchange Server 2013. Que vous souhaitiez connecter votre organisation Exchange 2010 locale et votre organisation Exchange Online pour une coexistence à long terme ou dans le cadre d’une stratégie de migration cloud, il est important de comprendre les concepts du déploiement hybride.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 Cette rubrique est en cours de rédaction.  
 
-_**Sapplique à :**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-09_
 
 Les déploiements hybrides peuvent comporter des boîtes aux lettres qui résident dans votre organisation Exchange locale, mais également dans une organisation Exchange Online. Un composant essentiel conférant à ces deux organisations distinctes l’apparence d’une seule et même organisation pour les utilisateurs et les messages qu’ils s’échangent est le transport hybride. Dans un transport hybride, les messages envoyés entre des destinataires d’une organisation sont authentifiés, chiffrés et transférés via le protocole TLS (Transport Layer Security) et apparaissent comme « internes » à des composants d’Exchange, tels que les règles de transport, la journalisation et les stratégies anti-courrier indésirable. Le transport hybride est automatiquement configuré par l’assistant Configuration hybride dans Exchange 2013.
 

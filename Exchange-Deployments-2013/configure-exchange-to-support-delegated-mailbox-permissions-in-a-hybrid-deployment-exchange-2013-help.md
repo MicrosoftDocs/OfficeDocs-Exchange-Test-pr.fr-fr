@@ -13,7 +13,7 @@ ms.translationtype: MT
 
  
 
-_**Dernière rubrique modifiée :**2018-01-30_
+_<strong>Dernière rubrique modifiée :</strong>2018-01-30_
 
 Les autorisations de boîtes aux lettres déléguées permettent à un utilisateur de gérer une partie de la boîte aux lettres d’un autre utilisateur. L’exemple courant est celui d’un administrateur adjoint qui doit gérer la boîte aux lettres et le calendrier d’un cadre. Les déploiements hybrides entre une organisation Exchange locale et Office 365 prennent en charge les autorisations de boîtes aux lettres déléguées **Accès total** et **Envoyer de la part de**. Toutefois, selon la version d’Exchange que vous avez installée dans votre organisation locale, vous devrez peut-être effectuer une configuration supplémentaire pour utiliser des autorisations de boîtes aux lettres déléguées dans un déploiement hybride. Le tableau suivant indique quelles versions d’Exchange prennent en charge les autorisations de boîtes aux lettres déléguées dans un déploiement hybride et si une configuration supplémentaire est nécessaire pour cette version.
 

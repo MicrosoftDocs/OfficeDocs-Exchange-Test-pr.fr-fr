@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-09_
 
 Dans un déploiement hybride, les certificats numériques représentent une part importante de la sécurisation des communications entre l’organisation Exchange locale et Office 365. Les certificats permettent à chaque organisation Exchange d’approuver l’identité de l’autre. Les certificats permettent également d’assurer que chaque organisation Exchange communique vers la bonne source.
 

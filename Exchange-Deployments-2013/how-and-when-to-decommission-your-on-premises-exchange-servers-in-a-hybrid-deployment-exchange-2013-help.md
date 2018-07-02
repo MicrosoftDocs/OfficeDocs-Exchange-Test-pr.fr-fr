@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2017-07-27_
+_<strong>Dernière rubrique modifiée :</strong>2017-07-27_
 
 Lisez cet article si vous êtes prêt à passer d’un déploiement Exchange hybride à une mise en œuvre cloud complète.
 

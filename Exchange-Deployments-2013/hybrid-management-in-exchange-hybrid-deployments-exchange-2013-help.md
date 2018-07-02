@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-09_
 
 Quand vous installez un serveur Exchange, les outils de gestion Exchange sont automatiquement installés sur le serveur. Vous utiliserez les outils suivants pour configurer et gérer l’organisation Exchange locale et l’organisation Exchange Online :
 

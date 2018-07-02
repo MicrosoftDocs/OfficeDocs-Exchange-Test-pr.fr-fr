@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>Sapplique à :</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2018-04-16_
+_<strong>Dernière rubrique modifiée :</strong>2018-04-16_
 
 **Résumé** : Ce que vous devez savoir pour planifier un déploiement Exchange hybride.
 
