@@ -142,12 +142,11 @@ Si vous recevez une erreur lors de l'exécution de l'Assistant Configuration hyb
 
   - **Message : « Le connecteur de réception par défaut est introuvable sur le serveur \<Nom du serveur\> »**   Ce message apparaît si le connecteur de réception d’un serveur Exchange répertorié dans l’attribut suivant n’écoute pas sur le port TCP 25 pour les protocoles IPv4 et IPv6 : `(Get-HybridConfiguration).ReceivingTransportServers.`
     
-      -  
-        Pour vérifier que les connecteurs de réception des serveurs Exchange répertoriés disposent des liaisons appropriées lorsque vous exécutez le `(Get-HybridConfiguration).ReceivingTransportServers.`, exécutez la commande suivante dans l’Environnement de ligne de commande Exchange Management Shell.
+      -    Pour vérifier que les connecteurs de réception des serveurs Exchange répertoriés disposent des liaisons appropriées lorsque vous exécutez le `(Get-HybridConfiguration).ReceivingTransportServers.`, exécutez la commande suivante dans l’Environnement de ligne de commande Exchange Management Shell.
         
-            Get-ReceiveConnector -Server <Server Name> | FT Identity, Bindings
+      Get-ReceiveConnector -Server <Server Name> | FT Identity, Bindings
         
-        L’entrée suivante doit être répertoriée pour vos serveurs Exchange  : `{[::]:25, 0.0.0.0:25}`
+      L’entrée suivante doit être répertoriée pour vos serveurs Exchange  : `{[::]:25, 0.0.0.0:25}`
         
-        Si cette liaison n’est pas répertoriée, vous devez l’ajouter à votre connecteur de réception à l’aide du paramètre *Bindings* de la cmdlet **Set-ReceiveConnector**. Pour plus d'informations, consultez la rubrique [Set-ReceiveConnector](https://technet.microsoft.com/fr-fr/library/bb125140\(v=exchg.150\)).
+      Si cette liaison n’est pas répertoriée, vous devez l’ajouter à votre connecteur de réception à l’aide du paramètre *Bindings* de la cmdlet **Set-ReceiveConnector**. Pour plus d'informations, consultez la rubrique [Set-ReceiveConnector](https://technet.microsoft.com/fr-fr/library/bb125140\(v=exchg.150\)).
 

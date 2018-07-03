@@ -53,17 +53,13 @@ Exécutez la commande suivante :
 
 Cet exemple définit les paramètres de journal d’agent suivants sur un serveur de boîtes aux lettres nommé Mailbox01 :
 
-  -  
-    Définit l’emplacement des fichiers journaux de l’agent sur D:\\Anti-Spam Agent Log. Notez bien que si le dossier n’existe pas, il sera créé pour vous.
+  -  Définit l’emplacement des fichiers journaux de l’agent sur D:\\Anti-Spam Agent Log. Notez bien que si le dossier n’existe pas, il sera créé pour vous.
 
-  -  
-    Définit la taille maximale d’un fichier journal de l’agent sur 20 Mo.
+  -  Définit la taille maximale d’un fichier journal de l’agent sur 20 Mo.
 
-  -  
-    Définit la taille maximale du répertoire de journaux de l’agent sur 400 Mo.
+  -  Définit la taille maximale du répertoire de journaux de l’agent sur 400 Mo.
 
-  -  
-    Définit l’âge maximal d’un fichier journal d’agent sur 14 jours.
+  -  Définit l’âge maximal d’un fichier journal d’agent sur 14 jours.
 
 <!-- end list -->
 

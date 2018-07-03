@@ -31,14 +31,11 @@ Pour plus d'informations sur l'environnement de ligne de commande Exchange Manag
 
   - Pour toute stratégie DLP, vous pouvez sélectionner l'un des trois modes :
     
-      -  
-        **Appliquer**   Les règles au sein de la stratégie sont évaluées pour l'ensemble des messages et des types de fichiers pris en charge. Le flux de messagerie peut être interrompu si des données remplissant les conditions de la stratégie sont détectées. Toutes les actions décrites au sein de la stratégie sont entreprises.
+      -    **Appliquer**   Les règles au sein de la stratégie sont évaluées pour l'ensemble des messages et des types de fichiers pris en charge. Le flux de messagerie peut être interrompu si des données remplissant les conditions de la stratégie sont détectées. Toutes les actions décrites au sein de la stratégie sont entreprises.
     
-      -  
-        **Tester la stratégie DLP avec des conseils de stratégie**   Les règles au sein de la stratégie sont évaluées pour l'ensemble des messages et des types de fichiers pris en charge. Le flux de messagerie ne sera pas interrompu si des données remplissant les conditions de la stratégie sont détectées. Autrement dit, les messages ne sont pas bloqués. Si des conseils de stratégie sont configurés, ils apparaissent aux utilisateurs.
+      -    **Tester la stratégie DLP avec des conseils de stratégie**   Les règles au sein de la stratégie sont évaluées pour l'ensemble des messages et des types de fichiers pris en charge. Le flux de messagerie ne sera pas interrompu si des données remplissant les conditions de la stratégie sont détectées. Autrement dit, les messages ne sont pas bloqués. Si des conseils de stratégie sont configurés, ils apparaissent aux utilisateurs.
     
-      -  
-        **Tester la stratégie DLP sans les conseils de stratégie**   Les règles au sein de la stratégie sont évaluées pour l'ensemble des messages et des types de fichiers pris en charge. Le flux de messagerie ne sera pas interrompu si des données remplissant les conditions de la stratégie sont détectées. Autrement dit, les messages ne sont pas bloqués. Si des conseils de stratégie sont configurés, ils ne sont pas visibles pour les utilisateurs.
+      -    **Tester la stratégie DLP sans les conseils de stratégie**   Les règles au sein de la stratégie sont évaluées pour l'ensemble des messages et des types de fichiers pris en charge. Le flux de messagerie ne sera pas interrompu si des données remplissant les conditions de la stratégie sont détectées. Autrement dit, les messages ne sont pas bloqués. Si des conseils de stratégie sont configurés, ils ne sont pas visibles pour les utilisateurs.
 
   - Une règle individuelle au sein d'une stratégie DLP peut avoir ses propres paramètres de mode. Quand le mode d'une stratégie diffère du mode d'une règle au sein de cette stratégie, la configuration de la règle est prioritaire et sera évaluée conformément à son mode.
 

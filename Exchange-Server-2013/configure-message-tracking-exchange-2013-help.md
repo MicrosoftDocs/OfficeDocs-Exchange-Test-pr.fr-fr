@@ -69,17 +69,13 @@ Pour configurer le suivi des messages, exécutez la commande suivante :
 
 Cet exemple définit les paramètres de journal de suivi des messages suivants sur le serveur de boîtes aux lettres intitulé Mailbox01 :
 
-  -  
-    Définit l'emplacement des fichiers journaux de suivi des messages sur D:\\Message Tracking Log. Notez bien que si le dossier n'existe pas, il sera créé pour vous.
+  -  Définit l'emplacement des fichiers journaux de suivi des messages sur D:\\Message Tracking Log. Notez bien que si le dossier n'existe pas, il sera créé pour vous.
 
-  -  
-    Définit la taille maximale d'un fichier journal de suivi des messages à 20 Mo.
+  -  Définit la taille maximale d'un fichier journal de suivi des messages à 20 Mo.
 
-  -  
-    Définit la taille maximale du répertoire des journaux de suivi des messages à 1,5 Go.
+  -  Définit la taille maximale du répertoire des journaux de suivi des messages à 1,5 Go.
 
-  -  
-    Définit l'âge maximal d'un fichier journal de suivi des messages à 45 jours.
+  -  Définit l'âge maximal d'un fichier journal de suivi des messages à 45 jours.
 
 <!-- end list -->
 

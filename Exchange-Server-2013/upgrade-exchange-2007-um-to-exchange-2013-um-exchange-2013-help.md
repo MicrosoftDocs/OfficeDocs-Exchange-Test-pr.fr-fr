@@ -584,14 +584,11 @@ Lorsque vous procédez à une mise à niveau vers une messagerie unifiée Exchan
 
 La dernière étape du processus de mise à niveau vers une messagerie unifiée Exchange 2013 consiste à configurer les passerelles VoIP, PBX IP ou PBX compatibles SIP pour envoyer les appels entrants (y compris provenant de personnes souhaitant laisser un message vocal pour un destinataire, d'utilisateurs à extension messagerie appelant via Outlook Voice Access, et d'appelants qui accèdent à un standard automatique de messagerie unifiée) à vos serveurs d'accès au client Exchange 2013. Tous ces appels sont d'abord réceptionnés par une passerelle VoIP, un PBX IP ou un PBX compatible SIP, puis transférés vers les serveurs d'accès au client Exchange 2013 de votre organisation. Pour plus d'informations, consultez les ressources suivantes :
 
-  -  
-    [Services de messagerie unifiée](um-services-exchange-2013-help.md)
+  -  [Services de messagerie unifiée](um-services-exchange-2013-help.md)
 
-  -  
-    [Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  -  [Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
 
-  -  
-    [Gestionnaire de téléphonie pour Exchange 2013](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+  -  [Gestionnaire de téléphonie pour Exchange 2013](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
 
 ## Étape 14 : désactivation du répondeur automatique sur un serveur de messagerie unifiée Exchange 2007
 

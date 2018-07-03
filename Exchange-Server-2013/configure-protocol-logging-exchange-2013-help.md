@@ -171,17 +171,13 @@ Pour configurer les paramètres de journal de protocole, exécutez la commande s
 
 Cet exemple définit les paramètres de journal de protocole suivants dans le service de transport sur un serveur de boîtes aux lettres nommé Mailbox01 :
 
-  -  
-    Définit l'emplacement de l'ensemble des journaux de protocole du connecteur de réception sur D:\\Hub Receive SMTP Log et de l'ensemble des journaux de protocole du connecteur d'envoi D:\\Hub Send SMTP Log. Notez bien que si le dossier n'existe pas, il sera créé pour vous.
+  -  Définit l'emplacement de l'ensemble des journaux de protocole du connecteur de réception sur D:\\Hub Receive SMTP Log et de l'ensemble des journaux de protocole du connecteur d'envoi D:\\Hub Send SMTP Log. Notez bien que si le dossier n'existe pas, il sera créé pour vous.
 
-  -  
-    Définit la taille maximale d'un fichier journal de protocole du connecteur de réception et d'envoi sur 20 Mo.
+  -  Définit la taille maximale d'un fichier journal de protocole du connecteur de réception et d'envoi sur 20 Mo.
 
-  -  
-    Définit la taille maximale d'un dossier de journaux de protocole du connecteur de réception et d'envoi sur 400 Mo.
+  -  Définit la taille maximale d'un dossier de journaux de protocole du connecteur de réception et d'envoi sur 400 Mo.
 
-  -  
-    Définit l'âge maximal d'un fichier journal de protocole du connecteur de réception et d'envoi sur 45 jours.
+  -  Définit l'âge maximal d'un fichier journal de protocole du connecteur de réception et d'envoi sur 45 jours.
 
 <!-- end list -->
 
