@@ -49,18 +49,8 @@ Pour les autres tâches relatives aux boîtes aux lettres déconnectées, consul
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -471,18 +461,8 @@ Si la valeur de la propriété *Suspend* est égale à `False`, ce la signifie q
 
 La cmdlet **Remove-MailboxRestoreRequest** vous permet de supprimer des demandes de restauration de boîtes aux lettres. Si vous supprimez une demande de restauration après l’échec de la copie des données de boîte aux lettres vers la boîte aux lettres cible, la boîte aux lettres cible conserve les données copiées.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Comme indiqué précédemment, les demandes de restauration exécutées sont conservées pendant 30 jours par défaut avant leur suppression automatique.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Comme indiqué précédemment, les demandes de restauration exécutées sont conservées pendant 30 jours par défaut avant leur suppression automatique.
 
 
 Cet exemple montre comment supprimer la demande de restauration Pilar Pinilla\\MailboxRestore1.

@@ -17,18 +17,8 @@ _**Sapplique à :** Exchange Online, Exchange Server 2013_
 
 _**Dernière rubrique modifiée :** 2017-01-18_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous avons différé la date d’échéance du 1er juillet 2017 pour créer des conservations inaltérables dans Exchange Online (dans les plans autonomes Office 365 et Exchange Online). Mais plus tard cette année ou au début de l’année prochaine, vous ne pourrez pas créer des conservations inaltérables dans Exchange Online. Au lieu d’utiliser des conservations inaltérables, vous pouvez avoir recours à des <a href="https://go.microsoft.com/fwlink/?linkid=780738">cas de découverte électronique</a> ou des <a href="https://go.microsoft.com/fwlink/?linkid=827811">stratégies de rétention</a> dans le centre de sécurité et conformité Office 365. Lorsque nous aurons désactivé les nouvelles conservations inaltérables, vous pourrez toujours modifier les conservations inaltérables existantes. La création de conservations inaltérables sera toujours prise en charge dans les déploiements hybrides Exchange Server 2013 et Exchange . Vous serez également toujours en mesure de mettre des boîtes aux lettres en conservation pour litige.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Nous avons différé la date d’échéance du 1er juillet 2017 pour créer des conservations inaltérables dans Exchange Online (dans les plans autonomes Office 365 et Exchange Online). Mais plus tard cette année ou au début de l’année prochaine, vous ne pourrez pas créer des conservations inaltérables dans Exchange Online. Au lieu d’utiliser des conservations inaltérables, vous pouvez avoir recours à des <a href="https://go.microsoft.com/fwlink/?linkid=780738">cas de découverte électronique</a> ou des <a href="https://go.microsoft.com/fwlink/?linkid=827811">stratégies de rétention</a> dans le centre de sécurité et conformité Office 365. Lorsque nous aurons désactivé les nouvelles conservations inaltérables, vous pourrez toujours modifier les conservations inaltérables existantes. La création de conservations inaltérables sera toujours prise en charge dans les déploiements hybrides Exchange Server 2013 et Exchange . Vous serez également toujours en mesure de mettre des boîtes aux lettres en conservation pour litige.
 
 
 Votre organisation peut exiger que toutes les données de boîtes aux lettres soient conservées pendant une période spécifique. Vous pouvez utiliser la conservation pour litige et la conservation inaltérable pour satisfaire cette exigence. Après avoir placé une boîte aux lettres en conservation pour litige ou en conservation inaltérable, les éléments de boîte aux lettres qui sont modifiés ou supprimés définitivement sont conservés dans le dossier Éléments récupérables. Pour plus d’informations, voir [Conservation inaltérable et conservation pour litige](in-place-hold-and-litigation-hold-exchange-2013-help.md).
@@ -121,18 +111,8 @@ L’exemple utilise la cmdlet [Get-Mailbox](https://technet.microsoft.com/fr-fr/
 
 Vous pouvez utiliser le CAE pour sélectionner jusqu’à 500 boîtes aux lettres et les placer en conservation. Pour plus d’informations, consultez la rubrique [Créer ou supprimer une conservation inaltérable](create-or-remove-an-in-place-hold-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour placer plus de 500 utilisateurs en conservation inaltérable, utilisez l’environnement de ligne de commande Exchange Management Shell. Consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/dd298064(v=exchg.150)">New-MailboxSearch</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Pour placer plus de 500 utilisateurs en conservation inaltérable, utilisez l’environnement de ligne de commande Exchange Management Shell. Consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/dd298064(v=exchg.150)">New-MailboxSearch</a>.
 
 
 ## Plus d’informations

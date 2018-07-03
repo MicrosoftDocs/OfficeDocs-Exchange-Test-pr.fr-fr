@@ -56,18 +56,8 @@ Par exemple, pour trouver tous les destinataires utilisant la boîte aux lettres
     $AMDN = $AM.DistinguishedName
     Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq $AMDN}
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous spécifiez la boîte aux lettres d'arbitrage à l'aide du nom unique. Si vous connaissez le nom unique de la boîte aux lettres d'arbitrage, vous pouvez exécuter la commande unique : <code>Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq &lt;DN&gt;}</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous spécifiez la boîte aux lettres d'arbitrage à l'aide du nom unique. Si vous connaissez le nom unique de la boîte aux lettres d'arbitrage, vous pouvez exécuter la commande unique : <code>Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq &lt;DN&gt;}</code>.
 
 
 ## Étape 2 : utiliser l'environnement de ligne de commande Exchange Management Shell pour spécifier une autre boîte aux lettres d'arbitrage ou désactiver la modération pour les destinataires

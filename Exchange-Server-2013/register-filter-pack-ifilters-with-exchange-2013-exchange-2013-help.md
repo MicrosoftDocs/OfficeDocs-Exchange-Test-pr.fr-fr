@@ -48,18 +48,8 @@ Pour d’autres tâches de gestion relatives aux règles de transport, consultez
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -200,18 +190,8 @@ Vous pouvez étendre la capacité d’analyse des pièces joints à d’autres t
 
 Cette procédure explique comment déployer l’[IFilter Adobe PDF](https://www.adobe.com/support/downloads/detail.jsp?ftpid=4025) pour prendre en charge le traitement de pièces jointes PDF dans les règles de transport.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, Exchange 2013 prend en charge l’analyse des fichiers PDF dans les règles de transport. Le fichier PDF fourni ici à titre d’exemple permet simplement d’illustrer l’extension de la prise en charge d’autres types de fichiers à l’aide d’iFilters tiers.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, Exchange 2013 prend en charge l’analyse des fichiers PDF dans les règles de transport. Le fichier PDF fourni ici à titre d’exemple permet simplement d’illustrer l’extension de la prise en charge d’autres types de fichiers à l’aide d’iFilters tiers.
 
 
 1.  Téléchargez l’[iFilter Adobe PDF](https://www.adobe.com/support/downloads/detail.jsp?ftpid=4025), puis suivez les instructions d’installation.
@@ -226,18 +206,8 @@ Cette procédure explique comment déployer l’[IFilter Adobe PDF](https://www.
     
     2.  Modifiez le nom de la nouvelle clé à `{E8978DA6-047F-4E3D-9C78-CDBE46041603}`.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Chaque iFilter est associé à un ID de classe unique (CLSID). Vous trouverez le CLSID dans la documentation d’installation de l’iFilter que vous enregistrez ou en recherchant l’extension de fichier sous la clé <code>HKEY_CLASSES_ROOT\CLSID</code> du Registre.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Chaque iFilter est associé à un ID de classe unique (CLSID). Vous trouverez le CLSID dans la documentation d’installation de l’iFilter que vous enregistrez ou en recherchant l’extension de fichier sous la clé <code>HKEY_CLASSES_ROOT\CLSID</code> du Registre.
     
     3.  Cliquez sur la clé que vous venez de créer et définissez la valeur **(Par défaut)** sur l’emplacement auquel vous avez installé l’iFilter PDF. Par défaut, l’iFilter PDF est installé à l’emplacement suivant : `C:\Program Files\Adobe\Adobe PDF IFilter 9 for 64-bit platforms\bin\PDFFilter.dll`.
 

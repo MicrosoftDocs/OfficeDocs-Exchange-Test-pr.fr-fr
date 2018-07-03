@@ -123,34 +123,14 @@ Retour au début
 
 Les PBX analogiques envoient des informations vocales et de signalisation d’appel, comme la fréquence vocale d’un numéro composé, sous forme de son analogique. Le son n’est donc jamais numérisé. Pour diriger l’appel correctement, le PBX et le central de la société de téléphonie doivent écouter les informations de signalisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le terme technique de la numérotation multifréquence est « numérotation en fréquences vocales ». Lorsque l’appelant appuie sur une touche d’un clavier téléphonique, le téléphone génère deux tonalités distinctes : une tonalité à haute fréquence et une à basse fréquence. Lorsqu’une personne parle dans le combiné, une seule tonalité ou fréquence est émise. L’envoi de deux tonalités avec des fréquences différentes en même temps réduit la possibilité que les tonalités de signalisation soient interprétées comme voix humaine ou qu’une voix humaine soit interprétée comme tonalités de signalisation.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le terme technique de la numérotation multifréquence est « numérotation en fréquences vocales ». Lorsque l’appelant appuie sur une touche d’un clavier téléphonique, le téléphone génère deux tonalités distinctes : une tonalité à haute fréquence et une à basse fréquence. Lorsqu’une personne parle dans le combiné, une seule tonalité ou fréquence est émise. L’envoi de deux tonalités avec des fréquences différentes en même temps réduit la possibilité que les tonalités de signalisation soient interprétées comme voix humaine ou qu’une voix humaine soit interprétée comme tonalités de signalisation.
 
 
 Les PBX numériques codent ou numérisent les sons analogiques en format numérique. Les PBX numériques codent en général les sons vocaux à l’aide d’un codec audio standard comme G.711 ou G.729. Une fois la voix numérique codée, elle est envoyée dans un canal à l’aide de la commutation de circuits. La commutation de circuits établit une connexion ouverte de bout en bout. Elle laisse le canal ouvert pendant la durée de l’appel pour l’utilisation exclusive de l’appelant. Cependant, la méthode de signalisation utilisée par le PBX dépend des fabricants. Ces derniers peuvent en effet avoir développé une méthode de signalisation propre pour la configuration des appels.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les PBX numériques peuvent prendre en charge les lignes spécialisées numériques comme analogiques.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les PBX numériques peuvent prendre en charge les lignes spécialisées numériques comme analogiques.
 
 
 Dans les organisations de grande taille, le PBX permet aux employés situés dans différents endroits de se contacter en composant un numéro de poste. Cette opération s’effectue avec un seul PBX ou avec plusieurs PBX mis en réseau. Les PBX situés en différents endroits peuvent être connectés à un seul réseau transparent de commutation de circuits à l’aide de lignes T1 ou E1. Lorsque ces lignes relient des PBX, elles sont souvent appelées *tie lines*. Les PBX communiquent les uns avec les autres via ces lignes privées en utilisant un protocole de PBX vers PBX comme QSIG. Le protocole QSIG permet à plusieurs PBX de se comporter comme un seul PBX.
@@ -173,18 +153,8 @@ Un PBX IP prend en charge le protocole IP pour connecter des téléphones en ut
 
 Le développement des protocoles Internet en temps réel a favorisé l’envoi de messages vocaux et de télécopie par un réseau de données. De tels protocoles comprennent les protocoles VoIP utilisés avec la messagerie unifiée : Protocole SIP (Session Initiation Protocol) sur protocole TCP (Transmission Control Protocol) pour la messagerie vocale. Ces protocoles permettent d’envoyer des messages vocaux et de télécopie par le biais d’un réseau de données. Les protocoles VoIP en temps réel sont nécessaires pour l’envoi de messages vocaux via un réseau de données ou de commutation de paquets afin que l’ordre et le délai de remise soient maintenus et contrôlés. Si ces protocoles ne sont pas utilisés à cette fin, la voix humaine est rompue et paraît incohérente ou les images peuvent sembler déformées. Pour obtenir la liste des PBX IP pris en charge par la messagerie unifiée, voir [Gestionnaire de téléphonie pour Exchange 2013](telephony-advisor-for-exchange-2013-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La messagerie unifiée prend seulement en charge SIP sur TCP.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La messagerie unifiée prend seulement en charge SIP sur TCP.
 
 
 ## Configuration des PBX IP traditionnels

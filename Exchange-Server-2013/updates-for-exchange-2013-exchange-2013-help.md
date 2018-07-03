@@ -52,7 +52,7 @@ Le tableau suivant contient des liens vers les publications de blog d’équipe 
 </tr>
 <tr class="even">
 <td><p>Exchange 2013 CU18</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=858936%0d%0a">Publication : Mises à jour trimestrielles Exchange de septembre 2017</a></p></td>
+<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=858936">Publication : Mises à jour trimestrielles Exchange de septembre 2017</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Exchange 2013 CU17</p></td>

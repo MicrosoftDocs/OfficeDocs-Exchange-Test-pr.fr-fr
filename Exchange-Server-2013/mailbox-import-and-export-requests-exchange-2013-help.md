@@ -75,18 +75,8 @@ Avant d’importer ou d’exporter des données de boîtes aux lettres, prenez e
 
 Utilisez le jeu de cmdlets **MailboxImportRequest** pour importer des données d’un fichier .pst dans une boîte aux lettres ou une archive personnelle. Voici la liste des options que vous pouvez utiliser lorsque vous importez des données de boîtes aux lettres à partir d’un fichier .pst :
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La boîte aux lettres dans laquelle vous importez des données doit exister. Vous ne pouvez pas importer des données dans un compte d’utilisateur qui ne dispose pas d’une boîte aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La boîte aux lettres dans laquelle vous importez des données doit exister. Vous ne pouvez pas importer des données dans un compte d’utilisateur qui ne dispose pas d’une boîte aux lettres.
 
 
   - Vous pouvez importer des données dans un compte d’utilisateur différent de celui à partir duquel l’exportation a été effectuée. Par exemple, vous pouvez exporter des données de john@contoso.com et les importer dans legaldiscovery@contoso.com.

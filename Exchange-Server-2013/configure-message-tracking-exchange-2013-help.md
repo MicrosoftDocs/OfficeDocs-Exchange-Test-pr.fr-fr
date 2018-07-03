@@ -31,18 +31,8 @@ Le suivi des messages enregistre l'activité de transport SMTP de tous les messa
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser le Centre d'administration Exchange pour configurer le suivi des messages sur des serveurs de boîtes aux lettres
@@ -85,26 +75,11 @@ Cet exemple définit les paramètres de journal de suivi des messages suivants s
 
     Set-TransportService Mailbox01 -MessageTrackingLogPath "D:\Hub Message Tracking Log" -MessageTrackingLogMaxFileSize 20MB -MessageTrackingLogMaxDirectorySize 1.5GB -MessageTrackingLogMaxAge 45.00:00:00
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>La définition de la valeur du paramètre <em>MessageTrackingLogPath</em> sur <code>$null</code> désactive effectivement le suivi des messages. Toutefois, si la valeur du paramètre <em>MessageTrackingLogEnabled</em> est <code>$true</code>, des erreurs sont générées dans le journal des événements.</p></li>
-<li><p>Le fait de définir la valeur du paramètre <em>MessageTrackingLogMaxAge</em> sur <code>00:00:00</code> empêche la suppression automatique des fichiers journaux de suivi des messages en raison de leur ancienneté.</p></li>
-<li><p>Pour les serveurs de boîtes aux lettres Exchange 2013, la taille maximale du répertoire des journaux de suivi des messages est égale à trois fois la valeur du paramètre <em>MessageTrackingLogMaxDirectorySize</em>. Si les fichiers journaux de suivi des messages générés par les quatre différents services portent des préfixes de nom différents, la quantité de données et la fréquence d'écriture de ces dernières dans les fichiers journaux <strong>MSGTRKMA</strong> sont négligeables en comparaison des fichiers journaux portant les trois autres préfixes. Pour plus d'informations, consultez la section « Structure des fichiers journaux de suivi des messages » dans la rubrique <a href="message-tracking-exchange-2013-help.md">Suivi des messages</a>.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]
+> <ul>
+> <li><p>La définition de la valeur du paramètre <em>MessageTrackingLogPath</em> sur <code>$null</code> désactive effectivement le suivi des messages. Toutefois, si la valeur du paramètre <em>MessageTrackingLogEnabled</em> est <code>$true</code>, des erreurs sont générées dans le journal des événements.</p></li>
+> <li><p>Le fait de définir la valeur du paramètre <em>MessageTrackingLogMaxAge</em> sur <code>00:00:00</code> empêche la suppression automatique des fichiers journaux de suivi des messages en raison de leur ancienneté.</p></li>
+> <li><p>Pour les serveurs de boîtes aux lettres Exchange 2013, la taille maximale du répertoire des journaux de suivi des messages est égale à trois fois la valeur du paramètre <em>MessageTrackingLogMaxDirectorySize</em>. Si les fichiers journaux de suivi des messages générés par les quatre différents services portent des préfixes de nom différents, la quantité de données et la fréquence d'écriture de ces dernières dans les fichiers journaux <strong>MSGTRKMA</strong> sont négligeables en comparaison des fichiers journaux portant les trois autres préfixes. Pour plus d'informations, consultez la section « Structure des fichiers journaux de suivi des messages » dans la rubrique <a href="message-tracking-exchange-2013-help.md">Suivi des messages</a>.</p></li></ul>
 
 Cet exemple désactive la journalisation des objets des messages dans le journal de suivi des messages sur le serveur de boîtes aux lettres intitulé Mailbox01 :
 

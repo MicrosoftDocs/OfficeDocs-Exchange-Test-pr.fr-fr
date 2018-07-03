@@ -25,18 +25,8 @@ Le choix du serveur d'accès au client sur lequel activer le point de terminaiso
 
   - **Migrations de déplacement à distance entre une organisation Exchange locale et Exchange Online**   Pour les migrations de déplacement à distance, tant par embarquement que par débarquement, vous devez activer le point de terminaison du proxy MRS sur les serveurs d'accès au client au sein de votre organisation locale.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous utilisez le CAE pour déplacer des boîtes aux lettres, les déplacements inter-forêts et les migrations de déplacement à distance par embarquement sont des déplacements de type pull parce que la demande provient de l'environnement cible. Les migrations de déplacement à distance par débarquement sont des déplacements de type push parce que la demande provient de l'environnement source.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous utilisez le CAE pour déplacer des boîtes aux lettres, les déplacements inter-forêts et les migrations de déplacement à distance par embarquement sont des déplacements de type pull parce que la demande provient de l'environnement cible. Les migrations de déplacement à distance par débarquement sont des déplacements de type push parce que la demande provient de l'environnement source.
 
 
 ## Ce qu'il faut savoir avant de commencer
@@ -51,18 +41,8 @@ Le choix du serveur d'accès au client sur lequel activer le point de terminaiso
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

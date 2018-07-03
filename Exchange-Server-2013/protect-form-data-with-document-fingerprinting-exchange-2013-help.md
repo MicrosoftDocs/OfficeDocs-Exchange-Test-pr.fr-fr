@@ -47,18 +47,8 @@ Pour plus d’informations sur l’ajout de règles à une stratégie DLP, cons
 
 ## Utilisez l’environnement de ligne de commande Exchange Management Shell pour créer un package de règles de classification basé sur l’empreinte numérique de document.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Même si vous pouvez créer et modifier des packages de règles de classification dans l’environnement Exchange Management Shell, vous trouverez peut-être que la création d’empreintes numériques de document est un peu plus simple dans le CAE. Nous vous recommandons de l’essayer dans le CAE avant de tenter cette procédure dans l’environnement Exchange Management Shell.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Même si vous pouvez créer et modifier des packages de règles de classification dans l’environnement Exchange Management Shell, vous trouverez peut-être que la création d’empreintes numériques de document est un peu plus simple dans le CAE. Nous vous recommandons de l’essayer dans le CAE avant de tenter cette procédure dans l’environnement Exchange Management Shell.
 
 
 La protection contre la perte de données utilise des packages de règles de classification pour détecter le contenu sensible dans les messages. Pour créer un package de règles de classification basé sur une empreinte numérique de document, utilisez les cmdlets **New-Fingerprint** et **New-DataClassification**. Comme les résultats de **New-Fingerprint** ne sont pas stockés en dehors de la règle de classification des données, vous devez toujours exécuter les cmdlets **New-Fingerprint** et **New-DataClassification** ou **Set-DataClassification** dans la même session PowerShell. L’exemple suivant crée une empreinte numérique de document à partir du fichier C:\\My Documents\\Contoso Employee Template.docx. La nouvelle empreinte est stockée en tant que variable pour que vous puissiez l’utiliser avec la cmdlet **New-DataClassification** dans la même session PowerShell.

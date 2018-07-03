@@ -53,18 +53,8 @@ Les avantages et inconvénients des protocoles POP3 et IMAP4 sont les suivants 
 
 Les applications de messagerie POP3 et IMAP4 n’utilisent pas les protocoles POP3 et IMAP4 pour envoyer des messages au serveur de messagerie. Elles reposent sur le protocole SMTP pour l’envoi de messages. Le connecteur de réception des messages déposés par des applications clientes utilisant le protocole POP3 ou IMAP4 est créé automatiquement lors de l’installation d’Exchange. Pour plus d’informations sur les connecteurs, consultez la rubrique [Connecteurs de réception](receive-connectors-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Chaque fois qu'un utilisateur utilise un programme de messagerie basé sur POP ou IMAP pour ouvrir ses messages Office 365, il peut constater un retard de quelques secondes. Ce retard est dû à un serveur proxy, qui introduit une étape supplémentaire pour l’authentification. Le serveur proxy recherche d’abord le serveur attribué (serveur d’accès au client), puis s’authentifie par rapport à celui-ci.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Chaque fois qu'un utilisateur utilise un programme de messagerie basé sur POP ou IMAP pour ouvrir ses messages Office 365, il peut constater un retard de quelques secondes. Ce retard est dû à un serveur proxy, qui introduit une étape supplémentaire pour l’authentification. Le serveur proxy recherche d’abord le serveur attribué (serveur d’accès au client), puis s’authentifie par rapport à celui-ci.
 
 
 ## Connectivité intersite POP3 et IMAP4
@@ -81,18 +71,8 @@ Vous ne pouvez pas utiliser le compte Anonyme ni le compte Invité pour vous con
 
 **IMAP4** Les applications clientes de messagerie utilisant IMAP4 sont plus flexibles et offrent généralement davantage de fonctionnalités que celles utilisant POP3. Par défaut, lorsque les applications de messagerie IMAP4 téléchargent des messages électroniques sur un ordinateur client, une copie de ces derniers est conservée sur le serveur de messagerie. Étant donné qu’une copie des messages électroniques de l’utilisateur est conservée sur le serveur de messagerie, l’utilisateur peut accéder aux mêmes messages à partir de plusieurs ordinateurs. La messagerie IMAP4 permet à l'utilisateur de créer plusieurs dossiers de messagerie sur le serveur de messagerie et d'y accéder. Les utilisateurs peuvent ensuite accéder à leurs messages sur le serveur à partir d'ordinateurs se trouvant à différents emplacements. Par exemple, la plupart des applications IMAP4 peuvent être configurées pour conserver une copie des éléments envoyés d'un utilisateur sur le serveur afin qu'il puisse y accéder à partir de n'importe quel autre ordinateur. IMAP4 prend en charge des fonctionnalités supplémentaires prises en charge par la plupart des applications IMAP4. Par exemple, certaines applications IMAP4 incluent une fonctionnalité qui permet aux utilisateurs d'afficher uniquement les en-têtes de leurs messages sur le serveur (expéditeur et objet), puis de télécharger uniquement les messages qu'ils veulent lire. IMAP4 ne prend pas non plus en charge l’accès aux dossiers publics.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les clients IMAP4 et POP3 ont un accès limité aux informations de calendrier d'Exchange. Pour plus d'informations, consultez les rubriques <a href="configure-calendar-options-for-pop3-exchange-2013-help.md">Configurer les options de calendrier pour POP3</a> et <a href="configure-calendar-options-for-imap4-exchange-2013-help.md">Configurer les options de calendrier pour IMAP4</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les clients IMAP4 et POP3 ont un accès limité aux informations de calendrier d'Exchange. Pour plus d'informations, consultez les rubriques <a href="configure-calendar-options-for-pop3-exchange-2013-help.md">Configurer les options de calendrier pour POP3</a> et <a href="configure-calendar-options-for-imap4-exchange-2013-help.md">Configurer les options de calendrier pour IMAP4</a>.
 
 
 ## Options d'envoi et de réception des applications de messagerie POP3 et IMAP4
@@ -115,18 +95,8 @@ Pour plus d'informations sur la configuration de ces paramètres pour l'applicat
 
 Si le périphérique ou l’ordinateur qui exécute l’application de messagerie POP3 ou IMAP4 est toujours connecté à Internet, les utilisateurs peuvent souhaiter configurer l’application de messagerie de manière à envoyer et recevoir des messages selon un intervalle exprimé en minutes. Une connexion au serveur à intervalles réguliers permet aux utilisateurs de tenir leur application de messagerie à jour avec les informations les plus récentes sur le serveur. Toutefois, si le périphérique ou l’ordinateur qui exécute l’application de messagerie POP3 ou IMAP4 n’est pas connecté à Internet en permanence, les utilisateurs peuvent configurer l’application de messagerie pour envoyer et recevoir des messages manuellement.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si l'utilisateur utilise une application de messagerie IMAP4 prenant en charge la commande IDLE IMAP4, il peut envoyer et recevoir des messages à partir de sa boîte aux lettres Exchange pratiquement en temps réel. Pour que cette méthode de connexion fonctionne, l'application du serveur de messagerie et l'application cliente doivent prendre en charge la commande IDLE IMAP4. Dans la plupart des cas, les utilisateurs n'ont à configurer aucun paramètre de l'application de messagerie IMAP4.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si l'utilisateur utilise une application de messagerie IMAP4 prenant en charge la commande IDLE IMAP4, il peut envoyer et recevoir des messages à partir de sa boîte aux lettres Exchange pratiquement en temps réel. Pour que cette méthode de connexion fonctionne, l'application du serveur de messagerie et l'application cliente doivent prendre en charge la commande IDLE IMAP4. Dans la plupart des cas, les utilisateurs n'ont à configurer aucun paramètre de l'application de messagerie IMAP4.
 
 
 ## Applications POP3 et IMAP4

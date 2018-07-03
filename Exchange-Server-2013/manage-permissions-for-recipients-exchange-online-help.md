@@ -27,18 +27,8 @@ Vous pouvez utiliser le CAE ou l'environnement de ligne de commande pour attribu
 
   - **Envoyer de la part de**   Cette autorisation permet également à un délégué d'utiliser la boîte aux lettres pour envoyer des messages. Lorsque cette autorisation est attribuée à un délégué, l'adresse **De** figurant dans tout message expédié par le délégué indique que ce message a été envoyé par le délégué de la part du propriétaire de la boîte aux lettres.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous attribuez l’autorisation Accès total, Envoyer en tant que ou Envoyer de la part de pour accéder à une boîte aux lettres masquée dans les listes d’adresses, le délégué ne peut pas ouvrir cette boîte aux lettres ni envoyer de messages.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous attribuez l’autorisation Accès total, Envoyer en tant que ou Envoyer de la part de pour accéder à une boîte aux lettres masquée dans les listes d’adresses, le délégué ne peut pas ouvrir cette boîte aux lettres ni envoyer de messages.
 
 
 ## Ce qu’il faut savoir avant de commencer ?
@@ -49,18 +39,8 @@ Vous pouvez utiliser le CAE ou l'environnement de ligne de commande pour attribu
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -117,18 +97,8 @@ La procédure suivante montre comment attribuer une autorisation utilisateur pou
     
     L’autorisation **Envoyer de la part de** permet au délégué d’envoyer des courriers électroniques de la part de cette boîte aux lettres. La ligne **De** de tous les messages envoyés par un délégué indique que le message a été envoyé par le délégué, au nom du propriétaire de la boîte aux lettres.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si l’utilisateur doit également pouvoir ouvrir et afficher le contenu de cette boîte aux lettres, vous devez aussi lui attribuer l’autorisation <strong>Accès total</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si l’utilisateur doit également pouvoir ouvrir et afficher le contenu de cette boîte aux lettres, vous devez aussi lui attribuer l’autorisation <strong>Accès total</strong>.
 
 
 5.  Cliquez sur **Enregistrer** pour enregistrer vos modifications.
@@ -165,18 +135,8 @@ La procédure suivante explique comment attribuer des autorisations d’accès t
     
     L’autorisation **Accès total** permet à un délégué d’ouvrir la boîte aux lettres d’un utilisateur et d’accéder à son contenu.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>L'attribution de l'autorisation <strong>Accès total</strong> ne permet pas au délégué d'envoyer du courrier à partir de la boîte aux lettres. Pour permettre au délégué d’expédier du courrier, vous devez lui attribuer l’autorisation <strong>Envoyer en tant que</strong> ou <strong>Envoyer de la part de</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > L'attribution de l'autorisation <strong>Accès total</strong> ne permet pas au délégué d'envoyer du courrier à partir de la boîte aux lettres. Pour permettre au délégué d’expédier du courrier, vous devez lui attribuer l’autorisation <strong>Envoyer en tant que</strong> ou <strong>Envoyer de la part de</strong>.
 
 
 5.  Cliquez sur **Enregistrer** pour enregistrer vos modifications.
@@ -215,18 +175,8 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Les exemples suivants montrent comment gérer les autorisations Envoyer en tant que dans Exchange Server 2013 et dans Exchange Online. Dans Exchange 2013, vous devez utiliser les cmdlets **Add-ADPermission** et **Remove-ADPermission**, tandis que dans Exchange Online, vous devez utiliser les cmdlets **Add-RecipientPermission** et **Remove-RecipientPermission**. Dans les deux cas, le paramètre *Identity* permet de spécifier le nom de la boîte aux lettres pour laquelle l'autorisation Envoyer en tant que doit être ajoutée ou supprimée, et le paramètre *User* ou *Trustee* permet de spécifier le délégué (par exemple, un utilisateur ou un groupe) auquel l'autorisation Envoyer en tant que doit être attribuée ou retirée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Utilisez la cmdlet <strong>Get-Recipient</strong> pour récupérer la propriété <em>Name</em> pour la boîte aux lettres et le délégué. Utilisez ces valeurs pour attribuer l'autorisation Envoyer en tant que.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Utilisez la cmdlet <strong>Get-Recipient</strong> pour récupérer la propriété <em>Name</em> pour la boîte aux lettres et le délégué. Utilisez ces valeurs pour attribuer l'autorisation Envoyer en tant que.
 
 
 ## Exchange Server 2013
@@ -341,18 +291,8 @@ Les sections suivantes montrent comment utiliser l'environnement de ligne de com
 
 Les exemples suivants montrent comment gérer les autorisations Envoyer en tant que pour des groupes dans Exchange Server 2013 et dans Exchange Online. Dans Exchange 2013, vous devez utiliser les cmdlets **Add-ADPermission** et **Remove-ADPermission**. Dans Exchange Online, vous devez utiliser les cmdlets **Add-RecipientPermission** et **Remove-RecipientPermission**. Dans les deux cas, le paramètre *Identity* permet de spécifier le nom du groupe pour lequel l'autorisation Envoyer en tant que doit être ajoutée ou supprimée, et le paramètre *User* ou *Trustee* permet de spécifier le délégué (par exemple, un utilisateur ou un groupe) auquel l'autorisation Envoyer en tant que doit être attribuée ou retirée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Utilisez la cmdlet <strong>Get-Recipient</strong> pour récupérer la propriété <em>Name</em> pour le groupe et le délégué. Utilisez ces valeurs pour attribuer l'autorisation Envoyer en tant que.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Utilisez la cmdlet <strong>Get-Recipient</strong> pour récupérer la propriété <em>Name</em> pour le groupe et le délégué. Utilisez ces valeurs pour attribuer l'autorisation Envoyer en tant que.
 
 
 ## Exchange Server 2013

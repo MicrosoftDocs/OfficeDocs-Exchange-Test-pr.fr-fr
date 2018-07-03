@@ -23,18 +23,8 @@ Nous recommandons d’installer le rôle de transport Edge dans un réseau de p�
 
 Si vous souhaitez installer les rôles de boîtes aux lettres ou d’accès au client Exchange 2013 sur un ordinateur, consultez la rubrique [Installer Exchange 2013 à l’aide de l’Assistant Installation](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md). Le rôle de transport Edge ne peut pas être installé sur le même ordinateur que les rôles serveur de boîtes aux lettres ou d’accès au client.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avez-vous déjà entendu parler de l’Assistant de déploiement Exchange Server ? Il s’agit d’un outil en ligne gratuit qui vous permet de déployer rapidement Exchange 2013 dans votre organisation en répondant à quelques questions et en créant une liste de contrôle de déploiement personnalisée. Pour en savoir plus, consultez la page <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Assistant de déploiement Exchange Server</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Avez-vous déjà entendu parler de l’Assistant de déploiement Exchange Server ? Il s’agit d’un outil en ligne gratuit qui vous permet de déployer rapidement Exchange 2013 dans votre organisation en répondant à quelques questions et en créant une liste de contrôle de déploiement personnalisée. Pour en savoir plus, consultez la page <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Assistant de déploiement Exchange Server</a>.
 
 
 Pour plus d’informations sur les tâches postérieures à l’installation, consultez la rubrique [Tâches consécutives à l’installation d’Exchange 2013](exchange-2013-post-installation-tasks-exchange-2013-help.md).
@@ -73,18 +63,8 @@ Pour plus d’informations sur les tâches postérieures à l’installation, co
 
 ## Installer Exchange Server 2013
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour télécharger la dernière version d’Exchange 2013, voir <a href="updates-for-exchange-2013-exchange-2013-help.md">Mises à jour pour Exchange 2013</a></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour télécharger la dernière version d’Exchange 2013, voir <a href="updates-for-exchange-2013-exchange-2013-help.md">Mises à jour pour Exchange 2013</a>
 
 
 1.  Connectez-vous à l’ordinateur sur lequel vous voulez installer Exchange 2013.
@@ -127,18 +107,8 @@ Pour plus d’informations sur les tâches postérieures à l’installation, co
     
     Sélectionnez **Installer automatiquement les rôles et les fonctionnalités Windows Server requis pour Exchange Server** pour que l’Assistant Installation installe les composants Windows requis. Il peut s’avérer nécessaire de redémarrer l’ordinateur pour terminer l’installation de certaines fonctionnalités Windows. Si vous ne sélectionnez pas cette option, vous devez installer les fonctionnalités Windows manuellement.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Cette option installe uniquement les fonctionnalités Windows requises par Exchange. Vous devez installer manuellement les autres composants requis. Pour plus d’informations, voir <a href="exchange-2013-prerequisites-exchange-2013-help.md">Conditions préalables pour Exchange 2013</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Cette option installe uniquement les fonctionnalités Windows requises par Exchange. Vous devez installer manuellement les autres composants requis. Pour plus d’informations, voir <a href="exchange-2013-prerequisites-exchange-2013-help.md">Conditions préalables pour Exchange 2013</a>.
     
     Cliquez sur **Suivant** pour continuer.
 

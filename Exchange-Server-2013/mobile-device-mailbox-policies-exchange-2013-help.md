@@ -33,18 +33,8 @@ Dans MicrosoftExchange Server 2013, vous pouvez créer des stratégies de boît
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le lecteur d’empreintes digitales d’iOS7 n’est pas pris en charge comme mot de passe d’appareil. Si vous activez le lecteur d’empreintes digitales pour sécuriser votre appareil iOS7, vous devrez tout de même créer et entrer un mot de passe si les stratégies de boîte aux lettres de votre appareil mobile en exigent un.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Le lecteur d’empreintes digitales d’iOS7 n’est pas pris en charge comme mot de passe d’appareil. Si vous activez le lecteur d’empreintes digitales pour sécuriser votre appareil iOS7, vous devrez tout de même créer et entrer un mot de passe si les stratégies de boîte aux lettres de votre appareil mobile en exigent un.
 
 
 ## Présentation des stratégies de boîte aux lettres d'appareil mobile

@@ -38,18 +38,8 @@ Si vous déléguez une attribution de rôle de délégation à un groupe de rôl
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette rubrique décrit la délégation d'attribution de rôle de gestion. Si vous souhaitez déléguer une attribution de rôle permettant à son bénéficiaire d'ajouter des membres à des groupes de rôles et d'en supprimer, ce qui est la méthode recommandée de délégation, voir <a href="manage-role-groups-exchange-2013-help.md">Gérer des groupes de rôles</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette rubrique décrit la délégation d'attribution de rôle de gestion. Si vous souhaitez déléguer une attribution de rôle permettant à son bénéficiaire d'ajouter des membres à des groupes de rôles et d'en supprimer, ce qui est la méthode recommandée de délégation, voir <a href="manage-role-groups-exchange-2013-help.md">Gérer des groupes de rôles</a>.
 
 
 Pour plus d'information sur les attributions de rôle normales et la délégation d'attributions de rôle de gestion, voir [Présentation des attributions de rôles de gestion](understanding-management-role-assignments-exchange-2013-help.md).
@@ -66,18 +56,8 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives à la gestion 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour déléguer un rôle de gestion
@@ -88,18 +68,8 @@ Vous pouvez créer des attributions de rôle de délégation à l'aide des même
 
   - [Ajouter un rôle à un utilisateur ou un groupe de sécurité universel](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas créer une attribution de rôle de délégation dans une stratégie d'attribution de rôle de gestion.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas créer une attribution de rôle de délégation dans une stratégie d'attribution de rôle de gestion.
 
 
 Cet exemple crée une attribution de rôle de délégation pour permettre aux membres du groupe de rôles Senior Admins d'attribuer le rôle Mail Recipients à un utilisateur dans l'organisation Exchange.

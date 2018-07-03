@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2013-01-28_
 
 Les outils de gestion de Microsoft Exchange Server 2013 vous permettent de configurer et de gérer votre organisation Exchange à distance. Ils comprennent l'environnement de ligne de commande Exchange Management Shell et la boîte à outils Exchange. Cette rubrique explique comment utiliser Setup.exe ou l'installation sans assistance pour installer Exchange 2013 Management Tools.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il n'est pas nécessaire d'exécuter cette procédure pour utiliser le Centre d'administration Exchange (CAE) à distance. Le Centre d'administration Exchange (CAE) est une console basée sur le web qui est hébergée sur des ordinateurs exécutant le rôle serveur d'accès au client d'Exchange 2013. Pour plus d'informations sur le CAE à distance, consultez la rubrique <a href="exchange-admin-center-in-exchange-2013-exchange-2013-help.md">Centre d’administration Exchange dans Exchange 2013</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il n'est pas nécessaire d'exécuter cette procédure pour utiliser le Centre d'administration Exchange (CAE) à distance. Le Centre d'administration Exchange (CAE) est une console basée sur le web qui est hébergée sur des ordinateurs exécutant le rôle serveur d'accès au client d'Exchange 2013. Pour plus d'informations sur le CAE à distance, consultez la rubrique <a href="exchange-admin-center-in-exchange-2013-exchange-2013-help.md">Centre d’administration Exchange dans Exchange 2013</a>.
 
 
 Pour des informations supplémentaires sur la gestion d'Exchange 2013, consultez les rubriques [Centre d’administration Exchange dans Exchange 2013](exchange-admin-center-in-exchange-2013-exchange-2013-help.md) et [Utilisation de PowerShell avec Exchange 2013 (Exchange Management Shell)](https://technet.microsoft.com/fr-fr/library/bb123778\(v=exchg.150\)).
@@ -47,18 +37,8 @@ Pour des informations supplémentaires sur la gestion d'Exchange 2013, consulte
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utilisation du programme d'installation pour installer les outils de gestion Exchange 2013
@@ -103,18 +83,8 @@ Pour des informations supplémentaires sur la gestion d'Exchange 2013, consulte
     
     Sélectionnez **Installer automatiquement les rôles et les fonctionnalités Windows Server requis pour Exchange Server** pour que l'Assistant Installation installe les composants requis de Windows. Il peut s'avérer nécessaire de redémarrer l'ordinateur pour terminer l'installation de certaines fonctionnalités de Windows. Si vous ne sélectionnez pas cette option, vous devez installer les fonctionnalités Windows manuellement.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Cette option installe uniquement les fonctionnalités Windows requises par Exchange. Vous devez installer manuellement les autres composants requis. Pour plus d'informations, consultez la rubrique <a href="exchange-2013-prerequisites-exchange-2013-help.md">Conditions préalables pour Exchange 2013</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Cette option installe uniquement les fonctionnalités Windows requises par Exchange. Vous devez installer manuellement les autres composants requis. Pour plus d'informations, consultez la rubrique <a href="exchange-2013-prerequisites-exchange-2013-help.md">Conditions préalables pour Exchange 2013</a>.
     
     Cliquez sur **Suivant** pour continuer.
 
@@ -134,18 +104,8 @@ Pour des informations supplémentaires sur la gestion d'Exchange 2013, consulte
     
       - Trait d'union ou tiret
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Un nom d'organisation ne peut pas contenir plus de 64 caractères. Le nom d'organisation ne peut pas être vide.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Un nom d'organisation ne peut pas contenir plus de 64 caractères. Le nom d'organisation ne peut pas être vide.
     
     Si vous souhaitez utiliser le modèle d'autorisations partagées Active Directory, sélectionnez l'option **Appliquer le modèle de sécurité des autorisations partagées Active Directory à l'organisation Exchange**.
     

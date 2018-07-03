@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2012-08-21_
 
 Microsoft Exchange Server 2013 comprend plusieurs groupes de rôles de gestion par défaut. Les groupes de rôles intégrés suivants comportent des rôles préconfigurés que vous pouvez attribuer à différents administrateurs et utilisateurs spécialistes dans votre organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les groupes de rôles ne permettent pas de contrôler l'accès aux fonctionnalités de boîte aux lettres des utilisateurs finaux. Pour contrôler l'accès aux fonctionnalités de boîte aux lettres des utilisateurs finaux, voir <a href="understanding-management-role-assignment-policies-exchange-2013-help.md">Présentation des stratégies d’attribution de rôle de gestion</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les groupes de rôles ne permettent pas de contrôler l'accès aux fonctionnalités de boîte aux lettres des utilisateurs finaux. Pour contrôler l'accès aux fonctionnalités de boîte aux lettres des utilisateurs finaux, voir <a href="understanding-management-role-assignment-policies-exchange-2013-help.md">Présentation des stratégies d’attribution de rôle de gestion</a>.
 
 
   - [Gestion de l’organisation](organization-management-exchange-2013-help.md)

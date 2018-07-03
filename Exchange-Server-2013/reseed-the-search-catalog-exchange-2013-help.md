@@ -94,18 +94,8 @@ S’il existe une seule copie de la base de données de boîtes aux lettres, vou
 
 2.  Supprimez, déplacez ou renommez le dossier qui contient le catalogue d’indexation de contenu Exchange. Le nom de ce dossier est `%ExchangeInstallPath\Mailbox\<name of mailbox database>_Catalog\<GUID>12.1.Single`. Par exemple, vous pouvez renommer le dossier `C:\Program Files\Microsoft\Exchange Server\V15\Mailbox\Mailbox Database 0657134726_Catalog\F0627A72-9F1D-494A-839A-D7C915C279DB12.1.Single_OLD`.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>La suppression de ce dossier libère de l’espace disque supplémentaire. Vous pouvez également renommer ou déplacer le dossier pour le conserver à des fins de dépannage.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > La suppression de ce dossier libère de l’espace disque supplémentaire. Vous pouvez également renommer ou déplacer le dossier pour le conserver à des fins de dépannage.
 
 
 3.  Exécutez les commandes suivantes pour redémarrer la recherche Microsoft Exchange et les services du contrôleur de l’hôte de la recherche Microsoft Exchange.

@@ -75,18 +75,8 @@ Retour au début
 
 Par défaut, les journaux de transaction de la base de données des files d'attente de messages est située dans %ExchangeInstallPath%TransportRoles\\data\\Queue. Exchange surveille l'utilisation de l'espace disque pour cet emplacement. Le fichier de configuration d'application %ExchangeInstallPath%Bin\\EdgeTransport.exe.config contient une clé *DatabaseCheckPointDepthMax* dont la valeur par défaut est 384 Mo. Cette clé contrôle la taille autorisée totale des journaux de transactions non validés existant sur le disque dur. Ce paramètre est utilisé dans la formule qui calcule l'utilisation du disque dur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La valeur du paramètre <em>DatabaseCheckPointDepthMax</em> s'applique à toutes les bases de données du moteur ESE (Extensible Storage Engine) relatives au transport qui existent sur le serveur de boîtes aux lettres ou de transport Edge. Cela inclut la base de données des files d'attente de messages et la base de données de filtres IP.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La valeur du paramètre <em>DatabaseCheckPointDepthMax</em> s'applique à toutes les bases de données du moteur ESE (Extensible Storage Engine) relatives au transport qui existent sur le serveur de boîtes aux lettres ou de transport Edge. Cela inclut la base de données des files d'attente de messages et la base de données de filtres IP.
 
 
 Par défaut, le niveau élevé d’utilisation du disque dur est calculé à l’aide de la formule suivante :

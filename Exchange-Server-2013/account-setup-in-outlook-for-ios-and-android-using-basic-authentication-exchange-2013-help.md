@@ -33,18 +33,8 @@ Les images suivantes présentent un exemple du processus de configuration de l�
 
 Si vous utilisez Microsoft Intune en tant que fournisseur de gestion des appareils mobiles, les étapes suivantes vous permettront de déployer des paramètres de configuration de compte pour vos boîtes aux lettres en local qui utilisent l’authentification de base avec le protocole ActiveSync. Une fois la configuration créée, vous pouvez attribuer les paramètres à des groupes d’utilisateurs, comme indiqué dans la section suivante, Attribuer des paramètres de configuration.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si les utilisateurs de votre organisation utilisent iOS et Android pour les appareils de travail, vous devez créer une stratégie de configuration d’application distincte pour chaque plateforme.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si les utilisateurs de votre organisation utilisent iOS et Android pour les appareils de travail, vous devez créer une stratégie de configuration d’application distincte pour chaque plateforme.
 
 
 1.  Connectez-vous au portail Azure.
@@ -67,18 +57,8 @@ Si vous utilisez Microsoft Intune en tant que fournisseur de gestion des apparei
 
 10. Choisissez **Paramètres de configuration**. Sur le panneau **Paramètres de configuration**, définissez les paires clé/valeur qui fournissent des configurations pour Outlook pour iOS et Android. Les paires clé/valeur que vous saisissez sont définies plus loin dans cet article, dans la section Paires clé/valeur.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Pour saisir les paires clé/valeur, vous avez le choix entre utiliser le concepteur de configuration ou saisir la liste des propriétés XML.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Pour saisir les paires clé/valeur, vous avez le choix entre utiliser le concepteur de configuration ou saisir la liste des propriétés XML.
 
 
 11. Lorsque vous avez terminé, choisissez **OK**.

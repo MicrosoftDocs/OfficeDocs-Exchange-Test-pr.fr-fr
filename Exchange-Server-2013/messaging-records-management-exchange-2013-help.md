@@ -51,34 +51,14 @@ Vous pouvez utiliser des stratégies de rétention pour appliquer une rétention
 
   - **Exchange Online:**  [Boîtes aux lettres d’archivage dans Exchange Online](https://technet.microsoft.com/fr-fr/library/dn922147\(v=exchg.150\))
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans un déploiement hybride Exchange, vous pouvez activer une boîte aux lettres d’archivage en nuage pour une boîte aux lettres principale locale. Si vous attribuez une stratégie d’archivage à une boîte aux lettres locale, les éléments sont déplacés vers l’archive en nuage. Si un élément est déplacé vers la boîte aux lettres d’archivage, une copie n’est pas conservée dans la boîte aux lettres locale. Si la boîte aux lettres locale est placée en conservation, une stratégie d’archivage déplacera les éléments vers la boîte aux lettres d’archivage en nuage dans laquelle ils sont conservés pendant la durée spécifiée par la conservation.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans un déploiement hybride Exchange, vous pouvez activer une boîte aux lettres d’archivage en nuage pour une boîte aux lettres principale locale. Si vous attribuez une stratégie d’archivage à une boîte aux lettres locale, les éléments sont déplacés vers l’archive en nuage. Si un élément est déplacé vers la boîte aux lettres d’archivage, une copie n’est pas conservée dans la boîte aux lettres locale. Si la boîte aux lettres locale est placée en conservation, une stratégie d’archivage déplacera les éléments vers la boîte aux lettres d’archivage en nuage dans laquelle ils sont conservés pendant la durée spécifiée par la conservation.
 
 
 **Supprimer les messages en fonction de l’emplacement du dossier**   Dans cette stratégie, vous implémentez des stratégies de gestion des enregistrements de messagerie en fonction de l’emplacement des messages. Par exemple, vous pouvez indiquer que les messages contenus dans la boîte de réception sont conservés pendant un an et que les messages du dossier Courrier indésirable sont conservés pendant 60 jours. Vous pouvez mettre en œuvre cette stratégie en utilisant une combinaison de balises de stratégie de rétention pour chaque dossier par défaut que vous souhaitez configurer et une balise de stratégie par défaut pour la boîte aux lettres entière. La balise de stratégie par défaut s’applique à tous les dossiers personnalisés et à tous les dossiers par défaut auxquels une balise de stratégie de rétention n’est pas appliquée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange 2013, vous pouvez créer des balises de stratégie de rétention pour les dossiers Calendrier et Tâches. Si vous souhaitez que certains éléments de ces dossiers ou d’autres dossiers par défaut n’expirent pas, vous pouvez créer une balise de rétention désactivée pour ce dossier par défaut.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange 2013, vous pouvez créer des balises de stratégie de rétention pour les dossiers Calendrier et Tâches. Si vous souhaitez que certains éléments de ces dossiers ou d’autres dossiers par défaut n’expirent pas, vous pouvez créer une balise de rétention désactivée pour ce dossier par défaut.
 
 
 **Autoriser les utilisateurs à classer les messages**    Dans cette stratégie, vous implémentez des stratégies de gestion des enregistrements de messagerie qui incluent un paramètre de rétention de référence pour tous les messages mais autorisent les utilisateurs à classer les messages en fonction des exigences commerciales ou réglementaires. Dans ce cas, les utilisateurs constituent un élément important de votre stratégie de gestion des enregistrements. Souvent, ils ont une meilleure compréhension de la valeur de rétention d’un message.
@@ -99,18 +79,8 @@ Vous pouvez répondre à cette exigence en utilisant une combinaison de stratég
 
 Vous pouvez, si vous le souhaitez, utiliser des balises de stratégie de rétention pour permettre aux utilisateurs de nettoyer leurs boîtes aux lettres. Toutefois, la suspension pour litige et le blocage sur place continuent à conserver les messages supprimés jusqu’à l’expiration de la période de blocage.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une suspension pour litige ou un blocage sur place temporel ressemble à ce qui était communément appelé une <em>mise en suspens temporaire pour raisons juridiques</em> dans Exchange 2010. La mise en suspens temporaire pour raisons juridiques a été implémentée en configurant la période de rétention des éléments supprimés pour une base de données de boîtes aux lettres ou une boîte aux lettres individuelle. Toutefois, la rétention des éléments supprimés permet de conserver les éléments supprimés et modifiés à la date de suppression. La suspension pour litige et le blocage sur place conservent les éléments en fonction de leur date de réception ou de création. Cela permet de garantir que les messages sont conservés pendant au moins la période spécifiée.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Une suspension pour litige ou un blocage sur place temporel ressemble à ce qui était communément appelé une <em>mise en suspens temporaire pour raisons juridiques</em> dans Exchange 2010. La mise en suspens temporaire pour raisons juridiques a été implémentée en configurant la période de rétention des éléments supprimés pour une base de données de boîtes aux lettres ou une boîte aux lettres individuelle. Toutefois, la rétention des éléments supprimés permet de conserver les éléments supprimés et modifiés à la date de suppression. La suspension pour litige et le blocage sur place conservent les éléments en fonction de leur date de réception ou de création. Cela permet de garantir que les messages sont conservés pendant au moins la période spécifiée.
 
 
 ## Pour plus d'informations

@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2013-08-12_
 
 Le Centre d'administration Exchange (CAE) ou l'environnement de ligne de commande Exchange Management Shell permet d'afficher ou de configurer les propriétés d'un répertoire virtuel Outlook Web App.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange Online, les administrateurs ne peuvent pas afficher ou configurer les répertoires virtuels Outlook Web App.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Dans Exchange Online, les administrateurs ne peuvent pas afficher ou configurer les répertoires virtuels Outlook Web App.
 
 
 Si vous utilisez l'environnement de ligne de commande Exchange Management Shell pour afficher les propriétés d'un répertoire virtuel Outlook Web App, les informations renvoyées représentent un sous-ensemble des informations disponibles. Par exemple, si vous utilisez la cmdlet **Get-OWAVirtualDirectory** pour afficher les propriétés, Exchange retourne les informations suivantes :
@@ -53,18 +43,8 @@ Si vous utilisez le CAE pour afficher les propriétés d’un répertoire virtue
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -128,33 +108,13 @@ Si vous utilisez le CAE pour afficher les propriétés d’un répertoire virtue
 
 5.  L'onglet **Fonctionnalités** permet de spécifier les fonctionnalités que vous souhaitez activer ou désactiver pour les utilisateurs d'Outlook Web App sur un répertoire virtuel.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les paramètres de fonctionnalités pour des utilisateurs individuels remplacent les paramètres de répertoire virtuel. Vous pouvez modifier les paramètres de fonctionnalités pour des utilisateurs individuels à l'aide de la cmdlet <strong>Set-CASMailbox</strong> ou des stratégies de boîte aux lettres Outlook Web App. Pour plus d'informations, consultez la rubrique <a href="outlook-web-app-mailbox-policies-exchange-2013-help.md">Stratégies de boîte aux lettres de Outlook Web App</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les paramètres de fonctionnalités pour des utilisateurs individuels remplacent les paramètres de répertoire virtuel. Vous pouvez modifier les paramètres de fonctionnalités pour des utilisateurs individuels à l'aide de la cmdlet <strong>Set-CASMailbox</strong> ou des stratégies de boîte aux lettres Outlook Web App. Pour plus d'informations, consultez la rubrique <a href="outlook-web-app-mailbox-policies-exchange-2013-help.md">Stratégies de boîte aux lettres de Outlook Web App</a>.
     
     Utilisez les cases à cocher pour activer ou désactiver des fonctionnalités. Par défaut, les fonctionnalités les plus courantes sont affichées. Pour afficher toutes les fonctionnalités pouvant être activées ou désactivées, cliquez sur **plus d'options**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>L'option d'activation ou de désactivation de la version standard d'Outlook Web App à l'aide de la case à cocher <strong>Client premium</strong> est obsolète et sera supprimée des paramètres. La version standard d'Outlook Web App est toujours activée.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > L'option d'activation ou de désactivation de la version standard d'Outlook Web App à l'aide de la case à cocher <strong>Client premium</strong> est obsolète et sera supprimée des paramètres. La version standard d'Outlook Web App est toujours activée.
 
 
 6.  Sous l'onglet **Accès au fichier**, utilisez les cases à cocher pour configurer l'accès au fichier et afficher les options offertes aux utilisateurs. L'accès aux fichiers permet aux utilisateurs d'ouvrir ou d'afficher le contenu de fichiers envoyés sous forme de pièces jointes dans un message électronique.

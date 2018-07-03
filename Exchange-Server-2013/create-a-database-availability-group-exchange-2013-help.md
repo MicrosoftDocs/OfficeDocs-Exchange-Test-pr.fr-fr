@@ -60,18 +60,8 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -88,18 +78,8 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
     
       - **Serveur témoin**   Spécifiez un serveur témoin pour le DAG. Si vous ne renseignez pas ce champ, le système tentera de sélectionner automatiquement un serveur d’accès au client du site Active Directory local installé sur un ordinateur qui n’est pas doté du rôle serveur de boîte aux lettres, pour l’utiliser comme serveur témoin.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Si vous spécifiez un serveur témoin, vous devez utiliser un nom d’hôte ou un nom de domaine complet. L'utilisation d'une adresse IP ou d'un nom contenant des caractères génériques n'est pas prise en charge. En outre, le serveur témoin ne peut pas être membre du groupe de disponibilité de base de données (DAG).</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Si vous spécifiez un serveur témoin, vous devez utiliser un nom d’hôte ou un nom de domaine complet. L'utilisation d'une adresse IP ou d'un nom contenant des caractères génériques n'est pas prise en charge. En outre, le serveur témoin ne peut pas être membre du groupe de disponibilité de base de données (DAG).
     
       - **Répertoire témoin**   Indiquez dans ce champ le chemin d’accès à un répertoire du serveur témoin qui sera utilisé pour stocker des données témoin. Si le répertoire n'existe pas, le système le crée pour vous sur le serveur témoin. Si vous ne renseignez pas ce champ, le répertoire par défaut (%SystemDrive%\\DAGFileShareWitnesses\\\<DAG FQDN\>) sera créé sur le serveur témoin.
     

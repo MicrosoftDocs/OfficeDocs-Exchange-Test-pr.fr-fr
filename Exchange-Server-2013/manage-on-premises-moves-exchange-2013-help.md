@@ -39,18 +39,8 @@ Pour plus d'informations sur le déplacement de boîtes aux lettres, consultez l
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -105,18 +95,8 @@ Connectez-vous au CAE et effectuez les opérations suivantes :
 
 3.  Dans la page **Déplacer la configuration**, spécifiez le nom du nouveau lot. Sélectionnez les options choisies pour la boîte aux lettres d'archive et l'emplacement de la base de données de la boîte aux lettres, puis cliquez sur **Nouveau**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Veillez à ne pas définir la limite d'éléments incorrects sur une valeur supérieure à 50, car le déplacement risquerait d'échouer. Si vous définissez la limite d'éléments incorrects sur une valeur supérieure à 50, vous devez utiliser l'environnement de ligne de commande Exchange Management Shell et définir le paramètre –<em>AcceptLargeDataLoss</em> sur True.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Veillez à ne pas définir la limite d'éléments incorrects sur une valeur supérieure à 50, car le déplacement risquerait d'échouer. Si vous définissez la limite d'éléments incorrects sur une valeur supérieure à 50, vous devez utiliser l'environnement de ligne de commande Exchange Management Shell et définir le paramètre –<em>AcceptLargeDataLoss</em> sur True.
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour créer une demande de déplacement par lot

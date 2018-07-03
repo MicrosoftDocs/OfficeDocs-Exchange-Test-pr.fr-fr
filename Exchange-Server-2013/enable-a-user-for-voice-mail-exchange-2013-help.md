@@ -23,18 +23,8 @@ Quand vous activez la messagerie unifiée pour un utilisateur, un ensemble par d
 
 Un numéro de poste est requis pour chaque utilisateur associé à un plan de numérotation de numéro de poste, URI (Uniform Resource Identifier) SIP ou E.164. Le numéro de poste doit comporter le nombre correct de chiffres, conformément aux spécifications du plan de numérotation de messagerie unifiée pour la stratégie de boîte aux lettres de messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez ajouter, supprimer ou modifier des numéros de poste pour tous les utilisateurs à extension messagerie unifiée via le CAE ou l'environnement de ligne de commande Exchange Management Shell, même s'ils sont associés à un URI SIP ou à un plan de numérotation E.164. Pour ajouter, supprimer ou modifier des adresses SIP ou des numéros E.164 pour des utilisateurs, vous devez utiliser l'environnement de ligne de commande Exchange Management Shell, car ces options ne sont pas disponibles dans le CAE.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez ajouter, supprimer ou modifier des numéros de poste pour tous les utilisateurs à extension messagerie unifiée via le CAE ou l'environnement de ligne de commande Exchange Management Shell, même s'ils sont associés à un URI SIP ou à un plan de numérotation E.164. Pour ajouter, supprimer ou modifier des adresses SIP ou des numéros E.164 pour des utilisateurs, vous devez utiliser l'environnement de ligne de commande Exchange Management Shell, car ces options ne sont pas disponibles dans le CAE.
 
 
 Pour les autres tâches de gestion relatives aux utilisateurs à extension messagerie vocale, consultez la rubrique [Voix des procédures de l'utilisateur à extension messagerie](voice-mail-enabled-user-procedures-exchange-2013-help.md).
@@ -51,18 +41,8 @@ Pour les autres tâches de gestion relatives aux utilisateurs à extension messa
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

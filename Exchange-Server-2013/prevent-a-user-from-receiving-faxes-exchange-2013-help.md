@@ -23,18 +23,8 @@ Par défaut, lorsque vous activez un utilisateur pour la messagerie unifiée, il
 
 Par défaut, la boîte aux lettres utilisateur et le plan de numérotation associé à l'utilisateur autorisent les télécopies entrantes. Cependant, pour qu'un utilisateur reçoive les télécopies, vous devez d'abord activer les télécopies entrantes sur la stratégie de boîte aux lettres de messagerie unifiée associée à l'utilisateur à extension messagerie unifiée, puis entrer l'URI du partenaire de télécopie.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez utiliser la FAC pour configurer les paramètres de télécopie sur une stratégie de boîte aux lettres de messagerie unifiée. Toutefois, vous devez utiliser l’interpréteur de commandes pour configurer les paramètres de télécopie sur les plans de numérotation ou pour des utilisateurs individuels.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez utiliser la FAC pour configurer les paramètres de télécopie sur une stratégie de boîte aux lettres de messagerie unifiée. Toutefois, vous devez utiliser l’interpréteur de commandes pour configurer les paramètres de télécopie sur les plans de numérotation ou pour des utilisateurs individuels.
 
 
 Pour plus d’informations sur les partenaires de télécopie, consultez [Microsoft PinPoint pour les partenaires de télécopie](https://go.microsoft.com/fwlink/?linkid=190238).
@@ -55,18 +45,8 @@ Pour découvrir d'autres tâches de gestion relatives à la télécopie, consult
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Utiliser l’interpréteur de commandes pour empêcher un utilisateur de messagerie UNIFIÉE à partir de la réception de télécopies

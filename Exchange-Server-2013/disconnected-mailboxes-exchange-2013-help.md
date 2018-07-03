@@ -110,18 +110,8 @@ Deux opérations sont possibles sur une boîte aux lettres d’archivage déconn
 
   - **La connecter à une boîte aux lettres principale existante**   Tout comme une boîte aux lettres principale déconnectée, une boîte aux lettres d’archivage déconnectée est conservée dans la base de données de boîtes aux lettres jusqu’à l’expiration de la période de rétention de la boîte aux lettres supprimée, qui est de 30 jours par défaut. Pendant ce temps, vous pouvez récupérer la boîte aux lettres d’archivage en la reconnectant au même compte d’utilisateur que celui auquel elle était connectée avant sa désactivation.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous désactivez une boîte aux lettres d’archivage pour une boîte aux lettres utilisateur, puis activez une boîte aux lettres d’archivage pour ce même utilisateur, une nouvelle boîte aux lettres d’archivage est octroyée à cette boîte aux lettres. Même si vous pouvez utiliser la cmdlet <strong>Connect-Mailbox</strong> pour connecter une boîte aux lettres principale à un utilisateur, vous devez utiliser la cmdlet <strong>Enable-Mailbox</strong> pour connecter une boîte aux lettres d’archivage désactivée à une boîte aux lettres existante.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous désactivez une boîte aux lettres d’archivage pour une boîte aux lettres utilisateur, puis activez une boîte aux lettres d’archivage pour ce même utilisateur, une nouvelle boîte aux lettres d’archivage est octroyée à cette boîte aux lettres. Même si vous pouvez utiliser la cmdlet <strong>Connect-Mailbox</strong> pour connecter une boîte aux lettres principale à un utilisateur, vous devez utiliser la cmdlet <strong>Enable-Mailbox</strong> pour connecter une boîte aux lettres d’archivage désactivée à une boîte aux lettres existante.
     
     Pour plus d’informations, consultez la rubrique [Gestion des archives permanentes dans Exchange 2013](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md).
 

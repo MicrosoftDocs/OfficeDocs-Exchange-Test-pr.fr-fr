@@ -33,16 +33,6 @@ Pour en savoir plus, consultez la rubrique [Outlook for iOS and Android](using-b
 
 Pour les clients exécutant Exchange Server 2013 ou Exchange Server 2016 dans une relation hybride avec Office 365, Outlook pour iOS et Android peut être configuré pour utiliser l’authentification moderne hybride. Pour en savoir plus, consultez la rubrique [ITPro\_R4\_Stub\_80](using-hybrid-modern-authentication-with-outlook-for-ios-and-android-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les utilisateurs peuvent utiliser le <a href="https://support.office.com/fr-fr/article/outlook-for-ios-and-android-help-center-cd84214e-a5ac-4e95-9ea3-e07f78d0cde6">Centre d’aide sur Outlook pour iOS et Android</a>, ainsi que l’aide destinée à l’utilisation de l’application sur certains appareils et les informations relatives à la résolution des problèmes.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les utilisateurs peuvent utiliser le <a href="https://support.office.com/fr-fr/article/outlook-for-ios-and-android-help-center-cd84214e-a5ac-4e95-9ea3-e07f78d0cde6">Centre d’aide sur Outlook pour iOS et Android</a>, ainsi que l’aide destinée à l’utilisation de l’application sur certains appareils et les informations relatives à la résolution des problèmes.
 

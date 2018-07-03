@@ -21,18 +21,8 @@ _**Dernière rubrique modifiée :** 2016-12-09_
 
 La *mise à zéro* est un mécanisme de sécurité qui écrit des zéros ou un modèle binaire sur des données supprimées, afin que les données supprimées soient plus difficiles à récupérer. Dans Exchange Server 2013, une base de données ESE utilise les *pages* en tant qu’unité de stockage, et par conséquent, elle implémente la *mise à zéro des pages*. La mise à zéro des pages est activée par défaut et ne peut pas être désactivée. Les opérations de mise à zéro des pages sont enregistrées dans les fichiers du journal des transactions afin que la mise à zéro des pages soit appliquée de manière uniforme à l’ensemble des copies d’une base de données. La mise à zéro d’une page sur une base de données active entraîne la mise à zéro de la page sur une copie passive de la base de données.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le moteur ESE (Extensible Storage Engine) ne dispose d’aucun mécanisme pour donner la priorité à la réutilisation des pages mises à zéro sur l’allocation d’un nouvel espace. Les tables pour lesquelles l’allocation de l’espace s’effectue de manière séquentielle ignoreront involontairement les pages fragmentées ou mises à zéro en faveur de pages séquentielles nouvelles ou libres. Cette approche réduit le nombre d’opérations d’entrée/sortie par seconde (IOPS) de la base de données.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le moteur ESE (Extensible Storage Engine) ne dispose d’aucun mécanisme pour donner la priorité à la réutilisation des pages mises à zéro sur l’allocation d’un nouvel espace. Les tables pour lesquelles l’allocation de l’espace s’effectue de manière séquentielle ignoreront involontairement les pages fragmentées ou mises à zéro en faveur de pages séquentielles nouvelles ou libres. Cette approche réduit le nombre d’opérations d’entrée/sortie par seconde (IOPS) de la base de données.
 
 
 Dans Exchange 2013, les fonctions de mise à zéro réduisent l’impact sur les performances des serveurs, notamment :
@@ -167,18 +157,8 @@ Vous pouvez mesurer et surveiller la fonctionnalité de mise à zéro en afficha
 
   - Base de données MSExchange -\> Pages de maintenance de base de données mises à zéro/s : Indique le taux auquel les pages sont mises à zéro.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour savoir comment activer ces compteurs, consultez la page <a href="https://go.microsoft.com/fwlink/?linkid=101194">Procédure d’activation des compteurs de performance ESE étendus</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour savoir comment activer ces compteurs, consultez la page <a href="https://go.microsoft.com/fwlink/?linkid=101194">Procédure d’activation des compteurs de performance ESE étendus</a>.
 
 
 La mise à zéro des pages est une fonction de maintenance de base de données. Les informations relatives aux performances de mise à zéro des pages pour les opérations d’exécution et de maintenance de base de données en arrière-plan sont donc incluses dans ces compteurs.

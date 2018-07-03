@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2016-12-09_
 
 Avant d’installer Microsoft Exchange Server 2013, vous devez préparer votre forêt Active Directory et ses domaines. Exchange doit préparer Active Directory afin de pouvoir stocker des informations sur les boîtes aux lettres de vos utilisateurs et la configuration des serveurs Exchange de l’organisation. Si vous n’êtes pas familier avec les forêts ou les domaines Active Directory, consultez la rubrique [Vue d’ensemble des services de domaine Active Directory](https://go.microsoft.com/fwlink/p/?linkid=399226).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Que vous installiez pour la première fois Exchange dans votre environnement ou que vous possédiez déjà les versions antérieures d’Exchange Server, vous devez préparer Active Directory pour Exchange 2013. Vous pouvez consultez <a href="exchange-2013-active-directory-schema-changes-exchange-2013-help.md">Modifications apportées au schéma Active Directory d’Exchange 2013</a> pour plus d’informations sur les nouvelles classes de schéma et les attributs ajoutés par Exchange 2013 dans Active Directory, y compris ceux créés par les mises à jour cumulatives (CU) et les Service Packs (SP).</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Que vous installiez pour la première fois Exchange dans votre environnement ou que vous possédiez déjà les versions antérieures d’Exchange Server, vous devez préparer Active Directory pour Exchange 2013. Vous pouvez consultez <a href="exchange-2013-active-directory-schema-changes-exchange-2013-help.md">Modifications apportées au schéma Active Directory d’Exchange 2013</a> pour plus d’informations sur les nouvelles classes de schéma et les attributs ajoutés par Exchange 2013 dans Active Directory, y compris ceux créés par les mises à jour cumulatives (CU) et les Service Packs (SP).
 
 
 Il existe deux façons de préparer Active Directory pour Exchange. La première consiste à confier la tâche à l'Assistant d'installation Exchange 2013. Si vous n'avez pas un grand déploiement Active Directory et n'avez pas une équipe distincte qui gère Active Directory, nous vous recommandons d'utiliser l'Assistant. Le compte que vous utilisez doit être un membre des groupes de sécurité Administrateurs du schéma et Administrateurs d'entreprise. Pour plus d'informations sur l'utilisation de l'Assistant d'installation, consultez la rubrique [Installer Exchange 2013 à l’aide de l’Assistant Installation](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md).
@@ -61,18 +51,8 @@ Vous voulez savoir ce qui se passe lorsqu’Active Directory est préparé pour 
     
       - Installez le premier serveur Exchange dans un site Active Directory avec un serveur de catalogue global accessible en écriture à partir de chaque domaine.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## 1\. Étendre le schéma Active Directory
@@ -89,18 +69,8 @@ Avant d'étendre le schéma, il y a quelques éléments à garder à l'esprit :
 
   - La seule façon d'étendre le schéma pour Exchange est d'utiliser les étapes de cette rubrique ou d'utiliser l'installation de Exchange 2013. Les autres méthodes d'extension du schéma ne sont pas prises en charge.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous n'avez pas une équipe distincte qui gère votre schéma Active Directory, vous pouvez ignorer cette étape et passer directement à Préparer Active Directory. Si le schéma n'est pas étendu à l'étape 1, les commandes de l'étape 2 étendront le schéma pour vous. Si vous décidez d'ignorer l'étape 1, les informations mentionnées ci-dessus que vous devez garder à l'esprit continuent à s'appliquer.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Si vous n'avez pas une équipe distincte qui gère votre schéma Active Directory, vous pouvez ignorer cette étape et passer directement à Préparer Active Directory. Si le schéma n'est pas étendu à l'étape 1, les commandes de l'étape 2 étendront le schéma pour vous. Si vous décidez d'ignorer l'étape 1, les informations mentionnées ci-dessus que vous devez garder à l'esprit continuent à s'appliquer.
 
 
 Lorsque vous êtes prêt, effectuez les opérations suivantes pour étendre votre schéma Active Directory. Si vous avez plusieurs forêts Active Directory, assurez-vous que vous êtes connecté à la forêt correcte.
@@ -207,18 +177,8 @@ Lorsque vous êtes prêt, procédez comme suit pour préparer un domaine individ
 
 Une fois que vous avez suivi toutes les étapes ci-dessus, vous pouvez vérifier que tout a bien fonctionné. Pour ce faire, vous utiliserez un outil appelé ADSI Edit (Active Directory Service Interfaces Editor). ADSI Edit est inclus dans le cadre de la fonction des Outils de services de domaine Active Directory dans Windows Server 2012 R2, Windows Server 2012 et Windows Server 2008 R2. Si vous souhaitez en savoir plus, consultez [ADSI Edit (adsiedit.msc)](https://go.microsoft.com/fwlink/p/?linkid=294644).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ne modifiez jamais les valeurs dans ADSI Edit, sauf si vous êtes invité à le faire par le support Microsoft. La modification des valeurs dans ADSI Edit peut causer des dommages irréparables à votre organisation Exchange et Active Directory.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Ne modifiez jamais les valeurs dans ADSI Edit, sauf si vous êtes invité à le faire par le support Microsoft. La modification des valeurs dans ADSI Edit peut causer des dommages irréparables à votre organisation Exchange et Active Directory.
 
 
 Une fois qu’Exchange étend votre schéma Active Directory et prépare Active Directory pour Exchange, plusieurs propriétés sont mises à jour pour indiquer que la préparation est terminée. Utilisez les informations de la liste ci-dessous pour vérifier que ces propriétés ont les valeurs correctes. Chaque propriété doit correspondre à la valeur dans le tableau ci-dessous pour la version d’Exchange 2013 que vous installez.

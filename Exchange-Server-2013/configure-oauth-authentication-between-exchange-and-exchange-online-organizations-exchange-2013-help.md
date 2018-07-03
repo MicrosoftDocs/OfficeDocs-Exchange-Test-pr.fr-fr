@@ -54,18 +54,8 @@ Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compati
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Comment configurer l’authentification OAuth entre vos organisations Exchange Online et Exchange locale ?
@@ -148,18 +138,8 @@ Si vous avez des doutes concernant les points de terminaison Exchange externes d
 
     Get-WebServicesVirtualDirectory | FL ExternalUrl
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour que le script suivant soit correctement exécuté, Windows PowerShell pour Azure Active Directory doit être connecté à votre client Azure AD, comme expliqué à l’étape 4 de la section précédente.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour que le script suivant soit correctement exécuté, Windows PowerShell pour Azure Active Directory doit être connecté à votre client Azure AD, comme expliqué à l’étape 4 de la section précédente.
 
 
 1.  Enregistrez le texte suivant dans un fichier de script PowerShell nommé, par exemple, **RegisterEndpoints.ps1**. Cet exemple utilise un caractère générique pour enregistrer tous les points de terminaison pour contoso.com. Remplacez **contoso.com** par une autorité de nom d’hôte pour votre organisation Exchange locale.
@@ -197,18 +177,8 @@ Vous devez également définir le point de terminaison de découverte automatiqu
 
   - https://\<votre domaine SMTP principal\>/autodiscover/autodiscover.svc
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez utiliser la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dn551183(v=exchg.150)">Get-IntraOrganizationConfiguration</a> pour vos clients locaux et Office 365 afin de déterminer les valeurs des points de terminaison requises par la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dn551178(v=exchg.150)">New-IntraOrganizationConnector</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez utiliser la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dn551183(v=exchg.150)">Get-IntraOrganizationConfiguration</a> pour vos clients locaux et Office 365 afin de déterminer les valeurs des points de terminaison requises par la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dn551178(v=exchg.150)">New-IntraOrganizationConnector</a>.
 
 
 À l’aide de Windows PowerShell, exécutez la cmdlet suivante :
@@ -237,36 +207,16 @@ Avant d’effectuer l’étape suivante, vérifiez que :
 
   - Tout serveur de boîtes aux lettres et d’accès au client Exchange 2010/2007 existant dispose de la dernière mise à jour cumulative ou du dernier Service Pack (SP).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les serveurs de boîtes aux lettres Exchange 2010/2007 peuvent continuer à utiliser des serveurs d’accès au client Exchange 2010/2007 pour les serveurs frontaux pour des connexions de fonctionnalités non hybrides. Les demandes de fonctionnalité de déploiement hybride du client Office 365 doivent se connecter aux serveurs Exchange 2013.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les serveurs de boîtes aux lettres Exchange 2010/2007 peuvent continuer à utiliser des serveurs d’accès au client Exchange 2010/2007 pour les serveurs frontaux pour des connexions de fonctionnalités non hybrides. Les demandes de fonctionnalité de déploiement hybride du client Office 365 doivent se connecter aux serveurs Exchange 2013.
 
 
 Un paramètre *AvailabilityAddressSpace* doit être configuré sur les serveurs d’accès au client antérieurs à Exchange 2013 pointant vers le point de terminaison des services web Exchange de vos serveurs d’accès au client Exchange 2013 SP1 locaux. Ce point de terminaison est le même que celui précédemment décrit à l’étape 5 ou peut être déterminé par l’exécution de la cmdlet suivante sur votre serveur d’accès au client Exchange 2013 SP1 local :
 
     Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si des informations de répertoire virtuel sont renvoyées par plusieurs serveurs, assurez-vous que vous utilisez le point de terminaison renvoyé pour le serveur d’accès au client Exchange 2013 SP1. Cela affichera une valeur égale ou supérieure à 15.0 (build 847.32) pour le paramètre <em>AdminDisplayVersion</em>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si des informations de répertoire virtuel sont renvoyées par plusieurs serveurs, assurez-vous que vous utilisez le point de terminaison renvoyé pour le serveur d’accès au client Exchange 2013 SP1. Cela affichera une valeur égale ou supérieure à 15.0 (build 847.32) pour le paramètre <em>AdminDisplayVersion</em>.
 
 
 Pour configurer l’objet *AvailabilityAddressSpace*, utilisez Exchange PowerShell et exécutez l’applet de commande suivante dans votre organisation locale :
@@ -319,16 +269,6 @@ Par exemple, Test-OAuthConnectivity -Service EWS -TargetUri https://lync.contoso
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

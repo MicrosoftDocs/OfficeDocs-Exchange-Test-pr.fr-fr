@@ -117,18 +117,8 @@ Par exemple, une règle unique ne peut pas vérifier si un message contient le t
 
 ![Utiliser une exception pour la deuxième règle](images/Dd298007.c39bbdcf-c619-4f84-8922-114ad1da824d(EXCHG.150).png "Utiliser une exception pour la deuxième règle")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les exceptions sont masquées par défaut sur la page <strong>Nouvelle règle</strong>. Pour voir toutes les conditions et actions, sélectionnez <strong>Plus d’options</strong>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les exceptions sont masquées par défaut sur la page <strong>Nouvelle règle</strong>. Pour voir toutes les conditions et actions, sélectionnez <strong>Plus d’options</strong>.
 
 
 ## Exemple 5 : Transférer un message qui contient des informations sensibles

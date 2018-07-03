@@ -63,18 +63,8 @@ Par défaut, un connecteur de réception unique est créé lors de l’installat
 
 Les sections suivantes vous guident au cours du processus de configuration requis pour préparer votre serveur de transport Edge à communiquer avec votre organisation Exchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez utiliser uniquement l’environnement Exchange Management Shell pour effectuer ces procédures sur les serveurs de transport Edge.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez utiliser uniquement l’environnement Exchange Management Shell pour effectuer ces procédures sur les serveurs de transport Edge.
 
 
 ## Étape 1 : Créer un connecteur d’envoi configuré pour envoyer des messages vers Internet
@@ -99,18 +89,8 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez la rubri
 
 Utilisez la cmdlet **New-SendConnector** pour créer un connecteur d’envoi.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avant de créer un connecteur d’envoi, vous devez d’abord exécuter la commande <strong>Get-Credential</strong> pour enregistrer le nom d’utilisateur et le mot de passe que vous utiliserez dans une variable temporaire. Vous devez effectuer cette opération car la cmdlet <strong>New-SendConnector</strong> n’acceptera pas les informations d’identification de l’utilisateur en texte brut.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Avant de créer un connecteur d’envoi, vous devez d’abord exécuter la commande <strong>Get-Credential</strong> pour enregistrer le nom d’utilisateur et le mot de passe que vous utiliserez dans une variable temporaire. Vous devez effectuer cette opération car la cmdlet <strong>New-SendConnector</strong> n’acceptera pas les informations d’identification de l’utilisateur en texte brut.
 
 
 Ce connecteur d’envoi requiert la configuration suivante :

@@ -64,18 +64,8 @@ Pour résoudre ce problème, assurez-vous que l’option « Permettre aux autor
 <p><strong>Valeur</strong> : 1</p></li>
 <li><p>Quittez l’Éditeur du Registre.</p></li>
 </ol>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, l’onglet <strong>Sécurité</strong> n’est pas activé dans la zone des propriétés de l’objet de configuration.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, l’onglet <strong>Sécurité</strong> n’est pas activé dans la zone des propriétés de l’objet de configuration.
 
 </li>
 <li><p>Ouvrez le Gestionnaire système Exchange, recherchez l’objet en question, cliquez avec le bouton droit sur l’objet, puis sélectionnez <strong>Propriétés</strong>.</p></li>
@@ -119,7 +109,7 @@ Pour résoudre ce problème, assurez-vous que l’option « Permettre aux autor
 <li><p>Sélectionnez l’onglet <strong>Sécurité</strong>, puis cliquez sur <strong>Avancé</strong>.</p></li>
 <li><p>Sélectionnez <strong>Permettre aux autorisations héritées du parent de se propager à cet objet et aux objets enfants</strong> pour réactiver l’héritage des autorisations.</p></li>
 <li><p>Sélectionnez <strong>OK</strong> deux fois pour appliquer la modification.</p></li>
-<li><p>Attendez que la réplication Active Directory propage les modifications ou forcez la réplication Active Directory en suivant les instructions de l’article de la Base de connaissances Microsoft, « Lancement de la réplication entre des partenaires de réplication directe dans Active Directory » (<a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=232072" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=232072</a>).</p></li>
+<li><p>Attendez que la réplication Active Directory propage les modifications ou forcez la réplication Active Directory en suivant les instructions de l’article de la Base de connaissances Microsoft, « Lancement de la réplication entre des partenaires de réplication directe dans Active Directory » (<a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=232072" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=232072</a>).</p></li>
 </ol></td>
 </tr>
 </tbody>

@@ -21,18 +21,8 @@ Un connecteur étranger remet des messages à un serveur ou un système étrange
 
 Les serveurs de passerelle étrangers peuvent envoyer des messages dans l’organisation Exchange 2013 en utilisant les répertoires de collecte ou de relecture présents dans le service de transport d’un serveur de boîtes aux lettres. Les fichiers de messages électroniques correctement formatés que vous copiez dans chaque répertoire sont soumis à une boîte aux lettres Exchange en vue d’être remis.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans la plupart des cas où vous devez communiquer des messages sortants à un système autre que SMTP, nous recommandons l’utilisation de connecteurs d’agent de remise, parce qu’ils permettent la gestion de file d’attente de messages, que les messages n’ont pas à être écrits dans le système de fichiers, et pour d’autres raisons avantageuses. La rubrique <a href="delivery-agents-and-delivery-agent-connectors-exchange-2013-help.md">Agents de remise et connecteurs d’agent de remise</a> fournit de plus amples détails.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Dans la plupart des cas où vous devez communiquer des messages sortants à un système autre que SMTP, nous recommandons l’utilisation de connecteurs d’agent de remise, parce qu’ils permettent la gestion de file d’attente de messages, que les messages n’ont pas à être écrits dans le système de fichiers, et pour d’autres raisons avantageuses. La rubrique <a href="delivery-agents-and-delivery-agent-connectors-exchange-2013-help.md">Agents de remise et connecteurs d’agent de remise</a> fournit de plus amples détails.
 
 
 ## Pour plus d'informations

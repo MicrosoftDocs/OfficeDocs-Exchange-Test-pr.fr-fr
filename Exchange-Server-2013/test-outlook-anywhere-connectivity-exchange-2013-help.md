@@ -29,18 +29,8 @@ Pour d’autres tâches de gestion relatives à Outlook Anywhere, consultez la r
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -53,18 +43,8 @@ Exécutez la commande suivante.
 
     Test-OutlookConnectivity -ProbeIdentity 'OutlookMailboxDeepTestProbe' -MailboxId tony@contoso.com -Hostname contoso.com
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La valeur du paramètre <em>OutlookMailboxDeepTestProbe</em> teste la connectivité à partir du serveur de boîtes aux lettres. Pour tester la connectivité à partir du serveur d’accès au client, utilisez <em>OutlookMailboxCTPProbe</em> pour la valeur du paramètre <em>ProbeIdentity</em>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La valeur du paramètre <em>OutlookMailboxDeepTestProbe</em> teste la connectivité à partir du serveur de boîtes aux lettres. Pour tester la connectivité à partir du serveur d’accès au client, utilisez <em>OutlookMailboxCTPProbe</em> pour la valeur du paramètre <em>ProbeIdentity</em>.
 
 
 ## Test de la connectivité d’Outlook Anywhere à l’aide de l’analyseur de connectivité à distance Exchange

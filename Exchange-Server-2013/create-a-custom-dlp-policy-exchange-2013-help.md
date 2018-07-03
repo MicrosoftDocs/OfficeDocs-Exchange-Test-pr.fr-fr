@@ -47,32 +47,12 @@ Pour découvrir d'autres tâches de gestion liées à la création d'une straté
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>En raison des variances des environnements des clients, les services de support technique Microsoft (CSS) ne peuvent pas participer au développement ou au test de scripts personnalisés d’expressions régulières (« scripts RegEx »). Pour le développement, le test et le débogage de scripts personnalisés RegEx, les clients Office 365 doivent s’appuyer sur des ressources informatiques internes. Par ailleurs, les clients Office 365 peuvent choisir d’utiliser une ressource de conseil externe, telle que les services de conseil Microsoft (MCS). Quelle que soit la ressource de développement de script, les ingénieurs de support technique CSS EXO et EOP ne sont pas disponibles pour aider les clients à résoudre des demandes relatives à des scripts RegEx personnalisés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> En raison des variances des environnements des clients, les services de support technique Microsoft (CSS) ne peuvent pas participer au développement ou au test de scripts personnalisés d’expressions régulières (« scripts RegEx »). Pour le développement, le test et le débogage de scripts personnalisés RegEx, les clients Office 365 doivent s’appuyer sur des ressources informatiques internes. Par ailleurs, les clients Office 365 peuvent choisir d’utiliser une ressource de conseil externe, telle que les services de conseil Microsoft (MCS). Quelle que soit la ressource de développement de script, les ingénieurs de support technique CSS EXO et EOP ne sont pas disponibles pour aider les clients à résoudre des demandes relatives à des scripts RegEx personnalisés.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser le CAE pour créer une stratégie DLP personnalisée sans règles existantes

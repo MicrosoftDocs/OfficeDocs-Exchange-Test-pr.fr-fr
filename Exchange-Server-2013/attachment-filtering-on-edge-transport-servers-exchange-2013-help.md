@@ -41,17 +41,7 @@ Après avoir défini les fichiers à rechercher, vous pouvez configurer l’acti
 
 Pour plus d'informations, consultez la rubrique [Gestion du filtrage des pièces jointes sur les serveurs de transport Edge](manage-attachment-filtering-on-edge-transport-servers-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas récupérer les messages qui ont été bloqués, ni les pièces jointes qui ont été supprimées. Lorsque vous configurez des filtres de pièces jointes, examinez attentivement toutes les correspondances de noms de fichier possibles et vérifiez que les pièces jointes légitimes ne seront pas affectées par le filtre.<br />
-De plus, ne supprimez pas les pièces jointes des messages électroniques signés numériquement, chiffrés ou protégés par des droits. Si vous supprimez les pièces jointes de ces messages, vous invalidez les messages signés numériquement et vous rendez les messages chiffrés et protégés illisibles.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas récupérer les messages qui ont été bloqués, ni les pièces jointes qui ont été supprimées. Lorsque vous configurez des filtres de pièces jointes, examinez attentivement toutes les correspondances de noms de fichier possibles et vérifiez que les pièces jointes légitimes ne seront pas affectées par le filtre.
+> De plus, ne supprimez pas les pièces jointes des messages électroniques signés numériquement, chiffrés ou protégés par des droits. Si vous supprimez les pièces jointes de ces messages, vous invalidez les messages signés numériquement et vous rendez les messages chiffrés et protégés illisibles.
 

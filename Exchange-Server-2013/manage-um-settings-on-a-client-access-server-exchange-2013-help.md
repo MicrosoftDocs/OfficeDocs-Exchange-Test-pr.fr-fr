@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2013-04-09_
 
 Après avoir installé un serveur d'accès au client exécuté sur le service routeur d'appels de messagerie unifiée Microsoft Exchange, vous pouvez configurer plusieurs options, notamment le nombre d'appels simultanés, les ports d'écoute TCP et TLS (Transport Layer Security), l'état et le mode de démarrage.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il n'est pas nécessaire d'ajouter des serveurs d'accès au client à un plan de numérotation de messagerie unifiée avant qu'ils ne puissent traiter les appels pour la messagerie unifiée, sauf si vous intégrez la messagerie unifiée et Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server. Par défaut, tous les serveurs d'accès au client d'une organisation sont disponibles pour répondre aux appels entrants.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il n'est pas nécessaire d'ajouter des serveurs d'accès au client à un plan de numérotation de messagerie unifiée avant qu'ils ne puissent traiter les appels pour la messagerie unifiée, sauf si vous intégrez la messagerie unifiée et Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server. Par défaut, tous les serveurs d'accès au client d'une organisation sont disponibles pour répondre aux appels entrants.
 
 
 Pour découvrir des tâches supplémentaires relatives à la messagerie unifiée et aux serveurs d'accès au client, consultez la rubrique [Procédures de services de messagerie unifiée](um-services-procedures-exchange-2013-help.md).
@@ -45,18 +35,8 @@ Pour découvrir des tâches supplémentaires relatives à la messagerie unifiée
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

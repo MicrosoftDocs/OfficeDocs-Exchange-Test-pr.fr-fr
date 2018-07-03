@@ -21,18 +21,8 @@ Découvrez comment vous pouvez segmenter votre liste d’adresses globale en gro
 
 La segmentation de la liste d’adresses globale (LAG) (également appelée *répartition LAG*) est le processus qui permet aux administrateurs de segmenter des utilisateurs dans des populations spécifiques pour créer des vues personnalisées de la liste d’adresses globale de leur organisation. Les stratégies de carnet d’adresses vous permettent de segmenter des utilisateurs dans des groupes spécifiques pour créer des vues personnalisées de la liste d’adresses globale de votre organisation. Lorsque vous créez une stratégie de carnet d'adresses, vous affectez une LAG, un carnet d'adresses en mode hors connexion, une liste de pièces ainsi qu'une ou plusieurs liste(s) d'adresses à la stratégie. Vous pouvez alors attribuer la stratégie de carnet d'adresses à des utilisateurs de boîtes aux lettres et leur donner accès à une LAG personnalisée dans Outlook et Outlook Web App. L'objectif est de fournir un mécanisme plus simple de segmentation LAG pour des organisations locales nécessitant plusieurs LAG.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les stratégies de carnet d'adresses ont pour but d'optimiser les LAG et les listes d'adresses pour chaque groupe d'utilisateurs, et non de les empêcher de se voir ou de communiquer avec d'autres utilisateurs dans votre organisation. Les stratégies de carnet d'adresses créent une séparation uniquement virtuelle, pas légale, des utilisateurs au niveau des annuaires.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les stratégies de carnet d'adresses ont pour but d'optimiser les LAG et les listes d'adresses pour chaque groupe d'utilisateurs, et non de les empêcher de se voir ou de communiquer avec d'autres utilisateurs dans votre organisation. Les stratégies de carnet d'adresses créent une séparation uniquement virtuelle, pas légale, des utilisateurs au niveau des annuaires.
 
 
 **Contenu de cette rubrique**

@@ -31,18 +31,8 @@ Lorsque vous procédez à une mise à niveau d'une organisation Microsoft Exchan
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Comment procéder ?
@@ -53,18 +43,8 @@ Les modules linguistiques de messagerie unifiée permettent aux appelants et aux
 
 Par défaut, lorsque vous installez un serveur de boîtes aux lettres Exchange 2013, le module linguistique Anglais (États-Unis) est installé. Il s'agit de la seule option linguistique disponible pour votre plan de numérotation, sauf si vous installez un autre module linguistique de messagerie unifiée. (La langue anglaise (États-Unis) ne peut pas être supprimée, sauf si vous supprimez le serveur de boîtes aux lettres de l'ordinateur.) Après que vous avez installé un module linguistique de messagerie unifiée sur un serveur de boîtes aux lettres Exchange 2013, la langue associée au module linguistique est également une option disponible lorsque vous configurez la langue par défaut du plan de numérotation. Par défaut, comme un standard automatique de messagerie unifiée est lié, lors de sa création, à un plan de numérotation de messagerie unifiée, le standard automatique utilise le paramètre de langue par défaut du plan de numérotation de messagerie unifiée lié. Cependant, ce paramètre peut être modifié après la création du standard automatique de messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si la langue anglaise (États-Unis) est la seule que vous souhaitez proposer pour votre plan de numérotation, vous pouvez passer directement à l'étape 2.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si la langue anglaise (États-Unis) est la seule que vous souhaitez proposer pour votre plan de numérotation, vous pouvez passer directement à l'étape 2.
 
 
 Vous pouvez ajouter des modules linguistiques de messagerie unifiée à l'aide de la commande setup.exe ou en exécutant le programme d'installation *\<UMLanguagePack\>*.exe après avoir téléchargé le module linguistique de messagerie unifiée à partir de la page [Exchange Server 2013 UM Language Packs - Français](https://go.microsoft.com/fwlink/p/?linkid=266542). Pour plus d'informations, consultez la rubrique [Installer un module linguistique de messagerie unifiée](install-a-um-language-pack-exchange-2013-help.md).
@@ -95,18 +75,8 @@ Lorsque vous importez des messages d'accueil, annonces, menus et invites personn
 
 3.  À l'invite de l'environnement de ligne de commande, tapez **".\\MigrateUMCustomPrompts"**, puis appuyez sur Entrée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez également importer des invites personnalisées individuellement à l'aide de la cmdlet <strong>Import-UMPrompt</strong>. La cmdlet <strong>Copy-UMCustomPrompt</strong> de la messagerie unifiée Exchange 2007 n'est pas prise en charge pour la copie d'invites personnalisées vers la messagerie unifiée Exchange 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez également importer des invites personnalisées individuellement à l'aide de la cmdlet <strong>Import-UMPrompt</strong>. La cmdlet <strong>Copy-UMCustomPrompt</strong> de la messagerie unifiée Exchange 2007 n'est pas prise en charge pour la copie d'invites personnalisées vers la messagerie unifiée Exchange 2013.
 
 
 Lorsque vous exécutez le script MigrateUMCustomPrompts.ps1 à partir de votre serveur Exchange 2013, le script effectue une recherche de GUID ou d'identificateur d'objet pour le plan de numérotation ou le standard automatique dans Active Directory, puis l'interroge pour déterminer la présence de messages d'accueil, d'annonces, de menus ou d'invites personnalisés. S'il trouve des messages d'accueil, annonces, menus ou invites personnalisés, ceux-ci sont importés dans la boîte aux lettres système nommée {e0dc1c29-89c3-4034-b678-e6c29d823ed9}.
@@ -160,18 +130,8 @@ Pour permettre à la messagerie unifiée de chiffrer des données échangées en
     
         New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous spécifiez les services que vous voulez activer à l'aide du paramètre <em>Services</em>, vous êtes invité à les activer pour le certificat que vous avez créé. Dans cet exemple, vous êtes invité à activer le certificat pour les services de messagerie unifiée et de routeur d'appels de messagerie unifiée. Pour plus d'informations sur l'activation d'un certificat pour des services, consultez la rubrique <a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assigner un certificat pour les services de messagerie unifiée et de routeur d’appels UM</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > Si vous spécifiez les services que vous voulez activer à l'aide du paramètre <em>Services</em>, vous êtes invité à les activer pour le certificat que vous avez créé. Dans cet exemple, vous êtes invité à activer le certificat pour les services de messagerie unifiée et de routeur d'appels de messagerie unifiée. Pour plus d'informations sur l'activation d'un certificat pour des services, consultez la rubrique <a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assigner un certificat pour les services de messagerie unifiée et de routeur d’appels UM</a>.
 
 
   - Importez le certificat à utiliser sur tous les serveurs d'accès au client et de boîtes aux lettres Exchange 2013 au sein de votre organisation. Si vous utilisez le certificat auto-signé Exchange 2013, vous devez le copier, puis l'importer sur les passerelles VoIP, ainsi que les PBX IP ou compatibles SIP. Si vous utilisez le certificat auto-signé d'Exchange 2007, l'autre nom d'objet (SAN) doit contenir les noms d'ordinateur de tous les serveurs Exchange 2013. Si vous disposez de serveurs de messagerie unifiée Exchange 2007 au sein de votre organisation, vous pouvez utiliser le certificat auto-signé Exchange 2013, mais vous devez ajouter les noms d'ordinateur des serveurs de messagerie unifiée Exchange 2007 au SAN dans le certificat Exchange 2013.
@@ -364,18 +324,8 @@ Si nécessaire, vous pouvez créer un plan groupement de postes de messagerie un
 
     New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas configurer ou modifier des paramètres pour un groupement de postes de messagerie unifiée. Pour modifier les paramètres de configuration d'un groupement de postes de messagerie unifiée, vous devez supprimer ce dernier, puis en ajouter un nouveau avec les paramètres corrects.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous ne pouvez pas configurer ou modifier des paramètres pour un groupement de postes de messagerie unifiée. Pour modifier les paramètres de configuration d'un groupement de postes de messagerie unifiée, vous devez supprimer ce dernier, puis en ajouter un nouveau avec les paramètres corrects.
 
 
 ## Étape 9 : création ou configuration des standards automatiques de messagerie unifiée
@@ -434,34 +384,14 @@ Si nécessaire, vous pouvez créer une stratégie de boîte aux lettres de messa
 
 3.  Dans la page **Nouvelle stratégie de boîte aux lettres de messagerie unifiée**, dans le champ **Nom**, entrez le nom de la nouvelle stratégie de boîte aux lettres de messagerie unifiée.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Ce champ permet de spécifier un nom unique pour la stratégie de boîte aux lettres de messagerie unifiée. Il s'agit du nom complet qui apparaît dans le CAE. Si vous devez modifier le nom complet de la stratégie de boîte aux lettres de messagerie unifiée après sa création, vous devez d'abord la supprimer, puis en créer une autre avec le nom approprié. Vous ne pouvez pas supprimer une stratégie de boîte aux lettres de messagerie unifiée si des utilisateurs à extension messagerie unifiée y sont associés. Le nom de la stratégie de boîte aux lettres de messagerie unifiée est obligatoire mais sert uniquement à des fins d'affichage. Dans la mesure où votre organisation peut utiliser plusieurs stratégies de boîte aux lettres de messagerie unifiée, nous vous recommandons d'utiliser des noms significatifs pour chacune d'elles. La longueur maximale d'un nom de stratégie de boîte aux lettres de messagerie unifiée est de 64 caractères pouvant inclure des espaces. Toutefois, il ne peut pas contenir les caractères suivants : &quot; / \ [ ] : ; | = , + * ? &lt; &gt;.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Ce champ permet de spécifier un nom unique pour la stratégie de boîte aux lettres de messagerie unifiée. Il s'agit du nom complet qui apparaît dans le CAE. Si vous devez modifier le nom complet de la stratégie de boîte aux lettres de messagerie unifiée après sa création, vous devez d'abord la supprimer, puis en créer une autre avec le nom approprié. Vous ne pouvez pas supprimer une stratégie de boîte aux lettres de messagerie unifiée si des utilisateurs à extension messagerie unifiée y sont associés. Le nom de la stratégie de boîte aux lettres de messagerie unifiée est obligatoire mais sert uniquement à des fins d'affichage. Dans la mesure où votre organisation peut utiliser plusieurs stratégies de boîte aux lettres de messagerie unifiée, nous vous recommandons d'utiliser des noms significatifs pour chacune d'elles. La longueur maximale d'un nom de stratégie de boîte aux lettres de messagerie unifiée est de 64 caractères pouvant inclure des espaces. Toutefois, il ne peut pas contenir les caractères suivants : &quot; / \ [ ] : ; | = , + * ? &lt; &gt;.
 
 
 4.  Cliquez sur **Enregistrer**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lorsque vous enregistrez la stratégie de boîte aux lettres de messagerie unifiée, tous les paramètres par défaut (comprenant les stratégies de code confidentiel, les fonctionnalités de messagerie vocale et les paramètre de messagerie vocale protégée) sont activés. Pour personnaliser ou modifier des paramètres par défaut de la stratégie de boîte aux lettres de messagerie unifiée que vous avez créée, utilisez la cmdlet <strong>Set-UMMailbox</strong> ou le CAE.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Lorsque vous enregistrez la stratégie de boîte aux lettres de messagerie unifiée, tous les paramètres par défaut (comprenant les stratégies de code confidentiel, les fonctionnalités de messagerie vocale et les paramètre de messagerie vocale protégée) sont activés. Pour personnaliser ou modifier des paramètres par défaut de la stratégie de boîte aux lettres de messagerie unifiée que vous avez créée, utilisez la cmdlet <strong>Set-UMMailbox</strong> ou le CAE.
 
 
 Si nécessaire, vous pouvez créer une stratégie de boîte aux lettres de messagerie unifiée dans l'environnement de ligne de commande en exécutant la commande suivante.
@@ -615,18 +545,8 @@ Pour désactiver la messagerie unifiée sur un serveur de messagerie unifiée Ex
 
     Disable-UMServer -Identity MyUMServer -Immediate $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour désactiver la réponse aux appels, vous pouvez utiliser la cmdlet <strong>Disable-UMServer</strong> d'un serveur de messagerie unifiée Exchange 2007 ou la cmdlet <strong>Disable-UMService</strong> d'un serveur de boîtes aux lettres Exchange 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Pour désactiver la réponse aux appels, vous pouvez utiliser la cmdlet <strong>Disable-UMServer</strong> d'un serveur de messagerie unifiée Exchange 2007 ou la cmdlet <strong>Disable-UMService</strong> d'un serveur de boîtes aux lettres Exchange 2013.
 
 
 ## Étape 15 : suppression d'un serveur de messagerie unifiée Exchange 2007 d'un plan de numérotation
@@ -662,18 +582,8 @@ Dans cet exemple, il y a deux plans de numérotation URI SIP : SipDP1 et SipDP2.
 
     Set-UMServer -id MyUMServer -DialPlans SipDP1
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour supprimer un serveur de messagerie unifiée Exchange 2007 d'un ou plusieurs plans de numérotation, vous pouvez utiliser la cmdlet <strong>Set-UMServer</strong> dans l'environnement de ligne de commande sur un serveur de messagerie unifiée Exchange 2007, ou la cmdlet <strong>Set-UMService</strong> cmdlet sur un serveur de boîtes aux lettres Exchange 2013. Par exemple, pour supprimer un serveur de messagerie unifiée de tous les plans de numérotation, exécutez la commande suivante : <code>Set-UMServer -identity MyUMServer -DialPlan $null</code></td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Pour supprimer un serveur de messagerie unifiée Exchange 2007 d'un ou plusieurs plans de numérotation, vous pouvez utiliser la cmdlet <strong>Set-UMServer</strong> dans l'environnement de ligne de commande sur un serveur de messagerie unifiée Exchange 2007, ou la cmdlet <strong>Set-UMService</strong> cmdlet sur un serveur de boîtes aux lettres Exchange 2013. Par exemple, pour supprimer un serveur de messagerie unifiée de tous les plans de numérotation, exécutez la commande suivante : <code>Set-UMServer -identity MyUMServer -DialPlan $null</code>
 
 
 ## Comment savoir si cela a fonctionné ?

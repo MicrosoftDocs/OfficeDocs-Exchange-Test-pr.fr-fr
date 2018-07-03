@@ -33,18 +33,8 @@ Normalement, les personnes qui procèdent à l’installation d’Exchange doive
     
       - autorisations CreateChild et DeleteChild refusées pour les objets de banque de dossiers publics Exchange.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les dossiers publics sont administrés au niveau de l’organisation. Par conséquent, la création et la suppression des banques de dossiers publics est limitée aux administrateurs Exchange.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les dossiers publics sont administrés au niveau de l’organisation. Par conséquent, la création et la suppression des banques de dossiers publics est limitée aux administrateurs Exchange.
 
 
   - Le compte d’ordinateur Active Directory du serveur est ajouté au groupe de serveurs Exchange.

@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2018-03-26_
 
 Migration de vos dossiers publics Exchange 2013 vers Exchange Online requiert Exchange Server 2013 CU15 ou version ultérieure dans votre environnement local.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si votre organisation comporte à la fois des dossiers publics Exchange 2013 et Exchange 2016, et que vous voulez les déplacer vers Exchange Online, utilisez la <a href="https://go.microsoft.com/fwlink/p/?linkid=845314">version de cet article pour Exchange 2016</a> afin de planifier et d’exécuter la migration. La mise à jour cumulative CU15 ou une version ultérieure doit toujours être installée sur vos serveurs Exchange 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si votre organisation comporte à la fois des dossiers publics Exchange 2013 et Exchange 2016, et que vous voulez les déplacer vers Exchange Online, utilisez la <a href="https://go.microsoft.com/fwlink/p/?linkid=845314">version de cet article pour Exchange 2016</a> afin de planifier et d’exécuter la migration. La mise à jour cumulative CU15 ou une version ultérieure doit toujours être installée sur vos serveurs Exchange 2013.
 
 
 ## Ce que vous devez savoir avant de commencer
@@ -43,18 +33,8 @@ Migration de vos dossiers publics Exchange 2013 vers Exchange Online requiert Ex
 
   - Avant de commencer la migration des dossiers publics, si un dossier public de votre organisation est supérieur à 25 Go, nous vous recommandons d’en supprimer du contenu pour le rendre plus petit, ou de répartir ce contenu dans plusieurs dossiers publics plus petits. Notez que la limite de 25 Go mentionnée ici s’applique uniquement au dossier public et non aux dossiers enfant ou aux sous-dossiers du dossier en question. Si aucune de ces options n’est envisageable, nous vous recommandons de ne pas déplacer vos dossiers publics vers Exchange Online. Pour plus d’informations, reportez-vous à [Limites d’Exchange Online](http://go.microsoft.com/fwlink/p/?linkid=391188).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vos quotas actuels pour les dossiers publics dans Exchange Online sont inférieurs à 25 Go, vous pouvez utiliser la <a href="https://go.microsoft.com/fwlink/p/?linkid=844062">cmdlet Set-OrganizationConfig</a> pour les augmenter avec les paramètres DefaultPublicFolderIssueWarningQuota et DefaultPublicFolderProhibitPostQuota.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vos quotas actuels pour les dossiers publics dans Exchange Online sont inférieurs à 25 Go, vous pouvez utiliser la <a href="https://go.microsoft.com/fwlink/p/?linkid=844062">cmdlet Set-OrganizationConfig</a> pour les augmenter avec les paramètres DefaultPublicFolderIssueWarningQuota et DefaultPublicFolderProhibitPostQuota.
 
 
   - Dans Office 365 et Exchange Online, vous pouvez créer 1 000 boîtes aux lettres de dossier public au maximum.
@@ -77,18 +57,8 @@ Migration de vos dossiers publics Exchange 2013 vers Exchange Online requiert Ex
 
   - Avant de commencer, lisez cet article dans son intégralité. Certaines étapes requièrent l’arrêt du système. Pendant ce temps d’arrêt, les dossiers publics ne seront accessibles par personne.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Étape 1 : Téléchargez les scripts de migration
@@ -151,18 +121,8 @@ Dans l’environnement de ligne de commande Exchange Management Shell (en local)
     
         Get-AcceptedDomain | Where { $_.DomainName -eq "<target domain>" } | Set-AcceptedDomain -Name PublicFolderDestination_78c0b207_5ad2_4fee_8cb9_f373175b3f99
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous souhaitez que vos dossiers publics à extension messagerie dans Exchange Online reçoivent des messages électroniques externes à partir d’Internet, vous devez désactiver le blocage du périmètre basé sur l’annuaire (DBEB) dans Exchange Online et Exchange Online Protection (EOP). Pour plus d’informations, voir <a href="https://technet.microsoft.com/fr-fr/library/dn600322(v=exchg.150)">Utiliser le blocage du périmètre basé sur l’annuaire pour rejeter les messages envoyés à des destinataires non valides</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous souhaitez que vos dossiers publics à extension messagerie dans Exchange Online reçoivent des messages électroniques externes à partir d’Internet, vous devez désactiver le blocage du périmètre basé sur l’annuaire (DBEB) dans Exchange Online et Exchange Online Protection (EOP). Pour plus d’informations, voir <a href="https://technet.microsoft.com/fr-fr/library/dn600322(v=exchg.150)">Utiliser le blocage du périmètre basé sur l’annuaire pour rejeter les messages envoyés à des destinataires non valides</a>.
 
 
 2.  Si le nom d’un dossier public contient une barre oblique inverse **\\** ou une barre oblique **/**, il se peut que le dossier ne soit pas migré vers la boîte aux lettres désignée pendant la migration. Avant d’effectuer la migration, renommez ces dossiers pour supprimer ces caractères.
@@ -183,18 +143,8 @@ Dans l’environnement de ligne de commande Exchange Management Shell (en local)
         
             Get-OrganizationConfig | Format-List PublicFoldersLockedforMigration, PublicFolderMigrationComplete, PublicFolderMailboxesLockedForNewConnections, PublicFolderMailboxesMigrationComplete
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Si le paramètre <code>PublicFoldersLockedforMigration</code> ou <code>PublicFolderMigrationComplete</code> est <code>$true</code>, cela signifie que vous avez déjà migré des dossiers publics hérités auparavant. Vérifiez que les bases de données de dossiers publics héritées ont été désactivées avant de passer à l’étape 3b.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Si le paramètre <code>PublicFoldersLockedforMigration</code> ou <code>PublicFolderMigrationComplete</code> est <code>$true</code>, cela signifie que vous avez déjà migré des dossiers publics hérités auparavant. Vérifiez que les bases de données de dossiers publics héritées ont été désactivées avant de passer à l’étape 3b.
     
     2.  Si l’un des éléments ci-dessus est renvoyé avec la valeur `$true`, définissez-le sur `$false` en exécutant la commande suivante :
         
@@ -202,18 +152,8 @@ Dans l’environnement de ligne de commande Exchange Management Shell (en local)
 
 4.  Afin de vérifier la réussite de la migration une fois qu’elle est terminée, nous vous recommandons d’exécuter les commandes suivantes sur tous les serveurs Exchange 2013 appropriés. Cette opération crée des instantanés de votre déploiement de dossiers publics actuel, lesquels peuvent ensuite être comparés à vos dossiers publics nouvellement migrés.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Selon la taille de votre organisation Exchange, l’exécution de ces commandes peut prendre du temps.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Selon la taille de votre organisation Exchange, l’exécution de ces commandes peut prendre du temps.
     
       - Exécutez la commande suivante pour prendre un instantané de la structure de dossiers publics d'origine :
         
@@ -243,18 +183,8 @@ Dans l’environnement de ligne de commande Exchange Management Shell (en local)
     
     4.  Assurez-vous que **Les dossiers publics Exchange Mail** n’est pas activée. S’il n’est pas sélectionné, vous pouvez continuer à la section suivante, *condition préalable les étapes dans Exchange en ligne*. Si elle est activée, désactivez la case à cocher, puis cliquez sur **suivant**.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Si vous ne voyez le <strong>Courrier Exchange des dossiers publics</strong> en tant qu’option dans l’écran <strong>Composants facultatifs</strong>, vous pouvez quitter Microsoft Azure Active Directory se connecter et passez à la section suivante, <em>condition préalable les étapes dans Exchange en ligne</em>.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Si vous ne voyez le <strong>Courrier Exchange des dossiers publics</strong> en tant qu’option dans l’écran <strong>Composants facultatifs</strong>, vous pouvez quitter Microsoft Azure Active Directory se connecter et passez à la section suivante, <em>condition préalable les étapes dans Exchange en ligne</em>.
     
     5.  Une fois que vous avez décoché l’option **Dossiers publics de messagerie Exchange**, cliquez sur **Suivant** jusqu’à ce que vous accédiez à l’écran **Prêt pour la configuration**, puis cliquez sur **Configurer**.
 
@@ -326,18 +256,8 @@ Utilisez les scripts téléchargés précédemment pour générer les fichiers .
 
 2.  Exécutez le script `ModernPublicFolderToMailboxMapGenerator.ps1` pour créer un fichier .csv qui mappe les dossiers publics source avec les boîtes aux lettres de dossier public dans votre destination Exchange Online. Ce fichier permet de calculer le nombre correct de boîtes aux lettres de dossier public dans Exchange Online.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le fichier généré par <code>ModernPublicFolderToMailboxMapGenerator.ps1</code> ne contiendra pas le nom de chaque dossier public de votre organisation. Il contient des références aux dossiers parents de plus grandes arborescences de dossiers, ou les noms des dossiers lorsqu’ils sont suffisamment importants. Vous pouvez considérer ce fichier comme un fichier « exception » permet de vous assurer que certains des arborescences de dossiers et dossiers supérieures à placer dans la messagerie du dossier public spécifiqueboîtes. Il est normal pour ne pas voir tous un de vos dossiers publics dans ce fichier. Les dossiers enfants de n’importe quel dossier répertorié dans ce fichier de mappage aussi migrent vers la même boîte aux lettres de dossier public en tant que leur dossier parent (sauf si mentionné explicitement sur une autre ligne dans le fichier de mappage qui les dirige vers une boîte aux lettres de dossiers publics différente).</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le fichier généré par <code>ModernPublicFolderToMailboxMapGenerator.ps1</code> ne contiendra pas le nom de chaque dossier public de votre organisation. Il contient des références aux dossiers parents de plus grandes arborescences de dossiers, ou les noms des dossiers lorsqu’ils sont suffisamment importants. Vous pouvez considérer ce fichier comme un fichier « exception » permet de vous assurer que certains des arborescences de dossiers et dossiers supérieures à placer dans la messagerie du dossier public spécifiqueboîtes. Il est normal pour ne pas voir tous un de vos dossiers publics dans ce fichier. Les dossiers enfants de n’importe quel dossier répertorié dans ce fichier de mappage aussi migrent vers la même boîte aux lettres de dossier public en tant que leur dossier parent (sauf si mentionné explicitement sur une autre ligne dans le fichier de mappage qui les dirige vers une boîte aux lettres de dossiers publics différente).
     
         .\ModernPublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes><Maximum mailbox recoverable item size in bytes><Folder-to-size map path><Folder-to-mailbox map path>
     
@@ -353,18 +273,8 @@ Utilisez les scripts téléchargés précédemment pour générer les fichiers .
 
     .\ModernPublicFolderToMailboxMapGenerator.ps1 -MailboxSize 25GB -MailboxRecoverableItemSize 1GB -ImportFile .\stats.csv -ExportFile map.csv
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous ne prend en charge de migration de dossiers publics vers Exchange Online si le nombre de boîtes aux lettres de dossier public dans Exchange Online est supérieur à 100.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Nous ne prend en charge de migration de dossiers publics vers Exchange Online si le nombre de boîtes aux lettres de dossier public dans Exchange Online est supérieur à 100.
 
 
 ## Étape 4 : Créez les boîtes aux lettres de dossiers publics dans Exchange Online
@@ -412,18 +322,8 @@ Vous devez maintenant exécuter un certain nombre de commandes dans votre enviro
         
         New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -NotificationEmails <email addresses for migration notifications>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Séparez les adresses de messagerie par des virgules.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Séparez les adresses de messagerie par des virgules.
     
     Où `folder_mapping.csv` est le fichier de mappage qui a été généré dans *étape 3 : créer les fichiers .csv*. Veillez à fournir le chemin d’accès de fichier complet. Si pour une raison quelconque, le fichier de mappage a été déplacé, veillez à utiliser le nouvel emplacement.
 
@@ -453,19 +353,9 @@ Dans votre environnement local, exécutez la commande suivante pour verrouiller 
 
     Set-OrganizationConfig -PublicFolderMailboxesLockedForNewConnections $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous n’êtes pas en mesure d’accéder au paramètre <code>-PublicFolderMailboxesLockedForNewConnections</code> , il peut s’agir, car Active Directory n’a pas été préparé au cours de la mise à niveau CU, comme nous a informé au-dessus de <em>ce que vous devez connaître avant de commencer ?</em> Consultez <a href="prepare-active-directory-and-domains-exchange-2013-help.md">Préparation d’Active Directory et des domaines</a> pour plus d’informations.<br />
-Notez également que tous les utilisateurs qui ont besoin d’accéder aux dossiers publics doivent être migrés en premier, <strong>avant</strong> que vous ne migriez les dossiers publics.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous n’êtes pas en mesure d’accéder au paramètre <code>-PublicFolderMailboxesLockedForNewConnections</code> , il peut s’agir, car Active Directory n’a pas été préparé au cours de la mise à niveau CU, comme nous a informé au-dessus de <em>ce que vous devez connaître avant de commencer ?</em> Consultez <a href="prepare-active-directory-and-domains-exchange-2013-help.md">Préparation d’Active Directory et des domaines</a> pour plus d’informations.
+> Notez également que tous les utilisateurs qui ont besoin d’accéder aux dossiers publics doivent être migrés en premier, <strong>avant</strong> que vous ne migriez les dossiers publics.
 
 
 Si votre organisation possède des boîtes aux lettres de dossier public sur plusieurs serveurs Exchange 2013, vous devez patienter jusqu’à ce que la réplication d’Active Directory soit terminée. Une fois celle-ci terminé, vous pouvez vérifier que toutes les boîtes aux lettres de dossier public présentent l’indicateur `PublicFolderMailboxesLockedForNewConnections` et que les modifications en attente récemment apportées par les utilisateurs à leurs dossiers publics ont convergé dans toute l’organisation. Tout cela peut prendre plusieurs heures.

@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2015-04-08_
 
 L'agent de filtrage des destinataires assure le filtrage des destinataires. Lorsque le filtrage des destinataires est activé sur un serveur Exchange, il filtre les messages entrants provenant d'Internet mais ne sont pas authentifiés. Ces messages sont traités comme des messages externes.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Bien que l’agent de filtrage des destinataires soit disponible sur les serveurs de boîtes aux lettres, vous ne devez pas le configurer. Lorsque le filtrage des destinataires sur un serveur de boîte aux lettres détecte un destinataire non valide ou bloqué dans un message qui contient d’autres destinataires valides, le message est rejeté. Si vous installez les agents de filtrage du courrier indésirable sur un serveur de boîte aux lettres, l’agent de filtrage des destinataires est activé par défaut. Cependant, il n’est configuré pour bloquer aucun destinataire. Pour plus d’informations, voir <a href="enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md">Activer la fonctionnalité de blocage du courrier indésirable sur un serveur de boîtes aux lettres</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Bien que l’agent de filtrage des destinataires soit disponible sur les serveurs de boîtes aux lettres, vous ne devez pas le configurer. Lorsque le filtrage des destinataires sur un serveur de boîte aux lettres détecte un destinataire non valide ou bloqué dans un message qui contient d’autres destinataires valides, le message est rejeté. Si vous installez les agents de filtrage du courrier indésirable sur un serveur de boîte aux lettres, l’agent de filtrage des destinataires est activé par défaut. Cependant, il n’est configuré pour bloquer aucun destinataire. Pour plus d’informations, voir <a href="enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md">Activer la fonctionnalité de blocage du courrier indésirable sur un serveur de boîtes aux lettres</a>.
 
 
 ## Ce qu'il faut savoir avant de commencer
@@ -51,18 +41,8 @@ L'agent de filtrage des destinataires assure le filtrage des destinataires. Lors
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -77,18 +57,8 @@ Pour activer le filtrage des destinataires, exécutez la commande suivante :
 
     Set-RecipientFilterConfig -Enabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous désactivez le filtrage des destinataires, l'agent sous-jacent de filtrage des destinataires reste activé. Pour désactiver l'agent de filtrage des destinataires, exécutez la commande suivante : <code>Disable-TransportAgent &quot;Recipient Filter Agent&quot;</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous désactivez le filtrage des destinataires, l'agent sous-jacent de filtrage des destinataires reste activé. Pour désactiver l'agent de filtrage des destinataires, exécutez la commande suivante : <code>Disable-TransportAgent &quot;Recipient Filter Agent&quot;</code>.
 
 
 ## Comment savoir si cela a fonctionné ?

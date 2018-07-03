@@ -206,18 +206,8 @@ Cette section répertorie les fonctionnalités Exchange Server 2010 qui ne sont
 <tr class="even">
 <td><p>Agent de filtrage de connexions sur les serveurs de transport Hub</p></td>
 <td><p>Dans Exchange 2010, quand vous activiez les agents anti-spam sur un serveur de transport Hub, l'agent de filtrage des pièces jointes était le seul agent anti-spam qui n'était pas disponible. Dans Exchange 2013, quand vous activez les agents anti-spam sur un serveur de boîtes aux lettres, les agents de filtrage des pièces jointes et de filtrage des connexions ne sont pas disponibles. L'agent de filtrage des connexions intègre les fonctionnalités Liste d'adresses IP autorisées et Liste d'adresses IP bloquées. Pour plus d'informations sur la façon d'activer les agents anti-spam sur un serveur de boîtes aux lettres, consultez la rubrique <a href="enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md">Activer la fonctionnalité de blocage du courrier indésirable sur un serveur de boîtes aux lettres</a>.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il n'est pas possible d'activer les agents anti-spam sur un serveur d'accès au client Exchange 2013. Par conséquent, le seul moyen d’obtenir un agent de filtrage des connexions consiste à installer un serveur de transport Edge dans le réseau de périmètre. Pour plus d’informations, voir <a href="edge-transport-servers-exchange-2013-help.md">Serveurs de transport Edge</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il n'est pas possible d'activer les agents anti-spam sur un serveur d'accès au client Exchange 2013. Par conséquent, le seul moyen d’obtenir un agent de filtrage des connexions consiste à installer un serveur de transport Edge dans le réseau de périmètre. Pour plus d’informations, voir <a href="edge-transport-servers-exchange-2013-help.md">Serveurs de transport Edge</a>.
 
 </td>
 </tr>
@@ -243,18 +233,8 @@ Cette section répertorie les fonctionnalités Exchange Server 2010 qui ne sont
 <tr class="odd">
 <td><p>Dossiers gérés</p></td>
 <td><p>Dans Exchange 2010, vous utilisez des dossiers gérés pour assurer la gestion de la rétention de messagerie (MRM). Dans Exchange 2013, les dossiers gérés ne sont pas pris en charge. Vous devez utiliser des stratégies de rétention pour MRM.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les cmdlets associés à des dossiers gérés sont toujours disponibles. Vous pouvez créer des dossiers gérés, des paramètres de contenu géré et des stratégies de boîte aux lettres de dossier géré, et appliquer une telle stratégie à un utilisateur. Toutefois, l’assistant MRM ignore le traitement des boîtes aux lettres qui ont une stratégie de boîte aux lettres de dossier géré.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les cmdlets associés à des dossiers gérés sont toujours disponibles. Vous pouvez créer des dossiers gérés, des paramètres de contenu géré et des stratégies de boîte aux lettres de dossier géré, et appliquer une telle stratégie à un utilisateur. Toutefois, l’assistant MRM ignore le traitement des boîtes aux lettres qui ont une stratégie de boîte aux lettres de dossier géré.
 
 </td>
 </tr>
@@ -407,7 +387,7 @@ Cette section répertorie les fonctionnalités Exchange Server 2007 qui ne sont
 </tr>
 <tr class="odd">
 <td><p>Notifications du Protocole UDP (User Datagram Protocol)</p></td>
-<td><p>La prise en charge des notifications du protocole UDP est supprimée dans Exchange 2013. L'expérience utilisateur en est affectée quand les clients Outlook 2003 se connectent à leurs boîtes aux lettres sur un serveur Exchange 2013. Pour en savoir plus, consultez l'article 2009942 de la Base de connaissances de Microsoft <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2009942">La mise à jour des dossiers est longue lorsqu'un utilisateur Exchange Server 2010 utilise Outlook 2003 en mode en ligne</a>.</p></td>
+<td><p>La prise en charge des notifications du protocole UDP est supprimée dans Exchange 2013. L'expérience utilisateur en est affectée quand les clients Outlook 2003 se connectent à leurs boîtes aux lettres sur un serveur Exchange 2013. Pour en savoir plus, consultez l'article 2009942 de la Base de connaissances de Microsoft <a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=2009942">La mise à jour des dossiers est longue lorsqu'un utilisateur Exchange Server 2010 utilise Outlook 2003 en mode en ligne</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -568,18 +548,8 @@ Cette section répertorie les fonctionnalités Exchange Server 2007 qui ne sont
 <tr class="odd">
 <td><p>Dossiers gérés</p></td>
 <td><p>Dans Exchange 2007, vous utilisez des dossiers gérés pour assurer la gestion de la rétention de messagerie (MRM). Dans Exchange 2013, les dossiers gérés ne sont pas pris en charge. Vous devez utiliser des stratégies de rétention pour MRM.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les cmdlets associés à des dossiers gérés sont toujours disponibles. Vous pouvez créer des dossiers gérés, des paramètres de contenu géré et des stratégies de boîte aux lettres de dossier géré, et appliquer une telle stratégie à un utilisateur. Toutefois, l’assistant MRM ignore le traitement des boîtes aux lettres qui ont une stratégie de boîte aux lettres de dossier géré.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les cmdlets associés à des dossiers gérés sont toujours disponibles. Vous pouvez créer des dossiers gérés, des paramètres de contenu géré et des stratégies de boîte aux lettres de dossier géré, et appliquer une telle stratégie à un utilisateur. Toutefois, l’assistant MRM ignore le traitement des boîtes aux lettres qui ont une stratégie de boîte aux lettres de dossier géré.
 
 </td>
 </tr>

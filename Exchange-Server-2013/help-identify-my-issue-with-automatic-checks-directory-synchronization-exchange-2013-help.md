@@ -21,18 +21,8 @@ Vous pouvez utiliser les vérifications automatiques répertoriées ci-dessous p
 
 Si vous disposez déjà d’un compte d’utilisateur Office 365, sélectionnez Se connecter. Vous n’avez pas besoin d’un compte Azure ID. Vous pouvez être invité à indiquer à nouveau un compte d’utilisateur lors de l’exécution des vérifications. Dans ce cas, vous devez indiquer votre compte d’utilisateur au format username@youroffice365login.domain et votre mot de passe.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous recevez des messages d’avertissement de synchronisation dans le portail Office 365, les erreurs dans les journaux d’événements serveur, ou les e-mails de notification de synchronisation de répertoire incorrect à partir de Microsoft Online Services, vous pouvez avoir un type de problème de synchronisation d’annuaire. La <a href="https://aka.ms/dsup">Résolution des problèmes de synchronisation de répertoire</a> est un outil de diagnostic basé sur le Web conçu pour aider à identifier les types courants d’échecs de synchronisation et de prescrire des solutions ciblées pour les problèmes éventuellement rencontrés. La résolution des problèmes de synchronisation de répertoire doit être exécuté sur le serveur de synchronisation d’annuaire.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous recevez des messages d’avertissement de synchronisation dans le portail Office 365, les erreurs dans les journaux d’événements serveur, ou les e-mails de notification de synchronisation de répertoire incorrect à partir de Microsoft Online Services, vous pouvez avoir un type de problème de synchronisation d’annuaire. La <a href="https://aka.ms/dsup">Résolution des problèmes de synchronisation de répertoire</a> est un outil de diagnostic basé sur le Web conçu pour aider à identifier les types courants d’échecs de synchronisation et de prescrire des solutions ciblées pour les problèmes éventuellement rencontrés. La résolution des problèmes de synchronisation de répertoire doit être exécuté sur le serveur de synchronisation d’annuaire.
 
 
 ## Conditions préalables

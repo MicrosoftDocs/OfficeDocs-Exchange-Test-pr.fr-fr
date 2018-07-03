@@ -81,18 +81,8 @@ Dans cet exemple, la boîte aux lettres bsuneja@contoso.com est placée en conse
 
     Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous placez une boîte aux lettres en conservation pour litige indéfiniment (en ne spécifiant aucune durée), la valeur de la propriété de boîte aux lettres <em>LitigationHoldDuration</em> est définie sur <code>Unlimited</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous placez une boîte aux lettres en conservation pour litige indéfiniment (en ne spécifiant aucune durée), la valeur de la propriété de boîte aux lettres <em>LitigationHoldDuration</em> est définie sur <code>Unlimited</code>.
 
 
 ## Utilisation de l’environnement de ligne de commande Exchange Management Shell pour placer une boîte aux lettres en conservation pour litige et conserver les éléments pour une durée spécifiée

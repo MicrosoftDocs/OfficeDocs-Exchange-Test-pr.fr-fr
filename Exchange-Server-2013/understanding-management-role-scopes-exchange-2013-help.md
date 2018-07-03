@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2015-04-07_
 
 Les *étendues des rôles de gestion* permettent de définir l’étendue spécifique de l’impact ou de l’influence d’un rôle de gestion lorsqu’une attribution de rôle de gestion est créée. Lorsque vous appliquez une étendue, la personne attribuée au rôle ne peut que modifier les objets contenus dans cette étendue. Une personne attribuée au rôle peut être un groupe de rôles de gestion, un rôle de gestion, une stratégie d’attribution de rôle de gestion, un utilisateur ou un groupe de sécurité universel. Pour plus d’informations sur les rôles de gestion, voir [Présentation du contrôle d'accès basé sur un rôle](understanding-role-based-access-control-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette rubrique traite de la fonctionnalité RBAC avancée. Si vous souhaitez gérer des autorisations Exchange 2013 de base, comme l’utilisation du centre d’administration Exchange pour ajouter et supprimer des membres dans les groupes de rôles, créer et modifier des groupes de rôles ou créer et modifier des stratégies d’attribution de rôles, consultez la rubrique <a href="permissions-exchange-2013-help.md">Autorisations</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette rubrique traite de la fonctionnalité RBAC avancée. Si vous souhaitez gérer des autorisations Exchange 2013 de base, comme l’utilisation du centre d’administration Exchange pour ajouter et supprimer des membres dans les groupes de rôles, créer et modifier des groupes de rôles ou créer et modifier des stratégies d’attribution de rôles, consultez la rubrique <a href="permissions-exchange-2013-help.md">Autorisations</a>.
 
 
 Chaque rôle de gestion, qu’il soit intégré ou personnalisé, a des étendues de gestion. Une étendue de gestion peut être :
@@ -835,18 +825,8 @@ Lorsque vous ajoutez une étendue de configuration de serveur ou de base de donn
 
 Outre le fait de contrôler quelles bases de données peuvent être gérées par les personnes auxquelles le rôle est attribué, les étendues de base de données vous permettent également de contrôler dans quelles bases de données les personnes auxquelles est attribué le rôle peuvent créer des boîtes aux lettres. C’est une fonctionnalité distincte de celle de contrôler quels destinataires peuvent être gérés par une personne à laquelle le rôle a été attribué. Si la personne à laquelle le rôle a été attribué dispose des autorisations de création d’une nouvelle boîte aux lettres, d’étendre la messagerie à un utilisateur existant ou de déplacer des boîtes aux lettres, vous pouvez alors affiner encore ces autorisations à l’aide des étendues de base de données pour contrôler la base de données dans laquelle la boîte aux lettres est créée ou dans quelle base de données une boîte aux lettres est déplacée. Le contrôle des destinataires pouvant être gérés par une personne à laquelle le rôle a été attribué est opéré avec une étendue de destinataire qui est spécifiée dans le paramètre *CustomRecipientWriteScope* sur la cmdlet **New-ManagementRoleAssignment** ou **Set-ManagementRoleAssignment**. Pour contrôler dans quelles bases de données une boîte aux lettres peut être créée ou déplacée, il faut utiliser une étendue de base de données spécifiée dans le paramètre *CustomConfigurationWriteScope* sur les mêmes cmdlets.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La distribution automatique des boîtes aux lettres peut être contrôlée à l’aide des étendues de base de données.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La distribution automatique des boîtes aux lettres peut être contrôlée à l’aide des étendues de base de données.
 
 
 La gestion des fonctionnalités d’Exchange peut exiger des étendues de serveur ou de base de données, ou les deux types d’étendue. Si la gestion d’une fonctionnalité requiert à la fois des étendues de serveur et de base de données, deux attributions de rôle doivent être créées et dévolues à la personne à laquelle le rôle est attribué et possédant l’accès à la gestion de la fonctionnalité. Une attribution de rôle doit être associée à l’étendue de serveur et l’autre attribution de rôle à l’étendue de base de données.

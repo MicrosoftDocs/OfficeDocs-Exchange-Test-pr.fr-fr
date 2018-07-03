@@ -91,18 +91,8 @@ Le tableau suivant décrit les composants d'Exchange 2013 affectés par le prot
 <li><p>Adresses IP d'hôte actif</p></li>
 <li><p>Paramètre <em>SourceIPAddress</em> pour les connecteurs d'envoi configurés sur des serveurs de transport Edge</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous voulez spécifier une adresse IPv6 pour le paramètre <em>SourceIPAddress</em>, veillez à ce que les enregistrements DNS AAAA et de ressource de messagerie Exchange (MX) appropriés soient configurés correctement. Cela permet de garantir la remise du message si un serveur de messagerie distant tente d'effectuer un type quelconque de test de recherche inversée sur l'adresse IPv6 spécifiée.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous voulez spécifier une adresse IPv6 pour le paramètre <em>SourceIPAddress</em>, veillez à ce que les enregistrements DNS AAAA et de ressource de messagerie Exchange (MX) appropriés soient configurés correctement. Cela permet de garantir la remise du message si un serveur de messagerie distant tente d'effectuer un type quelconque de test de recherche inversée sur l'adresse IPv6 spécifiée.
 
 <p>Pour plus d'informations, consultez la rubrique <a href="send-connectors-exchange-2013-help.md">Connecteurs d'envoi</a>.</p></td>
 </tr>

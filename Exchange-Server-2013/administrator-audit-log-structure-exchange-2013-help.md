@@ -173,18 +173,8 @@ Vous trouverez ci-dessous un exemple type d’entrée de journal d’audit. Selo
 
   - Les deux propriétés suivantes sur l’objet `david`ont été modifiées :
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les propriétés modifiées sont enregistrées dans le journal d’audit parce que le paramètre <em>LogLevel</em> de la cmdlet <code>Set-AdminAuditLogConfig</code> a été défini à <code>Verbose</code> dans cet exemple.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les propriétés modifiées sont enregistrées dans le journal d’audit parce que le paramètre <em>LogLevel</em> de la cmdlet <code>Set-AdminAuditLogConfig</code> a été défini à <code>Verbose</code> dans cet exemple.
     
       - *ProhibitSendReceiveQuota* avec une nouvelle valeur « `10GB` », remplaçant la valeur précédente qui était « `35GB` ».
 

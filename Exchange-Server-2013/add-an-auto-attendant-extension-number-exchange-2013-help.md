@@ -21,18 +21,8 @@ Vous pouvez configurer un numéro de poste ou plusieurs numéros de poste sur un
 
 Vous pouvez créer un nouveau standard automatique sans configuration d'un numéro de poste pour le standard automatique. Vous pouvez également associer plusieurs numéros de téléphone ou poste avec un standard automatique unique. Vous pouvez ajouter les numéros de poste lorsque vous créez le standard automatique de messagerie unifiée ou ajoutez après avoir configuré le standard automatique. Le nombre de chiffres dans le numéro de poste que vous avez configuré sur le standard automatique de messagerie unifiée doit correspondre au nombre de chiffres pour un numéro de poste qui est configurée sur le plan de numérotation de messagerie unifiée associé du standard automatique de messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez également ajouter une adresse de protocole SIP (Session Initiation) au lieu d'ajouter un numéro de poste. Une adresse SIP est utilisée par certains autocommutateur privé IP (PBX) et Office Communications Server 2007 R2 ou Microsoft Lync Server.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez également ajouter une adresse de protocole SIP (Session Initiation) au lieu d'ajouter un numéro de poste. Une adresse SIP est utilisée par certains autocommutateur privé IP (PBX) et Office Communications Server 2007 R2 ou Microsoft Lync Server.
 
 
 Pour les autres tâches de gestion relatives aux standards automatiques de messagerie unifiée, consultez la rubrique [Procédures relatives au standard automatique de messagerie unifiée](um-auto-attendant-procedures-exchange-2013-help.md).
@@ -49,18 +39,8 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

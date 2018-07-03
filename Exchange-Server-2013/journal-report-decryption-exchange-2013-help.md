@@ -49,18 +49,8 @@ Le déchiffrement du rapport de journalisation permet d’enregistrer en plus de
 
 Le déchiffrement est effectué par l’agent de déchiffrement du rapport de journalisation, un agent de transport axé sur la conformité. Cet agent déclenche l’événement **OnCategorizedMessage**. Les messages protégés en transit qui font appel aux règles de protection du transport sont déjà chiffrés par l’agent de chiffrement, qui déclenche l’événement **OnRoutedMessage**, avant qu’ils ne parviennent à l’agent de déchiffrement du rapport de journalisation. L’agent de déchiffrement du rapport de journalisation déchiffre ces messages.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange 2013, l’agent de déchiffrement du rapport de journalisation est un agent intégré. Les agents intégrés ne figurent pas dans la liste d’agents retournée par la cmdlet <strong>Get-TransportAgent</strong>. Pour plus d’informations, voir <a href="transport-agents-exchange-2013-help.md">Agents de transport</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange 2013, l’agent de déchiffrement du rapport de journalisation est un agent intégré. Les agents intégrés ne figurent pas dans la liste d’agents retournée par la cmdlet <strong>Get-TransportAgent</strong>. Pour plus d’informations, voir <a href="transport-agents-exchange-2013-help.md">Agents de transport</a>.
 
 
 L’agent déchiffre les types de message protégés par IRM suivants :

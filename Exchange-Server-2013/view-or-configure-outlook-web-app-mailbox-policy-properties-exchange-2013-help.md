@@ -27,18 +27,8 @@ Une fois que vous avez créé une stratégie de boîte aux lettres Outlook Web A
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -59,18 +49,8 @@ Une fois que vous avez créé une stratégie de boîte aux lettres Outlook Web A
     
     Sous l'onglet **Fonctionnalités**, utilisez les cases à cocher pour activer ou désactiver des fonctionnalités. Par défaut, les fonctionnalités les plus courantes sont affichées. Pour afficher toutes les fonctionnalités pouvant être activées ou désactivées, cliquez sur **plus d'options**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Présente les paramètres pour le remplacement par les stratégies de boîte aux lettres Outlook Web App par les paramètres de répertoire virtuel Outlook Web App. Vous pouvez modifier les paramètres de segmentation des utilisateurs à l'aide de la cmdlet <strong>Set-CASMailbox</strong> dans l'environnement Shell.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Présente les paramètres pour le remplacement par les stratégies de boîte aux lettres Outlook Web App par les paramètres de répertoire virtuel Outlook Web App. Vous pouvez modifier les paramètres de segmentation des utilisateurs à l'aide de la cmdlet <strong>Set-CASMailbox</strong> dans l'environnement Shell.
 
 
 6.  

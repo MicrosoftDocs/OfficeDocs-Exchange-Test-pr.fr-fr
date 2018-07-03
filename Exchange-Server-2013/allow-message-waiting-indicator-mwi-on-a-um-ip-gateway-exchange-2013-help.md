@@ -21,18 +21,8 @@ Vous pouvez autoriser ou empêcher les notifications de messagerie vocale auprè
 
 Un indicateur de message en attente avertit un utilisateur en cas de nouveau message vocal ou en cas de message vocal non écouté. Il s'affiche dans la boîte de réception des clients tels qu'Outlook et Outlook Web App. Il peut aussi s'agir d'un message texte (SMS) envoyé à un téléphone mobile enregistré, d'un appel sortant effectué à partir d'un serveur Exchange vers un numéro configuré pour lire de nouveaux messages ou d'une lampe allumée sur le téléphone de bureau d'un utilisateur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les notifications des indicateurs de message en attente peuvent aussi être activées et désactivées sur une stratégie de boîte aux lettres de messagerie unifiée pour un groupe d'utilisateurs.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Les notifications des indicateurs de message en attente peuvent aussi être activées et désactivées sur une stratégie de boîte aux lettres de messagerie unifiée pour un groupe d'utilisateurs.
 
 
 Pour les autres tâches de gestion relatives aux passerelles IP de messagerie unifiée, consultez la rubrique [Procédures de passerelle IP de messagerie unifiée](um-ip-gateway-procedures-exchange-2013-help.md).
@@ -49,18 +39,8 @@ Pour les autres tâches de gestion relatives aux passerelles IP de messagerie un
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

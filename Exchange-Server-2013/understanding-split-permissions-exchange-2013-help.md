@@ -324,18 +324,8 @@ Exchange 2013 obtient les autorisations fractionnées Active Directory en suppr
 
 Pour obtenir la liste des modifications qui sont effectuées sur le groupe de sécurité Autorisations Exchange Windows et sur d’autres composants Exchange lorsque vous activez ou désactivez les autorisations fractionnées Active Directory, consultez le tableau suivant.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les attributions de rôle aux groupes de rôles qui permettent aux administrateurs Exchange de créer des principaux de sécurité sont supprimées lorsque les autorisations fractionnées Active Directory sont activées. Cela est effectué pour supprimer l’accès aux cmdlets qui généreraient une erreur lorsqu’elles seraient exécutées car elles n’ont pas les autorisations de créer l’objet Active Directory associé.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les attributions de rôle aux groupes de rôles qui permettent aux administrateurs Exchange de créer des principaux de sécurité sont supprimées lorsque les autorisations fractionnées Active Directory sont activées. Cela est effectué pour supprimer l’accès aux cmdlets qui généreraient une erreur lorsqu’elles seraient exécutées car elles n’ont pas les autorisations de créer l’objet Active Directory associé.
 
 
 ### Modifications d’autorisations fractionnées Active Directory

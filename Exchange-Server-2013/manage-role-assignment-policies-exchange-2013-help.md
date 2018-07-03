@@ -29,18 +29,8 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives à la gestion 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -51,18 +41,8 @@ Après avoir créé la nouvelle stratégie d’attribution, vous devez lui affec
 
 ## Utiliser le Centre d'administration Exchange (CAE) pour créer une stratégie d’attribution
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez créer des stratégies d’attribution explicites uniquement à l’aide du Centre d’administration Exchange (CAE). Pour créer une nouvelle stratégie d’attribution par défaut, vous devez faire appel à l’environnement de ligne de commande Exchange Management Shell. Pour plus d’informations, consultez la section « Utiliser l’environnement de ligne de commande Exchange Management Shell pour créer une stratégie d’attribution par défaut» plus loin dans cette rubrique.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez créer des stratégies d’attribution explicites uniquement à l’aide du Centre d’administration Exchange (CAE). Pour créer une nouvelle stratégie d’attribution par défaut, vous devez faire appel à l’environnement de ligne de commande Exchange Management Shell. Pour plus d’informations, consultez la section « Utiliser l’environnement de ligne de commande Exchange Management Shell pour créer une stratégie d’attribution par défaut» plus loin dans cette rubrique.
 
 
 1.  Dans le CAE, accédez à **Autorisations** \> **Rôles de l'utilisateur** et cliquez ensuite sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter").
@@ -223,18 +203,8 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Vous pouvez modifier la stratégie d'attribution de rôle de gestion qui est appliquée aux nouvelles boîtes aux lettres créées. La modification de la stratégie par défaut d'affectation des rôles ne modifie pas la stratégie d'attribution affectée aux boîtes aux lettres existantes. Pour modifier la stratégie d'attribution affectée aux boîtes aux lettres existantes, voir [Modifier la stratégie d’attribution sur une boîte aux lettres](change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le Centre d'administration Exchange (CAE) pour modifier la stratégie d'attribution par défaut. Vous devez utiliser l'environnement de ligne de commande (Shell).</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le Centre d'administration Exchange (CAE) pour modifier la stratégie d'attribution par défaut. Vous devez utiliser l'environnement de ligne de commande (Shell).
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour modifier la stratégie d'attribution par défaut

@@ -69,18 +69,8 @@ Si les listes d'adresses sont des outils utiles pour les utilisateurs, les liste
 
   - Nommez vos listes d'adresses de telle sorte que l'utilisateur identifie immédiatement le type de destinataires qu'elles contiennent. Si vous rencontrez des difficultés pour attribuer des noms à vos listes d'adresses, créez moins de listes et rappelez à vos utilisateurs qu'ils peuvent trouver n'importe quel destinataire dans votre organisation via la LAG.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Par défaut dans Exchange Online, le rôle de liste d’adresses n’est affecté à aucun groupe de rôles. Pour utiliser les cmdlets nécessitant le rôle Liste d’adresses, vous devez ajouter ce dernier à un groupe de rôles. Pour plus d’informations, consultez la section « Ajouter un rôle à un groupe de rôles » de la rubrique <a href="manage-role-groups-exchange-2013-help.md">Gérer des groupes de rôles</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Par défaut dans Exchange Online, le rôle de liste d’adresses n’est affecté à aucun groupe de rôles. Pour utiliser les cmdlets nécessitant le rôle Liste d’adresses, vous devez ajouter ce dernier à un groupe de rôles. Pour plus d’informations, consultez la section « Ajouter un rôle à un groupe de rôles » de la rubrique <a href="manage-role-groups-exchange-2013-help.md">Gérer des groupes de rôles</a>.
 
 
 Pour plus d'informations sur la création d'une liste d'adresses dans Exchange 2013, consultez la rubrique [Créer une liste d'adresses](create-an-address-list-exchange-2013-help.md). Pour plus d'informations sur la création d'une liste d'adresses dans Exchange Online, consultez la rubrique [Gestion des listes d’adresses dans Exchange Online](https://technet.microsoft.com/fr-fr/library/jj983798\(v=exchg.150\)).

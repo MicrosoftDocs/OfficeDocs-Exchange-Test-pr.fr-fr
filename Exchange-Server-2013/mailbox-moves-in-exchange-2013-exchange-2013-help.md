@@ -57,32 +57,12 @@ Microsoft Exchange Server 2013 introduit le concept de *déplacements par lot* 
 
 Dans Exchange 2013, vous devez déplacer les boîtes aux lettres entre Exchange 2007 et Exchange 2010 et Exchange 2013 à partir du Centre d'administration Exchange 2013 (CAE) et de l'environnement de ligne de commande Exchange Management Shell.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange 2013, vous pouvez toujours effectuer des déplacements de boîtes aux lettres uniques tout comme dans Exchange Server 2010, en utilisant soit le Centre d'administration Exchange, soit les cmdlets de demande de déplacement ou de lot de migration.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange 2013, vous pouvez toujours effectuer des déplacements de boîtes aux lettres uniques tout comme dans Exchange Server 2010, en utilisant soit le Centre d'administration Exchange, soit les cmdlets de demande de déplacement ou de lot de migration.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas déplacer de boîtes aux lettres locales d’Exchange Server 2003 vers Exchange 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas déplacer de boîtes aux lettres locales d’Exchange Server 2003 vers Exchange 2013.
 
 
 Pour plus d'informations sur la gestion des déplacements nouveaux et existants, consultez la rubrique [Gestion des déplacements locaux](manage-on-premises-moves-exchange-2013-help.md).

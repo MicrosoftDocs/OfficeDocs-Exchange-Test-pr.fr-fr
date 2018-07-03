@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2015-07-21_
 
 Dans MicrosoftExchange Server 2013 et Exchange Online, le service de recherche Exchange comprend des filtres destinés à indexer les types de formats de fichiers les plus courants inclus en tant que pièces jointes de messages. Vous pouvez également installer des filtres pour indexer des types de fichiers supplémentaires.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange 2013, il n'est pas nécessaire d’installer et d’enregistrer Microsoft Office Filter Pack.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange 2013, il n'est pas nécessaire d’installer et d’enregistrer Microsoft Office Filter Pack.
 
 
 Quand vous gérez ou utilisez le service de recherche Exchange et les fonctionnalités dépendantes (comme la [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md)), tenez compte des différences qu'il existe entre des éléments impossibles à rechercher et des formats de fichiers dont l’indexation a été désactivée ou qui contiennent du contenu qui ne peut pas être indexé :

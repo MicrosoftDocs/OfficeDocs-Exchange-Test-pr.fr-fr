@@ -29,18 +29,8 @@ Pour découvrir d’autres tâches de gestion associées aux archives, consultez
 
   - **Exchange Online:**  [Activer ou désactiver une boîte aux lettres d’archivage dans Exchange Online](https://technet.microsoft.com/fr-fr/library/jj984357\(v=exchg.150\))
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans un déploiement hybride Exchange, vous pouvez activer une boîte aux lettres d’archivage en nuage pour une boîte aux lettres principale locale. Si vous attribuez une stratégie d’archivage à une boîte aux lettres locale, les éléments sont déplacés vers l’archive en nuage. Si un élément est déplacé vers la boîte aux lettres d’archivage, une copie n’est pas conservée dans la boîte aux lettres locale. Si la boîte aux lettres locale est placée en conservation, une stratégie d’archivage déplacera les éléments vers la boîte aux lettres d’archivage en nuage dans laquelle ils sont conservés pendant la durée spécifiée par la conservation.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans un déploiement hybride Exchange, vous pouvez activer une boîte aux lettres d’archivage en nuage pour une boîte aux lettres principale locale. Si vous attribuez une stratégie d’archivage à une boîte aux lettres locale, les éléments sont déplacés vers l’archive en nuage. Si un élément est déplacé vers la boîte aux lettres d’archivage, une copie n’est pas conservée dans la boîte aux lettres locale. Si la boîte aux lettres locale est placée en conservation, une stratégie d’archivage déplacera les éléments vers la boîte aux lettres d’archivage en nuage dans laquelle ils sont conservés pendant la durée spécifiée par la conservation.
 
 
 ## Ce qu’il faut savoir avant de commencer ?
@@ -51,18 +41,8 @@ Pour découvrir d’autres tâches de gestion associées aux archives, consultez
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -73,18 +53,8 @@ Pour découvrir d’autres tâches de gestion associées aux archives, consultez
 
 2.  Dans l’affichage Liste, sélectionnez la balise **Déplacement vers l’archive après 2 ans - Par défaut**, puis cliquez sur **Modifier**![Icône Modifier](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Icône Modifier").
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous pouvez cliquer sur la colonne <strong>TYPE</strong> pour trier les balises de rétention par type. La stratégie d’archivage par défaut indique le type <strong>Par défaut</strong> et l’action de rétention <strong>Archive</strong>. Vous pouvez également cliquer sur <strong>NOM</strong> pour trier les balises de rétention par nom.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > Vous pouvez cliquer sur la colonne <strong>TYPE</strong> pour trier les balises de rétention par type. La stratégie d’archivage par défaut indique le type <strong>Par défaut</strong> et l’action de rétention <strong>Archive</strong>. Vous pouvez également cliquer sur <strong>NOM</strong> pour trier les balises de rétention par nom.
 
 
 3.  Dans **Balise de rétention**, affichez ou modifiez les paramètres suivants, puis cliquez sur **Enregistrer** :
@@ -112,18 +82,8 @@ Pour découvrir d’autres tâches de gestion associées aux archives, consultez
             </tbody>
             </table>
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>Si un utilisateur applique une balise à un élément en pensant que cet élément ne sera jamais déplacé, son activation ultérieure peut entraîner le déplacement d’éléments que l’utilisateur souhaitait conserver dans la boîte aux lettres principale.</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]
+            > Si un utilisateur applique une balise à un élément en pensant que cet élément ne sera jamais déplacé, son activation ultérieure peut entraîner le déplacement d’éléments que l’utilisateur souhaitait conserver dans la boîte aux lettres principale.
         
           - **Lorsque l'élément atteint l'âge suivant (en jours)**   Cliquez sur ce bouton pour indiquer que les éléments doivent être déplacés au bout d’un certain temps. Par défaut, ce paramètre est configuré pour déplacer les éléments vers l’archive après un délai de deux ans (730 jours). Pour modifier ce paramètre, dans la zone de texte correspondante, tapez le nombre de jours de la période de rétention. La valeur peut être comprise entre 1 et 24 855 jours.
     

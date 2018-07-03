@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2016-12-09_
 
 Un agent de remise peut remettre des messages à partir de votre environnement Exchange Server SMTP à un système qui n’utilise pas le protocole SMTP. Chaque agent de remise est associé à un connecteur d’agent de remise qui place en attente les messages acheminés à un agent de remise pour le traitement et la livraison au système ou périphérique non-SMTP.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Tant que l’architecture du connecteur étranger reste dans Microsoft Exchange 2013, il est conseillé d’utiliser les agents de remise pour le routage des messages vers des systèmes autres que SMTP chaque fois que possible. Les principales raisons de cette opération sont que vous pouvez utiliser la gestion de la file d’attente pour les messages, qu’il est inutile de gérer le transfert de fichiers dans un répertoire de dépôt, et que vous pouvez vérifier la remise des messages.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Tant que l’architecture du connecteur étranger reste dans Microsoft Exchange 2013, il est conseillé d’utiliser les agents de remise pour le routage des messages vers des systèmes autres que SMTP chaque fois que possible. Les principales raisons de cette opération sont que vous pouvez utiliser la gestion de la file d’attente pour les messages, qu’il est inutile de gérer le transfert de fichiers dans un répertoire de dépôt, et que vous pouvez vérifier la remise des messages.
 
 
 **Contenu de cette rubrique**

@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2013-02-14_
 
 Cette rubrique explique comment obtenir des statistiques sur un dossier public, telles que le nom complet, l'heure de création, l'heure de la dernière modification par l'utilisateur, le dernier accès de l'utilisateur et la taille de l'élément. Vous pouvez utiliser ces informations pour décider de supprimer ou de conserver des dossiers publics.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans le centre d'administration Exchange (CAE), vous pouvez afficher certaines informations de quota et d'utilisation des dossiers publics en accédant à <strong>Dossiers publics</strong> &gt; <strong>Modifier</strong><img src="images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="Icône Modifier" alt="Icône Modifier" /> &gt; <strong>Utilisation de la boîte aux lettres</strong>. Ces informations sont toutefois incomplètes. Nous vous recommandons d'utiliser l'environnement de commande Exchange Power Shell pour voir les statistiques de dossier public.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans le centre d'administration Exchange (CAE), vous pouvez afficher certaines informations de quota et d'utilisation des dossiers publics en accédant à <strong>Dossiers publics</strong> &gt; <strong>Modifier</strong><img src="images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="Icône Modifier" alt="Icône Modifier" /> &gt; <strong>Utilisation de la boîte aux lettres</strong>. Ces informations sont toutefois incomplètes. Nous vous recommandons d'utiliser l'environnement de commande Exchange Power Shell pour voir les statistiques de dossier public.
 
 
 Pour découvrir d'autres tâches de gestion associées à la gestion des dossiers publics, consultez la rubrique [Procédures relatives aux dossiers publics](public-folder-procedures-exchange-2013-help.md).
@@ -47,18 +37,8 @@ Pour découvrir d'autres tâches de gestion associées aux dossiers publics, con
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -69,18 +49,8 @@ Cet exemple renvoie les statistiques du dossier public Marketing avec une comman
 
     Get-PublicFolderStatistics -Identity \Marketing | Format-List
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La valeur du paramètre <em>Identity</em> doit inclure le chemin d'accès au dossier public. Par exemple, si le dossier public nommé Marketing existait sous un dossier parent nommé Business, vous devez indiquer la valeur suivante : <code>\Business\Marketing</code></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La valeur du paramètre <em>Identity</em> doit inclure le chemin d'accès au dossier public. Par exemple, si le dossier public nommé Marketing existait sous un dossier parent nommé Business, vous devez indiquer la valeur suivante : <code>\Business\Marketing</code>
 
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Get-PublicFolderStatistics](https://technet.microsoft.com/fr-fr/library/aa998663\(v=exchg.150\)).

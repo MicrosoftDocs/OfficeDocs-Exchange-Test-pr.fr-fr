@@ -27,5 +27,5 @@ L’installation d’Exchange 2007 nécessite que le contrôleur de domaine sp�
 
 Pour résoudre ce problème, réexécutez le programme d’installation, en spécifiant le contrôleur de domaine mappé statiquement pour le paramètre **/DomainController: \<***FQDN of thestatically mapped domain controller***\>** .
 
-Pour plus d’informations sur DSAccess et la détection de services d’annuaire, consultez l’article 250570 de la Base de connaissances Microsoft « Directory Service Server Detection et utilisation de DSAccess » ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=250570](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=250570)).
+Pour plus d’informations sur DSAccess et la détection de services d’annuaire, consultez l’article 250570 de la Base de connaissances Microsoft « Directory Service Server Detection et utilisation de DSAccess » ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=250570](https://go.microsoft.com/fwlink/?linkid=3052&kbid=250570)).
 

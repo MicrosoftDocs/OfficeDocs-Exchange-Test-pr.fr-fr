@@ -23,18 +23,8 @@ Cet article décrit comment migrer vos dossiers publics d’Exchange Server 201
 
 Il est fait référence aux serveurs Exchange 2010 SP3 RU8 et Exchange 2007 SP3 RU15 en tant que *serveurs Exchange hérités*.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La méthode de migration par lots décrite dans cet article est la seule méthode prise en charge pour la migration des dossiers publics hérités vers Exchange 2013. L’ancienne méthode de migration de dossiers publics en série est déconseillée et n’est plus prise en charge par Microsoft.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La méthode de migration par lots décrite dans cet article est la seule méthode prise en charge pour la migration des dossiers publics hérités vers Exchange 2013. L’ancienne méthode de migration de dossiers publics en série est déconseillée et n’est plus prise en charge par Microsoft.
 
 
 Vous effectuerez la migration à l’aide des cmdlets **\*MigrationBatch** et des cmdlets **\*PublicFolderMigrationRequest** pour la résolution des problèmes. En outre, vous utiliserez les scripts PowerShell suivants :
@@ -83,7 +73,7 @@ Vous ne pouvez pas migrer des dossiers publics directement à partir d’Exchang
 
   - Dans Exchange 2007, le rôle Administrateur d’organisation Exchange ou Administrateur d’Exchange Server doit vous être attribué. Le rôle Administrateur de dossiers publics et le groupe Administrateurs local doivent également vous être attribués pour le serveur cible. Pour plus d’informations, consultez la rubrique [Procédure d’ajout d’un utilisateur ou d’un groupe à un rôle d’administrateur](https://go.microsoft.com/fwlink/p/?linkid=81779).
 
-  - Sur le serveur Exchange 2007, effectuez une mise à niveau vers [Windows PowerShell 2.0 et WinRM 2.0 pour Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930).
+  - Sur le serveur Exchange 2007, effectuez une mise à niveau vers [Windows PowerShell 2.0 et WinRM 2.0 pour Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930).
 
   - Avant de procéder à la migration, n’oubliez pas de prendre en compte les [Limites pour les dossiers publics](limits-for-public-folders-exchange-2013-help.md).
 
@@ -95,18 +85,8 @@ Vous ne pouvez pas migrer des dossiers publics directement à partir d’Exchang
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Comment procéder ?
@@ -165,18 +145,8 @@ Avant de commencer la migration, exécutez les étapes préalables suivantes.
         
             Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Après avoir redéfini ces propriétés, attendez qu’Exchange détecte les nouveaux paramètres. Cela peut prendre jusqu’à deux heures.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Après avoir redéfini ces propriétés, attendez qu’Exchange détecte les nouveaux paramètres. Cela peut prendre jusqu’à deux heures.
 
 
 Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubriques suivantes :
@@ -242,18 +212,8 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
     
     3.  Si vous avez des dossiers publics, exécutez les commandes PowerShell suivantes pour les supprimer. Assurez-vous que vous avez enregistré les informations présentes dans les dossiers publics.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Toutes les informations contenues dans les dossiers publics sont définitivement effacées lorsque vous les supprimez.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Toutes les informations contenues dans les dossiers publics sont définitivement effacées lorsque vous les supprimez.
         
             Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
         
@@ -291,18 +251,8 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
 
 2.  Pour créer le fichier de mappage de dossier public à boîte aux lettres, exécutez le script `PublicFolderToMailboxMapGenerator.ps1`. Ce fichier est utilisé pour calculer le nombre correct de boîtes aux lettres de dossiers publics sur le serveur de boîte aux lettres Exchange 2013.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si le nom d’un dossier public contient une barre oblique inverse <strong>\</strong>, les dossiers publics seront créés dans le dossier public parent. Nous vous recommandons d’examiner le fichier .csv et de modifier les noms contenant une barre oblique inverse.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si le nom d’un dossier public contient une barre oblique inverse <strong>\</strong>, les dossiers publics seront créés dans le dossier public parent. Nous vous recommandons d’examiner le fichier .csv et de modifier les noms contenant une barre oblique inverse.
     
         .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
     
@@ -324,18 +274,8 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
 
 Les étapes de migration des dossiers publics Exchange 2007 sont différentes de celles associées à la migration des dossiers publics Exchange 2010.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Que la migration soit effectuée d’Exchange 2007 ou d’Exchange 2010, une fois que les demandes de migration par lots sont créées avec la cmdlet appropriée, vous pouvez afficher les demandes et les gérer dans le CAE.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Que la migration soit effectuée d’Exchange 2007 ou d’Exchange 2010, une fois que les demandes de migration par lots sont créées avec la cmdlet appropriée, vous pouvez afficher les demandes et les gérer dans le CAE.
 
 
 **Migration des dossiers publics Exchange 2007**
@@ -406,18 +346,8 @@ Sur le serveur Exchange hérité, exécutez la commande suivante pour verrouille
 
     Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si, pour une raison quelconque, le fichier de commandes de migration n’est pas finalisé (<strong>PublicFolderMigrationComplete</strong> affiche <strong>False</strong>), redémarrez la banque d’informations (IS) sur le serveur hérité.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si, pour une raison quelconque, le fichier de commandes de migration n’est pas finalisé (<strong>PublicFolderMigrationComplete</strong> affiche <strong>False</strong>), redémarrez la banque d’informations (IS) sur le serveur hérité.
 
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-OrganizationConfig](https://technet.microsoft.com/fr-fr/library/aa997443\(v=exchg.150\)).
@@ -514,18 +444,8 @@ Une fois la migration des dossiers publics finalisée, vous devez exécuter le t
 
 Si vous rencontrez des problèmes en relation avec la migration et devez réactiver vos dossiers publics Exchange hérités, procédez comme suit :
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous annulez votre migration vers les serveurs Exchange hérités, vous perdrez les courriers électroniques envoyés aux dossiers publics à extension messagerie ou le contenu publié dans des dossiers publics dans Exchange 2013 après la migration. Pour sauvegarder ce contenu, exportez le contenu des dossiers publics dans un fichier .pst, puis importez-le dans les dossiers publics hérités une fois la restauration terminée.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Si vous annulez votre migration vers les serveurs Exchange hérités, vous perdrez les courriers électroniques envoyés aux dossiers publics à extension messagerie ou le contenu publié dans des dossiers publics dans Exchange 2013 après la migration. Pour sauvegarder ce contenu, exportez le contenu des dossiers publics dans un fichier .pst, puis importez-le dans les dossiers publics hérités une fois la restauration terminée.
 
 
 1.  Sur le serveur Exchange hérité, exécutez la commande suivante pour déverrouiller les dossiers publics Exchange hérités. Ce processus peut prendre plusieurs heures.

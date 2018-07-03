@@ -33,36 +33,16 @@ Cette configuration nécessite un VPN multisite. Il a toujours été possible de
 
 En juin 2014, Microsoft Azure a introduit la prise en charge du VPN multisite, qui a permis aux organisations de connecter plusieurs centres de données au même réseau virtuel Azure. Cette modification a également permis aux organisations dotées de deux centres de données de tirer parti de Microsoft Azure comme troisième emplacement pour leurs serveurs témoins DAG. Pour plus d'informations sur la fonction VPN multisite dans Azure, consultez la rubrique [Configuration d'un VPN multisite](http://go.microsoft.com/fwlink/?linkid=522621).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette configuration tire parti des machines virtuelles Azure et d'une connexion VPN multisite pour déployer le serveur témoin et n'utilise pas le témoin du Cloud Azure.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette configuration tire parti des machines virtuelles Azure et d'une connexion VPN multisite pour déployer le serveur témoin et n'utilise pas le témoin du Cloud Azure.
 
 
 ## Témoin de serveur de fichiers Microsoft Azure
 
 Le diagramme suivant est une vue d'ensemble de l'utilisation d'une machine virtuelle de serveur de fichiers Microsoft Azure comme témoin DAG. Vous avez besoin d'un réseau virtuel Azure, d'une connexion VPN multisite qui connecte vos centres de données à votre réseau virtuel Azure, ainsi que d'un contrôleur de domaine et d'un serveur de fichiers déployés sur des machines virtuelles Azure.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il est techniquement possible d'utiliser une seule machine virtuelle Azure à cet effet et de placer le partage témoin de fichiers sur le contrôleur de domaine. Toutefois, cela entraîne une élévation inutile des privilèges. Par conséquent, cette configuration n'est pas recommandée.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il est techniquement possible d'utiliser une seule machine virtuelle Azure à cet effet et de placer le partage témoin de fichiers sur le contrôleur de domaine. Toutefois, cela entraîne une élévation inutile des privilèges. Par conséquent, cette configuration n'est pas recommandée.
 
 
 **Serveur témoin de groupe de disponibilité de base de données (DAG) sur Microsoft Azure**
@@ -81,18 +61,8 @@ Une fois que vous avez votre abonnement Azure, vous devez effectuer les opérati
 
 4.  Configurer le témoin DAG
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une grande partie des instructions fournies dans cet article implique la configuration d'Microsoft Azure. Par conséquent, les liens vers la documentation Azure sont utilisés lorsque nécessaire.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Une grande partie des instructions fournies dans cet article implique la configuration d'Microsoft Azure. Par conséquent, les liens vers la documentation Azure sont utilisés lorsque nécessaire.
 
 
 ## Conditions préalables
@@ -125,18 +95,8 @@ Procédez comme suit pour enregistrer vos serveurs DNS :
 
 4.  Répétez les étapes 1 à 3 pour les autres serveurs DNS à ajouter.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les serveurs DNS que vous enregistrez ne sont pas utilisés avec le mécanisme du tourniquet. Les machines virtuelles Azure utiliseront le premier serveur DNS répertorié, ainsi que des serveurs supplémentaires uniquement si le premier d'entre eux n'est pas disponible.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les serveurs DNS que vous enregistrez ne sont pas utilisés avec le mécanisme du tourniquet. Les machines virtuelles Azure utiliseront le premier serveur DNS répertorié, ainsi que des serveurs supplémentaires uniquement si le premier d'entre eux n'est pas disponible.
 
 
 5.  Répétez les étapes 1 à 3 pour ajouter l'adresse IP que vous utiliserez pour le contrôleur de domaine que vous déploierez sur Microsoft Azure.
@@ -327,18 +287,8 @@ Si les deux tunnels sont en cours d'exécution, la sortie de cette commande ress
 
 Vous pouvez également vérifier la connectivité en consultant le tableau de bord de réseau virtuel dans le portail de gestion Azure. La colonne **État** pour les deux sites affiche **Connecté**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Après que la connexion a été établie, l'affichage de la modification de l'état dans le portail de gestion Azure peut prendre quelques minutes.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Après que la connexion a été établie, l'affichage de la modification de l'état dans le portail de gestion Azure peut prendre quelques minutes.
 
 
 ## Phase 3 : Configurer des machines virtuelles
@@ -353,18 +303,8 @@ Vous devez créer au moins deux machines virtuelles dans Microsoft Azure pour ce
         
         Get-AzureVM Azure-FSW | Set-AzureStaticVNetIP -IPAddress 10.0.0.11 | Update-AzureVM
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Une machine virtuelle avec une adresse IP préférée tentera d'utiliser cette adresse. Toutefois, si cette adresse a été attribuée à une machine virtuelle différente, la machine virtuelle avec la configuration d'adresse IP préférée ne démarrera pas. Pour éviter cette situation, assurez-vous que l'adresse IP que vous utilisez n'est pas affectée à une autre machine virtuelle. Consultez <a href="http://msdn.microsoft.com/fr-fr/library/azure/dn630228.aspx">Configuration d'une adresse IP interne statique pour une machine virtuelle</a> pour plus d'informations.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Une machine virtuelle avec une adresse IP préférée tentera d'utiliser cette adresse. Toutefois, si cette adresse a été attribuée à une machine virtuelle différente, la machine virtuelle avec la configuration d'adresse IP préférée ne démarrera pas. Pour éviter cette situation, assurez-vous que l'adresse IP que vous utilisez n'est pas affectée à une autre machine virtuelle. Consultez <a href="http://msdn.microsoft.com/fr-fr/library/azure/dn630228.aspx">Configuration d'une adresse IP interne statique pour une machine virtuelle</a> pour plus d'informations.
 
 
 3.  Configurez la machine virtuelle du contrôleur de domaine sur Azure à l'aide des normes utilisées par votre organisation.

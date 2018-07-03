@@ -37,24 +37,14 @@ Pour effectuer la procédure suivante dans Exchange 2013, vérifiez ce qui suit
 
   - Assurez-vous que l'administration à distance de Windows n'a pas été installée par Windows Update.
 
-  - Installez Windows PowerShell et Administration à distance de Windows. Pour en savoir plus, consultez l'article 968930 de la Base de connaissances Microsoft, [Package de Windows Management Framework Core (Windows PowerShell 2.0 et WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930).
+  - Installez Windows PowerShell et Administration à distance de Windows. Pour en savoir plus, consultez l'article 968930 de la Base de connaissances Microsoft, [Package de Windows Management Framework Core (Windows PowerShell 2.0 et WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930).
 
   - Téléchargez Forefront Identity Manager 2010 R2 SP1. Consultez la page [Téléchargement de Microsoft Forefront Identity Manager 2010 R2 SP1](https://go.microsoft.com/fwlink/p/?linkid=279868).
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Déploiement d'Exchange 2013 dans une topologie inter-forêts avec Forefront Identity Manager 2010 R2 SP1
@@ -65,18 +55,8 @@ Pour effectuer la procédure suivante dans Exchange 2013, vérifiez ce qui suit
     
       - [Installer Exchange 2013 à l’aide de l’Assistant Installation](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md)
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Cette rubrique est basée sur l'hypothèse que vous n'avez pas de topologie Exchange 2007 ou Exchange 2010 existante. Si vous avez une topologie Exchange existante et souhaitez procéder à une mise à niveau, consultez la rubrique <a href="upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md">Mise à niveau d'Exchange 2010 vers Exchange 2013</a> ou <a href="upgrade-from-exchange-2007-to-exchange-2013-exchange-2013-help.md">Mise à niveau d'Exchange 2007 vers Exchange 2013</a>.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Cette rubrique est basée sur l'hypothèse que vous n'avez pas de topologie Exchange 2007 ou Exchange 2010 existante. Si vous avez une topologie Exchange existante et souhaitez procéder à une mise à niveau, consultez la rubrique <a href="upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md">Mise à niveau d'Exchange 2010 vers Exchange 2013</a> ou <a href="upgrade-from-exchange-2007-to-exchange-2013-exchange-2013-help.md">Mise à niveau d'Exchange 2007 vers Exchange 2013</a>.
 
 
 2.  Dans chaque forêt, utilisez Utilisateurs et ordinateurs Active Directory pour créer un conteneur dans lequel Forefront Identity Manager 2010 R2 SP1 créera des contacts pour chaque boîte aux lettres à partir de l'autre forêt. Nous vous recommandons de nommer ce conteneur **FromFIM**. Pour créer le conteneur, sélectionnez le domaine dans lequel vous voulez le créer, cliquez avec le bouton droit sur le domaine, sélectionnez **Nouveau** \> **Unité d'organisation**. Dans **Nouvel objet - Unité d'organisation**, entrez **FromFIM**, puis cliquez sur **OK**.
@@ -104,19 +84,9 @@ Pour effectuer la procédure suivante dans Exchange 2013, vérifiez ce qui suit
     
     1.  Dans la page **Configuration des extensions**, sous **Configurer le(s) nom(s) de partition affiché(s)**, en regard de **Configurer pour**, sélectionnez **Exchange 2013**. Le champ **URI Exchange 2013 RPS** apparaît. Entrez l'URI d'un serveur d'accès au client Exchange 2013 pour vérifier le bon fonctionnement de la connexion Remote PowerShell. L'**URI Remote PowerShell d'Exchange 2013** doit être au format suivant : http://CAS\_Server\_FQDN/Powershell. Cliquez sur **OK**.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Vérifiez que les informations d'identification de l'administrateur, utilisées pour la connexion à la forêt d'Exchange 2013, permettent également les connexions Remote PowerShell à cette forêt.<br />
-        La figure suivante montre comment sélectionner la configuration pour Exchange 2013.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+		> Vérifiez que les informations d'identification de l'administrateur, utilisées pour la connexion à la forêt d'Exchange 2013, permettent également les connexions Remote PowerShell à cette forêt.<br />
+        > La figure suivante montre comment sélectionner la configuration pour Exchange 2013.
         
         **Configuration de l'agent de gestion GalSync pour Exchange 2013**
         

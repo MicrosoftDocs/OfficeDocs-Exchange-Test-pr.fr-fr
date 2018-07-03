@@ -53,18 +53,8 @@ L’approche utilisée par Exchange Server 2013 consiste à utiliser une seule
 
 L’authentification OAuth implique généralement trois composants : un serveur d’autorisation unique et deux domaines qui doivent communiquer entre eux. Les jetons de sécurité sont émis par le serveur d’autorisation (également appelé serveur de jeton de sécurité) pour les deux domaines qui doivent communiquer entre eux. Ces jetons vérifient que les communications provenant d’un domaine doivent être approuvées par l’autre domaine. Par exemple, le serveur d’autorisation peut émettre des jetons qui vérifient que les utilisateurs d’un domaine Lync Server 2013 spécifique peuvent accéder à un domaine Exchange 2013 donné, et vice versa.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Un domaine est un conteneur de sécurité.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Un domaine est un conteneur de sécurité.
 
 
 Toutefois, pour l’authentification de serveur à serveur sur site, il est inutile d’utiliser un serveur de jeton tiers. Les produits serveur tels que Lync Server 2013 et Exchange 2013 disposent chacun d’un serveur de jeton intégré qui peut être utilisé à des fins d’authentification avec d’autres serveurs Microsoft (tels que SharePoint Server) qui prennent en charge l’authentification de serveur à serveur. Par exemple, Lync Server 2013 peut émettre et signer un jeton de sécurité par lui-même, puis utiliser ce jeton pour communiquer avec Exchange 2013. Dans un cas comme celui-ci, aucun serveur de jeton tiers n’est nécessaire.
@@ -73,18 +63,8 @@ Pour configurer l’authentification de serveur à serveur pour une implémentat
 
   - **Étape 1 - Attribuer un certificat à l’émetteur de jeton intégré du serveur Exchange sur site.** Tout d’abord, si aucun certificat n’a été créé auparavant, un administrateur Exchange sur site doit utiliser le script d’environnement de ligne de commande Exchange Management Shell suivant pour en créer un et pour l’attribuer à l’émetteur de jeton intégré du serveur Exchange sur site. Il s’agit d’un processus unique. Une fois le certificat créé, celui-ci doit être réutilisé pour d’autres scénarios d’authentification et ne doit pas être remplacé. Assurez-vous que vous mettez à jour la valeur de *$tenantDomain* pour qu’elle corresponde au nom de votre domaine. Pour ce faire, copiez et collez le code suivant.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Copiez et collez le code dans un éditeur de texte comme le Bloc-notes, puis enregistrez-le avec une extension .ps1. Cela facilite l’exécution des scripts Shell.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Copiez et collez le code dans un éditeur de texte comme le Bloc-notes, puis enregistrez-le avec une extension .ps1. Cela facilite l’exécution des scripts Shell.
     
         # Make sure to update the following $tenantDomain with your Office 365 tenant domain.
         
@@ -152,18 +132,8 @@ Pour configurer l’authentification de serveur à serveur pour une implémentat
         Exporting certificate...
         Complete.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Avant de poursuivre, la cmdlet Module Azure Active Directory pour Windows PowerShell est requise. Si la cmdlet Module Azure Active Directory pour Windows PowerShell (précédemment appelée le module Microsoft Online Services pour Windows PowerShell) n'a pas été installée, vous pouvez l'installer à partir de <a href="http://aka.ms/aadposh">Gérer Azure Active Directory à l’aide de Windows PowerShell</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Avant de poursuivre, la cmdlet Module Azure Active Directory pour Windows PowerShell est requise. Si la cmdlet Module Azure Active Directory pour Windows PowerShell (précédemment appelée le module Microsoft Online Services pour Windows PowerShell) n'a pas été installée, vous pouvez l'installer à partir de <a href="http://aka.ms/aadposh">Gérer Azure Active Directory à l’aide de Windows PowerShell</a>.
 
 
   - **Étape 2 - Configurer Office 365 pour qu’il communique avec Exchange 2013 sur site.** Configurez le serveur Office 365 qui communiquera avec Exchange Server 2013 en tant qu’application partenaire. Par exemple, si Exchange Server 2013 sur site doit communiquer avec Office 365, vous devez configurer Exchange sur site en tant qu’application partenaire. Une application partenaire est une application avec laquelle Exchange 2013 peut directement échanger des jetons de sécurité, sans avoir à passer par un serveur de jeton de sécurité tiers. Un administrateur Exchange 2103 sur site doit utiliser le script d’environnement de ligne de commande Exchange Management Shell suivant pour configurer le client Office 365 avec lequel Exchange 2013 communiquera en tant qu’application partenaire. Lors de l’exécution, vous serez invité à entrer le nom d’utilisateur et le mot de passe de l’administrateur du domaine client Office 365 (par exemple, administrateur@fabrikam.com). Assurez-vous que vous mettez à jour la valeur de *$CertFile* sur l’emplacement du certificat, si ce dernier n’a pas été créé à partir du script précédent. Pour ce faire, copiez et collez le code suivant.

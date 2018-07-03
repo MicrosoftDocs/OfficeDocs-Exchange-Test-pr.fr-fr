@@ -33,18 +33,8 @@ Un rôle de gestion non délimité peut être utilisé pour fournir aux administ
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous souhaitez créer un rôle qui contient des cmdlets Exchange, vous devez créer un rôle basé sur un rôle de gestion existant. Pour plus d'informations sur la création des rôles avec les cmdlets Exchange, consultez <a href="create-a-role-exchange-2013-help.md">Créer un rôle</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous souhaitez créer un rôle qui contient des cmdlets Exchange, vous devez créer un rôle basé sur un rôle de gestion existant. Pour plus d'informations sur la création des rôles avec les cmdlets Exchange, consultez <a href="create-a-role-exchange-2013-help.md">Créer un rôle</a>.
 
 
 Souhaitez-vous rechercher les autres tâches de gestion relatives aux rôles ? Voir [Autorisations avancées](advanced-permissions-exchange-2013-help.md).
@@ -65,18 +55,8 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux rôles ? 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -117,18 +97,8 @@ Cet exemple décrit l’ajout du script BulkProvisionUsers.ps1 au rôle de scrip
 
     Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La cmdlet <strong>Add-ManagementRoleEntry</strong> effectue une validation simple pour vous assurer que vous ajoutez uniquement les paramètres qui existent dans le script. Cependant, aucune validation supplémentaire n’est faite après l’ajout de l’entrée de rôle. Si des paramètres sont ultérieurement ajoutés ou supprimés, vous devez manuellement mettre à jour les entrées de rôle qui contiennent le script.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La cmdlet <strong>Add-ManagementRoleEntry</strong> effectue une validation simple pour vous assurer que vous ajoutez uniquement les paramètres qui existent dans le script. Cependant, aucune validation supplémentaire n’est faite après l’ajout de l’entrée de rôle. Si des paramètres sont ultérieurement ajoutés ou supprimés, vous devez manuellement mettre à jour les entrées de rôle qui contiennent le script.
 
 
 ## Étape 2b : Ajouter des entrées de rôle de cmdlet non Exchange
@@ -147,18 +117,8 @@ Cet exemple vous indique comment ajouter la cmdlet **Set-WidgetConfiguration** d
 
     Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La cmdlet <strong>Add-ManagementRoleEntry</strong> effectue une validation simple pour vous assurer que vous ajoutez uniquement les paramètres qui existent dans la cmdlet. Cependant, aucune validation supplémentaire n’est faite après l’ajout de l’entrée de rôle. Si la cmdlet est modifiée ultérieurement et que des paramètres sont ajoutés ou supprimés, vous devez manuellement mettre à jour les entrées de rôle qui contiennent la cmdlet.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La cmdlet <strong>Add-ManagementRoleEntry</strong> effectue une validation simple pour vous assurer que vous ajoutez uniquement les paramètres qui existent dans la cmdlet. Cependant, aucune validation supplémentaire n’est faite après l’ajout de l’entrée de rôle. Si la cmdlet est modifiée ultérieurement et que des paramètres sont ajoutés ou supprimés, vous devez manuellement mettre à jour les entrées de rôle qui contiennent la cmdlet.
 
 
 ## Étape 3 : Attribuer le rôle de gestion
@@ -195,18 +155,8 @@ Voici les étapes à suivre pour créer un rôle enfant non délimité :
 
 Les nouveaux rôles enfants non délimités peuvent être basés sur des rôles existants non délimités. Lorsque vous créez un rôle, un rôle existant et ses entrées de rôle de gestion sont copiés dans le nouveau rôle. Le rôle existant devient le parent du nouveau rôle enfant. Si vous créez un rôle non délimité basé sur un autre rôle non délimité, vous devez choisir un rôle contenant toutes les cmdlets et tous les paramètres dont vous avez besoin puis supprimer ceux que vous ne voulez pas. Les rôles enfants non délimités ne peuvent pas avoir d’entrées de rôle de gestion qui n’existent pas dans le rôle parent.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous souhaitez créer un rôle non délimité contenant des scripts ou des cmdlets non Exchange qui n’existent dans aucun autre rôle délimité, créez un rôle de niveau supérieur non délimité. Pour plus d’informations, voir Create an unscoped top-level management role auparavant dans cette rubrique.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous souhaitez créer un rôle non délimité contenant des scripts ou des cmdlets non Exchange qui n’existent dans aucun autre rôle délimité, créez un rôle de niveau supérieur non délimité. Pour plus d’informations, voir Create an unscoped top-level management role auparavant dans cette rubrique.
 
 
 Utilisez la syntaxe suivante pour créer le nouveau rôle.

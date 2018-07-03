@@ -35,18 +35,8 @@ Avril 2016 la mise à jour pour 2016 d’Outlook pour Mac, ainsi que CU14 pour E
 
 Le tableau ci-dessous récapitule les topologies prises en charge pour les utilisateurs avec les clients Outlook 2016 pour Mac qui tentent d’accéder aux dossiers publics dans Exchange 2013, Exchange 2016 et Exchange Online.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les scénarios indiqués dans le tableau suivant supposent que la mise à jour d’avril 2016 pour Outlook 2016 pour Mac a été appliquée à tous les clients.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les scénarios indiqués dans le tableau suivant supposent que la mise à jour d’avril 2016 pour Outlook 2016 pour Mac a été appliquée à tous les clients.
 
 
 

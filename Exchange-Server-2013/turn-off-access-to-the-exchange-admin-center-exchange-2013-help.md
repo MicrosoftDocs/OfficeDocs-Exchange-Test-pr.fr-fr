@@ -19,19 +19,9 @@ _**Dernière rubrique modifiée :** 2013-05-20_
 
 Pour des questions de sécurité, certaines organisations peuvent souhaiter restreindre l'accès au centre d'administration Exchange (CAE) pour les utilisateurs provenant d'Internet. Cette procédure vous indique comment désactiver l'accès au CAE. Cette procédure n'empêche pas l'accès des utilisateurs aux options dans Outlook Web App.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette procédure désactive totalement l'accès administrateur au CAE sur le serveur d'accès au client où les étapes sont appliquées. Si vous voulez activez l'administrateur CAE pour les utilisateurs internes, nous vous conseillons d'installer un serveur d'accès au client distinct et de le configurer uniquement pour la gestion des requêtes internes à l'aide de la commande suivante :<br />
-<code>Set-ECPVirtualDirectory -Identity &quot;InternalCAS\ecp (default web site)&quot; -AdminEnabled $True</code></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette procédure désactive totalement l'accès administrateur au CAE sur le serveur d'accès au client où les étapes sont appliquées. Si vous voulez activez l'administrateur CAE pour les utilisateurs internes, nous vous conseillons d'installer un serveur d'accès au client distinct et de le configurer uniquement pour la gestion des requêtes internes à l'aide de la commande suivante :
+> <code>Set-ECPVirtualDirectory -Identity &quot;InternalCAS\ecp (default web site)&quot; -AdminEnabled $True</code>
 
 
 <table>
@@ -58,18 +48,8 @@ Pour des questions de sécurité, certaines organisations peuvent souhaiter rest
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utilisation du Shell pour désactiver un accès Internet à l'EAC

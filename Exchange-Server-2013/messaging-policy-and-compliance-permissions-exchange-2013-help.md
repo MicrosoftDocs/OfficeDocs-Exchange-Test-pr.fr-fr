@@ -27,34 +27,14 @@ Pour trouver les autorisations dont vous avez besoin pour effectuer la procédur
 
 3.  Maintenant, exécutez la cmdlet **Get-ManagementRoleAssignment** pour vérifier si les groupes de rôles ou les rôles de gestion qui vous ont été attribués vous permettent de bénéficier des autorisations nécessaires pour gérer la fonctionnalité.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le rôle de gestion de rôle doit vous être attribué pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>. Si vous ne bénéficiez pas des autorisations pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>, demandez à votre administrateur Exchange de récupérer les groupes de rôles ou les rôles de gestion qui vous sont attribués.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le rôle de gestion de rôle doit vous être attribué pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>. Si vous ne bénéficiez pas des autorisations pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>, demandez à votre administrateur Exchange de récupérer les groupes de rôles ou les rôles de gestion qui vous sont attribués.
 
 
 Si vous souhaitez déléguer la possibilité de gérer une fonctionnalité à un autre utilisateur, voir [Déléguer les attributions de rôles](delegate-role-assignments-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Certaines fonctionnalités que vous souhaitez gérer existent peut-être sur les serveurs de transport Edge. Pour gérer les fonctionnalités sur les serveurs de transport Edge, vous devez être membre du groupe Administrateurs local sur le serveur de transport Edge que vous souhaitez gérer. Les serveurs de transport Edge n’utilisent pas le contrôle d’accès en fonction du rôle (RBAC). Les fonctionnalités qui peuvent être gérées sur les serveurs de transport Edge disposent d’un administrateur local de transport Edge dans la colonne « Autorisations requises » du tableau suivant.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Certaines fonctionnalités que vous souhaitez gérer existent peut-être sur les serveurs de transport Edge. Pour gérer les fonctionnalités sur les serveurs de transport Edge, vous devez être membre du groupe Administrateurs local sur le serveur de transport Edge que vous souhaitez gérer. Les serveurs de transport Edge n’utilisent pas le contrôle d’accès en fonction du rôle (RBAC). Les fonctionnalités qui peuvent être gérées sur les serveurs de transport Edge disposent d’un administrateur local de transport Edge dans la colonne « Autorisations requises » du tableau suivant.
 
 
 ## Stratégie de messagerie et autorisations de conformité
@@ -93,18 +73,8 @@ Les utilisateurs auxquels est affecté le groupe de rôles Gestion de l'organisa
 <td><p>Suppression du contenu de la boîte aux lettres (à l’aide de la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dd298173(v=exchg.150)">Search-Mailbox</a> avec l’indicateur <em>DeleteContent</em>)</p></td>
 <td><p><a href="discovery-management-exchange-2013-help.md">Gestion de la détection</a> <strong>et</strong></p>
 <p><a href="mailbox-import-export-role-exchange-2013-help.md">Rôle d’importation et d’exportation de boîtes aux lettres</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, le rôle d’importation et d’exportation de boîte aux lettres n’est affecté à aucun groupe de rôles. Vous pouvez attribuer un rôle de gestion à un groupe de rôles, un utilisateur ou un groupe de sécurité universel intégré ou personnalisé. Il est conseillé d'attribuer un rôle à un groupe de rôles. Pour plus d’informations, consultez la rubrique <a href="add-a-role-to-a-user-or-usg-exchange-2013-help.md">Ajouter un rôle à un utilisateur ou un groupe de sécurité universel</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, le rôle d’importation et d’exportation de boîte aux lettres n’est affecté à aucun groupe de rôles. Vous pouvez attribuer un rôle de gestion à un groupe de rôles, un utilisateur ou un groupe de sécurité universel intégré ou personnalisé. Il est conseillé d'attribuer un rôle à un groupe de rôles. Pour plus d’informations, consultez la rubrique <a href="add-a-role-to-a-user-or-usg-exchange-2013-help.md">Ajouter un rôle à un utilisateur ou un groupe de sécurité universel</a>.
 
 </td>
 </tr>
@@ -136,18 +106,8 @@ Les utilisateurs auxquels est affecté le groupe de rôles Gestion de l'organisa
 <tr class="even">
 <td><p>Découverte électronique locale</p></td>
 <td><p><a href="discovery-management-exchange-2013-help.md">Gestion de la détection</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, le groupe de rôles Gestion de la découverte ne possède aucun membre. Aucun utilisateur, y compris les administrateurs, ne dispose des autorisations requises pour rechercher des boîtes aux lettres. Pour plus d’informations, voir <a href="assign-ediscovery-permissions-in-exchange-exchange-2013-help.md">Attribution d’autorisations eDiscovery dans Exchange</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, le groupe de rôles Gestion de la découverte ne possède aucun membre. Aucun utilisateur, y compris les administrateurs, ne dispose des autorisations requises pour rechercher des boîtes aux lettres. Pour plus d’informations, voir <a href="assign-ediscovery-permissions-in-exchange-exchange-2013-help.md">Attribution d’autorisations eDiscovery dans Exchange</a>.
 
 </td>
 </tr>

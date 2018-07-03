@@ -41,7 +41,7 @@ L’outil de dépannage de la messagerie unifiée de Microsoft Exchange 2010 es
     
       - Si l’outil est destiné à être utilisé sur un ordinateur Windows Vista ou Windows Server 2008, consultez la rubrique [Mises à jour Microsoft .NET Framework 3.5 (Family Update) pour Windows Vista x64 et Windows Server 2008 x64](https://go.microsoft.com/fwlink/?linkid=178998).
     
-      - Gestion à distance de Windows(WinRM) 2.0 et Windows PowerShell V2 (Windows6.0-KB968930.msu). Consultez l’article 968930 de la base de connaissances Microsoft, [Package central de Framework de gestion Windows (Windows PowerShell 2.0 et 2.0 de WinRM)](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930).
+      - Gestion à distance de Windows(WinRM) 2.0 et Windows PowerShell V2 (Windows6.0-KB968930.msu). Consultez l’article 968930 de la base de connaissances Microsoft, [Package central de Framework de gestion Windows (Windows PowerShell 2.0 et 2.0 de WinRM)](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930).
     
       - Microsoft Unified Communications Managed API 2.0 Core Runtime (UcmaRuntimeWebDownloadX64.msi). Consultez la rubrique [Unified Communications Managed API 2.0, Core Runtime (64 bits)](https://go.microsoft.com/fwlink/p/?linkid=198175).
 
@@ -67,18 +67,8 @@ L’outil de dépannage de la messagerie unifiée de Microsoft Exchange 2010 es
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Exécuter l’outil de dépannage de la messagerie unifiée sur Windows Vista, Windows 7 ou Windows 8

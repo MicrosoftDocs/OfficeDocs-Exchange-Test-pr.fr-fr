@@ -179,18 +179,8 @@ La *vignette de l’utilisateur en cours* vous permet de fermer votre session du
 
 Pour avoir la meilleure expérience avec le CAE, utilisez un des ensembles système d’exploitation et navigateur appelé « Premium ».
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D'autres ensembles systèmes d'exploitation et navigateur non répertoriés dans le tableau ci-avant ne sont pas pris en charge.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> D'autres ensembles systèmes d'exploitation et navigateur non répertoriés dans le tableau ci-avant ne sont pas pris en charge.
 
 
   - **Premium** : Toutes les fonctionnalités sont prises en charge et entièrement testées.

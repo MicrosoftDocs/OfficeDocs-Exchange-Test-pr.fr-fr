@@ -45,18 +45,8 @@ Dans Exchange 2010 SP2 et SP1, l'installation d'UCMA 2.0 est requise avant l'in
 
   - L'installation d'UCMA 4.0 comprend tous les composants requis pour Exchange 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>UCMA 4.0 est installé lorsque vous installez Exchange 2013. Pour plus d'informations sur UCMA 4.0 et les conditions d'installation, voir <a href="exchange-2013-prerequisites-exchange-2013-help.md">Conditions préalables pour Exchange 2013</a>. Pour mettre à niveau la version la plus récente d'UCMA, vous devez avant tout désinstaller les versions d'UCMA installées au moyen de l'option Ajouter/supprimer des programmes.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> UCMA 4.0 est installé lorsque vous installez Exchange 2013. Pour plus d'informations sur UCMA 4.0 et les conditions d'installation, voir <a href="exchange-2013-prerequisites-exchange-2013-help.md">Conditions préalables pour Exchange 2013</a>. Pour mettre à niveau la version la plus récente d'UCMA, vous devez avant tout désinstaller les versions d'UCMA installées au moyen de l'option Ajouter/supprimer des programmes.
 
 
 ## Améliorations de l'aperçu de messagerie vocale

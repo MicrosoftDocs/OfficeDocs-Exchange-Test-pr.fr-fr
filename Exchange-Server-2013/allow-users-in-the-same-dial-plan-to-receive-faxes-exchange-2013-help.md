@@ -21,18 +21,8 @@ Vous pouvez autoriser tous les utilisateurs associés à un plan de numérotatio
 
 Si vous empêchez la réception des messages de télécopie sur un plan de numérotation, tous les utilisateurs associés au plan de numérotation ne pourront pas recevoir de messages de télécopie, même si vous configurez les propriétés d'un utilisateur individuel pour qu'il reçoive des messages de télécopie. L'activation ou la désactivation de la télécopie sur un plan de numérotation de messagerie unifiée prime sur les paramètres de télécopie d'une stratégie de boîte aux lettres ou d'un utilisateur à extension messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez utiliser le Centre d'administration Exchange (CAE) pour configurer les paramètres de télécopie sur une stratégie de boîte aux lettres de messagerie unifiée. Vous devez cependant utiliser l'environnement de ligne de commande Exchange Management Shell pour configurer les paramètres de télécopie sur des plans de numérotation ou pour des utilisateurs individuels.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez utiliser le Centre d'administration Exchange (CAE) pour configurer les paramètres de télécopie sur une stratégie de boîte aux lettres de messagerie unifiée. Vous devez cependant utiliser l'environnement de ligne de commande Exchange Management Shell pour configurer les paramètres de télécopie sur des plans de numérotation ou pour des utilisateurs individuels.
 
 
 Pour plus d’informations sur les partenaires de télécopie, consultez [Microsoft PinPoint pour les partenaires de télécopie](https://go.microsoft.com/fwlink/?linkid=190238).
@@ -49,18 +39,8 @@ Pour découvrir d'autres tâches de gestion relatives à la télécopie, consult
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour autoriser les utilisateurs associés à un plan de numérotation à recevoir des télécopies

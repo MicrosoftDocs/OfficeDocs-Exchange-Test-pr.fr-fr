@@ -21,18 +21,8 @@ Vous pouvez indiquer si vous souhaitez que des utilisateurs individuels puissent
 
 Vous pouvez activer ou désactiver des règles de répondeur automatique pour plusieurs utilisateurs à extension messagerie unifiée en configurant des règles de répondeur automatique dans un plan de numérotation de messagerie unifiée ou dans une stratégie de boîte aux lettres de messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le Centre d'administration Exchange pour configurer cette fonctionnalité. Vous devez utiliser l'environnement de ligne de commande Exchange Management Shell ou désactiver les règles de répondeur automatique pour un utilisateur de la messagerie vocale.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le Centre d'administration Exchange pour configurer cette fonctionnalité. Vous devez utiliser l'environnement de ligne de commande Exchange Management Shell ou désactiver les règles de répondeur automatique pour un utilisateur de la messagerie vocale.
 
 
 Pour les autres tâches de gestion visant à autoriser les utilisateurs à transférer des appels, consultez la rubrique [Transfert d'appels de procédures](forwarding-calls-procedures-exchange-2013-help.md).
@@ -51,18 +41,8 @@ Pour les autres tâches de gestion visant à autoriser les utilisateurs à trans
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour activer ou désactiver les règles de réponse aux appels pour un utilisateur à extension messagerie unifiée

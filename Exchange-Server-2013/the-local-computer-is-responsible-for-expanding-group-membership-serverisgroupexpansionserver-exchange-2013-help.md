@@ -47,18 +47,8 @@ Pour modifier le serveur d’extension pour un groupe de distribution ou un grou
     
     4.  Dans la zone de valeur, cliquez sur le bouton **Parcourir** pour sélectionner le serveur Bridgehead servant actuellement de serveur d’expansion.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L’étape suivante est facultative.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L’étape suivante est facultative.
 
 
 1.  Cliquez sur **Ajouter une expression** pour spécifier des critères de filtrage supplémentaires. Seuls les messages répondant aux critères de filtrage s’affichent.

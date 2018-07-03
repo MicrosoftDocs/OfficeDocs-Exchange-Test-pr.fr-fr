@@ -54,18 +54,8 @@ Vous rencontrez des difficultés ? Demandez de l’aide en participant aux foru
 
 Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Service de recherche Exchange » dans la rubrique [Autorisations des destinataires](recipients-permissions-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le Centre d'administration Exchange (CAE) pour activer ou désactiver le service de recherche Exchange associé à une base de données de boîtes aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le Centre d'administration Exchange (CAE) pour activer ou désactiver le service de recherche Exchange associé à une base de données de boîtes aux lettres.
 
 
 Cette commande permet de désactiver le service de recherche Exchange pour une base de données de boîtes aux lettres appelée EXCH01.
@@ -92,18 +82,8 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 3.  Sous l'onglet **Général**, dans la liste **Type de démarrage**, sélectionnez **Désactivé** pour désactiver le service ou **Automatique** pour le démarrer automatiquement.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le type de démarrage affecte le service la prochaine fois qu'il est démarré, automatiquement après que le serveur est redémarré ou manuellement. À la prochaine étape, le service est arrêté ou démarré manuellement.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le type de démarrage affecte le service la prochaine fois qu'il est démarré, automatiquement après que le serveur est redémarré ou manuellement. À la prochaine étape, le service est arrêté ou démarré manuellement.
 
 
 4.  Cliquez sur **Arrêter** pour arrêter le service ou sur **Démarrer** pour le démarrer.

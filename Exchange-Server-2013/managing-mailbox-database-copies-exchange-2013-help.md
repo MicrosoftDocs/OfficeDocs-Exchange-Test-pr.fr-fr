@@ -57,18 +57,8 @@ Pour utiliser une copie spécifique comme source d’amorçage lors de l’ajout
 
 En plus de choisir un serveur source spécifique pour l’amorçage d’une copie de base de données de boîtes aux lettres, vous pouvez aussi utiliser l’environnement de ligne de commande Exchange Management Shell pour indiquer quels réseaux DAG vous souhaitez utiliser et éventuellement remplacer les paramètres de compression et de chiffrement du réseau DAG pendant l’opération d’amorçage.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L’amorçage d’un catalogue d’index de contenu n’est possible que par le biais d’un réseau MAPI. Cela est avéré même si vous utilisez le paramètre <code>-Network</code> dans la cmdlet Update-MailboxDatabaseCopy.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L’amorçage d’un catalogue d’index de contenu n’est possible que par le biais d’un réseau MAPI. Cela est avéré même si vous utilisez le paramètre <code>-Network</code> dans la cmdlet Update-MailboxDatabaseCopy.
 
 
 Pour indiquer les réseaux que vous souhaitez utiliser pour l’amorçage, utilisez le paramètre *Network* lors de l’exécution de la cmdlet [Update-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd335201\(v=exchg.150\)) et indiquez les réseaux DAG que vous voulez utiliser. Si vous n’utilisez pas le paramètre *Network*, le système utilise la procédure par défaut pour le choix du réseau à utiliser pour l’amorçage :

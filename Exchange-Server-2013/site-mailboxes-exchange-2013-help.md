@@ -99,18 +99,8 @@ Les boîtes aux lettres de site ne prennent pas en charge la rétention au nivea
 
 À l'aide de la console eDiscovery (découverte électronique) dans SharePoint, les boîtes aux lettres de site peuvent être incluses dans l'étendue de la découverte électronique locale pour que vous puissiez faire des recherches par mots clés dans les boîtes aux lettres d'utilisateur ou de site. En outre, vous pouvez placer une boîte aux lettres de site en suspens pour raisons juridiques. Pour plus d'informations, consultez la rubrique [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour placer une boîte aux lettres de site en conservation légale dans Office 365, elle doit disposer d’une licence Exchange Online (Plan 2). Si une boîte aux lettres de site dispose d’une licence Exchange Online (Plan 1), vous devez lui attribuer une licence Archivage Exchange Online distincte pour la placer en conservation légale.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour placer une boîte aux lettres de site en conservation légale dans Office 365, elle doit disposer d’une licence Exchange Online (Plan 2). Si une boîte aux lettres de site dispose d’une licence Exchange Online (Plan 1), vous devez lui attribuer une licence Archivage Exchange Online distincte pour la placer en conservation légale.
 
 
 Fonctionnement des boîtes aux lettres de site

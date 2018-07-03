@@ -198,18 +198,8 @@ Si vous souhaitez utiliser un certificat X.509 signé par une Autorité de certi
 
   - **Utilisation améliorée de la clé**   Le certificat doit inclure le type d’utilisation améliorée de la clé (EKU) **Authentification du client (1.3.6.1.5.5.7.3.2)**. Ce type d’utilisation permet de prouver votre identité sur un ordinateur distant. Si vous utilisez le Centre d’administration Exchange ou l’environnement Exchange Management Shell pour générer une demande de certificat, ce type d’utilisation est inclus par défaut.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Étant donné que le certificat n’est pas utilisé pour l’authentification, il n’y a aucune exigence en matière de nom d’objet ou d’autre nom d’objet. Vous pouvez utiliser un certificat dont le nom d’objet est identique au nom d’hôte, au nom de domaine ou à tout autre nom.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Étant donné que le certificat n’est pas utilisé pour l’authentification, il n’y a aucune exigence en matière de nom d’objet ou d’autre nom d’objet. Vous pouvez utiliser un certificat dont le nom d’objet est identique au nom d’hôte, au nom de domaine ou à tout autre nom.
 
 
 Terminologie clé
@@ -220,18 +210,8 @@ Le certificat utilisé pour créer l’approbation de fédération est désigné
 
 Une fois l’état de distribution du certificat vérifié, vous pouvez configurer l’approbation afin qu’elle utilise le nouveau certificat. Après avoir changé de certificat, le certificat actuel est désigné comme certificat précédent, et le nouveau certificat comme certificat actuel. Le nouveau certificat est publié dans le système d’authentification Azure AD et tous les nouveaux jetons remplacés par le système d’authentification Azure AD sont chiffrés à l’aide du nouveau certificat.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ce processus de transition de certificat est uniquement utilisé par la fédération. Si vous utilisez le même certificat pour d’autres fonctions d’Exchange 2013 exigeant des certificats, vous devez prendre en compte les fonctionnalités requises lorsque vous envisagez d’obtenir, d’installer ou d’adopter un nouveau certificat.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Ce processus de transition de certificat est uniquement utilisé par la fédération. Si vous utilisez le même certificat pour d’autres fonctions d’Exchange 2013 exigeant des certificats, vous devez prendre en compte les fonctionnalités requises lorsque vous envisagez d’obtenir, d’installer ou d’adopter un nouveau certificat.
 
 
 Terminologie clé

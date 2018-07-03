@@ -37,18 +37,8 @@ Pour d’autres tâches relatives aux groupements de postes de messagerie unifi�
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser le Shell pour afficher les propriétés d'un groupement de postes de messagerie unifiée
@@ -61,16 +51,6 @@ Cet exemple montre comment afficher les détails d'un groupement de postes de me
 
     Get-UMHuntGroup -identity MyUMIPGateway\MyUMHuntGroup | Format-List
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous utilisez l'applet de commande <strong>Get-UMHuntGroup</strong> , vous ne pouvez pas entrer uniquement le nom du groupement de postes de messagerie unifiée. Vous devez également inclure le nom de la passerelle IP de messagerie unifiée associée au groupement de postes de messagerie unifiée.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous utilisez l'applet de commande <strong>Get-UMHuntGroup</strong> , vous ne pouvez pas entrer uniquement le nom du groupement de postes de messagerie unifiée. Vous devez également inclure le nom de la passerelle IP de messagerie unifiée associée au groupement de postes de messagerie unifiée.
 

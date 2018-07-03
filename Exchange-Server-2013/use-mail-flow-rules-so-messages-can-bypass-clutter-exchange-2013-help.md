@@ -69,16 +69,6 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Vous pouvez vérifier les en-têtes des messages électroniques pour voir si les messages arrivent dans la boîte de réception en raison du contournement de la règle de transport de courrier non trié. Sélectionnez un message électronique dans une boîte aux lettres de votre organisation à laquelle la règle de transport de contournement du courrier non trié est appliquée. Examinez les en-têtes marqués sur le message et vous devriez voir l’en-tête **X-MS-Exchange-Organization-BypassClutter: true**. Cela signifie que le contournement fonctionne. Consultez la rubrique [Afficher les informations d’en-tête Internet des messages électroniques](https://go.microsoft.com/fwlink/p/?linkid=822530) pour plus d’informations sur la façon de rechercher les informations d’en-tête.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les éléments de calendrier, tels que les réunions acceptées, envoyées ou refusées, ne possèdent pas ces en-têtes. Nous nous efforçons d’étendre les fonctionnalités de courrier non trié à ces éléments de calendrier le plus rapidement possible.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les éléments de calendrier, tels que les réunions acceptées, envoyées ou refusées, ne possèdent pas ces en-têtes. Nous nous efforçons d’étendre les fonctionnalités de courrier non trié à ces éléments de calendrier le plus rapidement possible.
 

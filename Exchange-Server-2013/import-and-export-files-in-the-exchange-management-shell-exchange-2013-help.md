@@ -154,18 +154,8 @@ L'environnement de ligne de commande Exchange Management Shell doit savoir que v
 
 Par exemple, la commande suivante exporte les données stockées dans la propriété **FileData** sur l'objet créé par la cmdlet fictive **Export-SomeData**. Les données exportées sont stockées dans un fichier que vous spécifiez sur l'ordinateur local, dans ce cas MyData.dat.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette procédure utilise la cmdlet <strong>ForEach</strong>, des objets et le traitement en pipeline. Pour plus d’informations, consultez les rubriques <a href="https://technet.microsoft.com/fr-fr/library/aa998260(v=exchg.150)">Traitement en pipeline</a> et <a href="https://technet.microsoft.com/fr-fr/library/aa996386(v=exchg.150)">Données structurées</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette procédure utilise la cmdlet <strong>ForEach</strong>, des objets et le traitement en pipeline. Pour plus d’informations, consultez les rubriques <a href="https://technet.microsoft.com/fr-fr/library/aa998260(v=exchg.150)">Traitement en pipeline</a> et <a href="https://technet.microsoft.com/fr-fr/library/aa996386(v=exchg.150)">Données structurées</a>.
 
 
     Export-SomeData | ForEach { $_.FileData | Add-Content C:\MyData.dat -Encoding Byte }

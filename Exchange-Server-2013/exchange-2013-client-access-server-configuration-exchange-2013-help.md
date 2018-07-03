@@ -39,18 +39,8 @@ Vous pouvez configurer plusieurs paramètres dans les répertoires virtuels pour
     
         Get-OutlookAnywhere | Set-OutlookAnywhere -InternalHostname "internalServer.contoso.com" -InternalClientAuthenticationMethod Ntlm -InternalClientsRequireSsl $true -ExternalHostname "externalServer.company.com" -ExternalClientAuthenticationMethod Basic -ExternalClientsRequireSsl $true -IISAuthenticationMethods Negotiate,NTLM,Basic
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Bien qu'Exchange 2013 prenne en charge Negotiate pour l'authentification HTTP Outlook Anywhere, vous ne devez l'utiliser que lorsque tous les serveurs de l'environnement exécutent Exchange 2013.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > Bien qu'Exchange 2013 prenne en charge Negotiate pour l'authentification HTTP Outlook Anywhere, vous ne devez l'utiliser que lorsque tous les serveurs de l'environnement exécutent Exchange 2013.
 
 
   - Pour configurer Exchange ActiveSync, exécutez la commande suivante.

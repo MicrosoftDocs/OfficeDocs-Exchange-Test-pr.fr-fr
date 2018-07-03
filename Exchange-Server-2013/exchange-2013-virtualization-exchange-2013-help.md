@@ -49,18 +49,8 @@ Microsoft prend en charge Exchange 2013 en production sur un logiciel de virtua
     
       - Tout hyperviseur tiers validé dans le cadre du [programme Windows SVVP (Server Virtualization Validation Program)](https://go.microsoft.com/fwlink/p/?linkid=125375).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le déploiement d’Exchange 2013 sur des fournisseurs IaaS (Infrastructure-as-a-Service) est pris en charge si toutes les conditions de prise en charge sont remplies. Si des fournisseurs sont chargés de l’approvisionnement de machines virtuelles, ces conditions consistent notamment à s’assurer que l’hyperviseur utilisé pour les machines virtuelles Exchange est entièrement pris en charge et que l’infrastructure qu’utilisera Exchange répond aux exigences de performances qui ont été déterminées au cours du processus de dimensionnement. Le déploiement de machines virtuelles Microsoft Azure est pris en charge si tous les volumes de stockage utilisés pour les bases de données Exchange et les journaux de transactions de base de données (y compris les bases de données de transport) sont configurés pour le stockage Azure Premium.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le déploiement d’Exchange 2013 sur des fournisseurs IaaS (Infrastructure-as-a-Service) est pris en charge si toutes les conditions de prise en charge sont remplies. Si des fournisseurs sont chargés de l’approvisionnement de machines virtuelles, ces conditions consistent notamment à s’assurer que l’hyperviseur utilisé pour les machines virtuelles Exchange est entièrement pris en charge et que l’infrastructure qu’utilisera Exchange répond aux exigences de performances qui ont été déterminées au cours du processus de dimensionnement. Le déploiement de machines virtuelles Microsoft Azure est pris en charge si tous les volumes de stockage utilisés pour les bases de données Exchange et les journaux de transactions de base de données (y compris les bases de données de transport) sont configurés pour le stockage Azure Premium.
 
 
   - L'ordinateur virtuel invité d’Exchange remplit les conditions suivantes :

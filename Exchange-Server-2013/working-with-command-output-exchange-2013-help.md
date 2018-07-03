@@ -241,18 +241,8 @@ L’exemple suivant montre comment vous pouvez utiliser un script unique pour so
 
 Pour utiliser ce script, sauvegardez-le dans le répertoire `C:\Program Files\Microsoft\Exchange Server\V15\Scripts` sur l’ordinateur sur lequel le script est exécuté. Nommez le fichier `Out-Ie.ps1`. Une fois le fichier enregistré, vous pouvez utiliser le script comme une cmdlet ordinaire.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour exécuter des scripts dans Exchange 2013, ceux-ci doivent faire partie d’un rôle de gestion non délimité et ce rôle doit vous être attribué directement ou via un groupe de rôles de gestion. Pour plus d’informations, voir <a href="understanding-management-roles-exchange-2013-help.md">Présentation des rôles de gestion</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour exécuter des scripts dans Exchange 2013, ceux-ci doivent faire partie d’un rôle de gestion non délimité et ce rôle doit vous être attribué directement ou via un groupe de rôles de gestion. Pour plus d’informations, voir <a href="understanding-management-roles-exchange-2013-help.md">Présentation des rôles de gestion</a>.
 
 
 Le script `Out-Ie` suppose que les données reçues sont dans un code HTML valide. Pour convertir les données à afficher en HTML, vous devez canaliser les résultats de votre commande vers la cmdlet **ConvertTo-Html**. Vous pouvez alors canaliser les résultats de cette commande vers le script `Out-Ie`. L’exemple suivant montre comment afficher une liste de répertoires dans une fenêtre d’Internet Explorer :

@@ -154,18 +154,8 @@ Le tableau suivant décrit l'application par défaut des autorisations de pare-f
 <li><p>Serveurs de transport Hub</p></li>
 <li><p>Serveurs de transport Edge</p></li>
 <li><p>Serveurs Exchange</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Sur les serveurs de transport Hub uniquement</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Sur les serveurs de transport Hub uniquement
 
 </li>
 </ul></td>
@@ -190,18 +180,8 @@ Le tableau suivant décrit l'application par défaut des autorisations de pare-f
 <li><p>Serveurs de transport Hub</p></li>
 <li><p>Serveurs de transport Edge</p></li>
 <li><p>Serveurs Exchange</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Serveurs de transport Hub uniquement</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Serveurs de transport Hub uniquement
 
 </li>
 <li><p>Serveurs sécurisés de l'extérieur</p></li>
@@ -276,18 +256,8 @@ Le tableau suivant décrit l'application par défaut des autorisations de pare-f
 <li><p>Serveurs de transport Hub</p></li>
 <li><p>Serveurs de transport Edge</p></li>
 <li><p>Serveurs Exchange</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Sur les serveurs de transport Hub uniquement</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Sur les serveurs de transport Hub uniquement
 
 </li>
 <li><p>Serveurs sécurisés de l'extérieur</p></li>
@@ -301,18 +271,8 @@ Le tableau suivant décrit l'application par défaut des autorisations de pare-f
 <li><p>Serveurs de transport Hub</p></li>
 <li><p>Serveurs de transport Edge</p></li>
 <li><p>Serveurs Exchange</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Sur les serveurs de transport Hub uniquement</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Sur les serveurs de transport Hub uniquement
 
 </li>
 <li><p>Serveurs sécurisés de l'extérieur</p></li>

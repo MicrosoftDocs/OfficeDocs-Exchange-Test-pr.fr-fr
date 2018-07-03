@@ -57,18 +57,8 @@ Pour d'autres tâches relatives aux rapports de messagerie unifiée, consultez l
     
     Le fichier exporté sera nommé um\_cdr\_*YYYY-MM-DD*.csv, où *YYYY-MM-DD* est l'année, mois et jour que le rapport a été exécuté. Pour plus d'informations, voir [Interpréter les enregistrements d'appel de messagerie vocale](interpret-voice-mail-call-records-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Dans la page du rapport, vous pouvez télécharger un modèle Microsoft Excel qui vous servira à importer le fichier .csv d'un jour spécifique.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Dans la page du rapport, vous pouvez télécharger un modèle Microsoft Excel qui vous servira à importer le fichier .csv d'un jour spécifique.
 
 
 Retour au début

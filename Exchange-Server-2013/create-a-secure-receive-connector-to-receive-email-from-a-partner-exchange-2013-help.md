@@ -33,18 +33,8 @@ Intéressé par des scénarios où cette procédure est utilisée ? Consultez l
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser le Centre d’administration Exchange pour créer un connecteur en vue de recevoir des messages sécurisés d’un partenaire
@@ -59,18 +49,8 @@ Intéressé par des scénarios où cette procédure est utilisée ? Consultez l
 
 5.  Si la page Paramètres du réseau distant indique 0.0.0.0-255.255.255.255, ce qui signifie que le connecteur de réception reçoit des connexions de l’ensemble des adresses IP, cliquez sur **Supprimer**![Icône Suppression](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Icône Suppression") pour le supprimer. Cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter"), ajoutez l’adresse IP du serveur de votre partenaire, puis cliquez sur **Enregistrer**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous pouvez également spécifier une plage d’adresses IP avec une notation CIDR, comme 64.4.6.100/24.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Vous pouvez également spécifier une plage d’adresses IP avec une notation CIDR, comme 64.4.6.100/24.
 
 
 6.  Cliquez sur **Terminer** pour créer le connecteur.

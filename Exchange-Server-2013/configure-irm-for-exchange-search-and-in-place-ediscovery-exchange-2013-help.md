@@ -21,18 +21,8 @@ Dans Microsoft Exchange Server 2013, vous pouvez configurer la gestion des droi
 
 Lorsque les membres du groupe de rôles Gestion de la découverte effectuent une recherche [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md), les messages protégés par IRM sont renvoyés dans les résultats de recherche et copiés dans la boîte aux lettres de découverte indiquée dans la recherche. En outre, les membres du groupe de rôles Gestion de la découverte peuvent utiliser Outlook Web App pour accéder aux messages protégés par IRM qui ont été copiés dans la boîte aux lettres de découverte à la suite de l’opération de détection.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les membres du groupe de rôles Gestion de la découverte ne peuvent pas accéder aux messages protégés par IRM qui ont été exportés d’une boîte aux lettres de découverte vers une autre boîte aux lettres ou vers un fichier .pst. Les messages protégés par IRM dans une boîte aux lettres de découverte sont accessibles uniquement à l’aide d’Outlook Web App.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les membres du groupe de rôles Gestion de la découverte ne peuvent pas accéder aux messages protégés par IRM qui ont été exportés d’une boîte aux lettres de découverte vers une autre boîte aux lettres ou vers un fichier .pst. Les messages protégés par IRM dans une boîte aux lettres de découverte sont accessibles uniquement à l’aide d’Outlook Web App.
 
 
 Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives à IRM, consultez [Procédures de gestion des droits relatifs à l’information](information-rights-management-procedures-exchange-2013-help.md).
@@ -51,18 +41,8 @@ Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives �
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -71,18 +51,8 @@ Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives �
 
 Cet exemple configure IRM afin d’autoriser le service de recherche Exchange à indexer les messages protégés par IRM.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, le paramètre <em>SearchEnabled</em> est défini sur <code>$true</code>. Pour désactiver l’indexation des messages protégés par IRM, définissez-le sur <code>$false</code>. La désactivation de l’indexation des messages protégés par IRM les empêche d’apparaître dans les résultats de recherche lorsque les utilisateurs effectuent une recherche dans leur boîte aux lettres ou lorsque les gestionnaires de découverte utilisent la fonction de découverte électronique locale.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, le paramètre <em>SearchEnabled</em> est défini sur <code>$true</code>. Pour désactiver l’indexation des messages protégés par IRM, définissez-le sur <code>$false</code>. La désactivation de l’indexation des messages protégés par IRM les empêche d’apparaître dans les résultats de recherche lorsque les utilisateurs effectuent une recherche dans leur boîte aux lettres ou lorsque les gestionnaires de découverte utilisent la fonction de découverte électronique locale.
 
 
     Set-IRMConfiguration -SearchEnabled $true
@@ -93,18 +63,8 @@ Pour des informations détaillées sur la syntaxe et les paramètres, voir [Set-
 
 Dans cet exemple, nous activons des membres du groupe de rôles Gestion de la découverte pour accéder aux messages protégés par IRM qui se trouvent dans la boîte aux lettres de découverte.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, le paramètre <em>EDiscoverySuperUserEnabled</em> est défini sur <code>$true</code>. Pour désactiver l’accès aux messages protégés par IRM pour les membres du groupe de rôles Gestion de la découverte, définissez-le sur <code>$false</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, le paramètre <em>EDiscoverySuperUserEnabled</em> est défini sur <code>$true</code>. Pour désactiver l’accès aux messages protégés par IRM pour les membres du groupe de rôles Gestion de la découverte, définissez-le sur <code>$false</code>.
 
 
     Set-IRMConfiguration -EDiscoverySuperUserEnabled $true

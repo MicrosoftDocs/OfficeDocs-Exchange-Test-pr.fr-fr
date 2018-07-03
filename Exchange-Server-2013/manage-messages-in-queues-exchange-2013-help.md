@@ -27,18 +27,8 @@ Dans Microsoft Exchange Server 2013, vous pouvez utiliser l'Afficheur des files
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -59,18 +49,8 @@ Un message envoyé à plusieurs destinataires pourrait se trouver dans plusieurs
 
 5.  Pour supprimer tous les messages d'une file d'attente en particulier, cliquez sur l'onglet **Files d'attente**. Sélectionnez une file d'attente, cliquez dessus avec le bouton droit, puis sélectionnez **Supprimer les messages (avec rapport de non-remise)** ou **Supprimer les messages (sans envoyer de rapport de non-remise)**. Une boîte de dialogue confirmant l'action sélectionnée et demandant **Voulez-vous continuer ?** s'affiche. Cliquez sur **Oui**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous travaillez avec une liste filtrée, la page affichée peut ne pas inclure tous les éléments du filtre. Dans ce cas, une invite apparaît et indique : <strong>Cette action affectera tous les éléments de cette page. Pour étendre la portée de cette action afin d'inclure tous les éléments dans ce filtre, cochez la case suivante avant de cliquer sur OK.</strong></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous travaillez avec une liste filtrée, la page affichée peut ne pas inclure tous les éléments du filtre. Dans ce cas, une invite apparaît et indique : <strong>Cette action affectera tous les éléments de cette page. Pour étendre la portée de cette action afin d'inclure tous les éléments dans ce filtre, cochez la case suivante avant de cliquer sur OK.</strong>
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour supprimer des messages

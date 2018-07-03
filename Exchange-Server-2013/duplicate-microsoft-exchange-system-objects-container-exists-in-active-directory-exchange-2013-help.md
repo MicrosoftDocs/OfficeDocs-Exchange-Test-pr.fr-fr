@@ -35,18 +35,8 @@ Pour résoudre ce problème, procédez comme suit :
 
 7.  Confirmez la suppression en cliquant sur **Oui** dans la boîte de dialogue Active Directory.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous souhaitez que la modification soit immédiatement répliquée, vous devez démarrer manuellement la réplication entre les contrôleurs de domaine.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous souhaitez que la modification soit immédiatement répliquée, vous devez démarrer manuellement la réplication entre les contrôleurs de domaine.
 
 
 Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), et [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).

@@ -35,18 +35,8 @@ La connexion au service d'audit administrateur dans Microsoft Exchange Server 2
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -89,18 +79,8 @@ Vous pouvez indiquer les paramètres que vous souhaitez auditer en utilisant le 
 
   - `*Region`
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour la création d'une entrée de journal d'audit lors de l'exécution d'une commande, cette dernière doit inclure au moins un ou plusieurs paramètres qui existent sur au moins une ou plusieurs cmdlets spécifiées avec le paramètre <em>AdminAuditLogCmdlets</em>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour la création d'une entrée de journal d'audit lors de l'exécution d'une commande, cette dernière doit inclure au moins un ou plusieurs paramètres qui existent sur au moins une ou plusieurs cmdlets spécifiées avec le paramètre <em>AdminAuditLogCmdlets</em>.
 
 
 Cet exemple audite les paramètres spécifiés dans la liste précédente.

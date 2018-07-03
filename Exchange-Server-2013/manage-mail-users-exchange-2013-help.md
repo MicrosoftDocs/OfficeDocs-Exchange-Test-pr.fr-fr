@@ -29,18 +29,8 @@ Les utilisateurs de messagerie sont semblables aux contacts de messagerie. Tous 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -57,18 +47,8 @@ Les utilisateurs de messagerie sont semblables aux contacts de messagerie. Tous 
     
       - Pour indiquer une adresse de messagerie SMTP comme adresse de messagerie externe de l’utilisateur de messagerie, cliquez sur **SMTP**.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Exchange vérifie que le format des adresses SMTP est correct. Si votre entrée n'est pas cohérente avec le format SMTP, un message d'erreur s'affiche lorsque vous cliquez sur <strong>Enregistrer</strong> pour créer l'utilisateur de messagerie.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Exchange vérifie que le format des adresses SMTP est correct. Si votre entrée n'est pas cohérente avec le format SMTP, un message d'erreur s'affiche lorsque vous cliquez sur <strong>Enregistrer</strong> pour créer l'utilisateur de messagerie.
     
       - Pour indiquer un type d'adresse personnalisé, cliquez sur la case d'option et saisissez le type d'adresse personnalisé. Par exemple, vous pouvez indiquer une adresse X.500, GroupWise ou Lotus Notes.
 
@@ -96,65 +76,25 @@ Les utilisateurs de messagerie sont semblables aux contacts de messagerie. Tous 
     
       - \* **Nom**   Ce champ permet de saisir un nom pour l'utilisateur de messagerie. Il s'agit du nom répertorié dans le service d'annuaire. Ce champ est également renseigné avec les noms que vous avez entrés dans les champs **Prénom**, **Initiales** et **Nom de famille**. Si vous n'avez pas utilisé ces champs, vous devez tout de même saisir un nom car ce champ est obligatoire. Ce nom ne peut pas comporter plus de 64 caractères.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>La zone <strong>Nom</strong> est disponible uniquement dans Exchange Server 2013. Elle ne l'est pas dans Exchange Online.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > La zone <strong>Nom</strong> est disponible uniquement dans Exchange Server 2013. Elle ne l'est pas dans Exchange Online.
     
       - **Unité d'organisation**   Vous pouvez sélectionner une unité d'organisation (UO) autre que celle définie par défaut (qui est la portée du destinataire). Si la portée du destinataire est définie dans la forêt, la valeur par défaut est définie sur le conteneur Utilisateurs du domaine qui contient l'ordinateur sur lequel le CAE est en cours d'exécution. Si la portée du destinataire est définie sur un domaine spécifique, le conteneur Users de ce domaine est sélectionné par défaut. Si la portée du destinataire est définie sur une unité d'organisation (UO) spécifique, cette UO est sélectionnée par défaut.
         
         Pour sélectionner une autre UO, cliquez sur **Parcourir**. La boîte de dialogue affiche toutes les unités d'organisation de la forêt qui se trouvent dans la portée indiquée. Sélectionnez l'UO souhaitée, puis cliquez sur **OK**.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>La zone <strong>Unité d'organisation</strong> est disponible uniquement dans Exchange Server 2013. Elle ne l'est pas dans Exchange Online.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > La zone <strong>Unité d'organisation</strong> est disponible uniquement dans Exchange Server 2013. Elle ne l'est pas dans Exchange Online.
     
       - \* **Nom d'ouverture de session de l'utilisateur**   Ce champ permet d'entrer le nom que l'utilisateur de messagerie utilisera pour ouvrir une session sur le domaine. Le nom d'ouverture de session de l'utilisateur est constitué du nom d'utilisateur à gauche du symbole (@) et d'un suffixe à droite. Généralement, le suffixe est le nom du domaine dans lequel le compte d'utilisateur réside.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Dans Exchange Online, cette zone est appelée <strong>Identifiant utilisateur</strong>.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Dans Exchange Online, cette zone est appelée <strong>Identifiant utilisateur</strong>.
     
       - \* **Nouveau mot de passe**   Ce champ permet de saisir le mot de passe que l'utilisateur de messagerie doit utiliser pour ouvrir une session sur le domaine.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Assurez-vous que le mot de passe entré est conforme aux exigences de longueur, de complexité et d’historique du domaine dans lequel vous créez le compte d’utilisateur.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Assurez-vous que le mot de passe entré est conforme aux exigences de longueur, de complexité et d’historique du domaine dans lequel vous créez le compte d’utilisateur.
     
       - \* **Confirmer le mot de passe**   Ce champ permet de confirmer le mot de passe que vous avez saisi dans le champ **Mot de passe**.
     
@@ -246,36 +186,16 @@ Dans la section **Général**, vous pouvez afficher ou modifier des informations
 
   - **Exiger la modification du mot de passe à la prochaine ouverture de session**   Cochez cette case si vous souhaitez que l'utilisateur réinitialise son mot de passe lors de sa prochaine ouverture de session dans le domaine.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Ce champ n'est pas disponible dans Exchange Online.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Ce champ n'est pas disponible dans Exchange Online.
 
 
 Cliquez sur **Plus d'options** pour afficher ou modifier les propriétés supplémentaires suivantes :
 
   - **Unité d'organisation**   Ce champ en lecture seule affiche l'unité d'organisation (UO) qui contient le compte d'utilisateur de messagerie. Vous devez utiliser des Utilisateurs et ordinateurs Active Directory pour déplacer le compte vers un autre UO.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Ce champ n'est pas disponible dans Exchange Online.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Ce champ n'est pas disponible dans Exchange Online.
 
 
   - **Attributs personnalisés**   Cette section affiche les attributs personnalisés définis pour l'utilisateur de messagerie. Pour spécifier des valeurs d'attribut personnalisées, cliquez sur **Modifier**![Icône Modifier](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Icône Modifier"). Vous pouvez spécifier jusqu'à 15 attributs personnalisés pour le destinataire.
@@ -284,18 +204,8 @@ Cliquez sur **Plus d'options** pour afficher ou modifier les propriétés suppl�
 
 Utilisez la section **Coordonnées** pour afficher ou modifier les coordonnées de l'utilisateur. L'information sur cette page s'affiche dans le carnet d'adresses. Cliquez sur **Plus d'options** pour afficher des boîtes de dialogue supplémentaires.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le champ <strong>État/Province</strong> permet de créer des conditions de destinataire pour des groupes de distribution dynamiques, des stratégies d'adresse de messagerie ou des listes d'adresses.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Le champ <strong>État/Province</strong> permet de créer des conditions de destinataire pour des groupes de distribution dynamiques, des stratégies d'adresse de messagerie ou des listes d'adresses.
 
 
 ## Organisation
@@ -322,36 +232,16 @@ La section **Adresses de messagerie** permet d'afficher ou de modifier les adres
     
       - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone \* **Adresse de messagerie** l'un des types d'adresse de messagerie électronique non SMTP pris en charge.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>À l'exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l'adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d'adresse.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > À l'exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l'adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d'adresse.
 
 
   - **Définir comme adresse de messagerie externe**   Ce champ permet de modifier l’adresse externe de l’utilisateur de messagerie. Les messages électroniques envoyés à ce contact sont transférés à cette adresse de messagerie.
 
   - **Mettre à jour auto. les adresses selon la stratégie de destinataire**   Cochez cette case pour que les adresses de messagerie du destinataire soient automatiquement mises à jour en fonction des modifications apportées aux stratégies d'adresse de messagerie dans votre organisation. Cette case à cocher est activée par défaut.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Cette option n'est pas disponible dans Exchange Online.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Cette option n'est pas disponible dans Exchange Online.
 
 
 ## Paramètres du flux de messagerie
@@ -388,18 +278,8 @@ La section **Membre de** permet d'afficher une liste des groupes de distribution
 
 Dans la section **Info-courrier**, vous pouvez ajouter une info-courrier pour alerter les utilisateurs d'éventuels problèmes avant qu'ils n'envoient un message à ce destinataire. Une info-courrier est un texte qui s’affiche dans la barre d’informations lorsque ce destinataire est ajouté aux champs À, Cc ou Cci d’un nouveau message électronique.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour modifier les propriétés de l'utilisateur de messagerie
@@ -468,18 +348,8 @@ Quand vous modifiez en bloc des utilisateurs de messagerie, vous pouvez modifier
 
 2.  Dans la liste de contacts, sélectionnez au moins deux utilisateurs de messagerie. Vous ne pouvez pas modifier en bloc une combinaison de contacts de messagerie et d’utilisateurs de messagerie.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous pouvez sélectionner plusieurs utilisateurs de messagerie adjacents en maintenant la touche Maj enfoncée tout en cliquant sur le premier puis le dernier utilisateur de messagerie à modifier. Vous pouvez aussi sélectionner plusieurs utilisateurs de messagerie en maintenant enfoncée la touche Ctrl tout en cliquant sur chaque utilisateur à modifier.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > Vous pouvez sélectionner plusieurs utilisateurs de messagerie adjacents en maintenant la touche Maj enfoncée tout en cliquant sur le premier puis le dernier utilisateur de messagerie à modifier. Vous pouvez aussi sélectionner plusieurs utilisateurs de messagerie en maintenant enfoncée la touche Ctrl tout en cliquant sur chaque utilisateur à modifier.
 
 
 3.  Dans le volet Détails, sous **Modification en bloc**, cliquez sur **Mettre à jour** sous **Informations de contact** ou **Organisation**.
@@ -500,18 +370,8 @@ Pour vérifier que vous avez bien modifié en bloc des utilisateurs de messageri
 
 Cette section fournit des informations sur la gestion des utilisateurs de messagerie électronique à l’aide de la synchronisation d’annuaires dans Exchange Online. La synchronisation d’annuaires est disponible pour les clients hybrides disposant de boîtes aux lettres locales et hébergées dans le cloud, ainsi que pour les clients Exchange Online entièrement hébergés avec un annuaire Active Directory local.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous utilisez la synchronisation d’annuaires pour gérer vos destinataires, vous pouvez toujours ajouter et gérer les utilisateurs dans le Centre d’administration Office 365, mais ils ne seront pas synchronisés avec votre annuaire Active Directory sur site. En effet, la synchronisation d’annuaires ne synchronise que les destinataires de votre annuaire Active Directory sur site vers le nuage.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous utilisez la synchronisation d’annuaires pour gérer vos destinataires, vous pouvez toujours ajouter et gérer les utilisateurs dans le Centre d’administration Office 365, mais ils ne seront pas synchronisés avec votre annuaire Active Directory sur site. En effet, la synchronisation d’annuaires ne synchronise que les destinataires de votre annuaire Active Directory sur site vers le nuage.
 
 
 <table>

@@ -77,19 +77,9 @@ Puisque les messages DSN peuvent être affichés en HTML, vous pouvez intégrer 
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, Exchange envoie des messages DSN HTML mais vous pouvez le configurer pour qu'il envoie des messages DSN HTML à des destinataires internes, externes ou les deux. Pour configurer ce comportement, modifiez les paramètres <em>InternalDsnSendHtml</em> et <em>ExternalDsnSendHtml</em> à l'aide de la commande <strong>Set-TransportService</strong>.<br />
-Lorsque le paramètre <em>InternalDsnSendHtml</em> est défini sur <code>$false</code>, Exchange supprime les balises HTML des messages DSN qui sont envoyés à des destinataires internes. Lorsque le paramètre <em>ExternalDsnSendHtml</em> est défini sur <code>$false</code>, Exchange supprime les balises HTML des messages DSN qui sont envoyés à des destinataires externes.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, Exchange envoie des messages DSN HTML mais vous pouvez le configurer pour qu'il envoie des messages DSN HTML à des destinataires internes, externes ou les deux. Pour configurer ce comportement, modifiez les paramètres <em>InternalDsnSendHtml</em> et <em>ExternalDsnSendHtml</em> à l'aide de la commande <strong>Set-TransportService</strong>.
+> Lorsque le paramètre <em>InternalDsnSendHtml</em> est défini sur <code>$false</code>, Exchange supprime les balises HTML des messages DSN qui sont envoyés à des destinataires internes. Lorsque le paramètre <em>ExternalDsnSendHtml</em> est défini sur <code>$false</code>, Exchange supprime les balises HTML des messages DSN qui sont envoyés à des destinataires externes.
 
 
 Les caractères suivants que Microsoft Exchange utilise dans le texte du message DSN ont des significations particulières :

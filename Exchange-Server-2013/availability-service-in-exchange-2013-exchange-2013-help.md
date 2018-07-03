@@ -67,18 +67,8 @@ L'utilisation de la fonctionnalité d'équilibrage de charge réseau sur les ser
 
 L'URL interne est utilisée à partir de l'intranet et l'URL externe est utilisée sur Internet. Si vous voulez utiliser la même URL pour le trafic interne et externe, assurez-vous que le DNS est configuré de la manière adéquate pour router le trafic interne directement vers l'URL interne. Assurez-vous également que l'URL est accessible de manière interne et externe. Pour que les services de découverte automatique et de disponibilité fonctionnent, le DNS doit être configuré pour que mail.\<*nom de domaine*\>.com et autodiscover.mail.\<*nom de domaine*\>.com pointent vers l'IP virtuelle (VIP) de votre solution d'équilibrage de charge, où \<*nom de domaine*\> correspond au nom de votre domaine.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour plus d'informations, consultez les rubriques <a href="https://go.microsoft.com/fwlink/?linkid=45959">Références techniques sur l'équilibrage de la charge réseau</a> et <a href="https://go.microsoft.com/fwlink/?linkid=49315">Clusters d'équilibrage de la charge réseau</a>. Vous pouvez également rechercher des sites web de logiciels d'équilibrage de charge tiers.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour plus d'informations, consultez les rubriques <a href="https://go.microsoft.com/fwlink/?linkid=45959">Références techniques sur l'équilibrage de la charge réseau</a> et <a href="https://go.microsoft.com/fwlink/?linkid=49315">Clusters d'équilibrage de la charge réseau</a>. Vous pouvez également rechercher des sites web de logiciels d'équilibrage de charge tiers.
 
 
 ## Méthodes employées pour extraire les informations de disponibilité

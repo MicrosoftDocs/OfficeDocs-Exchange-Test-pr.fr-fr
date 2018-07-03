@@ -17,18 +17,8 @@ _**Sapplique à :** Exchange Server 2013_
 
 _**Dernière rubrique modifiée :** 2016-12-09_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le 1er novembre 2016, Microsoft a cessé de produire des mises à jour des définitions de courrier indésirable pour les filtres SmartScreen dans Exchange et Outlook. Les définitions de courrier indésirable SmartScreen existantes restent en place, mais leur efficacité se dégradera probablement au cours du temps. Pour plus d’informations, voir l’article relatif à l’<a href="https://go.microsoft.com/fwlink/p/?linkid=835894">arrêt de la prise en charge de SmartScreen dans Outlook et Exchange</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le 1er novembre 2016, Microsoft a cessé de produire des mises à jour des définitions de courrier indésirable pour les filtres SmartScreen dans Exchange et Outlook. Les définitions de courrier indésirable SmartScreen existantes restent en place, mais leur efficacité se dégradera probablement au cours du temps. Pour plus d’informations, voir l’article relatif à l’<a href="https://go.microsoft.com/fwlink/p/?linkid=835894">arrêt de la prise en charge de SmartScreen dans Outlook et Exchange</a>.
 
 
 L’agent de filtrage de contenu évalue les messages électroniques entrants et évalue la probabilité qu’un message entrant est légitime ou du spam. Contrairement à nombreuses autres technologies de filtrage, l’agent de filtrage de contenu utilise les caractéristiques d’un échantillon statistiquement significatif de messages électroniques. L’inclusion de messages valables dans cet échantillon réduit le risque d’erreurs. Étant donné que l’agent de filtrage de contenu reconnaît les caractéristiques des messages légitimes, spam, sa précision est augmentée. Mises à jour de l’agent de filtrage de contenu sont disponibles régulièrement par le biais de [Microsoft Update](https://go.microsoft.com/fwlink/p/?linkid=54836).
@@ -57,18 +47,8 @@ Par exemple, vous pouvez déterminer que les messages dont la valeur de contrôl
 
 Vous pouvez ajuster le comportement de seuil de probabilité de courrier indésirable en attribuant différentes valeurs de contrôle d'accès SCL à chacune de ces actions. Pour plus d'informations sur l'ajustement du seuil de probabilité de courrier indésirable en fonction des besoins de votre organisation et la définition de seuils SCL pour chaque destinataire, consultez la rubrique [Niveau de confiance du courrier indésirable](spam-confidence-level-threshold-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les messages dont la taille excède 11 Mo ne sont pas analysés par le filtre de messages intelligent. Le filtre du contenu laisse passer les messages sans les analyser.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les messages dont la taille excède 11 Mo ne sont pas analysés par le filtre de messages intelligent. Le filtre du contenu laisse passer les messages sans les analyser.
 
 
 ## Phrases d’autorisation et d’interdiction

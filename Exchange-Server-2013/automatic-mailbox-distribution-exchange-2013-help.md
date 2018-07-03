@@ -23,18 +23,8 @@ Avec la distribution automatique de boîtes aux lettres, Exchange examine les ba
 
 La distribution automatique est utilisée quand vous ne spécifiez pas le paramètre *Database* sur les cmdlets **New-Mailbox** et **Enable-Mailbox** ou le paramètre *TargetDatabase* sur la cmdlet **New-MoveRequest**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La distribution automatique de boîtes aux lettres s’effectue seulement quand une boîte aux lettres est créée sur un serveur Exchange 2013, déplacée sur un serveur Exchange 2013 ou lorsqu’un utilisateur est activé pour la messagerie. Les cmdlets <strong>New-Mailbox</strong>, <strong>New-MoveRequest</strong> et <strong>Enable-Mailbox</strong> doivent être exécutées à partir d’un serveur qui exécute Exchange 2013. Exchange ne redistribue pas les boîtes aux lettres afin de distribuer automatiquement la charge sur les bases de données en fonction de la charge du serveur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La distribution automatique de boîtes aux lettres s’effectue seulement quand une boîte aux lettres est créée sur un serveur Exchange 2013, déplacée sur un serveur Exchange 2013 ou lorsqu’un utilisateur est activé pour la messagerie. Les cmdlets <strong>New-Mailbox</strong>, <strong>New-MoveRequest</strong> et <strong>Enable-Mailbox</strong> doivent être exécutées à partir d’un serveur qui exécute Exchange 2013. Exchange ne redistribue pas les boîtes aux lettres afin de distribuer automatiquement la charge sur les bases de données en fonction de la charge du serveur.
 
 
 Le processus suivant sert à trouver une base de données de boîtes aux lettres appropriée où doit se trouver une nouvelle boîte aux lettres ou une boîte aux lettres déplacée :
@@ -57,18 +47,8 @@ Si vous souhaitez ne jamais distribuer les boîtes aux lettres automatiquement, 
 
 Par défaut, toutes les boîtes aux lettres en ligne et saines sur les serveurs Exchange 2013 dans le site Active Directory local peuvent être choisies par la distribution automatique de boîtes aux lettres pour stocker une nouvelle boîte aux lettres ou une boîte aux lettres déplacée. Toutefois, vous pouvez exclure certaines bases de données du processus de distribution pour diverses raisons. Vous pouvez, par exemple, désigner une base de données de boîtes aux lettres comme base de données de journalisation dans laquelle doivent se trouver uniquement les boîtes aux lettres que vous spécifiez manuellement. Vous pouvez aussi décider de supprimer temporairement une boîte aux lettres de la rotation pour effectuer une maintenance planifiée. Exchange 2013 vous offre la possibilité d’exclure temporairement ou définitivement les bases de données du processus d’exclusion avec le paramètre *IsExcludedFromProvisioning*, qui peut être défini à l’aide de la cmdlet **Set-MailboxDatabase**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Deux autres paramètres, <em>IsSuspendedFromProvisioning</em> et <em>IsExcludedFromInitialProvisioning</em>, sont également disponibles sur la cmdlet <strong>Set-MailboxDatabase</strong>. Ces paramètres seront supprimés dans une version ultérieure d’Exchange et leur utilisation n’est pas prise en charge.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Deux autres paramètres, <em>IsSuspendedFromProvisioning</em> et <em>IsExcludedFromInitialProvisioning</em>, sont également disponibles sur la cmdlet <strong>Set-MailboxDatabase</strong>. Ces paramètres seront supprimés dans une version ultérieure d’Exchange et leur utilisation n’est pas prise en charge.
 
 
 Le paramètre *IsExcludedFromProvisioning* a deux valeurs valides, `$True` et `$False`. Lorsque vous définissez cette propriété sur `$True`, la base de données de boîtes aux lettres est exclue du processus de distribution automatique. Lorsque vous la définissez sur `$False`, la base de données de boîtes aux lettres est incluse dans le processus de distribution automatique. La valeur par défaut est `$False`.

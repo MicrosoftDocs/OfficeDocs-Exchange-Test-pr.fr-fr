@@ -182,18 +182,8 @@ Pour plus d'informations sur l'installation d'Exchange 2013, consultez la rubri
 
   - **Le protocole MAPI sur HTTP peut rencontrer des problèmes de performances lors de la mise à niveau vers Exchange 2013 SP1**   Si vous effectuez une mise à niveau à partir d’une mise à jour cumulative Exchange 2013 vers Exchange 2013 SP1 et que vous activez MAPI sur HTTP, les clients qui se connectent à un serveur Exchange 2013 SP1 à l’aide de ce protocole peuvent rencontrer des problèmes de performances. En effet, les paramètres requis ne sont pas configurés lors d’une mise à niveau à partir d’une mise à jour cumulative vers Exchange 2013 SP1. Ce problème ne se produit pas si vous effectuez une mise à niveau vers Exchange 2013 SP1 depuis Exchange 2013 RTM ou si vous installez un nouveau serveur Exchange 2013 SP1 ou versions ultérieures.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Ce problème n’est observé que si le protocole MAPI sur HTTP est activé sur vos serveurs d’accès au client. Il est désactivé par défaut. Si le protocole MAPI sur HTTP est désactivé, les clients utilisent le protocole RPC sur HTTP à la place.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Ce problème n’est observé que si le protocole MAPI sur HTTP est activé sur vos serveurs d’accès au client. Il est désactivé par défaut. Si le protocole MAPI sur HTTP est désactivé, les clients utilisent le protocole RPC sur HTTP à la place.
     
     Pour contourner ce problème, procédez comme suit :
     

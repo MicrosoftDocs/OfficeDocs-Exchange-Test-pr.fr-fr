@@ -79,18 +79,8 @@ Le tableau suivant présente la liste des applications clientes que l’on peut 
 <tr class="odd">
 <td><p>Outlook 2013, Outlook 2010, Outlook 2007 et Outlook Web App</p></td>
 <td><p>Oui. Les utilisateurs de Outlook 2013, Outlook 2010, Outlook 2007 et Outlook Web App peuvent copier et déplacer des éléments de leur boîte aux lettres principale vers leur boîte aux lettres d’archivage. Ils peuvent également utiliser des stratégies de rétention pour déplacer des éléments vers l’archive.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les utilisateurs de Outlook 2007, de Outlook 2010 et des versions ultérieures peuvent également copier ou déplacer des éléments depuis des fichiers .pst vers leur boîte aux lettres d’archivage. Les utilisateurs de Outlook 2007 doivent installer la mise à jour cumulative de Microsoft Office 2007 de février 2011. Certaines différences de support d'archive existent entre la version 2007 de Outlook et les versions 2010 et ultérieures de Outlook. Pour plus d'informations, consultez l'article du Blog de l’équipe Exchange, <a href="https://blogs.technet.com/b/exchange/archive/2010/12/20/3411710.aspx">Oui Virginie, les archives Exchange 2010 sont prises en charge dans Outlook 2007</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les utilisateurs de Outlook 2007, de Outlook 2010 et des versions ultérieures peuvent également copier ou déplacer des éléments depuis des fichiers .pst vers leur boîte aux lettres d’archivage. Les utilisateurs de Outlook 2007 doivent installer la mise à jour cumulative de Microsoft Office 2007 de février 2011. Certaines différences de support d'archive existent entre la version 2007 de Outlook et les versions 2010 et ultérieures de Outlook. Pour plus d'informations, consultez l'article du Blog de l’équipe Exchange, <a href="https://blogs.technet.com/b/exchange/archive/2010/12/20/3411710.aspx">Oui Virginie, les archives Exchange 2010 sont prises en charge dans Outlook 2007</a>.
 
 </td>
 </tr>
@@ -102,18 +92,8 @@ Le tableau suivant présente la liste des applications clientes que l’on peut 
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L’archivage local constituent une fonctionnalité étendue et requiert une licence d’accès client (CAL) Exchange Enterprise. Pour plus d’informations sur les licences Exchange, voir la rubrique <a href="https://go.microsoft.com/fwlink/?linkid=237292">Exchange Server Licensing</a>. Pour plus d’informations sur les versions d’Outlook requises pour accéder à une boîte aux lettres d’archivage, consultez la rubrique <a href="https://go.microsoft.com/fwlink/?linkid=237276">Conditions requises pour les licences relatives aux stratégies d’archivage et de rétention personnelles</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L’archivage local constituent une fonctionnalité étendue et requiert une licence d’accès client (CAL) Exchange Enterprise. Pour plus d’informations sur les licences Exchange, voir la rubrique <a href="https://go.microsoft.com/fwlink/?linkid=237292">Exchange Server Licensing</a>. Pour plus d’informations sur les versions d’Outlook requises pour accéder à une boîte aux lettres d’archivage, consultez la rubrique <a href="https://go.microsoft.com/fwlink/?linkid=237276">Conditions requises pour les licences relatives aux stratégies d’archivage et de rétention personnelles</a>.
 
 
 Outlook ne crée pas de copie locale de la boîte aux lettres d’archivage sur l’ordinateur d’un utilisateur, même si la configuration permet l’utilisation du Mode Exchange mis en cache. Les utilisateurs peuvent accéder à une boîte aux lettres d’archivage en mode en ligne uniquement.
@@ -140,18 +120,8 @@ Différentes méthodes permettent de déplacer des messages vers des boîtes aux
 
   - **Déplacer des messages à l’aide des stratégies de rétention**   Vous pouvez utiliser les stratégies de rétention pour déplacer automatiquement des messages vers l’archive. Les utilisateurs peuvent également appliquer une balise personnelle pour déplacer des messages vers l’archive. Pour en savoir plus sur les stratégies d’archivage et de rétention, voir la section Stratégies d’archivage et de rétention plus bas dans cette rubrique.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les balises personnelles ne sont accessibles que sous Outlook Web App et sous Outlook 2010 et les versions ultérieures.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les balises personnelles ne sont accessibles que sous Outlook Web App et sous Outlook 2010 et les versions ultérieures.
 
 
   - **Importer des messages à partir de fichiers .pst**   Dans Exchange 2013, vous pouvez effectuer une demande d’importation de boîte aux lettres pour importer des messages d’un fichier .pst vers la boîte aux lettres d’archivage ou la boîte aux lettres principale d’un utilisateur. Pour plus d’informations, consultez la rubrique [Demandes d’exportation et d’importation de boîtes aux lettres](mailbox-import-and-export-requests-exchange-2013-help.md). Vous pouvez aussi utiliser l'outil PST Capture pour rechercher des fichiers .pst sur des ordinateurs de votre organisation et importer des données de fichiers .pst dans des archives d'utilisateurs.
@@ -168,18 +138,8 @@ Pour en savoir plus sur les stratégies de rétention, les balises de rétention
 
 Le programme d’installation d’Exchange 2013 crée une stratégie d’archivage et de rétention par défaut intitulée **Stratégie MRM par défaut**. Cette stratégie comprend des balises de rétention qui spécifient l’action **Déplacer vers l’archive**, comme indiqué dans le tableau suivant.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange 2010, la stratégie d’archivage et de rétention par défaut créée par le programme d'installation d'Exchange s'appelle la <strong>Stratégie d’archivage et de rétention par défaut</strong> (Default Archive and Retention Policy).</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange 2010, la stratégie d’archivage et de rétention par défaut créée par le programme d'installation d'Exchange s'appelle la <strong>Stratégie d’archivage et de rétention par défaut</strong> (Default Archive and Retention Policy).
 
 
 
@@ -238,18 +198,8 @@ Avant de configurer les boîtes aux lettres d’archivage pour vos utilisateurs,
 
   - La méthode permettant d’appliquer des balises personnelles (affichées dans le menu Stratégie d'archivage de Outlook et de Outlook Web App).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous appliquez une stratégie de rétention aux utilisateurs disposant d’une boîte aux lettres d’archivage, elle remplace la stratégie de gestion des enregistrements de messagerie par défaut. Vous pouvez créer une ou plusieurs balises de rétention avec l’action <strong>Déplacer vers l’archive</strong>, puis lier les balises à la stratégie de rétention. Vous pouvez également ajouter les balises par défaut <strong>Déplacer vers l’archive</strong> (Move to Archive), créées par le programme d’installation et liées à la stratégie de gestion des enregistrements de messagerie par défaut, à n’importe quelle stratégie de rétention créée.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous appliquez une stratégie de rétention aux utilisateurs disposant d’une boîte aux lettres d’archivage, elle remplace la stratégie de gestion des enregistrements de messagerie par défaut. Vous pouvez créer une ou plusieurs balises de rétention avec l’action <strong>Déplacer vers l’archive</strong>, puis lier les balises à la stratégie de rétention. Vous pouvez également ajouter les balises par défaut <strong>Déplacer vers l’archive</strong> (Move to Archive), créées par le programme d’installation et liées à la stratégie de gestion des enregistrements de messagerie par défaut, à n’importe quelle stratégie de rétention créée.
 
 
 Pour obtenir des informations sur la conformité et l’archivage dans Outlook 2010 et dans les versions ultérieures, voir la rubrique [Planifier la conformité et l’archivage dans Outlook 2010](https://go.microsoft.com/fwlink/?linkid=210902).

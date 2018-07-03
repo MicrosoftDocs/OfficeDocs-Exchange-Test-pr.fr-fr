@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2017-02-03_
 
 Vous pouvez installer ou supprimer des compléments pour Outlook pour votre organisation à l’aide du Centre d’administration Exchange (CAE) ou de l’environnement de ligne de commande Exchange Management Shell.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, après avoir installé un complément pour votre organisation, le complément devient disponible pour tous les utilisateurs de votre organisation. Après la phase d’installation, vous pouvez utiliser le CAE ou l’environnement de ligne de commande Exchange Management Shell afin de rendre le complément facultatif ou obligatoire pour les utilisateurs et pour indiquer si le complément doit être activé ou désactivé. Pour plus d’informations sur la modification des paramètres par défaut d’un complément, consultez la rubrique <a href="manage-user-access-to-add-ins-for-outlook-exchange-online-help.md">Gestion de l’accès des utilisateurs aux applications pour Outlook</a>. Pour limiter la mise à disposition de compléments à des utilisateurs spécifiques de votre organisation, vous devez utiliser l’environnement de ligne de commande Exchange Management Shell. Pour plus d’informations, consultez la rubrique <a href="manage-user-access-to-add-ins-for-outlook-exchange-online-help.md">Gestion de l’accès des utilisateurs aux applications pour Outlook</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, après avoir installé un complément pour votre organisation, le complément devient disponible pour tous les utilisateurs de votre organisation. Après la phase d’installation, vous pouvez utiliser le CAE ou l’environnement de ligne de commande Exchange Management Shell afin de rendre le complément facultatif ou obligatoire pour les utilisateurs et pour indiquer si le complément doit être activé ou désactivé. Pour plus d’informations sur la modification des paramètres par défaut d’un complément, consultez la rubrique <a href="manage-user-access-to-add-ins-for-outlook-exchange-online-help.md">Gestion de l’accès des utilisateurs aux applications pour Outlook</a>. Pour limiter la mise à disposition de compléments à des utilisateurs spécifiques de votre organisation, vous devez utiliser l’environnement de ligne de commande Exchange Management Shell. Pour plus d’informations, consultez la rubrique <a href="manage-user-access-to-add-ins-for-outlook-exchange-online-help.md">Gestion de l’accès des utilisateurs aux applications pour Outlook</a>.
 
 
 Pour des tâches de gestion supplémentaires, consultez la rubrique [Applications pour Outlook](add-ins-for-outlook-exchange-2013-help.md).
@@ -47,18 +37,8 @@ Pour des tâches de gestion supplémentaires, consultez la rubrique [Application
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -73,18 +53,8 @@ Pour des tâches de gestion supplémentaires, consultez la rubrique [Application
     
       - **Ajouter à partir d’Office Store**. Sur Office Store, sélectionnez l’application à installer, puis cliquez sur **Ajouter**. Les applications qui fonctionnent avec Outlook Web App sont répertoriées sous **Compléments pour Office et SharePoint** \> **Outlook**.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>L’accès à Office Store n’est pas pris en charge pour les boîtes aux lettres ou les organisations de certains pays. Si l’option <strong>Ajouter à partir d’Office Store</strong> n’apparaît pas dans le <strong>Centre d’administration Exchange</strong> sous <strong>Organisation</strong> &gt; <strong>Compléments</strong> &gt; <img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="Icône Ajouter" alt="Icône Ajouter" />, vous pourrez peut-être installer un complément pour Outlook depuis un emplacement de fichier ou une URL. Pour plus d’informations, contactez votre fournisseur de services.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > L’accès à Office Store n’est pas pris en charge pour les boîtes aux lettres ou les organisations de certains pays. Si l’option <strong>Ajouter à partir d’Office Store</strong> n’apparaît pas dans le <strong>Centre d’administration Exchange</strong> sous <strong>Organisation</strong> &gt; <strong>Compléments</strong> &gt; <img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="Icône Ajouter" alt="Icône Ajouter" />, vous pourrez peut-être installer un complément pour Outlook depuis un emplacement de fichier ou une URL. Pour plus d’informations, contactez votre fournisseur de services.
     
       - **Ajouter à partir d’une URL**. Dans **URL**, entrez l’URL complète du fichier manifeste du complément à installer.
     
@@ -102,18 +72,8 @@ Cet exemple illustre l’ajout d’un complément à partir d’un fichier.
 
     New-App -OrganizationApp -FileData <File location for add-in manifest file>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Quand vous utilisez l’environnement de ligne de commande Exchange Management Shell afin d’installer un complément pour votre organisation, vous pouvez installer le complément et configurer en même temps des paramètres pour ce dernier.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Quand vous utilisez l’environnement de ligne de commande Exchange Management Shell afin d’installer un complément pour votre organisation, vous pouvez installer le complément et configurer en même temps des paramètres pour ce dernier.
 
 
 Pour obtenir la syntaxe et les paramètres, consultez la rubrique [New-App](https://technet.microsoft.com/fr-fr/library/jj218722\(v=exchg.150\)).
@@ -130,18 +90,8 @@ Pour obtenir la syntaxe et les paramètres, consultez la rubrique [New-App](http
 
 Vous pouvez utiliser l’environnement de ligne de commande Exchange Management Shell pour supprimer un complément au sein de votre organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exécutez la commande suivante pour rechercher les noms complets et les ID de complément pour tous les compléments pour Outlook installés au sein de votre organisation.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Exécutez la commande suivante pour rechercher les noms complets et les ID de complément pour tous les compléments pour Outlook installés au sein de votre organisation.
 
 
     Get-App -OrganizationApp |FL DisplayName,AppID

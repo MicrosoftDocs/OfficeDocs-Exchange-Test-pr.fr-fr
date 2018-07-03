@@ -21,18 +21,8 @@ _**Dernière rubrique modifiée :** 2018-04-02_
 
 L’application Outlook pour iOS et Android est conçue pour rassembler le courrier électronique, calendrier, contacts et autres fichiers, qui permet aux utilisateurs de votre organisation de faire plus à partir de leurs appareils mobiles. Cet article fournit une vue d’ensemble de l’architecture et la conception du stockage de l’application, afin que les administrateurs Exchange puissent déployer et mettre à jour d’Outlook pour iOS et Android dans leur organisation Exchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les utilisateurs peuvent utiliser le <a href="https://support.office.com/fr-fr/article/outlook-for-ios-and-android-help-center-cd84214e-a5ac-4e95-9ea3-e07f78d0cde6">Centre d’aide sur Outlook pour iOS et Android</a>, ainsi que l’aide destinée à l’utilisation de l’application sur certains appareils et les informations relatives à la résolution des problèmes.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les utilisateurs peuvent utiliser le <a href="https://support.office.com/fr-fr/article/outlook-for-ios-and-android-help-center-cd84214e-a5ac-4e95-9ea3-e07f78d0cde6">Centre d’aide sur Outlook pour iOS et Android</a>, ainsi que l’aide destinée à l’utilisation de l’application sur certains appareils et les informations relatives à la résolution des problèmes.
 
 
 ## Architecture d’Outlook pour iOS et Android

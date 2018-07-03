@@ -27,18 +27,8 @@ Vous pouvez définir les options de l’Afficheur des files d’attente pour aju
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser la Boîte à outils Exchange pour définir les options de l’Afficheur des files d’attente
@@ -51,18 +41,8 @@ Vous pouvez définir les options de l’Afficheur des files d’attente pour aju
     
     1.  Dans le champ **Intervalle d’actualisation (secondes)**, entrez la fréquence à laquelle l’Afficheur des files d’attente doit actualiser l’affichage.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>La fréquence d’actualisation automatique par défaut est de 30 secondes et il n’est pas possible de la raccourcir. Si vous désactivez la fréquence d’actualisation automatique en désactivant la case à cocher <strong>Actualiser automatiquement l’écran</strong> dans la page <strong>Options de l’Afficheur des files d’attente</strong>, vous devez mettre à jour manuellement les résultats présentés dans l’Afficheur des files d’attente en cliquant sur <strong>Actualiser</strong>.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > La fréquence d’actualisation automatique par défaut est de 30 secondes et il n’est pas possible de la raccourcir. Si vous désactivez la fréquence d’actualisation automatique en désactivant la case à cocher <strong>Actualiser automatiquement l’écran</strong> dans la page <strong>Options de l’Afficheur des files d’attente</strong>, vous devez mettre à jour manuellement les résultats présentés dans l’Afficheur des files d’attente en cliquant sur <strong>Actualiser</strong>.
     
     2.  Dans le champ **Nombre d’éléments à afficher sur chaque page**, entrez le nombre maximal d’éléments à afficher dans l’Afficheur des files d’attente. Ce nombre doit être compris entre 1 et 10 000. Si le nombre d’éléments est supérieur à la limite, ceux-ci s’affichent en groupes de nombre d’éléments maximum. Par exemple, la figure suivante montre une file d’attente comportant 14 messages alors que l’Afficheur des files d’attente est configuré pour afficher 10 éléments par page. Le nombre d’objets sur la page apparaît en haut à droite. Au bas de la page, le nombre total d’éléments présents dans la file d’attente est indiqué. Vous pouvez alors utiliser les boutons de navigation pour voir les éléments supplémentaires de la file d’attente.
 

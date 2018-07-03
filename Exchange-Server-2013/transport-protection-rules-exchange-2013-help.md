@@ -27,18 +27,8 @@ Pour les tâches de gestion liées à la gestion de l’IRM, voir [Procédures d
 
 Transport protection règles vous permettent d’utiliser des règles de transport pour IRM protéger les messages en appliquant un modèle de stratégie de droits [de services AD RMS (Active Directory Rights Management Services)](https://go.microsoft.com/fwlink/p/?linkid=129823) (AD RMS).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>AD RMS est une technologie de protection des données qui fonctionne avec des clients et des applications activés pour RMS (Rights Management Service) afin de protéger les informations sensibles en ligne et hors connexion. Pour utiliser la protection IRM dans un déploiement Exchange sur site, Exchange 2013 requiert un déploiement local d'AD RMS s'exécutant sur Windows Server 2008 ou version ultérieure.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> AD RMS est une technologie de protection des données qui fonctionne avec des clients et des applications activés pour RMS (Rights Management Service) afin de protéger les informations sensibles en ligne et hors connexion. Pour utiliser la protection IRM dans un déploiement Exchange sur site, Exchange 2013 requiert un déploiement local d'AD RMS s'exécutant sur Windows Server 2008 ou version ultérieure.
 
 
 AD RMS utilise les modèles de stratégie XML pour permettre aux applications activées pour IRM d’appliquer des stratégies de protection cohérentes. Dans Windows Server 2008 et les versions ultérieures, le serveur AD RMS comprend un service Web utilisable pour énumérer et obtenir des modèles. Exchange 2013 est fourni avec le modèle Ne pas transférer.

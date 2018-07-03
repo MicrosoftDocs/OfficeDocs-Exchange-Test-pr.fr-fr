@@ -113,18 +113,8 @@ Le tableau suivant indique les numéros de version pour Outlook.
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avant d’effectuer toute modification, notez que les correctifs et les versions de Service Packs peuvent avoir un impact sur la chaîne de version du client. Soyez vigilant lorsque vous limitez l’accès client car les composants Exchange côté serveur doivent également utiliser l’interface MAPI pour ouvrir une session. Certains composants signalent leur version du client sous le nom du composant (tel que SMTP ou OLE DB) tandis que d’autres indiquent le numéro de build d’Exchange (par exemple, 6.0.4712.0). Par conséquent, évitez de limiter les clients dont les numéros de version commencent par 6.&lt;<em>x</em>.<em>x</em>.&gt;. Par exemple, pour empêcher totalement l’accès MAPI, spécifiez deux plages au lieu de <strong>0.0.0-6.5535.65535.65535</strong> pour que les composants de serveur puissent ouvrir une session. Spécifiez par exemple : <strong>0.0.0-5.9.9; 7.0.0-</strong>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Avant d’effectuer toute modification, notez que les correctifs et les versions de Service Packs peuvent avoir un impact sur la chaîne de version du client. Soyez vigilant lorsque vous limitez l’accès client car les composants Exchange côté serveur doivent également utiliser l’interface MAPI pour ouvrir une session. Certains composants signalent leur version du client sous le nom du composant (tel que SMTP ou OLE DB) tandis que d’autres indiquent le numéro de build d’Exchange (par exemple, 6.0.4712.0). Par conséquent, évitez de limiter les clients dont les numéros de version commencent par 6.&lt;<em>x</em>.<em>x</em>.&gt;. Par exemple, pour empêcher totalement l’accès MAPI, spécifiez deux plages au lieu de <strong>0.0.0-6.5535.65535.65535</strong> pour que les composants de serveur puissent ouvrir une session. Spécifiez par exemple : <strong>0.0.0-5.9.9; 7.0.0-</strong>.
 
 
 En outre, avant d’exécuter ces procédures, sachez que lorsque les utilisateurs se voient refuser l’accès à leur boîte aux lettres, ils reçoivent le message d’avertissement suivant :

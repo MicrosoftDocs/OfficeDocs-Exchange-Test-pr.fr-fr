@@ -73,18 +73,8 @@ Retour au début
 
 Dans une organisation Exchange 2013, tout le trafic de messagerie est acheminé par des serveurs de boîtes aux lettres. Pendant leur durée de vie, tous les messages parcourent au moins un serveur exécutant le service de transport. L'*agent de journalisation* est un agent de transport axé sur la conformité qui traite les messages sur les serveurs de boîtes aux lettres. Il se déclenche à partir des événements de transport **OnSubmittedMessage** et **OnRoutedMessage**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange 2013, l'agent de journalisation est un agent intégré. Les agents intégrés ne figurent pas dans la liste des agents renvoyés par la cmdlet <strong>Get-TransportAgent</strong>. Pour plus d'informations, consultez la rubrique <a href="transport-agents-exchange-2013-help.md">Agents de transport</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange 2013, l'agent de journalisation est un agent intégré. Les agents intégrés ne figurent pas dans la liste des agents renvoyés par la cmdlet <strong>Get-TransportAgent</strong>. Pour plus d'informations, consultez la rubrique <a href="transport-agents-exchange-2013-help.md">Agents de transport</a>.
 
 
 Exchange 2013 fournit les options de journalisation suivantes :
@@ -127,18 +117,8 @@ Tous les messages échangés avec des destinataires de journalisation spécifié
 
 De nombreuses organisations qui mettent en œuvre la journalisation peuvent aussi utiliser la messagerie unifiée pour consolider leur infrastructure de courrier électronique, de messagerie vocale et de télécopie. Cependant, vous pouvez ne pas vouloir que le traitement de la journalisation génère des états de journal pour les messages générés par la messagerie unifiée. Dans ces cas, vous pouvez décider de journaliser les messages vocaux et les messages de notification d’appel en absence qui sont traités par un serveur Exchange exécutant le service de messagerie unifiée ou bien d’ignorer ces messages. Si votre organisation n'exige pas la journalisation de tels messages, vous pouvez réduire la quantité d'espace disque requise pour stocker les états de journal en ignorant ces messages.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les messages contenant des télécopies qui sont générées par le service de messagerie unifiée sont toujours journalisés, même si vous désactivez la journalisation des messages vocaux de messagerie unifiée et les messages de notification d'appel en absence.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les messages contenant des télécopies qui sont générées par le service de messagerie unifiée sont toujours journalisés, même si vous désactivez la journalisation des messages vocaux de messagerie unifiée et les messages de notification d'appel en absence.
 
 
 Pour plus d’informations sur l’activation ou la désactivation des messages vocaux et de notification d’appel en absence, consultez la rubrique [Désactiver ou activer la journalisation des notifications d’appel en absence et de la messagerie vocale](disable-or-enable-journaling-of-voice-mail-and-missed-call-notifications-exchange-2013-help.md).

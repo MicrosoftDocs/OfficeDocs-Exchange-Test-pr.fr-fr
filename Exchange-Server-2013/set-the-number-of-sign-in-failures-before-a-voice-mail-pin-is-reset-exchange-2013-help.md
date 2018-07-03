@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez configurer le nombre d'échecs de connexion autorisés avant la réinitialisation du code confidentiel pour un utilisateur d'Outlook Voice Access sur une valeur comprise entre 1 et 998. La valeur par défaut est 5. Le nombre d'échecs de connexion autorisés avant la réinitialisation d'un code confidentiel est configuré pour une stratégie de boîte aux lettres de messagerie unifiée et s'applique à tous les utilisateurs d'Outlook Voice Access associés à cette stratégie.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez optimiser la sécurité en configurant le paramètre <strong>Nombre d'échecs de connexion avant réinitialisation du code confidentiel</strong> sur un nombre inférieur à 5. La sécurité est diminuée si le nombre est supérieur à 5.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez optimiser la sécurité en configurant le paramètre <strong>Nombre d'échecs de connexion avant réinitialisation du code confidentiel</strong> sur un nombre inférieur à 5. La sécurité est diminuée si le nombre est supérieur à 5.
 
 
 Pour les tâches supplémentaires concernant la sécurité du code confidentiel Outlook Voice Access, consultez la rubrique [Procédures de sécurité de code confidentiel](pin-security-procedures-exchange-2013-help.md).
@@ -47,18 +37,8 @@ Pour les tâches supplémentaires concernant la sécurité du code confidentiel 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

@@ -29,18 +29,8 @@ Il existe trois niveaux d’accès que vous pouvez indiquer :
 
   - Accès à la disponibilité, y compris aux horaires, objets et emplacements
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si les utilisateurs ne veulent pas partager leurs informations de disponibilité avec d’autres utilisateurs, ils peuvent modifier l’entrée d’autorisation par défaut dans Outlook. Pour ce faire, les utilisateurs doivent accéder aux <strong>Propriétés du calendrier</strong> &gt; onglet <strong>Autorisations</strong>, sélectionner l’autorisation <strong>Par défaut</strong>, puis choisir <strong>Aucun</strong> dans la liste <strong>Niveau d’autorisation</strong>. Leurs informations de disponibilité ne seront pas visibles par les utilisateurs internes ou externes, même si une relation organisationnelle existe. Les autorisations définies par l’utilisateur s’appliqueront.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si les utilisateurs ne veulent pas partager leurs informations de disponibilité avec d’autres utilisateurs, ils peuvent modifier l’entrée d’autorisation par défaut dans Outlook. Pour ce faire, les utilisateurs doivent accéder aux <strong>Propriétés du calendrier</strong> &gt; onglet <strong>Autorisations</strong>, sélectionner l’autorisation <strong>Par défaut</strong>, puis choisir <strong>Aucun</strong> dans la liste <strong>Niveau d’autorisation</strong>. Leurs informations de disponibilité ne seront pas visibles par les utilisateurs internes ou externes, même si une relation organisationnelle existe. Les autorisations définies par l’utilisateur s’appliqueront.
 
 
 Les rubriques suivantes vous permettront de configurer et de gérer les relations organisationnelles dans le cadre du partage pour votre organisation :

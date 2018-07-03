@@ -85,18 +85,8 @@ Si vous devez recréer cette boîte aux lettres d’arbitrage, reportez-vous aux
 
 Utilisez les instructions suivantes pour recréer un certain type de boîte aux lettres d’arbitrage.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Toutes les étapes décrites dans les sections suivantes doivent être exécutées à partir du même répertoire où vous avez extrait le support d’installation Exchange.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Toutes les étapes décrites dans les sections suivantes doivent être exécutées à partir du même répertoire où vous avez extrait le support d’installation Exchange.
 
 
 ## Recréation de la boîte aux lettres Fédération Microsoft Exchange
@@ -175,16 +165,6 @@ Pour vérifier que vous avez bien recréé la boîte aux lettres d’arbitrage, 
 
 Affichez les résultats de la commande pour vérifier que la boîte aux lettres système appropriée a été recréée soit par nom, soit par nom d’affichage dans le tableau ci-dessus.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

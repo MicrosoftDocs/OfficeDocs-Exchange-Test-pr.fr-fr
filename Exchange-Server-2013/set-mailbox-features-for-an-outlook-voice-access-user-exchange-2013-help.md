@@ -45,18 +45,8 @@ Pour connaître les tâches de gestion supplémentaires relatives aux utilisateu
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour modifier les paramètres de l'interface utilisateur de téléphonie d'un utilisateur unique à extension messagerie unifiée
@@ -65,16 +55,6 @@ Cet exemple active l'accès à la messagerie électronique et au calendrier à l
 
     Set-UMMailbox -Identity tony@contoso.com TUIAccessToCal True -TUIAccessToEmail True -OperatorNumber 111111 -DisableMissedCallNotification False -AnonCallBlock True
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les paramètres de l'interface utilisateur de téléphonie des utilisateurs sont également accessibles dans les stratégies de boîte aux lettres de messagerie unifiée. La modification des paramètres de l'interface utilisateur de téléphonie (TUI) dans une stratégie de boîte aux lettres de messagerie unifiée affecte tous les utilisateurs qui sont associés à cette stratégie. Pour plus d'informations sur la modification des paramètres de l'interface utilisateur de téléphonie dans une stratégie de boîte aux lettres de messagerie unifiée, consultez la rubrique <a href="set-mailbox-features-for-outlook-voice-access-users-exchange-2013-help.md">Définitions des fonctionnalités de boîte aux lettres pour des utilisateurs d’Outlook Voice Access</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les paramètres de l'interface utilisateur de téléphonie des utilisateurs sont également accessibles dans les stratégies de boîte aux lettres de messagerie unifiée. La modification des paramètres de l'interface utilisateur de téléphonie (TUI) dans une stratégie de boîte aux lettres de messagerie unifiée affecte tous les utilisateurs qui sont associés à cette stratégie. Pour plus d'informations sur la modification des paramètres de l'interface utilisateur de téléphonie dans une stratégie de boîte aux lettres de messagerie unifiée, consultez la rubrique <a href="set-mailbox-features-for-outlook-voice-access-users-exchange-2013-help.md">Définitions des fonctionnalités de boîte aux lettres pour des utilisateurs d’Outlook Voice Access</a>.
 

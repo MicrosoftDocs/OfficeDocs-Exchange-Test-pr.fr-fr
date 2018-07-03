@@ -21,18 +21,8 @@ Vous pouvez obliger les utilisateurs qui reçoivent des messages vocaux protég�
 
 Pour consulter leurs messages vocaux, les utilisateurs à extension messagerie unifiée peuvent utiliser la fonctionnalité Émettre au téléphone ou un logiciel multimédia sur un ordinateur ou un appareil mobile. La reproduction multimédia permet aux utilisateurs à extension messagerie unifiée d'écouter leurs messages vocaux à l'aide d'un lecteur multimédia via les haut-parleurs de l'ordinateur ou sur un appareil mobile.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La messagerie vocale protégée est disponible uniquement pour les clients qui utilisent une version d'Outlook prenant en charge la gestion des droits. Au cas où le logiciel client ne prend pas en charge la gestion des droits, les utilisateurs doivent utiliser Outlook Voice Access pour écouter leurs messages.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La messagerie vocale protégée est disponible uniquement pour les clients qui utilisent une version d'Outlook prenant en charge la gestion des droits. Au cas où le logiciel client ne prend pas en charge la gestion des droits, les utilisateurs doivent utiliser Outlook Voice Access pour écouter leurs messages.
 
 
 Par défaut, la valeur de la propriété **RequireProtectedPlayOnPhone** d'une stratégie de boîte aux lettres de messagerie unifiée est définie sur False. En d'autres termes, les utilisateurs à extension messagerie unifiée associés à cette stratégie de boîte aux lettres de messagerie unifiée peuvent écouter leurs messages vocaux protégés des manières suivantes :
@@ -67,18 +57,8 @@ Pour les autres tâches de gestion relatives aux procédures de la messagerie vo
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

@@ -41,18 +41,8 @@ Pour effectuer la procédure suivante dans Exchange 2013, vérifiez ce qui suit
 
 1.  Depuis un contrôleur de domaine de la forêt Exchange, créez une approbation sortante unidirectionnelle afin que la forêt Exchange approuve la forêt de comptes. Pour obtenir la procédure détaillée, consultez la page [Partenaires Microsoft](https://go.microsoft.com/fwlink/p/?linkid=69130).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Bien qu’il soit recommandé de créer une approbation de forêt, vous pouvez également créer une approbation externe. Si vous créez une approbation externe, lorsque vous créez des boîtes aux lettres liées à l’étape 3, dans la page <strong>Compte principal</strong> de l’Assistant Nouvelle boîte aux lettres, vous devez spécifier un compte d’utilisateur pouvant accéder au contrôleur de domaine dans la forêt approuvée. Vous ne pouvez pas utiliser les informations d’identification avec lesquelles vous êtes actuellement connecté. Si vous créez des boîtes aux lettres liées à l’aide de la cmdlet <strong>New-Mailbox</strong>, vous devez spécifier un compte d’utilisateur pouvant accéder au contrôleur de domaine dans la forêt approuvée à l’aide du paramètre <em>LinkedCredential</em>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Bien qu’il soit recommandé de créer une approbation de forêt, vous pouvez également créer une approbation externe. Si vous créez une approbation externe, lorsque vous créez des boîtes aux lettres liées à l’étape 3, dans la page <strong>Compte principal</strong> de l’Assistant Nouvelle boîte aux lettres, vous devez spécifier un compte d’utilisateur pouvant accéder au contrôleur de domaine dans la forêt approuvée. Vous ne pouvez pas utiliser les informations d’identification avec lesquelles vous êtes actuellement connecté. Si vous créez des boîtes aux lettres liées à l’aide de la cmdlet <strong>New-Mailbox</strong>, vous devez spécifier un compte d’utilisateur pouvant accéder au contrôleur de domaine dans la forêt approuvée à l’aide du paramètre <em>LinkedCredential</em>.
 
 
 2.  Dans la forêt Exchange, installez Exchange 2013. Installez Exchange comme vous le feriez dans le cadre d’un scénario de forêt unique. Pour obtenir la procédure détaillée d’installation d’Exchange 2013, consultez l’une des rubriques suivantes :
