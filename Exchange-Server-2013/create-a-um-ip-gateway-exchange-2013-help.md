@@ -11,7 +11,7 @@ f1_keywords:
 ms.translationtype: HT
 ---
 
-# Créer une passerelle IP de messagerie unifiée
+# Créer une passerelle IP de messagerie unifiée: Exchange 2013 Help
 
  
 
@@ -51,9 +51,7 @@ Pour les autres tâches de gestion relatives aux passerelles IP de messagerie un
 
 ## Utilisation du Centre d'administration Exchange pour créer une passerelle IP de messagerie unifiée
 
-1.  
-    
-    Dans le CAE, accédez à **Messagerie unifiée** \> **Passerelles IP de messagerie unifiée**, puis cliquez sur **Nouveau**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter").
+1.  Dans le CAE, accédez à **Messagerie unifiée** \> **Passerelles IP de messagerie unifiée**, puis cliquez sur **Nouveau**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter").
 
 2.  Dans la page **Nouvelle passerelle IP de messagerie unifiée**, entrez les informations suivantes :
     
@@ -67,9 +65,7 @@ Pour les autres tâches de gestion relatives aux passerelles IP de messagerie un
     
       - **Plan de numérotation de messagerie unifiée**   Cliquez sur le bouton **Parcourir** pour sélectionner le plan de numérotation de messagerie unifiée que vous voulez associer à la passerelle IP de messagerie unifiée. Lorsque vous sélectionnez un plan de numérotation de messagerie unifiée à associer à une passerelle IP de messagerie unifiée, un groupement de postes de messagerie unifiée est également créé par défaut et associé au plan de numérotation de messagerie unifiée que vous avez sélectionné. Si vous ne sélectionnez pas de plan de numérotation de messagerie unifiée, vous devez créer manuellement un groupement de postes de messagerie unifiée, puis l'associer à la passerelle IP de messagerie unifiée que vous avez créée.
 
-3.  
-    
-    Cliquez sur **Enregistrer**.
+3.  Cliquez sur **Enregistrer**.
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour créer une passerelle IP de messagerie unifiée
 

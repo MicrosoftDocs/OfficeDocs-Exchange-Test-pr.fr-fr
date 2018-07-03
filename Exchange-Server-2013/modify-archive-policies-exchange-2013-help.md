@@ -87,9 +87,7 @@ Pour découvrir d’autres tâches de gestion associées aux archives, consultez
     </table>
 
 
-3.  
-    
-    Dans **Balise de rétention**, affichez ou modifiez les paramètres suivants, puis cliquez sur **Enregistrer** :
+3.  Dans **Balise de rétention**, affichez ou modifiez les paramètres suivants, puis cliquez sur **Enregistrer** :
     
       - **Nom**   Ce champ situé en haut de la page permet d’afficher ou de modifier le nom de la balise.
     

@@ -82,9 +82,7 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
 
 2.  Cliquez sur ![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour créer un groupe de disponibilité de base de données.
 
-3.  
-    
-    Sur la page **Nouveau groupe de disponibilité de base de données**, entrez les informations suivantes pour le groupe de disponibilité de base de données :
+3.  Sur la page **Nouveau groupe de disponibilité de base de données**, entrez les informations suivantes pour le groupe de disponibilité de base de données :
     
       - **Nom du groupe de disponibilité de la base de données**   Entrez un nom valide et unique de 15 caractères maximum pour le groupe de disponibilité de base de données. Ce nom est l’équivalent d’un nom d’ordinateur ; un objet réseau de cluster (CNO) correspondant sera créé dans Active Directory avec ce nom. Ce nom est le même pour le groupe de disponibilité de base de données et le cluster sous-jacent.
     

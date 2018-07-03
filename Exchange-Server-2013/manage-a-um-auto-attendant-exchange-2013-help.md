@@ -57,9 +57,7 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
 
 2.  Dans la page **Plan de numérotation de messagerie unifiée**, sous **Standards automatiques de messagerie unifiée**, sélectionnez le standard automatique de messagerie unifiée à afficher ou configurer, puis cliquez sur **Modifier**![Icône Modifier](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Icône Modifier") dans la barre d'outils.
 
-3.  
-    
-    Dans la page **Standard automatique de messagerie unifiée**, cliquez sur **Général** pour consulter des informations en affichage seul sur le standard automatique de messagerie unifiée et réaliser des tâches de gestion sur celui-ci, comme suit :
+3.  Dans la page **Standard automatique de messagerie unifiée**, cliquez sur **Général** pour consulter des informations en affichage seul sur le standard automatique de messagerie unifiée et réaliser des tâches de gestion sur celui-ci, comme suit :
     
       - **Plan de numérotation de messagerie unifiée**   Cette zone montre le plan de numérotation de messagerie unifiée associé au standard automatique. Après la création d'un standard automatique, le plan de numérotation associé au standard automatique ne peut pas être modifié. Si vous devez associer un standard automatique à un plan de numérotation différent, vous devez supprimer le plan de numérotation, puis associer le standard automatique au plan de numérotation qui convient après sa recréation.
     
@@ -67,7 +65,7 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
     
       - **État**   Cette case indique si le standard automatique de messagerie unifiée est activé ou désactivé. Pour activer ou désactiver le standard automatique, fermez la page **Standard automatique de messagerie unifiée** et utilisez la barre d'outils sous **Standards automatiques de messagerie unifiée** dans la page **Plan de numérotation de messagerie unifiée**.
     
-      - **Numéros d'accès   **Cette zone permet d'entrer un numéro de poste ou un numéro d'accès qui conduit les appelants sur le standard automatique. Par défaut, aucun numéro de poste ou d'accès n'est configuré lors de la création d'un standard automatique.
+      - **Numéros d'accès**   Cette zone permet d'entrer un numéro de poste ou un numéro d'accès qui conduit les appelants sur le standard automatique. Par défaut, aucun numéro de poste ou d'accès n'est configuré lors de la création d'un standard automatique.
         
         Le nombre de chiffres des numéros d'accès ou des numéros de postes indiqués doit respecter le nombre de chiffres configuré pour un numéro de poste configurer sur le plan de numérotation de messagerie unifiée associé au standard automatique de messagerie unifiée. Dans cette case, vous pouvez également ajouter une adresse SIP (Session Initiation Protocol). Une adresse SIP est utilisée par certains PBX IP et PBX compatibles SIP, ainsi que par Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server.
         
@@ -89,13 +87,11 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
         
         Même si vous pouvez sélectionner une autre langue que celle définie dans le plan de numérotation de messagerie unifiée associé au standard automatique, nous vous recommandons d'utiliser les mêmes paramètres de langue pour le plan de numérotation et le standard automatique. Si les paramètres de langue diffèrent, lorsque des appelants composent un numéro de poste défini dans le plan de numérotation, ils voient des invites dans une langue différente de celle des invites affichées quand ils composent un numéro de poste associé à un standard automatique.
     
-      - **Nom de l'entreprise   **Cette case sert à entrer le nom de l'entreprise. Aucun nom d'entreprise n'est entré par défaut. Si vous entrez un nom d'entreprise dans cette case, une invite portant le nom de l'entreprise sera lue aux appelants à la place du message d'accueil par défaut.
+      - **Nom de l'entreprise**   Cette case sert à entrer le nom de l'entreprise. Aucun nom d'entreprise n'est entré par défaut. Si vous entrez un nom d'entreprise dans cette case, une invite portant le nom de l'entreprise sera lue aux appelants à la place du message d'accueil par défaut.
     
-      - **Emplacement de l'entreprise   **Cette case sert à entrer l'emplacement de l'entreprise. Aucune adresse d'entreprise n'est entrée par défaut. En entrant l'emplacement de l'entreprise dans cette case, l'emplacement de l'entreprise sera lu aux appelants.
+      - **Emplacement de l'entreprise**   Cette case sert à entrer l'emplacement de l'entreprise. Aucune adresse d'entreprise n'est entrée par défaut. En entrant l'emplacement de l'entreprise dans cette case, l'emplacement de l'entreprise sera lu aux appelants.
 
-4.  
-    
-    Utiliser des **messages d'accueil** sur le standard automatique pour gérer des messages d'accueil enregistrés. Vous pouvez sélectionner des messages d'accueil par défaut ou des messages d'accueil personnalisés enregistrés au préalable pendant et en dehors des heures d'ouverture. Vous pouvez configurer ce qui suit :
+4.  Utiliser des **messages d'accueil** sur le standard automatique pour gérer des messages d'accueil enregistrés. Vous pouvez sélectionner des messages d'accueil par défaut ou des messages d'accueil personnalisés enregistrés au préalable pendant et en dehors des heures d'ouverture. Vous pouvez configurer ce qui suit :
     
       - **Message d'accueil des heures d'ouverture**    Il s'agit du message d'accueil initial qui est émis lorsqu'un appelant appelle le standard automatique pendant les heures de bureau de votre organisation. Par défaut, les heures de bureau sont de 12:00 à 12:00 et aucune dehors des heures sont définies. Si vous ne spécifiez pas un fichier personnalisé salutation, une invite système indiquant, « Bienvenue pour le standard automatique de Exchange » est diffusé aux appelants. Les business et les heures creuses sont configurés dans le **heures d'ouverture** du standard automatique.
         
@@ -266,9 +262,7 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
         
         Il est utile d'activer cette option de façon à ce que, lorsqu'un appelant ne parvient pas à localiser une personne à l'aide des invites du menu ou de la recherche dans l'annuaire après les heures d'ouverture, il puisse laisser un message vocal ou être mis en relation avec un opérateur humain. Après avoir activé cette option, vous pouvez configurer le numéro de poste de l'opérateur configuré sur une boîte aux lettres à extension messagerie unifiée qui est analysée. L'appelant peut laisser un message vocal ou obtenir de l'aide d'un opérateur correspondant au numéro de poste.
 
-9.  
-    
-    Utilisez l'option **Autorisation de numérotation** pour configurer les règles de numérotation pour les appelants qui appellent un standard automatique de messagerie unifiée. Ces paramètres permettent de contrôler les numéros de poste accessibles à partir d'un standard automatique ou de contrôler les numéros de téléphone que peuvent composer les appelants qui ont contacté le standard automatique. Vous pouvez configurer ce qui suit :
+9.  Utilisez l'option **Autorisation de numérotation** pour configurer les règles de numérotation pour les appelants qui appellent un standard automatique de messagerie unifiée. Ces paramètres permettent de contrôler les numéros de poste accessibles à partir d'un standard automatique ou de contrôler les numéros de téléphone que peuvent composer les appelants qui ont contacté le standard automatique. Vous pouvez configurer ce qui suit :
     
       - **Appels dans le même plan de numérotation de messagerie unifiée**   Cochez cette case pour autoriser les utilisateurs qui appellent un standard automatique à effectuer ou à transférer des appels vers un numéro de poste associé à un utilisateur à extension messagerie unifiée qui est associé au même plan de numérotation que le standard automatique. Par défaut, ce paramètre est activé.
         

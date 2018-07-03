@@ -69,9 +69,7 @@ L’archivage inaltérable vous permet de reprendre le contrôle des données de
     </table>
 
 
-4.  
-    
-    Sélectionnez l’une des options suivantes :
+4.  Sélectionnez l’une des options suivantes :
     
       - **Utilisateur existant**   Cliquez sur ce bouton, puis sur **Parcourir** pour ouvrir la boîte de dialogue **Sélectionner un utilisateur – Forêt entière**. Cette boîte de dialogue contient une liste des comptes d’utilisateur Active Directory de la forêt qui ne sont pas à extension messagerie ou qui n’ont pas de boîte aux lettres Exchange. Sélectionnez le compte d’utilisateur pour lequel vous souhaitez activer la messagerie, puis cliquez sur **OK**. Si vous sélectionnez cette option, il n’est pas nécessaire de fournir les informations du compte d’utilisateur puisque ces dernières existent déjà dans Active Directory.
     
@@ -91,9 +89,7 @@ L’archivage inaltérable vous permet de reprendre le contrôle des données de
     </table>
 
 
-5.  
-    
-    Cliquez sur **Plus d’options** pour configurer les paramètres suivants.
+5.  Cliquez sur **Plus d’options** pour configurer les paramètres suivants.
     
       - **Base de données de boîtes aux lettres**   Cliquez sur **Parcourir** pour sélectionner une base de données de boîtes aux lettres dans laquelle stocker la boîte aux lettres. Si vous ne sélectionnez pas de base de données, Exchange en attribue une automatiquement.
     
@@ -105,9 +101,7 @@ L’archivage inaltérable vous permet de reprendre le contrôle des données de
     
       - **Stratégie de carnet d’adresses**   Sélectionnez dans cette liste une stratégie de carnet d’adresses pour la boîte aux lettres. Les stratégies de carnet d’adresses contiennent une liste d’adresses globale, un carnet d’adresses en mode hors connexion, une liste de salles et un ensemble de listes d’adresses. Lors de l’affectation aux utilisateurs de boîtes aux lettres, une stratégie de carnet d’adresses leur fournit l’accès à une liste d’adresses globale personnalisée dans Outlook et Outlook Web App. Pour en savoir plus, voir [Stratégies de carnet d’adresses](address-book-policies-exchange-2013-help.md).
 
-6.  
-    
-    Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer la boîte aux lettres.
+6.  Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer la boîte aux lettres.
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell
 

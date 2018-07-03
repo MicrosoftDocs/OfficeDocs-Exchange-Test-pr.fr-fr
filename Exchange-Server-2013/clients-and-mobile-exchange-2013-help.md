@@ -51,7 +51,7 @@ Le tableau suivant contient des liens vers des rubriques qui vous permettront de
 <td><p>Découvrez comment les utilisateurs peuvent accéder à leur messagerie électronique Exchange 2013 à l’aide de programmes de messagerie qui utilisent les protocoles POP3 ou IMAP4.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://technet.microsoft.com/fr-fr/library/jj150495(v=exchg.150)">Intégration d'Office Web Apps Server</a></p></td>
+<td><p>Intégration d'Office Web Apps Server</p></td>
 <td><p>Découvrez comment l’intégration de Microsoft Office Web Apps Server élargit la palette de fonctionnalités de prévisualisation de pièces jointes dans Outlook Web App.</p></td>
 </tr>
 <tr class="odd">

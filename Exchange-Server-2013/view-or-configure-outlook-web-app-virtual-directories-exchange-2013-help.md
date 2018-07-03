@@ -77,9 +77,7 @@ Si vous utilisez le CAE pour afficher les propriétés d’un répertoire virtue
 
 2.  Dans le volet Résultats, sélectionnez le répertoire virtuel que vous souhaitez afficher ou modifier, puis cliquez sur **Modifier**.
 
-3.  
-    
-    L'onglet **Général** vous permet d'afficher les propriétés du site web par défaut Outlook Web App et de spécifier une URL externe et une URL interne. Affichez ou sélectionnez les options suivantes :
+3.  L'onglet **Général** vous permet d'afficher les propriétés du site web par défaut Outlook Web App et de spécifier une URL externe et une URL interne. Affichez ou sélectionnez les options suivantes :
     
       - **Serveur**   (Lecture seule.) Le champ **Serveur** affiche le nom du serveur qui héberge le répertoire virtuel d'Outlook Web App.
     
@@ -95,9 +93,7 @@ Si vous utilisez le CAE pour afficher les propriétés d’un répertoire virtue
     
       - **URL externe**   Cette zone de texte permet de spécifier l'URL utilisée pour accéder à ce site web à partir d'Internet. Par défaut, le paramètre **URL externe** est vide. Pour les serveurs d'accès au client connectés à Internet, la propriété **URL externe** doit être définie sur la valeur publiée dans le DNS de ce site Active Directory. Pour les serveurs Exchange 2013 n'ayant pas de présence Internet, le paramètre **URL externe** doit rester vide.
 
-4.  
-    
-    L'onglet **Authentification** permet de spécifier les méthodes d'authentification, le format de connexion et le domaine de connexion.
+4.  L'onglet **Authentification** permet de spécifier les méthodes d'authentification, le format de connexion et le domaine de connexion.
     
       - **Utiliser une ou plusieurs méthodes d'authentification standard**   Activez cette option pour utiliser une ou plusieurs des méthodes d'authentification standard suivantes :
         
@@ -130,9 +126,7 @@ Si vous utilisez le CAE pour afficher les propriétés d’un répertoire virtue
         
         **Nom d'utilisateur uniquement** L'utilisateur n'entre que le nom d'utilisateur, sans le nom de domaine, par exemple, Kweku. Si vous utilisez l'invite de connexion **Nom d'utilisateur uniquement** pour une authentification basée sur des formulaires, vous devez également spécifier la propriété **Domaine de connexion**. La propriété **Domaine de connexion** détermine le domaine par défaut à utiliser lorsqu'un utilisateur tente de se connecter à Outlook Web App. Par exemple, si le domaine par défaut est Contoso et qu'un utilisateur de domaine nommé Kweku se connecte à Outlook Web App, seul le nom d'utilisateur Kweku doit être entré. Le serveur utilisera le domaine par défaut Contoso. Si l'utilisateur n'est pas membre du domaine Contoso, le nom d'utilisateur et le domaine doivent être entrés.
 
-5.  
-    
-    L'onglet **Fonctionnalités** permet de spécifier les fonctionnalités que vous souhaitez activer ou désactiver pour les utilisateurs d'Outlook Web App sur un répertoire virtuel.
+5.  L'onglet **Fonctionnalités** permet de spécifier les fonctionnalités que vous souhaitez activer ou désactiver pour les utilisateurs d'Outlook Web App sur un répertoire virtuel.
     
     <table>
     <thead>
@@ -163,9 +157,7 @@ Si vous utilisez le CAE pour afficher les propriétés d’un répertoire virtue
     </table>
 
 
-6.  
-    
-    Sous l'onglet **Accès au fichier**, utilisez les cases à cocher pour configurer l'accès au fichier et afficher les options offertes aux utilisateurs. L'accès aux fichiers permet aux utilisateurs d'ouvrir ou d'afficher le contenu de fichiers envoyés sous forme de pièces jointes dans un message électronique.
+6.  Sous l'onglet **Accès au fichier**, utilisez les cases à cocher pour configurer l'accès au fichier et afficher les options offertes aux utilisateurs. L'accès aux fichiers permet aux utilisateurs d'ouvrir ou d'afficher le contenu de fichiers envoyés sous forme de pièces jointes dans un message électronique.
     
     L'accès aux fichiers peut être contrôlé en fonction de la connexion de l'utilisateur sur un ordinateur public ou privé. La possibilité offerte aux utilisateurs de sélectionner un accès à un ordinateur privé ou public n’est proposée que si vous utilisez une authentification basée sur des formulaires. Toutes les autres authentifications se font par défaut par l'accès à un ordinateur privé.
     

@@ -71,9 +71,7 @@ Vous pouvez également créer des boîtes aux lettres utilisateur pour les utili
     </table>
 
 
-4.  
-    
-    Activez l'une des options suivantes :
+4.  Activez l'une des options suivantes :
     
       - **Utilisateur existant**   Activez cette option pour activer la messagerie et créer une boîte aux lettres pour un utilisateur existant.
         
@@ -95,9 +93,7 @@ Vous pouvez également créer des boîtes aux lettres utilisateur pour les utili
     </table>
 
 
-5.  
-    
-    Si vous avez sélectionné **Nouvel utilisateur** à l'étape 4, renseignez les zones suivantes de la page **Nouvelle boîte aux lettres utilisateur**. Sinon, passez à l'étape 7.
+5.  Si vous avez sélectionné **Nouvel utilisateur** à l'étape 4, renseignez les zones suivantes de la page **Nouvelle boîte aux lettres utilisateur**. Sinon, passez à l'étape 7.
     
       - **Prénom**   Cette zone de texte permet d'entrer le prénom de l'utilisateur.
     
@@ -105,15 +101,15 @@ Vous pouvez également créer des boîtes aux lettres utilisateur pour les utili
     
       - **Nom de famille**   Cette zone de texte permet d'entrer le nom de famille de l'utilisateur.
     
-      - **\* Nom complet**   Ce champ permet d'entrer un nom complet pour l'utilisateur. Il s'agit du nom répertorié dans la liste de boîtes aux lettres du CAE et dans le carnet d'adresses partagé. Par défaut, ce champ est renseigné avec les noms entrés dans les champs **Prénom**, **Initiales** et **Nom de famille**. Si vous n'avez pas utilisé ces champs, vous devez tout de même saisir un nom car ce champ est obligatoire. Le nom ne peut pas comporter plus de 64 caractères.
+      - \* **Nom complet**   Ce champ permet d'entrer un nom complet pour l'utilisateur. Il s'agit du nom répertorié dans la liste de boîtes aux lettres du CAE et dans le carnet d'adresses partagé. Par défaut, ce champ est renseigné avec les noms entrés dans les champs **Prénom**, **Initiales** et **Nom de famille**. Si vous n'avez pas utilisé ces champs, vous devez tout de même saisir un nom car ce champ est obligatoire. Le nom ne peut pas comporter plus de 64 caractères.
     
-      - **\* Nom**   Ce champ permet d'entrer un nom pour l'utilisateur. Il s'agit du nom qui s'affiche dans Active Directory. Ce champ est également renseigné avec les noms entrés dans les champs **Prénom**, **Initiales** et **Nom de famille**. Si vous n'avez pas utilisé ces champs, vous devez tout de même saisir un nom car ce champ est obligatoire. Ce nom ne peut pas comporter plus de 64 caractères.
+      - \* **Nom**   Ce champ permet d'entrer un nom pour l'utilisateur. Il s'agit du nom qui s'affiche dans Active Directory. Ce champ est également renseigné avec les noms entrés dans les champs **Prénom**, **Initiales** et **Nom de famille**. Si vous n'avez pas utilisé ces champs, vous devez tout de même saisir un nom car ce champ est obligatoire. Ce nom ne peut pas comporter plus de 64 caractères.
     
       - **Unité d'organisation**   Vous pouvez sélectionner une unité d'organisation autre que celle définie par défaut (qui est la portée du destinataire). Si la portée du destinataire est définie dans la forêt, la valeur par défaut est définie sur le conteneur Utilisateurs du domaine Active Directory qui contient l'ordinateur sur lequel le CAE est exécuté. Si la portée du destinataire est définie sur un domaine spécifique, le conteneur Utilisateurs de ce domaine est sélectionné par défaut. Si la portée du destinataire est définie sur une unité d'organisation spécifique, cette unité est sélectionnée par défaut.
         
         Pour sélectionner une autre unité d'organisation, cliquez sur **Parcourir**. La boîte de dialogue affiche toutes les unités d'organisation de la forêt qui se trouvent dans la portée indiquée. Sélectionnez l'unité d'organisation souhaitée, puis cliquez sur **OK**.
     
-      - **\* Nom de connexion utilisateur**    Utilisez cette zone pour saisir le nom dont l'utilisateur se servira pour accéder à la boîte aux lettres et se connecter au domaine. Le nom de connexion de l'utilisateur est constitué du nom d'utilisateur à gauche du symbole (@) et d'un suffixe à droite. Généralement, le suffixe est le nom du domaine dans lequel le compte d'utilisateur réside. Notez que vous ne pouvez pas utiliser d'apostrophe (') ni de guillemets (") dans le nom de connexion de l'utilisateur, car ces caractères ne sont pas pris en charge.
+      - \* **Nom de connexion utilisateur**    Utilisez cette zone pour saisir le nom dont l'utilisateur se servira pour accéder à la boîte aux lettres et se connecter au domaine. Le nom de connexion de l'utilisateur est constitué du nom d'utilisateur à gauche du symbole (@) et d'un suffixe à droite. Généralement, le suffixe est le nom du domaine dans lequel le compte d'utilisateur réside. Notez que vous ne pouvez pas utiliser d'apostrophe (') ni de guillemets (") dans le nom de connexion de l'utilisateur, car ces caractères ne sont pas pris en charge.
         
         <table>
         <thead>
@@ -128,7 +124,7 @@ Vous pouvez également créer des boîtes aux lettres utilisateur pour les utili
         </tbody>
         </table>
     
-      - **\* Nouveau mot de passe**   Ce champ permet d'entrer le mot de passe que l'utilisateur doit utiliser pour se connecter à sa boîte aux lettres.
+      - \* **Nouveau mot de passe**   Ce champ permet d'entrer le mot de passe que l'utilisateur doit utiliser pour se connecter à sa boîte aux lettres.
         
         <table>
         <thead>
@@ -143,15 +139,13 @@ Vous pouvez également créer des boîtes aux lettres utilisateur pour les utili
         </tbody>
         </table>
     
-      - **\* Confirmer le mot de passe**   Ce champ permet de confirmer le mot de passe entré dans le champ **Mot de passe**.
+      - \* **Confirmer le mot de passe**   Ce champ permet de confirmer le mot de passe entré dans le champ **Mot de passe**.
     
       - **Exiger le changement du mot de passe à la prochaine connexion**   Cochez cette case si vous voulez que l'utilisateur réinitialise le mot de passe lors de sa première connexion à la boîte aux lettres.
         
         Si vous cochez cette case, une boîte de dialogue s'ouvre lors de la première connexion et invite le nouvel utilisateur à changer son mot de passe. L'utilisateur ne peut effectuer aucune tâche tant que le mot de passe n'a pas été modifié.
 
-6.  
-    
-    Cliquez sur **Plus d'options** pour configurer les zones suivantes. Sinon, passez à l'étape 7 pour enregistrer la nouvelle boîte aux lettres utilisateur.
+6.  Cliquez sur **Plus d'options** pour configurer les zones suivantes. Sinon, passez à l'étape 7 pour enregistrer la nouvelle boîte aux lettres utilisateur.
     
       - **Spécifier la base de données de boîtes aux lettres**   Cette option permet de spécifier une base de données de boîtes aux lettres au lieu d'autoriser Exchange à en sélectionner une à votre place. Cliquez sur **Parcourir** pour ouvrir la boîte de dialogue **Sélectionner une base de données de boîtes aux lettres**. Cette boîte de dialogue répertorie toutes les bases de données de boîtes aux lettres au sein de votre organisation Exchange. Par défaut, les bases de données de boîtes aux lettres sont triées par nom. Vous pouvez également cliquer sur le titre de la colonne correspondante pour trier les bases de données par nom ou version de serveur. Sélectionnez la base de données de boîtes aux lettres à utiliser, puis cliquez sur **OK**.
     
@@ -165,9 +159,7 @@ Vous pouvez également créer des boîtes aux lettres utilisateur pour les utili
         
         Dans la liste déroulante, sélectionnez la stratégie à associer à cette boîte aux lettres.
 
-7.  
-    
-    Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer la boîte aux lettres.
+7.  Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer la boîte aux lettres.
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour créer une boîte aux lettres utilisateur
 

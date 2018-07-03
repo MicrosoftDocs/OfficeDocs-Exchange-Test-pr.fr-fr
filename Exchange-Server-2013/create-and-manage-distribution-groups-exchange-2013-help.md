@@ -51,9 +51,7 @@ Il est important de noter les différences de terminologie entre Active Director
 
 2.  Cliquez sur **Nouveau**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") \> **Groupe de distribution**.
 
-3.  
-    
-    <table>
+3.  <table>
     <thead>
     <tr class="header">
     <th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
@@ -70,19 +68,17 @@ Il est important de noter les différences de terminologie entre Active Director
     </table>
 
 
-4.  
+4.  Dans la page **Nouveau groupe de distribution**, complétez les champs suivants :
     
-    Dans la page **Nouveau groupe de distribution**, complétez les champs suivants :
+      - \* **Nom complet**   Saisissez le nom complet. Ce nom apparaîtra dans le carnet d’adresses de votre organisation, ainsi que dans les lignes À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes du Centre d’administration Exchange. Le nom d’affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s’agit. Ce nom doit aussi être unique dans la forêt.
     
-      - **\* Nom complet**   Saisissez le nom complet. Ce nom apparaîtra dans le carnet d’adresses de votre organisation, ainsi que dans les lignes À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes du Centre d’administration Exchange. Le nom d’affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s’agit. Ce nom doit aussi être unique dans la forêt.
-    
-      - **\* Alias**   Saisissez le nom de l’alias du groupe. L’alias ne peut pas comporter plus de 64 caractères et doit être unique dans la forêt. Lorsqu’un utilisateur saisit l’alias dans la ligne À : d’un message électronique, sa résolution génère le nom complet du groupe.
+      - \* **Alias**   Saisissez le nom de l’alias du groupe. L’alias ne peut pas comporter plus de 64 caractères et doit être unique dans la forêt. Lorsqu’un utilisateur saisit l’alias dans la ligne À : d’un message électronique, sa résolution génère le nom complet du groupe.
     
       - **Unité d’organisation**   (Cette option s’affiche uniquement dans Exchange 2013 local) Vous pouvez sélectionner une unité d’organisation (UO) autre que celle définie par défaut (qui est la portée du destinataire). Si la portée du destinataire est définie dans la forêt, la valeur par défaut est définie sur le conteneur Utilisateurs du domaine Active Directory qui contient l’ordinateur sur lequel le CAE est exécuté. Si la portée du destinataire est définie sur un domaine spécifique, le conteneur Users de ce domaine est sélectionné par défaut. Si la portée du destinataire est définie sur une unité d’organisation (UO) spécifique, cette UO est sélectionnée par défaut.
         
         Pour sélectionner une autre UO, cliquez sur **Parcourir**. La boîte de dialogue affiche toutes les unités d’organisation de la forêt qui se trouvent dans la portée indiquée. Sélectionnez l’UO souhaitée, puis cliquez sur **OK**.
     
-      - **\* Propriétaires**   Par défaut, la personne qui crée un groupe en est le propriétaire. Tous les groupes doivent avoir au moins un propriétaire. Vous pouvez ajouter des propriétaires en cliquant sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter").
+      - \* **Propriétaires**   Par défaut, la personne qui crée un groupe en est le propriétaire. Tous les groupes doivent avoir au moins un propriétaire. Vous pouvez ajouter des propriétaires en cliquant sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter").
     
       - **Membres**   Utilisez cette section pour ajouter des membres et pour spécifier si une approbation est nécessaire pour que des personnes rejoignent ou quittent le groupe.
         
@@ -100,9 +96,9 @@ Il est important de noter les différences de terminologie entre Active Director
         
         Sous **Choisir s’il est possible de quitter le groupe**, spécifiez si une approbation est requise pour les personnes quittant le groupe. Sélectionnez-en un :
         
-          - **Ouverte : tout le monde peut quitter le groupe sans approbation des propriétaires du groupe   **Il s’agit du paramètre par défaut.
+          - **Ouverte : tout le monde peut quitter le groupe sans approbation des propriétaires du groupe**   Il s’agit du paramètre par défaut.
         
-          - **Fermée : seuls les propriétaires du groupe peuvent supprimer des membres. Toutes les demandes visant à quitter le groupe sont rejetées automatiquement   **
+          - **Fermée : seuls les propriétaires du groupe peuvent supprimer des membres. Toutes les demandes visant à quitter le groupe sont rejetées automatiquement**   
 
 5.  Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer le groupe de distribution.
 
@@ -184,11 +180,11 @@ Pour vérifier si vous avez créé avec succès un groupe de distribution, proc�
 
 Utilisez cette section pour afficher ou modifier les informations de base relatives au groupe.
 
-  - **\* Nom complet**   Ce nom s’affiche dans le carnet d’adresses, sur les lignes À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes. Le nom d’affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s’agit. Il doit également être unique dans votre domaine.
+  - \* **Nom complet**   Ce nom s’affiche dans le carnet d’adresses, sur les lignes À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes. Le nom d’affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s’agit. Il doit également être unique dans votre domaine.
     
     Si vous avez implémenté une stratégie de noms de groupes, le nom d’affichage doit se conformer au format de nom défini par la stratégie.
 
-  - **\* Alias**   L’alias est la partie de l’adresse de messagerie qui apparaît à gauche du signe @. Si vous modifiez l’alias, l’adresse SMTP principale du groupe est également modifiée et contient le nouvel alias. De plus, l’adresse de messagerie électronique qui comprend l’alias précédent est gardée en tant qu’adresse de proxy du groupe.
+  - \* **Alias**   L’alias est la partie de l’adresse de messagerie qui apparaît à gauche du signe @. Si vous modifiez l’alias, l’adresse SMTP principale du groupe est également modifiée et contient le nouvel alias. De plus, l’adresse de messagerie électronique qui comprend l’alias précédent est gardée en tant qu’adresse de proxy du groupe.
 
   - **Description**   Décrivez le groupe afin que l’objet du groupe soit facilement identifiable. Cette description apparaît dans le carnet d’adresses et dans le volet d’informations du Centre d’administration Exchange.
 
@@ -234,9 +230,9 @@ Cette section permet de spécifier si une approbation est nécessaire pour que d
 
   - **Choisissez s’il est possible de quitter le groupe**   Sélectionnez l’un des paramètres suivants :
     
-      - **Ouverte : Tout utilisateur peut quitter ce groupe sans l’approbation des propriétaires du groupe   **
+      - **Ouverte : Tout utilisateur peut quitter ce groupe sans l’approbation des propriétaires du groupe**  
     
-      - **Fermée : seuls les propriétaires du groupe peuvent supprimer des membres. Toutes les demandes visant à quitter le groupe sont rejetées automatiquement   **
+      - **Fermée : seuls les propriétaires du groupe peuvent supprimer des membres. Toutes les demandes visant à quitter le groupe sont rejetées automatiquement**  
 
 ## Gestion de la remise des messages
 
@@ -274,7 +270,7 @@ Cette section permet de définir les options de modération du groupe. Les modé
 
   - **Les expéditeurs qui ne demandent pas l’approbation de messages**    Pour ajouter des individus ou des groupes non soumis à la modération pour ce groupe, cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter"). Pour supprimer un individu ou un groupe, sélectionnez-le, puis cliquez sur **Supprimer**![Icône Suppression](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Icône Suppression").
 
-  - **Sélectionner les notifications de modération   **Cette section permet de définir la manière dont les utilisateurs sont informés de l'approbation de messages.
+  - **Sélectionner les notifications de modération**  Cette section permet de définir la manière dont les utilisateurs sont informés de l'approbation de messages.
     
       - **Avertir tous les expéditeurs lorsque leurs messages ne sont pas approuvés**   Il s’agit du paramètre par défaut. Permet de notifier tous les expéditeurs, à l’intérieur et à l’extérieur de votre organisation, lorsque leur message n’est pas approuvé.
     
@@ -286,9 +282,9 @@ Cette section permet de définir les options de modération du groupe. Les modé
 
 Cette section permet d’afficher ou de modifier les adresses de messagerie électronique associées au groupe. Adresses incluses : adresses SMTP principales du groupe et toute adresse de proxy associée. L’adresse SMTP principale (aussi appelée *adresse de réponse*) apparaît en gras dans la liste d’adresses, avec la valeur **SMTP** inscrite en majuscules dans la colonne **Type**.
 
-  - **Ajouter **  Cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour ajouter une nouvelle adresse de messagerie électronique pour cette boîte aux lettres. Sélectionnez l’un des types d’adresses suivants :
+  - **Ajouter**  Cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour ajouter une nouvelle adresse de messagerie électronique pour cette boîte aux lettres. Sélectionnez l’un des types d’adresses suivants :
     
-      - **SMTP**   Il s’agit du type d’adresse par défaut. Cliquez sur ce bouton, puis saisissez la nouvelle adresse SMTP dans la zone **\* Adresse de messagerie**.
+      - **SMTP**   Il s’agit du type d’adresse par défaut. Cliquez sur ce bouton, puis saisissez la nouvelle adresse SMTP dans la zone \* **Adresse de messagerie**.
         
         <table>
         <thead>
@@ -303,7 +299,7 @@ Cette section permet d’afficher ou de modifier les adresses de messagerie éle
         </tbody>
         </table>
     
-      - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone **\* Adresse de messagerie** l’un des types d’adresse de messagerie électronique non SMTP pris en charge.
+      - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone \* **Adresse de messagerie** l’un des types d’adresse de messagerie électronique non SMTP pris en charge.
         
         <table>
         <thead>
@@ -337,7 +333,7 @@ Cette section permet d’afficher ou de modifier les adresses de messagerie éle
 
   - **Supprimer**   Pour supprimer une adresse de messagerie électronique associée au groupe, sélectionnez-la dans la liste, puis cliquez sur **Supprimer**![Icône Suppression](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Icône Suppression").
 
-  - **Mettre à jour auto. les adresses selon la stratégie de destinataire   **Cochez cette case pour que les adresses de messagerie du destinataire soient automatiquement mises à jour en fonction des modifications apportées aux stratégies d’adresses de messagerie dans votre organisation. Cette case à cocher est activée par défaut.
+  - **Mettre à jour auto. les adresses selon la stratégie de destinataire**   Cochez cette case pour que les adresses de messagerie du destinataire soient automatiquement mises à jour en fonction des modifications apportées aux stratégies d’adresses de messagerie dans votre organisation. Cette case à cocher est activée par défaut.
 
 ## MailTip
 

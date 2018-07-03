@@ -51,7 +51,7 @@ Les utilisateurs de messagerie sont semblables aux contacts de messagerie. Tous 
 
 1.  Dans le Centre d'administration Exchange (CAE), cliquez sur **Destinataires** \> **Contacts** \> **Nouveau** \> **Utilisateur de messagerie**.
 
-2.  Dans la page **Nouvel utilisateur de messagerie**, dans le champ **\* Alias**, saisissez l'alias de l'utilisateur de messagerie. L'alias ne peut pas comporter plus de 64 caractères et doit être unique dans la forêt. Ce champ est obligatoire.
+2.  Dans la page **Nouvel utilisateur de messagerie**, dans le champ \* **Alias**, saisissez l'alias de l'utilisateur de messagerie. L'alias ne peut pas comporter plus de 64 caractères et doit être unique dans la forêt. Ce champ est obligatoire.
 
 3.  Choisissez l'une des procédures suivantes pour indiquer le type d'adresse de messagerie de l'utilisateur de messagerie :
     
@@ -72,7 +72,7 @@ Les utilisateurs de messagerie sont semblables aux contacts de messagerie. Tous 
     
       - Pour indiquer un type d'adresse personnalisé, cliquez sur la case d'option et saisissez le type d'adresse personnalisé. Par exemple, vous pouvez indiquer une adresse X.500, GroupWise ou Lotus Notes.
 
-4.  Dans le champ **\* Adresse de messagerie externe**, saisissez l’adresse de messagerie externe de l’utilisateur de messagerie. Les messages électroniques envoyés à ce contact sont transférés à cette adresse de messagerie. Ce champ est obligatoire.
+4.  Dans le champ \* **Adresse de messagerie externe**, saisissez l’adresse de messagerie externe de l’utilisateur de messagerie. Les messages électroniques envoyés à ce contact sont transférés à cette adresse de messagerie. Ce champ est obligatoire.
 
 5.      
     Activez l'une des options suivantes :
@@ -94,7 +94,7 @@ Les utilisateurs de messagerie sont semblables aux contacts de messagerie. Tous 
     
       - **\*Nom complet**   Ce champ permet de saisir un nom complet pour l'utilisateur. Il s’agit du nom qui est répertorié dans la liste des contacts dans le CAE et le carnet d’adresses de votre organisation. Par défaut, ce champ est renseigné avec les noms que vous avez entrés dans les champs **Prénom**, **Initiales** et **Nom de famille**. Si vous n’avez pas utilisé ces champs, vous devez tout de même saisir un nom car ce champ est obligatoire. Le nom ne peut pas comporter plus de 64 caractères.
     
-      - **\* Nom**   Ce champ permet de saisir un nom pour l'utilisateur de messagerie. Il s'agit du nom répertorié dans le service d'annuaire. Ce champ est également renseigné avec les noms que vous avez entrés dans les champs **Prénom**, **Initiales** et **Nom de famille**. Si vous n'avez pas utilisé ces champs, vous devez tout de même saisir un nom car ce champ est obligatoire. Ce nom ne peut pas comporter plus de 64 caractères.
+      - \* **Nom**   Ce champ permet de saisir un nom pour l'utilisateur de messagerie. Il s'agit du nom répertorié dans le service d'annuaire. Ce champ est également renseigné avec les noms que vous avez entrés dans les champs **Prénom**, **Initiales** et **Nom de famille**. Si vous n'avez pas utilisé ces champs, vous devez tout de même saisir un nom car ce champ est obligatoire. Ce nom ne peut pas comporter plus de 64 caractères.
         
         <table>
         <thead>
@@ -126,7 +126,7 @@ Les utilisateurs de messagerie sont semblables aux contacts de messagerie. Tous 
         </tbody>
         </table>
     
-      - **\* Nom d'ouverture de session de l'utilisateur**   Ce champ permet d'entrer le nom que l'utilisateur de messagerie utilisera pour ouvrir une session sur le domaine. Le nom d'ouverture de session de l'utilisateur est constitué du nom d'utilisateur à gauche du symbole (@) et d'un suffixe à droite. Généralement, le suffixe est le nom du domaine dans lequel le compte d'utilisateur réside.
+      - \* **Nom d'ouverture de session de l'utilisateur**   Ce champ permet d'entrer le nom que l'utilisateur de messagerie utilisera pour ouvrir une session sur le domaine. Le nom d'ouverture de session de l'utilisateur est constitué du nom d'utilisateur à gauche du symbole (@) et d'un suffixe à droite. Généralement, le suffixe est le nom du domaine dans lequel le compte d'utilisateur réside.
         
         <table>
         <thead>
@@ -141,7 +141,7 @@ Les utilisateurs de messagerie sont semblables aux contacts de messagerie. Tous 
         </tbody>
         </table>
     
-      - **\* Nouveau mot de passe**   Ce champ permet de saisir le mot de passe que l'utilisateur de messagerie doit utiliser pour ouvrir une session sur le domaine.
+      - \* **Nouveau mot de passe**   Ce champ permet de saisir le mot de passe que l'utilisateur de messagerie doit utiliser pour ouvrir une session sur le domaine.
         
         <table>
         <thead>
@@ -156,15 +156,13 @@ Les utilisateurs de messagerie sont semblables aux contacts de messagerie. Tous 
         </tbody>
         </table>
     
-      - **\*Confirmer le mot de passe**   Ce champ permet de confirmer le mot de passe que vous avez saisi dans le champ **Mot de passe**.
+      - \* **Confirmer le mot de passe**   Ce champ permet de confirmer le mot de passe que vous avez saisi dans le champ **Mot de passe**.
     
       - **Exiger la modification du mot de passe à la prochaine ouverture de session**   Cochez cette case si vous souhaitez que les utilisateurs de messagerie réinitialisent le mot de passe avec lequel ils se sont initialement connectés au domaine.
         
         Si vous cochez cette case, une boîte de dialogue invitera le nouvel utilisateur de messagerie à modifier son mot de passe lors de sa première ouverture de session. L'utilisateur de messagerie ne sera autorisé à effectuer aucune tâche tant que le mot de passe n'aura pas été modifié.
 
-7. 
-    
-    Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer l'utilisateur de messagerie.
+7. Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer l'utilisateur de messagerie.
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour créer un utilisateur de messagerie
 
@@ -238,11 +236,11 @@ Dans la section **Général**, vous pouvez afficher ou modifier des informations
 
   - **Prénom**, **Initiales**, **Nom de famille**
 
-  - **\* Nom**   Il s'agit du nom qui s'affiche dans Active Directory. Si vous modifiez ce nom, il ne peut pas comporter plus de 64 caractères.
+  - \* **Nom**   Il s'agit du nom qui s'affiche dans Active Directory. Si vous modifiez ce nom, il ne peut pas comporter plus de 64 caractères.
 
-  - **\* Nom complet**    Ce nom s’affiche dans le carnet d’adresses de l’organisation, sur les lignes À : et De : dans le message électronique et dans la liste des contacts au sein du CAE. Ce nom ne peut pas contenir d’espaces vides avant ou après le nom complet.
+  - \* **Nom complet**    Ce nom s’affiche dans le carnet d’adresses de l’organisation, sur les lignes À : et De : dans le message électronique et dans la liste des contacts au sein du CAE. Ce nom ne peut pas contenir d’espaces vides avant ou après le nom complet.
 
-  - **\* Nom d'ouverture de session de l'utilisateur**   Nom que l'utilisateur utilise pour ouvrir une session dans le domaine. Dans Exchange Online, il s'agit de l'identifiant utilisateur utilisé pour se connecter à Office 365.
+  - \* **Nom d'ouverture de session de l'utilisateur**   Nom que l'utilisateur utilise pour ouvrir une session dans le domaine. Dans Exchange Online, il s'agit de l'identifiant utilisateur utilisé pour se connecter à Office 365.
 
   - **Masquer dans les listes d'adresses**   Cochez cette case pour empêcher que l'utilisateur de messagerie n'apparaisse dans le carnet d'adresses et dans d'autres listes d'adresses définies dans votre organisation Exchange. Après activation de cette case à cocher, les utilisateurs peuvent encore envoyer des messages au destinataire en utilisant l'adresse de messagerie.
 
@@ -318,11 +316,11 @@ La section **Organisation** permet d'enregistrer des informations détaillées 
 
 La section **Adresses de messagerie** permet d'afficher ou de modifier les adresses de messagerie associées à l'utilisateur de messagerie. Cela inclut l’adresse SMTP principale de l’utilisateur de messagerie, son adresse de messagerie externe et toutes les adresses proxy associées. L'adresse SMTP principale (également appelée *adresse de réponse par défaut*) est affichée en gras dans la liste d'adresses, la valeur **SMTP** apparaissant en lettres majuscules dans la colonne **Type**. Par défaut, une fois l'utilisateur de messagerie créé, l'adresse SMTP principale et l'adresse de messagerie externe sont les mêmes.
 
-  - **Ajouter **  Cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour ajouter une nouvelle adresse de messagerie électronique pour cette boîte aux lettres. Sélectionnez l'un des types d'adresses suivants :
+  - **Ajouter**  Cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour ajouter une nouvelle adresse de messagerie électronique pour cette boîte aux lettres. Sélectionnez l'un des types d'adresses suivants :
     
-      - **SMTP**   Il s'agit du type d'adresse par défaut. Cliquez sur ce bouton, puis saisissez la nouvelle adresse SMTP dans la zone **\* Adresse de messagerie**.
+      - **SMTP**   Il s'agit du type d'adresse par défaut. Cliquez sur ce bouton, puis saisissez la nouvelle adresse SMTP dans la zone \* **Adresse de messagerie**.
     
-      - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone **\* Adresse de messagerie** l'un des types d'adresse de messagerie électronique non SMTP pris en charge.
+      - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone \* **Adresse de messagerie** l'un des types d'adresse de messagerie électronique non SMTP pris en charge.
         
         <table>
         <thead>
@@ -340,7 +338,7 @@ La section **Adresses de messagerie** permet d'afficher ou de modifier les adres
 
   - **Définir comme adresse de messagerie externe**   Ce champ permet de modifier l’adresse externe de l’utilisateur de messagerie. Les messages électroniques envoyés à ce contact sont transférés à cette adresse de messagerie.
 
-  - **Mettre à jour auto. les adresses selon la stratégie de destinataire   **Cochez cette case pour que les adresses de messagerie du destinataire soient automatiquement mises à jour en fonction des modifications apportées aux stratégies d'adresse de messagerie dans votre organisation. Cette case à cocher est activée par défaut.
+  - **Mettre à jour auto. les adresses selon la stratégie de destinataire**   Cochez cette case pour que les adresses de messagerie du destinataire soient automatiquement mises à jour en fonction des modifications apportées aux stratégies d'adresse de messagerie dans votre organisation. Cette case à cocher est activée par défaut.
     
     <table>
     <thead>

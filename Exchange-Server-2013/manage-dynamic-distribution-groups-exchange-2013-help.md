@@ -67,11 +67,9 @@ Contrairement aux groupes de distribution habituels qui contiennent un ensemble 
 
 1.  Dans l’EAC, accédez à **Destinataires**  \> **Groupes** \> **Nouveau** \> **Groupe de distribution dynamique**.
 
-2.  
+2.  Sur la page **Nouveau groupe de distribution dynamique**, complétez les cases suivantes :
     
-    Sur la page **Nouveau groupe de distribution dynamique**, complétez les cases suivantes :
-    
-      - **\* Nom complet**   Saisissez le nom complet. Ce nom apparaît dans le carnet d’adresses partagé, dans la ligne À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes du Centre d’administration Exchange. Le nom d'affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s'agit. Ce nom doit aussi être unique dans la forêt.
+      - \* **Nom complet**   Saisissez le nom complet. Ce nom apparaît dans le carnet d’adresses partagé, dans la ligne À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes du Centre d’administration Exchange. Le nom d'affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s'agit. Ce nom doit aussi être unique dans la forêt.
         
         <table>
         <thead>
@@ -96,9 +94,7 @@ Contrairement aux groupes de distribution habituels qui contiennent un ensemble 
     
       - **Propriétaire**   Un propriétaire pour un groupe de distribution dynamique est facultatif. Pour ajouter des propriétaires, cliquez sur **Parcourir**, puis sélectionnez des utilisateurs dans la liste.
 
-3.  
-    
-    Utilisez la section **Membres** pour indiquer les types de destinataires pour le groupe et configurer des règles qui doivent déterminer un appartenance. Sélectionnez l’une des cases suivantes :
+3.  Utilisez la section **Membres** pour indiquer les types de destinataires pour le groupe et configurer des règles qui doivent déterminer un appartenance. Sélectionnez l’une des cases suivantes :
     
       - **Tous les types de destinataires**   Sélectionnez cette option pour envoyer des messages qui satisfont les critères définis pour ce groupe à tous les types de destinataires.
     
@@ -114,9 +110,7 @@ Contrairement aux groupes de distribution habituels qui contiennent un ensemble 
         
           - **Groupes à extension messagerie**   Activez cette case à cocher si vous souhaitez inclure les groupes de sécurité ou de distribution à extension messagerie. Les groupes à extension messagerie sont similaires aux groupes de distribution. Les messages électroniques envoyés à un compte de groupe à extension messagerie sont transmis à plusieurs destinataires.
 
-4.  
-    
-    Cliquez sur **Ajouter une règle** pour définir les critères d'appartenance à ce groupe.
+4.  Cliquez sur **Ajouter une règle** pour définir les critères d'appartenance à ce groupe.
 
 5.  Sélectionnez l'un des attributs de destinataire suivant dans la liste déroulante et donnez une valeur. Si la valeur pour l’attribut sélectionné correspond à cette valeur que vous avez définie, le destinataire reçoit un message envoyé à ce groupe.
     
@@ -260,9 +254,9 @@ Pour vérifier la création avec succès d’un groupe de distribution dynamique
 
 Utilisez cette section pour afficher ou modifier les informations de base relatives au groupe.
 
-  - **\* Nom complet**   Ce nom s'affiche dans le carnet d'adresses, sur les lignes À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes. Le nom d'affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s'agit. Il doit également être unique dans votre domaine.
+  - \* **Nom complet**   Ce nom s'affiche dans le carnet d'adresses, sur les lignes À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes. Le nom d'affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s'agit. Il doit également être unique dans votre domaine.
 
-  - **\* Alias**   L’alias est la partie de l’adresse de messagerie qui apparaît à gauche du signe @. Si vous modifiez l’alias, l’adresse SMTP principale du groupe est également modifiée et contient le nouvel alias. De plus, l’adresse de messagerie électronique qui comprend l’alias précédent est gardée en tant qu’adresse de proxy du groupe.
+  - \* **Alias**   L’alias est la partie de l’adresse de messagerie qui apparaît à gauche du signe @. Si vous modifiez l’alias, l’adresse SMTP principale du groupe est également modifiée et contient le nouvel alias. De plus, l’adresse de messagerie électronique qui comprend l’alias précédent est gardée en tant qu’adresse de proxy du groupe.
 
   - **Description**   Décrivez le groupe afin que l’objet du groupe soit facilement identifiable. Cette description apparaît dans le carnet d’adresses et dans le volet d’informations du Centre d’administration Exchange.
 
@@ -316,7 +310,7 @@ Cette section permet de définir les options de modération du groupe. Les modé
 
   - **Les expéditeurs qui ne demandent pas l’approbation de messages**    Pour ajouter des individus ou des groupes non soumis à la modération pour ce groupe, cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter"). Pour supprimer un individu ou un groupe, sélectionnez-le, puis cliquez sur **Supprimer**![Icône Suppression](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Icône Suppression").
 
-  - **Sélectionner les notifications de modération   **Cette section permet de définir la manière dont les utilisateurs sont informés de l'approbation de messages.
+  - **Sélectionner les notifications de modération**   Cette section permet de définir la manière dont les utilisateurs sont informés de l'approbation de messages.
     
       - **Avertir tous les expéditeurs lorsque leurs messages ne sont pas approuvés**   Il s’agit du paramètre par défaut. Permet de notifier tous les expéditeurs, à l'intérieur et à l'extérieur de votre organisation, lorsque leur message n'est pas approuvé.
     
@@ -328,9 +322,9 @@ Cette section permet de définir les options de modération du groupe. Les modé
 
 Cette section permet d’afficher ou de modifier les adresses de messagerie électronique associées au groupe. Adresses incluses : adresses SMTP principales du groupe et toute adresse de proxy associée. L’adresse SMTP principale (aussi appelée *adresse de réponse*) apparaît en gras dans la liste d’adresses, avec la valeur **SMTP** inscrite en majuscules dans la colonne **Type**.
 
-  - **Ajouter **  Cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour ajouter une nouvelle adresse de messagerie électronique pour cette boîte aux lettres. Sélectionnez l’un des types d’adresses suivants :
+  - **Ajouter**  Cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour ajouter une nouvelle adresse de messagerie électronique pour cette boîte aux lettres. Sélectionnez l’un des types d’adresses suivants :
     
-      - **SMTP**   Il s’agit du type d’adresse par défaut. Cliquez sur ce bouton, puis saisissez la nouvelle adresse SMTP dans la zone **\* Adresse de messagerie**.
+      - **SMTP**   Il s’agit du type d’adresse par défaut. Cliquez sur ce bouton, puis saisissez la nouvelle adresse SMTP dans la zone \* **Adresse de messagerie**.
         
         <table>
         <thead>
@@ -345,7 +339,7 @@ Cette section permet d’afficher ou de modifier les adresses de messagerie éle
         </tbody>
         </table>
     
-      - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone **\* Adresse de messagerie** l’un des types d’adresse de messagerie électronique non SMTP pris en charge.
+      - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone \* **Adresse de messagerie** l’un des types d’adresse de messagerie électronique non SMTP pris en charge.
         
         <table>
         <thead>
@@ -379,7 +373,7 @@ Cette section permet d’afficher ou de modifier les adresses de messagerie éle
 
   - **Supprimer**   Pour supprimer une adresse de messagerie électronique associée au groupe, sélectionnez-la dans la liste, puis cliquez sur **Supprimer**![Icône Suppression](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Icône Suppression").
 
-  - **Mettre à jour auto. les adresses selon la stratégie de destinataire   **Cochez cette case pour que les adresses de messagerie du destinataire soient automatiquement mises à jour en fonction des modifications apportées aux stratégies d’adresses de messagerie dans votre organisation. Cette case à cocher est activée par défaut.
+  - **Mettre à jour auto. les adresses selon la stratégie de destinataire**   Cochez cette case pour que les adresses de messagerie du destinataire soient automatiquement mises à jour en fonction des modifications apportées aux stratégies d’adresses de messagerie dans votre organisation. Cette case à cocher est activée par défaut.
 
 ## MailTip
 
