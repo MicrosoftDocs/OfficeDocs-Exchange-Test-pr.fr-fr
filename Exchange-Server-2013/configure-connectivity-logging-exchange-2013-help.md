@@ -29,18 +29,8 @@ L'enregistrement de la connectivité enregistre l'activité de connexion sortant
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -81,25 +71,11 @@ Cet exemple définit les paramètres du journal de connectivité suivants dans l
 
     Set-TransportService Mailbox01 -ConnectivityLogPath "D:\Hub Connectivity Log" -ConnectivityLogMaxFileSize 20MB -ConnectivityLogMaxDirectorySize 1.5GB -ConnectivityLogMaxAge 45.00:00:00
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Pour configurer les paramètres du journal de connectivité dans le service de transport de la boîte aux lettres sur un serveur de boîtes aux lettres, utilisez la cmdlet <strong>Set-MailboxTransportService</strong>. Pour configurer les paramètres du journal de connectivité dans le service de transport frontal sur un serveur d'accès au client, utilisez la cmdlet <strong>Set-FrontEndTransportService</strong>.</p></li>
-<li><p>La définition de la valeur du paramètre <em>ConnectivityLogPath</em> sur <code>$null</code> désactive effectivement l'enregistrement de la connectivité. Toutefois, si la valeur du paramètre <em>ConnectivityLogEnabled</em> est <code>$true</code>, des erreurs sont générées dans le journal des événements.</p></li>
-<li><p>Le fait de définir la valeur du paramètre <em>ConnectivityLogMaxAge</em> sur <code>00:00:00</code> empêche la suppression automatique des fichiers journaux de connectivité en raison de leur ancienneté.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> <ul>
+> <li><p>Pour configurer les paramètres du journal de connectivité dans le service de transport de la boîte aux lettres sur un serveur de boîtes aux lettres, utilisez la cmdlet <strong>Set-MailboxTransportService</strong>. Pour configurer les paramètres du journal de connectivité dans le service de transport frontal sur un serveur d'accès au client, utilisez la cmdlet <strong>Set-FrontEndTransportService</strong>.</p></li>
+> <li><p>La définition de la valeur du paramètre <em>ConnectivityLogPath</em> sur <code>$null</code> désactive effectivement l'enregistrement de la connectivité. Toutefois, si la valeur du paramètre <em>ConnectivityLogEnabled</em> est <code>$true</code>, des erreurs sont générées dans le journal des événements.</p></li>
+> <li><p>Le fait de définir la valeur du paramètre <em>ConnectivityLogMaxAge</em> sur <code>00:00:00</code> empêche la suppression automatique des fichiers journaux de connectivité en raison de leur ancienneté.</p></li></ul>
 
 
 ## Comment savoir si cela a fonctionné ?

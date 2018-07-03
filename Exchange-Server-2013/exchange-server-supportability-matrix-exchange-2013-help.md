@@ -446,18 +446,8 @@ Le tableau suivant identifie les navigateurs web pris en charge pour être utili
 
 Le tableau suivant identifie les navigateurs web pris en charge pour être utilisés avec la version allégée (basique) d’Outlook Web App ou d’Outlook sur le web. Les navigateurs pris en charge sont indiqués par un X.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook Web App Basic (Outlook Web App Light) est pris en charge par les navigateurs mobiles. Toutefois, si des problèmes de rendu ou d'authentification surviennent dans un navigateur mobile, vérifiez si le problème se reproduit dans Outlook Web App Light dans le client complet d'un navigateur pris en charge. Par exemple, essayez d'utiliser Outlook Web App Light dans Safari, Chrome ou Internet Explorer. Si le problème ne se reproduit pas dans le client complet, nous vous conseillons de contacter le fabricant de l'appareil mobile pour obtenir de l'aide. Dans ces cas, nous collaborons avec le fournisseur, selon le cas.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Outlook Web App Basic (Outlook Web App Light) est pris en charge par les navigateurs mobiles. Toutefois, si des problèmes de rendu ou d'authentification surviennent dans un navigateur mobile, vérifiez si le problème se reproduit dans Outlook Web App Light dans le client complet d'un navigateur pris en charge. Par exemple, essayez d'utiliser Outlook Web App Light dans Safari, Chrome ou Internet Explorer. Si le problème ne se reproduit pas dans le client complet, nous vous conseillons de contacter le fabricant de l'appareil mobile pour obtenir de l'aide. Dans ces cas, nous collaborons avec le fournisseur, selon le cas.
 
 
 
@@ -762,19 +752,9 @@ Le tableau suivant permet d’identifier la version de Microsoft.NET Framework c
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Quand vous mettez à niveau Exchange à partir d’une mise à jour cumulative (CU) non prise en charge vers la CU actuelle et qu’aucune CU intermédiaire n’est disponible, mettez d’abord à niveau Exchange vers la dernière version de .NET prise en charge par Exchange, puis mettez-le immédiatement à niveau vers la CU actuelle. Malgré tout, mettez régulièrement à jour vos serveurs Exchange en installant les mises à jour cumulatives prises en charge les plus récentes.<br />
-Microsoft ne donne aucune garantie de la réussite de la mise à niveau en utilisant cette méthode. En cas de problème, contactez les services de support technique Microsoft.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Quand vous mettez à niveau Exchange à partir d’une mise à jour cumulative (CU) non prise en charge vers la CU actuelle et qu’aucune CU intermédiaire n’est disponible, mettez d’abord à niveau Exchange vers la dernière version de .NET prise en charge par Exchange, puis mettez-le immédiatement à niveau vers la CU actuelle. Malgré tout, mettez régulièrement à jour vos serveurs Exchange en installant les mises à jour cumulatives prises en charge les plus récentes.
+> Microsoft ne donne aucune garantie de la réussite de la mise à niveau en utilisant cette méthode. En cas de problème, contactez les services de support technique Microsoft.
 
 
 

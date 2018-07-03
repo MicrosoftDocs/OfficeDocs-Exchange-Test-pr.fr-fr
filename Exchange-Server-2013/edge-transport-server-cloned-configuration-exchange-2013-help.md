@@ -270,18 +270,8 @@ Les attributs présentés dans le tableau suivant sont associés à l’objet de
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si le serveur de transport Edge est abonné ultérieurement à l’organisation Exchange, la valeur de l’attribut <strong>InternalSMTPServers</strong> est remplacée au cours du processus EdgeSync. Pour plus d’informations, voir <a href="edge-subscriptions-exchange-2013-help.md">Abonnements Edge</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si le serveur de transport Edge est abonné ultérieurement à l’organisation Exchange, la valeur de l’attribut <strong>InternalSMTPServers</strong> est remplacée au cours du processus EdgeSync. Pour plus d’informations, voir <a href="edge-subscriptions-exchange-2013-help.md">Abonnements Edge</a>.
 
 
 Retour au début

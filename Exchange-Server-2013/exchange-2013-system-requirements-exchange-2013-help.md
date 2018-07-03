@@ -155,7 +155,7 @@ Le tableau suivant présente la configuration requise pour les serveurs réseau 
 <li><p>Domaines en une seule partie</p></li>
 <li><p>Disjoint</p></li>
 </ul>
-<p>Pour plus d’informations sur les espaces de noms DNS pris en charge par Exchange, consultez l’article 2269838 de la Base de connaissances Microsoft, <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2269838">Compatibilité de Microsoft Exchange avec les domaines en une seule partie, les espaces de noms disjoints et les espaces de noms discontinus</a>.</p></td>
+<p>Pour plus d’informations sur les espaces de noms DNS pris en charge par Exchange, consultez l’article 2269838 de la Base de connaissances Microsoft, <a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=2269838">Compatibilité de Microsoft Exchange avec les domaines en une seule partie, les espaces de noms disjoints et les espaces de noms discontinus</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Prise en charge IPv6</p></td>
@@ -173,18 +173,8 @@ Le tableau suivant présente la configuration requise pour les serveurs réseau 
 
 L’utilisation de contrôleurs de domaine Active Directory 64 bits augmente les performances du service d’annuaire d’Exchange 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans le cas d’environnements à domaines multiples dans lesquels le japonais a été défini comme langue locale d’Active Directory pour les contrôleurs de domaine Windows Server 2008, les serveurs peuvent ne pas recevoir certains attributs stockés sur un objet pendant la réplication entrante. Pour plus d’informations, consultez l’article 949189 de la Base de connaissances Microsoft, <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=949189">Un contrôleur de domaine Windows Server 2008 qui est configuré avec les paramètres régionaux japonais peut ne pas appliquer des mises à jour aux attributs d’un objet lors la réplication entrante</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans le cas d’environnements à domaines multiples dans lesquels le japonais a été défini comme langue locale d’Active Directory pour les contrôleurs de domaine Windows Server 2008, les serveurs peuvent ne pas recevoir certains attributs stockés sur un objet pendant la réplication entrante. Pour plus d’informations, consultez l’article 949189 de la Base de connaissances Microsoft, <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=949189">Un contrôleur de domaine Windows Server 2008 qui est configuré avec les paramètres régionaux japonais peut ne pas appliquer des mises à jour aux attributs d’un objet lors la réplication entrante</a>.
 
 
 ## Installation d’Exchange 2013 sur des serveurs d’annuaire

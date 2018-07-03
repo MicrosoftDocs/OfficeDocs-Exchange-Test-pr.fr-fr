@@ -110,18 +110,8 @@ Le tableau suivant présente un exemple avec des valeurs indiquant quand la requ
 <td><p>Ventes (True)</p></td>
 <td><p>Responsable informatique (True)</p></td>
 <td><p>True, car <strong>Title</strong> est évalué comme True. Les résultats de la comparaison entre <strong>City</strong> et <strong>Department</strong> sont ignorés parce que <strong>Title</strong> est évalué comme True et remplit donc les conditions de requête de filtre.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le Responsable informatique est conforme à la requête de filtre puisque l’opérateur de comparaison <strong>Like</strong> a été utilisé et offre une correspondance avec des chaînes partielles lorsque les caractères génériques (*) sont utilisés dans la requête de filtre.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le Responsable informatique est conforme à la requête de filtre puisque l’opérateur de comparaison <strong>Like</strong> a été utilisé et offre une correspondance avec des chaînes partielles lorsque les caractères génériques (*) sont utilisés dans la requête de filtre.
 
 </td>
 </tr>

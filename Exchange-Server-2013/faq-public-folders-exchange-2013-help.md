@@ -87,18 +87,8 @@ Outlook Web App est pris en charge, mais dans certaines limites. Vous pouvez a
 
   - Accéder aux dossiers publics situés sur des serveurs exécutant des versions antérieures d’Exchange
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez uniquement créer des règles de dossier public qui contiennent l’élément <strong>répondre en utilisant un modèle spécifique</strong> dans les dossiers publics à extension messagerie. Il peut arriver que des règles préexistantes contenant l’élément <strong>répondre en utilisant un modèle spécifique</strong> continuent de fonctionner sur des dossiers publics sans extension messagerie. Cela dit, vous ne pouvez pas créer ou modifier de règles comportant cet élément pour ce type de dossiers.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez uniquement créer des règles de dossier public qui contiennent l’élément <strong>répondre en utilisant un modèle spécifique</strong> dans les dossiers publics à extension messagerie. Il peut arriver que des règles préexistantes contenant l’élément <strong>répondre en utilisant un modèle spécifique</strong> continuent de fonctionner sur des dossiers publics sans extension messagerie. Cela dit, vous ne pouvez pas créer ou modifier de règles comportant cet élément pour ce type de dossiers.
 
 
 Dans un scénario hybride, Outlook sur le web et Outlook 2011 pour Mac ne sont pas pris en charge pour les dossiers publics intersites. Les utilisateurs doivent être au même emplacement que les dossiers publics pour pouvoir y accéder avec Outlook 2011 pour Mac ou Outlook sur le web. Les utilisateurs d’Outlook 2016 pour Mac peuvent accéder aux dossiers publics dans un scénario hybride, si les procédures sous [Procédures de déploiement hybride](https://technet.microsoft.com/fr-fr/library/jj200788\(v=exchg.150\).aspx) sont respectées et si la mise à jour Avril 2016 pour Outlook 2016 pour Mac a été installée sur tous les clients.

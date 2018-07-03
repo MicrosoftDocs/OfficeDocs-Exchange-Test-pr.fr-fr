@@ -49,18 +49,8 @@ Pour les autres tâches de gestion liées à la Gestion des droits relatifs à l
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -106,18 +96,8 @@ Pour les autres tâches de gestion liées à la Gestion des droits relatifs à l
 
   - Cet exemple montre comment créer la règle de protection de transport Protect-BusinessCriticalProject. La règle confère une protection IRM aux messages contenant la phrase « Critique pour l’entreprise » dans le champ Objet avec le modèle **Ne pas transférer**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le prédicat <code>SubjectContainsWords</code> est utilisé dans cet exemple. Vous pouvez utiliser une combinaison quelconque de prédicats de règle de transport pour former les conditions et les exceptions de la règle. Pour plus d’informations sur les prédicats disponibles, consultez la rubrique <a href="mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md">Conditions de règles de transport (prédicats)</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le prédicat <code>SubjectContainsWords</code> est utilisé dans cet exemple. Vous pouvez utiliser une combinaison quelconque de prédicats de règle de transport pour former les conditions et les exceptions de la règle. Pour plus d’informations sur les prédicats disponibles, consultez la rubrique <a href="mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md">Conditions de règles de transport (prédicats)</a>.
     
         New-TransportRule -Name "Protect-BusinessCriticalProject" -SubjectContainsWords "Business Critical" -ApplyRightsProtectionTemplate "Do Not Forward"
     

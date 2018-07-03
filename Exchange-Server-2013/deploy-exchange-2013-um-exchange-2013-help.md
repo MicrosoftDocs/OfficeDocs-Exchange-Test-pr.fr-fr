@@ -89,18 +89,8 @@ Différents chemins de déploiement sont disponibles pour les organisations qui 
 
 2.  Déployez votre nouvelle organisation Exchange 2013. Pour plus d'informations, consultez la rubrique [Installer Exchange 2013 à l’aide de l’Assistant Installation](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous devez déployer au moins un serveur de boîtes aux lettres Exchange 2013 dans votre organisation avant de configurer les passerelles VoIP ou les PBX IP pour envoyer le trafic SIP ou RTP de messagerie unifiée vers les serveurs d’accès client Exchange 2013.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Vous devez déployer au moins un serveur de boîtes aux lettres Exchange 2013 dans votre organisation avant de configurer les passerelles VoIP ou les PBX IP pour envoyer le trafic SIP ou RTP de messagerie unifiée vers les serveurs d’accès client Exchange 2013.
 
 
 3.  Vérifiez que vous avez correctement installé les serveurs d'accès au client et de boîtes aux lettres. Après avoir installé les serveurs, nous vous recommandons de vérifier l'installation et de consulter les journaux d'installation du serveur. Pour plus d'informations, consultez la rubrique [Vérifier une installation d’Exchange 2013](verify-an-exchange-2013-installation-exchange-2013-help.md).
@@ -113,18 +103,8 @@ Lorsque vous installez , l'anglais (É.U.) est la langue par défaut et la seule
 
 Vous pouvez ajouter des modules linguistiques de messagerie unifiée à l'aide de la commande Setup.exe ou en exécutant le programme d'installation *\<UMLanguagePack\>*.exe après avoir téléchargé le module linguistique de messagerie unifiée à partir de la page [Exchange Server 2013 UM Language Packs - Français](https://go.microsoft.com/fwlink/p/?linkid=266542). Cependant, vous devez utiliser la commande Setup.exe pour supprimer un module linguistique de messagerie unifiée. Il n'existe aucune cmdlet de l'environnement de ligne de commande Exchange Management Shell permettant d'ajouter ou de supprimer des modules linguistiques d'un serveur de boîte aux lettres. Pour plus d'informations sur l'installation d'un module linguistique de messagerie unifiée, consultez la rubrique [Installer un module linguistique de messagerie unifiée](install-a-um-language-pack-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, lorsque vous installez un serveur de boîtes aux lettres, l'anglais (États-Unis) est installé. Il ne peut pas être retiré, sauf si vous supprimez le serveur de boîtes aux lettres à partir de l'ordinateur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, lorsque vous installez un serveur de boîtes aux lettres, l'anglais (États-Unis) est installé. Il ne peut pas être retiré, sauf si vous supprimez le serveur de boîtes aux lettres à partir de l'ordinateur.
 
 
 Avant le déploiement

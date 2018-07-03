@@ -25,18 +25,8 @@ Les articles de cette section ont été écrits par l'équipe de performances Ex
 
 Les changements d’architecture dans Exchange 2013 sont déjà documentés sur TechNet et dans le [blog de l’équipe Exchange](https://go.microsoft.com/fwlink/p/?linkid=35786). Nous allons tout d’abord aborder quelques modifications de haut niveau que vous devez envisager pour mieux comprendre les coûts des performances et le dimensionnement. Ensuite, ci-dessous, nous avons inclus une liste de références recommandées afin de fournir davantage de contexte dans ces domaines importants.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Consultez <a href="exchange-2013-virtualization-exchange-2013-help.md">Virtualisation d'Exchange 2013</a> pour obtenir des instructions d'optimisation des performances concernant le déploiement d'Exchange Server 2013 dans un environnement virtualisé.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Consultez <a href="exchange-2013-virtualization-exchange-2013-help.md">Virtualisation d'Exchange 2013</a> pour obtenir des instructions d'optimisation des performances concernant le déploiement d'Exchange Server 2013 dans un environnement virtualisé.
 
 
 Dans Exchange 2013, le rôle de serveur d'accès au client est un serveur proxy sans état. La responsabilité principale du rôle du serveur d'accès au client est maintenant d'authentifier les demandes entrantes puis d'envoyer une requête proxy au serveur de boîtes aux lettres approprié, celui hébergeant la copie active de la boîte aux lettres de l'utilisateur. Cela signifie qu'il n'est plus nécessaire de configurer l'affinité entre le serveur d'accès au client et l'équilibreur de charge pour des protocoles spécifiques.

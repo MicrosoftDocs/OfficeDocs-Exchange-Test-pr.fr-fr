@@ -87,18 +87,8 @@ L'étape suivante consiste à utiliser l'applet de commande **New-MailboxSearch*
     
       - *StartDate* et *EndDate*   Ces paramètres permettent de spécifier la plage de dates des résultats de la recherche dans la boîte aux lettres de découverte par défaut à inclure dans les résultats de la recherche.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Pour les dates, utilisez le format de date courte, mm/jj/aaaa, même si les options régionales de l’ordinateur local sont configurées avec un format différent, comme jj/mm/aaaa. Par exemple, utilisez <strong>03/01/2014</strong> pour spécifier le 1er mars 2014.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Pour les dates, utilisez le format de date courte, mm/jj/aaaa, même si les options régionales de l’ordinateur local sont configurées avec un format différent, comme jj/mm/aaaa. Par exemple, utilisez <strong>03/01/2014</strong> pour spécifier le 1er mars 2014.
     
       - *TargetMailbox*   Ce paramètre spécifie que les résultats de la recherche doivent être copiés dans la boîte aux lettres de découverte nommée « Discovery Mailbox Backup 01 ».
     

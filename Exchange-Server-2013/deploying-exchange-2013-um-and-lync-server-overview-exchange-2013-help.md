@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2016-12-09_
 
 La messagerie unifiée et Microsoft Lync Server peuvent être déployés simultanément afin de fournir aux utilisateurs de l’organisation une messagerie vocale, une messagerie instantanée, un indicateur de présence utilisateur amélioré, une fonctionnalité de conférence audio/vidéo ainsi qu’une expérience de messagerie et de courrier électronique intégrée. La messagerie unifiée est utilisée pour assurer les services de répondeur automatique, Outlook Voice Access et de standard automatique. Microsoft Lync Server permet de tirer parti des fonctions plus avancées d’Enterprise Voice, comme la messagerie instantanée, une fonctionnalité de conférence ainsi que des appels entrants et sortants. Cette rubrique décrit la procédure de configuration de la messagerie unifiée et de Microsoft Lync Server de sorte que ces fonctionnalités soient prises en charge.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft Office Communications Server 2007 R2 peut également être déployé avec la messagerie unifiée. Dans cette rubrique, « Microsoft Lync Server » se rapporte à Microsoft Lync Server 2010 ou Microsoft Lync Server 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Microsoft Office Communications Server 2007 R2 peut également être déployé avec la messagerie unifiée. Dans cette rubrique, « Microsoft Lync Server » se rapporte à Microsoft Lync Server 2010 ou Microsoft Lync Server 2013.
 
 
 Vous cherchez plus d’informations sur Microsoft Lync Server ? Voir [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752).
@@ -262,18 +252,8 @@ Vous devez également exécuter les tâches suivantes pour configurer Lync Serve
 
   - Exécutez la commande **ocsumutil.exe** qui crée les objets contact pour Outlook Voice Access et les standards automatiques.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lorsque vous installez Lync Server, l’attribut <strong>msRTC-SIPLine</strong> est ajouté à Active Directory. Si vous n’avez pas installé Lync Server dans votre environnement, cet attribut n’est pas ajouté à Active Directory et la résolution de nom d’ID de l’appelant parmi les plans de numérotation dans des scénarios de forêt unique et inter-forêts ne doit pas fonctionner correctement, à moins de configurer des adresses proxy de messagerie unifiée pour les utilisateurs sans extension messagerie unifiée.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Lorsque vous installez Lync Server, l’attribut <strong>msRTC-SIPLine</strong> est ajouté à Active Directory. Si vous n’avez pas installé Lync Server dans votre environnement, cet attribut n’est pas ajouté à Active Directory et la résolution de nom d’ID de l’appelant parmi les plans de numérotation dans des scénarios de forêt unique et inter-forêts ne doit pas fonctionner correctement, à moins de configurer des adresses proxy de messagerie unifiée pour les utilisateurs sans extension messagerie unifiée.
 
 
 Après avoir configuré Lync Server et les serveurs de messagerie unifiée, vous devez permettre à l’utilisateur d’utiliser Lync Server et installer Lync sur l’ordinateur client de l’utilisateur.

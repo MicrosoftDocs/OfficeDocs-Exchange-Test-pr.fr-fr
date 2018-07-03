@@ -21,18 +21,8 @@ Le rôle serveur de transport Edge a été réintroduit dans Exchange Service 
 
 Vous pouvez ajouter un serveur de transport Edge à une organisation Exchange 2013 existante. Aucune opération de préparation d’Active Directory supplémentaire n’est nécessaire pour installer le serveur de transport Edge.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous ajoutez un serveur de transport Edge à une organisation Exchange 2010 ou Exchange 2007 existante, vous devez installer un correctif cumulatif spécifique sur vos serveurs hérités avant d’installer un serveur de transport Edge Exchange 2013. Pour plus d’informations, voir <a href="exchange-2013-system-requirements-exchange-2013-help.md">Configuration requise pour Exchange 2013</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous ajoutez un serveur de transport Edge à une organisation Exchange 2010 ou Exchange 2007 existante, vous devez installer un correctif cumulatif spécifique sur vos serveurs hérités avant d’installer un serveur de transport Edge Exchange 2013. Pour plus d’informations, voir <a href="exchange-2013-system-requirements-exchange-2013-help.md">Configuration requise pour Exchange 2013</a>.
 
 
 Si vous projetez de déployer des serveurs de transport Edge, vous devez tenir compte des aspects suivants :
@@ -96,18 +86,8 @@ Si vous projetez de déployer des serveurs de transport Edge, vous devez tenir 
     </tbody>
     </table>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le rôle serveur de transport Edge utilise des ports LDAP non standard. Les ports spécifiés dans cette rubrique sont les ports de communication LDAP configurés lors de l’installation du rôle serveur de transport Edge.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le rôle serveur de transport Edge utilise des ports LDAP non standard. Les ports spécifiés dans cette rubrique sont les ports de communication LDAP configurés lors de l’installation du rôle serveur de transport Edge.
 
 
   - **EdgeSync**   La procédure de déploiement recommandée consiste à créer un abonnement Edge pour abonner le serveur de transport Edge à l’organisation Exchange. Lorsque vous créez un abonnement Edge, les données de destinataire et de configuration sont dupliquées d’Active Directory vers le service d’annuaire AD LDS. Vous abonnez un serveur de transport Edge à un site Active Directory. Ensuite, le service Microsoft Exchange EdgeSync exécuté sur les serveurs de boîtes aux lettres de ce site met périodiquement à jour le service d’annuaire AD LDS en synchronisant les données à partir d’Active Directory. Le processus d’abonnement Edge déploie automatiquement les connecteurs d’envoi requis pour activer le flux de messagerie de l’organisation Exchange vers Internet via un serveur de transport Edge. Si vous utilisez les fonctions de recherche de destinataire ou d’agrégation de listes fiables sur le serveur de transport Edge, vous devez abonner le serveur de transport Edge à l’organisation.

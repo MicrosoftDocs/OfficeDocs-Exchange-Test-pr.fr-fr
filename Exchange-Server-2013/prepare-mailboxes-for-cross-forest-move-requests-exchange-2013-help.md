@@ -122,18 +122,8 @@ Le tableau suivant répertorie l'ensemble minimum d’attributs devant être con
 <tr class="odd">
 <td><p><strong>proxyAddresses</strong></p></td>
 <td><p>Copiez l’attribut <strong>proxyAddresses</strong> de la boîte aux lettres source. En outre, copiez <strong>LegacyExchangeDN</strong> de la boîte aux lettres source en tant qu’adresse X500 dans l’attribut <strong>proxyAddresses</strong> de l’utilisateur de messagerie cible.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L’attribut <strong>proxyAddresses</strong> de la boîte aux lettres source doit contenir une adresse SMTP correspondant au contrôleur de domaine de la forêt cible. Cela permet à la cmdlet <strong>New-MoveRequest</strong> de sélectionner correctement l’attribut <strong>targetAddress</strong> de l’utilisateur à extension messagerie source (converti à partir de l’utilisateur de messagerie source après la réalisation de la demande de déplacement de la boîte aux lettres) afin de s’assurer que le routage du courrier fonctionne toujours.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L’attribut <strong>proxyAddresses</strong> de la boîte aux lettres source doit contenir une adresse SMTP correspondant au contrôleur de domaine de la forêt cible. Cela permet à la cmdlet <strong>New-MoveRequest</strong> de sélectionner correctement l’attribut <strong>targetAddress</strong> de l’utilisateur à extension messagerie source (converti à partir de l’utilisateur de messagerie source après la réalisation de la demande de déplacement de la boîte aux lettres) afin de s’assurer que le routage du courrier fonctionne toujours.
 
 </td>
 </tr>
@@ -357,18 +347,8 @@ Si vous souhaitez déplacer une boîte aux lettres vers une forêt de ressources
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une boîte aux lettres liée ne peut être créée que s’il existe une approbation de forêt entre la forêt source et la forêt cible.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Une boîte aux lettres liée ne peut être créée que s’il existe une approbation de forêt entre la forêt source et la forêt cible.
 
 
 Si l’objet source est désactivé et l’attribut **msExchMasterAccountSid** paramétré sur auto (boîte aux lettres de ressources, boîte aux lettres partagée), ne marquez rien dans l’objet utilisateur cible.

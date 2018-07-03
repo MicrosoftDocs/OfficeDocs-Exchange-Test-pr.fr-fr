@@ -31,7 +31,7 @@ Il vous faut donc installer au plus vite les mises à jour de fuseau horaire afi
 
 Du fait que le système d’authentification Office 365 est mis à jour lors du passage à l'heure d’été ou d’un changement de fuseau horaire, tous les ordinateurs clients Office 365 doivent être mis à jour pour ne pas rencontrer de problèmes de connexion.
 
-  - Assurez-vous que tous les ordinateurs clients et de bureau ont installé la mise à jour Windows de passage à l’heure d’été. Pour plus d’informations, consultez la rubrique relative à la [procédure de configuration de l’heure d’été pour les systèmes d’exploitation Microsoft Windows](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=914387).
+  - Assurez-vous que tous les ordinateurs clients et de bureau ont installé la mise à jour Windows de passage à l’heure d’été. Pour plus d’informations, consultez la rubrique relative à la [procédure de configuration de l’heure d’été pour les systèmes d’exploitation Microsoft Windows](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=914387).
 
 ## Étape 2 : Installez la mise à jour Windows de passage à l'heure d’eté sur tous les serveurs
 
@@ -47,7 +47,7 @@ Du fait que le système d’authentification Office 365 est mis à jour lors du 
 
 2.  Envoyez un message à tous vos utilisateurs devant mettre à jour leurs ordinateurs en leur fournissant un lien vers l’outil approprié.
 
-Le tableau suivant indique à quel moment les utilisateurs doivent exécuter l’[outil de mise à jour de calendrier Exchange](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=930879) ou l’[outil de mise à jour des données de fuseau horaire pour Microsoft Office Outlook](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667). Déterminez la version des serveurs que votre organisation utilise, puis les programmes clients que vos utilisateurs utilisent.
+Le tableau suivant indique à quel moment les utilisateurs doivent exécuter l’[outil de mise à jour de calendrier Exchange](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=930879) ou l’[outil de mise à jour des données de fuseau horaire pour Microsoft Office Outlook](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667). Déterminez la version des serveurs que votre organisation utilise, puis les programmes clients que vos utilisateurs utilisent.
 
 
 <table>
@@ -69,45 +69,45 @@ Le tableau suivant indique à quel moment les utilisateurs doivent exécuter l�
 </tr>
 <tr class="odd">
 <td><p><strong>Organisation locale Exchange 2003</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=930879">Outil de calendrier Exchange</a> ou</p>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Outil de mise à jour des données de fuseau horaire pour Microsoft Office Outlook</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=930879">Outil de calendrier Exchange</a> ou</p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Outil de mise à jour des données de fuseau horaire pour Microsoft Office Outlook</a></p></td>
 <td><p>Aucune action n'est requise</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Organisation locale Exchange 2007</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=930879">Outil de calendrier Exchange</a> ou</p>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Outil de mise à jour des données de fuseau horaire pour Microsoft Office Outlook</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=930879">Outil de calendrier Exchange</a> ou</p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Outil de mise à jour des données de fuseau horaire pour Microsoft Office Outlook</a></p></td>
 <td><p>Aucune action n'est requise</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Organisation locale Exchange 2010</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=930879">Outil de calendrier Exchange</a> ou</p>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Outil de mise à jour des données de fuseau horaire pour Microsoft Office Outlook</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=930879">Outil de calendrier Exchange</a> ou</p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Outil de mise à jour des données de fuseau horaire pour Microsoft Office Outlook</a></p></td>
 <td><p>Aucune action n'est requise</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Organisation locale Exchange 2013</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Outil de mise à jour des données de fuseau horaire pour Microsoft Office Outlook</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Outil de mise à jour des données de fuseau horaire pour Microsoft Office Outlook</a></p></td>
 <td><p>Aucune action n'est requise</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>BPOS-S (Exchange 2007)</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Outil de mise à jour des données de fuseau horaire pour Microsoft Office Outlook</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Outil de mise à jour des données de fuseau horaire pour Microsoft Office Outlook</a></p></td>
 <td><p>Aucune action n'est requise</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>BPOS-S (Exchange 2010)</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Outil de mise à jour des données de fuseau horaire pour Microsoft Office Outlook</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Outil de mise à jour des données de fuseau horaire pour Microsoft Office Outlook</a></p></td>
 <td><p>Aucune action n'est requise</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Office 365 (Exchange 2010)</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Outil de mise à jour des données de fuseau horaire pour Microsoft Office Outlook</a> (non pris en charge par Outlook 2003)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Outil de mise à jour des données de fuseau horaire pour Microsoft Office Outlook</a> (non pris en charge par Outlook 2003)</p></td>
 <td><p>Aucune action requise</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Office 365 (Exchange 2013)</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Outil de mise à jour des données de fuseau horaire pour Microsoft Office Outlook</a> (non pris en charge par Outlook 2003)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Outil de mise à jour des données de fuseau horaire pour Microsoft Office Outlook</a> (non pris en charge par Outlook 2003)</p></td>
 <td><p>Aucune action requise</p></td>
 </tr>
 <tr class="odd">

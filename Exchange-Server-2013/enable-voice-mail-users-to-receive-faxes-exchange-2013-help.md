@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2015-04-07_
 
 Microsoft La messagerie unifiée Exchange permet de remettre des messages vocaux à des boîtes aux lettres et permet aux utilisateurs de recevoir des télécopies dans leur boîte aux lettres. Dans la messagerie unifiée, une télécopie est envoyée à la boîte aux lettres d’un utilisateur sous la forme d’un message électronique auquel est joint un fichier image de format .tif. L’utilisateur peut ouvrir le fichier attaché à l’aide d’une application logicielle capable d’ouvrir et d’afficher des fichiers image portant l’extension .tif. Cette rubrique présente la télécopie et la manière dont elle fonctionne dans la messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Bien que la messagerie unifiée ne permette pas aux utilisateurs d’envoyer des télécopies sortantes, de nombreuses solutions tierces, telles que des services de télécopie sur Internet, des services de télécopie par messagerie ou des applications de serveur de télécopie tierces permettent d’envoyer des télécopies sortantes.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Bien que la messagerie unifiée ne permette pas aux utilisateurs d’envoyer des télécopies sortantes, de nombreuses solutions tierces, telles que des services de télécopie sur Internet, des services de télécopie par messagerie ou des applications de serveur de télécopie tierces permettent d’envoyer des télécopies sortantes.
 
 
 **Table des matières**
@@ -333,18 +323,8 @@ Dans certaines organisations, en particulier celles qui reçoivent de nombreuses
 
 La publication d’un seul numéro de télécopie pour toute l’organisation permet à celle-ci de contrôler les types de télécopies reçus par les utilisateurs. L’avantage de cette configuration est qu’elle ne requiert qu’un seul numéro de poste DID ou un seul numéro de téléphone externe. De même, elle ne requiert pas de numéro DID distinct de télécopieur pour chaque utilisateur à extension messagerie unifiée. Toutefois, elle requiert un « préposé aux télécopies » ou une autre personne pour distribuer les télécopies entrantes aux utilisateurs au sein de l’organisation sur la base des informations incluses dans la page de garde de la télécopie ou dans le message de télécopie proprement dit.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L’utilisation d’un numéro de télécopie central avec une reconnaissance optique de caractères (OCR) n’est pas disponible dans la messagerie unifiée Exchange. Ce type de configuration peut utiliser un numéro de télécopieur central. Toutefois, au lieu qu’une personne route la télécopie vers le destinataire, le logiciel de télécopie reçoit la télécopie, effectue l’OCR, puis tente de localiser le destinataire sur la base des informations figurant dans la page de garde ou dans le message de télécopie.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L’utilisation d’un numéro de télécopie central avec une reconnaissance optique de caractères (OCR) n’est pas disponible dans la messagerie unifiée Exchange. Ce type de configuration peut utiliser un numéro de télécopieur central. Toutefois, au lieu qu’une personne route la télécopie vers le destinataire, le logiciel de télécopie reçoit la télécopie, effectue l’OCR, puis tente de localiser le destinataire sur la base des informations figurant dans la page de garde ou dans le message de télécopie.
 
 
 L’utilisation d’un numéro de télécopie unique pour l’ensemble de l’organisation est utile dans les situations suivantes :
@@ -363,18 +343,8 @@ Retour au début
 
 De nombreuses organisations qui implémentent la journalisation peuvent également utiliser une messagerie unifiée pour consolider leur infrastructure de messagerie électronique, de messagerie vocale et de télécopie. Cependant, vous pouvez ne pas vouloir que le traitement de la journalisation génère des états de journal pour les messages générés par la messagerie unifiée. Dans ce cas, vous pouvez décider de journaliser les messages vocaux et les messages de notification d’appel en absence qui sont traités par un serveur de boîtes aux lettres, ou d’ignorer de tels messages. Si votre organisation n’exige pas la journalisation des messages vocaux et des notifications d’appels en absence, vous pouvez réduire l’espace disque requis pour stocker les états de journal en ignorant ces messages. Lorsque vous activez ou désactivez la journalisation des messages vocaux et des messages de notification d’appel en absence, votre changement s’applique à tous les services de transport dans votre organisation. Pour plus d’informations, voir [Journalisation](journaling-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les messages contenant des télécopies qui sont générés par un serveur de boîtes aux lettres sont toujours journalisés, même si vous configurez une règle de journal qui spécifie de ne pas journaliser les messages vocaux de messagerie unifiée et les messages de notification d’appel en absence.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les messages contenant des télécopies qui sont générés par un serveur de boîtes aux lettres sont toujours journalisés, même si vous configurez une règle de journal qui spécifie de ne pas journaliser les messages vocaux de messagerie unifiée et les messages de notification d’appel en absence.
 
 
 Retour au début

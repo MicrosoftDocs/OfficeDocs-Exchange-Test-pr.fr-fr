@@ -63,18 +63,8 @@ Pour les autres tâches de gestion relatives au flux de messagerie, aux clients 
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Comment procéder ?
@@ -103,18 +93,8 @@ Avant d'envoyer un message sur Internet, vous devez créer un connecteur d'envoi
 
 9.  Cliquez sur **Terminer**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Un connecteur de réception entrant par défaut est créé lors de l'installation d'Exchange 2013. Ce connecteur de réception accepte les connexions SMTP anonymes provenant de serveurs externes. Aucune autre configuration n'est nécessaire s'il s'agit de la fonctionnalité souhaitée. Si vous désirez restreindre les connexions entrantes à partir de serveurs externes, modifiez le connecteur de réception du <strong>&lt;serveur d'accès au client&gt; frontal par défaut</strong> sur le serveur d'accès au client.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Un connecteur de réception entrant par défaut est créé lors de l'installation d'Exchange 2013. Ce connecteur de réception accepte les connexions SMTP anonymes provenant de serveurs externes. Aucune autre configuration n'est nécessaire s'il s'agit de la fonctionnalité souhaitée. Si vous désirez restreindre les connexions entrantes à partir de serveurs externes, modifiez le connecteur de réception du <strong>&lt;serveur d'accès au client&gt; frontal par défaut</strong> sur le serveur d'accès au client.
 
 
 ## Comment savoir si cette étape a fonctionné ?
@@ -185,18 +165,8 @@ Si vous avez ajouté un domaine accepté à l'étape précédente et que vous so
 
 8.  Dans le volet d'informations **Stratégie par défaut**, cliquez sur **Appliquer**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous vous recommandons de configurer un nom d'utilisateur principal (UPN) qui corresponde à l'adresse de messagerie principale de chaque utilisateur. Si vous ne fournissez pas de nom d'utilisateur principal correspondant à l'adresse de messagerie d'un utilisateur, celui-ci devra indiquer manuellement son nom de domaine/d'utilisateur ou son nom d'utilisateur principal en plus de son adresse de messagerie. Si le nom d'utilisateur principal correspond à l'adresse de messagerie, Outlook Web App, ActiveSync et Outlook feront automatiquement correspondre l'adresse de messagerie avec le nom d'utilisateur principal.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Nous vous recommandons de configurer un nom d'utilisateur principal (UPN) qui corresponde à l'adresse de messagerie principale de chaque utilisateur. Si vous ne fournissez pas de nom d'utilisateur principal correspondant à l'adresse de messagerie d'un utilisateur, celui-ci devra indiquer manuellement son nom de domaine/d'utilisateur ou son nom d'utilisateur principal en plus de son adresse de messagerie. Si le nom d'utilisateur principal correspond à l'adresse de messagerie, Outlook Web App, ActiveSync et Outlook feront automatiquement correspondre l'adresse de messagerie avec le nom d'utilisateur principal.
 
 
 ## Comment savoir si cette étape a fonctionné ?
@@ -243,30 +213,15 @@ Avant que les clients puissent se connecter à votre nouveau serveur à partir d
 
 11. Dans **Entrer le nom de domaine que vous utiliserez avec vos serveurs d'accès au client externes**, tapez le domaine externe à appliquer. Par exemple, mail.contoso.com. Cliquez sur **Enregistrer**.
     
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Certaines organisations choisissent un nom de domaine complet Outlook Web App unique pour protéger les utilisateurs contre les modifications apportées au nom de domaine complet des serveurs sous-jacents. De nombreuses organisations utilisent owa.contoso.com comme nom de domaine complet Outlook Web App au lieu de mail.contoso.com. Pour configurer un nom de domaine complet Outlook Web App unique, procédez comme suit lorsque vous avez terminé l'étape précédente. Pour suivre cette liste de contrôle, vous devez avoir configuré un nom de domaine complet Outlook Web App unique.
-    <ol>
-    <li><p>Sélectionnez <strong>owa (site web par défaut)</strong> et cliquez sur <strong>Modifier</strong> <img src="images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="Icône Modifier" alt="Icône Modifier" />.</p></li>
-    <li><p>Dans <strong>URL externe</strong>, tapez <strong>https://</strong>, puis le nom de domaine complet Outlook Web App unique à utiliser. Ajoutez ensuite <strong>/owa</strong>. Par exemple, https://owa.contoso.com/owa.</p></li>
-    <li><p>Cliquez sur <strong>Enregistrer</strong>.</p></li>
-    <li><p>Sélectionnez <strong>ecp (site web par défaut)</strong> et cliquez sur <strong>Modifier</strong> <img src="images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="Icône Modifier" alt="Icône Modifier" />.</p></li>
-    <li><p>Dans <strong>URL externe</strong>, tapez <strong>https://</strong>, puis le nom de domaine complet Outlook Web App indiqué à l’étape précédente. Ajoutez ensuite <strong>/ecp</strong>. Par exemple, https://owa.contoso.com/ecp.</p></li>
-    <li><p>Cliquez sur <strong>Enregistrer</strong>.</p></li>
-    </ol></td>
-    </tr>
-    </tbody>
-    </table>
-
+    > [!NOTE]
+	> Certaines organisations choisissent un nom de domaine complet Outlook Web App unique pour protéger les utilisateurs contre les modifications apportées au nom de domaine complet des serveurs sous-jacents. De nombreuses organisations utilisent owa.contoso.com comme nom de domaine complet Outlook Web App au lieu de mail.contoso.com. Pour configurer un nom de domaine complet Outlook Web App unique, procédez comme suit lorsque vous avez terminé l'étape précédente. Pour suivre cette liste de contrôle, vous devez avoir configuré un nom de domaine complet Outlook Web App unique.
+    > <ol>
+    > <li><p>Sélectionnez <strong>owa (site web par défaut)</strong> et cliquez sur <strong>Modifier</strong> <img src="images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="Icône Modifier" alt="Icône Modifier" />.</p></li>
+    > <li><p>Dans <strong>URL externe</strong>, tapez <strong>https://</strong>, puis le nom de domaine complet Outlook Web App unique à utiliser. Ajoutez ensuite <strong>/owa</strong>. Par exemple, https://owa.contoso.com/owa.</p></li>
+    > <li><p>Cliquez sur <strong>Enregistrer</strong>.</p></li>
+    > <li><p>Sélectionnez <strong>ecp (site web par défaut)</strong> et cliquez sur <strong>Modifier</strong> <img src="images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="Icône Modifier" alt="Icône Modifier" />.</p></li>
+    > <li><p>Dans <strong>URL externe</strong>, tapez <strong>https://</strong>, puis le nom de domaine complet Outlook Web App indiqué à l’étape précédente. Ajoutez ensuite <strong>/ecp</strong>. Par exemple, https://owa.contoso.com/ecp.</p></li>
+    > <li><p>Cliquez sur <strong>Enregistrer</strong>.</p></li></ol>
 
 Après avoir configuré l'URL externe sur les répertoires virtuels du serveur d'accès au client, vous devez configurer vos enregistrements DNS publics pour le service de découverte automatique, Outlook Web App et le flux de messagerie. Les enregistrements DNS publics doivent pointer vers le nom de domaine complet ou l'adresse IP externe de votre serveur d'accès au client côté Internet et utiliser les noms de domaine complets accessibles depuis l'extérieur que vous avez configurés sur votre serveur d'accès au client. Les exemples suivants présentent les enregistrements DNS recommandés que vous devez créer pour activer le flux de messagerie et la connectivité client externe.
 
@@ -522,20 +477,9 @@ Pour vous assurer d'avoir configuré correctement vos enregistrements DNS privé
 
 7.  Répétez les étapes 5 et 6 pour chaque répertoire virtuel que vous souhaitez changer.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les URL internes des répertoires virtuels ECP et OWA doivent être les mêmes.<br />
-    Vous ne pouvez pas définir une URL interne sur le répertoire virtuel du service de découverte automatique.</td>
-    </tr>
-    </tbody>
-    </table>
-
+    > [!NOTE]
+	> Les URL internes des répertoires virtuels ECP et OWA doivent être les mêmes.<br />
+    Vous ne pouvez pas définir une URL interne sur le répertoire virtuel du service de découverte automatique.
 
 8.  Enfin, vous devez ouvrir l’environnement de ligne de commande Exchange Management Shell et configurer le carnet d’adresses en mode hors connexion de sorte que la découverte automatique sélectionne le bon répertoire virtuel pour distribuer le carnet d’adresses. Pour cela, exécutez les commandes suivantes.
     

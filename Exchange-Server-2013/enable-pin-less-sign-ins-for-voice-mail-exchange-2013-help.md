@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2015-04-08_
 
 Vous pouvez configurer la messagerie unifiée pour permettre aux utilisateurs de se connecter à leur messagerie vocale sans utiliser de code confidentiel. Par défaut, les utilisateurs d'Outlook Voice Access sont invités à saisir un code confidentiel pour se connecter à leur boîte aux lettres et accéder à leurs messages vocaux et électroniques, leur calendrier, leurs contacts personnels, l'annuaire et les options personnelles.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>En permettant à un utilisateur unique ou à un groupe d'utilisateurs à extension messagerie vocale de se connecter sans code confidentiel, cela réduit le niveau de sécurité de la messagerie vocale et pose un risque de sécurité pour votre organisation.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> En permettant à un utilisateur unique ou à un groupe d'utilisateurs à extension messagerie vocale de se connecter sans code confidentiel, cela réduit le niveau de sécurité de la messagerie vocale et pose un risque de sécurité pour votre organisation.
 
 
 Pour activer les connexions sans code confidentiel, vous devez définir le paramètre *AllowPinlessVoiceMailAccess* sur `$true` dans la stratégie de boîte aux lettres de messagerie unifiée, et définir le paramètre *PinlessAccessToVoiceMailEnabled* sur `$true` dans la boîte aux lettres de messagerie unifiée. Par défaut, ces deux paramètres sont définis sur `$false`, ce qui oblige les utilisateurs d'Outlook Voice Access à saisir leur code confidentiel pour accéder à leur messagerie vocale.

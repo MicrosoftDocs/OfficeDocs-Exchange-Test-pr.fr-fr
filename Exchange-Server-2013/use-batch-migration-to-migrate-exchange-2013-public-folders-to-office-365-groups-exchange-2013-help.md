@@ -57,18 +57,8 @@ La migration par lots vers Groupes Office 365 nécessite l’exécution d’un
 
 Avant de commencer, vérifiez que vous avez téléchargé et enregistré tous les scripts et fichiers suivants :
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Veillez à enregistrer tous les scripts et fichiers au même emplacement.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Veillez à enregistrer tous les scripts et fichiers au même emplacement.
 
 
   - **AddMembersToGroups.ps1**. Ce script ajoute des membres et des propriétaires à Groupes Office 365 en fonction des entrées d’autorisation des dossiers publics sources.
@@ -204,18 +194,8 @@ Une fois que les utilisateurs ont été ajoutés à un groupe dans Office 365, 
 
 Lorsque la majorité des données de vos dossiers publics a été migrée vers Groupes Office 365, vous pouvez exécuter le script `LockAndSavePublicFolderProperties.ps1` sur le serveur Exchange 2013 pour mettre les dossiers publics en lecture seule. Cette étape permet de s’assurer qu’aucune nouvelle donnée n’est ajoutée aux dossiers publics avant la fin de la migration.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>S’il existe des dossiers publics à extension messagerie (MEPF) parmi les dossiers publics migrés, cette étape copie certaines propriétés des MEPF, telles que les adresses SMTP, dans le groupe correspondant dans Office 365, puis désactive la messagerie du dossier public. Étant donné que la messagerie des MEPF migrés est désactivée après l’exécution de ce script, vous commencez à voir des e-mails envoyés aux MEPF au lieu de les recevoir dans les groupes correspondants. Pour obtenir plus d’informations, consultez la rubrique Scripts de migration plus loin dans cet article.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> S’il existe des dossiers publics à extension messagerie (MEPF) parmi les dossiers publics migrés, cette étape copie certaines propriétés des MEPF, telles que les adresses SMTP, dans le groupe correspondant dans Office 365, puis désactive la messagerie du dossier public. Étant donné que la messagerie des MEPF migrés est désactivée après l’exécution de ce script, vous commencez à voir des e-mails envoyés aux MEPF au lieu de les recevoir dans les groupes correspondants. Pour obtenir plus d’informations, consultez la rubrique Scripts de migration plus loin dans cet article.
 
 
 Dans la commande suivante :

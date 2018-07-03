@@ -21,18 +21,8 @@ Si vous souhaitez accorder l’accès à une cmdlet, vous devez ajouter l’entr
 
 Vous ne pouvez pas ajouter des entrées de rôle à des rôles intégrés. Si vous souhaitez personnaliser des rôles, vous devez créer un nouveau rôle. Pour plus d’informations sur la création d’un nouveau rôle, consultez la rubrique [Créer un rôle](create-a-role-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette rubrique ne décrit pas la façon d’ajouter des entrées de rôle de gestion non délimitées à un rôle de gestion non délimité. Pour plus d’informations sur la procédure d’ajout d’entrées de rôle non délimitées, consultez la rubrique <a href="add-a-role-entry-to-an-unscoped-top-level-role-exchange-2013-help.md">Ajouter une entrée de rôle à un rôle de niveau supérieur non délimité</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette rubrique ne décrit pas la façon d’ajouter des entrées de rôle de gestion non délimitées à un rôle de gestion non délimité. Pour plus d’informations sur la procédure d’ajout d’entrées de rôle non délimitées, consultez la rubrique <a href="add-a-role-entry-to-an-unscoped-top-level-role-exchange-2013-help.md">Ajouter une entrée de rôle à un rôle de niveau supérieur non délimité</a>.
 
 
 Souhaitez-vous rechercher les autres tâches de gestion relatives aux rôles ? Consultez la rubrique [Autorisations avancées](advanced-permissions-exchange-2013-help.md).
@@ -51,18 +41,8 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux rôles ? 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

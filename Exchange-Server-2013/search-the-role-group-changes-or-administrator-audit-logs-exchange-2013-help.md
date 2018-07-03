@@ -21,18 +21,8 @@ Vous pouvez effectuer des recherches dans les journaux d’audit de l’administ
 
 Pour effectuer des recherches dans le journal d’audit d’une boîte aux lettres, consultez la rubrique [Enregistrement d’audit dans les boîtes aux lettres](mailbox-audit-logging-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange Online, vous pouvez utiliser le CAE pour afficher les entrées du journal d’audit de l’administrateur. Pour plus d’informations, consultez la rubrique <a href="view-the-administrator-audit-log-exchange-2013-help.md">Consulter le journal d’audit de l’administrateur</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Dans Exchange Online, vous pouvez utiliser le CAE pour afficher les entrées du journal d’audit de l’administrateur. Pour plus d’informations, consultez la rubrique <a href="view-the-administrator-audit-log-exchange-2013-help.md">Consulter le journal d’audit de l’administrateur</a>.
 
 
 ## Ce qu’il faut savoir avant de commencer ?
@@ -49,35 +39,15 @@ Pour effectuer des recherches dans le journal d’audit d’une boîte aux lettr
     
         Set-AdminAuditLogConfig -AdminAuditLogEnabled $true
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>La cmdlet <strong>Set-AdminAuditLogConfig</strong> n'est pas disponible dans Exchange Online.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > La cmdlet <strong>Set-AdminAuditLogConfig</strong> n'est pas disponible dans Exchange Online.
     
     Pour plus d’informations, consultez la rubrique [Gestion de la journalisation d’audit de l’administrateur](manage-administrator-audit-logging-exchange-2013-help.md).
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -100,18 +70,8 @@ Si vous trouvez des modifications selon les critères que vous avez spécifiés,
 
 Pour créer un fichier XML qui contient des modifications apportées à votre organisation, utilisez le rapport « Exporter le journal d’audit de l’administrateur » du Centre d’administration Exchange (EAC). Dans ce rapport, vous pouvez spécifier une plage de dates pour rechercher des entrées du journal d’audit contenant des modifications apportées par des utilisateurs que vous avez spécifiés. Le fichier XML est alors transmis à un destinataire sous la forme d’une pièce jointe à un message électronique. La taille maximale du fichier XML est de 10 mégaoctets (Mo).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook Web App ne vous permet pas d’ouvrir des pièces jointes au format XML par défaut. Vous pouvez soit configurer Exchange de façon à autoriser l’affichage des pièces jointes au format XML à l’aide d’Outlook Web App, soit utiliser un autre client de messagerie électronique, tel que Microsoft Outlook, de façon à afficher la pièce jointe. Pour plus d’informations sur la configuration d’Outlook Web App afin de permettre l’affichage d’une pièce jointe au format XML, consultez la rubrique <a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">Affichage ou configuration des répertoires virtuels d’Outlook Web App</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Outlook Web App ne vous permet pas d’ouvrir des pièces jointes au format XML par défaut. Vous pouvez soit configurer Exchange de façon à autoriser l’affichage des pièces jointes au format XML à l’aide d’Outlook Web App, soit utiliser un autre client de messagerie électronique, tel que Microsoft Outlook, de façon à afficher la pièce jointe. Pour plus d’informations sur la configuration d’Outlook Web App afin de permettre l’affichage d’une pièce jointe au format XML, consultez la rubrique <a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">Affichage ou configuration des répertoires virtuels d’Outlook Web App</a>.
 
 
 1.  Dans le Centre d’administration Exchange (EAC), sélectionnez **Gestion de la conformité** \> **Audit**, puis cliquez sur **Exporter le journal d’audit de l’administrateur**.
@@ -134,18 +94,8 @@ Pour effectuer une recherche dans le journal d’audit d’après les critères 
 
     Search-AdminAuditLog - Cmdlets <cmdlet 1, cmdlet 2, ...> -Parameters <parameter 1, parameter 2, ...> -StartDate <start date> -EndDate <end date> -UserIds <user IDs> -ObjectIds <object IDs> -IsSuccess <$True | $False >
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, la cmdlet <strong>Search-AdminAuditLog</strong> renvoie un maximum de 1 000 entrées du journal. Utilisez le paramètre <em>ResultSize</em> pour spécifier un seuil maximal de 250 000 entrées. ou bien la valeur <code>Unlimited</code> pour renvoyer toutes les entrées.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, la cmdlet <strong>Search-AdminAuditLog</strong> renvoie un maximum de 1 000 entrées du journal. Utilisez le paramètre <em>ResultSize</em> pour spécifier un seuil maximal de 250 000 entrées. ou bien la valeur <code>Unlimited</code> pour renvoyer toutes les entrées.
 
 
 Cet exemple effectue une recherche portant sur toutes les entrées du journal d’audit avec les critères suivants :
@@ -213,18 +163,8 @@ Cette procédure exploite les concepts suivants :
 
 Vous pouvez faire appel à l’environnement de ligne de commande Exchange Management Shell pour rechercher des entrées du journal d’audit qui correspondent aux critères définis, puis transmettre ces résultats à un destinataire de votre choix sous forme de fichier XML en pièce jointe. Les résultats sont envoyés au destinataire dans un délai de 15 minutes. Pour obtenir une liste des critères de recherche, consultez la rubrique [Connexion au service d’audit administrateur](administrator-audit-logging-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook Web App ne vous permet pas d’ouvrir des pièces jointes au format XML par défaut. Vous pouvez soit configurer Exchange de façon à autoriser l’affichage des pièces jointes au format XML à l’aide d’Outlook Web App, soit utiliser un autre client de messagerie électronique, tel que Microsoft Outlook, de façon à afficher la pièce jointe. Pour plus d’informations sur la configuration d’Outlook Web App afin de permettre l’affichage d’une pièce jointe au format XML, consultez la rubrique <a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">Affichage ou configuration des répertoires virtuels d’Outlook Web App</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Outlook Web App ne vous permet pas d’ouvrir des pièces jointes au format XML par défaut. Vous pouvez soit configurer Exchange de façon à autoriser l’affichage des pièces jointes au format XML à l’aide d’Outlook Web App, soit utiliser un autre client de messagerie électronique, tel que Microsoft Outlook, de façon à afficher la pièce jointe. Pour plus d’informations sur la configuration d’Outlook Web App afin de permettre l’affichage d’une pièce jointe au format XML, consultez la rubrique <a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">Affichage ou configuration des répertoires virtuels d’Outlook Web App</a>.
 
 
 Pour effectuer une recherche dans le journal d’audit d’après les critères que vous avez définis, utilisez la syntaxe suivante.
@@ -247,18 +187,8 @@ La commande envoie les résultats à l’adresse SMTP davids@contoso.com avec le
 
     New-AdminAuditLogSearch -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota, ProhibitSendReceiveQuota, IssueWarningQuota, MaxSendSize, MaxReceiveSize -StartDate 08/04/2012 -EndDate 10/03/2012 -UserIds davids, chrisd, kima -StatusMailRecipients davids@contoso.com -Name "Mailbox limit changes"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le rapport créé par la cmdlet <strong>New-AdminAuditLogSearch</strong> peut avoir une taille de 10 Mo au maximum. Si la recherche que vous effectuez émet un rapport d’une taille supérieure à 10 Mo, modifiez les critères de votre recherche. Vous pouvez notamment réduire la taille de la plage de dates et exécuter plusieurs rapports en attribuant à chacun une portion de la plage de dates d’origine.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le rapport créé par la cmdlet <strong>New-AdminAuditLogSearch</strong> peut avoir une taille de 10 Mo au maximum. Si la recherche que vous effectuez émet un rapport d’une taille supérieure à 10 Mo, modifiez les critères de votre recherche. Vous pouvez notamment réduire la taille de la plage de dates et exécuter plusieurs rapports en attribuant à chacun une portion de la plage de dates d’origine.
 
 
 Pour plus d’informations sur le format du fichier XML, consultez la rubrique [Structure du journal d’audit de l’administrateur](administrator-audit-log-structure-exchange-2013-help.md).

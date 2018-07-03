@@ -23,18 +23,8 @@ Lorsque vous placez une boîte aux lettres en conservation pour litige, tous les
 
 ![Placer des éléments Lync en conservation](images/Dn508399.691d2324-9fac-4689-8527-c78d387e0e3e(EXCHG.150).jpg "Placer des éléments Lync en conservation")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez également configurer une obligation de conservation inaltérable pour exclure des éléments Lync. Par exemple, les organisations peuvent préférer conserver des messages instantanés et des éléments de messagerie vocale sur une durée plus courte que pour les autres types de contenu. Pour implémenter ce type de stratégie de conservation, vous devez créer une obligation de conservation inaltérable pour conserver le contenu sur une longue durée (par exemple, 7 ans) et exclure des éléments Lync de cette stratégie. Ensuite, vous devez créer une autre obligation de conservation inaltérable d’une durée plus courte pour conserver uniquement les éléments Lync. Vous pouvez également spécifier la durée pendant laquelle le contenu doit être conservé. Pour plus d’informations sur la création d’une obligation de conservation sur une durée spécifique, consultez la rubrique <a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">Conservation inaltérable et conservation pour litige</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez également configurer une obligation de conservation inaltérable pour exclure des éléments Lync. Par exemple, les organisations peuvent préférer conserver des messages instantanés et des éléments de messagerie vocale sur une durée plus courte que pour les autres types de contenu. Pour implémenter ce type de stratégie de conservation, vous devez créer une obligation de conservation inaltérable pour conserver le contenu sur une longue durée (par exemple, 7 ans) et exclure des éléments Lync de cette stratégie. Ensuite, vous devez créer une autre obligation de conservation inaltérable d’une durée plus courte pour conserver uniquement les éléments Lync. Vous pouvez également spécifier la durée pendant laquelle le contenu doit être conservé. Pour plus d’informations sur la création d’une obligation de conservation sur une durée spécifique, consultez la rubrique <a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">Conservation inaltérable et conservation pour litige</a>.
 
 
 Pour savoir comment placer un utilisateur en conservation, consultez les rubriques suivantes :

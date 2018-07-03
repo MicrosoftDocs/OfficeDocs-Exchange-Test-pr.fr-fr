@@ -31,18 +31,8 @@ Ces fichiers sont stockés sur le serveur d’accès au client, dans le réperto
 
 Après avoir créé un thème, vous pouvez également [Personnaliser les pages de connexion, de sélection de la langue et d’erreur pour Outlook Web App](customize-the-outlook-web-app-sign-in-language-selection-and-error-pages-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La version allégée d'Outlook Web App ne prend pas en charge les thèmes.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La version allégée d'Outlook Web App ne prend pas en charge les thèmes.
 
 
 <table>
@@ -78,18 +68,8 @@ Avant de commencer à créer votre thème personnalisé, créez des copies de sa
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Comment procéder ?
@@ -140,18 +120,8 @@ Pour modifier l'ordre de tri du nouveau thème à l'aide du fichier themeinfo.xm
 
 Ces images sont enregistrées dans deux dossiers dans \\themes*\\\<nom du thème\>*\\images\\. Le dossier \\images\\0 contient les images utilisées pour les langues qui se lisent de gauche à droite (comme le français), et le dossier \\images\\rtl les images utilisées pour les langues qui se lisent de droite à gauche.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Certaines des images du dossier \images\rtl sont identiques à celles du dossier \images\0, mais en miroir.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Certaines des images du dossier \images\rtl sont identiques à celles du dossier \images\0, mais en miroir.
 
 
 Pour personnaliser le thème, vous pouvez utiliser un outil d'édition d'image afin d'ouvrir et de modifier les images suivantes :

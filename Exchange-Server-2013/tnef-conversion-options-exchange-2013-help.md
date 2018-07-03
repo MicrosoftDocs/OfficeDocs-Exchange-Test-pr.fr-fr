@@ -95,18 +95,8 @@ Retour au début
 
 Les expéditeurs peuvent contrôler les options de conversion TNEF par défaut pour les messages TNEF envoyés à tous les destinataires en dehors de l'organisation Exchange. Ces options sont intitulées *Format des messages Internet*. Les options s'appliquent uniquement aux destinataires distants et non aux destinataires dans l'organisation Exchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les options suivantes déterminent la façon dont les messages contenant le format RTF d'Outlook sont traités lorsqu'ils sont envoyés à des destinataires externes. Si le format de message utilisé est HTML ou du texte brut, ces paramètres ne s’appliquent pas.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les options suivantes déterminent la façon dont les messages contenant le format RTF d'Outlook sont traités lorsqu'ils sont envoyés à des destinataires externes. Si le format de message utilisé est HTML ou du texte brut, ces paramètres ne s’appliquent pas.
 
 
 Vous disposez des options de conversion TNEF suivantes dans Outlook :

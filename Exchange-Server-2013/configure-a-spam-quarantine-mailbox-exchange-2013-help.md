@@ -29,18 +29,8 @@ Les messages identifiés comme courrier indésirable par l'agent de filtrage du 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Comment procéder ?
@@ -69,18 +59,8 @@ Pour créer une boîte aux lettres dédiée à la mise en quarantaine du courrie
     
     Vous pouvez appliquer des stratégies de destinataire, comme la gestion des enregistrements de messagerie, des quotas de boîte aux lettres et des droits de délégation, en fonction des stratégies de conformité et des besoins de votre organisation. Pour plus d'informations, consultez la rubrique [Gestion des enregistrements de messagerie](messaging-records-management-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si un message mis en quarantaine est rejeté à cause d'un quota de stockage, ce message est perdu. Exchange ne génère pas de notifications d'échec de remise pour les messages mis en quarantaine, car ceux-ci sont inclus dans des rapports d'échec de remise.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si un message mis en quarantaine est rejeté à cause d'un quota de stockage, ce message est perdu. Exchange ne génère pas de notifications d'échec de remise pour les messages mis en quarantaine, car ceux-ci sont inclus dans des rapports d'échec de remise.
 
 
   - **Configurer Outlook**   Vous devez configurer les droits d'accès de délégué d'Outlook en fonction des besoins de votre organisation. En outre, nous vous recommandons de configurer le profil d'Outlook pour afficher les champs `Sender[#0x0069001E]`, `Recipient[#0x0E04001E]` et `Bcc[#0x0E02001E]` d'origine dans la vue **Message**. Pour plus d'informations, consultez la rubrique [Récupération des messages mis en quarantaine dans la boîte aux lettres de mise en quarantaine du courrier indésirable](release-quarantined-messages-from-the-spam-quarantine-mailbox-exchange-2013-help.md).

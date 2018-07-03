@@ -21,18 +21,8 @@ Microsoft Exchange Server 2013 inclut un composant nommé *Active Manager* qui 
 
 Le rôle gestionnaire Active Manager de secours fournit des informations sur le serveur qui héberge la copie active d'une base de données de boîtes aux lettres aux autres composants d'Exchange qui exécutent un composant client Active Manager (ex. services Accès client ou Transport). Le gestionnaire Active Manager de secours détecte les défaillances des bases de données locales et de la banque d'informations locales. Il réagit aux défaillances en demandant au gestionnaire Active Manager principal d'opérer un basculement (si la base de données est répliquée). Un gestionnaire Active Manager de secours ne détermine pas la cible d’un basculement. Il ne met pas non plus à jour l’état de l’emplacement d’une base de données dans le gestionnaire Active Manager principal. Il accèdera à l'état de l'emplacement de la copie de base de données active pour répondre aux requêtes pour la copie active de la base de données qu'il reçoit.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2013 n’est pas une application en cluster. Exchange 2010 utilise les fonctions de la bibliothèque d'API de cluster implémentées dans le fichier clusapi.dll pour les fonctions de cluster, groupe, réseau de cluster (pulsations), gestion des nœuds, Registre de cluster, et quelques fonctions de code de contrôle. De plus, Active Manager conserve les informations de la base de données de boîtes aux lettres actuelle (ex. les données actives et passives, et les données montées) dans la base de données de clusters (également appelée registre de cluster). Bien que les informations soient stockées directement dans la base de données de clusters, aucun autre composant n'y accède directement.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Exchange 2013 n’est pas une application en cluster. Exchange 2010 utilise les fonctions de la bibliothèque d'API de cluster implémentées dans le fichier clusapi.dll pour les fonctions de cluster, groupe, réseau de cluster (pulsations), gestion des nœuds, Registre de cluster, et quelques fonctions de code de contrôle. De plus, Active Manager conserve les informations de la base de données de boîtes aux lettres actuelle (ex. les données actives et passives, et les données montées) dans la base de données de clusters (également appelée registre de cluster). Bien que les informations soient stockées directement dans la base de données de clusters, aucun autre composant n'y accède directement.
 
 
 Dans Exchange 2013, le service de réplication Microsoft Exchange contrôle régulièrement l'intégrité de toutes les bases de données montées. En outre, il contrôle également le moteur de stockage extensible (ESE, Extensible Storage Engine) afin de détecter d’éventuelles défaillances ou erreurs d’E/S. Lorsque le service détecte une défaillance, il informe le gestionnaire Active Manager. Ce dernier détermine alors la copie de base de données devant être montée, ainsi que les exigences pour le montage de cette base de données. De plus, Active Manager suit la copie active d'une base de données de boîtes aux lettres (en fonction de la dernière copie montée de la base de données) et fournit les résultats du suivi au serveur d'accès client auquel le client est connecté.

@@ -59,18 +59,8 @@ Activation ou désactivation de la journalisation des bases de données par boî
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>. Si vous rencontrez des problèmes avec la boîte aux lettres <strong>JournalingReportDNRTo</strong>, consultez <a href="https://go.microsoft.com/fwlink/p/?linkid=331674">Règles de transport et de boîtes aux lettres dans Exchange Online ne fonctionnent pas comme prévu</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>. Si vous rencontrez des problèmes avec la boîte aux lettres <strong>JournalingReportDNRTo</strong>, consultez <a href="https://go.microsoft.com/fwlink/p/?linkid=331674">Règles de transport et de boîtes aux lettres dans Exchange Online ne fonctionnent pas comme prévu</a>.
 
 
 ## Créer une règle de journal
@@ -87,18 +77,8 @@ Activation ou désactivation de la journalisation des bases de données par boî
     
       - **Envoyer des états de journal à**   Saisissez l’adresse de la boîte aux lettres de journalisation qui recevra tous les états de journal.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Vous pouvez également taper le nom d’affichage ou l’alias d’un utilisateur de messagerie ou d’un contact de messagerie comme boîte aux lettres de journalisation. Dans ce cas, les états de journal sont envoyés à l’adresse e-mail externe de l’utilisateur de messagerie ou du contact de messagerie. Mais comme expliqué précédemment, l’adresse e-mail externe d’un utilisateur de messagerie ou d’un contact de messagerie ne peut pas être l’adresse d’une boîte aux lettres Exchange Online.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Vous pouvez également taper le nom d’affichage ou l’alias d’un utilisateur de messagerie ou d’un contact de messagerie comme boîte aux lettres de journalisation. Dans ce cas, les états de journal sont envoyés à l’adresse e-mail externe de l’utilisateur de messagerie ou du contact de messagerie. Mais comme expliqué précédemment, l’adresse e-mail externe d’un utilisateur de messagerie ou d’un contact de messagerie ne peut pas être l’adresse d’une boîte aux lettres Exchange Online.
 
 
 3.  Cliquez sur **Enregistrer** pour créer la règle de journal.

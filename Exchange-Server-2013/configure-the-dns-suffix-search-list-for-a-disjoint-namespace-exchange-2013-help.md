@@ -27,52 +27,22 @@ Cette rubrique décrit l’utilisation de la console de gestion de stratégies d
 
   - Confirmez que vous avez installé .NET Framework 3.0 sur l’ordinateur sur lequel vous allez installer le GPMC.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>La version actuelle de GPMC téléchargeable à partir du Centre de téléchargement Microsoft fonctionne sur les versions 32 bits des systèmes d’exploitation Windows Server 2003 et Windows XP et peut gérer à distance les objets de stratégie de groupe sur les contrôleurs de domaine 32 bits et 64 bits. Cette version de GPMC ne comprend pas de version 64 bits, et la version 32 bits ne s’exécute pas sur les plates-formes 64 bits. La version 32 bits d’Windows Server 2008 et la version 32 bits d’Windows Vista comprennent une version 32 bits de GPMC. La version 64 bits d’Windows Server 2008 et la version 64 bits d’Windows Vista comprennent une version 64 bits de GPMC.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > La version actuelle de GPMC téléchargeable à partir du Centre de téléchargement Microsoft fonctionne sur les versions 32 bits des systèmes d’exploitation Windows Server 2003 et Windows XP et peut gérer à distance les objets de stratégie de groupe sur les contrôleurs de domaine 32 bits et 64 bits. Cette version de GPMC ne comprend pas de version 64 bits, et la version 32 bits ne s’exécute pas sur les plates-formes 64 bits. La version 32 bits d’Windows Server 2008 et la version 32 bits d’Windows Vista comprennent une version 32 bits de GPMC. La version 64 bits d’Windows Server 2008 et la version 64 bits d’Windows Vista comprennent une version 64 bits de GPMC.
 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser la console GPMC pour configurer la liste de recherche de suffixe DNS
 
 1.  Sur un ordinateur 32 bits dans votre domaine, installez GPMC avec le Service Pack 1 (SP1). Pour obtenir des informations de téléchargement, voir [Console de gestion des stratégies de groupes avec Service Pack 1](https://go.microsoft.com/fwlink/p/?linkid=100126).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous disposez d’un ordinateur dans votre domaine qui exécute Windows Server 2008 ou Windows Vista, vous pouvez ignorer cette étape.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous disposez d’un ordinateur dans votre domaine qui exécute Windows Server 2008 ou Windows Vista, vous pouvez ignorer cette étape.
 
 
 2.  Cliquez sur **Démarrer** \> **Programmes** \> **Outils d’administration** \> **Gestion des stratégies de groupe**.

@@ -68,9 +68,9 @@ Pour résoudre ce problème, supprimez tous les composants ADC et recommencez l�
 
 Pour plus d’informations sur le connecteur ADC, voir les articles suivants de la Base de connaissances Microsoft :
 
-  - 325300, « Webdiffusion du support : Introduction au connecteur Active Directory » ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325300](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=325300)).
+  - 325300, « Webdiffusion du support : Introduction au connecteur Active Directory » ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325300](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325300)).
 
-  - 325221, « présentation technique en ligne : Microsoft Advanced connecteur Active Directory » ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325221](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=325221)).
+  - 325221, « présentation technique en ligne : Microsoft Advanced connecteur Active Directory » ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325221](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325221)).
 
-  - 312632, « Comment faire installer et configurer le connecteur Active Directory dans Exchange 2000 Server » ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=312632](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=312632)).
+  - 312632, « Comment faire installer et configurer le connecteur Active Directory dans Exchange 2000 Server » ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=312632](https://go.microsoft.com/fwlink/?linkid=3052&kbid=312632)).
 

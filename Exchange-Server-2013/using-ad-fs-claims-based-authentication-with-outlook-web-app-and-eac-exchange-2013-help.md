@@ -33,18 +33,8 @@ Pour les déploiements d’Exchange 2013 Service Pack 1 (SP1) sur site, une f
 
 L’authentification est le processus visant à confirmer l’identité d’un utilisateur. Elle vérifie que l’utilisateur est bien la personne qu’il prétend être. L’identité basée sur les revendications est une autre approche de l’authentification. L’authentification basée sur les revendications supprime la gestion de l’authentification de l’application (en l’occurrence, Outlook Web App et le CAE) pour faciliter la gestion des comptes en centralisant l’authentification. Outlook Web App et le CAE ne sont pas en charge de l’authentification des utilisateurs, du stockage des comptes et des mots de passe d’utilisateurs, de la recherche de détails sur l’identité de l’utilisateur, ni de l’intégration à d’autres systèmes d’identité. La centralisation de l’authentification permet de simplifier la mise à niveau vers les méthodes d’authentification à venir.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>OWA pour les périphériques ne prend pas en charge l’authentification basée sur les revendications AD FS.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> OWA pour les périphériques ne prend pas en charge l’authentification basée sur les revendications AD FS.
 
 
 Plusieurs versions d’AD FS peuvent être utilisées, comme le résume le tableau suivant.
@@ -131,18 +121,8 @@ Additional information you might want to know
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Étape 1 – Vérifier les exigences de certificats pour AD FS
@@ -187,18 +167,8 @@ Lorsque vous configurez Exchange 2013 SP1, AD FS et le proxy d’application w
         
           - Autre nom de l’objet (SAN) : aucun
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Lorsque vous remplacez le certificat de signature de jetons sur AD FS, les approbations de partie de confiance existantes doivent être mises à jour pour utiliser le nouveau certificat de signature de jetons.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Lorsque vous remplacez le certificat de signature de jetons sur AD FS, les approbations de partie de confiance existantes doivent être mises à jour pour utiliser le nouveau certificat de signature de jetons.
 
 
   - **Proxy d’application web**
@@ -209,18 +179,8 @@ Lorsque vous configurez Exchange 2013 SP1, AD FS et le proxy d’application w
         
           - Autre nom de l’objet (SAN) : aucun
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Si votre URL externe de proxy d’application web est identique à votre URL interne, vous pouvez réutiliser le certificat SSL Exchange.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Si votre URL externe de proxy d’application web est identique à votre URL interne, vous pouvez réutiliser le certificat SSL Exchange.
     
       - Certificat SSL de proxy AD FS
         
@@ -232,18 +192,8 @@ Lorsque vous configurez Exchange 2013 SP1, AD FS et le proxy d’application w
 
 Pour plus d’informations sur les certificats, consultez la section relative aux exigences de certificats dans [Vérifier les conditions requises pour le déploiement d’AD FS](https://go.microsoft.com/fwlink/?linkid=392699).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Un certificat de chiffrement SSL est toujours nécessaire pour Outlook Web App et le CAE, même si vous disposez d’un certificat SSL pour AD FS. Le certificat SSL est utilisé sur les répertoires virtuels OWA et ECP.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Un certificat de chiffrement SSL est toujours nécessaire pour Outlook Web App et le CAE, même si vous disposez d’un certificat SSL pour AD FS. Le certificat SSL est utilisé sur les répertoires virtuels OWA et ECP.
 
 
 ## Étape 2 – Installer et configurer les services AD FS (Active Directory Federation Services)
@@ -268,18 +218,8 @@ Pour installer AD FS sur Windows Server 2012 R2 :
 
 7.  Sur la page **Confirmer les sélections d’installation**, sélectionnez **Redémarrer automatiquement le serveur de destination, si nécessaire**, puis cliquez sur **Installer**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Ne fermez pas l’Assistant pendant le processus d’installation.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Ne fermez pas l’Assistant pendant le processus d’installation.
 
 
 Après avoir installé les serveurs AD FS requis et généré les certificats requis, vous devez configurer AD FS, puis vérifier que les services AD FS fonctionnent correctement. Vous pouvez également utiliser la liste de contrôle ci-après pour vous aider à installer et configurer AD FS : [Liste de contrôle : Configuration d’un serveur de fédération](https://go.microsoft.com/fwlink/?linkid=392700).
@@ -302,18 +242,8 @@ Pour configurer Active Directory Federation Services :
 
 5.  Sur la page **Spécifier un compte de service**, sélectionnez **Utiliser un compte d’utilisateur de domaine ou de service administré de type groupe existant**, puis spécifiez le compte GMSA (FsGmsa) que vous avez créé lors de la création du contrôleur de domaine. Incluez les paramètres de compte, puis cliquez sur **Suivant**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le compte de service géré globalement (GMSA) est un compte qui doit être créé lors de la configuration d’un contrôleur de domaine. Le compte GMSA est obligatoire lors de l’installation et la configuration d’AD FS. Si vous n’avez pas encore créé ce compte, exécutez la commande Windows PowerShell suivante. Elle crée le compte pour le domaine contoso.com et le serveur AD FS :</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le compte de service géré globalement (GMSA) est un compte qui doit être créé lors de la configuration d’un contrôleur de domaine. Le compte GMSA est obligatoire lors de l’installation et la configuration d’AD FS. Si vous n’avez pas encore créé ce compte, exécutez la commande Windows PowerShell suivante. Elle crée le compte pour le domaine contoso.com et le serveur AD FS :
 
 
 6.  Exécutez la commande suivante.
@@ -350,18 +280,8 @@ Pour toutes les applications et tous les services que vous souhaitez publier via
 
 Le CAE utilise le répertoire virtuel ECP. Vous pouvez afficher ou configurer les paramètres du CAE à l’aide des cmdlets [Get-EcpVirtualDirectory](https://technet.microsoft.com/fr-fr/library/dd351058\(v=exchg.150\)) et [Set-EcpVirtualDirectory](https://technet.microsoft.com/fr-fr/library/dd297991\(v=exchg.150\)). Pour accéder au CAE, vous devez utiliser un navigateur web et accéder à **http://server1.contoso.com/ecp**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L’inclusion de la barre oblique finale <strong>/</strong> dans les exemples d’URL ci-dessous est intentionnelle. Il est important de s’assurer que les approbations de partie de confiance AD FS et les URI d’audience Exchange <strong>sont identiques</strong>. Cela signifie que les approbations de partie de confiance AD FS et les URI d’audience Exchange doivent <strong>avoir</strong> ou <strong>générer</strong> des barres obliques finales dans leur URL. Les exemples de cette section contiennent la barre oblique finale <strong>/</strong> à la fin de chaque URL se terminant par « owa » ( /owa/) ou « ecp » ( /ecp/).</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L’inclusion de la barre oblique finale <strong>/</strong> dans les exemples d’URL ci-dessous est intentionnelle. Il est important de s’assurer que les approbations de partie de confiance AD FS et les URI d’audience Exchange <strong>sont identiques</strong>. Cela signifie que les approbations de partie de confiance AD FS et les URI d’audience Exchange doivent <strong>avoir</strong> ou <strong>générer</strong> des barres obliques finales dans leur URL. Les exemples de cette section contiennent la barre oblique finale <strong>/</strong> à la fin de chaque URL se terminant par « owa » ( /owa/) ou « ecp » ( /ecp/).
 
 
 Pour Outlook Web App, pour créer des approbations de partie de confiance à l’aide du composant logiciel enfichable de gestion d’AD FS dans Windows Server 2012 R2 :
@@ -466,34 +386,14 @@ Vous pouvez également créer des approbations de partie de confiance et des rè
 
 ## Étape 4 – Installer le service de rôle de proxy d’application web (facultatif)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les étapes 4, 5 et 6 sont destinées aux utilisateurs qui veulent publier ECP et OWA pour Exchange à l’aide du proxy d’application web, et que ce dernier effectue l’authentification AD FS. Toutefois, la publication d’Exchange avec le proxy d’application web n’étant pas obligatoire, vous pouvez passer à l’étape 7 si vous n’utilisez pas le proxy d’application web et ne voulez pas qu’Exchange effectue l’authentification AD FS lui-même.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les étapes 4, 5 et 6 sont destinées aux utilisateurs qui veulent publier ECP et OWA pour Exchange à l’aide du proxy d’application web, et que ce dernier effectue l’authentification AD FS. Toutefois, la publication d’Exchange avec le proxy d’application web n’étant pas obligatoire, vous pouvez passer à l’étape 7 si vous n’utilisez pas le proxy d’application web et ne voulez pas qu’Exchange effectue l’authentification AD FS lui-même.
 
 
 Le proxy d’application web est un nouveau service de rôle d’accès à distance dans Windows Server 2012 R2. Le proxy d’application web offre une fonctionnalité de proxy inverse pour les applications web de votre réseau d’entreprise, pour permettre aux utilisateurs d’accéder aux différents appareils qu’ils utilisent depuis l’extérieur du réseau d’entreprise. Le proxy d’application web authentifie au préalable l’accès aux applications web à l’aide des services Active Directory Federation Services (AD FS) et fonctionne également en tant que proxy AD FS. Même si le proxy d’application web n’est pas obligatoire, il est recommandé lorsque des clients externes peuvent accéder à AD FS. Toutefois, l’accès hors connexion à Outlook Web App n’est pas pris en charge lorsque l’authentification AD FS est utilisée via le proxy d’application web. Pour plus d’informations sur l’intégration avec le proxy d’application web, consultez la rubrique [Installation et configuration du proxy d’application web pour les applications internes de publication](https://go.microsoft.com/fwlink/?linkid=392705)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas installer le proxy d’application web sur le serveur où AD FS est installé.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Vous ne pouvez pas installer le proxy d’application web sur le serveur où AD FS est installé.
 
 
 Pour déployer le proxy d’application web, vous devez installer le rôle de serveur d’accès à distance avec le service de rôle de proxy d’application web sur un serveur qui fera office de serveur proxy d’application web. Pour installer le service de rôle de proxy d’application web :
@@ -574,18 +474,8 @@ Pour publier Outlook Web App et le CAE à l’aide du proxy d’application web�
     
     4.  Dans la zone **URL du serveur principal**, entrez l’URL du serveur principal. Notez que cette valeur est saisie automatiquement lorsque vous entrez l’URL externe et que vous devez la modifier uniquement si l’URL du serveur principal est différente, par exemple, **https://mail.contoso.com/owa** pour Outlook Web App et **https://mail.contoso.com/ecp** pour le CAE.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le proxy d’application web peut convertir des noms d’hôte en URL, mais ne peut pas convertir les chemins d’accès. Par conséquent, vous pouvez entrer des noms d’hôte différents, mais vous devez entrer le même chemin. Par exemple, vous pouvez entrer l’URL externe <em>https://external.contoso.com/app1/</em> et l’URL de serveur principal <em>https://mail.contoso.com/app1/</em>. Cependant, vous ne pouvez pas entrer l’URL externe <em>https://external.contoso.com/app1/</em> et l’URL de serveur principal <em>https://mail.contoso.com/internal-app1/</em>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le proxy d’application web peut convertir des noms d’hôte en URL, mais ne peut pas convertir les chemins d’accès. Par conséquent, vous pouvez entrer des noms d’hôte différents, mais vous devez entrer le même chemin. Par exemple, vous pouvez entrer l’URL externe <em>https://external.contoso.com/app1/</em> et l’URL de serveur principal <em>https://mail.contoso.com/app1/</em>. Cependant, vous ne pouvez pas entrer l’URL externe <em>https://external.contoso.com/app1/</em> et l’URL de serveur principal <em>https://mail.contoso.com/internal-app1/</em>.
 
 
 6.  Sur la page **Confirmation**, vérifiez les paramètres, puis cliquez sur **Publier**. Vous pouvez copier la commande Windows PowerShell pour configurer des applications publiées supplémentaires.
@@ -617,18 +507,8 @@ Dans Exchange Management Shell, exécutez les commandes suivantes.
     $uris = @(" https://mail.contoso.com/owa/","https://mail.contoso.com/ecp/")
     Set-OrganizationConfig -AdfsIssuer "https://adfs.contoso.com/adfs/ls/" -AdfsAudienceUris $uris -AdfsSignCertificateThumbprint "88970C64278A15D642934DC2961D9CCA5E28DA6B"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le paramètre <em>-AdfsEncryptCertificateThumbprint</em> n’est pas pris en charge pour ces scénarios.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le paramètre <em>-AdfsEncryptCertificateThumbprint</em> n’est pas pris en charge pour ces scénarios.
 
 
 Pour plus de détails et d’informations sur la syntaxe, consultez les rubriques [Set-OrganizationConfig](https://technet.microsoft.com/fr-fr/library/aa997443\(v=exchg.150\)) et [Get-ADFSCertificate](https://go.microsoft.com/fwlink/?linkid=392706).
@@ -659,18 +539,8 @@ Configurer le répertoire virtuel OWA à l’aide d’Exchange Management Shell.
 
     Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -WindowsAuthentication $false -OAuthAuthentication $false
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les commandes Exchange Management Shell précédentes configurer les répertoires virtuels OWA et ECP sur chaque serveur d’accès Client de votre organisation. Si vous ne souhaitez pas appliquer ces paramètres à tous les serveurs d’accès Client, utilisez le paramètre <em>-Identity</em> et spécifiez le serveur d’accès Client. Il est probable que vous souhaitez appliquer ces paramètres uniquement vers les serveurs d’accès Client de votre organisation qui sont Internet en vis-à-vis.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les commandes Exchange Management Shell précédentes configurer les répertoires virtuels OWA et ECP sur chaque serveur d’accès Client de votre organisation. Si vous ne souhaitez pas appliquer ces paramètres à tous les serveurs d’accès Client, utilisez le paramètre <em>-Identity</em> et spécifiez le serveur d’accès Client. Il est probable que vous souhaitez appliquer ces paramètres uniquement vers les serveurs d’accès Client de votre organisation qui sont Internet en vis-à-vis.
 
 
 Pour plus de détails et d’informations sur la syntaxe, reportez-vous aux rubriques [Get-OwaVirtualDirectory](https://technet.microsoft.com/fr-fr/library/aa998588\(v=exchg.150\)) et [Set-OwaVirtualDirectory](https://technet.microsoft.com/fr-fr/library/bb123515\(v=exchg.150\)) ou [Get-EcpVirtualDirectory](https://technet.microsoft.com/fr-fr/library/dd351058\(v=exchg.150\)) et [Set-EcpVirtualDirectory](https://technet.microsoft.com/fr-fr/library/dd297991\(v=exchg.150\)).

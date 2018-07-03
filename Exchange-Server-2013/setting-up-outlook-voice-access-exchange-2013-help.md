@@ -93,50 +93,20 @@ Voici quelques exemples d’utilisation d’Outlook Voice Access sur un téléph
 
   - **Accès au calendrier**   Un utilisateur Outlook Voice Access appelle un numéro Outlook Voice Access à partir d’un téléphone et souhaite accéder à son calendrier. Le message d'assistance vocale dit : « Bienvenue, vous êtes connecté à Microsoft Exchange. Pour accéder à votre boîte aux lettres, entrez votre numéro de poste. Pour contacter une personne, appuyez sur la touche dièse. » Après que l’utilisateur ait saisi un numéro de poste, le message d’assistance vocale dit : « Entrez votre code confidentiel, puis appuyez sur la touche dièse. » Après que l’utilisateur ait saisit son code confidentiel, le message d’assistance vocale dit : « Vous avez deux nouveaux messages vocaux, 10 nouveaux messages électroniques et votre prochaine réunion est prévue à 10h00. Dites messagerie vocale, messagerie électronique, calendrier, contacts personnels, annuaire ou options personnelles. » Lorsque l’utilisateur dit « Calendrier », le système de messagerie vocale répond : « D’accord et quel jour dois-je ouvrir ? » L’utilisateur dit : « Aujourd’hui ». Le système de messagerie vocale répond en disant : « Ouverture du calendrier du jour ». Le système de messagerie vocale lit à l’utilisateur tous les rendez-vous de cette journée du calendrier.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si un serveur de boîtes aux lettres exécutant le service de messagerie unifiée Microsoft Exchange rencontre un élément de calendrier endommagé dans la boîte aux lettres d’un utilisateur, il ne pourra pas lire l’élément, mais renverra l’appelant au menu principal d’Outlook Voice Access, et ne lira pas les autres réunions planifiées pour le reste de la journée.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si un serveur de boîtes aux lettres exécutant le service de messagerie unifiée Microsoft Exchange rencontre un élément de calendrier endommagé dans la boîte aux lettres d’un utilisateur, il ne pourra pas lire l’élément, mais renverra l’appelant au menu principal d’Outlook Voice Access, et ne lira pas les autres réunions planifiées pour le reste de la journée.
 
 
   - **Accès à la messagerie vocale**   Un utilisateur Outlook Voice Access appelle un numéro Outlook Voice Access à partir d’un téléphone et souhaite accéder à sa messagerie vocale. Le message d'assistance vocale dit : « Bienvenue, vous êtes connecté à Microsoft Exchange. Pour accéder à votre boîte aux lettres, entrez votre numéro de poste. Pour contacter une personne, appuyez sur la touche dièse. » Après que l’utilisateur ait saisi un numéro de poste, le message d’assistance vocale dit : « Entrez votre code confidentiel, puis appuyez sur la touche dièse ». Après que l’utilisateur ait saisit son code confidentiel, le message d’assistance vocale dit : « Vous avez deux nouveaux messages vocaux, 10 nouveaux messages électroniques et votre prochaine réunion est prévue à 10h00. Dites messagerie vocale, messagerie électronique, calendrier, contacts personnels, annuaire ou options personnelles ». L’utilisateur prononce « Messagerie vocale », et la messagerie unifiée lit l’en-tête du message, puis le nom, l’objet, l’heure et l’importance des messages vocaux contenus dans la boîte aux lettres de l’utilisateur.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si la reconnaissance vocale est activée, les utilisateurs peuvent accéder à leur boîte aux lettres à extension messagerie unifiée à l’aide d’instructions vocales. Les abonnés peuvent également utiliser un système à tonalité, également appelé DTMF (multifréquence bi-tonalité), en appuyant sur 0. La reconnaissance vocale n’est pas activée pour l’entrée de code confidentiel.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si la reconnaissance vocale est activée, les utilisateurs peuvent accéder à leur boîte aux lettres à extension messagerie unifiée à l’aide d’instructions vocales. Les abonnés peuvent également utiliser un système à tonalité, également appelé DTMF (multifréquence bi-tonalité), en appuyant sur 0. La reconnaissance vocale n’est pas activée pour l’entrée de code confidentiel.
 
 
   - **Rechercher un utilisateur dans l’annuaire**   Un utilisateur Outlook Voice Access appelle un numéro Outlook Voice Access à partir d’un téléphone et souhaite rechercher une personne dans l’annuaire en épelant son alias de messagerie. Le message d'assistance vocale dit : « Bienvenue, vous êtes connecté à Microsoft Exchange. Pour contacter une personne, appuyez sur la touche dièse. » L’utilisateur appuie sur la touche dièse, pus utilise les entrées à tonalité pour épeler l’adresse SMTP de la personne.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>La fonction de recherche dans l’annuaire avec un numéro Outlook Voice Access n’est pas activée pour la reconnaissance vocale. Les utilisateurs peuvent épeler le nom de la personne qu’ils souhaitent contacter uniquement en utilisant des entrées à tonalité.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > La fonction de recherche dans l’annuaire avec un numéro Outlook Voice Access n’est pas activée pour la reconnaissance vocale. Les utilisateurs peuvent épeler le nom de la personne qu’ils souhaitent contacter uniquement en utilisant des entrées à tonalité.
     
     <table>
     <thead>
@@ -169,18 +139,8 @@ Les utilisateurs peuvent utiliser Outlook Voice Access pour envoyer ou transfé
 
 Ils peuvent envoyer des messages et des demandes de réunion à l’aide de l’interface utilisateur vocale (si la reconnaissance vocale a été activée) ou à l’aide des entrées à tonalité sur le pavé numérique de son téléphone. Ils peuvent également utiliser Outlook Voice Access pour écouter les détails relatifs à un groupe, y compris les membres qui le composent.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si un utilisateur essaie d’envoyer un message à un groupe (soit un groupe de distribution de son carnet d’adresses partagé, soit un groupe de contacts de son dossier Contacts personnels) qui ne comporte pas de membres, le système de messagerie vocale ne vous donne pas la possibilité d’envoyer ou de transférer le message ou la demande de réunion. S’ils essaient d’ajouter un groupe sans membre comme l’un des destinataires d’un message ou d’une demande de réunion qu’ils ont créé sur le téléphone, le système de messagerie vocale n’ajoutera pas le groupe au message et dira « Le message n’a pas pu être envoyé car le contact ne semble pas avoir d’adresse de messagerie valide. »</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si un utilisateur essaie d’envoyer un message à un groupe (soit un groupe de distribution de son carnet d’adresses partagé, soit un groupe de contacts de son dossier Contacts personnels) qui ne comporte pas de membres, le système de messagerie vocale ne vous donne pas la possibilité d’envoyer ou de transférer le message ou la demande de réunion. S’ils essaient d’ajouter un groupe sans membre comme l’un des destinataires d’un message ou d’une demande de réunion qu’ils ont créé sur le téléphone, le système de messagerie vocale n’ajoutera pas le groupe au message et dira « Le message n’a pas pu être envoyé car le contact ne semble pas avoir d’adresse de messagerie valide. »
 
 
 ## Choix d’une langue
@@ -193,18 +153,8 @@ Vue d’ensemble d’Outlook Voice Access
 
 Par défaut, lorsque les utilisateurs se connectent à Outlook Voice Access, ils peuvent utiliser le téléphone pour accéder à leur calendrier, leur messagerie et leurs contacts personnels, et effectuer des recherches dans l’annuaire. Vous pouvez utiliser l’environnement de ligne de commande Exchange Management Shell pour empêcher les utilisateurs d’accéder à une ou plusieurs de ces fonctionnalités lorsqu’ils utilisent Outlook Voice Access pour accéder à leur boîte aux lettres. Lorsque vous modifiez les fonctionnalités d’Outlook Voice Access sur une stratégie de boîte aux lettres de messagerie unifiée, vos modifications concernent tous les utilisateurs qui sont associés à la stratégie de boîte aux lettres de messagerie unifiée. Vous pouvez également désactiver certaines fonctionnalités sur une boîte aux lettres d’utilisateur unique, même si d’autres fonctionnalités peuvent être uniquement désactivées sur une stratégie de boîte aux lettres de MU et qu’elles ne sont pas disponibles sur une boîte aux lettres individuelle.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez uniquement utiliser l’environnement de ligne de commande Exchange Management Shell pour modifier les paramètres TUI d’Outlook Voice Access pour les utilisateurs à extension messagerie unifiée ou les stratégies de boîtes aux lettres de MU.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez uniquement utiliser l’environnement de ligne de commande Exchange Management Shell pour modifier les paramètres TUI d’Outlook Voice Access pour les utilisateurs à extension messagerie unifiée ou les stratégies de boîtes aux lettres de MU.
 
 
 **Paramètres de stratégie de boîte aux lettres de MU**   Vous pouvez désactiver l’accès utilisateur aux fonctionnalités d’Outlook Voice Access suivantes sur une stratégie de boîte aux lettres de MU :

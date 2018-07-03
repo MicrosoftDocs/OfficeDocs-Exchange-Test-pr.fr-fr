@@ -93,18 +93,8 @@ Les types de groupes de remise présents dans Exchange 2013 sont les suivants 
     
       - Lorsqu’un serveur de transport Edge est abonné au site Active Directory. Ces serveurs de transport Edge abonnés ne sont pas directement accessibles à partir d'autres sites Active Directory. Notez que le serveur de transport Edge peut être un serveur Exchange 2013, Exchange 2010 ou Exchange 2007.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>La distribution ramifiée retardée est utilisée uniquement lorsque le groupe de remise est un site Active Directory. La distribution ramifiée retardée tente de réduire le nombre de transmissions de messages lorsque plusieurs destinataires partagent une partie de l'itinéraire de routage le moins coûteux.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > La distribution ramifiée retardée est utilisée uniquement lorsque le groupe de remise est un site Active Directory. La distribution ramifiée retardée tente de réduire le nombre de transmissions de messages lorsque plusieurs destinataires partagent une partie de l'itinéraire de routage le moins coûteux.
 
 
   - **Liste de serveurs**   Ensemble constitué d'un ou plusieurs serveurs de transport Hub Exchange 2010 ou Exchange 2007, ou serveurs de boîtes aux lettres Exchange 2013 configurés en tant que serveurs d'expansion de groupe de distribution. Le serveur d'expansion de groupe de distribution est la destination de routage traitée par ce groupe de remise.

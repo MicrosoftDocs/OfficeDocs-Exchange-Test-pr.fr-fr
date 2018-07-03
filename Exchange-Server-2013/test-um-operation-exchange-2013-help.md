@@ -37,18 +37,8 @@ Pour d’autres tâches de gestion relatives aux serveurs d’accès au client e
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Utiliser l’environnement Shell pour tester le fonctionnement des services de messagerie unifiée
@@ -65,30 +55,10 @@ Cet exemple indique comment tester la capacité d’un serveur d’accès au cli
 
     Test-UMConnectivity -ListenPort 5061
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Utilisez le mode 1 lorsque le paramètre <code>-UMIPGateway</code> n’est pas spécifié.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Utilisez le mode 1 lorsque le paramètre <code>-UMIPGateway</code> n’est pas spécifié.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez définir ce paramètre <code>-Timeout</code> avec une valeur inférieure à 5 secondes. Il est toutefois recommandé de toujours configurer ce paramètre avec une valeur minimale de 5 secondes.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez définir ce paramètre <code>-Timeout</code> avec une valeur inférieure à 5 secondes. Il est toutefois recommandé de toujours configurer ce paramètre avec une valeur minimale de 5 secondes.
 

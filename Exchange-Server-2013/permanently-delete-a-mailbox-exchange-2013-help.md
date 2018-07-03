@@ -31,18 +31,8 @@ Pour plus d’informations sur les boîtes aux lettres déconnectées et sur l�
 
   - [Connexion ou restauration d’une boîte aux lettres supprimée](connect-or-restore-a-deleted-mailbox-exchange-2013-help.md)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le Centre d’administration Exchange (EAC) pour supprimer définitivement une boîte aux lettres active ou déconnectée.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le Centre d’administration Exchange (EAC) pour supprimer définitivement une boîte aux lettres active ou déconnectée.
 
 
 ## Ce qu’il faut savoir avant de commencer ?
@@ -53,18 +43,8 @@ Pour plus d’informations sur les boîtes aux lettres déconnectées et sur l�
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -77,18 +57,8 @@ Exécuter la commande suivante pour supprimer définitivement une boîte aux let
 
     Remove-Mailbox -Identity <identity> -Permanent $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous n’incluez pas le paramètre <em>Permanent</em>, la boîte aux lettres est conservée dans la base de données de boîtes aux lettres pendant 30 jours, par défaut, avant d’être supprimée définitivement.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous n’incluez pas le paramètre <em>Permanent</em>, la boîte aux lettres est conservée dans la base de données de boîtes aux lettres pendant 30 jours, par défaut, avant d’être supprimée définitivement.
 
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-Mailbox](https://technet.microsoft.com/fr-fr/library/aa995948\(v=exchg.150\)).
@@ -123,18 +93,8 @@ Exécuter la commande suivante pour afficher le type de toutes les boîtes aux l
 
     Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -ne $null } | fl DisplayName,MailboxGuid,Database,DisconnectReason
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous utilisez la cmdlet <strong>Remove-StoreMailbox</strong> pour supprimer définitivement une boîte aux lettres déconnectée, tout son contenu est purgé de la base de données de boîtes aux lettres et la perte des données est définitive.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Lorsque vous utilisez la cmdlet <strong>Remove-StoreMailbox</strong> pour supprimer définitivement une boîte aux lettres déconnectée, tout son contenu est purgé de la base de données de boîtes aux lettres et la perte des données est définitive.
 
 
 Cet exemple supprime définitivement la boîte aux lettres désactivée portant le GUID 2ab32ce3-fae1-4402-9489-c67e3ae173d3 de la base de données de boîtes aux lettres MBD01.

@@ -21,18 +21,8 @@ Une copie de base de données de boîte aux lettres retardée est configurée av
 
 Vous recherchez des informations supplémentaires sur les copies retardées de base de données de boîtes aux lettres ? Consultez la rubrique [Gestion des copies de base de données de boîtes aux lettres](managing-mailbox-database-copies-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le délai nécessaire à l'activation d'une copie de base de données de boîte aux lettres retardée dépend directement du nombre de fichiers journaux devant être relus ainsi que de la vitesse de lecture permise par le matériel. Vous pouvez voir, au minimum, une fréquence de relecture d’au moins deux journaux par seconde et par base de données.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le délai nécessaire à l'activation d'une copie de base de données de boîte aux lettres retardée dépend directement du nombre de fichiers journaux devant être relus ainsi que de la vitesse de lecture permise par le matériel. Vous pouvez voir, au minimum, une fréquence de relecture d’au moins deux journaux par seconde et par base de données.
 
 
 ## Ce qu'il faut savoir avant de commencer
@@ -47,36 +37,16 @@ Vous recherchez des informations supplémentaires sur les copies retardées de b
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
 
 ## Utilisation du Shell pour activer une copie de base de données de boîte aux lettres retardée à un moment spécifique
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le Centre d'administration Exchange (CAE) pour activer une copie de base de données de boîtes aux lettres retardée à un point spécifique dans le temps. Vous exécutez à la place une série d'étapes au moyen du Shell et de la ligne de commande.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le Centre d'administration Exchange (CAE) pour activer une copie de base de données de boîtes aux lettres retardée à un point spécifique dans le temps. Vous exécutez à la place une série d'étapes au moyen du Shell et de la ligne de commande.
 
 
 1.  Cet exemple interrompt la réplication de la copie retardée en cours d'activation à l'aide de la cmdlet [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd351074\(v=exchg.150\)).
@@ -85,18 +55,8 @@ Vous recherchez des informations supplémentaires sur les copies retardées de b
 
 2.  De manière facultative (afin de conserver une copie retardée), effectuez une copie de la copie de la base de données et de ses fichiers journaux.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>À ce stade, la poursuite de cette procédure sur le volume existant pénaliserait les performances d'écriture de la copie. Si cette conséquence n'est pas souhaitée, vous pouvez copier la base de données et les fichiers journaux sur un autre volume pour effectuer la récupération.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > À ce stade, la poursuite de cette procédure sur le volume existant pénaliserait les performances d'écriture de la copie. Si cette conséquence n'est pas souhaitée, vous pouvez copier la base de données et les fichiers journaux sur un autre volume pour effectuer la récupération.
 
 
 3.  Déterminez les fichiers journaux à relire impérativement dans la base de données afin de satisfaire à vos exigences temporelles concernant cette récupération (en vous basant sur l'heure et la date des fichiers journaux, comme présenté dans Windows Explorer). Tous les fichiers journaux créés suite à ce moment doivent être déplacés vers un autre répertoire jusqu'à ce que le processus de récupération prenne fin et que les fichiers journaux ne soient plus nécessaires.
@@ -107,18 +67,8 @@ Vous recherchez des informations supplémentaires sur les copies retardées de b
     
         Eseutil.exe /r eXX /a
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Dans l'exemple précédent, e<em>XX</em> est le préfixe de génération du journal pour la base de données (par exemple, E00, E01, E02, etc.).</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Dans l'exemple précédent, e<em>XX</em> est le préfixe de génération du journal pour la base de données (par exemple, E00, E01, E02, etc.).
     
     <table>
     <thead>
@@ -152,18 +102,8 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
     
     2.  De manière facultative (afin de conserver une copie retardée), effectuez une copie de la copie de la base de données et de ses fichiers journaux.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>À ce stade, la poursuite de cette procédure sur le volume existant pénaliserait les performances d'écriture de la copie. Si cette conséquence n'est pas souhaitée, vous pouvez copier la base de données et les fichiers journaux sur un autre volume pour effectuer la récupération.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > À ce stade, la poursuite de cette procédure sur le volume existant pénaliserait les performances d'écriture de la copie. Si cette conséquence n'est pas souhaitée, vous pouvez copier la base de données et les fichiers journaux sur un autre volume pour effectuer la récupération.
 
 
 2.  Cet exemple active la copie de base de données de boîtes aux lettres retardée en utilisant la cmdlet [Move-ActiveMailboxDatabase](https://technet.microsoft.com/fr-fr/library/dd298068\(v=exchg.150\)) avec le paramètre *SkipLagChecks*.
@@ -180,18 +120,8 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
     
     2.  De manière facultative (afin de conserver une copie retardée), effectuez une copie de la copie de la base de données et de ses fichiers journaux.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>À ce stade, la poursuite de cette procédure sur le volume existant pénaliserait les performances d'écriture de la copie. Si cette conséquence n'est pas souhaitée, vous pouvez copier la base de données et les fichiers journaux sur un autre volume pour effectuer la récupération.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > À ce stade, la poursuite de cette procédure sur le volume existant pénaliserait les performances d'écriture de la copie. Si cette conséquence n'est pas souhaitée, vous pouvez copier la base de données et les fichiers journaux sur un autre volume pour effectuer la récupération.
 
 
 2.  Déterminez les journaux requis pour la copie de base de données retardée en recherchant la valeur « Log required: » (Journal requis) dans la sortie de l'en-tête de base de données ESEUTIL

@@ -75,16 +75,6 @@ Pour chiffrer les données échangées entre la messagerie unifiée et Lync Serv
     
     Les cmdlets **Start-CsWindowsService** et **Stop-CsWindowsService** sont similaires aux cmdlets Windows PowerShell génériques **Start-Service** et **Stop-Service**. Si vous le souhaitez, vous pouvez utiliser les cmdlets **Start-Service** et **Stop-Service** pour démarrer et arrêter un service Lync Server. Toutefois, les cmdlets **Start-CsWindowsService** et **Stop-CsWindowsService** incluent un paramètre *ComputerName* qui facilite l'arrêt et le démarrage d'un service Lync Server sur un ordinateur distant. Pour ce faire, incluez le paramètre *ComputerName* suivi du nom de domaine complet (FQDN) de l'ordinateur distant. Les cmdlets **Start-Service** et **Stop-Service** n'utilisent pas de paramètre comparable.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Pour intégrer pleinement la messagerie unifiée et Lync Server, vous devez également exécuter le script ExchUcUtil.ps1 sur un serveur d'accès au client ou un serveur de boîtes aux lettres au sein de votre organisation.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Pour intégrer pleinement la messagerie unifiée et Lync Server, vous devez également exécuter le script ExchUcUtil.ps1 sur un serveur d'accès au client ou un serveur de boîtes aux lettres au sein de votre organisation.
 

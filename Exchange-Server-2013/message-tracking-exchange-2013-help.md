@@ -33,18 +33,8 @@ Dans Exchange 2013, vous pouvez utiliser la cmdlet **Set-TransportService** ou 
 
   - Activer ou désactiver l'enregistrement de l'objet des messages dans les journaux de suivi des messages. Par défaut, cette option est activée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez également utiliser le Centre d'administration Exchange (CAE) pour activer ou désactiver le suivi des messages, et spécifier l'emplacement des fichiers journaux de suivi des messages.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez également utiliser le Centre d'administration Exchange (CAE) pour activer ou désactiver le suivi des messages, et spécifier l'emplacement des fichiers journaux de suivi des messages.
 
 
 Par défaut, Exchange utilise un enregistrement circulaire pour limiter le nombre de journaux de suivi des messages en fonction de la taille et de l'âge des fichiers, afin de contrôler l'espace disque occupé par les fichiers journaux de suivi des messages.

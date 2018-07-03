@@ -35,18 +35,8 @@ Vous pouvez également utiliser l'environnement de ligne de commande Exchange Ma
 
 Pour d'autres tâches de gestion relatives aux serveurs de boîtes aux lettres de messagerie unifiée, consultez la rubrique [Messagerie vocale pour les utilisateurs](voice-mail-for-users-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L'environnement de ligne de commande Exchange Management Shell permet uniquement de modifier les fonctionnalités d'Outlook Voice Access pour les utilisateurs de messagerie unifiée sur une stratégie de boîte aux lettres de messagerie unifiée ou sur la boîte aux lettres d'un utilisateur à extension messagerie spécifique.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L'environnement de ligne de commande Exchange Management Shell permet uniquement de modifier les fonctionnalités d'Outlook Voice Access pour les utilisateurs de messagerie unifiée sur une stratégie de boîte aux lettres de messagerie unifiée ou sur la boîte aux lettres d'un utilisateur à extension messagerie spécifique.
 
 
 ## Ce qu'il faut savoir avant de commencer
@@ -63,18 +53,8 @@ Pour d'autres tâches de gestion relatives aux serveurs de boîtes aux lettres d
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

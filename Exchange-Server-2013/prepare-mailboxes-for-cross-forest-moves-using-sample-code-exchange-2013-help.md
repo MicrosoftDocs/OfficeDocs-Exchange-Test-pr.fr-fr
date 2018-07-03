@@ -27,7 +27,7 @@ Pour plus d'informations sur la préparation de déplacements inter-forêts, y c
 
   - Téléchargez l'exemple de code dans la page [Préparer un déplacement de boîtes aux lettres en ligne](https://go.microsoft.com/fwlink/p/?linkid=177882) dans le Centre de téléchargement Microsoft.
 
-  - Pour exécuter l'exemple de code, ILM 2007 Feature Pack 1 Service Pack 1 (SP1) est requis. Pour télécharger le Feature Pack, consultez l'article de la Base de connaissances Microsoft 977791, [Service Pack 1 (build 3.3.1139.2) est disponible pour Identity Lifecycle Manager 2007 Feature Pack 1](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=977791).
+  - Pour exécuter l'exemple de code, ILM 2007 Feature Pack 1 Service Pack 1 (SP1) est requis. Pour télécharger le Feature Pack, consultez l'article de la Base de connaissances Microsoft 977791, [Service Pack 1 (build 3.3.1139.2) est disponible pour Identity Lifecycle Manager 2007 Feature Pack 1](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=977791).
 
   - Vous devez également disposer des éléments suivants :
     
@@ -39,18 +39,8 @@ Pour plus d'informations sur la préparation de déplacements inter-forêts, y c
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Comment procéder ?
@@ -77,34 +67,14 @@ Pour plus d'informations sur la préparation de déplacements inter-forêts, y c
 
 3.  Modifiez le fichier OneWaySync.xml copié dans le dossier d'extensions ILM à l'étape 1 pour spécifier le nom unique (DN) du conteneur de l'unité d'organisation cible dans la forêt Exchange cible dans laquelle vous souhaitez créer les utilisateurs de messagerie. Vous pouvez utiliser LDP.exe ou ADSIEdit.exe pour rechercher le conteneur de l’unité d’organisation cible si vous ne connaissez pas son nom.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous utilisez cet exemple avec ILM GalSync 2007, pensez à exclure ce conteneur de la liste des conteneurs gérés par GalSync 2007.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous utilisez cet exemple avec ILM GalSync 2007, pensez à exclure ce conteneur de la liste des conteneurs gérés par GalSync 2007.
 
 
 4.  Sur la console Gestionnaire d'identités ILM, allez sur **Fichier**\>**Importer la configuration du serveur** pour importer la configuration du serveur ILM du dossier ILMServerConfig. Cette action va importer deux agents de gestion Active Directory ainsi que le schéma Metaverse et la règle d'approvisionnement.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Pendant l'importation, vous devez fournir le nom de la forêt et les informations d'identification, et mettre en correspondance les partitions de l'agent ADMA importé (agent de gestion Active Directory) avec le nom de la partition dans votre configuration pour les agents ADMA source et cible.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Pendant l'importation, vous devez fournir le nom de la forêt et les informations d'identification, et mettre en correspondance les partitions de l'agent ADMA importé (agent de gestion Active Directory) avec le nom de la partition dans votre configuration pour les agents ADMA source et cible.
 
 
 5.  Pour que l’agent ADMA prenne en charge la forêt cible Exchange 2013, sur la page **Création de l’agent de gestion**, dans le volet **Configurer les extensions**, sélectionnez **Exchange 2013** dans la liste déroulante **Configurer pour** et entrez l’URI Windows PowerShell distant d’un serveur d’accès au client Exchange 2010 dans l’**URI Exchange 2013 RPS**.
@@ -115,18 +85,8 @@ Pour plus d'informations sur la préparation de déplacements inter-forêts, y c
 
 6.  Sur la console Gestionnaire d'identités ILM sur le volet **Création de l'agent de gestion**, ouvrez les **Propriétés** pour l'Agent de gestion de la forêt source. Sélectionnez l'Assistant **Configuration des partitions d'annuaire**, puis cliquez sur **Conteneurs** pour sélectionner le conteneur qui contiendra les boîtes aux lettres que vous déplacerez sur la forêt cible. Effacez les sélections de tous les autres conteneurs, autrement dit, faites en sorte que l'agent de gestion porte uniquement sur la gestion d'un seul conteneur. De même, pour l'Agent de gestion de la forêt cible, sélectionnez le conteneur sur lequel seront configurés les utilisateurs à extension messagerie, à savoir l'unité d'organisation cible spécifiée à l'étape 2.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous utilisez cet exemple avec ILM GalSync 2007, pensez à exclure ces deux conteneurs de la liste des conteneurs gérés par GalSync 2007.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous utilisez cet exemple avec ILM GalSync 2007, pensez à exclure ces deux conteneurs de la liste des conteneurs gérés par GalSync 2007.
 
 
 7.  Exécutez une importation complète (test uniquement) sur les Agents de gestion cibles afin qu'ILM puisse détecter l'organisation cible spécifiée à l'étape 2.

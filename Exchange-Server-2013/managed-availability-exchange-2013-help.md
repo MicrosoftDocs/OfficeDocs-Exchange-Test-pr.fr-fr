@@ -83,18 +83,8 @@ Il existe des centaines de sondes récurrentes. Beaucoup de ces sondes sont prop
 
 Les bases d’une sonde récurrente sont les suivantes : démarrer toutes les *RecurrenceIntervalSeconds* et vérifier (ou sonder) certains aspects de l’intégrité. Si le composant est en bon état, la sonde transmet et écrit un événement d’informations dans le canal Microsoft.Exchange.ActiveMonitoring\\ProbeResult avec un *ResultType* de 3. Si le contrôle échoue ou expire, la sonde échoue et écrit un événement d’erreur dans le même canal. Un *ResultType* de 4 signifie que le contrôle a échoué et un *ResultType* de 1 signifie qu’il a expiré. Un grand nombre de sondes sont réexécutées si elles expirent, jusqu’à la valeur de la propriété *MaxRetryAttempts*.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Remarque :</strong> le canal pourpre ProbeResult peut être très occupé, car des centaines de sondes sont exécutées toutes les minutes et journalisent des événements. L’impact réel sur les performances de votre serveur Exchange peur s’avérer considérable si vous tentez d’exécuter des requêtes coûteuses sur les journaux des événements dans un environnement de production.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> <strong>Remarque :</strong> le canal pourpre ProbeResult peut être très occupé, car des centaines de sondes sont exécutées toutes les minutes et journalisent des événements. L’impact réel sur les performances de votre serveur Exchange peur s’avérer considérable si vous tentez d’exécuter des requêtes coûteuses sur les journaux des événements dans un environnement de production.
 
 
 Les notifications sont des sondes qui ne sont pas exécutées par l’infrastructure du Gestionnaire d’intégrité, mais par un autre service sur le serveur. Ces services effectuent leur propre surveillance, puis fournissent leurs données à l’infrastructure de disponibilité gérée en écrivant directement les résultats des sondes. Vous ne verrez pas ces sondes dans le canal ProbeDefinition, car ce canal ne décrit que les sondes exécutées par l’infrastructure de disponibilité gérée. Par exemple, le moniteur ServerOneCopyMonitor est déclenché par les résultats de la sonde écrits par le service MSExchangeDAGMgmt. Ce service effectue sa propre surveillance, détermine s’il y a un problème et enregistre le résultat de la sonde. La plupart des sondes de notification peuvent journaliser un événement rouge qui rend le moniteur défectueux et un événement vert qui rétablit l’état du moniteur.

@@ -49,18 +49,8 @@ Pour plus d’informations sur les boîtes aux lettres déconnectées et sur l�
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -75,18 +65,8 @@ La procédure suivante explique comment connecter une boîte aux lettres d’uti
     
     La liste des boîtes aux lettres déconnectées sur le serveur Exchange sélectionné de votre organisation Exchange doit s’afficher.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Cette liste de boîtes aux lettres inclut des boîtes aux lettres désactivées, des boîtes aux lettres supprimées et des boîtes aux lettres supprimées (récupérables).</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Cette liste de boîtes aux lettres inclut des boîtes aux lettres désactivées, des boîtes aux lettres supprimées et des boîtes aux lettres supprimées (récupérables).
 
 
 3.  Cliquez sur la boîte aux lettres désactivée à connecter, puis cliquez sur **Connecter**.
@@ -111,18 +91,8 @@ Dans cet exemple, nous connectons une boîte aux lettres partagée.
 
     Connect-Mailbox -Identity "Corporate Shared Mailbox" -Database "Mailbox Database 03" -User "Corporate Shared Mailbox" -Alias corpshared -Shared
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous n’incluez pas la paramètre <em>Alias</em>, lorsque vous exécutez la cmdlet <strong>Connect-Mailbox</strong>, la valeur spécifiée dans le paramètre <em>User</em> ou <em>LinkedMasterAccount</em> est utilisée pour créer l’alias de l’adresse de messagerie pour la boîte aux lettre reconnectée.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous n’incluez pas la paramètre <em>Alias</em>, lorsque vous exécutez la cmdlet <strong>Connect-Mailbox</strong>, la valeur spécifiée dans le paramètre <em>User</em> ou <em>LinkedMasterAccount</em> est utilisée pour créer l’alias de l’adresse de messagerie pour la boîte aux lettre reconnectée.
 
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Connect-Mailbox](https://technet.microsoft.com/fr-fr/library/aa997878\(v=exchg.150\)).

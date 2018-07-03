@@ -35,18 +35,8 @@ Si la protection des informations confidentielles, notamment des informations ay
 
 Dans Exchange 2013, les fonctionnalités de gestion des droits relatifs à l’information répondent à ces défis. Si les messages sont protégés par IRM, le déchiffrement du transport permet de les déchiffrer en cours de transit. Les messages protégés par IRM sont déchiffrés par l’agent de déchiffrement, un agent de transport axé sur la conformité.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange 2013, l’agent de déchiffrement est un agent intégré. Les agents intégrés ne figurent pas dans la liste des agents renvoyés par la cmdlet <strong>Get-TransportAgent</strong>. Pour de plus amples informations, consultez la rubrique <a href="transport-agents-exchange-2013-help.md">Agents de transport</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange 2013, l’agent de déchiffrement est un agent intégré. Les agents intégrés ne figurent pas dans la liste des agents renvoyés par la cmdlet <strong>Get-TransportAgent</strong>. Pour de plus amples informations, consultez la rubrique <a href="transport-agents-exchange-2013-help.md">Agents de transport</a>.
 
 
 L’agent de déchiffrement déchiffre les types de messages protégés par IRM suivants :
@@ -71,18 +61,8 @@ L’agent de déchiffrement déchiffre les types de messages protégés par IRM 
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les messages protégés pendant leur transit à l’aide de règles de protection du transport n’ont pas besoin d’être déchiffrés par l’agent de déchiffrement. L’agent de déchiffrement est déclenché lors des événements de transport <strong>OnEndOfData</strong> et <strong>OnSubmit</strong>. Les règles de protection du transport sont appliquées par l’Agent de règles de transport, qui est déclenché lors de l’événement <strong>OnRoutedMessage</strong> et la protection par IRM est appliquée par l’agent de chiffrement lors de l’événement <strong>OnRoutedMessage</strong>. Pour de plus amples informations sur les agents de transport et obtenir une liste des événements SMTP au cours desquels ils peuvent être enregistrés, consultez la rubrique <a href="transport-agents-exchange-2013-help.md">Agents de transport</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les messages protégés pendant leur transit à l’aide de règles de protection du transport n’ont pas besoin d’être déchiffrés par l’agent de déchiffrement. L’agent de déchiffrement est déclenché lors des événements de transport <strong>OnEndOfData</strong> et <strong>OnSubmit</strong>. Les règles de protection du transport sont appliquées par l’Agent de règles de transport, qui est déclenché lors de l’événement <strong>OnRoutedMessage</strong> et la protection par IRM est appliquée par l’agent de chiffrement lors de l’événement <strong>OnRoutedMessage</strong>. Pour de plus amples informations sur les agents de transport et obtenir une liste des événements SMTP au cours desquels ils peuvent être enregistrés, consultez la rubrique <a href="transport-agents-exchange-2013-help.md">Agents de transport</a>.
 
 
 Le déchiffrement du transport est exécuté sur le premier service de transport Exchange 2013 qui traite un message dans une forêt Active Directory. Si un message est transmis à un service de transport dans une autre forêt Active Directory, les message est à nouveau déchiffré. Une fois déchiffré, le contenu est accessible aux autres agents de transport situés sur ce serveur. Par exemple, l’agent de règles de transport sur un service de transport peut vérifier le contenu d’un message et appliquer des règles de transport. Toutes les opérations spécifiées dans la règle, telles que l’application d’une clause d’exclusion de responsabilité ou la modification du message d’une autre manière quelconque, peuvent être réalisées sur le message déchiffré. Les agents de transport tiers, tels que les logiciels antivirus, peuvent rechercher la présence de virus et de logiciels malveillants dans le message. Une fois que les autres agents de transport ont vérifié le message et y ont éventuellement apporté des modifications, le message est de nouveau chiffré avec les mêmes droits d’utilisateur que ceux utilisés avant son déchiffrement par l’agent de déchiffrement. Le même message ne fait pas l’objet d’un nouveau déchiffrement par un autre service de transport sur les serveurs de boîtes aux lettres de l’organisation.

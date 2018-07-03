@@ -53,18 +53,8 @@ La méthode d'encapsulation IMCEA utilise la syntaxe suivante : `IMCEA<Type>-<a
 
 L'espace réservé \<*Type*\> identifie le type d'adresse non-SMTP, par exemple, `EX`, `X400` ou `FAX`.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Bien que <code>SMTP</code> et <code>X500</code> soient théoriquement des valeurs correctes pour &lt;<em>Type</em>&gt;, la résolution des destinataires Exchange rejette toute adresse codée IMCEA utilisant l'un de ces types.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Bien que <code>SMTP</code> et <code>X500</code> soient théoriquement des valeurs correctes pour &lt;<em>Type</em>&gt;, la résolution des destinataires Exchange rejette toute adresse codée IMCEA utilisant l'un de ces types.
 
 
 L'espace réservé \<*address*\> est l'adresse d'origine codée. L'espace réservé \<*domain*\> représente le domaine SMTP utilisé pour encapsuler l'adresse non-SMTP, par exemple, contoso.com.
@@ -176,18 +166,8 @@ La liste suivante décrit les types de destinataires qui nécessitent une expans
 
   - **Groupes de distribution et groupes de distribution dynamiques**   Les groupes de distribution sont développés sur la base de la propriété Active Directory **memberOf**. Les groupes de distribution dynamiques sont développés à l'aide de la définition de requête Active Directory. Si le paramètre *ExpansionServer* est défini pour le groupe, ce dernier n'est pas développé par le serveur actuel. Le groupe de distribution est routé vers le serveur spécifié pour l'expansion.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous sélectionnez un serveur de transport spécifique de votre organisation comme serveur d'extension, l'utilisation du groupe de distribution dépend de la disponibilité du serveur d'extension. Si le serveur d'expansion est indisponible, aucun message envoyé au groupe de distribution ne peut être remis. Si vous projetez d'utiliser des serveurs d'expansion spécifiques pour vos groupes de distribution, afin de réduire le risque d'interruption de service, vous devez envisager d'implémenter des solutions de disponibilité élevée pour ces serveurs.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous sélectionnez un serveur de transport spécifique de votre organisation comme serveur d'extension, l'utilisation du groupe de distribution dépend de la disponibilité du serveur d'extension. Si le serveur d'expansion est indisponible, aucun message envoyé au groupe de distribution ne peut être remis. Si vous projetez d'utiliser des serveurs d'expansion spécifiques pour vos groupes de distribution, afin de réduire le risque d'interruption de service, vous devez envisager d'implémenter des solutions de disponibilité élevée pour ces serveurs.
 
 
   - **Autres destinataires**   Le paramètre *ForwardingAddress* peut être défini pour des boîtes aux lettres et des dossiers publics à extension messagerie. Le paramètre *ForwardingAddress* redirige tous les messages vers le destinataire alternatif spécifié. C'est ce qu'on appelle un *destinataire transféré*. Quand une adresse de remise alternative est spécifiée dans le paramètre *ForwardingAddress* et que le paramètre *DeliverToMailboxAndForward* est défini sur `$true`, le message est remis au destinataire d'origine et au destinataire alternatif. C'est ce qu'on appelle un *destinataire remis et transféré*.
@@ -224,18 +204,8 @@ La liste suivante décrit les paramètres de redirection de notification de remi
 
   - **ReportToOriginatorEnabled**   Ce paramètre active l'envoi de notifications de remise à l'expéditeur des messages électroniques envoyés à ce groupe de distribution. Les valeurs correctes sont `$true` ou `$false`. La valeur par défaut est `$true`.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les valeurs des paramètres <em>ReportToManagerEnabled</em> et <em>ReportToOriginatorEnabled</em> ne peuvent pas être toutes les deux <code>$true</code>. Si un paramètre est défini sur <code>$true</code>, l'autre doit être défini sur <code>$false</code>. Les deux paramètres peuvent avoir la valeur <code>$false</code>. Cela a pour effet de supprimer toute redirection des messages de notification de remise.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les valeurs des paramètres <em>ReportToManagerEnabled</em> et <em>ReportToOriginatorEnabled</em> ne peuvent pas être toutes les deux <code>$true</code>. Si un paramètre est défini sur <code>$true</code>, l'autre doit être défini sur <code>$false</code>. Les deux paramètres peuvent avoir la valeur <code>$false</code>. Cela a pour effet de supprimer toute redirection des messages de notification de remise.
 
 
 La liste suivante décrit les messages de notification de remise disponibles :

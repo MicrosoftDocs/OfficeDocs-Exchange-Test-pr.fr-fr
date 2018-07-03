@@ -31,18 +31,8 @@ La journalisation de l’agent permet d’enregistrer les actions effectuées pa
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utilisation de l’environnement de ligne de commande Exchange Management Shell pour configurer la journalisation de l’agent de blocage du courrier indésirable
@@ -65,25 +55,10 @@ Cet exemple définit les paramètres de journal d’agent suivants sur un serveu
 
     Set-TransportService Mailbox01 -AgentLogPath "D:\Anti-Spam Agent Log" -AgentLogMaxFileSize 20MB -AgentLogMaxDirectorySize 400MB -AgentLogMaxAge 14.00:00:00
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Si vous définissez le paramètre <em>AgentLogPath</em> sur la valeur <code>$null</code>, vous désactivez effectivement la journalisation de l’agent. Toutefois, si vous définissez <em>AgentLogPath</em> sur <code>$null</code> lorsque la valeur du paramètre <em>AgentLogEnabled</em> est <code>$true</code>, des erreurs de journal d’événements sont générées. La méthode privilégiée pour désactiver la journalisation de l’agent consiste à définir <em>AgentLogEnabled</em> sur <code>$false</code>.</p></li>
-<li><p>Le fait de définir le paramètre <em>AgentLogMaxAge</em> sur la valeur <code>00:00:00</code> empêche la suppression automatique des fichiers journaux de l’agent en raison de leur ancienneté.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]
+> <ul>
+> <li><p>Si vous définissez le paramètre <em>AgentLogPath</em> sur la valeur <code>$null</code>, vous désactivez effectivement la journalisation de l’agent. Toutefois, si vous définissez <em>AgentLogPath</em> sur <code>$null</code> lorsque la valeur du paramètre <em>AgentLogEnabled</em> est <code>$true</code>, des erreurs de journal d’événements sont générées. La méthode privilégiée pour désactiver la journalisation de l’agent consiste à définir <em>AgentLogEnabled</em> sur <code>$false</code>.</p></li>
+> <li><p>Le fait de définir le paramètre <em>AgentLogMaxAge</em> sur la valeur <code>00:00:00</code> empêche la suppression automatique des fichiers journaux de l’agent en raison de leur ancienneté.</p></li></ul>
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez les paramètres *AgentLog* dans [Set-TransportService](https://technet.microsoft.com/fr-fr/library/jj215682\(v=exchg.150\)).
 

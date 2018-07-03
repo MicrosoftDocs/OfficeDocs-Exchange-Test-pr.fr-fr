@@ -57,18 +57,8 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 3.  Pour accorder des autorisations Accès total ou Envoyer en tant que, cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter"), puis sélectionnez les utilisateurs auxquels vous souhaitez accorder des autorisations. Vous pouvez utiliser la touche **CTRL** pour sélectionner plusieurs utilisateurs. Vous avez des doutes quant à l’autorisation à utiliser ? Consultez la section Quelles autorisations devez-vous utiliser ? plus loin dans cette rubrique.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>L’autorisation Accès total permet aux utilisateurs d’ouvrir la boîte aux lettres, d’y créer des éléments et de les modifier. L’autorisation Envoyer en tant que permet à toute personne autre que le propriétaire de la boîte aux lettres d’envoyer des courriers électroniques à partir de cette boîte aux lettres partagée. Les deux autorisations sont requises pour que la boîte aux lettres partagée fonctionne.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > L’autorisation Accès total permet aux utilisateurs d’ouvrir la boîte aux lettres, d’y créer des éléments et de les modifier. L’autorisation Envoyer en tant que permet à toute personne autre que le propriétaire de la boîte aux lettres d’envoyer des courriers électroniques à partir de cette boîte aux lettres partagée. Les deux autorisations sont requises pour que la boîte aux lettres partagée fonctionne.
 
 
 4.  Cliquez sur **Enregistrer** pour enregistrer vos modifications et créer la boîte aux lettres partagée.
@@ -81,18 +71,8 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 3.  Pour accorder ou supprimer les autorisations Accès total et Envoyer en tant que, cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") ou **Supprimer**, ![Icône Suppression](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Icône Suppression"), puis sélectionnez les utilisateurs auxquels vous souhaitez accorder des autorisations.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>L’autorisation Accès total permet aux utilisateurs d’ouvrir la boîte aux lettres, d’y créer des éléments et de les modifier. L’autorisation Envoyer en tant que permet à toute personne autre que le propriétaire de la boîte aux lettres d’envoyer des courriers électroniques à partir de cette boîte aux lettres partagée. Les deux autorisations sont requises pour que la boîte aux lettres partagée fonctionne.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > L’autorisation Accès total permet aux utilisateurs d’ouvrir la boîte aux lettres, d’y créer des éléments et de les modifier. L’autorisation Envoyer en tant que permet à toute personne autre que le propriétaire de la boîte aux lettres d’envoyer des courriers électroniques à partir de cette boîte aux lettres partagée. Les deux autorisations sont requises pour que la boîte aux lettres partagée fonctionne.
 
 
 4.  Cliquez sur **Enregistrer** pour enregistrer vos modifications.
@@ -109,18 +89,8 @@ Pour savoir comment les utilisateurs peuvent accéder aux boîtes aux lettres pa
 
 Cet exemple crée la boîte aux lettres partagée Sales Department et octroie les autorisations Full Access (Accès total) et Send on Behalf (Envoyer de la part de) au groupe de sécurité MarketingSG. Les autorisations d'accès à la boîte aux lettres seront accordées aux utilisateurs membres du groupe de sécurité.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cet exemple suppose que vous avez déjà créé le groupe de sécurité MarketingSG et que ce dernier est à extension messagerie. Consultez la rubrique <a href="manage-mail-enabled-security-groups-exchange-2013-help.md">Gérer les groupes de sécurité à extension de messagerie</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cet exemple suppose que vous avez déjà créé le groupe de sécurité MarketingSG et que ce dernier est à extension messagerie. Consultez la rubrique <a href="manage-mail-enabled-security-groups-exchange-2013-help.md">Gérer les groupes de sécurité à extension de messagerie</a>.
 
 
     New-Mailbox -Shared -Name "Sales Department" -DisplayName "Sales Department" -Alias Sales | Set-Mailbox -GrantSendOnBehalfTo MarketingSG | Add-MailboxPermission -User MarketingSG -AccessRights FullAccess -InheritanceType All
@@ -141,16 +111,6 @@ Vous pouvez utiliser les autorisations suivantes avec une boîte aux lettres par
 
 Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

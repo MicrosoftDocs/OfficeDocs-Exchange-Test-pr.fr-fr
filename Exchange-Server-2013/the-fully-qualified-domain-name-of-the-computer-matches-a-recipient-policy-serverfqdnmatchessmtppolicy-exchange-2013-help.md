@@ -63,5 +63,5 @@ Pour résoudre ce problème, renommez l'ordinateur local. Vous pouvez également
 
 4.  Cliquez sur l’onglet **Adresses de messagerie**, puis modifiez l’adresse SMTP appropriée
 
-Pour plus d'informations sur les problèmes de nom de stratégie de destinataire, voir l'article 288175 de la Base de connaissances Microsoft sur La stratégie du destinataire ne parvient à trouver le FQDN d’aucun serveur dans l’organisation, notifications d’échec de remise 5.4.8 » ([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=288175)).
+Pour plus d'informations sur les problèmes de nom de stratégie de destinataire, voir l'article 288175 de la Base de connaissances Microsoft sur La stratégie du destinataire ne parvient à trouver le FQDN d’aucun serveur dans l’organisation, notifications d’échec de remise 5.4.8 » ([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052&kbid=288175)).
 

@@ -33,34 +33,14 @@ Vous pouvez activer ou désactiver la génération des mesures de groupe sur un 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour activer ou désactiver la génération des mesures de groupe
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, les données de mesures de groupe sont générées sur un serveur responsable de la génération du carnet d'adresses en mode hors connexion. Ces exemples sont uniquement nécessaires aux organisations qui n'utilisent pas les carnets d'adresses en mode hors connexion.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, les données de mesures de groupe sont générées sur un serveur responsable de la génération du carnet d'adresses en mode hors connexion. Ces exemples sont uniquement nécessaires aux organisations qui n'utilisent pas les carnets d'adresses en mode hors connexion.
 
 
 Pour activer ou désactiver la génération des mesures de groupe sur un serveur de boîtes aux lettres, exécutez la commande suivante :

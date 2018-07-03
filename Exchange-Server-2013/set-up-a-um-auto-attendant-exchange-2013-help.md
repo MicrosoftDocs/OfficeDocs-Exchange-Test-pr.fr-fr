@@ -39,18 +39,8 @@ Pour planifier et créer une structure de standard automatique de messagerie uni
 
 3.  Déterminez les heures d’ouverture et de fermeture du standard automatique et définissez les heures d’ouverture à l’aide de l’option **Heures d’ouverture**. Bien que cela ne soit pas obligatoire, vous pouvez également déterminer le calendrier des vacances pour ce standard automatique.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous devez également définir le fuseau horaire du standard.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Vous devez également définir le fuseau horaire du standard.
 
 
 4.  Déterminez si le système doit générer des messages d’accueil standard pendant les heures d’ouverture et en dehors de ces heures ou si vous préférez créer des enregistrements personnalisés.

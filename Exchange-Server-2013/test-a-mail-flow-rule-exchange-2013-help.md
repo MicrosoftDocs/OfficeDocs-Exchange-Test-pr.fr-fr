@@ -115,18 +115,8 @@ Le suivi des messages comprend une entrée pour chaque règle ayant une correspo
 
 5.  Cliquez sur **Enregistrer**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour éviter les surprises, informez vos utilisateurs des nouvelles règles.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Pour éviter les surprises, informez vos utilisateurs des nouvelles règles.
 
 
 ## Suggestions de résolution des problèmes
@@ -155,18 +145,8 @@ Si vous utilisez Exchange Online ou Exchange Online Protection, vous pouvez vér
 
 Pour afficher un rapport de règles, dans le Centre d’administration Office 365, sélectionnez **Rapports**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Alors que la plupart des données apparaissent dans le rapport dans les 24 heures, cela peut prendre 5 jours pour certaines données.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Alors que la plupart des données apparaissent dans le rapport dans les 24 heures, cela peut prendre 5 jours pour certaines données.
 
 
 ![Rapport présentant l’utilisation des règles](images/Dn831862.df5bf202-741d-432a-b71d-b37143f0ec0a(EXCHG.150).png "Rapport présentant l’utilisation des règles")

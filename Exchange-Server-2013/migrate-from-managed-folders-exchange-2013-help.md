@@ -35,18 +35,8 @@ Une boîte aux lettres à laquelle est appliquée une stratégie de boîte aux l
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez mettre des boîtes aux lettres en blocage de rétention afin d’arrêter le traitement des stratégies de rétention ou des stratégies de boîte aux lettres de dossier géré. La mise de boîtes aux lettres en blocage de rétention peut être utile dans des scénarios de migration pour éviter de supprimer des messages ou de déplacer des messages vers une archive tant que les paramètres de la nouvelle stratégie n’ont pas été vérifiés sur des boîtes aux lettres de test ou sur un petit nombre de boîtes aux lettres de production. Pour plus d’informations, consultez la rubrique <a href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">Placer une boîte aux lettres en blocage de rétention</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous pouvez mettre des boîtes aux lettres en blocage de rétention afin d’arrêter le traitement des stratégies de rétention ou des stratégies de boîte aux lettres de dossier géré. La mise de boîtes aux lettres en blocage de rétention peut être utile dans des scénarios de migration pour éviter de supprimer des messages ou de déplacer des messages vers une archive tant que les paramètres de la nouvelle stratégie n’ont pas été vérifiés sur des boîtes aux lettres de test ou sur un petit nombre de boîtes aux lettres de production. Pour plus d’informations, consultez la rubrique <a href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">Placer une boîte aux lettres en blocage de rétention</a>.
 
 
 Pour d’autres tâches de gestion associées à la fonctionnalité MRM, voir [Procédures de gestion des enregistrements de messagerie](messaging-records-management-procedures-exchange-2013-help.md).
@@ -57,18 +47,8 @@ Contrairement aux dossiers gérés, qui exigent que les utilisateurs déplacent 
 
 Les dossiers gérés prennent en charge différents paramètres de contenu géré pour un dossier, chacun avec une classe de message différente (par exemple, élément de messagerie ou élément de calendrier). Les balises de rétention ne requièrent pas d'objet paramètres de contenu géré distinct, car les paramètres de rétention sont spécifiés dans les propriétés des balises. Il n’est pas possible de créer des balises de rétention pour des classes de messages particulières, à l’exception d’une balise de stratégie par défaut (DPT) pour les messages vocaux. Les balises de rétention ne permettent pas non plus d’utiliser la journalisation (effectuée par l’Assistant Dossier géré).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les règles de journalisation utilisées pour envoyer des copies de messages avec un état de journal à une boîte aux lettres de journalisation sont appliquées dans le pipeline de transport par l’Agent de journalisation, et sont indépendantes de la fonctionnalité MRM. Pour plus d’informations, consultez la rubrique <a href="journaling-exchange-2013-help.md">Journalisation</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les règles de journalisation utilisées pour envoyer des copies de messages avec un état de journal à une boîte aux lettres de journalisation sont appliquées dans le pipeline de transport par l’Agent de journalisation, et sont indépendantes de la fonctionnalité MRM. Pour plus d’informations, consultez la rubrique <a href="journaling-exchange-2013-help.md">Journalisation</a>.
 
 
 Le tableau suivant compare la fonctionnalité MRM disponible lors de l'utilisation de balises de rétention ou de dossiers gérés.
@@ -293,18 +273,8 @@ Pour cette étape, vous pouvez utiliser deux méthodes :
 
   - **Créer des balises de rétention en spécifiant manuellement des paramètres de rétention**   Avec cette méthode, vous utilisez la cmdlet **New-RetentionPolicyTag** sans le paramètre *ManagedFolderToUpgrade*. Si vous ne spécifiez pas ce paramètre, toute balise de stratégie de rétention ajoutée à la stratégie est appliquée aux dossiers par défaut, et la balise de stratégie par défaut est appliquée à la boîte aux lettres entière. Toutefois, toute balise personnelle ajoutée à la stratégie n'est pas automatiquement appliquée aux dossiers gérés.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous êtes dans un environnement hybride comportant des serveurs Exchange 2013 et Exchange 2010, vous pouvez utiliser l’Assistant <strong>Transférer un dossier géré</strong> de la console de gestion Exchange sur un serveur Exchange 2010 pour déplacer un dossier géré et le paramètre de contenu géré correspondant vers des balises de rétention.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous êtes dans un environnement hybride comportant des serveurs Exchange 2013 et Exchange 2010, vous pouvez utiliser l’Assistant <strong>Transférer un dossier géré</strong> de la console de gestion Exchange sur un serveur Exchange 2010 pour déplacer un dossier géré et le paramètre de contenu géré correspondant vers des balises de rétention.
 
 
 **Créer des balises de rétention en fonction des dossiers gérés**
@@ -323,18 +293,8 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 **Créer des balises de rétention manuellement**
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez également utiliser le CAE pour créer des balises de rétention manuellement (non basées sur les paramètres définis dans les dossiers gérés). Pour plus d’informations, consultez la rubrique <a href="create-a-retention-policy-exchange-2013-help.md">Créer une stratégie de rétention</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez également utiliser le CAE pour créer des balises de rétention manuellement (non basées sur les paramètres définis dans les dossiers gérés). Pour plus d’informations, consultez la rubrique <a href="create-a-retention-policy-exchange-2013-help.md">Créer une stratégie de rétention</a>.
 
 
 Cet exemple montre comment créer des balises de rétention en fonction des dossiers gérés et des paramètres de contenu géré correspondants affichés dans la stratégie de boîte aux lettres de dossier géré de Contoso. Les paramètres de rétention sont spécifiés manuellement, sans l'aide du paramètre *ManagedFolderToUpgrade*.
@@ -353,18 +313,8 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez entrée « Gestion des enregistrements de messagerie » dans la rubrique [Stratégie de messagerie et autorisations de conformité](messaging-policy-and-compliance-permissions-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez également utiliser le CAE pour créer une stratégie de rétention et ajouter des balises de rétention à cette dernière. Pour plus d’informations, consultez la rubrique <a href="create-a-retention-policy-exchange-2013-help.md">Créer une stratégie de rétention</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez également utiliser le CAE pour créer une stratégie de rétention et ajouter des balises de rétention à cette dernière. Pour plus d’informations, consultez la rubrique <a href="create-a-retention-policy-exchange-2013-help.md">Créer une stratégie de rétention</a>.
 
 
 Cet exemple montre comment créer la stratégie de rétention RP-Corp et associer les balises de rétention nouvellement créées à cette stratégie.
@@ -385,18 +335,8 @@ Cet exemple supprime la stratégie de boîte aux lettres de dossier géré et to
 
 Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez Entrée « Application des stratégies de rétention » dans la rubrique [Stratégie de messagerie et autorisations de conformité](messaging-policy-and-compliance-permissions-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez également utiliser le CAE pour appliquer une stratégie de rétention à des utilisateurs. Pour plus d’informations, consultez la rubrique <a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">Appliquer une stratégie de rétention aux boîtes aux lettres</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez également utiliser le CAE pour appliquer une stratégie de rétention à des utilisateurs. Pour plus d’informations, consultez la rubrique <a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">Appliquer une stratégie de rétention aux boîtes aux lettres</a>.
 
 
 Cet exemple montre comment appliquer la stratégie de rétention nouvellement créée RP-Corp à l'utilisateur de boîte aux lettres Ken Kwok.

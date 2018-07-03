@@ -49,18 +49,8 @@ L'utilisation d’UCMA 4.0 offre plusieurs avantages :
 
   - UCMA 4.0 autorise des traductions plus précises grâce au moteur de reconnaissance vocale et une prise en charge plus évolutive de la plate-forme vocale sur de nombreux produits.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>UCMA 4.0 est installé lorsque vous installez Exchange 2013. Pour plus d'informations sur UCMA 4.0 et les conditions d'installation, voir <a href="exchange-2013-prerequisites-exchange-2013-help.md">Conditions préalables pour Exchange 2013</a>. Pour mettre à niveau la version la plus récente d'UCMA, vous devez avant tout désinstaller les versions d'UCMA installées au moyen de l'option Ajouter/supprimer des programmes.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> UCMA 4.0 est installé lorsque vous installez Exchange 2013. Pour plus d'informations sur UCMA 4.0 et les conditions d'installation, voir <a href="exchange-2013-prerequisites-exchange-2013-help.md">Conditions préalables pour Exchange 2013</a>. Pour mettre à niveau la version la plus récente d'UCMA, vous devez avant tout désinstaller les versions d'UCMA installées au moyen de l'option Ajouter/supprimer des programmes.
 
 
 ## Améliorations de l'aperçu de messagerie vocale

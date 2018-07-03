@@ -23,32 +23,12 @@ Cette rubrique explique comment utiliser l’Assistant Installation de Microsoft
 
 Si vous souhaitez installer le rôle de transport Edge Exchange 2013 sur un ordinateur, voir [Installer le rôle de transport Edge d’Exchange 2013 à l’aide de l’Assistant Installation](install-the-exchange-2013-edge-transport-role-using-the-setup-wizard-exchange-2013-help.md). Le rôle de transport Edge ne peut pas être installé sur le même ordinateur que les rôles serveur de boîtes aux lettres ou d’accès au client.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avez-vous déjà entendu parler de l’Assistant de déploiement Exchange Server ? Il s’agit d’un outil en ligne gratuit qui vous permet de déployer rapidement Exchange 2013 dans votre organisation en répondant à quelques questions et en créant une liste de contrôle de déploiement personnalisée. Pour en savoir plus, consultez la page <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Assistant de déploiement Exchange Server</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Avez-vous déjà entendu parler de l’Assistant de déploiement Exchange Server ? Il s’agit d’un outil en ligne gratuit qui vous permet de déployer rapidement Exchange 2013 dans votre organisation en répondant à quelques questions et en créant une liste de contrôle de déploiement personnalisée. Pour en savoir plus, consultez la page <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Assistant de déploiement Exchange Server</a>.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Après avoir installé des rôles serveur sur un ordinateur exécutant Exchange 2013, il n'est plus possible d'utiliser l'Assistant Installation d'Exchange 2013 pour ajouter des rôles serveur à cet ordinateur. Pour ajouter des rôles serveur supplémentaires à un ordinateur, vous devez utiliser la fonctionnalité Ajout/Suppression de programmes du Panneau de configuration ou la commande Setup.exe depuis une fenêtre d'invite de commandes.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Après avoir installé des rôles serveur sur un ordinateur exécutant Exchange 2013, il n'est plus possible d'utiliser l'Assistant Installation d'Exchange 2013 pour ajouter des rôles serveur à cet ordinateur. Pour ajouter des rôles serveur supplémentaires à un ordinateur, vous devez utiliser la fonctionnalité Ajout/Suppression de programmes du Panneau de configuration ou la commande Setup.exe depuis une fenêtre d'invite de commandes.
 
 
 Pour plus d'informations sur les tâches postérieures à l'installation, consultez la rubrique [Tâches consécutives à l’installation d’Exchange 2013](exchange-2013-post-installation-tasks-exchange-2013-help.md).
@@ -89,18 +69,8 @@ Pour plus d'informations sur les tâches postérieures à l'installation, consul
 
 Si vous installez le premier serveur Exchange 2013 de l’organisation et n’avez pas suivi les étapes de préparation Active Directory, vous devez utiliser un compte appartenant au groupe Administrateurs de l’entreprise. Si vous n’avez pas préparé le schéma Active Directory en amont, le compte doit également être membre du groupe Administrateurs du schéma. Pour plus d’informations sur la préparation d’Active Directory pour Exchange 2013, voir [Préparation d’Active Directory et des domaines](prepare-active-directory-and-domains-exchange-2013-help.md). Si vous avez déjà réalisé les étapes de préparation Active Directory et de schéma, vous devez utiliser un compte appartenant au groupe de rôles de gestion Installation déléguée ou au groupe de rôles Gestion de l’organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour télécharger la dernière version d’Exchange 2013, voir <a href="updates-for-exchange-2013-exchange-2013-help.md">Mises à jour pour Exchange 2013</a></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour télécharger la dernière version d’Exchange 2013, voir <a href="updates-for-exchange-2013-exchange-2013-help.md">Mises à jour pour Exchange 2013</a>
 
 
 1.  Connectez-vous à l'ordinateur sur lequel vous voulez installer Exchange 2013.
@@ -143,18 +113,8 @@ Si vous installez le premier serveur Exchange 2013 de l’organisation et n’a
     
     Sélectionnez **Installer automatiquement les rôles et les fonctionnalités Windows Server requis pour Exchange Server** pour que l’Assistant Installation installe les composants Windows requis. Il peut s’avérer nécessaire de redémarrer l’ordinateur pour terminer l’installation de certaines fonctionnalités Windows. Si vous ne sélectionnez pas cette option, vous devez installer les fonctionnalités Windows manuellement.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Cette option installe uniquement les fonctionnalités Windows requises par Exchange. Vous devez installer manuellement les autres composants requis. Pour plus d'informations, consultez la rubrique <a href="exchange-2013-prerequisites-exchange-2013-help.md">Conditions préalables pour Exchange 2013</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Cette option installe uniquement les fonctionnalités Windows requises par Exchange. Vous devez installer manuellement les autres composants requis. Pour plus d'informations, consultez la rubrique <a href="exchange-2013-prerequisites-exchange-2013-help.md">Conditions préalables pour Exchange 2013</a>.
     
     Cliquez sur **Suivant** pour continuer.
 
@@ -174,18 +134,8 @@ Si vous installez le premier serveur Exchange 2013 de l’organisation et n’a
     
       - Trait d’union ou tiret
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Un nom d'organisation ne doit pas contenir plus de 64 caractères. Le nom de l'organisation ne peut pas être vide.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Un nom d'organisation ne doit pas contenir plus de 64 caractères. Le nom de l'organisation ne peut pas être vide.
     
     Si vous souhaitez utiliser le modèle d’autorisations partagées Active Directory, sélectionnez l’option **Appliquer le modèle de sécurité des autorisations partagées Active Directory à l’organisation Exchange**.
     

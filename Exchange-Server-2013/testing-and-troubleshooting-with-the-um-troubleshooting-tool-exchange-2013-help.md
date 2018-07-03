@@ -55,7 +55,7 @@ La cmdlet **Test-ExchangeUMCallFlow** nécessite l’installation des composants
 
   - Microsoft .NET Framework 3.5 Family Update pour les Windows Vista x64 et Windows Server 2008 x64 met à jour si l’outil est exécutée sur un ordinateur Windows Vista ou Windows Server 2008. Pour télécharger la mise à jour, consultez [Microsoft.NET Framework 3.5 Family Update pour les x64, de Windows Vista et Windows Server 2008 x64](https://go.microsoft.com/fwlink/p/?linkid=178998).
 
-  - Windows Remote Management (WinRM) 2.0 et Windows PowerShell V2 (Windows6.0-KB968930.msu). Pour plus d’informations, consultez l’article 968930 de la Base de connaissances Microsoft, [Package central de Framework de gestion Windows (Windows PowerShell 2.0 et WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930).
+  - Windows Remote Management (WinRM) 2.0 et Windows PowerShell V2 (Windows6.0-KB968930.msu). Pour plus d’informations, consultez l’article 968930 de la Base de connaissances Microsoft, [Package central de Framework de gestion Windows (Windows PowerShell 2.0 et WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930).
 
   - Communications unifiées géré des points d’accès 1 2.0, le Runtime de cœur (64 bits). Pour télécharger le fichier UcmaRuntimeWebDownloadX64.msi, consultez [Unified Communications Managed API 2.0, le Runtime de cœur (64 bits)](https://go.microsoft.com/fwlink/p/?linkid=198175).
 

@@ -41,18 +41,8 @@ Pour plus d'informations sur l'environnement de ligne de commande Exchange Manag
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -69,18 +59,8 @@ Vous pouvez avoir besoin d'afficher les règles et actions d'une stratégie DLP
 
 3.  Dans la page **Modifier la stratégie DLP**, cliquez sur **Règles**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez créer une stratégie DLP et la laisser en mode non activé ou désactivé. Dans ce mode, la stratégie concernée n'est pas appliquée et vous pouvez modifier tous les prédicats, actions et valeurs associés à ses règles avant de la tester et de commencer à l'appliquer.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous pouvez créer une stratégie DLP et la laisser en mode non activé ou désactivé. Dans ce mode, la stratégie concernée n'est pas appliquée et vous pouvez modifier tous les prédicats, actions et valeurs associés à ses règles avant de la tester et de commencer à l'appliquer.
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour afficher les détails dans une stratégie DLP existante

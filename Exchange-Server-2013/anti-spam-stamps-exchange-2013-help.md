@@ -33,18 +33,8 @@ Le rapport de blocage du courrier indésirable est un rapport de synthèse des r
 
 Le tableau suivant décrit les informations de filtre qui peuvent figurer dans un rapport de blocage du courrier indésirable.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le rapport de blocage du courrier indésirable n’affiche que les informations des filtres appliqués au message spécifique. Un rapport de blocage du courrier indésirable ne contient pas, en général, toutes les informations contenues dans le tableau suivant. Par exemple, vous pouvez voir s’afficher le rapport de blocage du courrier indésirable suivant : <code>DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le rapport de blocage du courrier indésirable n’affiche que les informations des filtres appliqués au message spécifique. Un rapport de blocage du courrier indésirable ne contient pas, en général, toutes les informations contenues dans le tableau suivant. Par exemple, vous pouvez voir s’afficher le rapport de blocage du courrier indésirable suivant : <code>DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures</code>.
 
 
 ### Informations de filtrage d’un rapport de blocage du courrier indésirable

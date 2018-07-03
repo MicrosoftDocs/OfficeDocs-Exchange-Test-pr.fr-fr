@@ -156,18 +156,8 @@ Le tableau suivant décrit les compteurs de performance utilisés pour la gestio
 <td><p>Assistant Dossier géré MSExchange</p></td>
 <td><p>Indique le nombre d'éléments auxquels est attribuée une balise de stratégie par défaut en fonction d'une action de l'utilisateur, par exemple lors de la sélection d'un message avec une balise personnelle puis de l'option <strong>Utiliser la stratégie de dossier</strong>.</p>
 <p>Si un nouvel utilisateur se voit attribuer une stratégie de rétention avec une balise de stratégie par défaut, le compteur est incrémenté du nombre d'éléments qui seront attribués par la balise de stratégie par défaut en fonction de la stratégie de rétention.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si un utilisateur dispose d'une stratégie de rétention avec une balise de stratégie par défaut, les nouveaux messages qui arrivent par le protocole de transport reçoivent une balise par défaut. Cette action n'est pas suivie par ce compteur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si un utilisateur dispose d'une stratégie de rétention avec une balise de stratégie par défaut, les nouveaux messages qui arrivent par le protocole de transport reçoivent une balise par défaut. Cette action n'est pas suivie par ce compteur.
 
 </td>
 </tr>

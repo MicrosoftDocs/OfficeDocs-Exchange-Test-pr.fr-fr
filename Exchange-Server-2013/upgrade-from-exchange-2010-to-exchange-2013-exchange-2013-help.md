@@ -27,18 +27,8 @@ Quand vous mettez à niveau votre organisation Exchange 2010 existante vers Exc
 
 Vous ne pouvez pas mettre à niveau une organisation Exchange 2003 existante directement vers Exchange 2013. Vous devez d'abord mettre à niveau l'organisation Exchange 2003 vers une organisation Exchange 2007 ou Exchange 2010. Vous pourrez alors mettre à niveau l'organisation Exchange 2007 ou Exchange 2010 vers Exchange 2013. Nous vous recommandons de mettre à niveau votre organisation Exchange 2003 vers Exchange 2010, puis de mettre à niveau Exchange 2010 vers Exchange 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez supprimer toutes les instances d'Exchange 2003 de votre organisation avant de pouvoir effectuer une mise à niveau vers Exchange 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Vous devez supprimer toutes les instances d'Exchange 2003 de votre organisation avant de pouvoir effectuer une mise à niveau vers Exchange 2013.
 
 
 Vous pouvez migrer toutes vos boîtes aux lettres Exchange 2003 vers Exchange Online. Pour plus d’informations sur cette approche, voir [Méthodes de migration des comptes de messagerie vers Office 365](https://go.microsoft.com/fwlink/p/?linkid=524030).

@@ -21,50 +21,20 @@ _**Dernière rubrique modifiée :** 2017-03-13_
 
 Les compléments pour Outlook sont des applications qui étendent l’utilité des clients Outlook en ajoutant des informations ou des outils auxquels les utilisateurs peuvent recourir sans avoir à quitter Outlook. Les compléments sont créés par des développeurs tiers et peuvent être installés à partir d’un fichier, d’une URL ou d’Office Store. Par défaut, tous les utilisateurs peuvent installer des compléments. Les administrateurs Exchange peuvent utiliser les rôles pour contrôler les droits des utilisateurs en matière d’installation de compléments.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour plus d’informations sur les compléments pour Outlook du point de vue de l’utilisateur final, consultez la rubrique d’aide <a href="https://go.microsoft.com/fwlink/p/?linkid=2823">Compléments installés</a> sur Office.com. Cette rubrique offre une vue d’ensemble des compléments et présente également certains des compléments pour Outlook susceptibles d’être installés par défaut.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Pour plus d’informations sur les compléments pour Outlook du point de vue de l’utilisateur final, consultez la rubrique d’aide <a href="https://go.microsoft.com/fwlink/p/?linkid=2823">Compléments installés</a> sur Office.com. Cette rubrique offre une vue d’ensemble des compléments et présente également certains des compléments pour Outlook susceptibles d’être installés par défaut.
 
 
 ## Compléments Office Store et compléments personnalisés
 
 Les clients Outlook prennent en charge un vaste éventail de compléments disponibles via l’Office Store. Outlook prend également en charge les compléments personnalisés que vous pouvez créer et distribuer à des utilisateurs au sein de votre organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L’accès à Office Store n’est pas pris en charge pour les boîtes aux lettres ou les organisations de certains pays. Si l’option <strong>Ajouter à partir d’Office Store</strong> n’apparaît pas dans le <strong>Centre d’administration Exchange</strong> sous <strong>Organisation</strong> &gt; <strong>Compléments</strong> &gt; <img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="Icône Ajouter" alt="Icône Ajouter" />, vous pourrez peut-être installer un complément pour Outlook depuis un emplacement de fichier ou une URL. Pour plus d’informations, contactez votre fournisseur de services.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L’accès à Office Store n’est pas pris en charge pour les boîtes aux lettres ou les organisations de certains pays. Si l’option <strong>Ajouter à partir d’Office Store</strong> n’apparaît pas dans le <strong>Centre d’administration Exchange</strong> sous <strong>Organisation</strong> &gt; <strong>Compléments</strong> &gt; <img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="Icône Ajouter" alt="Icône Ajouter" />, vous pourrez peut-être installer un complément pour Outlook depuis un emplacement de fichier ou une URL. Pour plus d’informations, contactez votre fournisseur de services.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Certains compléments pour Outlook sont installés par défaut. Les compléments par défaut pour Outlook s’activent uniquement sur du texte en anglais. Par exemple, les adresses postales allemandes situées dans le corps d’un message n’activeront pas le complément Bing Cartes.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Certains compléments pour Outlook sont installés par défaut. Les compléments par défaut pour Outlook s’activent uniquement sur du texte en anglais. Par exemple, les adresses postales allemandes situées dans le corps d’un message n’activeront pas le complément Bing Cartes.
 
 
 ## Accès aux compléments et installation

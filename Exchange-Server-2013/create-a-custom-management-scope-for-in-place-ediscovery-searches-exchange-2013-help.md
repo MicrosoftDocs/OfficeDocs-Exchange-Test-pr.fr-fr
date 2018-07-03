@@ -111,18 +111,8 @@ Exécutez cette commande pour ajouter une boîte aux lettres de découverte appe
 
     Add-DistributionGroupMember -Identity "Ottawa Users" -Member "Ottawa Discovery Mailbox"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour ouvrir une boîte aux lettres de découverte et afficher les résultats de la recherche, les gestionnaires de découverte doivent disposer d'autorisations d'accès complet pour la boîte aux lettres de découverte. Pour plus d’informations, consultez la rubrique <a href="create-a-discovery-mailbox-exchange-2013-help.md">Créer une boîte aux lettres de découverte</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour ouvrir une boîte aux lettres de découverte et afficher les résultats de la recherche, les gestionnaires de découverte doivent disposer d'autorisations d'accès complet pour la boîte aux lettres de découverte. Pour plus d’informations, consultez la rubrique <a href="create-a-discovery-mailbox-exchange-2013-help.md">Créer une boîte aux lettres de découverte</a>.
 
 
 ## Comment savoir si cela a fonctionné ?

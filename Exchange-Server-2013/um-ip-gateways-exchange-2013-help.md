@@ -33,18 +33,8 @@ Activation et désactivation d'une passerelle IP de messagerie unifiée
 
 En général, le terme *« passerelle »* décrit un périphérique physique connectant deux réseaux incompatibles. Avec la messagerie unifiée Exchange et les autres solutions de messagerie unifiée, la passerelle VoIP est utilisée pour faire la conversion entre le réseau téléphonique de type réseau téléphonique commuté (RTC)/multiplexage par répartition dans le temps (MRT) ou basé sur la commutation de circuits, et un réseau de données IP (Internet Protocol) ou à commutation de paquets. Un PBX IP fait également la conversion entre le réseau RTC et un réseau à commutation de paquets de sorte que lorsqu’un PBX IP est utilisé, aucune passerelle VoIP n’est requise. Une passerelle VoIP est uniquement nécessaire si vous connectez un périphérique matériel PBX hérité à votre déploiement de messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Un réseau à commutation de paquets est un réseau dans lequel les paquets (messages ou fragments de messages) sont individuellement routés entre des périphériques tels que des routeurs, commutateurs, passerelle VoIP, PBX IP et SBC. Il diffère d'un réseau à commutation de circuit qui configure une connexion dédiée entre deux nœuds pour leur usage exclusif le temps de la communication.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Un réseau à commutation de paquets est un réseau dans lequel les paquets (messages ou fragments de messages) sont individuellement routés entre des périphériques tels que des routeurs, commutateurs, passerelle VoIP, PBX IP et SBC. Il diffère d'un réseau à commutation de circuit qui configure une connexion dédiée entre deux nœuds pour leur usage exclusif le temps de la communication.
 
 
 La messagerie unifiée Exchange s'appuie sur la capacité de la passerelle VoIP à convertir les protocoles basés sur le MRT ou la commutation de circuits, tels que le réseau numérique à intégration de services (RNIS) ou QSIG, à partir d'un PBX en protocoles basés sur IP ou VoIP, tels que SIP (Session Initiation Protocol), RTP (Realtime Transport Protocol) ou T.38 pour la transmission de télécopies en temps réel.
@@ -91,18 +81,8 @@ Pour les déploiements locaux et hybrides suite à l'installation de vos serveur
 
 3.  Une fois que vous avez configuré vos passerelles IP de messagerie unifiée, vous devez également configurer les passerelles VoIP, les PBX IP et les SBC sur votre réseau pour prendre en charge IPv6. Pour plus d'informations, demandez au fournisseur du matériel une liste de périphériques qui prennent en charge IPv6 expliquant comment les configurer.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le nombre maximum de passerelles IP de messagerie unifiée par plan de numérotation est de 200. Si vous en créez plus de 200, le service de messagerie unifiée ne démarre pas.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le nombre maximum de passerelles IP de messagerie unifiée par plan de numérotation est de 200. Si vous en créez plus de 200, le service de messagerie unifiée ne démarre pas.
 
 
 ## Activation et désactivation d'une passerelle IP de messagerie unifiée

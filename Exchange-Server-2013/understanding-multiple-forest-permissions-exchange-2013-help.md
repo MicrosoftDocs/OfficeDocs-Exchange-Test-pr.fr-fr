@@ -75,18 +75,8 @@ En outre, les étendues de gestion créées dans chaque forêt sont également l
 
 Les autorisations accordées par les contrôles d'accès basés sur un rôle autorisent seulement les utilisateurs à afficher ou modifier les objets Exchange d'une forêt spécifique. Vous pouvez cependant octroyer des autorisations pour afficher et modifier les objets Exchange d'une forêt aux utilisateurs se trouvant en dehors de cette forêt. En utilisant les autorisations inter-limites, vous pouvez centraliser les comptes de gestion Exchange dans une forêt unique au lieu de devoir vous réauthentifier sur chaque forêt individuelle pour exécuter des tâches.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les autorisations accordées à un utilisateur en dehors d'une forêt Exchange s'appliquent toujours seulement à cette forêt Exchange spécifique. Par exemple, si un utilisateur dans une forêt étrangère est membre du groupe de rôles lié Gestion de l'organisation situé dans ForêtA, il peut gérer uniquement les objets Exchange contenus dans ForêtA. Un utilisateur doit être membre des groupes de rôles liés dans chaque forêt Exchange pour se voir octroyer des autorisations pour gérer chaque forêt.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les autorisations accordées à un utilisateur en dehors d'une forêt Exchange s'appliquent toujours seulement à cette forêt Exchange spécifique. Par exemple, si un utilisateur dans une forêt étrangère est membre du groupe de rôles lié Gestion de l'organisation situé dans ForêtA, il peut gérer uniquement les objets Exchange contenus dans ForêtA. Un utilisateur doit être membre des groupes de rôles liés dans chaque forêt Exchange pour se voir octroyer des autorisations pour gérer chaque forêt.
 
 
 Les autorisations inter-limites vous permettent également d’appliquer des stratégies d’attribution de rôle aux boîtes aux lettres des utilisateurs dont les boîtes aux lettres se trouvent dans une forêt Exchange, mais dont les comptes utilisateur se trouvent dans une forêt de comptes. Exchange 2013 prend en charge l’autorisation inter-limites en utilisant des groupes de rôles liés et des boîtes aux lettres liées, faisant l’objet d'une présentation dans les sections suivantes.

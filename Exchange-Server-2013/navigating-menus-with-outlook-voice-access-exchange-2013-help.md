@@ -231,18 +231,8 @@ Ce processus est illustré dans la figure suivante.
 
 ![Masquer une conversation électronique](images/Dn205138.edd4d500-9eb4-4f83-9292-6829d768d974(EXCHG.150).gif "Masquer une conversation électronique")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Quand une conversation est masquée, elle l'est uniquement pour la session en cours. Si l'utilisateur se déconnecte de sa boîte aux lettres, puis se reconnecte, le système de messagerie vocale lit les messages électroniques figurant dans la même conversation.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Quand une conversation est masquée, elle l'est uniquement pour la session en cours. Si l'utilisateur se déconnecte de sa boîte aux lettres, puis se reconnecte, le système de messagerie vocale lit les messages électroniques figurant dans la même conversation.
 
 
 Retour au début
@@ -443,18 +433,8 @@ Quand un utilisateur configure sa boîte aux lettres pour la première fois, il 
 
 Si un utilisateur doit contacter un gestionnaire de comptes afin de lui communiquer des informations importantes à propos d'un client, il peut appeler le numéro utilisé pour Outlook Voice Access, utiliser la fonctionnalité de recherche dans l'annuaire en utilisant le clavier de son téléphone pour localiser le gestionnaire de comptes, puis passer l'appel.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Quand un utilisateur accède au menu Options personnelles, il doit utiliser le clavier du téléphone.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Quand un utilisateur accède au menu Options personnelles, il doit utiliser le clavier du téléphone.
 
 
 ## Enregistrement d'un message d'accueil personnel
@@ -491,18 +471,8 @@ Ce processus est illustré dans la figure suivante.
 
 ![Enregistrer votre message d’accueil personnel](images/Dn205138.4201f8a8-453c-4c6c-a8a4-29e862cd9649(EXCHG.150).gif "Enregistrer votre message d’accueil personnel")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Quand un utilisateur modifie le message d'accueil de son téléphone, il a la possibilité d'activer ou de désactiver son message électronique de réponse automatique.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Quand un utilisateur modifie le message d'accueil de son téléphone, il a la possibilité d'activer ou de désactiver son message électronique de réponse automatique.
 
 
 Retour au début

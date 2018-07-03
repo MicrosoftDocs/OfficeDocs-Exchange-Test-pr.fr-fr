@@ -105,18 +105,8 @@ Avant de supprimer des balises ou des stratégies de rétention, nous vous conse
 
 Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Gestion des enregistrements de messagerie » dans la rubrique [Stratégie de messagerie et autorisations de conformité](messaging-policy-and-compliance-permissions-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Incluez le commutateur <em>WhatIf</em> dans les commandes suivantes pour simuler l'action entreprise par la commande.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Incluez le commutateur <em>WhatIf</em> dans les commandes suivantes pour simuler l'action entreprise par la commande.
 
 
 Cet exemple supprime toutes les balises de rétention dans une organisation Exchange à l'exception de la balise Ne jamais supprimer, qui est utilisée dans la stratégie ArbitrationMailbox créée par le programme d'installation d'Exchange.

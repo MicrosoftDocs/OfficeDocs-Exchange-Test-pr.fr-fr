@@ -35,18 +35,8 @@ Par défaut, vous ne pouvez pas sélectionner ces champs dans Microsoft Outlook.
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -134,7 +124,7 @@ Par défaut, vous ne pouvez pas sélectionner ces champs dans Microsoft Outlook.
         
           - *\<OfficeVersion\>*   Pour Outlook 2007, la valeur est `Office12`. Pour Outlook 2010, la valeur par défaut est généralement `Office14`. Pour Outlook 2013, la valeur est `Office15`.
         
-          - *\<LCID\>*   Il s’agit de la valeur de votre identificateur de paramètre régional (LCID). Par exemple, le LCID pour l’anglais américain est 1033. Pour plus d’informations, consultez l’article [KB221435 : Liste des identificateurs de paramètres régionaux pris en charge dans Word](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=221435).
+          - *\<LCID\>*   Il s’agit de la valeur de votre identificateur de paramètre régional (LCID). Par exemple, le LCID pour l’anglais américain est 1033. Pour plus d’informations, consultez l’article [KB221435 : Liste des identificateurs de paramètres régionaux pris en charge dans Word](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=221435).
     
       - **Nom**   Pour le reste de cette procédure, supposons que le fichier se nomme `QTNE.cfg`. Le nom du fichier n’est pas important, mais veillez à mettre la valeur entre guillemets (") pour que le fichier soit enregistré de la forme QTNE.cfg et non QTNE.cfg.txt.
     
@@ -142,18 +132,8 @@ Par défaut, vous ne pouvez pas sélectionner ces champs dans Microsoft Outlook.
     
         "C:\Program Files (x86)\Microsoft Office\Office15\Forms\1033\QTNE.cfg"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si Windows User Access Control (UAC) vous empêche d'enregistrer le fichier à l'emplacement correct, enregistrez-le tout d'abord dans un emplacement temporaire, et copiez-le.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si Windows User Access Control (UAC) vous empêche d'enregistrer le fichier à l'emplacement correct, enregistrez-le tout d'abord dans un emplacement temporaire, et copiez-le.
 
 
 ## Étape 2 : Configurez Outlook pour utiliser le formulaire Outlook personnalisé

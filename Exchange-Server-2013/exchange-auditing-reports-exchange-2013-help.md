@@ -47,18 +47,8 @@ Dans la page **Gestion de la conformité** \> **Audit** du Centre d’administ
     
       - [Afficher et exporter le journal d’audit de l’administrateur externe](https://technet.microsoft.com/fr-fr/library/dn505728\(v=exchg.150\))
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Par défaut, les entrées du journal d’audit de l’administrateur sont conservées pendant 90 jours. Lorsqu’une entrée a dépassé le seuil de 90 jours, elle est supprimée. Ce paramètre ne peut pas être modifié dans une organisation informatique. Toutefois, il peut être modifié dans une organisation Exchange locale à l’aide de la cmdlet <strong>Set-AdminAuditLog</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Par défaut, les entrées du journal d’audit de l’administrateur sont conservées pendant 90 jours. Lorsqu’une entrée a dépassé le seuil de 90 jours, elle est supprimée. Ce paramètre ne peut pas être modifié dans une organisation informatique. Toutefois, il peut être modifié dans une organisation Exchange locale à l’aide de la cmdlet <strong>Set-AdminAuditLog</strong>.
 
 
   - **Exporter les journaux d’audit de boîte aux lettres**   Lorsque l’enregistrement d’audit des boîtes aux lettres est activé pour une boîte aux lettres, Microsoft Exchange stocke un enregistrement des actions effectuées sur les données de la boîte aux lettres par les non-propriétaires, dans le journal d’audit de la boîte aux lettres stocké dans un dossier caché dans la boîte aux lettres faisant l’objet de l’audit. L’enregistrement d’audit des boîtes aux lettres peut également être configuré pour enregistrer les actions du propriétaire. Les entrées de ce journal indiquent qui a accédé à la boîte aux lettres et quand, les actions effectuées et si l’action a réussi. Lorsque vous recherchez des entrées dans le journal d’audit de la boîte aux lettres et que vous les exportez, Microsoft Exchange enregistre les résultats de la recherche dans un fichier XML et l’inclut en pièce jointe dans un message électronique. Pour plus d’informations, consultez la rubrique [Exporter les journaux d’audit de boîte aux lettres](export-mailbox-audit-logs-exchange-2013-help.md).
@@ -144,18 +134,8 @@ Exécutez la commande suivante pour attribuer le rôle Journaux d’audit à un 
 
 Ceci permet à l’utilisateur de sélectionner **Gestion de la conformité** \>**Audit** dans le CAE pour exécuter l’un des rapports. L’utilisateur peut également exporter le journal d’audit de la boîte aux lettres, et exporter et afficher le journal d’audit de l’administrateur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour permettre à un utilisateur d’exécuter des rapports d’audit mais pas d’exporter des journaux d’audit, utilisez la commande précédente pour attribuer le rôle Journaux d’audit en affichage seul.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour permettre à un utilisateur d’exécuter des rapports d’audit mais pas d’exporter des journaux d’audit, utilisez la commande précédente pour attribuer le rôle Journaux d’audit en affichage seul.
 
 
 ## Configurer Outlook Web App pour autoriser les pièces jointes XML

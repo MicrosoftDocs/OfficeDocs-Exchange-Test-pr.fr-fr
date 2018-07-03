@@ -59,36 +59,16 @@ Pour d'autres tâches de gestion relatives à la création d'une stratégie DLP 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser le CAE pour configurer une stratégie DLP à partir d'un modèle
 
 1.  Dans le Centre d'administration Exchange, accédez à **Gestion de la conformité**\>**Protection contre la perte de données**, puis cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter").
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous pouvez également sélectionner cette action en cliquant sur la flèche en regard de l'icône <strong>Ajouter</strong><img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="Icône Ajouter" alt="Icône Ajouter" /> et en sélectionnant <strong>Nouvelle stratégie DLP à partir d'un modèle</strong> dans le menu déroulant.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Vous pouvez également sélectionner cette action en cliquant sur la flèche en regard de l'icône <strong>Ajouter</strong><img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="Icône Ajouter" alt="Icône Ajouter" /> et en sélectionnant <strong>Nouvelle stratégie DLP à partir d'un modèle</strong> dans le menu déroulant.
 
 
 2.  Dans la page **Créer une nouvelle stratégie DLP à partir d'un modèle**, complétez les champs suivants :
@@ -103,18 +83,8 @@ Pour d'autres tâches de gestion relatives à la création d'une stratégie DLP 
     
     5.  Cliquez sur **Enregistrer** pour terminer la création de la stratégie.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outre les règles dans un modèle spécifique, votre organisation peut avoir d'autres attentes ou stratégies d'entreprise qui s'appliquent aux données réglementées dans votre environnement de messagerie. Exchange 2013 facilite la modification du modèle de base afin d'ajouter des actions qui adaptent l'environnement de messagerie Exchange à vos besoins.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Outre les règles dans un modèle spécifique, votre organisation peut avoir d'autres attentes ou stratégies d'entreprise qui s'appliquent aux données réglementées dans votre environnement de messagerie. Exchange 2013 facilite la modification du modèle de base afin d'ajouter des actions qui adaptent l'environnement de messagerie Exchange à vos besoins.
 
 
 Pour adapter des stratégies, vous en modifiez les règles une fois que la stratégie a été enregistrée dans votre environnement Exchange 2013. Un exemple de changement de règle serait de désigner des personnes particulières exemptes d'une stratégie ou l'envoi d'un avis et le blocage de la remise d'un message s'il contient des informations sensibles. Pour plus d'informations sur la modification des stratégies et des règles, consultez la rubrique [Gestion de stratégies de protection contre la perte de données (DLP)](manage-dlp-policies-exchange-2013-help.md).

@@ -23,18 +23,8 @@ Dans un déploiement hybride, vos utilisateurs peuvent être dans un environneme
 
 Cette rubrique décrit comment synchroniser des dossiers publics à extension messagerie lorsque vos utilisateurs opèrent dans un environnement Office 365, alors que vos dossiers publics Exchange 2010 SP3 ou Exchange 2007 SP3 RU10 sont locaux. Toutefois, un utilisateur Office 365 qui n’est pas représenté par un objet MailUser local (propre à la hiérarchie de dossier public cible) ne peut pas accéder aux dossiers publics hérités ou Exchange 2013 locaux.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette rubrique fait référence aux serveurs Exchange 2010 SP3 et Exchange 2007 SP3 RU10 en tant que <em>serveurs Exchange hérités</em>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette rubrique fait référence aux serveurs Exchange 2010 SP3 et Exchange 2007 SP3 RU10 en tant que <em>serveurs Exchange hérités</em>.
 
 
 Vous allez synchroniser vos dossiers publics à extension messagerie à l'aide des scripts suivants, qui sont démarrés par une tâche Windows exécutée dans l'environnement local :
@@ -90,18 +80,8 @@ Le tableau suivant décrit les combinaisons de version et d'emplacement de boît
 
 Une configuration hybride avec des dossiers publics Exchange 2003 n'est pas prise en charge. Si vous exécutez Exchange 2003 au sein de votre organisation, vous devez déplacer l’ensemble des bases de données de dossiers publics et des réplicas vers Exchange 2007 SP3 RU10 ou une version ultérieure. Aucun réplica de dossier public ne peut être conservé dans Exchange 2003.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook 2016 ne prend pas en charge l’accès aux dossiers publics hérités Exchange 2007. Si certains de vos utilisateurs se servent d’Outlook 2016, vous devrez déplacer vos dossiers publics vers une version plus récente d’Exchange. Pour plus d’informations sur la compatibilité d’Outlook 2016 et d’Office 2016 avec Exchange 2007 et versions antérieures, consultez <a href="https://go.microsoft.com/fwlink/p/?linkid=849053">cet article</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Outlook 2016 ne prend pas en charge l’accès aux dossiers publics hérités Exchange 2007. Si certains de vos utilisateurs se servent d’Outlook 2016, vous devrez déplacer vos dossiers publics vers une version plus récente d’Exchange. Pour plus d’informations sur la compatibilité d’Outlook 2016 et d’Office 2016 avec Exchange 2007 et versions antérieures, consultez <a href="https://go.microsoft.com/fwlink/p/?linkid=849053">cet article</a>.
 
 
 ## Étape 1 : ce qu’il faut savoir avant de commencer
@@ -120,7 +100,7 @@ Une configuration hybride avec des dossiers publics Exchange 2003 n'est pas pris
 
 7.  Dans Exchange 2007, vous devez posséder le rôle d’administrateur de l’organisation Exchange ou d’administrateur d’Exchange Server. En outre, le rôle Administrateur de dossiers publics et le groupe Administrateurs local pour le serveur cible doivent vous être attribués. Pour plus d’informations, consultez la page [Procédure d’ajout d’un utilisateur ou d’un groupe à un rôle d’administrateur](https://go.microsoft.com/fwlink/p/?linkid=81779).
 
-8.  Si vous disposez d’Exchange Server 2007 s’exécutant sur Windows Server 2008 x64, vous devez procéder à une mise à niveau vers [Windows PowerShell 2.0 et WinRM 2.0 pour Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930). Si vous disposez d’Exchange Server 2007 s’exécutant sur Windows Server 2003 x64, vous devez procéder à une mise à niveau vers Windows PowerShell 2.0. Pour plus d’informations, consultez la rubrique [Mise à jour pour Windows Server 2003 Édition x64](https://www.microsoft.com/fr-fr/download/details.aspx?id=10512).
+8.  Si vous disposez d’Exchange Server 2007 s’exécutant sur Windows Server 2008 x64, vous devez procéder à une mise à niveau vers [Windows PowerShell 2.0 et WinRM 2.0 pour Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930). Si vous disposez d’Exchange Server 2007 s’exécutant sur Windows Server 2003 x64, vous devez procéder à une mise à niveau vers Windows PowerShell 2.0. Pour plus d’informations, consultez la rubrique [Mise à jour pour Windows Server 2003 Édition x64](https://www.microsoft.com/fr-fr/download/details.aspx?id=10512).
 
 9.  Pour pouvoir accéder aux dossiers publics des différents sites, les utilisateurs doivent mettre à niveau leurs clients Outlook vers la mise à jour publique pour Outlook de novembre 2012 ou une version ultérieure.
     
@@ -136,18 +116,8 @@ Une configuration hybride avec des dossiers publics Exchange 2003 n'est pas pris
 
 1.  Si vos dossiers publics sont sur des serveurs Exchange 2010 ou version ultérieure, vous devez installer le rôle serveur d’accès au client sur tous les serveurs de boîtes aux lettres disposant d’une base de données de dossiers publics. Cela permet l’exécution du service RpcClientAccess de Microsoft Exchange qui permet à tous les clients d’accéder aux dossiers publics. Le rôle d’accès client n’étant pas requis pour les serveurs de dossiers publics Exchange 2007, cette étape n’est pas nécessaire. Pour plus d’informations, consultez la rubrique [Installer Exchange Server 2010](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md). Cette étape n’est pas obligatoire pour les dossiers publics Exchange 2007.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Il n’est pas utile que ce serveur prenne part à l’équilibrage de la charge d’accès au client. Pour plus d'informations, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/ff625247(v=exchg.141).aspx">Présentation de l'équilibrage de la charge dans Exchange 2010</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Il n’est pas utile que ce serveur prenne part à l’équilibrage de la charge d’accès au client. Pour plus d'informations, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/ff625247(v=exchg.141).aspx">Présentation de l'équilibrage de la charge dans Exchange 2010</a>.
 
 
 2.  Créez une base de données de boîtes aux lettres vide sur chaque serveur de dossiers publics.
@@ -160,18 +130,8 @@ Une configuration hybride avec des dossiers publics Exchange 2003 n'est pas pris
     
         New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Nous vous recommandons d’ajouter à cette base de données uniquement la boîte aux lettres proxy que vous allez créer à l’étape 3. Aucune autre boîte aux lettres ne devrait être créée dans cette base de données de boîtes aux lettres.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Nous vous recommandons d’ajouter à cette base de données uniquement la boîte aux lettres proxy que vous allez créer à l’étape 3. Aucune autre boîte aux lettres ne devrait être créée dans cette base de données de boîtes aux lettres.
 
 
 3.  Créez une boîte aux lettres proxy à l'intérieur de la nouvelle base de données de boîtes aux lettres, puis masquez-la dans le carnet d'adresses. Le SMTP de cette boîte aux lettres sera renvoyé par la découverte automatique comme SMTP *DefaultPublicFolderMailbox*, de sorte qu'en résolvant ce SMTP, le client pourrait atteindre le serveur Exchange hérité pour l'accès aux dossiers publics.
@@ -200,18 +160,8 @@ Une configuration hybride avec des dossiers publics Exchange 2003 n'est pas pris
 
 Le service de synchronisation d’annuaires ne synchronise pas les dossiers publics à extension messagerie. Les scripts suivants synchronisent les dossiers publics à extension messagerie dans plusieurs sites. Les autorisations particulières attribuées aux dossiers publics à extension messagerie doivent être recréées dans le cloud, car les autorisations inter-sites ne sont pas prises en charge dans les scénarios de déploiement hybride. Pour plus d’informations, voir [Déploiements hybrides Exchange Server 2013](https://technet.microsoft.com/fr-fr/59e32000-4fcf-417f-a491-f1d8f9aeef9b\(exchg.150\)#doc).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les dossiers publics à extension messagerie synchronisés apparaissent en tant qu’objets de contact de messagerie à des fins de flux de messagerie et ne sont pas consultables dans le Centre d’administration Exchange. Reportez-vous à la commande Get-MailPublicFolder. Pour recréer les autorisations SendAs dans le cloud, utilisez la commande Add-RecipientPermission.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les dossiers publics à extension messagerie synchronisés apparaissent en tant qu’objets de contact de messagerie à des fins de flux de messagerie et ne sont pas consultables dans le Centre d’administration Exchange. Reportez-vous à la commande Get-MailPublicFolder. Pour recréer les autorisations SendAs dans le cloud, utilisez la commande Add-RecipientPermission.
 
 
 1.  Sur le serveur Exchange hérité, exécutez la commande suivante pour synchroniser les dossiers publics à extension messagerie à partir de votre annuaire Active Directory local vers O365.
@@ -220,19 +170,9 @@ Le service de synchronisation d’annuaires ne synchronise pas les dossiers publ
     
     Où `Credential` est votre nom d’utilisateur et votre mot de passe Office 365 et `CsvSummaryFile` est le chemin d’accès de l’emplacement où vous voulez journaliser les opérations et les erreurs de synchronisation au format .csv.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avant d’exécuter le script, nous vous recommandons de commencer par simuler les actions du script dans votre environnement en l’exécutant comme décrit ci-dessus avec le paramètre <code>-WhatIf</code>.<br />
-Nous vous recommandons également d’exécuter ce script quotidiennement pour synchroniser vos dossiers publics à extension messagerie.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Avant d’exécuter le script, nous vous recommandons de commencer par simuler les actions du script dans votre environnement en l’exécutant comme décrit ci-dessus avec le paramètre <code>-WhatIf</code>.
+> Nous vous recommandons également d’exécuter ce script quotidiennement pour synchroniser vos dossiers publics à extension messagerie.
 
 
 ## Étape 5 : configuration des utilisateurs Exchange Online pour l’accès aux dossiers publics locaux

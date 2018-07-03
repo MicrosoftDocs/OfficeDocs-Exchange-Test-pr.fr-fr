@@ -213,18 +213,8 @@ Il existe deux cas dans lesquels il est possible de créer des messages vocaux p
     
     L'appelant peut alors choisir parmi plusieurs options de message, notamment celle de marquer le message comme étant un message privé en appuyant sur la touche dièse (\#). Si l'appelant appuie sur la touche \#, il peut suivre les instructions de la messagerie unifiée pour marquer le message comme étant privé, supprimer cette option pour le message ou indiquer qu'il s'agit d'un message important. Le diagramme suivant montre les options du menu à disposition des appelants qui souhaitent laisser un message vocal privé à leur interlocuteur.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Pour les appels arrivant sur le répondeur automatique, la messagerie unifiée utilise les paramètres de la messagerie vocale protégée de la stratégie de boîte aux lettres de messagerie unifiée du destinataire du message, car l'appelant n'est pas authentifié.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Pour les appels arrivant sur le répondeur automatique, la messagerie unifiée utilise les paramètres de la messagerie vocale protégée de la stratégie de boîte aux lettres de messagerie unifiée du destinataire du message, car l'appelant n'est pas authentifié.
     
     **Création d'un message vocal protégé à l'aide du répondeur automatique**
     
@@ -234,18 +224,8 @@ Il existe deux cas dans lesquels il est possible de créer des messages vocaux p
     
     Les utilisateurs d'Outlook Voice Access peuvent rechercher leurs contacts dans le répertoire et leur envoyer des messages vocaux. Si la fonction Messagerie vocale protégée a été activée pour les destinataires utilisateurs de messagerie unifiée, les appelants peuvent marquer les messages comme étant privés après les avoir enregistrés. Les administrateurs peuvent également configurer une stratégie de boîte aux lettres de messagerie unifiée pour s'assurer que tous les messages vocaux envoyés par des utilisateurs authentifiés sont protégés par la messagerie unifiée.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si un appelant est authentifié, les paramètres de messagerie vocale protégée sur la stratégie de boîte aux lettres de messagerie unifiée qui est liée à l’appelant sont appliqués, indépendamment des paramètres de stratégie de boîte aux lettres de messagerie unifiée pour le destinataire prévu du message vocal.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si un appelant est authentifié, les paramètres de messagerie vocale protégée sur la stratégie de boîte aux lettres de messagerie unifiée qui est liée à l’appelant sont appliqués, indépendamment des paramètres de stratégie de boîte aux lettres de messagerie unifiée pour le destinataire prévu du message vocal.
     
     **Créer un message protégé à l'aide de l'interface utilisateur vocale**
     

@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2017-07-26_
 
 Une approbation de fédération établit une relation d’approbation entre une organisation Microsoft Exchange 2013 et le système d’authentification Azure Active Directory. En configurant une approbation de fédération, vous pouvez configurer le partage fédéré avec d’autres organisations Exchange fédérées, afin de permettre le partage d’informations de disponibilité de calendrier entre les destinataires. Le partage fédéré peut être configuré entre deux organisations Exchange 2013 fédérées ou entre une organisation Exchange 2013 fédérée et des organisations Exchange 2010 fédérées. Vous pouvez également configurer le partage avec une organisation Office 365.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La création d’une approbation de fédération fait partie des étapes permettant de configurer le partage fédéré dans votre organisation Exchange. Pour consulter toutes les étapes, voir <a href="configure-federated-sharing-exchange-2013-help.md">Configurer le partage fédéré</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La création d’une approbation de fédération fait partie des étapes permettant de configurer le partage fédéré dans votre organisation Exchange. Pour consulter toutes les étapes, voir <a href="configure-federated-sharing-exchange-2013-help.md">Configurer le partage fédéré</a>.
 
 
 Pour les autres tâches de gestion relatives à la fédération, voir [Procédures de fédération](federation-procedures-exchange-2013-help.md).
@@ -103,18 +93,8 @@ Pour les autres tâches de gestion relatives à la fédération, voir [Procédur
 
 6.  Dans **Sélectionner les domaines acceptés**, sélectionnez dans la liste le domaine partagé principal, puis cliquez sur **OK**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le domaine que vous sélectionnez sera utilisé pour configurer l’identificateur d’organisation pour l’approbation fédérée. Pour plus d’informations sur l’identificateur d’organisation, voir <a href="federation-exchange-2013-help.md">Fédération</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le domaine que vous sélectionnez sera utilisé pour configurer l’identificateur d’organisation pour l’approbation fédérée. Pour plus d’informations sur l’identificateur d’organisation, voir <a href="federation-exchange-2013-help.md">Fédération</a>.
 
 
 7.  Prenez note de la preuve du domaine fédéré qui est générée pour le domaine partagé principal. Cette chaîne vous permet de créer un enregistrement TXT sur votre serveur DNS public.
@@ -135,18 +115,8 @@ Pour les autres tâches de gestion relatives à la fédération, voir [Procédur
 
 8.  Dans l' **étape 2**, cliquez sur **Add**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour ajouter d’autres domaines de l’approbation fédérée des adresses e-mail qui sera utilisé par les utilisateurs de votre organisation qui nécessitent des fonctionnalités de partage fédérées. Par exemple, si vous avez des utilisateurs qui utilisent un sous-domaine dans leur adresse de messagerie par exemple ventes.contoso.com, vous ajoutez le domaine sales.contoso.com à l’approbation de fédération.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Une chaîne de preuve de domaine fédéré sera créée pour chaque domaine supplémentaire sélectionné. Vous devez créer des enregistrements TXT distincts sur votre DNS public pour chaque domaine supplémentaire.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Une chaîne de preuve de domaine fédéré sera créée pour chaque domaine supplémentaire sélectionné. Vous devez créer des enregistrements TXT distincts sur votre DNS public pour chaque domaine supplémentaire.
 
 
 9.  À l’aide des chaînes de preuve de domaine fédéré créées pour chaque domaine, créez des enregistrements TXT pour chacun de ces domaines sur votre serveur DNS public. En fonction de la planification des mises à jour de votre hôte DNS public, la réplication des modifications DNS peut prendre au moins 15 minutes.
@@ -231,16 +201,6 @@ Pour vérifier que vous avez correctement créé et configuré l’approbation d
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Get-FederationTrust](https://technet.microsoft.com/fr-fr/library/dd351262\(v=exchg.150\)) et [Get-FederationInformation](https://technet.microsoft.com/fr-fr/library/dd351221\(v=exchg.150\)).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

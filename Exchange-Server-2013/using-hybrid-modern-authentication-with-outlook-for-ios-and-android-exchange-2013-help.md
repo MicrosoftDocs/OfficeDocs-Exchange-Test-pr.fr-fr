@@ -49,18 +49,8 @@ Plus précisément, cette nouvelle architecture confère les améliorations suiv
 
 5.  **Nouvelles fonctionnalités sur iOS et Android** : cette mise à jour permet à l’application Outlook d’utiliser des fonctionnalités Office 365 natives qui ne sont, pour l’instant, pas prises en charge dans l’environnement Exchange local (par exemple, la recherche complète Exchange Online et la boîte de réception Prioritaire). Ces fonctionnalités sont uniquement disponibles quand vous utilisez Outlook pour iOS et Android.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il est impossible de gérer des appareils via le Centre d’administration Exchange local. Pour cela, utilisez Intune.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il est impossible de gérer des appareils via le Centre d’administration Exchange local. Pour cela, utilisez Intune.
 
 
 ## Sécurité des données, accès et contrôles d’audit
@@ -195,18 +185,8 @@ Pour empêcher d’autres clients de l’appareil mobile (par exemple, le client
 
 2.  Vous pouvez utiliser une stratégie d’accès conditionnel local dans Intune après avoir installé le connecteur Exchange local. Pour en savoir plus, consultez l’article [Créer une stratégie d’accès conditionnel pour Exchange sur site et Exchange Online Dedicated hérité](https://docs.microsoft.com/intune/conditional-access-exchange-create#configure-exchange-on-premises-access).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Au moment d’implémenter l’une de ces options dans l’environnement local, n’oubliez pas que cela peut affecter les utilisateurs qui se connectent à Exchange sur leurs appareils mobiles.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Au moment d’implémenter l’une de ces options dans l’environnement local, n’oubliez pas que cela peut affecter les utilisateurs qui se connectent à Exchange sur leurs appareils mobiles.
 
 
 ## Créer une stratégie de protection des applications Intune
@@ -259,18 +239,8 @@ Si vous avez déjà activé l’authentification moderne hybride pour prendre en
     
         New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Une fois cette règle créée, les utilisateurs qui utilisent Outlook pour iOS et Android avec l’authentification de base sont bloqués.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Une fois cette règle créée, les utilisateurs qui utilisent Outlook pour iOS et Android avec l’authentification de base sont bloqués.
 
 
 3.  Vérifiez que la propriété maxRequestLength d’EAS correspond à la propriété MaxSendSize/MaxReceiveSize de votre configuration de transport :
@@ -327,18 +297,8 @@ Les fonctionnalités suivantes ne sont pas prises en charge pour les boîtes aux
 
 Avec ExpressRoute, il n’existe aucun espace IP privé pour les connexions ExpressRoute, ni aucune résolution DNS « privée ». En d’autres termes, les points de terminaison que votre entreprise souhaite utiliser via ExpressRoute doivent être résolus en DNS publics. Si ce point de terminaison est résolu en adresse IP présente dans les préfixes publiés associés au circuit ExpressRoute (votre entreprise doit configurer ces préfixes dans le portail Azure quand vous activez l’appairage Microsoft sur la connexion ExpressRoute), la connexion sortante entre Exchange Online et votre environnement local est acheminée via le circuit ExpressRoute. Votre entreprise doit s’assurer que le trafic de retour associé à ces connexions est acheminé via le circuit ExpressRoute (en évitant un routage asymétrique).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Comme votre entreprise ajoute l’espace de noms Exchange ActiveSync aux préfixes publiés dans le circuit ExpressRoute, la seule façon d’atteindre le point de terminaison Exchange ActiveSync est de passer par ExpressRoute. En d’autres termes, Outlook pour iOS et Android est le seul appareil mobile qui peut se connecter à l’environnement local via l’espace de noms ActiveSync. Tous les autres clients ActiveSync (par exemple, les clients de messagerie natifs des appareils mobiles) ne peuvent pas se connecter à l’environnement local car la connexion n’est pas établie à partir du Microsoft Cloud. En effet, l’espace IP public publié sur Microsoft sur le circuit ExpressRoute et l’espace IP public publié sur votre ou vos circuit(s) Internet ne peuvent pas se chevaucher.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Comme votre entreprise ajoute l’espace de noms Exchange ActiveSync aux préfixes publiés dans le circuit ExpressRoute, la seule façon d’atteindre le point de terminaison Exchange ActiveSync est de passer par ExpressRoute. En d’autres termes, Outlook pour iOS et Android est le seul appareil mobile qui peut se connecter à l’environnement local via l’espace de noms ActiveSync. Tous les autres clients ActiveSync (par exemple, les clients de messagerie natifs des appareils mobiles) ne peuvent pas se connecter à l’environnement local car la connexion n’est pas établie à partir du Microsoft Cloud. En effet, l’espace IP public publié sur Microsoft sur le circuit ExpressRoute et l’espace IP public publié sur votre ou vos circuit(s) Internet ne peuvent pas se chevaucher.
 
 
 **Q** : Si seules quatre semaines de données de courrier sont synchronisées vers Exchange Online, est-ce que les requêtes de recherche exécutées dans Outlook pour iOS et Android peuvent renvoyer d’autres informations en plus des données disponibles sur l’appareil local ?

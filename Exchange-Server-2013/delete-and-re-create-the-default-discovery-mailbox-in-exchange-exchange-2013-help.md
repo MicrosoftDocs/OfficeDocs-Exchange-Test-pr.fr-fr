@@ -58,18 +58,8 @@ La résolution du problème dépend de votre volonté d’enregistrer les résul
 
 ## Utiliser l’Environnement de ligne de commande Exchange Management Shell pour supprimer et recréer la boîte aux lettres de découverte par défaut
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le Centre d’administration Exchange (CAE), car les boîtes aux lettres de découverte n’y sont pas affichées.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le Centre d’administration Exchange (CAE), car les boîtes aux lettres de découverte n’y sont pas affichées.
 
 
 1.  Exécutez la commande suivante pour supprimer la boîte aux lettres de découverte par défaut.

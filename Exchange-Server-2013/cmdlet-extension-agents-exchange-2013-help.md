@@ -175,18 +175,8 @@ Chaque fois qu’une cmdlet Exchange est exécutée, elle appelle l’agent d’
 
 4.  **OnComplete**   Cette API est utilisée une fois toutes les tâches de traitement de la cmdlet terminées. Elle peut être utilisée pour exécuter des tâches de post-traitement, comme par exemple, écrire des données dans une base de données externe.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L’agent d’extension de cmdlets de l’<code>Scripting agent</code> n’est pas appelé lorsque des cmdlets contenant le verbe <code>Get</code> sont exécutées.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L’agent d’extension de cmdlets de l’<code>Scripting agent</code> n’est pas appelé lorsque des cmdlets contenant le verbe <code>Get</code> sont exécutées.
 
 
 ## Fichier de configuration de l’agent de script
@@ -276,18 +266,8 @@ Pour activer l’`Scripting agent`, procédez comme suit :
 
 1.  Renommez le fichierScriptingAgentConfig.xml.sample dans **\<chemin d’installation\>\\V15\\Bin\\CmdletExtensionAgents** en ScriptingAgentConfig.xml sur chacun des serveurs Exchange 2013 de votre organisation.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous pouvez copier le fichier de configuration d’un serveur Exchange 2013 dans d’autres serveurs Exchange 2013. Assurez-vous de mettre à jour le fichier de configuration désiré avant de le copier.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Vous pouvez copier le fichier de configuration d’un serveur Exchange 2013 dans d’autres serveurs Exchange 2013. Assurez-vous de mettre à jour le fichier de configuration désiré avant de le copier.
 
 
 2.  Ajoutez votre script au fichier de configuration renommé sur chaque serveur Exchange 2013 de votre organisation.

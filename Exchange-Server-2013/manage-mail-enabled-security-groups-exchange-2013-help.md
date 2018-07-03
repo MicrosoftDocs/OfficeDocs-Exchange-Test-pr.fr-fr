@@ -27,18 +27,8 @@ Un groupe de sécurité à extension messagerie peut être utilisé pour distrib
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -55,18 +45,8 @@ Un groupe de sécurité à extension messagerie peut être utilisé pour distrib
     
       - **\* Nom complet**   Saisissez le nom complet. Ce nom apparaît dans le carnet d’adresses partagé, dans la ligne À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes du Centre d’administration Exchange. Le nom d'affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s'agit. Ce nom doit aussi être unique dans la forêt.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Si une stratégie d’attribution de noms de groupe est appliquée, vous devez respecter les contraintes d’attribution de noms en vigueur dans votre organisation. Pour plus d’informations, consultez la rubrique <a href="create-a-distribution-group-naming-policy-exchange-2013-help.md">Créer une stratégie de noms de groupe de distribution</a>. Si vous souhaitez remplacer la stratégie d’attribution de noms de groupe de votre organisation, consultez la rubrique <a href="override-the-distribution-group-naming-policy-exchange-2013-help.md">Ignorer la stratégie de noms des groupes de distribution</a>.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Si une stratégie d’attribution de noms de groupe est appliquée, vous devez respecter les contraintes d’attribution de noms en vigueur dans votre organisation. Pour plus d’informations, consultez la rubrique <a href="create-a-distribution-group-naming-policy-exchange-2013-help.md">Créer une stratégie de noms de groupe de distribution</a>. Si vous souhaitez remplacer la stratégie d’attribution de noms de groupe de votre organisation, consultez la rubrique <a href="override-the-distribution-group-naming-policy-exchange-2013-help.md">Ignorer la stratégie de noms des groupes de distribution</a>.
     
       - **\* Alias**   Dans cette boîte, entrez l’alias du groupe de sécurité. L’alias ne peut pas comporter plus de 64 caractères et doit être unique dans la forêt. Lorsqu’un utilisateur entre l’alias sur la ligne À : d’un message électronique, sa résolution génère le nom complet du groupe.
     
@@ -88,18 +68,8 @@ Un groupe de sécurité à extension messagerie peut être utilisé pour distrib
 
 4.  Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer le groupe de sécurité.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, tous les nouveaux groupes de sécurité à extension messagerie nécessitent l’authentification de tous les utilisateurs. En procédant de la sorte, des expéditeurs externes ne peuvent pas envoyer de messages aux groupes de sécurité à extension messagerie. Pour configurer un groupe de sécurité à extension messagerie afin qu’il accepte des messages de tous les expéditeurs, vous devez modifier les paramètres de restriction de remise de messages pour ce groupe.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, tous les nouveaux groupes de sécurité à extension messagerie nécessitent l’authentification de tous les utilisateurs. En procédant de la sorte, des expéditeurs externes ne peuvent pas envoyer de messages aux groupes de sécurité à extension messagerie. Pour configurer un groupe de sécurité à extension messagerie afin qu’il accepte des messages de tous les expéditeurs, vous devez modifier les paramètres de restriction de remise de messages pour ce groupe.
 
 
 ## Utilisation de l’environnement de ligne de commande Exchange Management Shell pour créer un groupe de distribution
@@ -160,18 +130,8 @@ Utilisez cette section pour afficher ou modifier les informations de base relati
 
   - **Masquer le groupe dans les listes d’adresses Exchange**   Cochez cette case si vous ne souhaitez pas que les utilisateurs voient ce groupe dans le carnet d’adresses. Si cette case à cocher est activée, l’expéditeur doit entrer l’alias ou l’adresse de messagerie électronique du groupe dans les lignes À : ou Cc: pour envoyer des messages au groupe.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Envisagez de masquer des groupes de sécurité parce qu'ils sont utilisés en général pour attribuer des autorisations aux membres du groupe et ne pas envoyer de courriers électroniques.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > Envisagez de masquer des groupes de sécurité parce qu'ils sont utilisés en général pour attribuer des autorisations aux membres du groupe et ne pas envoyer de courriers électroniques.
 
 
   - **Unité d’organisation**   Cette boîte en lecture seule affiche l’unité d’organisation contenant le groupe de sécurité. Vous devez utiliser des utilisateurs et ordinateurs Active Directory pour déplacer le groupe dans une autre UO.
@@ -190,18 +150,8 @@ Utilisez cette section pour ajouter ou supprimer des membres. Les propriétaires
 
 Cette section permet de spécifier si une approbation du propriétaire est nécessaire pour permettre à des utilisateurs de rejoindre le groupe. Si vous activez la case à cocher **L’approbation du propriétaire est obligatoire**, le ou les propriétaires du groupe reçoivent un message électronique demandant d’approuver la demande de rejoindre le groupe. Comme mentionné précédemment, seuls les propriétaires peuvent supprimer des membres du groupe.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette option ne fonctionne pas avec les groupes de sécurité avec messagerie en raison des limitations relatives à la sécurité.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette option ne fonctionne pas avec les groupes de sécurité avec messagerie en raison des limitations relatives à la sécurité.
 
 
 ## Gestion de la remise des messages
@@ -256,49 +206,19 @@ Cette section permet d’afficher ou de modifier les adresses de messagerie éle
     
       - **SMTP**   Il s’agit du type d’adresse par défaut. Cliquez sur ce bouton, puis saisissez la nouvelle adresse SMTP dans la zone **\* Adresse de messagerie**.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Pour que la nouvelle adresse devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>. Cette case à cochée n’apparaît que lorsque la case à cocher <strong>Mettre à jour automatiquement les adresses de messagerie en fonction de la stratégie des adresses de messagerie applicable à ce destinataire</strong> n’est pas sélectionnée.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Pour que la nouvelle adresse devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>. Cette case à cochée n’apparaît que lorsque la case à cocher <strong>Mettre à jour automatiquement les adresses de messagerie en fonction de la stratégie des adresses de messagerie applicable à ce destinataire</strong> n’est pas sélectionnée.
     
       - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone **\* Adresse de messagerie** l’un des types d’adresse de messagerie électronique non SMTP pris en charge.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>À l’exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l’adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d’adresse.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > À l’exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l’adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d’adresse.
 
 
   - **Modifier**   Pour modifier une adresse de messagerie électronique associée au groupe, sélectionnez-la dans la liste, puis cliquez sur **Modifier**![Icône Modifier](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Icône Modifier").
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Pour que l’adresse existante devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>. Comme nous l’avons précédemment mentionné, cette case à cochée n’apparaît que lorsque la case à cocher <strong>Mettre à jour automatiquement les adresses de messagerie en fonction de la stratégie des adresses de messagerie applicable à ce destinataire</strong> n’est pas sélectionnée.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Pour que l’adresse existante devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>. Comme nous l’avons précédemment mentionné, cette case à cochée n’apparaît que lorsque la case à cocher <strong>Mettre à jour automatiquement les adresses de messagerie en fonction de la stratégie des adresses de messagerie applicable à ce destinataire</strong> n’est pas sélectionnée.
 
 
   - **Supprimer**   Pour supprimer une adresse de messagerie électronique associée au groupe, sélectionnez-la dans la liste, puis cliquez sur **Supprimer**![Icône Suppression](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Icône Suppression").
@@ -309,18 +229,8 @@ Cette section permet d’afficher ou de modifier les adresses de messagerie éle
 
 Utilisez cette section pour ajouter une info courrier afin d’alerter les utilisateurs de problèmes potentiels avant qu’ils envoient un message à ce groupe. Une info courrier est un texte affiché dans la barre d’informations lorsque ce groupe est ajouté aux lignes À, Cc ou Cci d’un nouveau message électronique. Par exemple, vous pourriez ajouter une info courrier aux grands groupes pour prévenir des expéditeurs potentiels que leur message sera envoyé à beaucoup de personnes.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.
 
 
 ## Délégation de groupe

@@ -41,18 +41,8 @@ Pour les tâches supplémentaires relatives aux destinataires, consultez les rub
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -91,18 +81,8 @@ Dans cet exemple, nous configurons la boîte aux lettres de Robin Wood pour acce
 
     Set-Mailbox -Identity "Robin Wood" -AcceptMessagesOnlyFrom "Lori Penor","Jeff Phillips" -AcceptMessagesOnlyFromDLMembers "Legal Team 1"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous configurez une boîte aux lettres pour qu’elle accepte uniquement des messages provenant d’expéditeurs individuels, vous devez utiliser le paramètre <em>AcceptMessagesOnlyFrom</em>. Si vous configurez une boîte aux lettres pour qu’elle accepte uniquement des messages provenant d’expéditeurs membres d’un groupe de distribution spécifique, utilisez le paramètre <em>AcceptMessagesOnlyFromDLMembers</em>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous configurez une boîte aux lettres pour qu’elle accepte uniquement des messages provenant d’expéditeurs individuels, vous devez utiliser le paramètre <em>AcceptMessagesOnlyFrom</em>. Si vous configurez une boîte aux lettres pour qu’elle accepte uniquement des messages provenant d’expéditeurs membres d’un groupe de distribution spécifique, utilisez le paramètre <em>AcceptMessagesOnlyFromDLMembers</em>.
 
 
 Dans cet exemple, nous ajoutons l’utilisateur David Pelton à la liste des utilisateurs dont les messages doivent être acceptés par la boîte aux lettres de Robin Wood.
@@ -121,18 +101,8 @@ Dans cet exemple, nous configurons la boîte aux lettres de Robin Wood pour refu
 
     Set-Mailbox -Identity "Robin Wood" -RejectMessagesFromDLMembers @{add="Legal Team 3"}
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous configurez une boîte aux lettres pour qu’elle refuse des messages provenant d’expéditeurs individuels, vous devez utiliser le paramètre <em>RejectMessagesFrom</em>. Si vous configurez une boîte aux lettres pour qu’elle refuse des messages provenant d’expéditeurs membres d’un groupe de distribution spécifique, utilisez le paramètre <em>RejectMessagesFromDLMembers</em>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous configurez une boîte aux lettres pour qu’elle refuse des messages provenant d’expéditeurs individuels, vous devez utiliser le paramètre <em>RejectMessagesFrom</em>. Si vous configurez une boîte aux lettres pour qu’elle refuse des messages provenant d’expéditeurs membres d’un groupe de distribution spécifique, utilisez le paramètre <em>RejectMessagesFromDLMembers</em>.
 
 
 Pour plus d’informations sur la syntaxe et les paramètres relatifs à la configuration des restrictions de remise pour différents types de destinataires, consultez les rubriques suivantes :

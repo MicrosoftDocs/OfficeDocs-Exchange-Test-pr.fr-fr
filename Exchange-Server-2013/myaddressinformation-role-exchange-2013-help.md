@@ -31,18 +31,8 @@ Pour plus d’informations sur les rôles de gestion, les groupes de rôles de g
 
 Pour que ce rôle puisse accorder des autorisations, il doit être attribué à un utilisateur de rôle, telle qu’une stratégie d’attribution de rôle. Cette affectation s’effectue à l’aide des attributions de rôles de gestion. Les attributions de rôles lient les personnes affectées au rôle aux rôles. Si plusieurs rôles sont attribués à une personne affectée au rôle, celle-ci bénéficie de l’association de toutes les autorisations accordées par tous les rôles attribués.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez aussi attribuer ce rôle de gestion à un groupe de rôles, un groupe de sécurité universelle ou directement à un utilisateur. Toutefois, les rôles centrés sur l’utilisateur sont plus efficaces lors d’une utilisation avec des stratégies d’attribution de rôle.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez aussi attribuer ce rôle de gestion à un groupe de rôles, un groupe de sécurité universelle ou directement à un utilisateur. Toutefois, les rôles centrés sur l’utilisateur sont plus efficaces lors d’une utilisation avec des stratégies d’attribution de rôle.
 
 
 Ce rôle centré sur l’utilisateur a des étendues implicites qui ne peuvent pas être modifiées. Par conséquent, vous ne devez pas ajouter d’étendues personnalisées à des attributions de rôle qui affectent ce rôle à des stratégies d’attribution de rôles, des groupes de rôles, des groupes de sécurité universelle ou des utilisateurs.

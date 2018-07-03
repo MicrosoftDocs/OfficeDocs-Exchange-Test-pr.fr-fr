@@ -77,16 +77,6 @@ Le composant du routage de messagerie unifiée d'Exchange gère le routage entre
 
 Pour plus d'informations sur Microsoft Lync Server, consultez la rubrique [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lors de l'intégration locale de la messagerie unifiée et de Lync Server dans un déploiement local ou hybride, les notifications d'appels en absence ne sont pas disponibles pour les utilisateurs qui ont une boîte aux lettres située sur un serveur de boîtes aux lettres Exchange 2007 ou Exchange 2010. Une notification d'appel en absence est générée lorsqu'un utilisateur se déconnecte avant l'envoi de l'appel vers un serveur de boîtes aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Lors de l'intégration locale de la messagerie unifiée et de Lync Server dans un déploiement local ou hybride, les notifications d'appels en absence ne sont pas disponibles pour les utilisateurs qui ont une boîte aux lettres située sur un serveur de boîtes aux lettres Exchange 2007 ou Exchange 2010. Une notification d'appel en absence est générée lorsqu'un utilisateur se déconnecte avant l'envoi de l'appel vers un serveur de boîtes aux lettres.
 

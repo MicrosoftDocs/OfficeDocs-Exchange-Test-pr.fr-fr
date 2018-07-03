@@ -45,18 +45,8 @@ Contrairement aux groupes de distribution habituels qui contiennent un ensemble 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -71,18 +61,8 @@ Contrairement aux groupes de distribution habituels qui contiennent un ensemble 
     
       - \* **Nom complet**   Saisissez le nom complet. Ce nom apparaît dans le carnet d’adresses partagé, dans la ligne À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes du Centre d’administration Exchange. Le nom d'affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s'agit. Ce nom doit aussi être unique dans la forêt.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>La stratégie de noms de groupes n’est pas appliquée aux groupes de distribution dynamique.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > La stratégie de noms de groupes n’est pas appliquée aux groupes de distribution dynamique.
     
       - **\* Alias**   Saisissez le nom de l’alias du groupe. L’alias ne peut pas comporter plus de 64 caractères et doit être unique dans la forêt. Lorsqu’un utilisateur saisit l’alias dans la ligne À : d’un message électronique, sa résolution génère le nom complet du groupe.
     
@@ -184,18 +164,8 @@ Contrairement aux groupes de distribution habituels qui contiennent un ensemble 
 
 8.  Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer le groupe de distribution dynamique.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour spécifier des règles pour des attributs autres que ceux disponibles dans l’EAC, vous devez l’environnement de ligne de commande Exchange Management Shell pour créer un groupe de distribution dynamique. N’oubliez pas que les paramètres de filtre et de condition pour les groupes de distribution dynamiques dotés de filtres des destinataires personnalisés ne peuvent être gérés qu’à l’aide de l’environnement. Pour voir un exemple de création d’un groupe de distribution dynamique avec une requête personnalisée, reportez-vous à la section suivante traitant de l'utilisation de l’environnement de ligne de commande Exchange Management Shell pour créer un groupe de distribution dynamique.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour spécifier des règles pour des attributs autres que ceux disponibles dans l’EAC, vous devez l’environnement de ligne de commande Exchange Management Shell pour créer un groupe de distribution dynamique. N’oubliez pas que les paramètres de filtre et de condition pour les groupes de distribution dynamiques dotés de filtres des destinataires personnalisés ne peuvent être gérés qu’à l’aide de l’environnement. Pour voir un exemple de création d’un groupe de distribution dynamique avec une requête personnalisée, reportez-vous à la section suivante traitant de l'utilisation de l’environnement de ligne de commande Exchange Management Shell pour créer un groupe de distribution dynamique.
 
 
 ## Utiliser le shell pour créer un groupe de distribution dynamique
@@ -326,49 +296,19 @@ Cette section permet d’afficher ou de modifier les adresses de messagerie éle
     
       - **SMTP**   Il s’agit du type d’adresse par défaut. Cliquez sur ce bouton, puis saisissez la nouvelle adresse SMTP dans la zone \* **Adresse de messagerie**.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Pour que la nouvelle adresse devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Pour que la nouvelle adresse devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>.
     
       - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone \* **Adresse de messagerie** l’un des types d’adresse de messagerie électronique non SMTP pris en charge.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>À l’exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l’adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d’adresse.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > À l’exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l’adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d’adresse.
 
 
   - **Modifier**   Pour modifier une adresse de messagerie électronique associée au groupe, sélectionnez-la dans la liste, puis cliquez sur **Modifier**![Icône Modifier](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Icône Modifier").
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Pour que l’adresse existante devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Pour que l’adresse existante devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>.
 
 
   - **Supprimer**   Pour supprimer une adresse de messagerie électronique associée au groupe, sélectionnez-la dans la liste, puis cliquez sur **Supprimer**![Icône Suppression](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Icône Suppression").
@@ -379,18 +319,8 @@ Cette section permet d’afficher ou de modifier les adresses de messagerie éle
 
 Utilisez cette section pour ajouter une info courrier afin d’alerter les utilisateurs de problèmes potentiels avant qu’ils envoient un message à ce groupe. Une info courrier est un texte affiché dans la barre d’informations lorsque ce groupe est ajouté aux lignes À, Cc ou Cci d’un nouveau message électronique. Par exemple, vous pourriez ajouter une info courrier aux grands groupes pour prévenir des expéditeurs potentiels que leur message sera envoyé à beaucoup de personnes.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.
 
 
 ## Délégation de groupe

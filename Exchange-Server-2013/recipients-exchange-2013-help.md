@@ -159,18 +159,8 @@ Chaque boîte aux lettres est constituée d'un utilisateur Active Directory et d
 
 ![Composants d’une boîte aux lettres](images/Bb201680.5fcb5e6d-656e-42ae-871f-0eef8aea456b(EXCHG.150).gif "Composants d’une boîte aux lettres")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous supprimez une boîte aux lettres, les données de boîte aux lettres stockées dans la base de données de boîtes aux lettres Exchange sont marquées pour suppression et le compte d'utilisateur associé est également supprimé d'Active Directory. Pour conserver le compte d'utilisateur et supprimer uniquement les données de boîte aux lettres, vous devez désactiver la boîte aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Si vous supprimez une boîte aux lettres, les données de boîte aux lettres stockées dans la base de données de boîtes aux lettres Exchange sont marquées pour suppression et le compte d'utilisateur associé est également supprimé d'Active Directory. Pour conserver le compte d'utilisateur et supprimer uniquement les données de boîte aux lettres, vous devez désactiver la boîte aux lettres.
 
 
 ## Types de boîte aux lettres
@@ -279,18 +269,8 @@ Exchange prend en charge les types de groupe de distribution suivants :
 
   - **Groupes non universels à extension messagerie**   Il s'agit d'objets de groupe local ou global Active Directory à extension messagerie. Vous pouvez créer ou activer la messagerie de groupes de distribution universels uniquement. Vous disposez peut-être de groupes à extension messagerie ayant été migré à partir de versions antérieures d'Exchange qui ne sont pas des groupes universels. Ces groupes peuvent toujours êtres gérés via le CAE ou l’environnement de ligne de commande Exchange Management Shell.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Pour convertir un groupe de domaine local ou global en groupe universel, vous pouvez utiliser la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/bb123770(v=exchg.150)">Set-Group</a> de l'environnement de ligne de commande.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Pour convertir un groupe de domaine local ou global en groupe universel, vous pouvez utiliser la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/bb123770(v=exchg.150)">Set-Group</a> de l'environnement de ligne de commande.
 
 
 ## Groupes de distribution dynamique
@@ -343,18 +323,8 @@ Si une personne externe à votre organisation a besoin d'accéder aux ressources
 
 Un autre scénario consiste à créer des utilisateurs de messagerie dans votre organisation pour les utilisateurs qui ne souhaitent pas conserver de boîte aux lettres Exchange. Par exemple, après une acquisition, la société acquise peut conserver son infrastructure de messagerie distincte, mais peut également avoir besoin d'accéder aux ressources de votre réseau. Pour ces utilisateurs, vous pouvez créer des utilisateurs de messagerie plutôt que des utilisateurs de boîte aux lettres.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans le CAE, la page <strong>Destinataires</strong> &gt; <strong>Contacts</strong> permet de créer et gérer les utilisateurs de messagerie. Il n’existe pas de page distincte pour les utilisateurs de messagerie.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans le CAE, la page <strong>Destinataires</strong> &gt; <strong>Contacts</strong> permet de créer et gérer les utilisateurs de messagerie. Il n’existe pas de page distincte pour les utilisateurs de messagerie.
 
 
 ## Dossiers publics à extension messagerie
@@ -369,18 +339,8 @@ Le destinataire Microsoft Exchange est un objet de destinataire spécifique qui 
 
 Le destinataire Microsoft Exchange n'est pas un objet de destinataire classique, comme une boîte aux lettres, un utilisateur de messagerie ou un contact de messagerie, et n'est pas géré à l'aide d'outils de destinataire standard. Cependant, vous pouvez utiliser la cmdlet [Set-OrganizationConfig](https://technet.microsoft.com/fr-fr/library/aa997443\(v=exchg.150\)) de l'environnement de ligne de commande pour configurer le destinataire Microsoft Exchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque des messages générés par le système sont envoyés à un expéditeur externe, le destinataire Microsoft Exchange n'est pas utilisé comme expéditeur du message. L’adresse de messagerie spécifiée par le paramètre <em>ExternalPostmasterAddress</em> pour la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/bb124151(v=exchg.150)">Set-TransportConfig</a> est utilisée à la place.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque des messages générés par le système sont envoyés à un expéditeur externe, le destinataire Microsoft Exchange n'est pas utilisé comme expéditeur du message. L’adresse de messagerie spécifiée par le paramètre <em>ExternalPostmasterAddress</em> pour la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/bb124151(v=exchg.150)">Set-TransportConfig</a> est utilisée à la place.
 
 
 ## Documentation de destinataires

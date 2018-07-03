@@ -160,18 +160,8 @@ Le tableau suivant présente la liste des événements que vous pouvez utiliser
 <td><p>Informations</p></td>
 <td><p>LogAlways</p></td>
 <td><p>Service &lt;<em>service</em>&gt;. &lt;<em>service</em>&gt; pour la base de données &lt;<em>mailbox</em>&gt; quitte une fenêtre de temps programmée. &lt;<em>number</em>&gt; boîtes aux lettres sur &lt;<em>number</em>&gt; ont été traitées. &lt;<em>number</em>&gt; boîtes aux lettres ont été ignorées en raison d'erreurs. &lt;<em>number</em>&gt; boîtes aux lettres ont été traitées séparément. &lt;<em>number</em>&gt; boîtes aux lettres n'ont pas été traitées par manque de temps.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L'Assistant Dossier géré reprendra là où il en était lors de sa prochaine exécution.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L'Assistant Dossier géré reprendra là où il en était lors de sa prochaine exécution.
 
 </td>
 </tr>

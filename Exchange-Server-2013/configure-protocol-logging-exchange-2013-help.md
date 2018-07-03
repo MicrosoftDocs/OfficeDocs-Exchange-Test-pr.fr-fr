@@ -47,18 +47,8 @@ L'enregistrement dans le journal de protocole consigne les conversations SMTP su
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -183,26 +173,11 @@ Cet exemple définit les paramètres de journal de protocole suivants dans le se
 
     Set-TransportService Mailbox01 -ReceiveProtocolLogPath "D:\Hub Receive SMTP Log" -SendProtocolLogPath "D:\Hub Send SMTP Log" -ReceiveProtocolLogMaxFileSize 20MB -SendProtocolLogMaxFileSize 20MB -ReceiveProtocolLogMaxDirectorySize 400MB -SendProtocolLogMaxDirectorySize 400MB -ReceiveProtocolLogMaxAge 45.00:00:00 -SendProtocolLogMaxAge 45.00:00:00
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Pour configurer les paramètres de journal de protocole dans le service de transport de boîte aux lettres sur un serveur de boîtes aux lettres, utilisez la cmdlet <strong>Set-MailboxTransportService</strong>. Pour configurer les paramètres de journal de protocole dans le service de transport frontal sur un serveur d'accès au client, utilisez la cmdlet <strong>Set-FrontEndTransportService</strong>.</p></li>
-<li><p>Définir les paramètres <em>SendProtocolLogPath</em> ou <em>ReceiveProtocolLogPath</em> sur la valeur <code>$null</code> désactive l'enregistrement dans le journal de protocole pour tous les connecteurs d'envoi et de réception sur le serveur. Toutefois, le fait de définir l'un de ces paramètres sur <code>$null</code> lorsque l'enregistrement dans le journal de protocole est activé pour tout connecteur d'envoi sur le serveur, y compris le connecteur d'envoi intra-organisationnel ou le connecteur d'envoi de remise de boîte aux lettres, génère des erreurs dans le journal des événements.</p></li>
-<li><p>Définir les paramètres <em>ReceiveProtocolLogMaxAge</em> ou <em>SendProtocolLogMaxAge</em> sur la valeur <code>00:00:00</code> empêche la suppression automatique des fichiers journaux de protocole en raison de leur âge.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]
+> <ul>
+> <li><p>Pour configurer les paramètres de journal de protocole dans le service de transport de boîte aux lettres sur un serveur de boîtes aux lettres, utilisez la cmdlet <strong>Set-MailboxTransportService</strong>. Pour configurer les paramètres de journal de protocole dans le service de transport frontal sur un serveur d'accès au client, utilisez la cmdlet <strong>Set-FrontEndTransportService</strong>.</p></li>
+> <li><p>Définir les paramètres <em>SendProtocolLogPath</em> ou <em>ReceiveProtocolLogPath</em> sur la valeur <code>$null</code> désactive l'enregistrement dans le journal de protocole pour tous les connecteurs d'envoi et de réception sur le serveur. Toutefois, le fait de définir l'un de ces paramètres sur <code>$null</code> lorsque l'enregistrement dans le journal de protocole est activé pour tout connecteur d'envoi sur le serveur, y compris le connecteur d'envoi intra-organisationnel ou le connecteur d'envoi de remise de boîte aux lettres, génère des erreurs dans le journal des événements.</p></li>
+> <li><p>Définir les paramètres <em>ReceiveProtocolLogMaxAge</em> ou <em>SendProtocolLogMaxAge</em> sur la valeur <code>00:00:00</code> empêche la suppression automatique des fichiers journaux de protocole en raison de leur âge.</p></li></ul>
 
 ## Comment savoir si cela a fonctionné ?
 

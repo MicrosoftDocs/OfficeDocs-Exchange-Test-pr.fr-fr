@@ -72,36 +72,16 @@ Vous pouvez configurer un carnet d’adresses hiérarchique, une fonctionnalité
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour activer un carnet d'adresses hiérarchique
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Bien qu'il soit impossible d'utiliser le CAE pour activer un carnet d'adresses hiérarchique, une fois ce dernier activé vous pouvez utiliser le CAE pour gérer l'appartenance des groupes au sein de la hiérarchie d'organisation.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Bien qu'il soit impossible d'utiliser le CAE pour activer un carnet d'adresses hiérarchique, une fois ce dernier activé vous pouvez utiliser le CAE pour gérer l'appartenance des groupes au sein de la hiérarchie d'organisation.
 
 
 Dans cet exemple, une unité d’organisation appelée « HAB » (carnet d’adresses hiérarchique) sera créée pour le carnet d’adresses hiérarchique. Le nom du domaine de l’organisation est « Contoso-dom » et « Contoso,Ltd » sera le nom de l’organisation de niveau supérieur de la hiérarchie (l’*organisation racine*). Les groupes subordonnés appelés « Corporate Office », « Product Support Organization» et « Sales & Marketing Organization » seront créés en tant qu’organisations enfants sous Contoso,Ltd. De plus, les groupes « Human Resources », « Accounting Group » et « Administration Group » seront créés en tant qu’organisations enfants sous Corporate Office.
@@ -110,49 +90,19 @@ Pour plus d’informations détaillées sur la création de groupes de distribut
 
 1.  Créez une unité d’organisation portant le nom HAB dans l’organisation Contoso. Vous pouvez utiliser l’outil Utilisateurs et ordinateurs Active Directory ou bien taper ce qui suit à l’invite de commandes.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous pouvez également utiliser une unité d’organisation existante dans votre forêt Exchange.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Vous pouvez également utiliser une unité d’organisation existante dans votre forêt Exchange.
     
         dsadd ou "OU=HAB,DC=Contoso-dom,DC=Contoso,DC=com"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Pour plus de détails, consultez la rubrique <a href="https://go.microsoft.com/fwlink/p/?linkid=198986">Créer une nouvelle unité d’organisation</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Pour plus de détails, consultez la rubrique <a href="https://go.microsoft.com/fwlink/p/?linkid=198986">Créer une nouvelle unité d’organisation</a>.
 
 
 2.  Créez le groupe de distribution racine Contoso,Ltd pour l’unité d’organisation HAB (carnet d’adresses hiérarchique).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Pour les besoins de cette rubrique, l’exemple présenté ici utilise l’environnement de ligne de commande Exchange Management Shell. Il est cependant possible de créer un groupe de distribution via le CAE. Pour plus de détails, consultez la rubrique <a href="create-and-manage-distribution-groups-exchange-2013-help.md">Création et gestion de groupes de distribution</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Pour les besoins de cette rubrique, l’exemple présenté ici utilise l’environnement de ligne de commande Exchange Management Shell. Il est cependant possible de créer un groupe de distribution via le CAE. Pour plus de détails, consultez la rubrique <a href="create-and-manage-distribution-groups-exchange-2013-help.md">Création et gestion de groupes de distribution</a>.
     
         New-DistributionGroup -Name "Contoso,Ltd" -DisplayName "Contoso,Ltd" -Alias "ContosoRoot" -OrganizationalUnit "Contoso-dom.Contoso.com/HAB" -SamAccountName "ContosoRoot" -Type "Distribution"
 
@@ -162,18 +112,8 @@ Pour plus d’informations détaillées sur la création de groupes de distribut
 
 4.  Créez des groupes de distribution pour les autres niveaux dans le carnet d’adresses hiérarchique. Pour cet exemple, il vous faudrait créer les groupes suivants : Corporate Office, Product Support Organization, Sales & Marketing Organization, Human Resources, Accounting Group et Administration Group. Cet exemple crée le groupe de distribution Corporate Office.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Pour les besoins de cette rubrique, l’exemple présenté ici utilise l’environnement de ligne de commande Exchange Management Shell. Il est cependant possible de créer des groupes de distribution via le CAE. Pour plus d’informations, consultez la rubrique <a href="create-and-manage-distribution-groups-exchange-2013-help.md">Création et gestion de groupes de distribution</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Pour les besoins de cette rubrique, l’exemple présenté ici utilise l’environnement de ligne de commande Exchange Management Shell. Il est cependant possible de créer des groupes de distribution via le CAE. Pour plus d’informations, consultez la rubrique <a href="create-and-manage-distribution-groups-exchange-2013-help.md">Création et gestion de groupes de distribution</a>.
     
         New-DistributionGroup -Name "Corporate Office" -DisplayName "Corporate Office" -Alias "CorporateOffice" -OrganizationalUnit "Contoso-dom.Contoso.com/HAB" -SamAccountName "CorporateOffice" -Type "Distribution"
 
@@ -183,35 +123,15 @@ Pour plus d’informations détaillées sur la création de groupes de distribut
 
 6.  Ajoutez chacun des groupes subordonnés en tant que membres de l’organisation racine. Dans cet exemple, les groupes de distribution Corporate Office, Product Support Organization et Sales & Marketing Organization sont ajoutés en tant que membres de l’organisation racine Contoso,Ltd dans le carnet d’adresses hiérarchique. Cet exemple ajoute le groupe de distribution Corporate Office comme membre du groupe de distribution racine Contoso,Ltd.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Cet exemple utilise l’alias des groupes de distribution.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Cet exemple utilise l’alias des groupes de distribution.
     
         Add-DistributionGroupMember -Identity "ContosoRoot" -Member "CorporateOffice"
 
 7.  Ajoutez chacun des groupes subordonnés du groupe de distribution Corporate Office en tant que membres de ce groupe. Dans cet exemple, les groupes de distribution Human Resources, Accounting Group et Administration Group sont ajoutés en tant que membres du groupe de distribution Corporate Office. Cet exemple ajoute le groupe de distribution Human Resources comme membre du groupe de distribution Corporate Office.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Cet exemple utilise l’alias des groupes de distribution et suppose que l’alias du groupe de distribution Human Resources est HumanResources.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Cet exemple utilise l’alias des groupes de distribution et suppose que l’alias du groupe de distribution Human Resources est HumanResources.
     
         Add-DistributionGroupMember -Identity "CorporateOffice" -Member "HumanResources"
 
@@ -223,18 +143,8 @@ Pour plus d’informations détaillées sur la création de groupes de distribut
     
         Set-Group -Identity "Human Resources" -SeniorityIndex 100
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le paramètre <em>SeniorityIndex</em> est une valeur numérique utilisée pour trier des groupes ou des utilisateurs dans un ordre numérique décroissant dans un carnet d’adresses hiérarchique. Si le paramètre <em>SeniorityIndex</em> n’est pas défini ou équivaut à deux ou plusieurs utilisateurs, le mode de tri dans le carnet d’adresses hiérarchique utilise le paramètre <em>PhoneticDisplayName</em> pour répertorier les utilisateurs dans l’ordre alphabétique croissant. Si le paramètre <em>PhoneticDisplayName</em> n’est pas défini, l’ordre de tri dans le carnet d’adresses hiérarchique est défini par défaut avec la valeur <em>DisplayName</em> et affiche les utilisateurs par ordre alphabétique croissant.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le paramètre <em>SeniorityIndex</em> est une valeur numérique utilisée pour trier des groupes ou des utilisateurs dans un ordre numérique décroissant dans un carnet d’adresses hiérarchique. Si le paramètre <em>SeniorityIndex</em> n’est pas défini ou équivaut à deux ou plusieurs utilisateurs, le mode de tri dans le carnet d’adresses hiérarchique utilise le paramètre <em>PhoneticDisplayName</em> pour répertorier les utilisateurs dans l’ordre alphabétique croissant. Si le paramètre <em>PhoneticDisplayName</em> n’est pas défini, l’ordre de tri dans le carnet d’adresses hiérarchique est défini par défaut avec la valeur <em>DisplayName</em> et affiche les utilisateurs par ordre alphabétique croissant.
 
 
 10. Définissez le paramètre *SeniorityIndex* pour les utilisateurs au sein des groupes du carnet d’adresses hiérarchique. Dans cet exemple, le groupe Corporate Office contient trois utilisateurs : Amy Alberts, David Hamilton et Rajesh M. Patel. Plutôt que d’afficher les utilisateurs dans un ordre alphabétique croissant (valeur par défaut), le mode de tri choisi de préférence sera David Hamilton (*SeniorityIndex* = 100), Rajesh M. Patel (*SeniorityIndex* = 50), puis Amy Alberts (*SeniorityIndex* = 25). Cet exemple définit sur 100 le paramètre *SeniorityIndex* pour l’utilisateur David Hamilton.
@@ -267,18 +177,8 @@ Cet exemple désactive l’organisation racine utilisée pour le carnet d’adre
 
     Set-OrganizationConfig -HierarchicalAddressBookRoot $null
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette commande ne supprime pas l’organisation racine ni les groupes enfants employés dans la structure du carnet d’adresses hiérarchique ou elle ne réinitialise pas les valeurs <em>SeniorityIndex</em> des groupes ou des utilisateurs. Elle empêche uniquement l’affichage du carnet d’adresses hiérarchique dans Outlook. Pour activer de nouveau le carnet d’adresses hiérarchique avec les mêmes paramètres de configuration, vous avez simplement besoin de réactiver l’organisation racine.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette commande ne supprime pas l’organisation racine ni les groupes enfants employés dans la structure du carnet d’adresses hiérarchique ou elle ne réinitialise pas les valeurs <em>SeniorityIndex</em> des groupes ou des utilisateurs. Elle empêche uniquement l’affichage du carnet d’adresses hiérarchique dans Outlook. Pour activer de nouveau le carnet d’adresses hiérarchique avec les mêmes paramètres de configuration, vous avez simplement besoin de réactiver l’organisation racine.
 
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-OrganizationConfig](https://technet.microsoft.com/fr-fr/library/aa997443\(v=exchg.150\)).

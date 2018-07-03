@@ -23,18 +23,8 @@ La configuration de Exchange 2013 requiert que la fonctionnalité Windows **In
 
 Procédez comme suit pour installer la fonctionnalité Windows sur cet ordinateur. Si un redémarrage est requis pour terminer l’installation de cette fonctionnalité, vous devez quitter le programme d’installation d’Exchange 2013, redémarrer et relancer le programme d’installation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous serez peut-être amené à installer d’autres mises à jour ou d’autres fonctionnalités Windows pour pouvoir poursuivre le programme d’installation d’Exchange 2013. Pour obtenir la liste complète des mises à jour et des fonctionnalités Windows requises, voir <a href="exchange-2013-prerequisites-exchange-2013-help.md">Conditions préalables pour Exchange 2013</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous serez peut-être amené à installer d’autres mises à jour ou d’autres fonctionnalités Windows pour pouvoir poursuivre le programme d’installation d’Exchange 2013. Pour obtenir la liste complète des mises à jour et des fonctionnalités Windows requises, voir <a href="exchange-2013-prerequisites-exchange-2013-help.md">Conditions préalables pour Exchange 2013</a>.
 
 
 1.  Ouvrez Windows PowerShell sur l’ordinateur local.

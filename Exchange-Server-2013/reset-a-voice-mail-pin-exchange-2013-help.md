@@ -21,18 +21,8 @@ _**Dernière rubrique modifiée :** 2013-02-22_
 
 Lorsqu'un utilisateur de messagerie vocale à extension messagerie unifiée voit sa boîte aux lettres verrouillée sous Outlook Voice Access parce qu'il a tenté plusieurs fois de se connecter à l'aide d'un code confidentiel incorrect ou qu'il l'a oublié, vous pouvez utiliser l'une des procédures suivantes pour réinitialiser le code confidentiel de l'utilisateur. Lors de la réinitialisation du code confidentiel Outlook Voice Access d'un utilisateur, vous pouvez configurer la messagerie unifiée de manière à ce qu'elle génère automatiquement un code confidentiel, ou le spécifier manuellement. Le nouveau code confidentiel est envoyé à l'utilisateur par courrier électronique. Vous pouvez spécifier des options de code confidentiel supplémentaires, comme exiger que l'utilisateur définisse un nouveau code confidentiel lors de la première connexion. Les utilisateurs peuvent également réinitialiser leur code confidentiel de messagerie unifiée à l'aide de Outlook ou Outlook Web App.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour accéder à leur boîte aux lettres à extension messagerie unifiée, les utilisateurs d'Outlook Voice Access doivent utiliser un système de numérotation multifréquence, également appelé entrées DTMF (numérotation en fréquences vocales). La reconnaissance vocale n'est pas disponible pour l'entrée de code confidentiel.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour accéder à leur boîte aux lettres à extension messagerie unifiée, les utilisateurs d'Outlook Voice Access doivent utiliser un système de numérotation multifréquence, également appelé entrées DTMF (numérotation en fréquences vocales). La reconnaissance vocale n'est pas disponible pour l'entrée de code confidentiel.
 
 
 Pour découvrir d'autres tâches de gestion concernant la sécurité d'Outlook Voice Access par code confidentiel, consultez la rubrique [Procédures de sécurité de code confidentiel](pin-security-procedures-exchange-2013-help.md).
@@ -45,18 +35,8 @@ Pour découvrir d'autres tâches de gestion concernant la sécurité d'Outlook V
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

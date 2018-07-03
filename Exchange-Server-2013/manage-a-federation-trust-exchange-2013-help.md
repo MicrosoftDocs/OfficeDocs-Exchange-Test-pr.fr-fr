@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2015-01-01_
 
 Une approbation de fédération établit une relation d’approbation entre une organisation Microsoft Exchange 2013 et le système d’authentification Azure Active Directory et prend en charge le partage fédéré avec d’autres organisations Exchange fédérées. Normalement, vous ne devriez pas avoir à gérer ni à modifier l’approbation de fédération qui a été créée. Toutefois, dans certaines circonstances, il sera peut-être nécessaire d’ajouter ou de supprimer des domaines fédérés ou de redéfinir le domaine utilisé afin de configurer l’identificateur de l’organisation (OrgID) pour l’approbation de fédération.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La modification d’une approbation de fédération, surtout le domaine partagé principal utilisé pour définir l’OrgID, peut perturber le partage fédéré entre les organisations Exchange fédérées ou pour les déploiements hybrides avec des organisations Office 365.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La modification d’une approbation de fédération, surtout le domaine partagé principal utilisé pour définir l’OrgID, peut perturber le partage fédéré entre les organisations Exchange fédérées ou pour les déploiements hybrides avec des organisations Office 365.
 
 
 Pour connaître les autres tâches de gestion relatives à la fédération, consultez la rubrique [Procédures de fédération](federation-procedures-exchange-2013-help.md).
@@ -191,16 +181,6 @@ Pour le vérifier, procédez comme suit :
     
         Get-FederationInformation -DomainName <your primary sharing domain>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

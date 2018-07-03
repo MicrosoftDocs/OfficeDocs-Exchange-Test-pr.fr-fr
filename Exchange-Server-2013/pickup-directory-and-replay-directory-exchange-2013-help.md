@@ -122,18 +122,8 @@ Le répertoire de collecte supprime les champs d'en-tête de message suivants de
 
   - `Bcc`
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Toutes les adresses de messagerie figurant dans les champs <code>Bcc</code> facultatifs de l'en-tête du message sont correctement traitées. Une fois les destinataires <code>Bcc</code> promus comme destinataires de l'enveloppe de message invisibles, ils sont supprimés de l'en-tête de message afin de protéger leur identité. Si un message contient uniquement des destinataires <code>Bcc</code>, la valeur <strong>Undisclosed Recipients</strong> est ajoutée au champ <code>To</code> dans l'en-tête du message.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Toutes les adresses de messagerie figurant dans les champs <code>Bcc</code> facultatifs de l'en-tête du message sont correctement traitées. Une fois les destinataires <code>Bcc</code> promus comme destinataires de l'enveloppe de message invisibles, ils sont supprimés de l'en-tête de message afin de protéger leur identité. Si un message contient uniquement des destinataires <code>Bcc</code>, la valeur <strong>Undisclosed Recipients</strong> est ajoutée au champ <code>To</code> dans l'en-tête du message.
 
 
 Le répertoire de collecte ajoute son propre champ d'en-tête `Received` dans un message dans le cadre du processus de dépôt du message. Le champ d'en-tête `Received` est appliqué selon le format suivant.
@@ -269,36 +259,16 @@ Un fichier de message copié dans le répertoire de collecte ou de relecture peu
 
   - **Échecs de remise**   Un fichier de message correctement mis en forme et associé à un expéditeur valide qui ne peut pas être correctement déposé pour remise génère une notification d'échec de remise (NDR). Un contenu dont la mise en forme est incorrecte ou des violations de restrictions appliquées aux messages du répertoire de collecte peuvent également générer une notification d'échec de remise. Quand une notification d'échec de remise (NDR) est générée durant le traitement d'un message, le fichier de message d'origine est joint au message NDR, puis supprimé du répertoire de collecte ou de relecture.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>La remise d'un message correctement mis en forme déposé dans le pipeline de transport peut échouer ultérieurement. Le message est alors renvoyé à l'expéditeur, accompagné d'une NDR. Ce type de défaillance peut être dû à des problèmes de transmission non liés aux répertoires de collecte ou de relecture, tels qu'une défaillance d'un serveur de messagerie ou un problème de routage sur le chemin de remise du message.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > La remise d'un message correctement mis en forme déposé dans le pipeline de transport peut échouer ultérieurement. Le message est alors renvoyé à l'expéditeur, accompagné d'une NDR. Ce type de défaillance peut être dû à des problèmes de transmission non liés aux répertoires de collecte ou de relecture, tels qu'une défaillance d'un serveur de messagerie ou un problème de routage sur le chemin de remise du message.
 
 
   - **Message incorrect**   Un message classé comme *message incorrect* présente des problèmes graves qui empêchent le dépôt du message en vue de sa remise par le répertoire de collecte ou de relecture. Un problème de message incorrect peut également survenir lorsque le message est correctement mis en forme mais que les destinataires ne sont pas valides et qu'un message de notification d'échec de remise ne peut pas être envoyé à l'expéditeur car ce dernier n'est pas valide.
     
     Les fichiers de messages identifiés comme messages incorrects sont conservés dans le répertoire de collecte ou de relecture et renommés de *\<nom\_fichier\>*.eml en *\<nom\_fichier\>*.bad. Si le fichier *\<nom\_fichier\>*.bad existe déjà, le fichier est renommé *\<nom\_fichier\>\<date\_heure\>*.bad. Si le répertoire de collecte ou de relecture contient des messages incorrects, une erreur est générée dans le journal des événements, mais les mêmes messages incorrects ne génèrent pas d'erreurs répétées dans le journal des événements.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Composez et enregistrez toujours les fichiers de messages dans un autre emplacement avant de les copier dans le répertoire de collecte pour remise. Le répertoire de collecte est interrogé toutes les cinq secondes pour identifier la présence de nouveaux messages. Par conséquent, si vous tentez de composer et d'enregistrer les fichiers de messages dans le répertoire de collecte proprement dit, ce dernier peut essayer de traiter les fichiers de messages avant que vous ayez terminé de les composer.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Composez et enregistrez toujours les fichiers de messages dans un autre emplacement avant de les copier dans le répertoire de collecte pour remise. Le répertoire de collecte est interrogé toutes les cinq secondes pour identifier la présence de nouveaux messages. Par conséquent, si vous tentez de composer et d'enregistrer les fichiers de messages dans le répertoire de collecte proprement dit, ce dernier peut essayer de traiter les fichiers de messages avant que vous ayez terminé de les composer.
 
 
 Retour au début

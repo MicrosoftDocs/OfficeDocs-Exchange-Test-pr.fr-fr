@@ -41,5 +41,5 @@ Pour corriger cette erreur, modifiez le fichier Boot.ini et supprimez le paramè
 
 5.  Enregistrez le fichier et fermez-le, puis redémarrez l’ordinateur Exchange Server pour que la modification soit prise en compte.
 
-Pour plus d’informations sur les paramètres pouvant être utilisés dans le fichier Boot.ini, voir l’article 833721 de la base de connaissances Microsoft sur les options de commutateurs disponibles pour les fichiers Boot.ini Windows XP et Windows Server 2003 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=833721](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=833721)).
+Pour plus d’informations sur les paramètres pouvant être utilisés dans le fichier Boot.ini, voir l’article 833721 de la base de connaissances Microsoft sur les options de commutateurs disponibles pour les fichiers Boot.ini Windows XP et Windows Server 2003 ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=833721](https://go.microsoft.com/fwlink/?linkid=3052&kbid=833721)).
 

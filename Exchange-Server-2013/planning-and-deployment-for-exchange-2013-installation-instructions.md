@@ -228,34 +228,14 @@ Le programme d'installation d'Exchange 2013 propose plusieurs modes d'installat
 
   - **Upgrade**   Sélectionnez ce mode lorsque vous disposez d’une installation existante d’Exchange et que vous installez une mise à jour cumulative ou un Service Pack. Vous pouvez utiliser ce mode dans l'Assistant Installation d'Exchange ou dans l'installation sans assistance.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 2013 ne prend pas en charge les mises à niveau sur place à partir des versions précédentes d'Exchange. Ce mode permet uniquement d’installer les mises à jour cumulatives ou Service Packs.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Exchange 2013 ne prend pas en charge les mises à niveau sur place à partir des versions précédentes d'Exchange. Ce mode permet uniquement d’installer les mises à jour cumulatives ou Service Packs.
 
 
   - **RecoverServer**   Utilisez ce mode lorsqu'un serveur a connu une défaillance irrémédiable et que vous avez besoin de récupérer des données. Vous devez installer un serveur à l'aide du même nom complet de domaine (FQDN) que le serveur défaillant, puis exécuter le programme d'installation avec le commutateur **/m:RecoverServer**. Ne spécifiez pas les rôles à restaurer. Le programme d'installation détecte l'objet serveur Exchange dans Active Directory et installe la configuration et les fichiers correspondants automatiquement. Après avoir récupéré le serveur, vous pouvez restaurer des bases de données et reconfigurer les autres paramètres. Pour fonctionner en mode **RecoverServer**, vous ne pouvez pas installer Exchange sur le serveur. L'objet serveur Exchange doit exister dans Active Directory. Vous pouvez uniquement utiliser ce mode pendant une installation sans assistance.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez mener à terme un mode d'installation avant d'en utiliser un autre.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez mener à terme un mode d'installation avant d'en utiliser un autre.
 
 
 ## Pour plus d'informations

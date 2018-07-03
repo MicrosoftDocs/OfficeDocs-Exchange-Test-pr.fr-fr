@@ -59,37 +59,17 @@ Pour connaître les tâches de gestion supplémentaires relatives aux stratégie
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Comment procéder ?
 
 ## Étape 1 : Utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer l’URL du proxy Web
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette étape est nécessaire uniquement si une URL de proxy web existe déjà dans votre organisation. Si ce n’est pas le cas, passez à l’étape 2.<br />
-Vous ne pouvez pas utiliser le Centre d’Administration Exchange (CAE) pour configurer l’URL du proxy web.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette étape est nécessaire uniquement si une URL de proxy web existe déjà dans votre organisation. Si ce n’est pas le cas, passez à l’étape 2.
+> Vous ne pouvez pas utiliser le Centre d’Administration Exchange (CAE) pour configurer l’URL du proxy web.
 
 
 Cet exemple configure une URL du proxy Web sur le serveur de boîtes aux lettres MAIL01.
@@ -106,18 +86,8 @@ Pour vérifier que la configuration de l’adresse URL du proxy Web a été corr
 
 ## Étape 2 : Utiliser l’environnement de ligne de commande Exchange Management Shell pour activer le répertoire virtuel de publication
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le CAE pour créer un répertoire virtuel de publication.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le CAE pour créer un répertoire virtuel de publication.
 
 
 Cet exemple active le répertoire virtuel de publication sur le serveur d’accès au client CAS01.
@@ -136,18 +106,8 @@ Pour vérifier que l’activation du répertoire virtuel de publication s’est 
 
 ## Étape 3 : Créer ou configurer une stratégie de partage exclusivement consacrée à la publication Internet de calendriers
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les options suivantes de l’étape 3 s’appliquent uniquement aux environnements Exchange Online.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les options suivantes de l’étape 3 s’appliquent uniquement aux environnements Exchange Online.
 
 
 Vous pouvez créer une stratégie de partage pour la publication Internet de calendriers (option 1) ou configurer la stratégie de partage par défaut pour la publication Internet de calendriers (option 2). Les deux options vous donnent le choix d’utiliser le Centre d’administration Exchange ou le Shell.

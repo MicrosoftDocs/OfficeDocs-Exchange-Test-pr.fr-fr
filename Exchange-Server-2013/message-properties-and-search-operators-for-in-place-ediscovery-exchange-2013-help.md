@@ -173,18 +173,8 @@ Le tableau suivant répertorie les propriétés de message électronique consult
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1   Pour la valeur d’une propriété de destinataire, vous pouvez utiliser l’adresse SMTP, le nom d’affichage ou l’alias afin d’indiquer un utilisateur. Par exemple, vous pouvez utiliser annb@contoso.com, annb ou « Ann Beebe » pour spécifier l’utilisateur Ann Beebe.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 1   Pour la valeur d’une propriété de destinataire, vous pouvez utiliser l’adresse SMTP, le nom d’affichage ou l’alias afin d’indiquer un utilisateur. Par exemple, vous pouvez utiliser annb@contoso.com, annb ou « Ann Beebe » pour spécifier l’utilisateur Ann Beebe.
 
 
 ## Opérateurs de recherche pris en charge
@@ -305,18 +295,8 @@ Les opérateurs booléens, tels que **AND** et **OR**, vous permettent de défin
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1   Utilisez cet opérateur pour les propriétés ayant des valeurs de date ou des valeurs numériques.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 1   Utilisez cet opérateur pour les propriétés ayant des valeurs de date ou des valeurs numériques.
 
 
 ## Caractères non pris en charge dans les requêtes de recherche

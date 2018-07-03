@@ -46,18 +46,8 @@ Dans Windows Server 2008 et les versions ultérieures, vous pouvez archiver les
 
 Les règles de protection Outlook sont similaires aux règles de protection du transport. dans la mesure où elles sont appliquées en fonction de conditions de message et protègent les messages par le biais d'un modèle de stratégie des droits d'accès AD RMS. Cependant, des règles de protection du transport sont appliquées dans le service de transport du serveur de boîtes aux lettres par l’agent de règles de transport. Les règles de protection de Outlook sont appliquées dans Outlook 2010, avant que le message quitte l’ordinateur de l’utilisateur. Les messages protégés par une règle de protection Outlook entrent dans le pipeline de transport avec la protection IRM déjà appliquée. En outre, les messages protégés par une règle de protection Outlook sont également enregistrés dans un format chiffré dans le dossier Éléments envoyés de la boîte aux lettres de l'expéditeur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si le déchiffrement de transport est activé dans votre organisation Exchange, les messages auxquels une protection IRM est appliquée par le biais d’une règle de protection Outlook issue du serveur AD RMS de votre organisation peuvent être déchiffrés par l’agent de déchiffrement installé sur le service de transport. Le contenu des messages peut être inspecté par l’agent de règles de transport et d’autres agents de transport installés sur le service de transport. Pour plus d'informations sur le déchiffrement du transport, voir <a href="transport-decryption-exchange-2013-help.md">Déchiffrement du transport</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si le déchiffrement de transport est activé dans votre organisation Exchange, les messages auxquels une protection IRM est appliquée par le biais d’une règle de protection Outlook issue du serveur AD RMS de votre organisation peuvent être déchiffrés par l’agent de déchiffrement installé sur le service de transport. Le contenu des messages peut être inspecté par l’agent de règles de transport et d’autres agents de transport installés sur le service de transport. Pour plus d'informations sur le déchiffrement du transport, voir <a href="transport-decryption-exchange-2013-help.md">Déchiffrement du transport</a>.
 
 
 Lorsque vous utilisez des règles de protection du transport, les utilisateurs n’ont pas d’indication sur le fait que le message sera automatiquement protégé ou non sur le service de transport. En revanche, lorsqu'une règle de protection Outlook est appliquée à un message dans Outlook 2010, les utilisateurs savent qu'il sera protégé par IRM. Si nécessaire, les utilisateurs peuvent également sélectionner un autre modèle de stratégie des droits.

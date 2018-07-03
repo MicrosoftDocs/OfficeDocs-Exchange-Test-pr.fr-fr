@@ -63,18 +63,8 @@ Dans les réseaux de commutation de circuits, tels que le réseau téléphonique
 
 Un réseau de commutation de circuits est un réseau utilisant une connexion dédiée. Une connexion dédiée est un circuit ou un canal installé entre deux nœuds afin de les faire communiquer. Après qu'un appel a été établi entre deux nœuds, la connexion ne peut être utilisée que par ces nœuds. Lorsque l'un des nœuds met fin à l'appel, la connexion est annulée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>RTC est le regroupement des réseaux téléphoniques de commutation de circuits du monde entier. Ce regroupement est similaire à Internet, le regroupement de réseaux publics de commutation de paquets basés sur le protocole IP du monde entier.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> RTC est le regroupement des réseaux téléphoniques de commutation de circuits du monde entier. Ce regroupement est similaire à Internet, le regroupement de réseaux publics de commutation de paquets basés sur le protocole IP du monde entier.
 
 
 Il existe deux types de base de réseaux de commutation de circuits : analogique et numérique. Le type analogique a été conçu pour la transmission vocale. Pendant longtemps, le RTC était uniquement analogique mais, aujourd'hui, les réseaux de commutation de circuits tels que le RTC sont passés de l'analogique au numérique. Pour permettre la prise en charge d'un signal de transmission vocale analogique sur un réseau numérique, le signal de transmission analogique doit être codé ou converti dans un format numérique avant d'entrer dans le réseau WAN de téléphonie. Du côté réception de la connexion, le signal numérique doit être décodé ou reconverti en signal analogique.
@@ -83,18 +73,8 @@ Les réseaux de commutation de circuits présentent des avantages et des inconv�
 
 La commutation de circuits présente un gros avantage sur les réseaux de commutation de paquets. Dans un réseau de commutation par circuits, lorsque vous utilisez un circuit, vous disposez du circuit tout entier, sans concurrence d'autres utilisateurs. Ce n'est pas le cas avec les réseaux de commutation par paquets.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La hiérarchie numérique synchrone (SDH) est devenue le principal protocole de transmission pour la plupart des réseaux RTC. La SDH est acheminée via des réseaux de fibres optiques.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La hiérarchie numérique synchrone (SDH) est devenue le principal protocole de transmission pour la plupart des réseaux RTC. La SDH est acheminée via des réseaux de fibres optiques.
 
 
 Présentation
@@ -105,18 +85,8 @@ La commutation de paquets est une technique consistant à diviser un message de 
 
 Dans les réseaux de commutation de paquets tels qu'Internet, les paquets sont acheminés vers leur destination via la route la plus appropriée, mais tous les paquets qui voyagent entre deux hôtes n'empruntent pas la même route, même s'ils font partie d'un même message. Cela garantit presque que les paquets parviendront à destination à des moments différents et dans le désordre. Dans un réseau de commutation de paquets, les paquets (messages ou fragments de messages) sont acheminés individuellement entre les nœuds sur les liaisons de données qui peuvent être partagées par d'autres nœuds. Contrairement à la commutation de circuits, avec la commutation par paquets, plusieurs connexions aux nœuds sur le réseau partagent la bande passante disponible.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avec la commutation de circuits, tous les paquets parviennent à destination dans l'ordre et par le même chemin.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Avec la commutation de circuits, tous les paquets parviennent à destination dans l'ordre et par le même chemin.
 
 
 Les réseaux de commutation de paquets permettent la transmission de données via Internet dans le monde entier. Un réseau de données public ou un réseau de commutation de paquets est l'équivalent au niveau des données du RTC.
@@ -131,18 +101,8 @@ Présentation
 
 Un PBX hérité est un périphérique téléphonique qui agit comme un commutateur pour la commutation des appels dans un réseau de commutation de circuits ou téléphonique.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Un PBX hérité est un PBX qui ne peut pas transmettre de paquets IP. Dans de nombreuses entreprises, les PBX hérités ont été remplacés par des PBX IP.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Un PBX hérité est un PBX qui ne peut pas transmettre de paquets IP. Dans de nombreuses entreprises, les PBX hérités ont été remplacés par des PBX IP.
 
 
 Un PBX est un périphérique téléphonique utilisé par la plupart des sociétés de taille moyenne à grande. Un PBX permet à ses utilisateurs ou abonnés de partager un certain nombre de lignes extérieures pour établir des appels téléphoniques considérés comme externes au PBX. Un PBX est une solution beaucoup moins onéreuse que le fait de donner à chaque utilisateur d'une entreprise une ligne téléphonique externe dédiée. Des combinés téléphoniques, des télécopieurs, des modems et de nombreux autres périphériques de communication peuvent être connectés à un PBX.
@@ -159,18 +119,8 @@ Dans les entreprises de taille moyenne à grande, les configurations suivantes d
 
   - Un regroupement de deux PBX ou plus interconnectés ou mis en réseau.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Un plan de numérotation de messagerie unifiée Exchange 2013 peut englober plusieurs PBX ou PBX IP.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Un plan de numérotation de messagerie unifiée Exchange 2013 peut englober plusieurs PBX ou PBX IP.
 
 
 Présentation
@@ -197,18 +147,8 @@ Voice over Internet Protocol (VoIP) est une technologie qui contient du matérie
 
 Une passerelle VoIP est un périphérique ou produit matériel tiers qui connecte un PBX hérité à votre LAN. La passerelle VoIP permet au système PBX de communiquer avec vos serveurs d'accès au client et vos serveurs de boîtes aux lettres Exchange 2013 exécutant le service routeur des appels de messagerie unifiée et le service de messagerie unifiée Microsoft Exchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La passerelle VoIP peut également se connecter à des systèmes PBX qui utilisent la VoIP au lieu des protocoles de commutation par circuits RTC.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La passerelle VoIP peut également se connecter à des systèmes PBX qui utilisent la VoIP au lieu des protocoles de commutation par circuits RTC.
 
 
 La messagerie unifiée Exchange 2013 s'appuie sur la capacité des passerelles VoIP à traduire ou convertir les protocoles basés sur le MRT ou la commutation par circuits téléphoniques comme RNIS et QSIG à partir d'un PBX en protocoles basés sur IP ou VoIP, tels que SIP (Session Initiated Protocol), RTP (Realtime Transport Protocol) ou T.38 pour la transmission de télécopies en temps réel. La passerelle VoIP fait partie intégrante de la fonctionnalité et du fonctionnement de la messagerie unifiée.

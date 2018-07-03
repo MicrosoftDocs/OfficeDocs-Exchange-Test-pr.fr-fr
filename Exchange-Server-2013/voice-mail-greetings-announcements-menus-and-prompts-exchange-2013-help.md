@@ -157,18 +157,8 @@ La messagerie unifiée est installée avec un ensemble d'invites audio par défa
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque le service de messagerie unifiée démarre sur le serveur de boîtes aux lettres, il vérifie que toutes les invites système sont disponibles. Si une invite du système est introuvable, la messagerie unifiée renvoie un message d'erreur. Pour corriger cette erreur, recherchez l'événement à l'aide de l'Observateur d'événements et copiez le fichier correspondant dans la fenêtre <strong>Propriétés des événements</strong> du DVD d'installation vers le dossier approprié sur le serveur de boîtes aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque le service de messagerie unifiée démarre sur le serveur de boîtes aux lettres, il vérifie que toutes les invites système sont disponibles. Si une invite du système est introuvable, la messagerie unifiée renvoie un message d'erreur. Pour corriger cette erreur, recherchez l'événement à l'aide de l'Observateur d'événements et copiez le fichier correspondant dans la fenêtre <strong>Propriétés des événements</strong> du DVD d'installation vers le dossier approprié sur le serveur de boîtes aux lettres.
 
 
 ## Messages d'accueil et annonces des plans de numérotation de messagerie unifiée

@@ -200,18 +200,8 @@ Les limites suivantes s’appliquent lors du partage d’informations de disponi
     
     3.  Ajoutez une nouvelle clé « \<add key="maximumQueryIntervalDays" value="62" /\> » et enregistrez le fichier web.config.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>La valeur de maximumQueryIntervalDays n’est pas présente par défaut. Lorsque cette valeur n’est pas spécifiée, Exchange 2007 utilise l’intervalle par défaut de 42 jours.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > La valeur de maximumQueryIntervalDays n’est pas présente par défaut. Lorsque cette valeur n’est pas spécifiée, Exchange 2007 utilise l’intervalle par défaut de 42 jours.
     
     4.  Arrêtez et redémarrez Microsoft Internet Information Services (IIS) sur tous les serveurs CAS Exchange 2007.
 

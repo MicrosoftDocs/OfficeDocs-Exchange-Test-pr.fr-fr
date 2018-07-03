@@ -35,18 +35,8 @@ Les commutateurs *WhatIf*, *Confirm* et *ValidateOnly* sont particulièrement ut
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>WhatIf</em>, <em>Confirm</em> et <em>ValidateOnly</em> sont des paramètres de commutateur. Pour plus d’informations sur les paramètres de commutateurs, voir <a href="https://technet.microsoft.com/fr-fr/library/bb124388(v=exchg.150)">Paramètres</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> <em>WhatIf</em>, <em>Confirm</em> et <em>ValidateOnly</em> sont des paramètres de commutateur. Pour plus d’informations sur les paramètres de commutateurs, voir <a href="https://technet.microsoft.com/fr-fr/library/bb124388(v=exchg.150)">Paramètres</a>.
 
 
 ## Commutateur WhatIf

@@ -29,18 +29,8 @@ Autres tâches de gestion relatives aux groupes de rôles, voir [Autorisations](
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -344,19 +334,9 @@ Pour vérifier que vous avez bien ajouté des rôles à un groupe de rôles, pro
 
 Le meilleur moyen pour révoquer des autorisations accordées à un groupe d'administrateurs ou d'utilisateurs spécialistes est de supprimer un rôle d'un groupe de rôles de gestion. Si vous ne souhaitez pas accorder à des administrateurs ou à des utilisateurs spécialistes l’autorisation de gérer une fonctionnalité, vous devez supprimer le rôle de gestion du groupe qui gère ces autorisations. Une fois le rôle supprimé, les membres du groupe de rôles ne seront plus autorisés à gérer la fonctionnalité.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Certains groupes de rôles (comme le groupe de rôles Gestion de l’organisation) limitent les rôles pouvant être supprimés. Pour plus d'informations, voir <a href="understanding-management-role-groups-exchange-2013-help.md">Présentation des groupes de rôles de gestion</a>.<br />
-Si un administrateur est membre d’un autre groupe qui contient des rôles de gestion permettant à l’administrateur de gérer la fonctionnalité, vous devez soit supprimer l’administrateur des autres groupes de rôles, soit supprimer le rôle autorisant la gestion de la fonctionnalité des autres groupes de rôles.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Certains groupes de rôles (comme le groupe de rôles Gestion de l’organisation) limitent les rôles pouvant être supprimés. Pour plus d'informations, voir <a href="understanding-management-role-groups-exchange-2013-help.md">Présentation des groupes de rôles de gestion</a>.
+> Si un administrateur est membre d’un autre groupe qui contient des rôles de gestion permettant à l’administrateur de gérer la fonctionnalité, vous devez soit supprimer l’administrateur des autres groupes de rôles, soit supprimer le rôle autorisant la gestion de la fonctionnalité des autres groupes de rôles.
 
 
 ## Utiliser le CAE pour supprimer un rôle de gestion dans un groupe de rôles
@@ -473,18 +453,8 @@ Vous utilisez uniquement les paramètres dont vous avez besoin pour configurer l
 
     Get-ManagementRoleAssignment -RoleAssignee "Sales Recipient Management" | Set-ManagementRoleAssignment -CustomRecipientWriteScope "Direct Sales Employees"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le commutateur <em>WhatIf</em> vous permet de vérifier que seules les attributions de rôle devant être modifiées sont modifiées. Exécutez la commande précédente avec le commutateur <em>WhatIf</em> pour vérifier les résultats, puis supprimez le commutateur <em>WhatIf</em> pour appliquer les modifications.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le commutateur <em>WhatIf</em> vous permet de vérifier que seules les attributions de rôle devant être modifiées sont modifiées. Exécutez la commande précédente avec le commutateur <em>WhatIf</em> pour vérifier les résultats, puis supprimez le commutateur <em>WhatIf</em> pour appliquer les modifications.
 
 
 Pour plus d’informations sur la modification des attributions des rôles de gestion, voir [Modifier une attribution de rôle](change-a-role-assignment-exchange-2013-help.md).
@@ -560,18 +530,8 @@ Si un utilisateur reçoit, directement ou indirectement, le rôle Gestion des r�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le CAE pour ajouter un délégué à un groupe de rôles.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le CAE pour ajouter un délégué à un groupe de rôles.
 
 
 ## Utilisation du Shell pour ajouter un délégué à un groupe de rôles
@@ -586,18 +546,8 @@ Pour modifier la liste des délégués sur un groupe de rôles, vous utilisez le
     
         $RoleGroup.ManagedBy += (Get-User <user to add>).Identity
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Utilisez la cmdlet <strong>Get-Group</strong> si vous souhaitez ajouter un groupe de sécurité universel.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Utilisez la cmdlet <strong>Get-Group</strong> si vous souhaitez ajouter un groupe de sécurité universel.
 
 
 3.  Répétez l’étape 2 pour chaque délégué que vous souhaitez ajouter.
@@ -626,18 +576,8 @@ Pour modifier la liste des délégués sur un groupe de rôles, vous utilisez le
     
         $RoleGroup.ManagedBy -= (Get-User <user to remove>).Identity
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Utilisez la cmdlet <strong>Get-Group</strong> si vous souhaitez supprimer un groupe de sécurité universelle.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Utilisez la cmdlet <strong>Get-Group</strong> si vous souhaitez supprimer un groupe de sécurité universelle.
 
 
 3.  Répétez l’étape 2 pour chaque délégué que vous souhaitez supprimer.

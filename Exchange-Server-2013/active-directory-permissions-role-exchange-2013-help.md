@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion d’`Active Directory Permissions` permet aux administrateurs de configurer des autorisations Active Directory dans une organisation. Certaines fonctionnalités reposant sur les autorisations Active Directory ou sur une liste de contrôle d’accès (ACL) comprennent les connecteurs de réception et d’envoi de transport, ainsi que les autorisations de boîtes aux lettres Envoyer en tant que et Envoyer de la part de.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les autorisations définies directement sur des objets Active Directory risquent de ne pas être appliquées via le Contrôle d’accès basé sur les rôles (RBAC).</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les autorisations définies directement sur des objets Active Directory risquent de ne pas être appliquées via le Contrôle d’accès basé sur les rôles (RBAC).
 
 
 Ce rôle de gestion est l’un des rôles intégrés dans le modèle des autorisations de contrôle d’accès en fonction du rôle (RBAC) dans Microsoft Exchange Server 2013. Les rôles de gestion, qui sont attribués à un ou plusieurs groupes de rôles de gestion, stratégies d’attribution de rôle de gestion, utilisateurs ou groupes de sécurité universels, agissent en tant que regroupement logique de cmdlets ou de scripts qui sont associés pour fournir un accès afin d’afficher ou de modifier la configuration des composants Exchange 2013, tels que des bases de données de boîtes aux lettres, des règles de transport et des destinataires. Si une cmdlet ou un script et ses paramètres, appelés « entrée de rôle de gestion », sont inclus dans un rôle, cette cmdlet ou ce script et ses paramètres peuvent être exécutés par les utilisateurs qui ont attribué le rôle. Pour plus d’informations sur les rôles de gestion et les entrées de rôles de gestion, consultez la rubrique [Présentation des rôles de gestion](understanding-management-roles-exchange-2013-help.md).

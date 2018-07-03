@@ -17,18 +17,8 @@ _**Sapplique à :** Exchange Online, Exchange Server 2013_
 
 _**Dernière rubrique modifiée :** 2017-01-17_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous avons différé la date d’échéance du 1er juillet 2017 pour créer ds recherches de découverte électronique inaltérable dans Exchange Online (dans les plans autonomes Office 365 et Exchange Online). Mais plus tard cette année ou au début de l’année prochaine, vous ne pourrez pas créer des recherches dans Exchange Online. Pour créer des recherches de découverte électronique, veuillez commencer à utiliser la <a href="https://go.microsoft.com/fwlink/?linkid=847843">recherche de contenu</a> dans le Centre de conformité et sécurité Office 365. Lorsque nous aurons désactivé les nouvelles recherches de découverte électronique inaltérable, vous pourrez toujours modifier les recherches de découverte électronique inaltérable existantes, et la création de nouvelles recherches de découverte électronique inaltérable sera toujours prise en charge dans les déploiements hybrides Exchange Server 2013 et Exchange.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Nous avons différé la date d’échéance du 1er juillet 2017 pour créer ds recherches de découverte électronique inaltérable dans Exchange Online (dans les plans autonomes Office 365 et Exchange Online). Mais plus tard cette année ou au début de l’année prochaine, vous ne pourrez pas créer des recherches dans Exchange Online. Pour créer des recherches de découverte électronique, veuillez commencer à utiliser la <a href="https://go.microsoft.com/fwlink/?linkid=847843">recherche de contenu</a> dans le Centre de conformité et sécurité Office 365. Lorsque nous aurons désactivé les nouvelles recherches de découverte électronique inaltérable, vous pourrez toujours modifier les recherches de découverte électronique inaltérable existantes, et la création de nouvelles recherches de découverte électronique inaltérable sera toujours prise en charge dans les déploiements hybrides Exchange Server 2013 et Exchange.
 
 
 Si votre organisation satisfait à des exigences de découverte légale (dans le cadre d’une stratégie organisationnelle, d’exigences de conformité ou de procès), la découverte électronique locale dans Microsoft Exchange Server 2013 et Exchange Online vous permet d’effectuer des recherches de découverte de contenu approprié dans les boîtes aux lettres. Exchange 2013 et Exchange Online offrent également des fonctionnalités de recherche fédérée et l’intégration à Microsoft SharePoint 2013 et Microsoft SharePoint Online. Le Centre de découverte électronique de SharePoint vous permet de rechercher et de conserver tous les contenus relatifs à un cas, y compris des sites web SharePoint 2013 et SharePoint Online, des documents, des partages de fichiers indexés par SharePoint, du contenu de boîtes aux lettres dans SharePoint 2013 et du contenu Exchange archivé. Vous pouvez également utiliser la découverte électronique locale dans un environnement Exchange hybride pour effectuer des recherches sur site et dans des boîtes aux lettres en nuage dans la même catégorie.
@@ -189,19 +179,9 @@ Retour au début
 
 Les utilisateurs qui ont été ajoutés au groupe de rôles Gestion de la découverte peuvent effectuer des recherches de découverte électronique locale. Vous pouvez effectuer une recherche en utilisant l'interface web du CAE. Ainsi, l'utilisation de la découverte électronique locale est simplifiée pour le personnel non technique, tels que les responsables d'enregistrements, les responsables de la mise en conformité ou les spécialistes juridiques et des ressources humaines. Vous pouvez également utiliser l'environnement de ligne de commande Exchange Management Shell pour effectuer une recherche. Pour plus d’informations, consultez la rubrique [Créer une recherche de découverte électronique inaltérable](create-an-in-place-ediscovery-search-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans les organisations locales, vous pouvez utiliser la découverte électronique locale pour rechercher des boîtes aux lettres situées sur les serveurs de boîtes aux lettres Exchange 2013. Pour rechercher des boîtes aux lettres situées sur des serveurs de boîtes aux lettres Exchange 2010, utilisez la recherche sur un serveur Exchange 2010.<br />
-Dans un déploiement hybride, qui est un environnement contenant des boîtes aux lettres à la fois sur vos serveurs de boîtes aux lettres locaux et dans une organisation en nuage, vous pouvez effectuer des recherches de découverte électronique locale de vos boîtes aux lettres en nuage en utilisant le CAE de votre organisation locale. Si vous avez l'intention de copier des messages vers une boîte aux lettres de découverte, vous devez sélectionner une boîte aux lettres de découverte locale. Les messages de boîtes aux lettres en nuage qui sont retournés dans des résultats de recherches sont copiés vers la boîte aux lettres de découverte locale. Pour en savoir plus sur les déploiements hybrides, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/jj200581(v=exchg.150)">Déploiements hybrides Exchange Server</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans les organisations locales, vous pouvez utiliser la découverte électronique locale pour rechercher des boîtes aux lettres situées sur les serveurs de boîtes aux lettres Exchange 2013. Pour rechercher des boîtes aux lettres situées sur des serveurs de boîtes aux lettres Exchange 2010, utilisez la recherche sur un serveur Exchange 2010.
+> Dans un déploiement hybride, qui est un environnement contenant des boîtes aux lettres à la fois sur vos serveurs de boîtes aux lettres locaux et dans une organisation en nuage, vous pouvez effectuer des recherches de découverte électronique locale de vos boîtes aux lettres en nuage en utilisant le CAE de votre organisation locale. Si vous avez l'intention de copier des messages vers une boîte aux lettres de découverte, vous devez sélectionner une boîte aux lettres de découverte locale. Les messages de boîtes aux lettres en nuage qui sont retournés dans des résultats de recherches sont copiés vers la boîte aux lettres de découverte locale. Pour en savoir plus sur les déploiements hybrides, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/jj200581(v=exchg.150)">Déploiements hybrides Exchange Server</a>.
 
 
 L'Assistant **Découverte électronique locale et archive permanente** dans le CAE vous permet de créer une recherche de découverte électronique locale et d'utiliser également l'archive permanente pour rechercher des résultats en attente. Quand vous créez une recherche de découverte électronique locale, un objet de recherche est créé dans la boîte aux lettres système de découverte électronique locale. Cet objet peut être utilisé pour démarrer, arrêter, modifier et supprimer la recherche. Après avoir créé la recherche, vous pouvez choisir d'obtenir une estimation des résultats de la recherche, qui contient des statistiques de mots clés vous permettant de déterminer l'efficacité de la requête. Vous pouvez également effectuer un aperçu instantané des éléments renvoyés dans la recherche, qui vous permet d'afficher le contenu des messages, le nombre de messages renvoyés depuis chaque boîte aux lettres source et le nombre total de messages. Vous pouvez utiliser ces informations pour affiner votre requête si nécessaire.
@@ -224,18 +204,8 @@ Quand vous créez une recherche de découverte électronique locale, vous devez 
         
         Exchange 2013 prend également en charge la syntaxe KQL pour des recherches de découverte électronique locale.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>La découverte électronique locale ne prend pas en charge les expressions régulières.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > La découverte électronique locale ne prend pas en charge les expressions régulières.
         
         Vous devez écrire les opérateurs logiques comme **AND** et **OR** en majuscules pour qu'ils soient considérés comme des opérateurs plutôt que des mots clés. Nous vous recommandons d'utiliser des parenthèses explicites dans toutes les requêtes combinant plusieurs opérateurs logiques (AND, OR, NOT, etc.) afin d'éviter des erreurs ou des interprétations incorrectes. Par exemple, si vous souhaitez rechercher des messages contenant soit MotA ou MotB ET soit MotC ou MotD, vous devez utiliser **(MotA OR MotB) AND (MotC OR MotD)**.
     
@@ -289,18 +259,8 @@ Retour au début
 
 Une fois la recherche de découverte électronique locale terminée, vous pouvez afficher les estimations des résultats de recherche dans le volet d’informations du CAE. Les estimations incluent le nombre d'éléments renvoyés et la taille totale de ces éléments. Vous pouvez également afficher des statistiques sur les mots clés, qui renvoient les informations détaillées sur le nombre d'éléments renvoyés pour chaque mot clé utilisé dans la requête de recherche. Cette information est utile pour déterminer l'efficacité de la requête. Si la requête est trop large, l'ensemble de données renvoyé peut être bien plus important et demander la vérification de plus de ressources et l'augmentation des coûts de découverte électronique. Si la requête est trop étroite, le nombre d'enregistrements renvoyés peut être considérablement réduit voire nul. Vous pouvez utiliser les estimations et les statistiques sure les mots clés pour affiner la requête et répondre à vos besoins.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange 2013, les statistiques sur les mots clés incluent également des statistiques sur les propriétés hors mots clés telles que les dates, les types de messages et les expéditeurs/destinataires spécifiés dans une requête de recherche.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange 2013, les statistiques sur les mots clés incluent également des statistiques sur les propriétés hors mots clés telles que les dates, les types de messages et les expéditeurs/destinataires spécifiés dans une requête de recherche.
 
 
 Il est également possible d'afficher les résultats de la recherche pour vous assurer que les messages renvoyés contiennent le contenu recherché et affiner la recherche si nécessaire. L'aperçu de la recherche de découverte électronique affiche le nombre de messages renvoyés à partir de chaque boîte aux lettres faisant l'objet d'une recherche et le nombre total de messages renvoyés par la recherche. L'aperçu est généré rapidement et n'implique pas de copier des messages dans une boîte aux lettres de découverte.
@@ -347,18 +307,8 @@ Il existe deux types de journalisation disponibles pour les recherches de décou
 
   - **Journalisation complète**   La journalisation complète contient des informations sur tous les messages renvoyés par la recherche. Ces informations sont enregistrées dans un fichier de valeurs séparées par des virgules (.csv) qui est joint au message électronique contenant les informations de journalisation de base. Le nom de la recherche est utilisé pour le fichier .csv. Ces informations peuvent être nécessaires à des fins de mise en conformité ou de conservation des enregistrements. Pour activer la journalisation complète, vous devez sélectionner l’option **Activer la journalisation complète** lorsque vous copiez les résultats de la recherche dans une boîte aux lettres de découverte du CAE. Si vous utilisez l'environnement de ligne de commande Exchange Management Shell, spécifiez l'option de journalisation complète en utilisant le paramètre *LogLevel*.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lors de la création ou de la modification d'une recherche de découverte électronique locale via l'environnement de ligne de commande Exchange Management Shell, vous pouvez également désactiver la journalisation.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lors de la création ou de la modification d'une recherche de découverte électronique locale via l'environnement de ligne de commande Exchange Management Shell, vous pouvez également désactiver la journalisation.
 
 
 Outre le journal de recherche inclus lorsque vous copiez les résultats de la recherche dans une boîte aux lettres de découverte, Exchange journalise également les cmdlets utilisées par le CAE ou l'environnement de ligne de commande Exchange Management Shell pour créer, modifier ou supprimer des recherches de découverte électronique locale. Ces informations sont consignées dans les entrées de journal d'audit administrateur. Pour plus d'informations, consultez la rubrique [Connexion au service d’audit administrateur](administrator-audit-logging-exchange-2013-help.md).
@@ -458,18 +408,8 @@ La stratégie de limitation par défaut contient les paramètres de limitation s
 <td><p>DiscoveryMaxConcurrency</p></td>
 <td><p>Nombre maximal de recherches de découverte électronique inaltérables pouvant être exécutées en même temps dans votre organisation</p></td>
 <td><p>2</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si une recherche de découverte électronique est lancée alors que deux recherches précédentes sont toujours en cours d’exécution, la troisième recherche ne sera pas ajoutée à la file d’attente et échouera. Vous devez patienter jusqu’à ce que l’une des recherches précédentes soit terminée avant de pouvoir lancer une nouvelle recherche.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si une recherche de découverte électronique est lancée alors que deux recherches précédentes sont toujours en cours d’exécution, la troisième recherche ne sera pas ajoutée à la file d’attente et échouera. Vous devez patienter jusqu’à ce que l’une des recherches précédentes soit terminée avant de pouvoir lancer une nouvelle recherche.
 
 </td>
 </tr>
@@ -483,18 +423,8 @@ La stratégie de limitation par défaut contient les paramètres de limitation s
 <td><p>DiscoveryMaxStatsSearchMailboxes</p></td>
 <td><p>Nombre maximal de boîtes aux lettres consultables en une seule recherche de découverte électronique inaltérable et permettant d’afficher les statistiques sur les mots-clés.</p></td>
 <td><p>100</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une fois que vous avez exécuté une estimation de recherche de découverte électronique, vous pouvez afficher les statistiques sur les mots clés. Ces statistiques présentent des informations sur le nombre d’éléments renvoyés pour chaque mot-clé utilisé dans la requête de recherche. Si plus de 100 boîtes aux lettres source sont incluses dans la recherche, une erreur sera renvoyée si vous tentez d’afficher les statistiques sur les mots-clés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Une fois que vous avez exécuté une estimation de recherche de découverte électronique, vous pouvez afficher les statistiques sur les mots clés. Ces statistiques présentent des informations sur le nombre d’éléments renvoyés pour chaque mot-clé utilisé dans la requête de recherche. Si plus de 100 boîtes aux lettres source sont incluses dans la recherche, une erreur sera renvoyée si vous tentez d’afficher les statistiques sur les mots-clés.
 
 </td>
 </tr>
@@ -517,18 +447,8 @@ La stratégie de limitation par défaut contient les paramètres de limitation s
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1   Si vous avez une organisation Office 365 et que vous lancez une recherche eDiscovery à partir du centre eDiscovery dans SharePoint Online, vous pouvez parcourir jusqu’à 1 500 boîtes aux lettres en une seule recherche.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 1   Si vous avez une organisation Office 365 et que vous lancez une recherche eDiscovery à partir du centre eDiscovery dans SharePoint Online, vous pouvez parcourir jusqu’à 1 500 boîtes aux lettres en une seule recherche.
 
 
 Dans Exchange Server 2013, vous pouvez modifier les valeurs par défaut de ces paramètres en fonction de vos besoins, ou créer des stratégies de limitation supplémentaires et les affecter aux utilisateurs avec une autorisation de gestion de découverte déléguée. Dans Exchange Online, les valeurs par défaut de ces paramètres de limitation ne peuvent pas être modifiées.

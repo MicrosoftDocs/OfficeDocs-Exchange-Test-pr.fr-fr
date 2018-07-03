@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2013-02-22_
 
 Lors de la création d'un plan de numérotation, vous pouvez configurer les *méthodes de numérotation par nom* principale et secondaire, autrement dit la manière dont les appelants peuvent rechercher des noms. Les appelants utilisent ces méthodes de numérotation par nom pour rechercher des noms afin de localiser et de contacter un utilisateur quand ils appellent un numéro Outlook Voice Access ou quand ils appellent un standard automatique de messagerie unifiée associé au plan de numérotation. Les appelants peuvent utiliser des entrées à tonalité pour retrouver un utilisateur à extension messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Quand l'option <strong>Aucune</strong> est sélectionnée pour la méthode secondaire de recherche de noms, seule la méthode principale est proposée aux appelants. Si vous configurez les deux méthodes de recherche de noms par les appelants, ces derniers sont invités à choisir l'une des deux méthodes.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Quand l'option <strong>Aucune</strong> est sélectionnée pour la méthode secondaire de recherche de noms, seule la méthode principale est proposée aux appelants. Si vous configurez les deux méthodes de recherche de noms par les appelants, ces derniers sont invités à choisir l'une des deux méthodes.
 
 
 Pour les autres tâches de gestion relatives aux plans de numérotation de messagerie unifiée, consultez la rubrique [Procédures de plan de numérotation de messagerie unifiée](um-dial-plan-procedures-exchange-2013-help.md).
@@ -45,18 +35,8 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

@@ -62,18 +62,8 @@ Pour les autres tâches de gestion relatives à la gestion des enregistrements d
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Étape 1 : Exporter des balises de rétention à partir d’une organisation Exchange locale
@@ -128,18 +118,8 @@ Pour vérifier que les balises et les stratégies de rétention ont bien été e
     </tbody>
     </table>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lorsque vous exécutez ce script sur Exchange Online, vous pouvez être invité à confirmer que vous voulez exécuter le logiciel à partir d’un éditeur non approuvé. Vérifiez que le nom de l’éditeur s’affiche sous la forme <code>CN=Microsoft Corporation, OU=MOPR, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</code>, puis cliquez sur <strong>R</strong> pour permettre le script à exécuter une seule fois ou <strong>A</strong> toujours exécuter.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Lorsque vous exécutez ce script sur Exchange Online, vous pouvez être invité à confirmer que vous voulez exécuter le logiciel à partir d’un éditeur non approuvé. Vérifiez que le nom de l’éditeur s’affiche sous la forme <code>CN=Microsoft Corporation, OU=MOPR, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</code>, puis cliquez sur <strong>R</strong> pour permettre le script à exécuter une seule fois ou <strong>A</strong> toujours exécuter.
     
         .\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
 

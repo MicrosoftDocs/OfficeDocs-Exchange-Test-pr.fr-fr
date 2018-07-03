@@ -65,18 +65,8 @@ L’algorithme de mise en cache de base de données, également connu sous le no
 
 L’algorithme statique utilisé par Exchange 2013 alloue de la mémoire pour le cache ESE de chaque processus de travail de banque en fonction de la mémoire vive physique. Cela correspond à la *cible de cache maximale* d’une base de données. Le quart de la mémoire totale du serveur est alloué au cache ESE. Cela correspond à la *taille cible de cache de serveur*.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La taille cible de cache de serveur et, par conséquent, la quantité de mémoire allouée à la banque pour le cache ESE peuvent être remplacées à l’aide de l’attribut <em>msExchESEParamCacheSizeMax</em> de l’objet <em>InformationStore</em> dans Active Directory (la valeur configurée correspond au nombre de pages de 32 Ko à allouer dans tous les processus de banque).</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La taille cible de cache de serveur et, par conséquent, la quantité de mémoire allouée à la banque pour le cache ESE peuvent être remplacées à l’aide de l’attribut <em>msExchESEParamCacheSizeMax</em> de l’objet <em>InformationStore</em> dans Active Directory (la valeur configurée correspond au nombre de pages de 32 Ko à allouer dans tous les processus de banque).
 
 
 Une quantité statique de ce cache est allouée aux copies actives et passives. La cible de cache maximale sera allouée au processus de travail de banque uniquement lors du traitement d’une copie de base de données active. Les copies de bases de données passives bénéficient de 20 % de la cible de cache maximale. Le reste est conservé par la banque et alloué au processus de travail si la base de données passive devient active.
