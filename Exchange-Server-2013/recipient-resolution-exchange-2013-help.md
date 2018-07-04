@@ -348,18 +348,8 @@ La résolution des destinataires applique une bifurcation à un message si les c
 
 Quand le nombre de destinataires développés est trop important, le catégoriseur fractionne le message en plusieurs copies. Cette opération vise à réduire l'utilisation des ressources du système durant l'expansion du message. Le nombre maximal de destinataires de l'enveloppe d'un message est contrôlé par la clé *ExpansionSizeLimit* du fichier de configuration d'application `%ExchangeInstallPath%Bin\EdgeTransport.exe.config`. La valeur par défaut est 1000.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous vous recommandons de ne pas modifier la valeur de la clé <em>ExpansionSizeLimit</em> sur un serveur de transport Exchange dans un environnement de production.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Nous vous recommandons de ne pas modifier la valeur de la clé <em>ExpansionSizeLimit</em> sur un serveur de transport Exchange dans un environnement de production.
 
 
 Retour au début

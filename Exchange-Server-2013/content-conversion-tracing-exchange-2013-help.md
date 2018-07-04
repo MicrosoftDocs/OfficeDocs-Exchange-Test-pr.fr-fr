@@ -51,18 +51,8 @@ Les autorisations requises sur les dossiers et sous-dossiers utilisés dans le s
 
   - Système : Contrôle total
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le suivi de conversion de contenu copie le contenu complet des messages électroniques. Pour éviter une diffusion indésirable des données confidentielles, vous devez définir des autorisations de sécurité appropriées pour l'emplacement des fichiers de suivi de conversion de contenu.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Le suivi de conversion de contenu copie le contenu complet des messages électroniques. Pour éviter une diffusion indésirable des données confidentielles, vous devez définir des autorisations de sécurité appropriées pour l'emplacement des fichiers de suivi de conversion de contenu.
 
 
 Retour au début

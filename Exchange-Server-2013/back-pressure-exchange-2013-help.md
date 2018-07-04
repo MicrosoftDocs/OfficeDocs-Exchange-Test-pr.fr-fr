@@ -300,18 +300,8 @@ Retour au début
 
 Toutes les options de configuration de la régulation du flux sont disponibles dans le fichier XML de configuration d'application %ExchangeInstallPath%Bin\\EdgeTransport.exe.config.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ces paramètres sont répertoriés sous forme de référence uniquement. Il est fortement déconseillé de modifier les paramètres de régulation du flux dans le fichier EdgeTransport.exe.config. La modification des paramètres de régulation du flux peut entraîner une dégradation des performance ou une perte de données. Nous vous conseillons d'identifier et de corriger la cause première de tout événement de régulation du flux que vous pouvez rencontrer.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Ces paramètres sont répertoriés sous forme de référence uniquement. Il est fortement déconseillé de modifier les paramètres de régulation du flux dans le fichier EdgeTransport.exe.config. La modification des paramètres de régulation du flux peut entraîner une dégradation des performance ou une perte de données. Nous vous conseillons d'identifier et de corriger la cause première de tout événement de régulation du flux que vous pouvez rencontrer.
 
 
 ### Options de configuration de la régulation du flux

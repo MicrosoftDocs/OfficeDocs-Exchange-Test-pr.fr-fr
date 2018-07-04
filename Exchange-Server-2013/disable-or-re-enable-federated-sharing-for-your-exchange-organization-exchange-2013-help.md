@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2014-02-17_
 
 Il peut arriver que vous soyez amené à désactiver temporairement un partage fédéré pour votre organisation. Au lieu de supprimer l’approbation de fédération existante ou les relations d’organisation et les stratégies de partage dont vous pourriez avoir besoin a l’avenir, vous pouvez simplement désactiver l’identificateur d’organisation (OrgID) de l’approbation de fédération.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour les déploiements hybrides avec Office 365, la désactivation de l’approbation de fédération pour vos serveurs locaux entraîne la désactivation de fonctionnalités hybrides, telles que les informations de disponibilité du calendrier partagé, les infos-courrier et le suivi des messages. Cependant, le transport de messagerie sécurisé ne sera pas désactivé dans le déploiement hybride si l’approbation de fédération de l’organisation locale est désactivée.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Pour les déploiements hybrides avec Office 365, la désactivation de l’approbation de fédération pour vos serveurs locaux entraîne la désactivation de fonctionnalités hybrides, telles que les informations de disponibilité du calendrier partagé, les infos-courrier et le suivi des messages. Cependant, le transport de messagerie sécurisé ne sera pas désactivé dans le déploiement hybride si l’approbation de fédération de l’organisation locale est désactivée.
 
 
 Pour en savoir plus sur les approbations de fédération, consultez la rubrique [Fédération](federation-exchange-2013-help.md). Pour en savoir plus sur le partage fédéré, voir [Partage](sharing-exchange-2013-help.md).

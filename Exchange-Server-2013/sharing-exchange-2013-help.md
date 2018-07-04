@@ -173,18 +173,8 @@ Les limites suivantes s’appliquent lors du partage d’informations de disponi
     
     1.  Sur tous vos serveurs CAS Exchange 2007, ouvrez le fichier suivant avec un éditeur de texte, par exemple le Bloc-notes : \<Chemin d’installation Exchange\>\\V14\\ClientAccess\\ExchWeb\\EWS\\web.config
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Avant d’apporter des modifications au fichier web.config, créez une copie du fichier et placez-la en lieu sûr.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!CAUTION]
+        > Avant d’apporter des modifications au fichier web.config, créez une copie du fichier et placez-la en lieu sûr.
     
     2.  Recherchez la section **appSettings** dans le fichier web.config.
     

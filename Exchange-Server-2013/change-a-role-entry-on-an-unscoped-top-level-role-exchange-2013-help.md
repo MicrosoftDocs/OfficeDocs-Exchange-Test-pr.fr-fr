@@ -77,18 +77,8 @@ Pour supprimer des paramètres d’une entrée de rôle, vous devez procéder de
 
   - Spécifiez le paramètre *UnscopedTopLevel* pour indiquer que vous modifiez une entrée de rôle sur un rôle de haut niveau non délimité. Si vous ne spécifiez pas ce paramètre lorsque vous modifiez une entrée de rôle sur un rôle non délimité, une erreur se produit.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas annuler la suppression de ces opérations. Si vous supprimez par erreur un paramètre d’une entrée de rôle, vous devez l’ajouter à nouveau manuellement.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Vous ne pouvez pas annuler la suppression de ces opérations. Si vous supprimez par erreur un paramètre d’une entrée de rôle, vous devez l’ajouter à nouveau manuellement.
 
 
 Pour supprimer des paramètres d’une entrée de rôle, utilisez la syntaxe suivante.
@@ -113,18 +103,8 @@ La suppression de tous les paramètres d’une entrée de rôle est particulièr
 
 Si vous ne voulez pas qu’un rôle ait accès à un script ou à une cmdlet non-Exchange, supprimez complètement du rôle l’entrée de rôle associée au lieu de supprimer simplement les paramètres. Pour plus d’informations sur la suppression d’une entrée de rôle, voir [Supprimer une entrée de rôle d'un rôle](remove-a-role-entry-from-a-role-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas annuler la suppression de ces opérations. Si vous supprimez par erreur tous les paramètres d’une entrée de rôle, vous devez les ajouter à nouveau manuellement.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Vous ne pouvez pas annuler la suppression de ces opérations. Si vous supprimez par erreur tous les paramètres d’une entrée de rôle, vous devez les ajouter à nouveau manuellement.
 
 
 Pour supprimer des paramètres d’une entrée de rôle, utilisez la syntaxe suivante.
@@ -145,18 +125,8 @@ Si vous ne souhaitez inclure qu’un ensemble spécifique de paramètres dans un
 
   - Spécifiez le paramètre *UnscopedTopLevel* pour indiquer que vous modifiez une entrée de rôle sur un rôle non délimité. Si vous ne spécifiez pas ce paramètre lorsque vous modifiez une entrée de rôle sur un rôle de haut niveau non délimité, une erreur se produit.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous spécifiez uniquement le paramètre <em>Parameters</em>, uniquement les paramètres que vous spécifiez dans la commande sont inclus sur l’entrée de rôle. Tous les autres paramètres sont supprimés.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Lorsque vous spécifiez uniquement le paramètre _Parameters_, uniquement les paramètres que vous spécifiez dans la commande sont inclus sur l’entrée de rôle. Tous les autres paramètres sont supprimés.
 
 
 Pour spécifier un ensemble spécifique de paramètres, utilisez la syntaxe suivante.

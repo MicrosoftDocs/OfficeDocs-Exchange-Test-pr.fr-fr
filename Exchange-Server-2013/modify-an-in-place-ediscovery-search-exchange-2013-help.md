@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2014-08-27_
 
 Après avoir créé une recherche de découverte électronique locale, vous pouvez la modifier pour choisir d'autres paramètres de recherche. Par exemple, vous pouvez modifier les boîtes aux lettres à rechercher, les plages de dates, les mot clés, les options de journalisation, ou encore spécifier une boîte aux lettres de découverte différente pour stocker les résultats de la recherche. Les modifications que vous apportez aux propriétés de la recherche seront utilisées lors du redémarrage de la recherche.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si une recherche de découverte électronique locale est en cours d'exécution, vous devez l'arrêter avant de la modifier. Quand vous redémarrez la recherche, les résultats de la dernière exécution de la recherche sont supprimés de la boîte aux lettres de découverte. Toutefois, les journaux correspondant aux recherches précédentes sont conservés.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Si une recherche de découverte électronique locale est en cours d'exécution, vous devez l'arrêter avant de la modifier. Quand vous redémarrez la recherche, les résultats de la dernière exécution de la recherche sont supprimés de la boîte aux lettres de découverte. Toutefois, les journaux correspondant aux recherches précédentes sont conservés.
 
 
 ## Ce qu'il faut savoir avant de commencer
@@ -72,18 +62,8 @@ Après avoir créé une recherche de découverte électronique locale, vous pouv
         
           - **Spécifier le nombre de jours pour mettre en attente les articles en fonction de leur date de réception** Utilisez cette option pour bloquer les articles pendant une période donnée. Par exemple, vous pouvez utiliser cette option si votre organisation exige que tous les messages soient conservés pendant au moins sept ans. Vous pouvez utiliser une archive locale *basée sur le temps* parallèlement à une stratégie de rétention pour garantir que les éléments seront supprimés dans sept ans.
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>Quand des boîtes aux lettres ou des articles sont mis en archive permanente à des fins juridiques, il est généralement recommandé de bloquer les articles indéfiniment et de supprimer la suspension quand le jugement ou l'enquête est terminé.</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!important]
+            > Quand des boîtes aux lettres ou des articles sont mis en archive permanente à des fins juridiques, il est généralement recommandé de bloquer les articles indéfiniment et de supprimer la suspension quand le jugement ou l'enquête est terminé.
 
 
 4.  Cliquez sur **Enregistrer**.

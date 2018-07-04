@@ -43,16 +43,6 @@ Depuis une invite de commandes, exécutez la commande suivante.
 
 Dans la commande précédente, *\<UmLanguagePackName\>* est le nom du module linguistique de messagerie unifiée ; par exemple, fr-FR.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dès lors que vous avez installé des mises à jour, vous ne pouvez plus utiliser le fichier Setup.exe situé dans le dossier \Bin pour supprimer un module linguistique de messagerie unifiée. Vous devez utiliser le fichier Setup.exe à partir du DVD Exchange 2013 ou des fichiers source téléchargés. Si vous ne le faites pas, l'erreur suivante s'affiche : Il existe une incohérence de version entre l'application en cours d'exécution et l'application installée.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Dès lors que vous avez installé des mises à jour, vous ne pouvez plus utiliser le fichier Setup.exe situé dans le dossier \Bin pour supprimer un module linguistique de messagerie unifiée. Vous devez utiliser le fichier Setup.exe à partir du DVD Exchange 2013 ou des fichiers source téléchargés. Si vous ne le faites pas, l'erreur suivante s'affiche : Il existe une incohérence de version entre l'application en cours d'exécution et l'application installée.
 

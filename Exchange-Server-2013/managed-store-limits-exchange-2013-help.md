@@ -172,18 +172,8 @@ Vous pouvez modifier les limites de session par défaut.
 > Si vous souhaitez modifier les limites de session, vous devez les modifier sur tous les serveurs de boîtes aux lettres dans des groupes de disponibilité de base de données. Si vous n’effectuez pas les mêmes modifications sur tous les serveurs, les résultats seront incohérents. Pour augmenter la limite de session sur le serveur d’accès au client, la valeur <code>RCAMaxConcurrency</code> doit être augmentée conformément à la stratégie de limitation. Pour plus d’informations, voir <a href="https://technet.microsoft.com/fr-fr/library/dd298094(v=exchg.150)">Set-ThrottlingPolicy</a>.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une modification incorrecte du Registre peut être à l’origine de problèmes graves qui vous obligeront peut-être à réinstaller votre système d’exploitation. Il se peut que les problèmes résultant d’une modification incorrecte du Registre soient impossibles à résoudre. Avant de modifier le Registre, sauvegardez les données importantes.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Une modification incorrecte du Registre peut être à l’origine de problèmes graves qui vous obligeront peut-être à réinstaller votre système d’exploitation. Il se peut que les problèmes résultant d’une modification incorrecte du Registre soient impossibles à résoudre. Avant de modifier le Registre, sauvegardez les données importantes.
 
 
 1.  Démarrez l'Éditeur du Registre (regedit).
@@ -308,18 +298,8 @@ Vous pouvez limiter le nombre maximal de ressources qu’un client MAPI peut uti
 > Si vous souhaitez modifier les limites d’éléments ouverts, vous devez les modifier sur tous les serveurs de boîtes aux lettres dans des groupes de disponibilité de base de données et des tableaux d’accès au client. Si vous n’effectuez pas les mêmes modifications sur tous les serveurs, les résultats seront incohérents.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une modification incorrecte du Registre peut être à l’origine de problèmes graves qui vous obligeront peut-être à réinstaller votre système d’exploitation. Il se peut que les problèmes résultant d’une modification incorrecte du Registre soient impossibles à résoudre. Avant de modifier le Registre, sauvegardez les données importantes.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Une modification incorrecte du Registre peut être à l’origine de problèmes graves qui vous obligeront peut-être à réinstaller votre système d’exploitation. Il se peut que les problèmes résultant d’une modification incorrecte du Registre soient impossibles à résoudre. Avant de modifier le Registre, sauvegardez les données importantes.
 
 
 1.  Démarrez l'Éditeur du Registre (regedit).

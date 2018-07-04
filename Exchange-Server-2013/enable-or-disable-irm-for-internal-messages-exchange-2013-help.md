@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2012-10-12_
 
 Dans Microsoft Exchange Server 2013, la gestion des droits relatifs à l’information (IRM) est activée par défaut pour les messages internes. Cela vous permet de créer des règles de protection du transport et de protection Microsoft Outlook afin d’activer la protection IRM pour les messages pendant leur transport et sur les clients Microsoft Outlook 2010. L’activation de la gestion des droits relatifs à l’information est requise pour toutes les autres fonctionnalités IRM dans Exchange Server 2013, telles que le déchiffrement du transport, des règles de journal, IRM dans Microsoft Office Outlook Web App et IRM dans Microsoft Exchange ActiveSync.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La désactivation de la gestion IRM pour les messages internes a également pour effet de désactiver toutes les fonctionnalités IRM dans l’organisation Exchange. Les fonctionnalités IRM côté client dans Outlook (notamment la capacité de lire, transférer et créer des messages protégés par IRM ou d’y répondre en utilisant un serveur Active Directory (AD RMS)), ne sont pas affectées.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> La désactivation de la gestion IRM pour les messages internes a également pour effet de désactiver toutes les fonctionnalités IRM dans l’organisation Exchange. Les fonctionnalités IRM côté client dans Outlook (notamment la capacité de lire, transférer et créer des messages protégés par IRM ou d’y répondre en utilisant un serveur Active Directory (AD RMS)), ne sont pas affectées.
 
 
 Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives à IRM, consultez [Procédures de gestion des droits relatifs à l’information](information-rights-management-procedures-exchange-2013-help.md).

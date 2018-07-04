@@ -21,18 +21,8 @@ Vous pouvez utiliser l'Assistant nouveau certificat Exchange dans le CAE ou le S
 
 Par défaut, lorsque vous installez Exchange Server 2013, deux certificats auto-signés sont créés : **certificat d'authentification serveur Microsoft Exchange (Microsoft Exchange Server Auth Certificate)** et **Microsoft Exchange**. Le certificat auto-signé **Microsoft Exchange** peut être utilisé par la messagerie unifiée pour chiffrer des données, mais vous devez l'attribuer aux services de messagerie unifiée et de routeur d'appels de messagerie unifiée. Après avoir attribué le certificat aux services de messagerie unifiée, vous pouvez le copier et l'importer dans les passerelles VoIP, PBX IP, et PBX compatibles SIP. Toutefois, au lieu d'utiliser les certificats auto-signés par défaut, il se peut que vous deviez en créer un spécialement pour la messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les certificats auto-signés ne peut pas être utilisés lorsque vous êtes intégrer la messagerie unifiée de Microsoft Lync Server.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Les certificats auto-signés ne peut pas être utilisés lorsque vous êtes intégrer la messagerie unifiée de Microsoft Lync Server.
 
 
 Pour découvrir d'autres tâches de gestion relatives à la gestion des certificats pour la messagerie unifiée, consultez la rubrique [Déployer des certificats pour les procédures de la messagerie unifiée](deploying-certificates-for-um-procedures-exchange-2013-help.md).

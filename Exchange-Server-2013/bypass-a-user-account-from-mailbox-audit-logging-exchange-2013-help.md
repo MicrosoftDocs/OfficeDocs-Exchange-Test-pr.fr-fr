@@ -21,18 +21,8 @@ Lorsque vous activez la fonctionnalité d'enregistrement d'audit pour une boîte
 
 Vous pouvez configurer un compte d'utilisateur ou d'ordinateur pour ignorer l'enregistrements d'audit de boîtes aux lettres afin que les actions de cet utilisateur ou de ce compte ne soient pas enregistrées pour l'ensemble des boîtes aux lettres. En ignorant des comptes d'utilisateur ou d'ordinateur approuvés nécessitant un accès fréquent aux boîtes aux lettres, vous pouvez réduire le bruit dans les journaux d'audit des boîtes aux lettres.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous utilisez l'enregistrement d'audit de boîte aux lettres pour auditer les accès aux boîtes aux lettres et les actions s'y rapportant, vous devez surveiller les associations de contournement d'audit de boîtes aux lettres à intervalles réguliers. Si une association de contournement d'audit de boîtes aux lettres est ajoutée à un compte, celui-ci peut accéder à n'importe quelle boîte aux lettres de l'organisation pour laquelle il a reçu des autorisations d'accès, sans que des entrées d'enregistrement d'audit de boîte aux lettres ne soient générées à chaque accès ou action entreprise (par exemple, suppression de messages).</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Si vous utilisez l'enregistrement d'audit de boîte aux lettres pour auditer les accès aux boîtes aux lettres et les actions s'y rapportant, vous devez surveiller les associations de contournement d'audit de boîtes aux lettres à intervalles réguliers. Si une association de contournement d'audit de boîtes aux lettres est ajoutée à un compte, celui-ci peut accéder à n'importe quelle boîte aux lettres de l'organisation pour laquelle il a reçu des autorisations d'accès, sans que des entrées d'enregistrement d'audit de boîte aux lettres ne soient générées à chaque accès ou action entreprise (par exemple, suppression de messages).
 
 
 Pour les autres tâches de gestion relatives à la journalisation d'audit des boîtes aux lettres, consultez la rubrique [Procédures d'enregistrement d’audit des boîtes aux lettres](mailbox-audit-logging-procedures-exchange-2013-help.md).

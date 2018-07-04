@@ -130,29 +130,15 @@ Pour des instructions détaillées sur la création d’une stratégie d’adres
     
       - **Spécifiez les types de destinataire auxquels s'appliquera cette adresse de messagerie**
 
-3.  
+3.  Cliquez sur **Ajouter une règle** pour restreindre davantage les destinataires auxquels cette stratégie s'appliquera. Cela crée l’instruction booléenne **And**.
     
-    Cliquez sur **Ajouter une règle** pour restreindre davantage les destinataires auxquels cette stratégie s'appliquera. Cela crée l’instruction booléenne **And**.
-    
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous appliquez un trop grand nombre de règles, la stratégie d’adresse de messagerie peut être restreinte au point de ne plus contenir d’utilisateurs.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > Si vous appliquez un trop grand nombre de règles, la stratégie d’adresse de messagerie peut être restreinte au point de ne plus contenir d’utilisateurs.
 
 
 4.  Cliquez sur **Afficher un aperçu des destinataires auxquels la stratégie s'applique** pour visualiser les destinataires auxquels cette stratégie doit s'appliquer.
 
-5.  
-    
-    Cliquez sur **Enregistrer** pour enregistrer vos modifications et créer la stratégie.
+5.  Cliquez sur **Enregistrer** pour enregistrer vos modifications et créer la stratégie.
 
 6.  Un avertissement apparaît pour vous indiquer que la stratégie d’adresse de messagerie s’appliquera uniquement lorsque vous l’aurez mise à jour. Après sa création, sélectionnez-la puis, dans le volet des détails, cliquez sur **Appliquer**.
 

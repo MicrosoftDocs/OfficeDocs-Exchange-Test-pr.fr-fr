@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2016-08-09_
 
 Vous pouvez gérer des informations sensibles par le biais de stratégies DLP en important un fichier qui contient les paramètres de stratégie des informations. Modèles de stratégie DLP peuvent être développés indépendamment d’Exchange en tant que fichiers XML. Toutefois, ils doivent satisfaire les conditions de format spécifique pour fonctionner correctement. Autrement, les stratégies qui sont exportés à partir d’une version antérieure d’Exchange peuvent être importés dans Microsoft Exchange Server 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez activer vos stratégies DLP en mode Test avant de les exécuter dans votre environnement de production. Au cours de ces tests, nous vous recommandons de configurer des boîtes aux lettres d'exemple d'utilisateur et d'envoyer des messages de test qui appellent vos stratégies de test afin de confirmer les résultats.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Vous devez activer vos stratégies DLP en mode Test avant de les exécuter dans votre environnement de production. Au cours de ces tests, nous vous recommandons de configurer des boîtes aux lettres d'exemple d'utilisateur et d'envoyer des messages de test qui appellent vos stratégies de test afin de confirmer les résultats.
 
 
 ## Ce qu'il faut savoir avant de commencer

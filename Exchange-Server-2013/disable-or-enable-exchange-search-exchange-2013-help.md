@@ -19,19 +19,9 @@ _**Dernière rubrique modifiée :** 2014-05-07_
 
 Par défaut, le service de recherche Exchange est activé pour toutes les nouvelles bases de données de boîtes aux lettres et ne requiert aucune configuration supplémentaire. Cependant, si vous souhaitez interrompre le service de recherche Exchange de l'indexation du contenu de la boîte aux lettres, vous pouvez le désactiver pour des bases de données de boîtes aux lettres individuelles ou un serveur de boîtes aux lettres entier.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La désactivation du service de recherche Exchange influe sur les fonctionnalités et performances des recherches de texte intégral effectuées par vos utilisateurs utilisant Outlook en mode en ligne ou des appareils Windows Mobile.<br />
-La fonctionnalité <a href="in-place-ediscovery-exchange-2013-help.md">Découverte électronique locale</a> s'appuie également sur le service de recherche Exchange. Si vous désactivez le service de recherche Exchange pour une base de données ou un serveur de boîtes aux lettres, les recherches eDiscovery sur place ne retourneront pas de messages de la base de données ou du serveur.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> La désactivation du service de recherche Exchange influe sur les fonctionnalités et performances des recherches de texte intégral effectuées par vos utilisateurs utilisant Outlook en mode en ligne ou des appareils Windows Mobile.
+> La fonctionnalité <a href="in-place-ediscovery-exchange-2013-help.md">Découverte électronique locale</a> s'appuie également sur le service de recherche Exchange. Si vous désactivez le service de recherche Exchange pour une base de données ou un serveur de boîtes aux lettres, les recherches eDiscovery sur place ne retourneront pas de messages de la base de données ou du serveur.
 
 
 Pour les autres tâches de gestion relatives au service de recherche Exchange, consultez la rubrique [Procédures relatives au service de recherche Exchange](exchange-search-procedures-exchange-2013-help.md).

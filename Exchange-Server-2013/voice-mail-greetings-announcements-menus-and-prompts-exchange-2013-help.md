@@ -113,18 +113,8 @@ Le tableau suivant détaille les invites et les messages d'accueil utilisés ave
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La modification des messages d'assistance vocale système installés n'est pas prise en charge.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> La modification des messages d'assistance vocale système installés n'est pas prise en charge.
 
 
 Vue d'ensemble des invites audio et des messages d'accueil
@@ -143,18 +133,8 @@ La messagerie unifiée est installée avec un ensemble d'invites audio par défa
 
   - « Pour joindre une personne, dites son nom. »
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La modification des invites système installées n'est pas prise en charge.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> La modification des invites système installées n'est pas prise en charge.
 
 
 > [!NOTE]

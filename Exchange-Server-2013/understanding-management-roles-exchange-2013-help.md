@@ -584,18 +584,9 @@ Le tableau suivant répertorie tous les types de rôle de gestion administratif 
 <td><p><code>SupportDiagnostics</code></p></td>
 <td><p><a href="support-diagnostics-role-exchange-2013-help.md">Prise en charge du rôle de diagnostics</a></p></td>
 <td><p>Ce type de rôle est associé avec des rôles permettant aux administrateurs de réaliser des diagnostics avancés sous la direction des services de Support Microsoft au sein d'une organisation.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les rôles associés à ce type de rôle accordent des autorisations aux cmdlets et aux scripts qui doivent uniquement être utilisés sous la direction du Support Microsoft.</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]
+> Les rôles associés à ce type de rôle accordent des autorisations aux cmdlets et aux scripts qui doivent uniquement être utilisés sous la direction du Support Microsoft.
 
 </td>
 <td><p>Organisation</p></td>

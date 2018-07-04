@@ -21,18 +21,8 @@ Les éléments suivants vous aident à configurer le déchargement SSL pour les 
 
 L’un des plus grands avantages au déchargement SSL est la possibilité de gérer plus facilement les certificats utilisés. Au lieu d’avoir des certificats SSL distincts pour chaque serveur d’accès client avec SP1, un certificat SSL unique est utilisé et importé pour tous les serveurs d’accès client. Il peut s’agir d’un certificat SSL existant ou nouvellement créé.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous utilisez le Gestionnaire des services IIS (Internet Information Services), Exchange Management Shell ou une interface de ligne de commande pour configurer le déchargement SSL, notez qu’il existe un <strong>site web par défaut</strong> et un site <strong>Exchange Back End</strong>. Pour le déchargement SSL, configurez uniquement le <strong>site web par défaut</strong>. Ne modifiez pas le site <strong>Exchange Back End</strong>.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Lorsque vous utilisez le Gestionnaire des services IIS (Internet Information Services), Exchange Management Shell ou une interface de ligne de commande pour configurer le déchargement SSL, notez qu’il existe un <strong>site web par défaut</strong> et un site <strong>Exchange Back End</strong>. Pour le déchargement SSL, configurez uniquement le <strong>site web par défaut</strong>. Ne modifiez pas le site <strong>Exchange Back End</strong>.
 
 
 **Contenu de cette rubrique**

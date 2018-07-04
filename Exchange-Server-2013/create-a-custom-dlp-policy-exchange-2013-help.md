@@ -21,18 +21,8 @@ Une stratégie personnalisée de protection contre la perte de données (DLP) vo
 
 Les conditions de règle à votre disposition dans une stratégie unique incluent toutes les règles de transport traditionnelles en plus des types d'informations sensibles présentés dans [Éléments recherchés par les types d’informations sensibles dans Exchange](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md). Pour plus d'informations sur les règles de transport, consultez la rubrique [Règles de transport ou de flux de messagerie](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) (Exchange 2013) ou [Règles de flux de messagerie (règles de transport) dans Exchange Online](https://technet.microsoft.com/fr-fr/library/jj919238\(v=exchg.150\)) (Exchange Online).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez activer vos stratégies DLP en mode Test avant de les exécuter dans votre environnement de production. Au cours de ces tests, nous vous recommandons de configurer des boîtes aux lettres d'exemple d'utilisateur et d'envoyer des messages de test qui appellent vos stratégies de test afin de confirmer les résultats. Pour plus d'informations sur les tests, consultez <a href="test-a-mail-flow-rule-exchange-2013-help.md">Tester une règle de flux de messagerie</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Vous devez activer vos stratégies DLP en mode Test avant de les exécuter dans votre environnement de production. Au cours de ces tests, nous vous recommandons de configurer des boîtes aux lettres d'exemple d'utilisateur et d'envoyer des messages de test qui appellent vos stratégies de test afin de confirmer les résultats. Pour plus d'informations sur les tests, consultez <a href="test-a-mail-flow-rule-exchange-2013-help.md">Tester une règle de flux de messagerie</a>.
 
 
 Pour découvrir d'autres tâches de gestion liées à la création d'une stratégie DLP personnalisée, consultez la rubrique [Procédures relatives à la protection contre la perte de données (DLP)](dlp-procedures-exchange-2013-help.md)(Exchange 2013) ou [Procédures relatives à la protection contre la perte de données (DLP)](https://technet.microsoft.com/fr-fr/library/jj938003\(v=exchg.150\)) (Exchange Online).

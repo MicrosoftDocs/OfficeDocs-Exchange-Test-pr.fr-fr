@@ -71,19 +71,9 @@ La configuration requise pour le serveur témoin est la suivante :
 
 Quel que soit le serveur utilisé comme serveur témoin, si le pare-feu Windows est activé sur le serveur témoin désigné, vous devez activer l’exception du pare-feu Windows pour le partage de fichiers et d’imprimantes.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si le serveur témoin que vous spécifiez n’est pas un serveur Exchange 2013 ou Exchange 2010, vous devez ajouter le groupe de sécurité universel (USG) du sous-système approuvé Exchange au groupe Administrateurs local sur le serveur témoin avant de créer le groupe de disponibilité de base de données (DAG). Ces autorisations de sécurité sont nécessaires pour garantir que Exchange peut créer un répertoire et un partage sur le serveur témoin au besoin.<br />
-Le serveur témoin utilise le port SMB 445.</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> Si le serveur témoin que vous spécifiez n’est pas un serveur Exchange 2013 ou Exchange 2010, vous devez ajouter le groupe de sécurité universel (USG) du sous-système approuvé Exchange au groupe Administrateurs local sur le serveur témoin avant de créer le groupe de disponibilité de base de données (DAG). Ces autorisations de sécurité sont nécessaires pour garantir que Exchange peut créer un répertoire et un partage sur le serveur témoin au besoin.
+> Le serveur témoin utilise le port SMB 445.
 
 
 Il n’est pas nécessaire que le serveur témoin et le répertoire témoin aient une tolérance de panne ni une autre forme de redondance ou de haute disponibilité. Il n’est pas nécessaire d’utiliser un serveur de fichiers en cluster pour le serveur témoin ni d’employer une autre forme de résilience pour le serveur témoin. et ce pour plusieurs raisons. Dans les grands DAG (par exemple, avec six membres ou plus), il faut plusieurs pannes avant d’avoir besoin d’un serveur témoin. Comme un DAG à six membres peut tolérer un maximum de deux pannes de serveur sans perdre de quorum, il faudrait que trois membres tombent en panne avant que le serveur témoin soit nécessaire pour maintenir le quorum. De même, si une panne touche votre serveur témoin actuel (par exemple, si vous perdez le serveur témoin à cause d’une défaillance matérielle), vous pouvez employer la cmdlet [Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/fr-fr/library/dd297934\(v=exchg.150\)) pour configurer un nouveau serveur témoin et un répertoire témoin (si vous avez un quorum).

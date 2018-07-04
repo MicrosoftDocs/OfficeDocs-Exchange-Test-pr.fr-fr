@@ -85,20 +85,10 @@ Par défaut, l'enregistrement d'audit est configuré pour stocker les entrées d
 
 Vous devez spécifier plusieurs années à l'aide du champ `dd`. Par exemple, 365 jours correspondent à une année, 730 jours à deux ans, 913 jours à deux ans et six mois. Par exemple, pour définir la durée de vie du journal d'audit sur deux ans et six mois, utilisez la syntaxe `913.00:00:00`.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez définir la limite d'âge du journal d'audit sur une valeur inférieure à la durée de vie actuelle. Si vous procédez de la sorte, toute entrée de journal d'audit dont l'âge dépasse la nouvelle limite d'âge sera supprimée.<br />
-Si vous définissez la durée de vie sur 0, Exchange supprimera toutes les entrées dans le journal d'audit.<br />
-Nous vous conseillons d'attribuer les autorisations pour configurer la limite d'âge du journal d'audit uniquement aux utilisateurs de confiance.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Vous pouvez définir la limite d'âge du journal d'audit sur une valeur inférieure à la durée de vie actuelle. Si vous procédez de la sorte, toute entrée de journal d'audit dont l'âge dépasse la nouvelle limite d'âge sera supprimée.
+> Si vous définissez la durée de vie sur 0, Exchange supprimera toutes les entrées dans le journal d'audit.
+> Nous vous conseillons d'attribuer les autorisations pour configurer la limite d'âge du journal d'audit uniquement aux utilisateurs de confiance.
 
 
 ## Journalisation des informations détaillées

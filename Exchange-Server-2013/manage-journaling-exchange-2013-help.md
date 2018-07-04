@@ -199,18 +199,8 @@ Revenir au début
 
 ## Activation ou désactivation de la journalisation des bases de données par boîte aux lettres
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La désactivation de la journalisation des messages sur une base de données de boîtes aux lettres peut compromettre la conformité de votre organisation avec toutes les stratégies de rétention de messagerie applicables. Lorsque vous désactivez la journalisation des messages sur une base de données de boîtes aux lettres, les confirmations de journal ne sont plus envoyées pour les messages échangés avec les boîtes aux lettres sur cette base de données de boîtes aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> La désactivation de la journalisation des messages sur une base de données de boîtes aux lettres peut compromettre la conformité de votre organisation avec toutes les stratégies de rétention de messagerie applicables. Lorsque vous désactivez la journalisation des messages sur une base de données de boîtes aux lettres, les confirmations de journal ne sont plus envoyées pour les messages échangés avec les boîtes aux lettres sur cette base de données de boîtes aux lettres.
 
 
 ## Utilisation du Centre d’administration Exchange pour activer ou désactiver la journalisation des bases de données par boîte aux lettres

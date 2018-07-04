@@ -31,18 +31,8 @@ Exchange 2013: [Afficher les rapports de détection de stratégies DLP](view-dl
 
 Exchange Online: [Afficher les rapports de détection de stratégies DLP](https://technet.microsoft.com/fr-fr/library/dn904484\(v=exchg.150\))
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez activer vos stratégies DLP en mode Test avant de les exécuter dans votre environnement de production. Au cours de ces tests, nous vous recommandons de configurer des boîtes aux lettres d'exemple d'utilisateur et d'envoyer des messages de test qui appellent vos stratégies de test afin de confirmer les résultats.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Vous devez activer vos stratégies DLP en mode Test avant de les exécuter dans votre environnement de production. Au cours de ces tests, nous vous recommandons de configurer des boîtes aux lettres d'exemple d'utilisateur et d'envoyer des messages de test qui appellent vos stratégies de test afin de confirmer les résultats.
 
 
 Pour d'autres tâches de gestion relatives à la création d'une stratégie DLP à partir d'un modèle, consultez la rubrique [Procédures relatives à la protection contre la perte de données (DLP)](dlp-procedures-exchange-2013-help.md)Exchange Server 2013 ou [Procédures relatives à la protection contre la perte de données (DLP)](https://technet.microsoft.com/fr-fr/library/jj938003\(v=exchg.150\))Exchange Online.

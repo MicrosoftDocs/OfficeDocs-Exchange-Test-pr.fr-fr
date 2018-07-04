@@ -39,18 +39,8 @@ Si vous voulez utiliser l’`Scripting agent` pour définir la valeur des propri
 
   - Conservez la priorité des agents et veillez à ce que le script exécuté dans le cadre de l’`Scripting agent` respecte la valeur des autres agents.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La modification de la priorité ou le remplacement de la fonctionnalité d’un agent intégré est une opération avancée. Assurez-vous que vous comprenez totalement les modifications que vous effectuez.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> La modification de la priorité ou le remplacement de la fonctionnalité d’un agent intégré est une opération avancée. Assurez-vous que vous comprenez totalement les modifications que vous effectuez.
 
 
 Pour plus d’informations sur la modification de la priorité d’un agent, voir [Gérer des agents d’extension de cmdlet](manage-cmdlet-extension-agents-exchange-2013-help.md).
@@ -63,18 +53,8 @@ Vous pouvez activer ou désactiver la plupart des agents ou encore modifier la p
 
 La configuration des agents est enregistrée au niveau de l’organisation. Lorsque vous activez ou désactivez un agent, ou que définissez sa priorité, vous définissez la configuration de cet agent sur tous les serveurs de l’organisation. sauf en cas d’ajout de scripts à l’`Scripting agent`. Vous devez mettre à jour les scripts sur chaque serveur individuellement. Pour plus d’informations sur les scripts de configuration à utiliser avec l’`Scripting agent`, consultez la section « Agent de script » plus loin dans cette rubrique.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le changement de priorité des agents, ou l’activation ou la désactivation des agents, peut provoquer des effets non voulus si vous ne comprenez pas complètement le rôle de chaque agent et comment ils interagissent avec les cmdlets Exchange. Avant de changer la configuration d’un agent, veillez à bien comprendre les changements et résultats voulus et vérifiez que votre script personnalisé fonctionnera comme prévu.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Le changement de priorité des agents, ou l’activation ou la désactivation des agents, peut provoquer des effets non voulus si vous ne comprenez pas complètement le rôle de chaque agent et comment ils interagissent avec les cmdlets Exchange. Avant de changer la configuration d’un agent, veillez à bien comprendre les changements et résultats voulus et vérifiez que votre script personnalisé fonctionnera comme prévu.
 
 
 ### Agents d’extension de cmdlet Exchange 2013
@@ -96,49 +76,49 @@ La configuration des agents est enregistrée au niveau de l’organisation. Lors
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><code>Admin Audit Log agent</code></p></td>
+<td><p>`Admin Audit Log agent`</p></td>
 <td><p>255</p></td>
 <td><p>True</p></td>
 <td><p>Oui</p></td>
 </tr>
 <tr class="even">
-<td><p><code>Scripting agent</code></p></td>
+<td><p>`Scripting agent`</p></td>
 <td><p>6</p></td>
 <td><p>False</p></td>
 <td><p>Non</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>Mailbox Resources Management agent</code></p></td>
+<td><p>`Mailbox Resources Management agent`</p></td>
 <td><p>5</p></td>
 <td><p>True</p></td>
 <td><p>Non</p></td>
 </tr>
 <tr class="even">
-<td><p><code>OAB Resources Management agent</code></p></td>
+<td><p>`OAB Resources Management agent`</p></td>
 <td><p>4</p></td>
 <td><p>True</p></td>
 <td><p>Non</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>Query Base DN agent</code></p></td>
+<td><p>`Query Base DN agent`</p></td>
 <td><p>3</p></td>
 <td><p>True</p></td>
 <td><p>Non</p></td>
 </tr>
 <tr class="even">
-<td><p><code>Provisioning Policy agent</code></p></td>
+<td><p>`Provisioning Policy agent`</p></td>
 <td><p>2</p></td>
 <td><p>True</p></td>
 <td><p>Non</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>Rus agent</code></p></td>
+<td><p>`Rus agent`</p></td>
 <td><p>1</p></td>
 <td><p>True</p></td>
 <td><p>Non</p></td>
 </tr>
 <tr class="even">
-<td><p><code>Mailbox Creation Time agent</code></p></td>
+<td><p>`Mailbox Creation Time agent`</p></td>
 <td><p>0</p></td>
 <td><p>True</p></td>
 <td><p>Non</p></td>
@@ -151,18 +131,8 @@ La configuration des agents est enregistrée au niveau de l’organisation. Lors
 
 Vous pouvez utiliser l’agent d’extension de cmdlets `Scripting agent` dans Exchange 2013 pour insérer votre propre logique de script dans l’exécution des cmdlets Exchange. L’`Scripting agent` vous permet d’ajouter des conditions, de remplacer des valeurs et de configurer la génération des rapports.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous activez l’agent d’extension de cmdlets <code>Scripting agent</code>, celui-ci est appelé chaque fois qu’une cmdlet est exécutée sur un serveur exécutant Exchange 2013. Ceci inclut non seulement les cmdlets que vous exécutez directement dans l’environnement de ligne de commande Exchange Management Shell, mais également les cmdlets exécutées par les services Exchange et le Centre d’administration Exchange (EAC). Il est vivement conseillé de tester vos scripts et toutes les modifications que vous avez apportées au fichier de configuration avant de copier le fichier de configuration mis à jour dans vos serveurs Exchange 2013 et d’activer l’agent d’extension de cmdlets <code>Scripting agent</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Lorsque vous activez l’agent d’extension de cmdlets `Scripting agent`, celui-ci est appelé chaque fois qu’une cmdlet est exécutée sur un serveur exécutant Exchange 2013. Ceci inclut non seulement les cmdlets que vous exécutez directement dans l’environnement de ligne de commande Exchange Management Shell, mais également les cmdlets exécutées par les services Exchange et le Centre d’administration Exchange (EAC). Il est vivement conseillé de tester vos scripts et toutes les modifications que vous avez apportées au fichier de configuration avant de copier le fichier de configuration mis à jour dans vos serveurs Exchange 2013 et d’activer l’agent d’extension de cmdlets `Scripting agent`.
 
 
 Chaque fois qu’une cmdlet Exchange est exécutée, elle appelle l’agent d’extension de cmdlets de l’`Scripting agent`. Lorsque cet agent est appelé, la cmdlet vérifie si des scripts sont configurés pour être appelés par la cmdlet. Si un script doit être exécuté pour une cmdlet, cette dernière tente d’appeler toutes les API définies dans le script. Les API suivantes sont disponibles et appelées dans l’ordre suivant :
@@ -176,7 +146,7 @@ Chaque fois qu’une cmdlet Exchange est exécutée, elle appelle l’agent d’
 4.  **OnComplete**   Cette API est utilisée une fois toutes les tâches de traitement de la cmdlet terminées. Elle peut être utilisée pour exécuter des tâches de post-traitement, comme par exemple, écrire des données dans une base de données externe.
 
 > [!NOTE]
-> L’agent d’extension de cmdlets de l’<code>Scripting agent</code> n’est pas appelé lorsque des cmdlets contenant le verbe <code>Get</code> sont exécutées.
+> L’agent d’extension de cmdlets de l’`Scripting agent` n’est pas appelé lorsque des cmdlets contenant le verbe `Get` sont exécutées.
 
 
 ## Fichier de configuration de l’agent de script
@@ -200,45 +170,45 @@ Le fichier de configuration de l’`Scripting agent` contient tous les scripts q
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><code>Configuration</code></p></td>
+<td><p>`Configuration`</p></td>
 <td><p>Non applicable</p></td>
-<td><p>Cet élément contient tous les scripts que l’agent d’extension de cmdlets <code>Scripting agent</code> peut exécuter. La balise <code>Feature</code> est un enfant de cette balise.</p>
-<p>Le fichier de configuration ne contient qu’une seule balise <code>Configuration</code>.</p></td>
+<td><p>Cet élément contient tous les scripts que l’agent d’extension de cmdlets `Scripting agent` peut exécuter. La balise `Feature` est un enfant de cette balise.</p>
+<p>Le fichier de configuration ne contient qu’une seule balise `Configuration`.</p></td>
 </tr>
 <tr class="even">
-<td><p><code>Feature</code></p></td>
+<td><p>`Feature`</p></td>
 <td><p>Non applicable</p></td>
-<td><p>Cet élément contient un ensemble de scripts associés à une fonctionnalité. Chaque script défini dans la balise enfant <code>ApiCall</code> s’étend à une partie spécifique du pipeline d’exécution des cmdlets. Cette balise contient les attributs <code>Name</code> et <code>Cmdlets</code>.</p>
-<p>La balise <code>Feature</code> peut englober plusieurs balises <code>Configuration</code>.</p></td>
+<td><p>Cet élément contient un ensemble de scripts associés à une fonctionnalité. Chaque script défini dans la balise enfant `ApiCall` s’étend à une partie spécifique du pipeline d’exécution des cmdlets. Cette balise contient les attributs `Name` et `Cmdlets`.</p>
+<p>La balise `Feature` peut englober plusieurs balises `Configuration`.</p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
-<td><p><code>Name</code></p></td>
+<td><p>`Name`</p></td>
 <td><p>Cet attribut contient le nom de la fonctionnalité. Utilisez cet attribut pour identifier la fonctionnalité qui est étendue par les scripts contenus dans la balise.</p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
-<td><p><code>Cmdlets</code></p></td>
+<td><p>`Cmdlets`</p></td>
 <td><p>Cet attribut contient la liste des cmdlets Exchange utilisées par l’ensemble des scripts de cette extension de fonctionnalité. Vous pouvez spécifier plusieurs cmdlets en séparant chacune d’elles par une virgule.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>ApiCall</code></p></td>
+<td><p>`ApiCall`</p></td>
 <td><p>Non applicable</p></td>
 <td><p>Cet élément contient des scripts qui peuvent étendre une partie du pipeline d’exécution des cmdlets. Chaque script est défini par le nom de l’appel API dans le pipeline d’exécution des cmdlets qu’il étend. Les noms d’API suivants peuvent être étendus :</p>
 <ul>
-<li><p><code>ProvisionDefaultProperties</code></p></li>
-<li><p><code>UpdateAffectedIConfigurable</code></p></li>
-<li><p><code>Validate</code></p></li>
-<li><p><code>OnComplete</code></p></li>
+<li><p>`ProvisionDefaultProperties`</p></li>
+<li><p>`UpdateAffectedIConfigurable`</p></li>
+<li><p>`Validate`</p></li>
+<li><p>`OnComplete`</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
-<td><p><code>Name</code></p></td>
+<td><p>`Name`</p></td>
 <td><p>Cet attribut inclut le nom de l’appel API qui étend le pipeline d’exécution des cmdlets.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>Common</code></p></td>
+<td><p>`Common`</p></td>
 <td><p>Non applicable</p></td>
 <td><p>Cet élément contient des fonctions qui peuvent être utilisées par tout script dans le fichier de configuration.</p></td>
 </tr>

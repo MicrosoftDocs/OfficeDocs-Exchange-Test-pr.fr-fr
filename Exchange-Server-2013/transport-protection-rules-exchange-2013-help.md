@@ -37,19 +37,9 @@ Lorsque ce modèle est appliqué à un message, seuls les destinataires peuvent 
 
 Des modèles RMS supplémentaires peuvent être créés dans le déploiement AD RMS local pour répondre aux exigences de protection des droits au sein de votre organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si un modèle de stratégie de droits est supprimé du serveur AD RMS, vous devez modifier les règles de protection de transport qui utilisent le modèle supprimé. Si une règle de protection de transport continue à utiliser un modèle de stratégie de droits supprimé, le serveur AD RMS ne réussira pas à adresser le contenu aux destinataires et une notification d’échec de remise sera envoyée à l’expéditeur.<br />
-Dans Windows Server 2008 et les versions ultérieures, vous pouvez archiver les modèles de stratégie des droits au lieu de les supprimer. Les modèles archivés peuvent encore être utilisés pour autoriser le contenu, mais lorsque vous créez ou modifiez une règle de protection de transport, ces modèles ne sont pas inclus dans la liste des modèles.</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> Si un modèle de stratégie de droits est supprimé du serveur AD RMS, vous devez modifier les règles de protection de transport qui utilisent le modèle supprimé. Si une règle de protection de transport continue à utiliser un modèle de stratégie de droits supprimé, le serveur AD RMS ne réussira pas à adresser le contenu aux destinataires et une notification d’échec de remise sera envoyée à l’expéditeur.
+> Dans Windows Server 2008 et les versions ultérieures, vous pouvez archiver les modèles de stratégie des droits au lieu de les supprimer. Les modèles archivés peuvent encore être utilisés pour autoriser le contenu, mais lorsque vous créez ou modifiez une règle de protection de transport, ces modèles ne sont pas inclus dans la liste des modèles.
 
 
 Pour plus d’informations sur la création de modèles de AD RMS, voir [Guide pas à pas de AD RMS droits de stratégie de modèles de déploiement](https://go.microsoft.com/fwlink/p/?linkid=136593).

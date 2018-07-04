@@ -24,18 +24,8 @@ Pour des questions de sécurité, certaines organisations peuvent souhaiter rest
 > <code>Set-ECPVirtualDirectory -Identity &quot;InternalCAS\ecp (default web site)&quot; -AdminEnabled $True</code>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La procédure s'applique uniquement aux déploiements locaux d'Exchange Server 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> La procédure s'applique uniquement aux déploiements locaux d'Exchange Server 2013.
 
 
 ## Ce qu'il faut savoir avant de commencer

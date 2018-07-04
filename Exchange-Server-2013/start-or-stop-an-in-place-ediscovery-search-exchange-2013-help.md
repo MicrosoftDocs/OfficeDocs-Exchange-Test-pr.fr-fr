@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2014-07-14_
 
 Vous pouvez arrêter ou redémarrer une recherche par découverte électronique locale à tout moment. Par exemple, pour modifier les propriétés de recherche telles que les mots-clés ou les boîtes aux lettres recherchées, vous devez commencer par arrêter une recherche. Vous pouvez alors redémarrer la recherche après avoir apporté les modifications requises.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous relancez une recherche par découverte électronique locale, les résultats de la recherche copiés dans la boîte aux lettres de découverte spécifiée dans la recherche sont supprimés.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Si vous relancez une recherche par découverte électronique locale, les résultats de la recherche copiés dans la boîte aux lettres de découverte spécifiée dans la recherche sont supprimés.
 
 
 ## Ce qu'il faut savoir avant de commencer

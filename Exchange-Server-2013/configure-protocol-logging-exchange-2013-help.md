@@ -29,20 +29,8 @@ L'enregistrement dans le journal de protocole consigne les conversations SMTP su
 
   - L'enregistrement dans le journal de protocole est activé ou désactivé sur chacun des connecteurs. Tous les connecteurs de réception configurés sur le serveur Exchange partagent les mêmes fichiers journaux de protocole et les mêmes options d'enregistrement de protocole. Ces paramètres de journaux de protocole sont distincts des fichiers journaux de protocole et des options d'enregistrement de journal de protocole du connecteur d'envoi situés sur le même serveur.
 
-  - 
-    
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>N’exécutez pas cette procédure sur un serveur de transport Edge qui a été abonné à l’organisation Exchange à l’aide d’EdgeSync. Préférez apporter les modifications au service de transport sur le serveur de boîte aux lettres. Les modifications sont ensuite répliquées sur le serveur de transport Edge lors de la prochaine synchronisation EdgeSync.</td>
-    </tr>
-    </tbody>
-    </table>
+  - > [!CAUTION]
+    > N’exécutez pas cette procédure sur un serveur de transport Edge qui a été abonné à l’organisation Exchange à l’aide d’EdgeSync. Préférez apporter les modifications au service de transport sur le serveur de boîte aux lettres. Les modifications sont ensuite répliquées sur le serveur de transport Edge lors de la prochaine synchronisation EdgeSync.
 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).

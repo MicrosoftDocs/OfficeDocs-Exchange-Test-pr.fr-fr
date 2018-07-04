@@ -65,18 +65,8 @@ Pour plus d’informations sur les balises de rétention, consultez la rubrique 
 
 Cet exemple illustre comment ajouter les balises de rétention VPs-Default, VPs-Inbox et VPs-DeletedItems à la stratégie de rétention RetPolicy-VPs qui ne possède pas encore de balises de rétention liées.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si la stratégie possède des balises de rétention liées, cette commande remplace les balises existantes.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Si la stratégie possède des balises de rétention liées, cette commande remplace les balises existantes.
 
 
     Set-RetentionPolicy -Identity "RetPolicy-VPs" -RetentionPolicyTagLinks "VPs-Default","VPs-Inbox","VPs-DeletedItems"

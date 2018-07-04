@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2013-04-15_
 
 AutoReseed est une fonction qui permet de restaurer rapidement la redondance des bases de données après une erreur du disque. En cas de défaillance du disque, les copies de bases de données stockées sur le disque sont automatiquement réamorcées sur un disque de rechange préconfiguré sur le serveur de boîtes aux lettres. Suivez les étapes indiquées dans la présente rubrique pour configurer AutoReseed pour un groupe de disponibilité de base de données.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La fonction AutoReseed n'effectue aucune tâche de configuration prérequise à votre place. L'installation correcte des disques, l'ajout des disques de réserve au système, le remplacement des disques incorrects et le formatage de nouveaux disques doivent être exécutés manuellement pas un administrateur.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> La fonction AutoReseed n'effectue aucune tâche de configuration prérequise à votre place. L'installation correcte des disques, l'ajout des disques de réserve au système, le remplacement des disques incorrects et le formatage de nouveaux disques doivent être exécutés manuellement pas un administrateur.
 
 
 Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives aux groupes de disponibilité de base de données, consultez la rubrique [Gestion de groupes de disponibilité de base de données](managing-database-availability-groups-exchange-2013-help.md).

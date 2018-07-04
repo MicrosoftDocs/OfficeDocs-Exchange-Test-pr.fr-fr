@@ -140,18 +140,8 @@ Vous devez réaliser les étapes suivantes pour configurer la messagerie unifié
 
 3.  Pour chiffrer le trafic VoIP (Voice over IP), configurez le plan de numérotation avec un URI SIP comme une Protection SIP ou Sécurisé.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous avez défini le paramètre de sécurité en mode sécurisé SIP afin de requérir le chiffrement du trafic SIP uniquement, ce paramètre n’est pas suffisant dans un plan de numérotation si le pool frontal est configuré pour requérir le chiffrement (ce qui signifie que le pool requiert le chiffrement pour trafic RTP et SIP). Lorsque le plan de numérotation et les paramètres de sécurité du pool ne sont compatibles, tous les appels vers la messagerie unifiée Exchange à partir du pool frontal échouent, ce qui provoque une erreur de type « Paramètre de sécurité incompatible ».</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > Si vous avez défini le paramètre de sécurité en mode sécurisé SIP afin de requérir le chiffrement du trafic SIP uniquement, ce paramètre n’est pas suffisant dans un plan de numérotation si le pool frontal est configuré pour requérir le chiffrement (ce qui signifie que le pool requiert le chiffrement pour trafic RTP et SIP). Lorsque le plan de numérotation et les paramètres de sécurité du pool ne sont compatibles, tous les appels vers la messagerie unifiée Exchange à partir du pool frontal échouent, ce qui provoque une erreur de type « Paramètre de sécurité incompatible ».
     
     Bien qu’un plan de numérotation de messagerie unifiée puisse être configuré en mode SIP sécurisé ou en mode sécurisé, il est recommandé d’utiliser la configuration en mode sécurisé pour permettre un fonctionnement correct de Lync Phone Edition. Cela est dû aux paramètres du niveau de chiffrement par défaut de Lync Server. Un périphérique Lync Phone Edition ne fonctionnera que si les paramètres de chiffrement sont configurés comme indiqué dans le tableau suivant. Ce tableau décrit la relation entre les paramètres de chiffrement pour Lync Server et les plans de numérotation de messagerie unifiée.
     

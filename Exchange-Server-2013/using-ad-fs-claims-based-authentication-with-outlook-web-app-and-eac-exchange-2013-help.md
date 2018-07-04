@@ -507,18 +507,8 @@ Pour plus de détails et d’informations sur la syntaxe, consultez les rubrique
 
 Pour les répertoires virtuels OWA et ECP, activez l’authentification AD FS comme seule méthode d’authentification et désactivez toutes les autres formes d’authentification.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez configurer le répertoire virtuel ECP avant le répertoire virtuel OWA.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Vous devez configurer le répertoire virtuel ECP avant le répertoire virtuel OWA.
 
 
 Configurer le répertoire virtuel ECP à l’aide d’Exchange Management Shell. Dans la fenêtre de Shell, exécutez la commande suivante.

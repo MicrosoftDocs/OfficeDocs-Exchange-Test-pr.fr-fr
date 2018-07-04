@@ -115,19 +115,9 @@ Les utilisateurs auxquels est affecté le groupe de rôles Gestion de l'organisa
 <td><p>Blocage local</p></td>
 <td><p><a href="discovery-management-exchange-2013-help.md">Gestion de la détection</a></p>
 <p><a href="organization-management-exchange-2013-help.md">Gestion de l’organisation</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour créer une archive permanente basée sur une demande, un utilisateur a besoin des rôles Recherche de boîte aux lettres et Mise en attente pour litige afin d'être assigné directement, ou via abonnement, à un groupe de rôles auquel les deux rôles sont attribués. Pour créer une archive permanente sans utiliser de demande, qui met en attente tous les éléments de boîtes aux lettres, vous devez disposer du rôle Mise en attente pour litige. Les deux rôles sont assignés au groupe de rôles Gestion de la découverte.<br />
-Le rôle Mise en attente pour litige est assigné au groupe de rôles Gestion de l'organisation. Les membres du groupe de rôles Gestion de l'organisation peuvent placer tous les éléments dans une archive permanente dans une boîte aux lettres, mais ne peuvent pas créer une archive permanente basée sur une demande.</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> Pour créer une archive permanente basée sur une demande, un utilisateur a besoin des rôles Recherche de boîte aux lettres et Mise en attente pour litige afin d'être assigné directement, ou via abonnement, à un groupe de rôles auquel les deux rôles sont attribués. Pour créer une archive permanente sans utiliser de demande, qui met en attente tous les éléments de boîtes aux lettres, vous devez disposer du rôle Mise en attente pour litige. Les deux rôles sont assignés au groupe de rôles Gestion de la découverte.
+> Le rôle Mise en attente pour litige est assigné au groupe de rôles Gestion de l'organisation. Les membres du groupe de rôles Gestion de l'organisation peuvent placer tous les éléments dans une archive permanente dans une boîte aux lettres, mais ne peuvent pas créer une archive permanente basée sur une demande.
 
 </td>
 </tr>

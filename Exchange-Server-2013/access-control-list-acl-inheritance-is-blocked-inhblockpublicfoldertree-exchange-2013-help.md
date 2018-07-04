@@ -78,18 +78,8 @@ Pour résoudre ce problème, assurez-vous que l’option « Permettre aux autor
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous modifiez les attributs d’objets Active Directory de manière incorrecte lorsque vous utilisez ADSI Edit, l’outil LDP ou tout autre client LDAP version 3, cela risque de poser de graves problèmes. Ces problèmes peuvent nécessiter une réinstallation de Microsoft Windows Server™ 2003, d’Exchange Server 2003 ou des deux. Vous modifiez les attributs d’objets Active Directory à vos propres risques.</td>
-</tr>
-</tbody>
-</table>
+> [!Caution]  
+> Si vous modifiez les attributs d’objets Active Directory de manière incorrecte lorsque vous utilisez ADSI Edit, l’outil LDP ou tout autre client LDAP version 3, cela risque de poser de graves problèmes. Ces problèmes peuvent nécessiter une réinstallation de Microsoft Windows Server™ 2003, d’Exchange Server 2003 ou des deux. Vous modifiez les attributs d’objets Active Directory à vos propres risques.
 
 
 

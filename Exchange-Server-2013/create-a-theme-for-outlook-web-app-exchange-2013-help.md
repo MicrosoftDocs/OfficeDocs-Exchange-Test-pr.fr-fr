@@ -35,19 +35,9 @@ Après avoir créé un thème, vous pouvez également [Personnaliser les pages 
 > La version allégée d'Outlook Web App ne prend pas en charge les thèmes.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous avez plusieurs serveurs prenant en charge Outlook Web App, vous devez copier votre thème personnalisé sur chaque serveur. Vous devez également créer une copie de sauvegarde de votre thème personnalisé. Si vous réinstallez ou mettez à niveau Exchange, tous les fichiers des dossiers de thèmes sont remplacés. Une fois la réinstallation ou la mise à niveau terminée, vous devez recopier votre thème dans le dossier approprié.<br />
-Avant de commencer à créer votre thème personnalisé, créez des copies de sauvegarde de tous les fichiers que vous allez modifier.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Si vous avez plusieurs serveurs prenant en charge Outlook Web App, vous devez copier votre thème personnalisé sur chaque serveur. Vous devez également créer une copie de sauvegarde de votre thème personnalisé. Si vous réinstallez ou mettez à niveau Exchange, tous les fichiers des dossiers de thèmes sont remplacés. Une fois la réinstallation ou la mise à niveau terminée, vous devez recopier votre thème dans le dossier approprié.
+> Avant de commencer à créer votre thème personnalisé, créez des copies de sauvegarde de tous les fichiers que vous allez modifier.
 
 
 ## Ce qu'il faut savoir avant de commencer

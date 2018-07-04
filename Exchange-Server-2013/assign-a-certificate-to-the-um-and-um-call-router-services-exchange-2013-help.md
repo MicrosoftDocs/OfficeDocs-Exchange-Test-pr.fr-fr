@@ -21,18 +21,8 @@ Vous pouvez utiliser le CAE ou le Shell pour attribuer un interne, auto-signé i
 
 Les différents services ont différentes exigences de certificat. Par exemple, certains services peuvent uniquement nécessiter un nom de serveur dans les zones **Nom de l'objet** ou **Autre nom de l'objet** d'un certificat, tandis que d'autres services peuvent nécessiter un nom de domaine complet. Assurez-vous que le nom du certificat peut prendre en charge les utilisations requises par les services pour lesquels vous l'activez.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les certificats auto-signés ne peut pas être utilisés lorsque vous êtes intégrer la messagerie unifiée (MU) de Microsoft Lync Server.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Les certificats auto-signés ne peut pas être utilisés lorsque vous êtes intégrer la messagerie unifiée (MU) de Microsoft Lync Server.
 
 
 Pour découvrir d'autres tâches de gestion relatives à la gestion des certificats pour la messagerie unifiée, consultez la rubrique [Déployer des certificats pour les procédures de la messagerie unifiée](deploying-certificates-for-um-procedures-exchange-2013-help.md).

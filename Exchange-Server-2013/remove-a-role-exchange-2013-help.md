@@ -55,18 +55,8 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Si un rôle que vous désirez supprimer a des rôles enfants, vous devez également supprimer tous les rôles enfants. Vous recevez un message d’erreur si vous essayez de supprimer un rôle qui a des rôles enfants à moins que vous n’utilisiez le commutateur *Recurse*. Si vous utilisez le commutateur *Recurse* lorsque vous supprimez un rôle, le rôle que vous spécifiez et tous ses rôles enfants sont supprimés.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous utilisez le commutateur <em>Recurse</em>, tous les rôles enfants du rôle spécifié que vous désirez supprimer sont également supprimés. Assurez-vous de connaître les rôles qui seront supprimés avant d’exécuter cette commande.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Si vous utilisez le commutateur <em>Recurse</em>, tous les rôles enfants du rôle spécifié que vous désirez supprimer sont également supprimés. Assurez-vous de connaître les rôles qui seront supprimés avant d’exécuter cette commande.
 
 
 Pour vous assurer que vous ne supprimez que les rôles que vous désirez supprimer, utilisez le commutateur *WhatIf* avec votre commande pour le vérifier. Utilisez la syntaxe suivante.

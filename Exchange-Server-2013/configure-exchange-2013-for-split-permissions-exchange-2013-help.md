@@ -198,19 +198,9 @@ Vous pouvez configurer votre organisation Exchange 2013 pour les autorisations 
 
 Les administrateurs et les serveurs Exchange pourront uniquement gérer les attributs Exchange sur les principaux de sécurité Active Directory existants. Cependant, ils seront en mesure de créer et de gérer des objets spécifiques d’Exchange, comme des règles de transport et des plans de numérotation de messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une fois que vous activé les autorisations fractionnées Active Directory, les administrateurs et les serveurs Exchange ne peuvent plus créer de principaux de sécurité dans Active Directory ni gérer l’appartenance au groupe de distribution. Pour effectuer ces tâches, utilisez les outils de gestion Active Directory en vous assurant de bénéficier des autorisations Active Directory nécessaires. Avant de procéder à ces modifications, assurez-vous de bien en connaître les conséquences sur vos processus administratifs et les applications intégrées à Exchange 2013 ainsi que le modèle d’autorisation RBAC.<br />
-Pour plus d’informations, consultez la section relative aux autorisations fractionnées Active Directory dans la rubrique <a href="understanding-split-permissions-exchange-2013-help.md">Présentation des autorisations fractionnées</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Une fois que vous activé les autorisations fractionnées Active Directory, les administrateurs et les serveurs Exchange ne peuvent plus créer de principaux de sécurité dans Active Directory ni gérer l’appartenance au groupe de distribution. Pour effectuer ces tâches, utilisez les outils de gestion Active Directory en vous assurant de bénéficier des autorisations Active Directory nécessaires. Avant de procéder à ces modifications, assurez-vous de bien en connaître les conséquences sur vos processus administratifs et les applications intégrées à Exchange 2013 ainsi que le modèle d’autorisation RBAC.
+> Pour plus d’informations, consultez la section relative aux autorisations fractionnées Active Directory dans la rubrique <a href="understanding-split-permissions-exchange-2013-help.md">Présentation des autorisations fractionnées</a>.
 
 
 Pour basculer des autorisations partagées ou fractionnées RBAC vers les autorisations fractionnées Active Directory, procédez comme suit :

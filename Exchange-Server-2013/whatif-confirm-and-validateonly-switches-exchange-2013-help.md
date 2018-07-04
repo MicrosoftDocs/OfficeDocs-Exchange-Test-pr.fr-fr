@@ -97,18 +97,8 @@ Si vous souhaitez annuler le comportement par défaut de l'environnement Exchang
 
 Dans ce cas, aucune boîte de dialogue de confirmation n’est affichée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La valeur par défaut du commutateur <em>Confirm</em> est <code>$True</code>. Le comportement par défaut du Shell est d’afficher automatiquement une boîte de dialogue de confirmation. Si vous supprimez ce comportement par défaut, vous ordonnez à la commande de supprimer toutes les boîtes de dialogue de confirmation pendant la durée d’exécution de la commande. La commande traitera tous les objets qui satisfont aux critères pour la commande sans confirmation.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> La valeur par défaut du commutateur <em>Confirm</em> est <code>$True</code>. Le comportement par défaut du Shell est d’afficher automatiquement une boîte de dialogue de confirmation. Si vous supprimez ce comportement par défaut, vous ordonnez à la commande de supprimer toutes les boîtes de dialogue de confirmation pendant la durée d’exécution de la commande. La commande traitera tous les objets qui satisfont aux critères pour la commande sans confirmation.
 
 
 ## Commutateur ValidateOnly

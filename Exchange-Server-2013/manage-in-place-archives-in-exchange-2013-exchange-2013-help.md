@@ -215,18 +215,8 @@ Pour vérifier qu’une archive a bien été désactivée, procédez comme suit�
 
 Lorsque vous désactivez une boîte aux lettres d’archivage, elle est déconnectée. Une boîte aux lettres dont l’archive est déconnectée est conservée dans la base de données de boîtes aux lettres pendant une durée spécifiée. Par défaut, Exchange conserve les archives déconnectées pendant 30 jours. Pendant cette période, vous pouvez récupérer l’archive en l’associant à une boîte aux lettres existante. Vous pouvez modifier la période de rétention des boîtes aux lettres supprimées si vous souhaitez conserver une boîte aux lettres ou une archive supprimée pendant une période plus longue ou plus courte.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous désactivez une archive pour un utilisateur, puis activez une archive pour le même utilisateur, une nouvelle archive lui est octroyée. La nouvelle archive ne contient pas les données présentes dans l’archive déconnectée de l’utilisateur. Si vous souhaitez reconnecter un utilisateur à son archive déconnectée, vous devez appliquer cette procédure.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Si vous désactivez une archive pour un utilisateur, puis activez une archive pour le même utilisateur, une nouvelle archive lui est octroyée. La nouvelle archive ne contient pas les données présentes dans l’archive déconnectée de l’utilisateur. Si vous souhaitez reconnecter un utilisateur à son archive déconnectée, vous devez appliquer cette procédure.
 
 
 > [!NOTE]

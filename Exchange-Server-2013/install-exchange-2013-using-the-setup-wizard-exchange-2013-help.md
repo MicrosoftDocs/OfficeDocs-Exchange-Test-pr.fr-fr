@@ -51,18 +51,8 @@ Pour plus d'informations sur les tâches postérieures à l'installation, consul
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Après avoir installé Exchange sur un serveur, vous ne devez pas modifier le nom du serveur. La modification du nom d’un serveur après avoir installé un rôle de serveur Exchange n’est pas prise en charge.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Après avoir installé Exchange sur un serveur, vous ne devez pas modifier le nom du serveur. La modification du nom d’un serveur après avoir installé un rôle de serveur Exchange n’est pas prise en charge.
 
 
 ## Installer Exchange Server 2013
@@ -129,18 +119,8 @@ Si vous installez le premier serveur Exchange 2013 de l’organisation et n’a
     
     Si vous souhaitez utiliser le modèle d’autorisations partagées Active Directory, sélectionnez l’option **Appliquer le modèle de sécurité des autorisations partagées Active Directory à l’organisation Exchange**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>La plupart des organisations n’ont pas besoin d’appliquer le modèle d’autorisations partagées Active Directory. Si vous devez séparer la gestion des principaux de sécurité Active Directory et la configuration Exchange, les autorisations partagées du contrôle d’accès basé sur les rôles (RBAC) peuvent vous convenir. Pour plus d'informations, cliquez sur <strong>?</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+> La plupart des organisations n’ont pas besoin d’appliquer le modèle d’autorisations partagées Active Directory. Si vous devez séparer la gestion des principaux de sécurité Active Directory et la configuration Exchange, les autorisations partagées du contrôle d’accès basé sur les rôles (RBAC) peuvent vous convenir. Pour plus d'informations, cliquez sur <strong>?</strong>.
     
     Cliquez sur **Suivant** pour continuer.
 

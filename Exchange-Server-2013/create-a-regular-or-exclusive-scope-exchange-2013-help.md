@@ -145,18 +145,8 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Toute étendue créée à l'aide de la cmdlet **New-ManagementScope** peut être définie comme étendue exclusive. Pour créer une étendue exclusive, vous utilisez les mêmes commandes que celles décrites dans les sections précédentes pour créer une étendue de filtre de destinataire, une étendue de filtre de serveur, une étendue de liste de serveurs, une étendue de filtre de base de données ou une étendue de liste de bases de données, puis vous ajoutez le commutateur *Exclusive* à la commande.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous créez des étendues de gestion exclusives, seuls les utilisateurs auxquels ont été affectées des étendues exclusives contenant des objets à modifier peuvent accéder à ces objets. Seuls les administrateurs affectés d'un rôle ayant l'étendue exclusive peuvent accéder à ces objets exclusifs ou protégés.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Lorsque vous créez des étendues de gestion exclusives, seuls les utilisateurs auxquels ont été affectées des étendues exclusives contenant des objets à modifier peuvent accéder à ces objets. Seuls les administrateurs affectés d'un rôle ayant l'étendue exclusive peuvent accéder à ces objets exclusifs ou protégés.
 
 
 Cet exemple crée une étendue exclusive basée sur un filtre destinataire qui correspond à tout utilisateur du département Executives.

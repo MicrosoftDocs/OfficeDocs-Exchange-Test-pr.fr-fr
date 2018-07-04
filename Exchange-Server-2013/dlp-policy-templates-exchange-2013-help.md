@@ -37,18 +37,8 @@ Pour plus d'informations
 
 Vous pouvez incorporer des modèles de stratégie et des définitions de contenu confidentiel à partir de Microsoft Partners ou à partir de fichiers que vous avez vous-même développés en tant qu'ajout aux modèles de stratégie DLP, types d'informations et règles déjà fournies dans Exchange 2013. Voici plusieurs méthodes vous permettant d'ajouter votre propre contenu DLP et d'étendre la fonctionnalité DLP. Les modèles déjà fournis par Microsoft sont un bon point de départ pour vous familiariser avec une solution DLP. Pour étendre les fonctionnalités DLP à vos propres fichiers de modèles de stratégie DLP uniques, vous devez comprendre les exigences de schéma XML relatives aux modèles de stratégies créés indépendamment de Exchange. Pour en savoir plus sur les cmdlets Exchange Management Shell associés avec les modèles de stratégie DLP, consultez les cmdlets liées à `Get-DlpPolicyTemplate` dans [Cmdlets de stratégie et de conformité](https://technet.microsoft.com/fr-fr/library/dd298082\(v=exchg.150\)). De plus, vous pouvez définir vos propres types de contenu confidentiel après avoir compris le format et la procédure permettant de les incorporer. Pour en savoir plus sur les cmdlets Exchange Management Shell associés avec les modèles de stratégie DLP, consultez les cmdlets liées à `Get-ClassificationRuleCollection` dans [Cmdlets de stratégie et de conformité](https://technet.microsoft.com/fr-fr/library/dd298082\(v=exchg.150\)).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez activer vos stratégies DLP en mode Test avant de les appliquer dans votre environnement de production. Pour ces tests, nous vous recommandons de configurer des boîtes aux lettres d’exemples d’utilisateurs et d’envoyer des messages de test qui appelleront vos stratégies de test afin de confirmer les résultats.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Vous devez activer vos stratégies DLP en mode Test avant de les appliquer dans votre environnement de production. Pour ces tests, nous vous recommandons de configurer des boîtes aux lettres d’exemples d’utilisateurs et d’envoyer des messages de test qui appelleront vos stratégies de test afin de confirmer les résultats.
 
 
 ## Créer votre propre modèle de stratégie DLP ou vos propres types d'informations confidentielles dans un package de règles de classification

@@ -103,20 +103,10 @@ Vous pouvez spécifier le nombre de jours, d'heures, de minutes et de secondes p
 
   - **ss**   Nombre de secondes de conservation de l'entrée du journal d'audit
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez définir une durée de vie du journal d'audit inférieure à la durée de vie actuellement paramétrée. Dans ce cas, seront supprimées toutes les entrées du journal d'audit dont la durée de vie dépasse la nouvelle durée fixée.<br />
-Si vous définissez la durée de vie sur 0, Exchange supprimera toutes les entrées dans le journal d'audit.<br />
-Nous vous recommandons d'accorder les autorisations de configuration de la durée de vie du journal d'audit uniquement à des utilisateurs en qui vous avez toute confiance.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Vous pouvez définir une durée de vie du journal d'audit inférieure à la durée de vie actuellement paramétrée. Dans ce cas, seront supprimées toutes les entrées du journal d'audit dont la durée de vie dépasse la nouvelle durée fixée.
+> Si vous définissez la durée de vie sur 0, Exchange supprimera toutes les entrées dans le journal d'audit.
+> Nous vous recommandons d'accorder les autorisations de configuration de la durée de vie du journal d'audit uniquement à des utilisateurs en qui vous avez toute confiance.
 
 
 Cet exemple spécifie une durée de vie de deux ans et six mois.

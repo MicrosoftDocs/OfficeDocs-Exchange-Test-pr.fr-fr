@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2015-07-16_
 
 Une stratégie de boîte aux lettres de périphérique mobile vous permet d’appliquer un ensemble commun de paramètres de sécurité et de périphériques mobiles à un groupe d’utilisateurs. Vous pouvez créer plusieurs stratégies de boîte aux lettres de périphérique mobile.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous installez Microsoft Exchange Server 2013, une stratégie de boîtes aux lettres de périphérique mobile par défaut est créée et est automatiquement attribuée à tous les utilisateurs.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Lorsque vous installez Microsoft Exchange Server 2013, une stratégie de boîtes aux lettres de périphérique mobile par défaut est créée et est automatiquement attribuée à tous les utilisateurs.
 
 
 Pour d'autres tâches de gestion relatives aux stratégies de boîtes aux lettres de périphérique mobile, consultez la rubrique [Stratégies de boîte aux lettres d'appareil mobile](mobile-device-mailbox-policies-exchange-2013-help.md).

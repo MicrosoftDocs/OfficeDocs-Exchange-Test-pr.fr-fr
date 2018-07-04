@@ -99,18 +99,8 @@ Pour des informations supplémentaires sur la gestion d'Exchange 2013, consulte
     
     Si vous souhaitez utiliser le modèle d'autorisations partagées Active Directory, sélectionnez l'option **Appliquer le modèle de sécurité des autorisations partagées Active Directory à l'organisation Exchange**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>La plupart des organisations n'ont pas besoin d'appliquer le modèle d'autorisations partagées Active Directory. Si vous devez séparer la gestion des principaux de sécurité Active Directory et la configuration Exchange, les autorisations partagées du contrôle d'accès basé sur les rôles (RBAC) peuvent vous convenir. Pour plus d'informations, cliquez sur <strong>?</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > La plupart des organisations n'ont pas besoin d'appliquer le modèle d'autorisations partagées Active Directory. Si vous devez séparer la gestion des principaux de sécurité Active Directory et la configuration Exchange, les autorisations partagées du contrôle d'accès basé sur les rôles (RBAC) peuvent vous convenir. Pour plus d'informations, cliquez sur <strong>?</strong>.
     
     Cliquez sur **Suivant** pour continuer.
 

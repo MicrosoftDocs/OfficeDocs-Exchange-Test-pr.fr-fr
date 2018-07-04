@@ -167,18 +167,8 @@ Pour créer des adresses de messagerie supplémentaires à utiliser comme adress
 
 5.  **Créez des règles pour définir les destinataires auxquels cette stratégie d'adresse de messagerie s'applique**   Cliquez sur **Ajouter une règle** afin de limiter le nombre de destinataires auxquels cette stratégie doit s'appliquer. Cela a pour effet de créer une instruction booléenne **Et**. Répétez cette étape autant de fois que nécessaire.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous appliquez un trop grand nombre de règles, la stratégie d’adresse de messagerie peut être restreinte au point de ne plus contenir d’utilisateurs.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > Si vous appliquez un trop grand nombre de règles, la stratégie d’adresse de messagerie peut être restreinte au point de ne plus contenir d’utilisateurs.
 
 
 6.  Cliquez sur **Afficher un aperçu des destinataires auxquels la stratégie s'applique** pour visualiser les destinataires auxquels cette stratégie doit s'appliquer.

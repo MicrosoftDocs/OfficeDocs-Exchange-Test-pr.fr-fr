@@ -147,18 +147,8 @@ Une fois la boîte aux lettres de journalisation à nouveau disponible, vous pou
 
 Lorsque vous configurez une autre boîte aux lettres de journalisation, tous les états de journal rejetés ou qui n’ont pas pu être remis dans toute votre organisation Exchange sont remis à l’autre boîte aux lettres de journalisation. Par conséquent, il est important de s'assurer que l'autre boîte aux lettres de journalisation et le serveur de boîtes aux lettres qui l'héberge peuvent prendre en charge plusieurs états de journal.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous configurez une boîte aux lettres de journalisation alternative, vous devez veiller à ce qu’elle ne soit pas indisponible en même temps que les boîtes aux lettres de journalisation. Si l'autre boîte aux lettres de journalisation devient indisponible ou rejette des états de journal, ceux-ci sont perdus et irrécupérables.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Si vous configurez une boîte aux lettres de journalisation alternative, vous devez veiller à ce qu’elle ne soit pas indisponible en même temps que les boîtes aux lettres de journalisation. Si l'autre boîte aux lettres de journalisation devient indisponible ou rejette des états de journal, ceux-ci sont perdus et irrécupérables.
 
 
 Dans la mesure où l’autre boîte aux lettres de journalisation collecte tous les états de journal rejetés pour toute l’organisation Exchange, vous devez vérifier que cela ne va pas à l’encontre des règles ou règlements applicables à votre organisation. Si des règles ou règlements empêchent votre organisation d'autoriser le stockage d'états de journal envoyés à différentes boîtes aux lettres de journalisation dans la même autre boîte aux lettres de journalisation, il se peut que vous ne puissiez pas configurer une autre boîte aux lettres de journalisation. Consultez vos représentants légaux afin de déterminer si vous pouvez utiliser une autre boîte aux lettres de journalisation.

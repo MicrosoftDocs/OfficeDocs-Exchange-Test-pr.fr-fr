@@ -29,19 +29,9 @@ Dans Exchange 2013, les règles de protection Outlook aident votre organisatio
 
 Lorsque vous créez des règles de protection Outlook pour un serveur Exchange 2013, les règles sont automatiquement distribuées vers Outlook 2010 à l'aide des services Web Exchange. Pour qu'Outlook 2010 puisse appliquer la règle, le modèle de stratégie des droits AD RMS que vous spécifiez doit être disponible sur tous les ordinateurs de l'organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si un modèle de stratégie des droits est supprimé du serveur AD RMS, vous devez modifier chacune des règles de protection Outlook qui utilise le modèle supprimé. Si une règle de protection Outlook continue à utiliser un modèle de stratégie des droits supprimé alors que le déchiffrement de transport est activé dans l’organisation, l’agent de déchiffrement ne pourra pas déchiffrer le message protégé, car le modèle ne sera plus valide. Si le déchiffrement du transport est configuré comme étant obligatoire, le service de transport rejettera le message et enverra une notification d’échec de remise à l’expéditeur. Pour plus d’informations sur le déchiffrement du transport, voir <a href="transport-decryption-exchange-2013-help.md">Déchiffrement du transport</a>. Pour plus d’informations sur les modèles de stratégie des droits des services AD RMS, consultez les <a href="https://go.microsoft.com/fwlink/p/?linkid=179455">considérations relatives au modèle de stratégie AD RMS</a>.<br />
-Dans Windows Server 2008 et les versions ultérieures, vous pouvez archiver les modèles de stratégie des droits au lieu de les supprimer. Les modèles archivés peuvent servir à concéder du contenu sous licence. Toutefois, lorsque vous créez ou modifiez une règle de protection Outlook, les modèles archivés ne sont pas inclus dans la liste des modèles.</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> Si un modèle de stratégie des droits est supprimé du serveur AD RMS, vous devez modifier chacune des règles de protection Outlook qui utilise le modèle supprimé. Si une règle de protection Outlook continue à utiliser un modèle de stratégie des droits supprimé alors que le déchiffrement de transport est activé dans l’organisation, l’agent de déchiffrement ne pourra pas déchiffrer le message protégé, car le modèle ne sera plus valide. Si le déchiffrement du transport est configuré comme étant obligatoire, le service de transport rejettera le message et enverra une notification d’échec de remise à l’expéditeur. Pour plus d’informations sur le déchiffrement du transport, voir <a href="transport-decryption-exchange-2013-help.md">Déchiffrement du transport</a>. Pour plus d’informations sur les modèles de stratégie des droits des services AD RMS, consultez les <a href="https://go.microsoft.com/fwlink/p/?linkid=179455">considérations relatives au modèle de stratégie AD RMS</a>.
+> Dans Windows Server 2008 et les versions ultérieures, vous pouvez archiver les modèles de stratégie des droits au lieu de les supprimer. Les modèles archivés peuvent servir à concéder du contenu sous licence. Toutefois, lorsque vous créez ou modifiez une règle de protection Outlook, les modèles archivés ne sont pas inclus dans la liste des modèles.
 
 
 Les règles de protection Outlook sont similaires aux règles de protection du transport. dans la mesure où elles sont appliquées en fonction de conditions de message et protègent les messages par le biais d'un modèle de stratégie des droits d'accès AD RMS. Cependant, des règles de protection du transport sont appliquées dans le service de transport du serveur de boîtes aux lettres par l’agent de règles de transport. Les règles de protection de Outlook sont appliquées dans Outlook 2010, avant que le message quitte l’ordinateur de l’utilisateur. Les messages protégés par une règle de protection Outlook entrent dans le pipeline de transport avec la protection IRM déjà appliquée. En outre, les messages protégés par une règle de protection Outlook sont également enregistrés dans un format chiffré dans le dossier Éléments envoyés de la boîte aux lettres de l'expéditeur.

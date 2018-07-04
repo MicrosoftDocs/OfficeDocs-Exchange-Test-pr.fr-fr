@@ -41,18 +41,8 @@ Les agents de transport utilisent les événements SMTP pour agir sur les messa
 
 Vous ne pouvez pas utiliser l'environnement de ligne de commande Exchange Management pour gérer l'agent de transport dans le service de transport frontal sur un serveur d'accès au client. A la place, vous devez ouvrir Windows PowerShell sur le serveur d'accès au client et importer ensuite les cmdlets Exchange dans la session Windows PowerShell.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L'exécution des cmdlets Exchange dans Windows PowerShell pour les autres tâches que les agents de transport dans le service de transport frontal n'est pas prise en charge. Les conséquences sont graves si vous n'utilisez pas l'environnement de ligne de commande Exchange Management et le contrôle d’accès basé sur les rôles (RBAC) en exécutant des cmdlets Exchange dans Windows PowerShell. Vous devez toujours exécuter les cmdlets Exchange dans l'environnement de ligne de commande Exchange Management. Pour plus d'informations, voir <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Notes de publication relatives à Exchange 2013</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> L'exécution des cmdlets Exchange dans Windows PowerShell pour les autres tâches que les agents de transport dans le service de transport frontal n'est pas prise en charge. Les conséquences sont graves si vous n'utilisez pas l'environnement de ligne de commande Exchange Management et le contrôle d’accès basé sur les rôles (RBAC) en exécutant des cmdlets Exchange dans Windows PowerShell. Vous devez toujours exécuter les cmdlets Exchange dans l'environnement de ligne de commande Exchange Management. Pour plus d'informations, voir <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Notes de publication relatives à Exchange 2013</a>.
 
 
 Pour exécuter les procédures de l'agent de transport décrites dans cette rubrique dans le service de transport frontal, vous devez procéder comme suit :

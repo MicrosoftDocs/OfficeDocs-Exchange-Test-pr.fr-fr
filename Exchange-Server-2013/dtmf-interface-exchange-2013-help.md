@@ -152,18 +152,8 @@ Pour plus d'informations sur l'activation de la messagerie unifiée pour un util
 
 Parfois, le prénom, le nom ou l'alias de messagerie d'un utilisateur est modifié après que la messagerie unifiée a été activée pour celui-ci. Les valeurs du plan DTMF de l'utilisateur ne sont pas automatiquement mises à jour dans. Si un appelant entre le nouveau nom ou le nouvel alias de messagerie de l’utilisateur et que le plan DTMF de l’utilisateur n’a pas été mis à jour afin de répercuter la modification, l’appelant ne peut pas localiser l’utilisateur dans l’annuaire, lui envoyer un message ou lui transférer des appels. Si vous devez mettre à jour le plan DTMF d'un utilisateur après que la messagerie unifiée a été activée pour celui-ci , vous pouvez utiliser la cmdlet **Set-User** avec le paramètre *-CreateDtmfMap*. Par ailleurs, vous pouvez créer un script dans l'environnement de ligne de commande Exchange Management Shell en utilisant cette cmdlet si vous voulez mettre à jour les valeurs du plan DTMF pour plusieurs utilisateurs à extension messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous vous déconseillons de modifier manuellement les valeurs DTMF pour les utilisateurs à l'aide d'un outil tel que l'Éditeur ADSI, car cela peut entraîner des configurations incohérentes ou d'autres erreurs. Nous vous recommandons d'utiliser uniquement la cmdlet <strong>Set-UMService</strong> ou <strong>Set-User</strong> pour créer ou mettre à jour des plans DTMF associés à des utilisateurs.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Nous vous déconseillons de modifier manuellement les valeurs DTMF pour les utilisateurs à l'aide d'un outil tel que l'Éditeur ADSI, car cela peut entraîner des configurations incohérentes ou d'autres erreurs. Nous vous recommandons d'utiliser uniquement la cmdlet <strong>Set-UMService</strong> ou <strong>Set-User</strong> pour créer ou mettre à jour des plans DTMF associés à des utilisateurs.
 
 
 ## Pour plus d'informations

@@ -63,19 +63,9 @@ Les messages déchiffrés par l’agent de déchiffrement ne quittent pas le ser
 
   - Si l’erreur permanente se produit pendant le rechiffrement, une notification d’échec de remise est toujours envoyée sans le message déchiffré.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Tous les agents personnalisés ou tiers installés sur un service de transport ont accès au message déchiffré. Vous devez tenir compte du comportement de ces agents de transport. Nous vous recommandons de tester minutieusement tous les agents de transport personnalisés et tiers avant de les déployer dans un environnement de production.<br />
-Une fois un message déchiffré par l’agent de déchiffrement, si un agent de transport crée un nouveau message et incorpore (lie) le message d’origine au nouveau, seul le nouveau message est protégé. Le message d’origine, qui devient une pièce jointe au nouveau message, n’est pas rechiffré. Un destinataire qui reçoit ce message peut ouvrir le message joint et effectuer des opérations sur ce dernier, comme par exemple, le transférer ou y répondre, ayant pour conséquence d’ignorer l’application des droits.</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> Tous les agents personnalisés ou tiers installés sur un service de transport ont accès au message déchiffré. Vous devez tenir compte du comportement de ces agents de transport. Nous vous recommandons de tester minutieusement tous les agents de transport personnalisés et tiers avant de les déployer dans un environnement de production.
+> Une fois un message déchiffré par l’agent de déchiffrement, si un agent de transport crée un nouveau message et incorpore (lie) le message d’origine au nouveau, seul le nouveau message est protégé. Le message d’origine, qui devient une pièce jointe au nouveau message, n’est pas rechiffré. Un destinataire qui reçoit ce message peut ouvrir le message joint et effectuer des opérations sur ce dernier, comme par exemple, le transférer ou y répondre, ayant pour conséquence d’ignorer l’application des droits.
 
 
 ## Configuration du déchiffrement du transport

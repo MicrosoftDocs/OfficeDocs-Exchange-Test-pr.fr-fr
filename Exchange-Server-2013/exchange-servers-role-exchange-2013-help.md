@@ -171,18 +171,8 @@ Ce rôle a été configuré pour fournir à une personne affectée au rôle tout
 
 Si vous décidez que vous avez besoin de créer une version personnalisée de ce rôle, vous devez créer un rôle enfant et personnaliser le nouveau rôle.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les informations suivantes vous permettent d’effectuer la gestion avancée d’autorisations. La personnalisation des rôles de gestion peut augmenter considérablement la complexité de votre modèle d’autorisations. Vous risquez d’interrompre le fonctionnement de certaines fonctions si vous remplacez le rôle de gestion intégré par un rôle personnalisé et configuré de manière incorrecte.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Les informations suivantes vous permettent d’effectuer la gestion avancée d’autorisations. La personnalisation des rôles de gestion peut augmenter considérablement la complexité de votre modèle d’autorisations. Vous risquez d’interrompre le fonctionnement de certaines fonctions si vous remplacez le rôle de gestion intégré par un rôle personnalisé et configuré de manière incorrecte.
 
 
 Les étapes suivantes sont celles les plus courantes pour créer un rôle personnalisé et l’attribuer à une personne affectée au rôle :

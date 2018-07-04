@@ -117,18 +117,8 @@ Exécutez les commandes d’environnement suivantes pour gérer d’autres aspec
     
         Set-FederationTrust "Azure AD authentication" -PublishFederationCertificate
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Avant de configurer l’approbation de fédération afin qu’elle utilise le certificat suivant comme certificat de fédération actuel, assurez-vous que le certificat est déployé sur tous les serveurs Exchange de votre organisation. Utilisez la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dd335228(v=exchg.150)">Test-FederationTrustCertificate</a> pour vérifier l’état de déploiement du certificat.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > Avant de configurer l’approbation de fédération afin qu’elle utilise le certificat suivant comme certificat de fédération actuel, assurez-vous que le certificat est déployé sur tous les serveurs Exchange de votre organisation. Utilisez la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dd335228(v=exchg.150)">Test-FederationTrustCertificate</a> pour vérifier l’état de déploiement du certificat.
 
 
 6.  **Actualisez le certificat et les métadonnées de fédération à partir du système d'authentification Azure AD**

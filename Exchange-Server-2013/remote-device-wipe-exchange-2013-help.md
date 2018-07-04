@@ -27,18 +27,8 @@ La fonctionnalité de réinitialisation à distance inclut également une foncti
 > La réinitialisation à distance permet de restaurer les valeurs par défaut des paramètres d’usine d’un téléphone mobile. Bien que le protocole de réinitialisation à distance tel qu’il est implémenté dans Exchange 2013 nécessite uniquement la suppression de données d’entreprise personnelles, tous les fabricants de périphériques mobiles actuels interprètent la commande comme étant une commande supprimant l’ensemble des données contenues dans le téléphone. De nombreux systèmes d’exploitation de périphériques mobiles suppriment aussi toutes les données contenues sur n’importe quelle carte de stockage insérée dans le périphérique mobile. Si vous réalisez une réinitialisation à distance sur un téléphone mobile en votre possession et que vous voulez conserver les données présentes sur la carte de stockage, il est recommandé de retirer cette dernière avant de commencer la réinitialisation à distance.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une fois l’opération effectuée, il est très difficile de récupérer les données. Toutefois, aucun processus de suppression des données ne supprime totalement les données résiduelles. Seuls des outils sophistiqués permettent de récupérer les données d’un périphérique mobile.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Une fois l’opération effectuée, il est très difficile de récupérer les données. Toutefois, aucun processus de suppression des données ne supprime totalement les données résiduelles. Seuls des outils sophistiqués permettent de récupérer les données d’un périphérique mobile.
 
 
 ## Réinitialisation à distance ou réinitialisation locale

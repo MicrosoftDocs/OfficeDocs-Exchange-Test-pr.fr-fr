@@ -69,18 +69,8 @@ Pour découvrir d’autres tâches de gestion associées aux archives, consultez
         
           - **Jamais**   Cliquez sur ce bouton pour désactiver la balise. Si la balise de stratégie par défaut est désactivée, elle ne s’applique plus à la boîte aux lettres.
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>Les éléments ayant une balise de rétention désactivée ne sont pas traités par l’Assistant de boîte aux lettres. Pour empêcher l’application d’une balise aux éléments, nous vous recommandons de désactiver la balise plutôt que de la supprimer. Lorsque vous supprimez une balise, la configuration de la balise est supprimée d’Active Directory et l’Assistant de boîte aux lettres traite tous les messages pour enlever la balise supprimée.</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!important]
+            > Les éléments ayant une balise de rétention désactivée ne sont pas traités par l’Assistant de boîte aux lettres. Pour empêcher l’application d’une balise aux éléments, nous vous recommandons de désactiver la balise plutôt que de la supprimer. Lorsque vous supprimez une balise, la configuration de la balise est supprimée d’Active Directory et l’Assistant de boîte aux lettres traite tous les messages pour enlever la balise supprimée.
             
             > [!NOTE]
             > Si un utilisateur applique une balise à un élément en pensant que cet élément ne sera jamais déplacé, son activation ultérieure peut entraîner le déplacement d’éléments que l’utilisateur souhaitait conserver dans la boîte aux lettres principale.

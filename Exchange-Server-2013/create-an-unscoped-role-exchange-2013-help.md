@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2014-06-09_
 
 Un rôle de gestion non délimité peut être utilisé pour fournir aux administrateurs et aux utilisateurs spécialistes l’accès aux scripts Windows PowerShell et aux cmdlets non Exchange. Vous pouvez soit créer un rôle de niveau supérieur non délimité et ajouter des scripts ou des cmdlets non Exchange à ce rôle, ou bien créer un rôle basé sur un rôle de niveau supérieur existant non délimité. Après la création et la personnalisation d’un rôle non délimité, ce dernier peut être attribué à des groupes de rôles de gestion, des utilisateurs et des groupes universels de sécurité (USG). Les rôles non délimités ne peuvent pas être attribués à des stratégies d’attribution de rôle de gestion. Pour plus d’informations sur les rôles non délimités, voir [Présentation des rôles de gestion](understanding-management-roles-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les rôles non délimités peuvent être puissants car, comme le sous-entend leur nom, aucune étendue de gestion ne leur est appliquée. Autrement dit, les scripts et les cmdlets non Exchange qu’ils contiennent peuvent être exécutés sur n’importe quel objet de votre organisation Exchange. Pensez à cela lorsque vous ajoutez des scripts ou des cmdlets non Exchange à un rôle non délimité et lorsque vous attribuez le rôle non délimité.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Les rôles non délimités peuvent être puissants car, comme le sous-entend leur nom, aucune étendue de gestion ne leur est appliquée. Autrement dit, les scripts et les cmdlets non Exchange qu’ils contiennent peuvent être exécutés sur n’importe quel objet de votre organisation Exchange. Pensez à cela lorsque vous ajoutez des scripts ou des cmdlets non Exchange à un rôle non délimité et lorsque vous attribuez le rôle non délimité.
 
 
 > [!NOTE]

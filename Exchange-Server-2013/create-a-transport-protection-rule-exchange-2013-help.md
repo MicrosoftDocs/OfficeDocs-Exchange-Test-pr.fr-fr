@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez utiliser des règles de protection de transport pour appliquer une protection de droits permanente aux messages en fonction de leurs propriétés, telles que l’expéditeur, le destinataire, l’objet et le contenu du message.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avant de créer des règles de transport dans votre environnement de production, il est recommandé de les créer dans un environnement de test et de les tester de manière approfondie. Les règles de transport créées dans cette rubrique sont des exemples. Vous pouvez créer des règles de transport en utilisant les prédicats et valeurs de règles de transport appropriés en fonction de vos besoins.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Avant de créer des règles de transport dans votre environnement de production, il est recommandé de les créer dans un environnement de test et de les tester de manière approfondie. Les règles de transport créées dans cette rubrique sont des exemples. Vous pouvez créer des règles de transport en utilisant les prédicats et valeurs de règles de transport appropriés en fonction de vos besoins.
 
 
 Pour les autres tâches de gestion liées à la Gestion des droits relatifs à l’information (IRM), voir [Procédures de gestion des droits relatifs à l’information](information-rights-management-procedures-exchange-2013-help.md).

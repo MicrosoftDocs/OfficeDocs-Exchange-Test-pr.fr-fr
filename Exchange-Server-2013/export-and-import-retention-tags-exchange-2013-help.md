@@ -27,19 +27,9 @@ Il existe plusieurs cas de figure dans lesquels vous pourriez être amené à ex
 
 Dans ces scénarios, l'Assistant Dossier géré peut traiter correctement un élément auquel une balise de rétention est appliquée après que l'élément ou la boîte aux lettres ait été déplacé vers une autre organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour conserver les balises de rétention et les stratégies de rétention synchronisées entre deux organisations, chaque fois que vous apportez des modifications à une balise ou une stratégie de rétention dans l'organisation source, vous devez exécuter cette procédure pour exporter les balises et les stratégies de rétention de l'organisation source et les importer dans l'organisation de destination.<br />
-Vous ne pouvez pas sélectionner des balises ou des stratégies de rétention spécifiques en vue de les exporter. Le script Export-RetentionTags.ps1 exporte toutes les balises et stratégies de rétention d’une organisation.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Pour conserver les balises de rétention et les stratégies de rétention synchronisées entre deux organisations, chaque fois que vous apportez des modifications à une balise ou une stratégie de rétention dans l'organisation source, vous devez exécuter cette procédure pour exporter les balises et les stratégies de rétention de l'organisation source et les importer dans l'organisation de destination.
+> Vous ne pouvez pas sélectionner des balises ou des stratégies de rétention spécifiques en vue de les exporter. Le script Export-RetentionTags.ps1 exporte toutes les balises et stratégies de rétention d’une organisation.
 
 
 Pour les autres tâches de gestion relatives à la gestion des enregistrements de messagerie, consultez la rubrique [Procédures de gestion des enregistrements de messagerie](messaging-records-management-procedures-exchange-2013-help.md).

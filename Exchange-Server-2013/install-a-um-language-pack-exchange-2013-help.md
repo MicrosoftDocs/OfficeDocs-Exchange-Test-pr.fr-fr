@@ -21,18 +21,8 @@ Pour qu’une langue soit disponible dans la liste des langues de messagerie uni
 
 Après avoir installé le module linguistique de messagerie unifiée approprié, vous pouvez afficher la liste des modules linguistiques à l’aide de la liste déroulante de la page **Paramètres** du plan de numérotation de messagerie unifiée ou de la liste déroulante **Langue de l’interface vocale automatique** sur la page **Général** d’un standard automatique de messagerie unifiée. Vous pouvez également configurer la langue par défaut pour qu’elle soit différente d’Anglais (États-Unis) sur les plans de numérotation de messagerie unifiée et les standards automatiques.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les modules linguistiques de messagerie unifiée pour Microsoft Exchange Server 2007 ou Exchange 2007 Service Pack 1 (SP1), SP2 ou SP3 ou Exchange 2010 Service Pack 1 SP1, SP2 ou SP3 ne peuvent pas être utilisés sur un serveur de boîtes aux lettres Exchange 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Les modules linguistiques de messagerie unifiée pour Microsoft Exchange Server 2007 ou Exchange 2007 Service Pack 1 (SP1), SP2 ou SP3 ou Exchange 2010 Service Pack 1 SP1, SP2 ou SP3 ne peuvent pas être utilisés sur un serveur de boîtes aux lettres Exchange 2013.
 
 
 Pour les tâches supplémentaires concernant les modules linguistiques de messagerie unifiée, consultez la rubrique [Procédures de langages, les invites et le message d'accueil de la messagerie unifiée](um-languages-prompts-and-greetings-procedures-exchange-2013-help.md).

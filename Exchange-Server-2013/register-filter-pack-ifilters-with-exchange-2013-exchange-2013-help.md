@@ -21,19 +21,9 @@ Les règles de transport comportant des conditions d’analyse de pièces jointe
 
 Après avoir enregistré un IFilter pour un type de fichier spécifique, les règles de transport dotées de conditions de traitement des pièces jointes pourront analyser ces pièces jointes. Par conséquent, ces types de fichiers ne déclencheront plus la condition *AttachmentIsUnsupported*.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les procédures répertoriées dans cette rubrique impliquent la modification du Registre sur vos serveurs Exchange. Une modification incorrecte du Registre peut être à l’origine de problèmes graves qui vous obligeront peut-être à réinstaller votre système d’exploitation. Il se peut que les problèmes résultant d’une modification incorrecte du Registre soient impossibles à résoudre. Avant de modifier le Registre, sauvegardez les données importantes.<br />
-Ces procédures requièrent également l’interruption et le redémarrage du service de transport Microsoft Exchange sur vos serveurs de boîtes aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Les procédures répertoriées dans cette rubrique impliquent la modification du Registre sur vos serveurs Exchange. Une modification incorrecte du Registre peut être à l’origine de problèmes graves qui vous obligeront peut-être à réinstaller votre système d’exploitation. Il se peut que les problèmes résultant d’une modification incorrecte du Registre soient impossibles à résoudre. Avant de modifier le Registre, sauvegardez les données importantes.
+> Ces procédures requièrent également l’interruption et le redémarrage du service de transport Microsoft Exchange sur vos serveurs de boîtes aux lettres.
 
 
 Pour d’autres tâches de gestion relatives aux règles de transport, consultez la rubrique [Gestion de règles de flux de messagerie](manage-mail-flow-rules-exchange-2013-help.md).

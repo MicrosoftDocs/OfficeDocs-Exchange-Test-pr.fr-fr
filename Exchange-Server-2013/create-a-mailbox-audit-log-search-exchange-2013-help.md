@@ -55,18 +55,8 @@ Pour les autres tâches de gestion relatives à l’enregistrement d’audit des
     
       - **Rechercher dans ces boîtes aux lettres ou laisser vide pour rechercher toutes les boîtes aux lettres auxquelles des non-propriétaires ont accédé**
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Selon le nombre de boîtes aux lettres dans votre organisation et la quantité de données de journal d’audit de boîte aux lettres dans chacune, la recherche dans toutes les boîtes aux lettres peut prendre beaucoup de temps.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!CAUTION]
+        > Selon le nombre de boîtes aux lettres dans votre organisation et la quantité de données de journal d’audit de boîte aux lettres dans chacune, la recherche dans toutes les boîtes aux lettres peut prendre beaucoup de temps.
     
       - **Rechercher les accès par**
         

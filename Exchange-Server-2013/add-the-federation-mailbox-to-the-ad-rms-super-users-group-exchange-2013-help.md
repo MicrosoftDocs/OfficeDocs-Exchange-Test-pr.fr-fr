@@ -29,18 +29,8 @@ Pour les fonctionnalités suivantes de Microsoft Exchange Server 2013 gestion d
 
 Vous pouvez configurer un groupe de distribution à extension messagerie en tant que groupe de super utilisateurs dans AD RMS. Une licence d’utilisation de propriétaire est accordée aux membres du groupe de distribution lorsque ces derniers en font la demande à partir du cluster AD RMS. Cela leur permet de déchiffrer tout le contenu protégé par RMS qui a été publié par ce cluster. Que vous utilisiez un groupe de distribution existant ou que vous en créiez un et le configuriez en tant que groupe de super utilisateurs dans AD RMS, il est conseillé de le dédier à cette fin et de configurer les paramètres appropriés pour l’approbation, l’audit et le contrôle des modifications apportées à l’appartenance au groupe.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Configuration d’un groupe de super utilisateurs dans AD RMS permet de décrypter le contenu protégé par IRM, les membres de groupe. Nous vous conseillons prenez les mesures appropriées pour contrôler et surveiller l’appartenance de groupe et activez l’audit suivre les modifications d’appartenance. Vous pouvez également limiter les modifications indésirables dans l’appartenance au groupe en configurant le groupe comme un groupe restreint à l’aide de la stratégie de groupe. Pour plus d’informations, voir <a href="https://technet.microsoft.com/en-us/library/cc756802(v=ws.10).aspx">Paramètres de stratégie de groupes restreints</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Configuration d’un groupe de super utilisateurs dans AD RMS permet de décrypter le contenu protégé par IRM, les membres de groupe. Nous vous conseillons prenez les mesures appropriées pour contrôler et surveiller l’appartenance de groupe et activez l’audit suivre les modifications d’appartenance. Vous pouvez également limiter les modifications indésirables dans l’appartenance au groupe en configurant le groupe comme un groupe restreint à l’aide de la stratégie de groupe. Pour plus d’informations, voir <a href="https://technet.microsoft.com/en-us/library/cc756802(v=ws.10).aspx">Paramètres de stratégie de groupes restreints</a>.
 
 
 Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives à IRM, consultez [Procédures de gestion des droits relatifs à l’information](information-rights-management-procedures-exchange-2013-help.md).

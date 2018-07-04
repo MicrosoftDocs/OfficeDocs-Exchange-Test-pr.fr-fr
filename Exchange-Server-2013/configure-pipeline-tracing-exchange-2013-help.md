@@ -55,18 +55,8 @@ Cet exemple permet de configurer le suivi du pipeline pour capturer des instanta
 
     Set-TransportService Mailbox02 -PipelineTracingSenderAddress "<>"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La configuration du suivi du pipeline de manière à capturer tous les messages que le serveur a générés dans un service de transport peut augmenter la charge sur le serveur et rapidement consommer l'espace disque disponible. Surveillez toujours l'espace disque disponible quand le suivi du pipeline est activé.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> La configuration du suivi du pipeline de manière à capturer tous les messages que le serveur a générés dans un service de transport peut augmenter la charge sur le serveur et rapidement consommer l'espace disque disponible. Surveillez toujours l'espace disque disponible quand le suivi du pipeline est activé.
 
 
 ## Étape 2 : (facultative) utiliser l'environnement de ligne de commande Exchange Management Shell pour spécifier un dossier de suivi du pipeline personnalisé

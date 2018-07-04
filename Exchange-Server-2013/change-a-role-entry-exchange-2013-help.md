@@ -25,18 +25,8 @@ Vous ne pouvez pas modifier les entrées de rôle des rôles de gestion intégr�
 > Cette rubrique ne décrit pas comment modifier les entrées des rôles de gestion non délimitées d’un rôle de gestion non délimité. Pour plus d’informations sur la modification des entrées de rôle non délimitées, consultez la rubrique <a href="create-a-role-exchange-2013-help.md">Créer un rôle</a>.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour ajouter ou supprimer des paramètres dans une entrée de rôle, utilisez les paramètres <em>AddParameter</em> ou <em>RemoveParameter</em>. Si vous omettez de préciser le paramètre <em>AddParameter</em> ou <em>RemoveParameter</em> lors de l’exécution de la cmdlet <strong>Set-ManagementRoleEntry</strong>, seuls les paramètres que vous spécifiez via le paramètre <em>Parameters</em> sont inclus dans l’entrée de rôle. Tous les autres paramètres de l’entrée de rôle seront supprimés.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Pour ajouter ou supprimer des paramètres dans une entrée de rôle, utilisez les paramètres <em>AddParameter</em> ou <em>RemoveParameter</em>. Si vous omettez de préciser le paramètre <em>AddParameter</em> ou <em>RemoveParameter</em> lors de l’exécution de la cmdlet <strong>Set-ManagementRoleEntry</strong>, seuls les paramètres que vous spécifiez via le paramètre <em>Parameters</em> sont inclus dans l’entrée de rôle. Tous les autres paramètres de l’entrée de rôle seront supprimés.
 
 
 Souhaitez-vous rechercher les autres tâches de gestion relatives aux rôles ? Consultez la rubrique [Autorisations avancées](advanced-permissions-exchange-2013-help.md).
@@ -95,18 +85,8 @@ Pour supprimer tous les paramètres d’une entrée de rôle, vous devez spécif
 
 La suppression globale des paramètres dans une entrée de rôle est utile si seulement quelques paramètres doivent être disponibles dans une cmdlet et que vous souhaitez en exclure tous les autres. Si vous ne voulez pas que le rôle ait accès à une cmdlet, supprimez entièrement l’entrée associée dans le rôle et non pas simplement les paramètres. Pour plus d’informations sur la suppression d’une entrée de rôle, voir [Supprimer une entrée de rôle d'un rôle](remove-a-role-entry-from-a-role-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas annuler la suppression de ces opérations. Si vous supprimez par erreur tous les paramètres d’une entrée de rôle, vous devez les ajouter à nouveau manuellement.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Vous ne pouvez pas annuler la suppression de ces opérations. Si vous supprimez par erreur tous les paramètres d’une entrée de rôle, vous devez les ajouter à nouveau manuellement.
 
 
 Pour supprimer des paramètres d’une entrée de rôle, utilisez la syntaxe suivante.
