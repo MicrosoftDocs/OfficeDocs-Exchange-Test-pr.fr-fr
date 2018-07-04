@@ -93,19 +93,9 @@ Les informations sont écrites dans chaque fichier journal jusqu'à ce que la ta
 
   - Le répertoire des journaux de suivi des messages a atteint la taille maximale spécifiée.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>La taille maximale du répertoire des journaux de suivi des messages est calculée comme la taille totale de tous les fichiers journaux dont le nom porte le même préfixe. Les fichiers ne répondant pas à cette convention de préfixe de sont pas comptabilisés dans le calcul de la taille totale du répertoire. La modification du nom d'anciens fichiers journaux ou la copie d'autres fichiers dans le répertoire des journaux de suivi des messages peut avoir pour effet que la taille du répertoire dépasse la taille maximale spécifiée.<br />
-    Pour les serveurs de boîtes aux lettres Exchange 2013, la taille maximale du répertoire de suivi des messages est égale à trois fois la valeur spécifiée. Si les fichiers journaux de suivi des messages générés par les quatre différents services portent des préfixes de nom différents, la quantité de données et la fréquence d'écriture de ces dernières dans les fichiers journaux <strong>MSGTRKMA</strong> sont négligeables en comparaison des fichiers journaux portant les trois autres préfixes.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > La taille maximale du répertoire des journaux de suivi des messages est calculée comme la taille totale de tous les fichiers journaux dont le nom porte le même préfixe. Les fichiers ne répondant pas à cette convention de préfixe de sont pas comptabilisés dans le calcul de la taille totale du répertoire. La modification du nom d'anciens fichiers journaux ou la copie d'autres fichiers dans le répertoire des journaux de suivi des messages peut avoir pour effet que la taille du répertoire dépasse la taille maximale spécifiée.
+    > Pour les serveurs de boîtes aux lettres Exchange 2013, la taille maximale du répertoire de suivi des messages est égale à trois fois la valeur spécifiée. Si les fichiers journaux de suivi des messages générés par les quatre différents services portent des préfixes de nom différents, la quantité de données et la fréquence d'écriture de ces dernières dans les fichiers journaux <strong>MSGTRKMA</strong> sont négligeables en comparaison des fichiers journaux portant les trois autres préfixes.
 
 
 Les fichiers journaux de suivi des messages sont des fichiers texte contenant des données au format CSV (valeurs séparées par des virgules). Chaque fichier journal de suivi des messages comporte un en-tête avec les informations suivantes :

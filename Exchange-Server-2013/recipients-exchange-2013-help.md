@@ -65,18 +65,8 @@ Le tableau suivant répertorie les types de destinataire disponibles. Tous ces t
 <tr class="odd">
 <td><p>Contact de forêt de messagerie</p></td>
 <td><p>Contact de messagerie qui représente un objet destinataire d'une autre forêt. Les contacts de forêt de messagerie sont généralement créés par la fonctionnalité de synchronisation Microsoft Identity Integration Server (MIIS).</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les contacts de forêt de messagerie sont des objets destinataires mis à jour uniquement à l'aide de MIIS ou d'une synchronisation personnalisée similaire. Vous ne pouvez pas supprimer ni modifier un contact de forêt de messagerie à l’aide du CAE ou de l’environnement de ligne de commande Exchange Management Shell.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les contacts de forêt de messagerie sont des objets destinataires mis à jour uniquement à l'aide de MIIS ou d'une synchronisation personnalisée similaire. Vous ne pouvez pas supprimer ni modifier un contact de forêt de messagerie à l’aide du CAE ou de l’environnement de ligne de commande Exchange Management Shell.
 
 </td>
 </tr>
@@ -141,18 +131,8 @@ Les boîtes aux lettres constituent le type de destinataire le plus couramment u
 
 Chaque boîte aux lettres est constituée d'un utilisateur Active Directory et des données de boîte aux lettres stockées dans la base de données de boîtes aux lettres Exchange (comme indiqué dans la figure suivante). Toutes les données de configuration de la boîte aux lettres sont stockées dans les attributs Exchange de l'objet utilisateur Active Directory. La base de données de boîtes aux lettres contient les données de la boîte aux lettres associée au compte d'utilisateur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous créez une boîte aux lettres pour un nouvel utilisateur ou un utilisateur existant, les attributs Exchange requis pour une boîte aux lettres sont ajoutés à l'objet utilisateur dans Active Directory. Les données de boîte aux lettres associées ne sont créées que lorsque la boîte aux lettres reçoit un message ou que l’utilisateur s’y connecte.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous créez une boîte aux lettres pour un nouvel utilisateur ou un utilisateur existant, les attributs Exchange requis pour une boîte aux lettres sont ajoutés à l'objet utilisateur dans Active Directory. Les données de boîte aux lettres associées ne sont créées que lorsque la boîte aux lettres reçoit un message ou que l’utilisateur s’y connecte.
 
 
 **Composants de boîte aux lettres**
@@ -247,18 +227,8 @@ Les boîtes aux lettres sont créées dans les bases de données de boîtes aux 
 
 Les groupes de distribution sont des objets groupe Active Directory à extension messagerie principalement utilisés pour distribuer des messages à plusieurs destinataires. Tout type de destinataire peut être membre d'un groupe de distribution.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Notez les différences terminologiques entre Active Directory et Exchange. Dans Active Directory, un groupe de distribution correspond à tout groupe sans contexte de sécurité, qu'il soit doté d'une extension messagerie ou non. Dans Exchange, tous les groupes à extension messagerie sont appelés groupes de distribution, qu’ils aient ou non un contexte de sécurité.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Notez les différences terminologiques entre Active Directory et Exchange. Dans Active Directory, un groupe de distribution correspond à tout groupe sans contexte de sécurité, qu'il soit doté d'une extension messagerie ou non. Dans Exchange, tous les groupes à extension messagerie sont appelés groupes de distribution, qu’ils aient ou non un contexte de sécurité.
 
 
 Exchange prend en charge les types de groupe de distribution suivants :
@@ -279,18 +249,8 @@ Les groupes de distribution dynamique sont des groupes de distribution dont l'ap
 
 Contrairement aux groupes de distribution habituels, la liste des membres de ces groupes de distribution dynamiques est calculée chaque fois qu'un message leur est envoyé, en fonction des filtres et conditions spécifiés. Lorsqu’un message électronique est envoyé à un groupe de distribution dynamique, il est remis à tous les destinataires de l’organisation qui correspondent aux critères définis pour ce groupe de distribution dynamique.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Un groupe de distribution dynamique inclut tout destinataire dans Active Directory dont les attributs correspondent au filtre du groupe au moment de l'envoi du message. Si les propriétés d'un destinataire sont modifiées pour correspondre au filtre du groupe, ce destinataire peut involontairement devenir membre du groupe et commencer à recevoir des messages envoyés au groupe de distribution dynamique. Des processus de déploiement de compte cohérents et clairement définis peuvent limiter ce risque.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Un groupe de distribution dynamique inclut tout destinataire dans Active Directory dont les attributs correspondent au filtre du groupe au moment de l'envoi du message. Si les propriétés d'un destinataire sont modifiées pour correspondre au filtre du groupe, ce destinataire peut involontairement devenir membre du groupe et commencer à recevoir des messages envoyés au groupe de distribution dynamique. Des processus de déploiement de compte cohérents et clairement définis peuvent limiter ce risque.
 
 
 Pour faciliter la création de filtres des destinataires pour les groupes de distribution dynamique, vous pouvez utiliser des filtres prédéfinis. Un *filtre prédéfini* est un filtre couramment utilisé qui permet de répondre à de nombreux critères de filtrage des destinataires. Vous pouvez utiliser ces filtres pour spécifier les types de destinataire que vous voulez inclure dans un groupe de distribution dynamique. En outre, vous pouvez également spécifier la liste des conditions que les destinataires doivent satisfaire. Vous pouvez créer des conditions prédéfinies sur la base des propriétés suivantes :

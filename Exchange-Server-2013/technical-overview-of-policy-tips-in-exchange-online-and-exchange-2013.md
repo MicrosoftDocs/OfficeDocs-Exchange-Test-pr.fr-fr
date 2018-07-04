@@ -27,26 +27,11 @@ Chaque fois que vous utilisez l'action de notification de l'expéditeur ou une a
 
 Si les expéditeurs de votre organisation qui sont en train de composer un message sont mis en garde au sujet de vos attentes et de vos normes organisationnelles en temps réel par le biais des notifications de conseil de stratégie, ils sont moins susceptibles d'enfreindre les normes que votre organisation essaie d'appliquer.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Exchange Online : la protection contre la perte de données est une fonctionnalité étendue qui nécessite une licence Exchange Online Plan 2. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Licences Exchange Online</a>.</p></li>
-<li><p>Exchange 2013 : la protection contre la perte de données est une fonctionnalité étendue qui nécessite une licence d’accès client (CAL) Exchange Enterprise. Pour plus d’informations sur les licences d’accès client et les licences par serveur, consultez la rubrique <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Licences Exchange Server</a>.</p></li>
-<li><p>Si votre organisation utilise Exchange 2013 SP1 ou Exchange Online, les conseils de stratégie sont disponibles pour les personnes envoyant du courrier depuis Outlook 2013, Outlook Web App ou OWA pour les périphériques. Cependant, si votre organisation utilise actuellement Exchange 2013, les conseils de stratégie ne sont disponibles que pour les personnes envoyant du courrier électronique depuis Outlook 2013.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]
+> <ul>
+> <li><p>Exchange Online : la protection contre la perte de données est une fonctionnalité étendue qui nécessite une licence Exchange Online Plan 2. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Licences Exchange Online</a>.</p></li>
+> <li><p>Exchange 2013 : la protection contre la perte de données est une fonctionnalité étendue qui nécessite une licence d’accès client (CAL) Exchange Enterprise. Pour plus d’informations sur les licences d’accès client et les licences par serveur, consultez la rubrique <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Licences Exchange Server</a>.</p></li>
+> <li><p>Si votre organisation utilise Exchange 2013 SP1 ou Exchange Online, les conseils de stratégie sont disponibles pour les personnes envoyant du courrier depuis Outlook 2013, Outlook Web App ou OWA pour les périphériques. Cependant, si votre organisation utilise actuellement Exchange 2013, les conseils de stratégie ne sont disponibles que pour les personnes envoyant du courrier électronique depuis Outlook 2013.</p></li></ul>
 
 ## Texte par défaut des Conseils de stratégie et des options de règles
 

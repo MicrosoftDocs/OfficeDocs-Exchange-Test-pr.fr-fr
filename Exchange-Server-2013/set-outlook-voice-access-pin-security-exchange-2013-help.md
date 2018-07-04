@@ -47,18 +47,8 @@ Les paramètres de configuration de code confidentiel que vous pouvez définir d
 
 Le paramètre **Longueur minimale du code confidentiel** indique le nombre minimal de chiffres qu'un code confidentiel de boîte aux lettres doit contenir. La valeur de ce paramètre est comprise entre 4 et 24 et la valeur par défaut est 6. Si vous entrez 0, les utilisateurs ne sont pas obligés d'entrer un code confidentiel.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous vous déconseillons de définir ce paramètre sur 0. Si vous définissez ce paramètre sur zéro (0), vous diminuez considérablement le niveau de sécurité de votre réseau.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Nous vous déconseillons de définir ce paramètre sur 0. Si vous définissez ce paramètre sur zéro (0), vous diminuez considérablement le niveau de sécurité de votre réseau.
 
 
 Si vous modifiez la longueur minimale du code confidentiel pour une valeur supérieure, pour pouvoir continuer, les utilisateurs actuels d'Outlook Voice Access sont invités à créer un code confidentiel respectant le nouveau nombre minimal de chiffres.
@@ -109,18 +99,8 @@ Le paramètre **Nombre de recyclages du code confidentiel** définit le nombre d
 
 Quand vous effectuez la planification des codes confidentiels d'Outlook Voice Access, vous devez choisir les niveaux de sécurité appropriés pour votre organisation. Vous devez porter une attention particulière aux critères de code confidentiel d'Outlook Voice Access et à la conformité de vos paramètres de sécurité de code confidentiel par rapport à la stratégie de sécurité de votre organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il s'agit d'une pratique recommandée en matière de sécurité pour l'implémentation de critères stricts de codes confidentiels destinés aux utilisateurs d'Outlook Voice Access. Cette pratique qui accroît le niveau de sécurité de votre réseau peut être appliquée via la création de stratégies de code confidentiel sur la stratégie de boîte aux lettres de messagerie unifiée qui exigent des codes confidentiels de 6 chiffres ou plus.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il s'agit d'une pratique recommandée en matière de sécurité pour l'implémentation de critères stricts de codes confidentiels destinés aux utilisateurs d'Outlook Voice Access. Cette pratique qui accroît le niveau de sécurité de votre réseau peut être appliquée via la création de stratégies de code confidentiel sur la stratégie de boîte aux lettres de messagerie unifiée qui exigent des codes confidentiels de 6 chiffres ou plus.
 
 
 Après avoir défini les critères de codes confidentiels d'Outlook Voice Access, vous devez créer et configurer une stratégie de boîte aux lettres de messagerie unifiée pour appliquer vos critères de code confidentiel dans votre organisation. Pour plus d'informations sur la création d'une stratégie de boîte aux lettres de messagerie unifiée, consultez la rubrique [Créer une stratégie de boîte aux lettres de messagerie unifiée](create-a-um-mailbox-policy-exchange-2013-help.md). Pour plus d'informations sur la gestion des stratégies de boîte aux lettres de messagerie unifiée, consultez la rubrique [Gérer une stratégie de boîte aux lettres de messagerie unifiée](manage-a-um-mailbox-policy-exchange-2013-help.md).

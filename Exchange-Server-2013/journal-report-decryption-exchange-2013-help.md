@@ -33,18 +33,8 @@ Pour en savoir plus sur la journalisation, voir [Journalisation](journaling-exch
 
 Le déchiffrement du rapport de journalisation permet d’enregistrer en plus des messages protégés par IRM d’origine, une copie déchiffrée de ces messages dans des rapports de journalisation. Si les messages protégés par IRM contiennent des pièces jointes prises en charge préalablement protégées par le cluster AD RMS (Active Directory Rights Management Services) de votre organisation, celles-ci sont également déchiffrées.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour utiliser le déchiffrement du rapport de journalisation, vous devez posséder une licence d’accès client entreprise Exchange. Le déchiffrement du rapport de journalisation ne prend en charge que la journalisation étendue.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour utiliser le déchiffrement du rapport de journalisation, vous devez posséder une licence d’accès client entreprise Exchange. Le déchiffrement du rapport de journalisation ne prend en charge que la journalisation étendue.
 
 
 Le déchiffrement est effectué par l’agent de déchiffrement du rapport de journalisation, un agent de transport axé sur la conformité. Cet agent déclenche l’événement **OnCategorizedMessage**. Les messages protégés en transit qui font appel aux règles de protection du transport sont déjà chiffrés par l’agent de chiffrement, qui déclenche l’événement **OnRoutedMessage**, avant qu’ils ne parviennent à l’agent de déchiffrement du rapport de journalisation. L’agent de déchiffrement du rapport de journalisation déchiffre ces messages.
@@ -63,36 +53,16 @@ L’agent déchiffre les types de message protégés par IRM suivants :
 
   - messages auxquels une protection IRM a été automatiquement appliquée pendant le transit à l’aide de règles de protection du transport.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Seuls les messages auxquels une protection IRM a été appliquée par le serveur AD RMS de votre organisation sont déchiffrés par l’agent de déchiffrement du rapport de journalisation. L’agent ne déchiffre pas les pièces jointes si celles-ci ne sont pas protégées en même temps que le message (et de ce fait ne sont pas soumises à la même licence) ou si un fichier protégé par IRM est joint à un message non protégé.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Seuls les messages auxquels une protection IRM a été appliquée par le serveur AD RMS de votre organisation sont déchiffrés par l’agent de déchiffrement du rapport de journalisation. L’agent ne déchiffre pas les pièces jointes si celles-ci ne sont pas protégées en même temps que le message (et de ce fait ne sont pas soumises à la même licence) ou si un fichier protégé par IRM est joint à un message non protégé.
 
 
 ## Configuration du déchiffrement du rapport de journalisation
 
 Le déchiffrement de rapport de journalisation est configuré à l’aide de la cmdlet [Set-IRMConfiguration](https://technet.microsoft.com/fr-fr/library/dd979792\(v=exchg.150\)) dans l’environnement de ligne de commande Exchange Management Shell. Toutefois, avant de pouvoir configurer le déchiffrement du rapport de journalisation, vous devez attribuer aux serveurs Exchange 2013 les permissions de déchiffrement du contenu faisant l’objet d’une protection IRM appliquée par le serveur AD RMS. Pour ce faire, vous devez ajouter la boîte aux lettres de fédération au groupe de super utilisateurs sur le cluster AD RMS de votre organisation. Pour plus d’informations, consultez la rubrique [Ajouter la boîte aux lettres de fédération au groupe de super utilisateurs AD RMS](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans le cas de déploiements AD RMS inter-forêts où un cluster AD RMS est déployé dans chaque forêt, vous devez ajouter la boîte aux lettres de fédération au groupe de super utilisateurs au cluster AD RMS dans chaque forêt pour permettre au service de transport Exchange 2013 de déchiffrer les messages protégés sur chaque cluster AD RMS.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans le cas de déploiements AD RMS inter-forêts où un cluster AD RMS est déployé dans chaque forêt, vous devez ajouter la boîte aux lettres de fédération au groupe de super utilisateurs au cluster AD RMS dans chaque forêt pour permettre au service de transport Exchange 2013 de déchiffrer les messages protégés sur chaque cluster AD RMS.
 
 
 Pour plus d’informations sur la configuration du déchiffrement du rapport de journalisation, voir [Activer ou désactiver le cryptage de rapport de journal](enable-or-disable-journal-report-decryption-exchange-2013-help.md).

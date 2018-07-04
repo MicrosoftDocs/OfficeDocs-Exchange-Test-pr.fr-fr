@@ -46,18 +46,8 @@ Pour résoudre ce problème, supprimez tous les composants ADC et recommencez l�
 <li><p>Modifiez <strong>Type de démarrage</strong> en <strong>Désactivé</strong>. Au prochain démarrage de l’ordinateur, le service ADC ne sera pas lancé.</p></li>
 <li><p>Cliquez sur <strong>Appliquer</strong>, puis cliquez sur <strong>OK</strong>.</p></li>
 <li><p>L’Assistant Installation d’Active Directory fourni sur le CD-ROM Microsoft Exchange 2000 Server ou Microsoft Exchange Server 2003 permet de désinstaller le service ADC. Ouvrez le dossier \ADC\I386 et double-cliquez sur le programme Setup.exe. Suivez les invites pour <strong>Supprimer tous</strong> les composants du service ADC.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez effectuez l’étape 6 et <strong>Supprimer tous</strong> les composants ADC pour résoudre ce problème. Il ne suffit pas de désactiver le service ADC.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez effectuez l’étape 6 et <strong>Supprimer tous</strong> les composants ADC pour résoudre ce problème. Il ne suffit pas de désactiver le service ADC.
 
 </li>
 </ol></td>

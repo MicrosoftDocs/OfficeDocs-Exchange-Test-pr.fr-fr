@@ -32,18 +32,8 @@ La fonctionnalité IRM suivante est disponible dans Outlook Web App :
     > [!NOTE]
     > La gestion des droits relatifs à l’information dans Outlook Web App protège uniquement les pièces jointes des fichiers pris en charge mentionnés dans cette section. Les pièces jointes qui utilisent des formats de fichier non pris en charge ne sont pas protégées. Lorsque les utilisateurs d’Outlook Web App protègent un message et attachent un fichier dont le format n’est pas pris en charge, une notification s’affiche informant les utilisateurs que seuls les types de fichier pris en charge sont protégés.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>La protection IRM ne peut pas être appliquée à un message qui est déjà signé ou crypté à l’aide du système S/MIME. Pour appliquer la protection IRM, le chiffrement et la signature S/MIME doivent être supprimés à partir du message. Ceci vaut également pour les messages protégés par IRM. Les utilisateurs ne peuvent pas les signer ou les chiffrer en utilisant le système S/MIME.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > La protection IRM ne peut pas être appliquée à un message qui est déjà signé ou crypté à l’aide du système S/MIME. Pour appliquer la protection IRM, le chiffrement et la signature S/MIME doivent être supprimés à partir du message. Ceci vaut également pour les messages protégés par IRM. Les utilisateurs ne peuvent pas les signer ou les chiffrer en utilisant le système S/MIME.
 
 
   - **Lire les messages protégés par IRM**   Les messages protégés par les expéditeurs à l’aide du cluster AD RMS de votre organisation sont rendus dans le volet de visualisation d’Outlook Web App. Aucun complément n’a besoin d’être installé et l’ordinateur n’a pas besoin d’être inscrit dans le déploiement AD RMS. Lorsqu’un utilisateur ouvre un message ou l’affiche dans le volet de visualisation, le message est déchiffré à l’aide de la licence d’utilisation ajoutée par l’agent de pré-licence. Après décryptage, le message s’affiche dans le volet de visualisation. Si une pré-licence n’est pas disponible, Outlook Web App en demande une à partir du serveur AD RMS et rend ensuite le message. Lors de la lecture des pièces jointes protégés par IRM dans Outlook Web App, la technologie d’affichage de document Web-Ready n’est pas disponible.

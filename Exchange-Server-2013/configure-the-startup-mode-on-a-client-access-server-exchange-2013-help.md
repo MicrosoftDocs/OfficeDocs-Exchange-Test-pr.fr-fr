@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2013-02-15_
 
 Vous pouvez spécifier le mode de démarrage du service routeur des appels de messagerie unifiée Microsoft Exchange sur un serveur d'accès au client. Par défaut, le serveur d'accès au client démarre en mode TCP, mais si vous utilisez la sécurité TLS (Transport Layer Security) pour chiffrer le trafic VoIP (Voice over IP), vous devez configurer le serveur d'accès au client pour utiliser le mode TLS ou Double. Nous vous recommandons de configurer les serveurs d'accès au client avec le mode de démarrage Double. En effet, tous les serveurs d'accès au client et de boîtes aux lettres peuvent répondre aux appels entrants pour tous les plans de numérotation de messagerie unifiée, et les paramètres de sécurité de ces plans de numérotation peuvent être différents. Si vous modifiez le mode de démarrage, vous devez redémarrer le service routeur des appels de messagerie unifiée Microsoft Exchange pour que la modification soit prise en compte.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, les serveurs d'accès au client sont disponibles pour répondre aux appels entrants. Vous n'avez pas à ajouter de serveur d'accès au client à un plan de numérotation de messagerie unifiée pour traiter des appels de messagerie unifiée, sauf si vous intégrez une messagerie unifiée à Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, les serveurs d'accès au client sont disponibles pour répondre aux appels entrants. Vous n'avez pas à ajouter de serveur d'accès au client à un plan de numérotation de messagerie unifiée pour traiter des appels de messagerie unifiée, sauf si vous intégrez une messagerie unifiée à Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server.
 
 
 Pour découvrir d'autres tâches de gestion relatives aux serveurs de messagerie unifiée et d'accès au client, consultez les rubriques [Procédures de services de messagerie unifiée](um-services-procedures-exchange-2013-help.md).

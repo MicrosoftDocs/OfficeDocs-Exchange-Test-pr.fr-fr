@@ -55,18 +55,8 @@ Cette rubrique vous explique comment personnaliser les paramètres de stockage d
     
       - **Émettre un avertissement à (Go)**   Ce champ affiche la limite de stockage maximale avant qu’un avertissement ne soit présenté à l’utilisateur. Si la taille de la boîte aux lettres atteint ou dépasse la valeur spécifiée, Exchange envoie un message d’avertissement à l’utilisateur.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Le message associé au quota <strong>Émettre un avertissement</strong> ne sera pas envoyé à l’utilisateur, sauf si la valeur de ce paramètre est supérieure à 50 % de la valeur spécifiée dans le quota <strong>Interdire l’envoi</strong>. Si vous définissez par exemple le quota <strong>Interdire l’envoi</strong> sur 8 Mo, vous devez définir le quota <strong>Émettre un avertissement</strong> sur au moins 4 Mo. Dans le cas contraire, le message de quota <strong>Émettre un avertissement</strong> ne sera pas envoyé.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Le message associé au quota <strong>Émettre un avertissement</strong> ne sera pas envoyé à l’utilisateur, sauf si la valeur de ce paramètre est supérieure à 50 % de la valeur spécifiée dans le quota <strong>Interdire l’envoi</strong>. Si vous définissez par exemple le quota <strong>Interdire l’envoi</strong> sur 8 Mo, vous devez définir le quota <strong>Émettre un avertissement</strong> sur au moins 4 Mo. Dans le cas contraire, le message de quota <strong>Émettre un avertissement</strong> ne sera pas envoyé.
     
       - **Interdire l’envoi à (Go)**   Ce champ affiche la limite d’*interdiction d’envoi* pour la boîte aux lettres. Si la taille de la boîte aux lettres atteint ou dépasse la limite spécifiée, Exchange empêche l’utilisateur d’envoyer de nouveaux messages et affiche un message d’erreur descriptif.
     

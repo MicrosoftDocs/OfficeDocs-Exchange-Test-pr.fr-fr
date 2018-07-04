@@ -53,18 +53,8 @@ Pour enregistrer des invites et messages d'accueil personnalisés à l'aide de l
 
 4.  Activez la boîte aux lettres de l'utilisateur du domaine pour la messagerie unifiée.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Autorisez uniquement les administrateurs qui gèrent les invites et les messages d'accueil à accéder au numéro de poste et au code confidentiel du compte d'utilisateur. Utilisez ce compte d'utilisateur uniquement pour la gestion des invites par téléphone.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Autorisez uniquement les administrateurs qui gèrent les invites et les messages d'accueil à accéder au numéro de poste et au code confidentiel du compte d'utilisateur. Utilisez ce compte d'utilisateur uniquement pour la gestion des invites par téléphone.
 
 
 5.  Créez un fichier .wav ou .wma à utiliser pour le message d'accueil personnalisé du plan de numérotation ou du standard automatique de messagerie unifiée.

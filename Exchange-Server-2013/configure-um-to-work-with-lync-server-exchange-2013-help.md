@@ -21,36 +21,16 @@ Lorsque vous intégrez Microsoft Lync Server à la messagerie unifiée Exchange,
 
   - Il crée une passerelle IP de messagerie unifiée pour chaque pool Lync Server.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le script ExchUcUtil.ps1 crée une ou plusieurs passerelles IP de messagerie unifiée. Vous devez désactiver les appels sortants sur toutes les passerelles IP de messagerie unifiée à l’exception de celle que le script a créée. Ceci inclut la désactivation des appels sortants sur les passerelles IP de messagerie unifiée qui ont été créées avant l’exécution du script. Pour désactiver les appels sortants sur une passerelle IP de messagerie unifiée, consultez la rubrique <a href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">Désactiver les appels sortants sur les passerelles IP de messagerie unifiée</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le script ExchUcUtil.ps1 crée une ou plusieurs passerelles IP de messagerie unifiée. Vous devez désactiver les appels sortants sur toutes les passerelles IP de messagerie unifiée à l’exception de celle que le script a créée. Ceci inclut la désactivation des appels sortants sur les passerelles IP de messagerie unifiée qui ont été créées avant l’exécution du script. Pour désactiver les appels sortants sur une passerelle IP de messagerie unifiée, consultez la rubrique <a href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">Désactiver les appels sortants sur les passerelles IP de messagerie unifiée</a>.
 
 
   - Il crée un groupement de postes de messagerie unifiée pour chaque passerelle IP de messagerie unifiée. L’identificateur de pilote de chaque groupement de postes spécifie le plan de numérotation avec un URI SIP de messagerie unifiée utilisé par le pool frontal Lync Server ou le serveur Standard Edition qui est associé à la passerelle IP de messagerie unifiée.
 
   - Il donne l’autorisation à Lync Server de lire les objets conteneurs de messagerie unifiée Active Directory, tels que les plans de numérotation de messagerie unifiée, les standards automatiques, les passerelles IP de messagerie unifiée et les groupements de postes de messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Chaque forêt de messagerie unifiée doit être configurée pour approuver la forêt dans laquelle Lync Server 2013 est déployé, et vice versa. Si la messagerie unifiée Exchange est installée dans plusieurs forêts, les étapes d’intégration d’Exchange Server doivent être effectuées pour chaque forêt de messagerie unifiée ou vous devrez spécifier le domaine Lync Server. Par exemple, <em>ExchUcUtil.ps1 –Forest:&lt;lync-domain-controller-fqdn&gt;</em>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Chaque forêt de messagerie unifiée doit être configurée pour approuver la forêt dans laquelle Lync Server 2013 est déployé, et vice versa. Si la messagerie unifiée Exchange est installée dans plusieurs forêts, les étapes d’intégration d’Exchange Server doivent être effectuées pour chaque forêt de messagerie unifiée ou vous devrez spécifier le domaine Lync Server. Par exemple, <em>ExchUcUtil.ps1 –Forest:&lt;lync-domain-controller-fqdn&gt;</em>.
 
 
 Pour découvrir des tâches de gestion supplémentaires liées à l’intégration de Lync Server et de la messagerie unifiée, consultez la rubrique [Présentation du déploiement de la messagerie unifiée Exchange 2013 et de Lync Server](deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help.md).
@@ -71,32 +51,12 @@ Pour découvrir des tâches de gestion supplémentaires liées à l’intégrati
 
 Exécutez le script ExchUcUtil.ps1 sur n’importe quel serveur Exchange de votre organisation qui est dans la même topologie que Microsoft Lync Server. Vous pouvez exécuter le script à partir d’un serveur de boîtes aux lettres en utilisant l’environnement Shell ou vous pouvez l’exécuter à l’aide de Remote Windows PowerShell sur un serveur d’accès au client. Si vous exécutez le script sur un serveur d’accès au client de votre organisation, le serveur d’accès au client redirigera via proxy la session Remote Windows PowerShell vers un serveur de boîtes aux lettres dans l’organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le script ExchUcUtil.ps1 crée une ou plusieurs passerelles IP de messagerie unifiée. Vous devez désactiver les appels sortants sur toutes les passerelles IP de messagerie unifiée à l’exception de celle que le script a créée. Ceci inclut la désactivation des appels sortants sur les passerelles IP de messagerie unifiée qui ont été créées avant l’exécution du script. Pour désactiver les appels sortants sur une passerelle IP de messagerie unifiée, consultez la rubrique <a href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">Désactiver les appels sortants sur les passerelles IP de messagerie unifiée</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le script ExchUcUtil.ps1 crée une ou plusieurs passerelles IP de messagerie unifiée. Vous devez désactiver les appels sortants sur toutes les passerelles IP de messagerie unifiée à l’exception de celle que le script a créée. Ceci inclut la désactivation des appels sortants sur les passerelles IP de messagerie unifiée qui ont été créées avant l’exécution du script. Pour désactiver les appels sortants sur une passerelle IP de messagerie unifiée, consultez la rubrique <a href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">Désactiver les appels sortants sur les passerelles IP de messagerie unifiée</a>.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez avoir les autorisations du rôle Gestion de l’organisation Exchange ou être membre du groupe de sécurité Administrateurs d’organisation Exchange pour exécuter le script.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez avoir les autorisations du rôle Gestion de l’organisation Exchange ou être membre du groupe de sécurité Administrateurs d’organisation Exchange pour exécuter le script.
 
 
 1.  Ouvrez l’environnement de ligne de commande Exchange Management Shell.

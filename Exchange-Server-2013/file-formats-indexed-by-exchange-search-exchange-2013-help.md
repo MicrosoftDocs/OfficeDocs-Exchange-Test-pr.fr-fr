@@ -31,18 +31,8 @@ Quand vous gérez ou utilisez le service de recherche Exchange et les fonctionna
 
   - **Formats de fichiers désactivés** Dans les organisations locales, un administrateur peut désactiver l'indexation d'un format de fichier spécifique. Les messages contenant une pièce jointe d’un format désactivé ne sont pas renvoyés comme éléments impossibles à rechercher.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Même si une pièce jointe de message peut être impossible à rechercher ou est dans un format de fichier ne pouvant pas être indexé, l’objet du message, le corps du message et d’autres métadonnées peuvent être indexés pour que le message puisse être renvoyé dans les recherches.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Même si une pièce jointe de message peut être impossible à rechercher ou est dans un format de fichier ne pouvant pas être indexé, l’objet du message, le corps du message et d’autres métadonnées peuvent être indexés pour que le message puisse être renvoyé dans les recherches.
 
 
 Pour les autres tâches de gestion relatives au service de recherche Exchange dans des organisations locales, consultez la rubrique [Procédures relatives au service de recherche Exchange](exchange-search-procedures-exchange-2013-help.md).

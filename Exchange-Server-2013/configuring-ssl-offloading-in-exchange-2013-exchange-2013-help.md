@@ -186,18 +186,8 @@ Le déchargement SSL pour Outlook Anywhere est activé par défaut. Les clients 
     
       - À l’aide du Gestionnaire des services IIS : dans le Gestionnaires des services IIS, dans le volet **Actions**, cliquez sur **Redémarrer**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez attendre l’application (toutes les 15 minutes) par le processus hôte de service des éventuelles modifications d’Active Directory à IIS, même si vous redémarrez IIS sur un serveur d’accès client.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez attendre l’application (toutes les 15 minutes) par le processus hôte de service des éventuelles modifications d’Active Directory à IIS, même si vous redémarrez IIS sur un serveur d’accès client.
 
 
 Revenir en haut

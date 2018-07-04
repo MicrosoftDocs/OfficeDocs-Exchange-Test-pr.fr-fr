@@ -103,18 +103,8 @@ Après avoir utilisé AD RMS pour mettre en place un groupe de super utilisateur
 
   - Exécutez la commande PowerShell suivante sur un serveur AD RMS pour récupérer le groupe de super utilisateurs :
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le module ADRMSAdmin PowerShell est disponible dans Windows Server 2008 R2 et version ultérieure.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le module ADRMSAdmin PowerShell est disponible dans Windows Server 2008 R2 et version ultérieure.
     
         Import-Module ADRMSAdmin
         New-PSDrive -Name MyRmsAdmin -PsProvider AdRmsAdmin -Root https://localhost 

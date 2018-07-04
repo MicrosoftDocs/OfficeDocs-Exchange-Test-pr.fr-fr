@@ -72,18 +72,8 @@ Le déploiement du pack de filtres Office 2010 s’articule en deux étapes prin
 
   - La modification du Registre afin que les IFilters soient également homologués dans Exchange 2013. Cela permet à Exchange de prendre en charge l’analyse des pièces jointes pour les formats de fichier.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez effectuer cette procédure sur tous les serveurs de boîtes aux lettres de votre organisation.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez effectuer cette procédure sur tous les serveurs de boîtes aux lettres de votre organisation.
 
 
 1.  Téléchargez et enregistrez le pack de filtres Microsoft Office 2010 (`FilterPack64bit.exe`) à partir du [Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?linkid=191548).
@@ -172,18 +162,8 @@ Pour vérifier que vous avez bien enregistré les iFilters du pack de filtres Mi
 
 Vous pouvez étendre la capacité d’analyse des pièces joints à d’autres types de fichiers en enregistrant des iFilters tiers supplémentaires. La prise en charge de fichiers supplémentaires peut être ajoutée en installant et en enregistrant l’iFilter du type de fichier sur chacun de vos serveurs de boîtes aux lettres.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft n’a pas testé d’IFilters tiers avec des règles de transport. Par conséquent, il est recommandé de déployer et de tester tous les IFilters tiers dans un environnement de test avant de déployer votre environnement de production.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Microsoft n’a pas testé d’IFilters tiers avec des règles de transport. Par conséquent, il est recommandé de déployer et de tester tous les IFilters tiers dans un environnement de test avant de déployer votre environnement de production.
 
 
 ## Déploiement de l’iFilter Adobe PDF

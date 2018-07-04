@@ -23,18 +23,8 @@ Dans Exchange Server 2013, nous avons déplacé les dossiers publics d’une a
 
 Le tableau ci-dessous répertorie les limites des dossiers publics dans Exchange Server 2013 local. À moins qu’il soit spécifiquement indiqué que les limites sont recommandées, les valeurs répertoriées dans ce tableau sont les limites prises en charge pour les dossiers publics.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous recherchez les limites d’Exchange Online pour Office 365 ? Consultez la rubrique <a href="https://go.microsoft.com/fwlink/?linkid=391188">Limites d’Exchange Online</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous recherchez les limites d’Exchange Online pour Office 365 ? Consultez la rubrique <a href="https://go.microsoft.com/fwlink/?linkid=391188">Limites d’Exchange Online</a>.
 
 
 

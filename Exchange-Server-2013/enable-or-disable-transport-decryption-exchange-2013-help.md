@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2016-12-09_
 
 Décryptage de transport activation permet à l’agent de règles de Transport sur Microsoft Exchange Server 2013 des serveurs de boîtes aux lettres accéder au contenu de messages protégés par Information Rights Management (IRM). Par conséquent, autres agents de transport peuvent accéder au contenu du message et éventuellement apporter des modifications. Par exemple, l’agent de règles de Transport devrez inspecter le contenu du message et d’appliquer des règles de transport (par exemple, les règles qui s’appliquent d’une décharge de responsabilité au message). Pour déchiffrer les messages protégés par IRM avec succès, vous devez ajouter la boîte aux lettres fédéré de remise pour le groupe de super utilisateurs configuré sur votre serveur de [Services AD RMS (Active Directory Rights Management Services) (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx) .
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une licence d’utilisation propriétaire est accordée aux membres du groupe de super utilisateurs lorsque ces derniers en font la demande à partir du cluster AD RMS. Cela leur permet de déchiffrer tout le contenu protégé par IRM qui a été créé par ce cluster.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Une licence d’utilisation propriétaire est accordée aux membres du groupe de super utilisateurs lorsque ces derniers en font la demande à partir du cluster AD RMS. Cela leur permet de déchiffrer tout le contenu protégé par IRM qui a été créé par ce cluster.
 
 
 Lors de l’activation du déchiffrement du transport, vous pouvez spécifier les paramètres suivants :

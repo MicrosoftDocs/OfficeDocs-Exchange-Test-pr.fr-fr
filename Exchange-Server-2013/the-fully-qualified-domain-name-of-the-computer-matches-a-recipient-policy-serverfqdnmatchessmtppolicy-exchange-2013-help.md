@@ -39,18 +39,8 @@ Pour résoudre ce problème, renommez l'ordinateur local. Vous pouvez également
 
 4.  Cliquez sur **OK** pour fermer la boîte de dialogue **Propriétés système**. Vous êtes invité à redémarrer votre ordinateur pour appliquer les modifications.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si l’ordinateur que vous souhaitez renommer est un contrôleur de domaine, consultez la rubrique sur la modification du nom d’un contrôleur de domaine (<a href="https://go.microsoft.com/fwlink/?linkid=66828">https://go.microsoft.com/fwlink/?LinkId=66828</a>).</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si l’ordinateur que vous souhaitez renommer est un contrôleur de domaine, consultez la rubrique sur la modification du nom d’un contrôleur de domaine (<a href="https://go.microsoft.com/fwlink/?linkid=66828">https://go.microsoft.com/fwlink/?LinkId=66828</a>).
 
 
 **Pour modifier l'adresse SMTP d'une stratégie de destinataire**

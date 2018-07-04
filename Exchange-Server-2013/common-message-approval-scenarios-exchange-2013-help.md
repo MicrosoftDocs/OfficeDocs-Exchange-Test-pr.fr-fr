@@ -65,18 +65,8 @@ Voici un exemple dans lequel tous les messages envoyés par un stagiaire, Garth 
 
 Pour commencer, accédez au CAE \> **Flux de messagerie** \> **Règles**, puis créez une règle à l’aide du modèle **Envoyer des messages à un modérateur**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Certaines conditions et actions, y compris le transfert vers le responsable de l’expéditeur, sont masquées par défaut sur la page <strong>Nouvelle règle</strong>. Pour voir toutes les conditions et actions, sélectionnez <strong>Plus d’options</strong>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Certaines conditions et actions, y compris le transfert vers le responsable de l’expéditeur, sont masquées par défaut sur la page <strong>Nouvelle règle</strong>. Pour voir toutes les conditions et actions, sélectionnez <strong>Plus d’options</strong>.
 
 
 ## Exemple 3 : Configurer une chaîne d’approbation des messages

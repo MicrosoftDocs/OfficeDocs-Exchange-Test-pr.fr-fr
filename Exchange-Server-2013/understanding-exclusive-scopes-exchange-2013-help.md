@@ -33,18 +33,8 @@ Une fois que l’attribution a été créée, l’étendue exclusive autorise l�
 
 Pour plus d’informations sur les filtres d’étendue de gestion, voir [Présentation des filtres d’attribution du rôle de gestion](understanding-management-role-scope-filters-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les délais de réplication Active Directory doivent être pris en compte lorsque vous apportez des modifications à des composants de rôle de gestion, y compris aux étendues exclusives.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les délais de réplication Active Directory doivent être pris en compte lorsque vous apportez des modifications à des composants de rôle de gestion, y compris aux étendues exclusives.
 
 
 Si des objets sont contenus dans plusieurs étendues exclusives, le fait d’appartenir à l’une des étendues exclusives permet d’accéder aux objets. Pour plus d’informations, consultez la section Exclusive and regular scope interaction plus loin dans cette rubrique.

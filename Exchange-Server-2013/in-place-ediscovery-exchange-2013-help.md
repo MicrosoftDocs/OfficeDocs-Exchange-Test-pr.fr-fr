@@ -57,18 +57,8 @@ Limites et stratégies de limitation des découvertes électroniques locales
 
 Documentation relative à la découverte électronique locale
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La découverte électronique locale est une fonctionnalité puissante qui permet à un utilisateur disposant des autorisations appropriées de recevoir potentiellement l'accès à tous les enregistrements de messagerie stockés dans l'organisation Exchange 2013 ou Exchange Online. Il est essentiel de contrôler et de surveiller les activités de découverte, notamment l'ajout de membres au groupe de rôles Gestion de la découverte, l'attribution du rôle de gestion Recherche de boîte aux lettres et l'attribution de l'autorisation d'accès aux boîtes aux lettres de découverte.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La découverte électronique locale est une fonctionnalité puissante qui permet à un utilisateur disposant des autorisations appropriées de recevoir potentiellement l'accès à tous les enregistrements de messagerie stockés dans l'organisation Exchange 2013 ou Exchange Online. Il est essentiel de contrôler et de surveiller les activités de découverte, notamment l'ajout de membres au groupe de rôles Gestion de la découverte, l'attribution du rôle de gestion Recherche de boîte aux lettres et l'attribution de l'autorisation d'accès aux boîtes aux lettres de découverte.
 
 
 ## Fonctionnement de la découverte électronique locale
@@ -103,18 +93,8 @@ Pour que les utilisateurs autorisés puissent effectuer des recherches de décou
 
 Par défaut, les autorisations pour exécuter des tâches relatives à la découverte électronique locale ne sont attribuées à aucun utilisateur ni administrateur Exchange. Les administrateurs Exchange membres du groupe de rôles Gestion de l'organisation peuvent ajouter des utilisateurs au groupe de rôles Gestion de la découverte et créer des groupes de rôles personnalisés pour restreindre l'étendue d'un gestionnaire de découverte à un sous-ensemble d'utilisateurs. Pour plus d'informations sur l'ajout d'utilisateurs au groupe de rôles Gestion de la découverte, consultez la rubrique [Attribution d’autorisations eDiscovery dans Exchange](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si un utilisateur n'a pas été ajouté au groupe de rôles Gestion de la découverte ou n'a pas reçu le rôle Recherche de boîte aux lettres, l'interface utilisateur <strong>Découverte électronique et archive permanente</strong> n'est pas affichée dans le CAE et les cmdlets de découverte électronique locale ne sont pas disponibles dans l'environnement de ligne de commande Exchange Management Shell.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si un utilisateur n'a pas été ajouté au groupe de rôles Gestion de la découverte ou n'a pas reçu le rôle Recherche de boîte aux lettres, l'interface utilisateur <strong>Découverte électronique et archive permanente</strong> n'est pas affichée dans le CAE et les cmdlets de découverte électronique locale ne sont pas disponibles dans l'environnement de ligne de commande Exchange Management Shell.
 
 
 L'audit des modifications apportées au rôle RBAC, activé par défaut, permet de s'assurer que les enregistrements adéquats sont conservés de manière à suivre l'attribution du groupe de rôles Gestion de la découverte. Vous pouvez utiliser le rapport de groupe de rôles d’administrateur pour rechercher des modifications apportées aux groupes de rôles d’administrateur. Pour plus d’informations, consultez la rubrique [Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md).
@@ -229,20 +209,10 @@ Quand vous utilisez la découverte électronique locale, considérez également 
 
   - **Éléments protégés par IRM**   Les messages protégés par la Gestion des droits relatifs à l'information (IRM) sont indexés par le service de recherche Exchange et donc inclus dans les résultats de la recherche s'ils correspondent aux paramètres de la requête. Les messages doivent être protégés en utilisant un cluster Active Directory Rights Management Services (AD RMS) dans la même forêt Active Directory que celle du serveur de boîtes aux lettres. Pour plus d'informations, consultez la rubrique [Gestion des droits relatifs à l’information](information-rights-management-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si le service de recherche Exchange ne parvient pas à indexer un message protégé par IRM, que ce soit en raison d'une erreur de déchiffrement ou de la désactivation de la fonctionnalité IRM, le message protégé n'est pas ajouté à la liste des éléments défaillants. Si vous choisissez d'inclure les éléments impossibles à rechercher dans les résultats de la recherche, il est possible que ces derniers n'incluent pas les messages protégés par IRM qui n'ont pas pu être déchiffrés.<br />
-    Pour inclure les messages protégés par IRM dans une recherche, vous pouvez créer une autre recherche pour inclure des messages comportant des pièces jointes .rpmsg. Vous pouvez utiliser la chaîne de requête <code>attachment:rpmsg</code> pour rechercher tous les messages protégés par IRM dans les boîtes aux lettres spécifiées, qu'elles soient correctement indexées ou pas. Il peut en résulter une duplication des résultats de la recherche dans des scénarios où une recherche renvoie des messages correspondant aux critères de recherche, notamment des messages protégés par IRM qui ont été correctement indexés. La recherche ne renvoie pas les messages protégés par IRM qui n'ont pas pu être indexés.<br />
-    L'exécution d'une deuxième recherche pour tous les messages protégés inclut également les messages protégés par IRM ayant été correctement indexés et renvoyés lors de la première recherche. De plus, il est possible que les messages protégés par IRM renvoyés lors de la deuxième recherche ne correspondent pas aux critères de la recherche, tels que les mots clés utilisés pour la première recherche.</td>
-    </tr>
-    </tbody>
-    </table>
+	> [!IMPORTANT]
+    > Si le service de recherche Exchange ne parvient pas à indexer un message protégé par IRM, que ce soit en raison d'une erreur de déchiffrement ou de la désactivation de la fonctionnalité IRM, le message protégé n'est pas ajouté à la liste des éléments défaillants. Si vous choisissez d'inclure les éléments impossibles à rechercher dans les résultats de la recherche, il est possible que ces derniers n'incluent pas les messages protégés par IRM qui n'ont pas pu être déchiffrés.
+    > Pour inclure les messages protégés par IRM dans une recherche, vous pouvez créer une autre recherche pour inclure des messages comportant des pièces jointes .rpmsg. Vous pouvez utiliser la chaîne de requête <code>attachment:rpmsg</code> pour rechercher tous les messages protégés par IRM dans les boîtes aux lettres spécifiées, qu'elles soient correctement indexées ou pas. Il peut en résulter une duplication des résultats de la recherche dans des scénarios où une recherche renvoie des messages correspondant aux critères de recherche, notamment des messages protégés par IRM qui ont été correctement indexés. La recherche ne renvoie pas les messages protégés par IRM qui n'ont pas pu être indexés.
+    > L'exécution d'une deuxième recherche pour tous les messages protégés inclut également les messages protégés par IRM ayant été correctement indexés et renvoyés lors de la première recherche. De plus, il est possible que les messages protégés par IRM renvoyés lors de la deuxième recherche ne correspondent pas aux critères de la recherche, tels que les mots clés utilisés pour la première recherche.
 
 
   - **Déduplication**   Quand vous copiez des résultats de recherche dans une boîte aux lettres de découverte, vous pouvez activer la *déduplication* des résultats de la recherche pour ne copier qu'une seule instance d'un message unique dans la boîte aux lettres de découverte. Les avantages de la déduplication sont les suivants :
@@ -329,54 +299,24 @@ Dans Exchange 2013, vous pouvez utiliser le nouvel Assistant **Découverte éle
 
 Quand un employé quitte une organisation, la boîte aux lettres est habituellement désactivée ou supprimée. Après avoir été désactivée, une boîte aux lettres est déconnectée du compte d'utilisateur, mais demeure dans la boîte aux lettres pendant une certaine période (30 jours par défaut). L'Assistant Dossier géré ne traite pas les boîtes aux lettres déconnectées et aucune stratégie de rétention n'est appliquée durant cette période. Vous ne pouvez pas rechercher le contenu d'une boîte aux lettres déconnectée. Quand la période de rétention de la boîte aux lettres supprimée configurée pour la base de données de boîtes aux lettres est écoulée, la boîte aux lettres est purgée de la base de données des boîtes aux lettres.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange Online, la découverte électronique locale peut rechercher du contenu dans les boîtes aux lettres inactives. Les boîtes aux lettres inactives sont des boîtes aux lettres placées en archive permanente ou mises en attente pour litige avant d'être supprimées. Les boîtes aux lettres inactives sont conservées tant qu’elles sont mises en attente. Quand l'état Archive permanente ou Mise en attente pour litige est enlevé pour une boîte aux lettres, cette dernière est définitivement supprimée. Pour plus d’informations, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/dn144876(v=exchg.150)">Gestion des boîtes aux lettres inactives dans Exchange Online</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange Online, la découverte électronique locale peut rechercher du contenu dans les boîtes aux lettres inactives. Les boîtes aux lettres inactives sont des boîtes aux lettres placées en archive permanente ou mises en attente pour litige avant d'être supprimées. Les boîtes aux lettres inactives sont conservées tant qu’elles sont mises en attente. Quand l'état Archive permanente ou Mise en attente pour litige est enlevé pour une boîte aux lettres, cette dernière est définitivement supprimée. Pour plus d’informations, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/dn144876(v=exchg.150)">Gestion des boîtes aux lettres inactives dans Exchange Online</a>.
 
 
 Dans un déploiement local, si votre organisation requiert que des paramètres de conservation soient appliqués à des messages d'employés qui ne font plus partie de l'organisation ou si vous avez besoin de conserver la boîte aux lettres d'un ancien employé pour une recherche de découverte électronique en cours ou future, vous ne devez ni désactiver, ni supprimer la boîte aux lettres. Vous pouvez prendre les mesures suivantes pour garantir que la boîte aux lettres ne soit pas accessible et que de nouveaux messages n'y soient pas remis.
 
 1.  Désactivez le compte d'utilisateur Active Directory avec les **Utilisateurs & ordinateurs Active Directory** ou bien d'autres outils ou scripts Active Directory ou d'attribution de privilèges d'accès aux comptes. Ceci empêche la connexion à des boîtes aux lettres en utilisant le compte d'utilisateur associé.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les utilisateurs disposant d'une autorisation d'accès total aux boîtes aux lettres conservent l'accès aux boîtes aux lettres. Pour empêcher l'accès des autres utilisateurs, vous devez supprimer leur autorisation d'accès total de la boîte aux lettres. Pour obtenir des informations sur la suppression des autorisations d'accès total aux boîtes aux lettres, consultez la rubrique <a href="manage-permissions-for-recipients-exchange-online-help.md">Gestion des autorisations des destinataires</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les utilisateurs disposant d'une autorisation d'accès total aux boîtes aux lettres conservent l'accès aux boîtes aux lettres. Pour empêcher l'accès des autres utilisateurs, vous devez supprimer leur autorisation d'accès total de la boîte aux lettres. Pour obtenir des informations sur la suppression des autorisations d'accès total aux boîtes aux lettres, consultez la rubrique <a href="manage-permissions-for-recipients-exchange-online-help.md">Gestion des autorisations des destinataires</a>.
 
 
 2.  Définissez une très petite taille limite des messages pouvant être envoyés ou reçus par l'utilisateur de la boîte aux lettres, par exemple 1 Ko. Ceci empêche la remise de nouveaux messages en direction et en provenance de la boîte aux lettres. Pour plus d'informations, consultez la rubrique [Configurer des limites de taille de messages pour une boîte aux lettres](configure-message-size-limits-for-a-mailbox-exchange-2013-help.md).
 
 3.  Configurez les restrictions de remise pour la boîte aux lettres de manière à ce que personne ne puisse lui envoyer de messages. Pour plus d'informations, consultez la rubrique [Configurer les restrictions de remise de message pour une boîte aux lettres](configure-message-delivery-restrictions-for-a-mailbox-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez prendre les mesures ci-dessous en liaison avec tous les autres processus de gestion de compte requis, mais sans désactiver ou supprimer la boîte aux lettres ou le compte d'utilisateur associé.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez prendre les mesures ci-dessous en liaison avec tous les autres processus de gestion de compte requis, mais sans désactiver ou supprimer la boîte aux lettres ou le compte d'utilisateur associé.
 
 
 Quand vous prévoyez d'implémenter la rétention de boîtes aux lettres pour la gestion de la rétention (MRM) ou la découverte électronique locale des messages, vous devez tenir compte de la rotation des employés. La rétention à long terme de boîtes aux lettres d'anciens employés nécessitera un stockage supplémentaire sur les serveurs de boîtes aux lettres et entraînera également une augmentation de la base de données Active Directory, étant donné que le compte d'utilisateur associé devra être retenu pendant la même durée. Des modifications de l'attribution des privilèges d'accès aux comptes et des processus de gestion dans votre organisation seront en outre nécessaires.

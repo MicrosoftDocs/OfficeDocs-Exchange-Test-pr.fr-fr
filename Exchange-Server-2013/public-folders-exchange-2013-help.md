@@ -111,18 +111,8 @@ La hiérarchie de dossiers publics contient les propriétés des dossiers et des
 
 Le processus de synchronisation de la hiérarchie de dossiers publics utilise une méthode de synchronisation des changements incrémentielle (ICS), mécanisme permettant de surveiller et de synchroniser les modifications apportées à la hiérarchie ou au contenu d'une banque d'informations Exchange. Ces modifications incluent la création, la modification et la suppression de dossiers et de messages. Lorsque des utilisateurs sont connectés à des boîtes aux lettres de contenu et les utilisent, une synchronisation a lieu toutes les 15 minutes. Si aucun utilisateur n'est connecté à une boîte aux lettres de contenu, la synchronisation a lieu moins souvent (toutes les 24 heures). Si une opération d'écriture, telle la création d'un dossier, est effectuée sur la hiérarchie principale, la synchronisation a lieu immédiatement (de façon synchrone) sur la boîte aux lettres de contenu.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Étant donné qu'il n'existe qu'une seule copie accessible en écriture de la hiérarchie, la création de dossier est transmise en proxy à la boîte aux lettres de la hiérarchie par la boîte aux lettres de contenu à laquelle les utilisateurs sont connectés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Étant donné qu'il n'existe qu'une seule copie accessible en écriture de la hiérarchie, la création de dossier est transmise en proxy à la boîte aux lettres de la hiérarchie par la boîte aux lettres de contenu à laquelle les utilisateurs sont connectés.
 
 
 Dans une grande organisation, lorsque vous créez une boîte aux lettres de dossiers publics, la hiérarchie doit se synchroniser sur ce dossier public avant que des utilisateurs puissent s'y connecter. Autrement, les utilisateurs peuvent voir une structure de dossiers publics incomplète en se connectant avec Outlook. Pour laisser le temps nécessaire à la synchronisation sans que des utilisateurs tentent de se connecter à la nouvelle boîte aux lettres de dossiers publics, définissez le paramètre *IsExcludedFromServingHierarchy* sur la cmdlet **New-Mailbox** lors de la création de la boîte aux lettres de dossiers publics. Ce paramètre empêche les utilisateurs de se connecter à la boîte aux lettres de dossiers publics nouvellement créé. Une fois la synchronisation terminée, exécutez la cmdlet [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)) avec le paramètre *IsExcludedFromServingHierarchy* défini sur `false`, indiquant que la boîte aux lettres de dossiers publics est prête pour connexion. Vous pouvez également utiliser la cmdlet [Get-PublicFolderMailboxDiagnostics](https://technet.microsoft.com/fr-fr/library/jj218720\(v=exchg.150\)) pour afficher l'état de synchronisation par les propriétés *SyncInfo* et *AssistantInfo*.

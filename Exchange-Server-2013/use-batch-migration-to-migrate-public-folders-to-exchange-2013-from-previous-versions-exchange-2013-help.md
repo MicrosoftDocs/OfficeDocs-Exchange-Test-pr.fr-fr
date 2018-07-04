@@ -171,18 +171,8 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
     
     Une demande de migration existante peut être de deux types : migration par lots ou en série. Les commandes permettant de détecter les demandes pour chaque type et de supprimer des demandes de chaque type sont les suivantes :
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Avant de supprimer une demande de migration, il est important de comprendre la raison de son existence. L’exécution des commandes suivantes déterminera le moment de la création de la demande précédente et vous permettra de diagnostiquer les problèmes qui ont pu se produire. Pour déterminer la raison du changement, il se peut que vous deviez communiquer avec d’autres administrateurs de votre organisation.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Avant de supprimer une demande de migration, il est important de comprendre la raison de son existence. L’exécution des commandes suivantes déterminera le moment de la création de la demande précédente et vous permettra de diagnostiquer les problèmes qui ont pu se produire. Pour déterminer la raison du changement, il se peut que vous deviez communiquer avec d’autres administrateurs de votre organisation.
     
     L’exemple suivant permet de détecter les demandes de migration en série existantes.
     
@@ -390,18 +380,8 @@ Une fois la migration des dossiers publics finalisée, vous devez exécuter le t
     
         Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>N’utilisez pas le paramètre <em>IsExcludedFromServingHierarchy</em> après la validation de la migration initiale, car ce paramètre est utilisé par le service de gestion automatisée du stockage pour Exchange Online.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > N’utilisez pas le paramètre <em>IsExcludedFromServingHierarchy</em> après la validation de la migration initiale, car ce paramètre est utilisé par le service de gestion automatisée du stockage pour Exchange Online.
 
 
 4.  Sur le serveur Exchange hérité, exécutez la commande suivante pour indiquer que la migration de dossiers publics est terminée :

@@ -23,29 +23,14 @@ La récupération d’un serveur Exchange perdu s’effectue souvent à l’aide
 
 Cette rubrique vous explique comment récupérer un serveur Exchange 2013 perdu qui n’est pas membre d’un groupe de disponibilité de base de données (DAG). Pour obtenir des instructions détaillées sur la récupération d’un serveur qui était membre d’un groupe de disponibilité de base de données, voir [Récupérer un serveur membre de groupe de disponibilité de la base de données](recover-a-database-availability-group-member-server-exchange-2013-help.md).
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si Exchange est installé à un autre emplacement que celui défini par défaut, vous devez utiliser le commutateur <em>/TargetDir</em> afin de spécifier l’emplacement des fichiers binaires Exchange. Si vous n’utilisez pas le commutateur <em>/TargetDir</em>, les fichiers Exchange sont installés à l’emplacement par défaut (%programfiles%\Microsoft\Exchange Server\V15).<br />
+> [!NOTE]
+> Si Exchange est installé à un autre emplacement que celui défini par défaut, vous devez utiliser le commutateur <em>/TargetDir</em> afin de spécifier l’emplacement des fichiers binaires Exchange. Si vous n’utilisez pas le commutateur <em>/TargetDir</em>, les fichiers Exchange sont installés à l’emplacement par défaut (%programfiles%\Microsoft\Exchange Server\V15).<br />
 Pour déterminer l’emplacement d’installation, procédez comme suit :
-<ol>
-<li><p>Ouvrez ADSIEDIT.MSC ou LDP.EXE.</p></li>
-<li><p>Accédez à l’emplacement suivant : <strong>CN=ExServerName,CN=Servers,CN=First Administrative Group,CN=Administrative Groups,CN=ExOrg Name,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=DomainName,CN=Com</strong></p></li>
-<li><p>Cliquez avec le bouton droit sur l’objet serveur Exchange, puis cliquez sur <strong>Propriétés</strong>.</p></li>
-<li><p>Recherchez l’attribut <strong>msExchInstallPath</strong>. Cet attribut contient le chemin d’installation actuel.</p></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
-
+> <ol>
+> <li><p>Ouvrez ADSIEDIT.MSC ou LDP.EXE.</p></li>
+> <li><p>Accédez à l’emplacement suivant : <strong>CN=ExServerName,CN=Servers,CN=First Administrative Group,CN=Administrative Groups,CN=ExOrg Name,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=DomainName,CN=Com</strong></p></li>
+> <li><p>Cliquez avec le bouton droit sur l’objet serveur Exchange, puis cliquez sur <strong>Propriétés</strong>.</p></li>
+> <li><p>Recherchez l’attribut <strong>msExchInstallPath</strong>. Cet attribut contient le chemin d’installation actuel.</p></li></ol>
 
 Souhaitez-vous rechercher d’autres tâches de gestion relatives à la sauvegarde et la restauration des données ? Consultez la rubrique [Sauvegarde, restauration et récupération d’urgence](backup-restore-and-disaster-recovery-exchange-2013-help.md).
 

@@ -23,26 +23,11 @@ Les dossiers publics sont conçus pour assurer un accès partagé et offrir une 
 
 Par défaut, un dossier public hérite des paramètres de son dossier parent, y compris les paramètres d'autorisations.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour plus d’informations sur les limites et les quotas de stockage pour les dossiers publics, consultez les rubriques suivantes :
-<ul>
-<li><p>Pour les dossiers publics dans Office 365, voir <a href="https://go.microsoft.com/fwlink/?linkid=391188">Limites d’Exchange Online</a>.</p></li>
-<li><p>Pour les dossiers publics dans Exchange Server 2013 sur site, voir <a href="limits-for-public-folders-exchange-2013-help.md">Limites pour les dossiers publics</a>.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]
+> Pour plus d’informations sur les limites et les quotas de stockage pour les dossiers publics, consultez les rubriques suivantes :
+> <ul>
+> <li><p>Pour les dossiers publics dans Office 365, voir <a href="https://go.microsoft.com/fwlink/?linkid=391188">Limites d’Exchange Online</a>.</p></li>
+> <li><p>Pour les dossiers publics dans Exchange Server 2013 sur site, voir <a href="limits-for-public-folders-exchange-2013-help.md">Limites pour les dossiers publics</a>.</p></li></ul>
 
 Pour d'autres tâches de gestion relatives à la gestion des dossiers publics, consultez la rubrique [Procédures relatives aux dossiers publics](public-folder-procedures-exchange-2013-help.md).
 
@@ -72,18 +57,8 @@ Lorsque vous utilisez le Centre d’administration Exchange (CAE) pour créer un
 
 4.  Dans **Dossier public**, entrez le nom du dossier public.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>N'utilisez pas de barre oblique inverse (\) dans le nom du dossier public créé.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > N'utilisez pas de barre oblique inverse (\) dans le nom du dossier public créé.
 
 
 5.  Dans le champ **Chemin d'accès**, vérifiez le chemin d'accès au dossier public. S’il ne s’agit pas du chemin d’accès souhaité, cliquez sur **Annuler** et suivez l’étape 2 de cette procédure.
@@ -96,18 +71,8 @@ Cet exemple permet de créer un dossier public appelé Reports dans le chemin d'
 
     New-PublicFolder -Name Reports -Path \Marketing\2013
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>N'utilisez pas de barre oblique inverse (\) dans le nom du dossier public créé.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> N'utilisez pas de barre oblique inverse (\) dans le nom du dossier public créé.
 
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-PublicFolder](https://technet.microsoft.com/fr-fr/library/aa996405\(v=exchg.150\)).

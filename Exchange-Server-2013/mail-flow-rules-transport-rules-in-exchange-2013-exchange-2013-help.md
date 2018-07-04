@@ -271,20 +271,10 @@ Il existe deux scénarios communs d’environnement mixte dans Exchange 2013 :
     
     Dans un environnement hybride, aucune réplication de règles ne se produit entre votre organisation Exchange locale et UNRESOLVED\_TOKEN\_VAL(Office365). Par conséquent, lorsque vous créez une règle dans Exchange, vous devez créer une règle correspondante dans UNRESOLVED\_TOKEN\_VAL(Office365). Les règles que vous créez dans UNRESOLVED\_TOKEN\_VAL(Office365) sont stockées dans le cloud, tandis que les règles que vous créez en local dans votre organisation sont stockées localement dans Active Directory. Lorsque vous gérez des règles dans un environnement hybride, vous devez maintenir la synchronisation des deux ensembles de règles en apportant des modifications aux deux emplacements ou en effectuant la modification dans l’un des environnements, avant d’exporter les règles, puis de les importer dans l’autre environnement.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Même s’il existe de nombreuses similitudes entre les conditions et les actions disponibles dans UNRESOLVED_TOKEN_VAL(Office365) et dans Exchange Server, il existe toutefois des différences. Si vous envisagez de créer la même règle dans les deux emplacements, vérifiez que toutes les conditions et les actions que vous prévoyez d’utiliser sont disponibles. Pour afficher la liste des conditions et des actions disponibles dans UNRESOLVED_TOKEN_VAL(Office365), consultez les rubriques suivantes :<br />
-    <a href="https://technet.microsoft.com/fr-fr/library/jj919235(v=exchg.150)">Exceptions (prédicat) et conditions de règles de flux de messagerie dans Exchange Online</a><br />
-    <a href="https://technet.microsoft.com/fr-fr/library/jj919237(v=exchg.150)">Courrier des actions de règle de flux dans Exchange en ligne</a></td>
-    </tr>
-    </tbody>
-    </table>
+	> [!IMPORTANT]
+    > Même s’il existe de nombreuses similitudes entre les conditions et les actions disponibles dans UNRESOLVED_TOKEN_VAL(Office365) et dans Exchange Server, il existe toutefois des différences. Si vous envisagez de créer la même règle dans les deux emplacements, vérifiez que toutes les conditions et les actions que vous prévoyez d’utiliser sont disponibles. Pour afficher la liste des conditions et des actions disponibles dans UNRESOLVED_TOKEN_VAL(Office365), consultez les rubriques suivantes :
+    > <a href="https://technet.microsoft.com/fr-fr/library/jj919235(v=exchg.150)">Exceptions (prédicat) et conditions de règles de flux de messagerie dans Exchange Online</a>
+    > <a href="https://technet.microsoft.com/fr-fr/library/jj919237(v=exchg.150)">Courrier des actions de règle de flux dans Exchange en ligne</a>
 
 
   - **Coexistence avec Exchange 2010 ou Exchange 2007**

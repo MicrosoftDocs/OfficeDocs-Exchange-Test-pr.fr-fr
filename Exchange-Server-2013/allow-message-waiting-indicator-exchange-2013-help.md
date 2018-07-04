@@ -351,18 +351,8 @@ Pour que les notifications par SMS pour les messages vocaux et les appels manqu�
 
 4.  Le paramètre par défaut étant `None`, vous devez exécuter la commande suivante à partir de l'environnement de ligne de commande Exchange Management Shell et définir l'option de notification par SMS sur `VoiceMailAndMissedCalls` ou `VoiceMail`. Par exemple : `Set-UMMailbox- -id MyUMMailbox -UMSMSNotificationOption VoiceMailAndMissedCalls`.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le paramètre <em>AllowSMSNotification</em> sur la stratégie de boîte aux lettres de messagerie unifiée et le paramètre <em>UMSMSNotificationOption</em> sur la boîte aux lettres de l’utilisateur doivent avoir la valeur <code>$true</code> pour que les notifications par SMS fonctionnent.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le paramètre <em>AllowSMSNotification</em> sur la stratégie de boîte aux lettres de messagerie unifiée et le paramètre <em>UMSMSNotificationOption</em> sur la boîte aux lettres de l’utilisateur doivent avoir la valeur <code>$true</code> pour que les notifications par SMS fonctionnent.
 
 
 Outre le fait que vous configuriez la stratégie de boîte aux lettres de messagerie unifiée et la boîte aux lettres de l’utilisateur pour activer les notifications par SMS pour les nouveaux messages vocaux et les appels manqués, l’utilisateur doit activer et configurer les notifications par SMS quand il se connecte à Outlook Web App. Pour définir et configurer les notifications de message texte, il doit procéder ainsi :

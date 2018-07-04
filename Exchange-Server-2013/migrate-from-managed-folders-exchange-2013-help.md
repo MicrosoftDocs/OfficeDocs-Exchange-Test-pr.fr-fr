@@ -21,18 +21,8 @@ Dans Microsoft Exchange Server 2013, la gestion des enregistrements de messager
 
 Une boîte aux lettres à laquelle est appliquée une stratégie de boîte aux lettres de dossier géré peut être migrée pour utiliser une stratégie de rétention. Pour ce faire, vous devez créer des balises de rétention équivalentes aux dossiers gérés associés à la stratégie de boîte aux lettres de dossier géré de l'utilisateur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avant de migrer des dossiers gérés vers des stratégies de rétention dans votre environnement de production, nous vous recommandons d'essayer le processus dans un environnement de test.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Avant de migrer des dossiers gérés vers des stratégies de rétention dans votre environnement de production, nous vous recommandons d'essayer le processus dans un environnement de test.
 
 
 > [!TIP]
@@ -157,18 +147,8 @@ Les étapes suivantes permettent de migrer des utilisateurs à partir de cette s
 
 4.  Supprimez la stratégie de boîte aux lettres de dossier géré, puis appliquez la stratégie de rétention aux boîtes aux lettres utilisateur.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Une fois la stratégie de rétention appliquée à un utilisateur et l'Assistant Dossier géré lancé, les dossiers gérés de la boîte aux lettres utilisateur ne sont plus gérés.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Une fois la stratégie de rétention appliquée à un utilisateur et l'Assistant Dossier géré lancé, les dossiers gérés de la boîte aux lettres utilisateur ne sont plus gérés.
 
 
 Pour les procédures suivantes, les boîtes aux lettres Contoso se voient appliquer une stratégie de boîte aux lettres de dossier géré contenant les dossiers gérés suivants.
@@ -256,19 +236,9 @@ Pour cette étape, vous pouvez utiliser deux méthodes :
 
   - **Créer des balises de rétention en fonction des dossiers gérés et des paramètres de contenu géré correspondants**   Avec cette méthode, vous utilisez la cmdlet **New-RetentionPolicyTag** avec le paramètre *ManagedFolderToUpgrade*. Lorsque vous spécifiez ce paramètre, la balise de rétention correspondante s'applique automatiquement au dossier géré.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si le dossier géré que vous souhaitez déplacer dispose de plusieurs paramètres de contenu géré pour différentes classes de messages, une seule balise de rétention est créée, et l’âge de rétention le plus long par rapport à tous les paramètres de contenu géré est utilisé comme âge de rétention pour la balise déplacée, quelle que soit la classe de message des paramètres de contenu géré.<br />
-    Par exemple, examinez les paramètres de contenu géré suivants pour le dossier géré Corp-DeletedItems.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > Si le dossier géré que vous souhaitez déplacer dispose de plusieurs paramètres de contenu géré pour différentes classes de messages, une seule balise de rétention est créée, et l’âge de rétention le plus long par rapport à tous les paramètres de contenu géré est utilisé comme âge de rétention pour la balise déplacée, quelle que soit la classe de message des paramètres de contenu géré.
+    > Par exemple, examinez les paramètres de contenu géré suivants pour le dossier géré Corp-DeletedItems.
 
 
   - **Créer des balises de rétention en spécifiant manuellement des paramètres de rétention**   Avec cette méthode, vous utilisez la cmdlet **New-RetentionPolicyTag** sans le paramètre *ManagedFolderToUpgrade*. Si vous ne spécifiez pas ce paramètre, toute balise de stratégie de rétention ajoutée à la stratégie est appliquée aux dossiers par défaut, et la balise de stratégie par défaut est appliquée à la boîte aux lettres entière. Toutefois, toute balise personnelle ajoutée à la stratégie n'est pas automatiquement appliquée aux dossiers gérés.

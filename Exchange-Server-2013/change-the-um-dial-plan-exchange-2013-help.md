@@ -45,18 +45,8 @@ Pour d’autres tâches de gestion relatives aux utilisateurs activés pour la m
 
 ## Étape 1 : Créer le nouveau plan de numérotation de messagerie unifiée
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous migrez les utilisateurs à extension messagerie unifiée vers Microsoft Office Communications Server 2007 R2 ou vers Microsoft Lync Server, vous devez d’abord créer un plan de numérotation URI SIP.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous migrez les utilisateurs à extension messagerie unifiée vers Microsoft Office Communications Server 2007 R2 ou vers Microsoft Lync Server, vous devez d’abord créer un plan de numérotation URI SIP.
 
 
 Pour plus d'informations, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](create-a-um-dial-plan-exchange-2013-help.md).
@@ -67,18 +57,8 @@ Pour plus d'informations, consultez la rubrique [Désactiver la messagerie vocal
 
 ## Étape 3 : Activez l’utilisateur pour la messagerie unifiée sur le nouveau plan de numérotation de messagerie unifiée
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous déplacez des utilisateurs vers un environnement Office Communications Server 2007 R2 ou Lync Server, vous devez également préciser un identificateur de ressources SIP pour l’utilisateur en l'activant pour la messagerie unifiée. Vous devez aussi sélectionner la stratégie de boîte aux lettres de messagerie unifiée associée à un plan de numérotation SIP.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous déplacez des utilisateurs vers un environnement Office Communications Server 2007 R2 ou Lync Server, vous devez également préciser un identificateur de ressources SIP pour l’utilisateur en l'activant pour la messagerie unifiée. Vous devez aussi sélectionner la stratégie de boîte aux lettres de messagerie unifiée associée à un plan de numérotation SIP.
 
 
 Pour plus d'informations, consultez la rubrique [Activation de la messagerie vocale pour un utilisateur](enable-a-user-for-voice-mail-exchange-2013-help.md).

@@ -51,18 +51,8 @@ Souhaitez-vous rechercher d’autres tâches de gestion relatives aux étendues�
 
 Dans cette étape, déterminez les bases de données à inclure dans l’étendue de base de données. Indiquez également si vous souhaitez spécifier une liste statique de bases de données ou bien créer un filtre de base de données contenant uniquement les bases de données qui correspondent aux critères spécifiés.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les attributions de rôle associées aux étendues de base de données s’appliquent uniquement aux utilisateurs qui se connectent à des serveurs dotés de Microsoft Exchange Server 2010 Service Pack 1 (SP1) ou version ultérieure ou d’Exchange 2013. Si un utilisateur auquel est appliquée une attribution de rôle associée à une étendue de base de données se connecte à une version de serveur antérieure à Exchange 2010 SP1, l’attribution de rôle n’est pas appliquée à cet utilisateur et celui-ci ne bénéficiera pas des autorisations octroyées dans le cadre de cette attribution.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les attributions de rôle associées aux étendues de base de données s’appliquent uniquement aux utilisateurs qui se connectent à des serveurs dotés de Microsoft Exchange Server 2010 Service Pack 1 (SP1) ou version ultérieure ou d’Exchange 2013. Si un utilisateur auquel est appliquée une attribution de rôle associée à une étendue de base de données se connecte à une version de serveur antérieure à Exchange 2010 SP1, l’attribution de rôle n’est pas appliquée à cet utilisateur et celui-ci ne bénéficiera pas des autorisations octroyées dans le cadre de cette attribution.
 
 
 ## Utiliser une étendue de liste des bases de données
@@ -137,18 +127,8 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez la rubri
 
 Si vous souhaitez ajouter des membres à un groupe de rôles, consultez la rubrique [Gérer les membres de groupes de rôles](manage-role-group-members-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous ajoutez des membres à ce groupe de rôles pour limiter les bases de données dans lesquelles il est possible de créer des utilisateurs ou de déplacer des boîtes aux lettres, assurez-vous qu’ils n’appartiennent pas à d’autres groupes de rôles pouvant accorder des autorisations supplémentaires.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous ajoutez des membres à ce groupe de rôles pour limiter les bases de données dans lesquelles il est possible de créer des utilisateurs ou de déplacer des boîtes aux lettres, assurez-vous qu’ils n’appartiennent pas à d’autres groupes de rôles pouvant accorder des autorisations supplémentaires.
 
 
 ## Étape 4 : Supprimer des membres d’un groupe de rôles (le cas échéant)

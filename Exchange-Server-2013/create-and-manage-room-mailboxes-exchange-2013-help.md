@@ -27,18 +27,8 @@ Pour plus d’informations sur un autre type de boîte aux lettres de ressources
 
   - Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez Section « Autorisations de configuration des destinataires » dans la rubrique [Autorisations des destinataires](recipients-permissions-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous exécutez Exchange 2013 dans un scénario hybride, veillez à créer les boîtes aux lettres de salle à l’emplacement approprié. Créez vos boîtes aux lettres de salle pour votre organisation locale sur site ; les boîtes aux lettres de salle pour le côté Exchange Online doivent quant à elles être créées dans le nuage.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous exécutez Exchange 2013 dans un scénario hybride, veillez à créer les boîtes aux lettres de salle à l’emplacement approprié. Créez vos boîtes aux lettres de salle pour votre organisation locale sur site ; les boîtes aux lettres de salle pour le côté Exchange Online doivent quant à elles être créées dans le nuage.
 
 
 

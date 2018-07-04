@@ -51,18 +51,8 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
         
         Un nom de plan de numérotation de messagerie unifiée peut contenir des espaces, sauf dans le cas où vous intégrez la messagerie unifiée à Office Communications Server 2007 R2 ou à Microsoft Lync Server. Par conséquent, si vous avez créé un plan de numérotation dont le nom complet comprend des espaces et que vous souhaitez l'intégrer à Office Communications Server 2007 R2 ou Microsoft Lync Server, vous devez d'abord supprimer ce plan de numérotation, puis en créer un dont le nom complet ne comporte pas d'espaces.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Bien que le champ destiné au nom du plan de numérotation puisse accepter 64 caractères, la longueur du nom du plan de numérotation ne peut pas être supérieure à 49 caractères. Si vous tentez de créer un nom de plan de numérotation contenant plus de 49 caractères, un message d'erreur s'affiche. Ce message indique que la stratégie de boîte aux lettres de messagerie unifiée n'a pas pu être générée parce que le nom du plan de numérotation de messagerie unifiée est trop long. En effet, comme évoqué précédemment, lorsque vous créez un plan de numérotation, une stratégie de boîte aux lettres de messagerie unifiée par défaut nommée Stratégie par défaut <em>&lt;DialPlanName&gt;</em> est également créée. Après l'ajout des 15 caractères de la stratégie par défaut au nom du plan de numérotation, le nombre total de caractères dépasse la limite. Le paramètre <em>name</em> des plans de numérotation de messagerie unifiée et des stratégies de boîte aux lettres de messagerie unifiée peut comporter jusqu'à 64 caractères. Toutefois, si le nom du plan de numérotation comporte plus de 49 caractères, le nom de la stratégie de boîte aux lettres de messagerie unifiée par défaut sera supérieur à 64 caractères, ce qui n'est pas permis par le système.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Bien que le champ destiné au nom du plan de numérotation puisse accepter 64 caractères, la longueur du nom du plan de numérotation ne peut pas être supérieure à 49 caractères. Si vous tentez de créer un nom de plan de numérotation contenant plus de 49 caractères, un message d'erreur s'affiche. Ce message indique que la stratégie de boîte aux lettres de messagerie unifiée n'a pas pu être générée parce que le nom du plan de numérotation de messagerie unifiée est trop long. En effet, comme évoqué précédemment, lorsque vous créez un plan de numérotation, une stratégie de boîte aux lettres de messagerie unifiée par défaut nommée Stratégie par défaut <em>&lt;DialPlanName&gt;</em> est également créée. Après l'ajout des 15 caractères de la stratégie par défaut au nom du plan de numérotation, le nombre total de caractères dépasse la limite. Le paramètre <em>name</em> des plans de numérotation de messagerie unifiée et des stratégies de boîte aux lettres de messagerie unifiée peut comporter jusqu'à 64 caractères. Toutefois, si le nom du plan de numérotation comporte plus de 49 caractères, le nom de la stratégie de boîte aux lettres de messagerie unifiée par défaut sera supérieur à 64 caractères, ce qui n'est pas permis par le système.
     
       - **Longueur des numéros de poste (chiffres)**   Entrez le nombre de chiffres pour le plan de numérotation. Le nombre de chiffres des numéros de poste est basé sur le plan de numérotation téléphonique créé sur un PBX (Private Branch eXchange) ou un PBX IP. Par exemple, si un utilisateur associé à un plan de numérotation téléphonique compose un poste à 4 chiffres pour appeler un autre utilisateur du même plan de numérotation téléphonique, vous sélectionnez 4 pour le nombre de chiffres du poste.
         

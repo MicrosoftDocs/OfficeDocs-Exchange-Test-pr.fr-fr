@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2015-04-08_
 
 Vous pouvez utiliser le script **ConfigureAdam.ps1** (situé dans $env:ExchangeInstallPath\\Scripts) pour modifier la configuration des services AD LDS (Active Directory Lightweight Directory Services) par défaut sur les serveurs de transport Edge avant d’abonner le serveur de transport Edge à votre organisation Exchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le script <strong>ConfigureAdam.ps1</strong> appelle la commande <strong>dsdbutil</strong> pour modifier les paramètres de registre pour AD LDS. La commande <strong>dsdbutil</strong> est un outil de gestion AD LDS destiné à être utilisé uniquement par des administrateurs expérimentés. Il est recommandé d’utiliser le script <strong>ConfigureAdam.ps1</strong> pour modifier la configuration AD LDS.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le script <strong>ConfigureAdam.ps1</strong> appelle la commande <strong>dsdbutil</strong> pour modifier les paramètres de registre pour AD LDS. La commande <strong>dsdbutil</strong> est un outil de gestion AD LDS destiné à être utilisé uniquement par des administrateurs expérimentés. Il est recommandé d’utiliser le script <strong>ConfigureAdam.ps1</strong> pour modifier la configuration AD LDS.
 
 
 Les paramètres figurant dans le tableau suivant sont disponibles pour le script **ConfigureAdam.ps1**. Vous pouvez utiliser un, plusieurs ou une combinaison de ces paramètres pour modifier AD LDS.

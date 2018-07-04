@@ -23,18 +23,8 @@ Configuration du Mode de Maintenance pour un serveur de boîtes aux lettres perm
 
 Dans Exchange 2007 et Exchange 2010, un paramètre d'état pouvait être utilisé pour contrôler l'état de fonctionnement d'un serveur de messagerie unifiée. Dans Exchange 2013, aucun paramètre d'état n'est disponible à cette fin sur la cmdlet **Set-UMService** pour un serveur de boîtes aux lettres.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il n'est pas nécessaire que les serveurs d'accès au Client et boîte aux lettres doit être ajouté à un plan de numérotation de messagerie unifiée avant qu'ils peuvent traiter les appels pour la messagerie unifiée, sauf lorsque vous êtes intégration de la messagerie unifiée et Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server. Par défaut, tous les accès au Client et boîte aux lettres de serveurs dans une organisation sont disponibles pour répondre aux appels entrants.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il n'est pas nécessaire que les serveurs d'accès au Client et boîte aux lettres doit être ajouté à un plan de numérotation de messagerie unifiée avant qu'ils peuvent traiter les appels pour la messagerie unifiée, sauf lorsque vous êtes intégration de la messagerie unifiée et Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server. Par défaut, tous les accès au Client et boîte aux lettres de serveurs dans une organisation sont disponibles pour répondre aux appels entrants.
 
 
 Pour d'autres tâches de gestion relatives aux serveurs de boîtes aux lettres, consultez la rubrique [Procédures de services de messagerie unifiée](um-services-procedures-exchange-2013-help.md).

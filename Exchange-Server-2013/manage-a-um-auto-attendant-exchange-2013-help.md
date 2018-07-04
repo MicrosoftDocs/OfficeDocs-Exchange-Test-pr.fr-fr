@@ -213,19 +213,9 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
             
             4.  L'appelant appuie sur la touche correspondante sur le clavier numérique et l'appel est transféré à l'utilisateur.
                 
-                <table>
-                <thead>
-                <tr class="header">
-                <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="odd">
-                <td>Sur un standard automatique sans reconnaissance, le système indiquera l'appelant d'utiliser le clavier pour saisir le nom d'utilisateur (nom tout d'abord) puis effectuez une recherche de l'utilisateur. S'il existe plusieurs personnes dans le répertoire portant le même nom, l'appelant est invité à appuyer sur la clé appropriée à transférer à l'utilisateur. Vous pouvez éventuellement créer un standard automatique de secours DTMF qui utilise uniquement le clavier pour entrer un nom ou un alias.</td>
-                </tr>
-                </tbody>
-                </table>
-            
+                > [!NOTE]
+				> Sur un standard automatique sans reconnaissance, le système indiquera l'appelant d'utiliser le clavier pour saisir le nom d'utilisateur (nom tout d'abord) puis effectuez une recherche de l'utilisateur. S'il existe plusieurs personnes dans le répertoire portant le même nom, l'appelant est invité à appuyer sur la clé appropriée à transférer à l'utilisateur. Vous pouvez éventuellement créer un standard automatique de secours DTMF qui utilise uniquement le clavier pour entrer un nom ou un alias.
+                            
             Pour utiliser ces paramètres, vous devez ajouter les informations appropriées à l'utilisateur. Par exemple, si vous souhaitez que le standard automatique à utiliser un titre pour deux utilisateurs avec le même nom, vous devez ajouter ces informations pour le compte d'utilisateur. Sélectionnez une des méthodes suivantes qui fournissent des informations supplémentaires pour vous aider à la sélection de l'appelant l'utilisateur correct dans l'organisation :
             
               - **Hériter du plan de commutation des appels**   Activez cette option afin que le standard automatique utilise le paramètre par défaut du plan de numérotation associé au standard automatique.

@@ -21,18 +21,8 @@ Lorsque les utilisateurs d'Outlook Voice Access composent un numéro Outlook Voi
 
 Une stratégie de boîte aux lettres de messagerie unifiée permet de configurer plusieurs paramètres relatifs au code confidentiel. Le paramètre **Nombre de recyclages du code confidentiel** indique le nombre de codes confidentiels uniques que des utilisateurs doivent utiliser avant de se servir à nouveau d'un ancien code confidentiel. Vous pouvez définir la valeur de ce paramètre entre 1 et 20. Pour la plupart des organisations, il convient de définir cette valeur sur 5 codes confidentiels, ce qui est la valeur par défaut. Un paramétrage trop élevé de cette valeur peut incommoder les utilisateurs car il peut être difficile de créer et de mémoriser plusieurs codes confidentiels. Un paramétrage trop faible peut introduire une menace de sécurité dans votre réseau.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le nombre de recyclages du code confidentiel ne peut pas être désactivé.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le nombre de recyclages du code confidentiel ne peut pas être désactivé.
 
 
 Pour découvrir d'autres tâches de gestion concernant la sécurité d'Outlook Voice Access par code confidentiel, consultez la rubrique [Procédures de sécurité de code confidentiel](pin-security-procedures-exchange-2013-help.md).

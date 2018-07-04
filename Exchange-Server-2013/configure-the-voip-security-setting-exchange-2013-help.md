@@ -21,18 +21,8 @@ Vous pouvez activer la sécurité VoIP (Voice over IP) pour un plan de numérota
 
 Lorsque vous configurez un plan de numérotation de messagerie unifiée afin qu'il utilise le mode sécurisé ou SIP (Session Initiation Protocol) sécurisé, les serveurs Exchange qui répondent aux appels pour le plan de numérotation de messagerie unifiée chiffrent le trafic de signalisation SIP (pour le mode Sécurisé SIP), ou à la fois les canaux de support RTP et le trafic de signalisation SIP (pour le mode sécurisé).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour les déploiements locaux et hybrides, quand vous configurez SipTCPListeningPort, SipTLSListeningPort ou UMStartUpMode sur un serveur d'accès au client qui exécute le service routeur des appels de messagerie unifiée de Microsoft Exchange ou sur un serveur de boîtes aux lettres qui exécute le service de messagerie unifiée de Microsoft Exchange, vous devez configurer les règles du pare-feu Windows correctement pour permettre le trafic réseau SIP et RTP.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour les déploiements locaux et hybrides, quand vous configurez SipTCPListeningPort, SipTLSListeningPort ou UMStartUpMode sur un serveur d'accès au client qui exécute le service routeur des appels de messagerie unifiée de Microsoft Exchange ou sur un serveur de boîtes aux lettres qui exécute le service de messagerie unifiée de Microsoft Exchange, vous devez configurer les règles du pare-feu Windows correctement pour permettre le trafic réseau SIP et RTP.
 
 
 Pour les autres tâches de gestion relatives aux plans de numérotation de messagerie unifiée, consultez la rubrique [Procédures de plan de numérotation de messagerie unifiée](um-dial-plan-procedures-exchange-2013-help.md).

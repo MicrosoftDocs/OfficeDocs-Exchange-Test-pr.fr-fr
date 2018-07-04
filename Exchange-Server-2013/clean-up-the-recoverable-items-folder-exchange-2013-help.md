@@ -118,36 +118,16 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
     
         Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si la boîte aux lettres se trouve sur une base de données de boîtes aux lettres dans un groupe de disponibilité de base de données, vous devez désactiver l’Assistant Dossier géré sur chaque membre du groupe de disponibilité de base de données qui héberge une copie de la base de données. Si la base de données échoue sur un autre serveur, cela empêche l’Assistant Dossier géré sur ce serveur de supprimer les données de la boîte aux lettres.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si la boîte aux lettres se trouve sur une base de données de boîtes aux lettres dans un groupe de disponibilité de base de données, vous devez désactiver l’Assistant Dossier géré sur chaque membre du groupe de disponibilité de base de données qui héberge une copie de la base de données. Si la base de données échoue sur un autre serveur, cela empêche l’Assistant Dossier géré sur ce serveur de supprimer les données de la boîte aux lettres.
 
 
 8.  Désactivez la récupération d’élément unique et supprimez la conservation pour litige de la boîte aux lettres.
     
         Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Après exécution de cette commande, il faut parfois une heure pour désactiver la récupération d’élément unique ou la conservation pour litige. Nous vous recommandons d’effectuer la prochaine étape uniquement après écoulement de cette période.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Après exécution de cette commande, il faut parfois une heure pour désactiver la récupération d’élément unique ou la conservation pour litige. Nous vous recommandons d’effectuer la prochaine étape uniquement après écoulement de cette période.
 
 
 9.  Copiez les éléments du dossier Éléments récupérables vers un dossier qui se trouve dans la boîte aux lettres de détection et supprimez le contenu de la boîte aux lettres source.
@@ -166,18 +146,8 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
     
         Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Après exécution de cette commande, il faut parfois une heure pour activer la récupération d’élément unique ou la conservation pour litige. Nous vous recommandons d’activer l’Assistant Dossier géré et d’autoriser l’accès au client (étapes 11 et 12) uniquement après écoulement de cette période.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Après exécution de cette commande, il faut parfois une heure pour activer la récupération d’élément unique ou la conservation pour litige. Nous vous recommandons d’activer l’Assistant Dossier géré et d’autoriser l’accès au client (étapes 11 et 12) uniquement après écoulement de cette période.
 
 
 11. Reparamétrez les quotas suivants aux valeurs notées à l’étape 1 :

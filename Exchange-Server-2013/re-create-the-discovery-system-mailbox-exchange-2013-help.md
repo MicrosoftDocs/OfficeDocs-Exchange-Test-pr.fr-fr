@@ -35,19 +35,9 @@ Toutefois, si la boîte aux lettres système de découverte est supprimée accid
 
 2.  Utilisez le Shell pour activer la boîte aux lettres système de découverte.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous ne pouvez pas utiliser le centre d'administration Exchange (EAC) pour activer la boîte aux lettres système de découverte.<br />
-    La commande suivante doit être exécutée dans le même répertoire où vous avez extrait le support d’installation Exchange.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Vous ne pouvez pas utiliser le centre d'administration Exchange (EAC) pour activer la boîte aux lettres système de découverte.
+    > La commande suivante doit être exécutée dans le même répertoire où vous avez extrait le support d’installation Exchange.
     
     Pour recréer la boîte aux lettres système de découverte, exécutez la commande suivante :
     

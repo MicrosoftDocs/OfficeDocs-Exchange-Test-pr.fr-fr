@@ -21,18 +21,8 @@ Le Gestion de la découverte Le groupe de rôles de gestion est l’un des grou
 
 Les administrateurs ou les utilisateurs qui sont membres du groupe de rôles Gestion de la découverte peuvent effectuer des recherches de boîtes aux lettres dans l’organisation Exchange pour des données qui correspondent aux critères spécifiques et peuvent également configurer des suspensions pour litige de boîtes aux lettres. Pour plus d’informations, voir [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, le groupe de rôles Gestion de l’organisation n'active pas la fonction de découverte pour les utilisateurs ou les groupes de sécurité universels membres de ce groupe de rôles. Les membres du groupe de rôles Gestion de l’organisation doivent soit devenir membres de ce groupe de rôles ou le rôle Recherche de boîte aux lettres traité plus loin dans cette rubrique doit être affecté manuellement au groupe de rôles Gestion de l’organisation. Pour plus d'informations sur l'attribution d'un rôle à un groupe de rôles, voir <a href="manage-role-groups-exchange-2013-help.md">Gérer des groupes de rôles</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, le groupe de rôles Gestion de l’organisation n'active pas la fonction de découverte pour les utilisateurs ou les groupes de sécurité universels membres de ce groupe de rôles. Les membres du groupe de rôles Gestion de l’organisation doivent soit devenir membres de ce groupe de rôles ou le rôle Recherche de boîte aux lettres traité plus loin dans cette rubrique doit être affecté manuellement au groupe de rôles Gestion de l’organisation. Pour plus d'informations sur l'attribution d'un rôle à un groupe de rôles, voir <a href="manage-role-groups-exchange-2013-help.md">Gérer des groupes de rôles</a>.
 
 
 Pour plus d'informations sur le contrôle d'accès basé sur un rôle, voir [Présentation du contrôle d'accès basé sur un rôle](understanding-role-based-access-control-exchange-2013-help.md).

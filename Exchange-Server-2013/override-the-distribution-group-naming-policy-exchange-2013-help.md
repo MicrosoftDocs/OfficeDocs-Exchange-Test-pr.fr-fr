@@ -57,18 +57,8 @@ Imaginons que vous ayez créé une stratégie de noms de groupes un soir tard et
 
     Set-DistributionGroup -Identity "Goverment_Contracts_NWRegion" -Name "Government_ContractEstimates_NWRegion" -DisplayName "Government_ContractEstimates_NWRegion" -IgnoreNamingPolicy
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Veillez à inclure le paramètre <em>DisplayName</em> lorsque vous renommez un groupe. Si vous ne le faites pas, l'ancien nom continuera d'apparaître dans le carnet d'adresses partagé et sur les lignes À :, Cc : et De : des messages électroniques.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Veillez à inclure le paramètre <em>DisplayName</em> lorsque vous renommez un groupe. Si vous ne le faites pas, l'ancien nom continuera d'apparaître dans le carnet d'adresses partagé et sur les lignes À :, Cc : et De : des messages électroniques.
 
 
 ## Comment savoir si cela a fonctionné ?

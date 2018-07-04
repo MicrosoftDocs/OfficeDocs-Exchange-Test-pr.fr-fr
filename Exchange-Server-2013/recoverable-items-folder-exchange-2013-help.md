@@ -274,18 +274,8 @@ Le tableau suivant dresse la liste des propriétés de message qui déclenchent 
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La protection de page de copie sur écriture n’enregistre pas de version de la réunion lorsque l’organisateur d’une réunion reçoit des réponses des participants et que les informations de suivi de la réunion sont mises jour. En outre, les changements apportés aux flux RSS ne sont pas pris en compte par la protection de page de copie sur écriture.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La protection de page de copie sur écriture n’enregistre pas de version de la réunion lorsque l’organisateur d’une réunion reçoit des réponses des participants et que les informations de suivi de la réunion sont mises jour. En outre, les changements apportés aux flux RSS ne sont pas pris en compte par la protection de page de copie sur écriture.
 
 
 Lorsqu’une boîte aux lettres n’est plus bloquée sur place ou mise en attente pour litige, les copies des éléments modifiés enregistrées dans le dossier Versions sont supprimées.

@@ -354,18 +354,8 @@ Pour implémenter IRM dans votre organisation Exchange 2013, votre déploiement
 > <em>« Cluster</em> <em>AD RMS »</em> est le terme utilisé pour un déploiement AD RMS dans une organisation, y compris le déploiement d’un seul serveur. AD RMS est un service Web. Il n’exige pas l’installation du composant Clustering avec basculement de Windows Server. Pour la haute disponibilité et l’équilibrage de la charge, vous pouvez déployer plusieurs serveurs AD RMS dans le cluster et utiliser la fonctionnalité d’équilibrage de la charge réseau.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Un environnement de production ne prend pas en charge l’installation d’AD RMS et d’Exchange sur le même serveur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Un environnement de production ne prend pas en charge l’installation d’AD RMS et d’Exchange sur le même serveur.
 
 
 Les fonctionnalités IRM d’Exchange 2013 prennent en charge les formats de fichiers Microsoft Office. Vous pouvez étendre la protection IRM à d’autres formats de fichiers en déployant des protections personnalisées. Pour plus d’informations, consultez la page [Partenaires Microsoft](https://go.microsoft.com/fwlink/p/?linkid=210336).

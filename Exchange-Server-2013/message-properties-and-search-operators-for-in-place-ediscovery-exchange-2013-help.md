@@ -181,18 +181,8 @@ Le tableau suivant répertorie les propriétés de message électronique consult
 
 Les opérateurs booléens, tels que **AND** et **OR**, vous permettent de définir des recherches plus précises dans des boîtes aux lettres en incluant des mots spécifiques dans la requête de recherche ou en les excluant. D’autres techniques, comme l’utilisation d’opérateurs de propriété (tels que \>= ou ...), les guillemets, les parenthèses et les caractères génériques vous permettent d’affiner les requêtes de recherche de découverte électronique. Le tableau suivant répertorie les opérateurs disponibles pour restreindre ou élargir les résultats de recherche.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez utiliser des opérateurs booléens en majuscules dans vos requêtes de recherche. Par exemple, utilisez <strong>AND</strong>, et non <strong>and</strong>. L’utilisation d’opérateurs en lettres minuscules dans les requêtes de recherche renverra une erreur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez utiliser des opérateurs booléens en majuscules dans vos requêtes de recherche. Par exemple, utilisez <strong>AND</strong>, et non <strong>and</strong>. L’utilisation d’opérateurs en lettres minuscules dans les requêtes de recherche renverra une erreur.
 
 
 

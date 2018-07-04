@@ -108,18 +108,8 @@ Voici quelques exemples d’utilisation d’Outlook Voice Access sur un téléph
     > [!NOTE]
     > La fonction de recherche dans l’annuaire avec un numéro Outlook Voice Access n’est pas activée pour la reconnaissance vocale. Les utilisateurs peuvent épeler le nom de la personne qu’ils souhaitent contacter uniquement en utilisant des entrées à tonalité.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Dans certaines sociétés (en particulier en Asie orientale), aucune lettre n’est inscrite sur les touches du clavier téléphonique. Cela rend l’utilisation de la fonctionnalité d’écriture du nom à l’aide de l’interface à tonalité pratiquement impossible sans une connaissance approfondie du mappage des touches. Par défaut, la messagerie unifiée utilise le mappage de touches E.161. Par exemple, 2=ABC, 3=DEF, 4=GHI, 5=JKL, 6=MNO, 7=PQRS, 8=TUV, 9=WXYZ.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Dans certaines sociétés (en particulier en Asie orientale), aucune lettre n’est inscrite sur les touches du clavier téléphonique. Cela rend l’utilisation de la fonctionnalité d’écriture du nom à l’aide de l’interface à tonalité pratiquement impossible sans une connaissance approfondie du mappage des touches. Par défaut, la messagerie unifiée utilise le mappage de touches E.161. Par exemple, 2=ABC, 3=DEF, 4=GHI, 5=JKL, 6=MNO, 7=PQRS, 8=TUV, 9=WXYZ.
     
     Lors de l’entrée de la combinaison de lettres et de chiffres, par exemple Mike1092, les caractères numériques sont mappés sur eux-mêmes. Pour que l’alias de messagerie Mike1092 soit saisi correctement, l’utilisateur doit appuyer sur les touches 64531092. De même, pour des caractères autres que les lettres de A à Z et les chiffres de 0 à 9, il n’y a pas d’équivalent au niveau des touches téléphoniques. Il ne faut donc pas utiliser ces caractères. Par exemple, pour entrer l’alias de messagerie jim.wilson, il faut appuyer sur les touches 546945766. Même s’il y a 10 chiffres à entrer, l’utilisateur n’entre que 9 chiffres parce que le point (.) n’a pas d’équivalent numérique.
 

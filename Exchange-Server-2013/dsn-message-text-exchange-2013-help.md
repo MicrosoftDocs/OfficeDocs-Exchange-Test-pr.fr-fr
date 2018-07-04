@@ -130,16 +130,6 @@ Par exemple, si vous voulez afficher le message `"Please contact the Help Desk a
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous incluez une balise HTML dans un texte de message DSN qui contient des guillemets (&quot;), telle que <code>&lt;A HREF=&quot;url&quot;&gt;</code>, vous devez placer le texte complet du message DSN entre guillemets simples ('). Vous recevez un message d'erreur si vous placez le texte complet du message DSN et une balise HTML entre guillemets doubles.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous incluez une balise HTML dans un texte de message DSN qui contient des guillemets (&quot;), telle que <code>&lt;A HREF=&quot;url&quot;&gt;</code>, vous devez placer le texte complet du message DSN entre guillemets simples ('). Vous recevez un message d'erreur si vous placez le texte complet du message DSN et une balise HTML entre guillemets doubles.
 

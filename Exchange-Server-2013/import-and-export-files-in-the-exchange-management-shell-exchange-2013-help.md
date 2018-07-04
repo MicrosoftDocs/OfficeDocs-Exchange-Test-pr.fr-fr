@@ -31,18 +31,8 @@ La session distante est la session Windows PowerShell qui est exécutée sur le 
 
 Lorsque vous vous connectez à un serveur Exchange distant, une connexion est établie entre la session locale sur votre ordinateur et la session distante sur le serveur Exchange. Cette connexion vous permet d'exécuter les cmdlets Exchange sur le serveur Exchange distant dans votre session locale même si aucune cmdlet Exchange n'est installée sur votre ordinateur local. Bien que les cmdlets Exchange semblent s’exécuter sur votre ordinateur local, elles sont en réalité exécutées sur le serveur Exchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Même si vous ouvrez l'environnement de ligne de commande Exchange Management Shell sur un serveur Exchange 2013, le même processus de connexion a lieu et deux sessions sont créées. En d’autres termes, vous devez utiliser la même nouvelle syntaxe pour importer et exporter des fichiers lorsque vous ouvrez l’environnement de ligne de commande Exchange Management Shell sur un serveur Exchange 2013 ou à partir d’une station de travail client distante.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Même si vous ouvrez l'environnement de ligne de commande Exchange Management Shell sur un serveur Exchange 2013, le même processus de connexion a lieu et deux sessions sont créées. En d’autres termes, vous devez utiliser la même nouvelle syntaxe pour importer et exporter des fichiers lorsque vous ouvrez l’environnement de ligne de commande Exchange Management Shell sur un serveur Exchange 2013 ou à partir d’une station de travail client distante.
 
 
 Les cmdlets Exchange qui sont exécutées dans la session distante sur le serveur Exchange distant n'ont pas accès à votre système de fichiers local. Vous ne pouvez donc pas utiliser les cmdlets Exchange seules pour importer ou exporter des fichiers depuis ou vers votre système de fichiers local. Vous devez utiliser une syntaxe supplémentaire pour cela. Ainsi les cmdlets Exchange exécutées sur le serveur Exchange distant pourront utiliser les données du système de fichiers. Pour plus d’informations sur la syntaxe requise, voir « Importation et exportation de fichiers dans l’environnement de ligne de commande Exchange Management Shell distant » plus loin dans cette rubrique.

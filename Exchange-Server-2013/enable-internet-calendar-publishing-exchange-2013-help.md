@@ -29,18 +29,8 @@ Le processus d’activation de cette fonctionnalité consiste en trois étapes g
 
 3.  Créer une stratégie de partage dédiée et spécifique de la publication Internet des calendriers ou mettre à jour la stratégie de partage par défaut pour prendre en charge le domaine **Anonyme**. Quelle que soit la méthode employée, celle-ci permet aux utilisateurs de votre organisation Exchange d’inviter d’autres utilisateurs disposant d’un accès Internet à consulter des informations limitées de disponibilité de calendrier via une adresse URL publiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>À la fin de l’étape 3, les utilisateurs doivent publier leurs calendriers à partir d’Outlook. La publication des calendriers crée des URL que les utilisateurs peuvent donner à des contacts en dehors de leur organisation. Une URL permet aux destinataires de s’abonner à des calendriers à l’aide d’Outlook ou d’Outlook Web App, et l’autre permet aux destinataires d’afficher un calendrier dans un navigateur web. Chaque utilisateur peut contrôler la quantité de détails visibles.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> À la fin de l’étape 3, les utilisateurs doivent publier leurs calendriers à partir d’Outlook. La publication des calendriers crée des URL que les utilisateurs peuvent donner à des contacts en dehors de leur organisation. Une URL permet aux destinataires de s’abonner à des calendriers à l’aide d’Outlook ou d’Outlook Web App, et l’autre permet aux destinataires d’afficher un calendrier dans un navigateur web. Chaque utilisateur peut contrôler la quantité de détails visibles.
 
 
 Pour connaître les tâches de gestion supplémentaires relatives aux stratégies de partage, consultez la rubrique [Stratégies de partage](sharing-policies-exchange-2013-help.md).

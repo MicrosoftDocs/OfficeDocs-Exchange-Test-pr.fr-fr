@@ -145,18 +145,8 @@ Parfois, au cours de la compression et de la décompression, certaines informati
 
 La bande passante RTAudio ou l'audio haute fidélité pour l'enregistrement des messages vocaux sont aussi disponibles sous forme de codec audio. Toutefois, l'audio haute fidélité via RTAudio n'est disponible qu'après intégration de la messagerie unifiée dans [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=202010). Pour activer RTAudio en tant que codec filaire (bande étroite ou bande large), le plan de numérotation de messagerie unifiée doit être configuré en tant que plan de numérotation de type URI SIP (Session Initiation Protocol), et vous devez définir le codec de réponse aux appels sur le plan de numérotation sur MP3 ou WMA pour activer la transmission audiofréquence large bande (16 kHz).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>RTAudio n'est pas disponible dans les environnements dans lesquels Lync Server n'est pas déployé. Ceci est dû au fait que, dans les environnements qui n’ont pas intégré Lync Server, le plan de numérotation est défini sur Numéro de poste ou E.164 et non sur URI SIP.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> RTAudio n'est pas disponible dans les environnements dans lesquels Lync Server n'est pas déployé. Ceci est dû au fait que, dans les environnements qui n’ont pas intégré Lync Server, le plan de numérotation est défini sur Numéro de poste ou E.164 et non sur URI SIP.
 
 
 Il existe deux flux de données multimédia pour chaque appel entrant : entrant vers un serveur d'accès au client et sortant à partir d'un serveur de boîtes aux lettres. Quand le type de plan de numérotation est défini sur URI SIP et que le codec de réponse aux appels du plan de numérotation est défini sur MP3 ou WMA, un serveur d'accès au client tente de sélectionner le codec VoIP RTAudio pour le flux de données multimédia entrant. Si la négociation réussit, le codec RTAudio pour le flux entrant est utilisé pour les appels de réponse aux appels ou les appels en provenance d'un client ou d'un serveur Lync.

@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez configurer plusieurs adresses de messagerie pour une même boîte aux lettres. Les adresses supplémentaires sont appelées *adresses proxy*. Une adresse proxy permet à un utilisateur de recevoir un e-mail envoyé à une adresse de messagerie différente. Tous les e-mails envoyés à l’adresse proxy de l’utilisateur sont réceptionnés à son adresse de messagerie principale, également appelée *adresse SMTP principale* ou *adresse de réponse par défaut*.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous utilisez Office 365 pour les entreprises, vous devez ajouter ou supprimer des adresses de messagerie pour les boîtes aux lettres utilisateur dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=8347775">Centre d’administration Office 365 : Ajouter d’autres alias de messagerie à un utilisateur dans Office 365</a></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous utilisez Office 365 pour les entreprises, vous devez ajouter ou supprimer des adresses de messagerie pour les boîtes aux lettres utilisateur dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=8347775">Centre d’administration Office 365 : Ajouter d’autres alias de messagerie à un utilisateur dans Office 365</a>
 
 
 Pour d’autres tâches de gestion relatives à la gestion des destinataires, consultez le tableau « Documentation des destinataires » dans [Recipients](recipients-exchange-2013-help.md).

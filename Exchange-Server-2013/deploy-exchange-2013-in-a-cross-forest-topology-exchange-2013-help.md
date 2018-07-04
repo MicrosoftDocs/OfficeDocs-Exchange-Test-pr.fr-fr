@@ -69,18 +69,8 @@ Pour effectuer la procédure suivante dans Exchange 2013, vérifiez ce qui suit
     
       - [Plan de la documentation sur Forefront Identity Manager 2010 R2](https://go.microsoft.com/fwlink/p/?linkid=279871)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Bien que les ressources concernent Exchange 2010, FIM 2010 R2 SP1 prend en charge Exchange 2013. Assurez-vous de configurer les <strong>extensions</strong> dans FIM 2010 R2 SP1 pour Exchange 2013.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Bien que les ressources concernent Exchange 2010, FIM 2010 R2 SP1 prend en charge Exchange 2013. Assurez-vous de configurer les <strong>extensions</strong> dans FIM 2010 R2 SP1 pour Exchange 2013.
     
     1.  Dans la page **Configuration des extensions**, sous **Configurer le(s) nom(s) de partition affiché(s)**, en regard de **Configurer pour**, sélectionnez **Exchange 2013**. Le champ **URI Exchange 2013 RPS** apparaît. Entrez l'URI d'un serveur d'accès au client Exchange 2013 pour vérifier le bon fonctionnement de la connexion Remote PowerShell. L'**URI Remote PowerShell d'Exchange 2013** doit être au format suivant : http://CAS\_Server\_FQDN/Powershell. Cliquez sur **OK**.
         

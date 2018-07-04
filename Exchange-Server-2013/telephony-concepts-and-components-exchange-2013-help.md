@@ -153,18 +153,8 @@ Une passerelle VoIP est un périphérique ou produit matériel tiers qui connect
 
 La messagerie unifiée Exchange 2013 s'appuie sur la capacité des passerelles VoIP à traduire ou convertir les protocoles basés sur le MRT ou la commutation par circuits téléphoniques comme RNIS et QSIG à partir d'un PBX en protocoles basés sur IP ou VoIP, tels que SIP (Session Initiated Protocol), RTP (Realtime Transport Protocol) ou T.38 pour la transmission de télécopies en temps réel. La passerelle VoIP fait partie intégrante de la fonctionnalité et du fonctionnement de la messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L'installation de la passerelle VoIP, du PBX IP ou du PBX compatible SIP doit être suivie de la création d'une passerelle IP de messagerie unifiée représentant le périphérique physique. Après la création de la passerelle IP de messagerie unifiée, les serveurs d'accès au client et de boîtes aux lettres associés à la passerelle IP de messagerie unifiée envoient une requête SIP OPTIONS à la passerelle VoIP, au PBX IP ou au PBX compatible SIP pour s'assurer qu'ils répondent. Si la passerelle VoIP ne répond pas à la requête SIP OPTIONS à partir du serveur de boîtes aux lettres, celui-ci consigne un événement avec l'ID 1088 indiquant que la demande a échoué. Pour résoudre ce problème, vérifiez que la passerelle VoIP ou le PBX IP est accessible et en ligne et que la configuration de la messagerie unifiée sur le serveur d'accès au client et sur le serveur de boîtes aux lettres est correcte.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L'installation de la passerelle VoIP, du PBX IP ou du PBX compatible SIP doit être suivie de la création d'une passerelle IP de messagerie unifiée représentant le périphérique physique. Après la création de la passerelle IP de messagerie unifiée, les serveurs d'accès au client et de boîtes aux lettres associés à la passerelle IP de messagerie unifiée envoient une requête SIP OPTIONS à la passerelle VoIP, au PBX IP ou au PBX compatible SIP pour s'assurer qu'ils répondent. Si la passerelle VoIP ne répond pas à la requête SIP OPTIONS à partir du serveur de boîtes aux lettres, celui-ci consigne un événement avec l'ID 1088 indiquant que la demande a échoué. Pour résoudre ce problème, vérifiez que la passerelle VoIP ou le PBX IP est accessible et en ligne et que la configuration de la messagerie unifiée sur le serveur d'accès au client et sur le serveur de boîtes aux lettres est correcte.
 
 
 Pour plus d'informations sur les configurations des PBX IP et des PBX, consultez la rubrique [Configuration des PBX et PBX IP](pbx-and-ip-pbx-configurations-exchange-2013-help.md).

@@ -374,28 +374,13 @@ Cette section fournit des informations sur la gestion des utilisateurs de messag
 > Si vous utilisez la synchronisation d’annuaires pour gérer vos destinataires, vous pouvez toujours ajouter et gérer les utilisateurs dans le Centre d’administration Office 365, mais ils ne seront pas synchronisés avec votre annuaire Active Directory sur site. En effet, la synchronisation d’annuaires ne synchronise que les destinataires de votre annuaire Active Directory sur site vers le nuage.
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il est recommandé d’utiliser la synchronisation d’annuaires avec les fonctionnalités suivantes :
-<ul>
-<li><p><strong>Listes d’expéditeurs autorisés et bloqués dans Outlook</strong> : une fois synchronisées avec le service, ces listes seront prioritaires sur le filtrage de courrier indésirable dans le service. Cela permet aux utilisateurs de gérer leurs propres listes d’expéditeurs autorisés et bloqués en fonction de l’utilisateur et du domaine.</p></li>
-<li><p><strong>Blocage du périmètre basé sur l’annuaire (DBEB)</strong>: pour plus d’informations sur le DBEB, voir <a href="https://technet.microsoft.com/fr-fr/library/dn600322(v=exchg.150)">Utiliser le blocage du périmètre basé sur l’annuaire pour rejeter les messages envoyés à des destinataires non valides</a>.</p></li>
-<li><p><strong>Mise en quarantaine du courrier indésirable des utilisateurs finals</strong> : pour accéder à leur courrier indésirable mis en quarantaine, les utilisateurs finals doivent disposer d’un identifiant utilisateur et d’un mot de passe Office 365 valides. Les clients qui disposent de boîtes aux lettres locales doivent être des utilisateurs de messagerie électronique valides.</p></li>
-<li><p><strong>Règles de transport -</strong> lorsque vous utilisez la synchronisation d’annuaires, les utilisateurs et les groupes Active Directory existants sont automatiquement téléchargés dans le cloud. Vous pouvez alors créer des règles de transport qui ciblent des utilisateurs et/ou groupes spécifiques sans avoir à les ajouter manuellement via le CAE ou via la session Windows PowerShell distante. Notez que les <a href="https://go.microsoft.com/fwlink/?linkid=507569">groupes de distribution dynamiques</a> ne peuvent pas être synchronisés via la synchronisation d’annuaires.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]
+> Il est recommandé d’utiliser la synchronisation d’annuaires avec les fonctionnalités suivantes :
+> <ul>
+> <li><p><strong>Listes d’expéditeurs autorisés et bloqués dans Outlook</strong> : une fois synchronisées avec le service, ces listes seront prioritaires sur le filtrage de courrier indésirable dans le service. Cela permet aux utilisateurs de gérer leurs propres listes d’expéditeurs autorisés et bloqués en fonction de l’utilisateur et du domaine.</p></li>
+> <li><p><strong>Blocage du périmètre basé sur l’annuaire (DBEB)</strong>: pour plus d’informations sur le DBEB, voir <a href="https://technet.microsoft.com/fr-fr/library/dn600322(v=exchg.150)">Utiliser le blocage du périmètre basé sur l’annuaire pour rejeter les messages envoyés à des destinataires non valides</a>.</p></li>
+> <li><p><strong>Mise en quarantaine du courrier indésirable des utilisateurs finals</strong> : pour accéder à leur courrier indésirable mis en quarantaine, les utilisateurs finals doivent disposer d’un identifiant utilisateur et d’un mot de passe Office 365 valides. Les clients qui disposent de boîtes aux lettres locales doivent être des utilisateurs de messagerie électronique valides.</p></li>
+> <li><p><strong>Règles de transport -</strong> lorsque vous utilisez la synchronisation d’annuaires, les utilisateurs et les groupes Active Directory existants sont automatiquement téléchargés dans le cloud. Vous pouvez alors créer des règles de transport qui ciblent des utilisateurs et/ou groupes spécifiques sans avoir à les ajouter manuellement via le CAE ou via la session Windows PowerShell distante. Notez que les <a href="https://go.microsoft.com/fwlink/?linkid=507569">groupes de distribution dynamiques</a> ne peuvent pas être synchronisés via la synchronisation d’annuaires.</p></li></ul>
 
 **Avant de commencer**
 
@@ -409,18 +394,8 @@ Obtenez les autorisations nécessaires et préparez la synchronisation d’annua
 
 3.  Synchronisez vos annuaires, comme décrit dans la rubrique [Utiliser l’Assistant Configuration pour synchroniser vos annuaires](http://go.microsoft.com/fwlink/?linkid=308912).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Après exécution de l’Assistant Configuration de l’outil de synchronisation Azure Active Directory, le compte <strong>MSOL_AD_SYNC</strong> est créé dans votre forêt Active Directory. Ce compte permet de lire et de synchroniser vos informations Active Directory sur site. Pour que la synchronisation d’annuaires fonctionne correctement, assurez-vous que le port TCP 443 est ouvert sur votre serveur de synchronisation d’annuaires sur site.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Après exécution de l’Assistant Configuration de l’outil de synchronisation Azure Active Directory, le compte <strong>MSOL_AD_SYNC</strong> est créé dans votre forêt Active Directory. Ce compte permet de lire et de synchroniser vos informations Active Directory sur site. Pour que la synchronisation d’annuaires fonctionne correctement, assurez-vous que le port TCP 443 est ouvert sur votre serveur de synchronisation d’annuaires sur site.
 
 
 4.  Activez les utilisateurs synchronisés, comme décrit dans la rubrique [Activer les utilisateurs synchronisés](http://go.microsoft.com/fwlink/p/?linkid=308913).

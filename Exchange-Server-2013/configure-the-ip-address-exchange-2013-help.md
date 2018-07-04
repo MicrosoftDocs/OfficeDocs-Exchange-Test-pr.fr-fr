@@ -49,18 +49,8 @@ Pour les autres tâches de gestion relatives aux passerelles IP de messagerie un
 
 3.  Cliquez sur **Enregistrer** pour enregistrer vos modifications.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous utilisez un nom de domaine complet, et non une adresse IP, pour la passerelle IP de messagerie unifiée, vérifiez que les enregistrements DNS corrects ont été créés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous utilisez un nom de domaine complet, et non une adresse IP, pour la passerelle IP de messagerie unifiée, vérifiez que les enregistrements DNS corrects ont été créés.
 
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer l’adresse IP sur une passerelle IP de messagerie unifiée

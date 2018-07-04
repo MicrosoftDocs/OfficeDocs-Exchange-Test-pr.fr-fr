@@ -21,25 +21,10 @@ _**Dernière rubrique modifiée :** 2016-12-09_
 
 Les boîtes aux lettres partagées permettent à un groupe de personnes dans votre entreprise de surveiller et d’envoyer en toute simplicité des messages électroniques à partir d’un compte commun, tel que info@contoso.com ou support@contoso.com. Lorsqu’une personne du groupe répond à un message envoyé à la boîte aux lettres partagée, le message semble avoir été envoyé à partir de la boîte aux lettres partagée, et non par l’utilisateur.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous utilisez Office 365 pour les entreprises, vous devez créer votre boîte aux lettres partagée dans le centre d’administration Office 365.
-<ul>
-<li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=834766">Créer des boîtes aux lettres partagées dans Office 365</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]
+> Si vous utilisez Office 365 pour les entreprises, vous devez créer votre boîte aux lettres partagée dans le centre d’administration Office 365.
+> <ul>
+> <li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=834766">Créer des boîtes aux lettres partagées dans Office 365</a></p></li></ul>
 
 Si votre organisation utilise un environnement hybride Exchange, vous devez utiliser le Centre d’administration Exchange (CAE) local pour créer et gérer des boîtes aux lettres partagées. Pour en savoir plus sur les boîtes aux lettres partagées, consultez la rubrique [Boîtes aux lettres partagées](shared-mailboxes-exchange-2013-help.md).
 

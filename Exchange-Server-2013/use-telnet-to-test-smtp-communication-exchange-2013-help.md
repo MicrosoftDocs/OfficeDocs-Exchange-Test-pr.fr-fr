@@ -95,26 +95,11 @@ Dans cet exemple, les valeurs suivantes sont utilisées :
 
   - **Corps du message**   Ceci est un message de test
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Les commandes du client Telnet ne tiennent pas compte de la casse. Les verbes de la commande SMTP sont écrits en majuscules par souci de clarté.</p></li>
-<li><p>Vous ne pouvez pas utiliser la touche Retour arrière après vous être connecté au serveur SMTP de destination dans la session Telnet. En cas d'erreur lors de la saisie d'une commande SMTP, vous devez appuyer sur ENTRÉE puis taper la commande à nouveau. Les commandes SMTP inconnues ou les erreurs de syntaxe entraînent l'affichage d'un message d'erreur similaire à ce qui suit :</p>
-<pre><code>500 5.3.3 Unrecognized command</code></pre></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]
+> <ul>
+> <li><p>Les commandes du client Telnet ne tiennent pas compte de la casse. Les verbes de la commande SMTP sont écrits en majuscules par souci de clarté.</p></li>
+> <li><p>Vous ne pouvez pas utiliser la touche Retour arrière après vous être connecté au serveur SMTP de destination dans la session Telnet. En cas d'erreur lors de la saisie d'une commande SMTP, vous devez appuyer sur ENTRÉE puis taper la commande à nouveau. Les commandes SMTP inconnues ou les erreurs de syntaxe entraînent l'affichage d'un message d'erreur similaire à ce qui suit :</p>
+<pre><code>500 5.3.3 Unrecognized command</code></pre></li></ul>
 
 1.  À l'invite de commandes, tapez **telnet**, puis appuyez sur Entrée. Cette commande ouvre la session Telnet.
 

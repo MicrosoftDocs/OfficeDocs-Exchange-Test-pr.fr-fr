@@ -79,18 +79,8 @@ Si vous installez le premier serveur Exchange 2013 de l’organisation et n’a
 
 3.  Lancez le Programme d'installation de Exchange 2013 en double-cliquant sur `Setup.exe`
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si le contrôle d’accès d’utilisateur est activé, vous devez cliquer avec le bouton droit de la souris sur <code>Setup.exe</code> et sélectionner <strong>Exécuter en tant qu’administrateur</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si le contrôle d’accès d’utilisateur est activé, vous devez cliquer avec le bouton droit de la souris sur <code>Setup.exe</code> et sélectionner <strong>Exécuter en tant qu’administrateur</strong>.
 
 
 4.  dans la page **Vérifier les mises à jour ?**, indiquez si vous souhaitez que le Programme d'installation se connecte à Internet et télécharge les mises à jour du produit et de la sécurité pour Exchange 2013. Si vous sélectionnez **Se connecter à Internet et vérifier les mises à jour**, le Programme d'installation téléchargera les mises à jour et les appliquera avant de continuer. Si vous sélectionnez **Ne pas vérifier les mises à jour tout de suite**, vous pouvez télécharger et installer les mises à jour manuellement plus tard. Nous vous recommandons de télécharger et d'installer les mises à jour maintenant. Cliquez sur **Suivant** pour continuer.

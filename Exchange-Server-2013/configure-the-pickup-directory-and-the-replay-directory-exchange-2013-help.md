@@ -80,25 +80,10 @@ Cet exemple apporte les modifications suivantes au répertoire de relecture situ
 
     Set-TransportService Exchange01 -ReplayDirectoryPath "D:\Replay Directory" -PickupDirectoryMaxMessagesPerMinute 200
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Définir le paramètre <em>ReplayDirectoryPath</em> sur la valeur <code>$null</code> désactive le répertoire de relecture.</p></li>
-<li><p>Les répertoires spécifiés par le paramètre <em>PickupDirectoryPath</em> et le paramètre <em>ReplayDirectoryPath</em> ne peuvent pas être identiques.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]
+> <ul>
+> <li><p>Définir le paramètre <em>ReplayDirectoryPath</em> sur la valeur <code>$null</code> désactive le répertoire de relecture.</p></li>
+> <li><p>Les répertoires spécifiés par le paramètre <em>PickupDirectoryPath</em> et le paramètre <em>ReplayDirectoryPath</em> ne peuvent pas être identiques.</p></li></ul>
 
 ## Comment savoir si cela a fonctionné ?
 

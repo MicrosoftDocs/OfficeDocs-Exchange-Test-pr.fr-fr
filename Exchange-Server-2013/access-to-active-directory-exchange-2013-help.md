@@ -87,18 +87,8 @@ Exchange 2013 est une application sensible au site Active Directory qui préfè
 
 Par défaut, lorsqu'un serveur Exchange 2013 démarre, il est lié à un contrôleur de domaine et un serveur de catalogue global sélectionnés de manière aléatoire dans son propre site. Vous pouvez afficher les serveurs de répertoires sélectionnés à l'aide de la cmdlet **Get-ExchangeServer** dans l'environnement de ligne de commande Exchange Management Shell. Vous pouvez également utiliser la cmdlet **Set-ExchangeServer** pour configurer une liste statique de contrôleurs de domaine auxquels un serveur Exchange 2013 doit être lié ou une liste de contrôleurs de domaine à exclure.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il est possible de configurer un contrôleur de domaine Windows Server 2008 en tant que serveur d'annuaire en lecture seule. Cette configuration est utile pour le déploiement d'un contrôleur de domaine ou d'un serveur de catalogue global dans un site distant à des fins d'authentification et d'autorisation, sans que les administrateurs de ce site ne soient autorisés à apporter des modifications à Active Directory. Toutefois, vous ne pouvez pas déployer un serveur Exchange 2013 dans un site ne contenant que des serveurs d'annuaire en lecture seule.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il est possible de configurer un contrôleur de domaine Windows Server 2008 en tant que serveur d'annuaire en lecture seule. Cette configuration est utile pour le déploiement d'un contrôleur de domaine ou d'un serveur de catalogue global dans un site distant à des fins d'authentification et d'autorisation, sans que les administrateurs de ce site ne soient autorisés à apporter des modifications à Active Directory. Toutefois, vous ne pouvez pas déployer un serveur Exchange 2013 dans un site ne contenant que des serveurs d'annuaire en lecture seule.
 
 
 ## Rôle serveur de boîtes aux lettres

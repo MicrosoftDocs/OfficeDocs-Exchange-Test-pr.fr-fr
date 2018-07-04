@@ -21,18 +21,8 @@ Avez-vous besoin d’aide pour effectuer une installation d’Exchange ? Cet ar
 
 Les sections suivantes contiennent des liens vers des informations qui vous expliquent comment planifier puis déployer Microsoft Exchange Server 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous vous conseillons vivement de lire la rubrique <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Notes de publication relatives à Exchange 2013</a> avant de commencer votre déploiement. Les notes de publication contiennent des informations importantes sur les problèmes que vous pourriez rencontrer pendant ou après votre déploiement.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Nous vous conseillons vivement de lire la rubrique <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Notes de publication relatives à Exchange 2013</a> avant de commencer votre déploiement. Les notes de publication contiennent des informations importantes sur les problèmes que vous pourriez rencontrer pendant ou après votre déploiement.
 
 
 **Contenu de cette rubrique**
@@ -49,18 +39,8 @@ Pour plus d'informations
 
 Utilisez les liens suivants pour accéder aux informations qui vous aideront à planifier le déploiement d'Exchange Server 2013 dans votre organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Consultez la section Création d'un environnement de test relative à l'installation d'Exchange 2013 dans un environnement de test, plus loin dans cette rubrique.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Consultez la section Création d'un environnement de test relative à l'installation d'Exchange 2013 dans un environnement de test, plus loin dans cette rubrique.
 
 
   - [Serveurs de boîtes aux lettres et d’accès au client](mailbox-and-client-access-servers-exchange-2013-help.md)  

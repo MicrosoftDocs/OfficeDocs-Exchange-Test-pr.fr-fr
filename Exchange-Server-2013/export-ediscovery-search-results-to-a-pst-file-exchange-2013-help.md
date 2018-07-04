@@ -73,26 +73,11 @@ Vous pouvez utiliser l’outil d’exportation d’eDiscovery dans le Centre d�
     
       - Cochez la case **Inclure les éléments impossibles à rechercher** pour inclure les éléments de boîte aux lettres qu’il n’est pas possible de rechercher (par exemple, les messages avec des pièces jointes dans des types de fichiers qu’Exchange Search ne peut pas indexer). Les éléments impossibles à rechercher sont exportés dans un fichier PST distinct.
         
-        <table>
-        <colgroup>
-        <col style="width: 100%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Inclure les éléments impossibles à rechercher lorsque vous exportez les résultats de la recherche de découverte électronique prend plus de temps lorsque les boîtes aux lettres contiennent un grand nombre d’éléments impossibles à rechercher. Pour réduire le temps nécessaire pour exporter les résultats de la recherche et pour éviter les fichiers d’exportation PST volumineux, tenez compte des recommandations suivantes :
-        <ul>
-        <li><p>Créez plusieurs recherches de découverte électronique qui recherchent chacune un petit nombre de boîtes aux lettres sources.</p></li>
-        <li><p>Si vous exportez tout le contenu de la boîte aux lettres correspondant à une plage de dates précise (mais sans spécifier aucun mot clé dans les critères de recherche), tous les éléments impossibles à rechercher dans cette plage de dates seront automatiquement inclus dans les résultats de la recherche. Par conséquent, n’activez pas la case à cocher <strong>Inclure les éléments qui ne peuvent pas être recherchés</strong>.</p></li>
-        </ul></td>
-        </tr>
-        </tbody>
-        </table>
-
+        > [!IMPORTANT]
+		> Inclure les éléments impossibles à rechercher lorsque vous exportez les résultats de la recherche de découverte électronique prend plus de temps lorsque les boîtes aux lettres contiennent un grand nombre d’éléments impossibles à rechercher. Pour réduire le temps nécessaire pour exporter les résultats de la recherche et pour éviter les fichiers d’exportation PST volumineux, tenez compte des recommandations suivantes :
+        > <ul>
+        > <li><p>Créez plusieurs recherches de découverte électronique qui recherchent chacune un petit nombre de boîtes aux lettres sources.</p></li>
+        > <li><p>Si vous exportez tout le contenu de la boîte aux lettres correspondant à une plage de dates précise (mais sans spécifier aucun mot clé dans les critères de recherche), tous les éléments impossibles à rechercher dans cette plage de dates seront automatiquement inclus dans les résultats de la recherche. Par conséquent, n’activez pas la case à cocher <strong>Inclure les éléments qui ne peuvent pas être recherchés</strong>.</p></li></ul>
 
 4.  Cliquez sur **Démarrer** pour exporter les résultats de recherche vers un fichier PST.
     

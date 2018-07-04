@@ -57,18 +57,8 @@ Comme expliqué précédemment, pour créer des recherches de découverte élect
 
 4.  Dans la page **Boîtes aux lettres**, sélectionnez les boîtes aux lettres dans lesquelles effectuer la recherche. Vous pouvez rechercher dans toutes les boîtes aux lettres ou sélectionner celles qui sont propres à la recherche. Dans Exchange Online, vous pouvez également sélectionner des groupes Office 365 comme source de contenu pour la recherche.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous ne pouvez pas utiliser l’option <strong>Rechercher toutes les boîtes aux lettres</strong> pour bloquer toutes les boîtes aux lettres. Pour créer une archive permanente, vous devez sélectionner <strong>Spécifier les boîtes aux lettres à rechercher</strong>. Pour plus d'informations, consultez la rubrique <a href="create-or-remove-an-in-place-hold-exchange-2013-help.md">Créer ou supprimer une conservation inaltérable</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Vous ne pouvez pas utiliser l’option <strong>Rechercher toutes les boîtes aux lettres</strong> pour bloquer toutes les boîtes aux lettres. Pour créer une archive permanente, vous devez sélectionner <strong>Spécifier les boîtes aux lettres à rechercher</strong>. Pour plus d'informations, consultez la rubrique <a href="create-or-remove-an-in-place-hold-exchange-2013-help.md">Créer ou supprimer une conservation inaltérable</a>.
 
 
 5.  Dans la page **Requête de recherche**, complétez les champs suivants :
@@ -79,19 +69,9 @@ Comme expliqué précédemment, pour créer des recherches de découverte élect
         
         ![Configurer une requête de recherche de découverte électronique](images/Dd298021.a3626569-8700-421e-8b4e-7ec520b28272(EXCHG.150).png "Configurer une requête de recherche de découverte électronique")  
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les champs <strong>De :</strong> et <strong>À/Cc/Cci :</strong> sont connectés par un opérateur <strong>OR</strong> dans la requête de recherche qui est créée lorsque vous exécutez la recherche. Cela signifie que tous les messages envoyés ou reçus par les utilisateurs spécifiés (et correspondant aux autres critères de recherche) sont inclus dans les résultats de la recherche.<br />
-    Les dates sont connectées par un opérateur <strong>AND</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les champs <strong>De :</strong> et <strong>À/Cc/Cci :</strong> sont connectés par un opérateur <strong>OR</strong> dans la requête de recherche qui est créée lorsque vous exécutez la recherche. Cela signifie que tous les messages envoyés ou reçus par les utilisateurs spécifiés (et correspondant aux autres critères de recherche) sont inclus dans les résultats de la recherche.
+    > Les dates sont connectées par un opérateur <strong>AND</strong>.
 
 
 6.  Dans la page **Paramètres du blocage sur place**, vous pouvez cocher la case **Mettre en attente le contenu correspondant à la requête de recherche des boîtes aux lettres sélectionnées** et sélectionnez une des options suivantes pour placer des éléments en blocage local :
@@ -100,18 +80,8 @@ Comme expliqué précédemment, pour créer des recherches de découverte élect
     
       - **Spécifier le nombre de jours pour mettre en attente les articles en fonction de leur date de réception** Utilisez cette option pour bloquer les articles pendant une période donnée. Par exemple, vous pouvez utiliser cette option si votre organisation exige que tous les messages soient conservés pendant au moins sept ans. Vous pouvez utiliser une archive locale *basée sur le temps* parallèlement à une stratégie de rétention pour garantir que les éléments seront supprimés dans sept ans.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Lorsque des boîtes aux lettres ou des articles sont mis en archive permanente à des fins juridiques, il est généralement recommandé de bloquer les articles indéfiniment et de supprimer la suspension lorsque le jugement ou l'enquête est terminé.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Lorsque des boîtes aux lettres ou des articles sont mis en archive permanente à des fins juridiques, il est généralement recommandé de bloquer les articles indéfiniment et de supprimer la suspension lorsque le jugement ou l'enquête est terminé.
 
 
 7.  Cliquez sur **Terminer** pour enregistrer la recherche et renvoyer une estimation de la taille totale et du nombre d’éléments qui seront renvoyés par la recherche d’après les critères que vous spécifiez. Les estimations sont affichées dans le volet d'informations. Cliquez sur **Actualiser**![Icône Actualiser](images/Dd353189.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif "Icône Actualiser") pour mettre à jour les informations affichées dans le volet de détails.
@@ -136,18 +106,8 @@ Cet exemple crée la recherche de découverte électronique locale appelée Disc
 
   - Niveau de journalisation : Complet
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous ne précisez pas d’autres paramètres de recherche lorsque vous effectuez une recherche de découverte électronique locale, tous les éléments dans les boîtes aux lettres sources spécifiées sont renvoyés dans les résultats. Si vous ne précisez pas de boîtes aux lettres à rechercher, la recherche a lieu dans toutes les boîtes aux lettres de votre organisation Exchange ou Exchange Online.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous ne précisez pas d’autres paramètres de recherche lorsque vous effectuez une recherche de découverte électronique locale, tous les éléments dans les boîtes aux lettres sources spécifiées sont renvoyés dans les résultats. Si vous ne précisez pas de boîtes aux lettres à rechercher, la recherche a lieu dans toutes les boîtes aux lettres de votre organisation Exchange ou Exchange Online.
 
 
     New-MailboxSearch "Discovery-CaseId012" -StartDate "01/01/2009" -EndDate "12/31/2011" -SourceMailboxes "DG-Finance" -TargetMailbox "Discovery Search Mailbox" -SearchQuery '"Contoso" AND "Project A"' -MessageTypes Email -IncludeUnsearchableItems -LogLevel Full

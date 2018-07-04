@@ -103,18 +103,8 @@ Cet exemple montre comment créer une demande de certificat Exchange pour un ser
 
 6.  Vérifiez que les domaines inclus sont corrects, puis cliquez sur **Terminer**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous utilisez le CAE pour créer un certificat auto-signé, vous n'êtes invité à activer des services pour le certificat. Une fois que le certificat a été créé, vous pouvez utiliser le CAE ou l'applet de commande <strong>Enable-ExchangeCertificate</strong> dans le Shell pour activer les services Exchange. Pour plus d'informations sur comment assigner un certificat pour les services de messagerie unifiée, consultez la rubrique <a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assigner un certificat pour les services de messagerie unifiée et de routeur d’appels UM</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous utilisez le CAE pour créer un certificat auto-signé, vous n'êtes invité à activer des services pour le certificat. Une fois que le certificat a été créé, vous pouvez utiliser le CAE ou l'applet de commande <strong>Enable-ExchangeCertificate</strong> dans le Shell pour activer les services Exchange. Pour plus d'informations sur comment assigner un certificat pour les services de messagerie unifiée, consultez la rubrique <a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assigner un certificat pour les services de messagerie unifiée et de routeur d’appels UM</a>.
 
 
 ## Utiliser l'environnement de ligne de commande pour créer un certificat auto-signé pour la messagerie unifiée

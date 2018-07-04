@@ -69,19 +69,9 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
         
           - **Supprimer définitivement** Sélectionnez cette option pour supprimer définitivement l’élément de la base de données de boîtes aux lettres.
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>Les boîtes aux lettres ou les éléments soumis à un blocage sur place et une suspension pour litige doivent être conservés et renvoyés dans les recherches de découverte électronique sur place (In-Place eDiscovery). Pour en savoir plus, consultez la rubrique <a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">Conservation inaltérable et conservation pour litige</a>.</td>
-            </tr>
-            </tbody>
-            </table>
-        
+            > [!IMPORTANT]
+			> Les boîtes aux lettres ou les éléments soumis à un blocage sur place et une suspension pour litige doivent être conservés et renvoyés dans les recherches de découverte électronique sur place (In-Place eDiscovery). Pour en savoir plus, consultez la rubrique <a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">Conservation inaltérable et conservation pour litige</a>.
+                    
           - **Déplacer vers l’archive**   Cette action n’est accessible que si vous créez une balise de stratégie par défaut ou une balise personnelle. Sélectionnez cette action pour déplacer des éléments vers l’archivage local de l’utilisateur.
     
       - **Période de rétention** Sélectionnez l’une des options suivantes :

@@ -55,20 +55,11 @@ Cette rubrique présente les étapes d’installation des prérequis des systèm
 
   - Installez les dernières mises à jour de Windows sur votre ordinateur. Pour plus d'informations, consultez la rubrique [Liste de vérification pour la sécurité du pré-déploiement](deployment-security-checklist-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous installez le rôle serveur de boîtes aux lettres et souhaitez que le serveur soit membre d’un groupe de disponibilité de base de données (DAG), vous devez exécuter l’édition Standard ou Datacenter de Windows Server 2012 R2, l’édition Standard ou Datacenter de Windows Server 2012 ou l’édition Enterprise de Windows Server 2008 R2 SP1. L'édition Standard de Windows Server 2008 R2 SP1 ne prend pas en charge les fonctionnalités nécessaires pour les groupes de disponibilité de base de données.<br />
-    Vous ne pouvez pas mettre à niveau Windows quand Exchange est installé sur le serveur.<br />
-    Pour installer la mise à niveau vers Microsoft Unified Communications Managed API (UCMA) 4.0, vous devez d'abord désinstaller les versions antérieures d'UCMA à l'aide de <strong>Ajout/Suppression de programmes</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous installez le rôle serveur de boîtes aux lettres et souhaitez que le serveur soit membre d’un groupe de disponibilité de base de données (DAG), vous devez exécuter l’édition Standard ou Datacenter de Windows Server 2012 R2, l’édition Standard ou Datacenter de Windows Server 2012 ou l’édition Enterprise de Windows Server 2008 R2 SP1. L'édition Standard de Windows Server 2008 R2 SP1 ne prend pas en charge les fonctionnalités nécessaires pour les groupes de disponibilité de base de données.
+    > Vous ne pouvez pas mettre à niveau Windows quand Exchange est installé sur le serveur.
+    > Pour installer la mise à niveau vers Microsoft Unified Communications Managed API (UCMA) 4.0, vous devez d'abord désinstaller les versions antérieures d'UCMA à l'aide de <strong>Ajout/Suppression de programmes</strong>.
+
 
 
 > [!TIP]
@@ -125,18 +116,8 @@ Une fois que vous avez installé les rôles et les fonctions du système d'explo
 
 1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 2013 CU16 et versions ultérieures <strong>nécessitent</strong> .NET Framework 4.6.2. Mettez à niveau vos serveurs vers .NET Framework 4.6.2 avant d’installer Exchange 2013 CU16, ou vous recevrez une erreur. Si .NET Framework 4.5.2 est installé sur vos serveurs Exchange, mettez à niveau vos serveurs Exchange 2013 CU15 avant d’installer .NET Framework 4.6.2.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Exchange 2013 CU16 et versions ultérieures <strong>nécessitent</strong> .NET Framework 4.6.2. Mettez à niveau vos serveurs vers .NET Framework 4.6.2 avant d’installer Exchange 2013 CU16, ou vous recevrez une erreur. Si .NET Framework 4.5.2 est installé sur vos serveurs Exchange, mettez à niveau vos serveurs Exchange 2013 CU15 avant d’installer .NET Framework 4.6.2.
 
 
 2.  [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234) (inclus avec Windows Server 2012 R2)
@@ -159,18 +140,8 @@ Installez la version de Microsoft .NET Framework qui correspond à la version 
 
 1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 2013 CU16 et versions ultérieures <strong>nécessitent</strong> .NET Framework 4.6.2. Mettez à niveau vos serveurs vers .NET Framework 4.6.2 avant d’installer Exchange 2013 CU16, ou vous recevrez une erreur. Si .NET Framework 4.5.2 est installé sur vos serveurs Exchange, mettez à niveau vos serveurs Exchange 2013 CU15 avant d’installer .NET Framework 4.6.2.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Exchange 2013 CU16 et versions ultérieures <strong>nécessitent</strong> .NET Framework 4.6.2. Mettez à niveau vos serveurs vers .NET Framework 4.6.2 avant d’installer Exchange 2013 CU16, ou vous recevrez une erreur. Si .NET Framework 4.5.2 est installé sur vos serveurs Exchange, mettez à niveau vos serveurs Exchange 2013 CU15 avant d’installer .NET Framework 4.6.2.
 
 
 2.  [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234) (inclus avec Windows Server 2012 R2)
@@ -205,18 +176,8 @@ Une fois que vous avez installé les rôles et les fonctions du système d'explo
 
 1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 2013 CU16 et versions ultérieures <strong>nécessitent</strong> .NET Framework 4.6.2. Mettez à niveau vos serveurs vers .NET Framework 4.6.2 avant d’installer Exchange 2013 CU16, ou vous recevrez une erreur. Si .NET Framework 4.5.2 est installé sur vos serveurs Exchange, mettez à niveau vos serveurs Exchange 2013 CU15 avant d’installer .NET Framework 4.6.2.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Exchange 2013 CU16 et versions ultérieures <strong>nécessitent</strong> .NET Framework 4.6.2. Mettez à niveau vos serveurs vers .NET Framework 4.6.2 avant d’installer Exchange 2013 CU16, ou vous recevrez une erreur. Si .NET Framework 4.5.2 est installé sur vos serveurs Exchange, mettez à niveau vos serveurs Exchange 2013 CU15 avant d’installer .NET Framework 4.6.2.
 
 
 2.  [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
@@ -253,18 +214,8 @@ Une fois que vous avez installé les rôles et les fonctions du système d'explo
 
 1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 2013 CU16 et versions ultérieures <strong>nécessitent</strong> .NET Framework 4.6.2. Mettez à niveau vos serveurs vers .NET Framework 4.6.2 avant d’installer Exchange 2013 CU16, ou vous recevrez une erreur. Si .NET Framework 4.5.2 est installé sur vos serveurs Exchange, mettez à niveau vos serveurs Exchange 2013 CU15 avant d’installer .NET Framework 4.6.2.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Exchange 2013 CU16 et versions ultérieures <strong>nécessitent</strong> .NET Framework 4.6.2. Mettez à niveau vos serveurs vers .NET Framework 4.6.2 avant d’installer Exchange 2013 CU16, ou vous recevrez une erreur. Si .NET Framework 4.5.2 est installé sur vos serveurs Exchange, mettez à niveau vos serveurs Exchange 2013 CU15 avant d’installer .NET Framework 4.6.2.
 
 
 2.  [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)

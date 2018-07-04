@@ -168,18 +168,8 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Cet exemple bloque l’accès à la boîte aux lettres d’un serveur d’accès au client Exchange 2010 ou versions ultérieures pour les clients Outlook dont la version est antérieure à la version 12.0.0.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les valeurs utilisées avec le paramètre <em>BlockedClientVersions</em> sont des exemples. Vous pouvez déterminer les versions correctes du logiciel client en analysant les fichiers journaux d’accès au client RPC situés dans <code>%ExchangeInstallPath%Logging\RPC Client Access</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les valeurs utilisées avec le paramètre <em>BlockedClientVersions</em> sont des exemples. Vous pouvez déterminer les versions correctes du logiciel client en analysant les fichiers journaux d’accès au client RPC situés dans <code>%ExchangeInstallPath%Logging\RPC Client Access</code>.
 
 
     Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"

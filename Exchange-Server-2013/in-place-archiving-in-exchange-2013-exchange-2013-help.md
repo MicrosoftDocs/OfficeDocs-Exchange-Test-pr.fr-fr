@@ -263,18 +263,8 @@ Cette section décrit la relation entre les archives locales et d’autres fonct
 
   - **Découverte électronique sur place**   Quand un gestionnaire de découverte effectue une recherche de découverte électronique, la recherche inclut les boîtes aux lettres d'archivage des utilisateurs. Aucune option ne permet d’exclure les boîtes aux lettres d’archivage lors de la création d’une recherche de découverte dans le Centre d'administration Exchange (CAE). Lorsque vous utilisez l’environnement de ligne de commande Exchange Management Shell pour créer une recherche de découverte, vous pouvez exclure l’archive en utilisant le commutateur *DoNotIncludeArchive*. Pour plus d’informations, consultez la rubrique [New-MailboxSearch](https://technet.microsoft.com/fr-fr/library/dd298064\(v=exchg.150\)). Pour en savoir plus, voir [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous ne pouvez pas utiliser la découverte électronique sur place pour effectuer une recherche sur une boîte aux lettres déconnectée.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Vous ne pouvez pas utiliser la découverte électronique sur place pour effectuer une recherche sur une boîte aux lettres déconnectée.
 
 
   - **Blocage sur place et suspension pour litige**   Lorsque vous mettez une boîte aux lettres en blocage sur place ou en suspension pour litige, la suspension s’applique à la boîte aux lettres principale et à la boîte aux lettres d’archivage. Pour en savoir plus sur le blocage sur place et la suspension pour litige, voir [Conservation inaltérable et conservation pour litige](in-place-hold-and-litigation-hold-exchange-2013-help.md).
@@ -291,18 +281,8 @@ Dans Exchange 2013, la création et la gestion des boîtes aux lettres d’arch
 
   - **Déplacement d’une boîte aux lettres d’archivage**   Vous pouvez transférer la boîte aux lettres d’archivage d’un utilisateur vers une autre base de données de boîtes aux lettres sur le même serveur de boîtes aux lettres ou bien sur un autre serveur, indépendamment de la boîte aux lettres principale. Pour déplacer la boîte aux lettres d’archivage d’un utilisateur, vous devez créer une demande de déplacement de boîte aux lettres. Pour plus d’informations, consultez la rubrique [Gestion des déplacements locaux](manage-on-premises-moves-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>La recherche de la boîte aux lettres et des archives d’un utilisateur dans différentes versions d’Exchange Server n’est pas prise en charge.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > La recherche de la boîte aux lettres et des archives d’un utilisateur dans différentes versions d’Exchange Server n’est pas prise en charge.
 
 
   - **Désactivation d’une boîte aux lettres d’archivage**   Il peut être utile de désactiver la boîte aux lettres d’archivage d’un utilisateur pour résoudre des problèmes ou si vous transférez la boîte aux lettres principale vers une version d’Exchange qui ne prend pas en charge l’archivage local. La procédure de désactivation d’une archive est similaire celle utilisée pour une boîte aux lettres principale. Pour plus d’informations, consultez la rubrique [Gestion des archives permanentes dans Exchange 2013](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md). Dans le cas de déploiements locaux, un boîte aux lettres d’archivage désactivée est conservée dans la base de données de boîtes aux lettres jusqu’à ce que la période de rétention de la boîte aux lettres supprimée ait expirée. Durant cette période, vous pouvez reconnecter l’archive à la boite aux lettres d’un utilisateur. À l’issue de la période de rétention de la boîte aux lettres supprimée, la boîte aux lettres d’archivage déconnectée est définitivement supprimée de la base de données de boîtes aux lettres.

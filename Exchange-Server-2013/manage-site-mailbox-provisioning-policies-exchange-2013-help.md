@@ -99,18 +99,8 @@ Cet exemple supprime la stratégie de boîte aux lettres de site par défaut cr�
 
     Remove-SiteMailboxProvisioningPolicy -Identity Default
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez commencer par créer et désigner une autre stratégie par défaut avant de pouvoir supprimer la stratégie <strong>Par défaut</strong>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez commencer par créer et désigner une autre stratégie par défaut avant de pouvoir supprimer la stratégie <strong>Par défaut</strong>.
 
 
 ## Pour plus d'informations

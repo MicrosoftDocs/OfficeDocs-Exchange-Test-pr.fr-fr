@@ -23,18 +23,8 @@ La création d’un répertoire virtuel de carnet d’adresses en mode hors conn
 
 Pour les autres tâches de gestion relatives aux carnets d’adresses en mode hors connexion, voir [Procédures des carnets d’adresses en mode hors connexion](offline-address-book-procedures-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avant de créer un répertoire virtuel de carnet d’adresses en mode hors connexion, assurez-vous que les utilisateurs sont conscients des modifications que vous apportez. Cette procédure peut interrompre le processus de téléchargement du carnet d’adresses en mode hors connexion pour vos utilisateurs.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Avant de créer un répertoire virtuel de carnet d’adresses en mode hors connexion, assurez-vous que les utilisateurs sont conscients des modifications que vous apportez. Cette procédure peut interrompre le processus de téléchargement du carnet d’adresses en mode hors connexion pour vos utilisateurs.
 
 
 ## Ce qu’il faut savoir avant de commencer ?

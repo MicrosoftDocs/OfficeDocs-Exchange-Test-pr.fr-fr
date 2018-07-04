@@ -25,18 +25,8 @@ Une approbation de fédération établit une relation d’approbation entre une 
 
 Pour connaître les autres tâches de gestion relatives à la fédération, consultez la rubrique [Procédures de fédération](federation-procedures-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.
 
 
 ## Ce qu’il faut savoir avant de commencer ?
@@ -75,18 +65,8 @@ Pour connaître les autres tâches de gestion relatives à la fédération, cons
 
 6.  Dans **Sélectionner les domaines acceptés**, sélectionnez **marketing.contoso.com** dans la liste des domaines acceptés, puis cliquez sur **OK** pour ajouter le domaine à l’approbation fédérée.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Une chaîne de vérification de domaine fédéré sera créée pour le domaine <strong>marketing.contoso.com</strong>. Vous devez créer un enregistrement TXT distinct sur votre DNS public pour ce domaine.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Une chaîne de vérification de domaine fédéré sera créée pour le domaine <strong>marketing.contoso.com</strong>. Vous devez créer un enregistrement TXT distinct sur votre DNS public pour ce domaine.
 
 
 7.  Utilisez la chaîne de vérification de domaine créée pour le domaine **marketing.contoso.com** pour créer un enregistrement TXT sur votre serveur DNS public. En fonction de la planification des mises à jour de votre hôte DNS public, la réplication des modifications DNS peut prendre au moins 15 minutes.

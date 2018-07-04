@@ -274,27 +274,12 @@ Pour plus d’informations sur le déploiement d’Exchange dans un environnemen
 
 Le tableau suivant répertorie les systèmes d’exploitation pris en charge pour Exchange 2013.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous n’assurons pas la prise en charge de l’installation d’Exchange 2013 sur un ordinateur qui s’exécute en mode Windows Server Core. L’ordinateur doit exécuter l’installation complète de Windows Server. Pour installer Exchange 2013 sur un ordinateur qui s’exécute en mode Windows Server Core, vous devez convertir le serveur en installation complète de Windows Server en procédant comme suit :
-<ul>
-<li><p><strong>Windows Server 2008 R2</strong>   Réinstallez Windows Server et sélectionnez l’option <strong>Installation complète</strong>.</p></li>
-<li><p><strong>Windows Server 2012 R2</strong> ou <strong>Windows Server 2012</strong>   Convertissez votre serveur en mode Windows Server Core en installation complète en exécutant la commande suivante.</p>
-<pre><code>Install-WindowsFeature Server-Gui-Mgmt-Infra, Server-Gui-Shell -Restart</code></pre></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]
+> Nous n’assurons pas la prise en charge de l’installation d’Exchange 2013 sur un ordinateur qui s’exécute en mode Windows Server Core. L’ordinateur doit exécuter l’installation complète de Windows Server. Pour installer Exchange 2013 sur un ordinateur qui s’exécute en mode Windows Server Core, vous devez convertir le serveur en installation complète de Windows Server en procédant comme suit :
+> <ul>
+> <li><p><strong>Windows Server 2008 R2</strong>   Réinstallez Windows Server et sélectionnez l’option <strong>Installation complète</strong>.</p></li>
+> <li><p><strong>Windows Server 2012 R2</strong> ou <strong>Windows Server 2012</strong>   Convertissez votre serveur en mode Windows Server Core en installation complète en exécutant la commande suivante.</p>
+> <pre><code>Install-WindowsFeature Server-Gui-Mgmt-Infra, Server-Gui-Shell -Restart</code></pre></li></ul>
 
 **Systèmes d’exploitation pris en charge pour Exchange 2013**
 
@@ -409,18 +394,8 @@ Exchange 2013 prend en charge les versions suivantes d’Outlook et d’Entoura
 
 Pour obtenir la liste des versions Outlook prises en charge par Exchange, voir [Mises à jour Outlook](https://go.microsoft.com/fwlink/p/?linkid=513459).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous vous conseillons vivement d’installer les derniers Service Packs et mises à jour disponibles pour que vos utilisateurs bénéficient de la meilleure expérience possible lors de leur connexion à Exchange.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Nous vous conseillons vivement d’installer les derniers Service Packs et mises à jour disponibles pour que vos utilisateurs bénéficient de la meilleure expérience possible lors de leur connexion à Exchange.
 
 
 Les clients Outlook antérieurs à Outlook 2007 ne sont pas pris en charge. Les clients de messagerie sur les systèmes d'exploitation Mac qui nécessitent le protocole DAV, tels qu'Entourage 2008 pour Mac RTM et Entourage 2004, ne sont pas pris en charge.

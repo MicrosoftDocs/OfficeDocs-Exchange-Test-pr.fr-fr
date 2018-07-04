@@ -67,18 +67,8 @@ Cette commande récupère la propriété *RetentionHoldEnabled* de la boîte aux
 
 Cette commande récupère toutes les boîtes aux lettres dans l’organisation Exchange, filtre les boîtes aux lettres dont le blocage de rétention a été activé et en dresse la liste avec la stratégie de rétention appliquée à chacune.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Étant donné que <em>RetentionHoldEnabled</em> n’est pas une propriété filtrable dans Exchange 2013, vous ne pouvez pas utiliser le paramètre <em>Filter</em> avec la cmdlet <strong>Get-Mailbox</strong> pour filtrer les boîtes aux lettres dont le blocage de rétention a été activé côté serveur. Cette commande récupère une liste de toutes les boîtes aux lettres et tous les filtres sur le client exécutant la session de l’environnement de ligne de commande Exchange Management Shell. Dans de grands environnements comportant des milliers de boîtes aux lettres, cette commande peut prendre un certain temps à s’exécuter.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Étant donné que <em>RetentionHoldEnabled</em> n’est pas une propriété filtrable dans Exchange 2013, vous ne pouvez pas utiliser le paramètre <em>Filter</em> avec la cmdlet <strong>Get-Mailbox</strong> pour filtrer les boîtes aux lettres dont le blocage de rétention a été activé côté serveur. Cette commande récupère une liste de toutes les boîtes aux lettres et tous les filtres sur le client exécutant la session de l’environnement de ligne de commande Exchange Management Shell. Dans de grands environnements comportant des milliers de boîtes aux lettres, cette commande peut prendre un certain temps à s’exécuter.
 
 
     Get-Mailbox -ResultSize unlimited | Where-Object {$_.RetentionHoldEnabled -eq $true} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto

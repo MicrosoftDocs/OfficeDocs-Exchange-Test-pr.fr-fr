@@ -42,18 +42,8 @@ Bienvenue dans Microsoft Exchange Server 2013. Vous êtes certainement impatien
     > [!TIP]
     > Avez-vous déjà entendu parler de l’Assistant de déploiement Exchange Server ? Il s’agit d’un outil en ligne gratuit qui vous permet de déployer rapidement Exchange 2013 dans votre organisation en répondant à quelques questions et en créant une liste de contrôle de déploiement personnalisée. Pour en savoir plus, consultez la page <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Assistant de déploiement Exchange Server</a>.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Veillez à lire les <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Notes de publication relatives à Exchange 2013</a> avant de commencer votre déploiement. Les notes de publication contiennent des informations importantes sur les problèmes que vous pourriez rencontrer pendant ou après votre déploiement.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Veillez à lire les <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Notes de publication relatives à Exchange 2013</a> avant de commencer votre déploiement. Les notes de publication contiennent des informations importantes sur les problèmes que vous pourriez rencontrer pendant ou après votre déploiement.
 
 
   - Pour plus d’informations sur la procédure de téléchargement d’Exchange 2013, voir [Mises à jour pour Exchange 2013](updates-for-exchange-2013-exchange-2013-help.md).
@@ -100,21 +90,11 @@ Le contenu de l'Aide d'Exchange 2013 se compose des catégories de niveau supé
 
   - [À propos de la documentation Exchange](about-exchange-documentation-exchange-2013-help.md)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>N'hésitez pas à consulter nos autres rubriques Exchange :<br />
-<a href="https://technet.microsoft.com/fr-fr/library/jj200580(v=exchg.150)">Exchange Online</a><br />
-<a href="https://technet.microsoft.com/fr-fr/library/jj200581(v=exchg.150)">Déploiements hybrides Exchange Server</a><br />
-<a href="https://technet.microsoft.com/fr-fr/library/jj723137(v=exchg.150)">Exchange Online Protection</a></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> N'hésitez pas à consulter nos autres rubriques Exchange :<br />
+> <a href="https://technet.microsoft.com/fr-fr/library/jj200580(v=exchg.150)">Exchange Online</a><br />
+> <a href="https://technet.microsoft.com/fr-fr/library/jj200581(v=exchg.150)">Déploiements hybrides Exchange Server</a><br />
+> <a href="https://technet.microsoft.com/fr-fr/library/jj723137(v=exchg.150)">Exchange Online Protection</a>
 
 
 ## Donnez-nous votre avis

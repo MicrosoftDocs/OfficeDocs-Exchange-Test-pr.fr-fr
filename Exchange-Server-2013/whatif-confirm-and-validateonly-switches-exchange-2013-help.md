@@ -21,18 +21,8 @@ Les administrateurs et les auteurs de scripts expérimentés, de même que les a
 
 Les commutateurs *WhatIf*, *Confirm* et *ValidateOnly* sont particulièrement utiles lorsque vous les utilisez avec des commandes qui modifient les objets retournés à l'aide d'un filtre ou d'une commande **Get** d'un pipeline. Cette rubrique décrit chaque commutateur et fournit également une commande en exemple.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous voulez utiliser les commutateurs <em>WhatIf</em>, <em>Confirm</em> et <em>ValidateOnly</em> avec des commandes dans un script, vous devez ajouter le commutateur approprié à chaque commande dans le script, et non dans la ligne de commande qui appelle le script.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous voulez utiliser les commutateurs <em>WhatIf</em>, <em>Confirm</em> et <em>ValidateOnly</em> avec des commandes dans un script, vous devez ajouter le commutateur approprié à chaque commande dans le script, et non dans la ligne de commande qui appelle le script.
 
 
 > [!NOTE]

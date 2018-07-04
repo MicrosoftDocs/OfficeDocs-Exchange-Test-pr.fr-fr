@@ -81,18 +81,8 @@ Cet exemple permet à la passerelle IP de messagerie unifiée de fonctionner co
 
     Set-UMIPGateway -Identity MyUMIPGateway -Simulator $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il existe une période de latence avant que toutes les modifications que vous apportez à la configuration d'une passerelle IP de messagerie unifiée se répercutent sur tous les serveurs Exchange qui se trouvent dans le même plan de numérotation de messagerie unifiée que la passerelle IP de messagerie unifiée.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il existe une période de latence avant que toutes les modifications que vous apportez à la configuration d'une passerelle IP de messagerie unifiée se répercutent sur tous les serveurs Exchange qui se trouvent dans le même plan de numérotation de messagerie unifiée que la passerelle IP de messagerie unifiée.
 
 
 Cet exemple empêche la passerelle IP de messagerie unifiée nommée `MyUMIPGateway` d'accepter les appels entrants et empêche également les appels sortants, définit une adresse IPv6 et permet à la passerelle IP de messagerie unifiée d'utiliser les adresses IPv4 et IPv6.

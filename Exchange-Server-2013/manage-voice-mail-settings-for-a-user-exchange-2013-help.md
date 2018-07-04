@@ -115,16 +115,6 @@ Cet exemple affiche les propriétés de la boîte aux lettres de messagerie unif
 
     Get-UMMailbox -Identity tonysmith@contoso.com
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Quand vous exécutez Exchange 2007 et Exchange 2013 et que la boîte aux lettres de l'utilisateur est située sur un serveur de boîtes aux lettres Exchange 2007, l'exécution de la cmdlet <strong>Get-UMMailbox</strong> ne fonctionne pas correctement. Pour résoudre ce problème, exécutez la cmdlet <strong>Get-UMMailbox</strong> à partir d'un serveur Exchange 2007 ou d'un ordinateur exécutant les outils d'administration Exchange 2007.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Quand vous exécutez Exchange 2007 et Exchange 2013 et que la boîte aux lettres de l'utilisateur est située sur un serveur de boîtes aux lettres Exchange 2007, l'exécution de la cmdlet <strong>Get-UMMailbox</strong> ne fonctionne pas correctement. Pour résoudre ce problème, exécutez la cmdlet <strong>Get-UMMailbox</strong> à partir d'un serveur Exchange 2007 ou d'un ordinateur exécutant les outils d'administration Exchange 2007.
 

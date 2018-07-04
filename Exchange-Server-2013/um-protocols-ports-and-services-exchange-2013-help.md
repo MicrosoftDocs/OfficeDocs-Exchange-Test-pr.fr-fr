@@ -23,18 +23,8 @@ Microsoft La messagerie unifiée Exchange 2013 nécessite l'utilisation de plus
 
 Exchange 2013 Les fonctionnalités et les services de messagerie unifiée dépendent des ports TCP et UDP statiques et dynamiques pour assurer le bon fonctionnement des serveurs d'accès au client exécutant le service de routeur d'appels de la messagerie unifiée Microsoft Exchange et des serveurs exécutant le service de messagerie unifiée Microsoft Exchange.Quand Exchange 2013 est installé, des règles de pare-feu Windows de trafic entrant statiques sont ajoutées pour Exchange. Si vous modifiez les ports TCP utilisés par les serveurs de boîtes aux lettres et d'accès au client, il sera peut-être nécessaire de reconfigurer les règles de pare-feu Windows pour permettre à la messagerie unifiée de fonctionner correctement.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Sur les serveurs de boîtes aux lettres et d'accès au client Exchange 2013 exécutant des composants et services de messagerie unifiée, le programme d'installation d'Exchange crée des règles de pare-feu de trafic entrant qui autorisent la communication entrante sans restrictions de port TCP. Les règles de trafic entrant suivantes pour les services de messagerie unifiée sont ajoutées :</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Sur les serveurs de boîtes aux lettres et d'accès au client Exchange 2013 exécutant des composants et services de messagerie unifiée, le programme d'installation d'Exchange crée des règles de pare-feu de trafic entrant qui autorisent la communication entrante sans restrictions de port TCP. Les règles de trafic entrant suivantes pour les services de messagerie unifiée sont ajoutées :
 
 
 1.  **SESWorker (GFW) (TCP-Entrée)**

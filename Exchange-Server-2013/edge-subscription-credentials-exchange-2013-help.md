@@ -101,18 +101,8 @@ Le fichier XML d’abonnement Edge contient les données affichées dans le tab
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les informations d’identification du compte ESBRA sont écrites dans le fichier d’abonnement Edge en texte clair. Vous devez protéger ce fichier tout au long du processus d’abonnement. Après l’importation du fichier d’abonnement Edge sur votre organisation Exchange, vous devez immédiatement supprimer le fichier d’abonnement Edge du serveur de transport Edge, du partage réseau que vous avez utilisé pour importer le fichier dans votre organisation Exchange et des supports amovibles.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les informations d’identification du compte ESBRA sont écrites dans le fichier d’abonnement Edge en texte clair. Vous devez protéger ce fichier tout au long du processus d’abonnement. Après l’importation du fichier d’abonnement Edge sur votre organisation Exchange, vous devez immédiatement supprimer le fichier d’abonnement Edge du serveur de transport Edge, du partage réseau que vous avez utilisé pour importer le fichier dans votre organisation Exchange et des supports amovibles.
 
 
 Retour au début

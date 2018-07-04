@@ -21,18 +21,8 @@ Vous pouvez configurer la durée de vie du code confidentiel pour les utilisateu
 
 Plusieurs paramètres relatifs au code confidentiel peuvent être configurés dans une stratégie de boîte aux lettres de messagerie unifiée. Le paramètre de durée de vie du code confidentiel contrôle l'intervalle de temps, en jours, entre la date où les utilisateurs Outlook Voice Access ont modifié leur code confidentiel pour la dernière fois et la date où ils seront obligés de le modifier de nouveau. La plage s'étend de 0 à 999 et la valeur par défaut est de 60 jours. Si vous saisissez la valeur 0, le code confidentiel de l'utilisateur n'a pas de date d'expiration. Nous vous recommandons de ne pas définir ce paramètre à la valeur zéro (0), car vous risquez ainsi de diminuer considérablement la sécurité de votre réseau.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La messagerie unifiée n'informe pas les utilisateurs lorsque leur code confidentiel est sur le point d'expirer.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La messagerie unifiée n'informe pas les utilisateurs lorsque leur code confidentiel est sur le point d'expirer.
 
 
 Pour découvrir d'autres tâches de gestion concernant la sécurité d'Outlook Voice Access par code confidentiel, consultez la rubrique [Procédures de sécurité de code confidentiel](pin-security-procedures-exchange-2013-help.md).

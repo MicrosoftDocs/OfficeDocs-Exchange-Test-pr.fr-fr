@@ -160,38 +160,18 @@ Les champs d'en-tête X décrits dans la liste suivante sont obligatoires pour l
     
         X-Sender: <bob@fabrikam.com> BODY=7bit RET=HDRS ENVID=12345ABCD auth=<someAuth>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Ces paramètres sont des valeurs d'enveloppe de message habituellement générées par le serveur d'envoi. Les fichiers de messages exportés contiennent des paramètres semblables.<br />
-    <code>RET</code> indique si le message entier ou seuls les en-têtes doivent être renvoyés à l'expéditeur en cas de non-remise du message. <code>RET</code> peut avoir la valeur <code>HDRS</code> ou <code>FULL</code>. <code> ENVID</code> est un identificateur d'enveloppe de message. <code>BODY</code> spécifie le codage du texte du message. <code>auth</code> spécifie un mécanisme d'authentification pour le serveur de messagerie, comme décrit dans la spécification RFC 2554.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Ces paramètres sont des valeurs d'enveloppe de message habituellement générées par le serveur d'envoi. Les fichiers de messages exportés contiennent des paramètres semblables.
+    > <code>RET</code> indique si le message entier ou seuls les en-têtes doivent être renvoyés à l'expéditeur en cas de non-remise du message. <code>RET</code> peut avoir la valeur <code>HDRS</code> ou <code>FULL</code>. <code> ENVID</code> est un identificateur d'enveloppe de message. <code>BODY</code> spécifie le codage du texte du message. <code>auth</code> spécifie un mécanisme d'authentification pour le serveur de messagerie, comme décrit dans la spécification RFC 2554.
 
 
   - **X-Receiver**   Cet en-tête X remplace le champ d'en-tête de message `To` obligatoire dans un message SMTP classique. Au moins un champ `X-Receiver` doit contenir une adresse de messagerie. Plusieurs champs d'en-tête `X-Receiver` sont autorisés pour plusieurs destinataires. Le répertoire de relecture ignore les champs d'en-tête de message `To` s'ils sont présents, même si le client de messagerie du destinataire affiche les valeurs des champs d'en-tête de message `To` comme expéditeurs du message. D'autres paramètres facultatifs peuvent figurer dans les champs `X-Receiver`, comme le montre l'exemple suivant.
     
         X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Ces paramètres sont des valeurs d'enveloppe de message habituellement générées par le serveur d'envoi. Les fichiers de messages exportés contiennent des paramètres semblables. Ces paramètres sont liés aux messages de notification d'état de remise (DNS), comme décrit dans la spécification RFC 1891.<br />
-    <code>NOTIFY</code> peut avoir la valeur <code>NEVER</code>, <code>DELAY</code> ou <code>FAILURE</code>. <code>ORcpt</code> préserve le destinataire d'origine du message.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Ces paramètres sont des valeurs d'enveloppe de message habituellement générées par le serveur d'envoi. Les fichiers de messages exportés contiennent des paramètres semblables. Ces paramètres sont liés aux messages de notification d'état de remise (DNS), comme décrit dans la spécification RFC 1891.
+    > <code>NOTIFY</code> peut avoir la valeur <code>NEVER</code>, <code>DELAY</code> ou <code>FAILURE</code>. <code>ORcpt</code> préserve le destinataire d'origine du message.
 
 
 Les champs d'en-tête X décrits dans la liste suivante sont facultatifs pour les fichiers de messages du répertoire de relecture :

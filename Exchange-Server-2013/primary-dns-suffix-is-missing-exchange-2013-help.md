@@ -21,18 +21,8 @@ Le programme d’installation de Microsoft Exchange Server 2013 ne peut pas co
 
 Pour résoudre ce problème, ajoutez un suffixe DNS principal à l’ordinateur en suivant la procédure ci-dessous, puis réexécutez le programme d’installation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La modification du nom d’ordinateur ou du suffixe DNS principal après l’installation d’Exchange 2013 n’est pas prise en charge.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La modification du nom d’ordinateur ou du suffixe DNS principal après l’installation d’Exchange 2013 n’est pas prise en charge.
 
 
 1.  Ouvrez une session sur l’ordinateur où vous souhaitez installer le rôle de transport Edge en tant qu’utilisateur membre du groupe Administrateurs local.

@@ -41,18 +41,8 @@ La messagerie unifiée transfère les appels de télécopie entrants à une solu
 
 Avant de configurer la télécopie pour votre organisation locale ou hybride, vous devez déployer des serveurs d'accès au client et de boîtes aux lettres, puis configurer vos passerelles VoIP pour autoriser la télécopie. Pour plus d'informations sur le déploiement de la messagerie unifiée, consultez la rubrique [Déploiement de la messagerie unifiée Exchange 2013](deploy-exchange-2013-um-exchange-2013-help.md). Pour plus de détails sur le déploiement de passerelles VoIP et de PBX, consultez la rubrique [Connecter la messagerie unifiée pour votre système téléphonique](connect-um-to-your-telephone-system-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L'envoi et la réception de télécopies à l'aide de T.38 ou G.711 ne sont pas pris en charge dans un environnement où la messagerie unifiée et MicrosoftOffice Communications Server 2007 R2 ou Microsoft Lync Server sont intégrés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L'envoi et la réception de télécopies à l'aide de T.38 ou G.711 ne sont pas pris en charge dans un environnement où la messagerie unifiée et MicrosoftOffice Communications Server 2007 R2 ou Microsoft Lync Server sont intégrés.
 
 
 ## Étape 2 : Configuration des serveurs de partenaire de télécopie

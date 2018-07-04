@@ -51,18 +51,8 @@ Lorsque vous intégrez un réseau téléphonique à la messagerie unifiée, un o
 
 La messagerie unifiée exige de créer au moins un plan de numérotation de messagerie unifiée. Quand vous créez un ou plusieurs plans de numérotation, tous les serveurs Exchange de votre organisation répondent aux appels entrants. Vous devez également disposer d’une ou plusieurs passerelles IP de messagerie unifiée associées au plan de numérotation. Dans les déploiements locaux et hybrides, après avoir installé vos serveurs Exchange et associé une passerelle IP de messagerie unifiée, tous les serveurs Exchange répondent aux appels entrants pour tous les plans de numérotation. Cependant, pour les déploiements locaux et hybrides, lorsque vous intégrez Exchange et Lync Server, vous devez créer des plans de numérotation URI SIP.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous créez un plan de numérotation de messagerie unifiée, une stratégie de boîte aux lettres de messagerie unifiée par défaut est également créée. La stratégie de boîte aux lettres de messagerie unifiée est nommée Stratégie par défaut &lt;<em>Dial Plan Name</em>&gt;. Cette stratégie de boîte aux lettres de messagerie unifiée peut être supprimée ou configurée différemment.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous créez un plan de numérotation de messagerie unifiée, une stratégie de boîte aux lettres de messagerie unifiée par défaut est également créée. La stratégie de boîte aux lettres de messagerie unifiée est nommée Stratégie par défaut &lt;<em>Dial Plan Name</em>&gt;. Cette stratégie de boîte aux lettres de messagerie unifiée peut être supprimée ou configurée différemment.
 
 
 Lorsque vous créez la première passerelle IP de messagerie unifiée et que vous spécifiez un plan de numérotation de messagerie unifiée au moment où vous la créez, un groupe de recherche de messagerie unifiée par défaut est également créé. La création de ces composants permet aux serveurs Exchange de recevoir les appels d’une passerelle VoIP, d’un PBX IP ou d’un SBC, puis de traiter les appels entrants des utilisateurs associés au plan de numérotation de messagerie unifiée. Dans les déploiements locaux ou hybrides, quand un appel parvient à la passerelle VoIP, au PBX IP ou au SBC, il transfère l’appel à un serveur d’accès au client. Le serveur d’accès au client transfère ensuite l’appel à un serveur de boîte aux lettres et ce dernier essaie d’associer le numéro de poste de l’utilisateur au plan de numérotation de messagerie unifiée correspondant.

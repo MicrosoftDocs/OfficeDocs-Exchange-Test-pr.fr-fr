@@ -37,19 +37,9 @@ Pour afficher le contrôleur de schéma actuel
 
 1.  À l’invite de commandes, tapez **regsvr32 schmmgmt.dll**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>RegSvr32</strong> est enregistré lorsque la boîte de dialogue suivante s’affiche :<br />
-    DllRegisterServer in schmmgmt.dll succeeded.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > <strong>RegSvr32</strong> est enregistré lorsque la boîte de dialogue suivante s’affiche :
+    > DllRegisterServer in schmmgmt.dll succeeded.
 
 
 2.  Pour ouvrir une nouvelle console de gestion, cliquez sur **Démarrer** et sur **Exécuter**, puis tapez **mmc**.

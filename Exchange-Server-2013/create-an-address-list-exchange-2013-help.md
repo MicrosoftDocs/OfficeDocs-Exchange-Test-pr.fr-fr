@@ -45,18 +45,8 @@ Pour les autres tâches de gestion relatives aux listes d’adresses, voir [Proc
 
 3.  Par défaut, Exchange crée des listes d'adresses qui contiennent tous les membres de votre organisation. Pour créer une liste d'adresses personnalisée unique, cliquez sur **Ajouter une règle**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous n'ajoutez aucune règle, vous allez créer une liste d'adresses redondante par rapport à l'une des listes d'adresses par défaut.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous n'ajoutez aucune règle, vous allez créer une liste d'adresses redondante par rapport à l'une des listes d'adresses par défaut.
 
 
 4.  Dans la liste, sélectionnez une option de filtrage (par exemple, **Attribut personnalisé 1**).

@@ -25,18 +25,8 @@ Une approbation de fédération établit une relation d’approbation entre une 
 
 Pour les autres tâches de gestion relatives à la fédération, voir [Procédures de fédération](federation-procedures-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.
 
 
 ## Ce qu’il faut savoir avant de commencer ?
@@ -99,18 +89,8 @@ Pour les autres tâches de gestion relatives à la fédération, voir [Procédur
 
 7.  Prenez note de la preuve du domaine fédéré qui est générée pour le domaine partagé principal. Cette chaîne vous permet de créer un enregistrement TXT sur votre serveur DNS public.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>La preuve du domaine fédéré est une chaîne de caractères alphanumériques. Pour éviter les erreurs d’entrée, nous vous recommandons de copier la chaîne à partir de l’estimation à l’achèvement, collez-le dans un éditeur de texte tel que le bloc-notes. Vous pouvez copier à partir de l’éditeur de texte dans le Presse-papiers et puis la coller dans le champ de <strong>texte</strong> lors de la création de l’enregistrement TXT. Si l’enregistrement TXT est créé à l’aide d’incorrecte fédéré de chaîne de la preuve du domaine, le système d’authentification de Azure AD ne sera pas en mesure de vérifier la preuve de propriété du domaine, et vous ne pourrez pas les ajouter à l’identificateur d’organisation fédérée.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > La preuve du domaine fédéré est une chaîne de caractères alphanumériques. Pour éviter les erreurs d’entrée, nous vous recommandons de copier la chaîne à partir de l’estimation à l’achèvement, collez-le dans un éditeur de texte tel que le bloc-notes. Vous pouvez copier à partir de l’éditeur de texte dans le Presse-papiers et puis la coller dans le champ de <strong>texte</strong> lors de la création de l’enregistrement TXT. Si l’enregistrement TXT est créé à l’aide d’incorrecte fédéré de chaîne de la preuve du domaine, le système d’authentification de Azure AD ne sera pas en mesure de vérifier la preuve de propriété du domaine, et vous ne pourrez pas les ajouter à l’identificateur d’organisation fédérée.
 
 
 8.  Dans l' **étape 2**, cliquez sur **Add**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour ajouter d’autres domaines de l’approbation fédérée des adresses e-mail qui sera utilisé par les utilisateurs de votre organisation qui nécessitent des fonctionnalités de partage fédérées. Par exemple, si vous avez des utilisateurs qui utilisent un sous-domaine dans leur adresse de messagerie par exemple ventes.contoso.com, vous ajoutez le domaine sales.contoso.com à l’approbation de fédération.

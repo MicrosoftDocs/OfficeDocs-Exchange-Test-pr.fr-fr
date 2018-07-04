@@ -133,18 +133,8 @@ Dans toute conception AD FS, divers certificats doivent être utilisés pour s�
 
 Bien que les services AD FS ne nécessitent pas de certificats émis par une autorité de certification, le certificat SSL (qui est également utilisé par défaut comme certificat de communications de service) doit être approuvé par les clients AD FS. Nous vous recommandons de ne pas utiliser de certificats auto-signés. Les serveurs de fédération utilisent un certificat SSL pour sécuriser le trafic de services web pour la communication SSL avec les clients web et les proxys de serveur de fédération. Étant donné que le certificat SSL doit être approuvé par les ordinateurs clients, nous vous recommandons d’utiliser un certificat signé par une autorité de certification approuvée. Tous les certificats que vous sélectionnez doivent posséder une clé privée correspondante. Après avoir reçu un certificat d’une autorité de certification (d’entreprise ou publique), assurez-vous que tous les certificats sont importés dans le magasin Autorités de certification racine de confiance sur tous les serveurs. Vous pouvez importer des certificats dans le magasin avec le composant logiciel enfichable MMC **Certificats** ou distribuer les certificats à l’aide des services de certificats Active Directory. Si le certificat que vous avez importé expire, vous devez importer manuellement un autre certificat valide.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous utilisez le certificat de signature de jetons auto-signé d’AD FS, vous devez l’importer dans le magasin Autorités de certification racine sur tous vos serveurs Exchange 2013. Si le certificat de signature de jetons auto-signé n’est pas utilisé et que le proxy d’application web est déployé, vous devez mettre à jour la clé publique dans la configuration du proxy d’application web et toutes les approbations de partie de confiance AD FS.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous utilisez le certificat de signature de jetons auto-signé d’AD FS, vous devez l’importer dans le magasin Autorités de certification racine sur tous vos serveurs Exchange 2013. Si le certificat de signature de jetons auto-signé n’est pas utilisé et que le proxy d’application web est déployé, vous devez mettre à jour la clé publique dans la configuration du proxy d’application web et toutes les approbations de partie de confiance AD FS.
 
 
 Lorsque vous configurez Exchange 2013 SP1, AD FS et le proxy d’application web, suivez ces recommandations de certificat :

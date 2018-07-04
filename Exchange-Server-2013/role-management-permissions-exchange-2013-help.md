@@ -85,18 +85,8 @@ Vous pouvez utiliser les fonctionnalités du tableau ci-après pour gérer les g
 <tr class="odd">
 <td><p>Autorisations fractionnées Active Directory</p></td>
 <td><p><a href="organization-management-exchange-2013-help.md">Gestion de l’organisation</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour exécuter la commande <code>setup.exe</code> à l’aide des paramètres <em>PrepareAD</em> and <em>ActiveDirectorySplitPermissions</em>, le compte doit être membre des groupes Administrateurs du schéma et Administrateurs d’entreprise.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour exécuter la commande <code>setup.exe</code> à l’aide des paramètres <em>PrepareAD</em> and <em>ActiveDirectorySplitPermissions</em>, le compte doit être membre des groupes Administrateurs du schéma et Administrateurs d’entreprise.
 
 </td>
 </tr>

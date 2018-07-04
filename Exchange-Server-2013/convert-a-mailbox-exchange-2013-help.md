@@ -33,18 +33,8 @@ Voici les conversions de boîtes aux lettres qui sont possibles :
 
 Si votre organisation utilise un environnement Exchange hybride, vous devez gérer vos boîtes aux lettres à l’aide des outils locaux de gestion Exchange. Pour convertir une boîte aux lettres dans un environnement hybride, vous devrez peut-être déplacer la boîte aux lettres vers l’instance Exchange locale, convertir le type de boîte aux lettres, puis la redéplacer vers Office 365.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous convertissez une boîte aux lettres d’utilisateur en boîte aux lettres partagée, vous devez soit supprimer les appareils mobiles de la boîte aux lettres avant la conversion, soit bloquer l’accès mobile à la boîte aux lettres après la conversion. En effet, une fois la boîte aux lettres convertie en boîte aux lettres partagée, les fonctionnalités mobiles ne fonctionnent plus correctement. Pour savoir comment bloquer l’accès mobile, consultez l’article <a href="https://go.microsoft.com/fwlink/p/?linkid=847873">Supprimer un ancien employé d’Office 365</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous convertissez une boîte aux lettres d’utilisateur en boîte aux lettres partagée, vous devez soit supprimer les appareils mobiles de la boîte aux lettres avant la conversion, soit bloquer l’accès mobile à la boîte aux lettres après la conversion. En effet, une fois la boîte aux lettres convertie en boîte aux lettres partagée, les fonctionnalités mobiles ne fonctionnent plus correctement. Pour savoir comment bloquer l’accès mobile, consultez l’article <a href="https://go.microsoft.com/fwlink/p/?linkid=847873">Supprimer un ancien employé d’Office 365</a>.
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour convertir une boîte aux lettres

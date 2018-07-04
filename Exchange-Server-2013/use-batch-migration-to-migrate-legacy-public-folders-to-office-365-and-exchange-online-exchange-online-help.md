@@ -212,18 +212,8 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
     
     Une demande de migration existante peut être de deux types : migration par lots ou en série. Les commandes permettant de détecter les demandes pour chaque type et de supprimer des demandes de chaque type sont les suivantes :
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Avant de supprimer une demande de migration, il est important de comprendre la raison de son existence. L’exécution des commandes suivantes déterminera le moment de la création de la demande précédente et vous permettra de diagnostiquer les problèmes qui ont pu se produire. Pour déterminer la raison du changement, il se peut que vous deviez communiquer avec d’autres administrateurs de votre organisation.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Avant de supprimer une demande de migration, il est important de comprendre la raison de son existence. L’exécution des commandes suivantes déterminera le moment de la création de la demande précédente et vous permettra de diagnostiquer les problèmes qui ont pu se produire. Pour déterminer la raison du changement, il se peut que vous deviez communiquer avec d’autres administrateurs de votre organisation.
     
     L’exemple suivant permet de détecter les demandes de migration en série existantes.
     
@@ -243,18 +233,8 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
 
 2.  Assurez-vous qu’il n’existe aucun dossier public ni aucune boîte aux lettres de dossiers publics dans Office 365.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous voyez des dossiers publics dans Office 365 ou Exchange Online, il est important de déterminer la raison de leur présence et la personne qui, au sein de votre organisation, a commencé à créer une hiérarchie de dossiers publics avant de supprimer les dossiers publics et boîtes aux lettres de dossiers publics.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous voyez des dossiers publics dans Office 365 ou Exchange Online, il est important de déterminer la raison de leur présence et la personne qui, au sein de votre organisation, a commencé à créer une hiérarchie de dossiers publics avant de supprimer les dossiers publics et boîtes aux lettres de dossiers publics.
     
     1.  Dans Office 365 ou Exchange Online PowerShell, pour voir s’il existe des boîtes aux lettres de dossiers publics, exécutez la commande suivante.
         
@@ -315,18 +295,8 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
     
         .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le fichier de mappage du dossier public à la boîte aux lettres ne doit pas dépasser 1 000 lignes. Si ce fichier dépasse 1 000 lignes, votre structure de dossiers publics doit être simplifiée. Il est déconseillé d’utiliser un fichier de plus de 1 000 lignes sous peine de provoquer des erreurs de migration.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le fichier de mappage du dossier public à la boîte aux lettres ne doit pas dépasser 1 000 lignes. Si ce fichier dépasse 1 000 lignes, votre structure de dossiers publics doit être simplifiée. Il est déconseillé d’utiliser un fichier de plus de 1 000 lignes sous peine de provoquer des erreurs de migration.
     
       - Avant d’exécuter le script, utilisez la cmdlet suivante pour vérifier les limites du dossier public actuel de votre locataire Exchange Online. Ensuite, notez les valeurs de quota à jour pour les dossiers publics. `Get-OrganizationConfig | fl *quota*`
         
@@ -528,18 +498,8 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
 
 Une fois la migration terminée, après avoir vérifié que vos dossiers publics Exchange Online fonctionnent comme prévu, vous devez supprimer les bases de données de dossiers publics sur les serveurs Exchange hérités.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans la mesure où toutes vos boîtes aux lettres ont été migrées vers Office 365 avant la migration du dossier public, nous vous recommandons vivement d’acheminer le trafic via Office 365 (flux de messagerie décentralisé) à la place du flux de messagerie centralisé via votre environnement local. Si vous choisissez de conserver le flux de messagerie centralisé, cela peut entraîner des problèmes de remise à vos dossiers publics, étant donné que vous avez supprimé les bases de données de boîtes aux lettres de dossier public de votre organisation locale.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans la mesure où toutes vos boîtes aux lettres ont été migrées vers Office 365 avant la migration du dossier public, nous vous recommandons vivement d’acheminer le trafic via Office 365 (flux de messagerie décentralisé) à la place du flux de messagerie centralisé via votre environnement local. Si vous choisissez de conserver le flux de messagerie centralisé, cela peut entraîner des problèmes de remise à vos dossiers publics, étant donné que vous avez supprimé les bases de données de boîtes aux lettres de dossier public de votre organisation locale.
 
 
   - Pour plus d’informations sur la suppression des bases de données de dossiers publics des serveurs Exchange 2007, consultez la rubrique [Suppression de bases de données de dossiers publics](https://go.microsoft.com/fwlink/?linkid=123678).

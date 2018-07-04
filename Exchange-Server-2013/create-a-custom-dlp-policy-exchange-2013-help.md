@@ -61,18 +61,8 @@ Pour découvrir d'autres tâches de gestion liées à la création d'une straté
 
 2.  Cliquez sur la flèche en regard de l'icône **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") et sélectionnez **Nouvelle stratégie personnalisée**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous cliquez sur l'icône <strong>Ajouter</strong><img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="Icône Ajouter" alt="Icône Ajouter" /> au lieu de cliquer sur la flèche, vous créerez une stratégie basée sur un modèle. Pour plus d'informations sur l'utilisation des modèles, consultez la rubrique <a href="how-to-new-dlp-data-loss-prevention-policy-template.md">Création d'une stratégie DLP à partir d'un modèle</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous cliquez sur l'icône <strong>Ajouter</strong><img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="Icône Ajouter" alt="Icône Ajouter" /> au lieu de cliquer sur la flèche, vous créerez une stratégie basée sur un modèle. Pour plus d'informations sur l'utilisation des modèles, consultez la rubrique <a href="how-to-new-dlp-data-loss-prevention-policy-template.md">Création d'une stratégie DLP à partir d'un modèle</a>.
 
 
 3.  Dans la page **Nouvelle stratégie personnalisée**, complétez les champs suivants :

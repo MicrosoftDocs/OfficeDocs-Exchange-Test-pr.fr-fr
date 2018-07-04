@@ -187,18 +187,8 @@ Exécutez la commande suivante dans **Windows PowerShell** :
 
 Pour voir les modifications, vous devez attendre que la synchronisation ActiveDirectory soit terminée. Ce processus peut prendre jusqu’à 3 heures. Si vous ne souhaitez pas attendre les synchronisations récurrentes qui se produisent toutes les trois heures, vous pouvez forcer la synchronisation d’annuaire à tout moment. Pour obtenir des instructions détaillées permettant de forcer la synchronisation d’annuaire, consultez la rubrique [Synchroniser vos annuaires](http://technet.microsoft.com/fr-fr/library/jj151771.aspx). Office 365 sélectionne de manière aléatoire l’une des boîtes aux lettres de dossiers publics fournies dans cette commande.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Un utilisateur Office 365 qui n’est pas représenté par un objet MailUser local (propre à la hiérarchie de dossier public cible) ne peut pas accéder aux dossiers publics hérités ou Exchange 2013 locaux. Pour obtenir une solution, consultez l’article de la base de connaissances sur les <a href="https://go.microsoft.com/fwlink/p/?linkid=699451">utilisateurs Exchange Online ne pouvant pas accéder aux dossiers publics locaux hérités</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Un utilisateur Office 365 qui n’est pas représenté par un objet MailUser local (propre à la hiérarchie de dossier public cible) ne peut pas accéder aux dossiers publics hérités ou Exchange 2013 locaux. Pour obtenir une solution, consultez l’article de la base de connaissances sur les <a href="https://go.microsoft.com/fwlink/p/?linkid=699451">utilisateurs Exchange Online ne pouvant pas accéder aux dossiers publics locaux hérités</a>.
 
 
 ## Comment savoir si cela a fonctionné ?

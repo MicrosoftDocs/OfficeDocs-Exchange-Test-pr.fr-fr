@@ -126,18 +126,8 @@ Lorsqu’une notification est envoyée au destinataire, la ligne d’objet est l
 
   - La deuxième règle bloque le message et envoie un message de notification à l’expéditeur à l’aide du nouvel objet du message d’origine.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les deux règles doivent avoir des conditions identiques. Les règles sont traitées dans l’ordre, afin que la première règle ajoute le mot « non remis » et que la deuxième bloque le message et informe le destinataire.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les deux règles doivent avoir des conditions identiques. Les règles sont traitées dans l’ordre, afin que la première règle ajoute le mot « non remis » et que la deuxième bloque le message et informe le destinataire.
 
 
 Voici ce que la première règle donnera si vous souhaitez ajouter « non remis » à l’objet :

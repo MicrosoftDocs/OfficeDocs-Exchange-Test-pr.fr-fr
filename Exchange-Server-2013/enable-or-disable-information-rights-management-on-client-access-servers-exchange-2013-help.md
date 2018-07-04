@@ -25,18 +25,8 @@ Lorsque vous activez la gestion des droits relatifs à l’information (IRM) sur
 
 Lorsque la gestion des droits relatifs à l’information (IRM) est activée sur les serveurs d’accès au client, les utilisateurs Outlook Web App peuvent protéger des messages par IRM en appliquant un modèle [Vue d'ensemble des services AD RMS](https://technet.microsoft.com/fr-fr/library/hh831364.aspx) créé sur votre cluster AD RMS. Les utilisateurs Outlook Web App peuvent aussi afficher les messages protégés par IRM et les pièces jointes prises en charge. Avant d’activer l’IRM sur les serveurs d’accès au client, vous devez ajouter la boîte aux lettres de fédération au groupe de super utilisateurs sur le cluster AD RMS.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une licence d’utilisation propriétaire est accordée aux membres du groupe de super utilisateurs lorsque ces derniers en font la demande à partir du cluster AD RMS. Ceci leur permet de déchiffrer tout le contenu protégé par les services RMS dans ce cluster.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Une licence d’utilisation propriétaire est accordée aux membres du groupe de super utilisateurs lorsque ces derniers en font la demande à partir du cluster AD RMS. Ceci leur permet de déchiffrer tout le contenu protégé par les services RMS dans ce cluster.
 
 
 Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives à IRM, consultez [Procédures de gestion des droits relatifs à l’information](information-rights-management-procedures-exchange-2013-help.md).

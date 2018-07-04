@@ -43,18 +43,8 @@ Activation ou désactivation de la journalisation des bases de données par boî
 
   - Une boîte aux lettres de journalisation a été créée, ou une boîte aux lettres existante peut être utilisée comme boîte aux lettres de journalisation. Vous ne pouvez pas désigner une boîte aux lettres Exchange Online comme boîte aux lettres de journalisation. Vous pouvez fournir des états du journal à un système d’archivage local ou à un service d’archivage tiers. Si vous exécutez un déploiement hybride avec vos boîtes aux lettres partagées entre les serveurs locaux et Exchange Online, vous pouvez désigner une boîte aux lettres locale comme boîte aux lettres de journalisation de vos boîtes aux lettres Exchange Online et locales.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous avez configuré une règle de journalisation dans Exchange Online pour envoyer les états de journal à une boîte aux lettres de journalisation qui n’existe pas ou qui constitue une destination non valide, l’état de journal reste dans la file d’attente de transport sur les serveurs du centre de données Microsoft. Si cela se produit, le personnel du centre de données Microsoft tentera de contacter votre organisation et vous demandera de résoudre le problème afin que les états de journal puissent être remis à une boîte aux lettres de journalisation. Si vous n’avez pas résolu le problème deux jours après avoir été contacté, Microsoft désactivera la règle de journalisation problématique.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous avez configuré une règle de journalisation dans Exchange Online pour envoyer les états de journal à une boîte aux lettres de journalisation qui n’existe pas ou qui constitue une destination non valide, l’état de journal reste dans la file d’attente de transport sur les serveurs du centre de données Microsoft. Si cela se produit, le personnel du centre de données Microsoft tentera de contacter votre organisation et vous demandera de résoudre le problème afin que les états de journal puissent être remis à une boîte aux lettres de journalisation. Si vous n’avez pas résolu le problème deux jours après avoir été contacté, Microsoft désactivera la règle de journalisation problématique.
 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
@@ -149,18 +139,8 @@ Revenir au début
 
 ## Activation ou désactivation d’une règle de journal
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous désactivez une règle de journal, l’agent de journalisation s’arrêtera de journaliser les messages visés par cette règle. Si une règle de journal est désactivée, tous les messages qui auraient été normalement journalisés par la règle ne sont pas journalisés. Assurez-vous que vous ne compromettez pas les exigences réglementaires ou de conformité de votre organisation en désactivant une règle de journalisation.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous désactivez une règle de journal, l’agent de journalisation s’arrêtera de journaliser les messages visés par cette règle. Si une règle de journal est désactivée, tous les messages qui auraient été normalement journalisés par la règle ne sont pas journalisés. Assurez-vous que vous ne compromettez pas les exigences réglementaires ou de conformité de votre organisation en désactivant une règle de journalisation.
 
 
 ## Utilisation du Centre d’administration Exchange pour activer ou désactiver une règle de journal

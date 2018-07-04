@@ -31,18 +31,8 @@ Vous devrez éventuellement configurer le numéro du port d'écoute TCP sur 5061
 
 Pour utiliser Mutual TLS entre une passerelle IP de messagerie unifiée et un plan de numérotation en mode Sécurisé SIP ou Sécurisé, lors de la création de la passerelle IP de messagerie unifiée, vous devez la configurer avec un nom de domaine complet, puis utiliser l'environnement de ligne de commande Exchange Management Shell pour configurer la passerelle IP de messagerie unifiée afin qu'elle écoute sur le port TCP 5061. Vous devez également vérifier que l'ensemble des passerelles VoIP, PBX compatibles SIP, PBX IP et SBC ont été configurés pour écouter les requêtes Mutual TLS sur le port 5061.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous créez une passerelle IP de messagerie unifiée à l'aide d'un nom de domaine complet, vous devez créer les enregistrements d'hôte (A) appropriés dans votre zone de recherche directe de DNS. Si vous créez une passerelle IP de messagerie unifiée à l'aide d'un nom de domaine complet et que la configuration DNS de la passerelle IP de messagerie unifiée est modifiée, vous devez désactiver puis réactiver la passerelle IP de messagerie unifiée pour garantir que ses informations de configuration soient correctement mises à jour.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous créez une passerelle IP de messagerie unifiée à l'aide d'un nom de domaine complet, vous devez créer les enregistrements d'hôte (A) appropriés dans votre zone de recherche directe de DNS. Si vous créez une passerelle IP de messagerie unifiée à l'aide d'un nom de domaine complet et que la configuration DNS de la passerelle IP de messagerie unifiée est modifiée, vous devez désactiver puis réactiver la passerelle IP de messagerie unifiée pour garantir que ses informations de configuration soient correctement mises à jour.
 
 
 Pour les autres tâches de gestion relatives aux passerelles IP de messagerie unifiée, consultez la rubrique [Procédures de passerelle IP de messagerie unifiée](um-ip-gateway-procedures-exchange-2013-help.md).

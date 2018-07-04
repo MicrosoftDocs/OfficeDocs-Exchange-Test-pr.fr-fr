@@ -57,18 +57,8 @@ Après avoir créé une recherche de découverte électronique locale, vous pouv
     
       - Dans la page **Boîtes aux lettres**, modifiez les boîtes aux lettres à rechercher. Vous pouvez rechercher dans toutes les boîtes aux lettres ou sélectionner celles qui sont spécifiques à la recherche.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Vous ne pouvez pas utiliser l’option <strong>Rechercher toutes les boîtes aux lettres</strong> pour mettre en attente toutes les boîtes aux lettres des serveurs de messagerie Exchange 2013. Pour créer une archive permanente, vous devez sélectionner <strong>Spécifier les boîtes aux lettres à rechercher</strong>. Pour plus d'informations, consultez la rubrique <a href="create-or-remove-an-in-place-hold-exchange-2013-help.md">Créer ou supprimer une conservation inaltérable</a>.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Vous ne pouvez pas utiliser l’option <strong>Rechercher toutes les boîtes aux lettres</strong> pour mettre en attente toutes les boîtes aux lettres des serveurs de messagerie Exchange 2013. Pour créer une archive permanente, vous devez sélectionner <strong>Spécifier les boîtes aux lettres à rechercher</strong>. Pour plus d'informations, consultez la rubrique <a href="create-or-remove-an-in-place-hold-exchange-2013-help.md">Créer ou supprimer une conservation inaltérable</a>.
     
       - Dans la page **Requête de recherche**, modifiez les champs suivants :
         
@@ -112,28 +102,13 @@ Pour vérifier que vous avez correctement modifié une recherche de découverte 
 
   - Exemples
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous utilisez <strong>Get-MailboxSearch</strong> dans Exchange Online pour récupérer des informations sur une recherche de découverte électronique, vous devez spécifier le nom d’une recherche pour renvoyer la liste complète des propriétés de recherche ; par exemple, <code>Get-MailboxSearch &quot;Contoso Legal Case&quot;</code>. Si vous exécutez la cmdlet <strong>Get-MailboxSearch</strong> sans utiliser les paramètres, les propriétés suivantes ne sont pas renvoyées :
-<ul>
-<li><p>SourceMailboxes</p></li>
-<li><p>Sources</p></li>
-<li><p>SearchQuery</p></li>
-<li><p>ResultsLink</p></li>
-<li><p>PreviewResultsLink</p></li>
-<li><p>Erreurs</p></li>
-</ul>
-Ceci dû au fait que de nombreuses ressources sont nécessaires pour renvoyer ces propriétés pour toutes les recherches de découverte électronique dans votre organisation.</td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]
+> Si vous utilisez <strong>Get-MailboxSearch</strong> dans Exchange Online pour récupérer des informations sur une recherche de découverte électronique, vous devez spécifier le nom d’une recherche pour renvoyer la liste complète des propriétés de recherche ; par exemple, <code>Get-MailboxSearch &quot;Contoso Legal Case&quot;</code>. Si vous exécutez la cmdlet <strong>Get-MailboxSearch</strong> sans utiliser les paramètres, les propriétés suivantes ne sont pas renvoyées :
+> <ul>
+> <li><p>SourceMailboxes</p></li>
+> <li><p>Sources</p></li>
+> <li><p>SearchQuery</p></li>
+> <li><p>ResultsLink</p></li>
+> <li><p>PreviewResultsLink</p></li>
+> <li><p>Erreurs</p></li></ul>
+> Ceci dû au fait que de nombreuses ressources sont nécessaires pour renvoyer ces propriétés pour toutes les recherches de découverte électronique dans votre organisation.

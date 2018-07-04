@@ -121,18 +121,8 @@ Il peut arriver que vous souhaitiez réabonner un serveur de transport Edge à 
 
   - Les informations d’identification du compte ESRA sont compromises.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Pour réabonner un serveur de transport Edge, exportez un nouveau fichier d’abonnement Edge sur le serveur de transport Edge, puis importez le fichier XML sur un serveur de boîtes aux lettres. Vous devez réabonner le serveur de transport Edge au même site Active Directory auquel il était abonné à l’origine. Vous ne devez pas commencer par supprimer l’abonnement Edge d’origine. Le processus de réabonnement remplacera l’abonnement Edge existant.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Pour réabonner un serveur de transport Edge, exportez un nouveau fichier d’abonnement Edge sur le serveur de transport Edge, puis importez le fichier XML sur un serveur de boîtes aux lettres. Vous devez réabonner le serveur de transport Edge au même site Active Directory auquel il était abonné à l’origine. Vous ne devez pas commencer par supprimer l’abonnement Edge d’origine. Le processus de réabonnement remplacera l’abonnement Edge existant.
 
 
 ## Ajouter ou supprimer un serveur de boîtes aux lettres

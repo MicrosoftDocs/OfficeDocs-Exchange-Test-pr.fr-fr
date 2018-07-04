@@ -29,18 +29,8 @@ Une *boîte aux lettres déconnectée* est un objet boîte aux lettres de la bas
     
     Les boîtes aux lettres désactivées et supprimées sont conservées dans la base de données de boîtes aux lettres jusqu’à l’expiration de la période de rétention de la boîte aux lettres supprimée, qui est de 30 jours par défaut. À l’expiration de la période de rétention, la boîte aux lettres est définitivement supprimée (ou *vidée*). Si une boîte aux lettres est supprimée à l’aide de la cmdlet **Remove-Mailbox**, elle est également conservée pendant toute la durée de la période de rétention.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si une boîte aux lettres est supprimée à l’aide de la cmdlet <strong>Remove-Mailbox</strong> et du paramètre <em>Permanent</em> ou <em>StoreMailboxIdentity</em>, elle est immédiatement supprimée de la base de données de boîtes aux lettres.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si une boîte aux lettres est supprimée à l’aide de la cmdlet <strong>Remove-Mailbox</strong> et du paramètre <em>Permanent</em> ou <em>StoreMailboxIdentity</em>, elle est immédiatement supprimée de la base de données de boîtes aux lettres.
     
     Pour identifier les boîtes aux lettres désactivées de votre organisation, exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell :
     

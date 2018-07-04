@@ -70,18 +70,8 @@ Vous recherchez des informations supplémentaires sur les copies retardées de b
     > [!NOTE]
     > Dans l'exemple précédent, e<em>XX</em> est le préfixe de génération du journal pour la base de données (par exemple, E00, E01, E02, etc.).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Cette étape peut demander beaucoup de temps et plusieurs facteurs influent, tels que la longueur du temps d'attente de relecture, le nombre de fichiers journaux générés au cours de cette période et la vitesse à laquelle votre matériel est en mesure de relire ces journaux dans la base de données en cours de récupération.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Cette étape peut demander beaucoup de temps et plusieurs facteurs influent, tels que la longueur du temps d'attente de relecture, le nombre de fichiers journaux générés au cours de cette période et la vitesse à laquelle votre matériel est en mesure de relire ces journaux dans la base de données en cours de récupération.
 
 
 6.  Une fois la relecture des journaux terminée, la base de données se trouve dans un état d'arrêt correct et peut être copiée, puis utilisée dans le cadre d'une récupération.

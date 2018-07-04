@@ -41,18 +41,8 @@ Pour plus d'informations sur les boîtes aux lettres déconnectées et sur l'ex�
     
     S'agissant des organisations Exchange locales, vous pouvez également vérifier ces informations dans le composant Utilisateurs et ordinateurs Active Directory.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lorsque vous connectez des boîtes aux lettres liées, des boîtes aux lettres de ressources ou des boîtes aux lettres partagées supprimées, le compte d’utilisateur auquel vous connectez la boîte aux lettres doit être désactivé.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Lorsque vous connectez des boîtes aux lettres liées, des boîtes aux lettres de ressources ou des boîtes aux lettres partagées supprimées, le compte d’utilisateur auquel vous connectez la boîte aux lettres doit être désactivé.
 
 
   - Pour vérifier que la boîte aux lettres supprimée à laquelle vous voulez connecter un compte utilisateur existe dans la base de données des boîtes aux lettres et qu’elle n’est pas une boîte aux lettres supprimée (récupérable), exécutez la commande suivante.

@@ -74,18 +74,8 @@ Si RBAC autorise une action, celle-ci est effectuée dans le contexte du sous-sy
 
 Il faut bien comprendre que les autorisations Active Directory d’un utilisateur n’importent pas lors de l’utilisation des outils de gestion Exchange. Si l’utilisateur a l’autorisation, via RBAC, d’effectuer une action dans les outils de gestion Exchange, il peut effectuer l’action quelles que soient ses autorisations Active Directory. À l’inverse, si un utilisateur est un Administrateur d’entreprise dans Active Directory mais n’est pas autorisé à effectuer une action telle que la création d’une boîte aux lettres dans les outils de gestion Exchange, l’action échouera car l’utilisateur n’a pas les autorisations requises selon RBAC.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Bien que le modèle des autorisations RBAC ne s’applique pas à l’outil de gestion des utilisateurs et ordinateurs Active Directory, les utilisateurs et ordinateurs Active Directory ne peuvent pas gérer la configuration Exchange. Ainsi, même si un utilisateur a l’accès pour modifier quelques attributs sur les objets Active Directory, tels que le nom complet de l’utilisateur, il doit employer les outils de gestion Exchange, et doit donc disposer de l’autorisation RBAC, pour gérer les attributs Exchange.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Bien que le modèle des autorisations RBAC ne s’applique pas à l’outil de gestion des utilisateurs et ordinateurs Active Directory, les utilisateurs et ordinateurs Active Directory ne peuvent pas gérer la configuration Exchange. Ainsi, même si un utilisateur a l’accès pour modifier quelques attributs sur les objets Active Directory, tels que le nom complet de l’utilisateur, il doit employer les outils de gestion Exchange, et doit donc disposer de l’autorisation RBAC, pour gérer les attributs Exchange.
 
 
 Retour au début
@@ -151,18 +141,8 @@ Exchange 2013 prend en charge les deux types d’autorisations fractionnées su
 
   - **autorisations fractionnées Active Directory**   Les autorisations pour créer des principaux de sécurité dans la partition du domaine Active Directory sont totalement supprimées de tout utilisateur, service ou serveur Exchange. Aucune option n’est fournie dans RBAC pour créer des principaux de sécurité. La création de principaux de sécurité dans Active Directory doit être effectuée à l’aide des outils de gestion Active Directory.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Bien que les autorisations fractionnées Active Directory puissent uniquement être activées ou désactivées en exécutant le programme d’installation sur un ordinateur sur lequel Exchange 2013 est installé, la configuration des autorisations fractionnées Active Directory s’applique à la fois aux serveurs Exchange 2013 et Exchange 2010. Cela n’a cependant aucune incidence sur les serveurs Microsoft Exchange Server 2007.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Bien que les autorisations fractionnées Active Directory puissent uniquement être activées ou désactivées en exécutant le programme d’installation sur un ordinateur sur lequel Exchange 2013 est installé, la configuration des autorisations fractionnées Active Directory s’applique à la fois aux serveurs Exchange 2013 et Exchange 2010. Cela n’a cependant aucune incidence sur les serveurs Microsoft Exchange Server 2007.
 
 
 Si votre organisation choisit d’utiliser un modèle d’autorisations fractionnées plutôt que d’autorisations partagées, il est conseillé d’utiliser le modèle d’autorisations fractionnées RBAC. Le modèle d’autorisations fractionnées RBAC offre beaucoup plus de flexibilité en fournissant presque la même séparation de l’administration que les autorisations fractionnées Active Directory, à l’exception du fait que les serveurs et services Exchange peuvent créer des principaux de sécurité dans le modèle d’autorisations fractionnées RBAC.

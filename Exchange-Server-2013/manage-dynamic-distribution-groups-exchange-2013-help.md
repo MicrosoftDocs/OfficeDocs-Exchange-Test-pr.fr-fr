@@ -23,18 +23,8 @@ Les groupes de distribution dynamiques sont des objets du groupe Active Director
 
 Contrairement aux groupes de distribution habituels qui contiennent un ensemble défini de membres, la liste des membres de ces groupes de distribution dynamiques est calculée chaque fois qu’un message leur est envoyé, en fonction des filtres et conditions que vous avez définis. Lorsqu’un courrier électronique est envoyé à un groupe de distribution dynamique, il est remis à tous les destinataires de l’organisation qui respectent les critères définis pour ce groupe.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Un groupe de distribution dynamique inclut tout destinataire dans Active Directory ayant des valeurs d'attribut correspondant à son filtre. Si les propriétés d’un destinataire sont modifiées pour correspondre au filtre, le destinataire peut involontairement devenir membre du groupe et commencer à recevoir des messages envoyés au groupe. Des processus de déploiement de compte cohérents et bien définis réduisent la probabilité que cela se produise.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Un groupe de distribution dynamique inclut tout destinataire dans Active Directory ayant des valeurs d'attribut correspondant à son filtre. Si les propriétés d’un destinataire sont modifiées pour correspondre au filtre, le destinataire peut involontairement devenir membre du groupe et commencer à recevoir des messages envoyés au groupe. Des processus de déploiement de compte cohérents et bien définis réduisent la probabilité que cela se produise.
 
 
 ## Ce qu’il faut savoir avant de commencer ?
@@ -130,36 +120,16 @@ Contrairement aux groupes de distribution habituels qui contiennent un ensemble 
     </tbody>
     </table>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les valeurs que vous entrez pour l’attribut sélectionné doivent exactement correspondre à celles qui s’affichent dans les propriétés du destinataire. Par exemple, si vous entrez <strong>Washington</strong> comme <strong>Département ou région</strong>, sauf que la valeur pour la propriété du destinataire est <strong>WA</strong>, la condition n’est pas satisfaite. Notez que les valeurs basées sur un texte que vous avez spécifié ne respectent pas la casse. Par exemple, si vous indiquez <strong>Contoso</strong> pour l’attribut <strong>Société</strong>, les messages sont envoyés à un destinataire si la valeur est <strong>contoso</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les valeurs que vous entrez pour l’attribut sélectionné doivent exactement correspondre à celles qui s’affichent dans les propriétés du destinataire. Par exemple, si vous entrez <strong>Washington</strong> comme <strong>Département ou région</strong>, sauf que la valeur pour la propriété du destinataire est <strong>WA</strong>, la condition n’est pas satisfaite. Notez que les valeurs basées sur un texte que vous avez spécifié ne respectent pas la casse. Par exemple, si vous indiquez <strong>Contoso</strong> pour l’attribut <strong>Société</strong>, les messages sont envoyés à un destinataire si la valeur est <strong>contoso</strong>.
 
 
 6.  Dans la fenêtre **Spécifier des mots ou des expressions**, entrez la valeur dans la zone de texte. Cliquez sur **Ajouter**, puis sur **OK**.
 
 7.  Pour ajouter une autre règle visant à définir des critères d’appartenance, cliquez sur **Ajouter une règle** sous la règle que vous avez créée.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous ajoutez plusieurs règles pour définir une appartenance, un destinataire doit satisfaire les critères de chacune des règles pour recevoir un message envoyé au groupe. En d'autres termes, les règles sont connectées entre elles par l’opérateur booléen <strong>AND</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous ajoutez plusieurs règles pour définir une appartenance, un destinataire doit satisfaire les critères de chacune des règles pour recevoir un message envoyé au groupe. En d'autres termes, les règles sont connectées entre elles par l’opérateur booléen <strong>AND</strong>.
 
 
 8.  Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer le groupe de distribution dynamique.
@@ -256,18 +226,8 @@ Cette section permet de gérer les utilisateurs autorisés à envoyer des messag
     
     Pour supprimer un individu ou un groupe de la liste, sélectionnez-le, puis cliquez sur **Supprimer**![Icône Suppression](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Icône Suppression").
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous avez configuré le groupe pour autoriser uniquement des expéditeurs appartenant à votre organisation à envoyer des messages au groupe, un message électronique qui est envoyé par un contact de messagerie est alors rejeté, même si vous aviez ajouté ce contact à cette liste.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous avez configuré le groupe pour autoriser uniquement des expéditeurs appartenant à votre organisation à envoyer des messages au groupe, un message électronique qui est envoyé par un contact de messagerie est alors rejeté, même si vous aviez ajouté ce contact à cette liste.
 
 
 ## Approbation de messages

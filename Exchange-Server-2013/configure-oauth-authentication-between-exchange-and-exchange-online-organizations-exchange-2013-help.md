@@ -29,20 +29,9 @@ Le nouveau processus d’authentification OAuth d’Exchange permet actuellemen
 
 Nous recommandons à toutes les organisations Exchange mixtes qui implémentent un déploiement hybride avec Exchange 2013 et Exchange Online de configurer l’authentification OAuth Exchange après la configuration de leur déploiement hybride avec l’Assistant Configuration hybride.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si votre organisation sur site utilise uniquement des serveurs Exchange 2013 avec la mise à jour cumulative 5 ou version ultérieure installée, exécutez l’assistant de déploiement hybride au lieu de suivre les étapes décrites dans cette rubrique.<br />
-Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.</td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]
+> Si votre organisation sur site utilise uniquement des serveurs Exchange 2013 avec la mise à jour cumulative 5 ou version ultérieure installée, exécutez l’assistant de déploiement hybride au lieu de suivre les étapes décrites dans cette rubrique.<br />
+Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.
 
 ## Ce qu’il faut savoir avant de commencer
 
@@ -227,18 +216,8 @@ Pour configurer l’objet *AvailabilityAddressSpace*, utilisez Exchange PowerSh
 
 Vous pouvez vérifier que l’authentification OAuth est correcte à l’aide de la cmdlet [Test-OAuthConnectivity](https://technet.microsoft.com/fr-fr/library/jj218623\(v=exchg.150\)). Cette cmdlet vérifie que les points de terminaison Exchange et Exchange Online locaux peuvent authentifier correctement les demandes l’un de l’autre.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lors de la connexion à votre organisation Exchange Online avec Remote PowerShell, il se peut que vous deviez utiliser le paramètre <em>AllowClobber</em> avec la cmdlet <strong>Import-PSSession</strong> pour importer les dernières commandes dans la session PowerShell locale.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lors de la connexion à votre organisation Exchange Online avec Remote PowerShell, il se peut que vous deviez utiliser le paramètre <em>AllowClobber</em> avec la cmdlet <strong>Import-PSSession</strong> pour importer les dernières commandes dans la session PowerShell locale.
 
 
 Pour vérifier que votre organisation Exchange locale peut se connecter correctement à Exchange Online, exécutez la commande suivante dans Exchange PowerShell dans votre organisation locale :
@@ -251,23 +230,12 @@ Pour vérifier que votre organisation Exchange Online peut se connecter correcte
 
 Par exemple, Test-OAuthConnectivity -Service EWS -TargetUri https://lync.contoso.com/metadata/json/1 -Mailbox ExchangeOnlineBox1 -Verbose | fl
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez ignorer l’erreur « Aucune boîte aux lettres n’est associée à l’adresse SMTP ». Ce qui importe, c’est que la valeur renvoyée par le paramètre <em>ResultTask</em> soit <strong>Réussite</strong>. Par exemple, la dernière section de la sortie de test doit être :<br />
-<code>ResultType: Success</code><br />
-<code>Identity: Microsoft.Exchange.Security.OAuth.ValidationResultNodeId</code><br />
-<code>IsValid: True</code><br />
-<code>ObjectState: New</code></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]
+> Vous pouvez ignorer l’erreur « Aucune boîte aux lettres n’est associée à l’adresse SMTP ». Ce qui importe, c’est que la valeur renvoyée par le paramètre <em>ResultTask</em> soit <strong>Réussite</strong>. Par exemple, la dernière section de la sortie de test doit être :<br />
+> <code>ResultType: Success</code><br />
+> <code>Identity: Microsoft.Exchange.Security.OAuth.ValidationResultNodeId</code><br />
+> <code>IsValid: True</code><br />
+> <code>ObjectState: New</code>
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.

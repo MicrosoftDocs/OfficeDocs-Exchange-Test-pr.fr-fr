@@ -49,18 +49,8 @@ Cet exemple permet à tous les messages dont le titre est « Meeting » de con
 
     New-TransportRule -Name <name_of_the_rule> -SubjectContainsWords "Meeting" -SetHeaderName "X-MS-Exchange-Organization-BypassClutter" -SetHeaderValue "true"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans cet exemple, « X-MS-Exchange-Organization-BypassClutter » et « true » respectent tous deux la casse.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans cet exemple, « X-MS-Exchange-Organization-BypassClutter » et « true » respectent tous deux la casse.
 
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TransportRule](https://technet.microsoft.com/fr-fr/library/bb125138\(v=exchg.150\)).

@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2016-12-09_
 
 La messagerie unifiée Microsoft repose sur des solutions de partenaires de télécopie agréés pour des fonctionnalités de télécopie améliorées, telles que la télécopie sortante ou le routage de télécopie. Par défaut, les utilisateurs ne sont pas configurés pour autoriser la remise de messages de télécopie entrants à un utilisateur à extension messagerie unifiée. Les serveurs Exchange envoient les demandes de télécopie à une solution de partenaire de télécopie agréé. Le serveur du partenaire de télécopie reçoit les données et les envoie à la boîte aux lettres du destinataire dans un message électronique avec la télécopie incluse en tant que pièce jointe au format .tif. Pour plus d'informations, consultez la rubrique [Activation de la réception de télécopies pour les utilisateurs de messagerie vocale](enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous vous conseillons que tous les clients qui projettent de déployer la messagerie unifiée sollicitent l'assistance d'un spécialiste en messagerie unifiée. Un spécialiste en messagerie unifiée vous aide à assurer une transition homogène vers la messagerie unifiée à partir d'un système de messagerie vocale hérité. La mise en place d'un nouveau déploiement ou la mise à niveau d'un système de messagerie vocale hérité requiert une connaissance réelle des PBX et de la messagerie unifiée . Pour plus d'informations sur la manière de contacter un spécialiste de la messagerie unifiée, consultez les rubriques <a href="https://go.microsoft.com/fwlink/p/?linkid=262708">Spécialistes en messagerie unifiée Microsoft Exchange Server 2013</a> ou <a href="https://go.microsoft.com/fwlink/p/?linkid=261951">Microsoft Pinpoint pour la messagerie unifiée</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Nous vous conseillons que tous les clients qui projettent de déployer la messagerie unifiée sollicitent l'assistance d'un spécialiste en messagerie unifiée. Un spécialiste en messagerie unifiée vous aide à assurer une transition homogène vers la messagerie unifiée à partir d'un système de messagerie vocale hérité. La mise en place d'un nouveau déploiement ou la mise à niveau d'un système de messagerie vocale hérité requiert une connaissance réelle des PBX et de la messagerie unifiée . Pour plus d'informations sur la manière de contacter un spécialiste de la messagerie unifiée, consultez les rubriques <a href="https://go.microsoft.com/fwlink/p/?linkid=262708">Spécialistes en messagerie unifiée Microsoft Exchange Server 2013</a> ou <a href="https://go.microsoft.com/fwlink/p/?linkid=261951">Microsoft Pinpoint pour la messagerie unifiée</a>.
 
 
 ## Programme partenaire de télécopie pour la messagerie unifiée Exchange
@@ -49,18 +39,8 @@ Le test de l'interopérabilité de la messagerie unifiée Exchange avec les pass
 
 Le programme de qualification [Programme d'interopérabilité d'ouverture des communications unifiées Microsoft](http://go.microsoft.com/fwlink/p/?linkid=140722) pour les passerelles VoIP et les PBX IP garantit une configuration et une prise en charge transparentes lors de l'utilisation des passerelles de téléphonie et des PBX IP qualifiés avec le logiciel de communications unifiées de Microsoft.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L'envoi et la réception de télécopies à l'aide de T.38 ou G.711 ne sont pas pris en charge dans un environnement où la messagerie unifiée et Communications Server 2007 R2 ou Microsoft Lync Server sont intégrés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L'envoi et la réception de télécopies à l'aide de T.38 ou G.711 ne sont pas pris en charge dans un environnement où la messagerie unifiée et Communications Server 2007 R2 ou Microsoft Lync Server sont intégrés.
 
 
 ## Déploiement et configuration de la télécopie

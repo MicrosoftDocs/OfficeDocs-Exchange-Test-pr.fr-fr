@@ -83,18 +83,8 @@ Avec ce nouveau modèle, le blocage sur place (In-Place Hold) vous permet de cr�
 
   - **Blocage basé sur une requête**   Si votre organisation conserve des éléments selon les paramètres de requête spécifiés, vous pouvez utiliser un blocage sur place basé sur une requête. Vous pouvez spécifier des paramètres de requête comme des mots-clés, des dates de début et de fin, des adresses d’expéditeur et de destinataire ou encore des types de messages. Une fois que vous avez créé un blocage sur place basé sur une requête, tous les éléments de boîte aux lettres existants et futurs (notamment les messages reçus à une date ultérieure) qui correspondent aux paramètres de requête sont conservés.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les éléments marqués comme ne pouvant pas faire l’objet d’une recherche, généralement en raison de l’échec d’indexation d’une pièce jointe, sont également conservés, car il est impossible de déterminer s’ils correspondent aux paramètres de la requête. Pour plus d’informations sur l’élément ne pouvant pas faire l’objet d’une recherche, voir <a href="unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md">Éléments impossibles à rechercher dans la découverte électronique Exchange</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les éléments marqués comme ne pouvant pas faire l’objet d’une recherche, généralement en raison de l’échec d’indexation d’une pièce jointe, sont également conservés, car il est impossible de déterminer s’ils correspondent aux paramètres de la requête. Pour plus d’informations sur l’élément ne pouvant pas faire l’objet d’une recherche, voir <a href="unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md">Éléments impossibles à rechercher dans la découverte électronique Exchange</a>.
 
 
   - **Conservation à durée définie**   La conservation inaltérable et la conservation pour litige vous permettent de spécifier une durée pendant laquelle mettre en attente les éléments. La durée est calculée à compter de la date de réception ou de création de l’élément de boîte aux lettres.
@@ -125,18 +115,8 @@ Pour plus d’informations, consultez les rubriques suivantes :
 
 Les utilisateurs autorisés qui ont été ajoutés au groupe de rôles de contrôle d’accès basé sur les rôles (RBAC) [Gestion de la détection](discovery-management-exchange-2013-help.md), ou auxquels les rôles de gestion de blocage légal et de recherche dans les boîtes aux lettres ont été attribués, peuvent placer des utilisateurs de boîte aux lettres en blocage sur place (In-Place Hold). Vous pouvez déléguer la tâche aux responsables des enregistrements, aux responsables de la mise en conformité ou aux avocats du service juridique de votre organisation en affectant le moins de privilèges possible. Pour en savoir plus sur l’affectation du groupe de rôles Gestion de la découverte, voir [Attribution d’autorisations eDiscovery dans Exchange](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange 2010, le rôle de conservation légale fournit les autorisations nécessaires aux utilisateurs pour placer des boîtes aux lettres en conservation pour litige. Dans Exchange 2013, vous pouvez utiliser la même autorisation pour placer des boîtes aux lettres en blocage sur place indéfini ou basé sur la durée. Cependant, pour créer un blocage sur place basé sur une requête, l’utilisateur doit se voir attribuer le rôle de recherche dans les boîtes aux lettres. Ces deux rôles sont attribués au groupe de rôles Gestion de la découverte.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange 2010, le rôle de conservation légale fournit les autorisations nécessaires aux utilisateurs pour placer des boîtes aux lettres en conservation pour litige. Dans Exchange 2013, vous pouvez utiliser la même autorisation pour placer des boîtes aux lettres en blocage sur place indéfini ou basé sur la durée. Cependant, pour créer un blocage sur place basé sur une requête, l’utilisateur doit se voir attribuer le rôle de recherche dans les boîtes aux lettres. Ces deux rôles sont attribués au groupe de rôles Gestion de la découverte.
 
 
 Dans Exchange 2013, la fonctionnalité de blocage sur place (In-Place Hold) est intégrée aux recherches de découverte électronique sur place (In-Place eDiscovery). Vous pouvez utiliser l’Assistant **Découverte électronique et blocage sur place** du Centre d’Administration Exchange (EAC) ou la cmdlet **New-MailboxSearch** et autres commandes associées dans l’environnement de ligne de commande Exchange Management Shell pour placer une boîte aux lettres en blocage sur place. Pour en savoir plus sur le placement d’une boîte aux lettres en blocage sur place, consultez la rubrique [Créer ou supprimer une conservation inaltérable](create-or-remove-an-in-place-hold-exchange-2013-help.md).
@@ -219,18 +199,8 @@ Le dossier Éléments récupérables contient les sous-dossiers suivants qui per
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La copie sur écriture est désactivée pour les éléments du calendrier dans la boîte aux lettres de l’organisateur lors de la réception des réponses des participants à la réunion et de la mise à jour des informations de suivi. Pour les éléments de calendrier et les éléments pour lesquels un rappel est défini, la copie sur écriture est désactivée pour les propriétés ReminderTime et ReminderSignalTime. Les changements apportés à ces propriétés ne sont pas capturés par la copie sur écriture. Les changements apportés aux flux RSS ne sont pas pris en compte par la copie sur écriture.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La copie sur écriture est désactivée pour les éléments du calendrier dans la boîte aux lettres de l’organisateur lors de la réception des réponses des participants à la réunion et de la mise à jour des informations de suivi. Pour les éléments de calendrier et les éléments pour lesquels un rappel est défini, la copie sur écriture est désactivée pour les propriétés ReminderTime et ReminderSignalTime. Les changements apportés à ces propriétés ne sont pas capturés par la copie sur écriture. Les changements apportés aux flux RSS ne sont pas pris en compte par la copie sur écriture.
 
 
 Bien que les dossiers DiscoveryHold, Purges et Versions ne soient pas visibles par l’utilisateur, tous les éléments du dossier Éléments récupérables sont indexés par Exchange Search et peuvent être découverts à l’aide de la découverte électronique sur place (In-Place eDiscovery). Lorsqu’un utilisateur de boîte aux lettres est supprimé d’une conservation inaltérable ou d’une conservation pour litige, les éléments des dossiers DiscoveryHold, Purges et Versions sont purgés par l’Assistant Dossier géré.

@@ -33,18 +33,8 @@ Nous vous recommandons d’utiliser le processus d’abonnement Edge pour établ
 
   - Vous devez créer un compte d’utilisateur dans Active Directory et ajouter le compte au groupe de sécurité universel sur l’ordinateur Exchange Server. Ce compte est utilisé par le connecteur d’envoi sur le serveur de transport Edge pour l’authentification auprès du serveur de boîtes aux lettres dans l’organisation Exchange.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Ce compte bénéficie des autorisations associées aux ordinateurs exécutant Exchange Server. Veillez à protéger les informations d’identification du compte afin d’éviter toute utilisation abusive de ce dernier. Vous pouvez configurer le compte pour ne permettre une ouverture de session que sur des ordinateurs spécifiques.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Ce compte bénéficie des autorisations associées aux ordinateurs exécutant Exchange Server. Veillez à protéger les informations d’identification du compte afin d’éviter toute utilisation abusive de ce dernier. Vous pouvez configurer le compte pour ne permettre une ouverture de session que sur des ordinateurs spécifiques.
 
 
 ## Procédures relatives au serveur de transport Edge

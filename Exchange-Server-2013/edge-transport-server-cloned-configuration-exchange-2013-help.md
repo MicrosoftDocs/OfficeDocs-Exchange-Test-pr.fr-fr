@@ -125,18 +125,8 @@ Retour au début
 
 Vous pouvez exécuter cette étape sur tout serveur cible pour cloner la configuration d’un serveur de transport Edge existant ou pour restaurer une configuration spécifique du serveur. Exécutez le script ImportEdgeConfig.ps1 (situé dans le dossier %ExchangeInsallPath%Scripts) pour valider et importer la nouvelle configuration. Une fois le script exécuté, la configuration du serveur cible correspondra aux paramètres spécifiés dans le fichier XML intermédiaire et dans le fichier de réponses.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous vous recommandons de sauvegarder la configuration de serveur existante avant d’exécuter le processus d’importation de la configuration, pour qu’en cas d’échec de l’opération de clonage, vous puissiez rétablir l’état stable précédent du serveur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Nous vous recommandons de sauvegarder la configuration de serveur existante avant d’exécuter le processus d’importation de la configuration, pour qu’en cas d’échec de l’opération de clonage, vous puissiez rétablir l’état stable précédent du serveur.
 
 
 Cette étape utilise les informations spécifiques du serveur contenues dans le fichier de réponses. Si un paramètre n’est pas spécifié dans le fichier de réponses, les données du fichier XML intermédiaire sont utilisées. Avant de modifier la configuration, le script valide les données dans le fichier XML intermédiaire et le fichier de réponses.

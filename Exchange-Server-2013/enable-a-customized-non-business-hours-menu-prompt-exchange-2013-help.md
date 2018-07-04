@@ -21,18 +21,8 @@ Vous pouvez personnaliser l'invite de menu qui sera utilisée par un standard au
 
 Si vous voulez inclure uniquement le nom de votre organisation ou société dans l'invite du système par défaut, vous pouvez le saisir dans le champ **Nom de l'entreprise** sur le standard automatique de messagerie unifiée. Pour plus d'informations, consultez la rubrique [Entrez un nom d'entreprise](enter-a-business-name-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez configurer les heures d'ouverture sur le standard automatique. Lorsque vous configurez les heures d'ouverture, les heures de fermeture sont définies automatiquement. Pour plus d'informations, consultez la rubrique <a href="configure-business-hours-exchange-2013-help.md">Configurer les heures d'ouverture</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez configurer les heures d'ouverture sur le standard automatique. Lorsque vous configurez les heures d'ouverture, les heures de fermeture sont définies automatiquement. Pour plus d'informations, consultez la rubrique <a href="configure-business-hours-exchange-2013-help.md">Configurer les heures d'ouverture</a>.
 
 
 Pour les autres tâches de gestion relatives aux standards automatiques de messagerie unifiée, consultez la rubrique [Procédures relatives au standard automatique de messagerie unifiée](um-auto-attendant-procedures-exchange-2013-help.md).
@@ -65,18 +55,8 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
 
 3.  dans la page **Standard automatique de messagerie unifiée**, \> **Navigation de menu**, sous **Navigation de menu en dehors des heures d'ouverture**, cliquez sur **Modifier**, puis sur **Parcourir** pour localiser le fichier d'invite de menu en dehors des heures d'ouverture personnalisé.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le fichier que vous utilisez pour l'invite de menu doit être au format .wav ou .wma.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le fichier que vous utilisez pour l'invite de menu doit être au format .wav ou .wma.
 
 
 4.  Après avoir localisé le fichier, cliquez sur **Ouvrir**, puis sur **Enregistrer**.

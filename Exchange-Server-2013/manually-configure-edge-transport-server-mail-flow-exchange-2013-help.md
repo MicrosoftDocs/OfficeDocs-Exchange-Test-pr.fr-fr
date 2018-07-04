@@ -85,18 +85,8 @@ Exemple : utilisation de l’environnement de ligne de commande Exchange Manage
 
     New-SendConnector -Name "EdgeSync - Site-A to Internet" -Usage Custom -AddressSpaces SMTP:*;100 -DNSRoutingEnabled $false -SmartHosts 192.168.10.1 -SmartHostAuthMechanism None -SourceTransportServers EdgeSubscriptionName
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Aucun mécanisme d’authentification de l’hôte actif n’est spécifié dans cet exemple. Veillez à configurer le bon mécanisme d’authentification et d’indiquer toutes les informations d’identification nécessaires lors de la création du connecteur d’hôte actif dans votre propre organisation Exchange.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Aucun mécanisme d’authentification de l’hôte actif n’est spécifié dans cet exemple. Veillez à configurer le bon mécanisme d’authentification et d’indiquer toutes les informations d’identification nécessaires lors de la création du connecteur d’hôte actif dans votre propre organisation Exchange.
 
 
 ## Configurer des connecteurs d’envoi pour les domaines de relais externes

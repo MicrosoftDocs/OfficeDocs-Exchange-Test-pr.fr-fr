@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2013-02-15_
 
 Vous pouvez spécifier le mode de démarrage du service de messagerie unifiée Microsoft Exchange sur un serveur de boîtes aux lettres. Par défaut, le serveur de boîtes aux lettres démarre en mode TCP. Cependant, si vous utilisez TLS (Transport Layer Security) pour chiffrer le trafic VoIP (Voice over IP), vous devez configurer le serveur de boîtes aux lettres pour utiliser le mode TLS ou Double. nous vous recommandons de configurer les serveurs de boîtes aux lettres pour utiliser le mode de démarrage Double. En effet, tous les serveurs d'accès au client et de boîtes aux lettres peuvent répondre aux appels entrants pour tous les plans de numérotation de messagerie unifiée, qui peuvent comporter différents paramètres de sécurité (Non sécurisé, Sécurisé SIP ou Sécurisé). Si vous modifiez le mode de démarrage, vous devez redémarrer le service de messagerie unifiée Microsoft Exchange pour que la modification soit prise en compte.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, les serveurs de boîtes aux lettres sont disponibles pour répondre aux appels entrants. Il n'est pas nécessaire d'ajouter un serveur de boîtes aux lettres à un plan de numérotation de messagerie unifiée pour traiter les appels de messagerie unifiée, sauf si vous intégrez la messagerie unifiée et Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, les serveurs de boîtes aux lettres sont disponibles pour répondre aux appels entrants. Il n'est pas nécessaire d'ajouter un serveur de boîtes aux lettres à un plan de numérotation de messagerie unifiée pour traiter les appels de messagerie unifiée, sauf si vous intégrez la messagerie unifiée et Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server.
 
 
 Pour d'autres tâches de gestion relatives aux serveurs de messagerie unifiée et de boîtes aux lettres, consultez la rubrique [Procédures de services de messagerie unifiée](um-services-procedures-exchange-2013-help.md).

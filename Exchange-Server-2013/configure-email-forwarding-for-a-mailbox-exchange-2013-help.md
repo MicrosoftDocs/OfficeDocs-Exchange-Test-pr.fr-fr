@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2016-12-09_
 
 Le transfert du courrier vous permet de configurer une boîte aux lettres pour transférer les messages électroniques qu’elle reçoit vers la boîte aux lettres d’un autre utilisateur, appartenant ou non à votre organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous utilisez Office 365 pour les entreprises, vous devez configurer le transfert d’e-mail dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=834774">Centre d’administration Office 365 : Configurer le transfert du courrier dans Office 365</a></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous utilisez Office 365 pour les entreprises, vous devez configurer le transfert d’e-mail dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=834774">Centre d’administration Office 365 : Configurer le transfert du courrier dans Office 365</a>
 
 
 Si votre organisation utilise un environnement Exchange local ou Exchange hybride, vous devez utiliser le Centre d’administration Exchange (CAE) local pour créer et gérer des boîtes aux lettres partagées.

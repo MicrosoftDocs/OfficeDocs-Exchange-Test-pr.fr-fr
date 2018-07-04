@@ -19,26 +19,11 @@ _**Dernière rubrique modifiée :** 2016-12-09_
 
 Cette rubrique traite des composants, fonctions ou fonctionnalités supprimés, abandonnés ou remplacés dans Microsoft Exchange Server 2013.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les rubriques suivantes peuvent également vous intéresser :
-<ul>
-<li><p><a href="what-s-new-in-exchange-2013-exchange-2013-help.md">Nouveautés d'Exchange 2013</a>   Informations sur les nouvelles fonctions et fonctionnalités dans Exchange Server 2013.</p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=267479">Feuille de route concernant les technologies de développement pour Exchange 2013</a>    Consultez la section « Technologies de développement supprimées d'Exchange » pour obtenir des informations sur l'API et les fonctionnalités de développement qui ont été abandonnées dans Exchange 2013.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]
+> Les rubriques suivantes peuvent également vous intéresser :
+> <ul>
+> <li><p><a href="what-s-new-in-exchange-2013-exchange-2013-help.md">Nouveautés d'Exchange 2013</a>   Informations sur les nouvelles fonctions et fonctionnalités dans Exchange Server 2013.</p></li>
+> <li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=267479">Feuille de route concernant les technologies de développement pour Exchange 2013</a>    Consultez la section « Technologies de développement supprimées d'Exchange » pour obtenir des informations sur l'API et les fonctionnalités de développement qui ont été abandonnées dans Exchange 2013.</p></li></ul>
 
 ## Fonctionnalités Exchange 2010 abandonnées dans Exchange 2013
 

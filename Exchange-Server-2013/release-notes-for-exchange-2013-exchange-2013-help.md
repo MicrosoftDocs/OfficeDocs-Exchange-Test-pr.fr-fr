@@ -131,18 +131,8 @@ Pour plus d'informations sur l'installation d'Exchange 2013, consultez la rubri
     </tbody>
     </table>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exécutez les opérations suivantes sur les serveurs d'accès au client uniquement. Il n’est pas nécessaire de charger le composant logiciel enfichable Windows PowerShell Exchange pour gérer des agents de transport sur des serveurs de boîtes aux lettres.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Exécutez les opérations suivantes sur les serveurs d'accès au client uniquement. Il n’est pas nécessaire de charger le composant logiciel enfichable Windows PowerShell Exchange pour gérer des agents de transport sur des serveurs de boîtes aux lettres.
     
     1.  Ouvrez une nouvelle fenêtre Windows PowerShell.
     

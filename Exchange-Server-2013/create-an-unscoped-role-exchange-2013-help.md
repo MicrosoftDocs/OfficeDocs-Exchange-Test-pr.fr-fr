@@ -125,18 +125,8 @@ Cet exemple vous indique comment ajouter la cmdlet **Set-WidgetConfiguration** d
 
 L’étape finale lorsque vous créez et configurez un rôle consiste à l’attribuer à un utilisateur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les étendues de gestion ne peuvent pas être configurées sur les attributions de rôles qui affectent un rôle non délimité. Lorsque vous choisissez de créer une attribution de rôle pour un groupe de rôles, un utilisateur ou un groupe de sécurité universel, vous devez choisir l’option pour créer une attribution de rôle sans étendue de gestion.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les étendues de gestion ne peuvent pas être configurées sur les attributions de rôles qui affectent un rôle non délimité. Lorsque vous choisissez de créer une attribution de rôle pour un groupe de rôles, un utilisateur ou un groupe de sécurité universel, vous devez choisir l’option pour créer une attribution de rôle sans étendue de gestion.
 
 
 Vous pouvez attribuer le nouveau rôle à un groupe de rôles, un utilisateur ou à un groupe de sécurité universel. Pour plus d’informations, consultez les rubriques suivantes :
@@ -189,18 +179,8 @@ Pour supprimer des entrées de rôles de votre nouveau rôle, voir [Supprimer un
 
 L’étape finale lorsque vous créez et configurez un rôle consiste à l’attribuer à un utilisateur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les étendues de gestion ne peuvent pas être configurées sur les attributions de rôles qui affectent un rôle non délimité. Lorsque vous choisissez de créer une attribution de rôle pour un groupe de rôles, un utilisateur ou un groupe de sécurité universel, vous devez choisir l’option pour créer une attribution de rôle sans étendue de gestion.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les étendues de gestion ne peuvent pas être configurées sur les attributions de rôles qui affectent un rôle non délimité. Lorsque vous choisissez de créer une attribution de rôle pour un groupe de rôles, un utilisateur ou un groupe de sécurité universel, vous devez choisir l’option pour créer une attribution de rôle sans étendue de gestion.
 
 
 Vous pouvez attribuer le nouveau rôle à un groupe de rôles, un utilisateur ou à un groupe de sécurité universel. Pour plus d’informations, consultez les rubriques suivantes :

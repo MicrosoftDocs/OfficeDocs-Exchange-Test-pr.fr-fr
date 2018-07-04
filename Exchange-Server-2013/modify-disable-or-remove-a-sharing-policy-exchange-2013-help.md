@@ -69,18 +69,8 @@ Pour plus d’informations sur la création d’une stratégie de partage, voir 
 
 ## Utiliser le Centre d’administration Exchange (EAC) pour supprimer une stratégie de partage
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avant de supprimer une stratégie de partage, celle-ci doit être supprimée de toutes les boîtes aux lettres utilisateur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Avant de supprimer une stratégie de partage, celle-ci doit être supprimée de toutes les boîtes aux lettres utilisateur.
 
 
 1.  Accédez à **organisation** \> **partage**.

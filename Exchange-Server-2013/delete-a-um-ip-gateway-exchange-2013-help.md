@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2013-02-21_
 
 Quand vous supprimez une passerelle IP de messagerie unifiée, les serveurs Exchange ne peuvent plus accepter d'appels entrants de la passerelle VoIP, du protocole SIP à extension PBX, du PBX IP ou du contrôleur de frontière de session (SBC) associés à la passerelle IP de messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne devez supprimer une passerelle IP de messagerie unifiée que lorsque vous avez pleinement compris les implications issues de la désactivation d'une passerelle VoIP, un PBX IP ou un SBC.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne devez supprimer une passerelle IP de messagerie unifiée que lorsque vous avez pleinement compris les implications issues de la désactivation d'une passerelle VoIP, un PBX IP ou un SBC.
 
 
 Pour les autres tâches relatives aux passerelles IP de messagerie unifiée, consultez la rubrique [Procédures de passerelle IP de messagerie unifiée](um-ip-gateway-procedures-exchange-2013-help.md).

@@ -175,18 +175,8 @@ Retour au début
 
 La réception d’une télécopie sur un réseau VoIP diffère de la réception d’une télécopie sur un appareil de télécopie standard ou à l’aide d’un serveur de télécopie localisé sur un réseau de type IP. Pour permettre l’envoi et la réception de télécopies sur un réseau VoIP, vous devez disposer d’une passerelle VoIP ou d’un PBX IP prenant en charge le protocole T.38, et d’un serveur le prenant également en charge. Le protocole T.38 permet d’effectuer des transmissions de télécopie de type IP pour des hôtes basés sur un réseau IP, tels que des ordinateurs clients, des imprimantes avec des fonctionnalités de télécopie intégrées et des serveurs tels qu’un serveur de boîtes aux lettres.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L’envoi et la réception de télécopies à l’aide de T.38 ou G.711 ne sont pas pris en charge dans un environnement où la messagerie unifiée et Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server sont intégrés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L’envoi et la réception de télécopies à l’aide de T.38 ou G.711 ne sont pas pris en charge dans un environnement où la messagerie unifiée et Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server sont intégrés.
 
 
 Quand un PBX reçoit un appel, il le transfère vers le poste approprié. Si le poste de l’utilisateur ne répond pas, le PBX transmet l’appel à une passerelle VoIP qui le transmet à son tour au serveur de boîtes aux lettres approprié. Le serveur de boîtes aux lettres détermine si l’appel est un appel vocal ou de télécopie en fonction du protocole utilisé. En cas d’utilisation du protocole SIP, le serveur de boîtes aux lettres traite l’appel comme un message vocal. En revanche, en cas d’utilisation du protocole T.38 à partir de la passerelle IP, le serveur de boîtes aux lettres détecte que l’appel est une télécopie et le traite de la manière décrite dans le paragraphe suivant. Un serveur de boîtes aux lettres transfère les appels de télécopie entrants à un serveur de partenaire de télécopie dédié qui établit ensuite l’appel de télécopie avec l’expéditeur de la télécopie et reçoit cette dernière de la part de l’utilisateur à extension messagerie unifiée. Le serveur du partenaire de télécopie envoie ensuite la télécopie incluse en tant que pièce jointe .tif dans le message SMTP à la boîte aux lettres du destinataire.

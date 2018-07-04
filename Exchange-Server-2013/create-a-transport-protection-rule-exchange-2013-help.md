@@ -67,18 +67,8 @@ Pour les autres tâches de gestion liées à la Gestion des droits relatifs à l
     
       - **Appliquer cette règle si**   Sélectionnez une condition et entrez les valeurs requises pour celle-ci. Pour ajouter des conditions supplémentaires, cliquez sur **Ajouter une condition**.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Si vous ne sélectionnez aucune condition lors de la création d’une règle de protection de transport, tous les messages traités par les serveurs Exchange 2013 avec le service de transport de votre organisation seront protégés par IRM. La protection IRM de tous les messages requiert plus de ressources. Par conséquent, nous vous recommandons de planifier votre serveur de messagerie et déploiement AD RMS en conséquence.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Si vous ne sélectionnez aucune condition lors de la création d’une règle de protection de transport, tous les messages traités par les serveurs Exchange 2013 avec le service de transport de votre organisation seront protégés par IRM. La protection IRM de tous les messages requiert plus de ressources. Par conséquent, nous vous recommandons de planifier votre serveur de messagerie et déploiement AD RMS en conséquence.
     
       - **Effectuez les opérations suivantes**   Sélectionnez **Appliquer la protection des droits au message avec**, puis sélectionnez un modèle à l’aide de la boîte de dialogue **Sélectionner un modèle RMS**.
     

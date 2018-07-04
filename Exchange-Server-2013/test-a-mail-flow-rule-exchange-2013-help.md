@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2016-12-09_
 
 Chaque fois que vous créez une règle de flux de messagerie Exchange (également appelée règle de transport), vous devez la tester avant de l’activer. Ainsi, si vous créez accidentellement une condition qui ne fait pas exactement ce que vous voulez ou qui interagit avec d’autres règles de manière inattendue, vous ne subirez aucune conséquence inattendue.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Patientez 30 minutes après la création d’une règle avant de la tester. Si vous testez la règle immédiatement après l’avoir créée, vous risquez d’obtenir un comportement incohérent. Si vous utilisez Exchange Server et plusieurs serveurs Exchange, cela peut durer encore plus longtemps pour que tous les serveurs reçoivent la règle.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Patientez 30 minutes après la création d’une règle avant de la tester. Si vous testez la règle immédiatement après l’avoir créée, vous risquez d’obtenir un comportement incohérent. Si vous utilisez Exchange Server et plusieurs serveurs Exchange, cela peut durer encore plus longtemps pour que tous les serveurs reçoivent la règle.
 
 
 ## Étape 1 : Créer une règle en mode test

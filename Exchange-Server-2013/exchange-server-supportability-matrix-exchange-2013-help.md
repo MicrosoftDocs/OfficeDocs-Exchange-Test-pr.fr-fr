@@ -78,18 +78,8 @@ L’assistance pour Exchange 2007 a pris fin le 11 avril 2017, conformément 
 
 Le tableau suivant permet d’identifier les plateformes de système d’exploitation sur lesquelles les versions d’Exchange peuvent être exécutées. Les plateformes prises en charge sont indiquées par un X.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les versions de Windows Server et du client Windows qui ne sont pas répertoriées dans le tableau ci-dessous ne sont pas prises en charge pour être utilisées avec une version d’Exchange.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les versions de Windows Server et du client Windows qui ne sont pas répertoriées dans le tableau ci-dessous ne sont pas prises en charge pour être utilisées avec une version d’Exchange.
 
 
 
@@ -738,18 +728,8 @@ Le tableau suivant permet d’identifier la version d’Microsoft Exchange pouva
 
 Le tableau suivant permet d’identifier la version de Microsoft.NET Framework compatible avec chaque version d’Exchange. Les versions prises en charge sont indiquées par un X.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Les versions de .NET Framework qui ne sont pas répertoriées dans le tableau ci-dessous ne sont prises en charge par aucune version d’Exchange.</strong> Cela inclut les versions mineures et de niveau de correctif logiciel de .NET Framework.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> <strong>Les versions de .NET Framework qui ne sont pas répertoriées dans le tableau ci-dessous ne sont prises en charge par aucune version d’Exchange.</strong> Cela inclut les versions mineures et de niveau de correctif logiciel de .NET Framework.
 
 
 > [!NOTE]

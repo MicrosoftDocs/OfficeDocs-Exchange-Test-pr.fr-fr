@@ -21,18 +21,8 @@ Dans Microsoft Exchange Server 2013, un connecteur d’envoi contrôle le flux 
 
 Les serveurs de boîtes aux lettres Exchange 2013 qui exécutent le service de transport requièrent des connecteurs d’envoi pour remettre les messages au prochain saut sur le chemin de leur destination. Les connecteurs d’envoi créés sur les serveurs de boîtes aux lettres sont stockés dans Active Directory et sont disponibles pour tous les serveurs de boîtes aux lettres exécutant le service de transport dans l’organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous déployez Exchange 2013, le flux de messagerie sortant ne peut pas être mis en œuvre tant que vous n’avez pas configuré un connecteur d’envoi pour router les messages sortants vers Internet. Pour plus d’informations, voir <a href="create-a-send-connector-for-email-sent-to-the-internet-exchange-2013-help.md">Créer un connecteur d’envoi pour les messages électroniques envoyés vers Internet</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous déployez Exchange 2013, le flux de messagerie sortant ne peut pas être mis en œuvre tant que vous n’avez pas configuré un connecteur d’envoi pour router les messages sortants vers Internet. Pour plus d’informations, voir <a href="create-a-send-connector-for-email-sent-to-the-internet-exchange-2013-help.md">Créer un connecteur d’envoi pour les messages électroniques envoyés vers Internet</a>.
 
 
 ## Sélection du type pour un connecteur d’envoi

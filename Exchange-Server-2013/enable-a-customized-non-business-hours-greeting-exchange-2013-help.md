@@ -53,18 +53,8 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
 
 3.  Sur la page **Standard automatique de messagerie unifiée**, \> **Message d’accueil**, sous **Message d’accueil en dehors des heures d’ouverture**, cliquez sur **Modifier**, puis cliquez sur **Parcourir** pour rechercher le fichier de message d’accueil personnalisé pour la période en dehors des heures d’ouverture que vous avez créé avant de démarrer cette procédure.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le fichier que vous utilisez pour le message d’accueil doit être un fichier .wav ou .wma.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le fichier que vous utilisez pour le message d’accueil doit être un fichier .wav ou .wma.
 
 
 4.  Après avoir localisé le fichier, cliquez sur **Ouvrir**, puis sur **Enregistrer**.

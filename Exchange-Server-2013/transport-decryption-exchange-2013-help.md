@@ -47,18 +47,8 @@ L’agent de déchiffrement déchiffre les types de messages protégés par IRM 
 
   - Messages automatiquement protégés par IRM via des règles de protection Outlook dans Exchange 2013 et Outlook 2010.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Seuls les messages protégés par IRM via le serveur AD RMS de votre organisation sont déchiffrés par l’agent de déchiffrement.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Seuls les messages protégés par IRM via le serveur AD RMS de votre organisation sont déchiffrés par l’agent de déchiffrement.
 
 
 > [!NOTE]
@@ -92,18 +82,8 @@ Une fois un message déchiffré par l’agent de déchiffrement, si un agent de 
 
 Le déchiffrement du transport est configuré à l’aide de la cmdlet [Set-IRMConfiguration](https://technet.microsoft.com/fr-fr/library/dd979792\(v=exchg.150\)) dans l’environnement de ligne de commande Exchange Management Shell. Cependant, vous devez préalablement attribuer aux serveurs Exchange 2013 l’autorisation de déchiffrer le contenu protégé par votre serveur AD RMS. Pour cela, vous devez ajoutez la boîte aux lettres de fédération au groupe des super utilisateurs configuré sur le cluster AD RMS de votre organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans les déploiements AD RMS inter-forêts où un cluster AD RMS est déployé dans chaque forêt, vous devez ajouter la boîte aux lettres de fédération au groupe des super utilisateurs sur le cluster de chaque forêt pour autoriser le service de transport sur un serveur de boîtes aux lettres Exchange 2013 ou un serveur de transport Hub Exchange 2010 à déchiffrer les messages protégés dans chaque cluster AD RMS.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans les déploiements AD RMS inter-forêts où un cluster AD RMS est déployé dans chaque forêt, vous devez ajouter la boîte aux lettres de fédération au groupe des super utilisateurs sur le cluster de chaque forêt pour autoriser le service de transport sur un serveur de boîtes aux lettres Exchange 2013 ou un serveur de transport Hub Exchange 2010 à déchiffrer les messages protégés dans chaque cluster AD RMS.
 
 
 Pour plus d’informations, consultez la rubrique [Ajouter la boîte aux lettres de fédération au groupe de super utilisateurs AD RMS](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md).

@@ -85,18 +85,8 @@ Une conservation inaltérable conserve tout le contenu d’une boîte aux lettre
 
 Cet exemple crée l'archive permanente Hold-CaseId012 et ajoute la boîte aux lettres joe@contoso.com à l'archive.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous ne précisez pas de paramètres de recherche supplémentaires pour une conservation inaltérable, tous les éléments des boîtes aux lettres source spécifiées sont placés en conservation. Si vous ne spécifiez pas le paramètre <em>ItemHoldPeriod</em>, les éléments sont placés en conservation indéfiniment ou jusqu’à ce que la boîte aux lettres ne soit plus conservée ou que la conservation soit supprimée.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous ne précisez pas de paramètres de recherche supplémentaires pour une conservation inaltérable, tous les éléments des boîtes aux lettres source spécifiées sont placés en conservation. Si vous ne spécifiez pas le paramètre <em>ItemHoldPeriod</em>, les éléments sont placés en conservation indéfiniment ou jusqu’à ce que la boîte aux lettres ne soit plus conservée ou que la conservation soit supprimée.
 
 
     New-MailboxSearch "Hold-CaseId012"-SourceMailboxes "joe@contoso.com" -InPlaceHoldEnabled $true
@@ -115,18 +105,8 @@ Retour au début
 
 ## Supprimer une archive permanente
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange 2013, les recherches de boîtes aux lettres peuvent être utilisées pour une archive permanente et pour la découverte électronique locale. Vous ne pouvez pas supprimer une recherche de boîte aux lettres utilisée pour une conservation inaltérable. Vous devez d'abord désactiver l'archive permanente en décochant la case <strong>Mettre en archive le contenu correspondant à la requête de recherche des boîtes aux lettres sélectionnées</strong> dans la page <strong>Paramètres de l'archive permanente</strong> ou en définissant le paramètre <em>InPlaceHoldEnabled</em> sur <code>$false</code> dans l'environnement de ligne de commande Exchange Management Shell. Vous pouvez également supprimer une boîte aux lettres en utilisant le paramètre <em>SourceMailboxes</em> spécifié dans la recherche.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange 2013, les recherches de boîtes aux lettres peuvent être utilisées pour une archive permanente et pour la découverte électronique locale. Vous ne pouvez pas supprimer une recherche de boîte aux lettres utilisée pour une conservation inaltérable. Vous devez d'abord désactiver l'archive permanente en décochant la case <strong>Mettre en archive le contenu correspondant à la requête de recherche des boîtes aux lettres sélectionnées</strong> dans la page <strong>Paramètres de l'archive permanente</strong> ou en définissant le paramètre <em>InPlaceHoldEnabled</em> sur <code>$false</code> dans l'environnement de ligne de commande Exchange Management Shell. Vous pouvez également supprimer une boîte aux lettres en utilisant le paramètre <em>SourceMailboxes</em> spécifié dans la recherche.
 
 
 **Utiliser le CAE pour supprimer une archive permanente**

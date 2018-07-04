@@ -53,18 +53,8 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
 
 4.  Dans **Outlook Voice Access**, sous **Annonce ayant valeur d’informations**, cliquez sur **Modifier**, puis cliquez sur **Parcourir** pour rechercher le fichier d’annonces.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le fichier que vous utilisez pour l’annonce ayant valeur d’informations doit être un fichier .wav ou .wma.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le fichier que vous utilisez pour l’annonce ayant valeur d’informations doit être un fichier .wav ou .wma.
 
 
 5.  Après avoir localisé le fichier, cliquez sur **Ouvrir**, puis sur **Enregistrer**.

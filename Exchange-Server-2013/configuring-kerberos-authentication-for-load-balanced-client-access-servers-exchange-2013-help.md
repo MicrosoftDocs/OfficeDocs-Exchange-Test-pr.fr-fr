@@ -25,32 +25,12 @@ Afin d’utiliser l’authentification Kerberos avec des serveurs d’accès au
 
 Tous les serveurs d'accès au client qui partagent les mêmes espaces de noms et URL doivent utiliser les mêmes informations d'identification de compte de service de substitution. En règle générale, il vous suffit de disposer d'un compte unique pour une forêt pour chaque version d'Exchange. *informations d'identification du compte de service de substitution* ou *informations d'identification ASA*.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2010 et Exchange 2013 ne peuvent pas partager les mêmes informations d'identification ASA. Vous devez créer des informations d'identification ASA pour Exchange 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Exchange 2010 et Exchange 2013 ne peuvent pas partager les mêmes informations d'identification ASA. Vous devez créer des informations d'identification ASA pour Exchange 2013.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Bien que les enregistrements CNAME soient pris en charge pour les espaces de noms partagés, Microsoft recommande d’utiliser des enregistrements A. Cela permet de s’assurer que le client émet correctement une demande de ticket Kerberos fondée sur le nom partagé et non sur le serveur FQDN.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Bien que les enregistrements CNAME soient pris en charge pour les espaces de noms partagés, Microsoft recommande d’utiliser des enregistrements A. Cela permet de s’assurer que le client émet correctement une demande de ticket Kerberos fondée sur le nom partagé et non sur le serveur FQDN.
 
 
 Lorsque vous configurez le compte ASA, gardez ces recommandations à l’esprit :
@@ -298,18 +278,8 @@ Voici un exemple de la sortie qui est affichée lorsque vous exécutez la comman
 
 ## Association des noms de principaux du service (SPN) au compte ASA
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>N’associez pas les SPN avec des informations d’identification ASA jusqu’à ce que vous ayez déployé ces informations d’identification sur au moins un serveur Exchange, comme décrit précédemment dans la section Déployer les informations d'identification ASA sur le premier serveur d'accès client Exchange 2013. Dans le cas contraire, vous rencontrerez des erreurs d’authentification Kerberos.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> N’associez pas les SPN avec des informations d’identification ASA jusqu’à ce que vous ayez déployé ces informations d’identification sur au moins un serveur Exchange, comme décrit précédemment dans la section Déployer les informations d'identification ASA sur le premier serveur d'accès client Exchange 2013. Dans le cas contraire, vous rencontrerez des erreurs d’authentification Kerberos.
 
 
 Avant d’associer les SPN au compte ASA, vous devez vérifier que les SPN cibles ne sont pas déjà associés à un autre compte de la forêt. Les informations d’identification ASA doivent être le seul compte de la forêt auquel ces noms SPN sont associés. Vous pouvez vérifier qu’aucun autre compte de la forêt n’est associé aux noms de principaux du service en exécutant la commande **setspn** à partir de la ligne de commande.

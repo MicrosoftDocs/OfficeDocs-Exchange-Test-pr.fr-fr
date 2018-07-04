@@ -51,18 +51,8 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
 
 4.  Sur la page **Sélectionner un standard automatique de messagerie unifiée**, sélectionnez le standard automatique que vous voulez utiliser comme standard automatique de secours DTMF, puis cliquez sur **Enregistrer**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez commencer par activer la reconnaissance vocale du standard automatique avant de rechercher un standard automatique de secours DTMF que vous avez configuré.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez commencer par activer la reconnaissance vocale du standard automatique avant de rechercher un standard automatique de secours DTMF que vous avez configuré.
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour configurer un standard automatique à reconnaissance vocale avec un standard automatique de secours DTMF

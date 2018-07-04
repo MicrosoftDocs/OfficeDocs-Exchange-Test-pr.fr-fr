@@ -94,18 +94,8 @@ Les informations suivantes s’appliquent au rôle serveur de transport Edge Exc
 
 3.  À l'invite de commandes, exécutez la commande applicable à votre organisation.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si le contrôle de compte d'utilisateur est activé, vous devez exécuter <code>Setup.exe</code> à partir d'une invite de commandes élevée.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si le contrôle de compte d'utilisateur est activé, vous devez exécuter <code>Setup.exe</code> à partir d'une invite de commandes élevée.
     
         Setup.exe [/Mode:<setup mode>] [/IAcceptExchangeServerLicenseTerms]
         [/Roles:<server roles to install>] [/InstallWindowsComponents] 

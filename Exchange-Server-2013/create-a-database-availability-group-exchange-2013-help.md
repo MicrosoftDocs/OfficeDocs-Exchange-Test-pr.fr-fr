@@ -43,21 +43,10 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
     
       - Vous pouvez attribuer un nom au groupe de disponibilité de base de données, laisser le champ **Serveur témoin** vide et spécifier le répertoire que vous voulez créer et partager sur le serveur témoin. Dans ce scénario, l’Assistant recherchera un serveur d’accès au client dans lequel le rôle serveur de boîte aux lettres n’est pas installé et créera automatiquement le répertoire témoin spécifié sur ce serveur, partagera le répertoire et configurera le groupe de disponibilité de base de données pour utiliser ce serveur d’accès au client comme son propre serveur témoin.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si le serveur témoin que vous spécifiez n’est pas un serveur Exchange 2013 ou Exchange 2010, vous devez ajouter le groupe de sécurité universel du sous-système approuvé Exchange au groupe Administrateurs local sur le serveur témoin. Ces autorisations de sécurité sont nécessaires pour garantir qu'Exchange peut créer un répertoire et un partage sur le serveur témoin si nécessaire. Si les autorisations appropriées ne sont pas configurées, l'erreur suivante est retournée :<br />
-    <code>Error: An error occurred during discovery of the database availability group topology. Error: An error occurred while attempting a cluster operation. Error: Cluster API &quot;AddClusterNode() (MaxPercentage=12) failed with 0x80070005. Error: Access is denied.&quot;</code></td>
-    </tr>
-    </tbody>
-    </table>
-
-
+    > [!IMPORTANT]
+	> Si le serveur témoin que vous spécifiez n’est pas un serveur Exchange 2013 ou Exchange 2010, vous devez ajouter le groupe de sécurité universel du sous-système approuvé Exchange au groupe Administrateurs local sur le serveur témoin. Ces autorisations de sécurité sont nécessaires pour garantir qu'Exchange peut créer un répertoire et un partage sur le serveur témoin si nécessaire. Si les autorisations appropriées ne sont pas configurées, l'erreur suivante est retournée :<br />
+    > <code>Error: An error occurred during discovery of the database availability group topology. Error: An error occurred while attempting a cluster operation. Error: Cluster API &quot;AddClusterNode() (MaxPercentage=12) failed with 0x80070005. Error: Access is denied.&quot;</code>
+    
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
 > [!TIP]

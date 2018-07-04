@@ -19,18 +19,8 @@ _**Dernière rubrique modifiée :** 2016-12-09_
 
 Les professionnels de l’information ont souvent besoin de collaborer avec des destinataires, fournisseurs, partenaires et clients externes et de partager leurs informations de disponibilité (également appelées disponibilités de calendrier). La fédération dans Microsoft Exchange Server 2013 facilite ces efforts de collaboration. Le terme *fédération* désigne l’infrastructure d’approbation sous-jacente qui prend en charge le *partage fédéré*, un moyen facile pour les utilisateurs de partager des informations de calendrier avec les destinataires d’autres organisations fédérées externes. Pour en savoir plus sur le partage fédéré, voir [Partage](sharing-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.
 
 
 **Contenu de cette rubrique**
@@ -150,18 +140,8 @@ Bien qu’il s’agisse généralement du domaine SMTP principal de l’organisa
 
 Vous pouvez à tout moment ajouter des domaines acceptés à l’approbation de fédération ou en supprimer. Si vous souhaitez activer ou désactiver toutes les fonctionnalités de partage de fédération dans votre organisation, il vous suffit d’activer ou de désactiver l’OrgID pour l’approbation de fédération.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous modifiez l’OrgID, les domaines acceptés ou l’identificateur d’application pour l’approbation de fédération, toutes les fonctionnalités de partage de fédération sont affectées dans votre organisation. Toute organisation Exchange fédérée externe, notamment Exchange Online et les configurations de déploiement hybride, est également affectée. Nous vous recommandons d’informer tous vos partenaires fédérés externes si vous modifiez ces paramètres de configuration de l’approbation de fédération.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous modifiez l’OrgID, les domaines acceptés ou l’identificateur d’application pour l’approbation de fédération, toutes les fonctionnalités de partage de fédération sont affectées dans votre organisation. Toute organisation Exchange fédérée externe, notamment Exchange Online et les configurations de déploiement hybride, est également affectée. Nous vous recommandons d’informer tous vos partenaires fédérés externes si vous modifiez ces paramètres de configuration de l’approbation de fédération.
 
 
 Terminologie clé

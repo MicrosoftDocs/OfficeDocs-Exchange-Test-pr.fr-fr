@@ -187,18 +187,8 @@ En tant qu’utilisateur Outlook Voice Access, lorsque vous composez un numéro 
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous devez accéder à un message électronique après l'avoir supprimé à l'aide d'Outlook Voice Access, vous pouvez utiliser Outlook Web App ou Outlook pour retirer le message électronique du dossier Éléments supprimés et le replacer dans le dossier approprié. Vous ne pouvez pas utiliser Outlook Voice Access pour accéder au dossier Éléments supprimés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous devez accéder à un message électronique après l'avoir supprimé à l'aide d'Outlook Voice Access, vous pouvez utiliser Outlook Web App ou Outlook pour retirer le message électronique du dossier Éléments supprimés et le replacer dans le dossier approprié. Vous ne pouvez pas utiliser Outlook Voice Access pour accéder au dossier Éléments supprimés.
 
 
 ## Référence des commandes des options du calendrier
