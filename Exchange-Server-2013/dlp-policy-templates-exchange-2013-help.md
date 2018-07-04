@@ -55,24 +55,19 @@ Vous pouvez incorporer des modèles de stratégie et des définitions de contenu
 
 Vous pouvez aussi créer un fichier de modèle de stratégie DLP qui répond à la définition de schéma XML spécifique fournie par Microsoft à partir d'Exchange, puis importer le fichier dans votre système pour pouvoir créer des stratégies DLP à partir de celui-ci. En créant vos propres fichiers de modèles, vous pouvez définir votre propre modèle de stratégies DLP que Microsoft n'a pas encore fournies. Cette procédure diffère de la création d'une stratégie DLP à l'aide du Centre d'administration Exchange (CAE), ce qui a généralement lieu après la mise à disposition des modèles de stratégie. Si vous créez un modèle de stratégie indépendant d'Exchange, vous devrez l'importer avant de pouvoir l'utiliser pour analyser des messages. Vous pouvez aussi créer vos propres définitions d'informations confidentielles, en plus de celles définies par Microsoft dans Exchange. Il existe une définition de schéma XML distincte pour les fichiers de modèles de stratégies DLP et les packages de règle de classification. Pour démarrer, consultez les rubriques suivantes :
 
-  -  
-    [Définition de vos modèles DLP et types d'informations](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
+  -  [Définition de vos modèles DLP et types d'informations](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
 
-  -  
-    [Importer un modèle de stratégie DLP personnalisé à partir d’un fichier](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)
+  -  [Importer un modèle de stratégie DLP personnalisé à partir d’un fichier](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)
 
 ## Inclure la fonctionnalité DLP aux règles de transport existantes
 
 Vous pouvez incorporer des capacités de détection DLP aux règles de transport traditionnelles sans créer une nouvelle stratégie DLP. Si vous avez créé un ensemble de règles complet dans une version précédente d'Exchange et que vous souhaitez les dupliquer ou ajouter la détection d'informations confidentielles dans Exchange 2013, vous pouvez utiliser l'éditeur de règles de transport dans le Centre d'administration Exchange ou dans l'environnement de ligne de commande Exchange Management Shell pour incorporer ces deux fonctionnalités. Pour démarrer, consultez les rubriques suivantes :
 
-  -  
-    [Règles de transport ou de flux de messagerie](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) (Exchange Server 2013)
+  -  [Règles de transport ou de flux de messagerie](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) (Exchange Server 2013)
 
-  -  
-    [Règles de flux de messagerie (règles de transport) dans Exchange Online](https://technet.microsoft.com/fr-fr/library/jj919238\(v=exchg.150\)) (Exchange Online)
+  -  [Règles de flux de messagerie (règles de transport) dans Exchange Online](https://technet.microsoft.com/fr-fr/library/jj919238\(v=exchg.150\)) (Exchange Online)
 
-  -  
-    [Gestion de règles de flux de messagerie](manage-mail-flow-rules-exchange-2013-help.md)
+  -  [Gestion de règles de flux de messagerie](manage-mail-flow-rules-exchange-2013-help.md)
     
     [Cmdlets de stratégie et de conformité](https://technet.microsoft.com/fr-fr/library/dd298082\(v=exchg.150\))
 

@@ -59,17 +59,13 @@ Pour activer l'enregistrement de la connectivité, exécutez la commande suivant
 
 Cet exemple définit les paramètres du journal de connectivité suivants dans le service de transport sur le serveur de boîtes aux lettres nommé Mailbox01 :
 
-  -  
-    Définit l'emplacement des fichiers journaux de connectivité dans D:\\Hub Connectivity Log. Notez bien que si le dossier n'existe pas, il sera créé pour vous.
+  -  Définit l'emplacement des fichiers journaux de connectivité dans D:\\Hub Connectivity Log. Notez bien que si le dossier n'existe pas, il sera créé pour vous.
 
-  -  
-    Définit la taille maximale d'un fichier journal de connectivité à 20 Mo.
+  -  Définit la taille maximale d'un fichier journal de connectivité à 20 Mo.
 
-  -  
-    Définit la taille maximale du répertoire des journaux de connectivité à 1,5 Go.
+  -  Définit la taille maximale du répertoire des journaux de connectivité à 1,5 Go.
 
-  -  
-    Définit l'âge maximal d'un fichier journal de connectivité sur 45 jours.
+  -  Définit l'âge maximal d'un fichier journal de connectivité sur 45 jours.
 
 <!-- end list -->
 

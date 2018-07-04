@@ -19,17 +19,13 @@ _**Dernière rubrique modifiée :** 2017-02-23_
 
 Votre organisation peut exiger le blocage ou le rejet de certains types de messages afin de répondre aux exigences juridiques ou de conformité, ou pour répondre à des besoins spécifiques de l’entreprise. Voici quelques exemples de scénarios courants permettant de bloquer toutes les pièces jointes que vous pouvez configurer à l’aide des règles de transport dans Exchange :
 
-  -  
-    Example 1: Block messages with attachments, and notify the sender
+  -  Example 1: Block messages with attachments, and notify the sender
 
-  -  
-    Example 2: Notify intended recipients when an inbound message is blocked
+  -  Example 2: Notify intended recipients when an inbound message is blocked
 
-  -  
-    Example 3: Modify the subject line for notifications
+  -  Example 3: Modify the subject line for notifications
 
-  -  
-    Example 4: Apply a rule with a time limit
+  -  Example 4: Apply a rule with a time limit
 
 Pour obtenir des exemples supplémentaires illustrant la procédure de blocage des pièces jointes spécifiques, voir :
 

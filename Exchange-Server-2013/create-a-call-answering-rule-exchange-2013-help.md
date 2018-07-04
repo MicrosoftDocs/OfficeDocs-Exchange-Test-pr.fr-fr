@@ -67,14 +67,11 @@ Cet exemple crée la règle de répondeur automatique `MyCallAnsweringRule` dans
 
 Cet exemple crée la règle de répondeur automatique `MyCallAnsweringRule` dans la boîte aux lettres de Tony Smith et effectue les actions suivantes :
 
-  -  
-    Affecte la valeur 2 à la priorité de la règle de répondeur automatique.
+  -  Affecte la valeur 2 à la priorité de la règle de répondeur automatique.
 
-  -  
-    Crée les mappages de touches pour la règle de répondeur automatique.
+  -  Crée les mappages de touches pour la règle de répondeur automatique.
 
-  -  
-    Si l'appelant accède à la messagerie vocale de l'utilisateur et que l'état de ce dernier est défini sur Occupé, l'appelant peut :
+  -  Si l'appelant accède à la messagerie vocale de l'utilisateur et que l'état de ce dernier est défini sur Occupé, l'appelant peut :
     
       - Appuyer sur la touche 1 et être transféré vers le réceptionniste sur le poste 45678.
     
