@@ -31,7 +31,7 @@ Cette rubrique explique comment activer, désactiver, afficher et modifier la pr
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-> [!TIP]
+> [!TIP]  
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
@@ -41,7 +41,7 @@ Cette rubrique explique comment activer, désactiver, afficher et modifier la pr
 
 Lorsque vous activez un agent d’extension de cmdlet dans Exchange 2013, l’agent est exécuté sur chaque serveur qui exécute Exchange 2013 dans l’organisation. Quand un agent est activé, il est mis à la disposition des cmdlets qui peuvent ensuite utiliser l’agent pour effectuer des opérations supplémentaires.
 
-> [!CAUTION]
+> [!CAUTION]  
 > Avant d’activer un agent, assurez-vous que vous connaissez son fonctionnement et l’impact qu’il aura sur votre organisation.
 
 
@@ -55,7 +55,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Lorsque vous désactivez un agent d’extension de cmdlet dans Exchange 2013, l’agent est désactivé sur tous les serveurs de l’organisation qui exécutent Exchange 2013. Lorsqu’un agent est désactivé, il n’est pas mis à la disposition des cmdlets. Les cmdlets ne peuvent plus utiliser l’agent pour effectuer d’autres opérations.
 
-> [!CAUTION]
+> [!CAUTION]  
 > Avant de désactiver un agent, assurez-vous que vous connaissez le fonctionnement de l'agent, ainsi que les conséquences que la désactivation de l'agent entraînera dans l'organisation.
 
 
@@ -87,7 +87,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 La possibilité de modifier la priorité d’un agent d’extension de cmdlet dans Exchange 2013 est une option utile si vous souhaitez qu’un agent soit appelé par une cmdlet avant un autre agent. Ceci est particulièrement utile si vous créez un script personnalisé exécuté dans l’`Scripting Agent` et que vous souhaitez que ce script soit prioritaire sur un agent intégré. Pour plus d’informations sur `Scripting Agent`, voir [Agents d’extension des cmdlets](cmdlet-extension-agents-exchange-2013-help.md).
 
-> [!CAUTION]
+> [!CAUTION]  
 > La modification de la priorité ou le remplacement de la fonctionnalité d’un agent intégré est une opération avancée. Assurez-vous que vous comprenez totalement les modifications que vous effectuez.
 
 

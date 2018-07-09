@@ -25,7 +25,7 @@ Le choix du serveur d'accès au client sur lequel activer le point de terminaiso
 
   - **Migrations de déplacement à distance entre une organisation Exchange locale et Exchange Online**   Pour les migrations de déplacement à distance, tant par embarquement que par débarquement, vous devez activer le point de terminaison du proxy MRS sur les serveurs d'accès au client au sein de votre organisation locale.
 
-> [!NOTE]
+> [!NOTE]  
 > Si vous utilisez le CAE pour déplacer des boîtes aux lettres, les déplacements inter-forêts et les migrations de déplacement à distance par embarquement sont des déplacements de type pull parce que la demande provient de l'environnement cible. Les migrations de déplacement à distance par débarquement sont des déplacements de type push parce que la demande provient de l'environnement source.
 
 
@@ -41,7 +41,7 @@ Le choix du serveur d'accès au client sur lequel activer le point de terminaiso
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-> [!TIP]
+> [!TIP]  
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
@@ -69,7 +69,7 @@ La commande suivante active le point de terminaison du proxy MRS sur tous les se
 
     Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
 
-> [!NOTE]
+> [!NOTE]  
 > Comme indiqué précédemment, le point de terminaison du proxy MRS doit être activé sur chaque serveur d'accès au client au sein de votre organisation. Après avoir ajouté un serveur d'accès au client à votre organisation, exécutez la commande précédente.
 
 
@@ -94,10 +94,11 @@ Vérifiez que le paramètre *MRSProxyEnabled* est défini sur `True`.
 Une autre manière de vérifier que le point de terminaison du proxy MRS est activé consiste à utiliser la cmdlet **Test-MigrationServerAvailability** pour tester la capacité de communiquer avec le serveur distant hébergeant les boîtes aux lettres à déplacer ou, en cas de débarquement de boîtes aux lettres Exchange Online dans votre organisation locale, avec un serveur au sein de votre organisation locale. Pour plus d'informations, consultez la rubrique [Test-MigrationServerAvailability](https://technet.microsoft.com/fr-fr/library/jj219169\(v=exchg.150\)).
 
 L'exemple suivant montre comment tester la connexion au serveur dans la forêt corp.contoso.com.
-
+```
     $Credentials = Get-Credential
-
+```
+```
     Test-MigrationServerAvailability -ExchangeRemoteMove -Autodiscover -EmailAddress administrator@corp.contoso.com -Credentials $Credentials
-
+```
 Pour que l'exécution de cette commande réussisse, le point de terminaison du proxy MRS soit être activé.
 

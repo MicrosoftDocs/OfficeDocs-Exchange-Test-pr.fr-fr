@@ -35,7 +35,7 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-> [!TIP]
+> [!TIP]  
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
@@ -213,7 +213,7 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
             
             4.  L'appelant appuie sur la touche correspondante sur le clavier numérique et l'appel est transféré à l'utilisateur.
                 
-                > [!NOTE]
+                > [!NOTE]  
 				> Sur un standard automatique sans reconnaissance, le système indiquera l'appelant d'utiliser le clavier pour saisir le nom d'utilisateur (nom tout d'abord) puis effectuez une recherche de l'utilisateur. S'il existe plusieurs personnes dans le répertoire portant le même nom, l'appelant est invité à appuyer sur la clé appropriée à transférer à l'utilisateur. Vous pouvez éventuellement créer un standard automatique de secours DTMF qui utilise uniquement le clavier pour entrer un nom ou un alias.
                             
             Pour utiliser ces paramètres, vous devez ajouter les informations appropriées à l'utilisateur. Par exemple, si vous souhaitez que le standard automatique à utiliser un titre pour deux utilisateurs avec le même nom, vous devez ajouter ces informations pour le compte d'utilisateur. Sélectionnez une des méthodes suivantes qui fournissent des informations supplémentaires pour vous aider à la sélection de l'appelant l'utilisateur correct dans l'organisation :

@@ -21,7 +21,7 @@ Vous pouvez utiliser le CAE ou l’environnement de ligne de commande Exchange 
 
 Si vous devez supprimer une boîte aux lettres dans Exchange Online, consultez la rubrique [Suppression ou restauration de boîtes aux lettres utilisateur dans Exchange Online](https://technet.microsoft.com/fr-fr/library/dn186233\(v=exchg.150\)).
 
-> [!NOTE]
+> [!NOTE]  
 > Les boîtes aux lettres désactivés ou supprimées sont qualifiées de <em>boîtes aux lettres déconnectées</em>.
 
 
@@ -134,12 +134,15 @@ Utilisez la commande suivante pour désactiver les boîtes aux lettres utilisate
 Lorsque vous exécutez cette commande, un message s’affiche pour vous demander de confirmer la désactivation de la boîte aux lettres.
 
 Voici quelques exemples de commandes permettant de désactiver les boîtes aux lettres.
-
+```
     Disable-Mailbox danj
-
+```
+```
     Disable-Mailbox "Conf Room 31/1234 (12)"
-
+```
+```
     Disable-Mailbox sharedmbx@contoso.com
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -155,7 +158,7 @@ Pour vérifier que vous avez bien désactivé une boîte aux lettres, procédez 
     
     La valeur `Disabled` de la propriété *DisconnectReason* indique que la boîte aux lettres est désactivée.
     
-    > [!NOTE]
+    > [!NOTE]  
     > Lorsque vous supprimez une boîte aux lettres, la valeur de la propriété <em>DisconnectReason</em> est également <code>Disabled</code>. Cependant, le compte d’utilisateur Active Directory correspondant est supprimé.
 
 
@@ -190,12 +193,15 @@ Utilisez la commande suivante pour supprimer les boîtes aux lettres utilisateur
 Lorsque vous exécutez cette commande, un message vous demande de confirmer la suppression de la boîte aux lettres et du compte d’utilisateur Active Directory correspondant.
 
 Voici quelques exemples de commandes permettant de supprimer des boîtes aux lettres.
-
+```
     Remove-Mailbox pilarp@contoso.com
-
+```
+```
     Remove-Mailbox "Fleet Van (16)"
-
+```
+```
     Remove-Mailbox corpprint
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -213,7 +219,7 @@ Ou
     
     La valeur `Disabled` de la propriété *DisconnectReason* indique que la boîte aux lettres a été supprimée.
     
-    > [!NOTE]
+    > [!NOTE]  
     > Lorsque vous désactivez une boîte aux lettres, la valeur de la propriété <em>DisconnectReason</em> est également <code>Disabled</code>. Cependant, le compte d’utilisateur Active Directory correspondant est conservé.
 
 

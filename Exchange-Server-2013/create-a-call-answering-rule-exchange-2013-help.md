@@ -21,7 +21,7 @@ Vous pouvez utiliser l'environnement de ligne de commande Exchange Management Sh
 
 Les règles de répondeur automatique et les règles de boîte de réception sont appliquées de la même manière aux appels entrants et aux messages électroniques entrants. Par défaut, quand la messagerie unifiée est activée pour un utilisateur, aucune règle de répondeur automatique n'est configurée. Cependant, le système de messagerie répond aux appels entrants et les appelants sont invités à laisser un message vocal.
 
-> [!NOTE]
+> [!NOTE]  
 > Les utilisateurs à extension messagerie unifiée peuvent se connecter à Outlook Web App pour créer, gérer et supprimer les règles de répondeur automatique.
 
 

@@ -35,7 +35,7 @@ Pour les autres tâches de gestion relatives aux passerelles IP de messagerie un
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-> [!TIP]
+> [!TIP]  
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
@@ -45,9 +45,7 @@ Pour les autres tâches de gestion relatives aux passerelles IP de messagerie un
 
 1.  Dans le Centre d'administration Exchange, accédez à **Messagerie unifiée** \> **Passerelles IP de messagerie unifiée**. Dans l'affichage Liste, sélectionnez la passerelle IP de messagerie unifiée à gérer, puis cliquez sur **Modifier**![Icône Modifier](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Icône Modifier").
 
-2.  
-    
-    L'onglet **Passerelle IP de messagerie unifiée** permet d'afficher et de configurer les paramètres de la passerelle IP de messagerie unifiée. Vous pouvez également configurer les paramètres suivants :
+2.  L'onglet **Passerelle IP de messagerie unifiée** permet d'afficher et de configurer les paramètres de la passerelle IP de messagerie unifiée. Vous pouvez également configurer les paramètres suivants :
     
       - **État**   Ce champ en affichage seul indique l'état de la passerelle IP de messagerie unifiée.
     
@@ -81,7 +79,7 @@ Cet exemple permet à la passerelle IP de messagerie unifiée de fonctionner co
 
     Set-UMIPGateway -Identity MyUMIPGateway -Simulator $true
 
-> [!NOTE]
+> [!NOTE]  
 > Il existe une période de latence avant que toutes les modifications que vous apportez à la configuration d'une passerelle IP de messagerie unifiée se répercutent sur tous les serveurs Exchange qui se trouvent dans le même plan de numérotation de messagerie unifiée que la passerelle IP de messagerie unifiée.
 
 

@@ -31,7 +31,7 @@ Vous pouvez également créer des boîtes aux lettres utilisateur pour les utili
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-> [!TIP]
+> [!TIP]  
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
@@ -47,7 +47,7 @@ Vous pouvez également créer des boîtes aux lettres utilisateur pour les utili
 
 3.  Dans le champ **Alias** de la page **Nouvelle boîte aux lettres utilisateur**, saisissez l'alias de l'utilisateur, qui indique son alias de messagerie. L'alias de l'utilisateur est la partie de l'adresse de messagerie qui apparaît à gauche du symbole (@). Il doit être unique dans la forêt.
     
-    > [!NOTE]
+    > [!NOTE]  
     > Si vous ne renseignez pas cette zone, la valeur de la partie nom d'utilisateur du <strong>Nom de connexion utilisateur</strong> est utilisée pour l'alias de messagerie.
 
 
@@ -59,7 +59,7 @@ Vous pouvez également créer des boîtes aux lettres utilisateur pour les utili
     
       - **Nouvel utilisateur**   Activez cette option pour créer un compte d'utilisateur dans Active Directory et créer une boîte aux lettres pour cet utilisateur. Si vous activez cette option, vous devrez saisir les informations de compte d'utilisateur requises.
     
-    > [!NOTE]
+    > [!NOTE]  
     > Le compte Active Directory associé aux boîtes aux lettres utilisateur doit résider dans la même forêt que le serveur Exchange. Pour créer une boîte aux lettres pour un compte d'utilisateur résidant dans une forêt approuvée, vous devez créer une boîte aux lettres liée. Consultez la rubrique <a href="manage-linked-mailboxes-exchange-2013-help.md">Gérer les boîtes aux lettres liées</a>.
 
 
@@ -81,12 +81,12 @@ Vous pouvez également créer des boîtes aux lettres utilisateur pour les utili
     
       - \* **Nom de connexion utilisateur**    Utilisez cette zone pour saisir le nom dont l'utilisateur se servira pour accéder à la boîte aux lettres et se connecter au domaine. Le nom de connexion de l'utilisateur est constitué du nom d'utilisateur à gauche du symbole (@) et d'un suffixe à droite. Généralement, le suffixe est le nom du domaine dans lequel le compte d'utilisateur réside. Notez que vous ne pouvez pas utiliser d'apostrophe (') ni de guillemets (") dans le nom de connexion de l'utilisateur, car ces caractères ne sont pas pris en charge.
         
-        > [!NOTE]
+        > [!NOTE]  
         > Si la valeur du nom d'utilisateur diffère de celle utilisée dans le champ <strong>Alias</strong>, l'adresse de messagerie de l'utilisateur et le nom de connexion de l'utilisateur seront différents.
     
       - \* **Nouveau mot de passe**   Ce champ permet d'entrer le mot de passe que l'utilisateur doit utiliser pour se connecter à sa boîte aux lettres.
         
-        > [!NOTE]
+        > [!NOTE]  
         > Assurez-vous que le mot de passe que vous tapez est conforme aux exigences de longueur, de complexité et d'historique de mot de passe du domaine dans lequel vous créez le compte d'utilisateur.
     
       - \* **Confirmer le mot de passe**   Ce champ permet de confirmer le mot de passe entré dans le champ **Mot de passe**.
@@ -155,7 +155,7 @@ Vous pouvez également créer des boîtes aux lettres utilisateur pour les utili
 
 3.  Dans le champ **Alias** de la page **Nouvelle boîte aux lettres utilisateur**, saisissez l'alias de l'utilisateur, qui indique son alias de messagerie. L'alias de l'utilisateur est la partie de l'adresse de messagerie qui apparaît à gauche du symbole (@). Il doit être unique dans la forêt.
     
-    > [!NOTE]
+    > [!NOTE]  
     > Si vous ne renseignez pas cette zone, la valeur de la partie nom d'utilisateur du <strong>Nom de connexion utilisateur</strong> est utilisée pour l'alias de messagerie.
 
 
@@ -165,7 +165,7 @@ Vous pouvez également créer des boîtes aux lettres utilisateur pour les utili
     
     Quand vous créez une boîte aux lettres pour un utilisateur existant, vous n'avez pas besoin de fournir les informations sur le compte car elles existent déjà dans Active Directory.
     
-    > [!NOTE]
+    > [!NOTE]  
     > Le compte Active Directory associé aux boîtes aux lettres utilisateur doit résider dans la même forêt que le serveur Exchange. Pour créer une boîte aux lettres pour un compte d'utilisateur résidant dans une forêt approuvée, vous devez créer une boîte aux lettres liée. Consultez la rubrique <a href="manage-linked-mailboxes-exchange-2013-help.md">Gérer les boîtes aux lettres liées</a>.
 
 

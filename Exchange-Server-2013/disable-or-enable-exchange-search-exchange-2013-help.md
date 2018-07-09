@@ -19,7 +19,7 @@ _**Dernière rubrique modifiée :** 2014-05-07_
 
 Par défaut, le service de recherche Exchange est activé pour toutes les nouvelles bases de données de boîtes aux lettres et ne requiert aucune configuration supplémentaire. Cependant, si vous souhaitez interrompre le service de recherche Exchange de l'indexation du contenu de la boîte aux lettres, vous pouvez le désactiver pour des bases de données de boîtes aux lettres individuelles ou un serveur de boîtes aux lettres entier.
 
-> [!CAUTION]
+> [!CAUTION]  
 > La désactivation du service de recherche Exchange influe sur les fonctionnalités et performances des recherches de texte intégral effectuées par vos utilisateurs utilisant Outlook en mode en ligne ou des appareils Windows Mobile.
 > La fonctionnalité <a href="in-place-ediscovery-exchange-2013-help.md">Découverte électronique locale</a> s'appuie également sur le service de recherche Exchange. Si vous désactivez le service de recherche Exchange pour une base de données ou un serveur de boîtes aux lettres, les recherches eDiscovery sur place ne retourneront pas de messages de la base de données ou du serveur.
 
@@ -44,7 +44,7 @@ Vous rencontrez des difficultés ? Demandez de l’aide en participant aux foru
 
 Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Service de recherche Exchange » dans la rubrique [Autorisations des destinataires](recipients-permissions-exchange-2013-help.md).
 
-> [!NOTE]
+> [!NOTE]  
 > Vous ne pouvez pas utiliser le Centre d'administration Exchange (CAE) pour activer ou désactiver le service de recherche Exchange associé à une base de données de boîtes aux lettres.
 
 
@@ -72,7 +72,7 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 3.  Sous l'onglet **Général**, dans la liste **Type de démarrage**, sélectionnez **Désactivé** pour désactiver le service ou **Automatique** pour le démarrer automatiquement.
     
-    > [!NOTE]
+    > [!NOTE]  
     > Le type de démarrage affecte le service la prochaine fois qu'il est démarré, automatiquement après que le serveur est redémarré ou manuellement. À la prochaine étape, le service est arrêté ou démarré manuellement.
 
 
@@ -83,14 +83,17 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 **Utilisation du Shell**
 
 Exécutez les commandes suivantes pour arrêter et désactiver le service Microsoft Exchange Search.
-
+```
     Stop-Service MSExchangeFastSearch
-
+```
+```
     Set-Service MSExchangeFastSearch -StartupType Disabled
+```
 
 Exécutez les commandes suivantes pour configurer le service de recherche Exchange de sorte qu’il démarre automatiquement et démarrer ensuite le service.
-
+```
     Set-Service MSExchangeFastSearch -StartupType Automatic
-
+```
+```
     Start-Service MSExchangeFastSearch
-
+```

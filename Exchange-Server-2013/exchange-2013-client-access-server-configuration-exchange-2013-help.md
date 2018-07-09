@@ -39,7 +39,7 @@ Vous pouvez configurer plusieurs paramètres dans les répertoires virtuels pour
     
         Get-OutlookAnywhere | Set-OutlookAnywhere -InternalHostname "internalServer.contoso.com" -InternalClientAuthenticationMethod Ntlm -InternalClientsRequireSsl $true -ExternalHostname "externalServer.company.com" -ExternalClientAuthenticationMethod Basic -ExternalClientsRequireSsl $true -IISAuthenticationMethods Negotiate,NTLM,Basic
     
-    > [!TIP]
+    > [!TIP]  
     > Bien qu'Exchange 2013 prenne en charge Negotiate pour l'authentification HTTP Outlook Anywhere, vous ne devez l'utiliser que lorsque tous les serveurs de l'environnement exécutent Exchange 2013.
 
 
@@ -70,11 +70,12 @@ Vous devrez exécuter les commandes suivantes pour configurer les répertoires v
         Set-OwaVirtualDirectory "<CAS2013>\OWA (Default Web Site)" -ExternalUrl https://mail.contoso.com/OWA
     
     À l'invite de commande, exécutez les commandes suivantes une fois que vous avez défini le répertoire virtuel Outlook Web App.
-    
+    ```
         Net stop IISAdmin /y
-    
+    ```
+    ```
         Net start W3SVC
-
+    ```
 2.  Pour configurer l'accès externe au CAE, exécutez la commande suivante dans Exchange Management Shell.
     
         Set-EcpVirtualDirectory "<CAS2013>\ECP (Default Web Site)" -ExternalUrl https://mail.contoso.com/ECP -InternalURL https://mail.contoso.com/ECP 

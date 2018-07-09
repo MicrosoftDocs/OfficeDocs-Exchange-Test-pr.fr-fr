@@ -146,10 +146,12 @@ Vous pouvez utiliser une règle personnalisée qui définit un modèle sans preu
 ```
 
 L’exemple de cartes de crédit dans le présent article peut également être étendu à d’autres règles relatives aux informations sensibles. Pour visualiser la liste complète des règles fournies par Microsoft dans Exchange, utilisez la cmdlet [Get-ClassificationRuleCollection](https://technet.microsoft.com/fr-fr/library/jj218696\(v=exchg.150\)) dans l’environnement de ligne de commande Exchange Management Shell de la manière suivante :
-
+```
     $rule_collection = Get-ClassificationRuleCollection
-
+```
+```
     $rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_classifications.xml -Encoding byte
+```
 
 ## Pour plus d’informations
 

@@ -59,7 +59,7 @@ Vous pouvez incorporer des capacités de détection DLP aux règles de transport
 
   -  [Gestion de règles de flux de messagerie](manage-mail-flow-rules-exchange-2013-help.md)
     
-    [Cmdlets de stratégie et de conformité](https://technet.microsoft.com/fr-fr/library/dd298082\(v=exchg.150\))
+  -  [Cmdlets de stratégie et de conformité](https://technet.microsoft.com/fr-fr/library/dd298082\(v=exchg.150\))
 
 ## Utiliser des stratégies DLP créées par Microsoft
 

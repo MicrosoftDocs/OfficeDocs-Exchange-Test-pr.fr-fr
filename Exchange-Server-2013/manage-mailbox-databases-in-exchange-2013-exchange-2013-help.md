@@ -29,7 +29,7 @@ Cette rubrique vous indique comment effectuer des tâches de configuration conce
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-> [!TIP]
+> [!TIP]  
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
@@ -83,9 +83,7 @@ Dans l'environnement de ligne de commande Exchange Management Shell, vérifiez q
 
 3.  Cliquez sur **Modifier**![Icône Modifier](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Icône Modifier") pour configurer les attributs d'une base de données de boîtes aux lettres.
 
-4.  
-    
-    L'onglet **Général** permet d'afficher les informations d'état relatives au chemin d'accès de la base de données de boîtes aux lettres, y compris le chemin d'accès de la base de données de boîtes aux lettres, la dernière sauvegarde et l'état de la base de données de boîtes aux lettres :
+4.  L'onglet **Général** permet d'afficher les informations d'état relatives au chemin d'accès de la base de données de boîtes aux lettres, y compris le chemin d'accès de la base de données de boîtes aux lettres, la dernière sauvegarde et l'état de la base de données de boîtes aux lettres :
     
       - **Chemin d'accès à la base de données**   Ce champ en lecture seule affiche le chemin d'accès complet au fichier de base de données Exchange 2013 (.edb) pour la base de données de boîtes aux lettres sélectionnée. Pour afficher le chemin d'accès complet, cliquez sur le chemin d'accès et utilisez la touche fléchée vers la droite. Vous ne pouvez pas utiliser ce champ pour modifier le chemin d'accès. Pour modifier l'emplacement des fichiers de base de données, utilisez la cmdlet [Move-DatabasePath](https://technet.microsoft.com/fr-fr/library/bb124742\(v=exchg.150\)).
     

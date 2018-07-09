@@ -51,7 +51,7 @@ Il est important de noter les différences de terminologie entre Active Director
 
 2.  Cliquez sur **Nouveau**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") \> **Groupe de distribution**.
 
-3.  > [!TIP]
+3.  > [!TIP]  
 	> <img src="images/Bb124513.3ea82c95-9dda-450f-823b-cd0772249d81(EXCHG.150).png" title="Nouveaux groupes d’essai Office 365" alt="Nouveaux groupes d’essai Office 365" /><br />
     > Vous pouvez désormais créer un groupe Office 365 au lieu d’un groupe de distribution si vous avez un plan Office 365 pour entreprise ou un plan Exchange Online. Les groupes Office 365 ont les fonctionnalités d’un groupe de distribution et bien plus encore. Avec les groupes Office 365, vous pouvez envoyer des messages électroniques à un groupe, partager un calendrier commun, disposer d’une bibliothèque afin de stocker des fichiers et des dossiers de groupe, et de travailler sur ces derniers. Cliquez sur <strong>Nouveau</strong><img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="Icône Ajouter" alt="Icône Ajouter" /> &gt; <strong>Groupe Office 365</strong> pour commencer et consultez l’article <a href="https://go.microsoft.com/fwlink/p/?linkid=800653">Groupes Office 365 - Aide pour l’administrateur</a>.<br />
     > Si vous souhaitez migrer des groupes de distribution existants vers des groupes Office 365, consultez l’article <a href="https://go.microsoft.com/fwlink/p/?linkid=824756">Migrer les listes de distribution vers des groupes Office 365 - Aide pour l’administrateur</a>.<br />
@@ -91,7 +91,7 @@ Il est important de noter les différences de terminologie entre Active Director
 
 5.  Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer le groupe de distribution.
 
-> [!NOTE]
+> [!NOTE]  
 > Par défaut, les nouveaux groupes de distribution exigent l’authentification de tous les expéditeurs. Cela empêche des expéditeurs externes d’envoyer des messages aux groupes de distribution. Pour configurer un groupe de distribution afin d’accepter des messages de tous les expéditeurs, vous devez modifier les paramètres de restriction de remise de messages pour ce groupe de distribution.
 
 
@@ -113,7 +113,7 @@ Pour vérifier si vous avez créé avec succès un groupe de distribution, proc�
     
         Get-DistributionGroup <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
 
-> [!NOTE]
+> [!NOTE]  
 > Vous pouvez créer ou activer la messagerie de groupes de distribution universels uniquement. Pour convertir un groupe de domaine local ou global en groupe universel, vous pouvez utiliser la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/bb123770(v=exchg.150)">Set-Group</a> à l’aide de l’environnement de ligne de commande. Vous disposez peut-être de groupes à extension messagerie ayant migré à partir de versions antérieures d’Exchange qui ne sont pas des groupes universels. Vous pouvez utiliser le CAE ou l’environnement de ligne de commande Exchange Management Shell pour gérer ces groupes
 
 
@@ -205,7 +205,7 @@ Cette section permet de gérer les utilisateurs autorisés à envoyer des messag
     
     Pour supprimer un individu ou un groupe de la liste, sélectionnez-le, puis cliquez sur **Supprimer**![Icône Suppression](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Icône Suppression").
     
-    > [!NOTE]
+    > [!NOTE]  
     > Si vous avez configuré le groupe pour qu’il accepte uniquement les messages provenant des membres de votre organisation, tous les messages électroniques provenant d’un contact de messagerie sont rejetés, que vous ayez ajouté ces contacts à cette liste ou non.
 
 
@@ -235,18 +235,18 @@ Cette section permet d’afficher ou de modifier les adresses de messagerie éle
     
       - **SMTP**   Il s’agit du type d’adresse par défaut. Cliquez sur ce bouton, puis saisissez la nouvelle adresse SMTP dans la zone \* **Adresse de messagerie**.
         
-        > [!NOTE]
+        > [!NOTE]  
         > Pour que la nouvelle adresse devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>.
     
       - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone \* **Adresse de messagerie** l’un des types d’adresse de messagerie électronique non SMTP pris en charge.
         
-        > [!NOTE]
+        > [!NOTE]  
         > À l’exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l’adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d’adresse.
 
 
   - **Modifier**   Pour modifier une adresse de messagerie électronique associée au groupe, sélectionnez-la dans la liste, puis cliquez sur **Modifier**![Icône Modifier](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Icône Modifier").
     
-    > [!NOTE]
+    > [!NOTE]  
     > Pour que l’adresse existante devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>.
 
 
@@ -258,7 +258,7 @@ Cette section permet d’afficher ou de modifier les adresses de messagerie éle
 
 Utilisez cette section pour ajouter une info-courrier afin d’alerter les utilisateurs de problèmes potentiels s’ils envoient un message à ce groupe. Une info courrier est un texte affiché dans la barre d’informations lorsque ce groupe est ajouté aux lignes À, Cc ou Cci d’un nouveau message électronique. Par exemple, vous pourriez ajouter une info courrier aux grands groupes pour prévenir des expéditeurs potentiels que leur message sera envoyé à beaucoup de personnes.
 
-> [!NOTE]
+> [!NOTE]  
 > Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.
 
 

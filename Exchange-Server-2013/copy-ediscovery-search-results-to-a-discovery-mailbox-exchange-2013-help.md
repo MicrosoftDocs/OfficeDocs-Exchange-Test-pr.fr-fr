@@ -31,7 +31,7 @@ Une fois la recherche de découverte électronique inaltérable créée, vous po
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-> [!TIP]
+> [!TIP]  
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
@@ -82,10 +82,12 @@ Si vous avez utilisé le commutateur *EstimateOnly* pour obtenir une estimation 
     New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeUnsearchableItems
 
 Pour copier les résultats de cette recherche vers une boîte aux lettres de découverte, vous devez exécuter les commandes suivantes :
-
+```
     Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
-
+```
+```
     Start-MailboxSearch "FY13 Q2 Financial Results"
+```
 
 ## Plus d’informations sur la copie des résultats de la recherche
 

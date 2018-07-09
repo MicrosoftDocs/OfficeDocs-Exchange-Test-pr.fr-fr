@@ -23,7 +23,7 @@ Les dossiers publics sont conçus pour assurer un accès partagé et offrir une 
 
 Par défaut, un dossier public hérite des paramètres de son dossier parent, y compris les paramètres d'autorisations.
 
-> [!NOTE]
+> [!NOTE]  
 > Pour plus d’informations sur les limites et les quotas de stockage pour les dossiers publics, consultez les rubriques suivantes :
 > <ul>
 > <li><p>Pour les dossiers publics dans Office 365, voir <a href="https://go.microsoft.com/fwlink/?linkid=391188">Limites d’Exchange Online</a>.</p></li>
@@ -57,7 +57,7 @@ Lorsque vous utilisez le Centre d’administration Exchange (CAE) pour créer un
 
 4.  Dans **Dossier public**, entrez le nom du dossier public.
     
-    > [!NOTE]
+    > [!NOTE]  
     > N'utilisez pas de barre oblique inverse (\) dans le nom du dossier public créé.
 
 
@@ -71,7 +71,7 @@ Cet exemple permet de créer un dossier public appelé Reports dans le chemin d'
 
     New-PublicFolder -Name Reports -Path \Marketing\2013
 
-> [!NOTE]
+> [!NOTE]  
 > N'utilisez pas de barre oblique inverse (\) dans le nom du dossier public créé.
 
 
@@ -84,13 +84,16 @@ Pour vérifier que vous avez correctement créé un dossier public, procédez co
   - Dans le Centre d'administration Exchange (CAE), cliquez sur **Actualiser** pour actualiser la liste des dossiers publics. Le nouveau dossier public doit apparaître dans la liste.
 
   - Dans l'environnement de ligne de commande Exchange Management Shell, exécutez l'une des commandes suivantes :
-    
+    ```
         Get-PublicFolder -Identity \Marketing\2013\Reports | Format-List
-    
+    ```
+    ```
         Get-PublicFolder -Identity \Marketing\2013 -GetChildren
-    
+    ```
+    ```
         Get-PublicFolder -Recurse
+    ```
 
-> [!TIP]
+> [!TIP]  
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

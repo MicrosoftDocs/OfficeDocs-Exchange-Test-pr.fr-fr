@@ -33,7 +33,7 @@ Vous pouvez utiliser les cmdlets de rapports d’intégrité intégrés pour eff
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-> [!TIP]
+> [!TIP]  
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
@@ -46,18 +46,23 @@ Vous pouvez utiliser le Shell pour obtenir un résumé de l’intégrité d’un
 ## Utiliser le Shell pour afficher l’intégrité du serveur
 
 Exécutez l’une des commandes suivantes pour afficher les indicateurs d’intégrité et les informations d’intégrité sur un serveur exécutant Exchange 2013.
-
+```
     Get-HealthReport -Identity <ServerName>
-
+```
+```
     Get-ServerHealth -Identity <ServerName> | Format-Table Server,CurrentHealthSetState,Name,HealthSetName,AlertValue,HealthGroupName -Auto
+```
 
 Exécutez l’une des commandes suivantes pour afficher les indicateurs d’intégrité sur un serveur ou un groupe de disponibilité de base de données exécutant Exchange 2013.
-
+```
     Get-ExchangeServer | Get-HealthReport -RollupGroup
-
+```
+```
     Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
-
+```
+```
     (Get-DatabaseAvailabiltyGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
+```
 
 ## Afficher la liste des indicateurs d’intégrité
 

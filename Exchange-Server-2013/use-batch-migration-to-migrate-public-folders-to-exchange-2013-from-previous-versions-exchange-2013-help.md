@@ -204,11 +204,12 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
         
         > [!NOTE]
         > Toutes les informations contenues dans les dossiers publics sont définitivement effacées lorsque vous les supprimez.
-        
+        ```
             Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
-        
+        ```
+        ```
             Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
-
+        ```
 Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubriques suivantes :
 
   - [Get-MigrationBatch](https://technet.microsoft.com/fr-fr/library/jj219164\(v=exchg.150\))

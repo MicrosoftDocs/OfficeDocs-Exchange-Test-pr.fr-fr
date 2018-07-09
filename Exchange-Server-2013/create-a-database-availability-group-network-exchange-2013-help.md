@@ -33,7 +33,7 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-> [!TIP]
+> [!TIP]  
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
@@ -45,9 +45,7 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
 
 2.  Sélectionnez le groupe de disponibilité de base de données que vous souhaitez configurer, puis cliquez sur ![Ajouter un réseau DAG](images/Dd298051.befcdc4e-7f7a-451d-a0a8-608c79f5d186(EXCHG.150).gif "Ajouter un réseau DAG").
 
-3.  
-    
-    Sur la page **Nouveau réseau de groupe de disponibilité de la base de données**, fournissez les informations suivantes :
+3.  Sur la page **Nouveau réseau de groupe de disponibilité de la base de données**, fournissez les informations suivantes :
     
       - **Nom du réseau du groupe de disponibilité de base de données**   Entrez dans ce champ un nom de réseau unique dans le groupe de disponibilité de base de données.
     

@@ -36,10 +36,12 @@ Les groupes de distribution dynamique sont des groupes de distribution dont l’
 ## Utilisation de l’environnement de ligne de commande Exchange Management Shell pour afficher la liste des membres d’un groupe de distribution dynamique
 
 Cet exemple renvoie la liste des membres du groupe de distribution dynamique nommé employés à plein temps. La première commande enregistre l’objet de groupe de distribution dynamique dans la variable `$FTE`. La deuxième commande utilise l’applet de commande **Get-Recipient** pour répertorier les destinataires qui correspondent aux critères définis pour le groupe de distribution dynamique.
-
+```
     $FTE = Get-DynamicDistributionGroup "Full Time Employees"
-
+```
+```
     Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Get-DynamicDistributionGroup](https://technet.microsoft.com/fr-fr/library/bb124762\(v=exchg.150\)) et [Get-Recipient](https://technet.microsoft.com/fr-fr/library/aa996921\(v=exchg.150\)).
 

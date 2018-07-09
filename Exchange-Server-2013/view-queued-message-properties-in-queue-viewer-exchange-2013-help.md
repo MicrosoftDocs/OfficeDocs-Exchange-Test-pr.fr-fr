@@ -47,9 +47,7 @@ Vous pouvez utiliser l'Afficheur des files d'attente de la Boîte à outils Exch
 
 4.  Cliquez avec le bouton droit sur les propriétés que vous voulez afficher, puis cliquez sur **Propriétés**.
 
-5.  
-    
-    L'onglet **Général** affiche les informations détaillées suivantes sur le message :
+5.  L'onglet **Général** affiche les informations détaillées suivantes sur le message :
     
       - **Identité**   Ce champ affiche le nombre entier représentant un message particulier. L'identité de message est attribuée par la base de données des files d'attente lorsque le message est reçu pour traitement. Vous pouvez inclure une identité de serveur et de file d'attente facultative pour identifier une instance unique du message.
     

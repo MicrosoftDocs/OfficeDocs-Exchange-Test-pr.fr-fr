@@ -29,7 +29,7 @@ L’archivage inaltérable vous permet de reprendre le contrôle des données de
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-> [!TIP]
+> [!TIP]  
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
@@ -45,7 +45,7 @@ L’archivage inaltérable vous permet de reprendre le contrôle des données de
 
 3.  Sur la page **Nouvelle boîte aux lettres utilisateur**, dans le champ **Alias**, saisissez l’alias de l’utilisateur.
     
-    > [!NOTE]
+    > [!NOTE]  
     > Si vous laissez ce champ vide, la valeur entrée dans la zone <strong>Nom de connexion utilisateur</strong> est utilisée comme alias.
 
 
@@ -55,7 +55,7 @@ L’archivage inaltérable vous permet de reprendre le contrôle des données de
     
       - **Nouvel utilisateur**   Cliquez sur ce bouton pour créer un compte d’utilisateur dans Active Directory et créer une boîte aux lettres pour l’utilisateur. Si vous sélectionnez cette option, vous devrez fournir les informations de compte d’utilisateur requises.
     
-    > [!NOTE]
+    > [!NOTE]  
     > Le compte Active Directory qui est associé aux boîtes aux lettres d’utilisateur doit résider dans la même forêt que le serveur Exchange. Pour créer une boîte aux lettres pour un compte d’utilisateur résidant dans une forêt approuvée, vous devez créer une boîte aux lettres liée. Pour plus d’informations, voir <a href="manage-linked-mailboxes-exchange-2013-help.md">Gérer les boîtes aux lettres liées</a>.
 
 
@@ -106,7 +106,7 @@ Vous pouvez également créer des archives pour les utilisateurs existants qui o
 
 3.  Dans le volet d’informations, sous **Archive locale**, cliquez sur **Activer**.
     
-    > [!TIP]
+    > [!TIP]  
     > Vous pouvez également activer des archives en bloc en sélectionnant plusieurs boîtes aux lettres (à l’aide de la touche Maj ou Ctrl). Une fois les boîtes aux lettres sélectionnées, cliquez sur <strong>Plus d’options</strong> dans le volet d’informations. Sous <strong>Archive</strong>, cliquez sur <strong>Activer</strong>.
 
 
@@ -140,7 +140,7 @@ Pour vérifier que vous avez activé une archive locale pour une boîte aux lett
 
 Vous voulez peut-être désactiver l’archive d’utilisateur pour résoudre des problèmes ou pour déplacer la boîte aux lettres vers une version d’Exchange qui ne prend pas en charge l’archivage inaltérable. Si vous désactivez une archive locale, toutes les informations qu’elle contient seront conservées dans la base de données de boîtes aux lettres jusqu’à ce que le délai de rétention de cette dernière ait expiré et que l’archive soit définitivement supprimée. (Par défaut, Exchange conserve les boîtes aux lettres déconnectées, y compris les boîtes aux lettres d’archivage, pendant trente jours.)
 
-> [!NOTE]
+> [!NOTE]  
 > La désactivation des archives entraîne leur suppression de la boîte aux lettres et leur marquage pour suppression dans la base de données de boîtes aux lettres.
 
 
@@ -154,7 +154,7 @@ Pour reconnecter l’archive locale à cette boîte aux lettres, vous pouvez uti
 
 3.  Dans le volet d’informations, sous **Archive locale**, cliquez sur **Désactiver**.
     
-    > [!TIP]
+    > [!TIP]  
     > Vous pouvez également désactiver des archives en bloc en sélectionnant plusieurs boîtes aux lettres (à l’aide de la touche Maj ou Ctrl). Une fois les boîtes aux lettres sélectionnées, cliquez sur <strong>Plus d’options</strong> dans le volet d’informations. Sous <strong>Archive</strong>, cliquez sur <strong>Désactiver</strong>.
 
 
@@ -219,7 +219,7 @@ Lorsque vous désactivez une boîte aux lettres d’archivage, elle est déconne
 > Si vous désactivez une archive pour un utilisateur, puis activez une archive pour le même utilisateur, une nouvelle archive lui est octroyée. La nouvelle archive ne contient pas les données présentes dans l’archive déconnectée de l’utilisateur. Si vous souhaitez reconnecter un utilisateur à son archive déconnectée, vous devez appliquer cette procédure.
 
 
-> [!NOTE]
+> [!NOTE]  
 > Vous ne pouvez pas utiliser le CAE pour connecter une archive déconnectée à un utilisateur de boîte aux lettres.
 
 

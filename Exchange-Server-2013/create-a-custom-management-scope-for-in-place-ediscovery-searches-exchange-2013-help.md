@@ -136,31 +136,38 @@ Voici quelques méthodes permettant de vérifier si vous avez implémenté avec 
       - Masquez le groupe de distribution du carnet d'adresses partagé de l'organisation. Utilisez le CAE ou la cmdlet **Set-DistributionGroup** une fois que le groupe est créé. Si vous créez le groupe dans l’environnement Exchange Management Shell, utilisez la syntaxe `HiddenFromAddressListsEnabled $true`.
     
     Dans l'exemple suivant, la première commande crée un groupe de distribution avec une appartenance fermée et la modération est activée. La deuxième commande masque le groupe dans le carnet d'adresses partagé.
-    
+    ```
         New-DistributionGroup -Name "Vancouver Users eDiscovery Scope" -Alias VancouverUserseDiscovery -MemberJoinRestriction closed -MemberDepartRestriction closed -ModerationEnabled $true
-    
+    ```
+    ```
         Set-DistributionGroup "Vancouver Users eDiscovery Scope" -HiddenFromAddressListsEnabled $true
-    
+    ```
+
     Pour plus d'informations sur la création et la gestion des groupes de distribution, consultez la rubrique [Création et gestion de groupes de distribution](create-and-manage-distribution-groups-exchange-2013-help.md).
 
   - Bien que vous puissiez utiliser l'appartenance au groupe de distribution uniquement comme filtre de destinataire pour une étendue de gestion personnalisée utilisée pour la découverte électronique, vous pouvez utiliser d'autres propriétés de destinataire pour ajouter des utilisateurs à ce groupe de distribution. Voici quelques exemples d'utilisation des cmdlets **Get-Mailbox** et **Get-Recipient** pour renvoyer un groupe d'utilisateurs spécifique sur la base d'attributs de boîte aux lettres ou d'utilisateur courants.
-    
+    ```
         Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
-    
+    ```
+    ```
         Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "VancouverSubsidiary"'
-    
+    ```
+    ```
         Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
-    
+    ```
+    ```
         Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
-    
+    ```
+    ```
         Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -OrganizationalUnit "namsr01a002.sdf.exchangelabs.com/Microsoft Exchange Hosted Organizations/contoso.onmicrosoft.com"
-
+    ```
   - Vous pouvez ensuite utiliser les exemples du point précédent pour créer une variable qui peut être utilisée avec la cmdlet **Add-DistributionGroupMember** pour ajouter un groupe d'utilisateurs à un groupe de distribution. Dans l'exemple suivant, la première commande crée une variable qui contient toutes les boîtes aux lettres d'utilisateurs qui ont la valeur **Vancouver** pour la propriété *Department* dans leur compte d'utilisateur. La deuxième commande ajoute ces utilisateurs au groupe de distribution aux utilisateurs Vancouver.
-    
+    ```
         $members = Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "Vancouver"'
-    
+    ```
+    ```
         $members | ForEach {Add-DistributionGroupMember "Ottawa Users" -Member $_.Name}
-
+    ```
   - Vous pouvez utiliser la cmdlet **Add-RoleGroupMember** pour ajouter un membre à un groupe de rôles existant qui est utilisé pour limiter des recherches de découverte électronique. Par exemple, la commande suivante ajoute l'utilisateur admin@ottawa.contoso.com au groupe de rôles Gestion de la découverte Ottawa.
     
         Add-RoleGroupMember "Vancouver Discovery Management" -Member paralegal@vancouver.contoso.com

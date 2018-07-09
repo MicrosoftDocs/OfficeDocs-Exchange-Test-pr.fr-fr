@@ -23,7 +23,7 @@ Les groupes de distribution dynamiques sont des objets du groupe Active Director
 
 Contrairement aux groupes de distribution habituels qui contiennent un ensemble défini de membres, la liste des membres de ces groupes de distribution dynamiques est calculée chaque fois qu’un message leur est envoyé, en fonction des filtres et conditions que vous avez définis. Lorsqu’un courrier électronique est envoyé à un groupe de distribution dynamique, il est remis à tous les destinataires de l’organisation qui respectent les critères définis pour ce groupe.
 
-> [!NOTE]
+> [!NOTE]  
 > Un groupe de distribution dynamique inclut tout destinataire dans Active Directory ayant des valeurs d'attribut correspondant à son filtre. Si les propriétés d’un destinataire sont modifiées pour correspondre au filtre, le destinataire peut involontairement devenir membre du groupe et commencer à recevoir des messages envoyés au groupe. Des processus de déploiement de compte cohérents et bien définis réduisent la probabilité que cela se produise.
 
 
@@ -35,7 +35,7 @@ Contrairement aux groupes de distribution habituels qui contiennent un ensemble 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-> [!TIP]
+> [!TIP]  
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
@@ -51,7 +51,7 @@ Contrairement aux groupes de distribution habituels qui contiennent un ensemble 
     
       - \* **Nom complet**   Saisissez le nom complet. Ce nom apparaît dans le carnet d’adresses partagé, dans la ligne À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes du Centre d’administration Exchange. Le nom d'affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s'agit. Ce nom doit aussi être unique dans la forêt.
         
-        > [!NOTE]
+        > [!NOTE]  
         > La stratégie de noms de groupes n’est pas appliquée aux groupes de distribution dynamique.
     
       - **\* Alias**   Saisissez le nom de l’alias du groupe. L’alias ne peut pas comporter plus de 64 caractères et doit être unique dans la forêt. Lorsqu’un utilisateur saisit l’alias dans la ligne À : d’un message électronique, sa résolution génère le nom complet du groupe.
@@ -120,7 +120,7 @@ Contrairement aux groupes de distribution habituels qui contiennent un ensemble 
     </tbody>
     </table>
     
-    > [!NOTE]
+    > [!NOTE]  
     > Les valeurs que vous entrez pour l’attribut sélectionné doivent exactement correspondre à celles qui s’affichent dans les propriétés du destinataire. Par exemple, si vous entrez <strong>Washington</strong> comme <strong>Département ou région</strong>, sauf que la valeur pour la propriété du destinataire est <strong>WA</strong>, la condition n’est pas satisfaite. Notez que les valeurs basées sur un texte que vous avez spécifié ne respectent pas la casse. Par exemple, si vous indiquez <strong>Contoso</strong> pour l’attribut <strong>Société</strong>, les messages sont envoyés à un destinataire si la valeur est <strong>contoso</strong>.
 
 
@@ -128,13 +128,13 @@ Contrairement aux groupes de distribution habituels qui contiennent un ensemble 
 
 7.  Pour ajouter une autre règle visant à définir des critères d’appartenance, cliquez sur **Ajouter une règle** sous la règle que vous avez créée.
     
-    > [!NOTE]
+    > [!NOTE]  
     > Si vous ajoutez plusieurs règles pour définir une appartenance, un destinataire doit satisfaire les critères de chacune des règles pour recevoir un message envoyé au groupe. En d'autres termes, les règles sont connectées entre elles par l’opérateur booléen <strong>AND</strong>.
 
 
 8.  Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer le groupe de distribution dynamique.
 
-> [!NOTE]
+> [!NOTE]  
 > Pour spécifier des règles pour des attributs autres que ceux disponibles dans l’EAC, vous devez l’environnement de ligne de commande Exchange Management Shell pour créer un groupe de distribution dynamique. N’oubliez pas que les paramètres de filtre et de condition pour les groupes de distribution dynamiques dotés de filtres des destinataires personnalisés ne peuvent être gérés qu’à l’aide de l’environnement. Pour voir un exemple de création d’un groupe de distribution dynamique avec une requête personnalisée, reportez-vous à la section suivante traitant de l'utilisation de l’environnement de ligne de commande Exchange Management Shell pour créer un groupe de distribution dynamique.
 
 
@@ -226,7 +226,7 @@ Cette section permet de gérer les utilisateurs autorisés à envoyer des messag
     
     Pour supprimer un individu ou un groupe de la liste, sélectionnez-le, puis cliquez sur **Supprimer**![Icône Suppression](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Icône Suppression").
     
-    > [!NOTE]
+    > [!NOTE]  
     > Si vous avez configuré le groupe pour autoriser uniquement des expéditeurs appartenant à votre organisation à envoyer des messages au groupe, un message électronique qui est envoyé par un contact de messagerie est alors rejeté, même si vous aviez ajouté ce contact à cette liste.
 
 
@@ -256,18 +256,18 @@ Cette section permet d’afficher ou de modifier les adresses de messagerie éle
     
       - **SMTP**   Il s’agit du type d’adresse par défaut. Cliquez sur ce bouton, puis saisissez la nouvelle adresse SMTP dans la zone \* **Adresse de messagerie**.
         
-        > [!NOTE]
+        > [!NOTE]  
         > Pour que la nouvelle adresse devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>.
     
       - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone \* **Adresse de messagerie** l’un des types d’adresse de messagerie électronique non SMTP pris en charge.
         
-        > [!NOTE]
+        > [!NOTE]  
         > À l’exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l’adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d’adresse.
 
 
   - **Modifier**   Pour modifier une adresse de messagerie électronique associée au groupe, sélectionnez-la dans la liste, puis cliquez sur **Modifier**![Icône Modifier](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Icône Modifier").
     
-    > [!NOTE]
+    > [!NOTE]  
     > Pour que l’adresse existante devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>.
 
 
@@ -279,7 +279,7 @@ Cette section permet d’afficher ou de modifier les adresses de messagerie éle
 
 Utilisez cette section pour ajouter une info courrier afin d’alerter les utilisateurs de problèmes potentiels avant qu’ils envoient un message à ce groupe. Une info courrier est un texte affiché dans la barre d’informations lorsque ce groupe est ajouté aux lignes À, Cc ou Cci d’un nouveau message électronique. Par exemple, vous pourriez ajouter une info courrier aux grands groupes pour prévenir des expéditeurs potentiels que leur message sera envoyé à beaucoup de personnes.
 
-> [!NOTE]
+> [!NOTE]  
 > Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.
 
 

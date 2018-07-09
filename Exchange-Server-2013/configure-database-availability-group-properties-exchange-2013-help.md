@@ -49,9 +49,7 @@ Vous pouvez utiliser le Centre d’administration Exchange (CAE) ou l’environn
 
 2.  Sélectionnez le DAG que vous voulez configurer, puis cliquez sur ![Icône Modifier](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Icône Modifier").
 
-3.  
-    
-    Utilisez la page **Général** pour afficher l'appartenance au groupe de disponibilité de base de données et l'état opérationnel et pour configurer le serveur témoin du groupe de disponibilité de base de données, le répertoire témoin et la configuration du réseau automatique :
+3.  Utilisez la page **Général** pour afficher l'appartenance au groupe de disponibilité de base de données et l'état opérationnel et pour configurer le serveur témoin du groupe de disponibilité de base de données, le répertoire témoin et la configuration du réseau automatique :
     
       - **Serveur témoin**   Nom d’hôte ou nom de domaine complet du serveur témoin pour ce groupe de disponibilité de base de données. Bien qu’il s’agisse d’une propriété obligatoire pour tous les groupes de disponibilité de base de données, le serveur témoin est utilisé lorsqu’il y a un nombre pair de membres du DAG et que le modèle de quorum utilisé par le cluster est Nœud et partage de fichiers majoritaires.
     
@@ -61,9 +59,7 @@ Vous pouvez utiliser le Centre d’administration Exchange (CAE) ou l’environn
     
       - **Configurer le réseau des groupes de base de données manuellement**   Case à cocher que vous activez lorsque vous souhaitez configurer tous les réseaux DAG manuellement. Si vous n’activez pas cette case à cocher, le système configure les réseaux DAG automatiquement selon la configuration de l’interface réseau. Si cette case à cocher est activée, les cmdlets **Set-DatabaseAvailabilityGroupNetwork** et **New-DatabaseAvailabilityGroupNetwork** sont désactivées pour une utilisation administrative dans le groupe de disponibilité de base de données.
 
-4.  
-    
-    Utilisez la page **Adresse IP** pour afficher et modifier les adresses IP assignées au groupe de disponibilité de base de données :
+4.  Utilisez la page **Adresse IP** pour afficher et modifier les adresses IP assignées au groupe de disponibilité de base de données :
     
       - Sélectionnez une adresse IP existante et cliquez sur ![Icône Modifier](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Icône Modifier") pour la modifier.
     
@@ -71,9 +67,7 @@ Vous pouvez utiliser le Centre d’administration Exchange (CAE) ou l’environn
     
       - Entrez une adresse IP et cliquez sur ![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour l'ajouter au DAG.
 
-5.  
-    
-    Cliquez sur **Enregistrer** pour enregistrer les modifications apportées.
+5.  Cliquez sur **Enregistrer** pour enregistrer les modifications apportées.
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer les propriétés du groupe de disponibilité de base de données
 

@@ -85,6 +85,7 @@ Créez ensuite les répertoires correspondant aux répertoires racine configuré
 
     md C:\ExchangeDatabases
     md C:\ExchangeVolumes
+   
 
 ## Comment savoir si cette étape a fonctionné ?
 
@@ -117,14 +118,18 @@ Les dossiers montés devraient apparaître dans la liste des résultats.
 ## Étape 5 : Créer les dossiers de base de données
 
 Ensuite, créez les répertoires de base de données sous le chemin d'accès racine C:\\ExchangeDatabases. Cet exemple montre comment créer des répertoires pour une configuration de stockage avec 4 bases de données sur chaque volume.
-
+```
     md c:\ExchangeDatabases\db001
-
+```
+```
     md c:\ExchangeDatabases\db002
-
+```
+```
     md c:\ExchangeDatabases\db003
-
+```
+```
     md c:\ExchangeDatabases\db004
+```
 
 ## Comment savoir si cette étape a fonctionné ?
 
@@ -157,22 +162,30 @@ C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.db
 C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.log
 
 Cet exemple montre comment créer des répertoires pour 4 bases de données qui seront stockées sur le volume 1 :
-
+```
     md c:\ExchangeDatabases\db001\db001.db
-
+```
+```
     md c:\ExchangeDatabases\db001\db001.log
-
+```
+```
     md c:\ExchangeDatabases\db002\db002.db
-
+```
+```
     md c:\ExchangeDatabases\db002\db002.log
-
+```
+```
     md c:\ExchangeDatabases\db003\db003.db
-
+```
+```
     md c:\ExchangeDatabases\db003\db003.log
-
+```
+```
     md c:\ExchangeDatabases\db004\db004.db
-
+```
+```
     md c:\ExchangeDatabases\db004\db004.log
+```
 
 Répétez les commandes précédentes pour les bases de données sur chaque volume.
 
@@ -207,8 +220,10 @@ Pour vérifier que vous avez bien configuré AutoReseed pour un groupe de dispon
         Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
 
 2.  Exécutez la commande suivante pour vérifier que la structure de répertoires est configurée correctement (vous trouverez ci-dessous les chemins d'accès par défaut ; si nécessaire, remplacez les chemins d'accès par ceux que vous utilisez).
-    
+    ```
         Dir c:\ExchangeDatabases /s
-    
+    ```
+    ```
         Dir c:\ExchangeVolumes /s
+    ```    
 

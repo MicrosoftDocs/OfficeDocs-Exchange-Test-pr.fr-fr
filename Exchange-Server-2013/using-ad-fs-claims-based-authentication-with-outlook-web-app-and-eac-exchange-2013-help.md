@@ -255,10 +255,12 @@ Pour configurer Active Directory Federation Services :
 12. Sur la page **Résultats**, vérifiez les résultats, vérifiez que la configuration s’est déroulée correctement, puis cliquez sur **Étapes ultérieures requises pour le déploiement de votre service FS (Federation Service)**.
 
 Les commandes de PowerShell suivantes Windows font la même chose que les étapes précédentes.
-
+```
     Import-Module ADFS
-
+```
+```
     Install-AdfsFarm -CertificateThumbprint 0E0C205D252002D535F6D32026B6AB074FB840E7 -FederationServiceDisplayName "Contoso Corporation" -FederationServiceName adfs.contoso.com -GroupServiceAccountIdentifier "contoso\FSgmsa`$"
+```
 
 Pour plus de détails et d’informations sur la syntaxe, consultez la page relative à [Install-AdfsFarm](https://go.microsoft.com/fwlink/?linkid=392704).
 
@@ -359,20 +361,26 @@ Vous pouvez également créer des approbations de partie de confiance et des rè
     @RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");
 
 **IssuanceTransformRules.txt contient :** 
-
+```
     @RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value); 
-    
+ ```
+ ```   
     @RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
+```
 
 **Exécutez les commandes suivantes :** 
-
+```
     [string]$IssuanceAuthorizationRules=Get-Content -Path C:\IssuanceAuthorizationRules.txt
-    
+ ```
+ ```   
     [string]$IssuanceTransformRules=Get-Content -Path c:\IssuanceTransformRules.txt
-    
+ ```
+ ```   
     Add-ADFSRelyingPartyTrust -Name "Outlook Web App" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/owa/" -WSFedEndpoint https://mail.contoso.com/owa/ -Identifier https://mail.contoso.com/owa/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
-    
+ ```  
+ ```
     Add-ADFSRelyingPartyTrust -Name "Exchange Admin Center (EAC)" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/ecp/" -WSFedEndpoint https://mail.contoso.com/ecp/ -Identifier https://mail.contoso.com/ecp/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
+```
 
 ## Étape 4 – Installer le service de rôle de proxy d’application web (facultatif)
 

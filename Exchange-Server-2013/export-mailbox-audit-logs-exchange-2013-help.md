@@ -62,10 +62,12 @@ Pour activer l’enregistrement d’audit de boîte aux lettres pour une boîte 
     Set-Mailbox <Identity> -AuditEnabled $true
 
 Pour activer l’enregistrement d’audit de boîte aux lettres pour toutes les boîtes aux lettres des utilisateurs de votre organisation, exécutez les commandes suivantes.
-
+```
     $UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
-
+```
+```
     $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
+```
 
 ## Étape 2 : Configurer Outlook Web App pour autoriser les pièces jointes XML
 

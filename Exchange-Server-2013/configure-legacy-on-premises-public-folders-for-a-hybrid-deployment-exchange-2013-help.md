@@ -23,7 +23,7 @@ Dans un déploiement hybride, vos utilisateurs peuvent être dans un environneme
 
 Cette rubrique décrit comment synchroniser des dossiers publics à extension messagerie lorsque vos utilisateurs opèrent dans un environnement Office 365, alors que vos dossiers publics Exchange 2010 SP3 ou Exchange 2007 SP3 RU10 sont locaux. Toutefois, un utilisateur Office 365 qui n’est pas représenté par un objet MailUser local (propre à la hiérarchie de dossier public cible) ne peut pas accéder aux dossiers publics hérités ou Exchange 2013 locaux.
 
-> [!NOTE]
+> [!NOTE]  
 > Cette rubrique fait référence aux serveurs Exchange 2010 SP3 et Exchange 2007 SP3 RU10 en tant que <em>serveurs Exchange hérités</em>.
 
 
@@ -80,7 +80,7 @@ Le tableau suivant décrit les combinaisons de version et d'emplacement de boît
 
 Une configuration hybride avec des dossiers publics Exchange 2003 n'est pas prise en charge. Si vous exécutez Exchange 2003 au sein de votre organisation, vous devez déplacer l’ensemble des bases de données de dossiers publics et des réplicas vers Exchange 2007 SP3 RU10 ou une version ultérieure. Aucun réplica de dossier public ne peut être conservé dans Exchange 2003.
 
-> [!NOTE]
+> [!NOTE]  
 > Outlook 2016 ne prend pas en charge l’accès aux dossiers publics hérités Exchange 2007. Si certains de vos utilisateurs se servent d’Outlook 2016, vous devrez déplacer vos dossiers publics vers une version plus récente d’Exchange. Pour plus d’informations sur la compatibilité d’Outlook 2016 et d’Office 2016 avec Exchange 2007 et versions antérieures, consultez <a href="https://go.microsoft.com/fwlink/p/?linkid=849053">cet article</a>.
 
 
@@ -116,7 +116,7 @@ Une configuration hybride avec des dossiers publics Exchange 2003 n'est pas pris
 
 1.  Si vos dossiers publics sont sur des serveurs Exchange 2010 ou version ultérieure, vous devez installer le rôle serveur d’accès au client sur tous les serveurs de boîtes aux lettres disposant d’une base de données de dossiers publics. Cela permet l’exécution du service RpcClientAccess de Microsoft Exchange qui permet à tous les clients d’accéder aux dossiers publics. Le rôle d’accès client n’étant pas requis pour les serveurs de dossiers publics Exchange 2007, cette étape n’est pas nécessaire. Pour plus d’informations, consultez la rubrique [Installer Exchange Server 2010](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md). Cette étape n’est pas obligatoire pour les dossiers publics Exchange 2007.
     
-    > [!NOTE]
+    > [!NOTE]  
     > Il n’est pas utile que ce serveur prenne part à l’équilibrage de la charge d’accès au client. Pour plus d'informations, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/ff625247(v=exchg.141).aspx">Présentation de l'équilibrage de la charge dans Exchange 2010</a>.
 
 
@@ -130,16 +130,17 @@ Une configuration hybride avec des dossiers publics Exchange 2003 n'est pas pris
     
         New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
     
-    > [!NOTE]
+    > [!NOTE]  
     > Nous vous recommandons d’ajouter à cette base de données uniquement la boîte aux lettres proxy que vous allez créer à l’étape 3. Aucune autre boîte aux lettres ne devrait être créée dans cette base de données de boîtes aux lettres.
 
 
 3.  Créez une boîte aux lettres proxy à l'intérieur de la nouvelle base de données de boîtes aux lettres, puis masquez-la dans le carnet d'adresses. Le SMTP de cette boîte aux lettres sera renvoyé par la découverte automatique comme SMTP *DefaultPublicFolderMailbox*, de sorte qu'en résolvant ce SMTP, le client pourrait atteindre le serveur Exchange hérité pour l'accès aux dossiers publics.
-    
+    ```
         New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs>
-    
+    ```
+    ```
         Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
-
+    ```
 4.  Pour Exchange 2010, activez la découverte automatique de façon à ce qu’elle renvoie les boîtes aux lettres de dossiers publics proxy. Cette étape n’est pas nécessaire pour Exchange 2007.
     
         Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
@@ -160,7 +161,7 @@ Une configuration hybride avec des dossiers publics Exchange 2003 n'est pas pris
 
 Le service de synchronisation d’annuaires ne synchronise pas les dossiers publics à extension messagerie. Les scripts suivants synchronisent les dossiers publics à extension messagerie dans plusieurs sites. Les autorisations particulières attribuées aux dossiers publics à extension messagerie doivent être recréées dans le cloud, car les autorisations inter-sites ne sont pas prises en charge dans les scénarios de déploiement hybride. Pour plus d’informations, voir [Déploiements hybrides Exchange Server 2013](https://technet.microsoft.com/fr-fr/59e32000-4fcf-417f-a491-f1d8f9aeef9b\(exchg.150\)#doc).
 
-> [!NOTE]
+> [!NOTE]    
 > Les dossiers publics à extension messagerie synchronisés apparaissent en tant qu’objets de contact de messagerie à des fins de flux de messagerie et ne sont pas consultables dans le Centre d’administration Exchange. Reportez-vous à la commande Get-MailPublicFolder. Pour recréer les autorisations SendAs dans le cloud, utilisez la commande Add-RecipientPermission.
 
 
@@ -170,7 +171,7 @@ Le service de synchronisation d’annuaires ne synchronise pas les dossiers publ
     
     Où `Credential` est votre nom d’utilisateur et votre mot de passe Office 365 et `CsvSummaryFile` est le chemin d’accès de l’emplacement où vous voulez journaliser les opérations et les erreurs de synchronisation au format .csv.
 
-> [!NOTE]
+> [!NOTE]    
 > Avant d’exécuter le script, nous vous recommandons de commencer par simuler les actions du script dans votre environnement en l’exécutant comme décrit ci-dessus avec le paramètre <code>-WhatIf</code>.
 > Nous vous recommandons également d’exécuter ce script quotidiennement pour synchroniser vos dossiers publics à extension messagerie.
 
@@ -187,7 +188,7 @@ Exécutez la commande suivante dans **Windows PowerShell** :
 
 Pour voir les modifications, vous devez attendre que la synchronisation ActiveDirectory soit terminée. Ce processus peut prendre jusqu’à 3 heures. Si vous ne souhaitez pas attendre les synchronisations récurrentes qui se produisent toutes les trois heures, vous pouvez forcer la synchronisation d’annuaire à tout moment. Pour obtenir des instructions détaillées permettant de forcer la synchronisation d’annuaire, consultez la rubrique [Synchroniser vos annuaires](http://technet.microsoft.com/fr-fr/library/jj151771.aspx). Office 365 sélectionne de manière aléatoire l’une des boîtes aux lettres de dossiers publics fournies dans cette commande.
 
-> [!NOTE]
+> [!NOTE]  
 > Un utilisateur Office 365 qui n’est pas représenté par un objet MailUser local (propre à la hiérarchie de dossier public cible) ne peut pas accéder aux dossiers publics hérités ou Exchange 2013 locaux. Pour obtenir une solution, consultez l’article de la base de connaissances sur les <a href="https://go.microsoft.com/fwlink/p/?linkid=699451">utilisateurs Exchange Online ne pouvant pas accéder aux dossiers publics locaux hérités</a>.
 
 

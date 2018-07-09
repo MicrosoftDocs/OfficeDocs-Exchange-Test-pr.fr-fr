@@ -53,7 +53,7 @@ L’approche utilisée par Exchange Server 2013 consiste à utiliser une seule
 
 L’authentification OAuth implique généralement trois composants : un serveur d’autorisation unique et deux domaines qui doivent communiquer entre eux. Les jetons de sécurité sont émis par le serveur d’autorisation (également appelé serveur de jeton de sécurité) pour les deux domaines qui doivent communiquer entre eux. Ces jetons vérifient que les communications provenant d’un domaine doivent être approuvées par l’autre domaine. Par exemple, le serveur d’autorisation peut émettre des jetons qui vérifient que les utilisateurs d’un domaine Lync Server 2013 spécifique peuvent accéder à un domaine Exchange 2013 donné, et vice versa.
 
-> [!TIP]
+> [!TIP]  
 > Un domaine est un conteneur de sécurité.
 
 
@@ -63,7 +63,7 @@ Pour configurer l’authentification de serveur à serveur pour une implémentat
 
   - **Étape 1 - Attribuer un certificat à l’émetteur de jeton intégré du serveur Exchange sur site.** Tout d’abord, si aucun certificat n’a été créé auparavant, un administrateur Exchange sur site doit utiliser le script d’environnement de ligne de commande Exchange Management Shell suivant pour en créer un et pour l’attribuer à l’émetteur de jeton intégré du serveur Exchange sur site. Il s’agit d’un processus unique. Une fois le certificat créé, celui-ci doit être réutilisé pour d’autres scénarios d’authentification et ne doit pas être remplacé. Assurez-vous que vous mettez à jour la valeur de *$tenantDomain* pour qu’elle corresponde au nom de votre domaine. Pour ce faire, copiez et collez le code suivant.
     
-    > [!WARNING]
+    > [!WARNING]  
     > Copiez et collez le code dans un éditeur de texte comme le Bloc-notes, puis enregistrez-le avec une extension .ps1. Cela facilite l’exécution des scripts Shell.
     
         # Make sure to update the following $tenantDomain with your Office 365 tenant domain.
@@ -132,7 +132,7 @@ Pour configurer l’authentification de serveur à serveur pour une implémentat
         Exporting certificate...
         Complete.
     
-    > [!WARNING]
+    > [!WARNING]  
     > Avant de poursuivre, la cmdlet Module Azure Active Directory pour Windows PowerShell est requise. Si la cmdlet Module Azure Active Directory pour Windows PowerShell (précédemment appelée le module Microsoft Online Services pour Windows PowerShell) n'a pas été installée, vous pouvez l'installer à partir de <a href="http://aka.ms/aadposh">Gérer Azure Active Directory à l’aide de Windows PowerShell</a>.
 
 
