@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-03-15_
+_**Dernière rubrique modifiée :** 2013-03-15_
 
 L'enregistrement dans le journal de protocole consigne les conversations SMTP sur les connecteurs d'envoi et de réception dans le cadre de la remise des messages.
 
@@ -29,36 +29,14 @@ L'enregistrement dans le journal de protocole consigne les conversations SMTP su
 
   - L'enregistrement dans le journal de protocole est activé ou désactivé sur chacun des connecteurs. Tous les connecteurs de réception configurés sur le serveur Exchange partagent les mêmes fichiers journaux de protocole et les mêmes options d'enregistrement de protocole. Ces paramètres de journaux de protocole sont distincts des fichiers journaux de protocole et des options d'enregistrement de journal de protocole du connecteur d'envoi situés sur le même serveur.
 
-  - 
-    
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>N’exécutez pas cette procédure sur un serveur de transport Edge qui a été abonné à l’organisation Exchange à l’aide d’EdgeSync. Préférez apporter les modifications au service de transport sur le serveur de boîte aux lettres. Les modifications sont ensuite répliquées sur le serveur de transport Edge lors de la prochaine synchronisation EdgeSync.</td>
-    </tr>
-    </tbody>
-    </table>
+  - > [!CAUTION]
+    > N’exécutez pas cette procédure sur un serveur de transport Edge qui a été abonné à l’organisation Exchange à l’aide d’EdgeSync. Préférez apporter les modifications au service de transport sur le serveur de boîte aux lettres. Les modifications sont ensuite répliquées sur le serveur de transport Edge lors de la prochaine synchronisation EdgeSync.
 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -171,42 +149,23 @@ Pour configurer les paramètres de journal de protocole, exécutez la commande s
 
 Cet exemple définit les paramètres de journal de protocole suivants dans le service de transport sur un serveur de boîtes aux lettres nommé Mailbox01 :
 
-  -  
-    Définit l'emplacement de l'ensemble des journaux de protocole du connecteur de réception sur D:\\Hub Receive SMTP Log et de l'ensemble des journaux de protocole du connecteur d'envoi D:\\Hub Send SMTP Log. Notez bien que si le dossier n'existe pas, il sera créé pour vous.
+  -  Définit l'emplacement de l'ensemble des journaux de protocole du connecteur de réception sur D:\\Hub Receive SMTP Log et de l'ensemble des journaux de protocole du connecteur d'envoi D:\\Hub Send SMTP Log. Notez bien que si le dossier n'existe pas, il sera créé pour vous.
 
-  -  
-    Définit la taille maximale d'un fichier journal de protocole du connecteur de réception et d'envoi sur 20 Mo.
+  -  Définit la taille maximale d'un fichier journal de protocole du connecteur de réception et d'envoi sur 20 Mo.
 
-  -  
-    Définit la taille maximale d'un dossier de journaux de protocole du connecteur de réception et d'envoi sur 400 Mo.
+  -  Définit la taille maximale d'un dossier de journaux de protocole du connecteur de réception et d'envoi sur 400 Mo.
 
-  -  
-    Définit l'âge maximal d'un fichier journal de protocole du connecteur de réception et d'envoi sur 45 jours.
+  -  Définit l'âge maximal d'un fichier journal de protocole du connecteur de réception et d'envoi sur 45 jours.
 
 <!-- end list -->
 
     Set-TransportService Mailbox01 -ReceiveProtocolLogPath "D:\Hub Receive SMTP Log" -SendProtocolLogPath "D:\Hub Send SMTP Log" -ReceiveProtocolLogMaxFileSize 20MB -SendProtocolLogMaxFileSize 20MB -ReceiveProtocolLogMaxDirectorySize 400MB -SendProtocolLogMaxDirectorySize 400MB -ReceiveProtocolLogMaxAge 45.00:00:00 -SendProtocolLogMaxAge 45.00:00:00
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Pour configurer les paramètres de journal de protocole dans le service de transport de boîte aux lettres sur un serveur de boîtes aux lettres, utilisez la cmdlet <strong>Set-MailboxTransportService</strong>. Pour configurer les paramètres de journal de protocole dans le service de transport frontal sur un serveur d'accès au client, utilisez la cmdlet <strong>Set-FrontEndTransportService</strong>.</p></li>
-<li><p>Définir les paramètres <em>SendProtocolLogPath</em> ou <em>ReceiveProtocolLogPath</em> sur la valeur <code>$null</code> désactive l'enregistrement dans le journal de protocole pour tous les connecteurs d'envoi et de réception sur le serveur. Toutefois, le fait de définir l'un de ces paramètres sur <code>$null</code> lorsque l'enregistrement dans le journal de protocole est activé pour tout connecteur d'envoi sur le serveur, y compris le connecteur d'envoi intra-organisationnel ou le connecteur d'envoi de remise de boîte aux lettres, génère des erreurs dans le journal des événements.</p></li>
-<li><p>Définir les paramètres <em>ReceiveProtocolLogMaxAge</em> ou <em>SendProtocolLogMaxAge</em> sur la valeur <code>00:00:00</code> empêche la suppression automatique des fichiers journaux de protocole en raison de leur âge.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]
+> <ul>
+> <li><p>Pour configurer les paramètres de journal de protocole dans le service de transport de boîte aux lettres sur un serveur de boîtes aux lettres, utilisez la cmdlet <strong>Set-MailboxTransportService</strong>. Pour configurer les paramètres de journal de protocole dans le service de transport frontal sur un serveur d'accès au client, utilisez la cmdlet <strong>Set-FrontEndTransportService</strong>.</p></li>
+> <li><p>Définir les paramètres <em>SendProtocolLogPath</em> ou <em>ReceiveProtocolLogPath</em> sur la valeur <code>$null</code> désactive l'enregistrement dans le journal de protocole pour tous les connecteurs d'envoi et de réception sur le serveur. Toutefois, le fait de définir l'un de ces paramètres sur <code>$null</code> lorsque l'enregistrement dans le journal de protocole est activé pour tout connecteur d'envoi sur le serveur, y compris le connecteur d'envoi intra-organisationnel ou le connecteur d'envoi de remise de boîte aux lettres, génère des erreurs dans le journal des événements.</p></li>
+> <li><p>Définir les paramètres <em>ReceiveProtocolLogMaxAge</em> ou <em>SendProtocolLogMaxAge</em> sur la valeur <code>00:00:00</code> empêche la suppression automatique des fichiers journaux de protocole en raison de leur âge.</p></li></ul>
 
 ## Comment savoir si cela a fonctionné ?
 

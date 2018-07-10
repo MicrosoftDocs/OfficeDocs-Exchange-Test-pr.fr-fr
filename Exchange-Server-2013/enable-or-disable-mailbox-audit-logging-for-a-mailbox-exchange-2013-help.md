@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-09-30_
+_**Dernière rubrique modifiée :** 2015-09-30_
 
 Grâce à la fonctionnalité d’enregistrement d’audit de boîte aux lettres, vous pouvez suivre les sessions ouvertes dans une boîte aux lettres, tout comme les actions entreprises tant que l’utilisateur est connecté. Lorsque vous activez l’enregistrement d’audit de boîte aux lettres, certaines actions réalisées par les administrateurs et les délégués sont enregistrées par défaut. Aucune des actions entreprises par le propriétaire de la boîte aux lettres ne sont enregistrées. Pour plus d’informations sur les enregistrements d’audit dans les boîtes aux lettres, voir [Enregistrement d’audit dans les boîtes aux lettres](mailbox-audit-logging-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Un audit des actions entreprises par un propriétaire de boîte aux lettres peut générer un grand nombre d’entrées dans le journal d’audit de boîte aux lettres. C’est pourquoi il est désactivé par défaut. Nous vous recommandons d’activer uniquement l’audit d’actions de propriétaire spécifiques si des besoins professionnels ou de sécurité l’exigent.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Un audit des actions entreprises par un propriétaire de boîte aux lettres peut générer un grand nombre d’entrées dans le journal d’audit de boîte aux lettres. C’est pourquoi il est désactivé par défaut. Nous vous recommandons d’activer uniquement l’audit d’actions de propriétaire spécifiques si des besoins professionnels ou de sécurité l’exigent.
 
 
 Pour les autres tâches relatives à l’enregistrement d’audit des boîtes aux lettres, voir [Procédures d'enregistrement d’audit des boîtes aux lettres](mailbox-audit-logging-procedures-exchange-2013-help.md).
@@ -45,18 +35,8 @@ Pour les autres tâches relatives à l’enregistrement d’audit des boîtes au
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Cette rubrique décrit les propriétés des messages électroniques Exchange que vous pouvez effectuer une recherche à l’aide de la découverte électronique locale et de l’archive permanente dans Exchange Server 2013 et Exchange Online. Elle décrit également les opérateurs de recherche booléens et d’autres techniques de requête de recherche qui permettent d’affiner les résultats de recherche de la découverte électronique.
 
@@ -173,36 +173,16 @@ Le tableau suivant répertorie les propriétés de message électronique consult
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1   Pour la valeur d’une propriété de destinataire, vous pouvez utiliser l’adresse SMTP, le nom d’affichage ou l’alias afin d’indiquer un utilisateur. Par exemple, vous pouvez utiliser annb@contoso.com, annb ou « Ann Beebe » pour spécifier l’utilisateur Ann Beebe.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 1   Pour la valeur d’une propriété de destinataire, vous pouvez utiliser l’adresse SMTP, le nom d’affichage ou l’alias afin d’indiquer un utilisateur. Par exemple, vous pouvez utiliser annb@contoso.com, annb ou « Ann Beebe » pour spécifier l’utilisateur Ann Beebe.
 
 
 ## Opérateurs de recherche pris en charge
 
 Les opérateurs booléens, tels que **AND** et **OR**, vous permettent de définir des recherches plus précises dans des boîtes aux lettres en incluant des mots spécifiques dans la requête de recherche ou en les excluant. D’autres techniques, comme l’utilisation d’opérateurs de propriété (tels que \>= ou ...), les guillemets, les parenthèses et les caractères génériques vous permettent d’affiner les requêtes de recherche de découverte électronique. Le tableau suivant répertorie les opérateurs disponibles pour restreindre ou élargir les résultats de recherche.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez utiliser des opérateurs booléens en majuscules dans vos requêtes de recherche. Par exemple, utilisez <strong>AND</strong>, et non <strong>and</strong>. L’utilisation d’opérateurs en lettres minuscules dans les requêtes de recherche renverra une erreur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez utiliser des opérateurs booléens en majuscules dans vos requêtes de recherche. Par exemple, utilisez <strong>AND</strong>, et non <strong>and</strong>. L’utilisation d’opérateurs en lettres minuscules dans les requêtes de recherche renverra une erreur.
 
 
 
@@ -305,18 +285,8 @@ Les opérateurs booléens, tels que **AND** et **OR**, vous permettent de défin
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1   Utilisez cet opérateur pour les propriétés ayant des valeurs de date ou des valeurs numériques.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 1   Utilisez cet opérateur pour les propriétés ayant des valeurs de date ou des valeurs numériques.
 
 
 ## Caractères non pris en charge dans les requêtes de recherche

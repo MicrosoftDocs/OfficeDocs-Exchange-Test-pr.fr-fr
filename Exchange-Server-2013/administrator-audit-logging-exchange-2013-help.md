@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-03-05_
+_**Dernière rubrique modifiée :** 2018-03-05_
 
 Vous pouvez utiliser l'enregistrement d'audit administrateur dans Microsoft Exchange Server 2013 pour enregistrer toutes les modifications apportées par un utilisateur ou un administrateur de votre organisation. En conservant un journal des modifications, vous pouvez suivre les modifications jusqu'à la personne qui les a effectuées, renforcer vos journaux de modifications avec des enregistrements détaillés de la modification telle qu'elle a été mise en place, vous conformer aux exigences et demandes réglementaires sur les découvertes et bien plus.
 
@@ -41,39 +41,20 @@ Les cmdlets exécutées directement dans l'environnement de ligne de commande Ex
 
 Applets de commande, où ils sont exécuté, sont audités si une applet de commande se trouve sur l’applet de commande l’audit de la liste et un ou plusieurs paramètres sur cette applet de commande se trouvent sur la liste des paramètres d’audit. L’enregistrement d’audit est destinée à afficher les actions qui ont été prises pour modifier des objets dans une organisation Exchange plutôt que les objets qui ont été visionnés.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une cmdlet peut ne pas être enregistrée si une erreur s'est produite avant que la cmdlet appelle l'agent d'extension du journal d'audit d'administration. Si une erreur se produit après l'appel de l'agent du journal d'audit d'administration, la cmdlet, ainsi que l'erreur qui lui est associée, est enregistrée. Pour plus d'informations, consultez la section Admin Audit Log Agent présentée ci-après dans cette rubrique.<br />
-Les modifications apportées avec les outils de gestion Microsoft Exchange Server 2010 sont consignées, mais pas celles effectuées à l'aide des outils de gestion Microsoft Exchange Server 2007.<br />
-Les modifications apportées à la configuration de l'enregistrement d'audit sont actualisées toutes les 60 minutes sur les ordinateurs ayant l'environnement de ligne de commande Exchange Management Shell ouvert au moment de la modification de la configuration. Si vous souhaitez appliquer les modifications immédiatement, fermez et rouvrez l'environnement de ligne de commande Exchange Management Shell sur chaque ordinateur.<br />
-15 minutes peuvent être nécessaires pour qu'une commande apparaisse dans les résultats de la recherche du journal d'audit après son exécution, car les entrées du journal d'audit doivent être indexées avant que ces dernières ne puissent faire l'objet d'une recherche. Si une commande n'apparaît pas dans le journal d'audit de l'administrateur, patientez quelques minutes, puis réeffectuez la recherche.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Une cmdlet peut ne pas être enregistrée si une erreur s'est produite avant que la cmdlet appelle l'agent d'extension du journal d'audit d'administration. Si une erreur se produit après l'appel de l'agent du journal d'audit d'administration, la cmdlet, ainsi que l'erreur qui lui est associée, est enregistrée. Pour plus d'informations, consultez la section Admin Audit Log Agent présentée ci-après dans cette rubrique.
+> Les modifications apportées avec les outils de gestion Microsoft Exchange Server 2010 sont consignées, mais pas celles effectuées à l'aide des outils de gestion Microsoft Exchange Server 2007.
+> Les modifications apportées à la configuration de l'enregistrement d'audit sont actualisées toutes les 60 minutes sur les ordinateurs ayant l'environnement de ligne de commande Exchange Management Shell ouvert au moment de la modification de la configuration. Si vous souhaitez appliquer les modifications immédiatement, fermez et rouvrez l'environnement de ligne de commande Exchange Management Shell sur chaque ordinateur.
+> 15 minutes peuvent être nécessaires pour qu'une commande apparaisse dans les résultats de la recherche du journal d'audit après son exécution, car les entrées du journal d'audit doivent être indexées avant que ces dernières ne puissent faire l'objet d'une recherche. Si une commande n'apparaît pas dans le journal d'audit de l'administrateur, patientez quelques minutes, puis réeffectuez la recherche.
+
 
 
 ## Configuration de la journalisation d'audit
 
 Par défaut, si l’enregistrement d’audit est activé, une entrée de journal est créée chaque fois qu’une applet de commande est exécuté. Si vous ne voulez pas auditer chaque applet de commande est exécutée, vous pouvez configurer l’enregistrement d’audit pour auditer uniquement les applets de commande et les paramètres que qui vous intéressent. Vous configurez l’enregistrement d’audit avec l’applet de commande **Set-AdminAuditLogConfig** . Les paramètres référencés dans les sections suivantes sont utilisées avec cette applet de commande.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les modifications apportées à la configuration de l'enregistrement d'audit sont toujours consignées, que la cmdlet <strong>Set-AdministratorAuditLog</strong> figure dans la liste des cmdlet auditées ou non et que l'enregistrement d'audit administrateur soit activé ou non.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les modifications apportées à la configuration de l'enregistrement d'audit sont toujours consignées, que la cmdlet <strong>Set-AdministratorAuditLog</strong> figure dans la liste des cmdlet auditées ou non et que l'enregistrement d'audit administrateur soit activé ou non.
 
 
 Lorsqu'une commande est exécutée, Exchange inspecte la cmdlet utilisée. Si la cmdlet exécutée correspond à une des cmdlets fournies avec le paramètre *AdminAuditLogConfigCmdlets*, Exchange contrôle ensuite les paramètres spécifiés dans le paramètre *AdminAuditLogConfigParameters*. Si au moins un paramètre de la liste des paramètres correspond, Exchange enregistre la cmdlet exécutée dans la boîte aux lettres spécifiée à l'aide du paramètre *AdminAuditLogMailbox*. Les sections suivantes contiennent d'autres informations sur chaque aspect de la configuration de l'enregistrement d'audit.
@@ -104,20 +85,10 @@ Par défaut, l'enregistrement d'audit est configuré pour stocker les entrées d
 
 Vous devez spécifier plusieurs années à l'aide du champ `dd`. Par exemple, 365 jours correspondent à une année, 730 jours à deux ans, 913 jours à deux ans et six mois. Par exemple, pour définir la durée de vie du journal d'audit sur deux ans et six mois, utilisez la syntaxe `913.00:00:00`.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez définir la limite d'âge du journal d'audit sur une valeur inférieure à la durée de vie actuelle. Si vous procédez de la sorte, toute entrée de journal d'audit dont l'âge dépasse la nouvelle limite d'âge sera supprimée.<br />
-Si vous définissez la durée de vie sur 0, Exchange supprimera toutes les entrées dans le journal d'audit.<br />
-Nous vous conseillons d'attribuer les autorisations pour configurer la limite d'âge du journal d'audit uniquement aux utilisateurs de confiance.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Vous pouvez définir la limite d'âge du journal d'audit sur une valeur inférieure à la durée de vie actuelle. Si vous procédez de la sorte, toute entrée de journal d'audit dont l'âge dépasse la nouvelle limite d'âge sera supprimée.
+> Si vous définissez la durée de vie sur 0, Exchange supprimera toutes les entrées dans le journal d'audit.
+> Nous vous conseillons d'attribuer les autorisations pour configurer la limite d'âge du journal d'audit uniquement aux utilisateurs de confiance.
 
 
 ## Journalisation des informations détaillées
@@ -175,18 +146,8 @@ Chaque entrée de journal d'audit contient les informations décrites dans le ta
 <tr class="odd">
 <td><p><code>ModifiedProperties</code></p></td>
 <td><p>Ce champ contient les propriétés modifiées sur l'objet dans le champ <code>ObjectModified</code>. L'ancienne valeur de la propriété et la nouvelle valeur stockée sont également stockées dans ce champ, mais sont invisibles dans la sortie par défaut. Pour plus d'informations sur l'accès aux informations supplémentaires dans ce champ, consultez la rubrique <a href="search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md">Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur</a>.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ce champ est uniquement renseigné si le paramètre <em>LogLevel</em> de la cmdlet <strong>Set-AdminAuditLogConfig</strong> est défini sur <code>Verbose</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Ce champ est uniquement renseigné si le paramètre <em>LogLevel</em> de la cmdlet <strong>Set-AdminAuditLogConfig</strong> est défini sur <code>Verbose</code>.
 
 </td>
 </tr>
@@ -270,18 +231,8 @@ Vous pouvez utiliser les mêmes critères de recherche avec la cmdlet **New-Admi
 
 Après exécution de la cmdlet **New-AdminAuditLogSearch**, Exchange peut prendre jusqu'à 15 minutes pour remettre le rapport au destinataire spécifié. Le rapport sous forme de fichier XML joint peut avoir une taille maximale de 10 mégaoctets (Mo). Le fichier XML contient les mêmes informations décrites dans le tableau dans Audit Log Contents. Pour plus d'informations sur la structure du fichier XML, consultez la rubrique [Structure du journal d’audit de l’administrateur](administrator-audit-log-structure-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook Web App ne vous permet pas d’ouvrir des pièces jointes au format XML par défaut. Vous pouvez soit configurer Exchange de façon à autoriser l’affichage des pièces jointes au format XML à l’aide d’Outlook Web App, soit utiliser un autre client de messagerie électronique, tel que Microsoft Outlook, de façon à afficher la pièce jointe. Pour plus d’informations sur la configuration d’Outlook Web App afin de permettre l’affichage d’une pièce jointe au format XML, consultez la rubrique <a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">Affichage ou configuration des répertoires virtuels d’Outlook Web App</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Outlook Web App ne vous permet pas d’ouvrir des pièces jointes au format XML par défaut. Vous pouvez soit configurer Exchange de façon à autoriser l’affichage des pièces jointes au format XML à l’aide d’Outlook Web App, soit utiliser un autre client de messagerie électronique, tel que Microsoft Outlook, de façon à afficher la pièce jointe. Pour plus d’informations sur la configuration d’Outlook Web App afin de permettre l’affichage d’une pièce jointe au format XML, consultez la rubrique <a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">Affichage ou configuration des répertoires virtuels d’Outlook Web App</a>.
 
 
 Pour des informations sur l'utilisation de la cmdlet **New-AdminAuditLogSearch**, consultez la rubrique [Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md).

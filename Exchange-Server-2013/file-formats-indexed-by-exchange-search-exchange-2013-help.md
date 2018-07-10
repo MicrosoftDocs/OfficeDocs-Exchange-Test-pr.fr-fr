@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-07-21_
+_**Dernière rubrique modifiée :** 2015-07-21_
 
 Dans MicrosoftExchange Server 2013 et Exchange Online, le service de recherche Exchange comprend des filtres destinés à indexer les types de formats de fichiers les plus courants inclus en tant que pièces jointes de messages. Vous pouvez également installer des filtres pour indexer des types de fichiers supplémentaires.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange 2013, il n'est pas nécessaire d’installer et d’enregistrer Microsoft Office Filter Pack.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange 2013, il n'est pas nécessaire d’installer et d’enregistrer Microsoft Office Filter Pack.
 
 
 Quand vous gérez ou utilisez le service de recherche Exchange et les fonctionnalités dépendantes (comme la [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md)), tenez compte des différences qu'il existe entre des éléments impossibles à rechercher et des formats de fichiers dont l’indexation a été désactivée ou qui contiennent du contenu qui ne peut pas être indexé :
@@ -41,18 +31,8 @@ Quand vous gérez ou utilisez le service de recherche Exchange et les fonctionna
 
   - **Formats de fichiers désactivés** Dans les organisations locales, un administrateur peut désactiver l'indexation d'un format de fichier spécifique. Les messages contenant une pièce jointe d’un format désactivé ne sont pas renvoyés comme éléments impossibles à rechercher.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Même si une pièce jointe de message peut être impossible à rechercher ou est dans un format de fichier ne pouvant pas être indexé, l’objet du message, le corps du message et d’autres métadonnées peuvent être indexés pour que le message puisse être renvoyé dans les recherches.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Même si une pièce jointe de message peut être impossible à rechercher ou est dans un format de fichier ne pouvant pas être indexé, l’objet du message, le corps du message et d’autres métadonnées peuvent être indexés pour que le message puisse être renvoyé dans les recherches.
 
 
 Pour les autres tâches de gestion relatives au service de recherche Exchange dans des organisations locales, consultez la rubrique [Procédures relatives au service de recherche Exchange](exchange-search-procedures-exchange-2013-help.md).

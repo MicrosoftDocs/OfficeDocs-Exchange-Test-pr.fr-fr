@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Pour consulter des informations détaillées à propos des appels gérés par les serveurs Exchange un jour donné, exportez les données d'appel de ce jour du rapport de statistiques des appels. Les données d'appel quotidiennes, disponibles pour les 90 derniers jours, vous permettent de diagnostiquer les problèmes liés à la qualité audio ou aux appels rejetés et fournissent des informations concernant les audits et les rapports sur les serveurs Exchange de votre organisation.
 
@@ -33,18 +33,8 @@ Pour d'autres tâches relatives aux rapports de messagerie unifiée, consultez l
     
     Le fichier exporté s'appellera um\_cdr\_*AAAA-MM-JJ*.csv, où *AAAA-MM-JJ* représente l'année, le mois et le jour d'exécution du rapport.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>dans la page du rapport, vous pouvez télécharger un modèle Microsoft Excel que vous pouvez utiliser pour importer le fichier .csv d'un jour spécifique.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > dans la page du rapport, vous pouvez télécharger un modèle Microsoft Excel que vous pouvez utiliser pour importer le fichier .csv d'un jour spécifique.
 
 
 5.  Utilisez une application telle qu'Excel pour traiter le fichier .csv et générer vos propres rapports personnalisés.
@@ -53,18 +43,8 @@ Pour d'autres tâches relatives aux rapports de messagerie unifiée, consultez l
 
 Les données d'appel de messagerie unifiée que vous exportez incluent les informations détaillées suivantes à propos de chaque appel géré par la messagerie unifiée durant ce jour spécifique.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans le rapport de statistiques des appels, les jours sont entendus en heure UTC.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans le rapport de statistiques des appels, les jours sont entendus en heure UTC.
 
 
   - **CallStartTime   **Date et heure auxquelles la messagerie unifiée a géré l'appel, à l'heure UTC. La date et l'heure UTC sont représentées au format suivant : *AAAA-MM-JJ hh:mm:SSZ*, où *AAAA* = année, *MM* = mois, *JJ* = jour, *hh* = heure, au format 24 heures, *mm* = minutes, ss = secondes. Z signifie Zoulou, qui est une façon de dénoter UTC (comme +*hh*:*mm* ou -*hh*:*mm*, qui permet d'obtenir le décalage horaire par rapport à l'heure UTC). Étant donné que tous les appels de ce rapport sont à l'heure UTC, il s'agira toujours de Z.
@@ -147,18 +127,8 @@ Les données d'appel de messagerie unifiée que vous exportez incluent les infor
 
   - **Score NMOS**   Note moyenne d'opinion de réseau (NMOS) de cet appel. Le score NMOS évalue la qualité audio de l'appel, sur une échelle de 1 à 5, 5 indiquant une excellente qualité.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>Remarque</strong>   Le score NMOS maximal possible pour un appel dépend du codec audio utilisé. Il est possible que le score NMOS ne soit pas disponible pour des appels très courts d'une durée inférieure à 10 secondes.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > <strong>Remarque</strong>   Le score NMOS maximal possible pour un appel dépend du codec audio utilisé. Il est possible que le score NMOS ne soit pas disponible pour des appels très courts d'une durée inférieure à 10 secondes.
 
 
   - **NMOSDegradation** Niveau de dégradation audio du score NMOS, à partir de la valeur la plus élevée possible pour le codec audio utilisé. Par exemple, si la valeur de dégradation NMOS d'un appel est égale à 1,2 et que le score NMOS signalé de l'appel est égal à 3,3, le score NMOS maximal de cet appel en particulier est de 4,5 (1,2 + 3,3).

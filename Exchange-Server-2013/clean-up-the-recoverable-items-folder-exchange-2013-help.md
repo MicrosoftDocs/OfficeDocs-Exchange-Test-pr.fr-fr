@@ -21,9 +21,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-09-30_
+_**Dernière rubrique modifiée :** 2015-09-30_
 
 Le dossier Éléments récupérables (connu dans les versions antérieures d’Exchange sous le nom de *conteneur de dépôt*) existe pour assurer une protection en cas de suppressions accidentelles ou malveillantes et pour faciliter les tâches de détection couramment effectuées avant ou pendant un litige ou des recherches. Pour plus d’informations sur le dossier Éléments récupérables, voir [Dossier Éléments récupérables](recoverable-items-folder-exchange-2013-help.md).
 
@@ -57,18 +57,8 @@ Cet exemple supprime de manière permanente les éléments du dossier Éléments
 
     Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour supprimer les éléments de la boîte aux lettres sans les copier vers une autre boîte aux lettres, utilisez la commande précédente sans les paramètres <em>TargetMailbox</em> et <em>TargetFolder</em>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour supprimer les éléments de la boîte aux lettres sans les copier vers une autre boîte aux lettres, utilisez la commande précédente sans les paramètres <em>TargetMailbox</em> et <em>TargetFolder</em>.
 
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Search-Mailbox](https://technet.microsoft.com/fr-fr/library/dd298173\(v=exchg.150\)).
@@ -99,18 +89,8 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
     
       - *UseDatabaseRetentionDefaults*
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si le paramètre <em>UseDatabaseQuotaDefaults</em> est défini à <code>$true</code>, les paramètres de quota précédents ne sont pas appliqués. Les paramètres de quota correspondants et configurés sur la base de données de boîte aux lettres sont appliqués, même si des paramètres de boîte aux lettres individuels sont renseignés.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si le paramètre <em>UseDatabaseQuotaDefaults</em> est défini à <code>$true</code>, les paramètres de quota précédents ne sont pas appliqués. Les paramètres de quota correspondants et configurés sur la base de données de boîte aux lettres sont appliqués, même si des paramètres de boîte aux lettres individuels sont renseignés.
     
         Get-Mailbox "Gurinder Singh" | Format-List RecoverableItemsQuota, RecoverableItemsWarningQuota, ProhibitSendQuota, ProhibitSendReceiveQuota, UseDatabaseQuotaDefaults, RetainDeletedItemsFor, UseDatabaseRetentionDefaults
 
@@ -138,36 +118,16 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
     
         Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si la boîte aux lettres se trouve sur une base de données de boîtes aux lettres dans un groupe de disponibilité de base de données, vous devez désactiver l’Assistant Dossier géré sur chaque membre du groupe de disponibilité de base de données qui héberge une copie de la base de données. Si la base de données échoue sur un autre serveur, cela empêche l’Assistant Dossier géré sur ce serveur de supprimer les données de la boîte aux lettres.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si la boîte aux lettres se trouve sur une base de données de boîtes aux lettres dans un groupe de disponibilité de base de données, vous devez désactiver l’Assistant Dossier géré sur chaque membre du groupe de disponibilité de base de données qui héberge une copie de la base de données. Si la base de données échoue sur un autre serveur, cela empêche l’Assistant Dossier géré sur ce serveur de supprimer les données de la boîte aux lettres.
 
 
 8.  Désactivez la récupération d’élément unique et supprimez la conservation pour litige de la boîte aux lettres.
     
         Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Après exécution de cette commande, il faut parfois une heure pour désactiver la récupération d’élément unique ou la conservation pour litige. Nous vous recommandons d’effectuer la prochaine étape uniquement après écoulement de cette période.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Après exécution de cette commande, il faut parfois une heure pour désactiver la récupération d’élément unique ou la conservation pour litige. Nous vous recommandons d’effectuer la prochaine étape uniquement après écoulement de cette période.
 
 
 9.  Copiez les éléments du dossier Éléments récupérables vers un dossier qui se trouve dans la boîte aux lettres de détection et supprimez le contenu de la boîte aux lettres source.
@@ -178,36 +138,16 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
     
         Search-Mailbox -Identity "Gurinder Singh" -SearchQuery "Subject:'Your bank statement'" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Il n’est pas nécessaire de copier les éléments dans la boîte aux lettres de détection. Vous pouvez copier des messages dans toute boîte aux lettres. Cependant, pour empêcher l’accès aux données de boîtes aux lettres éventuellement sensibles, nous vous recommandons de copier les messages dans une boîte aux lettres dont l’accès est limité aux responsables d’enregistrements autorisés. Par défaut, l’accès à la boîte aux lettres de détection par défaut est limité aux membres du groupe de rôles Gestion de la découverte. Pour plus d’informations, consultez la rubrique <a href="in-place-ediscovery-exchange-2013-help.md">Découverte électronique locale</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Il n’est pas nécessaire de copier les éléments dans la boîte aux lettres de détection. Vous pouvez copier des messages dans toute boîte aux lettres. Cependant, pour empêcher l’accès aux données de boîtes aux lettres éventuellement sensibles, nous vous recommandons de copier les messages dans une boîte aux lettres dont l’accès est limité aux responsables d’enregistrements autorisés. Par défaut, l’accès à la boîte aux lettres de détection par défaut est limité aux membres du groupe de rôles Gestion de la découverte. Pour plus d’informations, consultez la rubrique <a href="in-place-ediscovery-exchange-2013-help.md">Découverte électronique locale</a>.
 
 
 10. Si la boîte aux lettres a été placée en conservation pour litige ou si la récupération d’élément unique a été préalablement activée, activez à nouveau ces fonctionnalités.
     
         Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Après exécution de cette commande, il faut parfois une heure pour activer la récupération d’élément unique ou la conservation pour litige. Nous vous recommandons d’activer l’Assistant Dossier géré et d’autoriser l’accès au client (étapes 11 et 12) uniquement après écoulement de cette période.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Après exécution de cette commande, il faut parfois une heure pour activer la récupération d’élément unique ou la conservation pour litige. Nous vous recommandons d’activer l’Assistant Dossier géré et d’autoriser l’accès au client (étapes 11 et 12) uniquement après écoulement de cette période.
 
 
 11. Reparamétrez les quotas suivants aux valeurs notées à l’étape 1 :

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Office 365_
+_**Sapplique à :** Exchange Server 2013, Office 365_
 
-_**Dernière rubrique modifiée :**2012-10-11_
+_**Dernière rubrique modifiée :** 2012-10-11_
 
 Les domaines représentent des espaces de noms SMTP pour lesquels vous configurez des répertoires de courriers électroniques et des boîtes aux lettres. En configurant les domaines qui interagissent avec votre organisation Microsoft Exchange Server 2013, vous pouvez configurer la façon dont les courriers électroniques et les divers domaines sont traités par Exchange.
 

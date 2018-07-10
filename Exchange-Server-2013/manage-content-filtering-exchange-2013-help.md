@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 L’agent de filtrage du contenu permet de filtrer du contenu. Il filtre tous les messages en provenance de tous les connecteurs de réception sur le serveur Exchange. Seuls les messages provenant de sources non authentifiées sont filtrés.
 
@@ -31,18 +31,8 @@ L’agent de filtrage du contenu permet de filtrer du contenu. Il filtre tous le
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -57,18 +47,8 @@ Pour activer le filtrage du contenu, exécutez la commande suivante :
 
     Set-ContentFilterConfig -Enabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous désactivez le filtrage du contenu, l’agent de filtrage du contenu sous-jacent est toujours activé. Pour désactiver l’agent de filtrage du contenu, exécutez la commande suivante : <code>Disable-TransportAgent &quot;Content Filter Agent&quot;</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous désactivez le filtrage du contenu, l’agent de filtrage du contenu sous-jacent est toujours activé. Pour désactiver l’agent de filtrage du contenu, exécutez la commande suivante : <code>Disable-TransportAgent &quot;Content Filter Agent&quot;</code>.
 
 
 ## Comment savoir si cela a fonctionné ?
@@ -209,18 +189,8 @@ Pour configurer les seuils de probabilité de courrier indésirable (SCL) et les
 
     Set-ContentFilterConfig -SCLDeleteEnabled <$true | $false> -SCLDeleteThreshold <Value> -SCLRejectEnabled <$true | $false> -SCLRejectThreshold <Value> -SCLQuarantineEnabled <$true | $false> -SCLQuarantineThreshold <Value>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L’action de suppression prévaut sur l’action de rejet, laquelle prévaut sur l’action de mise en quarantaine. Ainsi, le seuil SCL de l’action de suppression doit être supérieur au seuil SCL de l’action de rejet, lequel doit être supérieur au seuil SCL de l’action de mise en quarantaine. Seule l’action de rejet est activée par défaut. Son seuil SCL a la valeur 7.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L’action de suppression prévaut sur l’action de rejet, laquelle prévaut sur l’action de mise en quarantaine. Ainsi, le seuil SCL de l’action de suppression doit être supérieur au seuil SCL de l’action de rejet, lequel doit être supérieur au seuil SCL de l’action de mise en quarantaine. Seule l’action de rejet est activée par défaut. Son seuil SCL a la valeur 7.
 
 
 Cet exemple permet de configurer les valeurs de seuil SCL suivantes :

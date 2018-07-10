@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Dernière rubrique modifiée :**2016-09-15_
+_**Dernière rubrique modifiée :** 2016-09-15_
 
 **Résumé** : À propos des limites de connexion de banque gérée et de leur configuration.
 
 Dans MicrosoftExchange Server 2013, les limites d’utilisation et de connexion se trouvent dans la banque gérée Exchange pour empêcher une application unique ou un utilisateur unique d’utiliser toutes les connexions disponibles à la banque gérée. Si un utilisateur ou une application unique est autorisé(e) à se servir de toutes les connexions, d’autres utilisateurs ou applications ne pourront pas accéder à la banque gérée, ce qui pourrait entraîner un temps d’arrêt.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour les connexions établies par des comptes ayant des privilèges administrateur, les limites de session ont été augmentées à 64 000 au maximum.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour les connexions établies par des comptes ayant des privilèges administrateur, les limites de session ont été augmentées à 64 000 au maximum.
 
 
 ## Terminologie
@@ -178,32 +168,12 @@ La section suivante, « Configurer les limites de session », explique comment
 
 Vous pouvez modifier les limites de session par défaut.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous souhaitez modifier les limites de session, vous devez les modifier sur tous les serveurs de boîtes aux lettres dans des groupes de disponibilité de base de données. Si vous n’effectuez pas les mêmes modifications sur tous les serveurs, les résultats seront incohérents. Pour augmenter la limite de session sur le serveur d’accès au client, la valeur <code>RCAMaxConcurrency</code> doit être augmentée conformément à la stratégie de limitation. Pour plus d’informations, voir <a href="https://technet.microsoft.com/fr-fr/library/dd298094(v=exchg.150)">Set-ThrottlingPolicy</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous souhaitez modifier les limites de session, vous devez les modifier sur tous les serveurs de boîtes aux lettres dans des groupes de disponibilité de base de données. Si vous n’effectuez pas les mêmes modifications sur tous les serveurs, les résultats seront incohérents. Pour augmenter la limite de session sur le serveur d’accès au client, la valeur <code>RCAMaxConcurrency</code> doit être augmentée conformément à la stratégie de limitation. Pour plus d’informations, voir <a href="https://technet.microsoft.com/fr-fr/library/dd298094(v=exchg.150)">Set-ThrottlingPolicy</a>.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une modification incorrecte du Registre peut être à l’origine de problèmes graves qui vous obligeront peut-être à réinstaller votre système d’exploitation. Il se peut que les problèmes résultant d’une modification incorrecte du Registre soient impossibles à résoudre. Avant de modifier le Registre, sauvegardez les données importantes.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Une modification incorrecte du Registre peut être à l’origine de problèmes graves qui vous obligeront peut-être à réinstaller votre système d’exploitation. Il se peut que les problèmes résultant d’une modification incorrecte du Registre soient impossibles à résoudre. Avant de modifier le Registre, sauvegardez les données importantes.
 
 
 1.  Démarrez l'Éditeur du Registre (regedit).
@@ -324,32 +294,12 @@ Si vous souhaitez modifier ces limites de session, voir « Configurer les limit
 
 Vous pouvez limiter le nombre maximal de ressources qu’un client MAPI peut utiliser simultanément.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous souhaitez modifier les limites d’éléments ouverts, vous devez les modifier sur tous les serveurs de boîtes aux lettres dans des groupes de disponibilité de base de données et des tableaux d’accès au client. Si vous n’effectuez pas les mêmes modifications sur tous les serveurs, les résultats seront incohérents.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous souhaitez modifier les limites d’éléments ouverts, vous devez les modifier sur tous les serveurs de boîtes aux lettres dans des groupes de disponibilité de base de données et des tableaux d’accès au client. Si vous n’effectuez pas les mêmes modifications sur tous les serveurs, les résultats seront incohérents.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une modification incorrecte du Registre peut être à l’origine de problèmes graves qui vous obligeront peut-être à réinstaller votre système d’exploitation. Il se peut que les problèmes résultant d’une modification incorrecte du Registre soient impossibles à résoudre. Avant de modifier le Registre, sauvegardez les données importantes.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Une modification incorrecte du Registre peut être à l’origine de problèmes graves qui vous obligeront peut-être à réinstaller votre système d’exploitation. Il se peut que les problèmes résultant d’une modification incorrecte du Registre soient impossibles à résoudre. Avant de modifier le Registre, sauvegardez les données importantes.
 
 
 1.  Démarrez l'Éditeur du Registre (regedit).

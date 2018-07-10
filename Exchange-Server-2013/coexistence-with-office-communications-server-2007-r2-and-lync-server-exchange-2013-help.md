@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Communications Server 2007 R2 et Lync Server offrent de nombreuses fonctions aux utilisateurs finaux, notamment la messagerie instantanée, la présence, la messagerie instantanée à plusieurs, et leurs fonctionnalités de messagerie vocale peuvent être intégrées à la messagerie unifiée d’Exchange. S’il s’agit de déploiements qui intègrent Lync Server 2010 ou 2013, les utilisateurs peuvent être activés pour Enterprise Voice, ce qui permet à ceux activés pour la messagerie vocale d’accéder à leur messagerie vocale via les composants de Lync Server.
 

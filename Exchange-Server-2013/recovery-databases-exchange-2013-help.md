@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-02_
+_**Dernière rubrique modifiée :** 2012-11-02_
 
 Une base de données de récupération (RDB) est une base de données de boîtes aux lettres spéciale qui vous permet de monter une base de données de boîtes aux lettres restaurée et d’extraire des données à partir de la base de données restaurée, dans le cadre d’une opération de récupération. La cmdlet [New-MailboxRestoreRequest](https://technet.microsoft.com/fr-fr/library/ff829875\(v=exchg.150\)) permet d’extraire des données d’une base de données de récupération. Une fois extraites, les données peuvent être exportées dans un dossier ou fusionnées avec les données d’une boîte aux lettres existante. Les bases de données de récupération vous permettent de récupérer des données à partir d’une sauvegarde ou d’une copie de base de données sans perturber l’accès des utilisateurs aux données actuelles.
 
@@ -65,18 +65,8 @@ Une base de données de récupération peut être utilisée pour récupérer des
 
   - **Récupération d’un élément spécifique**   Vous pouvez restaurer des données sauvegardées qui ont été supprimées ou purgées d’une boîte aux lettres.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les listes de contrôle d’accès des dossiers (ACL) ne sont pas conservées lors de la récupération du contenu d’une boîte aux lettres dans une boîte aux lettres active. Étant donné que le processus de récupération implique en général de récupérer les données d’une boîte aux lettres et de les réinsérer dans la base de données d’origine, il n’est pas nécessaire de récupérer ou de copier les listes de contrôle d’accès.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les listes de contrôle d’accès des dossiers (ACL) ne sont pas conservées lors de la récupération du contenu d’une boîte aux lettres dans une boîte aux lettres active. Étant donné que le processus de récupération implique en général de récupérer les données d’une boîte aux lettres et de les réinsérer dans la base de données d’origine, il n’est pas nécessaire de récupérer ou de copier les listes de contrôle d’accès.
 
 
 Les bases de données de récupération sont conçues pour la récupération de bases de données de boîtes aux lettres selon les conditions et scénarios suivants :

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-07-12_
+_**Dernière rubrique modifiée :** 2016-07-12_
 
 Bien que l’utilisation de dossiers publics Exchange 2013 présente de nombreux avantages, il convient de prendre certains éléments en considération avant de les implémenter au sein de votre organisation.
 

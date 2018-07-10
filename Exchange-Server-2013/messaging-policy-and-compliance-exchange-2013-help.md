@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 La messagerie électronique est devenue un moyen de communication fiable et omniprésent pour les professionnels de l'information dans les organisations de toute taille. Magasins et boîtes aux lettres de messagerie sont devenus des référentiels de données précieuses. Il est important pour les organisations de reformuler des stratégies de messagerie qui dictent le bon usage de leurs systèmes de messagerie, fournissent aux utilisateurs des directives pour savoir comment agir face aux stratégies et, le cas échéant, fournissent des informations détaillées sur les types de communication pouvant être autorisés.
 

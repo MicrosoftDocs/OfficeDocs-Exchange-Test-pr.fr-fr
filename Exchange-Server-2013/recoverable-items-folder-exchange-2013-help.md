@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Pour assurer une protection en cas de suppressions accidentelles ou malveillantes et pour faciliter les tâches de détection couramment effectuées avant ou pendant la période de litige ou d’enquête, Microsoft Exchange Server 2013 et Exchange Online utilisent le dossier Éléments récupérables. Le dossier Éléments récupérables remplace la fonctionnalité communément appelée *conteneur de dépôt* dans les versions précédentes d’Exchange. Le dossier Éléments récupérables est utilisé par les fonctionnalités Exchange suivantes :
 
@@ -274,18 +274,8 @@ Le tableau suivant dresse la liste des propriétés de message qui déclenchent 
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La protection de page de copie sur écriture n’enregistre pas de version de la réunion lorsque l’organisateur d’une réunion reçoit des réponses des participants et que les informations de suivi de la réunion sont mises jour. En outre, les changements apportés aux flux RSS ne sont pas pris en compte par la protection de page de copie sur écriture.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La protection de page de copie sur écriture n’enregistre pas de version de la réunion lorsque l’organisateur d’une réunion reçoit des réponses des participants et que les informations de suivi de la réunion sont mises jour. En outre, les changements apportés aux flux RSS ne sont pas pris en compte par la protection de page de copie sur écriture.
 
 
 Lorsqu’une boîte aux lettres n’est plus bloquée sur place ou mise en attente pour litige, les copies des éléments modifiés enregistrées dans le dossier Versions sont supprimées.

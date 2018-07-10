@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les groupes de règles de numérotation comprennent des entrées de règles de numérotation. Les règles de numérotation sont utilisées pour modifier un numéro de téléphone avant son envoi à un système téléphonique local (PBX) ou PBX IP pour les appels sortants. Les règles de numérotation ont deux fonctions :
 
@@ -25,18 +25,8 @@ Les groupes de règles de numérotation comprennent des entrées de règles de n
 
 Pour spécifier les types d'appels sortants que vous souhaitez autoriser pour un plan de numérotation de messagerie unifiée, vous créez un groupe de règles de numérotation contenant des règles de numérotation que vous utilisez pour autoriser les appels sortants pour les utilisateurs d'Outlook Voice Access et les appelants qui composent le numéro d'un standard automatique de messagerie unifiée. Vous créez des groupes de règles de numérotation séparés pour les appels nationaux/régionaux et pour les appels internationaux.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous intégrez la messagerie unifiée à Microsoft Lync Server, nous vous recommandons de créer au moins un groupe de règles de numérotation et d'autoriser ce groupe sur les plans de numérotation URI SIP, les stratégies de boîte aux lettres de messagerie unifiée et les standards automatiques de messagerie unifiée pour permettre à tous les appels sortants d'être transférés vers des serveurs Lync Server.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous intégrez la messagerie unifiée à Microsoft Lync Server, nous vous recommandons de créer au moins un groupe de règles de numérotation et d'autoriser ce groupe sur les plans de numérotation URI SIP, les stratégies de boîte aux lettres de messagerie unifiée et les standards automatiques de messagerie unifiée pour permettre à tous les appels sortants d'être transférés vers des serveurs Lync Server.
 
 
 Pour d'autres tâches de gestion concernant l'automate d'appels, consultez la rubrique [Ce qui permet aux utilisateurs d'effectuer les procédures d'appels](allowing-users-to-make-calls-procedures-exchange-2013-help.md).
@@ -94,18 +84,8 @@ Pour d'autres tâches de gestion concernant l'automate d'appels, consultez la ru
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Utiliser le Centre d'administration Exchange (CAE) pour créer une règle de numérotation

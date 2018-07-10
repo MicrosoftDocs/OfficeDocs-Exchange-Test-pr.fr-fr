@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2010, Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2010, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-04-30_
+_**Dernière rubrique modifiée :** 2018-04-30_
 
 **Résumé** : Comment déplacer vos dossiers publics Exchange 2010 vers des groupes Office 365.
 
@@ -57,18 +57,8 @@ La migration par lots vers Groupes Office 365 nécessite l’exécution d’un
 
 Avant de commencer, vérifiez que vous avez téléchargé et enregistré tous les scripts et fichiers suivants :
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Veillez à enregistrer tous les scripts et fichiers au même emplacement.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Veillez à enregistrer tous les scripts et fichiers au même emplacement.
 
 
   - **AddMembersToGroups.ps1**. Ce script ajoute des membres et des propriétaires à Groupes Office 365 en fonction des entrées d’autorisation des dossiers publics sources.
@@ -77,7 +67,7 @@ Avant de commencer, vérifiez que vous avez téléchargé et enregistré tous le
 
   - **LockAndSavePublicFolderProperties.ps1**. Ce script met les dossiers publics en lecture seule pour empêcher toute modification, et transfère les propriétés de messagerie des dossiers publics (à condition que les dossiers publics soient à extension messagerie) aux groupes cibles, qui redirigent les e-mails à partir de dossiers publics aux groupes cibles. Ce script sauvegarde également les entrées d’autorisation et les propriétés de messagerie avant de les modifier.
 
-  - **LockAndSavePublicFolderProperties.strings.psd1:** Ce fichier de support est utilisé par le script `LockAndSavePublicFolderProperties.ps1`.
+  - **LockAndSavePublicFolderProperties.strings.psd1:**  Ce fichier de support est utilisé par le script `LockAndSavePublicFolderProperties.ps1`.
 
   - **UnlockAndRestorePublicFolderProperties.ps1**. Ce script restaure les droits d’accès et les propriétés de messagerie des dossiers publics à l’aide de fichiers de sauvegarde créés par `LockandSavePublicFolderProperties.ps1`.
 
@@ -224,18 +214,8 @@ Une fois que les utilisateurs ont été ajoutés à un groupe dans Office 365, 
 
 Lorsque la majorité des données de vos dossiers publics a été migrée vers Groupes Office 365, vous pouvez exécuter le script `LockAndSavePublicFolderProperties.ps1` sur le serveur Exchange 2010 pour mettre les dossiers publics en lecture seule. Cette étape permet de s’assurer qu’aucune nouvelle donnée n’est ajoutée aux dossiers publics avant la fin de la migration.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>S’il existe des dossiers publics à extension messagerie (MEPF) parmi les dossiers publics migrés, cette étape copie certaines propriétés des MEPF, telles que les adresses SMTP, dans le groupe correspondant dans Office 365, puis désactive la messagerie du dossier public. Étant donné que la messagerie des MEPF migrés est désactivée après l’exécution de ce script, vous commencez à voir des e-mails envoyés aux MEPF au lieu de les recevoir dans les groupes correspondants. Pour obtenir plus d’informations, consultez la rubrique Scripts de migration plus loin dans cet article.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> S’il existe des dossiers publics à extension messagerie (MEPF) parmi les dossiers publics migrés, cette étape copie certaines propriétés des MEPF, telles que les adresses SMTP, dans le groupe correspondant dans Office 365, puis désactive la messagerie du dossier public. Étant donné que la messagerie des MEPF migrés est désactivée après l’exécution de ce script, vous commencez à voir des e-mails envoyés aux MEPF au lieu de les recevoir dans les groupes correspondants. Pour obtenir plus d’informations, consultez la rubrique Scripts de migration plus loin dans cet article.
 
 
 Dans la commande suivante :
@@ -276,18 +256,8 @@ Une fois le nouveau lot créé, lancez la migration en exécutant la commande su
 
 Une fois cette étape terminée (l’état du lot est **Terminé**), vérifiez que toutes les données ont été copiées dans Groupes Office 365. À ce stade, dès lors que vous êtes satisfait de l’expérience des groupes, vous pouvez commencer à supprimer les dossiers publics migrés à partir de votre environnement Exchange 2010.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Bien qu’il existe des procédures prises en charge pour restaurer la migration et revenir aux dossiers publics, cela n’est pas possible quand les dossiers publics sources ont été supprimés. Consultez Comment puis-je restaurer les dossiers publics à partir de Groupes Office 365 ? pour obtenir plus d’informations.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Bien qu’il existe des procédures prises en charge pour restaurer la migration et revenir aux dossiers publics, cela n’est pas possible quand les dossiers publics sources ont été supprimés. Consultez Comment puis-je restaurer les dossiers publics à partir de Groupes Office 365 ? pour obtenir plus d’informations.
 
 
 ## Problèmes connus

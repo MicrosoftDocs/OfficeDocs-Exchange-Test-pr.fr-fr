@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Configurez une relation organisationnelle pour partager des informations de calendrier avec un partenaire commercial externe. Une relation organisationnelle peut être configurée entre deux organisations Exchange 2013 fédérées ou entre une organisation Exchange 2013 fédérée et des organisations Exchange 2010 fédérées. Vous pouvez également configurer une relation organisationnelle entre votre organisation Exchange sur site et une organisation Office 365.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La création d'une relation d'organisation fait partie des différentes étapes de la mise en place du partage fédéré dans votre organisation Exchange et exige la configuration d'une approbation de fédération pour votre organisation Exchange locale.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La création d'une relation d'organisation fait partie des différentes étapes de la mise en place du partage fédéré dans votre organisation Exchange et exige la configuration d'une approbation de fédération pour votre organisation Exchange locale.
 
 
 Pour en savoir plus sur le partage fédéré, voir [Partage](sharing-exchange-2013-help.md).
@@ -123,16 +113,6 @@ Pour vérifier que vous avez créé la relation d'organisation avec succès, ex�
 
     Get-OrganizationRelationship | format-list
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

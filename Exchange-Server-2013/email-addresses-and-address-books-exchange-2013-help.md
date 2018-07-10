@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les destinataires (utilisateurs, ressources, contacts et groupes) sont tout objet à extension messagerie dans Active Directory auquel Microsoft Exchange peut remettre ou vers lequel il peut acheminer des messages. Pour qu'un destinataire puisse recevoir ou envoyer des messages électroniques, il doit avoir une adresse de messagerie. Les carnets d'adresses constituent la méthode qui permet aux utilisateurs de se trouver en vue de s'envoyer des messages électroniques. Il existe plusieurs méthodes d'organisation des carnets d'adresses. Consultez la rubrique Terminologie clé pour obtenir des descriptions détaillées des fonctionnalités des carnets d'adresses dans Exchange Server 2013.
 

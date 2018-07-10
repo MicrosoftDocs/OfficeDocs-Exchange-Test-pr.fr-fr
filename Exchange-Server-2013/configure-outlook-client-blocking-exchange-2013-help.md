@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Dans Exchange Server 2013, vous pouvez utiliser les stratégies de rétention ou les dossiers gérés pour assurer la gestion des enregistrements de messagerie (MRM). Seuls les utilisateurs de Microsoft Outlook 2010 et versions ultérieures ont accès à l’ensemble des fonctionnalités client des stratégies de rétention. Toutefois, les stratégies de rétention sont appliquées au serveur de boîtes aux lettres par l’Assistant Dossier géré, quelle que soit la version du client Outlook utilisée. Les clients Outlook antérieurs ne présentent pas la fonctionnalité MRM de ces fonctions. Par exemple, comme Outlook 2007 ne prend pas en charge les stratégies de rétention, les utilisateurs ne peuvent pas appliquer de balises personnelles aux éléments ou aux dossiers.
 
@@ -113,18 +113,8 @@ Le tableau suivant indique les numéros de version pour Outlook.
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avant d’effectuer toute modification, notez que les correctifs et les versions de Service Packs peuvent avoir un impact sur la chaîne de version du client. Soyez vigilant lorsque vous limitez l’accès client car les composants Exchange côté serveur doivent également utiliser l’interface MAPI pour ouvrir une session. Certains composants signalent leur version du client sous le nom du composant (tel que SMTP ou OLE DB) tandis que d’autres indiquent le numéro de build d’Exchange (par exemple, 6.0.4712.0). Par conséquent, évitez de limiter les clients dont les numéros de version commencent par 6.&lt;<em>x</em>.<em>x</em>.&gt;. Par exemple, pour empêcher totalement l’accès MAPI, spécifiez deux plages au lieu de <strong>0.0.0-6.5535.65535.65535</strong> pour que les composants de serveur puissent ouvrir une session. Spécifiez par exemple : <strong>0.0.0-5.9.9; 7.0.0-</strong>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Avant d’effectuer toute modification, notez que les correctifs et les versions de Service Packs peuvent avoir un impact sur la chaîne de version du client. Soyez vigilant lorsque vous limitez l’accès client car les composants Exchange côté serveur doivent également utiliser l’interface MAPI pour ouvrir une session. Certains composants signalent leur version du client sous le nom du composant (tel que SMTP ou OLE DB) tandis que d’autres indiquent le numéro de build d’Exchange (par exemple, 6.0.4712.0). Par conséquent, évitez de limiter les clients dont les numéros de version commencent par 6.&lt;<em>x</em>.<em>x</em>.&gt;. Par exemple, pour empêcher totalement l’accès MAPI, spécifiez deux plages au lieu de <strong>0.0.0-6.5535.65535.65535</strong> pour que les composants de serveur puissent ouvrir une session. Spécifiez par exemple : <strong>0.0.0-5.9.9; 7.0.0-</strong>.
 
 
 En outre, avant d’exécuter ces procédures, sachez que lorsque les utilisateurs se voient refuser l’accès à leur boîte aux lettres, ils reçoivent le message d’avertissement suivant :
@@ -178,18 +168,8 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Cet exemple bloque l’accès à la boîte aux lettres d’un serveur d’accès au client Exchange 2010 ou versions ultérieures pour les clients Outlook dont la version est antérieure à la version 12.0.0.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les valeurs utilisées avec le paramètre <em>BlockedClientVersions</em> sont des exemples. Vous pouvez déterminer les versions correctes du logiciel client en analysant les fichiers journaux d’accès au client RPC situés dans <code>%ExchangeInstallPath%Logging\RPC Client Access</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les valeurs utilisées avec le paramètre <em>BlockedClientVersions</em> sont des exemples. Vous pouvez déterminer les versions correctes du logiciel client en analysant les fichiers journaux d’accès au client RPC situés dans <code>%ExchangeInstallPath%Logging\RPC Client Access</code>.
 
 
     Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"

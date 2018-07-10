@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Lorsque vous utilisez l’Afficheur des files d’attente dans la Boîte à outils Exchange sur un serveur Microsoft Exchange Server 2013 situé dans l’organisation Exchange, vous pouvez vous connecter à d’autres serveurs de boîtes aux lettres. Par défaut, lorsque vous ouvrez l’Afficheur des files d’attente sur un serveur de boîtes aux lettres, l’Afficheur des files d’attente se connecte à la base de données de files d’attente sur le serveur local. Néanmoins, vous pouvez démarrer plusieurs instances de l’Afficheur des files d’attente afin que chaque instance cible un serveur distinct. Vous pouvez aussi afficher les fenêtres de l’Afficheur des files d’attente en mosaïque, afin de pouvoir surveiller facilement plusieurs serveurs de boîtes aux lettres à la fois.
 
@@ -31,18 +31,8 @@ Vous pouvez également indiquer le serveur que le PowerShell distant utilise pou
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

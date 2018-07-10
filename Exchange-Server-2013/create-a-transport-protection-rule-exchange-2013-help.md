@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez utiliser des règles de protection de transport pour appliquer une protection de droits permanente aux messages en fonction de leurs propriétés, telles que l’expéditeur, le destinataire, l’objet et le contenu du message.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avant de créer des règles de transport dans votre environnement de production, il est recommandé de les créer dans un environnement de test et de les tester de manière approfondie. Les règles de transport créées dans cette rubrique sont des exemples. Vous pouvez créer des règles de transport en utilisant les prédicats et valeurs de règles de transport appropriés en fonction de vos besoins.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Avant de créer des règles de transport dans votre environnement de production, il est recommandé de les créer dans un environnement de test et de les tester de manière approfondie. Les règles de transport créées dans cette rubrique sont des exemples. Vous pouvez créer des règles de transport en utilisant les prédicats et valeurs de règles de transport appropriés en fonction de vos besoins.
 
 
 Pour les autres tâches de gestion liées à la Gestion des droits relatifs à l’information (IRM), voir [Procédures de gestion des droits relatifs à l’information](information-rights-management-procedures-exchange-2013-help.md).
@@ -49,18 +39,8 @@ Pour les autres tâches de gestion liées à la Gestion des droits relatifs à l
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -77,18 +57,8 @@ Pour les autres tâches de gestion liées à la Gestion des droits relatifs à l
     
       - **Appliquer cette règle si**   Sélectionnez une condition et entrez les valeurs requises pour celle-ci. Pour ajouter des conditions supplémentaires, cliquez sur **Ajouter une condition**.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Si vous ne sélectionnez aucune condition lors de la création d’une règle de protection de transport, tous les messages traités par les serveurs Exchange 2013 avec le service de transport de votre organisation seront protégés par IRM. La protection IRM de tous les messages requiert plus de ressources. Par conséquent, nous vous recommandons de planifier votre serveur de messagerie et déploiement AD RMS en conséquence.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Si vous ne sélectionnez aucune condition lors de la création d’une règle de protection de transport, tous les messages traités par les serveurs Exchange 2013 avec le service de transport de votre organisation seront protégés par IRM. La protection IRM de tous les messages requiert plus de ressources. Par conséquent, nous vous recommandons de planifier votre serveur de messagerie et déploiement AD RMS en conséquence.
     
       - **Effectuez les opérations suivantes**   Sélectionnez **Appliquer la protection des droits au message avec**, puis sélectionnez un modèle à l’aide de la boîte de dialogue **Sélectionner un modèle RMS**.
     
@@ -106,18 +76,8 @@ Pour les autres tâches de gestion liées à la Gestion des droits relatifs à l
 
   - Cet exemple montre comment créer la règle de protection de transport Protect-BusinessCriticalProject. La règle confère une protection IRM aux messages contenant la phrase « Critique pour l’entreprise » dans le champ Objet avec le modèle **Ne pas transférer**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le prédicat <code>SubjectContainsWords</code> est utilisé dans cet exemple. Vous pouvez utiliser une combinaison quelconque de prédicats de règle de transport pour former les conditions et les exceptions de la règle. Pour plus d’informations sur les prédicats disponibles, consultez la rubrique <a href="mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md">Conditions de règles de transport (prédicats)</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le prédicat <code>SubjectContainsWords</code> est utilisé dans cet exemple. Vous pouvez utiliser une combinaison quelconque de prédicats de règle de transport pour former les conditions et les exceptions de la règle. Pour plus d’informations sur les prédicats disponibles, consultez la rubrique <a href="mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md">Conditions de règles de transport (prédicats)</a>.
     
         New-TransportRule -Name "Protect-BusinessCriticalProject" -SubjectContainsWords "Business Critical" -ApplyRightsProtectionTemplate "Do Not Forward"
     

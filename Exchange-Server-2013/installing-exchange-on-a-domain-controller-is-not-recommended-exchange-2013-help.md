@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2013-03-22_
+_**Dernière rubrique modifiée :** 2013-03-22_
 
 Le programme d'installation de Microsoft Exchange Server 2013 a détecté que l'ordinateur sur lequel vous tentez d'installer Exchange 2013 se trouve sur un contrôleur de domaine Active Directory. L'installation d'Exchange 2013 sur un contrôleur de domaine n'est pas recommandée.
 

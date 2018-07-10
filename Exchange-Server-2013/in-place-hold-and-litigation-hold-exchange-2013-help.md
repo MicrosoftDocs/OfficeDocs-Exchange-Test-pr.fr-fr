@@ -13,22 +13,12 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-11-15_
+_**Dernière rubrique modifiée :** 2017-11-15_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous avons différé la date d’échéance du 1er juillet 2017 pour créer des conservations inaltérables dans Exchange Online (dans les plans autonomes Office 365 et Exchange Online). Mais plus tard cette année ou au début de l’année prochaine, vous ne pourrez pas créer des conservations inaltérables dans Exchange Online. Au lieu d’utiliser des conservations inaltérables, vous pouvez avoir recours à des <a href="https://go.microsoft.com/fwlink/?linkid=780738">cas de découverte électronique</a> ou des <a href="https://go.microsoft.com/fwlink/?linkid=827811">stratégies de rétention</a> dans le centre de sécurité et conformité Office 365. Lorsque nous aurons désactivé les nouvelles conservations inaltérables, vous pourrez toujours modifier les conservations inaltérables existantes. La création de conservations inaltérables sera toujours prise en charge dans les déploiements hybrides Exchange Server 2013 et Exchange . Vous serez également toujours en mesure de mettre des boîtes aux lettres en conservation pour litige.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Nous avons différé la date d’échéance du 1er juillet 2017 pour créer des conservations inaltérables dans Exchange Online (dans les plans autonomes Office 365 et Exchange Online). Mais plus tard cette année ou au début de l’année prochaine, vous ne pourrez pas créer des conservations inaltérables dans Exchange Online. Au lieu d’utiliser des conservations inaltérables, vous pouvez avoir recours à des <a href="https://go.microsoft.com/fwlink/?linkid=780738">cas de découverte électronique</a> ou des <a href="https://go.microsoft.com/fwlink/?linkid=827811">stratégies de rétention</a> dans le centre de sécurité et conformité Office 365. Lorsque nous aurons désactivé les nouvelles conservations inaltérables, vous pourrez toujours modifier les conservations inaltérables existantes. La création de conservations inaltérables sera toujours prise en charge dans les déploiements hybrides Exchange Server 2013 et Exchange . Vous serez également toujours en mesure de mettre des boîtes aux lettres en conservation pour litige.
 
 
 Lorsqu’une situation de litige est vraisemblablement à craindre, les organisations ont pour obligation de conserver les informations pertinentes qui sont stockées électroniquement (ESI), y compris la messagerie. Cette exigence de stockage de la correspondance électronique existe souvent avant que les détails précis du litige soient connus, et la conservation s’applique généralement à un grand nombre d’éléments. Les organisations devront éventuellement conserver tous les messages électroniques concernant un sujet spécifique, ou tous les messages de certaines personnes. En fonction des pratiques de découverte électronique (eDiscovery) de l’organisation, les mesures suivantes peuvent être adoptées pour conserver la messagerie électronique :
@@ -93,18 +83,8 @@ Avec ce nouveau modèle, le blocage sur place (In-Place Hold) vous permet de cr�
 
   - **Blocage basé sur une requête**   Si votre organisation conserve des éléments selon les paramètres de requête spécifiés, vous pouvez utiliser un blocage sur place basé sur une requête. Vous pouvez spécifier des paramètres de requête comme des mots-clés, des dates de début et de fin, des adresses d’expéditeur et de destinataire ou encore des types de messages. Une fois que vous avez créé un blocage sur place basé sur une requête, tous les éléments de boîte aux lettres existants et futurs (notamment les messages reçus à une date ultérieure) qui correspondent aux paramètres de requête sont conservés.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les éléments marqués comme ne pouvant pas faire l’objet d’une recherche, généralement en raison de l’échec d’indexation d’une pièce jointe, sont également conservés, car il est impossible de déterminer s’ils correspondent aux paramètres de la requête. Pour plus d’informations sur l’élément ne pouvant pas faire l’objet d’une recherche, voir <a href="unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md">Éléments impossibles à rechercher dans la découverte électronique Exchange</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les éléments marqués comme ne pouvant pas faire l’objet d’une recherche, généralement en raison de l’échec d’indexation d’une pièce jointe, sont également conservés, car il est impossible de déterminer s’ils correspondent aux paramètres de la requête. Pour plus d’informations sur l’élément ne pouvant pas faire l’objet d’une recherche, voir <a href="unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md">Éléments impossibles à rechercher dans la découverte électronique Exchange</a>.
 
 
   - **Conservation à durée définie**   La conservation inaltérable et la conservation pour litige vous permettent de spécifier une durée pendant laquelle mettre en attente les éléments. La durée est calculée à compter de la date de réception ou de création de l’élément de boîte aux lettres.
@@ -121,18 +101,8 @@ Conservation pour litige, la fonction de conservation introduite dans Exchange 
 
 Lorsqu’une boîte aux lettres est placée simultanément sur une ou plusieurs conservations inaltérables et une conservation pour litige (sans indication de durée), tous les éléments sont conservés indéfiniment ou jusqu’à la suppression des conservations. Si vous supprimez la conservation pour litige et que l’utilisateur est toujours placé sur une ou plusieurs conservations inaltérables, les éléments correspondant aux critères Conservation inaltérable sont conservés pendant la période spécifiée dans les paramètres de conservation. Lorsque vous déplacez une boîte aux lettres conservée pour litige dans Exchange 2010 vers un serveur de boîtes aux lettres Exchange 2013, le paramètre de conservation pour litige continue de s’appliquer, ce qui garantit que les exigences de conformité sont respectées pendant et après le déplacement.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous placez une boîte aux lettres en conservation inaltérable ou en conservation pour litige, la conservation porte à la fois sur la boîte aux lettres d’archivage et la boîte aux lettres principale. Si vous placez une boîte aux lettres principale locale en conservation inaltérable dans un déploiement hybride Exchange, la boîte aux lettres d’archivage en nuage (si activée) est également placée en conservation inaltérable.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous placez une boîte aux lettres en conservation inaltérable ou en conservation pour litige, la conservation porte à la fois sur la boîte aux lettres d’archivage et la boîte aux lettres principale. Si vous placez une boîte aux lettres principale locale en conservation inaltérable dans un déploiement hybride Exchange, la boîte aux lettres d’archivage en nuage (si activée) est également placée en conservation inaltérable.
 
 
 Pour plus d’informations, consultez les rubriques suivantes :
@@ -145,34 +115,14 @@ Pour plus d’informations, consultez les rubriques suivantes :
 
 Les utilisateurs autorisés qui ont été ajoutés au groupe de rôles de contrôle d’accès basé sur les rôles (RBAC) [Gestion de la détection](discovery-management-exchange-2013-help.md), ou auxquels les rôles de gestion de blocage légal et de recherche dans les boîtes aux lettres ont été attribués, peuvent placer des utilisateurs de boîte aux lettres en blocage sur place (In-Place Hold). Vous pouvez déléguer la tâche aux responsables des enregistrements, aux responsables de la mise en conformité ou aux avocats du service juridique de votre organisation en affectant le moins de privilèges possible. Pour en savoir plus sur l’affectation du groupe de rôles Gestion de la découverte, voir [Attribution d’autorisations eDiscovery dans Exchange](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange 2010, le rôle de conservation légale fournit les autorisations nécessaires aux utilisateurs pour placer des boîtes aux lettres en conservation pour litige. Dans Exchange 2013, vous pouvez utiliser la même autorisation pour placer des boîtes aux lettres en blocage sur place indéfini ou basé sur la durée. Cependant, pour créer un blocage sur place basé sur une requête, l’utilisateur doit se voir attribuer le rôle de recherche dans les boîtes aux lettres. Ces deux rôles sont attribués au groupe de rôles Gestion de la découverte.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange 2010, le rôle de conservation légale fournit les autorisations nécessaires aux utilisateurs pour placer des boîtes aux lettres en conservation pour litige. Dans Exchange 2013, vous pouvez utiliser la même autorisation pour placer des boîtes aux lettres en blocage sur place indéfini ou basé sur la durée. Cependant, pour créer un blocage sur place basé sur une requête, l’utilisateur doit se voir attribuer le rôle de recherche dans les boîtes aux lettres. Ces deux rôles sont attribués au groupe de rôles Gestion de la découverte.
 
 
 Dans Exchange 2013, la fonctionnalité de blocage sur place (In-Place Hold) est intégrée aux recherches de découverte électronique sur place (In-Place eDiscovery). Vous pouvez utiliser l’Assistant **Découverte électronique et blocage sur place** du Centre d’Administration Exchange (EAC) ou la cmdlet **New-MailboxSearch** et autres commandes associées dans l’environnement de ligne de commande Exchange Management Shell pour placer une boîte aux lettres en blocage sur place. Pour en savoir plus sur le placement d’une boîte aux lettres en blocage sur place, consultez la rubrique [Créer ou supprimer une conservation inaltérable](create-or-remove-an-in-place-hold-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous utilisez l’archivage Exchange Online pour configurer une archive basée sur le cloud pour vos boîtes aux lettres locales, vous devez gérer la conservation inaltérable à partir de votre organisation Exchange 2013 locale. Les paramètres de blocage sont automatiquement propagés à l’archive basée sur le cloud via DirSync. Comme indiqué précédemment, lorsque vous placez une boîte aux lettres locale en attente, l’archive basée sur le cloud correspondante est également placée en attente.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous utilisez l’archivage Exchange Online pour configurer une archive basée sur le cloud pour vos boîtes aux lettres locales, vous devez gérer la conservation inaltérable à partir de votre organisation Exchange 2013 locale. Les paramètres de blocage sont automatiquement propagés à l’archive basée sur le cloud via DirSync. Comme indiqué précédemment, lorsque vous placez une boîte aux lettres locale en attente, l’archive basée sur le cloud correspondante est également placée en attente.
 
 
 De nombreuses organisations sont tenues d’informer les utilisateurs lorsque les boîtes aux lettres de ces derniers sont soumises à un blocage. Qui plus est, lorsqu’une boîte aux lettres fait l’objet d’un blocage, il n’est pas nécessaire que les stratégies de rétention qui s’appliquent à l’utilisateur de boîte aux lettres soient suspendues. Étant donné que la suppression des messages se poursuit normalement, les utilisateurs ne remarquent pas forcément qu’ils font l’objet d’un blocage. Si votre organisation nécessite que les utilisateurs bloqués en soient informés, vous pouvez ajouter un message de notification à la propriété **Retention Comment** de l’utilisateur de boîte aux lettres et utiliser la propriété **RetentionUrl** pour établir un lien vers une page Web pour plus d’informations. Outlook 2010 et versions ultérieures affiche la notification et l’URL dans la zone en arrière-plan. Vous devez utiliser l’environnement de ligne de commande Exchange Management Shell afin d’ajouter et de gérer ces propriétés pour une boîte aux lettres.
@@ -249,18 +199,8 @@ Le dossier Éléments récupérables contient les sous-dossiers suivants qui per
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La copie sur écriture est désactivée pour les éléments du calendrier dans la boîte aux lettres de l’organisateur lors de la réception des réponses des participants à la réunion et de la mise à jour des informations de suivi. Pour les éléments de calendrier et les éléments pour lesquels un rappel est défini, la copie sur écriture est désactivée pour les propriétés ReminderTime et ReminderSignalTime. Les changements apportés à ces propriétés ne sont pas capturés par la copie sur écriture. Les changements apportés aux flux RSS ne sont pas pris en compte par la copie sur écriture.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La copie sur écriture est désactivée pour les éléments du calendrier dans la boîte aux lettres de l’organisateur lors de la réception des réponses des participants à la réunion et de la mise à jour des informations de suivi. Pour les éléments de calendrier et les éléments pour lesquels un rappel est défini, la copie sur écriture est désactivée pour les propriétés ReminderTime et ReminderSignalTime. Les changements apportés à ces propriétés ne sont pas capturés par la copie sur écriture. Les changements apportés aux flux RSS ne sont pas pris en compte par la copie sur écriture.
 
 
 Bien que les dossiers DiscoveryHold, Purges et Versions ne soient pas visibles par l’utilisateur, tous les éléments du dossier Éléments récupérables sont indexés par Exchange Search et peuvent être découverts à l’aide de la découverte électronique sur place (In-Place eDiscovery). Lorsqu’un utilisateur de boîte aux lettres est supprimé d’une conservation inaltérable ou d’une conservation pour litige, les éléments des dossiers DiscoveryHold, Purges et Versions sont purgés par l’Assistant Dossier géré.
@@ -337,18 +277,8 @@ Si vous disposez d’un déploiement hybride Exchange, les conditions suivantes 
 
   - Si la boîte aux lettres locale est en conservation pour litige ou en conservation inaltérable, le contenu du dossier Éléments récupérables est déplacé vers la boîte aux lettres Exchange Online.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les paramètres de mise en attente et le contenu du dossier Éléments récupérables sont également conservés lorsque vous déplacez (débarquement) une boîte aux lettres Exchange Online vers votre organisation Exchange 2013 locale.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les paramètres de mise en attente et le contenu du dossier Éléments récupérables sont également conservés lorsque vous déplacez (débarquement) une boîte aux lettres Exchange Online vers votre organisation Exchange 2013 locale.
 
 
 Il existe d’autres façons de migrer des données de messagerie locale vers Office 365, par exemple en utilisant une migration intermédiaire Exchange migration ou une migration à basculement Exchange.
@@ -357,18 +287,8 @@ Il existe d’autres façons de migrer des données de messagerie locale vers Of
 
   - Une migration à basculement peut être utilisée pour migrer des boîtes aux lettres depuis Exchange 2003, Exchange 2007 et Exchange 2010 vers Office 365. Comme indiqué plus haut, les boîtes aux lettres Exchange 2003 et Exchange 2007 n’ont pas de dossier Éléments récupérables à migrer. Comme le dossier Éléments récupérables a été introduit dans Exchange 2010, le contenu de ce dossier est migré vers Office 365 lorsque vous utilisez une migration à basculement pour migrer les boîtes aux lettres Exchange 2010.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour Exchange 2013 et Exchange 2010, un déploiement hybride Exchange est recommandé pour migrer les boîtes aux lettres locales vers Office 365.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Pour Exchange 2013 et Exchange 2010, un déploiement hybride Exchange est recommandé pour migrer les boîtes aux lettres locales vers Office 365.
 
 
 Retour au début

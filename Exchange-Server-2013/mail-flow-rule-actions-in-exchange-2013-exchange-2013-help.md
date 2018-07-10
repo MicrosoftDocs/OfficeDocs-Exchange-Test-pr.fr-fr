@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-05-03_
+_**Dernière rubrique modifiée :** 2017-05-03_
 
 Les actions de règles de flux de messagerie (également nommées règles de transport) spécifient ce que vous voulez faire des messages qui répondent aux conditions de la règle. Par exemple, vous pouvez créer une règle qui transfère les messages d’expéditeurs spécifiques à un modérateur, ou ajoute une clause d’exclusion de responsabilité ou une signature personnalisée à tous les messages sortants.
 

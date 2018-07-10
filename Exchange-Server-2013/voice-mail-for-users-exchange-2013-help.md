@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-19_
+_**Dernière rubrique modifiée :** 2013-02-19_
 
 Grace à la messagerie unifiée, les utilisateurs de l'organisation Exchange peuvent recevoir tous leurs messages électroniques et messages vocaux dans une seule boîte aux lettres. La fonctionnalité de messagerie unifiée et les fonctions de messagerie vocale augmentent sensiblement la productivité de l’utilisateur et active une messagerie plus flexible au sein d’une organisation.
 
@@ -49,18 +49,8 @@ Une stratégie de boîte aux lettres de messagerie unifiée contient des paramè
 
 Lorsque vous activez un utilisateur pour la messagerie unifiée, vous devez définir au moins un numéro de poste qui sera utilisé par la messagerie unifiée pour remettre des messages vocaux à la boîte aux lettres de l’utilisateur. Une fois l’utilisateur activé pour la messagerie unifiée, vous pouvez ajouter des numéros de postes secondaires à la boîte aux lettres de l’utilisateur, les modifier ou les supprimer en configurant l’adresse proxy de messagerie unifiée Exchange (adresse proxy EUM) sur la boîte aux lettres de l'utilisateur ou ajouter ou supprimer des postes secondaires pour l’utilisateur dans le centre d'administration Exchange. Vous pouvez supprimer le numéro de poste principal dans l'EAC en supprimant l'adresse proxy EUM. Cependant, il est recommandé de ne pas le supprimer. La suppression du numéro de poste principal ne permet pas la transmission correcte des appels vers la boîte aux lettres de l'utilisateur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il n'existe pas de limite au nombre de numéros de poste secondaires que vous pouvez ajouter pour l'utilisateur à extension messagerie unifiée, mais il ne peut y avoir qu'un seul numéro de poste principal par utilisateur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il n'existe pas de limite au nombre de numéros de poste secondaires que vous pouvez ajouter pour l'utilisateur à extension messagerie unifiée, mais il ne peut y avoir qu'un seul numéro de poste principal par utilisateur.
 
 
 La boîte aux lettres d’un utilisateur à extension messagerie unifiée ne peut être associée qu’à un seul plan de numérotation de messagerie unifiée. L'utilisateur à extension messagerie unifiée peut toutefois être associée à :
@@ -71,18 +61,8 @@ La boîte aux lettres d’un utilisateur à extension messagerie unifiée ne peu
 
   - plusieurs numéros de postes principaux, adresses SIP ou adresses E.164 dans deux plans de numérotation distincts.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Chaque numéro de poste, adresse SIP et numéro E.164 doit être unique au sein du plan de numérotation et le nombre de chiffres du plan de numérotation sera utilisé pour tous les utilisateurs liés au plan de numérotation.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Chaque numéro de poste, adresse SIP et numéro E.164 doit être unique au sein du plan de numérotation et le nombre de chiffres du plan de numérotation sera utilisé pour tous les utilisateurs liés au plan de numérotation.
 
 
 Prenons l’exemple d’un utilisateur à extension messagerie unifiée qui voyage fréquemment entre New York et Tokyo. La boîte aux lettres de l’utilisateur est associée au plan de numérotation de New York et un seul numéro de poste est configuré sur sa boîte aux lettres. Un deuxième numéro de poste est configuré sur la boîte aux lettres de l’utilisateur pour le plan de numérotation de Tokyo. Lorsque des appelants composent l’un des numéros de postes et laissent un message vocal à l’utilisateur, le message vocal est remis à la même boîte aux lettres à extension messagerie unifiée.
@@ -99,7 +79,7 @@ Après avoir créé une boîte aux lettres Exchange pour l'utilisateur, vous pou
     
     Vous devez indiquer un numéro de poste valide pour l’utilisateur ; le numéro doit comporter le nombre de chiffres spécifié dans le plan de numérotation. Vous ne pouvez entrer que des caractères numériques ou des chiffres de 1 à 20. Le numéro de poste type est composé de 3 à 7 chiffres et est configuré sur le plan de numérotation auquel la stratégie de boîte aux lettres est liée et à partir duquel elle est attribuée à l'utilisateur.
 
-3.  **Paramètres de code confidentiel pour l'utilisateur :**
+3.  **Paramètres de code confidentiel pour l'utilisateur :** 
     
       - **Code confidentiel configuré automatiquement**   Ce paramètre génère automatiquement un code confidentiel pour l'utilisateur à extension messagerie à utiliser pour l'accès à la messagerie vocale via Outlook Voice Access. Il s’agit du paramètre par défaut. Lorsque vous cliquez sur ce bouton, un code confidentiel est automatiquement généré d’après les stratégies de code confidentiel configurées dans la stratégie de boîte aux lettres de messagerie unifiée attribuée à l’utilisateur. Il est recommandé d’utiliser ce paramètre afin de protéger le code confidentiel de l’utilisateur. Le code confidentiel est envoyé à l’utilisateur dans le message de bienvenue qu’il reçoit après avoir été activé pour la messagerie unifiée. Par défaut, il devra modifier ce code confidentiel lorsqu’il se connecte pour la première fois à sa boîte aux lettres pour accéder à sa messagerie vocale.
     

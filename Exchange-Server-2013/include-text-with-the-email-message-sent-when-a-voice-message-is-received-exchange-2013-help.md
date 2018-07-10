@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-12-16_
+_**Dernière rubrique modifiée :** 2012-12-16_
 
 Vous pouvez inclure du texte supplémentaire dans le message électronique envoyé quand un utilisateur à extension messagerie vocale de messagerie unifiée reçoit un message vocal. Par défaut, le texte inclus dans un message vocal indique uniquement que l'appelant a reçu un message vocal. Vous pouvez toutefois créer un message personnalisé en ajoutant du texte dans la zone **Lorsqu'un utilisateur reçoit un message vocal** dans une stratégie de boîte aux lettres de messagerie unifiée. Par exemple, le texte peut inclure des informations sur les stratégies de sécurité système et décrire la façon correcte de traiter les messages vocaux dans votre organisation. Une fois le texte ajouté, il est inclus dans chaque message électronique envoyé lorsque les utilisateurs à messagerie unifiée associés à la stratégie de boîte aux lettres de messagerie unifiée reçoivent un message vocal.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le texte personnalisé qui accompagne un message vocal est limité à 512 caractères et peut contenir du texte HTML simple.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le texte personnalisé qui accompagne un message vocal est limité à 512 caractères et peut contenir du texte HTML simple.
 
 
 Pour découvrir d'autres tâches de gestion relatives aux stratégies de boîte aux lettres de messagerie unifiée, consultez la rubrique [Procédures de stratégie de boîte aux lettres de messagerie unifiée](um-mailbox-policy-procedures-exchange-2013-help.md).
@@ -47,18 +37,8 @@ Pour découvrir d'autres tâches de gestion relatives aux stratégies de boîte 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

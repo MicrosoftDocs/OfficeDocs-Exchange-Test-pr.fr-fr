@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-02_
+_**Dernière rubrique modifiée :** 2012-11-02_
 
 La mise à jour, également appelée *amorçage*, est un processus au cours duquel une copie de base de données de boîtes aux lettres est ajoutée à un autre serveur de boîtes aux lettres dans un groupe de disponibilité de base de données. La copie ajoutée devient la base de données de référence pour la copie passive dans laquelle les fichiers journaux copiés à partir de la copie active sont relus. L'amorçage est nécessaire dans les cas suivants :
 
@@ -49,18 +49,8 @@ Vous pouvez amorcer une copie de base de données en utilisant la copie active o
 
 Il est possible d'amorcer plusieurs copies d'une base de données en même temps. Cependant, lorsque vous procédez à un amorçage simultané de plusieurs copies, vous devez amorcer uniquement le fichier de base de données et omettre le catalogue d'indexation de contenu. Pour ce faire, utilisez le paramètre *DatabaseOnly* avec la cmdlet [Update-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd335201\(v=exchg.150\)).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous n’utilisez pas le paramètre <em>DatabaseOnly</em> lors de l’amorçage de plusieurs cibles à partir de la même source, la tâche doit échouer avec l’erreur SeedInProgressException FE1C6491.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous n’utilisez pas le paramètre <em>DatabaseOnly</em> lors de l’amorçage de plusieurs cibles à partir de la même source, la tâche doit échouer avec l’erreur SeedInProgressException FE1C6491.
 
 
 Souhaitez-vous rechercher les autres tâches de gestion relatives aux copies de la base de données de boîtes aux lettres ? Consultez la rubrique [Gestion des copies de base de données de boîtes aux lettres](managing-mailbox-database-copies-exchange-2013-help.md).
@@ -77,18 +67,8 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux copies de 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

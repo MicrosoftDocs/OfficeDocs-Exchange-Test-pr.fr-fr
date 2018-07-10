@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-08-12_
+_**Dernière rubrique modifiée :** 2013-08-12_
 
 Le Centre d'administration Exchange (CAE) ou l'environnement de ligne de commande Exchange Management Shell permet d'afficher ou de configurer les propriétés d'un répertoire virtuel Outlook Web App.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange Online, les administrateurs ne peuvent pas afficher ou configurer les répertoires virtuels Outlook Web App.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Dans Exchange Online, les administrateurs ne peuvent pas afficher ou configurer les répertoires virtuels Outlook Web App.
 
 
 Si vous utilisez l'environnement de ligne de commande Exchange Management Shell pour afficher les propriétés d'un répertoire virtuel Outlook Web App, les informations renvoyées représentent un sous-ensemble des informations disponibles. Par exemple, si vous utilisez la cmdlet **Get-OWAVirtualDirectory** pour afficher les propriétés, Exchange retourne les informations suivantes :
@@ -53,18 +43,8 @@ Si vous utilisez le CAE pour afficher les propriétés d’un répertoire virtue
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -77,9 +57,7 @@ Si vous utilisez le CAE pour afficher les propriétés d’un répertoire virtue
 
 2.  Dans le volet Résultats, sélectionnez le répertoire virtuel que vous souhaitez afficher ou modifier, puis cliquez sur **Modifier**.
 
-3.  
-    
-    L'onglet **Général** vous permet d'afficher les propriétés du site web par défaut Outlook Web App et de spécifier une URL externe et une URL interne. Affichez ou sélectionnez les options suivantes :
+3.  L'onglet **Général** vous permet d'afficher les propriétés du site web par défaut Outlook Web App et de spécifier une URL externe et une URL interne. Affichez ou sélectionnez les options suivantes :
     
       - **Serveur**   (Lecture seule.) Le champ **Serveur** affiche le nom du serveur qui héberge le répertoire virtuel d'Outlook Web App.
     
@@ -95,9 +73,7 @@ Si vous utilisez le CAE pour afficher les propriétés d’un répertoire virtue
     
       - **URL externe**   Cette zone de texte permet de spécifier l'URL utilisée pour accéder à ce site web à partir d'Internet. Par défaut, le paramètre **URL externe** est vide. Pour les serveurs d'accès au client connectés à Internet, la propriété **URL externe** doit être définie sur la valeur publiée dans le DNS de ce site Active Directory. Pour les serveurs Exchange 2013 n'ayant pas de présence Internet, le paramètre **URL externe** doit rester vide.
 
-4.  
-    
-    L'onglet **Authentification** permet de spécifier les méthodes d'authentification, le format de connexion et le domaine de connexion.
+4.  L'onglet **Authentification** permet de spécifier les méthodes d'authentification, le format de connexion et le domaine de connexion.
     
       - **Utiliser une ou plusieurs méthodes d'authentification standard**   Activez cette option pour utiliser une ou plusieurs des méthodes d'authentification standard suivantes :
         
@@ -109,18 +85,8 @@ Si vous utilisez le CAE pour afficher les propriétés d’un répertoire virtue
     
       - **Utiliser l'authentification basée sur des formulaires**   L'authentification basée sur des formulaires fournit une sécurité optimisée pour les répertoires virtuels Outlook Web App. L'authentification basée sur des formulaires crée une page de connexion pour Outlook Web App. Vous pouvez configurer le type d'invite de connexion utilisé par l'authentification basée sur des formulaires. Par exemple, vous pouvez configurer une authentification basée sur des formulaires pour demander aux utilisateurs qu'ils fournissent leurs informations de nom d'utilisateur et de domaine, au format domaine\\nom d'utilisateur dans la page de connexion d'Outlook Web App.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>L'authentification basée sur des formulaires ne sera pas sécurisée tant que la SSL ne sera pas activée.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > L'authentification basée sur des formulaires ne sera pas sécurisée tant que la SSL ne sera pas activée.
         
         Activez l'une des options suivantes :
         
@@ -130,42 +96,18 @@ Si vous utilisez le CAE pour afficher les propriétés d’un répertoire virtue
         
         **Nom d'utilisateur uniquement** L'utilisateur n'entre que le nom d'utilisateur, sans le nom de domaine, par exemple, Kweku. Si vous utilisez l'invite de connexion **Nom d'utilisateur uniquement** pour une authentification basée sur des formulaires, vous devez également spécifier la propriété **Domaine de connexion**. La propriété **Domaine de connexion** détermine le domaine par défaut à utiliser lorsqu'un utilisateur tente de se connecter à Outlook Web App. Par exemple, si le domaine par défaut est Contoso et qu'un utilisateur de domaine nommé Kweku se connecte à Outlook Web App, seul le nom d'utilisateur Kweku doit être entré. Le serveur utilisera le domaine par défaut Contoso. Si l'utilisateur n'est pas membre du domaine Contoso, le nom d'utilisateur et le domaine doivent être entrés.
 
-5.  
+5.  L'onglet **Fonctionnalités** permet de spécifier les fonctionnalités que vous souhaitez activer ou désactiver pour les utilisateurs d'Outlook Web App sur un répertoire virtuel.
     
-    L'onglet **Fonctionnalités** permet de spécifier les fonctionnalités que vous souhaitez activer ou désactiver pour les utilisateurs d'Outlook Web App sur un répertoire virtuel.
-    
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les paramètres de fonctionnalités pour des utilisateurs individuels remplacent les paramètres de répertoire virtuel. Vous pouvez modifier les paramètres de fonctionnalités pour des utilisateurs individuels à l'aide de la cmdlet <strong>Set-CASMailbox</strong> ou des stratégies de boîte aux lettres Outlook Web App. Pour plus d'informations, consultez la rubrique <a href="outlook-web-app-mailbox-policies-exchange-2013-help.md">Stratégies de boîte aux lettres de Outlook Web App</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les paramètres de fonctionnalités pour des utilisateurs individuels remplacent les paramètres de répertoire virtuel. Vous pouvez modifier les paramètres de fonctionnalités pour des utilisateurs individuels à l'aide de la cmdlet <strong>Set-CASMailbox</strong> ou des stratégies de boîte aux lettres Outlook Web App. Pour plus d'informations, consultez la rubrique <a href="outlook-web-app-mailbox-policies-exchange-2013-help.md">Stratégies de boîte aux lettres de Outlook Web App</a>.
     
     Utilisez les cases à cocher pour activer ou désactiver des fonctionnalités. Par défaut, les fonctionnalités les plus courantes sont affichées. Pour afficher toutes les fonctionnalités pouvant être activées ou désactivées, cliquez sur **plus d'options**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>L'option d'activation ou de désactivation de la version standard d'Outlook Web App à l'aide de la case à cocher <strong>Client premium</strong> est obsolète et sera supprimée des paramètres. La version standard d'Outlook Web App est toujours activée.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > L'option d'activation ou de désactivation de la version standard d'Outlook Web App à l'aide de la case à cocher <strong>Client premium</strong> est obsolète et sera supprimée des paramètres. La version standard d'Outlook Web App est toujours activée.
 
 
-6.  
-    
-    Sous l'onglet **Accès au fichier**, utilisez les cases à cocher pour configurer l'accès au fichier et afficher les options offertes aux utilisateurs. L'accès aux fichiers permet aux utilisateurs d'ouvrir ou d'afficher le contenu de fichiers envoyés sous forme de pièces jointes dans un message électronique.
+6.  Sous l'onglet **Accès au fichier**, utilisez les cases à cocher pour configurer l'accès au fichier et afficher les options offertes aux utilisateurs. L'accès aux fichiers permet aux utilisateurs d'ouvrir ou d'afficher le contenu de fichiers envoyés sous forme de pièces jointes dans un message électronique.
     
     L'accès aux fichiers peut être contrôlé en fonction de la connexion de l'utilisateur sur un ordinateur public ou privé. La possibilité offerte aux utilisateurs de sélectionner un accès à un ordinateur privé ou public n’est proposée que si vous utilisez une authentification basée sur des formulaires. Toutes les autres authentifications se font par défaut par l'accès à un ordinateur privé.
     

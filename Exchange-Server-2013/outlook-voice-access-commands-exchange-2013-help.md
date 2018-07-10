@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Outlook Voice Access permet aux utilisateurs à extension messagerie unifiée d'accéder à leur boîte aux lettres à l'aide d'un téléphone analogique, numérique ou mobile. Grâce au système de menus d'Outlook Voice Access, les utilisateurs à extension messagerie unifiée peuvent lire des messages électroniques, écouter des messages vocaux, interagir avec leur calendrier Outlook, accéder à leurs contacts personnels et gérer les options personnelles, par exemple, configurer leur code confidentiel Outlook Voice Access ou enregistrer des messages vocaux. Cette rubrique décrit la liste des commandes Outlook Voice Access et la manière dont les utilisateurs peuvent s'en servir lorsqu'ils accèdent à leur boîte aux lettres en appelant un numéro Outlook Voice Access.
 
@@ -187,18 +187,8 @@ En tant qu’utilisateur Outlook Voice Access, lorsque vous composez un numéro 
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous devez accéder à un message électronique après l'avoir supprimé à l'aide d'Outlook Voice Access, vous pouvez utiliser Outlook Web App ou Outlook pour retirer le message électronique du dossier Éléments supprimés et le replacer dans le dossier approprié. Vous ne pouvez pas utiliser Outlook Voice Access pour accéder au dossier Éléments supprimés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous devez accéder à un message électronique après l'avoir supprimé à l'aide d'Outlook Voice Access, vous pouvez utiliser Outlook Web App ou Outlook pour retirer le message électronique du dossier Éléments supprimés et le replacer dans le dossier approprié. Vous ne pouvez pas utiliser Outlook Voice Access pour accéder au dossier Éléments supprimés.
 
 
 ## Référence des commandes des options du calendrier

@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les utilisateurs peuvent accéder à leurs informations de messagerie électronique, de calendrier, de contacts et de tâches sur des téléphones mobiles, des tablettes et autres appareils portables via Microsoft Exchange ActiveSync. Vous pouvez également l’utiliser pour configurer leur signatures et réponses automatiques. Une grande variété de téléphones et appareils mobiles utilisent Exchange ActiveSync.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Même si nous faisons constamment référence à des appareils accédant à Exchange Server 2013 en tant que téléphones mobiles, il existe de nombreux appareils qui peuvent accéder à Exchange 2013 sans être dotés de la fonctionnalité de téléphone cellulaire. Le terme « téléphone mobile » utilisé dans cette documentation englobe également ces périphériques.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Même si nous faisons constamment référence à des appareils accédant à Exchange Server 2013 en tant que téléphones mobiles, il existe de nombreux appareils qui peuvent accéder à Exchange 2013 sans être dotés de la fonctionnalité de téléphone cellulaire. Le terme « téléphone mobile » utilisé dans cette documentation englobe également ces périphériques.
 
 
 ## Appareils compatibles Exchange ActiveSync
@@ -79,18 +69,8 @@ Les téléphones ayant une version du logiciel Windows comme système d’exploi
 <li><p>Exiger le chiffrement de l’appareil</p></li>
 <li><p>Effacement à distance</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si votre organisation utilise d’autres paramètres de stratégies de boîtes aux lettres des appareils mobiles, vous devez définir la stratégie <strong>Autoriser les périphériques non configurables</strong> à vrai. Ceci peut avoir des incidences sur la sécurité dans votre organisation, en effet d’autres téléphones et appareils mobiles qui ne satisfont pas les exigences de vos paramètres de stratégies d’appareils mobiles seront autorisés à se synchroniser. Pour plus d’informations, consultez la rubrique <a href="mobile-device-mailbox-policies-exchange-2013-help.md">Stratégies de boîte aux lettres d'appareil mobile</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Si votre organisation utilise d’autres paramètres de stratégies de boîtes aux lettres des appareils mobiles, vous devez définir la stratégie <strong>Autoriser les périphériques non configurables</strong> à vrai. Ceci peut avoir des incidences sur la sécurité dans votre organisation, en effet d’autres téléphones et appareils mobiles qui ne satisfont pas les exigences de vos paramètres de stratégies d’appareils mobiles seront autorisés à se synchroniser. Pour plus d’informations, consultez la rubrique <a href="mobile-device-mailbox-policies-exchange-2013-help.md">Stratégies de boîte aux lettres d'appareil mobile</a>.
 
 </td>
 </tr>

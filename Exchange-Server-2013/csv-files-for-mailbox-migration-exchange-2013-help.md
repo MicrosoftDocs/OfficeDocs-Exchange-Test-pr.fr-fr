@@ -13,53 +13,33 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-11-16_
+_**Dernière rubrique modifiée :** 2017-11-16_
 
 Vous pouvez utiliser un fichier CSV pour migrer en bloc un nombre important de boîtes aux lettres d’utilisateurs. Vous pouvez spécifier un fichier CSV lorsque vous utilisez le Centre d’administration Exchange (CAE) ou la cmdlet **New-MigrationBatch** dans l’Environnement de ligne de commande Exchange Management Shell pour créer un lot de migration. L’utilisation d’un fichier CSV pour spécifier plusieurs utilisateurs à migrer dans un lot de migration est prise en charge dans les scénarios de migration suivants :
 
   - **Déplacements à l'intérieur d'organisations Exchange locales**
     
-      - **Déplacement local :** Un déplacement local est l'opération par laquelle vous déplacez des boîtes aux lettres d'une base de données de boîtes aux lettres vers une autre. Un déplacement local se produit au sein d'une forêt unique.
+      - **Déplacement local :**  Un déplacement local est l'opération par laquelle vous déplacez des boîtes aux lettres d'une base de données de boîtes aux lettres vers une autre. Un déplacement local se produit au sein d'une forêt unique.
     
-      - **Déplacement d'entreprise inter-forêts :** Un déplacement d'entreprise inter-forêts consiste à déplacer des boîtes aux lettres vers une autre forêt. Un déplacement inter-forêts peut être entrepris soit à partir de la forêt cible qui est celle vers laquelle vous voulez déplacer les boîtes aux lettres, soit à partir de la forêt source, qui est celle hébergeant actuellement les boîtes aux lettres.
+      - **Déplacement d'entreprise inter-forêts :**  Un déplacement d'entreprise inter-forêts consiste à déplacer des boîtes aux lettres vers une autre forêt. Un déplacement inter-forêts peut être entrepris soit à partir de la forêt cible qui est celle vers laquelle vous voulez déplacer les boîtes aux lettres, soit à partir de la forêt source, qui est celle hébergeant actuellement les boîtes aux lettres.
 
   - **Embarquement et débarquement Exchange Online**
     
-      - **Migration de déplacement à distance par embarquement :** Dans un déploiement Exchange hybride, vous pouvez déplacer des boîtes aux lettres à partir d'une organisation Exchange locale vers Exchange Online. Cette opération est également appelée migration de déplacement à distance par *embarquement* parce qu'elle consiste à embarquer des boîtes aux lettres dans Exchange Online.
+      - **Migration de déplacement à distance par embarquement :**  Dans un déploiement Exchange hybride, vous pouvez déplacer des boîtes aux lettres à partir d'une organisation Exchange locale vers Exchange Online. Cette opération est également appelée migration de déplacement à distance par *embarquement* parce qu'elle consiste à embarquer des boîtes aux lettres dans Exchange Online.
     
-      - **Migration de déplacement à distance par débarquement :** Vous pouvez également opérer une migration de déplacement à distance par *débarquement*, qui consiste à migrer des boîtes aux lettres Exchange Online vers votre organisation Exchange locale.
+      - **Migration de déplacement à distance par débarquement :**  Vous pouvez également opérer une migration de déplacement à distance par *débarquement*, qui consiste à migrer des boîtes aux lettres Exchange Online vers votre organisation Exchange locale.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Les deux migrations de déplacement à distance, par embarquement et par débarquement, sont entreprises à partir de votre organisation Exchange Online.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Les deux migrations de déplacement à distance, par embarquement et par débarquement, sont entreprises à partir de votre organisation Exchange Online.
     
-      - **Migration Exchange intermédiaire :**  Vous pouvez également migrer un sous-ensemble de boîtes aux lettres à partir d'une organisation Exchange locale vers Exchange Online. Il s'agit d'un autre type de migration par embarquement. Une migration Exchange intermédiaire permet de migrer uniquement des boîtes aux lettres Exchange 2003 et Exchange 2007. Une migration intermédiaire ne permet pas de migrer des boîtes aux lettres Exchange 2010 et Exchange 2013. Avant d'exécuter une migration intermédiaire, vous devez utiliser une synchronisation d'annuaires ou une autre méthode pour mettre en service les utilisateurs du courrier électronique au sein de votre organisation Exchange Online.
+      - **Migration Exchange intermédiaire :**   Vous pouvez également migrer un sous-ensemble de boîtes aux lettres à partir d'une organisation Exchange locale vers Exchange Online. Il s'agit d'un autre type de migration par embarquement. Une migration Exchange intermédiaire permet de migrer uniquement des boîtes aux lettres Exchange 2003 et Exchange 2007. Une migration intermédiaire ne permet pas de migrer des boîtes aux lettres Exchange 2010 et Exchange 2013. Avant d'exécuter une migration intermédiaire, vous devez utiliser une synchronisation d'annuaires ou une autre méthode pour mettre en service les utilisateurs du courrier électronique au sein de votre organisation Exchange Online.
     
-      - **Migration IMAP :** Ce type de migration par embarquement migre des données de boîtes aux lettres à partir d'un serveur IMAP (y compris Exchange) vers Exchange Online. Pour une migration IMAP, vous devez mettre en service des boîtes aux lettres dans Exchange Online avant de migrer leurs données.
+      - **Migration IMAP :**  Ce type de migration par embarquement migre des données de boîtes aux lettres à partir d'un serveur IMAP (y compris Exchange) vers Exchange Online. Pour une migration IMAP, vous devez mettre en service des boîtes aux lettres dans Exchange Online avant de migrer leurs données.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une migration Exchange à basculement ne prend pas en charge l'utilisation d'un fichier CSV, car toutes les boîtes aux lettres d'utilisateurs locales sont migrées vers Exchange Online en un seul lot.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Une migration Exchange à basculement ne prend pas en charge l'utilisation d'un fichier CSV, car toutes les boîtes aux lettres d'utilisateurs locales sont migrées vers Exchange Online en un seul lot.
 
 
 ## Attributs pris en charge pour les fichiers CSV en relation avec les déplacements ou migrations en bloc
@@ -68,34 +48,14 @@ La première ligne, ou ligne d'en-tête, d'un fichier CSV utilisé pour migrer d
 
 Les valeurs d’attribut figurant dans le fichier CSV remplacent celles du paramètre correspondant quand ce dernier est utilisé lors de la création d’un lot de migration à l’aide du CAE ou de l’Environnement de ligne de commande Exchange Management Shell. Pour plus d’informations et des exemples, consultez la section Les valeurs d’attribut figurant dans le fichier CSV remplacent celles définies pour le lot de migration.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour créer le fichier CSV, vous pouvez utiliser n'importe quel éditeur de texte, mais l'utilisation d'une application telle que Microsoft Excel facilite l'importation de données, ainsi que la configuration et l'organisation des fichiers CSV. Veillez à enregistrer les fichiers CSV au format .csv ou .txt.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Pour créer le fichier CSV, vous pouvez utiliser n'importe quel éditeur de texte, mais l'utilisation d'une application telle que Microsoft Excel facilite l'importation de données, ainsi que la configuration et l'organisation des fichiers CSV. Veillez à enregistrer les fichiers CSV au format .csv ou .txt.
 
 
 Les sections suivantes décrivent les attributs pris en charge dans la ligne d'en-tête d'un fichier CSV pour chaque type de migration. Chaque section contient un tableau indiquant les attributs pris en charge, leur caractère obligatoire, un exemple de valeur à utiliser pour chacun d'eux, et une description.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans les sections suivantes, <em>environnement source</em> désigne l'emplacement actuel d'une boîte aux lettres d'utilisateur ou d'une base de données. <em>Environnement cible</em> désigne l'emplacement vers lequel la boîte aux lettres sera migrée ou la base de données vers laquelle elle sera déplacée.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans les sections suivantes, <em>environnement source</em> désigne l'emplacement actuel d'une boîte aux lettres d'utilisateur ou d'une base de données. <em>Environnement cible</em> désigne l'emplacement vers lequel la boîte aux lettres sera migrée ou la base de données vers laquelle elle sera déplacée.
 
 
 ## Déplacements locaux
@@ -136,18 +96,8 @@ Le tableau suivant décrit les attributs pris en charge dans un fichier CSV pour
 <td><p>Facultatif</p></td>
 <td><p>Nom de base de données</p></td>
 <td><p>Spécifie la base de données de boîtes aux lettres qui est déplacée vers l’archive boîte aux lettres (si elle existe). Vous pouvez spécifier une autre base de données dans les différentes lignes du fichier CSV, ce qui vous permet de déplacer des boîtes aux lettres d’archive dans le même lot de migration de bases de données différentes.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous ne spécifiez pas la base de données d’archive, la boîte aux lettres d’archive est déplacé vers la même base que la boîte aux lettres principale.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous ne spécifiez pas la base de données d’archive, la boîte aux lettres d’archive est déplacé vers la même base que la boîte aux lettres principale.
 
 </td>
 </tr>
@@ -156,18 +106,8 @@ Le tableau suivant décrit les attributs pris en charge dans un fichier CSV pour
 <td><p>Facultatif</p></td>
 <td><p><code>Unlimited</code> ou un entier positif d'une valeur comprise entre <code>0</code> (par défaut) et <code>2147483647</code></p></td>
 <td><p>Spécifie le nombre d’éléments erronés à ignorer si le service de migration rencontre un élément endommagé dans la boîte aux lettres. Si vous incluez cet attribut dans le fichier CSV, il remplacera la valeur par défaut ou une valeur spécifiée par vous si vous incluez le paramètre <em>BadItemLimit</em> lors de la création du lot de migration à l’aide du CAE ou de l’Environnement de ligne de commande Exchange Management Shell.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous vous recommandons d'utiliser la valeur par défaut (0) et d'augmenter le nombre limite d'éléments erronés uniquement pour un utilisateur particulier en cas d'échec du déplacement ou de la migration de ce dernier.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Nous vous recommandons d'utiliser la valeur par défaut (0) et d'augmenter le nombre limite d'éléments erronés uniquement pour un utilisateur particulier en cas d'échec du déplacement ou de la migration de ce dernier.
 
 <p></p></td>
 </tr>
@@ -220,18 +160,8 @@ Le tableau suivant décrit les attributs pris en charge dans un fichier CSV pour
 <td><p>Facultatif</p></td>
 <td><p><code>Unlimited</code> ou un entier positif d'une valeur comprise entre <code>0</code> (par défaut) et <code>2147483647</code></p></td>
 <td><p>Spécifie le nombre d’éléments erronés à ignorer si le service de migration rencontre un élément endommagé dans la boîte aux lettres. Si vous incluez cet attribut dans le fichier CSV, il remplacera la valeur par défaut ou la valeur spécifiée par vous si vous incluez le paramètre <em>BadItemLimit</em> lors de la création du lot de migration à l’aide du CAE ou de l’Environnement de ligne de commande Exchange Management Shell.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous vous recommandons d'utiliser la valeur par défaut (0) et d'augmenter le nombre limite d'éléments erronés uniquement pour un utilisateur particulier en cas d'échec du déplacement ou de la migration de ce dernier.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Nous vous recommandons d'utiliser la valeur par défaut (0) et d'augmenter le nombre limite d'éléments erronés uniquement pour un utilisateur particulier en cas d'échec du déplacement ou de la migration de ce dernier.
 
 </td>
 </tr>
@@ -310,18 +240,8 @@ Le tableau suivant décrit les attributs pris en charge dans un fichier CSV pour
 <td><p>Facultatif</p></td>
 <td><p><code>Unlimited</code> ou un entier positif d'une valeur comprise entre <code>0</code> (par défaut) et <code>2147483647</code></p></td>
 <td><p>Spécifie le nombre d’éléments erronés à ignorer si le service de migration rencontre un élément endommagé dans la boîte aux lettres. Si vous incluez cet attribut dans le fichier CSV, il remplacera la valeur par défaut ou la valeur spécifiée par vous si vous incluez le paramètre <em>BadItemLimit</em> lors de la création du lot de migration à l’aide du CAE ou de l’Environnement de ligne de commande Exchange Management Shell.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous vous recommandons d'utiliser la valeur par défaut (0) et d'augmenter le nombre limite d'éléments erronés uniquement pour un utilisateur particulier en cas d'échec du déplacement ou de la migration de ce dernier.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Nous vous recommandons d'utiliser la valeur par défaut (0) et d'augmenter le nombre limite d'éléments erronés uniquement pour un utilisateur particulier en cas d'échec du déplacement ou de la migration de ce dernier.
 
 </td>
 </tr>
@@ -388,18 +308,8 @@ Le tableau suivant décrit les attributs pris en charge dans un fichier CSV pour
 <td><p>Facultatif</p></td>
 <td><p><code>True</code> ou <code>False</code></p></td>
 <td><p>Spécifie si les utilisateurs doivent modifier le mot de passe la première fois qu'ils se connectent à leur boîte aux lettres Exchange Online.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous avez implémenté une solution d'authentification unique en déployant Active Directory Federation Services 2.0 (AD FS 2.0) dans votre organisation locale, vous devez utiliser la valeur <code>False</code> pour cet attribut.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous avez implémenté une solution d'authentification unique en déployant Active Directory Federation Services 2.0 (AD FS 2.0) dans votre organisation locale, vous devez utiliser la valeur <code>False</code> pour cet attribut.
 
 </td>
 </tr>
@@ -464,18 +374,8 @@ Par exemple, nous allons dire que vous créez un lot dans la Environnement de li
 
     New-MigrationBatch -Name CrossForestBatch1 -SourceEndpoint ForestEndpoint1 -TargetDeliveryDomain forest2.contoso.com -TargetDatabases @(EXCH-MBX-02,EXCH-MBX-03) -TargetArchiveDatabases @(EXCH-MBX-A02,EXCH-MBX-A03) -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\CrossForestBatch1.csv")) -AutoStart
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Étant donné que la valeur par défaut est déplacer primaire et d’archiver des boîtes aux lettres, vous n’êtes pas obligé de spécifier explicitement dans la commande Environnement de ligne de commande Exchange Management Shell.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Étant donné que la valeur par défaut est déplacer primaire et d’archiver des boîtes aux lettres, vous n’êtes pas obligé de spécifier explicitement dans la commande Environnement de ligne de commande Exchange Management Shell.
 
 
 Une portion du fichier CrossForestBatch1.csv pour ce lot de migration ressemble à ceci :

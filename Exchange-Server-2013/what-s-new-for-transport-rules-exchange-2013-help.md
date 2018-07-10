@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-10-03_
+_**Dernière rubrique modifiée :** 2014-10-03_
 
 Dans Microsoft Exchange Server 2013, plusieurs améliorations ont été apportées aux règles de transport. Cette rubrique décrit brièvement quelques-unes des principales modifications et améliorations apportées. Pour plus d’informations sur les règles de transport, consultez la rubrique [Règles de transport ou de flux de messagerie](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
 
@@ -35,40 +35,29 @@ Pour obtenir des informations détaillées sur l’utilisation de ces nouveaux p
 
 ## Nouveaux prédicats
 
-  -  
-    **AttachmentExtensionMatchesWords**   Utilisé pour détecter les messages contenant des pièces jointes avec des extensions spécifiques.
+  -  **AttachmentExtensionMatchesWords**   Utilisé pour détecter les messages contenant des pièces jointes avec des extensions spécifiques.
 
-  -  
-    **AttachmentHasExecutableContent**   Utilisé pour détecter les messages contenant des pièces jointes dont le contenu est exécutable.
+  -  **AttachmentHasExecutableContent**   Utilisé pour détecter les messages contenant des pièces jointes dont le contenu est exécutable.
 
-  -  
-    **HasSenderOverride** Utilisé pour détecter les messages dont l’expéditeur a choisi d’ignorer une restriction de stratégie DLP.
+  -  **HasSenderOverride** Utilisé pour détecter les messages dont l’expéditeur a choisi d’ignorer une restriction de stratégie DLP.
 
-  -  
-    **MessageContainsDataClassifications**   Utilisé pour détecter des informations sensibles dans le corps du message et les pièces jointes. Pour obtenir la liste complète des classifications de données disponibles, consultez la rubrique [Éléments recherchés par les types d’informations sensibles dans Exchange](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md).
+  -  **MessageContainsDataClassifications**   Utilisé pour détecter des informations sensibles dans le corps du message et les pièces jointes. Pour obtenir la liste complète des classifications de données disponibles, consultez la rubrique [Éléments recherchés par les types d’informations sensibles dans Exchange](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md).
 
-  -  
-    **MessageSizeOver**   Utilisé pour détecter des messages dont la taille globale est supérieure ou égale à la limite spécifiée.
+  -  **MessageSizeOver**   Utilisé pour détecter des messages dont la taille globale est supérieure ou égale à la limite spécifiée.
 
-  -  
-    **SenderIPRanges**   Utilisé pour détecter les messages envoyés à partir d’un ensemble spécifique de plages d’adresses IP.
+  -  **SenderIPRanges**   Utilisé pour détecter les messages envoyés à partir d’un ensemble spécifique de plages d’adresses IP.
 
 ## Nouvelles actions
 
-  -  
-    **GenerateIncidentReport**   Génère un rapport de compte rendu d’incident qui est envoyé à l’adresse SMTP spécifiée. Cette action utilise également un paramètre appelé *IncidentReportOriginalMail* qui accepte l’une des deux valeurs suivantes : IncludeOriginalMail ou DoNotIncludeOriginalMail.
+  -  **GenerateIncidentReport**   Génère un rapport de compte rendu d’incident qui est envoyé à l’adresse SMTP spécifiée. Cette action utilise également un paramètre appelé *IncidentReportOriginalMail* qui accepte l’une des deux valeurs suivantes : IncludeOriginalMail ou DoNotIncludeOriginalMail.
 
-  -  
-    **NotifySender**   Indique comment est notifié l’expéditeur d’un message qui ne respecte pas une stratégie DLP. Vous pouvez choisir d’informer l’expéditeur et d’acheminer le message normalement ou de rejeter le message et d’en notifier l’expéditeur.
+  -  **NotifySender**   Indique comment est notifié l’expéditeur d’un message qui ne respecte pas une stratégie DLP. Vous pouvez choisir d’informer l’expéditeur et d’acheminer le message normalement ou de rejeter le message et d’en notifier l’expéditeur.
 
-  -  
-    **StopRuleProcessing**   Interrompt le traitement de toutes les règles suivantes sur le message.
+  -  **StopRuleProcessing**   Interrompt le traitement de toutes les règles suivantes sur le message.
 
-  -  
-    **ReportSeverityLevel**   Définit le niveau de gravité spécifié dans le rapport de compte rendu d’incident. L’action peut avoir les valeurs suivantes : Informatif, Faible, Moyen, Élevé et Désactivé.
+  -  **ReportSeverityLevel**   Définit le niveau de gravité spécifié dans le rapport de compte rendu d’incident. L’action peut avoir les valeurs suivantes : Informatif, Faible, Moyen, Élevé et Désactivé.
 
-  -  
-    **RouteMessageOutboundRequireTLS**   Requiert un chiffrement TLS (Transport Layer Security) lorsque ce message est acheminé à l’extérieur de votre organisation. Si le chiffrement TLS n’est pas pris en charge, le message est rejeté et n’est pas remis.
+  -  **RouteMessageOutboundRequireTLS**   Requiert un chiffrement TLS (Transport Layer Security) lorsque ce message est acheminé à l’extérieur de votre organisation. Si le chiffrement TLS n’est pas pris en charge, le message est rejeté et n’est pas remis.
 
 ## Autres modifications apportées aux règles de transport
 

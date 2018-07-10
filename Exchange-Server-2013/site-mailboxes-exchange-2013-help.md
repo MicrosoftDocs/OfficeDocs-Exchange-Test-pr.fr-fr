@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les courriers électroniques et les documents sont généralement conservés dans deux référentiels de données uniques et indépendants. La plupart des organisations collaborent à l'aide des deux moyens. Le problème vient du fait que la messagerie électronique et les documents sont consultés à l'aide de clients différents. Il en résulte généralement une perte de productivité de la part des utilisateurs et une expérience utilisateur dégradée.
 
@@ -87,7 +87,7 @@ Fonctionnement des boîtes aux lettres de site
 
 Le cycle de vie d'une boîte aux lettres de site est géré via un site SharePoint. C'est par le biais du site SharePoint que vous effectuez toutes les tâches de boîte aux lettres de site, telles que la création et la suppression de boîtes aux lettres de site. De plus, vous pouvez créer une stratégie de cycle de vie SharePoint pour gérer le cycle de vie d'une boîte aux lettres de site. Par exemple, vous pouvez créer une stratégie de cycle de vie dans SharePoint qui ferme automatiquement toutes les boîtes aux lettres de site après six mois. Si l'utilisateur souhaite encore utiliser la boîte aux lettres de site, il peut la réactiver dans SharePoint. Nous vous recommandons d'utiliser l'application Cycle de vie située dans la batterie. La suppression manuelle de boîtes aux lettres de site actives d'Exchange se traduit par des boîtes aux lettres de site orphelines. .
 
-Quand l'application Cycle de vie dans SharePoint ferme une boîte aux lettres de site, celle-ci est conservée pendant la période indiquée dans la stratégie du cycle de vie dans l'état Fermé. La boîte aux lettres peut ensuite être réactivée par un utilisateur final ou par un administrateur à partir de SharePoint. Après la période de rétention, la boîte aux lettres de site Exchange qui est hébergée dans la base de données de boîtes aux lettres aura son nom précédé par **MDEL:** pour indiquer qu'elle a été marquée pour suppression. Vous devrez supprimer manuellement ces boîtes aux lettres de site de la base de données de boîtes aux lettres afin de libérer de l'espace de stockage ainsi que l'alias. Si la stratégie de cycle de vie de SharePoint n’est pas activée, vous perdrez la possibilité de déterminer quelles boîtes aux lettres du site sont marquées pour la suppression. Tant qu'un administrateur n'a pas supprimé la boîte aux lettres de site, son contenu est toujours récupérable.
+Quand l'application Cycle de vie dans SharePoint ferme une boîte aux lettres de site, celle-ci est conservée pendant la période indiquée dans la stratégie du cycle de vie dans l'état Fermé. La boîte aux lettres peut ensuite être réactivée par un utilisateur final ou par un administrateur à partir de SharePoint. Après la période de rétention, la boîte aux lettres de site Exchange qui est hébergée dans la base de données de boîtes aux lettres aura son nom précédé par **MDEL:**  pour indiquer qu'elle a été marquée pour suppression. Vous devrez supprimer manuellement ces boîtes aux lettres de site de la base de données de boîtes aux lettres afin de libérer de l'espace de stockage ainsi que l'alias. Si la stratégie de cycle de vie de SharePoint n’est pas activée, vous perdrez la possibilité de déterminer quelles boîtes aux lettres du site sont marquées pour la suppression. Tant qu'un administrateur n'a pas supprimé la boîte aux lettres de site, son contenu est toujours récupérable.
 
 Vous pouvez utiliser la commande suivante pour rechercher et supprimer des boîtes aux lettres de site qui ont été marquées pour suppression.
 
@@ -99,18 +99,8 @@ Les boîtes aux lettres de site ne prennent pas en charge la rétention au nivea
 
 À l'aide de la console eDiscovery (découverte électronique) dans SharePoint, les boîtes aux lettres de site peuvent être incluses dans l'étendue de la découverte électronique locale pour que vous puissiez faire des recherches par mots clés dans les boîtes aux lettres d'utilisateur ou de site. En outre, vous pouvez placer une boîte aux lettres de site en suspens pour raisons juridiques. Pour plus d'informations, consultez la rubrique [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour placer une boîte aux lettres de site en conservation légale dans Office 365, elle doit disposer d’une licence Exchange Online (Plan 2). Si une boîte aux lettres de site dispose d’une licence Exchange Online (Plan 1), vous devez lui attribuer une licence Archivage Exchange Online distincte pour la placer en conservation légale.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour placer une boîte aux lettres de site en conservation légale dans Office 365, elle doit disposer d’une licence Exchange Online (Plan 2). Si une boîte aux lettres de site dispose d’une licence Exchange Online (Plan 1), vous devez lui attribuer une licence Archivage Exchange Online distincte pour la placer en conservation légale.
 
 
 Fonctionnement des boîtes aux lettres de site

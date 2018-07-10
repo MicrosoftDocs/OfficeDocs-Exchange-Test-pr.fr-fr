@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les autorisations nécessaires pour effectuer les tâches de configuration de plusieurs composants Microsoft Exchange Server 2013 dépendent de la procédure réalisée ou de la cmdlet que vous souhaitez exécuter. Reportez-vous à chacune des sections de cette rubrique pour obtenir plus d’informations sur leurs fonctions respectives.
 
@@ -27,34 +27,14 @@ Pour trouver les autorisations dont vous avez besoin pour effectuer la procédur
 
 3.  Maintenant, exécutez la cmdlet **Get-ManagementRoleAssignment** pour vérifier si les groupes de rôles ou les rôles de gestion qui vous ont été attribués vous permettent de bénéficier des autorisations nécessaires pour gérer la fonctionnalité.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le rôle de gestion de rôle doit vous être attribué pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>. Si vous ne bénéficiez pas des autorisations pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>, demandez à votre administrateur Exchange de récupérer les groupes de rôles ou les rôles de gestion qui vous sont attribués.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le rôle de gestion de rôle doit vous être attribué pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>. Si vous ne bénéficiez pas des autorisations pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>, demandez à votre administrateur Exchange de récupérer les groupes de rôles ou les rôles de gestion qui vous sont attribués.
 
 
 Si vous souhaitez déléguer la possibilité de gérer une fonctionnalité à un autre utilisateur, voir [Déléguer les attributions de rôles](delegate-role-assignments-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Certaines fonctionnalités nécessitent peut-être des autorisations de type administrateur local sur le serveur que vous souhaitez gérer. Pour gérer ces fonctionnalités, vous devez être membre d’un groupe Administrateurs local sur ce serveur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Certaines fonctionnalités nécessitent peut-être des autorisations de type administrateur local sur le serveur que vous souhaitez gérer. Pour gérer ces fonctionnalités, vous devez être membre d’un groupe Administrateurs local sur ce serveur.
 
 
 ## Autorisations d’infrastructure d’Exchange
@@ -119,18 +99,8 @@ Les utilisateurs auxquels est affecté le groupe de rôles de gestion de l’org
 <td><p>Affichage seul du journal d’audit de l’administrateur</p></td>
 <td><p><a href="organization-management-exchange-2013-help.md">Gestion de l’organisation</a></p>
 <p><a href="records-management-exchange-2013-help.md">Gestion des enregistrements</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez également attribuer manuellement le rôle de gestion Journaux d’audit en affichage seul à un groupe de rôles de gestion. Pour plus d’informations, voir <a href="view-only-audit-logs-role-exchange-2013-help.md">Rôle Journaux d’audit en affichage seul</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez également attribuer manuellement le rôle de gestion Journaux d’audit en affichage seul à un groupe de rôles de gestion. Pour plus d’informations, voir <a href="view-only-audit-logs-role-exchange-2013-help.md">Rôle Journaux d’audit en affichage seul</a>.
 
 </td>
 </tr>

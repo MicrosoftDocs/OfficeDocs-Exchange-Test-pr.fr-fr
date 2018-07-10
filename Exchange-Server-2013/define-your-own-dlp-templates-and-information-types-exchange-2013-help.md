@@ -13,41 +13,21 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-14_
+_**Dernière rubrique modifiée :** 2015-01-14_
 
 Vous pouvez construire des modèles de stratégie de protection contre la perte de données (DLP) sous forme de fichiers XML indépendants de Microsoft Exchange Server 2013 et les importer ensuite au moyen du Centre d'administration Exchange (CAE) ou de l'environnement de ligne de commande Exchange Management Shell. Cette rubrique décrit la procédure et les détails de la création et de l'adaptation des fichiers XML DLP pour les utiliser dans une solution DLP. Il n'est pas indispensable de développer vos propres fichiers XML DLP, car le Centre d'administration Exchange (CAE) offre un moyen d'être rapidement opérationnel avec les modèles de stratégie DLP et les règles de transport existants pour analyser des messages.
 
 Souhaitez-vous rechercher les tâches de gestion liées aux stratégies de DLP ? Consultez la rubrique [Procédures relatives à la protection contre la perte de données (DLP)](dlp-procedures-exchange-2013-help.md) (Exchange Server 2013) ou [Procédures relatives à la protection contre la perte de données (DLP)](https://technet.microsoft.com/fr-fr/library/jj938003\(v=exchg.150\)) (Exchange Online).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2013 : la protection contre la perte de données est une fonctionnalité étendue qui nécessite une licence d’accès client (CAL) Exchange Enterprise. Pour plus d’informations sur les licences d’accès client et les licences par serveur, consultez la rubrique <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Licences Exchange Server</a>.<br />
-Exchange Online : la protection contre la perte de données est une fonctionnalité étendue qui nécessite une licence Exchange Online Plan 2. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Licences Exchange Online</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Exchange 2013 : la protection contre la perte de données est une fonctionnalité étendue qui nécessite une licence d’accès client (CAL) Exchange Enterprise. Pour plus d’informations sur les licences d’accès client et les licences par serveur, consultez la rubrique <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Licences Exchange Server</a>.
+> Exchange Online : la protection contre la perte de données est une fonctionnalité étendue qui nécessite une licence Exchange Online Plan 2. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Licences Exchange Online</a>.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il sort du cadre de cette documentation de recommander un modèle d'entreprise ou des informations sur les consignes de conditionnement des fichiers ou de déploiement pour les règles sur les informations sensibles, ou d'exposer comment ces règles doivent être réparties. De plus, cette documentation n'expose pas les mécanismes de protection (par exemple, le chiffrement) pour les règles développées personnalisées ; elle n'expose pas non plus comment ces mécanismes sont utilisés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il sort du cadre de cette documentation de recommander un modèle d'entreprise ou des informations sur les consignes de conditionnement des fichiers ou de déploiement pour les règles sur les informations sensibles, ou d'exposer comment ces règles doivent être réparties. De plus, cette documentation n'expose pas les mécanismes de protection (par exemple, le chiffrement) pour les règles développées personnalisées ; elle n'expose pas non plus comment ces mécanismes sont utilisés.
 
 
 ## Étendre les types d'informations pour répondre à vos besoins

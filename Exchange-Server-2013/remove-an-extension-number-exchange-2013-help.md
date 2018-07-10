@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-07-21_
+_**Dernière rubrique modifiée :** 2016-07-21_
 
 Lorsque vous activez un utilisateur pour la messagerie unifiée et l’associez à un plan de numérotation de postes téléphoniques, une adresse proxy EUM contenant le numéro de poste de l’utilisateur est créée pour ce dernier. Vous devez définir au moins un numéro de poste pour la messagerie unifiée à utiliser afin que la messagerie vocale puisse être transférée vers la boîte aux lettres de l’utilisateur. Le numéro de poste est également utilisé lorsque l’utilisateur appelle un numéro Outlook Voice Access.
 
@@ -45,18 +45,8 @@ Pour les autres tâches de gestion relatives aux utilisateurs qui sont activées
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -87,18 +77,8 @@ Pour les autres tâches de gestion relatives aux utilisateurs qui sont activées
 
 Cet exemple supprime le numéro de poste 12345 de la boîte aux lettres de Jean-Charles Colon, un utilisateur à messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avant de supprimer un numéro de poste à l’aide de l’environnement de ligne de commande Exchange Management Shell, vous devez déterminer la position de l’adresse proxy de messagerie unifiée Exchange que vous souhaitez modifier. Pour déterminer la position, utilisez la commande <strong>$mbx.EmailAddresses</strong>. La première adresse proxy de messagerie unifiée Exchange de la liste doit être 0.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Avant de supprimer un numéro de poste à l’aide de l’environnement de ligne de commande Exchange Management Shell, vous devez déterminer la position de l’adresse proxy de messagerie unifiée Exchange que vous souhaitez modifier. Pour déterminer la position, utilisez la commande <strong>$mbx.EmailAddresses</strong>. La première adresse proxy de messagerie unifiée Exchange de la liste doit être 0.
 
 
     $mbx = Get-Mailbox tony.smith

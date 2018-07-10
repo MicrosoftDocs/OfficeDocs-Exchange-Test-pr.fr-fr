@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-07-22_
+_**Dernière rubrique modifiée :** 2016-07-22_
 
 Cette rubrique décrit les effets des antivirus au niveau fichier sur les ordinateurs qui exécutent Microsoft Exchange Server 2013. Les recommandations présentées dans cette rubrique permettent d’améliorer la sécurité et l’intégrité de votre organisation Exchange.
 

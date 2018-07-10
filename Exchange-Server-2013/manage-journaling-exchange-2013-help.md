@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 La journalisation peut aider votre organisation à répondre aux exigences réglementaires, légales et de conformité organisationnelle en enregistrant les communications électroniques échangées. Cette rubrique explique comment effectuer des tâches de base liées à la gestion de la journalisation dans Exchange 2013 et Exchange Online.
 
@@ -43,34 +43,14 @@ Activation ou désactivation de la journalisation des bases de données par boî
 
   - Une boîte aux lettres de journalisation a été créée, ou une boîte aux lettres existante peut être utilisée comme boîte aux lettres de journalisation. Vous ne pouvez pas désigner une boîte aux lettres Exchange Online comme boîte aux lettres de journalisation. Vous pouvez fournir des états du journal à un système d’archivage local ou à un service d’archivage tiers. Si vous exécutez un déploiement hybride avec vos boîtes aux lettres partagées entre les serveurs locaux et Exchange Online, vous pouvez désigner une boîte aux lettres locale comme boîte aux lettres de journalisation de vos boîtes aux lettres Exchange Online et locales.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous avez configuré une règle de journalisation dans Exchange Online pour envoyer les états de journal à une boîte aux lettres de journalisation qui n’existe pas ou qui constitue une destination non valide, l’état de journal reste dans la file d’attente de transport sur les serveurs du centre de données Microsoft. Si cela se produit, le personnel du centre de données Microsoft tentera de contacter votre organisation et vous demandera de résoudre le problème afin que les états de journal puissent être remis à une boîte aux lettres de journalisation. Si vous n’avez pas résolu le problème deux jours après avoir été contacté, Microsoft désactivera la règle de journalisation problématique.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous avez configuré une règle de journalisation dans Exchange Online pour envoyer les états de journal à une boîte aux lettres de journalisation qui n’existe pas ou qui constitue une destination non valide, l’état de journal reste dans la file d’attente de transport sur les serveurs du centre de données Microsoft. Si cela se produit, le personnel du centre de données Microsoft tentera de contacter votre organisation et vous demandera de résoudre le problème afin que les états de journal puissent être remis à une boîte aux lettres de journalisation. Si vous n’avez pas résolu le problème deux jours après avoir été contacté, Microsoft désactivera la règle de journalisation problématique.
 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>. Si vous rencontrez des problèmes avec la boîte aux lettres <strong>JournalingReportDNRTo</strong>, consultez <a href="https://go.microsoft.com/fwlink/p/?linkid=331674">Règles de transport et de boîtes aux lettres dans Exchange Online ne fonctionnent pas comme prévu</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>. Si vous rencontrez des problèmes avec la boîte aux lettres <strong>JournalingReportDNRTo</strong>, consultez <a href="https://go.microsoft.com/fwlink/p/?linkid=331674">Règles de transport et de boîtes aux lettres dans Exchange Online ne fonctionnent pas comme prévu</a>.
 
 
 ## Créer une règle de journal
@@ -87,18 +67,8 @@ Activation ou désactivation de la journalisation des bases de données par boî
     
       - **Envoyer des états de journal à**   Saisissez l’adresse de la boîte aux lettres de journalisation qui recevra tous les états de journal.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Vous pouvez également taper le nom d’affichage ou l’alias d’un utilisateur de messagerie ou d’un contact de messagerie comme boîte aux lettres de journalisation. Dans ce cas, les états de journal sont envoyés à l’adresse e-mail externe de l’utilisateur de messagerie ou du contact de messagerie. Mais comme expliqué précédemment, l’adresse e-mail externe d’un utilisateur de messagerie ou d’un contact de messagerie ne peut pas être l’adresse d’une boîte aux lettres Exchange Online.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Vous pouvez également taper le nom d’affichage ou l’alias d’un utilisateur de messagerie ou d’un contact de messagerie comme boîte aux lettres de journalisation. Dans ce cas, les états de journal sont envoyés à l’adresse e-mail externe de l’utilisateur de messagerie ou du contact de messagerie. Mais comme expliqué précédemment, l’adresse e-mail externe d’un utilisateur de messagerie ou d’un contact de messagerie ne peut pas être l’adresse d’une boîte aux lettres Exchange Online.
 
 
 3.  Cliquez sur **Enregistrer** pour créer la règle de journal.
@@ -169,18 +139,8 @@ Revenir au début
 
 ## Activation ou désactivation d’une règle de journal
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous désactivez une règle de journal, l’agent de journalisation s’arrêtera de journaliser les messages visés par cette règle. Si une règle de journal est désactivée, tous les messages qui auraient été normalement journalisés par la règle ne sont pas journalisés. Assurez-vous que vous ne compromettez pas les exigences réglementaires ou de conformité de votre organisation en désactivant une règle de journalisation.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous désactivez une règle de journal, l’agent de journalisation s’arrêtera de journaliser les messages visés par cette règle. Si une règle de journal est désactivée, tous les messages qui auraient été normalement journalisés par la règle ne sont pas journalisés. Assurez-vous que vous ne compromettez pas les exigences réglementaires ou de conformité de votre organisation en désactivant une règle de journalisation.
 
 
 ## Utilisation du Centre d’administration Exchange pour activer ou désactiver une règle de journal
@@ -239,18 +199,8 @@ Revenir au début
 
 ## Activation ou désactivation de la journalisation des bases de données par boîte aux lettres
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La désactivation de la journalisation des messages sur une base de données de boîtes aux lettres peut compromettre la conformité de votre organisation avec toutes les stratégies de rétention de messagerie applicables. Lorsque vous désactivez la journalisation des messages sur une base de données de boîtes aux lettres, les confirmations de journal ne sont plus envoyées pour les messages échangés avec les boîtes aux lettres sur cette base de données de boîtes aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> La désactivation de la journalisation des messages sur une base de données de boîtes aux lettres peut compromettre la conformité de votre organisation avec toutes les stratégies de rétention de messagerie applicables. Lorsque vous désactivez la journalisation des messages sur une base de données de boîtes aux lettres, les confirmations de journal ne sont plus envoyées pour les messages échangés avec les boîtes aux lettres sur cette base de données de boîtes aux lettres.
 
 
 ## Utilisation du Centre d’administration Exchange pour activer ou désactiver la journalisation des bases de données par boîte aux lettres

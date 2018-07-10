@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-06-18_
+_**Dernière rubrique modifiée :** 2014-06-18_
 
 Vous pouvez utiliser la Sauvegarde Windows Server pour sauvegarder et restaurer des bases de données Exchange. Exchange inclut un plug-in pour la Sauvegarde Windows Server vous permettant d’effectuer des sauvegardes basées sur le service VSS (Volume Shadow Copy Service) des données Exchange. Pour plus d’informations, consultez la rubrique [Utilisation de la Sauvegarde Windows Server pour sauvegarder et restaurer des données Exchange](using-windows-server-backup-to-back-up-and-restore-exchange-data-exchange-2013-help.md).
 
@@ -29,18 +29,8 @@ Vous pouvez utiliser la Sauvegarde Windows Server pour sauvegarder et restaurer 
 
   - Lorsque vous restaurez une base de données vers son emplacement d’origine, cette base peut rester dans un état « Arrêt incorrect » et être montée par le système. Lors de la restauration vers un autre emplacement (par exemple, lors de la préparation pour utiliser une base de données de récupération), la base de données doit être mise manuellement dans un état d’arrêt correct à l’aide des utilitaires de base de données de serveur Exchange (Eseutil.exe).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Utiliser la Sauvegarde de Windows Server pour restaurer une sauvegarde d’Exchange
@@ -61,18 +51,8 @@ Vous pouvez utiliser la Sauvegarde Windows Server pour sauvegarder et restaurer 
 
 6.  Dans la page **Sélectionnez le type de récupération**, sélectionnez **Applications**, puis cliquez sur **Suivant**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si l’option <strong>Applications</strong> ne peut pas être sélectionnée, cela indique que la sauvegarde sélectionnée pour la restauration était une sauvegarde au niveau du dossier, et non une sauvegarde au niveau du volume. Vous devez effectuer des sauvegardes au niveau du volume lors de la sauvegarde des données Exchange avec la Sauvegarde Windows Server.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si l’option <strong>Applications</strong> ne peut pas être sélectionnée, cela indique que la sauvegarde sélectionnée pour la restauration était une sauvegarde au niveau du dossier, et non une sauvegarde au niveau du volume. Vous devez effectuer des sauvegardes au niveau du volume lors de la sauvegarde des données Exchange avec la Sauvegarde Windows Server.
 
 
 7.  Dans la page **Sélectionnez une application**, vérifiez qu’Exchange est sélectionné dans le champ **Applications**. Cliquez sur **Afficher les détails** pour afficher les composants d’application des sauvegardes. Si la sauvegarde en cours de récupération est la plus récente, la case à cocher **Ne pas exécuter une récupération de type restauration par progression des bases de données d’application** sera affichée. Activez cette case si vous voulez empêcher la Sauvegarde Windows Server d’effectuer une implémentation de la restauration en validant tous les journaux de transaction non validés. Cliquez sur **Suivant**.

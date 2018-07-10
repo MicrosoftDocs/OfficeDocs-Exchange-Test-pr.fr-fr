@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 MicrosoftExchange Server 2013 inclut de nombreuses fonctionnalités qui s’intègrent avec Microsoft SharePoint 2013 et Microsoft Lync 2013. Ensemble, ces produits offrent une palette de fonctionnalités qui rendent possibles certains scénarios, tels que la découverte électronique d’entreprise et la collaboration à l’aide des boîtes aux lettres de site.
 
@@ -114,18 +114,8 @@ Dans un déploiement sur site, Exchange 2013, SharePoint 2013 et Lync Server 2
 
 Le programme d’installation d’Exchange 2013 crée un certificat auto-signé nommé Certificat d’authentification serveur Microsoft Exchange (Microsoft Exchange Server Auth Certificate). Ce certificat est répliqué sur tous les serveurs frontaux dans l’organisation Exchange 2013. L’empreinte du certificat est spécifiée dans la configuration d’autorisation d’Exchange 2013, avec son nom de service, un GUID réservé qui représente Exchange 2013 local. Exchange utilise la configuration d’autorisation pour publier son document de métadonnées d’authentification.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le certificat d’authentification serveur par défaut créé par Exchange 2013 est valable cinq ans. Vous devez vérifier que la configuration d’autorisation inclut un certificat actuel.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le certificat d’authentification serveur par défaut créé par Exchange 2013 est valable cinq ans. Vous devez vérifier que la configuration d’autorisation inclut un certificat actuel.
 
 
 Lorsque Exchange 2013 reçoit une demande d’accès provenant d’une application partenaire via les services Web d’Exchange, il analyse l’en-tête `www-authenticate` de la demande https, qui contient le jeton d’accès signé par le serveur appelant utilisant sa clé privée. Le module d’authentification utilise la configuration de l’application partenaire pour valider le jeton d’accès. Il donne ensuite accès aux ressources en se basant sur les autorisations RBAC accordées à l’application. Si le jeton d’accès est émis au nom d’un utilisateur, les autorisations RBAC qui lui sont accordées sont vérifiées. Par exemple, si un utilisateur effectue une recherche eDiscovery via le Centre eDiscovery de SharePoint 2013, Exchange vérifie s’il appartient au groupe de rôles de gestion de la découverte ou si le rôle de recherche de boîte aux lettres lui est attribué et si les boîtes aux lettres faisant l’objet de la recherche se trouvent dans l’étendue de l’attribution de rôles RBAC. Pour plus d’informations, consultez la rubrique [Autorisations](permissions-exchange-2013-help.md).

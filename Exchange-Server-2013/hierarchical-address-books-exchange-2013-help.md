@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-03-26_
+_**Dernière rubrique modifiée :** 2014-03-26_
 
 Le carnet d’adresses hiérarchique permet aux utilisateurs de rechercher des destinataires dans leur carnet d’adresses à l’aide d’une hiérarchie d’organisation. Normalement, les utilisateurs sont limités à la LAG par défaut et à ses propriétés de destinataire, et la structure de la LAG ne reflète pas souvent les relations hiérarchiques ou d’ancienneté des destinataires de votre organisation. Le fait de pouvoir personnaliser un carnet d’adresses hiérarchique reflétant la structure métier propre à votre organisation permet à vos utilisateurs de trouver efficacement les destinataires internes.
 
@@ -41,18 +41,8 @@ Vous pouvez ajouter un niveau supplémentaire de hiérarchie en utilisant le par
 
   - `25` pour Amy Alberts
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si le paramètre <em>SeniorityIndex</em> n’est pas défini ou équivaut à deux ou plusieurs utilisateurs, le mode de tri du carnet d’adresses hiérarchique utilise le paramètre <em>PhoneticDisplayName</em> pour répertorier les utilisateurs dans l’ordre alphabétique croissant. Si le paramètre <em>PhoneticDisplayName</em> n’est pas défini, l’ordre de tri du carnet d’adresses hiérarchique est défini par défaut avec la valeur <em>DisplayName</em> et affiche les utilisateurs par ordre alphabétique croissant.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si le paramètre <em>SeniorityIndex</em> n’est pas défini ou équivaut à deux ou plusieurs utilisateurs, le mode de tri du carnet d’adresses hiérarchique utilise le paramètre <em>PhoneticDisplayName</em> pour répertorier les utilisateurs dans l’ordre alphabétique croissant. Si le paramètre <em>PhoneticDisplayName</em> n’est pas défini, l’ordre de tri du carnet d’adresses hiérarchique est défini par défaut avec la valeur <em>DisplayName</em> et affiche les utilisateurs par ordre alphabétique croissant.
 
 
 ## Configuration des carnets d’adresses hiérarchiques

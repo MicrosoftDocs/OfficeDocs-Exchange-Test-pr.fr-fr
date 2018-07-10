@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Tous les jours, les travailleurs de l’information utilisent les messageries électroniques pour échanger des informations sensibles. Par exemple : rapports et états financiers, contrats juridiques, informations confidentielles sur des produits, comptes rendus et prévisions de ventes, analyses de la concurrence, données d’études et de brevets et informations sur les clients et le personnel. Puisqu’il est maintenant possible d’accéder à sa messagerie électronique de n’importe quel endroit du monde, les boîtes aux lettres se sont transformées en référentiels contenant de gros volumes d’informations potentiellement sensibles. En conséquence, la fuite d’informations peut représenter une sérieuse menace pour les entreprises. Pour contribuer à la prévention des fuites d’informations, Microsoft Exchange Server 2013 inclut des fonctions de gestion des droits relatifs à l’information (IRM) qui offrent une protection persistante, en ligne et hors connexion, des messages électroniques et des pièces jointes.
 
@@ -103,18 +103,8 @@ Dans Exchange 2013, vous pouvez utiliser les fonctionnalités IRM pour applique
 
 AD RMS fait appel à des certificats ou licences XrML (eXtensible Rights Markup Language) pour certifier les ordinateurs et les utilisateurs et pour protéger le contenu. Lorsque le contenu d’un document ou d’un message est protégé par AD RMS, une licence XrML, contenant les droits d’accès au contenu par les utilisateurs, est jointe à ce contenu. Pour accéder au contenu protégé par IRM, les applications activées pour AD RMS doivent fournir une licence d’utilisation pour l’utilisateur autorisé à partir du cluster AD RMS.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange 2013, l’agent de pré-licence joint une licence d’utilisation aux messages protégés via le cluster AD RMS dans votre organisation. Pour plus d’informations, voir Pré-licence plus loin dans cette rubrique.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange 2013, l’agent de pré-licence joint une licence d’utilisation aux messages protégés via le cluster AD RMS dans votre organisation. Pour plus d’informations, voir Pré-licence plus loin dans cette rubrique.
 
 
 Les applications servant à créer le contenu doivent être activées pour RMS pour appliquer une protection de contenu permanente en utilisant les services AD RMS. Les applications Microsoft Office, telles que Word, Excel, PowerPoint et Outlook sont activées pour RMS et peuvent être utilisées pour créer et consommer des contenus protégés.
@@ -165,18 +155,8 @@ Dans Exchange 2010, la protection IRM peut être appliquée aux messages à l�
 
   - **Automatiquement sur les serveurs de boîtes aux lettres**   Vous pouvez créer des règles de protection du transport pour activer une protection IRM automatique des messages sur les serveurs de boîtes aux lettres Exchange 2013. Pour plus d’informations sur les règles de protection du transport, consultez la rubrique [Règles de protection de transport](transport-protection-rules-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>La protection IRM n’est pas appliquée à nouveau aux messages qui sont déjà protégés par IRM. Par exemple, si un utilisateur active la protection IRM d’un message dans Outlook ou Outlook Web App, cette protection n’est pas appliquée au message en utilisant une règle de protection du transport.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > La protection IRM n’est pas appliquée à nouveau aux messages qui sont déjà protégés par IRM. Par exemple, si un utilisateur active la protection IRM d’un message dans Outlook ou Outlook Web App, cette protection n’est pas appliquée au message en utilisant une règle de protection du transport.
 
 
 Qu’est-ce que la fuite d’informations ?
@@ -241,18 +221,8 @@ Pour faire appliquer les stratégies de messagerie et aux fins de conformité r�
 
   - **Déchiffrement IRM pour Exchange Search**   Cette fonctionnalité de Déchiffrement IRM pour Exchange Search permet à Exchange Search d’indexer le contenu des messages protégés par IRM. Lorsqu’un gestionnaire de découverte effectue une recherche In-Place eDiscovery (découverte électronique sur place), les messages protégés par IRM ayant été indexés font partie des résultats de la recherche. Pour plus d’informations, voir [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Dans Exchange 2010 SP1, les membres du groupe de rôles Gestion de la découverte peuvent accéder aux messages protégés par IRM renvoyés par une détection et résidant dans une boîte aux lettres de détection. Pour activer cette fonctionnalité, utilisez le paramètre <em>EDiscoverySuperUserEnabled</em> avec la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dd979792(v=exchg.150)">Set-IRMConfiguration</a>. Pour plus d’informations, voir <a href="configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md">Configurer IRM pour la recherche et la découverte locale dans Exchange</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Dans Exchange 2010 SP1, les membres du groupe de rôles Gestion de la découverte peuvent accéder aux messages protégés par IRM renvoyés par une détection et résidant dans une boîte aux lettres de détection. Pour activer cette fonctionnalité, utilisez le paramètre <em>EDiscoverySuperUserEnabled</em> avec la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dd979792(v=exchg.150)">Set-IRMConfiguration</a>. Pour plus d’informations, voir <a href="configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md">Configurer IRM pour la recherche et la découverte locale dans Exchange</a>.
 
 
 Pour activer ces fonctionnalités de déchiffrement, les serveurs Exchange doivent pouvoir accéder au message. Cela est possible en ajoutant la boîte aux lettres de fédération (une boîte aux lettres système créée par le programme d’installation d’Exchange) au groupe des super utilisateurs sur le serveur AD RMS. Pour plus d’informations, consultez la rubrique [Ajouter la boîte aux lettres de fédération au groupe de super utilisateurs AD RMS](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md).
@@ -269,18 +239,8 @@ Qu’est-ce que la fuite d’informations ?
 
 Dans Exchange 2013, la fonctionnalité IRM est activée via les agents de transport dans le service de transport des serveurs de boîtes aux lettres. Les agents IRM sont installés par le programme d’installation d’Exchange sur un serveur de boîtes aux lettres. Vous ne pouvez pas contrôler les agents IRM en utilisant les tâches de gestion des agents de transport.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange 2013, les agents IRM sont des agents intégrés. Les agents intégrés ne figurent pas dans la liste des agents renvoyés par la cmdlet <strong>Get-TransportAgent</strong>. Pour plus d’informations, consultez la rubrique <a href="transport-agents-exchange-2013-help.md">Agents de transport</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange 2013, les agents IRM sont des agents intégrés. Les agents intégrés ne figurent pas dans la liste des agents renvoyés par la cmdlet <strong>Get-TransportAgent</strong>. Pour plus d’informations, consultez la rubrique <a href="transport-agents-exchange-2013-help.md">Agents de transport</a>.
 
 
 Le tableau suivant répertorie les agents IRM mis en œuvre dans le service de transport des serveurs de boîtes aux lettres.
@@ -355,7 +315,7 @@ Pour implémenter IRM dans votre organisation Exchange 2013, votre déploiement
 <tr class="odd">
 <td><p>Cluster AD RMS</p></td>
 <td><ul>
-<li><p><strong>Système d’exploitation</strong>   Windows Server 2012, Windows Server 2008 R2 ou Windows Server 2008 SP2 avec le correctif <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=973247">Rôle d’Active Directory Rights Management Services dans Windows Server 2008</a> est requis.</p></li>
+<li><p><strong>Système d’exploitation</strong>   Windows Server 2012, Windows Server 2008 R2 ou Windows Server 2008 SP2 avec le correctif <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=973247">Rôle d’Active Directory Rights Management Services dans Windows Server 2008</a> est requis.</p></li>
 <li><p><strong>Point de connexion de service</strong>   Exchange 2010 et les applications compatibles AD RMS utilisent le point de connexion de service enregistré dans Active Directory pour détecter un cluster AD RMS et les URL. AD RMS vous permet d’enregistrer le point de connexion de service à partir du programme d’installation d’AD RMS. Si le compte utilisé pour installer AD RMS n’est pas membre du groupe de sécurité Administrateurs d’entreprise, il est possible d’effectuer l’enregistrement du point de connexion de service une fois que l’installation est terminée. La forêt Active Directory comporte un seul point de connexion de service pour AD RMS.</p></li>
 <li><p><strong>Autorisations</strong>   Les autorisations de lecture et d’exécution sur le pipeline de certification du serveur AD RMS (fichier <code>ServerCertification.asmx</code> sur les serveurs AD RMS) doivent être attribuées aux éléments suivants :</p>
 <ul>
@@ -370,7 +330,7 @@ Pour implémenter IRM dans votre organisation Exchange 2013, votre déploiement
 <td><p>Exchange</p></td>
 <td><ul>
 <li><p>Exchange 2010 ou version ultérieure est requis.</p></li>
-<li><p>Le correctif <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=973136">CORRECTIF : ArgumentNullException exception message d’erreur lorsqu’une application.NET_Framework_2.0_SP2-based tente de traiter une réponse avec contenu zero-length à une demande de service ASP.NET Web asynchrone : « La valeur ne peut pas être Null »</a> est recommandé pour Microsoft .NET Framework 2.0 SP2.</p></li>
+<li><p>Le correctif <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=973136">CORRECTIF : ArgumentNullException exception message d’erreur lorsqu’une application.NET_Framework_2.0_SP2-based tente de traiter une réponse avec contenu zero-length à une demande de service ASP.NET Web asynchrone : « La valeur ne peut pas être Null »</a> est recommandé pour Microsoft .NET Framework 2.0 SP2.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -390,32 +350,12 @@ Pour implémenter IRM dans votre organisation Exchange 2013, votre déploiement
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>« Cluster</em> <em>AD RMS »</em> est le terme utilisé pour un déploiement AD RMS dans une organisation, y compris le déploiement d’un seul serveur. AD RMS est un service Web. Il n’exige pas l’installation du composant Clustering avec basculement de Windows Server. Pour la haute disponibilité et l’équilibrage de la charge, vous pouvez déployer plusieurs serveurs AD RMS dans le cluster et utiliser la fonctionnalité d’équilibrage de la charge réseau.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> <em>« Cluster</em> <em>AD RMS »</em> est le terme utilisé pour un déploiement AD RMS dans une organisation, y compris le déploiement d’un seul serveur. AD RMS est un service Web. Il n’exige pas l’installation du composant Clustering avec basculement de Windows Server. Pour la haute disponibilité et l’équilibrage de la charge, vous pouvez déployer plusieurs serveurs AD RMS dans le cluster et utiliser la fonctionnalité d’équilibrage de la charge réseau.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Un environnement de production ne prend pas en charge l’installation d’AD RMS et d’Exchange sur le même serveur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Un environnement de production ne prend pas en charge l’installation d’AD RMS et d’Exchange sur le même serveur.
 
 
 Les fonctionnalités IRM d’Exchange 2013 prennent en charge les formats de fichiers Microsoft Office. Vous pouvez étendre la protection IRM à d’autres formats de fichiers en déployant des protections personnalisées. Pour plus d’informations, consultez la page [Partenaires Microsoft](https://go.microsoft.com/fwlink/p/?linkid=210336).

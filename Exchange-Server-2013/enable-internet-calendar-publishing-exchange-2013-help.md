@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-08-22_
+_**Dernière rubrique modifiée :** 2016-08-22_
 
 **Résumé** : Utilisez ces procédures pour permettre aux utilisateurs OWA de votre organisation Exchange 2013 de partager des informations de disponibilité du calendrier avec des organisations externes.
 
@@ -29,18 +29,8 @@ Le processus d’activation de cette fonctionnalité consiste en trois étapes g
 
 3.  Créer une stratégie de partage dédiée et spécifique de la publication Internet des calendriers ou mettre à jour la stratégie de partage par défaut pour prendre en charge le domaine **Anonyme**. Quelle que soit la méthode employée, celle-ci permet aux utilisateurs de votre organisation Exchange d’inviter d’autres utilisateurs disposant d’un accès Internet à consulter des informations limitées de disponibilité de calendrier via une adresse URL publiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>À la fin de l’étape 3, les utilisateurs doivent publier leurs calendriers à partir d’Outlook. La publication des calendriers crée des URL que les utilisateurs peuvent donner à des contacts en dehors de leur organisation. Une URL permet aux destinataires de s’abonner à des calendriers à l’aide d’Outlook ou d’Outlook Web App, et l’autre permet aux destinataires d’afficher un calendrier dans un navigateur web. Chaque utilisateur peut contrôler la quantité de détails visibles.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> À la fin de l’étape 3, les utilisateurs doivent publier leurs calendriers à partir d’Outlook. La publication des calendriers crée des URL que les utilisateurs peuvent donner à des contacts en dehors de leur organisation. Une URL permet aux destinataires de s’abonner à des calendriers à l’aide d’Outlook ou d’Outlook Web App, et l’autre permet aux destinataires d’afficher un calendrier dans un navigateur web. Chaque utilisateur peut contrôler la quantité de détails visibles.
 
 
 Pour connaître les tâches de gestion supplémentaires relatives aux stratégies de partage, consultez la rubrique [Stratégies de partage](sharing-policies-exchange-2013-help.md).
@@ -59,37 +49,17 @@ Pour connaître les tâches de gestion supplémentaires relatives aux stratégie
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Comment procéder ?
 
 ## Étape 1 : Utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer l’URL du proxy Web
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette étape est nécessaire uniquement si une URL de proxy web existe déjà dans votre organisation. Si ce n’est pas le cas, passez à l’étape 2.<br />
-Vous ne pouvez pas utiliser le Centre d’Administration Exchange (CAE) pour configurer l’URL du proxy web.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette étape est nécessaire uniquement si une URL de proxy web existe déjà dans votre organisation. Si ce n’est pas le cas, passez à l’étape 2.
+> Vous ne pouvez pas utiliser le Centre d’Administration Exchange (CAE) pour configurer l’URL du proxy web.
 
 
 Cet exemple configure une URL du proxy Web sur le serveur de boîtes aux lettres MAIL01.
@@ -106,18 +76,8 @@ Pour vérifier que la configuration de l’adresse URL du proxy Web a été corr
 
 ## Étape 2 : Utiliser l’environnement de ligne de commande Exchange Management Shell pour activer le répertoire virtuel de publication
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le CAE pour créer un répertoire virtuel de publication.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le CAE pour créer un répertoire virtuel de publication.
 
 
 Cet exemple active le répertoire virtuel de publication sur le serveur d’accès au client CAS01.
@@ -136,18 +96,8 @@ Pour vérifier que l’activation du répertoire virtuel de publication s’est 
 
 ## Étape 3 : Créer ou configurer une stratégie de partage exclusivement consacrée à la publication Internet de calendriers
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les options suivantes de l’étape 3 s’appliquent uniquement aux environnements Exchange Online.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les options suivantes de l’étape 3 s’appliquent uniquement aux environnements Exchange Online.
 
 
 Vous pouvez créer une stratégie de partage pour la publication Internet de calendriers (option 1) ou configurer la stratégie de partage par défaut pour la publication Internet de calendriers (option 2). Les deux options vous donnent le choix d’utiliser le Centre d’administration Exchange ou le Shell.

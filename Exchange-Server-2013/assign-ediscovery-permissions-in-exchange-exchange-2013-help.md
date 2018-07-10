@@ -13,25 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-10-02_
+_**Dernière rubrique modifiée :** 2014-10-02_
 
 Si vous souhaitez que les utilisateurs puissent utiliser la découverte électronique sur place (In-Place eDiscovery) Microsoft Exchange Server 2013, vous devez d’abord les autoriser en les ajoutant au groupe de rôles Gestion de la découverte. Les membres du groupe de rôles Gestion de la découverte ont les autorisations de boîtes aux lettres Accès total pour la boîte aux lettres de découverte qui est créée par le programme d’installation Exchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les membres du groupe de rôles Gestion de la découverte peuvent accéder au contenu des messages sensibles. Plus précisément, ces membres peuvent utiliser <a href="in-place-ediscovery-exchange-2013-help.md">Découverte électronique locale</a> pour effectuer des recherches dans toutes les boîtes aux lettres de votre organisation Exchange, prévisualiser les messages (et autres éléments de boîte aux lettre), les copier vers une boîte aux lettres de découverte et exporter les messages copiés vers un fichier .pst. Dans la plupart des organisations, cette autorisation est accordée au personnel des ressources humaines ou du service juridique et de mise en conformité.<br />
-</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Les membres du groupe de rôles Gestion de la découverte peuvent accéder au contenu des messages sensibles. Plus précisément, ces membres peuvent utiliser <a href="in-place-ediscovery-exchange-2013-help.md">Découverte électronique locale</a> pour effectuer des recherches dans toutes les boîtes aux lettres de votre organisation Exchange, prévisualiser les messages (et autres éléments de boîte aux lettre), les copier vers une boîte aux lettres de découverte et exporter les messages copiés vers un fichier .pst. Dans la plupart des organisations, cette autorisation est accordée au personnel des ressources humaines ou du service juridique et de mise en conformité.
 
 
 Pour en savoir plus sur le groupe de rôles Gestion de la découverte, voir [Gestion de la détection](discovery-management-exchange-2013-help.md). Pour en savoir plus sur le contrôle d’accès basé sur les rôles (RBAC), voir [Présentation du contrôle d'accès basé sur un rôle](understanding-role-based-access-control-exchange-2013-help.md).
@@ -88,16 +77,6 @@ Vous pouvez également exécuter cette commande pour répertorier les membres du
 
     Get-RoleGroupMember -Identity "Discovery Management"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

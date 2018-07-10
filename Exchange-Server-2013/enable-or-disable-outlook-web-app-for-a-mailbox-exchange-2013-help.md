@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-14_
+_**Dernière rubrique modifiée :** 2012-11-14_
 
 Le Centre d’administration Exchange (EAC) ou l’environnement de ligne de commande Exchange Management Shell vous permet d’activer ou de désactiver Outlook Web App pour une boîte aux lettres utilisateur. Si Outlook Web App est activé, un utilisateur peut utiliser Outlook Web App pour envoyer et recevoir un message électronique. Si Outlook Web App est désactivé, la boîte aux lettres continue de recevoir des messages électroniques et un utilisateur peut y accéder pour envoyer et recevoir des messages électroniques via un client MAPI comme Microsoft Outlook ou un client de messagerie électronique POP ou IMAP, en supposant que la boîte aux lettres soit activée pour accepter un accès de ces clients.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La prise en charge pour Outlook Web App et pour les clients de messagerie électronique MAPI, POP3 et IMAP4 est activée par défaut lors de la création d’une boîte aux lettres utilisateur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La prise en charge pour Outlook Web App et pour les clients de messagerie électronique MAPI, POP3 et IMAP4 est activée par défaut lors de la création d’une boîte aux lettres utilisateur.
 
 
 Pour les tâches supplémentaires de gestion relatives à la gestion de l’accès aux clients de messagerie, consultez les rubriques suivantes :
@@ -49,18 +39,8 @@ Pour les tâches supplémentaires de gestion relatives à la gestion de l’acc�
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -83,18 +63,8 @@ Pour les tâches supplémentaires de gestion relatives à la gestion de l’acc�
 
 5.  Cliquez sur **Enregistrer** pour enregistrer votre modification.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez activer ou désactiver Outlook Web App pour plusieurs boîtes aux lettres utilisateur à l’aide de la fonction de modification en bloc du Centre d’administration Exchange (EAC). Pour plus d’informations sur comment procéder, consultez la section « Modifier en bloc des boîtes aux lettres utilisateur » dans <a href="manage-user-mailboxes-exchange-2013-help.md">Gestion des boîtes aux lettres utilisateur</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez activer ou désactiver Outlook Web App pour plusieurs boîtes aux lettres utilisateur à l’aide de la fonction de modification en bloc du Centre d’administration Exchange (EAC). Pour plus d’informations sur comment procéder, consultez la section « Modifier en bloc des boîtes aux lettres utilisateur » dans <a href="manage-user-mailboxes-exchange-2013-help.md">Gestion des boîtes aux lettres utilisateur</a>.
 
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour activer ou désactiver Outlook Web App

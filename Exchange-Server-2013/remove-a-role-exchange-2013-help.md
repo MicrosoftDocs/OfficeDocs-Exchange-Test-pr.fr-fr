@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Les rôles de gestion qui ne sont plus requis peuvent être supprimés de votre organisation. Vous ne pouvez supprimer que les rôles de gestion que vous avez créés. Les rôles de gestion intégrés ne peuvent pas être supprimés. Pour plus d’informations sur les rôles de gestion dans Microsoft Exchange Server 2013, voir [Présentation des rôles de gestion](understanding-management-roles-exchange-2013-help.md).
 
@@ -33,18 +33,8 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux rôles ? 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -65,18 +55,8 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Si un rôle que vous désirez supprimer a des rôles enfants, vous devez également supprimer tous les rôles enfants. Vous recevez un message d’erreur si vous essayez de supprimer un rôle qui a des rôles enfants à moins que vous n’utilisiez le commutateur *Recurse*. Si vous utilisez le commutateur *Recurse* lorsque vous supprimez un rôle, le rôle que vous spécifiez et tous ses rôles enfants sont supprimés.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous utilisez le commutateur <em>Recurse</em>, tous les rôles enfants du rôle spécifié que vous désirez supprimer sont également supprimés. Assurez-vous de connaître les rôles qui seront supprimés avant d’exécuter cette commande.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Si vous utilisez le commutateur <em>Recurse</em>, tous les rôles enfants du rôle spécifié que vous désirez supprimer sont également supprimés. Assurez-vous de connaître les rôles qui seront supprimés avant d’exécuter cette commande.
 
 
 Pour vous assurer que vous ne supprimez que les rôles que vous désirez supprimer, utilisez le commutateur *WhatIf* avec votre commande pour le vérifier. Utilisez la syntaxe suivante.

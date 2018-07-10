@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-25_
+_**Dernière rubrique modifiée :** 2013-04-25_
 
 Après l'arrivée d'un message vocal, les utilisateurs peuvent choisir d'écouter ce dernier à l'aide des haut-parleurs ou du casque de leur ordinateur ou d'utiliser la fonctionnalité Lire sur le téléphone. La fonctionnalité Lire sur le téléphone est incluse dans Microsoft Outlook et Outlook Web App, et les paramètres de cette fonctionnalité se trouvent dans la section **Lire sur le téléphone** sous les options **Messagerie vocale**. Cette rubrique décrit la manière dont un utilisateur à extension messagerie unifiée peut utiliser la fonctionnalité Lire sur le téléphone.
 
@@ -25,36 +25,16 @@ La fonctionnalité Lire sur le téléphone permet aux utilisateurs à extension 
 
 Quand l'utilisateur clique sur l'option de la barre d'outils Lire sur le téléphone de l'écran de la messagerie vocale, la boîte de dialogue **Lire sur le téléphone** s'ouvre. La boîte de dialogue **Lire sur le téléphone** fournit les commandes permettant de sélectionner ou d'entrer le numéro de téléphone à utiliser pour lire un message vocal, de démarrer ou de terminer un appel et d'afficher un message d'état pour analyser l'appel. Si l'utilisateur est lié à un plan de numérotation URI SIP, son adresse SIP apparaît dans la boîte de dialogue **Composer**. S'il est lié à un plan de numérotation E.164, son numéro E.164 complet apparaît dans la boîte de dialogue **Composer**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Un seul message vocal peut être lu à la fois. Si l'utilisateur tente de démarrer un second appel Lire sur le téléphone alors qu'un appel est déjà en cours, un message d'erreur s'affiche.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Un seul message vocal peut être lu à la fois. Si l'utilisateur tente de démarrer un second appel Lire sur le téléphone alors qu'un appel est déjà en cours, un message d'erreur s'affiche.
 
 
 ## Liste des numéros de téléphone les plus récemment utilisés
 
 Les utilisateurs ont accès à une liste de numéros de téléphone qu'ils ont le plus utilisés dernièrement dans la boîte de dialogue **Composer**. Le numéro de téléphone spécifié dans la section **Lire sur le téléphone** est toujours affiché en première position et est automatiquement sélectionné comme numéro principal de l'utilisateur. Les utilisateurs peuvent se servir du menu déroulant pour sélectionner d'autres numéros de téléphone à composer à la place du numéro de téléphone configuré comme numéro principal.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour permettre aux utilisateurs qui utilisent la fonctionnalité Lire sur le téléphone de composer un numéro de téléphone externe sans utiliser de code d'accès à une ligne extérieure, par exemple 425-555-1234 au lieu de 9-425-555-1234, configurez des règles de numérotation des appels nationaux sur un plan de numérotation de messagerie unifiée incluant la ligne suivante : group1, 9xxxxxxxxxx, 91xxxxxxxxxx. Après avoir configuré les règles de numérotation du pays ou du département, ajoutez cette liste à la stratégie de boîte aux lettres de messagerie unifiée.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour permettre aux utilisateurs qui utilisent la fonctionnalité Lire sur le téléphone de composer un numéro de téléphone externe sans utiliser de code d'accès à une ligne extérieure, par exemple 425-555-1234 au lieu de 9-425-555-1234, configurez des règles de numérotation des appels nationaux sur un plan de numérotation de messagerie unifiée incluant la ligne suivante : group1, 9xxxxxxxxxx, 91xxxxxxxxxx. Après avoir configuré les règles de numérotation du pays ou du département, ajoutez cette liste à la stratégie de boîte aux lettres de messagerie unifiée.
 
 
 ## Boutons Lire sur le téléphone

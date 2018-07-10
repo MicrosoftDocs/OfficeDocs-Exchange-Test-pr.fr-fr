@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-12-16_
+_**Dernière rubrique modifiée :** 2014-12-16_
 
 La *priorité de mise en file d'attente* est une fonctionnalité de Microsoft Exchange Server 2013 qui permet au niveau de priorité d'un message configuré par l'expéditeur dans Microsoft Outlook ou Outlook Web Access d'influencer le traitement du message par le service de transport sur le serveur de boîtes aux lettres. Lorsque la priorité de mise en file d'attente est activée, les messages à priorité haute sont transmis à leurs destinations avant les messages à priorité normale, et les messages à priorité normale sont transmis avant les messages à priorité faible. Pour plus d'informations, consultez la rubrique [priorité de mise en file d’attente ;](priority-queuing-exchange-2013-help.md).
 
@@ -33,18 +33,8 @@ La *priorité de mise en file d'attente* est une fonctionnalité de Microsoft Ex
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser l'invite de commandes pour activer et configurer la priorité de mise en file d'attente dans le fichier EdgeTransport.exe.config

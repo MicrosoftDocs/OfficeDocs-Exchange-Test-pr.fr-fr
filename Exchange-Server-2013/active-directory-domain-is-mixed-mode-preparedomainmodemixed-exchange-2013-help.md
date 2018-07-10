@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2012-06-05_
+_**Dernière rubrique modifiée :** 2012-06-05_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 
@@ -39,20 +39,9 @@ To resolve this issue, follow these steps to raise the domain functional level t
     
       - To raise domain functional level to Windows Server® 2003, click **Windows Server 2003**, and then click **Raise.**
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><br />
-If you have or will have any domain controllers running Windows NT® 4.0 and earlier, do not raise the domain functional level to Windows 2000 Server native. After the domain functional level is set to Windows 2000 Server native, it cannot be changed back to Windows 2000 Server mixed.<br />
-If you have or will have any domain controllers running Windows NT 4.0 and earlier or Windows 2000 Server, do not raise the domain functional level to Windows Server 2003. After the domain functional level is set to Windows Server 2003, it cannot be changed back to Windows 2000 Server mixed or Windows 2000 Server native.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> If you have or will have any domain controllers running Windows NT® 4.0 and earlier, do not raise the domain functional level to Windows 2000 Server native. After the domain functional level is set to Windows 2000 Server native, it cannot be changed back to Windows 2000 Server mixed.
+> If you have or will have any domain controllers running Windows NT 4.0 and earlier or Windows 2000 Server, do not raise the domain functional level to Windows Server 2003. After the domain functional level is set to Windows Server 2003, it cannot be changed back to Windows 2000 Server mixed or Windows 2000 Server native.
 
 
 

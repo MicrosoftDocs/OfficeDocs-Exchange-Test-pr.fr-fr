@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Après avoir créé une stratégie de boîte aux lettres de messagerie unifiée, vous pouvez afficher ou configurer plusieurs paramètres. Par exemple, vous pouvez configurer les fonctionnalités de messagerie unifiée comme l'aperçu des messages vocaux ou la lecture sur téléphone ainsi que d'autres options de sécurité, telles que la messagerie vocale protégée et les paramètres de stratégie de code confidentiel.
 
@@ -35,18 +35,8 @@ Pour découvrir d'autres tâches de gestion relatives aux stratégies de boîte 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -77,18 +67,8 @@ Pour découvrir d'autres tâches de gestion relatives aux stratégies de boîte 
         
           - **Autoriser les notifications d'appels en absence**   Cochez ou décochez cette case pour activer ou désactiver les notifications d'appels en absence pour les utilisateurs associés à la stratégie de boîte aux lettres de messagerie unifiée. Une notification d'appel en absence est un message électronique envoyé à la boîte aux lettres d'un utilisateur lorsque celui-ci ne répond pas à un message entrant. Ce message électronique diffère de celui qui contient le message électronique vocal laissé pour un utilisateur.
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>Lors de l'intégration locale de la messagerie unifiée et de Lync Server, les notifications d'appels en absence ne sont pas disponibles pour les utilisateurs qui ont une boîte aux lettres située sur un serveur de boîtes aux lettres Exchange 2007 ou Exchange 2010. Une notification d'appel en absence est générée lorsqu'un utilisateur se déconnecte avant l'envoi de l'appel vers la messagerie unifiée.</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]
+            > Lors de l'intégration locale de la messagerie unifiée et de Lync Server, les notifications d'appels en absence ne sont pas disponibles pour les utilisateurs qui ont une boîte aux lettres située sur un serveur de boîtes aux lettres Exchange 2007 ou Exchange 2010. Une notification d'appel en absence est générée lorsqu'un utilisateur se déconnecte avant l'envoi de l'appel vers la messagerie unifiée.
             
             En général, lorsqu'un utilisateur manque un appel entrant, il reçoit deux messages électroniques : un message électronique contenant le message électronique vocal et un message de notification d'appel en absence. Par défaut, les notifications d'appels en absence sont activées lors de la création d'une stratégie de boîte aux lettres de messagerie unifiée.
         
@@ -116,9 +96,9 @@ Pour découvrir d'autres tâches de gestion relatives aux stratégies de boîte 
             
             Le texte entré dans cette zone peut être du texte brut. Il peut également contenir des balises de mise en forme HTML simples pour le mettre en évidence ou pour ajouter des liens hypertexte vers un autre contenu.
             
-            **Exemple 1 :** si vous avez des questions ou des suggestions sur le service de messagerie vocale, appelez le service d'assistance sur le poste 4200.
+            **Exemple 1 :**  si vous avez des questions ou des suggestions sur le service de messagerie vocale, appelez le service d'assistance sur le poste 4200.
             
-            **Exemple 2 :** si vous avez des questions ou des suggestions sur le \<b\>service de messagerie vocale\</b\>, appelez le service d'assistance sur le poste 4200 ou visitez notre site web à l'adresse \<a href=”http://emp.contoso.com/itinfo/vmail”\>\</a\>.
+            **Exemple 2 :**  si vous avez des questions ou des suggestions sur le \<b\>service de messagerie vocale\</b\>, appelez le service d'assistance sur le poste 4200 ou visitez notre site web à l'adresse \<a href=”http://emp.contoso.com/itinfo/vmail”\>\</a\>.
         
           - **Lorsque le code confidentiel Outlook Voice Access d'un utilisateur est réinitialisé**   Le texte saisi dans cette zone de texte est inclus dans le message électronique envoyé aux utilisateurs à extension messagerie unifiée quand leur code confidentiel de messagerie unifiée est réinitialisé.
             

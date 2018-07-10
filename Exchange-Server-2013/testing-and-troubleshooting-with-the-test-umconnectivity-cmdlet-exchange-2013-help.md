@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-06-25_
+_**Dernière rubrique modifiée :** 2013-06-25_
 
 Une fois que vous avez installé les serveurs d’accès au client et de boîtes aux lettres et que vous avez configuré la messagerie unifiée, vous pouvez utiliser plusieurs tests de diagnostic et une application de téléphonie logicielle pour tester la connectivité téléphonique et le fonctionnement des services de messagerie unifiée.
 
@@ -35,16 +35,6 @@ La cmdlet **Test-UMConnectivity** permet de vérifier la connectivité aux serve
 
   - **Distant**   La cmdlet **Test-UMConnectivity** tente de se connecter à un serveur d’accès au client distant en appelant via une passerelle VoIP. Une fois la connexion établie, la cmdlet effectue des vérifications de connectivité sur le serveur d’accès au client distant et les chemins d’accès aux supports.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous recevez le message suivant, vous devez redémarrer le service de messagerie unifiée MicrosoftExchange car il s’est interrompu ou il ne répond pas : « La tâche Test-UMConnectivity a détecté une erreur lors de la tentative d’émission d’un appel. Détails : Impossible d’établir une connexion. »</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous recevez le message suivant, vous devez redémarrer le service de messagerie unifiée MicrosoftExchange car il s’est interrompu ou il ne répond pas : « La tâche Test-UMConnectivity a détecté une erreur lors de la tentative d’émission d’un appel. Détails : Impossible d’établir une connexion. »
 

@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-04_
+_**Dernière rubrique modifiée :** 2013-02-04_
 
 Étant donné que le Centre d'administration Exchange (CAE) est une console de gestion basée sur le web dans Exchange Server 2013, vous y accédez en utilisant l'URL du répertoire virtuel du Panneau de configuration Exchange (ECP) dans un navigateur Internet. Cette rubrique vous montre comment trouver l'URL du répertoire virtuel du Panneau de configuration Exchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le Panneau de configuration Exchange est l'interface utilisateur web développée pour Exchange Server 2010. Les cmdlets du CAE pour les répertoires virtuels utilisent toujours « ECP » dans le nom, et ces cmdlets peuvent être utilisées pour gérer les répertoires virtuels de l'ECP de Exchange 2010 et de Exchange 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le Panneau de configuration Exchange est l'interface utilisateur web développée pour Exchange Server 2010. Les cmdlets du CAE pour les répertoires virtuels utilisent toujours « ECP » dans le nom, et ces cmdlets peuvent être utilisées pour gérer les répertoires virtuels de l'ECP de Exchange 2010 et de Exchange 2013.
 
 
 Pour en savoir plus sur le CAE, consultez la rubrique [Centre d’administration Exchange dans Exchange 2013](exchange-admin-center-in-exchange-2013-exchange-2013-help.md).
@@ -45,18 +35,8 @@ Pour en savoir plus sur le CAE, consultez la rubrique [Centre d’administration
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour trouver les URL internes et externes du répertoire virtuel de l'ECP

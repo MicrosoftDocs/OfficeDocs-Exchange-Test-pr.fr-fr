@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-15_
+_**Dernière rubrique modifiée :** 2013-02-15_
 
 [Gérer les paramètres de messagerie unifiée sur un serveur de boîtes aux lettres](manage-um-settings-on-a-mailbox-server-exchange-2013-help.md)
 

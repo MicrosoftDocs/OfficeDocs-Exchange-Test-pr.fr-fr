@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-05-18_
+_**Dernière rubrique modifiée :** 2016-05-18_
 
 Microsoft Exchange Server 2013 ajoute de nouveaux attributs et classes du schéma Active Directory et en modifie des existants. Cette rubrique de référence fournit un résumé des modifications du schéma Active Directory qui sont effectuées lorsque vous installez la version de publication (RTM) d’Exchange 2013 ou l’un de ses Service Packs ou mises à jour cumulatives. Pour plus d’informations sur les modifications du schéma Active Directory, consultez les fichiers .ldf. Les fichiers .ldf se trouvent dans le répertoire \\amd64\\Setup\\Data\\ des fichiers d’installation Exchange.
 
@@ -55,19 +55,9 @@ Les mises à jour du schéma Exchange 2013 sont cumulatives. Chaque version com
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les modifications du schéma Active Directory identifiées dans cette rubrique peuvent ne pas s’appliquer à toutes les éditions d’une version d’Exchange Server.<br />
-Pour vous assurer qu’Active Directory a été correctement préparé, consultez la section « Comment savoir si cela a fonctionné ? » dans la rubrique <a href="prepare-active-directory-and-domains-exchange-2013-help.md">Préparation d’Active Directory et des domaines</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les modifications du schéma Active Directory identifiées dans cette rubrique peuvent ne pas s’appliquer à toutes les éditions d’une version d’Exchange Server.
+> Pour vous assurer qu’Active Directory a été correctement préparé, consultez la section « Comment savoir si cela a fonctionné ? » dans la rubrique <a href="prepare-active-directory-and-domains-exchange-2013-help.md">Préparation d’Active Directory et des domaines</a>.
 
 
 Ce document comprend les sections suivantes :

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-10-04_
+_**Dernière rubrique modifiée :** 2017-10-04_
 
 Un groupe de disponibilité de base de données (DAG) est composé d’un maximum de 16 serveurs de boîtes aux lettres Microsoft Exchange Server 2013 qui permettent une récupération automatique au niveau de la base de données en cas de défaillance d’une base de données, d’un serveur ou du réseau. Les groupes de disponibilité de base de données (DAG) utilisent la réplication continue et un sous-ensemble de technologies de clustering avec basculement Windows pour fournir la haute disponibilité et la résilience de site. Les serveurs de boîtes aux lettres d’un groupe de disponibilité de base de données (DAG) se surveillent mutuellement pour détecter les défaillances. Lorsqu’un serveur de boîtes aux lettres est ajouté à un groupe de disponibilité de base de données, il fonctionne avec les autres serveurs du groupe de disponibilité de base de données pour assurer la récupération automatique des défaillances de la base de données.
 
@@ -51,18 +51,8 @@ Lorsque vous créez un DAG, un objet vide représentant le DAG portant le nom qu
 
 Les DAG utilisent un sous-ensemble de technologies de clustering avec basculement Windows ; il peut s’agir notamment de la pulsation de clusters, de réseaux de clusters et d’une base de données de clusters (pour stocker les données qui changent ou qui peuvent changer rapidement, par exemple lorsque l’état d’une base de données passe d’actif à passif et inversement ou de montée à démontée et inversement). Comme les groupes de disponibilité de base de données (DAG) reposent sur le clustering avec basculement Windows, ils peuvent uniquement être créés sur des serveurs de boîtes aux lettres Exchange 2013 fonctionnant sous Windows Server 2008 R2 Enterprise ou Datacenter, sous Windows Server 2012 Standard ou Datacenter, ou sous Windows Server 2012 R2 Standard ou Datacenter.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le cluster de basculement créé et utilisé par le groupe de disponibilité de base de données (DAG) doit être dédié au DAG. Le cluster ne peut pas être utilisé pour toute autre solution de disponibilité élevée ou pour tout autre rôle. Par exemple, le cluster de basculement ne peut pas être utilisé pour mettre en cluster d’autres applications ou services. L’utilisation d’un cluster de basculement du groupe de disponibilité de base de données pour des rôles autres que le DAG n’est pas prise en charge.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le cluster de basculement créé et utilisé par le groupe de disponibilité de base de données (DAG) doit être dédié au DAG. Le cluster ne peut pas être utilisé pour toute autre solution de disponibilité élevée ou pour tout autre rôle. Par exemple, le cluster de basculement ne peut pas être utilisé pour mettre en cluster d’autres applications ou services. L’utilisation d’un cluster de basculement du groupe de disponibilité de base de données pour des rôles autres que le DAG n’est pas prise en charge.
 
 
 ## Serveur témoin et répertoire témoin de groupe de disponibilité de base (DAG)
@@ -81,35 +71,15 @@ La configuration requise pour le serveur témoin est la suivante :
 
 Quel que soit le serveur utilisé comme serveur témoin, si le pare-feu Windows est activé sur le serveur témoin désigné, vous devez activer l’exception du pare-feu Windows pour le partage de fichiers et d’imprimantes.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si le serveur témoin que vous spécifiez n’est pas un serveur Exchange 2013 ou Exchange 2010, vous devez ajouter le groupe de sécurité universel (USG) du sous-système approuvé Exchange au groupe Administrateurs local sur le serveur témoin avant de créer le groupe de disponibilité de base de données (DAG). Ces autorisations de sécurité sont nécessaires pour garantir que Exchange peut créer un répertoire et un partage sur le serveur témoin au besoin.<br />
-Le serveur témoin utilise le port SMB 445.</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> Si le serveur témoin que vous spécifiez n’est pas un serveur Exchange 2013 ou Exchange 2010, vous devez ajouter le groupe de sécurité universel (USG) du sous-système approuvé Exchange au groupe Administrateurs local sur le serveur témoin avant de créer le groupe de disponibilité de base de données (DAG). Ces autorisations de sécurité sont nécessaires pour garantir que Exchange peut créer un répertoire et un partage sur le serveur témoin au besoin.
+> Le serveur témoin utilise le port SMB 445.
 
 
 Il n’est pas nécessaire que le serveur témoin et le répertoire témoin aient une tolérance de panne ni une autre forme de redondance ou de haute disponibilité. Il n’est pas nécessaire d’utiliser un serveur de fichiers en cluster pour le serveur témoin ni d’employer une autre forme de résilience pour le serveur témoin. et ce pour plusieurs raisons. Dans les grands DAG (par exemple, avec six membres ou plus), il faut plusieurs pannes avant d’avoir besoin d’un serveur témoin. Comme un DAG à six membres peut tolérer un maximum de deux pannes de serveur sans perdre de quorum, il faudrait que trois membres tombent en panne avant que le serveur témoin soit nécessaire pour maintenir le quorum. De même, si une panne touche votre serveur témoin actuel (par exemple, si vous perdez le serveur témoin à cause d’une défaillance matérielle), vous pouvez employer la cmdlet [Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/fr-fr/library/dd297934\(v=exchg.150\)) pour configurer un nouveau serveur témoin et un répertoire témoin (si vous avez un quorum).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez aussi utiliser la cmdlet <strong>Set-DatabaseAvailabilityGroup</strong> pour configurer le serveur témoin et le répertoire témoin à l’emplacement d’origine si le serveur témoin a perdu son stockage ou si quelqu’un a modifié les autorisations de partage ou du répertoire témoin.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez aussi utiliser la cmdlet <strong>Set-DatabaseAvailabilityGroup</strong> pour configurer le serveur témoin et le répertoire témoin à l’emplacement d’origine si le serveur témoin a perdu son stockage ou si quelqu’un a modifié les autorisations de partage ou du répertoire témoin.
 
 
 ## Considérations relatives au placement du serveur témoin
@@ -185,18 +155,8 @@ Lors de la création d’un DAG, les combinaisons de comportements et d’option
 
 Une fois le DAG formé, il utilisera d’abord le modèle de quorum Nœud Majoritaire. Une fois la deuxième boîte aux lettres ajoutée au DAG, le quorum est automatiquement changé en un modèle de quorum de nœuds et partage de fichiers majoritaire. Lorsque ce changement se produit, le cluster du groupe de disponibilité de base (DAG) commence à utiliser le serveur témoin pour conserver le quorum. Si le répertoire témoin n’existe pas, Exchange le crée automatiquement, le partage et lui fournit les autorisations de contrôle total sur le compte d’ordinateur de l’objet nom de cluster du DAG.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L’utilisation d’un partage de fichiers intégré à l’espace de noms du système de fichiers distribués (DFS) n’est pas prise en charge.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L’utilisation d’un partage de fichiers intégré à l’espace de noms du système de fichiers distribués (DFS) n’est pas prise en charge.
 
 
 Si le pare-feu Windows est activé sur le serveur témoin avant la création du DAG, celle-ci risque d’être bloquée. Exchange utilise Windows WMI (Windows Management Instrumentation) pour créer le répertoire et le partage de fichiers sur le serveur témoin. Si le pare-feu Windows est activé sur le serveur témoin et qu’aucune exception de pare-feu n’est configurée pour WMI, la cmdlet **New-DatabaseAvailabilityGroup** va échouer en indiquant une erreur. Si vous spécifiez un serveur témoin mais pas de répertoire témoin, vous obtiendrez le message d’erreur suivante.
@@ -258,18 +218,8 @@ Retour au début
 
 Après avoir créé un groupe de disponibilité de base (DAG), vous pouvez ajouter des serveurs au DAG ou en supprimer à l’aide de l’Assistant Gestion de groupe de disponibilité de base de données du Centre d’administration Exchange (EAC) ou à l’aide des cmdlets **Add-DatabaseAvailabilityGroupServer** ou **Remove-DatabaseAvailabilityGroupServer** dans l’environnement de ligne de commande Exchange Management Shell. Pour obtenir la procédure détaillée de gestion de l’appartenance aux DAG, voir [Gérer l’appartenance au groupe de disponibilité de la base de données](manage-database-availability-group-membership-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Chaque serveur de boîtes aux lettres membre d’un groupe de disponibilité de la base de données constitue également un nœud dans le cluster sous-jacent, utilisé par le groupe de disponibilité de la base de données. Par conséquent, un serveur de boîtes aux lettres peut être membre d’un seul groupe de disponibilité de la base de données.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Chaque serveur de boîtes aux lettres membre d’un groupe de disponibilité de la base de données constitue également un nœud dans le cluster sous-jacent, utilisé par le groupe de disponibilité de la base de données. Par conséquent, un serveur de boîtes aux lettres peut être membre d’un seul groupe de disponibilité de la base de données.
 
 
 Si le serveur de boîte aux lettres ajouté au DAG n’a pas le composant de clustering avec basculement, la méthode utilisée pour ajouter le serveur (par exemple, la cmdlet **Add-DatabaseAvailabilityGroupServer** ou l’Assistant de gestion du groupe de disponibilité de base de données) installera la fonction de clustering avec basculement.
@@ -306,36 +256,16 @@ Voici ce qui se passe quand les serveurs suivants sont ajoutés au DAG :
 
   - La base de données du cluster est mise à jour avec les informations sur les bases de données montées.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le changement de modèle de quorum doit se produire automatiquement. Toutefois, si le modèle de quorum n’est pas changé automatiquement vers le modèle approprié, vous pouvez exécuter la cmdlet <strong>Set-DatabaseAvailabilityGroup</strong> avec seulement le paramètre <em>Identity</em> pour modifier les réglages de quorum du DAG.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le changement de modèle de quorum doit se produire automatiquement. Toutefois, si le modèle de quorum n’est pas changé automatiquement vers le modèle approprié, vous pouvez exécuter la cmdlet <strong>Set-DatabaseAvailabilityGroup</strong> avec seulement le paramètre <em>Identity</em> pour modifier les réglages de quorum du DAG.
 
 
 ## Préconfiguration de l’objet nom de cluster pour un groupe de disponibilité de base de données (DAG)
 
 L’objet réseau de cluster (CNO) est un compte d’ordinateur qui est créé dans Active Directory et associé à la ressource Nom du cluster. La ressource Nom du cluster est liée à l’objet réseau de cluster représentant un objet Kerberos qui agit comme identité du cluster et fournit le contexte de sécurité du cluster. Comme indiqué précédemment, la formation du cluster sous-jacent DAG et de l’objet réseau de cluster pour ce cluster est effectuée lorsque le premier membre est ajouté au DAG. Lorsque le premier serveur est ajouté au DAG, l’instance PowerShell distante contacte le service de réplication d’Microsoft Exchange sur le serveur de boîtes aux lettres ajouté. Le service de réplication Microsoft Exchange installe la fonctionnalité de cluster de basculement (si celle-ci n’est pas déjà installée) et commence le processus de création du cluster. Le service de réplication Microsoft Exchange s’exécute dans le contexte de sécurité du système local et c’est dans ce contexte que la création du cluster est effectuée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si les membres de votre groupe de disponibilité de base de données (DAG) exécutent Windows Server 2012, vous devez préconfigurer l’objet réseau de cluster (CNO) avant d’ajouter le premier serveur au groupe de disponibilité de base de données (DAG). Si les membres du DAG exécutent Windows Server 2012 R2 et que vous créez un DAG sans point d’accès administratif de cluster, aucun CNO n’est créé et il n’est pas nécessaire de créer de CNO pour le DAG.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Si les membres de votre groupe de disponibilité de base de données (DAG) exécutent Windows Server 2012, vous devez préconfigurer l’objet réseau de cluster (CNO) avant d’ajouter le premier serveur au groupe de disponibilité de base de données (DAG). Si les membres du DAG exécutent Windows Server 2012 R2 et que vous créez un DAG sans point d’accès administratif de cluster, aucun CNO n’est créé et il n’est pas nécessaire de créer de CNO pour le DAG.
 
 
 Dans des environnements où la création de compte d’ordinateur est restreinte ou lorsque des comptes d’ordinateur sont créés dans un conteneur autre que le conteneur d’ordinateurs par défaut, vous pouvez préconfigurer et approvisionner l’objet réseau de cluster. Vous pouvez créer et désactiver un compte d’ordinateur pour l’objet réseau de cluster, puis vous pouvez :
@@ -472,18 +402,8 @@ En règle générale, vous n’avez besoin d’utiliser des cartes réseau doubl
 
 Dans des configurations de carte réseau double, un réseau est généralement consacré au trafic de réplication et le second est principalement utilisé pour le trafic MAPI. Vous pouvez également ajouter des cartes réseau à chaque membre DAG et configurer des réseaux DAG supplémentaires en tant que réseaux de réplication.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>En cas d’utilisation de plusieurs réseaux de réplication, il n’y a aucun moyen de spécifier un ordre de priorité pour l’utilisation des réseaux. sélectionne de manière aléatoire un réseau de réplication dans le groupe de réseaux de réplication à utiliser pour la copie des journaux de transaction.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> En cas d’utilisation de plusieurs réseaux de réplication, il n’y a aucun moyen de spécifier un ordre de priorité pour l’utilisation des réseaux. sélectionne de manière aléatoire un réseau de réplication dans le groupe de réseaux de réplication à utiliser pour la copie des journaux de transaction.
 
 
 Dans Exchange 2010, la configuration manuelle des réseaux DAG était nécessaire dans plusieurs scénarios. Dans Exchange 2013, par défaut, les réseaux DAG sont automatiquement configurés par le système. Pour pouvoir créer ou modifier des réseaux DAG, vous devez d’abord activer le contrôle de réseau DAG manuel en exécutant la commande suivante :
@@ -502,18 +422,8 @@ Vous pouvez utiliser la cmdlet **Set-DatabaseAvailabilityGroupNetwork** dans l�
 
   - **Activer la réplication**   Dans le Centre d’administration Exchange (EAC), cochez la case pour dédier le réseau DAG au trafic de réplication et bloquer le trafic MAPI. Cochez la case pour empêcher la réplication via le réseau DAG et pour activer le trafic MAPI. Dans l’environnement de ligne de commande Exchange Management Shell, utilisez le paramètre *ReplicationEnabled* de la cmdlet [Set-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/fr-fr/library/dd298008\(v=exchg.150\)) pour activer ou désactiver la réplication.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La désactivation de la réplication sur votre réseau MAPI ne garantit pas que le système n’utilise pas ce réseau pour la réplication. Si tous les réseaux de réplication configurés sont hors connexion, en panne ou indisponibles pour une autre raison, et que seul reste le réseau MAPI (qui n’est pas activé pour la réplication), alors le système utilise le réseau MAPI pour la réplication.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La désactivation de la réplication sur votre réseau MAPI ne garantit pas que le système n’utilise pas ce réseau pour la réplication. Si tous les réseaux de réplication configurés sont hors connexion, en panne ou indisponibles pour une autre raison, et que seul reste le réseau MAPI (qui n’est pas activé pour la réplication), alors le système utilise le réseau MAPI pour la réplication.
 
 
 Les réseaux DAG initiaux (par exemple, MapiDagNetwork et ReplicationDagNetwork01) créés par le système sont basés sur les sous-réseaux énumérés par le service de cluster. Chaque membre du groupe de disponibilité de base de données doit disposer du même nombre de cartes réseau et chaque carte réseau doit disposer d’une adresse IPv4 (et facultativement d’une adresse IPv6) sur un sous-réseau unique. Plusieurs membres du groupe de disponibilité de base de données peuvent disposer d’adresses IPv4 sur le même sous-réseau mais chaque carte réseau et chaque paire d’adresse IP d’un membre du groupe de disponibilité de base de données spécifique doivent se trouver sur un sous-réseau unique. En outre, uniquement la carte utilisée pour le réseau MAPI devrait être configurée avec une passerelle par défaut. Les réseaux de réplication ne devraient pas être configurés avec une passerelle par défaut.

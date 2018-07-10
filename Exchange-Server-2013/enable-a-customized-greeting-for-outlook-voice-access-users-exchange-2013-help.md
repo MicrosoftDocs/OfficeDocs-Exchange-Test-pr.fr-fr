@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Par défaut, chaque plan de numérotation de messagerie unifiée utilise un fichier .wav standard dédié au message d'accueil qui est lu aux appelants, y compris les utilisateurs d'Outlook Voice Access qui composent un numéro Outlook Voice Access qui a été configuré. Cependant, vous pouvez créer un fichier .wav ou .wma pour le message d'accueil, puis l'activer dans le plan de numérotation de messagerie unifiée.
 
@@ -35,18 +35,8 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -61,18 +51,8 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
 
 4.  Dans **Outlook Voice Access**, sous **Message d'accueil**, cliquez sur **Modifier**, puis cliquez sur **Parcourir** pour rechercher le fichier du message d'accueil.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le fichier que vous utilisez pour le message d'accueil doit être un fichier au format .wav ou .wma.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le fichier que vous utilisez pour le message d'accueil doit être un fichier au format .wav ou .wma.
 
 
 5.  Après avoir localisé le fichier, cliquez sur **Ouvrir**, puis sur **Enregistrer**.

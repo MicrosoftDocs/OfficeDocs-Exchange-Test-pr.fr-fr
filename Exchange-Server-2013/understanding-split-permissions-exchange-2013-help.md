@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Les organisations qui séparent la gestion des objets Microsoft Exchange Server 2013 et des objets Active Directory utilisent un modèle d’*autorisations fractionnées*. Les autorisations fractionnées permettent aux organisations d’attribuer des autorisations spécifiques et des tâches correspondantes à des groupes spécifiques au sein de l’organisation. Cette séparation du travail aide à maintenir les normes et les flux de travail et contribue au contrôle des modifications dans l’organisation.
 
@@ -58,34 +58,14 @@ RBAC est un composant qui existe sur chaque serveur exécutant Exchange 2013. R
 
 Si RBAC autorise une action, celle-ci est effectuée dans le contexte du sous-système approuvé Exchange et non pas dans le contexte de l’utilisateur. Le sous-système approuvé Exchange est un groupe universel de sécurité disposant de l’accès en lecture et écriture à tous les objets associés à Exchange dans l’organisation Exchange. C’est aussi un membre des groupes de sécurité locaux des administrateurs et le groupe universel de sécurité des autorisations Windows Exchange qui permettent à Exchange de créer et de gérer des objets Active Directory.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>N’effectuez aucune modification manuelle à l’appartenance au groupe de sécurité du sous-système approuvé Exchange. Ne l’ajoutez pas dans des listes de contrôle d’accès (ACL) et ne le supprimez pas de ces listes. En effectuant vous-même les modifications au groupe de sécurité universelle du sous-système approuvé Exchange, vous risqueriez de causer des dommages irréparables à votre organisation Exchange.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> N’effectuez aucune modification manuelle à l’appartenance au groupe de sécurité du sous-système approuvé Exchange. Ne l’ajoutez pas dans des listes de contrôle d’accès (ACL) et ne le supprimez pas de ces listes. En effectuant vous-même les modifications au groupe de sécurité universelle du sous-système approuvé Exchange, vous risqueriez de causer des dommages irréparables à votre organisation Exchange.
 
 
 Il faut bien comprendre que les autorisations Active Directory d’un utilisateur n’importent pas lors de l’utilisation des outils de gestion Exchange. Si l’utilisateur a l’autorisation, via RBAC, d’effectuer une action dans les outils de gestion Exchange, il peut effectuer l’action quelles que soient ses autorisations Active Directory. À l’inverse, si un utilisateur est un Administrateur d’entreprise dans Active Directory mais n’est pas autorisé à effectuer une action telle que la création d’une boîte aux lettres dans les outils de gestion Exchange, l’action échouera car l’utilisateur n’a pas les autorisations requises selon RBAC.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Bien que le modèle des autorisations RBAC ne s’applique pas à l’outil de gestion des utilisateurs et ordinateurs Active Directory, les utilisateurs et ordinateurs Active Directory ne peuvent pas gérer la configuration Exchange. Ainsi, même si un utilisateur a l’accès pour modifier quelques attributs sur les objets Active Directory, tels que le nom complet de l’utilisateur, il doit employer les outils de gestion Exchange, et doit donc disposer de l’autorisation RBAC, pour gérer les attributs Exchange.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Bien que le modèle des autorisations RBAC ne s’applique pas à l’outil de gestion des utilisateurs et ordinateurs Active Directory, les utilisateurs et ordinateurs Active Directory ne peuvent pas gérer la configuration Exchange. Ainsi, même si un utilisateur a l’accès pour modifier quelques attributs sur les objets Active Directory, tels que le nom complet de l’utilisateur, il doit employer les outils de gestion Exchange, et doit donc disposer de l’autorisation RBAC, pour gérer les attributs Exchange.
 
 
 Retour au début
@@ -151,18 +131,8 @@ Exchange 2013 prend en charge les deux types d’autorisations fractionnées su
 
   - **autorisations fractionnées Active Directory**   Les autorisations pour créer des principaux de sécurité dans la partition du domaine Active Directory sont totalement supprimées de tout utilisateur, service ou serveur Exchange. Aucune option n’est fournie dans RBAC pour créer des principaux de sécurité. La création de principaux de sécurité dans Active Directory doit être effectuée à l’aide des outils de gestion Active Directory.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Bien que les autorisations fractionnées Active Directory puissent uniquement être activées ou désactivées en exécutant le programme d’installation sur un ordinateur sur lequel Exchange 2013 est installé, la configuration des autorisations fractionnées Active Directory s’applique à la fois aux serveurs Exchange 2013 et Exchange 2010. Cela n’a cependant aucune incidence sur les serveurs Microsoft Exchange Server 2007.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Bien que les autorisations fractionnées Active Directory puissent uniquement être activées ou désactivées en exécutant le programme d’installation sur un ordinateur sur lequel Exchange 2013 est installé, la configuration des autorisations fractionnées Active Directory s’applique à la fois aux serveurs Exchange 2013 et Exchange 2010. Cela n’a cependant aucune incidence sur les serveurs Microsoft Exchange Server 2007.
 
 
 Si votre organisation choisit d’utiliser un modèle d’autorisations fractionnées plutôt que d’autorisations partagées, il est conseillé d’utiliser le modèle d’autorisations fractionnées RBAC. Le modèle d’autorisations fractionnées RBAC offre beaucoup plus de flexibilité en fournissant presque la même séparation de l’administration que les autorisations fractionnées Active Directory, à l’exception du fait que les serveurs et services Exchange peuvent créer des principaux de sécurité dans le modèle d’autorisations fractionnées RBAC.
@@ -290,52 +260,22 @@ Les autorisations fractionnées Active Directory sont un bon choix pour votre or
 
   - Vous ne souhaitez pas que les serveurs Exchange ou les programmes tiers qui utilisent Exchange en leur nom créent des principaux de sécurité.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Basculer vers les autorisations fractionnées Active Directory est un choix que vous pouvez faire lorsque vous installez Exchange 2013 soit à l’aide de l’Assistant Installation, soit à l’aide du paramètre <em>ActiveDirectorySplitPermissions</em> en exécutant <code>setup.exe</code> depuis la ligne de commande. Vous pouvez également activer ou désactiver les autorisations fractionnées Active Directory après avoir installé Exchange 2013 en exécutant à nouveau <code>setup.exe</code> dans la ligne de commande. Pour activer les autorisations fractionnées Active Directory, définissez le paramètre <em>ActiveDirectorySplitPermissions</em> sur <code>true</code>. Pour le désactiver, définissez-le sur <code>false</code>. Vous devez toujours spécifier le basculement <em>PrepareAD</em> en même temps que le paramètre <em>ActiveDirectorySplitPermissions</em>.<br />
-Si vous possédez plusieurs domaines dans la même forêt, vous devez également spécifier le même commutateur <em>PrepareAllDomains</em> lorsque vous appliquez les autorisations fractionnées Active Directory ou exécuter le programme d’installation avec le commutateur <em>PrepareDomain</em> dans chaque domaine. Si vous choisissez d’exécuter le programme d’installation avec le commutateur <em>PrepareDomain</em> dans chaque domaine plutôt que d’utiliser le commutateur <em>PrepareAllDomains</em>, vous devez préparer chaque domaine contenant les serveurs Exchange, les objets à extension messagerie ou les serveurs de catalogue global accessibles via un serveur Exchange.</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> Basculer vers les autorisations fractionnées Active Directory est un choix que vous pouvez faire lorsque vous installez Exchange 2013 soit à l’aide de l’Assistant Installation, soit à l’aide du paramètre <em>ActiveDirectorySplitPermissions</em> en exécutant <code>setup.exe</code> depuis la ligne de commande. Vous pouvez également activer ou désactiver les autorisations fractionnées Active Directory après avoir installé Exchange 2013 en exécutant à nouveau <code>setup.exe</code> dans la ligne de commande. Pour activer les autorisations fractionnées Active Directory, définissez le paramètre <em>ActiveDirectorySplitPermissions</em> sur <code>true</code>. Pour le désactiver, définissez-le sur <code>false</code>. Vous devez toujours spécifier le basculement <em>PrepareAD</em> en même temps que le paramètre <em>ActiveDirectorySplitPermissions</em>.
+> Si vous possédez plusieurs domaines dans la même forêt, vous devez également spécifier le même commutateur <em>PrepareAllDomains</em> lorsque vous appliquez les autorisations fractionnées Active Directory ou exécuter le programme d’installation avec le commutateur <em>PrepareDomain</em> dans chaque domaine. Si vous choisissez d’exécuter le programme d’installation avec le commutateur <em>PrepareDomain</em> dans chaque domaine plutôt que d’utiliser le commutateur <em>PrepareAllDomains</em>, vous devez préparer chaque domaine contenant les serveurs Exchange, les objets à extension messagerie ou les serveurs de catalogue global accessibles via un serveur Exchange.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas activer les autorisations fractionnées Active Directory si vous avez installé Exchange 2010 ou Exchange 2013 sur un contrôleur de domaine.<br />
-Après avoir activé ou désactivé les autorisations fractionnées Active Directory, il est conseillé de redémarrer les serveurs Exchange 2010 et Exchange 2013 de votre organisation pour les obliger à sélectionner le nouveau jeton d’accès Active Directory avec les autorisations mises à jour.</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> Vous ne pouvez pas activer les autorisations fractionnées Active Directory si vous avez installé Exchange 2010 ou Exchange 2013 sur un contrôleur de domaine.
+> Après avoir activé ou désactivé les autorisations fractionnées Active Directory, il est conseillé de redémarrer les serveurs Exchange 2010 et Exchange 2013 de votre organisation pour les obliger à sélectionner le nouveau jeton d’accès Active Directory avec les autorisations mises à jour.
 
 
 Exchange 2013 obtient les autorisations fractionnées Active Directory en supprimant les autorisations et les appartenances du groupe de sécurité Autorisations Exchange Windows. Ce groupe de sécurité, en autorisations partagées et en autorisations fractionnées RBAC, est autorisé à beaucoup d’objets et d’attributs ne faisant pas partie d’Exchange à travers Active Directory. En supprimant les autorisations et les appartenances à ce groupe de sécurité, les administrateurs et services Exchange ne peuvent plus créer ou modifier ces objets n’appartenant pas à ExchangeActive Directory.
 
 Pour obtenir la liste des modifications qui sont effectuées sur le groupe de sécurité Autorisations Exchange Windows et sur d’autres composants Exchange lorsque vous activez ou désactivez les autorisations fractionnées Active Directory, consultez le tableau suivant.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les attributions de rôle aux groupes de rôles qui permettent aux administrateurs Exchange de créer des principaux de sécurité sont supprimées lorsque les autorisations fractionnées Active Directory sont activées. Cela est effectué pour supprimer l’accès aux cmdlets qui généreraient une erreur lorsqu’elles seraient exécutées car elles n’ont pas les autorisations de créer l’objet Active Directory associé.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les attributions de rôle aux groupes de rôles qui permettent aux administrateurs Exchange de créer des principaux de sécurité sont supprimées lorsque les autorisations fractionnées Active Directory sont activées. Cela est effectué pour supprimer l’accès aux cmdlets qui généreraient une erreur lorsqu’elles seraient exécutées car elles n’ont pas les autorisations de créer l’objet Active Directory associé.
 
 
 ### Modifications d’autorisations fractionnées Active Directory

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-18_
+_**Dernière rubrique modifiée :** 2013-02-18_
 
 Un groupement de postes de téléphonie offre un moyen de répartir des appels téléphoniques à partir d'un numéro unique vers plusieurs postes ou numéros de téléphone. Dans la messagerie unifiée, un groupement de postes de messagerie unifiée constitue une représentation logique d'un groupement de postes de téléphonie et relie une passerelle IP de messagerie unifiée à un plan de numérotation de messagerie unifiée.
 

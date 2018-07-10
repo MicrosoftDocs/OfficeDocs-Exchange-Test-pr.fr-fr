@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-15_
+_**Dernière rubrique modifiée :** 2016-12-15_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 
@@ -27,5 +27,5 @@ L’installation d’Exchange 2007 nécessite que le contrôleur de domaine sp�
 
 Pour résoudre ce problème, réexécutez le programme d’installation, en spécifiant le contrôleur de domaine mappé statiquement pour le paramètre **/DomainController: \<***FQDN of thestatically mapped domain controller***\>** .
 
-Pour plus d’informations sur DSAccess et la détection de services d’annuaire, consultez l’article 250570 de la Base de connaissances Microsoft « Directory Service Server Detection et utilisation de DSAccess » ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=250570](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=250570)).
+Pour plus d’informations sur DSAccess et la détection de services d’annuaire, consultez l’article 250570 de la Base de connaissances Microsoft « Directory Service Server Detection et utilisation de DSAccess » ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=250570](https://go.microsoft.com/fwlink/?linkid=3052&kbid=250570)).
 

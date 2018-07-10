@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Microsoft Exchange Server 2013 utilise l’interface de ligne de commande Windows PowerShell à distance pour établir une connexion entre le serveur et la station de travail à partir de laquelle vous administrez Exchange et le serveur qui exécute Exchange 2013 que vous administrez. Dans Exchange 2013, ceci est appelé l’environnement de ligne de commande Exchange Management Shell distant. Même si vous administrez le serveur Exchange 2013 local, l'environnement de ligne de commande Exchange Management Shell distant permet d'établir la connexion. Pour plus d'informations sur l'environnement de ligne de commande Exchange Management Shell local et distant, voir [Utilisation de PowerShell avec Exchange 2013 (Exchange Management Shell)](https://technet.microsoft.com/fr-fr/library/bb123778\(v=exchg.150\)).
 
@@ -31,18 +31,8 @@ La session distante est la session Windows PowerShell qui est exécutée sur le 
 
 Lorsque vous vous connectez à un serveur Exchange distant, une connexion est établie entre la session locale sur votre ordinateur et la session distante sur le serveur Exchange. Cette connexion vous permet d'exécuter les cmdlets Exchange sur le serveur Exchange distant dans votre session locale même si aucune cmdlet Exchange n'est installée sur votre ordinateur local. Bien que les cmdlets Exchange semblent s’exécuter sur votre ordinateur local, elles sont en réalité exécutées sur le serveur Exchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Même si vous ouvrez l'environnement de ligne de commande Exchange Management Shell sur un serveur Exchange 2013, le même processus de connexion a lieu et deux sessions sont créées. En d’autres termes, vous devez utiliser la même nouvelle syntaxe pour importer et exporter des fichiers lorsque vous ouvrez l’environnement de ligne de commande Exchange Management Shell sur un serveur Exchange 2013 ou à partir d’une station de travail client distante.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Même si vous ouvrez l'environnement de ligne de commande Exchange Management Shell sur un serveur Exchange 2013, le même processus de connexion a lieu et deux sessions sont créées. En d’autres termes, vous devez utiliser la même nouvelle syntaxe pour importer et exporter des fichiers lorsque vous ouvrez l’environnement de ligne de commande Exchange Management Shell sur un serveur Exchange 2013 ou à partir d’une station de travail client distante.
 
 
 Les cmdlets Exchange qui sont exécutées dans la session distante sur le serveur Exchange distant n'ont pas accès à votre système de fichiers local. Vous ne pouvez donc pas utiliser les cmdlets Exchange seules pour importer ou exporter des fichiers depuis ou vers votre système de fichiers local. Vous devez utiliser une syntaxe supplémentaire pour cela. Ainsi les cmdlets Exchange exécutées sur le serveur Exchange distant pourront utiliser les données du système de fichiers. Pour plus d’informations sur la syntaxe requise, voir « Importation et exportation de fichiers dans l’environnement de ligne de commande Exchange Management Shell distant » plus loin dans cette rubrique.
@@ -154,18 +144,8 @@ L'environnement de ligne de commande Exchange Management Shell doit savoir que v
 
 Par exemple, la commande suivante exporte les données stockées dans la propriété **FileData** sur l'objet créé par la cmdlet fictive **Export-SomeData**. Les données exportées sont stockées dans un fichier que vous spécifiez sur l'ordinateur local, dans ce cas MyData.dat.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette procédure utilise la cmdlet <strong>ForEach</strong>, des objets et le traitement en pipeline. Pour plus d’informations, consultez les rubriques <a href="https://technet.microsoft.com/fr-fr/library/aa998260(v=exchg.150)">Traitement en pipeline</a> et <a href="https://technet.microsoft.com/fr-fr/library/aa996386(v=exchg.150)">Données structurées</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette procédure utilise la cmdlet <strong>ForEach</strong>, des objets et le traitement en pipeline. Pour plus d’informations, consultez les rubriques <a href="https://technet.microsoft.com/fr-fr/library/aa998260(v=exchg.150)">Traitement en pipeline</a> et <a href="https://technet.microsoft.com/fr-fr/library/aa996386(v=exchg.150)">Données structurées</a>.
 
 
     Export-SomeData | ForEach { $_.FileData | Add-Content C:\MyData.dat -Encoding Byte }

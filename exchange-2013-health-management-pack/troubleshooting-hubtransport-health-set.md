@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le jeu d’intégrité **HubTransport** surveille l’intégrité globale du pipeline de transport sur les serveurs de boîtes aux lettres responsable de l’acheminement des messages électroniques dans votre organisation. Pour plus d’informations, voir [Flux de messagerie](https://technet.microsoft.com/fr-fr/library/aa996349\(v=exchg.150\)).
 

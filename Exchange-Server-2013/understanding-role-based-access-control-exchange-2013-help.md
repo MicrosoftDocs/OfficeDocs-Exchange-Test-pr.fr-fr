@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-01-31_
+_**Dernière rubrique modifiée :** 2018-01-31_
 
 Le *Role Based Access Control* (RBAC) constitue le modèle d’autorisations dans Microsoft Exchange Server 2013. Grâce au contrôle d’accès basé sur un rôle, vous n’avez pas besoin de modifier et de gérer les listes de contrôle d’accès, ce qui était le cas dans Exchange Server 2007. Les listes de contrôle d’accès impliquaient plusieurs contraintes dans Exchange 2007, notamment de modifier les listes de contrôle d’accès sans effets involontaires, de gérer tous les changements apportés aux listes par le biais des mises à niveau et de résoudre les problèmes liés à une utilisation non standard de ces mêmes listes.
 
@@ -23,18 +23,8 @@ Le contrôle d’accès basé sur un rôle vous permet de contrôler ce que les 
 
 Le contrôle d’accès basé sur un rôle dispose de deux méthodes principales pour attribuer des autorisations aux utilisateurs de votre organisation, selon que l’utilisateur soit un administrateur, un spécialiste ou un utilisateur final : la gestion des groupes de rôles et les stratégies d’attribution de rôle de gestion. Chaque méthode associe des utilisateurs aux autorisations dont ils ont besoin pour effectuer leurs tâches. Une troisième méthode plus avancée, l’attribution de rôle d’utilisateur directe, peut également être adoptée. Les sections qui suivent dans cette rubrique explique le contrôle d’accès basé sur un rôle et fournissent des exemples de son utilisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette rubrique traite de la fonctionnalité RBAC avancée. Si vous souhaitez gérer des autorisations Exchange 2013 de base, comme l’utilisation du centre d’administration Exchange pour ajouter et supprimer des membres dans les groupes de rôles, créer et modifier des groupes de rôles ou créer et modifier des stratégies d’attribution de rôles, consultez la rubrique <a href="permissions-exchange-2013-help.md">Autorisations</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette rubrique traite de la fonctionnalité RBAC avancée. Si vous souhaitez gérer des autorisations Exchange 2013 de base, comme l’utilisation du centre d’administration Exchange pour ajouter et supprimer des membres dans les groupes de rôles, créer et modifier des groupes de rôles ou créer et modifier des stratégies d’attribution de rôles, consultez la rubrique <a href="permissions-exchange-2013-help.md">Autorisations</a>.
 
 
 **Contenu de cette rubrique**
@@ -133,18 +123,8 @@ Sabine travaille en qualité d’administratrice au sein de la PME Contoso. Trav
 
 En plus du groupe de rôles personnalisé Gestion des destinataires - Vancouver, Sabine a également besoin d’une stratégie d’attribution de rôle pour gérer les paramètres de configuration de sa boîte aux lettres personnelle. Les administrateurs de l’organisation ont décidé que tous les utilisateurs, à l’exception de la direction, bénéficieront des mêmes autorisations pour la gestion de leurs boîtes aux lettres personnelles. Ils peuvent configurer leur messagerie vocale, configurer des stratégies de rétention et modifier les informations de leurs adresses. La stratégie d’attribution de rôle proposée par défaut dans Exchange 2013 reflète désormais ces besoins.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous avez peut-être remarqué que Sabine est membre du groupe de rôles personnalisé Gestion des destinataires - Vancouver, ce qui devrait lui conférer les autorisations nécessaires pour gérer sa boîte aux lettres. C’est bel et bien le cas ; cependant, le groupe de rôles ne fournit pas toutes les autorisations nécessaires pour gérer l’ensemble des fonctionnalités de sa boîte aux lettres. Les autorisations requises pour gérer les paramètres de la messagerie vocale et de la stratégie de rétention ne sont pas incluses dans son groupe de rôles. Elles sont disponibles uniquement par le biais de la stratégie d’attribution de rôle qui lui est attribuée par défaut.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous avez peut-être remarqué que Sabine est membre du groupe de rôles personnalisé Gestion des destinataires - Vancouver, ce qui devrait lui conférer les autorisations nécessaires pour gérer sa boîte aux lettres. C’est bel et bien le cas ; cependant, le groupe de rôles ne fournit pas toutes les autorisations nécessaires pour gérer l’ensemble des fonctionnalités de sa boîte aux lettres. Les autorisations requises pour gérer les paramètres de la messagerie vocale et de la stratégie de rétention ne sont pas incluses dans son groupe de rôles. Elles sont disponibles uniquement par le biais de la stratégie d’attribution de rôle qui lui est attribuée par défaut.
 
 
 Pour permettre cela, envisagez le recours au groupe de rôles qui confère à Sabine des autorisations administratives pour les destinataires de Vancouver :

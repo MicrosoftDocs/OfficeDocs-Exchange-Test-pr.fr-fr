@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2017-07-25_
+_**Dernière rubrique modifiée :** 2017-07-25_
 
 Les contrôleurs de frontière de session (SBC) vous permettent de connecter votre réseau téléphonique local à un centre de données Microsoft via une connexion WAN publique dédiée. Un contrôleur de frontière de session (SBC) opère au périmètre de votre réseau IP local et se connecte à un deuxième contrôleur de frontière de session dans un centre de données Microsoft.
 
@@ -23,36 +23,16 @@ Le contrôleur de frontière de session requiert l’utilisation de certificats 
 
 Dans des déploiements hybrides et en ligne, une passerelle IP de messagerie unifiée représente un contrôleur de frontière de session (SBC). Le nom commun sujet du certificat doit correspondre à la valeur du nom de domaine complet (FQDN) dans la zone Adresse sur la passerelle IP de messagerie unifiée que vous créez. Par exemple, si vous spécifiez une adresse de nom de domaine complet sbcexternal.contoso.com sur votre passerelle IP de messagerie unifiée, assurez-vous que le nom d’objet et l’autre nom de l’objet dans le certificat contiennent la même valeur : sbcexternal.contoso.com. Le nom que vous utilisez respecte la casse, il faut donc vérifier que la casse est la même sur le certificat et sur la passerelle IP de messagerie unifiée. Si vous utilisez un contrôleur de frontière de session (SBC) Acme Packet et que le nom commun ne correspond pas au nom de domaine complet de la passerelle IP de messagerie unifiée, l’appel est rejeté avec l’erreur 403.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Puisque les contrôleurs de frontière de session (SBC) sont conçus pour opérer sur le périmètre réseau, ceux-ci fonctionnent également comme des pare-feux. Si vous configurez un contrôleur SBC derrière le pare-feu de votre organisation, des problèmes de configuration risquent de se produire et il n’est pas pris en charge pour la connexion à Office 365.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Puisque les contrôleurs de frontière de session (SBC) sont conçus pour opérer sur le périmètre réseau, ceux-ci fonctionnent également comme des pare-feux. Si vous configurez un contrôleur SBC derrière le pare-feu de votre organisation, des problèmes de configuration risquent de se produire et il n’est pas pris en charge pour la connexion à Office 365.
 
 
 ## Contrôleurs de frontière de session pris en charge
 
 Les tests d’interopérabilité des contrôleurs de frontière de session (SBC) suivants avec des déploiements hybrides et en ligne Exchange ont été tout à fait satisfaisants. Notez que les capacités et compatibilités des contrôleurs de frontière de session (SBC) peuvent varier et la manière dont vous les configurer peut être différente selon d’autres équipements de votre réseau. Consultez le fabricant du contrôleur de frontière de session (SBC) pour vérifier s’il existe des notes de configuration spécifiques pour la messagerie unifiée dans un déploiement hybride ou en ligne.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Messagerie unifiée Exchange Online de prise en charge pour les systèmes PBX tiers via des connexions directes à partir du client géré SBCs prendra fin dans 2018 de juillet. Consultez le blog d’équipe Exchange <a href="https://blogs.technet.microsoft.com/exchange/2017/07/18/discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/">d’arrêt de la prise en charge des contrôleurs de bordure session Exchange Online de la messagerie unifiée</a> pour plus d’informations.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Messagerie unifiée Exchange Online de prise en charge pour les systèmes PBX tiers via des connexions directes à partir du client géré SBCs prendra fin dans 2018 de juillet. Consultez le blog d’équipe Exchange <a href="https://blogs.technet.microsoft.com/exchange/2017/07/18/discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/">d’arrêt de la prise en charge des contrôleurs de bordure session Exchange Online de la messagerie unifiée</a> pour plus d’informations.
 
 
 
@@ -91,18 +71,8 @@ Les tests d’interopérabilité des contrôleurs de frontière de session (SBC)
 <tr class="odd">
 <td><p><a href="https://www.cisco.com/c/dam/en/us/solutions/collateral/enterprise-networks/unified-access/cube-asr-release-10-0.pdf">Cisco</a></p></td>
 <td><p>ASR 1000</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>IOS 15.4(3)S3 ou version ultérieure doit être installé.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> IOS 15.4(3)S3 ou version ultérieure doit être installé.
 
 </td>
 <td><p><strong>Contactez le fabricant du matériel pour obtenir des instructions à jour sur la façon de configurer leur appareil.</strong></p></td>

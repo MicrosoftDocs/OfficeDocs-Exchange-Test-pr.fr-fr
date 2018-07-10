@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez configurer le port TCP qui est utilisé pour écouter les requêtes SIP (Session Initiation Protocol) sur une passerelle IP de messagerie unifiée. Par défaut, lors de la création d'une passerelle IP de messagerie unifiée, le numéro du port d'écoute SIP TCP est défini sur 5060. Le port d'écoute SIP TCP ne peut pas être configuré ou modifié à l'aide du Centre d'administration Exchange (CAE). Vous devez configurer le numéro du port d'écoute TCP SIP à l'aide de la cmdlet **Set-UMIPGateway**.
 
@@ -31,18 +31,8 @@ Vous devrez éventuellement configurer le numéro du port d'écoute TCP sur 5061
 
 Pour utiliser Mutual TLS entre une passerelle IP de messagerie unifiée et un plan de numérotation en mode Sécurisé SIP ou Sécurisé, lors de la création de la passerelle IP de messagerie unifiée, vous devez la configurer avec un nom de domaine complet, puis utiliser l'environnement de ligne de commande Exchange Management Shell pour configurer la passerelle IP de messagerie unifiée afin qu'elle écoute sur le port TCP 5061. Vous devez également vérifier que l'ensemble des passerelles VoIP, PBX compatibles SIP, PBX IP et SBC ont été configurés pour écouter les requêtes Mutual TLS sur le port 5061.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous créez une passerelle IP de messagerie unifiée à l'aide d'un nom de domaine complet, vous devez créer les enregistrements d'hôte (A) appropriés dans votre zone de recherche directe de DNS. Si vous créez une passerelle IP de messagerie unifiée à l'aide d'un nom de domaine complet et que la configuration DNS de la passerelle IP de messagerie unifiée est modifiée, vous devez désactiver puis réactiver la passerelle IP de messagerie unifiée pour garantir que ses informations de configuration soient correctement mises à jour.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous créez une passerelle IP de messagerie unifiée à l'aide d'un nom de domaine complet, vous devez créer les enregistrements d'hôte (A) appropriés dans votre zone de recherche directe de DNS. Si vous créez une passerelle IP de messagerie unifiée à l'aide d'un nom de domaine complet et que la configuration DNS de la passerelle IP de messagerie unifiée est modifiée, vous devez désactiver puis réactiver la passerelle IP de messagerie unifiée pour garantir que ses informations de configuration soient correctement mises à jour.
 
 
 Pour les autres tâches de gestion relatives aux passerelles IP de messagerie unifiée, consultez la rubrique [Procédures de passerelle IP de messagerie unifiée](um-ip-gateway-procedures-exchange-2013-help.md).
@@ -59,18 +49,8 @@ Pour les autres tâches de gestion relatives aux passerelles IP de messagerie un
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour configurer le port d'écoute TCP

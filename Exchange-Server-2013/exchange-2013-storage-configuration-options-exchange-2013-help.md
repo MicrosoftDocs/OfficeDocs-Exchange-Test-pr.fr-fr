@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 La compréhension des options et des besoins de stockage pour le rôle serveur de boîtes aux lettres dans Microsoft Exchange Server 2013 constitue un aspect vital de votre solution de conception de stockage de serveurs de boîtes aux lettres.
 
@@ -109,7 +109,7 @@ Le tableau suivant fournit une liste de types de disque physique pris en charge 
 </ul></td>
 <td><p>Prise en charge : disques avec secteur de 512 octets pour Windows Server 2008 et Windows Server 2008 R2. En outre, les disques 512e sont pris en charge pour Windows Server 2008 R2 avec ce qui suit :</p>
 <ul>
-<li><p>Le correctif logiciel décrit dans l’<a href="https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=982018">article 982018 de la Base de connaissances Microsoft</a>, « Une mise à jour améliorant la compatibilité de Windows 7 et Windows Server 2008 R2 avec les disques au format avancé est disponible ».</p></li>
+<li><p>Le correctif logiciel décrit dans l’<a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">article 982018 de la Base de connaissances Microsoft</a>, « Une mise à jour améliorant la compatibilité de Windows 7 et Windows Server 2008 R2 avec les disques au format avancé est disponible ».</p></li>
 <li><p>Windows Server 2008 R2 avec Service Pack 1 (SP1) et Exchange Server 2010 SP1.</p></li>
 </ul>
 <p>Exchange 2013 et versions ultérieures prend en charge les disques avec secteur natifs de 4 kilo-octets (Ko) et les disques 512e. La prise en charge nécessite que toutes les copies d’une base de données résident sur le même type de disque physique. Par exemple, une configuration avec une copie d’une base de données sur un disque avec secteur de 512 octets et une autre copie de cette même base de données sur un disque 512e ou un disque 4K n’est pas prise en charge.</p>
@@ -126,7 +126,7 @@ Le tableau suivant fournit une liste de types de disque physique pris en charge 
 </ul></td>
 <td><p>Prise en charge : disques avec secteur de 512 octets pour Windows Server 2008 et Windows Server 2008 R2. En outre, les disques 512e sont pris en charge pour Windows Server 2008 R2 avec ce qui suit :</p>
 <ul>
-<li><p>Le correctif logiciel décrit dans l’<a href="https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=982018">article 982018 de la Base de connaissances Microsoft</a>, « Une mise à jour améliorant la compatibilité de Windows 7 et Windows Server 2008 R2 avec les disques au format avancé est disponible ».</p></li>
+<li><p>Le correctif logiciel décrit dans l’<a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">article 982018 de la Base de connaissances Microsoft</a>, « Une mise à jour améliorant la compatibilité de Windows 7 et Windows Server 2008 R2 avec les disques au format avancé est disponible ».</p></li>
 <li><p>Windows Server 2008 R2 avec Service Pack 1 (SP1) et Exchange Server 2010 SP1.</p></li>
 </ul>
 <p>Exchange 2013 et versions ultérieures prend en charge les disques avec secteur natifs de 4 kilo-octets (Ko) et les disques 512e. La prise en charge nécessite que toutes les copies d’une base de données résident sur le même type de disque physique. Par exemple, une configuration avec une copie d’une base de données sur un disque avec secteur de 512 octets et une autre copie de cette même base de données sur un disque 512e ou un disque 4K n’est pas prise en charge.</p>
@@ -143,7 +143,7 @@ Le tableau suivant fournit une liste de types de disque physique pris en charge 
 </ul></td>
 <td><p>Prise en charge : disques avec secteur de 512 octets pour Windows Server 2008 et Windows Server 2008 R2. En outre, les disques 512e sont pris en charge pour Windows Server 2008 R2 avec ce qui suit :</p>
 <ul>
-<li><p>Le correctif logiciel décrit dans l’<a href="https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=982018">article 982018 de la Base de connaissances Microsoft</a>, « Une mise à jour améliorant la compatibilité de Windows 7 et Windows Server 2008 R2 avec les disques au format avancé est disponible ».</p></li>
+<li><p>Le correctif logiciel décrit dans l’<a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">article 982018 de la Base de connaissances Microsoft</a>, « Une mise à jour améliorant la compatibilité de Windows 7 et Windows Server 2008 R2 avec les disques au format avancé est disponible ».</p></li>
 <li><p>Windows Server 2008 R2 avec Service Pack 1 (SP1) et Exchange Server 2010 SP1.</p></li>
 </ul>
 <p>Exchange 2013 et versions ultérieures prend en charge les disques avec secteur natifs de 4 kilo-octets (Ko) et les disques 512e. La prise en charge nécessite que toutes les copies d’une base de données résident sur le même type de disque physique. Par exemple, une configuration avec une copie d’une base de données sur un disque avec secteur de 512 octets et une autre copie de cette même base de données sur un disque 512e ou un disque 4K n’est pas prise en charge.</p>
@@ -159,7 +159,7 @@ Le tableau suivant fournit une liste de types de disque physique pris en charge 
 </ul></td>
 <td><p>Prise en charge : disques avec secteur de 512 octets pour Windows Server 2008 et Windows Server 2008 R2. En outre, les disques 512e sont pris en charge pour Windows Server 2008 R2 avec ce qui suit :</p>
 <ul>
-<li><p>Le correctif logiciel décrit dans l’<a href="https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=982018">article 982018 de la Base de connaissances Microsoft</a>, « Une mise à jour améliorant la compatibilité de Windows 7 et Windows Server 2008 R2 avec les disques au format avancé est disponible ».</p></li>
+<li><p>Le correctif logiciel décrit dans l’<a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">article 982018 de la Base de connaissances Microsoft</a>, « Une mise à jour améliorant la compatibilité de Windows 7 et Windows Server 2008 R2 avec les disques au format avancé est disponible ».</p></li>
 <li><p>Windows Server 2008 R2 avec Service Pack 1 (SP1) et Exchange Server 2010 SP1.</p></li>
 </ul>
 <p>Exchange 2013 et versions ultérieures prend en charge les disques avec secteur natifs de 4 kilo-octets (Ko) et les disques 512e. La prise en charge nécessite que toutes les copies d’une base de données résident sur le même type de disque physique. Par exemple, une configuration avec une copie d’une base de données sur un disque avec secteur de 512 octets et une autre copie de cette même base de données sur un disque 512e ou un disque 4K n’est pas prise en charge.</p>
@@ -695,7 +695,7 @@ Le tableau suivant fournit des conseils sur les configurations de volume.
 <td><p>Windows BitLocker (chiffrement de volume)</p></td>
 <td><p>Windows BitLocker est une fonctionnalité de protection des données disponible dans Windows Server 2008. BitLocker protège les utilisateurs contre le vol ou l'exposition des données sur des ordinateurs perdus ou volés, et permet une suppression plus sécurisée des données lors de la mise hors service des ordinateurs.</p></td>
 <td><p>Pris en charge : Tous les fichiers de base de données et tous les fichiers journaux Exchange.</p></td>
-<td><p>Pris en charge : Tous les fichiers de base de données et tous les fichiers journaux Exchange. Les clusters de basculement Windows requièrent Windows Server 2008 R2 ou Windows Server 2008 R2 SP1 ainsi que le correctif logiciel suivant : <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2446607">Vous ne pouvez pas activer BitLocker sur un volume de disque dans Windows Server 2008 R2 si l’ordinateur est un nœud de cluster de basculement</a>. Les volumes Exchange avec Bitlocker activé ne sont pas pris en charge dans les clusters de basculement Windows exécutant des versions antérieures de Windows.</p>
+<td><p>Pris en charge : Tous les fichiers de base de données et tous les fichiers journaux Exchange. Les clusters de basculement Windows requièrent Windows Server 2008 R2 ou Windows Server 2008 R2 SP1 ainsi que le correctif logiciel suivant : <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2446607">Vous ne pouvez pas activer BitLocker sur un volume de disque dans Windows Server 2008 R2 si l’ordinateur est un nœud de cluster de basculement</a>. Les volumes Exchange avec Bitlocker activé ne sont pas pris en charge dans les clusters de basculement Windows exécutant des versions antérieures de Windows.</p>
 <p>Pour plus d’informations sur le chiffrement BitLocker Windows 7, consultez la rubrique relative au <a href="https://go.microsoft.com/fwlink/p/?linkid=220898">chiffrement de lecteur BitLocker dans Windows 7 : Forum aux questions</a>.</p></td>
 </tr>
 <tr class="odd">

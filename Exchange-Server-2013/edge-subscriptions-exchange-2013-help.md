@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les serveurs de transport Edge réduisent la surface d’attaque en traitant tout le flux de messagerie Internet et en fournissant des services d’hôte actif et de relais SMTP pour votre organisation Exchange. Des couches supplémentaires de protection et de sécurité des messages sont fournies par une série d’agents qui s’exécutent sur le serveur de transport Edge dans le réseau de périmètre de votre organisation. Ces agents prennent en charge les fonctionnalités qui fournissent une protection contre les virus et le courrier indésirable et appliquent des règles de transport pour contrôler le flux de messages.
 
@@ -119,36 +119,16 @@ Cet exemple abonne un serveur de transport Edge au site spécifié et crée aut
 
     New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les valeurs par défaut des paramètres <em>CreateInternetSendConnector</em> et <em>CreateInboundSendConnector</em> sont définies sur <code>$true</code> pour les deux. Elles sont présentées ici uniquement à titre d’illustration.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les valeurs par défaut des paramètres <em>CreateInternetSendConnector</em> et <em>CreateInboundSendConnector</em> sont définies sur <code>$true</code> pour les deux. Elles sont présentées ici uniquement à titre d’illustration.
 
 
 Cet exemple exporte un fichier d’abonnement Edge.
 
     New-EdgeSubscription -FileName "C:\EdgeSubscriptionInfo.xml"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque la cmdlet <strong>New-EdgeSubscription</strong> est exécutée sur le serveur de transport Edge, vous êtes invité à confirmer les commandes qui seront désactivées et la configuration qui sera remplacée sur le serveur de transport Edge. Pour contourner cette confirmation, vous devez utiliser le paramètre <em>Force</em>. Ce paramètre est utile lorsque vous scriptez la cmdlet <strong>New-EdgeSubscription</strong>. Le paramètre <em>Force</em> permet également de remplacer un fichier existant portant le même nom que le fichier que vous créez lorsque vous réabonnez un serveur de transport Edge.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque la cmdlet <strong>New-EdgeSubscription</strong> est exécutée sur le serveur de transport Edge, vous êtes invité à confirmer les commandes qui seront désactivées et la configuration qui sera remplacée sur le serveur de transport Edge. Pour contourner cette confirmation, vous devez utiliser le paramètre <em>Force</em>. Ce paramètre est utile lorsque vous scriptez la cmdlet <strong>New-EdgeSubscription</strong>. Le paramètre <em>Force</em> permet également de remplacer un fichier existant portant le même nom que le fichier que vous créez lorsque vous réabonnez un serveur de transport Edge.
 
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-EdgeSubscription](https://technet.microsoft.com/fr-fr/library/bb123800\(v=exchg.150\)).
@@ -244,18 +224,8 @@ Par défaut, lorsque vous exécutez la cmdlet **New-EdgeSubscription** sur le se
 <tr class="odd">
 <td><p><em>SourceTransportServers</em></p></td>
 <td><p>&lt;<em>Nom d’abonnement Edge</em>&gt;</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le nom de l’abonnement Edge est le même que le nom du serveur de transport Edge abonné.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le nom de l’abonnement Edge est le même que le nom du serveur de transport Edge abonné.
 
 </td>
 </tr>
@@ -337,32 +307,12 @@ Chaque serveur de transport Edge abonné est associé à un site Active Direct
 
 Cette méthode de verrouillage et de bail empêche que plusieurs instances du service EdgeSync envoient simultanément des données au même serveur de transport Edge.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si des serveurs de boîtes aux lettres Exchange 2010 ou Exchange 2007 sont également présents dans le site Active Directory abonné, les serveurs de boîtes aux lettres Exchange 2013 seront toujours prioritaires et effectueront la réplication.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si des serveurs de boîtes aux lettres Exchange 2010 ou Exchange 2007 sont également présents dans le site Active Directory abonné, les serveurs de boîtes aux lettres Exchange 2013 seront toujours prioritaires et effectueront la réplication.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous abonnez un serveur de transport Edge à un site Active Directory, tous les serveurs de boîtes aux lettres installés dans ce site Active Directory à ce moment-là peuvent être inclus dans le processus de synchronisation EdgeSync. Si l’un de ces serveurs est supprimé, le service EdgeSync qui s’exécute sur les serveurs de boîtes aux lettres restants poursuit le processus de synchronisation des données. Toutefois, si vous installez ultérieurement de nouveaux serveurs de boîtes aux lettres dans le site Active Directory, ils ne seront pas automatiquement inclus à la synchronisation EdgeSync. Pour activer l’inclusion de ces nouveaux serveurs de boîtes aux lettres à la synchronisation EdgeSync, vous devez vous réabonner au serveur de transport Edge.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous abonnez un serveur de transport Edge à un site Active Directory, tous les serveurs de boîtes aux lettres installés dans ce site Active Directory à ce moment-là peuvent être inclus dans le processus de synchronisation EdgeSync. Si l’un de ces serveurs est supprimé, le service EdgeSync qui s’exécute sur les serveurs de boîtes aux lettres restants poursuit le processus de synchronisation des données. Toutefois, si vous installez ultérieurement de nouveaux serveurs de boîtes aux lettres dans le site Active Directory, ils ne seront pas automatiquement inclus à la synchronisation EdgeSync. Pour activer l’inclusion de ces nouveaux serveurs de boîtes aux lettres à la synchronisation EdgeSync, vous devez vous réabonner au serveur de transport Edge.
 
 
 Le tableau suivant répertorie les propriétés EdgeSync liées au verrouillage et au bail. La cmdlet **Set-EdgeSyncServiceConfig** permet de configurer ces propriétés.

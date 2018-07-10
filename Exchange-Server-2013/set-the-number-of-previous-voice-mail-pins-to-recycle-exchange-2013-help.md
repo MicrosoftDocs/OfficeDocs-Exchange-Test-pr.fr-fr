@@ -13,26 +13,16 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Lorsque les utilisateurs d'Outlook Voice Access composent un numéro Outlook Voice Access, ils sont invités à entrer leur code confidentiel qui permet au système de messagerie vocale de les authentifier. Une fois authentifiés, ils peuvent accéder à la messagerie vocale, à la messagerie électronique, au calendrier et aux informations de contact personnelles de leur boîte aux lettres à partir de n'importe quel téléphone.
 
 Une stratégie de boîte aux lettres de messagerie unifiée permet de configurer plusieurs paramètres relatifs au code confidentiel. Le paramètre **Nombre de recyclages du code confidentiel** indique le nombre de codes confidentiels uniques que des utilisateurs doivent utiliser avant de se servir à nouveau d'un ancien code confidentiel. Vous pouvez définir la valeur de ce paramètre entre 1 et 20. Pour la plupart des organisations, il convient de définir cette valeur sur 5 codes confidentiels, ce qui est la valeur par défaut. Un paramétrage trop élevé de cette valeur peut incommoder les utilisateurs car il peut être difficile de créer et de mémoriser plusieurs codes confidentiels. Un paramétrage trop faible peut introduire une menace de sécurité dans votre réseau.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le nombre de recyclages du code confidentiel ne peut pas être désactivé.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le nombre de recyclages du code confidentiel ne peut pas être désactivé.
 
 
 Pour découvrir d'autres tâches de gestion concernant la sécurité d'Outlook Voice Access par code confidentiel, consultez la rubrique [Procédures de sécurité de code confidentiel](pin-security-procedures-exchange-2013-help.md).
@@ -49,18 +39,8 @@ Pour découvrir d'autres tâches de gestion concernant la sécurité d'Outlook V
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

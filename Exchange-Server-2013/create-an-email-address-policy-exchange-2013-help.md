@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-12-10_
+_**Dernière rubrique modifiée :** 2012-12-10_
 
 Pour qu'un destinataire puisse recevoir ou envoyer des messages électroniques, il doit avoir une adresse de messagerie. Les stratégies d’adresse de messagerie génèrent des adresses de messagerie principale et secondaire pour vos destinataires (incluant les utilisateurs, les contacts et les groupes), de façon à ce qu’ils puissent recevoir et envoyer des messages.
 
@@ -92,18 +92,8 @@ Lors de la création d’une stratégie d’adresse de messagerie, les types d�
     
       - Adresse proxy de messagerie unifiée Exchange (adresse proxy EUM)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Dans Exchange, toutes les adresses de messagerie non SMTP sont considérées comme des adresses personnalisées. Exchange ne fournit aucune boîte de dialogue ou page de propriétés unique pour les types d’adresses de messagerie X.400, GroupWise ou Lotus Notes. Si vous ajoutez une adresse de messagerie personnalisée non SMTP, vous devez disposer des fichiers bibliothèque de liens dynamiques correspondants. Si vous ne fournissez pas les fichiers DLL appropriés, vous ne pourrez pas créer de stratégie d’adresse de messagerie personnalisée. L’erreur suivante sera enregistrée dans l’Observateur d’événements : « L’objet de description de l’adresse de messagerie dans l’annuaire Microsoft Exchange pour le type d’adresse &quot; SADF &quot; sur les ordinateurs &quot; i386 &quot; est manquant. »</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Dans Exchange, toutes les adresses de messagerie non SMTP sont considérées comme des adresses personnalisées. Exchange ne fournit aucune boîte de dialogue ou page de propriétés unique pour les types d’adresses de messagerie X.400, GroupWise ou Lotus Notes. Si vous ajoutez une adresse de messagerie personnalisée non SMTP, vous devez disposer des fichiers bibliothèque de liens dynamiques correspondants. Si vous ne fournissez pas les fichiers DLL appropriés, vous ne pourrez pas créer de stratégie d’adresse de messagerie personnalisée. L’erreur suivante sera enregistrée dans l’Observateur d’événements : « L’objet de description de l’adresse de messagerie dans l’annuaire Microsoft Exchange pour le type d’adresse &quot; SADF &quot; sur les ordinateurs &quot; i386 &quot; est manquant. »
 
 
 Pour des instructions détaillées sur la création d’une stratégie d’adresse de messagerie, voir les rubriques suivantes :
@@ -122,18 +112,8 @@ Pour des instructions détaillées sur la création d’une stratégie d’adres
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -150,29 +130,15 @@ Pour des instructions détaillées sur la création d’une stratégie d’adres
     
       - **Spécifiez les types de destinataire auxquels s'appliquera cette adresse de messagerie**
 
-3.  
+3.  Cliquez sur **Ajouter une règle** pour restreindre davantage les destinataires auxquels cette stratégie s'appliquera. Cela crée l’instruction booléenne **And**.
     
-    Cliquez sur **Ajouter une règle** pour restreindre davantage les destinataires auxquels cette stratégie s'appliquera. Cela crée l’instruction booléenne **And**.
-    
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous appliquez un trop grand nombre de règles, la stratégie d’adresse de messagerie peut être restreinte au point de ne plus contenir d’utilisateurs.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > Si vous appliquez un trop grand nombre de règles, la stratégie d’adresse de messagerie peut être restreinte au point de ne plus contenir d’utilisateurs.
 
 
 4.  Cliquez sur **Afficher un aperçu des destinataires auxquels la stratégie s'applique** pour visualiser les destinataires auxquels cette stratégie doit s'appliquer.
 
-5.  
-    
-    Cliquez sur **Enregistrer** pour enregistrer vos modifications et créer la stratégie.
+5.  Cliquez sur **Enregistrer** pour enregistrer vos modifications et créer la stratégie.
 
 6.  Un avertissement apparaît pour vous indiquer que la stratégie d’adresse de messagerie s’appliquera uniquement lorsque vous l’aurez mise à jour. Après sa création, sélectionnez-la puis, dans le volet des détails, cliquez sur **Appliquer**.
 

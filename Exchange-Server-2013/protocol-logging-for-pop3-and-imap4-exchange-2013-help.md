@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Vous pouvez utiliser la journalisation du protocole pour vérifier les connexions POP3 et IMAP4 dans votre environnement Exchange. Cette opération peut être utile si vous effectuez des dépannages relatifs aux performances POP3 ou IMAP4.
 

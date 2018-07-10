@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-04-26_
+_**Dernière rubrique modifiée :** 2017-04-26_
 
 La conversion d’une boîte aux lettres en une boîte aux lettres de type différent est très semblable à la procédure dans Exchange 2010. Vous devez toujours utiliser la cmdlet Set-Mailbox dans l’interpréteur de commandes pour réaliser la conversion.
 
@@ -33,18 +33,8 @@ Voici les conversions de boîtes aux lettres qui sont possibles :
 
 Si votre organisation utilise un environnement Exchange hybride, vous devez gérer vos boîtes aux lettres à l’aide des outils locaux de gestion Exchange. Pour convertir une boîte aux lettres dans un environnement hybride, vous devrez peut-être déplacer la boîte aux lettres vers l’instance Exchange locale, convertir le type de boîte aux lettres, puis la redéplacer vers Office 365.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous convertissez une boîte aux lettres d’utilisateur en boîte aux lettres partagée, vous devez soit supprimer les appareils mobiles de la boîte aux lettres avant la conversion, soit bloquer l’accès mobile à la boîte aux lettres après la conversion. En effet, une fois la boîte aux lettres convertie en boîte aux lettres partagée, les fonctionnalités mobiles ne fonctionnent plus correctement. Pour savoir comment bloquer l’accès mobile, consultez l’article <a href="https://go.microsoft.com/fwlink/p/?linkid=847873">Supprimer un ancien employé d’Office 365</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous convertissez une boîte aux lettres d’utilisateur en boîte aux lettres partagée, vous devez soit supprimer les appareils mobiles de la boîte aux lettres avant la conversion, soit bloquer l’accès mobile à la boîte aux lettres après la conversion. En effet, une fois la boîte aux lettres convertie en boîte aux lettres partagée, les fonctionnalités mobiles ne fonctionnent plus correctement. Pour savoir comment bloquer l’accès mobile, consultez l’article <a href="https://go.microsoft.com/fwlink/p/?linkid=847873">Supprimer un ancien employé d’Office 365</a>.
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour convertir une boîte aux lettres
@@ -79,16 +69,6 @@ La valeur de *RecipientTypeDetails* doit être *UserMailbox*.
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123685\(v=exchg.150\)).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

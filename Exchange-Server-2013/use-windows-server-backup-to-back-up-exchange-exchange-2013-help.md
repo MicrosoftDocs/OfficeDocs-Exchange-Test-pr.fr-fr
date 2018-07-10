@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-06-18_
+_**Dernière rubrique modifiée :** 2014-06-18_
 
 Vous pouvez utiliser la Sauvegarde Windows Server pour sauvegarder et restaurer des bases de données Exchange. Exchange contient un plug-in pour la Sauvegarde Windows Server vous permettant d’effectuer des sauvegardes basées sur le service VSS (Volume Shadow Copy Service) des données Exchange.
 
@@ -29,18 +29,8 @@ Vous pouvez utiliser la Sauvegarde Windows Server pour sauvegarder et restaurer 
 
   - Lors de l’opération de sauvegarde, une vérification de la cohérence des fichiers de données Exchange est réalisée pour s’assurer que les fichiers sont en bon état et qu’ils peuvent être utilisés à des fins de récupération. Si la vérification de la cohérence réussit, les données Exchange peuvent être récupérées à partir de cette sauvegarde. Dans le cas contraire, les données Exchange ne peuvent pas être récupérées. La sauvegarde Windows Server exécute la vérification de la cohérence sur la capture instantanée prise pour la sauvegarde. Ainsi, avant de copier les fichiers de la capture instantanée vers le média de sauvegarde, la cohérence de la sauvegarde est connue et l’utilisateur reçoit les résultats de la vérification de la cohérence.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Utiliser la Sauvegarde Windows Server pour effectuer une sauvegarde d’Exchange
@@ -57,34 +47,14 @@ Vous pouvez utiliser la Sauvegarde Windows Server pour sauvegarder et restaurer 
 
 6.  Sur la page **Sélectionner les éléments à sauvegarder**, cliquez sur **Ajouter des éléments** pour sélectionner les volumes à sauvegarder, puis cliquez sur **OK**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Choisissez des volumes et non des dossiers individuels. La seule façon d’effectuer une sauvegarde ou une restauration de niveau application est de sélectionner un volume entier.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Choisissez des volumes et non des dossiers individuels. La seule façon d’effectuer une sauvegarde ou une restauration de niveau application est de sélectionner un volume entier.
 
 
 7.  Cliquez sur **Paramètres avancés**. Sur l’onglet **Exclusions**, cliquez sur **Ajouter une exclusion** pour ajouter des fichiers ou types de fichiers que vous souhaitez exclure de la sauvegarde.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Par défaut, les volumes contenant les composants ou applications du système d’exploitation sont inclus dans la sauvegarde et ne peuvent pas être exclus.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Par défaut, les volumes contenant les composants ou applications du système d’exploitation sont inclus dans la sauvegarde et ne peuvent pas être exclus.
 
 
 8.  Sur l’onglet **Paramètres VSS**, sélectionnez **Sauvegarde complète VSS**, cliquez sur **OK**, puis sur **Suivant**.

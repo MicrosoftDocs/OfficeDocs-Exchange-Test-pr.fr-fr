@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 
@@ -39,18 +39,8 @@ Pour résoudre ce problème, renommez l'ordinateur local. Vous pouvez également
 
 4.  Cliquez sur **OK** pour fermer la boîte de dialogue **Propriétés système**. Vous êtes invité à redémarrer votre ordinateur pour appliquer les modifications.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si l’ordinateur que vous souhaitez renommer est un contrôleur de domaine, consultez la rubrique sur la modification du nom d’un contrôleur de domaine (<a href="https://go.microsoft.com/fwlink/?linkid=66828">https://go.microsoft.com/fwlink/?LinkId=66828</a>).</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si l’ordinateur que vous souhaitez renommer est un contrôleur de domaine, consultez la rubrique sur la modification du nom d’un contrôleur de domaine (<a href="https://go.microsoft.com/fwlink/?linkid=66828">https://go.microsoft.com/fwlink/?LinkId=66828</a>).
 
 
 **Pour modifier l'adresse SMTP d'une stratégie de destinataire**
@@ -63,5 +53,5 @@ Pour résoudre ce problème, renommez l'ordinateur local. Vous pouvez également
 
 4.  Cliquez sur l’onglet **Adresses de messagerie**, puis modifiez l’adresse SMTP appropriée
 
-Pour plus d'informations sur les problèmes de nom de stratégie de destinataire, voir l'article 288175 de la Base de connaissances Microsoft sur La stratégie du destinataire ne parvient à trouver le FQDN d’aucun serveur dans l’organisation, notifications d’échec de remise 5.4.8 » ([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=288175)).
+Pour plus d'informations sur les problèmes de nom de stratégie de destinataire, voir l'article 288175 de la Base de connaissances Microsoft sur La stratégie du destinataire ne parvient à trouver le FQDN d’aucun serveur dans l’organisation, notifications d’échec de remise 5.4.8 » ([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052&kbid=288175)).
 

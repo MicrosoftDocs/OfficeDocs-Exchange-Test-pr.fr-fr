@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-01_
+_**Dernière rubrique modifiée :** 2015-01-01_
 
 Une relation organisationnelle permet aux utilisateurs de votre organisation Exchange de partager des informations de disponibilité de calendrier avec une organisation Office 365 ou une autre organisation Exchange sur site. Vous souhaiterez peut-être modifier les paramètres d’une relation organisationnelle, tels que la modification du nom, la désactivation temporaire du partage du calendrier, la modification du niveau d’accès ou des groupes de sécurité qui partageront des calendriers.
 
@@ -105,16 +105,6 @@ Pour vérifier que vous avez correctement mis à jour la relation d’organisati
 
     Get-OrganizationRelationship | format-list
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

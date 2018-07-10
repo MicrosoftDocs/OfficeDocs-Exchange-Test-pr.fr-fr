@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-04-15_
+_**Dernière rubrique modifiée :** 2013-04-15_
 
 AutoReseed est une fonction qui permet de restaurer rapidement la redondance des bases de données après une erreur du disque. En cas de défaillance du disque, les copies de bases de données stockées sur le disque sont automatiquement réamorcées sur un disque de rechange préconfiguré sur le serveur de boîtes aux lettres. Suivez les étapes indiquées dans la présente rubrique pour configurer AutoReseed pour un groupe de disponibilité de base de données.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La fonction AutoReseed n'effectue aucune tâche de configuration prérequise à votre place. L'installation correcte des disques, l'ajout des disques de réserve au système, le remplacement des disques incorrects et le formatage de nouveaux disques doivent être exécutés manuellement pas un administrateur.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> La fonction AutoReseed n'effectue aucune tâche de configuration prérequise à votre place. L'installation correcte des disques, l'ajout des disques de réserve au système, le remplacement des disques incorrects et le formatage de nouveaux disques doivent être exécutés manuellement pas un administrateur.
 
 
 Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives aux groupes de disponibilité de base de données, consultez la rubrique [Gestion de groupes de disponibilité de base de données](managing-database-availability-groups-exchange-2013-help.md).
@@ -47,18 +37,8 @@ Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives a
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Comment procéder ?
@@ -105,6 +85,7 @@ Créez ensuite les répertoires correspondant aux répertoires racine configuré
 
     md C:\ExchangeDatabases
     md C:\ExchangeVolumes
+   
 
 ## Comment savoir si cette étape a fonctionné ?
 
@@ -137,14 +118,18 @@ Les dossiers montés devraient apparaître dans la liste des résultats.
 ## Étape 5 : Créer les dossiers de base de données
 
 Ensuite, créez les répertoires de base de données sous le chemin d'accès racine C:\\ExchangeDatabases. Cet exemple montre comment créer des répertoires pour une configuration de stockage avec 4 bases de données sur chaque volume.
-
+```
     md c:\ExchangeDatabases\db001
-
+```
+```
     md c:\ExchangeDatabases\db002
-
+```
+```
     md c:\ExchangeDatabases\db003
-
+```
+```
     md c:\ExchangeDatabases\db004
+```
 
 ## Comment savoir si cette étape a fonctionné ?
 
@@ -177,22 +162,30 @@ C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.db
 C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.log
 
 Cet exemple montre comment créer des répertoires pour 4 bases de données qui seront stockées sur le volume 1 :
-
+```
     md c:\ExchangeDatabases\db001\db001.db
-
+```
+```
     md c:\ExchangeDatabases\db001\db001.log
-
+```
+```
     md c:\ExchangeDatabases\db002\db002.db
-
+```
+```
     md c:\ExchangeDatabases\db002\db002.log
-
+```
+```
     md c:\ExchangeDatabases\db003\db003.db
-
+```
+```
     md c:\ExchangeDatabases\db003\db003.log
-
+```
+```
     md c:\ExchangeDatabases\db004\db004.db
-
+```
+```
     md c:\ExchangeDatabases\db004\db004.log
+```
 
 Répétez les commandes précédentes pour les bases de données sur chaque volume.
 
@@ -227,8 +220,10 @@ Pour vérifier que vous avez bien configuré AutoReseed pour un groupe de dispon
         Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
 
 2.  Exécutez la commande suivante pour vérifier que la structure de répertoires est configurée correctement (vous trouverez ci-dessous les chemins d'accès par défaut ; si nécessaire, remplacez les chemins d'accès par ceux que vous utilisez).
-    
+    ```
         Dir c:\ExchangeDatabases /s
-    
+    ```
+    ```
         Dir c:\ExchangeVolumes /s
+    ```    
 

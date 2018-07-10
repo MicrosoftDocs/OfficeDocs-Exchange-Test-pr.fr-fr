@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Cette rubrique explique comment personnaliser la couleur et les images des pages de connexion, de sélection de la langue et d'erreur pour Outlook Web App.
 
@@ -23,18 +23,8 @@ Signe dans Outlook Web App, sélection de la langue, les pages d’erreur sont c
 
 Si vous disposez de plusieurs serveurs prenant en charge Outlook Web App et si vous souhaitez que tous utilisent les mêmes pages de connexion, de langue et d'erreur, vous devez copier les fichiers modifiés sur chaque serveur. Vous devez également créer une copie de sauvegarde de vos fichiers personnalisés. Si vous réinstallez ou mettez à niveau Exchange, tous les fichiers des dossiers de thèmes seront remplacés. Vous devrez recopier vos fichiers personnalisés dans le dossier approprié une fois la réinstallation ou la mise à niveau terminée
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avant de créer vos pages de connexion et de déconnexion personnalisées, conservez une copie des fichiers à modifier</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Avant de créer vos pages de connexion et de déconnexion personnalisées, conservez une copie des fichiers à modifier
 
 
 Pour obtenir des informations sur la création d'un thème personnalisé, consultez la rubrique [Création d’un thème pour Outlook Web App](create-a-theme-for-outlook-web-app-exchange-2013-help.md).
@@ -47,18 +37,8 @@ Pour obtenir des informations sur la création d'un thème personnalisé, consul
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -135,16 +115,6 @@ Si vous ne voyez pas vos modifications, procédez comme suit :
 
 5.  Actualisez la fenêtre du navigateur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour voir les effets de vos modifications, vous pouvez garder ouvert le fichier .css que vous modifiez et actualiser la fenêtre du navigateur après avoir enregistré chaque modification.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Pour voir les effets de vos modifications, vous pouvez garder ouvert le fichier .css que vous modifiez et actualiser la fenêtre du navigateur après avoir enregistré chaque modification.
 

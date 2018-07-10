@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-09-13_
+_**Dernière rubrique modifiée :** 2012-09-13_
 
 Les procédures décrites dans les sections suivantes vous permettent de configurer des modèles d’autorisation avancée pour votre organisation. Vous devez avoir une connaissance approfondie du contrôle d’accès basé sur un rôle (RBAC) avant de procéder à la personnalisation avancée de votre modèle d’autorisation.
 

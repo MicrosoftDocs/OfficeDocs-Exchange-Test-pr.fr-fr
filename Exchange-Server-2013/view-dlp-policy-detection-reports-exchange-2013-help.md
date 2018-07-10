@@ -13,26 +13,16 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-16_
+_**Dernière rubrique modifiée :** 2016-12-16_
 
 La gestion de la détection de la stratégie de protection contre la perte de données (DLP) définit les activités exécutées par une organisation afin d'identifier, d'enquêter et de résoudre les violations des stratégies DLP. Afin de gérer les incidents, vous devez disposer de l'accès aux informations qui identifient les éléments détectés par vos stratégies DLP. Ces informations de détection sont intégrées dans les formats de données et de journaux Microsoft Exchange Server 2013 existants afin d'exploiter un système de données riche pour la gestion des incidents de flux de messagerie.
 
 Pour plus d'informations sur la création d'un rapport de compte rendu d'incident avec un événement de détection des stratégies, consultez la rubrique [Créer des rapports de compte-rendu d’incident pour la détection de stratégies DLP](create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md). Pour plus d'informations sur les journaux de messages, consultez la rubrique [Suivre les messages avec des rapports de remise](track-messages-with-delivery-reports-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2013 : la protection contre la perte de données est une fonctionnalité étendue qui nécessite une licence d’accès client (CAL) Exchange Enterprise. Pour plus d’informations sur les licences d’accès client et les licences par serveur, consultez la rubrique <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Licences Exchange Server</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Exchange 2013 : la protection contre la perte de données est une fonctionnalité étendue qui nécessite une licence d’accès client (CAL) Exchange Enterprise. Pour plus d’informations sur les licences d’accès client et les licences par serveur, consultez la rubrique <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Licences Exchange Server</a>.
 
 
 ## Informations d'audit

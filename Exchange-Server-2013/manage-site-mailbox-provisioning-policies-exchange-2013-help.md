@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Les stratégies de mise en service des boîtes aux lettres de site s'appliquent uniquement aux messages électroniques envoyés à la boîte aux lettres de site ou à partir de celle-ci, ainsi qu'à la taille de la boîte aux lettres de site sur le serveur Exchange.
 
@@ -33,18 +33,8 @@ Pour plus d'informations sur les boîtes aux lettres de site, consultez la rubri
 
   - Vous ne pouvez pas utiliser le Centre d’administration Exchange (CAE) pour effectuer cette procédure. Vous devez utiliser l'environnement de ligne de commande Exchange Management Shell.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -93,34 +83,14 @@ Cet exemple permet de désactiver l'attribution de préfixe en définissant le p
 
 Cet exemple permet de modifier la stratégie de mise en service par défaut et de définir le paramètre *AliasPrefix* sur FOREST01.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour des déploiements à plusieurs forêts, nous vous recommandons d'utiliser un préfixe différent dans chaque forêt afin d'éviter les conflits lors de la synchronisation d'objets entre forêts, dans l'éventualité ou les boîtes aux lettres de site auraient été créées avec des noms identiques dans deux forêts ou plus.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour des déploiements à plusieurs forêts, nous vous recommandons d'utiliser un préfixe différent dans chaque forêt afin d'éviter les conflits lors de la synchronisation d'objets entre forêts, dans l'éventualité ou les boîtes aux lettres de site auraient été créées avec des noms identiques dans deux forêts ou plus.
 
 
     Set-SiteMailboxProvisioningPolicy -Identity Default -AliasPrefix FOREST01 -DefaultAliasPrefixEnabled $false
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans le cas d'un déploiement hybride où Exchange est installé en local et dans Office 365, toutes les boîtes aux lettres de site en nuage sont créées avec le préfixe <strong>SMO-</strong>. Les préfixes sont différents dans Office 365 et dans Exchange en local afin que les clients hybrides ne rencontrent pas de conflits si les boîtes aux lettres sont créées dans les deux emplacements et sont synchronisées inter-site. Le paramètre AliasPrefix a la priorité sur le paramètre DefaultAliasPrefixEnabled. Par conséquent, si le paramètre <em>AliasPrefix</em> est défini sur une chaîne valide non Null, cette chaîne est ajoutée devant l'alias de chaque nouvelle boîte aux lettres de site.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans le cas d'un déploiement hybride où Exchange est installé en local et dans Office 365, toutes les boîtes aux lettres de site en nuage sont créées avec le préfixe <strong>SMO-</strong>. Les préfixes sont différents dans Office 365 et dans Exchange en local afin que les clients hybrides ne rencontrent pas de conflits si les boîtes aux lettres sont créées dans les deux emplacements et sont synchronisées inter-site. Le paramètre AliasPrefix a la priorité sur le paramètre DefaultAliasPrefixEnabled. Par conséquent, si le paramètre <em>AliasPrefix</em> est défini sur une chaîne valide non Null, cette chaîne est ajoutée devant l'alias de chaque nouvelle boîte aux lettres de site.
 
 
 ## Supprimer une stratégie de mise en service de boîte aux lettres de site
@@ -129,18 +99,8 @@ Cet exemple supprime la stratégie de boîte aux lettres de site par défaut cr�
 
     Remove-SiteMailboxProvisioningPolicy -Identity Default
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez commencer par créer et désigner une autre stratégie par défaut avant de pouvoir supprimer la stratégie <strong>Par défaut</strong>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez commencer par créer et désigner une autre stratégie par défaut avant de pouvoir supprimer la stratégie <strong>Par défaut</strong>.
 
 
 ## Pour plus d'informations

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-12_
+_**Dernière rubrique modifiée :** 2015-03-12_
 
 Vous pouvez configurer un téléphone mobile, tel qu'un téléphone Windows, de façon à pouvoir utiliser MicrosoftExchange ActiveSync. Vous devez effectuer cette procédure sur chaque téléphone mobile appartenant à votre organisation.
 
@@ -25,18 +25,8 @@ Vous pouvez configurer un téléphone mobile, tel qu'un téléphone Windows, de 
 
   - Exchange ActiveSync est activé dans votre organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour obtenir des informations spécifiques de l’appareil relatives à la configuration de la messagerie Microsoft Exchange sur un téléphone ou une tablette, consultez la rubrique <a href="https://support.office.com/fr-fr/article/set-up-a-mobile-device-using-office-365-for-business-7dabb6cb-0046-40b6-81fe-767e0b1f014f">Configurer un appareil mobile à l’aide d’Office 365 pour les entreprises</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour obtenir des informations spécifiques de l’appareil relatives à la configuration de la messagerie Microsoft Exchange sur un téléphone ou une tablette, consultez la rubrique <a href="https://support.office.com/fr-fr/article/set-up-a-mobile-device-using-office-365-for-business-7dabb6cb-0046-40b6-81fe-767e0b1f014f">Configurer un appareil mobile à l’aide d’Office 365 pour les entreprises</a>.
 
 
 ## Configurer un téléphone mobile pour utiliser Exchange ActiveSync

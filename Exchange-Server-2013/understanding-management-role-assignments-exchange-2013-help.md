@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-04_
+_**Dernière rubrique modifiée :** 2012-10-04_
 
 Une *attribution de rôle de gestion*, qui fait partie du modèle d’autorisation du contrôle d’accès basé sur un rôle dans Microsoft Exchange Server 2013, est le lien existant entre un rôle de gestion et un utilisateur de rôle. Un *utilisateur de rôle* est un groupe de rôles, une stratégie d’attribution de rôles, un utilisateur ou un groupe universel de sécurité (USG). Un rôle doit être attribué à un utilisateur de rôle pour entrer en vigueur. Pour plus d'informations sur le contrôle d'accès basé sur un rôle, consultez la rubrique [Présentation du contrôle d'accès basé sur un rôle](understanding-role-based-access-control-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette rubrique traite de la fonctionnalité RBAC avancée. Si vous souhaitez gérer des autorisations Exchange 2013 de base, comme l’utilisation du centre d’administration Exchange pour ajouter et supprimer des membres dans les groupes de rôles, créer et modifier des groupes de rôles ou créer et modifier des stratégies d’attribution de rôles, consultez la rubrique <a href="permissions-exchange-2013-help.md">Autorisations</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette rubrique traite de la fonctionnalité RBAC avancée. Si vous souhaitez gérer des autorisations Exchange 2013 de base, comme l’utilisation du centre d’administration Exchange pour ajouter et supprimer des membres dans les groupes de rôles, créer et modifier des groupes de rôles ou créer et modifier des stratégies d’attribution de rôles, consultez la rubrique <a href="permissions-exchange-2013-help.md">Autorisations</a>.
 
 
 Cette rubrique explique l’attribution de rôles aux groupes de rôles, les stratégies d’attribution de rôles et l’attribution de rôles directs aux utilisateurs et groupes universels de sécurité. Elle n’aborde pas l’attribution de groupes de rôles ou des stratégies d’attribution de rôles pour les utilisateurs. Pour plus d’informations sur les groupes de rôles et les stratégies d’attribution de rôles, méthode recommandée pour attribuer des autorisations aux utilisateurs, consultez les rubriques suivantes :
@@ -89,18 +79,8 @@ Les attributions de rôles normales permettent à l’utilisateur de rôles d’
 
 Les attributions de rôles de délégation ne donnent pas accès à la gestion des fonctionnalités. Les attributions de rôles de délégation permettent à un utilisateur de rôle d’attribuer le rôle spécifié aux autres utilisateurs de rôle. Si l’utilisateur de rôle est un groupe de rôles, n’importe quel membre du groupe de rôles peut attribuer le rôle à un autre utilisateur de rôle. Par défaut, seul le groupe de rôles Gestion de l’organisation peut attribuer des rôles à d’autres utilisateurs de rôles. Seul l’utilisateur ayant installé Exchange 2013 est membre du groupe de rôles Gestion de l’organisation par défaut. Vous pouvez toutefois y ajouter d’autres utilisateurs si nécessaire, ou créer d’autres groupes de rôles et attribuer des attributions de rôles de délégation à ces groupes.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les attributions de rôles de délégation permettent aux utilisateurs de rôles de déléguer des rôles de gestion à d’autres utilisateurs de rôles. Cela ne permet pas aux utilisateurs de déléguer des groupes de rôles. Pour plus d’informations sur la délégation des groupes de rôles, consultez la rubrique <a href="understanding-management-role-groups-exchange-2013-help.md">Présentation des groupes de rôles de gestion</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les attributions de rôles de délégation permettent aux utilisateurs de rôles de déléguer des rôles de gestion à d’autres utilisateurs de rôles. Cela ne permet pas aux utilisateurs de déléguer des groupes de rôles. Pour plus d’informations sur la délégation des groupes de rôles, consultez la rubrique <a href="understanding-management-role-groups-exchange-2013-help.md">Présentation des groupes de rôles de gestion</a>.
 
 
 Si vous désirez qu’un utilisateur puisse gérer une fonctionnalité et attribuer à d’autres utilisateurs le rôle qui lui donne l’autorisation d’utiliser la fonctionnalité, attribuez comme suit :

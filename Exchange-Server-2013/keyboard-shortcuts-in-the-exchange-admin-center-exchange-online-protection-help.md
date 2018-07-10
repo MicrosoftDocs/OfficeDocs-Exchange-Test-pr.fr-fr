@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Microsoft s'engage à faciliter l'utilisation de ses produits et services pour tous. Les sections suivantes fournissent des informations sur les raccourcis clavier qui permettent aux personnes à mobilité réduite d'accéder plus facilement à Microsoft Exchange et aux autres produits et services Microsoft.
 
@@ -44,36 +44,16 @@ En utilisant des raccourcis clavier dans le Centre d'administration Exchange (CA
 <tr class="even">
 <td><p>Se déplacer entre les éléments des menus déroulants dans le Centre d'administration Exchange</p></td>
 <td><p>Flèches Haut et Bas.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les touches Tab et Maj-Tab ne permettent pas de passer d'un élément de menu à un autre dans ce cas.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les touches Tab et Maj-Tab ne permettent pas de passer d'un élément de menu à un autre dans ce cas.
 
 </td>
 </tr>
 <tr class="odd">
 <td><p>Parcourir les éléments d'une liste</p></td>
 <td><p>Les touches de direction Haut, Bas, Origine, Fin, Pg préc, Pg suiv.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez également utiliser les touches de direction Haut, Bas, Gauche et Droite pour passer d'une case d'option à une autre ou pour parcourir un groupe de cases à cocher associées.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez également utiliser les touches de direction Haut, Bas, Gauche et Droite pour passer d'une case d'option à une autre ou pour parcourir un groupe de cases à cocher associées.
 
 </td>
 </tr>

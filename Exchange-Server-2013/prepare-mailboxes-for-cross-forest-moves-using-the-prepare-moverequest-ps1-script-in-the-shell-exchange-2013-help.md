@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-11-22_
+_**Dernière rubrique modifiée :** 2017-11-22_
 
-**Résumé:** Apprenez à gérer les déplacements de boîtes aux lettres de forêt croisée et les migrations de Exchange 2013 à l’aide du script MoveRequest.ps1-préparer dans le Environnement de ligne de commande Exchange Management Shell.
+**Résumé:**  Apprenez à gérer les déplacements de boîtes aux lettres de forêt croisée et les migrations de Exchange 2013 à l’aide du script MoveRequest.ps1-préparer dans le Environnement de ligne de commande Exchange Management Shell.
 
 Microsoft Exchange 2013 prend en charge les déplacements de boîtes aux lettres et de migrations à l’aide des applets de commande **New-MoveRequest** et **New-MigrationBatch** . Vous pouvez également déplacer la boîte aux lettres via Exchange Administration Center (EAC). Vous pouvez déplacer un Exchange 2010 ou une boîte aux lettres de Exchange 2013 d’une forêt de Exchange source pour une forêt de Exchange 2013 cible.
 
@@ -39,18 +39,8 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux demandes d
     
       - Une forêt cible dans laquelle Exchange 2013 est installé, à l’endroit où la boîte aux lettres sera déplacée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser le script Prepare-MoveRequest.ps1 pour préparer les boîtes aux lettres en vue de déplacements inter-forêts
@@ -59,18 +49,8 @@ Exécutez le script depuis l’environnement de ligne de commande sur un rôle s
 
 Pour affecter des informations spécifiques d’identification d’authentification pour le contrôleur de domaine de forêt distant, vous devez tout d’abord exécuter la cmdlet Windows PowerShell **Get-Credential**, puis stocker l’entrée de l’utilisateur dans une variable temporaire. Lorsque vous exécutez la cmdlet **Get-Credential**, celle-ci demande le nom d’utilisateur et le mot de passe du compte utilisé durant l’authentification auprès du contrôleur de domaine de forêt distant. Vous pouvez ensuite utiliser la variable temporaire dans le script Prepare-MoveRequest.ps1. Pour plus d’informations à propos de la cmdlet **Get-Credential**, voir [Get-Credential](https://go.microsoft.com/fwlink/p/?linkid=142122).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Assurez-vous d’utiliser deux informations d’identification distinctes pour la forêt locale et la forêt distante lors de l’appel de ce script.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Assurez-vous d’utiliser deux informations d’identification distinctes pour la forêt locale et la forêt distante lors de l’appel de ce script.
 
 
 1.  Exécutez les commandes suivantes pour obtenir les informations d’identification de la forêt locale et de la forêt distante.
@@ -129,18 +109,8 @@ Le tableau suivant décrit l’ensemble des paramètres associés au script.
 <td><p>Facultatif</p></td>
 <td><p>Le paramètre <em>DisableEmailAddressPolicy</em> spécifie si le protocole EAP (Email Address Policy) doit être désactivé à la création d’un objet <strong>MailUser</strong> dans la forêt cible.</p>
 <p>Lorsque vous spécifiez ce paramètre, l’EAP dans la forêt cible ne sera pas appliqué.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous spécifiez ce paramètre, l’objet <strong>MailUser</strong> n’aura pas de mappage d’adresse de messagerie dans le domaine de forêt locale identifié. Ceci est généralement identifié par l’EAP.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous spécifiez ce paramètre, l’objet <strong>MailUser</strong> n’aura pas de mappage d’adresse de messagerie dans le domaine de forêt locale identifié. Ceci est généralement identifié par l’EAP.
 
 </td>
 </tr>

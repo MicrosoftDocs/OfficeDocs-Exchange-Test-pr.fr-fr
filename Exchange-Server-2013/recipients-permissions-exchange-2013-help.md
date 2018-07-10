@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les autorisations nécessaires pour effectuer les tâches de gestion des destinataires varient en fonction de la procédure exécutée ou de la cmdlet à exécuter.
 
@@ -27,18 +27,8 @@ Pour trouver les autorisations dont vous avez besoin pour effectuer la procédur
 
 3.  Maintenant, exécutez la cmdlet **Get-ManagementRoleAssignment** pour vérifier si les groupes de rôles ou les rôles de gestion qui vous ont été attribués vous permettent de bénéficier des autorisations nécessaires pour gérer la fonctionnalité.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le rôle de gestion de rôle doit vous être attribué pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>. Si vous ne bénéficiez pas des autorisations pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>, demandez à votre administrateur Exchange de récupérer les groupes de rôles ou les rôles de gestion qui vous sont attribués.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Le rôle de gestion de rôle doit vous être attribué pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>. Si vous ne bénéficiez pas des autorisations pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>, demandez à votre administrateur Exchange de récupérer les groupes de rôles ou les rôles de gestion qui vous sont attribués.
 
 
 Si vous souhaitez déléguer la possibilité de gérer une fonctionnalité à un autre utilisateur, voir [Déléguer les attributions de rôles](delegate-role-assignments-exchange-2013-help.md).
@@ -85,18 +75,9 @@ Les utilisateurs auxquels est affecté le groupe de rôles de gestion de l’org
 <td><p><a href="organization-management-exchange-2013-help.md">Gestion de l’organisation</a></p>
 <p><a href="view-only-organization-management-exchange-2013-help.md">Gestion de l’organisation en affichage seul</a></p>
 <p>Prise en charge du rôle de diagnostics</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le rôle de Diagnostics du support n'est pas affecté à un groupe de rôles. Pour plus d'informations, consultez la rubrique <a href="add-a-role-to-a-user-or-usg-exchange-2013-help.md">Ajouter un rôle à un utilisateur ou un groupe de sécurité universel</a>.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Le rôle de Diagnostics du support n'est pas affecté à un groupe de rôles. Pour plus d'informations, consultez la rubrique <a href="add-a-role-to-a-user-or-usg-exchange-2013-help.md">Ajouter un rôle à un utilisateur ou un groupe de sécurité universel</a>.
 
 </td>
 </tr>
@@ -108,18 +89,9 @@ Les utilisateurs auxquels est affecté le groupe de rôles de gestion de l’org
 <tr class="odd">
 <td><p>Importer et exporter</p></td>
 <td><p>Rôle d'importation et d'exportation de boîtes aux lettres</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le rôle d'importation et d'exportation de boîte aux lettres n'est pas affecté à un groupe de rôles. Pour plus d'informations, consultez la rubrique <a href="mailbox-import-export-role-exchange-2013-help.md">Rôle d’importation et d’exportation de boîtes aux lettres</a>.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Le rôle d'importation et d'exportation de boîte aux lettres n'est pas affecté à un groupe de rôles. Pour plus d'informations, consultez la rubrique <a href="mailbox-import-export-role-exchange-2013-help.md">Rôle d’importation et d’exportation de boîtes aux lettres</a>.
 
 </td>
 </tr>

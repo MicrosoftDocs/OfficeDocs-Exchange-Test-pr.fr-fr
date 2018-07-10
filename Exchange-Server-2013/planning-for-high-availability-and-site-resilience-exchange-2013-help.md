@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Pendant la phase de planification, les architectes, administrateurs et autres intervenants sur le système doivent identifier les impératifs de l’entreprise et de l’architecture pour le déploiement, en particulier les exigences de haute disponibilité et de résilience de site.
 
@@ -139,18 +139,8 @@ Dans cet exemple, le réseau MAPI de chaque membre du groupe de disponibilité d
 
 À n’importe quel moment spécifique, le cluster du groupe de disponibilité de base de données n’utilisera qu’une des adresses IP affectées. La fonction de clustering avec basculement Windows enregistre cette adresse IP dans le DNS quand l’adresse IP du cluster et les ressources de nom du réseau sont mises en ligne. En plus de l’utilisation d’une adresse IP et d’un nom de réseau, un objet nom de cluster (CNO) est créé dans Active Directory. Le nom, l’adresse IP et le CNO du cluster sont utilisés en interne par le système pour sécuriser le groupe de disponibilité de base de données et à des fins de communication interne. Les administrateurs et les utilisateurs finaux n’ont pas besoin d’interface ni de connexion avec le nom du groupe de disponibilité de base de données ni avec l’adresse IP.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Bien que le nom de réseau et l’adresse IP du cluster soient utilisés en interne par le système, il n’y a pas de dépendance irréversible dans Exchange 2013 pour que ces ressources soient disponibles. Même si le point d’accès administratif du cluster sous-jacent (c’est-à-dire, les ressources d’adresse IP et de nom de réseau) est en mode hors connexion, la communication interne a quand même lieu dans le groupe de disponibilité de base de données à l’aide du nom des serveurs membres de ce groupe. Cependant, nous vous recommandons de contrôler périodiquement la disponibilité de ces ressources afin de vous assurer qu’elles ne sont pas hors ligne pendant plus de 30 jours. Si le cluster sous-jacent est hors ligne pendant plus de 30 jours, le compte de CNO peut être invalidé par le mécanisme de nettoyage de la mémoire dans Active Directory.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Bien que le nom de réseau et l’adresse IP du cluster soient utilisés en interne par le système, il n’y a pas de dépendance irréversible dans Exchange 2013 pour que ces ressources soient disponibles. Même si le point d’accès administratif du cluster sous-jacent (c’est-à-dire, les ressources d’adresse IP et de nom de réseau) est en mode hors connexion, la communication interne a quand même lieu dans le groupe de disponibilité de base de données à l’aide du nom des serveurs membres de ce groupe. Cependant, nous vous recommandons de contrôler périodiquement la disponibilité de ces ressources afin de vous assurer qu’elles ne sont pas hors ligne pendant plus de 30 jours. Si le cluster sous-jacent est hors ligne pendant plus de 30 jours, le compte de CNO peut être invalidé par le mécanisme de nettoyage de la mémoire dans Active Directory.
 
 
 ## Configuration de la carte réseau pour les groupes de disponibilité de base de données

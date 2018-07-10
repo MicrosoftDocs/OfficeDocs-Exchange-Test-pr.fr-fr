@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-12_
+_**Dernière rubrique modifiée :** 2012-10-12_
 
 Le filtrage des expéditeurs s’appuie sur l’en-tête SMTP MAIL FROM: pour déterminer l’action à effectuer (le cas échéant) pour un message entrant. Le filtrage des expéditeurs est fourni par l'agent de filtrage des expéditeurs.
 
@@ -27,18 +27,8 @@ L'agent de filtrage des expéditeurs agit sur les messages provenant d'expédite
 
 Vous pouvez désigner des expéditeurs bloqués et définir la manière dont l’agent doit traiter les messages d’expéditeurs bloqués. Pour plus d'informations sur la configuration de l'agent de filtrage des expéditeurs, voir [Gérer le filtrage des expéditeurs](manage-sender-filtering-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les en-têtes MAIL FROM: SMTP peuvent être usurpées. C'est pourquoi vous ne devez pas vous appuyer uniquement sur l'agent de filtrage des expéditeurs. Utilisez l'agent de filtrage des expéditeurs et l'agent d'ID de l'expéditeur conjointement. L’agent d’ID de l’expéditeur utilise l’adresse IP du serveur d’envoi pour vérifier que le domaine dans l’en-tête MAIL FROM: SMTP correspond au domaine qui est enregistré. Pour plus d'informations sur l'agent d'ID de l'expéditeur, consultez la rubrique <a href="sender-id-exchange-2013-help.md">ID de l'expéditeur</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les en-têtes MAIL FROM: SMTP peuvent être usurpées. C'est pourquoi vous ne devez pas vous appuyer uniquement sur l'agent de filtrage des expéditeurs. Utilisez l'agent de filtrage des expéditeurs et l'agent d'ID de l'expéditeur conjointement. L’agent d’ID de l’expéditeur utilise l’adresse IP du serveur d’envoi pour vérifier que le domaine dans l’en-tête MAIL FROM: SMTP correspond au domaine qui est enregistré. Pour plus d'informations sur l'agent d'ID de l'expéditeur, consultez la rubrique <a href="sender-id-exchange-2013-help.md">ID de l'expéditeur</a>.
 
 
 ## Utilisation de l’agent de filtrage des expéditeurs pour bloquer des messages

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Lorsque vous planifiez votre déploiement de votre messagerie unifiée, de nombreux facteurs doivent être pris en compte pour aboutir à un déploiement correct. Vous devez connaître les différents éléments de la messagerie unifiée, ainsi que chaque composant et fonction de façon à pouvoir planifier correctement l’infrastructure et le déploiement de la messagerie unifiée. L'allocation de temps à la planification et à la résolution de ces problèmes contribue à éviter des problèmes lors du déploiement d'une messagerie unifiée au sein de vitre organisation.
 
@@ -79,18 +79,8 @@ La messagerie unifiée nécessite l'intégration de votre déploiement Exchange 
 
 Pour plus d'informations sur Microsoft Lync Server, consultez la rubrique [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La planification et le déploiement de la messagerie unifiée peuvent constituer certains défis. Selon votre compétence technique dans Exchange et les systèmes de messagerie vocale, vous pourriez souhaiter obtenir l’assistance d’un spécialise de la messagerie unifiée. Un spécialiste en messagerie unifiée Exchange va vous aider à assurer une transition homogène d’un système de messagerie vocale hérité ou tiers vers la messagerie unifiée Exchange. L’exécution d’un nouveau déploiement ou la mise à niveau d’un système de messagerie vocale hérité nécessite une très bonne connaissance des passerelles IP, des PBX et de la messagerie unifiée. Pour plus d’informations sur comment contacter un spécialiste de la messagerie unifiée, consultez <a href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013 Unified Messaging (UM) Specialists</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La planification et le déploiement de la messagerie unifiée peuvent constituer certains défis. Selon votre compétence technique dans Exchange et les systèmes de messagerie vocale, vous pourriez souhaiter obtenir l’assistance d’un spécialise de la messagerie unifiée. Un spécialiste en messagerie unifiée Exchange va vous aider à assurer une transition homogène d’un système de messagerie vocale hérité ou tiers vers la messagerie unifiée Exchange. L’exécution d’un nouveau déploiement ou la mise à niveau d’un système de messagerie vocale hérité nécessite une très bonne connaissance des passerelles IP, des PBX et de la messagerie unifiée. Pour plus d’informations sur comment contacter un spécialiste de la messagerie unifiée, consultez <a href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013 Unified Messaging (UM) Specialists</a>.
 
 
 ## Étapes de déploiement

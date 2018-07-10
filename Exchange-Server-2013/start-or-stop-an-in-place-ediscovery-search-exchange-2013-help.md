@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-07-14_
+_**Dernière rubrique modifiée :** 2014-07-14_
 
 Vous pouvez arrêter ou redémarrer une recherche par découverte électronique locale à tout moment. Par exemple, pour modifier les propriétés de recherche telles que les mots-clés ou les boîtes aux lettres recherchées, vous devez commencer par arrêter une recherche. Vous pouvez alors redémarrer la recherche après avoir apporté les modifications requises.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous relancez une recherche par découverte électronique locale, les résultats de la recherche copiés dans la boîte aux lettres de découverte spécifiée dans la recherche sont supprimés.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Si vous relancez une recherche par découverte électronique locale, les résultats de la recherche copiés dans la boîte aux lettres de découverte spécifiée dans la recherche sont supprimés.
 
 
 ## Ce qu'il faut savoir avant de commencer
@@ -41,18 +31,8 @@ Vous pouvez arrêter ou redémarrer une recherche par découverte électronique 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

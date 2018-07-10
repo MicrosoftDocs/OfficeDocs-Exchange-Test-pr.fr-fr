@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Utilisez cette liste de vérification lors de la mise à niveau de la messagerie unifiée Exchange 2007 vers Exchange 2013. Veillez à vous référer à ces informations lors de la mise à niveau de votre organisation Exchange 2007 et de votre déploiement de messagerie unifiée vers Exchange 2013. Pour obtenir des instructions détaillées sur la mise à niveau vers la messagerie unifiée Exchange 2013, consultez la rubrique [Mise à niveau de la messagerie unifiée d’Exchange 2007 vers celle d’Exchange 2013](upgrade-exchange-2007-um-to-exchange-2013-um-exchange-2013-help.md).
 

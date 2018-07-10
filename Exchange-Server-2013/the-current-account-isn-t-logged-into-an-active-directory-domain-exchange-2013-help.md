@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2014-12-02_
+_**Dernière rubrique modifiée :** 2014-12-02_
 
 La configuration de Microsoft Exchange Server 2013 ne peut pas continuer, car le compte actuel n’est pas connecté à un domaine Active Directory. Vous devez vous connecter à l'aide d'un compte Active Directory ayant les autorisations requises pour installer Exchange Server 2013.
 
@@ -23,18 +23,8 @@ Le programme d’installation requiert que l’utilisateur connecté lors de l�
 
 Pour résoudre ce problème, accordez à l’utilisateur connecté des autorisations appropriées ou ouvrez une session à l’aide d’un compte possédant ces autorisations, puis exécutez de nouveau le programme d’installation d’Exchange 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L’installation inter-forêts d’Exchange 2013 n’est pas prise en charge. Utilisez un compte membre de la forêt Active Directory dans laquelle vous installez Exchange 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L’installation inter-forêts d’Exchange 2013 n’est pas prise en charge. Utilisez un compte membre de la forêt Active Directory dans laquelle vous installez Exchange 2013.
 
 
 Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), et [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Cette rubrique décrit les autorisations nécessaires pour configurer une organisation Microsoft Exchange Server 2013. Les groupes de sécurité universels qui sont associés aux groupes de rôles de gestion, et autres groupes et principaux de sécurité Windows sont ajoutés aux listes de contrôle d'accès (ACL) de divers objets Active Directory. Les listes de contrôle d'accès déterminent les opérations qui peuvent être réalisées sur chaque objet. En comprenant les autorisations accordées à chaque groupe de rôles, groupe de sécurité ou principal de sécurité, vous pouvez déterminer les autorisations minimales requises pour installer Exchange 2013.
 
@@ -174,18 +174,8 @@ Pour plus d’informations sur les autorisations définies durant une installati
 
 Les tableaux d'autorisations contenus dans cette section répertorient les autorisations qui sont définies lors de l'exécution de la commande `Setup /PrepareAD`.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les autorisations décrites dans cette section sont les autorisations par défaut qui sont configurées lorsque vous déployez Exchange 2013 avec le modèle d’autorisations partagées. Si vous avez déployé Exchange 2013 avec le modèle d’autorisations divisées Active Directory, les autorisations par défaut sont différentes. Pour plus d’informations sur les modifications apportées aux autorisations par défaut lors de l’utilisation des autorisations divisées Active Directory et des modèles d’autorisations divisées et partagées en général, voir <a href="understanding-split-permissions-exchange-2013-help.md">Active Directory split permissions</a> dans <a href="understanding-split-permissions-exchange-2013-help.md">Présentation des autorisations fractionnées</a>. Si vous choisissez de ne pas utiliser les autorisations divisées Active Directory lorsque vous installez Exchange, Exchange utilisera les autorisations partagées.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les autorisations décrites dans cette section sont les autorisations par défaut qui sont configurées lorsque vous déployez Exchange 2013 avec le modèle d’autorisations partagées. Si vous avez déployé Exchange 2013 avec le modèle d’autorisations divisées Active Directory, les autorisations par défaut sont différentes. Pour plus d’informations sur les modifications apportées aux autorisations par défaut lors de l’utilisation des autorisations divisées Active Directory et des modèles d’autorisations divisées et partagées en général, voir <a href="understanding-split-permissions-exchange-2013-help.md">Active Directory split permissions</a> dans <a href="understanding-split-permissions-exchange-2013-help.md">Présentation des autorisations fractionnées</a>. Si vous choisissez de ne pas utiliser les autorisations divisées Active Directory lorsque vous installez Exchange, Exchange utilisera les autorisations partagées.
 
 
 ## Autorisations du conteneur Microsoft Exchange
@@ -1712,18 +1702,8 @@ Les tableaux d’autorisations contenus dans cette section répertorient les aut
 
 Les tableaux suivants répertorient les autorisations qui sont définies lors de l'exécution de la commande `Setup /PrepareDomain`.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les autorisations décrites dans cette section sont les autorisations par défaut qui sont configurées lorsque vous déployez Exchange 2013 avec le modèle d’autorisations partagées. Si vous avez déployé Exchange 2013 avec le modèle d’autorisations divisées Active Directory, les autorisations par défaut sont différentes. Pour plus d’informations sur les modifications apportées aux autorisations par défaut lors de l’utilisation des autorisations divisées Active Directory et des modèles d’autorisations divisées et partagées en général, voir <a href="understanding-split-permissions-exchange-2013-help.md">Active Directory split permissions</a> dans <a href="understanding-split-permissions-exchange-2013-help.md">Présentation des autorisations fractionnées</a>. Si vous choisissez de ne pas utiliser les autorisations divisées Active Directory lorsque vous installez Exchange, Exchange utilisera les autorisations partagées.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les autorisations décrites dans cette section sont les autorisations par défaut qui sont configurées lorsque vous déployez Exchange 2013 avec le modèle d’autorisations partagées. Si vous avez déployé Exchange 2013 avec le modèle d’autorisations divisées Active Directory, les autorisations par défaut sont différentes. Pour plus d’informations sur les modifications apportées aux autorisations par défaut lors de l’utilisation des autorisations divisées Active Directory et des modèles d’autorisations divisées et partagées en général, voir <a href="understanding-split-permissions-exchange-2013-help.md">Active Directory split permissions</a> dans <a href="understanding-split-permissions-exchange-2013-help.md">Présentation des autorisations fractionnées</a>. Si vous choisissez de ne pas utiliser les autorisations divisées Active Directory lorsque vous installez Exchange, Exchange utilisera les autorisations partagées.
 
 
 ### Nom unique de l’objet : DC=\<domaine\>

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-20_
+_**Dernière rubrique modifiée :** 2013-04-20_
 
 Après avoir déployé tout le matériel de téléphonie requis pour votre organisation, y compris vos passerelles VoIP, PBX IP et SBC, vous devez créer tous les composants de messagerie unifiée qui permettront à vos appareils téléphoniques de communiquer avec les serveurs au sein de votre organisation.
 

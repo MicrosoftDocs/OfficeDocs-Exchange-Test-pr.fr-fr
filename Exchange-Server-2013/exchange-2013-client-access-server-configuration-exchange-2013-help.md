@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-07-25_
+_**Dernière rubrique modifiée :** 2017-07-25_
 
 Après avoir installé le serveur d’accès au client Exchange 2013, vous pouvez exécuter diverses tâches de configuration. Bien que le serveur d’accès au client dans Exchange 2013 ne gère pas le traitement des protocoles clients, plusieurs paramètres doivent lui être appliqués, notamment les paramètres de répertoire virtuel et de certificat.
 
@@ -39,18 +39,8 @@ Vous pouvez configurer plusieurs paramètres dans les répertoires virtuels pour
     
         Get-OutlookAnywhere | Set-OutlookAnywhere -InternalHostname "internalServer.contoso.com" -InternalClientAuthenticationMethod Ntlm -InternalClientsRequireSsl $true -ExternalHostname "externalServer.company.com" -ExternalClientAuthenticationMethod Basic -ExternalClientsRequireSsl $true -IISAuthenticationMethods Negotiate,NTLM,Basic
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Bien qu'Exchange 2013 prenne en charge Negotiate pour l'authentification HTTP Outlook Anywhere, vous ne devez l'utiliser que lorsque tous les serveurs de l'environnement exécutent Exchange 2013.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]  
+    > Bien qu'Exchange 2013 prenne en charge Negotiate pour l'authentification HTTP Outlook Anywhere, vous ne devez l'utiliser que lorsque tous les serveurs de l'environnement exécutent Exchange 2013.
 
 
   - Pour configurer Exchange ActiveSync, exécutez la commande suivante.
@@ -80,11 +70,12 @@ Vous devrez exécuter les commandes suivantes pour configurer les répertoires v
         Set-OwaVirtualDirectory "<CAS2013>\OWA (Default Web Site)" -ExternalUrl https://mail.contoso.com/OWA
     
     À l'invite de commande, exécutez les commandes suivantes une fois que vous avez défini le répertoire virtuel Outlook Web App.
-    
+    ```
         Net stop IISAdmin /y
-    
+    ```
+    ```
         Net start W3SVC
-
+    ```
 2.  Pour configurer l'accès externe au CAE, exécutez la commande suivante dans Exchange Management Shell.
     
         Set-EcpVirtualDirectory "<CAS2013>\ECP (Default Web Site)" -ExternalUrl https://mail.contoso.com/ECP -InternalURL https://mail.contoso.com/ECP 

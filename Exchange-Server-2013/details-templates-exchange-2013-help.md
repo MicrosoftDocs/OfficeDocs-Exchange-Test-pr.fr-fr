@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-12_
+_**Dernière rubrique modifiée :** 2012-10-12_
 
 Les modèles de détails contrôlent l’apparence des propriétés d’objet accessibles via les listes d’adresses dans un client de messagerie, tel que Microsoft Outlook. Par exemple, quand un utilisateur ouvre une liste d'adresses dans Outlook, les propriétés des destinataires de cette liste d'adresses sont présentées de la manière définie par le modèle de détails de votre organisation Exchange. La figure suivante illustre les propriétés du destinataire Kim Akers, telles qu’elles s’affichent dans Outlook 2013. L’utilisation de l’Éditeur de modèles de détails dans la boîte à outils Exchange 2013 permet de modifier l’organisation et le contenu des différents objets qui s’affichent dans cette page de propriétés.
 

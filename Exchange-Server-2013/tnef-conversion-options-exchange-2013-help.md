@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Vous pouvez spécifier si le format TNEF (Transport Neutral Encapsulation Format) doit être conservé ou supprimé des messages sortants de l’organisation Exchange. Le format TNEF, également appelé format RTF d’Outlook ou format RTF d’Exchange, est un format propre à Microsoft permettant d’encapsuler les propriétés de message MAPI. Toutes les versions de MicrosoftOutlook sont parfaitement compatibles avec le format TNEF. Outlook Web App convertit le format TNEF en MAPI et affiche les messages formatés. Cependant, d’autres clients de messagerie non compatibles affichent généralement des messages au format TNEF en texte brut avec des pièces jointes Winmail.dat ou Win.dat.
 
@@ -95,18 +95,8 @@ Retour au début
 
 Les expéditeurs peuvent contrôler les options de conversion TNEF par défaut pour les messages TNEF envoyés à tous les destinataires en dehors de l'organisation Exchange. Ces options sont intitulées *Format des messages Internet*. Les options s'appliquent uniquement aux destinataires distants et non aux destinataires dans l'organisation Exchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les options suivantes déterminent la façon dont les messages contenant le format RTF d'Outlook sont traités lorsqu'ils sont envoyés à des destinataires externes. Si le format de message utilisé est HTML ou du texte brut, ces paramètres ne s’appliquent pas.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les options suivantes déterminent la façon dont les messages contenant le format RTF d'Outlook sont traités lorsqu'ils sont envoyés à des destinataires externes. Si le format de message utilisé est HTML ou du texte brut, ces paramètres ne s’appliquent pas.
 
 
 Vous disposez des options de conversion TNEF suivantes dans Outlook :

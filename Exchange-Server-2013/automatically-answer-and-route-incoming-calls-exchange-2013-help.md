@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-08-26_
+_**Dernière rubrique modifiée :** 2013-08-26_
 
 La messagerie unifiée Microsoft Exchange vous permet de créer un ou plusieurs standards automatiques de messagerie unifiée en fonction des besoins de votre organisation. Contrairement aux autres composants de messagerie unifiée, tels que les plans de numérotation et les passerelles IP de messagerie unifiée, vous n'êtes pas obligé de créer des standards automatiques de messagerie unifiée. Toutefois, les standards automatiques aident des appelants internes et externes à localiser des utilisateurs ou départements d'une organisation et à leur transférer des appels. Cette rubrique présente la fonctionnalité de standard automatique de la messagerie unifiée.
 
@@ -73,18 +73,8 @@ Pour les déploiements locaux et hybrides, si vous installez la version anglaise
 
 Par exemple, si vous possédez une entreprise basée aux États-Unis mais qui requiert un système de menus proposant aux appelants des options en anglais É.U., en espagnol et en français, vous devez d'abord installer les modules linguistiques de messagerie unifiée dont vous avez besoin. Dans ce cas, si vous avez installé la version anglaise (É.U.), vous devez installer les modules linguistiques de messagerie unifiée en espagnol et français. Toutefois, comme il n'est possible de configurer qu'une seule langue à la fois pour un standard automatique de messagerie unifiée, vous devez créer quatre standards automatiques : un standard automatique principal configuré pour utiliser l'anglais É.U., puis un standard automatique pour chaque langue : anglais É.U., espagnol et français. Vous devez ensuite configurer le standard automatique principal pour qu'il dispose des mappages de touches ou d'une navigation par menu appropriés pour accéder aux autres standards automatiques que vous avez créés pour chaque langue. Dans cet exemple, le standard automatique principal répond à l'appel entrant et l'appelant entend le message : « Bienvenue chez Contoso, Ltd. Pour l'anglais, appuyez sur ou dites 1. Pour l'espagnol, appuyez sur ou dites 2. Pour le français , appuyez sur ou dites 3.»
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans la messagerie unifiée Exchange, les utilisateurs d’Outlook Voice Access authentifiés et non authentifiés ne peuvent pas rechercher des utilisateurs dans l’annuaire à l’aide de la saisie vocale, quelle que soit la langue. Toutefois, les appelants qui passent par un standard automatique peuvent utiliser la saisie vocale dans plusieurs langues pour parcourir les menus du standard et rechercher des utilisateurs dans l’annuaire.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Dans la messagerie unifiée Exchange, les utilisateurs d’Outlook Voice Access authentifiés et non authentifiés ne peuvent pas rechercher des utilisateurs dans l’annuaire à l’aide de la saisie vocale, quelle que soit la langue. Toutefois, les appelants qui passent par un standard automatique peuvent utiliser la saisie vocale dans plusieurs langues pour parcourir les menus du standard et rechercher des utilisateurs dans l’annuaire.
 
 
 Retour au début

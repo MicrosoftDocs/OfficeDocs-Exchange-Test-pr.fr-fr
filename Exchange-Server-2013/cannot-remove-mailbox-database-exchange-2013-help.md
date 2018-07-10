@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2012-11-08_
+_**Dernière rubrique modifiée :** 2012-11-08_
 
 Impossible de poursuivre le programme d’installation de Microsoft Exchange Server 2013 car il ne peut pas supprimer une base de données de boîte aux lettres d’utilisateur du serveur local sans risquer une éventuelle perte de données.
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**Dernière rubrique modifiée :**2017-03-20_
+_**Dernière rubrique modifiée :** 2017-03-20_
 
 **Résumé** : Suivez ces étapes pour redonner à votre infrastructure de dossiers publics son état pré-migration dans votre organisation Exchange 2013 locale.
 

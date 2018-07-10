@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2017-07-25_
+_**Dernière rubrique modifiée :** 2017-07-25_
 
 La messagerie unifiée nécessite d'intégrer Microsoft Exchange au système de téléphonie existant de votre organisation. Un déploiement réussi nécessite une analyse attentive de votre infrastructure de téléphonie existante et d'effectuer les étapes de planification correctes pour déployer la messagerie unifiée.
 
@@ -51,18 +51,8 @@ Il est difficile de créer des instructions pour déployer des réseaux téléph
 
   - **Notes de configuration pour les contrôleurs de frontière de session pris en charge**   Ces notes de configuration contiennent des paramètres de configuration et d'autres informations très utiles lors de la configuration de contrôleurs de frontière de session pour communiquer avec les serveurs de messagerie unifiée situés dans des déploiements de messagerie unifiée hybrides et Exchange Online. Pour plus d'informations, consultez la rubrique [Notes de configuration pour les contrôleurs de frontière de session pris en charge](configuration-notes-for-supported-session-border-controllers-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Messagerie unifiée Exchange Online de prise en charge pour les systèmes PBX tiers via des connexions directes à partir du client géré SBCs prendra fin dans 2018 de juillet. Consultez le blog d’équipe Exchange <a href="https://blogs.technet.microsoft.com/exchange/2017/07/18/discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/">d’arrêt de la prise en charge des contrôleurs de bordure session Exchange Online de la messagerie unifiée</a> pour plus d’informations.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Messagerie unifiée Exchange Online de prise en charge pour les systèmes PBX tiers via des connexions directes à partir du client géré SBCs prendra fin dans 2018 de juillet. Consultez le blog d’équipe Exchange <a href="https://blogs.technet.microsoft.com/exchange/2017/07/18/discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging/">d’arrêt de la prise en charge des contrôleurs de bordure session Exchange Online de la messagerie unifiée</a> pour plus d’informations.
 
 
 Avant de consulter un spécialiste de messagerie unifiée, vous devez pouvoir répondre aux questions clés qu'ils vous poseront. Cela vous permettra de rendre la conversation plus productive :

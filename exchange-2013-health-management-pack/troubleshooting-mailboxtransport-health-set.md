@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Project Server 2013_
+_**Sapplique à :** Exchange Server 2013, Project Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 L’indicateur d’intégrité **MailboxTransport** surveille l’intégrité globale des services de dépôt de transport de boîtes aux lettres et de remise de transport de boîtes aux lettres sur les serveurs de boîtes aux lettres. Ces services sont chargés d’envoyer des messages en provenance et à destination de bases de données de boîtes aux lettres. Pour plus d’informations, voir [Flux de messagerie](https://technet.microsoft.com/fr-fr/library/aa996349\(v=exchg.150\)).
 

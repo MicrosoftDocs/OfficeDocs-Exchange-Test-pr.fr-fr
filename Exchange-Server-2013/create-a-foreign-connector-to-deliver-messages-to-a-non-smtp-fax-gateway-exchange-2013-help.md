@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-17_
+_**Dernière rubrique modifiée :** 2012-10-17_
 
 Vous pouvez avoir un scénario dans lequel vous voulez envoyer et recevoir des messages d'un serveur passerelle de fax qui n'utilise pas SMTP comme mécanisme de transport principal. Suivez les étapes indiquées dans la présente procédure pour créer un connecteur étranger qui remet à et reçoit des messages d'un système étranger.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans la plupart des cas où vous devez communiquer des messages sortants à un système autre que SMTP, nous recommandons l’utilisation de connecteurs d’agent de remise, parce qu’ils permettent la gestion de file d’attente de messages, que les messages n’ont pas à être écrits dans le système de fichiers, et pour d’autres raisons avantageuses. La rubrique <a href="delivery-agents-and-delivery-agent-connectors-exchange-2013-help.md">Agents de remise et connecteurs d’agent de remise</a> fournit de plus amples détails.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Dans la plupart des cas où vous devez communiquer des messages sortants à un système autre que SMTP, nous recommandons l’utilisation de connecteurs d’agent de remise, parce qu’ils permettent la gestion de file d’attente de messages, que les messages n’ont pas à être écrits dans le système de fichiers, et pour d’autres raisons avantageuses. La rubrique <a href="delivery-agents-and-delivery-agent-connectors-exchange-2013-help.md">Agents de remise et connecteurs d’agent de remise</a> fournit de plus amples détails.
 
 
 Intéressé par des scénarios où cette procédure est utilisée ? Consultez les rubriques suivantes :
@@ -45,18 +35,8 @@ Intéressé par des scénarios où cette procédure est utilisée ? Consultez l
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Comment procéder ?

@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
-Le filtrage des expéditeurs est fourni par l'agent de filtrage des expéditeurs. L'agent de filtrage des expéditeurs s'appuie sur l'en-tête SMTP **MAIL FROM:** pour déterminer l’action à effectuer (le cas échéant) pour un message entrant.
+Le filtrage des expéditeurs est fourni par l'agent de filtrage des expéditeurs. L'agent de filtrage des expéditeurs s'appuie sur l'en-tête SMTP **MAIL FROM:**  pour déterminer l’action à effectuer (le cas échéant) pour un message entrant.
 
 Lorsque la fonctionnalité de filtrage des expéditeurs est activée sur un serveur Exchange, elle filtre tous les messages transmis via l'ensemble des connecteurs de réception présents.
 
@@ -33,18 +33,8 @@ Lorsque la fonctionnalité de filtrage des expéditeurs est activée sur un serv
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -59,18 +49,8 @@ Pour activer le filtrage des expéditeurs, exécutez la commande suivante :
 
     Set-SenderFilterConfig -Enabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Quand vous désactivez le filtrage des expéditeurs, l'agent de filtrage des expéditeurs sous-jacent reste activé. Pour désactiver l'agent de filtrage des expéditeurs, exécutez la commande suivante : <code>Disable-TransportAgent &quot;Sender Filter Agent&quot;</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Quand vous désactivez le filtrage des expéditeurs, l'agent de filtrage des expéditeurs sous-jacent reste activé. Pour désactiver l'agent de filtrage des expéditeurs, exécutez la commande suivante : <code>Disable-TransportAgent &quot;Sender Filter Agent&quot;</code>.
 
 
 ## Comment savoir si cela a fonctionné ?

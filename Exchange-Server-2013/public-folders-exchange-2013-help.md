@@ -13,40 +13,20 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-03-27_
+_**Dernière rubrique modifiée :** 2017-03-27_
 
 Les dossiers publics sont conçus pour assurer un accès partagé et offrir une manière simple et efficace de collecter, d'organiser et de partager des informations avec d'autres personnes de votre groupe de travail ou de votre organisation. Les dossiers publics aident à organiser un contenu sous la forme d’une hiérarchie profonde, facile à parcourir. Les utilisateurs peuvent voir la hiérarchie complète dans Outlook, ce qui leur permet de parcourir aisément le contenu qui les intéresse.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Des dossiers publics sont disponibles dans les clients Outlook suivants : Outlook Web App pour Exchange 2013, Outlook 2007, Outlook 2010, Outlook 2013 et Outlook pour Mac.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Des dossiers publics sont disponibles dans les clients Outlook suivants : Outlook Web App pour Exchange 2013, Outlook 2007, Outlook 2010, Outlook 2013 et Outlook pour Mac.
 
 
 Les dossiers publics peuvent également servir de méthode d'archivage pour des groupes de distribution. Lorsque vous activez la messagerie unifiée pour un dossier public et ajoutez ce dernier comme membre du groupe de distribution, le courrier envoyé au groupe est automatiquement ajouté au dossier public pour référence ultérieure.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour accéder à des dossiers publics sur des serveurs Exchange 2013, vous devez utiliser Outlook 2007 ou une version ultérieure.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour accéder à des dossiers publics sur des serveurs Exchange 2013, vous devez utiliser Outlook 2007 ou une version ultérieure.
 
 
 Les dossiers publics ne sont pas conçus pour effectuer les opérations suivantes :
@@ -91,18 +71,8 @@ Il existe deux types de boîtes aux lettres de dossiers publics : la *boîte au
 
   - **Boîtes aux lettres de hiérarchie secondaire**   Les boîtes aux lettres de hiérarchie secondaire accueillent du contenu de dossier public ainsi qu’une copie en lecture seule de la hiérarchie de dossiers publics.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les stratégies de rétention ne sont pas prises en charge pour les boîtes aux lettres de dossiers publics.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les stratégies de rétention ne sont pas prises en charge pour les boîtes aux lettres de dossiers publics.
 
 
 Vous pouvez gérer les boîtes aux lettres de dossiers publics de deux manières :
@@ -133,36 +103,16 @@ La hiérarchie de dossiers publics contient les propriétés des dossiers et des
 
   - Place du dossier dans l'arborescence de dossiers publics (avec ses dossiers parents et enfants)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La hiérarchie ne contient pas d'informations sur les adresses de messagerie pour les dossiers publics à extension messagerie. Les adresses de messagerie sont stockées sur l'objet annuaire dans Active Directory.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La hiérarchie ne contient pas d'informations sur les adresses de messagerie pour les dossiers publics à extension messagerie. Les adresses de messagerie sont stockées sur l'objet annuaire dans Active Directory.
 
 
 ## Synchronisation de hiérarchie
 
 Le processus de synchronisation de la hiérarchie de dossiers publics utilise une méthode de synchronisation des changements incrémentielle (ICS), mécanisme permettant de surveiller et de synchroniser les modifications apportées à la hiérarchie ou au contenu d'une banque d'informations Exchange. Ces modifications incluent la création, la modification et la suppression de dossiers et de messages. Lorsque des utilisateurs sont connectés à des boîtes aux lettres de contenu et les utilisent, une synchronisation a lieu toutes les 15 minutes. Si aucun utilisateur n'est connecté à une boîte aux lettres de contenu, la synchronisation a lieu moins souvent (toutes les 24 heures). Si une opération d'écriture, telle la création d'un dossier, est effectuée sur la hiérarchie principale, la synchronisation a lieu immédiatement (de façon synchrone) sur la boîte aux lettres de contenu.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Étant donné qu'il n'existe qu'une seule copie accessible en écriture de la hiérarchie, la création de dossier est transmise en proxy à la boîte aux lettres de la hiérarchie par la boîte aux lettres de contenu à laquelle les utilisateurs sont connectés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Étant donné qu'il n'existe qu'une seule copie accessible en écriture de la hiérarchie, la création de dossier est transmise en proxy à la boîte aux lettres de la hiérarchie par la boîte aux lettres de contenu à laquelle les utilisateurs sont connectés.
 
 
 Dans une grande organisation, lorsque vous créez une boîte aux lettres de dossiers publics, la hiérarchie doit se synchroniser sur ce dossier public avant que des utilisateurs puissent s'y connecter. Autrement, les utilisateurs peuvent voir une structure de dossiers publics incomplète en se connectant avec Outlook. Pour laisser le temps nécessaire à la synchronisation sans que des utilisateurs tentent de se connecter à la nouvelle boîte aux lettres de dossiers publics, définissez le paramètre *IsExcludedFromServingHierarchy* sur la cmdlet **New-Mailbox** lors de la création de la boîte aux lettres de dossiers publics. Ce paramètre empêche les utilisateurs de se connecter à la boîte aux lettres de dossiers publics nouvellement créé. Une fois la synchronisation terminée, exécutez la cmdlet [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)) avec le paramètre *IsExcludedFromServingHierarchy* défini sur `false`, indiquant que la boîte aux lettres de dossiers publics est prête pour connexion. Vous pouvez également utiliser la cmdlet [Get-PublicFolderMailboxDiagnostics](https://technet.microsoft.com/fr-fr/library/jj218720\(v=exchg.150\)) pour afficher l'état de synchronisation par les propriétés *SyncInfo* et *AssistantInfo*.
@@ -173,18 +123,8 @@ Pour plus d'informations, consultez la rubrique [Créer un dossier public](creat
 
 Le contenu de dossier public peut inclure des messages électroniques, des publications, des documents et des formulaires électroniques. Le contenu est stocké dans la boîte aux lettres de dossiers publics, mais n'est pas répliqué sur plusieurs boîtes aux lettres de dossiers publics. Tous les utilisateurs accèdent à la même boîte aux lettres de dossiers publics pour le même contenu. Si la recherche en texte intégral de contenu de dossier public est disponible, il n'est pas possible de rechercher dans le contenu de plusieurs dossiers publics, et le contenu n'est pas indexé par Exchange Search.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook Web App est pris en charge, mais dans certaines limites. Vous pouvez ajouter et supprimer des dossiers publics favoris, ainsi qu'effectuer des opérations au niveau élément, telles que la création, la modification et la suppression de publications, et la réponse à des publications. En revanche, vous ne pouvez pas créer ou supprimer des dossiers publics dans Outlook Web App. En outre, seuls les dossiers Courrier, Calendrier et Contact peuvent être ajoutés à la liste des Favoris dans Outlook Web App.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Outlook Web App est pris en charge, mais dans certaines limites. Vous pouvez ajouter et supprimer des dossiers publics favoris, ainsi qu'effectuer des opérations au niveau élément, telles que la création, la modification et la suppression de publications, et la réponse à des publications. En revanche, vous ne pouvez pas créer ou supprimer des dossiers publics dans Outlook Web App. En outre, seuls les dossiers Courrier, Calendrier et Contact peuvent être ajoutés à la liste des Favoris dans Outlook Web App.
 
 
 ## Migrer des dossiers publics

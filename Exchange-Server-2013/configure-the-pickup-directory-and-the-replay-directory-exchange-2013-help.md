@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Le répertoire de collecte et le répertoire de relecture sont utilisés par le service de transport sur les serveurs de boîtes aux lettres et sur les serveurs de transport Edge pour insérer des fichiers de messages directement dans le pipeline de transport. Les fichiers de message électronique correctement mis en forme que vous copiez dans le répertoire de collecte ou de relecture sont soumis à des fins de remise. Le répertoire de collecte est utilisé par des administrateurs pour tester le flux de messagerie ou par des applications qui doivent créer et soumettre leurs propres messages. Le répertoire de relecture reçoit des messages provenant de serveurs de passerelle étrangers non SMTP et retransmet les messages que vous avez exportés à partir des files d’attente des serveurs Microsoft Exchange.
 
@@ -33,18 +33,8 @@ Le répertoire de collecte et le répertoire de relecture sont utilisés par le 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que voulez-vous faire ?
@@ -69,25 +59,10 @@ Cet exemple apporte les modifications suivantes au répertoire de collecte situ�
 
     Set-TransportService Exchange01 -PickupDirectoryPath "D:\Pickup Directory" -PickupDirectoryMaxHeaderSize 96KB -PickupDirectoryMaxRecipientsPerMessage 250 -PickupDirectoryMaxMessagesPerMinute 200
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Définir le paramètre <em>PickupDirectoryPath</em> sur la valeur <code>$null</code> désactive le répertoire de collecte.</p></li>
-<li><p>Les répertoires spécifiés par le paramètre <em>PickupDirectoryPath</em> et le paramètre <em>ReplayDirectoryPath</em> ne peuvent pas être identiques.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]
+> <ul>
+> <li><p>Définir le paramètre <em>PickupDirectoryPath</em> sur la valeur <code>$null</code> désactive le répertoire de collecte.</p></li>
+> <li><p>Les répertoires spécifiés par le paramètre <em>PickupDirectoryPath</em> et le paramètre <em>ReplayDirectoryPath</em> ne peuvent pas être identiques.</p></li></ul>
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer le répertoire de relecture
 
@@ -105,25 +80,10 @@ Cet exemple apporte les modifications suivantes au répertoire de relecture situ
 
     Set-TransportService Exchange01 -ReplayDirectoryPath "D:\Replay Directory" -PickupDirectoryMaxMessagesPerMinute 200
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Définir le paramètre <em>ReplayDirectoryPath</em> sur la valeur <code>$null</code> désactive le répertoire de relecture.</p></li>
-<li><p>Les répertoires spécifiés par le paramètre <em>PickupDirectoryPath</em> et le paramètre <em>ReplayDirectoryPath</em> ne peuvent pas être identiques.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]
+> <ul>
+> <li><p>Définir le paramètre <em>ReplayDirectoryPath</em> sur la valeur <code>$null</code> désactive le répertoire de relecture.</p></li>
+> <li><p>Les répertoires spécifiés par le paramètre <em>PickupDirectoryPath</em> et le paramètre <em>ReplayDirectoryPath</em> ne peuvent pas être identiques.</p></li></ul>
 
 ## Comment savoir si cela a fonctionné ?
 

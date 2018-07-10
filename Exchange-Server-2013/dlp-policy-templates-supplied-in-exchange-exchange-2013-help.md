@@ -13,25 +13,15 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Avec Microsoft Exchange Server 2013 et Exchange Online, vous pouvez utiliser des modèles de stratégie de protection contre la perte de données (DLP) comme point de départ pour générer des stratégies DLP qui vous permettent de satisfaire vos exigences en termes réglementation spécifique et de stratégie d'entreprise. Vous pouvez modifier les modèles afin de répondre aux besoins spécifiques de votre organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez activer vos stratégies DLP en mode Test avant de les exécuter dans votre environnement de production. Au cours de ces tests, nous vous recommandons de configurer des boîtes aux lettres d'exemple d'utilisateur et d'envoyer des messages de test qui appellent vos stratégies de test afin de confirmer les résultats.<br />
-L'utilisation de ces stratégies ne garantit la conformité avec aucune des réglementations. A l'issue de votre test, effectuez les modifications de configuration nécessaires dans Exchange de sorte que la transmission des informations respecte les stratégies de votre organisation. Par exemple, vous pourriez avoir besoin de configurer TLS avec des partenaires commerciaux connus ou d'ajouter des actions de règle de transport plus restrictives, comme l'ajout d'une protection des droits pour des messages qui contiennent un certain type de données.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Vous devez activer vos stratégies DLP en mode Test avant de les exécuter dans votre environnement de production. Au cours de ces tests, nous vous recommandons de configurer des boîtes aux lettres d'exemple d'utilisateur et d'envoyer des messages de test qui appellent vos stratégies de test afin de confirmer les résultats.
+> L'utilisation de ces stratégies ne garantit la conformité avec aucune des réglementations. A l'issue de votre test, effectuez les modifications de configuration nécessaires dans Exchange de sorte que la transmission des informations respecte les stratégies de votre organisation. Par exemple, vous pourriez avoir besoin de configurer TLS avec des partenaires commerciaux connus ou d'ajouter des actions de règle de transport plus restrictives, comme l'ajout d'une protection des droits pour des messages qui contiennent un certain type de données.
 
 
 ## Modèles disponibles pour DLP

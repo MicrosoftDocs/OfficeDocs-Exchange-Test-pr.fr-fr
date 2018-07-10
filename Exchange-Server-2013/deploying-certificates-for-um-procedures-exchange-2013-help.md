@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-19_
+_**Dernière rubrique modifiée :** 2013-04-19_
 
 [Créer des certificats pour la messagerie unifiée](create-certificates-for-um-exchange-2013-help.md)
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 La distribution automatique des boîtes aux lettres est une fonctionnalité de Microsoft Exchange Server 2013 qui sélectionne de manière aléatoire une base de données de boîtes aux lettres afin de stocker une boîte aux lettres nouvelle ou déplacée lorsqu’aucune base de données n’est explicitement spécifiée. Cette fonctionnalité peut s’avérer utile lorsque vous souhaitez autoriser de jeunes administrateurs ou membres du service d’assistance à créer des boîtes aux lettres sans connaître les bases de données dans lesquelles les boîtes aux lettres doivent être créées.
 
@@ -41,18 +41,8 @@ Souhaitez-vous rechercher d’autres tâches de gestion relatives aux étendues�
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Comment procéder ?
@@ -61,18 +51,8 @@ Souhaitez-vous rechercher d’autres tâches de gestion relatives aux étendues�
 
 Dans cette étape, déterminez les bases de données à inclure dans l’étendue de base de données. Indiquez également si vous souhaitez spécifier une liste statique de bases de données ou bien créer un filtre de base de données contenant uniquement les bases de données qui correspondent aux critères spécifiés.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les attributions de rôle associées aux étendues de base de données s’appliquent uniquement aux utilisateurs qui se connectent à des serveurs dotés de Microsoft Exchange Server 2010 Service Pack 1 (SP1) ou version ultérieure ou d’Exchange 2013. Si un utilisateur auquel est appliquée une attribution de rôle associée à une étendue de base de données se connecte à une version de serveur antérieure à Exchange 2010 SP1, l’attribution de rôle n’est pas appliquée à cet utilisateur et celui-ci ne bénéficiera pas des autorisations octroyées dans le cadre de cette attribution.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les attributions de rôle associées aux étendues de base de données s’appliquent uniquement aux utilisateurs qui se connectent à des serveurs dotés de Microsoft Exchange Server 2010 Service Pack 1 (SP1) ou version ultérieure ou d’Exchange 2013. Si un utilisateur auquel est appliquée une attribution de rôle associée à une étendue de base de données se connecte à une version de serveur antérieure à Exchange 2010 SP1, l’attribution de rôle n’est pas appliquée à cet utilisateur et celui-ci ne bénéficiera pas des autorisations octroyées dans le cadre de cette attribution.
 
 
 ## Utiliser une étendue de liste des bases de données
@@ -147,18 +127,8 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez la rubri
 
 Si vous souhaitez ajouter des membres à un groupe de rôles, consultez la rubrique [Gérer les membres de groupes de rôles](manage-role-group-members-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous ajoutez des membres à ce groupe de rôles pour limiter les bases de données dans lesquelles il est possible de créer des utilisateurs ou de déplacer des boîtes aux lettres, assurez-vous qu’ils n’appartiennent pas à d’autres groupes de rôles pouvant accorder des autorisations supplémentaires.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous ajoutez des membres à ce groupe de rôles pour limiter les bases de données dans lesquelles il est possible de créer des utilisateurs ou de déplacer des boîtes aux lettres, assurez-vous qu’ils n’appartiennent pas à d’autres groupes de rôles pouvant accorder des autorisations supplémentaires.
 
 
 ## Étape 4 : Supprimer des membres d’un groupe de rôles (le cas échéant)

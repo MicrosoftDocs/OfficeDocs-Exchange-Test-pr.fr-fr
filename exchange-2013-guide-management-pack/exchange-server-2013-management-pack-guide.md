@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**Dernière rubrique modifiée :** 2015-03-09_
+_**Dernière rubrique modifiée :**  2015-03-09_
 
 Le pack d'administration de MicrosoftExchange Server 2013 fournit des informations complètes sur l'état des services de votre organisation Exchange.
 

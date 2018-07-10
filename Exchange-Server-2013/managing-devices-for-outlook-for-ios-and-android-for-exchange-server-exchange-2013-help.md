@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2010, Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2010, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-04-01_
+_**Dernière rubrique modifiée :** 2018-04-01_
 
 **Résumé** : Cet article décrit comment Exchange ActiveSync vous permet de gérer des appareils mobiles avec Outlook pour iOS et Android dans votre organisation Exchange locale.
 
@@ -43,18 +43,8 @@ Lorsque l’administrateur lance une réinitialisation à distance, celle-ci se 
 
 Étant donné qu’Outlook pour iOS et Android s’affiche dans Exchange en tant qu’association d’appareil mobile unique dans la liste des appareils mobiles de l’utilisateur, une demande de réinitialisation à distance supprime les données et les relations de synchronisation de tous les appareils exécutant Outlook (iPhone, iPad, Android) associés à cet utilisateur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>En raison de l’architecture informatique qui supporte Outlook pour iOS et Android, le résultat de la réinitialisation à distance n’est pas envoyé à Exchange. Même lorsque la réinitialisation à distance est réussie, le statut affiché est <strong>En attente</strong>. Il s’agit d’un problème connu ; une solution est en cours de développement.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> En raison de l’architecture informatique qui supporte Outlook pour iOS et Android, le résultat de la réinitialisation à distance n’est pas envoyé à Exchange. Même lorsque la réinitialisation à distance est réussie, le statut affiché est <strong>En attente</strong>. Il s’agit d’un problème connu ; une solution est en cours de développement.
 
 
 ## Identificateurs d’appareils et contrôle d’accès
@@ -67,18 +57,8 @@ En raison de l’architecture informatique d’Outlook pour iOS et Android, les 
 
 Dès leur mise en place, les stratégies de boîte aux lettres d’appareil mobile s’appliquent à tous les appareils associés. Par conséquent, si vous appliquez un code confidentiel pour une boîte aux lettres spécifique, tous les appareils qui se connecteront à cette boîte aux lettres nécessiteront un code confidentiel.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Étant donné que les ID d’appareil ne sont pas régis par n’importe quel ID d’<em>appareil physique</em>, ils peuvent changer sans préavis. Lorsqu’une modification se produit, elle peut entraîner des conséquences inattendues si les ID d’appareil sont utilisés pour gérer les appareils des utilisateurs, car les appareils « autorisés » existants peuvent être inopinément bloqués ou mis en quarantaine par Exchange. Par conséquent, nous recommandons aux administrateurs de définir uniquement des stratégies d’appareil mobile qui autorisent/bloquent les appareils en fonction du type d’appareil ou du modèle d’appareil.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Étant donné que les ID d’appareil ne sont pas régis par n’importe quel ID d’<em>appareil physique</em>, ils peuvent changer sans préavis. Lorsqu’une modification se produit, elle peut entraîner des conséquences inattendues si les ID d’appareil sont utilisés pour gérer les appareils des utilisateurs, car les appareils « autorisés » existants peuvent être inopinément bloqués ou mis en quarantaine par Exchange. Par conséquent, nous recommandons aux administrateurs de définir uniquement des stratégies d’appareil mobile qui autorisent/bloquent les appareils en fonction du type d’appareil ou du modèle d’appareil.
 
 
 ## FAQ sur la gestion des appareils dans Exchange ActiveSync

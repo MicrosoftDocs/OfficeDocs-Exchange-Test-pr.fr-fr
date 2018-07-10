@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2014-04-03_
+_**Dernière rubrique modifiée :** 2014-04-03_
 
 Vous devez uniquement mettre à jour la hiérarchie de dossiers publics si vous souhaitez appeler manuellement le synchronisateur de hiérarchie et l’Assistant Boîte aux lettres. Ceux-ci doivent être appelés ensemble au moins une fois chaque 24 heures pour chaque boîte aux lettres de dossiers publics dans l'organisation. Le synchronisateur de hiérarchie est appelé toutes les 15 minutes dès qu'un utilisateur se connecte à une boîte aux lettres secondaire avec Microsoft Outlook ou un client des services web de Microsoft Exchange.
 
@@ -35,18 +35,8 @@ Pour découvrir d'autres tâches de gestion associées aux dossiers publics dans
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Mise à jour de la hiérarchie de dossiers publics

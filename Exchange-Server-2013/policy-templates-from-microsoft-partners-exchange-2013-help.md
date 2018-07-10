@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-01-31_
+_**Dernière rubrique modifiée :** 2013-01-31_
 
 Les fonctions de protection contre la perte de données (DLP, Data Loss Prevention) vous permettent d'identifier et de surveiller de nombreuses catégories d'informations sensibles. Lors de la configuration de vos stratégies de protection contre la perte de données, vous disposez de l'option d'importer un fichier à partir d'une source extérieur à Microsoft Exchange pour l'utiliser comme modèle de stratégie de protection contre la perte de données. Les entreprises partenaires de Microsoft peuvent développer et distribuer ces types de modèles. Cette rubrique sera mise à jour et un lien vous permettra de rechercher ces entreprises quand elles seront disponibles.
 

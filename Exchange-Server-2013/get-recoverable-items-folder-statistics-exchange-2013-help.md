@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-22_
+_**Dernière rubrique modifiée :** 2015-01-22_
 
 Le dossier Éléments récupérables contient des éléments supprimés par les utilisateurs de Microsoft Outlook et Microsoft OfficeOutlook Web App ou par l'Assistant Boîte aux lettres. La durée pendant laquelle les éléments supprimés sont conservés dans ce dossier est basée sur les paramètres de rétention des éléments supprimés configurés pour la base de données de boîtes aux lettres ou la boîte aux lettres. Par défaut, une base de données de boîtes aux lettres est configurée pour conserver les éléments supprimés pendant 14 jours. Les quotas d'éléments récupérables et d'avertissements des éléments récupérables sont définis respectivement sur 20 Go et 30 Go. Cependant, si une conservation pour litige ou inaltérable est activée pour la boîte aux lettres, le dossier Éléments récupérables peut accumuler les éléments supprimés au-delà de la période de rétention spécifiée et conserver également différentes versions des éléments de boîte aux lettres modifiés.
 

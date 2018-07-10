@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-04-16_
+_**Dernière rubrique modifiée :** 2018-04-16_
 
 Bienvenue dans Microsoft Exchange Server 2013 \! Cette rubrique contient des informations importantes à connaître afin de déployer Exchange 2013. Veuillez lire entièrement cette rubrique avant de commencer votre déploiement.
 
@@ -117,32 +117,12 @@ Pour plus d'informations sur l'installation d'Exchange 2013, consultez la rubri
     
     Pour installer, désinstaller ou gérer des agents de transport sur des serveurs d'accès au client, procédez comme suit sur le serveur d'accès au client à gérer :
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Ne chargez pas le composant logiciel enfichable Windows PowerShell <code>Microsoft.Exchange.Management.PowerShell.SnapIn</code> et n’exécutez pas de cmdlets autres que <strong>*-TransportAgent</strong> au risque de provoquer des dommages irréparables à votre déploiement Exchange.<br />
-    Vous devez être un administrateur local sur le serveur d'accès au client sur lequel vous souhaitez installer, désinstaller ou gérer des agents de transport. Nous n’autorisons pas la modification des listes de contrôle d’accès (ACL) dans les répertoires et les fichiers Exchange ou les objets Active Directory.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > Ne chargez pas le composant logiciel enfichable Windows PowerShell <code>Microsoft.Exchange.Management.PowerShell.SnapIn</code> et n’exécutez pas de cmdlets autres que <strong>*-TransportAgent</strong> au risque de provoquer des dommages irréparables à votre déploiement Exchange.
+    > Vous devez être un administrateur local sur le serveur d'accès au client sur lequel vous souhaitez installer, désinstaller ou gérer des agents de transport. Nous n’autorisons pas la modification des listes de contrôle d’accès (ACL) dans les répertoires et les fichiers Exchange ou les objets Active Directory.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exécutez les opérations suivantes sur les serveurs d'accès au client uniquement. Il n’est pas nécessaire de charger le composant logiciel enfichable Windows PowerShell Exchange pour gérer des agents de transport sur des serveurs de boîtes aux lettres.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Exécutez les opérations suivantes sur les serveurs d'accès au client uniquement. Il n’est pas nécessaire de charger le composant logiciel enfichable Windows PowerShell Exchange pour gérer des agents de transport sur des serveurs de boîtes aux lettres.
     
     1.  Ouvrez une nouvelle fenêtre Windows PowerShell.
     
@@ -182,18 +162,8 @@ Pour plus d'informations sur l'installation d'Exchange 2013, consultez la rubri
 
   - **Le protocole MAPI sur HTTP peut rencontrer des problèmes de performances lors de la mise à niveau vers Exchange 2013 SP1**   Si vous effectuez une mise à niveau à partir d’une mise à jour cumulative Exchange 2013 vers Exchange 2013 SP1 et que vous activez MAPI sur HTTP, les clients qui se connectent à un serveur Exchange 2013 SP1 à l’aide de ce protocole peuvent rencontrer des problèmes de performances. En effet, les paramètres requis ne sont pas configurés lors d’une mise à niveau à partir d’une mise à jour cumulative vers Exchange 2013 SP1. Ce problème ne se produit pas si vous effectuez une mise à niveau vers Exchange 2013 SP1 depuis Exchange 2013 RTM ou si vous installez un nouveau serveur Exchange 2013 SP1 ou versions ultérieures.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Ce problème n’est observé que si le protocole MAPI sur HTTP est activé sur vos serveurs d’accès au client. Il est désactivé par défaut. Si le protocole MAPI sur HTTP est désactivé, les clients utilisent le protocole RPC sur HTTP à la place.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Ce problème n’est observé que si le protocole MAPI sur HTTP est activé sur vos serveurs d’accès au client. Il est désactivé par défaut. Si le protocole MAPI sur HTTP est désactivé, les clients utilisent le protocole RPC sur HTTP à la place.
     
     Pour contourner ce problème, procédez comme suit :
     

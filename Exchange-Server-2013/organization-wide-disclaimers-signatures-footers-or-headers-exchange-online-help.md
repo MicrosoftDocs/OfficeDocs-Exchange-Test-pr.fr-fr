@@ -13,31 +13,18 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Vous pouvez ajouter une clause d’exclusion de responsabilité de messagerie électronique, une clause d’exclusion de responsabilité juridique, un énoncé de divulgation, une signature ou toute autre information en haut ou au bas des messages électroniques qui entrent dans votre organisation ou qui en sortent. Ceci peut être nécessaire pour des raisons juridiques, légales ou réglementaires, pour identifier les messages électroniques potentiellement dangereux ou pour d’autres raisons propres à votre organisation.
 
 Pour configurer une clause d’exclusion de responsabilité, créez une règle de transport qui comprend les conditions (par exemple, lorsque l’expéditeur appartient à un groupe particulier ou lorsque le message contient des modèles de texte spécifiques), ainsi que le texte à ajouter. Pour appliquer plusieurs clauses d’exclusion de responsabilité à un même message électronique, utilisez plusieurs règles de transport.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Si vous voulez que les informations soient ajoutées uniquement aux messages sortants, vous devez ajouter une condition (par exemple, que les destinataires soient situés en dehors de l’organisation). Par défaut, les règles de transport sont appliquées aux messages entrants et sortants.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> <ul>
+> <li><p>Si vous voulez que les informations soient ajoutées uniquement aux messages sortants, vous devez ajouter une condition (par exemple, que les destinataires soient situés en dehors de l’organisation). Par défaut, les règles de transport sont appliquées aux messages entrants et sortants.</p></li>
+> </ul>
 
 
 **Contenu**
@@ -229,18 +216,8 @@ La liste suivante décrit chaque action de secours :
 
   - **Wrap** : si la cause d’exclusion de responsabilité ne peut pas être insérée dans le message d’origine, Exchange place celle-ci dans une nouvelle enveloppe de message. La clause d’exclusion de responsabilité est ensuite insérée dans le nouveau message. S’il n’est pas possible de placer le message original dans une nouvelle enveloppe, celui-ci n’est pas remis. L’expéditeur reçoit un rapport de non-remise (NDR) expliquant pourquoi le message n’a pas été remis.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si un message original est placé dans une nouvelle enveloppe de message, les règles de transport suivantes sont appliquées à la nouvelle enveloppe de message, et pas au message original. C’est pourquoi vous devez configurer les règles de transport avec des actions de clause d’exclusion de responsabilité qui placent les messages originaux dans un nouveau corps de message après avoir configuré les autres règles de transport.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si un message original est placé dans une nouvelle enveloppe de message, les règles de transport suivantes sont appliquées à la nouvelle enveloppe de message, et pas au message original. C’est pourquoi vous devez configurer les règles de transport avec des actions de clause d’exclusion de responsabilité qui placent les messages originaux dans un nouveau corps de message après avoir configuré les autres règles de transport.
 
 
   - **Reject** : s’il n’est pas possible d’insérer la clause d’exclusion de responsabilité dans le message d’origine, Exchange ne remet pas le message. L’expéditeur reçoit une notification de non-remise expliquant pourquoi le message n’a pas été remis.

@@ -13,22 +13,12 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-05-26_
+_**Dernière rubrique modifiée :** 2016-05-26_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange Online Protection (EOP) est la prochaine version de Forefront Online Protection for Exchange (FOPE). Exchange Online intègre les fonctionnalités EOP de protection contre le courrier indésirable.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Exchange Online Protection (EOP) est la prochaine version de Forefront Online Protection for Exchange (FOPE). Exchange Online intègre les fonctionnalités EOP de protection contre le courrier indésirable.
 
 
 L'utilisation de la protection Exchange contre le courrier indésirable dans le cloud (Microsoft Exchange Online ou Microsoft Exchange Online Protection) présente les avantages suivants par rapport à Microsoft Exchange Server 2013 qui dispose de la plupart des fonctionnalités anti-spam intégrées de Microsoft Exchange Server 2010 :

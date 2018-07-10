@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-06-24_
+_**Dernière rubrique modifiée :** 2016-06-24_
 
 Dans le client Outlook, les utilisateurs de votre organisation peuvent ajouter des dossiers publics à leur dossier **Favoris**. Ensuite, en fonction des stratégies de votre organisation, ils peuvent utiliser Outlook sur le web pour ajouter ces mêmes dossiers publics à leurs favoris et effectuer certaines fonctions qu’ils utilisent dans le client Outlook dans Outlook sur le web.
 
@@ -23,18 +23,8 @@ Dans le client Outlook, les utilisateurs de votre organisation peuvent ajouter d
 
 Pour que les utilisateurs puissent exécuter certaines tâches sur des dossiers publics dans leur dossier **Favoris**, ils doivent d’abord utiliser le client Outlook pour ajouter des dossiers publics au dossier **Favoris**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour plus d’informations sur la création et la configuration de dossier publics, les utilisateurs de votre organisation peuvent consulter la rubrique <a href="https://support.office.com/fr-fr/article/create-a-public-folder-in-outlook-d5981360-28d3-4c8f-a373-c98ae570420a?ui=en-us%26rs=en-us%26ad=us">Créer un dossier public dans Outlook</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour plus d’informations sur la création et la configuration de dossier publics, les utilisateurs de votre organisation peuvent consulter la rubrique <a href="https://support.office.com/fr-fr/article/create-a-public-folder-in-outlook-d5981360-28d3-4c8f-a373-c98ae570420a?ui=en-us%26rs=en-us%26ad=us">Créer un dossier public dans Outlook</a>.
 
 
 1.  Dans Outlook, accédez au mode d’affichage **dossiers**. Cliquez sur les trois points sur la barre de navigation, puis cliquez sur **Dossiers**.
@@ -48,34 +38,14 @@ Pour que les utilisateurs puissent exécuter certaines tâches sur des dossiers 
 
 3.  Cliquez avec le bouton droit de la souris sur le dossier public que vous souhaitez ajouter aux **Favoris**, puis sélectionnez **Ajouter aux favoris...**
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Par défaut, le dossier <strong>Favoris</strong> se trouve directement sous le dossier <strong>Tous les dossiers publics</strong> dans la barre de navigation.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Par défaut, le dossier <strong>Favoris</strong> se trouve directement sous le dossier <strong>Tous les dossiers publics</strong> dans la barre de navigation.
 
 
 4.  Dans la boîte de dialogue **Ajouter aux Favoris**, vous pouvez renommer le dossier pour vos **Favoris** uniquement. Cliquez sur **Ajouter** pour ajouter le dossier aux **Favoris**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il existe plusieurs types de dossiers publics. Pour que les utilisateurs puissent travailler avec un dossier public favori dans Outlook sur le web, le dossier public doit être de type éléments de Courrier, éléments de Calendrier ou éléments de Contact.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il existe plusieurs types de dossiers publics. Pour que les utilisateurs puissent travailler avec un dossier public favori dans Outlook sur le web, le dossier public doit être de type éléments de Courrier, éléments de Calendrier ou éléments de Contact.
 
 
 ## Ajouter des dossiers publics aux favoris dans Outlook sur le web

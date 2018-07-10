@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-05-10_
+_**Dernière rubrique modifiée :** 2017-05-10_
 
 MAPI (Messaging Application Programming Interface) sur HTTP est un nouveau protocole de transport implémenté dans MicrosoftExchange Server 2013 Service Pack 1 (SP1). Le protocole MAPI sur HTTP améliore la fiabilité et la stabilité des connexions Outlook et Exchange en déplaçant la couche transport vers le modèle HTTP standard de l’industrie. Il améliore le niveau de visibilité des erreurs de transport et la capacité de récupération. Une fonctionnalité supplémentaire prend en charge une fonction d’interruption et de reprise explicite. Cela permet aux clients pris en charge de changer de réseau ou de reprendre après une mise en veille prolongée tout en conservant le même contexte de serveur.
 
@@ -151,19 +151,9 @@ Effectuez les étapes suivantes pour préparer les clients et les serveurs à pr
 
 2.  Mettez à niveau les serveurs d’accès au client et de boîtes aux lettres vers Exchange 2013 SP1. Pour plus d’informations sur la mise à niveau, consultez la rubrique [Mettre à niveau Exchange 2013 vers la mise à jour cumulative la plus récente ou vers le Service Pack le plus récent](upgrade-exchange-2013-to-the-latest-cumulative-update-or-service-pack-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Tous les serveurs d’accès au client doivent être mis à niveau vers Exchange 2013 SP1 avant d’activer le protocole MAPI sur HTTP. Si la mise à niveau n’est pas effectuée, Outlook peut ne pas se connecter aux boîtes aux lettres.<br />
-    Le fait de ne pas mettre à niveau tous les serveurs de boîtes aux lettres dans un groupe de disponibilité de base de données (DAG) peut entraîner des retards de réception des messages électroniques. De plus, le client peut exiger le redémarrage d’Outlook dans le cas d’un basculement de base de données.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Tous les serveurs d’accès au client doivent être mis à niveau vers Exchange 2013 SP1 avant d’activer le protocole MAPI sur HTTP. Si la mise à niveau n’est pas effectuée, Outlook peut ne pas se connecter aux boîtes aux lettres.
+    > Le fait de ne pas mettre à niveau tous les serveurs de boîtes aux lettres dans un groupe de disponibilité de base de données (DAG) peut entraîner des retards de réception des messages électroniques. De plus, le client peut exiger le redémarrage d’Outlook dans le cas d’un basculement de base de données.
 
 
 3.  Vous devez installer Microsoft.NET Framework 4.5.2 sur tous les serveurs Exchange 2013. Pour plus d’informations, consultez la rubrique [Installation de NET Framework 4.5](https://go.microsoft.com/fwlink/p/?linkid=518380).

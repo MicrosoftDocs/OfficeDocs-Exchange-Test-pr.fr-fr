@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-05-04_
+_**Dernière rubrique modifiée :** 2015-05-04_
 
 Le Centre d'administration Exchange (CAE) ou l'environnement de ligne de commande vous permet de connecter une boîte aux lettres supprimée à un compte d'utilisateur Active Directory. Lorsque vous supprimez une boîte aux lettres, Exchange conserve celle-ci dans la base de données de boîtes aux lettres et change son état en « désactivé ». Le compte d'utilisateur Active Directory associé est également supprimé. La boîte aux lettres est conservée tant que le délai de rétention des boîtes aux lettres supprimées n’a pas expiré. Ce délai est défini par défaut à 30 jours. Une fois ce délai passé, la boîte aux lettres est supprimée définitivement (ou *purgée*) de la base de données de boîtes aux lettres.
 
@@ -41,18 +41,8 @@ Pour plus d'informations sur les boîtes aux lettres déconnectées et sur l'ex�
     
     S'agissant des organisations Exchange locales, vous pouvez également vérifier ces informations dans le composant Utilisateurs et ordinateurs Active Directory.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lorsque vous connectez des boîtes aux lettres liées, des boîtes aux lettres de ressources ou des boîtes aux lettres partagées supprimées, le compte d’utilisateur auquel vous connectez la boîte aux lettres doit être désactivé.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Lorsque vous connectez des boîtes aux lettres liées, des boîtes aux lettres de ressources ou des boîtes aux lettres partagées supprimées, le compte d’utilisateur auquel vous connectez la boîte aux lettres doit être désactivé.
 
 
   - Pour vérifier que la boîte aux lettres supprimée à laquelle vous voulez connecter un compte utilisateur existe dans la base de données des boîtes aux lettres et qu’elle n’est pas une boîte aux lettres supprimée (récupérable), exécutez la commande suivante.
@@ -81,18 +71,8 @@ La procédure suivante montre comment connecter une boîte aux lettres utilisate
     
     La liste des boîtes aux lettres déconnectées sur le serveur Exchange sélectionné de votre organisation Exchange s'affiche.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Cette liste de boîtes aux lettres déconnectées inclut des boîtes aux lettres désactivées, des boîtes aux lettres supprimées et des boîtes aux lettres supprimées (récupérables).</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Cette liste de boîtes aux lettres déconnectées inclut des boîtes aux lettres désactivées, des boîtes aux lettres supprimées et des boîtes aux lettres supprimées (récupérables).
 
 
 3.  Cliquez sur la boîte aux lettres à laquelle vous voulez connecter un utilisateur, puis sur **Connecter**.
@@ -109,36 +89,16 @@ La procédure suivante montre comment connecter une boîte aux lettres utilisate
 
 Dans l’environnement de ligne de commande Exchange Management Shell, utilisez la cmdlet **Connect-Mailbox** pour connecter une boîte aux lettres supprimée à un compte utilisateur qui n’est pas à extension messagerie. Vous devez spécifier le type de boîte aux lettres que vous connectez. Les exemples suivantes montrent la syntaxe pour la reconnexion de boîtes aux lettres utilisateur, liées, de salle, d'équipement et partagées. Dans tous les exemples, nous utilisons le paramètre *Alias* facultatif pour spécifier l'alias de courrier électronique. Il s'agit de la partie de l'adresse de messagerie qui est située à gauche du symbole @. Si vous n’utilisez pas le paramètre *Alias*, la valeur spécifiée dans le paramètre *User* ou *LinkedMasterAccount* est utilisée pour créer l’alias pour l’adresse de messagerie associée à la boîte aux lettres reconnectée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Comme indiqué précédemment, lorsque vous connectez des boîtes aux lettres liées, de ressources ou partagées, le compte d’utilisateur Active Directory auquel vous liez la boîte aux lettres doit être désactivé.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Comme indiqué précédemment, lorsque vous connectez des boîtes aux lettres liées, de ressources ou partagées, le compte d’utilisateur Active Directory auquel vous liez la boîte aux lettres doit être désactivé.
 
 
 Cet exemple montre comment connecter une boîte aux lettres utilisateur. Le paramètre *Identity* indique le nom complet de la boîte aux lettres supprimée qui est conservée dans la base de données de boîtes aux lettres MBXDB01. Le paramètre *User* indique le compte d'utilisateur Active Directory auquel connecter la boîte aux lettres.
 
     Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez également utiliser les valeurs des propriétés <code>LegacyDN</code> ou <code>MailboxGuid</code> pour identifier la boîte aux lettres supprimée.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez également utiliser les valeurs des propriétés <code>LegacyDN</code> ou <code>MailboxGuid</code> pour identifier la boîte aux lettres supprimée.
 
 
 Cet exemple montre comment connecter une boîte aux lettres liée. Le paramètre *Identity* indique la boîte aux lettres supprimée dans la base de données de boîtes aux lettres MBXDB02. Le paramètre *LinkedMasterAccount* indique le compte d'utilisateur Active Directory dans la forêt de comptes, auquel vous voulez connecter la boîte aux lettres. Le paramètre *LinkedDomainController* indique un contrôleur de domaine dans la forêt de comptes.
@@ -157,18 +117,8 @@ Cet exemple montre comment connecter une boîte aux lettres partagée.
 
     Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printer Support" -Alias corpprint -Shared
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez également utiliser les valeurs <code>LegacyDN</code> ou <code>MailboxGuid</code> pour identifier la boîte aux lettres supprimée.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez également utiliser les valeurs <code>LegacyDN</code> ou <code>MailboxGuid</code> pour identifier la boîte aux lettres supprimée.
 
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Connect-Mailbox](https://technet.microsoft.com/fr-fr/library/aa997878\(v=exchg.150\)).
@@ -193,18 +143,8 @@ L'environnement de ligne de commande permet de restaurer une boîte aux lettres 
 
 Après qu'une demande de restauration de boîte aux lettres a été correctement exécutée, la boîte aux lettres est conservée pendant 30 jours avant d'être supprimée. Vous pouvez la supprimer plus tôt à l'aide de la cmdlet **Remove-StoreMailbox**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le CAE ne permet pas de restaurer une boîte aux lettres supprimée.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le CAE ne permet pas de restaurer une boîte aux lettres supprimée.
 
 
 ## Utiliser l'environnement de ligne de commande pour restaurer une boîte aux lettres supprimée
@@ -235,18 +175,8 @@ Vous aurez besoin du GUID de la boîte aux lettres de dossiers publics supprimé
 
 2.  Avec les informations renvoyées par l’étape 1, recherchez dans le conteneur Objets supprimés dans Active Directory le GUID de la boîte aux lettres de dossiers publics et le GUID ou le nom de la base de données de boîtes aux lettres dans laquelle la boîte aux lettres de dossiers publics supprimée était contenue.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous pouvez rechercher des objets supprimés à l’aide d’un script personnalisé ou à l’aide de l’utilitaire Ldp, qui peut être ouvert en saisissant <strong>ldp.exe</strong> à l’invite Powershell.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > Vous pouvez rechercher des objets supprimés à l’aide d’un script personnalisé ou à l’aide de l’utilitaire Ldp, qui peut être ouvert en saisissant <strong>ldp.exe</strong> à l’invite Powershell.
 
 
 Si vous connaissez le GUID de la boîte aux lettres de dossiers publics supprimée et le nom ou le GUID de la base de données de boîtes aux lettres qui contenait la boîte aux lettres de dossiers publics, exécutez les commandes suivantes pour restaurer la boîte aux lettres de dossiers publics.
@@ -263,18 +193,8 @@ Si vous connaissez le GUID de la boîte aux lettres de dossiers publics supprim�
     
         Connect-Mailbox -Identity <public folder mailbox GUID> -Database <database name or GUID> -User <mailUserName>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le paramètre <code>Identity</code> spécifie l’objet de boîte aux lettres dans la base de données Exchange à connecter à un objet utilisateur Active Directory. L’exemple ci-dessus spécifie le GUID pour la boîte aux lettres de dossiers publics, mais vous pouvez également utiliser la valeur de nom d’affichage ou la valeur LegacyExchangeDN.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le paramètre <code>Identity</code> spécifie l’objet de boîte aux lettres dans la base de données Exchange à connecter à un objet utilisateur Active Directory. L’exemple ci-dessus spécifie le GUID pour la boîte aux lettres de dossiers publics, mais vous pouvez également utiliser la valeur de nom d’affichage ou la valeur LegacyExchangeDN.
 
 
 3.  Exécutez `Update-StoreMailboxState` sur la boîte aux lettres de dossiers publics, en fonction de l’exemple suivant :

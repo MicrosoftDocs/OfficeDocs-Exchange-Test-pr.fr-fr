@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 L'indicateur d'intégrité Autodiscover.Proxy surveille la disponibilité de l'infrastructure proxy de découverte automatique sur le serveur d'accès au client. L'indicateur d'intégrité Autodiscover.Proxy est étroitement lié à l'indicateur d'intégrité suivant :
 

@@ -13,22 +13,12 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-11-17_
+_**Dernière rubrique modifiée :** 2016-11-17_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le 1er novembre 2016, Microsoft a cessé de produire des mises à jour des définitions de courrier indésirable pour les filtres SmartScreen dans Exchange et Outlook. Les définitions de courrier indésirable SmartScreen existantes restent en place, mais leur efficacité se dégradera probablement au cours du temps. Pour plus d’informations, voir l’article relatif à l’<a href="https://go.microsoft.com/fwlink/p/?linkid=835894">arrêt de la prise en charge de SmartScreen dans Outlook et Exchange</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le 1er novembre 2016, Microsoft a cessé de produire des mises à jour des définitions de courrier indésirable pour les filtres SmartScreen dans Exchange et Outlook. Les définitions de courrier indésirable SmartScreen existantes restent en place, mais leur efficacité se dégradera probablement au cours du temps. Pour plus d’informations, voir l’article relatif à l’<a href="https://go.microsoft.com/fwlink/p/?linkid=835894">arrêt de la prise en charge de SmartScreen dans Outlook et Exchange</a>.
 
 
 Dans Microsoft Exchange Server 2013, vous pouvez définir des actions spécifiques en fonction des seuils de probabilité de courrier indésirable. Par exemple, vous pouvez définir des seuils différents pour le rejet, la suppression ou la mise en quarantaine de messages sur un serveur Exchange exécutant l’agent de filtrage du contenu.
@@ -142,18 +132,8 @@ Vous pouvez configurer les paramètres SCL de suppression, de rejet, de mise en 
 
   - **Dans les boîtes aux lettres utilisateur (configuration SCL par destinataire)**   Vous pouvez utiliser la cmdlet **Set-Mailbox** pour activer ou désactiver et définir les seuils SCL de suppression, de rejet, de mise en quarantaine et du dossier Courrier indésirable par destinataire, pour des boîtes aux lettres individuelles. Vous pouvez uniquement utiliser la cmdlet **Set-Mailbox** si vous souhaitez activer ou désactiver le seuil SCL du dossier Courrier indésirable pour des boîtes aux lettres individuelles. Les seuils de suppression, de rejet et de mise en quarantaine SCL par destinataire sont stockés dans Active Directory et répliqués sur les serveurs de transport Edge abonnés par le service EdgeSync de Microsoft Exchange. Les configurations de seuil de probabilité de courrier indésirable par destinataire sont utilisées par l’agent de filtrage du contenu même si vous avez défini des configurations SCL par serveur de transport. C’est pourquoi, si vous avez défini des seuils SCL par destinataire, l’agent de filtrage du contenu utilise les seuils SCL par destinataire pour des utilisateurs spécifiques au lieu de la configuration SCL de l’agent de filtrage du contenu. Pour obtenir des exemples, consultez la rubrique [Configurer les paramètres de blocage du courrier indésirable sur les boîtes aux lettres](configure-anti-spam-settings-on-mailboxes-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les seuils SCL par destinataire ne sont pas appliqués aux messages reçus par le biais de groupes de distribution.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les seuils SCL par destinataire ne sont pas appliqués aux messages reçus par le biais de groupes de distribution.
     
     Les paramètres SCL disponibles dans les cmdlets **Set-ContentFilterConfig** et **Set-OrganizationConfig** le sont également dans la cmdlet **Set-Mailbox** :
     

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-07_
+_**Dernière rubrique modifiée :** 2015-01-07_
 
 Vous pouvez commencer à utiliser une solution de protection contre la perte de données (DLP) dans votre environnement de messagerie en suivant les procédures suivantes. Pour en savoir plus sur les concepts et les objectifs de la protection contre la perte de données, consultez la rubrique [Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md).
 
@@ -29,18 +29,8 @@ Vous pouvez commencer à utiliser une solution de protection contre la perte de 
 
 [Afficher les rapports de détection de stratégies DLP](view-dlp-policy-detection-reports-exchange-2013-help.md)   Effectuer le suivi des violations de stratégie.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La protection contre la perte de données est une fonctionnalité étendue qui nécessite une licence d'accès client (CAL) Entreprise.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La protection contre la perte de données est une fonctionnalité étendue qui nécessite une licence d'accès client (CAL) Entreprise.
 
 
 ## Pour plus d'informations

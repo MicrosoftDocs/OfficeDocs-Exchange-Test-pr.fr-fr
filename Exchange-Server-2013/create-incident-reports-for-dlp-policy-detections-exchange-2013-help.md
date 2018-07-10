@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Dans Exchange Server 2013, vous pouvez établir une action visant à créer un rapport d'incident au sein d'un ensemble de règles de stratégie DLP. En outre, vous pouvez indiquer le destinataire du rapport et ce qu'il faut faire du message d'origine. Le rapport d'incident peut contenir les informations suivantes.
 

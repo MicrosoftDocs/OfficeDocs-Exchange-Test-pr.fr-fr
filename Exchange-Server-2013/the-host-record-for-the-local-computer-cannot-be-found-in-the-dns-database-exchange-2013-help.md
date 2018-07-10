@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le programme d’installation de Microsoft Exchange Server 2013 ne peut pas poursuivre son exécution, car l’enregistrement d’hôte (A) pour cet ordinateur ne figure pas dans la base de données DNS (Domain Name System).
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Dans Microsoft Exchange Server 2013, les cinq rôles de serveurs depuis Exchange 2010 ont été remplacés par deux principaux types de serveurs : Serveurs de boîtes aux lettres et serveurs d'accès au client. Le serveur d'accès au client est un serveur léger et sans état qui sert de proxy pour les connexions client vers le serveur de boîtes aux lettres. Le serveur de boîtes aux lettres gère le traitement de toutes les connexions clients vers la base de données de boîte aux lettres active.
 

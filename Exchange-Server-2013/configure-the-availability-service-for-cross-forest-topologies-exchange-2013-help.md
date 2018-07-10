@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-10-22_
+_**Dernière rubrique modifiée :** 2014-10-22_
 
 Le service de disponibilité optimise les données de disponibilité des professionnels de l’information en fournissant des informations de disponibilité sécurisées, cohérentes et à jour aux clients exécutant Microsoft Outlook. Par défaut, ce service est installé avec Exchange Server 2013. Dans les topologies inter-forêts où tous les clients qui se connectent exécutent Outlook, le service de disponibilité est la seule méthode d’extraction des informations de disponibilité. L’environnement de ligne de commande Exchange Management Shell permet de configurer le service de disponibilité pour des topologies inter-forêts.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le Centre d’administration Exchange (CAE) ne permet pas de configurer le service de disponibilité pour des topologies inter-forêts.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le Centre d’administration Exchange (CAE) ne permet pas de configurer le service de disponibilité pour des topologies inter-forêts.
 
 
 ## Utilisation du service de disponibilité dans les forêts approuvées et non approuvées
@@ -55,18 +45,8 @@ Pour activer la synchronisation de la liste d’adresses globale, vous créez de
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -82,18 +62,8 @@ Cet exemple définit la méthode d’accès aux informations de disponibilité u
 
     Add-AvailabilityAddressSpace -Forestname ContosoForest.com -AccessMethod PerUserFB -UseServiceAccount:$true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour configurer la disponibilité inter-forêts bidirectionnelle, répétez ces étapes dans la forêt cible.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour configurer la disponibilité inter-forêts bidirectionnelle, répétez ces étapes dans la forêt cible.
 
 
 Si vous choisissez de configurer une disponibilité inter-forêts avec approbation et que vous choisissez également d’utiliser un compte de service (au lieu de spécifier des informations d’identification par utilisateur ou par organisation), vous devez étendre les autorisations comme indiqué dans la section « Utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer la disponibilité inter-forêts approuvée avec un compte de service ». La réalisation de cette procédure dans la forêt cible donne aux serveurs de boîte aux lettres de la forêt source l’autorisation de sérialiser le contexte utilisateur d’origine.

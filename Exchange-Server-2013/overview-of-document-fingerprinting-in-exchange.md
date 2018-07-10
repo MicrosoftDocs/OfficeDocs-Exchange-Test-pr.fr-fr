@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-09-11_
+_**Dernière rubrique modifiée :** 2014-09-11_
 
 Les professionnels de l’informatique de votre organisation gèrent toutes sortes d’informations sensibles au cours d’une journée typique. La *création d’une empreinte numérique de document* facilite la protection de ces informations en identifiant les formulaires standard utilisés au sein de votre organisation. Cette rubrique décrit les concepts de la création d’une empreinte numérique de document. Si vous souhaitez apprendre à créer une empreinte numérique de document, consultez la rubrique [Protection des données de formulaire avec la création d’une empreinte numérique de document](protect-form-data-with-document-fingerprinting-exchange-2013-help.md).
 

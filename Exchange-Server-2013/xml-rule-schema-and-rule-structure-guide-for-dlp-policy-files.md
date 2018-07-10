@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Cette vue d'ensemble décrit les composants d'une définition de schéma XML pour les fichiers de modèle de stratégie de protection contre la perte de données (DLP). Elle fournit également un exemple de fichier de stratégie au format XML. Il est utile de comprendre l'ensemble de l'architecture DLP et du processus de développement des règles avant de commencer. Pour plus d'informations, consultez les rubriques [Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md) et [Définition de vos modèles DLP et types d'informations](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md).
 

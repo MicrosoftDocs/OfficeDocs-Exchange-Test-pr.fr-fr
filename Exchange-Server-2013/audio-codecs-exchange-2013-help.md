@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Dans la messagerie unifiée, un codec audio est utilisé pour stocker des messages vocaux. Un autre codec est utilisé entre une passerelle VoIP ou un PBX (Private Branch eXchange) IP et le serveur de boîtes aux lettres exécutant le service de messagerie unifiée Microsoft Exchange ou le serveur d'accès au client exécutant le service routeur des appels de messagerie unifiée Microsoft Exchange. La messagerie unifiée est compatible avec les quatre codecs audio suivants pour créer et stocker des messages vocaux :
 
@@ -27,18 +27,8 @@ Dans la messagerie unifiée, un codec audio est utilisé pour stocker des messag
 
   - G.711 PCM (Pulse Code Modulation) Linear
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les codecs G.711 (PCMA et PCMU) et G.723.1 sont des codecs VoIP utilisés entre une passerelle VoIP et les serveurs de boîtes aux lettres et d'accès au client.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Les codecs G.711 (PCMA et PCMU) et G.723.1 sont des codecs VoIP utilisés entre une passerelle VoIP et les serveurs de boîtes aux lettres et d'accès au client.
 
 
 La sélection du codec audio approprié en fonction des besoins et exigences de votre organisation fait partie de la planification de votre système de messagerie unifiée. Cette rubrique décrit les codecs audio que la messagerie unifiée peut utiliser et vous aide à planifier votre déploiement de messagerie unifiée.
@@ -155,34 +145,14 @@ Parfois, au cours de la compression et de la décompression, certaines informati
 
 La bande passante RTAudio ou l'audio haute fidélité pour l'enregistrement des messages vocaux sont aussi disponibles sous forme de codec audio. Toutefois, l'audio haute fidélité via RTAudio n'est disponible qu'après intégration de la messagerie unifiée dans [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=202010). Pour activer RTAudio en tant que codec filaire (bande étroite ou bande large), le plan de numérotation de messagerie unifiée doit être configuré en tant que plan de numérotation de type URI SIP (Session Initiation Protocol), et vous devez définir le codec de réponse aux appels sur le plan de numérotation sur MP3 ou WMA pour activer la transmission audiofréquence large bande (16 kHz).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>RTAudio n'est pas disponible dans les environnements dans lesquels Lync Server n'est pas déployé. Ceci est dû au fait que, dans les environnements qui n’ont pas intégré Lync Server, le plan de numérotation est défini sur Numéro de poste ou E.164 et non sur URI SIP.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> RTAudio n'est pas disponible dans les environnements dans lesquels Lync Server n'est pas déployé. Ceci est dû au fait que, dans les environnements qui n’ont pas intégré Lync Server, le plan de numérotation est défini sur Numéro de poste ou E.164 et non sur URI SIP.
 
 
 Il existe deux flux de données multimédia pour chaque appel entrant : entrant vers un serveur d'accès au client et sortant à partir d'un serveur de boîtes aux lettres. Quand le type de plan de numérotation est défini sur URI SIP et que le codec de réponse aux appels du plan de numérotation est défini sur MP3 ou WMA, un serveur d'accès au client tente de sélectionner le codec VoIP RTAudio pour le flux de données multimédia entrant. Si la négociation réussit, le codec RTAudio pour le flux entrant est utilisé pour les appels de réponse aux appels ou les appels en provenance d'un client ou d'un serveur Lync.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les appels émis à l'aide de la fonctionnalité Émettre au téléphone n'utilisent pas le codec RTAudio. Le flux entrant pour les appels émis à l'aide de la fonctionnalité Émettre au téléphone utilisent le codec G.711 ou G.723.1.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les appels émis à l'aide de la fonctionnalité Émettre au téléphone n'utilisent pas le codec RTAudio. Le flux entrant pour les appels émis à l'aide de la fonctionnalité Émettre au téléphone utilisent le codec G.711 ou G.723.1.
 
 
 Quand le codec RTAudio est utilisé, le message vocal est enregistré dans un format haute fidélité et stocké en tant que fichier audio avec une extension .mp3 ou .wma., selon la configuration du plan de numérotation. Lorsque l'utilisateur écoute le message vocal dans Outlook ou Outlook Web App, il entend le message vocal en qualité audio haute fidélité. Si la négociation échoue, le codec G.711 ou G.723.1 est utilisé. Les codecs G.711 et G.723.1 sont des codecs à faible bande passante. Lorsque le message vocal est utilisé comme codec VoIP, il est enregistré et stocké en tant que fichier de transmission audiofréquence à bande étroite avec une extension .mp3 ou .wma.
@@ -249,18 +219,8 @@ La taille des messages vocaux de messagerie unifiée dépend de la taille de la 
 
 La figure suivante montre en quoi la taille du fichier audio dépend de la durée de l'enregistrement du message vocal pour les trois codecs audio que vous pouvez utiliser dans la messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans cette figure, la durée moyenne d'un message vocal de réponse aux appels est d'environ 30 secondes.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans cette figure, la durée moyenne d'un message vocal de réponse aux appels est d'environ 30 secondes.
 
 
 **Taille de fichier audio**
@@ -275,18 +235,8 @@ Le format MP3 est le format de fichier audio des messages vocaux sélectionné p
 
 Des trois codecs audio, WMA est le plus compressé. La compression est d'environ 11 000 octets pour 10 secondes de données audio. Toutefois, le format de fichier .wma a une section d'en-tête beaucoup plus importante que le format de fichier .wav. La section d'en-tête du fichier .wma est d'environ 7 kilo-octets (Ko) alors que la section d'en-tête du fichier .wav est inférieure à 100 octets. Bien que les enregistrements audio WMA soient enregistrés pour une durée supérieure à 15 secondes, leur taille est inférieure à celle des enregistrements audio GSM. Par conséquent, utilisez le codec audio WMA pour obtenir des fichiers audio de qualité optimale et de taille réduite.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous utilisez les notifications Push à partir de votre déploiement local pour OWA pour les périphériques, vous ne pouvez pas utiliser le format WMA. OWA pour les périphériques ne prend en charge que le format de fichier MP3.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous utilisez les notifications Push à partir de votre déploiement local pour OWA pour les périphériques, vous ne pouvez pas utiliser le format WMA. OWA pour les périphériques ne prend en charge que le format de fichier MP3.
 
 
 ## G.711 PCM Linear

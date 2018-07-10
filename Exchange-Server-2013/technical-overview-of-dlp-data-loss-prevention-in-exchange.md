@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Découvrez les stratégies DLP dans Exchange Server 2013 et Exchange Online, notamment leur contenu et la façon de les tester. Vous allez également découvrir une nouvelle fonctionnalité dans Exchange DLP.
 
@@ -27,20 +27,10 @@ Les stratégies DLP sont des packages simples qui contiennent des groupes de co
 
 En plus des stratégies DLP personnalisables elles-mêmes, vous pouvez aussi informer les expéditeurs de messages électroniques qu'ils sont peut-être sur le point de ne pas respecter l'une de vos stratégies, avant même qu'ils envoient un message gênant. Pour ce faire, configurez les conseils de stratégie. Les conseils de stratégie sont similaires aux infos-courrier et peuvent être configurés pour présenter une courte note dans le client Microsoft Outlook 2013 qui fournit des informations sur les violations de stratégie possibles à une personne créant un message. Dans la dernière version d’Exchange Online et d’Exchange 2013 SP1, les conseils de stratégie sont également affichés dans Outlook Web App et OWA pour les périphériques. Pour plus d'informations, consultez la rubrique [Conseils de stratégie](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange Online : la protection contre la perte de données est une fonctionnalité étendue qui nécessite une licence Exchange Online Plan 2. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Licences Exchange Online</a>.<br />
+> [!NOTE]
+> Exchange Online : la protection contre la perte de données est une fonctionnalité étendue qui nécessite une licence Exchange Online Plan 2. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Licences Exchange Online</a>.<br />
 Exchange 2013 : la protection contre la perte de données est une fonctionnalité étendue qui nécessite une licence d’accès client (CAL) Exchange Enterprise. Pour plus d’informations sur les licences d’accès client et les licences par serveur, consultez la rubrique <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Licences Exchange Server</a>.<br />
-<strong>Licence d'accès client Exchange Enterprise avec Services :</strong> Vous devez prendre note d'une distinction de comportement si vous êtes un client Licence d'accès client Exchange Enterprise avec Services et que vous mettez en place un déploiement hybride, dans lequel certaines boîtes aux lettres se trouvent en local et d'autres dans Exchange Online. Les stratégies DLP sont appliquées dans Exchange Online. Par conséquent, les stratégies DLP ne s’appliquent pas aux messages envoyés par un utilisateur sur site à un autre, car ces messages ne quittent pas l’infrastructure sur site.</td>
-</tr>
-</tbody>
-</table>
+> <strong>Licence d'accès client Exchange Enterprise avec Services :</strong> Vous devez prendre note d'une distinction de comportement si vous êtes un client Licence d'accès client Exchange Enterprise avec Services et que vous mettez en place un déploiement hybride, dans lequel certaines boîtes aux lettres se trouvent en local et d'autres dans Exchange Online. Les stratégies DLP sont appliquées dans Exchange Online. Par conséquent, les stratégies DLP ne s’appliquent pas aux messages envoyés par un utilisateur sur site à un autre, car ces messages ne quittent pas l’infrastructure sur site.
 
 
 Recherchez-vous les tâches de gestion relatives à la protection contre la perte de données ? Consultez [Procédures relatives à la protection contre la perte de données (DLP)](dlp-procedures-exchange-2013-help.md) (Exchange 2013) ou [Procédures relatives à la protection contre la perte de données (DLP)](https://technet.microsoft.com/fr-fr/library/jj938003\(v=exchg.150\)) (Exchange Online).

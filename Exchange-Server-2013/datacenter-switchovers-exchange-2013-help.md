@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013 SP1_
+_**Sapplique à :** Exchange Server 2013 SP1_
 
-_**Dernière rubrique modifiée :**2016-03-17_
+_**Dernière rubrique modifiée :** 2016-03-17_
 
 Dans une configuration de résilience de site, la récupération automatique suite à une défaillance au niveau du site peut se produire dans un DAG, ce qui permet au système de messagerie de conserver un état fonctionnel. Cette configuration nécessite au moins trois emplacements, car elle nécessite le déploiement de membres du DAG dans deux emplacements et le déploiement du serveur témoin du DAG dans un troisième emplacement.
 
@@ -25,18 +25,8 @@ Une opération de permutation de centre de données s'articule en quatre étapes
 
 1.  **Fermeture d’un centre de données exécuté partiellement**   Cette étape implique l’arrêt des services Exchange dans le centre de données principal, si ces derniers sont toujours en cours d’exécution. Cette étape est particulièrement importante pour le rôle serveur de boîtes aux lettres, car elle utilise un modèle haute disponibilité actif/passif. Si les services d'un centre de données partiellement défaillant ne sont pas arrêtés, il est possible que les problèmes de ce centre aient un impact négatif sur les services lors d'une nouvelle permutation vers le centre de données principal.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si la fiabilité du réseau ou de l'infrastructure Active Directory a été compromise suite à une défaillance du centre de données principal, nous vous recommandons d'arrêter tous les services de messagerie jusqu'au rétablissement de l'intégrité de ces dépendances.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si la fiabilité du réseau ou de l'infrastructure Active Directory a été compromise suite à une défaillance du centre de données principal, nous vous recommandons d'arrêter tous les services de messagerie jusqu'au rétablissement de l'intégrité de ces dépendances.
 
 
 2.  **Validation et vérification des conditions requises pour le deuxième centre de données**   Cette étape peut être exécutée en parallèle à l'étape 1, car la validation de l'intégrité des dépendances de l'infrastructure dans le deuxième centre de données est largement distincte des services du premier centre de données. Chaque organisation requiert généralement sa propre méthode pour effectuer cette opération. Par exemple, vous pouvez effectuer cette opération en vérifiant les informations d'intégrité collectées et filtrées par une application d'analyse d'infrastructure ou à l'aide d'un outil spécialement adapté à l'infrastructure de votre organisation. Cette étape est essentielle, car l'activation du deuxième centre de données lorsque son infrastructure est défectueuse et instable peut produire des résultats médiocres.
@@ -178,18 +168,8 @@ Même dans une configuration de type actif/actif, il peut être nécessaire de m
 
 En supposant que les enregistrements DNS sont contrôlés par l'organisation, l'activation des serveurs de transport Edge implique la mise à jour de l'enregistrement de ressource MX pour chaque domaine SMTP hébergé par le serveur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si l'enregistrement de ressource MX utilisé par votre organisation n'est pas hébergé par un serveur DNS contrôlé par celle-ci, il est préférable de référencer un enregistrement CNAME dans l'enregistrement de ressource MX et d'utiliser un enregistrement CNAME contrôlé par l'organisation que vous pourrez ensuite mettre à jour.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si l'enregistrement de ressource MX utilisé par votre organisation n'est pas hébergé par un serveur DNS contrôlé par celle-ci, il est préférable de référencer un enregistrement CNAME dans l'enregistrement de ressource MX et d'utiliser un enregistrement CNAME contrôlé par l'organisation que vous pourrez ensuite mettre à jour.
 
 
 Les mises à jour du DNS autorisent le trafic entrant, et le trafic sortant est géré par l'activation des bases de données de boîtes aux lettres dans un site contenant des serveurs de transport Edge opérationnels :
@@ -220,18 +200,8 @@ Le rôle serveur de boîtes aux lettres doit être le premier rôle commuté dan
 
 2.  Une fois que les serveurs de boîtes aux lettres du centre de données principal ont été intégrés dans le DAG, ils ont besoin de temps pour synchroniser leurs copies de base de données. Selon la nature de l'erreur, la durée de la panne et les actions menées par un administrateur durant la panne, un réamorçage des copies de base de données peut s'avérer nécessaire. Par exemple, si au cours de la panne, vous supprimez les copies de base de données du centre de donnés principal défaillant pour permettre la troncature des fichiers journaux pour les copies actives valides dans le deuxième centre de données, un réamorçage sera nécessaire. Chaque base de données peut continuer individuellement à partir de ce point. Une fois que la copie de base de données répliquée du centre de données principal est saine, elle peut passer à l'étape suivante.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Ce processus ne nécessite pas le déplacement simultané de toutes les bases de données. Nous vous conseillons de déplacer simultanément la plupart des bases de données de votre organisation. Toutefois, certaines bases de données peuvent rester dans le deuxième centre de données s'il existe des problèmes associés aux copies de base de données dans le centre de données principal.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Ce processus ne nécessite pas le déplacement simultané de toutes les bases de données. Nous vous conseillons de déplacer simultanément la plupart des bases de données de votre organisation. Toutefois, certaines bases de données peuvent rester dans le deuxième centre de données s'il existe des problèmes associés aux copies de base de données dans le centre de données principal.
 
 
 3.  Si la plupart des bases de données sont saines dans le centre de données principal, vous pouvez planifier le processus de commutation. Lorsque l'heure planifiée parvient à échéance, vous devez effectuer les opérations suivantes :
@@ -242,18 +212,8 @@ Le rôle serveur de boîtes aux lettres doit être le premier rôle commuté dan
     
     3.  Une fois les bases de données démontées, les URL du serveur d'accès au client doivent être déplacées du deuxième centre de données vers le centre de données principal. Pour cela, vous devez modifier l'enregistrement DNS des URL afin qu'il pointe vers le serveur d'accès au client ou le groupe de serveurs d'accès au client dans le centre de données principal. Le système réagira comme si un basculement de base de données s'était produit pour chaque base de données déplacée.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Ne passez à l'étape suivante qu'une fois que les URL du serveur d'accès au client ont été déplacées et que les entrées du cache DNS et TTL ont expirée. L'activation des bases de données dans le centre de données principal avant le déplacement des URL du serveur d'accès au client vers le centre de données invalidera la configuration (par exemple, une base de données montée ne comportant aucun serveur d'accès au client dans son site Active Directory).</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Ne passez à l'étape suivante qu'une fois que les URL du serveur d'accès au client ont été déplacées et que les entrées du cache DNS et TTL ont expirée. L'activation des bases de données dans le centre de données principal avant le déplacement des URL du serveur d'accès au client vers le centre de données invalidera la configuration (par exemple, une base de données montée ne comportant aucun serveur d'accès au client dans son site Active Directory).
     
     4.  Étant donné que chacune des bases de données du centre de données principal est saine, elles peuvent être activées dans ce dernier en procédant à leur permutation. Cette opération est effectuée à l'aide de la cmdlet [Move-ActiveMailboxDatabase](https://technet.microsoft.com/fr-fr/library/dd298068\(v=exchg.150\)) pour chaque base de données à activer.
     

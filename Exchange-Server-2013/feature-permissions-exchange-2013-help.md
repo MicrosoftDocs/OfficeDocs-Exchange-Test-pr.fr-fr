@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-12_
+_**Dernière rubrique modifiée :** 2012-10-12_
 
 Les autorisations dans Microsoft Exchange Server 2013 sont gérées à l’aide du modèle d’autorisations de contrôle d’accès basé sur un rôle (RBAC). Les rubriques suivantes identifient les groupes de rôles de gestion nécessaires à la gestion des fonctions associées à chaque domaine fonctionnel d’Exchange 2013.
 

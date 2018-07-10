@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-01-23_
+_**Dernière rubrique modifiée :** 2017-01-23_
 
 Nous vous recommandons d’utiliser le processus d’abonnement Edge pour établir le flux de messagerie entre votre organisation Exchange et un serveur de transport Edge. Toutefois, certaines situations peuvent vous empêcher d’abonner le serveur de transport Edge à votre organisation Exchange à l’aide du processus d’abonnement Edge. Pour établir manuellement le flux de messagerie entre votre organisation Exchange et un serveur de transport Edge, vous devez créer et configurer les connecteurs d’envoi et de réception sur le serveur de transport Edge et les serveurs de boîtes aux lettres dans l’organisation Exchange.
 
@@ -33,18 +33,8 @@ Nous vous recommandons d’utiliser le processus d’abonnement Edge pour établ
 
   - Vous devez créer un compte d’utilisateur dans Active Directory et ajouter le compte au groupe de sécurité universel sur l’ordinateur Exchange Server. Ce compte est utilisé par le connecteur d’envoi sur le serveur de transport Edge pour l’authentification auprès du serveur de boîtes aux lettres dans l’organisation Exchange.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Ce compte bénéficie des autorisations associées aux ordinateurs exécutant Exchange Server. Veillez à protéger les informations d’identification du compte afin d’éviter toute utilisation abusive de ce dernier. Vous pouvez configurer le compte pour ne permettre une ouverture de session que sur des ordinateurs spécifiques.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Ce compte bénéficie des autorisations associées aux ordinateurs exécutant Exchange Server. Veillez à protéger les informations d’identification du compte afin d’éviter toute utilisation abusive de ce dernier. Vous pouvez configurer le compte pour ne permettre une ouverture de session que sur des ordinateurs spécifiques.
 
 
 ## Procédures relatives au serveur de transport Edge
@@ -63,18 +53,8 @@ Par défaut, un connecteur de réception unique est créé lors de l’installat
 
 Les sections suivantes vous guident au cours du processus de configuration requis pour préparer votre serveur de transport Edge à communiquer avec votre organisation Exchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez utiliser uniquement l’environnement Exchange Management Shell pour effectuer ces procédures sur les serveurs de transport Edge.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez utiliser uniquement l’environnement Exchange Management Shell pour effectuer ces procédures sur les serveurs de transport Edge.
 
 
 ## Étape 1 : Créer un connecteur d’envoi configuré pour envoyer des messages vers Internet
@@ -99,18 +79,8 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez la rubri
 
 Utilisez la cmdlet **New-SendConnector** pour créer un connecteur d’envoi.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avant de créer un connecteur d’envoi, vous devez d’abord exécuter la commande <strong>Get-Credential</strong> pour enregistrer le nom d’utilisateur et le mot de passe que vous utiliserez dans une variable temporaire. Vous devez effectuer cette opération car la cmdlet <strong>New-SendConnector</strong> n’acceptera pas les informations d’identification de l’utilisateur en texte brut.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Avant de créer un connecteur d’envoi, vous devez d’abord exécuter la commande <strong>Get-Credential</strong> pour enregistrer le nom d’utilisateur et le mot de passe que vous utiliserez dans une variable temporaire. Vous devez effectuer cette opération car la cmdlet <strong>New-SendConnector</strong> n’acceptera pas les informations d’identification de l’utilisateur en texte brut.
 
 
 Ce connecteur d’envoi requiert la configuration suivante :

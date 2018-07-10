@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les compteurs de performances de cette rubrique contrôlent l'Assistant Dossier géré quand il implémente la gestion des enregistrements de messagerie (MRM) pour Microsoft Exchange Server 2010. Étant donné que l'exécution de l'Assistant Dossier géré est un processus consommant une quantité importante de ressources, vous devez l'exécuter uniquement lorsque votre serveur peut tolérer la charge supplémentaire. Nous vous recommandons également de contrôler les performances lors de l'exécution de l'Assistant Dossier géré. En plus des compteurs de performances répertoriés dans cette rubrique, vous pouvez également demander à contrôler les compteurs de performances supplémentaires qui analysent des éléments tels que les performances de disque et l'utilisation de l'UC.
 
@@ -156,18 +156,8 @@ Le tableau suivant décrit les compteurs de performance utilisés pour la gestio
 <td><p>Assistant Dossier géré MSExchange</p></td>
 <td><p>Indique le nombre d'éléments auxquels est attribuée une balise de stratégie par défaut en fonction d'une action de l'utilisateur, par exemple lors de la sélection d'un message avec une balise personnelle puis de l'option <strong>Utiliser la stratégie de dossier</strong>.</p>
 <p>Si un nouvel utilisateur se voit attribuer une stratégie de rétention avec une balise de stratégie par défaut, le compteur est incrémenté du nombre d'éléments qui seront attribués par la balise de stratégie par défaut en fonction de la stratégie de rétention.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si un utilisateur dispose d'une stratégie de rétention avec une balise de stratégie par défaut, les nouveaux messages qui arrivent par le protocole de transport reçoivent une balise par défaut. Cette action n'est pas suivie par ce compteur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si un utilisateur dispose d'une stratégie de rétention avec une balise de stratégie par défaut, les nouveaux messages qui arrivent par le protocole de transport reçoivent une balise par défaut. Cette action n'est pas suivie par ce compteur.
 
 </td>
 </tr>

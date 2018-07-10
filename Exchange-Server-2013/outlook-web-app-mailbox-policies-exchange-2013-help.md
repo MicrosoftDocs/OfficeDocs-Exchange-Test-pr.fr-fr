@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-05_
+_**Dernière rubrique modifiée :** 2012-10-05_
 
 Utilisez les stratégies de boîte aux lettres Microsoft Outlook Web App pour créer des stratégies au niveau de l’organisation et gérer l’accès aux fonctionnalités dans Outlook Web App.
 
@@ -39,18 +39,8 @@ Vous pouvez également gérer les fonctionnalités d’Outlook Web App en config
 
 Une stratégie de boîte aux lettres Outlook Web App par défaut est automatiquement créée lorsqu’Exchange est installé. Par défaut, toutes les options sont activées sur la stratégie de boîte aux lettres d’Outlook Web App par défaut. Vous pouvez créer autant de stratégies de boîte aux lettres d’Outlook Web App que nécessaire pour satisfaire les besoins de votre organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La stratégie de boîte aux lettres par défaut d’Outlook Web App n’est pas automatiquement appliquée à toutes les boîtes aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La stratégie de boîte aux lettres par défaut d’Outlook Web App n’est pas automatiquement appliquée à toutes les boîtes aux lettres.
 
 
 Pour plus d’informations sur la création ou la suppression de stratégies de boîtes aux lettres, consultez les rubriques [Création d'une stratégie de boîte aux lettres Outlook Web App](create-an-outlook-web-app-mailbox-policy-exchange-2013-help.md) et [Suppression d'une stratégie de boîte aux lettres Outlook Web App dans Exchange](remove-an-outlook-web-app-mailbox-policy-from-exchange-exchange-2013-help.md).

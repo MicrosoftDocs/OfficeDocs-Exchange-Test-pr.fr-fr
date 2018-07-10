@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-12-05_
+_**Dernière rubrique modifiée :** 2012-12-05_
 
 Vous pouvez désactiver la messagerie électronique pour un contact de messagerie existant dans votre organisation Exchange. Lorsque vous désactivez la messagerie électronique pour un contact de messagerie, la suppression s'effectue dans Exchange et dans le carnet d’adresse de votre organisation. Si le contact de messagerie est membre d’un groupe de distribution, le contact ne reçoit plus les messages envoyés au groupe. En outre, les attributs Exchange sont supprimés de l’objet de contact a extension messagerie dans Active Directory, mais le contact et ses attributs non Exchange (comme des informations relatives aux contacts et à l’organisation) sont conservés dans Active Directory.
 
@@ -31,18 +31,8 @@ Pour connaître les tâches de gestion supplémentaires relatives aux contacts d
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -141,18 +131,8 @@ Pour vérifier l’activation de la messagerie des contacts Active Directory s�
 
   - Dans le CAE, accédez à **Destinataires**  \> **Contacts**. Les nouveaux contacts de messagerie sont affichés dans la liste des contacts. Sous **Type de contact**, le type est **Contact de messagerie**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous devez peut-être cliquer sur <strong>Actualiser</strong><img src="images/Dd353189.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif" title="Icône Actualiser" alt="Icône Actualiser" /> pour afficher les nouveaux contacts de messagerie.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Vous devez peut-être cliquer sur <strong>Actualiser</strong><img src="images/Dd353189.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif" title="Icône Actualiser" alt="Icône Actualiser" /> pour afficher les nouveaux contacts de messagerie.
 
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les informations relatives aux nouveaux contacts de messagerie.

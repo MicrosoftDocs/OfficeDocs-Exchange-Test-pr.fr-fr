@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-14_
+_**Dernière rubrique modifiée :** 2013-02-14_
 
 Pour répondre aux besoins d'un individu, d'un service informatique ou de l'entreprise, vous devez désactiver ou suspendre temporairement la gestion des enregistrements de messagerie (MRM) d'un utilisateur en particulier ou d'un serveur de boîtes aux lettres. La désactivation ou la suspension de la gestion des enregistrements de messagerie peut s'avérer nécessaire dans les cas suivants :
 
@@ -87,36 +87,16 @@ Pour des informations détaillées sur la syntaxe et les paramètres, consultez 
 
 Pour désactiver la gestion des enregistrements de messagerie d'une organisation, supprimez toutes les balises et stratégies de rétention, sauf pour la stratégie ArbitrationMailbox qui est créée par le programme d'installation d'Exchange. Une fois cette opération terminée, les stratégies de rétention ne sont plus appliquées.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les stratégies de rétention incluent également les balises Déplacer vers l'archive qui permettent de déplacer des messages vers la boîte aux lettres d'archivage de l'utilisateur. Si vous supprimez une stratégie de rétention qui dispose d'une balise Déplacer vers l'archive, les messages des utilisateurs auxquels cette stratégie a été appliquée ne seront plus déplacés vers l'archive par l'Assistant Dossier géré.<br />
-Pour éviter cette situation, supprimez uniquement les balises Supprimer et autoriser la récupération et Supprimer définitivement de votre organisation et conservez les stratégies auxquelles ont été appliquées les balises Déplacer vers l'archive. Les utilisateurs disposant d'une archive peuvent aussi déplacer manuellement des éléments dans leur boîte aux lettres d'archivage à l'aide d'Outlook ou d'Outlook Web App.<br />
-Avant de supprimer des balises ou des stratégies de rétention, nous vous conseillons de vérifier les paramètres des balises en cours de suppression. Ne supprimez pas des balises associées à l'action de rétention Déplacer vers l'archive.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Les stratégies de rétention incluent également les balises Déplacer vers l'archive qui permettent de déplacer des messages vers la boîte aux lettres d'archivage de l'utilisateur. Si vous supprimez une stratégie de rétention qui dispose d'une balise Déplacer vers l'archive, les messages des utilisateurs auxquels cette stratégie a été appliquée ne seront plus déplacés vers l'archive par l'Assistant Dossier géré.
+> Pour éviter cette situation, supprimez uniquement les balises Supprimer et autoriser la récupération et Supprimer définitivement de votre organisation et conservez les stratégies auxquelles ont été appliquées les balises Déplacer vers l'archive. Les utilisateurs disposant d'une archive peuvent aussi déplacer manuellement des éléments dans leur boîte aux lettres d'archivage à l'aide d'Outlook ou d'Outlook Web App.
+> Avant de supprimer des balises ou des stratégies de rétention, nous vous conseillons de vérifier les paramètres des balises en cours de suppression. Ne supprimez pas des balises associées à l'action de rétention Déplacer vers l'archive.
 
 
 Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Gestion des enregistrements de messagerie » dans la rubrique [Stratégie de messagerie et autorisations de conformité](messaging-policy-and-compliance-permissions-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Incluez le commutateur <em>WhatIf</em> dans les commandes suivantes pour simuler l'action entreprise par la commande.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Incluez le commutateur <em>WhatIf</em> dans les commandes suivantes pour simuler l'action entreprise par la commande.
 
 
 Cet exemple supprime toutes les balises de rétention dans une organisation Exchange à l'exception de la balise Ne jamais supprimer, qui est utilisée dans la stratégie ArbitrationMailbox créée par le programme d'installation d'Exchange.

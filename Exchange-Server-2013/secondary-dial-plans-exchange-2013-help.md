@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Quand vous activez la messagerie unifiée pour un utilisateur, vous devez attribuer un numéro de poste et une stratégie de boîte aux lettres de messagerie unifiée qui associera l'utilisateur à un plan de numérotation de messagerie unifiée Après avoir activé la messagerie unifiée pour l'utilisateur, vous pouvez attribuer des numéros de poste supplémentaires pour cet utilisateur dans le même plan de numérotation, mais les numéros de poste au sein de ce plan de numérotation doivent être uniques. Dans certains déploiements, le même numéro de poste doit être attribué à un utilisateur dans deux plans de numérotation distincts. Si c'est le cas, vous pouvez associer l'utilisateur à un plan de numérotation de messagerie unifiée secondaire. Cette opération peut être utile, par exemple, si l'utilisateur possède deux téléphones physiques ou se déplace d'un lieu à un autre.
 
@@ -33,18 +33,8 @@ Quand vous activez la messagerie unifiée pour un utilisateur, vous devez défin
 
 Si vous utilisez des plans de numérotation de poste téléphonique et si vous devez fournir le même numéro de poste pour un utilisateur, vous devez créer un plan de numérotation secondaire, activer la messagerie unifiée pour l’utilisateur et indiquer le même numéro de poste pour l’utilisateur. car le numéro de poste doit être unique dans un plan de numérotation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il n'y a aucune limite au nombre de numéros de poste secondaires que vous pouvez ajouter pour un utilisateur à extension messagerie unifiée.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il n'y a aucune limite au nombre de numéros de poste secondaires que vous pouvez ajouter pour un utilisateur à extension messagerie unifiée.
 
 
 Parfois, un utilisateur se déplace d'un lieu à un autre, possède deux téléphones au minimum ou veut recevoir ses messages vocaux sur un numéro de poste DID (Direct Inward Dial) et ses messages de télécopie sur un autre numéro de poste DID. Pour ce faire, vous devez ajouter un poste DID supplémentaire à la boîte aux lettres de l'utilisateur et, dans certains cas, ajouter un plan de numérotation secondaire.

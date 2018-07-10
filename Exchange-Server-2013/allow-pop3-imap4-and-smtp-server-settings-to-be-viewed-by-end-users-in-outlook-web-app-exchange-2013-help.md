@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-28_
+_**Dernière rubrique modifiée :** 2012-11-28_
 
 Si des utilisateurs se servent de POP3 ou IMAP4 pour se connecter à leurs boîtes aux lettres Microsoft Exchange Server 2013, ils doivent avoir connaissance des paramètres de serveurs appropriés pour effectuer la connexion. Après une installation par défaut d’Exchange 2013, vos utilisateurs ne peuvent pas consulter leurs propres paramètres de serveur POP3 ou IMAP4 entrants ou paramètres de serveur SMTP sortants. Cependant, vous pouvez configurer Exchange pour permettre à vos utilisateurs de consulter leurs propres paramètres à l’aide de MicrosoftOutlook Web App.
 
@@ -35,18 +35,8 @@ Pour plus d’informations sur POP3 et IMAP4, voir [POP3 et IMAP4 dans Exchange 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

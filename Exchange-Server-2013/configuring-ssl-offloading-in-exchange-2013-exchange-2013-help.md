@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-08-22_
+_**Dernière rubrique modifiée :** 2016-08-22_
 
 Les éléments suivants vous aident à configurer le déchargement SSL pour les protocoles et les services connexes sur les serveurs d’accès client Exchange 2013 avec le Service Pack 1 (SP1). Si vous avez plusieurs serveurs d’accès client, vous devez effectuer les étapes requises pour chaque protocole ou service sur tous les serveurs d’accès client avec SP1 de votre organisation locale. Cela ne veut pas dire que chaque serveur d’accès client de votre organisation doit être configuré de manière identique. Si vous mettez à niveau vers des mises à jour cumulatives ou des Service Packs plus récents et que vous souhaitez continuer à utiliser le déchargement SSL, vous devez effectuer les étapes suivantes de nouveau après la mise à niveau ou l’application de ces mises à jour sur les serveurs d’accès client Exchange 2013.
 
 L’un des plus grands avantages au déchargement SSL est la possibilité de gérer plus facilement les certificats utilisés. Au lieu d’avoir des certificats SSL distincts pour chaque serveur d’accès client avec SP1, un certificat SSL unique est utilisé et importé pour tous les serveurs d’accès client. Il peut s’agir d’un certificat SSL existant ou nouvellement créé.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous utilisez le Gestionnaire des services IIS (Internet Information Services), Exchange Management Shell ou une interface de ligne de commande pour configurer le déchargement SSL, notez qu’il existe un <strong>site web par défaut</strong> et un site <strong>Exchange Back End</strong>. Pour le déchargement SSL, configurez uniquement le <strong>site web par défaut</strong>. Ne modifiez pas le site <strong>Exchange Back End</strong>.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Lorsque vous utilisez le Gestionnaire des services IIS (Internet Information Services), Exchange Management Shell ou une interface de ligne de commande pour configurer le déchargement SSL, notez qu’il existe un <strong>site web par défaut</strong> et un site <strong>Exchange Back End</strong>. Pour le déchargement SSL, configurez uniquement le <strong>site web par défaut</strong>. Ne modifiez pas le site <strong>Exchange Back End</strong>.
 
 
 **Contenu de cette rubrique**
@@ -79,18 +69,8 @@ Configuration de la coexistence avec Exchange 2007 et Exchange 2010
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Configuration du déchargement SSL pour Outlook Web App
@@ -196,18 +176,8 @@ Le déchargement SSL pour Outlook Anywhere est activé par défaut. Les clients 
     
       - À l’aide du Gestionnaire des services IIS : dans le Gestionnaires des services IIS, dans le volet **Actions**, cliquez sur **Redémarrer**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez attendre l’application (toutes les 15 minutes) par le processus hôte de service des éventuelles modifications d’Active Directory à IIS, même si vous redémarrez IIS sur un serveur d’accès client.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez attendre l’application (toutes les 15 minutes) par le processus hôte de service des éventuelles modifications d’Active Directory à IIS, même si vous redémarrez IIS sur un serveur d’accès client.
 
 
 Revenir en haut
@@ -376,18 +346,8 @@ Revenir en haut
 
 Si vous travaillez dans une grande organisation avec plusieurs serveurs d’accès client Exchange 2013, vous souhaitez peut-être accélérer les étapes que vous venez d’effectuer. Vous pouvez copier et coller les commandes de n’importe lequel des scripts suivants dans le Bloc-notes, effectuer les modifications requises, enregistrer le fichier avec une extension .ps1, puis l’exécuter à partir d’Exchange Management Shell. Selon vos besoins, ces deux scripts peuvent être utilisés afin de configurer le déchargement SSL pour tous les protocoles et services d’un seul ou de plusieurs serveurs d’accès client.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour les entrées de la cmdlet <strong>Set-OutlookAnywhere</strong>, remplacez « MyServer » par le nom du ou des serveur(s) d’accès au client.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour les entrées de la cmdlet <strong>Set-OutlookAnywhere</strong>, remplacez « MyServer » par le nom du ou des serveur(s) d’accès au client.
 
 
 **Utilisation de Set-WebConfigurationProperty**
@@ -405,18 +365,8 @@ Si vous travaillez dans une grande organisation avec plusieurs serveurs d’acc�
 
 **Utilisation d’appcmd**
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour les entrées de la cmdlet <strong>Set-OutlookAnywhere</strong>, remplacez « MyServer » par le nom du ou des serveur(s) d’accès au client.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour les entrées de la cmdlet <strong>Set-OutlookAnywhere</strong>, remplacez « MyServer » par le nom du ou des serveur(s) d’accès au client.
 
 
     Set-OutlookAnywhere -Identity MyServer\Rpc* -Externalhostname MyServer.mail.contoso.com -ExternalClientsRequireSsl $True -ExternalClientAuthenticationMethod Basic

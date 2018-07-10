@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 L’un des problèmes les plus courants concerne la configuration incorrecte des enregistrements DNS. Vous pouvez utiliser les vérifications automatiques répertoriées ci-dessous pour valider votre configuration et mettre à jour votre environnement.
 

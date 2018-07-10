@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-07-27_
+_**Dernière rubrique modifiée :** 2016-07-27_
 
 L’Assistant Dossier géré est l’un des nombreux processus d’*Assistant de boîte aux lettres* exécuté sur des serveurs de boîtes aux lettres. Sa tâche consiste à traiter les boîtes aux lettres dotées d’une stratégie de rétention, à ajouter des balises de rétention incluses dans la stratégie à la boîte aux lettres et à traiter les éléments de la boîte aux lettres. Si les éléments disposent d’une balise de rétention, l’Assistant vérifie l’âge de ces éléments. Si un élément a dépassé son *âge de rétention*, il prend l’*action de rétention* indiquée. Les actions de rétention comprennent le déplacement d’un élément vers l’archive de l’utilisateur, la suppression de l’élément et sa récupération, ou la suppression définitive de l’élément.
 

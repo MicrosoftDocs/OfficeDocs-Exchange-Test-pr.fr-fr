@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-17_
+_**Dernière rubrique modifiée :** 2013-04-17_
 
 [Installer un module linguistique de messagerie unifiée](install-a-um-language-pack-exchange-2013-help.md)
 

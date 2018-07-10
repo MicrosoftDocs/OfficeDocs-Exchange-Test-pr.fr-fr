@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les vérifications présentées sur cette page vous aideront à identifier certains des problèmes de connectivité les plus courants. Vous pouvez utiliser les vérifications automatiques ci-dessous pour contrôler votre connectivité ou déterminer la cause principale des problèmes.
 

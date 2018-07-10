@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2009-11-03_
+_**Dernière rubrique modifiée :** 2009-11-03_
 
 [Afficher les compteurs de performances pour la gestion des enregistrements de messagerie](view-performance-counters-for-messaging-records-management-exchange-2013-help.md)
 

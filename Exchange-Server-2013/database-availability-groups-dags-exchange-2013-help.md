@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-06-04_
+_**Dernière rubrique modifiée :** 2015-06-04_
 
 Découvrez le DAG Exchange dans Exchange Server 2013. Cet article présente le cycle de vie du groupe de disponibilité de base de données (DAG), ainsi que l’utilisation d’un DAG pour la haute disponibilité et la résilience de site.
 
@@ -37,18 +37,8 @@ Utilisation d’un groupe de disponibilité de base de données (DAG) pour la r�
 
 Les DAG exploitent le concept de *déploiement incrémentiel* qui vous permet de déployer la disponibilité de services et de données sur l'ensemble de vos serveurs de boîtes de lettres et de vos bases de données après l'installation d'Exchange. Après avoir déployé des serveurs de boîtes aux lettres Exchange 2013, vous pouvez créer un DAG, y ajouter des serveurs de boîtes aux lettres et répliquer des bases de données de boîtes aux lettres entre les membres de ce DAG.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il est pris en charge pour créer un groupe de disponibilité de base de données (DAG) comprenant une combinaison de serveurs de boîtes aux lettres physiques et virtualisés, si les serveurs et les solutions répondent aux <a href="exchange-2013-system-requirements-exchange-2013-help.md">Configuration requise pour Exchange 2013</a> et aux conditions requises stipulées dans <a href="exchange-2013-virtualization-exchange-2013-help.md">Virtualisation d'Exchange 2013</a>. Comme pour toutes les configurations de haute disponibilité Exchange, vous devez vérifier que tous les serveurs de boîtes aux lettres dans le DAG sont correctement dimensionnés de façon à traiter la charge de travail nécessaire lors des interruptions programmées et non programmées.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il est pris en charge pour créer un groupe de disponibilité de base de données (DAG) comprenant une combinaison de serveurs de boîtes aux lettres physiques et virtualisés, si les serveurs et les solutions répondent aux <a href="exchange-2013-system-requirements-exchange-2013-help.md">Configuration requise pour Exchange 2013</a> et aux conditions requises stipulées dans <a href="exchange-2013-virtualization-exchange-2013-help.md">Virtualisation d'Exchange 2013</a>. Comme pour toutes les configurations de haute disponibilité Exchange, vous devez vérifier que tous les serveurs de boîtes aux lettres dans le DAG sont correctement dimensionnés de façon à traiter la charge de travail nécessaire lors des interruptions programmées et non programmées.
 
 
 La création d'un DAG s'effectue à l'aide de la cmdlet [New-DatabaseAvailabilityGroup](https://technet.microsoft.com/fr-fr/library/dd351107\(v=exchg.150\)). À sa création, le DAG est un objet vide dans Active Directory. Cet objet Active Directory permet de stocker les informations nécessaires ayant trait au DAG, telles que les informations d'appartenance aux serveurs et certains paramètres de configuration de DAG. Lorsque vous ajoutez le premier serveur au DAG, un cluster de basculement est automatiquement créé pour le DAG. Ce cluster de basculement est utilisé exclusivement par le DAG et doit lui être dédié. L'utilisation du cluster à d'autres fins n'est pas prise en charge.

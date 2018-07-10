@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les marquages de courrier indésirable vous aident à diagnostiquer les problèmes de courrier indésirable en appliquant des métadonnées de diagnostic, ou « marquages », telles que des informations spécifiques à un expéditeur, des résultats de validation du puzzle et des résultats de filtrage du contenu, aux messages à mesure qu’ils sont soumis aux fonctionnalités de blocage du courrier indésirable qui filtrent les messages entrants en provenance d’Internet. Il existe trois marquages de courrier indésirable : le seuil de probabilité de courrier d’hameçonnage, le seuil de probabilité de courrier indésirable et l’ID de l’expéditeur.
 
@@ -33,18 +33,8 @@ Le rapport de blocage du courrier indésirable est un rapport de synthèse des r
 
 Le tableau suivant décrit les informations de filtre qui peuvent figurer dans un rapport de blocage du courrier indésirable.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le rapport de blocage du courrier indésirable n’affiche que les informations des filtres appliqués au message spécifique. Un rapport de blocage du courrier indésirable ne contient pas, en général, toutes les informations contenues dans le tableau suivant. Par exemple, vous pouvez voir s’afficher le rapport de blocage du courrier indésirable suivant : <code>DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le rapport de blocage du courrier indésirable n’affiche que les informations des filtres appliqués au message spécifique. Un rapport de blocage du courrier indésirable ne contient pas, en général, toutes les informations contenues dans le tableau suivant. Par exemple, vous pouvez voir s’afficher le rapport de blocage du courrier indésirable suivant : <code>DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures</code>.
 
 
 ### Informations de filtrage d’un rapport de blocage du courrier indésirable

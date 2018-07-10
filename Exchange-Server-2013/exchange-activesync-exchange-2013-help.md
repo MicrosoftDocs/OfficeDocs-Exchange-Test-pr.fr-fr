@@ -13,33 +13,18 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Découvrez le protocole client Exchange ActiveSync pour Exchange Server 2013. Cet article présente les fonctionnalités d’Exchange ActiveSync, notamment les fonctionnalités de sécurité, les éléments que vous pouvez gérer, la gestion de leur sécurité et la résolution des problèmes lors de la synchronisation vers Windows Phone 7.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette rubrique est adressée aux administrateurs. Vous voulez configurer votre appareil Windows Phone, iOS ou Android afin de pouvoir accéder à votre boîte aux lettres Office 365 ou Exchange Server ? Consultez les rubriques suivantes.
-<ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=615415">Configurer la messagerie sur Windows Phone</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=615414">Configurer la messagerie sur Apple iPhone, iPad et iPod Touch</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/?linkid=615417">Configurer la messagerie électronique sur un téléphone ou une tablette Android</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!TIP]
+> Cette rubrique est adressée aux administrateurs. Vous voulez configurer votre appareil Windows Phone, iOS ou Android afin de pouvoir accéder à votre boîte aux lettres Office 365 ou Exchange Server ? Consultez les rubriques suivantes.
+> <ul>
+> <li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=615415">Configurer la messagerie sur Windows Phone</a></p></li>
+> <li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=615414">Configurer la messagerie sur Apple iPhone, iPad et iPod Touch</a></p></li>
+> <li><p><a href="https://go.microsoft.com/fwlink/?linkid=615417">Configurer la messagerie électronique sur un téléphone ou une tablette Android</a></p></li></ul>
 
 Exchange ActiveSync est un protocole client qui vous permet de synchroniser un périphérique mobile avec votre boîte aux lettres Exchange. Exchange ActiveSync est activé par défaut lorsque vous installez Microsoft Exchange 2013.
 
@@ -57,32 +42,12 @@ Synchronisation de Windows Phone 7
 
 Exchange ActiveSync est un protocole de synchronisation Microsoft Exchange optimisé pour fonctionner avec des réseaux à faible bande passante et latence élevée. Le protocole, basé sur HTTP et XML, permet à des téléphones mobiles d’accéder aux informations d’une organisation sur un serveur exécutant Microsoft Exchange. Exchange ActiveSync permet aux utilisateurs de téléphones mobiles d’accéder à leurs messages électroniques, calendrier, contacts et tâches et de continuer à avoir accès à ces informations lorsqu’ils travaillent hors connexion.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange ActiveSync ne prend pas en charge les boîtes aux lettres partagées ou l’accès délégué.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Exchange ActiveSync ne prend pas en charge les boîtes aux lettres partagées ou l’accès délégué.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les téléphones mobiles Windows Phone 7 prennent uniquement en charge un sous-ensemble de tous les paramètres de la stratégie de boîtes aux lettres d’Exchange ActiveSync. Pour une liste complète, consultez la rubrique Synchronisation de Windows Phone 7.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les téléphones mobiles Windows Phone 7 prennent uniquement en charge un sous-ensemble de tous les paramètres de la stratégie de boîtes aux lettres d’Exchange ActiveSync. Pour une liste complète, consultez la rubrique Synchronisation de Windows Phone 7.
 
 
 ## Fonctionnalités d’Exchange ActiveSync
@@ -153,18 +118,8 @@ Outre la possibilité de configurer des options de sécurité pour les communica
 
   - **Stratégies de mot de passe de périphérique **  Exchange ActiveSync permet de configurer plusieurs options pour les mots de passe de périphérique.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>La technologie de lecture d’empreintes digitales d’iOS7 ne peut pas faire office de mot de passe sur un appareil. Si vous choisissez d’utiliser le lecteur d’empreintes digitales d’iOS7, vous devrez tout de même créer et entrer un mot de passe sur l’appareil si la stratégie de boîte aux lettres d’appareil mobile de votre organisation en exige un.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > La technologie de lecture d’empreintes digitales d’iOS7 ne peut pas faire office de mot de passe sur un appareil. Si vous choisissez d’utiliser le lecteur d’empreintes digitales d’iOS7, vous devrez tout de même créer et entrer un mot de passe sur l’appareil si la stratégie de boîte aux lettres d’appareil mobile de votre organisation en exige un.
     
     Les options disponibles pour les mots de passe d’appareil sont les suivantes :
     

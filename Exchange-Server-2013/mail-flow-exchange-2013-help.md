@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Dans Microsoft Exchange Server 2013, le flux de messagerie s'effectue par le pipeline de transport. Le *pipeline de transport* est un ensemble de services, de connexions, de composants et de files d'attente qui fonctionnent ensemble pour acheminer tous les messages vers le catégoriseur du service de transport d'un serveur de boîtes aux lettres dans une organisation.
 
@@ -59,18 +59,8 @@ Si un serveur de transport Edge Exchange 2013 est installé dans votre réseau 
 
   - **Serveur de boîtes aux lettres et serveur d’accès au client installés sur des ordinateurs distincts**   Dans cette configuration, le flux de messagerie entrant contourne le serveur d’accès au client. Le courrier est acheminé du service de transport sur le serveur de transport Edge vers le service de transport sur le serveur de boîtes aux lettres.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si un serveur de transport Edge Exchange 2010 ou Exchange 2007 est installé sur votre réseau de périmètre, le flux de messagerie se produit directement entre le serveur de transport Edge et le service de transport sur le serveur de boîtes aux lettres. Pour plus d'informations, consultez la rubrique <a href="use-an-exchange-2010-or-2007-edge-transport-server-in-exchange-2013-exchange-2013-help.md">Utilisation d’un serveur de transport Edge Exchange 2010 ou 2007 dans Exchange 2013</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si un serveur de transport Edge Exchange 2010 ou Exchange 2007 est installé sur votre réseau de périmètre, le flux de messagerie se produit directement entre le serveur de transport Edge et le service de transport sur le serveur de boîtes aux lettres. Pour plus d'informations, consultez la rubrique <a href="use-an-exchange-2010-or-2007-edge-transport-server-in-exchange-2013-exchange-2013-help.md">Utilisation d’un serveur de transport Edge Exchange 2010 ou 2007 dans Exchange 2013</a>.
 
 
 ## Messages provenant d’expéditeurs internes

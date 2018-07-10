@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-01-31_
+_**Dernière rubrique modifiée :** 2014-01-31_
 
 Dans Microsoft Exchange Server 2013, vous pouvez utiliser l'Afficheur des files d'attente dans la boîte à outils Exchange ou l'environnement de ligne de commande Exchange Management Shell pour gérer les files d'attente. Pour plus d'informations sur l'utilisation des cmdlets de gestion de file d'attente dans l'environnement de ligne de commande Exchange Management Shell, consultez la rubrique [Utilisation de l’environnement de ligne de commande Exchange Management Shell pour gérer les files d’attente](use-the-exchange-management-shell-to-manage-queues-exchange-2013-help.md).
 
@@ -27,18 +27,8 @@ Dans Microsoft Exchange Server 2013, vous pouvez utiliser l'Afficheur des files
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -73,18 +63,8 @@ Cet exemple affiche des informations détaillées concernant toutes les files d'
 
 La cmdlet **Get-QueueDigest** fournit une vue agrégée de niveau supérieur de l’état des files d’attentes sur tous les serveurs au sein d’une étendue spécifique, telle qu’un DAG, un site Active Directory, une liste de serveurs ou la forêt Active Directory entière. Les files d’attente sur un serveur de transport Edge abonné dans le réseau de périmètre ne sont pas incluses dans les résultats. De plus, la cmdlet **Get-QueueDigest** est disponible sur un serveur de transport Edge, mais les résultats sont limités aux files d’attente sur le serveur de transport Edge.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, la cmdlet <strong>Get-QueueDigest</strong> affiche les files d’attente de remise contenant au moins dix messages, et les résultats peuvent dater d’une à deux minutes. Pour obtenir des instructions sur la modification de ces valeurs par défaut, consultez la rubrique Configurer Get-QueueDigest <a href="configure-get-queuedigest-exchange-2013-help.md">Configurer Get-QueueDigest</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, la cmdlet <strong>Get-QueueDigest</strong> affiche les files d’attente de remise contenant au moins dix messages, et les résultats peuvent dater d’une à deux minutes. Pour obtenir des instructions sur la modification de ces valeurs par défaut, consultez la rubrique Configurer Get-QueueDigest <a href="configure-get-queuedigest-exchange-2013-help.md">Configurer Get-QueueDigest</a>.
 
 
 Pour afficher des informations récapitulatives concernant les files d'attente sur plusieurs serveurs Exchange, exécutez la commande suivante :
@@ -219,18 +199,8 @@ Cet exemple montre comment resoumettre tous les messages situés dans la file d'
 
 Vous resoumettez les messages de la file d'attente de messages incohérents en les reprenant. Vous pouvez utiliser l'Afficheur des files d'attente ou l'environnement de ligne de commande pour resoumettre les messages de la file d'attente de messages incohérents. La file d'attente de messages incohérents est visible dans l'Afficheur des files d'attente uniquement si elle contient des messages.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La file d'attente de messages incohérents contient les messages identifiés comme nuisibles pour le système Exchange après une défaillance du serveur. Les messages peuvent être véritablement dangereux par leur contenu ou leur format. Ils peuvent également être les victimes d'un agent mal écrit ayant bloqué le serveur Exchange pendant le traitement des messages supposés incorrects. Si vous n'êtes pas sûr de la fiabilité des messages se trouvant dans la file d'attente de messages incohérents, exportez-les dans des fichiers afin de pouvoir les examiner. Pour plus d'informations, consultez la rubrique <a href="export-messages-from-queues-exchange-2013-help.md">Exportation de messages de files d'attente</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La file d'attente de messages incohérents contient les messages identifiés comme nuisibles pour le système Exchange après une défaillance du serveur. Les messages peuvent être véritablement dangereux par leur contenu ou leur format. Ils peuvent également être les victimes d'un agent mal écrit ayant bloqué le serveur Exchange pendant le traitement des messages supposés incorrects. Si vous n'êtes pas sûr de la fiabilité des messages se trouvant dans la file d'attente de messages incohérents, exportez-les dans des fichiers afin de pouvoir les examiner. Pour plus d'informations, consultez la rubrique <a href="export-messages-from-queues-exchange-2013-help.md">Exportation de messages de files d'attente</a>.
 
 
 ## Utiliser l'Afficheur des files d'attente dans la boîte à outils Exchange pour resoumettre les messages de la file d'attente de messages incohérents

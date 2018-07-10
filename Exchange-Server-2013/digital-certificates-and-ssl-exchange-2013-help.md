@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-08-26_
+_**Dernière rubrique modifiée :** 2013-08-26_
 
 Le protocole SSL (Secure Sockets Layer) permet de sécuriser les communications entre un client et un serveur. Pour Exchange Server 2013, le protocole SSL permet de sécuriser les communications entre le serveur et les clients. Les clients peuvent être des téléphones mobiles, des ordinateurs faisant partie du réseau d'une organisation et des ordinateurs extérieurs au réseau d'une organisation.
 
@@ -55,18 +55,8 @@ Il existe trois types principaux de certificats numériques : les certificats a
 
 Lors de l'installation d'Exchange 2013, un certificat auto-signé est automatiquement configuré sur les serveurs de boîtes aux lettres. Un certificat auto-signé est signé par l'application qui l'a créé. L'objet et le nom du certificat correspondent. L'émetteur et l'objet sont définis sur le certificat. Ce certificat auto-signé permet de chiffrer les communications entre le serveur d'accès au client et le serveur de boîtes aux lettres. Le serveur d'accès au client approuve automatiquement le certificat auto-signé sur le serveur de boîtes aux lettres de sorte qu'aucun certificat tiers n'est nécessaire sur le serveur de boîtes aux lettres. Lors de l'installation d'Exchange 2013, un certificat auto-signé est également créé sur le serveur d'accès au client. Ce certificat auto-signé autorise certains protocoles clients à utiliser le protocole SSL pour leurs communications. Exchange ActiveSync et Outlook Web App peuvent établir une connexion SSL à l’aide d’un certificat auto-signé. Outlook Anywhere ne fonctionne pas avec un certificat auto-signé sur le serveur d'accès au client. Les certificats auto-signés doivent être copiés manuellement dans le magasin de certificats racines approuvés sur l'ordinateur client ou l'appareil mobile. Quand un client se connecte à un serveur via une connexion SSL et que le serveur présente un certificat auto-signé, le client est invité à vérifier que le certificat a été émis par une autorité approuvée. Le client doit explicitement approuver l'autorité émettrice. Si le client approuve l'autorité émettrice, les communications SSL peuvent alors se poursuivre.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, le certificat numérique installé sur le ou les serveurs de boîtes aux lettres est un certificat auto-signé. Il n’est pas nécessaire de remplacer un certificat auto-signé sur les serveurs de boîtes aux lettres de votre organisation par un certificat tiers approuvé. Le serveur d'accès au client approuve automatiquement le certificat auto-signé sur le serveur de boîtes aux lettres et aucune autre configuration n'est nécessaire pour les certificats sur le serveur de boîtes aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, le certificat numérique installé sur le ou les serveurs de boîtes aux lettres est un certificat auto-signé. Il n’est pas nécessaire de remplacer un certificat auto-signé sur les serveurs de boîtes aux lettres de votre organisation par un certificat tiers approuvé. Le serveur d'accès au client approuve automatiquement le certificat auto-signé sur le serveur de boîtes aux lettres et aucune autre configuration n'est nécessaire pour les certificats sur le serveur de boîtes aux lettres.
 
 
 Il arrive souvent que de petites organisations décident de ne pas utiliser un certificat tiers ou de ne pas installer leur propre infrastructure à clé publique (PKI) pour émettre leurs propres certificats. Elles peuvent être amenées à prendre cette décision, car ces solutions sont trop onéreuses ou parce que leurs administrateurs n'ont pas l'expérience ni la connaissance nécessaires pour créer leur propre hiérarchie de certificats, ou pour ces deux raisons. Si vous utilisez des certificats auto-signés, le coût est minimal et l'installation simple. Toutefois, la création d'une infrastructure pour la gestion du cycle de vie, le renouvellement, l'approbation et la révocation des certificats est beaucoup plus difficile avec des certificats auto-signés.

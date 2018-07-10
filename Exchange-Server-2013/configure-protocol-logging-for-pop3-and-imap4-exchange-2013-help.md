@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-27_
+_**Dernière rubrique modifiée :** 2012-11-27_
 
 Vous pouvez utiliser l’environnement de ligne de commande Exchange Management Shell pour activer, désactiver ou modifier les paramètres d’enregistrement dans le journal de protocole pour POP3 et IMAP4. Par défaut, l'enregistrement dans le journal de protocole n'est pas activé.
 
@@ -29,18 +29,8 @@ L’enregistrement dans le journal de protocole vous permet de vérifier les con
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -52,18 +42,8 @@ Cet exemple active le journal du protocole pour IMAP4 ou POP3 sur le serveur d�
     Set-ImapSettings -Server "CAS01" -ProtocolLogEnabled $true
     Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une fois que vous avez modifié les paramètres d’enregistrement dans le journal de protocole pour POP3 ou IMAP4, vous devez redémarrer les services que vous utilisez : POP3 ou IMAP4. Pour obtenir des informations sur la procédure de redémarrage des services POP3 et IMAP4, voir <a href="start-and-stop-the-pop3-services-exchange-2013-help.md">Démarrage et arrêt des services POP3</a> et <a href="start-and-stop-the-imap4-services-exchange-2013-help.md">Démarrer et arrêter les services IMAP4</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Une fois que vous avez modifié les paramètres d’enregistrement dans le journal de protocole pour POP3 ou IMAP4, vous devez redémarrer les services que vous utilisez : POP3 ou IMAP4. Pour obtenir des informations sur la procédure de redémarrage des services POP3 et IMAP4, voir <a href="start-and-stop-the-pop3-services-exchange-2013-help.md">Démarrage et arrêt des services POP3</a> et <a href="start-and-stop-the-imap4-services-exchange-2013-help.md">Démarrer et arrêter les services IMAP4</a>.
 
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Set-ImapSettings](https://technet.microsoft.com/fr-fr/library/aa998252\(v=exchg.150\)) et [Set-PopSettings](https://technet.microsoft.com/fr-fr/library/aa997154\(v=exchg.150\)).
@@ -75,18 +55,8 @@ Cet exemple désactive le journal du protocole pour IMAP4 ou POP3 sur le serveur
     Set-ImapSettings -Server "CAS01" -protocolLogEnabled $false
     Set-PopSettings -Server "CAS01" -protocolLogEnabled $false
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une fois que vous avez modifié les paramètres d’enregistrement dans le journal de protocole pour POP3 ou IMAP4, vous devez redémarrer les services que vous utilisez : POP3 ou IMAP4. Pour obtenir des informations sur la procédure de redémarrage des services POP3 et IMAP4, voir <a href="start-and-stop-the-pop3-services-exchange-2013-help.md">Démarrage et arrêt des services POP3</a> et <a href="start-and-stop-the-imap4-services-exchange-2013-help.md">Démarrer et arrêter les services IMAP4</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Une fois que vous avez modifié les paramètres d’enregistrement dans le journal de protocole pour POP3 ou IMAP4, vous devez redémarrer les services que vous utilisez : POP3 ou IMAP4. Pour obtenir des informations sur la procédure de redémarrage des services POP3 et IMAP4, voir <a href="start-and-stop-the-pop3-services-exchange-2013-help.md">Démarrage et arrêt des services POP3</a> et <a href="start-and-stop-the-imap4-services-exchange-2013-help.md">Démarrer et arrêter les services IMAP4</a>.
 
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Set-ImapSettings](https://technet.microsoft.com/fr-fr/library/aa998252\(v=exchg.150\)) et [Set-PopSettings](https://technet.microsoft.com/fr-fr/library/aa997154\(v=exchg.150\)).
@@ -123,18 +93,8 @@ Pour modifier les paramètres d’enregistrement POP3 ou IMAP4, exécutez les cm
     
         Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota unlimited
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une fois que vous avez modifié les paramètres d’enregistrement dans le journal de protocole pour POP3 ou IMAP4, vous devez redémarrer les services que vous utilisez : POP3 ou IMAP4. Pour obtenir des informations sur la procédure de redémarrage des services POP3 et IMAP4, voir <a href="start-and-stop-the-pop3-services-exchange-2013-help.md">Démarrage et arrêt des services POP3</a> et <a href="start-and-stop-the-imap4-services-exchange-2013-help.md">Démarrer et arrêter les services IMAP4</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Une fois que vous avez modifié les paramètres d’enregistrement dans le journal de protocole pour POP3 ou IMAP4, vous devez redémarrer les services que vous utilisez : POP3 ou IMAP4. Pour obtenir des informations sur la procédure de redémarrage des services POP3 et IMAP4, voir <a href="start-and-stop-the-pop3-services-exchange-2013-help.md">Démarrage et arrêt des services POP3</a> et <a href="start-and-stop-the-imap4-services-exchange-2013-help.md">Démarrer et arrêter les services IMAP4</a>.
 
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Set-ImapSettings](https://technet.microsoft.com/fr-fr/library/aa998252\(v=exchg.150\)) et [Set-PopSettings](https://technet.microsoft.com/fr-fr/library/aa997154\(v=exchg.150\)).

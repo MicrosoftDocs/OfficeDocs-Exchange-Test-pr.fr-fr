@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013 SP1_
+_**Sapplique à :** Exchange Online, Exchange Server 2013 SP1_
 
-_**Dernière rubrique modifiée :**2017-03-29_
+_**Dernière rubrique modifiée :** 2017-03-29_
 
 S’assurer que les utilisateurs ont une bonne expérience de messagerie a toujours été l’objectif principal des administrateurs de système de messagerie. Pour aider à garantir la disponibilité et la fiabilité de votre organisation Microsoft Exchange Server 2013, tous les aspects du système doivent être surveillés activement, et tous les problèmes détectés doivent être résolus rapidement. Dans les versions précédentes de Exchange, la surveillance des composants critiques du système impliquait généralement l’utilisation d’une application externe telle que Microsoft System Center 2012 Operations Manager pour collecter des données et pour fournir des actions de récupération pour des problèmes détectés à la suite de l’analyse des données recueillies. Exchange 2010 et les versions antérieures incluaient des manifestes d’intégrité et des moteurs de corrélation sous la forme de packs de gestion. Ces composants permettaient à Operations Manager de déterminer si un composant particulier était intègre ou non. En outre, Operations Manager utilisait également l’infrastructure de la cmdlet de diagnostic intégrée à Exchange 2010 pour exécuter des transactions synthétiques pour divers aspects du système.
 
@@ -83,18 +83,8 @@ Il existe des centaines de sondes récurrentes. Beaucoup de ces sondes sont prop
 
 Les bases d’une sonde récurrente sont les suivantes : démarrer toutes les *RecurrenceIntervalSeconds* et vérifier (ou sonder) certains aspects de l’intégrité. Si le composant est en bon état, la sonde transmet et écrit un événement d’informations dans le canal Microsoft.Exchange.ActiveMonitoring\\ProbeResult avec un *ResultType* de 3. Si le contrôle échoue ou expire, la sonde échoue et écrit un événement d’erreur dans le même canal. Un *ResultType* de 4 signifie que le contrôle a échoué et un *ResultType* de 1 signifie qu’il a expiré. Un grand nombre de sondes sont réexécutées si elles expirent, jusqu’à la valeur de la propriété *MaxRetryAttempts*.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Remarque :</strong> le canal pourpre ProbeResult peut être très occupé, car des centaines de sondes sont exécutées toutes les minutes et journalisent des événements. L’impact réel sur les performances de votre serveur Exchange peur s’avérer considérable si vous tentez d’exécuter des requêtes coûteuses sur les journaux des événements dans un environnement de production.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> <strong>Remarque :</strong> le canal pourpre ProbeResult peut être très occupé, car des centaines de sondes sont exécutées toutes les minutes et journalisent des événements. L’impact réel sur les performances de votre serveur Exchange peur s’avérer considérable si vous tentez d’exécuter des requêtes coûteuses sur les journaux des événements dans un environnement de production.
 
 
 Les notifications sont des sondes qui ne sont pas exécutées par l’infrastructure du Gestionnaire d’intégrité, mais par un autre service sur le serveur. Ces services effectuent leur propre surveillance, puis fournissent leurs données à l’infrastructure de disponibilité gérée en écrivant directement les résultats des sondes. Vous ne verrez pas ces sondes dans le canal ProbeDefinition, car ce canal ne décrit que les sondes exécutées par l’infrastructure de disponibilité gérée. Par exemple, le moniteur ServerOneCopyMonitor est déclenché par les résultats de la sonde écrits par le service MSExchangeDAGMgmt. Ce service effectue sa propre surveillance, détermine s’il y a un problème et enregistre le résultat de la sonde. La plupart des sondes de notification peuvent journaliser un événement rouge qui rend le moniteur défectueux et un événement vert qui rétablit l’état du moniteur.

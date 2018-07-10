@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Vous pouvez activer des autorisations de numérotation sur une stratégie de boîte aux lettres de messagerie unifiée. Les autorisations de numérotation sur une stratégie de boîte aux lettres vous permettent d'interdire à des utilisateurs authentifiés Outlook Voice Access associés à la stratégie de boîte aux lettres de messagerie unifiée d'effectuer des appels nationaux/régionaux ou internationaux, c'est-à-dire de recourir à la *numérotation externe*. La numérotation externe intervient lorsque la messagerie unifiée effectue un appel sortant pour un utilisateur après qu'il a appelé un numéro de téléphone Outlook Voice Access configuré sur un plan de messagerie unifiée. Les paramètres que vous configurez dans une stratégie de boîte aux lettres de messagerie unifiée sont appliqués à tous les utilisateurs à extension messagerie unifiée associés à la stratégie de boîte aux lettres de messagerie unifiée.
 
@@ -33,18 +33,8 @@ Pour découvrir d'autres tâches de gestion relatives à la numérotation extern
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

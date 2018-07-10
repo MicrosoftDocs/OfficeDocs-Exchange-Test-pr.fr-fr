@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 L'installation de Microsoft Exchange Server 2013 ne peut pas continuer, car le programme a détecté que le niveau fonctionnel de la forêt Active Directory active n'est pas Windows Server 2003 natif ou version ultérieure. Vous devez élever le niveau fonctionnel de la forêt à Windows Server 2003 ou version ultérieure pour pouvoir installer Exchange 2013.
 

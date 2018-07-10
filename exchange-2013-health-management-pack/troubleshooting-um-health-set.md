@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Project Server 2013_
+_**Sapplique à :** Exchange Server 2013, Project Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 L'indicateur d'intégrité de messagerie unifiée surveille l'intégrité globale du service de messagerie unifiée de votre organisation.
 
@@ -158,7 +158,7 @@ Consultez les journaux d'événement pour identifier le pool Lync sélectionné 
 
 Renouvelez le certificat du service de messagerie unifiée sur le serveur de boîtes aux lettres.
 
-**Étapes de résolution des problèmes supplémentaires :**
+**Étapes de résolution des problèmes supplémentaires :** 
 
 1.  Démarrez le Gestionnaire des services Internet, puis connectez-vous au serveur signalant le problème afin de déterminer si le pool d’applications **MSExchangeServicesAppPool** est en cours d’exécution.
 

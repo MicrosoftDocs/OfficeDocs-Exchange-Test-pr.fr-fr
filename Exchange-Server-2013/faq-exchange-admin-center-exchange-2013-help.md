@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Cette rubrique fournit une liste de questions fréquentes pour le nouveau Centre d'administration Exchange (CAE) dans Microsoft Exchange Server 2013. Vous avez d'autres questions sur le CAE pour lesquelles vous n'avez pas trouvé de réponse ici ? Envoyez-nous un courrier électronique à l'adresse [Ex2013HelpFeedback@microsoft.com](mailto:ex2013helpfeedback@microsoft.com).
 

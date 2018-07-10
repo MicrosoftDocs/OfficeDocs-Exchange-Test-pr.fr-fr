@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-06_
+_**Dernière rubrique modifiée :** 2013-02-06_
 
 Vos utilisateurs transportent chaque jour des informations confidentielles dans leurs poches. Si l'un d'entre eux perd son téléphone mobile, vos données peuvent passer entre les mains d'une autre personne. Si le cas se présente, vous pouvez utiliser le Centre d'administration Exchange (CAE) ou l'environnement de ligne de commande Exchange Management Shell pour réinitialiser son téléphone et effacer toutes les données de l'utilisateur et de l'entreprise.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette rubrique contient également des instructions sur l'utilisation de MicrosoftOutlook Web App pour effectuer une réinitialisation à distance sur un téléphone. L'utilisateur doit être connecté à Outlook Web App pour effectuer un nettoyage à distance.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette rubrique contient également des instructions sur l'utilisation de MicrosoftOutlook Web App pour effectuer une réinitialisation à distance sur un téléphone. L'utilisateur doit être connecté à Outlook Web App pour effectuer un nettoyage à distance.
 
 
 ## Ce qu'il faut savoir avant de commencer
@@ -43,18 +33,8 @@ Vos utilisateurs transportent chaque jour des informations confidentielles dans 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

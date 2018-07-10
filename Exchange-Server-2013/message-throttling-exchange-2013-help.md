@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 La *limitation des messages* désigne un ensemble de limitations défini d'après le nombre de messages et de connexions qu'un ordinateur Microsoft Exchange Server 2013 peut traiter. Ces limites évitent l’épuisement accidentel ou intentionnel des ressources système sur le serveur Exchange.
 
@@ -55,18 +55,8 @@ Pour garantir un débit cohérent des messages et une latence de remise des mess
 
 Les serveurs de transport Exchange 2013 suivent le coût de remise moyen pour les messages envoyés par des utilisateurs individuels. En tenant compte du coût des messages, Exchange 2013 fournit un groupe de paramètres qui permettent de contrôler l’incidence d’un utilisateur ou d’une connexion sur une organisation Exchange. Pour ce groupe de paramètres, on parle alors de *stratégie de limitation*. Lorsqu’un utilisateur transmet à maintes reprises des messages coûteux, notamment des messages à pièces jointes volumineuses ou des messages adressés à plusieurs destinataires, les serveurs de transport Exchange 2013 appliquent une stratégie de limitation pour attribuer une priorité moins élevée à des messages plus coûteux de l’utilisateur tout en poursuivant la remise des messages à plus faible coût. Ce nouveau paramètre procure un aspect « qualité de service » à la fonctionnalité de limitation des messages dans Exchange 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La limitation des messages n’affecte pas la priorité des messages du point de vue de l’utilisateur. Les messages conservent toujours la priorité définie à l’origine par l’utilisateur. Ils peuvent, par exemple, conserver un paramètre Important ou Urgent et ainsi de suite.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La limitation des messages n’affecte pas la priorité des messages du point de vue de l’utilisateur. Les messages conservent toujours la priorité définie à l’origine par l’utilisateur. Ils peuvent, par exemple, conserver un paramètre Important ou Urgent et ainsi de suite.
 
 
 Pour la prise en charge de cette fonctionnalité, Exchange 2013 a recours aux mécanismes suivants :
@@ -302,18 +292,8 @@ Dans Exchange 2013, chaque boîte aux lettres contient un paramètre *Throttlin
 
 Par défaut, il existe une stratégie de limitation qui offre une configuration par défaut avec un budget précis pour les utilisateurs qui se connectent à Exchange. Pour configurer des paramètres de budget personnalisés pour un ou plusieurs utilisateurs, créez une nouvelle stratégie de limitation. Appliquez ensuite la stratégie à l’utilisateur ou au groupe approprié.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous vous recommandons de ne pas modifier la stratégie de limitation par défaut.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Nous vous recommandons de ne pas modifier la stratégie de limitation par défaut.
 
 
 Vous pouvez définir toutes les options de limitation des messages disponibles sur les serveurs de boîtes aux lettres dans l’environnement de ligne de commande Exchange Management. Les cmdlets suivantes sont disponibles pour gérer les stratégies de limitation :

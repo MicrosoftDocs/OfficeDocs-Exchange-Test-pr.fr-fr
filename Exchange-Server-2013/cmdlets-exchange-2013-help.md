@@ -13,42 +13,22 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Une *cmdlet* (prononcez « command-let ») est la plus petite unité de fonctionnalité dans Exchange Management Shell. Les cmdlets ressemblent à des commandes intégrées dans d’autres interfaces de commande interactive, par exemple, la commande `dir` trouvée dans `cmd.exe`. Comme ces commandes familières, les cmdlets peuvent être appelées directement depuis la ligne de commande dans Exchange Management Shell et exécutées dans le contexte de l’interface de commande active, pas comme processus à part.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Depuis Microsoft Exchange Server 2007, des modifications ont été réalisées sur l’utilisation des cmdlets en interne par Exchange 2013 en raison de l’utilisation de la fonctionnalité à distance de Windows PowerShell. Ces modifications ont eu peu ou aucun impact sur la façon dont vous devez utiliser les cmdlets, mais elles peuvent offrir une flexibilité supplémentaire sur votre gestion des serveurs Exchange.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Depuis Microsoft Exchange Server 2007, des modifications ont été réalisées sur l’utilisation des cmdlets en interne par Exchange 2013 en raison de l’utilisation de la fonctionnalité à distance de Windows PowerShell. Ces modifications ont eu peu ou aucun impact sur la façon dont vous devez utiliser les cmdlets, mais elles peuvent offrir une flexibilité supplémentaire sur votre gestion des serveurs Exchange.
 
 
 Les cmdlets sont généralement conçues autour de tâches d’administration récurrentes et Exchange Management Shell fournit plusieurs centaines de cmdlets pour l’exécution de tâches de gestion spécifiques à Exchange. Celles-ci sont disponibles en plus des cmdlets système non-Exchange incluses dans la conception de l’interface de commande interactive Windows PowerShell. Pour plus d’informations sur l’ouverture de l’environnement de ligne de commande Exchange Management Shell, consultez la rubrique [Ouvrir le Shell](https://technet.microsoft.com/fr-fr/library/dd638134\(v=exchg.150\)).
 
 Toutes les cmdlets d’Exchange Management Shell sont présentées sous la forme de paires verbe-nom . Le verbe et le nom sont toujours séparés par un tiret (-), sans espace, et les noms de cmdlet sont toujours au singulier. Le verbe fait référence à l’action exécutée par la cmdlet. Le nom fait référence à l’objet auquel la cmdlet est appliquée. Par exemple, dans la cmdlet **Get-SystemMessage**, le verbe est **Get** (obtenir) et le nom **SystemMessage** (message système). Toutes les cmdlets d’Exchange Management Shell qui gèrent une fonctionnalité spécifique partagent le même nom. Le tableau suivant fournit des exemples de certains verbes disponibles dans Exchange Management Shell.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, en cas d’omission du verbe, Exchange Management Shell considère qu’il s’agit du verbe <strong>Get</strong>. Par exemple, lorsque vous appelez <strong>Mailbox</strong>, vous obtenez le même résultat que si vous appeliez la cmdlet <strong>Get-Mailbox</strong>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, en cas d’omission du verbe, Exchange Management Shell considère qu’il s’agit du verbe <strong>Get</strong>. Par exemple, lorsque vous appelez <strong>Mailbox</strong>, vous obtenez le même résultat que si vous appeliez la cmdlet <strong>Get-Mailbox</strong>.
 
 
 ### Exemples de verbes dans Exchange Management Shell
@@ -76,18 +56,8 @@ Toutes les cmdlets d’Exchange Management Shell sont présentées sous la forme
 <tr class="odd">
 <td><p><strong>Get</strong></p></td>
 <td><p>Les cmdlets <strong>Get</strong> extraient des informations sur un objet Exchange spécifique.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La plupart des cmdlets <strong>Get</strong> ne renvoient que des informations récapitulatives lorsque vous les exécutez. Pour que la cmdlet <strong>Get</strong> renvoie des informations détaillées lorsque vous exécutez une commande, canalisez la commande vers la cmdlet <strong>Format-List</strong>. Pour plus d’informations sur la commande <strong>Format-List</strong>, consultez la rubrique <a href="working-with-command-output-exchange-2013-help.md">Utilisation de la sortie de la commande</a>. Pour plus d’informations sur le pipelining, voir <a href="https://technet.microsoft.com/fr-fr/library/aa998260(v=exchg.150)">Traitement en pipeline</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La plupart des cmdlets <strong>Get</strong> ne renvoient que des informations récapitulatives lorsque vous les exécutez. Pour que la cmdlet <strong>Get</strong> renvoie des informations détaillées lorsque vous exécutez une commande, canalisez la commande vers la cmdlet <strong>Format-List</strong>. Pour plus d’informations sur la commande <strong>Format-List</strong>, consultez la rubrique <a href="working-with-command-output-exchange-2013-help.md">Utilisation de la sortie de la commande</a>. Pour plus d’informations sur le pipelining, voir <a href="https://technet.microsoft.com/fr-fr/library/aa998260(v=exchg.150)">Traitement en pipeline</a>.
 
 </td>
 </tr>

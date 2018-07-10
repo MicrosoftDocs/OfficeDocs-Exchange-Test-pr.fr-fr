@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2016, Office 365_
+_**Sapplique à :** Exchange Online, Exchange Server 2016, Office 365_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Utilisez le Centre d’administration Exchange (CAE) ou l’environnement de ligne de commande Exchange Management Shell pour créer un groupe de distribution dans votre organisation Exchange ou pour activer la messagerie sur un groupe existant dans Active Directory.
 
@@ -51,38 +51,23 @@ Il est important de noter les différences de terminologie entre Active Director
 
 2.  Cliquez sur **Nouveau**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") \> **Groupe de distribution**.
 
-3.  
+3.  > [!TIP]  
+	> <img src="images/Bb124513.3ea82c95-9dda-450f-823b-cd0772249d81(EXCHG.150).png" title="Nouveaux groupes d’essai Office 365" alt="Nouveaux groupes d’essai Office 365" /><br />
+    > Vous pouvez désormais créer un groupe Office 365 au lieu d’un groupe de distribution si vous avez un plan Office 365 pour entreprise ou un plan Exchange Online. Les groupes Office 365 ont les fonctionnalités d’un groupe de distribution et bien plus encore. Avec les groupes Office 365, vous pouvez envoyer des messages électroniques à un groupe, partager un calendrier commun, disposer d’une bibliothèque afin de stocker des fichiers et des dossiers de groupe, et de travailler sur ces derniers. Cliquez sur <strong>Nouveau</strong><img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="Icône Ajouter" alt="Icône Ajouter" /> &gt; <strong>Groupe Office 365</strong> pour commencer et consultez l’article <a href="https://go.microsoft.com/fwlink/p/?linkid=800653">Groupes Office 365 - Aide pour l’administrateur</a>.<br />
+    > Si vous souhaitez migrer des groupes de distribution existants vers des groupes Office 365, consultez l’article <a href="https://go.microsoft.com/fwlink/p/?linkid=824756">Migrer les listes de distribution vers des groupes Office 365 - Aide pour l’administrateur</a>.<br />
+    > Si vous souhaitez quand même créer un groupe de distribution, vous pouvez cliquer ou appuyer sur l’Assistant <strong>Nouveau groupe de distribution</strong>.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><img src="images/Bb124513.3ea82c95-9dda-450f-823b-cd0772249d81(EXCHG.150).png" title="Nouveaux groupes d’essai Office 365" alt="Nouveaux groupes d’essai Office 365" /><br />
-    Vous pouvez désormais créer un groupe Office 365 au lieu d’un groupe de distribution si vous avez un plan Office 365 pour entreprise ou un plan Exchange Online. Les groupes Office 365 ont les fonctionnalités d’un groupe de distribution et bien plus encore. Avec les groupes Office 365, vous pouvez envoyer des messages électroniques à un groupe, partager un calendrier commun, disposer d’une bibliothèque afin de stocker des fichiers et des dossiers de groupe, et de travailler sur ces derniers. Cliquez sur <strong>Nouveau</strong><img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="Icône Ajouter" alt="Icône Ajouter" /> &gt; <strong>Groupe Office 365</strong> pour commencer et consultez l’article <a href="https://go.microsoft.com/fwlink/p/?linkid=800653">Groupes Office 365 - Aide pour l’administrateur</a>.<br />
-    Si vous souhaitez migrer des groupes de distribution existants vers des groupes Office 365, consultez l’article <a href="https://go.microsoft.com/fwlink/p/?linkid=824756">Migrer les listes de distribution vers des groupes Office 365 - Aide pour l’administrateur</a>.<br />
-    Si vous souhaitez quand même créer un groupe de distribution, vous pouvez cliquer ou appuyer sur l’Assistant <strong>Nouveau groupe de distribution</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
-
-
-4.  
+4.  Dans la page **Nouveau groupe de distribution**, complétez les champs suivants :
     
-    Dans la page **Nouveau groupe de distribution**, complétez les champs suivants :
+      - \* **Nom complet**   Saisissez le nom complet. Ce nom apparaîtra dans le carnet d’adresses de votre organisation, ainsi que dans les lignes À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes du Centre d’administration Exchange. Le nom d’affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s’agit. Ce nom doit aussi être unique dans la forêt.
     
-      - **\* Nom complet**   Saisissez le nom complet. Ce nom apparaîtra dans le carnet d’adresses de votre organisation, ainsi que dans les lignes À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes du Centre d’administration Exchange. Le nom d’affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s’agit. Ce nom doit aussi être unique dans la forêt.
-    
-      - **\* Alias**   Saisissez le nom de l’alias du groupe. L’alias ne peut pas comporter plus de 64 caractères et doit être unique dans la forêt. Lorsqu’un utilisateur saisit l’alias dans la ligne À : d’un message électronique, sa résolution génère le nom complet du groupe.
+      - \* **Alias**   Saisissez le nom de l’alias du groupe. L’alias ne peut pas comporter plus de 64 caractères et doit être unique dans la forêt. Lorsqu’un utilisateur saisit l’alias dans la ligne À : d’un message électronique, sa résolution génère le nom complet du groupe.
     
       - **Unité d’organisation**   (Cette option s’affiche uniquement dans Exchange 2013 local) Vous pouvez sélectionner une unité d’organisation (UO) autre que celle définie par défaut (qui est la portée du destinataire). Si la portée du destinataire est définie dans la forêt, la valeur par défaut est définie sur le conteneur Utilisateurs du domaine Active Directory qui contient l’ordinateur sur lequel le CAE est exécuté. Si la portée du destinataire est définie sur un domaine spécifique, le conteneur Users de ce domaine est sélectionné par défaut. Si la portée du destinataire est définie sur une unité d’organisation (UO) spécifique, cette UO est sélectionnée par défaut.
         
         Pour sélectionner une autre UO, cliquez sur **Parcourir**. La boîte de dialogue affiche toutes les unités d’organisation de la forêt qui se trouvent dans la portée indiquée. Sélectionnez l’UO souhaitée, puis cliquez sur **OK**.
     
-      - **\* Propriétaires**   Par défaut, la personne qui crée un groupe en est le propriétaire. Tous les groupes doivent avoir au moins un propriétaire. Vous pouvez ajouter des propriétaires en cliquant sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter").
+      - \* **Propriétaires**   Par défaut, la personne qui crée un groupe en est le propriétaire. Tous les groupes doivent avoir au moins un propriétaire. Vous pouvez ajouter des propriétaires en cliquant sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter").
     
       - **Membres**   Utilisez cette section pour ajouter des membres et pour spécifier si une approbation est nécessaire pour que des personnes rejoignent ou quittent le groupe.
         
@@ -100,24 +85,14 @@ Il est important de noter les différences de terminologie entre Active Director
         
         Sous **Choisir s’il est possible de quitter le groupe**, spécifiez si une approbation est requise pour les personnes quittant le groupe. Sélectionnez-en un :
         
-          - **Ouverte : tout le monde peut quitter le groupe sans approbation des propriétaires du groupe   **Il s’agit du paramètre par défaut.
+          - **Ouverte : tout le monde peut quitter le groupe sans approbation des propriétaires du groupe**   Il s’agit du paramètre par défaut.
         
-          - **Fermée : seuls les propriétaires du groupe peuvent supprimer des membres. Toutes les demandes visant à quitter le groupe sont rejetées automatiquement   **
+          - **Fermée : seuls les propriétaires du groupe peuvent supprimer des membres. Toutes les demandes visant à quitter le groupe sont rejetées automatiquement**   
 
 5.  Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer le groupe de distribution.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, les nouveaux groupes de distribution exigent l’authentification de tous les expéditeurs. Cela empêche des expéditeurs externes d’envoyer des messages aux groupes de distribution. Pour configurer un groupe de distribution afin d’accepter des messages de tous les expéditeurs, vous devez modifier les paramètres de restriction de remise de messages pour ce groupe de distribution.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Par défaut, les nouveaux groupes de distribution exigent l’authentification de tous les expéditeurs. Cela empêche des expéditeurs externes d’envoyer des messages aux groupes de distribution. Pour configurer un groupe de distribution afin d’accepter des messages de tous les expéditeurs, vous devez modifier les paramètres de restriction de remise de messages pour ce groupe de distribution.
 
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour créer un groupe de distribution
@@ -138,18 +113,8 @@ Pour vérifier si vous avez créé avec succès un groupe de distribution, proc�
     
         Get-DistributionGroup <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez créer ou activer la messagerie de groupes de distribution universels uniquement. Pour convertir un groupe de domaine local ou global en groupe universel, vous pouvez utiliser la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/bb123770(v=exchg.150)">Set-Group</a> à l’aide de l’environnement de ligne de commande. Vous disposez peut-être de groupes à extension messagerie ayant migré à partir de versions antérieures d’Exchange qui ne sont pas des groupes universels. Vous pouvez utiliser le CAE ou l’environnement de ligne de commande Exchange Management Shell pour gérer ces groupes</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Vous pouvez créer ou activer la messagerie de groupes de distribution universels uniquement. Pour convertir un groupe de domaine local ou global en groupe universel, vous pouvez utiliser la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/bb123770(v=exchg.150)">Set-Group</a> à l’aide de l’environnement de ligne de commande. Vous disposez peut-être de groupes à extension messagerie ayant migré à partir de versions antérieures d’Exchange qui ne sont pas des groupes universels. Vous pouvez utiliser le CAE ou l’environnement de ligne de commande Exchange Management Shell pour gérer ces groupes
 
 
 ## Modifier les propriétés de groupe de distribution
@@ -184,28 +149,18 @@ Pour vérifier si vous avez créé avec succès un groupe de distribution, proc�
 
 Utilisez cette section pour afficher ou modifier les informations de base relatives au groupe.
 
-  - **\* Nom complet**   Ce nom s’affiche dans le carnet d’adresses, sur les lignes À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes. Le nom d’affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s’agit. Il doit également être unique dans votre domaine.
+  - \* **Nom complet**   Ce nom s’affiche dans le carnet d’adresses, sur les lignes À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes. Le nom d’affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s’agit. Il doit également être unique dans votre domaine.
     
     Si vous avez implémenté une stratégie de noms de groupes, le nom d’affichage doit se conformer au format de nom défini par la stratégie.
 
-  - **\* Alias**   L’alias est la partie de l’adresse de messagerie qui apparaît à gauche du signe @. Si vous modifiez l’alias, l’adresse SMTP principale du groupe est également modifiée et contient le nouvel alias. De plus, l’adresse de messagerie électronique qui comprend l’alias précédent est gardée en tant qu’adresse de proxy du groupe.
+  - \* **Alias**   L’alias est la partie de l’adresse de messagerie qui apparaît à gauche du signe @. Si vous modifiez l’alias, l’adresse SMTP principale du groupe est également modifiée et contient le nouvel alias. De plus, l’adresse de messagerie électronique qui comprend l’alias précédent est gardée en tant qu’adresse de proxy du groupe.
 
   - **Description**   Décrivez le groupe afin que l’objet du groupe soit facilement identifiable. Cette description apparaît dans le carnet d’adresses et dans le volet d’informations du Centre d’administration Exchange.
 
   - **Masquer le groupe dans les listes d’adresses Exchange**   Cochez cette case si vous ne souhaitez pas que les utilisateurs voient ce groupe dans le carnet d’adresses. Pour envoyer un message électronique à ce groupe, l’expéditeur doit saisir l’alias ou l’adresse de messagerie électronique du groupe dans les lignes ou Cc :, À :.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Envisagez de masquer des groupes de sécurité parce qu’ils sont utilisés en général pour attribuer des autorisations aux membres du groupe et ne pas envoyer de courriers électroniques.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > Envisagez de masquer des groupes de sécurité parce qu’ils sont utilisés en général pour attribuer des autorisations aux membres du groupe et ne pas envoyer de courriers électroniques.
 
 
   - **Unité d’organisation**   Ce champ en lecture seule affiche l’unité d’organisation (UO) qui contient le groupe de distribution. Vous devez utiliser des utilisateurs et ordinateurs Active Directory pour déplacer le groupe dans une autre UO.
@@ -234,9 +189,9 @@ Cette section permet de spécifier si une approbation est nécessaire pour que d
 
   - **Choisissez s’il est possible de quitter le groupe**   Sélectionnez l’un des paramètres suivants :
     
-      - **Ouverte : Tout utilisateur peut quitter ce groupe sans l’approbation des propriétaires du groupe   **
+      - **Ouverte : Tout utilisateur peut quitter ce groupe sans l’approbation des propriétaires du groupe**  
     
-      - **Fermée : seuls les propriétaires du groupe peuvent supprimer des membres. Toutes les demandes visant à quitter le groupe sont rejetées automatiquement   **
+      - **Fermée : seuls les propriétaires du groupe peuvent supprimer des membres. Toutes les demandes visant à quitter le groupe sont rejetées automatiquement**  
 
 ## Gestion de la remise des messages
 
@@ -250,18 +205,8 @@ Cette section permet de gérer les utilisateurs autorisés à envoyer des messag
     
     Pour supprimer un individu ou un groupe de la liste, sélectionnez-le, puis cliquez sur **Supprimer**![Icône Suppression](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Icône Suppression").
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous avez configuré le groupe pour qu’il accepte uniquement les messages provenant des membres de votre organisation, tous les messages électroniques provenant d’un contact de messagerie sont rejetés, que vous ayez ajouté ces contacts à cette liste ou non.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Si vous avez configuré le groupe pour qu’il accepte uniquement les messages provenant des membres de votre organisation, tous les messages électroniques provenant d’un contact de messagerie sont rejetés, que vous ayez ajouté ces contacts à cette liste ou non.
 
 
 ## Approbation de messages
@@ -274,7 +219,7 @@ Cette section permet de définir les options de modération du groupe. Les modé
 
   - **Les expéditeurs qui ne demandent pas l’approbation de messages**    Pour ajouter des individus ou des groupes non soumis à la modération pour ce groupe, cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter"). Pour supprimer un individu ou un groupe, sélectionnez-le, puis cliquez sur **Supprimer**![Icône Suppression](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Icône Suppression").
 
-  - **Sélectionner les notifications de modération   **Cette section permet de définir la manière dont les utilisateurs sont informés de l'approbation de messages.
+  - **Sélectionner les notifications de modération**  Cette section permet de définir la manière dont les utilisateurs sont informés de l'approbation de messages.
     
       - **Avertir tous les expéditeurs lorsque leurs messages ne sont pas approuvés**   Il s’agit du paramètre par défaut. Permet de notifier tous les expéditeurs, à l’intérieur et à l’extérieur de votre organisation, lorsque leur message n’est pas approuvé.
     
@@ -286,75 +231,35 @@ Cette section permet de définir les options de modération du groupe. Les modé
 
 Cette section permet d’afficher ou de modifier les adresses de messagerie électronique associées au groupe. Adresses incluses : adresses SMTP principales du groupe et toute adresse de proxy associée. L’adresse SMTP principale (aussi appelée *adresse de réponse*) apparaît en gras dans la liste d’adresses, avec la valeur **SMTP** inscrite en majuscules dans la colonne **Type**.
 
-  - **Ajouter **  Cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour ajouter une nouvelle adresse de messagerie électronique pour cette boîte aux lettres. Sélectionnez l’un des types d’adresses suivants :
+  - **Ajouter**  Cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour ajouter une nouvelle adresse de messagerie électronique pour cette boîte aux lettres. Sélectionnez l’un des types d’adresses suivants :
     
-      - **SMTP**   Il s’agit du type d’adresse par défaut. Cliquez sur ce bouton, puis saisissez la nouvelle adresse SMTP dans la zone **\* Adresse de messagerie**.
+      - **SMTP**   Il s’agit du type d’adresse par défaut. Cliquez sur ce bouton, puis saisissez la nouvelle adresse SMTP dans la zone \* **Adresse de messagerie**.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Pour que la nouvelle adresse devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > Pour que la nouvelle adresse devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>.
     
-      - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone **\* Adresse de messagerie** l’un des types d’adresse de messagerie électronique non SMTP pris en charge.
+      - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone \* **Adresse de messagerie** l’un des types d’adresse de messagerie électronique non SMTP pris en charge.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>À l’exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l’adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d’adresse.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > À l’exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l’adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d’adresse.
 
 
   - **Modifier**   Pour modifier une adresse de messagerie électronique associée au groupe, sélectionnez-la dans la liste, puis cliquez sur **Modifier**![Icône Modifier](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Icône Modifier").
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Pour que l’adresse existante devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Pour que l’adresse existante devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>.
 
 
   - **Supprimer**   Pour supprimer une adresse de messagerie électronique associée au groupe, sélectionnez-la dans la liste, puis cliquez sur **Supprimer**![Icône Suppression](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Icône Suppression").
 
-  - **Mettre à jour auto. les adresses selon la stratégie de destinataire   **Cochez cette case pour que les adresses de messagerie du destinataire soient automatiquement mises à jour en fonction des modifications apportées aux stratégies d’adresses de messagerie dans votre organisation. Cette case à cocher est activée par défaut.
+  - **Mettre à jour auto. les adresses selon la stratégie de destinataire**   Cochez cette case pour que les adresses de messagerie du destinataire soient automatiquement mises à jour en fonction des modifications apportées aux stratégies d’adresses de messagerie dans votre organisation. Cette case à cocher est activée par défaut.
 
 ## MailTip
 
 Utilisez cette section pour ajouter une info-courrier afin d’alerter les utilisateurs de problèmes potentiels s’ils envoient un message à ce groupe. Une info courrier est un texte affiché dans la barre d’informations lorsque ce groupe est ajouté aux lignes À, Cc ou Cci d’un nouveau message électronique. Par exemple, vous pourriez ajouter une info courrier aux grands groupes pour prévenir des expéditeurs potentiels que leur message sera envoyé à beaucoup de personnes.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.
 
 
 ## Délégation de groupe

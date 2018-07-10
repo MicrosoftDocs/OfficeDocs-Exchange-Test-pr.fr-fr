@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-13_
+_**Dernière rubrique modifiée :** 2012-11-13_
 
 Si les appels sortants ont été désactivés, vous pouvez activer les appels sortants sur une passerelle IP de messagerie unifiée. En activant l’option **Autoriser les appels sortants via cette passerelle IP de messagerie unifiée** dans les propriétés de la passerelle IP de messagerie unifiée, vous configurez celle-ci pour qu’elle accepte et envoie des appels sortants à une passerelle VoIP (Voice over IP), un PBX (Private Branch eXchange) compatible SIP (Session Initiation Protocol), un PBX IP ou un contrôleur de frontière de session (SBC). Bien que le paramètre **Autoriser les appels sortants via cette passerelle IP de messagerie unifiée** détermine si la passerelle IP de messagerie unifiée peut établir des appels sortants pour les utilisateurs, il n’affecte pas les transferts d’appels ou les appels entrants provenant d’une passerelle VoIP, PBX activé pour SIP, IP PBX ou SBC.
 
@@ -43,18 +43,8 @@ Pour les autres tâches de gestion relatives aux passerelles IP de messagerie un
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

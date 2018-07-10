@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Exchange 2013 offre le large éventail suivant de fonctionnalités qui permet aux utilisateurs finaux de participer facilement à la messagerie électronique :
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**Dernière rubrique modifiée :** 2012-11-14_
+_**Dernière rubrique modifiée :**  2012-11-14_
 
 Les ressources suivantes fournissent des informations sur les tâches courantes associées aux packs d'administration de System Center :
 

@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-07_
+_**Dernière rubrique modifiée :** 2013-02-07_
 
 Dans certaines situations, vous pouvez avoir besoin d'acheminer un message électronique via un hôte actif tiers, tel que lors d'une instance dans laquelle vous avez un Network Appliance pour lequel vous voulez exécuter des vérifications de stratégie sur des messages sortant.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L'hôte actif tiers doit utiliser SMTP pour le transport. Dans le cas contraire, vous devez utiliser un connecteur étranger ou un connecteur d'agent de remise.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L'hôte actif tiers doit utiliser SMTP pour le transport. Dans le cas contraire, vous devez utiliser un connecteur étranger ou un connecteur d'agent de remise.
 
 
 Intéressé par des scénarios où cette procédure est utilisée ? Consultez les rubriques suivantes :
@@ -47,18 +37,8 @@ Intéressé par des scénarios où cette procédure est utilisée ? Consultez l
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utilisez le centre d'administration Exchange pour créer un connecteur d'envoi afin d'acheminer les messages électroniques via un hôte actif
@@ -71,18 +51,8 @@ Intéressé par des scénarios où cette procédure est utilisée ? Consultez l
     
     Pour l'**authentification des hôtes actifs**, sélectionnez le type d'authentification requis par l'hôte actif. Si vous sélectionnez **Authentification de base**, vous devez entrer un nom d'utilisateur et un mot de passe.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous sélectionnez l'authentification de base, nous vous recommandons d'utiliser une connexion chiffrée car le nom d'utilisateur et le mot de passe sont envoyés dans un texte en clair.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous sélectionnez l'authentification de base, nous vous recommandons d'utiliser une connexion chiffrée car le nom d'utilisateur et le mot de passe sont envoyés dans un texte en clair.
 
 
 4.  Sous **Espace d’adressage**, cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter"). Dans la fenêtre **Ajouter un domaine**, vérifiez que SMTP apparaît dans la liste **Type**. Pour **Nom de domaine complet**, entrez \* pour spécifier que ce connecteur d'envoi s'applique aux messages envoyés dans n'importe quel domaine. Cliquez sur **Enregistrer**.

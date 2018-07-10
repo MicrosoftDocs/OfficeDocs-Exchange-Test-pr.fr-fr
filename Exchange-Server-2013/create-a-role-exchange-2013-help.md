@@ -13,26 +13,16 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-17_
+_**Dernière rubrique modifiée :** 2012-10-17_
 
 Vous pouvez créer un rôle de gestion, modifier des entrées de rôle de gestion, ajouter une portée si besoin et attribuer le rôle à un utilisateur. Les cas dans lesquels vous devrez effectuer cette procédure sont assez rares. Avant de devoir créer un rôle de gestion, vérifiez d'abord si un rôle de gestion intégré peut être utilisé. Pour obtenir une liste des rôles de gestion intégrés, voir [Rôles de gestion intégrés](built-in-management-roles-exchange-2013-help.md).
 
 Pour plus d’informations sur les rôles de gestion dans Microsoft Exchange Server 2013, voir [Présentation des rôles de gestion](understanding-management-roles-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette rubrique n'indique pas comment créer un rôle de gestion sans portée définie. Pour plus d'informations sur la création d'un rôle de gestion sans portée définie, voir <a href="create-an-unscoped-role-exchange-2013-help.md">Créer un rôle non délimité</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette rubrique n'indique pas comment créer un rôle de gestion sans portée définie. Pour plus d'informations sur la création d'un rôle de gestion sans portée définie, voir <a href="create-an-unscoped-role-exchange-2013-help.md">Créer un rôle non délimité</a>.
 
 
 Souhaitez-vous rechercher les autres tâches de gestion relatives aux rôles ? Consultez la rubrique [Autorisations avancées](advanced-permissions-exchange-2013-help.md).
@@ -47,18 +37,8 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux rôles ? 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Comment procéder ?
@@ -115,18 +95,8 @@ Lorsque vous créez une attribution de rôle, vous avez plusieurs possibilités�
 
   - Créer l'attribution de rôle avec la portée exclusive ou personnalisée créée à l'étape 3.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous ne pouvez pas spécifier une portée lorsque vous créez une attribution entre un rôle et une stratégie d'attribution de rôle de gestion.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Vous ne pouvez pas spécifier une portée lorsque vous créez une attribution entre un rôle et une stratégie d'attribution de rôle de gestion.
 
 
 Vous pouvez attribuer le nouveau rôle à un groupe de rôles, une stratégie d'attribution de rôle, un utilisateur ou un groupe de sécurité universel. Pour plus d’informations, consultez les rubriques suivantes :

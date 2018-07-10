@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Le filtrage des connexions est une fonctionnalité de blocage du courrier indésirable fournie par l’agent de filtrage de connexion, disponible uniquement sur les serveurs de transport Edge dans Microsoft Exchange 2013. Le filtrage des connexions active les fonctionnalités suivantes :
 
@@ -39,18 +39,8 @@ Chacune de ces fonctionnalités peut être activée ou désactivée séparément
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -145,18 +135,8 @@ Par exemple, pour afficher l’entrée de liste d’adresses IP bloquées qui co
 
     Get-IPBlockListEntry -IPAddress 192.168.1.13
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous utilisez le paramètre <em>IPAddress</em>, l’entrée de liste d’adresses IP bloquées obtenue peut être une adresse IP individuelle, une plage d’adresses IP ou une adresse IP de routage CIDR (Classless InterDomain Routing). Pour utiliser le paramètre <em>Identity</em>, vous devez indiquer le nombre entier attribué à l’entrée de la liste d’adresses IP bloquées.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous utilisez le paramètre <em>IPAddress</em>, l’entrée de liste d’adresses IP bloquées obtenue peut être une adresse IP individuelle, une plage d’adresses IP ou une adresse IP de routage CIDR (Classless InterDomain Routing). Pour utiliser le paramètre <em>Identity</em>, vous devez indiquer le nombre entier attribué à l’entrée de la liste d’adresses IP bloquées.
 
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour ajouter des entrées de liste d’adresses IP bloquées
@@ -277,18 +257,8 @@ Cet exemple de code permet de créer un fournisseur de listes d’adresses IP bl
 
     Add-IPBlockListProvider -Name "Contoso IP Block List Provider" -LookupDomain rbl.contoso.com -BitmaskMatch 127.0.0.1
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous ajoutez un nouveau fournisseur de listes d’adresses IP bloquées, il est activé par défaut (la valeur <em>Enabled</em> est <code>$true</code>) et sa valeur de priorité est incrémentée (la valeur <em>Priority</em> de la première entrée est de 1).</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous ajoutez un nouveau fournisseur de listes d’adresses IP bloquées, il est activé par défaut (la valeur <em>Enabled</em> est <code>$true</code>) et sa valeur de priorité est incrémentée (la valeur <em>Priority</em> de la première entrée est de 1).
 
 
 Pour plus d’informations, voir [Add-IPBlockListProvider](https://technet.microsoft.com/fr-fr/library/bb124358\(v=exchg.150\)).
@@ -425,18 +395,8 @@ Par exemple, pour afficher l’entrée de liste d’adresses IP autorisées qui 
 
     Get-IPAllowListEntry -IPAddress 192.168.1.13
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous utilisez le paramètre <em>IPAddress</em>, l’entrée de liste d’adresses IP autorisées obtenue peut être une adresse IP individuelle, une plage d’adresses IP ou une adresse IP de routage CIDR (Classless InterDomain Routing). Pour utiliser le paramètre <em>Identity</em>, vous devez indiquer de nombre entier attribué à l’entrée de la liste d’adresses IP autorisées.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous utilisez le paramètre <em>IPAddress</em>, l’entrée de liste d’adresses IP autorisées obtenue peut être une adresse IP individuelle, une plage d’adresses IP ou une adresse IP de routage CIDR (Classless InterDomain Routing). Pour utiliser le paramètre <em>Identity</em>, vous devez indiquer de nombre entier attribué à l’entrée de la liste d’adresses IP autorisées.
 
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour ajouter des entrées de liste d’adresses IP autorisées
@@ -551,18 +511,8 @@ Cet exemple de code permet de créer un fournisseur de listes d’adresses IP au
 
     Add-IPAllowListProvider -Name "Contoso IP Allow List Provider" -LookupDomain allow.contoso.com -BitmaskMatch 127.0.0.1
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous ajoutez un nouveau fournisseur de listes d’adresses IP autorisées, il est activé par défaut (la valeur <em>Enabled</em> est <code>$true</code>) et la valeur de priorité est incrémentée (la valeur de <em>Priority</em> de la première entrée est de 1).</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous ajoutez un nouveau fournisseur de listes d’adresses IP autorisées, il est activé par défaut (la valeur <em>Enabled</em> est <code>$true</code>) et la valeur de priorité est incrémentée (la valeur de <em>Priority</em> de la première entrée est de 1).
 
 
 Pour plus d’informations, voir [Add-IPBlockListProvider](https://technet.microsoft.com/fr-fr/library/bb124358\(v=exchg.150\)).

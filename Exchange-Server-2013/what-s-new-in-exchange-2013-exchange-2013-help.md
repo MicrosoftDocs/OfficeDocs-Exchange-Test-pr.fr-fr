@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Consultez toutes les dernières fonctionnalités dans Exchange 2013.
 
@@ -63,18 +63,8 @@ Déplacements par lot de boîtes aux lettres
 
 Gestion de la charge de travail Exchange
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour obtenir des informations sur les fonctionnalités de versions précédentes d'Exchange qui ont été supprimées, abandonnées ou remplacées dans Exchange Server 2013, consultez la rubrique <a href="what-s-discontinued-in-exchange-2013-exchange-2013-help.md">Fonctionnalités abandonnées dans Exchange 2013</a>. La rubrique <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Notes de publication relatives à Exchange 2013</a> peut également vous intéresser.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour obtenir des informations sur les fonctionnalités de versions précédentes d'Exchange qui ont été supprimées, abandonnées ou remplacées dans Exchange Server 2013, consultez la rubrique <a href="what-s-discontinued-in-exchange-2013-exchange-2013-help.md">Fonctionnalités abandonnées dans Exchange 2013</a>. La rubrique <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Notes de publication relatives à Exchange 2013</a> peut également vous intéresser.
 
 
 ## Centre d'administration Exchange
@@ -215,18 +205,8 @@ Exchange 2013 comprend les améliorations suivantes apportées à l'archivage l
     
       - **Assistant Découverte électronique locale et archive permanente**   Les gestionnaires de découverte peuvent utiliser le nouvel Assistant Découverte électronique locale et archive permanente pour leurs opérations de découverte électronique et d'archive.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Si SharePoint 2013 n'est pas disponible, un sous-ensemble de la fonctionnalité de découverte électronique est disponible dans le Centre d'administration Exchange.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Si SharePoint 2013 n'est pas disponible, un sous-ensemble de la fonctionnalité de découverte électronique est disponible dans le Centre d'administration Exchange.
 
 
   - **Recherche parmi les boîtes aux lettres principales et d'archivage dans Outlook Web App**   Les utilisateurs peuvent rechercher leurs boîtes aux lettres principales et d'archivage dans Outlook Web App. Il n'est plus nécessaire de réaliser deux recherches distinctes.

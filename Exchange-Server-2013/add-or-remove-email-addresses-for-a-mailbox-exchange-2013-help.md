@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez configurer plusieurs adresses de messagerie pour une même boîte aux lettres. Les adresses supplémentaires sont appelées *adresses proxy*. Une adresse proxy permet à un utilisateur de recevoir un e-mail envoyé à une adresse de messagerie différente. Tous les e-mails envoyés à l’adresse proxy de l’utilisateur sont réceptionnés à son adresse de messagerie principale, également appelée *adresse SMTP principale* ou *adresse de réponse par défaut*.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous utilisez Office 365 pour les entreprises, vous devez ajouter ou supprimer des adresses de messagerie pour les boîtes aux lettres utilisateur dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=8347775">Centre d’administration Office 365 : Ajouter d’autres alias de messagerie à un utilisateur dans Office 365</a></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous utilisez Office 365 pour les entreprises, vous devez ajouter ou supprimer des adresses de messagerie pour les boîtes aux lettres utilisateur dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=8347775">Centre d’administration Office 365 : Ajouter d’autres alias de messagerie à un utilisateur dans Office 365</a>
 
 
 Pour d’autres tâches de gestion relatives à la gestion des destinataires, consultez le tableau « Documentation des destinataires » dans [Recipients](recipients-exchange-2013-help.md).
@@ -57,34 +47,14 @@ Les procédures de cette rubrique expliquent comment ajouter ou supprimer une ad
 
 3.  Dans la page de propriétés de boîte aux lettres, cliquez sur **Adresse e-mail**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Sur la page <strong>Adresse e-mail</strong>, l’adresse SMTP principale apparaît en caractères gras dans la liste des adresses, avec la valeur <strong>SMTP</strong> en majuscules dans la colonne <strong>Type</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Sur la page <strong>Adresse e-mail</strong>, l’adresse SMTP principale apparaît en caractères gras dans la liste des adresses, avec la valeur <strong>SMTP</strong> en majuscules dans la colonne <strong>Type</strong>.
 
 
 4.  Cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter"), puis cliquez sur **SMTP** pour ajouter une adresse de messagerie SMTP à cette boîte aux lettres.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>SMTP est le type d’adresse de messagerie par défaut. Vous pouvez également ajouter des adresses de messagerie unifiée ou des adresses personnalisées à une boîte aux lettres. Pour plus d’informations, voir la section « Modifier les propriétés de boîte aux lettres d’utilisateur » de la rubrique <a href="manage-user-mailboxes-exchange-2013-help.md">Gestion des boîtes aux lettres utilisateur</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > SMTP est le type d’adresse de messagerie par défaut. Vous pouvez également ajouter des adresses de messagerie unifiée ou des adresses personnalisées à une boîte aux lettres. Pour plus d’informations, voir la section « Modifier les propriétés de boîte aux lettres d’utilisateur » de la rubrique <a href="manage-user-mailboxes-exchange-2013-help.md">Gestion des boîtes aux lettres utilisateur</a>.
 
 
 5.  Entrez la nouvelle adresse SMTP dans la zone **Adresse e-mail**, puis cliquez sur **OK**.
@@ -203,18 +173,8 @@ Exécutez la commande suivante pour utiliser les données du fichier CSV pour aj
 
     Import-CSV "C:\Users\Administrator\Desktop\AddEmailAddress.csv" | ForEach {Set-Mailbox $_.Mailbox -EmailAddresses @{add=$_.NewEmailAddress}}
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les noms de colonne de la première ligne de ce fichier CSV (<code>Mailbox,NewEmailAddress</code>) sont arbitraires. Quels que soient les noms de colonne utilisés, veillez à employer les mêmes noms dans la commande de l’environnement de ligne de commande Exchange Management Shell.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les noms de colonne de la première ligne de ce fichier CSV (<code>Mailbox,NewEmailAddress</code>) sont arbitraires. Quels que soient les noms de colonne utilisés, veillez à employer les mêmes noms dans la commande de l’environnement de ligne de commande Exchange Management Shell.
 
 
 ## Comment savoir si cela a fonctionné ?
@@ -235,16 +195,6 @@ Ou
 
   - Vérifiez que la nouvelle adresse de messagerie figure dans les résultats de chaque boîte aux lettres.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 

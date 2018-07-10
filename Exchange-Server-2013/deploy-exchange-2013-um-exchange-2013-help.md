@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 La messagerie unifiée requiert l'intégration de votre déploiement Exchange Server au système de téléphonie existant de votre organisation. Un déploiement réussi nécessite une analyse attentive de votre infrastructure de téléphonie existante et d'effectuer les étapes de planification appropriées pour déployer et gérer la messagerie vocale dans la messagerie unifiée.
 
@@ -89,18 +89,8 @@ Différents chemins de déploiement sont disponibles pour les organisations qui 
 
 2.  Déployez votre nouvelle organisation Exchange 2013. Pour plus d'informations, consultez la rubrique [Installer Exchange 2013 à l’aide de l’Assistant Installation](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous devez déployer au moins un serveur de boîtes aux lettres Exchange 2013 dans votre organisation avant de configurer les passerelles VoIP ou les PBX IP pour envoyer le trafic SIP ou RTP de messagerie unifiée vers les serveurs d’accès client Exchange 2013.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Vous devez déployer au moins un serveur de boîtes aux lettres Exchange 2013 dans votre organisation avant de configurer les passerelles VoIP ou les PBX IP pour envoyer le trafic SIP ou RTP de messagerie unifiée vers les serveurs d’accès client Exchange 2013.
 
 
 3.  Vérifiez que vous avez correctement installé les serveurs d'accès au client et de boîtes aux lettres. Après avoir installé les serveurs, nous vous recommandons de vérifier l'installation et de consulter les journaux d'installation du serveur. Pour plus d'informations, consultez la rubrique [Vérifier une installation d’Exchange 2013](verify-an-exchange-2013-installation-exchange-2013-help.md).
@@ -113,18 +103,8 @@ Lorsque vous installez , l'anglais (É.U.) est la langue par défaut et la seule
 
 Vous pouvez ajouter des modules linguistiques de messagerie unifiée à l'aide de la commande Setup.exe ou en exécutant le programme d'installation *\<UMLanguagePack\>*.exe après avoir téléchargé le module linguistique de messagerie unifiée à partir de la page [Exchange Server 2013 UM Language Packs - Français](https://go.microsoft.com/fwlink/p/?linkid=266542). Cependant, vous devez utiliser la commande Setup.exe pour supprimer un module linguistique de messagerie unifiée. Il n'existe aucune cmdlet de l'environnement de ligne de commande Exchange Management Shell permettant d'ajouter ou de supprimer des modules linguistiques d'un serveur de boîte aux lettres. Pour plus d'informations sur l'installation d'un module linguistique de messagerie unifiée, consultez la rubrique [Installer un module linguistique de messagerie unifiée](install-a-um-language-pack-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, lorsque vous installez un serveur de boîtes aux lettres, l'anglais (États-Unis) est installé. Il ne peut pas être retiré, sauf si vous supprimez le serveur de boîtes aux lettres à partir de l'ordinateur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, lorsque vous installez un serveur de boîtes aux lettres, l'anglais (États-Unis) est installé. Il ne peut pas être retiré, sauf si vous supprimez le serveur de boîtes aux lettres à partir de l'ordinateur.
 
 
 Avant le déploiement
@@ -149,18 +129,8 @@ Effectuez la procédure suivante pour créer un plan de numérotation de message
     
       - **Nom**   Tapez le nom du plan de numérotation. Un nom de plan de numérotation de messagerie unifiée est obligatoire et doit être unique. Le nom entré est utilisé uniquement à des fins d'affichage dans le CAE et l'environnement de ligne de commande Exchange Management Shell. La longueur maximale d'un nom de plan de numérotation de messagerie unifiée est de 64 caractères pouvant contenir des espaces. Toutefois, il ne peut contenir aucun des caractères suivants : " / \\ \[ \] : ; | = , + \* ? \< \>.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Bien que le champ destiné au nom du plan de numérotation puisse accepter 64 caractères, la longueur du nom du plan de numérotation ne peut pas être supérieure à 49 caractères. En effet, lorsque vous créez un plan de numérotation, une stratégie de boîte aux lettres de messagerie unifiée par défaut est également créée avec le nom de stratégie par défaut <em>&lt;DialPlanName&gt;</em>. Le paramètre <em>name</em> du plan de numérotation de messagerie unifiée et de la stratégie de boîte aux lettres de messagerie unifiée peut comporter jusqu'à 64 caractères.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Bien que le champ destiné au nom du plan de numérotation puisse accepter 64 caractères, la longueur du nom du plan de numérotation ne peut pas être supérieure à 49 caractères. En effet, lorsque vous créez un plan de numérotation, une stratégie de boîte aux lettres de messagerie unifiée par défaut est également créée avec le nom de stratégie par défaut <em>&lt;DialPlanName&gt;</em>. Le paramètre <em>name</em> du plan de numérotation de messagerie unifiée et de la stratégie de boîte aux lettres de messagerie unifiée peut comporter jusqu'à 64 caractères.
     
       - **Longueur des numéros de poste (chiffres)**   Entrez le nombre de chiffres pour les numéros de poste dans le plan de numérotation. Le nombre de chiffres des numéros de poste repose sur le plan de numérotation des appels téléphoniques créé sur un PBX. Par exemple, si un utilisateur associé à un plan de numérotation téléphonique compose un poste à 4 chiffres pour appeler un autre utilisateur du même plan de numérotation téléphonique, sélectionnez 4 pour le nombre de chiffres du poste.
         
@@ -176,18 +146,8 @@ Effectuez la procédure suivante pour créer un plan de numérotation de message
 
 3.  Cliquez sur **Enregistrer**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Dans les versions antérieures d'Exchange, le serveur de messagerie unifiée devait être ajouté à un plan de numérotation de messagerie unifiée. Dans Exchange 2013, les serveurs d’accès au client et de boîtes aux lettres ne peuvent pas être associés à un plan de numérotation de numéro de poste ou E.164. Les serveurs d'accès au client et de boîtes aux lettres répondront à tous les appels entrants pour tous les types de plans de numérotation. Cependant, si vous intégrez la messagerie unifiée à Microsoft Lync Server, vous devez ajouter tous les serveurs d’accès au client et de boîtes aux lettres à l’ensemble des plans de numérotation URI SIP afin de permettre un fonctionnement parfait d’acheminement des appels avec Lync Server.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Dans les versions antérieures d'Exchange, le serveur de messagerie unifiée devait être ajouté à un plan de numérotation de messagerie unifiée. Dans Exchange 2013, les serveurs d’accès au client et de boîtes aux lettres ne peuvent pas être associés à un plan de numérotation de numéro de poste ou E.164. Les serveurs d'accès au client et de boîtes aux lettres répondront à tous les appels entrants pour tous les types de plans de numérotation. Cependant, si vous intégrez la messagerie unifiée à Microsoft Lync Server, vous devez ajouter tous les serveurs d’accès au client et de boîtes aux lettres à l’ensemble des plans de numérotation URI SIP afin de permettre un fonctionnement parfait d’acheminement des appels avec Lync Server.
 
 
 Avant le déploiement
@@ -362,18 +322,8 @@ Suite au déploiement de vos serveurs et des composants de messagerie unifiée r
 
   - [Activation de la réception de télécopies pour les utilisateurs de messagerie vocale](enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous intégrez votre environnement de messagerie unifiée à Microsoft Lync Server, plusieurs éléments supplémentaires sont à prendre en compte pour la planification. Pour plus d'informations, consultez la rubrique <a href="deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help.md">Présentation du déploiement de la messagerie unifiée Exchange 2013 et de Lync Server</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous intégrez votre environnement de messagerie unifiée à Microsoft Lync Server, plusieurs éléments supplémentaires sont à prendre en compte pour la planification. Pour plus d'informations, consultez la rubrique <a href="deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help.md">Présentation du déploiement de la messagerie unifiée Exchange 2013 et de Lync Server</a>.
 
 
 Avant le déploiement

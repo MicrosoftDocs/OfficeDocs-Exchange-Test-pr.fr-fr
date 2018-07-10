@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-02-01_
+_**Dernière rubrique modifiée :** 2016-02-01_
 
 L’archivage inaltérable vous permet de reprendre le contrôle des données de messagerie de votre organisation en supprimant le besoin de recourir aux fichiers de magasin personnel (.pst) et en vous autorisant à répondre au besoin de rétention de messages et aux exigences relatives à la découverte électronique de votre organisation. Lorsque l’archivage est activé, les utilisateurs peuvent stocker des messages dans une boîte aux lettres d’archivage, accessible à l’aide de MicrosoftOutlook et Outlook Web App.
 
@@ -29,18 +29,8 @@ L’archivage inaltérable vous permet de reprendre le contrôle des données de
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]  
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -55,45 +45,21 @@ L’archivage inaltérable vous permet de reprendre le contrôle des données de
 
 3.  Sur la page **Nouvelle boîte aux lettres utilisateur**, dans le champ **Alias**, saisissez l’alias de l’utilisateur.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous laissez ce champ vide, la valeur entrée dans la zone <strong>Nom de connexion utilisateur</strong> est utilisée comme alias.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Si vous laissez ce champ vide, la valeur entrée dans la zone <strong>Nom de connexion utilisateur</strong> est utilisée comme alias.
 
 
-4.  
-    
-    Sélectionnez l’une des options suivantes :
+4.  Sélectionnez l’une des options suivantes :
     
       - **Utilisateur existant**   Cliquez sur ce bouton, puis sur **Parcourir** pour ouvrir la boîte de dialogue **Sélectionner un utilisateur – Forêt entière**. Cette boîte de dialogue contient une liste des comptes d’utilisateur Active Directory de la forêt qui ne sont pas à extension messagerie ou qui n’ont pas de boîte aux lettres Exchange. Sélectionnez le compte d’utilisateur pour lequel vous souhaitez activer la messagerie, puis cliquez sur **OK**. Si vous sélectionnez cette option, il n’est pas nécessaire de fournir les informations du compte d’utilisateur puisque ces dernières existent déjà dans Active Directory.
     
       - **Nouvel utilisateur**   Cliquez sur ce bouton pour créer un compte d’utilisateur dans Active Directory et créer une boîte aux lettres pour l’utilisateur. Si vous sélectionnez cette option, vous devrez fournir les informations de compte d’utilisateur requises.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le compte Active Directory qui est associé aux boîtes aux lettres d’utilisateur doit résider dans la même forêt que le serveur Exchange. Pour créer une boîte aux lettres pour un compte d’utilisateur résidant dans une forêt approuvée, vous devez créer une boîte aux lettres liée. Pour plus d’informations, voir <a href="manage-linked-mailboxes-exchange-2013-help.md">Gérer les boîtes aux lettres liées</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Le compte Active Directory qui est associé aux boîtes aux lettres d’utilisateur doit résider dans la même forêt que le serveur Exchange. Pour créer une boîte aux lettres pour un compte d’utilisateur résidant dans une forêt approuvée, vous devez créer une boîte aux lettres liée. Pour plus d’informations, voir <a href="manage-linked-mailboxes-exchange-2013-help.md">Gérer les boîtes aux lettres liées</a>.
 
 
-5.  
-    
-    Cliquez sur **Plus d’options** pour configurer les paramètres suivants.
+5.  Cliquez sur **Plus d’options** pour configurer les paramètres suivants.
     
       - **Base de données de boîtes aux lettres**   Cliquez sur **Parcourir** pour sélectionner une base de données de boîtes aux lettres dans laquelle stocker la boîte aux lettres. Si vous ne sélectionnez pas de base de données, Exchange en attribue une automatiquement.
     
@@ -105,9 +71,7 @@ L’archivage inaltérable vous permet de reprendre le contrôle des données de
     
       - **Stratégie de carnet d’adresses**   Sélectionnez dans cette liste une stratégie de carnet d’adresses pour la boîte aux lettres. Les stratégies de carnet d’adresses contiennent une liste d’adresses globale, un carnet d’adresses en mode hors connexion, une liste de salles et un ensemble de listes d’adresses. Lors de l’affectation aux utilisateurs de boîtes aux lettres, une stratégie de carnet d’adresses leur fournit l’accès à une liste d’adresses globale personnalisée dans Outlook et Outlook Web App. Pour en savoir plus, voir [Stratégies de carnet d’adresses](address-book-policies-exchange-2013-help.md).
 
-6.  
-    
-    Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer la boîte aux lettres.
+6.  Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer la boîte aux lettres.
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell
 
@@ -142,18 +106,8 @@ Vous pouvez également créer des archives pour les utilisateurs existants qui o
 
 3.  Dans le volet d’informations, sous **Archive locale**, cliquez sur **Activer**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous pouvez également activer des archives en bloc en sélectionnant plusieurs boîtes aux lettres (à l’aide de la touche Maj ou Ctrl). Une fois les boîtes aux lettres sélectionnées, cliquez sur <strong>Plus d’options</strong> dans le volet d’informations. Sous <strong>Archive</strong>, cliquez sur <strong>Activer</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]  
+    > Vous pouvez également activer des archives en bloc en sélectionnant plusieurs boîtes aux lettres (à l’aide de la touche Maj ou Ctrl). Une fois les boîtes aux lettres sélectionnées, cliquez sur <strong>Plus d’options</strong> dans le volet d’informations. Sous <strong>Archive</strong>, cliquez sur <strong>Activer</strong>.
 
 
 4.  Sur la page **Créer une archive locale**, cliquez sur **OK** pour qu’Exchange sélectionne automatiquement une base de données de boîtes aux lettres pour l’archive ou cliquez sur **Parcourir** pour en indiquer une.
@@ -186,18 +140,8 @@ Pour vérifier que vous avez activé une archive locale pour une boîte aux lett
 
 Vous voulez peut-être désactiver l’archive d’utilisateur pour résoudre des problèmes ou pour déplacer la boîte aux lettres vers une version d’Exchange qui ne prend pas en charge l’archivage inaltérable. Si vous désactivez une archive locale, toutes les informations qu’elle contient seront conservées dans la base de données de boîtes aux lettres jusqu’à ce que le délai de rétention de cette dernière ait expiré et que l’archive soit définitivement supprimée. (Par défaut, Exchange conserve les boîtes aux lettres déconnectées, y compris les boîtes aux lettres d’archivage, pendant trente jours.)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La désactivation des archives entraîne leur suppression de la boîte aux lettres et leur marquage pour suppression dans la base de données de boîtes aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> La désactivation des archives entraîne leur suppression de la boîte aux lettres et leur marquage pour suppression dans la base de données de boîtes aux lettres.
 
 
 Pour reconnecter l’archive locale à cette boîte aux lettres, vous pouvez utiliser la cmdlet [Connect-Mailbox](https://technet.microsoft.com/fr-fr/library/aa997878\(v=exchg.150\)) avec le paramètre *Archive*.
@@ -210,18 +154,8 @@ Pour reconnecter l’archive locale à cette boîte aux lettres, vous pouvez uti
 
 3.  Dans le volet d’informations, sous **Archive locale**, cliquez sur **Désactiver**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous pouvez également désactiver des archives en bloc en sélectionnant plusieurs boîtes aux lettres (à l’aide de la touche Maj ou Ctrl). Une fois les boîtes aux lettres sélectionnées, cliquez sur <strong>Plus d’options</strong> dans le volet d’informations. Sous <strong>Archive</strong>, cliquez sur <strong>Désactiver</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]  
+    > Vous pouvez également désactiver des archives en bloc en sélectionnant plusieurs boîtes aux lettres (à l’aide de la touche Maj ou Ctrl). Une fois les boîtes aux lettres sélectionnées, cliquez sur <strong>Plus d’options</strong> dans le volet d’informations. Sous <strong>Archive</strong>, cliquez sur <strong>Désactiver</strong>.
 
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell
@@ -281,32 +215,12 @@ Pour vérifier qu’une archive a bien été désactivée, procédez comme suit�
 
 Lorsque vous désactivez une boîte aux lettres d’archivage, elle est déconnectée. Une boîte aux lettres dont l’archive est déconnectée est conservée dans la base de données de boîtes aux lettres pendant une durée spécifiée. Par défaut, Exchange conserve les archives déconnectées pendant 30 jours. Pendant cette période, vous pouvez récupérer l’archive en l’associant à une boîte aux lettres existante. Vous pouvez modifier la période de rétention des boîtes aux lettres supprimées si vous souhaitez conserver une boîte aux lettres ou une archive supprimée pendant une période plus longue ou plus courte.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous désactivez une archive pour un utilisateur, puis activez une archive pour le même utilisateur, une nouvelle archive lui est octroyée. La nouvelle archive ne contient pas les données présentes dans l’archive déconnectée de l’utilisateur. Si vous souhaitez reconnecter un utilisateur à son archive déconnectée, vous devez appliquer cette procédure.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Si vous désactivez une archive pour un utilisateur, puis activez une archive pour le même utilisateur, une nouvelle archive lui est octroyée. La nouvelle archive ne contient pas les données présentes dans l’archive déconnectée de l’utilisateur. Si vous souhaitez reconnecter un utilisateur à son archive déconnectée, vous devez appliquer cette procédure.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le CAE pour connecter une archive déconnectée à un utilisateur de boîte aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Vous ne pouvez pas utiliser le CAE pour connecter une archive déconnectée à un utilisateur de boîte aux lettres.
 
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell

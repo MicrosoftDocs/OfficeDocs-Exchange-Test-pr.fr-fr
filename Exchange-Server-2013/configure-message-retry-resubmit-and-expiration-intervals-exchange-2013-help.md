@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-12-16_
+_**Dernière rubrique modifiée :** 2014-12-16_
 
 Microsoft Exchange Server 2013 vous permet de configurer les intervalles de nouvelle tentative, de renvoi et d'expiration des messages dans le service de transport sur des serveurs de boîtes aux lettres et de transport Edge. Pour obtenir des descriptions de ces paramètres, consultez la rubrique [Intervalles de nouvelle tentative, de renvoi et d’expiration des messages](message-retry-resubmit-and-expiration-intervals-exchange-2013-help.md).
 
@@ -29,18 +29,8 @@ Microsoft Exchange Server 2013 vous permet de configurer les intervalles de nou
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -107,18 +97,8 @@ Cet exemple montre comment modifier les valeurs suivantes sur le serveur de boî
 
     Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les paramètres <em>TransientFailureRetryCount</em> et <em>TransientFailureRetryInterval</em> sont également disponibles avec la cmdlet <strong>Set-FrontEndTransportService</strong> pour le service de transport frontal sur des serveurs d'accès au client.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les paramètres <em>TransientFailureRetryCount</em> et <em>TransientFailureRetryInterval</em> sont également disponibles avec la cmdlet <strong>Set-FrontEndTransportService</strong> pour le service de transport frontal sur des serveurs d'accès au client.
 
 
 ## Configurer les tentatives de relance après échec passager, l'intervalle de relance après échec passager et l'intervalle de relance après échec de la connexion sortante
@@ -149,18 +129,8 @@ Cet exemple montre comment modifier les valeurs suivantes sur le serveur de boî
 
     Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les paramètres <em>TransientFailureRetryCount</em> et <em>TransientFailureRetryInterval</em> sont également disponibles avec la cmdlet <strong>Set-FrontEndTransportService</strong> pour le service de transport frontal sur des serveurs d'accès au client.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les paramètres <em>TransientFailureRetryCount</em> et <em>TransientFailureRetryInterval</em> sont également disponibles avec la cmdlet <strong>Set-FrontEndTransportService</strong> pour le service de transport frontal sur des serveurs d'accès au client.
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour configurer l'intervalle de nouvelle tentative de message
@@ -179,18 +149,8 @@ Cet exemple montre la procédure de modification de l’intervalle avant nouvell
 
 Vous pouvez utiliser le CAE ou l'environnement de ligne de commande pour configurer l'intervalle d'expiration de notification d'état de remise retardée. Ce paramètre s'applique uniquement au serveur de transport local. Pour activer ou désactiver l'envoi de messages de notification d'état de remise retardée à des expéditeurs internes et externes, vous pouvez utiliser uniquement l'environnement de ligne de commande. Ces paramètres s'appliquent à tous les serveurs de transport au sein de votre organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Sur les serveurs de transport Hub Exchange 2007, tous les paramètres <em>ExternalDSN*</em> et <em>InternalDSN*</em> sont disponibles pour la cmdlet <strong>Set-TransportServer</strong>, et non pour la cmdlet <strong>Set-TransportConfig</strong>. Si votre organisation comporte des serveurs de transport Hub Exchange 2007, vous devez modifier ces valeurs à l'aide de la cmdlet <strong>Set-TransportServer</strong> sur chaque serveur de transport Hub Exchange 2007.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Sur les serveurs de transport Hub Exchange 2007, tous les paramètres <em>ExternalDSN*</em> et <em>InternalDSN*</em> sont disponibles pour la cmdlet <strong>Set-TransportServer</strong>, et non pour la cmdlet <strong>Set-TransportConfig</strong>. Si votre organisation comporte des serveurs de transport Hub Exchange 2007, vous devez modifier ces valeurs à l'aide de la cmdlet <strong>Set-TransportServer</strong> sur chaque serveur de transport Hub Exchange 2007.
 
 
 ## Utiliser le CAE pour configurer le délai d'attente avant l'envoi d'un message de notification d'état de remise retardée

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Exchange Search indexe les boîtes aux lettres et les pièces jointes prises en charge dans les boîtes aux lettres Exchange. Avec l’augmentation des volumes de courriers électroniques, l’augmentation des tailles de boîtes aux lettres et des quotas de stockage, la mise en service des boîtes aux lettres d’archivage pour les utilisateurs, et la découverte électronique inaltérable pour effectuer des recherches de découverte, Exchange Search est un composant essentiel des serveurs de boîtes aux lettres dans votre organisation Microsoft Exchange Server 2013. Les problèmes liés à Exchange Search peuvent avoir une incidence sur la productivité des utilisateurs et la fonctionnalité de découverte électronique inaltérable.
 
@@ -33,18 +33,8 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Vous pouvez utiliser la cmdlet [Get-FailedContentIndexDocuments](https://technet.microsoft.com/fr-fr/library/dd351154\(v=exchg.150\)) pour extraire une liste d’éléments de boîte aux lettres impossibles à rechercher qui n’ont pas pu être indexés par Exchange Search. Vous pouvez exécuter la cmdlet sur un serveur de boîtes aux lettres, une base de données de boîtes aux lettres ou une boîte aux lettres spécifique. La cmdlet renvoie des détails relatifs à chaque élément qui n’a pas pu être recherché. Il existe plusieurs raisons pour lesquelles un élément de boîte aux lettres ne peut pas être recherché ; par exemple, un message électronique peut contenir un type de fichier de pièce jointe qui ne peut pas être indexé pour la recherche ou un filtre de recherche n’est pas installé ou est désactivé. Si un filtre de recherche pour ce type de fichier est disponible, vous pouvez l’installer sur vos serveurs exExchangeNoVersionExchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les filtres de recherche fournis par Microsoft sont testés et pris en charge par Microsoft. Nous vous recommandons de tester les filtres de recherche tiers dans un environnement de test avant de les installer sur des serveurs exExchangeNoVersionExchange dans un environnement de production.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les filtres de recherche fournis par Microsoft sont testés et pris en charge par Microsoft. Nous vous recommandons de tester les filtres de recherche tiers dans un environnement de test avant de les installer sur des serveurs exExchangeNoVersionExchange dans un environnement de production.
 
 
 Pour plus d’informations sur les éléments impossibles à rechercher, consultez :

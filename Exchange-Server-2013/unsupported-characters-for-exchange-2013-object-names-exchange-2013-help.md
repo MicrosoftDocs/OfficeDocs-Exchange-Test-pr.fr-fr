@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Cet article décrit les caractères dont l’utilisation est interdite dans les noms d’objets ou de composants dans Exchange 2013. Lorsque vous créez des noms d’objets ou de composants dans Exchange 2013, ces noms ne peuvent pas contenir de caractères non pris en charge, même si vous pouvez créer un objet à l’aide d’un caractère non pris en charge. En outre, si vous tentez d'importer ou de vous connecter à des objets dont les noms incluent des caractères non pris en charge, un message d'erreur peut s'afficher ou un comportement inattendu peut se produire.
 

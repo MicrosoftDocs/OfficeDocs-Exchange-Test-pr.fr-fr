@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 L'*automate d'appels* est le processus permettant à des utilisateurs d'appeler un plan de numérotation de messagerie unifiée à l'aide d'un numéro Outlook Voice Access, ainsi que de passer ou transférer un appel vers un numéro de téléphone interne ou externe. La messagerie unifiée utilise un grand nombre de paramètres d'automate d'appels pour passer des appels pour les utilisateurs. Pour configurer un automate d'appels, vous devez configurer des règles de numérotation, des groupes de règles de numérotation et des autorisations de numérotation sur des plans de numérotation de messagerie unifiée, puis autoriser l'automate d'appels sur les plans de numérotation de messagerie unifiée, les stratégies de boîte aux lettres de messagerie unifiée et les standards automatiques. Vous pouvez également configurer des plans de numérotation de messagerie unifiée pour disposer d'indicatifs, d'un préfixe de numéro national et de formats de numéro nationaux, régionaux ou internationaux permettant de contrôler l'automate d'appels au sein de votre organisation. Cette rubrique décrit les règles de numérotation, les groupes de règles de numérotation, les autorisations de numérotation, ainsi que la manière de les utiliser pour autoriser et contrôler l'automate d'appels au sein de votre organisation.
 

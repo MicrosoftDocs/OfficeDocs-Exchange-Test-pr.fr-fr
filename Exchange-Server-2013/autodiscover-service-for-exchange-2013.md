@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Découvrez le service de découverte automatique d’Exchange pour Microsoft Exchange 2013. Vous découvrirez le rôle du service de découverte automatique d’Exchange, son mode de fonctionnement, ainsi que les options de déploiement disponibles.
 
@@ -73,36 +73,16 @@ Par ailleurs, un objet Active Directory appelé point de connexion de service (S
 
 L’objet SCP contient la liste des URL du service de découverte automatique faisant autorité pour la forêt. La cmdlet **Set-ClientAccessServer** permet de mettre à jour l'objet SCP. Pour plus d'informations, voir [Set-ClientAccessServer](https://technet.microsoft.com/fr-fr/library/bb125157\(v=exchg.150\)).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avant d'exécuter la cmdlet <strong>Set-ClientAccessServer</strong>, assurez-vous que le compte d'utilisateurs authentifiés sur le serveur d'accès au client dispose d'autorisations d'accès en lecture à l'objet SCP. Si les utilisateurs ne disposent pas des autorisations appropriées, ils ne pourront pas rechercher et lire des éléments dans l'objet SCP.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Avant d'exécuter la cmdlet <strong>Set-ClientAccessServer</strong>, assurez-vous que le compte d'utilisateurs authentifiés sur le serveur d'accès au client dispose d'autorisations d'accès en lecture à l'objet SCP. Si les utilisateurs ne disposent pas des autorisations appropriées, ils ne pourront pas rechercher et lire des éléments dans l'objet SCP.
 
 
 Pour plus d’informations sur les objets SCP, consultez le site relatif à la [publication avec des points de connexion de service](https://go.microsoft.com/fwlink/p/?linkid=72744) .
 
 Pour l’accès externe, ou l’utilisation de DNS, le client recherche le service de découverte automatique sur Internet à l’aide de l’adresse de domaine SMTP principale de l’adresse de messagerie de l’utilisateur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez fournir un enregistrement de ressource de service d’hôte dans DNS pour que les clients Outlook détectent le service de découverte automatique en utilisant DNS. Pour plus d'informations, reportez-vous aux instructions relatives à la configuration de DNS dans votre documentation Windows et consultez également le <a href="https://go.microsoft.com/fwlink/p/?linkid=85214">Livre blanc: Service de découverte automatique d’Exchange 2007</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez fournir un enregistrement de ressource de service d’hôte dans DNS pour que les clients Outlook détectent le service de découverte automatique en utilisant DNS. Pour plus d'informations, reportez-vous aux instructions relatives à la configuration de DNS dans votre documentation Windows et consultez également le <a href="https://go.microsoft.com/fwlink/p/?linkid=85214">Livre blanc: Service de découverte automatique d’Exchange 2007</a>.
 
 
 Selon que vous avez configuré ou non le service de découverte automatique sur un site distinct, l'adresse URL du service de découverte automatique est soit https://\<*smtp-address-domain*\>/autodiscover/autodiscover.xml, soit https://autodiscover.\<*smtp-address-domain*\>/autodiscover/autodiscover.xml, où ://\<*smtp-address-domain*\> est l'adresse de domaine SMTP principale. Par exemple, si l’adresse de messagerie de l’utilisateur est tony@contoso.com, l’adresse de domaine SMTP principale est contoso.com. Lorsque le client se connecte à Active Directory, celui-ci recherche l’objet SCP créé au cours de l’installation. Dans les déploiements qui comprennent plusieurs serveurs d'accès au client, un objet SCP de découverte automatique est créé pour chaque serveur d'accès au client. L'objet SCP contient l'attribut *ServiceBindingInfo* qui dispose du nom de domaine complet (FQDN) du serveur d'accès au client sous la forme https://CAS01/autodiscover/autodiscover.xml, où CAS01 est le nom de domaine complet du serveur d'accès au client. A l'aide des informations d’identification de l'utilisateur, le client Outlook 2007, Outlook 2010 ou Outlook 2013 s’authentifie dans Active Directory et recherche les objets SCP de découverte automatique. Une fois que le client a obtenu et énuméré les instances du service de découverte automatique, il se connecte au premier serveur d'accès au client de la liste énumérée et obtient, sous forme de données XML, les informations de profil nécessaires pour se connecter à la boîte aux lettres de l'utilisateur et aux fonctionnalités d'Exchange disponibles.

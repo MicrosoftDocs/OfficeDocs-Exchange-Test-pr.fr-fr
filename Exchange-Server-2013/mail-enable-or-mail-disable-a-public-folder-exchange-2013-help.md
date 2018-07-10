@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-06-15_
+_**Dernière rubrique modifiée :** 2016-06-15_
 
 Les dossiers publics sont conçus pour assurer un accès partagé et offrir une manière simple et efficace de collecter, d'organiser et de partager des informations avec d'autres personnes dans votre groupe de travail ou votre organisation. Activer la messagerie d'un dossier public permet aux utilisateurs de publier dans le dossier public en y envoyant un message électronique. Quand la messagerie est activée pour un dossier public, des paramètres supplémentaires sont disponibles pour ce dossier public dans le Centre d’administration Exchange (CAE), tels que les adresses de messagerie et les quotas de messagerie. Dans l'environnement de ligne de commande Exchange Management Shell, avant d'activer la messagerie d'un dossier public, vous utilisez la cmdlet **Set-PublicFolder** pour gérer tous ses paramètres. Une fois la messagerie activée pour le dossier public, vous utilisez les cmdlets **Set-PublicFolder** et **Set-MailPublicFolder** pour gérer les paramètres.
 
@@ -35,18 +35,8 @@ Pour découvrir d'autres tâches de gestion associées aux dossiers publics, con
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

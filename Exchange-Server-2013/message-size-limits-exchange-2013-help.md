@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-08-20_
+_**Dernière rubrique modifiée :** 2015-08-20_
 
 Vous pouvez appliquer des limites aux messages qui se déplacent dans l'organisation Microsoft Exchange Server 2013. Vous pouvez limiter la taille totale d'un message ou la taille des composants individuels d'un message, tels que l'en-tête du message, les pièces jointes au message et le nombre de destinataires. Vous pouvez appliquer des limites à toute l'organisation Exchange de manière globale, ou de façon spécifique pour un connecteur ou un objet utilisateur.
 
@@ -51,18 +51,8 @@ Voici les différentes catégories de tailles limites disponibles pour chaque me
 
   - **Tailles limites d'en-tête de message**   Ces limites s'appliquent à la taille totale de tous les champs d'en-tête de message présents dans un message. Les tailles du corps de message ou des pièces jointes ne sont pas prises en compte. Dans la mesure où les champs d'en-tête sont en texte brut, la taille de l'en-tête est déterminée par le nombre de caractères dans chaque champ d'en-tête et le nombre total de champs d'en-tête. Chaque caractère du texte correspond à un octet.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Certains pare-feu ou serveurs proxy tiers appliquent leurs propres limites de taille d'en-tête de message. Ces pare-feu ou serveurs proxy tiers peuvent avoir des difficultés à traiter des messages contenant des noms de fichier de pièce jointe d'une longueur supérieure à 50 caractères ou contenant des caractères autres que US-ASCII.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Certains pare-feu ou serveurs proxy tiers appliquent leurs propres limites de taille d'en-tête de message. Ces pare-feu ou serveurs proxy tiers peuvent avoir des difficultés à traiter des messages contenant des noms de fichier de pièce jointe d'une longueur supérieure à 50 caractères ou contenant des caractères autres que US-ASCII.
 
 
   - **Tailles limites des messages**   Ces limites s'appliquent à la taille totale d'un message, ce qui inclut l'en-tête du message, le corps du message et les pièces jointes. Les tailles limites des messages peuvent être imposées sur les messages entrants ou sortants. Pour le flux de messagerie interne, Exchange utilise l'en-tête de message `X-MS-Exchange-Organization-OriginalSize:` personnalisé pour enregistrer la taille d'origine du message au moment où celui-ci entre dans l'organisation Exchange. Chaque fois qu'un message est vérifié par rapport aux tailles limites spécifiées, la valeur la plus faible de l'en-tête de la taille de message actuelle ou de la taille de message d'origine est utilisée. La taille du message peut varier en raison de la conversion de contenu, du codage et du traitement par l'agent.
@@ -125,18 +115,8 @@ Les tableaux suivants présentent les limites des messages, dont des information
 </tr>
 <tr class="odd">
 <td><p>Nombre maximal de destinataires par message</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 
 
 </td>
 <td><p>5000</p></td>
@@ -195,18 +175,8 @@ Retour au début
 </tr>
 <tr class="even">
 <td><p>Taille maximale des messages via un connecteur de réception</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La taille réelle du message peut être inférieure en raison de l'encodage et de la conversion du contenu du message.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La taille réelle du message peut être inférieure en raison de l'encodage et de la conversion du contenu du message.
 
 </td>
 <td><p><strong>Service de transport sur les serveurs de boîtes aux lettres</strong></p>
@@ -225,18 +195,8 @@ Retour au début
 <p>200 pour le connecteur de réception de proxy client</p>
 <p><strong>Service de transport frontal sur un serveur d'accès au client</strong></p>
 <p>200 pour les connecteurs de réception frontaux par défaut, frontaux de client et frontaux de proxy.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si le nombre de destinataires est dépassé pour un expéditeur anonyme, le message est accepté pour les 200 premiers destinataires. La plupart des serveurs de messagerie SMTP détectent qu'une limite des destinataires est appliquée. Le serveur de messagerie SMTP continue à renvoyer le message par groupes de 200 destinataires jusqu'à ce qu'il ait été remis à tous les destinataires.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si le nombre de destinataires est dépassé pour un expéditeur anonyme, le message est accepté pour les 200 premiers destinataires. La plupart des serveurs de messagerie SMTP détectent qu'une limite des destinataires est appliquée. Le serveur de messagerie SMTP continue à renvoyer le message par groupes de 200 destinataires jusqu'à ce qu'il ait été remis à tous les destinataires.
 
 </td>
 <td><p>Cmdlets : <strong>New-ReceiveConnector</strong>, <strong>Set-ReceiveConnector</strong></p>
@@ -314,18 +274,8 @@ Retour au début
 <td><p>Outlook Web App   35 Mo</p>
 <p>Exchange ActiveSync   10 Mo</p>
 <p>Services web Exchange   64 Mo</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ces valeurs sont environ 33 % supérieures à la taille maximale réelle des messages, en raison du traitement associé au codage Base64.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Ces valeurs sont environ 33 % supérieures à la taille maximale réelle des messages, en raison du traitement associé au codage Base64.
 
 </td>
 <td><p>Vous configurez ces valeurs dans le fichier de configuration d'application XML web.config approprié sur les serveurs d'accès aux client. Pour plus d'informations, consultez la rubrique <a href="configure-client-specific-message-size-limits-exchange-2013-help.md">Configuration des limites de taille de message propres au client</a>.</p></td>
@@ -369,18 +319,8 @@ Retour au début
 <p>Paramètre : <em>MaxSendSize</em></p></td>
 <td><p>Pour les boîtes aux lettres :</p>
 <p><strong>Destinataires</strong>&gt;<strong>Boîtes aux lettres</strong>&gt;<strong>Modifier</strong><img src="images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="Icône Modifier" alt="Icône Modifier" />&gt;<strong>Fonctionnalités de boîte aux lettres</strong>&gt;<strong>Flux de messagerie</strong>&gt;<strong>Restrictions de taille des messages</strong>&gt;<strong>Afficher les détails</strong>&gt;<strong>Messages envoyés</strong></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ce paramètre n'est pas configurable avec le CAE pour d'autres types de destinataires.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Ce paramètre n'est pas configurable avec le CAE pour d'autres types de destinataires.
 
 </td>
 </tr>
@@ -400,18 +340,8 @@ Retour au début
 <p>Paramètre : <em>MaxReceiveSize</em></p></td>
 <td><p>Pour les boîtes aux lettres :</p>
 <p><strong>Destinataires</strong>&gt;<strong>Boîtes aux lettres</strong>&gt;<strong>Modifier</strong><img src="images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="Icône Modifier" alt="Icône Modifier" />&gt;<strong>Fonctionnalités de boîte aux lettres</strong>&gt;<strong>Flux de messagerie</strong>&gt;<strong>Restrictions de taille des messages</strong>&gt;<strong>Afficher les détails</strong>&gt;<strong>Messages reçus</strong></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ce paramètre n'est pas configurable avec le CAE pour d'autres types de destinataires.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Ce paramètre n'est pas configurable avec le CAE pour d'autres types de destinataires.
 
 </td>
 </tr>

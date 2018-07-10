@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les personnes et ressources qui échangent des messages constituent le noyau de tout système de collaboration et de messagerie. Dans une organisation Exchange, ces personnes et ressources sont appelées *destinataires*. Un destinataire est un objet à extension messagerie dans Active Directory auquel Microsoft Exchange peut remettre ou router des messages.
 
@@ -65,18 +65,8 @@ Le tableau suivant répertorie les types de destinataire disponibles. Tous ces t
 <tr class="odd">
 <td><p>Contact de forêt de messagerie</p></td>
 <td><p>Contact de messagerie qui représente un objet destinataire d'une autre forêt. Les contacts de forêt de messagerie sont généralement créés par la fonctionnalité de synchronisation Microsoft Identity Integration Server (MIIS).</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les contacts de forêt de messagerie sont des objets destinataires mis à jour uniquement à l'aide de MIIS ou d'une synchronisation personnalisée similaire. Vous ne pouvez pas supprimer ni modifier un contact de forêt de messagerie à l’aide du CAE ou de l’environnement de ligne de commande Exchange Management Shell.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les contacts de forêt de messagerie sont des objets destinataires mis à jour uniquement à l'aide de MIIS ou d'une synchronisation personnalisée similaire. Vous ne pouvez pas supprimer ni modifier un contact de forêt de messagerie à l’aide du CAE ou de l’environnement de ligne de commande Exchange Management Shell.
 
 </td>
 </tr>
@@ -141,36 +131,16 @@ Les boîtes aux lettres constituent le type de destinataire le plus couramment u
 
 Chaque boîte aux lettres est constituée d'un utilisateur Active Directory et des données de boîte aux lettres stockées dans la base de données de boîtes aux lettres Exchange (comme indiqué dans la figure suivante). Toutes les données de configuration de la boîte aux lettres sont stockées dans les attributs Exchange de l'objet utilisateur Active Directory. La base de données de boîtes aux lettres contient les données de la boîte aux lettres associée au compte d'utilisateur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous créez une boîte aux lettres pour un nouvel utilisateur ou un utilisateur existant, les attributs Exchange requis pour une boîte aux lettres sont ajoutés à l'objet utilisateur dans Active Directory. Les données de boîte aux lettres associées ne sont créées que lorsque la boîte aux lettres reçoit un message ou que l’utilisateur s’y connecte.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous créez une boîte aux lettres pour un nouvel utilisateur ou un utilisateur existant, les attributs Exchange requis pour une boîte aux lettres sont ajoutés à l'objet utilisateur dans Active Directory. Les données de boîte aux lettres associées ne sont créées que lorsque la boîte aux lettres reçoit un message ou que l’utilisateur s’y connecte.
 
 
 **Composants de boîte aux lettres**
 
 ![Composants d’une boîte aux lettres](images/Bb201680.5fcb5e6d-656e-42ae-871f-0eef8aea456b(EXCHG.150).gif "Composants d’une boîte aux lettres")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous supprimez une boîte aux lettres, les données de boîte aux lettres stockées dans la base de données de boîtes aux lettres Exchange sont marquées pour suppression et le compte d'utilisateur associé est également supprimé d'Active Directory. Pour conserver le compte d'utilisateur et supprimer uniquement les données de boîte aux lettres, vous devez désactiver la boîte aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Si vous supprimez une boîte aux lettres, les données de boîte aux lettres stockées dans la base de données de boîtes aux lettres Exchange sont marquées pour suppression et le compte d'utilisateur associé est également supprimé d'Active Directory. Pour conserver le compte d'utilisateur et supprimer uniquement les données de boîte aux lettres, vous devez désactiver la boîte aux lettres.
 
 
 ## Types de boîte aux lettres
@@ -257,18 +227,8 @@ Les boîtes aux lettres sont créées dans les bases de données de boîtes aux 
 
 Les groupes de distribution sont des objets groupe Active Directory à extension messagerie principalement utilisés pour distribuer des messages à plusieurs destinataires. Tout type de destinataire peut être membre d'un groupe de distribution.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Notez les différences terminologiques entre Active Directory et Exchange. Dans Active Directory, un groupe de distribution correspond à tout groupe sans contexte de sécurité, qu'il soit doté d'une extension messagerie ou non. Dans Exchange, tous les groupes à extension messagerie sont appelés groupes de distribution, qu’ils aient ou non un contexte de sécurité.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Notez les différences terminologiques entre Active Directory et Exchange. Dans Active Directory, un groupe de distribution correspond à tout groupe sans contexte de sécurité, qu'il soit doté d'une extension messagerie ou non. Dans Exchange, tous les groupes à extension messagerie sont appelés groupes de distribution, qu’ils aient ou non un contexte de sécurité.
 
 
 Exchange prend en charge les types de groupe de distribution suivants :
@@ -279,18 +239,8 @@ Exchange prend en charge les types de groupe de distribution suivants :
 
   - **Groupes non universels à extension messagerie**   Il s'agit d'objets de groupe local ou global Active Directory à extension messagerie. Vous pouvez créer ou activer la messagerie de groupes de distribution universels uniquement. Vous disposez peut-être de groupes à extension messagerie ayant été migré à partir de versions antérieures d'Exchange qui ne sont pas des groupes universels. Ces groupes peuvent toujours êtres gérés via le CAE ou l’environnement de ligne de commande Exchange Management Shell.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Pour convertir un groupe de domaine local ou global en groupe universel, vous pouvez utiliser la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/bb123770(v=exchg.150)">Set-Group</a> de l'environnement de ligne de commande.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Pour convertir un groupe de domaine local ou global en groupe universel, vous pouvez utiliser la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/bb123770(v=exchg.150)">Set-Group</a> de l'environnement de ligne de commande.
 
 
 ## Groupes de distribution dynamique
@@ -299,18 +249,8 @@ Les groupes de distribution dynamique sont des groupes de distribution dont l'ap
 
 Contrairement aux groupes de distribution habituels, la liste des membres de ces groupes de distribution dynamiques est calculée chaque fois qu'un message leur est envoyé, en fonction des filtres et conditions spécifiés. Lorsqu’un message électronique est envoyé à un groupe de distribution dynamique, il est remis à tous les destinataires de l’organisation qui correspondent aux critères définis pour ce groupe de distribution dynamique.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Un groupe de distribution dynamique inclut tout destinataire dans Active Directory dont les attributs correspondent au filtre du groupe au moment de l'envoi du message. Si les propriétés d'un destinataire sont modifiées pour correspondre au filtre du groupe, ce destinataire peut involontairement devenir membre du groupe et commencer à recevoir des messages envoyés au groupe de distribution dynamique. Des processus de déploiement de compte cohérents et clairement définis peuvent limiter ce risque.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Un groupe de distribution dynamique inclut tout destinataire dans Active Directory dont les attributs correspondent au filtre du groupe au moment de l'envoi du message. Si les propriétés d'un destinataire sont modifiées pour correspondre au filtre du groupe, ce destinataire peut involontairement devenir membre du groupe et commencer à recevoir des messages envoyés au groupe de distribution dynamique. Des processus de déploiement de compte cohérents et clairement définis peuvent limiter ce risque.
 
 
 Pour faciliter la création de filtres des destinataires pour les groupes de distribution dynamique, vous pouvez utiliser des filtres prédéfinis. Un *filtre prédéfini* est un filtre couramment utilisé qui permet de répondre à de nombreux critères de filtrage des destinataires. Vous pouvez utiliser ces filtres pour spécifier les types de destinataire que vous voulez inclure dans un groupe de distribution dynamique. En outre, vous pouvez également spécifier la liste des conditions que les destinataires doivent satisfaire. Vous pouvez créer des conditions prédéfinies sur la base des propriétés suivantes :
@@ -343,18 +283,8 @@ Si une personne externe à votre organisation a besoin d'accéder aux ressources
 
 Un autre scénario consiste à créer des utilisateurs de messagerie dans votre organisation pour les utilisateurs qui ne souhaitent pas conserver de boîte aux lettres Exchange. Par exemple, après une acquisition, la société acquise peut conserver son infrastructure de messagerie distincte, mais peut également avoir besoin d'accéder aux ressources de votre réseau. Pour ces utilisateurs, vous pouvez créer des utilisateurs de messagerie plutôt que des utilisateurs de boîte aux lettres.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans le CAE, la page <strong>Destinataires</strong> &gt; <strong>Contacts</strong> permet de créer et gérer les utilisateurs de messagerie. Il n’existe pas de page distincte pour les utilisateurs de messagerie.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans le CAE, la page <strong>Destinataires</strong> &gt; <strong>Contacts</strong> permet de créer et gérer les utilisateurs de messagerie. Il n’existe pas de page distincte pour les utilisateurs de messagerie.
 
 
 ## Dossiers publics à extension messagerie
@@ -369,18 +299,8 @@ Le destinataire Microsoft Exchange est un objet de destinataire spécifique qui 
 
 Le destinataire Microsoft Exchange n'est pas un objet de destinataire classique, comme une boîte aux lettres, un utilisateur de messagerie ou un contact de messagerie, et n'est pas géré à l'aide d'outils de destinataire standard. Cependant, vous pouvez utiliser la cmdlet [Set-OrganizationConfig](https://technet.microsoft.com/fr-fr/library/aa997443\(v=exchg.150\)) de l'environnement de ligne de commande pour configurer le destinataire Microsoft Exchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque des messages générés par le système sont envoyés à un expéditeur externe, le destinataire Microsoft Exchange n'est pas utilisé comme expéditeur du message. L’adresse de messagerie spécifiée par le paramètre <em>ExternalPostmasterAddress</em> pour la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/bb124151(v=exchg.150)">Set-TransportConfig</a> est utilisée à la place.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque des messages générés par le système sont envoyés à un expéditeur externe, le destinataire Microsoft Exchange n'est pas utilisé comme expéditeur du message. L’adresse de messagerie spécifiée par le paramètre <em>ExternalPostmasterAddress</em> pour la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/bb124151(v=exchg.150)">Set-TransportConfig</a> est utilisée à la place.
 
 
 ## Documentation de destinataires

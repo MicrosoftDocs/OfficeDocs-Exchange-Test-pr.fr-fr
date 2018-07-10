@@ -53,7 +53,7 @@ Pour éviter ces problèmes aux utilisateurs ayant des boîtes aux lettres cloud
     
         Set-OrganizationRelationship -TargetOWAUrl http://cloudowa.contoso.com/owa
     
-    **Remarques :**
+    **Remarques :** 
     
       - Utilisez le protocole http, et pas https.
     

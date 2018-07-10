@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Si votre organisation rencontre des problèmes avec la qualité audio des appels de messagerie unifiée et des messages vocaux, utilisez le rapport Statistiques d'appels pour vous aider à comprendre ce qui provoque les problèmes.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La qualité audio d'un appel peut être affectée par des facteurs qui ne sont pas couverts dans les rapports. Par exemple, si vos serveurs Exchange rencontrent une charge élevée de mémoire ou d'unité centrale, les utilisateurs peuvent signaler une qualité d'appel médiocre même si les rapports indiquent une qualité audio excellente.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La qualité audio d'un appel peut être affectée par des facteurs qui ne sont pas couverts dans les rapports. Par exemple, si vos serveurs Exchange rencontrent une charge élevée de mémoire ou d'unité centrale, les utilisateurs peuvent signaler une qualité d'appel médiocre même si les rapports indiquent une qualité audio excellente.
 
 
 Pour les tâches supplémentaires relatives aux statistiques d'appels, consultez la rubrique [Procédures de rapports de messagerie unifiée](um-reports-procedures-exchange-2013-help.md).
@@ -43,18 +33,8 @@ Pour les tâches supplémentaires relatives aux statistiques d'appels, consultez
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Utiliser le Centre d'administration Exchange (CAE) pour récupérer des statistiques relatives à la qualité audio pour votre organisation
@@ -85,18 +65,8 @@ Pour les tâches supplémentaires relatives aux statistiques d'appels, consultez
     
       - **NMOS**   Note moyenne d'opinion de réseau NMOS pour cet appel. Le score NMOS évalue la qualité audio de l'appel, sur une échelle de 1 à 5, 5 indiquant une excellente qualité.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>La note NMOS maximale pour un appel dépend du codec audio utilisé. Il est possible que le score NMOS ne soit pas disponible pour des appels très courts d'une durée inférieure à 10 secondes.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > La note NMOS maximale pour un appel dépend du codec audio utilisé. Il est possible que le score NMOS ne soit pas disponible pour des appels très courts d'une durée inférieure à 10 secondes.
     
       - **DÉGRADATION NMOS**   Niveau de dégradation audio du score NMOS, à partir de la valeur la plus élevée possible pour le codec audio utilisé. Par exemple, si la valeur de dégradation NMOS d'un appel est égale à 1,2 et que le score NMOS signalé de l'appel est égal à 3,3, le score NMOS maximal de cet appel en particulier est de 4,5 (1,2 + 3,3).
     

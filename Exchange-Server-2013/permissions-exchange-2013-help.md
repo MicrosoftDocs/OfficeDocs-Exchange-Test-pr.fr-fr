@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server, Exchange Server 2013_
+_**Sapplique à :** Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Microsoft Exchange Server 2013 comprend un large éventail d’autorisations prédéfinies, basées sur le modèle des autorisations du contrôle d’accès basé sur un rôle (RBAC), que vous pouvez utiliser de manière immédiate pour donner facilement des autorisations à vos administrateurs et utilisateurs. Vous pouvez utiliser les autorisations proposées par Exchange 2013 afin que votre nouvelle organisation soit opérationnelle rapidement.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Plusieurs fonctionnalités et concepts RBAC ne sont pas abordés dans cette rubrique, car il s'agit de fonctionnalités avancées. Si la fonctionnalité abordée dans cette rubrique ne répond pas à vos besoins et que vous souhaitez personnaliser votre modèle d'autorisations, consultez la rubrique <a href="understanding-role-based-access-control-exchange-2013-help.md">Présentation du contrôle d'accès basé sur un rôle</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Plusieurs fonctionnalités et concepts RBAC ne sont pas abordés dans cette rubrique, car il s'agit de fonctionnalités avancées. Si la fonctionnalité abordée dans cette rubrique ne répond pas à vos besoins et que vous souhaitez personnaliser votre modèle d'autorisations, consultez la rubrique <a href="understanding-role-based-access-control-exchange-2013-help.md">Présentation du contrôle d'accès basé sur un rôle</a>.
 
 
 Vous recherchez une liste de toutes les rubriques consacrées aux autorisations ? Voir Documentation relative aux autorisations.
@@ -77,18 +67,8 @@ Il faut attribuer au moins un rôle ou plus à chacun des administrateurs géran
 
 De façon à faciliter l'attribution de plusieurs rôles à un administrateur, Exchange 2013 comprend les groupes de rôles. Les groupes de rôles sont des groupes universels de sécurité (USG) spéciaux utilisés par Exchange 2013. Ils peuvent contenir des utilisateurs Active Directory, des groupes universels de sécurité et d'autres groupes de rôles. Lorsqu'un rôle est assigné à un groupe de rôles, les autorisations accordées par ce rôle s'étendent à tous les membres du groupe de rôles. Cela vous permet d'assigner de multiples rôles à de nombreux membres de groupes de rôles à la fois. Les groupes de rôles englobent généralement des domaines de gestion plus larges, comme par exemple la gestion des destinataires. Ils sont uniquement utilisés par les rôles administratifs, non par les rôles d'utilisateur final.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il est possible d'attribuer un rôle directement à un utilisateur ou un groupe universel de sécurité sans utiliser de groupe de rôle. Cependant, cette méthode d'attribution de rôle est une procédure avancée qui n'est pas abordée dans cette rubrique. Nous vous recommandons d'utiliser les groupes de rôles pour gérer les autorisations.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il est possible d'attribuer un rôle directement à un utilisateur ou un groupe universel de sécurité sans utiliser de groupe de rôle. Cependant, cette méthode d'attribution de rôle est une procédure avancée qui n'est pas abordée dans cette rubrique. Nous vous recommandons d'utiliser les groupes de rôles pour gérer les autorisations.
 
 
 La figure suivante montre la relation entre les utilisateurs, les groupes de rôles et les rôles.
@@ -116,18 +96,8 @@ Exchange 2013 comprend plusieurs groupes de rôles intégrés, chacun accordant
 <tr class="odd">
 <td><p><a href="organization-management-exchange-2013-help.md">Gestion de l’organisation</a></p></td>
 <td><p>Les administrateurs membres du groupe de rôles Gestion de l’organisation disposent d'un accès administratif sur toute l'organisation Exchange 2013 et peuvent réaliser pratiquement n'importe quelle tâche relative à un objet Exchange 2013, à quelques exceptions près, comme le rôle <code>Discovery Management</code>.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Du fait que le groupe de rôles Gestion de l’organisation est un rôle très puissant, seuls des utilisateurs ou des groupes universels de sécurité qui exécutent des tâches administratives au niveau organisationnel peuvent affecter l'intégralité de l'organisation Exchange s'ils sont membres de ce groupe de rôles.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Du fait que le groupe de rôles Gestion de l’organisation est un rôle très puissant, seuls des utilisateurs ou des groupes universels de sécurité qui exécutent des tâches administratives au niveau organisationnel peuvent affecter l'intégralité de l'organisation Exchange s'ils sont membres de ce groupe de rôles.
 
 </td>
 </tr>
@@ -219,18 +189,8 @@ Pour gérer vos autorisations à l'aide de groupes de rôles dans Exchange 2013
 
 Exchange 2013 inclut plusieurs groupes de rôles que sépare les autorisations en domaines d'administration spécifiques. Si ces groupes de rôles existants accordent les autorisations dont ont besoin vos administrateurs pour gérer votre organisation Exchange 2013, il vous suffit d'ajouter vos administrateurs comme membres des groupes de rôles adéquats. Après avoir ajouté des administrateurs à un groupe de rôles, ils peuvent gérer les fonctionnalités associées à ce groupe de rôles. Pour ajouter ou supprimer des membres dans un groupe de rôles, ouvrez le groupe de rôles dans le Centre d'administration Exchange, puis ajoutez ou supprimez des membres dans la liste des membres. Pour obtenir une liste des groupes de rôles intégrés, consultez la rubrique [Groupes de rôles intégrés](built-in-role-groups-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si un administrateur est membre de plus d'un groupe de rôles, Exchange 2013 accorde à l'administrateur toutes les permissions accordées par les groupes de rôles dont il ou elle est membre.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si un administrateur est membre de plus d'un groupe de rôles, Exchange 2013 accorde à l'administrateur toutes les permissions accordées par les groupes de rôles dont il ou elle est membre.
 
 
 Si aucun des groupes de rôles compris dans Exchange 2013 ne dispose des autorisations dont vous avez besoin, vous pouvez utiliser le Centre d'administration Exchange pour créer un groupe de rôles et ajouter les rôles possédant les autorisations dont vous avez besoin. Pour votre nouveau groupe de rôles :
@@ -249,18 +209,8 @@ Si un groupe de rôles existant dispose de certaines mais pas de toutes les auto
 
 Les groupes de rôles existants peuvent également être modifiés. Vous pouvez ajouter et supprimer des rôles dans des groupes de rôles existants, et ajouter et supprimer simultanément des membres dans ces derniers, via une boîte de dialogue du Centre d'administration Exchange semblable à celle illustrée dans la figure précédente. En ajoutant et en supprimant des rôles au sein des groupes de rôles, vous activez et désactivez des fonctionnalités administratives pour les membres de ce groupe de rôles. Pour obtenir une liste de rôles que vous pouvez ajouter à un groupe de rôles, consultez la rubrique [Rôles de gestion intégrés](built-in-management-roles-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Bien que vous puissiez modifier les rôles assignés aux groupes de rôles intégrés, nous vous recommandons de copier des groupes de rôles intégrés, de modifier la copie du groupe de rôles, puis d'ajouter des membres à la copie du groupe de rôles.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Bien que vous puissiez modifier les rôles assignés aux groupes de rôles intégrés, nous vous recommandons de copier des groupes de rôles intégrés, de modifier la copie du groupe de rôles, puis d'ajouter des membres à la copie du groupe de rôles.
 
 
 Autorisations basées sur des rôles
@@ -295,27 +245,12 @@ Si vous souhaitez attribuer différentes autorisations d'utilisateur final aux d
 
 Si vous souhaitez modifier la stratégie d'attribution de rôle par défaut, il vous faut utiliser l'environnement de ligne de commande Exchange Management Shell. Lorsque vous modifiez la stratégie d'attribution de rôle par défaut, toutes les boîtes aux lettres créées seront associées à la nouvelle stratégie d'attribution de rôle par défaut si aucune stratégie n'a été explicitement indiquée. La stratégie d'attribution de rôle associée aux boîtes aux lettres existantes ne change pas lorsque vous sélectionnez une nouvelle stratégie d'attribution de rôle par défaut.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous activez la case à cocher pour un rôle contenant des rôles enfants, les cases à cocher de ces derniers sont également activées. Si vous désactivez la case à cocher pour un rôle contenant des rôles enfants, les cases à cocher de ces derniers sont également désactivées.<br />
+> [!NOTE]
+> Si vous activez la case à cocher pour un rôle contenant des rôles enfants, les cases à cocher de ces derniers sont également activées. Si vous désactivez la case à cocher pour un rôle contenant des rôles enfants, les cases à cocher de ces derniers sont également désactivées.<br />
 Pour obtenir des informations détaillées sur les étapes de la création de stratégies d'attribution de rôles, ou apporter des modifications aux stratégies d'attribution de rôles existantes, consultez les rubriques suivantes :
-<ul>
-<li><p><a href="manage-role-assignment-policies-exchange-2013-help.md">Gérer les stratégies d’attribution des rôles</a></p></li>
-<li><p><a href="change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md">Modifier la stratégie d’attribution sur une boîte aux lettres</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> <ul>
+> <li><p><a href="manage-role-assignment-policies-exchange-2013-help.md">Gérer les stratégies d’attribution des rôles</a></p></li>
+> <li><p><a href="change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md">Modifier la stratégie d’attribution sur une boîte aux lettres</a></p></li></ul>
 
 Autorisations basées sur des rôles
 

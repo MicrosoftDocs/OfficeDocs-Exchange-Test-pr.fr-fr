@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-19_
+_**Dernière rubrique modifiée :** 2013-02-19_
 
 Dans Microsoft Exchange Server 2010, le rôle serveur de boîte aux lettres hébergeait les bases de données de dossiers publics et de boîtes aux lettres et assurait le stockage des messages électroniques. Désormais, dans Exchange Server 2013, le rôle serveur de boîte aux lettres inclut également les protocoles d'accès au client, le service de transport, les bases de données de boîtes aux lettres et les composants de messagerie unifiée.
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-10-01_
+_**Dernière rubrique modifiée :** 2014-10-01_
 
 Une base de données de récupération constitue un type de base de données de boîtes aux lettres spécial, qui vous permet de monter une base de données de boîtes aux lettres restaurée et d’en extraire les données, dans le cadre d’une opération de récupération. Un groupe de stockage de récupération vous permet de récupérer des données à partir d'une sauvegarde ou d'une copie de base de données sans interrompre l'accès des utilisateurs aux données actuelles.
 
@@ -87,16 +87,6 @@ Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives a
 
 Pour vérifier que vous avez bien récupéré les données de la boîte aux lettres, ouvrez la boîte aux lettres cible à l’aide d’Outlook ou d’Outlook Web App et vérifiez que les données récupérées sont présentes.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

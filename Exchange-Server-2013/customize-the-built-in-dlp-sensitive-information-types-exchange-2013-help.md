@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-05-26_
+_**Dernière rubrique modifiée :** 2016-05-26_
 
 Lorsque vous recherchez des informations sensibles dans un courrier électronique, vous devez décrire ces informations dans ce que l’on appelle une *règle*. La protection contre la perte de données (DLP) comprend un pack de 51 règles pour les types d’informations sensibles les plus courants que vous pouvez utiliser immédiatement. Pour utiliser ces règles, vous devez les inclure dans une stratégie. Vous voudrez peut-être ajuster ces règles intégrées pour répondre aux besoins spécifiques de votre organisation, et vous pouvez le faire en créant un type d’informations sensibles personnalisé. Cette rubrique vous montre comment personnaliser le fichier XML qui contient la collection de règles existante pour détecter un plus large éventail d’informations potentielles relatives aux cartes de crédit.
 
@@ -47,18 +47,8 @@ Pour exporter le fichier XML, vous devez utiliser Environnement de ligne de com
 
 3.  Créez un fichier au format XML contenant toutes les données en saisissant **Set-Content -path "C:\\custompath\\exportedRules.xml" -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection**. (**Set-content** est la partie de la cmdlet qui écrit le XML dans le fichier.)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Assurez-vous que vous utilisez l’emplacement de fichier dans lequel votre pack de règles est effectivement stocké. <strong>C:\custompath\</strong> est un espace réservé.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Assurez-vous que vous utilisez l’emplacement de fichier dans lequel votre pack de règles est effectivement stocké. <strong>C:\custompath\</strong> est un espace réservé.
 
 
 ## Rechercher la règle à modifier dans le fichier XML
@@ -204,18 +194,8 @@ Pour télécharger votre règle, vous devez procéder comme suit.
 
 3.  Dans Environnement de ligne de commande Exchange Management Shell ou Exchange Online PowerShell, saisissez **New-ClassificationRuleCollection -FileData (Get-Content -Path "C:\\custompath\\MyNewRulePack.xml " -Encoding Byte)**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Assurez-vous que vous utilisez l’emplacement de fichier dans lequel votre pack de règles est effectivement stocké. <strong>C:\custompath\</strong> est un espace réservé.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Assurez-vous que vous utilisez l’emplacement de fichier dans lequel votre pack de règles est effectivement stocké. <strong>C:\custompath\</strong> est un espace réservé.
 
 
 4.  Pour confirmer, saisissez **Y**, puis appuyez sur **Entrée**.

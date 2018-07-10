@@ -13,11 +13,11 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
-**Résumé :** Décrit comment utiliser l’authentification Kerberos à l’aide de serveurs d’accès au client avec équilibrage de charge dans Exchange 2013.
+**Résumé :**  Décrit comment utiliser l’authentification Kerberos à l’aide de serveurs d’accès au client avec équilibrage de charge dans Exchange 2013.
 
 Afin d’utiliser l’authentification Kerberos avec des serveurs d’accès au client avec équilibrage de charge, vous devez suivre les étapes de configuration décrites dans cet article.
 
@@ -25,32 +25,12 @@ Afin d’utiliser l’authentification Kerberos avec des serveurs d’accès au
 
 Tous les serveurs d'accès au client qui partagent les mêmes espaces de noms et URL doivent utiliser les mêmes informations d'identification de compte de service de substitution. En règle générale, il vous suffit de disposer d'un compte unique pour une forêt pour chaque version d'Exchange. *informations d'identification du compte de service de substitution* ou *informations d'identification ASA*.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2010 et Exchange 2013 ne peuvent pas partager les mêmes informations d'identification ASA. Vous devez créer des informations d'identification ASA pour Exchange 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Exchange 2010 et Exchange 2013 ne peuvent pas partager les mêmes informations d'identification ASA. Vous devez créer des informations d'identification ASA pour Exchange 2013.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Bien que les enregistrements CNAME soient pris en charge pour les espaces de noms partagés, Microsoft recommande d’utiliser des enregistrements A. Cela permet de s’assurer que le client émet correctement une demande de ticket Kerberos fondée sur le nom partagé et non sur le serveur FQDN.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Bien que les enregistrements CNAME soient pris en charge pour les espaces de noms partagés, Microsoft recommande d’utiliser des enregistrements A. Cela permet de s’assurer que le client émet correctement une demande de ticket Kerberos fondée sur le nom partagé et non sur le serveur FQDN.
 
 
 Lorsque vous configurez le compte ASA, gardez ces recommandations à l’esprit :
@@ -63,7 +43,7 @@ Lorsque vous configurez le compte ASA, gardez ces recommandations à l’esprit
 
   - **Mot de passe du compte.** Le mot de passe que vous fournissez lorsque vous créez le compte sera utilisé. Ainsi, lorsque vous créez le compte, vous devez utiliser un mot de passe complexe et veiller à ce qu’il soit conforme aux exigences de mot de passe de votre organisation.
 
-**Pour créer le compte ASA en tant que compte d’ordinateur, procédez comme suit :**
+**Pour créer le compte ASA en tant que compte d’ordinateur, procédez comme suit :** 
 
 1.  Sur un ordinateur avec jonction à un domaine, exécutez Windows PowerShell ou l’environnement de ligne de commande Exchange Management Shell.
     
@@ -75,7 +55,7 @@ Lorsque vous configurez le compte ASA, gardez ces recommandations à l’esprit
     
         New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]
     
-    **Exemple :**
+    **Exemple :** 
     
         New-ADComputer -Name EXCH2013ASA -AccountPassword (Read-Host 'Enter password' -AsSecureString) -Description 'Alternate Service Account credentials for Exchange' -Enabled:$True -SamAccountName EXCH2013ASA
     
@@ -85,7 +65,7 @@ Lorsque vous configurez le compte ASA, gardez ces recommandations à l’esprit
     
         Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
     
-    **Exemple :**
+    **Exemple :** 
     
         Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
     
@@ -298,23 +278,13 @@ Voici un exemple de la sortie qui est affichée lorsque vous exécutez la comman
 
 ## Association des noms de principaux du service (SPN) au compte ASA
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>N’associez pas les SPN avec des informations d’identification ASA jusqu’à ce que vous ayez déployé ces informations d’identification sur au moins un serveur Exchange, comme décrit précédemment dans la section Déployer les informations d'identification ASA sur le premier serveur d'accès client Exchange 2013. Dans le cas contraire, vous rencontrerez des erreurs d’authentification Kerberos.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> N’associez pas les SPN avec des informations d’identification ASA jusqu’à ce que vous ayez déployé ces informations d’identification sur au moins un serveur Exchange, comme décrit précédemment dans la section Déployer les informations d'identification ASA sur le premier serveur d'accès client Exchange 2013. Dans le cas contraire, vous rencontrerez des erreurs d’authentification Kerberos.
 
 
 Avant d’associer les SPN au compte ASA, vous devez vérifier que les SPN cibles ne sont pas déjà associés à un autre compte de la forêt. Les informations d’identification ASA doivent être le seul compte de la forêt auquel ces noms SPN sont associés. Vous pouvez vérifier qu’aucun autre compte de la forêt n’est associé aux noms de principaux du service en exécutant la commande **setspn** à partir de la ligne de commande.
 
-**Pour vérifier qu’un SPN n’est pas déjà associé à un compte dans une forêt en exécutant la commande setspn, procédez comme suit :**
+**Pour vérifier qu’un SPN n’est pas déjà associé à un compte dans une forêt en exécutant la commande setspn, procédez comme suit :** 
 
 1.  Appuyez sur **Démarrer**. Dans la zone **Recherche**, saisissez **Invite de commandes**, puis, dans la liste des résultats, sélectionnez **Invite de commandes**.
 
@@ -328,7 +298,7 @@ Avant d’associer les SPN au compte ASA, vous devez vérifier que les SPN cibl
     
     La commande ne doit retourner aucune donnée. Si elle renvoie des données, cela signifie qu’un autre compte est déjà associé au SPN. Répétez une fois cette étape pour chaque SPN que vous souhaitez associer au compte ASA.
 
-**Pour associer un SPN à des informations d'identification ASA à l’aide de la commande setspn, procédez comme suit :**
+**Pour associer un SPN à des informations d'identification ASA à l’aide de la commande setspn, procédez comme suit :** 
 
 1.  Appuyez sur **Démarrer**. Dans la zone **Recherche**, saisissez **Invite de commandes**, puis, dans la liste des résultats, sélectionnez **Invite de commandes**.
 
@@ -342,7 +312,7 @@ Avant d’associer les SPN au compte ASA, vous devez vérifier que les SPN cibl
     
     Exécutez une fois la commande suivante pour chaque SPN que vous souhaitez associer aux informations d’identification du compte ASA.
 
-**Pour vérifier que vous avez associé les noms SPN aux informations d’identification ASA à l’aide de la commande setspn, procédez comme suit :**
+**Pour vérifier que vous avez associé les noms SPN aux informations d’identification ASA à l’aide de la commande setspn, procédez comme suit :** 
 
 1.  Appuyez sur **Démarrer**. Dans la zone **Recherche**, saisissez **Invite de commandes**, puis, dans la liste des résultats, sélectionnez **Invite de commandes**.
 
@@ -378,7 +348,7 @@ Après avoir correctement configuré Kerberos et le compte ASA, vérifiez que 
 
 Le service d’hôte de service Microsoft Exchange (MSExchangeServiceHost) sur le serveur d’accès au client est chargé de la gestion des informations d’identification du compte ASA. Si ce service n’est pas en cours d’exécution, l’authentification Kerberos n’est pas possible. Par défaut, le service est configuré pour se lancer automatiquement au démarrage de l’ordinateur.
 
-**Pour vérifier que le service d’hôte de service Microsoft Exchange est démarré, procédez comme suit :**
+**Pour vérifier que le service d’hôte de service Microsoft Exchange est démarré, procédez comme suit :** 
 
 1.  Cliquez sur **Démarrer**, entrez **services.msc** puis sélectionnez **services.msc** dans la liste.
 
@@ -390,7 +360,7 @@ Le service d’hôte de service Microsoft Exchange (MSExchangeServiceHost) sur
 
 Lorsque vous avez configuré le compte ASA sur chaque serveur d’accès au client, vous avez exécuté la cmdlet **set-ClientAccessServer**. Une fois que vous avez exécuté cette cmdlet, vous pouvez utiliser les journaux pour connaître les connexions Kerberos ayant fonctionné.
 
-**Pour vérifier que Kerberos fonctionne correctement à l’aide du fichier journal HttpProxy, procédez comme suit :**
+**Pour vérifier que Kerberos fonctionne correctement à l’aide du fichier journal HttpProxy, procédez comme suit :** 
 
 1.  Dans un éditeur de texte, accédez au dossier où est stocké le journal HttpProxy. Par défaut, le journal est stocké dans le dossier suivant :
     

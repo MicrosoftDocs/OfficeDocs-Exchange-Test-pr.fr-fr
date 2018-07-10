@@ -13,26 +13,16 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-29_
+_**Dernière rubrique modifiée :** 2013-04-29_
 
 Vous pouvez utiliser l'Assistant nouveau certificat Exchange dans le CAE ou le Shell pour créer des certificats auto-signés ou les demandes de certificats pour un certificat interne infrastructure à clé publique (PKI). De messagerie unifiée (MU), vous pouvez utiliser une de ces certificats pour le service de messagerie unifiée de Microsoft Exchange et les services Microsoft Exchange Unified Messaging routeur d'appels. Vous pouvez utiliser le même certificat pour les deux services ou un certificat différent pour chaque service. Vous pouvez également acheter et importer un certificat commercial tiers pour les services de messagerie unifiée. Si vous utilisez un certificat auto-signé pour la messagerie unifiée, vous devrez inclure le nom des serveurs de boîtes aux lettres et d'accès au Client dans le nom du sujet (SAN).
 
 Par défaut, lorsque vous installez Exchange Server 2013, deux certificats auto-signés sont créés : **certificat d'authentification serveur Microsoft Exchange (Microsoft Exchange Server Auth Certificate)** et **Microsoft Exchange**. Le certificat auto-signé **Microsoft Exchange** peut être utilisé par la messagerie unifiée pour chiffrer des données, mais vous devez l'attribuer aux services de messagerie unifiée et de routeur d'appels de messagerie unifiée. Après avoir attribué le certificat aux services de messagerie unifiée, vous pouvez le copier et l'importer dans les passerelles VoIP, PBX IP, et PBX compatibles SIP. Toutefois, au lieu d'utiliser les certificats auto-signés par défaut, il se peut que vous deviez en créer un spécialement pour la messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les certificats auto-signés ne peut pas être utilisés lorsque vous êtes intégrer la messagerie unifiée de Microsoft Lync Server.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Les certificats auto-signés ne peut pas être utilisés lorsque vous êtes intégrer la messagerie unifiée de Microsoft Lync Server.
 
 
 Pour découvrir d'autres tâches de gestion relatives à la gestion des certificats pour la messagerie unifiée, consultez la rubrique [Déployer des certificats pour les procédures de la messagerie unifiée](deploying-certificates-for-um-procedures-exchange-2013-help.md).
@@ -45,18 +35,8 @@ Pour découvrir d'autres tâches de gestion relatives à la gestion des certific
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -113,18 +93,8 @@ Cet exemple montre comment créer une demande de certificat Exchange pour un ser
 
 6.  Vérifiez que les domaines inclus sont corrects, puis cliquez sur **Terminer**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous utilisez le CAE pour créer un certificat auto-signé, vous n'êtes invité à activer des services pour le certificat. Une fois que le certificat a été créé, vous pouvez utiliser le CAE ou l'applet de commande <strong>Enable-ExchangeCertificate</strong> dans le Shell pour activer les services Exchange. Pour plus d'informations sur comment assigner un certificat pour les services de messagerie unifiée, consultez la rubrique <a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assigner un certificat pour les services de messagerie unifiée et de routeur d’appels UM</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous utilisez le CAE pour créer un certificat auto-signé, vous n'êtes invité à activer des services pour le certificat. Une fois que le certificat a été créé, vous pouvez utiliser le CAE ou l'applet de commande <strong>Enable-ExchangeCertificate</strong> dans le Shell pour activer les services Exchange. Pour plus d'informations sur comment assigner un certificat pour les services de messagerie unifiée, consultez la rubrique <a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assigner un certificat pour les services de messagerie unifiée et de routeur d’appels UM</a>.
 
 
 ## Utiliser l'environnement de ligne de commande pour créer un certificat auto-signé pour la messagerie unifiée
@@ -133,16 +103,6 @@ Cet exemple montre comment créer un certificat auto-signé Exchange pour un ser
 
     New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous spécifiez les services à activer en utilisant le paramètre <em>Services</em> , vous serez invité à affecter ces services. Dans cet exemple, vous devrez faire pour activer le certificat pour les services de messagerie unifiée et de routeur d'appels UM. Pour plus d'informations sur la façon d'activer un certificat pour les services, voir <a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assigner un certificat pour les services de messagerie unifiée et de routeur d’appels UM</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Lorsque vous spécifiez les services à activer en utilisant le paramètre <em>Services</em> , vous serez invité à affecter ces services. Dans cet exemple, vous devrez faire pour activer le certificat pour les services de messagerie unifiée et de routeur d'appels UM. Pour plus d'informations sur la façon d'activer un certificat pour les services, voir <a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assigner un certificat pour les services de messagerie unifiée et de routeur d’appels UM</a>.
 

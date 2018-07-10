@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-14_
+_**Dernière rubrique modifiée :** 2015-01-14_
 
 Cette rubrique fournit des solutions et des informations à propos des erreurs courantes qui peuvent se produire lorsque vous utilisez le script RollAlternateServiceAccountPassword.ps1.
 
@@ -59,18 +59,8 @@ Si le serveur est hors service pendant une courte durée seulement et que vous n
 
 Après la suppression du service d’accès au client RPC, le serveur se sera pas renvoyé comme membre du groupe par [Get-ClientAccessArray](https://technet.microsoft.com/fr-fr/library/dd297976\(v=exchg.150\)) et le script ne le ciblera pas. Dès que le serveur est à nouveau fonctionnel, vous pouvez rajouter le service d’accès au client RPC à l’aide de la cmdlet **New-RpcClientAccess**. Lorsque vous aurez rajouté le service d’accès au client RPC, assurez-vous de redémarrer le service Carnet d’adresses Microsoft Exchange sur le serveur concerné.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avant de supprimer le service d’accès au client RPC d’un serveur, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/dd298151(v=exchg.150)">Remove-RPCClientAccess</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Avant de supprimer le service d’accès au client RPC d’un serveur, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/dd298151(v=exchg.150)">Remove-RPCClientAccess</a>.
 
 
 ## Pour plus d’informations

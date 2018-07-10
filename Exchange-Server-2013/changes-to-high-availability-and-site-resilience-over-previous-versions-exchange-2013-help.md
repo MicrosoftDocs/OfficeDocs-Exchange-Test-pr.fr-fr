@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013 SP1_
+_**Sapplique à :** Exchange Server 2013 SP1_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Exchange 2013 utilise des groupes de disponibilité de base de données et des copies de bases de données de boîtes aux lettres, en plus d’autres fonctionnalités comme la récupération d’élément unique, les stratégies de rétention et les copies de bases de données retardées pour fournir la haute disponibilité, la résilience de site et la protection des données natives d’Exchange. La plateforme de haute disponibilité, la banque d’informations Exchange et le moteur de stockage extensible (ESE) ont tous été améliorés pour offrir une plus grande disponibilité, une gestion plus facile et une réduction des coûts. Ces améliorations sont les suivantes :
 

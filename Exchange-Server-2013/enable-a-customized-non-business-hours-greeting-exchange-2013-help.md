@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-30_
+_**Dernière rubrique modifiée :** 2012-11-30_
 
 Vous pouvez activer un message d’accueil personnalisé en dehors des heures d’ouverture pour un standard automatique de messagerie unifiée. Le message d’accueil en dehors des heures d’ouverture est la première chose que l’appelant entend lorsqu’un standard automatique de messagerie unifiée répond à son appel en dehors des heures d’ouverture. Vous souhaitez certainement personnaliser le message d’accueil.
 
@@ -39,18 +39,8 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -63,18 +53,8 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
 
 3.  Sur la page **Standard automatique de messagerie unifiée**, \> **Message d’accueil**, sous **Message d’accueil en dehors des heures d’ouverture**, cliquez sur **Modifier**, puis cliquez sur **Parcourir** pour rechercher le fichier de message d’accueil personnalisé pour la période en dehors des heures d’ouverture que vous avez créé avant de démarrer cette procédure.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le fichier que vous utilisez pour le message d’accueil doit être un fichier .wav ou .wma.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le fichier que vous utilisez pour le message d’accueil doit être un fichier .wav ou .wma.
 
 
 4.  Après avoir localisé le fichier, cliquez sur **Ouvrir**, puis sur **Enregistrer**.

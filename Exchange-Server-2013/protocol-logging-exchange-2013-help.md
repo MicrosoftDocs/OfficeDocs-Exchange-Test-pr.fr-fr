@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 L'enregistrement dans le journal de protocole enregistre les conversations SMTP entre les serveurs de messagerie dans le cadre de la remise des messages. Ces conversations SMTP se produisent sur les connecteurs d'envoi et de réception disponibles dans le service de transport frontal sur les serveurs d'accès au client, le service de transport sur ​​des serveurs de boîtes aux lettres et le service de transport de boîtes aux lettres sur ​​des serveurs de boîtes aux lettres. Vous pouvez utiliser l'enregistrement dans le journal de protocole pour identifier les problèmes de flux de messagerie.
 

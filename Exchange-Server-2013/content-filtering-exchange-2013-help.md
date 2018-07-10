@@ -13,22 +13,12 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le 1er novembre 2016, Microsoft a cessé de produire des mises à jour des définitions de courrier indésirable pour les filtres SmartScreen dans Exchange et Outlook. Les définitions de courrier indésirable SmartScreen existantes restent en place, mais leur efficacité se dégradera probablement au cours du temps. Pour plus d’informations, voir l’article relatif à l’<a href="https://go.microsoft.com/fwlink/p/?linkid=835894">arrêt de la prise en charge de SmartScreen dans Outlook et Exchange</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le 1er novembre 2016, Microsoft a cessé de produire des mises à jour des définitions de courrier indésirable pour les filtres SmartScreen dans Exchange et Outlook. Les définitions de courrier indésirable SmartScreen existantes restent en place, mais leur efficacité se dégradera probablement au cours du temps. Pour plus d’informations, voir l’article relatif à l’<a href="https://go.microsoft.com/fwlink/p/?linkid=835894">arrêt de la prise en charge de SmartScreen dans Outlook et Exchange</a>.
 
 
 L’agent de filtrage de contenu évalue les messages électroniques entrants et évalue la probabilité qu’un message entrant est légitime ou du spam. Contrairement à nombreuses autres technologies de filtrage, l’agent de filtrage de contenu utilise les caractéristiques d’un échantillon statistiquement significatif de messages électroniques. L’inclusion de messages valables dans cet échantillon réduit le risque d’erreurs. Étant donné que l’agent de filtrage de contenu reconnaît les caractéristiques des messages légitimes, spam, sa précision est augmentée. Mises à jour de l’agent de filtrage de contenu sont disponibles régulièrement par le biais de [Microsoft Update](https://go.microsoft.com/fwlink/p/?linkid=54836).
@@ -57,18 +47,8 @@ Par exemple, vous pouvez déterminer que les messages dont la valeur de contrôl
 
 Vous pouvez ajuster le comportement de seuil de probabilité de courrier indésirable en attribuant différentes valeurs de contrôle d'accès SCL à chacune de ces actions. Pour plus d'informations sur l'ajustement du seuil de probabilité de courrier indésirable en fonction des besoins de votre organisation et la définition de seuils SCL pour chaque destinataire, consultez la rubrique [Niveau de confiance du courrier indésirable](spam-confidence-level-threshold-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les messages dont la taille excède 11 Mo ne sont pas analysés par le filtre de messages intelligent. Le filtre du contenu laisse passer les messages sans les analyser.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les messages dont la taille excède 11 Mo ne sont pas analysés par le filtre de messages intelligent. Le filtre du contenu laisse passer les messages sans les analyser.
 
 
 ## Phrases d’autorisation et d’interdiction
@@ -99,18 +79,8 @@ Dans Exchange 2013, l’agent de filtrage du contenu utilise les listes des exp
 
 Vous configurez l’agent de filtrage du contenu à l’aide de l’environnement de ligne de commande Exchange Management Shell.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les modifications de la configuration que vous apportez à l’agent de filtrage du contenu dans l’environnement de ligne de commande Exchange Management Shell ne sont effectuées que sur l’ordinateur local. Si l’agent de filtrage du contenu est exécuté sur plusieurs serveurs Exchange de votre organisation, vous devez apporter les modifications de la configuration du filtrage de contenu sur chaque ordinateur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les modifications de la configuration que vous apportez à l’agent de filtrage du contenu dans l’environnement de ligne de commande Exchange Management Shell ne sont effectuées que sur l’ordinateur local. Si l’agent de filtrage du contenu est exécuté sur plusieurs serveurs Exchange de votre organisation, vous devez apporter les modifications de la configuration du filtrage de contenu sur chaque ordinateur.
 
 
 L’agent de filtrage du contenu dépend des mises à jour pour déterminer si un message n’est pas indésirable et peut être remis en toute confiance. Ces mises à jour contiennent des données sur l’hameçonnage de sites Web, l’heuristique de blocage du courrier indésirable Microsoft SmartScreen et d’autres mises à jour du filtre de messages intelligent. Les mises à jour du filtrage du contenu comprennent environ 6 Mo de données utiles pour des périodes plus longues que les autres données de mise à jour du blocage du courrier indésirable.

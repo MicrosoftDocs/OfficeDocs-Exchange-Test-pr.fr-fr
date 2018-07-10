@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Vous pouvez importer les fichiers audio contenant des messages d'accueil personnalisés, des annonces, des menus et des messages d'assistance vocaux de la messagerie unifiée Exchange 2007 vers la messagerie unifiée Exchange 2013. À l'aide d'un script de l'environnement de ligne de commande Exchange Management Shell, les messages d'assistance vocaux sont importés dans une boîte aux lettres système Exchange nommée {e0dc1c29-89c3-4034-b678-e6c29d823ed9}, créée lors de l'installation de Microsoft Exchange 2013. Cette boîte aux lettres système est utilisée dans la messagerie unifiée pour stocker les messages d'accueil, les annonces, les menus, les messages d'assistance vocaux et les rapports de messagerie unifiée du plan de numérotation et du standard automatique.
 
@@ -29,18 +29,8 @@ Le script MigrateUMCustomPrompts.ps1 vous permet de migrer une copie de l'ensemb
 
 Par défaut, le script MigrateUMCustomPrompts.ps1 est situé dans le dossier \<Program Files\>\\Microsoft\\Exchange Server\\V15\\Scripts d'un serveur Exchange 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le script MigrateUMCustomPrompts.ps1 est inclus dans Exchange 2013. Il doit être exécuté sur un serveur de boîtes aux lettres Exchange 2013 dans la même organisation avec vos serveurs de messagerie unifiée Exchange 2007.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le script MigrateUMCustomPrompts.ps1 est inclus dans Exchange 2013. Il doit être exécuté sur un serveur de boîtes aux lettres Exchange 2013 dans la même organisation avec vos serveurs de messagerie unifiée Exchange 2007.
 
 
 Pour découvrir d'autres tâches de gestion relatives aux plans de numérotation de messagerie unifiée, consultez la rubrique [Procédures de plan de numérotation de messagerie unifiée](um-dial-plan-procedures-exchange-2013-help.md).
@@ -61,18 +51,8 @@ Pour découvrir d'autres tâches de gestion relatives aux standards automatiques
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Utiliser le script MigrateUMCustomPrompts.ps1 pour migrer une copie de tous les messages d'assistance vocaux personnalisés pour les plans de numérotation et les standards automatiques de messagerie unifiée

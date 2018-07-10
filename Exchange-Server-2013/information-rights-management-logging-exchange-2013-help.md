@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Dans Microsoft Exchange Server 2013, les opérations de gestion des droits relatifs à l'information (IRM) sont consignées dans des journaux IRM. Les journaux IRM vous permettent de contrôler et de résoudre les problèmes d’interaction entre le client RMS (Rights Management Services) sur un serveur Exchange 2013 et le cluster AD RMS (Active Directory Rights Management Services) dans votre organisation.
 

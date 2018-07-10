@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-06-16_
+_**Dernière rubrique modifiée :** 2016-06-16_
 
 Un domaine accepté est un espace de noms SMTP quel qu’il soit pour lequel une organisation Microsoft Exchange Server 2013 envoie ou reçoit du courrier électronique. Les domaines acceptés incluent les domaines pour lesquels l’organisation Exchange fait autorité. Une organisation Exchange fait autorité lorsqu’elle gère la remise des messages pour les destinataires dans le domaine accepté. Les domaines acceptés incluent également les domaines pour lesquels l’organisation Exchange reçoit des messages et les relaie vers un serveur de messagerie situé en dehors de l’organisation pour la remise au destinataire.
 
@@ -39,18 +39,8 @@ Les domaines acceptés sont configurés en tant que paramètres globaux pour l�
 
 Il existe trois types de domaines acceptés : domaines faisant autorité, relais internes et relais externes. Ces types de domaines acceptés sont décrits dans les sections suivantes.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous disposez d’un serveur de transport Edge abonné dans votre réseau de périmètre, vous configurez les domaines acceptés sur un serveur de boîtes aux lettres dans votre organisation Exchange. La configuration des domaines acceptés est répliquée sur le serveur de transport Edge lors de la synchronisation EdgeSync. Pour plus d’informations, consultez la rubrique <a href="edge-subscriptions-exchange-2013-help.md">Abonnements Edge</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous disposez d’un serveur de transport Edge abonné dans votre réseau de périmètre, vous configurez les domaines acceptés sur un serveur de boîtes aux lettres dans votre organisation Exchange. La configuration des domaines acceptés est répliquée sur le serveur de transport Edge lors de la synchronisation EdgeSync. Pour plus d’informations, consultez la rubrique <a href="edge-subscriptions-exchange-2013-help.md">Abonnements Edge</a>.
 
 
 ## Domaines faisant autorité

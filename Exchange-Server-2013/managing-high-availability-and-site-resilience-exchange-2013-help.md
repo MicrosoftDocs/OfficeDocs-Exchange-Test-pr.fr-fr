@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-05_
+_**Dernière rubrique modifiée :** 2012-11-05_
 
 Après avoir créé, validé et déployé une solution de haute disponibilité ou de résilience de site Microsoft Exchange Server 2013, la solution passe de la phase de déploiement à la phase opérationnelle du cycle de vie de la solution globale. La phase opérationnelle se compose de plusieurs tâches. Toutes les tâches sont liées à l’un des domaines suivants : groupes de disponibilité de base de données (DAG), copies de base de données de boîte aux lettres, réalisation de la surveillance proactive, et gestion des switchovers et des basculements.
 

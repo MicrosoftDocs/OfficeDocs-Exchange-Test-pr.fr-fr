@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-14_
+_**Dernière rubrique modifiée :** 2015-01-14_
 
 Vous pouvez afficher, modifier ou supprimer des stratégies de protection contre la perte de données (DLP) dans Microsoft Exchange, via le Centre d'administration Exchange (CAE) ou l'environnement de ligne de commande Exchange Management Shell.
 
@@ -31,31 +31,18 @@ Pour plus d'informations sur l'environnement de ligne de commande Exchange Manag
 
   - Pour toute stratégie DLP, vous pouvez sélectionner l'un des trois modes :
     
-      -  
-        **Appliquer**   Les règles au sein de la stratégie sont évaluées pour l'ensemble des messages et des types de fichiers pris en charge. Le flux de messagerie peut être interrompu si des données remplissant les conditions de la stratégie sont détectées. Toutes les actions décrites au sein de la stratégie sont entreprises.
+      -    **Appliquer**   Les règles au sein de la stratégie sont évaluées pour l'ensemble des messages et des types de fichiers pris en charge. Le flux de messagerie peut être interrompu si des données remplissant les conditions de la stratégie sont détectées. Toutes les actions décrites au sein de la stratégie sont entreprises.
     
-      -  
-        **Tester la stratégie DLP avec des conseils de stratégie**   Les règles au sein de la stratégie sont évaluées pour l'ensemble des messages et des types de fichiers pris en charge. Le flux de messagerie ne sera pas interrompu si des données remplissant les conditions de la stratégie sont détectées. Autrement dit, les messages ne sont pas bloqués. Si des conseils de stratégie sont configurés, ils apparaissent aux utilisateurs.
+      -    **Tester la stratégie DLP avec des conseils de stratégie**   Les règles au sein de la stratégie sont évaluées pour l'ensemble des messages et des types de fichiers pris en charge. Le flux de messagerie ne sera pas interrompu si des données remplissant les conditions de la stratégie sont détectées. Autrement dit, les messages ne sont pas bloqués. Si des conseils de stratégie sont configurés, ils apparaissent aux utilisateurs.
     
-      -  
-        **Tester la stratégie DLP sans les conseils de stratégie**   Les règles au sein de la stratégie sont évaluées pour l'ensemble des messages et des types de fichiers pris en charge. Le flux de messagerie ne sera pas interrompu si des données remplissant les conditions de la stratégie sont détectées. Autrement dit, les messages ne sont pas bloqués. Si des conseils de stratégie sont configurés, ils ne sont pas visibles pour les utilisateurs.
+      -    **Tester la stratégie DLP sans les conseils de stratégie**   Les règles au sein de la stratégie sont évaluées pour l'ensemble des messages et des types de fichiers pris en charge. Le flux de messagerie ne sera pas interrompu si des données remplissant les conditions de la stratégie sont détectées. Autrement dit, les messages ne sont pas bloqués. Si des conseils de stratégie sont configurés, ils ne sont pas visibles pour les utilisateurs.
 
   - Une règle individuelle au sein d'une stratégie DLP peut avoir ses propres paramètres de mode. Quand le mode d'une stratégie diffère du mode d'une règle au sein de cette stratégie, la configuration de la règle est prioritaire et sera évaluée conformément à son mode.
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -72,18 +59,8 @@ Vous pouvez avoir besoin d'afficher les règles et actions d'une stratégie DLP
 
 3.  Dans la page **Modifier la stratégie DLP**, cliquez sur **Règles**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez créer une stratégie DLP et la laisser en mode non activé ou désactivé. Dans ce mode, la stratégie concernée n'est pas appliquée et vous pouvez modifier tous les prédicats, actions et valeurs associés à ses règles avant de la tester et de commencer à l'appliquer.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous pouvez créer une stratégie DLP et la laisser en mode non activé ou désactivé. Dans ce mode, la stratégie concernée n'est pas appliquée et vous pouvez modifier tous les prédicats, actions et valeurs associés à ses règles avant de la tester et de commencer à l'appliquer.
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour afficher les détails dans une stratégie DLP existante

@@ -13,22 +13,12 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous avez besoin d’aide concernant les notifications d’échec de remise dans Office 365 ou Exchange Online, voir <a href="https://go.microsoft.com/fwlink/p/?linkid=524931">Envoyer les notifications d’échec de remise par courrier électronique dans Office 365</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous avez besoin d’aide concernant les notifications d’échec de remise dans Office 365 ou Exchange Online, voir <a href="https://go.microsoft.com/fwlink/p/?linkid=524931">Envoyer les notifications d’échec de remise par courrier électronique dans Office 365</a>.
 
 
 Quand un problème de remise de message survient, Exchange Server 2013 envoie une notification d’état de remise à l’expéditeur du message. Ces messages générés par le système sont également appelés notifications de non-remise. Ils contiennent un code d’erreur, les détails techniques sur le problème et parfois les étapes de dépannage pour l’expéditeur du message. Les messages de notification d’échec de remise sont un type courant de notification d’état. Cette rubrique destinée aux administrateurs de messagerie décrit les causes possibles et les solutions pour de nombreux codes d’état de notification d’échec de remise. Elle explique également comment lire et interpréter les messages de notification d’échec de remise.

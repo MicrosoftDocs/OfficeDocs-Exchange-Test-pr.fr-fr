@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 L’agent ID de l’expéditeur est un agent anti-spam disponible dans Microsoft Exchange Server 2013. Cet agent ID de l’expéditeur se base sur l’en-tête SMTP RECEIVED et une requête au service DNS du système d’envoi pour déterminer l’action éventuelle à appliquer à un message entrant.
 

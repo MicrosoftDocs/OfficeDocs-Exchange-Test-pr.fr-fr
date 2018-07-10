@@ -13,26 +13,16 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez configurer la longueur minimale du code confidentiel pour vos utilisateurs d'Outlook Voice Access à extension messagerie unifiée. Les paramètres de code confidentiel que vous configurez dans une stratégie de boîte aux lettres de messagerie unifiée sont appliqués à tous les utilisateurs à extension messagerie unifiée associés à la stratégie de boîte aux lettres de messagerie unifiée.
 
 Outlook Voice Access permet aux utilisateurs à extension messagerie unifiée d'accéder à leurs informations de messagerie vocale et électronique, ainsi qu'à leurs informations de calendrier et de contact personnelles qui se trouvent dans leur boîte aux lettres. Toutefois, avant de pouvoir accéder à leur boîte aux lettres, ils doivent entrer un code confidentiel pour s'authentifier auprès du système de messagerie vocale.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous modifiez la valeur de longueur minimale du code confidentiel, pour pouvoir continuer, les utilisateurs actuels d'Outlook Voice Access sont invités à entrer un nouveau code confidentiel respectant le nouveau nombre minimal de chiffres. La valeur par défaut est 6.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous modifiez la valeur de longueur minimale du code confidentiel, pour pouvoir continuer, les utilisateurs actuels d'Outlook Voice Access sont invités à entrer un nouveau code confidentiel respectant le nouveau nombre minimal de chiffres. La valeur par défaut est 6.
 
 
 Pour découvrir d'autres tâches de gestion concernant la sécurité d'Outlook Voice Access par code confidentiel, consultez la rubrique [Procédures de sécurité de code confidentiel](pin-security-procedures-exchange-2013-help.md).
@@ -49,18 +39,8 @@ Pour découvrir d'autres tâches de gestion concernant la sécurité d'Outlook V
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

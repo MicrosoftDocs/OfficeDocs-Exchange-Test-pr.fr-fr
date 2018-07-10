@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**Dernière rubrique modifiée :** 2013-03-30_
+_**Dernière rubrique modifiée :**  2013-03-30_
 
 Nous allons commencer par aborder l'importation du pack d'administration dans votre déploiement SCOM.
 

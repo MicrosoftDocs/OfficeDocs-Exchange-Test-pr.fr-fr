@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Par défaut, les répertoires de collecte et de relecture existent sur chaque serveur de boîtes aux lettres Microsoft Exchange Server 2013 ou serveur de transport Edge. Les fichiers de message électronique correctement mis en forme que vous copiez dans le répertoire de collecte ou de relecture sont soumis à des fins de remise. Le répertoire de collecte est utilisé par des administrateurs pour tester le flux de messagerie ou par des applications qui doivent créer et soumettre leurs propres messages. Le répertoire de relecture reçoit des messages de serveurs de passerelle étrangers et peut servir à déposer de nouveau des messages exportés par les administrateurs à partir des files d'attente de serveurs Exchange.
 
@@ -122,18 +122,8 @@ Le répertoire de collecte supprime les champs d'en-tête de message suivants de
 
   - `Bcc`
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Toutes les adresses de messagerie figurant dans les champs <code>Bcc</code> facultatifs de l'en-tête du message sont correctement traitées. Une fois les destinataires <code>Bcc</code> promus comme destinataires de l'enveloppe de message invisibles, ils sont supprimés de l'en-tête de message afin de protéger leur identité. Si un message contient uniquement des destinataires <code>Bcc</code>, la valeur <strong>Undisclosed Recipients</strong> est ajoutée au champ <code>To</code> dans l'en-tête du message.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Toutes les adresses de messagerie figurant dans les champs <code>Bcc</code> facultatifs de l'en-tête du message sont correctement traitées. Une fois les destinataires <code>Bcc</code> promus comme destinataires de l'enveloppe de message invisibles, ils sont supprimés de l'en-tête de message afin de protéger leur identité. Si un message contient uniquement des destinataires <code>Bcc</code>, la valeur <strong>Undisclosed Recipients</strong> est ajoutée au champ <code>To</code> dans l'en-tête du message.
 
 
 Le répertoire de collecte ajoute son propre champ d'en-tête `Received` dans un message dans le cadre du processus de dépôt du message. Le champ d'en-tête `Received` est appliqué selon le format suivant.
@@ -170,38 +160,18 @@ Les champs d'en-tête X décrits dans la liste suivante sont obligatoires pour l
     
         X-Sender: <bob@fabrikam.com> BODY=7bit RET=HDRS ENVID=12345ABCD auth=<someAuth>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Ces paramètres sont des valeurs d'enveloppe de message habituellement générées par le serveur d'envoi. Les fichiers de messages exportés contiennent des paramètres semblables.<br />
-    <code>RET</code> indique si le message entier ou seuls les en-têtes doivent être renvoyés à l'expéditeur en cas de non-remise du message. <code>RET</code> peut avoir la valeur <code>HDRS</code> ou <code>FULL</code>. <code> ENVID</code> est un identificateur d'enveloppe de message. <code>BODY</code> spécifie le codage du texte du message. <code>auth</code> spécifie un mécanisme d'authentification pour le serveur de messagerie, comme décrit dans la spécification RFC 2554.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Ces paramètres sont des valeurs d'enveloppe de message habituellement générées par le serveur d'envoi. Les fichiers de messages exportés contiennent des paramètres semblables.
+    > <code>RET</code> indique si le message entier ou seuls les en-têtes doivent être renvoyés à l'expéditeur en cas de non-remise du message. <code>RET</code> peut avoir la valeur <code>HDRS</code> ou <code>FULL</code>. <code> ENVID</code> est un identificateur d'enveloppe de message. <code>BODY</code> spécifie le codage du texte du message. <code>auth</code> spécifie un mécanisme d'authentification pour le serveur de messagerie, comme décrit dans la spécification RFC 2554.
 
 
   - **X-Receiver**   Cet en-tête X remplace le champ d'en-tête de message `To` obligatoire dans un message SMTP classique. Au moins un champ `X-Receiver` doit contenir une adresse de messagerie. Plusieurs champs d'en-tête `X-Receiver` sont autorisés pour plusieurs destinataires. Le répertoire de relecture ignore les champs d'en-tête de message `To` s'ils sont présents, même si le client de messagerie du destinataire affiche les valeurs des champs d'en-tête de message `To` comme expéditeurs du message. D'autres paramètres facultatifs peuvent figurer dans les champs `X-Receiver`, comme le montre l'exemple suivant.
     
         X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Ces paramètres sont des valeurs d'enveloppe de message habituellement générées par le serveur d'envoi. Les fichiers de messages exportés contiennent des paramètres semblables. Ces paramètres sont liés aux messages de notification d'état de remise (DNS), comme décrit dans la spécification RFC 1891.<br />
-    <code>NOTIFY</code> peut avoir la valeur <code>NEVER</code>, <code>DELAY</code> ou <code>FAILURE</code>. <code>ORcpt</code> préserve le destinataire d'origine du message.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Ces paramètres sont des valeurs d'enveloppe de message habituellement générées par le serveur d'envoi. Les fichiers de messages exportés contiennent des paramètres semblables. Ces paramètres sont liés aux messages de notification d'état de remise (DNS), comme décrit dans la spécification RFC 1891.
+    > <code>NOTIFY</code> peut avoir la valeur <code>NEVER</code>, <code>DELAY</code> ou <code>FAILURE</code>. <code>ORcpt</code> préserve le destinataire d'origine du message.
 
 
 Les champs d'en-tête X décrits dans la liste suivante sont facultatifs pour les fichiers de messages du répertoire de relecture :
@@ -269,36 +239,16 @@ Un fichier de message copié dans le répertoire de collecte ou de relecture peu
 
   - **Échecs de remise**   Un fichier de message correctement mis en forme et associé à un expéditeur valide qui ne peut pas être correctement déposé pour remise génère une notification d'échec de remise (NDR). Un contenu dont la mise en forme est incorrecte ou des violations de restrictions appliquées aux messages du répertoire de collecte peuvent également générer une notification d'échec de remise. Quand une notification d'échec de remise (NDR) est générée durant le traitement d'un message, le fichier de message d'origine est joint au message NDR, puis supprimé du répertoire de collecte ou de relecture.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>La remise d'un message correctement mis en forme déposé dans le pipeline de transport peut échouer ultérieurement. Le message est alors renvoyé à l'expéditeur, accompagné d'une NDR. Ce type de défaillance peut être dû à des problèmes de transmission non liés aux répertoires de collecte ou de relecture, tels qu'une défaillance d'un serveur de messagerie ou un problème de routage sur le chemin de remise du message.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > La remise d'un message correctement mis en forme déposé dans le pipeline de transport peut échouer ultérieurement. Le message est alors renvoyé à l'expéditeur, accompagné d'une NDR. Ce type de défaillance peut être dû à des problèmes de transmission non liés aux répertoires de collecte ou de relecture, tels qu'une défaillance d'un serveur de messagerie ou un problème de routage sur le chemin de remise du message.
 
 
   - **Message incorrect**   Un message classé comme *message incorrect* présente des problèmes graves qui empêchent le dépôt du message en vue de sa remise par le répertoire de collecte ou de relecture. Un problème de message incorrect peut également survenir lorsque le message est correctement mis en forme mais que les destinataires ne sont pas valides et qu'un message de notification d'échec de remise ne peut pas être envoyé à l'expéditeur car ce dernier n'est pas valide.
     
     Les fichiers de messages identifiés comme messages incorrects sont conservés dans le répertoire de collecte ou de relecture et renommés de *\<nom\_fichier\>*.eml en *\<nom\_fichier\>*.bad. Si le fichier *\<nom\_fichier\>*.bad existe déjà, le fichier est renommé *\<nom\_fichier\>\<date\_heure\>*.bad. Si le répertoire de collecte ou de relecture contient des messages incorrects, une erreur est générée dans le journal des événements, mais les mêmes messages incorrects ne génèrent pas d'erreurs répétées dans le journal des événements.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Composez et enregistrez toujours les fichiers de messages dans un autre emplacement avant de les copier dans le répertoire de collecte pour remise. Le répertoire de collecte est interrogé toutes les cinq secondes pour identifier la présence de nouveaux messages. Par conséquent, si vous tentez de composer et d'enregistrer les fichiers de messages dans le répertoire de collecte proprement dit, ce dernier peut essayer de traiter les fichiers de messages avant que vous ayez terminé de les composer.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Composez et enregistrez toujours les fichiers de messages dans un autre emplacement avant de les copier dans le répertoire de collecte pour remise. Le répertoire de collecte est interrogé toutes les cinq secondes pour identifier la présence de nouveaux messages. Par conséquent, si vous tentez de composer et d'enregistrer les fichiers de messages dans le répertoire de collecte proprement dit, ce dernier peut essayer de traiter les fichiers de messages avant que vous ayez terminé de les composer.
 
 
 Retour au début

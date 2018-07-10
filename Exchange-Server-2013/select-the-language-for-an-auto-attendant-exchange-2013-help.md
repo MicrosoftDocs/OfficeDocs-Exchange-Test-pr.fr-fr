@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez configurer le paramètre de langue d'invite par défaut sur un standard automatique de messagerie unifiée. Le paramètre de langue disponible sur un standard automatique de messagerie unifiée vous permet de configurer la langue d'invite par défaut sur le standard automatique. Lorsque vous utilisez les invites système par défaut pour le standard automatique, il s'agit de la langue que l'appelant entend lorsque le standard automatique répond à l'appel entrant. Ce paramètre de langue affecte seulement les invites système par défaut qui sont fournies après que vous avez installé le serveur de boîtes aux lettres qui exécute le service de messagerie unifiée Microsoft Exchange. Ce paramètre est sans effet sur les invites personnalisées configurées sur un standard automatique. Les langues disponibles sont basées sur les modules linguistiques de messagerie unifiée installés sur le serveur de boîtes aux lettres.
 
@@ -35,18 +35,8 @@ Pour les tâches supplémentaires concernant les modules linguistiques de messag
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

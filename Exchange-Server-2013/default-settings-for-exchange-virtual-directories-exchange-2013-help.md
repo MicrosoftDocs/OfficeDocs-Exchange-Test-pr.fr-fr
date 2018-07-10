@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Exchange Server 2013 configure automatiquement plusieurs répertoires virtuels IIS (Internet Information Services) au cours de l'installation. Cette rubrique contient des informations sur les paramètres SSL (Secure Sockets Layer) et d'authentification IIS par défaut pour les serveurs d'accès au client et de boîtes aux lettres.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Impossible de poursuivre le programme d’installation de Microsoft Exchange Server 2013 car il est impossible de contacter un site de service d’annuaire Active Directory valide. Le programme d’installation nécessite que le serveur sur lequel vous installez Exchange soit en mesure de localiser le contexte d’affectation des noms dans Active Directory.
 

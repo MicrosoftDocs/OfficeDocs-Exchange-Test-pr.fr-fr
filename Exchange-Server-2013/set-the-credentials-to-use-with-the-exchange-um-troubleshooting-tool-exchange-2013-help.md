@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 L’outil de dépannage de la messagerie unifiée de Microsoft Exchange 2010 est une cmdlet de l’environnement de ligne de commande Exchange Management Shell nommée **Test-ExchangeUMCallFlow**. Vous pouvez utiliser cette cmdlet pour diagnostiquer des erreurs de configuration inhérentes à des scénarios de répondeur automatique et pour tester si la messagerie vocale fonctionne correctement pour les déploiements de messagerie unifiée Microsoft Exchange Server 2010 Service Pack 1 (SP1) (ou ultérieur) locaux et entre différents locaux à la fois. Vous pouvez vous servir de cette cmdlet pour des déploiements avec Microsoft Office Lync Server 2010 (ou ultérieur) ou pour des déploiements de messagerie unifiée avec des passerelles VoIP, des PBX IP ou des contrôleurs de frontière de session.
 
@@ -39,34 +39,14 @@ Par défaut, lorsque vous exécutez l’outil de dépannage de la messagerie uni
 
   - Installez l’outil de dépannage de la messagerie unifiée. Pour obtenir la procédure détaillée, voir [Installer l’outil de dépannage de la messagerie unifiée Exchange](install-the-exchange-um-troubleshooting-tool-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous utilisez l’outil Résolution des problèmes de messagerie UNIFIÉE en mode de <code>SIPClient</code> , il existe plusieurs autres Office Communications Server 2007 R2 ou Microsoft Lync Server des exigences et conditions préalables. Pour plus d’informations, consultez <a href="https://go.microsoft.com/fwlink/p/?linkid=311961">liste de vérification : déploiement Office Communications Server 2007 R2 et la messagerie unifiée Exchange 2010</a> ou <a href="checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help.md">Liste de contrôle : intégration de la messagerie unifiée d'Exchange 2013 à Lync Server</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous utilisez l’outil Résolution des problèmes de messagerie UNIFIÉE en mode de <code>SIPClient</code> , il existe plusieurs autres Office Communications Server 2007 R2 ou Microsoft Lync Server des exigences et conditions préalables. Pour plus d’informations, consultez <a href="https://go.microsoft.com/fwlink/p/?linkid=311961">liste de vérification : déploiement Office Communications Server 2007 R2 et la messagerie unifiée Exchange 2010</a> ou <a href="checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help.md">Liste de contrôle : intégration de la messagerie unifiée d'Exchange 2013 à Lync Server</a>.
 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Définir les informations d’identification à utiliser avec l’outil de dépannage de la messagerie unifiée (MU)

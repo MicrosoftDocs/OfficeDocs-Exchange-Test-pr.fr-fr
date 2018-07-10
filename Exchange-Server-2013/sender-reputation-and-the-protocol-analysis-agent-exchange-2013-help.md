@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-16_
+_**Dernière rubrique modifiée :** 2012-10-16_
 
 Le niveau de réputation de l’expéditeur fait partie de la fonctionnalité de blocage du courrier indésirable Exchange qui bloque les messages en fonction des nombreuses caractéristiques de l’expéditeur. La fonctionnalité de réputation de l’expéditeur s’appuie sur des données conservées relatives à l’expéditeur pour déterminer, le cas échéant, l’action à appliquer à un message entrant. L’agent d’analyse de protocole est l’agent sous-jacent pour la fonctionnalité de réputation de l’expéditeur.
 
@@ -73,7 +73,7 @@ Retour au début
 
 La fonction de réputation de l’expéditeur agit sur les messages durant deux phases de la session SMTP :
 
-  - **À la commande SMTP MAIL FROM:**   La fonction de réputation de l’expéditeur agit uniquement sur les messages qui ont été bloqués ou traités par l’agent de filtrage des connexions, l’agent de filtrage des expéditeurs, l’agent de filtrage des destinataires ou l’agent d’ID de l’expéditeur. Dans ce cas, la fonction de réputation de l’expéditeur récupère la valeur de contrôle d’accès SRL actuelle de l’expéditeur à partir du profil expéditeur conservé sur le serveur Exchange. Lorsque cette valeur de contrôle d’accès est récupérée et évaluée, la configuration du serveur Exchange impose le comportement d’une connexion particulière en fonction du seuil de blocage.
+  - **À la commande SMTP MAIL FROM:**    La fonction de réputation de l’expéditeur agit uniquement sur les messages qui ont été bloqués ou traités par l’agent de filtrage des connexions, l’agent de filtrage des expéditeurs, l’agent de filtrage des destinataires ou l’agent d’ID de l’expéditeur. Dans ce cas, la fonction de réputation de l’expéditeur récupère la valeur de contrôle d’accès SRL actuelle de l’expéditeur à partir du profil expéditeur conservé sur le serveur Exchange. Lorsque cette valeur de contrôle d’accès est récupérée et évaluée, la configuration du serveur Exchange impose le comportement d’une connexion particulière en fonction du seuil de blocage.
 
   - **Après la commande SMTP « fin des données »**   La commande SMTP de fin du transfert de données (**EOD**) est donnée lorsque toutes les données de messages réelles sont envoyées. À ce point de la session SMTP, de nombreux agents de blocage du courrier indésirable ont traité le message. En tant que sous-produit du traitement de blocage du courrier indésirable, les statistiques sur lesquelles la fonctionnalité de réputation de l’expéditeur se base sont mises à jour. Par conséquent, la fonctionnalité de réputation de l’expéditeur dispose des données nécessaires au calcul ou au nouveau calcul d’une valeur de contrôle d’accès pour l’expéditeur.
 

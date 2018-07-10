@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 La messagerie unifiée Exchange Microsoft propose une fonctionnalité appelée Aperçu de messagerie vocale. Celle-ci utilise la reconnaissance vocale automatique (ASR) pour ajouter aux messages vocaux une version texte de leur contenu audio. La reconnaissance vocale n'est pas extrêmement précise, surtout si elle est utilisée pour enregistrer des sons transmis par téléphone qui contiennent des voix et des bruits inconnus. Certaines organisations nécessitent systématiquement des transcriptions parfaites (ou presque) des messages. Le programme Partenaires d'aperçu de messagerie vocale peut aider à satisfaire leurs exigences.
 
@@ -59,18 +59,8 @@ La plupart des clients qui utilisent la messagerie unifiée estiment que les ape
 
 Suite à l'inscription auprès d'un partenaire d'aperçu de messagerie vocale, les serveurs Exchange de votre organisation redirigent les messages vocaux et leur fichier audio joint vers le partenaire choisi au lieu de générer des textes d'aperçu des messages vocaux et d'envoyer les messages vocaux vers la boîte aux lettres de l'utilisateur. Le message électronique et le texte d'aperçu du message vocal généré par le partenaire d'aperçu de message vocal sont ensuite envoyés aux serveurs Exchange de votre organisation pour remise dans la boîte aux lettres du destinataire.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il est recommandé que tous les clients qui envisagent de déployer la messagerie unifiée obtiennent l’assistance d’un spécialiste de la messagerie UNIFIÉE. Un spécialiste de la messagerie UNIFIÉE vous aide à assurer une transition en douceur vers la messagerie UNIFIÉE à partir d’un système de messagerie vocale hérité. Exécution d’un nouveau déploiement ou de mise à niveau d’un système de messagerie vocale hérité requiert une connaissance significative sur les passerelles VoIP, le PBX IP, les PBX, contrôleurs de bordure de session (SBCs) et de la messagerie unifiée. Pour plus d’informations sur la façon de contacter un spécialiste de la messagerie UNIFIÉE, consultez le <a href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013 unifiée (MU) spécialistes de la messagerie</a> ou <a href="https://go.microsoft.com/fwlink/p/?linkid=261951">Microsoft Pinpoint pour la messagerie unifiée</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il est recommandé que tous les clients qui envisagent de déployer la messagerie unifiée obtiennent l’assistance d’un spécialiste de la messagerie UNIFIÉE. Un spécialiste de la messagerie UNIFIÉE vous aide à assurer une transition en douceur vers la messagerie UNIFIÉE à partir d’un système de messagerie vocale hérité. Exécution d’un nouveau déploiement ou de mise à niveau d’un système de messagerie vocale hérité requiert une connaissance significative sur les passerelles VoIP, le PBX IP, les PBX, contrôleurs de bordure de session (SBCs) et de la messagerie unifiée. Pour plus d’informations sur la façon de contacter un spécialiste de la messagerie UNIFIÉE, consultez le <a href="http://go.microsoft.com/fwlink/p/?linkid=262708">Microsoft Exchange Server 2013 unifiée (MU) spécialistes de la messagerie</a> ou <a href="https://go.microsoft.com/fwlink/p/?linkid=261951">Microsoft Pinpoint pour la messagerie unifiée</a>.
 
 
 Retour au début

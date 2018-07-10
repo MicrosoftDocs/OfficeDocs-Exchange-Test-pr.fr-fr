@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le Le groupe de rôles de gestion est l’un des groupes de rôles intégrés qui créent un modèle d’autorisations de contrôle d’accès basé sur un rôle (RBAC) dans Microsoft Exchange Server 2013. Un ou plusieurs rôles de gestion sont affectés aux groupes de rôles qui contiennent les autorisations requises pour effectuer un ensemble de tâches données. Les membres d’un groupe de rôles sont autorisés à accéder aux rôles de gestion attribués au groupe de rôles. Pour plus d’informations sur les groupes de rôles, consultez la rubrique [Présentation des groupes de rôles de gestion](understanding-management-role-groups-exchange-2013-help.md).
 
@@ -25,18 +25,8 @@ Le groupe de rôles Support technique, par défaut, permet à ses membres d'affi
 
 Les membres de ce groupe de rôles ne peuvent modifier que les options Outlook Web App modifiables par l'utilisateur. Par conséquent, si un utilisateur peut modifier son nom complet, un membre du groupe de rôles Support technique pourra également modifier le nom complet de cet utilisateur. Toutefois, si un utilisateur n'est pas autorisé à modifier son nom complet, un membre du groupe de rôles Support technique ne pourra pas non plus modifier le nom complet de cet utilisateur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les restrictions portant sur la modification des options Outlook Web App par un membre du groupe de rôles Support technique sont appliquées par le Centre d'administration Exchange (CAE). Si un membre du groupe de rôles Support technique a accès à l'environnement de ligne de commande Exchange Management Shell, il pourra modifier les options Outlook Web App des utilisateurs. Par conséquent, les personnes pouvant devenir membres du groupe de rôles Support technique et pouvant accéder à l'environnement de ligne de commande Exchange Management Shell doivent être choisies avec soin.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Les restrictions portant sur la modification des options Outlook Web App par un membre du groupe de rôles Support technique sont appliquées par le Centre d'administration Exchange (CAE). Si un membre du groupe de rôles Support technique a accès à l'environnement de ligne de commande Exchange Management Shell, il pourra modifier les options Outlook Web App des utilisateurs. Par conséquent, les personnes pouvant devenir membres du groupe de rôles Support technique et pouvant accéder à l'environnement de ligne de commande Exchange Management Shell doivent être choisies avec soin.
 
 
 Le groupe de rôles Support technique ne permet pas d'effectuer d'autres tâches, car les types d'organisations sont très variés. Vous pouvez toutefois ajouter des rôles de gestion à ce groupe de rôles pour créer un groupe de rôles Support technique répondant aux besoins de votre organisation. Par exemple, si vous souhaitez que des membres du groupe de rôles Support technique puissent gérer des boîtes aux lettres, des contacts de messagerie et des utilisateurs à extension messagerie, ajoutez le rôle de gestion Destinataires de message à ce groupe de rôles. Pour plus d'informations sur l'ajout de rôles de gestion à ce groupe de rôles, voir la section « Personnalisation d'un groupe de rôles » plus loin dans cette rubrique.

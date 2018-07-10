@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Chaque fois que vous créez une règle de flux de messagerie Exchange (également appelée règle de transport), vous devez la tester avant de l’activer. Ainsi, si vous créez accidentellement une condition qui ne fait pas exactement ce que vous voulez ou qui interagit avec d’autres règles de manière inattendue, vous ne subirez aucune conséquence inattendue.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Patientez 30 minutes après la création d’une règle avant de la tester. Si vous testez la règle immédiatement après l’avoir créée, vous risquez d’obtenir un comportement incohérent. Si vous utilisez Exchange Server et plusieurs serveurs Exchange, cela peut durer encore plus longtemps pour que tous les serveurs reçoivent la règle.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Patientez 30 minutes après la création d’une règle avant de la tester. Si vous testez la règle immédiatement après l’avoir créée, vous risquez d’obtenir un comportement incohérent. Si vous utilisez Exchange Server et plusieurs serveurs Exchange, cela peut durer encore plus longtemps pour que tous les serveurs reçoivent la règle.
 
 
 ## Étape 1 : Créer une règle en mode test
@@ -115,18 +105,8 @@ Le suivi des messages comprend une entrée pour chaque règle ayant une correspo
 
 5.  Cliquez sur **Enregistrer**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour éviter les surprises, informez vos utilisateurs des nouvelles règles.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Pour éviter les surprises, informez vos utilisateurs des nouvelles règles.
 
 
 ## Suggestions de résolution des problèmes
@@ -155,18 +135,8 @@ Si vous utilisez Exchange Online ou Exchange Online Protection, vous pouvez vér
 
 Pour afficher un rapport de règles, dans le Centre d’administration Office 365, sélectionnez **Rapports**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Alors que la plupart des données apparaissent dans le rapport dans les 24 heures, cela peut prendre 5 jours pour certaines données.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Alors que la plupart des données apparaissent dans le rapport dans les 24 heures, cela peut prendre 5 jours pour certaines données.
 
 
 ![Rapport présentant l’utilisation des règles](images/Dn831862.df5bf202-741d-432a-b71d-b37143f0ec0a(EXCHG.150).png "Rapport présentant l’utilisation des règles")

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2010-07-16_
+_**Dernière rubrique modifiée :** 2010-07-16_
 
 [Activer ou désactiver l’enregistrement d’audit pour une boîte aux lettres](enable-or-disable-mailbox-audit-logging-for-a-mailbox-exchange-2013-help.md)
 

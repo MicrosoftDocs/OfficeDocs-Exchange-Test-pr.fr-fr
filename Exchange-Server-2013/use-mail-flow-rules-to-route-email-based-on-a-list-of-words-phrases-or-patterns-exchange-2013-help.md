@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-10-30_
+_**Dernière rubrique modifiée :** 2017-10-30_
 
 Pour aider vos utilisateurs à se conformer aux stratégies de messagerie de votre organisation, vous pouvez utiliser des règles de transport Exchange pour déterminer le mode d’acheminement du courrier électronique contenant des mots ou modèles spécifiques. Pour consulter la liste courte de mots ou d’expressions, vous pouvez utiliser le Centre d’administration Exchange. Pour une liste plus longue, vous pouvez utiliser le module Exchange pour Windows PowerShell pour lire la liste à partir d’un fichier texte.
 

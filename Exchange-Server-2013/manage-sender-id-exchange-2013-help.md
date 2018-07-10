@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 La fonctionnalité d’ID de l’expéditeur est fournie par l’agent d’ID de l’expéditeur. L’ID de l’expéditeur valide l’origine des messages électroniques en vérifiant l’adresse IP de l’expéditeur par rapport à celle du prétendu propriétaire du domaine de l’expéditeur. Le filtrage de l’ID de l’expéditeur est effectué sur les messages entrants en provenance d’Internet mais qui ne sont pas authentifiés. Ces messages sont traités comme des messages externes.
 
@@ -31,18 +31,8 @@ La fonctionnalité d’ID de l’expéditeur est fournie par l’agent d’ID de
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -57,18 +47,8 @@ Pour activer l'ID de l'expéditeur, exécutez la commande suivante :
 
     Set-SenderIDConfig -Enabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous désactivez l’ID de l’expéditeur, l’agent d’ID de l’expéditeur sous-jacent est toujours activé. Pour désactiver l’agent d’ID de l’expéditeur, exécutez la commande : <code>Disable-TransportAgent &quot;Sender ID Agent&quot;</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous désactivez l’ID de l’expéditeur, l’agent d’ID de l’expéditeur sous-jacent est toujours activé. Pour désactiver l’agent d’ID de l’expéditeur, exécutez la commande : <code>Disable-TransportAgent &quot;Sender ID Agent&quot;</code>.
 
 
 ## Comment savoir si cela a fonctionné ?

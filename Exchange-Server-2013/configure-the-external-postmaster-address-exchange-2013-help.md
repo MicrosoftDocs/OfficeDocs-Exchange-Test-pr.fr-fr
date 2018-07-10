@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 L'adresse d'administrateur externe est utilisée comme expéditeur des messages générés par le système et des notifications envoyées aux expéditeurs externes à votre organisation Microsoft Exchange Server 2013. Un expéditeur externe représente tout expéditeur disposant d'une adresse de messagerie dans un domaine qui n'est pas configuré comme un domaine accepté dans votre organisation.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2012-11-12_
+_**Dernière rubrique modifiée :** 2012-11-12_
 
 Le programme d’installation de Microsoft Exchange Server 2013 a détecté que vous tentez d’exécuter le programme d’installation sur un contrôleur de domaine Active Directory et que l’une des remarques suivante est vraie :
 
@@ -27,18 +27,8 @@ L’installation de Exchange 2013 dans des contrôleurs de domaine n’est pas 
 
 Si vous souhaitez installer Exchange 2013 dans un contrôleur de domaine, vous devez configurer l’organisation pour les autorisations fractionnées ou partagées du contrôle d’accès en fonction du rôle (RBAC).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous ne recommandons pas l’installation d’Exchange 2013 sur des contrôleurs de domaine Active Directory. Pour plus d’informations, consultez la rubrique <a href="installing-exchange-on-a-domain-controller-is-not-recommended-exchange-2013-help.md">L'installation d'Exchange sur un contrôleur de domaine n'est pas recommandée</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Nous ne recommandons pas l’installation d’Exchange 2013 sur des contrôleurs de domaine Active Directory. Pour plus d’informations, consultez la rubrique <a href="installing-exchange-on-a-domain-controller-is-not-recommended-exchange-2013-help.md">L'installation d'Exchange sur un contrôleur de domaine n'est pas recommandée</a>.
 
 
 Si vous souhaitez continuer à utiliser les autorisations fractionnées Active Directory, vous devez installer Exchange 2013 sur un serveur membre.

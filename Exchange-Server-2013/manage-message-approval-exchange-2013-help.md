@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-05-04_
+_**Dernière rubrique modifiée :** 2016-05-04_
 
 Parfois, il est logique d’avoir une deuxième opinion sur un message avant de le remettre. En tant qu’administrateur Exchange, vous pouvez configurer cela. Ce processus est appelé *modération* et l’approbateur est appelé *modérateur*. En fonction du type de message qui requiert une approbation, vous pouvez utiliser l’une des deux approches suivantes :
 
@@ -115,18 +115,8 @@ Un groupe de distribution peut inclure des destinataires modérés qui requière
 
 Par défaut, une boîte aux lettres d’arbitrage est utilisée pour chaque organisation Exchange. Si vous possédez vos propres serveurs Exchange et que vous avez besoin de plus de boîtes aux lettres d’arbitrage pour l’équilibrage de charge, suivez les instructions relatives à l’ajout de boîtes aux lettres d’arbitrage dans [Gestion de l’approbation des messages et résolution des problèmes](manage-and-troubleshoot-message-approval-exchange-2013-help.md). Les boîtes aux lettres d’arbitrage sont des boîtes aux lettres système ne nécessitant pas de licence Exchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous disposez d’Exchange 2007 : Microsoft Exchange Server 2007 ne prend pas en charge les destinataires modérés. Si un message adressé à un groupe de distribution modéré est développé sur un serveur de transport Hub Exchange 2007, le message contourne la modération et est distribué à tous les membres du groupe de distribution. Si vous disposez de serveurs de transport Hub Exchange 2007 dans votre organisation Exchange, veillez à désigner un serveur de boîtes aux lettres Exchange Server 2013 en tant que serveur d’expansion pour les groupes de distribution modérés. Vous vous assurez ainsi que tous les messages envoyés au groupe de distribution sont modérés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous disposez d’Exchange 2007 : Microsoft Exchange Server 2007 ne prend pas en charge les destinataires modérés. Si un message adressé à un groupe de distribution modéré est développé sur un serveur de transport Hub Exchange 2007, le message contourne la modération et est distribué à tous les membres du groupe de distribution. Si vous disposez de serveurs de transport Hub Exchange 2007 dans votre organisation Exchange, veillez à désigner un serveur de boîtes aux lettres Exchange Server 2013 en tant que serveur d’expansion pour les groupes de distribution modérés. Vous vous assurez ainsi que tous les messages envoyés au groupe de distribution sont modérés.
 
 
 Retour au début

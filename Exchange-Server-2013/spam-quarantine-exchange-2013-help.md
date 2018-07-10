@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-12_
+_**Dernière rubrique modifiée :** 2012-10-12_
 
 De nombreuses organisations sont tenues, en vertu d’exigences légales et réglementaires, de conserver ou de remettre tous les messages électroniques légitimes. Dans Microsoft Exchange Server 2013, la mise en quarantaine du courrier indésirable est une fonctionnalité de l’agent de filtrage du contenu qui réduit le risque de perte de messages légitimes. La mise en quarantaine du courrier indésirable fournit un emplacement de stockage temporaire pour les messages identifiés comme courrier indésirable, qui ne doivent pas être remis à une boîte aux lettres d'utilisateur au sein de l'organisation.
 

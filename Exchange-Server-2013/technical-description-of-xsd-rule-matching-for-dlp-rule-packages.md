@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-07-28_
+_**Dernière rubrique modifiée :** 2016-07-28_
 
 Cette rubrique décrit les techniques permettant de faire correspondre les éléments Pattern et Evidence dans un fichier XML de protection contre la pertes de données (DLP, Data Loss Prevention) destiné à accueillir votre package de règles de types d'informations sensibles. Vous devez d'abord créer un fichier XML bien formé, puis l'importer en utilisant le Centre d'administration Exchange (CAE) ou l'environnement de ligne de commande Exchange Management Shell qui vous aideront à créer votre solution DLP Microsoft Exchange Server 2013. Vous devez disposer d'un fichier XML DLP avant d'utiliser les méthodes de correspondance décrites ci-dessous. Pour plus d'informations sur la définition de vos modèles DLP et fichiers XML, consultez la rubrique [Définition de vos modèles DLP et types d'informations](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md).
 
@@ -47,18 +47,8 @@ Il est fréquent d'utiliser une règle de correspondance basée sur des expressi
 
 La mise en correspondance peut être effectué en utilisant une correspondance exacte ou les algorithmes de correspondance en fonction de word. Correspondance exacte utilise un algorithme qui respecte la casse qui recherche du texte dans la langue spécifiée. Correspondance de mot applique un algorithme de correspondance basé sur des limites de word. Les termes à mettre en correspondance peuvent être incluses inline dans la définition du mot clé à l’aide de l’élément sous-fonctionnalités de termes.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Utilisez le style de correspondance à constante au lieu de la correspondance regex pour augmenter l'efficacité et les performances. Utilisez la correspondance regex uniquement dans le cas où les correspondances à constante sont insuffisantes et où les expressions régulières exigent de la souplesse.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Utilisez le style de correspondance à constante au lieu de la correspondance regex pour augmenter l'efficacité et les performances. Utilisez la correspondance regex uniquement dans le cas où les correspondances à constante sont insuffisantes et où les expressions régulières exigent de la souplesse.
 
 
     <Keyword id="Word_Example">
@@ -85,18 +75,8 @@ La mise en correspondance peut être effectué en utilisant une correspondance e
 
 La méthode de correspondance basée sur des expressions régulières est elle aussi couramment utilisée. En raison de sa souplesse d’utilisation, la correspondance basée sur des expressions régulières sert souvent à appliquer des correspondances pour des données telles que des numéros de permis de conduire ou des adresses. Les modèles d'expression régulière sont définis à l'aide d'une syntaxe d'expression régulière courante. Le tableau suivant propose des exemples de certains des jetons d'expression régulière les plus courants actuellement disponibles.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Utilisez le style de correspondance à constante au lieu de la correspondance regex pour augmenter l'efficacité. Utilisez la correspondance regex uniquement dans le cas où les correspondances à constante sont insuffisantes et où les expressions régulières exigent de la souplesse.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Utilisez le style de correspondance à constante au lieu de la correspondance regex pour augmenter l'efficacité. Utilisez la correspondance regex uniquement dans le cas où les correspondances à constante sont insuffisantes et où les expressions régulières exigent de la souplesse.
 
 
 
@@ -219,8 +199,7 @@ L'élément Regex a un attribut « id » qui sert de référence dans les règ
     </Regex>
     ...
     <Regex id="ItinFormatted">
-        (?:^|[\s\,\:])(?:9\d{2})[- ](?:[78]\d[-  
-         ]\d{4})(?:$|[\s\,]|\.\s)
+        (?:^|[\s\,\:])(?:9\d{2})[- ](?:[78]\d[-       ]\d{4})(?:$|[\s\,]|\.\s)
     </Regex>
     ...
     <Regex id="NorthCarolinaDriversLicenseNumber">

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-10-20_
+_**Dernière rubrique modifiée :** 2017-10-20_
 
 Lors de l’installation de Exchange Server 2013, le programme d’installation exécute un ensemble de tâches qui installent de nouveaux services dans Microsoft Windows. Un service est un processus en arrière-plan qui peut être lancé lors du démarrage du serveur par le Gestionnaire de contrôle des services Windows. Les services sont conçus pour fonctionner de façon indépendante et sans intervention de l’administrateur de fichiers exécutables. Un service peut s’exécuter à un mode de console ou un mode de graphical user interface (interface utilisateur).
 
@@ -63,18 +63,8 @@ Le tableau suivant décrit les services Exchange qui sont installés sur des ser
 <td><p>Mise à jour de la fonction antispam d’Microsoft Exchange</p></td>
 <td><p>MSExchangeAntispamUpdate</p></td>
 <td><p>Fournit des mises à jour de définition de courrier indésirable SmartScreen Exchange.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le 1er novembre 2016, Microsoft a cessé de produire des mises à jour des définitions de courrier indésirable pour les filtres SmartScreen dans Exchange et Outlook. Les définitions de courrier indésirable SmartScreen existantes restent en place, mais leur efficacité se dégradera probablement au cours du temps. Pour plus d’informations, voir l’article relatif à l’<a href="https://go.microsoft.com/fwlink/p/?linkid=835894">arrêt de la prise en charge de SmartScreen dans Outlook et Exchange</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le 1er novembre 2016, Microsoft a cessé de produire des mises à jour des définitions de courrier indésirable pour les filtres SmartScreen dans Exchange et Outlook. Les définitions de courrier indésirable SmartScreen existantes restent en place, mais leur efficacité se dégradera probablement au cours du temps. Pour plus d’informations, voir l’article relatif à l’<a href="https://go.microsoft.com/fwlink/p/?linkid=835894">arrêt de la prise en charge de SmartScreen dans Outlook et Exchange</a>.
 
 </td>
 <td><p>Automatique</p></td>
@@ -443,18 +433,8 @@ Le tableau suivant décrit les services Exchange qui sont installés sur des ser
 <td><p>Mise à jour de la fonction antispam d’Microsoft Exchange</p></td>
 <td><p>MSExchangeAntispamUpdate</p></td>
 <td><p>Fournit des mises à jour de définition de courrier indésirable SmartScreen Exchange.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le 1er novembre 2016, Microsoft a cessé de produire des mises à jour des définitions de courrier indésirable pour les filtres SmartScreen dans Exchange et Outlook. Les définitions de courrier indésirable SmartScreen existantes restent en place, mais leur efficacité se dégradera probablement au cours du temps. Pour plus d’informations, voir l’article relatif à l’<a href="https://go.microsoft.com/fwlink/p/?linkid=835894">arrêt de la prise en charge de SmartScreen dans Outlook et Exchange</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le 1er novembre 2016, Microsoft a cessé de produire des mises à jour des définitions de courrier indésirable pour les filtres SmartScreen dans Exchange et Outlook. Les définitions de courrier indésirable SmartScreen existantes restent en place, mais leur efficacité se dégradera probablement au cours du temps. Pour plus d’informations, voir l’article relatif à l’<a href="https://go.microsoft.com/fwlink/p/?linkid=835894">arrêt de la prise en charge de SmartScreen dans Outlook et Exchange</a>.
 
 </td>
 <td><p>Automatique</p></td>

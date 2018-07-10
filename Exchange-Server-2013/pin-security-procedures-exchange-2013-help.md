@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-16_
+_**Dernière rubrique modifiée :** 2013-04-16_
 
 [Définir des stratégies de code confidentiel de Outlook Voice Access](set-outlook-voice-access-pin-policies-exchange-2013-help.md)
 

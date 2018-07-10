@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-12-31_
+_**Dernière rubrique modifiée :** 2017-12-31_
 
 Le Centre d’administration Exchange ou l’Environnement de ligne de commande Exchange Management Shell vous permet d’activer ou de désactiver MAPI pour une boîte aux lettres utilisateur. Lorsque MAPI est activé, Outlook ou un autre client de messagerie électronique peut accéder à la boîte aux lettres d’un utilisateur. Lorsque MAPI est désactivé, ni Outlook ni un autre client de messagerie électronique ne peut y accéder. Cependant, la boîte aux lettres continue de recevoir des messages électroniques et, en supposant que la boîte aux lettres est configurée pour prendre en charge l’accès par ces clients, un utilisateur peut y accéder pour envoyer et recevoir des messages en utilisant Outlook Web App, un client de messagerie électronique POP ou IMAP.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La prise en charge pour Outlook Web App et pour les clients de messagerie électronique MAPI, POP3 et IMAP4 est activée par défaut lors de la création d’une boîte aux lettres utilisateur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La prise en charge pour Outlook Web App et pour les clients de messagerie électronique MAPI, POP3 et IMAP4 est activée par défaut lors de la création d’une boîte aux lettres utilisateur.
 
 
 Pour les tâches supplémentaires de gestion relatives à la gestion de l’accès aux clients de messagerie, consultez les rubriques suivantes :
@@ -49,18 +39,8 @@ Pour les tâches supplémentaires de gestion relatives à la gestion de l’acc�
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Dans Exchange Online et Exchange Server 2013, vous pouvez utiliser des stratégies de rétention pour gérer le cycle de vie de la messagerie. Les stratégies de rétention sont appliquées en créant des balises de rétention, en les ajoutant à une stratégie de rétention et en appliquant la stratégie aux utilisateurs de la boîte aux lettres.
 
@@ -47,33 +47,13 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
     
       - **Appliqué automatiquement à l’intégralité de la boîte aux lettres (par défaut)**   Sélectionnez cette option pour créer une balise de stratégie par défaut (DPT). Les balises de stratégie par défaut (DPT) permettent de créer une stratégie de suppression par défaut et une stratégie d’archivage par défaut qui s’appliquent à tous les éléments de la boîte aux lettres.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Vous ne pouvez pas utiliser le Centre d’administration Exchange (EAC) pour créer une balise de stratégie par défaut (DPT) afin de supprimer des éléments de messagerie vocale. Pour plus d’informations sur la création d’une balise de stratégie par défaut (DPT) pour supprimer des éléments de messagerie vocale, voir l’exemple de l’environnement de ligne de commande Exchange Management Shell ci-dessous.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Vous ne pouvez pas utiliser le Centre d’administration Exchange (EAC) pour créer une balise de stratégie par défaut (DPT) afin de supprimer des éléments de messagerie vocale. Pour plus d’informations sur la création d’une balise de stratégie par défaut (DPT) pour supprimer des éléments de messagerie vocale, voir l’exemple de l’environnement de ligne de commande Exchange Management Shell ci-dessous.
     
       - **Appliqué automatiquement à un dossier spécifique**   Sélectionnez cette option pour créer une balise de stratégie de rétention (RPT) pour un dossier par défaut, comme **Boîte de réception** ou **Éléments supprimés**.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Vous ne pouvez créer des balises de stratégie de rétention qu’avec les actions <strong>Supprimer et autoriser la récupération</strong> ou <strong>Supprimer définitivement</strong>.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Vous ne pouvez créer des balises de stratégie de rétention qu’avec les actions <strong>Supprimer et autoriser la récupération</strong> ou <strong>Supprimer définitivement</strong>.
     
       - **Appliqué par les utilisateurs aux éléments et aux dossiers (personnels)**   Sélectionnez cette option pour créer des balises personnelles. Ces balises permettent à des utilisateurs de Outlook et de Outlook Web App d’appliquer des paramètres d’archivage et de suppression à un message ou à des dossiers qui diffèrent de ceux appliqués au dossier parent ou à la boîte aux lettres complète.
 
@@ -89,19 +69,9 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
         
           - **Supprimer définitivement** Sélectionnez cette option pour supprimer définitivement l’élément de la base de données de boîtes aux lettres.
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>Les boîtes aux lettres ou les éléments soumis à un blocage sur place et une suspension pour litige doivent être conservés et renvoyés dans les recherches de découverte électronique sur place (In-Place eDiscovery). Pour en savoir plus, consultez la rubrique <a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">Conservation inaltérable et conservation pour litige</a>.</td>
-            </tr>
-            </tbody>
-            </table>
-        
+            > [!IMPORTANT]
+			> Les boîtes aux lettres ou les éléments soumis à un blocage sur place et une suspension pour litige doivent être conservés et renvoyés dans les recherches de découverte électronique sur place (In-Place eDiscovery). Pour en savoir plus, consultez la rubrique <a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">Conservation inaltérable et conservation pour litige</a>.
+                    
           - **Déplacer vers l’archive**   Cette action n’est accessible que si vous créez une balise de stratégie par défaut ou une balise personnelle. Sélectionnez cette action pour déplacer des éléments vers l’archivage local de l’utilisateur.
     
       - **Période de rétention** Sélectionnez l’une des options suivantes :
@@ -162,18 +132,8 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
         
           - N’importe quel nombre de balises personnelles
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>Bien que vous puissiez ajouter n’importe quel nombre de balises personnelles à une stratégie de rétention, le fait de disposer d’un grand nombre de balises personnelles avec différents paramètres de rétention peut dérouter les utilisateurs. Nous recommandons de ne pas associer plus de 10 balises personnelles à une stratégie de rétention.</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]
+            > Bien que vous puissiez ajouter n’importe quel nombre de balises personnelles à une stratégie de rétention, le fait de disposer d’un grand nombre de balises personnelles avec différents paramètres de rétention peut dérouter les utilisateurs. Nous recommandons de ne pas associer plus de 10 balises personnelles à une stratégie de rétention.
         
         Vous pouvez créer une stratégie de rétention sans lui ajouter de balises de rétention, sauf que des éléments de la boîte aux lettres à laquelle la stratégie s’applique ne seront pas déplacés ni supprimés. Vous pouvez également ajouter et supprimer des balises de rétention d’une stratégie de rétention après sa création.
 
@@ -201,16 +161,6 @@ Pour vérifier que vous avez appliqué la stratégie de rétention, procédez co
 
 2.  Connectez-vous à la boîte aux lettres via Outlook ou Outlook Web App et vérifiez que les messages sont supprimés ou déplacés vers une archive conformément à la configuration de la stratégie.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

@@ -11,13 +11,13 @@ f1_keywords:
 ms.translationtype: HT
 ---
 
-# Créer une passerelle IP de messagerie unifiée
+# Créer une passerelle IP de messagerie unifiée: Exchange 2013 Help
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-16_
+_**Dernière rubrique modifiée :** 2013-04-16_
 
 Quand vous créez une passerelle IP de messagerie unifiée, vous autorisez les serveurs Exchange à se connecter à une nouvelle passerelle VoIP (Voix sur IP), un PBX (Private Branch eXchange) à extension SIP (Session Initiation Protocol), un PBX IP ou un contrôleur de frontière de session (SBC). Immédiatement après avoir créé une passerelle IP de messagerie unifiée, vous devez créer un groupement de postes de messagerie unifiée, puis associez ce dernier à la passerelle IP de messagerie unifiée. Vous pouvez associer la passerelle IP de messagerie unifiée à un ou plusieurs plans de numérotation de messagerie unifiée en créant un ou plusieurs groupements de postes de messagerie unifiée.
 
@@ -33,27 +33,15 @@ Pour les autres tâches de gestion relatives aux passerelles IP de messagerie un
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]  
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
 
 ## Utilisation du Centre d'administration Exchange pour créer une passerelle IP de messagerie unifiée
 
-1.  
-    
-    Dans le CAE, accédez à **Messagerie unifiée** \> **Passerelles IP de messagerie unifiée**, puis cliquez sur **Nouveau**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter").
+1.  Dans le CAE, accédez à **Messagerie unifiée** \> **Passerelles IP de messagerie unifiée**, puis cliquez sur **Nouveau**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter").
 
 2.  Dans la page **Nouvelle passerelle IP de messagerie unifiée**, entrez les informations suivantes :
     
@@ -67,9 +55,7 @@ Pour les autres tâches de gestion relatives aux passerelles IP de messagerie un
     
       - **Plan de numérotation de messagerie unifiée**   Cliquez sur le bouton **Parcourir** pour sélectionner le plan de numérotation de messagerie unifiée que vous voulez associer à la passerelle IP de messagerie unifiée. Lorsque vous sélectionnez un plan de numérotation de messagerie unifiée à associer à une passerelle IP de messagerie unifiée, un groupement de postes de messagerie unifiée est également créé par défaut et associé au plan de numérotation de messagerie unifiée que vous avez sélectionné. Si vous ne sélectionnez pas de plan de numérotation de messagerie unifiée, vous devez créer manuellement un groupement de postes de messagerie unifiée, puis l'associer à la passerelle IP de messagerie unifiée que vous avez créée.
 
-3.  
-    
-    Cliquez sur **Enregistrer**.
+3.  Cliquez sur **Enregistrer**.
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour créer une passerelle IP de messagerie unifiée
 

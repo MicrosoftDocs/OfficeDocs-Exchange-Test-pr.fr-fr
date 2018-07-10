@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez installer et configurer des modules linguistiques pour prendre en charge plusieurs langues dans des environnements de messagerie unifiée.
 
@@ -61,18 +61,8 @@ Les modules linguistiques de messagerie unifiée permettent à un serveur de bo�
 
 Les modules linguistiques de messagerie unifiée comprennent des invites préenregistrées, la prise en charge de la conversion par synthèse vocale pour une langue spécifique et, dans certains cas, la prise en charge de la reconnaissance vocale. Dans les environnements multilingues, vous pouvez être amené à installer des modules linguistiques de messagerie unifiée supplémentaires parce que certains appelants préfèrent entendre des messages dans une autre langue, ou parce qu'ils reçoivent des messages électroniques dans plusieurs langues. Vous devez installer plusieurs modules linguistiques de messagerie unifiée pour prendre en charge la capacité du serveur de boîtes aux lettres à lire un message électronique contenant plusieurs langues, car le système de conversion par synthèse vocale doit savoir quelle langue sélectionner en fonction du texte du message à lire. Si le module linguistique de messagerie unifiée n'a pas été installé, le message électronique n'aura aucune logique ni cohérence quand il sera lu à l'utilisateur. L'installation du module linguistique approprié permet au moteur de synthèse vocale de lire le message électronique et les éléments de calendrier à l'utilisateur d'Outlook Voice Access en utilisant la langue correcte, mais aussi de fournir des invites préenregistrés spécifiques à la langue pour la messagerie unifiée. Dans certains cas, ils peuvent aussi prendre en charge l'ASR.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le moteur de synthèse vocale convertit le texte en voix, mais n'opère pas la conversion de voix en texte. Les utilisateurs à extension messagerie unifiée peuvent envoyer un message électronique comportant un fichier vocal joint à un autre utilisateur. Ils ne peuvent cependant pas créer ni envoyer de message électronique texte.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le moteur de synthèse vocale convertit le texte en voix, mais n'opère pas la conversion de voix en texte. Les utilisateurs à extension messagerie unifiée peuvent envoyer un message électronique comportant un fichier vocal joint à un autre utilisateur. Ils ne peuvent cependant pas créer ni envoyer de message électronique texte.
 
 
 Lorsque vous installez un module linguistique, le programme d'installation effectue les opérations suivantes :
@@ -87,18 +77,8 @@ Lorsque vous installez un module linguistique, le programme d'installation effec
 
 Vous pouvez ajouter des modules linguistiques de messagerie unifiée à l’aide de la commande **Setup.exe** ou en exécutant le programme d’installation *\<UMLanguagePack\>*.exe après avoir téléchargé le module linguistique de messagerie unifiée à partir de la page [Exchange Server 2013 UM Language Packs - Français](https://go.microsoft.com/fwlink/p/?linkid=266542). Cependant, vous devez utiliser la commande Setup.exe pour supprimer un module linguistique de messagerie unifiée. Aucune cmdlet de l’environnement de ligne de commande Exchange Management Shell ne permet d’ajouter ou de supprimer des modules linguistiques d’un serveur de boîtes aux lettres. Pour plus d’informations sur l’installation d’un module linguistique de messagerie unifiée, consultez la rubrique [Installer un module linguistique de messagerie unifiée](install-a-um-language-pack-exchange-2013-help.md). Pour plus d’informations sur la suppression d’un module linguistique de messagerie unifiée, consultez la rubrique [Suppression d'un module linguistique de messagerie unifiée](remove-a-um-language-pack-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, le module linguistique anglais (États-Unis) est installé lors de l'installation d'un serveur de boîtes aux lettres. Il ne peut pas être retiré, sauf si vous supprimez le serveur de boîtes aux lettres de l'ordinateur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, le module linguistique anglais (États-Unis) est installé lors de l'installation d'un serveur de boîtes aux lettres. Il ne peut pas être retiré, sauf si vous supprimez le serveur de boîtes aux lettres de l'ordinateur.
 
 
 Retour au début
@@ -335,18 +315,8 @@ La messagerie automatique repose sur un moteur de synthèse vocale. La fonctionn
 
   - messages d'accueil vocaux par défaut des utilisateurs
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Après qu'un utilisateur a enregistré les messages d'accueil personnalisés de la messagerie vocale, la version TTS des messages d'accueil de la messagerie vocale n'est plus utilisée.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Après qu'un utilisateur a enregistré les messages d'accueil personnalisés de la messagerie vocale, la version TTS des messages d'accueil de la messagerie vocale n'est plus utilisée.
 
 
 ## Reconnaissance vocale

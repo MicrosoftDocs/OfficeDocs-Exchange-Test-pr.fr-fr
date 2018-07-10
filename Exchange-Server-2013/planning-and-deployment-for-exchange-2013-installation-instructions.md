@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Avez-vous besoin d’aide pour effectuer une installation d’Exchange ? Cet article fournit des conseils pour préparer un déploiement de Microsoft Exchange Server 2013, ainsi que des liens vers des articles dont vous aurez besoin au cours du déploiement.
 
 Les sections suivantes contiennent des liens vers des informations qui vous expliquent comment planifier puis déployer Microsoft Exchange Server 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous vous conseillons vivement de lire la rubrique <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Notes de publication relatives à Exchange 2013</a> avant de commencer votre déploiement. Les notes de publication contiennent des informations importantes sur les problèmes que vous pourriez rencontrer pendant ou après votre déploiement.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Nous vous conseillons vivement de lire la rubrique <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Notes de publication relatives à Exchange 2013</a> avant de commencer votre déploiement. Les notes de publication contiennent des informations importantes sur les problèmes que vous pourriez rencontrer pendant ou après votre déploiement.
 
 
 **Contenu de cette rubrique**
@@ -49,18 +39,8 @@ Pour plus d'informations
 
 Utilisez les liens suivants pour accéder aux informations qui vous aideront à planifier le déploiement d'Exchange Server 2013 dans votre organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Consultez la section Création d'un environnement de test relative à l'installation d'Exchange 2013 dans un environnement de test, plus loin dans cette rubrique.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Consultez la section Création d'un environnement de test relative à l'installation d'Exchange 2013 dans un environnement de test, plus loin dans cette rubrique.
 
 
   - [Serveurs de boîtes aux lettres et d’accès au client](mailbox-and-client-access-servers-exchange-2013-help.md)  
@@ -228,34 +208,14 @@ Le programme d'installation d'Exchange 2013 propose plusieurs modes d'installat
 
   - **Upgrade**   Sélectionnez ce mode lorsque vous disposez d’une installation existante d’Exchange et que vous installez une mise à jour cumulative ou un Service Pack. Vous pouvez utiliser ce mode dans l'Assistant Installation d'Exchange ou dans l'installation sans assistance.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 2013 ne prend pas en charge les mises à niveau sur place à partir des versions précédentes d'Exchange. Ce mode permet uniquement d’installer les mises à jour cumulatives ou Service Packs.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Exchange 2013 ne prend pas en charge les mises à niveau sur place à partir des versions précédentes d'Exchange. Ce mode permet uniquement d’installer les mises à jour cumulatives ou Service Packs.
 
 
   - **RecoverServer**   Utilisez ce mode lorsqu'un serveur a connu une défaillance irrémédiable et que vous avez besoin de récupérer des données. Vous devez installer un serveur à l'aide du même nom complet de domaine (FQDN) que le serveur défaillant, puis exécuter le programme d'installation avec le commutateur **/m:RecoverServer**. Ne spécifiez pas les rôles à restaurer. Le programme d'installation détecte l'objet serveur Exchange dans Active Directory et installe la configuration et les fichiers correspondants automatiquement. Après avoir récupéré le serveur, vous pouvez restaurer des bases de données et reconfigurer les autres paramètres. Pour fonctionner en mode **RecoverServer**, vous ne pouvez pas installer Exchange sur le serveur. L'objet serveur Exchange doit exister dans Active Directory. Vous pouvez uniquement utiliser ce mode pendant une installation sans assistance.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez mener à terme un mode d'installation avant d'en utiliser un autre.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez mener à terme un mode d'installation avant d'en utiliser un autre.
 
 
 ## Pour plus d'informations

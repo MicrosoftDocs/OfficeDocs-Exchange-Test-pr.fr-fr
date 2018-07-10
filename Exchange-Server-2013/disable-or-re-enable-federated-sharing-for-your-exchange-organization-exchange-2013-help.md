@@ -13,42 +13,22 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-02-17_
+_**Dernière rubrique modifiée :** 2014-02-17_
 
 Il peut arriver que vous soyez amené à désactiver temporairement un partage fédéré pour votre organisation. Au lieu de supprimer l’approbation de fédération existante ou les relations d’organisation et les stratégies de partage dont vous pourriez avoir besoin a l’avenir, vous pouvez simplement désactiver l’identificateur d’organisation (OrgID) de l’approbation de fédération.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour les déploiements hybrides avec Office 365, la désactivation de l’approbation de fédération pour vos serveurs locaux entraîne la désactivation de fonctionnalités hybrides, telles que les informations de disponibilité du calendrier partagé, les infos-courrier et le suivi des messages. Cependant, le transport de messagerie sécurisé ne sera pas désactivé dans le déploiement hybride si l’approbation de fédération de l’organisation locale est désactivée.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Pour les déploiements hybrides avec Office 365, la désactivation de l’approbation de fédération pour vos serveurs locaux entraîne la désactivation de fonctionnalités hybrides, telles que les informations de disponibilité du calendrier partagé, les infos-courrier et le suivi des messages. Cependant, le transport de messagerie sécurisé ne sera pas désactivé dans le déploiement hybride si l’approbation de fédération de l’organisation locale est désactivée.
 
 
 Pour en savoir plus sur les approbations de fédération, consultez la rubrique [Fédération](federation-exchange-2013-help.md). Pour en savoir plus sur le partage fédéré, voir [Partage](sharing-exchange-2013-help.md).
 
 Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives au partage fédéré, consultez [Procédures de fédération](federation-procedures-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.
 
 
 ## Ce qu’il faut savoir avant de commencer ?
@@ -81,16 +61,6 @@ Pour confirmer que la réussite de l’opération, exécutez la commande de l’
 
     Get-FederatedOrganizationIdentifier
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

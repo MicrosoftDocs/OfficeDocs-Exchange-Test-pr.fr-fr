@@ -13,23 +13,19 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-02-23_
+_**Dernière rubrique modifiée :** 2017-02-23_
 
 Votre organisation peut exiger le blocage ou le rejet de certains types de messages afin de répondre aux exigences juridiques ou de conformité, ou pour répondre à des besoins spécifiques de l’entreprise. Voici quelques exemples de scénarios courants permettant de bloquer toutes les pièces jointes que vous pouvez configurer à l’aide des règles de transport dans Exchange :
 
-  -  
-    Example 1: Block messages with attachments, and notify the sender
+  -  Example 1: Block messages with attachments, and notify the sender
 
-  -  
-    Example 2: Notify intended recipients when an inbound message is blocked
+  -  Example 2: Notify intended recipients when an inbound message is blocked
 
-  -  
-    Example 3: Modify the subject line for notifications
+  -  Example 3: Modify the subject line for notifications
 
-  -  
-    Example 4: Apply a rule with a time limit
+  -  Example 4: Apply a rule with a time limit
 
 Pour obtenir des exemples supplémentaires illustrant la procédure de blocage des pièces jointes spécifiques, voir :
 
@@ -126,18 +122,8 @@ Lorsqu’une notification est envoyée au destinataire, la ligne d’objet est l
 
   - La deuxième règle bloque le message et envoie un message de notification à l’expéditeur à l’aide du nouvel objet du message d’origine.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les deux règles doivent avoir des conditions identiques. Les règles sont traitées dans l’ordre, afin que la première règle ajoute le mot « non remis » et que la deuxième bloque le message et informe le destinataire.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les deux règles doivent avoir des conditions identiques. Les règles sont traitées dans l’ordre, afin que la première règle ajoute le mot « non remis » et que la deuxième bloque le message et informe le destinataire.
 
 
 Voici ce que la première règle donnera si vous souhaitez ajouter « non remis » à l’objet :

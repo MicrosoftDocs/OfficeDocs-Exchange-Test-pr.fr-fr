@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-03-08_
+_**Dernière rubrique modifiée :** 2013-03-08_
 
 Vous pouvez créer une stratégie de boîte aux lettres de messagerie unifiée pour appliquer un jeu commun de paramètres de stratégie de messagerie unifiée, par exemple, des paramètres de stratégie de code confidentiel ou des restrictions d'appel, à une série de boîtes aux lettres activées pour la messagerie unifiée. Les stratégies de boîte aux lettres de messagerie unifiée associent un utilisateur à extension messagerie unifiée à un plan de numérotation de messagerie unifiée et appliquent un ensemble commun de stratégies ou de paramètres de sécurité à plusieurs boîtes aux lettres à extension messagerie unifiée. Elles sont utiles pour l'application et la standardisation des paramètres de configuration de la messagerie unifiée pour les utilisateurs à extension messagerie unifiée.
 
@@ -35,18 +35,8 @@ Pour découvrir d'autres tâches de gestion relatives aux stratégies de boîte 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

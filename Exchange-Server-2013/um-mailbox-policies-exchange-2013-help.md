@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-15_
+_**Dernière rubrique modifiée :** 2012-11-15_
 
 Des stratégies de boîtes aux lettres de messagerie unifiée sont requises lorsque vous activez des utilisateurs pour la messagerie unifiée. Vous créez des stratégies de boîte aux lettres de messagerie unifiée pour appliquer un ensemble commun de stratégies ou de paramètres de sécurité à une collection de boîtes aux lettres d’utilisateurs de la messagerie vocale. Les stratégies de boîtes aux lettres de messagerie unifiée permettent de spécifier des paramètres de messagerie unifiée, comme suit :
 

@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2014-11-05_
+_**Dernière rubrique modifiée :** 2014-11-05_
 
 Impossible de poursuivre le programme d'installation de Microsoft Exchange Server 2013, car l'utilisateur connecté ne dispose pas des autorisations de compte requises pour installer le premier serveur Exchange 2013 dans l'organisation.
 
 Bien que le programme d'installation d'Exchange 2013 autorise l'utilisation de la délégation pour installer des rôles serveur successifs, l'utilisateur doit être connecté en tant que membre du groupe de sécurité Administrateurs de l'entreprise Windows lors de l'installation du premier serveur Exchange 2013 dans l'organisation. Il s'agit d'une condition indispensable, car le programme d'installation d'Exchange 2013 crée et configure les objets du conteneur de l'organisation Exchange dans Active Directory au cours de l'installation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous n'avez pas préparé le schéma Active Directory pour Exchange 2013, l'utilisateur connecté doit aussi être membre du groupe de sécurité Administrateurs du schéma Windows. Il est également possible pour un autre utilisateur membre de ce même groupe de sécurité de préparer le schéma Active Directory avant l'installation d'Exchange 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous n'avez pas préparé le schéma Active Directory pour Exchange 2013, l'utilisateur connecté doit aussi être membre du groupe de sécurité Administrateurs du schéma Windows. Il est également possible pour un autre utilisateur membre de ce même groupe de sécurité de préparer le schéma Active Directory avant l'installation d'Exchange 2013.
 
 
 Pour résoudre ce problème, ajoutez l'utilisateur connecté en tant que membre du groupe de sécurité Administrateurs de l'entreprise. Vous pouvez également vous connecter à un compte membre du groupe de sécurité Administrateurs de l'entreprise. Réexécutez ensuite le programme d'installation Exchange 2013.

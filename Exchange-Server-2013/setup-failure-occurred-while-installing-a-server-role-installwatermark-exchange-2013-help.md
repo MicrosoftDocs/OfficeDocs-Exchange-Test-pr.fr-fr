@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 
@@ -41,31 +41,11 @@ Pour résoudre ce problème, réinstallez le rôle serveur échoué ou supprimez
     
     EdgeTransport (ou ET, ou E)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le rôle serveur de transport Edge ne peut pas coexister sur le même ordinateur qu'un autre rôle serveur.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le rôle serveur de transport Edge ne peut pas coexister sur le même ordinateur qu'un autre rôle serveur.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous devez déployer le rôle serveur de transport Edge dans le réseau de périmètre et à l’extérieur de la forêt Active Directory.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Vous devez déployer le rôle serveur de transport Edge dans le réseau de périmètre et à l’extérieur de la forêt Active Directory.
     
     HubTransport (ou HT, ou H)
     
@@ -75,33 +55,13 @@ Pour résoudre ce problème, réinstallez le rôle serveur échoué ou supprimez
     
     ManagementTools (ou MT, ou T)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>En choisissant Outils de gestion, vous installez la console de gestion Exchange, les cmdlets Exchange pour l’environnement de ligne de commandeExchange Management Shell, le fichier d’aide Exchange, l’outil Exchange Best Practices Analyzer et l’Assistant Dépannage Exchange. Si vous installez un autre rôle serveur, les outils de gestion sont installés automatiquement.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > En choisissant Outils de gestion, vous installez la console de gestion Exchange, les cmdlets Exchange pour l’environnement de ligne de commandeExchange Management Shell, le fichier d’aide Exchange, l’outil Exchange Best Practices Analyzer et l’Assistant Dépannage Exchange. Si vous installez un autre rôle serveur, les outils de gestion sont installés automatiquement.
     
     Par exemple, pour ajouter le rôle serveur de transport Hub à un serveur de boîte aux lettres existant, entrez les informations suivantes : **%LocalExchangeInstallationDir%\\bin\\Setup.com /role:HubTransport /Mode:Install**
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si un rôle serveur Exchange Server 2007 avait été installé, l'Assistant Installation est exécuté en mode maintenance. Si aucun rôle serveur Exchange 2007 n'avait été installé, l'Assistant Installation commence à l'endroit où il s'est arrêté.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si un rôle serveur Exchange Server 2007 avait été installé, l'Assistant Installation est exécuté en mode maintenance. Si aucun rôle serveur Exchange 2007 n'avait été installé, l'Assistant Installation commence à l'endroit où il s'est arrêté.
 
 
 **Pour utiliser l'Assistant Installation d'Exchange Server 2007 en mode maintenance pour réinstaller le rôle serveur en échec**
@@ -116,44 +76,14 @@ Pour résoudre ce problème, réinstallez le rôle serveur échoué ou supprimez
 
 5.  Dans la page **Sélection des rôles serveur**, cochez les cases des rôles serveur à installer, puis cliquez sur **Suivant**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le rôle serveur de transport Edge ne peut pas coexister sur le même ordinateur qu'un autre rôle serveur.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le rôle serveur de transport Edge ne peut pas coexister sur le même ordinateur qu'un autre rôle serveur.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous devez déployer le rôle serveur de transport Edge dans le réseau de périmètre et à l’extérieur de la forêt Active Directory.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Vous devez déployer le rôle serveur de transport Edge dans le réseau de périmètre et à l’extérieur de la forêt Active Directory.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>En sélectionnant Outils de gestion, vous installez la console de gestion Exchange, les cmdlets Exchange pour l’environnement de ligne de commande Exchange Management Shell et le fichier d’aide d’Exchange. Les outils de gestion sont installés automatiquement si vous installez un autre rôle serveur.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > En sélectionnant Outils de gestion, vous installez la console de gestion Exchange, les cmdlets Exchange pour l’environnement de ligne de commande Exchange Management Shell et le fichier d’aide d’Exchange. Les outils de gestion sont installés automatiquement si vous installez un autre rôle serveur.
 
 
 6.  Si vous avez sélectionné **Rôle de transport Hub** et si vous installez Exchange 2007 dans une forêt disposant d’une organisation Exchange Server 2003 ou Exchange 2000 Server existante, dans la page **Paramètres du flux de messagerie**, sélectionnez un serveur tête de pont dans l’organisation existante membre du groupe de routage Exchange 2003 ou Exchange 2000 dans lequel vous voulez créer un connecteur de groupe de routage.

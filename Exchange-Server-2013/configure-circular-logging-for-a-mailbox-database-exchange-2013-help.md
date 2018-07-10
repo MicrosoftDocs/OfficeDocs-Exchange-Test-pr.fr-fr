@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-06-24_
+_**Dernière rubrique modifiée :** 2014-06-24_
 
 Lorsque vous activez la journalisation circulaire pour une base de données de boîtes aux lettres, le type de journalisation circulaire que vous obtenez dépend de l’utilisation ou non de la méthode de réplication continue pour la réplication de la base de données de boîte aux lettres :
 

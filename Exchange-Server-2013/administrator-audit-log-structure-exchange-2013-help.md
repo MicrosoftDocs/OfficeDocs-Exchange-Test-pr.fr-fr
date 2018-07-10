@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les journaux d’audit de l’administrateur contiennent un enregistrement de tous les cmdlets et paramètres exécutés dans l’environnement de la ligne de commande Exchange Management Shell et par le Centre d’administration Exchange (EAC). Ils sont créés à la demande lorsque vous exécutez le rapport du journal d’audit de l’administrateur dans le Centre d’administration Exchange (CAE), ou lorsque vous exécutez la cmdlet **New-AdminAuditLogSearch** dans l’environnement de ligne de commande Exchange Management Shell. Pour plus d’informations sur les journaux d’audit, voir [Connexion au service d’audit administrateur](administrator-audit-logging-exchange-2013-help.md).
 
@@ -119,18 +119,8 @@ Souhaitez-vous rechercher des tâches de gestion relatives aux journaux d’audi
 <td><p><code>N/A</code></p></td>
 <td><p>Cette balise contient toutes les propriétés modifiées par la cmdlet exécutée. La balise <code>Property</code> est un enfant de cette balise.</p>
 <p>Il existe une balise <code>ModifiedProperties</code> par balise <code>Event</code>.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette balise n’est renseignée que si le paramètre <em>LogLevel</em> de la cmdlet <strong>Set-AdminAuditLogConfig</strong> est défini à <code>Verbose</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette balise n’est renseignée que si le paramètre <em>LogLevel</em> de la cmdlet <strong>Set-AdminAuditLogConfig</strong> est défini à <code>Verbose</code>.
 
 </td>
 </tr>
@@ -173,18 +163,8 @@ Vous trouverez ci-dessous un exemple type d’entrée de journal d’audit. Selo
 
   - Les deux propriétés suivantes sur l’objet `david`ont été modifiées :
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les propriétés modifiées sont enregistrées dans le journal d’audit parce que le paramètre <em>LogLevel</em> de la cmdlet <code>Set-AdminAuditLogConfig</code> a été défini à <code>Verbose</code> dans cet exemple.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les propriétés modifiées sont enregistrées dans le journal d’audit parce que le paramètre <em>LogLevel</em> de la cmdlet <code>Set-AdminAuditLogConfig</code> a été défini à <code>Verbose</code> dans cet exemple.
     
       - *ProhibitSendReceiveQuota* avec une nouvelle valeur « `10GB` », remplaçant la valeur précédente qui était « `35GB` ».
 

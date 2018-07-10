@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-02-06_
+_**Dernière rubrique modifiée :** 2017-02-06_
 
 ## Compteurs de performance Exchange 2013
 
@@ -270,18 +270,8 @@ Le tableau suivant affiche les seuils acceptables et des informations sur les co
 
 Le tableau suivant indique les compteurs des besoins de latence des E/S du journal actif. Le dépassement des seuils altère l’expérience client. Par exemple, les utilisateurs risquent de subir un ralentissement des performances du système et des retards dans la remise des messages.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les instructions relatives à la latence de stockage normale dans Exchange 2013 sont très semblables à celles d’Exchange 2010. Des compteurs de bases de données supplémentaires sont disponibles dans <a href="https://go.microsoft.com/fwlink/p/?linkid=525622">Compteurs de serveurs de boîtes aux lettres</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les instructions relatives à la latence de stockage normale dans Exchange 2013 sont très semblables à celles d’Exchange 2010. Des compteurs de bases de données supplémentaires sont disponibles dans <a href="https://go.microsoft.com/fwlink/p/?linkid=525622">Compteurs de serveurs de boîtes aux lettres</a>.
 
 
 
@@ -499,18 +489,8 @@ Le tableau suivant affiche des informations sur les compteurs de proxy HTTP.
 
 Le tableau suivant affiche les seuils acceptables et des informations sur les compteurs de banque d'informations.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les instructions relatives à la latence de stockage normale dans Exchange 2013 sont très semblables à celles d’Exchange 2010. Des compteurs de banques d’informations supplémentaires sont disponibles dans <a href="https://go.microsoft.com/fwlink/p/?linkid=525622">Compteurs de serveurs de boîtes aux lettres</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les instructions relatives à la latence de stockage normale dans Exchange 2013 sont très semblables à celles d’Exchange 2010. Des compteurs de banques d’informations supplémentaires sont disponibles dans <a href="https://go.microsoft.com/fwlink/p/?linkid=525622">Compteurs de serveurs de boîtes aux lettres</a>.
 
 
 

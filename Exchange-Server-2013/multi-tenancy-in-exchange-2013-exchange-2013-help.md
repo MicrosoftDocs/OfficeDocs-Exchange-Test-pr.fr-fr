@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Un déploiement Exchange 2013 partagé au sein d'une architecture mutualisée (hébergée) se définit comme un déploiement dans lequel l'organisation Exchange a été configurée pour héberger plusieurs organisations ou divisions discrètes (les clients) qui d’ordinaire ne partagent pas de courriers électroniques, de données, d’utilisateurs, de listes d’adresses globales ni tout autre objet Exchange couramment utilisé. Ce partage en termes de matériels, de logiciels et de ressources (tout en maintenant une séparation logique entre des clients), permet à des organisations d’optimiser la simplicité d’un déploiement Exchange standard tout en fournissant des fonctionnalités et des services d’une architecture mutualisée pour répondre à leurs besoins d’hébergement.
 

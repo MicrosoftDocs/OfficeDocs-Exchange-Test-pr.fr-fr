@@ -15,26 +15,16 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les groupes de distribution dynamiques sont des objets du groupe Active Directory à extension messagerie créés pour accélérer l’envoi massif de messages électroniques et d’autres informations au sein d’une organisation Exchange Microsoft.
 
 Contrairement aux groupes de distribution habituels qui contiennent un ensemble défini de membres, la liste des membres de ces groupes de distribution dynamiques est calculée chaque fois qu’un message leur est envoyé, en fonction des filtres et conditions que vous avez définis. Lorsqu’un courrier électronique est envoyé à un groupe de distribution dynamique, il est remis à tous les destinataires de l’organisation qui respectent les critères définis pour ce groupe.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Un groupe de distribution dynamique inclut tout destinataire dans Active Directory ayant des valeurs d'attribut correspondant à son filtre. Si les propriétés d’un destinataire sont modifiées pour correspondre au filtre, le destinataire peut involontairement devenir membre du groupe et commencer à recevoir des messages envoyés au groupe. Des processus de déploiement de compte cohérents et bien définis réduisent la probabilité que cela se produise.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Un groupe de distribution dynamique inclut tout destinataire dans Active Directory ayant des valeurs d'attribut correspondant à son filtre. Si les propriétés d’un destinataire sont modifiées pour correspondre au filtre, le destinataire peut involontairement devenir membre du groupe et commencer à recevoir des messages envoyés au groupe. Des processus de déploiement de compte cohérents et bien définis réduisent la probabilité que cela se produise.
 
 
 ## Ce qu’il faut savoir avant de commencer ?
@@ -45,18 +35,8 @@ Contrairement aux groupes de distribution habituels qui contiennent un ensemble 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]  
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -67,24 +47,12 @@ Contrairement aux groupes de distribution habituels qui contiennent un ensemble 
 
 1.  Dans l’EAC, accédez à **Destinataires**  \> **Groupes** \> **Nouveau** \> **Groupe de distribution dynamique**.
 
-2.  
+2.  Sur la page **Nouveau groupe de distribution dynamique**, complétez les cases suivantes :
     
-    Sur la page **Nouveau groupe de distribution dynamique**, complétez les cases suivantes :
-    
-      - **\* Nom complet**   Saisissez le nom complet. Ce nom apparaît dans le carnet d’adresses partagé, dans la ligne À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes du Centre d’administration Exchange. Le nom d'affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s'agit. Ce nom doit aussi être unique dans la forêt.
+      - \* **Nom complet**   Saisissez le nom complet. Ce nom apparaît dans le carnet d’adresses partagé, dans la ligne À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes du Centre d’administration Exchange. Le nom d'affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s'agit. Ce nom doit aussi être unique dans la forêt.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>La stratégie de noms de groupes n’est pas appliquée aux groupes de distribution dynamique.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > La stratégie de noms de groupes n’est pas appliquée aux groupes de distribution dynamique.
     
       - **\* Alias**   Saisissez le nom de l’alias du groupe. L’alias ne peut pas comporter plus de 64 caractères et doit être unique dans la forêt. Lorsqu’un utilisateur saisit l’alias dans la ligne À : d’un message électronique, sa résolution génère le nom complet du groupe.
     
@@ -96,9 +64,7 @@ Contrairement aux groupes de distribution habituels qui contiennent un ensemble 
     
       - **Propriétaire**   Un propriétaire pour un groupe de distribution dynamique est facultatif. Pour ajouter des propriétaires, cliquez sur **Parcourir**, puis sélectionnez des utilisateurs dans la liste.
 
-3.  
-    
-    Utilisez la section **Membres** pour indiquer les types de destinataires pour le groupe et configurer des règles qui doivent déterminer un appartenance. Sélectionnez l’une des cases suivantes :
+3.  Utilisez la section **Membres** pour indiquer les types de destinataires pour le groupe et configurer des règles qui doivent déterminer un appartenance. Sélectionnez l’une des cases suivantes :
     
       - **Tous les types de destinataires**   Sélectionnez cette option pour envoyer des messages qui satisfont les critères définis pour ce groupe à tous les types de destinataires.
     
@@ -114,9 +80,7 @@ Contrairement aux groupes de distribution habituels qui contiennent un ensemble 
         
           - **Groupes à extension messagerie**   Activez cette case à cocher si vous souhaitez inclure les groupes de sécurité ou de distribution à extension messagerie. Les groupes à extension messagerie sont similaires aux groupes de distribution. Les messages électroniques envoyés à un compte de groupe à extension messagerie sont transmis à plusieurs destinataires.
 
-4.  
-    
-    Cliquez sur **Ajouter une règle** pour définir les critères d'appartenance à ce groupe.
+4.  Cliquez sur **Ajouter une règle** pour définir les critères d'appartenance à ce groupe.
 
 5.  Sélectionnez l'un des attributs de destinataire suivant dans la liste déroulante et donnez une valeur. Si la valeur pour l’attribut sélectionné correspond à cette valeur que vous avez définie, le destinataire reçoit un message envoyé à ce groupe.
     
@@ -156,52 +120,22 @@ Contrairement aux groupes de distribution habituels qui contiennent un ensemble 
     </tbody>
     </table>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les valeurs que vous entrez pour l’attribut sélectionné doivent exactement correspondre à celles qui s’affichent dans les propriétés du destinataire. Par exemple, si vous entrez <strong>Washington</strong> comme <strong>Département ou région</strong>, sauf que la valeur pour la propriété du destinataire est <strong>WA</strong>, la condition n’est pas satisfaite. Notez que les valeurs basées sur un texte que vous avez spécifié ne respectent pas la casse. Par exemple, si vous indiquez <strong>Contoso</strong> pour l’attribut <strong>Société</strong>, les messages sont envoyés à un destinataire si la valeur est <strong>contoso</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Les valeurs que vous entrez pour l’attribut sélectionné doivent exactement correspondre à celles qui s’affichent dans les propriétés du destinataire. Par exemple, si vous entrez <strong>Washington</strong> comme <strong>Département ou région</strong>, sauf que la valeur pour la propriété du destinataire est <strong>WA</strong>, la condition n’est pas satisfaite. Notez que les valeurs basées sur un texte que vous avez spécifié ne respectent pas la casse. Par exemple, si vous indiquez <strong>Contoso</strong> pour l’attribut <strong>Société</strong>, les messages sont envoyés à un destinataire si la valeur est <strong>contoso</strong>.
 
 
 6.  Dans la fenêtre **Spécifier des mots ou des expressions**, entrez la valeur dans la zone de texte. Cliquez sur **Ajouter**, puis sur **OK**.
 
 7.  Pour ajouter une autre règle visant à définir des critères d’appartenance, cliquez sur **Ajouter une règle** sous la règle que vous avez créée.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous ajoutez plusieurs règles pour définir une appartenance, un destinataire doit satisfaire les critères de chacune des règles pour recevoir un message envoyé au groupe. En d'autres termes, les règles sont connectées entre elles par l’opérateur booléen <strong>AND</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Si vous ajoutez plusieurs règles pour définir une appartenance, un destinataire doit satisfaire les critères de chacune des règles pour recevoir un message envoyé au groupe. En d'autres termes, les règles sont connectées entre elles par l’opérateur booléen <strong>AND</strong>.
 
 
 8.  Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer le groupe de distribution dynamique.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour spécifier des règles pour des attributs autres que ceux disponibles dans l’EAC, vous devez l’environnement de ligne de commande Exchange Management Shell pour créer un groupe de distribution dynamique. N’oubliez pas que les paramètres de filtre et de condition pour les groupes de distribution dynamiques dotés de filtres des destinataires personnalisés ne peuvent être gérés qu’à l’aide de l’environnement. Pour voir un exemple de création d’un groupe de distribution dynamique avec une requête personnalisée, reportez-vous à la section suivante traitant de l'utilisation de l’environnement de ligne de commande Exchange Management Shell pour créer un groupe de distribution dynamique.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Pour spécifier des règles pour des attributs autres que ceux disponibles dans l’EAC, vous devez l’environnement de ligne de commande Exchange Management Shell pour créer un groupe de distribution dynamique. N’oubliez pas que les paramètres de filtre et de condition pour les groupes de distribution dynamiques dotés de filtres des destinataires personnalisés ne peuvent être gérés qu’à l’aide de l’environnement. Pour voir un exemple de création d’un groupe de distribution dynamique avec une requête personnalisée, reportez-vous à la section suivante traitant de l'utilisation de l’environnement de ligne de commande Exchange Management Shell pour créer un groupe de distribution dynamique.
 
 
 ## Utiliser le shell pour créer un groupe de distribution dynamique
@@ -260,9 +194,9 @@ Pour vérifier la création avec succès d’un groupe de distribution dynamique
 
 Utilisez cette section pour afficher ou modifier les informations de base relatives au groupe.
 
-  - **\* Nom complet**   Ce nom s'affiche dans le carnet d'adresses, sur les lignes À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes. Le nom d'affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s'agit. Il doit également être unique dans votre domaine.
+  - \* **Nom complet**   Ce nom s'affiche dans le carnet d'adresses, sur les lignes À : quand un message électronique est envoyé à ce groupe, et dans la liste Groupes. Le nom d'affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s'agit. Il doit également être unique dans votre domaine.
 
-  - **\* Alias**   L’alias est la partie de l’adresse de messagerie qui apparaît à gauche du signe @. Si vous modifiez l’alias, l’adresse SMTP principale du groupe est également modifiée et contient le nouvel alias. De plus, l’adresse de messagerie électronique qui comprend l’alias précédent est gardée en tant qu’adresse de proxy du groupe.
+  - \* **Alias**   L’alias est la partie de l’adresse de messagerie qui apparaît à gauche du signe @. Si vous modifiez l’alias, l’adresse SMTP principale du groupe est également modifiée et contient le nouvel alias. De plus, l’adresse de messagerie électronique qui comprend l’alias précédent est gardée en tant qu’adresse de proxy du groupe.
 
   - **Description**   Décrivez le groupe afin que l’objet du groupe soit facilement identifiable. Cette description apparaît dans le carnet d’adresses et dans le volet d’informations du Centre d’administration Exchange.
 
@@ -292,18 +226,8 @@ Cette section permet de gérer les utilisateurs autorisés à envoyer des messag
     
     Pour supprimer un individu ou un groupe de la liste, sélectionnez-le, puis cliquez sur **Supprimer**![Icône Suppression](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Icône Suppression").
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous avez configuré le groupe pour autoriser uniquement des expéditeurs appartenant à votre organisation à envoyer des messages au groupe, un message électronique qui est envoyé par un contact de messagerie est alors rejeté, même si vous aviez ajouté ce contact à cette liste.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Si vous avez configuré le groupe pour autoriser uniquement des expéditeurs appartenant à votre organisation à envoyer des messages au groupe, un message électronique qui est envoyé par un contact de messagerie est alors rejeté, même si vous aviez ajouté ce contact à cette liste.
 
 
 ## Approbation de messages
@@ -316,7 +240,7 @@ Cette section permet de définir les options de modération du groupe. Les modé
 
   - **Les expéditeurs qui ne demandent pas l’approbation de messages**    Pour ajouter des individus ou des groupes non soumis à la modération pour ce groupe, cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter"). Pour supprimer un individu ou un groupe, sélectionnez-le, puis cliquez sur **Supprimer**![Icône Suppression](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Icône Suppression").
 
-  - **Sélectionner les notifications de modération   **Cette section permet de définir la manière dont les utilisateurs sont informés de l'approbation de messages.
+  - **Sélectionner les notifications de modération**   Cette section permet de définir la manière dont les utilisateurs sont informés de l'approbation de messages.
     
       - **Avertir tous les expéditeurs lorsque leurs messages ne sont pas approuvés**   Il s’agit du paramètre par défaut. Permet de notifier tous les expéditeurs, à l'intérieur et à l'extérieur de votre organisation, lorsque leur message n'est pas approuvé.
     
@@ -328,75 +252,35 @@ Cette section permet de définir les options de modération du groupe. Les modé
 
 Cette section permet d’afficher ou de modifier les adresses de messagerie électronique associées au groupe. Adresses incluses : adresses SMTP principales du groupe et toute adresse de proxy associée. L’adresse SMTP principale (aussi appelée *adresse de réponse*) apparaît en gras dans la liste d’adresses, avec la valeur **SMTP** inscrite en majuscules dans la colonne **Type**.
 
-  - **Ajouter **  Cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour ajouter une nouvelle adresse de messagerie électronique pour cette boîte aux lettres. Sélectionnez l’un des types d’adresses suivants :
+  - **Ajouter**  Cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour ajouter une nouvelle adresse de messagerie électronique pour cette boîte aux lettres. Sélectionnez l’un des types d’adresses suivants :
     
-      - **SMTP**   Il s’agit du type d’adresse par défaut. Cliquez sur ce bouton, puis saisissez la nouvelle adresse SMTP dans la zone **\* Adresse de messagerie**.
+      - **SMTP**   Il s’agit du type d’adresse par défaut. Cliquez sur ce bouton, puis saisissez la nouvelle adresse SMTP dans la zone \* **Adresse de messagerie**.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Pour que la nouvelle adresse devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > Pour que la nouvelle adresse devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>.
     
-      - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone **\* Adresse de messagerie** l’un des types d’adresse de messagerie électronique non SMTP pris en charge.
+      - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone \* **Adresse de messagerie** l’un des types d’adresse de messagerie électronique non SMTP pris en charge.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>À l’exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l’adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d’adresse.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > À l’exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l’adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d’adresse.
 
 
   - **Modifier**   Pour modifier une adresse de messagerie électronique associée au groupe, sélectionnez-la dans la liste, puis cliquez sur **Modifier**![Icône Modifier](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Icône Modifier").
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Pour que l’adresse existante devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Pour que l’adresse existante devienne l’adresse SMTP principale de ce groupe, cochez la case <strong>Définir comme adresse de réponse</strong>.
 
 
   - **Supprimer**   Pour supprimer une adresse de messagerie électronique associée au groupe, sélectionnez-la dans la liste, puis cliquez sur **Supprimer**![Icône Suppression](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Icône Suppression").
 
-  - **Mettre à jour auto. les adresses selon la stratégie de destinataire   **Cochez cette case pour que les adresses de messagerie du destinataire soient automatiquement mises à jour en fonction des modifications apportées aux stratégies d’adresses de messagerie dans votre organisation. Cette case à cocher est activée par défaut.
+  - **Mettre à jour auto. les adresses selon la stratégie de destinataire**   Cochez cette case pour que les adresses de messagerie du destinataire soient automatiquement mises à jour en fonction des modifications apportées aux stratégies d’adresses de messagerie dans votre organisation. Cette case à cocher est activée par défaut.
 
 ## MailTip
 
 Utilisez cette section pour ajouter une info courrier afin d’alerter les utilisateurs de problèmes potentiels avant qu’ils envoient un message à ce groupe. Une info courrier est un texte affiché dans la barre d’informations lorsque ce groupe est ajouté aux lignes À, Cc ou Cci d’un nouveau message électronique. Par exemple, vous pourriez ajouter une info courrier aux grands groupes pour prévenir des expéditeurs potentiels que leur message sera envoyé à beaucoup de personnes.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.
 
 
 ## Délégation de groupe

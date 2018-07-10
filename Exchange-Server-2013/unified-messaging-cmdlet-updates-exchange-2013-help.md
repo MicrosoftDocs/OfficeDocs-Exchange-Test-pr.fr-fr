@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Beaucoup de cmdlets messagerie unifiée (MU) qui existaient dans Exchange Server 2010 ont été transféré pour Exchange Server 2013, mais il y a eu des changements à certains de ces cmdlets. En outre, les nouvelles cmdlets ont été ajoutées pour Exchange 2013.
 
@@ -91,36 +91,16 @@ Ce qui suit est une liste des paramètres mis à jour et nouvels cmdlets pour Ex
 <tr class="even">
 <td><p>Désactivé-UMService</p></td>
 <td><p><code>-Identity &lt;UMServerIdParameter&gt; [-Confirm [&lt;SwitchParameter&gt;]] [-DomainController &lt;Fqdn&gt;] [-Immediate &lt;$true | $false&gt;] [-WhatIf [&lt;SwitchParameter&gt;]]</code></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette cmdlet fonctionne avec des serveurs de messagerie unifiée Exchange 2007 et 2010 uniquement.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette cmdlet fonctionne avec des serveurs de messagerie unifiée Exchange 2007 et 2010 uniquement.
 
 </td>
 </tr>
 <tr class="odd">
 <td><p>Activé-UMService</p></td>
 <td><p><code>-Identity &lt;UMServerIdParameter&gt; [-Confirm [&lt;SwitchParameter&gt;]] [-DomainController &lt;Fqdn&gt;] [-WhatIf [&lt;SwitchParameter&gt;]]</code></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette cmdlet fonctionne avec des serveurs de messagerie unifiée Exchange 2007 et 2010 uniquement.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette cmdlet fonctionne avec des serveurs de messagerie unifiée Exchange 2007 et 2010 uniquement.
 
 </td>
 </tr>

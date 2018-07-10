@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2010, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2010, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-09-25_
+_**Dernière rubrique modifiée :** 2017-09-25_
 
 **Résumé** : Pourquoi devez-vous ou ne devez-vous pas migrer vos dossiers publics Exchange vers Groupes Office 365.
 
@@ -65,18 +65,8 @@ Avant de passer à la fonction Groupes, il est également judicieux de noter les
 
 Si vous décidez de passer à Groupes Office 365, vous pouvez utiliser un processus appelé *migration par lots* pour déplacer votre messagerie et le contenu de votre calendrier de vos dossiers publics existants vers les groupes. Les étapes spécifiques de l’exécution d’une migration par lots dépendent de la version d’Exchange hébergeant actuellement votre hiérarchie de dossiers publics. À la fin de cet article, vous trouverez des liens vers des instructions pour vous guider tout au long du processus de migration par lots.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous avez terminé la migration d’un dossier public à extension messagerie vers un groupe particulier dans Office 365, tous les e-mails adressés au dossier public sont reçus à ce stade par le groupe.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous avez terminé la migration d’un dossier public à extension messagerie vers un groupe particulier dans Office 365, tous les e-mails adressés au dossier public sont reçus à ce stade par le groupe.
 
 
 Voici les principaux avantages des migrations par lots :
