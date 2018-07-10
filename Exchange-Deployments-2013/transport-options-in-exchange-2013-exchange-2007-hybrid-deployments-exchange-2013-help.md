@@ -21,18 +21,8 @@ Les déploiements hybrides peuvent comporter des boîtes aux lettres qui réside
 
 Pour que la configuration du transport hybride fonctionne avec l’Assistant Configuration hybride, le point de terminaison SMTP local qui accepte les connexions depuis Microsoft Exchange Online Protection (EOP) et qui gère le transport pour l’organisation Exchange Online doit être un serveur d’accès au client Exchange 2013, un serveur de transport Edge Exchange 2013 ou un serveur de transport Edge Exchange Server 2010 Service Pack 3 (SP3).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il ne peut y avoir aucun autre hôte SMTP ou service entre, les serveurs d’accès au client Exchange 2013 ou les serveurs de transport Edge Exchange 2013/Exchange 2010 SP3 et EOP. Les informations ajoutées aux messages et qui activent les fonctions de transport hybride sont supprimées lorsqu'elles passent par un serveur non Exchange 2013, des serveurs de versions antérieures à Exchange 2010 SP3 ou un hôte SMTP. Si des serveurs de transport Edge Exchange 2010 SP2 sont déployés dans votre organisation et que vous souhaitez les utiliser pour le transport hybride, vous devez les mettre à niveau vers Exchange 2010 SP3.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Il ne peut y avoir aucun autre hôte SMTP ou service entre, les serveurs d’accès au client Exchange 2013 ou les serveurs de transport Edge Exchange 2013/Exchange 2010 SP3 et EOP. Les informations ajoutées aux messages et qui activent les fonctions de transport hybride sont supprimées lorsqu'elles passent par un serveur non Exchange 2013, des serveurs de versions antérieures à Exchange 2010 SP3 ou un hôte SMTP. Si des serveurs de transport Edge Exchange 2010 SP2 sont déployés dans votre organisation et que vous souhaitez les utiliser pour le transport hybride, vous devez les mettre à niveau vers Exchange 2010 SP3.
 
 
 Les messages entrants envoyés aux destinataires des deux organisations par des expéditeurs Internet externes suivent un itinéraire entrant commun. Les messages sortants envoyés depuis les organisations à des destinataires Internet externes peuvent suivre un itinéraire sortant commun ou emprunter des itinéraires indépendants.
@@ -47,18 +37,8 @@ Vous devrez choisir le mode d’acheminement du courrier entrant et sortant lors
     
     Grâce au transport de courrier centralisé, vous pouvez acheminer l’ensemble du courrier des boîtes aux lettres de l’organisation Exchange Online via l’organisation locale avant qu’il ne soit remis sur Internet. Cette approche est utile dans les scénarios de mise ne conformité, dans lesquels l’ensemble du courrier en provenance et à destination d’Internet doit être traité par des serveurs locaux. Vous pouvez également configurer Exchange Online pour remettre les messages destinés à des destinataires externes directement sur Internet.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le transport de courrier centralisé est recommandé uniquement pour les organisations qui présentent des besoins de transport spécifiques liés à la conformité. Nous recommandons aux organisations Exchange types de ne pas activer le transport de courrier centralisé.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le transport de courrier centralisé est recommandé uniquement pour les organisations qui présentent des besoins de transport spécifiques liés à la conformité. Nous recommandons aux organisations Exchange types de ne pas activer le transport de courrier centralisé.
 
 
   - Souhaitez-vous déployer un serveur de transport Edge dans votre organisation locale ?
@@ -83,18 +63,8 @@ Afin d’optimiser la protection des destinataires de l’organisation locale et
 
 Lorsque le transport TLS forcé est utilisé, les serveurs d’envoi et de réception examinent le certificat configuré sur l’autre serveur. Le nom de l’objet, ou l’un des autres noms d’objets (SAN), configurés sur les certificats doit correspondre au nom de domaine complet qu’un administrateur a explicitement spécifié sur l’autre serveur. Par exemple, si EOP est configuré pour accepter et sécuriser les messages envoyés depuis le nom de domaine complet mail.contoso.com, le nom de l’objet ou l’autre nom d’objet du serveur de transport Edge ou d’accès au client local entrant doit avoir un certificat SSL avec mail.contoso.com. Si cette condition n’est pas remplie, la connexion est refusée par EOP.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il n’est pas nécessaire que le nom de domaine complet utilisé corresponde au nom de domaine de messagerie des destinataires. La seule condition est que le nom de domaine complet du nom d’objet du certificat ou de l’autre nom de l’objet corresponde au nom de domaine complet que les serveurs de réception ou d’envoi doivent accepter.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il n’est pas nécessaire que le nom de domaine complet utilisé corresponde au nom de domaine de messagerie des destinataires. La seule condition est que le nom de domaine complet du nom d’objet du certificat ou de l’autre nom de l’objet corresponde au nom de domaine complet que les serveurs de réception ou d’envoi doivent accepter.
 
 
 Outre l’utilisation de TLS, les messages échangés entre les organisations sont traités comme des messages « internes ». Cette approche permet aux messages de contourner les paramètres anti-courrier indésirable et d’autres services.

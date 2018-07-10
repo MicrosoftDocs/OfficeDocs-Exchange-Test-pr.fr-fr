@@ -83,18 +83,8 @@ Pour activer la synchronisation d’objet des ACL au niveau de l’organisation,
 
 Après cela, les boîtes aux lettres déplacées vers Office 365 seront correctement configurées pour prendre en charge les autorisations de boîtes aux lettres déléguées. Si les boîtes aux lettres ont été déplacées vers Office 365 avant d’accomplir ces étapes, vous devez activer manuellement les ACL sur ces boîtes aux lettres en suivant les étapes dans Activer les ACL sur des boîtes aux lettres à distance.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ACL ne sont pas activées sur les boîtes aux lettres distants créés dans Office 365. Si vous créez une boîte aux lettres distant dans Office 365, vous devez suivre les instructions dans les ACL activer de section de boîtes aux lettres distants pour activer des ACL sur cette boîte aux lettres distant. Pour éviter cette étape supplémentaire, nous vous conseillons de créer la boîte aux lettres sur un serveur d’Exchange sur site et puis déplacez la boîte aux lettres vers Office 365.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> ACL ne sont pas activées sur les boîtes aux lettres distants créés dans Office 365. Si vous créez une boîte aux lettres distant dans Office 365, vous devez suivre les instructions dans les ACL activer de section de boîtes aux lettres distants pour activer des ACL sur cette boîte aux lettres distant. Pour éviter cette étape supplémentaire, nous vous conseillons de créer la boîte aux lettres sur un serveur d’Exchange sur site et puis déplacez la boîte aux lettres vers Office 365.
 
 
 ## Activer les ACL sur des boîtes aux lettres à distance

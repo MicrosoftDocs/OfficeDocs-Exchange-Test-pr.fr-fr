@@ -27,19 +27,9 @@ Quand vous installez un serveur exécutant Microsoft Exchange Server 2013 dans 
 
 Le CAE vous permet d’effectuer de nombreuses tâches de déploiement et la plupart des tâches administratives quotidiennes les plus courantes sur les serveurs Exchange locaux et dans l’organisation Exchange Online. Il est installé par défaut sur chaque serveur Exchange 2013. Par ailleurs, dans la mesure où il s’agit d’une console de gestion basée sur le web, vous pouvez également y accéder à l’aide d’un navigateur web sur d’autres ordinateurs de votre réseau ou via Internet à l’aide de l’URL du répertoire virtuel de l’ECP.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour accéder au CAE à l’aide d’un compte associé à une boîte aux lettres située sur un serveur de boîtes aux lettres Exchange 2010 (tel qu’un compte d’administrateur de domaine), vous devez utiliser l’adresse suivante dans votre navigateur :<br />
-https://<em>&lt;FQDN of Exchange 2013 Client Access server&gt;</em>/ECP? ExchClientVer=15</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Pour accéder au CAE à l’aide d’un compte associé à une boîte aux lettres située sur un serveur de boîtes aux lettres Exchange 2010 (tel qu’un compte d’administrateur de domaine), vous devez utiliser l’adresse suivante dans votre navigateur :
+> https://<em>&lt;FQDN of Exchange 2013 Client Access server&gt;</em>/ECP? ExchClientVer=15
 
 
 Vous pouvez accéder à l’organisation Exchange Online dans le CAE en sélectionnant l’onglet de navigation entre différents locaux d’Office 365. La navigation entre différents locaux vous permet de basculer facilement de votre organisation Exchange Online à votre organisation Exchange locale. Si vous avez configuré un déploiement hybride, sélectionnez l’onglet Office 365 pour gérer des objets destinataires et l’organisation Exchange Online. Si vous n’avez pas d’organisation Exchange Online, sélectionnez le lien Office 365 pour être redirigé vers la page de connexion d’Office 365.
@@ -50,18 +40,8 @@ Pour plus d'informations sur le CAE, consultez la rubrique [Centre d’administr
 
 L’Environnement de ligne de commande Exchange Management Shell vous permet de réaliser les mêmes tâches que le CAE, ainsi que d’autres tâches spécifiques pouvant uniquement être réalisées dans l’Environnement de ligne de commande Exchange Management Shell. L’Environnement de ligne de commande Exchange Management Shell est un ensemble de scripts et de cmdlets Windows PowerShell installés sur un ordinateur lors de l’installation des outils de gestion Exchange 2013. Ces scripts et cmdlets ne sont chargés que si l’Environnement de ligne de commande Exchange Management Shell est ouvert au moyen de l’icône Environnement de ligne de commande Exchange Management Shell. Si vous ouvrez directement Windows PowerShell, les scripts et cmdlets Exchange ne sont pas chargés et vous ne pouvez pas gérer l’organisation locale.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez créer une connexion Windows PowerShell manuelle à votre organisation locale, de la même manière que pour une connexion à l’organisation Exchange Online ci-dessous. Toutefois, il est vivement recommandé d’utiliser l’icône Environnement de ligne de commande Exchange Management Shell pour ouvrir l’Environnement de ligne de commande Exchange Management Shell sur vos serveurs Exchange locaux.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez créer une connexion Windows PowerShell manuelle à votre organisation locale, de la même manière que pour une connexion à l’organisation Exchange Online ci-dessous. Toutefois, il est vivement recommandé d’utiliser l’icône Environnement de ligne de commande Exchange Management Shell pour ouvrir l’Environnement de ligne de commande Exchange Management Shell sur vos serveurs Exchange locaux.
 
 
 Lorsque vous ouvrez l’Environnement de ligne de commande Exchange Management Shell via l’icône Environnement de ligne de commande Exchange Management Shell sur un ordinateur disposant des outils de gestion, vous pouvez gérer votre organisation locale. Cependant, vous ne pouvez pas gérer l’organisation Exchange Online si vous ouvrez l’Environnement de ligne de commande Exchange Management Shell via cette icône. En effet, l’ouverture de l’Environnement de ligne de commande Exchange Management Shell à l’aide de l’icône Environnement de ligne de commande Exchange Management Shell vous connecte automatiquement à un serveur Exchange local.

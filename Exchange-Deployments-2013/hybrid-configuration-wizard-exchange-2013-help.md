@@ -35,18 +35,8 @@ Moteur de configuration hybride
 
 Voici une présentation rapide du processus de l’assistant Configuration hybride. Dans un premier temps, l’assistant crée l’objet **HybridConfiguration** dans votre Active Directory local. Cet objet Active Directory stocke les informations de configuration hybride pour le déploiement hybride, puis est mis à jour par l’assistant Configuration hybride. Dans un deuxième temps, l’assistant collecte les données de configuration topologiques locales d’Exchange et d’Active Directory, les données de configuration d’Exchange Online et de l’organisation cliente Office 365, définit plusieurs paramètres d’organisation, puis exécute un ensemble important de tâches de configuration à la fois dans l’organisation locale et l’organisation Exchange Online.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez satisfaire plusieurs considérations et conditions préalables importantes avant d’utiliser l’assistant Configuration hybride. Vous devez satisfaire les exigences des déploiements hybrides décrites dans <a href="hybrid-deployment-prerequisites-exchange-2013-help.md">Configuration requise pour un déploiement hybride</a>. Vous pourrez ensuite lancer l’assistant Configuration hybride pour configurer votre organisation Exchange pour le déploiement hybride.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Vous devez satisfaire plusieurs considérations et conditions préalables importantes avant d’utiliser l’assistant Configuration hybride. Vous devez satisfaire les exigences des déploiements hybrides décrites dans <a href="hybrid-deployment-prerequisites-exchange-2013-help.md">Configuration requise pour un déploiement hybride</a>. Vous pourrez ensuite lancer l’assistant Configuration hybride pour configurer votre organisation Exchange pour le déploiement hybride.
 
 
 Les phases générales du processus de configuration de déploiement hybride sont les suivantes :
@@ -71,18 +61,8 @@ Les phases générales du processus de configuration de déploiement hybride son
 
 3.  **Application de modifications de configuration du déploiement hybride**   Après avoir analysé les comptes de gestion hybride, vérifié et contrôlé la topologie, puis collecté les informations de configuration que vous avez définies dans le processus de l’assistant, l’assistant de configuration hybride applique les modifications de configuration pour créer et activer le déploiement hybride. Toutes les modifications apportées à la configuration hybride sont automatiquement consignées dans le journal de configuration hybride. Par défaut, le journal de configuration hybride se situe sur le serveur de boîtes aux lettres local à l’emplacement `%UserProfile%\AppData\Roaming\Microsoft\Exchange Hybrid Configuration`.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le flux de messagerie entrant est contrôlé par l’enregistrement MX de votre organisation. Les messages électroniques Internet entrants pour un déploiement hybride ne sont pas configurés par l’assistant Configuration hybride.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > Le flux de messagerie entrant est contrôlé par l’enregistrement MX de votre organisation. Les messages électroniques Internet entrants pour un déploiement hybride ne sont pas configurés par l’assistant Configuration hybride.
 
 
 ## Fonctions de la configuration hybride
@@ -139,18 +119,9 @@ Le tableau ci-dessous indique les principales options que l’assistant Configur
 <td><p>Flux de messagerie</p></td>
 <td><p>L’Assistant vous permet de sélectionner et de configurer les serveurs Exchange qui vont assurer le transport de messagerie sécurisée entre l’organisation locale et l’organisation Exchange Online. Dans Exchange 2010, il s’agit d’un serveur de transport Hub. Dans Exchange 2013, il s’agit d’un serveur d’accès au client. Dans Exchange 2016 et versions ultérieures, il s’agit d’un serveur de boîte aux lettres.</p>
 <p>L’Assistant configure votre organisation locale Exchange et Exchange Online pour l’acheminement de la messagerie hybride. En configurant les connecteurs d’envoi et de réception nouveaux et existants dans l’organisation locale et des connecteurs entrants et sortants dans Exchange Online, l’Assistant vous permet de choisir si les messages sortants vers Internet à partir de l’organisation Exchange Online seront envoyés directement à des destinataires de messagerie externes ou s’ils seront acheminés via vos serveurs Exchange locaux inclus dans le déploiement hybride.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le flux de messagerie entrant est contrôlé par l’enregistrement MX de votre organisation. Les messages électroniques Internet entrants pour un déploiement hybride ne sont pas configurés par l’assistant Configuration hybride.</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]
+> Le flux de messagerie entrant est contrôlé par l’enregistrement MX de votre organisation. Les messages électroniques Internet entrants pour un déploiement hybride ne sont pas configurés par l’assistant Configuration hybride.
 
 </td>
 </tr>

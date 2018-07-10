@@ -37,32 +37,12 @@ Dans un déploiement hybride, de nombreux services utilisent des certificats :
 
 Dans le cadre de la configuration d’un déploiement hybride, vous devez utiliser et configurer des certificats que vous avez achetés auprès d’une autorité de certification tierce approuvée. Le certificat utilisé pour un transport de courrier sécurisé hybride doit être installé sur l’ensemble des boîtes aux lettres (Exchange 2016 et versions plus récentes) et des serveurs d’accès au client et de boîtes aux lettres (Exchange 2013 et versions antérieures) locaux.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous configurez un déploiement hybride dans une organisation dont les serveurs Exchange sont déployés dans plusieurs forêts Active Directory, vous devez utiliser un certificat émis par une autorité de certification tierce distincte pour <em>chaque</em> forêt Active Directory.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Si vous configurez un déploiement hybride dans une organisation dont les serveurs Exchange sont déployés dans plusieurs forêts Active Directory, vous devez utiliser un certificat émis par une autorité de certification tierce distincte pour <em>chaque</em> forêt Active Directory.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque des serveurs de transport Edge Exchange sont déployés dans une organisation locale, ce certificat doit également être installé sur tous les serveurs de transport Edge. Chaque serveur de transport doit utiliser un certificat qui partage la même autorité de certification tierce émettrice et le même objet pour que le transport de courrier sécurisé hybride fonctionne correctement.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque des serveurs de transport Edge Exchange sont déployés dans une organisation locale, ce certificat doit également être installé sur tous les serveurs de transport Edge. Chaque serveur de transport doit utiliser un certificat qui partage la même autorité de certification tierce émettrice et le même objet pour que le transport de courrier sécurisé hybride fonctionne correctement.
 
 
 De nombreux services, tels que AD FS, Exchange Federation, les services et Exchange, requièrent des certificats. En fonction de la nature de votre organisation, vous pouvez choisir l'une des options suivantes :

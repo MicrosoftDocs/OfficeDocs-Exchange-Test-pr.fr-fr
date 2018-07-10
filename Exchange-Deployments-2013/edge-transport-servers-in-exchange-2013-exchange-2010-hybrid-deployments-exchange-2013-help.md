@@ -29,18 +29,8 @@ Pour plus d'informations sur le rôle serveur de transport Edge Exchange 2010, 
 
 Les messages acheminés entre une organisation locale et une organisation Exchange Online dans un déploiement hybride requièrent que le service Microsoft Exchange Online Protection (EOP) se connecte directement de la part d’Exchange Online aux serveurs de transport Edge exécutant Exchange 2013 ou Exchange 2010 SP3.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous utilisez d’autres serveurs de transport Edge Exchange 2010 dans d’autres emplacements qui ne géreront pas de transport hybride, il n’est pas nécessaire de les mettre à niveau vers Exchange 2010 SP3. Toutefois, si à l’avenir vous souhaitez qu’EOP se connecte à d’autres serveurs de transport Edge pour le transport hybride, ceux-ci doivent être mis à niveau vers Exchange 2010 SP3 ou vers les serveurs de transport Edge Exchange 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Si vous utilisez d’autres serveurs de transport Edge Exchange 2010 dans d’autres emplacements qui ne géreront pas de transport hybride, il n’est pas nécessaire de les mettre à niveau vers Exchange 2010 SP3. Toutefois, si à l’avenir vous souhaitez qu’EOP se connecte à d’autres serveurs de transport Edge pour le transport hybride, ceux-ci doivent être mis à niveau vers Exchange 2010 SP3 ou vers les serveurs de transport Edge Exchange 2013.
 
 
 ## Ajout d'un serveur de transport Edge à un déploiement hybride

@@ -21,18 +21,8 @@ Les déploiements hybrides peuvent comporter des boîtes aux lettres qui réside
 
 Pour que la configuration du transport hybride fonctionne avec l’assistant de configuration hybride, le point de terminaison SMTP local qui accepte les connexions depuis Exchange Online doit être un serveur de boîtes aux lettres (Exchange 2016 et versions plus récentes), un serveur d’accès au client (Exchange 2013), un serveur de transport Hub (Exchange 2010 et versions antérieures), ou un serveur de transport Edge (Exchange 2010 et versions plus récentes).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ne placez aucun serveur, service ou périphérique entre vos serveurs Exchange locaux et Office 365 traitant ou modifiant le trafic SMTP. Le flux de messagerie sécurisée entre votre organisation Exchange locale et Office 365 dépend des informations contenues dans les messages envoyés au sein de l’organisation. Les pare-feu autorisant le trafic SMTP sur le port TCP 25 sans modification sont pris en charge. Si un serveur, un service ou un périphérique traite un message envoyé entre votre organisation Exchange locale et Office 365, ces informations sont supprimées. Dans ce cas, le message n’est plus considéré comme interne à votre organisation et est soumis à un filtrage anti-courrier indésirable, aux règles de journal et de transport, ainsi qu’à d’autres stratégies ne s’appliquant normalement pas à celui-ci.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Ne placez aucun serveur, service ou périphérique entre vos serveurs Exchange locaux et Office 365 traitant ou modifiant le trafic SMTP. Le flux de messagerie sécurisée entre votre organisation Exchange locale et Office 365 dépend des informations contenues dans les messages envoyés au sein de l’organisation. Les pare-feu autorisant le trafic SMTP sur le port TCP 25 sans modification sont pris en charge. Si un serveur, un service ou un périphérique traite un message envoyé entre votre organisation Exchange locale et Office 365, ces informations sont supprimées. Dans ce cas, le message n’est plus considéré comme interne à votre organisation et est soumis à un filtrage anti-courrier indésirable, aux règles de journal et de transport, ainsi qu’à d’autres stratégies ne s’appliquant normalement pas à celui-ci.
 
 
 Les messages entrants envoyés aux destinataires des deux organisations par des expéditeurs Internet externes suivent un itinéraire entrant commun. Les messages sortants envoyés depuis les organisations à des destinataires Internet externes peuvent suivre un itinéraire sortant commun ou bien emprunter des itinéraires indépendants.
@@ -47,18 +37,8 @@ Vous devrez choisir le mode d’acheminement du courrier entrant et sortant lors
     
     Avec le transport de courrier centralisé, vous pouvez acheminer l’ensemble du courrier des boîtes aux lettres de l’organisation Exchange Online via l’organisation locale avant qu’il ne soit remis sur Internet. Cette approche est utile dans les scénarios de mise ne conformité, dans lesquels l’ensemble du courrier en provenance et à destination d’Internet doit être traité par des serveurs locaux. Vous pouvez également configurer Exchange Online pour remettre les messages destinés à des destinataires externes directement sur Internet.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le transport de courrier centralisé est recommandé uniquement pour les organisations qui présentent des besoins de transport spécifiques liés à la conformité. Pour les organisations Exchange classiques, nous recommandons de ne pas activer le transport de messagerie centralisé, car cela risque d’entraîner une augmentation significative du nombre de messages traités par vos serveurs locaux, d’augmenter la bande passante utilisée et de créer une dépendance inutile sur vos serveurs locaux.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le transport de courrier centralisé est recommandé uniquement pour les organisations qui présentent des besoins de transport spécifiques liés à la conformité. Pour les organisations Exchange classiques, nous recommandons de ne pas activer le transport de messagerie centralisé, car cela risque d’entraîner une augmentation significative du nombre de messages traités par vos serveurs locaux, d’augmenter la bande passante utilisée et de créer une dépendance inutile sur vos serveurs locaux.
 
 
   - Souhaitez-vous déployer un serveur de transport Edge dans votre organisation locale ?
@@ -83,18 +63,8 @@ Afin d’optimiser la protection des destinataires de l’organisation locale et
 
 Lorsque le transport TLS forcé est utilisé, les serveurs d’envoi et de réception examinent le certificat configuré sur l’autre serveur. Le nom de l’objet, ou l’un des autres noms d’objets (SAN), configurés sur les certificats doit correspondre au nom de domaine complet qu’un administrateur a explicitement spécifié sur l’autre serveur. Par exemple, si EOP est configuré pour accepter et sécuriser les messages envoyés depuis le nom de domaine complet mail.contoso.com, le nom de l’objet ou l’autre nom d’objet du serveur de transport Edge ou d’accès au client local entrant doit avoir un certificat SSL avec mail.contoso.com. Si cette condition n’est pas remplie, la connexion est refusée par EOP.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il n’est pas nécessaire que le nom de domaine complet utilisé corresponde au nom de domaine de messagerie des destinataires. La seule condition est que le nom de domaine complet du nom d’objet du certificat ou de l’autre nom de l’objet corresponde au nom de domaine complet que les serveurs de réception ou d’envoi doivent accepter.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il n’est pas nécessaire que le nom de domaine complet utilisé corresponde au nom de domaine de messagerie des destinataires. La seule condition est que le nom de domaine complet du nom d’objet du certificat ou de l’autre nom de l’objet corresponde au nom de domaine complet que les serveurs de réception ou d’envoi doivent accepter.
 
 
 Outre l’utilisation de TLS, les messages échangés entre les organisations sont traités comme des messages « internes ». Cette approche permet aux messages de contourner les paramètres anti-courrier indésirable et d’autres services.

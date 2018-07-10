@@ -110,16 +110,6 @@ Exchange 2013 CU1 ou supérieur active la fonctionnalité de déploiement hybr
 
 Pour plus d’informations sur le téléchargement de la dernière version d’Exchange 2013, voir [Mises à jour pour Exchange 2013](http://technet.microsoft.com/library/jj907309).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez obtenir une licence pour votre serveur hybride lorsque vous configurez un déploiement hybride avec Exchange 2013 ou 2010 et Office 365. Pour obtenir une clé de produit Exchange Server gratuite pour utilisation dans la configuration de votre déploiement hybride, utilisez l’<a href="https://aka.ms/hybridkey">outil de clé de produit édition hybride</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Vous devez obtenir une licence pour votre serveur hybride lorsque vous configurez un déploiement hybride avec Exchange 2013 ou 2010 et Office 365. Pour obtenir une clé de produit Exchange Server gratuite pour utilisation dans la configuration de votre déploiement hybride, utilisez l’<a href="https://aka.ms/hybridkey">outil de clé de produit édition hybride</a>.
 

@@ -43,18 +43,8 @@ Toutes les figures dans l’Aide de Microsoft Exchange (captures d’écran, dia
 
 Les sections suivantes fournissent des informations sur les fonctionnalités, produits et services visant à faciliter l’accès des personnes à mobilité réduite à Microsoft Windows.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les informations contenues dans cette section s’applique uniquement aux utilisateurs achetant des licences de produits Microsoft aux États-Unis. Si vous avez obtenu ce produit en dehors des États-Unis, visitez le <a href="https://www.microsoft.com/enable">site Web Accessibilité de Microsoft</a> pour obtenir une liste de numéros de téléphone et adresses de support Microsoft services. Vous pouvez contacter votre filiale pour savoir si le type de produits et services décrits dans cette section sont disponibles dans votre région. Pour plus d’informations sur les fonctionnalités d’accessibilité intégrées aux produits Microsoft sur l’accessibilité dans le site web Microsoft Products.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les informations contenues dans cette section s’applique uniquement aux utilisateurs achetant des licences de produits Microsoft aux États-Unis. Si vous avez obtenu ce produit en dehors des États-Unis, visitez le <a href="https://www.microsoft.com/enable">site Web Accessibilité de Microsoft</a> pour obtenir une liste de numéros de téléphone et adresses de support Microsoft services. Vous pouvez contacter votre filiale pour savoir si le type de produits et services décrits dans cette section sont disponibles dans votre région. Pour plus d’informations sur les fonctionnalités d’accessibilité intégrées aux produits Microsoft sur l’accessibilité dans le site web Microsoft Products.
 
 
 ## Fonctionnalités d’accessibilité de Windows
