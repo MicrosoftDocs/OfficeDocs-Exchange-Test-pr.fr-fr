@@ -21,18 +21,8 @@ _<strong>Dernière rubrique modifiée :</strong>2016-12-09_
 
 Une nouvelle option de pièce jointe a récemment été rendue disponible dans Office 365. Dans Exchange 2016, cette option, appelée *collaboration sur les documents*, permet aux utilisateurs en local d’intégrer des pièces jointes stockées sur OneDrive Entreprise directement dans leurs clients Outlook sur le web.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>À partir de la version de Exchange Server 2016, Outlook Web App s’appelle désormais Outlook sur le web.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> À partir de la version de Exchange Server 2016, Outlook Web App s’appelle désormais Outlook sur le web.
 
 
 En règle générale, un utilisateur envoie un fichier à d’autres personnes en pièce jointe dans un message. Un ou plusieurs destinataires apportent ensuite des modifications dans leurs copies respectives du fichier, qui doivent finalement être toutes fusionnées à un moment donné. En outre, ces fichiers joints occupent de l’espace de stockage dans la boîte aux lettres de chaque utilisateur. Avec la collaboration sur les documents, les utilisateurs insèrent plutôt un lien vers un fichier qui est stocké dans un compte OneDrive Entreprise, ce qui permet la modification du fichier par plusieurs personnes au même emplacement source, sans espace de stockage supplémentaire requis.
@@ -59,18 +49,8 @@ Pour en savoir plus sur les déploiements hybrides, voir [Déploiements hybrides
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](https://technet.microsoft.com/fr-fr/library/jj150484\(v=exchg.150\)).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Mt589761.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Configurer Exchange 2016 pour activer la collaboration sur les documents dans un environnement hybride
@@ -85,53 +65,23 @@ Vérifiez que les étapes préalables suivantes ont été effectuées, puis util
 
   - Le serveur d’authentification doit être installé avec tous les utilisateurs synchronisés. Vous pouvez utiliser l’applet de commande [Get-AuthServer](https://technet.microsoft.com/fr-fr/library/jj218613\(v=exchg.150\)) pour trouver votre serveur d’authentification. Nous recommandons l’utilisation du HCW d’un serveur Exchange 2016 pour effectuer les configurations OAuth nécessaires.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>OAuth doit être configuré correctement entre Exchange 2016 et Office 365. Pour plus d’informations, voir <a href="https://technet.microsoft.com/fr-fr/library/dn594521(v=exchg.150)">Configurer l’authentification OAuth entre des organisations Exchange et Exchange Online</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > OAuth doit être configuré correctement entre Exchange 2016 et Office 365. Pour plus d’informations, voir <a href="https://technet.microsoft.com/fr-fr/library/dn594521(v=exchg.150)">Configurer l’authentification OAuth entre des organisations Exchange et Exchange Online</a>.
 
 
   - Les utilisateurs doivent disposer des licences appropriées. Les utilisateurs avec un compte professionnel OneDrive doivent avoir une licence pour SharePoint Online ou OneDrive Entreprise. Vous pouvez vérifier la licence d’un utilisateur en sélectionnant l’utilisateur dans le portail Office 365 et en sélectionnant le bouton **Modifier**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Voir <a href="http://go.microsoft.com/fwlink/p/?linkid=627455">Configurer OneDrive Entreprise dans Office 365</a> pour plus d’informations.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Voir <a href="http://go.microsoft.com/fwlink/p/?linkid=627455">Configurer OneDrive Entreprise dans Office 365</a> pour plus d’informations.
 
 
 Procédez comme suit :
 
 1.  Configurez la stratégie de boîte aux lettres Outlook sur le web par défaut pour définir l’URL hôte de OneDrive Entreprise.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous pouvez accéder à l’administration du client Office 365 SharePoint Online pour récupérer l’URL hôte de OneDrive Entreprise. Par exemple, https://contoso-my.sharepoint.com est une URL hôte Mon site dans le client O365 de Contoso.<br />
-    Bien que la stratégie de boîte aux lettres d’Outlook sur le web fournie avec Exchange 2016 soit appelée « Par défaut », elle n’est pas appliquée automatiquement aux boîtes aux lettres, sauf si vous définissez la stratégie par défaut, ou l’attribuez directement à une boîte aux lettres.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Vous pouvez accéder à l’administration du client Office 365 SharePoint Online pour récupérer l’URL hôte de OneDrive Entreprise. Par exemple, https://contoso-my.sharepoint.com est une URL hôte Mon site dans le client O365 de Contoso.<br />
+    > Bien que la stratégie de boîte aux lettres d’Outlook sur le web fournie avec Exchange 2016 soit appelée « Par défaut », elle n’est pas appliquée automatiquement aux boîtes aux lettres, sauf si vous définissez la stratégie par défaut, ou l’attribuez directement à une boîte aux lettres.
     
     En utilisant l’exemple suivant comme base, utilisez le Environnement de ligne de commande Exchange Management Shell pour configurer l’URL Mon site interne et externe sur la stratégie de boîte aux lettres d’Outlook sur le web par défaut :
     

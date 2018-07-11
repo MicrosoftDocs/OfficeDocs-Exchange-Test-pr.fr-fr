@@ -73,18 +73,8 @@ Vous devez tenir compte des aspects suivants avant d’implémenter un déploiem
 
   - **Prise en charge des autorisations de boîtes aux lettres entre différents locaux** Les déploiements hybrides Exchange prennent en charge l’utilisation des autorisations « Accès total » et « Envoyer pour le compte de » entre les boîtes aux lettres situées dans une organisation Exchange sur site et des boîtes aux lettres dans Office 365. Des étapes supplémentaires sont requises pour les autorisations « Envoyer en tant que ». En outre, une configuration supplémentaire peut être nécessaire pour prendre en charge les autorisations de boîtes aux lettres entre différents locaux, en fonction de la version d’Exchange installée dans votre organisation sur site. Pour plus d’informations, reportez-vous à la section [Octroi d'autorisations de boîte aux lettres à des délégués](permissions-in-exchange-hybrid-deployments-exchange-2013-help.md) dans la rubrique [Autorisations dans les déploiements hybrides Exchange](permissions-in-exchange-hybrid-deployments-exchange-2013-help.md), ainsi qu’à la rubrique [Configurer Exchange pour prendre en charge des autorisations de boîtes aux lettres déléguées dans un déploiement hybride](configure-exchange-to-support-delegated-mailbox-permissions-in-a-hybrid-deployment-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le déploiement de la fonctionnalité prenant en charge les droits Accès total, Envoyer pour le compte de et les droits sur les dossiers inter-forêts commencera en février 2018 et se terminera en avril 2018.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le déploiement de la fonctionnalité prenant en charge les droits Accès total, Envoyer pour le compte de et les droits sur les dossiers inter-forêts commencera en février 2018 et se terminera en avril 2018.
 
 
   - **Gestion des déplacements** : dans le cadre de la gestion continue des destinataires, vous pouvez avoir à replacer les boîtes aux lettres Exchange Online dans votre environnement local.
@@ -101,18 +91,8 @@ Un déploiement hybride implique différents services et composants :
 
   - **Serveurs Exchange** : au moins un serveur Exchange doit être configuré dans votre organisation locale si vous souhaitez configurer un déploiement hybride. Si vous exécutez Exchange 2013 ou version antérieure, vous devez installer au moins un serveur exécutant les rôles de boîte aux lettres et d’accès client. Si vous exécutez Exchange 2016 ou version ultérieure, au moins un serveur exécutant le rôle de boîte aux lettres doit être installé. Si nécessaire, les serveurs de transport Edge Exchange peuvent également être installés dans un réseau de périmètre et prendre en charge un flux de messagerie sécurisé avec Office 365.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Nous ne prenons pas en charge l’installation des serveurs Exchange exécutant les rôles de serveur de boîte aux lettres ou d’accès client dans un réseau de périmètre.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Nous ne prenons pas en charge l’installation des serveurs Exchange exécutant les rôles de serveur de boîte aux lettres ou d’accès client dans un réseau de périmètre.
 
 
   - **Microsoft Office 365** : le service Office 365 comprend une organisation Exchange Online dans le cadre de son service d’abonnement. Les organisations configurant un déploiement hybride doivent acheter une licence pour chaque boîte aux lettres migrée vers ou créée dans l’organisation Exchange Online.
@@ -215,18 +195,8 @@ Maintenant que vous savez un peu mieux ce qu'est un déploiement hybride, vous d
 
 La synchronisation Active Directory entre l’organisation locale et l’organisation Office 365, qui est réalisée toutes les trois heures par un serveur exécutant Azure Active Directory Connect, est une configuration requise pour la configuration d’un déploiement hybride. La synchronisation d’annuaires permet aux destinataires des deux organisations de se voir dans la liste d’adresses globale. Elle synchronise également les noms d’utilisateur et les mots de passe, ce qui permet aux utilisateurs de se connecter avec les mêmes informations d’identification dans l’organisation locale et Office 365.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous choisissez de configurer Azure AD Connect avec AD FS, les noms d’utilisateur et les mots de passe des utilisateurs locaux seront toujours synchronisés avec Office 365 par défaut. Toutefois, les utilisateurs s’authentifieront auprès de votre organisation Active Directory locale avec AD FS comme principale méthode d’authentification. Si AD FS ne peut pas se connecter à votre organisation Active Directory locale pour quelque raison que ce soit, les clients tentent de s’authentifier avec les noms d’utilisateur et les mots de passe synchronisés avec Office 365.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous choisissez de configurer Azure AD Connect avec AD FS, les noms d’utilisateur et les mots de passe des utilisateurs locaux seront toujours synchronisés avec Office 365 par défaut. Toutefois, les utilisateurs s’authentifieront auprès de votre organisation Active Directory locale avec AD FS comme principale méthode d’authentification. Si AD FS ne peut pas se connecter à votre organisation Active Directory locale pour quelque raison que ce soit, les clients tentent de s’authentifier avec les noms d’utilisateur et les mots de passe synchronisés avec Office 365.
 
 
 Tous les clients Azure Active Directory et Office 365 sont limités à 50 000 objets (utilisateurs, contacts à extension messagerie et groupes). Cette limite détermine le nombre d’objets que vous pouvez créer dans votre organisation Office 365. Lorsque vous vérifiez votre premier domaine, cette limite d’objets est automatiquement élevée à 300 000 objets. Si vous avez vérifié un domaine et que vous devez synchroniser plus de 300 000 objets, ou si vous n’avez aucun domaine à vérifier et que vous devez synchroniser plus de 50 000 objets, vous devez contacter le support Azure Active Directory pour demander une augmentation de votre quota d’objets.

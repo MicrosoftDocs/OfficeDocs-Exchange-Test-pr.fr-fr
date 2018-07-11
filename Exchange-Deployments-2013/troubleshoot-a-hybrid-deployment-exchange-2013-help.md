@@ -25,26 +25,11 @@ La configuration d’un déploiement hybride dans Exchange avec l’assistant de
 
   - Erreurs spécifiques de l'Assistant Configuration hybride
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans cette rubrique, les « serveurs Exchange » font référence aux serveurs suivants :
-<ul>
-<li><p><strong>Serveurs d’accès au client</strong> Exchange 2013 et les versions antérieures</p></li>
-<li><p><strong>Serveurs de boîte aux lettres</strong> Exchange 2016 et les versions ultérieures</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]
+> Dans cette rubrique, les « serveurs Exchange » font référence aux serveurs suivants :
+> <ul>
+> <li><p><strong>Serveurs d’accès au client</strong> Exchange 2013 et les versions antérieures</p></li>
+> <li><p><strong>Serveurs de boîte aux lettres</strong> Exchange 2016 et les versions ultérieures</p></li></ul>
 
 Pour plus d’informations, consultez la rubrique [Déploiements hybrides Exchange Server](exchange-server-hybrid-deployments-exchange-2013-help.md).
 
@@ -60,18 +45,8 @@ Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives a
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](https://technet.microsoft.com/fr-fr/library/jj150484\(v=exchg.150\)).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Mt589761.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

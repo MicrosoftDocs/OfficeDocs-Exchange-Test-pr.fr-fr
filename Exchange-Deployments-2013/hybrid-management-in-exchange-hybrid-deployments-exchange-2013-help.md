@@ -35,18 +35,8 @@ Pour plus d'informations sur le CAE, consultez la rubrique [Centre d’administr
 
 L’Environnement de ligne de commande Exchange Management Shell vous permet de réaliser les mêmes tâches que le CAE, ainsi que d’autres tâches spécifiques pouvant uniquement être réalisées dans l’Environnement de ligne de commande Exchange Management Shell. L’Environnement de ligne de commande Exchange Management Shell est un ensemble de cmdlets et de scripts Windows PowerShell installés sur un ordinateur lors de l’installation des outils de gestion Exchange. Ces scripts et cmdlets ne sont chargés que si l’Environnement de ligne de commande Exchange Management Shell est ouvert au moyen de l’icône Environnement de ligne de commande Exchange Management Shell. Si vous ouvrez directement Windows PowerShell, les scripts et cmdlets Exchange ne sont pas chargés et vous ne pouvez pas gérer l’organisation locale.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez créer une connexion Windows PowerShell manuelle à votre organisation locale, de la même manière que pour une connexion à l’organisation Exchange Online ci-dessous. Toutefois, il est vivement recommandé d’utiliser l’icône Environnement de ligne de commande Exchange Management Shell pour ouvrir l’Environnement de ligne de commande Exchange Management Shell sur vos serveurs Exchange locaux.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez créer une connexion Windows PowerShell manuelle à votre organisation locale, de la même manière que pour une connexion à l’organisation Exchange Online ci-dessous. Toutefois, il est vivement recommandé d’utiliser l’icône Environnement de ligne de commande Exchange Management Shell pour ouvrir l’Environnement de ligne de commande Exchange Management Shell sur vos serveurs Exchange locaux.
 
 
 Lorsque vous ouvrez l’Environnement de ligne de commande Exchange Management Shell via l’icône Environnement de ligne de commande Exchange Management Shell sur un ordinateur disposant des outils de gestion, vous pouvez gérer votre organisation locale. Cependant, vous ne pouvez pas gérer l’organisation Exchange Online si vous ouvrez l’Environnement de ligne de commande Exchange Management Shell via cette icône. En effet, l’ouverture de l’Environnement de ligne de commande Exchange Management Shell à l’aide de l’icône Environnement de ligne de commande Exchange Management Shell vous connecte automatiquement à un serveur Exchange local.

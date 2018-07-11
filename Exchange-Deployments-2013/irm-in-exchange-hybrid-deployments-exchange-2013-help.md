@@ -190,18 +190,8 @@ Outre l’application de votre configuration AD RMS locale à l’organisation E
 
 Après avoir configuré votre réseau local et exporté les données de domaine de publication approuvé, vous devez configurer l'organisation Exchange Online en important les données de domaine de publication approuvé et en activant la gestion des droits relatifs à l'information.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Chaque fois que vous modifiez votre configuration AD RMS locale, vous devez appliquer la nouvelle configuration manuellement à l’organisation Exchange Online. Pour ce faire, exportez les données de domaine de publication approuvé de votre serveur AD RMS local et importez-les dans l’organisation Exchange Online.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Chaque fois que vous modifiez votre configuration AD RMS locale, vous devez appliquer la nouvelle configuration manuellement à l’organisation Exchange Online. Pour ce faire, exportez les données de domaine de publication approuvé de votre serveur AD RMS local et importez-les dans l’organisation Exchange Online.
 
 
 ## Configuration de la gestion des droits relatifs à l’information (IRM) dans les déploiements hybrides Exchange
@@ -260,18 +250,8 @@ Après avoir activé IRM dans l'organisation Exchange Online, vous devez distri
     
         Set-RMSTemplate <template name> -Type Distributed
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous ne pouvez pas modifier le modèle AD RMS « Ne pas transférer ».</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Vous ne pouvez pas modifier le modèle AD RMS « Ne pas transférer ».
 
 
 3.  Répétez l'étape 2 pour tous les modèles AD RMS à distribuer.
