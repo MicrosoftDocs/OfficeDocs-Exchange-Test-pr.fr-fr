@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :** Exchange Server 2013_
+_**Sapplique à :**Exchange Server 2013_
 
-_**Dernière rubrique modifiée :** 2015-03-09_
+_**Dernière rubrique modifiée :**2015-03-09_
 
 Le rôle de gestion `View-Only Configuration` permet aux administrateurs d’afficher tous les paramètres de configuration d’Exchange non liés aux destinataires dans une organisation. Les exemples de configuration qui sont affichables sont la configuration du serveur, la configuration du transport, la configuration de la base de données et la configuration à l’échelle de l’organisation.
 
@@ -53,8 +53,18 @@ Pour attribuer ce rôle à d’autres personnes, il doit être attribué à un g
 
 Vous pouvez également supprimer ce rôle à partir des groupes de rôle intégrés, des groupes de rôles que vous créez, des utilisateurs et des groupes de sécurité universels. Cependant, il doit toujours y avoir au moins une attribution de rôle de délégation entre ce rôle et un groupe de rôles ou un groupe de sécurité universel. Vous ne pouvez pas supprimer la dernière attribution de rôle de délégation. Cette limitation permet d’empêcher de vous déconnecter du système.
 
-> [!NOTE]
-> Il doit toujours y avoir au moins une attribution de rôle de délégation entre ce rôle et un groupe de rôles ou un groupe de sécurité universel. Vous ne pouvez pas supprimer la dernière attribution de rôle de délégation associée à ce rôle si la dernière attribution est affectée à un utilisateur.
+<table>
+<thead>
+<tr class="header">
+<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Il doit toujours y avoir au moins une attribution de rôle de délégation entre ce rôle et un groupe de rôles ou un groupe de sécurité universel. Vous ne pouvez pas supprimer la dernière attribution de rôle de délégation associée à ce rôle si la dernière attribution est affectée à un utilisateur.</td>
+</tr>
+</tbody>
+</table>
 
 
 Pour plus d’informations sur la manière d’ajouter ou de supprimer des attributions entre ce rôle et les groupes de rôles, les utilisateurs et les groupes de sécurité universels, consultez les rubriques suivantes :
@@ -137,7 +147,7 @@ Ce rôle a des attributions de rôle pour une ou plusieurs personnes affectées 
 <tr class="even">
 <td><p><a href="delegated-setup-exchange-2013-help.md">Installation déléguée</a></p></td>
 <td><p>X</p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Organization</code></p></td>
 <td><p><code>None</code></p></td>
 <td><p><code>OrganizationConfig</code></p></td>
@@ -146,7 +156,7 @@ Ce rôle a des attributions de rôle pour une ou plusieurs personnes affectées 
 <tr class="odd">
 <td><p><a href="hygiene-management-exchange-2013-help.md">Gestion de l’hygiène</a></p></td>
 <td><p>X</p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Organization</code></p></td>
 <td><p><code>None</code></p></td>
 <td><p><code>OrganizationConfig</code></p></td>
@@ -164,7 +174,7 @@ Ce rôle a des attributions de rôle pour une ou plusieurs personnes affectées 
 <tr class="odd">
 <td><p><a href="view-only-organization-management-exchange-2013-help.md">Gestion de l’organisation en affichage seul</a></p></td>
 <td><p>X</p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Organization</code></p></td>
 <td><p><code>None</code></p></td>
 <td><p><code>OrganizationConfig</code></p></td>
@@ -180,8 +190,18 @@ Ce rôle a été configuré pour fournir à une personne affectée au rôle tout
 
 Si vous décidez que vous avez besoin de créer une version personnalisée de ce rôle, vous devez créer un rôle enfant et personnaliser le nouveau rôle.
 
-> [!CAUTION]
-> Les informations suivantes vous permettent d’effectuer la gestion avancée d’autorisations. La personnalisation des rôles de gestion peut augmenter considérablement la complexité de votre modèle d’autorisations. Vous risquez d’interrompre le fonctionnement de certaines fonctions si vous remplacez le rôle de gestion intégré par un rôle personnalisé et configuré de manière incorrecte.
+<table>
+<thead>
+<tr class="header">
+<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Les informations suivantes vous permettent d’effectuer la gestion avancée d’autorisations. La personnalisation des rôles de gestion peut augmenter considérablement la complexité de votre modèle d’autorisations. Vous risquez d’interrompre le fonctionnement de certaines fonctions si vous remplacez le rôle de gestion intégré par un rôle personnalisé et configuré de manière incorrecte.</td>
+</tr>
+</tbody>
+</table>
 
 
 Les étapes suivantes sont celles les plus courantes pour créer un rôle personnalisé et l’attribuer à une personne affectée au rôle :
@@ -206,6 +226,16 @@ Les étapes suivantes sont celles les plus courantes pour créer un rôle person
     
       - [Ajouter un rôle à un utilisateur ou un groupe de sécurité universel](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
         
-        > [!NOTE]
-        > Si vous souhaitez que les autres utilisateurs, en plus de l’utilisateur qui a créé le rôle, puissent attribuer le nouveau rôle personnalisé, assurez-vous d’ajouter une attribution de rôle de délégation à au moins une personne affectée au rôle. Pour plus d’informations, consultez la rubrique <a href="delegate-role-assignments-exchange-2013-help.md">Déléguer les attributions de rôles</a>.
+        <table>
+        <thead>
+        <tr class="header">
+        <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>Si vous souhaitez que les autres utilisateurs, en plus de l’utilisateur qui a créé le rôle, puissent attribuer le nouveau rôle personnalisé, assurez-vous d’ajouter une attribution de rôle de délégation à au moins une personne affectée au rôle. Pour plus d’informations, consultez la rubrique <a href="delegate-role-assignments-exchange-2013-help.md">Déléguer les attributions de rôles</a>.</td>
+        </tr>
+        </tbody>
+        </table>
 

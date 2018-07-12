@@ -53,42 +53,42 @@ Souhaitez-vous rechercher des tâches de gestion relatives aux journaux d’audi
 </tr>
 <tr class="odd">
 <td><p><code>Event</code></p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p>Cette balise contient l’entrée du journal d’audit pour une cmdlet individuelle. Cette balise contient les attributs <code>Caller</code>, <code>Cmdlet</code>, <code>ObjectModified</code>, <code>RunDate</code>, <code>Succeeded</code>, <code>Error</code> et <code>OriginatingServer</code>. Les balises <code>CmdletParameters</code> et <code>ModifiedProperties</code> sont des enfants de cette balise.</p>
 <p>Il existe une balise <code>Event</code> par entrée de journal d’audit.</p></td>
 </tr>
 <tr class="even">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Caller</code></p></td>
 <td><p>Cet attribut contient le compte de l’utilisateur qui a exécuté la cmdlet dans l’attribut <code>Cmdlet</code>.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Cmdlet</code></p></td>
 <td><p>Cet attribut contient le nom de la cmdlet exécutée par l’utilisateur dans l’attribut <code>Caller</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>ObjectModified</code></p></td>
 <td><p>Cet attribut contient l’objet modifié par la cmdlet spécifiée dans l’attribut <code>Cmdlet</code>. La balise <code>ModifiedProperties</code> affiche les propriétés qui ont été modifiées sur cet objet.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>RunDate</code></p></td>
 <td><p>Cet attribut contient la date et l’heure de l’exécution de la cmdlet dans l’attribut <code>Cmdlet</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Succeeded</code></p></td>
 <td><p>Cet attribut spécifie si la cmdlet a été correctement exécutée dans l’attribut <code>Cmdlet</code>. La valeur est <code>True</code> ou <code>False</code>.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Error</code></p></td>
 <td><p>Cet attribut contient le message d’erreur qui est généré en cas d’échec de l’exécution de la cmdlet dans l’attribut <code>Cmdlet</code>. Si aucune erreur ne s’est produite, la valeur est définie sur <code>None</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>OriginatingServer</code></p></td>
 <td><p>Cet attribut contient le serveur dans lequel la cmdlet spécifiée dans l’attribut <code>Cmdlet</code> a été exécutée.</p></td>
 </tr>
@@ -100,17 +100,17 @@ Souhaitez-vous rechercher des tâches de gestion relatives aux journaux d’audi
 </tr>
 <tr class="even">
 <td><p><code>Parameter</code></p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p>Cette balise contient un paramètre individuel spécifié au moment de l’exécution de la cmdlet. Cette balise contient les attributs <code>Name</code> et <code>Value</code>.</p>
 <p>Il peut exister plusieurs balises <code>Parameter</code> par balise <code>CmdletParameters</code>.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Name</code></p></td>
 <td><p>Cet attribut contient le nom du paramètre spécifié au moment de l’exécution de la cmdlet.</p></td>
 </tr>
 <tr class="even">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Value</code></p></td>
 <td><p>Cet attribut contient la valeur fournie pour le paramètre spécifié dans l’attribut <code>Name</code>.</p></td>
 </tr>
@@ -126,22 +126,22 @@ Souhaitez-vous rechercher des tâches de gestion relatives aux journaux d’audi
 </tr>
 <tr class="even">
 <td><p><code>Property</code></p></td>
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p>Cette balise contient une propriété individuelle spécifiée au moment de l’exécution de la cmdlet. Cette balise contient les attributs <code>Name</code>, <code>OldValue</code> et <code>NewValue</code>.</p>
 <p>Il peut exister plusieurs balises <code>Property</code> par balise <code>ModifiedProperties</code>.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>Name</code></p></td>
 <td><p>Cet attribut contient le nom de la propriété modifiée au moment de l’exécution de la cmdlet.</p></td>
 </tr>
 <tr class="even">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>OldValue</code></p></td>
 <td><p>Cet attribut contient la valeur contenue dans la propriété spécifiée dans l’attribut <code>Name</code> avant sa modification.</p></td>
 </tr>
 <tr class="odd">
-<td><p><code> </code></p></td>
+<td><p></p></td>
 <td><p><code>NewValue</code></p></td>
 <td><p>Cet attribut contient la valeur utilisée pour modifier la propriété dans l’attribut <code>Name</code>.</p></td>
 </tr>

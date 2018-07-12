@@ -114,9 +114,7 @@ Pour activer le déchargement SSL pour le CEA, vous devez supprimer l’exigence
       - Via la ligne de commande, entrez la commande suivante, puis appuyez sur Entrée.
         
             appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
-        
-        ``` 
-        ```
+
 
   - **Étape 2** Vous devez recycler le pool d’applications correct ou redémarrer Internet Information Services en utilisant l’une des méthodes suivantes :
     
