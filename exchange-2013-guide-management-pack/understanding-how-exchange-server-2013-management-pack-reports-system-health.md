@@ -1,5 +1,5 @@
 ﻿---
-title: Présentation de la création de rapports sur l'intégrité du système par le pack d'administration Exchange Server 2013
+title: Rapport d'intégrité du système par le pack d'administration Exchange Server
 TOCTitle: Présentation de la création de rapports sur l'intégrité du système par le pack d'administration Exchange Server 2013
 ms:assetid: 6ca8847f-93fe-458d-bd43-7afad7fdd2f4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn195910(v=EXCHG.150)
