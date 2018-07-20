@@ -62,7 +62,8 @@ Cette liste est générique dans la mesure où elle fournit des instructions pou
 <tr class="odd">
 <td> </td>
 <td><p>4. Configurer un espace de noms disjoint.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Cette étape est facultative. Elle n'est nécessaire que si votre organisation a recours à un espace de noms disjoint.
 
 </td>
@@ -81,7 +82,8 @@ Cette liste est générique dans la mesure où elle fournit des instructions pou
 <tr class="even">
 <td><p></p></td>
 <td><p>7. Installer le rôle serveur de transport Edge.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Cette étape est facultative. Elle est nécessaire uniquement si vous souhaitez installer un serveur de transport Edge. Pour plus d’informations, voir <a href="edge-transport-servers-exchange-2013-help.md">Serveurs de transport Edge</a>.
 
 </td>
@@ -111,7 +113,8 @@ Cette liste est générique dans la mesure où elle fournit des instructions pou
 <tr class="odd">
 <td> </td>
 <td><p>12. Configurer les paramètres sur les répertoires virtuels, y compris le carnet d’adresses en mode hors connexion, les services web Exchange, le Centre d’administration Exchange (CAE), Outlook Web App et les répertoires virtuels Exchange ActiveSync.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Cette étape est nécessaire si vous voulez utiliser les services web Exchange, Outlook Anywhere ou le Carnet d'adresses en mode hors connexion. Elle peut également être nécessaire si vous devez modifier des paramètres par défaut du Centre d'administration Exchange (CAE), Outlook Web App ou Exchange ActiveSync.
 
 </td>
@@ -126,7 +129,8 @@ Cette liste est générique dans la mesure où elle fournit des instructions pou
 <tr class="odd">
 <td> </td>
 <td><p>14. Configurer la messagerie unifiée.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Cette étape est facultative. Elle n'est nécessaire que si vous voulez utiliser la messagerie unifiée dans votre organisation.
 
 </td>
@@ -135,7 +139,8 @@ Cette liste est générique dans la mesure où elle fournit des instructions pou
 <tr class="even">
 <td><p></p></td>
 <td><p>15. Configurer des paramètres supplémentaires de la messagerie unifiée et de Lync Server.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Cette étape est facultative. Elle n’est nécessaire que si vous avez configuré la messagerie unifiée dans votre organisation et que vous voulez l’intégrer à Lync Server.
 
 </td>

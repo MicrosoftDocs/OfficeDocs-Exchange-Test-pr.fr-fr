@@ -146,7 +146,8 @@ Chaque entrée de journal d'audit contient les informations décrites dans le ta
 <tr class="odd">
 <td><p><code>ModifiedProperties</code></p></td>
 <td><p>Ce champ contient les propriétés modifiées sur l'objet dans le champ <code>ObjectModified</code>. L'ancienne valeur de la propriété et la nouvelle valeur stockée sont également stockées dans ce champ, mais sont invisibles dans la sortie par défaut. Pour plus d'informations sur l'accès aux informations supplémentaires dans ce champ, consultez la rubrique <a href="search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md">Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur</a>.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Ce champ est uniquement renseigné si le paramètre <em>LogLevel</em> de la cmdlet <strong>Set-AdminAuditLogConfig</strong> est défini sur <code>Verbose</code>.
 
 </td>
@@ -231,7 +232,7 @@ Vous pouvez utiliser les mêmes critères de recherche avec la cmdlet **New-Admi
 
 Après exécution de la cmdlet **New-AdminAuditLogSearch**, Exchange peut prendre jusqu'à 15 minutes pour remettre le rapport au destinataire spécifié. Le rapport sous forme de fichier XML joint peut avoir une taille maximale de 10 mégaoctets (Mo). Le fichier XML contient les mêmes informations décrites dans le tableau dans Audit Log Contents. Pour plus d'informations sur la structure du fichier XML, consultez la rubrique [Structure du journal d’audit de l’administrateur](administrator-audit-log-structure-exchange-2013-help.md).
 
-> [!NOTE]
+> [!NOTE]  
 > Outlook Web App ne vous permet pas d’ouvrir des pièces jointes au format XML par défaut. Vous pouvez soit configurer Exchange de façon à autoriser l’affichage des pièces jointes au format XML à l’aide d’Outlook Web App, soit utiliser un autre client de messagerie électronique, tel que Microsoft Outlook, de façon à afficher la pièce jointe. Pour plus d’informations sur la configuration d’Outlook Web App afin de permettre l’affichage d’une pièce jointe au format XML, consultez la rubrique <a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">Affichage ou configuration des répertoires virtuels d’Outlook Web App</a>.
 
 

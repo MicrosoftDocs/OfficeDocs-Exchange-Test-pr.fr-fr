@@ -304,7 +304,7 @@ Retour au début
 
 ## Objet ou corps du message
 
-> [!NOTE]
+> [!NOTE]  
 > La recherche de mots clés ou de modèles de texte dans l’objet ou dans d’autres champs d’en-tête du message est effectuée <em>après</em> que le codage utilisé avec la méthode MIME pour transmettre le message binaire entre les serveurs SMTP a été décodé en texte ASCII. Vous ne pouvez pas utiliser de conditions ou d’exceptions pour rechercher les valeurs codées brutes (en règle générale, en base 64) dans l’objet ou d’autres champs d’en-tête des messages.
 
 
@@ -742,7 +742,8 @@ Retour au début
 <p><em>ExceptIfMessageTypeMatches</em></p></td>
 <td><p><code>MessageType</code></p></td>
 <td><p>Messages du type spécifié.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Lors de la Outlook ou Outlook Web App est configuré pour transférer un message, la propriété <strong>ForwardingSmtpAddress</strong> est ajoutée au message. Le type de message n’est pas modifié pour <code>AutoForward</code>.
 
 </td>
@@ -792,7 +793,7 @@ Retour au début
 
 ## En-têtes de message
 
-> [!NOTE]
+> [!NOTE]  
 > La recherche de mots clés ou de modèles de texte dans l’objet ou dans d’autres champs d’en-tête du message est effectuée <em>après</em> que le codage utilisé avec la méthode MIME pour transmettre le message binaire entre les serveurs SMTP a été décodé en texte ASCII. Vous ne pouvez pas utiliser de conditions ou d’exceptions pour rechercher les valeurs codées brutes (en règle générale, en base 64) dans l’objet ou d’autres champs d’en-tête des messages.
 
 
@@ -978,7 +979,7 @@ Retour au début
 
 Les types de propriétés utilisés dans les conditions et les exceptions sont décrits dans le tableau suivant.
 
-> [!NOTE]
+> [!NOTE]  
 > Si la propriété est une chaîne, les espaces ne sont pas autorisés.
 
 
@@ -1106,7 +1107,8 @@ Les types de propriétés utilisés dans les conditions et les exceptions sont d
 <li><p><strong>Demande d’approbation</strong> (<code>ApprovalRequest</code>)</p></li>
 <li><p><strong>Confirmation de lecture</strong> (<code>ReadReceipt</code>)</p></li>
 </ul>
-> [!NOTE]
+
+> [!NOTE]  
 > Lors de la Outlook ou Outlook Web App est configuré pour transférer un message, la propriété <strong>ForwardingSmtpAddress</strong> est ajoutée au message. Le type de message n’est pas modifié pour <code>AutoForward</code>.
 
 </td>
@@ -1160,7 +1162,8 @@ Les types de propriétés utilisés dans les conditions et les exceptions sont d
 <li><p>L’adresse de messagerie de l’expéditeur n’est pas dans un domaine accepté.</p></li>
 <li><p>L’adresse de messagerie de l’expéditeur est dans un domaine accepté configuré en tant que domaine de relais externe.</p></li>
 </ul>
-> [!NOTE]
+
+> [!NOTE]    
 > Pour déterminer si des contacts de messagerie sont considérés comme étant situés à l’intérieur ou à l’extérieur de l’organisation, l’adresse de l’expéditeur est comparée aux domaines acceptés de l’organisation.
 
 </td>

@@ -63,7 +63,8 @@ Cette liste de contrôle est générique dans la mesure où elle fournit des con
 <tr class="odd">
 <td> </td>
 <td><p>4. Configurez un espace de noms disjoint.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Cette étape est facultative. Elle n'est nécessaire que si votre organisation exécute un espace de noms disjoint.
 
 </td>
@@ -94,7 +95,8 @@ Cette liste de contrôle est générique dans la mesure où elle fournit des con
 <tr class="even">
 <td><p></p></td>
 <td><p>9. Configurez des répertoires virtuels liés à Exchange.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Cette étape est essentielle si vous souhaitez utiliser les services web Exchange, Outlook Anywhere ou le carnet d'adresses en mode hors connexion. Elle peut également s’avérer nécessaire si vous souhaitez modifier l’un des paramètres par défaut pour le Panneau de configuration Exchange, Microsoft Office Outlook Web App ou Exchange ActiveSync.
 > 
 
@@ -116,7 +118,8 @@ Cette liste de contrôle est générique dans la mesure où elle fournit des con
 <tr class="odd">
 <td><p></p></td>
 <td><p>12. Configurez le serveur de transport Edge.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Cette étape est facultative. Elle n’est nécessaire que si votre organisation utilise un serveur de transport Edge.
 
 </td>
@@ -125,7 +128,8 @@ Cette liste de contrôle est générique dans la mesure où elle fournit des con
 <tr class="even">
 <td> </td>
 <td><p>13. Configurez la messagerie unifiée.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Cette étape est facultative. Elle n'est nécessaire que si vous souhaitez utiliser la messagerie unifiée dans votre organisation.
 
 </td>
@@ -160,7 +164,8 @@ Cette liste de contrôle est générique dans la mesure où elle fournit des con
 <tr class="even">
 <td> </td>
 <td><p>19. Déplacez des données de dossiers publics d’Exchange 2013 vers Exchange 2013.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Cette étape est facultative. Elle n’est nécessaire que si votre organisation utilise des dossiers publics.
 
 </td>

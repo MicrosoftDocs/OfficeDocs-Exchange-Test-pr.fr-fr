@@ -123,7 +123,8 @@ Le tableau suivant répertorie la couche de stratégie d’attribution de rôle 
 <td><p><a href="add-a-role-entry-to-a-role-exchange-2013-help.md">Ajouter une entrée de rôle à un rôle</a></p>
 <p><a href="change-a-role-entry-exchange-2013-help.md">Modifier une entrée de rôle</a></p>
 <p><a href="remove-a-role-entry-from-a-role-exchange-2013-help.md">Supprimer une entrée de rôle d'un rôle</a></p>
-> [!NOTE]
+
+> [!NOTE]  
 > La modification des entrées de rôle de gestion dans les rôles de gestion d’une stratégie d’attribution de rôle est une tâche avancée et elle n’est généralement pas requise dans la plupart des cas. Vous pouvez à la place utiliser un rôle de gestion préexistant qui convienne à vos besoins. Pour plus d’informations, voir <a href="built-in-role-groups-exchange-2013-help.md">Groupes de rôles intégrés</a>.
 
 </td>
