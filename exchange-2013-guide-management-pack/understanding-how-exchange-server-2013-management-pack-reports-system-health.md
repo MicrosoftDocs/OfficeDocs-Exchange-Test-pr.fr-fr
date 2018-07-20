@@ -1,5 +1,5 @@
 ﻿---
-title: Pack d’administration Exchange Server 2013 : rapports sur l’état du système
+title: Pack d’administration Exchange Server 2013 - rapports sur l’état du système
 TOCTitle: Présentation de la création de rapports sur l'intégrité du système par le pack d'administration Exchange Server 2013
 ms:assetid: 6ca8847f-93fe-458d-bd43-7afad7fdd2f4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn195910(v=EXCHG.150)
