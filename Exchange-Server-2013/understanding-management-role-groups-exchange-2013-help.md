@@ -19,7 +19,7 @@ _**Dernière rubrique modifiée :** 2015-03-09_
 
 Un *groupe de rôles de gestion* est un groupe de sécurité universel utilisé dans le modèle d’autorisations de contrôle d’accès basé sur les rôles (RBAC) dans Microsoft Exchange Server 2013. Un groupe de rôles de gestion simplifie l’attribution des rôles de gestion à un groupe d’utilisateurs. Le même ensemble de rôles est attribué à tous les membres d’un groupe de rôles. Des rôles administrateurs et spécialistes sont attribués aux groupes de rôles. Ils définissent les principales tâches administratives dans Exchange 2013 comme la gestion de l’organisation, la gestion des destinataires et d’autres tâches. Les groupes de rôles vous permettent d’attribuer plus facilement un plus grand ensemble d’autorisations à un groupe d’administrateurs et d’utilisateurs spécialistes.
 
-> [!NOTE]
+> [!NOTE]  
 > Cette rubrique traite de la fonctionnalité RBAC avancée. Si vous souhaitez gérer des autorisations Exchange 2013 de base, comme l’utilisation du centre d’administration Exchange pour ajouter et supprimer des membres dans les groupes de rôles, créer et modifier des groupes de rôles ou créer et modifier des stratégies d’attribution de rôles, consultez la rubrique <a href="permissions-exchange-2013-help.md">Autorisations</a>.
 
 
@@ -39,7 +39,7 @@ Appartenance au groupe de rôles
 
 Flux de travail de création de groupe de rôles
 
-> [!NOTE]
+> [!NOTE]  
 > Si vous souhaitez attribuer des autorisations à des utilisateurs pour qu’ils gèrent leurs propres groupes de distribution ou boîtes aux lettres, consultez la rubrique <a href="understanding-management-role-assignment-policies-exchange-2013-help.md">Présentation des stratégies d’attribution de rôle de gestion</a>.
 
 
@@ -110,7 +110,8 @@ Le tableau suivant répertorie la couche des groupes de rôles et les rubriques 
 <td><p><a href="add-a-role-entry-to-a-role-exchange-2013-help.md">Ajouter une entrée de rôle à un rôle</a></p>
 <p><a href="change-a-role-entry-exchange-2013-help.md">Modifier une entrée de rôle</a></p>
 <p><a href="remove-a-role-entry-from-a-role-exchange-2013-help.md">Supprimer une entrée de rôle d'un rôle</a></p>
-> [!NOTE]
+
+> [!NOTE]  
 > La modification des entrées de rôle de gestion dans les rôles de gestion d’un groupe de rôles est une tâche avancée et elle n’est généralement pas requise dans la plupart des cas. Au lieu de cela, vous pouvez utiliser un rôle de gestion préexistant qui convient à vos besoins. Pour plus d’informations, voir <a href="built-in-role-groups-exchange-2013-help.md">Groupes de rôles intégrés</a>.
 
 </td>
@@ -229,7 +230,7 @@ Si la propriété **ManagedBy** est définie sur un groupe de rôles, seuls les 
 
 Si la propriété **ManagedBy** n’est pas définie sur un groupe de rôles, seuls les utilisateurs membres du rôle Gestion de l’organisation ou auxquels a été attribué, directement ou indirectement, le rôle de gestion de gestion des rôles peuvent modifier un groupe de rôle ou leur appartenance à un groupe de rôles.
 
-> [!NOTE]
+> [!NOTE]  
 > Les rôles attribués à un groupe de rôles peuvent être attribués à l’aide des attributions de rôles de délégation. Grâce aux attributions de rôles de délégation, les membres d’un groupe de rôles auquel a été attribué un rôle délégué peuvent attribuer ce rôle à un autre groupe de rôles, stratégie d’attribution, utilisateur ou groupe universel de sécurité. Les membres du groupe de rôles peuvent uniquement attribuer ce rôle et ne peuvent pas déléguer le groupe de rôles, à moins d’être également ajoutés à la propriété <strong>ManagedBy</strong>. Pour plus d’informations sur les attributions des rôles délégués, consultez la rubrique <a href="understanding-management-role-assignments-exchange-2013-help.md">Présentation des attributions de rôles de gestion</a>.
 
 

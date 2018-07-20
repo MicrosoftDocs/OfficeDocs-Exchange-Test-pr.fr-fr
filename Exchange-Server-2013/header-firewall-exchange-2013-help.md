@@ -154,7 +154,8 @@ Le tableau suivant décrit l'application par défaut des autorisations de pare-f
 <li><p>Serveurs de transport Hub</p></li>
 <li><p>Serveurs de transport Edge</p></li>
 <li><p>Serveurs Exchange</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Sur les serveurs de transport Hub uniquement
 
 </li>
@@ -180,7 +181,8 @@ Le tableau suivant décrit l'application par défaut des autorisations de pare-f
 <li><p>Serveurs de transport Hub</p></li>
 <li><p>Serveurs de transport Edge</p></li>
 <li><p>Serveurs Exchange</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Serveurs de transport Hub uniquement
 
 </li>
@@ -256,7 +258,8 @@ Le tableau suivant décrit l'application par défaut des autorisations de pare-f
 <li><p>Serveurs de transport Hub</p></li>
 <li><p>Serveurs de transport Edge</p></li>
 <li><p>Serveurs Exchange</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Sur les serveurs de transport Hub uniquement
 
 </li>
@@ -271,7 +274,8 @@ Le tableau suivant décrit l'application par défaut des autorisations de pare-f
 <li><p>Serveurs de transport Hub</p></li>
 <li><p>Serveurs de transport Edge</p></li>
 <li><p>Serveurs Exchange</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Sur les serveurs de transport Hub uniquement
 
 </li>

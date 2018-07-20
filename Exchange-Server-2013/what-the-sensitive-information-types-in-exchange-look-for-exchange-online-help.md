@@ -7483,7 +7483,8 @@ La protection contre la perte de données (DLP) dans Exchange inclut 80 types d
 <tr class="odd">
 <td><p>Format</p></td>
 <td><p>9 chiffres, qui peuvent être mis en forme ou non mis en forme</p>
-> [!NOTE]
+
+> [!NOTE]  
 > La mise en forme d’un numéro de sécurité sociale émis avant le milieu de l’année 2011 est fixe et certaines parties du numéro doivent se situer dans certaines plages pour qu’il soit valide (mais il n’y a pas de somme de contrôle).
 
 </td>

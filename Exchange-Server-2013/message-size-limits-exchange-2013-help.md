@@ -115,7 +115,8 @@ Les tableaux suivants présentent les limites des messages, dont des information
 </tr>
 <tr class="odd">
 <td><p>Nombre maximal de destinataires par message</p>
-> [!NOTE]
+
+> [!NOTE]  
 > 
 
 </td>
@@ -175,7 +176,8 @@ Retour au début
 </tr>
 <tr class="even">
 <td><p>Taille maximale des messages via un connecteur de réception</p>
-> [!NOTE]
+
+> [!NOTE]  
 > La taille réelle du message peut être inférieure en raison de l'encodage et de la conversion du contenu du message.
 
 </td>
@@ -195,7 +197,8 @@ Retour au début
 <p>200 pour le connecteur de réception de proxy client</p>
 <p><strong>Service de transport frontal sur un serveur d'accès au client</strong></p>
 <p>200 pour les connecteurs de réception frontaux par défaut, frontaux de client et frontaux de proxy.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Si le nombre de destinataires est dépassé pour un expéditeur anonyme, le message est accepté pour les 200 premiers destinataires. La plupart des serveurs de messagerie SMTP détectent qu'une limite des destinataires est appliquée. Le serveur de messagerie SMTP continue à renvoyer le message par groupes de 200 destinataires jusqu'à ce qu'il ait été remis à tous les destinataires.
 
 </td>
@@ -274,7 +277,8 @@ Retour au début
 <td><p>Outlook Web App   35 Mo</p>
 <p>Exchange ActiveSync   10 Mo</p>
 <p>Services web Exchange   64 Mo</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Ces valeurs sont environ 33 % supérieures à la taille maximale réelle des messages, en raison du traitement associé au codage Base64.
 
 </td>
@@ -319,7 +323,8 @@ Retour au début
 <p>Paramètre : <em>MaxSendSize</em></p></td>
 <td><p>Pour les boîtes aux lettres :</p>
 <p><strong>Destinataires</strong>&gt;<strong>Boîtes aux lettres</strong>&gt;<strong>Modifier</strong><img src="images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="Icône Modifier" alt="Icône Modifier" />&gt;<strong>Fonctionnalités de boîte aux lettres</strong>&gt;<strong>Flux de messagerie</strong>&gt;<strong>Restrictions de taille des messages</strong>&gt;<strong>Afficher les détails</strong>&gt;<strong>Messages envoyés</strong></p>
-> [!NOTE]
+
+> [!NOTE]    
 > Ce paramètre n'est pas configurable avec le CAE pour d'autres types de destinataires.
 
 </td>
@@ -340,7 +345,8 @@ Retour au début
 <p>Paramètre : <em>MaxReceiveSize</em></p></td>
 <td><p>Pour les boîtes aux lettres :</p>
 <p><strong>Destinataires</strong>&gt;<strong>Boîtes aux lettres</strong>&gt;<strong>Modifier</strong><img src="images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif" title="Icône Modifier" alt="Icône Modifier" />&gt;<strong>Fonctionnalités de boîte aux lettres</strong>&gt;<strong>Flux de messagerie</strong>&gt;<strong>Restrictions de taille des messages</strong>&gt;<strong>Afficher les détails</strong>&gt;<strong>Messages reçus</strong></p>
-> [!NOTE]
+
+> [!NOTE]  
 > Ce paramètre n'est pas configurable avec le CAE pour d'autres types de destinataires.
 
 </td>
