@@ -1,5 +1,5 @@
 ﻿---
-title: Utilisation du pack d'administration Exchange Server 2013 à des fins de dépannage
+title: Pack d’administration Exchange Server 2013 à des fins de dépannage
 TOCTitle: Utilisation du pack d'administration Exchange Server 2013 à des fins de dépannage
 ms:assetid: c9672dad-1e67-4f07-bad9-539a67f2ac70
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn195913(v=EXCHG.150)
