@@ -116,8 +116,9 @@ Les tableaux suivants présentent les limites des messages, dont des information
 <tr class="odd">
 <td><p>Nombre maximal de destinataires par message</p>
 
-> [!NOTE]  
-> 
+
+> [!NOTE]    
+> <p></p>
 
 </td>
 <td><p>5000</p></td>
