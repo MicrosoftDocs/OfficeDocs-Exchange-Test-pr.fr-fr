@@ -224,7 +224,8 @@ Par défaut, lorsque vous exécutez la cmdlet **New-EdgeSubscription** sur le se
 <tr class="odd">
 <td><p><em>SourceTransportServers</em></p></td>
 <td><p>&lt;<em>Nom d’abonnement Edge</em>&gt;</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Le nom de l’abonnement Edge est le même que le nom du serveur de transport Edge abonné.
 
 </td>

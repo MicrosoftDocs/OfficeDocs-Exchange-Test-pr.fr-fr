@@ -22,11 +22,11 @@ Cette rubrique explique comment utiliser l’Assistant Installation de Microsoft
 
 Si vous souhaitez installer le rôle de transport Edge Exchange 2013 sur un ordinateur, voir [Installer le rôle de transport Edge d’Exchange 2013 à l’aide de l’Assistant Installation](install-the-exchange-2013-edge-transport-role-using-the-setup-wizard-exchange-2013-help.md). Le rôle de transport Edge ne peut pas être installé sur le même ordinateur que les rôles serveur de boîtes aux lettres ou d’accès au client.
 
-> [!TIP]
+> [!TIP]  
 > Avez-vous déjà entendu parler de l’Assistant de déploiement Exchange Server ? Il s’agit d’un outil en ligne gratuit qui vous permet de déployer rapidement Exchange 2013 dans votre organisation en répondant à quelques questions et en créant une liste de contrôle de déploiement personnalisée. Pour en savoir plus, consultez la page <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Assistant de déploiement Exchange Server</a>.
 
 
-> [!NOTE]
+> [!NOTE]  
 > Après avoir installé des rôles serveur sur un ordinateur exécutant Exchange 2013, il n'est plus possible d'utiliser l'Assistant Installation d'Exchange 2013 pour ajouter des rôles serveur à cet ordinateur. Pour ajouter des rôles serveur supplémentaires à un ordinateur, vous devez utiliser la fonctionnalité Ajout/Suppression de programmes du Panneau de configuration ou la commande Setup.exe depuis une fenêtre d'invite de commandes.
 
 
@@ -50,7 +50,7 @@ Pour plus d'informations sur les tâches postérieures à l'installation, consul
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-> [!CAUTION]
+> [!CAUTION]  
 > Après avoir installé Exchange sur un serveur, vous ne devez pas modifier le nom du serveur. La modification du nom d’un serveur après avoir installé un rôle de serveur Exchange n’est pas prise en charge.
 
 
@@ -58,7 +58,7 @@ Pour plus d'informations sur les tâches postérieures à l'installation, consul
 
 Si vous installez le premier serveur Exchange 2013 de l’organisation et n’avez pas suivi les étapes de préparation Active Directory, vous devez utiliser un compte appartenant au groupe Administrateurs de l’entreprise. Si vous n’avez pas préparé le schéma Active Directory en amont, le compte doit également être membre du groupe Administrateurs du schéma. Pour plus d’informations sur la préparation d’Active Directory pour Exchange 2013, voir [Préparation d’Active Directory et des domaines](prepare-active-directory-and-domains-exchange-2013-help.md). Si vous avez déjà réalisé les étapes de préparation Active Directory et de schéma, vous devez utiliser un compte appartenant au groupe de rôles de gestion Installation déléguée ou au groupe de rôles Gestion de l’organisation.
 
-> [!NOTE]
+> [!NOTE]  
 > Pour télécharger la dernière version d’Exchange 2013, voir <a href="updates-for-exchange-2013-exchange-2013-help.md">Mises à jour pour Exchange 2013</a>
 
 
@@ -68,7 +68,7 @@ Si vous installez le premier serveur Exchange 2013 de l’organisation et n’a
 
 3.  Lancez le Programme d'installation de Exchange 2013 en double-cliquant sur `Setup.exe`
     
-    > [!NOTE]
+    > [!IMPORTANT]  
     > Si le contrôle d’accès d’utilisateur est activé, vous devez cliquer avec le bouton droit de la souris sur <code>Setup.exe</code> et sélectionner <strong>Exécuter en tant qu’administrateur</strong>.
 
 
@@ -108,7 +108,7 @@ Si vous installez le premier serveur Exchange 2013 de l’organisation et n’a
     
     Si vous souhaitez utiliser le modèle d’autorisations partagées Active Directory, sélectionnez l’option **Appliquer le modèle de sécurité des autorisations partagées Active Directory à l’organisation Exchange**.
     
-    > [!CAUTION]  
+    > [!CAUTION]
     > La plupart des organisations n’ont pas besoin d’appliquer le modèle d’autorisations partagées Active Directory. Si vous devez séparer la gestion des principaux de sécurité Active Directory et la configuration Exchange, les autorisations partagées du contrôle d’accès basé sur les rôles (RBAC) peuvent vous convenir. Pour plus d'informations, cliquez sur <strong>?</strong>.
     
     Cliquez sur **Suivant** pour continuer.

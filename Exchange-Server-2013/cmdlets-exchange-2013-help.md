@@ -56,7 +56,8 @@ Toutes les cmdlets d’Exchange Management Shell sont présentées sous la forme
 <tr class="odd">
 <td><p><strong>Get</strong></p></td>
 <td><p>Les cmdlets <strong>Get</strong> extraient des informations sur un objet Exchange spécifique.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > La plupart des cmdlets <strong>Get</strong> ne renvoient que des informations récapitulatives lorsque vous les exécutez. Pour que la cmdlet <strong>Get</strong> renvoie des informations détaillées lorsque vous exécutez une commande, canalisez la commande vers la cmdlet <strong>Format-List</strong>. Pour plus d’informations sur la commande <strong>Format-List</strong>, consultez la rubrique <a href="working-with-command-output-exchange-2013-help.md">Utilisation de la sortie de la commande</a>. Pour plus d’informations sur le pipelining, voir <a href="https://technet.microsoft.com/fr-fr/library/aa998260(v=exchg.150)">Traitement en pipeline</a>.
 
 </td>

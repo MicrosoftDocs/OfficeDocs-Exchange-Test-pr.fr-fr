@@ -99,7 +99,8 @@ Les utilisateurs auxquels est affecté le groupe de rôles de gestion de l’org
 <td><p>Affichage seul du journal d’audit de l’administrateur</p></td>
 <td><p><a href="organization-management-exchange-2013-help.md">Gestion de l’organisation</a></p>
 <p><a href="records-management-exchange-2013-help.md">Gestion des enregistrements</a></p>
-> [!NOTE]
+
+> [!NOTE]  
 > Vous pouvez également attribuer manuellement le rôle de gestion Journaux d’audit en affichage seul à un groupe de rôles de gestion. Pour plus d’informations, voir <a href="view-only-audit-logs-role-exchange-2013-help.md">Rôle Journaux d’audit en affichage seul</a>.
 
 </td>

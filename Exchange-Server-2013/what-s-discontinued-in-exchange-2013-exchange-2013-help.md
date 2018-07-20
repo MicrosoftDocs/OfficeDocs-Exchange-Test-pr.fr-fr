@@ -19,7 +19,7 @@ _**Dernière rubrique modifiée :** 2016-12-09_
 
 Cette rubrique traite des composants, fonctions ou fonctionnalités supprimés, abandonnés ou remplacés dans Microsoft Exchange Server 2013.
 
-> [!NOTE]
+> [!NOTE]  
 > Les rubriques suivantes peuvent également vous intéresser :
 > <ul>
 > <li><p><a href="what-s-new-in-exchange-2013-exchange-2013-help.md">Nouveautés d'Exchange 2013</a>   Informations sur les nouvelles fonctions et fonctionnalités dans Exchange Server 2013.</p></li>
@@ -191,7 +191,8 @@ Cette section répertorie les fonctionnalités Exchange Server 2010 qui ne sont
 <tr class="even">
 <td><p>Agent de filtrage de connexions sur les serveurs de transport Hub</p></td>
 <td><p>Dans Exchange 2010, quand vous activiez les agents anti-spam sur un serveur de transport Hub, l'agent de filtrage des pièces jointes était le seul agent anti-spam qui n'était pas disponible. Dans Exchange 2013, quand vous activez les agents anti-spam sur un serveur de boîtes aux lettres, les agents de filtrage des pièces jointes et de filtrage des connexions ne sont pas disponibles. L'agent de filtrage des connexions intègre les fonctionnalités Liste d'adresses IP autorisées et Liste d'adresses IP bloquées. Pour plus d'informations sur la façon d'activer les agents anti-spam sur un serveur de boîtes aux lettres, consultez la rubrique <a href="enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md">Activer la fonctionnalité de blocage du courrier indésirable sur un serveur de boîtes aux lettres</a>.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Il n'est pas possible d'activer les agents anti-spam sur un serveur d'accès au client Exchange 2013. Par conséquent, le seul moyen d’obtenir un agent de filtrage des connexions consiste à installer un serveur de transport Edge dans le réseau de périmètre. Pour plus d’informations, voir <a href="edge-transport-servers-exchange-2013-help.md">Serveurs de transport Edge</a>.
 
 </td>
@@ -218,7 +219,8 @@ Cette section répertorie les fonctionnalités Exchange Server 2010 qui ne sont
 <tr class="odd">
 <td><p>Dossiers gérés</p></td>
 <td><p>Dans Exchange 2010, vous utilisez des dossiers gérés pour assurer la gestion de la rétention de messagerie (MRM). Dans Exchange 2013, les dossiers gérés ne sont pas pris en charge. Vous devez utiliser des stratégies de rétention pour MRM.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Les cmdlets associés à des dossiers gérés sont toujours disponibles. Vous pouvez créer des dossiers gérés, des paramètres de contenu géré et des stratégies de boîte aux lettres de dossier géré, et appliquer une telle stratégie à un utilisateur. Toutefois, l’assistant MRM ignore le traitement des boîtes aux lettres qui ont une stratégie de boîte aux lettres de dossier géré.
 
 </td>
@@ -533,7 +535,8 @@ Cette section répertorie les fonctionnalités Exchange Server 2007 qui ne sont
 <tr class="odd">
 <td><p>Dossiers gérés</p></td>
 <td><p>Dans Exchange 2007, vous utilisez des dossiers gérés pour assurer la gestion de la rétention de messagerie (MRM). Dans Exchange 2013, les dossiers gérés ne sont pas pris en charge. Vous devez utiliser des stratégies de rétention pour MRM.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Les cmdlets associés à des dossiers gérés sont toujours disponibles. Vous pouvez créer des dossiers gérés, des paramètres de contenu géré et des stratégies de boîte aux lettres de dossier géré, et appliquer une telle stratégie à un utilisateur. Toutefois, l’assistant MRM ignore le traitement des boîtes aux lettres qui ont une stratégie de boîte aux lettres de dossier géré.
 
 </td>
