@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Installer Exchange 2013 à l’aide de l’Assistant Installation: Exchange 2013 Help'
 TOCTitle: Installer Exchange 2013 à l’aide de l’Assistant Installation
 ms:assetid: da690d47-3384-4430-a69e-0cd4d3bf80a7
@@ -13,7 +13,6 @@ ms.translationtype: HT
 
 # Installer Exchange 2013 à l’aide de l’Assistant Installation
 
- 
 
 _**Sapplique à :** Exchange Server 2013_
 
@@ -69,7 +68,7 @@ Si vous installez le premier serveur Exchange 2013 de l’organisation et n’a
 
 3.  Lancez le Programme d'installation de Exchange 2013 en double-cliquant sur `Setup.exe`
     
-    > [!NOTE]  
+    > [!IMPORTANT]  
     > Si le contrôle d’accès d’utilisateur est activé, vous devez cliquer avec le bouton droit de la souris sur <code>Setup.exe</code> et sélectionner <strong>Exécuter en tant qu’administrateur</strong>.
 
 
@@ -116,13 +115,9 @@ Si vous installez le premier serveur Exchange 2013 de l’organisation et n’a
 
 11. Si vous installez le rôle Boîte aux lettres, dans la page **Paramètres de la protection anti-programme malveillant**, indiquez si vous souhaitez activer ou désactiver la recherche de programmes malveillants. Si vous désactivez la recherche de programmes malveillants, elle peut être activée à l'avenir. Cliquez sur **Suivant** pour continuer.
 
-12. 
-    
-    Dans la page **Tests de préparation**, affichez l'état pour déterminer si les contrôles préalables de l'organisation et du rôle serveur ont été accomplis avec succès. Si ce n'est pas le cas, vous devez résoudre les erreurs signalées avant d'installer Exchange 2013. Vous n'avez pas besoin de quitter le programme d'installation pour résoudre certaines de ces erreurs. Une fois qu'une erreur signalée a été résolue, cliquez sur **Précédent**, puis sur **Suivant** pour exécuter à nouveau la vérification préalable. Veillez également à vérifier tous les avertissements signalés. Si tous les contrôles de préparation sont probants, cliquez sur **Suivant** pour installer Exchange 2013.
+12. Dans la page **Tests de préparation**, affichez l'état pour déterminer si les contrôles préalables de l'organisation et du rôle serveur ont été accomplis avec succès. Si ce n'est pas le cas, vous devez résoudre les erreurs signalées avant d'installer Exchange 2013. Vous n'avez pas besoin de quitter le programme d'installation pour résoudre certaines de ces erreurs. Une fois qu'une erreur signalée a été résolue, cliquez sur **Précédent**, puis sur **Suivant** pour exécuter à nouveau la vérification préalable. Veillez également à vérifier tous les avertissements signalés. Si tous les contrôles de préparation sont probants, cliquez sur **Suivant** pour installer Exchange 2013.
 
-13. 
-    
-    Dans la page **Achèvement**, cliquez sur **Terminer**.
+13. Dans la page **Achèvement**, cliquez sur **Terminer**.
 
 14. Redémarrez l'ordinateur une fois l'installation d'Exchange 2013 terminé.
 
@@ -135,4 +130,3 @@ Pour vérifier que vous avez installé Exchange 2013 avec succès, consultez [V
 Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), et [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).
 
 Avez-vous trouvé ce que vous cherchez ? Veuillez prendre une minute pour [nous envoyer votre avis à l'adresse](mailto:exsetuphelpfeedback@microsoft.com?subject=exchange%202013%20setup%20help%20feedback) au sujet des informations que vous souhaitiez y trouver.
-
