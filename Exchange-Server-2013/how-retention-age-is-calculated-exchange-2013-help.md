@@ -94,7 +94,7 @@ Les éléments contenus dans le dossier Éléments supprimés et ceux comportant
 <ol>
 <li><p>Une tâche non périodique expire en fonction de sa <code>message-received date</code>, si elle existe.</p></li>
 <li><p>Si une tâche non périodique ne possède pas de <code>message-received date</code>, elle expire en fonction de sa <code>message-creation date</code>.</p></li>
-<li><p>Si une tâche non périodique ne possède ni <code>message-received date</code> ni <code></code><code>message-creation date</code>, elle n’expire pas.</p></li>
+<li><p>Si une tâche non périodique ne possède ni <code>message-received date</code> ni <code>message-creation date</code>, elle n’expire pas.</p></li>
 </ol></li>
 <li><p>Une tâche périodique expire en fonction de la <code>end date</code> de sa dernière occurrence. Si une tâche périodique ne possède pas de <code>end date</code>, elle n’expire pas.</p></li>
 <li><p>Une tâche de régénération (c’est-à-dire une tâche périodique qui se régénère un certain temps après l’achèvement de l’instance précédente) n’expire pas.</p></li>
