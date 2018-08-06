@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activation de la connexion à la messagerie vocale sans code confidentiel: Exchange 2013 Help'
+title: 'Activer connexion à la messag. voc. sans code confidentiel: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Activation de la connexion à la messagerie vocale sans code confidentiel
 ms:assetid: 54133753-317c-42ef-9b0d-ca9f2d2d6bd7
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Gg602127(v=EXCHG.150)

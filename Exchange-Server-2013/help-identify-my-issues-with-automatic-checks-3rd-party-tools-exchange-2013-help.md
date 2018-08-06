@@ -1,5 +1,5 @@
 ﻿---
-title: 'Identifier mes problèmes à l’aide des vérifications automatiques (outils tiers): Exchange 2013 Help'
+title: 'Identifier mes problèmes à l’aide de vérifications automatiques (outils tiers) | Microsoft Docs'
 TOCTitle: Identifier mes problèmes à l’aide des vérifications automatiques (outils tiers)
 ms:assetid: 83b71e35-892e-44e3-9fce-c608b49bbc61
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn793974(v=EXCHG.150)

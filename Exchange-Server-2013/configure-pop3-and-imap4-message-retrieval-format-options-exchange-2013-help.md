@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer les options de format d’extraction de message POP3 et IMAP4: Exchange 2013 Help'
+title: 'Config. des options de format d’extr. de msg POP3 et IMAP4: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Configurer les options de format d’extraction de message POP3 et IMAP4
 ms:assetid: 481096e0-4492-46c2-8ca8-bdf84a84531e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997869(v=EXCHG.150)

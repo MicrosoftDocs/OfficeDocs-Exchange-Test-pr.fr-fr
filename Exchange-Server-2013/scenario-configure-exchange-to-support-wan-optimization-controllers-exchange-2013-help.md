@@ -1,5 +1,5 @@
 ﻿---
-title: "Scénario : configuration d'Exchange pour prendre en charge les contrôleurs d'optimisation de réseau étendu: Exchange 2013 Help"
+title: "Config. Exchange pr prendre en ch. les contrôleurs d’optimis. de réseau étendu | Microsoft Docs"
 TOCTitle: "Scénario : configuration d'Exchange pour prendre en charge les contrôleurs d'optimisation de réseau étendu"
 ms:assetid: 1f407698-0b71-45a3-867a-640ccf7351da
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee633456(v=EXCHG.150)

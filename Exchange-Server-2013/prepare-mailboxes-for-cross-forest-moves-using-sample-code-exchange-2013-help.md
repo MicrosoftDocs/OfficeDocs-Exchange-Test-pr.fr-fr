@@ -1,5 +1,5 @@
 ﻿---
-title: 'Préparer les boîtes aux lettres pour les déplacements inter-forêts à l’aide d’un exemple de code: Exchange 2013 Help'
+title: 'Préparer BAL pr déplacements inter-forêts avec ex. de code: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Préparer les boîtes aux lettres pour les déplacements inter-forêts à l’aide d’un exemple de code
 ms:assetid: f35ac7a5-bb84-4653-b6d0-65906e93627b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee861124(v=EXCHG.150)

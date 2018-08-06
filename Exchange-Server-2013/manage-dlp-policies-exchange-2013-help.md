@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestion de stratégies de protection contre la perte de données (DLP): Exchange 2013 Help'
+title: 'Stratégies de protection contre la perte de données (DLP): Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Gestion de stratégies de protection contre la perte de données (DLP)
 ms:assetid: ba81fabd-7f7f-4ef7-968f-ce851ada9d70
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673559(v=EXCHG.150)

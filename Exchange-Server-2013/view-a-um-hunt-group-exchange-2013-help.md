@@ -1,5 +1,5 @@
 ﻿---
-title: "Permet d'afficher un groupement de postes de messagerie unifiée: Exchange 2013 Help"
+title: "Afficher un groupement de postes de messagerie unifiée: Exchange 2013 Help | Microsoft Docs"
 TOCTitle: Permet d'afficher un groupement de postes de messagerie unifiée
 ms:assetid: f038f7b4-4de9-4373-bd58-09d49e37a3ed
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb125167(v=EXCHG.150)

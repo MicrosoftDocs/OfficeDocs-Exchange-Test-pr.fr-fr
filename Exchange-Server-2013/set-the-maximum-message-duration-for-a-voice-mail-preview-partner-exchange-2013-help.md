@@ -1,5 +1,5 @@
 ﻿---
-title: "Définir la durée maximale des messages pour un partenaire de l'aperçu de messagerie vocale: Exchange 2013 Help"
+title: "Définir la durée max. des msg pour un partenaire de l’aperçu de messag. vocale | Microsoft Docs"
 TOCTitle: Définir la durée maximale des messages pour un partenaire de l'aperçu de messagerie vocale
 ms:assetid: 18f928ff-f4cc-4eed-a466-de13388780b3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff630912(v=EXCHG.150)

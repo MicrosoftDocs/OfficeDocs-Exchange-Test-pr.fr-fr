@@ -1,5 +1,5 @@
 ﻿---
-title: 'Désactiver les appels sortants sur les passerelles IP de messagerie unifiée: Exchange 2013 Help'
+title: 'Désactiv. les appels sortants sur les passerelles IP de MU: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Désactiver les appels sortants sur les passerelles IP de messagerie unifiée
 ms:assetid: a3777cc6-37e4-4359-ada3-a962ac0ef0c3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb232153(v=EXCHG.150)

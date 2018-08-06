@@ -1,5 +1,5 @@
 ﻿---
-title: "Activer l'aperçu de messagerie vocale pour les utilisateurs: Exchange 2013 Help"
+title: "Activer l’aperçu de messag. vocale pour les utilisateurs: Exchange 2013 Help | Microsoft Docs"
 TOCTitle: Activer l'aperçu de messagerie vocale pour les utilisateurs
 ms:assetid: 206a5d2b-27c9-4e9b-a29a-6ddffaa07109
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673514(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lancement ou arrêt d’une recherche de découverte électronique inaltérable: Exchange 2013 Help'
+title: 'Lancer/arrêter une rech. de découverte électr. inaltérable: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Lancement ou arrêt d’une recherche de découverte électronique inaltérable
 ms:assetid: 0d546763-4bf5-4523-91f4-d181b7ee4ac2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd335090(v=EXCHG.150)

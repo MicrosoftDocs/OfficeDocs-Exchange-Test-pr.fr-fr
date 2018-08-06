@@ -1,5 +1,5 @@
 ﻿---
-title: 'Préparer des boîtes aux lettres pour des déplacements inter-forêts à l’aide du script Prepare-MoveRequest.ps1 dans l’environnement de ligne de commande Exchange Management Shell: Exchange 2013 Help'
+title: 'Prép. des BAL pr dépl. inter-forêts ac script Prepare-MoveRequest.ps1 dsShell | Microsoft Docs'
 TOCTitle: Préparer des boîtes aux lettres pour des déplacements inter-forêts à l’aide du script Prepare-MoveRequest.ps1 dans l’environnement de ligne de commande Exchange Management Shell
 ms:assetid: 2cea59fb-69b7-4a2f-833f-de4d93cf1810
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee861103(v=EXCHG.150)

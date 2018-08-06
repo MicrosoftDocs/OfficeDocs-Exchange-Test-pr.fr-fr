@@ -1,5 +1,5 @@
 ﻿---
-title: "Autoriser ou empêcher de répondeur automatique sur un serveur d'accès au Client: Exchange 2013 Help"
+title: "Autoriser/empêcher répondeur auto. sur srv d’accès client: Exchange 2013 Help | Microsoft Docs"
 TOCTitle: Autoriser ou empêcher de répondeur automatique sur un serveur d'accès au Client
 ms:assetid: 8287bb78-2621-4b80-a128-8f2ccd67923a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb123529(v=EXCHG.150)

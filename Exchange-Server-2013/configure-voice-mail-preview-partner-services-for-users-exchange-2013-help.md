@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer les services de partenaires d’aperçu de messagerie vocale pour les utilisateurs: Exchange 2013 Help'
+title: 'Configurer les services de partenaires d’aperçu de messag. voc. pour les utlsr | Microsoft Docs'
 TOCTitle: Configurer les services de partenaires d’aperçu de messagerie vocale pour les utilisateurs
 ms:assetid: 7bb914ca-5502-4e64-bae5-555034138d8a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff630920(v=EXCHG.150)

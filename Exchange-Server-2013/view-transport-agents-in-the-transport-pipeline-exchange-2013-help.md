@@ -1,5 +1,5 @@
 ﻿---
-title: 'Afficher les agents de transport dans le pipeline de transport: Exchange 2013 Help'
+title: 'Afficher les agents de transp. dans le pipeline de transp.: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Afficher les agents de transport dans le pipeline de transport
 ms:assetid: bd715d8e-7b21-48de-8f68-d425d8506e4c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124395(v=EXCHG.150)

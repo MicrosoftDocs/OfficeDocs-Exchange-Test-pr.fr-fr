@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer un domaine accepté dans votre organisation Exchange comme autorité: Exchange 2013 Help'
+title: 'Configurer un domaine accepté dans votre organisation Exchange comme autorité | Microsoft Docs'
 TOCTitle: Configurer un domaine accepté dans votre organisation Exchange comme autorité
 ms:assetid: e182d54f-e58a-47ba-a5c1-28c0dfa86eed
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ657734(v=EXCHG.150)

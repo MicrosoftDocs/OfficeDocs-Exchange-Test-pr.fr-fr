@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration des dossiers publics dans une nouvelle organisation: Exchange 2013 Help'
+title: 'Configuration des dossiers publics dans une nouvelle org.: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Configuration des dossiers publics dans une nouvelle organisation
 ms:assetid: 7b419906-8977-47f0-8687-a87911b5ebec
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ651147(v=EXCHG.150)

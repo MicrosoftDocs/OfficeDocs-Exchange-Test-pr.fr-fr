@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utilisation de l’environnement de ligne de commande Exchange Management Shell pour gérer les files d’attente: Exchange 2013 Help'
+title: 'Exchange Management Shell pr la gestion de files d’attente: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Utilisation de l’environnement de ligne de commande Exchange Management Shell pour gérer les files d’attente
 ms:assetid: 5433c1d3-ad2e-4f82-b50d-b67964b32f26
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998047(v=EXCHG.150)

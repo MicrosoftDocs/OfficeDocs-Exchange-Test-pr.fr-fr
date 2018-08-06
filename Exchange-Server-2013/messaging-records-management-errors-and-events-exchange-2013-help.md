@@ -1,5 +1,5 @@
 ﻿---
-title: 'Événements et erreurs de gestion des enregistrements de messagerie: Exchange 2013 Help'
+title: 'Événements et erreurs de gestion des enregist. de messag.: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Événements et erreurs de gestion des enregistrements de messagerie
 ms:assetid: 8bc3f5ae-403b-45af-86c1-b2fccab34e63
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb310783(v=EXCHG.150)

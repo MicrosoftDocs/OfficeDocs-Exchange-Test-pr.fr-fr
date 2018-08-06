@@ -1,5 +1,5 @@
 ﻿---
-title: 'Modifier une entrée de rôle sur un rôle de niveau supérieur non délimité: Exchange 2013 Help'
+title: 'Modifier une entrée sur un rôle supérieur non délimité: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Modifier une entrée de rôle sur un rôle de niveau supérieur non délimité
 ms:assetid: 65c0bfb3-aafd-4c64-8429-7616c57adf1c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd876896(v=EXCHG.150)

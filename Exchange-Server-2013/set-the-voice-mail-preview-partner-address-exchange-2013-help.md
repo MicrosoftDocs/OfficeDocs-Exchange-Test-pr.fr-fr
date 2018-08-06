@@ -1,5 +1,5 @@
 ﻿---
-title: "Définir l'adresse du partenaire aperçu de messagerie vocale: Exchange 2013 Help"
+title: "Déf. l’adresse du partenaire d’aperçu de messagerie vocale: Exchange 2013 Help | Microsoft Docs"
 TOCTitle: Définir l'adresse du partenaire aperçu de messagerie vocale
 ms:assetid: 57fbed1e-1b14-4939-95e6-ef7c072f32a9
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff630917(v=EXCHG.150)

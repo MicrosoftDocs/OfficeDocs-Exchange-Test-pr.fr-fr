@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer un serveur de transport Edge à l’aide de la configuration clonée: Exchange 2013 Help'
+title: 'Configurer un srv de transp. Edge avec la config. clonée: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Configurer un serveur de transport Edge à l’aide de la configuration clonée
 ms:assetid: 0bbc83e3-e5e8-4480-a8a6-15f035360856
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa996008(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Azure : identifier mon problème à l’aide des vérifications automatiques (enregistrements DNS): Exchange 2013 Help'
+title: 'Azure : identifier un problème par des vérifications auto. (enregist. DNS) | Microsoft Docs'
 TOCTitle: 'Azure : identifier mon problème à l’aide des vérifications automatiques (enregistrements DNS)'
 ms:assetid: 1ef42cde-4df4-401a-b8f2-494630996ca8
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn793619(v=EXCHG.150)

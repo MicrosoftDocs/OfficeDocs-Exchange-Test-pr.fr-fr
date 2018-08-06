@@ -1,5 +1,5 @@
 ﻿---
-title: 'Exportation de types d’informations sensibles DLP à partir d’Exchange 2013: Exchange 2013 Help'
+title: 'Export de types de données sensibles DLP d’Exchange 2013: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Exportation de types d’informations sensibles DLP à partir d’Exchange
 ms:assetid: 8f02fbc2-dd1c-4276-be1a-517a43fe39b2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn479225(v=EXCHG.150)

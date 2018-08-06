@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer le filtrage de contenu pour utiliser les données de domaine autorisé: Exchange 2013 Help'
+title: 'Config. filtrage de cont. pr données de domaine autorisé: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Configurer le filtrage de contenu pour utiliser les données de domaine autorisé
 ms:assetid: 1ee2b663-b4f3-4fef-8954-986f2d820924
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn467930(v=EXCHG.150)

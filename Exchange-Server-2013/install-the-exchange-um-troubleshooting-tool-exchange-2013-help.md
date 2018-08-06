@@ -1,5 +1,5 @@
 ﻿---
-title: 'Installer l’outil de dépannage de la messagerie unifiée Exchange: Exchange 2013 Help'
+title: 'Installer outil de dépannage de la messag. unif. Exchange: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Installer l’outil de dépannage de la messagerie unifiée Exchange
 ms:assetid: 84223af0-a717-49ee-add6-86313bb30d17
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff844714(v=EXCHG.150)

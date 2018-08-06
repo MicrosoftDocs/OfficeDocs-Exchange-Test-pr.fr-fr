@@ -1,5 +1,5 @@
 ﻿---
-title: "Configurer la limite sur le message d'accueil personnel pour les utilisateurs Outlook Voice Access: Exchange 2013 Help"
+title: "Config. de la limite sur le message d’accueil personnel pour les utlsr OVA | Microsoft Docs"
 TOCTitle: Configurer la limite sur le message d'accueil personnel pour les utilisateurs Outlook Voice Access
 ms:assetid: d400f250-0f55-45f5-9918-5f1d7819fbdf
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb201731(v=EXCHG.150)

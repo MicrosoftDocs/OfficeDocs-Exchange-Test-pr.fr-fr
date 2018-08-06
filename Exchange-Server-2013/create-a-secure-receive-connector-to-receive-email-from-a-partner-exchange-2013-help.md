@@ -1,5 +1,5 @@
 ﻿---
-title: 'Créer un connecteur de réception sécurisé pour recevoir le message électronique d’un partenaire: Exchange 2013 Help'
+title: 'Créer un connecteur de réception sécurisé pr recevoir l’e-mail d’un partenaire | Microsoft Docs'
 TOCTitle: Créer un connecteur de réception sécurisé pour recevoir le message électronique d’un partenaire
 ms:assetid: 06aa692c-7940-4a14-a722-058c47440f85
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673037(v=EXCHG.150)

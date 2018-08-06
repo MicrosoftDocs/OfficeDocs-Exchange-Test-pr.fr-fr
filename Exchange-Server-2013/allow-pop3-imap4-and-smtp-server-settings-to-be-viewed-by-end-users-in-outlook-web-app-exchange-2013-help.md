@@ -1,5 +1,5 @@
 ﻿---
-title: 'Autoriser les utilisateurs finals à visualiser les paramètres de serveur POP3, IMAP4 et SMTP dans Outlook Web App: Exchange 2013 Help'
+title: 'Autor. les utlsr finals à visual. les param. de srv POP3, IMAP4 et SMTP ds OWA | Microsoft Docs'
 TOCTitle: Autoriser les utilisateurs finals à visualiser les paramètres de serveur POP3, IMAP4 et SMTP dans Outlook Web App
 ms:assetid: bd22bf7e-3bf7-45e6-8790-919b780166f6
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Gg298947(v=EXCHG.150)

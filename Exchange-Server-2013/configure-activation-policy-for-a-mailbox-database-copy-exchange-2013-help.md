@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer la stratégie d’activation pour une copie de base de données de boîte aux lettres: Exchange 2013 Help'
+title: 'Config. la stratégie d’activ. pr une copie de BDD de BAL: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Configurer la stratégie d’activation pour une copie de base de données de boîte aux lettres
 ms:assetid: 6b37ed6e-2e36-4688-b485-8fdbb8193ec8
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd298046(v=EXCHG.150)

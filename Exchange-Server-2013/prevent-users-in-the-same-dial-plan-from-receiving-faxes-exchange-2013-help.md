@@ -1,5 +1,5 @@
 ﻿---
-title: 'Empêcher les utilisateurs dans le même plan de numérotation à partir de la réception de télécopies: Exchange 2013 Help'
+title: 'Empêcher les utlsr du même plan de num. à partir de la réception de télécopies | Microsoft Docs'
 TOCTitle: Empêcher les utilisateurs dans le même plan de numérotation à partir de la réception de télécopies
 ms:assetid: 4fc66414-c950-4bca-ac20-4e489f288d06
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb201688(v=EXCHG.150)

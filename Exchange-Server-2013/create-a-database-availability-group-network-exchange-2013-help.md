@@ -1,5 +1,5 @@
 ﻿---
-title: 'Création d’un réseau de groupe de disponibilité de la base de données: Exchange 2013 Help'
+title: 'Création d’un réseau de groupe de disponibilité de la BDD: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Création d’un réseau de groupe de disponibilité de la base de données
 ms:assetid: 6caec7be-788a-4058-87a7-f31c575b870c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd298051(v=EXCHG.150)

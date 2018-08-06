@@ -1,5 +1,5 @@
 ﻿---
-title: 'Créer un connecteur d’envoi pour router le courrier sortant via un hôte actif: Exchange 2013 Help'
+title: 'Créer un connecteur d’envoi pour router le courrier sortant via un hôte actif | Microsoft Docs'
 TOCTitle: Créer un connecteur d’envoi pour router le courrier sortant via un hôte actif
 ms:assetid: 4a9ef08e-bd62-4c6b-8790-d24fb0f8f24b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673059(v=EXCHG.150)

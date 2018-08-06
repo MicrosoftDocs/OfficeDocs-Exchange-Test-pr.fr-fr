@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gérer le filtrage des connexions sur les serveurs de transport Edge: Exchange 2013 Help'
+title: 'Filtrage de connexions sur les serveurs de transport Edge: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Gérer le filtrage des connexions sur les serveurs de transport Edge
 ms:assetid: baebc865-ec3e-48ca-ac48-7aac8b34c003
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124376(v=EXCHG.150)

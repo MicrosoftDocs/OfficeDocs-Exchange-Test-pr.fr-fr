@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer les propriétés de la distribution du carnet d’adresses en mode hors connexion: Exchange 2013 Help'
+title: 'Config. les propriétés de distrib. du carnet d’adresses en mode hors connexion | Microsoft Docs'
 TOCTitle: Configurer les propriétés de la distribution du carnet d’adresses en mode hors connexion
 ms:assetid: 8df985e9-75ba-47ea-9cc3-aa98a5d8acf4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb123710(v=EXCHG.150)

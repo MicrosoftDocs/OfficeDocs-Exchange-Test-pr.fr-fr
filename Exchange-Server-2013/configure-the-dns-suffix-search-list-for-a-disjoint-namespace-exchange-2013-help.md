@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration d’une liste de recherche de suffixe DNS pour un espace de noms disjoint: Exchange 2013 Help'
+title: 'Config. d’une liste de recherche de suffixe DNS pr un espace de noms disjoint | Microsoft Docs'
 TOCTitle: Configuration d’une liste de recherche de suffixe DNS pour un espace de noms disjoint
 ms:assetid: cfa715ac-7b69-47c3-b206-933ec2cf677b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb847901(v=EXCHG.150)

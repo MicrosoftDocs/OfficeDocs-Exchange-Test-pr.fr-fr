@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer des limites de taille de messages pour une boîte aux lettres: Exchange 2013 Help'
+title: 'Configurer des limites de taille de messages pour une BAL: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Configurer des limites de taille de messages pour une boîte aux lettres
 ms:assetid: d1220685-14c0-4c4f-abb2-3920f3046212
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124708(v=EXCHG.150)

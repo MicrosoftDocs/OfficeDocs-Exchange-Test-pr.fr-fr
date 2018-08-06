@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration de l’authentification Kerberos pour les serveurs d’accès au client avec équilibrage de charge: Exchange 2013 Help'
+title: 'Config. l’auth. Kerberos pour les srv d’accès au client avec équil. de charge | Microsoft Docs'
 TOCTitle: Configuration de l’authentification Kerberos pour les serveurs d’accès au client avec équilibrage de charge
 ms:assetid: 8f4faeea-a825-438d-97dc-1c398ce7aba5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff808312(v=EXCHG.150)

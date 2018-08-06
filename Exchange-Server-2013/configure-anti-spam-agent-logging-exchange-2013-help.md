@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration de la journalisation de l’agent anti-courrier indésirable: Exchange 2013 Help'
+title: 'Config. de la journalisation de l’agent anti-courr. ind.: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Configuration de la journalisation de l’agent anti-courrier indésirable
 ms:assetid: df157ca3-ad8e-4302-acbc-5fbb8570c21d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb691337(v=EXCHG.150)

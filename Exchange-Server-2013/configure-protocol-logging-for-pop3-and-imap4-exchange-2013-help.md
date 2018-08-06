@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer la journalisation du protocole pour POP3 et IMAP4: Exchange 2013 Help'
+title: 'Config. la journalisation du protocole pour POP3 et IMAP4: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Configurer la journalisation du protocole pour POP3 et IMAP4
 ms:assetid: 451b337b-cb6b-4460-8687-be0b19c469bc
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997690(v=EXCHG.150)

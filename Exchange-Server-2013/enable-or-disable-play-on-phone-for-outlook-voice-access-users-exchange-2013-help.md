@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer ou désactiver émettre au téléphone pour les utilisateurs Outlook Voice Access: Exchange 2013 Help'
+title: 'Activer ou non Émettre au téléphone pour les utilisateurs Outlook Voice Access | Microsoft Docs'
 TOCTitle: Activer ou désactiver émettre au téléphone pour les utilisateurs Outlook Voice Access
 ms:assetid: d3281a97-6fc6-42a3-855f-1af1184a644a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd351161(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Modifier les paramètres de limitation d’utilisateurs pour tous les utilisateurs de votre organisation: Exchange 2013 Help'
+title: 'Modifier param. de limitation d’utlsr pr tous les utlsr de votre organisation | Microsoft Docs'
 TOCTitle: Modifier les paramètres de limitation d’utilisateurs pour tous les utilisateurs de votre organisation
 ms:assetid: c45cacfc-768d-4605-9bb0-53e30273fe4d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ863578(v=EXCHG.150)

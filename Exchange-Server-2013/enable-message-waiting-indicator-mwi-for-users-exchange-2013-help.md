@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer le Message en attente indicateur (MWI) pour les utilisateurs: Exchange 2013 Help'
+title: 'Activer le message en attente indicateur pour utilisateurs: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Activer le Message en attente indicateur (MWI) pour les utilisateurs
 ms:assetid: 3d0ca657-00b6-4108-a850-b092fede1f75
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd335216(v=EXCHG.150)

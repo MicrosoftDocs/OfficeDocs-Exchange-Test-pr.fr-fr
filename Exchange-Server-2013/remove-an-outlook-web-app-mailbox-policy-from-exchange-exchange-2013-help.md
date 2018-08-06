@@ -1,5 +1,5 @@
 ﻿---
-title: "Suppression d'une stratégie de boîte aux lettres Outlook Web App dans Exchange: Exchange 2013 Help"
+title: "Supprimer une strat. de BAL Outlook Web App dans Exchange: Exchange 2013 Help | Microsoft Docs"
 TOCTitle: Suppression d'une stratégie de boîte aux lettres Outlook Web App dans Exchange
 ms:assetid: edab7bac-b62c-4b82-8f21-dcac77cf0e8f
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd351239(v=EXCHG.150)

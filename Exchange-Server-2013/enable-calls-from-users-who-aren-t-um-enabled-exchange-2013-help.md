@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer les appels des utilisateurs qui ne sont pas activés pour la MU: Exchange 2013 Help'
+title: 'Activer les appels utilisateurs non activés pour la MU: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Activer les appels des utilisateurs qui ne sont pas activés pour la MU
 ms:assetid: 3c39c6df-6d7a-469f-b92b-85b3f14bad31
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb267006(v=EXCHG.150)

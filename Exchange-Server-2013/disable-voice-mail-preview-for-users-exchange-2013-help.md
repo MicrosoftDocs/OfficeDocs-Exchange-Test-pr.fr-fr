@@ -1,5 +1,5 @@
 ﻿---
-title: "Désactiver l'aperçu de messagerie vocale pour les utilisateurs: Exchange 2013 Help"
+title: "Désactiv. l’aperçu de messag. vocale pour les utilisateurs: Exchange 2013 Help | Microsoft Docs"
 TOCTitle: Désactiver l'aperçu de messagerie vocale pour les utilisateurs
 ms:assetid: 362fed13-3a9c-4111-bfa4-8c45ab6a3a01
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd335199(v=EXCHG.150)

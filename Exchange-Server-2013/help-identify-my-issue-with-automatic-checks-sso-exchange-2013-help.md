@@ -1,5 +1,5 @@
 ﻿---
-title: 'Identifier mon problème à l’aide des vérifications automatiques (SSO): Exchange 2013 Help'
+title: 'Identifier un problème par des vérifications auto. (SSO): Exchange 2013 Help | Microsoft DocsZ'
 TOCTitle: Identifier mon problème à l’aide des vérifications automatiques (SSO)
 ms:assetid: b7d8418d-f6a9-4bed-af84-0b2ad0554aa9
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn793975(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Identifier mon problème à l’aide des vérifications automatiques (migration): Exchange 2013 Help'
+title: 'Identifier problème par vérifications auto. (migration): Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Identifier mon problème à l’aide des vérifications automatiques (migration)
 ms:assetid: c1cd235d-8e8b-44a8-862d-9d36dc3a44c3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn793980(v=EXCHG.150)

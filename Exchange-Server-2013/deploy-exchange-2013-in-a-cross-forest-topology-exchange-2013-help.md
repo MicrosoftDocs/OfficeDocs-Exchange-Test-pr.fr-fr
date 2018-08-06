@@ -1,5 +1,5 @@
 ﻿---
-title: 'Déploiement d’Exchange 2013 dans une topologie inter-forêts: Exchange 2013 Help'
+title: 'Déployer Exchange 2013 dans une topologie inter-forêts: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Déploiement d’Exchange 2013 dans une topologie inter-forêts
 ms:assetid: 65be650f-d435-4f60-9ff0-5cb88a726abb
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998597(v=EXCHG.150)

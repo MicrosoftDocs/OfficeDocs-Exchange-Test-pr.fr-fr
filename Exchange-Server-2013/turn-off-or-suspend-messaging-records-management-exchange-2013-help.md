@@ -1,5 +1,5 @@
 ﻿---
-title: 'Désactivation ou suspension de la gestion des enregistrements de messagerie: Exchange 2013 Help'
+title: 'Désactiver/suspendre la gestion des enregist. de messag.: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Désactivation ou suspension de la gestion des enregistrements de messagerie
 ms:assetid: 631191aa-3bba-4ebf-a727-c48ed2ebe176
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998580(v=EXCHG.150)

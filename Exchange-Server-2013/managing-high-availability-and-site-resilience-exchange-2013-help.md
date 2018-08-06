@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestion de la haute disponibilité et de la résilience de site: Exchange 2013 Help'
+title: 'Gestion de la haute dispo. et de la résilience de site: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Gestion de la haute disponibilité et de la résilience de site
 ms:assetid: f9677392-88d2-457f-a488-245771a8c1f2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd638215(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Vous devez redémarrer l’ordinateur pour que le programme d’installation puisse continuer l’opération: Exchange 2013 Help'
+title: 'Redémarr. d’ordinateur nécessaire pr que le prog. d’install. puisse poursuivre | Microsoft Docs'
 TOCTitle: Vous devez redémarrer l’ordinateur pour que le programme d’installation puisse continuer l’opération
 ms:assetid: f2d8e504-18c1-4b86-9b97-7654d0391b19
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.pendingrebootwindowscomponents(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Intégration des systèmes téléphoniques à la messagerie unifiée: Exchange 2013 Help'
+title: 'Intégrer des systèmes téléphoniques à la messag. unif.: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Intégration des systèmes téléphoniques à la messagerie unifiée
 ms:assetid: b8790117-b040-4c84-9d34-005c75088e76
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673558(v=EXCHG.150)

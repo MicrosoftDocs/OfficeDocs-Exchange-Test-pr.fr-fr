@@ -1,5 +1,5 @@
 ﻿---
-title: "Arrêtez le service Microsoft Exchange Unified Messaging routeur d'appels: Exchange 2013 Help"
+title: "Arrêtez le service de routeur d’appels de messag. unifiée Microsoft Exchange | Microsoft Docs"
 TOCTitle: Arrêtez le service Microsoft Exchange Unified Messaging routeur d'appels
 ms:assetid: 79935528-1a8c-4f22-826c-8f9a60f4f6f4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673535(v=EXCHG.150)

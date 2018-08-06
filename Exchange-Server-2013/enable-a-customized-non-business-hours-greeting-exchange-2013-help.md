@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer un message d’accueil en dehors des heures d’ouverture personnalisé: Exchange 2013 Help'
+title: 'Activ. un msg d’accueil perso. hors des heures d’ouverture: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Activer un message d’accueil en dehors des heures d’ouverture personnalisé
 ms:assetid: d4743805-bab0-4735-a1e0-2cea4e088e8c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb232183(v=EXCHG.150)

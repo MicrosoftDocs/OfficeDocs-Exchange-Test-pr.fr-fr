@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utiliser la migration par lots pour migrer les dossiers publics vers Exchange 2013 à partir de versions antérieures: Exchange 2013 Help'
+title: 'Utiliser migr. par lots de doss. publics vers Exchange 2013 à partir vrs préc. | Microsoft Docs'
 TOCTitle: Utiliser la migration par lots pour migrer les dossiers publics vers Exchange 2013 à partir de versions antérieures
 ms:assetid: da808e27-d2b7-4fbd-915c-a600751f526c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn912663(v=EXCHG.150)

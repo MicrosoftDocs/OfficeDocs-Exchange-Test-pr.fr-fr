@@ -1,5 +1,5 @@
 ﻿---
-title: 'Récupérer un serveur membre de groupe de disponibilité de la base de données: Exchange 2013 Help'
+title: 'Récupérer un serveur membre de groupe de dispo. de la BDD: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Récupérer un serveur membre de groupe de disponibilité de la base de données
 ms:assetid: eccd8f61-9706-4bb7-a62a-ec7c166f8019
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd638206(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Identifier mon problème à l’aide des vérifications automatiques (ajout de domaines): Exchange 2013 Help'
+title: 'Identifier mon problème à l’aide des vérif. automatiques (ajout de domaines) | Microsoft Docs'
 TOCTitle: Identifier mon problème à l’aide des vérifications automatiques (ajout de domaines)
 ms:assetid: ea90a24b-7c9c-48d5-9475-0eb7777452f3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn793981(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: "Définissez le port d'écoute TLS sur un serveur d'accès au Client: Exchange 2013 Help"
+title: "Déf. du port d’écoute TLS sur un serveur d’accès au client: Exchange 2013 Help | Microsoft Docs"
 TOCTitle: Définissez le port d'écoute TLS sur un serveur d'accès au Client
 ms:assetid: f4401923-61fa-4dc5-95f8-c0d2f515b2ea
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673576(v=EXCHG.150)

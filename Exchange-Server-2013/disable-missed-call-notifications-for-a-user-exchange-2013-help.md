@@ -1,5 +1,5 @@
 ﻿---
-title: 'Désactiver les notifications d’appels manqués pour un utilisateur: Exchange 2013 Help'
+title: 'Désactiver les notif. d’appels manqués pour un utilisateur: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Désactiver les notifications d’appels manqués pour un utilisateur
 ms:assetid: e54937d5-3074-454f-b561-e601fecfc6ad
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673570(v=EXCHG.150)

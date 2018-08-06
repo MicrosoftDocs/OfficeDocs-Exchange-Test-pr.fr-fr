@@ -1,5 +1,5 @@
 ﻿---
-title: 'Procédures relatives à la protection contre la perte de données (DLP): Exchange 2013 Help'
+title: 'Procédures de protection contre la perte de données (DLP): Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Procédures relatives à la protection contre la perte de données (DLP)
 ms:assetid: e2f575aa-552e-4dcc-8d7b-1ffd697d67df
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ657736(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration de la messagerie vocale protégée contre les appelants non authentifiés: Exchange 2013 Help'
+title: 'Config. de la messag. vocale protégée contre les appelants non authentifiés | Microsoft Docs'
 TOCTitle: Configuration de la messagerie vocale protégée contre les appelants non authentifiés
 ms:assetid: 106bfa0a-a0fa-4a1b-bd59-4b6df1d0d61d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd335098(v=EXCHG.150)
