@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer la messagerie unifiée pour qu’elle fonctionne avec Lync Server: Exchange 2013 Help'
+title: 'Configurer la MU pour qu’elle fonctionne avec Lync Server: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Configurer la messagerie unifiée pour qu’elle fonctionne avec Lync Server
 ms:assetid: 29bdddbf-75d5-4c92-988e-c8506ecc7a1c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ966276(v=EXCHG.150)

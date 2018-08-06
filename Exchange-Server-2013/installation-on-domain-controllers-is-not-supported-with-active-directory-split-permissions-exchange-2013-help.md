@@ -1,5 +1,5 @@
 ﻿---
-title: 'L’installation sur des contrôleurs de domaine n’est pas prise en charge avec les autorisations fractionnées: Exchange 2013 Help'
+title: 'Install. sur contr. de domaine non prise en chg avec les autoris. fractionn. | Microsoft Docs'
 TOCTitle: L’installation sur des contrôleurs de domaine n’est pas prise en charge avec les autorisations fractionnées
 ms:assetid: 977e3758-5e09-40a2-80c1-fe344b1d8a2a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.installondcinadsplitpermissionmode(v=EXCHG.150)

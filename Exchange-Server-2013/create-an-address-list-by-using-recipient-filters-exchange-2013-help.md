@@ -1,5 +1,5 @@
 ﻿---
-title: 'Création d’une liste d’adresses à l’aide de filtres de destinataires: Exchange 2013 Help'
+title: 'Liste d’adresses: création avec filtres de destinataires: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Création d’une liste d’adresses à l’aide de filtres de destinataires
 ms:assetid: 8eabea64-97c6-40af-b61c-9b6a125cbdf1
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb123718(v=EXCHG.150)

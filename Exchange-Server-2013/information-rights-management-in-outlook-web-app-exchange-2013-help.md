@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestion des droits relatifs à l’information dans Outlook Web App: Exchange 2013 Help'
+title: 'Gérer les droits relatifs à l’info. dans Outlook Web App: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Gestion des droits relatifs à l’information dans Outlook Web App
 ms:assetid: 60a49dab-17ac-4d2c-9b41-7d87250d6c00
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd876891(v=EXCHG.150)

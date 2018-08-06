@@ -1,5 +1,5 @@
 ﻿---
-title: Présentation de la création d’une empreinte numérique de document dans Exchange
+title: Présentation de la création d’empreinte numérique de document dans Exchange | Microsoft Docs
 TOCTitle: Création d’une empreinte numérique de document
 ms:assetid: 1e0c579c-26e0-462a-a1b0-d7506dfe05fa
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn635176(v=EXCHG.150)

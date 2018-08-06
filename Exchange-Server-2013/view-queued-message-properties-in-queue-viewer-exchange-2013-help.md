@@ -1,5 +1,5 @@
 ﻿---
-title: 'Affichage des propriétés des messages mis en file d’attente dans l’Afficheur des files d’attente: Exchange 2013 Help'
+title: 'Affich. des propr. des msg en file d’attente dans l’afficheur des files d’att. | Microsoft Docs'
 TOCTitle: Affichage des propriétés des messages mis en file d’attente dans l’Afficheur des files d’attente
 ms:assetid: 9d15d8b8-e061-4288-9354-df58e282fb6b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb123934(v=EXCHG.150)

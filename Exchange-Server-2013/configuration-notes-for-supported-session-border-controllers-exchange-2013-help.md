@@ -1,5 +1,5 @@
 ﻿---
-title: 'Notes de configuration pour les contrôleurs de frontière de session pris en charge: Exchange 2013 Help'
+title: 'Notes de config. pour les contrôleurs de frontière de session pris en charge | Microsoft Docs'
 TOCTitle: Notes de configuration pour les contrôleurs de frontière de session pris en charge
 ms:assetid: d161f94a-a243-4294-93b3-2bf1dc17b59f
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673565(v=EXCHG.150)

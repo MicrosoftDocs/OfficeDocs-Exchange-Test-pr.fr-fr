@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer les paramètres de blocage du courrier indésirable sur les boîtes aux lettres: Exchange 2013 Help'
+title: 'Config. des param. de blocage du courr. ind. sur les BAL: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Configurer les paramètres de blocage du courrier indésirable sur les boîtes aux lettres
 ms:assetid: 868d7fd8-e817-46ba-9b67-edf2f50b9494
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb123559(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration des propriétés du réseau de groupe de disponibilité de la base de données: Exchange 2013 Help'
+title: 'Config. les propriétés du réseau de grp de dispo. de BDD: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Configuration des propriétés du réseau de groupe de disponibilité de la base de données
 ms:assetid: 41197639-988f-476c-9788-51d5191a7dce
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd297927(v=EXCHG.150)

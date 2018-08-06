@@ -1,5 +1,5 @@
 ﻿---
-title: 'Modifier les paramètres de limitation d’utilisateurs pour un utilisateur spécifique: Exchange 2013 Help'
+title: 'Modif. param. de limitation d’utlsr pr un utlsr spécifique: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Modifier les paramètres de limitation d’utilisateurs pour un utilisateur spécifique
 ms:assetid: c5f834d6-189d-485e-9800-5e0066815ecf
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ863577(v=EXCHG.150)

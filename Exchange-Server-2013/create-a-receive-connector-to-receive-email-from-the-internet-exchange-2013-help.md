@@ -1,5 +1,5 @@
 ﻿---
-title: "Créez un connecteur de réception pour recevoir des courriers électroniques depuis l'Internet: Exchange 2013 Help"
+title: "Créez un connecteur de réception pour recevoir des e-mails depuis l’Internet | Microsoft Docs"
 TOCTitle: Créez un connecteur de réception pour recevoir des courriers électroniques depuis l'Internet
 ms:assetid: 534bbd32-a0db-4d50-9579-4933b156d7b3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ657447(v=EXCHG.150)

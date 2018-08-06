@@ -1,5 +1,5 @@
 ﻿---
-title: 'Compteurs de performance pour la gestion des enregistrements de messagerie: Exchange 2013 Help'
+title: 'Compteurs de performance pr gérer les enregist. de messag.: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Compteurs de performance pour la gestion des enregistrements de messagerie
 ms:assetid: b59def6f-4249-4e0c-8057-8ae6eb7c5676
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb310790(v=EXCHG.150)

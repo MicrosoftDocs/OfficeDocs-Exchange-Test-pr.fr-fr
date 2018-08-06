@@ -1,5 +1,5 @@
 ﻿---
-title: 'Préparer les boîtes aux lettres pour les demandes de déplacement inter-forêts: Exchange 2013 Help'
+title: 'Préparer les BAL: demandes de déplacement inter-forêts: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Préparer les boîtes aux lettres pour les demandes de déplacement inter-forêts
 ms:assetid: fdbed4fc-a77e-40d5-a211-863b05d74784
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee633491(v=EXCHG.150)

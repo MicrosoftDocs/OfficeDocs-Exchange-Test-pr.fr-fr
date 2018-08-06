@@ -1,5 +1,5 @@
 ﻿---
-title: "Ajouter ou supprimer des utilisateurs d'une stratégie de boîte aux lettres de périphériques mobiles: Exchange 2013 Help"
+title: "Ajouter/supprimer des utlsr de strat. de BAL d’apprl mobiles: Exchange 2013 | Microsoft Docs"
 TOCTitle: Ajouter ou supprimer des utilisateurs d'une stratégie de boîte aux lettres de périphériques mobiles
 ms:assetid: 4ca8e395-c074-4165-b788-16fae3e2ccab
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997929(v=EXCHG.150)

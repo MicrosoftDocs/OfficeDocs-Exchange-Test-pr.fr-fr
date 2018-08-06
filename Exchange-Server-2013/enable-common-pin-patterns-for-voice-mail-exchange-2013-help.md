@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer les modèles communs de code confidentiel pour la messagerie vocale: Exchange 2013 Help'
+title: 'Activ. mod. communs de code confidentiel pour messag. voc.: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Activer les modèles communs de code confidentiel pour la messagerie vocale
 ms:assetid: 9940a8c2-f576-4089-ab96-8b318ad3da0f
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673546(v=EXCHG.150)

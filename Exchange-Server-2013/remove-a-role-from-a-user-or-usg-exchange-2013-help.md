@@ -1,5 +1,5 @@
 ﻿---
-title: 'Supprimer un rôle d’un utilisateur ou un groupe universel de sécurité: Exchange 2013 Help'
+title: 'Supprimer un rôle d’un utlsr ou grp universel de sécurité: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Supprimer un rôle d’un utilisateur ou un groupe universel de sécurité
 ms:assetid: df3510ef-e0c2-4d3c-81b0-7dc3e70c01a0
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd351196(v=EXCHG.150)

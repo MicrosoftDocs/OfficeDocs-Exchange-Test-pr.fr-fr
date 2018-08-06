@@ -1,5 +1,5 @@
 ﻿---
-title: "Supprimer des serveurs de boîtes aux lettres et accès au Client à partir d'un plan de numérotation URI SIP: Exchange 2013 Help"
+title: "Supprimer des srv de BAL et accès au Client à partir d’un plan de num. URI SIP | Microsoft Docs"
 TOCTitle: Supprimer des serveurs de boîtes aux lettres et accès au Client à partir d'un plan de numérotation URI SIP
 ms:assetid: 367441e1-1a0f-42c8-9fa8-8abe80b3d015
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997238(v=EXCHG.150)

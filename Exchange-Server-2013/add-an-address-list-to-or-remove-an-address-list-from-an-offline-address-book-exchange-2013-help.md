@@ -1,5 +1,5 @@
 ﻿---
-title: "Ajout ou suppression d'une liste d'adresses à partir d'un carnet d'adresses en mode hors connexion: Exchange 2013 Help"
+title: "Ajout ou suppression d’une liste d’adresses de carnet en mode hors connexion | Microsoft Docs"
 TOCTitle: Ajout ou suppression d'une liste d'adresses à partir d'un carnet d'adresses en mode hors connexion
 ms:assetid: 86bd5651-ad41-4516-bf23-6579f4e4da03
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb123563(v=EXCHG.150)

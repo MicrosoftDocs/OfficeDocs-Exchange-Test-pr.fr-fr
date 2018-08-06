@@ -1,5 +1,5 @@
 ﻿---
-title: "Configurer le mode de démarrage sur un serveur d'accès au Client: Exchange 2013 Help"
+title: "Config. le mode de démarrage sur un srv d’accès au Client: Exchange 2013 Help | Microsoft Docs"
 TOCTitle: Configurer le mode de démarrage sur un serveur d'accès au Client
 ms:assetid: 71cc9061-9e3c-4b4a-8dbe-f590ca5bcee8
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673533(v=EXCHG.150)

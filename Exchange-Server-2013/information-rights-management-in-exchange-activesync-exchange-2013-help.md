@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestion des droits relatifs à l’information (IRM) dans Exchange ActiveSync: Exchange 2013 Help'
+title: 'Droits relatifs à l’information dans Exchange ActiveSync: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Gestion des droits relatifs à l’information (IRM) dans Exchange ActiveSync
 ms:assetid: ebf04460-4d61-4b00-86b9-85ec1dbbd6a1
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff657743(v=EXCHG.150)

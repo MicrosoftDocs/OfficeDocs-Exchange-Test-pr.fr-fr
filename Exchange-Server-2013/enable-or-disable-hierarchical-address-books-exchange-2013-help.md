@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activation ou désactivation des carnets d’adresses hiérarchiques: Exchange 2013 Help'
+title: 'Activ. ou désactiv. des carnets d’adresses hiérarchiques: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Activation ou désactivation des carnets d’adresses hiérarchiques
 ms:assetid: b4c3a175-ce5e-4bfb-a4a0-92d25f3644b3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff607473(v=EXCHG.150)

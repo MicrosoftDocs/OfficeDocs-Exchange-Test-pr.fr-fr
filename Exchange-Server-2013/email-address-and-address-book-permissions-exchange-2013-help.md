@@ -1,5 +1,5 @@
 ﻿---
-title: 'Autorisations pour configurer les adresses de messagerie et les carnets d’adresses: Exchange 2013 Help'
+title: 'Autorisations pr config. adresses de messag. et crnt d’adresses: Exchange 2013 | Microsoft Docs'
 TOCTitle: Autorisations pour configurer les adresses de messagerie et les carnets d’adresses
 ms:assetid: 1c1de09d-16ef-4424-9bfb-eb7edffbc8c2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ150492(v=EXCHG.150)

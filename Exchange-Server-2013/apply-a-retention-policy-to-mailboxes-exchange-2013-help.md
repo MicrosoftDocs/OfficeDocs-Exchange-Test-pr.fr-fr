@@ -1,5 +1,5 @@
 ﻿---
-title: 'Appliquer une stratégie de rétention aux boîtes aux lettres: Exchange 2013 Help'
+title: 'Appliquer une strat. de rétention aux boîtes aux lettres: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Appliquer une stratégie de rétention aux boîtes aux lettres
 ms:assetid: 6ccc80db-d201-44f7-8d4b-473a89c14b2f
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd298052(v=EXCHG.150)

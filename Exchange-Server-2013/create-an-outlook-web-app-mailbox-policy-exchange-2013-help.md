@@ -1,5 +1,5 @@
 ﻿---
-title: "Création d'une stratégie de boîte aux lettres Outlook Web App: Exchange 2013 Help"
+title: "Créer une stratégie de boîte aux lettres Outlook Web App: Exchange 2013 Help | Microsoft Docs"
 TOCTitle: Création d'une stratégie de boîte aux lettres Outlook Web App
 ms:assetid: 347207fa-cfb7-40a6-b19a-831dcdb54ad5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd335191(v=EXCHG.150)

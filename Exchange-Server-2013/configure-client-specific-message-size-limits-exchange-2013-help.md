@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration des limites de taille de message propres au client: Exchange 2013 Help'
+title: 'Config. des limites de taille de message propres au client: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Configuration des limites de taille de message propres au client
 ms:assetid: fef9ca78-b68f-4342-ada0-881ab985ce3c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Hh529949(v=EXCHG.150)

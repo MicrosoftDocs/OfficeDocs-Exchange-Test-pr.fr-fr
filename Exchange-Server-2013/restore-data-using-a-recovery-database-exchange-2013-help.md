@@ -1,5 +1,5 @@
 ﻿---
-title: 'Restaurer des données à l’aide d’une base de données de récupération: Exchange 2013 Help'
+title: 'Restaurer des données à l’aide d’une BDD de récupération: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Restaurer des données à l’aide d’une base de données de récupération
 ms:assetid: d64c18e7-16af-4bd8-a5c5-01206984d4d1
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee332351(v=EXCHG.150)

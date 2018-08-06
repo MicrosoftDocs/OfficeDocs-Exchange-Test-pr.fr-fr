@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer ou désactiver une règle de répondeur automatique pour un utilisateur: Exchange 2013 Help'
+title: 'Activer/désactiver règle de répondeur auto. pour un utlsr: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Activer ou désactiver une règle de répondeur automatique pour un utilisateur
 ms:assetid: f9e40ac3-117f-44f6-9ab1-dc9f4c72e8ac
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn140252(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Connexion de votre système de messagerie vocale à votre réseau téléphonique: Exchange 2013 Help'
+title: 'Connecter système de messag. voc. au réseau téléphonique: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Connexion de votre système de messagerie vocale à votre réseau téléphonique
 ms:assetid: b606b49d-5bd3-4321-ae77-99fa4604c875
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673554(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Personnaliser les pages de connexion, de sélection de la langue et d’erreur pour Outlook Web App: Exchange 2013 Help'
+title: 'Personnaliser pages de connexion, de sélection de langue et d’erreur pr OWA | Microsoft Docs'
 TOCTitle: Personnaliser les pages de connexion, de sélection de la langue et d’erreur pour Outlook Web App
 ms:assetid: d8d9f735-7181-428f-9049-b9886dce5159
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee633483(v=EXCHG.150)

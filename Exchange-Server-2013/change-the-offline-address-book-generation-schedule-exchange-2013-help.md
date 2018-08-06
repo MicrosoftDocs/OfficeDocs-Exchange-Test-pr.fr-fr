@@ -1,5 +1,5 @@
 ﻿---
-title: 'Modifier la planification de génération du carnet d’adresses hors connexion: Exchange 2013 Help'
+title: 'Modif. planif. de génér. du crnt d’adresses hors connexion: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Modifier la planification de génération du carnet d’adresses hors connexion
 ms:assetid: d2b4d527-311e-442d-9f1f-54fac8371b80
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124719(v=EXCHG.150)

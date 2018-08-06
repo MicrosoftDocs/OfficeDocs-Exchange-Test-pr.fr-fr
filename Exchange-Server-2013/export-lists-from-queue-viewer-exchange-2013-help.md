@@ -1,5 +1,5 @@
 ﻿---
-title: 'Exporter des listes à partir de l’Afficheur des files d’attente: Exchange 2013 Help'
+title: 'Exporter des listes avec l’Afficheur des files d’attente: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Exporter des listes à partir de l’Afficheur des files d’attente
 ms:assetid: dcb829cd-0ffd-4ea9-ac3e-eaac5a8d1194
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb691328(v=EXCHG.150)

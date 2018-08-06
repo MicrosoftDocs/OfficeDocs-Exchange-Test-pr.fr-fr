@@ -1,5 +1,5 @@
 ﻿---
-title: 'Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur: Exchange 2013 Help'
+title: 'Rechercher les modif. des groupes de rôles ou les journaux d’audit de l’admin. | Microsoft Docs'
 TOCTitle: Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur
 ms:assetid: c7188d53-e672-492b-b57d-cd711379ddb3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff459262(v=EXCHG.150)

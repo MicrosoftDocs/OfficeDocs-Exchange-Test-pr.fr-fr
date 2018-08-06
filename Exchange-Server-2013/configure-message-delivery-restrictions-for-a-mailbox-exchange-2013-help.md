@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer les restrictions de remise de message pour une boîte aux lettres: Exchange 2013 Help'
+title: 'Config. les restrictions de remise de message pour une BAL: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Configurer les restrictions de remise de message pour une boîte aux lettres
 ms:assetid: c4b8b89f-3dbe-4cb8-8839-9a4e8067e00c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb397214(v=EXCHG.150)

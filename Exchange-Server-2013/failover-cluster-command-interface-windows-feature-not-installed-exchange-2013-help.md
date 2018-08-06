@@ -1,5 +1,5 @@
 ﻿---
-title: 'Fonctionnalité Windows Interface de commande de cluster de basculement non installée: Exchange 2013 Help'
+title: 'Fonctionn. Windows Interface de commande de cluster de basculement non instal. | Microsoft Docs'
 TOCTitle: Fonctionnalité Windows Interface de commande de cluster de basculement non installée
 ms:assetid: 0d839514-5ab7-497d-8945-41392b4c3980
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.rsatclusteringcmdinterfaceinstalled(v=EXCHG.150)

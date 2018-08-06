@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utiliser des règles de transport pour analyser les pièces jointes des messages: Exchange 2013 Help'
+title: 'Analyse de pièces jointes des msg avec des rgl de transp.: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Utiliser des règles de transport pour analyser les pièces jointes des messages
 ms:assetid: c0de687e-e33c-4e8a-b253-771494678795
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ674307(v=EXCHG.150)

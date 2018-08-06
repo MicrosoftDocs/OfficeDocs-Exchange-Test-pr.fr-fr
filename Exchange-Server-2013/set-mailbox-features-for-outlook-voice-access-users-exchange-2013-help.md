@@ -1,5 +1,5 @@
 ﻿---
-title: 'Définitions des fonctionnalités de boîte aux lettres pour des utilisateurs d’Outlook Voice Access: Exchange 2013 Help'
+title: 'Déf. des fonctionnalités de BAL pour utilisateurs d’OVA: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Définitions des fonctionnalités de boîte aux lettres pour des utilisateurs d’Outlook Voice Access
 ms:assetid: 10960bf0-65cf-4d0b-bae5-d203c53662db
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa996307(v=EXCHG.150)

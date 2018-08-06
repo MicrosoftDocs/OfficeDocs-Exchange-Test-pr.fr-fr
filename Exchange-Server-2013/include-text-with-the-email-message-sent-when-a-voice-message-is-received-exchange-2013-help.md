@@ -1,5 +1,5 @@
 ﻿---
-title: "Inclure du texte avec le message électronique envoyé lors de la réception d'un message vocal: Exchange 2013 Help"
+title: "Inclure du texte avec l’e-mail envoyé lors de la réception d’un message vocal | Microsoft Docs"
 TOCTitle: Inclure du texte avec le message électronique envoyé lors de la réception d'un message vocal
 ms:assetid: b2eec29c-e5eb-4263-80d8-0b9813dd56dc
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb201718(v=EXCHG.150)

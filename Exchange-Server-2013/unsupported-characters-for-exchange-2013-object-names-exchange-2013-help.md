@@ -1,5 +1,5 @@
 ﻿---
-title: 'Caractères non pris en charge pour les noms d’objets Exchange 2013: Exchange 2013 Help'
+title: 'Caract. non pris en charge pour noms d’obj. Exchange 2013: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Caractères non pris en charge pour les noms d’objets Exchange 2013
 ms:assetid: 76fa4e23-f0f6-473b-9227-70ded907578f
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn169553(v=EXCHG.150)

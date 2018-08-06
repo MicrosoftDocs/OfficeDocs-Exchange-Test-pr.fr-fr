@@ -1,5 +1,5 @@
 ﻿---
-title: "Interpréter les enregistrements d'appel de messagerie vocale: Exchange 2013 Help"
+title: "Interpréter les enregist. d’appel de messagerie vocale: Exchange 2013 Help | Microsoft Docs"
 TOCTitle: Interpréter les enregistrements d'appel de messagerie vocale
 ms:assetid: 368d9c58-61a2-43d5-8189-d3469a9e2a8d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ659061(v=EXCHG.150)

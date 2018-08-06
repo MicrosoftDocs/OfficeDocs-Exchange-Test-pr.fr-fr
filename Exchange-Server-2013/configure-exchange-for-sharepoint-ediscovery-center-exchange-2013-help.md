@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer Exchange pour le Centre de découverte électronique SharePoint: Exchange 2013 Help'
+title: 'Config. d’Exchange pour le Centre de découv. électr. SP: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Configurer Exchange pour le Centre de découverte électronique SharePoint
 ms:assetid: 795c1a3b-295c-4ee5-ade9-52cf3fda3f19
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ218665(v=EXCHG.150)

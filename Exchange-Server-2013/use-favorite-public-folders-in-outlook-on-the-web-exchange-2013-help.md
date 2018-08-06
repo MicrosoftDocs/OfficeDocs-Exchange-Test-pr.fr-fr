@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utilisation de dossiers publics favoris dans Outlook sur le web: Exchange 2013 Help'
+title: 'Utilis. de dossiers publics favoris dans Outlook s/ le web: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Utilisation de dossiers publics favoris dans Outlook sur le web
 ms:assetid: f6f1db72-4465-4eb8-b525-ac2c1fa10a69
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn948177(v=EXCHG.150)

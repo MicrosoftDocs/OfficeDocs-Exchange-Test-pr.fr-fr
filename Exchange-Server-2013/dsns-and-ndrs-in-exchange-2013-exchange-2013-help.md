@@ -1,5 +1,5 @@
 ﻿---
-title: 'Notifications d’état de remise et notifications d’échec de remise dans Exchange 2013: Exchange 2013 Help'
+title: 'Notifications d’état et d’échec de remise dans Exchange 2013: Exchange 2013 | Microsoft Docs'
 TOCTitle: Notifications d’état de remise et notifications d’échec de remise dans Exchange 2013
 ms:assetid: 8e91de84-76fa-49b2-898c-c5eface76560
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb232118(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Filtrage des pièces jointes sur les serveurs de transport Edge: Exchange 2013 Help'
+title: 'Filtrer des pièces jointes sur les srv de transp. Edge: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Filtrage des pièces jointes sur les serveurs de transport Edge
 ms:assetid: be39a181-c82e-41f5-8846-085bf1f84164
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124399(v=EXCHG.150)

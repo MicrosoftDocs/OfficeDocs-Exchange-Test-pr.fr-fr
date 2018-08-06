@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer le répertoire de collecte et le répertoire de relecture: Exchange 2013 Help'
+title: 'Configurer les répertoires de collecte et de relecture: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Configurer le répertoire de collecte et le répertoire de relecture
 ms:assetid: c9ca7358-9a08-4f57-89d0-910e4438df8a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124549(v=EXCHG.150)

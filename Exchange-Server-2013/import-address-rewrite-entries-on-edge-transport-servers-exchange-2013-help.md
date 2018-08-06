@@ -1,5 +1,5 @@
 ﻿---
-title: 'Importation d’entrées de réécriture d’adresses sur des serveurs de transport Edge: Exchange 2013 Help'
+title: 'Import entrées de réécriture d’adresses sur srv de transp. Edge: Exchange 2013 | Microsoft Docs'
 TOCTitle: Importation d’entrées de réécriture d’adresses sur des serveurs de transport Edge
 ms:assetid: bd0942c6-9c66-4b4c-b9bc-2f5f783def76
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb331966(v=EXCHG.150)

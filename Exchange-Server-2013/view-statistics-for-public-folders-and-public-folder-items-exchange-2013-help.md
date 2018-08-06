@@ -1,5 +1,5 @@
 ﻿---
-title: 'Affichage des statistiques des dossiers publics et des éléments des dossiers publics: Exchange 2013 Help'
+title: 'Affichage des stat. et des éléments des dossiers publics : Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Affichage des statistiques des dossiers publics et des éléments des dossiers publics
 ms:assetid: 4e412710-9a74-4649-ab01-502e969a7eda
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997949(v=EXCHG.150)

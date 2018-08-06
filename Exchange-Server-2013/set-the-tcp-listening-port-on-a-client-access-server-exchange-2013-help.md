@@ -1,5 +1,5 @@
 ﻿---
-title: "Définition du port d'écoute TCP sur un serveur d'accès au client: Exchange 2013 Help"
+title: "Déf. du port d’écoute TCP sur un serveur d’accès au client: Exchange 2013 Help | Microsoft Docs"
 TOCTitle: Définition du port d'écoute TCP sur un serveur d'accès au client
 ms:assetid: 5f48f21a-d8d4-48b2-868f-9a3647693841
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673530(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: "Définir le nombre d'échecs de connexion avant qu'un utilisateur de messagerie vocale est verrouillé: Exchange 2013 Help"
+title: "Nbre d’échecs de connexion avant verrouillage d’un utilisateur de messag. voc. | Microsoft Docs"
 TOCTitle: Définir le nombre d'échecs de connexion avant qu'un utilisateur de messagerie vocale est verrouillé
 ms:assetid: 855e1980-2868-4983-b097-0b5f63f202b8
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb123544(v=EXCHG.150)

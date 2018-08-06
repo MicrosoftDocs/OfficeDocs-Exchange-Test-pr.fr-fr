@@ -1,5 +1,5 @@
 ﻿---
-title: 'Propriétés de message et opérateurs de recherche pour la découverte électronique inaltérable: Exchange 2013 Help'
+title: 'Propriétés de msg et opérateurs de rech. pour la découv. électr. inaltérable | Microsoft Docs'
 TOCTitle: Propriétés de message et opérateurs de recherche pour la découverte électronique inaltérable
 ms:assetid: 402b74e4-8853-4c51-9737-1a9c19f8e3dd
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn774955(v=EXCHG.150)

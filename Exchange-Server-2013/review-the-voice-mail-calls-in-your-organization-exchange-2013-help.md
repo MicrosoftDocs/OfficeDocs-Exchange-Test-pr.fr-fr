@@ -1,5 +1,5 @@
 ﻿---
-title: 'Passez en revue les appels de messagerie vocale dans votre organisation: Exchange 2013 Help'
+title: 'Passez en revue les appels de messag. voc. dans votre org.: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Passez en revue les appels de messagerie vocale dans votre organisation
 ms:assetid: f6fdbe17-d1d2-442a-aa13-06b908d9c33a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ659073(v=EXCHG.150)

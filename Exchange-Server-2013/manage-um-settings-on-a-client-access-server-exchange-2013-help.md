@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestion des paramètres de messagerie unifiée sur un serveur d’accès au client: Exchange 2013 Help'
+title: 'Gestion des param. de MU sur un serveur d’accès au client: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Gestion des paramètres de messagerie unifiée sur un serveur d’accès au client
 ms:assetid: 08667911-fa86-404e-84b1-65cedd94d579
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673507(v=EXCHG.150)

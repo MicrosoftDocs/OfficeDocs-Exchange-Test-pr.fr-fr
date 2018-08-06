@@ -1,5 +1,5 @@
 ﻿---
-title: 'Exporter les résultats de la recherche électronique vers un fichier PST: Exchange 2013 Help'
+title: 'Export des résult. de la rech. électr. vers un fichier PST: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Exporter les résultats de la recherche électronique vers un fichier PST
 ms:assetid: bc47f5f9-d056-4b69-b669-ae65fad541c8
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn440164(v=EXCHG.150)

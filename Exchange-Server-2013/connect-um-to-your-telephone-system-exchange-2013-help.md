@@ -1,5 +1,5 @@
 ﻿---
-title: 'Connecter la messagerie unifiée pour votre système téléphonique: Exchange 2013 Help'
+title: 'Connecter la messag. unifiée à votre système téléphonique: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Connecter la messagerie unifiée pour votre système téléphonique
 ms:assetid: 92c3e029-f732-4d6d-b147-2b3006d5f088
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673544(v=EXCHG.150)

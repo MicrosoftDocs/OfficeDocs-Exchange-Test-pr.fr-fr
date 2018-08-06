@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration d’une boîte aux lettres de mise en quarantaine du courrier indésirable: Exchange 2013 Help'
+title: 'Config. une BAL de mise en quarant. du courrier indés.: Exchange 2013 Help | Microsoft Docs'
 TOCTitle: Configuration d’une boîte aux lettres de mise en quarantaine du courrier indésirable
 ms:assetid: 907d2f90-2a62-4d59-a4cf-945fef2e963f
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb123746(v=EXCHG.150)
