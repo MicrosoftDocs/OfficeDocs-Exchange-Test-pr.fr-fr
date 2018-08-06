@@ -96,7 +96,8 @@ Le tableau suivant décrit les attributs pris en charge dans un fichier CSV pour
 <td><p>Facultatif</p></td>
 <td><p>Nom de base de données</p></td>
 <td><p>Spécifie la base de données de boîtes aux lettres qui est déplacée vers l’archive boîte aux lettres (si elle existe). Vous pouvez spécifier une autre base de données dans les différentes lignes du fichier CSV, ce qui vous permet de déplacer des boîtes aux lettres d’archive dans le même lot de migration de bases de données différentes.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Si vous ne spécifiez pas la base de données d’archive, la boîte aux lettres d’archive est déplacé vers la même base que la boîte aux lettres principale.
 
 </td>
@@ -308,7 +309,8 @@ Le tableau suivant décrit les attributs pris en charge dans un fichier CSV pour
 <td><p>Facultatif</p></td>
 <td><p><code>True</code> ou <code>False</code></p></td>
 <td><p>Spécifie si les utilisateurs doivent modifier le mot de passe la première fois qu'ils se connectent à leur boîte aux lettres Exchange Online.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Si vous avez implémenté une solution d'authentification unique en déployant Active Directory Federation Services 2.0 (AD FS 2.0) dans votre organisation locale, vous devez utiliser la valeur <code>False</code> pour cet attribut.
 
 </td>

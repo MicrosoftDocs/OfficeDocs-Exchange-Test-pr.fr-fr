@@ -79,7 +79,8 @@ Le tableau suivant présente la liste des applications clientes que l’on peut 
 <tr class="odd">
 <td><p>Outlook 2013, Outlook 2010, Outlook 2007 et Outlook Web App</p></td>
 <td><p>Oui. Les utilisateurs de Outlook 2013, Outlook 2010, Outlook 2007 et Outlook Web App peuvent copier et déplacer des éléments de leur boîte aux lettres principale vers leur boîte aux lettres d’archivage. Ils peuvent également utiliser des stratégies de rétention pour déplacer des éléments vers l’archive.</p>
-> [!NOTE]
+
+> [!NOTE]    
 > Les utilisateurs de Outlook 2007, de Outlook 2010 et des versions ultérieures peuvent également copier ou déplacer des éléments depuis des fichiers .pst vers leur boîte aux lettres d’archivage. Les utilisateurs de Outlook 2007 doivent installer la mise à jour cumulative de Microsoft Office 2007 de février 2011. Certaines différences de support d'archive existent entre la version 2007 de Outlook et les versions 2010 et ultérieures de Outlook. Pour plus d'informations, consultez l'article du Blog de l’équipe Exchange, <a href="https://blogs.technet.com/b/exchange/archive/2010/12/20/3411710.aspx">Oui Virginie, les archives Exchange 2010 sont prises en charge dans Outlook 2007</a>.
 
 </td>
@@ -92,7 +93,7 @@ Le tableau suivant présente la liste des applications clientes que l’on peut 
 </table>
 
 
-> [!NOTE]
+> [!NOTE]  
 > L’archivage local constituent une fonctionnalité étendue et requiert une licence d’accès client (CAL) Exchange Enterprise. Pour plus d’informations sur les licences Exchange, voir la rubrique <a href="https://go.microsoft.com/fwlink/?linkid=237292">Exchange Server Licensing</a>. Pour plus d’informations sur les versions d’Outlook requises pour accéder à une boîte aux lettres d’archivage, consultez la rubrique <a href="https://go.microsoft.com/fwlink/?linkid=237276">Conditions requises pour les licences relatives aux stratégies d’archivage et de rétention personnelles</a>.
 
 
@@ -120,7 +121,7 @@ Différentes méthodes permettent de déplacer des messages vers des boîtes aux
 
   - **Déplacer des messages à l’aide des stratégies de rétention**   Vous pouvez utiliser les stratégies de rétention pour déplacer automatiquement des messages vers l’archive. Les utilisateurs peuvent également appliquer une balise personnelle pour déplacer des messages vers l’archive. Pour en savoir plus sur les stratégies d’archivage et de rétention, voir la section Stratégies d’archivage et de rétention plus bas dans cette rubrique.
     
-    > [!NOTE]
+    > [!NOTE]  
     > Les balises personnelles ne sont accessibles que sous Outlook Web App et sous Outlook 2010 et les versions ultérieures.
 
 

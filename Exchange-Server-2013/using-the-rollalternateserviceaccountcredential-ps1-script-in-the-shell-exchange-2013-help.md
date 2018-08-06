@@ -19,11 +19,11 @@ _**Dernière rubrique modifiée :** 2015-03-09_
 
 Vous pouvez utiliser le script RollAlternateServiceAccountPassword.ps1 dans Exchange Server 2013 pour mettre à jour des informations d'identification de compte de service de substitution (informations d'identification ASA) et distribuer la mise à jour aux serveurs d'accès au client spécifiés.
 
-> [!NOTE]
-> L’environnement de ligne de commande Exchange Management Shell ne charge pas automatiquement les scripts. Vous devez faire précéder tous les scripts de « <strong>. \</strong> », par exemple, pour exécuter le script RollAlternateServiceAccountPassword.ps1, tapez <code>.\RollAlternateServiceAccountPassword.ps1</code>.
+> [!NOTE]  
+> L’environnement de ligne de commande Exchange Management Shell ne charge pas automatiquement les scripts. Vous devez faire précéder tous les scripts de « . \ », par exemple, pour exécuter le script RollAlternateServiceAccountPassword.ps1, tapez <code>.\RollAlternateServiceAccountPassword.ps1</code>.
 
 
-> [!NOTE]
+> [!NOTE]  
 > Ce script est uniquement disponible en anglais.
 
 
@@ -67,7 +67,7 @@ Si certains des mots de passe d’accès à l’ensemble des serveurs cibles d�
 
 Pour que le script crée une tâche planifiée pour gérer le mot de passe de manière continue, utilisez le paramètre *CreateScheduledTask*. Ce paramètre doit être complété avec la chaîne correspondant au nom de la tâche à créer.
 
-> [!NOTE]
+> [!NOTE]  
 > Exécutez le script et vérifiez qu’il fonctionne correctement en mode avec assistance avant de créer la tâche planifiée sans assistance.
 
 
@@ -154,7 +154,8 @@ Vous pouvez utiliser le journal pour vous assurer que la tâche s’est bien ex�
 <td><p><em>ToArrayMembers</em></p></td>
 <td><p>Facultatif</p></td>
 <td><p>Le paramètre <em>ToArrayMembers</em> cible le script vers tous les membres d’un groupe spécifique de serveurs d’accès au client.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Si vous utilisez le paramètre <em>ToArrayMembers</em> ou le paramètre <em>ToSpecificServers</em>, vous devez spécifier les noms de serveur ou les noms de groupe de serveurs à l’aide du paramètre <em>Identity</em>.
 
 </td>
@@ -163,7 +164,8 @@ Vous pouvez utiliser le journal pour vous assurer que la tâche s’est bien ex�
 <td><p><em>ToSpecificServers</em></p></td>
 <td><p>Facultatif</p></td>
 <td><p>Le paramètre <em>ToSpecificServers</em> cible le script vers des serveurs spécifiques.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Si vous utilisez le paramètre <em>ToArrayMembers</em> ou le paramètre <em>ToSpecificServers</em>, vous devez spécifier les noms de serveur ou les noms de groupe de serveurs à l’aide du paramètre <em>Identity</em>.
 
 </td>
@@ -192,7 +194,8 @@ Vous pouvez utiliser le journal pour vous assurer que la tâche s’est bien ex�
 <td><p><em>CreateScheduledTask&lt;String&gt;</em></p></td>
 <td><p>Facultatif</p></td>
 <td><p>Le paramètre <em>CreateScheduledTask</em> demande au script de créer une tâche planifiée pour effectuer la mise à jour des informations d’identification ASA. La valeur de la chaîne correspond au nom de la tâche planifiée qui sera créée.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Ce script crée un fichier .cmd dans le dossier où il se trouve. La tâche planifiée exécutera le fichier .cmd toutes les trois semaines. Pour modifier la fréquence d’exécution de la tâche, vous pouvez modifier directement cette dernière dans le Planificateur de tâches Windows.
 
 </td>

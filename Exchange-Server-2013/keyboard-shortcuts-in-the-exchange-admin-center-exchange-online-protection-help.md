@@ -44,7 +44,8 @@ En utilisant des raccourcis clavier dans le Centre d'administration Exchange (CA
 <tr class="even">
 <td><p>Se déplacer entre les éléments des menus déroulants dans le Centre d'administration Exchange</p></td>
 <td><p>Flèches Haut et Bas.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Les touches Tab et Maj-Tab ne permettent pas de passer d'un élément de menu à un autre dans ce cas.
 
 </td>
@@ -52,7 +53,8 @@ En utilisant des raccourcis clavier dans le Centre d'administration Exchange (CA
 <tr class="odd">
 <td><p>Parcourir les éléments d'une liste</p></td>
 <td><p>Les touches de direction Haut, Bas, Origine, Fin, Pg préc, Pg suiv.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Vous pouvez également utiliser les touches de direction Haut, Bas, Gauche et Droite pour passer d'une case d'option à une autre ou pour parcourir un groupe de cases à cocher associées.
 
 </td>

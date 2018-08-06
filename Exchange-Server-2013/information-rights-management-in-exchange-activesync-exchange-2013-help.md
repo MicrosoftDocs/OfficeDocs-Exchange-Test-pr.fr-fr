@@ -94,7 +94,8 @@ Lorsque vous activez IRM dans Exchange ActiveSync, il est recommandé d’utilis
 <td><p>Activez le chiffrement pour l’appareil mobile.</p></td>
 <td><p>Cochez la case <strong>Exiger un mot de passe</strong>, puis la case <strong>Exiger le chiffrement du périphérique</strong>.</p></td>
 <td><p>Définissez le paramètre <em>RequireDeviceEncryption</em> sur <code>$true</code>.</p>
-> [!NOTE]
+
+> [!NOTE]  
 > Lorsque vous définissez le paramètre <em>RequireDeviceEncryption</em> sur <code>$true</code>, les appareils mobiles qui ne prennent pas en charge le chiffrement ne parviendront pas à se connecter.
 
 </td>
