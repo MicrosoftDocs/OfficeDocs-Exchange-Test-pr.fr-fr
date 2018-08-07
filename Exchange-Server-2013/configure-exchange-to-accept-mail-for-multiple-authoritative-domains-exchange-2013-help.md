@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration d’Exchange de manière à accepter des messages électroniques pour plusieurs domaines faisant autorité: Exchange 2013 Help'
+title: 'Config. Exchange pour qu’il accepte des msg électr. pr des domaines d’autorité'
 TOCTitle: Configuration d’Exchange de manière à accepter des messages électroniques pour plusieurs domaines faisant autorité
 ms:assetid: 11801f73-4934-4025-a1c1-3935dada7e9b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa996314(v=EXCHG.150)

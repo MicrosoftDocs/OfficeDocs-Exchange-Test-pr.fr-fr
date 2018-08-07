@@ -1,5 +1,5 @@
 ﻿---
-title: 'Désactiver ou réactiver le partage fédéré de votre organisation Exchange: Exchange 2013 Help'
+title: 'Désactiver ou réactiver le partage fédéré de votre organisation Exchange'
 TOCTitle: Désactiver ou réactiver le partage fédéré de votre organisation Exchange
 ms:assetid: d36490d8-0268-47b9-a6d4-e56427f1b02e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ657497(v=EXCHG.150)

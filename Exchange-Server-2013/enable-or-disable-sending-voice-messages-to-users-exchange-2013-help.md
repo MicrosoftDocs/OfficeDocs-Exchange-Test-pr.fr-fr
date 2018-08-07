@@ -1,5 +1,5 @@
 ﻿---
-title: "Activation ou désactivation de l'envoi de messages vocaux aux utilisateurs: Exchange 2013 Help"
+title: 'Activer/désactiver l’envoi de messages vocaux aux utlsr: Exchange 2013 Help'
 TOCTitle: Activation ou désactivation de l'envoi de messages vocaux aux utilisateurs
 ms:assetid: faa300d8-2534-40db-8ef9-428be8bb7934
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd351277(v=EXCHG.150)

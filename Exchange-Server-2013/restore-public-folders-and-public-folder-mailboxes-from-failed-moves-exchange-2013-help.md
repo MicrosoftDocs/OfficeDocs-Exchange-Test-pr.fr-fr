@@ -1,5 +1,5 @@
 ﻿---
-title: 'Restauration de dossiers publics et de boîtes aux lettres de dossiers publics à partir de déplacements ayant échoué: Exchange 2013 Help'
+title: 'Restauration de dossiers publics et BAL à partir de déplacements ayant échoué'
 TOCTitle: Restauration de dossiers publics et de boîtes aux lettres de dossiers publics à partir de déplacements ayant échoué
 ms:assetid: 2ade83c9-5f9b-4945-bf32-48fa8185b515
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ983802(v=EXCHG.150)

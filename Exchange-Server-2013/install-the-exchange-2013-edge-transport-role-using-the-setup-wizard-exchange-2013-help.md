@@ -1,5 +1,5 @@
 ﻿---
-title: 'Installer le rôle de transport Edge d’Exchange 2013 à l’aide de l’Assistant Installation: Exchange 2013 Help'
+title: 'Installer le rôle de transport Edge d’Exchange 2013 à l’aide de l’Assistant'
 TOCTitle: Installer le rôle de transport Edge d’Exchange 2013 à l’aide de l’Assistant Installation
 ms:assetid: b8e51b0b-201e-4c64-92c8-3ac0db04b6e2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn635117(v=EXCHG.150)

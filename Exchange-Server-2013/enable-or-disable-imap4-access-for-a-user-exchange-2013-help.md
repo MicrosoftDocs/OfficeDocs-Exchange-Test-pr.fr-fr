@@ -1,5 +1,5 @@
 ﻿---
-title: "Activation ou désactivation de l'accès IMAP4 pour un utilisateur: Exchange 2013 Help"
+title: 'Activ. ou désactiv. l’accès IMAP4 pr un utilisateur: Exchange 2013 Help'
 TOCTitle: Activation ou désactivation de l'accès IMAP4 pour un utilisateur
 ms:assetid: a685fae4-b6f1-42fe-8bdc-5f99f9617799
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb676481(v=EXCHG.150)

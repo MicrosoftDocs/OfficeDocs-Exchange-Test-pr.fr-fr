@@ -1,5 +1,5 @@
 ﻿---
-title: "Utilisation d'une machine virtuelle Microsoft Azure comme serveur témoin du groupe de disponibilité de base de données (DAG): Exchange 2013 Help"
+title: 'MV Microsoft Azure comme srv témoin DAG de BDD (DAG): Exchange 2013 Help'
 TOCTitle: Utilisation d'une machine virtuelle Microsoft Azure comme serveur témoin du groupe de disponibilité de base de données (DAG)
 ms:assetid: 03d1e215-518b-4b48-bfcd-8d187ff8f5ef
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn903504(v=EXCHG.150)

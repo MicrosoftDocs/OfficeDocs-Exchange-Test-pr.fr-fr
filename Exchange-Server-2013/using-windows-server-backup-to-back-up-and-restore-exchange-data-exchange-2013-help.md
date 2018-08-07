@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utilisation de la Sauvegarde Windows Server pour sauvegarder et restaurer des données Exchange: Exchange 2013 Help'
+title: 'Sauvegarde Windows Server: sauvegarder et restaurer des données Exchange'
 TOCTitle: Utilisation de la Sauvegarde Windows Server pour sauvegarder et restaurer des données Exchange
 ms:assetid: 0fac891a-5713-42b6-afd5-c91b2b88f966
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd876851(v=EXCHG.150)

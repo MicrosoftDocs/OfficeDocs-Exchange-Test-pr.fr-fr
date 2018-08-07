@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration manuelle du flux de messagerie du serveur de transport Edge: Exchange 2013 Help'
+title: 'Config. manuelle du flux de messag. du srv de transp. Edge: Exchange 2013 Help'
 TOCTitle: Configuration manuelle du flux de messagerie du serveur de transport Edge
 ms:assetid: cb4cc165-6c09-44ab-a95f-167ae8ed2485
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn606261(v=EXCHG.150)

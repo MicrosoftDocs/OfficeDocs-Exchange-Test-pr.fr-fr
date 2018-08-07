@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestion de la réécriture d’adresses sur les serveurs de transport Edge: Exchange 2013 Help'
+title: 'Réécriture d’adresses sur les srv de transport Edge: Exchange 2013 Help'
 TOCTitle: Gestion de la réécriture d’adresses sur les serveurs de transport Edge
 ms:assetid: 323a0b55-f921-425d-b1b0-18ad0fac315c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997185(v=EXCHG.150)

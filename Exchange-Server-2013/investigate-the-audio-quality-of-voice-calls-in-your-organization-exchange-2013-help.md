@@ -1,5 +1,5 @@
 ﻿---
-title: "Examiner la qualité audio d'appels vocaux au sein de votre organisation: Exchange 2013 Help"
+title: 'Examiner la qualité audio d’appels vocaux au sein de votre organisation'
 TOCTitle: Examiner la qualité audio d'appels vocaux au sein de votre organisation
 ms:assetid: 8a87694b-1678-4a01-859f-5ad3b2c73db5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ659069(v=EXCHG.150)

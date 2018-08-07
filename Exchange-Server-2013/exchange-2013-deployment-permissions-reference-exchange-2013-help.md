@@ -1,5 +1,5 @@
 ﻿---
-title: 'Référence d’autorisations pour le déploiement d’Exchange 2013: Exchange 2013 Help'
+title: 'Référence d’autorisations pour déployer Exchange 2013: Exchange 2013 Help'
 TOCTitle: Référence d’autorisations pour le déploiement d’Exchange 2013
 ms:assetid: b13412d0-0cc4-4c1d-bf31-cae3d3e211a9
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee681663(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Développement de packages de règles des informations sensibles: Exchange 2013 Help'
+title: 'Développement de packages de règles des informations sensibles'
 TOCTitle: Développement de packages de règles des informations sensibles
 ms:assetid: c4ab8707-0839-4855-9390-3dbcb43475a7
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ674704(v=EXCHG.150)

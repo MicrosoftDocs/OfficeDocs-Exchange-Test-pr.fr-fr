@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activation ou désactivation de la reconnaissance vocale automatique: Exchange 2013 Help'
+title: 'Activation/désactivation de la rec. voc. automatique: Exchange 2013 Help'
 TOCTitle: Activation ou désactivation de la reconnaissance vocale automatique
 ms:assetid: 92b3b679-b503-4068-8e88-25ec0f4537ab
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb232128(v=EXCHG.150)

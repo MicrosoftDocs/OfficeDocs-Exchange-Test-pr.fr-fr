@@ -1,5 +1,5 @@
 ﻿---
-title: 'Supprimer une stratégie de boîte aux lettres de messagerie unifiée: Exchange 2013 Help'
+title: 'Supprimer une stratégie de BAL de messagerie unifiée: Exchange 2013 Help'
 TOCTitle: Supprimer une stratégie de boîte aux lettres de messagerie unifiée
 ms:assetid: c8758464-3c52-4dd3-b2a6-142a99bb0628
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124536(v=EXCHG.150)

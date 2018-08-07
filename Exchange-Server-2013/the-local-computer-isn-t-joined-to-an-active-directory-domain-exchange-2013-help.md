@@ -1,5 +1,5 @@
 ﻿---
-title: "L'ordinateur local n'est pas lié à un domaine Active Directory: Exchange 2013 Help"
+title: 'L’ordinateur local n’est pas lié à un domaine Active Directory'
 TOCTitle: L'ordinateur local n'est pas lié à un domaine Active Directory
 ms:assetid: feb08845-6d44-4760-9932-6eca22f35eec
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.computernotpartofdomain(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: "Recommandations en matière de dimensionnement et de configuration d'Exchange 2013: Exchange 2013 Help"
+title: 'Config. de srv de transp. Edge avec la config. clonée: Exchange 2013 Help'
 TOCTitle: Recommandations en matière de dimensionnement et de configuration d'Exchange 2013
 ms:assetid: 4c4ba2fc-014a-46fb-949a-2dabba92c4a5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn879075(v=EXCHG.150)

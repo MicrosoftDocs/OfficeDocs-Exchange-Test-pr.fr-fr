@@ -1,5 +1,5 @@
 ﻿---
-title: 'Le contrôleur de schéma n’utilise pas Windows Server 2003 Service Pack 1 ou une version ultérieure_DomainControllerIsOutOfSite: Exchange 2013 Help'
+title: 'Le ctrlr de schéma n’utilise pas Windows Server 2003 SP1 ou version ult.'
 TOCTitle: Le contrôleur de schéma n’utilise pas Windows Server 2003 Service Pack 1 ou une version ultérieure_DomainControllerIsOutOfSite
 ms:assetid: 5edbe0b8-7610-4a52-aaaa-38c6a99e7e53
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.domaincontrollerisoutofsite(v=EXCHG.150)

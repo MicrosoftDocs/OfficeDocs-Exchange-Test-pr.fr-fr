@@ -1,5 +1,5 @@
 ﻿---
-title: "Autoriser ou empêcher un utilisateur de créer des règles de répondeur automatique d'appel: Exchange 2013 Help"
+title: 'Autoriser ou empêcher un utlsr de créer des règles de répondeur auto. d’appel'
 TOCTitle: Autoriser ou empêcher un utilisateur de créer des règles de répondeur automatique d'appel
 ms:assetid: 81863440-8b21-4523-bdab-6a2311889a0d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd298097(v=EXCHG.150)

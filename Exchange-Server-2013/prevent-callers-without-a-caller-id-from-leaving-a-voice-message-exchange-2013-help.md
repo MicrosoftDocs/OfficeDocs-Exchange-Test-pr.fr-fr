@@ -1,5 +1,5 @@
 ﻿---
-title: "Empêcher les appelants sans ID d'appelant de laisser un message vocal: Exchange 2013 Help"
+title: 'Empêcher les appelants sans ID d’appelant de laisser un message vocal'
 TOCTitle: Empêcher les appelants sans ID d'appelant de laisser un message vocal
 ms:assetid: dd5dad32-2f69-4bf4-8ff0-545c413d395a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673571(v=EXCHG.150)

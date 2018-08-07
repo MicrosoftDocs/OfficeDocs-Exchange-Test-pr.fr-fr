@@ -1,5 +1,5 @@
 ﻿---
-title: 'Désactiver les appels des utilisateurs qui ne sont pas activés pour la MU: Exchange 2013 Help'
+title: 'Désactiver les appels utilisateurs non activés pour la MU: Exchange 2013 Help'
 TOCTitle: Désactiver les appels des utilisateurs qui ne sont pas activés pour la MU
 ms:assetid: 272ff4ab-b4d9-4647-98e2-7c171f9dfc3f
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673516(v=EXCHG.150)

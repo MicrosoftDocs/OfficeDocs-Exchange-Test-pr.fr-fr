@@ -1,5 +1,5 @@
 ﻿---
-title: 'Ajouter ou supprimer des balises de rétention à partir d’une stratégie de rétention: Exchange 2013 Help'
+title: 'Ajout ou suppression de balise de rétention à partir d’une strat. de rétention'
 TOCTitle: Ajouter ou supprimer des balises de rétention à partir d’une stratégie de rétention
 ms:assetid: 3a5196ce-2764-453d-9bc1-5ec22d06b40d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd362328(v=EXCHG.150)

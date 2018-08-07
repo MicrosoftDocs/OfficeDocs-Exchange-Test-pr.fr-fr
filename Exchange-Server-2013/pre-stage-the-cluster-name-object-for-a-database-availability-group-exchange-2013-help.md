@@ -1,5 +1,5 @@
 ﻿---
-title: 'Préinstallation de l’objet nom de cluster pour un groupe de disponibilité de base de données: Exchange 2013 Help'
+title: 'Préinstallation de l’objet nom de cluster pr un groupe de dispo. de BDD'
 TOCTitle: Préinstallation de l’objet nom de cluster pour un groupe de disponibilité de base de données
 ms:assetid: 51ebf2f6-8a02-44ef-a489-ca361cb0f63a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff367878(v=EXCHG.150)

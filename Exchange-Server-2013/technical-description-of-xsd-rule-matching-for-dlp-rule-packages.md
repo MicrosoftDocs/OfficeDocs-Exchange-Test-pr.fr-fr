@@ -1,5 +1,5 @@
 ﻿---
-title: 'Méthodes et techniques de mise en correspondance pour les packages de règles: Exchange 2013 Help'
+title: 'Méthodes et techniques de mise en correspondance pour les packages de règles'
 TOCTitle: Méthodes et techniques de mise en correspondance pour les packages de règles
 ms:assetid: 09fe9278-d077-452c-b7e5-729b3dc70b1b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ674702(v=EXCHG.150)

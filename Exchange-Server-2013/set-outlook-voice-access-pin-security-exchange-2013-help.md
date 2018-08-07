@@ -1,5 +1,5 @@
 ﻿---
-title: "Définition de la sécurité des codes confidentiels d'Outlook Voice Access: Exchange 2013 Help"
+title: 'Définition de la sécurité des codes confidentiels d’OVA: Exchange 2013 Help'
 TOCTitle: Définition de la sécurité des codes confidentiels d'Outlook Voice Access
 ms:assetid: ef6d9151-d333-4f52-9338-273f7a291e54
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb125162(v=EXCHG.150)

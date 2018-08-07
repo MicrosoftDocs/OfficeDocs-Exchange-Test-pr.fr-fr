@@ -1,5 +1,5 @@
 ﻿---
-title: 'Ne figure pas dans le domaine/site du contrôleur de schéma_NotInSchemaMasterDomain: Exchange 2013 Help'
+title: 'Ne figure pas dans le domaine/site du contrôleur de schéma: Exchange 2013 Help'
 TOCTitle: Ne figure pas dans le domaine/site du contrôleur de schéma_NotInSchemaMasterDomain
 ms:assetid: 5e44eb33-4c30-4c3d-ba68-5c30bef1731f
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.notinschemamasterdomain(v=EXCHG.150)

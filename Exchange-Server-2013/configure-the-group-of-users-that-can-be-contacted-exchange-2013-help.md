@@ -1,5 +1,5 @@
 ﻿---
-title: "Configurer le groupe d'utilisateurs qui peuvent être contactés: Exchange 2013 Help"
+title: 'Config. le groupe d’utilisateurs pouvant être contactés: Exchange 2013 Help'
 TOCTitle: Configurer le groupe d'utilisateurs qui peuvent être contactés
 ms:assetid: 45d9d6d5-c9d6-4b73-8aa2-a23599a4381c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee423545(v=EXCHG.150)

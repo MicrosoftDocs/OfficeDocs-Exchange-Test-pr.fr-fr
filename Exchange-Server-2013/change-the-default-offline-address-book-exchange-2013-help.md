@@ -1,5 +1,5 @@
 ﻿---
-title: "Modifiication du carnet d'adresses en mode hors connexion par défaut: Exchange 2013 Help"
+title: 'Modif. du carnet d’adresses hors connexion par défaut: Exchange 2013 Help'
 TOCTitle: Modifiication du carnet d'adresses en mode hors connexion par défaut
 ms:assetid: 61abf78e-2543-4431-acc8-839e3c7a4548
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998569(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestion des copies de base de données de boîtes aux lettres: Exchange 2013 Help'
+title: 'Gérer les copies de base de données de boîtes aux lettres: Exchange 2013 Help'
 TOCTitle: Gestion des copies de base de données de boîtes aux lettres
 ms:assetid: 28cedf1d-365a-4e36-b2ba-6bf81af8684f
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd335158(v=EXCHG.150)

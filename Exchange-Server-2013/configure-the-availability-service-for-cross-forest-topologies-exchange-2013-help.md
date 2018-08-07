@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration du service de disponibilité pour des topologies inter-forêts: Exchange 2013 Help'
+title: 'Configuration du service de disponibilité pour des topologies inter-forêts'
 TOCTitle: Configuration du service de disponibilité pour des topologies inter-forêts
 ms:assetid: f1e7d407-f0d3-47a7-8cc3-03c5980445d5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb125182(v=EXCHG.150)

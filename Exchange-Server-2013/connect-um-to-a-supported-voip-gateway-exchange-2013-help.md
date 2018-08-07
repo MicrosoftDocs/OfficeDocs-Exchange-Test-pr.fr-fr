@@ -1,5 +1,5 @@
 ﻿---
-title: 'Connecter la messagerie unifiée à une passerelle VoIP pris en charge: Exchange 2013 Help'
+title: 'Connecter la MU à une passerelle VoIP prise en charge: Exchange 2013 Help'
 TOCTitle: Connecter la messagerie unifiée à une passerelle VoIP pris en charge
 ms:assetid: b8dfc8bd-2ee5-418d-b0a4-4fa2ec7e2a2e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124360(v=EXCHG.150)

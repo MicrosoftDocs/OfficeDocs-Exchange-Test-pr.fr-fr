@@ -1,5 +1,5 @@
 ﻿---
-title: 'Modifier les paramètres d’une stratégie de carnet d’adresses: Exchange 2013 Help'
+title: 'Modifier les param. d’une stratégie de carnet d’adresses: Exchange 2013 Help'
 TOCTitle: Modifier les paramètres d’une stratégie de carnet d’adresses
 ms:assetid: ba1ca350-71c2-4c60-a612-33bfa9320b5e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Hh529941(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Se connecter à un serveur dans l’Afficheur des files d’attente: Exchange 2013 Help'
+title: 'Connexion à un srv dans l’Afficheur des files d’attente: Exchange 2013 Help'
 TOCTitle: Se connecter à un serveur dans l’Afficheur des files d’attente
 ms:assetid: 6c1ad574-9ab5-4dcc-9398-ec10eca4fd11
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998669(v=EXCHG.150)

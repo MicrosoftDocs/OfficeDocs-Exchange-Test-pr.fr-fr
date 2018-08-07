@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer une copie de la base de données de boîtes aux lettres: Exchange 2013 Help'
+title: 'Activer une copie de la base de données de BAL: Exchange 2013 Help'
 TOCTitle: Activer une copie de la base de données de boîtes aux lettres
 ms:assetid: d948269b-c902-4d8d-8c2b-269473359baa
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee364750(v=EXCHG.150)

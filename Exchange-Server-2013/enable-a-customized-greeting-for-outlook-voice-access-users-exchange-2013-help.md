@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activation d’un message d’accueil personnalisé pour les utilisateurs d’Outlook Voice Access: Exchange 2013 Help'
+title: 'Activation d’un message d’accueil personnalisé pour les utilisateurs d’OVA'
 TOCTitle: Activation d’un message d’accueil personnalisé pour les utilisateurs d’Outlook Voice Access
 ms:assetid: abd418ec-2c65-4720-859d-c11a2698dc06
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124125(v=EXCHG.150)

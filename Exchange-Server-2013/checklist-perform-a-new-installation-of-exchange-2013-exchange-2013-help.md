@@ -1,5 +1,5 @@
 ﻿---
-title: 'Liste de contrôle : Effectuer une nouvelle installation d’Exchange 2013: Exchange 2013 Help'
+title: 'Liste de contrôle : nouvelle installation d’Exchange 2013: Exchange 2013 Help'
 TOCTitle: 'Liste de contrôle : Effectuer une nouvelle installation d’Exchange 2013'
 ms:assetid: f70d9dd3-7370-472e-b05e-1ea1671272b2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff805042(v=EXCHG.150)

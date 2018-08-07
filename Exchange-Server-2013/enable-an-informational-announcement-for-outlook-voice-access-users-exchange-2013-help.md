@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer une annonce d’information pour les utilisateurs d’Outlook Voice Access: Exchange 2013 Help'
+title: 'Activer une annonce d’information pour les utilisateurs d’Outlook Voice Access'
 TOCTitle: Activer une annonce d’information pour les utilisateurs d’Outlook Voice Access
 ms:assetid: b69ed0e1-f978-498a-963e-42a047678db4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124344(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utilisation de la migration par lot pour migrer des dossiers publics Exchange 2013 vers Exchange Online: Exchange 2013 Help'
+title: 'Migration par lot de dossiers publics Exchange 2013 vers Exchange Online'
 TOCTitle: Utilisation de la migration par lot pour migrer des dossiers publics Exchange 2013 vers Exchange Online
 ms:assetid: 25a5234c-dd2c-487b-8541-3655fbeb030a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Mt798260(v=EXCHG.150)

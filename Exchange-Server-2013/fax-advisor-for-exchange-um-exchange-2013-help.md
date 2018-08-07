@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestionnaire de télécopies pour la messagerie unifiée Exchange: Exchange 2013 Help'
+title: 'Gestionnaire de télécopies pour messag. unifiée Exchange: Exchange 2013 Help'
 TOCTitle: Gestionnaire de télécopies pour la messagerie unifiée Exchange
 ms:assetid: 928a466d-cc0c-4160-bd4c-f0fc76b038d4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee364747(v=EXCHG.150)

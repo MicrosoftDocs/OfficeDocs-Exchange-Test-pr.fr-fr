@@ -1,5 +1,5 @@
 ﻿---
-title: 'Obtenir les statistiques sur le dossier Éléments récupérables: Exchange 2013 Help'
+title: 'Obtenir les stat. sur le dossier Éléments récupérables: Exchange 2013 Help'
 TOCTitle: Obtenir les statistiques sur le dossier Éléments récupérables
 ms:assetid: dee77958-ee87-4908-85e4-ad053bacd8b0
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff714343(v=EXCHG.150)

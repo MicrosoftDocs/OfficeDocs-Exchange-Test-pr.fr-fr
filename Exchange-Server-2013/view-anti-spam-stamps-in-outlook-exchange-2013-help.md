@@ -1,5 +1,5 @@
 ﻿---
-title: 'Afficher des marquages de courrier indésirable dans Outlook: Exchange 2013 Help'
+title: 'Afficher des marquages anti-spam dans Outlook: Exchange 2013 Help'
 TOCTitle: Afficher des marquages de courrier indésirable dans Outlook
 ms:assetid: cddb5dbf-ad1e-471c-9fc8-28ddcf7ec1d0
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124595(v=EXCHG.150)

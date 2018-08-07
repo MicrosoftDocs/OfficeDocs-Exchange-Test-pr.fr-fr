@@ -1,5 +1,5 @@
 ﻿---
-title: 'Présentation du déploiement de la messagerie unifiée Exchange 2013 et de Lync Server: Exchange 2013 Help'
+title: 'Déploiement de la MU Exchange 2013 et de Lync Server: Exchange 2013'
 TOCTitle: Présentation du déploiement de la messagerie unifiée Exchange 2013 et de Lync Server
 ms:assetid: 96fcb0dd-79ee-4e55-9e59-3ee7fbe3c4a1
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb676409(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Présentation de la fonctionnalité de mise à zéro des pages d’Exchange 2013: Exchange 2013 Help'
+title: 'Fonction de mise à zéro des pages d’Exchange 2013: Exchange 2013 Help'
 TOCTitle: Présentation de la fonctionnalité de mise à zéro des pages d’Exchange 2013
 ms:assetid: 0ca7b188-efbc-4c0d-bcfe-5138cffc803c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Gg549096(v=EXCHG.150)

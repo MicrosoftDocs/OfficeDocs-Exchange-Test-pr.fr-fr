@@ -1,5 +1,5 @@
 ﻿---
-title: 'Déploiement de haute disponibilité et de résilience de site: Exchange 2013 Help'
+title: 'Déploiement de haute dispo. et de résilience de site: Exchange 2013 Help'
 TOCTitle: Déploiement de haute disponibilité et de résilience de site
 ms:assetid: 4c4e00a4-1f57-4fdb-b9b2-2779abf381a9
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd638129(v=EXCHG.150)

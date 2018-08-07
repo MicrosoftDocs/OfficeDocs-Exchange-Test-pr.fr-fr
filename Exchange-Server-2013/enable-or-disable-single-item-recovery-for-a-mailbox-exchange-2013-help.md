@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activation de la récupération d’élément unique pour une boîte aux lettres: Exchange 2013 Help'
+title: 'Activ. la récupération d’élément unique pour une BAL: Exchange 2013 Help'
 TOCTitle: Activation de la récupération d’élément unique pour une boîte aux lettres
 ms:assetid: 2e7f1bcd-8395-45ad-86ce-22868bd46af0
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee633460(v=EXCHG.150)

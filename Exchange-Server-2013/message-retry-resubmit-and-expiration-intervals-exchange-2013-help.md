@@ -1,5 +1,5 @@
 ﻿---
-title: 'Intervalles de nouvelle tentative, de renvoi et d’expiration des messages: Exchange 2013 Help'
+title: 'Intervalles de tentative, de renvoi et d’exp. des msg: Exchange 2013 Help'
 TOCTitle: Intervalles de nouvelle tentative, de renvoi et d’expiration des messages
 ms:assetid: 03020e6f-4c01-4c6e-ae47-fd74d4c4f96a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ891103(v=EXCHG.150)

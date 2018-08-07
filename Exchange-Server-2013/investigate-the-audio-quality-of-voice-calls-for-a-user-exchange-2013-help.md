@@ -1,5 +1,5 @@
 ﻿---
-title: 'Étude de la qualité audio des appels vocaux pour un utilisateur: Exchange 2013 Help'
+title: 'Étudier la qlé audio des appels vocaux pr un utilisateur: Exchange 2013 Help'
 TOCTitle: Étude de la qualité audio des appels vocaux pour un utilisateur
 ms:assetid: 0c945886-3cfa-423e-9b46-0d6b1584a145
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ659059(v=EXCHG.150)

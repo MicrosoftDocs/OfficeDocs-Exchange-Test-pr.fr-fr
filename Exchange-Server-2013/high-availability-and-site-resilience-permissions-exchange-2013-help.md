@@ -1,5 +1,5 @@
 ﻿---
-title: 'Autorisations de haute disponibilité et de résilience des sites: Exchange 2013 Help'
+title: 'Autorisations de haute dispo. et de résilience des sites: Exchange 2013 Help'
 TOCTitle: Autorisations de haute disponibilité et de résilience des sites
 ms:assetid: 66085107-4d4d-41c3-a425-82314acd9eee
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd638136(v=EXCHG.150)

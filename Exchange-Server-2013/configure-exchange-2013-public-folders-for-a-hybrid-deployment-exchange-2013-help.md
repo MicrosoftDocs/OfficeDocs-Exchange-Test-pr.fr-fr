@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer les dossiers publics Exchange 2013 pour un déploiement hybride: Exchange 2013 Help'
+title: 'Configurer les dossiers publics Exchange 2013 pour un déploiement hybride'
 TOCTitle: Configurer les dossiers publics Exchange 2013 pour un déploiement hybride
 ms:assetid: b828520f-022c-4fcb-ab68-e1c330e87c33
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn986544(v=EXCHG.150)

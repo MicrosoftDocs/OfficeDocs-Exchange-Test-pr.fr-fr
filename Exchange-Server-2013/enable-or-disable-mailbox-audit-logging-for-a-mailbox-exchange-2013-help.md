@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer ou désactiver l’enregistrement d’audit pour une boîte aux lettres: Exchange 2013 Help'
+title: 'Activ. ou désactiv. l’enregistrement d’audit pour une BAL: Exchange 2013 Help'
 TOCTitle: Activer ou désactiver l’enregistrement d’audit pour une boîte aux lettres
 ms:assetid: c4bbfd52-6196-49c7-8c31-777fbbee11f2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff461937(v=EXCHG.150)

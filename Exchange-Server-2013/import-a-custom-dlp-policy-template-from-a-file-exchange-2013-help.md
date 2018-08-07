@@ -1,5 +1,5 @@
 ﻿---
-title: 'Importer un modèle de stratégie DLP personnalisé à partir d’un fichier: Exchange 2013 Help'
+title: 'Import de mod. de strat. DLP personnalisé d’un fichier: Exchange 2013 Help'
 TOCTitle: Importer un modèle de stratégie DLP personnalisé à partir d’un fichier
 ms:assetid: 83f49dbd-f9b1-498e-b548-1529c5e1ccdb
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ150531(v=EXCHG.150)

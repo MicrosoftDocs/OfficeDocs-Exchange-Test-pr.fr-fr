@@ -1,5 +1,5 @@
 ﻿---
-title: 'Autoriser les utilisateurs dans le même plan de numérotation pour recevoir des télécopies: Exchange 2013 Help'
+title: 'Autoriser les utilisateurs du même plan de num. à recevoir des télécopies'
 TOCTitle: Autoriser les utilisateurs dans le même plan de numérotation pour recevoir des télécopies
 ms:assetid: cb245028-0b86-4171-879e-934dd35fa626
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124557(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: "Activer ou désactiver l'envoi de messages vocaux à partir d'Outlook Voice Access: Exchange 2013 Help"
+title: 'Activer ou désactiver l’envoi de messages vocaux dans Outlook Voice Access'
 TOCTitle: Activer ou désactiver l'envoi de messages vocaux à partir d'Outlook Voice Access
 ms:assetid: 63544ae2-6a28-40b2-82fc-3df83e93ee56
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee423546(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Mise à niveau de la messagerie unifiée d’Exchange 2007 vers celle d’Exchange 2013: Exchange 2013 Help'
+title: 'Màn de la MU d’Exchange 2007 vers celle d’Exchange 2013: Exchange 2013 Help'
 TOCTitle: Mise à niveau de la messagerie unifiée d’Exchange 2007 vers celle d’Exchange 2013
 ms:assetid: 642c922d-7e85-40f0-bb9b-0f20da692be3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn169227(v=EXCHG.150)

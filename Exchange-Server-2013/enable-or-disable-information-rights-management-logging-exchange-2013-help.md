@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer ou désactiver la connexion à la gestion des droits relatifs à l’information: Exchange 2013 Help'
+title: 'Activ./désactiv. connex. à la gestion des droits de l’infor.: Exchange 2013'
 TOCTitle: Activer ou désactiver la connexion à la gestion des droits relatifs à l’information
 ms:assetid: 6933bc65-4d98-4878-9167-0e9eaac68b6b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff686962(v=EXCHG.150)

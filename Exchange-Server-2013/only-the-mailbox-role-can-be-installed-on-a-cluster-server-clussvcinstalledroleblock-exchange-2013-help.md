@@ -1,5 +1,5 @@
 ﻿---
-title: 'Seul le rôle de boîte aux lettres peut être installé sur un serveur de clusters_ClusSvcInstalledRoleBlock: Exchange 2013 Help'
+title: 'Seul le rôle de BAL peut être installé sur un srv de clusters'
 TOCTitle: Seul le rôle de boîte aux lettres peut être installé sur un serveur de clusters_ClusSvcInstalledRoleBlock
 ms:assetid: 3e20f408-2b8d-47c2-a402-07232ab9f234
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.clussvcinstalledroleblock(v=EXCHG.150)

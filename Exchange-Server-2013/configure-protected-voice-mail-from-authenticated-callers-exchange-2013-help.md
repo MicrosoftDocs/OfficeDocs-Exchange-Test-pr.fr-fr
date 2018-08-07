@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer la messagerie vocale protégée des appelants authentifiés: Exchange 2013 Help'
+title: 'Config. de la messag. voc. d’appelants authentifiés: Exchange 2013 Help'
 TOCTitle: Configurer la messagerie vocale protégée des appelants authentifiés
 ms:assetid: f69e94a7-9768-4445-9ded-e78d732bd623
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee423560(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utiliser la Sauvegarde Windows Server pour restaurer une sauvegarde d’Exchange: Exchange 2013 Help'
+title: 'Sauvegarde Windows Server pr restaurer une svgrd Exchange: Exchange 2013 Help'
 TOCTitle: Utiliser la Sauvegarde Windows Server pour restaurer une sauvegarde d’Exchange
 ms:assetid: 2d0f31dc-eb32-451a-8852-591269026506
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd876864(v=EXCHG.150)

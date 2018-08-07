@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration d’intervalles de nouvelle tentative, de renvoi et d’expiration des messages: Exchange 2013 Help'
+title: 'Config. d’intervalles de nouvelle tentative, de renvoi et d’exp. des messages'
 TOCTitle: Configuration d’intervalles de nouvelle tentative, de renvoi et d’expiration des messages
 ms:assetid: 5420124f-aa4c-4702-b493-40a9a7edb786
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998043(v=EXCHG.150)

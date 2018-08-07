@@ -1,5 +1,5 @@
 ﻿---
-title: "Gérer les indicateurs d'intégrité et l'intégrité du serveur: Exchange 2013 Help"
+title: 'Gérer les indic. d’intégrité et l’intégrité du serveur: Exchange 2013 Help'
 TOCTitle: Gérer les indicateurs d'intégrité et l'intégrité du serveur
 ms:assetid: a4f84312-6cfa-4f17-9707-676aadab1143
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn482054(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Définir les limites de délai d’expiration de connexion pour IMAP4: Exchange 2013 Help'
+title: 'Définir les limites de délai d’exp. de connexion d’IMAP4: Exchange 2013 Help'
 TOCTitle: Définir les limites de délai d’expiration de connexion pour IMAP4
 ms:assetid: 6b6a5bd1-a878-4a70-8e21-14d5042a58f1
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998665(v=EXCHG.150)

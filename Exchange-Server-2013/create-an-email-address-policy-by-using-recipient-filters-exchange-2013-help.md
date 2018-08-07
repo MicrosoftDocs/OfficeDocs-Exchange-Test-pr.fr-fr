@@ -1,5 +1,5 @@
 ﻿---
-title: "Créer une stratégie d'adresses de messagerie en utilisant des filtres de destinataires: Exchange 2013 Help"
+title: 'Créer une strat. d’adresses de messag. avec des filtres de destinataires'
 TOCTitle: Créer une stratégie d'adresses de messagerie en utilisant des filtres de destinataires
 ms:assetid: e3f446bd-1511-479c-8d87-2dfce5547c90
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb232194(v=EXCHG.150)

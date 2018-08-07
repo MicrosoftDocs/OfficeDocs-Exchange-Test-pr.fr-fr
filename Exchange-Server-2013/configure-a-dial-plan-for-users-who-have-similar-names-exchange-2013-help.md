@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration d’un plan de numérotation pour des utilisateurs dont les noms sont similaires: Exchange 2013 Help'
+title: 'Config. un plan de num. pour des utilisateurs dont les noms sont similaires'
 TOCTitle: Configuration d’un plan de numérotation pour des utilisateurs dont les noms sont similaires
 ms:assetid: 14783f45-95f5-49de-8215-0a3aef7dc034
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb266943(v=EXCHG.150)

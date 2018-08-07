@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utilisation de l’authentification OAuth pour prendre en charge la découverte électronique dans un déploiement hybride Exchange: Exchange 2013 Help'
+title: 'Auth. OAuth pr la découverte électro. ds un dplmt hybride Exchange'
 TOCTitle: Utilisation de l’authentification OAuth pour prendre en charge la découverte électronique dans un déploiement hybride Exchange
 ms:assetid: b069f8db-fbe1-4047-ad97-d00172ee6a12
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn497703(v=EXCHG.150)

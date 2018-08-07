@@ -1,5 +1,5 @@
 ﻿---
-title: 'Test et dépannage à l’aide de l’outil de dépannage de la messagerie unifiée: Exchange 2013 Help'
+title: 'Test et dépannage à l’aide de l’outil de dépannage de la messagerie unifiée'
 TOCTitle: Test et dépannage à l’aide de l’outil de dépannage de la messagerie unifiée
 ms:assetid: 1fab2e52-bd2d-4e46-b222-53fee9d34cba
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Gg621148(v=EXCHG.150)

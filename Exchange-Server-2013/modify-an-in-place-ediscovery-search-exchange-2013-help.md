@@ -1,5 +1,5 @@
 ﻿---
-title: 'Modifier une recherche de découverte électronique inaltérable: Exchange 2013 Help'
+title: 'Modifier une recherche de découverte élect. inaltérable: Exchange 2013 Help'
 TOCTitle: Modifier une recherche de découverte électronique inaltérable
 ms:assetid: 3162743c-cc12-4997-91e0-bcbfea8bcb17
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd335182(v=EXCHG.150)

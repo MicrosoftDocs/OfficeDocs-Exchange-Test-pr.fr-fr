@@ -1,5 +1,5 @@
 ﻿---
-title: 'Restaurer un modèle de détails sur la configuration par défaut: Exchange 2013 Help'
+title: 'Restaurer un modèle de détails sur la config. par défaut: Exchange 2013 Help'
 TOCTitle: Restaurer un modèle de détails sur la configuration par défaut
 ms:assetid: 84c5f49b-614d-4f0e-8701-0979a2eb90bf
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb232102(v=EXCHG.150)

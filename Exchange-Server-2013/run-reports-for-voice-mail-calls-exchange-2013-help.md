@@ -1,5 +1,5 @@
 ﻿---
-title: 'Pour exécuter des rapports pour les appels de messagerie vocale: Exchange 2013 Help'
+title: 'Exécuter des rapports pour les appels de messagerie vocale: Exchange 2013 Help'
 TOCTitle: Pour exécuter des rapports pour les appels de messagerie vocale
 ms:assetid: 3a292d85-ce0f-4c15-b8f2-d1fc92965437
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ659062(v=EXCHG.150)

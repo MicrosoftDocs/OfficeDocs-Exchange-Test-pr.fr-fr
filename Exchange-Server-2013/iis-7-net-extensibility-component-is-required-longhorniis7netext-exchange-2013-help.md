@@ -1,5 +1,5 @@
 ﻿---
-title: 'Le composant Extensibilité .NET ISS 7 est requis_LonghornIIS7NetExt: Exchange 2013 Help'
+title: 'Le composant Extensibilité .NET ISS 7 est requis'
 TOCTitle: Le composant Extensibilité .NET ISS 7 est requis_LonghornIIS7NetExt
 ms:assetid: 8b481626-b68a-4fba-b66e-a02c03856bfd
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.longhorniis7netext(v=EXCHG.150)

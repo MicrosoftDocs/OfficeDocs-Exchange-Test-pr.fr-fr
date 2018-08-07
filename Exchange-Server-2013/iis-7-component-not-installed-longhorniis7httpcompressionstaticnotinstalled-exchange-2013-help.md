@@ -1,5 +1,5 @@
 ﻿---
-title: 'Composant IIS 7 non installé_LonghornIIS7HttpCompressionStaticNotInstalled: Exchange 2013 Help'
+title: 'Composant IIS 7 non installé'
 TOCTitle: Composant IIS 7 non installé_LonghornIIS7HttpCompressionStaticNotInstalled
 ms:assetid: 87fb8068-8c11-45cd-b18c-7d4ba97dedda
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.longhorniis7httpcompressionstaticnotinstalled(v=EXCHG.150)

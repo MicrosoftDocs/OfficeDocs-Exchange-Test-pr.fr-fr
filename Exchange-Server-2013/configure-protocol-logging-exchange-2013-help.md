@@ -1,5 +1,5 @@
 ﻿---
-title: "Configuration de l'enregistrement dans le journal de protocole: Exchange 2013 Help"
+title: 'Config. de l’enregistrement dans le journal de protocole: Exchange 2013 Help'
 TOCTitle: Configuration de l'enregistrement dans le journal de protocole
 ms:assetid: c81cac9c-b990-492a-b899-5be8d08a6068
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124531(v=EXCHG.150)

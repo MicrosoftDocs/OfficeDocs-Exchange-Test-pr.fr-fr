@@ -1,5 +1,5 @@
 ﻿---
-title: "Déplacement d'un dossier public vers une autre boîte aux lettres de dossiers publics: Exchange 2013 Help"
+title: 'Déplacer un dossier public vers une autre BAL: Exchange 2013 Help'
 TOCTitle: Déplacement d'un dossier public vers une autre boîte aux lettres de dossiers publics
 ms:assetid: b8744934-a3cb-443e-acce-a9a6ca5d88f6
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ906435(v=EXCHG.150)

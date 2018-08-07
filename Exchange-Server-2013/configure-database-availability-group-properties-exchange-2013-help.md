@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration des propriétés du groupe de disponibilité de base de données: Exchange 2013 Help'
+title: 'Config. des propriétés du groupe de disponibilité de BDD: Exchange 2013 Help'
 TOCTitle: Configuration des propriétés du groupe de disponibilité de base de données
 ms:assetid: 50daeac5-a16f-4362-a325-19e0fe25d59d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd297985(v=EXCHG.150)

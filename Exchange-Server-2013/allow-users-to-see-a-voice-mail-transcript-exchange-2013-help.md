@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer la transcription des messages vocaux pour les utilisateurs: Exchange 2013 Help'
+title: 'Activer la transcription des msg vocaux pour les utlsr: Exchange 2013 Help'
 TOCTitle: Activer la transcription des messages vocaux pour les utilisateurs
 ms:assetid: c5192e05-905c-440f-beec-1f697edc15b3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff629381(v=EXCHG.150)

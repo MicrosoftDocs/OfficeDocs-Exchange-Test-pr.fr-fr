@@ -1,5 +1,5 @@
 ﻿---
-title: 'Identifier mon problème à l’aide des vérifications automatiques (quota): Exchange 2013 Help'
+title: 'Identifier un problème par des vérifications auto. (quota): Exchange 2013 Help'
 TOCTitle: Identifier mon problème à l’aide des vérifications automatiques (quota)
 ms:assetid: ddb93b30-d25c-463e-9814-0c56601ae734
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn793976(v=EXCHG.150)

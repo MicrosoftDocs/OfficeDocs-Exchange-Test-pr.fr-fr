@@ -1,5 +1,5 @@
 ﻿---
-title: 'Un ou plusieurs serveurs du Connecteur Active Directory ont été détectés_ADCFound: Exchange 2013 Help'
+title: 'Un ou plusieurs serveurs du Connecteur AD ont été détectés'
 TOCTitle: Un ou plusieurs serveurs du Connecteur Active Directory ont été détectés_ADCFound
 ms:assetid: a874f51f-09a2-4a76-9695-d61fb1ee6c1c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.adcfound(v=EXCHG.150)

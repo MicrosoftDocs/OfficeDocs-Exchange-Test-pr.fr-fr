@@ -1,5 +1,5 @@
 ﻿---
-title: 'Le service de système d’événement COM+ doit être démarré pour pouvoir poursuivre l’installation_EventSystemStopped: Exchange 2013 Help'
+title: 'Démarrer le service de système d’événement COM+ pour poursuivre l’installation'
 TOCTitle: Le service de système d’événement COM+ doit être démarré pour pouvoir poursuivre l’installation_EventSystemStopped
 ms:assetid: 3b8d2ba3-87fb-4749-b4d1-5dfec97e1ca4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.eventsystemstopped(v=EXCHG.150)

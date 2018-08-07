@@ -1,5 +1,5 @@
 ﻿---
-title: 'Inclure le texte avec le message électronique envoyé lors de la réception d’un message de télécopie: Exchange 2013 Help'
+title: 'Inclure le texte avec l’e-mail envoyé à la réception d’un message de télécopie'
 TOCTitle: Inclure le texte avec le message électronique envoyé lors de la réception d’un message de télécopie
 ms:assetid: 48244e58-b7d6-4f0e-bbae-d22bf0fc11ff
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb201684(v=EXCHG.150)

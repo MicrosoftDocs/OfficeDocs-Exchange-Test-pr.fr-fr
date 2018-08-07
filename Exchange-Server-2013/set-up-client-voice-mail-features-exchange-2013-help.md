@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer les fonctionnalités de messagerie vocale cliente: Exchange 2013 Help'
+title: 'Configurer les fonctions de messagerie vocale cliente: Exchange 2013 Help'
 TOCTitle: Configurer les fonctionnalités de messagerie vocale cliente
 ms:assetid: 5e661cfd-d34e-4caa-91a5-967bbecb75eb
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673529(v=EXCHG.150)

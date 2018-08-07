@@ -1,5 +1,5 @@
 ﻿---
-title: 'Attribuer une stratégie de carnet d’adresses à des utilisateurs de messagerie: Exchange 2013 Help'
+title: 'Attribuer strat. de crnt d’adresses aux utlsr de messag.: Exchange 2013 Help'
 TOCTitle: Attribuer une stratégie de carnet d’adresses à des utilisateurs de messagerie
 ms:assetid: bdfe6575-24c0-47d0-9cfb-ece910db248b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Hh529942(v=EXCHG.150)

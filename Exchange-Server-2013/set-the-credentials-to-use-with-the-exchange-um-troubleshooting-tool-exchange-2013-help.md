@@ -1,5 +1,5 @@
 ﻿---
-title: 'Définir les informations d’identification à utiliser avec l’outil de dépannage de la messagerie unifiée Exchange: Exchange 2013 Help'
+title: 'Définir les infos d’identif. à utiliser avec l’outil de dépann. de MU Exchange'
 TOCTitle: Définir les informations d’identification à utiliser avec l’outil de dépannage de la messagerie unifiée Exchange
 ms:assetid: 542b7718-9345-40cc-bcb2-e307e70a1fa2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff630916(v=EXCHG.150)
