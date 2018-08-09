@@ -1,5 +1,5 @@
 ﻿---
-title: 'Impossible de trouver un service de mise à jour de destinataire_RUSMissing: Exchange 2013 Help'
+title: 'Service de màj de destinataire introuvable_RUSMissing: Exchange 2013 Help'
 TOCTitle: Impossible de trouver un service de mise à jour de destinataire_RUSMissing
 ms:assetid: 920fbf51-d5e4-4ac6-869f-7f1c5d9a3024
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.rusmissing(v=EXCHG.150)

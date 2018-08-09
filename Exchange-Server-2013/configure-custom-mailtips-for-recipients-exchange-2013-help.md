@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer les infos-courrier personnalisées pour les destinataires: Exchange 2013 Help'
+title: 'Configuration des infos-courriers personnalisées: Exchange 2013 Help'
 TOCTitle: Configurer les infos-courrier personnalisées pour les destinataires
 ms:assetid: df8ee7ae-2486-4890-b057-cda87b4cb1ec
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd638199(v=EXCHG.150)

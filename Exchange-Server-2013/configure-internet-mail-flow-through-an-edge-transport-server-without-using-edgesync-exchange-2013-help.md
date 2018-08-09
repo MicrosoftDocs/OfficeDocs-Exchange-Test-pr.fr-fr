@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer le flux de messagerie Internet via un serveur de transport Edge sans utiliser EdgeSync: Exchange 2013 Help'
+title: 'Config. flux de messag. Internet via un srv de transp. Edge sans EdgeSync'
 TOCTitle: Configurer le flux de messagerie Internet via un serveur de transport Edge sans utiliser EdgeSync
 ms:assetid: 6bb98d10-6f12-4b08-a58e-36375f605d65
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb232082(v=EXCHG.150)

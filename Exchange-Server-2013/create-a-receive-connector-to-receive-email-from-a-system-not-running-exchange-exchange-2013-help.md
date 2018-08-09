@@ -1,5 +1,5 @@
 ﻿---
-title: "Créez un connecteur de réception pour recevoir des courriers électroniques depuis un système qui n'exécute pas Exchange: Exchange 2013 Help"
+title: 'Créer connect. de réception pr des e-mails d’un syst. n’exécutant pas Exchange'
 TOCTitle: Créez un connecteur de réception pour recevoir des courriers électroniques depuis un système qui n'exécute pas Exchange
 ms:assetid: 85f0864a-6502-49db-8804-16755a7292b4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ657467(v=EXCHG.150)

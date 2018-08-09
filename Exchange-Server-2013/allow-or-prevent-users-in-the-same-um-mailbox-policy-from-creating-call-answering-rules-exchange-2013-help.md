@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activation ou désactivation de la création de règles de répondeur automatique par des utilisateurs de la même stratégie de boîte aux lettres de messagerie unifiée: Exchange 2013 Help'
+title: 'Création de règles de répond. auto. pr les utlsr de strat. de BAL de MU'
 TOCTitle: Activation ou désactivation de la création de règles de répondeur automatique par des utilisateurs de la même stratégie de boîte aux lettres de messagerie unifiée
 ms:assetid: e44acaa6-d5a8-41e8-94aa-100be0bd6391
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd351209(v=EXCHG.150)

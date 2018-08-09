@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utilisation de la migration par lots pour migrer des dossiers publics Exchange 2013 vers Groupes Office 365: Exchange 2013 Help'
+title: 'Utilis. la migr. par lots de doss. publics Exchange 2013 vers des groupes O365'
 TOCTitle: Utilisation de la migration par lots pour migrer des dossiers publics Exchange 2013 vers Groupes Office 365
 ms:assetid: 1d800576-957d-4916-ae2a-55c08ca75be1
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Mt843873(v=EXCHG.150)

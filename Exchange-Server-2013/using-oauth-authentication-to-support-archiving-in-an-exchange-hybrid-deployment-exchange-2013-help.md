@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utilisation de l’authentification OAuth pour prendre en charge l’archivage dans un déploiement hybride Exchange: Exchange 2013 Help'
+title: 'Utiliser l’auth. OAuth pr prendre en chg l’archiv. dans dplmt hybride Exchange'
 TOCTitle: Utilisation de l’authentification OAuth pour prendre en charge l’archivage dans un déploiement hybride Exchange
 ms:assetid: deb882b1-1ae2-40f3-a71c-423fafe3d66a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn689104(v=EXCHG.150)

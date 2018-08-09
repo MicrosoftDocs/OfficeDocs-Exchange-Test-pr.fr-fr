@@ -1,5 +1,5 @@
 ﻿---
-title: 'Récupération des messages mis en quarantaine dans la boîte aux lettres de mise en quarantaine du courrier indésirable: Exchange 2013 Help'
+title: 'Récup. msg en quarantaine dans la BAL de mise en quarantaine du courr. ind.'
 TOCTitle: Récupération des messages mis en quarantaine dans la boîte aux lettres de mise en quarantaine du courrier indésirable
 ms:assetid: 7a86bfde-f868-4689-bdec-5f01e52b510d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998920(v=EXCHG.150)

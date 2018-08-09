@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer les propriétés des copies de la base de données de boîtes aux lettres: Exchange 2013 Help'
+title: 'Configurer les propriétés des copies de la BDD de BAL: Exchange 2013 Help'
 TOCTitle: Configurer les propriétés des copies de la base de données de boîtes aux lettres
 ms:assetid: cf186561-ab2c-45c0-90f5-8d3ecfabeeac
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd351151(v=EXCHG.150)

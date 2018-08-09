@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer le transfert du courrier pour une boîte aux lettres: Exchange 2013 Help'
+title: 'Config. le transfert du courrier pour une BAL: Exchange 2013 Help'
 TOCTitle: Configurer le transfert du courrier pour une boîte aux lettres
 ms:assetid: c7a7afaf-577e-49d6-8cee-bb4c4a5d570b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd351134(v=EXCHG.150)

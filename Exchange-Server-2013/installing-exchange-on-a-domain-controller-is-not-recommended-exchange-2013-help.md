@@ -1,5 +1,5 @@
 ﻿---
-title: "L'installation d'Exchange sur un contrôleur de domaine n'est pas recommandée: Exchange 2013 Help"
+title: 'L’installation d’Exchange sur un contrôleur de domaine n’est pas recommandée'
 TOCTitle: L'installation d'Exchange sur un contrôleur de domaine n'est pas recommandée
 ms:assetid: 48922de2-a68c-4092-96a5-d38c8e5f49f5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.warninginstallexchangerolesondomaincontroller(v=EXCHG.150)

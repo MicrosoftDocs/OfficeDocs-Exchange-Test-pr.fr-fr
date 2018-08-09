@@ -1,5 +1,5 @@
 ﻿---
-title: "Inclure du texte avec le message électronique envoyé lors d'une réinitialisation du code confidentiel est: Exchange 2013 Help"
+title: 'Inclure du texte avec l’e-mail envoyé à la réinit. du code confidentiel'
 TOCTitle: Inclure du texte avec le message électronique envoyé lors d'une réinitialisation du code confidentiel est
 ms:assetid: f7a4d775-a588-412f-ac2c-11ab1a5c67eb
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb201750(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Demandes d’exportation et d’importation de boîtes aux lettres: Exchange 2013 Help'
+title: 'Demandes d’exportation et d’importation de BAL: Exchange 2013 Help'
 TOCTitle: Demandes d’exportation et d’importation de boîtes aux lettres
 ms:assetid: 157a7d88-d3aa-4056-9a50-df67451b14be
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee633455(v=EXCHG.150)

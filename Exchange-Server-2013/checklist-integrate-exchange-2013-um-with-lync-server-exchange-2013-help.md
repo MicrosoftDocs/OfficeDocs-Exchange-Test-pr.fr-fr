@@ -1,5 +1,5 @@
 ﻿---
-title: "Liste de contrôle : intégration de la messagerie unifiée d'Exchange 2013 à Lync Server: Exchange 2013 Help"
+title: 'Liste de contrôle : intégration de la MU d’Exchange 2013 à Lync Server'
 TOCTitle: "Liste de contrôle : intégration de la messagerie unifiée d'Exchange 2013 à Lync Server"
 ms:assetid: 3b82e86f-9f30-4445-96ad-744082abeaeb
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd638120(v=EXCHG.150)

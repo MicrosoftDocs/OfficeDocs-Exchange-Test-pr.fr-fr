@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gérer une stratégie de boîte aux lettres de messagerie unifiée: Exchange 2013 Help'
+title: 'Gérer une stratégie de BAL de messagerie unifiée: Exchange 2013 Help'
 TOCTitle: Gérer une stratégie de boîte aux lettres de messagerie unifiée
 ms:assetid: 704b001c-3e6f-4ed5-bbe5-42a778f6ac0d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998829(v=EXCHG.150)

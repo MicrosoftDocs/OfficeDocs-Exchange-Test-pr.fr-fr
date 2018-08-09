@@ -1,5 +1,5 @@
 ﻿---
-title: "Configurez la valeur de délai d'inactivité d'enregistrement: Exchange 2013 Help"
+title: 'Configurer la durée d’inactivité d’enregistrement: Exchange 2013 Help'
 TOCTitle: Configurez la valeur de délai d'inactivité d'enregistrement
 ms:assetid: a7fb9a09-fde9-447d-ad2c-95598405e99b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee423550(v=EXCHG.150)

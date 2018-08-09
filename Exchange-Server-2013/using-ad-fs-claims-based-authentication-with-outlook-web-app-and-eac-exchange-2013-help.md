@@ -1,5 +1,5 @@
 ﻿---
-title: "Utiliser l'authentification basée sur les revendications AD FS avec Outlook Web App et le CAE: Exchange 2013 Help"
+title: 'Authentification basée sur les revendications AD FS avec OWA et le CAE'
 TOCTitle: Utiliser l'authentification basée sur les revendications AD FS avec Outlook Web App et le CAE
 ms:assetid: 919a9bfb-c6df-490a-b2c4-51796b0f0596
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn635116(v=EXCHG.150)

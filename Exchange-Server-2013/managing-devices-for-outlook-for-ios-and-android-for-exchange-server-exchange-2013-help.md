@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestion d’appareils pour Outlook pour iOS et Android dans Exchange Server: Exchange 2013 Help'
+title: 'Gestion d’appareils pour Outlook pour iOS et Android dans Exchange Server'
 TOCTitle: Gestion d’appareils pour Outlook pour iOS et Android dans Exchange Server
 ms:assetid: 16ce7d24-be74-4466-b126-828a67f69b6e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Mt465748(v=EXCHG.150)

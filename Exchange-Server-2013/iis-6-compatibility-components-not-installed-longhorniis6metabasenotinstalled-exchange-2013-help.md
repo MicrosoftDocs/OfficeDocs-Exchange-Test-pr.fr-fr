@@ -1,5 +1,5 @@
 ﻿---
-title: 'Composants de compatibilité IIS 6 non installés_LonghornIIS6MetabaseNotInstalled: Exchange 2013 Help'
+title: 'Composants de compatibilité IIS 6 non installés'
 TOCTitle: Composants de compatibilité IIS 6 non installés_LonghornIIS6MetabaseNotInstalled
 ms:assetid: 0bd52987-d3cc-496c-ac8c-d35591405195
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.longhorniis6metabasenotinstalled(v=EXCHG.150)

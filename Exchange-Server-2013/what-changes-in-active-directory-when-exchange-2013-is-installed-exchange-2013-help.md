@@ -1,5 +1,5 @@
 ﻿---
-title: 'Quels sont les changements constatés dans Active Directory avec l’installation d’Exchange 2013 ?: Exchange 2013 Help'
+title: 'Changements constatés dans AD avec l’installation d’Exchange 2013'
 TOCTitle: Quels sont les changements constatés dans Active Directory avec l’installation d’Exchange 2013 ?
 ms:assetid: 07386078-6103-49a2-8698-2d41db9cec95
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn750898(v=EXCHG.150)

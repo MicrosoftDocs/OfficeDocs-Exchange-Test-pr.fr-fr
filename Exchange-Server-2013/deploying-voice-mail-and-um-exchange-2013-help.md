@@ -1,5 +1,5 @@
 ﻿---
-title: 'Déploiement de la messagerie vocale et la messagerie unifiée: Exchange 2013 Help'
+title: 'Déployer la messagerie vocale et la messagerie unifiée: Exchange 2013 Help'
 TOCTitle: Déploiement de la messagerie vocale et la messagerie unifiée
 ms:assetid: 3df61b62-a1e4-41fb-969c-319189ae4e42
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673519(v=EXCHG.150)

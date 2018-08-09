@@ -1,5 +1,5 @@
 ﻿---
-title: 'Créer un répertoire virtuel du carnet d’adresses en mode hors connexion: Exchange 2013 Help'
+title: 'Répertoire virtuel du carnet d’adresses hors connexion: Exchange 2013 Help'
 TOCTitle: Créer un répertoire virtuel du carnet d’adresses en mode hors connexion
 ms:assetid: 2c70e21f-2b12-414a-9e8c-65634a767c72
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa996917(v=EXCHG.150)

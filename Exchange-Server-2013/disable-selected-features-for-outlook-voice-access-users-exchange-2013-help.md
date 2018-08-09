@@ -1,5 +1,5 @@
 ﻿---
-title: 'Désactiver les fonctionnalités sélectionnées pour les utilisateurs Outlook Voice Access: Exchange 2013 Help'
+title: 'Désactiver les fonctionnalités sélectionnées pour les utilisateurs OVA'
 TOCTitle: Désactiver les fonctionnalités sélectionnées pour les utilisateurs Outlook Voice Access
 ms:assetid: 37421edf-af60-4ca9-9e8b-262b8b851607
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Gg602126(v=EXCHG.150)

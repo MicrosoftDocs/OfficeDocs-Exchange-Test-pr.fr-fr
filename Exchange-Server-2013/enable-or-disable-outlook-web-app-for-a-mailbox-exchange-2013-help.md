@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer ou désactiver Outlook Web App pour une boîte aux lettres: Exchange 2013 Help'
+title: 'Activ. ou désactiv. Outlook Web App pour une BAL: Exchange 2013 Help'
 TOCTitle: Activer ou désactiver Outlook Web App pour une boîte aux lettres
 ms:assetid: abc19646-6211-4f18-a060-e347452dcc53
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124124(v=EXCHG.150)

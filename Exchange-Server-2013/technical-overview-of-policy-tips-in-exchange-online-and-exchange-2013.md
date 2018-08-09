@@ -1,5 +1,5 @@
 ﻿---
-title: Vue d’ensemble technique des conseils de stratégie dans Exchange Online et Exchange 2013
+title: 'Aperçu technique des conseils de strat. Exchange Online et Exchange 2013'
 TOCTitle: Conseils de stratégie
 ms:assetid: 4266b83c-dd8a-4b3d-99ff-402e68fc810c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ150512(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer le principal moyen pour les utilisateurs Outlook Voice Access pour la recherche: Exchange 2013 Help'
+title: 'Configurer le principal moyen pour les utilisateurs OVA pour la recherche'
 TOCTitle: Configurer le principal moyen pour les utilisateurs Outlook Voice Access pour la recherche
 ms:assetid: 3d93a037-5820-41d3-9206-69f534414daf
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997563(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Terminologie de la messagerie unifiée et de la messagerie vocale: Exchange 2013 Help'
+title: 'Termino. de la messag. unif. et de la messag. vocale: Exchange 2013 Help'
 TOCTitle: Terminologie de la messagerie unifiée et de la messagerie vocale
 ms:assetid: 3a6d93f2-1802-4aed-8b83-35c7fd004d0c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee633462(v=EXCHG.150)

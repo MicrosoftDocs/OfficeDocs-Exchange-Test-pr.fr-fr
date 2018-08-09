@@ -1,5 +1,5 @@
 ﻿---
-title: 'Autorisations sur l’intégrité et les performances du serveur: Exchange 2013 Help'
+title: 'Autorisations sur l’intégrité et les perf. du serveur: Exchange 2013 Help'
 TOCTitle: Autorisations sur l’intégrité et les performances du serveur
 ms:assetid: 00b23fd3-6679-4b06-a3d4-51df3112b9cd
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ150479(v=EXCHG.150)

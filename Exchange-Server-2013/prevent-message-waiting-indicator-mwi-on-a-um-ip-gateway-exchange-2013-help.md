@@ -1,5 +1,5 @@
 ﻿---
-title: 'Empêcher le Message en attente indicateur (MWI) sur une passerelle IP de messagerie unifiée: Exchange 2013 Help'
+title: 'Empêcher l’indicateur de message en attente (MWI) sur une passerelle IP de MU'
 TOCTitle: Empêcher le Message en attente indicateur (MWI) sur une passerelle IP de messagerie unifiée
 ms:assetid: 7af6d094-199f-4134-a25d-9fc7e9c05fe1
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673536(v=EXCHG.150)

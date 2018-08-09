@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activation d’une copie de la base de données de boîtes aux lettres retardée: Exchange 2013 Help'
+title: 'Activ. une copie de la BDD de boîtes aux lettres retardée: Exchange 2013 Help'
 TOCTitle: Activation d’une copie de la base de données de boîtes aux lettres retardée
 ms:assetid: 493d9c40-644d-49d6-9291-949acbcfdcb6
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd979786(v=EXCHG.150)

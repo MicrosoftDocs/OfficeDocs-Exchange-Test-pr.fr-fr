@@ -1,5 +1,5 @@
 ﻿---
-title: 'Ajouter une entrée de rôle à un rôle de niveau supérieur non délimité: Exchange 2013 Help'
+title: 'Ajouter une entrée à un rôle supérieur non délimité: Exchange 2013 Help'
 TOCTitle: Ajouter une entrée de rôle à un rôle de niveau supérieur non délimité
 ms:assetid: 52fd3f20-c348-49d5-9bdb-f2cbf780cf2d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd979789(v=EXCHG.150)

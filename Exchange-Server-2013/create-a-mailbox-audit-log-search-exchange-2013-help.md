@@ -1,5 +1,5 @@
 ﻿---
-title: 'Créer une recherche dans le journal d’audit de la boîte aux lettres: Exchange 2013 Help'
+title: 'Créer une recherche dans le journal d’audit de la BAL: Exchange 2013 Help'
 TOCTitle: Créer une recherche dans le journal d’audit de la boîte aux lettres
 ms:assetid: 48ba22cf-b1f2-4dbc-98fc-fed22d97db14
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff461929(v=EXCHG.150)

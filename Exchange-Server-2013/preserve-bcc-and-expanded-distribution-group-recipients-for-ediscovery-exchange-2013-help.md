@@ -1,5 +1,5 @@
 ﻿---
-title: 'Conserver les destinataires Cci et les destinataires de groupe de distribution étendu pour la découverte électronique: Exchange 2013 Help'
+title: 'Conserver les desti. Cci et de groupe de distrib. étendu pr la découv. électr.'
 TOCTitle: Conserver les destinataires Cci et les destinataires de groupe de distribution étendu pour la découverte électronique
 ms:assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn770225(v=EXCHG.150)

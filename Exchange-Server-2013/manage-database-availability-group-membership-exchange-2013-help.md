@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gérer l’appartenance au groupe de disponibilité de la base de données: Exchange 2013 Help'
+title: 'Gérer l’appartenance au groupe de disponibilité de la BDD: Exchange 2013 Help'
 TOCTitle: Gérer l’appartenance au groupe de disponibilité de la base de données
 ms:assetid: fb2ea15e-96d5-4045-b75b-b0aa5fc60479
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd351278(v=EXCHG.150)

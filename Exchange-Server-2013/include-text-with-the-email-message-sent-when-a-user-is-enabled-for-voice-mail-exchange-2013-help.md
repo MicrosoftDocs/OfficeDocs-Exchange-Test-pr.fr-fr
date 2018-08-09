@@ -1,5 +1,5 @@
 ﻿---
-title: "Inclure du texte avec le message électronique envoyé lorsqu'un utilisateur est activé pour la messagerie vocale: Exchange 2013 Help"
+title: 'Inclure du txt ac le msg électr. envoyé si un utlsr est activé pr messag. voc.'
 TOCTitle: Inclure du texte avec le message électronique envoyé lorsqu'un utilisateur est activé pour la messagerie vocale
 ms:assetid: 3e8292fb-0cdb-445d-8048-a59af7c38d63
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb201679(v=EXCHG.150)

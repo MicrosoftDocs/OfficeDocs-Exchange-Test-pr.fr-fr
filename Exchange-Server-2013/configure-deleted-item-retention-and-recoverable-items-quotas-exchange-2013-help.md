@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer la rétention des éléments supprimés et les quotas d’éléments récupérables: Exchange 2013 Help'
+title: 'Config. la rétention des éléments suppr. et les quotas d’éléments récupérables'
 TOCTitle: Configurer la rétention des éléments supprimés et les quotas d’éléments récupérables
 ms:assetid: de7d667a-1c93-4364-a4f9-2aa5e3678b12
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee364752(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: "Le niveau fonctionnel d'Active Directory n'est pas Windows Server 2003 ou une version ultérieure: Exchange 2013 Help"
+title: 'Le niveau fonctionnel d’AD n’est pas Windows Server 2003 ou version ultérieure'
 TOCTitle: Le niveau fonctionnel d'Active Directory n'est pas Windows Server 2003 ou une version ultérieure
 ms:assetid: 45f45976-62ac-4b6c-889a-ebd449402009
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.forestlevelnotwin2003native(v=EXCHG.150)

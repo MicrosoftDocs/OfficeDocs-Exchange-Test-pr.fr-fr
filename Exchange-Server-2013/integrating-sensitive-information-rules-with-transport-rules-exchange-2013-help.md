@@ -1,5 +1,5 @@
 ﻿---
-title: "Intégration des règles d'informations sensibles aux règles de transport: Exchange 2013 Help"
+title: 'Intégration des règles d’informations sensibles aux règles de transport'
 TOCTitle: Intégration des règles d'informations sensibles aux règles de transport
 ms:assetid: feb014a7-89dd-4f2d-a06d-52806ce435d4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ150583(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Autorisations insuffisantes pour exécuter /PrepareDomain_PrepareDomainNotAdmin: Exchange 2013 Help'
+title: 'Autorisations insuffisantes pour exécuter /PrepareDomain'
 TOCTitle: Autorisations insuffisantes pour exécuter /PrepareDomain_PrepareDomainNotAdmin
 ms:assetid: c33a2bc0-5b07-49b8-a1c1-53baa4933d44
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.preparedomainnotadmin(v=EXCHG.150)

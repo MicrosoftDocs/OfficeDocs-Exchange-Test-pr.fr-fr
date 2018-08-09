@@ -1,5 +1,5 @@
 ﻿---
-title: 'Mise à jour de l’organisation Exchange lorsque l’heure d’été ou le fuseau horaire change: Exchange 2013 Help'
+title: 'Màj de l’org. Exchange lorsque l’heure d’été ou le fuseau horaire change'
 TOCTitle: Mise à jour de l’organisation Exchange lorsque l’heure d’été ou le fuseau horaire change
 ms:assetid: 5b12615c-24cf-4f46-bf3c-2334dc734ef8
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Hh530051(v=EXCHG.150)

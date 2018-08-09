@@ -1,5 +1,5 @@
 ﻿---
-title: 'Déplacer une base de données de boîtes aux lettres à l’aide de la portabilité de base de données: Exchange 2013 Help'
+title: 'Déplacer une BDD de BAL avec la portabilité de BDD: Exchange 2013 Help'
 TOCTitle: Déplacer une base de données de boîtes aux lettres à l’aide de la portabilité de base de données
 ms:assetid: a765ead1-43bc-4786-ae93-1835cacfc8fc
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd876926(v=EXCHG.150)

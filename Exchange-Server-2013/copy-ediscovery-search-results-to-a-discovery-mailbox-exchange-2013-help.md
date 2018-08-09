@@ -1,5 +1,5 @@
 ﻿---
-title: 'Copier les résultats de la recherche de découverte automatique dans une boîte aux lettres de découverte: Exchange 2013 Help'
+title: 'Découv. auto.: copier résult. de rech. ds une BAL: Exchange 2013 Help'
 TOCTitle: Copier les résultats de la recherche de découverte automatique dans une boîte aux lettres de découverte
 ms:assetid: bff2ce89-9e6f-494a-bd6a-2f2011507845
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn624163(v=EXCHG.150)

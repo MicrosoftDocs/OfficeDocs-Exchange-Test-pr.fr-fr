@@ -1,5 +1,5 @@
 ﻿---
-title: 'L’utilisateur connecté n’est pas membre du groupe Administrateurs du schéma: Exchange 2013 Help'
+title: 'L’utilisateur connecté n’est pas membre du groupe Administrateurs du schéma'
 TOCTitle: L’utilisateur connecté n’est pas membre du groupe Administrateurs du schéma
 ms:assetid: a4a3f293-afb9-4c00-aa07-c438238b6a98
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.schemaupdaterequired(v=EXCHG.150)

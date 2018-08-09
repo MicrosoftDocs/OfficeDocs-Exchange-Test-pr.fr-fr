@@ -1,5 +1,5 @@
 ﻿---
-title: 'Présentation des stratégies d’attribution de rôle de gestion: Exchange 2013 Help'
+title: 'Présentation des strat. d’attribution de rôle de gestion: Exchange 2013 Help'
 TOCTitle: Présentation des stratégies d’attribution de rôle de gestion
 ms:assetid: 25913e43-326a-4371-90b5-021a35f100fe
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd638100(v=EXCHG.150)

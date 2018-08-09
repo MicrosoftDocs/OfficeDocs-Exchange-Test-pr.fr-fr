@@ -1,5 +1,5 @@
 ﻿---
-title: 'Meilleures pratiques pour la configuration de règles de flux de messagerie: Exchange 2013 Help'
+title: 'Meilleures pratiques pour la configuration de règles de flux de messagerie'
 TOCTitle: Meilleures pratiques pour la configuration de règles de flux de messagerie
 ms:assetid: abd863c3-c0ce-42f3-9470-a573adc3cbba
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn960147(v=EXCHG.150)

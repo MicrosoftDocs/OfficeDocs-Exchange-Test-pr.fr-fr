@@ -1,5 +1,5 @@
 ﻿---
-title: 'Suppression d’une règle de répondeur automatique pour un utilisateur: Exchange 2013 Help'
+title: 'Suppression d’une rgl de répondeur auto pour un utlsr: Exchange 2013 Help'
 TOCTitle: Suppression d’une règle de répondeur automatique pour un utilisateur
 ms:assetid: 1da3c5bc-7227-4b37-96f6-67ceefc084d5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ898497(v=EXCHG.150)

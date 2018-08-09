@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer un standard de standard automatique de secours DTMF: Exchange 2013 Help'
+title: 'Config. un standard de standard auto. de secours DTMF: Exchange 2013 Help'
 TOCTitle: Configurer un standard de standard automatique de secours DTMF
 ms:assetid: a82d85f7-de30-40db-8ee6-b091ac14da9d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb232158(v=EXCHG.150)

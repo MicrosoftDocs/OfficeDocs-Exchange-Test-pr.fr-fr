@@ -1,5 +1,5 @@
 ﻿---
-title: 'Réduction de la taille d’une boîte aux lettres de découverte dans Exchange: Exchange 2013 Help'
+title: 'Réduire la taille d’une BAL de découverte dans Exchange: Exchange 2013 Help'
 TOCTitle: Réduction de la taille d’une boîte aux lettres de découverte dans Exchange
 ms:assetid: fa762d14-f942-4728-8813-887d11441a68
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn750895(v=EXCHG.150)

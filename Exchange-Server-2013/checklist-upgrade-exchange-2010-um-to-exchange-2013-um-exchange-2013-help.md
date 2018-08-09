@@ -1,5 +1,5 @@
 ﻿---
-title: "Liste de contrôle : mise à niveau de la messagerie unifiée d'Exchange 2010 vers celle d'Exchange 2013: Exchange 2013 Help"
+title: 'Liste de ctrl : màn de MU Exchange 2010 vers vrs de 2013: Exchange 2013 Help'
 TOCTitle: "Liste de contrôle : mise à niveau de la messagerie unifiée d'Exchange 2010 vers celle d'Exchange 2013"
 ms:assetid: 799bd1b1-a918-4bd8-911e-e6ca08bd7b52
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn169228(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Planification de l’utilisation de sites Active Directory pour le routage de messages: Exchange 2013 Help'
+title: 'Planif. de l’utilisation de sites AD pr le routage de messages: Exchange 2013'
 TOCTitle: Planification de l’utilisation de sites Active Directory pour le routage de messages
 ms:assetid: 0f697cee-bcaa-4c69-b80c-7a2afd1817d2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa996299(v=EXCHG.150)

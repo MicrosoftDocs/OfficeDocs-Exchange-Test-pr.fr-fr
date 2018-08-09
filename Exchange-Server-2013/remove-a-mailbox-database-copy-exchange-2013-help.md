@@ -1,5 +1,5 @@
 ﻿---
-title: 'Supprimer une copie de base de données de boîtes aux lettres: Exchange 2013 Help'
+title: 'Supprimer une copie de base de données de BAL: Exchange 2013 Help'
 TOCTitle: Supprimer une copie de base de données de boîtes aux lettres
 ms:assetid: 99fecdde-b158-4dfc-9ca7-ff7c0ada7819
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd298164(v=EXCHG.150)

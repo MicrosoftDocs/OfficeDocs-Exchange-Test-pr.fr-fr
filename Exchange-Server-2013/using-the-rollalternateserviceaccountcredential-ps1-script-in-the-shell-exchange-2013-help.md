@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utilisation du script RollAlternateserviceAccountCredential.ps1 dans l’environnement de ligne de commande Exchange Management Shell: Exchange 2013 Help'
+title: 'Utiliser le script RollAlternateserviceAccountCredential.ps1 dans Shell'
 TOCTitle: Utilisation du script RollAlternateserviceAccountCredential.ps1 dans l’environnement de ligne de commande Exchange Management Shell
 ms:assetid: 6ac55aae-472a-4ed6-83df-2d0e7b48e05c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff808311(v=EXCHG.150)

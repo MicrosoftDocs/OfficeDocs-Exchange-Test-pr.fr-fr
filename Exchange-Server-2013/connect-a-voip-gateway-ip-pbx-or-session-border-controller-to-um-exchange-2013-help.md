@@ -1,5 +1,5 @@
 ﻿---
-title: 'Connexion d’une passerelle VoIP, d’un IP PBX ou d’un contrôleur SBC à la messagerie unifiée: Exchange 2013 Help'
+title: 'Connexion d’une passerelle VoIP, d’un IP PBX ou d’un contrôleur SBC à la MU'
 TOCTitle: Connexion d’une passerelle VoIP, d’un IP PBX ou d’un contrôleur SBC à la messagerie unifiée
 ms:assetid: a7cecf59-b93a-413b-bb88-29f2669ef2cf
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124084(v=EXCHG.150)

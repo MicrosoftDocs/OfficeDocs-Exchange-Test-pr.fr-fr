@@ -1,5 +1,5 @@
 ﻿---
-title: 'Modèles de stratégies de protection contre la perte de données (DLP): Exchange 2013 Help'
+title: 'Mod. de strat. contre la perte de données (DLP): Exchange 2013 Help'
 TOCTitle: Modèles de stratégies de protection contre la perte de données (DLP)
 ms:assetid: c7b1a8e4-30d9-4409-85c5-f85ae023737d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ657730(v=EXCHG.150)

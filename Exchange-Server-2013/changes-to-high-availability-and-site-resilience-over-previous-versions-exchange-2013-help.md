@@ -1,5 +1,5 @@
 ﻿---
-title: 'Modifications apportées à la haute disponibilité et la résilience de site par rapport aux versions précédentes: Exchange 2013 Help'
+title: 'Modif. de la haute dispo. et de la résilience de site par rapp. aux vrs préc.'
 TOCTitle: Modifications apportées à la haute disponibilité et la résilience de site par rapport aux versions précédentes
 ms:assetid: de53c00b-091c-4a31-aacc-1bd40c756ce2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn789066(v=EXCHG.150)

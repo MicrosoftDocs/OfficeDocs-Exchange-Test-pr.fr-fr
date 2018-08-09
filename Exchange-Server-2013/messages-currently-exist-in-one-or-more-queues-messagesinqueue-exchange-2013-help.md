@@ -1,5 +1,5 @@
 ﻿---
-title: 'Une ou plusieurs files d’attente contiennent des messages_MessagesInQueue: Exchange 2013 Help'
+title: 'Une ou plusieurs files d’attente contiennent des messages'
 TOCTitle: Une ou plusieurs files d’attente contiennent des messages_MessagesInQueue
 ms:assetid: 3ffcdc7e-c1b7-49a7-8e5f-b30c0397908d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.messagesinqueue(v=EXCHG.150)

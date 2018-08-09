@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gérer le filtrage des destinataires sur les serveurs de transport Edge: Exchange 2013 Help'
+title: 'Filtrage des destinataires sur les srv de transport Edge: Exchange 2013 Help'
 TOCTitle: Gérer le filtrage des destinataires sur les serveurs de transport Edge
 ms:assetid: f2d0041f-2872-4669-95ec-443233f4956d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb125187(v=EXCHG.150)

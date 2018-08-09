@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration d’une collection de certificats virtuelle pour la validation des certificats S/MIME: Exchange 2013 Help'
+title: 'Configurer une collection de certificats virtuelle pour valider S/MIME'
 TOCTitle: Configuration d’une collection de certificats virtuelle pour la validation des certificats S/MIME
 ms:assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn626155(v=EXCHG.150)

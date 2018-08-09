@@ -1,5 +1,5 @@
 ﻿---
-title: 'Créer un connecteur d’envoi pour les messages électroniques envoyés vers Internet: Exchange 2013 Help'
+title: 'Créer connecteur d’envoi pr e-mails envoyés vers Internet: Exchange 2013 Help'
 TOCTitle: Créer un connecteur d’envoi pour les messages électroniques envoyés vers Internet
 ms:assetid: 6deaefa8-1152-40d9-b1ba-9c19bdf8a928
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ657457(v=EXCHG.150)

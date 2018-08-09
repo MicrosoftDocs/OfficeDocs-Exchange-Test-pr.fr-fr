@@ -1,5 +1,5 @@
 ﻿---
-title: 'Fonctionnalités pour les téléphones mobiles et les tablettes: Exchange 2013 Help'
+title: 'Fonctions pour les téléphones mobiles et les tablettes: Exchange 2013 Help'
 TOCTitle: Fonctionnalités pour les téléphones mobiles et les tablettes
 ms:assetid: ad54d9e6-7a1c-4fb0-b5a9-0b042b98ada3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb232162(v=EXCHG.150)

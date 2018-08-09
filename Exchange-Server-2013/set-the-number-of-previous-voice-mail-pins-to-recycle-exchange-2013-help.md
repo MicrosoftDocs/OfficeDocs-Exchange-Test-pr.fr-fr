@@ -1,5 +1,5 @@
 ﻿---
-title: 'Définir le nombre de codes confidentiels recycler la messagerie vocale précédente: Exchange 2013 Help'
+title: 'Déf. nbre codes conf. de messag. voc. préc. à recycler : Exchange 2013 Help'
 TOCTitle: Définir le nombre de codes confidentiels recycler la messagerie vocale précédente
 ms:assetid: b094e68e-c493-4576-a6b1-4c780e635405
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124254(v=EXCHG.150)

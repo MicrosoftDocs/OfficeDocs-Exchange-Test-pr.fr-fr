@@ -1,5 +1,5 @@
 ﻿---
-title: 'Concepts de base dans l’environnement de ligne de commande Exchange Management Shell: Exchange 2013 Help'
+title: 'Concepts dans l’env. de ligne de comm. Exchange Management Shell: Exchange 2013'
 TOCTitle: Concepts de base dans l’environnement de ligne de commande Exchange Management Shell
 ms:assetid: 87289884-7526-4f12-bf36-b252f4eff97e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn659284(v=EXCHG.150)

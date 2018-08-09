@@ -1,5 +1,5 @@
 ﻿---
-title: 'Raccourcis clavier dans le Centre d’administration Exchange: Exchange 2013 Help'
+title: 'Raccourcis clavier dans le Centre d’administration Exchange'
 TOCTitle: Raccourcis clavier dans le Centre d’administration Exchange
 ms:assetid: 146b2b52-1ef8-4606-991a-4cf4da694970
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ150484(v=EXCHG.150)

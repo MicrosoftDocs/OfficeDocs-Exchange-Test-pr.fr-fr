@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer un domaine accepté pour une unité commerciale avec des boîtes aux lettres à l’extérieur de votre organisation Exchange: Exchange 2013 Help'
+title: 'Config. domaine accepté pr 1 unité cciale avec BAL à l’ext. de l’org. Exchange'
 TOCTitle: Configurer un domaine accepté pour une unité commerciale avec des boîtes aux lettres à l’extérieur de votre organisation Exchange
 ms:assetid: ff46310b-5392-4eac-97bc-d39d397e1ce1
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ657737(v=EXCHG.150)

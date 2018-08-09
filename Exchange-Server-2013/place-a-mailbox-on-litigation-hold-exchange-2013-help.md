@@ -1,5 +1,5 @@
 ﻿---
-title: 'Placement d’une boîte aux lettres en conservation pour litige: Exchange 2013 Help'
+title: 'Placer une boîte aux lettres en conservation pour litige: Exchange 2013 Help'
 TOCTitle: Placement d’une boîte aux lettres en conservation pour litige
 ms:assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn743673(v=EXCHG.150)

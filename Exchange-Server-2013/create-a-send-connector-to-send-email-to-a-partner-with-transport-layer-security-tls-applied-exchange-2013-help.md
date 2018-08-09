@@ -1,5 +1,5 @@
 ﻿---
-title: 'Créer un connecteur d’envoi pour envoyer un courrier électronique à un partenaire, avec le protocole TLS (TLS): Exchange 2013 Help'
+title: 'Créer un connecteur d’envoi de courrier électronique à un partenaire avec TLS'
 TOCTitle: Créer un connecteur d’envoi pour envoyer un courriel à un partenaire, avec le protocole TLS (TLS)
 ms:assetid: ff2abefc-dd3e-4431-b947-df942fbf82d9
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ657514(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer la fonctionnalité de blocage du courrier indésirable sur un serveur de boîtes aux lettres: Exchange 2013 Help'
+title: 'Activ. fonction de blocage du courr. ind. sur un srv de BAL: Exchange 2013'
 TOCTitle: Activer la fonctionnalité de blocage du courrier indésirable sur un serveur de boîtes aux lettres
 ms:assetid: 59d22c5e-64bc-4879-8ad1-364862b6ba11
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb201691(v=EXCHG.150)

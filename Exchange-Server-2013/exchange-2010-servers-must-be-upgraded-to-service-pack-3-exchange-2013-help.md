@@ -1,5 +1,5 @@
 ﻿---
-title: 'Les serveurs Exchange 2010 doivent être mis à niveau vers le Service Pack 3: Exchange 2013 Help'
+title: 'Màn des srv Exchange 2010 vers Service Pack 3 nécessaire: Exchange 2013 Help'
 TOCTitle: Les serveurs Exchange 2010 doivent être mis à niveau vers le Service Pack 3
 ms:assetid: b4f74863-1567-4d6d-ae21-b0af495a1d82
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.e15e14coexistenceminversionrequirement(v=EXCHG.150)

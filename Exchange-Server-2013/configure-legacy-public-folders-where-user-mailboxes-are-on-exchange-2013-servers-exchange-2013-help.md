@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration des dossiers publics hérités où les boîtes aux lettres des utilisateurs résident sur des serveurs Exchange 2013: Exchange 2013 Help'
+title: 'Config. dossiers publics hérités avec BAL utlsr sont s/ des srv Exchange 2013'
 TOCTitle: Configuration des dossiers publics hérités où les boîtes aux lettres des utilisateurs résident sur des serveurs Exchange 2013
 ms:assetid: 1d5ca19e-696e-4054-a634-15dd34d952b7
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn690134(v=EXCHG.150)

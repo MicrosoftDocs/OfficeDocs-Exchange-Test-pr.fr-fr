@@ -1,5 +1,5 @@
 ﻿---
-title: "Gestion des paramètres de messagerie vocale d'un utilisateur: Exchange 2013 Help"
+title: 'Gestion des param. de messagerie vocale d’un utilisateur: Exchange 2013 Help'
 TOCTitle: Gestion des paramètres de messagerie vocale d'un utilisateur
 ms:assetid: 73957938-048a-4f9c-bd0f-a3c2c3dcd638
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998851(v=EXCHG.150)

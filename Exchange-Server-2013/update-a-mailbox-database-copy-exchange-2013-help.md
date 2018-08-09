@@ -1,5 +1,5 @@
 ﻿---
-title: "Mise à jour d'une copie de base de données de boîtes aux lettres: Exchange 2013 Help"
+title: 'Màj d’une copie de base de données de boîtes aux lettres: Exchange 2013 Help'
 TOCTitle: Mise à jour d'une copie de base de données de boîtes aux lettres
 ms:assetid: bead3cc5-7d50-446f-95b7-e432bcb7968e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd351100(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Le système d’exploitation est en mode débogage_OSCheckedBuild: Exchange 2013 Help'
+title: 'Le SE est en mode débogage_OSCheckedBuild: Exchange 2013 Help'
 TOCTitle: Le système d’exploitation est en mode débogage_OSCheckedBuild
 ms:assetid: 93a1380f-1388-494d-8f78-92dfefd069bd
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.oscheckedbuild(v=EXCHG.150)

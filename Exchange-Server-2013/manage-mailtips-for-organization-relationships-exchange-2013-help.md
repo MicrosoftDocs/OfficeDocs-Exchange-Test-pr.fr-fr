@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gérer les infos-courrier pour les relations de l’organisation: Exchange 2013 Help'
+title: 'Gérer les infos-courrier pour les relations de l’org.: Exchange 2013 Help'
 TOCTitle: Gérer les infos-courrier pour les relations de l’organisation
 ms:assetid: 6e6b48ef-c41c-47ad-8063-66901765c2a5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ649324(v=EXCHG.150)

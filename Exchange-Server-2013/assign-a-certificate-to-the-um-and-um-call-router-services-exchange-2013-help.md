@@ -1,5 +1,5 @@
 ﻿---
-title: 'Assigner un certificat pour les services de messagerie unifiée et de routeur d’appels UM: Exchange 2013 Help'
+title: 'Assigner un certificat pour les services de MU et de routeur d’appels UM'
 TOCTitle: Assigner un certificat pour les services de messagerie unifiée et de routeur d’appels UM
 ms:assetid: 8a900e5f-9779-4213-92d7-ec157b15fbc5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn205140(v=EXCHG.150)

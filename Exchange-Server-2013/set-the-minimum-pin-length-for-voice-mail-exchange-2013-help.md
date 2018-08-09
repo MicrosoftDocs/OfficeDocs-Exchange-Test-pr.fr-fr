@@ -1,5 +1,5 @@
 ﻿---
-title: 'Définir la longueur minimale du code confidentiel pour la messagerie vocale: Exchange 2013 Help'
+title: 'Définir longueur min. du code conf. pour la messag. voc.: Exchange 2013 Help'
 TOCTitle: Définir la longueur minimale du code confidentiel pour la messagerie vocale
 ms:assetid: b2ecab54-42e6-45af-8322-615cc1f68dd9
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124271(v=EXCHG.150)
