@@ -91,6 +91,7 @@ Ce qui suit est une liste des paramètres mis à jour et nouvels cmdlets pour Ex
 <tr class="even">
 <td><p>Désactivé-UMService</p></td>
 <td><p><code>-Identity &lt;UMServerIdParameter&gt; [-Confirm [&lt;SwitchParameter&gt;]] [-DomainController &lt;Fqdn&gt;] [-Immediate &lt;$true | $false&gt;] [-WhatIf [&lt;SwitchParameter&gt;]]</code></p>
+
 > [!NOTE]
 > Cette cmdlet fonctionne avec des serveurs de messagerie unifiée Exchange 2007 et 2010 uniquement.
 
@@ -99,6 +100,7 @@ Ce qui suit est une liste des paramètres mis à jour et nouvels cmdlets pour Ex
 <tr class="odd">
 <td><p>Activé-UMService</p></td>
 <td><p><code>-Identity &lt;UMServerIdParameter&gt; [-Confirm [&lt;SwitchParameter&gt;]] [-DomainController &lt;Fqdn&gt;] [-WhatIf [&lt;SwitchParameter&gt;]]</code></p>
+
 > [!NOTE]
 > Cette cmdlet fonctionne avec des serveurs de messagerie unifiée Exchange 2007 et 2010 uniquement.
 

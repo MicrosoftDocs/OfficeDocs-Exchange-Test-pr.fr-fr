@@ -39,11 +39,11 @@ Pour les tâches supplémentaires relatives aux statistiques d'appels, consultez
 
 ## Utiliser le Centre d'administration Exchange (CAE) pour récupérer des statistiques relatives à la qualité audio pour votre organisation
 
-1.  Dans le CAE, accédez à **Messagerie unifiée **\> **Autres options**![Icône Options supplémentaires](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "Icône Options supplémentaires") \> **Statistiques d'appels**.
+1.  Dans le CAE, accédez à **Messagerie unifiée**\> **Autres options**![Icône Options supplémentaires](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "Icône Options supplémentaires") \> **Statistiques d'appels**.
 
 2.  Sélectionnez les statistiques d'appels à inclure dans le rapport. Le rapport se met à jour automatiquement lorsque vous activez une des options suivantes.
     
-      - **Afficher **  Choisissez le type de statistiques d'appels à afficher :
+      - **Afficher**  Choisissez le type de statistiques d'appels à afficher :
         
           - **Quotidiennement (90 jours)** Sélectionnez Quotidiennement pour consulter les détails de tous les appels traités au cours des 90 derniers jours.
         

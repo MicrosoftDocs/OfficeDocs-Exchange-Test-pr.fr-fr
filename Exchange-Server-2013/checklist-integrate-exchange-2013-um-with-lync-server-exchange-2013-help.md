@@ -62,6 +62,7 @@ Pour plus d’informations sur l’exécution des tâches à effectuer pour Lync
 <td><p></p></td>
 <td><p>Consulter la configuration requise pour l'intégration de Microsoft Lync Server 2013 et Microsoft Exchange Server 2013.</p></td>
 <td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=282082">Configuration requise pour l’intégration de Microsoft Lync Server 2013 et Microsoft Exchange Server 2013</a></p>
+
 > [!TIP]
 > Unified Communications Managed API (UCMA) 4.0 Runtime est requis pour Exchange 2013 et Lync Server 2010 et 2013. Il est installé au cours de l’installation. Pour télécharger et obtenir des informations sur UCMA 4.0, consultez la rubrique <a href="https://go.microsoft.com/fwlink/p/?linkid=258269">Unified Communications Managed API 4.0 Runtime</a>
 

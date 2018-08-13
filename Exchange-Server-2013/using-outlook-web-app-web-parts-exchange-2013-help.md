@@ -113,6 +113,7 @@ Le tableau suivant répertorie les paramètres d’un composant WebPart et donn
 <li><p>Calendrier   Daily</p></li>
 <li><p>Messages   Messages</p></li>
 </ul>
+
 > [!NOTE]
 > Les chaînes des affichages par défaut sont automatiquement codées dans l’URL.
 

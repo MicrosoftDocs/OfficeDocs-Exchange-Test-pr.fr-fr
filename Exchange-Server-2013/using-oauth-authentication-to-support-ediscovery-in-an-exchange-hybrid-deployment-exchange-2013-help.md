@@ -63,6 +63,7 @@ Le tableau suivant identifie les scénarios de découverte électronique dans un
 <tr class="even">
 <td><p>Recherche de boîtes aux lettres sur site à l’aide d’une recherche de découverte électronique initiée depuis l’organisation Exchange sur site par un administrateur ou un responsable de la mise en conformité.</p></td>
 <td><p>Non</p>
+
 > [!NOTE]
 > Comme indiqué précédemment, l’authentification OAuth serait nécessaire si les boîtes aux lettres sur site étaient configurées avec des boîtes aux lettres d’archivage dans le cloud.
 

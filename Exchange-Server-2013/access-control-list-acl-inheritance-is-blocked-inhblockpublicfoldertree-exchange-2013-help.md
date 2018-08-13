@@ -64,6 +64,7 @@ Pour résoudre ce problème, assurez-vous que l’option « Permettre aux autor
 <p><strong>Valeur</strong> : 1</p></li>
 <li><p>Quittez l’Éditeur du Registre.</p></li>
 </ol>
+
 > [!NOTE]
 > Par défaut, l’onglet <strong>Sécurité</strong> n’est pas activé dans la zone des propriétés de l’objet de configuration.
 
@@ -77,11 +78,8 @@ Pour résoudre ce problème, assurez-vous que l’option « Permettre aux autor
 </tbody>
 </table>
 
-
 > [!Caution]  
 > Si vous modifiez les attributs d’objets Active Directory de manière incorrecte lorsque vous utilisez ADSI Edit, l’outil LDP ou tout autre client LDAP version 3, cela risque de poser de graves problèmes. Ces problèmes peuvent nécessiter une réinstallation de Microsoft Windows Server™ 2003, d’Exchange Server 2003 ou des deux. Vous modifiez les attributs d’objets Active Directory à vos propres risques.
-
-
 
 <table>
 <colgroup>

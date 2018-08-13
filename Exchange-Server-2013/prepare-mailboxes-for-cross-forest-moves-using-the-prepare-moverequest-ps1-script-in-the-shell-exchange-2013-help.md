@@ -109,6 +109,7 @@ Le tableau suivant décrit l’ensemble des paramètres associés au script.
 <td><p>Facultatif</p></td>
 <td><p>Le paramètre <em>DisableEmailAddressPolicy</em> spécifie si le protocole EAP (Email Address Policy) doit être désactivé à la création d’un objet <strong>MailUser</strong> dans la forêt cible.</p>
 <p>Lorsque vous spécifiez ce paramètre, l’EAP dans la forêt cible ne sera pas appliqué.</p>
+
 > [!NOTE]
 > Lorsque vous spécifiez ce paramètre, l’objet <strong>MailUser</strong> n’aura pas de mappage d’adresse de messagerie dans le domaine de forêt locale identifié. Ceci est généralement identifié par l’EAP.
 
