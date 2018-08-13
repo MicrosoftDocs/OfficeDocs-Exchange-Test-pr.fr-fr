@@ -53,7 +53,7 @@ Pour attribuer ce rôle à d’autres personnes, il doit être attribué à un g
 
 Vous pouvez également supprimer ce rôle à partir des groupes de rôle intégrés, des groupes de rôles que vous créez, des utilisateurs et des groupes de sécurité universels. Cependant, il doit toujours y avoir au moins une attribution de rôle de délégation entre ce rôle et un groupe de rôles ou un groupe de sécurité universel. Vous ne pouvez pas supprimer la dernière attribution de rôle de délégation. Cette limitation permet d’empêcher de vous déconnecter du système.
 
-> [!Important]>
+> [!Important]
 > Il doit toujours y avoir au moins une attribution de rôle de délégation entre ce rôle et un groupe de rôles ou un groupe de sécurité universel. Vous ne pouvez pas supprimer la dernière attribution de rôle de délégation associée à ce rôle si la dernière attribution est affectée à un utilisateur.
 
 Pour plus d’informations sur la manière d’ajouter ou de supprimer des attributions entre ce rôle et les groupes de rôles, les utilisateurs et les groupes de sécurité universels, consultez les rubriques suivantes :
@@ -179,7 +179,7 @@ Ce rôle a été configuré pour fournir à une personne affectée au rôle tout
 
 Si vous décidez que vous avez besoin de créer une version personnalisée de ce rôle, vous devez créer un rôle enfant et personnaliser le nouveau rôle.
 
-> [!Attention]
+> [!Caution]   
 > Les informations suivantes vous permettent d’effectuer la gestion avancée d’autorisations. La personnalisation des rôles de gestion peut augmenter considérablement la complexité de votre modèle d’autorisations. Vous risquez d’interrompre le fonctionnement de certaines fonctions si vous remplacez le rôle de gestion intégré par un rôle personnalisé et configuré de manière incorrecte.
 
 Les étapes suivantes sont celles les plus courantes pour créer un rôle personnalisé et l’attribuer à une personne affectée au rôle :
