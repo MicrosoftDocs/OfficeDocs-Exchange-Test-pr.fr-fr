@@ -259,6 +259,7 @@ Le tableau suivant répertorie tous les types de rôle de gestion administratif 
 <td><p><code>ActiveDirectoryPermissions</code></p></td>
 <td><p><a href="active-directory-permissions-role-exchange-2013-help.md">Rôle des autorisations Active Directory</a></p></td>
 <td><p>Ce type de rôle est associé à des rôles permettant aux administrateurs de configurer les autorisations Active Directory au sein d'une organisation. Certaines fonctionnalités reposant sur les autorisations Active Directory ou sur une liste de contrôle d'accès (ACL) comprennent les connecteurs de réception et d'envoi de transport, ainsi que les autorisations de boîtes aux lettres Envoyer en tant que et Envoyer de la part de.</p>
+
 > [!NOTE]
 > Les autorisations définies directement sur des objets Active Directory risquent de ne pas être appliquées via RBAC.
 

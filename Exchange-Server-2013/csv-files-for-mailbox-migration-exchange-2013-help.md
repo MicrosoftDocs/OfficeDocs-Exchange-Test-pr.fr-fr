@@ -107,6 +107,7 @@ Le tableau suivant décrit les attributs pris en charge dans un fichier CSV pour
 <td><p>Facultatif</p></td>
 <td><p><code>Unlimited</code> ou un entier positif d'une valeur comprise entre <code>0</code> (par défaut) et <code>2147483647</code></p></td>
 <td><p>Spécifie le nombre d’éléments erronés à ignorer si le service de migration rencontre un élément endommagé dans la boîte aux lettres. Si vous incluez cet attribut dans le fichier CSV, il remplacera la valeur par défaut ou une valeur spécifiée par vous si vous incluez le paramètre <em>BadItemLimit</em> lors de la création du lot de migration à l’aide du CAE ou de l’Environnement de ligne de commande Exchange Management Shell.</p>
+
 > [!TIP]
 > Nous vous recommandons d'utiliser la valeur par défaut (0) et d'augmenter le nombre limite d'éléments erronés uniquement pour un utilisateur particulier en cas d'échec du déplacement ou de la migration de ce dernier.
 
@@ -161,6 +162,7 @@ Le tableau suivant décrit les attributs pris en charge dans un fichier CSV pour
 <td><p>Facultatif</p></td>
 <td><p><code>Unlimited</code> ou un entier positif d'une valeur comprise entre <code>0</code> (par défaut) et <code>2147483647</code></p></td>
 <td><p>Spécifie le nombre d’éléments erronés à ignorer si le service de migration rencontre un élément endommagé dans la boîte aux lettres. Si vous incluez cet attribut dans le fichier CSV, il remplacera la valeur par défaut ou la valeur spécifiée par vous si vous incluez le paramètre <em>BadItemLimit</em> lors de la création du lot de migration à l’aide du CAE ou de l’Environnement de ligne de commande Exchange Management Shell.</p>
+
 > [!TIP]
 > Nous vous recommandons d'utiliser la valeur par défaut (0) et d'augmenter le nombre limite d'éléments erronés uniquement pour un utilisateur particulier en cas d'échec du déplacement ou de la migration de ce dernier.
 

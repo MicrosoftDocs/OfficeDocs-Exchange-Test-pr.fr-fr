@@ -73,6 +73,7 @@ Les utilisateurs auxquels est affecté le groupe de rôles Gestion de l'organisa
 <td><p>Suppression du contenu de la boîte aux lettres (à l’aide de la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dd298173(v=exchg.150)">Search-Mailbox</a> avec l’indicateur <em>DeleteContent</em>)</p></td>
 <td><p><a href="discovery-management-exchange-2013-help.md">Gestion de la détection</a> <strong>et</strong></p>
 <p><a href="mailbox-import-export-role-exchange-2013-help.md">Rôle d’importation et d’exportation de boîtes aux lettres</a></p>
+
 > [!NOTE]
 > Par défaut, le rôle d’importation et d’exportation de boîte aux lettres n’est affecté à aucun groupe de rôles. Vous pouvez attribuer un rôle de gestion à un groupe de rôles, un utilisateur ou un groupe de sécurité universel intégré ou personnalisé. Il est conseillé d'attribuer un rôle à un groupe de rôles. Pour plus d’informations, consultez la rubrique <a href="add-a-role-to-a-user-or-usg-exchange-2013-help.md">Ajouter un rôle à un utilisateur ou un groupe de sécurité universel</a>.
 
@@ -106,6 +107,7 @@ Les utilisateurs auxquels est affecté le groupe de rôles Gestion de l'organisa
 <tr class="even">
 <td><p>Découverte électronique locale</p></td>
 <td><p><a href="discovery-management-exchange-2013-help.md">Gestion de la détection</a></p>
+
 > [!NOTE]
 > Par défaut, le groupe de rôles Gestion de la découverte ne possède aucun membre. Aucun utilisateur, y compris les administrateurs, ne dispose des autorisations requises pour rechercher des boîtes aux lettres. Pour plus d’informations, voir <a href="assign-ediscovery-permissions-in-exchange-exchange-2013-help.md">Attribution d’autorisations eDiscovery dans Exchange</a>.
 
@@ -115,7 +117,8 @@ Les utilisateurs auxquels est affecté le groupe de rôles Gestion de l'organisa
 <td><p>Blocage local</p></td>
 <td><p><a href="discovery-management-exchange-2013-help.md">Gestion de la détection</a></p>
 <p><a href="organization-management-exchange-2013-help.md">Gestion de l’organisation</a></p>
-> [!important]
+
+> [!Important]
 > Pour créer une archive permanente basée sur une demande, un utilisateur a besoin des rôles Recherche de boîte aux lettres et Mise en attente pour litige afin d'être assigné directement, ou via abonnement, à un groupe de rôles auquel les deux rôles sont attribués. Pour créer une archive permanente sans utiliser de demande, qui met en attente tous les éléments de boîtes aux lettres, vous devez disposer du rôle Mise en attente pour litige. Les deux rôles sont assignés au groupe de rôles Gestion de la découverte.
 > Le rôle Mise en attente pour litige est assigné au groupe de rôles Gestion de l'organisation. Les membres du groupe de rôles Gestion de l'organisation peuvent placer tous les éléments dans une archive permanente dans une boîte aux lettres, mais ne peuvent pas créer une archive permanente basée sur une demande.
 
