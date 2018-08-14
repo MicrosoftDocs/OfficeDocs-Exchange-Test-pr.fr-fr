@@ -19,9 +19,6 @@ _**Dernière rubrique modifiée :** 2016-12-09_
 
 Utilisez cette liste de contrôle pour installer et déployer la messagerie unifiée et Microsoft Lync Server 2013. Dans cette rubrique, « Lync Server » désigne également Lync Server 2010. Toutefois, Microsoft Office Communications Server 2007 R2 peut aussi être déployé à l'aide de la messagerie unifiée.
 
-> [!NOTE]
-> 
-
 
 Avant de commencer à utiliser cette liste de vérification, familiarisez-vous avec les concepts présentés dans :
 
