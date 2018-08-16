@@ -1,5 +1,5 @@
 ﻿---
-title: 'Autorités de certification racine de confiance pour les approbations de fédération: Exchange 2013 Help'
+title: 'Autorités de certif. racine de confiance pour les approbations de fédération'
 TOCTitle: Autorités de certification racine de confiance pour les approbations de fédération
 ms:assetid: d4224bf5-69b3-484c-8a70-4f230d3dbdd9
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee332350(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-07-26_
+_**Dernière rubrique modifiée :** 2017-07-26_
 
 Pour établir une approbation de fédération entre votre organisation Exchange Server 2013 de Microsoft et le [système d’authentification Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=135986), vous avez besoin d’un certificat numérique installé sur le serveur Exchange utilisé pour créer l’approbation. Nous recommandons vivement à l’aide d’un certificat auto-signé. Un certificat auto-signé est créé et installé automatiquement lors de l’utilisation de l’Assistant **Activer l’approbation de fédération** dans le Centre d’administration Exchange (FAC).
 

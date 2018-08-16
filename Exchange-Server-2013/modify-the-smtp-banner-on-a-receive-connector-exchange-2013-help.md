@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 La *bannière SMTP* est la réponse de la connexion SMTP qu'un serveur de messagerie SMTP distant reçoit une fois connecté à un connecteur de réception configuré sur un ordinateur exécutant Microsoft Exchange Server 2013.
 
@@ -41,18 +41,8 @@ Vous pouvez modifier la bannière SMTP des connecteurs de réception SMTP acc�
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour modifier la bannière SMTP sur un connecteur de réception

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestion de l’approbation des messages et résolution des problèmes: Exchange 2013 Help'
+title: 'Gestion de l’appr. des msg et résolution de problèmes: Exchange 2013 Help'
 TOCTitle: Gestion de l’approbation des messages et résolution des problèmes
 ms:assetid: 860df43f-a05b-4da3-83f1-68d3123a923d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd298110(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Vous pouvez recevoir l'erreur suivante lorsque vous essayez de supprimer une boîte à lettres d'arbitrage :
 
@@ -56,18 +56,8 @@ Par exemple, pour trouver tous les destinataires utilisant la boîte aux lettres
     $AMDN = $AM.DistinguishedName
     Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq $AMDN}
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous spécifiez la boîte aux lettres d'arbitrage à l'aide du nom unique. Si vous connaissez le nom unique de la boîte aux lettres d'arbitrage, vous pouvez exécuter la commande unique : <code>Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq &lt;DN&gt;}</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous spécifiez la boîte aux lettres d'arbitrage à l'aide du nom unique. Si vous connaissez le nom unique de la boîte aux lettres d'arbitrage, vous pouvez exécuter la commande unique : <code>Get-Recipient -RecipientPreviewFilter {ArbitrationMailbox -eq &lt;DN&gt;}</code>.
 
 
 ## Étape 2 : utiliser l'environnement de ligne de commande Exchange Management Shell pour spécifier une autre boîte aux lettres d'arbitrage ou désactiver la modération pour les destinataires

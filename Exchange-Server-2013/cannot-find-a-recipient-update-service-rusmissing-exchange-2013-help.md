@@ -1,5 +1,5 @@
 ﻿---
-title: 'Impossible de trouver un service de mise à jour de destinataire_RUSMissing: Exchange 2013 Help'
+title: 'Service de màj de destinataire introuvable_RUSMissing: Exchange 2013 Help'
 TOCTitle: Impossible de trouver un service de mise à jour de destinataire_RUSMissing
 ms:assetid: 920fbf51-d5e4-4ac6-869f-7f1c5d9a3024
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.rusmissing(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-15_
+_**Dernière rubrique modifiée :** 2016-12-15_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 
@@ -54,11 +54,11 @@ Pour résoudre ce problème, vérifiez qu’une instance du service de mise à j
 
 Pour plus d’informations sur le service de mise à jour de destinataire, voir les articles suivants de la Base de connaissances Microsoft :
 
-  - Comment le service de mise à jour de destinataire applique les stratégies de destinataire ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=328738](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=328738)).
+  - Comment le service de mise à jour de destinataire applique les stratégies de destinataire ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=328738](https://go.microsoft.com/fwlink/?linkid=3052&kbid=328738)).
 
-  - Comment le service de mise à jour de destinataire renseigne les listes d’adresses ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253828](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=253828)).
+  - Comment le service de mise à jour de destinataire renseigne les listes d’adresses ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253828](https://go.microsoft.com/fwlink/?linkid=3052&kbid=253828)).
 
-  - Comment vérifier la progression du service de mise à jour de destinataire Exchange ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=246127](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=246127)).
+  - Comment vérifier la progression du service de mise à jour de destinataire Exchange ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=246127](https://go.microsoft.com/fwlink/?linkid=3052&kbid=246127)).
 
-  - Tâches effectuées par le service de mise à jour de destinataire Exchange ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253770](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=253770)).
+  - Tâches effectuées par le service de mise à jour de destinataire Exchange ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253770](https://go.microsoft.com/fwlink/?linkid=3052&kbid=253770)).
 

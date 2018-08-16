@@ -1,5 +1,5 @@
 ﻿---
-title: 'Autorisation des appels utilisant des règles de numérotation: Exchange 2013 Help'
+title: 'Autoriser des appels utilisant des règles de numérotation: Exchange 2013 Help'
 TOCTitle: Autorisation des appels utilisant des règles de numérotation
 ms:assetid: 4c18bc07-f55c-42b7-81c1-729878aa93aa
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ898499(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Par défaut, les utilisateurs ne peuvent pas passer d’appels sortants. Pour spécifier les types d'appels que les utilisateurs peuvent effectuer, commencez par créer des règles de numérotation, puis autorisez les groupes de ces règles sur les plans de numérotation, les stratégies de boîte aux lettres et les standards automatiques de messagerie unifiée. Avant de pouvoir autoriser des groupes de règles de numérotation, vous devez d'abord définir des règles de numérotation sur un plan de numérotation de messagerie unifiée. Pour plus d'informations, consultez la rubrique [Créer des règles de numérotation pour les utilisateurs](create-dialing-rules-for-users-exchange-2013-help.md).
 

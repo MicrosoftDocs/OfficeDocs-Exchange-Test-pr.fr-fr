@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Project Server 2013_
+_**Sapplique à :** Exchange Server 2013, Project Server 2013_
 
-_**Dernière rubrique modifiée :**2015-11-10_
+_**Dernière rubrique modifiée :** 2015-11-10_
 
 Le jeu d’intégrité **OWA.Protocol.DEP** contrôle l’état d’intégrité général des services de messagerie instantanée (MI) d’Outlook Web App qui sont intégrés entre Lync 2013 et Exchange 2013. Pour plus d’informations sur l’activation de la messagerie instantanée dans Outlook Web App, voir [Intégration de Microsoft Lync Server 2013 et Microsoft Outlook Web App 2013](http://go.microsoft.com/fwlink/p/?linkid=280418).
 

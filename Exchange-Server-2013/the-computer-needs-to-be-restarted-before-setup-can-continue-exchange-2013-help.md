@@ -1,5 +1,5 @@
 ﻿---
-title: 'Vous devez redémarrer l’ordinateur avant que le programme d’installation ne puisse continuer l’opération: Exchange 2013 Help'
+title: 'Redémarr. ordinateur nécess. pour que le prog. d’install. puisse poursuivre'
 TOCTitle: Vous devez redémarrer l’ordinateur avant que le programme d’installation ne puisse continuer l’opération
 ms:assetid: d5c73280-4e54-473a-b328-9673af11e2c0
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.rebootpending(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le programme d’installation de Microsoft Exchange Server 2013 ne peut pas continuer, car il a détecté que l’ordinateur local doit être redémarré pour terminer l’installation d’autres programmes ou mises à jour Windows.
 
@@ -33,16 +33,6 @@ Si vous avez redémarré l’ordinateur plus de deux ou trois fois et que cette 
 
 Si, après avoir redémarré votre ordinateur et réinstallé tous les programmes ou mises à jour Windows récents, cette erreur s’affiche *encore*, nous vous recommandons de contacter le support Microsoft. Il vous aidera à déterminer pourquoi Windows et d’autres programmes pensent que votre ordinateur doit être redémarré. Pour contacter le support Microsoft, accédez au [support pour Microsoft Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=525940).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Bien que cela puisse être tentant, nous vous recommandons vivement de ne pas tenter de contourner ce problème en supprimant ou en modifiant manuellement des clés ou des valeurs dans le Registre Windows. Même si cette procédure peut résoudre le problème actuel, elle peut créer des problèmes ultérieurement. Cela est particulièrement important si l’installation qui a échoué était une mise à jour Windows.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Bien que cela puisse être tentant, nous vous recommandons vivement de ne pas tenter de contourner ce problème en supprimant ou en modifiant manuellement des clés ou des valeurs dans le Registre Windows. Même si cette procédure peut résoudre le problème actuel, elle peut créer des problèmes ultérieurement. Cela est particulièrement important si l’installation qui a échoué était une mise à jour Windows.
 

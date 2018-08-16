@@ -1,5 +1,5 @@
 ﻿---
-title: "Impossible d'installer Exchange 2013 dans une forêt contenant des serveurs Exchange 2000 ou Exchange 2003.: Exchange 2013 Help"
+title: 'Imp. d’installer Exchange 2013 dans une forêt avec srv Exchange 2000 ou 2003'
 TOCTitle: Impossible d'installer Exchange 2013 dans une forêt contenant des serveurs Exchange 2000 ou Exchange 2003.
 ms:assetid: a115b182-cbd2-4d31-aa0e-375240939301
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.exchange2000or2003presentinorg(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Microsoft Exchange Server 2013 ne peut pas poursuivre son exécution car un ou plusieurs ordinateurs exécutant Exchange 2000 Server ou Exchange Server 2003 ont été détectés dans la forêt Active Directory. Avant de pouvoir installer Exchange 2013, tous les serveurs Exchange 2000 et Exchange 2003 doivent être supprimés de la forêt. Les boîtes aux lettres, les dossiers publics et tous les autres objets ou composants Exchange doivent être mis à niveau vers Exchange Server 2007 ou Exchange Server 2010. Vous ne pouvez pas mettre à niveau d’Exchange 2000 ou Exchange 2003 directement vers Exchange 2013.
 

@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Outlook 2013_
+_**Sapplique à :** Exchange Server 2013, Outlook 2013_
 
-_**Dernière rubrique modifiée :**2015-02-27_
+_**Dernière rubrique modifiée :** 2015-02-27_
 
 Pour pouvoir collaborer avec des personnes de différentes organisations ou avec des amis et des membres de votre famille sur des projets ou planifier des événements sociaux ensemble, vous devrez peut-être coordonner vos calendriers. Avec Exchange 2013, les administrateurs peuvent configurer différents niveaux d’accès au calendrier pour permettre aux entreprises de collaborer avec d’autres entreprises et aux utilisateurs de partager leurs calendriers avec d’autres personnes. La configuration du partage de calendriers entre entreprises (B2B) passe par la création de *relations des organisations*. La configuration du partage de calendriers entre utilisateurs passe par l’application de *stratégies de partage*.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.
 
 
 **Contenu de cette rubrique**
@@ -183,35 +173,15 @@ Les limites suivantes s’appliquent lors du partage d’informations de disponi
     
     1.  Sur tous vos serveurs CAS Exchange 2007, ouvrez le fichier suivant avec un éditeur de texte, par exemple le Bloc-notes : \<Chemin d’installation Exchange\>\\V14\\ClientAccess\\ExchWeb\\EWS\\web.config
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Avant d’apporter des modifications au fichier web.config, créez une copie du fichier et placez-la en lieu sûr.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!CAUTION]
+        > Avant d’apporter des modifications au fichier web.config, créez une copie du fichier et placez-la en lieu sûr.
     
     2.  Recherchez la section **appSettings** dans le fichier web.config.
     
     3.  Ajoutez une nouvelle clé « \<add key="maximumQueryIntervalDays" value="62" /\> » et enregistrez le fichier web.config.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>La valeur de maximumQueryIntervalDays n’est pas présente par défaut. Lorsque cette valeur n’est pas spécifiée, Exchange 2007 utilise l’intervalle par défaut de 42 jours.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > La valeur de maximumQueryIntervalDays n’est pas présente par défaut. Lorsque cette valeur n’est pas spécifiée, Exchange 2007 utilise l’intervalle par défaut de 42 jours.
     
     4.  Arrêtez et redémarrez Microsoft Internet Information Services (IIS) sur tous les serveurs CAS Exchange 2007.
 

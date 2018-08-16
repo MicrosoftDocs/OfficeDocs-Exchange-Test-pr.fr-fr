@@ -1,5 +1,5 @@
 ﻿---
-title: 'Attribuer une stratégie de carnet d’adresses à des utilisateurs de messagerie: Exchange 2013 Help'
+title: 'Attribuer strat. de crnt d’adresses aux utlsr de messag.: Exchange 2013 Help'
 TOCTitle: Attribuer une stratégie de carnet d’adresses à des utilisateurs de messagerie
 ms:assetid: bdfe6575-24c0-47d0-9cfb-ece910db248b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Hh529942(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-11_
+_**Dernière rubrique modifiée :** 2012-10-11_
 
 Après avoir créé une stratégie de carnet d'adresses (ABP) vous devez l'affecter à des utilisateurs de boîtes aux lettres. Aucune stratégie de carnet d'adresses par défaut n'est affectée aux utilisateurs à la création de leur compte utilisateur. Si vous n'affectez pas de stratégie de carnet d'adresses à un utilisateur, ce dernier pourra accéder à la liste d'adresses globale (LAG) de toute votre organisation via Outlook et Outlook Web App. Pour en savoir plus, voir [Stratégies de carnet d’adresses](address-book-policies-exchange-2013-help.md).
 
@@ -31,18 +31,8 @@ Les situations dans lesquelles cette procédure est utilisée vous intéressent�
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

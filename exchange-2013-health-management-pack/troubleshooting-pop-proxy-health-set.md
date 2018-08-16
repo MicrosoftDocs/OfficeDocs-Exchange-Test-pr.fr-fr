@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-11_
+_**Dernière rubrique modifiée :** 2013-02-11_
 
 L'ensemble d'intégrité POP.Proxy surveille la disponibilité de l'infrastructure proxy Microsoft Exchange POP3 sur le serveur d'accès au client (CAS). Si vous recevez une alerte signalant que l'ensemble d'intégrité POP.Proxy est défectueux, cela indique qu'un problème affecte les composants POP sur le serveur d'accès au client mentionné dans l'alerte.
 

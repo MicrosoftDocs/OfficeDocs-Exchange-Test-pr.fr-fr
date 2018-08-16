@@ -1,5 +1,5 @@
 ﻿---
-title: 'Modifier les paramètres de limitation d’utilisateurs pour tous les utilisateurs de votre organisation: Exchange 2013 Help'
+title: 'Modifier param. de limitation d’utlsr pr tous les utlsr de votre organisation'
 TOCTitle: Modifier les paramètres de limitation d’utilisateurs pour tous les utilisateurs de votre organisation
 ms:assetid: c45cacfc-768d-4605-9bb0-53e30273fe4d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ863578(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-08-05_
+_**Dernière rubrique modifiée :** 2014-08-05_
 
 Vous pouvez contrôler la façon dont les utilisateurs de votre organisation Exchange utilisent les ressources en modifiant les paramètres de limitation par défaut.
 
@@ -33,18 +33,8 @@ Pour personnaliser les paramètres de limitation qui s’appliquent à tous les 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour modifier la manière dont les ressources peuvent être utilisées par tous les utilisateurs de toute votre organisation

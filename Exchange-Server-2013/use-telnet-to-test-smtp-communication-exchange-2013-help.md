@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Cette rubrique décrit comment utiliser Telnet pour tester la communication SMTP (Simple Mail Transfer Protocol) entre deux serveurs de messagerie. Par défaut, SMTP écoute sur le port 25. Si vous utilisez Telnet sur le port 25, vous pouvez entrer les commandes SMTP utilisées pour la connexion à un serveur SMTP et envoyer un message comme si votre session Telnet se trouvait sur un serveur de messagerie SMTP. Vous pouvez voir si chaque étape réussit ou échoue au cours du processus de connexion et de dépôt de message.
 
@@ -39,18 +39,8 @@ La procédure de cette rubrique vous indique comment utiliser le client Telnet, 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Comment procéder ?
@@ -71,18 +61,8 @@ Pour vous connecter à un serveur SMTP de destination via Telnet sur le port 25
 
 4.  Tapez le nom du domaine pour lequel vous voulez rechercher l'enregistrement MX. Par exemple, pour rechercher l'enregistrement MX du domaine fabrikam.com, tapez **fabrikam.com.**, puis appuyez sur Entrée.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le point final ( <strong>.</strong> ) indique un nom de domaine complet. L'utilisation du point final empêche les suffixes DNS par défaut configurés sur votre réseau d'être ajoutés de façon involontaire au nom de domaine.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le point final ( <strong>.</strong> ) indique un nom de domaine complet. L'utilisation du point final empêche les suffixes DNS par défaut configurés sur votre réseau d'être ajoutés de façon involontaire au nom de domaine.
     
     Les données en sortie de la commande sont similaires à ce qui suit :
     
@@ -95,18 +75,8 @@ Pour vous connecter à un serveur SMTP de destination via Telnet sur le port 25
 
 5.  Quand vous êtes prêt à fermer la session Nslookup, tapez **exit**, puis appuyez sur Entrée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les restrictions de pare-feu et de proxy Internet imposées sur le réseau interne de votre organisation peuvent vous empêcher d'utiliser l'outil Nslookup pour interroger les serveurs DNS publics sur Internet.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les restrictions de pare-feu et de proxy Internet imposées sur le réseau interne de votre organisation peuvent vous empêcher d'utiliser l'outil Nslookup pour interroger les serveurs DNS publics sur Internet.
 
 
 ## Étape 3 : utiliser Telnet sur le port 25 pour tester la communication SMTP
@@ -125,26 +95,11 @@ Dans cet exemple, les valeurs suivantes sont utilisées :
 
   - **Corps du message**   Ceci est un message de test
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Les commandes du client Telnet ne tiennent pas compte de la casse. Les verbes de la commande SMTP sont écrits en majuscules par souci de clarté.</p></li>
-<li><p>Vous ne pouvez pas utiliser la touche Retour arrière après vous être connecté au serveur SMTP de destination dans la session Telnet. En cas d'erreur lors de la saisie d'une commande SMTP, vous devez appuyer sur ENTRÉE puis taper la commande à nouveau. Les commandes SMTP inconnues ou les erreurs de syntaxe entraînent l'affichage d'un message d'erreur similaire à ce qui suit :</p>
-<pre><code>500 5.3.3 Unrecognized command</code></pre></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]
+> <ul>
+> <li><p>Les commandes du client Telnet ne tiennent pas compte de la casse. Les verbes de la commande SMTP sont écrits en majuscules par souci de clarté.</p></li>
+> <li><p>Vous ne pouvez pas utiliser la touche Retour arrière après vous être connecté au serveur SMTP de destination dans la session Telnet. En cas d'erreur lors de la saisie d'une commande SMTP, vous devez appuyer sur ENTRÉE puis taper la commande à nouveau. Les commandes SMTP inconnues ou les erreurs de syntaxe entraînent l'affichage d'un message d'erreur similaire à ce qui suit :</p>
+<pre><code>500 5.3.3 Unrecognized command</code></pre></li></ul>
 
 1.  À l'invite de commandes, tapez **telnet**, puis appuyez sur Entrée. Cette commande ouvre la session Telnet.
 
@@ -192,18 +147,8 @@ Cette section fournit des informations sur les réponses qui peuvent être gén�
 
   - RCPT TO:kate@fabrikam.com NOTIFY=success,failure
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les codes de réponse SMTP à 3 chiffres définis dans RFC 2821 sont les mêmes pour tous les serveurs de messagerie SMTP. Ces descriptions peuvent légèrement varier pour certains serveurs de messagerie SMTP.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les codes de réponse SMTP à 3 chiffres définis dans RFC 2821 sont les mêmes pour tous les serveurs de messagerie SMTP. Ces descriptions peuvent légèrement varier pour certains serveurs de messagerie SMTP.
 
 
 ## Open mail1.fabrikam.com 25
@@ -232,18 +177,8 @@ Cette section fournit des informations sur les réponses qui peuvent être gén�
 
 **Raisons possibles de l'échec**   Le nom de domaine comporte des caractères non valides. Il peut aussi y avoir des restrictions de connexion sur le serveur SMTP de destination.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>EHLO est le verbe ESMTP (Extended Simple Message Transfer Protocol) défini dans RFC 2821. Les serveurs ESMTP peuvent annoncer leurs capacités lors de la connexion initiale. Ces capacités incluent la taille de message acceptée maximale, ainsi que leurs méthodes d'authentification prises en charge. HELO est l'ancien verbe SMTP défini dans RFC 821. La plupart des serveurs de messagerie SMTP prennent en charge ESMTP et EHLO.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> EHLO est le verbe ESMTP (Extended Simple Message Transfer Protocol) défini dans RFC 2821. Les serveurs ESMTP peuvent annoncer leurs capacités lors de la connexion initiale. Ces capacités incluent la taille de message acceptée maximale, ainsi que leurs méthodes d'authentification prises en charge. HELO est l'ancien verbe SMTP défini dans RFC 821. La plupart des serveurs de messagerie SMTP prennent en charge ESMTP et EHLO.
 
 
 ## MAIL FROM:chris@contoso.com

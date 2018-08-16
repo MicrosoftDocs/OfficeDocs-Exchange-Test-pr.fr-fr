@@ -1,5 +1,5 @@
 ﻿---
-title: 'Archivage des conversations Lync et du contenu de réunion dans Exchange: Exchange 2013 Help'
+title: 'Archiver les conv. Lync et le cont. de réu. dans Exchange: Exchange 2013 Help'
 TOCTitle: Archivage des conversations Lync et du contenu de réunion dans Exchange
 ms:assetid: 3cff970e-e5ed-4a54-88e6-3665d84b5ed7
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn508399(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez archiver du contenu Lync Online, tel que des conversations de messagerie instantanée, dans la boîte aux lettres d’un utilisateur dans Exchange Online. Dans les déploiements locaux, vous pouvez archiver du contenu Lync 2013 dans les boîtes aux lettres Exchange 2013. Dans les environnements en ligne et locaux, vous devez placer la boîte aux lettres de l’utilisateur en conservation pour litige ou en conservation inaltérable. Lorsque le contenu Lync est définitivement supprimé par un utilisateur dont la boîte aux lettres est soumise à une obligation de conservation pour litige, le contenu Lync archivé est conservé dans le dossier Éléments récupérables dans la boîte aux lettres de l’utilisateur. Le contenu n’est pas visible par les utilisateurs, mais il est inclus dans les recherches eDiscovery.
 
@@ -23,18 +23,8 @@ Lorsque vous placez une boîte aux lettres en conservation pour litige, tous les
 
 ![Placer des éléments Lync en conservation](images/Dn508399.691d2324-9fac-4689-8527-c78d387e0e3e(EXCHG.150).jpg "Placer des éléments Lync en conservation")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez également configurer une obligation de conservation inaltérable pour exclure des éléments Lync. Par exemple, les organisations peuvent préférer conserver des messages instantanés et des éléments de messagerie vocale sur une durée plus courte que pour les autres types de contenu. Pour implémenter ce type de stratégie de conservation, vous devez créer une obligation de conservation inaltérable pour conserver le contenu sur une longue durée (par exemple, 7 ans) et exclure des éléments Lync de cette stratégie. Ensuite, vous devez créer une autre obligation de conservation inaltérable d’une durée plus courte pour conserver uniquement les éléments Lync. Vous pouvez également spécifier la durée pendant laquelle le contenu doit être conservé. Pour plus d’informations sur la création d’une obligation de conservation sur une durée spécifique, consultez la rubrique <a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">Conservation inaltérable et conservation pour litige</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez également configurer une obligation de conservation inaltérable pour exclure des éléments Lync. Par exemple, les organisations peuvent préférer conserver des messages instantanés et des éléments de messagerie vocale sur une durée plus courte que pour les autres types de contenu. Pour implémenter ce type de stratégie de conservation, vous devez créer une obligation de conservation inaltérable pour conserver le contenu sur une longue durée (par exemple, 7 ans) et exclure des éléments Lync de cette stratégie. Ensuite, vous devez créer une autre obligation de conservation inaltérable d’une durée plus courte pour conserver uniquement les éléments Lync. Vous pouvez également spécifier la durée pendant laquelle le contenu doit être conservé. Pour plus d’informations sur la création d’une obligation de conservation sur une durée spécifique, consultez la rubrique <a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">Conservation inaltérable et conservation pour litige</a>.
 
 
 Pour savoir comment placer un utilisateur en conservation, consultez les rubriques suivantes :

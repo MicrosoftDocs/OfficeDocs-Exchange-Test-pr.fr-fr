@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-04_
+_**Dernière rubrique modifiée :** 2012-10-04_
 
 Le paramètre *Identity* est un paramètre spécial que vous pouvez utiliser avec la plupart des cmdlets. Le paramètre *Identity* vous donne accès aux identificateurs uniques faisant référence à un objet particulier dans Microsoft Exchange Server 2013. Cela vous permet d’appliquer des actions à un objet Exchange 2013 spécifique.
 

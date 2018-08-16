@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-10-09_
+_**Dernière rubrique modifiée :** 2014-10-09_
 
 Une *boîte aux lettres d’équipement* est une boîte aux lettres de ressources affectée à une ressource spécifique autre qu’un emplacement, telle qu’un ordinateur portable, un projecteur, un microphone ou un véhicule de société. Après qu'un administrateur a créé une boîte aux lettres d'équipement, les utilisateurs peuvent facilement réserver un équipement donné en incluant la boîte aux lettres d'équipement correspondante dans la demande de réunion. Vous pouvez utiliser le CAE et l’environnement de ligne de commande Exchange Management Shell pour créer une boîte aux lettres d'équipement ou en modifier les propriétés. Pour plus d’informations, consultez la rubrique [Recipients](recipients-exchange-2013-help.md).
 
@@ -29,18 +29,8 @@ Pour plus d’informations sur un autre type de boîte aux lettres de ressources
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -57,18 +47,8 @@ Pour plus d’informations sur un autre type de boîte aux lettres de ressources
     
       - **\* Nom de l'équipement**   Ce champ permet de saisir le nom de l'équipement. Il s'agit du nom qui est répertorié dans la liste de boîte aux lettres de ressources dans le CAE et le carnet d'adresses de votre organisation. Ce nom est requis et il ne doit pas dépasser 64 caractères.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Même si d'autres champs décrivent les détails de la salle, par exemple, Capacité, envisagez de résumer les détails les plus importants dans le nom de l'équipement à l'aide d'une convention d'affectation des noms cohérente. Pourquoi ? Pour que les utilisateurs puissent consulter les détails facilement lorsqu'ils sélectionnent l'équipement dans le carnet d'adresses dans la demande de réunion.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]
+		> Même si d'autres champs décrivent les détails de la salle, par exemple, Capacité, envisagez de résumer les détails les plus importants dans le nom de l'équipement à l'aide d'une convention d'affectation des noms cohérente. Pourquoi ? Pour que les utilisateurs puissent consulter les détails facilement lorsqu'ils sélectionnent l'équipement dans le carnet d'adresses dans la demande de réunion.
     
       - **\* Adresse de messagerie**   Une boîte aux lettres d'équipement est dotée d'une adresse de messagerie pour lui permettre de recevoir des demandes de réservation. L'adresse courriel se compose d'un alias sur le côté gauche du symbole @, qui doit être unique dans la forêt, et votre nom de domaine sur la droite. L'adresse de courriel est requise.
 
@@ -198,18 +178,8 @@ Cette page contient également un champ que vous pouvez utiliser pour rédiger u
 
 La section **Informations sur le contact** permet d’afficher ou de modifier les informations de contact de la ressource. L'information sur cette page s'affiche dans le carnet d'adresses.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le champ <strong>État/Province</strong> permet de créer des conditions de destinataire pour des groupes de distribution dynamiques, des stratégies d'adresse de messagerie électronique ou des listes d'adresses.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Le champ <strong>État/Province</strong> permet de créer des conditions de destinataire pour des groupes de distribution dynamiques, des stratégies d'adresse de messagerie électronique ou des listes d'adresses.
 
 
 ## Adresse de messagerie
@@ -224,31 +194,11 @@ La section **Adresse de messagerie** permet d’afficher ou de modifier les adre
     
       - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone **\* Adresse de messagerie** l’un des types d’adresse de messagerie électronique non SMTP pris en charge.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>À l’exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l’adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d’adresse.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > À l’exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l’adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d’adresse.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lorsque vous ajoutez une adresse électronique, vous avez la possibilité d'en faire l'adresse SMTP principale.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Lorsque vous ajoutez une adresse électronique, vous avez la possibilité d'en faire l'adresse SMTP principale.
 
 
   - **Mettre à jour auto. les adresses selon la stratégie de destinataire   **Cochez cette case pour que les adresses de messagerie du destinataire soient automatiquement mises à jour en fonction des modifications apportées aux stratégies d’adresses de messagerie dans votre organisation.
@@ -257,18 +207,8 @@ La section **Adresse de messagerie** permet d’afficher ou de modifier les adre
 
 Dans la section **Info-courrier**, vous pouvez ajouter une info-courrier pour alerter les utilisateurs d’éventuels problèmes avant qu’ils n’envoient une demande de réservation à la boîte aux lettres d'équipement. Une info-courrier est un texte qui s’affiche dans la barre d’informations lorsque ce destinataire est ajouté aux champs À, Cc ou Cci d’un nouveau message électronique.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.
 
 
 ## Utiliser le l’environnement de ligne de commande Exchange Management Shell pour modifier les propriétés des boîtes aux lettres d'équipement

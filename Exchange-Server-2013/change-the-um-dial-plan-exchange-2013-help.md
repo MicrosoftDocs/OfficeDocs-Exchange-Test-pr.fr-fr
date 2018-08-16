@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-05_
+_**Dernière rubrique modifiée :** 2012-11-05_
 
 Dans certaines situations, vous pouvez avoir besoin de déplacer un utilisateur à extension messagerie unifiée vers un autre plan de numérotation de messagerie unifiée ou de modifier le plan de numérotation qui est associé à cet utilisateur. Vous pouvez, par exemple, vouloir déplacer un utilisateur à extension messagerie unifiée depuis un plan de numérotation des numéros de poste vers un plan de numérotation URI SIP.
 
@@ -37,36 +37,16 @@ Pour d’autres tâches de gestion relatives aux utilisateurs activés pour la m
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Comment procéder ?
 
 ## Étape 1 : Créer le nouveau plan de numérotation de messagerie unifiée
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous migrez les utilisateurs à extension messagerie unifiée vers Microsoft Office Communications Server 2007 R2 ou vers Microsoft Lync Server, vous devez d’abord créer un plan de numérotation URI SIP.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous migrez les utilisateurs à extension messagerie unifiée vers Microsoft Office Communications Server 2007 R2 ou vers Microsoft Lync Server, vous devez d’abord créer un plan de numérotation URI SIP.
 
 
 Pour plus d'informations, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](create-a-um-dial-plan-exchange-2013-help.md).
@@ -77,18 +57,8 @@ Pour plus d'informations, consultez la rubrique [Désactiver la messagerie vocal
 
 ## Étape 3 : Activez l’utilisateur pour la messagerie unifiée sur le nouveau plan de numérotation de messagerie unifiée
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous déplacez des utilisateurs vers un environnement Office Communications Server 2007 R2 ou Lync Server, vous devez également préciser un identificateur de ressources SIP pour l’utilisateur en l'activant pour la messagerie unifiée. Vous devez aussi sélectionner la stratégie de boîte aux lettres de messagerie unifiée associée à un plan de numérotation SIP.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous déplacez des utilisateurs vers un environnement Office Communications Server 2007 R2 ou Lync Server, vous devez également préciser un identificateur de ressources SIP pour l’utilisateur en l'activant pour la messagerie unifiée. Vous devez aussi sélectionner la stratégie de boîte aux lettres de messagerie unifiée associée à un plan de numérotation SIP.
 
 
 Pour plus d'informations, consultez la rubrique [Activation de la messagerie vocale pour un utilisateur](enable-a-user-for-voice-mail-exchange-2013-help.md).

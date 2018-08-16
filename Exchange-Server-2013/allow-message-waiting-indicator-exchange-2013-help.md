@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 L'indicateur de message en attente (MWI) est une fonctionnalité disponible dans la plupart des systèmes de messagerie vocale hérités. Il informe les utilisateurs de la réception de messages vocaux nouveaux ou non écoutés. Dans sa forme la plus courante, un voyant s'allume sur le téléphone d'un utilisateur pour lui signaler la présence d'un message nouveau ou non écouté.
 
@@ -91,18 +91,8 @@ Quand un appelant appelle un utilisateur à extension messagerie unifiée et que
 
 Un serveur de boîtes aux lettres utilise les informations de diversion figurant dans l'en-tête de l'appel entrant pour déterminer le numéro de poste ou de téléphone de l'utilisateur à extension messagerie unifiée. Une fois le numéro de poste ou de téléphone déterminé, le serveur de boîtes aux lettres envoie la requête à l'homologue SIP. L’homologue SIP modifie l’état de l’indicateur d’attente de messages, puis active la notification sur le téléphone de l’utilisateur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Même si les pannes de PBX sont rares, la messagerie unifiée actualise automatiquement l'état de l'indicateur de message en attente pour chaque boîte aux lettres au moins une fois toutes les 12 heures. Il n'existe aucun moyen de forcer une actualisation. Toutefois, si le PBX ou le PBX IP est mis hors tension, entraînant l'extension de tous les voyants de l'indicateur de message en attente, un délai maximal de 6 heures s'écoule avant le rétablissement de l'état approprié des voyants.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Même si les pannes de PBX sont rares, la messagerie unifiée actualise automatiquement l'état de l'indicateur de message en attente pour chaque boîte aux lettres au moins une fois toutes les 12 heures. Il n'existe aucun moyen de forcer une actualisation. Toutefois, si le PBX ou le PBX IP est mis hors tension, entraînant l'extension de tous les voyants de l'indicateur de message en attente, un délai maximal de 6 heures s'écoule avant le rétablissement de l'état approprié des voyants.
 
 
 Vue d'ensemble
@@ -284,18 +274,8 @@ Comme indiqué précédemment, une notification d'indicateur de message en atten
 
 Un SMS est envoyé sur le téléphone mobile d'un utilisateur quand un appelant laisse un nouveau message vocal. Les utilisateurs peuvent également recevoir un SMS qui les informe lorsqu’ils manquent un appel téléphonique et qu’aucun message vocal n’est laissé. Le SMS de notification d'appel en absence peut être envoyé à l'utilisateur en même temps que la notification de nouveau message vocal.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le SMS envoyé à un utilisateur comporte un aperçu du message vocal.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le SMS envoyé à un utilisateur comporte un aperçu du message vocal.
 
 
 Les notifications par SMS utilisent des paramètres différents de ceux de l'indicateur de message en attente sur la passerelle IP de messagerie unifiée ou la stratégie de boîte aux lettres de messagerie unifiée. Les notifications par SMS de nouveaux messages vocaux et d'appels manqués sont configurées dans les stratégies de boîtes aux lettres de messagerie unifiée et les boîtes aux lettres de messagerie unifiée. Vous pouvez activer ou désactiver les notifications par SMS à l'aide de la cmdlet **Set-UMMailboxPolicy** et de la cmdlet **Set-UMMailbox** dans l'environnement de ligne de commande Exchange Management Shell. Vous pouvez afficher l'état des notifications par SMS à l'aide des cmdlets **Get-UMMailboxPolicy** et **Get-UMMailbox**. Il n’est pas possible de configurer des notifications par SMS dans le Centre d’administration Exchange.
@@ -371,18 +351,8 @@ Pour que les notifications par SMS pour les messages vocaux et les appels manqu�
 
 4.  Le paramètre par défaut étant `None`, vous devez exécuter la commande suivante à partir de l'environnement de ligne de commande Exchange Management Shell et définir l'option de notification par SMS sur `VoiceMailAndMissedCalls` ou `VoiceMail`. Par exemple : `Set-UMMailbox- -id MyUMMailbox -UMSMSNotificationOption VoiceMailAndMissedCalls`.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le paramètre <em>AllowSMSNotification</em> sur la stratégie de boîte aux lettres de messagerie unifiée et le paramètre <em>UMSMSNotificationOption</em> sur la boîte aux lettres de l’utilisateur doivent avoir la valeur <code>$true</code> pour que les notifications par SMS fonctionnent.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le paramètre <em>AllowSMSNotification</em> sur la stratégie de boîte aux lettres de messagerie unifiée et le paramètre <em>UMSMSNotificationOption</em> sur la boîte aux lettres de l’utilisateur doivent avoir la valeur <code>$true</code> pour que les notifications par SMS fonctionnent.
 
 
 Outre le fait que vous configuriez la stratégie de boîte aux lettres de messagerie unifiée et la boîte aux lettres de l’utilisateur pour activer les notifications par SMS pour les nouveaux messages vocaux et les appels manqués, l’utilisateur doit activer et configurer les notifications par SMS quand il se connecte à Outlook Web App. Pour définir et configurer les notifications de message texte, il doit procéder ainsi :
@@ -393,18 +363,8 @@ Outre le fait que vous configuriez la stratégie de boîte aux lettres de messag
 
 3.  Dans la page **Messagerie texte**, cliquer sur le bouton **Activer les notifications**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Ne cliquez pas sur <strong>Notifications de messagerie vocale</strong> sinon vous reviendrez à la page <strong>Messagerie vocale</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Ne cliquez pas sur <strong>Notifications de messagerie vocale</strong> sinon vous reviendrez à la page <strong>Messagerie vocale</strong>.
 
 
 4.  Dans la page **Messagerie texte**, sous **Paramètres régionaux**, sélectionner les paramètres régionaux ou l'emplacement de l'opérateur mobile de messagerie texte dans la liste déroulante.

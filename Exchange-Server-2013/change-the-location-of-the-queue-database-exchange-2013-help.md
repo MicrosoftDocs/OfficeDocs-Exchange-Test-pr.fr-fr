@@ -1,5 +1,5 @@
 ﻿---
-title: "Modifier l'emplacement de la base de données de file d'attente: Exchange 2013 Help"
+title: 'Modif. l’emplacement de la BDD de file d’attente: Exchange 2013 Help'
 TOCTitle: Modifier l'emplacement de la base de données de file d'attente
 ms:assetid: f170cb0c-04a9-4fa7-b594-206e3a787e14
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb125177(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Une *file d'attente* est un emplacement d'hébergement temporaire pour les messages attendant de passer à l'étape suivante du traitement. Chaque file d'attente représente un ensemble logique de messages traités par un serveur de transport dans un ordre spécifique.
 

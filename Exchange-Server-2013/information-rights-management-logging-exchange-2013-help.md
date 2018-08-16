@@ -1,5 +1,5 @@
 ﻿---
-title: 'Journalisation de la gestion des droits relatifs à l’information: Exchange 2013 Help'
+title: 'Journal. de la gestion des droits relatifs à l’information: Exchange 2013 Help'
 TOCTitle: Journalisation de la gestion des droits relatifs à l’information
 ms:assetid: e06f57f9-a9e2-43a2-b88c-288b324d71f0
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff461940(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Dans Microsoft Exchange Server 2013, les opérations de gestion des droits relatifs à l'information (IRM) sont consignées dans des journaux IRM. Les journaux IRM vous permettent de contrôler et de résoudre les problèmes d’interaction entre le client RMS (Rights Management Services) sur un serveur Exchange 2013 et le cluster AD RMS (Active Directory Rights Management Services) dans votre organisation.
 

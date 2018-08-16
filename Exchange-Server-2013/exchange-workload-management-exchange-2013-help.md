@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-11-16_
+_**Dernière rubrique modifiée :** 2014-11-16_
 
 Une charge de travail Exchange est une fonctionnalité, un protocole ou un service de serveur Exchange explicitement défini à des fins de gestion des ressources système Exchange. Chaque charge de travail Exchange consomme des ressources système telles que le processeur, des opérations de base de données de boîtes aux lettres ou des requêtes Active Directory pour exécuter les demandes des utilisateurs ou des tâches en arrière-plan. Des exemples de charge de travail Exchange sont Outlook Web App, Exchange ActiveSync, la migration de boîte aux lettres et les Assistants de boîtes aux lettres.
 
 Vous gérez les charges de travail en contrôlant la manière dont les ressources sont consommées par des utilisateurs individuels (cette approche est parfois appelée « limitation utilisateur » dans Exchange 2010). Il était déjà possible de contrôler la façon dont les ressources système Exchange étaient consommées par des utilisateurs individuels dans Exchange Server 2010. Cette fonctionnalité a été étendue pour Exchange Server 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La gestion des charges de travail via le contrôle de l’état des ressources système sur les serveurs Exchange de votre organisation ne doit s’effectuer que sous la direction du Support technique et Service clientèle Microsoft.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La gestion des charges de travail via le contrôle de l’état des ressources système sur les serveurs Exchange de votre organisation ne doit s’effectuer que sous la direction du Support technique et Service clientèle Microsoft.
 
 
 ## Gestion des charges de travail en contrôlant la manière dont les ressources sont consommées par des utilisateurs individuels
@@ -93,16 +83,6 @@ Affecter des stratégies de limitation
 
   - [Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/fr-fr/library/ff459231\(v=exchg.150\))
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les cmdlets de gestion de la charge de travail système <strong>*-ResourcePolicy</strong>, <strong>*-WorkloadManagementPolicy</strong> et <strong>*-WorkloadPolicy</strong> sont déconseillées. Les paramètres de gestion de la charge de travail système ne doivent être personnalisés que sous la direction du Support technique et Service clientèle Microsoft.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les cmdlets de gestion de la charge de travail système <strong>*-ResourcePolicy</strong>, <strong>*-WorkloadManagementPolicy</strong> et <strong>*-WorkloadPolicy</strong> sont déconseillées. Les paramètres de gestion de la charge de travail système ne doivent être personnalisés que sous la direction du Support technique et Service clientèle Microsoft.
 

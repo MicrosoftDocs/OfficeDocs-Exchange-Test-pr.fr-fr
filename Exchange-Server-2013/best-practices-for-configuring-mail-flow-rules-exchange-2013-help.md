@@ -1,5 +1,5 @@
 ﻿---
-title: 'Meilleures pratiques pour la configuration de règles de flux de messagerie: Exchange 2013 Help'
+title: 'Meilleures pratiques pour la configuration de règles de flux de messagerie'
 TOCTitle: Meilleures pratiques pour la configuration de règles de flux de messagerie
 ms:assetid: abd863c3-c0ce-42f3-9470-a573adc3cbba
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn960147(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Suivez les recommandations suivantes pour Exchange afin d’éviter les erreurs de configuration courantes des règles de transport. Chaque recommandation fournit un lien vers une rubrique comportant un exemple et des instructions pas à pas.
 

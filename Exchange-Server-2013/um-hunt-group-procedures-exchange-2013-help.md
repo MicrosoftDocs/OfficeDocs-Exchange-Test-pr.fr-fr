@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-05_
+_**Dernière rubrique modifiée :** 2012-11-05_
 
 [Créer un groupement de postes de messagerie unifiée](create-a-um-hunt-group-exchange-2013-help.md)
 

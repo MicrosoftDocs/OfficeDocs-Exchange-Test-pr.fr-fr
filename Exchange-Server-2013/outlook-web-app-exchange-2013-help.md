@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Découvrez Outlook Web App, autrement connu sous le nom Outlook Web Access dans les versions de Microsoft Exchange antérieures à 2010. Cet article fournit un vue d’ensemble rapide, ainsi que des liens vers des informations utiles.
 
@@ -23,18 +23,8 @@ Par défaut, lorsque vous installez MicrosoftExchange 2013, vous activez Outloo
 
 Le rôle de serveur d’accès au client fournit des services de proxy et de redirection pour Outlook Web App.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook Web App était appelé Outlook Web Access dans les versions d’Microsoft Exchange antérieures à Exchange 2010.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Outlook Web App était appelé Outlook Web Access dans les versions d’Microsoft Exchange antérieures à Exchange 2010.
 
 
 Pour plus d’informations sur les nouvelles fonctionnalités, consultez la rubrique [Nouveautés d'Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md). Pour plus d’informations sur le rôle serveur d’accès au client dans Exchange 2013, consultez la rubrique [Serveur d’accès au client](client-access-server-exchange-2013-help.md).

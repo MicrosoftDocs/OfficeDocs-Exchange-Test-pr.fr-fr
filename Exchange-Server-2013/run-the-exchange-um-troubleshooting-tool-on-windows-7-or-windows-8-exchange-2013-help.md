@@ -1,5 +1,5 @@
 ﻿---
-title: 'Exécuter l’outil de dépannage de la messagerie unifiée Exchange sur Windows 7 ou Windows 8: Exchange 2013 Help'
+title: 'Exécuter l’outil de dépannage de la MU Exchange sur Windows 7 ou Windows 8'
 TOCTitle: Exécuter l’outil de dépannage de la messagerie unifiée Exchange sur Windows 7 ou Windows 8
 ms:assetid: 98d6869d-ee4a-4088-849d-ef75b0f5d932
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff851872(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 L’outil de dépannage de la messagerie unifiée de Microsoft Exchange 2010 est une cmdlet de l’environnement de ligne de commande Exchange Management Shell nommée **Test-ExchangeUMCallFlow**. Vous pouvez utiliser cette cmdlet pour diagnostiquer des erreurs de configuration inhérentes à des scénarios de répondeur automatique et pour tester si la messagerie vocale fonctionne correctement pour les déploiements de messagerie unifiée Microsoft Exchange Server 2010 Service Pack 1 (SP1) (ou ultérieur) locaux et entre différents locaux à la fois. Vous pouvez vous servir de cette cmdlet pour des déploiements avec Microsoft Office Lync Server 2010 (ou ultérieur) ou pour des déploiements de messagerie unifiée avec des passerelles VoIP, des PBX IP ou des contrôleurs de frontière de session.
 
@@ -41,7 +41,7 @@ L’outil de dépannage de la messagerie unifiée de Microsoft Exchange 2010 es
     
       - Si l’outil est destiné à être utilisé sur un ordinateur Windows Vista ou Windows Server 2008, consultez la rubrique [Mises à jour Microsoft .NET Framework 3.5 (Family Update) pour Windows Vista x64 et Windows Server 2008 x64](https://go.microsoft.com/fwlink/?linkid=178998).
     
-      - Gestion à distance de Windows(WinRM) 2.0 et Windows PowerShell V2 (Windows6.0-KB968930.msu). Consultez l’article 968930 de la base de connaissances Microsoft, [Package central de Framework de gestion Windows (Windows PowerShell 2.0 et 2.0 de WinRM)](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930).
+      - Gestion à distance de Windows(WinRM) 2.0 et Windows PowerShell V2 (Windows6.0-KB968930.msu). Consultez l’article 968930 de la base de connaissances Microsoft, [Package central de Framework de gestion Windows (Windows PowerShell 2.0 et 2.0 de WinRM)](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930).
     
       - Microsoft Unified Communications Managed API 2.0 Core Runtime (UcmaRuntimeWebDownloadX64.msi). Consultez la rubrique [Unified Communications Managed API 2.0, Core Runtime (64 bits)](https://go.microsoft.com/fwlink/p/?linkid=198175).
 
@@ -51,34 +51,14 @@ L’outil de dépannage de la messagerie unifiée de Microsoft Exchange 2010 es
     
       - Installez l’outil. Pour plus d’informations, voir [Installer l’outil de dépannage de la messagerie unifiée Exchange](install-the-exchange-um-troubleshooting-tool-exchange-2013-help.md).
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Si vous envisagez d’utiliser l’outil de dépannage de la messagerie unifiée en mode <code>SIPClient</code>, plusieurs autres conditions doivent être satisfaites concernant Office Communications Server 2007 R2 ou Microsoft Lync Server. Pour plus d’informations, consultez les rubriques <a href="https://go.microsoft.com/fwlink/p/?linkid=311961">Liste de vérification : Déploiement d’Office Communications Server 2007 R2 et d’une messagerie unifiée Exchange 2010</a>.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Si vous envisagez d’utiliser l’outil de dépannage de la messagerie unifiée en mode <code>SIPClient</code>, plusieurs autres conditions doivent être satisfaites concernant Office Communications Server 2007 R2 ou Microsoft Lync Server. Pour plus d’informations, consultez les rubriques <a href="https://go.microsoft.com/fwlink/p/?linkid=311961">Liste de vérification : Déploiement d’Office Communications Server 2007 R2 et d’une messagerie unifiée Exchange 2010</a>.
 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Exécuter l’outil de dépannage de la messagerie unifiée sur Windows Vista, Windows 7 ou Windows 8

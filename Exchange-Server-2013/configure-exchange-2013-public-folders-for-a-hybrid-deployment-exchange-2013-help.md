@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer les dossiers publics Exchange 2013 pour un déploiement hybride: Exchange 2013 Help'
+title: 'Configurer les dossiers publics Exchange 2013 pour un déploiement hybride'
 TOCTitle: Configurer les dossiers publics Exchange 2013 pour un déploiement hybride
 ms:assetid: b828520f-022c-4fcb-ab68-e1c330e87c33
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn986544(v=EXCHG.150)
@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 **Résumé** : Instructions permettant aux utilisateurs Exchange Online d’accéder aux dossiers publics en local dans votre environnement Exchange 2013.
 
 Dans un déploiement hybride, vos utilisateurs peuvent être dans un environnement Exchange Online, en local ou les deux, et vos dossiers publics peuvent se situer dans Exchange Online ou en local. Parfois, les utilisateurs en ligne peuvent avoir besoin d’accéder aux dossiers publics situés dans votre environnement local Exchange Server 2013. De même, les utilisateurs d’Exchange 2013 peuvent avoir besoin d’accéder aux dossiers publics dans Office 365 ou Exchange Online.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous avez des dossiers publics Exchange 2010 ou Exchange 2007, voir <a href="configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md">Configurer des dossiers publics locaux hérités dans le cadre d’un déploiement hybride</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous avez des dossiers publics Exchange 2010 ou Exchange 2007, voir <a href="configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md">Configurer des dossiers publics locaux hérités dans le cadre d’un déploiement hybride</a>.
 
 
 Cet article décrit la façon de permettre à vos utilisateurs Exchange Online/Office 365 d’accéder aux dossiers publics dans Exchange 2013. Pour permettre aux utilisateurs Exchange 2013 en local d’accéder aux dossiers publics dans Exchange Online, voir [Configurer les dossiers publics Exchange Online pour un déploiement hybride](configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md).
@@ -55,18 +45,8 @@ Un utilisateur Exchange Online/Office 365 doit être représenté par un objet
 
 5.  Outlook 2011 pour Mac et Outlook pour Mac pour Office 365 ne sont pas pris en charge pour les dossiers publics entre les sites. Les utilisateurs doivent se trouver au même emplacement que les dossiers publics pour pouvoir y accéder avec Outlook 2011 pour Mac ou Outlook pour Mac pour Office 365. De plus, les utilisateurs dont les boîtes aux lettres sont dans Exchange Online ne peuvent pas accéder aux dossiers publics locaux avec Outlook Web App.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Outlook 2016 pour Mac est pris en charge pour les dossiers publics intersites. Si les clients de votre organisation utilisent Outlook 2016 pour Mac, assurez-vous qu’ils ont installé la mise à jour d’avril 2016. Dans le cas contraire, ces utilisateurs ne seront pas en mesure d’accéder aux dossiers publics dans une topologie hybride. Pour plus d’informations, voir <a href="accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md">Accès aux dossiers publics avec Outlook 2016 pour Mac</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Outlook 2016 pour Mac est pris en charge pour les dossiers publics intersites. Si les clients de votre organisation utilisent Outlook 2016 pour Mac, assurez-vous qu’ils ont installé la mise à jour d’avril 2016. Dans le cas contraire, ces utilisateurs ne seront pas en mesure d’accéder aux dossiers publics dans une topologie hybride. Pour plus d’informations, voir <a href="accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md">Accès aux dossiers publics avec Outlook 2016 pour Mac</a>.
 
 
 ## Étape 1 : téléchargement des scripts
@@ -83,18 +63,8 @@ Un utilisateur Exchange Online/Office 365 doit être représenté par un objet
 
 Le service de synchronisation d’annuaires ne synchronise pas les dossiers publics à extension messagerie. Les scripts suivants synchronisent les dossiers publics à extension messagerie dans plusieurs sites et Office 365. Les autorisations particulières attribuées aux dossiers publics à extension messagerie doivent être recréées dans le cloud, car les autorisations inter-sites ne sont pas prises en charge dans les scénarios de déploiement hybride. Pour plus d’informations, voir [Déploiements hybrides Exchange Server 2013](https://technet.microsoft.com/fr-fr/59e32000-4fcf-417f-a491-f1d8f9aeef9b\(exchg.150\)#doc).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les dossiers publics à extension messagerie synchronisés apparaissent en tant qu’objets de contact de messagerie à des fins de flux de messagerie et ne sont pas consultables dans le Centre d’administration Exchange. Reportez-vous à la commande Get-MailPublicFolder. Pour recréer les autorisations SendAs dans le cloud, utilisez la commande Add-RecipientPermission.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les dossiers publics à extension messagerie synchronisés apparaissent en tant qu’objets de contact de messagerie à des fins de flux de messagerie et ne sont pas consultables dans le Centre d’administration Exchange. Reportez-vous à la commande Get-MailPublicFolder. Pour recréer les autorisations SendAs dans le cloud, utilisez la commande Add-RecipientPermission.
 
 
 1.  Sur le serveur Exchange 2013, exécutez la commande suivante pour synchroniser les dossiers publics à extension messagerie à partir de votre annuaire Active Directory local vers O365.
@@ -103,19 +73,9 @@ Le service de synchronisation d’annuaires ne synchronise pas les dossiers publ
     
     Où `Credential` est votre nom d’utilisateur et votre mot de passe Office 365 et `CsvSummaryFile` est le chemin d’accès de l’emplacement où vous voulez journaliser les opérations et les erreurs de synchronisation au format .csv.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avant d’exécuter le script, nous vous recommandons de commencer par simuler les actions du script dans votre environnement en l’exécutant comme décrit ci-dessus avec le paramètre <code>-WhatIf</code>.<br />
-Nous vous recommandons également d’exécuter ce script quotidiennement pour synchroniser vos dossiers publics à extension messagerie.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Avant d’exécuter le script, nous vous recommandons de commencer par simuler les actions du script dans votre environnement en l’exécutant comme décrit ci-dessus avec le paramètre <code>-WhatIf</code>.
+> Nous vous recommandons également d’exécuter ce script quotidiennement pour synchroniser vos dossiers publics à extension messagerie.
 
 
 ## Étape 3 : configuration des utilisateurs Exchange Online pour l’accès aux dossiers publics locaux Exchange 2013
@@ -126,18 +86,8 @@ Autorisez l’organisation Exchange Online à accéder aux dossiers publics en 
 
     Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes PFMailbox1,PFMailbox2,PFMailbox3
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour voir les modifications, vous devez attendre que la synchronisation ActiveDirectory soit terminée. Ce processus peut prendre jusqu’à 3 heures. Si vous ne souhaitez pas attendre les synchronisations récurrentes qui se produisent toutes les trois heures, vous pouvez forcer la synchronisation d’annuaire à tout moment. Pour obtenir des instructions détaillées permettant de forcer la synchronisation d’annuaire, consultez la rubrique <a href="http://technet.microsoft.com/fr-fr/library/jj151771.aspx">Synchroniser mes annuaires</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour voir les modifications, vous devez attendre que la synchronisation ActiveDirectory soit terminée. Ce processus peut prendre jusqu’à 3 heures. Si vous ne souhaitez pas attendre les synchronisations récurrentes qui se produisent toutes les trois heures, vous pouvez forcer la synchronisation d’annuaire à tout moment. Pour obtenir des instructions détaillées permettant de forcer la synchronisation d’annuaire, consultez la rubrique <a href="http://technet.microsoft.com/fr-fr/library/jj151771.aspx">Synchroniser mes annuaires</a>.
 
 
 ## Comment savoir si cela a fonctionné ?

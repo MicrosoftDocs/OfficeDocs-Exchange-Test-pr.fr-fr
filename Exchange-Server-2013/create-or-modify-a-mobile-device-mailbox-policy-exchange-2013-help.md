@@ -1,5 +1,5 @@
 ﻿---
-title: 'Créer ou modifier une stratégie de boîte aux lettres de périphériques mobiles: Exchange 2013 Help'
+title: 'Créer ou modifier une stratégie de BAL de périph. mobiles: Exchange 2013 Help'
 TOCTitle: Créer ou modifier une stratégie de boîte aux lettres de périphériques mobiles
 ms:assetid: b4a37a81-25e3-40ff-a18a-a62ae4493635
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124315(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-16_
+_**Dernière rubrique modifiée :** 2012-10-16_
 
 Une stratégie de boîte aux lettres de périphérique mobile vous permet d’appliquer un ensemble commun de paramètres de sécurité et de périphériques mobiles à un groupe d’utilisateurs. Vous pouvez créer plusieurs stratégies de boîte aux lettres de périphérique mobile. Une stratégie de boîte aux lettres d'appareils mobiles doit être attribuée à chaque destinataire de votre organisation. Quand vous installez Microsoft Exchange Server 2013, une stratégie de boîte aux lettres d'appareils mobiles par défaut est créée et est automatiquement attribuée aux nouveaux utilisateurs. Pour attribuer une stratégie de boîte aux lettres d'appareils mobiles à des utilisateurs spécifiques, voir [Ajouter ou supprimer des utilisateurs d'une stratégie de boîte aux lettres de périphériques mobiles](add-or-remove-users-from-a-mobile-mailbox-policy-exchange-2013-help.md).
 
@@ -29,18 +29,8 @@ Pour plus d'informations sur les stratégies de boîte aux lettres d'appareils m
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -55,36 +45,16 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Vous pouvez créer une stratégie de boîte aux lettres d'appareils mobiles via le CAE.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez uniquement définir un sous-ensemble de paramètres de stratégie de boîte aux lettres d'appareils mobiles dans le CAE. Pour configurer tous les paramètres de stratégie de boîte aux lettres d'appareils mobiles, vous devez utiliser l'environnement de ligne de commande Exchange Management Shell.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez uniquement définir un sous-ensemble de paramètres de stratégie de boîte aux lettres d'appareils mobiles dans le CAE. Pour configurer tous les paramètres de stratégie de boîte aux lettres d'appareils mobiles, vous devez utiliser l'environnement de ligne de commande Exchange Management Shell.
 
 
 1.  Dans le CAE, cliquez sur **Mobile** \> **Stratégies de boîte aux lettres d'appareils mobiles**, puis sur **Nouveau**.
 
 2.  Utilisez les différentes cases à cocher et listes déroulantes pour configurer les paramètres de la stratégie de boîte aux lettres d'appareils mobiles.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Sélectionnez <strong>Il s'agit de la stratégie par défaut</strong> pour que la stratégie de boîte aux lettres d'appareils mobiles soit celle par défaut. Après avoir fait d'une stratégie de boîte aux lettres d'appareils mobiles celle par défaut, tous les nouveaux utilisateurs se verront attribuer automatiquement cette stratégie au moment de leur création.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Sélectionnez <strong>Il s'agit de la stratégie par défaut</strong> pour que la stratégie de boîte aux lettres d'appareils mobiles soit celle par défaut. Après avoir fait d'une stratégie de boîte aux lettres d'appareils mobiles celle par défaut, tous les nouveaux utilisateurs se verront attribuer automatiquement cette stratégie au moment de leur création.
 
 
 3.  Cliquez sur **Enregistrer**.
@@ -93,18 +63,8 @@ Vous pouvez créer une stratégie de boîte aux lettres d'appareils mobiles via 
 
 Vous créez une stratégie de boîte aux lettres d'appareils mobiles à l'aide de la cmdlet New-MobileDeviceMailboxPolicy.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Deux cmdlets peuvent vous permettre de créer une stratégie de boîte aux lettres d'appareils mobiles. Les cmdlets <strong>New-ActiveSyncMailboxPolicy</strong> et <strong>New-MobileDeviceMailboxPolicy</strong> effectuent des tâches identiques. Dans une version future de Microsoft Exchange Server, la cmdlet <strong>New-ActiveSyncMailboxPolicy</strong> sera supprimée. Nous vous recommandons de mettre à jour vos scripts et procédures pour utiliser la cmdlet <strong>New-MobileDeviceMailboxPolicy</strong>.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Deux cmdlets peuvent vous permettre de créer une stratégie de boîte aux lettres d'appareils mobiles. Les cmdlets <strong>New-ActiveSyncMailboxPolicy</strong> et <strong>New-MobileDeviceMailboxPolicy</strong> effectuent des tâches identiques. Dans une version future de Microsoft Exchange Server, la cmdlet <strong>New-ActiveSyncMailboxPolicy</strong> sera supprimée. Nous vous recommandons de mettre à jour vos scripts et procédures pour utiliser la cmdlet <strong>New-MobileDeviceMailboxPolicy</strong>.
 
 
 1.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
@@ -131,18 +91,8 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Vous pouvez modifier une stratégie de boîte aux lettres d'appareils mobiles via le CAE.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez uniquement modifier un sous-ensemble de paramètres de stratégie de boîte aux lettres d'appareils mobiles dans le CAE. Pour modifier tous les paramètres de stratégie de boîte aux lettres d'appareils mobiles, vous devez utiliser l'environnement de ligne de commande Exchange Management Shell.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez uniquement modifier un sous-ensemble de paramètres de stratégie de boîte aux lettres d'appareils mobiles dans le CAE. Pour modifier tous les paramètres de stratégie de boîte aux lettres d'appareils mobiles, vous devez utiliser l'environnement de ligne de commande Exchange Management Shell.
 
 
 1.  Dans le CAE, cliquez sur **Mobile** \> **Stratégies de boîte aux lettres d'appareils mobiles**.
@@ -157,18 +107,8 @@ Vous pouvez modifier une stratégie de boîte aux lettres d'appareils mobiles vi
 
 Vous pouvez utiliser l'environnement de ligne de commande Exchange Management Shell pour modifier une stratégie de boîte aux lettres d'appareils mobiles.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Deux cmdlets peuvent vous permettre de modifier une stratégie de boîte aux lettres d'appareils mobiles. Les cmdlets Set-ActiveSyncMailboxPolicy et Set-MobileDeviceMailboxPolicy effectuent des tâches identiques. Dans une version future de Microsoft Exchange Server, la cmdlet <strong>Set-ActiveSyncMailboxPolicy</strong> sera supprimée. Nous vous recommandons de mettre à jour vos scripts et procédures pour utiliser la cmdlet <strong>Set-MobileDeviceMailboxPolicy</strong>.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Deux cmdlets peuvent vous permettre de modifier une stratégie de boîte aux lettres d'appareils mobiles. Les cmdlets Set-ActiveSyncMailboxPolicy et Set-MobileDeviceMailboxPolicy effectuent des tâches identiques. Dans une version future de Microsoft Exchange Server, la cmdlet <strong>Set-ActiveSyncMailboxPolicy</strong> sera supprimée. Nous vous recommandons de mettre à jour vos scripts et procédures pour utiliser la cmdlet <strong>Set-MobileDeviceMailboxPolicy</strong>.
 
 
 1.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.

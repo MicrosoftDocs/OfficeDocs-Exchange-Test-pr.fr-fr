@@ -1,5 +1,5 @@
 ﻿---
-title: 'Format d’adressage SMTP non pris en charge_SMTPAddressLiteral: Exchange 2013 Help'
+title: 'Form. d’adress. SMTP non pris en charge_SMTPAddressLiteral: Exchange 2013 Help'
 TOCTitle: Format d’adressage SMTP non pris en charge_SMTPAddressLiteral
 ms:assetid: b8b55917-d81f-4c0a-ad65-7bb10ac58df8
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.smtpaddressliteral(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 

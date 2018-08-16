@@ -1,5 +1,5 @@
 ﻿---
-title: 'Déplacer la boîte aux lettres système Exchange 2010 vers Exchange 2013: Exchange 2013 Help'
+title: 'Déplacer la BAL système Exchange 2010 vers Exchange 2013: Exchange 2013 Help'
 TOCTitle: Déplacer la boîte aux lettres système Exchange 2010 vers Exchange 2013
 ms:assetid: a3b03c4e-0bc7-41a2-885c-e9cac37566c8
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn249849(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Dans Exchange 2010, la boîte aux lettres système Microsoft Exchange est une boîte aux lettres d’arbitrage permettant de stocker les données à l’échelle de l’organisation, telles que les journaux d’audit de l’administrateur, les métadonnées des recherches de découverte électronique, ainsi que les données de messagerie unifiée, telles que les menus, les plans de numérotation et les messages d’accueil personnalisés. La boîte aux lettres système Microsoft Exchange est nommée **SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}** ; le nom complet est **Microsoft Exchange**.
 
@@ -47,18 +47,8 @@ Pour plus d’informations sur la mise à niveau vers Exchange 2013, consultez 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

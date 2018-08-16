@@ -1,5 +1,5 @@
 ﻿---
-title: 'Suppression d’une recherche de découverte électronique inaltérable: Exchange 2013 Help'
+title: 'Supprimer une recherche de découverte électr. inaltérable: Exchange 2013 Help'
 TOCTitle: Suppression d’une recherche de découverte électronique inaltérable
 ms:assetid: 78461a78-1255-4a26-9d36-c6b8eb82a4f9
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd298078(v=EXCHG.150)
@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-07-14_
+_**Dernière rubrique modifiée :** 2014-07-14_
 
 Dans Microsoft Exchange Server 2013, vous pouvez utiliser la découverte électronique locale pour rechercher un contenu de boîte aux lettres. Vous pouvez supprimer une recherche de découverte électronique locale à tout moment. Lorsque vous supprimez une recherche de découverte électronique locale, les résultats de recherche sont supprimés de la boîte aux lettres de découverte.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La suppression d'une recherche de découverte électronique locale supprime les résultats de recherche copiés vers une boîte aux lettres de découverte.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> La suppression d'une recherche de découverte électronique locale supprime les résultats de recherche copiés vers une boîte aux lettres de découverte.
 
 
 ## Ce qu'il faut savoir avant de commencer
@@ -63,16 +53,6 @@ Pour vérifier que vous avez correctement supprimé une recherche de découverte
 
   - Exemples
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

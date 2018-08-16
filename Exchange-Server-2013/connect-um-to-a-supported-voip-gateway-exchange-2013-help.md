@@ -1,5 +1,5 @@
 ﻿---
-title: 'Connecter la messagerie unifiée à une passerelle VoIP pris en charge: Exchange 2013 Help'
+title: 'Connecter la MU à une passerelle VoIP prise en charge: Exchange 2013 Help'
 TOCTitle: Connecter la messagerie unifiée à une passerelle VoIP pris en charge
 ms:assetid: b8dfc8bd-2ee5-418d-b0a4-4fa2ec7e2a2e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124360(v=EXCHG.150)
@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-19_
+_**Dernière rubrique modifiée :** 2013-04-19_
 
 Lorsque vous installez une messagerie unifiée, vous devez configurer les passerelles VoIP (Voice over IP), les PBX IP, les PBX compatibles SIP ou les contrôleurs de frontière de session (SBC) sur votre réseau pour communiquer avec les serveurs d'accès au client qui exécutent le service routeur des appels de messagerie unifiée Microsoft Exchange et les serveurs de boîtes aux lettres qui exécutent le service de messagerie unifiée de votre organisation Exchange. Vous devez également configurer des serveurs d'accès au client et de boîtes aux lettres pour communiquer avec des passerelles VoIP, des PBX IP, des PBX compatibles SIP ou des contrôleurs de frontière de session (SBC).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Après avoir connecté vos serveurs d'accès au client et de boîtes aux lettres aux passerelles VoIP, PBX IP, PBX compatibles SIP ou contrôleurs de frontière de session (SBC) sur votre réseau de données, vous devez créer les composants de messagerie unifiée requis et activer la messagerie unifiée pour les utilisateurs pour qu'ils puissent utiliser le système de messagerie vocale.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Après avoir connecté vos serveurs d'accès au client et de boîtes aux lettres aux passerelles VoIP, PBX IP, PBX compatibles SIP ou contrôleurs de frontière de session (SBC) sur votre réseau de données, vous devez créer les composants de messagerie unifiée requis et activer la messagerie unifiée pour les utilisateurs pour qu'ils puissent utiliser le système de messagerie vocale.
 
 
 ## Étapes

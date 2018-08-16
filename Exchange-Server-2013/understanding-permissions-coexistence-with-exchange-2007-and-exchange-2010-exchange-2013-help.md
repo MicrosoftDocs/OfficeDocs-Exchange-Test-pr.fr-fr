@@ -1,5 +1,5 @@
 ﻿---
-title: 'Présentation de la coexistence des autorisations dans Exchange 2007 et Exchange 2010: Exchange 2013 Help'
+title: 'Coexistence des autorisations dans Exchange 2007 et Exchange 2010'
 TOCTitle: Présentation de la coexistence des autorisations dans Exchange 2007 et Exchange 2010
 ms:assetid: 28ab1433-23ee-4914-8f21-9a32578792e5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd335157(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Quand vous installez Microsoft Exchange Server 2013 dans une organisation Microsoft Exchange Server 2010 ou Microsoft Exchange Server 2007 existante, vous devez comprendre le fonctionnement des autorisations dans la nouvelle organisation. Consultez la section ci-dessous qui s'applique à votre organisation.
 
@@ -251,18 +251,8 @@ Pour plus d'informations sur la procédure de gestion des autorisations dans Exc
 
 Si vous souhaitez que les administrateurs Exchange 2007 gèrent des serveurs Exchange 2013, vous devez ajouter les administrateurs Exchange 2007 en tant que membres d'un ou de plusieurs groupes de rôles Exchange 2013. Vous pouvez ajouter soit des utilisateurs, soit des groupes universels de sécurité à des groupes de rôles. Les autorisations accordées aux groupes de rôles sont ensuite appliquées aux utilisateurs ou aux groupes universels de sécurité que vous avez ajoutés en tant que membres.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous utilisez des groupes de sécurité Active Directory globaux ou de domaine local, vous devez les redéfinir en tant que groupes universels de sécurité si votre intention est de les ajouter comme membres d'un groupe de rôles Exchange 2013. Exchange 2013 prend uniquement en charge les groupes universels de sécurité.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous utilisez des groupes de sécurité Active Directory globaux ou de domaine local, vous devez les redéfinir en tant que groupes universels de sécurité si votre intention est de les ajouter comme membres d'un groupe de rôles Exchange 2013. Exchange 2013 prend uniquement en charge les groupes universels de sécurité.
 
 
 Le tableau suivant décrit le mappage entre les rôles d'administrateur Exchange 2007 et les groupes de rôles Exchange 2013.
@@ -326,18 +316,8 @@ Si vous modifiez des listes de contrôle d'accès dans des objets Exchange 2007
 
 Une fois ces étapes terminées, les administrateurs Exchange 2007 seront membres du groupe de rôles spécifique qui est mappé aux objets Exchange 2013 appropriés. Les administrateurs Exchange 2007 peuvent faire appel aux outils de gestion Exchange 2013 pour gérer les serveurs et les destinataires Exchange 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>En règle générale, la gestion des serveurs et des destinataires Exchange 2007 doit être effectuée au moyen des outils de gestion Exchange 2007. En revanche, celle des serveurs et des destinataires Exchange 2013 doit être accomplie à l'aide des outils de gestion Exchange 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> En règle générale, la gestion des serveurs et des destinataires Exchange 2007 doit être effectuée au moyen des outils de gestion Exchange 2007. En revanche, celle des serveurs et des destinataires Exchange 2013 doit être accomplie à l'aide des outils de gestion Exchange 2013.
 
 
 Si les groupes de rôles intégrés ne vous procurent pas l'ensemble précis des autorisations que vous souhaitez accorder à certains administrateurs, vous pouvez créer des groupes de rôles personnalisés. Lorsque vous créez un groupe de rôle personnalisé, vous pouvez choisir les rôles que vous souhaitez y ajouter. Vous pouvez définir les fonctionnalités spécifiques dont vous souhaitez confier la gestion aux membres du groupe de rôles. Par exemple, si vous voulez que seuls les administrateurs gèrent les groupes de distribution, créez un groupe de rôles personnalisé, puis sélectionnez uniquement le rôle Groupes de distribution. Les membres de ce groupe de rôles personnalisé ne pourront plus alors gérer que des groupes de distribution. Pour plus d'informations sur la création de groupes de rôles personnalisés, consultez la rubrique [Gérer des groupes de rôles](manage-role-groups-exchange-2013-help.md).

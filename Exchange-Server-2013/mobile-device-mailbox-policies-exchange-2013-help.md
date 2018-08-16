@@ -13,38 +13,18 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-06-16_
+_**Dernière rubrique modifiée :** 2016-06-16_
 
 Dans MicrosoftExchange Server 2013, vous pouvez créer des stratégies de boîte aux lettres d’appareil mobile pour appliquer un ensemble commun de stratégies ou de paramètres de sécurité à un ensemble d’utilisateurs. Après avoir déployé Exchange ActiveSync dans votre organisation Exchange 2013, vous pouvez créer des stratégies de boîte aux lettres d'appareil mobile ou modifier des stratégies existantes. Une stratégie de boîte aux lettres d'appareil mobile par défaut est créée lors de l'installation d'Exchange 2013. Cette stratégie de boîte aux lettres d'appareil mobile par défaut est automatiquement attribuée à tous les utilisateurs.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les téléphones mobiles Windows Phone 7 ne prennent en charge qu'un sous-ensemble de tous les paramètres de stratégie de boîte aux lettres Exchange ActiveSync. Pour une liste complète, consultez la rubrique Synchronisation de Windows Phone 7.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les téléphones mobiles Windows Phone 7 ne prennent en charge qu'un sous-ensemble de tous les paramètres de stratégie de boîte aux lettres Exchange ActiveSync. Pour une liste complète, consultez la rubrique Synchronisation de Windows Phone 7.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le lecteur d’empreintes digitales d’iOS7 n’est pas pris en charge comme mot de passe d’appareil. Si vous activez le lecteur d’empreintes digitales pour sécuriser votre appareil iOS7, vous devrez tout de même créer et entrer un mot de passe si les stratégies de boîte aux lettres de votre appareil mobile en exigent un.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Le lecteur d’empreintes digitales d’iOS7 n’est pas pris en charge comme mot de passe d’appareil. Si vous activez le lecteur d’empreintes digitales pour sécuriser votre appareil iOS7, vous devrez tout de même créer et entrer un mot de passe si les stratégies de boîte aux lettres de votre appareil mobile en exigent un.
 
 
 ## Présentation des stratégies de boîte aux lettres d'appareil mobile

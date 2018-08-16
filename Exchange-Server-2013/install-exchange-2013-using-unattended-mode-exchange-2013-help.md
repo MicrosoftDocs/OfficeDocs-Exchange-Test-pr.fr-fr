@@ -13,41 +13,21 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-06-19_
+_**Dernière rubrique modifiée :** 2014-06-19_
 
 Pour effectuer une installation sans assistance, vous devez installer Microsoft Exchange Server 2013 depuis l'invite de commandes. Pour de plus amples informations sur la planification et le déploiement d'Exchange 2013, consultez la rubrique [Planification et déploiement](planning-and-deployment-for-exchange-2013-installation-instructions.md).
 
 Nous recommandons d’installer le rôle de transport Edge dans un réseau de périmètre extérieur à la forêt interne de votre organisation Active Directory. Bien que vous puissiez installer le rôle serveur de transport Edge sur un ordinateur joint à un domaine, cette configuration vous permettrait uniquement de gérer les fonctionnalités et les paramètres Windows. Le rôle de transport Edge n’utilise pas Active Directory. Par contre, il utilise la fonctionnalité Active Directory AD LDS (Lightweight Directory Services) Windows pour stocker la configuration et les informations de destinataire. Pour plus d’informations sur le rôle de transport Edge, consultez la rubrique [Serveurs de transport Edge](edge-transport-servers-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avez-vous déjà entendu parler de l’Assistant de déploiement Exchange Server ? Il s’agit d’un outil en ligne gratuit qui vous permet de déployer rapidement Exchange 2013 dans votre organisation en répondant à quelques questions et en créant une liste de contrôle de déploiement personnalisée. Pour en savoir plus, consultez la page <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Assistant de déploiement Exchange Server</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Avez-vous déjà entendu parler de l’Assistant de déploiement Exchange Server ? Il s’agit d’un outil en ligne gratuit qui vous permet de déployer rapidement Exchange 2013 dans votre organisation en répondant à quelques questions et en créant une liste de contrôle de déploiement personnalisée. Pour en savoir plus, consultez la page <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Assistant de déploiement Exchange Server</a>.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Après avoir installé des rôles serveur sur un ordinateur exécutant Exchange 2013, il n'est plus possible d'utiliser l'Assistant Installation d'Exchange 2013 pour ajouter des rôles serveur à cet ordinateur. Pour ajouter des rôles serveur supplémentaires à un ordinateur, vous devez utiliser la fonctionnalité Ajout/Suppression de programmes du Panneau de configuration ou la commande Setup.exe depuis une fenêtre d'invite de commandes.<br />
-Le rôle de transport Edge ne peut pas être installé sur le même ordinateur que les rôles serveur de boîtes aux lettres ou d’accès au client.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Après avoir installé des rôles serveur sur un ordinateur exécutant Exchange 2013, il n'est plus possible d'utiliser l'Assistant Installation d'Exchange 2013 pour ajouter des rôles serveur à cet ordinateur. Pour ajouter des rôles serveur supplémentaires à un ordinateur, vous devez utiliser la fonctionnalité Ajout/Suppression de programmes du Panneau de configuration ou la commande Setup.exe depuis une fenêtre d'invite de commandes.
+> Le rôle de transport Edge ne peut pas être installé sur le même ordinateur que les rôles serveur de boîtes aux lettres ou d’accès au client.
 
 
 Pour plus d'informations sur les tâches postérieures à l'installation, consultez la rubrique [Tâches consécutives à l’installation d’Exchange 2013](exchange-2013-post-installation-tasks-exchange-2013-help.md).
@@ -64,18 +44,8 @@ Les informations suivantes s’appliquent à tous les rôles serveur Exchange 2
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Après avoir installé Exchange sur un serveur, vous ne devez pas modifier le nom du serveur. La modification du nom d’un serveur après avoir installé un rôle de serveur Exchange n’est pas prise en charge.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Après avoir installé Exchange sur un serveur, vous ne devez pas modifier le nom du serveur. La modification du nom d’un serveur après avoir installé un rôle de serveur Exchange n’est pas prise en charge.
 
 
 Les informations suivantes s’appliquent aux rôles serveur de boîtes aux lettres et d’accès au client Exchange 2013.
@@ -104,18 +74,8 @@ Les informations suivantes s’appliquent au rôle serveur de transport Edge Exc
 
 ## Utilisez Setup.exe pour installer Exchange 2013 en mode sans assistance
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour télécharger la dernière version d’Exchange 2013, voir <a href="updates-for-exchange-2013-exchange-2013-help.md">Mises à jour pour Exchange 2013</a></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour télécharger la dernière version d’Exchange 2013, voir <a href="updates-for-exchange-2013-exchange-2013-help.md">Mises à jour pour Exchange 2013</a>
 
 
 1.  Connectez-vous à l'ordinateur sur lequel vous voulez installer Exchange 2013.
@@ -124,18 +84,8 @@ Les informations suivantes s’appliquent au rôle serveur de transport Edge Exc
 
 3.  À l'invite de commandes, exécutez la commande applicable à votre organisation.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si le contrôle de compte d'utilisateur est activé, vous devez exécuter <code>Setup.exe</code> à partir d'une invite de commandes élevée.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si le contrôle de compte d'utilisateur est activé, vous devez exécuter <code>Setup.exe</code> à partir d'une invite de commandes élevée.
     
         Setup.exe [/Mode:<setup mode>] [/IAcceptExchangeServerLicenseTerms]
         [/Roles:<server roles to install>] [/InstallWindowsComponents] 

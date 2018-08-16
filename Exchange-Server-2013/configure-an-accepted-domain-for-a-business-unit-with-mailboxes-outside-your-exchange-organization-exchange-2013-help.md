@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer un domaine accepté pour une unité commerciale avec des boîtes aux lettres à l’extérieur de votre organisation Exchange: Exchange 2013 Help'
+title: 'Config. domaine accepté pr 1 unité cciale avec BAL à l’ext. de l’org. Exchange'
 TOCTitle: Configurer un domaine accepté pour une unité commerciale avec des boîtes aux lettres à l’extérieur de votre organisation Exchange
 ms:assetid: ff46310b-5392-4eac-97bc-d39d397e1ce1
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ657737(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-08-06_
+_**Dernière rubrique modifiée :** 2014-08-06_
 
 Dans certaines instances, vous voudrez peut-être configurer un domaine accepté pour une division dans laquelle certains destinataires, ou tous, dans le domaine ne disposent pas de boîtes aux lettres dans votre organisation Exchange. Cela peut se produire, par exemple, lorsqu'une organisation partage le même espace d’adressage SMTP avec plusieurs systèmes de messagerie différents. Dans ces cas, vous pouvez configurer un domaine accepté en tant que domaine de relais interne.
 
@@ -31,18 +31,8 @@ Dans certaines instances, vous voudrez peut-être configurer un domaine accepté
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser le Centre d’administration Exchange (CAE) pour configurer un domaine accepté comme domaine de relais interne

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Ne figure pas dans le domaine/site du contrôleur de schéma_NotInSchemaMasterSite: Exchange 2013 Help'
+title: 'Ne figure pas dans le domaine/site du contrôleur de schéma: Exchange 2013 Help'
 TOCTitle: Ne figure pas dans le domaine/site du contrôleur de schéma_NotInSchemaMasterSite
 ms:assetid: 3aafd22a-d0f0-4120-a325-886fb2eb43ef
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.notinschemamastersite(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 
@@ -37,19 +37,9 @@ Pour afficher le contrôleur de schéma actuel
 
 1.  À l’invite de commandes, tapez **regsvr32 schmmgmt.dll**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>RegSvr32</strong> est enregistré lorsque la boîte de dialogue suivante s’affiche :<br />
-    DllRegisterServer in schmmgmt.dll succeeded.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > <strong>RegSvr32</strong> est enregistré lorsque la boîte de dialogue suivante s’affiche :
+    > DllRegisterServer in schmmgmt.dll succeeded.
 
 
 2.  Pour ouvrir une nouvelle console de gestion, cliquez sur **Démarrer** et sur **Exécuter**, puis tapez **mmc**.

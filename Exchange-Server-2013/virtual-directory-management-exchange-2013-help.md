@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-05_
+_**Dernière rubrique modifiée :** 2012-10-05_
 
 Il est possible d’accéder à la plupart des protocoles clients utilisés avec Exchange Server 2013 via des répertoires virtuels. Un répertoire virtuel est utilisé par Internet Information Services (IIS) pour permettre l’accès à une application Web, telle qu’Exchange ActiveSync, Outlook Web App ou le service de découverte automatique. Vous pouvez gérer plusieurs paramètres du répertorie virtuel d’Exchange 2013, y compris les paramètres d’authentification, de sécurité et de rapport.
 

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer la fonctionnalité de blocage du courrier indésirable sur un serveur de boîtes aux lettres: Exchange 2013 Help'
+title: 'Activ. fonction de blocage du courr. ind. sur un srv de BAL: Exchange 2013'
 TOCTitle: Activer la fonctionnalité de blocage du courrier indésirable sur un serveur de boîtes aux lettres
 ms:assetid: 59d22c5e-64bc-4879-8ad1-364862b6ba11
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb201691(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-01-23_
+_**Dernière rubrique modifiée :** 2014-01-23_
 
 Dans Microsoft Exchange Server 2013, les agents anti-spam suivants sont disponibles dans le service de transport des serveurs de boîtes aux lettres, mais ils ne sont pas installés par défaut :
 
@@ -43,18 +43,8 @@ Que se passe-t-il si vous installez les agents anti-spam disponibles dans le ser
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Comment procéder ?

@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-24_
+_**Dernière rubrique modifiée :** 2015-04-24_
 
 Dans Exchange Server 2013, un carnet d'adresses en mode hors connexion est une copie téléchargée d'un carnet d'adresses qui permet à un utilisateur Outlook d'accéder aux informations en étant déconnecté du serveur. Les administrateurs Exchange peuvent décider quels carnets d'adresses sont mis à la disposition des utilisateurs qui travaillent en mode hors connexion. Ils peuvent également configurer la manière dont les carnets d'adresses sont distribués (distribution web ou distribution de dossiers publics).
 
@@ -35,18 +35,8 @@ Pour les autres tâches de gestion relatives aux carnets d'adresses en mode hors
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour créer un carnet d'adresses en mode hors connexion qui utilise la distribution web

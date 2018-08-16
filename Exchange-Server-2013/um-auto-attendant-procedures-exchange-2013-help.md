@@ -1,5 +1,5 @@
 ﻿---
-title: 'Procédures relatives au standard automatique de messagerie unifiée: Exchange 2013 Help'
+title: 'Procédures relatives au standard automatique de MU: Exchange 2013 Help'
 TOCTitle: Procédures relatives au standard automatique de messagerie unifiée
 ms:assetid: 9e59d68f-e11a-49b0-ac6b-88061761fd45
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ822155(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-01-30_
+_**Dernière rubrique modifiée :** 2013-01-30_
 
 [Configurer un standard automatique de messagerie unifiée](set-up-a-um-auto-attendant-exchange-2013-help.md)
 

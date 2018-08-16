@@ -1,5 +1,5 @@
 ﻿---
-title: "L'installation d'Exchange sur un contrôleur de domaine n'est pas recommandée: Exchange 2013 Help"
+title: 'L’installation d’Exchange sur un contrôleur de domaine n’est pas recommandée'
 TOCTitle: L'installation d'Exchange sur un contrôleur de domaine n'est pas recommandée
 ms:assetid: 48922de2-a68c-4092-96a5-d38c8e5f49f5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.warninginstallexchangerolesondomaincontroller(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2013-03-22_
+_**Dernière rubrique modifiée :** 2013-03-22_
 
 Le programme d'installation de Microsoft Exchange Server 2013 a détecté que l'ordinateur sur lequel vous tentez d'installer Exchange 2013 se trouve sur un contrôleur de domaine Active Directory. L'installation d'Exchange 2013 sur un contrôleur de domaine n'est pas recommandée.
 

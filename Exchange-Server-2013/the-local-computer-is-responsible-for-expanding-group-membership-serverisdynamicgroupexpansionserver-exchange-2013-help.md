@@ -1,5 +1,5 @@
 ﻿---
-title: 'The local computer is responsible for expanding group membership_ServerIsDynamicGroupExpansionServer: Exchange 2013 Help'
+title: 'L’ordinateur local est chargé de l’expansion de l’appartenance au groupe'
 TOCTitle: The local computer is responsible for expanding group membership_ServerIsDynamicGroupExpansionServer
 ms:assetid: f6fdd8e1-fda1-45be-b8a2-0d356dbe7d83
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.serverisdynamicgroupexpansionserver(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2012-06-05_
+_**Dernière rubrique modifiée :** 2012-06-05_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 
@@ -47,18 +47,8 @@ To resolve this issue, move distribution group expansion to another server and r
     
     4.  At the value box, click the **Browse** button to select the Bridgehead server that currently acting as the expansion server.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>The following step is optional.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> The following step is optional.
 
 
 1.  Click **Add Expression** to specify additional filter criteria. Only messages that meet all filter criteria will be displayed.

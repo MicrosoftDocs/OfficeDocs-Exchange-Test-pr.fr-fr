@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activation de la récupération d’élément unique pour une boîte aux lettres: Exchange 2013 Help'
+title: 'Activ. la récupération d’élément unique pour une BAL: Exchange 2013 Help'
 TOCTitle: Activation de la récupération d’élément unique pour une boîte aux lettres
 ms:assetid: 2e7f1bcd-8395-45ad-86ce-22868bd46af0
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee633460(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-13_
+_**Dernière rubrique modifiée :** 2015-03-13_
 
 Vous pouvez utiliser l’environnement de ligne de commande Exchange Management Shell pour activer ou désactiver la fonctionnalité de récupération d’élément unique sur une boîte aux lettres. Dans Exchange Online, la récupération d’élément unique est activée par défaut lors de la création d’une boîte aux lettres. Dans Exchange 2013, la récupération d’élément unique est désactivée lors de la création d’une boîte aux lettres. Quand cette fonctionnalité est activée, les messages que l’utilisateur a supprimés définitivement (purgés) sont conservés dans le dossier Éléments récupérables de la boîte aux lettres jusqu’à l’expiration de la période de rétention des éléments supprimés. Cela permet aux administrateurs de récupérer les messages supprimés définitivement par l’utilisateur avant l’expiration de la période de rétention des éléments supprimés. En outre, si un message est modifié par un utilisateur ou un processus, des copies de l’élément d’origine sont également conservées lorsque la fonctionnalité de récupération d’élément unique est activée.
 

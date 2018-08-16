@@ -1,5 +1,5 @@
 ﻿---
-title: 'Composant IIS 7 non installé_LonghornIIS7BasicAuthNotInstalled: Exchange 2013 Help'
+title: 'Composant IIS 7 non installé'
 TOCTitle: Composant IIS 7 non installé_LonghornIIS7BasicAuthNotInstalled
 ms:assetid: 2eb3290c-9ce2-4c01-ad47-a26ef60bddb5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.longhorniis7basicauthnotinstalled(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 

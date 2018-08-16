@@ -1,5 +1,5 @@
 ﻿---
-title: 'Une ou plusieurs files d’attente contiennent des messages_MessagesInQueue: Exchange 2013 Help'
+title: 'Une ou plusieurs files d’attente contiennent des messages'
 TOCTitle: Une ou plusieurs files d’attente contiennent des messages_MessagesInQueue
 ms:assetid: 3ffcdc7e-c1b7-49a7-8e5f-b30c0397908d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.messagesinqueue(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2012-06-05_
+_**Dernière rubrique modifiée :** 2012-06-05_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 

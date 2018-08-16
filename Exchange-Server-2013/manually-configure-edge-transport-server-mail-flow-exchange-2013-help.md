@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration manuelle du flux de messagerie du serveur de transport Edge: Exchange 2013 Help'
+title: 'Config. manuelle du flux de messag. du srv de transp. Edge: Exchange 2013 Help'
 TOCTitle: Configuration manuelle du flux de messagerie du serveur de transport Edge
 ms:assetid: cb4cc165-6c09-44ab-a95f-167ae8ed2485
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn606261(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-02-21_
+_**Dernière rubrique modifiée :** 2014-02-21_
 
 Cette rubrique décrit les procédures à suivre pour apporter manuellement des modifications à la configuration concernant la façon dont un serveur de transport Edge gère le flux de messagerie. Ces procédures sont conçues pour répondre à des scénarios spécifiques. À moins que votre organisation ait des besoins spécifiques impliquant la modification manuelle de la configuration, il est recommandé d’utiliser la configuration par défaut lors de l’abonnement aux serveurs de transport Edge.
 
@@ -85,18 +85,8 @@ Exemple : utilisation de l’environnement de ligne de commande Exchange Manage
 
     New-SendConnector -Name "EdgeSync - Site-A to Internet" -Usage Custom -AddressSpaces SMTP:*;100 -DNSRoutingEnabled $false -SmartHosts 192.168.10.1 -SmartHostAuthMechanism None -SourceTransportServers EdgeSubscriptionName
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Aucun mécanisme d’authentification de l’hôte actif n’est spécifié dans cet exemple. Veillez à configurer le bon mécanisme d’authentification et d’indiquer toutes les informations d’identification nécessaires lors de la création du connecteur d’hôte actif dans votre propre organisation Exchange.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Aucun mécanisme d’authentification de l’hôte actif n’est spécifié dans cet exemple. Veillez à configurer le bon mécanisme d’authentification et d’indiquer toutes les informations d’identification nécessaires lors de la création du connecteur d’hôte actif dans votre propre organisation Exchange.
 
 
 ## Configurer des connecteurs d’envoi pour les domaines de relais externes

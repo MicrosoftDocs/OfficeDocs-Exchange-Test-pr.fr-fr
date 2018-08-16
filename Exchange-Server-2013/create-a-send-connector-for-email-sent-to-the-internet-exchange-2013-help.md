@@ -1,5 +1,5 @@
 ﻿---
-title: 'Créer un connecteur d’envoi pour les messages électroniques envoyés vers Internet: Exchange 2013 Help'
+title: 'Créer connecteur d’envoi pr e-mails envoyés vers Internet: Exchange 2013 Help'
 TOCTitle: Créer un connecteur d’envoi pour les messages électroniques envoyés vers Internet
 ms:assetid: 6deaefa8-1152-40d9-b1ba-9c19bdf8a928
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ657457(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-23_
+_**Dernière rubrique modifiée :** 2015-01-23_
 
 Par défaut, Microsoft Exchange Server 2013 ne vous permet pas d’envoyer des messages électroniques en dehors de votre domaine. Pour envoyer des messages électroniques en dehors de votre domaine, vous devez créer un connecteur d’envoi. La figure suivante illustre le flux de messagerie lorsque vous créez un connecteur d’envoi pour envoyer les messages électroniques vers Internet.
 
@@ -35,18 +35,8 @@ Intéressé par des scénarios où cette procédure est utilisée ? Consultez l
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

@@ -13,32 +13,17 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2014-10-23_
+_**Dernière rubrique modifiée :** 2014-10-23_
 
 Avant de pouvoir créer un dossier public, vous devez d'abord créer une boîte aux lettres de dossiers publics. Les boîtes aux lettres de dossiers publics contiennent des informations sur la hiérarchie et le contenu des dossiers publics. La première boîte aux lettres de dossiers publics que vous créez est la boîte aux lettres de hiérarchie principale et contient l'unique exemplaire de la hiérarchie dans lequel les opérations d'écriture sont autorisées. Toutes les autres boîtes aux lettres de dossiers publics que vous créez sont des boîtes aux lettres secondaires et contiennent une copie en lecture seule de la hiérarchie.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour plus d’informations sur les limites et les quotas de stockage pour les dossiers publics, consultez les rubriques suivantes :
-<ul>
-<li><p>Pour les dossiers publics dans Office 365, voir <a href="https://go.microsoft.com/fwlink/?linkid=391188">Limites d’Exchange Online</a>.</p></li>
-<li><p>Pour les dossiers publics dans Exchange Server 2013 sur site, voir <a href="limits-for-public-folders-exchange-2013-help.md">Limites pour les dossiers publics</a>.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]
+> Pour plus d’informations sur les limites et les quotas de stockage pour les dossiers publics, consultez les rubriques suivantes :
+> <ul>
+> <li><p>Pour les dossiers publics dans Office 365, voir <a href="https://go.microsoft.com/fwlink/?linkid=391188">Limites d’Exchange Online</a>.</p></li>
+> <li><p>Pour les dossiers publics dans Exchange Server 2013 sur site, voir <a href="limits-for-public-folders-exchange-2013-help.md">Limites pour les dossiers publics</a>.</p></li></ul>
 
 Pour découvrir d'autres tâches de gestion associées aux dossiers publics dans Exchange 2013, consultez la rubrique [Procédures relatives aux dossiers publics](public-folder-procedures-exchange-2013-help.md).
 

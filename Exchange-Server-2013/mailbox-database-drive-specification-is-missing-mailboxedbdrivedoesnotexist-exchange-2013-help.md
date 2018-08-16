@@ -1,5 +1,5 @@
 ﻿---
-title: 'Spécification de lecteur de base de données de boîte aux lettres manquant_MailboxEDBDriveDoesNotExist: Exchange 2013 Help'
+title: 'Spécification de lecteur de base de données de boîte aux lettres manquant'
 TOCTitle: Spécification de lecteur de base de données de boîte aux lettres manquant_MailboxEDBDriveDoesNotExist
 ms:assetid: 0e487aa1-3194-4a14-b255-a8b9f9afbf0e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.mailboxedbdrivedoesnotexist(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 

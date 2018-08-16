@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Grâce aux rapports de remise pour les administrateurs, vous pouvez assurer le suivi des informations de remise des messages envoyés ou reçus par une boîte aux lettres spécifique de votre organisation. Les rapports de remise pour les administrateurs utilisent le Centre d'administration Exchange (CAE) pour effectuer une recherche ciblée des journaux de suivi des messages. La recherche est toujours limitée à une boîte aux lettres spécifique. Vous pouvez rechercher des messages que la boîte aux lettres a envoyés ou reçus, et vous pouvez filtrer les résultats de la recherche par l'objet du message.
 

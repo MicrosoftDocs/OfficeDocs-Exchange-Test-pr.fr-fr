@@ -1,5 +1,5 @@
 ﻿---
-title: 'Suppression et recréation de la boîte aux lettres de découverte par défaut dans Exchange: Exchange 2013 Help'
+title: 'Suppression et recréation de la BAL de découverte par défaut dans Exchange'
 TOCTitle: Suppression et recréation de la boîte aux lettres de découverte par défaut dans Exchange
 ms:assetid: 4bde0b00-bdf7-44b4-ba64-aa062bc10ca2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn750894(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-05-04_
+_**Dernière rubrique modifiée :** 2016-05-04_
 
 Vous pouvez utiliser l’environnement de ligne de commande Exchange Management Shell pour supprimer la boîte aux lettres de découverte par défaut, la recréer, puis lui attribuer des autorisations.
 
@@ -58,18 +58,8 @@ La résolution du problème dépend de votre volonté d’enregistrer les résul
 
 ## Utiliser l’Environnement de ligne de commande Exchange Management Shell pour supprimer et recréer la boîte aux lettres de découverte par défaut
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le Centre d’administration Exchange (CAE), car les boîtes aux lettres de découverte n’y sont pas affichées.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le Centre d’administration Exchange (CAE), car les boîtes aux lettres de découverte n’y sont pas affichées.
 
 
 1.  Exécutez la commande suivante pour supprimer la boîte aux lettres de découverte par défaut.

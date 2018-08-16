@@ -1,5 +1,5 @@
 ﻿---
-title: 'Stratégie de rétention par défaut dans Exchange Online et Exchange Server: Exchange 2013 Help'
+title: 'Stratégie de rétention par défaut dans Exchange Online et Exchange Server'
 TOCTitle: Stratégie de rétention par défaut
 ms:assetid: bcf31b2d-463b-4623-b488-c8ac40f14f62
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn775046(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Exchange crée la stratégie de rétention appelée stratégie MRM par défaut dans votre organisation Exchange Online et dans votre organisation Exchange locale. La stratégie est appliquée automatiquement aux nouveaux utilisateurs dans Exchange Online. Dans les organisations locales, la stratégie est appliquée lorsque vous créez une archive pour la boîte aux lettres. Vous pouvez modifier la stratégie de rétention appliquée à un utilisateur à tout moment.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 L'indicateur d'intégrité EWS.Proxy surveille la disponibilité de l'infrastructure proxy des services web Exchange sur le serveur d'accès au client (CAS). L'indicateur d'intégrité EWS.Proxy est étroitement lié à l'indicateur d'intégrité suivant :
 

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Filtrage des pièces jointes sur les serveurs de transport Edge: Exchange 2013 Help'
+title: 'Filtrer des pièces jointes sur les srv de transp. Edge: Exchange 2013 Help'
 TOCTitle: Filtrage des pièces jointes sur les serveurs de transport Edge
 ms:assetid: be39a181-c82e-41f5-8846-085bf1f84164
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124399(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-02-10_
+_**Dernière rubrique modifiée :** 2014-02-10_
 
 Dans Microsoft Exchange Server 2013, vous pouvez utiliser le filtrage des pièces jointes sur les serveurs de transport Edge pour contrôler les pièces jointes que les utilisateurs reçoivent dans des messages électroniques. Le filtrage des pièces jointes est effectué par l’Agent de filtrage des pièces jointes, qui n’est disponible que sur les serveurs de transport Edge.
 
@@ -41,17 +41,7 @@ Après avoir défini les fichiers à rechercher, vous pouvez configurer l’acti
 
 Pour plus d'informations, consultez la rubrique [Gestion du filtrage des pièces jointes sur les serveurs de transport Edge](manage-attachment-filtering-on-edge-transport-servers-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas récupérer les messages qui ont été bloqués, ni les pièces jointes qui ont été supprimées. Lorsque vous configurez des filtres de pièces jointes, examinez attentivement toutes les correspondances de noms de fichier possibles et vérifiez que les pièces jointes légitimes ne seront pas affectées par le filtre.<br />
-De plus, ne supprimez pas les pièces jointes des messages électroniques signés numériquement, chiffrés ou protégés par des droits. Si vous supprimez les pièces jointes de ces messages, vous invalidez les messages signés numériquement et vous rendez les messages chiffrés et protégés illisibles.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas récupérer les messages qui ont été bloqués, ni les pièces jointes qui ont été supprimées. Lorsque vous configurez des filtres de pièces jointes, examinez attentivement toutes les correspondances de noms de fichier possibles et vérifiez que les pièces jointes légitimes ne seront pas affectées par le filtre.
+> De plus, ne supprimez pas les pièces jointes des messages électroniques signés numériquement, chiffrés ou protégés par des droits. Si vous supprimez les pièces jointes de ces messages, vous invalidez les messages signés numériquement et vous rendez les messages chiffrés et protégés illisibles.
 

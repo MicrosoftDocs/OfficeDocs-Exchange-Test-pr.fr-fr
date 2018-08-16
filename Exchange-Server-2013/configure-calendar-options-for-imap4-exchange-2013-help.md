@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-27_
+_**Dernière rubrique modifiée :** 2012-11-27_
 
 Vous pouvez utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer les paramètres d’accès au calendrier des utilisateurs qui se connectent à leurs boîtes aux lettres à l’aide de connexions IMAP4. Les paramètres que vous spécifiez déterminent la manière dont vos utilisateurs IMAP4 peuvent accéder à leur calendrier et échangent des informations de calendrier (par exemple, envoyer ou répondre à une demande de réunion) avec d’autres utilisateurs.
 
@@ -29,18 +29,8 @@ Pour de plus amples informations sur IMAP4, consultez la rubrique [POP3 et IMAP4
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Utilisation du Shell pour définir les options de calendrier pour IMAP4

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Lors de l'installation de la messagerie unifiée, un jeu courant de fichiers audio par défaut est utilisé pour le système de messagerie vocale ainsi que les invites de menu et les messages d'accueil, et des messages d'information automatiques sont installés. Même si vous pouvez créer un standard automatique de messagerie unifiée complet ou un plan de numérotation qui utilise uniquement les messages audio par défaut, ces derniers sont trop génériques pour constituer une interface publique acceptable pour de nombreuses sociétés. Cette rubrique présente les invites système et de menu, les messages d'accueil et les messages d'information automatiques utilisés par les plans de numérotation et les standards automatiques de messagerie unifiée, ainsi que leur utilisation lorsque les appelants accèdent au système de messagerie unifiée.
 
@@ -113,18 +113,8 @@ Le tableau suivant détaille les invites et les messages d'accueil utilisés ave
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La modification des messages d'assistance vocale système installés n'est pas prise en charge.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> La modification des messages d'assistance vocale système installés n'est pas prise en charge.
 
 
 Vue d'ensemble des invites audio et des messages d'accueil
@@ -143,32 +133,12 @@ La messagerie unifiée est installée avec un ensemble d'invites audio par défa
 
   - « Pour joindre une personne, dites son nom. »
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La modification des invites système installées n'est pas prise en charge.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> La modification des invites système installées n'est pas prise en charge.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque le service de messagerie unifiée démarre sur le serveur de boîtes aux lettres, il vérifie que toutes les invites système sont disponibles. Si une invite du système est introuvable, la messagerie unifiée renvoie un message d'erreur. Pour corriger cette erreur, recherchez l'événement à l'aide de l'Observateur d'événements et copiez le fichier correspondant dans la fenêtre <strong>Propriétés des événements</strong> du DVD d'installation vers le dossier approprié sur le serveur de boîtes aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque le service de messagerie unifiée démarre sur le serveur de boîtes aux lettres, il vérifie que toutes les invites système sont disponibles. Si une invite du système est introuvable, la messagerie unifiée renvoie un message d'erreur. Pour corriger cette erreur, recherchez l'événement à l'aide de l'Observateur d'événements et copiez le fichier correspondant dans la fenêtre <strong>Propriétés des événements</strong> du DVD d'installation vers le dossier approprié sur le serveur de boîtes aux lettres.
 
 
 ## Messages d'accueil et annonces des plans de numérotation de messagerie unifiée

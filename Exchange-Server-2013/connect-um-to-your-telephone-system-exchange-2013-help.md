@@ -1,5 +1,5 @@
 ﻿---
-title: 'Connecter la messagerie unifiée pour votre système téléphonique: Exchange 2013 Help'
+title: 'Connecter la messag. unifiée à votre système téléphonique: Exchange 2013 Help'
 TOCTitle: Connecter la messagerie unifiée pour votre système téléphonique
 ms:assetid: 92c3e029-f732-4d6d-b147-2b3006d5f088
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673544(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-30_
+_**Dernière rubrique modifiée :** 2012-11-30_
 
 La messagerie unifiée combine la messagerie vocale et la messagerie électronique dans une boîte aux lettres accessible à partir de nombreux types d’appareils. Les utilisateurs peuvent écouter leurs messages vocaux de leur boîte de réception de messagerie électronique ou à l’aide d’Outlook Voice Access à partir d’un téléphone.
 

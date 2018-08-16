@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2018-04-26_
+_**Dernière rubrique modifiée :** 2018-04-26_
 
 Une fois que vous avez créé un plan de numérotation de messagerie unifiée, vous pouvez afficher et configurer différents paramètres. Par exemple, vous avez la possibilité de configurer le niveau de sécurité VoIP (Voice over IP), le codec audio et les restrictions de numérotation. Les paramètres que vous configurez dans le plan de numérotation de messagerie unifiée affectent tous les utilisateurs associés au plan de numérotation via une stratégie de boîte aux lettres de messagerie unifiée.
 
@@ -33,18 +33,8 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -63,18 +53,8 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
     
       - Bien qu'il soit possible d'inclure des espaces dans le nom d'un plan de numérotation de messagerie unifiée, si vous intégrez la messagerie unifiée à Office Communications Server 2007 R2 ou à Microsoft Lync Server, le nom du plan de numérotation ne peut pas contenir d'espaces. En conséquence, si vous avez créé un plan de numérotation dont le nom complet comprend des espaces et que vous souhaitez intégrer ce plan de numérotation à Office Communications Server 2007 R2 ou Lync Server, vous devez d'abord supprimer ce plan de numérotation, puis en créer un qui n'inclut pas d'espaces dans le nom complet.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Bien que le champ destiné au nom du plan de numérotation puisse accepter 64 caractères, la longueur du nom ne peut pas être supérieure à 49 caractères. Si vous tentez de créer un nom de plan de numérotation contenant plus de 49 caractères, un message d'erreur s'affiche. Ce message indique que la stratégie de boîte aux lettres de messagerie unifiée n'a pas pu être générée parce que le nom du plan de numérotation de messagerie unifiée est trop long. Cela se produit car, comme mentionné précédemment, lorsque vous créez un plan de numérotation, une stratégie de boîte aux lettres de messagerie unifiée par défaut nommée <em>&lt;DialPlanName&gt;</em> Stratégie par défaut est également créée. Après l'ajout des 15 caractères de la stratégie par défaut au nom du plan de numérotation, le nombre total de caractères dépasse la limite. Le paramètre <em>name</em> tant pour le plan de numérotation de messagerie unifiée que pour la stratégie de boîte aux lettres de messagerie unifiée peut compter jusqu'à 64 caractères. Toutefois, si le nom du plan de numérotation compte plus de 49 caractères, le nom de la stratégie de boîte aux lettres de messagerie unifiée par défaut comptera plus de 64 caractères, ce qui n'est pas autorisé.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Bien que le champ destiné au nom du plan de numérotation puisse accepter 64 caractères, la longueur du nom ne peut pas être supérieure à 49 caractères. Si vous tentez de créer un nom de plan de numérotation contenant plus de 49 caractères, un message d'erreur s'affiche. Ce message indique que la stratégie de boîte aux lettres de messagerie unifiée n'a pas pu être générée parce que le nom du plan de numérotation de messagerie unifiée est trop long. Cela se produit car, comme mentionné précédemment, lorsque vous créez un plan de numérotation, une stratégie de boîte aux lettres de messagerie unifiée par défaut nommée <em>&lt;DialPlanName&gt;</em> Stratégie par défaut est également créée. Après l'ajout des 15 caractères de la stratégie par défaut au nom du plan de numérotation, le nombre total de caractères dépasse la limite. Le paramètre <em>name</em> tant pour le plan de numérotation de messagerie unifiée que pour la stratégie de boîte aux lettres de messagerie unifiée peut compter jusqu'à 64 caractères. Toutefois, si le nom du plan de numérotation compte plus de 49 caractères, le nom de la stratégie de boîte aux lettres de messagerie unifiée par défaut comptera plus de 64 caractères, ce qui n'est pas autorisé.
     
       - **Longueur des numéros d'extension (chiffres)**   Il s'agit du nombre de chiffres compris dans les numéros d'extension des utilisateurs qui sont associés à ce plan de numérotation. Par exemple, si un utilisateur associé à un plan de numérotation compose un poste à 4 chiffres pour appeler un autre utilisateur du même plan de numérotation, sélectionnez 4 pour le nombre de chiffres du poste.
         
@@ -88,18 +68,8 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
         
           - **E.164**   E.164 est un plan de numérotation international pour les systèmes téléphoniques publics ; chaque numéro attribué contient un code de pays, un code de destination national et un numéro d'abonné. Les informations sur l'appelant et l'appelé qui sont envoyées à partir de la passerelle VoIP et du PBX ou du PBX IP sont répertoriées au format suivant : Tél : +14255550123.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Après avoir créé un plan de numérotation, si vous voulez modifier le type du plan de numérotation, vous devez supprimer le plan de numérotation puis le recréer afin qu'il inclue le type de plan de numérotation correct.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Après avoir créé un plan de numérotation, si vous voulez modifier le type du plan de numérotation, vous devez supprimer le plan de numérotation puis le recréer afin qu'il inclue le type de plan de numérotation correct.
     
       - **Sécurité VoIP**   Cette liste déroulante permet de sélectionner le paramètre de sécurité du plan de numérotation de messagerie unifiée. Vous pouvez sélectionner l'un des paramètres de sécurité suivants pour le plan de numérotation :
         
@@ -253,18 +223,8 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
         
         Pour les déploiements locaux, l'ajout de langues supplémentaires permet à Outlook Voice Access d'utiliser une langue autre que l'anglais (États-Unis). Par exemple, si un utilisateur d'Outlook Voice Access appelle avec un numéro Outlook Voice Access depuis un téléphone fixe, il est accueilli par une voix d'opérateur préenregistrée s'exprimant en anglais. Même si l'utilisateur sélectionne une autre langue dans Outlook Web App, telle que le français, les menus sont toujours lus en anglais. Pour que l'utilisateur puisse entendre les menus préenregistrés de l'opérateur en français, vous devez installer le module linguistique approprié.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Toutes les langues sont disponibles pour Exchange Online.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Toutes les langues sont disponibles pour Exchange Online.
 
 
 8.  **Règles de numérotation**   Cette page permet d'indiquer des règles de numérotation pour des appels nationaux, régionaux et internationaux passés par des utilisateurs à messagerie unifiée. Chaque entrée définie sur la règle de numérotation détermine les types d'appels que les utilisateurs d'un groupe de numérotation spécifique peuvent passer. Une fois que vous avez utilisé la fenêtre **Règles de numérotation** pour configurer des règles de numérotation, vous devez configurer le plan de numérotation, une stratégie de boîte aux lettres de messagerie unifiée ou un standard automatique de messagerie unifiée de sorte que la règle de numérotation appropriée soit utilisée. Lorsque vous avez configuré la stratégie de boîte aux lettres de messagerie unifiée pour qu'elle utilise un groupe de règles de numérotation, les restrictions de numérotation configurées s'appliquent à tous les utilisateurs à messagerie unifiée qui sont associés à la stratégie de boîte aux lettres de messagerie unifiée. Par exemple, vous pouvez configurer un groupe de règles de numérotation pour lequel les utilisateurs associés au plan de numérotation n'ont pas besoin de composer un code d'accès à une ligne extérieure lorsqu'ils appellent un numéro de téléphone national/régional. Vous pouvez configurer ce qui suit :
@@ -279,18 +239,8 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
         
           - **Commentaire**   Cette zone de texte permet d'entrer un commentaire ou une description pour l'entrée de règle de numérotation que vous ajoutez ou modifiez. Par défaut, cette zone de texte est vide.
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>Si vous intégrez avec Office Communications Server 2007 R2 ou Microsoft Lync Server, vous constaterez probablement qu'il n'est pas nécessaire de configurer des règles de numérotation ou des groupes de règles de numérotation dans la messagerie unifiée. Office Communications Server 2007 R2 et Lync Server sont conçus pour acheminer des appels (routage) et convertir des numéros pour les utilisateurs de votre organisation, et procèdent de même lorsque les appels sont effectués pour le compte des utilisateurs.</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]
+            > Si vous intégrez avec Office Communications Server 2007 R2 ou Microsoft Lync Server, vous constaterez probablement qu'il n'est pas nécessaire de configurer des règles de numérotation ou des groupes de règles de numérotation dans la messagerie unifiée. Office Communications Server 2007 R2 et Lync Server sont conçus pour acheminer des appels (routage) et convertir des numéros pour les utilisateurs de votre organisation, et procèdent de même lorsque les appels sont effectués pour le compte des utilisateurs.
     
       - **Règles internationales**   Cette zone de texte permet d'ajouter, de supprimer ou de modifier des groupes de règles de numérotation internationale utilisés par des stratégies de boîte aux lettres de messagerie unifiée.
         
@@ -302,18 +252,8 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
         
           - **Commentaire**   Cette zone de texte permet d'entrer un commentaire ou une description pour l'entrée de règle de numérotation que vous ajoutez ou modifiez. Par défaut, cette zone de texte est vide.
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>Dans le cadre de déploiements locaux, si vous procédez à une intégration avec Office Communications Server 2007 R2 ou Microsoft Lync Server, vous constaterez probablement qu'il n'est pas nécessaire de configurer des règles de numérotation ou des groupes de règles de numérotation dans la messagerie unifiée. Office Communications Server 2007 R2 ou Lync Server est conçu pour acheminer des appels (routage) et convertir des numéros pour les utilisateurs de votre organisation, et procèdent de même lorsque les appels sont effectués pour le compte des utilisateurs.</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]
+            > Dans le cadre de déploiements locaux, si vous procédez à une intégration avec Office Communications Server 2007 R2 ou Microsoft Lync Server, vous constaterez probablement qu'il n'est pas nécessaire de configurer des règles de numérotation ou des groupes de règles de numérotation dans la messagerie unifiée. Office Communications Server 2007 R2 ou Lync Server est conçu pour acheminer des appels (routage) et convertir des numéros pour les utilisateurs de votre organisation, et procèdent de même lorsque les appels sont effectués pour le compte des utilisateurs.
 
 
 9.  **Autorisation de numérotation**   Cette page permet de sélectionner des règles de numérotation pour des utilisateurs qui appellent un numéro Outlook Voice Access configuré sur un plan de numérotation de messagerie unifiée. Vous pouvez restreindre le type d'appels établis par des appelants lorsqu'un utilisateur non authentifié ou un utilisateur Outlook Voice Access appelle un numéro Outlook Voice Access configuré sur un plan de numérotation en configurant des groupes de règles de numérotation et des restrictions de numérotation. Vous pouvez configurer ce qui suit :

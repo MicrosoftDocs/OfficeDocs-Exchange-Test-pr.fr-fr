@@ -1,5 +1,5 @@
 ﻿---
-title: 'Azure : identifier mon problème à l’aide des vérifications automatiques (enregistrements DNS): Exchange 2013 Help'
+title: 'Azure : identifier un problème par des vérifications auto. (enregist. DNS)'
 TOCTitle: 'Azure : identifier mon problème à l’aide des vérifications automatiques (enregistrements DNS)'
 ms:assetid: 1ef42cde-4df4-401a-b8f2-494630996ca8
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn793619(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 L’un des problèmes les plus courants concerne la configuration incorrecte des enregistrements DNS. Vous pouvez utiliser les vérifications automatiques répertoriées ci-dessous pour valider votre configuration et mettre à jour votre environnement.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-17_
+_**Dernière rubrique modifiée :** 2015-03-17_
 
 Le Centre d’administration Exchange (CAE) et la console de gestion web de Microsoft Exchange Server 2013 optimisée pour les déploiements Exchange locaux, en ligne et hybrides. Le CAE remplace la Console de gestion Exchange (EMC) et le Panneau de configuration Exchange (ECP) qui étaient les deux interfaces utilisées pour la gestion d’Exchange Server 2010.
 
@@ -179,18 +179,8 @@ La *vignette de l’utilisateur en cours* vous permet de fermer votre session du
 
 Pour avoir la meilleure expérience avec le CAE, utilisez un des ensembles système d’exploitation et navigateur appelé « Premium ».
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D'autres ensembles systèmes d'exploitation et navigateur non répertoriés dans le tableau ci-avant ne sont pas pris en charge.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> D'autres ensembles systèmes d'exploitation et navigateur non répertoriés dans le tableau ci-avant ne sont pas pris en charge.
 
 
   - **Premium** : Toutes les fonctionnalités sont prises en charge et entièrement testées.

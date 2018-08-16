@@ -1,5 +1,5 @@
 ﻿---
-title: 'Déploiement de topologies à plusieurs forêts pour Exchange 2013: Exchange 2013 Help'
+title: 'Déployer des topologies à plsr forêts pour Exchange 2013: Exchange 2013 Help'
 TOCTitle: Déploiement de topologies à plusieurs forêts pour Exchange 2013
 ms:assetid: d51f2b7d-9045-40cf-8b9f-43787a6fff6d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124734(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Cette rubrique offre une vue d'ensemble du déploiement de Microsoft Exchange Server 2013 dans des topologies à forêts multiples. Vous trouverez des informations sur les sujets suivants :
 

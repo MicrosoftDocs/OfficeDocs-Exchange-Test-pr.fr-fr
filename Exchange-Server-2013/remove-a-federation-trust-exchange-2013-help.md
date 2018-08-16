@@ -13,26 +13,16 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-04_
+_**Dernière rubrique modifiée :** 2015-01-04_
 
 Une approbation de fédération établit une relation d’approbation entre une organisation Microsoft Exchange 2013 et le système d’authentification Azure Active Directory, et prend en charge le partage avec d’autres organisations Exchange fédérées. La suppression d’une approbation de fédération de votre organisation Exchange locale entraîne la désactivation du partage fédéré avec d’autres organisations Exchange fédérées et avec des organisations Office 365 connectées à votre organisation dans le cadre d’un déploiement hybride. Vous devriez réfléchir attentivement aux répercussions globales d’une suppression d’approbation de fédération sur votre organisation.
 
 Pour les autres tâches de gestion relatives aux approbations de fédération, consultez la rubrique [Procédures de fédération](federation-procedures-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.
 
 
 ## Ce qu’il faut savoir avant de commencer ?

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Les attributions du rôle de gestion affectent un rôle de gestion à l’utilisateur. La modification de l’attribution de rôle vous permet de contrôler les objets que peuvent modifier les utilisateurs auxquels un rôle a été attribué. Les étendues de rôle de gestion appliquées aux attributions de rôle remplacent l’étendue d’écriture implicite du rôle. Cependant, l’étendue de lecture implicite du rôle s’applique toujours. Les étendues que vous appliquez ne peuvent pas renvoyer d’objets en dehors de l’étendue de lecture implicite du rôle.
 
@@ -37,18 +37,8 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux attributio
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

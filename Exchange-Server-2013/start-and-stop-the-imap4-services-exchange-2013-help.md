@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-05_
+_**Dernière rubrique modifiée :** 2012-10-05_
 
 Par défaut, les deux services IMAP4, Microsoft Exchange IMAP4 service et le service IMAP4 principal de Microsoft Exchange, ne sont pas démarrés sur les ordinateurs exécutant MicrosoftExchange Server 2013. Vous devez démarrer ces deux services pour permettre à vos clients de messagerie de se connecter à Exchange à l'aide d'IMAP4. Une fois que vous avez activé ces services, Exchange 2013 accepte les communications non sécurisées de clients IMAP4 sur le port 143 et sur le port 993 en utilisant Secure Sockets Layer (SSL).
 
@@ -31,18 +31,8 @@ Pour plus d’informations sur POP3 et IMAP4, voir [POP3 et IMAP4 dans Exchange 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

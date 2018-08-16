@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-27_
+_**Dernière rubrique modifiée :** 2012-11-27_
 
 Les boîtes aux lettres liées sont les boîtes aux lettres des utilisateurs qui y accèdent par une forêt séparée et approuvée. Les boîtes aux lettres liées peuvent être utiles pour les organisations qui déploient Exchange dans une forêt ressource. Le scénario de forêt de ressources permet à une organisation de centraliser Exchange dans une forêt unique, tout en permettant d’accéder à l’organisation Exchange avec des comptes d’utilisateur situés dans une ou plusieurs forêts approuvées (appelées *forêts de comptes*). Le compte d’utilisateur qui accède à la boîte aux lettres liée n’existe pas dans la forêt où Exchange est déployé. Par conséquent, un compte d’utilisateur désactivé existant dans la même forêt qu’Exchange est créé et associé à la boîte aux lettres liée correspondante.
 
@@ -25,18 +25,8 @@ La figure suivante décrit la relation entre le compte d’utilisateur lié serv
 
 ![Organisation Exchange complexe avec forêt de ressources](images/Aa998031.706725cf-e520-4b89-a275-acd8fb58943a(EXCHG.150).gif "Organisation Exchange complexe avec forêt de ressources")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une approbation doit être configurée entre la forêt Exchange et au moins une forêt de comptes pour pouvoir créer des boîtes aux lettres liées. Vous devez au minimum configurer une approbation sortante unidirectionnelle, afin que la forêt Exchange approuve la forêt de comptes. Pour plus d’informations, voir <a href="https://technet.microsoft.com/fr-fr/library/jj156983(v=exchg.150)">En savoir plus sur la configuration d’une approbation de forêt prenant en charge les boîtes aux lettres liées</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Une approbation doit être configurée entre la forêt Exchange et au moins une forêt de comptes pour pouvoir créer des boîtes aux lettres liées. Vous devez au minimum configurer une approbation sortante unidirectionnelle, afin que la forêt Exchange approuve la forêt de comptes. Pour plus d’informations, voir <a href="https://technet.microsoft.com/fr-fr/library/jj156983(v=exchg.150)">En savoir plus sur la configuration d’une approbation de forêt prenant en charge les boîtes aux lettres liées</a>.
 
 
 ## Ce qu’il faut savoir avant de commencer ?
@@ -53,18 +43,8 @@ La figure suivante décrit la relation entre le compte d’utilisateur lié serv
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -81,18 +61,8 @@ La figure suivante décrit la relation entre le compte d’utilisateur lié serv
 
 4.  Si votre organisation a configuré une approbation sortante unidirectionnelle dans laquelle la forêt Exchange approuve la forêt de comptes, vous devrez entrer les informations d’identification d’administrateur dans la forêt de comptes pour pouvoir accéder à un contrôleur de domaine dans la forêt approuvée. Saisissez le nom d’utilisateur et le mot de passe d’un compte administrateur dans la forêt de comptes, puis cliquez sur **Suivant**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous n’aurez pas à entrer les informations d’identification d’administrateur si vous avez créé une approbation bidirectionnelle ou une autre approbation sortante unidirectionnelle dans laquelle la forêt de comptes approuve la forêt Exchange.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Vous n’aurez pas à entrer les informations d’identification d’administrateur si vous avez créé une approbation bidirectionnelle ou une autre approbation sortante unidirectionnelle dans laquelle la forêt de comptes approuve la forêt Exchange.
 
 
 5.  Renseignez les zones suivantes sur la page **Sélectionner un compte principal lié**.
@@ -111,36 +81,16 @@ La figure suivante décrit la relation entre le compte d’utilisateur lié serv
     
       - **\* Nom de connexion utilisateur**   Utilisez cette zone pour saisir le nom de connexion utilisateur qui est obligatoire pour créer une boîte aux lettres liée. Saisissez le nom d’utilisateur ici. Ce nom sera utilisé dans la partie gauche de l’adresse électronique pour la boîte aux lettres liée si vous ne spécifiez pas d’alias.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Puisque le compte d’utilisateur créé dans la forêt Exchange est désactivé lorsque vous créez une boîte aux lettres liée, l’utilisateur n’emploie pas le nom de connexion utilisateur pour se connecter à la boîte aux lettres liée. Il se connecte avec ses informations d’identification depuis la forêt de comptes.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Puisque le compte d’utilisateur créé dans la forêt Exchange est désactivé lorsque vous créez une boîte aux lettres liée, l’utilisateur n’emploie pas le nom de connexion utilisateur pour se connecter à la boîte aux lettres liée. Il se connecte avec ses informations d’identification depuis la forêt de comptes.
 
 
 7.  Cliquez sur **Plus d’options** pour configurer les cases suivantes. Sinon, passez à l’étape 8 pour enregistrer la nouvelle boîte aux lettres liée.
     
       - **Alias**   Saisissez l’alias qui spécifie l’alias de messagerie électronique pour la boîte aux lettres liée. L’alias de l’utilisateur est la partie de l’adresse de messagerie qui apparaît à gauche du symbole (@). Ce dernier doit être unique dans la forêt.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Si vous ne renseignez pas ce champ, la valeur de la partie nom d’utilisateur du <strong>Nom de connexion utilisateur</strong> est utilisée pour l’alias de messagerie.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Si vous ne renseignez pas ce champ, la valeur de la partie nom d’utilisateur du <strong>Nom de connexion utilisateur</strong> est utilisée pour l’alias de messagerie.
     
       - **Prénom**, **Initiales**, **Nom de famille**
     
@@ -176,18 +126,8 @@ Une fois que vous avez créé une boîte aux lettres liée, vous pouvez la modif
 
 Vous pouvez également modifier les propriétés de plusieurs boîtes aux lettres liées en même temps. Pour plus d’informations, voir la section « Modifier en bloc des boîtes aux lettres utilisateur » de la rubrique [Gestion des boîtes aux lettres utilisateur](manage-user-mailboxes-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La durée d’exécution estimée pour cette tâche varie selon le nombre de propriétés que vous souhaitez afficher ou modifier.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La durée d’exécution estimée pour cette tâche varie selon le nombre de propriétés que vous souhaitez afficher ou modifier.
 
 
 ## Utiliser le Centre d’administration Exchange (CAE) pour modifier les propriétés d’une boîte aux lettres liée
@@ -248,18 +188,8 @@ Utilisez la section **Utilisation de la boîte aux lettres** pour afficher ou mo
 
   - **Utilisation de la boîte aux lettres**   Cette zone affiche la taille totale de la boîte aux lettres et le pourcentage du quota total de boîte aux lettres qui a été utilisé.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour obtenir les informations qui sont affichées dans les deux champs précédents, le CAE interroge la base de données de boîtes aux lettres qui héberge la boîte aux lettres. Si le Centre d’administration Exchange (EAC) ne peut pas communiquer avec la banque d’informations Exchange qui contient la base de données de boîtes aux lettres, ces zones resteront vides. Un message d’avertissement s’affiche si l’utilisateur ne s’est pas connecté à la boîte aux lettres pour la première fois.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour obtenir les informations qui sont affichées dans les deux champs précédents, le CAE interroge la base de données de boîtes aux lettres qui héberge la boîte aux lettres. Si le Centre d’administration Exchange (EAC) ne peut pas communiquer avec la banque d’informations Exchange qui contient la base de données de boîtes aux lettres, ces zones resteront vides. Un message d’avertissement s’affiche si l’utilisateur ne s’est pas connecté à la boîte aux lettres pour la première fois.
 
 
 Cliquez sur **Plus d’options** pour afficher ou modifier les paramètres de quota de stockage de boîte aux lettres et de rétention des éléments supprimés pour la boîte aux lettres.
@@ -292,18 +222,8 @@ Utilisez la section **Adresse de messagerie** pour afficher ou modifier les adre
     
       - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone **\* Adresse de messagerie** l’un des types d’adresse de messagerie électronique non SMTP pris en charge.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>À l’exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l’adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d’adresse.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > À l’exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l’adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d’adresse.
 
 
   - **Mettre à jour automatiquement les adresses de messagerie en fonction de la stratégie des adresses de messagerie applicable à ce destinataire   **Activez cette case à cocher pour que les adresses de messagerie du destinataire soient automatiquement mises à jour lorsque des modifications sont apportées aux stratégies d’adresses de messagerie dans votre organisation. Cette case à cocher est activée par défaut.
@@ -322,18 +242,8 @@ Dans la section **Fonctionnalités de boîte aux lettres**, vous pouvez afficher
 
   - **Messagerie unifiée**   Cette fonctionnalité est désactivée par défaut. Lorsque vous activez la messagerie unifiée, l’utilisateur peut utiliser les fonctionnalités de messagerie unifiée de votre organisation et un ensemble par défaut de propriétés de messagerie unifiée est appliqué à l’utilisateur. Cliquez sur **Activer** pour activer la messagerie unifiée pour la boîte aux lettres. Pour plus d’informations sur la procédure d’activation de la messagerie unifiée, reportez-vous à la rubrique [Activation de la messagerie vocale pour un utilisateur](enable-a-user-for-voice-mail-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Un plan de numérotation de messagerie unifiée et une stratégie de boîte aux lettres de messagerie unifiée doivent exister avant de pouvoir activer la messagerie unifiée.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Un plan de numérotation de messagerie unifiée et une stratégie de boîte aux lettres de messagerie unifiée doivent exister avant de pouvoir activer la messagerie unifiée.
 
 
   - **Périphériques mobiles**   Utilisez cette section pour afficher et modifier les paramètres d’Exchange ActiveSync, qui est activé par défaut. Exchange ActiveSync permet d’accéder à une boîte aux lettres Exchange à partir d’un appareil mobile. Cliquez sur **Désactiver Exchange ActiveSync** pour désactiver cette fonctionnalité pour la boîte aux lettres.
@@ -356,18 +266,8 @@ Dans la section **Fonctionnalités de boîte aux lettres**, vous pouvez afficher
     
       - **URL**   Ce champ permet de saisir une URL de site Web qui fournit des informations ou de l’aide à propos de la suspension pour litige de la boîte aux lettres.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Le texte de ces zones s’affiche dans la boîte aux lettres de l’utilisateur uniquement s’il utilise Outlook 2010 ou des versions ultérieures. Il n’apparaît pas dans Outlook Web App ou d’autres clients de messagerie. Pour consulter le texte des zones Note et URL dans Outlook, cliquez sur l’onglet <strong>Fichier</strong>, et dans la page <strong>Informations</strong>, sous <strong>Paramètres du compte</strong>, vous voyez le commentaire de suspension pour litige.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Le texte de ces zones s’affiche dans la boîte aux lettres de l’utilisateur uniquement s’il utilise Outlook 2010 ou des versions ultérieures. Il n’apparaît pas dans Outlook Web App ou d’autres clients de messagerie. Pour consulter le texte des zones Note et URL dans Outlook, cliquez sur l’onglet <strong>Fichier</strong>, et dans la page <strong>Informations</strong>, sous <strong>Paramètres du compte</strong>, vous voyez le commentaire de suspension pour litige.
 
 
   - **Archivage**   S’il n’existe pas de boîte aux lettres d’archive pour l’utilisateur, cette fonctionnalité est désactivée. Pour activer une boîte aux lettres d’archive, cliquez sur **Activer**. Si l’utilisateur possède une boîte aux lettres d’archive, la taille de cette dernière ainsi que les statistiques d’utilisation s’affichent. Cliquez sur **Modifier les détails** pour afficher ou modifier les paramètres de boîte aux lettres d’archivage suivants :
@@ -390,18 +290,8 @@ Dans la section **Fonctionnalités de boîte aux lettres**, vous pouvez afficher
     
       - **Limite de destinataire**   Ce paramètre contrôle le nombre maximal de destinataires auxquels l’utilisateur peut envoyer un message. Activez la case à cocher **Nombre maximal de destinataires** pour limiter le nombre de destinataires autorisé sur les lignes À :, Cc : et Cci : d’un message électronique, puis spécifiez le nombre maximal de destinataires.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Pour les organisations Exchange locales, la limite de destinataire est illimitée. Pour les organisations Exchange Online, la limite est de 500 destinataires.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Pour les organisations Exchange locales, la limite de destinataire est illimitée. Pour les organisations Exchange Online, la limite est de 500 destinataires.
 
 
   - **Restrictions de taille des messages**   Ces paramètres contrôlent la taille des messages échangés par l’utilisateur. Cliquez sur **Modifier les détails** pour afficher et modifier la taille maximale des messages envoyés et reçus.
@@ -434,18 +324,8 @@ La section **Membre de** permet d’afficher une liste des groupes de distributi
 
 Utilisez la section **Info courrier** pour ajouter une Info courrier afin d’alerter les utilisateurs de problèmes potentiels s’ils envoient un message à ce destinataire. Une info-courrier est un texte qui s’affiche dans la barre d’informations lorsqu’un destinataire est ajouté aux lignes À, Cc ou Cci d’un nouveau message électronique.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.
 
 
 ## Délégation de boîtes aux lettres
@@ -454,7 +334,7 @@ Utilisez la section **Délégation de boîtes aux lettres** pour attribuer des a
 
   - **Envoyer sous**   Cette autorisation permet aux utilisateurs autres que le propriétaire de la boîte aux lettres d’utiliser la boîte aux lettres pour envoyer des messages. Une fois cette autorisation attribuée à un délégué, tout message envoyé par un délégué depuis cette boîte aux lettres s’affiche comme s’il était envoyé par le propriétaire de la boîte aux lettres. Cette autorisation ne permet pas toutefois pas à un délégué de se connecter à la boîte aux lettres de l’utilisateur.
 
-  - **Envoyer au nom de**   Cette autorisation permet également à un délégué d’utiliser cette boîte aux lettres pour envoyer des messages. Cependant, une fois cette autorisation attribuée à un délégué, l’adresse **De :** de tous les messages envoyés par le délégué indique que le message a été envoyé par le délégué, au nom du propriétaire de la boîte aux lettres.
+  - **Envoyer au nom de**   Cette autorisation permet également à un délégué d’utiliser cette boîte aux lettres pour envoyer des messages. Cependant, une fois cette autorisation attribuée à un délégué, l’adresse **De :**  de tous les messages envoyés par le délégué indique que le message a été envoyé par le délégué, au nom du propriétaire de la boîte aux lettres.
 
   - **Accès total**   Cette autorisation permet à un délégué de se connecter à la boîte aux lettres de l’utilisateur et d’afficher le contenu de la boîte aux lettres. Cependant, une fois cette autorisation attribuée à un délégué, celui-ci ne peut pas envoyer de messages depuis cette boîte aux lettres. Pour permettre à un délégué d’envoyer des courriers électroniques depuis la boîte aux lettres de l’utilisateur, vous devez attribuer au délégué l’autorisation Envoyer sous ou Envoyer au nom de.
 

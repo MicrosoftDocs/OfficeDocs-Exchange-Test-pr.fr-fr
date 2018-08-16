@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-16_
+_**Dernière rubrique modifiée :** 2012-10-16_
 
 Les données suivantes sur les groupes de distribution et les groupes de distribution dynamique de votre organisation constituent les mesures de groupe :
 

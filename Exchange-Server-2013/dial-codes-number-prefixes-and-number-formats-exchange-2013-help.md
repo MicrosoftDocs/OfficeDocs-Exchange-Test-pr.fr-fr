@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-05-04_
+_**Dernière rubrique modifiée :** 2016-05-04_
 
 Vous pouvez configurer plusieurs codes de numérotation utilisés par la messagerie unifiée pour établir des appels internes et externes pour les utilisateurs à extension messagerie unifiée. Il arrive fréquemment que vous souhaitiez configurer un plan de numérotation avec des codes de numérotation ou des codes d'accès, un préfixe de numéro national ou des formats de numéros nationaux, régionaux ou internationaux de façon à pouvoir contrôler la numérotation externe pour les utilisateurs au sein de votre organisation. Cette rubrique décrit les codes de numérotation, les préfixes et formats de numéros et la manière de les utiliser pour contrôler la numérotation externe pour votre organisation.
 

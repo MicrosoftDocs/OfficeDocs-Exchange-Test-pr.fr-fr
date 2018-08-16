@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**Dernière rubrique modifiée :** 2013-04-17_
+_**Dernière rubrique modifiée :**  2013-04-17_
 
 Cette section contient les procédures que vous pouvez utiliser comme références avec le pack d'administration Exchange Server 2013. Pour connaître les procédures relatives au fonctionnement consécutif au déploiement, consultez la rubrique [Procedures related to post-deployment operation](procedures-related-to-post-deployment-operation.md).
 

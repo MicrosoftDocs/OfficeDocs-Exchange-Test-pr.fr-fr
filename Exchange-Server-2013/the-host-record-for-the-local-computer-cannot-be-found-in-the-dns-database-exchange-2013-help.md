@@ -1,5 +1,5 @@
 ﻿---
-title: "L'enregistrement d'hôte pour l'ordinateur local est introuvable dans la base de données DNS: Exchange 2013 Help"
+title: 'L’enregistrement d’hôte pour l’ordinateur local est introuvable ds la BDD DNS'
 TOCTitle: L'enregistrement d'hôte pour l'ordinateur local est introuvable dans la base de données DNS
 ms:assetid: 2f18cb65-29fe-4b72-8d68-52fd503d5673
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.hostrecordmissing(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le programme d’installation de Microsoft Exchange Server 2013 ne peut pas poursuivre son exécution, car l’enregistrement d’hôte (A) pour cet ordinateur ne figure pas dans la base de données DNS (Domain Name System).
 

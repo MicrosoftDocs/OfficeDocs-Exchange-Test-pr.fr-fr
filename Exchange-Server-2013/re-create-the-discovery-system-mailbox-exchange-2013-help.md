@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-01-17_
+_**Dernière rubrique modifiée :** 2018-01-17_
 
 La découverte électronique sur place utilise une boîte aux lettres système pour stocker les métadonnées de recherche de la découverte électronique sur place. Le nom affiché de cette boîte aux lettres système de découverte est **SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}**. Les boîtes aux lettres système n’étant pas visibles dans le centre d'administration Exchange (EAC) ni dans les listes d’adresses Exchange, elles sont rarement supprimées par inadvertance.
 
@@ -35,19 +35,9 @@ Toutefois, si la boîte aux lettres système de découverte est supprimée accid
 
 2.  Utilisez le Shell pour activer la boîte aux lettres système de découverte.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous ne pouvez pas utiliser le centre d'administration Exchange (EAC) pour activer la boîte aux lettres système de découverte.<br />
-    La commande suivante doit être exécutée dans le même répertoire où vous avez extrait le support d’installation Exchange.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Vous ne pouvez pas utiliser le centre d'administration Exchange (EAC) pour activer la boîte aux lettres système de découverte.
+    > La commande suivante doit être exécutée dans le même répertoire où vous avez extrait le support d’installation Exchange.
     
     Pour recréer la boîte aux lettres système de découverte, exécutez la commande suivante :
     
@@ -57,16 +47,6 @@ Toutefois, si la boîte aux lettres système de découverte est supprimée accid
 
 Pour vérifier que vous avez recréé la boîte aux lettres système de découverte avec succès, utilisez la cmdlet **Get-Mailbox** avec le commutateur *Arbitration* pour récupérer les boîtes aux lettres système. Affichez les résultats de la commande pour vérifier que la boîte aux lettres système `SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}` a été recréée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

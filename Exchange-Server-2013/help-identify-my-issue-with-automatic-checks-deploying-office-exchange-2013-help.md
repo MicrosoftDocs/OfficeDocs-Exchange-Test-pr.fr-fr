@@ -1,5 +1,5 @@
 ﻿---
-title: 'Identifier mon problème à l’aide des vérifications automatiques (déploiement d’Office): Exchange 2013 Help'
+title: 'Identifier un problème par des vérifications automatiques (dplmt d’Office)'
 TOCTitle: Identifier mon problème à l’aide des vérifications automatiques (déploiement d’Office)
 ms:assetid: 77d4587c-7fd5-4231-931e-3d6608e622f4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn793978(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les vérifications présentées sur cette page vous aideront à identifier certains des problèmes de configuration les plus courants. Vous pouvez utiliser les vérifications automatiques ci-dessous pour valider votre configuration et mettre à jour votre environnement.
 

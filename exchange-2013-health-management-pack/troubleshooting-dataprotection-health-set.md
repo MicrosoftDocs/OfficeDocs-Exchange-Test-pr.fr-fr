@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Project Server 2013_
+_**Sapplique à :** Exchange Server 2013, Project Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 L'indicateur d'intégrité DataProtection surveille la redondance des bases de données dans un groupe de disponibilité de base de données (DAG).
 

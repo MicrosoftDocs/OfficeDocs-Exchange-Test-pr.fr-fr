@@ -1,5 +1,5 @@
 ﻿---
-title: Présentation de la création de rapports sur l'intégrité du système par le pack d'administration Exchange Server 2013
+title: Pack d’administration Exchange Server 2013 - rapports sur l’état du système
 TOCTitle: Présentation de la création de rapports sur l'intégrité du système par le pack d'administration Exchange Server 2013
 ms:assetid: 6ca8847f-93fe-458d-bd43-7afad7fdd2f4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn195910(v=EXCHG.150)
@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**Dernière rubrique modifiée :** 2015-03-09_
+_**Dernière rubrique modifiée :**  2015-03-09_
 
 Cette rubrique fournit des informations sur la manière dont le pack d'administration Exchange Server 2013 analyse l'intégrité du système Exchange et génère des rapports à ce sujet. Dans le pack d'administration Exchange 2013, les informations relatives à l'état d'intégrité sont regroupées de façon simple. Chaque fois que les informations d'intégrité sont douteuses et que le répondeur d'escalade est déclenché, l'événement suivant est journalisé dans le journal des événements Windows :
 

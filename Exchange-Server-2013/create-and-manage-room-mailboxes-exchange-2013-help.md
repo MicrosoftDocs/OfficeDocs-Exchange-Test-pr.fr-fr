@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-02-02_
+_**Dernière rubrique modifiée :** 2017-02-02_
 
 Durée d'exécution estimée : 5 minutes.
 
@@ -27,18 +27,8 @@ Pour plus d’informations sur un autre type de boîte aux lettres de ressources
 
   - Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez Section « Autorisations de configuration des destinataires » dans la rubrique [Autorisations des destinataires](recipients-permissions-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous exécutez Exchange 2013 dans un scénario hybride, veillez à créer les boîtes aux lettres de salle à l’emplacement approprié. Créez vos boîtes aux lettres de salle pour votre organisation locale sur site ; les boîtes aux lettres de salle pour le côté Exchange Online doivent quant à elles être créées dans le nuage.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous exécutez Exchange 2013 dans un scénario hybride, veillez à créer les boîtes aux lettres de salle à l’emplacement approprié. Créez vos boîtes aux lettres de salle pour votre organisation locale sur site ; les boîtes aux lettres de salle pour le côté Exchange Online doivent quant à elles être créées dans le nuage.
 
 
 
@@ -54,19 +44,9 @@ Pour plus d’informations sur un autre type de boîte aux lettres de ressources
     
       - **\* Nom de la salle**   Ce champ permet de saisir un nom pour l’utilisateur. Il s’agit du nom qui est répertorié dans la liste de boîtes aux lettres de ressources dans le CAE et le carnet d’adresses de votre organisation. Ce nom est requis et il ne doit pas dépasser 64 caractères.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Même si d'autres champs décrivent les détails de la salle, par exemple, Emplacement et Capacité, envisagez de résumer les détails les plus importants dans le nom de la salle à l'aide d'une convention d'affectation des noms cohérente. Pourquoi ? Pour que les utilisateurs puissent consulter les détails facilement lorsqu'ils sélectionnent la salle dans le carnet d'adresses dans la demande de réunion.</td>
-        </tr>
-        </tbody>
-        </table>
-    
+        > [!TIP]
+		> Même si d'autres champs décrivent les détails de la salle, par exemple, Emplacement et Capacité, envisagez de résumer les détails les plus importants dans le nom de la salle à l'aide d'une convention d'affectation des noms cohérente. Pourquoi ? Pour que les utilisateurs puissent consulter les détails facilement lorsqu'ils sélectionnent la salle dans le carnet d'adresses dans la demande de réunion.
+            
       - **\* Adresse de messagerie**   Une boîte aux lettres de salle comporte une adresse de messagerie afin de recevoir des demandes de réservation. L'adresse courriel se compose d'un alias sur le côté gauche du symbole @, qui doit être unique dans la forêt, et votre nom de domaine sur la droite. L'adresse de courriel est requise.
     
       - **Emplacement**, **Téléphone**, **Capacité**   Vous pouvez utiliser ces champs pour entrer des détails à propos de la salle. Toutefois, comme expliqué précédemment, vous pouvez inclure une partie ou l'ensemble des informations dans le nom de la salle afin que les utilisateurs puissent les voir.
@@ -219,18 +199,8 @@ Cette page contient également un champ utilisable pour rédiger un message qui 
 
 L’onglet **Coordonnées** permet d’afficher ou de modifier les informations de contact de la salle. L'information sur cette page s'affiche dans le carnet d'adresses.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le champ <strong>État/Province</strong> permet de créer des conditions de destinataire pour des groupes de distribution dynamiques, des stratégies d'adresse de messagerie électronique ou des listes d'adresses.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Le champ <strong>État/Province</strong> permet de créer des conditions de destinataire pour des groupes de distribution dynamiques, des stratégies d'adresse de messagerie électronique ou des listes d'adresses.
 
 
 ## Adresse de messagerie
@@ -245,31 +215,11 @@ Ce champ permet d’afficher ou de modifier les adresses de messagerie associée
     
       - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone **\* Adresse de messagerie** l’un des types d’adresse de messagerie électronique non SMTP pris en charge.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>À l’exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l’adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d’adresse.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > À l’exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l’adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d’adresse.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lorsque vous ajoutez une adresse électronique, vous avez la possibilité d'en faire l'adresse SMTP principale.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Lorsque vous ajoutez une adresse électronique, vous avez la possibilité d'en faire l'adresse SMTP principale.
 
 
   - **Mettre à jour auto. les adresses selon la stratégie de destinataire   **Cochez cette case pour que les adresses de messagerie du destinataire soient automatiquement mises à jour en fonction des modifications apportées aux stratégies d’adresses de messagerie dans votre organisation.
@@ -278,23 +228,13 @@ Ce champ permet d’afficher ou de modifier les adresses de messagerie associée
 
 Dans le champ **Info-courrier**, vous pouvez ajouter une info-courrier pour alerter les utilisateurs d’éventuels problèmes avant qu’ils n’envoient une demande à la boîte aux lettres de la salle. Une info-courrier est un texte qui s’affiche dans la barre d’informations lorsque ce destinataire est ajouté aux champs À, Cc ou Cci d’un nouveau message électronique.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.
 
 
 ## Utiliser Exchange PowerShell pour modifier les propriétés d’une boîte aux lettres de salle
 
-Utilisez les ensembles suivants de cmdlets pour afficher ou modifier les propriétés d'une boîte aux lettres de salle :**Get-Mailbox** et **Set-Mailbox** pour afficher et modifier les propriétés générales et les adresses de messagerie des boîtes aux lettres de salles. Utilisez les cmdlets **Get-CalendarProcessing** et **Set-CalendarProcessing** pour afficher et modifier les délégués et les options de réservation.
+Utilisez les ensembles suivants de cmdlets pour afficher ou modifier les propriétés d'une boîte aux lettres de salle :** Get-Mailbox** et **Set-Mailbox** pour afficher et modifier les propriétés générales et les adresses de messagerie des boîtes aux lettres de salles. Utilisez les cmdlets **Get-CalendarProcessing** et **Set-CalendarProcessing** pour afficher et modifier les délégués et les options de réservation.
 
   - **Get-User** et **Set-User**   Utilisez ces cmdlets pour afficher et définir les propriétés générales (ex. emplacement, nom d'un service et nom d'une société).
 
@@ -342,16 +282,6 @@ Pour vérifier que les modifications des propriétés d'une boîte aux lettres d
 
 Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 

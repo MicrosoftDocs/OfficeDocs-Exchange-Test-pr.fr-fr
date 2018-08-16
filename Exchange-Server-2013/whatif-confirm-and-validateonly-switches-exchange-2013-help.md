@@ -13,40 +13,20 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-04_
+_**Dernière rubrique modifiée :** 2012-10-04_
 
 Les administrateurs et les auteurs de scripts expérimentés, de même que les administrateurs qui débutent avec Exchange et les scripts, peuvent tirer parti de l'utilisation des commutateurs *WhatIf*, *Confirm* et *ValidateOnly*. Les commutateurs suivants vous aident à contrôler comment sont exécutées vos commandes et à indiquer exactement ce que fera une commande avant d’affecter les données. Cette fonctionnalité est surtout importante lorsque vous opérez une transition de votre environnement de test à votre environnement de production et pendant que vous transférez de nouveaux scripts ou commandes.
 
 Les commutateurs *WhatIf*, *Confirm* et *ValidateOnly* sont particulièrement utiles lorsque vous les utilisez avec des commandes qui modifient les objets retournés à l'aide d'un filtre ou d'une commande **Get** d'un pipeline. Cette rubrique décrit chaque commutateur et fournit également une commande en exemple.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous voulez utiliser les commutateurs <em>WhatIf</em>, <em>Confirm</em> et <em>ValidateOnly</em> avec des commandes dans un script, vous devez ajouter le commutateur approprié à chaque commande dans le script, et non dans la ligne de commande qui appelle le script.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous voulez utiliser les commutateurs <em>WhatIf</em>, <em>Confirm</em> et <em>ValidateOnly</em> avec des commandes dans un script, vous devez ajouter le commutateur approprié à chaque commande dans le script, et non dans la ligne de commande qui appelle le script.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>WhatIf</em>, <em>Confirm</em> et <em>ValidateOnly</em> sont des paramètres de commutateur. Pour plus d’informations sur les paramètres de commutateurs, voir <a href="https://technet.microsoft.com/fr-fr/library/bb124388(v=exchg.150)">Paramètres</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> <em>WhatIf</em>, <em>Confirm</em> et <em>ValidateOnly</em> sont des paramètres de commutateur. Pour plus d’informations sur les paramètres de commutateurs, voir <a href="https://technet.microsoft.com/fr-fr/library/bb124388(v=exchg.150)">Paramètres</a>.
 
 
 ## Commutateur WhatIf
@@ -117,18 +97,8 @@ Si vous souhaitez annuler le comportement par défaut de l'environnement Exchang
 
 Dans ce cas, aucune boîte de dialogue de confirmation n’est affichée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La valeur par défaut du commutateur <em>Confirm</em> est <code>$True</code>. Le comportement par défaut du Shell est d’afficher automatiquement une boîte de dialogue de confirmation. Si vous supprimez ce comportement par défaut, vous ordonnez à la commande de supprimer toutes les boîtes de dialogue de confirmation pendant la durée d’exécution de la commande. La commande traitera tous les objets qui satisfont aux critères pour la commande sans confirmation.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> La valeur par défaut du commutateur <em>Confirm</em> est <code>$True</code>. Le comportement par défaut du Shell est d’afficher automatiquement une boîte de dialogue de confirmation. Si vous supprimez ce comportement par défaut, vous ordonnez à la commande de supprimer toutes les boîtes de dialogue de confirmation pendant la durée d’exécution de la commande. La commande traitera tous les objets qui satisfont aux critères pour la commande sans confirmation.
 
 
 ## Commutateur ValidateOnly

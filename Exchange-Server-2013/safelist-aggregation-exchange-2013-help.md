@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-09-30_
+_**Dernière rubrique modifiée :** 2013-09-30_
 
 Dans Microsoft Exchange Server 2013, le terme *agrégation de listes fiables* désigne la fonction de blocage du courrier indésirable partagée par Microsoft Outlook et Exchange. Cette fonctionnalité collecte les données des listes de blocage du courrier indésirable des destinataires sûrs, des expéditeurs sûrs, des expéditeurs bloqués et des informations de contact que les utilisateurs Outlook configurent ; elle met ces données à disposition des agents Exchange de blocage du courrier indésirable.
 
@@ -51,18 +51,8 @@ Les types d'informations suivants sont stockés dans une collection de listes fi
 
   - **Domaine fiable**   Le domaine correspond à la partie d'une adresse SMTP qui suit le symbole @. Par exemple, contoso.com constitue le domaine dans l’adresse masato@contoso.com. Les utilisateurs Outlook peuvent ajouter des domaines d’envoi à leurs listes sécurisées.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Par défaut, Exchange n'inclut pas les domaines lors de l'agrégation de listes fiables. Toutefois, vous pouvez configurer une agrégation de listes fiables pour inclure les données de domaine autorisé pour les agents de blocage du courrier indésirable. Pour plus d’informations, consultez <a href="configure-content-filtering-to-use-safe-domain-data-exchange-2013-help.md">Configurer le filtrage de contenu pour utiliser les données de domaine autorisé</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Par défaut, Exchange n'inclut pas les domaines lors de l'agrégation de listes fiables. Toutefois, vous pouvez configurer une agrégation de listes fiables pour inclure les données de domaine autorisé pour les agents de blocage du courrier indésirable. Pour plus d’informations, consultez <a href="configure-content-filtering-to-use-safe-domain-data-exchange-2013-help.md">Configurer le filtrage de contenu pour utiliser les données de domaine autorisé</a>.
 
 
   - **Contacts externes**   Deux types de contacts externes peuvent être intégrés dans l'agrégation de listes fiables. Le premier type de contacts externes inclut les contacts auxquels les utilisateurs Outlook ont envoyé du courrier. Cette classe de contact est ajoutée à la liste des expéditeurs sûrs uniquement si l’utilisateur Outlook sélectionne l’option correspondante dans les paramètres de courrier indésirable d’Outlook 2007.
@@ -75,18 +65,8 @@ Retour au début
 
 La collection de listes fiables est stockée sur le serveur de boîtes aux lettres de l'utilisateur. Un utilisateur peut inclure jusqu'à 1 024 entrées uniques dans un ensemble de listes fiables. Exchange 2013 inclut un Assistant de boîte aux lettres, appelé Assistant d’options de courrier indésirable, qui analyse les modifications de l’ensemble de listes fiables pour vos boîtes aux lettres. Il réplique ces modifications dans Active Directory où l’ensemble de listes fiables est stocké sur chaque objet utilisateur. Lorsque l’ensemble de listes fiables est stockée sur l’objet utilisateur dans Active Directory, il est associé à la fonction de blocage du courrier indésirable d’Exchange 2013 et optimisé pour un stockage et une réplication réduits. Exchange utilise les données de l’ensemble de listes fiables pendant le filtrage du contenu. Si vous avez abonné un serveur de transport Edge dans votre réseau de périmètre, le service Microsoft Exchange EdgeSync réplique l’ensemble de listes fiables dans l’instance AD LDS (Active Directory Lightweight Directory Services) sur le serveur de transport Edge.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Bien que les informations des destinataires sûrs soient conservées dans Outlook et qu'il soit possible de les associer à l’ensemble de listes fiables, le filtrage du contenu n'agit pas sur elles.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Bien que les informations des destinataires sûrs soient conservées dans Outlook et qu'il soit possible de les associer à l’ensemble de listes fiables, le filtrage du contenu n'agit pas sur elles.
 
 
 Retour au début

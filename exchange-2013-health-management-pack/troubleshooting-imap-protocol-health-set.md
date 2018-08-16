@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-07_
+_**Dernière rubrique modifiée :** 2013-02-07_
 
 Les informations d'intégrité d'IMAP.Protocol contrôlent le protocole IMAP4 sur le serveur de boîtes aux lettres. Si vous recevez une alerte signalant que les informations d'intégrité d'IMAP.Protocol sont douteuses, cela indique qu'un problème affecte le protocole IMAP4 sur le serveur de boîtes aux lettres mentionné dans l'alerte.
 

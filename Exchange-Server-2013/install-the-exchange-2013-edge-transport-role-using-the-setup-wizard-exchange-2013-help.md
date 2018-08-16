@@ -1,5 +1,5 @@
 ﻿---
-title: 'Installer le rôle de transport Edge d’Exchange 2013 à l’aide de l’Assistant Installation: Exchange 2013 Help'
+title: 'Installer le rôle de transport Edge d’Exchange 2013 à l’aide de l’Assistant'
 TOCTitle: Installer le rôle de transport Edge d’Exchange 2013 à l’aide de l’Assistant Installation
 ms:assetid: b8e51b0b-201e-4c64-92c8-3ac0db04b6e2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn635117(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server, Exchange Server 2013_
+_**Sapplique à :** Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-06-19_
+_**Dernière rubrique modifiée :** 2014-06-19_
 
 Cette rubrique explique comment utiliser l’Assistant Installation de Microsoft Exchange Server 2013 pour installer le rôle serveur de transport Edge Exchange 2013 sur un ordinateur. Le rôle de transport Edge est disponible avec Exchange 2013 Service Pack 1 (SP1) ou version ultérieure. Pour de plus amples informations sur la planification et le déploiement d’Exchange 2013, consultez la rubrique [Planification et déploiement](planning-and-deployment-for-exchange-2013-installation-instructions.md).
 
@@ -23,18 +23,8 @@ Nous recommandons d’installer le rôle de transport Edge dans un réseau de p�
 
 Si vous souhaitez installer les rôles de boîtes aux lettres ou d’accès au client Exchange 2013 sur un ordinateur, consultez la rubrique [Installer Exchange 2013 à l’aide de l’Assistant Installation](install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md). Le rôle de transport Edge ne peut pas être installé sur le même ordinateur que les rôles serveur de boîtes aux lettres ou d’accès au client.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avez-vous déjà entendu parler de l’Assistant de déploiement Exchange Server ? Il s’agit d’un outil en ligne gratuit qui vous permet de déployer rapidement Exchange 2013 dans votre organisation en répondant à quelques questions et en créant une liste de contrôle de déploiement personnalisée. Pour en savoir plus, consultez la page <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Assistant de déploiement Exchange Server</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Avez-vous déjà entendu parler de l’Assistant de déploiement Exchange Server ? Il s’agit d’un outil en ligne gratuit qui vous permet de déployer rapidement Exchange 2013 dans votre organisation en répondant à quelques questions et en créant une liste de contrôle de déploiement personnalisée. Pour en savoir plus, consultez la page <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Assistant de déploiement Exchange Server</a>.
 
 
 Pour plus d’informations sur les tâches postérieures à l’installation, consultez la rubrique [Tâches consécutives à l’installation d’Exchange 2013](exchange-2013-post-installation-tasks-exchange-2013-help.md).
@@ -57,34 +47,14 @@ Pour plus d’informations sur les tâches postérieures à l’installation, co
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Après avoir installé Exchange sur un serveur, vous ne devez pas modifier le nom du serveur. La modification du nom d’un serveur après avoir installé un rôle de serveur Exchange n’est pas prise en charge.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Après avoir installé Exchange sur un serveur, vous ne devez pas modifier le nom du serveur. La modification du nom d’un serveur après avoir installé un rôle de serveur Exchange n’est pas prise en charge.
 
 
 ## Installer Exchange Server 2013
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour télécharger la dernière version d’Exchange 2013, voir <a href="updates-for-exchange-2013-exchange-2013-help.md">Mises à jour pour Exchange 2013</a></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour télécharger la dernière version d’Exchange 2013, voir <a href="updates-for-exchange-2013-exchange-2013-help.md">Mises à jour pour Exchange 2013</a>
 
 
 1.  Connectez-vous à l’ordinateur sur lequel vous voulez installer Exchange 2013.
@@ -93,18 +63,8 @@ Pour plus d’informations sur les tâches postérieures à l’installation, co
 
 3.  Lancez le programme d’installation d’Exchange 2013 en double-cliquant sur `Setup.exe`
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si le contrôle d’accès d’utilisateur est activé, vous devez cliquer avec le bouton droit de la souris sur <code>Setup.exe</code> et sélectionner <strong>Exécuter en tant qu’administrateur</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si le contrôle d’accès d’utilisateur est activé, vous devez cliquer avec le bouton droit de la souris sur <code>Setup.exe</code> et sélectionner <strong>Exécuter en tant qu’administrateur</strong>.
 
 
 4.  Sur la page **Vérifier les mises à jour ?**, indiquez si vous souhaitez que le programme d’installation se connecte à Internet et télécharge les mises à jour de produit et de sécurité pour Exchange 2013. Si vous sélectionnez **Se connecter à Internet et vérifier les mises à jour**, le programme d’installation télécharge les mises à jour et les applique avant de continuer. Si vous sélectionnez **Ne pas vérifier les mises à jour maintenant**, vous pouvez télécharger et installer les mises à jour manuellement plus tard. Nous vous recommandons de télécharger et d’installer les mises à jour maintenant. Cliquez sur **Suivant** pour continuer.
@@ -127,18 +87,8 @@ Pour plus d’informations sur les tâches postérieures à l’installation, co
     
     Sélectionnez **Installer automatiquement les rôles et les fonctionnalités Windows Server requis pour Exchange Server** pour que l’Assistant Installation installe les composants Windows requis. Il peut s’avérer nécessaire de redémarrer l’ordinateur pour terminer l’installation de certaines fonctionnalités Windows. Si vous ne sélectionnez pas cette option, vous devez installer les fonctionnalités Windows manuellement.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Cette option installe uniquement les fonctionnalités Windows requises par Exchange. Vous devez installer manuellement les autres composants requis. Pour plus d’informations, voir <a href="exchange-2013-prerequisites-exchange-2013-help.md">Conditions préalables pour Exchange 2013</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Cette option installe uniquement les fonctionnalités Windows requises par Exchange. Vous devez installer manuellement les autres composants requis. Pour plus d’informations, voir <a href="exchange-2013-prerequisites-exchange-2013-help.md">Conditions préalables pour Exchange 2013</a>.
     
     Cliquez sur **Suivant** pour continuer.
 

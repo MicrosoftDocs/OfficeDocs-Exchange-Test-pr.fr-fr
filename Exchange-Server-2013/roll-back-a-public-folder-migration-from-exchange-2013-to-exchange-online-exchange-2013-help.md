@@ -1,5 +1,5 @@
 ﻿---
-title: 'Restauration d’une migration de dossiers publics à partir d’Exchange 2013 vers Exchange Online: Exchange 2013 Help'
+title: 'Restaurer une migr. de dossiers publics d’Exchange 2013 vers Exchange Online'
 TOCTitle: Restauration d’une migration de dossiers publics à partir d’Exchange 2013 vers Exchange Online
 ms:assetid: bcd54aa0-aa45-4c68-b504-1475842d4b96
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Mt798259(v=EXCHG.150)
@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**Dernière rubrique modifiée :**2017-03-20_
+_**Dernière rubrique modifiée :** 2017-03-20_
 
 **Résumé** : Suivez ces étapes pour redonner à votre infrastructure de dossiers publics son état pré-migration dans votre organisation Exchange 2013 locale.
 

@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2010, Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2010, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-11-16_
+_**Dernière rubrique modifiée :** 2014-11-16_
 
 Un carnet d’adresses en mode hors connexion est une copie d’un ensemble de listes d’adresses téléchargé pour permettre à un utilisateur de Microsoft Outlook d’accéder au carnet d’adresses, tout en étant déconnecté du serveur. Microsoft Exchange génère de nouveaux fichiers de carnet d’adresses en mode hors connexion, les compresse, puis les place dans un partage local. Vous pouvez déterminer quelles listes d’adresses sont rendues accessibles aux utilisateurs travaillant hors connexion et configurer également la manière dont les carnets d’adresses sont répartis.
 
 Pour en savoir plus sur les listes d'adresses, consultez la rubrique [Listes d’adresses](address-lists-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les données de carnet d'adresses en mode hors connexion dont produites par le service Microsoft Exchange OABGen, qui est un assistant de boîte aux lettres. Si vous utilisez le descripteur de sécurité pour empêcher les utilisateurs d’afficher certains destinataires dans Active Directory, les utilisateurs qui téléchargent le carnet d’adresses en mode hors connexion sont en mesure d’afficher ces destinataires masqués. En conséquence, pour masquer un destinataire dans une liste d’adresse, définissez le paramètre <em>HiddenFromAddressListsEnabled</em> sur les cmdlets <a href="https://technet.microsoft.com/fr-fr/library/aa998596(v=exchg.150)">Set-PublicFolder</a>, <a href="https://technet.microsoft.com/fr-fr/library/aa995950(v=exchg.150)">Set-MailContact</a>, <a href="https://technet.microsoft.com/fr-fr/library/aa995971(v=exchg.150)">Set-MailUser</a>, <a href="https://technet.microsoft.com/fr-fr/library/bb123796(v=exchg.150)">Set-DynamicDistributionGroup</a>, <a href="https://technet.microsoft.com/fr-fr/library/bb123981(v=exchg.150)">Set-Mailbox</a> et <a href="https://technet.microsoft.com/fr-fr/library/bb124955(v=exchg.150)">Set-DistributionGroup</a>. Vous pouvez également créer un carnet d'adresses en mode hors connexion par défaut ne contenant pas les destinataires masqués. Pour plus d’informations sur l’ajout ou la suppression de listes d’adresses d’un carnet d’adresses en mode hors connexion, consultez la rubrique <a href="add-an-address-list-to-or-remove-an-address-list-from-an-offline-address-book-exchange-2013-help.md">Ajout ou suppression d'une liste d'adresses à partir d'un carnet d'adresses en mode hors connexion</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les données de carnet d'adresses en mode hors connexion dont produites par le service Microsoft Exchange OABGen, qui est un assistant de boîte aux lettres. Si vous utilisez le descripteur de sécurité pour empêcher les utilisateurs d’afficher certains destinataires dans Active Directory, les utilisateurs qui téléchargent le carnet d’adresses en mode hors connexion sont en mesure d’afficher ces destinataires masqués. En conséquence, pour masquer un destinataire dans une liste d’adresse, définissez le paramètre <em>HiddenFromAddressListsEnabled</em> sur les cmdlets <a href="https://technet.microsoft.com/fr-fr/library/aa998596(v=exchg.150)">Set-PublicFolder</a>, <a href="https://technet.microsoft.com/fr-fr/library/aa995950(v=exchg.150)">Set-MailContact</a>, <a href="https://technet.microsoft.com/fr-fr/library/aa995971(v=exchg.150)">Set-MailUser</a>, <a href="https://technet.microsoft.com/fr-fr/library/bb123796(v=exchg.150)">Set-DynamicDistributionGroup</a>, <a href="https://technet.microsoft.com/fr-fr/library/bb123981(v=exchg.150)">Set-Mailbox</a> et <a href="https://technet.microsoft.com/fr-fr/library/bb124955(v=exchg.150)">Set-DistributionGroup</a>. Vous pouvez également créer un carnet d'adresses en mode hors connexion par défaut ne contenant pas les destinataires masqués. Pour plus d’informations sur l’ajout ou la suppression de listes d’adresses d’un carnet d’adresses en mode hors connexion, consultez la rubrique <a href="add-an-address-list-to-or-remove-an-address-list-from-an-offline-address-book-exchange-2013-help.md">Ajout ou suppression d'une liste d'adresses à partir d'un carnet d'adresses en mode hors connexion</a>.
 
 
 Souhaitez-vous rechercher les tâches de gestion relatives au carnet d'adresses en mode hors connexion ? Voir [Procédures des carnets d’adresses en mode hors connexion](offline-address-book-procedures-exchange-2013-help.md).

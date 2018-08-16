@@ -1,5 +1,5 @@
 ﻿---
-title: 'The World Wide Web Publishing Service is disabled or missing_ShouldReRunSetupForW3SVC: Exchange 2013 Help'
+title: 'Le service de publication World Wide Web est désactivé ou manquant'
 TOCTitle: The World Wide Web Publishing Service is disabled or missing_ShouldReRunSetupForW3SVC
 ms:assetid: f1815a6d-d16b-4271-9fab-84087465529e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.shouldrerunsetupforw3svc(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2012-06-05_
+_**Dernière rubrique modifiée :** 2012-06-05_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 

@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Pour qu’une langue soit disponible dans la liste des langues de messagerie unifiée disponibles dans un plan de numérotation ou un standard automatique de messagerie unifiée, vous devez préalablement installer le module linguistique de messagerie unifiée approprié. Pour installer le module linguistique sur un serveur de boîtes aux lettres qui exécute le service de messagerie unifiée Microsoft Exchange, exécutez le fichier exécutable à extraction automatique spécifique de la langue ou la commande **setup.exe /AddUmLanguagePack**. Avant de pouvoir installer un module linguistique de messagerie unifiée, vous devez d’abord le télécharger sur un dossier local sur le serveur de boîtes aux lettres. Vous pouvez télécharger des modules linguistiques de messagerie unifiée sur la page des [modules linguistiques de messagerie unifiée pour Exchange Server 2013](https://go.microsoft.com/fwlink/p/?linkid=266542). Il existe un fichier exécutable distinct pour chaque langue.
 
 Après avoir installé le module linguistique de messagerie unifiée approprié, vous pouvez afficher la liste des modules linguistiques à l’aide de la liste déroulante de la page **Paramètres** du plan de numérotation de messagerie unifiée ou de la liste déroulante **Langue de l’interface vocale automatique** sur la page **Général** d’un standard automatique de messagerie unifiée. Vous pouvez également configurer la langue par défaut pour qu’elle soit différente d’Anglais (États-Unis) sur les plans de numérotation de messagerie unifiée et les standards automatiques.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les modules linguistiques de messagerie unifiée pour Microsoft Exchange Server 2007 ou Exchange 2007 Service Pack 1 (SP1), SP2 ou SP3 ou Exchange 2010 Service Pack 1 SP1, SP2 ou SP3 ne peuvent pas être utilisés sur un serveur de boîtes aux lettres Exchange 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Les modules linguistiques de messagerie unifiée pour Microsoft Exchange Server 2007 ou Exchange 2007 Service Pack 1 (SP1), SP2 ou SP3 ou Exchange 2010 Service Pack 1 SP1, SP2 ou SP3 ne peuvent pas être utilisés sur un serveur de boîtes aux lettres Exchange 2013.
 
 
 Pour les tâches supplémentaires concernant les modules linguistiques de messagerie unifiée, consultez la rubrique [Procédures de langages, les invites et le message d'accueil de la messagerie unifiée](um-languages-prompts-and-greetings-procedures-exchange-2013-help.md).
@@ -47,18 +37,8 @@ Pour les tâches supplémentaires concernant les modules linguistiques de messag
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -89,18 +69,8 @@ Cet exemple installe les modules linguistiques de messagerie unifiée Espagnol m
 
     setup.exe /AddUmLanguagePack:es-MX,de-DE /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous n’utilisez pas le paramètre /IAcceptExchangeServerLicenseTerms, vous devez voir l’erreur suivante : Bienvenue dans le programme d’installation sans assistance de Microsoft Exchange Server 2013. Vous devez accepter les termes du contrat de licence pour installer Microsoft Exchange Server 2013. Pour lire le contrat de licence, visitez le site http://go.microsoft.com/fwlink/p/?LinkId=150127. Pour accepter le contrat de licence, ajoutez le paramètre /IAcceptExchangeServerLicenseTerms à la commande exécutée. Pour plus d’informations, exécutez setup /?.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Si vous n’utilisez pas le paramètre /IAcceptExchangeServerLicenseTerms, vous devez voir l’erreur suivante : Bienvenue dans le programme d’installation sans assistance de Microsoft Exchange Server 2013. Vous devez accepter les termes du contrat de licence pour installer Microsoft Exchange Server 2013. Pour lire le contrat de licence, visitez le site http://go.microsoft.com/fwlink/p/?LinkId=150127. Pour accepter le contrat de licence, ajoutez le paramètre /IAcceptExchangeServerLicenseTerms à la commande exécutée. Pour plus d’informations, exécutez setup /?.
 
 
 Pour plus d’informations sur les langues de messagerie unifiée disponibles, voir [Langues de messagerie unifiée, invites et messages d’accueil](um-languages-prompts-and-greetings-exchange-2013-help.md).

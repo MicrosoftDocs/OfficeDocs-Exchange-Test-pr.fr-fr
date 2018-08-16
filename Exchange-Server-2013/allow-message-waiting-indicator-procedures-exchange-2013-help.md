@@ -1,5 +1,5 @@
 ﻿---
-title: "Autoriser les procédures de l'indicateur de Message en attente: Exchange 2013 Help"
+title: 'Autoris. de procédures de l’indic. de Message en attente: Exchange 2013 Help'
 TOCTitle: Autoriser les procédures de l'indicateur de Message en attente
 ms:assetid: 608082bc-015e-45ef-8ebc-f77465080381
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn135233(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-05-03_
+_**Dernière rubrique modifiée :** 2013-05-03_
 
 [Autoriser les messages en attente indicateur (MWI) sur une passerelle IP de messagerie unifiée](allow-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md)
 

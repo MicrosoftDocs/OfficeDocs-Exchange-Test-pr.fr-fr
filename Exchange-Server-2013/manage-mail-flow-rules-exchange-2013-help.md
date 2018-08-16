@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les règles de flux de messagerie, également appelées règles de transport vous permettent de rechercher des conditions spécifiques sur les messages qui circulent dans votre organisation, et de prendre des mesures les concernant. Cette rubrique vous montre comment créer, copier, classer, activer ou désactiver, supprimer ou importer ou exporter des règles, et comment surveiller l’utilisation de ces règles.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour vous assurer que vos règles fonctionnent comme vous l’entendez, assurez-vous de bien tester chaque règle et les interactions entre les différentes règles.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Pour vous assurer que vos règles fonctionnent comme vous l’entendez, assurez-vous de bien tester chaque règle et les interactions entre les différentes règles.
 
 
 Vous êtes intéressé par des scénarios où ces procédures sont utilisées ? Consultez les rubriques suivantes :
@@ -67,18 +57,8 @@ Vous êtes intéressé par des scénarios où ces procédures sont utilisées ?
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -87,18 +67,8 @@ Vous êtes intéressé par des scénarios où ces procédures sont utilisées ?
 
 Vous pouvez créer une règle de flux de messagerie en configurant une stratégie de protection contre la perte de données (DLP), en créant une règle, ou en copiant une règle. Vous pouvez utiliser le Centre d’administration Exchange (CAE) ou l’Environnement de ligne de commande Exchange Management Shell.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une fois que vous avez créé ou modifié une règle de flux de messagerie, la règle nouvelle ou mise à jour peut prendre jusqu’à 30 minutes pour être appliquée au courrier électronique.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Une fois que vous avez créé ou modifié une règle de flux de messagerie, la règle nouvelle ou mise à jour peut prendre jusqu’à 30 minutes pour être appliquée au courrier électronique.
 
 
 ## Utiliser une stratégie DLP pour créer des règles de flux de messagerie
@@ -147,18 +117,8 @@ Le CAE vous permet de créer des règles de flux de messagerie à partir d’un 
         
           - Sous **Auditer cette règle avec le niveau de gravité**, spécifiez le niveau de gravité de cette règle. Les rapports d’activité Office 365 pour les correspondances de règle de groupe de règles de flux de messagerie par niveau de gravité. Le niveau de gravité est simplement un filtre qui facilite l’utilisation des rapports. Le niveau de gravité n’a aucun impact sur la priorité avec laquelle la règle est traitée.
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>Si vous désactivez la case à cocher <strong>Auditer cette règle avec un niveau de gravité :</strong>, les correspondances de règle ne s’affichent pas dans les rapports de règle.</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]
+            > Si vous désactivez la case à cocher <strong>Auditer cette règle avec un niveau de gravité :</strong>, les correspondances de règle ne s’affichent pas dans les rapports de règle.
     
     4.  Définissez le mode de la règle. Vous pouvez utiliser l’un des deux modes de test disponibles pour tester la règle sans impacter le flux de messagerie. Dans les deux modes de test, lorsque les conditions sont remplies, une entrée est ajoutée au suivi des messages.
         
@@ -176,9 +136,9 @@ Le CAE vous permet de créer des règles de flux de messagerie à partir d’un 
     
     3.  Pour spécifier des exceptions, cliquez sur **Ajouter une exception**, puis sélectionnez les exceptions dans la liste déroulante **Sauf si...** Vous pouvez retirer des exceptions de la liste en cliquant sur **Supprimer X** en regard de celles-ci.
     
-    4.  Pour que cette règle prenne effet après une date donnée, cliquez sur **Activer cette règle à la date suivante :** et spécifie une date. Notez que la règle restera active avant cette date, mais qu'elle ne sera pas traitée.
+    4.  Pour que cette règle prenne effet après une date donnée, cliquez sur **Activer cette règle à la date suivante :**  et spécifie une date. Notez que la règle restera active avant cette date, mais qu'elle ne sera pas traitée.
         
-        De même, vous pouvez choisir de ne plus traiter la règle à une date donnée. Pour ce faire, cliquez sur **Cette règle expire à la date suivante :** et spécifie une date. Notez que la règle restera active, mais qu'elle ne sera pas traitée.
+        De même, vous pouvez choisir de ne plus traiter la règle à une date donnée. Pour ce faire, cliquez sur **Cette règle expire à la date suivante :**  et spécifie une date. Notez que la règle restera active, mais qu'elle ne sera pas traitée.
     
     5.  Vous pouvez choisir de ne plus ajouter d'autres règles lorsque cette règle traite un message. Pour ce faire, cliquez sur **Ne plus traiter de règles**. Si vous activez cette option et qu'un message est traité par cette règle, aucune autre règle n'est traitée pour ce message.
     
@@ -216,18 +176,8 @@ Pour vérifier qu’une règle de flux de messagerie a bien été créée, proc�
 
 ## Afficher ou modifier une règle de flux de messagerie
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une fois que vous avez créé ou modifié une règle de flux de messagerie, la règle nouvelle ou mise à jour peut prendre jusqu’à 30 minutes pour être appliquée au courrier électronique.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Une fois que vous avez créé ou modifié une règle de flux de messagerie, la règle nouvelle ou mise à jour peut prendre jusqu’à 30 minutes pour être appliquée au courrier électronique.
 
 
 ## Utiliser le CAE pour afficher ou modifier une règle de flux de messagerie
@@ -396,18 +346,8 @@ Pour vérifier que la règle de flux de messagerie a bien été supprimée, proc
 
 Si vous utilisez Exchange Online ou Exchange Online Protection, vous pouvez vérifier le nombre de fois que chaque règle trouve une correspondance à l’aide d’un rapport de règles. Pour qu’une règle soit incluse dans les rapports, la case **Auditer cette règle avec le niveau de gravité** de cette règle doit être cochée. Vous pouvez consulter un rapport en ligne ou télécharger une version Excel de tous les rapports de protection du courrier électronique.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Alors que la plupart des données apparaissent dans le rapport dans les 24 heures, cela peut prendre 5 jours pour certaines données.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Alors que la plupart des données apparaissent dans le rapport dans les 24 heures, cela peut prendre 5 jours pour certaines données.
 
 
 ## Utiliser le Centre d’administration Office 365 pour générer un rapport de règles

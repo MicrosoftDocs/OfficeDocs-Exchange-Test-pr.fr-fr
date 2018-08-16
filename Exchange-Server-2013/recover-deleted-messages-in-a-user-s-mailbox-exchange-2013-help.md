@@ -1,5 +1,5 @@
 ﻿---
-title: 'Récupérer des messages supprimés dans la boîte aux lettres d’un utilisateur: Exchange 2013 Help'
+title: 'Récupérer des messages suppr. dans la BAL d’un utilisateur: Exchange 2013 Help'
 TOCTitle: Récupérer des messages supprimés dans la boîte aux lettres d’un utilisateur
 ms:assetid: 9e0e34ce-efc5-454e-8d15-57b4da867f12
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff660637(v=EXCHG.150)
@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 (Cette rubrique concerne les administrateurs Exchange.)
 
 Les administrateurs peuvent rechercher et récupérer des messages électroniques supprimés dans la boîte aux lettres d’un utilisateur. Cela inclut les éléments qui sont supprimés définitivement (purgés) par une personne (à l’aide de la fonctionnalité Récupérer les éléments supprimés dans Outlook ou Outlook Web App) ou les éléments supprimés par un processus automatisé, tel que la stratégie de rétention attribuée à des boîtes aux lettres d’utilisateur. Dans ce cas, un utilisateur ne peut pas récupérer les éléments supprimés définitivement. Mais les administrateurs peuvent récupérer les messages supprimés définitivement si la période de rétention des éléments supprimés de l’élément n’a pas expiré.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outre la recherche et la récupération d’éléments supprimés (transférés dans le dossier des éléments récupérables\purges si la récupération d’élément unique ou la mise en attente pour litige est activée), cette procédure permet de rechercher d’autres éléments résidant dans d’autres dossiers de la boîte aux lettres et d’en supprimer de la boîte aux lettres source (<em>recherche et destruction</em>).</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Outre la recherche et la récupération d’éléments supprimés (transférés dans le dossier des éléments récupérables\purges si la récupération d’élément unique ou la mise en attente pour litige est activée), cette procédure permet de rechercher d’autres éléments résidant dans d’autres dossiers de la boîte aux lettres et d’en supprimer de la boîte aux lettres source (<em>recherche et destruction</em>).
 
 
 ## Ce qu’il faut savoir avant de commencer ?
@@ -49,18 +39,8 @@ Les administrateurs peuvent rechercher et récupérer des messages électronique
     
       - **Boîte aux lettres cible**   Il s’agit de la boîte aux lettres de découverte qui contiendra les messages récupérés. Le programme d’installation d’Exchange crée une boîte aux lettres de découverte par défaut. Dans Exchange Online, une boîte aux lettres de découverte est également créée par défaut. Si nécessaire, vous pouvez en créer d’autres. Pour plus d’informations, voir [Créer une boîte aux lettres de découverte](create-a-discovery-mailbox-exchange-2013-help.md).
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Avec la cmdlet <strong>Search-Mailbox</strong>, il est aussi possible de spécifier une boîte aux lettres cible qui n’est pas une boîte de découverte. Il est en revanche impossible que la même boîte aux lettres soit à la fois source et cible.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Avec la cmdlet <strong>Search-Mailbox</strong>, il est aussi possible de spécifier une boîte aux lettres cible qui n’est pas une boîte de découverte. Il est en revanche impossible que la même boîte aux lettres soit à la fois source et cible.
     
       - **Critères de recherche**   Nom de l’expéditeur, du destinataire, ou mots-clés (termes ou expressions) dans le message.
 
@@ -94,19 +74,9 @@ Pour plus d’informations ou si vous rencontrez des problèmes pour vous connec
 
 Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez entrée « In-Place eDiscovery » dans la rubrique [Stratégie de messagerie et autorisations de conformité](messaging-policy-and-compliance-permissions-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez utiliser la découverte électronique inaltérable dans le Centre d’administration Exchange (CAE) pour rechercher des éléments manquants. Cependant, lorsque vous utilisez le Centre d’administration Exchange (EAC), vous ne pouvez pas restreindre la recherche au dossier Éléments récupérables. Les messages correspondant à vos paramètres de recherche seront renvoyés même s’ils n’ont pas été supprimés. Après les avoir récupérés dans la boîte aux lettres de découverte spécifiée, il est peut-être nécessaire de revoir les résultats de la recherche et de supprimer des messages inutiles avant de récupérer les messages restants dans la boîte aux lettres de l’utilisateur ou de les exporter dans un fichier .pst.<br />
-Pour plus d’informations sur l’utilisation du Centre d’administration Exchange (EAC) pour effectuer une recherche de découverte électronique sur place (In-Place eDiscovery), voir <a href="create-an-in-place-ediscovery-search-exchange-2013-help.md">Créer une recherche de découverte électronique inaltérable</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez utiliser la découverte électronique inaltérable dans le Centre d’administration Exchange (CAE) pour rechercher des éléments manquants. Cependant, lorsque vous utilisez le Centre d’administration Exchange (EAC), vous ne pouvez pas restreindre la recherche au dossier Éléments récupérables. Les messages correspondant à vos paramètres de recherche seront renvoyés même s’ils n’ont pas été supprimés. Après les avoir récupérés dans la boîte aux lettres de découverte spécifiée, il est peut-être nécessaire de revoir les résultats de la recherche et de supprimer des messages inutiles avant de récupérer les messages restants dans la boîte aux lettres de l’utilisateur ou de les exporter dans un fichier .pst.
+> Pour plus d’informations sur l’utilisation du Centre d’administration Exchange (EAC) pour effectuer une recherche de découverte électronique sur place (In-Place eDiscovery), voir <a href="create-an-in-place-ediscovery-search-exchange-2013-help.md">Créer une recherche de découverte électronique inaltérable</a>.
 
 
 La première étape du processus de récupération consiste à rechercher des messages dans la boîte aux lettres source. Pour effectuer une recherche dans la boîte aux lettres d’un utilisateur et copier les messages dans une boîte aux lettres de découverte, utilisez l’une des deux méthodes ci-après.
@@ -121,18 +91,8 @@ Dans l’exemple ci-après, la recherche porte sur les messages dans la boîte a
 
     Search-Mailbox "April Stewart" -SearchQuery "from:'Ken Kwok' AND seattle" -TargetMailbox "Discovery Search Mailbox" -TargetFolder "April Stewart Recovery" -LogLevel Full
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Associé à la cmdlet <strong>Search-Mailbox</strong>, le paramètre <em>SearchQuery</em> permet de cibler l’étendue de la recherche en spécifiant une requête formatée à l’aide du langage KQL (Keyword Query Language). Vous pouvez également utiliser le commutateur <em>SearchDumpsterOnly</em> pour ne rechercher que des éléments dans le dossier Éléments récupérables.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Associé à la cmdlet <strong>Search-Mailbox</strong>, le paramètre <em>SearchQuery</em> permet de cibler l’étendue de la recherche en spécifiant une requête formatée à l’aide du langage KQL (Keyword Query Language). Vous pouvez également utiliser le commutateur <em>SearchDumpsterOnly</em> pour ne rechercher que des éléments dans le dossier Éléments récupérables.
 
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Search-Mailbox](https://technet.microsoft.com/fr-fr/library/dd298173\(v=exchg.150\)).
@@ -145,18 +105,8 @@ Pour vérifier que la recherche des messages à récupérer s’est correctement
 
 Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez entrée « In-Place eDiscovery » dans la rubrique [Stratégie de messagerie et autorisations de conformité](messaging-policy-and-compliance-permissions-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le CAE pour restaurer des éléments récupérés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le CAE pour restaurer des éléments récupérés.
 
 
 Une fois que les messages ont été récupérés dans une boîte aux lettres de découverte, restaurez-les dans la boîte aux lettres de l’utilisateur via la cmdlet **Search-Mailbox**. Dans Exchange 2013, vous pouvez également utiliser les cmdlets **New-MailboxExportRequest** et **New-MailboxImportRequest** pour exporter ou importer les messages à partir d’un fichier .pst.

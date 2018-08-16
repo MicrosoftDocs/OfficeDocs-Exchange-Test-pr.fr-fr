@@ -1,5 +1,5 @@
 ﻿---
-title: 'Appliquer une stratégie de rétention aux boîtes aux lettres: Exchange 2013 Help'
+title: 'Appliquer une strat. de rétention aux boîtes aux lettres: Exchange 2013 Help'
 TOCTitle: Appliquer une stratégie de rétention aux boîtes aux lettres
 ms:assetid: 6ccc80db-d201-44f7-8d4b-473a89c14b2f
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd298052(v=EXCHG.150)
@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-10-01_
+_**Dernière rubrique modifiée :** 2014-10-01_
 
 À l’aide des stratégies de rétention, vous pouvez regrouper une ou plusieurs balises de rétention et les appliquer aux boîtes aux lettres pour que les paramètres de rétention des messages soient utilisés. Une boîte aux lettres ne peut pas avoir plusieurs stratégies de rétention.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les messages arrivent à expiration en fonction des paramètres définis dans les balises de rétention liées à la stratégie. Ces paramètres incluent des actions, telles que le déplacement des messages dans les archives ou leur suppression définitive. Avant d’appliquer une stratégie de rétention à une ou plusieurs boîtes aux lettres, nous vous recommandons de tester la stratégie et d’inspecter chaque balise de rétention qui lui est associée.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Les messages arrivent à expiration en fonction des paramètres définis dans les balises de rétention liées à la stratégie. Ces paramètres incluent des actions, telles que le déplacement des messages dans les archives ou leur suppression définitive. Avant d’appliquer une stratégie de rétention à une ou plusieurs boîtes aux lettres, nous vous recommandons de tester la stratégie et d’inspecter chaque balise de rétention qui lui est associée.
 
 
 Pour les autres tâches de gestion relatives à la gestion des enregistrements de messagerie (MRM), voir [Procédures de gestion des enregistrements de messagerie](messaging-records-management-procedures-exchange-2013-help.md).
@@ -43,18 +33,8 @@ Pour les autres tâches de gestion relatives à la gestion des enregistrements d
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

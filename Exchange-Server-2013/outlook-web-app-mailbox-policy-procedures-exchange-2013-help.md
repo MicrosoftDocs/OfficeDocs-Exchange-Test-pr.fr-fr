@@ -1,5 +1,5 @@
 ﻿---
-title: 'Procédures de stratégie de boîte aux lettres Outlook Web App: Exchange 2013 Help'
+title: 'Procédures de stratégie de BAL Outlook Web App: Exchange 2013 Help'
 TOCTitle: Procédures de stratégie de boîte aux lettres Outlook Web App
 ms:assetid: 2f9fc960-6d0b-472a-a81a-6d8b629b4d5d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ674295(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-09-22_
+_**Dernière rubrique modifiée :** 2012-09-22_
 
 [Création d'une stratégie de boîte aux lettres Outlook Web App](create-an-outlook-web-app-mailbox-policy-exchange-2013-help.md)
 

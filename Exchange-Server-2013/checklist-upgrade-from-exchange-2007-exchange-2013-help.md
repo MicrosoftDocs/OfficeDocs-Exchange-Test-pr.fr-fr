@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Utilisez cette liste de contrôle pour effectuer une mise à niveau de Microsoft Exchange Server 2007 vers Exchange Server 2013. Avant de commencer avec cette liste de contrôle, assurez-vous d'avoir bien assimilé les concepts présentés dans :
 
@@ -25,18 +25,8 @@ Utilisez cette liste de contrôle pour effectuer une mise à niveau de Microsoft
 
 Cette liste de contrôle est générique dans la mesure où elle fournit des conseils pour un scénario de mise à niveau standard.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L’Assistant Déploiement d’Exchange Server offre des conseils détaillés personnalisés sur le déploiement d’Exchange Server. Vous pouvez utiliser l’Assistant Déploiement pour déployer une nouvelle installation d’Exchange Server 2013, mettre à niveau une version antérieure vers Exchange 2013 ou configurer un déploiement hybride d’Exchange 2013 et d’Exchange Online. Pour en savoir plus, consultez la rubrique <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Assistant de déploiement Exchange Server</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L’Assistant Déploiement d’Exchange Server offre des conseils détaillés personnalisés sur le déploiement d’Exchange Server. Vous pouvez utiliser l’Assistant Déploiement pour déployer une nouvelle installation d’Exchange Server 2013, mettre à niveau une version antérieure vers Exchange 2013 ou configurer un déploiement hybride d’Exchange 2013 et d’Exchange Online. Pour en savoir plus, consultez la rubrique <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Assistant de déploiement Exchange Server</a>.
 
 
 ## Aide-mémoire pour la mise à niveau d’Exchange 2007 vers Exchange 2013
@@ -73,18 +63,9 @@ Cette liste de contrôle est générique dans la mesure où elle fournit des con
 <tr class="odd">
 <td> </td>
 <td><p>4. Configurez un espace de noms disjoint.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette étape est facultative. Elle n'est nécessaire que si votre organisation exécute un espace de noms disjoint.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Cette étape est facultative. Elle n'est nécessaire que si votre organisation exécute un espace de noms disjoint.
 
 </td>
 <td><p><a href="configure-the-dns-suffix-search-list-for-a-disjoint-namespace-exchange-2013-help.md">Configuration d’une liste de recherche de suffixe DNS pour un espace de noms disjoint</a></p></td>
@@ -114,19 +95,10 @@ Cette liste de contrôle est générique dans la mesure où elle fournit des con
 <tr class="even">
 <td><p></p></td>
 <td><p>9. Configurez des répertoires virtuels liés à Exchange.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette étape est essentielle si vous souhaitez utiliser les services web Exchange, Outlook Anywhere ou le carnet d'adresses en mode hors connexion. Elle peut également s’avérer nécessaire si vous souhaitez modifier l’un des paramètres par défaut pour le Panneau de configuration Exchange, Microsoft Office Outlook Web App ou Exchange ActiveSync.<br />
-</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Cette étape est essentielle si vous souhaitez utiliser les services web Exchange, Outlook Anywhere ou le carnet d'adresses en mode hors connexion. Elle peut également s’avérer nécessaire si vous souhaitez modifier l’un des paramètres par défaut pour le Panneau de configuration Exchange, Microsoft Office Outlook Web App ou Exchange ActiveSync.
+> 
 
 <p></p></td>
 <td><p><a href="exchange-2013-client-access-server-configuration-exchange-2013-help.md">Configuration du serveur d’accès au client Exchange 2013</a></p>
@@ -146,18 +118,9 @@ Cette liste de contrôle est générique dans la mesure où elle fournit des con
 <tr class="odd">
 <td><p></p></td>
 <td><p>12. Configurez le serveur de transport Edge.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette étape est facultative. Elle n’est nécessaire que si votre organisation utilise un serveur de transport Edge.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Cette étape est facultative. Elle n’est nécessaire que si votre organisation utilise un serveur de transport Edge.
 
 </td>
 <td><p><a href="configure-internet-mail-flow-through-a-subscribed-edge-transport-server-exchange-2013-help.md">Configurer le flux de messagerie Internet via un serveur de transport Edge abonné</a></p></td>
@@ -165,18 +128,9 @@ Cette liste de contrôle est générique dans la mesure où elle fournit des con
 <tr class="even">
 <td> </td>
 <td><p>13. Configurez la messagerie unifiée.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette étape est facultative. Elle n'est nécessaire que si vous souhaitez utiliser la messagerie unifiée dans votre organisation.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Cette étape est facultative. Elle n'est nécessaire que si vous souhaitez utiliser la messagerie unifiée dans votre organisation.
 
 </td>
 <td><p><a href="planning-for-unified-messaging-exchange-2013-help.md">Planification de la messagerie unifiée</a></p>
@@ -210,18 +164,9 @@ Cette liste de contrôle est générique dans la mesure où elle fournit des con
 <tr class="even">
 <td> </td>
 <td><p>19. Déplacez des données de dossiers publics d’Exchange 2013 vers Exchange 2013.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette étape est facultative. Elle n’est nécessaire que si votre organisation utilise des dossiers publics.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Cette étape est facultative. Elle n’est nécessaire que si votre organisation utilise des dossiers publics.
 
 </td>
 <td><p><a href="public-folders-exchange-2013-help.md">Dossiers publics</a></p>

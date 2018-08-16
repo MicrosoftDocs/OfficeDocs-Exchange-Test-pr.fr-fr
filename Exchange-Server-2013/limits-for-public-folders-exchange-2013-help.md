@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Dans Exchange Server 2013, nous avons déplacé les dossiers publics d’une architecture traditionnelle de base de données vers une architecture de boîtes aux lettres. Ainsi, les dossiers publics peuvent bénéficier, entre autres, de la résilience d’un groupe de disponibilité de base de données (DAG) et d’autres améliorations relatives aux boîtes aux lettres apportées au fil des ans. Toutefois, de nouvelles limites et de nouveaux problèmes de performances doivent être pris en compte. Dans ce document, nous fournissons quelques conseils de haut niveau pour les options de configuration dont vous disposez et qui pourraient avoir une incidence sur la connectivité et les performances des dossiers publics.
 
@@ -23,18 +23,8 @@ Dans Exchange Server 2013, nous avons déplacé les dossiers publics d’une a
 
 Le tableau ci-dessous répertorie les limites des dossiers publics dans Exchange Server 2013 local. À moins qu’il soit spécifiquement indiqué que les limites sont recommandées, les valeurs répertoriées dans ce tableau sont les limites prises en charge pour les dossiers publics.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous recherchez les limites d’Exchange Online pour Office 365 ? Consultez la rubrique <a href="https://go.microsoft.com/fwlink/?linkid=391188">Limites d’Exchange Online</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous recherchez les limites d’Exchange Online pour Office 365 ? Consultez la rubrique <a href="https://go.microsoft.com/fwlink/?linkid=391188">Limites d’Exchange Online</a>.
 
 
 

@@ -1,5 +1,5 @@
 ﻿---
-title: "Le niveau fonctionnel d'Active Directory n'est pas Windows Server 2003 ou une version ultérieure: Exchange 2013 Help"
+title: 'Le niveau fonctionnel d’AD n’est pas Windows Server 2003 ou version ultérieure'
 TOCTitle: Le niveau fonctionnel d'Active Directory n'est pas Windows Server 2003 ou une version ultérieure
 ms:assetid: 45f45976-62ac-4b6c-889a-ebd449402009
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.forestlevelnotwin2003native(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 L'installation de Microsoft Exchange Server 2013 ne peut pas continuer, car le programme a détecté que le niveau fonctionnel de la forêt Active Directory active n'est pas Windows Server 2003 natif ou version ultérieure. Vous devez élever le niveau fonctionnel de la forêt à Windows Server 2003 ou version ultérieure pour pouvoir installer Exchange 2013.
 

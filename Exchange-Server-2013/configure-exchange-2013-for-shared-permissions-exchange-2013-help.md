@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Les autorisations partagées vous permettent, en tant qu’administrateur de Microsoft Exchange Server 2013, de créer les principaux de sécurité Active Directory (les utilisateurs par exemple), puis de les configurer comme destinataires d’Exchange. À l’inverse des autorisations fractionnées, qui permettent de répartir les tâches de gestion entre les groupes d’administrateurs Exchange et d’administrateurs Active Directory, les autorisations partagées n’ont pas recours à la séparation des tâches.
 
@@ -61,18 +61,8 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux autorisati
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -92,18 +82,8 @@ Pour configurer les autorisations partagées dans le groupe de rôles Gestion de
         New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Organization Management" -Delegating
         New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management" -Delegating
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le rôle de gestion des rôles doit être attribué au groupe de rôles (dans cette procédure, le groupe de rôle des administrateurs Active Directory) qui dispose des attributions de rôle de délégation pour les rôles Création du destinataire de messagerie et Création du groupe de sécurité et appartenance au groupe de rôles pour qu’il puisse exécuter la cmdlet <strong>New-ManagementRoleAssignment</strong>. L’utilisateur de rôle autorisé à déléguer le rôle de gestion des rôles doit attribuer ce rôle au groupe de rôles des administrateurs Active Directory.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le rôle de gestion des rôles doit être attribué au groupe de rôles (dans cette procédure, le groupe de rôle des administrateurs Active Directory) qui dispose des attributions de rôle de délégation pour les rôles Création du destinataire de messagerie et Création du groupe de sécurité et appartenance au groupe de rôles pour qu’il puisse exécuter la cmdlet <strong>New-ManagementRoleAssignment</strong>. L’utilisateur de rôle autorisé à déléguer le rôle de gestion des rôles doit attribuer ce rôle au groupe de rôles des administrateurs Active Directory.
 
 
 2.  Ajoutez les attributions de rôle ordinaire du rôle Création du destinataire de messagerie aux groupes de rôles Gestion de l’organisation et Gestion des destinataires en exécutant les commandes suivantes.
@@ -121,18 +101,8 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Vous pouvez éventuellement supprimer les autorisations octroyées aux administrateurs Active Directory si vous ne souhaitez plus créer ou gérer des objets Active Directory via les outils de gestion Exchange. Pour supprimer les autorisations dont disposent les administrateurs Active Directory, effectuez cette procédure.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Même s’il vous est possible de supprimer les autorisations des administrateurs Active Directory de gérer des objets Active Directory via les outils de gestion Exchange, Active Directory les administrateurs peuvent continuer à gérer les objets Active Directory au moyen des outils de gestion Active Directory si leurs autorisations Active Directory le leur permettent. Cependant, ils ne sont pas en mesure de gérer les attributs spécifiques à Exchange dans les objets Active Directory. Pour plus d’informations, voir <a href="understanding-split-permissions-exchange-2013-help.md">Présentation des autorisations fractionnées</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Même s’il vous est possible de supprimer les autorisations des administrateurs Active Directory de gérer des objets Active Directory via les outils de gestion Exchange, Active Directory les administrateurs peuvent continuer à gérer les objets Active Directory au moyen des outils de gestion Active Directory si leurs autorisations Active Directory le leur permettent. Cependant, ils ne sont pas en mesure de gérer les attributs spécifiques à Exchange dans les objets Active Directory. Pour plus d’informations, voir <a href="understanding-split-permissions-exchange-2013-help.md">Présentation des autorisations fractionnées</a>.
 
 
 Pour supprimer les autorisations fractionnées liées à Exchange des administrateurs Active Directory, procédez comme suit :
@@ -155,18 +125,8 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Pour passer des autorisations fractionnées Active Directory aux autorisations partagées Exchange 2013, vous devez réexécuter le programme d’installation d’Exchange afin de désactiver les autorisations fractionnées Active Directory dans l’organisation Exchange, puis créer des attributions de rôles entre un groupe de rôles et les rôles Création du destinataire de messagerie et Création du groupe de sécurité et appartenance. Dans la configuration des autorisations partagées par défaut, le groupe de rôles Gestion de l’organisation contient chacun de ces rôles. De ce fait, le groupe de rôles Gestion de l’organisation figure dans cette procédure.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La commande setup.com dans cette procédure modifie Active Directory. Pour l’utiliser, vous devez utiliser un compte doté des autorisations requises. Ce compte peut être différent de celui disposant des autorisations pour créer les attributions de rôles via la cmdlet <strong>New-ManagementRoleAssignment</strong>. Utilisez le ou les comptes dotés des autorisations permettant d’exécuter chaque étape de la procédure.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La commande setup.com dans cette procédure modifie Active Directory. Pour l’utiliser, vous devez utiliser un compte doté des autorisations requises. Ce compte peut être différent de celui disposant des autorisations pour créer les attributions de rôles via la cmdlet <strong>New-ManagementRoleAssignment</strong>. Utilisez le ou les comptes dotés des autorisations permettant d’exécuter chaque étape de la procédure.
 
 
 Pour passer des autorisations fractionnées Active Directory aux autorisations partagées, procédez comme suit :
@@ -183,18 +143,8 @@ Pour passer des autorisations fractionnées Active Directory aux autorisations p
 
 3.  Redémarrez les serveurs Exchange 2013 dans votre organisation.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si votre organisation comporte des serveurs Exchange 2010, vous devez aussi les redémarrer.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si votre organisation comporte des serveurs Exchange 2010, vous devez aussi les redémarrer.
 
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335193\(v=exchg.150\)).

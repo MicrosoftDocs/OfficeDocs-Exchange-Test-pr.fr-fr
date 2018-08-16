@@ -15,36 +15,21 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Une clé de produit indique à Exchange Server 2013 que vous avez acheté une licence Standard Edition ou Enterprise Edition. Si la clé de produit que vous avez achetée correspond à une licence Enterprise Edition, elle vous permet de monter plus de cinq bases de données par serveur et vous fournit toutes les options disponibles avec une licence Standard Edition. Pour en savoir plus sur la gestion des licences Exchange, voir [Exchange 2013 : éditions et versions](exchange-2013-editions-and-versions-exchange-2013-help.md).
 
 Si vous n’entrez pas de clé de produit, votre serveur est automatiquement inscrit en tant que version d’évaluation. La version d’évaluation fonctionne comme un serveur Exchange Standard Edition et s’avère utile si vous voulez essayer Exchange avant de l’acheter, ou pour exécuter des tests dans un laboratoire. La seule différence est que vous pouvez utiliser le serveur Exchange sous licence de version d’évaluation pendant 180 jours maximum. Pour continuer à utiliser le serveur au-delà de 180 jours, vous devez entrer une clé de produit. À défaut, le Centre d’administration Exchange (CAE) commencera à afficher des rappels vous indiquant que vous devez acquérir le serveur sous licence.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous avons remarqué que certains visiteurs accédant à cette page sont à la recherche d’informations sur l’installation ou l’activation d’Office. Si c’est votre cas, consultez les pages suivantes :
-<ul>
-<li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=403360">Installer Office</a></p></li>
-<li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=403361">Besoin d’aide avec votre clé de produit Office ?</a></p></li>
-</ul>
-Si vous voulez entrer une clé de produit sur un serveur Exchange 2010, accédez à <a href="http://go.microsoft.com/fwlink/p/?linkid=403370">Entrer une clé de produit Exchange 2010</a>.<br />
-Si vous voulez entrer une clé de produit sur un serveur Exchange 2013, vous êtes au bon endroit ! Poursuivons.</td>
-</tr>
-</tbody>
-</table>
-
+> [!TIP]
+> Nous avons remarqué que certains visiteurs accédant à cette page sont à la recherche d’informations sur l’installation ou l’activation d’Office. Si c’est votre cas, consultez les pages suivantes :
+> <ul>
+> <li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=403360">Installer Office</a></p></li>
+> <li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=403361">Besoin d’aide avec votre clé de produit Office ?</a></p></li></ul>
+> Si vous voulez entrer une clé de produit sur un serveur Exchange 2010, accédez à <a href="http://go.microsoft.com/fwlink/p/?linkid=403370">Entrer une clé de produit Exchange 2010</a>.<br />
+> Si vous voulez entrer une clé de produit sur un serveur Exchange 2013, vous êtes au bon endroit ! Poursuivons.
 
 ## Ce qu'il faut savoir avant de commencer
 
@@ -60,18 +45,8 @@ Si vous voulez entrer une clé de produit sur un serveur Exchange 2013, vous ê
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -100,18 +75,8 @@ Si vous voulez entrer une clé de produit sur un serveur Exchange 2013, vous ê
 
 Cet exemple utilise la cmdlet **set-ExchangeServer** pour saisir la clé de produit.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez réexécuter cette commande sur le même serveur pour le mettre à niveau de la licence Standard Edition à la licence Enterprise Edition.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez réexécuter cette commande sur le même serveur pour le mettre à niveau de la licence Standard Edition à la licence Enterprise Edition.
 
 
     Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa

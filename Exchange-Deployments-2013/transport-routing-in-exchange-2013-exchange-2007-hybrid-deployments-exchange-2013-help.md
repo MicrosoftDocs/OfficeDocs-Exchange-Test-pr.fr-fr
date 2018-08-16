@@ -18,32 +18,12 @@ _<strong>Dernière rubrique modifiée :</strong>2016-07-29_
 
 Cette rubrique traite des options de routage dont vous disposez pour les messages entrants en provenance d'Internet et les messages sortant vers Internet.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ne placez aucun serveur, service ou périphérique entre vos serveurs Exchange locaux et Office 365 traitant ou modifiant le trafic SMTP. Le flux de messagerie sécurisée entre votre organisation Exchange locale et Office 365 dépend des informations contenues dans les messages envoyés au sein de l’organisation. Les pare-feu autorisant le trafic SMTP sur le port TCP 25 sans modification sont pris en charge. Si un serveur, un service ou un périphérique traite un message envoyé entre votre organisation Exchange locale et Office 365, ces informations sont supprimées. Dans ce cas, le message n’est plus considéré comme interne à votre organisation et est soumis à un filtrage anti-courrier indésirable, aux règles de journal et de transport, ainsi qu’à d’autres stratégies ne s’appliquant normalement pas à celui-ci.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Ne placez aucun serveur, service ou périphérique entre vos serveurs Exchange locaux et Office 365 traitant ou modifiant le trafic SMTP. Le flux de messagerie sécurisée entre votre organisation Exchange locale et Office 365 dépend des informations contenues dans les messages envoyés au sein de l’organisation. Les pare-feu autorisant le trafic SMTP sur le port TCP 25 sans modification sont pris en charge. Si un serveur, un service ou un périphérique traite un message envoyé entre votre organisation Exchange locale et Office 365, ces informations sont supprimées. Dans ce cas, le message n’est plus considéré comme interne à votre organisation et est soumis à un filtrage anti-courrier indésirable, aux règles de journal et de transport, ainsi qu’à d’autres stratégies ne s’appliquant normalement pas à celui-ci.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les exemples contenus dans cette rubrique n’incluent pas l’ajout de serveurs de transport Edge dans le déploiement hybride. Les itinéraires empruntés par les messages entre l’organisation locale, l’organisation Exchange Online et Internet ne changent pas avec l’ajout d’un serveur de transport Edge. Seul le routage au sein de l’organisation locale change. Pour plus d’informations sur l’ajout de serveurs de transport Edge à un déploiement hybride, consultez la rubrique <a href="edge-transport-servers-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md">Serveurs de transport Edge dans les déploiements hybrides Exchange 2013/Exchange 2007</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les exemples contenus dans cette rubrique n’incluent pas l’ajout de serveurs de transport Edge dans le déploiement hybride. Les itinéraires empruntés par les messages entre l’organisation locale, l’organisation Exchange Online et Internet ne changent pas avec l’ajout d’un serveur de transport Edge. Seul le routage au sein de l’organisation locale change. Pour plus d’informations sur l’ajout de serveurs de transport Edge à un déploiement hybride, consultez la rubrique <a href="edge-transport-servers-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md">Serveurs de transport Edge dans les déploiements hybrides Exchange 2013/Exchange 2007</a>.
 
 
 ## Messages entrants en provenance d'Internet
@@ -52,9 +32,9 @@ Lors de la planification et de la configuration de votre déploiement hybride, v
 
 L’itinéraire emprunté par les messages envoyés aux destinataires de votre organisation locale et de votre organisation Exchange Online varie selon la manière dont vous décidez de configurer votre enregistrement MX dans votre déploiement hybride. Nous vous recommandons de le configurer pour qu’il pointe vers Exchange Online Protection (EOP) dans Office 365, car cette configuration garantit un filtrage du courrier indésirable extrêmement précis. L’assistant Configuration hybride ne configure pas le routage pour les messages Internet entrants d’une organisation locale ou Exchange Online. Vous devez configurer manuellement votre enregistrement MX si vous souhaitez modifier la manière dont vos messages Internet entrants sont remis.
 
-  - **Si vous modifiez votre enregistrement MX pour qu’il pointe vers le service Microsoft Exchange Online Protection (EOP) dans Office 365 :**  Nous vous recommandons cette configuration pour les déploiements hybrides. Tous les messages envoyés à un destinataire dans l’une des deux organisations seront d’abord acheminés via l’organisation Exchange Online. Un message adressé à un destinataire situé dans votre organisation locale sera d’abord acheminé via l’organisation Exchange Online, puis remis au destinataire de votre organisation locale. Cet itinéraire est recommandé si votre organisation Exchange Online compte un plus grand nombre de destinataires que votre organisation locale et si vous voulez que les messages soient filtrés par EOP. Cette option de configuration est requise pour qu’Exchange Online Protection puisse analyser et bloquer les courriers indésirables.
+  - **Si vous modifiez votre enregistrement MX pour qu’il pointe vers le service Microsoft Exchange Online Protection (EOP) dans Office 365 :**   Nous vous recommandons cette configuration pour les déploiements hybrides. Tous les messages envoyés à un destinataire dans l’une des deux organisations seront d’abord acheminés via l’organisation Exchange Online. Un message adressé à un destinataire situé dans votre organisation locale sera d’abord acheminé via l’organisation Exchange Online, puis remis au destinataire de votre organisation locale. Cet itinéraire est recommandé si votre organisation Exchange Online compte un plus grand nombre de destinataires que votre organisation locale et si vous voulez que les messages soient filtrés par EOP. Cette option de configuration est requise pour qu’Exchange Online Protection puisse analyser et bloquer les courriers indésirables.
 
-  - **Si vous conservez votre enregistrement MX pointant vers votre organisation locale :**   Tous les messages envoyés à un destinataire d’une des deux organisations seront d’abord acheminés via votre organisation locale. Un message adressé à un destinataire situé dans Exchange Online sera d’abord acheminé via votre organisation locale, puis remis au destinataire dans Exchange Online. Cet itinéraire peut être utile aux organisations appliquant des stratégies de conformité qui exigent que les messages envoyés depuis ou vers une organisation soient examinés par une solution de journalisation. Si vous choisissez cette option, Exchange Online Protection ne pourra pas analyser les courriers indésirables de manière efficace.
+  - **Si vous conservez votre enregistrement MX pointant vers votre organisation locale :**    Tous les messages envoyés à un destinataire d’une des deux organisations seront d’abord acheminés via votre organisation locale. Un message adressé à un destinataire situé dans Exchange Online sera d’abord acheminé via votre organisation locale, puis remis au destinataire dans Exchange Online. Cet itinéraire peut être utile aux organisations appliquant des stratégies de conformité qui exigent que les messages envoyés depuis ou vers une organisation soient examinés par une solution de journalisation. Si vous choisissez cette option, Exchange Online Protection ne pourra pas analyser les courriers indésirables de manière efficace.
 
 Pour plus d’informations, voir [Meilleures pratiques en matière de flux de messagerie pour Exchange Online et Office 365 (aperçu)](https://technet.microsoft.com/fr-fr/library/jj937232\(v=exchg.150\)).
 
@@ -64,18 +44,8 @@ Lisez la section ci-dessous correspondant au mode d'acheminement souhaité pour 
 
 Les étapes et le schéma qui suivent illustrent l'itinéraire que les messages Internet entrants emprunteront dans votre déploiement hybride si vous décidez de modifier votre enregistrement MX pour désigner le service EOP dans l'organisation Office 365. L'itinéraire des messages diffère selon que vous choisissez ou non d'activer le transport de courrier centralisé.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn151301.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devrez éventuellement acheter des licences EOP pour chaque boîte aux lettres locale qui reçoit des messages d'abord remis à EOP, puis acheminés via l'organisation Exchange Online. Pour de plus amples informations, contactez votre distributeur Microsoft.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Vous devrez éventuellement acheter des licences EOP pour chaque boîte aux lettres locale qui reçoit des messages d'abord remis à EOP, puis acheminés via l'organisation Exchange Online. Pour de plus amples informations, contactez votre distributeur Microsoft.
 
 
 Lorsque le transport de courrier centralisé est *désactivé* (configuration par défaut), les messages Internet entrants sont acheminés comme suit dans un déploiement hybride :
@@ -152,18 +122,8 @@ Outre le choix du mode de routage des messages entrants adressés aux destinatai
 
   - **Activer le transport de courrier centralisé**   Cette option achemine les messages sortants envoyés par l'organisation Exchange Online via votre organisation locale. À l'exception des messages envoyés à d'autres destinataires de la même organisation Exchange Online, tous les messages sortants provenant de destinataires de l'organisation Exchange Online sont envoyés via l'organisation locale. Cela vous permet d'appliquer des règles de conformité à ces messages et tout autre processus ou exigence applicables à tous vos destinataires, qu'ils concernent l'organisation Exchange Online ou l'organisation locale.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le transport de courrier centralisé est recommandé uniquement pour les organisations qui présentent des besoins de transport spécifiques liés à la conformité. Nous recommandons aux organisations Exchange types de ne pas activer le transport de courrier centralisé.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le transport de courrier centralisé est recommandé uniquement pour les organisations qui présentent des besoins de transport spécifiques liés à la conformité. Nous recommandons aux organisations Exchange types de ne pas activer le transport de courrier centralisé.
 
 
 Les messages provenant de destinataires locaux sont toujours envoyés directement à des destinataires Internet via le DNS, quelle que soit l'option sélectionnée dans l'Assistant Configuration hybride.

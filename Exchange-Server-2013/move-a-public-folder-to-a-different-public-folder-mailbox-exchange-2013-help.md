@@ -1,5 +1,5 @@
 ﻿---
-title: "Déplacement d'un dossier public vers une autre boîte aux lettres de dossiers publics: Exchange 2013 Help"
+title: 'Déplacer un dossier public vers une autre BAL: Exchange 2013 Help'
 TOCTitle: Déplacement d'un dossier public vers une autre boîte aux lettres de dossiers publics
 ms:assetid: b8744934-a3cb-443e-acce-a9a6ca5d88f6
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ906435(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-11-16_
+_**Dernière rubrique modifiée :** 2016-11-16_
 
 Si le contenu d'une boîte aux lettres de dossiers publics commence à dépasser vos quotas de boîte aux lettres, vous devrez peut-être déplacer des dossiers publics vers une autre boîte aux lettres de dossiers publics. Vous pouvez faire cela de deux manières. Pour déplacer un ou plusieurs dossiers publics qui ne contiennent pas de sous-dossiers, vous pouvez utiliser les cmdlets **PublicFolderMoveRequest**. Si vous devez déplacer une branche entière de dossier public (qui comprend le dossier public parent et tous les sous-dossiers), vous pouvez utiliser le script `Move-PublicFolderBranch.ps1` disponible lors de l'installation d'Exchange 2013.
 
@@ -41,18 +41,8 @@ Pour découvrir d'autres tâches de gestion associées aux dossiers publics, con
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -63,18 +53,8 @@ Cet exemple lance la demande de déplacement pour le dossier public \\CustomerEn
 
     New-PublicFolderMoveRequest -Folders \DeveloperReports\CustomerEngagements -TargetMailbox DeveloperReports01
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La boîte aux lettres de dossiers publics cible est verrouillée pendant que la demande de déplacement est active.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La boîte aux lettres de dossiers publics cible est verrouillée pendant que la demande de déplacement est active.
 
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-PublicFolderMoveRequest](https://technet.microsoft.com/fr-fr/library/jj878081\(v=exchg.150\)).
@@ -85,18 +65,8 @@ Cet exemple démarre la demande de déplacement des dossiers publics de la branc
 
     New-PublicFolderMoveRequest -Folders \Dev\CustomerEngagements,\Dev\RequestsforChange,\Dev\Usability -TargetMailbox DeveloperReports01
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La boîte aux lettres de dossiers publics cible est verrouillée pendant que la demande de déplacement est active.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La boîte aux lettres de dossiers publics cible est verrouillée pendant que la demande de déplacement est active.
 
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-PublicFolderMoveRequest](https://technet.microsoft.com/fr-fr/library/jj878081\(v=exchg.150\)).

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Spécifiez le texte à afficher pour les clients de messagerie qui ne prennent pas en charge Windows Rights Management: Exchange 2013 Help'
+title: 'Spécifier le txt à afficher pr clients de messag. ne prenant pas en chg RMS'
 TOCTitle: Spécifiez le texte à afficher pour les clients de messagerie qui ne prennent pas en charge Windows Rights Management
 ms:assetid: a9b2238a-b534-469c-a0c3-2768bc3d005b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee423552(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez spécifier le texte envoyé à un utilisateur quand ce dernier reçoit un message vocal protégé, mais que son client ne prend pas en charge la Gestion des droits relatifs à l'information (IRM) ou la Gestion des droits Windows.
 
@@ -45,18 +45,8 @@ Pour les autres tâches de gestion relatives aux procédures de la messagerie vo
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

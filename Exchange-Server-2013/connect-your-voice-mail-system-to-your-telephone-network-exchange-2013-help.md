@@ -1,5 +1,5 @@
 ﻿---
-title: 'Connexion de votre système de messagerie vocale à votre réseau téléphonique: Exchange 2013 Help'
+title: 'Connecter système de messag. voc. au réseau téléphonique: Exchange 2013 Help'
 TOCTitle: Connexion de votre système de messagerie vocale à votre réseau téléphonique
 ms:assetid: b606b49d-5bd3-4321-ae77-99fa4604c875
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673554(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-20_
+_**Dernière rubrique modifiée :** 2013-04-20_
 
 Après avoir déployé tout le matériel de téléphonie requis pour votre organisation, y compris vos passerelles VoIP, PBX IP et SBC, vous devez créer tous les composants de messagerie unifiée qui permettront à vos appareils téléphoniques de communiquer avec les serveurs au sein de votre organisation.
 

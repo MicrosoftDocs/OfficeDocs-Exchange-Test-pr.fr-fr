@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Après l’installation de Microsoft Exchange Server 2013, nous vous recommandons de la vérifier en exécutant la cmdlet **Get-ExchangeServer** et en examinant le fichier journal de l’installation. En cas d’échec ou d’erreur dans le processus d’installation, vous pouvez utiliser le fichier journal d’installation pour identifier la source du problème.
 

@@ -1,5 +1,5 @@
 ﻿---
-title: 'L’héritage de la liste de contrôle d’accès (ACL) est bloqué_InhBlockPublicFolderTree: Exchange 2013 Help'
+title: 'L’héritage de la liste de contrôle d’accès (ACL) est bloqué'
 TOCTitle: L’héritage de la liste de contrôle d’accès (ACL) est bloqué_InhBlockPublicFolderTree
 ms:assetid: e3b89c8a-d6f8-4864-8bf0-35a78ce87cc4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.inhblockpublicfoldertree(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 
@@ -64,18 +64,9 @@ Pour résoudre ce problème, assurez-vous que l’option « Permettre aux autor
 <p><strong>Valeur</strong> : 1</p></li>
 <li><p>Quittez l’Éditeur du Registre.</p></li>
 </ol>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, l’onglet <strong>Sécurité</strong> n’est pas activé dans la zone des propriétés de l’objet de configuration.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> Par défaut, l’onglet <strong>Sécurité</strong> n’est pas activé dans la zone des propriétés de l’objet de configuration.
 
 </li>
 <li><p>Ouvrez le Gestionnaire système Exchange, recherchez l’objet en question, cliquez avec le bouton droit sur l’objet, puis sélectionnez <strong>Propriétés</strong>.</p></li>
@@ -87,21 +78,8 @@ Pour résoudre ce problème, assurez-vous que l’option « Permettre aux autor
 </tbody>
 </table>
 
-
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous modifiez les attributs d’objets Active Directory de manière incorrecte lorsque vous utilisez ADSI Edit, l’outil LDP ou tout autre client LDAP version 3, cela risque de poser de graves problèmes. Ces problèmes peuvent nécessiter une réinstallation de Microsoft Windows Server™ 2003, d’Exchange Server 2003 ou des deux. Vous modifiez les attributs d’objets Active Directory à vos propres risques.</td>
-</tr>
-</tbody>
-</table>
-
-
+> [!Caution]  
+> Si vous modifiez les attributs d’objets Active Directory de manière incorrecte lorsque vous utilisez ADSI Edit, l’outil LDP ou tout autre client LDAP version 3, cela risque de poser de graves problèmes. Ces problèmes peuvent nécessiter une réinstallation de Microsoft Windows Server™ 2003, d’Exchange Server 2003 ou des deux. Vous modifiez les attributs d’objets Active Directory à vos propres risques.
 
 <table>
 <colgroup>
@@ -119,7 +97,7 @@ Pour résoudre ce problème, assurez-vous que l’option « Permettre aux autor
 <li><p>Sélectionnez l’onglet <strong>Sécurité</strong>, puis cliquez sur <strong>Avancé</strong>.</p></li>
 <li><p>Sélectionnez <strong>Permettre aux autorisations héritées du parent de se propager à cet objet et aux objets enfants</strong> pour réactiver l’héritage des autorisations.</p></li>
 <li><p>Sélectionnez <strong>OK</strong> deux fois pour appliquer la modification.</p></li>
-<li><p>Attendez que la réplication Active Directory propage les modifications ou forcez la réplication Active Directory en suivant les instructions de l’article de la Base de connaissances Microsoft, « Lancement de la réplication entre des partenaires de réplication directe dans Active Directory » (<a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=232072" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=232072</a>).</p></li>
+<li><p>Attendez que la réplication Active Directory propage les modifications ou forcez la réplication Active Directory en suivant les instructions de l’article de la Base de connaissances Microsoft, « Lancement de la réplication entre des partenaires de réplication directe dans Active Directory » (<a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=232072" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=232072</a>).</p></li>
 </ol></td>
 </tr>
 </tbody>

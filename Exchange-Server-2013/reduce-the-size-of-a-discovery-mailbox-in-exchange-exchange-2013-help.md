@@ -1,5 +1,5 @@
 ﻿---
-title: 'Réduction de la taille d’une boîte aux lettres de découverte dans Exchange: Exchange 2013 Help'
+title: 'Réduire la taille d’une BAL de découverte dans Exchange: Exchange 2013 Help'
 TOCTitle: Réduction de la taille d’une boîte aux lettres de découverte dans Exchange
 ms:assetid: fa762d14-f942-4728-8813-887d11441a68
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn750895(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Vous avez une boîte aux lettres de découverte qui a dépassé la limite de 50 Go ? Vous pouvez résoudre ce problème en créant des boîtes aux lettres de découverte et en copiant les résultats de la recherche de la grande boîte aux lettres de découverte dans les nouvelles.
 
@@ -87,18 +87,8 @@ L'étape suivante consiste à utiliser l'applet de commande **New-MailboxSearch*
     
       - *StartDate* et *EndDate*   Ces paramètres permettent de spécifier la plage de dates des résultats de la recherche dans la boîte aux lettres de découverte par défaut à inclure dans les résultats de la recherche.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Pour les dates, utilisez le format de date courte, mm/jj/aaaa, même si les options régionales de l’ordinateur local sont configurées avec un format différent, comme jj/mm/aaaa. Par exemple, utilisez <strong>03/01/2014</strong> pour spécifier le 1er mars 2014.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Pour les dates, utilisez le format de date courte, mm/jj/aaaa, même si les options régionales de l’ordinateur local sont configurées avec un format différent, comme jj/mm/aaaa. Par exemple, utilisez <strong>03/01/2014</strong> pour spécifier le 1er mars 2014.
     
       - *TargetMailbox*   Ce paramètre spécifie que les résultats de la recherche doivent être copiés dans la boîte aux lettres de découverte nommée « Discovery Mailbox Backup 01 ».
     

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Un groupe de disponibilité de base de données (DAG) est composé d’un maximum de 16 serveurs de boîtes aux lettres Microsoft Exchange Server 2013 qui permettent une récupération automatique au niveau de la base de données en cas de défaillance d’une base de données, d’un serveur ou du réseau. Lorsqu'un serveur de boîtes aux lettres est ajouté à un groupe de disponibilité de base de données, il fonctionne avec les autres serveurs du DAG pour assurer la récupération automatique des défaillances de la base de données, du serveur ou du réseau.
 
@@ -43,35 +43,14 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
     
       - Vous pouvez attribuer un nom au groupe de disponibilité de base de données, laisser le champ **Serveur témoin** vide et spécifier le répertoire que vous voulez créer et partager sur le serveur témoin. Dans ce scénario, l’Assistant recherchera un serveur d’accès au client dans lequel le rôle serveur de boîte aux lettres n’est pas installé et créera automatiquement le répertoire témoin spécifié sur ce serveur, partagera le répertoire et configurera le groupe de disponibilité de base de données pour utiliser ce serveur d’accès au client comme son propre serveur témoin.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si le serveur témoin que vous spécifiez n’est pas un serveur Exchange 2013 ou Exchange 2010, vous devez ajouter le groupe de sécurité universel du sous-système approuvé Exchange au groupe Administrateurs local sur le serveur témoin. Ces autorisations de sécurité sont nécessaires pour garantir qu'Exchange peut créer un répertoire et un partage sur le serveur témoin si nécessaire. Si les autorisations appropriées ne sont pas configurées, l'erreur suivante est retournée :<br />
-    <code>Error: An error occurred during discovery of the database availability group topology. Error: An error occurred while attempting a cluster operation. Error: Cluster API &quot;AddClusterNode() (MaxPercentage=12) failed with 0x80070005. Error: Access is denied.&quot;</code></td>
-    </tr>
-    </tbody>
-    </table>
-
-
+    > [!IMPORTANT]   
+	> Si le serveur témoin que vous spécifiez n’est pas un serveur Exchange 2013 ou Exchange 2010, vous devez ajouter le groupe de sécurité universel du sous-système approuvé Exchange au groupe Administrateurs local sur le serveur témoin. Ces autorisations de sécurité sont nécessaires pour garantir qu'Exchange peut créer un répertoire et un partage sur le serveur témoin si nécessaire. Si les autorisations appropriées ne sont pas configurées, l'erreur suivante est retournée :<br />
+    > <code>Error: An error occurred during discovery of the database availability group topology. Error: An error occurred while attempting a cluster operation. Error: Cluster API &quot;AddClusterNode() (MaxPercentage=12) failed with 0x80070005. Error: Access is denied.&quot;</code>
+    
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]   
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -82,26 +61,14 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
 
 2.  Cliquez sur ![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour créer un groupe de disponibilité de base de données.
 
-3.  
-    
-    Sur la page **Nouveau groupe de disponibilité de base de données**, entrez les informations suivantes pour le groupe de disponibilité de base de données :
+3.  Sur la page **Nouveau groupe de disponibilité de base de données**, entrez les informations suivantes pour le groupe de disponibilité de base de données :
     
       - **Nom du groupe de disponibilité de la base de données**   Entrez un nom valide et unique de 15 caractères maximum pour le groupe de disponibilité de base de données. Ce nom est l’équivalent d’un nom d’ordinateur ; un objet réseau de cluster (CNO) correspondant sera créé dans Active Directory avec ce nom. Ce nom est le même pour le groupe de disponibilité de base de données et le cluster sous-jacent.
     
       - **Serveur témoin**   Spécifiez un serveur témoin pour le DAG. Si vous ne renseignez pas ce champ, le système tentera de sélectionner automatiquement un serveur d’accès au client du site Active Directory local installé sur un ordinateur qui n’est pas doté du rôle serveur de boîte aux lettres, pour l’utiliser comme serveur témoin.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Si vous spécifiez un serveur témoin, vous devez utiliser un nom d’hôte ou un nom de domaine complet. L'utilisation d'une adresse IP ou d'un nom contenant des caractères génériques n'est pas prise en charge. En outre, le serveur témoin ne peut pas être membre du groupe de disponibilité de base de données (DAG).</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > Si vous spécifiez un serveur témoin, vous devez utiliser un nom d’hôte ou un nom de domaine complet. L'utilisation d'une adresse IP ou d'un nom contenant des caractères génériques n'est pas prise en charge. En outre, le serveur témoin ne peut pas être membre du groupe de disponibilité de base de données (DAG).
     
       - **Répertoire témoin**   Indiquez dans ce champ le chemin d’accès à un répertoire du serveur témoin qui sera utilisé pour stocker des données témoin. Si le répertoire n'existe pas, le système le crée pour vous sur le serveur témoin. Si vous ne renseignez pas ce champ, le répertoire par défaut (%SystemDrive%\\DAGFileShareWitnesses\\\<DAG FQDN\>) sera créé sur le serveur témoin.
     

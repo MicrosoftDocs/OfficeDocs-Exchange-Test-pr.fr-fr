@@ -1,5 +1,5 @@
 ﻿---
-title: "Créez un connecteur de réception pour recevoir des courriers électroniques depuis un système qui n'exécute pas Exchange: Exchange 2013 Help"
+title: 'Créer connect. de réception pr des e-mails d’un syst. n’exécutant pas Exchange'
 TOCTitle: Créez un connecteur de réception pour recevoir des courriers électroniques depuis un système qui n'exécute pas Exchange
 ms:assetid: 85f0864a-6502-49db-8804-16755a7292b4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ657467(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Il peut exister une situation dans laquelle vous voulez recevoir des messages provenant d’un système n’exécutant pas Exchange. Par exemple, vous avez un dispositif Network Appliance qui effectue des contrôles de stratégies et vous acheminez des messages vers votre serveur Exchange. Dans ce cas, nous supposons que le dispositif utilise le protocole SMTP. Sinon, vous devez utiliser un connecteur étranger ou un connecteur d’agent de remise.
 
@@ -33,18 +33,8 @@ Intéressé par des scénarios où cette procédure est utilisée ? Consultez l
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utilisez l’EAC pour créer un connecteur de réception pour recevoir des messages d’un dispositif de messagerie

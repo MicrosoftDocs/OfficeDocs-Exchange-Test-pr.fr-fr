@@ -1,5 +1,5 @@
 ﻿---
-title: 'Intervalles de nouvelle tentative, de renvoi et d’expiration des messages: Exchange 2013 Help'
+title: 'Intervalles de tentative, de renvoi et d’exp. des msg: Exchange 2013 Help'
 TOCTitle: Intervalles de nouvelle tentative, de renvoi et d’expiration des messages
 ms:assetid: 03020e6f-4c01-4c6e-ae47-fd74d4c4f96a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ891103(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Dans Microsoft Exchange Server 2013, les messages pour lesquels la remise échoue sont soumis à divers délais de nouvelle tentative, de renvoi et d'expiration, en fonction de la source et de la destination du message. Une *Nouvelle tentative* est une nouvelle tentative de connexion à la destination. Un *renvoi* est l'action qui consiste à renvoyer les messages à la file d'attente de soumission afin que le catégoriseur les traite une nouvelle fois. Le message *expire* une fois que toutes les tentatives de remise ont échoué au cours d’une période spécifiée. Après l'expiration d'un message, l'expéditeur est notifié de l'échec de la remise. Le message est alors supprimé de la file d'attente.
 
@@ -168,18 +168,8 @@ Les options de configuration disponibles pour les messages de notification d'ét
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Sur les serveurs de transport Hub Exchange 2007, tous les paramètres <em>ExternalDSN*</em> et <em>InternalDSN*</em> sont disponibles pour la cmdlet <strong>Set-TransportServer</strong>, et non pour la cmdlet <strong>Set-TransportConfig</strong>. Si votre organisation comporte des serveurs de transport Hub Exchange 2007, vous devez modifier ces valeurs à l'aide de la cmdlet <strong>Set-TransportServer</strong> sur chaque serveur de transport Hub Exchange 2007.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Sur les serveurs de transport Hub Exchange 2007, tous les paramètres <em>ExternalDSN*</em> et <em>InternalDSN*</em> sont disponibles pour la cmdlet <strong>Set-TransportServer</strong>, et non pour la cmdlet <strong>Set-TransportConfig</strong>. Si votre organisation comporte des serveurs de transport Hub Exchange 2007, vous devez modifier ces valeurs à l'aide de la cmdlet <strong>Set-TransportServer</strong> sur chaque serveur de transport Hub Exchange 2007.
 
 
 Retour au début
@@ -212,18 +202,8 @@ Si vous voulez resoumettre manuellement les messages qui se trouvent dans les fi
 
 Pour resoumettre manuellement les messages, il existe une autre méthode qui consiste à suspendre les messages, à les exporter vers des fichiers texte dotés d'une extension de nom de fichier .eml, puis à copier les fichiers .eml dans le répertoire de relecture de n'importe quel serveur de boîtes aux lettres ou de transport Edge. Cette méthode fonctionne pour les messages se trouvant dans les files d'attente de remise ou la file d'attente inaccessible. Les messages situés dans la file d'attente de messages incohérents présentent déjà l'état Suspendu. Il est impossible de suspendre ou d'exporter les messages situés dans la file d'attente de soumission.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous exportez des messages à partir d'une file d'attente, vous ne supprimez pas les messages de la file d'attente. Une fois les messages exportés et soumis de nouveau à l'aide du répertoire de relecture, vous devez supprimer les messages suspendus pour éviter de remettre des messages en double.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous exportez des messages à partir d'une file d'attente, vous ne supprimez pas les messages de la file d'attente. Une fois les messages exportés et soumis de nouveau à l'aide du répertoire de relecture, vous devez supprimer les messages suspendus pour éviter de remettre des messages en double.
 
 
 Pour plus d'informations, consultez la rubrique [Exportation de messages de files d'attente](export-messages-from-queues-exchange-2013-help.md).

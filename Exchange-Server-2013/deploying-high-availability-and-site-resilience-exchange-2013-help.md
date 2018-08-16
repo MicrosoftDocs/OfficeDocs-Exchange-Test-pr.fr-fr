@@ -1,5 +1,5 @@
 ﻿---
-title: 'Déploiement de haute disponibilité et de résilience de site: Exchange 2013 Help'
+title: 'Déploiement de haute dispo. et de résilience de site: Exchange 2013 Help'
 TOCTitle: Déploiement de haute disponibilité et de résilience de site
 ms:assetid: 4c4e00a4-1f57-4fdb-b9b2-2779abf381a9
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd638129(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Microsoft Exchange Server 2013 utilise le concept de « *déploiement incrémentiel* » aussi bien pour la haute disponibilité que pour la résilience de site. Il vous suffit d’installer au moins deux serveurs de boîtes aux lettres Exchange 2013 en mode autonome. Ensuite, vous les configurez, ainsi que les bases de données de boîtes aux lettres, de manière incrémentielle pour obtenir une haute disponibilité et une résilience de site, selon les besoins.
 
@@ -176,18 +176,8 @@ La commande précédente crée le groupe de disponibilité de base de données D
 
 La commande précédente configure DAG1 pour qu’il utilise un serveur témoin de remplacement de CAS4, ainsi qu’un répertoire témoin de remplacement sur CAS4 qui utilise le même chemin d’accès que celui configuré sur CAS1.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L’utilisation d’un chemin d’accès identique n’est pas obligatoire. Contoso a choisi cette option pour standardiser la configuration de son organisation.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L’utilisation d’un chemin d’accès identique n’est pas obligatoire. Contoso a choisi cette option pour standardiser la configuration de son organisation.
 
 
     Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
@@ -257,18 +247,8 @@ Dans les exemples précédents de la cmdlet **Add-MailboxDatabaseCopy**, le para
 
 Bien qu’il existe deux copies de chaque base de données active sur le réseau étendu de l’autre emplacement, l’amorçage sur le réseau étendu n’a été réalisé qu’une seule fois. Cela est dû au fait que Contoso exploite la capacité d’Exchange 2013 d’utiliser une copie passive de la base de données comme source d’amorçage. Le fait d’utiliser la cmdlet [Add-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd298105\(v=exchg.150\)) avec le paramètre *SeedingPostponed* évite l’amorçage automatique de la copie de base de données en cours de création. L’administrateur peut ensuite suspendre la copie non amorcée et, à l’aide de la cmdlet [Update-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd335201\(v=exchg.150\)) avec le paramètre *SourceServer*, il peut désigner la copie locale de la base de données comme source de l’opération d’amorçage. Il en résulte que l’amorçage de la deuxième copie de base de données ajoutée à chaque emplacement se déroule au niveau local et non sur le réseau étendu.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans l’exemple précédent, la copie de base de données non retardée est amorcée sur le réseau étendu, puis elle sert à amorcer la copie retardée de la base de données située dans le même centre de données que la copie non retardée.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans l’exemple précédent, la copie de base de données non retardée est amorcée sur le réseau étendu, puis elle sert à amorcer la copie retardée de la base de données située dans le même centre de données que la copie non retardée.
 
 
 Contoso a configuré une des copies passives de chaque base de données de boîtes aux lettres en tant que copie retardée pour qu’elle serve de protection dans l’éventualité, rare mais catastrophique, d’une corruption logique de la base de données. Par conséquent, l’administrateur utilise la cmdlet [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd351074\(v=exchg.150\)) et le paramètre *ActivationOnly* pour configurer les copies retardées comme étant bloquées pour l’activation. Ceci garantit que les copies de bases de données retardées ne seront pas activées si un basculement de base de données ou de serveur devait se produire.

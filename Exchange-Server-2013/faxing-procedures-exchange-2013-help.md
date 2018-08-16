@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-15_
+_**Dernière rubrique modifiée :** 2013-02-15_
 
 [Définir le partenaire de serveur de télécopie URI pour permettre l’envoi de télécopies](set-the-partner-fax-server-uri-to-allow-faxing-exchange-2013-help.md)
 

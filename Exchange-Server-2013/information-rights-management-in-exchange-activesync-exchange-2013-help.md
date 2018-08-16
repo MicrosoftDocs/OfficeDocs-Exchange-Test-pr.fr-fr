@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestion des droits relatifs à l’information (IRM) dans Exchange ActiveSync: Exchange 2013 Help'
+title: 'Droits relatifs à l’information dans Exchange ActiveSync: Exchange 2013 Help'
 TOCTitle: Gestion des droits relatifs à l’information (IRM) dans Exchange ActiveSync
 ms:assetid: ebf04460-4d61-4b00-86b9-85ec1dbbd6a1
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff657743(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les professionnels de l’information utilisent fréquemment la messagerie pour échanger des informations confidentielles. Pour sécuriser ces informations, les organisations peuvent utiliser la gestion des droits relatifs à l’information (IRM) afin d’appliquer une protection permanente au contenu de la messagerie. Étant donné que les appareils mobiles sont de plus en plus utilisés pour accéder à la messagerie électronique, il est important que les utilisateurs des appareils mobiles soient en mesure de créer et d’utiliser du contenu protégé par IRM.
 
@@ -94,18 +94,9 @@ Lorsque vous activez IRM dans Exchange ActiveSync, il est recommandé d’utilis
 <td><p>Activez le chiffrement pour l’appareil mobile.</p></td>
 <td><p>Cochez la case <strong>Exiger un mot de passe</strong>, puis la case <strong>Exiger le chiffrement du périphérique</strong>.</p></td>
 <td><p>Définissez le paramètre <em>RequireDeviceEncryption</em> sur <code>$true</code>.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous définissez le paramètre <em>RequireDeviceEncryption</em> sur <code>$true</code>, les appareils mobiles qui ne prennent pas en charge le chiffrement ne parviendront pas à se connecter.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Lorsque vous définissez le paramètre <em>RequireDeviceEncryption</em> sur <code>$true</code>, les appareils mobiles qui ne prennent pas en charge le chiffrement ne parviendront pas à se connecter.
 
 </td>
 </tr>

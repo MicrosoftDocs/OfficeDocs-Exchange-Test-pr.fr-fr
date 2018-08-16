@@ -1,5 +1,5 @@
 ﻿---
-title: 'Déployer des certificats pour les procédures de la messagerie unifiée: Exchange 2013 Help'
+title: 'Déployer des certificats pour les procédures de la MU: Exchange 2013 Help'
 TOCTitle: Déployer des certificats pour les procédures de la messagerie unifiée
 ms:assetid: 21631c68-86ad-4f00-a1eb-dcc2758f6bf0
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn205139(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-19_
+_**Dernière rubrique modifiée :** 2013-04-19_
 
 [Créer des certificats pour la messagerie unifiée](create-certificates-for-um-exchange-2013-help.md)
 

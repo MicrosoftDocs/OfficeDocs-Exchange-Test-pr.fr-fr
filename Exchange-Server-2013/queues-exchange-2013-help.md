@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Une *file d'attente* est un emplacement d'hébergement temporaire pour les messages attendant de passer à l'étape suivante de traitement ou de remise à destination. Chaque file d'attente représente un ensemble logique de messages traités par un serveur Exchange dans un ordre spécifique. Dans Microsoft Exchange Server 2013, les files d'attente conservent les messages avant, pendant et après leur remise. Il existe des files d'attente sur les serveurs de boîtes aux lettres et les serveurs de transport Edge. Dans cette rubrique, nous appelons les serveurs de boîtes aux lettres et serveurs de transport Edge *serveurs de transport*.
 
@@ -216,18 +216,8 @@ Les clés pour la base de données de files d'attente disponibles dans le fichie
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les paramètres par serveur personnalisés de vos fichiers de configuration d’application XML Exchange, par exemple les fichiers web.config sur les serveurs d’accès au client ou le fichier EdgeTransport.exe.config sur les serveurs de boîtes aux lettres, seront remplacés lors de l’installation d’une mise à jour cumulative Exchange. Veuillez enregistrer ces informations pour configurer à nouveau votre serveur après l’installation. Vous devez reconfigurer ces paramètres après avoir installé une mise à jour cumulative Exchange.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les paramètres par serveur personnalisés de vos fichiers de configuration d’application XML Exchange, par exemple les fichiers web.config sur les serveurs d’accès au client ou le fichier EdgeTransport.exe.config sur les serveurs de boîtes aux lettres, seront remplacés lors de l’installation d’une mise à jour cumulative Exchange. Veuillez enregistrer ces informations pour configurer à nouveau votre serveur après l’installation. Vous devez reconfigurer ces paramètres après avoir installé une mise à jour cumulative Exchange.
 
 
 Retour au début
@@ -513,18 +503,8 @@ L'Afficheur des files d'attente et pratiquement toutes les cmdlets de gestion de
 
 Exchange 2013 introduit la cmdlet **Get-QueueDigest** qui fournit une vue agrégée de niveau supérieur de l'état des files d'attentes sur tous les serveurs au sein d'une étendue spécifique telle qu'un DAG, un site Active Directory, une liste de serveurs ou la forêt Active Directory entière. Les files d’attente d’un serveur de transport Edge abonné se trouvant dans le réseau de périmètre ne sont pas incluses dans les résultats. De plus, la cmdlet **Get-QueueDigest** est disponible sur un serveur de transport Edge, mais les résultats sont limités aux files d’attente du serveur de transport Edge.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, la cmdlet <strong>Get-QueueDigest</strong> affiche les files d’attente de remise contenant au moins dix messages, et les résultats peuvent dater d’une à deux minutes. Pour obtenir des instructions sur la modification de ces valeurs par défaut, consultez la rubrique Configurer Get-QueueDigest <a href="configure-get-queuedigest-exchange-2013-help.md">Configurer Get-QueueDigest</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, la cmdlet <strong>Get-QueueDigest</strong> affiche les files d’attente de remise contenant au moins dix messages, et les résultats peuvent dater d’une à deux minutes. Pour obtenir des instructions sur la modification de ces valeurs par défaut, consultez la rubrique Configurer Get-QueueDigest <a href="configure-get-queuedigest-exchange-2013-help.md">Configurer Get-QueueDigest</a>.
 
 
 Le tableau suivant décrit les tâches de gestion que vous pouvez effectuer sur les files d'attente ou les messages qu'elles contiennent.

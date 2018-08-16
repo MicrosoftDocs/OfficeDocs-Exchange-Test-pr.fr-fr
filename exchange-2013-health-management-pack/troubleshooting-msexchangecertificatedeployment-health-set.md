@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Project Server 2013_
+_**Sapplique à :** Exchange Server 2013, Project Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-11_
+_**Dernière rubrique modifiée :** 2012-10-11_
 
 Merci d’avoir cliqué sur le lien qui vous a conduit sur cette page. Bien qu’aucun conseil pour la résolution des problèmes n’existe actuellement pour ce groupe d’intégrité, votre tentative de recherche de contenu nous aide à attribuer un ordre de priorité aux articles d’aide relatifs à la résolution de problèmes d’Exchange 2013 Management Pack. Voici quelques actions recommandées susceptibles de vous aider à résoudre les problèmes de ce groupe d’intégrité :
 

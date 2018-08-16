@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2007, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2007, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2018-03-20_
+_**Dernière rubrique modifiée :** 2018-03-20_
 
 La matrice de support d’Exchange Server offre aux administrateurs Microsoft Exchange une référence centrale permettant de localiser aisément les informations sur le niveau de support disponible pour les configurations ou les composants nécessaires, pour toutes les versions d’Microsoft Exchange prises en charge.
 
@@ -78,18 +78,8 @@ L’assistance pour Exchange 2007 a pris fin le 11 avril 2017, conformément 
 
 Le tableau suivant permet d’identifier les plateformes de système d’exploitation sur lesquelles les versions d’Exchange peuvent être exécutées. Les plateformes prises en charge sont indiquées par un X.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les versions de Windows Server et du client Windows qui ne sont pas répertoriées dans le tableau ci-dessous ne sont pas prises en charge pour être utilisées avec une version d’Exchange.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les versions de Windows Server et du client Windows qui ne sont pas répertoriées dans le tableau ci-dessous ne sont pas prises en charge pour être utilisées avec une version d’Exchange.
 
 
 
@@ -446,18 +436,8 @@ Le tableau suivant identifie les navigateurs web pris en charge pour être utili
 
 Le tableau suivant identifie les navigateurs web pris en charge pour être utilisés avec la version allégée (basique) d’Outlook Web App ou d’Outlook sur le web. Les navigateurs pris en charge sont indiqués par un X.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook Web App Basic (Outlook Web App Light) est pris en charge par les navigateurs mobiles. Toutefois, si des problèmes de rendu ou d'authentification surviennent dans un navigateur mobile, vérifiez si le problème se reproduit dans Outlook Web App Light dans le client complet d'un navigateur pris en charge. Par exemple, essayez d'utiliser Outlook Web App Light dans Safari, Chrome ou Internet Explorer. Si le problème ne se reproduit pas dans le client complet, nous vous conseillons de contacter le fabricant de l'appareil mobile pour obtenir de l'aide. Dans ces cas, nous collaborons avec le fournisseur, selon le cas.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Outlook Web App Basic (Outlook Web App Light) est pris en charge par les navigateurs mobiles. Toutefois, si des problèmes de rendu ou d'authentification surviennent dans un navigateur mobile, vérifiez si le problème se reproduit dans Outlook Web App Light dans le client complet d'un navigateur pris en charge. Par exemple, essayez d'utiliser Outlook Web App Light dans Safari, Chrome ou Internet Explorer. Si le problème ne se reproduit pas dans le client complet, nous vous conseillons de contacter le fabricant de l'appareil mobile pour obtenir de l'aide. Dans ces cas, nous collaborons avec le fournisseur, selon le cas.
 
 
 
@@ -748,33 +728,13 @@ Le tableau suivant permet d’identifier la version d’Microsoft Exchange pouva
 
 Le tableau suivant permet d’identifier la version de Microsoft.NET Framework compatible avec chaque version d’Exchange. Les versions prises en charge sont indiquées par un X.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Les versions de .NET Framework qui ne sont pas répertoriées dans le tableau ci-dessous ne sont prises en charge par aucune version d’Exchange.</strong> Cela inclut les versions mineures et de niveau de correctif logiciel de .NET Framework.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> <strong>Les versions de .NET Framework qui ne sont pas répertoriées dans le tableau ci-dessous ne sont prises en charge par aucune version d’Exchange.</strong> Cela inclut les versions mineures et de niveau de correctif logiciel de .NET Framework.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Quand vous mettez à niveau Exchange à partir d’une mise à jour cumulative (CU) non prise en charge vers la CU actuelle et qu’aucune CU intermédiaire n’est disponible, mettez d’abord à niveau Exchange vers la dernière version de .NET prise en charge par Exchange, puis mettez-le immédiatement à niveau vers la CU actuelle. Malgré tout, mettez régulièrement à jour vos serveurs Exchange en installant les mises à jour cumulatives prises en charge les plus récentes.<br />
-Microsoft ne donne aucune garantie de la réussite de la mise à niveau en utilisant cette méthode. En cas de problème, contactez les services de support technique Microsoft.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Quand vous mettez à niveau Exchange à partir d’une mise à jour cumulative (CU) non prise en charge vers la CU actuelle et qu’aucune CU intermédiaire n’est disponible, mettez d’abord à niveau Exchange vers la dernière version de .NET prise en charge par Exchange, puis mettez-le immédiatement à niveau vers la CU actuelle. Malgré tout, mettez régulièrement à jour vos serveurs Exchange en installant les mises à jour cumulatives prises en charge les plus récentes.
+> Microsoft ne donne aucune garantie de la réussite de la mise à niveau en utilisant cette méthode. En cas de problème, contactez les services de support technique Microsoft.
 
 
 

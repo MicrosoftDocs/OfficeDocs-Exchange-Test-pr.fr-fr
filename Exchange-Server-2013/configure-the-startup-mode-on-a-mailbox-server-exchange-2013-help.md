@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration du mode de démarrage sur un serveur de boîtes aux lettres: Exchange 2013 Help'
+title: 'Configuration du mode de démarrage sur un serveur de BAL: Exchange 2013 Help'
 TOCTitle: Configuration du mode de démarrage sur un serveur de boîtes aux lettres
 ms:assetid: 4457d6a0-52bd-4269-8cb5-d34d7fe9bfc3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee423544(v=EXCHG.150)
@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-15_
+_**Dernière rubrique modifiée :** 2013-02-15_
 
 Vous pouvez spécifier le mode de démarrage du service de messagerie unifiée Microsoft Exchange sur un serveur de boîtes aux lettres. Par défaut, le serveur de boîtes aux lettres démarre en mode TCP. Cependant, si vous utilisez TLS (Transport Layer Security) pour chiffrer le trafic VoIP (Voice over IP), vous devez configurer le serveur de boîtes aux lettres pour utiliser le mode TLS ou Double. nous vous recommandons de configurer les serveurs de boîtes aux lettres pour utiliser le mode de démarrage Double. En effet, tous les serveurs d'accès au client et de boîtes aux lettres peuvent répondre aux appels entrants pour tous les plans de numérotation de messagerie unifiée, qui peuvent comporter différents paramètres de sécurité (Non sécurisé, Sécurisé SIP ou Sécurisé). Si vous modifiez le mode de démarrage, vous devez redémarrer le service de messagerie unifiée Microsoft Exchange pour que la modification soit prise en compte.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, les serveurs de boîtes aux lettres sont disponibles pour répondre aux appels entrants. Il n'est pas nécessaire d'ajouter un serveur de boîtes aux lettres à un plan de numérotation de messagerie unifiée pour traiter les appels de messagerie unifiée, sauf si vous intégrez la messagerie unifiée et Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, les serveurs de boîtes aux lettres sont disponibles pour répondre aux appels entrants. Il n'est pas nécessaire d'ajouter un serveur de boîtes aux lettres à un plan de numérotation de messagerie unifiée pour traiter les appels de messagerie unifiée, sauf si vous intégrez la messagerie unifiée et Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server.
 
 
 Pour d'autres tâches de gestion relatives aux serveurs de messagerie unifiée et de boîtes aux lettres, consultez la rubrique [Procédures de services de messagerie unifiée](um-services-procedures-exchange-2013-help.md).
@@ -45,18 +35,8 @@ Pour d'autres tâches de gestion relatives aux serveurs de messagerie unifiée e
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

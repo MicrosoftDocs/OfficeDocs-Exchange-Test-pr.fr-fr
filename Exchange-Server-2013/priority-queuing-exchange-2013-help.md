@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 La *priorité de mise en file d'attente* est une fonctionnalité de Microsoft Exchange Server 2013 qui permet au niveau de priorité d'un message défini par l'expéditeur d'influencer le traitement du message par le service de transport sur le serveur de boîtes aux lettres.
 

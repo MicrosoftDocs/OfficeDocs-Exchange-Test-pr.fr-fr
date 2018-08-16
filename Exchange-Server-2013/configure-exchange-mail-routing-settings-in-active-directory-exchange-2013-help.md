@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer les paramètres de routage de messagerie Exchange dans Active Directory: Exchange 2013 Help'
+title: 'Configurer les param. de routage de messagerie Exchange dans Active Directory'
 TOCTitle: Configurer les paramètres de routage de messagerie Exchange dans Active Directory
 ms:assetid: d01f8545-c201-4a96-be39-ed4c7008afcf
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ674705(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Par défaut, Microsoft Exchange Server 2013 fait référence aux objets de lien de site IP dans Active Directory pour faciliter l’identification du chemin de routage le moins coûteux. Cependant, si vous constatez que les coûts propres aux liens de sites IP et les schémas de flux de trafic Active Directory ne sont pas optimaux pour le routage de la messagerie dans Exchange, vous pouvez configurer les paramètres d’Active Directory qui sont uniquement utilisés par Exchange pour faciliter l’optimisation du flux de messagerie.
 
@@ -29,18 +29,8 @@ Par défaut, Microsoft Exchange Server 2013 fait référence aux objets de lien
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

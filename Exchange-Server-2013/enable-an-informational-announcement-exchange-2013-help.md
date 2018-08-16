@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-19_
+_**Dernière rubrique modifiée :** 2013-04-19_
 
 Vous pouvez activer un message d'information automatique pour un standard automatique de messagerie unifiée. Lorsqu'il est activé, le message d'information automatique est lu immédiatement après le message d'accueil pendant les heures d'ouverture ou en dehors des heures d'ouverture. Par défaut, aucun message d'information automatique n'est configuré. Pour activer un message d'information automatique, créez un fichier .wav ou .wma à utiliser comme message, puis configurez le standard automatique pour utiliser ce fichier audio.
 
@@ -35,18 +35,8 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -59,18 +49,8 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
 
 3.  Dans la page **Standard automatique de messagerie unifiée**, \> **Messages d'accueil**, sous **Message d'information automatique**, cliquez sur **Modifier**, puis sur **Parcourir** pour rechercher le fichier de message d'information automatique que vous avez créé avant d'initier cette procédure.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le fichier utilisé pour le message d'accueil doit être au format .wav ou .wma.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le fichier utilisé pour le message d'accueil doit être au format .wav ou .wma.
 
 
 4.  Après avoir localisé le fichier, cliquez sur **Ouvrir**, puis sur **Enregistrer**.

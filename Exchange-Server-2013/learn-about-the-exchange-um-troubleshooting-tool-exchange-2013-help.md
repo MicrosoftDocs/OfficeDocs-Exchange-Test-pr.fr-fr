@@ -1,5 +1,5 @@
 ﻿---
-title: 'En savoir plus sur l’outil de dépannage de messagerie unifiée Exchange: Exchange 2013 Help'
+title: 'En savoir plus sur l’outil de dépannage de MU Exchange: Exchange 2013 Help'
 TOCTitle: En savoir plus sur l’outil de dépannage de messagerie unifiée Exchange
 ms:assetid: cc11bf5e-2c87-4495-b2ad-3e9a6bc81dbc
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Gg584301(v=EXCHG.150)
@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 L’outil de dépannage de la messagerie unifiée Microsoft Exchange 2010 est une cmdlet de l’environnement de ligne de commande Exchange Management Shell appelée **Test-ExchangeUMCallFlow**. Vous pouvez utiliser cet outil pour mener une série de tests de diagnostic à l’encontre de la messagerie unifiée de votre organisation. Si l’un des tests échoue, l’outil indique la raison de l’échec et les solutions possibles pour résoudre le problème. Vous pouvez utiliser l’outil de dépannage de la messagerie unifiée uniquement sur les serveurs Exchange 2010 ou version ultérieure.
 
 L’outil de dépannage de la messagerie unifiée peut être utilisé pour tester si la messagerie vocale fonctionne correctement dans les déploiements locaux et intersite. Vous pouvez utiliser cet outil dans les déploiements de messagerie unifiée qui incluent Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server 2010 ou version ultérieure, ou dans les déploiements de messagerie unifiée qui incluent des passerelles VoIP, des autocommutateurs privés (PBX) IP ou des contrôleurs de frontière de session (SBC).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L’outil de dépannage de la messagerie unifiée est utilisé à des fins de test et de dépannage. La cmdlet <strong>Test-UMConnectivity</strong>, en revanche, doit être utilisée à des fins de surveillance. La cmdlet <strong>Test-UMConnectivity</strong> est utilisée avec les packs de gestion SCOM (System Center Operations Manager) qui permettent de contrôler les serveurs de messagerie unifiée Exchange 2010, ou les serveurs de boîtes aux lettres et d’accès au client Exchange 2013, et les composants téléphoniques. La cmdlet <strong>Test-UMConnectivity</strong> effectue des tests SIP locaux et des tests de connexion locaux aux boîtes aux lettres, et peut s’exécuter comme tâche SCOM.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L’outil de dépannage de la messagerie unifiée est utilisé à des fins de test et de dépannage. La cmdlet <strong>Test-UMConnectivity</strong>, en revanche, doit être utilisée à des fins de surveillance. La cmdlet <strong>Test-UMConnectivity</strong> est utilisée avec les packs de gestion SCOM (System Center Operations Manager) qui permettent de contrôler les serveurs de messagerie unifiée Exchange 2010, ou les serveurs de boîtes aux lettres et d’accès au client Exchange 2013, et les composants téléphoniques. La cmdlet <strong>Test-UMConnectivity</strong> effectue des tests SIP locaux et des tests de connexion locaux aux boîtes aux lettres, et peut s’exécuter comme tâche SCOM.
 
 
 Pour télécharger l’outil de dépannage de la messagerie unifiée, consultez la page relative à l’[outil de dépannage de la messagerie unifiée](https://go.microsoft.com/fwlink/p/?linkid=182625).
@@ -223,21 +213,11 @@ Si vous utilisez l’outil de dépannage de la messagerie unifiée sur une versi
 
   - Microsoft .NET Framework 3.5 Service Pack 1 (SP1)   Consultez la rubrique [Microsoft .NET Framework 3.5 Service Pack 1](https://go.microsoft.com/fwlink/p/?linkid=152380).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si l’outil est destiné à être utilisé sur un ordinateur Windows Vista ou Windows Server 2008, consultez la rubrique <a href="https://go.microsoft.com/fwlink/p/?linkid=178998">Microsoft .NET Framework 3.5 Family Update pour Windows Vista x64 et Windows Server 2008 x64</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si l’outil est destiné à être utilisé sur un ordinateur Windows Vista ou Windows Server 2008, consultez la rubrique <a href="https://go.microsoft.com/fwlink/p/?linkid=178998">Microsoft .NET Framework 3.5 Family Update pour Windows Vista x64 et Windows Server 2008 x64</a>.
 
 
-  - Gestion à distance de Windows(WinRM) 2.0 et Windows PowerShell V2 (Windows6.0-KB968930.msu)   Consultez l’article 968930 de la Base de connaissances Microsoft, [Package Windows Management Framework Core (Windows PowerShell 2.0 et WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930).
+  - Gestion à distance de Windows(WinRM) 2.0 et Windows PowerShell V2 (Windows6.0-KB968930.msu)   Consultez l’article 968930 de la Base de connaissances Microsoft, [Package Windows Management Framework Core (Windows PowerShell 2.0 et WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930).
 
   - Microsoft Unified Communications Managed API 2.0 Core Runtime (UcmaRuntimeWebDownloadX64.msi)   Consultez la rubrique [Unified Communications Managed API 2.0, Core Runtime (64 bits)](https://go.microsoft.com/fwlink/p/?linkid=198175).
 

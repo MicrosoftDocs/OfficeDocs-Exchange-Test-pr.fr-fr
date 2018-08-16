@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer la rétention des éléments supprimés et les quotas d’éléments récupérables: Exchange 2013 Help'
+title: 'Config. la rétention des éléments suppr. et les quotas d’éléments récupérables'
 TOCTitle: Configurer la rétention des éléments supprimés et les quotas d’éléments récupérables
 ms:assetid: de7d667a-1c93-4364-a4f9-2aa5e3678b12
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee364752(v=EXCHG.150)
@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Lorsqu’un utilisateur supprime des éléments du dossier par défaut Éléments supprimés à l’aide des touches Suppr., Maj+Suppr. ou de l’action **Vider le dossier Éléments supprimés**, les éléments sont déplacés vers le dossier **Éléments récupérables/Suppressions**. La durée pendant laquelle les éléments supprimés sont conservés dans ce dossier est basée sur les paramètres de rétention des éléments supprimés configurés pour la base de données de boîtes aux lettres ou la boîte aux lettres. Par défaut, une base de données de boîtes aux lettres est configurée pour conserver des éléments supprimés pendant 14 jours. Le quota d’avertissements des éléments récupérables et le quota d’éléments récupérables sont respectivement définis à 20 Go et 30 Go.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avant l’expiration du délai de rétention des éléments supprimés, les utilisateurs de Microsoft Outlook et Microsoft Office Outlook Web App peuvent récupérer les éléments supprimés à l’aide de la fonctionnalité Récupérer les éléments supprimés. Pour en savoir plus sur ces fonctionnalités, consultez la rubrique « Restaurer les éléments supprimés » pour <a href="https://go.microsoft.com/fwlink/p/?linkid=198206">Outlook</a> ou <a href="https://go.microsoft.com/fwlink/p/?linkid=198207">Outlook Web App</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Avant l’expiration du délai de rétention des éléments supprimés, les utilisateurs de Microsoft Outlook et Microsoft Office Outlook Web App peuvent récupérer les éléments supprimés à l’aide de la fonctionnalité Récupérer les éléments supprimés. Pour en savoir plus sur ces fonctionnalités, consultez la rubrique « Restaurer les éléments supprimés » pour <a href="https://go.microsoft.com/fwlink/p/?linkid=198206">Outlook</a> ou <a href="https://go.microsoft.com/fwlink/p/?linkid=198207">Outlook Web App</a>.
 
 
 L’environnement de ligne de commande Exchange Management Shell vous permet de configurer des paramètres de rétention des éléments supprimés et des quotas d’éléments récupérables pour une boîte aux lettres ou une base de données de boîtes aux lettres. Les paramètres de rétention des éléments supprimés sont ignorés si l’état d’une boîte aux lettres est défini à « blocage sur place » ou « suspension pour litige ».
@@ -45,18 +35,8 @@ Pour plus d’informations sur la rétention des éléments supprimés, le dossi
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -89,54 +69,24 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer les quotas des éléments récupérables pour une boîte aux lettres
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le Centre d’administration Exchange pour configurer les quotas d’éléments récupérables pour une boîte aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le Centre d’administration Exchange pour configurer les quotas d’éléments récupérables pour une boîte aux lettres.
 
 
 Cet exemple illustre la configuration d’un quota d’avertissement des éléments récupérables de 12 Go et d’un quota d’éléments récupérables de 15 Go pour la boîte aux lettres d’April Stewart.
 
     Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -RecoverableItemsQuota 15GB -UseDatabaseQuotaDefaults $false
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour configurer une boîte aux lettres pour qu’elle utilise des quotas d’éléments récupérables différents de la base de données de boîtes aux lettres dans laquelle elle réside, vous devez définir le paramètre <em>UseDatabaseQuotaDefaults</em> à <code>$false</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour configurer une boîte aux lettres pour qu’elle utilise des quotas d’éléments récupérables différents de la base de données de boîtes aux lettres dans laquelle elle réside, vous devez définir le paramètre <em>UseDatabaseQuotaDefaults</em> à <code>$false</code>.
 
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)).
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer la rétention des éléments supprimés d’une base de données de boîtes aux lettres
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le Centre d’administration Exchange pour configurer une rétention d’éléments supprimés pour une boîte aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le Centre d’administration Exchange pour configurer une rétention d’éléments supprimés pour une boîte aux lettres.
 
 
 Cet exemple configure une période de rétention d’éléments supprimés de 10 jours pour la base de données de boîtes aux lettres MDB2.
@@ -147,18 +97,8 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer des quotas d’éléments récupérables pour une base de données de boîtes aux lettres
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le Centre d’administration Exchange pour configurer des quotas d’éléments récupérables pour une base de données de boîtes aux lettres</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le Centre d’administration Exchange pour configurer des quotas d’éléments récupérables pour une base de données de boîtes aux lettres
 
 
 Cet exemple illustre la configuration d’un quota d’avertissements des éléments récupérables de 15 Go et d’un quota d’éléments récupérables de 20 Go sur la base de données de boîtes aux lettres MDB2.

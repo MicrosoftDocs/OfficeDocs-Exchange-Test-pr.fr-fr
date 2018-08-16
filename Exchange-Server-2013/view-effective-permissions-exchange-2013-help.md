@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-09_
+_**Dernière rubrique modifiée :** 2012-10-09_
 
 Dans Microsoft Exchange Server 2013, les autorisations sont accordées à l'aide de rôles de gestion attribués à des groupes de rôles de gestion, des stratégies d'attribution de rôle de gestion, des groupes de sécurité universels ou directement aux utilisateurs. Les utilisateurs reçoivent les autorisations s'ils sont membres des groupes de rôles ou des groupes de sécurité universels ou si des stratégies d'attribution de rôle leur sont attribuées.
 
@@ -23,18 +23,8 @@ La plupart des autorisations sont accordées en fonction de l'appartenance à un
 
 Le commutateur *GetEffectiveUsers* est utilisé avec la cmdlet **Get-ManagementRoleAssignment** lorsque le paramètre *Role* est utilisé. En indiquant ce commutateur avec un rôle spécifique, la cmdlet **Get-ManagementRoleAssignment** examine tous les utilisateurs affectés au rôle, comme les groupes de rôles, les stratégies d'affectation et les groupes universels de sécurité, et répertorie les membres de chacun.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le commutateur <em>GetEffectiveUser</em> ne répertorie pas les utilisateurs membres d'un groupe de rôles étranger lié. Si un groupe de rôles lié est trouvé, <strong>Tous les membres du groupe lié</strong> s'affichent à la place de la liste des utilisateurs. Pour plus d'informations sur les autorisations couvrant plusieurs forêts, voir <a href="understanding-multiple-forest-permissions-exchange-2013-help.md">Présentation des autorisations sur plusieurs forêts</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le commutateur <em>GetEffectiveUser</em> ne répertorie pas les utilisateurs membres d'un groupe de rôles étranger lié. Si un groupe de rôles lié est trouvé, <strong>Tous les membres du groupe lié</strong> s'affichent à la place de la liste des utilisateurs. Pour plus d'informations sur les autorisations couvrant plusieurs forêts, voir <a href="understanding-multiple-forest-permissions-exchange-2013-help.md">Présentation des autorisations sur plusieurs forêts</a>.
 
 
 Pour plus d'informations sur les rôles de gestion, les groupes de rôles et stratégies d'affectation, voir [Présentation du contrôle d'accès basé sur un rôle](understanding-role-based-access-control-exchange-2013-help.md). Pour plus d'informations sur les attributions des rôles de gestion, voir [Présentation des attributions de rôles de gestion](understanding-management-role-assignments-exchange-2013-help.md).
@@ -51,18 +41,8 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives à la gestion 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour répertorier tous les utilisateurs

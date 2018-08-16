@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer l’authentification OAuth entre des organisations Exchange et Exchange Online: Exchange 2013 Help'
+title: 'Configurer l’authentification OAuth entre des org. Exchange et Exchange Online'
 TOCTitle: Configurer l’authentification OAuth entre des organisations Exchange et Exchange Online
 ms:assetid: f703e153-98e2-4268-8a6e-07a86b0a1d22
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn594521(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les déploiements hybrides Exchange 2013 uniquement configurent l’authentification OAuth lors de l’utilisation de l’Assistant Configuration hybride. Pour les déploiements hybrides Exchange 2013/2010 et Exchange 2013/2007 mixtes, la nouvelle connexion d’authentification basée sur OAuth de déploiement hybride entre les organisations Office 365 et Exchange locales n’est pas configurée par l’Assistant Configuration hybride. Ces déploiements continuent à utiliser le processus d’approbation de fédération par défaut. Toutefois, certaines fonctionnalités d’Exchange 2013 sont totalement disponibles dans votre organisation uniquement en utilisant le nouveau protocole d’authentification OAuth d’Exchange.
 
@@ -29,20 +29,9 @@ Le nouveau processus d’authentification OAuth d’Exchange permet actuellemen
 
 Nous recommandons à toutes les organisations Exchange mixtes qui implémentent un déploiement hybride avec Exchange 2013 et Exchange Online de configurer l’authentification OAuth Exchange après la configuration de leur déploiement hybride avec l’Assistant Configuration hybride.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si votre organisation sur site utilise uniquement des serveurs Exchange 2013 avec la mise à jour cumulative 5 ou version ultérieure installée, exécutez l’assistant de déploiement hybride au lieu de suivre les étapes décrites dans cette rubrique.<br />
-Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.</td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]
+> Si votre organisation sur site utilise uniquement des serveurs Exchange 2013 avec la mise à jour cumulative 5 ou version ultérieure installée, exécutez l’assistant de déploiement hybride au lieu de suivre les étapes décrites dans cette rubrique.<br />
+Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.
 
 ## Ce qu’il faut savoir avant de commencer
 
@@ -54,18 +43,8 @@ Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compati
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Comment configurer l’authentification OAuth entre vos organisations Exchange Online et Exchange locale ?
@@ -148,18 +127,8 @@ Si vous avez des doutes concernant les points de terminaison Exchange externes d
 
     Get-WebServicesVirtualDirectory | FL ExternalUrl
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour que le script suivant soit correctement exécuté, Windows PowerShell pour Azure Active Directory doit être connecté à votre client Azure AD, comme expliqué à l’étape 4 de la section précédente.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour que le script suivant soit correctement exécuté, Windows PowerShell pour Azure Active Directory doit être connecté à votre client Azure AD, comme expliqué à l’étape 4 de la section précédente.
 
 
 1.  Enregistrez le texte suivant dans un fichier de script PowerShell nommé, par exemple, **RegisterEndpoints.ps1**. Cet exemple utilise un caractère générique pour enregistrer tous les points de terminaison pour contoso.com. Remplacez **contoso.com** par une autorité de nom d’hôte pour votre organisation Exchange locale.
@@ -197,18 +166,8 @@ Vous devez également définir le point de terminaison de découverte automatiqu
 
   - https://\<votre domaine SMTP principal\>/autodiscover/autodiscover.svc
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez utiliser la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dn551183(v=exchg.150)">Get-IntraOrganizationConfiguration</a> pour vos clients locaux et Office 365 afin de déterminer les valeurs des points de terminaison requises par la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dn551178(v=exchg.150)">New-IntraOrganizationConnector</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez utiliser la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dn551183(v=exchg.150)">Get-IntraOrganizationConfiguration</a> pour vos clients locaux et Office 365 afin de déterminer les valeurs des points de terminaison requises par la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dn551178(v=exchg.150)">New-IntraOrganizationConnector</a>.
 
 
 À l’aide de Windows PowerShell, exécutez la cmdlet suivante :
@@ -237,36 +196,16 @@ Avant d’effectuer l’étape suivante, vérifiez que :
 
   - Tout serveur de boîtes aux lettres et d’accès au client Exchange 2010/2007 existant dispose de la dernière mise à jour cumulative ou du dernier Service Pack (SP).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les serveurs de boîtes aux lettres Exchange 2010/2007 peuvent continuer à utiliser des serveurs d’accès au client Exchange 2010/2007 pour les serveurs frontaux pour des connexions de fonctionnalités non hybrides. Les demandes de fonctionnalité de déploiement hybride du client Office 365 doivent se connecter aux serveurs Exchange 2013.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les serveurs de boîtes aux lettres Exchange 2010/2007 peuvent continuer à utiliser des serveurs d’accès au client Exchange 2010/2007 pour les serveurs frontaux pour des connexions de fonctionnalités non hybrides. Les demandes de fonctionnalité de déploiement hybride du client Office 365 doivent se connecter aux serveurs Exchange 2013.
 
 
 Un paramètre *AvailabilityAddressSpace* doit être configuré sur les serveurs d’accès au client antérieurs à Exchange 2013 pointant vers le point de terminaison des services web Exchange de vos serveurs d’accès au client Exchange 2013 SP1 locaux. Ce point de terminaison est le même que celui précédemment décrit à l’étape 5 ou peut être déterminé par l’exécution de la cmdlet suivante sur votre serveur d’accès au client Exchange 2013 SP1 local :
 
     Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si des informations de répertoire virtuel sont renvoyées par plusieurs serveurs, assurez-vous que vous utilisez le point de terminaison renvoyé pour le serveur d’accès au client Exchange 2013 SP1. Cela affichera une valeur égale ou supérieure à 15.0 (build 847.32) pour le paramètre <em>AdminDisplayVersion</em>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si des informations de répertoire virtuel sont renvoyées par plusieurs serveurs, assurez-vous que vous utilisez le point de terminaison renvoyé pour le serveur d’accès au client Exchange 2013 SP1. Cela affichera une valeur égale ou supérieure à 15.0 (build 847.32) pour le paramètre <em>AdminDisplayVersion</em>.
 
 
 Pour configurer l’objet *AvailabilityAddressSpace*, utilisez Exchange PowerShell et exécutez l’applet de commande suivante dans votre organisation locale :
@@ -277,18 +216,8 @@ Pour configurer l’objet *AvailabilityAddressSpace*, utilisez Exchange PowerSh
 
 Vous pouvez vérifier que l’authentification OAuth est correcte à l’aide de la cmdlet [Test-OAuthConnectivity](https://technet.microsoft.com/fr-fr/library/jj218623\(v=exchg.150\)). Cette cmdlet vérifie que les points de terminaison Exchange et Exchange Online locaux peuvent authentifier correctement les demandes l’un de l’autre.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lors de la connexion à votre organisation Exchange Online avec Remote PowerShell, il se peut que vous deviez utiliser le paramètre <em>AllowClobber</em> avec la cmdlet <strong>Import-PSSession</strong> pour importer les dernières commandes dans la session PowerShell locale.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lors de la connexion à votre organisation Exchange Online avec Remote PowerShell, il se peut que vous deviez utiliser le paramètre <em>AllowClobber</em> avec la cmdlet <strong>Import-PSSession</strong> pour importer les dernières commandes dans la session PowerShell locale.
 
 
 Pour vérifier que votre organisation Exchange locale peut se connecter correctement à Exchange Online, exécutez la commande suivante dans Exchange PowerShell dans votre organisation locale :
@@ -301,34 +230,13 @@ Pour vérifier que votre organisation Exchange Online peut se connecter correcte
 
 Par exemple, Test-OAuthConnectivity -Service EWS -TargetUri https://lync.contoso.com/metadata/json/1 -Mailbox ExchangeOnlineBox1 -Verbose | fl
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez ignorer l’erreur « Aucune boîte aux lettres n’est associée à l’adresse SMTP ». Ce qui importe, c’est que la valeur renvoyée par le paramètre <em>ResultTask</em> soit <strong>Réussite</strong>. Par exemple, la dernière section de la sortie de test doit être :<br />
-<code>ResultType: Success</code><br />
-<code>Identity: Microsoft.Exchange.Security.OAuth.ValidationResultNodeId</code><br />
-<code>IsValid: True</code><br />
-<code>ObjectState: New</code></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Vous pouvez ignorer l’erreur « Aucune boîte aux lettres n’est associée à l’adresse SMTP ». Ce qui importe, c’est que la valeur renvoyée par le paramètre <em>ResultTask</em> soit <strong>Réussite</strong>. Par exemple, la dernière section de la sortie de test doit être :<br />
+> <code>ResultType: Success</code><br />
+> <code>Identity: Microsoft.Exchange.Security.OAuth.ValidationResultNodeId</code><br />
+> <code>IsValid: True</code><br />
+> <code>ObjectState: New</code>
 
-
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

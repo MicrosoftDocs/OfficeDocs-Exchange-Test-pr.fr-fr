@@ -1,5 +1,5 @@
 ﻿---
-title: 'Pour exécuter des rapports pour les appels de messagerie vocale: Exchange 2013 Help'
+title: 'Exécuter des rapports pour les appels de messagerie vocale: Exchange 2013 Help'
 TOCTitle: Pour exécuter des rapports pour les appels de messagerie vocale
 ms:assetid: 3a292d85-ce0f-4c15-b8f2-d1fc92965437
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ659062(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Les rapports d'appels de messagerie unifiée fournissent des informations sur les appels transférés ou effectués par la messagerie unifiée. Utilisez ces rapports pour la surveillance, la résolution des problèmes et la génération de rapports sur la messagerie unifiée pour votre organisation. Vous pouvez accéder aux rapports de statistiques d'appels de messagerie unifiée à l'aide de l'outil Statistiques d'appel, et aux journaux d'appels des utilisateurs à extension messagerie unifiée à l'aide de l'outil Journaux des appels des utilisateurs.
 

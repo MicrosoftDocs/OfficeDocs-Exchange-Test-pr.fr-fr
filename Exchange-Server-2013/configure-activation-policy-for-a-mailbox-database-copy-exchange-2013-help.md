@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer la stratégie d’activation pour une copie de base de données de boîte aux lettres: Exchange 2013 Help'
+title: 'Config. la stratégie d’activ. pr une copie de BDD de BAL: Exchange 2013 Help'
 TOCTitle: Configurer la stratégie d’activation pour une copie de base de données de boîte aux lettres
 ms:assetid: 6b37ed6e-2e36-4688-b485-8fdbb8193ec8
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd298046(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-02_
+_**Dernière rubrique modifiée :** 2012-11-02_
 
 L’*activation* est le processus de transformation d’une copie passive de la base de données de boîtes aux lettres en une copie active. L’activation est exécutée automatiquement par le système dans le cadre d’une opération de basculement de base de données ou de serveur, mais peut aussi être effectuée manuellement par un administrateur dans le cadre d'une opération de switchover de base de données ou de serveur. Le blocage d’une base de données empêche cette dernière de devenir la copie active lors d’un basculement de base de données ou de serveur.
 
@@ -29,18 +29,8 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux copies de 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

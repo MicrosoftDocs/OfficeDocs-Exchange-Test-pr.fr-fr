@@ -13,22 +13,12 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-01-17_
+_**Dernière rubrique modifiée :** 2017-01-17_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous avons différé la date d’échéance du 1er juillet 2017 pour créer ds recherches de découverte électronique inaltérable dans Exchange Online (dans les plans autonomes Office 365 et Exchange Online). Mais plus tard cette année ou au début de l’année prochaine, vous ne pourrez pas créer des recherches dans Exchange Online. Pour créer des recherches de découverte électronique, veuillez commencer à utiliser la <a href="https://go.microsoft.com/fwlink/?linkid=847843">recherche de contenu</a> dans le Centre de conformité et sécurité Office 365. Lorsque nous aurons désactivé les nouvelles recherches de découverte électronique inaltérable, vous pourrez toujours modifier les recherches de découverte électronique inaltérable existantes, et la création de nouvelles recherches de découverte électronique inaltérable sera toujours prise en charge dans les déploiements hybrides Exchange Server 2013 et Exchange.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Nous avons différé la date d’échéance du 1er juillet 2017 pour créer ds recherches de découverte électronique inaltérable dans Exchange Online (dans les plans autonomes Office 365 et Exchange Online). Mais plus tard cette année ou au début de l’année prochaine, vous ne pourrez pas créer des recherches dans Exchange Online. Pour créer des recherches de découverte électronique, veuillez commencer à utiliser la <a href="https://go.microsoft.com/fwlink/?linkid=847843">recherche de contenu</a> dans le Centre de conformité et sécurité Office 365. Lorsque nous aurons désactivé les nouvelles recherches de découverte électronique inaltérable, vous pourrez toujours modifier les recherches de découverte électronique inaltérable existantes, et la création de nouvelles recherches de découverte électronique inaltérable sera toujours prise en charge dans les déploiements hybrides Exchange Server 2013 et Exchange.
 
 
 Si votre organisation satisfait à des exigences de découverte légale (dans le cadre d’une stratégie organisationnelle, d’exigences de conformité ou de procès), la découverte électronique locale dans Microsoft Exchange Server 2013 et Exchange Online vous permet d’effectuer des recherches de découverte de contenu approprié dans les boîtes aux lettres. Exchange 2013 et Exchange Online offrent également des fonctionnalités de recherche fédérée et l’intégration à Microsoft SharePoint 2013 et Microsoft SharePoint Online. Le Centre de découverte électronique de SharePoint vous permet de rechercher et de conserver tous les contenus relatifs à un cas, y compris des sites web SharePoint 2013 et SharePoint Online, des documents, des partages de fichiers indexés par SharePoint, du contenu de boîtes aux lettres dans SharePoint 2013 et du contenu Exchange archivé. Vous pouvez également utiliser la découverte électronique locale dans un environnement Exchange hybride pour effectuer des recherches sur site et dans des boîtes aux lettres en nuage dans la même catégorie.
@@ -67,18 +57,8 @@ Limites et stratégies de limitation des découvertes électroniques locales
 
 Documentation relative à la découverte électronique locale
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La découverte électronique locale est une fonctionnalité puissante qui permet à un utilisateur disposant des autorisations appropriées de recevoir potentiellement l'accès à tous les enregistrements de messagerie stockés dans l'organisation Exchange 2013 ou Exchange Online. Il est essentiel de contrôler et de surveiller les activités de découverte, notamment l'ajout de membres au groupe de rôles Gestion de la découverte, l'attribution du rôle de gestion Recherche de boîte aux lettres et l'attribution de l'autorisation d'accès aux boîtes aux lettres de découverte.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La découverte électronique locale est une fonctionnalité puissante qui permet à un utilisateur disposant des autorisations appropriées de recevoir potentiellement l'accès à tous les enregistrements de messagerie stockés dans l'organisation Exchange 2013 ou Exchange Online. Il est essentiel de contrôler et de surveiller les activités de découverte, notamment l'ajout de membres au groupe de rôles Gestion de la découverte, l'attribution du rôle de gestion Recherche de boîte aux lettres et l'attribution de l'autorisation d'accès aux boîtes aux lettres de découverte.
 
 
 ## Fonctionnement de la découverte électronique locale
@@ -113,18 +93,8 @@ Pour que les utilisateurs autorisés puissent effectuer des recherches de décou
 
 Par défaut, les autorisations pour exécuter des tâches relatives à la découverte électronique locale ne sont attribuées à aucun utilisateur ni administrateur Exchange. Les administrateurs Exchange membres du groupe de rôles Gestion de l'organisation peuvent ajouter des utilisateurs au groupe de rôles Gestion de la découverte et créer des groupes de rôles personnalisés pour restreindre l'étendue d'un gestionnaire de découverte à un sous-ensemble d'utilisateurs. Pour plus d'informations sur l'ajout d'utilisateurs au groupe de rôles Gestion de la découverte, consultez la rubrique [Attribution d’autorisations eDiscovery dans Exchange](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si un utilisateur n'a pas été ajouté au groupe de rôles Gestion de la découverte ou n'a pas reçu le rôle Recherche de boîte aux lettres, l'interface utilisateur <strong>Découverte électronique et archive permanente</strong> n'est pas affichée dans le CAE et les cmdlets de découverte électronique locale ne sont pas disponibles dans l'environnement de ligne de commande Exchange Management Shell.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si un utilisateur n'a pas été ajouté au groupe de rôles Gestion de la découverte ou n'a pas reçu le rôle Recherche de boîte aux lettres, l'interface utilisateur <strong>Découverte électronique et archive permanente</strong> n'est pas affichée dans le CAE et les cmdlets de découverte électronique locale ne sont pas disponibles dans l'environnement de ligne de commande Exchange Management Shell.
 
 
 L'audit des modifications apportées au rôle RBAC, activé par défaut, permet de s'assurer que les enregistrements adéquats sont conservés de manière à suivre l'attribution du groupe de rôles Gestion de la découverte. Vous pouvez utiliser le rapport de groupe de rôles d’administrateur pour rechercher des modifications apportées aux groupes de rôles d’administrateur. Pour plus d’informations, consultez la rubrique [Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md).
@@ -189,19 +159,9 @@ Retour au début
 
 Les utilisateurs qui ont été ajoutés au groupe de rôles Gestion de la découverte peuvent effectuer des recherches de découverte électronique locale. Vous pouvez effectuer une recherche en utilisant l'interface web du CAE. Ainsi, l'utilisation de la découverte électronique locale est simplifiée pour le personnel non technique, tels que les responsables d'enregistrements, les responsables de la mise en conformité ou les spécialistes juridiques et des ressources humaines. Vous pouvez également utiliser l'environnement de ligne de commande Exchange Management Shell pour effectuer une recherche. Pour plus d’informations, consultez la rubrique [Créer une recherche de découverte électronique inaltérable](create-an-in-place-ediscovery-search-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans les organisations locales, vous pouvez utiliser la découverte électronique locale pour rechercher des boîtes aux lettres situées sur les serveurs de boîtes aux lettres Exchange 2013. Pour rechercher des boîtes aux lettres situées sur des serveurs de boîtes aux lettres Exchange 2010, utilisez la recherche sur un serveur Exchange 2010.<br />
-Dans un déploiement hybride, qui est un environnement contenant des boîtes aux lettres à la fois sur vos serveurs de boîtes aux lettres locaux et dans une organisation en nuage, vous pouvez effectuer des recherches de découverte électronique locale de vos boîtes aux lettres en nuage en utilisant le CAE de votre organisation locale. Si vous avez l'intention de copier des messages vers une boîte aux lettres de découverte, vous devez sélectionner une boîte aux lettres de découverte locale. Les messages de boîtes aux lettres en nuage qui sont retournés dans des résultats de recherches sont copiés vers la boîte aux lettres de découverte locale. Pour en savoir plus sur les déploiements hybrides, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/jj200581(v=exchg.150)">Déploiements hybrides Exchange Server</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans les organisations locales, vous pouvez utiliser la découverte électronique locale pour rechercher des boîtes aux lettres situées sur les serveurs de boîtes aux lettres Exchange 2013. Pour rechercher des boîtes aux lettres situées sur des serveurs de boîtes aux lettres Exchange 2010, utilisez la recherche sur un serveur Exchange 2010.
+> Dans un déploiement hybride, qui est un environnement contenant des boîtes aux lettres à la fois sur vos serveurs de boîtes aux lettres locaux et dans une organisation en nuage, vous pouvez effectuer des recherches de découverte électronique locale de vos boîtes aux lettres en nuage en utilisant le CAE de votre organisation locale. Si vous avez l'intention de copier des messages vers une boîte aux lettres de découverte, vous devez sélectionner une boîte aux lettres de découverte locale. Les messages de boîtes aux lettres en nuage qui sont retournés dans des résultats de recherches sont copiés vers la boîte aux lettres de découverte locale. Pour en savoir plus sur les déploiements hybrides, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/jj200581(v=exchg.150)">Déploiements hybrides Exchange Server</a>.
 
 
 L'Assistant **Découverte électronique locale et archive permanente** dans le CAE vous permet de créer une recherche de découverte électronique locale et d'utiliser également l'archive permanente pour rechercher des résultats en attente. Quand vous créez une recherche de découverte électronique locale, un objet de recherche est créé dans la boîte aux lettres système de découverte électronique locale. Cet objet peut être utilisé pour démarrer, arrêter, modifier et supprimer la recherche. Après avoir créé la recherche, vous pouvez choisir d'obtenir une estimation des résultats de la recherche, qui contient des statistiques de mots clés vous permettant de déterminer l'efficacité de la requête. Vous pouvez également effectuer un aperçu instantané des éléments renvoyés dans la recherche, qui vous permet d'afficher le contenu des messages, le nombre de messages renvoyés depuis chaque boîte aux lettres source et le nombre total de messages. Vous pouvez utiliser ces informations pour affiner votre requête si nécessaire.
@@ -224,18 +184,8 @@ Quand vous créez une recherche de découverte électronique locale, vous devez 
         
         Exchange 2013 prend également en charge la syntaxe KQL pour des recherches de découverte électronique locale.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>La découverte électronique locale ne prend pas en charge les expressions régulières.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > La découverte électronique locale ne prend pas en charge les expressions régulières.
         
         Vous devez écrire les opérateurs logiques comme **AND** et **OR** en majuscules pour qu'ils soient considérés comme des opérateurs plutôt que des mots clés. Nous vous recommandons d'utiliser des parenthèses explicites dans toutes les requêtes combinant plusieurs opérateurs logiques (AND, OR, NOT, etc.) afin d'éviter des erreurs ou des interprétations incorrectes. Par exemple, si vous souhaitez rechercher des messages contenant soit MotA ou MotB ET soit MotC ou MotD, vous devez utiliser **(MotA OR MotB) AND (MotC OR MotD)**.
     
@@ -259,20 +209,10 @@ Quand vous utilisez la découverte électronique locale, considérez également 
 
   - **Éléments protégés par IRM**   Les messages protégés par la Gestion des droits relatifs à l'information (IRM) sont indexés par le service de recherche Exchange et donc inclus dans les résultats de la recherche s'ils correspondent aux paramètres de la requête. Les messages doivent être protégés en utilisant un cluster Active Directory Rights Management Services (AD RMS) dans la même forêt Active Directory que celle du serveur de boîtes aux lettres. Pour plus d'informations, consultez la rubrique [Gestion des droits relatifs à l’information](information-rights-management-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si le service de recherche Exchange ne parvient pas à indexer un message protégé par IRM, que ce soit en raison d'une erreur de déchiffrement ou de la désactivation de la fonctionnalité IRM, le message protégé n'est pas ajouté à la liste des éléments défaillants. Si vous choisissez d'inclure les éléments impossibles à rechercher dans les résultats de la recherche, il est possible que ces derniers n'incluent pas les messages protégés par IRM qui n'ont pas pu être déchiffrés.<br />
-    Pour inclure les messages protégés par IRM dans une recherche, vous pouvez créer une autre recherche pour inclure des messages comportant des pièces jointes .rpmsg. Vous pouvez utiliser la chaîne de requête <code>attachment:rpmsg</code> pour rechercher tous les messages protégés par IRM dans les boîtes aux lettres spécifiées, qu'elles soient correctement indexées ou pas. Il peut en résulter une duplication des résultats de la recherche dans des scénarios où une recherche renvoie des messages correspondant aux critères de recherche, notamment des messages protégés par IRM qui ont été correctement indexés. La recherche ne renvoie pas les messages protégés par IRM qui n'ont pas pu être indexés.<br />
-    L'exécution d'une deuxième recherche pour tous les messages protégés inclut également les messages protégés par IRM ayant été correctement indexés et renvoyés lors de la première recherche. De plus, il est possible que les messages protégés par IRM renvoyés lors de la deuxième recherche ne correspondent pas aux critères de la recherche, tels que les mots clés utilisés pour la première recherche.</td>
-    </tr>
-    </tbody>
-    </table>
+	> [!IMPORTANT]
+    > Si le service de recherche Exchange ne parvient pas à indexer un message protégé par IRM, que ce soit en raison d'une erreur de déchiffrement ou de la désactivation de la fonctionnalité IRM, le message protégé n'est pas ajouté à la liste des éléments défaillants. Si vous choisissez d'inclure les éléments impossibles à rechercher dans les résultats de la recherche, il est possible que ces derniers n'incluent pas les messages protégés par IRM qui n'ont pas pu être déchiffrés.
+    > Pour inclure les messages protégés par IRM dans une recherche, vous pouvez créer une autre recherche pour inclure des messages comportant des pièces jointes .rpmsg. Vous pouvez utiliser la chaîne de requête <code>attachment:rpmsg</code> pour rechercher tous les messages protégés par IRM dans les boîtes aux lettres spécifiées, qu'elles soient correctement indexées ou pas. Il peut en résulter une duplication des résultats de la recherche dans des scénarios où une recherche renvoie des messages correspondant aux critères de recherche, notamment des messages protégés par IRM qui ont été correctement indexés. La recherche ne renvoie pas les messages protégés par IRM qui n'ont pas pu être indexés.
+    > L'exécution d'une deuxième recherche pour tous les messages protégés inclut également les messages protégés par IRM ayant été correctement indexés et renvoyés lors de la première recherche. De plus, il est possible que les messages protégés par IRM renvoyés lors de la deuxième recherche ne correspondent pas aux critères de la recherche, tels que les mots clés utilisés pour la première recherche.
 
 
   - **Déduplication**   Quand vous copiez des résultats de recherche dans une boîte aux lettres de découverte, vous pouvez activer la *déduplication* des résultats de la recherche pour ne copier qu'une seule instance d'un message unique dans la boîte aux lettres de découverte. Les avantages de la déduplication sont les suivants :
@@ -289,18 +229,8 @@ Retour au début
 
 Une fois la recherche de découverte électronique locale terminée, vous pouvez afficher les estimations des résultats de recherche dans le volet d’informations du CAE. Les estimations incluent le nombre d'éléments renvoyés et la taille totale de ces éléments. Vous pouvez également afficher des statistiques sur les mots clés, qui renvoient les informations détaillées sur le nombre d'éléments renvoyés pour chaque mot clé utilisé dans la requête de recherche. Cette information est utile pour déterminer l'efficacité de la requête. Si la requête est trop large, l'ensemble de données renvoyé peut être bien plus important et demander la vérification de plus de ressources et l'augmentation des coûts de découverte électronique. Si la requête est trop étroite, le nombre d'enregistrements renvoyés peut être considérablement réduit voire nul. Vous pouvez utiliser les estimations et les statistiques sure les mots clés pour affiner la requête et répondre à vos besoins.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange 2013, les statistiques sur les mots clés incluent également des statistiques sur les propriétés hors mots clés telles que les dates, les types de messages et les expéditeurs/destinataires spécifiés dans une requête de recherche.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange 2013, les statistiques sur les mots clés incluent également des statistiques sur les propriétés hors mots clés telles que les dates, les types de messages et les expéditeurs/destinataires spécifiés dans une requête de recherche.
 
 
 Il est également possible d'afficher les résultats de la recherche pour vous assurer que les messages renvoyés contiennent le contenu recherché et affiner la recherche si nécessaire. L'aperçu de la recherche de découverte électronique affiche le nombre de messages renvoyés à partir de chaque boîte aux lettres faisant l'objet d'une recherche et le nombre total de messages renvoyés par la recherche. L'aperçu est généré rapidement et n'implique pas de copier des messages dans une boîte aux lettres de découverte.
@@ -347,18 +277,8 @@ Il existe deux types de journalisation disponibles pour les recherches de décou
 
   - **Journalisation complète**   La journalisation complète contient des informations sur tous les messages renvoyés par la recherche. Ces informations sont enregistrées dans un fichier de valeurs séparées par des virgules (.csv) qui est joint au message électronique contenant les informations de journalisation de base. Le nom de la recherche est utilisé pour le fichier .csv. Ces informations peuvent être nécessaires à des fins de mise en conformité ou de conservation des enregistrements. Pour activer la journalisation complète, vous devez sélectionner l’option **Activer la journalisation complète** lorsque vous copiez les résultats de la recherche dans une boîte aux lettres de découverte du CAE. Si vous utilisez l'environnement de ligne de commande Exchange Management Shell, spécifiez l'option de journalisation complète en utilisant le paramètre *LogLevel*.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lors de la création ou de la modification d'une recherche de découverte électronique locale via l'environnement de ligne de commande Exchange Management Shell, vous pouvez également désactiver la journalisation.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lors de la création ou de la modification d'une recherche de découverte électronique locale via l'environnement de ligne de commande Exchange Management Shell, vous pouvez également désactiver la journalisation.
 
 
 Outre le journal de recherche inclus lorsque vous copiez les résultats de la recherche dans une boîte aux lettres de découverte, Exchange journalise également les cmdlets utilisées par le CAE ou l'environnement de ligne de commande Exchange Management Shell pour créer, modifier ou supprimer des recherches de découverte électronique locale. Ces informations sont consignées dans les entrées de journal d'audit administrateur. Pour plus d'informations, consultez la rubrique [Connexion au service d’audit administrateur](administrator-audit-logging-exchange-2013-help.md).
@@ -379,54 +299,24 @@ Dans Exchange 2013, vous pouvez utiliser le nouvel Assistant **Découverte éle
 
 Quand un employé quitte une organisation, la boîte aux lettres est habituellement désactivée ou supprimée. Après avoir été désactivée, une boîte aux lettres est déconnectée du compte d'utilisateur, mais demeure dans la boîte aux lettres pendant une certaine période (30 jours par défaut). L'Assistant Dossier géré ne traite pas les boîtes aux lettres déconnectées et aucune stratégie de rétention n'est appliquée durant cette période. Vous ne pouvez pas rechercher le contenu d'une boîte aux lettres déconnectée. Quand la période de rétention de la boîte aux lettres supprimée configurée pour la base de données de boîtes aux lettres est écoulée, la boîte aux lettres est purgée de la base de données des boîtes aux lettres.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange Online, la découverte électronique locale peut rechercher du contenu dans les boîtes aux lettres inactives. Les boîtes aux lettres inactives sont des boîtes aux lettres placées en archive permanente ou mises en attente pour litige avant d'être supprimées. Les boîtes aux lettres inactives sont conservées tant qu’elles sont mises en attente. Quand l'état Archive permanente ou Mise en attente pour litige est enlevé pour une boîte aux lettres, cette dernière est définitivement supprimée. Pour plus d’informations, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/dn144876(v=exchg.150)">Gestion des boîtes aux lettres inactives dans Exchange Online</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange Online, la découverte électronique locale peut rechercher du contenu dans les boîtes aux lettres inactives. Les boîtes aux lettres inactives sont des boîtes aux lettres placées en archive permanente ou mises en attente pour litige avant d'être supprimées. Les boîtes aux lettres inactives sont conservées tant qu’elles sont mises en attente. Quand l'état Archive permanente ou Mise en attente pour litige est enlevé pour une boîte aux lettres, cette dernière est définitivement supprimée. Pour plus d’informations, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/dn144876(v=exchg.150)">Gestion des boîtes aux lettres inactives dans Exchange Online</a>.
 
 
 Dans un déploiement local, si votre organisation requiert que des paramètres de conservation soient appliqués à des messages d'employés qui ne font plus partie de l'organisation ou si vous avez besoin de conserver la boîte aux lettres d'un ancien employé pour une recherche de découverte électronique en cours ou future, vous ne devez ni désactiver, ni supprimer la boîte aux lettres. Vous pouvez prendre les mesures suivantes pour garantir que la boîte aux lettres ne soit pas accessible et que de nouveaux messages n'y soient pas remis.
 
 1.  Désactivez le compte d'utilisateur Active Directory avec les **Utilisateurs & ordinateurs Active Directory** ou bien d'autres outils ou scripts Active Directory ou d'attribution de privilèges d'accès aux comptes. Ceci empêche la connexion à des boîtes aux lettres en utilisant le compte d'utilisateur associé.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les utilisateurs disposant d'une autorisation d'accès total aux boîtes aux lettres conservent l'accès aux boîtes aux lettres. Pour empêcher l'accès des autres utilisateurs, vous devez supprimer leur autorisation d'accès total de la boîte aux lettres. Pour obtenir des informations sur la suppression des autorisations d'accès total aux boîtes aux lettres, consultez la rubrique <a href="manage-permissions-for-recipients-exchange-online-help.md">Gestion des autorisations des destinataires</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les utilisateurs disposant d'une autorisation d'accès total aux boîtes aux lettres conservent l'accès aux boîtes aux lettres. Pour empêcher l'accès des autres utilisateurs, vous devez supprimer leur autorisation d'accès total de la boîte aux lettres. Pour obtenir des informations sur la suppression des autorisations d'accès total aux boîtes aux lettres, consultez la rubrique <a href="manage-permissions-for-recipients-exchange-online-help.md">Gestion des autorisations des destinataires</a>.
 
 
 2.  Définissez une très petite taille limite des messages pouvant être envoyés ou reçus par l'utilisateur de la boîte aux lettres, par exemple 1 Ko. Ceci empêche la remise de nouveaux messages en direction et en provenance de la boîte aux lettres. Pour plus d'informations, consultez la rubrique [Configurer des limites de taille de messages pour une boîte aux lettres](configure-message-size-limits-for-a-mailbox-exchange-2013-help.md).
 
 3.  Configurez les restrictions de remise pour la boîte aux lettres de manière à ce que personne ne puisse lui envoyer de messages. Pour plus d'informations, consultez la rubrique [Configurer les restrictions de remise de message pour une boîte aux lettres](configure-message-delivery-restrictions-for-a-mailbox-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez prendre les mesures ci-dessous en liaison avec tous les autres processus de gestion de compte requis, mais sans désactiver ou supprimer la boîte aux lettres ou le compte d'utilisateur associé.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez prendre les mesures ci-dessous en liaison avec tous les autres processus de gestion de compte requis, mais sans désactiver ou supprimer la boîte aux lettres ou le compte d'utilisateur associé.
 
 
 Quand vous prévoyez d'implémenter la rétention de boîtes aux lettres pour la gestion de la rétention (MRM) ou la découverte électronique locale des messages, vous devez tenir compte de la rotation des employés. La rétention à long terme de boîtes aux lettres d'anciens employés nécessitera un stockage supplémentaire sur les serveurs de boîtes aux lettres et entraînera également une augmentation de la base de données Active Directory, étant donné que le compte d'utilisateur associé devra être retenu pendant la même durée. Des modifications de l'attribution des privilèges d'accès aux comptes et des processus de gestion dans votre organisation seront en outre nécessaires.
@@ -458,18 +348,8 @@ La stratégie de limitation par défaut contient les paramètres de limitation s
 <td><p>DiscoveryMaxConcurrency</p></td>
 <td><p>Nombre maximal de recherches de découverte électronique inaltérables pouvant être exécutées en même temps dans votre organisation</p></td>
 <td><p>2</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si une recherche de découverte électronique est lancée alors que deux recherches précédentes sont toujours en cours d’exécution, la troisième recherche ne sera pas ajoutée à la file d’attente et échouera. Vous devez patienter jusqu’à ce que l’une des recherches précédentes soit terminée avant de pouvoir lancer une nouvelle recherche.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si une recherche de découverte électronique est lancée alors que deux recherches précédentes sont toujours en cours d’exécution, la troisième recherche ne sera pas ajoutée à la file d’attente et échouera. Vous devez patienter jusqu’à ce que l’une des recherches précédentes soit terminée avant de pouvoir lancer une nouvelle recherche.
 
 </td>
 </tr>
@@ -483,18 +363,8 @@ La stratégie de limitation par défaut contient les paramètres de limitation s
 <td><p>DiscoveryMaxStatsSearchMailboxes</p></td>
 <td><p>Nombre maximal de boîtes aux lettres consultables en une seule recherche de découverte électronique inaltérable et permettant d’afficher les statistiques sur les mots-clés.</p></td>
 <td><p>100</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une fois que vous avez exécuté une estimation de recherche de découverte électronique, vous pouvez afficher les statistiques sur les mots clés. Ces statistiques présentent des informations sur le nombre d’éléments renvoyés pour chaque mot-clé utilisé dans la requête de recherche. Si plus de 100 boîtes aux lettres source sont incluses dans la recherche, une erreur sera renvoyée si vous tentez d’afficher les statistiques sur les mots-clés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Une fois que vous avez exécuté une estimation de recherche de découverte électronique, vous pouvez afficher les statistiques sur les mots clés. Ces statistiques présentent des informations sur le nombre d’éléments renvoyés pour chaque mot-clé utilisé dans la requête de recherche. Si plus de 100 boîtes aux lettres source sont incluses dans la recherche, une erreur sera renvoyée si vous tentez d’afficher les statistiques sur les mots-clés.
 
 </td>
 </tr>
@@ -517,18 +387,8 @@ La stratégie de limitation par défaut contient les paramètres de limitation s
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1   Si vous avez une organisation Office 365 et que vous lancez une recherche eDiscovery à partir du centre eDiscovery dans SharePoint Online, vous pouvez parcourir jusqu’à 1 500 boîtes aux lettres en une seule recherche.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 1   Si vous avez une organisation Office 365 et que vous lancez une recherche eDiscovery à partir du centre eDiscovery dans SharePoint Online, vous pouvez parcourir jusqu’à 1 500 boîtes aux lettres en une seule recherche.
 
 
 Dans Exchange Server 2013, vous pouvez modifier les valeurs par défaut de ces paramètres en fonction de vos besoins, ou créer des stratégies de limitation supplémentaires et les affecter aux utilisateurs avec une autorisation de gestion de découverte déléguée. Dans Exchange Online, les valeurs par défaut de ces paramètres de limitation ne peuvent pas être modifiées.

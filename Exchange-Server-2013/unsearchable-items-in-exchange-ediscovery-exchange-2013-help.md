@@ -1,5 +1,5 @@
 ﻿---
-title: 'Éléments impossibles à rechercher dans la découverte électronique Exchange: Exchange 2013 Help'
+title: 'Recherche impossible dans la découv. électr. Exchange: Exchange 2013 Help'
 TOCTitle: Éléments impossibles à rechercher dans la découverte électronique Exchange
 ms:assetid: 32550081-9af9-474b-ae7b-28f1e68cad41
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn602498(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Dans la découverte électronique locale pour Exchange Server 2013 et Exchange Online, les éléments impossibles à rechercher sont des éléments de boîtes aux lettres qui ne peuvent pas être indexés par la recherche Exchange ou qui n’ont été que partiellement indexés. Un élément impossible à rechercher contient généralement un fichier, qui ne peut pas être indexé, joint à un message électronique. Voici certaines des raisons pour lesquelles les fichiers ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu’éléments impossibles à rechercher lorsqu’ils sont joints à un message électronique :
 

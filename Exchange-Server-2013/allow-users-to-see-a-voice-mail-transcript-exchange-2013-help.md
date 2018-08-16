@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer la transcription des messages vocaux pour les utilisateurs: Exchange 2013 Help'
+title: 'Activer la transcription des msg vocaux pour les utlsr: Exchange 2013 Help'
 TOCTitle: Activer la transcription des messages vocaux pour les utilisateurs
 ms:assetid: c5192e05-905c-440f-beec-1f697edc15b3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff629381(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 La fonctionnalité Aperçu de messagerie vocale est destinée aux utilisateurs qui reçoivent leurs messages vocaux à partir de la messagerie unifiée. Grâce à une version texte des enregistrements audio, elle améliore les fonctionnalités de messagerie vocale existantes de la messagerie unifiée. Le texte du message vocal est affiché dans des messages électroniques dans MicrosoftOutlook Web App, Outlook 2010 ou une version ultérieure, ainsi que dans d'autres programmes de messagerie pris en charge. Pour plus d'informations, consultez le site consacré aux [technologies vocales de Microsoft](http://go.microsoft.com/fwlink/p/?linkid=187348).
 

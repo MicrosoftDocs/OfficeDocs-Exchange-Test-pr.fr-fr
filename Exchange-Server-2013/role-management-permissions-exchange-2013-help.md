@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les autorisations requises pour effectuer les tâches de configuration des rôles de gestion varient en fonction de la procédure exécutée ou de la cmdlet que vous voulez exécuter. Pour plus d'informations sur les rôles de gestion, voir [Présentation des rôles de gestion](understanding-management-roles-exchange-2013-help.md).
 
@@ -27,18 +27,8 @@ Pour trouver les autorisations dont vous avez besoin pour effectuer la procédur
 
 3.  Maintenant, exécutez la cmdlet **Get-ManagementRoleAssignment** pour vérifier si les groupes de rôles ou les rôles de gestion qui vous ont été attribués vous permettent de bénéficier des autorisations nécessaires pour gérer la fonctionnalité.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le rôle de gestion de rôle doit vous être attribué pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>. Si vous ne bénéficiez pas des autorisations pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>, demandez à votre administrateur Exchange de récupérer les groupes de rôles ou les rôles de gestion qui vous sont attribués.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le rôle de gestion de rôle doit vous être attribué pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>. Si vous ne bénéficiez pas des autorisations pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>, demandez à votre administrateur Exchange de récupérer les groupes de rôles ou les rôles de gestion qui vous sont attribués.
 
 
 Si vous souhaitez déléguer la possibilité de gérer une fonctionnalité à un autre utilisateur, voir [Déléguer les attributions de rôles](delegate-role-assignments-exchange-2013-help.md).
@@ -95,18 +85,9 @@ Vous pouvez utiliser les fonctionnalités du tableau ci-après pour gérer les g
 <tr class="odd">
 <td><p>Autorisations fractionnées Active Directory</p></td>
 <td><p><a href="organization-management-exchange-2013-help.md">Gestion de l’organisation</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour exécuter la commande <code>setup.exe</code> à l’aide des paramètres <em>PrepareAD</em> and <em>ActiveDirectorySplitPermissions</em>, le compte doit être membre des groupes Administrateurs du schéma et Administrateurs d’entreprise.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Pour exécuter la commande <code>setup.exe</code> à l’aide des paramètres <em>PrepareAD</em> and <em>ActiveDirectorySplitPermissions</em>, le compte doit être membre des groupes Administrateurs du schéma et Administrateurs d’entreprise.
 
 </td>
 </tr>

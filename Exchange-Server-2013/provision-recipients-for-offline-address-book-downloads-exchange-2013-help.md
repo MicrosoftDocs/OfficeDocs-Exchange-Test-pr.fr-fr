@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration des destinataires pour le téléchargement du carnet d’adresses en mode hors connexion: Exchange 2013 Help'
+title: 'Configuration des desti. pour le téléchgmt du carnet d’adresses hors connexion'
 TOCTitle: Configuration des destinataires pour le téléchargement du carnet d’adresses en mode hors connexion
 ms:assetid: 141751ac-16d3-4e3c-b70c-004aeedcb5a0
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa996345(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-15_
+_**Dernière rubrique modifiée :** 2013-02-15_
 
 Si vous utilisez plusieurs carnets d'adresses en mode hors connexion dans votre organisation, il existe plusieurs méthodes pour déterminer quels destinataires téléchargent quels carnets d'adresses en mode hors connexion :
 
@@ -37,18 +37,8 @@ Pour les autres tâches de gestion relatives aux carnets d'adresses en mode hors
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -71,18 +61,8 @@ Pour spécifier quel carnet d'adresses en mode hors connexion est téléchargé 
 
     Set-Mailbox -Identity <MailboxIDParameter> -OfflineAddressBook <OfflineAddressBookIdParameter>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le paramètre <em>Identity</em> identifie la boîte aux lettres et peut prendre l'une des valeurs suivantes : GUID, ADObjectID, nom unique (DN), <em>domain\account</em>, nom d'utilisateur, LegacyExchangeDN, SmtpAddress et alias.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le paramètre <em>Identity</em> identifie la boîte aux lettres et peut prendre l'une des valeurs suivantes : GUID, ADObjectID, nom unique (DN), <em>domain\account</em>, nom d'utilisateur, LegacyExchangeDN, SmtpAddress et alias.
 
 
 Cet exemple indique que l'utilisateur Rosalie téléchargera le carnet d'adresses en mode hors connexion nommé « mon carnet d'adresses en mode hors connexion ».

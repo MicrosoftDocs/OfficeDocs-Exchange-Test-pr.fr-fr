@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Les agents de transport utilisent les événements SMTP pour agir sur les messages lorsque ceux-ci sont déplacés dans le pipeline de transport. La plupart des agents de transport intégrés inclus dans Microsoft Exchange Server 2013 sont invisibles et ne sont pas administrables. Cependant, vous pouvez installer et configurer des agents de transport tiers sur les serveurs Exchange de votre organisation. Pour plus d’informations sur les agents de transport, consultez la rubrique [Agents de transport](transport-agents-exchange-2013-help.md).
 
@@ -31,18 +31,8 @@ Les agents de transport utilisent les événements SMTP pour agir sur les messa
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -51,18 +41,8 @@ Les agents de transport utilisent les événements SMTP pour agir sur les messa
 
 Vous ne pouvez pas utiliser l'environnement de ligne de commande Exchange Management pour gérer l'agent de transport dans le service de transport frontal sur un serveur d'accès au client. A la place, vous devez ouvrir Windows PowerShell sur le serveur d'accès au client et importer ensuite les cmdlets Exchange dans la session Windows PowerShell.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L'exécution des cmdlets Exchange dans Windows PowerShell pour les autres tâches que les agents de transport dans le service de transport frontal n'est pas prise en charge. Les conséquences sont graves si vous n'utilisez pas l'environnement de ligne de commande Exchange Management et le contrôle d’accès basé sur les rôles (RBAC) en exécutant des cmdlets Exchange dans Windows PowerShell. Vous devez toujours exécuter les cmdlets Exchange dans l'environnement de ligne de commande Exchange Management. Pour plus d'informations, voir <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Notes de publication relatives à Exchange 2013</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> L'exécution des cmdlets Exchange dans Windows PowerShell pour les autres tâches que les agents de transport dans le service de transport frontal n'est pas prise en charge. Les conséquences sont graves si vous n'utilisez pas l'environnement de ligne de commande Exchange Management et le contrôle d’accès basé sur les rôles (RBAC) en exécutant des cmdlets Exchange dans Windows PowerShell. Vous devez toujours exécuter les cmdlets Exchange dans l'environnement de ligne de commande Exchange Management. Pour plus d'informations, voir <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Notes de publication relatives à Exchange 2013</a>.
 
 
 Pour exécuter les procédures de l'agent de transport décrites dans cette rubrique dans le service de transport frontal, vous devez procéder comme suit :

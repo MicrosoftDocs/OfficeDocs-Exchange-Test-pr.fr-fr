@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2012-11-08_
+_**Dernière rubrique modifiée :** 2012-11-08_
 
 Le programme d’installation de Microsoft Exchange Server 2013 a affiché cet avertissement car aucun rôle de serveur Exchange Server 2010 ou Exchange Server 2007 n’existe dans l’organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous poursuivez l’installation d’Exchange Server 2013, vous ne serez pas en mesure d’ajouter ultérieurement des serveurs Exchange 2010 ou Exchange 2007 à l’organisation.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Si vous poursuivez l’installation d’Exchange Server 2013, vous ne serez pas en mesure d’ajouter ultérieurement des serveurs Exchange 2010 ou Exchange 2007 à l’organisation.
 
 
 Avant de déployer Exchange 2013, tenez compte des facteurs suivants qui peuvent nécessiter le déploiement de serveurs Exchange 2010 ou Exchange 2007 avant le déploiement d’Exchange 2013 :

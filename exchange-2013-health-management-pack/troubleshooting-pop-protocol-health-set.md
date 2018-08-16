@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Project Server 2013_
+_**Sapplique à :** Exchange Server 2013, Project Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-11_
+_**Dernière rubrique modifiée :** 2013-02-11_
 
 Les informations d'intégrité de POP.Protocol contrôlent le protocole POP3 Microsoft Exchange sur le serveur de boîtes aux lettres. Si vous recevez une alerte signalant que les informations d'intégrité de POP.Protocol ne sont pas bonnes, cela indique qu'un problème affecte le protocole POP3 sur le serveur d'accès au client mentionné dans l'alerte.
 

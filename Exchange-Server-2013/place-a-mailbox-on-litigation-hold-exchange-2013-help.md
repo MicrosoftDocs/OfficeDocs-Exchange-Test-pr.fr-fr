@@ -1,5 +1,5 @@
 ﻿---
-title: 'Placement d’une boîte aux lettres en conservation pour litige: Exchange 2013 Help'
+title: 'Placer une boîte aux lettres en conservation pour litige: Exchange 2013 Help'
 TOCTitle: Placement d’une boîte aux lettres en conservation pour litige
 ms:assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn743673(v=EXCHG.150)
@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-10-18_
+_**Dernière rubrique modifiée :** 2016-10-18_
 
 Vous pouvez placer une boîte aux lettres en conservation pour litige pour conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés et les versions originales des éléments modifiés. Lorsque vous placez une conservation pour litige sur la boîte aux lettres d’un utilisateur, le contenu de la boîte aux lettres d’archivage de l’utilisateur (si elle est activée) est également placé en conservation. Les éléments supprimés et modifiés sont conservés pendant une période déterminée, ou jusqu’à ce que vous supprimiez la boîte aux lettres de la conservation pour litige. Tous ces éléments de boîte aux lettres sont renvoyés dans une recherche de [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La conservation pour litige conserve les éléments dans le dossier Éléments récupérables de la boîte aux lettres de l’utilisateur. En fonction du nombre et de la taille des éléments supprimés ou modifiés, la taille du dossier Éléments récupérables de la boîte aux lettres peut augmenter rapidement. Le dossier Éléments récupérables est configuré avec un quota élevé par défaut. Dans Exchange Online, ce quota est automatiquement augmenté lorsque vous placez une boîte aux lettres en conservation pour litige. Dans Exchange Server 2013, nous vous recommandons de surveiller chaque semaine les boîtes aux lettres mises en conservation pour litige pour vous assurer qu’elles n’atteignent pas les limites de quotas du dossier Éléments récupérables.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La conservation pour litige conserve les éléments dans le dossier Éléments récupérables de la boîte aux lettres de l’utilisateur. En fonction du nombre et de la taille des éléments supprimés ou modifiés, la taille du dossier Éléments récupérables de la boîte aux lettres peut augmenter rapidement. Le dossier Éléments récupérables est configuré avec un quota élevé par défaut. Dans Exchange Online, ce quota est automatiquement augmenté lorsque vous placez une boîte aux lettres en conservation pour litige. Dans Exchange Server 2013, nous vous recommandons de surveiller chaque semaine les boîtes aux lettres mises en conservation pour litige pour vous assurer qu’elles n’atteignent pas les limites de quotas du dossier Éléments récupérables.
 
 
 ## Ce qu’il faut savoir avant de commencer
@@ -81,18 +71,8 @@ Dans cet exemple, la boîte aux lettres bsuneja@contoso.com est placée en conse
 
     Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous placez une boîte aux lettres en conservation pour litige indéfiniment (en ne spécifiant aucune durée), la valeur de la propriété de boîte aux lettres <em>LitigationHoldDuration</em> est définie sur <code>Unlimited</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous placez une boîte aux lettres en conservation pour litige indéfiniment (en ne spécifiant aucune durée), la valeur de la propriété de boîte aux lettres <em>LitigationHoldDuration</em> est définie sur <code>Unlimited</code>.
 
 
 ## Utilisation de l’environnement de ligne de commande Exchange Management Shell pour placer une boîte aux lettres en conservation pour litige et conserver les éléments pour une durée spécifiée

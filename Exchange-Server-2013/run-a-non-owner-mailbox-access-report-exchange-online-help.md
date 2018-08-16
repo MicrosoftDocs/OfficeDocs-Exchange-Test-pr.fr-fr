@@ -1,5 +1,5 @@
 ﻿---
-title: 'Exécuter un rapport d’accès aux boîtes aux lettres par des non-propriétaires: Exchange 2013 Help'
+title: 'Exécuter un rapport d’accès aux boîtes aux lettres par des non-propriétaires'
 TOCTitle: Exécuter un rapport d’accès aux boîtes aux lettres par des non-propriétaires
 ms:assetid: dbbef170-e726-4735-abf1-2857db9bb52d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ150575(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online_
+_**Sapplique à :** Exchange Online_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le rapport d’accès aux boîtes aux lettres par des non-propriétaires dans le Centre d’administration Exchange répertorie les boîtes aux lettres auxquelles un individu autre que la personne qui possède la boîte aux lettres a accédé. Lorsqu’un non-propriétaire accède à une boîte aux lettres, Microsoft Exchange enregistre les informations à propos de cette action dans un journal d’audit de la boîte aux lettres stocké comme un message électronique dans un dossier caché dans la boîte aux lettres qui est auditée. Les entrées de ce journal sont affichées comme résultats de la recherche et incluent une liste de boîtes aux lettres auxquelles un non-propriétaire a accédé, qui a accédé à la boîte aux lettres et quand, les actions exécutées par le non-propriétaire et si l’action a réussi. Par défaut, les entrées du journal d’audit de boîtes aux lettres sont conservées pendant 90 jours.
 
@@ -29,18 +29,8 @@ Lorsque vous activez l’enregistrement d’audit de boîte aux lettres pour une
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Activer l’enregistrement d’audit de boîte aux lettres
@@ -81,18 +71,8 @@ Revenir au début
 
 3.  Pour afficher l’accès par des non-propriétaires à une boîte aux lettres spécifique, sélectionnez la boîte aux lettres dans la liste de boîtes aux lettres. Consultez les résultats de la recherche dans le volet d’informations.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Souhaitez-vous affiner les résultats de la recherche ? Sélectionnez la date de début, la date de fin, ou les deux, et sélectionnez des boîtes aux lettres spécifiques dans lesquelles effectuer la recherche. Cliquez sur <strong>Rechercher</strong> pour réexécuter le rapport.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Souhaitez-vous affiner les résultats de la recherche ? Sélectionnez la date de début, la date de fin, ou les deux, et sélectionnez des boîtes aux lettres spécifiques dans lesquelles effectuer la recherche. Cliquez sur <strong>Rechercher</strong> pour réexécuter le rapport.
 
 
 ## Rechercher des types spécifiques d’accès non-propriétaire
@@ -129,18 +109,8 @@ Lorsque vous exécutez un rapport d’accès aux boîtes aux lettres par des non
 
 Le tableau suivant répertorie les actions effectuées par des utilisateurs non propriétaires pouvant être consignées à l’aide de l’enregistrement d’audit des boîtes aux lettres. Dans le tableau, **Oui** indique que l’action peut être consignée pour ce type de connexion et **Non** indique qu’une action ne peut pas être consignée. Un astérisque (**\***) indique que l’action est consignée par défaut lorsque l’enregistrement d’audit est activé pour la boîte aux lettres. Si vous souhaitez suivre des actions qui ne sont pas consignées par défaut, vous devez utiliser PowerShell pour activer l’enregistrement de ces actions.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Un administrateur disposant de l’autorisation Accès complet sur la boîte aux lettres d’un utilisateur est considéré comme un utilisateur délégué.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Un administrateur disposant de l’autorisation Accès complet sur la boîte aux lettres d’un utilisateur est considéré comme un utilisateur délégué.
 
 
 
@@ -230,18 +200,8 @@ Le tableau suivant répertorie les actions effectuées par des utilisateurs non 
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>* Enregistré par défaut si l’enregistrement d’audit est activé pour une boîte aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> * Enregistré par défaut si l’enregistrement d’audit est activé pour une boîte aux lettres.
 
 
 Revenir au début

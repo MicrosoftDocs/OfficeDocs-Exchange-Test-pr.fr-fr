@@ -1,5 +1,5 @@
 ﻿---
-title: 'Préinstallation de l’objet nom de cluster pour un groupe de disponibilité de base de données: Exchange 2013 Help'
+title: 'Préinstallation de l’objet nom de cluster pr un groupe de dispo. de BDD'
 TOCTitle: Préinstallation de l’objet nom de cluster pour un groupe de disponibilité de base de données
 ms:assetid: 51ebf2f6-8a02-44ef-a489-ca361cb0f63a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff367878(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-08-14_
+_**Dernière rubrique modifiée :** 2014-08-14_
 
 Dans des environnements où la création d’un compte d’ordinateur est limitée ou des comptes d’ordinateurs sont créés dans un conteneur autre que le conteneur d’ordinateurs par défaut, vous pouvez préinstaller l’objet nom de cluster (CNO), puis le configurer en lui affectant des autorisations. La préparation du CNO est également nécessaire pour les membres du DAG Windows Server 2012 ou Windows Server 2012 R2 en raison des modifications apportées aux autorisations dans Windows pour les objets Ordinateur. Lors du déploiement d’un groupe de disponibilité de base de données (DAG) à l’aide des serveurs de boîtes aux lettres qui exécutent Windows Server 2012 ou Windows Server 2012 R2, vous devez préinstaller et configurer le CNO, sauf si vous déployez un DAG sans point d’accès d’administration du cluster. Les DAG sans points d’accès d’administration du cluster n’utilisent pas de CNO ; la préinstallation n’est pas nécessaire pour ces DAG.
 
@@ -33,18 +33,8 @@ Vous pouvez créer et désactiver un compte d’ordinateur pour l’objet résea
 
   - Une fois les étapes suivantes terminées, attendez que la réplication d’Active Directory se produise. Après réplication de l’objet, vous pouvez ajouter le premier membre au groupe de disponibilité de base de données.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

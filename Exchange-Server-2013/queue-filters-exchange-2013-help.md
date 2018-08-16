@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le filtrage génère différentes vues de files d'attente. Vous utilisez les propriétés de file d'attente comme options de filtrage. En spécifiant des critères de filtrage, vous pouvez localiser rapidement des files d'attente et agir sur ces dernières. Les scénarios suivants illustrent la manière dont vous pouvez utiliser le filtrage des files d'attente pour gérer le flux de messagerie :
 

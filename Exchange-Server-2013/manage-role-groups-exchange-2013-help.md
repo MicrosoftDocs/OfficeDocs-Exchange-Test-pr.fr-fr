@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-08_
+_**Dernière rubrique modifiée :** 2012-10-08_
 
 Cette rubrique vous explique comment ajouter, supprimer, copier et afficher des groupes de rôles de gestion dans Microsoft Exchange Server 2013. Elle vous indique également comment ajouter, supprimer et répertorier des rôles de gestion dans des groupes de rôles, et comment modifier des délégués et des étendues de gestion dans des groupes de rôles. Pour plus d’informations sur les groupes de rôles dans Exchange 2013, consultez la rubrique [Présentation des groupes de rôles de gestion](understanding-management-role-groups-exchange-2013-help.md).
 
@@ -29,18 +29,8 @@ Autres tâches de gestion relatives aux groupes de rôles, voir [Autorisations](
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -81,18 +71,8 @@ Pour vérifier que vous avez bien créé un groupe de rôles, procédez comme su
 
 Si vous disposez d’un groupe de rôles qui contient les autorisations que vous souhaitez octroyer aux utilisateurs, mais que vous voulez appliquer une autre étendue de gestion, ou supprimer ou ajouter un ou deux rôle(s) de gestion sans devoir ajouter tous les autres rôles manuellement, vous pouvez copier le groupe de rôles existant.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le CAE pour copier un groupe de rôles si vous avez utilisé l'environnement de ligne de commande Exchange Management Shell pour configurer plusieurs étendues de rôle de gestion ou des étendues exclusives au niveau du groupe de rôles. Dans ce cas, vous devez utiliser les procédures d’environnement de ligne de commande décrites plus loin dans cette rubrique pour copier le groupe de rôles. Pour plus d’informations sur les étendues de rôle de gestion, consultez la rubrique <a href="understanding-management-role-scopes-exchange-2013-help.md">Présentation des portées du rôle de gestion</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le CAE pour copier un groupe de rôles si vous avez utilisé l'environnement de ligne de commande Exchange Management Shell pour configurer plusieurs étendues de rôle de gestion ou des étendues exclusives au niveau du groupe de rôles. Dans ce cas, vous devez utiliser les procédures d’environnement de ligne de commande décrites plus loin dans cette rubrique pour copier le groupe de rôles. Pour plus d’informations sur les étendues de rôle de gestion, consultez la rubrique <a href="understanding-management-role-scopes-exchange-2013-help.md">Présentation des portées du rôle de gestion</a>.
 
 
 1.  Dans le CAE, accédez à **Autorisations** \> **Rôles admin**.
@@ -216,18 +196,8 @@ L’ajout d’un rôle de gestion à un groupe de rôles est le moyen le plus ef
 
 ## Utiliser le CAE pour ajouter un rôle de gestion à un groupe de rôles
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le Centre d'administration Exchange (CAE) pour ajouter des rôles à un groupe de rôles si vous avez utilisé l'environnement de ligne de commande Exchange Management Shell pour configurer plusieurs étendues de rôle de gestion ou des étendues exclusives au niveau du groupe de rôles. Si vous avez configuré plusieurs étendues ou étendues exclusives sur le groupe de rôles, vous devez utiliser les procédures de l’environnement de ligne de commande Exchange Management Shell ultérieurement dans cette rubrique pour ajouter des rôles au groupe de rôles. Pour plus d’informations sur les étendues de rôle de gestion, consultez la rubrique <a href="understanding-management-role-scopes-exchange-2013-help.md">Présentation des portées du rôle de gestion</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le Centre d'administration Exchange (CAE) pour ajouter des rôles à un groupe de rôles si vous avez utilisé l'environnement de ligne de commande Exchange Management Shell pour configurer plusieurs étendues de rôle de gestion ou des étendues exclusives au niveau du groupe de rôles. Si vous avez configuré plusieurs étendues ou étendues exclusives sur le groupe de rôles, vous devez utiliser les procédures de l’environnement de ligne de commande Exchange Management Shell ultérieurement dans cette rubrique pour ajouter des rôles au groupe de rôles. Pour plus d’informations sur les étendues de rôle de gestion, consultez la rubrique <a href="understanding-management-role-scopes-exchange-2013-help.md">Présentation des portées du rôle de gestion</a>.
 
 
 1.  Dans CAE, accédez à **Autorisations** \> **Rôles admin**.
@@ -344,35 +314,15 @@ Pour vérifier que vous avez bien ajouté des rôles à un groupe de rôles, pro
 
 Le meilleur moyen pour révoquer des autorisations accordées à un groupe d'administrateurs ou d'utilisateurs spécialistes est de supprimer un rôle d'un groupe de rôles de gestion. Si vous ne souhaitez pas accorder à des administrateurs ou à des utilisateurs spécialistes l’autorisation de gérer une fonctionnalité, vous devez supprimer le rôle de gestion du groupe qui gère ces autorisations. Une fois le rôle supprimé, les membres du groupe de rôles ne seront plus autorisés à gérer la fonctionnalité.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Certains groupes de rôles (comme le groupe de rôles Gestion de l’organisation) limitent les rôles pouvant être supprimés. Pour plus d'informations, voir <a href="understanding-management-role-groups-exchange-2013-help.md">Présentation des groupes de rôles de gestion</a>.<br />
-Si un administrateur est membre d’un autre groupe qui contient des rôles de gestion permettant à l’administrateur de gérer la fonctionnalité, vous devez soit supprimer l’administrateur des autres groupes de rôles, soit supprimer le rôle autorisant la gestion de la fonctionnalité des autres groupes de rôles.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Certains groupes de rôles (comme le groupe de rôles Gestion de l’organisation) limitent les rôles pouvant être supprimés. Pour plus d'informations, voir <a href="understanding-management-role-groups-exchange-2013-help.md">Présentation des groupes de rôles de gestion</a>.
+> Si un administrateur est membre d’un autre groupe qui contient des rôles de gestion permettant à l’administrateur de gérer la fonctionnalité, vous devez soit supprimer l’administrateur des autres groupes de rôles, soit supprimer le rôle autorisant la gestion de la fonctionnalité des autres groupes de rôles.
 
 
 ## Utiliser le CAE pour supprimer un rôle de gestion dans un groupe de rôles
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le Centre d'administration Exchange pour supprimer des rôles d'un groupe de rôles si vous avez utilisé l'environnement de ligne de commande Exchange Management Shell pour configurer plusieurs étendues ou des étendues exclusives au niveau du groupe de rôles. Si vous avez configuré des étendues multiples ou exclusives pour le groupe de rôles, vous devez supprimer les rôles du groupe de rôles en utilisant les procédures de l’environnement de ligne de commande Exchange Management Shell décrites ci-après. Pour plus d’informations sur les étendues de rôle de gestion, consultez la rubrique <a href="understanding-management-role-scopes-exchange-2013-help.md">Présentation des portées du rôle de gestion</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le Centre d'administration Exchange pour supprimer des rôles d'un groupe de rôles si vous avez utilisé l'environnement de ligne de commande Exchange Management Shell pour configurer plusieurs étendues ou des étendues exclusives au niveau du groupe de rôles. Si vous avez configuré des étendues multiples ou exclusives pour le groupe de rôles, vous devez supprimer les rôles du groupe de rôles en utilisant les procédures de l’environnement de ligne de commande Exchange Management Shell décrites ci-après. Pour plus d’informations sur les étendues de rôle de gestion, consultez la rubrique <a href="understanding-management-role-scopes-exchange-2013-help.md">Présentation des portées du rôle de gestion</a>.
 
 
 1.  Dans le CAE, accédez à **Autorisations** \> **Rôles admin**.
@@ -425,18 +375,8 @@ Pour plus d’informations sur les étendues de rôles de gestion et les attribu
 
 Lorsque vous utilisez le Centre d'administration Exchange pour modifier l'étendue d'un groupe de rôles, vous modifiez en réalité l'étendue de toutes les attributions de rôles entre le groupe de rôles et chacun des rôles de gestion affectés au groupe de rôles. Si vous voulez modifier l'étendue des attributions de rôles spécifiques, vous devez utiliser les procédures de l’environnement de ligne de commande Exchange Management Shell décrites plus loin dans cette rubrique.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le Centre d'administration Exchange pour gérer les étendues des attributions de rôles entre les rôles et un groupe de rôles si vous avez utilisé l'environnement de lignes de commande Exchange Management Shell pour configurer plusieurs étendues ou des étendues exclusives de ces attributions de rôles. Si vous avez configuré plusieurs étendues ou des étendues exclusives sur ces attributions de rôles, vous devez utiliser les procédures de l’environnement de ligne de commande Exchange Management Shell décrites plus loin dans cette rubrique pour gérer les étendues. Pour plus d’informations sur les étendues de rôle de gestion, consultez la rubrique <a href="understanding-management-role-scopes-exchange-2013-help.md">Présentation des portées du rôle de gestion</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le Centre d'administration Exchange pour gérer les étendues des attributions de rôles entre les rôles et un groupe de rôles si vous avez utilisé l'environnement de lignes de commande Exchange Management Shell pour configurer plusieurs étendues ou des étendues exclusives de ces attributions de rôles. Si vous avez configuré plusieurs étendues ou des étendues exclusives sur ces attributions de rôles, vous devez utiliser les procédures de l’environnement de ligne de commande Exchange Management Shell décrites plus loin dans cette rubrique pour gérer les étendues. Pour plus d’informations sur les étendues de rôle de gestion, consultez la rubrique <a href="understanding-management-role-scopes-exchange-2013-help.md">Présentation des portées du rôle de gestion</a>.
 
 
 1.  Dans le CAE, accédez à **Autorisations** \> **Rôles admin**.
@@ -473,18 +413,8 @@ Vous utilisez uniquement les paramètres dont vous avez besoin pour configurer l
 
     Get-ManagementRoleAssignment -RoleAssignee "Sales Recipient Management" | Set-ManagementRoleAssignment -CustomRecipientWriteScope "Direct Sales Employees"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le commutateur <em>WhatIf</em> vous permet de vérifier que seules les attributions de rôle devant être modifiées sont modifiées. Exécutez la commande précédente avec le commutateur <em>WhatIf</em> pour vérifier les résultats, puis supprimez le commutateur <em>WhatIf</em> pour appliquer les modifications.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le commutateur <em>WhatIf</em> vous permet de vérifier que seules les attributions de rôle devant être modifiées sont modifiées. Exécutez la commande précédente avec le commutateur <em>WhatIf</em> pour vérifier les résultats, puis supprimez le commutateur <em>WhatIf</em> pour appliquer les modifications.
 
 
 Pour plus d’informations sur la modification des attributions des rôles de gestion, voir [Modifier une attribution de rôle](change-a-role-assignment-exchange-2013-help.md).
@@ -545,33 +475,12 @@ Pour vérifier que vous avez bien modifié l'étendue d'une attribution de rôle
 
 Les délégués de groupe de rôles sont des utilisateurs ou des groupes universels de sécurité qui peuvent ajouter ou supprimer des membres dans un groupe de rôle ou encore modifier les propriétés d’un groupe de rôles. En ajoutant ou supprimant des délégués de groupe de rôles, vous pouvez contrôler quels sont ceux autorisés à gérer un groupe de rôles.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Après avoir ajouté un délégué à un groupe de rôles, ce dernier peut uniquement être géré par les délégués du groupe de rôles ou par les utilisateurs auxquels est affecté, directement ou indirectement le rôle de gestion Gestion des rôles.<br />
-Si un utilisateur reçoit, directement ou indirectement, le rôle Gestion des rôles et qu’il n’est pas ajouté comme délégué du groupe de rôles, l’utilisateur doit utiliser le commutateur <em>BypassSecurityGroupManagerCheck</em> sur les cmdlets <strong>Add-RoleGroupMember</strong>, <strong>Remove-RoleGroupMember</strong>, <strong>Update-RoleGroupMember</strong> et <strong>Set-RoleGroup</strong> pour gérer un groupe de rôles.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Après avoir ajouté un délégué à un groupe de rôles, ce dernier peut uniquement être géré par les délégués du groupe de rôles ou par les utilisateurs auxquels est affecté, directement ou indirectement le rôle de gestion Gestion des rôles.<br />
+> Si un utilisateur reçoit, directement ou indirectement, le rôle Gestion des rôles et qu’il n’est pas ajouté comme délégué du groupe de rôles, l’utilisateur doit utiliser le commutateur <em>BypassSecurityGroupManagerCheck</em> sur les cmdlets <strong>Add-RoleGroupMember</strong>, <strong>Remove-RoleGroupMember</strong>, <strong>Update-RoleGroupMember</strong> et <strong>Set-RoleGroup</strong> pour gérer un groupe de rôles.
 
-
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le CAE pour ajouter un délégué à un groupe de rôles.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le CAE pour ajouter un délégué à un groupe de rôles.
 
 
 ## Utilisation du Shell pour ajouter un délégué à un groupe de rôles
@@ -586,18 +495,8 @@ Pour modifier la liste des délégués sur un groupe de rôles, vous utilisez le
     
         $RoleGroup.ManagedBy += (Get-User <user to add>).Identity
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Utilisez la cmdlet <strong>Get-Group</strong> si vous souhaitez ajouter un groupe de sécurité universel.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Utilisez la cmdlet <strong>Get-Group</strong> si vous souhaitez ajouter un groupe de sécurité universel.
 
 
 3.  Répétez l’étape 2 pour chaque délégué que vous souhaitez ajouter.
@@ -626,18 +525,8 @@ Pour modifier la liste des délégués sur un groupe de rôles, vous utilisez le
     
         $RoleGroup.ManagedBy -= (Get-User <user to remove>).Identity
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Utilisez la cmdlet <strong>Get-Group</strong> si vous souhaitez supprimer un groupe de sécurité universelle.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Utilisez la cmdlet <strong>Get-Group</strong> si vous souhaitez supprimer un groupe de sécurité universelle.
 
 
 3.  Répétez l’étape 2 pour chaque délégué que vous souhaitez supprimer.

@@ -1,5 +1,5 @@
 ﻿---
-title: "Démarrage du service routeur d'appels de messagerie unifiée Microsoft Exchange: Exchange 2013 Help"
+title: 'Démarrage du service routeur d’appels de messagerie unifiée Microsoft Exchange'
 TOCTitle: Démarrage du service routeur d'appels de messagerie unifiée Microsoft Exchange
 ms:assetid: 8b7e1a4c-87b3-4477-a95f-6b41cf2d38f0
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673542(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-16_
+_**Dernière rubrique modifiée :** 2012-11-16_
 
 Le composant logiciel enfichable Services de la console de gestion (MMC) Microsoft ou cmd.exe à l'invite de commandes vous permet de démarrer le service routeur des appels de messagerie unifiée MicrosoftExchange sur un serveur d'accès au client. Par défaut, le service routeur des appels de messagerie unifiée MicrosoftExchange démarre après l'installation d'un serveur d'accès au client. Cependant, il est parfois nécessaire de redémarrer ou d'arrêter le service routeur des appels de messagerie unifiée MicrosoftExchange manuellement, par exemple, si après avoir mis le serveur d'accès au client hors connexion, vous devez le remettre en ligne.
 
@@ -33,18 +33,8 @@ Pour les tâches de gestion supplémentaires relatives aux serveurs d'accès au 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

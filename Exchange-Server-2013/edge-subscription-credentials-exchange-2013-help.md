@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Cette rubrique explique la façon dont le processus d’abonnement Edge configure des informations d’identification utilisées pour aider à sécuriser le processus de synchronisation EdgeSync et la façon dont EdgeSync utilise ces informations d’identification pour établir une connexion LDAP sécurisée entre un serveur de boîtes aux lettres Exchange 2013 et un serveur de transport Edge. Pour plus d’informations sur le processus d’abonnement Edge, consultez la rubrique [Abonnements Edge](edge-subscriptions-exchange-2013-help.md).
 
@@ -101,18 +101,8 @@ Le fichier XML d’abonnement Edge contient les données affichées dans le tab
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les informations d’identification du compte ESBRA sont écrites dans le fichier d’abonnement Edge en texte clair. Vous devez protéger ce fichier tout au long du processus d’abonnement. Après l’importation du fichier d’abonnement Edge sur votre organisation Exchange, vous devez immédiatement supprimer le fichier d’abonnement Edge du serveur de transport Edge, du partage réseau que vous avez utilisé pour importer le fichier dans votre organisation Exchange et des supports amovibles.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les informations d’identification du compte ESBRA sont écrites dans le fichier d’abonnement Edge en texte clair. Vous devez protéger ce fichier tout au long du processus d’abonnement. Après l’importation du fichier d’abonnement Edge sur votre organisation Exchange, vous devez immédiatement supprimer le fichier d’abonnement Edge du serveur de transport Edge, du partage réseau que vous avez utilisé pour importer le fichier dans votre organisation Exchange et des supports amovibles.
 
 
 Retour au début

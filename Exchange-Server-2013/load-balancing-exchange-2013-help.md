@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 L'équilibrage de charge permet de répartir le trafic entre les serveurs. Il permet de distribuer les connexions clients entrantes sur une série de points de terminaison (par exemple, des serveurs d'accès au client) pour s'assurer qu'aucun d'eux ne reçoive une part disproportionnée de la charge. L'équilibrage de charge peut également offrir une redondance par basculement en cas de défaillance d'un ou plusieurs points de terminaison. En utilisant l'équilibrage de charge avec Exchange Server 2013, vous vous assurez que vos utilisateurs continuent à recevoir le service Exchange en cas de défaillance d'un ordinateur. L'équilibrage de charge permet également à votre déploiement de traiter plus de trafic qu'un seul serveur, tout en offrant un seul nom d'hôte pour vos clients.
 

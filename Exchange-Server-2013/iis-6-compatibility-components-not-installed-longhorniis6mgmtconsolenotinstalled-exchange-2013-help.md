@@ -1,5 +1,5 @@
 ﻿---
-title: 'Composants de compatibilité IIS 6 non installés_LonghornIIS6MgmtConsoleNotInstalled: Exchange 2013 Help'
+title: 'Composants de compatibilité IIS 6 non installés'
 TOCTitle: Composants de compatibilité IIS 6 non installés_LonghornIIS6MgmtConsoleNotInstalled
 ms:assetid: 8358eafb-def7-4b8d-8fe1-623bc5a0e20e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.longhorniis6mgmtconsolenotinstalled(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2012-06-05_
+_**Dernière rubrique modifiée :** 2012-06-05_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 

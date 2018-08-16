@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-06-18_
+_**Dernière rubrique modifiée :** 2014-06-18_
 
 Microsoft Exchange Server 2013 fournit des fonctionnalités administratives et d'autres améliorations qui améliorent la gestion globale du protocole TLS (Transport Layer Security). Au fur et à mesure de l'utilisation de cette fonctionnalité, vous devez en savoir plus sur certaines des nouvelles fonctions du protocole TLS. Certains termes et concepts s'appliquent à plusieurs fonctionnalités TLS. Dans cette rubrique, de courtes explications pour chaque fonctionnalité vous sont fournies et vous aideront à comprendre certaines différences, ainsi que la terminologie générale relative au protocole TLS et à la fonctionnalité de sécurité du domaine définie :
 

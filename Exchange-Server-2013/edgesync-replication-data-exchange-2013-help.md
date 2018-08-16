@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Lorsque vous déployez un serveur de transport Edge, il n’a pas accès à Active Directory. Pour effectuer des tâches de recherche de destinataires et d’agrégation de listes fiables, et pour implémenter la sécurité de domaine à l’aide d’une authentification MTLS (Mutual Transport Layer Security), le serveur de transport Edge a besoin de données d’Active Directory. Ces données sont répliquées vers le serveur de transport Edge à l’aide d’EdgeSync et le serveur de transport Edge stocke toutes les informations répliquées dans Active Directory Lightweight Directory Services (AD LDS).
 
@@ -111,18 +111,8 @@ Les informations sur le destinataire répliquées vers AD LDS incluent uniqueme
 
   - **Liste des expéditeurs approuvés, des expéditeurs bloqués et des destinataires approuvés**   Les listes des expéditeurs approuvés, des expéditeurs bloqués et des destinataires approuvés qui sont définies dans l’instance Outlook de chaque destinataire sont regroupées et répliquées vers AD LDS. Ces paramètres sont stockés dans la base de données de boîtes aux lettres où se trouve la boîte aux lettres du destinataire. La collection de listes fiables d’un utilisateur Outlook correspond aux données combinées provenant de la liste des expéditeurs approuvés, de la liste des destinataires approuvés, de la liste des expéditeurs bloqués et des contacts externes de l’utilisateur. Le fait que des données de collection de listes fiables soient disponibles dans AD LDS permet au serveur de transport Edge de filtrer correctement les expéditeurs, réduisant ainsi les coûts fixes d’exploitation pour le filtrage des messages. Ces informations sont envoyées sous la forme de données hachées.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Bien que les données des destinataires approuvés soient stockées dans Outlook et puissent être regroupées en une collection de listes fiables sur l’instance AD LDS sur le serveur de transport Edge, la fonctionnalité de filtrage du contenu n’agit pas sur les données des destinataires approuvés.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Bien que les données des destinataires approuvés soient stockées dans Outlook et puissent être regroupées en une collection de listes fiables sur l’instance AD LDS sur le serveur de transport Edge, la fonctionnalité de filtrage du contenu n’agit pas sur les données des destinataires approuvés.
 
 
   - **Paramètres de blocage du courrier indésirable par destinataire**   Vous pouvez utiliser la cmdlet **Set-Mailbox** pour attribuer des paramètres de seuil de blocage du courrier indésirable par destinataire qui diffèrent des paramètres de blocage du courrier indésirable à l’échelle de l’organisation. Si vous configurez des paramètres de blocage du courrier indésirable par destinataire, ces derniers remplacent les paramètres utilisés à l’échelle de l’organisation. La réplication de ces paramètres vers AD LDS permet de prendre en considération les paramètres de destinataire avant de relayer le message à l’organisation Exchange. Ces informations sont envoyées sous la forme de données hachées.

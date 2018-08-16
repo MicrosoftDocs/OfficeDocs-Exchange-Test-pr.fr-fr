@@ -1,5 +1,5 @@
 ﻿---
-title: "Liste de contrôle : mise à niveau de la messagerie unifiée d'Exchange 2010 vers celle d'Exchange 2013: Exchange 2013 Help"
+title: 'Liste de ctrl : màn de MU Exchange 2010 vers vrs de 2013: Exchange 2013 Help'
 TOCTitle: "Liste de contrôle : mise à niveau de la messagerie unifiée d'Exchange 2010 vers celle d'Exchange 2013"
 ms:assetid: 799bd1b1-a918-4bd8-911e-e6ca08bd7b52
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn169228(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Utilisez cette liste de vérification lors de la mise à niveau de la messagerie unifiée Exchange 2010 vers Exchange 2013. Veillez à vous référer à ces informations lors de la mise à niveau de votre organisation Exchange 2010 et de votre déploiement de messagerie unifiée vers Exchange 2013. Pour obtenir des instructions détaillées sur la mise à niveau vers la messagerie unifiée Exchange 2013, consultez la rubrique [Mise à niveau de la messagerie unifiée d'Exchange 2010 vers celle d'Exchange 2013](upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md).
 
@@ -64,18 +64,9 @@ Pour obtenir des conseils détaillés sur la mise à niveau de la messagerie uni
 <tr class="even">
 <td><p></p></td>
 <td><p>Installer les serveurs d’accès au client et les serveurs de boîtes aux lettres requis</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez déployer au moins un serveur de boîtes aux lettres Exchange 2013 dans votre organisation avant de configurer les passerelles VoIP ou les PBX IP pour envoyer le trafic SIP ou RTP de messagerie unifiée vers les serveurs d’accès client Exchange 2013.</td>
-</tr>
-</tbody>
-</table>
+
+> [!WARNING]
+> Vous devez déployer au moins un serveur de boîtes aux lettres Exchange 2013 dans votre organisation avant de configurer les passerelles VoIP ou les PBX IP pour envoyer le trafic SIP ou RTP de messagerie unifiée vers les serveurs d’accès client Exchange 2013.
 
 </td>
 <td><p><a href="install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md">Installer Exchange 2013 à l’aide de l’Assistant Installation</a></p></td>
@@ -94,18 +85,9 @@ Pour obtenir des conseils détaillés sur la mise à niveau de la messagerie uni
 <td><p></p></td>
 <td><p>Déplacer la boîte aux lettres système Exchange 2010 utilisée pour les messages personnalisés de la messagerie unifiée vers Exchange 2013</p></td>
 <td><p><a href="mailbox-moves-in-exchange-2013-exchange-2013-help.md">Déplacements de boîtes aux lettres dans Exchange 2013</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si la boîte aux lettres système a déjà été déplacée, vous pouvez toujours importer/exporter manuellement les messages personnalisés à partir d’Exchange 2010 à l’aide de la page <a href="import-and-export-custom-greetings-announcements-menus-and-prompts-exchange-2013-help.md">Importer et exporter des invites, des annonces, des menus et des messages d’accueil personnalisés</a>.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> Si la boîte aux lettres système a déjà été déplacée, vous pouvez toujours importer/exporter manuellement les messages personnalisés à partir d’Exchange 2010 à l’aide de la page <a href="import-and-export-custom-greetings-announcements-menus-and-prompts-exchange-2013-help.md">Importer et exporter des invites, des annonces, des menus et des messages d’accueil personnalisés</a>.
 
 </td>
 </tr>

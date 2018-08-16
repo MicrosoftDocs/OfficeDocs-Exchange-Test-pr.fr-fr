@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-01-28_
+_**Dernière rubrique modifiée :** 2013-01-28_
 
 Les journaux de transport fournissent des informations sur l'activité dans le pipeline de transport. Les journaux de transport suivants sont disponibles dans Microsoft Exchange Server 2013 :
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-17_
+_**Dernière rubrique modifiée :** 2012-10-17_
 
 Microsoft Exchange Server 2013 comprend 15 attributs d’extension. Vous pouvez utiliser ces attributs pour ajouter des informations sur un destinataire, comme l’ID d’un employé, l’unité d’organisation, ou autre valeur personnalisée pour laquelle aucun attribut n’existe. Ces attributs personnalisés sont désignés dans Active Directory de **ms-Exch-Extension-Attribute1** à **ms-Exch-Extension-Attribute15**. Dans l’environnement de ligne de commande Exchange Management Shell, les paramètres correspondants sont *CustomAttribute1* à *CustomAttribute15*. Ces attributs ne sont pas utilisés par tous les composants Exchange. Ils peuvent servir au stockage de données Active Directory sans devoir étendre le schéma Active Directory.
 
@@ -65,18 +65,8 @@ Pour plus d’informations sur les propriétés à valeurs multiples, consultez 
 
 Dans de nombreux déploiements Exchange, créer une stratégie d’adresses de messagerie pour tous les destinataires d’une unité d’organisation est un scénario courant. L’unité d’organisation est une propriété filtrable pouvant être utilisée dans le paramètre *RecipientFilter* d’une stratégie d’adresses de messagerie ou d’une liste d’adresses.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les groupes de distribution dynamique disposent d’un paramètre supplémentaire que vous pouvez utiliser pour les restreindre aux destinataires d’une unité d’organisation particulière ou conteneur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les groupes de distribution dynamique disposent d’un paramètre supplémentaire que vous pouvez utiliser pour les restreindre aux destinataires d’une unité d’organisation particulière ou conteneur.
 
 
 Si les destinataires de cette unité d’organisation ne partagent aucune propriété commune par laquelle vous pouvez la filtrer, comme un département ou un emplacement, vous pouvez renseigner l’un des attributs personnalisés avec une valeur commune, comme illustré dans l’exemple.
@@ -95,18 +85,8 @@ Cet exemple crée un groupe de distribution dynamique basé sur les destinataire
 
     New-DynamicDistributionGroup -Name "Sales Users and Contacts" -IncludedRecipients "MailboxUsers,MailContacts" -ConditionalCustomAttribute1 "SalesOU"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez utiliser le paramètre <em>IncludedRecipients</em> si vous utilisez un paramètre <em>Conditional</em>. En outre, vous ne pouvez pas utiliser de paramètres <em>Conditional</em> si vous utilisez le paramètre <em>RecipientFilter</em>. Si vous désirez des filtres supplémentaires pour créer votre groupe de distribution dynamique, des stratégies d’adresses de messagerie, ou des listes d’adresses, utilisez le paramètre <em>RecipientFilter</em>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez utiliser le paramètre <em>IncludedRecipients</em> si vous utilisez un paramètre <em>Conditional</em>. En outre, vous ne pouvez pas utiliser de paramètres <em>Conditional</em> si vous utilisez le paramètre <em>RecipientFilter</em>. Si vous désirez des filtres supplémentaires pour créer votre groupe de distribution dynamique, des stratégies d’adresses de messagerie, ou des listes d’adresses, utilisez le paramètre <em>RecipientFilter</em>.
 
 
 ## Exemple d’attribut personnalisé utilisant le paramètre ExtensionCustomAttributes

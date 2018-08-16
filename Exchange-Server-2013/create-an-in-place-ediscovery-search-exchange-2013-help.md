@@ -13,22 +13,12 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-01-17_
+_**Dernière rubrique modifiée :** 2017-01-17_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous avons différé la date d’échéance du 1er juillet 2017 pour créer ds recherches de découverte électronique inaltérable dans Exchange Online (dans les plans autonomes Office 365 et Exchange Online). Mais plus tard cette année ou au début de l’année prochaine, vous ne pourrez pas créer des recherches dans Exchange Online. Pour créer des recherches de découverte électronique, veuillez commencer à utiliser la <a href="https://go.microsoft.com/fwlink/?linkid=847843">recherche de contenu</a> dans le Centre de conformité et sécurité Office 365. Lorsque nous aurons désactivé les nouvelles recherches de découverte électronique inaltérable, vous pourrez toujours modifier les recherches de découverte électronique inaltérable existantes, et la création de nouvelles recherches de découverte électronique inaltérable sera toujours prise en charge dans les déploiements hybrides Exchange Server 2013 et Exchange.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Nous avons différé la date d’échéance du 1er juillet 2017 pour créer ds recherches de découverte électronique inaltérable dans Exchange Online (dans les plans autonomes Office 365 et Exchange Online). Mais plus tard cette année ou au début de l’année prochaine, vous ne pourrez pas créer des recherches dans Exchange Online. Pour créer des recherches de découverte électronique, veuillez commencer à utiliser la <a href="https://go.microsoft.com/fwlink/?linkid=847843">recherche de contenu</a> dans le Centre de conformité et sécurité Office 365. Lorsque nous aurons désactivé les nouvelles recherches de découverte électronique inaltérable, vous pourrez toujours modifier les recherches de découverte électronique inaltérable existantes, et la création de nouvelles recherches de découverte électronique inaltérable sera toujours prise en charge dans les déploiements hybrides Exchange Server 2013 et Exchange.
 
 
 La [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md) vous permet d'effectuer une recherche dans tout le contenu d'une boîte aux lettres, y compris dans les éléments supprimés et les versions originales d'éléments modifiés pour les utilisateurs placés en [Conservation inaltérable et conservation pour litige](in-place-hold-and-litigation-hold-exchange-2013-help.md).
@@ -51,18 +41,8 @@ La [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md)
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser le Centre d'administration Exchange (CAE) pour créer une recherche de découverte électronique locale
@@ -77,18 +57,8 @@ Comme expliqué précédemment, pour créer des recherches de découverte élect
 
 4.  Dans la page **Boîtes aux lettres**, sélectionnez les boîtes aux lettres dans lesquelles effectuer la recherche. Vous pouvez rechercher dans toutes les boîtes aux lettres ou sélectionner celles qui sont propres à la recherche. Dans Exchange Online, vous pouvez également sélectionner des groupes Office 365 comme source de contenu pour la recherche.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous ne pouvez pas utiliser l’option <strong>Rechercher toutes les boîtes aux lettres</strong> pour bloquer toutes les boîtes aux lettres. Pour créer une archive permanente, vous devez sélectionner <strong>Spécifier les boîtes aux lettres à rechercher</strong>. Pour plus d'informations, consultez la rubrique <a href="create-or-remove-an-in-place-hold-exchange-2013-help.md">Créer ou supprimer une conservation inaltérable</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Vous ne pouvez pas utiliser l’option <strong>Rechercher toutes les boîtes aux lettres</strong> pour bloquer toutes les boîtes aux lettres. Pour créer une archive permanente, vous devez sélectionner <strong>Spécifier les boîtes aux lettres à rechercher</strong>. Pour plus d'informations, consultez la rubrique <a href="create-or-remove-an-in-place-hold-exchange-2013-help.md">Créer ou supprimer une conservation inaltérable</a>.
 
 
 5.  Dans la page **Requête de recherche**, complétez les champs suivants :
@@ -99,19 +69,9 @@ Comme expliqué précédemment, pour créer des recherches de découverte élect
         
         ![Configurer une requête de recherche de découverte électronique](images/Dd298021.a3626569-8700-421e-8b4e-7ec520b28272(EXCHG.150).png "Configurer une requête de recherche de découverte électronique")  
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les champs <strong>De :</strong> et <strong>À/Cc/Cci :</strong> sont connectés par un opérateur <strong>OR</strong> dans la requête de recherche qui est créée lorsque vous exécutez la recherche. Cela signifie que tous les messages envoyés ou reçus par les utilisateurs spécifiés (et correspondant aux autres critères de recherche) sont inclus dans les résultats de la recherche.<br />
-    Les dates sont connectées par un opérateur <strong>AND</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Les champs <strong>De :</strong> et <strong>À/Cc/Cci :</strong> sont connectés par un opérateur <strong>OR</strong> dans la requête de recherche qui est créée lorsque vous exécutez la recherche. Cela signifie que tous les messages envoyés ou reçus par les utilisateurs spécifiés (et correspondant aux autres critères de recherche) sont inclus dans les résultats de la recherche.
+    > Les dates sont connectées par un opérateur <strong>AND</strong>.
 
 
 6.  Dans la page **Paramètres du blocage sur place**, vous pouvez cocher la case **Mettre en attente le contenu correspondant à la requête de recherche des boîtes aux lettres sélectionnées** et sélectionnez une des options suivantes pour placer des éléments en blocage local :
@@ -120,18 +80,8 @@ Comme expliqué précédemment, pour créer des recherches de découverte élect
     
       - **Spécifier le nombre de jours pour mettre en attente les articles en fonction de leur date de réception** Utilisez cette option pour bloquer les articles pendant une période donnée. Par exemple, vous pouvez utiliser cette option si votre organisation exige que tous les messages soient conservés pendant au moins sept ans. Vous pouvez utiliser une archive locale *basée sur le temps* parallèlement à une stratégie de rétention pour garantir que les éléments seront supprimés dans sept ans.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Lorsque des boîtes aux lettres ou des articles sont mis en archive permanente à des fins juridiques, il est généralement recommandé de bloquer les articles indéfiniment et de supprimer la suspension lorsque le jugement ou l'enquête est terminé.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > Lorsque des boîtes aux lettres ou des articles sont mis en archive permanente à des fins juridiques, il est généralement recommandé de bloquer les articles indéfiniment et de supprimer la suspension lorsque le jugement ou l'enquête est terminé.
 
 
 7.  Cliquez sur **Terminer** pour enregistrer la recherche et renvoyer une estimation de la taille totale et du nombre d’éléments qui seront renvoyés par la recherche d’après les critères que vous spécifiez. Les estimations sont affichées dans le volet d'informations. Cliquez sur **Actualiser**![Icône Actualiser](images/Dd353189.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif "Icône Actualiser") pour mettre à jour les informations affichées dans le volet de détails.
@@ -156,34 +106,14 @@ Cet exemple crée la recherche de découverte électronique locale appelée Disc
 
   - Niveau de journalisation : Complet
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous ne précisez pas d’autres paramètres de recherche lorsque vous effectuez une recherche de découverte électronique locale, tous les éléments dans les boîtes aux lettres sources spécifiées sont renvoyés dans les résultats. Si vous ne précisez pas de boîtes aux lettres à rechercher, la recherche a lieu dans toutes les boîtes aux lettres de votre organisation Exchange ou Exchange Online.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Si vous ne précisez pas d’autres paramètres de recherche lorsque vous effectuez une recherche de découverte électronique locale, tous les éléments dans les boîtes aux lettres sources spécifiées sont renvoyés dans les résultats. Si vous ne précisez pas de boîtes aux lettres à rechercher, la recherche a lieu dans toutes les boîtes aux lettres de votre organisation Exchange ou Exchange Online.
 
 
     New-MailboxSearch "Discovery-CaseId012" -StartDate "01/01/2009" -EndDate "12/31/2011" -SourceMailboxes "DG-Finance" -TargetMailbox "Discovery Search Mailbox" -SearchQuery '"Contoso" AND "Project A"' -MessageTypes Email -IncludeUnsearchableItems -LogLevel Full
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous utilisez les paramètres <em>StartDate</em> et <em>EndDate</em>, vous devez utiliser le format de date mm/jj/aaaa, même si les paramètres de votre ordinateur local sont configurés pour utiliser un format de date différent, comme jj/mm/aaaa. Par exemple, pour rechercher des messages envoyés entre le 1er avril 2013 et le 1er juillet 2013, vous devez utiliser <strong>04/01/2013</strong> et <strong>07/01/2013</strong> pour les dates de début et de fin.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lorsque vous utilisez les paramètres <em>StartDate</em> et <em>EndDate</em>, vous devez utiliser le format de date mm/jj/aaaa, même si les paramètres de votre ordinateur local sont configurés pour utiliser un format de date différent, comme jj/mm/aaaa. Par exemple, pour rechercher des messages envoyés entre le 1er avril 2013 et le 1er juillet 2013, vous devez utiliser <strong>04/01/2013</strong> et <strong>07/01/2013</strong> pour les dates de début et de fin.
 
 
 Cet exemple crée une recherche de découverte électronique inaltérable appelée HRCase090116 qui recherche les messages électroniques envoyés par Alex Darrow à Sara Davis en 2015.
@@ -210,18 +140,8 @@ Après avoir créé une recherche de découverte électronique locale, vous pouv
     
       - Cliquez sur **Aperçu des résultats de recherche** dans le volet des détails pour prévisualiser les résultats une fois l’estimation de la recherche terminée. La sélection de cette option ouvre la fenêtre **Aperçu de la recherche eDiscovery**. Tous les messages renvoyés par les boîtes aux lettres qui ont fait l’objet d’une recherche sont affichés.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Les boîtes aux lettres qui ont fait l’objet d’une recherche sont répertoriées dans le volet de droite de la fenêtre <strong>Aperçu de la recherche eDiscovery</strong>. Pour chaque boîte aux lettres, le nombre d’éléments renvoyés et la taille totale de ces éléments sont également affichés. Tous les éléments renvoyés par la recherche sont répertoriés dans le volet de droite et peuvent être triés par date la plus récente ou la plus ancienne. Les éléments de chaque boîte aux lettres ne peuvent pas s’afficher dans le volet de droite en cliquant sur une boîte aux lettres dans le volet de gauche. Pour afficher les éléments renvoyés par une boîte aux lettres spécifique, vous pouvez copier les résultats de la recherche et afficher les éléments dans la boîte aux lettres de découverte.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > Les boîtes aux lettres qui ont fait l’objet d’une recherche sont répertoriées dans le volet de droite de la fenêtre <strong>Aperçu de la recherche eDiscovery</strong>. Pour chaque boîte aux lettres, le nombre d’éléments renvoyés et la taille totale de ces éléments sont également affichés. Tous les éléments renvoyés par la recherche sont répertoriés dans le volet de droite et peuvent être triés par date la plus récente ou la plus ancienne. Les éléments de chaque boîte aux lettres ne peuvent pas s’afficher dans le volet de droite en cliquant sur une boîte aux lettres dans le volet de gauche. Pour afficher les éléments renvoyés par une boîte aux lettres spécifique, vous pouvez copier les résultats de la recherche et afficher les éléments dans la boîte aux lettres de découverte.
     
     ![Obtenir une estimation et un aperçu des résultats de la recherche](images/Dd353189.57e0fc2d-71bf-42aa-aa4b-4a77148f2b43(EXCHG.150).gif "Obtenir une estimation et un aperçu des résultats de la recherche")  
 
@@ -232,12 +152,15 @@ Retour au début
 Vous pouvez utiliser le commutateur *EstimateOnly* pour renvoyer uniquement une estimation des résultats de la recherche et ne pas copier les résultats dans une boîte aux lettres de découverte. Vous devez lancer une recherche d’estimation uniquement avec la cmdlet **Start-MailboxSearch**. Vous pouvez ensuite récupérer les résultats de la recherche estimés avec la cmdlet **Get-MailboxSearch**.
 
 Par exemple, vous devez exécuter les commandes suivantes pour créer une recherche de découverte électronique, puis afficher une estimation des résultats de la recherche :
-
+```
     New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeKeywordStatistics
-
+```
+```
     Start-MailboxSearch "FY13 Q2 Financial Results"
-
+```
+```
     Get-MailboxSearch "FY13 Q2 Financial Results"
+```
 
 Pour afficher des informations spécifiques sur les résultats de la recherche estimés à partir de l’exemple précédent, vous pouvez exécuter la commande suivante :
 

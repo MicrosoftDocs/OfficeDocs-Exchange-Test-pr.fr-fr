@@ -1,5 +1,5 @@
 ﻿---
-title: 'Recherche et suppression de messages - Aide de l’administrateur: Exchange 2013 Help'
+title: 'Recherche et suppression de messages - Aide de l’admin.: Exchange 2013 Help'
 TOCTitle: Recherche et suppression de messages - Aide de l’administrateur
 ms:assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff459253(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-12-20_
+_**Dernière rubrique modifiée :** 2017-12-20_
 
 Les administrateurs peuvent utiliser la cmdlet **Search-Mailbox** pour faire une recherche dans des boîtes aux lettres utilisateur, puis supprimer des messages d’une boîte aux lettres.
 
@@ -63,18 +63,8 @@ Revenir en haut de la page
 
 Cet exemple permet d'effectuer une recherche dans la boîte aux lettres d'April Stewart au niveau des messages dont le champ Objet contient l'expression « Your bank statement » et de supprimer les messages de la boîte aux lettres source sans copier les résultats de la recherche dans un autre dossier. Comme expliqué précédemment, le rôle de gestion Importation/Exportation de boîte aux lettres doit vous avoir été attribué pour que vous puissiez supprimer des messages de la boîte aux lettres d’un utilisateur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Quand vous utilisez la cmdlet <strong>Search-Mailbox</strong> avec le commutateur <em>DeleteContent</em>, les messages sont définitivement supprimés de la boîte aux lettres source. Avant de supprimer définitivement des messages, nous vous conseillons d'utiliser le commutateur <em>LogOnly</em> pour générer un journal des messages identifiés lors de la recherche avant qu'ils ne soient supprimés ou de copier les messages vers une autre boîte aux lettres avant leur suppression de la boîte aux lettres source.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Quand vous utilisez la cmdlet <strong>Search-Mailbox</strong> avec le commutateur <em>DeleteContent</em>, les messages sont définitivement supprimés de la boîte aux lettres source. Avant de supprimer définitivement des messages, nous vous conseillons d'utiliser le commutateur <em>LogOnly</em> pour générer un journal des messages identifiés lors de la recherche avant qu'ils ne soient supprimés ou de copier les messages vers une autre boîte aux lettres avant leur suppression de la boîte aux lettres source.
 
 
     Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -DeleteContent

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-13_
+_**Dernière rubrique modifiée :** 2012-10-13_
 
 La stratégie de noms de groupes pour les groupes de distribution est appliquée uniquement aux groupes créés par l'utilisateur. Lorsque d'autres administrateurs ou vous-même utilisez le Centre d'administration Exchange pour créer des groupes de distribution, la stratégie de noms de groupes est ignorée et n'est pas appliquée au nom de groupe.
 
@@ -29,18 +29,8 @@ Toutefois, si vous utilisez l'environnement de ligne de commande Exchange Manage
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -67,18 +57,8 @@ Imaginons que vous ayez créé une stratégie de noms de groupes un soir tard et
 
     Set-DistributionGroup -Identity "Goverment_Contracts_NWRegion" -Name "Government_ContractEstimates_NWRegion" -DisplayName "Government_ContractEstimates_NWRegion" -IgnoreNamingPolicy
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Veillez à inclure le paramètre <em>DisplayName</em> lorsque vous renommez un groupe. Si vous ne le faites pas, l'ancien nom continuera d'apparaître dans le carnet d'adresses partagé et sur les lignes À :, Cc : et De : des messages électroniques.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Veillez à inclure le paramètre <em>DisplayName</em> lorsque vous renommez un groupe. Si vous ne le faites pas, l'ancien nom continuera d'apparaître dans le carnet d'adresses partagé et sur les lignes À :, Cc : et De : des messages électroniques.
 
 
 ## Comment savoir si cela a fonctionné ?

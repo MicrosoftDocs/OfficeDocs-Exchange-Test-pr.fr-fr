@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-12-20_
+_**Dernière rubrique modifiée :** 2017-12-20_
 
 Les conditions et les exceptions des règles de flux de messagerie (également nommées règles de transport) identifient les messages auxquels la règle est appliquée ou non. Par exemple, si la règle ajoute une clause d’exclusion de responsabilité aux messages, vous pouvez configurer la règle de telle sorte qu’elle s’applique uniquement aux messages qui contiennent des mots spécifiques, aux messages envoyés par des utilisateurs spécifiques ou à tous les messages, à l’exception de ceux envoyés par les membres d’un groupe spécifique. Collectivement, les conditions et les exceptions des règles de flux de messagerie sont également appelées *prédicats*, car pour chaque condition, il existe une exception correspondante qui utilise les mêmes paramètres et la même syntaxe. La seule différence réside dans le fait que les conditions spécifient les messages à inclure, tandis que les exceptions spécifient les messages à exclure.
 
@@ -304,18 +304,8 @@ Retour au début
 
 ## Objet ou corps du message
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La recherche de mots clés ou de modèles de texte dans l’objet ou dans d’autres champs d’en-tête du message est effectuée <em>après</em> que le codage utilisé avec la méthode MIME pour transmettre le message binaire entre les serveurs SMTP a été décodé en texte ASCII. Vous ne pouvez pas utiliser de conditions ou d’exceptions pour rechercher les valeurs codées brutes (en règle générale, en base 64) dans l’objet ou d’autres champs d’en-tête des messages.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> La recherche de mots clés ou de modèles de texte dans l’objet ou dans d’autres champs d’en-tête du message est effectuée <em>après</em> que le codage utilisé avec la méthode MIME pour transmettre le message binaire entre les serveurs SMTP a été décodé en texte ASCII. Vous ne pouvez pas utiliser de conditions ou d’exceptions pour rechercher les valeurs codées brutes (en règle générale, en base 64) dans l’objet ou d’autres champs d’en-tête des messages.
 
 
 
@@ -752,18 +742,9 @@ Retour au début
 <p><em>ExceptIfMessageTypeMatches</em></p></td>
 <td><p><code>MessageType</code></p></td>
 <td><p>Messages du type spécifié.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lors de la Outlook ou Outlook Web App est configuré pour transférer un message, la propriété <strong>ForwardingSmtpAddress</strong> est ajoutée au message. Le type de message n’est pas modifié pour <code>AutoForward</code>.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Lors de la Outlook ou Outlook Web App est configuré pour transférer un message, la propriété <strong>ForwardingSmtpAddress</strong> est ajoutée au message. Le type de message n’est pas modifié pour <code>AutoForward</code>.
 
 </td>
 <td><p>Exchange 2010 ou version ultérieure</p></td>
@@ -812,18 +793,8 @@ Retour au début
 
 ## En-têtes de message
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La recherche de mots clés ou de modèles de texte dans l’objet ou dans d’autres champs d’en-tête du message est effectuée <em>après</em> que le codage utilisé avec la méthode MIME pour transmettre le message binaire entre les serveurs SMTP a été décodé en texte ASCII. Vous ne pouvez pas utiliser de conditions ou d’exceptions pour rechercher les valeurs codées brutes (en règle générale, en base 64) dans l’objet ou d’autres champs d’en-tête des messages.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> La recherche de mots clés ou de modèles de texte dans l’objet ou dans d’autres champs d’en-tête du message est effectuée <em>après</em> que le codage utilisé avec la méthode MIME pour transmettre le message binaire entre les serveurs SMTP a été décodé en texte ASCII. Vous ne pouvez pas utiliser de conditions ou d’exceptions pour rechercher les valeurs codées brutes (en règle générale, en base 64) dans l’objet ou d’autres champs d’en-tête des messages.
 
 
 
@@ -1008,18 +979,8 @@ Retour au début
 
 Les types de propriétés utilisés dans les conditions et les exceptions sont décrits dans le tableau suivant.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si la propriété est une chaîne, les espaces ne sont pas autorisés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Si la propriété est une chaîne, les espaces ne sont pas autorisés.
 
 
 
@@ -1146,18 +1107,9 @@ Les types de propriétés utilisés dans les conditions et les exceptions sont d
 <li><p><strong>Demande d’approbation</strong> (<code>ApprovalRequest</code>)</p></li>
 <li><p><strong>Confirmation de lecture</strong> (<code>ReadReceipt</code>)</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lors de la Outlook ou Outlook Web App est configuré pour transférer un message, la propriété <strong>ForwardingSmtpAddress</strong> est ajoutée au message. Le type de message n’est pas modifié pour <code>AutoForward</code>.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Lors de la Outlook ou Outlook Web App est configuré pour transférer un message, la propriété <strong>ForwardingSmtpAddress</strong> est ajoutée au message. Le type de message n’est pas modifié pour <code>AutoForward</code>.
 
 </td>
 </tr>
@@ -1210,18 +1162,9 @@ Les types de propriétés utilisés dans les conditions et les exceptions sont d
 <li><p>L’adresse de messagerie de l’expéditeur n’est pas dans un domaine accepté.</p></li>
 <li><p>L’adresse de messagerie de l’expéditeur est dans un domaine accepté configuré en tant que domaine de relais externe.</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour déterminer si des contacts de messagerie sont considérés comme étant situés à l’intérieur ou à l’extérieur de l’organisation, l’adresse de l’expéditeur est comparée aux domaines acceptés de l’organisation.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]    
+> Pour déterminer si des contacts de messagerie sont considérés comme étant situés à l’intérieur ou à l’extérieur de l’organisation, l’adresse de l’expéditeur est comparée aux domaines acceptés de l’organisation.
 
 </td>
 </tr>

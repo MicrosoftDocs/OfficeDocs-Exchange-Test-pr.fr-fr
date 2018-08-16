@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Lorsque l’audit de boîte aux lettres est activé pour une boîte aux lettres, Microsoft Exchange entre les informations dans le *journal d’audit de la boîte aux lettres* chaque fois qu’un utilisateur autre que le propriétaire accède à la boîte aux lettres. Chaque entrée du journal inclut des informations sur qui a accédé à la boîte aux lettres et quand, les actions effectuées par le non-propriétaire, et si l’action a réussi. Par défaut, les entrées dans le journal d’audit de boîtes aux lettres sont conservées pendant 90 jours. Vous pouvez utiliser le journal d’audit de la boîte aux lettres pour déterminer si un utilisateur autre que le propriétaire a accédé à une boîte aux lettres.
 
@@ -43,18 +43,8 @@ Plus d’informations
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Configurer l’enregistrement d’audit de boîte aux lettres
@@ -72,10 +62,12 @@ Pour activer l’enregistrement d’audit de boîte aux lettres pour une boîte 
     Set-Mailbox <Identity> -AuditEnabled $true
 
 Pour activer l’enregistrement d’audit de boîte aux lettres pour toutes les boîtes aux lettres des utilisateurs de votre organisation, exécutez les commandes suivantes.
-
+```
     $UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
-
+```
+```
     $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
+```
 
 ## Étape 2 : Configurer Outlook Web App pour autoriser les pièces jointes XML
 

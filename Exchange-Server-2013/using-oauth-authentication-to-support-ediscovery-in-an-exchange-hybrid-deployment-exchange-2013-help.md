@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utilisation de l’authentification OAuth pour prendre en charge la découverte électronique dans un déploiement hybride Exchange: Exchange 2013 Help'
+title: 'Auth. OAuth pr la découverte électro. ds un dplmt hybride Exchange'
 TOCTitle: Utilisation de l’authentification OAuth pour prendre en charge la découverte électronique dans un déploiement hybride Exchange
 ms:assetid: b069f8db-fbe1-4047-ad97-d00172ee6a12
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn497703(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Pour effectuer des recherches de découverte électronique entre différents locaux dans une organisation hybride Exchange 2013, vous devrez configurer l’authentification OAuth (Open Authorization) entre vos organisations Exchange sur site et Exchange Online afin de pouvoir utiliser la découverte électronique locale pour effectuer des recherches dans des boîtes aux lettres sur site et dans le cloud. L’authentification OAuth prend en charge les scénarios de découverte électronique suivants dans un déploiement hybride Exchange :
 
@@ -63,18 +63,9 @@ Le tableau suivant identifie les scénarios de découverte électronique dans un
 <tr class="even">
 <td><p>Recherche de boîtes aux lettres sur site à l’aide d’une recherche de découverte électronique initiée depuis l’organisation Exchange sur site par un administrateur ou un responsable de la mise en conformité.</p></td>
 <td><p>Non</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Comme indiqué précédemment, l’authentification OAuth serait nécessaire si les boîtes aux lettres sur site étaient configurées avec des boîtes aux lettres d’archivage dans le cloud.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> Comme indiqué précédemment, l’authentification OAuth serait nécessaire si les boîtes aux lettres sur site étaient configurées avec des boîtes aux lettres d’archivage dans le cloud.
 
 </td>
 </tr>

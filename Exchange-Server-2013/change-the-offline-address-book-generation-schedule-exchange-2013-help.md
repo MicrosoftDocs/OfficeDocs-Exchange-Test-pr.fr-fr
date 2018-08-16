@@ -1,5 +1,5 @@
 ﻿---
-title: 'Modifier la planification de génération du carnet d’adresses hors connexion: Exchange 2013 Help'
+title: 'Modif. planif. de génér. du crnt d’adresses hors connexion: Exchange 2013 Help'
 TOCTitle: Modifier la planification de génération du carnet d’adresses hors connexion
 ms:assetid: d2b4d527-311e-442d-9f1f-54fac8371b80
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124719(v=EXCHG.150)
@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-12-05_
+_**Dernière rubrique modifiée :** 2012-12-05_
 
 Un carnet d’adresses en mode hors connexion est une copie de carnet d’adresses qui a été téléchargée de manière qu’un utilisateur Outlook puisse accéder aux informations qu’il contient tout en étant déconnecté du serveur. Vous pouvez configurer le carnet d’adresses en mode hors connexion à l’aide des paramètres *OABGeneratorWorkCycle* et *OABGeneratorWorkCycleCheckpoint* de la cmdlet Set-MailboxServer.
 
@@ -33,18 +33,8 @@ Pour les autres tâches de gestion relatives aux carnets d’adresses en mode ho
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour configurer les propriétés du carnet d'adresses en mode hors connexion

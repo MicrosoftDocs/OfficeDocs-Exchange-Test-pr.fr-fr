@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration d’une collection de certificats virtuelle pour la validation des certificats S/MIME: Exchange 2013 Help'
+title: 'Configurer une collection de certificats virtuelle pour valider S/MIME'
 TOCTitle: Configuration d’une collection de certificats virtuelle pour la validation des certificats S/MIME
 ms:assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn626155(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 En tant qu’administrateur client, vous devrez configurer une collection de certificats virtuelle qui sera utilisée pour valider les certificats S/MIME. Cette collection de certificats virtuelle est configurée comme un type de fichier de magasin de certificats avec une extension de nom de fichier SST. Le fichier SST contient tous les certificats racine et intermédiaires utilisés lors de la validation d’un certificat S/MIME.
 

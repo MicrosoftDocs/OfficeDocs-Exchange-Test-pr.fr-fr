@@ -1,5 +1,5 @@
 ﻿---
-title: 'L’ordinateur local exécute déjà Exchange Server_ExchangeAlreadyInstalled: Exchange 2013 Help'
+title: 'L’ordinateur local exécute déjà Exchange Server'
 TOCTitle: L’ordinateur local exécute déjà Exchange Server_ExchangeAlreadyInstalled
 ms:assetid: 3f168b5d-9910-418f-86fb-e99d852dcb5e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.exchangealreadyinstalled(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2012-06-05_
+_**Dernière rubrique modifiée :** 2012-06-05_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 
@@ -39,18 +39,8 @@ Suppression des composants de Microsoft Exchange
 
 5.  Dans la liste Action de la page Sélection des composants, cliquez sur la flèche vers le bas en regard de chaque composant installé, puis cliquez sur **Supprimer**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les composants installés sont marqués par une coche dans la liste Action. Si vous cliquez sur <strong>Supprimer</strong>, cette coche est remplacée par le mot <strong>Supprimer</strong>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les composants installés sont marqués par une coche dans la liste Action. Si vous cliquez sur <strong>Supprimer</strong>, cette coche est remplacée par le mot <strong>Supprimer</strong>.
 
 
 6.  Cliquez deux fois sur **Suivant**.

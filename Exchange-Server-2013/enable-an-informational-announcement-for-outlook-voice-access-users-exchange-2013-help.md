@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer une annonce d’information pour les utilisateurs d’Outlook Voice Access: Exchange 2013 Help'
+title: 'Activer une annonce d’information pour les utilisateurs d’Outlook Voice Access'
 TOCTitle: Activer une annonce d’information pour les utilisateurs d’Outlook Voice Access
 ms:assetid: b69ed0e1-f978-498a-963e-42a047678db4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124344(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous pouvez activer une annonce ayant valeur d’informations sur un plan de numérotation de messagerie unifiée. Les annonces ayant valeur d’informations sont utilisées pour des annonces générales qui changent plus fréquemment que le message de bienvenue ou pour des annonces requises par des stratégies de conformité d’entreprise.
 
@@ -37,18 +37,8 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -63,18 +53,8 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
 
 4.  Dans **Outlook Voice Access**, sous **Annonce ayant valeur d’informations**, cliquez sur **Modifier**, puis cliquez sur **Parcourir** pour rechercher le fichier d’annonces.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le fichier que vous utilisez pour l’annonce ayant valeur d’informations doit être un fichier .wav ou .wma.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le fichier que vous utilisez pour l’annonce ayant valeur d’informations doit être un fichier .wav ou .wma.
 
 
 5.  Après avoir localisé le fichier, cliquez sur **Ouvrir**, puis sur **Enregistrer**.

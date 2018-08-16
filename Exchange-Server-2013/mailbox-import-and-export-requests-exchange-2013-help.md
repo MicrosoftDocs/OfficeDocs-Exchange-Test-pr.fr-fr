@@ -1,5 +1,5 @@
 ﻿---
-title: 'Demandes d’exportation et d’importation de boîtes aux lettres: Exchange 2013 Help'
+title: 'Demandes d’exportation et d’importation de BAL: Exchange 2013 Help'
 TOCTitle: Demandes d’exportation et d’importation de boîtes aux lettres
 ms:assetid: 157a7d88-d3aa-4056-9a50-df67451b14be
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee633455(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Grâce aux jeux de cmdlets **MailboxImportRequest** ou **MailboxExportRequest** de l’environnement de ligne de commande Exchange Management Shell, vous pouvez importer ou exporter des données en provenance et à destination de fichiers .pst. Après avoir lancé une demande d’importation ou d’exportation de boîte aux lettres, le service de réplication de boîtes aux lettres Microsoft Exchange va achever le traitement de manière asynchrone. Le service de réplication de boîtes aux lettres réside sur tous les serveurs d’accès au client Exchange 2010 et il permet de déplacer des boîtes aux lettres et d’importer, puis d’exporter des fichiers .pst.
 
@@ -75,18 +75,8 @@ Avant d’importer ou d’exporter des données de boîtes aux lettres, prenez e
 
 Utilisez le jeu de cmdlets **MailboxImportRequest** pour importer des données d’un fichier .pst dans une boîte aux lettres ou une archive personnelle. Voici la liste des options que vous pouvez utiliser lorsque vous importez des données de boîtes aux lettres à partir d’un fichier .pst :
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La boîte aux lettres dans laquelle vous importez des données doit exister. Vous ne pouvez pas importer des données dans un compte d’utilisateur qui ne dispose pas d’une boîte aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La boîte aux lettres dans laquelle vous importez des données doit exister. Vous ne pouvez pas importer des données dans un compte d’utilisateur qui ne dispose pas d’une boîte aux lettres.
 
 
   - Vous pouvez importer des données dans un compte d’utilisateur différent de celui à partir duquel l’exportation a été effectuée. Par exemple, vous pouvez exporter des données de john@contoso.com et les importer dans legaldiscovery@contoso.com.

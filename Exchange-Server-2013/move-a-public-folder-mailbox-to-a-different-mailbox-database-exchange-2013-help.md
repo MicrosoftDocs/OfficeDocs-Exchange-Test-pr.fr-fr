@@ -1,5 +1,5 @@
 ﻿---
-title: "Déplacement d'une boîte aux lettres de dossiers publics vers une autre base de données de boîtes aux lettres: Exchange 2013 Help"
+title: 'Déplacement d’une BAL de dossiers publics vers une autre BDD de BAL'
 TOCTitle: Déplacement d'une boîte aux lettres de dossiers publics vers une autre base de données de boîtes aux lettres
 ms:assetid: 67601d45-4824-4ae6-9a7e-b645ec3af4d3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ906434(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-07-21_
+_**Dernière rubrique modifiée :** 2015-07-21_
 
 À des fins d'équilibrage de la charge ou de déplacement de ressources plus près de leur emplacement géographique, vous pouvez avoir besoin de déplacer une boîte aux lettres de dossiers publics vers une autre base de données de boîtes aux lettres. À l'instar du déplacement d'une boîte aux lettres normale, vous utilisez les cmdlets **MoveRequest** pour déplacer une boîte aux lettres de dossiers publics. Pour plus d'informations sur le déplacement des boîtes aux lettres, consultez la rubrique [Déplacements de boîtes aux lettres dans Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md).
 
@@ -33,18 +33,8 @@ Pour découvrir d'autres tâches de gestion associées aux dossiers publics, con
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

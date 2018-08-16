@@ -1,5 +1,5 @@
 ﻿---
-title: 'Exporter des listes à partir de l’Afficheur des files d’attente: Exchange 2013 Help'
+title: 'Exporter des listes avec l’Afficheur des files d’attente: Exchange 2013 Help'
 TOCTitle: Exporter des listes à partir de l’Afficheur des files d’attente
 ms:assetid: dcb829cd-0ffd-4ea9-ac3e-eaac5a8d1194
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb691328(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-09-25_
+_**Dernière rubrique modifiée :** 2012-09-25_
 
 Cette rubrique décrit l’utilisation de l’Afficheur des files d’attente de la Boîte à outils Exchange pour exporter des listes de messages ou de files d’attente.
 
@@ -39,18 +39,8 @@ Vous pouvez exporter des listes dans les formats de fichier suivants :
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Exportation d’une liste à partir du volet Résultats de l’Afficheur des files d’attente
@@ -61,18 +51,8 @@ Vous pouvez exporter des listes dans les formats de fichier suivants :
 
 3.  Dans Afficheur des files d’attente, sélectionnez l’onglet **Files d’attente** ou l’onglet **Messages**. Dans l’un des onglets, vous pouvez cliquer sur **Créer un filtre** pour restreindre les résultats.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si ce n'est pas le cas, cliquez sur <strong>Actualiser</strong> dans le volet Actions. Le rafraîchissement de listes longues risque de prendre plusieurs minutes.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si ce n'est pas le cas, cliquez sur <strong>Actualiser</strong> dans le volet Actions. Le rafraîchissement de listes longues risque de prendre plusieurs minutes.
 
 
 4.  Dans le volet Actions, cliquez sur **Exporter la liste**. La boîte de dialogue **Exporter la liste** s'affiche.

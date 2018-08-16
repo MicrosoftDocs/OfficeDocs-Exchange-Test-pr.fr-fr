@@ -1,5 +1,5 @@
 ﻿---
-title: 'Identifier mes problèmes à l’aide des vérifications automatiques (outils tiers): Exchange 2013 Help'
+title: 'Identifier mes problèmes à l’aide de vérifications automatiques (outils tiers)'
 TOCTitle: Identifier mes problèmes à l’aide des vérifications automatiques (outils tiers)
 ms:assetid: 83b71e35-892e-44e3-9fce-c608b49bbc61
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn793974(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les vérifications présentées sur cette page vous aideront à identifier certains des problèmes de configuration les plus courants. Vous pouvez utiliser les vérifications automatiques ci-dessous pour valider votre configuration et mettre à jour votre environnement.
 

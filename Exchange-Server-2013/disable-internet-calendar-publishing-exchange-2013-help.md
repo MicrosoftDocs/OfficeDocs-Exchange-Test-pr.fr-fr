@@ -13,26 +13,16 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-02-15_
+_**Dernière rubrique modifiée :** 2014-02-15_
 
 La manière dont vous désactivez une publication de calendrier Internet dépend de la façon dont vous l’avez activée. Si vous avez créé un stratégie de partage dédiée à la publication de calendrier Internet, vous pouvez désactiver la stratégie ou la supprimer en même temps. Si vous avez configuré une publication de calendrier Internet en tant que règle de partage dans une stratégie de partage par défaut, vous pouvez simplement retirer la règle de partage pour le domaine **Anonyme**.
 
 Lorsque vous désactivez une publication de calendrier Internet, les utilisateurs configurés pour utiliser la stratégie de partage ne seront plus en mesure de partager des informations de calendriers via le domaine Internet **Anonyme** spécifié dans la stratégie. Notez que vous ne pouvez ni supprimer ni désactiver une stratégie de partage dédiée à une publication de calendrier Internet tant que tous les utilisateurs qui sont configurés pour utiliser cette stratégie n’ont pas retiré le paramétrage de cette stratégie de leur boîte aux lettres. Pour plus d’informations sur la modification du paramétrage de la stratégie de partage pour un utilisateur, consultez la rubrique [Gestion des boîtes aux lettres utilisateur](manage-user-mailboxes-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous désactivez ou supprimez une stratégie de partage, les utilisateurs configurés pour utiliser la stratégie continuent à partager des informations jusqu’a ce que l’Assistant Stratégie de partage soit exécuté. Pour indiquer la fréquence d'exécution de l'Assistant Stratégie de partage, utilisez la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/aa998651(v=exchg.150)">Set-MailboxServer</a> avec le paramètre <em>SharingPolicySchedule</em>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous désactivez ou supprimez une stratégie de partage, les utilisateurs configurés pour utiliser la stratégie continuent à partager des informations jusqu’a ce que l’Assistant Stratégie de partage soit exécuté. Pour indiquer la fréquence d'exécution de l'Assistant Stratégie de partage, utilisez la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/aa998651(v=exchg.150)">Set-MailboxServer</a> avec le paramètre <em>SharingPolicySchedule</em>.
 
 
 Pour désactiver complètement la publication de calendriers Internet, vous devez également désactiver le répertoire virtuel d’Outlook Web App utilisé pour la publication des calendriers. Cette opération interdit l’accès aux liens des calendriers publiés et partagés antérieurement par les utilisateurs de votre organisation Exchange avec les utilisateurs externes sur Internet. Cette étape est décrite ci-après dans cette rubrique.
@@ -47,18 +37,8 @@ Pour en savoir plus sur la publication Internet de calendriers et les stratégi
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Comment procéder ?
@@ -105,34 +85,14 @@ Si vous avez mis à jour la stratégie de partage par défaut, vérifiez que le 
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-SharingPolicy](https://technet.microsoft.com/fr-fr/library/dd335081\(v=exchg.150\)).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Étape 2 : Utiliser l’environnement de ligne de commande Exchange Management Shell pour désactiver les fonctions Anonyme du répertoire virtuel d’Outlook Web App
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le CAE pour désactiver les fonctions Anonyme du répertoire virtuel d’Outlook Web App.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le CAE pour désactiver les fonctions Anonyme du répertoire virtuel d’Outlook Web App.
 
 
 Cet exemple illustre la désactivation des fonctions Anonyme pour le répertoire virtuel d’Outlook Web App sur le serveur d’accès au client CAS01.
@@ -149,16 +109,6 @@ Pour vérifier que vous avez correctement désactivé les fonctions Anonyme pour
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-OwaVirtualDirectory](https://technet.microsoft.com/fr-fr/library/aa998588\(v=exchg.150\)).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

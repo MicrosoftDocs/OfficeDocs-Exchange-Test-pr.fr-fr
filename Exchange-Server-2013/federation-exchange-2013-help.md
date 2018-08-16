@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les professionnels de l’information ont souvent besoin de collaborer avec des destinataires, fournisseurs, partenaires et clients externes et de partager leurs informations de disponibilité (également appelées disponibilités de calendrier). La fédération dans Microsoft Exchange Server 2013 facilite ces efforts de collaboration. Le terme *fédération* désigne l’infrastructure d’approbation sous-jacente qui prend en charge le *partage fédéré*, un moyen facile pour les utilisateurs de partager des informations de calendrier avec les destinataires d’autres organisations fédérées externes. Pour en savoir plus sur le partage fédéré, voir [Partage](sharing-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.
 
 
 **Contenu de cette rubrique**
@@ -150,18 +140,8 @@ Bien qu’il s’agisse généralement du domaine SMTP principal de l’organisa
 
 Vous pouvez à tout moment ajouter des domaines acceptés à l’approbation de fédération ou en supprimer. Si vous souhaitez activer ou désactiver toutes les fonctionnalités de partage de fédération dans votre organisation, il vous suffit d’activer ou de désactiver l’OrgID pour l’approbation de fédération.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous modifiez l’OrgID, les domaines acceptés ou l’identificateur d’application pour l’approbation de fédération, toutes les fonctionnalités de partage de fédération sont affectées dans votre organisation. Toute organisation Exchange fédérée externe, notamment Exchange Online et les configurations de déploiement hybride, est également affectée. Nous vous recommandons d’informer tous vos partenaires fédérés externes si vous modifiez ces paramètres de configuration de l’approbation de fédération.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous modifiez l’OrgID, les domaines acceptés ou l’identificateur d’application pour l’approbation de fédération, toutes les fonctionnalités de partage de fédération sont affectées dans votre organisation. Toute organisation Exchange fédérée externe, notamment Exchange Online et les configurations de déploiement hybride, est également affectée. Nous vous recommandons d’informer tous vos partenaires fédérés externes si vous modifiez ces paramètres de configuration de l’approbation de fédération.
 
 
 Terminologie clé
@@ -198,18 +178,8 @@ Si vous souhaitez utiliser un certificat X.509 signé par une Autorité de certi
 
   - **Utilisation améliorée de la clé**   Le certificat doit inclure le type d’utilisation améliorée de la clé (EKU) **Authentification du client (1.3.6.1.5.5.7.3.2)**. Ce type d’utilisation permet de prouver votre identité sur un ordinateur distant. Si vous utilisez le Centre d’administration Exchange ou l’environnement Exchange Management Shell pour générer une demande de certificat, ce type d’utilisation est inclus par défaut.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Étant donné que le certificat n’est pas utilisé pour l’authentification, il n’y a aucune exigence en matière de nom d’objet ou d’autre nom d’objet. Vous pouvez utiliser un certificat dont le nom d’objet est identique au nom d’hôte, au nom de domaine ou à tout autre nom.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Étant donné que le certificat n’est pas utilisé pour l’authentification, il n’y a aucune exigence en matière de nom d’objet ou d’autre nom d’objet. Vous pouvez utiliser un certificat dont le nom d’objet est identique au nom d’hôte, au nom de domaine ou à tout autre nom.
 
 
 Terminologie clé
@@ -220,18 +190,8 @@ Le certificat utilisé pour créer l’approbation de fédération est désigné
 
 Une fois l’état de distribution du certificat vérifié, vous pouvez configurer l’approbation afin qu’elle utilise le nouveau certificat. Après avoir changé de certificat, le certificat actuel est désigné comme certificat précédent, et le nouveau certificat comme certificat actuel. Le nouveau certificat est publié dans le système d’authentification Azure AD et tous les nouveaux jetons remplacés par le système d’authentification Azure AD sont chiffrés à l’aide du nouveau certificat.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ce processus de transition de certificat est uniquement utilisé par la fédération. Si vous utilisez le même certificat pour d’autres fonctions d’Exchange 2013 exigeant des certificats, vous devez prendre en compte les fonctionnalités requises lorsque vous envisagez d’obtenir, d’installer ou d’adopter un nouveau certificat.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Ce processus de transition de certificat est uniquement utilisé par la fédération. Si vous utilisez le même certificat pour d’autres fonctions d’Exchange 2013 exigeant des certificats, vous devez prendre en compte les fonctionnalités requises lorsque vous envisagez d’obtenir, d’installer ou d’adopter un nouveau certificat.
 
 
 Terminologie clé

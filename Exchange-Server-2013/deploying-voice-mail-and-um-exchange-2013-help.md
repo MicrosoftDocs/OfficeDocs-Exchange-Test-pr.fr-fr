@@ -1,5 +1,5 @@
 ﻿---
-title: 'Déploiement de la messagerie vocale et la messagerie unifiée: Exchange 2013 Help'
+title: 'Déployer la messagerie vocale et la messagerie unifiée: Exchange 2013 Help'
 TOCTitle: Déploiement de la messagerie vocale et la messagerie unifiée
 ms:assetid: 3df61b62-a1e4-41fb-969c-319189ae4e42
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673519(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 La messagerie unifiée (MU) Microsoft Exchange vous permet d’offrir des services de messagerie vocale aux utilisateurs de votre organisation. Lors du déploiement de la messagerie unifiée, vous devez intégrer votre déploiement Exchange Server au circuit de téléphonie existant de votre organisation ou à Microsoft Lync Server. Un déploiement réussi nécessite une analyse attentive de votre infrastructure de téléphonie existante et d’effectuer les étapes de planification appropriées pour déployer et gérer la messagerie vocale dans la messagerie unifiée. Si vous intégrez Exchange à Lync Server, vous devez également vous familiariser avec ce produit.
 
@@ -29,18 +29,8 @@ Lorsque vous déployez la messagerie unifiée, plusieurs options s’offrent à 
 
   - Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server 2010 ou 2013
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous déployez la messagerie unifiée Exchange dans un environnement hébergé ou hybride, vous devez déployer des contrôleurs de frontière de session (SBC). Les SBC ne permettent pas à la messagerie unifiée de se connecter à un réseau téléphonique ou de fournir une tonalité à une organisation. Cependant, ils connectent votre déploiement de messagerie unifiée local à un centre de données à l’aide du protocole IP sur un réseau WAN public ou privé.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Lorsque vous déployez la messagerie unifiée Exchange dans un environnement hébergé ou hybride, vous devez déployer des contrôleurs de frontière de session (SBC). Les SBC ne permettent pas à la messagerie unifiée de se connecter à un réseau téléphonique ou de fournir une tonalité à une organisation. Cependant, ils connectent votre déploiement de messagerie unifiée local à un centre de données à l’aide du protocole IP sur un réseau WAN public ou privé.
 
 
 **Matériel de téléphonie**   Le bon choix en matière de passerelle VoIP, PBX IP ou contrôleur SBC ne constitue que la première étape du processus d’intégration de votre réseau de téléphonie à la messagerie unifiée. Vous devez configurer ces périphériques pour qu’ils fonctionnent avec la messagerie unifiée, déployer les serveurs d’accès au client et les serveurs de boîtes aux lettres requis, et créer et configurer tous les composants de messagerie unifiée nécessaires. Ces composants vous permettent de connecter votre réseau de protocole basé sur un circuit à votre réseau de données IP et activer la messagerie vocale pour les utilisateurs de votre organisation. Pour plus d’informations, consultez la rubrique [Gestionnaire de téléphonie pour Exchange 2013](telephony-advisor-for-exchange-2013-exchange-2013-help.md).
@@ -67,18 +57,8 @@ De nombreuses options de déploiement sont possibles pour la messagerie unifiée
 
 2.  Vérifiez que vous avez installé correctement les serveurs d’accès au client et de boîtes aux lettres nécessaires pour la messagerie unifiée.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous devez déployer au moins un serveur de boîtes aux lettres Exchange 2013 dans votre organisation avant de configurer les passerelles VoIP ou les PBX IP pour envoyer le trafic SIP ou RTP de messagerie unifiée vers les serveurs d’accès client Exchange 2013.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Vous devez déployer au moins un serveur de boîtes aux lettres Exchange 2013 dans votre organisation avant de configurer les passerelles VoIP ou les PBX IP pour envoyer le trafic SIP ou RTP de messagerie unifiée vers les serveurs d’accès client Exchange 2013.
 
 
 3.  Créez et configurez les composants de messagerie unifiée requis, notamment les plans de numérotation, les passerelles IP, les groupements de postes et les stratégies de boîte aux lettres de messagerie unifiée.

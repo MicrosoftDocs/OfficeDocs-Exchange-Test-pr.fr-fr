@@ -15,38 +15,18 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-16_
+_**Dernière rubrique modifiée :** 2013-04-16_
 
 Un groupement de postes de messagerie unifiée est une représentation logique d'un groupement de postes PBX (Private Branch eXchange) ou PBX IP. Un groupement de postes de messagerie unifiée sert de connexion ou de lien entre une passerelle IP de messagerie unifiée et un plan de numérotation de messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous associez un plan de numérotation de messagerie unifiée à la passerelle IP de messagerie unifiée lorsque vous créez une passerelle IP de messagerie unifiée, un groupement de postes de messagerie unifiée est également créé.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous associez un plan de numérotation de messagerie unifiée à la passerelle IP de messagerie unifiée lorsque vous créez une passerelle IP de messagerie unifiée, un groupement de postes de messagerie unifiée est également créé.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous voulez modifier les paramètres du groupement de postes de messagerie unifiée, vous devez d'abord supprimer ce dernier, puis en créer un autre doté des paramètres appropriés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous voulez modifier les paramètres du groupement de postes de messagerie unifiée, vous devez d'abord supprimer ce dernier, puis en créer un autre doté des paramètres appropriés.
 
 
 Pour d'autres tâches relatives aux regroupements de postes de messagerie unifiée, consultez la rubrique [Procédures de groupe postes de messagerie unifiée](um-hunt-group-procedures-exchange-2013-help.md).
@@ -63,18 +43,8 @@ Pour d'autres tâches relatives aux regroupements de postes de messagerie unifi�
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

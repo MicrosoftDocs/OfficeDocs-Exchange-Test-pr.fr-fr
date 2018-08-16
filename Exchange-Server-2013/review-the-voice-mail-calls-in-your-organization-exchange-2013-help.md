@@ -1,5 +1,5 @@
 ﻿---
-title: 'Passez en revue les appels de messagerie vocale dans votre organisation: Exchange 2013 Help'
+title: 'Passez en revue les appels de messag. voc. dans votre org.: Exchange 2013 Help'
 TOCTitle: Passez en revue les appels de messagerie vocale dans votre organisation
 ms:assetid: f6fdbe17-d1d2-442a-aa13-06b908d9c33a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ659073(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez utiliser le rapport statistiques d'appel pour afficher des informations sur le type et le statut des appels entrants gérés par les serveurs Exchange de votre organisation. Le rapport fournit des informations statistiques sur les appels transférés vers ou passés par la messagerie unifiée (MU) pour votre organisation. Vous pouvez utiliser ces informations pour effectuer le suivi de l'utilisation pour la planification de la capacité, surveiller et dépanner la disponibilité et la qualité audio de la messagerie unifiée et à résoudre les problèmes d'appels ayant échoué.
 
@@ -57,18 +57,8 @@ Pour d'autres tâches relatives aux rapports de messagerie unifiée, consultez l
     
     Le fichier exporté sera nommé um\_cdr\_*YYYY-MM-DD*.csv, où *YYYY-MM-DD* est l'année, mois et jour que le rapport a été exécuté. Pour plus d'informations, voir [Interpréter les enregistrements d'appel de messagerie vocale](interpret-voice-mail-call-records-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Dans la page du rapport, vous pouvez télécharger un modèle Microsoft Excel qui vous servira à importer le fichier .csv d'un jour spécifique.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Dans la page du rapport, vous pouvez télécharger un modèle Microsoft Excel qui vous servira à importer le fichier .csv d'un jour spécifique.
 
 
 Retour au début

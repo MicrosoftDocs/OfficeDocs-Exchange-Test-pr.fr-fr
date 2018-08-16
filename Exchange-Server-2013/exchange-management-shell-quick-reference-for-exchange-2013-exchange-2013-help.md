@@ -1,5 +1,5 @@
 ﻿---
-title: 'Référence rapide concernant l’environnement de ligne de commande Exchange Management Shell pour Exchange 2013: Exchange 2013 Help'
+title: 'Référence rapide concernant Exchange Management Shell pour Exchange 2013'
 TOCTitle: Référence rapide concernant l’environnement de ligne de commande Exchange Management Shell pour Exchange 2013
 ms:assetid: 3ea4a105-a93c-48ba-96ce-6170125354e1
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ619302(v=EXCHG.150)
@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Cette rubrique décrit les cmdlets les plus fréquemment utilisées disponibles dans la version de publication (RTM) et les versions ultérieures de Microsoft Exchange Server 2013. Elle fournit également des exemples de leur utilisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Des informations supplémentaires seront bientôt ajoutées sur d’autres domaines de Exchange 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Des informations supplémentaires seront bientôt ajoutées sur d’autres domaines de Exchange 2013.
 
 
 Pour plus d'informations sur l'environnement de ligne de commande Exchange Management Shell d'Exchange 2013 et toutes les cmdlets disponibles décrites dans cette rubrique, voir les rubriques suivantes :

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 L'architecture Microsoft Exchange Server 2013 est différente de l'architecture dans Exchange Server 2007 et Exchange Server 2010. Dans Exchange 2007 et Exchange 2010, les types de serveurs étaient séparés en plusieurs rôles de serveurs : Accès client, boîte aux lettres, transport Hub et messagerie unifiée. Dans Exchange 2013, les rôles de serveurs sont combinés en deux types de serveurs et tous les composants ou services issus de ces rôles serveurs sont exécutés sur le même serveur physique ou sur deux serveurs nommés d'accès au client et de boîtes aux lettres. Dans le nouveau modèle, le serveur d'accès au client qui exécute le service routeur des appels de messagerie unifiée Microsoft Exchange redirige le trafic SIP généré depuis un appel entrant vers un serveur de boîtes aux lettres. Puis, un canal de support RTP (Realtime Transport Protocol) ou secure RTP (SRTP)) est établi depuis la passerelle VoIP ou PBX (Private Branch eXchange) IP vers le serveur de boîte aux lettres qui héberge la boîte aux lettres utilisateur. Dans Exchange 2013, le serveur de boîtes aux lettres a les mêmes processus que le rôle serveur de messagerie unifiée dans Exchange 2007 et Exchange 2010. Le serveur de boîtes aux lettres exécute à la fois le service de messagerie unifiée Microsoft Exchange et les processus de travail de messagerie unifiée. Le serveur d'accès au client exécute le service routeur des appels de messagerie unifiée Microsoft Exchange, qui reçoit un appel entrant et le transmet au serveur de boîtes aux lettres.
 

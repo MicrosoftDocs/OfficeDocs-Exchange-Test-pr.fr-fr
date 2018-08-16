@@ -1,5 +1,5 @@
 ﻿---
-title: 'Attribuer une stratégie de boîte aux lettres de messagerie unifiée: Exchange 2013 Help'
+title: 'Attribuer une stratégie de BAL de messagerie unifiée: Exchange 2013 Help'
 TOCTitle: Attribuer une stratégie de boîte aux lettres de messagerie unifiée
 ms:assetid: c8da6cbe-3d22-4fff-8b5a-416b1c8adb6c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb201728(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-30_
+_**Dernière rubrique modifiée :** 2012-11-30_
 
 Lorsque vous activez un utilisateur pour la messagerie unifiée et la messagerie vocale, vous devez sélectionner une stratégie de boîte aux lettres de messagerie unifiée qui sera associée à la boîte aux lettres de l’utilisateur. Vous pouvez modifier la stratégie de boîte aux lettres de messagerie unifiée associée à la boîte aux lettres de l’utilisateur, une fois qu’il a été activé pour la messagerie unifiée.
 
@@ -27,18 +27,8 @@ Vous créez des stratégies de boîte aux lettres de messagerie unifiée pour ap
 
   - Autres propriétés générales de stratégies de boîte aux lettres de messagerie unifiée
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une stratégie de boîte aux lettres de messagerie unifiée par défaut est créée chaque fois que vous créez un plan de numérotation de messagerie unifiée. Vous pouvez supprimer les stratégies de boîte aux lettres de messagerie unifiée par défaut ou créer d’autres stratégies de boîte aux lettres de messagerie unifiée selon les besoins de votre organisation.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Une stratégie de boîte aux lettres de messagerie unifiée par défaut est créée chaque fois que vous créez un plan de numérotation de messagerie unifiée. Vous pouvez supprimer les stratégies de boîte aux lettres de messagerie unifiée par défaut ou créer d’autres stratégies de boîte aux lettres de messagerie unifiée selon les besoins de votre organisation.
 
 
 Pour découvrir d'autres tâches de gestion relatives aux utilisateurs à extension messagerie vocale, consultez la rubrique [Voix des procédures de l'utilisateur à extension messagerie](voice-mail-enabled-user-procedures-exchange-2013-help.md).
@@ -57,18 +47,8 @@ Pour découvrir d'autres tâches de gestion relatives aux utilisateurs à extens
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

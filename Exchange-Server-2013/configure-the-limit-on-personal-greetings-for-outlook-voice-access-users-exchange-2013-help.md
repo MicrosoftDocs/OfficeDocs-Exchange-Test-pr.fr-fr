@@ -1,5 +1,5 @@
 ﻿---
-title: "Configurer la limite sur le message d'accueil personnel pour les utilisateurs Outlook Voice Access: Exchange 2013 Help"
+title: 'Config. de la limite sur le message d’accueil personnel pour les utlsr OVA'
 TOCTitle: Configurer la limite sur le message d'accueil personnel pour les utilisateurs Outlook Voice Access
 ms:assetid: d400f250-0f55-45f5-9918-5f1d7819fbdf
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb201731(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-05_
+_**Dernière rubrique modifiée :** 2012-11-05_
 
 Le paramètre de **limite de message d'accueil (en minutes)** vous permet d'entrer le nombre maximal de minutes pendant lesquelles les utilisateurs associés à la stratégie de boîte aux lettres de messagerie unifiée (MU) peuvent utiliser pour enregistrer leurs messages d'accueil vocaux. Ce paramètre s'applique à la fois leurs messages vocaux standard et leurs messages d'accueil vocaux d'absence du bureau. Par défaut, la durée d'accueil maximale est définie sur 5 minutes. Toutefois, vous pouvez configurer le message d'accueil de durée à toute valeur comprise entre 1 et 10 minutes au maximum.
 
@@ -33,18 +33,8 @@ Pour d’autres tâches de gestion relatives aux stratégies de boîte aux lettr
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

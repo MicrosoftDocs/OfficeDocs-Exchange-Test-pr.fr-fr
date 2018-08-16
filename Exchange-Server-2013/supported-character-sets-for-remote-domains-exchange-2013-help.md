@@ -1,5 +1,5 @@
 ﻿---
-title: 'Jeux de caractères pris en charge pour les domaines distants: Exchange 2013 Help'
+title: 'Jeux de caract. pris en charge pour les domaines distants: Exchange 2013 Help'
 TOCTitle: Jeux de caractères pris en charge pour les domaines distants
 ms:assetid: 66023a62-1fd3-4019-be2b-4e7147db148a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998600(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les jeux de caractères suivants peuvent être spécifiés pour les messages envoyés vers des domaines distants.
 

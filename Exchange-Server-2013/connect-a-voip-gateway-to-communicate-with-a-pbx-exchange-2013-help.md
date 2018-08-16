@@ -1,5 +1,5 @@
 ﻿---
-title: 'Connecter une passerelle voix sur IP pour communiquer avec un PBX: Exchange 2013 Help'
+title: 'Connecter une psrl voix sur IP pour dialoguer avec un PBX: Exchange 2013 Help'
 TOCTitle: Connecter une passerelle voix sur IP pour communiquer avec un PBX
 ms:assetid: 76bcdc54-3ec2-408a-bdbe-37826580dd62
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998872(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-15_
+_**Dernière rubrique modifiée :** 2016-12-15_
 
 Lorsque vous configurez vos réseaux de téléphonie et de données pour une messagerie unifiée dans Microsoft Exchange Server 2013, vous devez configurer les passerelles VoIP pour leur permettre de communiquer avec les serveurs d’accès au client qui exécutent le service Routeur d’appel de messagerie unifiée de Microsoft Exchange et avec les serveurs de boîtes aux lettres qui exécutent le service de messagerie unifiée de Microsoft Exchange. Vous devez également configurer les passerelles VoIP pour leur permettre de communiquer avec les PBX (Private Branch eXchange) au sein de votre organisation. Vous pouvez utiliser les informations et liens de cette rubrique pour configurer une passerelle VoIP et permettre ainsi la communication avec un PBX.
 

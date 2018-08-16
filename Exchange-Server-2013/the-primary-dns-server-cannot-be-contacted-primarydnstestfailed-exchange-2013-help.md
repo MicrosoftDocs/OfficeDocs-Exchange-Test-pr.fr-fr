@@ -1,5 +1,5 @@
 ﻿---
-title: 'Impossible de contacter le serveur DNS principal_PrimaryDNSTestFailed: Exchange 2013 Help'
+title: 'Impossible de contacter le serveur DNS principal'
 TOCTitle: Impossible de contacter le serveur DNS principal_PrimaryDNSTestFailed
 ms:assetid: 5b39cb64-c8f1-4fd3-843b-ecd23f99fe3a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.primarydnstestfailed(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 

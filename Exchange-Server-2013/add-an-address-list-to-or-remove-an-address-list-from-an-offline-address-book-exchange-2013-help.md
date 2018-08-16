@@ -1,5 +1,5 @@
 ﻿---
-title: "Ajout ou suppression d'une liste d'adresses à partir d'un carnet d'adresses en mode hors connexion: Exchange 2013 Help"
+title: 'Ajout ou suppression d’une liste d’adresses de carnet en mode hors connexion'
 TOCTitle: Ajout ou suppression d'une liste d'adresses à partir d'un carnet d'adresses en mode hors connexion
 ms:assetid: 86bd5651-ad41-4516-bf23-6579f4e4da03
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb123563(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-12-16_
+_**Dernière rubrique modifiée :** 2014-12-16_
 
 Vous pouvez utiliser l'environnement de ligne de commande Exchange Management Shell pour ajouter ou supprimer une liste d'adresses dans un carnet d'adresses en mode hors connexion. Par défaut, il existe un carnet d'adresses en mode hors connexion appelé Carnet d'adresses en mode hors connexion par défaut, qui contient la liste d'adresses globale. Les carnets d'adresses en mode hors connexion sont générés sur la base des listes d'adresses qu'ils contiennent. Pour créer des carnets d'adresses en mode hors connexion personnalisés que les utilisateurs peuvent télécharger, vous pouvez ajouter ou supprimer des listes d'adresses dans les carnets d'adresses en mode hors connexion.
 
@@ -35,18 +35,8 @@ Pour les autres tâches de gestion relatives aux carnets d'adresses en mode hors
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

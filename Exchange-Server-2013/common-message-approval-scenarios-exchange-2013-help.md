@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-09-29_
+_**Dernière rubrique modifiée :** 2014-09-29_
 
 Votre organisation peut exiger que certains types de messages soient approuvés pour répondre aux exigences légales ou de conformité, ou pour mettre en œuvre un flux de travail d’entreprise spécifique. Voici quelques exemples de scénarios courants que vous pouvez configurer à l’aide d’Exchange :
 
@@ -65,18 +65,8 @@ Voici un exemple dans lequel tous les messages envoyés par un stagiaire, Garth 
 
 Pour commencer, accédez au CAE \> **Flux de messagerie** \> **Règles**, puis créez une règle à l’aide du modèle **Envoyer des messages à un modérateur**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Certaines conditions et actions, y compris le transfert vers le responsable de l’expéditeur, sont masquées par défaut sur la page <strong>Nouvelle règle</strong>. Pour voir toutes les conditions et actions, sélectionnez <strong>Plus d’options</strong>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Certaines conditions et actions, y compris le transfert vers le responsable de l’expéditeur, sont masquées par défaut sur la page <strong>Nouvelle règle</strong>. Pour voir toutes les conditions et actions, sélectionnez <strong>Plus d’options</strong>.
 
 
 ## Exemple 3 : Configurer une chaîne d’approbation des messages
@@ -117,18 +107,8 @@ Par exemple, une règle unique ne peut pas vérifier si un message contient le t
 
 ![Utiliser une exception pour la deuxième règle](images/Dd298007.c39bbdcf-c619-4f84-8922-114ad1da824d(EXCHG.150).png "Utiliser une exception pour la deuxième règle")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les exceptions sont masquées par défaut sur la page <strong>Nouvelle règle</strong>. Pour voir toutes les conditions et actions, sélectionnez <strong>Plus d’options</strong>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les exceptions sont masquées par défaut sur la page <strong>Nouvelle règle</strong>. Pour voir toutes les conditions et actions, sélectionnez <strong>Plus d’options</strong>.
 
 
 ## Exemple 5 : Transférer un message qui contient des informations sensibles

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Intégration des systèmes téléphoniques à la messagerie unifiée: Exchange 2013 Help'
+title: 'Intégrer des systèmes téléphoniques à la messag. unif.: Exchange 2013 Help'
 TOCTitle: Intégration des systèmes téléphoniques à la messagerie unifiée
 ms:assetid: b8790117-b040-4c84-9d34-005c75088e76
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673558(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Pour déployer correctement une messagerie unifiée, vous devez bien connaître les concepts de téléphonie de base et les composants téléphoniques. Une fois les principes de téléphonie acquis, vous pouvez intégrer la messagerie unifiée à votre organisation Exchange. Les concepts de base et les composants sont les suivants :
 
@@ -77,16 +77,6 @@ Le composant du routage de messagerie unifiée d'Exchange gère le routage entre
 
 Pour plus d'informations sur Microsoft Lync Server, consultez la rubrique [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lors de l'intégration locale de la messagerie unifiée et de Lync Server dans un déploiement local ou hybride, les notifications d'appels en absence ne sont pas disponibles pour les utilisateurs qui ont une boîte aux lettres située sur un serveur de boîtes aux lettres Exchange 2007 ou Exchange 2010. Une notification d'appel en absence est générée lorsqu'un utilisateur se déconnecte avant l'envoi de l'appel vers un serveur de boîtes aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Lors de l'intégration locale de la messagerie unifiée et de Lync Server dans un déploiement local ou hybride, les notifications d'appels en absence ne sont pas disponibles pour les utilisateurs qui ont une boîte aux lettres située sur un serveur de boîtes aux lettres Exchange 2007 ou Exchange 2010. Une notification d'appel en absence est générée lorsqu'un utilisateur se déconnecte avant l'envoi de l'appel vers un serveur de boîtes aux lettres.
 

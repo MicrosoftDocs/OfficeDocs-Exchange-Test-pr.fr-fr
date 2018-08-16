@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 La journalisation peut aider votre organisation à répondre aux exigences réglementaires, légales et de conformité organisationnelle en enregistrant les communications électroniques échangées. Lors de la planification de la rétention et de la conformité de la messagerie, il est important de comprendre la journalisation, son intégration dans les stratégies de conformité de votre organisation et la sécurisation des messages journalisés à l'aide de Microsoft Exchange Server 2013.
 
@@ -73,18 +73,8 @@ Retour au début
 
 Dans une organisation Exchange 2013, tout le trafic de messagerie est acheminé par des serveurs de boîtes aux lettres. Pendant leur durée de vie, tous les messages parcourent au moins un serveur exécutant le service de transport. L'*agent de journalisation* est un agent de transport axé sur la conformité qui traite les messages sur les serveurs de boîtes aux lettres. Il se déclenche à partir des événements de transport **OnSubmittedMessage** et **OnRoutedMessage**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange 2013, l'agent de journalisation est un agent intégré. Les agents intégrés ne figurent pas dans la liste des agents renvoyés par la cmdlet <strong>Get-TransportAgent</strong>. Pour plus d'informations, consultez la rubrique <a href="transport-agents-exchange-2013-help.md">Agents de transport</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange 2013, l'agent de journalisation est un agent intégré. Les agents intégrés ne figurent pas dans la liste des agents renvoyés par la cmdlet <strong>Get-TransportAgent</strong>. Pour plus d'informations, consultez la rubrique <a href="transport-agents-exchange-2013-help.md">Agents de transport</a>.
 
 
 Exchange 2013 fournit les options de journalisation suivantes :
@@ -127,18 +117,8 @@ Tous les messages échangés avec des destinataires de journalisation spécifié
 
 De nombreuses organisations qui mettent en œuvre la journalisation peuvent aussi utiliser la messagerie unifiée pour consolider leur infrastructure de courrier électronique, de messagerie vocale et de télécopie. Cependant, vous pouvez ne pas vouloir que le traitement de la journalisation génère des états de journal pour les messages générés par la messagerie unifiée. Dans ces cas, vous pouvez décider de journaliser les messages vocaux et les messages de notification d’appel en absence qui sont traités par un serveur Exchange exécutant le service de messagerie unifiée ou bien d’ignorer ces messages. Si votre organisation n'exige pas la journalisation de tels messages, vous pouvez réduire la quantité d'espace disque requise pour stocker les états de journal en ignorant ces messages.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les messages contenant des télécopies qui sont générées par le service de messagerie unifiée sont toujours journalisés, même si vous désactivez la journalisation des messages vocaux de messagerie unifiée et les messages de notification d'appel en absence.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les messages contenant des télécopies qui sont générées par le service de messagerie unifiée sont toujours journalisés, même si vous désactivez la journalisation des messages vocaux de messagerie unifiée et les messages de notification d'appel en absence.
 
 
 Pour plus d’informations sur l’activation ou la désactivation des messages vocaux et de notification d’appel en absence, consultez la rubrique [Désactiver ou activer la journalisation des notifications d’appel en absence et de la messagerie vocale](disable-or-enable-journaling-of-voice-mail-and-missed-call-notifications-exchange-2013-help.md).
@@ -147,46 +127,16 @@ Pour plus d’informations sur l’activation ou la désactivation des messages 
 
 La boîte aux lettres de la journalisation sert à collecter les états de journal. La manière dont vous configurez la boîte aux lettres de journalisation dépend des stratégies de l'organisation, ainsi que des exigences légales et réglementaires. Vous pouvez spécifier une boîte aux lettres de journalisation que vous pouvez utiliser pour collecter les messages correspondant à toutes les règles de journal configurées dans l’organisation ou utiliser différentes boîtes aux lettres de journalisation pour différentes règles ou groupes de règles de journal.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas désigner une boîte aux lettres Office 365 comme boîte aux lettres de journalisation. Vous pouvez fournir des états du journal à un système d’archivage local ou à un service d’archivage tiers. Si vous exécutez un déploiement hybride avec vos boîtes aux lettres partagées entre les serveurs locaux et Office 365, vous pouvez désigner une boîte aux lettres locale comme boîte aux lettres de journalisation de vos boîtes aux lettres Office 365 et locales.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas désigner une boîte aux lettres Office 365 comme boîte aux lettres de journalisation. Vous pouvez fournir des états du journal à un système d’archivage local ou à un service d’archivage tiers. Si vous exécutez un déploiement hybride avec vos boîtes aux lettres partagées entre les serveurs locaux et Office 365, vous pouvez désigner une boîte aux lettres locale comme boîte aux lettres de journalisation de vos boîtes aux lettres Office 365 et locales.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les boîtes aux lettres de journalisation contiennent des informations très sensibles. Vous devez sécuriser les boîtes aux lettres de journalisation parce qu'elles collectent des messages échangés avec des destinataires au sein de votre organisation. Ces messages peuvent être visés par des actes de procédure ou faire l'objet d'exigences réglementaires. Diverses lois exigent que les messages soient conservés à l'abri de toute falsification avant leur présentation à une autorité de vérification. Il est souhaitable que votre organisation élabore des stratégies définissant qui peut accéder aux boîtes aux lettres de journalisation en son sein, en limitant cet accès aux personnes ayant un besoin direct d'y accéder. Consultez vos représentants légaux pour vous assurer que votre solution de journalisation est conforme à l'ensemble des lois et réglementations applicables à votre organisation.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les boîtes aux lettres de journalisation contiennent des informations très sensibles. Vous devez sécuriser les boîtes aux lettres de journalisation parce qu'elles collectent des messages échangés avec des destinataires au sein de votre organisation. Ces messages peuvent être visés par des actes de procédure ou faire l'objet d'exigences réglementaires. Diverses lois exigent que les messages soient conservés à l'abri de toute falsification avant leur présentation à une autorité de vérification. Il est souhaitable que votre organisation élabore des stratégies définissant qui peut accéder aux boîtes aux lettres de journalisation en son sein, en limitant cet accès aux personnes ayant un besoin direct d'y accéder. Consultez vos représentants légaux pour vous assurer que votre solution de journalisation est conforme à l'ensemble des lois et réglementations applicables à votre organisation.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les boîtes aux lettres de journalisation doivent accepter les messages d’une taille égale ou supérieure à la taille maximale des messages définie dans votre organisation. Si vous avez configuré des exceptions pour les paramètres MaxSendSize et MaxReceiveSize sur la boîte aux lettres d’un utilisateur individuel qui sont supérieures au paramètre général dans TransportConfig, vous devez définir les paramètres MaxSendSize et MaxReceiveSize de la boîte aux lettres de journalisation en conséquence afin de garantir que les messages envoyés dans la boîte aux lettres de journalisation sont acceptés et pas mis en attente ou rejetés. Les messages rejetés par la boîte aux lettres de journalisation feront régulièrement l’objet de nouvelles tentatives, ce qui entraîne une augmentation inutile de la base de données et le gaspillage de ressources. En outre, il est recommandé d’installer une autre boîte aux lettres de journalisation afin d’éviter la non-remise des messages.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les boîtes aux lettres de journalisation doivent accepter les messages d’une taille égale ou supérieure à la taille maximale des messages définie dans votre organisation. Si vous avez configuré des exceptions pour les paramètres MaxSendSize et MaxReceiveSize sur la boîte aux lettres d’un utilisateur individuel qui sont supérieures au paramètre général dans TransportConfig, vous devez définir les paramètres MaxSendSize et MaxReceiveSize de la boîte aux lettres de journalisation en conséquence afin de garantir que les messages envoyés dans la boîte aux lettres de journalisation sont acceptés et pas mis en attente ou rejetés. Les messages rejetés par la boîte aux lettres de journalisation feront régulièrement l’objet de nouvelles tentatives, ce qui entraîne une augmentation inutile de la base de données et le gaspillage de ressources. En outre, il est recommandé d’installer une autre boîte aux lettres de journalisation afin d’éviter la non-remise des messages.
 
 
 ## Autre boîte aux lettres de journalisation
@@ -197,36 +147,16 @@ Une fois la boîte aux lettres de journalisation à nouveau disponible, vous pou
 
 Lorsque vous configurez une autre boîte aux lettres de journalisation, tous les états de journal rejetés ou qui n’ont pas pu être remis dans toute votre organisation Exchange sont remis à l’autre boîte aux lettres de journalisation. Par conséquent, il est important de s'assurer que l'autre boîte aux lettres de journalisation et le serveur de boîtes aux lettres qui l'héberge peuvent prendre en charge plusieurs états de journal.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous configurez une boîte aux lettres de journalisation alternative, vous devez veiller à ce qu’elle ne soit pas indisponible en même temps que les boîtes aux lettres de journalisation. Si l'autre boîte aux lettres de journalisation devient indisponible ou rejette des états de journal, ceux-ci sont perdus et irrécupérables.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Si vous configurez une boîte aux lettres de journalisation alternative, vous devez veiller à ce qu’elle ne soit pas indisponible en même temps que les boîtes aux lettres de journalisation. Si l'autre boîte aux lettres de journalisation devient indisponible ou rejette des états de journal, ceux-ci sont perdus et irrécupérables.
 
 
 Dans la mesure où l’autre boîte aux lettres de journalisation collecte tous les états de journal rejetés pour toute l’organisation Exchange, vous devez vérifier que cela ne va pas à l’encontre des règles ou règlements applicables à votre organisation. Si des règles ou règlements empêchent votre organisation d'autoriser le stockage d'états de journal envoyés à différentes boîtes aux lettres de journalisation dans la même autre boîte aux lettres de journalisation, il se peut que vous ne puissiez pas configurer une autre boîte aux lettres de journalisation. Consultez vos représentants légaux afin de déterminer si vous pouvez utiliser une autre boîte aux lettres de journalisation.
 
 Lorsque vous configurez une autre boîte aux lettres de journalisation, vous devez spécifier les mêmes critères que ceux utilisés lors de la configuration de la boîte aux lettres de journalisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L'autre boîte aux lettres de journalisation doit être traitée comme une boîte aux lettres dédiée spéciale. Les messages adressés directement à l'autre boîte aux lettres de journalisation ne sont pas journalisés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L'autre boîte aux lettres de journalisation doit être traitée comme une boîte aux lettres dédiée spéciale. Les messages adressés directement à l'autre boîte aux lettres de journalisation ne sont pas journalisés.
 
 
 Retour au début
@@ -237,32 +167,12 @@ Les règles de journal sont stockées dans Active Directory et appliquées par t
 
 En répliquant toutes les règles de journal dans l'ensemble de l'organisation, Exchange 2013 permet de déployer un ensemble cohérent de règles de journal au sein de l'organisation. Tous les messages qui transitent par votre organisation Exchange 2013 sont soumis aux mêmes règles de journal.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Réplication de règles de journal au sein d’une organisation dépend de la réplication Active Directory. Temps de réplication entre les contrôleurs de domaine Active Directory varie selon le nombre de sites dans l’organisation et de la vitesse des liaisons et d’autres facteurs en dehors du contrôle du Microsoft Exchange. Lorsque vous implémentez des règles de journal dans votre organisation, tenez compte des retards de réplication. Pour plus d’informations sur la réplication de Active Directory, consultez <a href="https://go.microsoft.com/fwlink/?linkid=274904">Introduction à la réplication Active Directory et de topologie de gestion à l’aide de Windows PowerShell</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Réplication de règles de journal au sein d’une organisation dépend de la réplication Active Directory. Temps de réplication entre les contrôleurs de domaine Active Directory varie selon le nombre de sites dans l’organisation et de la vitesse des liaisons et d’autres facteurs en dehors du contrôle du Microsoft Exchange. Lorsque vous implémentez des règles de journal dans votre organisation, tenez compte des retards de réplication. Pour plus d’informations sur la réplication de Active Directory, consultez <a href="https://go.microsoft.com/fwlink/?linkid=274904">Introduction à la réplication Active Directory et de topologie de gestion à l’aide de Windows PowerShell</a>.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Chaque serveur de boîtes aux lettres met en cache l'appartenance au groupe de distribution pour éviter des allers-retours répétés vers Active Directory. La mise en cache des groupes développés réduit le nombre de requêtes que chaque serveur de boîtes aux lettres doit adresser à un contrôleur de domaine Active Directory. Par défaut, les entrées dans le cache de groupes développés expirent dans quatre heures. Par conséquent, si vous spécifiez un groupe de distribution comme destinataire du journal, les modifications apportées à l'appartenance au groupe de distribution peuvent ne pas être appliquées aux règles de journal jusqu'à la mise à jour du cache des groupes développés. Pour forcer une mise à jour immédiate du cache de destinataires, vous devez arrêter et démarrer le service de transport Microsoft Exchange. Vous devez procéder ainsi pour chaque serveur de boîtes aux lettres sur lequel vous souhaitez forcer la mise à jour du cache des destinataires.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Chaque serveur de boîtes aux lettres met en cache l'appartenance au groupe de distribution pour éviter des allers-retours répétés vers Active Directory. La mise en cache des groupes développés réduit le nombre de requêtes que chaque serveur de boîtes aux lettres doit adresser à un contrôleur de domaine Active Directory. Par défaut, les entrées dans le cache de groupes développés expirent dans quatre heures. Par conséquent, si vous spécifiez un groupe de distribution comme destinataire du journal, les modifications apportées à l'appartenance au groupe de distribution peuvent ne pas être appliquées aux règles de journal jusqu'à la mise à jour du cache des groupes développés. Pour forcer une mise à jour immédiate du cache de destinataires, vous devez arrêter et démarrer le service de transport Microsoft Exchange. Vous devez procéder ainsi pour chaque serveur de boîtes aux lettres sur lequel vous souhaitez forcer la mise à jour du cache des destinataires.
 
 
 Retour au début

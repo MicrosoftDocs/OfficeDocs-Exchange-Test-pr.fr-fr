@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration des limites de taille de message propres au client: Exchange 2013 Help'
+title: 'Config. des limites de taille de message propres au client: Exchange 2013 Help'
 TOCTitle: Configuration des limites de taille de message propres au client
 ms:assetid: fef9ca78-b68f-4342-ada0-881ab985ce3c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Hh529949(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-01-26_
+_**Dernière rubrique modifiée :** 2017-01-26_
 
 Dans Microsoft Exchange Server 2013, différentes limites de taille s'appliquent aux messages circulant au sein votre organisation Exchange. Pour plus d'informations, consultez la rubrique [Tailles limites des messages](message-size-limits-exchange-2013-help.md).
 
@@ -225,18 +225,8 @@ Pour toutes les limites de taille de message, vous devez définir des valeurs su
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser le bloc-notes pour configurer des limites de taille de message spécifiques pour les clients

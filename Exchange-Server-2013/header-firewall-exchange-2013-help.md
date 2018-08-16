@@ -20,9 +20,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Dans Microsoft Exchange Server 2013, un *pare-feu d'en-tête* est un mécanisme qui supprime certains champs d'en-tête de messages entrants et sortants. Le pare-feu d'en-tête affecte deux types différents de champs d'en-tête :
 
@@ -56,9 +56,9 @@ Les types d'en-têtes X et d'en-têtes de routage affectés par le pare-feu d'en
     
     Pour des exemples d'en-têtes X d'organisation et de forêt, consultez la section En-têtes X d'organisation et de forêt dans Exchange à la fin de cette rubrique.
 
-  - **En-têtes de routage Received:**   Une instance différente de ce champ d'en-tête est ajoutée à l'en-tête de message par chaque serveur de messagerie ayant accepté et transmis le message au destinataire. L'en-tête **Received:** inclut généralement le nom du serveur de messagerie et un horodateur.
+  - **En-têtes de routage Received:**    Une instance différente de ce champ d'en-tête est ajoutée à l'en-tête de message par chaque serveur de messagerie ayant accepté et transmis le message au destinataire. L'en-tête **Received:**  inclut généralement le nom du serveur de messagerie et un horodateur.
 
-  - **En-têtes de routage Resent-\*:** Les champs d'en-tête Resent sont des champs informatifs qui permettent de déterminer si un message a été transféré par un utilisateur. Les champs d'en-tête Resent disponibles sont les suivants : **Resent-Date:**, **Resent-From:**, **Resent-Sender:**, **Resent-To:**, **Resent-Cc:**, **Resent-Bcc:** et **Resent-Message-ID:**. Les champs **Resent-** sont utilisés de façon à ce que le message apparaisse au destinataire comme s'il était envoyé directement par l'expéditeur d'origine. Le destinataire peut afficher l'en-tête de message pour voir qui a transféré le message.
+  - **En-têtes de routage Resent-\*:**  Les champs d'en-tête Resent sont des champs informatifs qui permettent de déterminer si un message a été transféré par un utilisateur. Les champs d'en-tête Resent disponibles sont les suivants : **Resent-Date:** , **Resent-From:** , **Resent-Sender:** , **Resent-To:** , **Resent-Cc:** , **Resent-Bcc:**  et **Resent-Message-ID:** . Les champs **Resent-** sont utilisés de façon à ce que le message apparaisse au destinataire comme s'il était envoyé directement par l'expéditeur d'origine. Le destinataire peut afficher l'en-tête de message pour voir qui a transféré le message.
 
 Pour appliquer un pare-feu d'en-tête aux en-têtes X d'organisation et de forêt, et aux en-têtes de routage existant dans des messages, Exchange utilise deux méthodes différentes :
 
@@ -154,18 +154,9 @@ Le tableau suivant décrit l'application par défaut des autorisations de pare-f
 <li><p>Serveurs de transport Hub</p></li>
 <li><p>Serveurs de transport Edge</p></li>
 <li><p>Serveurs Exchange</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Sur les serveurs de transport Hub uniquement</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Sur les serveurs de transport Hub uniquement
 
 </li>
 </ul></td>
@@ -190,18 +181,9 @@ Le tableau suivant décrit l'application par défaut des autorisations de pare-f
 <li><p>Serveurs de transport Hub</p></li>
 <li><p>Serveurs de transport Edge</p></li>
 <li><p>Serveurs Exchange</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Serveurs de transport Hub uniquement</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Serveurs de transport Hub uniquement
 
 </li>
 <li><p>Serveurs sécurisés de l'extérieur</p></li>
@@ -276,18 +258,9 @@ Le tableau suivant décrit l'application par défaut des autorisations de pare-f
 <li><p>Serveurs de transport Hub</p></li>
 <li><p>Serveurs de transport Edge</p></li>
 <li><p>Serveurs Exchange</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Sur les serveurs de transport Hub uniquement</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Sur les serveurs de transport Hub uniquement
 
 </li>
 <li><p>Serveurs sécurisés de l'extérieur</p></li>
@@ -301,18 +274,9 @@ Le tableau suivant décrit l'application par défaut des autorisations de pare-f
 <li><p>Serveurs de transport Hub</p></li>
 <li><p>Serveurs de transport Edge</p></li>
 <li><p>Serveurs Exchange</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Sur les serveurs de transport Hub uniquement</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Sur les serveurs de transport Hub uniquement
 
 </li>
 <li><p>Serveurs sécurisés de l'extérieur</p></li>
@@ -372,13 +336,13 @@ Les messages peuvent entrer dans le pipeline de transport sur un serveur de boî
     
     Les en-têtes de routage sont conservés dans les messages déposés par le répertoire de relecture.
     
-    La conservation ou non des en-têtes X d'organisation et de forêt des messages dans les répertoire de relecture est contrôlée par le champ d'en-tête **X-CreatedBy:** dans les fichier de messages :
+    La conservation ou non des en-têtes X d'organisation et de forêt des messages dans les répertoire de relecture est contrôlée par le champ d'en-tête **X-CreatedBy:**  dans les fichier de messages :
     
-      - Si la valeur de **X-CreatedBy:** est `MSExchange15`, les en-têtes X d'organisation et de forêt sont conservés dans les messages.
+      - Si la valeur de **X-CreatedBy:**  est `MSExchange15`, les en-têtes X d'organisation et de forêt sont conservés dans les messages.
     
-      - Si la valeur de **X-CreatedBy:** n'est pas `MSExchange15`, les en-têtes X d'organisation et de forêt sont supprimés des messages.
+      - Si la valeur de **X-CreatedBy:**  n'est pas `MSExchange15`, les en-têtes X d'organisation et de forêt sont supprimés des messages.
     
-      - Si le champ d'en-tête **X-CreatedBy:** n'existe pas dans les fichiers de messages, les en-têtes X d'organisation et de forêt sont supprimés des messages.
+      - Si le champ d'en-tête **X-CreatedBy:**  n'existe pas dans les fichiers de messages, les en-têtes X d'organisation et de forêt sont supprimés des messages.
 
   - **Répertoire de dépôt**   Le répertoire de dépôt est utilisé par les connecteurs étrangers sur les serveurs de boîtes aux lettres pour envoyer des messages à des serveurs de messagerie qui n'utilisent pas le protocole SMTP pour transférer les messages. Pour plus d'informations sur les connecteurs étrangers, consultez la rubrique [Connecteurs étrangers](foreign-connectors-exchange-2013-help.md).
     

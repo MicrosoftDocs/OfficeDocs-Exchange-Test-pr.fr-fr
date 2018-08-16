@@ -1,5 +1,5 @@
 ﻿---
-title: 'Identifier mon problème à l’aide des vérifications automatiques (ajout de domaines): Exchange 2013 Help'
+title: 'Identifier mon problème à l’aide des vérif. automatiques (ajout de domaines)'
 TOCTitle: Identifier mon problème à l’aide des vérifications automatiques (ajout de domaines)
 ms:assetid: ea90a24b-7c9c-48d5-9475-0eb7777452f3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn793981(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les vérifications présentées sur cette page vous aideront à identifier certains des problèmes de configuration les plus courants. Vous pouvez utiliser les vérifications automatiques ci-dessous pour valider votre configuration et mettre à jour votre environnement.
 

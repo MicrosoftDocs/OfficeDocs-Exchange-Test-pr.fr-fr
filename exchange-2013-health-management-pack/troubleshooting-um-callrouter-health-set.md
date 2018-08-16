@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 L'indicateur d'intégrité du routeur d'appels de messagerie unifiée Microsoft Exchange contrôle l'intégrité globale du service de routeur d'appels de messagerie unifiée.
 
@@ -122,7 +122,7 @@ Si les journaux d'événement ne contiennent pas assez d'informations, vous deve
 
 Renouvelez le certificat du service routeur d'appels de messagerie unifiée sur le serveur d'accès au client.
 
-**Étapes de résolution des problèmes supplémentaires :**
+**Étapes de résolution des problèmes supplémentaires :** 
 
 1.  Démarrez le Gestionnaire des services Internet, puis connectez-vous au serveur signalant le problème afin de déterminer si le pool d’applications **MSExchangeServicesAppPool** est en cours d’exécution.
 

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration de quotas de stockage pour une boîte aux lettres: Exchange 2013 Help'
+title: 'Config. de quotas de stockage pour une boîte aux lettres: Exchange 2013 Help'
 TOCTitle: Configuration de quotas de stockage pour une boîte aux lettres
 ms:assetid: 5f5fe292-c80e-4a0b-b3e6-e193ea5171d0
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998353(v=EXCHG.150)
@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-07-07_
+_**Dernière rubrique modifiée :** 2015-07-07_
 
 **Résumé** : Utilisez le CAE ou Shell pour définir des quotas de stockage pour des boîtes aux lettres spécifiques.
 
 Les quotas de stockage vous permettent de contrôler la taille des boîtes aux lettres et de gérer la croissance des bases de données de boîtes aux lettres. Lorsqu’une boîte aux lettres atteint ou dépasse un quota de stockage défini, Exchange envoie une notification au propriétaire de la boîte aux lettres.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les quotas de stockage s’appliquent à la taille d’une boîte aux lettres donnée, tel que défini par la propriété <code>TotalItemSize</code> lorsque vous exécutez la cmdlet <code>Get-MailboxStatistics</code>. Pour plus d’informations, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/bb124612(v=exchg.150)">Get-MailboxStatistics</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les quotas de stockage s’appliquent à la taille d’une boîte aux lettres donnée, tel que défini par la propriété <code>TotalItemSize</code> lorsque vous exécutez la cmdlet <code>Get-MailboxStatistics</code>. Pour plus d’informations, consultez la rubrique <a href="https://technet.microsoft.com/fr-fr/library/bb124612(v=exchg.150)">Get-MailboxStatistics</a>.
 
 
 Des quotas de stockage sont généralement configurés pour chaque base de données. Autrement dit, les quotas configurés pour une base de données de boîtes aux lettres s’appliquent à toutes les boîtes aux lettres de cette base de données. Pour plus d’informations sur la gestion des paramètres de boîtes aux lettres pour chaque base de données, consultez la rubrique [Gestion des bases de données de boîtes aux lettres dans Exchange 2013](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md).
@@ -47,18 +37,8 @@ Cette rubrique vous explique comment personnaliser les paramètres de stockage d
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -75,18 +55,8 @@ Cette rubrique vous explique comment personnaliser les paramètres de stockage d
     
       - **Émettre un avertissement à (Go)**   Ce champ affiche la limite de stockage maximale avant qu’un avertissement ne soit présenté à l’utilisateur. Si la taille de la boîte aux lettres atteint ou dépasse la valeur spécifiée, Exchange envoie un message d’avertissement à l’utilisateur.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Le message associé au quota <strong>Émettre un avertissement</strong> ne sera pas envoyé à l’utilisateur, sauf si la valeur de ce paramètre est supérieure à 50 % de la valeur spécifiée dans le quota <strong>Interdire l’envoi</strong>. Si vous définissez par exemple le quota <strong>Interdire l’envoi</strong> sur 8 Mo, vous devez définir le quota <strong>Émettre un avertissement</strong> sur au moins 4 Mo. Dans le cas contraire, le message de quota <strong>Émettre un avertissement</strong> ne sera pas envoyé.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Le message associé au quota <strong>Émettre un avertissement</strong> ne sera pas envoyé à l’utilisateur, sauf si la valeur de ce paramètre est supérieure à 50 % de la valeur spécifiée dans le quota <strong>Interdire l’envoi</strong>. Si vous définissez par exemple le quota <strong>Interdire l’envoi</strong> sur 8 Mo, vous devez définir le quota <strong>Émettre un avertissement</strong> sur au moins 4 Mo. Dans le cas contraire, le message de quota <strong>Émettre un avertissement</strong> ne sera pas envoyé.
     
       - **Interdire l’envoi à (Go)**   Ce champ affiche la limite d’*interdiction d’envoi* pour la boîte aux lettres. Si la taille de la boîte aux lettres atteint ou dépasse la limite spécifiée, Exchange empêche l’utilisateur d’envoyer de nouveaux messages et affiche un message d’erreur descriptif.
     
@@ -98,18 +68,8 @@ Cette rubrique vous explique comment personnaliser les paramètres de stockage d
 
 Cet exemple montre comment définir les quotas d’avertissement, d’interdiction d’envoi et d’interdiction d’envoi et de réception pour la boîte aux lettres de Joe Healy sur 24,5 Go, 24,75 Go et 25 Go respectivement.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour vous assurer que les paramètres personnalisés de la boîte aux lettres sont utilisés à la place des paramètres par défaut de la base de données, vous devez définir le paramètre <em>UseDatabaseQuotaDefaults</em> sur <code>$false</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour vous assurer que les paramètres personnalisés de la boîte aux lettres sont utilisés à la place des paramètres par défaut de la base de données, vous devez définir le paramètre <em>UseDatabaseQuotaDefaults</em> sur <code>$false</code>.
 
 
     Set-Mailbox -Identity "Joe Healy" -IssueWarningQuota 24.5gb -ProhibitSendQuota 24.75gb -ProhibitSendReceiveQuota 25gb -UseDatabaseQuotaDefaults $false

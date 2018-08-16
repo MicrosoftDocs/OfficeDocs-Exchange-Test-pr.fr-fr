@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer un standard de standard automatique de secours DTMF: Exchange 2013 Help'
+title: 'Config. un standard de standard auto. de secours DTMF: Exchange 2013 Help'
 TOCTitle: Configurer un standard de standard automatique de secours DTMF
 ms:assetid: a82d85f7-de30-40db-8ee6-b091ac14da9d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb232158(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-30_
+_**Dernière rubrique modifiée :** 2012-11-30_
 
 Vous pouvez configurer un standard automatique de messagerie unifiée à reconnaissance vocale doté d'un standard automatique de secours DTMF (numérotation en fréquences vocales). Un standard automatique de secours DTMF est utilisé lorsque le standard automatique de messagerie unifiée à reconnaissance vocale ne comprend pas ou ne reconnaît pas les entrées vocales de l'appelant. En cas d'utilisation d'un standard automatique de secours DTMF, l'appelant doit utiliser des entrées DTMF, également appelées entrées à tonalité, pour naviguer dans le système de menus du standard automatique, épeler un nom d'utilisateur ou utiliser un message de menu personnalisé. Si aucun standard automatique de secours DTMF n'a été configuré et si le nombre maximal d'entrées vocales est dépassé parce que le système n'a pas compris ce que disait l'appelant, le système répond par le message d'assistance vocale suivant : « Désolé de n'avoir pu vous aider. Veuillez rappeler plus tard. »
 
@@ -35,18 +35,8 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -61,18 +51,8 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
 
 4.  Sur la page **Sélectionner un standard automatique de messagerie unifiée**, sélectionnez le standard automatique que vous voulez utiliser comme standard automatique de secours DTMF, puis cliquez sur **Enregistrer**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez commencer par activer la reconnaissance vocale du standard automatique avant de rechercher un standard automatique de secours DTMF que vous avez configuré.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez commencer par activer la reconnaissance vocale du standard automatique avant de rechercher un standard automatique de secours DTMF que vous avez configuré.
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour configurer un standard automatique à reconnaissance vocale avec un standard automatique de secours DTMF

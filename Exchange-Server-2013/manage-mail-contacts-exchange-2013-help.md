@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-10-04_
+_**Dernière rubrique modifiée :** 2017-10-04_
 
 Les contacts de messagerie sont des objets de service d'annuaire à extension messagerie qui contiennent des informations sur les personnes ou les organisations qui existent en dehors de votre organisation Exchange ou Exchange Online. Chaque contact de messagerie dispose d'une adresse de messagerie externe. Pour plus d'informations sur les contacts de messagerie, consultez la rubrique [Recipients](recipients-exchange-2013-help.md).
 
@@ -29,18 +29,8 @@ Les contacts de messagerie sont des objets de service d'annuaire à extension me
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -73,18 +63,8 @@ Les contacts de messagerie sont des objets de service d'annuaire à extension me
         
         Pour sélectionner une autre UO, cliquez sur **Parcourir**. La boîte de dialogue affiche toutes les unités d'organisation de la forêt qui se trouvent dans la portée indiquée. Sélectionnez l'UO souhaitée, puis cliquez sur **OK**.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>La zone <strong>Unité d'organisation</strong> est disponible uniquement dans Exchange Server 2013. Elle ne l'est pas dans Exchange Online.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > La zone <strong>Unité d'organisation</strong> est disponible uniquement dans Exchange Server 2013. Elle ne l'est pas dans Exchange Online.
 
 
 4.  Lorsque vous avez terminé, cliquez sur **Enregistrer**.
@@ -171,36 +151,16 @@ La section **Organisation** permet d'enregistrer des informations détaillées s
 
 Utilisez la section **Options de messagerie électronique** pour ajouter ou supprimer des adresses de proxy pour le contact de messagerie ou pour modifier des adresses de proxy existantes. L'adresse SMTP principale du contact de messagerie s'affiche également dans cette section, mais vous ne pouvez pas la modifier. Pour la modifier, vous devez changer l'adresse de messagerie externe du contact dans la section **Général**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La section <strong>Options de messagerie électronique</strong> est disponible uniquement dans Exchange Server 2013. Elle ne l'est pas dans Exchange Online.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La section <strong>Options de messagerie électronique</strong> est disponible uniquement dans Exchange Server 2013. Elle ne l'est pas dans Exchange Online.
 
 
 ## Infos-courrier
 
 Dans la section **Info-courrier**, vous pouvez ajouter une info-courrier pour alerter les utilisateurs d'éventuels problèmes avant qu'ils n'envoient un message à ce destinataire. Une info-courrier est un texte qui s’affiche dans la barre d’informations lorsque ce destinataire est ajouté aux champs À, Cc ou Cci d’un nouveau message électronique.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour modifier les propriétés d'un contact de messagerie
@@ -261,18 +221,8 @@ Lorsque vous modifiez en bloc des contacts de messagerie, vous pouvez modifier l
 
 2.  Dans la liste de contacts, sélectionnez au moins deux contacts de messagerie. Vous ne pouvez pas modifier en bloc une combinaison de contacts de messagerie et d’utilisateurs de messagerie.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous pouvez sélectionner plusieurs contacts de messagerie adjacents en maintenant la touche Maj enfoncée et en cliquant sur le premier puis le dernier contact à modifier. Vous pouvez aussi sélectionner plusieurs contacts de messagerie en maintenant la touche Ctrl enfoncée, puis en cliquant sur chacun des contacts à modifier.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > Vous pouvez sélectionner plusieurs contacts de messagerie adjacents en maintenant la touche Maj enfoncée et en cliquant sur le premier puis le dernier contact à modifier. Vous pouvez aussi sélectionner plusieurs contacts de messagerie en maintenant la touche Ctrl enfoncée, puis en cliquant sur chacun des contacts à modifier.
 
 
 3.  Dans le volet Détails, sous **Modification en bloc**, cliquez sur **Mettre à jour** sous **Informations de contact** ou **Organisation**.

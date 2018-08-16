@@ -1,5 +1,5 @@
 ﻿---
-title: 'Création d’une liste d’adresses à l’aide de filtres de destinataires: Exchange 2013 Help'
+title: 'Liste d’adresses: création avec filtres de destinataires: Exchange 2013 Help'
 TOCTitle: Création d’une liste d’adresses à l’aide de filtres de destinataires
 ms:assetid: 8eabea64-97c6-40af-b61c-9b6a125cbdf1
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb123718(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-12-16_
+_**Dernière rubrique modifiée :** 2014-12-16_
 
 Cette rubrique décrit la création d'une liste d'adresses en utilisant des filtres de destinataires. Pour en savoir plus sur les listes d'adresses, consultez la rubrique [Listes d’adresses](address-lists-exchange-2013-help.md).
 
@@ -35,18 +35,8 @@ Pour les autres tâches de gestion relatives aux listes d'adresses, consultez la
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utilisez l'environnement de ligne de commande Exchange Management Shell pour créer une liste d'adresses en utilisant des filtres de destinataires

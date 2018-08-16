@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Dans Active Directory, la *forêt* représente la limite extérieure de votre service d'annuaire. Vous pouvez créer des connecteurs d'envoi pour activer la communication entre les forêts. Dans cet exemple, les connecteurs utilisent une authentification de base.
 
@@ -35,18 +35,8 @@ Vou ssouhaitez découvrir des scénarios dans lesquels cette procédure est util
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -67,18 +57,8 @@ Vous devez créer un compte d'utilisateur dans chaque forêt à utiliser pour l'
     
     Pour **Authentification d'un hôte actif**, sélectionnez **Authentification de base** et fournissez un nom d'utilisateur et un mot de passe. Vous pouvez alors choisir **Ne proposer l'authentification de base qu'après le démarrage de TLS** pour une communication sécurisée sur TLS.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous utilisez une authentification de base sur TLS, le serveur cible doit être configuré pour utiliser un certificat X.509.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous utilisez une authentification de base sur TLS, le serveur cible doit être configuré pour utiliser un certificat X.509.
 
 
 4.  Sous **Espace d'adressage**, cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter"). Dans la fenêtre **Ajouter un domaine**, vérifiez que SMTP apparaît dans la liste **Type**. Pour **Nom de domaine complet (FQDN)**, entrez le domaine de réception, par exemple fourthcoffee.com. Cliquez sur **Enregistrer**, puis sur **Suivant**.

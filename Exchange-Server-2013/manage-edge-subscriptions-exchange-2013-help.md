@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-04-16_
+_**Dernière rubrique modifiée :** 2018-04-16_
 
 Cette rubrique fournit des informations détaillées sur une variété de tâches de gestion d’abonnement Edge.
 
@@ -41,18 +41,8 @@ Vérifier les résultats EdgeSync
 
   - Vous devez disposer d’un serveur Edge abonné à votre site Active Directory accessible via Internet. Pour plus d’informations, consultez la rubrique [Configurer le flux de messagerie Internet via un serveur de transport Edge abonné](configure-internet-mail-flow-through-a-subscribed-edge-transport-server-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -131,18 +121,8 @@ Il peut arriver que vous souhaitiez réabonner un serveur de transport Edge à 
 
   - Les informations d’identification du compte ESRA sont compromises.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Pour réabonner un serveur de transport Edge, exportez un nouveau fichier d’abonnement Edge sur le serveur de transport Edge, puis importez le fichier XML sur un serveur de boîtes aux lettres. Vous devez réabonner le serveur de transport Edge au même site Active Directory auquel il était abonné à l’origine. Vous ne devez pas commencer par supprimer l’abonnement Edge d’origine. Le processus de réabonnement remplacera l’abonnement Edge existant.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Pour réabonner un serveur de transport Edge, exportez un nouveau fichier d’abonnement Edge sur le serveur de transport Edge, puis importez le fichier XML sur un serveur de boîtes aux lettres. Vous devez réabonner le serveur de transport Edge au même site Active Directory auquel il était abonné à l’origine. Vous ne devez pas commencer par supprimer l’abonnement Edge d’origine. Le processus de réabonnement remplacera l’abonnement Edge existant.
 
 
 ## Ajouter ou supprimer un serveur de boîtes aux lettres

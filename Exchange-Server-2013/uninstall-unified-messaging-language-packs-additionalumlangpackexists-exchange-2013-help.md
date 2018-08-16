@@ -1,5 +1,5 @@
 ﻿---
-title: 'Désinstaller les modules linguistiques de messagerie unifiée_AdditionalUMLangPackExists: Exchange 2013 Help'
+title: 'Désinstaller les modules linguistiques de messagerie unifiée'
 TOCTitle: Désinstaller les modules linguistiques de messagerie unifiée_AdditionalUMLangPackExists
 ms:assetid: 3a7e2621-0553-44f5-8029-c72fea25af3c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.additionalumlangpackexists(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 

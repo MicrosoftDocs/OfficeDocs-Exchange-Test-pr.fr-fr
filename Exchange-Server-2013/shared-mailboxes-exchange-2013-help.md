@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-06-04_
+_**Dernière rubrique modifiée :** 2015-06-04_
 
 Découvrez la boîte aux lettres partagée Exchange dans Microsoft Exchange Server 2013, les raisons de son utilisation et la méthode de conversion d’une boîte aux lettres déléguée en boîte aux lettres partagée Exchange.
 

@@ -1,5 +1,5 @@
 ﻿---
-title: "Un conteneur d'objets système Microsoft Exchange dupliqué existe dans Active Directory: Exchange 2013 Help"
+title: 'Un ctnr d’objets système Exchange dupliqué existe dans Active Directory'
 TOCTitle: Un conteneur d'objets système Microsoft Exchange dupliqué existe dans Active Directory
 ms:assetid: cd0f45ab-89de-4653-b50d-c1157c2329d5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.adiniterrorrule(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2013-02-18_
+_**Dernière rubrique modifiée :** 2013-02-18_
 
 Le programme d'installation de Microsoft Exchange Server 2013 ne peut pas continuer, car il a détecté un conteneur d'objets système Microsoft Exchange dupliqué dans le contexte d'appellation de domaine Active Directory. Quand le programme d'installation détecte un conteneur d'objets système Microsoft Exchange dupliqué, vous devez supprimer le conteneur dupliqué avant de pouvoir continuer l'installation. S'il existe un conteneur d'objets système Microsoft Exchange dupliqué, vous ne pouvez pas résoudre le problème en réexécutant **DomainPrep**. Vous devez identifier et supprimer le conteneur dupliqué qui est incorrect.
 
@@ -35,18 +35,8 @@ Pour résoudre ce problème, procédez comme suit :
 
 7.  Confirmez la suppression en cliquant sur **Oui** dans la boîte de dialogue Active Directory.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous souhaitez que la modification soit immédiatement répliquée, vous devez démarrer manuellement la réplication entre les contrôleurs de domaine.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous souhaitez que la modification soit immédiatement répliquée, vous devez démarrer manuellement la réplication entre les contrôleurs de domaine.
 
 
 Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), et [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).

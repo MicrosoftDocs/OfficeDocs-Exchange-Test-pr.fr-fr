@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Cette rubrique contient des informations sur le concept des espaces de noms disjoints et les scénarios pris en charge pour déployer Microsoft Exchange 2013 dans un domaine contenant un espace de noms disjoint.
 
@@ -41,18 +41,8 @@ Un ordinateur qui exécute Windows dans un domaine Active Directory possède un 
 
   - **Nom de domaines NetBIOS**   Généralement, le nom de domaine NetBIOS est le sous-domaine du nom de domaine DNS. Par exemple, si le nom de domaine DNS est contoso.com, le nom de domaine NetBIOS est contoso. Si le nom de domaine DNS est corp.contoso.com, le nom de domaine NetBIOS est corp.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour rechercher des informations DNS et NetBIOS pour des ordinateurs qui exécutent Windows Server 2008, consultez la rubrique Afficher des informations relatives aux noms DNS et NetBIOS d’un ordinateur qui exécute Windows Server 2008.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour rechercher des informations DNS et NetBIOS pour des ordinateurs qui exécutent Windows Server 2008, consultez la rubrique Afficher des informations relatives aux noms DNS et NetBIOS d’un ordinateur qui exécute Windows Server 2008.
 
 
 Un ordinateur dans un domaine Active Directory possède également un suffixe DNS principal et peut avoir des suffixes DNS supplémentaires. Par défaut, le suffixe DNS principal est identique au nom de domaine DNS. Pour des instructions détaillées sur la modification du suffixe DNS principal, reportez-vous aux procédures décrites plus loin dans cette rubrique.
@@ -79,18 +69,8 @@ Exchange 2013 prend en charge les trois scénarios suivants pour le déploiemen
 
 Ces scénarios sont détaillés dans les sections suivantes.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il est accepté d’exécuter Exchange 2013 selon les scénarios d’espaces de noms disjoints décrits dans cette rubrique. Cependant, si vous êtes confronté à un scénario d’espaces de noms disjoints différent des scénarios décrits dans cette rubrique, vous devez utiliser les services Microsoft pour déployer Exchange 2013. Pour plus d’informations, consultez la rubrique <a href="https://go.microsoft.com/fwlink/p/?linkid=94845">Services Microsoft</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il est accepté d’exécuter Exchange 2013 selon les scénarios d’espaces de noms disjoints décrits dans cette rubrique. Cependant, si vous êtes confronté à un scénario d’espaces de noms disjoints différent des scénarios décrits dans cette rubrique, vous devez utiliser les services Microsoft pour déployer Exchange 2013. Pour plus d’informations, consultez la rubrique <a href="https://go.microsoft.com/fwlink/p/?linkid=94845">Services Microsoft</a>.
 
 
 ## Scénario : Le suffixe DNS principal et le nom de domaine DNS sont différents
@@ -117,7 +97,7 @@ En outre, pour vous assurer que la liste de recherche de suffixe DNS contient to
 
   - [Forum aux questions (FAQ) à propos des stratégies de groupe](https://go.microsoft.com/fwlink/p/?linkid=100128)
 
-  - [Nouvelles stratégies de groupe pour DNS dans Windows Server 2003](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=294785)
+  - [Nouvelles stratégies de groupe pour DNS dans Windows Server 2003](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=294785)
 
   - [Stratégie de groupe](https://go.microsoft.com/fwlink/p/?linkid=268043)
 

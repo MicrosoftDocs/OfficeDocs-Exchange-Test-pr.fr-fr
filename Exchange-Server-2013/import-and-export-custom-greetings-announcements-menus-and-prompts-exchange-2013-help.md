@@ -1,5 +1,5 @@
 ﻿---
-title: 'Importer et exporter des invites, des annonces, des menus et des messages d’accueil personnalisés: Exchange 2013 Help'
+title: 'Importer/exporter des invites, annonces, menus et messages d’accueil perso.'
 TOCTitle: Importer et exporter des invites, des annonces, des menus et des messages d’accueil personnalisés
 ms:assetid: e82da5d5-625f-4d8b-8d31-ac45513aacfd
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee681667(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Vous pouvez importer et exporter les fichiers audio que vous avez enregistrés pour les utiliser dans les plans de numérotation et les standards automatiques de messagerie unifiée (MU). Par exemple, vous devez exporter et enregistrer une copie d’un fichier audio si vous effectuez une mise à niveau à partir d’une version précédente d’Exchange. Vous pourriez également avoir besoin d'importer une copie d'une invite audio enregistrée avant de configurer un plan de numérotation ou un standard automatique.
 
@@ -51,18 +51,8 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

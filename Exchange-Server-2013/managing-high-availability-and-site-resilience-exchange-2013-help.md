@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestion de la haute disponibilité et de la résilience de site: Exchange 2013 Help'
+title: 'Gestion de la haute dispo. et de la résilience de site: Exchange 2013 Help'
 TOCTitle: Gestion de la haute disponibilité et de la résilience de site
 ms:assetid: f9677392-88d2-457f-a488-245771a8c1f2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd638215(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-05_
+_**Dernière rubrique modifiée :** 2012-11-05_
 
 Après avoir créé, validé et déployé une solution de haute disponibilité ou de résilience de site Microsoft Exchange Server 2013, la solution passe de la phase de déploiement à la phase opérationnelle du cycle de vie de la solution globale. La phase opérationnelle se compose de plusieurs tâches. Toutes les tâches sont liées à l’un des domaines suivants : groupes de disponibilité de base de données (DAG), copies de base de données de boîte aux lettres, réalisation de la surveillance proactive, et gestion des switchovers et des basculements.
 

@@ -1,5 +1,5 @@
 ﻿---
-title: "Création d'une stratégie de boîte aux lettres Outlook Web App: Exchange 2013 Help"
+title: 'Créer une stratégie de boîte aux lettres Outlook Web App: Exchange 2013 Help'
 TOCTitle: Création d'une stratégie de boîte aux lettres Outlook Web App
 ms:assetid: 347207fa-cfb7-40a6-b19a-831dcdb54ad5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd335191(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-05-30_
+_**Dernière rubrique modifiée :** 2013-05-30_
 
 Vous créez une stratégie de boîte aux lettres Outlook Web App pour appliquer un ensemble courant de paramètres de stratégies. Les stratégies de boîte aux lettres Outlook Web App sont utiles pour l'application et la normalisation des paramètres, par exemple les paramètres de pièces jointes, pour des groupes spécifiques d'utilisateurs.
 
@@ -27,18 +27,8 @@ Vous créez une stratégie de boîte aux lettres Outlook Web App pour appliquer 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -57,18 +47,8 @@ Vous créez une stratégie de boîte aux lettres Outlook Web App pour appliquer 
     
     Utilisez les cases à cocher pour activer ou désactiver des fonctionnalités. Par défaut, les fonctionnalités les plus courantes sont affichées. Pour afficher toutes les fonctionnalités pouvant être activées ou désactivées, cliquez sur **plus d'options**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Présente les paramètres pour le remplacement par les stratégies de boîte au lettres Outlook Web App par les paramètres de répertoire virtuel Outlook Web App. Vous pouvez modifier les paramètres de segmentation des utilisateurs à l'aide de la cmdlet <strong>Set-CASMailbox</strong> dans l'environnement Shell.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Présente les paramètres pour le remplacement par les stratégies de boîte au lettres Outlook Web App par les paramètres de répertoire virtuel Outlook Web App. Vous pouvez modifier les paramètres de segmentation des utilisateurs à l'aide de la cmdlet <strong>Set-CASMailbox</strong> dans l'environnement Shell.
 
 
 5.  Cliquez sur **Enregistrer** pour enregistrer la stratégie.

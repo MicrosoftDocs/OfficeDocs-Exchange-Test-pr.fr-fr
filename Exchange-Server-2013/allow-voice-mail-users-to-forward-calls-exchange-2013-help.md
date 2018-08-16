@@ -1,5 +1,5 @@
 ﻿---
-title: "Activation du transfert d'appels pour des utilisateurs de messagerie vocale: Exchange 2013 Help"
+title: 'Activ. le transfert d’appels pour utlsr de messagerie voc.: Exchange 2013 Help'
 TOCTitle: Activation du transfert d'appels pour des utilisateurs de messagerie vocale
 ms:assetid: 1f8e0a53-3d9d-4f8c-9be3-9f1e2a4347a3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd335138(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 La fonctionnalité Règles de répondeur automatique a été introduite pour la première fois dans Exchange 2010. Grâce à cette fonctionnalité, les utilisateurs à extension messagerie vocale peuvent déterminer le mode de traitement de leurs appels entrants. Les règles de répondeur automatique et les règles de boîte de réception sont appliquées de la même manière aux appels entrants et aux messages électroniques entrants.
 

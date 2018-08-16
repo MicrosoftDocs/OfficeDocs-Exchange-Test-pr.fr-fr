@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utilisation de la Sauvegarde Windows Server pour sauvegarder et restaurer des données Exchange: Exchange 2013 Help'
+title: 'Sauvegarde Windows Server: sauvegarder et restaurer des données Exchange'
 TOCTitle: Utilisation de la Sauvegarde Windows Server pour sauvegarder et restaurer des données Exchange
 ms:assetid: 0fac891a-5713-42b6-afd5-c91b2b88f966
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd876851(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 [l’architecture de choix](https://blogs.technet.com/b/exchange/archive/2014/04/21/the-preferred-architecture.aspx) pour Exchange Server 2013 de Microsoft s’appuie sur un concept appelé Exchange Protection des données natives. Exchange Protection de données native s’appuie sur les fonctionnalités de native Exchange pour protéger vos données de boîte aux lettres, sans l’utilisation de sauvegardes traditionnelles. Mais si vous souhaitez créer des sauvegardes, Exchange inclut un plug-in Windows Server sauvegarde (WSB) qui vous permet de créer des sauvegardes de basé sur Volume Shadow Copy Service VSS Exchange prenant en charge des données de Exchange. Pour effectuer des sauvegardes Exchange prenant en charge, vous devez disposer de la fonctionnalité sauvegarde Windows Server est installée.
 

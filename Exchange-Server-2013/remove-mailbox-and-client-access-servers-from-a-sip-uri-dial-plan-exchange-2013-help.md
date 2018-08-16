@@ -1,5 +1,5 @@
 ﻿---
-title: "Supprimer des serveurs de boîtes aux lettres et accès au Client à partir d'un plan de numérotation URI SIP: Exchange 2013 Help"
+title: 'Supprimer des srv de BAL et accès au Client à partir d’un plan de num. URI SIP'
 TOCTitle: Supprimer des serveurs de boîtes aux lettres et accès au Client à partir d'un plan de numérotation URI SIP
 ms:assetid: 367441e1-1a0f-42c8-9fa8-8abe80b3d015
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997238(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-16_
+_**Dernière rubrique modifiée :** 2013-04-16_
 
 Vous pouvez supprimer les serveurs d'accès au client et de boîtes aux lettres des plans de numérotation URI SIP. Lors du déploiement de Microsoft Lync Server, pour permettre aux appels sortants de fonctionner correctement, vous devez ajouter manuellement tous les serveurs d'accès au client et de boîtes aux lettres aux plans de numérotation URI SIP créés pour Lync Server. Cependant, il est possible que vous deviez supprimer un serveur d'accès au client ou de boîtes aux lettres de votre déploiement Lync, par exemple si vous effectuez une opération de maintenance ou si vous déconnectez le serveur.
 
@@ -31,18 +31,8 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

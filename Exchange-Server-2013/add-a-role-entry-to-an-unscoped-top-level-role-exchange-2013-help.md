@@ -1,5 +1,5 @@
 ﻿---
-title: 'Ajouter une entrée de rôle à un rôle de niveau supérieur non délimité: Exchange 2013 Help'
+title: 'Ajouter une entrée à un rôle supérieur non délimité: Exchange 2013 Help'
 TOCTitle: Ajouter une entrée de rôle à un rôle de niveau supérieur non délimité
 ms:assetid: 52fd3f20-c348-49d5-9bdb-f2cbf780cf2d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd979789(v=EXCHG.150)
@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-03_
+_**Dernière rubrique modifiée :** 2012-10-03_
 
 Vous pouvez ajouter des scripts et des cmdlets non-Exchange à des rôles de gestion de haut niveau non délimités si vous voulez que les nouveaux scripts ou les nouvelles cmdlets non-Exchange soient disponibles pour les rôles non délimités existants. Ces scripts et cmdlets non-Exchange sont ajoutés en tant qu’entrées de rôles de gestion à des rôles de gestion de haut niveau non délimités. Ils peuvent alors être ajoutés par ces entrées de rôles de haut niveau non délimités ou tout autre rôle non délimité dérivé des rôles de haut niveau. Pour plus d’informations sur les entrées des rôles non délimitées, voir [Présentation des rôles de gestion](understanding-management-roles-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous souhaitez modifier une entrée de rôle sur un rôle de gestion qui contient les cmdlets Exchange, voir <a href="change-a-role-entry-exchange-2013-help.md">Modifier une entrée de rôle</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous souhaitez modifier une entrée de rôle sur un rôle de gestion qui contient les cmdlets Exchange, voir <a href="change-a-role-entry-exchange-2013-help.md">Modifier une entrée de rôle</a>.
 
 
 Souhaitez-vous rechercher les autres tâches de gestion relatives aux rôles ? Consultez la rubrique [Autorisations avancées](advanced-permissions-exchange-2013-help.md).
@@ -51,18 +41,8 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux rôles ? 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -83,18 +63,8 @@ Cet exemple décrit l’ajout du script BulkProvisionUsers.ps1 au rôle de scrip
 
     Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La cmdlet <strong>Add-ManagementRoleEntry</strong> effectue une validation simple pour vous assurer que vous ajoutez uniquement les paramètres qui existent dans le script. Cependant, aucune validation supplémentaire n’est faite après l’ajout de l’entrée de rôle. Si des paramètres sont ultérieurement ajoutés ou supprimés, vous devez manuellement mettre à jour les entrées de rôle qui contiennent le script.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La cmdlet <strong>Add-ManagementRoleEntry</strong> effectue une validation simple pour vous assurer que vous ajoutez uniquement les paramètres qui existent dans le script. Cependant, aucune validation supplémentaire n’est faite après l’ajout de l’entrée de rôle. Si des paramètres sont ultérieurement ajoutés ou supprimés, vous devez manuellement mettre à jour les entrées de rôle qui contiennent le script.
 
 
 ## Ajouter une entrée de rôle de cmdlet non-Exchange à un rôle de haut niveau non délimité
@@ -113,18 +83,8 @@ Cet exemple vous indique comment ajouter la cmdlet **Set-WidgetConfiguration** d
 
     Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La cmdlet <strong>Add-ManagementRoleEntry</strong> effectue une validation simple pour vous assurer que vous ajoutez uniquement les paramètres qui existent dans la cmdlet. Cependant, aucune validation supplémentaire n’est faite après l’ajout de l’entrée de rôle. Si la cmdlet est modifiée ultérieurement et que des paramètres sont ajoutés ou supprimés, vous devez manuellement mettre à jour les entrées de rôle qui contiennent la cmdlet.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La cmdlet <strong>Add-ManagementRoleEntry</strong> effectue une validation simple pour vous assurer que vous ajoutez uniquement les paramètres qui existent dans la cmdlet. Cependant, aucune validation supplémentaire n’est faite après l’ajout de l’entrée de rôle. Si la cmdlet est modifiée ultérieurement et que des paramètres sont ajoutés ou supprimés, vous devez manuellement mettre à jour les entrées de rôle qui contiennent la cmdlet.
 
 
 ## Autres tâches

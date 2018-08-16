@@ -1,5 +1,5 @@
 ﻿---
-title: 'Modifier les paramètres d’une stratégie de carnet d’adresses: Exchange 2013 Help'
+title: 'Modifier les param. d’une stratégie de carnet d’adresses: Exchange 2013 Help'
 TOCTitle: Modifier les paramètres d’une stratégie de carnet d’adresses
 ms:assetid: ba1ca350-71c2-4c60-a612-33bfa9320b5e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Hh529941(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-03-30_
+_**Dernière rubrique modifiée :** 2016-03-30_
 
 Après avoir créé une stratégie de carnet d’adresses, vous pouvez afficher ou modifier son nom, ainsi que la liste d’adresses globale, le carnet d’adresses en mode hors connexion, la liste de salles et les listes d’adresses affectés.
 

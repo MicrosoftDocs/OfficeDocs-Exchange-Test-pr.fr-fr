@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-02-15_
+_**Dernière rubrique modifiée :** 2014-02-15_
 
 Les stratégies de partage permettent à des utilisateurs individuels de votre organisation Exchange de partager des informations de disponibilité de calendrier avec d’autres organisations Exchange fédérées, des organisations Exchange non fédérées et des utilisateurs Internet individuels. Au cours des opérations normales, vous pouvez changer des propriétés de stratégie de partage. Vous pouvez par exemple modifier des règles de partage, modifier le niveau d’accès de disponibilité, désactiver temporairement une stratégie de partage ou supprimer intégralement une stratégie de partage.
 
@@ -31,18 +31,8 @@ Pour plus d’informations sur la création d’une stratégie de partage, voir 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -79,18 +69,8 @@ Pour plus d’informations sur la création d’une stratégie de partage, voir 
 
 ## Utiliser le Centre d’administration Exchange (EAC) pour supprimer une stratégie de partage
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avant de supprimer une stratégie de partage, celle-ci doit être supprimée de toutes les boîtes aux lettres utilisateur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Avant de supprimer une stratégie de partage, celle-ci doit être supprimée de toutes les boîtes aux lettres utilisateur.
 
 
 1.  Accédez à **organisation** \> **partage**.

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les messages électroniques et leurs pièces jointes contiennent de plus en plus souvent des informations professionnelles cruciales telles que des spécifications de produit, des documents portant sur la stratégie de l’entreprise, des données financières ou des informations d’identification personnelle telles que des détails de contact, des numéros de sécurité sociale, des numéros de cartes de crédit et des données sur les employés. Il existe un certain nombre de réglementations propres à l’industrie et locales un peu partout dans le monde qui régissent la collecte, l’enregistrement et la divulgation des informations d’identification personnelle.
 
@@ -27,18 +27,8 @@ Pour les tâches de gestion liées à la gestion de l’IRM, voir [Procédures d
 
 Transport protection règles vous permettent d’utiliser des règles de transport pour IRM protéger les messages en appliquant un modèle de stratégie de droits [de services AD RMS (Active Directory Rights Management Services)](https://go.microsoft.com/fwlink/p/?linkid=129823) (AD RMS).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>AD RMS est une technologie de protection des données qui fonctionne avec des clients et des applications activés pour RMS (Rights Management Service) afin de protéger les informations sensibles en ligne et hors connexion. Pour utiliser la protection IRM dans un déploiement Exchange sur site, Exchange 2013 requiert un déploiement local d'AD RMS s'exécutant sur Windows Server 2008 ou version ultérieure.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> AD RMS est une technologie de protection des données qui fonctionne avec des clients et des applications activés pour RMS (Rights Management Service) afin de protéger les informations sensibles en ligne et hors connexion. Pour utiliser la protection IRM dans un déploiement Exchange sur site, Exchange 2013 requiert un déploiement local d'AD RMS s'exécutant sur Windows Server 2008 ou version ultérieure.
 
 
 AD RMS utilise les modèles de stratégie XML pour permettre aux applications activées pour IRM d’appliquer des stratégies de protection cohérentes. Dans Windows Server 2008 et les versions ultérieures, le serveur AD RMS comprend un service Web utilisable pour énumérer et obtenir des modèles. Exchange 2013 est fourni avec le modèle Ne pas transférer.
@@ -47,19 +37,9 @@ Lorsque ce modèle est appliqué à un message, seuls les destinataires peuvent 
 
 Des modèles RMS supplémentaires peuvent être créés dans le déploiement AD RMS local pour répondre aux exigences de protection des droits au sein de votre organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si un modèle de stratégie de droits est supprimé du serveur AD RMS, vous devez modifier les règles de protection de transport qui utilisent le modèle supprimé. Si une règle de protection de transport continue à utiliser un modèle de stratégie de droits supprimé, le serveur AD RMS ne réussira pas à adresser le contenu aux destinataires et une notification d’échec de remise sera envoyée à l’expéditeur.<br />
-Dans Windows Server 2008 et les versions ultérieures, vous pouvez archiver les modèles de stratégie des droits au lieu de les supprimer. Les modèles archivés peuvent encore être utilisés pour autoriser le contenu, mais lorsque vous créez ou modifiez une règle de protection de transport, ces modèles ne sont pas inclus dans la liste des modèles.</td>
-</tr>
-</tbody>
-</table>
+> [!important]
+> Si un modèle de stratégie de droits est supprimé du serveur AD RMS, vous devez modifier les règles de protection de transport qui utilisent le modèle supprimé. Si une règle de protection de transport continue à utiliser un modèle de stratégie de droits supprimé, le serveur AD RMS ne réussira pas à adresser le contenu aux destinataires et une notification d’échec de remise sera envoyée à l’expéditeur.
+> Dans Windows Server 2008 et les versions ultérieures, vous pouvez archiver les modèles de stratégie des droits au lieu de les supprimer. Les modèles archivés peuvent encore être utilisés pour autoriser le contenu, mais lorsque vous créez ou modifiez une règle de protection de transport, ces modèles ne sont pas inclus dans la liste des modèles.
 
 
 Pour plus d’informations sur la création de modèles de AD RMS, voir [Guide pas à pas de AD RMS droits de stratégie de modèles de déploiement](https://go.microsoft.com/fwlink/p/?linkid=136593).

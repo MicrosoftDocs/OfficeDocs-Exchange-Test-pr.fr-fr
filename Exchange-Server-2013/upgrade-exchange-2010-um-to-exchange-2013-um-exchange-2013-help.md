@@ -1,5 +1,5 @@
 ﻿---
-title: "Mise à niveau de la messagerie unifiée d'Exchange 2010 vers celle d'Exchange 2013: Exchange 2013 Help"
+title: 'Màn de la MU Exchange 2010 vers la MU Exchange 2013: Exchange 2013 Help'
 TOCTitle: Mise à niveau de la messagerie unifiée d'Exchange 2010 vers celle d'Exchange 2013
 ms:assetid: 01aa5dab-689b-4738-afab-0d2f11a60b39
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn169226(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Lorsque vous procédez à une mise à niveau d’une organisation Microsoft Exchange 2010 avec messagerie unifiée vers une messagerie unifiée Exchange 2013, certaines étapes sont obligatoires, tandis que d’autres ont déjà été accomplies dans le cadre du déploiement de la messagerie unifiée Exchange 2010. Selon votre environnement de téléphonie et les composants de messagerie unifiée précédemment créés et configurés pour la prise en charge de la messagerie unifiée dans Exchange 2010, il se peut que vous deviez déployer des équipements te téléphonie supplémentaires tels que des passerelles VoIP, des PBX IP, ou des PBX traditionnels ou SIP, ainsi que créer et configurer d'éventuels composants de messagerie unifiée supplémentaires requis pour la messagerie unifiée Exchange 2013.
 
@@ -29,34 +29,14 @@ Lorsque vous procédez à une mise à niveau d’une organisation Microsoft Exc
 
   - Vérifiez que vous avez correctement installé et configuré les serveurs d'accès au client exécutant le service routeur des appels de messagerie unifiée Microsoft Exchange, et les serveurs de boîtes aux lettres exécutant le service de messagerie unifiée Microsoft Exchange. Pour plus d'informations sur les services de messagerie unifiée, consultez la rubrique [Services de messagerie unifiée](um-services-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Vous devez déployer au moins un serveur de boîtes aux lettres Exchange 2013 dans votre organisation avant de configurer les passerelles VoIP ou les PBX IP pour envoyer le trafic SIP ou RTP de messagerie unifiée vers les serveurs d’accès client Exchange 2013.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Vous devez déployer au moins un serveur de boîtes aux lettres Exchange 2013 dans votre organisation avant de configurer les passerelles VoIP ou les PBX IP pour envoyer le trafic SIP ou RTP de messagerie unifiée vers les serveurs d’accès client Exchange 2013.
 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Comment procéder ?
@@ -67,18 +47,8 @@ Les modules linguistiques de messagerie unifiée permettent aux appelants et aux
 
 Par défaut, lorsque vous installez un serveur de boîtes aux lettres Exchange 2013, le module linguistique Anglais (États-Unis) est installé. Il s'agit de la seule option linguistique disponible pour votre plan de numérotation, sauf si vous installez un autre module linguistique de messagerie unifiée. (La langue anglaise (États-Unis) ne peut pas être supprimée, sauf si vous supprimez le serveur de boîtes aux lettres de l'ordinateur.) Après que vous avez installé un module linguistique de messagerie unifiée sur un serveur de boîtes aux lettres Exchange 2013, la langue associée au module linguistique est également une option disponible lorsque vous configurez la langue par défaut du plan de numérotation. Par défaut, comme un standard automatique de messagerie unifiée est lié, lors de sa création, à un plan de numérotation de messagerie unifiée, le standard automatique utilise le paramètre de langue par défaut du plan de numérotation de messagerie unifiée lié. Cependant, ce paramètre peut être modifié après la création du standard automatique de messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si la langue anglaise (États-Unis) est la seule que vous souhaitez proposer pour votre plan de numérotation, vous pouvez passer directement à l'étape 2.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si la langue anglaise (États-Unis) est la seule que vous souhaitez proposer pour votre plan de numérotation, vous pouvez passer directement à l'étape 2.
 
 
 Vous pouvez ajouter des modules linguistiques de messagerie unifiée à l'aide de la commande setup.exe ou en exécutant le programme d'installation *\<UMLanguagePack\>*.exe après avoir téléchargé le module linguistique de messagerie unifiée à partir de la page [Exchange Server 2013 UM Language Packs - Français](https://go.microsoft.com/fwlink/p/?linkid=266542). Pour plus d'informations, consultez la rubrique [Installer un module linguistique de messagerie unifiée](install-a-um-language-pack-exchange-2013-help.md).
@@ -175,35 +145,15 @@ Pour permettre à la messagerie unifiée de chiffrer des données échangées en
     
     6.  Vérifiez que les domaines inclus sont corrects, puis cliquez sur **Terminer**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lorsque vous utilisez le CAE pour créer un certificat, vous n’êtes pas invité à activer les services pour ce dernier. Une fois le certificat créé, vous pouvez utiliser le CAE pour activer les services. Pour plus d'informations sur l'activation d'un certificat pour des services, consultez la rubrique <a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assigner un certificat pour les services de messagerie unifiée et de routeur d’appels UM</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Lorsque vous utilisez le CAE pour créer un certificat, vous n’êtes pas invité à activer les services pour ce dernier. Une fois le certificat créé, vous pouvez utiliser le CAE pour activer les services. Pour plus d'informations sur l'activation d'un certificat pour des services, consultez la rubrique <a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assigner un certificat pour les services de messagerie unifiée et de routeur d’appels UM</a>.
     
     Créez un certificat auto-signé Exchange en exécutant la commande suivante dans l'environnement de ligne de commande.
     
         New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous spécifiez les services que vous voulez activer à l'aide du paramètre <em>Services</em>, vous êtes invité à les activer pour le certificat que vous avez créé. Dans cet exemple, vous êtes invité à activer le certificat pour les services de messagerie unifiée et de routeur d'appels de messagerie unifiée. Pour plus d'informations sur l'activation d'un certificat pour des services, consultez la rubrique <a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assigner un certificat pour les services de messagerie unifiée et de routeur d’appels UM</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous spécifiez les services que vous voulez activer à l'aide du paramètre <em>Services</em>, vous êtes invité à les activer pour le certificat que vous avez créé. Dans cet exemple, vous êtes invité à activer le certificat pour les services de messagerie unifiée et de routeur d'appels de messagerie unifiée. Pour plus d'informations sur l'activation d'un certificat pour des services, consultez la rubrique <a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assigner un certificat pour les services de messagerie unifiée et de routeur d’appels UM</a>.
 
 
   - Importez le certificat à utiliser sur tous les serveurs d'accès au client et de boîtes aux lettres Exchange 2013 au sein de votre organisation. Si vous utilisez le certificat auto-signé Exchange 2013, vous devez le copier, puis l’importer sur les passerelles VoIP, ainsi que les PBX IP ou compatibles SIP. Si vous utilisez le certificat auto-signé d'Exchange 2010, l'autre nom d'objet (SAN) doit contenir les noms d'ordinateur de tous les serveurs Exchange 2013. Si vous disposez de serveurs de messagerie unifiée Exchange 2010 au sein de votre organisation, vous pouvez utiliser le certificat auto-signé Exchange 2013, mais vous devez ajouter les noms d'ordinateur des serveurs de messagerie unifiée Exchange 2010 au SAN dans le certificat Exchange 2013.
@@ -396,18 +346,8 @@ Si nécessaire, vous pouvez créer un plan groupement de postes de messagerie un
 
     New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas configurer ou modifier des paramètres pour un groupement de postes de messagerie unifiée. Pour modifier les paramètres de configuration d'un groupement de postes de messagerie unifiée, vous devez supprimer ce dernier, puis en ajouter un nouveau avec les paramètres corrects.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous ne pouvez pas configurer ou modifier des paramètres pour un groupement de postes de messagerie unifiée. Pour modifier les paramètres de configuration d'un groupement de postes de messagerie unifiée, vous devez supprimer ce dernier, puis en ajouter un nouveau avec les paramètres corrects.
 
 
 ## Étape 10 : Création ou configuration de standards automatiques de messagerie unifiée
@@ -464,34 +404,14 @@ Si nécessaire, vous pouvez créer une stratégie de boîte aux lettres de messa
 
 3.  Dans la page **Nouvelle stratégie de boîte aux lettres de messagerie unifiée**, dans le champ **Nom**, entrez le nom de la nouvelle stratégie de boîte aux lettres de messagerie unifiée.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Ce champ permet de spécifier un nom unique pour la stratégie de boîte aux lettres de messagerie unifiée. Il s'agit du nom complet qui apparaît dans le CAE. Si vous devez modifier le nom complet de la stratégie de boîte aux lettres de messagerie unifiée après sa création, vous devez d'abord la supprimer, puis en créer une autre avec le nom approprié. Vous ne pouvez pas supprimer une stratégie de boîte aux lettres de messagerie unifiée si des utilisateurs à extension messagerie unifiée y sont associés. Le nom de la stratégie de boîte aux lettres de messagerie unifiée est obligatoire mais sert uniquement à des fins d'affichage. Dans la mesure où votre organisation peut utiliser plusieurs stratégies de boîte aux lettres de messagerie unifiée, nous vous recommandons d'utiliser des noms significatifs pour chacune d'elles. La longueur maximale d'un nom de stratégie de boîte aux lettres de messagerie unifiée est de 64 caractères pouvant inclure des espaces. Toutefois, il ne peut pas contenir les caractères suivants : &quot; / \ [ ] : ; | = , + * ? &lt; &gt;.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Ce champ permet de spécifier un nom unique pour la stratégie de boîte aux lettres de messagerie unifiée. Il s'agit du nom complet qui apparaît dans le CAE. Si vous devez modifier le nom complet de la stratégie de boîte aux lettres de messagerie unifiée après sa création, vous devez d'abord la supprimer, puis en créer une autre avec le nom approprié. Vous ne pouvez pas supprimer une stratégie de boîte aux lettres de messagerie unifiée si des utilisateurs à extension messagerie unifiée y sont associés. Le nom de la stratégie de boîte aux lettres de messagerie unifiée est obligatoire mais sert uniquement à des fins d'affichage. Dans la mesure où votre organisation peut utiliser plusieurs stratégies de boîte aux lettres de messagerie unifiée, nous vous recommandons d'utiliser des noms significatifs pour chacune d'elles. La longueur maximale d'un nom de stratégie de boîte aux lettres de messagerie unifiée est de 64 caractères pouvant inclure des espaces. Toutefois, il ne peut pas contenir les caractères suivants : &quot; / \ [ ] : ; | = , + * ? &lt; &gt;.
 
 
 4.  Cliquez sur **Enregistrer**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lorsque vous enregistrez la stratégie de boîte aux lettres de messagerie unifiée, tous les paramètres par défaut (stratégies de code confidentiel, fonctionnalités de messagerie vocale et paramètres de messagerie vocale protégée) sont activés. Pour personnaliser ou modifier des paramètres par défaut de la stratégie de boîte aux lettres de messagerie unifiée que vous avez créée, utilisez la cmdlet <strong>Set-UMMailbox</strong> ou le CAE.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Lorsque vous enregistrez la stratégie de boîte aux lettres de messagerie unifiée, tous les paramètres par défaut (stratégies de code confidentiel, fonctionnalités de messagerie vocale et paramètres de messagerie vocale protégée) sont activés. Pour personnaliser ou modifier des paramètres par défaut de la stratégie de boîte aux lettres de messagerie unifiée que vous avez créée, utilisez la cmdlet <strong>Set-UMMailbox</strong> ou le CAE.
 
 
 Si nécessaire, vous pouvez créer une stratégie de boîte aux lettres de messagerie unifiée dans l'environnement de ligne de commande en exécutant la commande suivante.
@@ -614,14 +534,11 @@ Lorsque vous procédez à une mise à niveau vers une messagerie unifiée Exchan
 
 La dernière étape du processus de mise à niveau vers une messagerie unifiée Exchange 2013 consiste à configurer les passerelles VoIP, PBX IP ou PBX compatibles SIP pour envoyer les appels entrants (y compris provenant de personnes souhaitant laisser un message vocal pour un destinataire, d'utilisateurs à extension messagerie appelant via Outlook Voice Access, et d'appelants qui accèdent à un standard automatique de messagerie unifiée) à vos serveurs d'accès au client Exchange 2013. Tous ces appels sont d'abord réceptionnés par une passerelle VoIP, un PBX IP ou un PBX compatible SIP, puis transférés vers les serveurs d'accès au client Exchange 2013 de votre organisation. Pour plus d'informations, consultez les ressources suivantes :
 
-  -  
-    [Services de messagerie unifiée](um-services-exchange-2013-help.md)
+  -  [Services de messagerie unifiée](um-services-exchange-2013-help.md)
 
-  -  
-    [Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  -  [Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
 
-  -  
-    [Gestionnaire de téléphonie pour Exchange 2013](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+  -  [Gestionnaire de téléphonie pour Exchange 2013](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
 
 ## Étape 15 : Désactivation de la réponse aux appels sur un serveur de messagerie unifiée Exchange 2010
 
@@ -645,18 +562,8 @@ Pour désactiver la messagerie unifiée sur un serveur de messagerie unifiée Ex
 
     Disable-UMServer -Identity MyUMServer -Immediate $true
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour désactiver la réponse aux appels, vous pouvez utiliser la cmdlet <strong>Disable-UMServer</strong> d'un serveur de messagerie unifiée Exchange 2010 ou la cmdlet <strong>Disable-UMService</strong> d'un serveur de boîtes aux lettres Exchange 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Pour désactiver la réponse aux appels, vous pouvez utiliser la cmdlet <strong>Disable-UMServer</strong> d'un serveur de messagerie unifiée Exchange 2010 ou la cmdlet <strong>Disable-UMService</strong> d'un serveur de boîtes aux lettres Exchange 2013.
 
 
 ## Étape 16 : Suppression d'un serveur de messagerie unifiée Exchange 2010 d'un plan de numérotation
@@ -692,18 +599,8 @@ Dans cet exemple figurent deux plans de numérotation URI SIP : SipDP1 et SipDP
 
     Set-UMServer -id MyUMServer -DialPlans SipDP1
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour supprimer un serveur de messagerie unifiée Exchange 2010 d'un ou plusieurs plans de numérotation, vous pouvez utiliser la cmdlet <strong>Set-UMServer</strong> dans l'environnement de ligne de commande sur un serveur de messagerie unifiée Exchange 2007, ou la cmdlet <strong>Set-UMService</strong> cmdlet sur un serveur de boîtes aux lettres Exchange 2010. Par exemple, pour supprimer un serveur de messagerie unifiée de tous les plans de numérotation, exécutez la commande suivante : <code>Set-UMServer -identity MyUMServer -DialPlans $null</code></td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Pour supprimer un serveur de messagerie unifiée Exchange 2010 d'un ou plusieurs plans de numérotation, vous pouvez utiliser la cmdlet <strong>Set-UMServer</strong> dans l'environnement de ligne de commande sur un serveur de messagerie unifiée Exchange 2007, ou la cmdlet <strong>Set-UMService</strong> cmdlet sur un serveur de boîtes aux lettres Exchange 2010. Par exemple, pour supprimer un serveur de messagerie unifiée de tous les plans de numérotation, exécutez la commande suivante : <code>Set-UMServer -identity MyUMServer -DialPlans $null</code>
 
 
 ## Comment savoir si cela a fonctionné ?

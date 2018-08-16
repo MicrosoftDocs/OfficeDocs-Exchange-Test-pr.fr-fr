@@ -1,5 +1,5 @@
 ﻿---
-title: "Configurer le nombre d'appels entrants sur un serveur de boîtes aux lettres: Exchange 2013 Help"
+title: 'Configurer le nombre d’appels entrants sur un srv de BAL: Exchange 2013 Help'
 TOCTitle: Configurer le nombre d'appels entrants sur un serveur de boîtes aux lettres
 ms:assetid: 419e1de9-2bf8-48a8-824d-2a536b0a6d90
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997637(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-23_
+_**Dernière rubrique modifiée :** 2013-02-23_
 
 Vous pouvez configurer le nombre de connexions entrantes simultanées qu'un serveur de boîtes aux lettres qui exécute le service de messagerie unifiée Microsoft Exchange acceptera. Cela inclut tous les appels entrants, y compris Outlook Voice Access, répondre aux appels, les standards automatiques et les appels de télécopie. Lorsque vous augmentez le nombre de connexions simultanées sur un serveur de boîtes aux lettres, davantage de ressources système est requises que si vous réduisez le nombre d'appels simultanés. Réduction du nombre d'appels simultanés est particulièrement important sur les ordinateurs plus lents sur lequel sont installés les services de messagerie unifiée. La plage pour le nombre d'appels vocaux simultanés est 0 à 200. Le paramètre par défaut est 100.
 
@@ -31,18 +31,8 @@ Pour d'autres tâches relatives aux serveurs de messagerie unifiée et de boîte
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

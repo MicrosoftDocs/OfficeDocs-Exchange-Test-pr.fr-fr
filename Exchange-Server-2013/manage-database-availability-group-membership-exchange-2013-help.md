@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gérer l’appartenance au groupe de disponibilité de la base de données: Exchange 2013 Help'
+title: 'Gérer l’appartenance au groupe de disponibilité de la BDD: Exchange 2013 Help'
 TOCTitle: Gérer l’appartenance au groupe de disponibilité de la base de données
 ms:assetid: fb2ea15e-96d5-4045-b75b-b0aa5fc60479
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd351278(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-08-13_
+_**Dernière rubrique modifiée :** 2014-08-13_
 
 Lorsque vous ajoutez un serveur à un groupe de disponibilité de base de données (DAG), il coopère avec les autres serveurs de ce groupe afin de fournir une récupération automatique au niveau de la base de données en cas de défaillance de base de données, de serveur ou du réseau. Si vous supprimez un serveur d’un groupe de disponibilité de base de données (DAG), il n’est plus automatiquement protégé contre les défaillances.
 
@@ -37,18 +37,8 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

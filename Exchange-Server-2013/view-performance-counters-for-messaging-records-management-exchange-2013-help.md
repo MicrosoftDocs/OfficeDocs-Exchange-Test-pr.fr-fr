@@ -1,5 +1,5 @@
 ﻿---
-title: 'Afficher les compteurs de performances pour la gestion des enregistrements de messagerie: Exchange 2013 Help'
+title: 'Afficher les compteurs de performance pour la gestion des enregist. de messag.'
 TOCTitle: Afficher les compteurs de performances pour la gestion des enregistrements de messagerie
 ms:assetid: ec374d31-2797-4f8b-8c96-3839d01a662c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb397227(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2009-12-09_
+_**Dernière rubrique modifiée :** 2009-12-09_
 
 Vous pouvez utiliser Windows la fiabilité et l'Analyseur de performances (Perfmon.exe) pour sélectionner et visualiser les compteurs de performances pour la messagerie (MRM) la gestion des enregistrements. À l'aide de compteurs de performances, vous pouvez surveiller l'Assistant dossier géré pendant son exécution des processus MRM beaucoup de ressources.
 

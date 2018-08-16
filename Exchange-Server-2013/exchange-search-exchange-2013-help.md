@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-09-17_
+_**Dernière rubrique modifiée :** 2015-09-17_
 
 La taille des boîtes aux lettres et la quantité de données qui y sont stockées sous forme de messages et de pièces jointes étant en constante augmentation, il est primordial que les utilisateurs soient en mesure de rechercher et de localiser rapidement les messages dont ils ont besoin. L'[Archivage inaltérable dans Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md) vous permet de réduire ou d'éliminer l'utilisation de fichiers .pst en déplaçant les éléments anciens et peu utilisés vers l'archive. L’utilisateur peut ainsi stocker plus de données de boîtes aux lettres et la recherche dans les boîtes aux lettres d’archivage et principale de l’utilisateur devient un outil de productivité essentiel. La [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md) permet aux utilisateurs autorisés de rechercher du contenu dans des boîtes aux lettres se trouvant dans des organisations Exchange locales et en nuage afin de satisfaire aux demandes de découverte électronique, aux audits de réglementation ou aux recherches internes. La découverte électronique locale utilise les index de contenu créés par le service de recherche Exchange.
 

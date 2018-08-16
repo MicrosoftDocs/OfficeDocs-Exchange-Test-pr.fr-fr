@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**Dernière rubrique modifiée :** 2012-11-14_
+_**Dernière rubrique modifiée :**  2012-11-14_
 
 Les ressources suivantes fournissent des informations sur les tâches courantes associées aux packs d'administration de System Center :
 
@@ -57,16 +57,6 @@ Les ressources suivantes fournissent des informations sur les tâches courantes 
 
   - [Pack d'administration Operations Manager 2007 et ressources pour la création de rapports](http://go.microsoft.com/fwlink/?linkid=246388)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn195905.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Toutes les informations et le contenu de sites non-Microsoft sont fournis par leur propriétaire ou leurs utilisateurs. Microsoft exclut toute garantie, expresse, implicite ou légale, relative aux informations contenues dans ces sites web.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Toutes les informations et le contenu de sites non-Microsoft sont fournis par leur propriétaire ou leurs utilisateurs. Microsoft exclut toute garantie, expresse, implicite ou légale, relative aux informations contenues dans ces sites web.
 

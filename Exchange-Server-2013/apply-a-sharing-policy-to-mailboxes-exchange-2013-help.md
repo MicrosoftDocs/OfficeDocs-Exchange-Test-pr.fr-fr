@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-02-15_
+_**Dernière rubrique modifiée :** 2014-02-15_
 
 Les stratégies de partage font partie intégrante du partage fédéré et permettent un partage établi par utilisateur, de personne à personne des informations de calendrier avec différents types d’utilisateurs externes. La stratégie de partage qu’un administrateur applique à la boîte aux lettres de l’utilisateur détermine le niveau d’accès que l’utilisateur peut partager et avec qui il peut le partager. Si vous ne changez rien, la stratégie de partage par défaut s’applique à tous les utilisateurs. Si vous créez une stratégie de partage, vous devez l’appliquer aux boîtes aux lettres pour qu’elle prenne effet. Une stratégie de partage peut être appliquée à une boîte aux lettres utilisateur spécifique ou à plusieurs boîtes aux lettres utilisateur simultanément. Un administrateur peut également désactiver une stratégie de partage d’un utilisateur pour empêcher l’accès externe aux calendriers.
 
@@ -85,16 +85,6 @@ Pour vérifier que vous avez bien appliqué la stratégie de partage à une boî
     
         Get-Mailbox <user name> | format-list
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

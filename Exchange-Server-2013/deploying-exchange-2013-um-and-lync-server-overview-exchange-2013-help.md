@@ -1,5 +1,5 @@
 ﻿---
-title: 'Présentation du déploiement de la messagerie unifiée Exchange 2013 et de Lync Server: Exchange 2013 Help'
+title: 'Déploiement de la MU Exchange 2013 et de Lync Server: Exchange 2013'
 TOCTitle: Présentation du déploiement de la messagerie unifiée Exchange 2013 et de Lync Server
 ms:assetid: 96fcb0dd-79ee-4e55-9e59-3ee7fbe3c4a1
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb676409(v=EXCHG.150)
@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 La messagerie unifiée et Microsoft Lync Server peuvent être déployés simultanément afin de fournir aux utilisateurs de l’organisation une messagerie vocale, une messagerie instantanée, un indicateur de présence utilisateur amélioré, une fonctionnalité de conférence audio/vidéo ainsi qu’une expérience de messagerie et de courrier électronique intégrée. La messagerie unifiée est utilisée pour assurer les services de répondeur automatique, Outlook Voice Access et de standard automatique. Microsoft Lync Server permet de tirer parti des fonctions plus avancées d’Enterprise Voice, comme la messagerie instantanée, une fonctionnalité de conférence ainsi que des appels entrants et sortants. Cette rubrique décrit la procédure de configuration de la messagerie unifiée et de Microsoft Lync Server de sorte que ces fonctionnalités soient prises en charge.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft Office Communications Server 2007 R2 peut également être déployé avec la messagerie unifiée. Dans cette rubrique, « Microsoft Lync Server » se rapporte à Microsoft Lync Server 2010 ou Microsoft Lync Server 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Microsoft Office Communications Server 2007 R2 peut également être déployé avec la messagerie unifiée. Dans cette rubrique, « Microsoft Lync Server » se rapporte à Microsoft Lync Server 2010 ou Microsoft Lync Server 2013.
 
 
 Vous cherchez plus d’informations sur Microsoft Lync Server ? Voir [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752).
@@ -65,18 +55,8 @@ La liste suivante montre les étapes faciles du déploiement pour la messagerie 
 
 7.  Exécutez le script ExchUcUtil.ps1 à partir du \<dossier d’installation Exchange\>\\Exchange Server\\Script sur le serveur de boîtes aux lettres.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le script ExchUcUtil.ps1 crée une ou plusieurs passerelles IP de messagerie unifiée pour l’intégration Lync. Vous devez désactiver les appels sortants sur toutes les passerelles IP de messagerie unifiée à l’exception de celle que le script a créée. Ceci inclut la désactivation des appels sortants sur les passerelles IP de messagerie unifiée qui ont été créées avant l’exécution du script. Pour désactiver les appels sortants sur une passerelle IP de messagerie unifiée, consultez la rubrique <a href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">Désactiver les appels sortants sur les passerelles IP de messagerie unifiée</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le script ExchUcUtil.ps1 crée une ou plusieurs passerelles IP de messagerie unifiée pour l’intégration Lync. Vous devez désactiver les appels sortants sur toutes les passerelles IP de messagerie unifiée à l’exception de celle que le script a créée. Ceci inclut la désactivation des appels sortants sur les passerelles IP de messagerie unifiée qui ont été créées avant l’exécution du script. Pour désactiver les appels sortants sur une passerelle IP de messagerie unifiée, consultez la rubrique <a href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">Désactiver les appels sortants sur les passerelles IP de messagerie unifiée</a>.
 
 
 8.  Exécutez **OcsUmUtil.exe** à partir du dossier %CommonProgramFiles%\\Microsoft Lync Server 2013\\Support sur un Lync Server.
@@ -152,36 +132,16 @@ Vous devez réaliser les étapes suivantes pour configurer la messagerie unifié
 
 1.  Créez un ou plusieurs plans de numérotation URI SIP de messagerie unifiée, chacun correspondant à un profil d’emplacement Lync Server. Vous devez créer un profil d’emplacement Enterprise Voice pour chaque plan de commutation des appels de messagerie unifiée Exchange. Vous pouvez utiliser la cmdlet **Get-UMDialPlan** pour obtenir le nom de domaine complet d’un plan de numérotation URI SIP. Pour plus d’informations sur la création d’un plan de numérotation avec un URI SIP, voir [Créer un plan de numérotation de messagerie unifiée](create-a-um-dial-plan-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Au moment d’intégrer la messagerie unifiée Exchange et Lync Server, vous jugerez sans doute inutile de configurer des règles de numérotation ou des groupes de règles de numérotation dans la messagerie unifiée Exchange. Lync Server est conçu pour acheminer des appels (routage) et convertir des numéros pour les utilisateurs de votre organisation. Il procède également de même lorsque les appels sont effectués par la messagerie unifiée Exchange pour le compte des utilisateurs.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Au moment d’intégrer la messagerie unifiée Exchange et Lync Server, vous jugerez sans doute inutile de configurer des règles de numérotation ou des groupes de règles de numérotation dans la messagerie unifiée Exchange. Lync Server est conçu pour acheminer des appels (routage) et convertir des numéros pour les utilisateurs de votre organisation. Il procède également de même lorsque les appels sont effectués par la messagerie unifiée Exchange pour le compte des utilisateurs.
 
 
 2.  Sur les serveurs d’accès au client et de boîtes aux lettres, installez un certificat valide et signé par une autorité de certification privée ou publique. Il s’agit de la même autorité de certification qui a été utilisée sur les serveurs Lync.
 
 3.  Pour chiffrer le trafic VoIP (Voice over IP), configurez le plan de numérotation avec un URI SIP comme une Protection SIP ou Sécurisé.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous avez défini le paramètre de sécurité en mode sécurisé SIP afin de requérir le chiffrement du trafic SIP uniquement, ce paramètre n’est pas suffisant dans un plan de numérotation si le pool frontal est configuré pour requérir le chiffrement (ce qui signifie que le pool requiert le chiffrement pour trafic RTP et SIP). Lorsque le plan de numérotation et les paramètres de sécurité du pool ne sont compatibles, tous les appels vers la messagerie unifiée Exchange à partir du pool frontal échouent, ce qui provoque une erreur de type « Paramètre de sécurité incompatible ».</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > Si vous avez défini le paramètre de sécurité en mode sécurisé SIP afin de requérir le chiffrement du trafic SIP uniquement, ce paramètre n’est pas suffisant dans un plan de numérotation si le pool frontal est configuré pour requérir le chiffrement (ce qui signifie que le pool requiert le chiffrement pour trafic RTP et SIP). Lorsque le plan de numérotation et les paramètres de sécurité du pool ne sont compatibles, tous les appels vers la messagerie unifiée Exchange à partir du pool frontal échouent, ce qui provoque une erreur de type « Paramètre de sécurité incompatible ».
     
     Bien qu’un plan de numérotation de messagerie unifiée puisse être configuré en mode SIP sécurisé ou en mode sécurisé, il est recommandé d’utiliser la configuration en mode sécurisé pour permettre un fonctionnement correct de Lync Phone Edition. Cela est dû aux paramètres du niveau de chiffrement par défaut de Lync Server. Un périphérique Lync Phone Edition ne fonctionnera que si les paramètres de chiffrement sont configurés comme indiqué dans le tableau suivant. Ce tableau décrit la relation entre les paramètres de chiffrement pour Lync Server et les plans de numérotation de messagerie unifiée.
     
@@ -224,18 +184,8 @@ Vous devez réaliser les étapes suivantes pour configurer la messagerie unifié
 
 7.  Lorsque vous activez la messagerie vocale pour les utilisateurs, créez une adresse SIP pour les utilisateurs qui utiliseront Enterprise Voice. Dans la plupart des cas, cette adresse SIP sera la même adresse SIP qui sera utilisée lorsqu’un utilisateur est activé pour Enterprise Voice. Pour plus d’informations, consultez la rubrique [Activation de la messagerie vocale pour un utilisateur](enable-a-user-for-voice-mail-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Les utilisateurs qui sont associés à un plan de numérotation URI SIP ne peuvent pas recevoir de télécopies entrantes. Ceci est dû au fait que les appels vocaux et de télécopie entrants sont routés via un serveur de médiation et que la télécopie n’est pas prise en charge lorsque vous utilisez un serveur de médiation.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Les utilisateurs qui sont associés à un plan de numérotation URI SIP ne peuvent pas recevoir de télécopies entrantes. Ceci est dû au fait que les appels vocaux et de télécopie entrants sont routés via un serveur de médiation et que la télécopie n’est pas prise en charge lorsque vous utilisez un serveur de médiation.
 
 
 8.  Ouvrez l’environnement de ligne de commande Exchange Management Shell et exécutez le script exchucutil.ps1 situé dans le dossier %Program Files%\\Microsoft\\Exchange Server\\V15\\Scripts. Le script exchucutil.ps1 effectue les opérations suivantes :
@@ -262,34 +212,14 @@ Vous devez également exécuter les tâches suivantes pour configurer Lync Serve
 
   - Exécutez la commande **ocsumutil.exe** qui crée les objets contact pour Outlook Voice Access et les standards automatiques.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lorsque vous installez Lync Server, l’attribut <strong>msRTC-SIPLine</strong> est ajouté à Active Directory. Si vous n’avez pas installé Lync Server dans votre environnement, cet attribut n’est pas ajouté à Active Directory et la résolution de nom d’ID de l’appelant parmi les plans de numérotation dans des scénarios de forêt unique et inter-forêts ne doit pas fonctionner correctement, à moins de configurer des adresses proxy de messagerie unifiée pour les utilisateurs sans extension messagerie unifiée.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Lorsque vous installez Lync Server, l’attribut <strong>msRTC-SIPLine</strong> est ajouté à Active Directory. Si vous n’avez pas installé Lync Server dans votre environnement, cet attribut n’est pas ajouté à Active Directory et la résolution de nom d’ID de l’appelant parmi les plans de numérotation dans des scénarios de forêt unique et inter-forêts ne doit pas fonctionner correctement, à moins de configurer des adresses proxy de messagerie unifiée pour les utilisateurs sans extension messagerie unifiée.
 
 
 Après avoir configuré Lync Server et les serveurs de messagerie unifiée, vous devez permettre à l’utilisateur d’utiliser Lync Server et installer Lync sur l’ordinateur client de l’utilisateur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lors de l’intégration de la messagerie unifiée et de Lync Server, les notifications d’appels manqués ne sont pas disponibles pour les utilisateurs qui ont une boîte aux lettre située sur un serveur de boîtes aux lettres Exchange 2007 ou Exchange 2010. Une notification d’appel manqué est générée lorsqu’un utilisateur se déconnecte avant l’envoi de l’appel vers un serveur de boîtes aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lors de l’intégration de la messagerie unifiée et de Lync Server, les notifications d’appels manqués ne sont pas disponibles pour les utilisateurs qui ont une boîte aux lettre située sur un serveur de boîtes aux lettres Exchange 2007 ou Exchange 2010. Une notification d’appel manqué est générée lorsqu’un utilisateur se déconnecte avant l’envoi de l’appel vers un serveur de boîtes aux lettres.
 
 
 Retour au début

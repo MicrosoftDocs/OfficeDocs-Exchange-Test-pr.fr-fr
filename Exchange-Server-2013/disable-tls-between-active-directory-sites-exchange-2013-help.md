@@ -1,5 +1,5 @@
 ﻿---
-title: 'Désactivation du chiffrement TLS entre des sites Active Directory: Exchange 2013 Help'
+title: 'Désactiv. du chiffrement TLS entre des sites AD: Exchange 2013 Help'
 TOCTitle: Désactivation du chiffrement TLS entre des sites Active Directory
 ms:assetid: 1e1a0acf-24e7-4f94-9b33-603a4e0a812c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd876856(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-19_
+_**Dernière rubrique modifiée :** 2013-02-19_
 
 Microsoft Exchange Server 2013 prend en charge la désactivation de l'authentification TLS pour la communication SMTP entre serveurs de boîtes aux lettres dans certaines topologies où des contrôleurs d'optimisation de réseau étendu (WOC) compressent le trafic SMTP.
 
@@ -37,18 +37,8 @@ Cette rubrique explique pas à pas comment configurer le service de transport da
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

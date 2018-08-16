@@ -1,5 +1,5 @@
 ﻿---
-title: "Intégration des règles d'informations sensibles aux règles de transport: Exchange 2013 Help"
+title: 'Intégration des règles d’informations sensibles aux règles de transport'
 TOCTitle: Intégration des règles d'informations sensibles aux règles de transport
 ms:assetid: feb014a7-89dd-4f2d-a06d-52806ce435d4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ150583(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-01-14_
+_**Dernière rubrique modifiée :** 2015-01-14_
 
 Dans Microsoft Exchange, vous pouvez créer des stratégies DLP qui contiennent des règles non seulement pour les classifications de messages traditionnelles et les règles de transport existantes, mais vous pouvez également les combiner avec des règles pour les informations sensibles figurant dans des messages. Le cadre des règles de transport existantes offre de nombreuses possibilités de définition des stratégies de messagerie couvrant l'ensemble des contrôles logiciels et matériels. Exemples :
 

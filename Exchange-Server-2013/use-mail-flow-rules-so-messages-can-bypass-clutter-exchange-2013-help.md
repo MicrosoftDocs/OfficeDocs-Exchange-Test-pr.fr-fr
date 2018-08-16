@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utiliser des règles de flux de messagerie afin que les messages puissent contourner le courrier non trié: Exchange 2013 Help'
+title: 'Utiliser des règles de flux de messag. pour contourner le courrier non trié'
 TOCTitle: Utiliser des règles de flux de messagerie afin que les messages puissent contourner le courrier non trié
 ms:assetid: 58e413f0-aa27-4307-bffd-4df03090a15e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn896639(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Si vous voulez être sûr de recevoir des messages spécifiques, vous pouvez créer une règle de transport Exchange qui garantit que ces messages contournent votre dossier de courrier non trié. Consultez la rubrique [Utiliser l’encombrement pour trier les messages à priorité basse dans Outlook Web App](https://go.microsoft.com/fwlink/p/?linkid=528411) pour plus d’informations sur la fonction Courrier non trié.
 
@@ -49,18 +49,8 @@ Cet exemple permet à tous les messages dont le titre est « Meeting » de con
 
     New-TransportRule -Name <name_of_the_rule> -SubjectContainsWords "Meeting" -SetHeaderName "X-MS-Exchange-Organization-BypassClutter" -SetHeaderValue "true"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans cet exemple, « X-MS-Exchange-Organization-BypassClutter » et « true » respectent tous deux la casse.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans cet exemple, « X-MS-Exchange-Organization-BypassClutter » et « true » respectent tous deux la casse.
 
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TransportRule](https://technet.microsoft.com/fr-fr/library/bb125138\(v=exchg.150\)).
@@ -69,16 +59,6 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Vous pouvez vérifier les en-têtes des messages électroniques pour voir si les messages arrivent dans la boîte de réception en raison du contournement de la règle de transport de courrier non trié. Sélectionnez un message électronique dans une boîte aux lettres de votre organisation à laquelle la règle de transport de contournement du courrier non trié est appliquée. Examinez les en-têtes marqués sur le message et vous devriez voir l’en-tête **X-MS-Exchange-Organization-BypassClutter: true**. Cela signifie que le contournement fonctionne. Consultez la rubrique [Afficher les informations d’en-tête Internet des messages électroniques](https://go.microsoft.com/fwlink/p/?linkid=822530) pour plus d’informations sur la façon de rechercher les informations d’en-tête.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les éléments de calendrier, tels que les réunions acceptées, envoyées ou refusées, ne possèdent pas ces en-têtes. Nous nous efforçons d’étendre les fonctionnalités de courrier non trié à ces éléments de calendrier le plus rapidement possible.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les éléments de calendrier, tels que les réunions acceptées, envoyées ou refusées, ne possèdent pas ces en-têtes. Nous nous efforçons d’étendre les fonctionnalités de courrier non trié à ces éléments de calendrier le plus rapidement possible.
 

@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Vous pouvez utiliser le script **ConfigureAdam.ps1** (situé dans $env:ExchangeInstallPath\\Scripts) pour modifier la configuration des services AD LDS (Active Directory Lightweight Directory Services) par défaut sur les serveurs de transport Edge avant d’abonner le serveur de transport Edge à votre organisation Exchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le script <strong>ConfigureAdam.ps1</strong> appelle la commande <strong>dsdbutil</strong> pour modifier les paramètres de registre pour AD LDS. La commande <strong>dsdbutil</strong> est un outil de gestion AD LDS destiné à être utilisé uniquement par des administrateurs expérimentés. Il est recommandé d’utiliser le script <strong>ConfigureAdam.ps1</strong> pour modifier la configuration AD LDS.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le script <strong>ConfigureAdam.ps1</strong> appelle la commande <strong>dsdbutil</strong> pour modifier les paramètres de registre pour AD LDS. La commande <strong>dsdbutil</strong> est un outil de gestion AD LDS destiné à être utilisé uniquement par des administrateurs expérimentés. Il est recommandé d’utiliser le script <strong>ConfigureAdam.ps1</strong> pour modifier la configuration AD LDS.
 
 
 Les paramètres figurant dans le tableau suivant sont disponibles pour le script **ConfigureAdam.ps1**. Vous pouvez utiliser un, plusieurs ou une combinaison de ces paramètres pour modifier AD LDS.
@@ -83,18 +73,8 @@ Les paramètres figurant dans le tableau suivant sont disponibles pour le script
 
   - Vous pouvez uniquement utiliser l'environnement de ligne de commande Exchange Management Shell pour effectuer cette tâche.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Modification de la configuration AD LDS sur un serveur de transport Edge

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Chaque boîte aux lettres Microsoft Exchange est constituée d’un compte d’utilisateur Active Directory et de données de boîte aux lettres stockées dans la base de données de boîtes aux lettres Exchange. Toutes les données de configuration d’une boîte aux lettres sont stockées dans les attributs d’Exchange de l’objet utilisateur Active Directory. La base de données de boîtes aux lettres contient les données de messagerie de la boîte aux lettres associée au compte d’utilisateur. La figure suivante illustre les composants d’une boîte aux lettres.
 
@@ -29,18 +29,8 @@ Une *boîte aux lettres déconnectée* est un objet boîte aux lettres de la bas
     
     Les boîtes aux lettres désactivées et supprimées sont conservées dans la base de données de boîtes aux lettres jusqu’à l’expiration de la période de rétention de la boîte aux lettres supprimée, qui est de 30 jours par défaut. À l’expiration de la période de rétention, la boîte aux lettres est définitivement supprimée (ou *vidée*). Si une boîte aux lettres est supprimée à l’aide de la cmdlet **Remove-Mailbox**, elle est également conservée pendant toute la durée de la période de rétention.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si une boîte aux lettres est supprimée à l’aide de la cmdlet <strong>Remove-Mailbox</strong> et du paramètre <em>Permanent</em> ou <em>StoreMailboxIdentity</em>, elle est immédiatement supprimée de la base de données de boîtes aux lettres.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si une boîte aux lettres est supprimée à l’aide de la cmdlet <strong>Remove-Mailbox</strong> et du paramètre <em>Permanent</em> ou <em>StoreMailboxIdentity</em>, elle est immédiatement supprimée de la base de données de boîtes aux lettres.
     
     Pour identifier les boîtes aux lettres désactivées de votre organisation, exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell :
     
@@ -110,18 +100,8 @@ Deux opérations sont possibles sur une boîte aux lettres d’archivage déconn
 
   - **La connecter à une boîte aux lettres principale existante**   Tout comme une boîte aux lettres principale déconnectée, une boîte aux lettres d’archivage déconnectée est conservée dans la base de données de boîtes aux lettres jusqu’à l’expiration de la période de rétention de la boîte aux lettres supprimée, qui est de 30 jours par défaut. Pendant ce temps, vous pouvez récupérer la boîte aux lettres d’archivage en la reconnectant au même compte d’utilisateur que celui auquel elle était connectée avant sa désactivation.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous désactivez une boîte aux lettres d’archivage pour une boîte aux lettres utilisateur, puis activez une boîte aux lettres d’archivage pour ce même utilisateur, une nouvelle boîte aux lettres d’archivage est octroyée à cette boîte aux lettres. Même si vous pouvez utiliser la cmdlet <strong>Connect-Mailbox</strong> pour connecter une boîte aux lettres principale à un utilisateur, vous devez utiliser la cmdlet <strong>Enable-Mailbox</strong> pour connecter une boîte aux lettres d’archivage désactivée à une boîte aux lettres existante.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous désactivez une boîte aux lettres d’archivage pour une boîte aux lettres utilisateur, puis activez une boîte aux lettres d’archivage pour ce même utilisateur, une nouvelle boîte aux lettres d’archivage est octroyée à cette boîte aux lettres. Même si vous pouvez utiliser la cmdlet <strong>Connect-Mailbox</strong> pour connecter une boîte aux lettres principale à un utilisateur, vous devez utiliser la cmdlet <strong>Enable-Mailbox</strong> pour connecter une boîte aux lettres d’archivage désactivée à une boîte aux lettres existante.
     
     Pour plus d’informations, consultez la rubrique [Gestion des archives permanentes dans Exchange 2013](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md).
 

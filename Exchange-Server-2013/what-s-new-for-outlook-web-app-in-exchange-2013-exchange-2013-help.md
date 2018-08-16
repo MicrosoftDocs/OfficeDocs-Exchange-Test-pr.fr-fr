@@ -13,25 +13,15 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-12-20_
+_**Dernière rubrique modifiée :** 2017-12-20_
 
 Pour Microsoft Exchange Server 2013, nous avons ajouté de nouvelles fonctionnalités à Microsoft Outlook Web App et amélioré sa conception.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour obtenir plus de détails sur l'utilisation d'Outlook Web App dans votre organisation Exchange Server 2013, consultez la rubrique <a href="outlook-web-app-exchange-2013-help.md">Outlook Web App</a>.<br />
-Les utilisateurs d’Outlook Web App dans votre organisation ont désormais la possibilité d’ajouter des dossiers publics à leurs favoris ou d’en supprimer. Auparavant, cette opération pouvait uniquement être effectuée dans Outlook.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour obtenir plus de détails sur l'utilisation d'Outlook Web App dans votre organisation Exchange Server 2013, consultez la rubrique <a href="outlook-web-app-exchange-2013-help.md">Outlook Web App</a>.
+> Les utilisateurs d’Outlook Web App dans votre organisation ont désormais la possibilité d’ajouter des dossiers publics à leurs favoris ou d’en supprimer. Auparavant, cette opération pouvait uniquement être effectuée dans Outlook.
 
 
 ## Applications dans Outlook Web App
@@ -156,32 +146,12 @@ Dans le tableau ci-dessous, les définitions suivantes s'appliquent :
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans les versions précédentes, Outlook Web App avait un vérificateur orthographique intégré. Dans Exchange Server 2013, Outlook Web App repose sur le navigateur Web pour la vérification orthographique, qui n’est pas fournie par les versions d’Internet Explorer antérieures à la version 10.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans les versions précédentes, Outlook Web App avait un vérificateur orthographique intégré. Dans Exchange Server 2013, Outlook Web App repose sur le navigateur Web pour la vérification orthographique, qui n’est pas fournie par les versions d’Internet Explorer antérieures à la version 10.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les utilisateurs d’Office 365 seront limités à la version Light d’Outlook Web App en cas d’utilisation d’Internet Explorer 8. Les utilisateurs dont les boîtes aux lettres se trouvent sur un serveur Exchange géré en local continueront à voir la version standard d’Outlook Web App en cas d’utilisation d’Internet Explorer 8, mais ils risquent de constater des performances ralenties ou insatisfaisantes.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les utilisateurs d’Office 365 seront limités à la version Light d’Outlook Web App en cas d’utilisation d’Internet Explorer 8. Les utilisateurs dont les boîtes aux lettres se trouvent sur un serveur Exchange géré en local continueront à voir la version standard d’Outlook Web App en cas d’utilisation d’Internet Explorer 8, mais ils risquent de constater des performances ralenties ou insatisfaisantes.
 
 
 ### Autre combinaison de navigateur et de système d’exploitation Windows
@@ -217,18 +187,8 @@ Dans le tableau ci-dessous, les définitions suivantes s'appliquent :
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les combinaisons système d’exploitation/navigateur non répertoriées affichent la version légère d’Outlook Web App.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les combinaisons système d’exploitation/navigateur non répertoriées affichent la version légère d’Outlook Web App.
 
 
 ## Navigateurs pris en charge pour les tablettes et les smartphones
@@ -328,18 +288,8 @@ Avec l’application OWA pour Android, vous pouvez :
 
 Pour en savoir plus sur l’environnement d’OWA pour Android, découvrez la série de vidéos Garage Series de cette semaine. Voir [Série de vidéos Garage Series : Évolution d’Exchange ActiveSync et d’OWA pour les périphériques](https://blogs.office.com/2014/6/11/the-garage-series-under-the-hood-evolving-exchange-activesync-and-owa-for-devices)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette application ne fonctionnera pas avec les boîtes aux lettres Outlook.com (anciennement Hotmail).</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette application ne fonctionnera pas avec les boîtes aux lettres Outlook.com (anciennement Hotmail).
 
 
 ## Fonctionnalités non disponibles

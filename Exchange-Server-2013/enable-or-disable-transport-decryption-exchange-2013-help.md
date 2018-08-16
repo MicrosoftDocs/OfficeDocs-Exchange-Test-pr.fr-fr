@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Décryptage de transport activation permet à l’agent de règles de Transport sur Microsoft Exchange Server 2013 des serveurs de boîtes aux lettres accéder au contenu de messages protégés par Information Rights Management (IRM). Par conséquent, autres agents de transport peuvent accéder au contenu du message et éventuellement apporter des modifications. Par exemple, l’agent de règles de Transport devrez inspecter le contenu du message et d’appliquer des règles de transport (par exemple, les règles qui s’appliquent d’une décharge de responsabilité au message). Pour déchiffrer les messages protégés par IRM avec succès, vous devez ajouter la boîte aux lettres fédéré de remise pour le groupe de super utilisateurs configuré sur votre serveur de [Services AD RMS (Active Directory Rights Management Services) (AD RMS)](https://technet.microsoft.com/en-us/library/hh831364.aspx) .
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une licence d’utilisation propriétaire est accordée aux membres du groupe de super utilisateurs lorsque ces derniers en font la demande à partir du cluster AD RMS. Cela leur permet de déchiffrer tout le contenu protégé par IRM qui a été créé par ce cluster.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Une licence d’utilisation propriétaire est accordée aux membres du groupe de super utilisateurs lorsque ces derniers en font la demande à partir du cluster AD RMS. Cela leur permet de déchiffrer tout le contenu protégé par IRM qui a été créé par ce cluster.
 
 
 Lors de l’activation du déchiffrement du transport, vous pouvez spécifier les paramètres suivants :
@@ -57,18 +47,8 @@ Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives �
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

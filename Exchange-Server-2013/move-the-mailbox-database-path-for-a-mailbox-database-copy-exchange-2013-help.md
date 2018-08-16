@@ -1,5 +1,5 @@
 ﻿---
-title: 'Déplacement du chemin d’accès d’une copie de base de données de boîtes aux lettres: Exchange 2013 Help'
+title: 'Déplacement du chemin d’accès d’une copie de BDD de BAL: Exchange 2013 Help'
 TOCTitle: Déplacement du chemin d’accès d’une copie de base de données de boîtes aux lettres
 ms:assetid: 324f255c-d95d-4a8a-a134-c8cee5c5b9cb
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd979782(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-05-07_
+_**Dernière rubrique modifiée :** 2014-05-07_
 
 Une fois qu’une base de données de boîtes aux lettres est créée, vous pouvez la placer sur un autre volume, dossier, emplacement ou chemin à l’aide du CAE ou de l’environnement de ligne de commande Exchange Management Shell. Pour obtenir des instructions détaillées sur la procédure de déplacement du chemin d’une base de données pour une base de données de boîtes aux lettres non répliquée, consultez la rubrique [Move a mailbox database path](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md).
 
@@ -35,34 +35,14 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux copies de 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Utilisation de l’environnement de ligne de commande Exchange Management Shell pour placer une base de données de boîtes aux lettres répliquée sous un nouveau chemin
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous ne pouvez pas utiliser le CAE pour placer une base de données de boîtes aux lettres répliquée sous un nouveau chemin.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous ne pouvez pas utiliser le CAE pour placer une base de données de boîtes aux lettres répliquée sous un nouveau chemin.
 
 
 1.  Notez les paramètres d’attente de relecture et de troncation de toutes les copies de la base de données de boîtes aux lettres en cours de déplacement. Vous pouvez obtenir ces informations par le biais de la cmdlet [Get-MailboxDatabase](https://technet.microsoft.com/fr-fr/library/bb124924\(v=exchg.150\)), comme illustré dans l’exemple suivant.
@@ -77,18 +57,8 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux copies de 
 
 4.  Placez la base de données de boîtes aux lettres dans le nouvel emplacement. Pour obtenir la procédure détaillée, consultez la rubrique [Move a mailbox database path](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Pendant l’opération de déplacement, la base de données déplacée doit être démontée. Tant que le déplacement n’est pas terminé, il y a une interruption de service et un blocage système pour tous les utilisateurs dont les boîtes aux lettres sont contenues dans la base de données en cours de déplacement. Une fois l’opération de déplacement terminée, la base de données est montée automatiquement.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Pendant l’opération de déplacement, la base de données déplacée doit être démontée. Tant que le déplacement n’est pas terminé, il y a une interruption de service et un blocage système pour tous les utilisateurs dont les boîtes aux lettres sont contenues dans la base de données en cours de déplacement. Une fois l’opération de déplacement terminée, la base de données est montée automatiquement.
 
 
 5.  Créez la structure de dossiers nécessaire sur chaque serveur de boîtes aux lettres qui contenait déjà une copie passive de la base de données de boîtes aux lettres déplacée. Par exemple, si vous avez placé la base de données sous C:\\mountpoints\\DB1, vous devez créer le même chemin d’accès sur chaque serveur de boîtes aux lettres qui doit héberger une copie de la base de données de boîtes aux lettres.

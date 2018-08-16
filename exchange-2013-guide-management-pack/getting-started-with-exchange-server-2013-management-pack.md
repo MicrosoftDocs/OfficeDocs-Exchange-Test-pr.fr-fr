@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**Dernière rubrique modifiée :** 2013-04-08_
+_**Dernière rubrique modifiée :**  2013-04-08_
 
 Exchange Server 2013 Management Pack ajoute un conteneur dans la section **Analyse** de la console SCOM. Quand vous développez le conteneur Exchange Server 2013, vous remarquez qu'il ne compte que trois vues.
 

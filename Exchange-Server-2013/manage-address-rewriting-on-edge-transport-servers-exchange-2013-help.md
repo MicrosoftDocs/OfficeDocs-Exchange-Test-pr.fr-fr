@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestion de la réécriture d’adresses sur les serveurs de transport Edge: Exchange 2013 Help'
+title: 'Réécriture d’adresses sur les srv de transport Edge: Exchange 2013 Help'
 TOCTitle: Gestion de la réécriture d’adresses sur les serveurs de transport Edge
 ms:assetid: 323a0b55-f921-425d-b1b0-18ad0fac315c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997185(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Pour toutes les tâches de gestion liées à la réécriture d’adresses et aux agents de réécriture d’adresses, utilisez l’environnement de ligne de commande Exchange Management Shell sur un serveur de transport Edge. Pour plus d’informations sur la réécriture d’adresses, consultez la rubrique [Réécriture d’adresses sur des serveurs de transport Edge](address-rewriting-on-edge-transport-servers-exchange-2013-help.md).
 
@@ -45,18 +45,8 @@ Vous pouvez créer des entrées de réécriture d’adresses qui s’appliquent 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-09-10_
+_**Dernière rubrique modifiée :** 2012-09-10_
 
 Les rubriques de cette section fournissent des détails sur les vérifications de la disponibilité que Microsoft Exchange Server 2013 effectue à l’installation d’Exchange. Les vérifications de la disponibilité permettent de s’assurer que votre forêt Active Directory et vos serveurs Exchange sont prêts pour Exchange 2013. Chaque rubrique de vérification de la disponibilité décrit les actions que vous pouvez effectuer pour résoudre les problèmes que l’on retrouve lors de ces vérifications. Vous ne devriez exécuter que les étapes décrites dans une rubrique de vérification de la disponibilité si cette vérification de la disponibilité s’est affichée lors de l’installation.
 

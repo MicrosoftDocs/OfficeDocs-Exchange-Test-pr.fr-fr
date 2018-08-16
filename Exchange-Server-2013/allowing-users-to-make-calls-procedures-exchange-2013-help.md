@@ -1,5 +1,5 @@
 ﻿---
-title: "Ce qui permet aux utilisateurs d'effectuer les procédures d'appels: Exchange 2013 Help"
+title: 'Ce qui permet aux utlsr d’effectuer les procédures d’appel: Exchange 2013 Help'
 TOCTitle: Ce qui permet aux utilisateurs d'effectuer les procédures d'appels
 ms:assetid: 6997797d-4b79-4f6d-a89a-f36eea4e5ca4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ938011(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-05-03_
+_**Dernière rubrique modifiée :** 2013-05-03_
 
 [Activer les appels sortants sur les passerelles IP de messagerie unifiée](enable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md)
 

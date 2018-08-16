@@ -27,18 +27,8 @@ L’authentification unique permet aux utilisateurs d’accéder à la fois à l
 
 Vous disposez de deux options lors du déploiement de l’authentification unique : la synchronisation de mot de passe et les services AD FS (Active Directory Federation Services). Les deux options sont fournies par Azure Active Directory Connect. Nous vous recommandons vivement d’utiliser la méthode de synchronisation de mot de passe, sauf si vous devez spécifiquement utiliser AD FS. La synchronisation de mot de passe fournit en grande partie les mêmes avantages qu’AD FS, mais avec un déploiement moins complexe. Le tableau suivant répertorie quelques avantages et inconvénients courants pour chaque option.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn986544.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, si vous déployez AD FS et que vos serveurs AD FS locaux ne sont pas accessibles à partir d’Internet pour quelque raison que ce soit, Office 365 revient à la synchronisation de mot de passe pour authentifier les utilisateurs. Cela permet aux utilisateurs disposant de boîtes aux lettres Office 365 de poursuivre leur travail sans interruption, même si vos serveurs locaux ne sont pas disponibles.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, si vous déployez AD FS et que vos serveurs AD FS locaux ne sont pas accessibles à partir d’Internet pour quelque raison que ce soit, Office 365 revient à la synchronisation de mot de passe pour authentifier les utilisateurs. Cela permet aux utilisateurs disposant de boîtes aux lettres Office 365 de poursuivre leur travail sans interruption, même si vos serveurs locaux ne sont pas disponibles.
 
 
 Pour en savoir plus sur chaque option, voir [Options d’authentification de l’utilisateur via Azure AD Connect](http://go.microsoft.com/fwlink/p/?linkid=723514)

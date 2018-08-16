@@ -1,5 +1,5 @@
 ﻿---
-title: 'Planification de l’utilisation de sites Active Directory pour le routage de messages: Exchange 2013 Help'
+title: 'Planif. de l’utilisation de sites AD pr le routage de messages: Exchange 2013'
 TOCTitle: Planification de l’utilisation de sites Active Directory pour le routage de messages
 ms:assetid: 0f697cee-bcaa-4c69-b80c-7a2afd1817d2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa996299(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-05-21_
+_**Dernière rubrique modifiée :** 2013-05-21_
 
 Microsoft Exchange Server 2013 reconnaît les groupes de disponibilité de base de données (DAG) et les sites Active Directory comme limites de routage. Toutefois, Exchange 2013 utilise encore la topologie du site Active Directory pour déterminer la manière dont les messages sont transportés entre les serveurs Exchange dans différents DAG ou sites au sein de l'organisation. Pour plus d'informations, consultez la rubrique [Routage du courrier](mail-routing-exchange-2013-help.md).
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-07-14_
+_**Dernière rubrique modifiée :** 2014-07-14_
 
 Le mode de coordination de l’activation du centre de données est une propriété de groupe de disponibilité de base de données. Ce mode est désactivé par défaut et doit être activé pour tous les groupes de disponibilité de base de données constitués d’au moins deux membres qui utilisent la réplication continue. Il ne doit pas être activé pour les groupes de disponibilité de base de données en mode de réplication tierce, sauf indication contraire du fournisseur tiers.
 
@@ -41,18 +41,8 @@ Les groupes de disponibilité de base de données ayant deux membres comportent 
 
   - Si l’heure à laquelle le bit DACP a été défini est plus récente que l’heure d’amorçage du serveur témoin, le système suppose que le membre DAG a été redémarré pour une autre raison (peut-être une interruption programmée durant laquelle une opération de maintenance a été menée, un blocage du système ou une panne de courant isolée du membre DAG) et l’autorise à monter des bases de données.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans la mesure où l’heure d’amorçage du serveur témoin permet de déterminer si un membre DAG peut monter ses bases de données actives au démarrage, vous ne devez jamais redémarrer simultanément le serveur témoin et le membre DAG. Sinon, le membre du DAG sera dans l’incapacité de monter les bases de données au démarrage. Si cela se produit, vous devez exécuter la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dd351169(v=exchg.150)">Restore-DatabaseAvailabilityGroup</a> sur le groupe de disponibilité de base de données. Le bit DACP sera alors réinitialisé et le membre DAG pourra monter les bases de données.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans la mesure où l’heure d’amorçage du serveur témoin permet de déterminer si un membre DAG peut monter ses bases de données actives au démarrage, vous ne devez jamais redémarrer simultanément le serveur témoin et le membre DAG. Sinon, le membre du DAG sera dans l’incapacité de monter les bases de données au démarrage. Si cela se produit, vous devez exécuter la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dd351169(v=exchg.150)">Restore-DatabaseAvailabilityGroup</a> sur le groupe de disponibilité de base de données. Le bit DACP sera alors réinitialisé et le membre DAG pourra monter les bases de données.
 
 
 ## Autres avantages du mode de coordination de l’activation du centre de données

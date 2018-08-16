@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer les options de format d’extraction de message POP3 et IMAP4: Exchange 2013 Help'
+title: 'Config. des options de format d’extr. de msg POP3 et IMAP4: Exchange 2013 Help'
 TOCTitle: Configurer les options de format d’extraction de message POP3 et IMAP4
 ms:assetid: 481096e0-4492-46c2-8ca8-bdf84a84531e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997869(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Vous pouvez configurer le format de récupération des messages pour les utilisateurs qui se connectent à leur messagerie électronique à l’aide de POP3 et d’IMAP4. Les options de récupération des messages peuvent être configurées au niveau du serveur à l’aide du Centre d’administration Exchange (CAE) ou de l’environnement de ligne de commande Exchange Management Shell ou au niveau de l’utilisateur via l’environnement de ligne de commande Exchange Management Shell.
 
@@ -29,18 +29,8 @@ Pour plus d’informations sur POP3 et IMAP4, voir [POP3 et IMAP4 dans Exchange 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

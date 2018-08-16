@@ -1,5 +1,5 @@
 ﻿---
-title: 'Quels sont les changements constatés dans Active Directory avec l’installation d’Exchange 2013 ?: Exchange 2013 Help'
+title: 'Changements constatés dans AD avec l’installation d’Exchange 2013'
 TOCTitle: Quels sont les changements constatés dans Active Directory avec l’installation d’Exchange 2013 ?
 ms:assetid: 07386078-6103-49a2-8698-2d41db9cec95
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn750898(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server, Exchange Server 2013_
+_**Sapplique à :** Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-05-26_
+_**Dernière rubrique modifiée :** 2014-05-26_
 
 Lorsque vous installez Exchange 2013, des modifications sont apportées à votre forêt et à vos domaines Active Directory. Exchange effectue cette opération pour pouvoir stocker des informations sur les serveurs et boîtes aux lettres Exchange, ainsi que sur les autres objets liés à Exchange dans votre organisation. Ces changements sont effectués pour vous lorsque vous exécutez l’Assistant Installation d’Exchange 2013 ou lorsque vous exécutez les commandes *PrepareSchema*, *PrepareAD* et *PrepareDomains* au cours de la configuration de ligne de commande de Exchange 2013 (pour plus d’informations sur l’utilisation de ces commandes, voir [Préparation d’Active Directory et des domaines](prepare-active-directory-and-domains-exchange-2013-help.md)). Si vous voulez en savoir plus sur les modifications qu’Exchange apporte à Active Directory, cette rubrique est faite pour vous. Elle explique ce que fait Exchange à chaque étape de la préparation d’Active Directory.
 

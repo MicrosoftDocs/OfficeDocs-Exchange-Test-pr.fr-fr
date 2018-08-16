@@ -1,5 +1,5 @@
 ﻿---
-title: 'Dossiers par défaut prenant en charge les balises de stratégie de rétention: Exchange 2013 Help'
+title: 'Dossiers p. déf. prenant en charge balises strat. rétention: Exchange 2013 Help'
 TOCTitle: Dossiers par défaut prenant en charge les balises de stratégie de rétention
 ms:assetid: d2e2064f-4102-4018-b688-504d09da6d39
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn783294(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-04-20_
+_**Dernière rubrique modifiée :** 2017-04-20_
 
 Vous pouvez utiliser des [Balises et stratégies de rétention](retention-tags-and-retention-policies-exchange-2013-help.md) pour gérer le cycle de vie des messages électroniques. Les stratégies de rétention contiennent des balises de rétention, qui sont des paramètres que vous pouvez utiliser pour spécifier quand un message doit automatiquement être déplacé vers l’archive ou quand il doit être supprimé.
 

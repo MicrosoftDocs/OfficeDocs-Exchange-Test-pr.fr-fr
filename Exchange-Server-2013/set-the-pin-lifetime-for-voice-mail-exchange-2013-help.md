@@ -1,5 +1,5 @@
 ﻿---
-title: 'Définir la durée de vie du code confidentiel pour la messagerie vocale: Exchange 2013 Help'
+title: 'Durée de vie du code confidentiel pour la messag. voc.: Exchange 2013 Help'
 TOCTitle: Définir la durée de vie du code confidentiel pour la messagerie vocale
 ms:assetid: d17f0bf6-0ad6-40a4-bdd5-f7098f39250d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124712(v=EXCHG.150)
@@ -13,26 +13,16 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Vous pouvez configurer la durée de vie du code confidentiel pour les utilisateurs à messagerie unifiée. La durée de vie du code confidentiel correspond au temps maximum pendant lequel un code confidentiel Outlook Voice Access reste valide pour vos destinataires à extension messagerie unifiée. Le paramètre de durée de vie du code confidentiel est configuré dans une stratégie de boîte aux lettres de messagerie unifiée et appliqué à tous les utilisateurs à messagerie unifiée associés à la stratégie de boîte aux lettres de messagerie unifiée.
 
 Plusieurs paramètres relatifs au code confidentiel peuvent être configurés dans une stratégie de boîte aux lettres de messagerie unifiée. Le paramètre de durée de vie du code confidentiel contrôle l'intervalle de temps, en jours, entre la date où les utilisateurs Outlook Voice Access ont modifié leur code confidentiel pour la dernière fois et la date où ils seront obligés de le modifier de nouveau. La plage s'étend de 0 à 999 et la valeur par défaut est de 60 jours. Si vous saisissez la valeur 0, le code confidentiel de l'utilisateur n'a pas de date d'expiration. Nous vous recommandons de ne pas définir ce paramètre à la valeur zéro (0), car vous risquez ainsi de diminuer considérablement la sécurité de votre réseau.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La messagerie unifiée n'informe pas les utilisateurs lorsque leur code confidentiel est sur le point d'expirer.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La messagerie unifiée n'informe pas les utilisateurs lorsque leur code confidentiel est sur le point d'expirer.
 
 
 Pour découvrir d'autres tâches de gestion concernant la sécurité d'Outlook Voice Access par code confidentiel, consultez la rubrique [Procédures de sécurité de code confidentiel](pin-security-procedures-exchange-2013-help.md).
@@ -49,18 +39,8 @@ Pour découvrir d'autres tâches de gestion concernant la sécurité d'Outlook V
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

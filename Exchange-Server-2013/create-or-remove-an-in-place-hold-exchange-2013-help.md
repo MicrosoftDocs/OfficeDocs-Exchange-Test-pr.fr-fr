@@ -13,22 +13,12 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-01-18_
+_**Dernière rubrique modifiée :** 2017-01-18_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous avons différé la date d’échéance du 1er juillet 2017 pour créer des conservations inaltérables dans Exchange Online (dans les plans autonomes Office 365 et Exchange Online). Mais plus tard cette année ou au début de l’année prochaine, vous ne pourrez pas créer des conservations inaltérables dans Exchange Online. Au lieu d’utiliser des conservations inaltérables, vous pouvez avoir recours à des <a href="https://go.microsoft.com/fwlink/?linkid=780738">cas de découverte électronique</a> ou des <a href="https://go.microsoft.com/fwlink/?linkid=827811">stratégies de rétention</a> dans le centre de sécurité et conformité Office 365. Lorsque nous aurons désactivé les nouvelles conservations inaltérables, vous pourrez toujours modifier les conservations inaltérables existantes. La création de conservations inaltérables sera toujours prise en charge dans les déploiements hybrides Exchange Server 2013 et Exchange . Vous serez également toujours en mesure de mettre des boîtes aux lettres en conservation pour litige.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Nous avons différé la date d’échéance du 1er juillet 2017 pour créer des conservations inaltérables dans Exchange Online (dans les plans autonomes Office 365 et Exchange Online). Mais plus tard cette année ou au début de l’année prochaine, vous ne pourrez pas créer des conservations inaltérables dans Exchange Online. Au lieu d’utiliser des conservations inaltérables, vous pouvez avoir recours à des <a href="https://go.microsoft.com/fwlink/?linkid=780738">cas de découverte électronique</a> ou des <a href="https://go.microsoft.com/fwlink/?linkid=827811">stratégies de rétention</a> dans le centre de sécurité et conformité Office 365. Lorsque nous aurons désactivé les nouvelles conservations inaltérables, vous pourrez toujours modifier les conservations inaltérables existantes. La création de conservations inaltérables sera toujours prise en charge dans les déploiements hybrides Exchange Server 2013 et Exchange . Vous serez également toujours en mesure de mettre des boîtes aux lettres en conservation pour litige.
 
 
 Une conservation inaltérable conserve tout le contenu d’une boîte aux lettres, y compris les éléments supprimés et les versions originales des éléments modifiés. Tous ces éléments de boîte aux lettres sont retournés dans une recherche de [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md). Lorsque vous placez une conservation inaltérable sur la boîte aux lettres d’un utilisateur, le contenu de la boîte aux lettres d’archivage correspondante (si elle est activée) est également placé en conservation et renvoyé lors d’une recherche de découverte électronique.
@@ -79,21 +69,11 @@ Une conservation inaltérable conserve tout le contenu d’une boîte aux lettre
     
       - **Filtrer en fonction des critères**   Cliquez sur ce bouton pour spécifier les critères de recherche, y compris les mots clés, les dates de début et de fin, les adresses des expéditeurs et des destinataires et les types de messages. Lorsque vous créez une conservation sur la base d’une requête, seuls les éléments correspondant aux critères de recherche sont conservés.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Lorsque vous placez des dossiers publics en conservation inaltérable, les messages électroniques liés au processus de synchronisation de hiérarchie de dossiers publics sont également conservés. Cela peut entraîner la conservation de milliers de messages électroniques associés à la synchronisation de la hiérarchie. Ces messages peuvent remplir le quota de stockage du dossier Éléments récupérables sur les boîtes aux lettres de dossiers publics. Pour éviter cela, vous pouvez créer une conservation inaltérable fondée sur une requête et ajouter la paire <code>property:value</code> suivante à la requête de recherche :<br />
+        > [!TIP]
+		> Lorsque vous placez des dossiers publics en conservation inaltérable, les messages électroniques liés au processus de synchronisation de hiérarchie de dossiers publics sont également conservés. Cela peut entraîner la conservation de milliers de messages électroniques associés à la synchronisation de la hiérarchie. Ces messages peuvent remplir le quota de stockage du dossier Éléments récupérables sur les boîtes aux lettres de dossiers publics. Pour éviter cela, vous pouvez créer une conservation inaltérable fondée sur une requête et ajouter la paire <code>property:value</code> suivante à la requête de recherche :<br />
         <code>NOT(subject:HierarchySync*)</code><br />
-        Ainsi, les messages (liés à la synchronisation de la hiérarchie de dossier public) dont la ligne d’objet contient le terme « HierarchySync » ne seront pas placés en conservation.</td>
-        </tr>
-        </tbody>
-        </table>
-
+        > Ainsi, les messages (liés à la synchronisation de la hiérarchie de dossier public) dont la ligne d’objet contient le terme « HierarchySync » ne seront pas placés en conservation.
+        
 
 6.  Dans la page **Paramètres de l'archive permanente**, cochez la case **Mettre en archive permanente le contenu correspondant à la requête de recherche des boîtes aux lettres sélectionnées**, puis activez l'une des options suivantes :
     
@@ -105,18 +85,8 @@ Une conservation inaltérable conserve tout le contenu d’une boîte aux lettre
 
 Cet exemple crée l'archive permanente Hold-CaseId012 et ajoute la boîte aux lettres joe@contoso.com à l'archive.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous ne précisez pas de paramètres de recherche supplémentaires pour une conservation inaltérable, tous les éléments des boîtes aux lettres source spécifiées sont placés en conservation. Si vous ne spécifiez pas le paramètre <em>ItemHoldPeriod</em>, les éléments sont placés en conservation indéfiniment ou jusqu’à ce que la boîte aux lettres ne soit plus conservée ou que la conservation soit supprimée.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous ne précisez pas de paramètres de recherche supplémentaires pour une conservation inaltérable, tous les éléments des boîtes aux lettres source spécifiées sont placés en conservation. Si vous ne spécifiez pas le paramètre <em>ItemHoldPeriod</em>, les éléments sont placés en conservation indéfiniment ou jusqu’à ce que la boîte aux lettres ne soit plus conservée ou que la conservation soit supprimée.
 
 
     New-MailboxSearch "Hold-CaseId012"-SourceMailboxes "joe@contoso.com" -InPlaceHoldEnabled $true
@@ -135,18 +105,8 @@ Retour au début
 
 ## Supprimer une archive permanente
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans Exchange 2013, les recherches de boîtes aux lettres peuvent être utilisées pour une archive permanente et pour la découverte électronique locale. Vous ne pouvez pas supprimer une recherche de boîte aux lettres utilisée pour une conservation inaltérable. Vous devez d'abord désactiver l'archive permanente en décochant la case <strong>Mettre en archive le contenu correspondant à la requête de recherche des boîtes aux lettres sélectionnées</strong> dans la page <strong>Paramètres de l'archive permanente</strong> ou en définissant le paramètre <em>InPlaceHoldEnabled</em> sur <code>$false</code> dans l'environnement de ligne de commande Exchange Management Shell. Vous pouvez également supprimer une boîte aux lettres en utilisant le paramètre <em>SourceMailboxes</em> spécifié dans la recherche.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans Exchange 2013, les recherches de boîtes aux lettres peuvent être utilisées pour une archive permanente et pour la découverte électronique locale. Vous ne pouvez pas supprimer une recherche de boîte aux lettres utilisée pour une conservation inaltérable. Vous devez d'abord désactiver l'archive permanente en décochant la case <strong>Mettre en archive le contenu correspondant à la requête de recherche des boîtes aux lettres sélectionnées</strong> dans la page <strong>Paramètres de l'archive permanente</strong> ou en définissant le paramètre <em>InPlaceHoldEnabled</em> sur <code>$false</code> dans l'environnement de ligne de commande Exchange Management Shell. Vous pouvez également supprimer une boîte aux lettres en utilisant le paramètre <em>SourceMailboxes</em> spécifié dans la recherche.
 
 
 **Utiliser le CAE pour supprimer une archive permanente**

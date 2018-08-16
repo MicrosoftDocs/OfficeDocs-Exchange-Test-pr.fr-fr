@@ -1,5 +1,5 @@
 ﻿---
-title: 'Recommandations en matière de performances Exchange Server 2013: Exchange 2013 Help'
+title: 'Recommandations s/ les performances Exchange Server 2013: Exchange 2013 Help'
 TOCTitle: Recommandations en matière de performances Exchange Server 2013
 ms:assetid: 6d0aea68-10d5-4a18-b632-a814ce3daa43
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn879084(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 L'optimisation des performances Exchange Server 2013 et la résolution des problèmes sont plus efficaces lorsque votre environnement a été correctement dimensionné et planifiée. Même si Exchange 2013 a été conçu pour simplifier l'infrastructure des ressources sous-jacente, il peut encore consommer une grande quantité de ressources système, telles que la mémoire, la capacité de stockage et la capacité du processeur.
 
@@ -25,18 +25,8 @@ Les articles de cette section ont été écrits par l'équipe de performances Ex
 
 Les changements d’architecture dans Exchange 2013 sont déjà documentés sur TechNet et dans le [blog de l’équipe Exchange](https://go.microsoft.com/fwlink/p/?linkid=35786). Nous allons tout d’abord aborder quelques modifications de haut niveau que vous devez envisager pour mieux comprendre les coûts des performances et le dimensionnement. Ensuite, ci-dessous, nous avons inclus une liste de références recommandées afin de fournir davantage de contexte dans ces domaines importants.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Consultez <a href="exchange-2013-virtualization-exchange-2013-help.md">Virtualisation d'Exchange 2013</a> pour obtenir des instructions d'optimisation des performances concernant le déploiement d'Exchange Server 2013 dans un environnement virtualisé.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Consultez <a href="exchange-2013-virtualization-exchange-2013-help.md">Virtualisation d'Exchange 2013</a> pour obtenir des instructions d'optimisation des performances concernant le déploiement d'Exchange Server 2013 dans un environnement virtualisé.
 
 
 Dans Exchange 2013, le rôle de serveur d'accès au client est un serveur proxy sans état. La responsabilité principale du rôle du serveur d'accès au client est maintenant d'authentifier les demandes entrantes puis d'envoyer une requête proxy au serveur de boîtes aux lettres approprié, celui hébergeant la copie active de la boîte aux lettres de l'utilisateur. Cela signifie qu'il n'est plus nécessaire de configurer l'affinité entre le serveur d'accès au client et l'équilibreur de charge pour des protocoles spécifiques.

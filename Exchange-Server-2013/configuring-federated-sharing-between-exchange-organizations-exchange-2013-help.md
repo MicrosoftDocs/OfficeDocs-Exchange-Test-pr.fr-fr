@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration du partage fédéré entre des organisations Exchange: Exchange 2013 Help'
+title: 'Configuration du partage fédéré entre des organisations Exchange'
 TOCTitle: Configuration du partage fédéré entre des organisations Exchange
 ms:assetid: 94e31454-b027-4757-b52f-d3c2ead6d916
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ657473(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le partage fédéré permet aux utilisateurs de votre organisation Exchange locale de partager des informations de disponibilité du calendrier (disponible/occupé) avec des destinataires d'autres organisations Exchange également configurées pour le partage fédéré. Le partage de disponibilités peut être activé entre deux organisations qui exécutent Exchange 2013, ainsi qu'entre des organisations à déploiement Exchange mixte. Pour en savoir plus sur le partage fédéré, consultez la rubrique [Partage](sharing-exchange-2013-help.md).
 
@@ -31,18 +31,8 @@ Cette rubrique fournit un résumé des exigences et des étapes de configuration
 
 Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives au partage fédéré, consultez [Procédures de fédération](federation-procedures-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.
 
 
 ## Ce qu'il faut savoir avant de commencer
@@ -117,18 +107,8 @@ Exécutez les étapes de [Configurer le partage fédéré](configure-federated-s
         
         Un serveur Exchange 2010 SP2 avec le rôle serveur d’accès au client doit être installé dans l’organisation Exchange 2003. Si vous avez d’autres serveurs Exchange 2010 existants, ces derniers devraient être mis à jour vers Exchange 2010 SP2. Pour plus d’informations sur l’installation d’Exchange 2010 au sein d’une organisation Exchange 2003, consultez l’article [Exchange 2003 - Planification de la feuille de route de mise à niveau et de coexistence](https://go.microsoft.com/fwlink/?linkid=268414).
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Pour qu'un partage de disponibilités fonctionne correctement entre des organisations Exchange 2013 et Exchange 2003, le dossier public <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> doit exister dans la hiérarchie des dossiers publics. Ce dossier est créé automatiquement sur le serveur de boîtes aux lettres Exchange 2010 de l'organisation Exchange 2003 seulement si vous sélectionnez l'option de création des dossiers publics comme partie intégrante de la configuration des paramètres client pour la prise en charge de Microsoft Outlook 2003 lors de l'installation de Microsoft Exchange 2010. En outre, cette option n'est accessible durant le processus d'installation que si le serveur de boîtes aux lettres Exchange 2010 est le premier serveur de boîtes aux lettres installé dans l'organisation. Si le dossier public <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> n’a pas été créé lors de l’installation, vous devez le créer manuellement. Pour plus d'informations sur la création de ce dossier public, consultez la rubrique <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2555008">Comment résoudre les problèmes de disponibilité lorsque vous utilisez Exchange Federation dans l'environnement Microsoft Office 365 pour les entreprises</a>.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!WARNING]
+		> Pour qu'un partage de disponibilités fonctionne correctement entre des organisations Exchange 2013 et Exchange 2003, le dossier public <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> doit exister dans la hiérarchie des dossiers publics. Ce dossier est créé automatiquement sur le serveur de boîtes aux lettres Exchange 2010 de l'organisation Exchange 2003 seulement si vous sélectionnez l'option de création des dossiers publics comme partie intégrante de la configuration des paramètres client pour la prise en charge de Microsoft Outlook 2003 lors de l'installation de Microsoft Exchange 2010. En outre, cette option n'est accessible durant le processus d'installation que si le serveur de boîtes aux lettres Exchange 2010 est le premier serveur de boîtes aux lettres installé dans l'organisation. Si le dossier public <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> n’a pas été créé lors de l’installation, vous devez le créer manuellement. Pour plus d'informations sur la création de ce dossier public, consultez la rubrique <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2555008">Comment résoudre les problèmes de disponibilité lorsque vous utilisez Exchange Federation dans l'environnement Microsoft Office 365 pour les entreprises</a>.
     
     2.  **Configurer la délégation fédérée**.
         
@@ -168,36 +148,16 @@ Exécutez les étapes de [Configurer le partage fédéré](configure-federated-s
         
           - Dans **Sélectionner une banque de dossier public**, sélectionnez la **Base de données de dossiers publics** du serveur d'accès au client/de boîtes aux lettres Exchange 2010, puis cliquez sur **OK**.
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>Par défaut, Exchange utilise la planification de la réplication définie dans la base de données de dossiers publics.</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]
+            > Par défaut, Exchange utilise la planification de la réplication définie dans la base de données de dossiers publics.
         
           - Cliquez sur **OK** pour fermer **Propriétés OU=EXTERNAL (FYDIBOHF25SPDLT)** et enregistrer vos modifications.
         
           - Effectuez les mêmes étapes pour le dossier **OU=Exchange Administrative Group (FYDIBOHF23SPDLT)**.
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>Selon la taille des dossiers publics, il est possible que la réplication prenne plusieurs heures.</td>
-            </tr>
-            </tbody>
-            </table>
-        
+            > [!WARNING]
+			> Selon la taille des dossiers publics, il est possible que la réplication prenne plusieurs heures.
+                    
           - Après la réplication des dossiers publics **OU=EXTERNAL (FYDIBOHF25SPDLT)** et **OU=Exchange Administrative Group (FYDIBOHF23SPDLT)** sur le serveur d'accès au client/de boîtes aux lettres Exchange 2010, vous devez supprimer les réplicas de ces dossiers publics sur le serveur Exchange 2003.
     
     5.  **Modifier le paramètre LegacyExchangeDN**

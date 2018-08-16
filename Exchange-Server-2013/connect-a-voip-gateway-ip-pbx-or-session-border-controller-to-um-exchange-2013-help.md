@@ -1,5 +1,5 @@
 ﻿---
-title: 'Connexion d’une passerelle VoIP, d’un IP PBX ou d’un contrôleur SBC à la messagerie unifiée: Exchange 2013 Help'
+title: 'Connexion d’une passerelle VoIP, d’un IP PBX ou d’un contrôleur SBC à la MU'
 TOCTitle: Connexion d’une passerelle VoIP, d’un IP PBX ou d’un contrôleur SBC à la messagerie unifiée
 ms:assetid: a7cecf59-b93a-413b-bb88-29f2669ef2cf
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124084(v=EXCHG.150)
@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous devez configurer correctement les passerelles VoIP et les autocommutateurs privés (PBX) lorsque vous déployez la messagerie unifiée dans votre organisation. Si vous déployez la messagerie unifiée dans un environnement hybride, vous devrez également configurer correctement vos contrôleurs de frontière de session. Pour ce faire, vous devez configurer l’interface ou les interfaces des passerelles VoIP, les autocommutateurs privés IP et les contrôleurs de frontière de session que vous utilisez pour communiquer avec les serveurs d’accès au client qui exécutent le service de routage des appels de la messagerie unifiée de Microsoft Exchange et avec les serveurs de boîtes aux lettres qui exécutent le service de messagerie unifiée de Microsoft Exchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lorsque vous exécutez des tâches administratives sur une passerelle VoIP, un PBX IP ou un contrôleur de frontière de session à l’aide d’un navigateur web, les requêtes HTTP envoyées sur le réseau ne sont pas chiffrées. Pour augmenter le niveau de sécurité des passerelles VoIP, des PBX IP ou des contrôleurs de frontière de session sur votre réseau, utilisez le protocole IPsec (Internet Protocol security) ou SSL (Secure Sockets Layer) pour protéger les informations d’identification et données d’administration transmises sur le réseau. Il est également recommandé d’utiliser un mécanisme d’authentification efficace et des mots de passe administrateur complexes afin de protéger les informations d’identification d’administration du périphérique.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lorsque vous exécutez des tâches administratives sur une passerelle VoIP, un PBX IP ou un contrôleur de frontière de session à l’aide d’un navigateur web, les requêtes HTTP envoyées sur le réseau ne sont pas chiffrées. Pour augmenter le niveau de sécurité des passerelles VoIP, des PBX IP ou des contrôleurs de frontière de session sur votre réseau, utilisez le protocole IPsec (Internet Protocol security) ou SSL (Secure Sockets Layer) pour protéger les informations d’identification et données d’administration transmises sur le réseau. Il est également recommandé d’utiliser un mécanisme d’authentification efficace et des mots de passe administrateur complexes afin de protéger les informations d’identification d’administration du périphérique.
 
 
 ## Interfaces d’appareils de téléphonie IP
@@ -63,16 +53,6 @@ Une fois que vous avez créé une passerelle IP de messagerie unifiée, les serv
 
 Les serveurs d’accès au client et de boîtes aux lettres ne doivent communiquer qu’avec une passerelle VoIP, un PBX IP ou un contrôleur de frontière de session (SBC) répertorié(e) en tant qu’homologue SIP (Session Initiation Protocol) approuvé. Un événement doté de l’ID 1175 est journalisé lorsque plusieurs hôtes DNS partagent la même adresse IP. Cet événement peut se produire si vous avez configuré vos zones DNS avec des noms de domaine complets pour les passerelles VoIP de votre réseau. La messagerie unifiée protège contre les demandes non autorisées en récupérant l’URL interne du répertoire virtuel des services web de messagerie unifiée situé sur le serveur de boîtes aux lettres et utilise ensuite l’URL pour construire la liste des noms de domaines complets pour les homologues SIP approuvés. Lorsque deux noms de domaine complets correspondent à même adresse IP, cet événement est alors journalisé.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez redémarrer le service de messagerie unifiée MicrosoftExchange si une passerelle VoIP, un PBX IP ou un SBC est configuré pour utiliser un nom de domaine complet et si l’enregistrement DNS de la passerelle VoIP, du PBX IP ou du SBC est modifié après que le service a démarré. Si vous ne redémarrez pas le service, le serveur de boîtes aux lettres n’est pas en mesure de localiser la passerelle VoIP, le PBX IP ou le SBC. Cela est dû au fait qu’un serveur de boîtes aux lettres gère un cache pour toutes les passerelles VoIP, tous les PBX IP ou tous les SBC en mémoire et que la résolution DNS ne s’effectue qu’en cas de redémarrage du service ou de modification de la configuration d’une passerelle VoIP, d’un PBX IP et d’un contrôleur de frontière de session (SBC).</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous devez redémarrer le service de messagerie unifiée MicrosoftExchange si une passerelle VoIP, un PBX IP ou un SBC est configuré pour utiliser un nom de domaine complet et si l’enregistrement DNS de la passerelle VoIP, du PBX IP ou du SBC est modifié après que le service a démarré. Si vous ne redémarrez pas le service, le serveur de boîtes aux lettres n’est pas en mesure de localiser la passerelle VoIP, le PBX IP ou le SBC. Cela est dû au fait qu’un serveur de boîtes aux lettres gère un cache pour toutes les passerelles VoIP, tous les PBX IP ou tous les SBC en mémoire et que la résolution DNS ne s’effectue qu’en cas de redémarrage du service ou de modification de la configuration d’une passerelle VoIP, d’un PBX IP et d’un contrôleur de frontière de session (SBC).
 

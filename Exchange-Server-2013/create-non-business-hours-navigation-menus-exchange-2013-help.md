@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-05_
+_**Dernière rubrique modifiée :** 2012-11-05_
 
 Vous pouvez activer les mappages de touches en dehors des heures d’ouverture pour un standard automatique de messagerie unifiée. Une fois qu’un standard automatique de messagerie unifiée est créé, un message d’assistance vocale système par défaut est utilisé comme message d’accueil de menu principal en dehors des heures d’ouverture. Ce message est écouté par les appelants après le message d’accueil en dehors des heures d’ouverture. Le message d’assistance vocal par défaut du menu principal en dehors des heures d’ouverture est le suivant : « Bienvenue sur le standard automatique Microsoft Exchange en dehors des heures d’ouverture. » Puisque aucun mappage de touches n'est défini par défaut, aucune option de menu n'est disponible pour les appelants qui n'entendent que le message d'assistance vocal de menu principal par défaut en dehors des heures d'ouverture.
 
@@ -35,18 +35,8 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

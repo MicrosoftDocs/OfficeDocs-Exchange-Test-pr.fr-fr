@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-11-09_
+_**Dernière rubrique modifiée :** 2012-11-09_
 
 Vous pouvez configurer une passerelle IP de messagerie unifiée soit avec une adresse IP soit avec un nom de domaine complet. Lorsque vous créez une passerelle IP de messagerie unifiée, vous devez définir l’adresse IP ou le nom de domaine complet configuré sur la passerelle VoIP, le PBX IP ou le contrôleur de frontière de session (SBC) que vous utilisez. Vous pouvez modifier l'adresse IP ou le nom de domaine complet après la création de la passerelle IP de messagerie unifiée.
 
@@ -37,18 +37,8 @@ Pour les autres tâches de gestion relatives aux passerelles IP de messagerie un
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -61,18 +51,8 @@ Pour les autres tâches de gestion relatives aux passerelles IP de messagerie un
 
 3.  Cliquez sur **Enregistrer**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Quand vous utilisez un nom de domaine complet, et non une adresse IP, pour la passerelle IP de messagerie unifiée, vérifiez que les enregistrements DNS corrects ont été créés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Quand vous utilisez un nom de domaine complet, et non une adresse IP, pour la passerelle IP de messagerie unifiée, vérifiez que les enregistrements DNS corrects ont été créés.
 
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer un nom de domaine complet

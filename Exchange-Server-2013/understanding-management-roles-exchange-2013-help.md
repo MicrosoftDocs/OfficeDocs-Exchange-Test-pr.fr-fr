@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Les rôles de gestion font partie du modèle d'autorisations de contrôle d'accès basé sur les rôles (Role Based Access Control ou RBAC) utilisé dans Microsoft Exchange Server 2013. Les rôles agissent en tant que regroupement logique de cmdlets qui sont associées pour fournir un accès afin d'afficher ou de modifier la configuration des composants Exchange 2013, comme les boîtes aux lettres, les règles de transport et les destinataires. Les rôles de gestion peuvent ensuite être associés à un niveau supérieur pour former des regroupements plus importants, appelés groupes de rôles de gestion et stratégies d'attribution de rôle de gestion, lesquels permettent de gérer des zones de fonctionnalités et la configuration des destinataires. Les groupes de rôles et les stratégies d'attribution de rôle accordent respectivement des autorisations aux administrateurs et aux utilisateurs finals. Pour plus d'informations sur les groupes de rôles de gestion et les stratégies d'attribution de rôle de gestion, consultez la rubrique [Présentation du contrôle d'accès basé sur un rôle](understanding-role-based-access-control-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette rubrique traite de la fonctionnalité RBAC avancée. Si vous souhaitez gérer des autorisations Exchange 2013 de base, comme l’utilisation du centre d’administration Exchange pour ajouter et supprimer des membres dans les groupes de rôles, créer et modifier des groupes de rôles ou créer et modifier des stratégies d’attribution de rôles, consultez la rubrique <a href="permissions-exchange-2013-help.md">Autorisations</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette rubrique traite de la fonctionnalité RBAC avancée. Si vous souhaitez gérer des autorisations Exchange 2013 de base, comme l’utilisation du centre d’administration Exchange pour ajouter et supprimer des membres dans les groupes de rôles, créer et modifier des groupes de rôles ou créer et modifier des stratégies d’attribution de rôles, consultez la rubrique <a href="permissions-exchange-2013-help.md">Autorisations</a>.
 
 
 **Table des matières**
@@ -75,18 +65,8 @@ Pour obtenir une liste complète des rôles de gestion inclus dans Exchange 201
 
 Vous pouvez associer les rôles intégrés fournis avec Exchange 2013 afin de créer un modèle d'autorisations adapté à votre activité professionnelle. Par exemple, si vous souhaitez que les membres d'un groupe de rôles gèrent les destinataires et les dossiers publics, vous attribuez les rôles Destinataires de messagerie et Dossiers publics au groupe de rôles. Dans la plupart des cas, vous attribuez des rôles aux groupes de rôles ou des stratégies d'attribution de rôles. Vous pouvez également attribuer des rôles de gestion d'attribution directement aux utilisateurs si vous souhaitez contrôler les autorisations à un niveau détaillé. Pour simplifier votre modèle d'autorisations, nous vous conseillons d'utiliser des groupes de rôles et des stratégies d'attribution de rôles plutôt que des attributions directes de rôles d'utilisateur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez uniquement attribuer des rôles de gestion d'utilisateur final aux stratégies d'attribution de rôles.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez uniquement attribuer des rôles de gestion d'utilisateur final aux stratégies d'attribution de rôles.
 
 
 Les rôles de gestion intégrés ne sont pas modifiables. Toutefois, vous pouvez créer des rôles de gestion calqués sur les rôles de gestion intégrés, puis attribuer ces nouveaux rôles à des groupes de rôles ou à des stratégies d'attribution de rôles. Vous pouvez ensuite modifier les nouveaux rôles de gestion pour les adapter à vos besoins. Il est très rare d'avoir à réaliser cette tâche, d'ailleurs réservée aux utilisateurs avancés.
@@ -279,18 +259,9 @@ Le tableau suivant répertorie tous les types de rôle de gestion administratif 
 <td><p><code>ActiveDirectoryPermissions</code></p></td>
 <td><p><a href="active-directory-permissions-role-exchange-2013-help.md">Rôle des autorisations Active Directory</a></p></td>
 <td><p>Ce type de rôle est associé à des rôles permettant aux administrateurs de configurer les autorisations Active Directory au sein d'une organisation. Certaines fonctionnalités reposant sur les autorisations Active Directory ou sur une liste de contrôle d'accès (ACL) comprennent les connecteurs de réception et d'envoi de transport, ainsi que les autorisations de boîtes aux lettres Envoyer en tant que et Envoyer de la part de.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les autorisations définies directement sur des objets Active Directory risquent de ne pas être appliquées via RBAC.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> Les autorisations définies directement sur des objets Active Directory risquent de ne pas être appliquées via RBAC.
 
 </td>
 <td><p>Organisation</p></td>
@@ -614,18 +585,9 @@ Le tableau suivant répertorie tous les types de rôle de gestion administratif 
 <td><p><code>SupportDiagnostics</code></p></td>
 <td><p><a href="support-diagnostics-role-exchange-2013-help.md">Prise en charge du rôle de diagnostics</a></p></td>
 <td><p>Ce type de rôle est associé avec des rôles permettant aux administrateurs de réaliser des diagnostics avancés sous la direction des services de Support Microsoft au sein d'une organisation.</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les rôles associés à ce type de rôle accordent des autorisations aux cmdlets et aux scripts qui doivent uniquement être utilisés sous la direction du Support Microsoft.</td>
-</tr>
-</tbody>
-</table>
+
+> [!CAUTION]
+> Les rôles associés à ce type de rôle accordent des autorisations aux cmdlets et aux scripts qui doivent uniquement être utilisés sous la direction du Support Microsoft.
 
 </td>
 <td><p>Organisation</p></td>

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Autorisations insuffisantes pour supprimer tous les rôles serveur_CannotUninstallDelegatedServer: Exchange 2013 Help'
+title: 'Autorisations insuffisantes pour supprimer tous les rôles serveur'
 TOCTitle: Autorisations insuffisantes pour supprimer tous les rôles serveur_CannotUninstallDelegatedServer
 ms:assetid: 214ae6f3-15e7-4337-99e8-40f9547c8e0c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.cannotuninstalldelegatedserver(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 

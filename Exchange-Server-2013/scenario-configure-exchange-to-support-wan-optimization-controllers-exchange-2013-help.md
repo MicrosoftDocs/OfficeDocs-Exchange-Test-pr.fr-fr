@@ -1,5 +1,5 @@
 ﻿---
-title: "Scénario : configuration d'Exchange pour prendre en charge les contrôleurs d'optimisation de réseau étendu: Exchange 2013 Help"
+title: 'Config. Exchange pr prendre en ch. les contrôleurs d’optimis. de réseau étendu'
 TOCTitle: "Scénario : configuration d'Exchange pour prendre en charge les contrôleurs d'optimisation de réseau étendu"
 ms:assetid: 1f407698-0b71-45a3-867a-640ccf7351da
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee633456(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-09-28_
+_**Dernière rubrique modifiée :** 2012-09-28_
 
 Dans Microsoft Exchange Server 2013, le chiffrement TLS est obligatoire pour toutes les communications SMTP entre les serveurs de boîtes aux lettres dans le service de transport. Cela augmente la sécurité globale des communications du service de transport entre les serveurs de boîtes aux lettres. Toutefois, dans certaines topologies utilisant des contrôleurs d'optimisation de réseau étendu (WOC), le chiffrement TLS du trafic SMTP peut être indésirable. Dans ce genre de scénario, vous pouvez désactiver le chiffrement TLS pour les communications du service de transport entre serveurs de boîtes aux lettres.
 

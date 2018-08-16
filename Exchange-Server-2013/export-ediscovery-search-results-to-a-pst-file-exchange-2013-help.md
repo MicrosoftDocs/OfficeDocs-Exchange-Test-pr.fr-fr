@@ -1,5 +1,5 @@
 ﻿---
-title: 'Exporter les résultats de la recherche électronique vers un fichier PST: Exchange 2013 Help'
+title: 'Export des résult. de la rech. électr. vers un fichier PST: Exchange 2013 Help'
 TOCTitle: Exporter les résultats de la recherche électronique vers un fichier PST
 ms:assetid: bc47f5f9-d056-4b69-b669-ae65fad541c8
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn440164(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2017-09-07_
+_**Dernière rubrique modifiée :** 2017-09-07_
 
 Vous pouvez utiliser l’outil d’exportation d’eDiscovery dans le Centre d’administration Exchange (EAC) pour exporter les résultats d’une recherche d’e-Discovery en Place dans un fichier de données Outlook, également appelé un fichier PST. Les administrateurs peuvent distribuer les résultats de la recherche à d’autres personnes au sein de votre organisation, comme un gestionnaire de ressources humaines ou enregistrements, ou de s’opposer à conseiller dans un cas juridique. Une fois les résultats de la recherche sont exportés vers un fichier PST, vous ou autres utilisateurs peuvent les ouvrir dans Outlook pour visualiser ou imprimer les messages renvoyés dans les résultats de recherche. Fichiers PST peuvent également être ouvert dans l’e-Discovery de tiers et des applications. Cette rubrique vous indique comment effectuer cette opération, ainsi que résoudre les problèmes que vous pouvez avoir.
 
@@ -53,18 +53,8 @@ Vous pouvez utiliser l’outil d’exportation d’eDiscovery dans le Centre d�
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser le Centre d’administration Exchange pour exporter les résultats de recherche eDiscovery inaltérable vers un fichier PST
@@ -83,26 +73,11 @@ Vous pouvez utiliser l’outil d’exportation d’eDiscovery dans le Centre d�
     
       - Cochez la case **Inclure les éléments impossibles à rechercher** pour inclure les éléments de boîte aux lettres qu’il n’est pas possible de rechercher (par exemple, les messages avec des pièces jointes dans des types de fichiers qu’Exchange Search ne peut pas indexer). Les éléments impossibles à rechercher sont exportés dans un fichier PST distinct.
         
-        <table>
-        <colgroup>
-        <col style="width: 100%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Inclure les éléments impossibles à rechercher lorsque vous exportez les résultats de la recherche de découverte électronique prend plus de temps lorsque les boîtes aux lettres contiennent un grand nombre d’éléments impossibles à rechercher. Pour réduire le temps nécessaire pour exporter les résultats de la recherche et pour éviter les fichiers d’exportation PST volumineux, tenez compte des recommandations suivantes :
-        <ul>
-        <li><p>Créez plusieurs recherches de découverte électronique qui recherchent chacune un petit nombre de boîtes aux lettres sources.</p></li>
-        <li><p>Si vous exportez tout le contenu de la boîte aux lettres correspondant à une plage de dates précise (mais sans spécifier aucun mot clé dans les critères de recherche), tous les éléments impossibles à rechercher dans cette plage de dates seront automatiquement inclus dans les résultats de la recherche. Par conséquent, n’activez pas la case à cocher <strong>Inclure les éléments qui ne peuvent pas être recherchés</strong>.</p></li>
-        </ul></td>
-        </tr>
-        </tbody>
-        </table>
-
+        > [!IMPORTANT]
+		> Inclure les éléments impossibles à rechercher lorsque vous exportez les résultats de la recherche de découverte électronique prend plus de temps lorsque les boîtes aux lettres contiennent un grand nombre d’éléments impossibles à rechercher. Pour réduire le temps nécessaire pour exporter les résultats de la recherche et pour éviter les fichiers d’exportation PST volumineux, tenez compte des recommandations suivantes :
+        > <ul>
+        > <li><p>Créez plusieurs recherches de découverte électronique qui recherchent chacune un petit nombre de boîtes aux lettres sources.</p></li>
+        > <li><p>Si vous exportez tout le contenu de la boîte aux lettres correspondant à une plage de dates précise (mais sans spécifier aucun mot clé dans les critères de recherche), tous les éléments impossibles à rechercher dans cette plage de dates seront automatiquement inclus dans les résultats de la recherche. Par conséquent, n’activez pas la case à cocher <strong>Inclure les éléments qui ne peuvent pas être recherchés</strong>.</p></li></ul>
 
 4.  Cliquez sur **Démarrer** pour exporter les résultats de recherche vers un fichier PST.
     

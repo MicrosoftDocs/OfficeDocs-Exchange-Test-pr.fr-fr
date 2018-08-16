@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utilisation d’un serveur de transport Edge Exchange 2010 ou 2007 dans Exchange 2013: Exchange 2013 Help'
+title: 'Utilisation d’un srv de transp. Edge Exchange 2010 ou 2007 dans Exchange 2013'
 TOCTitle: Utilisation d’un serveur de transport Edge Exchange 2010 ou 2007 dans Exchange 2013
 ms:assetid: ce99b4bd-868c-4767-9009-e22c17ac0ac7
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ150569(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le serveur de transport Edge est disponible dans Microsoft Exchange Server 2013 Service Pack 1 (SP1). Vous pouvez toutefois continuer à utiliser les serveurs de transport Edge Exchange Server 2007 ou Exchange Server 2010 que vous avez déployés dans votre réseau de périmètre. Vous pouvez aussi installer un nouveau serveur de transport Edge Exchange 2007 ou Exchange 2010 dans votre réseau de périmètre pour une organisation Exchange 2013 nouvellement créée ou mise à niveau.
 

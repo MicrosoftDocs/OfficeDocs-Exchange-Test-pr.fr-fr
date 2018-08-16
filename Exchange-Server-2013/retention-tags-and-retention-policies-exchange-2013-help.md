@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Dans Microsoft Exchange Server 2013 et Exchange Online, la gestion des enregistrements de messagerie (MRM) permet aux organisations de gérer le cycle de vie des messages électroniques et de réduire les risques juridiques associés aux communications par messagerie électronique et par d’autres moyens. La gestion des enregistrements de messagerie facilite la conservation des messages nécessaire pour se conformer à la stratégie de la société, aux réglementations gouvernementales ou aux exigences légales, ainsi que la suppression du contenu dépourvu de valeur légale ou commerciale.
 
@@ -131,34 +131,14 @@ Les balises personnelles sont accessibles aux utilisateurs d’Outlook 2010 et 
 
 Les utilisateurs peuvent appliquer des balises personnelles aux dossiers qu’ils créent ou à des éléments individuels. Les messages avec balise personnelle appliquée sont toujours traités conformément aux paramètres de la balise personnelle. Les utilisateurs peuvent appliquer une balise personnelle à un message afin qu’il soit déplacé ou supprimé avant ou après avoir spécifié les paramètres dans les balises de stratégie par défaut ou les balises de stratégie de rétention appliquées à la boîte aux lettres de cet utilisateur. Vous pouvez également créer des balises personnelles avec la rétention désactivée. Ceci permet à l’utilisateur de baliser des éléments afin qu’ils ne soient jamais déplacés vers une archive ou qu’ils n’expirent jamais.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les utilisateurs peuvent appliquer des stratégies d’archivage à des dossiers par défaut, des dossiers ou des sous-dossiers créés par l’utilisateur et des éléments individuels. Les utilisateurs peuvent appliquer une stratégie de rétention à des dossiers ou des sous-dossiers créés par l’utilisateur et à des éléments individuels (y compris à des sous-dossiers et des éléments d’un dossier par défaut) mais pas à des dossiers par défaut.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les utilisateurs peuvent appliquer des stratégies d’archivage à des dossiers par défaut, des dossiers ou des sous-dossiers créés par l’utilisateur et des éléments individuels. Les utilisateurs peuvent appliquer une stratégie de rétention à des dossiers ou des sous-dossiers créés par l’utilisateur et à des éléments individuels (y compris à des sous-dossiers et des éléments d’un dossier par défaut) mais pas à des dossiers par défaut.
 
 
 Les utilisateurs peuvent également utiliser le Centre d’administration Exchange (CAE) pour sélectionner des balises personnelles supplémentaires qui ne sont pas liées à leur stratégie de rétention. Les balises sélectionnées deviennent alors accessibles dans Outlook 2010 et Outlook Web App. Pour permettre aux utilisateurs de sélectionner des balises supplémentaires à partir du Centre d’administration Exchange, vous devez ajouter le [Rôle MyRetentionPolicies](myretentionpolicies-role-exchange-2013-help.md) à la stratégie d’attribution de rôle de l’utilisateur. Pour en savoir plus sur les stratégies d’attribution de rôle pour les utilisateurs, voir la rubrique [Présentation des stratégies d’attribution de rôle de gestion](understanding-management-role-assignment-policies-exchange-2013-help.md). Si vous autorisez des utilisateurs à sélectionner des balises personnelles supplémentaires, toutes les balises personnelles de votre organisation Exchange deviennent accessibles.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les balises personnelles sont une fonctionnalité essentielle. Les boîtes aux lettres avec des stratégies qui contiennent ces balises (ou suite à l’ajout de balises aux boîtes aux lettres) requièrent une Licence d’Accès Client (CAL) pour Exchange Enterprise.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les balises personnelles sont une fonctionnalité essentielle. Les boîtes aux lettres avec des stratégies qui contiennent ces balises (ou suite à l’ajout de balises aux boîtes aux lettres) requièrent une Licence d’Accès Client (CAL) pour Exchange Enterprise.
 
 
 Retour au début
@@ -238,18 +218,8 @@ Lors de la création ou de la configuration d’une balise de rétention, vous p
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1   Dans un déploiement hybride Exchange, vous pouvez activer une boîte aux lettres d’archivage en nuage pour une boîte aux lettres principale locale. Si vous attribuez une stratégie d’archivage à une boîte aux lettres locale, les éléments sont déplacés vers l’archive en nuage. Si un élément est déplacé vers la boîte aux lettres d’archivage, aucune copie n’est conservée dans la boîte aux lettres locale. Si la boîte aux lettres locale est placée en conservation, une stratégie d’archivage déplacera les éléments vers la boîte aux lettres d’archivage en nuage dans laquelle ils sont conservés pendant la durée spécifiée par la conservation.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 1   Dans un déploiement hybride Exchange, vous pouvez activer une boîte aux lettres d’archivage en nuage pour une boîte aux lettres principale locale. Si vous attribuez une stratégie d’archivage à une boîte aux lettres locale, les éléments sont déplacés vers l’archive en nuage. Si un élément est déplacé vers la boîte aux lettres d’archivage, aucune copie n’est conservée dans la boîte aux lettres locale. Si la boîte aux lettres locale est placée en conservation, une stratégie d’archivage déplacera les éléments vers la boîte aux lettres d’archivage en nuage dans laquelle ils sont conservés pendant la durée spécifiée par la conservation.
 
 
 Pour plus d’informations sur la création de balises de rétention, voir [Créer une stratégie de rétention](create-a-retention-policy-exchange-2013-help.md).
@@ -287,18 +257,8 @@ Une stratégie de rétention peut avoir les balises de rétention suivantes :
 <td><p>Balises de stratégie de rétention (RPT)</p></td>
 <td><ul>
 <li><p>Une balise de stratégie de rétention pour chaque dossier par défaut pris en charge</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il n’est pas possible d’associer plusieurs balises de stratégie de rétention à la même stratégie de rétention pour un dossier par défaut particulier (comme le dossier <strong>Éléments supprimés</strong>).</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il n’est pas possible d’associer plusieurs balises de stratégie de rétention à la même stratégie de rétention pour un dossier par défaut particulier (comme le dossier <strong>Éléments supprimés</strong>).
 
 </li>
 </ul></td>
@@ -308,18 +268,8 @@ Une stratégie de rétention peut avoir les balises de rétention suivantes :
 <td><ul>
 <li><p>N’importe quel nombre de balises personnelles</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Un grand nombre de balises personnelles dans une stratégie peuvent dérouter les utilisateurs. Il est conseillé de ne pas ajouter plus de 10 balises personnelles à une stratégie de rétention.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Un grand nombre de balises personnelles dans une stratégie peuvent dérouter les utilisateurs. Il est conseillé de ne pas ajouter plus de 10 balises personnelles à une stratégie de rétention.
 
 </td>
 </tr>
@@ -327,18 +277,8 @@ Une stratégie de rétention peut avoir les balises de rétention suivantes :
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Bien qu’une stratégie de rétention n’ait pas besoin d’être associée à une balise, il n’est pas conseillé d’utiliser ce scénario. Si les boîtes aux lettres dont les stratégies de rétention ne sont pas associées à une balise de rétention, leurs éléments risquent de ne jamais expirer.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Bien qu’une stratégie de rétention n’ait pas besoin d’être associée à une balise, il n’est pas conseillé d’utiliser ce scénario. Si les boîtes aux lettres dont les stratégies de rétention ne sont pas associées à une balise de rétention, leurs éléments risquent de ne jamais expirer.
 
 
 Une stratégie de rétention peut contenir des balises d’archive (balises qui déplacent les éléments vers la boîte aux lettres d’archives personnelles) et les balises de rétention (balises qui suppriment des éléments). Ces deux types de balises peuvent être appliqués à un élément de boîte aux lettres. Les boîtes aux lettres d’archives ne possèdent pas de stratégie de rétention distincte. La même stratégie de rétention s’applique à la boîte aux lettres principale et d’archive.
@@ -367,18 +307,8 @@ L’Assistant Dossier géré est un assistant basé sur la limitation. Ces types
 
 Vous pouvez également exécuter la cmdlet [Start-ManagedFolderAssistant](https://technet.microsoft.com/fr-fr/library/aa998864\(v=exchg.150\)) pour déclencher manuellement l’assistant afin qu’il traite une boîte aux lettres spécifique. Pour en savoir plus, voir [Configurer l’Assistant Dossier géré](configure-the-managed-folder-assistant-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L’Assistant Dossier géré n’intervient pas sur les messages ne faisant pas l’objet d’une rétention, ce qui est indiqué par la désactivation de la balise de rétention. Vous pouvez également désactiver une balise de rétention pour suspendre temporairement le traitement des éléments comportant cette balise.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L’Assistant Dossier géré n’intervient pas sur les messages ne faisant pas l’objet d’une rétention, ce qui est indiqué par la désactivation de la balise de rétention. Vous pouvez également désactiver une balise de rétention pour suspendre temporairement le traitement des éléments comportant cette balise.
 
 
 ## Déplacement d’éléments d’un dossier à un autre
@@ -397,36 +327,16 @@ Les éléments existants marqués par cette balise continuent à être traités 
 
 Toutefois, si vous supprimez la balise, la définition correspondante stockée dans Active Directory est supprimée. L’Assistant Dossier géré traite alors tous les éléments d’une boîte aux lettres et marque à nouveau ceux auxquels la balise supprimée a été appliquée. Selon le nombre de boîtes aux lettres et de messages, ce processus peut entraîner une consommation considérable en ressources sur tous les serveurs de boîtes aux lettres contenant des boîtes aux lettres dont les stratégies de rétention incluent la balise supprimée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si une balise de rétention est supprimée d’une stratégie de rétention, tous les éléments de boîte aux lettres existants auxquels la balise est appliquée continuent à expirer conformément aux paramètres de la balise. Pour empêcher l’application des paramètres de la balise aux éléments, vous devez supprimer la balise. La balise est supprimée de toutes les stratégies de rétention dans lesquelles elle est incluse.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si une balise de rétention est supprimée d’une stratégie de rétention, tous les éléments de boîte aux lettres existants auxquels la balise est appliquée continuent à expirer conformément aux paramètres de la balise. Pour empêcher l’application des paramètres de la balise aux éléments, vous devez supprimer la balise. La balise est supprimée de toutes les stratégies de rétention dans lesquelles elle est incluse.
 
 
 ## Désactivation d’une balise de rétention
 
 Si vous désactivez une balise de rétention, l’Assistant Dossier géré ignore les éléments auxquels elle est appliquée. Les éléments contenant des balises dont la rétention est désactivée ne sont jamais déplacés ou supprimés, selon l’action de rétention qui a été spécifiée. Étant donné que ces éléments sont toujours considérés comme éléments balisés, la balise de stratégie par défaut ne leur est pas appliquée. Par exemple, si vous souhaitez corriger les paramètres de balise de rétention, vous pouvez désactiver temporairement une balise de rétention pour que l’Assistant Dossier géré arrête le traitement des messages avec cette balise.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La période de rétention d’une balise de rétention désactivée s’affiche pour l’utilisateur en tant que <strong>Jamais</strong>. Si un utilisateur balise un élément en pensant ne jamais le supprimer, l’activation ultérieure de la balise provoquera une suppression involontaire des éléments que l’utilisateur n’a pas voulu supprimer. Il en va de même pour les balises associées à l’action <strong>Déplacer vers l’archive</strong>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La période de rétention d’une balise de rétention désactivée s’affiche pour l’utilisateur en tant que <strong>Jamais</strong>. Si un utilisateur balise un élément en pensant ne jamais le supprimer, l’activation ultérieure de la balise provoquera une suppression involontaire des éléments que l’utilisateur n’a pas voulu supprimer. Il en va de même pour les balises associées à l’action <strong>Déplacer vers l’archive</strong>.
 
 
 Retour au début
@@ -435,18 +345,8 @@ Retour au début
 
 Lorsque les utilisateurs sont temporairement absents du bureau et n’ont pas accès à leur messagerie électronique, les paramètres de rétention peuvent être appliqués aux nouveaux messages avant qu’ils ne reviennent au bureau ou n’accèdent à leur messagerie. Selon la stratégie de rétention, les messages peuvent être supprimés ou placés dans l’archive personnelle de l’utilisateur. Vous pouvez empêcher temporairement les stratégies de rétention de traiter une boîte aux lettres sur une période déterminée en activant le blocage de rétention pour la boîte aux lettres. Dans ce cas, vous pouvez également ajouter un commentaire sur le blocage de rétention destiné à l’utilisateur de la boîte aux lettres (ou un autre utilisateur autorisé à accéder à la boîte aux lettres), qui indique notamment à quels moments le blocage doit commencer et s’arrêter. Ce type de commentaire s’affiche dans les clients Outlook pris en charge. Vous pouvez également localiser le commentaire sur le blocage de rétention dans la langue choisie par l’utilisateur.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L’activation du blocage de rétention pour une boîte aux lettres n’a aucune incidence sur le traitement des quotas de stockage de boîte aux lettres. Selon l’utilisation de la boîte aux lettres et les quotas applicables, envisagez une augmentation temporaire du quota de stockage de boîte aux lettres pour les utilisateurs lorsqu’ils sont en congés ou n’ont pas accès à leur messagerie électronique sur une période prolongée. Pour plus d’informations sur les quotas de stockage de boîte aux lettres, voir <a href="configure-storage-quotas-for-a-mailbox-exchange-2013-help.md">Configuration de quotas de stockage pour une boîte aux lettres</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L’activation du blocage de rétention pour une boîte aux lettres n’a aucune incidence sur le traitement des quotas de stockage de boîte aux lettres. Selon l’utilisation de la boîte aux lettres et les quotas applicables, envisagez une augmentation temporaire du quota de stockage de boîte aux lettres pour les utilisateurs lorsqu’ils sont en congés ou n’ont pas accès à leur messagerie électronique sur une période prolongée. Pour plus d’informations sur les quotas de stockage de boîte aux lettres, voir <a href="configure-storage-quotas-for-a-mailbox-exchange-2013-help.md">Configuration de quotas de stockage pour une boîte aux lettres</a>.
 
 
 Pendant une absence prolongée du bureau, les utilisateurs peuvent accumuler un nombre important de messages électroniques. Selon la quantité de messages et la durée de l’absence, les utilisateurs peuvent mettre plusieurs semaines à trier leurs messages, voire davantage. Dans ce cas, prenez en considération le temps supplémentaire nécessaire aux utilisateurs pour rattraper le temps perdu sur ces messages avant de les supprimer du blocage de rétention.

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-01-30_
+_**Dernière rubrique modifiée :** 2013-01-30_
 
 [Configurer les services de partenaires d’aperçu de messagerie vocale pour les utilisateurs](configure-voice-mail-preview-partner-services-for-users-exchange-2013-help.md)
 

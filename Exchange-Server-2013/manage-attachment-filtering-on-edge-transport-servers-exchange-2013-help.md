@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestion du filtrage des pièces jointes sur les serveurs de transport Edge: Exchange 2013 Help'
+title: 'Filtrage des pièces jointes sur les srv de transp. Edge: Exchange 2013 Help'
 TOCTitle: Gestion du filtrage des pièces jointes sur les serveurs de transport Edge
 ms:assetid: 2ec91cc6-6ade-48ee-88bb-66153874393d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997139(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Le filtrage des pièces jointes est effectué par l’agent de filtrage des pièces jointes, uniquement disponible sur les serveurs de transport Edge. Le filtrage des pièces jointes peut permettre d’empêcher les fichiers joints aux messages électroniques d’entrer dans votre organisation. Vous pouvez configurer une ou plusieurs entrées de filtre de pièce jointe pour filtrer les pièces jointes soit par type de contenu, soit par nom de fichier.
 
@@ -33,18 +33,8 @@ Le filtrage des pièces jointes est effectué par l’agent de filtrage des piè
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

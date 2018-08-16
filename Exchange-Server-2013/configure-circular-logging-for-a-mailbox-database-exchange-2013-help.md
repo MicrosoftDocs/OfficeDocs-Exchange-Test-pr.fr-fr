@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer la journalisation circulaire pour une base de données de boîte aux lettres: Exchange 2013 Help'
+title: 'Config. la journal. circulaire pour une BDD de BAL: Exchange 2013 Help'
 TOCTitle: Configurer la journalisation circulaire pour une base de données de boîte aux lettres
 ms:assetid: 29cbd7cd-382b-4e0d-8368-2e49e75df2fc
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn756374(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-06-24_
+_**Dernière rubrique modifiée :** 2014-06-24_
 
 Lorsque vous activez la journalisation circulaire pour une base de données de boîtes aux lettres, le type de journalisation circulaire que vous obtenez dépend de l’utilisation ou non de la méthode de réplication continue pour la réplication de la base de données de boîte aux lettres :
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Project Server 2013_
+_**Sapplique à :** Exchange Server 2013, Project Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 L'indicateur d'intégrité des services web Exchange (EWS) surveille l'intégrité globale du service EWS. L'indicateur d'intégrité EWS est étroitement lié aux indicateurs d'intégrité suivants :
 

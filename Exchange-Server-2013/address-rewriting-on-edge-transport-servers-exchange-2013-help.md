@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 La réécriture d’adresses modifie les adresses de messagerie des expéditeurs et des destinataires dans les messages entrant dans votre organisation ou en sortant par le biais d’un serveur de transport Edge. Deux agents de transport sur le serveur de transport Edge fournissent la fonctionnalité de réécriture : l’agent de réécriture d’adresses pour les messages entrants et l’agent de réécriture d’adresses pour les messages sortants. La principale raison de la réécriture d’adresses sur les messages sortants est de présenter un seul domaine de messagerie cohérent aux destinataires externes. La principale raison de la réécriture d’adresses sur les messages entrants est de délivrer les messages au bon destinataire.
 
 L’*entrée de réécriture d’adresses*, que vous créez, indique les adresses internes (les adresses de messagerie à modifier)​et les adresses externes (les adresses de messagerie finales que vous voulez). Vous pouvez indiquer si les adresses de messagerie doivent être réécrites dans les messages entrants et sortants ou dans les messages sortants uniquement. Vous pouvez créer des entrées d’écriture d’adresses pour un seul utilisateur (remplacer chris@contoso.com par support@contoso.com), pour tous les utilisateurs dans un seul domaine (remplacer contoso.com par fabrikam.com) ou pour les utilisateurs dans plusieurs sous-domaines avec des exceptions (remplacer \*.fabrikam.com par contoso.com, sauf pour legal.fabrikam.com).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Indépendamment de la façon dont vous prévoyez d’utiliser la réécriture d’adresses, vous devez vérifier que les adresses de messagerie obtenues sont uniques dans votre organisation afin de ne pas vous retrouver avec des doublons. En effet, la réécriture d’adresses ne vérifie pas le caractère unique d’une adresse de messagerie réécrite.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Indépendamment de la façon dont vous prévoyez d’utiliser la réécriture d’adresses, vous devez vérifier que les adresses de messagerie obtenues sont uniques dans votre organisation afin de ne pas vous retrouver avec des doublons. En effet, la réécriture d’adresses ne vérifie pas le caractère unique d’une adresse de messagerie réécrite.
 
 
 **Contenu de cette rubrique**

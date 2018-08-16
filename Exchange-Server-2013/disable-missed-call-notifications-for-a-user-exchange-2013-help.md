@@ -1,5 +1,5 @@
 ﻿---
-title: 'Désactiver les notifications d’appels manqués pour un utilisateur: Exchange 2013 Help'
+title: 'Désactiver les notif. d’appels manqués pour un utilisateur: Exchange 2013 Help'
 TOCTitle: Désactiver les notifications d’appels manqués pour un utilisateur
 ms:assetid: e54937d5-3074-454f-b561-e601fecfc6ad
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673570(v=EXCHG.150)
@@ -13,26 +13,16 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-12-09_
+_**Dernière rubrique modifiée :** 2012-12-09_
 
 Vous pouvez activer ou désactiver les notifications d'appels en absence pour une stratégie de boîte aux lettres de messagerie unifiée à l'aide de l'environnement de ligne de commande Exchange Management Shell ou du Centre d'administration Exchange (CAE). Une notification d'appel en absence est un message électronique envoyé à un utilisateur quand celui-ci ne répond pas à un appel entrant et que l'appelant ne laisse pas de message vocal. Ce message électronique diffère de celui qui contient le message vocal laissé pour un utilisateur.
 
 Quand vous désactivez les notifications d'appels en absence sur une stratégie de boîte aux lettres de messagerie unifiée, tous les utilisateurs associés à cette stratégie ne reçoivent plus de message électronique lorsqu'ils ne répondent pas à un appel et que l'appelant ne laisse pas de message vocal. Par défaut, les notifications d'appels en absence sont activées pour chaque stratégie de boîte aux lettres de messagerie unifiée qui est créée. Par ailleurs, une stratégie de boîte aux lettres de messagerie unifiée est créée chaque fois que vous créez un plan de numérotation de messagerie unifiée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lors de l'intégration de la messagerie unifiée et de Microsoft Lync Server, les notifications d'appels en absence ne sont pas disponibles aux utilisateurs qui disposent d'une boîte aux lettres située sur un serveur de boîtes aux lettres Exchange 2007 ou Exchange 2010 lorsqu'un utilisateur se déconnecte avant l'envoi de l'appel vers un serveur de boîtes aux lettres exécutant le service de messagerie unifiée Microsoft Exchange.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lors de l'intégration de la messagerie unifiée et de Microsoft Lync Server, les notifications d'appels en absence ne sont pas disponibles aux utilisateurs qui disposent d'une boîte aux lettres située sur un serveur de boîtes aux lettres Exchange 2007 ou Exchange 2010 lorsqu'un utilisateur se déconnecte avant l'envoi de l'appel vers un serveur de boîtes aux lettres exécutant le service de messagerie unifiée Microsoft Exchange.
 
 
 Pour les autres tâches de gestion relatives aux stratégies de boîte aux lettres de messagerie unifiée, consultez la rubrique [Gérer une stratégie de boîte aux lettres de messagerie unifiée](manage-a-um-mailbox-policy-exchange-2013-help.md).
@@ -49,18 +39,8 @@ Pour les autres tâches de gestion relatives aux stratégies de boîte aux lettr
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

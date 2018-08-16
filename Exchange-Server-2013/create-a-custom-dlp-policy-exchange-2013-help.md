@@ -1,5 +1,5 @@
 ﻿---
-title: "Création d'une stratégie personnalisée de protection contre la perte de données (DLP): Exchange 2013 Help"
+title: 'Créer strat. perso. de protection contre perte de données (DLP): Exchange 2013'
 TOCTitle: Création d'une stratégie personnalisée de protection contre la perte de données (DLP)
 ms:assetid: b3299a39-9663-41e4-b76e-9d2f7879d486
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ150550(v=EXCHG.150)
@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-03-18_
+_**Dernière rubrique modifiée :** 2016-03-18_
 
 Une stratégie personnalisée de protection contre la perte de données (DLP) vous permet d'établir des conditions, règles et actions qui vous aident à répondre aux besoins spécifiques de votre organisation, et qui peuvent ne pas être traitées dans l'un des modèles DLP préexistants.
 
 Les conditions de règle à votre disposition dans une stratégie unique incluent toutes les règles de transport traditionnelles en plus des types d'informations sensibles présentés dans [Éléments recherchés par les types d’informations sensibles dans Exchange](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md). Pour plus d'informations sur les règles de transport, consultez la rubrique [Règles de transport ou de flux de messagerie](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) (Exchange 2013) ou [Règles de flux de messagerie (règles de transport) dans Exchange Online](https://technet.microsoft.com/fr-fr/library/jj919238\(v=exchg.150\)) (Exchange Online).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez activer vos stratégies DLP en mode Test avant de les exécuter dans votre environnement de production. Au cours de ces tests, nous vous recommandons de configurer des boîtes aux lettres d'exemple d'utilisateur et d'envoyer des messages de test qui appellent vos stratégies de test afin de confirmer les résultats. Pour plus d'informations sur les tests, consultez <a href="test-a-mail-flow-rule-exchange-2013-help.md">Tester une règle de flux de messagerie</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Vous devez activer vos stratégies DLP en mode Test avant de les exécuter dans votre environnement de production. Au cours de ces tests, nous vous recommandons de configurer des boîtes aux lettres d'exemple d'utilisateur et d'envoyer des messages de test qui appellent vos stratégies de test afin de confirmer les résultats. Pour plus d'informations sur les tests, consultez <a href="test-a-mail-flow-rule-exchange-2013-help.md">Tester une règle de flux de messagerie</a>.
 
 
 Pour découvrir d'autres tâches de gestion liées à la création d'une stratégie DLP personnalisée, consultez la rubrique [Procédures relatives à la protection contre la perte de données (DLP)](dlp-procedures-exchange-2013-help.md)(Exchange 2013) ou [Procédures relatives à la protection contre la perte de données (DLP)](https://technet.microsoft.com/fr-fr/library/jj938003\(v=exchg.150\)) (Exchange Online).
@@ -47,32 +37,12 @@ Pour découvrir d'autres tâches de gestion liées à la création d'une straté
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>En raison des variances des environnements des clients, les services de support technique Microsoft (CSS) ne peuvent pas participer au développement ou au test de scripts personnalisés d’expressions régulières (« scripts RegEx »). Pour le développement, le test et le débogage de scripts personnalisés RegEx, les clients Office 365 doivent s’appuyer sur des ressources informatiques internes. Par ailleurs, les clients Office 365 peuvent choisir d’utiliser une ressource de conseil externe, telle que les services de conseil Microsoft (MCS). Quelle que soit la ressource de développement de script, les ingénieurs de support technique CSS EXO et EOP ne sont pas disponibles pour aider les clients à résoudre des demandes relatives à des scripts RegEx personnalisés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> En raison des variances des environnements des clients, les services de support technique Microsoft (CSS) ne peuvent pas participer au développement ou au test de scripts personnalisés d’expressions régulières (« scripts RegEx »). Pour le développement, le test et le débogage de scripts personnalisés RegEx, les clients Office 365 doivent s’appuyer sur des ressources informatiques internes. Par ailleurs, les clients Office 365 peuvent choisir d’utiliser une ressource de conseil externe, telle que les services de conseil Microsoft (MCS). Quelle que soit la ressource de développement de script, les ingénieurs de support technique CSS EXO et EOP ne sont pas disponibles pour aider les clients à résoudre des demandes relatives à des scripts RegEx personnalisés.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser le CAE pour créer une stratégie DLP personnalisée sans règles existantes
@@ -81,18 +51,8 @@ Pour découvrir d'autres tâches de gestion liées à la création d'une straté
 
 2.  Cliquez sur la flèche en regard de l'icône **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") et sélectionnez **Nouvelle stratégie personnalisée**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous cliquez sur l'icône <strong>Ajouter</strong><img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="Icône Ajouter" alt="Icône Ajouter" /> au lieu de cliquer sur la flèche, vous créerez une stratégie basée sur un modèle. Pour plus d'informations sur l'utilisation des modèles, consultez la rubrique <a href="how-to-new-dlp-data-loss-prevention-policy-template.md">Création d'une stratégie DLP à partir d'un modèle</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous cliquez sur l'icône <strong>Ajouter</strong><img src="images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif" title="Icône Ajouter" alt="Icône Ajouter" /> au lieu de cliquer sur la flèche, vous créerez une stratégie basée sur un modèle. Pour plus d'informations sur l'utilisation des modèles, consultez la rubrique <a href="how-to-new-dlp-data-loss-prevention-policy-template.md">Création d'une stratégie DLP à partir d'un modèle</a>.
 
 
 3.  Dans la page **Nouvelle stratégie personnalisée**, complétez les champs suivants :

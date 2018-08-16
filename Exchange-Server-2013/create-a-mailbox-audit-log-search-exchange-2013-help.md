@@ -1,5 +1,5 @@
 ﻿---
-title: 'Créer une recherche dans le journal d’audit de la boîte aux lettres: Exchange 2013 Help'
+title: 'Créer une recherche dans le journal d’audit de la BAL: Exchange 2013 Help'
 TOCTitle: Créer une recherche dans le journal d’audit de la boîte aux lettres
 ms:assetid: 48ba22cf-b1f2-4dbc-98fc-fed22d97db14
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff461929(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-11_
+_**Dernière rubrique modifiée :** 2012-10-11_
 
 Vous pouvez créer une recherche asynchrone des journaux d’audit d’une ou plusieurs boîtes aux lettres et demander l’envoi des résultats de la recherche par courrier électronique, sous forme de fichier XML, aux adresses désignées.
 
@@ -35,18 +35,8 @@ Pour les autres tâches de gestion relatives à l’enregistrement d’audit des
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -65,18 +55,8 @@ Pour les autres tâches de gestion relatives à l’enregistrement d’audit des
     
       - **Rechercher dans ces boîtes aux lettres ou laisser vide pour rechercher toutes les boîtes aux lettres auxquelles des non-propriétaires ont accédé**
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Selon le nombre de boîtes aux lettres dans votre organisation et la quantité de données de journal d’audit de boîte aux lettres dans chacune, la recherche dans toutes les boîtes aux lettres peut prendre beaucoup de temps.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!CAUTION]
+        > Selon le nombre de boîtes aux lettres dans votre organisation et la quantité de données de journal d’audit de boîte aux lettres dans chacune, la recherche dans toutes les boîtes aux lettres peut prendre beaucoup de temps.
     
       - **Rechercher les accès par**
         

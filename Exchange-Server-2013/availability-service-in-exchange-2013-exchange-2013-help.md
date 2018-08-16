@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le service de disponibilité Exchange 2013 fournit des informations de disponibilité aux clients Microsoft Outlook et Outlook Web App. Le service de disponibilité améliore l'expérience des professionnels de l'informatique en matière de planification des réunions et du calendrier en apportant des informations de disponibilité sécurisées, cohérentes et à jour.
 
@@ -67,18 +67,8 @@ L'utilisation de la fonctionnalité d'équilibrage de charge réseau sur les ser
 
 L'URL interne est utilisée à partir de l'intranet et l'URL externe est utilisée sur Internet. Si vous voulez utiliser la même URL pour le trafic interne et externe, assurez-vous que le DNS est configuré de la manière adéquate pour router le trafic interne directement vers l'URL interne. Assurez-vous également que l'URL est accessible de manière interne et externe. Pour que les services de découverte automatique et de disponibilité fonctionnent, le DNS doit être configuré pour que mail.\<*nom de domaine*\>.com et autodiscover.mail.\<*nom de domaine*\>.com pointent vers l'IP virtuelle (VIP) de votre solution d'équilibrage de charge, où \<*nom de domaine*\> correspond au nom de votre domaine.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour plus d'informations, consultez les rubriques <a href="https://go.microsoft.com/fwlink/?linkid=45959">Références techniques sur l'équilibrage de la charge réseau</a> et <a href="https://go.microsoft.com/fwlink/?linkid=49315">Clusters d'équilibrage de la charge réseau</a>. Vous pouvez également rechercher des sites web de logiciels d'équilibrage de charge tiers.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour plus d'informations, consultez les rubriques <a href="https://go.microsoft.com/fwlink/?linkid=45959">Références techniques sur l'équilibrage de la charge réseau</a> et <a href="https://go.microsoft.com/fwlink/?linkid=49315">Clusters d'équilibrage de la charge réseau</a>. Vous pouvez également rechercher des sites web de logiciels d'équilibrage de charge tiers.
 
 
 ## Méthodes employées pour extraire les informations de disponibilité

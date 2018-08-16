@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utilisation de la migration par lot pour migrer des dossiers publics vers Office 365 et Exchange Online: Exchange 2013 Help'
+title: 'Migration par lot de dossiers publics vers Office 365 et Exchange Online'
 TOCTitle: Utilisation de la migration par lot pour migrer des dossiers publics vers Office 365 et Exchange Online
 ms:assetid: e8ab9309-7d12-4f02-bfc4-14e61a373958
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn874017(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-03-26_
+_**Dernière rubrique modifiée :** 2018-03-26_
 
 **Résumé** : Utilisez ces procédures pour déplacer vos dossiers publics Exchange 2007 et Exchange 2010 vers Office 365.
 
@@ -23,18 +23,8 @@ Cette rubrique décrit la migration intermédiaire ou à basculement de vos doss
 
 Cette rubrique fait référence aux serveurs Exchange 2010 SP3 RU8 et Exchange 2007 SP3 RU15 en tant que *serveurs Exchange hérités*. En outre, les étapes de cette rubrique s’appliquent à la fois à Exchange Online et à Office 365. Les termes peuvent être utilisés de manière interchangeable dans cette rubrique.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La méthode de migration par lots décrite dans cet article est la seule méthode prise en charge pour la migration des dossiers publics hérités vers Office 365 et Exchange Online. L’ancienne méthode de migration de dossiers publics en série est déconseillée et n’est plus prise en charge par Microsoft.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La méthode de migration par lots décrite dans cet article est la seule méthode prise en charge pour la migration des dossiers publics hérités vers Office 365 et Exchange Online. L’ancienne méthode de migration de dossiers publics en série est déconseillée et n’est plus prise en charge par Microsoft.
 
 
 Nous vous recommandons de ne pas utiliser la fonctionnalité d’exportation PST d’Outlook pour migrer des dossiers publics vers Office 365 ou Exchange Online. La croissance de la boîte aux lettres de dossiers publics Office 365 et Exchange Online est gérée avec une fonctionnalité de fractionnement automatique qui divise la boîte aux lettres de dossiers publics quand celle-ci dépasse les quotas de taille. La fonctionnalité de fractionnement automatique ne peut pas gérer une croissance soudaine des boîtes aux lettres de dossiers publics lorsque vous utilisez l’exportation PST pour migrer vos dossiers publics. De plus, le déplacement des données à partir de la boîte aux lettres principale avec le fractionnement automatique pourrait prendre jusqu’à deux semaines. Nous vous recommandons d’utiliser les instructions basées sur la cmdlet et contenues dans ce document pour migrer des dossiers publics vers Office 365 et Exchange Online. Toutefois, si vous choisissez de migrer les dossiers publics à l’aide d’une exportation PST, consultez la section Migrer des dossiers publics vers Office 365 avec l’exportation PST d’Outlook plus loin dans cette rubrique.
@@ -85,7 +75,7 @@ Vous ne pouvez pas migrer les dossiers publics directement à partir de Exchange
 
   - Dans Exchange 2007, le rôle Administrateur d’organisation Exchange ou Administrateur d’Exchange Server doit vous être attribué. Le rôle Administrateur de dossiers publics et le groupe Administrateurs local doivent également vous être attribués pour le serveur cible. Pour plus d’informations, consultez la rubrique [Procédure d’ajout d’un utilisateur ou d’un groupe à un rôle d’administrateur](https://go.microsoft.com/fwlink/p/?linkid=81779).
 
-  - Sur le serveur Exchange 2007, effectuez une mise à niveau vers [Windows PowerShell 2.0 et WinRM 2.0 pour Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930).
+  - Sur le serveur Exchange 2007, effectuez une mise à niveau vers [Windows PowerShell 2.0 et WinRM 2.0 pour Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930).
 
   - Avant la migration, si un dossier public au sein de votre organisation a une taille supérieure à 2 Go, nous vous recommandons soit d’en supprimer le contenu, soit de le fractionner en plusieurs dossiers publics. Si aucune de ces options n’est envisageable, nous vous recommandons de ne pas déplacer vos dossiers publics vers Office 365 et Exchange Online.
 
@@ -101,18 +91,8 @@ Vous ne pouvez pas migrer les dossiers publics directement à partir de Exchange
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Comment procéder ?
@@ -173,18 +153,8 @@ Avant de commencer la migration, exécutez les étapes préalables suivantes.
         
             Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Après avoir redéfini ces propriétés, attendez qu’Exchange détecte les nouveaux paramètres. Cela peut prendre jusqu’à deux heures.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Après avoir redéfini ces propriétés, attendez qu’Exchange détecte les nouveaux paramètres. Cela peut prendre jusqu’à deux heures.
 
 
 4.  À des fins de vérification à la fin de la migration, nous vous recommandons d’exécuter d’abord les commandes Environnement de ligne de commande Exchange Management Shell suivantes sur le serveur Exchange hérité pour prendre des instantanés de votre déploiement de dossiers publics actuel.
@@ -213,18 +183,8 @@ Avant de commencer la migration, exécutez les étapes préalables suivantes.
     
     4.  Vérifiez que l’option **Dossiers publics de messagerie Exchange** n’est pas sélectionnée. Si elle n’est pas sélectionnée, vous pouvez continuer jusqu’à la section suivante, *Étapes préalables dans Office 365 ou Exchange Online*. Si elle est sélectionnée, décochez la case, puis cliquez sur **Suivant**.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Si <strong>Dossiers publics de messagerie Exchange</strong> n’apparaît pas comme une option sur l’écran <strong>Fonctionnalités facultatives</strong>, vous pouvez quitter Microsoft Azure Active Directory Connect, puis passer à la section suivante <em>Étapes préalables dans Office 365 ou Exchange Online</em>.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Si <strong>Dossiers publics de messagerie Exchange</strong> n’apparaît pas comme une option sur l’écran <strong>Fonctionnalités facultatives</strong>, vous pouvez quitter Microsoft Azure Active Directory Connect, puis passer à la section suivante <em>Étapes préalables dans Office 365 ou Exchange Online</em>.
     
     5.  Une fois que vous avez décoché l’option **Dossiers publics de messagerie Exchange**, cliquez sur **Suivant** jusqu’à ce que vous accédiez à l’écran **Prêt pour la configuration**, puis cliquez sur **Configurer**.
 
@@ -252,18 +212,8 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
     
     Une demande de migration existante peut être de deux types : migration par lots ou en série. Les commandes permettant de détecter les demandes pour chaque type et de supprimer des demandes de chaque type sont les suivantes :
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Avant de supprimer une demande de migration, il est important de comprendre la raison de son existence. L’exécution des commandes suivantes déterminera le moment de la création de la demande précédente et vous permettra de diagnostiquer les problèmes qui ont pu se produire. Pour déterminer la raison du changement, il se peut que vous deviez communiquer avec d’autres administrateurs de votre organisation.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Avant de supprimer une demande de migration, il est important de comprendre la raison de son existence. L’exécution des commandes suivantes déterminera le moment de la création de la demande précédente et vous permettra de diagnostiquer les problèmes qui ont pu se produire. Pour déterminer la raison du changement, il se peut que vous deviez communiquer avec d’autres administrateurs de votre organisation.
     
     L’exemple suivant permet de détecter les demandes de migration en série existantes.
     
@@ -283,18 +233,8 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
 
 2.  Assurez-vous qu’il n’existe aucun dossier public ni aucune boîte aux lettres de dossiers publics dans Office 365.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous voyez des dossiers publics dans Office 365 ou Exchange Online, il est important de déterminer la raison de leur présence et la personne qui, au sein de votre organisation, a commencé à créer une hiérarchie de dossiers publics avant de supprimer les dossiers publics et boîtes aux lettres de dossiers publics.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous voyez des dossiers publics dans Office 365 ou Exchange Online, il est important de déterminer la raison de leur présence et la personne qui, au sein de votre organisation, a commencé à créer une hiérarchie de dossiers publics avant de supprimer les dossiers publics et boîtes aux lettres de dossiers publics.
     
     1.  Dans Office 365 ou Exchange Online PowerShell, pour voir s’il existe des boîtes aux lettres de dossiers publics, exécutez la commande suivante.
         
@@ -355,18 +295,8 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
     
         .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le fichier de mappage du dossier public à la boîte aux lettres ne doit pas dépasser 1 000 lignes. Si ce fichier dépasse 1 000 lignes, votre structure de dossiers publics doit être simplifiée. Il est déconseillé d’utiliser un fichier de plus de 1 000 lignes sous peine de provoquer des erreurs de migration.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le fichier de mappage du dossier public à la boîte aux lettres ne doit pas dépasser 1 000 lignes. Si ce fichier dépasse 1 000 lignes, votre structure de dossiers publics doit être simplifiée. Il est déconseillé d’utiliser un fichier de plus de 1 000 lignes sous peine de provoquer des erreurs de migration.
     
       - Avant d’exécuter le script, utilisez la cmdlet suivante pour vérifier les limites du dossier public actuel de votre locataire Exchange Online. Ensuite, notez les valeurs de quota à jour pour les dossiers publics. `Get-OrganizationConfig | fl *quota*`
         
@@ -382,35 +312,15 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
         
           - Avant de lancer le lot de migration, fractionnez le dossier public en plusieurs dossiers publics d’une taille de 2 Go maximum chacun.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Si la taille d’un dossier public est supérieure à 30 Go et si la suppression de contenu ou le fractionnement en plusieurs dossiers publics est impossible, nous vous recommandons de ne pas déplacer vos dossiers publics vers Exchange Online.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Si la taille d’un dossier public est supérieure à 30 Go et si la suppression de contenu ou le fractionnement en plusieurs dossiers publics est impossible, nous vous recommandons de ne pas déplacer vos dossiers publics vers Exchange Online.
     
       - *Folder to size map path* est le chemin d’accès au fichier .csv que vous avez créé lors de l’exécution du script `Export-PublicFolderStatistics.ps1`.
     
       - *Folder to mailbox map path* est égal au nom de fichier et au chemin d’accès au fichier .csv de mappage du dossier à la boîte aux lettres que vous créez lors de cette étape. Si vous spécifiez uniquement le nom du fichier, ce dernier est généré dans le répertoire PowerShell actuel sur l’ordinateur local.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une fois que les scripts sont exécutés et les fichiers .csv générés, les nouveaux dossiers publics ou les mises à jour des dossiers publics existants ne seront pas collectés.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Une fois que les scripts sont exécutés et les fichiers .csv générés, les nouveaux dossiers publics ou les mises à jour des dossiers publics existants ne seront pas collectés.
 
 
 ## Étape 4 : Créez les boîtes aux lettres de dossiers publics dans Exchange Online
@@ -429,18 +339,8 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
     
     `Credential` est votre nom d’utilisateur et votre mot de passe Office 365. `CsvSummaryFile` est le chemin d’accès de l’emplacement où vous voulez journaliser les opérations et les erreurs de synchronisation au format .CSV.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Nous vous recommandons de commencer par simuler les actions du script avant de l’exécuter réellement. Pour ce faire, exécutez le script avec un paramètre <code>-WhatIf</code>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Nous vous recommandons de commencer par simuler les actions du script avant de l’exécuter réellement. Pour ce faire, exécutez le script avec un paramètre <code>-WhatIf</code>.
 
 
 2.  Sur le serveur Exchange hérité, recueillez les informations suivantes, nécessaires pour l’exécution de la demande de migration :
@@ -477,18 +377,8 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
 
 4.  Enfin, dans Exchange Online PowerShell, exécutez les commandes suivantes pour créer la demande de migration.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>La méthode d’authentification dans l’exemple de Environnement de ligne de commande Exchange Management Shell suivant doit correspondre à vos paramètres Outlook Anywhere, sinon la commande échouera.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > La méthode d’authentification dans l’exemple de Environnement de ligne de commande Exchange Management Shell suivant doit correspondre à vos paramètres Outlook Anywhere, sinon la commande échouera.
     
         $PfEndpoint = New-MigrationEndpoint -PublicFolder -Name PublicFolderEndpoint -RPCProxyServer $Source_OutlookAnywhereExternalHostName -Credentials $Source_Credential -SourceMailboxLegacyDN $Source_RemoteMailboxLegacyDN -PublicFolderDatabaseServerLegacyDN $Source_RemotePublicFolderServerLegacyDN -Authentication Basic
         
@@ -608,18 +498,8 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
 
 Une fois la migration terminée, après avoir vérifié que vos dossiers publics Exchange Online fonctionnent comme prévu, vous devez supprimer les bases de données de dossiers publics sur les serveurs Exchange hérités.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans la mesure où toutes vos boîtes aux lettres ont été migrées vers Office 365 avant la migration du dossier public, nous vous recommandons vivement d’acheminer le trafic via Office 365 (flux de messagerie décentralisé) à la place du flux de messagerie centralisé via votre environnement local. Si vous choisissez de conserver le flux de messagerie centralisé, cela peut entraîner des problèmes de remise à vos dossiers publics, étant donné que vous avez supprimé les bases de données de boîtes aux lettres de dossier public de votre organisation locale.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans la mesure où toutes vos boîtes aux lettres ont été migrées vers Office 365 avant la migration du dossier public, nous vous recommandons vivement d’acheminer le trafic via Office 365 (flux de messagerie décentralisé) à la place du flux de messagerie centralisé via votre environnement local. Si vous choisissez de conserver le flux de messagerie centralisé, cela peut entraîner des problèmes de remise à vos dossiers publics, étant donné que vous avez supprimé les bases de données de boîtes aux lettres de dossier public de votre organisation locale.
 
 
   - Pour plus d’informations sur la suppression des bases de données de dossiers publics des serveurs Exchange 2007, consultez la rubrique [Suppression de bases de données de dossiers publics](https://go.microsoft.com/fwlink/?linkid=123678).
@@ -630,18 +510,8 @@ Une fois la migration terminée, après avoir vérifié que vos dossiers publics
 
 Si vous rencontrez des problèmes en relation avec la migration et devez réactiver vos dossiers publics Exchange hérités, procédez comme suit :
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous annulez votre migration en restaurant les serveurs Exchange hérités, vous perdez tous les messages électroniques envoyés aux dossier publics à extension messagerie ainsi que tout contenu publié dans les dossiers publics après la migration. Pour sauvegarder ce contenu, exportez le contenu des dossiers publics dans un fichier .pst, puis importez-le dans les dossiers publics hérités une fois la restauration terminée.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Si vous annulez votre migration en restaurant les serveurs Exchange hérités, vous perdez tous les messages électroniques envoyés aux dossier publics à extension messagerie ainsi que tout contenu publié dans les dossiers publics après la migration. Pour sauvegarder ce contenu, exportez le contenu des dossiers publics dans un fichier .pst, puis importez-le dans les dossiers publics hérités une fois la restauration terminée.
 
 
 1.  Sur le serveur Exchange hérité, exécutez la commande suivante pour déverrouiller les dossiers publics Exchange hérités. Ce processus peut prendre plusieurs heures.
@@ -684,27 +554,12 @@ Si vous voulez tout de même migrer vos dossiers publics avec les fichiers PST, 
 
 6.  Définissez les autorisations sur les dossiers publics avec le CAE. Pour plus d’informations, suivez [Step 3: Assign permissions to the public folder](set-up-public-folders-in-a-new-organization-exchange-2013-help.md) dans la rubrique [Configuration des dossiers publics dans une nouvelle organisation](set-up-public-folders-in-a-new-organization-exchange-2013-help.md).
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous avez déjà commencé une migration PST et que vous avez rencontré un problème lorsque la boîte aux lettres principale est pleine, vous avez deux options pour la récupération de la migration PST :
-<ol>
-<li><p>Attendez que la fonctionnalité de fractionnement automatique ait déplacé les données de la boîte aux lettres principale. Cela peut prendre jusqu’à deux semaines. Toutefois, tous les dossiers publics d’une boîte aux lettres de dossiers publics complètement pleine ne seront pas en mesure de recevoir de nouveaux contenus tant que le fractionnement automatique n’est pas terminé.</p></li>
-<li><p><a href="create-a-public-folder-mailbox-exchange-2013-help.md">Création d’une boîte aux lettres de dossiers publics</a> puis utilisez la cmdlet <strong>New-PublicFolder</strong> avec le paramètre <em>Mailbox</em> pour créer les dossiers publics qui restent dans la boîte aux lettres de dossiers publics secondaire. Cet exemple crée un dossier public nommé PF201 dans la boîte aux lettres de dossiers publics secondaire.</p>
-<pre><code>New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx</code></pre></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
-
+> [!WARNING]
+> Si vous avez déjà commencé une migration PST et que vous avez rencontré un problème lorsque la boîte aux lettres principale est pleine, vous avez deux options pour la récupération de la migration PST :
+> <ol>
+> <li><p>Attendez que la fonctionnalité de fractionnement automatique ait déplacé les données de la boîte aux lettres principale. Cela peut prendre jusqu’à deux semaines. Toutefois, tous les dossiers publics d’une boîte aux lettres de dossiers publics complètement pleine ne seront pas en mesure de recevoir de nouveaux contenus tant que le fractionnement automatique n’est pas terminé.</p></li>
+> <li><p><a href="create-a-public-folder-mailbox-exchange-2013-help.md">Création d’une boîte aux lettres de dossiers publics</a> puis utilisez la cmdlet <strong>New-PublicFolder</strong> avec le paramètre <em>Mailbox</em> pour créer les dossiers publics qui restent dans la boîte aux lettres de dossiers publics secondaire. Cet exemple crée un dossier public nommé PF201 dans la boîte aux lettres de dossiers publics secondaire.</p>
+> <pre><code>New-PublicFolder -Name PF201 -Mailbox SecondaryPFMbx</code></pre></li></ol>
 
 ## Vous débutez avec Office 365 ?
 

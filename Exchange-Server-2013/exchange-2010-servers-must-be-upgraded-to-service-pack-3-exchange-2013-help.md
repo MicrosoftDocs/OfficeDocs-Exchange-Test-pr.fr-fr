@@ -1,5 +1,5 @@
 ﻿---
-title: 'Les serveurs Exchange 2010 doivent être mis à niveau vers le Service Pack 3: Exchange 2013 Help'
+title: 'Màn des srv Exchange 2010 vers Service Pack 3 nécessaire: Exchange 2013 Help'
 TOCTitle: Les serveurs Exchange 2010 doivent être mis à niveau vers le Service Pack 3
 ms:assetid: b4f74863-1567-4d6d-ae21-b0af495a1d82
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.e15e14coexistenceminversionrequirement(v=EXCHG.150)
@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2014-11-05_
+_**Dernière rubrique modifiée :** 2014-11-05_
 
 Le programme d'installation de Microsoft Exchange Server 2013 ne peut pas continuer car il a détecté un ou plusieurs serveurs Microsoft Exchange Server 2010 qui n'ont pas été mis à niveau à Service Pack 3 (SP3) pour Exchange Server 2010. Avant de pouvoir installer Exchange 2013, tous les serveurs Exchange 2010 de votre organisation doivent être mis à niveau à Exchange 2010 SP3. Cette exigence inclut les serveurs de transport Edge Exchange 2010. Pour plus d'informations, consultez la rubrique [Mise à niveau d'Exchange 2010 vers Exchange 2013](upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Après avoir mis à niveau vos serveurs de transport Edge Exchange 2010 vers Exchange 2010 SP3, vous devez recréer l'abonnement Edge entre votre organisation Exchange et chaque serveur de transport Edge pour mettre à jour leur version de serveur dans Active Directory. Pour plus d'informations sur la recréation des abonnements Edge dans Exchange 2010, consultez la page <a href="https://go.microsoft.com/fwlink/p/?linkid=269724">Gestion des abonnements Edge</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Après avoir mis à niveau vos serveurs de transport Edge Exchange 2010 vers Exchange 2010 SP3, vous devez recréer l'abonnement Edge entre votre organisation Exchange et chaque serveur de transport Edge pour mettre à jour leur version de serveur dans Active Directory. Pour plus d'informations sur la recréation des abonnements Edge dans Exchange 2010, consultez la page <a href="https://go.microsoft.com/fwlink/p/?linkid=269724">Gestion des abonnements Edge</a>.
 
 
 Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542), et [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351).

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-12_
+_**Dernière rubrique modifiée :** 2012-10-12_
 
 Les connecteurs sont utilisés pour contrôler le flux de messagerie entrant et sortant dans Microsoft Exchange Server 2013. Grâce aux connecteurs, vous pouvez router et recevoir des messages électroniques vers et depuis des destinataires situés en dehors de votre organisation, un partenaire via un canal sécurisé ou un dispositif de traitement des messages.
 

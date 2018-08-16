@@ -1,5 +1,5 @@
 ﻿---
-title: 'Client Access role not detected in local site_ClientAccessRoleNotPresentInSite: Exchange 2013 Help'
+title: 'Rôle d’accès client non détecté dans le site local'
 TOCTitle: Client Access role not detected in local site_ClientAccessRoleNotPresentInSite
 ms:assetid: b5bfc6af-9c55-46c0-a293-6078b64e87dd
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.clientaccessrolenotpresentinsite(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2012-06-05_
+_**Dernière rubrique modifiée :** 2012-06-05_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 

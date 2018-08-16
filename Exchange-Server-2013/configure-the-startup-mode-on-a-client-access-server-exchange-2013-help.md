@@ -1,5 +1,5 @@
 ﻿---
-title: "Configurer le mode de démarrage sur un serveur d'accès au Client: Exchange 2013 Help"
+title: 'Config. le mode de démarrage sur un srv d’accès au Client: Exchange 2013 Help'
 TOCTitle: Configurer le mode de démarrage sur un serveur d'accès au Client
 ms:assetid: 71cc9061-9e3c-4b4a-8dbe-f590ca5bcee8
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673533(v=EXCHG.150)
@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-15_
+_**Dernière rubrique modifiée :** 2013-02-15_
 
 Vous pouvez spécifier le mode de démarrage du service routeur des appels de messagerie unifiée Microsoft Exchange sur un serveur d'accès au client. Par défaut, le serveur d'accès au client démarre en mode TCP, mais si vous utilisez la sécurité TLS (Transport Layer Security) pour chiffrer le trafic VoIP (Voice over IP), vous devez configurer le serveur d'accès au client pour utiliser le mode TLS ou Double. Nous vous recommandons de configurer les serveurs d'accès au client avec le mode de démarrage Double. En effet, tous les serveurs d'accès au client et de boîtes aux lettres peuvent répondre aux appels entrants pour tous les plans de numérotation de messagerie unifiée, et les paramètres de sécurité de ces plans de numérotation peuvent être différents. Si vous modifiez le mode de démarrage, vous devez redémarrer le service routeur des appels de messagerie unifiée Microsoft Exchange pour que la modification soit prise en compte.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, les serveurs d'accès au client sont disponibles pour répondre aux appels entrants. Vous n'avez pas à ajouter de serveur d'accès au client à un plan de numérotation de messagerie unifiée pour traiter des appels de messagerie unifiée, sauf si vous intégrez une messagerie unifiée à Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, les serveurs d'accès au client sont disponibles pour répondre aux appels entrants. Vous n'avez pas à ajouter de serveur d'accès au client à un plan de numérotation de messagerie unifiée pour traiter des appels de messagerie unifiée, sauf si vous intégrez une messagerie unifiée à Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server.
 
 
 Pour découvrir d'autres tâches de gestion relatives aux serveurs de messagerie unifiée et d'accès au client, consultez les rubriques [Procédures de services de messagerie unifiée](um-services-procedures-exchange-2013-help.md).
@@ -45,18 +35,8 @@ Pour découvrir d'autres tâches de gestion relatives aux serveurs de messagerie
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

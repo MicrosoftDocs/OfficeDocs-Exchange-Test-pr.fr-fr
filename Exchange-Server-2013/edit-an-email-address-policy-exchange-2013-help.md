@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-12-10_
+_**Dernière rubrique modifiée :** 2012-12-10_
 
 Les stratégies d'adresse de messagerie génèrent des adresses de messagerie principales et secondaires pour vos destinataires (utilisateurs, contacts et groupes), afin qu'ils puissent recevoir et envoyer des messages.
 
@@ -35,18 +35,8 @@ Pour d'autres tâches de gestion relatives aux stratégies d'adresse de messager
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -75,18 +65,8 @@ Cet exemple modifie la stratégie d'adresse de messagerie des bureaux de la rég
 
     Set-EmailAddressPolicy -Identity "South East Offices" -ConditionalStateorProvince "Georgia","Alabama","Louisiana","Texas"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Bien que la stratégie d'adresse de messagerie soit déjà appliquée aux destinataires basés en Géorgie, en Alabama et en Louisiane, vous devez les inclure au paramètre, car celui-ci remplace les valeurs. En effet, il n'ajoute pas de valeurs à celles existantes.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Bien que la stratégie d'adresse de messagerie soit déjà appliquée aux destinataires basés en Géorgie, en Alabama et en Louisiane, vous devez les inclure au paramètre, car celui-ci remplace les valeurs. En effet, il n'ajoute pas de valeurs à celles existantes.
 
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-EmailAddressPolicy](https://technet.microsoft.com/fr-fr/library/bb124517\(v=exchg.150\)).

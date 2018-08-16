@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-07-31_
+_**Dernière rubrique modifiée :** 2015-07-31_
 
 Avec les composants WebPart MicrosoftOfficeOutlook Web App, vous pouvez spécifier la boîte aux lettres à ouvrir, le dossier à ouvrir dans la boîte aux lettres et l’affichage du contenu à utiliser.
 
 Les composants WebPart Outlook Web App vous permettent d’accéder au contenu Outlook Web App directement à partir d’une URL. L’URL peut être entrée dans un navigateur web ou intégrée dans une application. En général, les composants WebPart ne sont pas créés manuellement. Ils sont créés par programmation à partir de sélections effectuées dans une interface utilisateur ou directement intégrés dans une application, telle qu’une page SharePoint Server. Le code de l’interface utilisateur crée ensuite l’URL. Les composants WebPart Outlook Web App vous permettent notamment d’afficher la boîte de réception ou le calendrier d’un utilisateur sur une page SharePoint.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour utiliser les composants WebPart Outlook Web App, la boîte aux lettres de l’utilisateur et la boîte aux lettres ouverte via un composant WebPart doivent être installées dans une même forêt Active Directory.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour utiliser les composants WebPart Outlook Web App, la boîte aux lettres de l’utilisateur et la boîte aux lettres ouverte via un composant WebPart doivent être installées dans une même forêt Active Directory.
 
 
 ## Autorisations pour l’utilisation des composants WebPart Outlook Web Access
@@ -123,18 +113,9 @@ Le tableau suivant répertorie les paramètres d’un composant WebPart et donn
 <li><p>Calendrier   Daily</p></li>
 <li><p>Messages   Messages</p></li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les chaînes des affichages par défaut sont automatiquement codées dans l’URL.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]
+> Les chaînes des affichages par défaut sont automatiquement codées dans l’URL.
 
 <p>Le tri par défaut d’un affichage correspond à la manière dont le dossier doit être trié s’il a été ouvert dans le client Outlook Web App.</p>
 <p>Les chaînes identifiant les affichages ne sont pas localisées et ne sont pas sensibles à la casse.</p></td>
@@ -185,13 +166,13 @@ Les composants WebPart Outlook Web App peuvent également être entrés manuelle
 
 Les exemples ci-dessous montrent comment accéder directement aux affichages courants d’Outlook Web App :
 
-  - **Boîte de réception :** https://*\<server name\>*/owa/?cmd=contents\&module=inbox
+  - **Boîte de réception :**  https://*\<server name\>*/owa/?cmd=contents\&module=inbox
 
-  - **Calendrier (aujourd’hui) :**https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&exsvurl=1
+  - **Calendrier (aujourd’hui) :** https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&exsvurl=1
 
-  - **Calendrier (semaine) :** https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=weekly\&exsvurl=1
+  - **Calendrier (semaine) :**  https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=weekly\&exsvurl=1
 
-  - **Calendrier (mois) :** https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=monthly\&exsvurl=1
+  - **Calendrier (mois) :**  https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=monthly\&exsvurl=1
 
 ## Pour plus d'informations
 

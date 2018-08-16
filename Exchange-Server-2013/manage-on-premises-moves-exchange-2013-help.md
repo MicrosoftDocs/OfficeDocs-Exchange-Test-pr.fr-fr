@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2013-02-25_
+_**Dernière rubrique modifiée :** 2013-02-25_
 
 Une demande de déplacement désigne le processus de déplacement d'une boîte aux lettres d'une base de données de boîtes aux lettres à une autre. Une demande de déplacement local est un déplacement de boîte aux lettres qui se produit dans une seule forêt. Dans Microsoft Exchange Server 2013, les boîtes aux lettres et les boîtes aux lettres d'archivage personnel peuvent se trouver sur des bases de données distinctes. À l'aide de la fonctionnalité de demande de déplacement, vous pouvez déplacer la boîte aux lettres principale et l'archive qui y est associée sur la même base de données ou sur des bases de données séparées. Les procédures décrites dans cette rubrique vous aideront à effectuer des déplacements de boîtes aux lettres locales.
 
@@ -39,18 +39,8 @@ Pour plus d'informations sur le déplacement de boîtes aux lettres, consultez l
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -105,27 +95,19 @@ Connectez-vous au CAE et effectuez les opérations suivantes :
 
 3.  Dans la page **Déplacer la configuration**, spécifiez le nom du nouveau lot. Sélectionnez les options choisies pour la boîte aux lettres d'archive et l'emplacement de la base de données de la boîte aux lettres, puis cliquez sur **Nouveau**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Veillez à ne pas définir la limite d'éléments incorrects sur une valeur supérieure à 50, car le déplacement risquerait d'échouer. Si vous définissez la limite d'éléments incorrects sur une valeur supérieure à 50, vous devez utiliser l'environnement de ligne de commande Exchange Management Shell et définir le paramètre –<em>AcceptLargeDataLoss</em> sur True.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Veillez à ne pas définir la limite d'éléments incorrects sur une valeur supérieure à 50, car le déplacement risquerait d'échouer. Si vous définissez la limite d'éléments incorrects sur une valeur supérieure à 50, vous devez utiliser l'environnement de ligne de commande Exchange Management Shell et définir le paramètre –<em>AcceptLargeDataLoss</em> sur True.
 
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour créer une demande de déplacement par lot
 
 Cet exemple crée un lot de migration pour un déplacement local, dans lequel les boîtes aux lettres du fichier .csv spécifié sont déplacées vers une base de données de boîtes aux lettres différente. Ce fichier .csv affiche une seule colonne qui contient l'adresse de messagerie de chaque boîte aux lettres à déplacer. L'en-tête de cette colonne doit être nommé **EmailAddress**. Dans cet exemple, le lot de migration doit être démarré manuellement via la cmdlet **Start-MigrationBatch** ou dans le CAE. Sinon, vous pouvez utiliser le paramètre *AutoStart* pour démarrer le lot de migration automatiquement.
-
+```
     New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"
-
+```
+```
     Start-MigrationBatch -Identity LocalMove1
+```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [New-MigrationBatch](https://technet.microsoft.com/fr-fr/library/jj219166\(v=exchg.150\)) et [Start-MigrationBatch](https://technet.microsoft.com/fr-fr/library/jj219165\(v=exchg.150\)).
 
@@ -178,12 +160,13 @@ Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](ht
 ## Créer un déplacement inter-forêts à l'aide d'un fichier de lot .csv
 
 Cet exemple permet de configurer le point de terminaison de migration, puis de créer un déplacement par lot inter-forêts de la forêt source à la forêt cible, à l'aide d'un fichier .csv.
-
+```
     New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith) 
-    
+```   
+```
     $csvData=[System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\batch.csv")
     New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name FabrikamMerger -SourceEndpoint Fabrikam -TargetDeliveryDomain "mail.contoso.com"
-
+```
 Pour plus d'informations sur la préparation de votre forêt pour des déplacements inter-forêts, consultez les rubriques suivantes :
 
   - [Préparer les boîtes aux lettres pour les demandes de déplacement inter-forêts](prepare-mailboxes-for-cross-forest-move-requests-exchange-2013-help.md)

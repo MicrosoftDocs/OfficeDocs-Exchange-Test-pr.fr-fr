@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-29_
+_**Dernière rubrique modifiée :** 2012-11-29_
 
 Connexion d’une boîte aux lettres supprimée (récupérable) à un compte d’utilisateur Active Directory à l’aide de l’environnement de ligne de commande Exchange Management Shell. Une boîte aux lettres est *supprimée (récupérable)* dans la base de données de boîtes aux lettres source lorsqu’elle est déplacée vers une autre base de données de boîtes aux lettres. Exchange ne supprime pas entièrement la boîte aux lettres de la base de données de boîtes aux lettres source une fois le déplacement terminé. Au lieu de cela, la boîte aux lettres qui se trouve dans la base de données de boîtes aux lettres source bascule vers l’état supprimé (récupérable). Il vous permet de restaurer la boîte aux lettres source si des erreurs provoquant une défaillance ou un endommagement de la boîte aux lettres sur la base de données de destination se produisent pendant le déplacement. Si cela se produit, vous pouvez restaurer la boîte aux lettres source et réessayer l’opération de déplacement.
 

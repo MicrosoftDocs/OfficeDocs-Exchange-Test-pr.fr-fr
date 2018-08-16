@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestion de l’accès des utilisateurs aux applications pour Outlook: Exchange 2013 Help'
+title: 'Gestion de l’accès des utilisateurs aux applications pour Outlook'
 TOCTitle: Gestion de l’accès des utilisateurs aux applications pour Outlook
 ms:assetid: e5833dec-a23a-439e-ac03-92671817bff8
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ943757(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2018-04-17_
+_**Dernière rubrique modifiée :** 2018-04-17_
 
 Vous pouvez utiliser le Centre d’administration Exchange (EAC) ou Exchange PowerShell pour gérer l’accès utilisateur aux compléments pour Outlook.
 
@@ -37,18 +37,8 @@ Pour des tâches de gestion supplémentaires, consultez la rubrique [Application
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Spécifier si un complément est disponible, activé ou désactivé
@@ -63,11 +53,11 @@ Pour des tâches de gestion supplémentaires, consultez la rubrique [Application
 
 4.  Si vous voulez que les utilisateurs puissent utiliser le complément, cochez la case **Mettre ce complément à disposition des utilisateurs dans votre organisation**, puis sélectionnez l’option souhaitée.
     
-      - **Facultatif, option activée par défaut :** utilisez ce paramètre si vous souhaitez autoriser les utilisateurs à désactiver le complément.
+      - **Facultatif, option activée par défaut :**  utilisez ce paramètre si vous souhaitez autoriser les utilisateurs à désactiver le complément.
     
-      - **Facultatif, option désactivée par défaut :** utilisez ce paramètre si vous souhaitez autoriser les utilisateurs à activer le complément.
+      - **Facultatif, option désactivée par défaut :**  utilisez ce paramètre si vous souhaitez autoriser les utilisateurs à activer le complément.
     
-      - **Obligatoire, option toujours activée. Les utilisateurs ne peuvent pas désactiver ce complément :** utilisez ce paramètre si vous ne voulez pas que les utilisateurs puissent désactiver le complément.
+      - **Obligatoire, option toujours activée. Les utilisateurs ne peuvent pas désactiver ce complément :**  utilisez ce paramètre si vous ne voulez pas que les utilisateurs puissent désactiver le complément.
 
 5.  Cliquez sur **Enregistrer**.
 

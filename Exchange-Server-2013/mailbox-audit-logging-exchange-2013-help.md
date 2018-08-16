@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Les boîtes aux lettres étant susceptibles de renfermer des informations confidentielles, des informations ayant un impact significatif sur l’activité et des informations d’identification personnelle, il est important de connaître le nom des personnes qui se connectent aux boîtes aux lettres de votre organisation et les actions qui sont effectuées. Ceci est particulièrement important si les utilisateurs qui se connectent ne sont pas les propriétaires des boîtes aux lettres. Ces utilisateurs sont appelés *utilisateurs délégués*.
 

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Créer un répertoire virtuel du carnet d’adresses en mode hors connexion: Exchange 2013 Help'
+title: 'Répertoire virtuel du carnet d’adresses hors connexion: Exchange 2013 Help'
 TOCTitle: Créer un répertoire virtuel du carnet d’adresses en mode hors connexion
 ms:assetid: 2c70e21f-2b12-414a-9e8c-65634a767c72
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa996917(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-16_
+_**Dernière rubrique modifiée :** 2012-10-16_
 
 Le répertoire virtuel OAB est la distribution de l’OAB. Par défaut, lors de l’installation de Microsoft Exchange Server 2013, un répertoire virtuel nommé carnet d’adresses en mode hors connexion est créé sur le site Web interne par défaut des services Internet (IIS). Si vous avez des utilisateurs côté client qui se connectent à Microsoft Outlook en dehors du pare-feu de votre organisation, vous pouvez ajouter un site Web externe. De la même façon, lorsque vous exécutez la cmdlet **New-OABVirtualDirectory** dans l’environnement de ligne de commande Exchange Management Shell, un répertoire virtuel nommé OAB est créé sur le site Web par défaut des services Internet (IIS) sur le serveur Exchange local.
 
@@ -23,18 +23,8 @@ La création d’un répertoire virtuel de carnet d’adresses en mode hors conn
 
 Pour les autres tâches de gestion relatives aux carnets d’adresses en mode hors connexion, voir [Procédures des carnets d’adresses en mode hors connexion](offline-address-book-procedures-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Avant de créer un répertoire virtuel de carnet d’adresses en mode hors connexion, assurez-vous que les utilisateurs sont conscients des modifications que vous apportez. Cette procédure peut interrompre le processus de téléchargement du carnet d’adresses en mode hors connexion pour vos utilisateurs.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Avant de créer un répertoire virtuel de carnet d’adresses en mode hors connexion, assurez-vous que les utilisateurs sont conscients des modifications que vous apportez. Cette procédure peut interrompre le processus de téléchargement du carnet d’adresses en mode hors connexion pour vos utilisateurs.
 
 
 ## Ce qu’il faut savoir avant de commencer ?
@@ -55,36 +45,16 @@ Pour les autres tâches de gestion relatives aux carnets d’adresses en mode ho
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour créer un répertoire virtuel de carnet d’adresses en mode hors connexion
 
 Pour créer un répertoire virtuel de carnet d’adresses en mode hors connexion avec tous les paramètres par défaut, vous pouvez exécuter la cmdlet **New-OABVirtualDirectory** sans aucun paramètre. La procédure suivante permet de créer un répertoire virtuel de carnet d’adresses en mode hors connexion avec des paramètres personnalisés.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lors de la création d’un répertoire virtuel de carnet d’adresses en mode hors connexion, il est recommandé d’activer le protocole SSL.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lors de la création d’un répertoire virtuel de carnet d’adresses en mode hors connexion, il est recommandé d’activer le protocole SSL.
 
 
 Cet exemple montre comment créer un répertoire virtuel de carnet d’adresses en mode hors connexion sur le serveur d’accès au client nommé CASServer01 sur lequel le protocole SSL est activé et qui dispose d’une URL externe.

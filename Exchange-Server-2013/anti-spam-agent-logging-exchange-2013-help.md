@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les journaux de l'agent enregistrent les actions effectuées sur un message par des agents de blocage de courrier indésirable spécifiques dans Microsoft Exchange Server 2013. Seuls les agents suivants peuvent écrire des informations dans le journal de l'agent :
 
@@ -31,18 +31,8 @@ Les journaux de l'agent enregistrent les actions effectuées sur un message par 
 
   - Agent d'ID de l'expéditeur
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L'agent de filtrage des connexions et l'agent de règles Edge ne ​​sont pas disponibles sur les serveurs de boîtes aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L'agent de filtrage des connexions et l'agent de règles Edge ne ​​sont pas disponibles sur les serveurs de boîtes aux lettres.
 
 
 Les informations écrites dans le journal de l'Agent dépendent de l'Agent, de l'événement SMTP et de l'action réalisée sur le message.
@@ -120,18 +110,8 @@ Le tableau suivant répertorie les événements SMTP dans leur ordre d'apparit
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L'agent de filtrage des connexions et l'agent de règles Edge ne ​​sont pas disponibles sur les serveurs de boîtes aux lettres.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> L'agent de filtrage des connexions et l'agent de règles Edge ne ​​sont pas disponibles sur les serveurs de boîtes aux lettres.
 
 
 Pour plus d'informations sur les agents, les événements SMTP et la priorité de l'agent, consultez la rubrique [Agents de transport](transport-agents-exchange-2013-help.md).

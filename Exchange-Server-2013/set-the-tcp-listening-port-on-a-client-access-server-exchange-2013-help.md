@@ -1,5 +1,5 @@
 ﻿---
-title: "Définition du port d'écoute TCP sur un serveur d'accès au client: Exchange 2013 Help"
+title: 'Déf. du port d’écoute TCP sur un serveur d’accès au client: Exchange 2013 Help'
 TOCTitle: Définition du port d'écoute TCP sur un serveur d'accès au client
 ms:assetid: 5f48f21a-d8d4-48b2-868f-9a3647693841
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673530(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-04-09_
+_**Dernière rubrique modifiée :** 2013-04-09_
 
 Vous pouvez configurer le port TCP qui est utilisé pour écouter les demandes SIP sur un serveur d'accès au client exécutant le service routeur des appels de messagerie unifiée Microsoft Exchange. Par défaut, quand vous installez un serveur d'accès au client, le numéro du port d'écoute TCP SIP est défini sur 5060 et le serveur d'accès au client démarre en mode TCP. Le port d'écoute TCP SIP ne peut pas être configuré à l'aide du Centre d'administration Exchange (CAE). Vous devez configurer le numéro du port d'écoute TCP SIP à l'aide de la cmdlet **Set-UMCallRouterSettings**.
 
@@ -35,18 +35,8 @@ Pour d'autres tâches relatives aux serveurs de messagerie unifiée et d'accès 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

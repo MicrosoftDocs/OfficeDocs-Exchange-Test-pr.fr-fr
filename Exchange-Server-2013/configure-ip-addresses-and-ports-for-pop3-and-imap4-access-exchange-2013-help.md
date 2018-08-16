@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer les ports et les adresses IP pour les accès POP3 et IMAP4: Exchange 2013 Help'
+title: 'Config. des ports et adresses IP pour accès POP3 et IMAP4: Exchange 2013 Help'
 TOCTitle: Configurer les ports et les adresses IP pour les accès POP3 et IMAP4
 ms:assetid: 8292747b-6626-4d7f-ba73-1e17f5d99fa4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb123530(v=EXCHG.150)
@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-28_
+_**Dernière rubrique modifiée :** 2012-11-28_
 
 Le Centre d’administration Exchange et l’environnement de ligne de commande Exchange Management Shell vous permettent de configurer des services POP3 et IMAP4 Microsoft Exchange pour utiliser des adresses IP et des ports qui diffèrent des paramètres par défaut.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Entrez les adresses IP et les plages d'adresses IP au format IPv4 (Internet Protocol Version 4) ou IPv6 (Internet Protocol Version 6), ou aux deux formats. Une installation par défaut de Windows Server 2008 prend en charge les protocoles IPv4 et IPv6.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Entrez les adresses IP et les plages d'adresses IP au format IPv4 (Internet Protocol Version 4) ou IPv6 (Internet Protocol Version 6), ou aux deux formats. Une installation par défaut de Windows Server 2008 prend en charge les protocoles IPv4 et IPv6.
 
 
 Pour plus d’informations sur POP3 et IMAP4, voir [POP3 et IMAP4 dans Exchange Server 2013](pop3-and-imap4-in-exchange-server-2013-exchange-2013-help.md).
@@ -43,18 +33,8 @@ Pour plus d’informations sur POP3 et IMAP4, voir [POP3 et IMAP4 dans Exchange 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

@@ -13,26 +13,16 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Vous pouvez créer des entrées de domaine distant pour définir les paramètres de transfert de messages entre l’organisation Microsoft Exchange Server 2013 et les domaines à l’extérieur de votre organisation Exchange. Lorsque vous créez une entrée de domaine distant, vous contrôlez les types de messages envoyés à ce domaine. Vous pouvez également appliquer des stratégies de format de message et des jeux de caractères acceptables aux messages envoyés par des utilisateurs de votre organisation au domaine distant. Les paramètres pour les domaines distants sont des paramètres de configuration globaux pour l’organisation Exchange.
 
 Les paramètres du domaine distant sont appliqués aux messages pendant la catégorisation dans le service de transport sur des serveurs de boîtes aux lettres. Lors de la résolution de destinataire, le domaine du destinataire est comparé aux domaines distants configurés. Si une configuration de domaine distant bloque l’envoi d’un type de message particulier à des destinataires dans ce domaine, le message est supprimé. Si vous spécifiez un format de message particulier pour le domaine distant, les en-têtes et contenus des messages sont modifiés. Les paramètres s’appliquent à tous les messages traités par l’organisation Exchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous configurez les paramètres de message par utilisateur, les paramètres par utilisateur remplacent la configuration de l’organisation.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si vous configurez les paramètres de message par utilisateur, les paramètres par utilisateur remplacent la configuration de l’organisation.
 
 
 Par défaut, il n’y a qu’une seule entrée de domaine distant. L’espace d’adressage du domaine est configuré comme un astérisque (\*). Ce signe représente tous les domaines distants. Si vous ne créez pas d’entrées de domaine distant supplémentaires, les mêmes paramètres sont appliqués à tous les messages envoyés à tous les destinataires dans tous les domaines distants.

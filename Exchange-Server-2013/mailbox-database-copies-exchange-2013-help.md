@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-07_
+_**Dernière rubrique modifiée :** 2015-04-07_
 
 Microsoft Exchange Server 2013 exploite le concept de mobilité des bases de données, c’est-à-dire la gestion par Exchange des basculements au niveau base de données. La mobilité de base de données permet de déconnecter des bases de données de leur serveur, de prendre en charge jusqu’à 16 copies d’une base de données individuelle et de fournir une expérience native pour l’ajout de copies de bases de données à une base de données.
 

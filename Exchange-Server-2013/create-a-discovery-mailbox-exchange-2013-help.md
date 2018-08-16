@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le programme d’installation de Microsoft Exchange Server 2013 crée par défaut une boîte aux lettres de découverte. Dans Exchange Online, une boîte aux lettres de découverte est également créée par défaut. Les boîtes aux lettres de découverte servent de boîtes aux lettres cibles pour les recherches [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md) dans le Centre d’administration Exchange (CAE). Vous pouvez créer des boîtes aux lettres de découverte supplémentaires si nécessaire. Une fois que vous avez créé une boîte aux lettres de découverte, vous devez attribuer des autorisations d’accès total aux utilisateurs concernés afin qu’ils puissent accéder aux résultats de recherche eDiscovery (découverte électronique) qui sont copiés dans la boîte aux lettres de découverte.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Une fois que le gestionnaire de découverte a copié les résultats d’une recherche eDiscovery dans une boîte aux lettres de découverte, la boîte aux lettres peut contenir des informations sensibles. Nous vous conseillons de contrôler l’accès aux boîtes aux lettres de découverte et de vous assurer que seuls des utilisateurs autorisés peuvent y accéder.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Une fois que le gestionnaire de découverte a copié les résultats d’une recherche eDiscovery dans une boîte aux lettres de découverte, la boîte aux lettres peut contenir des informations sensibles. Nous vous conseillons de contrôler l’accès aux boîtes aux lettres de découverte et de vous assurer que seuls des utilisateurs autorisés peuvent y accéder.
 
 
 Pour plus d’informations, voir [Discovery mailboxes](in-place-ediscovery-exchange-2013-help.md).
@@ -47,18 +37,8 @@ Pour plus d’informations, voir [Discovery mailboxes](in-place-ediscovery-excha
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

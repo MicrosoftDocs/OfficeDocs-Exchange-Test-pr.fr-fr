@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-05-27_
+_**Dernière rubrique modifiée :** 2014-05-27_
 
 Après avoir créé une boîte aux lettres d'utilisateur, vous pouvez y apporter des modifications et définir des propriétés supplémentaires via le Centre d'administration Exchange (CAE) ou l'environnement de ligne de commande Exchange Management Shell.
 
@@ -31,18 +31,8 @@ Vous pouvez également modifier les propriétés de plusieurs boîtes aux lettre
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?
@@ -89,34 +79,14 @@ Dans la section **Général**, vous pouvez afficher ou modifier des informations
 
   - **\* Nom de connexion utilisateur**    C'est le nom dont l'utilisateur se servira pour accéder à sa boîte aux lettres et se connecter au domaine. Généralement, le nom de connexion utilisateur se compose de l’alias de l’utilisateur sur la partie gauche, du symbole @ et, à droite du symbole @, du nom de domaine dans lequel réside le compte utilisateur.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Cette zone est appelée <strong>ID de l’utilisateur</strong> dans Exchange Online.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Cette zone est appelée <strong>ID de l’utilisateur</strong> dans Exchange Online.
 
 
   - **Exiger la modification du mot de passe à la prochaine ouverture de session**   Activez cette case à cocher si vous souhaitez que l'utilisateur réinitialise le mot de passe lors de la connexion suivante à sa boîte aux lettres.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Cette case n’est pas disponible dans Exchange Online.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Cette case n’est pas disponible dans Exchange Online.
 
 
   - **Masquer des listes d'adresses**   Activez cette case à cocher pour empêcher que le destinataire n'apparaisse dans le carnet d'adresses et les autres listes d'adresses définies dans votre organisation Exchange. Après activation de cette case à cocher, les utilisateurs peuvent encore envoyer des messages au destinataire en utilisant l'adresse de messagerie.
@@ -125,34 +95,14 @@ Cliquez sur **Plus d'options** pour afficher ou modifier les propriétés suppl�
 
   - **Unité d'organisation**   Ce champ en lecture seule affiche l'unité d'organisation (UO) qui contient le compte d'utilisateur. Vous devez utiliser le composant Utilisateurs et ordinateurs Active Directory pour déplacer le compte d'utilisateur vers une autre unité d'organisation.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Cette case n’est pas disponible dans Exchange Online.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Cette case n’est pas disponible dans Exchange Online.
 
 
   - **Base de données de boîtes aux lettres**   Ce champ en lecture seule affiche le nom de la base de données de boîtes aux lettres qui héberge la boîte aux lettres. Pour déplacer la boîte aux lettres vers une base de données différente, sélectionnez-la dans la liste de boîte aux lettres, puis cliquez sur **Déplacer la boîte aux lettres vers une autre base de données** dans le volet d'informations.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Cette option n’est pas disponible dans Exchange Online.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Cette option n’est pas disponible dans Exchange Online.
 
 
   - **Attributs personnalisés**   Cette section affiche les attributs personnalisés définis pour la boîte aux lettres utilisateur. Pour spécifier des valeurs d'attribut personnalisées, cliquez sur **Modifier**. Vous pouvez spécifier jusqu'à 15 attributs personnalisés pour le destinataire.
@@ -165,34 +115,14 @@ Utilisez la section **Utilisation des boîtes aux lettres** pour afficher ou mod
 
   - **Utilisation de la boîte aux lettres**   Cette zone affiche la taille totale de la boîte aux lettres et le pourcentage du quota total de boîte aux lettres qui a été utilisé.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pour obtenir les informations qui sont affichées dans les deux champs précédents, le CAE interroge la base de données de boîtes aux lettres qui héberge la boîte aux lettres. Si le Centre d'administration Exchange ne peut pas communiquer avec la banque d'informations qui contient la base de données de boîte aux lettres, ce champ restera vide. Un message d'avertissement s'affiche si l'utilisateur ne s'est pas connecté à la boîte aux lettres pour la première fois.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Pour obtenir les informations qui sont affichées dans les deux champs précédents, le CAE interroge la base de données de boîtes aux lettres qui héberge la boîte aux lettres. Si le Centre d'administration Exchange ne peut pas communiquer avec la banque d'informations qui contient la base de données de boîte aux lettres, ce champ restera vide. Un message d'avertissement s'affiche si l'utilisateur ne s'est pas connecté à la boîte aux lettres pour la première fois.
 
 
 Cliquez sur **Plus d'options** pour afficher ou modifier les paramètres de quota de stockage de boîte aux lettres et de rétention des éléments supprimés pour la boîte aux lettres.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ces paramètres ne sont pas disponibles dans le CAE dans Exchange Online.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Ces paramètres ne sont pas disponibles dans le CAE dans Exchange Online.
 
 
   - **Paramètres de quota de stockage**   Pour personnaliser ces paramètres pour la boîte aux lettres et ne pas utiliser les paramètres par défaut de la base de données de boîte aux lettres, cliquez sur **Personnaliser les paramètres de cette boîte aux lettres**, saisissez la nouvelle valeur puis cliquez sur **Enregistrer**.
@@ -215,18 +145,8 @@ Cliquez sur **Plus d'options** pour afficher ou modifier les paramètres de quot
 
 Utilisez la section **Coordonnées** pour afficher ou modifier les coordonnées de l'utilisateur. L'information sur cette page s'affiche dans le carnet d'adresses. Cliquez sur **Plus d'options** pour afficher des boîtes de dialogue supplémentaires.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le champ <strong>État/Province</strong> permet de créer des conditions de destinataire pour des groupes de distribution dynamiques, des stratégies d'adresse de messagerie électronique ou des listes d'adresses.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Le champ <strong>État/Province</strong> permet de créer des conditions de destinataire pour des groupes de distribution dynamiques, des stratégies d'adresse de messagerie électronique ou des listes d'adresses.
 
 
 Les utilisateurs de boîtes aux lettres peuvent utiliser Outlook ou Outlook Web App pour afficher et modifier leurs propres informations de contact. Mais ils ne peuvent pas modifier les informations dans les zones **Remarques** et **Page web**.
@@ -257,35 +177,15 @@ Utilisez la section **Adresse de messagerie** pour afficher ou modifier les adre
     
       - **Adresse personnalisée**   Cliquez sur ce bouton et saisissez dans la zone **\* Adresse de messagerie** l'un des types d'adresse de messagerie électronique non SMTP pris en charge.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>À l'exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l'adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d'adresse.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > À l'exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l'adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d'adresse.
     
       - **En faire l’adresse de réponse**   Dans Exchange Online, vous pouvez cocher cette case pour faire de la nouvelle adresse électronique l’adresse SMTP principale de la boîte aux lettres. Cette case n’est pas disponible dans le CAE dans Exchange 2013.
 
   - **Mettre à jour auto. les adresses selon la stratégie de destinataire   **Cochez cette case pour que les adresses de messagerie du destinataire soient automatiquement mises à jour en fonction des modifications apportées aux stratégies d'adresse de messagerie dans votre organisation. Cette case à cocher est activée par défaut.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Cette case n’est pas disponible dans Exchange Online.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Cette case n’est pas disponible dans Exchange Online.
 
 
   - **En faire l’adresse de réponse**
@@ -304,18 +204,8 @@ Dans la section **Fonctionnalités de boîte aux lettres**, vous pouvez afficher
 
   - **Messagerie unifiée**   Cette fonctionnalité est désactivée par défaut. Lorsque vous activez la messagerie unifiée, l’utilisateur est en mesure d’utiliser les fonctions de messagerie unifiée de votre organisation et un ensemble par défaut de propriétés de messagerie unifiée est appliqué à l’utilisateur. Cliquez sur **Activer** pour activer la messagerie unifiée pour la boîte aux lettres. Pour plus d'informations sur la procédure d'activation de la messagerie unifiée, reportez-vous à la rubrique [Activation de la messagerie vocale pour un utilisateur](enable-a-user-for-voice-mail-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Un plan de numérotation de messagerie unifiée et une stratégie de boîte aux lettres de messagerie unifiée doivent exister avant de pouvoir activer la messagerie unifiée.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Un plan de numérotation de messagerie unifiée et une stratégie de boîte aux lettres de messagerie unifiée doivent exister avant de pouvoir activer la messagerie unifiée.
 
 
   - **Appareils mobiles**   Utilisez cette section pour afficher et modifier les paramètres d'Exchange ActiveSync, qui est activé par défaut. Exchange ActiveSync permet d'accéder à une boîte aux lettres Exchange à partir d'un appareil mobile. Cliquez sur **Désactiver Exchange ActiveSync** pour désactiver cette fonctionnalité pour la boîte aux lettres.
@@ -338,18 +228,8 @@ Dans la section **Fonctionnalités de boîte aux lettres**, vous pouvez afficher
     
       - **URL**   Ce champ permet de saisir une URL de site Web qui fournit des informations ou de l'aide à propos de la mise en attente pour litige de la boîte aux lettres.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Le texte issu de ces zones apparaît dans la boîte aux lettres de l'utilisateur uniquement s'il utilise Outlook 2010 ou des versions ultérieures. Il n'apparaît pas dans Outlook Web App ou d'autres clients de messagerie. Pour consulter le texte des zones Note et URL dans Outlook, cliquez sur l'onglet <strong>Fichier</strong>. Le commentaire de mis en attente pour litige apparaît dans la page <strong>Informations</strong>, sous <strong>Paramètres du compte</strong>.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Le texte issu de ces zones apparaît dans la boîte aux lettres de l'utilisateur uniquement s'il utilise Outlook 2010 ou des versions ultérieures. Il n'apparaît pas dans Outlook Web App ou d'autres clients de messagerie. Pour consulter le texte des zones Note et URL dans Outlook, cliquez sur l'onglet <strong>Fichier</strong>. Le commentaire de mis en attente pour litige apparaît dans la page <strong>Informations</strong>, sous <strong>Paramètres du compte</strong>.
 
 
   - **Archivage**   S'il n'existe pas de boîte aux lettres d'archive pour l'utilisateur, cette fonctionnalité est désactivée. Pour activer une boîte aux lettres d'archive, cliquez sur **Activer**. Si l'utilisateur possède une boîte aux lettres d'archive, la taille de cette dernière ainsi que les statistiques d'utilisation s'affichent. Cliquez sur **Modifier les détails** pour afficher ou modifier les paramètres de boîte aux lettres d'archivage suivants :
@@ -364,18 +244,8 @@ Dans la section **Fonctionnalités de boîte aux lettres**, vous pouvez afficher
     
       - **Émettre un avertissement à (Go)**   Ce champ affiche la limite de stockage maximale pour la boîte aux lettres d'archivage avant qu'un avertissement ne soit présenté à l'utilisateur. Si la taille de la boîte aux lettres d'archivage atteint ou dépasse la valeur spécifiée, Exchange envoie un message d'avertissement à l'utilisateur. Pour modifier cette limite, saisissez une nouvelle valeur dans le champ ou sélectionnez une valeur dans la liste déroulante.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Le quota d’archivage et le quota d’émission d’avertissement pour la boîte aux lettres d’archivage ne peuvent pas être modifiés dans Exchange Online.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Le quota d’archivage et le quota d’émission d’avertissement pour la boîte aux lettres d’archivage ne peuvent pas être modifiés dans Exchange Online.
 
 
   - **Options de remise**   Utilisez ce paramètre pour transférer les messages électroniques envoyés à un utilisateur vers un autre destinataire et pour définir le nombre maximum de destinataires auxquels un utilisateur peut envoyer un message. Cliquez sur **Afficher les détails** pour afficher et modifier ces paramètres.
@@ -386,34 +256,14 @@ Dans la section **Fonctionnalités de boîte aux lettres**, vous pouvez afficher
     
       - **Limite de destinataire**   Ce paramètre contrôle le nombre maximal de destinataires auxquels l'utilisateur peut envoyer un message. Sélectionnez le **Nombre maximal de destinataires** pour limiter le nombre de destinataires autorisés dans les champs À, Cc et Cci: d'un message électronique, puis spécifiez le nombre maximal de destinataires.
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Pour les organisations Exchange locales, la limite de destinataire est illimitée. Pour les organisations Exchange Online, la limite est de 500 destinataires.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Pour les organisations Exchange locales, la limite de destinataire est illimitée. Pour les organisations Exchange Online, la limite est de 500 destinataires.
 
 
   - **Restrictions de taille des messages**   Ces paramètres contrôlent la taille des messages échangés par l'utilisateur. Cliquez sur **Afficher les détails** pour afficher et modifier la taille maximale des messages échangés.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Ces paramètres ne peuvent pas être modifiés dans Exchange Online.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Ces paramètres ne peuvent pas être modifiés dans Exchange Online.
     
       - **Messages envoyés**   Pour spécifier une taille maximale de messages envoyés par cet utilisateur, activez la case à cocher **Taille maximale du message (Ko)** et saisissez une valeur dans le champ. La taille des messages doit être comprise entre 0 et 2 097 151 Ko. Si l'utilisateur envoie un message dont la taille est supérieure à la taille spécifiée, il est renvoyé à l'utilisateur avec un message d'erreur descriptif.
     
@@ -443,18 +293,8 @@ La section **Membre de** permet d'afficher une liste des groupes de distribution
 
 Utilisez la section **Info courrier** pour ajouter une Info courrier afin d'alerter les utilisateurs de problèmes potentiels s'ils envoient un message à ce destinataire. Une info-courrier est un texte qui s'affiche dans la barre d'informations lorsque ce destinataire est ajouté aux champs À, Cc ou Cci d'un nouveau message électronique.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les infos courrier peuvent comporter des balises HTML, mais les scripts ne sont pas autorisés. Une info courrier personnalisée ne doit pas comporter plus de 175 caractères affichés. Les balises HTML ne sont pas prises en compte dans cette limite.
 
 
 ## Délégation de boîtes aux lettres
@@ -463,7 +303,7 @@ Utilisez la section **Délégation de boîtes aux lettres** pour attribuer des a
 
   - **Envoyer sous**   Cette autorisation permet aux utilisateurs autres que le propriétaire de la boîte aux lettres d'utiliser la boîte aux lettres pour envoyer des messages. Une fois cette autorisation attribuée à un délégué, tout message envoyé par un délégué depuis cette boîte aux lettres s'affiche comme s'il était envoyé par le propriétaire de la boîte aux lettres. Toutefois, cette autorisation ne permet pas à un délégué de se connecter à la boîte aux lettres de l’utilisateur.
 
-  - **Envoyer de la part de**   Cette autorisation permet également à un délégué d'utiliser cette boîte aux lettres pour envoyer des messages. Cependant, une fois cette autorisation attribuée à un délégué, l'adresse **De :** de tous les messages envoyés par le délégué indique que le message a été envoyé par le délégué, au nom du propriétaire de la boîte aux lettres.
+  - **Envoyer de la part de**   Cette autorisation permet également à un délégué d'utiliser cette boîte aux lettres pour envoyer des messages. Cependant, une fois cette autorisation attribuée à un délégué, l'adresse **De :**  de tous les messages envoyés par le délégué indique que le message a été envoyé par le délégué, au nom du propriétaire de la boîte aux lettres.
 
   - **Accès total**   Cette autorisation permet à un délégué de se connecter à la boîte aux lettres de l’utilisateur et d’afficher le contenu de la boîte aux lettres. Cependant, une fois cette autorisation attribuée à un délégué, celui-ci ne peut pas envoyer de messages depuis cette boîte aux lettres. Pour permettre à un délégué d’envoyer des courriers électroniques depuis la boîte aux lettres de l’utilisateur, vous devez attribuer au délégué l’autorisation Envoyer sous ou Envoyer au nom de.
 
@@ -537,18 +377,8 @@ Voici une liste des propriétés et fonctions de boîtes aux lettres des utilisa
 
   - **Déléguer des autorisations**   Permet d’attribuer des autorisations à des utilisateurs ou des groupes pour qu’ils puissent ouvrir ou envoyer des messages provenant d’autres boîtes aux lettres. Vous pouvez attribuer les autorisations Complet, Envoyer en tant que et Envoyer pour le compte de aux utilisateurs ou groupes. Pour plus de détails, consultez la rubrique [Gestion des autorisations des destinataires](manage-permissions-for-recipients-exchange-online-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le temps estimé pour la réalisation de cette tâche est de 2 minutes, mais ce temps peut être allongé si vous changez plusieurs propriétés ou fonctionnalités à la fois.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le temps estimé pour la réalisation de cette tâche est de 2 minutes, mais ce temps peut être allongé si vous changez plusieurs propriétés ou fonctionnalités à la fois.
 
 
 ## Utiliser le Centre d'administration Exchange pour modifier en bloc des boîtes aux lettres utilisateurs
@@ -557,18 +387,8 @@ Voici une liste des propriétés et fonctions de boîtes aux lettres des utilisa
 
 2.  Dans la liste des boîtes aux lettres, sélectionnez deux boîtes aux lettres ou plus.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Pour sélectionner plusieurs boîtes aux lettres adjacentes, maintenez la touche Maj enfoncée, cliquez sur la première, puis sur la dernière boîte aux lettres à modifier. Vous pouvez également sélectionner plusieurs boîtes aux lettres non adjacentes en maintenant enfoncée la touche Ctrl, puis en cliquant sur chacune des boîtes aux lettres à modifier.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > Pour sélectionner plusieurs boîtes aux lettres adjacentes, maintenez la touche Maj enfoncée, cliquez sur la première, puis sur la dernière boîte aux lettres à modifier. Vous pouvez également sélectionner plusieurs boîtes aux lettres non adjacentes en maintenant enfoncée la touche Ctrl, puis en cliquant sur chacune des boîtes aux lettres à modifier.
 
 
 3.  Dans le volet d'informations, sous **Modifier en bloc**, sélectionnez les propriétés ou fonctionnalités de boîtes aux lettres à modifier.

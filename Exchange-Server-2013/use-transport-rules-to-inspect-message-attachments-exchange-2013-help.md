@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utiliser des règles de transport pour analyser les pièces jointes des messages: Exchange 2013 Help'
+title: 'Analyse de pièces jointes des msg avec des rgl de transp.: Exchange 2013 Help'
 TOCTitle: Utiliser des règles de transport pour analyser les pièces jointes des messages
 ms:assetid: c0de687e-e33c-4e8a-b253-771494678795
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ674307(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-27_
+_**Dernière rubrique modifiée :** 2015-03-27_
 
 Vous pouvez analyser des pièces jointes des messages électroniques au sein de votre organisation en définissant des règles de transport. Exchange fournit des règles de transport qui offrent la possibilité d’examiner les pièces jointes des messages électroniques dans le cadre de vos exigences en matière de sécurité et de conformité de la messagerie. Lorsque vous analysez les pièces jointes, vous pouvez agir sur les messages en fonction du contenu ou des caractéristiques de ces pièces jointes. Voici quelques tâches concernant les pièces jointes que vous pouvez effectuer à l’aide des règles de transport :
 
@@ -72,11 +72,9 @@ Vous pouvez utiliser les conditions de règles de transport du tableau ci-dessou
 
 Les noms Environnement de ligne de commande Exchange Management Shell pour les conditions énumérées ici sont des paramètres qui nécessitent la cmdlet `TransportRule`.
 
-  -  
-    Pour plus d’informations concernant la cmdlet, voir [New-TransportRule](https://technet.microsoft.com/fr-fr/library/bb125138\(v=exchg.150\)).
+  -  Pour plus d’informations concernant la cmdlet, voir [New-TransportRule](https://technet.microsoft.com/fr-fr/library/bb125138\(v=exchg.150\)).
 
-  -  
-    Pour en savoir plus sur les types de propriétés de ces conditions, voir [Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
+  -  Pour en savoir plus sur les types de propriétés de ces conditions, voir [Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
 
 Les règles de transport peuvent analyser uniquement le contenu des types de fichiers pris en charge. Si l’agent des règles de transport détecte une pièce jointe qui ne se trouve pas dans la liste des types de fichiers pris en charge, la condition `AttachmentIsUnsupported` est déclenchée. Les types de fichiers pris en charge sont répertoriés dans la section suivante. Les fichiers non répertoriés déclencheront la condition `AttachmentIsUnsupported`.
 
@@ -213,11 +211,9 @@ Les conditions de règle de transport suivantes analysent les propriétés d’u
 
 Les noms Environnement de ligne de commande Exchange Management Shell pour les conditions énumérées ici sont des paramètres qui nécessitent la cmdlet `TransportRule`.
 
-  -  
-    Pour plus d’informations concernant la cmdlet, voir [New-TransportRule](https://technet.microsoft.com/fr-fr/library/bb125138\(v=exchg.150\)).
+  -  Pour plus d’informations concernant la cmdlet, voir [New-TransportRule](https://technet.microsoft.com/fr-fr/library/bb125138\(v=exchg.150\)).
 
-  -  
-    Pour en savoir plus sur les types de propriétés de ces conditions, voir [Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
+  -  Pour en savoir plus sur les types de propriétés de ces conditions, voir [Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
 
 ## Types de fichiers exécutables pris en charge pour l’analyse des règles de transport
 

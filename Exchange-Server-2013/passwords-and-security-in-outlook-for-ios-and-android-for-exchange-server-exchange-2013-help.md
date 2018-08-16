@@ -1,5 +1,5 @@
 ﻿---
-title: 'Passwords and Security in Outlook for iOS and Android for Exchange Server: Exchange 2013 Help'
+title: 'Mots de passe et sécurité dans Outlook pr iOS et Android pour Exchange Server'
 TOCTitle: Passwords and Security in Outlook for iOS and Android for Exchange Server
 ms:assetid: e5565beb-7ef3-47c4-8daf-6d8f1d22dceb
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Mt465750(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2010, Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2010, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2018-04-01_
+_**Dernière rubrique modifiée :** 2018-04-01_
 
 **Résumé** : Cet article explique comment fonctionnent les mots de passe et la sécurité dans Outlook pour iOS et Android avec Exchange Server.
 
@@ -41,18 +41,8 @@ Un compte d’utilisateur peut devenir inactif pour les trois raisons suivantes�
 
   - Aucune connexion Internet n’est disponible sur le périphérique, empêchant Outlook d’effectuer la synchronisation avec Exchange.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Outlook ne devient pas inactif uniquement car l’utilisateur n’ouvre pas l’application pendant une certaine période de temps, comme un week-end ou pendant les vacances. Tant que l’actualisation de l’application en arrière-plan est activée (qui est le paramètre par défaut dans Outlook pour iOS et Android), les fonctions telles que les notifications push et la synchronisation en arrière-plan de la messagerie sont considérées comme activité.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Outlook ne devient pas inactif uniquement car l’utilisateur n’ouvre pas l’application pendant une certaine période de temps, comme un week-end ou pendant les vacances. Tant que l’actualisation de l’application en arrière-plan est activée (qui est le paramètre par défaut dans Outlook pour iOS et Android), les fonctions telles que les notifications push et la synchronisation en arrière-plan de la messagerie sont considérées comme activité.
 
 
 **Effacement du mot de passe chiffré et du cache de message à partir du disque dur**

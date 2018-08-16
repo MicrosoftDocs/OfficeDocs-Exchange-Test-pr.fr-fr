@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-10-12_
+_**Dernière rubrique modifiée :** 2012-10-12_
 
 Les listes d’adresses sont un ensemble d’objets destinataire et autres objets Active Directory. Chaque liste d’adresses peut contenir un ou plusieurs types d’objets (par exemple, des utilisateurs, des contacts, des groupes, des dossiers publics, des ressources de conférence et d’autres ressources). Les listes d’adresses fournissent également un mécanisme pour partitionner les objets à extension messagerie d’Active Directory au bénéfice de groupes d’utilisateurs spécifiques.
 
@@ -31,18 +31,8 @@ Pour les autres tâches de gestion relatives aux listes d’adresses, voir [Proc
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -55,18 +45,8 @@ Pour les autres tâches de gestion relatives aux listes d’adresses, voir [Proc
 
 3.  Par défaut, Exchange crée des listes d'adresses qui contiennent tous les membres de votre organisation. Pour créer une liste d'adresses personnalisée unique, cliquez sur **Ajouter une règle**.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous n'ajoutez aucune règle, vous allez créer une liste d'adresses redondante par rapport à l'une des listes d'adresses par défaut.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Si vous n'ajoutez aucune règle, vous allez créer une liste d'adresses redondante par rapport à l'une des listes d'adresses par défaut.
 
 
 4.  Dans la liste, sélectionnez une option de filtrage (par exemple, **Attribut personnalisé 1**).

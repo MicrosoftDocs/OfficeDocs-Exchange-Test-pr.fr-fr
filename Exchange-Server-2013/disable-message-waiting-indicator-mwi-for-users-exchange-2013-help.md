@@ -1,5 +1,5 @@
 ﻿---
-title: 'Désactiver les messages en attente indicateur (MWI) pour les utilisateurs: Exchange 2013 Help'
+title: 'Désactiver les messages en attente indicateur pour utlsr: Exchange 2013 Help'
 TOCTitle: Désactiver les messages en attente indicateur (MWI) pour les utilisateurs
 ms:assetid: 51cd6dc4-11d1-4eb9-a6c6-1965fcd24267
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673525(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-21_
+_**Dernière rubrique modifiée :** 2013-02-21_
 
 Vous pouvez activer ou désactiver la fonction Indicateur d'attente des messages pour les utilisateurs associés à une stratégie de boîte aux lettres de messagerie unifiée. L'Indicateur de message en attente est une fonctionnalité de la plupart des systèmes de messagerie vocale hérités. Dans sa forme la plus courante, il allume un voyant sur téléphone de l'abonné à la messagerie vocale pour indiquer la présence d'un nouveau message vocal. L'indicateur d'attente des messages peut également envoyer un SMS sur le téléphone mobile d'un utilisateur à extension messagerie unifiée. Le paramètre par défaut est Activé.
 
@@ -35,18 +35,8 @@ Pour d'autres tâches de gestion relatives aux stratégies de boîte aux lettres
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

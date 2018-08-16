@@ -1,5 +1,5 @@
 ﻿---
-title: 'Autorisations pour configurer les adresses de messagerie et les carnets d’adresses: Exchange 2013 Help'
+title: 'Autorisations pr config. adresses de messag. et crnt d’adresses: Exchange 2013'
 TOCTitle: Autorisations pour configurer les adresses de messagerie et les carnets d’adresses
 ms:assetid: 1c1de09d-16ef-4424-9bfb-eb7edffbc8c2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ150492(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les autorisations requises pour configurer des adresses de messagerie et des fonctionnalités de carnets d’adresses dépendent de la procédure exécutée ou de la cmdlet que vous voulez exécuter. Pour plus d’informations sur les adresses de messagerie et les carnets d’adresses, consultez la rubrique [Adresses de messagerie et carnets d’adresses](email-addresses-and-address-books-exchange-2013-help.md).
 
@@ -27,18 +27,8 @@ Pour trouver les autorisations dont vous avez besoin pour effectuer la procédur
 
 3.  Maintenant, exécutez la cmdlet **Get-ManagementRoleAssignment** pour vérifier si les groupes de rôles ou les rôles de gestion qui vous ont été attribués vous permettent de bénéficier des autorisations nécessaires pour gérer la fonctionnalité.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Le rôle de gestion de rôle doit vous être attribué pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>. Si vous ne bénéficiez pas des autorisations pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>, demandez à votre administrateur Exchange de récupérer les groupes de rôles ou les rôles de gestion qui vous sont attribués.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Le rôle de gestion de rôle doit vous être attribué pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>. Si vous ne bénéficiez pas des autorisations pour exécuter la cmdlet <strong>Get-ManagementRoleAssignment</strong>, demandez à votre administrateur Exchange de récupérer les groupes de rôles ou les rôles de gestion qui vous sont attribués.
 
 
 Si vous souhaitez déléguer la possibilité de gérer une fonctionnalité à un autre utilisateur, voir [Déléguer les attributions de rôles](delegate-role-assignments-exchange-2013-help.md).

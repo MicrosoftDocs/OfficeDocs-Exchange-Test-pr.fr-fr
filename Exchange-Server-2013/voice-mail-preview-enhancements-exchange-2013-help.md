@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2012-07-05_
+_**Dernière rubrique modifiée :** 2012-07-05_
 
 La fonctionnalité Aperçu de messagerie vocale est destinée aux utilisateurs qui reçoivent leurs messages vocaux via la messagerie unifiée Microsoft Exchange Server 2010 ou Exchange Server 2013. Grâce à une version texte des enregistrements audio, elle améliore les fonctionnalités de messagerie vocale de la messagerie unifiée. Le texte du message vocal apparaît dans un message électronique dans Microsoft Office Outlook Web App, Outlook 2010 ou d’autres programmes de messagerie.
 

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Présentation des stratégies d’attribution de rôle de gestion: Exchange 2013 Help'
+title: 'Présentation des strat. d’attribution de rôle de gestion: Exchange 2013 Help'
 TOCTitle: Présentation des stratégies d’attribution de rôle de gestion
 ms:assetid: 25913e43-326a-4371-90b5-021a35f100fe
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd638100(v=EXCHG.150)
@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Une *stratégie d’attributions de rôles de gestion* contient un ou plusieurs rôles de gestion des utilisateurs finals qui leur permettent de gérer leur propre boîte aux lettres Microsoft Exchange Server 2013 et la configuration du groupe de distribution. Les stratégies d’attributions de rôle, qui font partie du modèle d’autorisation du contrôle d’accès basé sur un rôle dans Exchange 2013 vous permettent de contrôler quels paramètres de configuration de groupe de distribution et de boîte aux lettres spécifique peuvent être modifiés par vos utilisateurs finals. Différents groupes d’utilisateurs peuvent bénéficier de stratégies d’attribution de rôle spécialisées.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cette rubrique traite de la fonctionnalité RBAC avancée. Si vous souhaitez gérer des autorisations Exchange 2013 de base, comme l’utilisation du centre d’administration Exchange pour ajouter et supprimer des membres dans les groupes de rôles, créer et modifier des groupes de rôles ou créer et modifier des stratégies d’attribution de rôles, consultez la rubrique <a href="permissions-exchange-2013-help.md">Autorisations</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Cette rubrique traite de la fonctionnalité RBAC avancée. Si vous souhaitez gérer des autorisations Exchange 2013 de base, comme l’utilisation du centre d’administration Exchange pour ajouter et supprimer des membres dans les groupes de rôles, créer et modifier des groupes de rôles ou créer et modifier des stratégies d’attribution de rôles, consultez la rubrique <a href="permissions-exchange-2013-help.md">Autorisations</a>.
 
 
 Pour plus d’informations sur le contrôle d’accès basé sur un rôle, voir [Présentation du contrôle d'accès basé sur un rôle](understanding-role-based-access-control-exchange-2013-help.md).
@@ -133,18 +123,9 @@ Le tableau suivant répertorie la couche de stratégie d’attribution de rôle 
 <td><p><a href="add-a-role-entry-to-a-role-exchange-2013-help.md">Ajouter une entrée de rôle à un rôle</a></p>
 <p><a href="change-a-role-entry-exchange-2013-help.md">Modifier une entrée de rôle</a></p>
 <p><a href="remove-a-role-entry-from-a-role-exchange-2013-help.md">Supprimer une entrée de rôle d'un rôle</a></p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La modification des entrées de rôle de gestion dans les rôles de gestion d’une stratégie d’attribution de rôle est une tâche avancée et elle n’est généralement pas requise dans la plupart des cas. Vous pouvez à la place utiliser un rôle de gestion préexistant qui convienne à vos besoins. Pour plus d’informations, voir <a href="built-in-role-groups-exchange-2013-help.md">Groupes de rôles intégrés</a>.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> La modification des entrées de rôle de gestion dans les rôles de gestion d’une stratégie d’attribution de rôle est une tâche avancée et elle n’est généralement pas requise dans la plupart des cas. Vous pouvez à la place utiliser un rôle de gestion préexistant qui convienne à vos besoins. Pour plus d’informations, voir <a href="built-in-role-groups-exchange-2013-help.md">Groupes de rôles intégrés</a>.
 
 </td>
 </tr>

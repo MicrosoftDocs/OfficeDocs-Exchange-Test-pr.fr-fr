@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Dans Microsoft Exchange Server 2013, le journal de suivi des messages est un enregistrement détaillé de toute l'activité de messagerie, regroupant les messages échangés avec le service de transport sur les serveurs de boîtes aux lettres, les boîtes aux lettres sur les serveurs de boîtes aux lettres et les serveurs de transport Edge. Les journaux de suivi des messages sont utiles pour les investigations sur les messages ainsi que pour l'analyse, les rapports et le dépannage du flux de messagerie.
 
@@ -33,18 +33,8 @@ Dans Exchange 2013, vous pouvez utiliser la cmdlet **Set-TransportService** ou 
 
   - Activer ou désactiver l'enregistrement de l'objet des messages dans les journaux de suivi des messages. Par défaut, cette option est activée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez également utiliser le Centre d'administration Exchange (CAE) pour activer ou désactiver le suivi des messages, et spécifier l'emplacement des fichiers journaux de suivi des messages.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez également utiliser le Centre d'administration Exchange (CAE) pour activer ou désactiver le suivi des messages, et spécifier l'emplacement des fichiers journaux de suivi des messages.
 
 
 Par défaut, Exchange utilise un enregistrement circulaire pour limiter le nombre de journaux de suivi des messages en fonction de la taille et de l'âge des fichiers, afin de contrôler l'espace disque occupé par les fichiers journaux de suivi des messages.
@@ -103,32 +93,22 @@ Les informations sont écrites dans chaque fichier journal jusqu'à ce que la ta
 
   - Le répertoire des journaux de suivi des messages a atteint la taille maximale spécifiée.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>La taille maximale du répertoire des journaux de suivi des messages est calculée comme la taille totale de tous les fichiers journaux dont le nom porte le même préfixe. Les fichiers ne répondant pas à cette convention de préfixe de sont pas comptabilisés dans le calcul de la taille totale du répertoire. La modification du nom d'anciens fichiers journaux ou la copie d'autres fichiers dans le répertoire des journaux de suivi des messages peut avoir pour effet que la taille du répertoire dépasse la taille maximale spécifiée.<br />
-    Pour les serveurs de boîtes aux lettres Exchange 2013, la taille maximale du répertoire de suivi des messages est égale à trois fois la valeur spécifiée. Si les fichiers journaux de suivi des messages générés par les quatre différents services portent des préfixes de nom différents, la quantité de données et la fréquence d'écriture de ces dernières dans les fichiers journaux <strong>MSGTRKMA</strong> sont négligeables en comparaison des fichiers journaux portant les trois autres préfixes.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > La taille maximale du répertoire des journaux de suivi des messages est calculée comme la taille totale de tous les fichiers journaux dont le nom porte le même préfixe. Les fichiers ne répondant pas à cette convention de préfixe de sont pas comptabilisés dans le calcul de la taille totale du répertoire. La modification du nom d'anciens fichiers journaux ou la copie d'autres fichiers dans le répertoire des journaux de suivi des messages peut avoir pour effet que la taille du répertoire dépasse la taille maximale spécifiée.
+    > Pour les serveurs de boîtes aux lettres Exchange 2013, la taille maximale du répertoire de suivi des messages est égale à trois fois la valeur spécifiée. Si les fichiers journaux de suivi des messages générés par les quatre différents services portent des préfixes de nom différents, la quantité de données et la fréquence d'écriture de ces dernières dans les fichiers journaux <strong>MSGTRKMA</strong> sont négligeables en comparaison des fichiers journaux portant les trois autres préfixes.
 
 
 Les fichiers journaux de suivi des messages sont des fichiers texte contenant des données au format CSV (valeurs séparées par des virgules). Chaque fichier journal de suivi des messages comporte un en-tête avec les informations suivantes :
 
-  - **\#Software:**   Nom du logiciel ayant créé le fichier journal de suivi des messages. Généralement, la valeur est Microsoft Exchange Server.
+  - **\#Software:**    Nom du logiciel ayant créé le fichier journal de suivi des messages. Généralement, la valeur est Microsoft Exchange Server.
 
-  - **\#Version:**   Numéro de version du logiciel ayant créé le fichier journal de suivi des messages. Actuellement, la valeur actuelle est 15.0.0.0.
+  - **\#Version:**    Numéro de version du logiciel ayant créé le fichier journal de suivi des messages. Actuellement, la valeur actuelle est 15.0.0.0.
 
-  - **\#Log-Type:**   Type de journal, à savoir Journal de suivi des messages.
+  - **\#Log-Type:**    Type de journal, à savoir Journal de suivi des messages.
 
-  - **\#Date:**   Date-heure UTC de création du fichier journal. La date-heure UTC est représentée au format de date-heure ISO 8601 : yyyy-mm-dd*yyyy-mm-dd*Thh:mm:ss.fff*hh:mm:ss.fff*Z, où yyyyy*yyyy* = année, mm*mm* = mois, dd*dd* = jour, T indique le début du composant temps, hh*hh* = heure, mm*mm* = minute, ss*ss* = seconde, fff*fff* = fractions de seconde et Z correspond à Zulu (qui est une autre manière de désigner le temps universel).
+  - **\#Date:**    Date-heure UTC de création du fichier journal. La date-heure UTC est représentée au format de date-heure ISO 8601 : yyyy-mm-dd*yyyy-mm-dd*Thh:mm:ss.fff*hh:mm:ss.fff*Z, où yyyyy*yyyy* = année, mm*mm* = mois, dd*dd* = jour, T indique le début du composant temps, hh*hh* = heure, mm*mm* = minute, ss*ss* = seconde, fff*fff* = fractions de seconde et Z correspond à Zulu (qui est une autre manière de désigner le temps universel).
 
-  - **\#Fields:**   Noms de champ séparés par des virgules, utilisés dans les fichiers journaux de suivi des messages.
+  - **\#Fields:**    Noms de champ séparés par des virgules, utilisés dans les fichiers journaux de suivi des messages.
 
 Retour au début
 

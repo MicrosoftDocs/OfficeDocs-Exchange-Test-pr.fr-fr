@@ -1,5 +1,5 @@
 ﻿---
-title: 'Passez en revue les appels de messagerie vocale pour un utilisateur: Exchange 2013 Help'
+title: 'Passez en revue les appels de messag. voc. pour un utlsr: Exchange 2013 Help'
 TOCTitle: Passez en revue les appels de messagerie vocale pour un utilisateur
 ms:assetid: 95768fe3-3ae2-43bd-9cbf-18c3b85c4592
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ659070(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2013-02-22_
+_**Dernière rubrique modifiée :** 2013-02-22_
 
 Les journaux des appels des utilisateurs permettent de consulter les informations suivantes concernant des utilisateurs spécifiques de la messagerie unifiée :
 

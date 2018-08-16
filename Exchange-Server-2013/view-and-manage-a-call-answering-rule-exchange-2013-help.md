@@ -13,26 +13,16 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Vous pouvez utiliser l'environnement de ligne de commande Exchange Management Shell pour afficher ou configurer une ou plusieurs règles de répondeur automatique pour un utilisateur. Vous pouvez également utiliser les cmdlets **Get-UMCallAnsweringRule** ou **Set-UMCallAnsweringRule** dans un script de l'environnement de ligne de commande Exchange Management Shell pour afficher ou gérer les règles de répondeur automatique pour plusieurs utilisateurs.
 
 Les règles de répondeur automatique et les règles de boîte de réception sont appliquées de la même manière aux appels entrants et aux messages électroniques entrants. Par défaut, quand un utilisateur est activé pour la messagerie unifiée, aucune règle de répondeur automatique n'est configurée. Cependant, le système de messagerie répond aux appels entrants et les appelants sont invités à laisser un message vocal.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les utilisateurs à extension messagerie unifiée peuvent se connecter à Outlook Web App pour créer, gérer et supprimer les règles de répondeur automatique.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Les utilisateurs à extension messagerie unifiée peuvent se connecter à Outlook Web App pour créer, gérer et supprimer les règles de répondeur automatique.
 
 
 Pour découvrir d'autres tâches de gestion relatives aux règles de répondeur automatique, consultez la rubrique [Transfert d'appels de procédures](forwarding-calls-procedures-exchange-2013-help.md).
@@ -53,18 +43,8 @@ Pour découvrir d'autres tâches de gestion relatives aux règles de répondeur 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

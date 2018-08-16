@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Les serveurs de transport Edge stockent leurs informations de configuration dans les services AD LDS. Vous pouvez installer plusieurs serveurs de transport Edge dans le réseau de périmètre et utiliser un tourniquet (round robin) DNS pour équilibrer le trafic réseau entre les serveurs de transport Edge. Le tourniquet est un mécanisme simple utilisé par les serveurs DNS pour partager et distribuer les charges pour les ressources réseau.
 
@@ -125,18 +125,8 @@ Retour au début
 
 Vous pouvez exécuter cette étape sur tout serveur cible pour cloner la configuration d’un serveur de transport Edge existant ou pour restaurer une configuration spécifique du serveur. Exécutez le script ImportEdgeConfig.ps1 (situé dans le dossier %ExchangeInsallPath%Scripts) pour valider et importer la nouvelle configuration. Une fois le script exécuté, la configuration du serveur cible correspondra aux paramètres spécifiés dans le fichier XML intermédiaire et dans le fichier de réponses.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous vous recommandons de sauvegarder la configuration de serveur existante avant d’exécuter le processus d’importation de la configuration, pour qu’en cas d’échec de l’opération de clonage, vous puissiez rétablir l’état stable précédent du serveur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Nous vous recommandons de sauvegarder la configuration de serveur existante avant d’exécuter le processus d’importation de la configuration, pour qu’en cas d’échec de l’opération de clonage, vous puissiez rétablir l’état stable précédent du serveur.
 
 
 Cette étape utilise les informations spécifiques du serveur contenues dans le fichier de réponses. Si un paramètre n’est pas spécifié dans le fichier de réponses, les données du fichier XML intermédiaire sont utilisées. Avant de modifier la configuration, le script valide les données dans le fichier XML intermédiaire et le fichier de réponses.
@@ -270,18 +260,8 @@ Les attributs présentés dans le tableau suivant sont associés à l’objet de
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si le serveur de transport Edge est abonné ultérieurement à l’organisation Exchange, la valeur de l’attribut <strong>InternalSMTPServers</strong> est remplacée au cours du processus EdgeSync. Pour plus d’informations, voir <a href="edge-subscriptions-exchange-2013-help.md">Abonnements Edge</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Si le serveur de transport Edge est abonné ultérieurement à l’organisation Exchange, la valeur de l’attribut <strong>InternalSMTPServers</strong> est remplacée au cours du processus EdgeSync. Pour plus d’informations, voir <a href="edge-subscriptions-exchange-2013-help.md">Abonnements Edge</a>.
 
 
 Retour au début

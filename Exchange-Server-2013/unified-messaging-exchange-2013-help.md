@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013, Exchange Server 2016_
+_**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 La messagerie unifiée permet aux utilisateurs d'utiliser la messagerie vocale, ainsi que d'autres fonctionnalités, telles que Outlook Voice Access et les règles de répondeur automatique. La messagerie unifiée combine la messagerie vocale et la messagerie électronique dans une boîte aux lettres accessible à partir de nombreux types d'appareils. Les utilisateurs peuvent écouter leurs messages à partir de leur boîte de réception de messagerie ou en utilisant Outlook Voice Access à partir d'un téléphone. Vous avez le contrôle sur la façon dont les utilisateurs passent des appels sortants à partir de la messagerie unifiée, et ce qu'ils entendent quand ils appellent votre organisation.
 

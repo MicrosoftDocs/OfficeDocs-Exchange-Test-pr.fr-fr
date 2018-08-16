@@ -1,5 +1,5 @@
 ﻿---
-title: 'Interruption ou reprise d’une copie de base de données de boîtes aux lettres: Exchange 2013 Help'
+title: 'Interruption ou reprise d’une copie de BDD de BAL: Exchange 2013 Help'
 TOCTitle: Interruption ou reprise d’une copie de base de données de boîtes aux lettres
 ms:assetid: 96aa1b82-3e15-4215-843e-3d583af9504b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd298159(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2012-11-02_
+_**Dernière rubrique modifiée :** 2012-11-02_
 
 Il peut être nécessaire de suspendre ou de reprendre une copie de base de données pour différentes raisons, par exemple la maintenance du disque contenant la copie de la base de données, ou pour suspendre l’activation de la copie d’une base de données individuelle à des fins de récupération d’urgence.
 
@@ -29,18 +29,8 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux copies de 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
 ## Que souhaitez-vous faire ?

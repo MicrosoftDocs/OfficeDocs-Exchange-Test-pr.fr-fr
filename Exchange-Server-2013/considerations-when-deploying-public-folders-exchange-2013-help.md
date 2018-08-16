@@ -1,5 +1,5 @@
 ﻿---
-title: 'Considérations relatives au déploiement de dossiers publics: Exchange 2013 Help'
+title: 'Considérations sur le déploiement de dossiers publics: Exchange 2013 Help'
 TOCTitle: Considérations relatives au déploiement de dossiers publics
 ms:assetid: 2e416eed-b88f-45db-a482-1232fd2610fa
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn957481(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-07-12_
+_**Dernière rubrique modifiée :** 2016-07-12_
 
 Bien que l’utilisation de dossiers publics Exchange 2013 présente de nombreux avantages, il convient de prendre certains éléments en considération avant de les implémenter au sein de votre organisation.
 

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gérer les infos-courrier pour les relations de l’organisation: Exchange 2013 Help'
+title: 'Gérer les infos-courrier pour les relations de l’org.: Exchange 2013 Help'
 TOCTitle: Gérer les infos-courrier pour les relations de l’organisation
 ms:assetid: 6e6b48ef-c41c-47ad-8063-66901765c2a5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ649324(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-04-08_
+_**Dernière rubrique modifiée :** 2015-04-08_
 
 Vous pouvez utiliser l’environnement de ligne de commande Exchange Management Shell pour définir les paramètres personnalisés de MailTips entre différentes organisations.
 
@@ -35,18 +35,8 @@ La cmdlet **Set-OrganizationRelationship** permet de configurer ces paramètres.
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?
@@ -75,18 +65,8 @@ Cet exemple configure la relation organisationnelle pour renvoyer uniquement les
 
 Cet exemple configure la relation organisationnelle pour qu’aucune info-courrier ne soit renvoyée.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>N’utilisez pas cette méthode pour désactiver les infos-courrier de cette relation. Pour les désactiver, définissez le paramètre <em>MailTipsAccessEnabled</em> sur <code>$false</code>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> N’utilisez pas cette méthode pour désactiver les infos-courrier de cette relation. Pour les désactiver, définissez le paramètre <em>MailTipsAccessEnabled</em> sur <code>$false</code>.
 
 
     Set-OrganizationRelationship "Contoso Online" -MailTipsAccessLevel None

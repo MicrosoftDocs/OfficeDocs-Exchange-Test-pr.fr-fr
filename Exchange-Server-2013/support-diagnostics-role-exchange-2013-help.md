@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Le rôle de gestion `Support Diagnostics` permet aux administrateurs de réaliser des diagnostics avancés sous la direction du support technique de Microsoft au sein d’une organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ce rôle accorde des autorisations aux cmdlets et aux scripts qui doivent uniquement être utilisés sous la direction du support technique Microsoft.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Ce rôle accorde des autorisations aux cmdlets et aux scripts qui doivent uniquement être utilisés sous la direction du support technique Microsoft.
 
 
 Ce rôle de gestion est l’un des rôles intégrés dans le modèle des autorisations de contrôle d’accès en fonction du rôle (RBAC) dans Microsoft Exchange Server 2013. Les rôles de gestion, qui sont attribués à un ou plusieurs groupes de rôles de gestion, stratégies d’attribution de rôle de gestion, utilisateurs ou groupes de sécurité universels, agissent en tant que regroupement logique de cmdlets ou de scripts qui sont associés pour fournir un accès afin d’afficher ou de modifier la configuration des composants Exchange 2013, tels que des bases de données de boîtes aux lettres, des règles de transport et des destinataires. Si une cmdlet ou un script et ses paramètres, appelés « entrée de rôle de gestion », sont inclus dans un rôle, cette cmdlet ou ce script et ses paramètres peuvent être exécutés par les utilisateurs qui ont attribué le rôle. Pour plus d’informations sur les rôles de gestion et les entrées de rôles de gestion, consultez la rubrique [Présentation des rôles de gestion](understanding-management-roles-exchange-2013-help.md).
@@ -65,18 +55,8 @@ Pour attribuer ce rôle à d’autres personnes, il doit être attribué à un g
 
 Vous pouvez également supprimer ce rôle à partir des groupes de rôle intégrés, des groupes de rôles que vous créez, des utilisateurs et des groupes de sécurité universels. Cependant, il doit toujours y avoir au moins une attribution de rôle de délégation entre ce rôle et un groupe de rôles ou un groupe de sécurité universel. Vous ne pouvez pas supprimer la dernière attribution de rôle de délégation. Cette limitation permet d’empêcher de vous déconnecter du système.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Il doit toujours y avoir au moins une attribution de rôle de délégation entre ce rôle et un groupe de rôles ou un groupe de sécurité universel. Vous ne pouvez pas supprimer la dernière attribution de rôle de délégation associée à ce rôle si la dernière attribution est affectée à un utilisateur.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Il doit toujours y avoir au moins une attribution de rôle de délégation entre ce rôle et un groupe de rôles ou un groupe de sécurité universel. Vous ne pouvez pas supprimer la dernière attribution de rôle de délégation associée à ce rôle si la dernière attribution est affectée à un utilisateur.
 
 
 Pour plus d’informations sur la manière d’ajouter ou de supprimer des attributions entre ce rôle et les groupes de rôles, les utilisateurs et les groupes de sécurité universels, consultez les rubriques suivantes :
@@ -166,18 +146,8 @@ Ce rôle a été configuré pour fournir à une personne affectée au rôle tout
 
 Si vous décidez que vous avez besoin de créer une version personnalisée de ce rôle, vous devez créer un rôle enfant et personnaliser le nouveau rôle.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les informations suivantes vous permettent d’effectuer la gestion avancée d’autorisations. La personnalisation des rôles de gestion peut augmenter considérablement la complexité de votre modèle d’autorisations. Vous risquez d’interrompre le fonctionnement de certaines fonctions si vous remplacez le rôle de gestion intégré par un rôle personnalisé et configuré de manière incorrecte.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Les informations suivantes vous permettent d’effectuer la gestion avancée d’autorisations. La personnalisation des rôles de gestion peut augmenter considérablement la complexité de votre modèle d’autorisations. Vous risquez d’interrompre le fonctionnement de certaines fonctions si vous remplacez le rôle de gestion intégré par un rôle personnalisé et configuré de manière incorrecte.
 
 
 Les étapes suivantes sont celles les plus courantes pour créer un rôle personnalisé et l’attribuer à une personne affectée au rôle :
@@ -202,16 +172,6 @@ Les étapes suivantes sont celles les plus courantes pour créer un rôle person
     
       - [Ajouter un rôle à un utilisateur ou un groupe de sécurité universel](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Si vous souhaitez que les autres utilisateurs, en plus de l’utilisateur qui a créé le rôle, puissent attribuer le nouveau rôle personnalisé, assurez-vous d’ajouter une attribution de rôle de délégation à au moins une personne affectée au rôle. Pour plus d’informations, consultez la rubrique <a href="delegate-role-assignments-exchange-2013-help.md">Déléguer les attributions de rôles</a>.</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]
+        > Si vous souhaitez que les autres utilisateurs, en plus de l’utilisateur qui a créé le rôle, puissent attribuer le nouveau rôle personnalisé, assurez-vous d’ajouter une attribution de rôle de délégation à au moins une personne affectée au rôle. Pour plus d’informations, consultez la rubrique <a href="delegate-role-assignments-exchange-2013-help.md">Déléguer les attributions de rôles</a>.
 

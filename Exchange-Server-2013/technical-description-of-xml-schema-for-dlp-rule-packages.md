@@ -1,5 +1,5 @@
 ﻿---
-title: 'Développement de packages de règles des informations sensibles: Exchange 2013 Help'
+title: 'Développement de packages de règles des informations sensibles'
 TOCTitle: Développement de packages de règles des informations sensibles
 ms:assetid: c4ab8707-0839-4855-9390-3dbcb43475a7
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ674704(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-07-28_
+_**Dernière rubrique modifiée :** 2016-07-28_
 
 Le schéma XML et les instructions contenues dans cette rubrique vous permettront de vous familiariser avec vos propres fichiers XML de protection contre la perte de données (DLP) de base qui définissent vos propres types d'informations confidentielles dans un package de règles de classification. Après avoir créé un fichier XML au format adéquat, vous pouvez l'importer en utilisant le Centre d'administration Exchange (CAE) ou l'environnement de ligne de commande Exchange Management Shell afin de permettre la création d'une solution DLP Microsoft Exchange Server 2013. Un fichier XML qui est un modèle de stratégie DLP personnalisé peut contenir le code XML qui constitue votre package de règles de classification. Pour obtenir une présentation de la définition de vos propres modèles DLP sous forme de fichiers XML, consultez la rubrique [Définition de vos modèles DLP et types d'informations](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md).
 

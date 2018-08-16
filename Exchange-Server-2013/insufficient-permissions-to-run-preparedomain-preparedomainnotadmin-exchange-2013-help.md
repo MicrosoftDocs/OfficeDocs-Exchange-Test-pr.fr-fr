@@ -1,5 +1,5 @@
 ﻿---
-title: 'Autorisations insuffisantes pour exécuter /PrepareDomain_PrepareDomainNotAdmin: Exchange 2013 Help'
+title: 'Autorisations insuffisantes pour exécuter /PrepareDomain'
 TOCTitle: Autorisations insuffisantes pour exécuter /PrepareDomain_PrepareDomainNotAdmin
 ms:assetid: c33a2bc0-5b07-49b8-a1c1-53baa4933d44
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.preparedomainnotadmin(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server_
+_**Sapplique à :** Exchange Server_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Le contenu de cette rubrique n'a pas été mis à jour pour Microsoft Exchange Server 2013. Bien qu'il n'ait pas été encore mis à jour, il peut toujours être applicable pour Exchange 2013. Si vous avez toujours besoin d'aide, consultez les ressources de communauté ci-dessous.
 

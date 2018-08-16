@@ -13,42 +13,22 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2014-07-02_
+_**Dernière rubrique modifiée :** 2014-07-02_
 
 Dans Microsoft Exchange 2013, nous avons apportées des modifications architecturales majeures aux rôles de serveur Exchange. À la place des cinq rôles serveur déjà présents dans Exchange 2010 et Exchange 2007, nous avons réduit à trois le nombre de rôles serveur dans Exchange 2013 : le serveur d’accès au client et le serveur de boîtes aux lettres, et avec le Service Pack 1, le rôle serveur de transport Edge.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange 2013 peut également utiliser le rôle serveur de transport Edge Exchange 2010.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Exchange 2013 peut également utiliser le rôle serveur de transport Edge Exchange 2010.
 
 
 Le serveur de boîtes aux lettres Exchange 2013 comprend tous les composants de serveur déjà présents dans Exchange 2010 : les protocoles d’accès au client, les services de transport, les bases de données de boîtes aux lettres et les services de messagerie unifiée (le serveur d’accès au client redirige le trafic SIP généré par les appels entrants vers le serveur de boîtes aux lettres). Pour plus d’informations sur le serveur de boîtes aux lettres d’Exchange 2013, consultez la rubrique [Serveur de boîtes aux lettres](mailbox-server-exchange-2013-help.md).
 
 Le serveur d’accès au client fournit des services d’authentification, de proxy et de redirection limitée, ainsi que tous les protocoles d’accès au client habituels : HTTP, POP, IMAP et SMTP. Le serveur d’accès au client, dynamique et sans état, n’effectue aucun rendu des données. Rien n’est conservé en file d'attente ni stocké sur le serveur d’accès au Client. Pour plus d’informations sur la nouvelle architecture d’Exchange 2013, consultez la rubrique [Nouveautés d'Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.warning(EXCHG.150).gif" title="Avertissement" alt="Avertissement" />Avertissement :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Les serveurs d’accès au client ne sont pas pris en charge dans les réseaux de périmètre et ils doivent être déployés dans votre environnement Active Directory interne. Tous les sites Active Directory qui contiennent un serveur de boîtes aux lettres doivent également contenir un serveur d’accès au client.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Les serveurs d’accès au client ne sont pas pris en charge dans les réseaux de périmètre et ils doivent être déployés dans votre environnement Active Directory interne. Tous les sites Active Directory qui contiennent un serveur de boîtes aux lettres doivent également contenir un serveur d’accès au client.
 
 
 Ainsi, pour ces modifications d'architecture, certaines modifications ont été exécutées sur la connectivité client. Tout d’abord, le protocole RPC/TCP n’est plus pris en charge pour l’accès direct. Cela signifie que toute la connectivité Outlook doit utiliser le protocole RPC sur HTTPS (également appelé Outlook Anywhere) ou bien, avec Exchange 2013 SP1 et Outlook 2013 SP1, le protocole MAPI sur HTTP. En conséquence de ces changements, il n’est pas nécessaire d’avoir le service d’accès au client RPC sur le serveur d’accès au client. En outre, deux espaces de noms plus petits sont requis pour une solution à résilience de site que ce qui était demandé avec Exchange 2010, et il n’est plus nécessaire de fournir une affinité pour le service d’accès au client RPC. En outre, les clients Outlook ne se connectent plus à un nom de domaine complet (FQDN) du serveur comme ils le faisaient dans les versions précédentes d’Exchange. La découverte automatique permet à Outlook de trouver de nouveaux points de connexion constitués du GUID de boîte aux lettres de l’utilisateur + @ + la partie de domaine de l’adresse SMTP principale de l’utilisateur. Cette modification réduit considérablement le risque pour les utilisateurs de voir apparaître le message tant redouté suivant : « Votre administrateur a apporté des modifications à votre boîte aux lettres. » Seuls Outlook 2007 et les versions ultérieures sont pris en charge avec Exchange 2013.

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-06_
+_**Dernière rubrique modifiée :** 2015-03-06_
 
 Les *expéditeurs de courrier indésirable*, ou expéditeurs malveillants, utilisent différentes techniques pour envoyer du courrier indésirable dans votre organisation. Aucun outil ou processus n'est capable d'éliminer la totalité du courrier indésirable. Néanmoins, Microsoft Exchange Server 2013 offre une méthode en couche, multi-niveaux et multi-facettes pour réduire le nombre de ces messages indésirables. Exchange utilise des agents de transport pour fournir une protection contre le courrier indésirable et les agents intégrés qui sont disponibles dans Exchange 2013 sont relativement identiques à ceux de Microsoft Exchange Server 2010.
 
@@ -63,18 +63,8 @@ Dans votre organisation, si un serveur de transport Edge est installé dans le r
 
   - **Agent de filtrage des destinataires**   Le filtrage des destinataires compare les destinataires du message figurant sur la commande RCPT TO: SMTP à une liste rouge de destinataires définie par l'administrateur. En cas de correspondance, le message ne peut pas pénétrer dans l'organisation. Le filtre des destinataires compare également les destinataires des messages entrants au répertoire des destinataires local pour déterminer le message est adressé à des destinataires valides. Quand un message n'est pas adressé à des destinataires valides, le message est rejeté. Pour plus d'informations, consultez la rubrique [Filtrage des destinataires sur les serveurs de transport Edge](recipient-filtering-on-edge-transport-servers-exchange-2013-help.md).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Bien que l’agent de filtrage des destinataires soit disponible sur les serveurs de boîtes aux lettres, vous ne devez pas le configurer. Lorsque le filtrage des destinataires sur un serveur de boîte aux lettres détecte un destinataire non valide ou bloqué dans un message qui contient d’autres destinataires valides, le message est rejeté. Si vous installez les agents de filtrage du courrier indésirable sur un serveur de boîte aux lettres, l’agent de filtrage des destinataires est activé par défaut. Cependant, il n’est configuré pour bloquer aucun destinataire.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Bien que l’agent de filtrage des destinataires soit disponible sur les serveurs de boîtes aux lettres, vous ne devez pas le configurer. Lorsque le filtrage des destinataires sur un serveur de boîte aux lettres détecte un destinataire non valide ou bloqué dans un message qui contient d’autres destinataires valides, le message est rejeté. Si vous installez les agents de filtrage du courrier indésirable sur un serveur de boîte aux lettres, l’agent de filtrage des destinataires est activé par défaut. Cependant, il n’est configuré pour bloquer aucun destinataire.
 
 
   - **Agent de filtrage des pièces jointes**   Le filtrage des pièces jointes bloque les messages en fonction du nom du fichier en pièce jointe, de l’extension du nom de fichier, ou du type de contenu MIME du fichier. Vous pouvez configurer un filtrage des pièces jointes pour bloquer un message et ses pièces jointes, pour écarter les pièces jointes et autoriser le passage du message ou supprimer silencieusement le message et ses pièces jointes. Pour plus d’informations, voir [Filtrage des pièces jointes sur les serveurs de transport Edge](attachment-filtering-on-edge-transport-servers-exchange-2013-help.md).

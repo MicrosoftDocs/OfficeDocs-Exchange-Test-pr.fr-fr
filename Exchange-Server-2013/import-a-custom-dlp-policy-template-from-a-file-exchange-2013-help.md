@@ -1,5 +1,5 @@
 ﻿---
-title: 'Importer un modèle de stratégie DLP personnalisé à partir d’un fichier: Exchange 2013 Help'
+title: 'Import de mod. de strat. DLP personnalisé d’un fichier: Exchange 2013 Help'
 TOCTitle: Importer un modèle de stratégie DLP personnalisé à partir d’un fichier
 ms:assetid: 83f49dbd-f9b1-498e-b548-1529c5e1ccdb
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ150531(v=EXCHG.150)
@@ -13,24 +13,14 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Online, Exchange Server 2013_
+_**Sapplique à :** Exchange Online, Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-08-09_
+_**Dernière rubrique modifiée :** 2016-08-09_
 
 Vous pouvez gérer des informations sensibles par le biais de stratégies DLP en important un fichier qui contient les paramètres de stratégie des informations. Modèles de stratégie DLP peuvent être développés indépendamment d’Exchange en tant que fichiers XML. Toutefois, ils doivent satisfaire les conditions de format spécifique pour fonctionner correctement. Autrement, les stratégies qui sont exportés à partir d’une version antérieure d’Exchange peuvent être importés dans Microsoft Exchange Server 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ673034.Caution(EXCHG.150).gif" title="Attention" alt="Attention" />Attention :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous devez activer vos stratégies DLP en mode Test avant de les exécuter dans votre environnement de production. Au cours de ces tests, nous vous recommandons de configurer des boîtes aux lettres d'exemple d'utilisateur et d'envoyer des messages de test qui appellent vos stratégies de test afin de confirmer les résultats.</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> Vous devez activer vos stratégies DLP en mode Test avant de les exécuter dans votre environnement de production. Au cours de ces tests, nous vous recommandons de configurer des boîtes aux lettres d'exemple d'utilisateur et d'envoyer des messages de test qui appellent vos stratégies de test afin de confirmer les résultats.
 
 
 ## Ce qu'il faut savoir avant de commencer
@@ -41,18 +31,8 @@ Vous pouvez gérer des informations sensibles par le biais de stratégies DLP en
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Bb125224.tip(EXCHG.150).gif" title="Conseil" alt="Conseil" />Conseil :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
 ## Que souhaitez-vous faire ?

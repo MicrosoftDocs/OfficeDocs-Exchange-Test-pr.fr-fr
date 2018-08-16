@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-09_
+_**Dernière rubrique modifiée :** 2016-12-09_
 
 Découvrez la configuration requise pour Exchange 2013 avant d’installer Exchange 2013. Par exemple, vous allez découvrir la configuration matérielle, la configuration réseau et la configuration du système d’exploitation requises.
 
@@ -155,7 +155,7 @@ Le tableau suivant présente la configuration requise pour les serveurs réseau 
 <li><p>Domaines en une seule partie</p></li>
 <li><p>Disjoint</p></li>
 </ul>
-<p>Pour plus d’informations sur les espaces de noms DNS pris en charge par Exchange, consultez l’article 2269838 de la Base de connaissances Microsoft, <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2269838">Compatibilité de Microsoft Exchange avec les domaines en une seule partie, les espaces de noms disjoints et les espaces de noms discontinus</a>.</p></td>
+<p>Pour plus d’informations sur les espaces de noms DNS pris en charge par Exchange, consultez l’article 2269838 de la Base de connaissances Microsoft, <a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=2269838">Compatibilité de Microsoft Exchange avec les domaines en une seule partie, les espaces de noms disjoints et les espaces de noms discontinus</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Prise en charge IPv6</p></td>
@@ -173,18 +173,8 @@ Le tableau suivant présente la configuration requise pour les serveurs réseau 
 
 L’utilisation de contrôleurs de domaine Active Directory 64 bits augmente les performances du service d’annuaire d’Exchange 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dans le cas d’environnements à domaines multiples dans lesquels le japonais a été défini comme langue locale d’Active Directory pour les contrôleurs de domaine Windows Server 2008, les serveurs peuvent ne pas recevoir certains attributs stockés sur un objet pendant la réplication entrante. Pour plus d’informations, consultez l’article 949189 de la Base de connaissances Microsoft, <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=949189">Un contrôleur de domaine Windows Server 2008 qui est configuré avec les paramètres régionaux japonais peut ne pas appliquer des mises à jour aux attributs d’un objet lors la réplication entrante</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dans le cas d’environnements à domaines multiples dans lesquels le japonais a été défini comme langue locale d’Active Directory pour les contrôleurs de domaine Windows Server 2008, les serveurs peuvent ne pas recevoir certains attributs stockés sur un objet pendant la réplication entrante. Pour plus d’informations, consultez l’article 949189 de la Base de connaissances Microsoft, <a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=949189">Un contrôleur de domaine Windows Server 2008 qui est configuré avec les paramètres régionaux japonais peut ne pas appliquer des mises à jour aux attributs d’un objet lors la réplication entrante</a>.
 
 
 ## Installation d’Exchange 2013 sur des serveurs d’annuaire
@@ -284,27 +274,12 @@ Pour plus d’informations sur le déploiement d’Exchange dans un environnemen
 
 Le tableau suivant répertorie les systèmes d’exploitation pris en charge pour Exchange 2013.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous n’assurons pas la prise en charge de l’installation d’Exchange 2013 sur un ordinateur qui s’exécute en mode Windows Server Core. L’ordinateur doit exécuter l’installation complète de Windows Server. Pour installer Exchange 2013 sur un ordinateur qui s’exécute en mode Windows Server Core, vous devez convertir le serveur en installation complète de Windows Server en procédant comme suit :
-<ul>
-<li><p><strong>Windows Server 2008 R2</strong>   Réinstallez Windows Server et sélectionnez l’option <strong>Installation complète</strong>.</p></li>
-<li><p><strong>Windows Server 2012 R2</strong> ou <strong>Windows Server 2012</strong>   Convertissez votre serveur en mode Windows Server Core en installation complète en exécutant la commande suivante.</p>
-<pre><code>Install-WindowsFeature Server-Gui-Mgmt-Infra, Server-Gui-Shell -Restart</code></pre></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]
+> Nous n’assurons pas la prise en charge de l’installation d’Exchange 2013 sur un ordinateur qui s’exécute en mode Windows Server Core. L’ordinateur doit exécuter l’installation complète de Windows Server. Pour installer Exchange 2013 sur un ordinateur qui s’exécute en mode Windows Server Core, vous devez convertir le serveur en installation complète de Windows Server en procédant comme suit :
+> <ul>
+> <li><p><strong>Windows Server 2008 R2</strong>   Réinstallez Windows Server et sélectionnez l’option <strong>Installation complète</strong>.</p></li>
+> <li><p><strong>Windows Server 2012 R2</strong> ou <strong>Windows Server 2012</strong>   Convertissez votre serveur en mode Windows Server Core en installation complète en exécutant la commande suivante.</p>
+> <pre><code>Install-WindowsFeature Server-Gui-Mgmt-Infra, Server-Gui-Shell -Restart</code></pre></li></ul>
 
 **Systèmes d’exploitation pris en charge pour Exchange 2013**
 
@@ -419,18 +394,8 @@ Exchange 2013 prend en charge les versions suivantes d’Outlook et d’Entoura
 
 Pour obtenir la liste des versions Outlook prises en charge par Exchange, voir [Mises à jour Outlook](https://go.microsoft.com/fwlink/p/?linkid=513459).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159813.important(EXCHG.150).gif" title="Important" alt="Important" />Important :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nous vous conseillons vivement d’installer les derniers Service Packs et mises à jour disponibles pour que vos utilisateurs bénéficient de la meilleure expérience possible lors de leur connexion à Exchange.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Nous vous conseillons vivement d’installer les derniers Service Packs et mises à jour disponibles pour que vos utilisateurs bénéficient de la meilleure expérience possible lors de leur connexion à Exchange.
 
 
 Les clients Outlook antérieurs à Outlook 2007 ne sont pas pris en charge. Les clients de messagerie sur les systèmes d'exploitation Mac qui nécessitent le protocole DAV, tels qu'Entourage 2008 pour Mac RTM et Entourage 2004, ne sont pas pris en charge.

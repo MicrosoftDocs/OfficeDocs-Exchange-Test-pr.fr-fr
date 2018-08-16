@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utilisation de l’environnement de ligne de commande Exchange Management Shell pour gérer les files d’attente: Exchange 2013 Help'
+title: 'Exchange Management Shell pr la gestion de files d’attente: Exchange 2013 Help'
 TOCTitle: Utilisation de l’environnement de ligne de commande Exchange Management Shell pour gérer les files d’attente
 ms:assetid: 5433c1d3-ad2e-4f82-b50d-b67964b32f26
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998047(v=EXCHG.150)
@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :**Exchange Server 2013_
+_**Sapplique à :** Exchange Server 2013_
 
-_**Dernière rubrique modifiée :**2015-03-09_
+_**Dernière rubrique modifiée :** 2015-03-09_
 
 Comme dans les versions précédentes d'Exchange, vous pouvez utiliser l'environnement de ligne de commande Exchange Management Shell dans Microsoft Exchange Server 2013 pour consulter des informations sur les files d'attente et les messages qu'elles contiennent, ainsi que pour effectuer des actions de gestion sur ces éléments. Dans Exchange 2013, il existe des files d'attente sur les serveurs de boîtes aux lettres et les serveurs de transport Edge. Dans cette rubrique, nous appelons ces serveurs *serveurs de transport*.
 
@@ -249,18 +249,8 @@ Retour au début
 
 Exchange 2013 ajoute une cmdlet de file d'attente nommée **Get-QueueDigest**. Cette cmdlet vous permet d'afficher des informations concernant une partie ou la totalité des files d'attente au sein de votre organisation Exchange à l'aide d'une seule commande. Plus particulièrement, la cmdlet **Get-QueueDigest** vous permet d’afficher des informations sur les files d’attente, en fonction de leur emplacement sur des serveurs, dans des DAG, dans des sites Active Directory ou dans la forêt Active Directory toute entière. Les files d’attente sur un serveur de transport Edge abonné dans le réseau de périmètre ne sont pas incluses dans les résultats. De plus, la cmdlet **Get-QueueDigest** est disponible sur un serveur de transport Edge, mais les résultats sont limités aux files d’attente sur le serveur de transport Edge.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ159664.note(EXCHG.150).gif" title="Remarque" alt="Remarque" />Remarque :</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Par défaut, la cmdlet <strong>Get-QueueDigest</strong> affiche les files d’attente de remise contenant au moins dix messages, et les résultats peuvent dater d’une à deux minutes. Pour obtenir des instructions sur la modification de ces valeurs par défaut, consultez la rubrique Configurer Get-QueueDigest <a href="configure-get-queuedigest-exchange-2013-help.md">Configurer Get-QueueDigest</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Par défaut, la cmdlet <strong>Get-QueueDigest</strong> affiche les files d’attente de remise contenant au moins dix messages, et les résultats peuvent dater d’une à deux minutes. Pour obtenir des instructions sur la modification de ces valeurs par défaut, consultez la rubrique Configurer Get-QueueDigest <a href="configure-get-queuedigest-exchange-2013-help.md">Configurer Get-QueueDigest</a>.
 
 
 Les paramètres de filtrage et de tri disponibles pour la cmdlet **Get-QueueDigest** sont décrits dans le tableau suivant.
