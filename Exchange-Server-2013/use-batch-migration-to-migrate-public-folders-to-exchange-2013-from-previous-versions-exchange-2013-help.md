@@ -273,9 +273,13 @@ Les étapes de migration des dossiers publics Exchange 2007 sont différentes d
 
 1.  Les dossiers publics système hérités comme OWAScratchPad et la sous-arborescence du dossier racine du schéma dans Exchange 2007 ne seront pas reconnus par Exchange 2013 et seront donc traités comme des éléments « incorrects ». Cela entraînera l’échec de la migration. Dans le cadre de la demande de migration, vous devez spécifier une valeur pour le paramètre `BadItemLimit`. Celle-ci dépend du nombre de bases de données de dossiers publics que vous possédez. Les commandes suivantes déterminent le nombre de bases de données de dossiers publics que vous possédez et calculent la limite `BadItemLimit` pour la demande de migration.
     
+       ```
         $PublicFolderDatabasesInOrg = @(Get-PublicFolderDatabase)
-    
+       ```
+
+       ```
         $BadItemLimitCount = 5 + ($PublicFolderDatabasesInOrg.Count -1)
+       ``` 
 
 2.  Sur le serveur Exchange 2013, exécutez la commande suivante :
     
