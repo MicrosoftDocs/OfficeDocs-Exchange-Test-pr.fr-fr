@@ -171,7 +171,7 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
     
     Une demande de migration existante peut être de deux types : migration par lots ou en série. Les commandes permettant de détecter les demandes pour chaque type et de supprimer des demandes de chaque type sont les suivantes :
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Avant de supprimer une demande de migration, il est important de comprendre la raison de son existence. L’exécution des commandes suivantes déterminera le moment de la création de la demande précédente et vous permettra de diagnostiquer les problèmes qui ont pu se produire. Pour déterminer la raison du changement, il se peut que vous deviez communiquer avec d’autres administrateurs de votre organisation.
     
     L’exemple suivant permet de détecter les demandes de migration en série existantes.
@@ -273,9 +273,13 @@ Les étapes de migration des dossiers publics Exchange 2007 sont différentes d
 
 1.  Les dossiers publics système hérités comme OWAScratchPad et la sous-arborescence du dossier racine du schéma dans Exchange 2007 ne seront pas reconnus par Exchange 2013 et seront donc traités comme des éléments « incorrects ». Cela entraînera l’échec de la migration. Dans le cadre de la demande de migration, vous devez spécifier une valeur pour le paramètre `BadItemLimit`. Celle-ci dépend du nombre de bases de données de dossiers publics que vous possédez. Les commandes suivantes déterminent le nombre de bases de données de dossiers publics que vous possédez et calculent la limite `BadItemLimit` pour la demande de migration.
     
+       ```
         $PublicFolderDatabasesInOrg = @(Get-PublicFolderDatabase)
-    
+       ```
+
+       ```
         $BadItemLimitCount = 5 + ($PublicFolderDatabasesInOrg.Count -1)
+       ``` 
 
 2.  Sur le serveur Exchange 2013, exécutez la commande suivante :
     
@@ -381,7 +385,7 @@ Une fois la migration des dossiers publics finalisée, vous devez exécuter le t
     
         Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > N’utilisez pas le paramètre <em>IsExcludedFromServingHierarchy</em> après la validation de la migration initiale, car ce paramètre est utilisé par le service de gestion automatisée du stockage pour Exchange Online.
 
 

@@ -214,7 +214,7 @@ Cliquez sur **Plus d’options** pour afficher ou modifier les paramètres de qu
 
 Utilisez la section **Adresse de messagerie** pour afficher ou modifier les adresses de messagerie électronique associées à la boîte aux lettres liée. Adresses incluses : adresses SMTP principales de l’utilisateur et toute adresse de proxy associée. L’adresse SMTP principale (également appelée *adresse de réponse par défaut*) est affichée en gras dans la liste d’adresses, la valeur **SMTP** apparaissant en lettres majuscules dans la colonne **Type**.
 
-  - **Ajouter **  Cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour ajouter une nouvelle adresse de messagerie électronique pour cette boîte aux lettres. Sélectionnez l’un des types d’adresses suivants :
+  - **Ajouter**  Cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour ajouter une nouvelle adresse de messagerie électronique pour cette boîte aux lettres. Sélectionnez l’un des types d’adresses suivants :
     
       - **SMTP**   Il s’agit du type d’adresse par défaut. Cliquez sur cette case d’option, puis saisissez la nouvelle adresse SMTP dans la zone **\* Adresse de messagerie**.
     
@@ -226,7 +226,7 @@ Utilisez la section **Adresse de messagerie** pour afficher ou modifier les adre
         > À l’exception des adresses X.400, Exchange ne valide pas la mise en forme des adresses personnalisées. Vous devez veiller à ce que l’adresse personnalisée que vous spécifiez soit conforme aux exigences de mise en forme pour ce type d’adresse.
 
 
-  - **Mettre à jour automatiquement les adresses de messagerie en fonction de la stratégie des adresses de messagerie applicable à ce destinataire   **Activez cette case à cocher pour que les adresses de messagerie du destinataire soient automatiquement mises à jour lorsque des modifications sont apportées aux stratégies d’adresses de messagerie dans votre organisation. Cette case à cocher est activée par défaut.
+  - **Mettre à jour automatiquement les adresses de messagerie en fonction de la stratégie des adresses de messagerie applicable à ce destinataire** Activez cette case à cocher pour que les adresses de messagerie du destinataire soient automatiquement mises à jour lorsque des modifications sont apportées aux stratégies d’adresses de messagerie dans votre organisation. Cette case à cocher est activée par défaut.
 
 ## Fonctionnalités de boîte aux lettres
 

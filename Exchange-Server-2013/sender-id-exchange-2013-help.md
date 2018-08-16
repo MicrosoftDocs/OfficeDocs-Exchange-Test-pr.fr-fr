@@ -43,13 +43,13 @@ Le serveur Exchange met à jour les métadonnées du message en indiquant l’é
 
 Le processus d’évaluation de l’ID de l’expéditeur génère un état d’ID de l’expéditeur pour le message. L’état de l’ID de l’expéditeur permet d’évaluer le contrôle d’accès SCL (Spam Confidence Level) du message. Cet état peut avoir l’une des valeurs suivantes :
 
-  - **Pass   **L’adresse IP et la PRA (Purported Responsible Address, adresse prétendue responsable) ont toutes les deux passé le contrôle de vérification de l’ID de l’expéditeur.
+  - **Pass** L’adresse IP et la PRA (Purported Responsible Address, adresse prétendue responsable) ont toutes les deux passé le contrôle de vérification de l’ID de l’expéditeur.
 
-  - **Neutral   **Les données de l’ID de l’expéditeur publiées sont peu concluantes.
+  - **Neutral** Les données de l’ID de l’expéditeur publiées sont peu concluantes.
 
   - **Soft fail**   L’adresse IP de la PRA figure peut-être parmi les adresses non autorisées.
 
-  - **Fail   **L’adresse IP n’est pas autorisée ; aucune PRA ne figure dans le courrier entrant ou le domaine d’envoi n’existe pas.
+  - **Fail** L’adresse IP n’est pas autorisée ; aucune PRA ne figure dans le courrier entrant ou le domaine d’envoi n’existe pas.
 
   - **None**   Il n’existe aucune donnée SPF publiée dans le DNS de l’expéditeur.
 

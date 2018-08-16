@@ -49,9 +49,13 @@ Dans cet exemple, nous associons un utilisateur dont le nom d’utilisateur est 
 
 Il n'est pas nécessaire d'utiliser la cmdlet **Set-ThrottlingPolicyAssociation** pour associer un utilisateur à une stratégie. Les commandes suivantes présentent une nouvelle manière d’associer tonysmith à la stratégie de limitation ITStaffPolicy.
 
-    $b = Get-ThrottlingPolicy ITStaffPolicy
+   ```
+        $b = Get-ThrottlingPolicy ITStaffPolicy
+   ```    
 
-    Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
+   ```
+        Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
+   ```    
 
 Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubriques [New-ThrottlingPolicy](https://technet.microsoft.com/fr-fr/library/dd351045\(v=exchg.150\)) et [Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/fr-fr/library/ff459231\(v=exchg.150\)).
 
