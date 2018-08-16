@@ -162,8 +162,7 @@ Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](ht
 Cet exemple permet de configurer le point de terminaison de migration, puis de créer un déplacement par lot inter-forêts de la forêt source à la forêt cible, à l'aide d'un fichier .csv.
 ```
     New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith) 
-```   
-```
+    
     $csvData=[System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\batch.csv")
     New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name FabrikamMerger -SourceEndpoint Fabrikam -TargetDeliveryDomain "mail.contoso.com"
 ```

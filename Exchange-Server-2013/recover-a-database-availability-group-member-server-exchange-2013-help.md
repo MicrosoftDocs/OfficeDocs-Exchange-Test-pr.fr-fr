@@ -85,9 +85,13 @@ Pour vérifier que vous avez bien récupéré le membre du groupe de disponibili
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour vérifier l’intégrité et le statut du membre du groupe de disponibilité de base de données restauré.
     
-        Test-ReplicationHealth <ServerName>
-    
-        Get-MailboxDatabaseCopyStatus -Server <ServerName>
+       ```
+           Test-ReplicationHealth <ServerName>
+       ```
+
+       ```   
+           Get-MailboxDatabaseCopyStatus -Server <ServerName>
+       ```   
     
     L'ensemble des tests d'intégrité de réplication doivent réussir et le statut des bases de données et leurs index de contenu doivent être intègres.
 
