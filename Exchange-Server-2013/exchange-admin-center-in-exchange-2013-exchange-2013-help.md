@@ -59,27 +59,27 @@ La navigation intersite vous permet de basculer facilement entre vos déploiemen
 
 Il s’agit du premier niveau de navigation pour la plupart des tâches que vous exécuterez au sein du CAE. Le volet des fonctions est similaire à l’arborescence de la console EMC dans Exchange 2010. Cependant, dans Exchange 2013, le volet des fonctions est organisé par domaines de fonctions par opposition aux rôles serveur, et les recherches nécessitent moins de clics.
 
-  - **Destinataires   **C’est ici que vous gérerez les boîtes aux lettres, les groupes, les boîtes aux lettres de ressources, les contacts, les boîtes aux lettres partagées, ainsi que les migrations et les déplacements de boîtes aux lettres.
+  - **Destinataires** C’est ici que vous gérerez les boîtes aux lettres, les groupes, les boîtes aux lettres de ressources, les contacts, les boîtes aux lettres partagées, ainsi que les migrations et les déplacements de boîtes aux lettres.
 
-  - **Autorisations   **C’est ici que vous gérerez les rôles d’administrateur, les rôles d’utilisateur et les stratégies d’Outlook Web App.
+  - **Autorisations** C’est ici que vous gérerez les rôles d’administrateur, les rôles d’utilisateur et les stratégies d’Outlook Web App.
 
-  - **Gestion de la conformité   **C’est ici que vous gérerez la découverte électronique inaltérable, la conservation inaltérable, l’audit, la protection contre la perte de données (DLP), les stratégies de rétention, les balises de rétention et les règles de journal.
+  - **Gestion de la conformité** C’est ici que vous gérerez la découverte électronique inaltérable, la conservation inaltérable, l’audit, la protection contre la perte de données (DLP), les stratégies de rétention, les balises de rétention et les règles de journal.
 
-  - **Organisation   **C’est ici que vous gérerez les tâches appartenant à votre organisation Exchange, y compris le partage fédéré, les applications Outlook et les listes d’adresses.
+  - **Organisation** C’est ici que vous gérerez les tâches appartenant à votre organisation Exchange, y compris le partage fédéré, les applications Outlook et les listes d’adresses.
 
-  - **Protection   **C’est ici que vous gérerez la protection contre les programmes malveillants pour votre organisation.
+  - **Protection** C’est ici que vous gérerez la protection contre les programmes malveillants pour votre organisation.
 
-  - **Flux de messagerie   **C’est ici que vous gérerez les règles, rapports de remise, domaines acceptés, stratégies d’adresse de messagerie et connecteurs d’envoi et de réception.
+  - **Flux de messagerie** C’est ici que vous gérerez les règles, rapports de remise, domaines acceptés, stratégies d’adresse de messagerie et connecteurs d’envoi et de réception.
 
-  - **Mobile   **C’est ici que vous gérerez les appareils mobiles que vous autorisez à se connecter à votre organisation. Vous pouvez gérer les stratégies d’accès aux appareils mobiles et de boîtes aux lettres des appareils mobiles.
+  - **Mobile** C’est ici que vous gérerez les appareils mobiles que vous autorisez à se connecter à votre organisation. Vous pouvez gérer les stratégies d’accès aux appareils mobiles et de boîtes aux lettres des appareils mobiles.
 
-  - **Dossiers publics   **Dans Exchange 2010, vous deviez gérer les dossiers publics via la Console de gestion des dossiers publics, qui se trouvait en dehors de l’EMC dans la boîte à outils. Dans Exchange 2013, vous pouvez gérer des dossiers publics à partir de la zone de fonctionnalités **dossiers publics**.
+  - **Dossiers publics** Dans Exchange 2010, vous deviez gérer les dossiers publics via la Console de gestion des dossiers publics, qui se trouvait en dehors de l’EMC dans la boîte à outils. Dans Exchange 2013, vous pouvez gérer des dossiers publics à partir de la zone de fonctionnalités **dossiers publics**.
 
-  - **Messagerie unifiée   **C’est ici que vous gérerez les plans de numérotation de messagerie unifiée et les passerelles IP de messagerie unifiée.
+  - **Messagerie unifiée** C’est ici que vous gérerez les plans de numérotation de messagerie unifiée et les passerelles IP de messagerie unifiée.
 
-  - **Serveurs   **C’est ici que vous gérerez vos serveurs de boîtes aux lettres et d’accès au client, bases de données, groupes de disponibilité de base de données (DAG), répertoires virtuels et certificats.
+  - **Serveurs** C’est ici que vous gérerez vos serveurs de boîtes aux lettres et d’accès au client, bases de données, groupes de disponibilité de base de données (DAG), répertoires virtuels et certificats.
 
-  - **Hybride   **C’est ici que vous installerez et configurerez une organisation hybride.
+  - **Hybride** C’est ici que vous installerez et configurerez une organisation hybride.
 
 ## Onglets
 
@@ -173,7 +173,7 @@ La *vignette de l’utilisateur en cours* vous permet de fermer votre session du
 
   - **Désactiver la bulle d’aide**   La bulle d’aide affiche une aide contextuelle pour des champs spécifiques quand vous créez ou modifiez un objet. Vous pouvez désactiver l’aide de la bulle d’aide ou l’activer si elle a été désactivée.
 
-  - **Copyright et confidentialité   **Cliquez sur le lien de confidentialité et de copyright pour lire les informations de copyright et de confidentialité relatives à Exchange 2013.
+  - **Copyright et confidentialité** Cliquez sur le lien de confidentialité et de copyright pour lire les informations de copyright et de confidentialité relatives à Exchange 2013.
 
 ## Navigateurs pris en charge
 
