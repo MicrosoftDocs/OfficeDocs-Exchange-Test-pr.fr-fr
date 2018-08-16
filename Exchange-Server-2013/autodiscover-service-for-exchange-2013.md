@@ -73,7 +73,7 @@ Par ailleurs, un objet Active Directory appelé point de connexion de service (S
 
 L’objet SCP contient la liste des URL du service de découverte automatique faisant autorité pour la forêt. La cmdlet **Set-ClientAccessServer** permet de mettre à jour l'objet SCP. Pour plus d'informations, voir [Set-ClientAccessServer](https://technet.microsoft.com/fr-fr/library/bb125157\(v=exchg.150\)).
 
-> [!NOTE]
+> [!IMPORTANT]
 > Avant d'exécuter la cmdlet <strong>Set-ClientAccessServer</strong>, assurez-vous que le compte d'utilisateurs authentifiés sur le serveur d'accès au client dispose d'autorisations d'accès en lecture à l'objet SCP. Si les utilisateurs ne disposent pas des autorisations appropriées, ils ne pourront pas rechercher et lire des éléments dans l'objet SCP.
 
 

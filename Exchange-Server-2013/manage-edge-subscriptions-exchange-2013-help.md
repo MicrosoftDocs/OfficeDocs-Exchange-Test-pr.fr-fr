@@ -121,7 +121,7 @@ Il peut arriver que vous souhaitiez réabonner un serveur de transport Edge à 
 
   - Les informations d’identification du compte ESRA sont compromises.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Pour réabonner un serveur de transport Edge, exportez un nouveau fichier d’abonnement Edge sur le serveur de transport Edge, puis importez le fichier XML sur un serveur de boîtes aux lettres. Vous devez réabonner le serveur de transport Edge au même site Active Directory auquel il était abonné à l’origine. Vous ne devez pas commencer par supprimer l’abonnement Edge d’origine. Le processus de réabonnement remplacera l’abonnement Edge existant.
 
 
