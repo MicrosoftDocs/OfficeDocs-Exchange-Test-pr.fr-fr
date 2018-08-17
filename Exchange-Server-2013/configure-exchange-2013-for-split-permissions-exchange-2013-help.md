@@ -123,7 +123,7 @@ Pour configurer les autorisations fractionnées RBAC, procédez comme suit :
         
             Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
         
-        > [!NOTE]
+        > [!IMPORTANT]
         > Les membres du groupe de rôles Gestion de l’organisation, ou ceux auxquels est attribué le rôle de gestion des rôles, soit directement soit via un autre groupe de rôles ou groupe de sécurité universelle, peuvent ignorer ce contrôle de sécurité des délégués. Si vous souhaitez empêcher tout administrateur Exchange de s’ajouter au nouveau groupe de rôles, vous devez supprimer l’attribution de rôle entre le rôle de gestion des rôles et les administrateurs Exchange, puis l’attribuer à un autre groupe.
     
     5.  Recherchez toutes les attributions de rôle ordinaire et de délégation concernant le rôle Création du destinataire de messagerie à l’aide de la commande suivante. La commande affiche uniquement le nom (**Name**), le rôle (**Role**) et les propriétés **RoleAssigneeName**.

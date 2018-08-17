@@ -236,7 +236,7 @@ Une fois le nouveau lot créé, lancez la migration en exécutant la commande su
 
 Une fois cette étape terminée (l’état du lot est **Terminé**), vérifiez que toutes les données ont été copiées dans Groupes Office 365. À ce stade, dès lors que vous êtes satisfait de l’expérience des groupes, vous pouvez commencer à supprimer les dossiers publics migrés à partir de votre environnement Exchange 2013.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Bien qu’il existe des procédures prises en charge pour restaurer la migration et revenir aux dossiers publics, cela n’est pas possible quand les dossiers publics sources ont été supprimés. Consultez Comment puis-je restaurer les dossiers publics à partir de Groupes Office 365 ? pour obtenir plus d’informations.
 
 

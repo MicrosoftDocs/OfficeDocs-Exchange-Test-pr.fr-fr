@@ -46,7 +46,7 @@ Exchange ActiveSync est un protocole de synchronisation Microsoft Exchange optim
 > Exchange ActiveSync ne prend pas en charge les boîtes aux lettres partagées ou l’accès délégué.
 
 
-> [!NOTE]
+> [!IMPORTANT]
 > Les téléphones mobiles Windows Phone 7 prennent uniquement en charge un sous-ensemble de tous les paramètres de la stratégie de boîtes aux lettres d’Exchange ActiveSync. Pour une liste complète, consultez la rubrique Synchronisation de Windows Phone 7.
 
 

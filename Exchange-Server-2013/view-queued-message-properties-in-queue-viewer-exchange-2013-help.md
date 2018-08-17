@@ -91,8 +91,7 @@ Vous pouvez utiliser l'Afficheur des files d'attente de la Boîte à outils Exch
     
       - **Nombre de nouvelles tentatives**   Ce champ affiche le nombre de fois que la remise d'un message à une destination a été tentée.
 
-6.  
-    L'onglet **Informations sur le destinataire**affiche les informations détaillées suivantes sur les destinataires du message :
+6.  L'onglet **Informations sur le destinataire**affiche les informations détaillées suivantes sur les destinataires du message :
     
       - **Adresse**   Ce champ affiche l'adresse SMTP du destinataire du message. Cette valeur est extraite de `RCPT TO:` dans l'enveloppe du message.
     

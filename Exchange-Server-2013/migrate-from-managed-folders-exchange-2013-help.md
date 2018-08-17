@@ -21,7 +21,7 @@ Dans Microsoft Exchange Server 2013, la gestion des enregistrements de messager
 
 Une boîte aux lettres à laquelle est appliquée une stratégie de boîte aux lettres de dossier géré peut être migrée pour utiliser une stratégie de rétention. Pour ce faire, vous devez créer des balises de rétention équivalentes aux dossiers gérés associés à la stratégie de boîte aux lettres de dossier géré de l'utilisateur.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Avant de migrer des dossiers gérés vers des stratégies de rétention dans votre environnement de production, nous vous recommandons d'essayer le processus dans un environnement de test.
 
 
@@ -147,7 +147,7 @@ Les étapes suivantes permettent de migrer des utilisateurs à partir de cette s
 
 4.  Supprimez la stratégie de boîte aux lettres de dossier géré, puis appliquez la stratégie de rétention aux boîtes aux lettres utilisateur.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Une fois la stratégie de rétention appliquée à un utilisateur et l'Assistant Dossier géré lancé, les dossiers gérés de la boîte aux lettres utilisateur ne sont plus gérés.
 
 

@@ -85,7 +85,7 @@ Exemple : utilisation de l’environnement de ligne de commande Exchange Manage
 
     New-SendConnector -Name "EdgeSync - Site-A to Internet" -Usage Custom -AddressSpaces SMTP:*;100 -DNSRoutingEnabled $false -SmartHosts 192.168.10.1 -SmartHostAuthMechanism None -SourceTransportServers EdgeSubscriptionName
 
-> [!NOTE]
+> [!IMPORTANT]
 > Aucun mécanisme d’authentification de l’hôte actif n’est spécifié dans cet exemple. Veillez à configurer le bon mécanisme d’authentification et d’indiquer toutes les informations d’identification nécessaires lors de la création du connecteur d’hôte actif dans votre propre organisation Exchange.
 
 

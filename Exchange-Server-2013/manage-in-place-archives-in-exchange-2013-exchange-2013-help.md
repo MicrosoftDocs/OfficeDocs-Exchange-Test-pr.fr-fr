@@ -140,7 +140,7 @@ Pour vérifier que vous avez activé une archive locale pour une boîte aux lett
 
 Vous voulez peut-être désactiver l’archive d’utilisateur pour résoudre des problèmes ou pour déplacer la boîte aux lettres vers une version d’Exchange qui ne prend pas en charge l’archivage inaltérable. Si vous désactivez une archive locale, toutes les informations qu’elle contient seront conservées dans la base de données de boîtes aux lettres jusqu’à ce que le délai de rétention de cette dernière ait expiré et que l’archive soit définitivement supprimée. (Par défaut, Exchange conserve les boîtes aux lettres déconnectées, y compris les boîtes aux lettres d’archivage, pendant trente jours.)
 
-> [!NOTE]  
+> [!IMPORTANT]  
 > La désactivation des archives entraîne leur suppression de la boîte aux lettres et leur marquage pour suppression dans la base de données de boîtes aux lettres.
 
 
