@@ -25,7 +25,7 @@ Une opération de permutation de centre de données s'articule en quatre étapes
 
 1.  **Fermeture d’un centre de données exécuté partiellement**   Cette étape implique l’arrêt des services Exchange dans le centre de données principal, si ces derniers sont toujours en cours d’exécution. Cette étape est particulièrement importante pour le rôle serveur de boîtes aux lettres, car elle utilise un modèle haute disponibilité actif/passif. Si les services d'un centre de données partiellement défaillant ne sont pas arrêtés, il est possible que les problèmes de ce centre aient un impact négatif sur les services lors d'une nouvelle permutation vers le centre de données principal.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Si la fiabilité du réseau ou de l'infrastructure Active Directory a été compromise suite à une défaillance du centre de données principal, nous vous recommandons d'arrêter tous les services de messagerie jusqu'au rétablissement de l'intégrité de ces dépendances.
 
 
@@ -212,7 +212,7 @@ Le rôle serveur de boîtes aux lettres doit être le premier rôle commuté dan
     
     3.  Une fois les bases de données démontées, les URL du serveur d'accès au client doivent être déplacées du deuxième centre de données vers le centre de données principal. Pour cela, vous devez modifier l'enregistrement DNS des URL afin qu'il pointe vers le serveur d'accès au client ou le groupe de serveurs d'accès au client dans le centre de données principal. Le système réagira comme si un basculement de base de données s'était produit pour chaque base de données déplacée.
         
-        > [!NOTE]
+        > [!IMPORTANT]
         > Ne passez à l'étape suivante qu'une fois que les URL du serveur d'accès au client ont été déplacées et que les entrées du cache DNS et TTL ont expirée. L'activation des bases de données dans le centre de données principal avant le déplacement des URL du serveur d'accès au client vers le centre de données invalidera la configuration (par exemple, une base de données montée ne comportant aucun serveur d'accès au client dans son site Active Directory).
     
     4.  Étant donné que chacune des bases de données du centre de données principal est saine, elles peuvent être activées dans ce dernier en procédant à leur permutation. Cette opération est effectuée à l'aide de la cmdlet [Move-ActiveMailboxDatabase](https://technet.microsoft.com/fr-fr/library/dd298068\(v=exchg.150\)) pour chaque base de données à activer.

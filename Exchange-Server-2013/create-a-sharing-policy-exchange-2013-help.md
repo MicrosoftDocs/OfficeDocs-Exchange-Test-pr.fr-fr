@@ -19,7 +19,7 @@ _**Dernière rubrique modifiée :** 2015-04-07_
 
 Les stratégies de partage vous permettent de contrôler la manière dont les utilisateurs de votre organisation Exchange peuvent partager les informations de calendrier avec des utilisateurs extérieurs à votre organisation. Les stratégies de partage offrent un partage établi par utilisateur, et de personne à personne, des informations de calendrier et de contacts avec les différents types d’utilisateurs externes. Elles prennent en charge le partage des informations de calendrier avec des organisations fédérées externes (comme Office 365 ou une autre organisation Exchange sur site), des organisations non fédérées externes et les personnes ayant accès à Internet. Pour appliquer aux utilisateurs une stratégie de partage spécifique, consultez [Appliquer une stratégie de partage aux boîtes aux lettres](apply-a-sharing-policy-to-mailboxes-exchange-2013-help.md).
 
-> [!NOTE]
+> [!IMPORTANT]  
 > La création d’une stratégie de partage fait partie des étapes permettant de configurer le partage fédéré dans votre organisation Exchange. Vous devez configurer une approbation de fédération avec le système d’authentification Azure Active Directory pour votre organisation Exchange sur site afin de pouvoir partager des informations de calendrier avec d’autres organisations Exchange fédérées. Une approbation de fédération n’est pas requise pour les stratégies de partage Internet.
 
 

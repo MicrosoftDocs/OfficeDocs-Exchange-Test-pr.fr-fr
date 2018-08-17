@@ -175,7 +175,7 @@ Retour au début
 
 La réception d’une télécopie sur un réseau VoIP diffère de la réception d’une télécopie sur un appareil de télécopie standard ou à l’aide d’un serveur de télécopie localisé sur un réseau de type IP. Pour permettre l’envoi et la réception de télécopies sur un réseau VoIP, vous devez disposer d’une passerelle VoIP ou d’un PBX IP prenant en charge le protocole T.38, et d’un serveur le prenant également en charge. Le protocole T.38 permet d’effectuer des transmissions de télécopie de type IP pour des hôtes basés sur un réseau IP, tels que des ordinateurs clients, des imprimantes avec des fonctionnalités de télécopie intégrées et des serveurs tels qu’un serveur de boîtes aux lettres.
 
-> [!NOTE]
+> [!IMPORTANT]  
 > L’envoi et la réception de télécopies à l’aide de T.38 ou G.711 ne sont pas pris en charge dans un environnement où la messagerie unifiée et Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server sont intégrés.
 
 

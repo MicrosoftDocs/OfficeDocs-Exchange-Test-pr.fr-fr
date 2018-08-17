@@ -57,7 +57,7 @@ Lorsque vous utilisez le Centre d’administration Exchange (CAE) pour créer un
 
 4.  Dans **Dossier public**, entrez le nom du dossier public.
     
-    > [!NOTE]  
+    > [!IMPORTANT]  
     > N'utilisez pas de barre oblique inverse (\) dans le nom du dossier public créé.
 
 
@@ -71,7 +71,7 @@ Cet exemple permet de créer un dossier public appelé Reports dans le chemin d'
 
     New-PublicFolder -Name Reports -Path \Marketing\2013
 
-> [!NOTE]  
+> [!IMPORTANT]  
 > N'utilisez pas de barre oblique inverse (\) dans le nom du dossier public créé.
 
 

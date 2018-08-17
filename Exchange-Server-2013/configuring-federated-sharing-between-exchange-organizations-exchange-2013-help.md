@@ -31,7 +31,7 @@ Cette rubrique fournit un résumé des exigences et des étapes de configuration
 
 Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives au partage fédéré, consultez [Procédures de fédération](federation-procedures-exchange-2013-help.md).
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.
 
 

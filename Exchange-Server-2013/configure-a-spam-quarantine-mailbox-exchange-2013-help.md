@@ -107,7 +107,7 @@ Lorsque vous gérez votre boîte aux lettres de mise en quarantaine du courrier 
 
   - Utilisez le même profil Outlook pour la récupération des messages mis en quarantaine à partir de la boîte aux lettres de mise en quarantaine du courrier indésirable. L'application d'autorisations à un profil Outlook différent pour la récupération des messages n'est pas prise en charge. Vous ne pouvez pas utiliser un profil Outlook différent pour la récupération ou la diffusion des messages à partir de la boîte aux lettres de mise en quarantaine du courrier indésirable.
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Les NDR qui sont identifiés comme courrier indésirable sont supprimés, même si leur valeur SCL indique qu'ils devraient être mis en quarantaine. Les notifications d'échec de remise ne sont pas remises à la boîte aux lettres de mise en quarantaine du courrier indésirable. Pour détecter de tels messages, utilisez l'enregistrement de l'agent ou le journal de suivi des messages. Pour plus d'informations, consultez la rubrique <a href="anti-spam-agent-logging-exchange-2013-help.md">Journalisation de l’agent anti-courrier indésirable</a>.
 
 

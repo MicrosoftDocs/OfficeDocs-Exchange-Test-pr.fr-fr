@@ -163,7 +163,7 @@ Quand une organisation décide de standardiser les méthodes d’accès aux donn
 
 Les stratégies utilisent le contrôle d’autorisation [Nécessite une application cliente approuvée](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference). Il garantit que seules les applications Microsoft qui ont intégré le Kit de développement logiciel (SDK) Intune bénéficient de droits d’accès.
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Pour recourir à des stratégies d’accès conditionnel basées sur l’application, l’application Microsoft Authenticator doit être installée sur les appareils iOS. Pour les appareils Android, c’est le Portail d’entreprise Intune qui est utilisé. Pour en savoir plus, consultez l’article <a href="https://docs.microsoft.com/intune/app-based-conditional-access-intune">Accès conditionnel basé sur l’application avec Intune</a>.
 
 
@@ -199,7 +199,7 @@ Créez des stratégies de protection des applications Intune pour iOS et Androi
 
 Par ailleurs, songez à déployer des paramètres de stratégie de protection avancée, tels que **Restreindre les opérations Couper, copier et coller avec d’autres applications** pour prévenir les fuites des données d’entreprise. Pour en savoir plus sur les paramètres disponibles, consultez les articles [Paramètres de la stratégie de protection des applications Android dans Microsoft Intune](https://docs.microsoft.com/intune/app-protection-policy-settings-android) et [Paramètres de stratégie de protection d’application iOS](https://docs.microsoft.com/intune/app-protection-policy-settings-ios).
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Pour appliquer les stratégies de protection des applications Intune pour les applications des appareils Android non inscrits dans Intune, l’utilisateur doit également installer le portail d’entreprise Intune. Pour en savoir plus, consultez l’article <a href="https://docs.microsoft.com/fr-fr/intune/app-protection-enabled-apps-android">Ce qui se passe quand votre application Android est gérée par des stratégies de protection d’application</a>.
 
 

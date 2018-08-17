@@ -19,7 +19,7 @@ _**Dernière rubrique modifiée :** 2016-12-09_
 
 Vous devez configurer correctement les passerelles VoIP et les autocommutateurs privés (PBX) lorsque vous déployez la messagerie unifiée dans votre organisation. Si vous déployez la messagerie unifiée dans un environnement hybride, vous devrez également configurer correctement vos contrôleurs de frontière de session. Pour ce faire, vous devez configurer l’interface ou les interfaces des passerelles VoIP, les autocommutateurs privés IP et les contrôleurs de frontière de session que vous utilisez pour communiquer avec les serveurs d’accès au client qui exécutent le service de routage des appels de la messagerie unifiée de Microsoft Exchange et avec les serveurs de boîtes aux lettres qui exécutent le service de messagerie unifiée de Microsoft Exchange.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Lorsque vous exécutez des tâches administratives sur une passerelle VoIP, un PBX IP ou un contrôleur de frontière de session à l’aide d’un navigateur web, les requêtes HTTP envoyées sur le réseau ne sont pas chiffrées. Pour augmenter le niveau de sécurité des passerelles VoIP, des PBX IP ou des contrôleurs de frontière de session sur votre réseau, utilisez le protocole IPsec (Internet Protocol security) ou SSL (Secure Sockets Layer) pour protéger les informations d’identification et données d’administration transmises sur le réseau. Il est également recommandé d’utiliser un mécanisme d’authentification efficace et des mots de passe administrateur complexes afin de protéger les informations d’identification d’administration du périphérique.
 
 

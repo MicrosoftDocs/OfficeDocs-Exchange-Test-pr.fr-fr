@@ -63,7 +63,7 @@ Revenir en haut de la page
 
 Cet exemple permet d'effectuer une recherche dans la boîte aux lettres d'April Stewart au niveau des messages dont le champ Objet contient l'expression « Your bank statement » et de supprimer les messages de la boîte aux lettres source sans copier les résultats de la recherche dans un autre dossier. Comme expliqué précédemment, le rôle de gestion Importation/Exportation de boîte aux lettres doit vous avoir été attribué pour que vous puissiez supprimer des messages de la boîte aux lettres d’un utilisateur.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Quand vous utilisez la cmdlet <strong>Search-Mailbox</strong> avec le commutateur <em>DeleteContent</em>, les messages sont définitivement supprimés de la boîte aux lettres source. Avant de supprimer définitivement des messages, nous vous conseillons d'utiliser le commutateur <em>LogOnly</em> pour générer un journal des messages identifiés lors de la recherche avant qu'ils ne soient supprimés ou de copier les messages vers une autre boîte aux lettres avant leur suppression de la boîte aux lettres source.
 
 

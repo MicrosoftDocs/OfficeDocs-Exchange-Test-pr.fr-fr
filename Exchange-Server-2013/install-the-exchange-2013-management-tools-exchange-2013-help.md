@@ -49,7 +49,7 @@ Pour des informations supplémentaires sur la gestion d'Exchange 2013, consulte
 
 3.  Lancez le Programme d'installation de Exchange 2013 en double-cliquant sur `Setup.exe`
     
-    > [!NOTE]
+    > [!IMPORTANT]  
     > Si le contrôle d'accès des utilisateurs est activé, vous devez cliquer avec le bouton droit sur <code>Setup.exe</code> et sélectionner <strong>Exécuter en tant qu'administrateur</strong>.
 
 
@@ -122,7 +122,7 @@ Pour des informations supplémentaires sur la gestion d'Exchange 2013, consulte
 
 3.  Depuis l'invite de commandes, exécutez la commande suivante :
     
-    > [!NOTE]
+    > [!IMPORTANT]  
     > Si le contrôle de compte d'utilisateur est activé, vous devez exécuter<code>Setup.exe</code> à partir d'une invite de commandes élevée.
     
         Setup.exe /Role:ManagementTools /IAcceptExchangeServerLicenseTerms

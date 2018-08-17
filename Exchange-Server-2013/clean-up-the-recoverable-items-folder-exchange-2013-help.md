@@ -126,7 +126,7 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
     
         Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Après exécution de cette commande, il faut parfois une heure pour désactiver la récupération d’élément unique ou la conservation pour litige. Nous vous recommandons d’effectuer la prochaine étape uniquement après écoulement de cette période.
 
 
@@ -146,7 +146,7 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
     
         Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Après exécution de cette commande, il faut parfois une heure pour activer la récupération d’élément unique ou la conservation pour litige. Nous vous recommandons d’activer l’Assistant Dossier géré et d’autoriser l’accès au client (étapes 11 et 12) uniquement après écoulement de cette période.
 
 

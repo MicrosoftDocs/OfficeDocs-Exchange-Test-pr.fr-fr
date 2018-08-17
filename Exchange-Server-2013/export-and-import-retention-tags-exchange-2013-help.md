@@ -64,7 +64,7 @@ Pour les autres tâches de gestion relatives à la gestion des enregistrements d
 
 2.  Exécutez le script Export-RetentionTags.ps1 pour exporter des balises de rétention dans un fichier XML.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Si vous importez ou exportez des balises de rétention et les règles de rétention à Exchange Online, vous devez vous connecter votre session Windows PowerShell à Exchange Online. Pour plus d’informations, consultez <a href="https://technet.microsoft.com/fr-fr/library/jj984289(v=exchg.150)">Connexion à Exchange Online à l'aide de Remote PowerShell</a>.
     
         .\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
@@ -85,7 +85,7 @@ Pour vérifier que les balises et les stratégies de rétention ont bien été e
 
 2.  Exécutez le script Import-RetentionTags.ps1 pour importer les balises de rétention d'un fichier XML précédemment exporté.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Si vous importez ou exportez des balises de rétention et les règles de rétention à Exchange Online, vous devez vous connecter votre session Windows PowerShell à Exchange Online. Pour plus d’informations, consultez <a href="https://technet.microsoft.com/fr-fr/library/jj984289(v=exchg.150)">Connexion à Exchange Online à l'aide de Remote PowerShell</a>.
     
     > [!NOTE]

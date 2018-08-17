@@ -59,7 +59,7 @@ Vous pouvez utiliser l’Assistant de déploiement pour les scénarios de déplo
     
     Pour plus d'informations sur ce scénario, consultez la rubrique [Déploiements hybrides Exchange Server](https://technet.microsoft.com/fr-fr/library/jj200581\(v=exchg.150\)).
     
-    > [!NOTE]
+    > [!IMPORTANT]  
     > Si vous avez une organisation locale Exchange 2003 et que vous souhaitez configurer un nouveau déploiement hybride avec Office 365, vous devez ajouter un ou plusieurs serveurs exécutant Exchange 2010 Server Service Pack 3, et non des serveurs Exchange 2013, à votre organisation locale. Pour cela, nous vous recommandons vivement d’utiliser l’option de déploiement hybride Exchange 2010 dans l’<a href="https://technet.microsoft.com/fr-fr/exdeploy2010">Assistant de déploiement d’Exchange Server</a>.
 
 

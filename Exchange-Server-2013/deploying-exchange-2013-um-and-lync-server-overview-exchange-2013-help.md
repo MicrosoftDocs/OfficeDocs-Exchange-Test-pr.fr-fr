@@ -55,7 +55,7 @@ La liste suivante montre les étapes faciles du déploiement pour la messagerie 
 
 7.  Exécutez le script ExchUcUtil.ps1 à partir du \<dossier d’installation Exchange\>\\Exchange Server\\Script sur le serveur de boîtes aux lettres.
     
-    > [!NOTE]
+    > [!IMPORTANT]  
     > Le script ExchUcUtil.ps1 crée une ou plusieurs passerelles IP de messagerie unifiée pour l’intégration Lync. Vous devez désactiver les appels sortants sur toutes les passerelles IP de messagerie unifiée à l’exception de celle que le script a créée. Ceci inclut la désactivation des appels sortants sur les passerelles IP de messagerie unifiée qui ont été créées avant l’exécution du script. Pour désactiver les appels sortants sur une passerelle IP de messagerie unifiée, consultez la rubrique <a href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">Désactiver les appels sortants sur les passerelles IP de messagerie unifiée</a>.
 
 
@@ -132,7 +132,7 @@ Vous devez réaliser les étapes suivantes pour configurer la messagerie unifié
 
 1.  Créez un ou plusieurs plans de numérotation URI SIP de messagerie unifiée, chacun correspondant à un profil d’emplacement Lync Server. Vous devez créer un profil d’emplacement Enterprise Voice pour chaque plan de commutation des appels de messagerie unifiée Exchange. Vous pouvez utiliser la cmdlet **Get-UMDialPlan** pour obtenir le nom de domaine complet d’un plan de numérotation URI SIP. Pour plus d’informations sur la création d’un plan de numérotation avec un URI SIP, voir [Créer un plan de numérotation de messagerie unifiée](create-a-um-dial-plan-exchange-2013-help.md).
     
-    > [!NOTE]
+    > [!IMPORTANT]  
     > Au moment d’intégrer la messagerie unifiée Exchange et Lync Server, vous jugerez sans doute inutile de configurer des règles de numérotation ou des groupes de règles de numérotation dans la messagerie unifiée Exchange. Lync Server est conçu pour acheminer des appels (routage) et convertir des numéros pour les utilisateurs de votre organisation. Il procède également de même lorsque les appels sont effectués par la messagerie unifiée Exchange pour le compte des utilisateurs.
 
 
@@ -184,7 +184,7 @@ Vous devez réaliser les étapes suivantes pour configurer la messagerie unifié
 
 7.  Lorsque vous activez la messagerie vocale pour les utilisateurs, créez une adresse SIP pour les utilisateurs qui utiliseront Enterprise Voice. Dans la plupart des cas, cette adresse SIP sera la même adresse SIP qui sera utilisée lorsqu’un utilisateur est activé pour Enterprise Voice. Pour plus d’informations, consultez la rubrique [Activation de la messagerie vocale pour un utilisateur](enable-a-user-for-voice-mail-exchange-2013-help.md).
     
-    > [!NOTE]
+    > [!IMPORTANT]  
     > Les utilisateurs qui sont associés à un plan de numérotation URI SIP ne peuvent pas recevoir de télécopies entrantes. Ceci est dû au fait que les appels vocaux et de télécopie entrants sont routés via un serveur de médiation et que la télécopie n’est pas prise en charge lorsque vous utilisez un serveur de médiation.
 
 
@@ -218,7 +218,7 @@ Vous devez également exécuter les tâches suivantes pour configurer Lync Serve
 
 Après avoir configuré Lync Server et les serveurs de messagerie unifiée, vous devez permettre à l’utilisateur d’utiliser Lync Server et installer Lync sur l’ordinateur client de l’utilisateur.
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Lors de l’intégration de la messagerie unifiée et de Lync Server, les notifications d’appels manqués ne sont pas disponibles pour les utilisateurs qui ont une boîte aux lettre située sur un serveur de boîtes aux lettres Exchange 2007 ou Exchange 2010. Une notification d’appel manqué est générée lorsqu’un utilisateur se déconnecte avant l’envoi de l’appel vers un serveur de boîtes aux lettres.
 
 
