@@ -274,7 +274,7 @@ Le tableau suivant dresse la liste des propriétés de message qui déclenchent 
 </table>
 
 
-> [!NOTE]
+> [!IMPORTANT]
 > La protection de page de copie sur écriture n’enregistre pas de version de la réunion lorsque l’organisateur d’une réunion reçoit des réponses des participants et que les informations de suivi de la réunion sont mises jour. En outre, les changements apportés aux flux RSS ne sont pas pris en compte par la protection de page de copie sur écriture.
 
 

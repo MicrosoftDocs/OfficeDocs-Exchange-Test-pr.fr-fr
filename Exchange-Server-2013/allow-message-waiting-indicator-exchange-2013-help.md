@@ -351,7 +351,7 @@ Pour que les notifications par SMS pour les messages vocaux et les appels manqu�
 
 4.  Le paramètre par défaut étant `None`, vous devez exécuter la commande suivante à partir de l'environnement de ligne de commande Exchange Management Shell et définir l'option de notification par SMS sur `VoiceMailAndMissedCalls` ou `VoiceMail`. Par exemple : `Set-UMMailbox- -id MyUMMailbox -UMSMSNotificationOption VoiceMailAndMissedCalls`.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Le paramètre <em>AllowSMSNotification</em> sur la stratégie de boîte aux lettres de messagerie unifiée et le paramètre <em>UMSMSNotificationOption</em> sur la boîte aux lettres de l’utilisateur doivent avoir la valeur <code>$true</code> pour que les notifications par SMS fonctionnent.
 
 

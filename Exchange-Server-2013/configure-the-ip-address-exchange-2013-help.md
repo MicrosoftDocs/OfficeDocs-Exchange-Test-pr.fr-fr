@@ -49,7 +49,7 @@ Pour les autres tâches de gestion relatives aux passerelles IP de messagerie un
 
 3.  Cliquez sur **Enregistrer** pour enregistrer vos modifications.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Si vous utilisez un nom de domaine complet, et non une adresse IP, pour la passerelle IP de messagerie unifiée, vérifiez que les enregistrements DNS corrects ont été créés.
 
 

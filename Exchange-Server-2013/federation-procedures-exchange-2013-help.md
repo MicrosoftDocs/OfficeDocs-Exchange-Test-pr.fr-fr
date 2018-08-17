@@ -33,6 +33,6 @@ _**Dernière rubrique modifiée :** 2017-02-28_
 
 [Configurer l’authentification OAuth entre des organisations Exchange et Exchange Online](configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help.md)
 
-> [!NOTE]
+> [!IMPORTANT]
 > Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.
 

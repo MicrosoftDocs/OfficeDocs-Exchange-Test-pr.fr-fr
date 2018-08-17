@@ -23,7 +23,7 @@ Le programme d’installation requiert que l’utilisateur connecté lors de l�
 
 Pour résoudre ce problème, accordez à l’utilisateur connecté des autorisations appropriées ou ouvrez une session à l’aide d’un compte possédant ces autorisations, puis exécutez de nouveau le programme d’installation d’Exchange 2013.
 
-> [!NOTE]
+> [!IMPORTANT]
 > L’installation inter-forêts d’Exchange 2013 n’est pas prise en charge. Utilisez un compte membre de la forêt Active Directory dans laquelle vous installez Exchange 2013.
 
 

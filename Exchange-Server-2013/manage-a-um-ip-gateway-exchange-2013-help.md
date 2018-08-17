@@ -79,7 +79,7 @@ Cet exemple permet à la passerelle IP de messagerie unifiée de fonctionner co
 
     Set-UMIPGateway -Identity MyUMIPGateway -Simulator $true
 
-> [!NOTE]  
+> [!IMPORTANT]  
 > Il existe une période de latence avant que toutes les modifications que vous apportez à la configuration d'une passerelle IP de messagerie unifiée se répercutent sur tous les serveurs Exchange qui se trouvent dans le même plan de numérotation de messagerie unifiée que la passerelle IP de messagerie unifiée.
 
 

@@ -85,7 +85,7 @@ Si vous utilisez le CAE pour afficher les propriétés d’un répertoire virtue
     
       - **Utiliser l'authentification basée sur des formulaires**   L'authentification basée sur des formulaires fournit une sécurité optimisée pour les répertoires virtuels Outlook Web App. L'authentification basée sur des formulaires crée une page de connexion pour Outlook Web App. Vous pouvez configurer le type d'invite de connexion utilisé par l'authentification basée sur des formulaires. Par exemple, vous pouvez configurer une authentification basée sur des formulaires pour demander aux utilisateurs qu'ils fournissent leurs informations de nom d'utilisateur et de domaine, au format domaine\\nom d'utilisateur dans la page de connexion d'Outlook Web App.
         
-        > [!NOTE]
+        > [!IMPORTANT]
         > L'authentification basée sur des formulaires ne sera pas sécurisée tant que la SSL ne sera pas activée.
         
         Activez l'une des options suivantes :
