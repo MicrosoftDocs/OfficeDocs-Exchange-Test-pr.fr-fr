@@ -1,5 +1,5 @@
 ﻿---
-title: 'Désactiver ou activer la journalisation des notifications d’appel en absence et de la messagerie vocale: Exchange 2013 Help'
+title: 'Désactiver/activer journ. des notif. d’appel en absence et de la messag. voc.'
 TOCTitle: Désactiver ou activer la journalisation des notifications d’appel en absence et de la messagerie vocale
 ms:assetid: 5164a92e-69e6-4339-b80c-0cfbf0dc0198
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb201690(v=EXCHG.150)

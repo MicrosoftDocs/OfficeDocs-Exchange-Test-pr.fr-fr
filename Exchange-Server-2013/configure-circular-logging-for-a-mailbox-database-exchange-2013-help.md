@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer la journalisation circulaire pour une base de données de boîte aux lettres: Exchange 2013 Help'
+title: 'Config. la journal. circulaire pour une BDD de BAL: Exchange 2013 Help'
 TOCTitle: Configurer la journalisation circulaire pour une base de données de boîte aux lettres
 ms:assetid: 29cbd7cd-382b-4e0d-8368-2e49e75df2fc
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn756374(v=EXCHG.150)

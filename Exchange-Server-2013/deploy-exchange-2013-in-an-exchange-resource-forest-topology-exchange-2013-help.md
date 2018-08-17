@@ -1,5 +1,5 @@
 ﻿---
-title: 'Déploiement d’Exchange 2013 dans une topologie de forêt ressource Exchange: Exchange 2013 Help'
+title: 'Déploiement d’Exchange 2013 dans une topologie de forêt ressource Exchange'
 TOCTitle: Déploiement d’Exchange 2013 dans une topologie de forêt ressource Exchange
 ms:assetid: 537a7b2b-d002-40a6-84ae-fd02635f9e23
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998031(v=EXCHG.150)

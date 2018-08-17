@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer Outlook pour afficher l’expéditeur d’origine dans la boîte aux lettres de mise en quarantaine: Exchange 2013 Help'
+title: 'Config. Outlook pr voir l’expéditeur d’origine ds la BAL de mise en quarant.'
 TOCTitle: Configurer Outlook pour afficher l’expéditeur d’origine dans la boîte aux lettres de mise en quarantaine
 ms:assetid: 9249425d-1b06-48a0-ad95-c4eefb641ff4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee861109(v=EXCHG.150)

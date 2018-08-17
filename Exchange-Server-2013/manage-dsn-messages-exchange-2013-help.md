@@ -1,5 +1,5 @@
 ﻿---
-title: "Gestion des messages de notification d'état de remise (DSN): Exchange 2013 Help"
+title: 'Gérer des messages de notification d’état de remise (DSN): Exchange 2013 Help'
 TOCTitle: Gestion des messages de notification d'état de remise (DSN)
 ms:assetid: 23c9d844-6fc7-44c9-a308-587338281611
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa996803(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer ou désactiver Exchange ActiveSync pour une boîte aux lettres: Exchange 2013 Help'
+title: 'Activer ou désactiver Exchange ActiveSync pour une BAL: Exchange 2013 Help'
 TOCTitle: Activer ou désactiver Exchange ActiveSync pour une boîte aux lettres
 ms:assetid: dcf7c05b-b1b9-4b0f-800d-fec9f2ddc9e4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124809(v=EXCHG.150)

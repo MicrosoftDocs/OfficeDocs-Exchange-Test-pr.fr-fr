@@ -1,5 +1,5 @@
 ﻿---
-title: 'Ajouter ou supprimer des adresses de messagerie pour une boîte aux lettres: Exchange 2013 Help'
+title: 'Ajouter ou supprimer des adresses de messag. pour une BAL: Exchange 2013 Help'
 TOCTitle: Ajouter ou supprimer des adresses de messagerie pour une boîte aux lettres
 ms:assetid: 93e2d9a4-7558-4509-8641-8381a7eb674f
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb123794(v=EXCHG.150)

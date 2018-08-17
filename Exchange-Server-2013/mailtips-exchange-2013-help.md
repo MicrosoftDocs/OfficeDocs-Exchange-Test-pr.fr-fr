@@ -127,6 +127,7 @@ Le tableau suivant répertorie les infos-courrier disponibles dans Exchange 201
 <p>Par défaut, l'info-courrier est désactivée. Vous pouvez l'activer à l'aide de la cmdlet <strong>Set-OrganizationConfig</strong>. Pour plus d'informations, consultez la rubrique <a href="mailtips-over-organization-relationships-exchange-2013-help.md">Infos-courrier sur les relations de l’organisation</a>.</p>
 <p>Si une partie de vos boîtes aux lettres utilisateur est hébergée sur Exchange Online et que vous vous trouvez dans une coexistence avec un scénario Exchange Online, le paramètre sur l'objet de domaine distant qui représente la partie distante de votre organisation a un impact direct sur le traitement de l'info-courrier.</p>
 <p>Si le domaine distant est configuré comme domaine interne (en définissant le paramètre <em>IsInternal</em> sur l'objet du domaine distant sur <code>$true</code>), n'importe quel destinataire de ce domaine distant sera traité comme interne ; par conséquent, l'info-courrier des destinataires externes ne s'affichera pas. Cependant, si le domaine distant n'est pas configuré comme domaine interne, les destinataires dans ce domaine seront considérés comme externes et l'info-courrier s'affichera lorsqu'un message sera rédigé à ces destinataires.</p>
+
 > [!NOTE]
 > Cette info-courrier n'est pas évaluée à la rédaction d'un message destiné à un groupe de distribution dans le domaine distant.
 
@@ -165,6 +166,7 @@ Le tableau suivant répertorie les infos-courrier disponibles dans Exchange 201
 <li><p>Paramètre de taille maximale de réception sur la boîte aux lettres du destinataire</p></li>
 <li><p>Restriction de taille maximale des messages pour l'organisation</p></li>
 </ul>
+
 > [!NOTE]
 > En raison de la complexité de la mise en œuvre, les limites de taille sur les connecteurs de votre organisation ne sont pas prises en compte.
 

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Événements et erreurs de gestion des enregistrements de messagerie: Exchange 2013 Help'
+title: 'Événements et erreurs de gestion des enregist. de messag.: Exchange 2013 Help'
 TOCTitle: Événements et erreurs de gestion des enregistrements de messagerie
 ms:assetid: 8bc3f5ae-403b-45af-86c1-b2fccab34e63
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb310783(v=EXCHG.150)
@@ -160,6 +160,7 @@ Le tableau suivant présente la liste des événements que vous pouvez utiliser
 <td><p>Informations</p></td>
 <td><p>LogAlways</p></td>
 <td><p>Service &lt;<em>service</em>&gt;. &lt;<em>service</em>&gt; pour la base de données &lt;<em>mailbox</em>&gt; quitte une fenêtre de temps programmée. &lt;<em>number</em>&gt; boîtes aux lettres sur &lt;<em>number</em>&gt; ont été traitées. &lt;<em>number</em>&gt; boîtes aux lettres ont été ignorées en raison d'erreurs. &lt;<em>number</em>&gt; boîtes aux lettres ont été traitées séparément. &lt;<em>number</em>&gt; boîtes aux lettres n'ont pas été traitées par manque de temps.</p>
+
 > [!NOTE]
 > L'Assistant Dossier géré reprendra là où il en était lors de sa prochaine exécution.
 

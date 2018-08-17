@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer des quotas d’archivage local pour une archive personnelle (locale): Exchange 2013 Help'
+title: 'Configurer des quotas d’archivage local pour une archive personnelle (locale)'
 TOCTitle: Configurer des quotas d’archivage local pour une archive personnelle (locale)
 ms:assetid: f10e77c7-e1d4-415a-bef9-cb3f00e74c34
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee633489(v=EXCHG.150)

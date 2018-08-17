@@ -1,5 +1,5 @@
 ﻿---
-title: 'Exécuter un rapport de suspension pour litige par boîte aux lettres: Exchange 2013 Help'
+title: 'Exécuter un rapport de suspension pour litige par BAL: Exchange 2013 Help'
 TOCTitle: Exécuter un rapport de suspension pour litige par boîte aux lettres
 ms:assetid: 98c46226-2f48-42c6-a741-34bb5944f519
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ150542(v=EXCHG.150)

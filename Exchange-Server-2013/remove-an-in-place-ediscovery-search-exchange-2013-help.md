@@ -1,5 +1,5 @@
 ﻿---
-title: 'Suppression d’une recherche de découverte électronique inaltérable: Exchange 2013 Help'
+title: 'Supprimer une recherche de découverte électr. inaltérable: Exchange 2013 Help'
 TOCTitle: Suppression d’une recherche de découverte électronique inaltérable
 ms:assetid: 78461a78-1255-4a26-9d36-c6b8eb82a4f9
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd298078(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: "Procédures de langages, les invites et le message d'accueil de la messagerie unifiée: Exchange 2013 Help"
+title: 'Procédures de langages, invites et message d’accueil de la MU: Exchange 2013'
 TOCTitle: Procédures de langages, les invites et le message d'accueil de la messagerie unifiée
 ms:assetid: 935bcf76-f27d-406e-962b-3adb014cf76e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ863293(v=EXCHG.150)

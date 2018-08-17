@@ -1,5 +1,5 @@
 ﻿---
-title: "Logiciel anti-virus du système d'exploitation sur les serveurs Exchange: Exchange 2013 Help"
+title: 'Logiciel anti-virus du système d’exploitation sur les serveurs Exchange'
 TOCTitle: Logiciel anti-virus du système d'exploitation sur les serveurs Exchange
 ms:assetid: 7cef6017-7a55-41f3-a636-1ca4fce575b1
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb332342(v=EXCHG.150)

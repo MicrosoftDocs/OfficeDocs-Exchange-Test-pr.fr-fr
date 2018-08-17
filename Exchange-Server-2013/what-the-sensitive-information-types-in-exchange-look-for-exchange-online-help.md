@@ -1,5 +1,5 @@
 ﻿---
-title: 'Éléments recherchés par les types d’informations sensibles dans Exchange: Exchange 2013 Help'
+title: 'Éléments recherchés par les types d’informations sensibles dans Exchange'
 TOCTitle: Éléments recherchés par les types d’informations sensibles
 ms:assetid: 98b81f9c-87bb-4905-8e53-04621c3ae74d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ150541(v=EXCHG.150)

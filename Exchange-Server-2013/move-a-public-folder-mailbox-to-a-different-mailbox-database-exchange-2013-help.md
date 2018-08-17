@@ -1,5 +1,5 @@
 ﻿---
-title: "Déplacement d'une boîte aux lettres de dossiers publics vers une autre base de données de boîtes aux lettres: Exchange 2013 Help"
+title: 'Déplacement d’une BAL de dossiers publics vers une autre BDD de BAL'
 TOCTitle: Déplacement d'une boîte aux lettres de dossiers publics vers une autre base de données de boîtes aux lettres
 ms:assetid: 67601d45-4824-4ae6-9a7e-b645ec3af4d3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ906434(v=EXCHG.150)

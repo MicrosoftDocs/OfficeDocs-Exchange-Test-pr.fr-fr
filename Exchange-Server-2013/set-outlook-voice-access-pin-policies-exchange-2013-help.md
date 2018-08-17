@@ -1,5 +1,5 @@
 ﻿---
-title: 'Définir des stratégies de code confidentiel de Outlook Voice Access: Exchange 2013 Help'
+title: 'Définir des strat. de code confidentiel de OVA: Exchange 2013 Help'
 TOCTitle: Définir des stratégies de code confidentiel de Outlook Voice Access
 ms:assetid: 5b2800b7-bfa6-4282-975c-0706ae25ad64
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998285(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: "Configurer le groupe d'utilisateurs que les utilisateurs Outlook Voice Access peuvent contacter: Exchange 2013 Help"
+title: 'Config. du groupe d’utilisateurs que les utilisateurs OVA peuvent contacter'
 TOCTitle: Configurer le groupe d'utilisateurs que les utilisateurs Outlook Voice Access peuvent contacter
 ms:assetid: a8dc0f9e-dc86-4128-af63-d4e550aed5bb
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee423551(v=EXCHG.150)

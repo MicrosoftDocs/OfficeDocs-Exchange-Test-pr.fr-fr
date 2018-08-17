@@ -1,5 +1,5 @@
 ﻿---
-title: 'Envoi et réception de messages électroniques chiffrés et signés S/MIME: Exchange 2013 Help'
+title: 'Envoi et réception d’e-mails chiffrés et signés S/MIME: Exchange 2013 Help'
 TOCTitle: Envoi et réception de messages électroniques chiffrés et signés S/MIME
 ms:assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn626157(v=EXCHG.150)

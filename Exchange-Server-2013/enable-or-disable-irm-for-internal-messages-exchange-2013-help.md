@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer ou désactiver la technologie IRM pour les messages internes: Exchange 2013 Help'
+title: 'Activer/désactiver la technologie IRM pour msg internes: Exchange 2013 Help'
 TOCTitle: Activer ou désactiver la technologie IRM pour les messages internes
 ms:assetid: a6a17f57-5304-41f1-954d-7301857d54a1
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124077(v=EXCHG.150)

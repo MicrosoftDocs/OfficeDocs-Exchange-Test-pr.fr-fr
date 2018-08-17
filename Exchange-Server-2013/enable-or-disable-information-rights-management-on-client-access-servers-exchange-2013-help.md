@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer ou désactiver la gestion des droits relatifs à l’information (IRM) sur les serveurs d’accès au client: Exchange 2013 Help'
+title: 'Activer ou désactiver la gestion de droits (IRM) sur les srv d’accès au client'
 TOCTitle: Activer ou désactiver la gestion des droits relatifs à l’information (IRM) sur les serveurs d’accès au client
 ms:assetid: c7ce069b-a572-4755-90a3-7105472e4c83
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd876938(v=EXCHG.150)

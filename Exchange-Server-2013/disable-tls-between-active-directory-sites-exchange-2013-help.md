@@ -1,5 +1,5 @@
 ﻿---
-title: 'Désactivation du chiffrement TLS entre des sites Active Directory: Exchange 2013 Help'
+title: 'Désactiv. du chiffrement TLS entre des sites AD: Exchange 2013 Help'
 TOCTitle: Désactivation du chiffrement TLS entre des sites Active Directory
 ms:assetid: 1e1a0acf-24e7-4f94-9b33-603a4e0a812c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd876856(v=EXCHG.150)

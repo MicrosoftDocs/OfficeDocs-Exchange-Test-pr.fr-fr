@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestion des stratégies de configuration des boîtes aux lettres de site: Exchange 2013 Help'
+title: 'Gestion des stratégies de config. des BAL de site: Exchange 2013 Help'
 TOCTitle: Gestion des stratégies de configuration des boîtes aux lettres de site
 ms:assetid: 2f160d1a-a031-461f-8d29-c9cd49ca1645
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ710340(v=EXCHG.150)

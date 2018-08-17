@@ -1,5 +1,5 @@
 ﻿---
-title: 'Ajouter un rôle à un utilisateur ou un groupe de sécurité universel: Exchange 2013 Help'
+title: 'Ajouter un rôle à un utlsr ou un grp de sécurité universel: Exchange 2013 Help'
 TOCTitle: Ajouter un rôle à un utilisateur ou un groupe de sécurité universel
 ms:assetid: ae5608de-a141-4714-8876-bce7d2a22cb5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd351056(v=EXCHG.150)

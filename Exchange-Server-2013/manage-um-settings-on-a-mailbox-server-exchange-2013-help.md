@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gérer les paramètres de messagerie unifiée sur un serveur de boîtes aux lettres: Exchange 2013 Help'
+title: 'Gérer les paramètres de MU sur un serveur de BAL: Exchange 2013 Help'
 TOCTitle: Gérer les paramètres de messagerie unifiée sur un serveur de boîtes aux lettres
 ms:assetid: 6df4853d-21d2-473f-b0ca-ebc996d8794a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998815(v=EXCHG.150)

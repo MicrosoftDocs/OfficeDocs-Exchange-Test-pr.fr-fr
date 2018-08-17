@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestion de l’accès des utilisateurs aux applications pour Outlook: Exchange 2013 Help'
+title: 'Gestion de l’accès des utilisateurs aux applications pour Outlook'
 TOCTitle: Gestion de l’accès des utilisateurs aux applications pour Outlook
 ms:assetid: e5833dec-a23a-439e-ac03-92671817bff8
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ943757(v=EXCHG.150)

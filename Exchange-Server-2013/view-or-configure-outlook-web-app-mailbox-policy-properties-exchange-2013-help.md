@@ -1,5 +1,5 @@
 ﻿---
-title: 'Afficher ou configurer des propriétés de stratégie de boîte aux lettres Outlook Web App: Exchange 2013 Help'
+title: 'Afficher ou configurer des propriétés de stratégie de BAL Outlook Web App'
 TOCTitle: Afficher ou configurer des propriétés de stratégie de boîte aux lettres Outlook Web App
 ms:assetid: be012ffe-8fdb-4fb7-aebd-78b3a55593fa
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd351097(v=EXCHG.150)

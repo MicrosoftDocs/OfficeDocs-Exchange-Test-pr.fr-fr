@@ -1,5 +1,5 @@
 ﻿---
-title: 'Le nom de domaine complet de l’ordinateur correspond à une stratégie de destinataire_ServerFQDNMatchesSMTPPolicy: Exchange 2013 Help'
+title: 'Le nom de domaine complet de l’ordinateur correspond à une strat. de dest.'
 TOCTitle: Le nom de domaine complet de l’ordinateur correspond à une stratégie de destinataire_ServerFQDNMatchesSMTPPolicy
 ms:assetid: f3ea61f8-1788-4cbf-814e-f7c088c1ac47
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.serverfqdnmatchessmtppolicy(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activation d’une invite de menu personnalisée en dehors des heures d’ouverture: Exchange 2013 Help'
+title: 'Activ. une invite de menu perso. hors des heures d’ouvt: Exchange 2013 Help'
 TOCTitle: Activation d’une invite de menu personnalisée en dehors des heures d’ouverture
 ms:assetid: 094c50b2-072b-4929-aaf8-f7db5b19e9b6
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb266919(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Connecter une passerelle voix sur IP pour communiquer avec un PBX: Exchange 2013 Help'
+title: 'Connecter une psrl voix sur IP pour dialoguer avec un PBX: Exchange 2013 Help'
 TOCTitle: Connecter une passerelle voix sur IP pour communiquer avec un PBX
 ms:assetid: 76bcdc54-3ec2-408a-bdbe-37826580dd62
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998872(v=EXCHG.150)

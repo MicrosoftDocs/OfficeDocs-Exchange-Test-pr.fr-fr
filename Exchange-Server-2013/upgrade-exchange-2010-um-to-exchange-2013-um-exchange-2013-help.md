@@ -1,5 +1,5 @@
 ﻿---
-title: "Mise à niveau de la messagerie unifiée d'Exchange 2010 vers celle d'Exchange 2013: Exchange 2013 Help"
+title: 'Màn de la MU Exchange 2010 vers la MU Exchange 2013: Exchange 2013 Help'
 TOCTitle: Mise à niveau de la messagerie unifiée d'Exchange 2010 vers celle d'Exchange 2013
 ms:assetid: 01aa5dab-689b-4738-afab-0d2f11a60b39
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn169226(v=EXCHG.150)

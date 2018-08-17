@@ -82,9 +82,13 @@ _**Dernière rubrique modifiée :** 2014-06-27_
 
 13. Utilisez les cmdlets [Get-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123685\(v=exchg.150\)) et [New-MailboxRestoreRequest](https://technet.microsoft.com/fr-fr/library/ff829875\(v=exchg.150\)) pour exporter les données de la base de données de récupération et les importer dans la base de données récupérée, comme indiqué dans l'exemple. Cette opération permet d'importer tous les messages envoyés et reçus à l'aide de la base de données de tonalité dans la base de données de production.
     
-        $mailboxes = Get-Mailbox -Database DTDB1
+       ```
+           $mailboxes = Get-Mailbox -Database DTDB1
+       ```   
     
-        $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
+       ``` 
+          $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
+       ```   
 
 14. Après que l'opération de restauration est terminée, vous pouvez démonter et supprimer la base de données de récupération, comme indiqué dans cet exemple.
     

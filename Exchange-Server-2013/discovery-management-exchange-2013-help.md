@@ -21,7 +21,7 @@ Le Gestion de la découverte Le groupe de rôles de gestion est l’un des grou
 
 Les administrateurs ou les utilisateurs qui sont membres du groupe de rôles Gestion de la découverte peuvent effectuer des recherches de boîtes aux lettres dans l’organisation Exchange pour des données qui correspondent aux critères spécifiques et peuvent également configurer des suspensions pour litige de boîtes aux lettres. Pour plus d’informations, voir [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md).
 
-> [!NOTE]
+> [!IMPORTANT]
 > Par défaut, le groupe de rôles Gestion de l’organisation n'active pas la fonction de découverte pour les utilisateurs ou les groupes de sécurité universels membres de ce groupe de rôles. Les membres du groupe de rôles Gestion de l’organisation doivent soit devenir membres de ce groupe de rôles ou le rôle Recherche de boîte aux lettres traité plus loin dans cette rubrique doit être affecté manuellement au groupe de rôles Gestion de l’organisation. Pour plus d'informations sur l'attribution d'un rôle à un groupe de rôles, voir <a href="manage-role-groups-exchange-2013-help.md">Gérer des groupes de rôles</a>.
 
 

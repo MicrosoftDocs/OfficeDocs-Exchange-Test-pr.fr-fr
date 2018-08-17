@@ -1,5 +1,5 @@
 ﻿---
-title: 'Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge: Exchange 2013 Help'
+title: 'Notes de config. pour les psrl VoIP, les PBX IP et les PBX pris en charge'
 TOCTitle: Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge
 ms:assetid: 1583674f-5a57-45fd-8125-087d1624e686
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee681657(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Connexion ou restauration d’une boîte aux lettres supprimée: Exchange 2013 Help'
+title: 'Connecter ou restaurer une boîte aux lettres supprimée: Exchange 2013 Help'
 TOCTitle: Connexion ou restauration d’une boîte aux lettres supprimée
 ms:assetid: a5e6ac44-5901-4eab-9017-c6fae80a0f83
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ863438(v=EXCHG.150)

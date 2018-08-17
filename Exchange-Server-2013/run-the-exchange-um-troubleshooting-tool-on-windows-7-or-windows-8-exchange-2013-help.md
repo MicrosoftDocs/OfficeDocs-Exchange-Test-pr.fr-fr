@@ -1,5 +1,5 @@
 ﻿---
-title: 'Exécuter l’outil de dépannage de la messagerie unifiée Exchange sur Windows 7 ou Windows 8: Exchange 2013 Help'
+title: 'Exécuter l’outil de dépannage de la MU Exchange sur Windows 7 ou Windows 8'
 TOCTitle: Exécuter l’outil de dépannage de la messagerie unifiée Exchange sur Windows 7 ou Windows 8
 ms:assetid: 98d6869d-ee4a-4088-849d-ef75b0f5d932
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff851872(v=EXCHG.150)

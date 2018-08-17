@@ -1,5 +1,5 @@
 ﻿---
-title: "Configuration des propriétés d'une liste d'adresses globale: Exchange 2013 Help"
+title: 'Configurer des propriétés d’une liste d’adresses globale: Exchange 2013 Help'
 TOCTitle: Configuration des propriétés d'une liste d'adresses globale
 ms:assetid: 5fd2c96f-fe93-4b5a-8495-70c450511a37
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb232068(v=EXCHG.150)

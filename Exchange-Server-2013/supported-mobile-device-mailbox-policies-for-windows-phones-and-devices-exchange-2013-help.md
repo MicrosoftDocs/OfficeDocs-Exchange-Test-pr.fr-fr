@@ -1,5 +1,5 @@
 ﻿---
-title: 'Stratégies de boîte aux lettres d’appareil mobile prises en charge pour des téléphones et appareils Windows Phone: Exchange 2013 Help'
+title: 'Stratégies BAL d’apprl mobile pr. en ch. pr téléphones et apprl Windows Phone'
 TOCTitle: Stratégies de boîte aux lettres d’appareil mobile prises en charge pour des téléphones et appareils Windows Phone
 ms:assetid: d76b1d4c-d1f6-4501-a7c9-854327aceda5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ983805(v=EXCHG.150)

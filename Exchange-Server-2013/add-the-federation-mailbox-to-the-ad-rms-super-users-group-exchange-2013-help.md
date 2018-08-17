@@ -1,5 +1,5 @@
 ﻿---
-title: 'Ajouter la boîte aux lettres de fédération au groupe de super utilisateurs AD RMS: Exchange 2013 Help'
+title: 'Ajouter la BAL de féd. au grp de super utilisateurs AD RMS: Exchange 2013 Help'
 TOCTitle: Ajouter la boîte aux lettres de fédération au groupe de super utilisateurs AD RMS
 ms:assetid: 44618df9-54f0-4474-a450-dcba48a02901
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee424431(v=EXCHG.150)

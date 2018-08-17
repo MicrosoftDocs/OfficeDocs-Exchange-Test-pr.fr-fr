@@ -1,5 +1,5 @@
 ﻿---
-title: 'Modifier la stratégie d’attribution sur une boîte aux lettres: Exchange 2013 Help'
+title: 'Modifier la stratégie d’attribution sur une BAL: Exchange 2013 Help'
 TOCTitle: Modifier la stratégie d’attribution sur une boîte aux lettres
 ms:assetid: 011690a5-233a-4c03-8842-92276f899a89
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd638076(v=EXCHG.150)

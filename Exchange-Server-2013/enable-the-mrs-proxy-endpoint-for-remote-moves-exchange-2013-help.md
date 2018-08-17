@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activation du point de terminaison du proxy MRS pour les déplacements distants: Exchange 2013 Help'
+title: 'Activ. du pt de termin. du proxy MRS pr les déplac. dist.: Exchange 2013 Help'
 TOCTitle: Activation du point de terminaison du proxy MRS pour les déplacements distants
 ms:assetid: 9840f712-127e-4c2d-bfe5-1b35cdb2a31b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn155787(v=EXCHG.150)

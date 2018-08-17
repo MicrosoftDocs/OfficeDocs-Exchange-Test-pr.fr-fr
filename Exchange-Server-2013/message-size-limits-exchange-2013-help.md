@@ -117,9 +117,6 @@ Les tableaux suivants présentent les limites des messages, dont des information
 <td><p>Nombre maximal de destinataires par message</p>
 
 
-> [!NOTE]    
-> <p></p>
-
 </td>
 <td><p>5000</p></td>
 <td><p>Cmdlet : <strong>Set-TransportConfig</strong></p>

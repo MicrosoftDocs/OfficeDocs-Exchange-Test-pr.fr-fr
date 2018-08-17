@@ -1,5 +1,5 @@
 ﻿---
-title: 'Les serveurs Exchange 2007 doivent être mis à niveau vers le Service Pack 3, correctif cumulatif 10: Exchange 2013 Help'
+title: 'Màn srv Exchange 2007 nécessaire vers Service Pack 3, correctif cumulatif 10'
 TOCTitle: Les serveurs Exchange 2007 doivent être mis à niveau vers le Service Pack 3, correctif cumulatif 10
 ms:assetid: b8028a00-c451-412e-86f2-1669f6eee8fc
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.e15e12coexistenceminversionrequirement(v=EXCHG.150)

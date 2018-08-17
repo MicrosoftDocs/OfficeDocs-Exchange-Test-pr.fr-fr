@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer une invite de menu personnalisé les heures de bureau: Exchange 2013 Help'
+title: 'Activer une invite de menu personnalisé pr les h de bureau: Exchange 2013 Help'
 TOCTitle: Activer une invite de menu personnalisé les heures de bureau
 ms:assetid: 89053e84-3490-4dc6-ade3-9b6c5dbf4020
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb232116(v=EXCHG.150)

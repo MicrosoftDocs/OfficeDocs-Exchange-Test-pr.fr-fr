@@ -1,5 +1,5 @@
 ﻿---
-title: 'Méthodes et techniques de mise en correspondance pour les packages de règles: Exchange 2013 Help'
+title: 'Méthodes et techniques de mise en correspondance pour les packages de règles'
 TOCTitle: Méthodes et techniques de mise en correspondance pour les packages de règles
 ms:assetid: 09fe9278-d077-452c-b7e5-729b3dc70b1b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ674702(v=EXCHG.150)
@@ -220,23 +220,31 @@ L'attribut facultatif minMatches (valeur par défaut = 1) permet de définir l
 
 <!-- end list -->
 
-    <Any minMatches="3" maxMatches="3">
-        <Match idRef="USDate" />
-        <Match idRef="USAddress" />
-        <Match idRef="Name" />
-    </Any>
+   
+   ```
+       <Any minMatches="3" maxMatches="3">
+            <Match idRef="USDate" />
+            <Match idRef="USAddress" />
+            <Match idRef="Name" />
+       </Any>
+   ```    
 
-    <Any maxMatches="0">
-        <Match idRef="USDate" />
-        <Match idRef="USAddress" />
-        <Match idRef="Name" />
-    </Any>
+   ```
+       <Any maxMatches="0">
+            <Match idRef="USDate" />
+            <Match idRef="USAddress" />
+            <Match idRef="Name" />
+       </Any>
+   ```   
+    
 
-    <Any minMatches="1" maxMatches="1">
-        <Match idRef="USDate" />
-        <Match idRef="USAddress" />
-        <Match idRef="Name" />
-    </Any>
+   ```
+       <Any minMatches="1" maxMatches="1">
+            <Match idRef="USDate" />
+            <Match idRef="USAddress" />
+            <Match idRef="Name" />
+       </Any>
+   ```                
 
 ## Augmentation du niveau de confiance avec davantage de preuves
 

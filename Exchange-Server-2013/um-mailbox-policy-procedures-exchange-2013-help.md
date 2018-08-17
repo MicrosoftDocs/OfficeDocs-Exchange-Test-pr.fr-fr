@@ -1,5 +1,5 @@
 ﻿---
-title: 'Procédures de stratégie de boîte aux lettres de messagerie unifiée: Exchange 2013 Help'
+title: 'Procédures de stratégie de BAL de messagerie unifiée: Exchange 2013 Help'
 TOCTitle: Procédures de stratégie de boîte aux lettres de messagerie unifiée
 ms:assetid: 37db12de-109f-4e81-9e6a-effab2c2171d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ851061(v=EXCHG.150)

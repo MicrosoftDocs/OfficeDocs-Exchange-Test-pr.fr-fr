@@ -1,5 +1,5 @@
 ﻿---
-title: 'Archivage des conversations Lync et du contenu de réunion dans Exchange: Exchange 2013 Help'
+title: 'Archiver les conv. Lync et le cont. de réu. dans Exchange: Exchange 2013 Help'
 TOCTitle: Archivage des conversations Lync et du contenu de réunion dans Exchange
 ms:assetid: 3cff970e-e5ed-4a54-88e6-3665d84b5ed7
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn508399(v=EXCHG.150)

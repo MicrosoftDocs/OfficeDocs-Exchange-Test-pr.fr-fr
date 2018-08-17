@@ -1,5 +1,5 @@
 ﻿---
-title: 'Attribuer une stratégie de boîte aux lettres de messagerie unifiée: Exchange 2013 Help'
+title: 'Attribuer une stratégie de BAL de messagerie unifiée: Exchange 2013 Help'
 TOCTitle: Attribuer une stratégie de boîte aux lettres de messagerie unifiée
 ms:assetid: c8da6cbe-3d22-4fff-8b5a-416b1c8adb6c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb201728(v=EXCHG.150)

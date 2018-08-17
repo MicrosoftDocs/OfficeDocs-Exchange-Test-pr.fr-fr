@@ -1,5 +1,5 @@
 ﻿---
-title: 'Référence rapide concernant l’environnement de ligne de commande Exchange Management Shell pour Exchange 2013: Exchange 2013 Help'
+title: 'Référence rapide concernant Exchange Management Shell pour Exchange 2013'
 TOCTitle: Référence rapide concernant l’environnement de ligne de commande Exchange Management Shell pour Exchange 2013
 ms:assetid: 3ea4a105-a93c-48ba-96ce-6170125354e1
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ619302(v=EXCHG.150)

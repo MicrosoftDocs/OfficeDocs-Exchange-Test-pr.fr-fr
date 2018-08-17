@@ -99,9 +99,13 @@ Pour plus d’informations sur la création d’une stratégie de partage, voir 
 
   - Le premier exemple supprime la stratégie de partage Contoso. Le second exemple supprime la stratégie de partage Contoso et supprime la confirmation de suppression de la stratégie.
     
-        Remove-SharingPolicy -Identity Contoso
+       ```
+            Remove-SharingPolicy -Identity Contoso
+       ```    
     
-        Remove-SharingPolicy -Identity Contoso -Confirm
+       ```
+            Remove-SharingPolicy -Identity Contoso -Confirm
+       ```    
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Set-SharingPolicy](https://technet.microsoft.com/fr-fr/library/dd297931\(v=exchg.150\)) et [Remove-SharingPolicy](https://technet.microsoft.com/fr-fr/library/dd351071\(v=exchg.150\)).
 

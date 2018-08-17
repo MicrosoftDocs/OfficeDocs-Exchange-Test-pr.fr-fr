@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer des dossiers publics locaux hérités dans le cadre d’un déploiement hybride: Exchange 2013 Help'
+title: 'Config. des dossiers publics locaux hérités pr un déploiement hybride'
 TOCTitle: Configurer des dossiers publics locaux hérités dans le cadre d’un déploiement hybride
 ms:assetid: bcb0ac98-2949-486b-a8ab-8549c021651b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn249373(v=EXCHG.150)

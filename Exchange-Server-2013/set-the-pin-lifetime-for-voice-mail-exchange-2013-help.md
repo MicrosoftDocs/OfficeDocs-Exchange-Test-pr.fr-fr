@@ -1,5 +1,5 @@
 ﻿---
-title: 'Définir la durée de vie du code confidentiel pour la messagerie vocale: Exchange 2013 Help'
+title: 'Durée de vie du code confidentiel pour la messag. voc.: Exchange 2013 Help'
 TOCTitle: Définir la durée de vie du code confidentiel pour la messagerie vocale
 ms:assetid: d17f0bf6-0ad6-40a4-bdd5-f7098f39250d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124712(v=EXCHG.150)

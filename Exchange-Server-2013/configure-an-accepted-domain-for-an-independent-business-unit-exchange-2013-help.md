@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer un domaine accepté pour une division indépendante: Exchange 2013 Help'
+title: 'Configurer un domaine accepté pour une division indépendante'
 TOCTitle: Configurer un domaine accepté pour une division indépendante
 ms:assetid: bc95dbdc-3669-4c06-ab94-90093bc0dbfd
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ657491(v=EXCHG.150)

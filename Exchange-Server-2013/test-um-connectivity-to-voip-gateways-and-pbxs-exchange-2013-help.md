@@ -1,5 +1,5 @@
 ﻿---
-title: 'Tester la connectivité de messagerie unifiée à des passerelles VoIP et des PBX: Exchange 2013 Help'
+title: 'Tester la connectivité de MU aux passerelles VoIP et PBX: Exchange 2013 Help'
 TOCTitle: Tester la connectivité de messagerie unifiée à des passerelles VoIP et des PBX
 ms:assetid: 2aca8631-a99a-4e29-aff0-e462385f03b2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa996906(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: "Réinitialisation d'un code confidentiel de messagerie vocale: Exchange 2013 Help"
+title: 'Réinitialiser un code confidentiel de messagerie vocale: Exchange 2013 Help'
 TOCTitle: Réinitialisation d'un code confidentiel de messagerie vocale
 ms:assetid: bf07e6e7-01d2-4933-bff5-c615cc21a480
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124404(v=EXCHG.150)

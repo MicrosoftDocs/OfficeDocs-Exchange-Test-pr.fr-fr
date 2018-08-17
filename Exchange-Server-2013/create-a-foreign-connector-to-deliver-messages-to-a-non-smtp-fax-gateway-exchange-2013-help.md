@@ -1,5 +1,5 @@
 ﻿---
-title: 'Créer un connecteur étranger pour remettre les messages vers une passerelle non-SMTP télécopie: Exchange 2013 Help'
+title: 'Connecteur étranger pour remettre les msg vers une psrl non-SMTP télécopie'
 TOCTitle: Créer un connecteur étranger pour remettre les messages vers une passerelle non-SMTP télécopie
 ms:assetid: 589db487-3c4c-409a-92e3-c78dd8f639b6
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ710163(v=EXCHG.150)

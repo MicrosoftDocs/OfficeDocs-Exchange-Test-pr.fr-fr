@@ -1,5 +1,5 @@
 ﻿---
-title: 'Autoriser les messages en attente indicateur (MWI) sur une passerelle IP de messagerie unifiée: Exchange 2013 Help'
+title: 'Autoriser l’indicateur de message en attente (MWI) sur une passerelle IP de MU'
 TOCTitle: Autoriser les messages en attente indicateur (MWI) sur une passerelle IP de messagerie unifiée
 ms:assetid: 5667e37c-48c6-4659-9dc9-94b1dd8ba232
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd297995(v=EXCHG.150)

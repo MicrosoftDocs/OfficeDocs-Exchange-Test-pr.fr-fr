@@ -1,5 +1,5 @@
 ﻿---
-title: 'Identifier mon problème d’envoi ou de réception de courrier électronique dans Office Outlook (vérifications automatiques): Exchange 2013 Help'
+title: 'Identifier 1 pbm d’envoi/réception d’e-mail ds Outlook (vérif. auto.)'
 TOCTitle: Identifier mon problème d’envoi ou de réception de courrier électronique dans Office Outlook (vérifications automatiques)
 ms:assetid: 0de16c79-807a-4cae-9097-22dd61a157b4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn793609(v=EXCHG.150)

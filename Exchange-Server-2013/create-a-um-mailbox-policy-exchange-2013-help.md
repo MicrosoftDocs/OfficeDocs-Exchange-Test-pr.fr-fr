@@ -1,5 +1,5 @@
 ﻿---
-title: 'Créer une stratégie de boîte aux lettres de messagerie unifiée: Exchange 2013 Help'
+title: 'Créer une stratégie de BAL de messagerie unifiée: Exchange 2013 Help'
 TOCTitle: Créer une stratégie de boîte aux lettres de messagerie unifiée
 ms:assetid: 7f20874b-c46c-4505-9a78-f63eacb578ff
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb123510(v=EXCHG.150)

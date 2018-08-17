@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer ou désactiver la messagerie pour un contact de messagerie: Exchange 2013 Help'
+title: 'Activer ou désactiver la messagerie pour un contact: Exchange 2013 Help'
 TOCTitle: Activer ou désactiver la messagerie pour un contact de messagerie
 ms:assetid: ca47441f-1aa4-4958-aba5-18d51e59837e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124552(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Liste de contrôle : déploiement de la messagerie unifiée Exchange 2013: Exchange 2013 Help'
+title: 'Liste de contrôle : déploiement de la MU Exchange 2013: Exchange 2013 Help'
 TOCTitle: 'Liste de contrôle : déploiement de la messagerie unifiée Exchange 2013'
 ms:assetid: 41b666a2-0d0d-471f-90a3-07c3c562af85
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ673520(v=EXCHG.150)

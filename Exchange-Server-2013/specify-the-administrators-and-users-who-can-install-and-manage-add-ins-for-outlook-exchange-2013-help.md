@@ -1,5 +1,5 @@
 ﻿---
-title: 'Désigner les administrateurs et utilisateurs qui peuvent installer et gérer des compléments pour Outlook: Exchange 2013 Help'
+title: 'Administrateurs et utlsr pouvant installer et gérer des compl. Outlook'
 TOCTitle: Désigner les administrateurs et utilisateurs qui peuvent installer et gérer des compléments pour Outlook
 ms:assetid: 7ee4302d-b8bb-40a0-9810-10d3a0271bcb
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ943754(v=EXCHG.150)

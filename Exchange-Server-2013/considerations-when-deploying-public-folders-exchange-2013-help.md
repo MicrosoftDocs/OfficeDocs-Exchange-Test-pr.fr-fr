@@ -1,5 +1,5 @@
 ﻿---
-title: 'Considérations relatives au déploiement de dossiers publics: Exchange 2013 Help'
+title: 'Considérations sur le déploiement de dossiers publics: Exchange 2013 Help'
 TOCTitle: Considérations relatives au déploiement de dossiers publics
 ms:assetid: 2e416eed-b88f-45db-a482-1232fd2610fa
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn957481(v=EXCHG.150)

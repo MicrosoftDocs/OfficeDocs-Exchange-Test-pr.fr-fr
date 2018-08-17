@@ -1,5 +1,5 @@
 ﻿---
-title: 'Modifications apportées au schéma Active Directory d’Exchange 2013: Exchange 2013 Help'
+title: 'Modifications apportées au schéma AD d’Exchange 2013: Exchange 2013 Help'
 TOCTitle: Modifications apportées au schéma Active Directory d’Exchange 2013
 ms:assetid: 7e879e4e-1124-4a41-94d2-c64500beb24e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb738144(v=EXCHG.150)

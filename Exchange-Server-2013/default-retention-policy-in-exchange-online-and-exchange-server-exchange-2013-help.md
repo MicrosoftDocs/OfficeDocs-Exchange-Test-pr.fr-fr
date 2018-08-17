@@ -1,5 +1,5 @@
 ﻿---
-title: 'Stratégie de rétention par défaut dans Exchange Online et Exchange Server: Exchange 2013 Help'
+title: 'Stratégie de rétention par défaut dans Exchange Online et Exchange Server'
 TOCTitle: Stratégie de rétention par défaut
 ms:assetid: bcf31b2d-463b-4623-b488-c8ac40f14f62
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn775046(v=EXCHG.150)

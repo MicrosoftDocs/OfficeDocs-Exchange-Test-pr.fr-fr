@@ -1,5 +1,5 @@
 ﻿---
-title: 'Mettre à niveau Exchange 2013 vers la mise à jour cumulative la plus récente ou vers le Service Pack le plus récent: Exchange 2013 Help'
+title: 'Mettre à niveau Exchange 2013 vers le nouveau Service Pack ou màj cumulative'
 TOCTitle: Mettre à niveau Exchange 2013 vers la mise à jour cumulative la plus récente ou vers le Service Pack le plus récent
 ms:assetid: 928a4a0b-0082-4d50-a696-bfaf2782f42d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ983803(v=EXCHG.150)

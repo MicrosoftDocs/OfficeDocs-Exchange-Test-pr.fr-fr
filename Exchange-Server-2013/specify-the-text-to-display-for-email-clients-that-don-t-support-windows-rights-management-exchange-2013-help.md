@@ -1,5 +1,5 @@
 ﻿---
-title: 'Spécifiez le texte à afficher pour les clients de messagerie qui ne prennent pas en charge Windows Rights Management: Exchange 2013 Help'
+title: 'Spécifier le txt à afficher pr clients de messag. ne prenant pas en chg RMS'
 TOCTitle: Spécifiez le texte à afficher pour les clients de messagerie qui ne prennent pas en charge Windows Rights Management
 ms:assetid: a9b2238a-b534-469c-a0c3-2768bc3d005b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee423552(v=EXCHG.150)

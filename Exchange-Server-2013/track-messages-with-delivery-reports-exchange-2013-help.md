@@ -49,11 +49,11 @@ Utiliser le Centre d'administration Exchange pour examiner un rapport de remise
     
       - Sélectionnez l'une des options suivantes :
         
-          - **Rechercher les messages envoyés à   **Sélectionnez cette option pour rechercher les messages envoyés à des utilisateurs spécifiques. Cliquez sur **Sélectionner des utilisateurs**, choisissez des utilisateurs dans le carnet d'adresses, puis cliquez sur **Ajouter**. Vous pouvez sélectionner plusieurs utilisateurs. Lorsque vous avez terminé votre sélection, cliquez sur **OK** pour revenir à la page **Rapports de remise**. Si vous sélectionnez cette option, vous pouvez également laisser le champ vide pour rechercher les messages envoyés à tous les utilisateurs.
+          - **Rechercher les messages envoyés à** Sélectionnez cette option pour rechercher les messages envoyés à des utilisateurs spécifiques. Cliquez sur **Sélectionner des utilisateurs**, choisissez des utilisateurs dans le carnet d'adresses, puis cliquez sur **Ajouter**. Vous pouvez sélectionner plusieurs utilisateurs. Lorsque vous avez terminé votre sélection, cliquez sur **OK** pour revenir à la page **Rapports de remise**. Si vous sélectionnez cette option, vous pouvez également laisser le champ vide pour rechercher les messages envoyés à tous les utilisateurs.
         
-          - **Rechercher les messages reçus de   ** Utilisez cette option pour limiter votre recherche aux messages provenant d'un utilisateur spécifique. Là encore, sélectionnez l'utilisateur voulu dans le carnet d'adresses et cliquez sur **OK** pour revenir à la page **Rapports de remise**. Si vous sélectionnez cette option, vous devez spécifier un expéditeur.
+          - **Rechercher les messages reçus de** Utilisez cette option pour limiter votre recherche aux messages provenant d'un utilisateur spécifique. Là encore, sélectionnez l'utilisateur voulu dans le carnet d'adresses et cliquez sur **OK** pour revenir à la page **Rapports de remise**. Si vous sélectionnez cette option, vous devez spécifier un expéditeur.
     
-      - **Rechercher ces termes dans la ligne d'objet   **Entrez les informations concernant la ligne d'objet ou laissez ce champ vide pour élargir la recherche.
+      - **Rechercher ces termes dans la ligne d'objet** Entrez les informations concernant la ligne d'objet ou laissez ce champ vide pour élargir la recherche.
 
 3.  Lorsque vous avez terminé, cliquez sur **Rechercher**. Si vous voulez recommencer, cliquez sur **Effacer**.
 
@@ -63,25 +63,25 @@ Pour afficher des informations de remise, sélectionnez un message dans le volet
 
 Le rapport de remise affiche l'état de remise et les informations de remise détaillées du message que vous avez sélectionné dans le volet **Résultats de la recherche**. En haut du rapport, vous pouvez voir les champs suivants :
 
-  - **Objet   **La ligne Objet du message s'affiche comme en-tête du rapport.
+  - **Objet** La ligne Objet du message s'affiche comme en-tête du rapport.
 
-  - **De   **Alias, nom d'affichage ou adresse de messagerie de la personne qui a envoyé le message.
+  - **De** Alias, nom d'affichage ou adresse de messagerie de la personne qui a envoyé le message.
 
   - **À**   Alias, nom d'affichage ou adresse de messagerie de chaque destinataire du message.
 
-  - **Envoyé   **Date et heure d'envoi du message.
+  - **Envoyé** Date et heure d'envoi du message.
 
 ## Section Résumé à ce jour
 
 Cette section s'affiche dans le rapport de remise si un message a été envoyé à plusieurs personnes ou destinataires. Le haut de cette section vous indique le nombre total de destinataires auxquels le message a été envoyé et donne de brèves informations de remise pour chaque destinataire.
 
-  - **Résumé à ce jour   **Affiche le nombre total de destinataires et indique s'il y a des messages dont l'état est En attente, Remis ou Échec. Cliquez sur les liens hypertexte pour effectuer un tri par état.
+  - **Résumé à ce jour** Affiche le nombre total de destinataires et indique s'il y a des messages dont l'état est En attente, Remis ou Échec. Cliquez sur les liens hypertexte pour effectuer un tri par état.
 
   - **Zone de recherche**   La zone de recherche est utile si vous avez envoyé le message à un groupe de plus de 30 destinataires. Dans la zone de recherche, tapez l'adresse de messagerie pour laquelle vous souhaitez obtenir les informations de remise et cliquez sur la loupe.
 
-  - **À   **Indique l'adresse de messagerie du destinataire.
+  - **À** Indique l'adresse de messagerie du destinataire.
 
-  - **État   **Cette colonne affiche l'état du message pour chaque destinataire.
+  - **État** Cette colonne affiche l'état du message pour chaque destinataire.
 
 ## Informations détaillées du rapport
 
@@ -93,15 +93,15 @@ Cette section contient les informations de remise détaillées concernant un mes
 
 Selon l'état de remise du message, vous pouvez voir divers messages d'état, notamment :
 
-  - **Remis   **Indique une remise réussie.
+  - **Remis** Indique une remise réussie.
 
-  - **Différé   **Indique qu'un message est différé.
+  - **Différé** Indique qu'un message est différé.
 
-  - **En attente   **Si la remise du message est en attente parce qu'un message répond aux critères d'une règle ou d'une stratégie à l'échelle de l'organisation ou parce qu'il est soumis à approbation, le message d'état explique l'action exécutée par une règle ou indique que le message doit être approuvé par un modérateur avant la remise.
+  - **En attente** Si la remise du message est en attente parce qu'un message répond aux critères d'une règle ou d'une stratégie à l'échelle de l'organisation ou parce qu'il est soumis à approbation, le message d'état explique l'action exécutée par une règle ou indique que le message doit être approuvé par un modérateur avant la remise.
 
   - **Modérateur**   L'état indique si le message a été approuvé ou rejeté par le modérateur.
 
-  - **Groupes développés   **Si un message a été envoyé à un groupe, les utilisateurs individuels sont affichés dans la section **Résumé à ce jour** afin que vous puissiez voir l'état de remise pour chaque destinataire. Si vous devez supprimer ou ajouter un utilisateur à un groupe pendant une recherche de rapport de remise, vous pouvez modifier le groupe en cliquant sur **Modifier les groupes**.
+  - **Groupes développés** Si un message a été envoyé à un groupe, les utilisateurs individuels sont affichés dans la section **Résumé à ce jour** afin que vous puissiez voir l'état de remise pour chaque destinataire. Si vous devez supprimer ou ajouter un utilisateur à un groupe pendant une recherche de rapport de remise, vous pouvez modifier le groupe en cliquant sur **Modifier les groupes**.
 
   - **Échec**   Affiche la date, l'heure et le motif de l'échec de remise d'un message. Par exemple, une règle à l'échelle de l'organisation peut bloquer la remise de messages ou le message n'a pas pu être remis.
 

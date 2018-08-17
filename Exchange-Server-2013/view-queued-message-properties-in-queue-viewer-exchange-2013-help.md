@@ -1,5 +1,5 @@
 ﻿---
-title: 'Affichage des propriétés des messages mis en file d’attente dans l’Afficheur des files d’attente: Exchange 2013 Help'
+title: 'Affich. des propr. des msg en file d’attente dans l’afficheur des files d’att.'
 TOCTitle: Affichage des propriétés des messages mis en file d’attente dans l’Afficheur des files d’attente
 ms:assetid: 9d15d8b8-e061-4288-9354-df58e282fb6b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb123934(v=EXCHG.150)
@@ -59,13 +59,13 @@ Vous pouvez utiliser l'Afficheur des files d'attente de la Boîte à outils Exch
     
       - **État**   Ce champ affiche l'état actuel du message. Un message peut avoir l'une des valeurs d'état suivantes :
         
-          - **Actif   **Si le message figure dans une file d'attente de remise, il est remis à sa destination. Si le message se trouve dans la file d'attente de soumission, il est traité par le catégoriseur.
+          - **Actif** Si le message figure dans une file d'attente de remise, il est remis à sa destination. Si le message se trouve dans la file d'attente de soumission, il est traité par le catégoriseur.
         
           - **Suppression en attente**   Le message a été supprimé par l'administrateur mais était déjà en cours de remise. Le message est supprimé si la remise se solde par une erreur ayant pour effet de réintroduire le message dans la file d'attente. Sinon, la remise continue.
         
           - **Suspension en attente**   Le message a été suspendu par l'administrateur mais était déjà en cours de remise. Le message est suspendu si la remise se solde par une erreur ayant pour effet de réintroduire le message dans la file d'attente. Sinon, la remise continue.
         
-          - **Prêt   **Le message se trouve dans la file d'attente, prêt à être traité.
+          - **Prêt** Le message se trouve dans la file d'attente, prêt à être traité.
         
           - **Nouvelle tentative**   La dernière tentative de connexion de la file d'attente dans laquelle se trouve le message a échoué. Le message attend la prochaine tentative de la file d'attente.
         
@@ -92,20 +92,19 @@ Vous pouvez utiliser l'Afficheur des files d'attente de la Boîte à outils Exch
       - **Nombre de nouvelles tentatives**   Ce champ affiche le nombre de fois que la remise d'un message à une destination a été tentée.
 
 6.  
-    
     L'onglet **Informations sur le destinataire**affiche les informations détaillées suivantes sur les destinataires du message :
     
       - **Adresse**   Ce champ affiche l'adresse SMTP du destinataire du message. Cette valeur est extraite de `RCPT TO:` dans l'enveloppe du message.
     
       - **État**   Ce champ affiche l'état actuel du message. Les valeurs d'état d'un message peuvent être les suivantes :
         
-          - **Actif   **Si le message figure dans une file d'attente de remise, il est remis à sa destination. Si le message se trouve dans la file d'attente de soumission, il est traité par le catégoriseur.
+          - **Actif** Si le message figure dans une file d'attente de remise, il est remis à sa destination. Si le message se trouve dans la file d'attente de soumission, il est traité par le catégoriseur.
         
           - **Suppression en attente**   Le message a été supprimé par l'administrateur mais était déjà en cours de remise. Le message est supprimé si la remise se solde par une erreur ayant pour effet de réintroduire le message dans la file d'attente. Sinon, la remise continue.
         
           - **Suspension en attente**   Le message a été suspendu par l'administrateur mais était déjà en cours de remise. Le message est suspendu si la remise se solde par une erreur ayant pour effet de réintroduire le message dans la file d'attente. Sinon, la remise continue.
         
-          - **Prêt   **Le message se trouve dans la file d'attente, prêt à être traité.
+          - **Prêt** Le message se trouve dans la file d'attente, prêt à être traité.
         
           - **Nouvelle tentative**   La dernière tentative de connexion de la file d'attente dans laquelle se trouve le message a échoué. Le message attend la prochaine tentative de la file d'attente.
         

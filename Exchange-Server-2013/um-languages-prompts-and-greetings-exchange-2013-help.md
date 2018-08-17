@@ -1,5 +1,5 @@
 ﻿---
-title: 'Langues de messagerie unifiée, invites et messages d’accueil: Exchange 2013 Help'
+title: 'Langues de messag. unifiée, invites et messages d’accueil: Exchange 2013 Help'
 TOCTitle: Langues de messagerie unifiée, invites et messages d’accueil
 ms:assetid: d48df962-9669-420b-838f-44bfe1012e2f
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124728(v=EXCHG.150)

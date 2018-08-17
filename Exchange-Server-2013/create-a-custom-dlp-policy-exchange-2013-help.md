@@ -1,5 +1,5 @@
 ﻿---
-title: "Création d'une stratégie personnalisée de protection contre la perte de données (DLP): Exchange 2013 Help"
+title: 'Créer strat. perso. de protection contre perte de données (DLP): Exchange 2013'
 TOCTitle: Création d'une stratégie personnalisée de protection contre la perte de données (DLP)
 ms:assetid: b3299a39-9663-41e4-b76e-9d2f7879d486
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ150550(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration du partage fédéré entre des organisations Exchange: Exchange 2013 Help'
+title: 'Configuration du partage fédéré entre des organisations Exchange'
 TOCTitle: Configuration du partage fédéré entre des organisations Exchange
 ms:assetid: 94e31454-b027-4757-b52f-d3c2ead6d916
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ657473(v=EXCHG.150)

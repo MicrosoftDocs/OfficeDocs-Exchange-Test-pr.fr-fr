@@ -125,15 +125,26 @@ Vous pouvez utiliser le CAE pour sélectionner jusqu’à 500 boîtes aux lettr
     
     Voici quelques exemples d’utilisation des cmdlets **Get-Mailbox** et **Get-Recipient** pour renvoyer un sous-ensemble de boîtes aux lettres sur la base de propriétés de boîte aux lettres ou d’utilisateur courantes. Ces exemples supposent que les propriétés de boîte aux lettres appropriées (telles que *CustomAttributeN* ou *Department*) aient été renseignées.
     
+       ```
         Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
-    
+       ```
+
+       ```
         Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
-    
+       ```
+
+       ```
         Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
-    
+       ```
+
+       ```
         Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
-    
+       ```
+
+       ```
         Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+       ```
+
     
     Vous pouvez utiliser d’autres propriétés de boîte aux lettres utilisateur dans un filtre pour inclure ou exclure des boîtes aux lettres. Pour plus d’informations, voir [Propriétés filtrables pour le paramètre -Filter](https://technet.microsoft.com/fr-fr/library/bb738155\(v=exchg.150\)).
 

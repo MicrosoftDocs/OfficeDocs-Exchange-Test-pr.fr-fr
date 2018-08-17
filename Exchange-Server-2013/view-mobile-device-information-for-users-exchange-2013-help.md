@@ -1,5 +1,5 @@
 ﻿---
-title: 'Afficher les informations sur les périphériques mobiles des utilisateurs: Exchange 2013 Help'
+title: 'Afficher les informations sur les périphériques mobiles: Exchange 2013 Help'
 TOCTitle: Afficher les informations sur les périphériques mobiles des utilisateurs
 ms:assetid: 4fd263c0-ad61-416c-bd68-339bf66605cf
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997974(v=EXCHG.150)

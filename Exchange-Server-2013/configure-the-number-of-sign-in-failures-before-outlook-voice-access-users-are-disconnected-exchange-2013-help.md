@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer le nombre d’échecs de connexion avant que les utilisateurs Outlook Voice Access soient déconnectés: Exchange 2013 Help'
+title: 'Configurer le nombre d’échecs de connexion avant la déconnexion d’OVA'
 TOCTitle: Configurer le nombre d’échecs de connexion avant que les utilisateurs Outlook Voice Access soient déconnectés
 ms:assetid: 02f93888-168c-44bb-8cf6-17f5fcc3d733
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee423537(v=EXCHG.150)

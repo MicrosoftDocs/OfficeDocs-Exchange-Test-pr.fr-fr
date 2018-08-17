@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration du mode de démarrage sur un serveur de boîtes aux lettres: Exchange 2013 Help'
+title: 'Configuration du mode de démarrage sur un serveur de BAL: Exchange 2013 Help'
 TOCTitle: Configuration du mode de démarrage sur un serveur de boîtes aux lettres
 ms:assetid: 4457d6a0-52bd-4269-8cb5-d34d7fe9bfc3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee423544(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: "L'installation du premier serveur Exchange dans l'organisation ne peut pas être déléguée: Exchange 2013 Help"
+title: 'L’installation du premier srv Exchange dans l’org. ne peut pas être déléguée'
 TOCTitle: L'installation du premier serveur Exchange dans l'organisation ne peut pas être déléguée
 ms:assetid: bd1dbf09-5465-40fa-8668-ef99f753ba45
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.delegatedbridgeheadfirstinstall(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Contrôler la distribution automatique de boîtes aux lettres à l’aide d’étendues de base de données: Exchange 2013 Help'
+title: 'Contrôler la distribution automatique de BAL à l’aide d’étendues de BDD'
 TOCTitle: Contrôler la distribution automatique de boîtes aux lettres à l’aide d’étendues de base de données
 ms:assetid: 8eaff177-2251-4c8b-8570-c91a77d0a6fc
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff628332(v=EXCHG.150)

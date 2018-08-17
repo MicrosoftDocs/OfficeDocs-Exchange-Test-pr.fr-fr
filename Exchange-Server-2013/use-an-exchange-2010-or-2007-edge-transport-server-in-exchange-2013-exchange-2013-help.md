@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utilisation d’un serveur de transport Edge Exchange 2010 ou 2007 dans Exchange 2013: Exchange 2013 Help'
+title: 'Utilisation d’un srv de transp. Edge Exchange 2010 ou 2007 dans Exchange 2013'
 TOCTitle: Utilisation d’un serveur de transport Edge Exchange 2010 ou 2007 dans Exchange 2013
 ms:assetid: ce99b4bd-868c-4767-9009-e22c17ac0ac7
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ150569(v=EXCHG.150)

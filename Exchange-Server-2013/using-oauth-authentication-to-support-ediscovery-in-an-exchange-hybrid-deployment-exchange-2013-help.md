@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utilisation de l’authentification OAuth pour prendre en charge la découverte électronique dans un déploiement hybride Exchange: Exchange 2013 Help'
+title: 'Auth. OAuth pr la découverte électro. ds un dplmt hybride Exchange'
 TOCTitle: Utilisation de l’authentification OAuth pour prendre en charge la découverte électronique dans un déploiement hybride Exchange
 ms:assetid: b069f8db-fbe1-4047-ad97-d00172ee6a12
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn497703(v=EXCHG.150)
@@ -63,6 +63,7 @@ Le tableau suivant identifie les scénarios de découverte électronique dans un
 <tr class="even">
 <td><p>Recherche de boîtes aux lettres sur site à l’aide d’une recherche de découverte électronique initiée depuis l’organisation Exchange sur site par un administrateur ou un responsable de la mise en conformité.</p></td>
 <td><p>Non</p>
+
 > [!NOTE]
 > Comme indiqué précédemment, l’authentification OAuth serait nécessaire si les boîtes aux lettres sur site étaient configurées avec des boîtes aux lettres d’archivage dans le cloud.
 

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration de l’envoi par proxy de notifications Push pour OWA pour les périphériques: Exchange 2013 Help'
+title: 'Config. de l’envoi par proxy de noti. Push pour OWA pour les périphériques'
 TOCTitle: Configuration de l’envoi par proxy de notifications Push pour OWA pour les périphériques
 ms:assetid: c0f4912d-8bd3-4a54-9097-03619c645c6a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn511017(v=EXCHG.150)

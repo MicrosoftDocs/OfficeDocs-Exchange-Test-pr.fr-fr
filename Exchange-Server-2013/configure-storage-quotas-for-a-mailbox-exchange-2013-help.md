@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration de quotas de stockage pour une boîte aux lettres: Exchange 2013 Help'
+title: 'Config. de quotas de stockage pour une boîte aux lettres: Exchange 2013 Help'
 TOCTitle: Configuration de quotas de stockage pour une boîte aux lettres
 ms:assetid: 5f5fe292-c80e-4a0b-b3e6-e193ea5171d0
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998353(v=EXCHG.150)

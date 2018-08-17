@@ -1,5 +1,5 @@
 ﻿---
-title: "Contournement d'un compte d'utilisateur lors de la journalisation d'audit des boîtes aux lettres: Exchange 2013 Help"
+title: 'Contourn. compte utlsr à la journalisation d’audit des BAL: Exchange 2013'
 TOCTitle: Contournement d'un compte d'utilisateur lors de la journalisation d'audit des boîtes aux lettres
 ms:assetid: 98a87071-fe31-4b67-beb8-a73799e54df2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff461934(v=EXCHG.150)

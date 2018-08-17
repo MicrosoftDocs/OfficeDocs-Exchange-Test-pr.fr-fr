@@ -1,5 +1,5 @@
 ﻿---
-title: 'Active Directory domain is mixed mode_PrepareDomainModeMixed: Exchange 2013 Help'
+title: 'Le domaine Active Directory est en mode mixte'
 TOCTitle: Active Directory domain is mixed mode_PrepareDomainModeMixed
 ms:assetid: 97c9f480-7a2b-482e-8f51-f7b965fe1556
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.preparedomainmodemixed(v=EXCHG.150)

@@ -21,7 +21,7 @@ De plus en plus, les organisations achètent, installent et entretiennent les co
 
 Pour qu’une organisation détienne et entretienne son réseau téléphonique, elle doit acheter les composants matériels téléphoniques requis. Elle doit également prendre en considération la maintenance quotidienne de l’équipement de téléphonie et la formation requise pour que son personnel puisse utiliser le système téléphonique. Cette rubrique traite des différents types de systèmes de téléphonie présents dans les organisations ou les entreprises ainsi que les composants matériels téléphoniques requis. Elle présente également différents types de configuration téléphonique.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Nous conseillons à tous les clients qui projettent de déployer une messagerie unifiée Microsoft Exchange 2013 de solliciter l’aide d’un spécialiste en messagerie unifiée. Celui-ci vous aidera à opérer une mise à niveau harmonieuse à partir d’un système de messagerie vocale hérité. Le déploiement d’un nouveau système de messagerie unifiée ou la mise à niveau d’un système de messagerie vocale hérité requiert une connaissance approfondie des PBX, des IP PBX et de la messagerie unifiée. Pour plus d’informations sur les personnes à contacter, consultez le site web <a href="https://go.microsoft.com/fwlink/p/?linkid=261951">Microsoft PinPoint</a>.
 
 

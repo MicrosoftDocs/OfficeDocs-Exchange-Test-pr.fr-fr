@@ -1,5 +1,5 @@
 ﻿---
-title: 'Identifier mon problème à l’aide des vérifications automatiques - Synchronisation d’annuaires: Exchange 2013 Help'
+title: 'Identifier un problème par des vérifications auto.: synchronisation d’annuaire'
 TOCTitle: Identifier mon problème à l’aide des vérifications automatiques - Synchronisation d’annuaires
 ms:assetid: e6ea900a-c382-444c-a8ce-54d392bfeca3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn793977(v=EXCHG.150)

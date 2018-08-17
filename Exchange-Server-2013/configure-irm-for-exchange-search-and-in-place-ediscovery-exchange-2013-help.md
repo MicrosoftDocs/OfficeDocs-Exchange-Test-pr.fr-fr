@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer IRM pour la recherche et la découverte locale dans Exchange: Exchange 2013 Help'
+title: 'Exchange: config. d’IRM pour la rech. et la découv. loc.: Exchange 2013 Help'
 TOCTitle: Configurer IRM pour la recherche et la découverte locale dans Exchange
 ms:assetid: d96790e9-93ad-4a56-b90f-2dbfa2f2073c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Gg588319(v=EXCHG.150)

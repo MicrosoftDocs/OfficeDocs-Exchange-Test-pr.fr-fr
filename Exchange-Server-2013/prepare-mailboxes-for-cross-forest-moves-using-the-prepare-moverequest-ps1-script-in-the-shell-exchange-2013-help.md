@@ -1,5 +1,5 @@
 ﻿---
-title: 'Préparer des boîtes aux lettres pour des déplacements inter-forêts à l’aide du script Prepare-MoveRequest.ps1 dans l’environnement de ligne de commande Exchange Management Shell: Exchange 2013 Help'
+title: 'Prép. des BAL pr dépl. inter-forêts ac script Prepare-MoveRequest.ps1 dsShell'
 TOCTitle: Préparer des boîtes aux lettres pour des déplacements inter-forêts à l’aide du script Prepare-MoveRequest.ps1 dans l’environnement de ligne de commande Exchange Management Shell
 ms:assetid: 2cea59fb-69b7-4a2f-833f-de4d93cf1810
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee861103(v=EXCHG.150)
@@ -109,6 +109,7 @@ Le tableau suivant décrit l’ensemble des paramètres associés au script.
 <td><p>Facultatif</p></td>
 <td><p>Le paramètre <em>DisableEmailAddressPolicy</em> spécifie si le protocole EAP (Email Address Policy) doit être désactivé à la création d’un objet <strong>MailUser</strong> dans la forêt cible.</p>
 <p>Lorsque vous spécifiez ce paramètre, l’EAP dans la forêt cible ne sera pas appliqué.</p>
+
 > [!NOTE]
 > Lorsque vous spécifiez ce paramètre, l’objet <strong>MailUser</strong> n’aura pas de mappage d’adresse de messagerie dans le domaine de forêt locale identifié. Ceci est généralement identifié par l’EAP.
 

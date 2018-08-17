@@ -1,5 +1,5 @@
 ﻿---
-title: "installation et configuration de l'agent de routage des stratégies de carnet d'adresses: Exchange 2013 Help"
+title: 'installation et config. de l’agent de routage des strat. de carnet d’adresses'
 TOCTitle: installation et configuration de l'agent de routage des stratégies de carnet d'adresses
 ms:assetid: 20e8a43d-4508-4388-a2c9-aa3073593cc2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ907308(v=EXCHG.150)

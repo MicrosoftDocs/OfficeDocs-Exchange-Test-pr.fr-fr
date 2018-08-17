@@ -1,5 +1,5 @@
 ﻿---
-title: 'Utiliser des règles de flux de messagerie afin que les messages puissent contourner le courrier non trié: Exchange 2013 Help'
+title: 'Utiliser des règles de flux de messag. pour contourner le courrier non trié'
 TOCTitle: Utiliser des règles de flux de messagerie afin que les messages puissent contourner le courrier non trié
 ms:assetid: 58e413f0-aa27-4307-bffd-4df03090a15e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn896639(v=EXCHG.150)

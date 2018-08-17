@@ -1,5 +1,5 @@
 ﻿---
-title: 'Le programme d’installation ne peut pas installer Exchange dans un contrôleur de domaine en lecture seule_ComputerRODC: Exchange 2013 Help'
+title: 'Impossible d’installer Exchange dans un contrôleur de domaine en lecture seule'
 TOCTitle: Le programme d’installation ne peut pas installer Exchange dans un contrôleur de domaine en lecture seule_ComputerRODC
 ms:assetid: 4934d755-65be-47e2-86b0-6ea1ab148a96
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.computerrodc(v=EXCHG.150)

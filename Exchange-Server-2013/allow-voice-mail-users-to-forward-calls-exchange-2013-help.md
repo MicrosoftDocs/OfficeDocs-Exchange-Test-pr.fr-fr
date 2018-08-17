@@ -1,5 +1,5 @@
 ﻿---
-title: "Activation du transfert d'appels pour des utilisateurs de messagerie vocale: Exchange 2013 Help"
+title: 'Activ. le transfert d’appels pour utlsr de messagerie voc.: Exchange 2013 Help'
 TOCTitle: Activation du transfert d'appels pour des utilisateurs de messagerie vocale
 ms:assetid: 1f8e0a53-3d9d-4f8c-9be3-9f1e2a4347a3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd335138(v=EXCHG.150)

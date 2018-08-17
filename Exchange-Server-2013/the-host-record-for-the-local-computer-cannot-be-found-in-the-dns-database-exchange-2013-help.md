@@ -1,5 +1,5 @@
 ﻿---
-title: "L'enregistrement d'hôte pour l'ordinateur local est introuvable dans la base de données DNS: Exchange 2013 Help"
+title: 'L’enregistrement d’hôte pour l’ordinateur local est introuvable ds la BDD DNS'
 TOCTitle: L'enregistrement d'hôte pour l'ordinateur local est introuvable dans la base de données DNS
 ms:assetid: 2f18cb65-29fe-4b72-8d68-52fd503d5673
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.hostrecordmissing(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Clauses d’exclusion de responsabilité, signatures, pieds de page ou en-têtes à l’échelle de l’organisation: Exchange 2013 Help'
+title: 'Clauses d’excl. de resp., signatures, pieds de p. ou en-têtes pr l’organisation'
 TOCTitle: Clauses d’exclusion de responsabilité, signatures, pieds de page ou en-têtes à l’échelle de l’organisation
 ms:assetid: e45e33c9-e53b-427c-ada5-70901bc399b8
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn600437(v=EXCHG.150)
