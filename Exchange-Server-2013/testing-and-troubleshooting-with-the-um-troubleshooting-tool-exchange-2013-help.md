@@ -27,7 +27,7 @@ Lorsque vous exécutez la cmdlet, elle indique l’origine et les possibles solu
 
 Par défaut, lorsque vous exécutez le service de messagerie UNIFIÉE outil de dépannage, il utilise les informations d’identification qui sont utilisées lorsque vous ouvrez une session sur l’ordinateur. Les informations d’identification utilisées sont celles qui sont spécifiées pour la partie appelante. Vous devez définir ou spécifiez les informations d’identification à utiliser lorsque vous exécutez l’outil Résolution des problèmes de messagerie UNIFIÉE en mode de `SIPClient` . Toutefois, vous n’avez pas besoin de définir les informations d’identification lors de l’exécution de l’outil Résolution des problèmes de messagerie UNIFIÉE en mode de `Gateway` . Si vous utilisez l’outil Résolution des problèmes de messagerie UNIFIÉE en mode de `SIPClient` , les besoins de plusieurs autres Office Communications Server 2007 R2 ou Lync Server et les conditions préalables doivent être remplies. Pour plus d’informations, consultez [liste de vérification : déploiement Office Communications Server 2007 R2 et la messagerie unifiée Exchange 2010](https://go.microsoft.com/fwlink/p/?linkid=311961) ou [Liste de contrôle : intégration de la messagerie unifiée d'Exchange 2013 à Lync Server](checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help.md).
 
-> [!NOTE]
+> [!IMPORTANT]
 > La cmdlet <strong>Test-ExchangeUMCallFlow</strong> doit uniquement être utilisée pour tester la fonctionnalité de messagerie vocale d’un serveur de messagerie unifiée Microsoft Exchange Server 2010, sur lequel Exchange 2010 Service Pack 1 (SP1) ou Microsoft Exchange 2013 est installé.
 
 

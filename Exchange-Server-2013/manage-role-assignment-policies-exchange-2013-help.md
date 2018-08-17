@@ -217,7 +217,7 @@ Cet exemple définit la stratégie d'attribution « Vancouver End Users » com
 
     Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
 
-> [!NOTE]
+> [!IMPORTANT]
 > La stratégie d'attribution par défaut est appliquée aux nouvelles boîtes aux lettres, même si aucun rôle de gestion n'a été affecté à la stratégie. Les stratégies d’attribution pour les boîtes aux lettres sans rôle de gestion affecté ne peuvent pas accéder aux fonctions de configuration des boîtes aux lettres dans Microsoft Outlook Web App.
 
 

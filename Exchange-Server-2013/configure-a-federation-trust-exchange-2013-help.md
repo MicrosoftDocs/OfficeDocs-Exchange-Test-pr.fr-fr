@@ -25,7 +25,7 @@ Une approbation de fédération établit une relation d’approbation entre une 
 
 Pour les autres tâches de gestion relatives à la fédération, voir [Procédures de fédération](federation-procedures-exchange-2013-help.md).
 
-> [!NOTE]
+> [!IMPORTANT]
 > Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.
 
 
@@ -89,7 +89,7 @@ Pour les autres tâches de gestion relatives à la fédération, voir [Procédur
 
 7.  Prenez note de la preuve du domaine fédéré qui est générée pour le domaine partagé principal. Cette chaîne vous permet de créer un enregistrement TXT sur votre serveur DNS public.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > La preuve du domaine fédéré est une chaîne de caractères alphanumériques. Pour éviter les erreurs d’entrée, nous vous recommandons de copier la chaîne à partir de l’estimation à l’achèvement, collez-le dans un éditeur de texte tel que le bloc-notes. Vous pouvez copier à partir de l’éditeur de texte dans le Presse-papiers et puis la coller dans le champ de <strong>texte</strong> lors de la création de l’enregistrement TXT. Si l’enregistrement TXT est créé à l’aide d’incorrecte fédéré de chaîne de la preuve du domaine, le système d’authentification de Azure AD ne sera pas en mesure de vérifier la preuve de propriété du domaine, et vous ne pourrez pas les ajouter à l’identificateur d’organisation fédérée.
 
 

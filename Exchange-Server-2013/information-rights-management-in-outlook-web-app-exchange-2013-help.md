@@ -32,7 +32,7 @@ La fonctionnalité IRM suivante est disponible dans Outlook Web App :
     > [!NOTE]
     > La gestion des droits relatifs à l’information dans Outlook Web App protège uniquement les pièces jointes des fichiers pris en charge mentionnés dans cette section. Les pièces jointes qui utilisent des formats de fichier non pris en charge ne sont pas protégées. Lorsque les utilisateurs d’Outlook Web App protègent un message et attachent un fichier dont le format n’est pas pris en charge, une notification s’affiche informant les utilisateurs que seuls les types de fichier pris en charge sont protégés.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > La protection IRM ne peut pas être appliquée à un message qui est déjà signé ou crypté à l’aide du système S/MIME. Pour appliquer la protection IRM, le chiffrement et la signature S/MIME doivent être supprimés à partir du message. Ceci vaut également pour les messages protégés par IRM. Les utilisateurs ne peuvent pas les signer ou les chiffrer en utilisant le système S/MIME.
 
 

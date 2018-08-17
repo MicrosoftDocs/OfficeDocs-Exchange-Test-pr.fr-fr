@@ -21,7 +21,7 @@ Vous pouvez ajouter une clause d’exclusion de responsabilité de messagerie é
 
 Pour configurer une clause d’exclusion de responsabilité, créez une règle de transport qui comprend les conditions (par exemple, lorsque l’expéditeur appartient à un groupe particulier ou lorsque le message contient des modèles de texte spécifiques), ainsi que le texte à ajouter. Pour appliquer plusieurs clauses d’exclusion de responsabilité à un même message électronique, utilisez plusieurs règles de transport.
 
-> [!important]
+> [!IMPORTANT]
 > <ul>
 > <li><p>Si vous voulez que les informations soient ajoutées uniquement aux messages sortants, vous devez ajouter une condition (par exemple, que les destinataires soient situés en dehors de l’organisation). Par défaut, les règles de transport sont appliquées aux messages entrants et sortants.</p></li>
 > </ul>

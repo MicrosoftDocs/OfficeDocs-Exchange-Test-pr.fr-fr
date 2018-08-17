@@ -116,7 +116,7 @@ Une fois que vous avez installé les rôles et les fonctions du système d'explo
 
 1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Exchange 2013 CU16 et versions ultérieures <strong>nécessitent</strong> .NET Framework 4.6.2. Mettez à niveau vos serveurs vers .NET Framework 4.6.2 avant d’installer Exchange 2013 CU16, ou vous recevrez une erreur. Si .NET Framework 4.5.2 est installé sur vos serveurs Exchange, mettez à niveau vos serveurs Exchange 2013 CU15 avant d’installer .NET Framework 4.6.2.
 
 
@@ -140,7 +140,7 @@ Installez la version de Microsoft .NET Framework qui correspond à la version 
 
 1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Exchange 2013 CU16 et versions ultérieures <strong>nécessitent</strong> .NET Framework 4.6.2. Mettez à niveau vos serveurs vers .NET Framework 4.6.2 avant d’installer Exchange 2013 CU16, ou vous recevrez une erreur. Si .NET Framework 4.5.2 est installé sur vos serveurs Exchange, mettez à niveau vos serveurs Exchange 2013 CU15 avant d’installer .NET Framework 4.6.2.
 
 
@@ -176,7 +176,7 @@ Une fois que vous avez installé les rôles et les fonctions du système d'explo
 
 1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Exchange 2013 CU16 et versions ultérieures <strong>nécessitent</strong> .NET Framework 4.6.2. Mettez à niveau vos serveurs vers .NET Framework 4.6.2 avant d’installer Exchange 2013 CU16, ou vous recevrez une erreur. Si .NET Framework 4.5.2 est installé sur vos serveurs Exchange, mettez à niveau vos serveurs Exchange 2013 CU15 avant d’installer .NET Framework 4.6.2.
 
 
@@ -214,7 +214,7 @@ Une fois que vous avez installé les rôles et les fonctions du système d'explo
 
 1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Exchange 2013 CU16 et versions ultérieures <strong>nécessitent</strong> .NET Framework 4.6.2. Mettez à niveau vos serveurs vers .NET Framework 4.6.2 avant d’installer Exchange 2013 CU16, ou vous recevrez une erreur. Si .NET Framework 4.5.2 est installé sur vos serveurs Exchange, mettez à niveau vos serveurs Exchange 2013 CU15 avant d’installer .NET Framework 4.6.2.
 
 

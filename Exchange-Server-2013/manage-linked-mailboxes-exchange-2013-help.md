@@ -126,7 +126,7 @@ Une fois que vous avez créé une boîte aux lettres liée, vous pouvez la modif
 
 Vous pouvez également modifier les propriétés de plusieurs boîtes aux lettres liées en même temps. Pour plus d’informations, voir la section « Modifier en bloc des boîtes aux lettres utilisateur » de la rubrique [Gestion des boîtes aux lettres utilisateur](manage-user-mailboxes-exchange-2013-help.md).
 
-> [!NOTE]
+> [!IMPORTANT]
 > La durée d’exécution estimée pour cette tâche varie selon le nombre de propriétés que vous souhaitez afficher ou modifier.
 
 

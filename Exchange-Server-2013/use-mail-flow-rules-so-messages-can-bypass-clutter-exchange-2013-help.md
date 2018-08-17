@@ -49,7 +49,7 @@ Cet exemple permet à tous les messages dont le titre est « Meeting » de con
 
     New-TransportRule -Name <name_of_the_rule> -SubjectContainsWords "Meeting" -SetHeaderName "X-MS-Exchange-Organization-BypassClutter" -SetHeaderValue "true"
 
-> [!NOTE]
+> [!IMPORTANT]
 > Dans cet exemple, « X-MS-Exchange-Organization-BypassClutter » et « true » respectent tous deux la casse.
 
 

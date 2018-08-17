@@ -70,7 +70,7 @@ Vous recherchez des informations supplémentaires sur les copies retardées de b
     > [!NOTE]
     > Dans l'exemple précédent, e<em>XX</em> est le préfixe de génération du journal pour la base de données (par exemple, E00, E01, E02, etc.).
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Cette étape peut demander beaucoup de temps et plusieurs facteurs influent, tels que la longueur du temps d'attente de relecture, le nombre de fichiers journaux générés au cours de cette période et la vitesse à laquelle votre matériel est en mesure de relire ces journaux dans la base de données en cours de récupération.
 
 
