@@ -47,7 +47,7 @@ Pour exporter le fichier XML, vous devez utiliser Environnement de ligne de com
 
 3.  Créez un fichier au format XML contenant toutes les données en saisissant **Set-Content -path "C:\\custompath\\exportedRules.xml" -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection**. (**Set-content** est la partie de la cmdlet qui écrit le XML dans le fichier.)
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Assurez-vous que vous utilisez l’emplacement de fichier dans lequel votre pack de règles est effectivement stocké. <strong>C:\custompath\</strong> est un espace réservé.
 
 
@@ -194,7 +194,7 @@ Pour télécharger votre règle, vous devez procéder comme suit.
 
 3.  Dans Environnement de ligne de commande Exchange Management Shell ou Exchange Online PowerShell, saisissez **New-ClassificationRuleCollection -FileData (Get-Content -Path "C:\\custompath\\MyNewRulePack.xml " -Encoding Byte)**.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Assurez-vous que vous utilisez l’emplacement de fichier dans lequel votre pack de règles est effectivement stocké. <strong>C:\custompath\</strong> est un espace réservé.
 
 

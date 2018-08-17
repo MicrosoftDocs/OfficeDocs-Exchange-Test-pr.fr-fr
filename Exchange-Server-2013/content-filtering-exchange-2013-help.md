@@ -79,7 +79,7 @@ Dans Exchange 2013, l’agent de filtrage du contenu utilise les listes des exp
 
 Vous configurez l’agent de filtrage du contenu à l’aide de l’environnement de ligne de commande Exchange Management Shell.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Les modifications de la configuration que vous apportez à l’agent de filtrage du contenu dans l’environnement de ligne de commande Exchange Management Shell ne sont effectuées que sur l’ordinateur local. Si l’agent de filtrage du contenu est exécuté sur plusieurs serveurs Exchange de votre organisation, vous devez apporter les modifications de la configuration du filtrage de contenu sur chaque ordinateur.
 
 

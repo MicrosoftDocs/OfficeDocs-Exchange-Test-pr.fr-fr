@@ -251,7 +251,7 @@ Pour plus d'informations sur la procédure de gestion des autorisations dans Exc
 
 Si vous souhaitez que les administrateurs Exchange 2007 gèrent des serveurs Exchange 2013, vous devez ajouter les administrateurs Exchange 2007 en tant que membres d'un ou de plusieurs groupes de rôles Exchange 2013. Vous pouvez ajouter soit des utilisateurs, soit des groupes universels de sécurité à des groupes de rôles. Les autorisations accordées aux groupes de rôles sont ensuite appliquées aux utilisateurs ou aux groupes universels de sécurité que vous avez ajoutés en tant que membres.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Si vous utilisez des groupes de sécurité Active Directory globaux ou de domaine local, vous devez les redéfinir en tant que groupes universels de sécurité si votre intention est de les ajouter comme membres d'un groupe de rôles Exchange 2013. Exchange 2013 prend uniquement en charge les groupes universels de sécurité.
 
 
@@ -316,7 +316,7 @@ Si vous modifiez des listes de contrôle d'accès dans des objets Exchange 2007
 
 Une fois ces étapes terminées, les administrateurs Exchange 2007 seront membres du groupe de rôles spécifique qui est mappé aux objets Exchange 2013 appropriés. Les administrateurs Exchange 2007 peuvent faire appel aux outils de gestion Exchange 2013 pour gérer les serveurs et les destinataires Exchange 2013.
 
-> [!NOTE]
+> [!IMPORTANT]
 > En règle générale, la gestion des serveurs et des destinataires Exchange 2007 doit être effectuée au moyen des outils de gestion Exchange 2007. En revanche, celle des serveurs et des destinataires Exchange 2013 doit être accomplie à l'aide des outils de gestion Exchange 2013.
 
 

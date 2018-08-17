@@ -96,7 +96,7 @@ Exchange 2013 comprend plusieurs groupes de rôles intégrés, chacun accordant
 <tr class="odd">
 <td><p><a href="organization-management-exchange-2013-help.md">Gestion de l’organisation</a></p></td>
 <td><p>Les administrateurs membres du groupe de rôles Gestion de l’organisation disposent d'un accès administratif sur toute l'organisation Exchange 2013 et peuvent réaliser pratiquement n'importe quelle tâche relative à un objet Exchange 2013, à quelques exceptions près, comme le rôle <code>Discovery Management</code>.</p>
-> [!NOTE]
+> [!IMPORTANT]
 > Du fait que le groupe de rôles Gestion de l’organisation est un rôle très puissant, seuls des utilisateurs ou des groupes universels de sécurité qui exécutent des tâches administratives au niveau organisationnel peuvent affecter l'intégralité de l'organisation Exchange s'ils sont membres de ce groupe de rôles.
 
 </td>
@@ -189,7 +189,7 @@ Pour gérer vos autorisations à l'aide de groupes de rôles dans Exchange 2013
 
 Exchange 2013 inclut plusieurs groupes de rôles que sépare les autorisations en domaines d'administration spécifiques. Si ces groupes de rôles existants accordent les autorisations dont ont besoin vos administrateurs pour gérer votre organisation Exchange 2013, il vous suffit d'ajouter vos administrateurs comme membres des groupes de rôles adéquats. Après avoir ajouté des administrateurs à un groupe de rôles, ils peuvent gérer les fonctionnalités associées à ce groupe de rôles. Pour ajouter ou supprimer des membres dans un groupe de rôles, ouvrez le groupe de rôles dans le Centre d'administration Exchange, puis ajoutez ou supprimez des membres dans la liste des membres. Pour obtenir une liste des groupes de rôles intégrés, consultez la rubrique [Groupes de rôles intégrés](built-in-role-groups-exchange-2013-help.md).
 
-> [!NOTE]
+> [!IMPORTANT]
 > Si un administrateur est membre de plus d'un groupe de rôles, Exchange 2013 accorde à l'administrateur toutes les permissions accordées par les groupes de rôles dont il ou elle est membre.
 
 

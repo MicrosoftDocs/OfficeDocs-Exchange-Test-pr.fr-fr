@@ -39,7 +39,7 @@ Par défaut, lorsque vous exécutez l’outil de dépannage de la messagerie uni
 
   - Installez l’outil de dépannage de la messagerie unifiée. Pour obtenir la procédure détaillée, voir [Installer l’outil de dépannage de la messagerie unifiée Exchange](install-the-exchange-um-troubleshooting-tool-exchange-2013-help.md).
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Si vous utilisez l’outil Résolution des problèmes de messagerie UNIFIÉE en mode de <code>SIPClient</code> , il existe plusieurs autres Office Communications Server 2007 R2 ou Microsoft Lync Server des exigences et conditions préalables. Pour plus d’informations, consultez <a href="https://go.microsoft.com/fwlink/p/?linkid=311961">liste de vérification : déploiement Office Communications Server 2007 R2 et la messagerie unifiée Exchange 2010</a> ou <a href="checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help.md">Liste de contrôle : intégration de la messagerie unifiée d'Exchange 2013 à Lync Server</a>.
 
 

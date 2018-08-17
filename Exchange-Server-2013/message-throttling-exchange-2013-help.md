@@ -292,7 +292,7 @@ Dans Exchange 2013, chaque boîte aux lettres contient un paramètre *Throttlin
 
 Par défaut, il existe une stratégie de limitation qui offre une configuration par défaut avec un budget précis pour les utilisateurs qui se connectent à Exchange. Pour configurer des paramètres de budget personnalisés pour un ou plusieurs utilisateurs, créez une nouvelle stratégie de limitation. Appliquez ensuite la stratégie à l’utilisateur ou au groupe approprié.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Nous vous recommandons de ne pas modifier la stratégie de limitation par défaut.
 
 

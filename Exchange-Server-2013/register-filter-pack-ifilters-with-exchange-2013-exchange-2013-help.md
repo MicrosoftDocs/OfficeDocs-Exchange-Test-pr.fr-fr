@@ -62,7 +62,7 @@ Le déploiement du pack de filtres Office 2010 s’articule en deux étapes prin
 
   - La modification du Registre afin que les IFilters soient également homologués dans Exchange 2013. Cela permet à Exchange de prendre en charge l’analyse des pièces jointes pour les formats de fichier.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Vous devez effectuer cette procédure sur tous les serveurs de boîtes aux lettres de votre organisation.
 
 
@@ -152,7 +152,7 @@ Pour vérifier que vous avez bien enregistré les iFilters du pack de filtres Mi
 
 Vous pouvez étendre la capacité d’analyse des pièces joints à d’autres types de fichiers en enregistrant des iFilters tiers supplémentaires. La prise en charge de fichiers supplémentaires peut être ajoutée en installant et en enregistrant l’iFilter du type de fichier sur chacun de vos serveurs de boîtes aux lettres.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Microsoft n’a pas testé d’IFilters tiers avec des règles de transport. Par conséquent, il est recommandé de déployer et de tester tous les IFilters tiers dans un environnement de test avant de déployer votre environnement de production.
 
 

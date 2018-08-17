@@ -41,7 +41,7 @@ Pour plus d'informations sur les boîtes aux lettres déconnectées et sur l'ex�
     
     S'agissant des organisations Exchange locales, vous pouvez également vérifier ces informations dans le composant Utilisateurs et ordinateurs Active Directory.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Lorsque vous connectez des boîtes aux lettres liées, des boîtes aux lettres de ressources ou des boîtes aux lettres partagées supprimées, le compte d’utilisateur auquel vous connectez la boîte aux lettres doit être désactivé.
 
 

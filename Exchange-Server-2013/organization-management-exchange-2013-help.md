@@ -21,7 +21,7 @@ Le Gestion de l’organisation Le groupe de rôles de gestion est l’un des gr
 
 Les administrateurs membres du groupe de rôles Gestion de l’organisation disposent d’un accès administratif à toute l’organisation Exchange 2013 et peuvent réaliser presque n’importe quelle tâche relative à un objet Exchange 2013, avec quelques exceptions. Par défaut, les membres de ce groupe de rôles ne peuvent pas réaliser de recherches de boîtes aux lettres ni faire de gestion de rôles de gestion de la direction supérieure non étendus. Pour plus d’informations, consultez la section « Attributions de rôle de délégation uniquement » plus loin dans cette rubrique.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Le groupe de rôles Gestion de l’organisation est un rôle très puissant et, à ce titre, seuls des utilisateurs ou des groupes de sécurité universels qui exécutent des tâches administratives au niveau organisationnel peuvent affecter l’intégralité de l’organisation Exchange s’ils sont membres de ce groupe de rôles.
 
 
@@ -75,7 +75,7 @@ N’importe quel rôle peut être ajouté ou supprimé de ce groupe de rôle, av
 
 Ces limitations ont pour but de vous éviter d’être bloqué du système par inadvertance. En exigeant l’existence d’au moins une attribution de rôle de délégation entre chaque rôle et un ou plusieurs groupes de rôles ou groupes de sécurité universels, vous pourrez toujours attribuer des rôles à leurs utilisateurs. En exigeant l’existence d’au moins une attribution de rôle ordinaire entre le rôle Gestion des rôles et un ou plusieurs groupes de rôles ou groupes de sécurité universels, vous pourrez toujours configurer des groupes de rôles et des attributions de rôles.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Ces limitations requièrent que les groupes de rôles ou les groupes de sécurité universels soient les cibles des attributions de rôle de délégation ou ordinaires. Vous ne pouvez pas supprimer une attribution de rôle de délégation ou l’attribution ordinaire du rôle Gestion des rôles si la dernière attribution est effectuée auprès d’un utilisateur.
 
 

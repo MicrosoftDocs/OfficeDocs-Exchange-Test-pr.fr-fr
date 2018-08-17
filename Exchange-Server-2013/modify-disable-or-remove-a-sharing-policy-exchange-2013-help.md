@@ -69,7 +69,7 @@ Pour plus d’informations sur la création d’une stratégie de partage, voir 
 
 ## Utiliser le Centre d’administration Exchange (EAC) pour supprimer une stratégie de partage
 
-> [!NOTE]
+> [!IMPORTANT]
 > Avant de supprimer une stratégie de partage, celle-ci doit être supprimée de toutes les boîtes aux lettres utilisateur.
 
 

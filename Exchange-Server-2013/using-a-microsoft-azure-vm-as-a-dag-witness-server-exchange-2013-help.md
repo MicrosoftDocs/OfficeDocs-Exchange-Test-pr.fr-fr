@@ -129,7 +129,7 @@ Maintenant, procédez comme suit pour créer un réseau virtuel Azure qui sera u
 
 5.  Cochez la case **Configurer un réseau VPN de site à site** sous **CONNECTIVITÉ DE SITE À SITE**.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Ne sélectionnez pas <strong>Utiliser Itinéraire express</strong>, car cela empêche les modifications de configuration requises de configurer un VPN multisite.
 
 
@@ -165,7 +165,7 @@ Lorsque vous créez votre passerelle virtuelle, notez que vous avez déjà spéc
 
 Pour établir la passerelle VPN du côté d'Azure, suivez les instructions de la section [Démarrer la passerelle de réseau privé](http://msdn.microsoft.com/fr-fr/library/azure/jj156210.aspx#bkmk+_startgateway) de la rubrique [Configurer une passerelle de réseau virtuel dans le Portail de gestion](http://msdn.microsoft.com/fr-fr/library/azure/jj156210.aspx).
 
-> [!NOTE]
+> [!IMPORTANT]
 > Effectuez uniquement les étapes de la section « Démarrer la passerelle de réseau privé » de cet article, et ne passez pas aux sections suivantes.
 
 

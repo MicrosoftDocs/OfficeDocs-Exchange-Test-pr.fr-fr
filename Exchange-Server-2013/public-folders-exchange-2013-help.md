@@ -111,7 +111,7 @@ La hiérarchie de dossiers publics contient les propriétés des dossiers et des
 
 Le processus de synchronisation de la hiérarchie de dossiers publics utilise une méthode de synchronisation des changements incrémentielle (ICS), mécanisme permettant de surveiller et de synchroniser les modifications apportées à la hiérarchie ou au contenu d'une banque d'informations Exchange. Ces modifications incluent la création, la modification et la suppression de dossiers et de messages. Lorsque des utilisateurs sont connectés à des boîtes aux lettres de contenu et les utilisent, une synchronisation a lieu toutes les 15 minutes. Si aucun utilisateur n'est connecté à une boîte aux lettres de contenu, la synchronisation a lieu moins souvent (toutes les 24 heures). Si une opération d'écriture, telle la création d'un dossier, est effectuée sur la hiérarchie principale, la synchronisation a lieu immédiatement (de façon synchrone) sur la boîte aux lettres de contenu.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Étant donné qu'il n'existe qu'une seule copie accessible en écriture de la hiérarchie, la création de dossier est transmise en proxy à la boîte aux lettres de la hiérarchie par la boîte aux lettres de contenu à laquelle les utilisateurs sont connectés.
 
 

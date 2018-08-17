@@ -27,7 +27,7 @@ Pour d'autres tâches de gestion relatives aux stratégies d'adresse de courriel
 
   - Pour utiliser le paramètre *RecipientFilter* pour créer un filtre personnalisé, vous devez spécifier une chaîne pour le filtre. L'environnement de ligne de commande Exchange Management Shell utilise OPath pour la syntaxe de filtrage. OPath est un langage d'interrogation conçu pour rechercher les sources des données objet.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Si vous utilisez un filtre des destinataires pour créer ou modifier une stratégie d'adresse de messagerie, vous ne pouvez pas utiliser le Centre d’administration Exchange (CAE) pour modifier la stratégie d'adresse de messagerie. Vous devez utiliser l'environnement de ligne de commande Exchange Management Shell. Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir <a href="https://technet.microsoft.com/fr-fr/library/bb124517(v=exchg.150)">Set-EmailAddressPolicy</a>.
 
 

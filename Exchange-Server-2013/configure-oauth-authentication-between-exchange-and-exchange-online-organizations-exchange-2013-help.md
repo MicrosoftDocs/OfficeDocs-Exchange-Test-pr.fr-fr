@@ -216,7 +216,7 @@ Pour configurer l’objet *AvailabilityAddressSpace*, utilisez Exchange PowerSh
 
 Vous pouvez vérifier que l’authentification OAuth est correcte à l’aide de la cmdlet [Test-OAuthConnectivity](https://technet.microsoft.com/fr-fr/library/jj218623\(v=exchg.150\)). Cette cmdlet vérifie que les points de terminaison Exchange et Exchange Online locaux peuvent authentifier correctement les demandes l’un de l’autre.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Lors de la connexion à votre organisation Exchange Online avec Remote PowerShell, il se peut que vous deviez utiliser le paramètre <em>AllowClobber</em> avec la cmdlet <strong>Import-PSSession</strong> pour importer les dernières commandes dans la session PowerShell locale.
 
 
