@@ -1,5 +1,5 @@
 ﻿---
-title: 'Le remplacement de contrôleur de domaine est défini dans le Registre_ConfigDCHostNameMismatch: Exchange 2013 Help'
+title: 'Le remplacement de contrôleur de domaine est défini dans le Registre'
 TOCTitle: Le remplacement de contrôleur de domaine est défini dans le Registre_ConfigDCHostNameMismatch
 ms:assetid: 3aef5470-d510-4b59-a4b6-36d274a984ae
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.configdchostnamemismatch(v=EXCHG.150)

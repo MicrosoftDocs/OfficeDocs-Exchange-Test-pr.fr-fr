@@ -1,5 +1,5 @@
 ﻿---
-title: 'Mise à niveau de la messagerie unifiée d’Exchange 2007 vers celle d’Exchange 2013: Exchange 2013 Help'
+title: 'Màn de la MU d’Exchange 2007 vers celle d’Exchange 2013: Exchange 2013 Help'
 TOCTitle: Mise à niveau de la messagerie unifiée d’Exchange 2007 vers celle d’Exchange 2013
 ms:assetid: 642c922d-7e85-40f0-bb9b-0f20da692be3
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn169227(v=EXCHG.150)
@@ -326,9 +326,7 @@ Dans des déploiements plus petits, vous pouvez déployer uniquement une message
 
 Si nécessaire, vous pouvez créer un standard automatique de messagerie unifiée à l'aide du CAE comme suit :
 
-1.  
-    
-    Dans le CAE, accédez à **Messagerie unifiée** \> **Plans de numérotation de messagerie unifiée**. Sélectionnez le plan de numérotation de messagerie unifiée auquel vous ajouter un standard automatique, puis cliquez sur **Modifier**![Icône Modifier](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Icône Modifier").
+1.  Dans le CAE, accédez à **Messagerie unifiée** \> **Plans de numérotation de messagerie unifiée**. Sélectionnez le plan de numérotation de messagerie unifiée auquel vous ajouter un standard automatique, puis cliquez sur **Modifier**![Icône Modifier](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Icône Modifier").
 
 2.  Dans la page **Plan de numérotation de messagerie unifiée**, sous **Standards automatiques de messagerie unifiée**, cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter").
 

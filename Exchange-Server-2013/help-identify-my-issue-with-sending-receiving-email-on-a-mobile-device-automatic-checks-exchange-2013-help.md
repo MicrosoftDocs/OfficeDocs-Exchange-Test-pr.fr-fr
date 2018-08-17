@@ -1,5 +1,5 @@
 ﻿---
-title: 'Identifier mon problème d’envoi et/ou de réception de courrier électronique sur un appareil mobile (vérifications automatiques): Exchange 2013 Help'
+title: 'Identif. 1 pbm d’envoi ou de récept. d’e-mail s/ 1 apprl mobile (vérif. auto.)'
 TOCTitle: Identifier mon problème d’envoi et/ou de réception de courrier électronique sur un appareil mobile (vérifications automatiques)
 ms:assetid: 7400a7c8-1e45-4e73-a642-b7d79d997462
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn793610(v=EXCHG.150)

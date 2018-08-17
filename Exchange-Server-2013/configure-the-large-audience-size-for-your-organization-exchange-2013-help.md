@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer la taille du large public pour votre organisation: Exchange 2013 Help'
+title: 'Configurer la taille du large public pour votre org.: Exchange 2013 Help'
 TOCTitle: Configurer la taille du large public pour votre organisation
 ms:assetid: 8a37911c-4339-4921-b5d3-0a5a774d4517
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ659068(v=EXCHG.150)

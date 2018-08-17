@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer les paramètres de routage de messagerie Exchange dans Active Directory: Exchange 2013 Help'
+title: 'Configurer les param. de routage de messagerie Exchange dans Active Directory'
 TOCTitle: Configurer les paramètres de routage de messagerie Exchange dans Active Directory
 ms:assetid: d01f8545-c201-4a96-be39-ed4c7008afcf
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ674705(v=EXCHG.150)

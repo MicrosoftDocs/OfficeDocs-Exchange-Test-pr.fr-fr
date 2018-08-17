@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration d’AutoReseed pour un groupe de disponibilité de base de données: Exchange 2013 Help'
+title: 'Config. d’AutoReseed pr un groupe de disponibilité de BDD: Exchange 2013 Help'
 TOCTitle: Configuration d’AutoReseed pour un groupe de disponibilité de base de données
 ms:assetid: 4a8bd779-b52a-40ed-8040-4d76eabeb41e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ619303(v=EXCHG.150)

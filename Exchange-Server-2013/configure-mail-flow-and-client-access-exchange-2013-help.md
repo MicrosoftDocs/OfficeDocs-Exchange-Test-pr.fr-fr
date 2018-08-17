@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration du flux de messagerie et de l’accès au client: Exchange 2013 Help'
+title: 'Configurer le flux de messagerie et l’accès au client: Exchange 2013 Help'
 TOCTitle: Configuration du flux de messagerie et de l’accès au client
 ms:assetid: 4acc7f2a-93ce-468c-9ace-d5f7eecbd8d4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ218640(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Appliquer (ou supprimer) une stratégie de boîte aux lettres Outlook Web App à une boîte aux lettres: Exchange 2013 Help'
+title: 'Appliquer ou supprimer une stratégie de BAL Outlook Web App à une BAL'
 TOCTitle: Appliquer (ou supprimer) une stratégie de boîte aux lettres Outlook Web App à une boîte aux lettres
 ms:assetid: 51d8e269-b0d5-4bc7-9b3d-0460871e54fa
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd876884(v=EXCHG.150)

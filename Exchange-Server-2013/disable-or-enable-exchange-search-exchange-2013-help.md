@@ -1,5 +1,5 @@
 ﻿---
-title: 'Désactivation ou activation du service de recherche Exchange: Exchange 2013 Help'
+title: 'Désactiver ou activer le service de recherche Exchange: Exchange 2013 Help'
 TOCTitle: Désactivation ou activation du service de recherche Exchange
 ms:assetid: 195b25be-53fb-4215-90a5-04340d640bcc
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa996416(v=EXCHG.150)

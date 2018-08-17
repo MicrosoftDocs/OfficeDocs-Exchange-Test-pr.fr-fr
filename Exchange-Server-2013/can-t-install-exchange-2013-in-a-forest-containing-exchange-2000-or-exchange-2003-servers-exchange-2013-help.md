@@ -1,5 +1,5 @@
 ﻿---
-title: "Impossible d'installer Exchange 2013 dans une forêt contenant des serveurs Exchange 2000 ou Exchange 2003.: Exchange 2013 Help"
+title: 'Imp. d’installer Exchange 2013 dans une forêt avec srv Exchange 2000 ou 2003'
 TOCTitle: Impossible d'installer Exchange 2013 dans une forêt contenant des serveurs Exchange 2000 ou Exchange 2003.
 ms:assetid: a115b182-cbd2-4d31-aa0e-375240939301
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.exchange2000or2003presentinorg(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Création d’une étendue de gestion personnalisée pour les recherches de découverte électronique sur place: Exchange 2013 Help'
+title: 'Créer étendue de gestion perso. pr recherches de découv. électr. sur place'
 TOCTitle: Création d’une étendue de gestion personnalisée pour les recherches de découverte électronique sur place
 ms:assetid: 1543aefe-3709-402c-b9cd-c11fe898aad1
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn741464(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'L’ordinateur local est responsable de l’expansion de l’appartenance à un groupe_ServerIsGroupExpansionServer: Exchange 2013 Help'
+title: 'L’ordinateur local est responsable de l’expansion de l’appartenance à un grp'
 TOCTitle: L’ordinateur local est responsable de l’expansion de l’appartenance à un groupe_ServerIsGroupExpansionServer
 ms:assetid: 52872561-60e6-4f3d-bbc6-6de0edf74b09
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.serverisgroupexpansionserver(v=EXCHG.150)

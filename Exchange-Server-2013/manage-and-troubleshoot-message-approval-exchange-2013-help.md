@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestion de l’approbation des messages et résolution des problèmes: Exchange 2013 Help'
+title: 'Gestion de l’appr. des msg et résolution de problèmes: Exchange 2013 Help'
 TOCTitle: Gestion de l’approbation des messages et résolution des problèmes
 ms:assetid: 860df43f-a05b-4da3-83f1-68d3123a923d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd298110(v=EXCHG.150)

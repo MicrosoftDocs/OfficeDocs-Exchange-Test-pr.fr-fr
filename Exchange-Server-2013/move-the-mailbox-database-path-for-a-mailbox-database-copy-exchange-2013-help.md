@@ -1,5 +1,5 @@
 ﻿---
-title: 'Déplacement du chemin d’accès d’une copie de base de données de boîtes aux lettres: Exchange 2013 Help'
+title: 'Déplacement du chemin d’accès d’une copie de BDD de BAL: Exchange 2013 Help'
 TOCTitle: Déplacement du chemin d’accès d’une copie de base de données de boîtes aux lettres
 ms:assetid: 324f255c-d95d-4a8a-a134-c8cee5c5b9cb
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd979782(v=EXCHG.150)

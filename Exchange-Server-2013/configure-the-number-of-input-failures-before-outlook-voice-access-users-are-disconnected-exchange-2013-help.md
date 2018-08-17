@@ -1,5 +1,5 @@
 ﻿---
-title: "Configurer le nombre d'échecs d'entrée avant que les utilisateurs Outlook Voice Access sont déconnectés.: Exchange 2013 Help"
+title: 'Config. nbre d’échecs d’entrée avant déconnexion des utlsr OVA'
 TOCTitle: Configurer le nombre d'échecs d'entrée avant que les utilisateurs Outlook Voice Access sont déconnectés.
 ms:assetid: 64c13d17-a26a-4c9b-b495-bd69c716456a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee423547(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration de l’accès à la messagerie pour les téléphones mobiles: Exchange 2013 Help'
+title: 'Config. de l’accès à la messag. pour téléphones mobiles: Exchange 2013 Help'
 TOCTitle: Configuration de l’accès à la messagerie pour les téléphones mobiles
 ms:assetid: 8d6e2cea-265a-43d9-a074-076f35658436
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb123704(v=EXCHG.150)

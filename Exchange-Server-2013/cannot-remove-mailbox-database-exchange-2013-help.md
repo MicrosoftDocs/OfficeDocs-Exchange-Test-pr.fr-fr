@@ -1,5 +1,5 @@
 ﻿---
-title: 'Impossible de supprimer la base de données de boîtes aux lettres: Exchange 2013 Help'
+title: 'Impossible de supprimer la BDD de BAL: Exchange 2013 Help'
 TOCTitle: Impossible de supprimer la base de données de boîtes aux lettres
 ms:assetid: 5881e4c0-c2e2-48db-84b4-7f9ce3cf46a7
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.unwillingtoremovemailboxdatabase(v=EXCHG.150)

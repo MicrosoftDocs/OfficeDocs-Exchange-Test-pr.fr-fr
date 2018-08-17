@@ -1,5 +1,5 @@
 ﻿---
-title: 'Créer des groupes de rôles lié qui reflètent les groupes de rôles intégrés: Exchange 2013 Help'
+title: 'Créer des grp de rôles lié reflétant les grp intégrés: Exchange 2013 Help'
 TOCTitle: Créer des groupes de rôles lié qui reflètent les groupes de rôles intégrés
 ms:assetid: 89dfcbb3-0568-4bbf-a885-746b91ba307e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd876918(v=EXCHG.150)

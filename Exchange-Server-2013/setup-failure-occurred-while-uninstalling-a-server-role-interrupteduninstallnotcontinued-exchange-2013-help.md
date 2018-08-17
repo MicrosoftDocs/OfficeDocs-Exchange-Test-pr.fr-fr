@@ -1,5 +1,5 @@
 ﻿---
-title: 'Échec de l’installation lors de la désinstallation d’un serveur role_InterruptedUninstallNotContinued: Exchange 2013 Help'
+title: 'Échec de la configuration lors de la désinstallation d’un rôle serveur'
 TOCTitle: Échec de l’installation lors de la désinstallation d’un serveur role_InterruptedUninstallNotContinued
 ms:assetid: 187967b2-cb28-45d7-8858-2a083c1ebe58
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.interrupteduninstallnotcontinued(v=EXCHG.150)

@@ -119,6 +119,7 @@ Souhaitez-vous rechercher des tâches de gestion relatives aux journaux d’audi
 <td><p><code>N/A</code></p></td>
 <td><p>Cette balise contient toutes les propriétés modifiées par la cmdlet exécutée. La balise <code>Property</code> est un enfant de cette balise.</p>
 <p>Il existe une balise <code>ModifiedProperties</code> par balise <code>Event</code>.</p>
+
 > [!NOTE]
 > Cette balise n’est renseignée que si le paramètre <em>LogLevel</em> de la cmdlet <strong>Set-AdminAuditLogConfig</strong> est défini à <code>Verbose</code>.
 

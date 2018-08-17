@@ -125,7 +125,7 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Pour passer des autorisations fractionnées Active Directory aux autorisations partagées Exchange 2013, vous devez réexécuter le programme d’installation d’Exchange afin de désactiver les autorisations fractionnées Active Directory dans l’organisation Exchange, puis créer des attributions de rôles entre un groupe de rôles et les rôles Création du destinataire de messagerie et Création du groupe de sécurité et appartenance. Dans la configuration des autorisations partagées par défaut, le groupe de rôles Gestion de l’organisation contient chacun de ces rôles. De ce fait, le groupe de rôles Gestion de l’organisation figure dans cette procédure.
 
-> [!NOTE]
+> [!IMPORTANT]
 > La commande setup.com dans cette procédure modifie Active Directory. Pour l’utiliser, vous devez utiliser un compte doté des autorisations requises. Ce compte peut être différent de celui disposant des autorisations pour créer les attributions de rôles via la cmdlet <strong>New-ManagementRoleAssignment</strong>. Utilisez le ou les comptes dotés des autorisations permettant d’exécuter chaque étape de la procédure.
 
 

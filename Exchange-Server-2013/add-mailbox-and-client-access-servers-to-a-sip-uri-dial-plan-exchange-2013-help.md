@@ -1,5 +1,5 @@
 ﻿---
-title: 'Ajouter des serveurs de boîtes aux lettres et accès au Client à un plan de numérotation URI SIP: Exchange 2013 Help'
+title: 'Ajout de serveurs de BAL et accès au Client à un plan de num. URI SIP'
 TOCTitle: Ajouter des serveurs de boîtes aux lettres et accès au Client à un plan de numérotation URI SIP
 ms:assetid: 17fed308-ff0d-4e61-b9f9-e6680b6eccaa
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa996399(v=EXCHG.150)

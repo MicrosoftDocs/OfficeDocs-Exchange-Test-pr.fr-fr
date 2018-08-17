@@ -1,5 +1,5 @@
 ﻿---
-title: "Définir le nombre d'échecs de connexion avant une réinitialisation du code PIN de la messagerie vocale: Exchange 2013 Help"
+title: 'Nbre d’échecs de connexion avant réinit. du code PIN de la messag. voc.'
 TOCTitle: Définir le nombre d'échecs de connexion avant une réinitialisation du code PIN de la messagerie vocale
 ms:assetid: 4de38499-0a6f-4f00-8697-eeff805d7266
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997939(v=EXCHG.150)

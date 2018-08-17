@@ -1,5 +1,5 @@
 ﻿---
-title: "Configurer le nombre d'appels entrants sur un serveur de boîtes aux lettres: Exchange 2013 Help"
+title: 'Configurer le nombre d’appels entrants sur un srv de BAL: Exchange 2013 Help'
 TOCTitle: Configurer le nombre d'appels entrants sur un serveur de boîtes aux lettres
 ms:assetid: 419e1de9-2bf8-48a8-824d-2a536b0a6d90
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997637(v=EXCHG.150)

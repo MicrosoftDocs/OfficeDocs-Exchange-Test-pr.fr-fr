@@ -1,5 +1,5 @@
 ﻿---
-title: "Le compte actif n'est pas connecté à un domaine Active Directory: Exchange 2013 Help"
+title: 'Le compte actif n’est pas connecté à un domaine Active Directory'
 TOCTitle: Le compte actif n'est pas connecté à un domaine Active Directory
 ms:assetid: 0e229d10-605a-420f-bf8b-58a7fcb5b259
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.loggedontodomain(v=EXCHG.150)

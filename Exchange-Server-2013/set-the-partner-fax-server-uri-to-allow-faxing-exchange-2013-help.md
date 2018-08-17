@@ -1,5 +1,5 @@
 ﻿---
-title: 'Définir le partenaire de serveur de télécopie URI pour permettre l’envoi de télécopies: Exchange 2013 Help'
+title: 'Déf. URI de srv de télécopie de partenaire pr l’envoi de télécopies'
 TOCTitle: Définir le partenaire de serveur de télécopie URI pour permettre l’envoi de télécopies
 ms:assetid: 77a9013b-d76b-4af2-8b2c-cef435cf67af
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ650873(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Présentation de la coexistence des autorisations dans Exchange 2007 et Exchange 2010: Exchange 2013 Help'
+title: 'Coexistence des autorisations dans Exchange 2007 et Exchange 2010'
 TOCTitle: Présentation de la coexistence des autorisations dans Exchange 2007 et Exchange 2010
 ms:assetid: 28ab1433-23ee-4914-8f21-9a32578792e5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd335157(v=EXCHG.150)

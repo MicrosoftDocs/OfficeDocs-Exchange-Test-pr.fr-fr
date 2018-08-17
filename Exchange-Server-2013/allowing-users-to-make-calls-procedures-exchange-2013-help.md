@@ -1,5 +1,5 @@
 ﻿---
-title: "Ce qui permet aux utilisateurs d'effectuer les procédures d'appels: Exchange 2013 Help"
+title: 'Ce qui permet aux utlsr d’effectuer les procédures d’appel: Exchange 2013 Help'
 TOCTitle: Ce qui permet aux utilisateurs d'effectuer les procédures d'appels
 ms:assetid: 6997797d-4b79-4f6d-a89a-f36eea4e5ca4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ938011(v=EXCHG.150)

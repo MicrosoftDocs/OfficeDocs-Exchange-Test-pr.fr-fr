@@ -1,5 +1,5 @@
 ﻿---
-title: 'Recherche et suppression de messages - Aide de l’administrateur: Exchange 2013 Help'
+title: 'Recherche et suppression de messages - Aide de l’admin.: Exchange 2013 Help'
 TOCTitle: Recherche et suppression de messages - Aide de l’administrateur
 ms:assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff459253(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Autorités de certification racine de confiance pour les approbations de fédération: Exchange 2013 Help'
+title: 'Autorités de certif. racine de confiance pour les approbations de fédération'
 TOCTitle: Autorités de certification racine de confiance pour les approbations de fédération
 ms:assetid: d4224bf5-69b3-484c-8a70-4f230d3dbdd9
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee332350(v=EXCHG.150)

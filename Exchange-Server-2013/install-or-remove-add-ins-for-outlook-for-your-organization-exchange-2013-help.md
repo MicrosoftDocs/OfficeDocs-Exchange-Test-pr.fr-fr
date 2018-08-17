@@ -1,5 +1,5 @@
 ﻿---
-title: 'Installation ou suppression d’applications pour votre organisation: Exchange 2013 Help'
+title: 'Installation ou suppression d’applications pour votre organisation'
 TOCTitle: Installation ou suppression d’applications pour votre organisation
 ms:assetid: 112f3ef7-9943-4a1e-8a42-e08e8e9f67f4
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ943752(v=EXCHG.150)

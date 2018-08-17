@@ -26,7 +26,7 @@ Souhaitez-vous rechercher les tâches de gestion liées aux stratégies de DLP 
 > Exchange Online : la protection contre la perte de données est une fonctionnalité étendue qui nécessite une licence Exchange Online Plan 2. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/p/?linkid=286154">Licences Exchange Online</a>.
 
 
-> [!NOTE]
+> [!IMPORTANT]
 > Il sort du cadre de cette documentation de recommander un modèle d'entreprise ou des informations sur les consignes de conditionnement des fichiers ou de déploiement pour les règles sur les informations sensibles, ou d'exposer comment ces règles doivent être réparties. De plus, cette documentation n'expose pas les mécanismes de protection (par exemple, le chiffrement) pour les règles développées personnalisées ; elle n'expose pas non plus comment ces mécanismes sont utilisés.
 
 

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Client Access role not detected in local site_ClientAccessRoleNotPresentInSite: Exchange 2013 Help'
+title: 'Rôle d’accès client non détecté dans le site local'
 TOCTitle: Client Access role not detected in local site_ClientAccessRoleNotPresentInSite
 ms:assetid: b5bfc6af-9c55-46c0-a293-6078b64e87dd
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.clientaccessrolenotpresentinsite(v=EXCHG.150)

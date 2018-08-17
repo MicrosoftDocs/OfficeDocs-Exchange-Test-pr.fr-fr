@@ -1,5 +1,5 @@
 ﻿---
-title: 'Autorisation des appels utilisant des règles de numérotation: Exchange 2013 Help'
+title: 'Autoriser des appels utilisant des règles de numérotation: Exchange 2013 Help'
 TOCTitle: Autorisation des appels utilisant des règles de numérotation
 ms:assetid: 4c18bc07-f55c-42b7-81c1-729878aa93aa
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ898499(v=EXCHG.150)

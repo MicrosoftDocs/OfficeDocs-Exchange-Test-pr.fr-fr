@@ -1,5 +1,5 @@
 ﻿---
-title: "Autoriser ou empêcher le transfert d'appels à partir d'un standard automatique: Exchange 2013 Help"
+title: 'Autoriser ou empêcher le transfert d’appels à partir d’un standard automatique'
 TOCTitle: Autoriser ou empêcher le transfert d'appels à partir d'un standard automatique
 ms:assetid: ca961cc8-cc24-4e05-b72d-79979c155cf9
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee423558(v=EXCHG.150)

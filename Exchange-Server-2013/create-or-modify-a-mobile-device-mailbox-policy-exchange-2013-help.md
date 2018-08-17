@@ -1,5 +1,5 @@
 ﻿---
-title: 'Créer ou modifier une stratégie de boîte aux lettres de périphériques mobiles: Exchange 2013 Help'
+title: 'Créer ou modifier une stratégie de BAL de périph. mobiles: Exchange 2013 Help'
 TOCTitle: Créer ou modifier une stratégie de boîte aux lettres de périphériques mobiles
 ms:assetid: b4a37a81-25e3-40ff-a18a-a62ae4493635
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb124315(v=EXCHG.150)

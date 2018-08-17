@@ -96,6 +96,7 @@ Exchange 2013 comprend plusieurs groupes de rôles intégrés, chacun accordant
 <tr class="odd">
 <td><p><a href="organization-management-exchange-2013-help.md">Gestion de l’organisation</a></p></td>
 <td><p>Les administrateurs membres du groupe de rôles Gestion de l’organisation disposent d'un accès administratif sur toute l'organisation Exchange 2013 et peuvent réaliser pratiquement n'importe quelle tâche relative à un objet Exchange 2013, à quelques exceptions près, comme le rôle <code>Discovery Management</code>.</p>
+
 > [!IMPORTANT]
 > Du fait que le groupe de rôles Gestion de l’organisation est un rôle très puissant, seuls des utilisateurs ou des groupes universels de sécurité qui exécutent des tâches administratives au niveau organisationnel peuvent affecter l'intégralité de l'organisation Exchange s'ils sont membres de ce groupe de rôles.
 

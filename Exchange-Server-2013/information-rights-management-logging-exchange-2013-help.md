@@ -1,5 +1,5 @@
 ﻿---
-title: 'Journalisation de la gestion des droits relatifs à l’information: Exchange 2013 Help'
+title: 'Journal. de la gestion des droits relatifs à l’information: Exchange 2013 Help'
 TOCTitle: Journalisation de la gestion des droits relatifs à l’information
 ms:assetid: e06f57f9-a9e2-43a2-b88c-288b324d71f0
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff461940(v=EXCHG.150)

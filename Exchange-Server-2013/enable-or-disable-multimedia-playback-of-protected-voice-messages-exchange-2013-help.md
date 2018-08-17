@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer ou désactiver la lecture multimédia de messages vocaux protégés: Exchange 2013 Help'
+title: 'Activer ou désactiver la lecture multimédia de messages vocaux protégés'
 TOCTitle: Activer ou désactiver la lecture multimédia de messages vocaux protégés
 ms:assetid: 3c33370c-4262-42b1-8d83-d61fc7c426cd
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee423543(v=EXCHG.150)

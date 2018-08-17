@@ -65,6 +65,7 @@ Le tableau suivant répertorie les types de destinataire disponibles. Tous ces t
 <tr class="odd">
 <td><p>Contact de forêt de messagerie</p></td>
 <td><p>Contact de messagerie qui représente un objet destinataire d'une autre forêt. Les contacts de forêt de messagerie sont généralement créés par la fonctionnalité de synchronisation Microsoft Identity Integration Server (MIIS).</p>
+
 > [!NOTE]
 > Les contacts de forêt de messagerie sont des objets destinataires mis à jour uniquement à l'aide de MIIS ou d'une synchronisation personnalisée similaire. Vous ne pouvez pas supprimer ni modifier un contact de forêt de messagerie à l’aide du CAE ou de l’environnement de ligne de commande Exchange Management Shell.
 
@@ -147,9 +148,9 @@ Chaque boîte aux lettres est constituée d'un utilisateur Active Directory et d
 
 Exchange prend en charge les types de boîte aux lettres suivants :
 
-  - **Boîte aux lettres d'utilisateur   **Les boîtes aux lettres d'utilisateur sont assignées à des utilisateurs individuels dans votre organisation Exchange. Les boîtes aux lettres d'utilisateur fournissent à vos utilisateurs une plate-forme de collaboration riche. Les utilisateurs peuvent échanger des messages, gérer leurs contacts, programmer des réunions et gérer une liste de tâches. Ils peuvent également recevoir des messages vocaux dans leurs boîtes aux lettres. Les boîtes aux lettres d'utilisateur constituent le type de boîte aux lettres le plus répandu et le plus couramment affecté aux utilisateurs de votre organisation.
+  - **Boîte aux lettres d'utilisateur** Les boîtes aux lettres d'utilisateur sont assignées à des utilisateurs individuels dans votre organisation Exchange. Les boîtes aux lettres d'utilisateur fournissent à vos utilisateurs une plate-forme de collaboration riche. Les utilisateurs peuvent échanger des messages, gérer leurs contacts, programmer des réunions et gérer une liste de tâches. Ils peuvent également recevoir des messages vocaux dans leurs boîtes aux lettres. Les boîtes aux lettres d'utilisateur constituent le type de boîte aux lettres le plus répandu et le plus couramment affecté aux utilisateurs de votre organisation.
 
-  - **Boîtes aux lettres liées**   Les boîtes aux lettres liées sont des boîtes aux lettres d'utilisateur auxquelles accèdent les utilisateurs dans une forêt approuvée distincte. Les boîtes aux lettres liées peuvent être utiles pour les organisations qui déploient Exchange dans une forêt ressource. Le scénario de forêt ressource permet à une organisation de centraliser Exchange dans une forêt unique, tout en permettant d'accéder à l'organisation Exchange avec des comptes d'utilisateur dans une ou plusieurs forêts approuvées.
+  - **Boîtes aux lettres liées** Les boîtes aux lettres liées sont des boîtes aux lettres d'utilisateur auxquelles accèdent les utilisateurs dans une forêt approuvée distincte. Les boîtes aux lettres liées peuvent être utiles pour les organisations qui déploient Exchange dans une forêt ressource. Le scénario de forêt ressource permet à une organisation de centraliser Exchange dans une forêt unique, tout en permettant d'accéder à l'organisation Exchange avec des comptes d'utilisateur dans une ou plusieurs forêts approuvées.
     
     Comme indiqué précédemment, un compte d'utilisateur doit être associé à chaque boîte aux lettres. Toutefois, le compte d'utilisateur qui accède à la boîte aux lettres liée n'existe pas dans la forêt où Exchange est déployé. Par conséquent, un compte d'utilisateur désactivé existant dans la même forêt qu'Exchange est associé à chaque boîte aux lettres liée. La figure suivante décrit la relation entre le compte d'utilisateur lié servant à accéder à la boîte aux lettres liée et le compte d'utilisateur désactivé dans la forêt ressource Exchange associé à la boîte aux lettres liée.
     
@@ -157,7 +158,7 @@ Exchange prend en charge les types de boîte aux lettres suivants :
     
     ![Organisation Exchange complexe avec forêt de ressources](images/Aa998031.706725cf-e520-4b89-a275-acd8fb58943a(EXCHG.150).gif "Organisation Exchange complexe avec forêt de ressources")  
 
-  - **Boîtes aux lettres Office 365   **Lorsque vous créez une boîte aux lettres Office 365 dans Exchange Online dans un déploiement hybride, l’utilisateur de messagerie est créé dans Active Directory version locale. Si elle est configurée, la synchronisation d’annuaires synchronise automatiquement ce nouvel objet utilisateur avec Office 365, où il est converti en boîte aux lettres en nuage dans Exchange Online. Vous pouvez créer des boîtes aux lettres Office 365 comme boîtes aux lettres d’utilisateur ordinaire, comme boîtes aux lettres de ressources pour des salles de réunion et de l’équipement, et comme boîtes aux lettres partagées.
+  - **Boîtes aux lettres Office 365**   Lorsque vous créez une boîte aux lettres Office 365 dans Exchange Online dans un déploiement hybride, l’utilisateur de messagerie est créé dans Active Directory version locale. Si elle est configurée, la synchronisation d’annuaires synchronise automatiquement ce nouvel objet utilisateur avec Office 365, où il est converti en boîte aux lettres en nuage dans Exchange Online. Vous pouvez créer des boîtes aux lettres Office 365 comme boîtes aux lettres d’utilisateur ordinaire, comme boîtes aux lettres de ressources pour des salles de réunion et de l’équipement, et comme boîtes aux lettres partagées.
 
   - **Boîtes aux lettres partagées**   Les boîtes aux lettres partagées ne sont pas principalement associées à des utilisateurs individuels et sont généralement configurées pour permettre l’accès à plusieurs utilisateurs.
     

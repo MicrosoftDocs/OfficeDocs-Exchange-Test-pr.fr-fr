@@ -1,5 +1,5 @@
 ﻿---
-title: "Liste de contrôle : intégration de la messagerie unifiée d'Exchange 2013 à Lync Server: Exchange 2013 Help"
+title: 'Liste de contrôle : intégration de la MU d’Exchange 2013 à Lync Server'
 TOCTitle: "Liste de contrôle : intégration de la messagerie unifiée d'Exchange 2013 à Lync Server"
 ms:assetid: 3b82e86f-9f30-4445-96ad-744082abeaeb
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd638120(v=EXCHG.150)
@@ -18,9 +18,6 @@ _**Sapplique à :** Exchange Server 2013, Exchange Server 2016_
 _**Dernière rubrique modifiée :** 2016-12-09_
 
 Utilisez cette liste de contrôle pour installer et déployer la messagerie unifiée et Microsoft Lync Server 2013. Dans cette rubrique, « Lync Server » désigne également Lync Server 2010. Toutefois, Microsoft Office Communications Server 2007 R2 peut aussi être déployé à l'aide de la messagerie unifiée.
-
-> [!NOTE]
-> 
 
 
 Avant de commencer à utiliser cette liste de vérification, familiarisez-vous avec les concepts présentés dans :
@@ -62,6 +59,7 @@ Pour plus d’informations sur l’exécution des tâches à effectuer pour Lync
 <td><p></p></td>
 <td><p>Consulter la configuration requise pour l'intégration de Microsoft Lync Server 2013 et Microsoft Exchange Server 2013.</p></td>
 <td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=282082">Configuration requise pour l’intégration de Microsoft Lync Server 2013 et Microsoft Exchange Server 2013</a></p>
+
 > [!TIP]
 > Unified Communications Managed API (UCMA) 4.0 Runtime est requis pour Exchange 2013 et Lync Server 2010 et 2013. Il est installé au cours de l’installation. Pour télécharger et obtenir des informations sur UCMA 4.0, consultez la rubrique <a href="https://go.microsoft.com/fwlink/p/?linkid=258269">Unified Communications Managed API 4.0 Runtime</a>
 

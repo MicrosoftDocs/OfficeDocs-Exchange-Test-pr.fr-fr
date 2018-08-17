@@ -1,5 +1,5 @@
 ﻿---
-title: "Voix des procédures de l'utilisateur à extension messagerie: Exchange 2013 Help"
+title: 'Procédures utilisateur avec messagerie vocale: Exchange 2013 Help'
 TOCTitle: Voix des procédures de l'utilisateur à extension messagerie
 ms:assetid: 57633cf1-9ed9-43ae-a2a8-965431b0a779
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ835776(v=EXCHG.150)

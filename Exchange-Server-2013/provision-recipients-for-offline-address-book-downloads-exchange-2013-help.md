@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configuration des destinataires pour le téléchargement du carnet d’adresses en mode hors connexion: Exchange 2013 Help'
+title: 'Configuration des desti. pour le téléchgmt du carnet d’adresses hors connexion'
 TOCTitle: Configuration des destinataires pour le téléchargement du carnet d’adresses en mode hors connexion
 ms:assetid: 141751ac-16d3-4e3c-b70c-004aeedcb5a0
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa996345(v=EXCHG.150)

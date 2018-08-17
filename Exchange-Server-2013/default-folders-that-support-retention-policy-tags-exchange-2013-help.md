@@ -1,5 +1,5 @@
 ﻿---
-title: 'Dossiers par défaut prenant en charge les balises de stratégie de rétention: Exchange 2013 Help'
+title: 'Dossiers p. déf. prenant en charge balises strat. rétention: Exchange 2013 Help'
 TOCTitle: Dossiers par défaut prenant en charge les balises de stratégie de rétention
 ms:assetid: d2e2064f-4102-4018-b688-504d09da6d39
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn783294(v=EXCHG.150)

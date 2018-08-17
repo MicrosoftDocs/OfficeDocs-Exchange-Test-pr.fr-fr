@@ -1,5 +1,5 @@
 ﻿---
-title: 'Importer et exporter des invites, des annonces, des menus et des messages d’accueil personnalisés: Exchange 2013 Help'
+title: 'Importer/exporter des invites, annonces, menus et messages d’accueil perso.'
 TOCTitle: Importer et exporter des invites, des annonces, des menus et des messages d’accueil personnalisés
 ms:assetid: e82da5d5-625f-4d8b-8d31-ac45513aacfd
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee681667(v=EXCHG.150)

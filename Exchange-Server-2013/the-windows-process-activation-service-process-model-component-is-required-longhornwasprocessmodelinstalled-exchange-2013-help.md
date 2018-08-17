@@ -1,5 +1,5 @@
 ﻿---
-title: 'Le composant de modèle de processus de service d’activation des processus Windows est required_LonghornWASProcessModelInstalled: Exchange 2013 Help'
+title: 'Composant de mod. de processus de serv. d’activ. de processus Windows requis'
 TOCTitle: Le composant de modèle de processus de service d’activation des processus Windows est required_LonghornWASProcessModelInstalled
 ms:assetid: 8cc13dbb-4921-4c07-8602-d26613d7730a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.longhornwasprocessmodelinstalled(v=EXCHG.150)

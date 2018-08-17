@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer un standard automatique pour les utilisateurs ayant des noms similaires: Exchange 2013 Help'
+title: 'Config. un standard auto. pour les utilisateurs ayant des noms similaires'
 TOCTitle: Configurer un standard automatique pour les utilisateurs ayant des noms similaires
 ms:assetid: 2e7318a0-67f9-4d7b-8300-5f0ef77656a8
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997135(v=EXCHG.150)

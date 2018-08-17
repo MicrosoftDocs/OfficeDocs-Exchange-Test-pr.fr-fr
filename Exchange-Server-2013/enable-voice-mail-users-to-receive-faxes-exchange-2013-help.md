@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activation de la réception de télécopies pour les utilisateurs de messagerie vocale: Exchange 2013 Help'
+title: 'Activ. réception de télécopies pr utlsr de messag. voc.: Exchange 2013 Help'
 TOCTitle: Activation de la réception de télécopies pour les utilisateurs de messagerie vocale
 ms:assetid: 451ab0ea-21e1-4c1f-ae62-4ba7cdfd1e4d
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb232022(v=EXCHG.150)

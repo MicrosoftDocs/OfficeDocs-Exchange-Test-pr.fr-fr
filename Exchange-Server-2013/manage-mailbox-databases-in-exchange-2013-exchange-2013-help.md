@@ -1,5 +1,5 @@
 ﻿---
-title: 'Gestion des bases de données de boîtes aux lettres dans Exchange 2013: Exchange 2013 Help'
+title: 'Gestion des BDD de BAL dans Exchange 2013: Exchange 2013 Help'
 TOCTitle: Gestion des bases de données de boîtes aux lettres dans Exchange 2013
 ms:assetid: ead4a96b-1717-435b-bcfc-9901ac4e3b58
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ150580(v=EXCHG.150)

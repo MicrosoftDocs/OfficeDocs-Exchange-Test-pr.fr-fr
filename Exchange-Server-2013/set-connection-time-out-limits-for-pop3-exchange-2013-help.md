@@ -1,5 +1,5 @@
 ﻿---
-title: 'Définir les limites de délai d’expiration de connexion pour POP3: Exchange 2013 Help'
+title: 'Déf. les limites de délai d’expiration de connex. pr POP3: Exchange 2013 Help'
 TOCTitle: Définir les limites de délai d’expiration de connexion pour POP3
 ms:assetid: 40003115-be4e-4cf1-97b4-f5ca05b314dc
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997604(v=EXCHG.150)

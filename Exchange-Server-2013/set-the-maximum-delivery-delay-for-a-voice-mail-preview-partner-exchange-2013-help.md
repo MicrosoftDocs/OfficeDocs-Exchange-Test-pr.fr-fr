@@ -1,5 +1,5 @@
 ﻿---
-title: "Définir le délai de remise maximum pour un partenaire de l'aperçu de messagerie vocale: Exchange 2013 Help"
+title: 'Définir le délai de remise max. pour un ptnr de l’aperçu de messag. vocale'
 TOCTitle: Définir le délai de remise maximum pour un partenaire de l'aperçu de messagerie vocale
 ms:assetid: c9a07f6d-6f7f-4036-9a4a-d668d21e2c76
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff630928(v=EXCHG.150)

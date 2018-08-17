@@ -1,5 +1,5 @@
 ﻿---
-title: 'Interruption ou reprise d’une copie de base de données de boîtes aux lettres: Exchange 2013 Help'
+title: 'Interruption ou reprise d’une copie de BDD de BAL: Exchange 2013 Help'
 TOCTitle: Interruption ou reprise d’une copie de base de données de boîtes aux lettres
 ms:assetid: 96aa1b82-3e15-4215-843e-3d583af9504b
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd298159(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Formats de fichier indexés par le service de recherche Exchange: Exchange 2013 Help'
+title: 'Formats de fichier indexés par la recherche Exchange: Exchange 2013 Help'
 TOCTitle: Formats de fichier indexés par le service de recherche Exchange
 ms:assetid: e5110ac1-28e1-4554-acc3-85d08c997bc5
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee633485(v=EXCHG.150)

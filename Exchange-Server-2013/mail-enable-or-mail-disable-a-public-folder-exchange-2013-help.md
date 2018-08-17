@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activation ou désactivation de la messagerie pour un dossier public: Exchange 2013 Help'
+title: 'Activer/désactiver la messag. pour un dossier public: Exchange 2013 Help'
 TOCTitle: Activation ou désactivation de la messagerie pour un dossier public
 ms:assetid: 3d69f76d-ff3c-46c1-b962-6a1baa425d8a
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997560(v=EXCHG.150)

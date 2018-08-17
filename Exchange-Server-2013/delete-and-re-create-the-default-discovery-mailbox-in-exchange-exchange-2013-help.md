@@ -1,5 +1,5 @@
 ﻿---
-title: 'Suppression et recréation de la boîte aux lettres de découverte par défaut dans Exchange: Exchange 2013 Help'
+title: 'Suppression et recréation de la BAL de découverte par défaut dans Exchange'
 TOCTitle: Suppression et recréation de la boîte aux lettres de découverte par défaut dans Exchange
 ms:assetid: 4bde0b00-bdf7-44b4-ba64-aa062bc10ca2
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn750894(v=EXCHG.150)

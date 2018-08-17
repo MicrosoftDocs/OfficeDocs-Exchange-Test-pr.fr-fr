@@ -1,5 +1,5 @@
 ﻿---
-title: 'Configurer le deuxième moyen pour les utilisateurs Outlook Voice Access pour la recherche: Exchange 2013 Help'
+title: 'Configurer le deuxième moyen pour les utilisateurs OVA pour la recherche'
 TOCTitle: Configurer le deuxième moyen pour les utilisateurs Outlook Voice Access pour la recherche
 ms:assetid: 5cd4e0a0-d023-45a1-aa3c-b8dea6ec6d72
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa998311(v=EXCHG.150)

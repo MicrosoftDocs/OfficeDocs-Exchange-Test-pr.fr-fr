@@ -1,5 +1,5 @@
 ﻿---
-title: 'Affichage ou configuration des répertoires virtuels d’Outlook Web App: Exchange 2013 Help'
+title: 'Affichage ou config. des répertoires virtuels d’OWA: Exchange 2013 Help'
 TOCTitle: Affichage ou configuration des répertoires virtuels d’Outlook Web App
 ms:assetid: 90babcf6-4486-4e01-9819-6d3ca4ed756c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd298140(v=EXCHG.150)

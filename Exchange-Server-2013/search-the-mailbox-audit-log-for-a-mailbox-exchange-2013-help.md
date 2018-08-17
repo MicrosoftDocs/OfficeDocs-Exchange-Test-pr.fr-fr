@@ -1,5 +1,5 @@
 ﻿---
-title: 'Rechercher une boîte aux lettres dans le journal d’audit de boîte aux lettres: Exchange 2013 Help'
+title: 'Rechercher une BAL dans le journal d’audit de BAL: Exchange 2013 Help'
 TOCTitle: Rechercher une boîte aux lettres dans le journal d’audit de boîte aux lettres
 ms:assetid: 5b518a08-3b51-4ba3-bfbd-0e35cc5ff374
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ff461930(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Un ou plusieurs serveurs du Connecteur Active Directory ont été détectés_ADCFound: Exchange 2013 Help'
+title: 'Un ou plusieurs serveurs du Connecteur AD ont été détectés'
 TOCTitle: Un ou plusieurs serveurs du Connecteur Active Directory ont été détectés_ADCFound
 ms:assetid: a874f51f-09a2-4a76-9695-d61fb1ee6c1c
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/ms.exch.setupreadiness.adcfound(v=EXCHG.150)
@@ -46,6 +46,7 @@ Pour résoudre ce problème, supprimez tous les composants ADC et recommencez l�
 <li><p>Modifiez <strong>Type de démarrage</strong> en <strong>Désactivé</strong>. Au prochain démarrage de l’ordinateur, le service ADC ne sera pas lancé.</p></li>
 <li><p>Cliquez sur <strong>Appliquer</strong>, puis cliquez sur <strong>OK</strong>.</p></li>
 <li><p>L’Assistant Installation d’Active Directory fourni sur le CD-ROM Microsoft Exchange 2000 Server ou Microsoft Exchange Server 2003 permet de désinstaller le service ADC. Ouvrez le dossier \ADC\I386 et double-cliquez sur le programme Setup.exe. Suivez les invites pour <strong>Supprimer tous</strong> les composants du service ADC.</p>
+
 > [!NOTE]
 > Vous devez effectuez l’étape 6 et <strong>Supprimer tous</strong> les composants ADC pour résoudre ce problème. Il ne suffit pas de désactiver le service ADC.
 

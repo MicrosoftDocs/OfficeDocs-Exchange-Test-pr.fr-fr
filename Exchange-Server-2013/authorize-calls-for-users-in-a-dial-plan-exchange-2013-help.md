@@ -1,5 +1,5 @@
 ﻿---
-title: 'Autoriser les appels destinés aux utilisateurs dans un plan de numérotation: Exchange 2013 Help'
+title: 'Autoriser appels aux utilisateurs dans un plan de num.: Exchange 2013 Help'
 TOCTitle: Autoriser les appels destinés aux utilisateurs dans un plan de numérotation
 ms:assetid: 7c7fd0c4-4001-408e-b352-c49bac9f78cc
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb691175(v=EXCHG.150)

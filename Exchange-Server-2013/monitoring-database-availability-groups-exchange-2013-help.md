@@ -1,5 +1,5 @@
 ﻿---
-title: 'Surveillance des groupes de disponibilité des bases de données: Exchange 2013 Help'
+title: 'Surveiller les groupes de dispo. des bases de données: Exchange 2013 Help'
 TOCTitle: Surveillance des groupes de disponibilité des bases de données
 ms:assetid: f5bdfd6e-e93c-4d96-8bc2-548750d51930
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd351258(v=EXCHG.150)

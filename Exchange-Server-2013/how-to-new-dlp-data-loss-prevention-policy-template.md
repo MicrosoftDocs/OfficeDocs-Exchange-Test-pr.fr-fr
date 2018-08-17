@@ -1,5 +1,5 @@
 ﻿---
-title: 'Procédure : nouveau modèle de stratégie de protection contre la perte de données (DLP)'
+title: 'Nouveau modèle de stratégie de protection contre la perte de données (DLP)'
 TOCTitle: Création d'une stratégie DLP à partir d'un modèle
 ms:assetid: 4432ef8b-6108-48d3-b2af-43ef5b40d2bc
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ150515(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Protection des données de formulaire avec la création d’une empreinte numérique de document: Exchange 2013 Help'
+title: 'Protection des données de formulaire avec l’empreinte numérique de document'
 TOCTitle: Protection des données de formulaire avec la création d’une empreinte numérique de document
 ms:assetid: 110c839b-7693-42f6-aa5d-58ce64f4c357
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn635175(v=EXCHG.150)

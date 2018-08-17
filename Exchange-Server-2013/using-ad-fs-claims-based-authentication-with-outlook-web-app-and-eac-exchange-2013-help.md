@@ -1,5 +1,5 @@
 ﻿---
-title: "Utiliser l'authentification basée sur les revendications AD FS avec Outlook Web App et le CAE: Exchange 2013 Help"
+title: 'Authentification basée sur les revendications AD FS avec OWA et le CAE'
 TOCTitle: Utiliser l'authentification basée sur les revendications AD FS avec Outlook Web App et le CAE
 ms:assetid: 919a9bfb-c6df-490a-b2c4-51796b0f0596
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dn635116(v=EXCHG.150)
@@ -363,22 +363,18 @@ Vous pouvez également créer des approbations de partie de confiance et des rè
 **IssuanceTransformRules.txt contient :** 
 ```
     @RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value); 
- ```
- ```   
+ 
     @RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
 ```
 
 **Exécutez les commandes suivantes :** 
 ```
     [string]$IssuanceAuthorizationRules=Get-Content -Path C:\IssuanceAuthorizationRules.txt
- ```
- ```   
+   
     [string]$IssuanceTransformRules=Get-Content -Path c:\IssuanceTransformRules.txt
- ```
- ```   
+ 
     Add-ADFSRelyingPartyTrust -Name "Outlook Web App" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/owa/" -WSFedEndpoint https://mail.contoso.com/owa/ -Identifier https://mail.contoso.com/owa/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
- ```  
- ```
+ 
     Add-ADFSRelyingPartyTrust -Name "Exchange Admin Center (EAC)" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/ecp/" -WSFedEndpoint https://mail.contoso.com/ecp/ -Identifier https://mail.contoso.com/ecp/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
 ```
 

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Récupérer un serveur membre de groupe de disponibilité de la base de données: Exchange 2013 Help'
+title: 'Récupérer un serveur membre de groupe de dispo. de la BDD: Exchange 2013 Help'
 TOCTitle: Récupérer un serveur membre de groupe de disponibilité de la base de données
 ms:assetid: eccd8f61-9706-4bb7-a62a-ec7c166f8019
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Dd638206(v=EXCHG.150)
@@ -85,9 +85,13 @@ Pour vérifier que vous avez bien récupéré le membre du groupe de disponibili
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour vérifier l’intégrité et le statut du membre du groupe de disponibilité de base de données restauré.
     
-        Test-ReplicationHealth <ServerName>
-    
-        Get-MailboxDatabaseCopyStatus -Server <ServerName>
+       ```
+           Test-ReplicationHealth <ServerName>
+       ```
+
+       ```   
+           Get-MailboxDatabaseCopyStatus -Server <ServerName>
+       ```   
     
     L'ensemble des tests d'intégrité de réplication doivent réussir et le statut des bases de données et leurs index de contenu doivent être intègres.
 

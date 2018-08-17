@@ -1,5 +1,5 @@
 ﻿---
-title: 'Autoriser ou empêcher de répondeur automatique sur un serveur de boîtes aux lettres: Exchange 2013 Help'
+title: 'Autoriser/empêcher le répondeur auto. sur un srv de BAL: Exchange 2013 Help'
 TOCTitle: Autoriser ou empêcher de répondeur automatique sur un serveur de boîtes aux lettres
 ms:assetid: 4b860c09-6669-4e3d-b3dc-17b8018b3860
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Aa997908(v=EXCHG.150)

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Créez un connecteur de réception pour recevoir des messages depuis un serveur Exchange interne: Exchange 2013 Help'
+title: 'Connecteur de réception pour recevoir des msg depuis un srv Exchange interne'
 TOCTitle: Créez un connecteur de réception pour recevoir des messages depuis un serveur Exchange interne
 ms:assetid: 546cead9-7a2d-4332-a5f6-35343d56c619
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ657448(v=EXCHG.150)

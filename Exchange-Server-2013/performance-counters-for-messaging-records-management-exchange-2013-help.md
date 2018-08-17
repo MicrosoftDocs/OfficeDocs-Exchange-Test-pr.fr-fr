@@ -1,5 +1,5 @@
 ﻿---
-title: 'Compteurs de performance pour la gestion des enregistrements de messagerie: Exchange 2013 Help'
+title: 'Compteurs de performance pr gérer les enregist. de messag.: Exchange 2013 Help'
 TOCTitle: Compteurs de performance pour la gestion des enregistrements de messagerie
 ms:assetid: b59def6f-4249-4e0c-8057-8ae6eb7c5676
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb310790(v=EXCHG.150)
@@ -156,6 +156,7 @@ Le tableau suivant décrit les compteurs de performance utilisés pour la gestio
 <td><p>Assistant Dossier géré MSExchange</p></td>
 <td><p>Indique le nombre d'éléments auxquels est attribuée une balise de stratégie par défaut en fonction d'une action de l'utilisateur, par exemple lors de la sélection d'un message avec une balise personnelle puis de l'option <strong>Utiliser la stratégie de dossier</strong>.</p>
 <p>Si un nouvel utilisateur se voit attribuer une stratégie de rétention avec une balise de stratégie par défaut, le compteur est incrémenté du nombre d'éléments qui seront attribués par la balise de stratégie par défaut en fonction de la stratégie de rétention.</p>
+
 > [!NOTE]
 > Si un utilisateur dispose d'une stratégie de rétention avec une balise de stratégie par défaut, les nouveaux messages qui arrivent par le protocole de transport reçoivent une balise par défaut. Cette action n'est pas suivie par ce compteur.
 

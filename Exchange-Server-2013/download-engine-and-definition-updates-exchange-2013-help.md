@@ -1,5 +1,5 @@
 ﻿---
-title: 'Télécharger les mises à jour des définitions et des moteurs: Exchange 2013 Help'
+title: 'Télécharger les màj des définitions et des moteurs: Exchange 2013 Help'
 TOCTitle: Télécharger les mises à jour des définitions et des moteurs
 ms:assetid: 8f2ca383-e463-4df0-aa5d-29afe2f81aaf
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/JJ657471(v=EXCHG.150)

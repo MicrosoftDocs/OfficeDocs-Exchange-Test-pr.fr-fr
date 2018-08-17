@@ -1,5 +1,5 @@
 ﻿---
-title: 'Activer l’enregistrement des invites personnalisées à l’aide de l’interface utilisateur de téléphonie: Exchange 2013 Help'
+title: 'Activ. enregist. des invites perso. avec l’interface utlsr de téléphonie'
 TOCTitle: Activer l’enregistrement des invites personnalisées à l’aide de l’interface utilisateur de téléphonie
 ms:assetid: f2e5c636-2be9-4d48-b5e7-37913ded62d1
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Bb691404(v=EXCHG.150)
