@@ -69,6 +69,7 @@ Les téléphones ayant une version du logiciel Windows comme système d’exploi
 <li><p>Exiger le chiffrement de l’appareil</p></li>
 <li><p>Effacement à distance</p></li>
 </ul>
+
 > [!WARNING]
 > Si votre organisation utilise d’autres paramètres de stratégies de boîtes aux lettres des appareils mobiles, vous devez définir la stratégie <strong>Autoriser les périphériques non configurables</strong> à vrai. Ceci peut avoir des incidences sur la sécurité dans votre organisation, en effet d’autres téléphones et appareils mobiles qui ne satisfont pas les exigences de vos paramètres de stratégies d’appareils mobiles seront autorisés à se synchroniser. Pour plus d’informations, consultez la rubrique <a href="mobile-device-mailbox-policies-exchange-2013-help.md">Stratégies de boîte aux lettres d'appareil mobile</a>.
 

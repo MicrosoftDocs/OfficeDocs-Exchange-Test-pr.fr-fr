@@ -21,7 +21,7 @@ _**Dernière rubrique modifiée :** 2013-02-11_
 
 Après avoir installé un serveur de boîtes aux lettres exécutant le service de messagerie unifiée Microsoft Exchange, vous pouvez configurer plusieurs options, notamment le nombre d'appels simultanés, les ports d'écoute TCP et TLS (Transport Layer Security), l'état et le mode de démarrage de la messagerie unifiée.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Il n'est pas nécessaire d'ajouter des serveurs de boîtes aux lettres à un plan de numérotation de messagerie unifiée avant qu'ils ne puissent traiter les appels pour la messagerie unifiée, sauf si vous intégrez la messagerie unifiée et Microsoft Office Communications Server 2007 R2 ou Microsoft Lync Server. Par défaut, tous les serveurs de boîtes aux lettres d'une organisation sont disponibles pour répondre aux appels entrants.
 
 

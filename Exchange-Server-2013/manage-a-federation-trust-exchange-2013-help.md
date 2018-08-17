@@ -25,7 +25,7 @@ Une approbation de fédération établit une relation d’approbation entre une 
 
 Pour connaître les autres tâches de gestion relatives à la fédération, consultez la rubrique [Procédures de fédération](federation-procedures-exchange-2013-help.md).
 
-> [!NOTE]
+> [!IMPORTANT]
 > Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.
 
 
@@ -65,7 +65,7 @@ Pour connaître les autres tâches de gestion relatives à la fédération, cons
 
 6.  Dans **Sélectionner les domaines acceptés**, sélectionnez **marketing.contoso.com** dans la liste des domaines acceptés, puis cliquez sur **OK** pour ajouter le domaine à l’approbation fédérée.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Une chaîne de vérification de domaine fédéré sera créée pour le domaine <strong>marketing.contoso.com</strong>. Vous devez créer un enregistrement TXT distinct sur votre DNS public pour ce domaine.
 
 

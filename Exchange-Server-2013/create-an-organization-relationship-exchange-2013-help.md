@@ -19,7 +19,7 @@ _**Dernière rubrique modifiée :** 2015-04-07_
 
 Configurez une relation organisationnelle pour partager des informations de calendrier avec un partenaire commercial externe. Une relation organisationnelle peut être configurée entre deux organisations Exchange 2013 fédérées ou entre une organisation Exchange 2013 fédérée et des organisations Exchange 2010 fédérées. Vous pouvez également configurer une relation organisationnelle entre votre organisation Exchange sur site et une organisation Office 365.
 
-> [!NOTE]
+> [!IMPORTANT]
 > La création d'une relation d'organisation fait partie des différentes étapes de la mise en place du partage fédéré dans votre organisation Exchange et exige la configuration d'une approbation de fédération pour votre organisation Exchange locale.
 
 

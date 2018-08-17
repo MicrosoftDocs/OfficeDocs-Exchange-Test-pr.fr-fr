@@ -41,7 +41,7 @@ Les cmdlets exécutées directement dans l'environnement de ligne de commande Ex
 
 Applets de commande, où ils sont exécuté, sont audités si une applet de commande se trouve sur l’applet de commande l’audit de la liste et un ou plusieurs paramètres sur cette applet de commande se trouvent sur la liste des paramètres d’audit. L’enregistrement d’audit est destinée à afficher les actions qui ont été prises pour modifier des objets dans une organisation Exchange plutôt que les objets qui ont été visionnés.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Une cmdlet peut ne pas être enregistrée si une erreur s'est produite avant que la cmdlet appelle l'agent d'extension du journal d'audit d'administration. Si une erreur se produit après l'appel de l'agent du journal d'audit d'administration, la cmdlet, ainsi que l'erreur qui lui est associée, est enregistrée. Pour plus d'informations, consultez la section Admin Audit Log Agent présentée ci-après dans cette rubrique.
 > Les modifications apportées avec les outils de gestion Microsoft Exchange Server 2010 sont consignées, mais pas celles effectuées à l'aide des outils de gestion Microsoft Exchange Server 2007.
 > Les modifications apportées à la configuration de l'enregistrement d'audit sont actualisées toutes les 60 minutes sur les ordinateurs ayant l'environnement de ligne de commande Exchange Management Shell ouvert au moment de la modification de la configuration. Si vous souhaitez appliquer les modifications immédiatement, fermez et rouvrez l'environnement de ligne de commande Exchange Management Shell sur chaque ordinateur.
@@ -53,7 +53,7 @@ Applets de commande, où ils sont exécuté, sont audités si une applet de comm
 
 Par défaut, si l’enregistrement d’audit est activé, une entrée de journal est créée chaque fois qu’une applet de commande est exécuté. Si vous ne voulez pas auditer chaque applet de commande est exécutée, vous pouvez configurer l’enregistrement d’audit pour auditer uniquement les applets de commande et les paramètres que qui vous intéressent. Vous configurez l’enregistrement d’audit avec l’applet de commande **Set-AdminAuditLogConfig** . Les paramètres référencés dans les sections suivantes sont utilisées avec cette applet de commande.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Les modifications apportées à la configuration de l'enregistrement d'audit sont toujours consignées, que la cmdlet <strong>Set-AdministratorAuditLog</strong> figure dans la liste des cmdlet auditées ou non et que l'enregistrement d'audit administrateur soit activé ou non.
 
 
@@ -147,7 +147,7 @@ Chaque entrée de journal d'audit contient les informations décrites dans le ta
 <td><p><code>ModifiedProperties</code></p></td>
 <td><p>Ce champ contient les propriétés modifiées sur l'objet dans le champ <code>ObjectModified</code>. L'ancienne valeur de la propriété et la nouvelle valeur stockée sont également stockées dans ce champ, mais sont invisibles dans la sortie par défaut. Pour plus d'informations sur l'accès aux informations supplémentaires dans ce champ, consultez la rubrique <a href="search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md">Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur</a>.</p>
 
-> [!NOTE]  
+> [!IMPORTANT]  
 > Ce champ est uniquement renseigné si le paramètre <em>LogLevel</em> de la cmdlet <strong>Set-AdminAuditLogConfig</strong> est défini sur <code>Verbose</code>.
 
 </td>

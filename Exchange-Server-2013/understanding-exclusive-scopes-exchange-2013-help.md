@@ -33,7 +33,7 @@ Une fois que l’attribution a été créée, l’étendue exclusive autorise l�
 
 Pour plus d’informations sur les filtres d’étendue de gestion, voir [Présentation des filtres d’attribution du rôle de gestion](understanding-management-role-scope-filters-exchange-2013-help.md).
 
-> [!NOTE]
+> [!IMPORTANT]
 > Les délais de réplication Active Directory doivent être pris en compte lorsque vous apportez des modifications à des composants de rôle de gestion, y compris aux étendues exclusives.
 
 

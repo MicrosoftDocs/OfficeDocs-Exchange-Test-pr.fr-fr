@@ -41,7 +41,7 @@ Les groupes de disponibilité de base de données ayant deux membres comportent 
 
   - Si l’heure à laquelle le bit DACP a été défini est plus récente que l’heure d’amorçage du serveur témoin, le système suppose que le membre DAG a été redémarré pour une autre raison (peut-être une interruption programmée durant laquelle une opération de maintenance a été menée, un blocage du système ou une panne de courant isolée du membre DAG) et l’autorise à monter des bases de données.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Dans la mesure où l’heure d’amorçage du serveur témoin permet de déterminer si un membre DAG peut monter ses bases de données actives au démarrage, vous ne devez jamais redémarrer simultanément le serveur témoin et le membre DAG. Sinon, le membre du DAG sera dans l’incapacité de monter les bases de données au démarrage. Si cela se produit, vous devez exécuter la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dd351169(v=exchg.150)">Restore-DatabaseAvailabilityGroup</a> sur le groupe de disponibilité de base de données. Le bit DACP sera alors réinitialisé et le membre DAG pourra monter les bases de données.
 
 

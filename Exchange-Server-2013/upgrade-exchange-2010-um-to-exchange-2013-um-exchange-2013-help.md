@@ -145,7 +145,7 @@ Pour permettre à la messagerie unifiée de chiffrer des données échangées en
     
     6.  Vérifiez que les domaines inclus sont corrects, puis cliquez sur **Terminer**.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Lorsque vous utilisez le CAE pour créer un certificat, vous n’êtes pas invité à activer les services pour ce dernier. Une fois le certificat créé, vous pouvez utiliser le CAE pour activer les services. Pour plus d'informations sur l'activation d'un certificat pour des services, consultez la rubrique <a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assigner un certificat pour les services de messagerie unifiée et de routeur d’appels UM</a>.
     
     Créez un certificat auto-signé Exchange en exécutant la commande suivante dans l'environnement de ligne de commande.

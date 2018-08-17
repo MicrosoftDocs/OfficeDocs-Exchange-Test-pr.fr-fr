@@ -112,7 +112,7 @@ Lors de la création d’une stratégie d’adresse de messagerie, les types d�
     
       - Adresse proxy de messagerie unifiée Exchange (adresse proxy EUM)
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Dans Exchange, toutes les adresses de messagerie non SMTP sont considérées comme des adresses personnalisées. Exchange ne fournit aucune boîte de dialogue ou page de propriétés unique pour les types d’adresses de messagerie X.400, GroupWise ou Lotus Notes. Si vous ajoutez une adresse de messagerie personnalisée non SMTP, vous devez disposer des fichiers bibliothèque de liens dynamiques correspondants. Si vous ne fournissez pas les fichiers DLL appropriés, vous ne pourrez pas créer de stratégie d’adresse de messagerie personnalisée. L’erreur suivante sera enregistrée dans l’Observateur d’événements : « L’objet de description de l’adresse de messagerie dans l’annuaire Microsoft Exchange pour le type d’adresse &quot; SADF &quot; sur les ordinateurs &quot; i386 &quot; est manquant. »
 
 
