@@ -57,7 +57,7 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux copies de 
 
 4.  Placez la base de données de boîtes aux lettres dans le nouvel emplacement. Pour obtenir la procédure détaillée, consultez la rubrique [Move a mailbox database path](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md).
     
-    > [!NOTE]
+    > [!IMPORTANT]  
     > Pendant l’opération de déplacement, la base de données déplacée doit être démontée. Tant que le déplacement n’est pas terminé, il y a une interruption de service et un blocage système pour tous les utilisateurs dont les boîtes aux lettres sont contenues dans la base de données en cours de déplacement. Une fois l’opération de déplacement terminée, la base de données est montée automatiquement.
 
 

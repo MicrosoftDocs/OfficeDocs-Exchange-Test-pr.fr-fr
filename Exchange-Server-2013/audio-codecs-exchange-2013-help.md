@@ -145,7 +145,7 @@ Parfois, au cours de la compression et de la décompression, certaines informati
 
 La bande passante RTAudio ou l'audio haute fidélité pour l'enregistrement des messages vocaux sont aussi disponibles sous forme de codec audio. Toutefois, l'audio haute fidélité via RTAudio n'est disponible qu'après intégration de la messagerie unifiée dans [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=202010). Pour activer RTAudio en tant que codec filaire (bande étroite ou bande large), le plan de numérotation de messagerie unifiée doit être configuré en tant que plan de numérotation de type URI SIP (Session Initiation Protocol), et vous devez définir le codec de réponse aux appels sur le plan de numérotation sur MP3 ou WMA pour activer la transmission audiofréquence large bande (16 kHz).
 
-> [!NOTE]
+> [!IMPORTANT]  
 > RTAudio n'est pas disponible dans les environnements dans lesquels Lync Server n'est pas déployé. Ceci est dû au fait que, dans les environnements qui n’ont pas intégré Lync Server, le plan de numérotation est défini sur Numéro de poste ou E.164 et non sur URI SIP.
 
 

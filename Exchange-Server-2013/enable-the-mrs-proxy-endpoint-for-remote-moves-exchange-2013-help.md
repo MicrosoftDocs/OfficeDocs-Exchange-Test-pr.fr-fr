@@ -69,7 +69,7 @@ La commande suivante active le point de terminaison du proxy MRS sur tous les se
 
     Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
 
-> [!NOTE]  
+> [!IMPORTANT]  
 > Comme indiqué précédemment, le point de terminaison du proxy MRS doit être activé sur chaque serveur d'accès au client au sein de votre organisation. Après avoir ajouté un serveur d'accès au client à votre organisation, exécutez la commande précédente.
 
 

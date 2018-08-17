@@ -42,7 +42,7 @@ Bienvenue dans Microsoft Exchange Server 2013. Vous êtes certainement impatien
     > [!TIP]
     > Avez-vous déjà entendu parler de l’Assistant de déploiement Exchange Server ? Il s’agit d’un outil en ligne gratuit qui vous permet de déployer rapidement Exchange 2013 dans votre organisation en répondant à quelques questions et en créant une liste de contrôle de déploiement personnalisée. Pour en savoir plus, consultez la page <a href="exchange-server-deployment-assistant-exchange-2013-help.md">Assistant de déploiement Exchange Server</a>.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Veillez à lire les <a href="release-notes-for-exchange-2013-exchange-2013-help.md">Notes de publication relatives à Exchange 2013</a> avant de commencer votre déploiement. Les notes de publication contiennent des informations importantes sur les problèmes que vous pourriez rencontrer pendant ou après votre déploiement.
 
 

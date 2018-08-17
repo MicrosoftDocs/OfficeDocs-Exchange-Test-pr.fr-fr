@@ -99,7 +99,7 @@ Cet exemple supprime la stratégie de boîte aux lettres de site par défaut cr�
 
     Remove-SiteMailboxProvisioningPolicy -Identity Default
 
-> [!NOTE]
+> [!IMPORTANT]
 > Vous devez commencer par créer et désigner une autre stratégie par défaut avant de pouvoir supprimer la stratégie <strong>Par défaut</strong>.
 
 

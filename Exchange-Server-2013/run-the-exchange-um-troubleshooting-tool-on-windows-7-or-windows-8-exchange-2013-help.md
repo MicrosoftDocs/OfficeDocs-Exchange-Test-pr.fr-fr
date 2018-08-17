@@ -51,7 +51,7 @@ L’outil de dépannage de la messagerie unifiée de Microsoft Exchange 2010 es
     
       - Installez l’outil. Pour plus d’informations, voir [Installer l’outil de dépannage de la messagerie unifiée Exchange](install-the-exchange-um-troubleshooting-tool-exchange-2013-help.md).
         
-        > [!NOTE]
+        > [!IMPORTANT]
         > Si vous envisagez d’utiliser l’outil de dépannage de la messagerie unifiée en mode <code>SIPClient</code>, plusieurs autres conditions doivent être satisfaites concernant Office Communications Server 2007 R2 ou Microsoft Lync Server. Pour plus d’informations, consultez les rubriques <a href="https://go.microsoft.com/fwlink/p/?linkid=311961">Liste de vérification : Déploiement d’Office Communications Server 2007 R2 et d’une messagerie unifiée Exchange 2010</a>.
 
 

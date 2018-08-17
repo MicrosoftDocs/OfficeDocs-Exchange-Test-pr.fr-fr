@@ -114,7 +114,7 @@ Dans un déploiement sur site, Exchange 2013, SharePoint 2013 et Lync Server 2
 
 Le programme d’installation d’Exchange 2013 crée un certificat auto-signé nommé Certificat d’authentification serveur Microsoft Exchange (Microsoft Exchange Server Auth Certificate). Ce certificat est répliqué sur tous les serveurs frontaux dans l’organisation Exchange 2013. L’empreinte du certificat est spécifiée dans la configuration d’autorisation d’Exchange 2013, avec son nom de service, un GUID réservé qui représente Exchange 2013 local. Exchange utilise la configuration d’autorisation pour publier son document de métadonnées d’authentification.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Le certificat d’authentification serveur par défaut créé par Exchange 2013 est valable cinq ans. Vous devez vérifier que la configuration d’autorisation inclut un certificat actuel.
 
 

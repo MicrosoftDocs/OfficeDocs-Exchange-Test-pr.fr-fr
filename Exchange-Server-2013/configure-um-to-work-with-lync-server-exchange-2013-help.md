@@ -21,7 +21,7 @@ Lorsque vous intégrez Microsoft Lync Server à la messagerie unifiée Exchange,
 
   - Il crée une passerelle IP de messagerie unifiée pour chaque pool Lync Server.
     
-    > [!NOTE]
+    > [!IMPORTANT]  
     > Le script ExchUcUtil.ps1 crée une ou plusieurs passerelles IP de messagerie unifiée. Vous devez désactiver les appels sortants sur toutes les passerelles IP de messagerie unifiée à l’exception de celle que le script a créée. Ceci inclut la désactivation des appels sortants sur les passerelles IP de messagerie unifiée qui ont été créées avant l’exécution du script. Pour désactiver les appels sortants sur une passerelle IP de messagerie unifiée, consultez la rubrique <a href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">Désactiver les appels sortants sur les passerelles IP de messagerie unifiée</a>.
 
 
@@ -29,7 +29,7 @@ Lorsque vous intégrez Microsoft Lync Server à la messagerie unifiée Exchange,
 
   - Il donne l’autorisation à Lync Server de lire les objets conteneurs de messagerie unifiée Active Directory, tels que les plans de numérotation de messagerie unifiée, les standards automatiques, les passerelles IP de messagerie unifiée et les groupements de postes de messagerie unifiée.
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Chaque forêt de messagerie unifiée doit être configurée pour approuver la forêt dans laquelle Lync Server 2013 est déployé, et vice versa. Si la messagerie unifiée Exchange est installée dans plusieurs forêts, les étapes d’intégration d’Exchange Server doivent être effectuées pour chaque forêt de messagerie unifiée ou vous devrez spécifier le domaine Lync Server. Par exemple, <em>ExchUcUtil.ps1 –Forest:&lt;lync-domain-controller-fqdn&gt;</em>.
 
 
@@ -51,11 +51,11 @@ Pour découvrir des tâches de gestion supplémentaires liées à l’intégrati
 
 Exécutez le script ExchUcUtil.ps1 sur n’importe quel serveur Exchange de votre organisation qui est dans la même topologie que Microsoft Lync Server. Vous pouvez exécuter le script à partir d’un serveur de boîtes aux lettres en utilisant l’environnement Shell ou vous pouvez l’exécuter à l’aide de Remote Windows PowerShell sur un serveur d’accès au client. Si vous exécutez le script sur un serveur d’accès au client de votre organisation, le serveur d’accès au client redirigera via proxy la session Remote Windows PowerShell vers un serveur de boîtes aux lettres dans l’organisation.
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Le script ExchUcUtil.ps1 crée une ou plusieurs passerelles IP de messagerie unifiée. Vous devez désactiver les appels sortants sur toutes les passerelles IP de messagerie unifiée à l’exception de celle que le script a créée. Ceci inclut la désactivation des appels sortants sur les passerelles IP de messagerie unifiée qui ont été créées avant l’exécution du script. Pour désactiver les appels sortants sur une passerelle IP de messagerie unifiée, consultez la rubrique <a href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">Désactiver les appels sortants sur les passerelles IP de messagerie unifiée</a>.
 
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Vous devez avoir les autorisations du rôle Gestion de l’organisation Exchange ou être membre du groupe de sécurité Administrateurs d’organisation Exchange pour exécuter le script.
 
 

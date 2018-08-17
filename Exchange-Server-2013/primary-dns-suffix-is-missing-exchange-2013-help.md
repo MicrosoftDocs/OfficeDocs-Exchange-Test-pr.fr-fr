@@ -21,7 +21,7 @@ Le programme d’installation de Microsoft Exchange Server 2013 ne peut pas co
 
 Pour résoudre ce problème, ajoutez un suffixe DNS principal à l’ordinateur en suivant la procédure ci-dessous, puis réexécutez le programme d’installation.
 
-> [!NOTE]
+> [!IMPORTANT]  
 > La modification du nom d’ordinateur ou du suffixe DNS principal après l’installation d’Exchange 2013 n’est pas prise en charge.
 
 

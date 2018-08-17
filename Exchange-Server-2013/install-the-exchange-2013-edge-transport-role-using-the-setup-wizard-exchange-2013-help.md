@@ -63,7 +63,7 @@ Pour plus d’informations sur les tâches postérieures à l’installation, co
 
 3.  Lancez le programme d’installation d’Exchange 2013 en double-cliquant sur `Setup.exe`
     
-    > [!NOTE]
+    > [!IMPORTANT]  
     > Si le contrôle d’accès d’utilisateur est activé, vous devez cliquer avec le bouton droit de la souris sur <code>Setup.exe</code> et sélectionner <strong>Exécuter en tant qu’administrateur</strong>.
 
 

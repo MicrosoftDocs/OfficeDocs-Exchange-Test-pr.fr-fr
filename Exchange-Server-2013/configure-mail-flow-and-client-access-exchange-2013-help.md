@@ -23,7 +23,7 @@ Une fois Microsoft Exchange Server 2013 installé dans votre organisation, vous
 
 Les étapes de la présente rubrique supposent un déploiement Exchange de base avec un site Active Directory unique et un espace de noms SMTP unique.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Cette rubrique utilise des valeurs d'exemple telles que Ex2013CAS, contoso.com, mail.contoso.com et 172.16.10.11. Remplacez ces valeurs d'exemple par les noms serveurs, noms de domaine complet et adresses IP pour votre organisation.
 
 
@@ -39,7 +39,7 @@ Pour les autres tâches de gestion relatives au flux de messagerie, aux clients 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-> [!NOTE]
+> [!IMPORTANT]
 > Chaque organisation demande au minimum un serveur d'accès au client et un serveur de boîtes aux lettres dans la forêt Active Directory. De plus, chaque site Active Directory qui contient un serveur de boîtes aux lettres doit également contenir au moins un serveur d'accès au client. Si vous séparez les rôles de vos serveurs, nous vous recommandons d'installer le serveur ayant le rôle de serveur de boîtes aux lettres en premier.
 
 
@@ -91,7 +91,7 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Par défaut, lorsque vous déployez une nouvelle organisation Exchange 2013 dans une forêt Active Directory, Exchange utilise le nom de domaine du domaine Active Directory, où Setup /PrepareAD a été exécuté. Si vous souhaitez que les destinataires reçoivent et envoient des messages vers et depuis un autre domaine, vous devez l'ajouter comme un domaine accepté. Ce domaine est également ajouté comme adresse SMTP principale sur la stratégie d'adresse de messagerie par défaut au cours de la prochaine étape.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Un enregistrement de ressource MX DNS (Domain Name System) public est requis pour chaque domaine SMTP pour lequel vous acceptez des messages électroniques en provenance d'Internet. Chaque enregistrement MX doit se résoudre dans le serveur côté Internet qui reçoit les messages électroniques pour votre organisation.
 
 

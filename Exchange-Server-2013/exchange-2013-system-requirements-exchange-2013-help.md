@@ -394,7 +394,7 @@ Exchange 2013 prend en charge les versions suivantes d’Outlook et d’Entoura
 
 Pour obtenir la liste des versions Outlook prises en charge par Exchange, voir [Mises à jour Outlook](https://go.microsoft.com/fwlink/p/?linkid=513459).
 
-> [!NOTE]
+> [!IMPORTANT]
 > Nous vous conseillons vivement d’installer les derniers Service Packs et mises à jour disponibles pour que vos utilisateurs bénéficient de la meilleure expérience possible lors de leur connexion à Exchange.
 
 

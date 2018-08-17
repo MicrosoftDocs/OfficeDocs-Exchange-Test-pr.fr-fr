@@ -19,7 +19,7 @@ _**Dernière rubrique modifiée :** 2015-04-07_
 
 Les étendues des rôles de gestion déterminent quels objets sont mis à la disposition de l’utilisateur pour que ceux-ci puissent être modifiés à l’aide des cmdlets et des paramètres qui lui sont attribués. En ajoutant une étendue de gestion, vous pouvez configurer les attributions des rôles de gestion afin que les utilisateurs puissent administrer des serveurs, des bases de données, des destinataires et des objets spécifiques au sein de votre organisation, sans pouvoir modifier d’autres objets.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Lorsque vous créez une étendue normale ou exclusive, vous replacez l'étendue d'écriture définie sur le rôle de gestion que vous attribuez. Vous ne pouvez pas remplacer l'étendue de lecture configurée sur le rôle de gestion.
 
 
@@ -107,7 +107,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Les étendues de configuration basées sur un filtre de base de données sont créées à l’aide du paramètre *DatabaseRestrictionFilter* de la cmdlet **New-ManagementScope**. Un filtre de base de données vous permet de créer une étendue qui s’applique uniquement aux bases de données correspondant au filtre que vous spécifiez.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Les attributions de rôle associées aux étendues de base de données s’appliquent uniquement aux utilisateurs qui se connectent à des serveurs dotés de Microsoft Exchange Server 2010 Service Pack 1 (SP1) ou version ultérieure ou d’Exchange 2013. Si un utilisateur auquel est appliquée une attribution de rôle associée à une étendue de base de données se connecte à une version de serveur antérieure à Exchange 2010 SP1, l’attribution de rôle n’est pas appliquée à cet utilisateur et celui-ci ne bénéficiera pas des autorisations octroyées dans le cadre de cette attribution.
 
 
@@ -127,7 +127,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Les étendues de configuration basées sur une liste de bases de données sont créées à l’aide du paramètre *DatabaseList* de la cmdlet **New-ManagementScope**. Une étendue de liste de bases de données vous permet de créer une étendue qui s’applique uniquement aux bases de données que vous spécifiez dans une liste.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Les attributions de rôle associées aux étendues de base de données s’appliquent uniquement aux utilisateurs qui se connectent à des serveurs dotés de Microsoft Exchange Server 2010 Service Pack 1 (SP1) ou version ultérieure ou d’Exchange 2013. Si un utilisateur auquel est appliquée une attribution de rôle associée à une étendue de base de données se connecte à une version de serveur antérieure à Exchange 2010 SP1, l’attribution de rôle n’est pas appliquée à cet utilisateur et celui-ci ne bénéficiera pas des autorisations octroyées dans le cadre de cette attribution.
 
 

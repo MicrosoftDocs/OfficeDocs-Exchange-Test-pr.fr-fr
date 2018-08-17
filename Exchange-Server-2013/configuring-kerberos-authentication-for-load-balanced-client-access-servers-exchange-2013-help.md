@@ -25,11 +25,11 @@ Afin d’utiliser l’authentification Kerberos avec des serveurs d’accès au
 
 Tous les serveurs d'accès au client qui partagent les mêmes espaces de noms et URL doivent utiliser les mêmes informations d'identification de compte de service de substitution. En règle générale, il vous suffit de disposer d'un compte unique pour une forêt pour chaque version d'Exchange. *informations d'identification du compte de service de substitution* ou *informations d'identification ASA*.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Exchange 2010 et Exchange 2013 ne peuvent pas partager les mêmes informations d'identification ASA. Vous devez créer des informations d'identification ASA pour Exchange 2013.
 
 
-> [!NOTE]
+> [!IMPORTANT]
 > Bien que les enregistrements CNAME soient pris en charge pour les espaces de noms partagés, Microsoft recommande d’utiliser des enregistrements A. Cela permet de s’assurer que le client émet correctement une demande de ticket Kerberos fondée sur le nom partagé et non sur le serveur FQDN.
 
 
@@ -278,7 +278,7 @@ Voici un exemple de la sortie qui est affichée lorsque vous exécutez la comman
 
 ## Association des noms de principaux du service (SPN) au compte ASA
 
-> [!NOTE]
+> [!IMPORTANT]
 > N’associez pas les SPN avec des informations d’identification ASA jusqu’à ce que vous ayez déployé ces informations d’identification sur au moins un serveur Exchange, comme décrit précédemment dans la section Déployer les informations d'identification ASA sur le premier serveur d'accès client Exchange 2013. Dans le cas contraire, vous rencontrerez des erreurs d’authentification Kerberos.
 
 

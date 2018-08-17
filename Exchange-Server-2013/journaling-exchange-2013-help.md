@@ -73,7 +73,7 @@ Retour au début
 
 Dans une organisation Exchange 2013, tout le trafic de messagerie est acheminé par des serveurs de boîtes aux lettres. Pendant leur durée de vie, tous les messages parcourent au moins un serveur exécutant le service de transport. L'*agent de journalisation* est un agent de transport axé sur la conformité qui traite les messages sur les serveurs de boîtes aux lettres. Il se déclenche à partir des événements de transport **OnSubmittedMessage** et **OnRoutedMessage**.
 
-> [!NOTE]
+> [!NOTE]  
 > Dans Exchange 2013, l'agent de journalisation est un agent intégré. Les agents intégrés ne figurent pas dans la liste des agents renvoyés par la cmdlet <strong>Get-TransportAgent</strong>. Pour plus d'informations, consultez la rubrique <a href="transport-agents-exchange-2013-help.md">Agents de transport</a>.
 
 
@@ -127,15 +127,15 @@ Pour plus d’informations sur l’activation ou la désactivation des messages 
 
 La boîte aux lettres de la journalisation sert à collecter les états de journal. La manière dont vous configurez la boîte aux lettres de journalisation dépend des stratégies de l'organisation, ainsi que des exigences légales et réglementaires. Vous pouvez spécifier une boîte aux lettres de journalisation que vous pouvez utiliser pour collecter les messages correspondant à toutes les règles de journal configurées dans l’organisation ou utiliser différentes boîtes aux lettres de journalisation pour différentes règles ou groupes de règles de journal.
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Vous ne pouvez pas désigner une boîte aux lettres Office 365 comme boîte aux lettres de journalisation. Vous pouvez fournir des états du journal à un système d’archivage local ou à un service d’archivage tiers. Si vous exécutez un déploiement hybride avec vos boîtes aux lettres partagées entre les serveurs locaux et Office 365, vous pouvez désigner une boîte aux lettres locale comme boîte aux lettres de journalisation de vos boîtes aux lettres Office 365 et locales.
 
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Les boîtes aux lettres de journalisation contiennent des informations très sensibles. Vous devez sécuriser les boîtes aux lettres de journalisation parce qu'elles collectent des messages échangés avec des destinataires au sein de votre organisation. Ces messages peuvent être visés par des actes de procédure ou faire l'objet d'exigences réglementaires. Diverses lois exigent que les messages soient conservés à l'abri de toute falsification avant leur présentation à une autorité de vérification. Il est souhaitable que votre organisation élabore des stratégies définissant qui peut accéder aux boîtes aux lettres de journalisation en son sein, en limitant cet accès aux personnes ayant un besoin direct d'y accéder. Consultez vos représentants légaux pour vous assurer que votre solution de journalisation est conforme à l'ensemble des lois et réglementations applicables à votre organisation.
 
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Les boîtes aux lettres de journalisation doivent accepter les messages d’une taille égale ou supérieure à la taille maximale des messages définie dans votre organisation. Si vous avez configuré des exceptions pour les paramètres MaxSendSize et MaxReceiveSize sur la boîte aux lettres d’un utilisateur individuel qui sont supérieures au paramètre général dans TransportConfig, vous devez définir les paramètres MaxSendSize et MaxReceiveSize de la boîte aux lettres de journalisation en conséquence afin de garantir que les messages envoyés dans la boîte aux lettres de journalisation sont acceptés et pas mis en attente ou rejetés. Les messages rejetés par la boîte aux lettres de journalisation feront régulièrement l’objet de nouvelles tentatives, ce qui entraîne une augmentation inutile de la base de données et le gaspillage de ressources. En outre, il est recommandé d’installer une autre boîte aux lettres de journalisation afin d’éviter la non-remise des messages.
 
 
@@ -155,7 +155,7 @@ Dans la mesure où l’autre boîte aux lettres de journalisation collecte tous 
 
 Lorsque vous configurez une autre boîte aux lettres de journalisation, vous devez spécifier les mêmes critères que ceux utilisés lors de la configuration de la boîte aux lettres de journalisation.
 
-> [!NOTE]
+> [!IMPORTANT]  
 > L'autre boîte aux lettres de journalisation doit être traitée comme une boîte aux lettres dédiée spéciale. Les messages adressés directement à l'autre boîte aux lettres de journalisation ne sont pas journalisés.
 
 
@@ -167,11 +167,11 @@ Les règles de journal sont stockées dans Active Directory et appliquées par t
 
 En répliquant toutes les règles de journal dans l'ensemble de l'organisation, Exchange 2013 permet de déployer un ensemble cohérent de règles de journal au sein de l'organisation. Tous les messages qui transitent par votre organisation Exchange 2013 sont soumis aux mêmes règles de journal.
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Réplication de règles de journal au sein d’une organisation dépend de la réplication Active Directory. Temps de réplication entre les contrôleurs de domaine Active Directory varie selon le nombre de sites dans l’organisation et de la vitesse des liaisons et d’autres facteurs en dehors du contrôle du Microsoft Exchange. Lorsque vous implémentez des règles de journal dans votre organisation, tenez compte des retards de réplication. Pour plus d’informations sur la réplication de Active Directory, consultez <a href="https://go.microsoft.com/fwlink/?linkid=274904">Introduction à la réplication Active Directory et de topologie de gestion à l’aide de Windows PowerShell</a>.
 
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Chaque serveur de boîtes aux lettres met en cache l'appartenance au groupe de distribution pour éviter des allers-retours répétés vers Active Directory. La mise en cache des groupes développés réduit le nombre de requêtes que chaque serveur de boîtes aux lettres doit adresser à un contrôleur de domaine Active Directory. Par défaut, les entrées dans le cache de groupes développés expirent dans quatre heures. Par conséquent, si vous spécifiez un groupe de distribution comme destinataire du journal, les modifications apportées à l'appartenance au groupe de distribution peuvent ne pas être appliquées aux règles de journal jusqu'à la mise à jour du cache des groupes développés. Pour forcer une mise à jour immédiate du cache de destinataires, vous devez arrêter et démarrer le service de transport Microsoft Exchange. Vous devez procéder ainsi pour chaque serveur de boîtes aux lettres sur lequel vous souhaitez forcer la mise à jour du cache des destinataires.
 
 

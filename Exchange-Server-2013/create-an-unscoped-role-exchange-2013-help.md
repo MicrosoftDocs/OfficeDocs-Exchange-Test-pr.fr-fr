@@ -115,7 +115,7 @@ Cet exemple vous indique comment ajouter la cmdlet **Set-WidgetConfiguration** d
 
 L’étape finale lorsque vous créez et configurez un rôle consiste à l’attribuer à un utilisateur.
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Les étendues de gestion ne peuvent pas être configurées sur les attributions de rôles qui affectent un rôle non délimité. Lorsque vous choisissez de créer une attribution de rôle pour un groupe de rôles, un utilisateur ou un groupe de sécurité universel, vous devez choisir l’option pour créer une attribution de rôle sans étendue de gestion.
 
 
@@ -169,7 +169,7 @@ Pour supprimer des entrées de rôles de votre nouveau rôle, voir [Supprimer un
 
 L’étape finale lorsque vous créez et configurez un rôle consiste à l’attribuer à un utilisateur.
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Les étendues de gestion ne peuvent pas être configurées sur les attributions de rôles qui affectent un rôle non délimité. Lorsque vous choisissez de créer une attribution de rôle pour un groupe de rôles, un utilisateur ou un groupe de sécurité universel, vous devez choisir l’option pour créer une attribution de rôle sans étendue de gestion.
 
 

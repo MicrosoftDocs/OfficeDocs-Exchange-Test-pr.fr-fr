@@ -111,7 +111,7 @@ Les informations sur le destinataire répliquées vers AD LDS incluent uniqueme
 
   - **Liste des expéditeurs approuvés, des expéditeurs bloqués et des destinataires approuvés**   Les listes des expéditeurs approuvés, des expéditeurs bloqués et des destinataires approuvés qui sont définies dans l’instance Outlook de chaque destinataire sont regroupées et répliquées vers AD LDS. Ces paramètres sont stockés dans la base de données de boîtes aux lettres où se trouve la boîte aux lettres du destinataire. La collection de listes fiables d’un utilisateur Outlook correspond aux données combinées provenant de la liste des expéditeurs approuvés, de la liste des destinataires approuvés, de la liste des expéditeurs bloqués et des contacts externes de l’utilisateur. Le fait que des données de collection de listes fiables soient disponibles dans AD LDS permet au serveur de transport Edge de filtrer correctement les expéditeurs, réduisant ainsi les coûts fixes d’exploitation pour le filtrage des messages. Ces informations sont envoyées sous la forme de données hachées.
     
-    > [!NOTE]
+    > [!IMPORTANT]  
     > Bien que les données des destinataires approuvés soient stockées dans Outlook et puissent être regroupées en une collection de listes fiables sur l’instance AD LDS sur le serveur de transport Edge, la fonctionnalité de filtrage du contenu n’agit pas sur les données des destinataires approuvés.
 
 

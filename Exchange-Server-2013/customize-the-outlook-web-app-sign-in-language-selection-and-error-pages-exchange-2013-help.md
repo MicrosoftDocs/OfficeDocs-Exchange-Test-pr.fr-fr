@@ -23,7 +23,7 @@ Signe dans Outlook Web App, sélection de la langue, les pages d’erreur sont c
 
 Si vous disposez de plusieurs serveurs prenant en charge Outlook Web App et si vous souhaitez que tous utilisent les mêmes pages de connexion, de langue et d'erreur, vous devez copier les fichiers modifiés sur chaque serveur. Vous devez également créer une copie de sauvegarde de vos fichiers personnalisés. Si vous réinstallez ou mettez à niveau Exchange, tous les fichiers des dossiers de thèmes seront remplacés. Vous devrez recopier vos fichiers personnalisés dans le dossier approprié une fois la réinstallation ou la mise à niveau terminée
 
-> [!NOTE]
+> [!IMPORTANT]
 > Avant de créer vos pages de connexion et de déconnexion personnalisées, conservez une copie des fichiers à modifier
 
 
