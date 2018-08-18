@@ -109,7 +109,7 @@ Les données d'appel de messagerie unifiée que vous exportez incluent les infor
     
       - **DivertForward**   L'appelant a composé un numéro et la personne appelée a redirigé l'appel vers la messagerie vocale de la messagerie unifiée.
     
-      - **DivertBusy **  L'appelant a composé un numéro et la ligne était occupée. L'appel a donc été redirigé vers la messagerie vocale de la messagerie unifiée.
+      - **DivertBusy**  L'appelant a composé un numéro et la ligne était occupée. L'appel a donc été redirigé vers la messagerie vocale de la messagerie unifiée.
     
       - **DivertNoAnswer   **L'appelant a composé un numéro et la personne n'a pas répondu, donc l'appel a été redirigé vers la messagerie vocale de la messagerie unifiée.
     
@@ -137,15 +137,15 @@ Les données d'appel de messagerie unifiée que vous exportez incluent les infor
 
   - **NMOSDegradation PacketLoss** Valeur de dégradation NMOS totale due à la perte de paquets.
 
-  - **Instabilité   **Variation moyenne de l'arrivée des paquets de données pour un appel.
+  - **Instabilité** Variation moyenne de l'arrivée des paquets de données pour un appel.
 
-  - **PacketLoss   **Pourcentage moyen de la perte de paquets de données pour l'appel sélectionné. La perte de paquets est une indication de la fiabilité de la connexion.
+  - **PacketLoss** Pourcentage moyen de la perte de paquets de données pour l'appel sélectionné. La perte de paquets est une indication de la fiabilité de la connexion.
 
   - **Aller-retour** Durée moyenne de l'aller-retour, en millisecondes, de l'audio pour l'appel sélectionné. Le score d'aller-retour mesure la latence de la connexion.
 
-  - **BurstDensity   **Pourcentage de paquets perdus et ignorés pendant une période de rafale (taux de perte élevé).
+  - **BurstDensity** Pourcentage de paquets perdus et ignorés pendant une période de rafale (taux de perte élevé).
 
-  - **Durée d'écart de rafale   **Durée moyenne de perte de paquets pendant les rafales de pertes pour l'appel sélectionné.
+  - **Durée d'écart de rafale** Durée moyenne de perte de paquets pendant les rafales de pertes pour l'appel sélectionné.
 
-  - **Codec audio   **Codec audio utilisé pendant un appel.
+  - **Codec audio** Codec audio utilisé pendant un appel.
 
