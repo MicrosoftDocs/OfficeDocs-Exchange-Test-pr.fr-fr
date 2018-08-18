@@ -23,7 +23,7 @@ Pour d'autres tâches relatives aux rapports de messagerie unifiée, consultez l
 
 ## Utiliser le Centre d'administration Exchange (CAE) pour exporter des enregistrements d'appels de messagerie unifiée quotidiens
 
-1.  Dans le CAE, accédez à **Messagerie unifiée ** \> **Autres options**![Icône Options supplémentaires](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "Icône Options supplémentaires") \> **Statistiques d'appels**.
+1.  Dans le CAE, accédez à **Messagerie unifiée** \> **Autres options** ![Icône Options supplémentaires](images/JJ150550.5381819e-3b21-4873-8714-e9b956290b28(EXCHG.150).gif "Icône Options supplémentaires") \> **Statistiques d'appels**.
 
 2.  Sous **Afficher**, cliquez sur **Quotidiennement (90 jours)**, puis choisissez le plan de numérotation de messagerie unifiée, la passerelle IP de messagerie unifiée ou les deux. Le rapport est automatiquement mis à jour à mesure que vous choisissez les options.
 
@@ -31,7 +31,7 @@ Pour d'autres tâches relatives aux rapports de messagerie unifiée, consultez l
 
 4.  Dans la zone de confirmation **Téléchargement de fichier**, cliquez sur **Ouvrir** ou **Enregistrer**.
     
-    Le fichier exporté s'appellera um\_cdr\_*AAAA-MM-JJ*.csv, où *AAAA-MM-JJ* représente l'année, le mois et le jour d'exécution du rapport.
+    Le fichier exporté s'appellera um_cdr_*AAAA-MM-JJ*.csv, où *AAAA-MM-JJ* représente l'année, le mois et le jour d'exécution du rapport.
     
     > [!NOTE]
     > dans la page du rapport, vous pouvez télécharger un modèle Microsoft Excel que vous pouvez utiliser pour importer le fichier .csv d'un jour spécifique.
