@@ -169,7 +169,7 @@ La section **Organisation** permet d'enregistrer des informations détaillées 
 
 Utilisez la section **Adresse de messagerie** pour afficher ou modifier les adresses de messagerie électronique associées à la boîte aux lettres utilisateur. Cela inclut l’adresse SMTP principale de l’utilisateur et toutes les adresses proxy associées. L'adresse SMTP principale (également appelée *adresse de réponse par défaut*) est affichée en gras dans la liste d'adresses, la valeur **SMTP** apparaissant en lettres majuscules dans la colonne **Type**.
 
-  - **Ajouter **  Cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour ajouter une nouvelle adresse de messagerie électronique pour cette boîte aux lettres. Sélectionnez l'un des types d'adresses suivants :
+  - **Ajouter**  Cliquez sur **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter") pour ajouter une nouvelle adresse de messagerie électronique pour cette boîte aux lettres. Sélectionnez l'un des types d'adresses suivants :
     
       - **SMTP**   Il s'agit du type d'adresse par défaut. Cliquez sur ce bouton, puis saisissez la nouvelle adresse SMTP dans la zone **\* Adresse de messagerie**.
     
