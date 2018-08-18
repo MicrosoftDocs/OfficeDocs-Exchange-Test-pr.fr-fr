@@ -205,7 +205,7 @@ Cette section permet de gérer les utilisateurs autorisés à envoyer des messag
     
     Pour supprimer un individu ou un groupe de la liste, sélectionnez-le, puis cliquez sur **Supprimer**![Icône Suppression](images/Dd362328.479b6ced-8d64-4277-a725-f17fea202b28(EXCHG.150).gif "Icône Suppression").
     
-    > [!NOTE]  
+    > [!Important]   
     > Si vous avez configuré le groupe pour qu’il accepte uniquement les messages provenant des membres de votre organisation, tous les messages électroniques provenant d’un contact de messagerie sont rejetés, que vous ayez ajouté ces contacts à cette liste ou non.
 
 

@@ -118,7 +118,7 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
     
         Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Si la boîte aux lettres se trouve sur une base de données de boîtes aux lettres dans un groupe de disponibilité de base de données, vous devez désactiver l’Assistant Dossier géré sur chaque membre du groupe de disponibilité de base de données qui héberge une copie de la base de données. Si la base de données échoue sur un autre serveur, cela empêche l’Assistant Dossier géré sur ce serveur de supprimer les données de la boîte aux lettres.
 
 

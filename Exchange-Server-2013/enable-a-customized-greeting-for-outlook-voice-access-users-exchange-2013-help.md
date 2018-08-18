@@ -51,7 +51,7 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
 
 4.  Dans **Outlook Voice Access**, sous **Message d'accueil**, cliquez sur **Modifier**, puis cliquez sur **Parcourir** pour rechercher le fichier du message d'accueil.
     
-    > [!NOTE]
+    > [!Important]  
     > Le fichier que vous utilisez pour le message d'accueil doit être un fichier au format .wav ou .wma.
 
 
