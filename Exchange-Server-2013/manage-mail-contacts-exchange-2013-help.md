@@ -45,17 +45,17 @@ Les contacts de messagerie sont des objets de service d'annuaire à extension me
 
 3.  Renseignez les zones suivantes de la page **Nouveau contact de messagerie** :
     
-      - **Prénom   **Cette zone permet de modifier le prénom du contact.
+      - **Prénom** Cette zone permet de modifier le prénom du contact.
     
-      - **Initiales  **Cette zone permet de modifier les initiales du deuxième prénom du contact.
+      - **Initiales** Cette zone permet de modifier les initiales du deuxième prénom du contact.
     
-      - **Nom de famille  **Cette zone permet de modifier le nom de famille du contact.
+      - **Nom de famille** Cette zone permet de modifier le nom de famille du contact.
     
       - **\* Nom complet**   Cette zone permet de saisir un nom complet pour le contact. Il s'agit du nom qui est répertorié dans la liste de contacts du CAE et dans le carnet d'adresses de votre organisation. Par défaut, ce champ est renseigné avec les noms que vous avez entrés dans les champs **Prénom**, **Initiales** et **Nom de famille**. Si vous n'avez pas utilisé ces champs, vous devez tout de même saisir un nom car ce champ est obligatoire. Le nom ne peut pas comporter plus de 64 caractères.
     
       - **\* Nom**   Cette zone permet de saisir un nom pour le contact. Il s'agit du nom répertorié dans le service d'annuaire. Comme le nom complet, cette zone est renseignée par défaut avec les noms que vous entrez dans les zones **Prénom**, **Initiales** et **Nom de famille**. Si vous n'avez pas utilisé ces champs, vous devez tout de même saisir un nom car ce champ est obligatoire. Le nom ne peut pas comporter plus de 64 caractères.
     
-      - **\* Alias   **Cette zone permet de saisir l’alias (64 caractères maximum) du contact. Ce champ est obligatoire.
+      - **\* Alias**  Cette zone permet de saisir l’alias (64 caractères maximum) du contact. Ce champ est obligatoire.
     
       - **\* adresse de messagerie externe**   Cette zone permet de saisir le compte de messagerie externe du contact. Ce champ est obligatoire. Les messages électroniques envoyés à ce contact sont transférés vers cette adresse de messagerie.
     
