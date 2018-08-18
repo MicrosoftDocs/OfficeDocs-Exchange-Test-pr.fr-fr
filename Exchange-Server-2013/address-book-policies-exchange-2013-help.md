@@ -83,7 +83,7 @@ Les stratégies de carnet d'adresses prennent effet quand l'application cliente 
 
 Dans une organisation Exchange qui n’utilise pas de stratégies de carnet d’adresses, les événements suivants se produisent lorsqu’un courrier électronique est créé dans Outlook ou Outlook Web App et envoyé à un autre destinataire dans votre organisation Exchange :
 
-1.  L'adresse de messagerie se résout. Par exemple, si vous entrez **kweku@contoso.com** dans le champ **À**, l’adresse de messagerie SMTP serait résolue sur le nom d’affichage de l’utilisateur **Kweku Ako-Adjei**.
+1.  L'adresse de messagerie se résout. Par exemple, si vous entrez <strong>kweku@contoso.com</strong> dans le champ **À**, l’adresse de messagerie SMTP serait résolue sur le nom d’affichage de l’utilisateur **Kweku Ako-Adjei**.
 
 2.  Vous pouvez afficher la carte de visite de l’autre personne. Une fois le nom résolu, vous pouvez double-cliquer sur le nom de l’utilisateur et afficher ses coordonnées, par exemple ses numéros de téléphone personnel et professionnel.
 
