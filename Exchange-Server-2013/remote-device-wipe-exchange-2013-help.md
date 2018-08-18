@@ -23,7 +23,7 @@ En plus de ces fonctionnalités, Exchange Server 2013 fournit un service de ré
 
 La fonctionnalité de réinitialisation à distance inclut également une fonction de confirmation qui inscrit un cachet horodateur dans les données de l’état de synchronisation de la boîte aux lettres de l’utilisateur. Cet horodatage s’affiche dans Outlook Web App et dans la boîte de dialogue des propriétés du périphérique mobile de l’utilisateur dans le CAE.
 
-> [!NOTE]
+> [!Important]  
 > La réinitialisation à distance permet de restaurer les valeurs par défaut des paramètres d’usine d’un téléphone mobile. Bien que le protocole de réinitialisation à distance tel qu’il est implémenté dans Exchange 2013 nécessite uniquement la suppression de données d’entreprise personnelles, tous les fabricants de périphériques mobiles actuels interprètent la commande comme étant une commande supprimant l’ensemble des données contenues dans le téléphone. De nombreux systèmes d’exploitation de périphériques mobiles suppriment aussi toutes les données contenues sur n’importe quelle carte de stockage insérée dans le périphérique mobile. Si vous réalisez une réinitialisation à distance sur un téléphone mobile en votre possession et que vous voulez conserver les données présentes sur la carte de stockage, il est recommandé de retirer cette dernière avant de commencer la réinitialisation à distance.
 
 

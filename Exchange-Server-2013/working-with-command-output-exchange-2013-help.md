@@ -236,7 +236,7 @@ L’exemple suivant montre comment vous pouvez utiliser un script unique pour so
     $Ie.Visible = $True
     $Ie.Document.Write("$Input")
     # If the previous line doesn't work on your system, uncomment the line below.
-    # $Ie.Document.IHtmlDocument2_Write(\"$Input\")
+    # $Ie.Document.IHtmlDocument2_Write("$Input")
     $Ie
 
 Pour utiliser ce script, sauvegardez-le dans le répertoire `C:\Program Files\Microsoft\Exchange Server\V15\Scripts` sur l’ordinateur sur lequel le script est exécuté. Nommez le fichier `Out-Ie.ps1`. Une fois le fichier enregistré, vous pouvez utiliser le script comme une cmdlet ordinaire.

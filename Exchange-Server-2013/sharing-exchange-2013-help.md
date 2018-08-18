@@ -19,7 +19,7 @@ _**Dernière rubrique modifiée :** 2015-02-27_
 
 Pour pouvoir collaborer avec des personnes de différentes organisations ou avec des amis et des membres de votre famille sur des projets ou planifier des événements sociaux ensemble, vous devrez peut-être coordonner vos calendriers. Avec Exchange 2013, les administrateurs peuvent configurer différents niveaux d’accès au calendrier pour permettre aux entreprises de collaborer avec d’autres entreprises et aux utilisateurs de partager leurs calendriers avec d’autres personnes. La configuration du partage de calendriers entre entreprises (B2B) passe par la création de *relations des organisations*. La configuration du partage de calendriers entre utilisateurs passe par l’application de *stratégies de partage*.
 
-> [!NOTE]
+> [!Important]  
 > Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.
 
 

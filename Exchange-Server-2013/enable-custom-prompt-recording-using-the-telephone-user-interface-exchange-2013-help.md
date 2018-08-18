@@ -53,7 +53,7 @@ Pour enregistrer des invites et messages d'accueil personnalisés à l'aide de l
 
 4.  Activez la boîte aux lettres de l'utilisateur du domaine pour la messagerie unifiée.
     
-    > [!NOTE]
+    > [!Important]  
     > Autorisez uniquement les administrateurs qui gèrent les invites et les messages d'accueil à accéder au numéro de poste et au code confidentiel du compte d'utilisateur. Utilisez ce compte d'utilisateur uniquement pour la gestion des invites par téléphone.
 
 

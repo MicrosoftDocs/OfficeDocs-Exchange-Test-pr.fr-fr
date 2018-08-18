@@ -121,7 +121,7 @@ Pour plus d'informations sur l'installation d'Exchange 2013, consultez la rubri
     > Ne chargez pas le composant logiciel enfichable Windows PowerShell <code>Microsoft.Exchange.Management.PowerShell.SnapIn</code> et n’exécutez pas de cmdlets autres que <strong>*-TransportAgent</strong> au risque de provoquer des dommages irréparables à votre déploiement Exchange.
     > Vous devez être un administrateur local sur le serveur d'accès au client sur lequel vous souhaitez installer, désinstaller ou gérer des agents de transport. Nous n’autorisons pas la modification des listes de contrôle d’accès (ACL) dans les répertoires et les fichiers Exchange ou les objets Active Directory.
     
-    > [!NOTE]
+    > [!Important]   
     > Exécutez les opérations suivantes sur les serveurs d'accès au client uniquement. Il n’est pas nécessaire de charger le composant logiciel enfichable Windows PowerShell Exchange pour gérer des agents de transport sur des serveurs de boîtes aux lettres.
     
     1.  Ouvrez une nouvelle fenêtre Windows PowerShell.

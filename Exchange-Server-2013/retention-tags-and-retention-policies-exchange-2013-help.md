@@ -327,7 +327,7 @@ Les éléments existants marqués par cette balise continuent à être traités 
 
 Toutefois, si vous supprimez la balise, la définition correspondante stockée dans Active Directory est supprimée. L’Assistant Dossier géré traite alors tous les éléments d’une boîte aux lettres et marque à nouveau ceux auxquels la balise supprimée a été appliquée. Selon le nombre de boîtes aux lettres et de messages, ce processus peut entraîner une consommation considérable en ressources sur tous les serveurs de boîtes aux lettres contenant des boîtes aux lettres dont les stratégies de rétention incluent la balise supprimée.
 
-> [!NOTE]
+> [!Important]
 > Si une balise de rétention est supprimée d’une stratégie de rétention, tous les éléments de boîte aux lettres existants auxquels la balise est appliquée continuent à expirer conformément aux paramètres de la balise. Pour empêcher l’application des paramètres de la balise aux éléments, vous devez supprimer la balise. La balise est supprimée de toutes les stratégies de rétention dans lesquelles elle est incluse.
 
 

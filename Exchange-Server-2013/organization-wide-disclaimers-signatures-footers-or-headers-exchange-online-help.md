@@ -216,7 +216,7 @@ La liste suivante décrit chaque action de secours :
 
   - **Wrap** : si la cause d’exclusion de responsabilité ne peut pas être insérée dans le message d’origine, Exchange place celle-ci dans une nouvelle enveloppe de message. La clause d’exclusion de responsabilité est ensuite insérée dans le nouveau message. S’il n’est pas possible de placer le message original dans une nouvelle enveloppe, celui-ci n’est pas remis. L’expéditeur reçoit un rapport de non-remise (NDR) expliquant pourquoi le message n’a pas été remis.
     
-    > [!NOTE]
+    > [!Important]   
     > Si un message original est placé dans une nouvelle enveloppe de message, les règles de transport suivantes sont appliquées à la nouvelle enveloppe de message, et pas au message original. C’est pourquoi vous devez configurer les règles de transport avec des actions de clause d’exclusion de responsabilité qui placent les messages originaux dans un nouveau corps de message après avoir configuré les autres règles de transport.
 
 
