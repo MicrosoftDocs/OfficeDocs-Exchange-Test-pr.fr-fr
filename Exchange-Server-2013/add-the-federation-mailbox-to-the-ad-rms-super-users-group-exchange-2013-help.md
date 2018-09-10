@@ -57,7 +57,7 @@ Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives �
 
 Si un groupe de distribution a été créé et configuré comme groupe de super utilisateurs dans le cluster AD RMS, vous pouvez ajouter la boîte aux lettres de fédération Exchange 2013 comme membre de ce groupe. Si aucun groupe de super utilisateurs n’est configuré, vous devez créer un groupe de distribution et ajouter la boîte aux lettres de fédération comme membre.
 
-1.  Créez un groupe de distribution dédié à une utilisation en tant que groupe de super utilisateurs AD RMS. Pour plus d’informations, voir [Création et gestion de groupes de distribution](create-and-manage-distribution-groups-exchange-2013-help.md).
+1.  Créez un groupe de distribution dédié à une utilisation en tant que groupe de super utilisateurs AD RMS. Pour plus d’informations, voir [Création et gestion de groupes de distribution](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups).
 
 2.  Ajoutez l’utilisateur **FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042** au nouveau groupe de distribution. La boîte aux lettres de fédération est de type système. Par conséquent, elle n’est pas visible dans le CAE. Pour l’ajouter à un groupe de distribution, vous devez utiliser la cmdlet [Add-DistributionGroupMember](https://technet.microsoft.com/fr-fr/library/bb124340\(v=exchg.150\)) de l’environnement de ligne de commande Exchange Management Shell.
     

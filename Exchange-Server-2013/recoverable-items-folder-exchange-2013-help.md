@@ -220,9 +220,9 @@ Le tableau suivant dresse la liste des contenus et des actions pouvant être ex�
 
 Pour plus d’informations sur la découverte électronique inaltérable, la conservation inaltérable et la conservation pour litige, consultez les rubriques suivantes :
 
-  - [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md)
+  - [Découverte électronique locale](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
-  - [Conservation inaltérable et conservation pour litige](in-place-hold-and-litigation-hold-exchange-2013-help.md)
+  - [Conservation inaltérable et conservation pour litige](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-and-litigation-holds)
 
 Retour au début
 

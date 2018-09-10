@@ -19,7 +19,7 @@ _**Dernière rubrique modifiée :** 2013-05-03_
 
 [Créer une stratégie de boîte aux lettres de messagerie unifiée](create-a-um-mailbox-policy-exchange-2013-help.md)
 
-[Gérer une stratégie de boîte aux lettres de messagerie unifiée](manage-a-um-mailbox-policy-exchange-2013-help.md)
+[Gérer une stratégie de boîte aux lettres de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)
 
 [Supprimer une stratégie de boîte aux lettres de messagerie unifiée](delete-a-um-mailbox-policy-exchange-2013-help.md)
 

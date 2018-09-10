@@ -205,7 +205,7 @@ Prenez les éléments suivants en considération lors de l'utilisation de strat�
 
   - N’exécutez pas le rôle serveur d’accès au client Exchange 2010 sur le serveur de catalogue global. Ceci entraînerait l'utilisation d'Active Directory pour l'interface NSPI (Name Service Provider Interface) au lieu du service de carnet d'adresses Microsoft Exchange. Vous pouvez exécuter des rôles serveur Exchange 2013 sur un serveur de catalogue global sans que cela n’affecte le fonctionnement des stratégies de carnet d’adresses. Cependant, nous vous déconseillons d’installer Exchange sur un contrôleur de domaine.
 
-  - Vous ne pouvez pas utiliser simultanément des carnets d'adresses hiérarchiques (HAB) et des stratégies de carnet d'adresses. Pour plus d'informations, consultez la rubrique [Carnets d’adresses hiérarchiques](hierarchical-address-books-exchange-2013-help.md).
+  - Vous ne pouvez pas utiliser simultanément des carnets d'adresses hiérarchiques (HAB) et des stratégies de carnet d'adresses. Pour plus d'informations, consultez la rubrique [Carnets d’adresses hiérarchiques](https://docs.microsoft.com/fr-fr/exchange/address-books/hierarchical-address-books/hierarchical-address-books).
 
   - Tout utilisateur auquel une stratégie de carnet d'adresses est attribuée devrait exister sans sa propre LAG.
 
@@ -267,7 +267,7 @@ Vous devrez mettre au point une manière de diviser vos organisations. Nous vous
 
   - Les attributs CustomAttributeX sont explicitement réservés à la personnalisation d'une organisation et sont entièrement sous le contrôle des administrateurs de l'organisation.
 
-Une autre recommandation à respecter lors de la répartition de votre organisation est l'utilisation d'identifiants de société dans les noms des groupes de distribution et des groupes de distribution dynamique. Exchange comporte une fonctionnalité de stratégie de noms de groupes qui ajoute automatiquement un suffixe ou un préfixe au nom du groupe de distribution en fonction des nombreux attributs de l'utilisateur qui crée le groupe de distribution, dont le créateur des attributs Company, StateorProvince, Title et CustomAttribute1 à CustomAttribute15 du groupe de distribution. La stratégie de noms de groupes est particulièrement importante si vous permettez à des utilisateurs de créer leurs propres groupes de distribution. Pour plus d'informations, consultez la rubrique [Créer une stratégie de noms de groupe de distribution](create-a-distribution-group-naming-policy-exchange-2013-help.md).
+Une autre recommandation à respecter lors de la répartition de votre organisation est l'utilisation d'identifiants de société dans les noms des groupes de distribution et des groupes de distribution dynamique. Exchange comporte une fonctionnalité de stratégie de noms de groupes qui ajoute automatiquement un suffixe ou un préfixe au nom du groupe de distribution en fonction des nombreux attributs de l'utilisateur qui crée le groupe de distribution, dont le créateur des attributs Company, StateorProvince, Title et CustomAttribute1 à CustomAttribute15 du groupe de distribution. La stratégie de noms de groupes est particulièrement importante si vous permettez à des utilisateurs de créer leurs propres groupes de distribution. Pour plus d'informations, consultez la rubrique [Créer une stratégie de noms de groupe de distribution](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
 
 Les stratégie de noms de groupes ne s'appliquent pas aux groupes de distribution dynamique. Vous devrez donc les répartir manuellement et appliquer manuellement une stratégie de noms.
 
@@ -289,7 +289,7 @@ Cet exemple concerne la liste d'adresses AL\_TAIL\_Users\_DGs. La liste d'adress
 
     New-AddressList -Name "AL_TAIL_Users_DGs" -RecipientFilter {((RecipientType -eq 'UserMailbox') -or (RecipientType -eq "MailUniversalDistributionGroup") -or (RecipientType -eq "DynamicDistributionGroup")) -and (CustomAttribute15 -eq "TAIL")}
 
-Pour plus d'informations sur la création de listes d'adresses à l'aide de filtres de destinataires, consultez la rubrique [Création d’une liste d’adresses à l’aide de filtres de destinataires](create-an-address-list-by-using-recipient-filters-exchange-2013-help.md).
+Pour plus d'informations sur la création de listes d'adresses à l'aide de filtres de destinataires, consultez la rubrique [Création d’une liste d’adresses à l’aide de filtres de destinataires](https://docs.microsoft.com/fr-fr/exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list).
 
 Afin de créer une stratégie de carnet d'adresses, vous devez fournir une liste d'adresses de salle. Si votre organisation n'a pas de boîtes aux lettres de ressources (par exemple, des boîtes aux lettres de salle ou d'équipement), nous vous recommandons de créer une liste d'adresses de salles vide. L'exemple suivant présente la création d'une liste d'adresses de salles vide, car il n'y a aucune boîte aux lettres de salles dans l'organisation.
 
@@ -303,7 +303,7 @@ La liste d'adresses globale utilisée dans une stratégie de carnet d'adresses d
 
     New-GlobalAddressList -Name "GAL_TAIL" -RecipientFilter {(CustomAttribute15 -eq "TAIL")}
 
-Pour plus d'informations, consultez la rubrique [Création d’une liste d’adresses globale](create-a-global-address-list-exchange-2013-help.md).
+Pour plus d'informations, consultez la rubrique [Création d’une liste d’adresses globale](https://docs.microsoft.com/fr-fr/exchange/address-books/address-lists/create-global-address-list).
 
 Quand vous créez le carnet d'adresses en mode hors connexion, vous devez inclure la liste d'adresses globale appropriée au moment où vous spécifiez le paramètre *AddressLists* de New- ou Set-OfflineAddressBook, afin de vous assurer qu'aucune entrée n'est manquante par inadvertance. Vous pouvez en fait personnaliser le groupe d'entrées visualisées par un utilisateur ou bien réduire la taille de téléchargement du carnet d'adresses en mode hors connexion en spécifiant une liste d'AddressLists dans les AddressLists de New/Set-OfflineAddressBook. Cependant, si vous voulez que les utilisateurs voient toutes les entrées de la liste d'adresses globale dans le carnet d'adresses en mode hors connexion, veillez à inclure la liste d'adresses globale dans les AddressLists.
 
@@ -311,7 +311,7 @@ Cet exemple crée le carnet d'adresses en mode hors connexion OAB\_FAB pour Fabr
 
     New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
 
-Pour plus d'informations, consultez la rubrique [Création d’un carnet d’adresses en mode hors connexion](create-an-offline-address-book-exchange-2013-help.md).
+Pour plus d'informations, consultez la rubrique [Création d’un carnet d’adresses en mode hors connexion](https://docs.microsoft.com/fr-fr/exchange/address-books/offline-address-books/create-offline-address-book).
 
 ## Étape 4 : création des stratégies de carnet d'adresses
 
@@ -319,7 +319,7 @@ Une fois que vous avez créé tous les objets requis, vous pouvez créer la stra
 
     New-AddressBookPolicy -Name "ABP_TAIL" -AddressLists "AL_TAIL_Users_DGs"," AL_TAIL_Contacts" -OfflineAddressBook "\OAB_TAIL" -GlobalAddressList "\GAL_TAIL" -RoomList "\AL_TAIL_Rooms"
 
-Pour plus d'informations, consultez la rubrique [Création d’une stratégie de carnet d’adresses](create-an-address-book-policy-exchange-2013-help.md).
+Pour plus d'informations, consultez la rubrique [Création d’une stratégie de carnet d’adresses](https://docs.microsoft.com/fr-fr/exchange/address-books/address-book-policies/create-an-address-book-policy).
 
 ## Étape 5 : attribution des stratégies de carnet d'adresses aux boîtes aux lettres
 

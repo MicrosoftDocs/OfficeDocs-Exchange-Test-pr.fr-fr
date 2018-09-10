@@ -27,7 +27,7 @@ Vous pouvez configurer la messagerie unifiée pour répondre à un appel entrant
 
 Ce paramètre s'applique aux messages vocaux envoyés aux utilisateurs à extension messagerie unifiée lorsqu'ils ne répondent pas leur téléphone. Ce paramètre s'applique également lorsque les appelants se connecter à leur boîte aux lettres à l'aide de Outlook Voice Access, puis créer et envoyer un message vocal.
 
-Pour les autres tâches de gestion relatives aux procédures de la messagerie vocale protégée, consultez la rubrique [Procédures de la messagerie vocale protégées](protected-voice-mail-procedures-exchange-2013-help.md).
+Pour les autres tâches de gestion relatives aux procédures de la messagerie vocale protégée, consultez la rubrique [Procédures de la messagerie vocale protégées](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/protected-voice-mail-procedures).
 
 ## Ce qu'il faut savoir avant de commencer
 
@@ -35,7 +35,7 @@ Pour les autres tâches de gestion relatives aux procédures de la messagerie vo
 
   - Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez Entrée « Stratégies de boîte aux lettres de messagerie unifiée » dans la rubrique [Autorisations de messagerie unifiée](unified-messaging-permissions-exchange-2013-help.md).
 
-  - Avant d'exécuter ces procédures, vérifiez qu'un plan de numérotation de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](create-a-um-dial-plan-exchange-2013-help.md).
+  - Avant d'exécuter ces procédures, vérifiez qu'un plan de numérotation de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
 
   - Avant d'effectuer ces procédures, vérifiez qu'une stratégie de boîte aux lettres de messagerie unifiée a été créée. Pour obtenir la procédure détaillée, consultez la rubrique [Créer une stratégie de boîte aux lettres de messagerie unifiée](create-a-um-mailbox-policy-exchange-2013-help.md).
 

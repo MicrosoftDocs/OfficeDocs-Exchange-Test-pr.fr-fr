@@ -109,7 +109,7 @@ Les utilisateurs auxquels est affecté le groupe de rôles Gestion de l'organisa
 <td><p><a href="discovery-management-exchange-2013-help.md">Gestion de la détection</a></p>
 
 > [!NOTE]
-> Par défaut, le groupe de rôles Gestion de la découverte ne possède aucun membre. Aucun utilisateur, y compris les administrateurs, ne dispose des autorisations requises pour rechercher des boîtes aux lettres. Pour plus d’informations, voir <a href="assign-ediscovery-permissions-in-exchange-exchange-2013-help.md">Attribution d’autorisations eDiscovery dans Exchange</a>.
+> Par défaut, le groupe de rôles Gestion de la découverte ne possède aucun membre. Aucun utilisateur, y compris les administrateurs, ne dispose des autorisations requises pour rechercher des boîtes aux lettres. Pour plus d’informations, voir <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions">Attribution d’autorisations eDiscovery dans Exchange</a>.
 
 </td>
 </tr>

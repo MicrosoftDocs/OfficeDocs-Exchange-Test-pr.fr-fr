@@ -21,7 +21,7 @@ Durée d'exécution estimée : 5 minutes.
 
 Une boîte aux lettres de salle est une boîte aux lettres de ressources affectée à un emplacement physique, comme une salle de conférence, un auditorium ou une salle de formation. Dès lors qu'un administrateur a créé des boîtes aux lettres de salles, les utilisateurs peuvent réserver facilement des salles en incluant des boîtes aux lettres de salles dans les demandes de réunion. Pour plus d’informations, voir [Recipients](recipients-exchange-2013-help.md).
 
-Pour plus d’informations sur un autre type de boîte aux lettres de ressources, voir [Gérer les boîtes aux lettres d’équipement](manage-equipment-mailboxes-exchange-2013-help.md).
+Pour plus d’informations sur un autre type de boîte aux lettres de ressources, voir [Gérer les boîtes aux lettres d’équipement](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-equipment-mailboxes).
 
 ## Que souhaitez-vous faire ?
 
@@ -155,7 +155,7 @@ Cliquez sur **Plus d’options** pour afficher ou modifier les propriétés supp
 
   - **Société**   Ce champ permet de spécifier le nom d'une société à laquelle la salle est associée. Comme la propriété de département, vous pouvez utiliser cette propriété pour créer des conditions de destinataire pour les groupes de distribution dynamiques et des listes d'adresses.
 
-  - **Stratégie de carnet d’adresses**   Activez cette case à cocher pour spécifier une stratégie de carnet d’adresses pour la boîte aux lettres. Les stratégies de carnet d’adresses contiennent une liste d’adresses globale, un carnet d’adresses en mode hors connexion, une liste de salles et un ensemble de listes d’adresses. Pour en savoir plus, consultez la rubrique [Stratégies de carnet d’adresses](address-book-policies-exchange-2013-help.md).
+  - **Stratégie de carnet d’adresses**   Activez cette case à cocher pour spécifier une stratégie de carnet d’adresses pour la boîte aux lettres. Les stratégies de carnet d’adresses contiennent une liste d’adresses globale, un carnet d’adresses en mode hors connexion, une liste de salles et un ensemble de listes d’adresses. Pour en savoir plus, consultez la rubrique [Stratégies de carnet d’adresses](https://docs.microsoft.com/fr-fr/exchange/address-books/address-book-policies/address-book-policies).
     
     Dans la liste déroulante, sélectionnez la règle que vous souhaitez associer à cette boîte aux lettres.
 

@@ -25,7 +25,7 @@ Après avoir désactivé la messagerie pour un utilisateur de messagerie, vous p
 > Les utilisateurs de messagerie (également appelés <em>utilisateurs à extension messagerie</em>) diffèrent des utilisateurs disposant d’une boîte aux lettres dans votre organisation. La principale différence est que les utilisateurs de messagerie sont ceux qui possèdent une adresse de messagerie externe à votre organisation Exchange. Ils ne possèdent pas de boîte aux lettres dans votre organisation. Pour de plus amples informations sur les différences entre les utilisateurs disposant de boîtes aux lettres dans votre organisation et les utilisateurs de messagerie, consultez la rubrique <a href="recipients-exchange-2013-help.md">Recipients</a>.
 
 
-Pour d’autres tâches de gestion relatives aux utilisateurs de messagerie, consultez la rubrique [Gérer les utilisateurs de messagerie](manage-mail-users-exchange-2013-help.md).
+Pour d’autres tâches de gestion relatives aux utilisateurs de messagerie, consultez la rubrique [Gérer les utilisateurs de messagerie](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-mail-users).
 
 ## Ce qu’il faut savoir avant de commencer ?
 

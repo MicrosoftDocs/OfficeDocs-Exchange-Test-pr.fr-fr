@@ -25,7 +25,7 @@ Le Centre d’administration Exchange (EAC) ou l’environnement de ligne de com
 
 Pour les tâches supplémentaires de gestion relatives à la gestion de l’accès aux clients de messagerie, consultez les rubriques suivantes :
 
-  - [Activer ou désactiver MAPI pour une boîte aux lettres](enable-or-disable-mapi-for-a-mailbox-exchange-online-help.md)
+  - [Activer ou désactiver MAPI pour une boîte aux lettres](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi)
 
   - [Activation ou désactivation de l'accès IMAP4 pour un utilisateur](enable-or-disable-imap4-access-for-a-user-exchange-2013-help.md)
 
@@ -64,7 +64,7 @@ Pour les tâches supplémentaires de gestion relatives à la gestion de l’acc�
 5.  Cliquez sur **Enregistrer** pour enregistrer votre modification.
 
 > [!NOTE]
-> Vous pouvez activer ou désactiver Outlook Web App pour plusieurs boîtes aux lettres utilisateur à l’aide de la fonction de modification en bloc du Centre d’administration Exchange (EAC). Pour plus d’informations sur comment procéder, consultez la section « Modifier en bloc des boîtes aux lettres utilisateur » dans <a href="manage-user-mailboxes-exchange-2013-help.md">Gestion des boîtes aux lettres utilisateur</a>.
+> Vous pouvez activer ou désactiver Outlook Web App pour plusieurs boîtes aux lettres utilisateur à l’aide de la fonction de modification en bloc du Centre d’administration Exchange (EAC). Pour plus d’informations sur comment procéder, consultez la section « Modifier en bloc des boîtes aux lettres utilisateur » dans <a href="https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes">Gestion des boîtes aux lettres utilisateur</a>.
 
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour activer ou désactiver Outlook Web App

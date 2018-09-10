@@ -94,7 +94,7 @@ Les articles suivants expliquent comment déployer des dossiers publics dans vot
 
   - [Configuration des dossiers publics hérités où les boîtes aux lettres des utilisateurs résident sur des serveurs Exchange 2013](configure-legacy-public-folders-where-user-mailboxes-are-on-exchange-2013-servers-exchange-2013-help.md)
 
-  - [Configurer les dossiers publics Exchange 2013 pour un déploiement hybride](configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)
+  - [Configurer les dossiers publics Exchange 2013 pour un déploiement hybride](https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders)
 
   - [Configurer les dossiers publics Exchange Online pour un déploiement hybride](configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)
 

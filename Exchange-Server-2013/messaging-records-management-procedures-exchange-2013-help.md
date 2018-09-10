@@ -17,13 +17,13 @@ _**Sapplique à :** Exchange Server 2013_
 
 _**Dernière rubrique modifiée :** 2012-10-14_
 
-[Créer une stratégie de rétention](create-a-retention-policy-exchange-2013-help.md)
+[Créer une stratégie de rétention](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy)
 
-[Ajouter ou supprimer des balises de rétention à partir d’une stratégie de rétention](add-retention-tags-to-or-remove-retention-tags-from-a-retention-policy-exchange-2013-help.md)
+[Ajouter ou supprimer des balises de rétention à partir d’une stratégie de rétention](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/add-or-remove-retention-tags)
 
-[Appliquer une stratégie de rétention aux boîtes aux lettres](apply-a-retention-policy-to-mailboxes-exchange-2013-help.md)
+[Appliquer une stratégie de rétention aux boîtes aux lettres](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/apply-retention-policy)
 
 [Configurer l’Assistant Dossier géré](configure-the-managed-folder-assistant-exchange-2013-help.md)
 
-[Placer une boîte aux lettres en blocage de rétention](place-a-mailbox-on-retention-hold-exchange-2013-help.md)
+[Placer une boîte aux lettres en blocage de rétention](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)
 

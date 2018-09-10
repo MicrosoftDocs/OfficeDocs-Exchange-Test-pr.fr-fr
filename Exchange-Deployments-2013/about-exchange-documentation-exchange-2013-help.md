@@ -19,7 +19,7 @@ _<strong>Dernière rubrique modifiée :</strong>2016-12-09_
 
 Cette documentation se compose d'un ensemble de procédures et de rubriques conceptuelles organisées par sujet ou par technologie utilisée par Microsoft Exchange. Vous pouvez accéder à chaque rubrique directement depuis la table des matières dans le volet gauche, à partir d'un lien figurant dans une autre rubrique d'aide, à partir des résultats d'une recherche ou à partir de votre propre liste personnalisée de rubriques favorites.
 
-Vous trouverez d'autres informations relatives à la documentation Exchange dans la rubrique [Copyright tiers](third-party-copyright-notices-exchange-2013-help.md).
+Vous trouverez d'autres informations relatives à la documentation Exchange dans la rubrique [Copyright tiers](https://docs.microsoft.com/fr-fr/exchange/about-exchange-documentation/third-party-copyright-notices).
 
 ## Où trouver la documentation Exchange
 

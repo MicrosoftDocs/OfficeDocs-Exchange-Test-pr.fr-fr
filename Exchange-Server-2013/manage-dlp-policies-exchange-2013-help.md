@@ -125,5 +125,5 @@ Pour obtenir des informations sur la syntaxe et les paramètres, consultez la ru
 
 [Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
 
-[Conseils de stratégie](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)
+[Conseils de stratégie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/policy-tips)
 

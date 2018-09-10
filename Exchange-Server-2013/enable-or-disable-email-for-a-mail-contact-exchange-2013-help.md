@@ -21,7 +21,7 @@ Vous pouvez désactiver la messagerie électronique pour un contact de messageri
 
 Après avoir désactivé la messagerie électronique d’un contact de messagerie, vous avez toujours utiliser la cmdlet **Enable-MailContact** dans l’environnement de ligne de commande Exchange Management Shell pour réactiver le contact pour la messagerie. Vous pouvez également utiliser cette cmdlet pour activer la messagerie pour tout contact Active Directory.
 
-Pour connaître les tâches de gestion supplémentaires relatives aux contacts de messagerie, consultez la rubrique [Gérer les contacts de messagerie](manage-mail-contacts-exchange-2013-help.md).
+Pour connaître les tâches de gestion supplémentaires relatives aux contacts de messagerie, consultez la rubrique [Gérer les contacts de messagerie](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-mail-contacts).
 
 ## Ce qu’il faut savoir avant de commencer ?
 

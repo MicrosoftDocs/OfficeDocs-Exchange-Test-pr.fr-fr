@@ -27,7 +27,7 @@ Dans Microsoft Exchange Server 2013, vous pouvez utiliser la découverte élect
 
   - Durée d'exécution estimée : 2 à 5 minutes.
 
-  - Pour supprimer une recherche de découverte électronique locale pour laquelle l'archive permanente est activée, vous devez d'abord supprimer l'archive permanente de la recherche. Pour plus d'informations, consultez la rubrique [Créer ou supprimer une conservation inaltérable](create-or-remove-an-in-place-hold-exchange-2013-help.md).
+  - Pour supprimer une recherche de découverte électronique locale pour laquelle l'archive permanente est activée, vous devez d'abord supprimer l'archive permanente de la recherche. Pour plus d'informations, consultez la rubrique [Créer ou supprimer une conservation inaltérable](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/create-or-remove-in-place-holds).
 
   - Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Découverte électronique locale » dans la rubrique [Stratégie de messagerie et autorisations de conformité](messaging-policy-and-compliance-permissions-exchange-2013-help.md).
 

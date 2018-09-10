@@ -21,7 +21,7 @@ _<strong>Dernière rubrique modifiée :</strong>2016-12-15_
 
 Dans un déploiement hybride, vos utilisateurs peuvent être dans un environnement Exchange Online, en local ou les deux, et vos dossiers publics peuvent se situer dans Exchange Online ou en local. Parfois, les utilisateurs en ligne peuvent avoir besoin d’accéder aux dossiers publics situés dans votre environnement local Exchange Server 2013. De même, les utilisateurs d’Exchange 2013 peuvent avoir besoin d’accéder aux dossiers publics dans Office 365 ou Exchange Online.
 
-Cet article décrit la façon de permettre aux utilisateurs dans votre environnement local Exchange 2013 d’accéder aux dossiers publics Exchange Online/Office 365. Pour permettre aux utilisateurs d’Exchange Online/Office 365 d’accéder aux dossiers publics dans Exchange 2013 en local, consultez [Configurer les dossiers publics Exchange 2013 pour un déploiement hybride](configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md).
+Cet article décrit la façon de permettre aux utilisateurs dans votre environnement local Exchange 2013 d’accéder aux dossiers publics Exchange Online/Office 365. Pour permettre aux utilisateurs d’Exchange Online/Office 365 d’accéder aux dossiers publics dans Exchange 2013 en local, consultez [Configurer les dossiers publics Exchange 2013 pour un déploiement hybride](https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders).
 
 > [!NOTE]
 > Si vous avez des dossiers publics Exchange 2010 ou Exchange 2007, voir <a href="configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md">Configurer des dossiers publics locaux hérités dans le cadre d’un déploiement hybride</a>.

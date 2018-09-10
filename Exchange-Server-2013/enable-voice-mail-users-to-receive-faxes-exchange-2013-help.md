@@ -291,7 +291,7 @@ L’ajout de plusieurs postes est plus complexe que l’utilisation d’un poste
 
 L’avantage de l’utilisation de plusieurs numéros de téléphone DID est que l’utilisateur à extension messagerie unifiée reçoit les appels vocaux sur un seul numéro de poste DID, et les appels de télécopie sur un autre. L’utilisation de numéros DID distincts pour les appels vocaux et de télécopie est plus facile pour l’utilisateur.
 
-Si vous configurez deux numéros de poste DID pour un utilisateur spécifique, les numéros de poste DID peuvent être associés à des plans de numérotation de messagerie unifiée distincts. Pour utiliser deux numéros DID, vous pouvez créer un plan de numérotation et utiliser un serveur de boîtes aux lettres comme serveur dédié à la réception des appels de télécopie et au transfert des messages de télécopie aux utilisateurs. Pour plus d’informations, voir [Créer un plan de numérotation de messagerie unifiée](create-a-um-dial-plan-exchange-2013-help.md).
+Si vous configurez deux numéros de poste DID pour un utilisateur spécifique, les numéros de poste DID peuvent être associés à des plans de numérotation de messagerie unifiée distincts. Pour utiliser deux numéros DID, vous pouvez créer un plan de numérotation et utiliser un serveur de boîtes aux lettres comme serveur dédié à la réception des appels de télécopie et au transfert des messages de télécopie aux utilisateurs. Pour plus d’informations, voir [Créer un plan de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
 
 Les options de configuration de plusieurs numéros de poste DID pour des utilisateurs à extension messagerie unifiée sont les suivantes :
 

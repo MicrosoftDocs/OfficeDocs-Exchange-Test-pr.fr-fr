@@ -33,15 +33,15 @@ Avant de déployer la messagerie unifiée, nous vous conseillons de vous familia
 
   - [Plans de numérotation de messagerie unifiée](um-dial-plans-exchange-2013-help.md)
 
-  - [Passerelles IP de messagerie unifiée](um-ip-gateways-exchange-2013-help.md)
+  - [Passerelles IP de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways)
 
   - [Services de messagerie unifiée](um-services-exchange-2013-help.md)
 
-  - [Groupes de recherche de messagerie unifiée](um-hunt-groups-exchange-2013-help.md)
+  - [Groupes de recherche de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups)
 
-  - [Réponse et routage automatique d'appels entrants](automatically-answer-and-route-incoming-calls-exchange-2013-help.md)
+  - [Réponse et routage automatique d'appels entrants](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls)
 
-  - [Stratégies de boîte aux lettres de messagerie unifiée](um-mailbox-policies-exchange-2013-help.md)
+  - [Stratégies de boîte aux lettres de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies)
 
   - [Messagerie vocale pour les utilisateurs](voice-mail-for-users-exchange-2013-help.md)
 
@@ -188,7 +188,7 @@ Le terme *groupement de postes* sert à décrire un groupe de ressources ou de n
 
 Si vous avez créé une passerelle IP de messagerie unifiée et l'avez associée à un plan de numérotation de messagerie unifiée, un groupement de postes de messagerie unifiée par défaut a été créé. Vous pouvez associer un autre groupement de postes de messagerie unifiée à la même ou à une autre passerelle IP de messagerie unifiée, en fonction du nombre de passerelles IP de messagerie unifiée créées.
 
-Lorsque vous créez un groupement de postes de messagerie unifiée, vous permettez à tous les serveurs de boîtes aux lettres qui sont spécifiés dans le plan de numérotation de messagerie unifiée de communiquer avec une passerelle VoIP. Pour plus d'informations, consultez la rubrique [Groupes de recherche de messagerie unifiée](um-hunt-groups-exchange-2013-help.md).
+Lorsque vous créez un groupement de postes de messagerie unifiée, vous permettez à tous les serveurs de boîtes aux lettres qui sont spécifiés dans le plan de numérotation de messagerie unifiée de communiquer avec une passerelle VoIP. Pour plus d'informations, consultez la rubrique [Groupes de recherche de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups).
 
 ## Créer un groupement de postes de messagerie unifiée
 
@@ -284,7 +284,7 @@ Après avoir terminé une nouvelle installation des serveurs d'accès au client 
 
 ## Activer les utilisateurs pour la messagerie vocale.
 
-Après avoir déployé vos passerelles VoIP ou PBX IP, installé les serveurs d'accès au client et de boîtes aux lettres et créé les composants requis pour la messagerie unifiée, vous devez activer les utilisateurs pour la messagerie unifiée. Pour plus d'informations, consultez la rubrique [Activation de la messagerie vocale pour un utilisateur](enable-a-user-for-voice-mail-exchange-2013-help.md).
+Après avoir déployé vos passerelles VoIP ou PBX IP, installé les serveurs d'accès au client et de boîtes aux lettres et créé les composants requis pour la messagerie unifiée, vous devez activer les utilisateurs pour la messagerie unifiée. Pour plus d'informations, consultez la rubrique [Activation de la messagerie vocale pour un utilisateur](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail).
 
 ## Protéger la messagerie vocale
 
@@ -308,17 +308,17 @@ Pour utiliser le protocole TLS mutuel pour chiffrer le trafic SIP et RTP (Realti
 
 ## Stratégies de code confidentiel pour les utilisateurs à extension messagerie unifiée
 
-Dans la messagerie unifiée, les stratégies de code confidentiel sont définies et configurées selon une stratégie de boîte aux lettres de messagerie unifiée. Lorsque vous activez un utilisateur pour la messagerie unifiée, vous associez cet utilisateur à une stratégie de boîte aux lettres de messagerie unifiée existante. Les stratégies de code confidentiel de messagerie unifiée qui sont configurées dans la stratégie de boîte aux lettres de messagerie unifiée doivent être conformes aux critères de sécurité de votre organisation. Pour plus d'informations sur la configuration des paramètres de code confidentiel pour les utilisateurs à extension messagerie unifiée, consultez la rubrique [Définition de la sécurité des codes confidentiels d'Outlook Voice Access](set-outlook-voice-access-pin-security-exchange-2013-help.md).
+Dans la messagerie unifiée, les stratégies de code confidentiel sont définies et configurées selon une stratégie de boîte aux lettres de messagerie unifiée. Lorsque vous activez un utilisateur pour la messagerie unifiée, vous associez cet utilisateur à une stratégie de boîte aux lettres de messagerie unifiée existante. Les stratégies de code confidentiel de messagerie unifiée qui sont configurées dans la stratégie de boîte aux lettres de messagerie unifiée doivent être conformes aux critères de sécurité de votre organisation. Pour plus d'informations sur la configuration des paramètres de code confidentiel pour les utilisateurs à extension messagerie unifiée, consultez la rubrique [Définition de la sécurité des codes confidentiels d'Outlook Voice Access](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-outlook-voice-access-pin-security).
 
 ## Configurer les fonctionnalités de messagerie vocale cliente
 
 Suite au déploiement de vos serveurs et des composants de messagerie unifiée requis, vous pouvez configurer différentes fonctionnalités facultatives liées à la messagerie vocale. Pour plus d'informations, consultez les rubriques suivantes :
 
-  - [Configuration d’Outlook Voice Access](setting-up-outlook-voice-access-exchange-2013-help.md)
+  - [Configuration d’Outlook Voice Access](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-outlook-voice-access)
 
-  - [Activation du transfert d'appels pour des utilisateurs de messagerie vocale](allow-voice-mail-users-to-forward-calls-exchange-2013-help.md)
+  - [Activation du transfert d'appels pour des utilisateurs de messagerie vocale](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-voice-mail-users-to-forward-calls)
 
-  - [Activer la transcription des messages vocaux pour les utilisateurs](allow-users-to-see-a-voice-mail-transcript-exchange-2013-help.md)
+  - [Activer la transcription des messages vocaux pour les utilisateurs](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-see-a-voice-mail-transcript)
 
   - [Activation de la réception de télécopies pour les utilisateurs de messagerie vocale](enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md)
 

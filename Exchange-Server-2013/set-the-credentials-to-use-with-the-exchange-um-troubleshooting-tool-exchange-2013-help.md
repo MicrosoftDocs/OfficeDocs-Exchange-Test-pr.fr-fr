@@ -29,11 +29,11 @@ Par défaut, lorsque vous exécutez l’outil de dépannage de la messagerie uni
 
   - Assurez-vous que votre organisation Exchange 2010 ou Exchange 2013 remplit les conditions suivantes :
     
-      - Un plan de numérotation de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, voir [Créer un plan de numérotation de messagerie unifiée](create-a-um-dial-plan-exchange-2013-help.md).
+      - Un plan de numérotation de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, voir [Créer un plan de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
     
       - Une stratégie de boîte aux lettres de messagerie unifiée a été créée. Pour obtenir la procédure détaillée, consultez la rubrique [Créer une stratégie de boîte aux lettres de messagerie unifiée](create-a-um-mailbox-policy-exchange-2013-help.md).
     
-      - Une passerelle IP de messagerie unifiée a été créée. Pour obtenir la procédure détaillée, voir [Créer une passerelle IP de messagerie unifiée](create-a-um-ip-gateway-exchange-2013-help.md).
+      - Une passerelle IP de messagerie unifiée a été créée. Pour obtenir la procédure détaillée, voir [Créer une passerelle IP de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway).
     
       - Un serveur de messagerie UNIFIÉE de Exchange 2010 a été ajouté pour le plan de numérotation de messagerie UNIFIÉE. Si vous utilisez Exchange 2013 avec Lync Server, ajoutez tous les accès Client et les serveurs de boîtes aux lettres pour les plans de numérotation URI SIP. Pour obtenir la procédure détaillée, voir [Ajouter un serveur de messagerie UNIFIÉE à un Plan de numérotation](https://go.microsoft.com/fwlink/p/?linkid=313051) ou [Ajouter des serveurs de boîtes aux lettres et accès au Client à un plan de numérotation URI SIP](add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md).
 

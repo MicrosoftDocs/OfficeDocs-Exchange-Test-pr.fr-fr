@@ -29,17 +29,17 @@ Vous pouvez analyser des pièces jointes des messages électroniques au sein de 
 
   - Créez des notifications qui alertent les utilisateurs s’ils envoient un message déclenchant une règle de transport.
 
-  - Bloquez tous les messages contenant des pièces jointes. Pour obtenir des exemples, consultez la rubrique [Scénarios courants de blocage de pièce jointe](common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md).
+  - Bloquez tous les messages contenant des pièces jointes. Pour obtenir des exemples, consultez la rubrique [Scénarios courants de blocage de pièce jointe](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios).
 
 Les administrateurs Exchange peuvent créer des règles de transport en accédant au **Centre d’administration Exchange** \> **Flux de messagerie** \> **Règles**. Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Une fois que vous avez commencé la création d’une règle, vous pouvez voir la liste complète des conditions applicables aux pièces jointes en cliquant sur **Plus d’options** \> **Toute pièce jointe** sous **Appliquer cette règle si**. Les options applicables aux pièces jointes sont présentées dans le schéma suivant.
 
 ![Boîte de dialogue pour sélectionner les règles associées aux pièces jointes](images/JJ674307.2ae4a179-bfd2-4a0e-abe1-53ed4e9e3368(EXCHG.150).jpg "Boîte de dialogue pour sélectionner les règles associées aux pièces jointes")
 
-Pour plus d’informations sur les règles de transport, y compris l’ensemble des conditions et des actions que vous pouvez choisir, consultez la rubrique [Règles de transport ou de flux de messagerie](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) . Les clients Exchange Online Protection (EOP) et hybrides peuvent tirer parti des meilleures pratiques en matière de règles de transport fournies dans [Meilleures pratiques de configuration d’EOP](https://technet.microsoft.com/fr-fr/library/jj723164\(v=exchg.150\)). Si vous êtes prêt à créer des règles, consultez [Gestion de règles de flux de messagerie](manage-mail-flow-rules-exchange-2013-help.md).
+Pour plus d’informations sur les règles de transport, y compris l’ensemble des conditions et des actions que vous pouvez choisir, consultez la rubrique [Règles de transport ou de flux de messagerie](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) . Les clients Exchange Online Protection (EOP) et hybrides peuvent tirer parti des meilleures pratiques en matière de règles de transport fournies dans [Meilleures pratiques de configuration d’EOP](https://technet.microsoft.com/fr-fr/library/jj723164\(v=exchg.150\)). Si vous êtes prêt à créer des règles, consultez [Gestion de règles de flux de messagerie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
 
 ## Analyser le contenu des pièces jointes
 
-Vous pouvez utiliser les conditions de règles de transport du tableau ci-dessous pour examiner le contenu des pièces jointes aux messages. Pour ces conditions, seuls les 150 premiers Ko d’une pièce jointe sont analysés. Pour commencer à utiliser ces conditions lors de l’analyse des messages, vous devez les ajouter à une règle de transport. Pour en savoir plus sur la création ou la modification des règles, voir [Gestion de règles de flux de messagerie](manage-mail-flow-rules-exchange-2013-help.md).
+Vous pouvez utiliser les conditions de règles de transport du tableau ci-dessous pour examiner le contenu des pièces jointes aux messages. Pour ces conditions, seuls les 150 premiers Ko d’une pièce jointe sont analysés. Pour commencer à utiliser ces conditions lors de l’analyse des messages, vous devez les ajouter à une règle de transport. Pour en savoir plus sur la création ou la modification des règles, voir [Gestion de règles de flux de messagerie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
 
 
 <table>
@@ -158,7 +158,7 @@ Le tableau suivant répertorie les types de fichiers pris en charge par les règ
 
 ## Analyser les propriétés de fichier des pièces jointes
 
-Les conditions de règle de transport suivantes analysent les propriétés d’un fichier joint à un message. Pour commencer à utiliser ces conditions lors de l’analyse des messages, vous devez les ajouter à une règle de transport. La liste des types de fichiers pris en charge avec un code exécutable pouvant être vérifiés dans le cadre des règles de transport figure ici. Pour plus d’informations sur la création ou la modification des règles, consultez la rubrique [Gestion de règles de flux de messagerie](manage-mail-flow-rules-exchange-2013-help.md).
+Les conditions de règle de transport suivantes analysent les propriétés d’un fichier joint à un message. Pour commencer à utiliser ces conditions lors de l’analyse des messages, vous devez les ajouter à une règle de transport. La liste des types de fichiers pris en charge avec un code exécutable pouvant être vérifiés dans le cadre des règles de transport figure ici. Pour plus d’informations sur la création ou la modification des règles, consultez la rubrique [Gestion de règles de flux de messagerie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
 
 
 <table>

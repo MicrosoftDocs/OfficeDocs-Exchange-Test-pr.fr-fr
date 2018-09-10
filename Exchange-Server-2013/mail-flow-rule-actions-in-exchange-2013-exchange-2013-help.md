@@ -61,7 +61,7 @@ Les actions disponibles dans les règles de flux de messagerie sur des serveurs 
 <p><strong>Transférer le message pour approbation</strong> &gt; <strong>à ces personnes</strong></p></td>
 <td><p><em>ModerateMessageByUser</em></p></td>
 <td><p><code>Addresses</code></p></td>
-<td><p>Transfère le message aux modérateurs spécifiés en tant que pièce jointe incluse dans une demande d’approbation. Pour plus d’informations, consultez la rubrique <a href="common-message-approval-scenarios-exchange-2013-help.md">Scénarios courants d’approbation des messages</a>. Vous ne pouvez pas utiliser un groupe de distribution en tant que modérateur.</p></td>
+<td><p>Transfère le message aux modérateurs spécifiés en tant que pièce jointe incluse dans une demande d’approbation. Pour plus d’informations, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios">Scénarios courants d’approbation des messages</a>. Vous ne pouvez pas utiliser un groupe de distribution en tant que modérateur.</p></td>
 <td><p>Exchange 2010 ou version ultérieure</p></td>
 </tr>
 <tr class="even">
@@ -632,7 +632,7 @@ Retour au début
 
 ## Pour plus d'informations
 
-[Gestion de règles de flux de messagerie](manage-mail-flow-rules-exchange-2013-help.md)
+[Gestion de règles de flux de messagerie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
 
 [Règles de transport ou de flux de messagerie](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 

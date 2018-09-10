@@ -45,7 +45,7 @@ Le tableau ci-dessous répertorie les limites des dossiers publics dans Exchange
 <tr class="odd">
 <td><p>Nombre total de boîtes aux lettres de dossiers publics</p></td>
 <td><p>100</p></td>
-<td><p>Bien qu’il vous soit possible de créer plus de 100 boîtes aux lettres de dossiers publics, cette fonctionnalité n’est pas prise en charge. <a href="create-a-public-folder-mailbox-exchange-2013-help.md">Création d’une boîte aux lettres de dossiers publics</a></p></td>
+<td><p>Bien qu’il vous soit possible de créer plus de 100 boîtes aux lettres de dossiers publics, cette fonctionnalité n’est pas prise en charge. <a href="https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/create-public-folder-mailbox">Création d’une boîte aux lettres de dossiers publics</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Nombre total de dossiers publics dans la hiérarchie</p></td>

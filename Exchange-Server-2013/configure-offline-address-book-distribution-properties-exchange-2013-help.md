@@ -21,7 +21,7 @@ _**Dernière rubrique modifiée :** 2012-10-14_
 
 Pour chaque point de distribution de carnet d’adresses en mode hors connexion dans Exchange, vous pouvez configurer deux adresses URL : une adresse URL interne accessible uniquement depuis votre réseau d’entreprise interne et une adresse URL externe accessible depuis Internet.
 
-Pour les autres tâches de gestion relatives aux carnets d’adresses en mode hors connexion, voir [Procédures des carnets d’adresses en mode hors connexion](offline-address-book-procedures-exchange-2013-help.md).
+Pour les autres tâches de gestion relatives aux carnets d’adresses en mode hors connexion, voir [Procédures des carnets d’adresses en mode hors connexion](https://docs.microsoft.com/fr-fr/exchange/address-books/offline-address-books/offline-address-book-procedures).
 
 ## Ce qu’il faut savoir avant de commencer ?
 

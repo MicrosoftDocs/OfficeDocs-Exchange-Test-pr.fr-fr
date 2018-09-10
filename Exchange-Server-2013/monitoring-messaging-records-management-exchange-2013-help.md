@@ -17,9 +17,9 @@ _**Sapplique à :** Exchange Server 2013_
 
 _**Dernière rubrique modifiée :** 2009-11-03_
 
-[Afficher les compteurs de performances pour la gestion des enregistrements de messagerie](view-performance-counters-for-messaging-records-management-exchange-2013-help.md)
+[Afficher les compteurs de performances pour la gestion des enregistrements de messagerie](view-performance-counters-for-https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
 
-[Compteurs de performance pour la gestion des enregistrements de messagerie](performance-counters-for-messaging-records-management-exchange-2013-help.md)
+[Compteurs de performance pour la gestion des enregistrements de messagerie](performance-counters-for-https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
 
 Erreurs
 

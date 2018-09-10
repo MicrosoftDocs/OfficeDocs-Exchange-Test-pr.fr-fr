@@ -200,7 +200,7 @@ La page **Audit** du CAE contient plusieurs rapports qui fournissent des informa
 
 Pour plus d'informations sur l'utilisation de ces rapports, consultez la rubrique [Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md).
 
-Pour plus d'informations sur les autres rapports inclus dans la page **Audit**, consultez la rubrique [Rapports d’audit Exchange](exchange-auditing-reports-exchange-2013-help.md).
+Pour plus d'informations sur les autres rapports inclus dans la page **Audit**, consultez la rubrique [Rapports d’audit Exchange](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports).
 
 ## Cmdlet Search-AdminAuditLog
 

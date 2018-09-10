@@ -45,9 +45,9 @@ Vous rencontrez des difficultés ? Demandez de l’aide en participant aux foru
 
 Vous pouvez activer le blocage de rétention des boîtes aux lettres pour désactiver temporairement la gestion des enregistrements de messagerie (par exemple, lorsque les utilisateurs sont en congé). Le traitement des stratégies de rétention est alors suspendu pour la boîte aux lettres jusqu'à la désactivation du blocage de rétention. Cette fonctionnalité diffère de l'activation de l'archive permanente ou de la mise en attente pour litige.
 
-Pour plus d'informations sur la procédure d'activation du blocage de rétention d'une boîte aux lettres, consultez la rubrique [Placer une boîte aux lettres en blocage de rétention](place-a-mailbox-on-retention-hold-exchange-2013-help.md).
+Pour plus d'informations sur la procédure d'activation du blocage de rétention d'une boîte aux lettres, consultez la rubrique [Placer une boîte aux lettres en blocage de rétention](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold).
 
-Pour en savoir plus sur l'archive permanente et la mise en attente pour litige, consultez la rubrique [Conservation inaltérable et conservation pour litige](in-place-hold-and-litigation-hold-exchange-2013-help.md).
+Pour en savoir plus sur l'archive permanente et la mise en attente pour litige, consultez la rubrique [Conservation inaltérable et conservation pour litige](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-and-litigation-holds).
 
 ## Suppression de balises de rétention des boîtes aux lettres
 

@@ -69,7 +69,7 @@ L’archivage inaltérable vous permet de reprendre le contrôle des données de
         
         Pour en savoir plus, voir [Archivage inaltérable dans Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md).
     
-      - **Stratégie de carnet d’adresses**   Sélectionnez dans cette liste une stratégie de carnet d’adresses pour la boîte aux lettres. Les stratégies de carnet d’adresses contiennent une liste d’adresses globale, un carnet d’adresses en mode hors connexion, une liste de salles et un ensemble de listes d’adresses. Lors de l’affectation aux utilisateurs de boîtes aux lettres, une stratégie de carnet d’adresses leur fournit l’accès à une liste d’adresses globale personnalisée dans Outlook et Outlook Web App. Pour en savoir plus, voir [Stratégies de carnet d’adresses](address-book-policies-exchange-2013-help.md).
+      - **Stratégie de carnet d’adresses**   Sélectionnez dans cette liste une stratégie de carnet d’adresses pour la boîte aux lettres. Les stratégies de carnet d’adresses contiennent une liste d’adresses globale, un carnet d’adresses en mode hors connexion, une liste de salles et un ensemble de listes d’adresses. Lors de l’affectation aux utilisateurs de boîtes aux lettres, une stratégie de carnet d’adresses leur fournit l’accès à une liste d’adresses globale personnalisée dans Outlook et Outlook Web App. Pour en savoir plus, voir [Stratégies de carnet d’adresses](https://docs.microsoft.com/fr-fr/exchange/address-books/address-book-policies/address-book-policies).
 
 6.  Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer la boîte aux lettres.
 

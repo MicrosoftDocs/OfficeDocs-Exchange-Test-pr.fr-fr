@@ -25,7 +25,7 @@ Lorsque vous configurez une passerelle VoIP, vous devez déterminer si celle-ci 
 
 Les ressources suggérées suivantes de Microsoft Exchange TechCenter fournissent des informations qui vous permettent de configurer correctement vos passerelles VoIP et vos PBX :
 
-  - **Documentation sur la passerelle VoIP, le PBX IP et le PBX pris en charge**   [Gestionnaire de téléphonie pour Exchange 2013](telephony-advisor-for-exchange-2013-exchange-2013-help.md) inclut des fichiers de configuration et des informations d’installation que vous pouvez utiliser lors de la configuration des passerelles VoIP et des PBX.
+  - **Documentation sur la passerelle VoIP, le PBX IP et le PBX pris en charge**   [Gestionnaire de téléphonie pour Exchange 2013](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013) inclut des fichiers de configuration et des informations d’installation que vous pouvez utiliser lors de la configuration des passerelles VoIP et des PBX.
 
   - **Notes de configuration et techniques**   [Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md) inclut des fichiers de configuration et des informations d’installation que vous pouvez utiliser lors de la configuration des passerelles VoIP et des PBX.
 

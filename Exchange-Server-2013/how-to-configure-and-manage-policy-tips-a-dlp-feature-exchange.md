@@ -35,7 +35,7 @@ Les conseils de stratégie sont des notes d’information qui apparaissent lorsq
     
     3.  Le contenu d'un en-tête de message, d'un corps de message ou d'une pièce jointe analysé par votre agent de transport remplit les conditions définies au sein des stratégies DLP ou des règles qui incluent aussi les règles de notification de conseil de stratégie. Autrement dit, le conseil de stratégie s'affiche si les utilisateurs finaux agissent de façon à ce que la règle associée entreprenne l'action qui s'impose.
 
-  - Le texte par défaut du conseil de stratégie s’affichera si vous ne modifiez pas les paramètres de conseils de stratégie pour le personnaliser. Pour plus d'informations sur la portée du destinataire, consultez la rubrique [Conseils de stratégie](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md).
+  - Le texte par défaut du conseil de stratégie s’affichera si vous ne modifiez pas les paramètres de conseils de stratégie pour le personnaliser. Pour plus d'informations sur la portée du destinataire, consultez la rubrique [Conseils de stratégie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/policy-tips).
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
@@ -139,7 +139,7 @@ Pour vérifier que vous avez bien créé un conseil de stratégie de rejet de me
 
 ## Créer ou modifier un conseil de stratégie de blocage sauf remplacement
 
-Il existe quatre options de conseils de stratégie permettant de rejeter des messages ou d’empêcher leur envoi à partir de la boîte d’envoi de l’expéditeur. Pour en savoir plus sur ces options, consultez la rubrique [Conseils de stratégie](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md).
+Il existe quatre options de conseils de stratégie permettant de rejeter des messages ou d’empêcher leur envoi à partir de la boîte d’envoi de l’expéditeur. Pour en savoir plus sur ces options, consultez la rubrique [Conseils de stratégie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/policy-tips).
 
 ## Utiliser le Centre d'administration Exchange (CAE) pour configurer des conseils de stratégie de blocage sauf remplacement
 
@@ -175,7 +175,7 @@ Pour vérifier que vous avez bien créé un conseil de stratégie de rejet sauf 
 
 ## Créer un texte de notification de conseil de stratégie personnalisé
 
-Cette procédure facultative vous aidera à personnaliser le texte de notification du conseil de stratégie que les expéditeurs de messages électroniques voient dans leur programme de messagerie. Si vous procédez ainsi, votre texte de notification de conseil de stratégie personnalisé ne s'affichera pas, sauf si vous configurez également une règle de stratégie DLP avec une action qui entraînera l'affichage de la notification. Souvenez-vous que des notifications de conseils de stratégie du système par défaut peuvent être affichées si vous ne personnalisez pas le texte de vos notifications. Pour plus d'informations sur la portée du destinataire, consultez la rubrique [Conseils de stratégie](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md).
+Cette procédure facultative vous aidera à personnaliser le texte de notification du conseil de stratégie que les expéditeurs de messages électroniques voient dans leur programme de messagerie. Si vous procédez ainsi, votre texte de notification de conseil de stratégie personnalisé ne s'affichera pas, sauf si vous configurez également une règle de stratégie DLP avec une action qui entraînera l'affichage de la notification. Souvenez-vous que des notifications de conseils de stratégie du système par défaut peuvent être affichées si vous ne personnalisez pas le texte de vos notifications. Pour plus d'informations sur la portée du destinataire, consultez la rubrique [Conseils de stratégie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/policy-tips).
 
 ## Utiliser le Centre d'administration Exchange (CAE) pour créer et gérer le texte de notification du conseil de stratégie personnalisé
 
@@ -183,7 +183,7 @@ Cette procédure facultative vous aidera à personnaliser le texte de notificati
 
 2.  Sélectionnez **Paramètres de conseil de stratégie**![Paramètres Conseil de stratégie](images/JJ619307.54d1813d-3289-4765-a9a3-a7303a5ab3c7(EXCHG.150).gif "Paramètres Conseil de stratégie").
 
-3.  Pour ajouter un nouveau conseil de stratégie avec votre propre message personnalisé, sélectionnez **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter"). Pour plus d'informations sur les choix d'action disponibles, consultez la rubrique [Conseils de stratégie](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md).
+3.  Pour ajouter un nouveau conseil de stratégie avec votre propre message personnalisé, sélectionnez **Ajouter**![Icône Ajouter](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Icône Ajouter"). Pour plus d'informations sur les choix d'action disponibles, consultez la rubrique [Conseils de stratégie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/policy-tips).
     
     Pour modifier un conseil de stratégie existant, mettez le conseil en surbrillance et sélectionnez **Modifier**![Icône Modifier](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Icône Modifier").
     
@@ -225,7 +225,7 @@ Pour vérifier que vous avez bien créé un texte de conseil de stratégie perso
 
 [Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
 
-[Conseils de stratégie](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)
+[Conseils de stratégie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/policy-tips)
 
 [Règles de transport ou de flux de messagerie](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)Exchange 2013
 

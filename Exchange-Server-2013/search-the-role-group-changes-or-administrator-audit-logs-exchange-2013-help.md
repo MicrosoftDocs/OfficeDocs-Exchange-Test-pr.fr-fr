@@ -22,7 +22,7 @@ Vous pouvez effectuer des recherches dans les journaux d’audit de l’administ
 Pour effectuer des recherches dans le journal d’audit d’une boîte aux lettres, consultez la rubrique [Enregistrement d’audit dans les boîtes aux lettres](mailbox-audit-logging-exchange-2013-help.md).
 
 > [!TIP]
-> Dans Exchange Online, vous pouvez utiliser le CAE pour afficher les entrées du journal d’audit de l’administrateur. Pour plus d’informations, consultez la rubrique <a href="view-the-administrator-audit-log-exchange-2013-help.md">Consulter le journal d’audit de l’administrateur</a>.
+> Dans Exchange Online, vous pouvez utiliser le CAE pour afficher les entrées du journal d’audit de l’administrateur. Pour plus d’informations, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log">Consulter le journal d’audit de l’administrateur</a>.
 
 
 ## Ce qu’il faut savoir avant de commencer ?

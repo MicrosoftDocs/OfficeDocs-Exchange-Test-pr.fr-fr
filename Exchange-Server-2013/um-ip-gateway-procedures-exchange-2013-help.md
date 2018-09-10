@@ -17,7 +17,7 @@ _**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016
 
 _**Dernière rubrique modifiée :** 2013-05-03_
 
-[Créer une passerelle IP de messagerie unifiée](create-a-um-ip-gateway-exchange-2013-help.md)
+[Créer une passerelle IP de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway)
 
 [Gestion d'une passerelle IP de messagerie unifiée](manage-a-um-ip-gateway-exchange-2013-help.md)
 
@@ -27,9 +27,9 @@ _**Dernière rubrique modifiée :** 2013-05-03_
 
 [Configurer un nom de domaine complet](configure-a-fully-qualified-domain-name-exchange-2013-help.md)
 
-[Configurer l’adresse IP](configure-the-ip-address-exchange-2013-help.md)
+[Configurer l’adresse IP](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-ip-address)
 
 [Configuration du port d'écoute](configure-the-listening-port-exchange-2013-help.md)
 
-[Supprimer une passerelle IP de messagerie unifiée](delete-a-um-ip-gateway-exchange-2013-help.md)
+[Supprimer une passerelle IP de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-ip-gateway)
 

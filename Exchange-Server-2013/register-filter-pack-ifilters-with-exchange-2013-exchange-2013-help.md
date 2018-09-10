@@ -26,7 +26,7 @@ Après avoir enregistré un IFilter pour un type de fichier spécifique, les rè
 > Ces procédures requièrent également l’interruption et le redémarrage du service de transport Microsoft Exchange sur vos serveurs de boîtes aux lettres.
 
 
-Pour d’autres tâches de gestion relatives aux règles de transport, consultez la rubrique [Gestion de règles de flux de messagerie](manage-mail-flow-rules-exchange-2013-help.md).
+Pour d’autres tâches de gestion relatives aux règles de transport, consultez la rubrique [Gestion de règles de flux de messagerie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
 
 ## Ce qu’il faut savoir avant de commencer ?
 
@@ -134,7 +134,7 @@ Le déploiement du pack de filtres Office 2010 s’articule en deux étapes prin
 
 Pour vérifier que vous avez bien enregistré les iFilters du pack de filtres Microsoft Office 2010, effectuez l’opération suivante :
 
-1.  Créez une règle de transport avec les propriétés suivantes : Pour des instructions détaillées sur la procédure de création de règles de transport, consultez la rubrique [Gestion de règles de flux de messagerie](manage-mail-flow-rules-exchange-2013-help.md).
+1.  Créez une règle de transport avec les propriétés suivantes : Pour des instructions détaillées sur la procédure de création de règles de transport, consultez la rubrique [Gestion de règles de flux de messagerie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
     
       - L’expéditeur est votre boîte aux lettres.
     

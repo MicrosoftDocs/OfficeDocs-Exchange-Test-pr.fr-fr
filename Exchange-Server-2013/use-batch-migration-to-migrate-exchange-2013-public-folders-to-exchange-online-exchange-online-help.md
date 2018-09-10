@@ -392,7 +392,7 @@ Une fois que la migration de dossier public est terminée, procédez comme suit 
     
     4.  Publiez du contenu dans un dossier public ou effacez-en.
     
-    Si vous rencontrez un problème et que vous déterminez que vous n’êtes pas prêt à basculer les dossiers publics de votre organisation entièrement à Exchange Online, reportez-vous à la section [Restauration d’une migration de dossiers publics à partir d’Exchange 2013 vers Exchange Online](roll-back-a-public-folder-migration-from-exchange-2013-to-exchange-online-exchange-2013-help.md).
+    Si vous rencontrez un problème et que vous déterminez que vous n’êtes pas prêt à basculer les dossiers publics de votre organisation entièrement à Exchange Online, reportez-vous à la section [Restauration d’une migration de dossiers publics à partir d’Exchange 2013 vers Exchange Online](https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/roll-back-exchange-2013-public-folder-migration).
 
 3.  Exécutez la commande suivante dans Exchange Online PowerShell pour déverrouiller vos dossiers publics dans Exchange en ligne. Après avoir exécuté la commande, il peut prendre environ 15 à 30 minutes pour que les modifications soient prises en compte. Une fois qu’Outlook est informé de ces modifications, il peut demander aux utilisateurs de redémarrer le programme plusieurs fois.
     

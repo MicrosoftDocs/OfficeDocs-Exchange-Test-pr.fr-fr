@@ -99,7 +99,7 @@ Si vous utilisez le CAE pour afficher les propriétés d’un répertoire virtue
 5.  L'onglet **Fonctionnalités** permet de spécifier les fonctionnalités que vous souhaitez activer ou désactiver pour les utilisateurs d'Outlook Web App sur un répertoire virtuel.
     
     > [!NOTE]
-    > Les paramètres de fonctionnalités pour des utilisateurs individuels remplacent les paramètres de répertoire virtuel. Vous pouvez modifier les paramètres de fonctionnalités pour des utilisateurs individuels à l'aide de la cmdlet <strong>Set-CASMailbox</strong> ou des stratégies de boîte aux lettres Outlook Web App. Pour plus d'informations, consultez la rubrique <a href="outlook-web-app-mailbox-policies-exchange-2013-help.md">Stratégies de boîte aux lettres de Outlook Web App</a>.
+    > Les paramètres de fonctionnalités pour des utilisateurs individuels remplacent les paramètres de répertoire virtuel. Vous pouvez modifier les paramètres de fonctionnalités pour des utilisateurs individuels à l'aide de la cmdlet <strong>Set-CASMailbox</strong> ou des stratégies de boîte aux lettres Outlook Web App. Pour plus d'informations, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies">Stratégies de boîte aux lettres de Outlook Web App</a>.
     
     Utilisez les cases à cocher pour activer ou désactiver des fonctionnalités. Par défaut, les fonctionnalités les plus courantes sont affichées. Pour afficher toutes les fonctionnalités pouvant être activées ou désactivées, cliquez sur **plus d'options**.
     

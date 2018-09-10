@@ -99,7 +99,7 @@ Vous pouvez utiliser l’outil d’exportation d’eDiscovery dans le Centre d�
 
   - Pour plus d’informations sur la déduplication et les éléments impossibles à rechercher, voir :
     
-      - [Estimate, preview, and copy search results](in-place-ediscovery-exchange-2013-help.md)
+      - [Estimate, preview, and copy search results](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
     
       - [Éléments impossibles à rechercher dans la découverte électronique Exchange](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md)
 

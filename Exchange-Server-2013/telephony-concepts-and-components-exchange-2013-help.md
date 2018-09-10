@@ -165,5 +165,5 @@ Présentation
 
 [Protocoles, ports et services de messagerie unifiée](um-protocols-ports-and-services-exchange-2013-help.md)
 
-[Gestionnaire de téléphonie pour Exchange 2013](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+[Gestionnaire de téléphonie pour Exchange 2013](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)
 

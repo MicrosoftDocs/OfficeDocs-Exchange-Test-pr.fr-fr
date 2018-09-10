@@ -21,7 +21,7 @@ Le répertoire virtuel OAB est la distribution de l’OAB. Par défaut, lors de 
 
 La création d’un répertoire virtuel de carnet d’adresses en mode hors connexion n’est pas une tâche habituelle. Exchange autorise un seul répertoire virtuel de carnet d’adresses en mode hors connexion nommé OAB. Vous devez créer un répertoire virtuel de carnet d’adresses en mode hors connexion seulement s’il y a un problème avec le répertoire virtuel existant et si le répertoire précédent a été supprimé.
 
-Pour les autres tâches de gestion relatives aux carnets d’adresses en mode hors connexion, voir [Procédures des carnets d’adresses en mode hors connexion](offline-address-book-procedures-exchange-2013-help.md).
+Pour les autres tâches de gestion relatives aux carnets d’adresses en mode hors connexion, voir [Procédures des carnets d’adresses en mode hors connexion](https://docs.microsoft.com/fr-fr/exchange/address-books/offline-address-books/offline-address-book-procedures).
 
 > [!NOTE]
 > Avant de créer un répertoire virtuel de carnet d’adresses en mode hors connexion, assurez-vous que les utilisateurs sont conscients des modifications que vous apportez. Cette procédure peut interrompre le processus de téléchargement du carnet d’adresses en mode hors connexion pour vos utilisateurs.
@@ -61,7 +61,7 @@ Cet exemple montre comment créer un répertoire virtuel de carnet d’adresses 
 
     New-OABVirtualDirectory -Server CASServer01 -RequireSSL $true -ExternalURL "https://www.contoso.com/OAB"
 
-Après avoir créé un répertoire virtuel de carnet d’adresses en mode hors connexion, vous devez modifier les paramètres sur chaque carnet d’adresses en mode hors connexion qui utilise la distribution Web pour les reconnecter au répertoire virtuel de carnet d’adresses en mode hors connexion. Pour plus d’informations, voir [Modifier la planification de génération du carnet d’adresses hors connexion](change-the-offline-address-book-generation-schedule-exchange-2013-help.md).
+Après avoir créé un répertoire virtuel de carnet d’adresses en mode hors connexion, vous devez modifier les paramètres sur chaque carnet d’adresses en mode hors connexion qui utilise la distribution Web pour les reconnecter au répertoire virtuel de carnet d’adresses en mode hors connexion. Pour plus d’informations, voir [Modifier la planification de génération du carnet d’adresses hors connexion](https://docs.microsoft.com/fr-fr/exchange/address-books/offline-address-books/change-address-book-generation-schedule).
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-OabVirtualDirectory](https://technet.microsoft.com/fr-fr/library/bb123735\(v=exchg.150\)).
 

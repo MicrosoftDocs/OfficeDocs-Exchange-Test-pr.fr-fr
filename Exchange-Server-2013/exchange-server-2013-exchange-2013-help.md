@@ -88,7 +88,7 @@ Le contenu de l'Aide d'Exchange 2013 se compose des catégories de niveau supé
 
   - [État et performances du serveur](server-health-and-performance-exchange-2013-help.md)
 
-  - [À propos de la documentation Exchange](about-exchange-documentation-exchange-2013-help.md)
+  - [À propos de la documentation Exchange](https://docs.microsoft.com/fr-fr/exchange/about-exchange-documentation)
 
 > [!NOTE]
 > N'hésitez pas à consulter nos autres rubriques Exchange :<br />

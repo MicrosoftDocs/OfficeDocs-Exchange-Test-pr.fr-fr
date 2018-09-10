@@ -75,7 +75,7 @@ La convention d'affectation de noms pour les fichiers journaux conservés dans l
 
   - **MSGTRK**   Ces journaux sont associés au service de transport.
 
-  - **MSGTRKMA**   Ces journaux sont associés aux approbations et rejets appliqués par le transport modéré. Pour plus d'informations, consultez la rubrique [Gérer l’approbation des messages](manage-message-approval-exchange-2013-help.md).
+  - **MSGTRKMA**   Ces journaux sont associés aux approbations et rejets appliqués par le transport modéré. Pour plus d'informations, consultez la rubrique [Gérer l’approbation des messages](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/manage-message-approval).
 
   - **MSGTRKMD**   Ces journaux sont associés aux messages remis aux boîtes aux lettres par le service de remise de transport de boîte aux lettres.
 
@@ -340,7 +340,7 @@ Dans le champ **event-id**, divers types d'événements sont utilisés pour clas
 </tr>
 <tr class="even">
 <td><p><strong>INITMESSAGECREATED</strong></p></td>
-<td><p>Un message a été envoyé à un destinataire modéré. Le message a donc été transmis à la boîte aux lettres d'arbitrage pour approbation. Pour plus d'informations, consultez la rubrique <a href="manage-message-approval-exchange-2013-help.md">Gérer l’approbation des messages</a>.</p></td>
+<td><p>Un message a été envoyé à un destinataire modéré. Le message a donc été transmis à la boîte aux lettres d'arbitrage pour approbation. Pour plus d'informations, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">Gérer l’approbation des messages</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LOAD</strong></p></td>
@@ -348,7 +348,7 @@ Dans le champ **event-id**, divers types d'événements sont utilisés pour clas
 </tr>
 <tr class="even">
 <td><p><strong>MODERATIONEXPIRE</strong></p></td>
-<td><p>Aucun modérateur d'un destinataire modéré n'ayant jamais approuvé ou rejeté le message, ce dernier a expiré. Pour plus d'informations sur les destinataires modérés, consultez la rubrique <a href="manage-message-approval-exchange-2013-help.md">Gérer l’approbation des messages</a>.</p></td>
+<td><p>Aucun modérateur d'un destinataire modéré n'ayant jamais approuvé ou rejeté le message, ce dernier a expiré. Pour plus d'informations sur les destinataires modérés, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">Gérer l’approbation des messages</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MODERATORAPPROVE</strong></p></td>
@@ -475,7 +475,7 @@ Les valeurs du champ **source** dans le journal de suivi des messages indiquent 
 </tr>
 <tr class="odd">
 <td><p><strong>APPROVAL</strong></p></td>
-<td><p>La source de l'événement était la structure d'approbation utilisée avec les destinataires modérés. Pour plus d'informations, consultez la rubrique <a href="manage-message-approval-exchange-2013-help.md">Gérer l’approbation des messages</a>.</p></td>
+<td><p>La source de l'événement était la structure d'approbation utilisée avec les destinataires modérés. Pour plus d'informations, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">Gérer l’approbation des messages</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>BOOTLOADER</strong></p></td>

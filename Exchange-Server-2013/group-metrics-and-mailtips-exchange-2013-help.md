@@ -23,7 +23,7 @@ Les données suivantes sur les groupes de distribution et les groupes de distrib
 
   - Nombre de membres qui sont externes à votre organisation
 
-Les données de mesures de groupe sont utilisées pour prendre en charge les infos-courrier dans Microsoft Exchange Server 2013. Les infos-courrier sont des messages informatifs que les expéditeurs visualisent pendant qu’ils rédigent leurs messages. Pour plus d’informations sur les infos-courrier, notamment la liste complète des infos-courrier disponibles dans Exchange 2013, voir [MailTips](mailtips-exchange-2013-help.md).
+Les données de mesures de groupe sont utilisées pour prendre en charge les infos-courrier dans Microsoft Exchange Server 2013. Les infos-courrier sont des messages informatifs que les expéditeurs visualisent pendant qu’ils rédigent leurs messages. Pour plus d’informations sur les infos-courrier, notamment la liste complète des infos-courrier disponibles dans Exchange 2013, voir [MailTips](https://docs.microsoft.com/fr-fr/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips).
 
 Les données de mesures de groupe sont utilisées par les infos-courrier suivantes :
 

@@ -485,7 +485,7 @@ En tant qu’utilisateur Outlook Voice Access, quand vous composez un numéro Ou
 
 ## Pour plus d'informations
 
-[Configuration d’Outlook Voice Access](setting-up-outlook-voice-access-exchange-2013-help.md)
+[Configuration d’Outlook Voice Access](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-outlook-voice-access)
 
 [Configurer les fonctionnalités de messagerie vocale cliente](set-up-client-voice-mail-features-exchange-2013-help.md)
 

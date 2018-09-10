@@ -21,7 +21,7 @@ _**Dernière rubrique modifiée :** 2013-03-08_
 
 Après avoir créé un standard automatique de messagerie unifiée, les appels entrants via le numéro de téléphone externe, auxquels répond normalement un opérateur humain, reçoivent une réponse du standard automatique. Contrairement aux autres composants de messagerie unifiée, tels que les plans de numérotation de messagerie unifiée et les passerelles IP de messagerie unifiée, vous n'êtes pas obligé de créer des standards automatiques de messagerie unifiée. Toutefois, les standards automatiques aident des appelants internes et externes à localiser des utilisateurs ou départements d'une organisation et à leur transférer des appels.
 
-Pour découvrir d'autres tâches de gestion relatives aux standards automatiques de messagerie unifiée, consultez la rubrique [Procédures relatives au standard automatique de messagerie unifiée](um-auto-attendant-procedures-exchange-2013-help.md).
+Pour découvrir d'autres tâches de gestion relatives aux standards automatiques de messagerie unifiée, consultez la rubrique [Procédures relatives au standard automatique de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures).
 
 ## Ce qu'il faut savoir avant de commencer
 
@@ -29,7 +29,7 @@ Pour découvrir d'autres tâches de gestion relatives aux standards automatiques
 
   - Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Standards automatiques de messagerie unifiée » dans la rubrique [Autorisations de messagerie unifiée](unified-messaging-permissions-exchange-2013-help.md).
 
-  - Avant d'exécuter ces procédures, vérifiez qu'un plan de numérotation de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](create-a-um-dial-plan-exchange-2013-help.md).
+  - Avant d'exécuter ces procédures, vérifiez qu'un plan de numérotation de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 

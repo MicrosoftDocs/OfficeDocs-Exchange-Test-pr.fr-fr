@@ -17,7 +17,7 @@ _**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016
 
 _**Dernière rubrique modifiée :** 2012-11-05_
 
-[Créer un groupement de postes de messagerie unifiée](create-a-um-hunt-group-exchange-2013-help.md)
+[Créer un groupement de postes de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-hunt-group)
 
 [Permet d'afficher un groupement de postes de messagerie unifiée](view-a-um-hunt-group-exchange-2013-help.md)
 

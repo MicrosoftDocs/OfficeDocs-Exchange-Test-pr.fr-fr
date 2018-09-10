@@ -105,7 +105,7 @@ Le tableau suivant répertorie la couche de stratégie d’attribution de rôle 
 <tbody>
 <tr class="odd">
 <td><p>Boîte aux lettres</p></td>
-<td><p><a href="manage-user-mailboxes-exchange-2013-help.md">Gestion des boîtes aux lettres utilisateur</a></p>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes">Gestion des boîtes aux lettres utilisateur</a></p>
 <p><a href="change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md">Modifier la stratégie d’attribution sur une boîte aux lettres</a></p></td>
 </tr>
 <tr class="even">

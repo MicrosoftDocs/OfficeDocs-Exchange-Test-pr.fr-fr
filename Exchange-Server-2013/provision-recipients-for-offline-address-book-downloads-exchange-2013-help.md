@@ -27,7 +27,7 @@ Si vous utilisez plusieurs carnets d'adresses en mode hors connexion dans votre 
 
   - **Stratégie de carnet d'adresses**   Vous pouvez attribuer une stratégie de carnet d'adresse (ABP) à un compte d'utilisateur de boîte aux lettres pour définir le carnet d'adresses hors connexion à télécharger vers la boîte aux lettres d'un destinataire. Si vous attribuez une ABP à un compte d'utilisateur auquel un carnet d'adresses en mode hors connexion a déjà été attribué, le carnet d'adresses en mode hors connexion explicitement attribué à la boîte aux lettres est prioritaire. Pour plus d'informations, consultez la rubrique [Attribuer une stratégie de carnet d’adresses à des utilisateurs de messagerie](assign-an-address-book-policy-to-mail-users-exchange-2013-help.md).
 
-Pour les autres tâches de gestion relatives aux carnets d'adresses en mode hors connexion, consultez la rubrique [Procédures des carnets d’adresses en mode hors connexion](offline-address-book-procedures-exchange-2013-help.md).
+Pour les autres tâches de gestion relatives aux carnets d'adresses en mode hors connexion, consultez la rubrique [Procédures des carnets d’adresses en mode hors connexion](https://docs.microsoft.com/fr-fr/exchange/address-books/offline-address-books/offline-address-book-procedures).
 
 ## Ce qu'il faut savoir avant de commencer
 

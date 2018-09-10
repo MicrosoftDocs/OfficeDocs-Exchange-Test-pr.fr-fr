@@ -84,7 +84,7 @@ Pour obtenir un guide détaillé sur le déploiement de la messagerie unifiée e
 <tr class="odd">
 <td><p><strong> </strong></p></td>
 <td><p>Créer le nombre de plans de numérotation nécessaire pour votre organisation.</p></td>
-<td><p><a href="create-a-um-dial-plan-exchange-2013-help.md">Créer un plan de numérotation de messagerie unifiée</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan">Créer un plan de numérotation de messagerie unifiée</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -110,9 +110,9 @@ Pour obtenir un guide détaillé sur le déploiement de la messagerie unifiée e
 <tr class="even">
 <td><p></p></td>
 <td><p>Configurer la numérotation sortante pour la messagerie unifiée.</p></td>
-<td><p><a href="authorize-calls-using-dialing-rules-exchange-2013-help.md">Autorisation des appels utilisant des règles de numérotation</a></p>
-<p><a href="authorize-calls-for-users-in-a-dial-plan-exchange-2013-help.md">Autoriser les appels destinés aux utilisateurs dans un plan de numérotation</a></p>
-<p><a href="authorize-calls-for-a-group-of-users-exchange-2013-help.md">Autoriser les appels pour un groupe d'utilisateurs</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-using-dialing-rules">Autorisation des appels utilisant des règles de numérotation</a></p>
+<p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-users-in-a-dial-plan">Autoriser les appels destinés aux utilisateurs dans un plan de numérotation</a></p>
+<p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-a-group-of-users">Autoriser les appels pour un groupe d'utilisateurs</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -122,7 +122,7 @@ Pour obtenir un guide détaillé sur le déploiement de la messagerie unifiée e
 <tr class="even">
 <td><p></p></td>
 <td><p>Installer et configurer tous les standards automatiques de messagerie unifiée.</p></td>
-<td><p><a href="set-up-a-um-auto-attendant-exchange-2013-help.md">Configurer un standard automatique de messagerie unifiée</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-up-um-auto-attendant">Configurer un standard automatique de messagerie unifiée</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong> </strong></p></td>
@@ -141,12 +141,12 @@ Pour obtenir un guide détaillé sur le déploiement de la messagerie unifiée e
 <td><p><strong> </strong></p></td>
 <td><p>Créer une stratégie de boîte aux lettres de messagerie unifiée ou configurer la stratégie de boîte aux lettres de messagerie unifiée par défaut.</p></td>
 <td><p><a href="create-a-um-mailbox-policy-exchange-2013-help.md">Créer une stratégie de boîte aux lettres de messagerie unifiée</a></p>
-<p><a href="manage-a-um-mailbox-policy-exchange-2013-help.md">Gérer une stratégie de boîte aux lettres de messagerie unifiée</a></p></td>
+<p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy">Gérer une stratégie de boîte aux lettres de messagerie unifiée</a></p></td>
 </tr>
 <tr class="even">
 <td><p> </p></td>
 <td><p>Activer la messagerie unifiée pour les utilisateurs avec un numéro d'extension et un numéro E.164 si nécessaire.</p></td>
-<td><p><a href="enable-a-user-for-voice-mail-exchange-2013-help.md">Activation de la messagerie vocale pour un utilisateur</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail">Activation de la messagerie vocale pour un utilisateur</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
