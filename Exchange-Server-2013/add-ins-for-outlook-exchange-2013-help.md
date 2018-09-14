@@ -43,9 +43,9 @@ Par défaut, tous les utilisateurs peuvent installer et supprimer des complémen
 
 Pour empêcher les utilisateurs d’installer un complément qui n’est pas issu d’Office Store, supprimez-leur le rôle **My Custom Apps**. Pour empêcher les utilisateurs d’installer des compléments depuis Office Store, supprimez-leur le rôle **My Marketplace Apps**. Pour plus d’informations, consultez la rubrique [Désigner les administrateurs et utilisateurs qui peuvent installer et gérer des compléments pour Outlook](specify-the-administrators-and-users-who-can-install-and-manage-add-ins-for-outlook-exchange-2013-help.md).
 
-Pour installer des compléments pour une partie ou l’ensemble des utilisateurs de votre organisation, consultez la rubrique [Installation ou suppression d’applications pour votre organisation](install-or-remove-add-ins-for-outlook-for-your-organization-exchange-2013-help.md).
+Pour installer des compléments pour une partie ou l’ensemble des utilisateurs de votre organisation, consultez la rubrique [Installation ou suppression d’applications pour votre organisation](https://docs.microsoft.com/fr-fr/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/install-or-remove-outlook-add-ins).
 
-Le cas échéant, vous pouvez restreindre la mise à disposition d’un complément à certains utilisateurs de votre organisation. Pour plus d’informations, consultez la rubrique [Gestion de l’accès des utilisateurs aux applications pour Outlook](manage-user-access-to-add-ins-for-outlook-exchange-online-help.md).
+Le cas échéant, vous pouvez restreindre la mise à disposition d’un complément à certains utilisateurs de votre organisation. Pour plus d’informations, consultez la rubrique [Gestion de l’accès des utilisateurs aux applications pour Outlook](https://docs.microsoft.com/fr-fr/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/manage-user-access-to-add-ins).
 
 ## Tâches administratives courantes avec les compléments pour Outlook
 

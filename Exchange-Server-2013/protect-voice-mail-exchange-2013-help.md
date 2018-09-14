@@ -239,7 +239,7 @@ Retour au début
 
 ## Stratégies de boîte aux lettres de messagerie unifiée
 
-Vous pouvez créer une stratégie de boîte aux lettres de messagerie unifiée pour appliquer un jeu commun de paramètres de stratégie de messagerie unifiée, par exemple, des paramètres de stratégie de code confidentiel, des restrictions d'appel et des paramètres de messagerie vocale protégée, à une série de boîtes aux lettres à extension messagerie unifiée. Pour plus d'informations sur les stratégies de boîte aux lettres de messagerie unifiée, consultez la rubrique [Gérer une stratégie de boîte aux lettres de messagerie unifiée](manage-a-um-mailbox-policy-exchange-2013-help.md).
+Vous pouvez créer une stratégie de boîte aux lettres de messagerie unifiée pour appliquer un jeu commun de paramètres de stratégie de messagerie unifiée, par exemple, des paramètres de stratégie de code confidentiel, des restrictions d'appel et des paramètres de messagerie vocale protégée, à une série de boîtes aux lettres à extension messagerie unifiée. Pour plus d'informations sur les stratégies de boîte aux lettres de messagerie unifiée, consultez la rubrique [Gérer une stratégie de boîte aux lettres de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy).
 
 Vous pouvez configurer les options de la messagerie vocale protégée via le Centre d'administration Exchange (CAE) ou la cmdlet **Set-UMMailboxPolicy** dans l'environnement de ligne de commande Exchange Management Shell. Le tableau suivant recense les paramètres permettant de configurer la fonction Messagerie vocale protégée.
 
@@ -289,7 +289,7 @@ Vous pouvez configurer les options de la messagerie vocale protégée via le Cen
 </table>
 
 
-Pour plus d'informations sur la gestion des paramètres de messagerie vocale protégée, consultez la rubrique [Procédures de la messagerie vocale protégées](protected-voice-mail-procedures-exchange-2013-help.md) ou [Set-UMMailboxPolicy](https://technet.microsoft.com/fr-fr/library/bb124903\(v=exchg.150\)).
+Pour plus d'informations sur la gestion des paramètres de messagerie vocale protégée, consultez la rubrique [Procédures de la messagerie vocale protégées](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/protected-voice-mail-procedures) ou [Set-UMMailboxPolicy](https://technet.microsoft.com/fr-fr/library/bb124903\(v=exchg.150\)).
 
 Retour au début
 

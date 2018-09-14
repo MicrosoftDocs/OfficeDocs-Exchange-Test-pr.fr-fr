@@ -23,7 +23,7 @@ Si un utilisateur signale des problèmes de qualité audio au niveau de ses appe
 > La qualité audio d'un appel peut être affectée par des facteurs qui ne sont pas couverts dans les rapports. Par exemple, si vos serveurs Exchange rencontrent une charge élevée de mémoire ou d'unité centrale, les utilisateurs peuvent signaler une qualité d'appel médiocre même si les rapports indiquent une qualité audio excellente.
 
 
-Pour d'autres tâches relatives aux rapports de messagerie unifiée, consultez la rubrique [Procédures de rapports de messagerie unifiée](um-reports-procedures-exchange-2013-help.md)
+Pour d'autres tâches relatives aux rapports de messagerie unifiée, consultez la rubrique [Procédures de rapports de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/um-reports-procedures)
 
 ## Ce qu'il faut savoir avant de commencer
 

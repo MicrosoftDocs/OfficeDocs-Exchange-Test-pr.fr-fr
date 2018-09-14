@@ -29,7 +29,7 @@ _**Dernière rubrique modifiée :** 2013-11-01_
 
 [Activer ou désactiver le déchiffrement du transport](enable-or-disable-transport-decryption-exchange-2013-help.md)
 
-[Configurer IRM pour la recherche et la découverte locale dans Exchange](configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md)
+[Configurer IRM pour la recherche et la découverte locale dans Exchange](configure-irm-for-exchange-search-and-https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
 [Activer ou désactiver le cryptage de rapport de journal](enable-or-disable-journal-report-decryption-exchange-2013-help.md)
 

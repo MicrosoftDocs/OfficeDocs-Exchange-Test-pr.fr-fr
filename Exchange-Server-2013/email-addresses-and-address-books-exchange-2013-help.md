@@ -64,11 +64,11 @@ Le tableau suivant renvoie à des rubriques qui vous aident à comprendre et à 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="address-lists-exchange-2013-help.md">Listes d’adresses</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/address-books/address-lists/address-lists">Listes d’adresses</a></p></td>
 <td><p>Apprenez à utiliser les listes d'adresses et les listes d'adresses globales pour organiser vos listes de destinataires afin d'en faciliter l'accès.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="address-book-policies-exchange-2013-help.md">Stratégies de carnet d’adresses</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/address-books/address-book-policies/address-book-policies">Stratégies de carnet d’adresses</a></p></td>
 <td><p>Apprenez à séparer vos listes d'adresses de vos listes d'adresses globales en organisations virtuelles distinctes.</p></td>
 </tr>
 <tr class="odd">
@@ -80,7 +80,7 @@ Le tableau suivant renvoie à des rubriques qui vous aident à comprendre et à 
 <td><p>Découvrez les adresses de messagerie de proxy qui permettent de faciliter la localisation des destinataires.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="hierarchical-address-books-exchange-2013-help.md">Carnets d’adresses hiérarchiques</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/address-books/hierarchical-address-books/hierarchical-address-books">Carnets d’adresses hiérarchiques</a></p></td>
 <td><p>Apprenez-en plus sur la personnalisation des listes d’adresses globales et des listes d’adresses qui vous permet de vous conformer à la structure unique de votre organisation.</p></td>
 </tr>
 <tr class="even">

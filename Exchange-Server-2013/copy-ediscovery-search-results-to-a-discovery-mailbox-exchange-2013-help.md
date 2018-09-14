@@ -27,7 +27,7 @@ Une fois la recherche de découverte électronique inaltérable créée, vous po
 
   - Pour pouvoir copier les résultats de la recherche, vous devez créer une recherche de découverte électronique à l’aide du CAE ou de l’interpréteur de commandes. Pour plus d’informations, voir [Créer une recherche de découverte électronique inaltérable](create-an-in-place-ediscovery-search-exchange-2013-help.md).
 
-  - Le programme d’installation d’Exchange 2013 crée une boîte aux lettres de découverte appelée **Boîte aux lettres de découverte** pour copier les résultats de la recherche. La boîte aux lettres de découverte est également créée par défaut dans Exchange Online. Vous pouvez créer des boîtes aux lettres de découverte supplémentaires. Pour plus d’informations, voir [Créer une boîte aux lettres de découverte](create-a-discovery-mailbox-exchange-2013-help.md).
+  - Le programme d’installation d’Exchange 2013 crée une boîte aux lettres de découverte appelée **Boîte aux lettres de découverte** pour copier les résultats de la recherche. La boîte aux lettres de découverte est également créée par défaut dans Exchange Online. Vous pouvez créer des boîtes aux lettres de découverte supplémentaires. Pour plus d’informations, voir [Créer une boîte aux lettres de découverte](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox).
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 

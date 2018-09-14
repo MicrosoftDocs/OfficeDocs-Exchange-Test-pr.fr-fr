@@ -49,7 +49,7 @@ Pour découvrir d'autres tâches de gestion associées aux dossiers publics dans
 
 La boîte aux lettres de dossiers publics principale constitue la première boîte aux lettres de dossiers publics que vous créez pour votre organisation. Elle contient une copie accessible en écriture de la hiérarchie de dossiers publics. Les boîtes aux lettres de dossiers publics suivantes seront les boîtes secondaires, qui contiendront une copie en lecture seule de la hiérarchie et du contenu.
 
-Pour obtenir la procédure détaillée, consultez la rubrique [Création d’une boîte aux lettres de dossiers publics](create-a-public-folder-mailbox-exchange-2013-help.md).
+Pour obtenir la procédure détaillée, consultez la rubrique [Création d’une boîte aux lettres de dossiers publics](https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/create-public-folder-mailbox).
 
 ## Étape 2 : Créer votre premier dossier public
 

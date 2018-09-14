@@ -19,7 +19,7 @@ _**Dernière rubrique modifiée :** 2018-03-26_
 
 **Résumé** : Comment déplacer vos dossiers publics Exchange 2013 vers Groupes Office 365.
 
-Grâce à un processus appelé *migration par lots*, vous pouvez déplacer une partie ou la totalité de vos dossiers publics Exchange 2013 vers Groupes Office 365. La fonction Groupes est une nouvelle collaboration proposée par Microsoft, qui offre certains avantages par rapport aux dossiers publics. Consultez l’article [Migration de vos dossiers publics vers Groupes Office 365](migrate-your-public-folders-to-office-365-groups-exchange-2013-help.md) pour obtenir un aperçu des différences entre les dossiers publics et les groupes, et les raisons pour lesquelles passer aux groupes peut être utile ou non à votre organisation.
+Grâce à un processus appelé *migration par lots*, vous pouvez déplacer une partie ou la totalité de vos dossiers publics Exchange 2013 vers Groupes Office 365. La fonction Groupes est une nouvelle collaboration proposée par Microsoft, qui offre certains avantages par rapport aux dossiers publics. Consultez l’article [Migration de vos dossiers publics vers Groupes Office 365](https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-office-365-groups) pour obtenir un aperçu des différences entre les dossiers publics et les groupes, et les raisons pour lesquelles passer aux groupes peut être utile ou non à votre organisation.
 
 Cet article contient les procédures étape par étape pour effectuer la migration par lots effective de vos dossiers publics Exchange 2013.
 

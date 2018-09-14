@@ -21,7 +21,7 @@ Vous pouvez activer votre standard automatique de messagerie unifiée pour la re
 
 Même si ce n'est pas obligatoire, nous vous recommandons de configurer un standard automatique de secours DTMF (numérotation en fréquences vocales) pour chaque standard automatique à reconnaissance vocale, de façon à ce que les appelants puissent utiliser des entrées à tonalité si le standard automatique à reconnaissance vocale ne reconnaît ou ne comprend pas les mots qu'ils prononcent. Si un standard automatique de secours DTMF est configuré, l'appelant peut utiliser des entrées DTMF, également appelées entrées à tonalité, pour naviguer dans le système de menus du standard automatique, épeler un nom d'utilisateur ou utiliser un message d'assistance vocale de menu personnalisé. Il est déconseillé d'activer la reconnaissance vocale pour un standard automatique de secours DTMF.
 
-Pour découvrir d'autres tâches de gestion relatives aux standards automatiques de messagerie unifiée, consultez la rubrique [Procédures relatives au standard automatique de messagerie unifiée](um-auto-attendant-procedures-exchange-2013-help.md).
+Pour découvrir d'autres tâches de gestion relatives aux standards automatiques de messagerie unifiée, consultez la rubrique [Procédures relatives au standard automatique de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures).
 
 ## Ce qu'il faut savoir avant de commencer
 
@@ -29,7 +29,7 @@ Pour découvrir d'autres tâches de gestion relatives aux standards automatiques
 
   - Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez Entrée « Standards automatiques de messagerie unifiée » dans la rubrique [Autorisations de messagerie unifiée](unified-messaging-permissions-exchange-2013-help.md).
 
-  - Avant d'exécuter ces procédures, vérifiez qu'un plan de numérotation de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](create-a-um-dial-plan-exchange-2013-help.md).
+  - Avant d'exécuter ces procédures, vérifiez qu'un plan de numérotation de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
 
   - Avant d'exécuter ces procédures, vérifiez qu'un standard automatique de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un standard automatique de messagerie unifiée](create-a-um-auto-attendant-exchange-2013-help.md).
 

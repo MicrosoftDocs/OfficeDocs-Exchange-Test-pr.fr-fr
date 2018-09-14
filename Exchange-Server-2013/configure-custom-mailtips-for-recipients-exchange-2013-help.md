@@ -27,7 +27,7 @@ Les *Infos-courrier* sont des messages informatifs à l'intention des utilisateu
 
   - Ouvrir un message présent dans le dossier Brouillons, déjà adressé à des destinataires
 
-Outre les Infos-courrier intégrées disponibles, vous pouvez en créer des personnalisées pour tous types de destinataires. Pour plus d'informations sur les Infos-courrier intégrés, consultez la rubrique [MailTips](mailtips-exchange-2013-help.md).
+Outre les Infos-courrier intégrées disponibles, vous pouvez en créer des personnalisées pour tous types de destinataires. Pour plus d'informations sur les Infos-courrier intégrés, consultez la rubrique [MailTips](https://docs.microsoft.com/fr-fr/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips).
 
 ## Ce qu'il faut savoir avant de commencer
 

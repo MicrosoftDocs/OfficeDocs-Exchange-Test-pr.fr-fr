@@ -261,7 +261,7 @@ Voici les définitions des termes que vous avez rencontrés au cours de cette pr
 
   - [Application des règles DLP pour évaluer les messages](how-dlp-rules-are-applied-to-evaluate-messages-exchange-2013-help.md)
 
-  - [Création d'une stratégie personnalisée de protection contre la perte de données (DLP)](create-a-custom-dlp-policy-exchange-2013-help.md)
+  - [Création d'une stratégie personnalisée de protection contre la perte de données (DLP)](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy)
 
   - [Éléments recherchés par les types d’informations sensibles dans Exchange](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md)
 

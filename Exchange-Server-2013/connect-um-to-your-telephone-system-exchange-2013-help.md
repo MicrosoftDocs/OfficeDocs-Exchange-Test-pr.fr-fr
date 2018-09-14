@@ -27,7 +27,7 @@ Les informations suivantes vont vous permettre d’installer et de déployer une
 
   - [Connexion d’une passerelle VoIP, d’un IP PBX ou d’un contrôleur SBC à la messagerie unifiée](connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md)   Pour en savoir plus la connexion des passerelles VoIP ou PBX IP à la messagerie unifiée.
 
-  - [Gestionnaire de téléphonie pour Exchange 2013](telephony-advisor-for-exchange-2013-exchange-2013-help.md)   Pour en savoir plus sur les passerelles VoIP, PBX IP et PBX pris en charge.
+  - [Gestionnaire de téléphonie pour Exchange 2013](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)   Pour en savoir plus sur les passerelles VoIP, PBX IP et PBX pris en charge.
 
   - [Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)   Pour en savoir plus sur la configuration de vos passerelles VoIP, PBX IP et PBX.
 

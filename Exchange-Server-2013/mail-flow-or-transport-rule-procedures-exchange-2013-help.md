@@ -23,11 +23,11 @@ Vous pouvez commencer à utiliser les règles de transport à l’aide des proc�
 
 [Création de listes d’expéditeurs bloqués et autorisés à l’échelle de l’organisation dans Office 365](https://technet.microsoft.com/fr-fr/library/dn198251\(v=exchg.150\))   Informations pour vous aider à créer des listes d’expéditeurs autorisés et d’expéditeurs bloqués basées sur des domaines ou des utilisateurs à l’aide de règles de transport.
 
-[Utiliser des règles de flux de messagerie pour acheminer le courrier électronique en fonction d’une liste de mots, d’expressions ou de modèles](use-mail-flow-rules-to-route-email-based-on-a-list-of-words-phrases-or-patterns-exchange-2013-help.md) Informations pour vous aider à respecter les stratégies de messagerie de votre organisation.
+[Utiliser des règles de flux de messagerie pour acheminer le courrier électronique en fonction d’une liste de mots, d’expressions ou de modèles](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email) Informations pour vous aider à respecter les stratégies de messagerie de votre organisation.
 
 [Inscrire les IFilters Filter Pack avec Exchange 2013](register-filter-pack-ifilters-with-exchange-2013-exchange-2013-help.md)   Informations pour vous aider à inscrire des types de fichier supplémentaires pour les pièces jointes afin que les règles de transport applicables aux pièces jointes puissent analyser ces types de fichier.
 
-[Gestion de règles de flux de messagerie](manage-mail-flow-rules-exchange-2013-help.md)   Informations pour vous aider à créer, afficher, modifier, activer, désactiver ou supprimer une règle de transport, et informations sur l’importation et l’exportation de collections de règles de transport.
+[Gestion de règles de flux de messagerie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)   Informations pour vous aider à créer, afficher, modifier, activer, désactiver ou supprimer une règle de transport, et informations sur l’importation et l’exportation de collections de règles de transport.
 
-[Meilleures pratiques pour la configuration de règles de flux de messagerie](best-practices-for-configuring-mail-flow-rules-exchange-2013-help.md)   Informations pour vous aider à éviter les erreurs courantes de configuration.
+[Meilleures pratiques pour la configuration de règles de flux de messagerie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)   Informations pour vous aider à éviter les erreurs courantes de configuration.
 

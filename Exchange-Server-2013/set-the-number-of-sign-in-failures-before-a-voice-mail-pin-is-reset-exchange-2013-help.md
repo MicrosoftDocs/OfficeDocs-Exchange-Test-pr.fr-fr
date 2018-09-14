@@ -23,7 +23,7 @@ Vous pouvez configurer le nombre d'échecs de connexion autorisés avant la réi
 > Vous pouvez optimiser la sécurité en configurant le paramètre <strong>Nombre d'échecs de connexion avant réinitialisation du code confidentiel</strong> sur un nombre inférieur à 5. La sécurité est diminuée si le nombre est supérieur à 5.
 
 
-Pour les tâches supplémentaires concernant la sécurité du code confidentiel Outlook Voice Access, consultez la rubrique [Procédures de sécurité de code confidentiel](pin-security-procedures-exchange-2013-help.md).
+Pour les tâches supplémentaires concernant la sécurité du code confidentiel Outlook Voice Access, consultez la rubrique [Procédures de sécurité de code confidentiel](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/pin-security-procedures).
 
 ## Ce qu'il faut savoir avant de commencer
 
@@ -31,7 +31,7 @@ Pour les tâches supplémentaires concernant la sécurité du code confidentiel 
 
   - Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Stratégies de boîte aux lettres de messagerie unifiée » dans la rubrique [Autorisations de messagerie unifiée](unified-messaging-permissions-exchange-2013-help.md).
 
-  - Avant d'exécuter ces procédures, vérifiez qu'un plan de numérotation de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](create-a-um-dial-plan-exchange-2013-help.md).
+  - Avant d'exécuter ces procédures, vérifiez qu'un plan de numérotation de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
 
   - Avant d'effectuer ces procédures, vérifiez qu'une stratégie de boîte aux lettres de messagerie unifiée a été créée. Pour obtenir la procédure détaillée, consultez la rubrique [Créer une stratégie de boîte aux lettres de messagerie unifiée](create-a-um-mailbox-policy-exchange-2013-help.md).
 

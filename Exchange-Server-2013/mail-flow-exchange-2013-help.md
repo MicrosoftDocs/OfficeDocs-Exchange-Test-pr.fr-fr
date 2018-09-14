@@ -171,7 +171,7 @@ Le tableau suivant contient des liens vers des rubriques qui vous aideront à d�
 <td><p>Les journaux de transport enregistrent le parcours des messages lorsqu'ils sont acheminés via le pipeline de transport.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="manage-message-approval-exchange-2013-help.md">Gérer l’approbation des messages</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">Gérer l’approbation des messages</a></p></td>
 <td><p>Le transport modéré nécessite l'approbation de messages envoyés à des destinataires spécifiques.</p></td>
 </tr>
 <tr class="even">

@@ -19,7 +19,7 @@ _**Dernière rubrique modifiée :** 2015-03-09_
 
 Les compteurs de performances de cette rubrique contrôlent l'Assistant Dossier géré quand il implémente la gestion des enregistrements de messagerie (MRM) pour Microsoft Exchange Server 2010. Étant donné que l'exécution de l'Assistant Dossier géré est un processus consommant une quantité importante de ressources, vous devez l'exécuter uniquement lorsque votre serveur peut tolérer la charge supplémentaire. Nous vous recommandons également de contrôler les performances lors de l'exécution de l'Assistant Dossier géré. En plus des compteurs de performances répertoriés dans cette rubrique, vous pouvez également demander à contrôler les compteurs de performances supplémentaires qui analysent des éléments tels que les performances de disque et l'utilisation de l'UC.
 
-Pour plus d'informations sur la surveillance d'ordinateurs exécutant la fonctionnalité de gestion des enregistrements de messagerie, consultez la rubrique [Gestion des enregistrements de messagerie de la surveillance](monitoring-messaging-records-management-exchange-2013-help.md).
+Pour plus d'informations sur la surveillance d'ordinateurs exécutant la fonctionnalité de gestion des enregistrements de messagerie, consultez la rubrique [Gestion des enregistrements de messagerie de la surveillance](monitoring-https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/messaging-records-management).
 
 ## Compteurs de performance pour la gestion des enregistrements de messagerie
 

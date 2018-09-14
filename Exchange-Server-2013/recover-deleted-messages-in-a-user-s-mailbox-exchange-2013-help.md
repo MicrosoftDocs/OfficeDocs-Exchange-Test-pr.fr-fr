@@ -31,13 +31,13 @@ Les administrateurs peuvent rechercher et récupérer des messages électronique
 
   - Les procédures décrites dans cette rubrique requièrent des autorisations spécifiques. Consultez chaque procédure pour savoir quelles autorisations sont nécessaires.
 
-  - La récupération d’élément unique doit être activée pour une boîte aux lettres avant la suppression de l’élément que vous souhaitez récupérer. Dans Exchange Online, la récupération d’élément unique est activée par défaut lors de la création d’une boîte aux lettres. Dans Exchange 2013, la récupération d’élément unique est désactivée lors de la création d’une boîte aux lettres. Pour plus d'informations, consultez la rubrique [Activation de la récupération d’élément unique pour une boîte aux lettres](enable-or-disable-single-item-recovery-for-a-mailbox-exchange-2013-help.md).
+  - La récupération d’élément unique doit être activée pour une boîte aux lettres avant la suppression de l’élément que vous souhaitez récupérer. Dans Exchange Online, la récupération d’élément unique est activée par défaut lors de la création d’une boîte aux lettres. Dans Exchange 2013, la récupération d’élément unique est désactivée lors de la création d’une boîte aux lettres. Pour plus d'informations, consultez la rubrique [Activation de la récupération d’élément unique pour une boîte aux lettres](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery).
 
   - Pour rechercher et récupérer des éléments, vous devez disposer des informations suivantes :
     
       - **Boîte aux lettres source**   Il s’agit de la boîte aux lettres qui fait l’objet de la recherche.
     
-      - **Boîte aux lettres cible**   Il s’agit de la boîte aux lettres de découverte qui contiendra les messages récupérés. Le programme d’installation d’Exchange crée une boîte aux lettres de découverte par défaut. Dans Exchange Online, une boîte aux lettres de découverte est également créée par défaut. Si nécessaire, vous pouvez en créer d’autres. Pour plus d’informations, voir [Créer une boîte aux lettres de découverte](create-a-discovery-mailbox-exchange-2013-help.md).
+      - **Boîte aux lettres cible**   Il s’agit de la boîte aux lettres de découverte qui contiendra les messages récupérés. Le programme d’installation d’Exchange crée une boîte aux lettres de découverte par défaut. Dans Exchange Online, une boîte aux lettres de découverte est également créée par défaut. Si nécessaire, vous pouvez en créer d’autres. Pour plus d’informations, voir [Créer une boîte aux lettres de découverte](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox).
         
         > [!NOTE]
         > Avec la cmdlet <strong>Search-Mailbox</strong>, il est aussi possible de spécifier une boîte aux lettres cible qui n’est pas une boîte de découverte. Il est en revanche impossible que la même boîte aux lettres soit à la fois source et cible.
@@ -181,7 +181,7 @@ Pour vérifier que les messages ont été correctement exportés dans un fichier
     
       - [Récupérer des éléments ou des messages supprimés dans Outlook Web App](https://go.microsoft.com/fwlink/p/?linkid=524924)
 
-  - Cette rubrique explique comment utiliser la cmdlet **Search-Mailbox** pour rechercher et récupérer des éléments manquants. Cette cmdlet ne permet d’explorer qu’une boîte aux lettres à la fois. Si vous souhaitez effectuer une recherche dans plusieurs boîtes aux lettres simultanément, vous pouvez utiliser [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md) dans le Centre d’administration Exchange (CAE) ou la cmdlet [New-MailboxSearch](https://technet.microsoft.com/fr-fr/library/dd298064\(v=exchg.150\)) dans Windows PowerShell.
+  - Cette rubrique explique comment utiliser la cmdlet **Search-Mailbox** pour rechercher et récupérer des éléments manquants. Cette cmdlet ne permet d’explorer qu’une boîte aux lettres à la fois. Si vous souhaitez effectuer une recherche dans plusieurs boîtes aux lettres simultanément, vous pouvez utiliser [Découverte électronique locale](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) dans le Centre d’administration Exchange (CAE) ou la cmdlet [New-MailboxSearch](https://technet.microsoft.com/fr-fr/library/dd298064\(v=exchg.150\)) dans Windows PowerShell.
 
   - Outre l’utilisation de cette procédure pour rechercher et récupérer des éléments supprimés, vous pouvez également utiliser une procédure similaire pour rechercher des éléments dans des boîtes aux lettres d’utilisateur, puis supprimer ces éléments de la boîte aux lettres source. Pour plus d’informations, consultez la rubrique [Recherche et suppression de messages - Aide de l’administrateur](search-for-and-delete-messages-admin-help-exchange-2013-help.md).
 

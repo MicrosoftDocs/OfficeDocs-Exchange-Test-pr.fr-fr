@@ -19,9 +19,9 @@ _**Dernière rubrique modifiée :** 2009-12-09_
 
 Vous pouvez utiliser Windows la fiabilité et l'Analyseur de performances (Perfmon.exe) pour sélectionner et visualiser les compteurs de performances pour la messagerie (MRM) la gestion des enregistrements. À l'aide de compteurs de performances, vous pouvez surveiller l'Assistant dossier géré pendant son exécution des processus MRM beaucoup de ressources.
 
-Pour obtenir une liste des compteurs de performances pour la gestion des enregistrements de messagerie, consultez la rubrique [Compteurs de performance pour la gestion des enregistrements de messagerie](performance-counters-for-messaging-records-management-exchange-2013-help.md).
+Pour obtenir une liste des compteurs de performances pour la gestion des enregistrements de messagerie, consultez la rubrique [Compteurs de performance pour la gestion des enregistrements de messagerie](performance-counters-for-https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/messaging-records-management).
 
-Recherchez les autres tâches liées à la surveillance MRM ? Consultez la rubrique [Gestion des enregistrements de messagerie de la surveillance](monitoring-messaging-records-management-exchange-2013-help.md).
+Recherchez les autres tâches liées à la surveillance MRM ? Consultez la rubrique [Gestion des enregistrements de messagerie de la surveillance](monitoring-https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/messaging-records-management).
 
 ## Utilisation de l'Analyseur de fiabilité et de performances pour afficher les compteurs de performances pour la gestion des enregistrements de messagerie (MRM)
 

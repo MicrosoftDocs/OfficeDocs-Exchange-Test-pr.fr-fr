@@ -255,19 +255,19 @@ Le tableau suivant contient des liens vers des rubriques qui vous aideront à d�
 <td><p>Découvrez les modules linguistiques de messagerie unifiée et les paramètres de langue.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="telephone-system-integration-with-um-exchange-2013-help.md">Intégration des systèmes téléphoniques à la messagerie unifiée</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um">Intégration des systèmes téléphoniques à la messagerie unifiée</a></p></td>
 <td><p>Obtenez plus d'informations sur l'intégration de votre réseau de téléphonie à la messagerie unifiée.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="connect-your-voice-mail-system-to-your-telephone-network-exchange-2013-help.md">Connexion de votre système de messagerie vocale à votre réseau téléphonique</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system">Connexion de votre système de messagerie vocale à votre réseau téléphonique</a></p></td>
 <td><p>Apprenez à utiliser et à configurer les composants de messagerie unifiée pour connecter votre réseau de téléphonie à la messagerie unifiée Exchange.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="automatically-answer-and-route-incoming-calls-exchange-2013-help.md">Réponse et routage automatique d'appels entrants</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls">Réponse et routage automatique d'appels entrants</a></p></td>
 <td><p>Apprenez à créer des standards automatiques de messagerie unifiée et à gérer les paramètres des menus de navigation et des messages d'accueil pendant les heures d'ouverture ou en dehors de ces heures.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="set-up-voice-mail-for-users-exchange-2013-help.md">Configurer la messagerie vocale pour les utilisateurs</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/set-up-voice-mail">Configurer la messagerie vocale pour les utilisateurs</a></p></td>
 <td><p>Apprenez à créer et gérer des stratégies de boîte aux lettres de messagerie unifiée et à activer la messagerie unifiée pour des utilisateurs.</p></td>
 </tr>
 <tr class="odd">
@@ -275,7 +275,7 @@ Le tableau suivant contient des liens vers des rubriques qui vous aideront à d�
 <td><p>Apprenez à définir des fonctionnalités client pour autoriser les utilisateurs à accéder et à gérer leurs messages vocaux.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="set-outlook-voice-access-pin-security-exchange-2013-help.md">Définition de la sécurité des codes confidentiels d'Outlook Voice Access</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-outlook-voice-access-pin-security">Définition de la sécurité des codes confidentiels d'Outlook Voice Access</a></p></td>
 <td><p>Apprenez à définir des codes confidentiels pour les utilisateurs Outlook Voice Access.</p></td>
 </tr>
 <tr class="odd">
@@ -283,7 +283,7 @@ Le tableau suivant contient des liens vers des rubriques qui vous aideront à d�
 <td><p>Apprenez à utiliser la messagerie unifiée pour protéger les messages vocaux.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="run-reports-for-voice-mail-calls-exchange-2013-help.md">Pour exécuter des rapports pour les appels de messagerie vocale</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/run-voice-mail-call-reports">Pour exécuter des rapports pour les appels de messagerie vocale</a></p></td>
 <td><p>Découvrez les rapports d'appels de la messagerie unifiée.</p></td>
 </tr>
 </tbody>

@@ -19,7 +19,7 @@ _**Dernière rubrique modifiée :** 2012-12-09_
 
 Vous pouvez indiquer le groupe d'utilisateurs que les appelants peuvent contacter sur un standard automatique de messagerie unifiée. Par défaut, les appelants peuvent contacter les utilisateurs appartenant au même plan de numérotation associé au standard automatique de messagerie unifiée. Toutefois, vous pouvez modifier le regroupement d'utilisateurs afin de permettre aux appelants de transférer des appels ou d'envoyer des messages vocaux à des utilisateurs présents dans le carnet d'adresses d'une organisation ou à un ensemble spécifique d'utilisateurs.
 
-Pour les autres tâches de gestion relatives aux standards automatiques de messagerie unifiée, consultez la rubrique [Gérer un standard automatique de messagerie unifiée](manage-a-um-auto-attendant-exchange-2013-help.md).
+Pour les autres tâches de gestion relatives aux standards automatiques de messagerie unifiée, consultez la rubrique [Gérer un standard automatique de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/manage-um-auto-attendant).
 
 ## Ce qu'il faut savoir avant de commencer
 
@@ -27,7 +27,7 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
 
   - Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Standards automatiques de messagerie unifiée » dans la rubrique [Autorisations de messagerie unifiée](unified-messaging-permissions-exchange-2013-help.md).
 
-  - Avant d'exécuter ces procédures, vérifiez qu'un plan de numérotation de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](create-a-um-dial-plan-exchange-2013-help.md).
+  - Avant d'exécuter ces procédures, vérifiez qu'un plan de numérotation de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
 
   - Avant d'exécuter ces procédures, vérifiez qu'un standard automatique de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un standard automatique de messagerie unifiée](create-a-um-auto-attendant-exchange-2013-help.md).
 

@@ -23,7 +23,7 @@ Vous pouvez activer ou désactiver l’accès POP3 pour un utilisateur.
 > Après avoir activé ou désactivé l’accès POP3 pour un utilisateur, vous devez redémarrer le service Microsoft Exchange POP3 et le service de serveur principal Microsoft Exchange POP3. Pour plus d’informations sur le redémarrage du service POP3, consultez la rubrique <a href="start-and-stop-the-pop3-services-exchange-2013-help.md">Démarrage et arrêt des services POP3</a>.
 
 
-Pour plus d’informations sur la gestion des boîtes aux lettres utilisateur, reportez-vous à la rubrique [Gestion des boîtes aux lettres utilisateur](manage-user-mailboxes-exchange-2013-help.md).
+Pour plus d’informations sur la gestion des boîtes aux lettres utilisateur, reportez-vous à la rubrique [Gestion des boîtes aux lettres utilisateur](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
 
 Pour plus d’informations sur POP3 et IMAP4, voir [POP3 et IMAP4 dans Exchange Server 2013](pop3-and-imap4-in-exchange-server-2013-exchange-2013-help.md).
 

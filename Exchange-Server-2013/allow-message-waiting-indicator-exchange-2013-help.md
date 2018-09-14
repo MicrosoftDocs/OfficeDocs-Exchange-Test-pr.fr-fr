@@ -216,17 +216,17 @@ Vous pouvez utiliser le CAE ou la cmdlet **Set-UMMailboxPolicy** dans l'environn
 
 Pour plus d'informations sur la gestion des paramètres de l'indicateur de message en attente sur une stratégie de boîte aux lettres de messagerie vocale, consultez les rubriques suivantes :
 
-  - [Gérer une stratégie de boîte aux lettres de messagerie unifiée](manage-a-um-mailbox-policy-exchange-2013-help.md)
+  - [Gérer une stratégie de boîte aux lettres de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)
 
-  - [Activer le Message en attente indicateur (MWI) pour les utilisateurs](enable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md)
+  - [Activer le Message en attente indicateur (MWI) pour les utilisateurs](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-mwi-for-users)
 
-  - [Désactiver les messages en attente indicateur (MWI) pour les utilisateurs](disable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md)
+  - [Désactiver les messages en attente indicateur (MWI) pour les utilisateurs](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-mwi-for-users)
 
   - [Set-UMMailboxPolicy](https://technet.microsoft.com/fr-fr/library/bb124903\(v=exchg.150\))
 
 ## Passerelles IP de messagerie unifiée et indicateur de message en attente
 
-Si vous désactivez l'indicateur de message en attente sur une passerelle IP de messagerie unifiée, les notifications sont désactivées pour tous les utilisateurs qui se connectent à la passerelle VoIP ou PBX IP qu'elle représente. La désactivation de l’indicateur de message en attente sur une seule passerelle IP de messagerie unifiée liée à un plan de numérotation de messagerie unifiée peut désactiver les notifications de l’indicateur de message en attente pour tous les utilisateurs à extension messagerie unifiée associés à un ou plusieurs plans de numérotation de messagerie unifiée, ou à une ou plusieurs stratégies de boîte aux lettres de messagerie unifiée. Pour en savoir plus sur les stratégies de boîtes aux lettres de messagerie unifiée, notamment l'activation et la désactivation de l'indicateur de message en attente pour un groupe d'utilisateurs à extension messagerie unifiée, consultez la rubrique [Gérer une stratégie de boîte aux lettres de messagerie unifiée](manage-a-um-mailbox-policy-exchange-2013-help.md).
+Si vous désactivez l'indicateur de message en attente sur une passerelle IP de messagerie unifiée, les notifications sont désactivées pour tous les utilisateurs qui se connectent à la passerelle VoIP ou PBX IP qu'elle représente. La désactivation de l’indicateur de message en attente sur une seule passerelle IP de messagerie unifiée liée à un plan de numérotation de messagerie unifiée peut désactiver les notifications de l’indicateur de message en attente pour tous les utilisateurs à extension messagerie unifiée associés à un ou plusieurs plans de numérotation de messagerie unifiée, ou à une ou plusieurs stratégies de boîte aux lettres de messagerie unifiée. Pour en savoir plus sur les stratégies de boîtes aux lettres de messagerie unifiée, notamment l'activation et la désactivation de l'indicateur de message en attente pour un groupe d'utilisateurs à extension messagerie unifiée, consultez la rubrique [Gérer une stratégie de boîte aux lettres de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy).
 
 Vous pouvez utiliser le CAE ou la cmdlet **Set-UMMailboxPolicy** dans l'environnement de ligne de commande Exchange Management Shell pour configurer le paramètre de l'indicateur de message en attente, comme illustré dans le tableau suivant.
 
@@ -262,7 +262,7 @@ Pour plus d'informations sur la gestion des paramètres de l'indicateur de messa
 
   - [Autoriser les messages en attente indicateur (MWI) sur une passerelle IP de messagerie unifiée](allow-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md)
 
-  - [Empêcher le Message en attente indicateur (MWI) sur une passerelle IP de messagerie unifiée](prevent-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md)
+  - [Empêcher le Message en attente indicateur (MWI) sur une passerelle IP de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-mwi-on-um-ip-gateway)
 
   - [Set-UMIPGateway](https://technet.microsoft.com/fr-fr/library/aa996577\(v=exchg.150\))
 
@@ -303,7 +303,7 @@ Le tableau suivant montre le paramètre d'une boîte aux lettres de messagerie u
 
 Pour plus d’informations sur la gestion des paramètres de notification par SMS d’une boîte aux lettres d’utilisateur, consultez les rubriques suivantes :
 
-  - [Gestion des paramètres de messagerie vocale d'un utilisateur](manage-voice-mail-settings-for-a-user-exchange-2013-help.md)
+  - [Gestion des paramètres de messagerie vocale d'un utilisateur](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings)
 
   - [Set-UMMailbox](https://technet.microsoft.com/fr-fr/library/bb124893\(v=exchg.150\))
 
@@ -337,7 +337,7 @@ Le tableau suivant montre le paramètre d'une stratégie de boîte aux lettres d
 
 Pour plus d'informations sur la gestion des paramètres de notification par SMS, consultez les rubriques suivantes :
 
-  - [Gérer une stratégie de boîte aux lettres de messagerie unifiée](manage-a-um-mailbox-policy-exchange-2013-help.md)
+  - [Gérer une stratégie de boîte aux lettres de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)
 
   - [Set-UMMailboxPolicy](https://technet.microsoft.com/fr-fr/library/bb124903\(v=exchg.150\))
 

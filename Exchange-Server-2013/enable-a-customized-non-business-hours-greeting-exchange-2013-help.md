@@ -23,7 +23,7 @@ La messagerie unifiée inclut un message d'assistance vocal système par défaut
 
 Pour inclure le nom de votre organisation ou entreprise dans le message d’accueil par défaut, entrez ce nom dans la zone **Nom de l’entreprise** sur le standard automatique de messagerie unifiée. Pour plus d’informations, consultez la rubrique [Entrez un nom d'entreprise](enter-a-business-name-exchange-2013-help.md).
 
-Pour les autres tâches de gestion relatives aux standards automatiques de messagerie unifiée, voir [Procédures relatives au standard automatique de messagerie unifiée](um-auto-attendant-procedures-exchange-2013-help.md).
+Pour les autres tâches de gestion relatives aux standards automatiques de messagerie unifiée, voir [Procédures relatives au standard automatique de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures).
 
 ## Ce qu’il faut savoir avant de commencer ?
 
@@ -31,7 +31,7 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
 
   - Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez Entrée « Standards automatiques de messagerie unifiée » dans la rubrique [Autorisations de messagerie unifiée](unified-messaging-permissions-exchange-2013-help.md).
 
-  - Avant d’exécuter ces procédures, vérifiez qu’un plan de numérotation de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](create-a-um-dial-plan-exchange-2013-help.md).
+  - Avant d’exécuter ces procédures, vérifiez qu’un plan de numérotation de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
 
   - Avant d’exécuter ces procédures, vérifiez qu’un standard automatique de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un standard automatique de messagerie unifiée](create-a-um-auto-attendant-exchange-2013-help.md).
 

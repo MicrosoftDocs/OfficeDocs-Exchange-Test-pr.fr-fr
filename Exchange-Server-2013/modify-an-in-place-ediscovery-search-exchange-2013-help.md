@@ -48,7 +48,7 @@ Après avoir créé une recherche de découverte électronique locale, vous pouv
       - Dans la page **Boîtes aux lettres**, modifiez les boîtes aux lettres à rechercher. Vous pouvez rechercher dans toutes les boîtes aux lettres ou sélectionner celles qui sont spécifiques à la recherche.
         
         > [!IMPORTANT]  
-        > Vous ne pouvez pas utiliser l’option <strong>Rechercher toutes les boîtes aux lettres</strong> pour mettre en attente toutes les boîtes aux lettres des serveurs de messagerie Exchange 2013. Pour créer une archive permanente, vous devez sélectionner <strong>Spécifier les boîtes aux lettres à rechercher</strong>. Pour plus d'informations, consultez la rubrique <a href="create-or-remove-an-in-place-hold-exchange-2013-help.md">Créer ou supprimer une conservation inaltérable</a>.
+        > Vous ne pouvez pas utiliser l’option <strong>Rechercher toutes les boîtes aux lettres</strong> pour mettre en attente toutes les boîtes aux lettres des serveurs de messagerie Exchange 2013. Pour créer une archive permanente, vous devez sélectionner <strong>Spécifier les boîtes aux lettres à rechercher</strong>. Pour plus d'informations, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/create-or-remove-in-place-holds">Créer ou supprimer une conservation inaltérable</a>.
     
       - Dans la page **Requête de recherche**, modifiez les champs suivants :
         

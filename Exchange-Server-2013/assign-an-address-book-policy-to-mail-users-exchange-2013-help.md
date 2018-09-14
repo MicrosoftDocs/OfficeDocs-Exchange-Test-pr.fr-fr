@@ -17,11 +17,11 @@ _**Sapplique à :** Exchange Online, Exchange Server 2013_
 
 _**Dernière rubrique modifiée :** 2012-10-11_
 
-Après avoir créé une stratégie de carnet d'adresses (ABP) vous devez l'affecter à des utilisateurs de boîtes aux lettres. Aucune stratégie de carnet d'adresses par défaut n'est affectée aux utilisateurs à la création de leur compte utilisateur. Si vous n'affectez pas de stratégie de carnet d'adresses à un utilisateur, ce dernier pourra accéder à la liste d'adresses globale (LAG) de toute votre organisation via Outlook et Outlook Web App. Pour en savoir plus, voir [Stratégies de carnet d’adresses](address-book-policies-exchange-2013-help.md).
+Après avoir créé une stratégie de carnet d'adresses (ABP) vous devez l'affecter à des utilisateurs de boîtes aux lettres. Aucune stratégie de carnet d'adresses par défaut n'est affectée aux utilisateurs à la création de leur compte utilisateur. Si vous n'affectez pas de stratégie de carnet d'adresses à un utilisateur, ce dernier pourra accéder à la liste d'adresses globale (LAG) de toute votre organisation via Outlook et Outlook Web App. Pour en savoir plus, voir [Stratégies de carnet d’adresses](https://docs.microsoft.com/fr-fr/exchange/address-books/address-book-policies/address-book-policies).
 
 Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives aux stratégies de carnet d'adresses, consultez la rubrique [Procédures des stratégies de carnet d’adresses](address-book-policy-procedures-exchange-2013-help.md).
 
-Les situations dans lesquelles cette procédure est utilisée vous intéressent ? Voir [Scénario : Déploiement de stratégies de carnet d’adresses](scenario-deploying-address-book-policies-exchange-2013-help.md).
+Les situations dans lesquelles cette procédure est utilisée vous intéressent ? Voir [Scénario : Déploiement de stratégies de carnet d’adresses](scenario-deploying-https://docs.microsoft.com/fr-fr/exchange/address-books/address-book-policies/address-book-policies).
 
 ## Ce qu’il faut savoir avant de commencer ?
 

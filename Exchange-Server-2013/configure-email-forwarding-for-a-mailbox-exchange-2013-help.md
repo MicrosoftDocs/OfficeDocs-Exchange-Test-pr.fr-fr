@@ -47,9 +47,9 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Et si vous voulez transférer du courrier électronique à une adresse externe à votre organisation ? Ou transférer du courrier électronique à plusieurs destinataires ? Vous pouvez également le faire.
 
-  - **Adresses externes** Créez un contact de messagerie, puis, dans les étapes ci-dessus, sélectionnez-le sur la page **Sélectionner un destinataire**. Vous ne savez pas créer un contact de messagerie ? Consultez la rubrique [Gérer les contacts de messagerie](manage-mail-contacts-exchange-2013-help.md).
+  - **Adresses externes** Créez un contact de messagerie, puis, dans les étapes ci-dessus, sélectionnez-le sur la page **Sélectionner un destinataire**. Vous ne savez pas créer un contact de messagerie ? Consultez la rubrique [Gérer les contacts de messagerie](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-mail-contacts).
 
-  - **Plusieurs destinataires**Créez un groupe de distribution, ajoutez-y des destinataires, puis, dans les étapes ci-dessus, sélectionnez le contact de messagerie sur la page **Sélectionner un destinataire**. Vous ne savez pas créer un contact de messagerie ? Consultez la rubrique [Création et gestion de groupes de distribution](create-and-manage-distribution-groups-exchange-2013-help.md).
+  - **Plusieurs destinataires**Créez un groupe de distribution, ajoutez-y des destinataires, puis, dans les étapes ci-dessus, sélectionnez le contact de messagerie sur la page **Sélectionner un destinataire**. Vous ne savez pas créer un contact de messagerie ? Consultez la rubrique [Création et gestion de groupes de distribution](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups).
 
 ## Comment savoir si cela a fonctionné ?
 

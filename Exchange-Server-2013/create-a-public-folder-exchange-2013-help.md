@@ -39,7 +39,7 @@ Pour découvrir d'autres tâches de gestion associées aux dossiers publics, con
 
   - Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez Entrée « Dossiers publics » dans la rubrique [Autorisations de partage et de collaboration](sharing-and-collaboration-permissions-exchange-2013-help.md).
 
-  - Vous ne pouvez créer de dossier public que si vous avez d’abord créé une boîte aux lettres de dossiers publics. Pour plus d'informations sur la création d'une boîte aux lettres de dossiers publics, consultez la rubrique [Création d’une boîte aux lettres de dossiers publics](create-a-public-folder-mailbox-exchange-2013-help.md).
+  - Vous ne pouvez créer de dossier public que si vous avez d’abord créé une boîte aux lettres de dossiers publics. Pour plus d'informations sur la création d'une boîte aux lettres de dossiers publics, consultez la rubrique [Création d’une boîte aux lettres de dossiers publics](https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/create-public-folder-mailbox).
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 

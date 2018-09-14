@@ -25,17 +25,17 @@ Pour plus d'informations sur les partenaires de télécopie, consultez la rubriq
 
 La messagerie unifiée transfère les appels de télécopie entrants à une solution partenaire de télécopie dédiée qui établit ensuite l'appel de télécopie avec l'expéditeur de télécopie et la reçoit de la part de l'utilisateur à extension messagerie unifiée. Toutefois, pour permettre aux utilisateurs à extension messagerie unifiée de recevoir des télécopies dans leur boîte aux lettres, vous devez d’abord activer la télécopie entrante et définir l’URI du partenaire de télécopie sur la stratégie de boîte aux lettres de messagerie unifiée qui est liée à l’utilisateur ou aux utilisateurs à extension messagerie unifiée. Vous pouvez autoriser ou empêcher la télécopie entrante pour des plans de numérotation de messagerie unifiée, des stratégies de boîte aux lettres de messagerie unifiée et la boîte aux lettres d'un utilisateur à extension messagerie unifiée. Pour plus de détails, consultez les rubriques suivantes :
 
-  - [Autoriser les utilisateurs dans le même plan de numérotation pour recevoir des télécopies](allow-users-in-the-same-dial-plan-to-receive-faxes-exchange-2013-help.md)
+  - [Autoriser les utilisateurs dans le même plan de numérotation pour recevoir des télécopies](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-in-the-same-dial-plan-to-receive-faxes)
 
-  - [Empêcher les utilisateurs dans le même plan de numérotation à partir de la réception de télécopies](prevent-users-in-the-same-dial-plan-from-receiving-faxes-exchange-2013-help.md)
+  - [Empêcher les utilisateurs dans le même plan de numérotation à partir de la réception de télécopies](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-users-in-the-same-dial-plan-from-receiving-faxes)
 
   - [Activer l’envoi de télécopies pour un groupe d’utilisateurs](enable-faxing-for-a-group-of-users-exchange-2013-help.md)
 
-  - [Désactiver pour un groupe d’utilisateurs de télécopie](disable-faxing-for-a-group-of-users-exchange-2013-help.md)
+  - [Désactiver pour un groupe d’utilisateurs de télécopie](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-faxing-for-a-group-of-users)
 
   - [Permettent aux utilisateurs de recevoir des télécopies](enable-a-user-to-receive-faxes-exchange-2013-help.md)
 
-  - [Empêcher un utilisateur de recevoir des télécopies](prevent-a-user-from-receiving-faxes-exchange-2013-help.md)
+  - [Empêcher un utilisateur de recevoir des télécopies](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-a-user-from-receiving-faxes)
 
 ## Étape 1 : Déploiement de la messagerie unifiée
 
@@ -47,7 +47,7 @@ Avant de configurer la télécopie pour votre organisation locale ou hybride, vo
 
 ## Étape 2 : Configuration des serveurs de partenaire de télécopie
 
-Ensuite, vous devez activer la télécopie entrante et configurer les URI du partenaire de télécopie sur chaque stratégie de boîte aux lettres de messagerie unifiée dont vous avez besoin dans votre organisation. Pour déployer la télécopie entrante, vous devez intégrer une solution de partenaire de télécopie agréé avec la messagerie unifiée Exchange. Pour plus d'informations, consultez la rubrique [Gestionnaire de télécopies pour la messagerie unifiée Exchange](fax-advisor-for-exchange-um-exchange-2013-help.md). Pour obtenir la liste des partenaires de télécopie agréés, consultez la rubrique [Microsoft Pinpoint pour les partenaires de télécopie](https://go.microsoft.com/fwlink/?linkid=190238)
+Ensuite, vous devez activer la télécopie entrante et configurer les URI du partenaire de télécopie sur chaque stratégie de boîte aux lettres de messagerie unifiée dont vous avez besoin dans votre organisation. Pour déployer la télécopie entrante, vous devez intégrer une solution de partenaire de télécopie agréé avec la messagerie unifiée Exchange. Pour plus d'informations, consultez la rubrique [Gestionnaire de télécopies pour la messagerie unifiée Exchange](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/fax-advisor-for-exchange-um). Pour obtenir la liste des partenaires de télécopie agréés, consultez la rubrique [Microsoft Pinpoint pour les partenaires de télécopie](https://go.microsoft.com/fwlink/?linkid=190238)
 
 > [!NOTE]
 > Comme le serveur du partenaire de télécopie est en dehors de votre organisation, les ports de pare-feu doivent être configurés pour autoriser les ports en protocole T.38 qui activent la télécopie sur un réseau IP. Par défaut, le protocole T.38 utilise le port TCP 6004. Il peut également utiliser le port UDP (User Datagram Protocol) 6044, mais cela dépend du fabricant du matériel. Les ports de pare-feu doivent être configurés pour autoriser les données de télécopie qui utilisent les ports TCP ou UDP, ou les plages de ports définies par le fabricant.
@@ -113,7 +113,7 @@ Pour permettre à des utilisateurs à extension messagerie unifiée de recevoir 
     
         Set-UMMailboxPolicy MyUMMailboxPolicy -AllowFax $true -FaxServerURI "sip:faxserver.abc.com:5060;transport=tcp"
 
-  - Pour plus d'informations, consultez la rubrique [Définir le partenaire de serveur de télécopie URI pour permettre l’envoi de télécopies](set-the-partner-fax-server-uri-to-allow-faxing-exchange-2013-help.md).
+  - Pour plus d'informations, consultez la rubrique [Définir le partenaire de serveur de télécopie URI pour permettre l’envoi de télécopies](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-the-partner-fax-server-uri-to-allow-faxing).
     
     > [!WARNING]
     > Bien que vous puissiez inclure plusieurs entrées dans le format pour l'<em>FaxServerURI</em> en les séparant par des points-virgules, une seule entrée est utilisée. Ce paramètre ne permet d’utiliser qu’une seule entrée et l’ajout de plusieurs entrées ne permet pas d’équilibrer la charge des demandes de télécopie.
@@ -121,7 +121,7 @@ Pour permettre à des utilisateurs à extension messagerie unifiée de recevoir 
 
   - Vérifiez que la boîte aux lettres à extension messagerie unifiée peut recevoir des messages de télécopie. Par défaut, tous les utilisateurs associés à un plan de numérotation peuvent recevoir des télécopies. Toutefois, il peut arriver que des utilisateurs ne puissent pas recevoir de télécopies en raison de la désactivation de cette option sur leur boîte aux lettres. Pour plus d'informations sur l'activation de la réception des télécopies pour un utilisateur à extension messagerie unifiée, consultez la rubrique [Permettent aux utilisateurs de recevoir des télécopies](enable-a-user-to-receive-faxes-exchange-2013-help.md).
     
-    Vous pouvez empêcher un utilisateur associé à un plan de numérotation de recevoir des messages de télécopie. Pour ce faire, configurez les propriétés de l'utilisateur à l'aide de la cmdlet **Set-UMMailbox** dans l'environnement de ligne de commande. Vous pouvez également utiliser la cmdlet **Set-UMMailboxPolicy** pour empêcher plusieurs utilisateurs de recevoir des messages de télécopie. Pour plus d'informations sur la manière d'empêcher un ou plusieurs utilisateurs de recevoir des messages de télécopie, consultez la rubrique [Empêcher un utilisateur de recevoir des télécopies](prevent-a-user-from-receiving-faxes-exchange-2013-help.md).
+    Vous pouvez empêcher un utilisateur associé à un plan de numérotation de recevoir des messages de télécopie. Pour ce faire, configurez les propriétés de l'utilisateur à l'aide de la cmdlet **Set-UMMailbox** dans l'environnement de ligne de commande. Vous pouvez également utiliser la cmdlet **Set-UMMailboxPolicy** pour empêcher plusieurs utilisateurs de recevoir des messages de télécopie. Pour plus d'informations sur la manière d'empêcher un ou plusieurs utilisateurs de recevoir des messages de télécopie, consultez la rubrique [Empêcher un utilisateur de recevoir des télécopies](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-a-user-from-receiving-faxes).
 
 ## Étape 4 : Configuration de l'authentification
 
