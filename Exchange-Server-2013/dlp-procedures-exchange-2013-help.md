@@ -17,7 +17,7 @@ _**Sapplique à :** Exchange Server 2013_
 
 _**Dernière rubrique modifiée :** 2015-01-07_
 
-Vous pouvez commencer à utiliser une solution de protection contre la perte de données (DLP) dans votre environnement de messagerie en suivant les procédures suivantes. Pour en savoir plus sur les concepts et les objectifs de la protection contre la perte de données, consultez la rubrique [Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md).
+Vous pouvez commencer à utiliser une solution de protection contre la perte de données (DLP) dans votre environnement de messagerie en suivant les procédures suivantes. Pour en savoir plus sur les concepts et les objectifs de la protection contre la perte de données, consultez la rubrique [Protection contre la perte de données](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention).
 
 [Création d'une stratégie DLP à partir d'un modèle](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template)   Informations pour vous aider à configurer un ensemble préconfiguré et fourni par Microsoft de règles de stratégies. Les modèles de stratégie constituent un moyen facile de commencer à gérer les données des messages associées à plusieurs exigences légales et réglementaires.
 
@@ -35,7 +35,7 @@ Vous pouvez commencer à utiliser une solution de protection contre la perte de 
 
 ## Pour plus d'informations
 
-[Gérer les conseils de stratégie](how-to-configure-and-manage-policy-tips-a-dlp-feature-exchange.md)
+[Gérer les conseils de stratégie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/manage-policy-tips)
 
 [Créer des rapports de compte-rendu d’incident pour la détection de stratégies DLP](create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md)
 

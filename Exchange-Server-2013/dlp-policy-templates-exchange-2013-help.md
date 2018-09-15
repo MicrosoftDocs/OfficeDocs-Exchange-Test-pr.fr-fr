@@ -71,5 +71,5 @@ De nombreuses stratégies DLP sont fournies par Microsoft. C'est le moyen le plu
 
 ## Pour plus d'informations
 
-[Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[Protection contre la perte de données](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 

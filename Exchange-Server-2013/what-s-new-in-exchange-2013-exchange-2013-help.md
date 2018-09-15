@@ -173,7 +173,7 @@ Le connecteur Microsoft Rights Management (connecteur RMS) est une application 
 
 Pour en savoir plus sur ces fonctionnalités, consultez la rubrique suivante :
 
-[Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[Protection contre la perte de données](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [Connecteur RMS](https://go.microsoft.com/fwlink/p/?linkid=330432)
 

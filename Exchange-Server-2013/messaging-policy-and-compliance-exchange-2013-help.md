@@ -81,7 +81,7 @@ Le tableau suivant offre un aperçu des fonctionnalités de stratégie et de con
 <tr class="odd">
 <td><p>Prévention des pertes de données (DLP)</p></td>
 <td><p>Les fonctionnalités DLP vous aident à protéger vos données sensibles et informent les utilisateurs de vos stratégies et règlementations. DLP peut également vous permettre d'éviter aux utilisateur d'envoyer par erreur des informations sensibles à des personnes non autorisées. Lors de la configuration des stratégies DLP, vous pouvez identifier et protéger les données sensibles en analysant le contenu de votre système de messagerie, qui comprend de nombreux types de fichiers associés. Les modèles de stratégies DLP fournis dans Exchange 2013 sont fondés sur des normes règlementaires telles que les informations d'identification personnelle et les normes de sécurité des données industrielles des cartes de paiement (PCI-DSS). L'extensibilité de DLP permet d'inclure d'autres stratégies importantes pour votre organisation. De plus, la nouvelle fonctionnalité de conseils de stratégie vous permet d'informer les utilisateurs des violations de stratégies avant l'envoi des données sensibles.</p></td>
-<td><p><a href="technical-overview-of-dlp-data-loss-prevention-in-exchange.md">Protection contre la perte de données</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention">Protection contre la perte de données</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Gestion des droits relatifs à l’information (IRM)</p></td>

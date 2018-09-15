@@ -243,7 +243,7 @@ Retour au début
 
 ## Configuration de la télécopie
 
-Par défaut, lorsque vous installez le rôle serveur de boîtes aux lettres, le serveur n’est pas configuré pour permettre le traitement des appels de télécopie entrants ou leur remise à un utilisateur à extension messagerie unifiée. Pour configurer la messagerie unifiée avec un serveur du partenaire de télécopie, vous devez configurer la stratégie de boîte aux lettres de messagerie unifiée et configurer l’authentification entre le serveur de boîtes aux lettres et le serveur du partenaire de télécopie. Pour plus d’informations, voir [Configuration des télécopies entrantes](setting-up-incoming-faxing-exchange-2013-help.md).
+Par défaut, lorsque vous installez le rôle serveur de boîtes aux lettres, le serveur n’est pas configuré pour permettre le traitement des appels de télécopie entrants ou leur remise à un utilisateur à extension messagerie unifiée. Pour configurer la messagerie unifiée avec un serveur du partenaire de télécopie, vous devez configurer la stratégie de boîte aux lettres de messagerie unifiée et configurer l’authentification entre le serveur de boîtes aux lettres et le serveur du partenaire de télécopie. Pour plus d’informations, voir [Configuration des télécopies entrantes](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-incoming-faxing).
 
 Retour au début
 
@@ -277,7 +277,7 @@ Retour au début
 
 ## Plusieurs numéros de téléphone DID
 
-Lorsque vous activez un utilisateur pour la messagerie unifiée, vous devez entrer au moins un numéro de poste pour cet utilisateur. Vous pouvez ajouter plusieurs numéros de poste pour un utilisateur à extension messagerie unifiée en utilisant le Centre d’administration Exchange (CAE). Pour plus d’informations, voir [Ajouter un numéro de poste](add-an-extension-number-exchange-2013-help.md).
+Lorsque vous activez un utilisateur pour la messagerie unifiée, vous devez entrer au moins un numéro de poste pour cet utilisateur. Vous pouvez ajouter plusieurs numéros de poste pour un utilisateur à extension messagerie unifiée en utilisant le Centre d’administration Exchange (CAE). Pour plus d’informations, voir [Ajouter un numéro de poste](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number).
 
 L’ajout de plusieurs numéros de poste est utile quand un utilisateur à extension messagerie unifiée :
 

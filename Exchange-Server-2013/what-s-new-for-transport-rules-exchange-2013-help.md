@@ -25,7 +25,7 @@ Dans Exchange 2013, les fonctionnalités DLP peuvent aider les organisations à
 
 [Intégration des règles d'informations sensibles aux règles de transport](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)
 
-[Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[Protection contre la perte de données](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 ## Nouveaux prédicats et actions
 

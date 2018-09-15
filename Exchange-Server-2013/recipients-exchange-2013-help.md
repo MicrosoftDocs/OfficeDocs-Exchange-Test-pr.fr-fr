@@ -338,7 +338,7 @@ Le tableau suivant contient des liens vers des rubriques qui vous aideront à d�
 <td><p>Apprendre à créer et gérer des groupes de distribution et créer une stratégie de noms de groupes pour votre organisation.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="manage-mail-enabled-security-groups-exchange-2013-help.md">Gérer les groupes de sécurité à extension de messagerie</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups">Gérer les groupes de sécurité à extension de messagerie</a></p></td>
 <td><p>Apprendre à créer et gérer des groupes de sécurité à extension messagerie.</p></td>
 </tr>
 <tr class="even">
@@ -354,7 +354,7 @@ Le tableau suivant contient des liens vers des rubriques qui vous aideront à d�
 <td><p>Apprendre à créer et gérer des utilisateurs de messagerie.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="create-and-manage-room-mailboxes-exchange-2013-help.md">Créer et gérer des boîtes aux lettres de salle</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-room-mailboxes">Créer et gérer des boîtes aux lettres de salle</a></p></td>
 <td><p>Apprendre à créer des boîtes aux lettres de salle et gérer des propriétés de boîte aux lettres de salle, comme l’activation des réunions périodiques et la configuration des options de planification et de réservation.</p></td>
 </tr>
 <tr class="even">

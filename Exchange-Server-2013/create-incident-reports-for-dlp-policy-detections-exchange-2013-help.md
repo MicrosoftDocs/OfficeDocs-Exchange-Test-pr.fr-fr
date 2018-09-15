@@ -139,5 +139,5 @@ Voici la liste complète des noms de lignes dans le modèle de rapport d'inciden
 
 [Afficher les rapports de détection de stratégies DLP](view-dlp-policy-detection-reports-exchange-2013-help.md)
 
-[Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[Protection contre la perte de données](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 

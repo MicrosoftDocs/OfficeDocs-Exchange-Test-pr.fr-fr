@@ -29,5 +29,5 @@ Les informations suivantes vont vous permettre d’installer et de déployer une
 
   - [Gestionnaire de téléphonie pour Exchange 2013](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)   Pour en savoir plus sur les passerelles VoIP, PBX IP et PBX pris en charge.
 
-  - [Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)   Pour en savoir plus sur la configuration de vos passerelles VoIP, PBX IP et PBX.
+  - [Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)   Pour en savoir plus sur la configuration de vos passerelles VoIP, PBX IP et PBX.
 

@@ -31,7 +31,7 @@ Tâches consécutives au déploiement pour la messagerie unifiée
 
 Avant de déployer la messagerie unifiée, nous vous conseillons de vous familiariser avec les concepts des rubriques suivantes :
 
-  - [Plans de numérotation de messagerie unifiée](um-dial-plans-exchange-2013-help.md)
+  - [Plans de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-dial-plans)
 
   - [Passerelles IP de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways)
 
@@ -43,7 +43,7 @@ Avant de déployer la messagerie unifiée, nous vous conseillons de vous familia
 
   - [Stratégies de boîte aux lettres de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies)
 
-  - [Messagerie vocale pour les utilisateurs](voice-mail-for-users-exchange-2013-help.md)
+  - [Messagerie vocale pour les utilisateurs](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users)
 
 ## Déploiement de la messagerie unifiée
 
@@ -300,11 +300,11 @@ Pour utiliser le protocole TLS mutuel pour chiffrer le trafic SIP et RTP (Realti
 
   - Importez les certificats requis sur les passerelles VoIP, les PBX IP et les serveurs d'accès au client et de boîtes aux lettres de votre organisation.
 
-  - Configurez la sécurité VoIP sur les plans de numérotation de messagerie unifiée. Pour plus d'informations, consultez la rubrique [Configuration du paramètre de sécurité VoIP](configure-the-voip-security-setting-exchange-2013-help.md).
+  - Configurez la sécurité VoIP sur les plans de numérotation de messagerie unifiée. Pour plus d'informations, consultez la rubrique [Configuration du paramètre de sécurité VoIP](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-voip-security-setting).
 
   - Configurer le mode de démarrage sur les serveurs d'accès au client et de boîtes aux lettres. Pour plus de détails, consultez les rubriques [Configuration du mode de démarrage sur un serveur de boîtes aux lettres](configure-the-startup-mode-on-a-mailbox-server-exchange-2013-help.md) et [Configurer le mode de démarrage sur un serveur d'accès au Client](configure-the-startup-mode-on-a-client-access-server-exchange-2013-help.md).
 
-  - Configurez les passerelles IP de messagerie unifiée pour écouter sur le port 5061. Pour plus d'informations, consultez la rubrique [Configuration du port d'écoute](configure-the-listening-port-exchange-2013-help.md).
+  - Configurez les passerelles IP de messagerie unifiée pour écouter sur le port 5061. Pour plus d'informations, consultez la rubrique [Configuration du port d'écoute](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-listening-port).
 
 ## Stratégies de code confidentiel pour les utilisateurs à extension messagerie unifiée
 

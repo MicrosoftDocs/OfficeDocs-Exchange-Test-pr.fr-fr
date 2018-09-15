@@ -35,7 +35,7 @@ Pour mettre en œuvre des stratégies de messagerie spécifiques à l’aide de 
 
   - [Clauses d’exclusion de responsabilité, signatures, pieds de page ou en-têtes à l’échelle de l’organisation](organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md)
 
-  - [Utiliser des règles de flux de messagerie afin que les messages puissent contourner le courrier non trié](use-mail-flow-rules-so-messages-can-bypass-clutter-exchange-2013-help.md)
+  - [Utiliser des règles de flux de messagerie afin que les messages puissent contourner le courrier non trié](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/use-rules-to-bypass-clutter)
 
   - [Utiliser des règles de flux de messagerie pour acheminer le courrier électronique en fonction d’une liste de mots, d’expressions ou de modèles](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email)
 

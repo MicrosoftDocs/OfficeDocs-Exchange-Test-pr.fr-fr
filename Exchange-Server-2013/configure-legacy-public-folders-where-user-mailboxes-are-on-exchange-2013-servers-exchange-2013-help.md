@@ -24,7 +24,7 @@ Comment faire pour permettre aux utilisateurs d’Exchange 2013 ou Exchange 2016
 Les utilisateurs dont les boîtes aux lettres sont sur Exchange Server 2013 ou 2016 d’Exchange Server ne pourront pas accéder aux dossiers publics hérités à partir d’Outlook Web App, Outlook sur le web ou Outlook pour Mac. Les étapes décrites dans cet article fonctionnent pour Exchange 2013 et 2016 d’Exchange.
 
 > [!NOTE]  
-> Les utilisateurs d’Outlook 2016 pour Mac peuvent accéder aux dossiers publics hérités après avoir suivi les étapes décrites dans cet article. Si les clients de votre organisation utilisent Outlook 2016 pour Mac, assurez-vous qu’ils ont installé la mise à jour d’avril 2016. Dans le cas contraire, ces utilisateurs ne seront pas en mesure d’accéder aux dossiers publics dans une coexistence ou une topologie hybride. Pour plus d’informations, voir <a href="accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md">Accès aux dossiers publics avec Outlook 2016 pour Mac</a>.
+> Les utilisateurs d’Outlook 2016 pour Mac peuvent accéder aux dossiers publics hérités après avoir suivi les étapes décrites dans cet article. Si les clients de votre organisation utilisent Outlook 2016 pour Mac, assurez-vous qu’ils ont installé la mise à jour d’avril 2016. Dans le cas contraire, ces utilisateurs ne seront pas en mesure d’accéder aux dossiers publics dans une coexistence ou une topologie hybride. Pour plus d’informations, voir <a href="https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac">Accès aux dossiers publics avec Outlook 2016 pour Mac</a>.
 
 
 ## Étape 1 : rendre les dossiers publics Exchange 2010 détectables
@@ -67,7 +67,7 @@ Les utilisateurs dont les boîtes aux lettres sont sur Exchange Server 2013 ou 2
 
 La dernière étape de cette procédure consiste à configurer les boîtes aux lettres des utilisateurs afin d'autoriser l'accès aux dossiers publics locaux hérités.
 
-Autorisez les utilisateurs sur site d’Exchange Server 2013 à accéder aux dossiers publics hérités. Vous allez pointer vers toutes les boîtes aux lettres de dossiers publics proxy que vous avez créées à l'[Step 2: Make remote public folders discoverable](configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md). Exécutez la commande suivante à partir d’un serveur Exchange 2013 disposant de la mise à jour cumulative 5 ou d’une mise à jour ultérieure.
+Autorisez les utilisateurs sur site d’Exchange Server 2013 à accéder aux dossiers publics hérités. Vous allez pointer vers toutes les boîtes aux lettres de dossiers publics proxy que vous avez créées à l'[Step 2: Make remote public folders discoverable](https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders). Exécutez la commande suivante à partir d’un serveur Exchange 2013 disposant de la mise à jour cumulative 5 ou d’une mise à jour ultérieure.
 
     Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3
 

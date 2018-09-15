@@ -159,7 +159,7 @@ Vous pouvez faire appel aux méthodes suivantes pour effectuer une recherche dan
 
   - **Utiliser des rapports d’audit dans le Centre d’administration Exchange (CAE)**   Vous pouvez utiliser l’onglet **Audit** du CAE pour exécuter un rapport d’accès non propriétaire à la boîte aux lettres ou pour exporter les entrées du journal d’audit de la boîte aux lettres. Pour obtenir des informations détaillées, voir :
     
-      - [Exécuter un rapport d’accès aux boîtes aux lettres par des non-propriétaires](run-a-non-owner-mailbox-access-report-exchange-online-help.md)
+      - [Exécuter un rapport d’accès aux boîtes aux lettres par des non-propriétaires](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
     
       - [Exporter les journaux d’audit de boîte aux lettres](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 

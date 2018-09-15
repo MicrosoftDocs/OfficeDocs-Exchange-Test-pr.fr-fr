@@ -31,7 +31,7 @@ Par défaut, lorsque vous exécutez l’outil de dépannage de la messagerie uni
     
       - Un plan de numérotation de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, voir [Créer un plan de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
     
-      - Une stratégie de boîte aux lettres de messagerie unifiée a été créée. Pour obtenir la procédure détaillée, consultez la rubrique [Créer une stratégie de boîte aux lettres de messagerie unifiée](create-a-um-mailbox-policy-exchange-2013-help.md).
+      - Une stratégie de boîte aux lettres de messagerie unifiée a été créée. Pour obtenir la procédure détaillée, consultez la rubrique [Créer une stratégie de boîte aux lettres de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy).
     
       - Une passerelle IP de messagerie unifiée a été créée. Pour obtenir la procédure détaillée, voir [Créer une passerelle IP de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway).
     

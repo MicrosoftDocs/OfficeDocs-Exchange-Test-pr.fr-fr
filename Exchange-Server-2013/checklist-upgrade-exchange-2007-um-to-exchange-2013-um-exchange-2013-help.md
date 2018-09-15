@@ -100,13 +100,13 @@ Pour obtenir des conseils détaillés sur la mise à niveau de la messagerie uni
 <td><p></p></td>
 <td><p>Créer ou configurer des plans de numérotation de messagerie unifiée</p></td>
 <td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan">Créer un plan de numérotation de messagerie unifiée</a></p>
-<p><a href="manage-a-um-dial-plan-exchange-2013-help.md">Gestion d'un plan de numérotation de messagerie unifiée</a></p></td>
+<p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan">Gestion d'un plan de numérotation de messagerie unifiée</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>Créer ou configurer des passerelles IP de messagerie unifiée</p></td>
 <td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway">Créer une passerelle IP de messagerie unifiée</a></p>
-<p><a href="manage-a-um-ip-gateway-exchange-2013-help.md">Gestion d'une passerelle IP de messagerie unifiée</a></p></td>
+<p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway">Gestion d'une passerelle IP de messagerie unifiée</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -116,13 +116,13 @@ Pour obtenir des conseils détaillés sur la mise à niveau de la messagerie uni
 <tr class="even">
 <td><p></p></td>
 <td><p>Créer ou configurer des standards automatiques de messagerie unifiée</p></td>
-<td><p><a href="create-a-um-auto-attendant-exchange-2013-help.md">Créer un standard automatique de messagerie unifiée</a></p>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant">Créer un standard automatique de messagerie unifiée</a></p>
 <p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/manage-um-auto-attendant">Gérer un standard automatique de messagerie unifiée</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
 <td><p>Créer ou configurer des stratégies de boîte aux lettres de messagerie unifiée</p></td>
-<td><p><a href="create-a-um-mailbox-policy-exchange-2013-help.md">Créer une stratégie de boîte aux lettres de messagerie unifiée</a></p>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy">Créer une stratégie de boîte aux lettres de messagerie unifiée</a></p>
 <p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy">Gérer une stratégie de boîte aux lettres de messagerie unifiée</a></p></td>
 </tr>
 <tr class="even">
@@ -139,7 +139,7 @@ Pour obtenir des conseils détaillés sur la mise à niveau de la messagerie uni
 <tr class="even">
 <td><p></p></td>
 <td><p>Configurer vos passerelles VoIP, PBX IP et PBX compatibles SIP pour envoyer tous les appels entrants aux serveurs d'accès au client Exchange 2013</p></td>
-<td><p><a href="configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md">Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge</a></p>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways">Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge</a></p>
 <p><a href="connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md">Connexion d’une passerelle VoIP, d’un IP PBX ou d’un contrôleur SBC à la messagerie unifiée</a></p></td>
 </tr>
 <tr class="odd">

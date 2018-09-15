@@ -23,7 +23,7 @@ Certaines questions sur des dossiers publics sont-elles restées sans réponses 
 
 ## FAQ sur la migration des dossiers publics
 
-Cette section contient des questions fréquemment posées à propos de la migration de dossiers publics. Pour plus d’informations, consultez [Utiliser la migration par lots pour migrer les dossiers publics vers Exchange 2013 à partir de versions antérieures](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md), [Utilisation de la migration par lot pour migrer des dossiers publics vers Office 365 et Exchange Online](https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)ou [Utilisation de la migration par lot pour migrer des dossiers publics Exchange 2013 vers Exchange Online](use-batch-migration-to-migrate-exchange-2013-public-folders-to-exchange-online-exchange-online-help.md).
+Cette section contient des questions fréquemment posées à propos de la migration de dossiers publics. Pour plus d’informations, consultez [Utiliser la migration par lots pour migrer les dossiers publics vers Exchange 2013 à partir de versions antérieures](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md), [Utilisation de la migration par lot pour migrer des dossiers publics vers Office 365 et Exchange Online](https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)ou [Utilisation de la migration par lot pour migrer des dossiers publics Exchange 2013 vers Exchange Online](https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders).
 
 ## Quels sont les scénarios de migration de dossiers publics pris en charge ?
 
@@ -111,7 +111,7 @@ Exécutez la commande suivante pour créer la première boîte aux lettres de do
 
     New-Mailbox -PublicFolder -Name <name of public folder>
 
-Pour plus d’informations, consultez la rubrique [Créer un dossier public](create-a-public-folder-exchange-2013-help.md).
+Pour plus d’informations, consultez la rubrique [Créer un dossier public](https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/create-public-folder).
 
 ## Dans les versions précédentes d’Exchange, une option permettait de spécifier la base de données de dossiers publics de chaque base de données de boîtes aux lettres. Comment cela est-il possible dans Exchange 2013 ?
 

@@ -312,11 +312,11 @@ Pour vous aider à gérer des informations professionnelles importantes dans le 
 
   - Définissez une action à effectuer sur le courrier qui contient des numéros de passeport qui ne sont pas dans le fichier protégé.
 
-Les stratégies DLP et les conditions applicables aux pièces jointes peuvent vous aider à respecter les besoins de votre entreprise en formulant ces besoins sous forme de conditions, d’exceptions et d’actions de règle de transport. Lorsque vous incluez l’analyse d’informations sensibles dans une stratégie DLP, les pièces jointes des messages sont analysées pour détecter uniquement ces informations. Cependant, les conditions applicables aux pièces jointes, portant par exemple sur la taille ou le type de fichier ne sont pas incluses tant que vous n’ajoutez pas les conditions répertoriées dans cette rubrique. La stratégie DLP n’est pas disponible pour toutes les versions d’Exchange. Pour en savoir plus, voir [Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md).
+Les stratégies DLP et les conditions applicables aux pièces jointes peuvent vous aider à respecter les besoins de votre entreprise en formulant ces besoins sous forme de conditions, d’exceptions et d’actions de règle de transport. Lorsque vous incluez l’analyse d’informations sensibles dans une stratégie DLP, les pièces jointes des messages sont analysées pour détecter uniquement ces informations. Cependant, les conditions applicables aux pièces jointes, portant par exemple sur la taille ou le type de fichier ne sont pas incluses tant que vous n’ajoutez pas les conditions répertoriées dans cette rubrique. La stratégie DLP n’est pas disponible pour toutes les versions d’Exchange. Pour en savoir plus, voir [Protection contre la perte de données](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention).
 
 ## Pour plus d'informations
 
-[Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[Protection contre la perte de données](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [Règles de transport ou de flux de messagerie](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 
