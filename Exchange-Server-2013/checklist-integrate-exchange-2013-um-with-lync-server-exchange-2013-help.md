@@ -88,7 +88,7 @@ Pour plus d’informations sur l’exécution des tâches à effectuer pour Lync
 <tr class="even">
 <td><p></p></td>
 <td><p>Configurer le paramètre de sécurité du plan de numérotation.</p></td>
-<td><p><a href="configure-the-voip-security-setting-exchange-2013-help.md">Configuration du paramètre de sécurité VoIP</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-voip-security-setting">Configuration du paramètre de sécurité VoIP</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -98,7 +98,7 @@ Pour plus d’informations sur l’exécution des tâches à effectuer pour Lync
 <tr class="even">
 <td><p></p></td>
 <td><p>Configurer les numéros et d'autres paramètres d'Outlook Voice Access.</p></td>
-<td><p><a href="manage-a-um-dial-plan-exchange-2013-help.md">Gestion d'un plan de numérotation de messagerie unifiée</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan">Gestion d'un plan de numérotation de messagerie unifiée</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -114,7 +114,7 @@ Pour plus d’informations sur l’exécution des tâches à effectuer pour Lync
 <tr class="odd">
 <td><p></p></td>
 <td><p>Créer le nombre requis de standards automatiques.</p></td>
-<td><p><a href="create-a-um-auto-attendant-exchange-2013-help.md">Créer un standard automatique de messagerie unifiée</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant">Créer un standard automatique de messagerie unifiée</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -143,7 +143,7 @@ Pour plus d’informations sur l’exécution des tâches à effectuer pour Lync
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>Créer une stratégie de boîte aux lettres de messagerie unifiée ou configurer la stratégie de boîte aux lettres de messagerie unifiée par défaut.</p></td>
-<td><p><a href="create-a-um-mailbox-policy-exchange-2013-help.md">Créer une stratégie de boîte aux lettres de messagerie unifiée</a></p>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy">Créer une stratégie de boîte aux lettres de messagerie unifiée</a></p>
 <p><a href="https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy">Gérer une stratégie de boîte aux lettres de messagerie unifiée</a></p></td>
 </tr>
 <tr class="odd">

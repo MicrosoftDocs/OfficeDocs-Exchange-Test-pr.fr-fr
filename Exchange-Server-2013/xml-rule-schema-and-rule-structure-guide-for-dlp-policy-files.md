@@ -17,7 +17,7 @@ _**Sapplique à :** Exchange Online, Exchange Server 2013_
 
 _**Dernière rubrique modifiée :** 2015-03-09_
 
-Cette vue d'ensemble décrit les composants d'une définition de schéma XML pour les fichiers de modèle de stratégie de protection contre la perte de données (DLP). Elle fournit également un exemple de fichier de stratégie au format XML. Il est utile de comprendre l'ensemble de l'architecture DLP et du processus de développement des règles avant de commencer. Pour plus d'informations, consultez les rubriques [Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md) et [Définition de vos modèles DLP et types d'informations](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md).
+Cette vue d'ensemble décrit les composants d'une définition de schéma XML pour les fichiers de modèle de stratégie de protection contre la perte de données (DLP). Elle fournit également un exemple de fichier de stratégie au format XML. Il est utile de comprendre l'ensemble de l'architecture DLP et du processus de développement des règles avant de commencer. Pour plus d'informations, consultez les rubriques [Protection contre la perte de données](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) et [Définition de vos modèles DLP et types d'informations](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md).
 
 Afin de faciliter l'adoption et la gestion des solutions de protection contre la perte de données, un modèle conceptuel connu sous le nom de stratégies DLP et modèles de stratégies est introduit dans Microsoft Exchange Server 2013. Les modèles de stratégie DLP fournissent une conception préliminaire pour la stratégie DLP prévue. Un modèle de stratégie DLP doit, pour être utilisable, encapsuler toutes les directives et objets de données requis pour répondre aux objectifs d'une stratégie spécifique, par exemple une réglementation ou des besoins professionnels. Le modèle n'est pas spécifique à l'environnement. Il s'agit seulement d'une définition ou d'un modèle de stratégie utilisé dans le cadre de la configuration du produit ou fourni par des fournisseurs de logiciels et partenaires indépendants. De plus, les stratégies DLP sont des instanciations d'exécution des modèles spécifiques à l'environnement de déploiement. Votre structure de stratégie de messagerie existante peut incorporer des stratégies DLP par le biais de l'utilisation de règles de transport. Les règles de transport offrent une grande flexibilité dans l'adaptation et l'expression de la richesse de vos solutions DLP.
 
@@ -315,7 +315,7 @@ Les éléments enfants comportent la suite d'éléments suivante dans cet ordre.
 
 ## Pour plus d'informations
 
-[Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[Protection contre la perte de données](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [Définition de vos modèles DLP et types d'informations](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
 

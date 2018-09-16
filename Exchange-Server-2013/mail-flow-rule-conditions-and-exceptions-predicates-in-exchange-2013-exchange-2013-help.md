@@ -168,7 +168,7 @@ Dans le CAE, dans la section **Propriétés de cette règle**, cliquez sur **Fai
 <td><p><em>HasSenderOverride</em></p>
 <p><em>ExceptIfHasSenderOverride</em></p></td>
 <td><p>s/o</p></td>
-<td><p>Messages dans lesquels l’expéditeur a choisi de remplacer une stratégie de protection contre la perte de données (DLP). Pour plus d’informations sur les stratégies DLP, consultez la rubrique <a href="technical-overview-of-dlp-data-loss-prevention-in-exchange.md">Protection contre la perte de données</a>.</p></td>
+<td><p>Messages dans lesquels l’expéditeur a choisi de remplacer une stratégie de protection contre la perte de données (DLP). Pour plus d’informations sur les stratégies DLP, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention">Protection contre la perte de données</a>.</p></td>
 <td><p>Exchange 2013 ou version ultérieure</p></td>
 </tr>
 <tr class="odd">

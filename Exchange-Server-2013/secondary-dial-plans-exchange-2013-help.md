@@ -108,23 +108,23 @@ Quand Microsoft Lync Server est utilisé pour la fonctionnalité Voix Entreprise
 
 Pour plus d'informations sur l'ajout, la suppression ou la modification de postes, consultez l'une des rubriques suivantes :
 
-  - [Modifier un numéro de poste](change-an-extension-number-exchange-2013-help.md)
+  - [Modifier un numéro de poste](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-extension-number)
 
-  - [Ajouter un numéro de poste](add-an-extension-number-exchange-2013-help.md)
+  - [Ajouter un numéro de poste](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number)
 
   - [Supprimer un numéro de poste](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-extension-number)
 
 Si vous devez modifier des adresses SIP ou des numéros E.164 pour des utilisateurs à extension messagerie unifiée, consultez les rubriques suivantes :
 
-  - [Ajouter une adresse SIP](add-a-sip-address-exchange-2013-help.md)
+  - [Ajouter une adresse SIP](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-sip-address)
 
   - [Modifier une adresse SIP](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-sip-address)
 
   - [Supprimer une adresse SIP](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-sip-address)
 
-  - [Ajouter un numéro E.164](add-an-e-164-number-exchange-2013-help.md)
+  - [Ajouter un numéro E.164](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-e-164-number)
 
-  - [Modifier un numéro E.164](change-an-e-164-number-exchange-2013-help.md)
+  - [Modifier un numéro E.164](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-e-164-number)
 
   - [Supprimer un numéro E.164](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-e-164-number)
 

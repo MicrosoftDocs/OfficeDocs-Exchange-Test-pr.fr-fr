@@ -29,7 +29,7 @@ _**Dernière rubrique modifiée :** 2012-10-12_
 
 [Création d’une liste d’adresses globale](https://docs.microsoft.com/fr-fr/exchange/address-books/address-lists/create-global-address-list)
 
-[Configuration des propriétés d'une liste d'adresses globale](configure-global-address-list-properties-exchange-2013-help.md)
+[Configuration des propriétés d'une liste d'adresses globale](https://docs.microsoft.com/fr-fr/exchange/address-books/address-lists/configure-global-address-list-properties)
 
 [Suppression d'une liste d'adresses globale](https://docs.microsoft.com/fr-fr/exchange/address-books/address-lists/remove-a-global-address-list)
 

@@ -267,7 +267,7 @@ Vous trouverez ci-après une liste complète des fichiers de données. Toutes le
 
 ## Pour plus d'informations
 
-[Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[Protection contre la perte de données](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [Créer des rapports de compte-rendu d’incident pour la détection de stratégies DLP](create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md)
 

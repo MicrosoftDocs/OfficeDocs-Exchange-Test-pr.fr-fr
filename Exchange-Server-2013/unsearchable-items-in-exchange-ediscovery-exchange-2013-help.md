@@ -63,9 +63,9 @@ Gardez les éléments suivants à l’esprit lors de la copie ou de l’exportat
 
 Pour plus d’informations sur l’inclusion d’éléments impossibles à rechercher dans les résultats de la recherche, consultez les articles suivants :
 
-  - [Créer une recherche de découverte électronique inaltérable](create-an-in-place-ediscovery-search-exchange-2013-help.md)
+  - [Créer une recherche de découverte électronique inaltérable](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)
 
-  - [Exporter les résultats de la recherche électronique vers un fichier PST](export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md)
+  - [Exporter les résultats de la recherche électronique vers un fichier PST](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/export-search-results)
 
   - [SharePoint : Exporter du contenu eDiscovery et créer des rapports](https://go.microsoft.com/fwlink/p/?linkid=324757)
 

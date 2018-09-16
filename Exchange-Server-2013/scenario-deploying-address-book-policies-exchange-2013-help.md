@@ -329,5 +329,5 @@ Cet exemple attribue ABP\_FAB à toutes les boîtes aux lettres où CustomAttrib
 
     Get-Mailbox -resultsize unlimited | where {$_.CustomAttribute15 -eq "TAIL"} | Set-Mailbox -AddressBookPolicy "ABP_TAIL"
 
-Pour plus d'informations, consultez la rubrique [Attribuer une stratégie de carnet d’adresses à des utilisateurs de messagerie](assign-an-address-book-policy-to-mail-users-exchange-2013-help.md).
+Pour plus d'informations, consultez la rubrique [Attribuer une stratégie de carnet d’adresses à des utilisateurs de messagerie](https://docs.microsoft.com/fr-fr/exchange/address-books/address-book-policies/assign-an-address-book-policy-to-mail-users).
 

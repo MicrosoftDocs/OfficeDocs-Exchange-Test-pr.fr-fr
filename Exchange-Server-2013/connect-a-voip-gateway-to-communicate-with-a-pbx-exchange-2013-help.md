@@ -27,7 +27,7 @@ Les ressources suggérées suivantes de Microsoft Exchange TechCenter fournissen
 
   - **Documentation sur la passerelle VoIP, le PBX IP et le PBX pris en charge**   [Gestionnaire de téléphonie pour Exchange 2013](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013) inclut des fichiers de configuration et des informations d’installation que vous pouvez utiliser lors de la configuration des passerelles VoIP et des PBX.
 
-  - **Notes de configuration et techniques**   [Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md) inclut des fichiers de configuration et des informations d’installation que vous pouvez utiliser lors de la configuration des passerelles VoIP et des PBX.
+  - **Notes de configuration et techniques**   [Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways) inclut des fichiers de configuration et des informations d’installation que vous pouvez utiliser lors de la configuration des passerelles VoIP et des PBX.
 
   - **Configuration d’une passerelle VoIP AudioCodes**  La [page des ressources de serveur Microsoft Exchange](https://www.audiocodes.com/solutions/microsoft/exchange-server) fournit des informations concernant la prise en charge et la configuration pour vous permettre de configurer des passerelles VoIP AudioCodes en vue d’une utilisation avec la messagerie unifiée.
 
@@ -37,7 +37,7 @@ Il est conseillé que tous les clients qui projettent de déployer la messagerie
 
 ## Pour plus d'informations
 
-[Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+[Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
 [Connecter la messagerie unifiée à une passerelle VoIP pris en charge](connect-um-to-a-supported-voip-gateway-exchange-2013-help.md)
 

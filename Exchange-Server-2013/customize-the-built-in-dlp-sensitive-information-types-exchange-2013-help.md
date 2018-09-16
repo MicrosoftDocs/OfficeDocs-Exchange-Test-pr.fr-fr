@@ -259,7 +259,7 @@ Voici les définitions des termes que vous avez rencontrés au cours de cette pr
 
 ## Pour plus d’informations
 
-  - [Application des règles DLP pour évaluer les messages](how-dlp-rules-are-applied-to-evaluate-messages-exchange-2013-help.md)
+  - [Application des règles DLP pour évaluer les messages](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/dlp-rule-application)
 
   - [Création d'une stratégie personnalisée de protection contre la perte de données (DLP)](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy)
 

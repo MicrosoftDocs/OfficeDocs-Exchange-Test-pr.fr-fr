@@ -168,7 +168,7 @@ Le tableau suivant dresse la liste des contenus et actions pouvant être exécut
 </table>
 
 
-Dans Exchange 2013, la récupération d’élément unique n’est pas activée par défaut pour les nouvelles boîtes aux lettres ou les boîtes aux lettres déplacées à partir d’une version précédente d’Exchange. Vous devez utiliser l’environnement de ligne de commande Exchange Management Shell pour activer la récupération d’élément unique d’une boîte aux lettres, puis configurer ou modifier la période de rétention des éléments supprimés. Pour plus d’informations sur comment effectuer la récupération d’un élément unique, consultez la rubrique [Récupérer des messages supprimés dans la boîte aux lettres d’un utilisateur](recover-deleted-messages-in-a-user-s-mailbox-exchange-2013-help.md).
+Dans Exchange 2013, la récupération d’élément unique n’est pas activée par défaut pour les nouvelles boîtes aux lettres ou les boîtes aux lettres déplacées à partir d’une version précédente d’Exchange. Vous devez utiliser l’environnement de ligne de commande Exchange Management Shell pour activer la récupération d’élément unique d’une boîte aux lettres, puis configurer ou modifier la période de rétention des éléments supprimés. Pour plus d’informations sur comment effectuer la récupération d’un élément unique, consultez la rubrique [Récupérer des messages supprimés dans la boîte aux lettres d’un utilisateur](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages).
 
 Retour au début
 
