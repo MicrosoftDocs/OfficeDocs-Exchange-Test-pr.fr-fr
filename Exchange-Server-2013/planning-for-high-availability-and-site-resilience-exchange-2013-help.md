@@ -313,7 +313,9 @@ Il est recommandé de réduire le nombre de certificats que vous utilisez pour v
 
 Pour les clients Outlook Anywhere, il est recommandé d’utiliser un seul certificat SAN (autre nom d’objet) par centre de données, en incluant plusieurs noms d’hôtes dans le certificat. Pour assurer la connectivité d’Outlook Anywhere après un basculement de base de données, de serveur ou de centre de données, vous devez utiliser le même nom de principal pour chaque certificat et paramétrer l’objet configuration de fournisseur OutlookActive Directory avec le même nom de principal dans le formulaire Microsoft-Standard (msstd). Par exemple, si vous utilisez le nom de principal de certificat mail.contoso.com, vous configurez les attributs de la manière suivante :
 
-    Set-OutlookProvider EXPR -CertPrincipalName "msstd:mail.contoso.com"
+```powershell
+Set-OutlookProvider EXPR -CertPrincipalName "msstd:mail.contoso.com"
+```
 
 Quelques applications qui s’intègrent à Exchange présentent des conditions spéciales de certificat qui peuvent nécessiter l’utilisation de certificats supplémentaires. Exchange 2013 peut coexister avec Office Communications Server (OCS). OCS requiert des certificats 1024 bits ou des certificats plus importants qui utilisent le nom de serveur OCS comme nom principal du certificat. Utiliser le nom de serveur OCS comme nom principal de certificat empêcherait Outlook Anywhere de fonctionner correctement. Il vous faut donc utiliser un certificat supplémentaire séparé pour l’environnement OCS.
 

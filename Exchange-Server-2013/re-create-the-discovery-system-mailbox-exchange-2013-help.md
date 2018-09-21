@@ -41,7 +41,9 @@ Toutefois, si la boîte aux lettres système de découverte est supprimée accid
     
     Pour recréer la boîte aux lettres système de découverte, exécutez la commande suivante :
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+.\Setup /preparead /IAcceptExchangeServerLicenseTerms
+```
 
 ## Comment savoir si cela a fonctionné ?
 

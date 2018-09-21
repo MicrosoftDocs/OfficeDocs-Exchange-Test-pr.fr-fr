@@ -55,7 +55,9 @@ Cet exemple configure IRM afin d’autoriser le service de recherche Exchange à
 > Par défaut, le paramètre <em>SearchEnabled</em> est défini sur <code>$true</code>. Pour désactiver l’indexation des messages protégés par IRM, définissez-le sur <code>$false</code>. La désactivation de l’indexation des messages protégés par IRM les empêche d’apparaître dans les résultats de recherche lorsque les utilisateurs effectuent une recherche dans leur boîte aux lettres ou lorsque les gestionnaires de découverte utilisent la fonction de découverte électronique locale.
 
 
-    Set-IRMConfiguration -SearchEnabled $true
+```powershell
+Set-IRMConfiguration -SearchEnabled $true
+```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, voir [Set-IRMConfiguration](https://technet.microsoft.com/fr-fr/library/dd979792\(v=exchg.150\)).
 
@@ -67,7 +69,9 @@ Dans cet exemple, nous activons des membres du groupe de rôles Gestion de la d�
 > Par défaut, le paramètre <em>EDiscoverySuperUserEnabled</em> est défini sur <code>$true</code>. Pour désactiver l’accès aux messages protégés par IRM pour les membres du groupe de rôles Gestion de la découverte, définissez-le sur <code>$false</code>.
 
 
-    Set-IRMConfiguration -EDiscoverySuperUserEnabled $true
+```powershell
+Set-IRMConfiguration -EDiscoverySuperUserEnabled $true
+```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, voir [Set-IRMConfiguration](https://technet.microsoft.com/fr-fr/library/dd979792\(v=exchg.150\)).
 

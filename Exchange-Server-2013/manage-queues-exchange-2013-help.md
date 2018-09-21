@@ -53,11 +53,15 @@ Pour afficher les files d'attente, utilisez la syntaxe suivante.
 
 Cet exemple affiche des informations de base concernant toutes les files d'attente non vides sur le serveur de boîtes aux lettres Exchange 2013 nommé Mailbox01.
 
-    Get-Queue -Server Mailbox01 -Exclude Empty
+```powershell
+Get-Queue -Server Mailbox01 -Exclude Empty
+```
 
 Cet exemple affiche des informations détaillées concernant toutes les files d'attente contenant plus de 100 messages sur le serveur de boîte aux lettres sur lequel la commande est exécutée.
 
-    Get-Queue -Filter {MessageCount -gt 100} | Format-List
+```powershell
+Get-Queue -Filter {MessageCount -gt 100} | Format-List
+```
 
 ## Utiliser l'environnement de ligne de commande pour afficher des informations récapitulatives de file s'attente sur plusieurs serveurs Exchange
 
@@ -73,11 +77,15 @@ Pour afficher des informations récapitulatives concernant les files d'attente s
 
 Cet exemple montre comment afficher des informations récapitulatives concernant les files d'attente sur tous les serveurs de boîtes aux lettres Exchange 2013 situés dans le site Active Directory nommé FirstSite dont le nombre de messages et supérieur à 100.
 
-    Get-QueueDigest -Site FirstSite -Filter {MessageCount -gt 100}
+```powershell
+Get-QueueDigest -Site FirstSite -Filter {MessageCount -gt 100}
+```
 
 Cet exemple montre comment afficher des informations récapitulatives concernant les files d'attente sur tous les serveurs de boîtes aux lettres Exchange 2013 au sein du groupe de disponibilité de base de données (DAG) nommé DAG01 où l'état de la file d'attente a la valeur **Nouvelle tentative**.
 
-    Get-QueueDigest -Dag DAG01 -Filter {Status -eq "Retry"}
+```powershell
+Get-QueueDigest -Dag DAG01 -Filter {Status -eq "Retry"}
+```
 
 ## Reprendre des files d'attente
 
@@ -111,11 +119,15 @@ Pour reprendre des files d'attente, utilisez la syntaxe suivante.
 
 Cet exemple montre comment reprendre toutes les files d'attente dont l'état est Suspendu sur le serveur local.
 
-    Resume-Queue -Filter {Status -eq "Suspended"}
+```powershell
+Resume-Queue -Filter {Status -eq "Suspended"}
+```
 
 Cet exemple montre comment reprendre la file d'attente de remise suspendue nommée contoso.com sur le serveur nommé Mailbox01.
 
-    Resume-Queue -Identity Mailbox01\contoso.com
+```powershell
+Resume-Queue -Identity Mailbox01\contoso.com
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -157,11 +169,15 @@ Pour réessayer des files d'attente, utilisez la syntaxe suivante.
 
 Cet exemple montre comment réessayer toutes les files d'attente dont l'état est Nouvelle tentative sur le serveur local.
 
-    Retry-Queue -Filter {status -eq "retry"}
+```powershell
+Retry-Queue -Filter {status -eq "retry"}
+```
 
 Cet exemple montre comment réessayer la file d'attente nommée contoso.com dont l'état est `Retry` sur le serveur nommé Mailbox01.
 
-    Retry-Queue -Identity Mailbox01\contoso.com
+```powershell
+Retry-Queue -Identity Mailbox01\contoso.com
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -189,11 +205,15 @@ Pour resoumettre des messages, utilisez la syntaxe suivante :
 
 Cet exemple montre comment resoumettre tous les messages situés dans une file d'attente de remise dont l'état est Nouvelle tentative sur le serveur nommé Mailbox01.
 
-    Retry-Queue -Filter {Status -eq "Retry"} -Server Mailbox01 -Resubmit $true
+```powershell
+Retry-Queue -Filter {Status -eq "Retry"} -Server Mailbox01 -Resubmit $true
+```
 
 Cet exemple montre comment resoumettre tous les messages situés dans la file d'attente inaccessible sur le serveur Mailbox01.
 
-    Retry-Queue -Identity Mailbox01\Unreachable -Resubmit $true
+```powershell
+Retry-Queue -Identity Mailbox01\Unreachable -Resubmit $true
+```
 
 ## Resoumettre les messages de la file d'attente de messages incohérents
 
@@ -221,15 +241,21 @@ Pour resoumettre des messages de la file d'attente de messages incohérents, pro
 
 1.  Recherchez l'identité du message en exécutant la commande suivante.
     
-        Get-Message -Queue Poison | Format-Table Identity
+    ```powershell
+Get-Message -Queue Poison | Format-Table Identity
+```
 
 2.  Utilisez l'identité du message trouvée à l'étape précédente dans la commande suivante.
     
-        Resume-Message <PoisonMessageIdentity>
+    ```powershell
+Resume-Message <PoisonMessageIdentity>
+```
     
     Cet exemple montre comment reprendre un message de la file d'attente de messages incohérents dont la valeur d'identité est 222.
     
-        Resume-Message 222
+    ```powershell
+Resume-Message 222
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -265,11 +291,15 @@ Pour suspendre une file d'attente, utilisez la syntaxe suivante.
 
 Cet exemple montre comment suspendre toutes les files d'attente sur le serveur local dont le nombre de messages est supérieur ou égal à 1 000 et dont l'état est Nouvelle tentative.
 
-    Suspend-Queue -Filter {MessageCount -ge 1000 -and Status -eq "Retry"}
+```powershell
+Suspend-Queue -Filter {MessageCount -ge 1000 -and Status -eq "Retry"}
+```
 
 Cet exemple montre comment suspendre la file d'attente nommée contoso.com sur le serveur nommé Mailbox01.
 
-    Suspend-Queue -Identity Mailbox01\contoso.com
+```powershell
+Suspend-Queue -Identity Mailbox01\contoso.com
+```
 
 ## Comment savoir si cela a fonctionné ?
 

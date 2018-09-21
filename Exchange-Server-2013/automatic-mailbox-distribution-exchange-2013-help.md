@@ -55,7 +55,9 @@ Le paramètre *IsExcludedFromProvisioning* a deux valeurs valides, `$True` et `
 
 Pour exclure une base de données de boîtes aux lettres de la distribution automatique, utilisez la commande suivante :
 
-    Set-MailboxDatabase <database name> -IsExcludedFromProvisioning $True
+```powershell
+Set-MailboxDatabase <database name> -IsExcludedFromProvisioning $True
+```
 
 Quand une base de données de boîtes aux lettres est exclue de la distribution automatique, le seul moyen de créer une boîte aux lettres dans la base de données ou d’y déplacer une boîte aux lettres consiste à utiliser le paramètre *Database* sur les cmdlets **New-Mailbox** et **Enable-Mailbox** ou le paramètre *TargetDatabase* sur la cmdlet **New-MoveRequest**.
 

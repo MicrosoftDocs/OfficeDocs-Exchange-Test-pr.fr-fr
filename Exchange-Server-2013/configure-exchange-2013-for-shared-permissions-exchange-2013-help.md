@@ -133,7 +133,9 @@ Pour passer des autorisations fractionnées Active Directory aux autorisations p
 
 1.  Dans une invite de commandes Windows, exécutez la commande suivante du support d’installation d’Exchange 2013 pour désactiver les autorisations fractionnées Active Directory.
     
-        setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+    ```powershell
+setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+```
 
 2.  Depuis l’environnement de ligne de commande Exchange Management Shell, exécutez les commandes suivantes pour ajouter des attributions de rôles ordinaires entre les rôles Création du destinataire de messagerie et Création du groupe de sécurité et gestion et les groupes de rôles Gestion de l’organisation et Gestion des destinataires.
     

@@ -49,7 +49,9 @@ Si vous ne souhaitez pas abonner le serveur de transport Edge à un site Active 
     
     L’exemple suivant crée un fichier d’abonnement Edge nommé EdgeSubscriptionInfo.xml dans le dossier C:\\My Documents. Le paramètre *Force* supprime les invites confirmant que les commandes seront désactivées, ainsi que les avertissements indiquant que les données de configuration seront remplacées sur le serveur de transport Edge.
     
-        New-EdgeSubscription -FileName "C:\My Documents\EdgeSubscriptionInfo.xml" -Force
+    ```powershell
+New-EdgeSubscription -FileName "C:\My Documents\EdgeSubscriptionInfo.xml" -Force
+```
 
 2.  Copiez le fichier d’abonnement Edge créé vers un serveur de boîtes aux lettres dans le site Active Directory auquel vous abonnez le serveur de transport Edge.
 
@@ -67,7 +69,9 @@ Si vous ne souhaitez pas abonner le serveur de transport Edge à un site Active 
 
 4.  Sur le serveur de boîtes aux lettres, exécutez la commande suivante pour démarrer la première synchronisation EdgeSync.
     
-        Start-EdgeSynchronization
+    ```powershell
+Start-EdgeSynchronization
+```
 
 5.  Une fois que vous avez terminé, nous vous recommandons vivement de supprimer le fichier d’abonnement Edge à la fois du serveur de transport Edge et du serveur de boîtes aux lettres. Le fichier d’abonnement Edge contient des informations sur les informations d’identification utilisées lors du processus de communication LDAP.
 

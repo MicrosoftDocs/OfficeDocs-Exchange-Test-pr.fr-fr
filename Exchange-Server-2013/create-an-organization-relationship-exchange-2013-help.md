@@ -111,7 +111,9 @@ L’exécution réussie de l’Assistant **Nouvelle relation organisationnelle**
 
 Pour vérifier que vous avez créé la relation d'organisation avec succès, exécutez la commande Shell suivante pour vérifier les informations de relation d'organisation :
 
-    Get-OrganizationRelationship | format-list
+```powershell
+Get-OrganizationRelationship | format-list
+```
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.

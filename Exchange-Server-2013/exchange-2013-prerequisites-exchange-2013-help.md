@@ -84,11 +84,15 @@ Après avoir installé les logiciels indiqués ci-dessus, suivez les étapes sui
     
       - Sur un ordinateur Windows Server 2012 R2 ou Windows Server 2012, exécutez la commande suivante.
         
-            Install-WindowsFeature RSAT-ADDS
+        ```powershell
+Install-WindowsFeature RSAT-ADDS
+```
     
       - Sur un ordinateur Windows Server 2008 R2 SP1, exécutez la commande suivante.
         
-            Add-WindowsFeature RSAT-ADDS
+        ```powershell
+Add-WindowsFeature RSAT-ADDS
+```
 
 ## Conditions préalables pour Windows Server 2012 R2 et Windows Server 2012
 
@@ -134,7 +138,9 @@ Procédez comme suit pour installer les rôles Windows requis et les fonctionnal
 
 2.  Exécutez la commande suivante pour installer les composants Windows requis.
     
-        Install-WindowsFeature ADLDS
+    ```powershell
+Install-WindowsFeature ADLDS
+```
 
 Installez la version de Microsoft .NET Framework qui correspond à la version d’Exchange 2013 que vous installez :
 
@@ -166,7 +172,9 @@ Procédez comme suit pour installer les rôles Windows requis et les fonctionnal
 
 2.  Exécutez la commande suivante pour charger le module Gestionnaire de serveur.
     
-        Import-Module ServerManager
+    ```powershell
+Import-Module ServerManager
+```
 
 3.  Exécutez la commande suivante pour installer les composants Windows requis.
     
@@ -204,11 +212,15 @@ Procédez comme suit pour installer les rôles Windows requis et les fonctionnal
 
 2.  Exécutez la commande suivante pour charger le module Gestionnaire de serveur.
     
-        Import-Module ServerManager
+    ```powershell
+Import-Module ServerManager
+```
 
 3.  Exécutez la commande suivante pour installer les composants Windows requis.
     
-        Add-WindowsFeature NET-Framework, ADLDS
+    ```powershell
+Add-WindowsFeature NET-Framework, ADLDS
+```
 
 Une fois que vous avez installé les rôles et les fonctions du système d'exploitation, installez les logiciels suivants dans l'ordre indiqué :
 

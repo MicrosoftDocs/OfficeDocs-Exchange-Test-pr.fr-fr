@@ -51,21 +51,29 @@ Pour activer ou désactiver complètement le filtrage des connexions, vous devez
 
 Pour désactiver le filtrage des connexions, exécutez la commande suivante :
 
-    Disable-TransportAgent "Connection Filtering Agent"
+```powershell
+Disable-TransportAgent "Connection Filtering Agent"
+```
 
 Pour activer le filtrage des connexions, exécutez la commande suivante :
 
-    Enable-TransportAgent "Connection Filtering Agent"
+```powershell
+Enable-TransportAgent "Connection Filtering Agent"
+```
 
 Pour que la modification soit prise en compte, redémarrez le service de transport Microsoft Exchange en exécutant la commande suivante :
 
-    Restart-Service MSExchangeTransport
+```powershell
+Restart-Service MSExchangeTransport
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien activé ou désactivé le filtrage des connexions, exécutez la commande suivante et assurez-vous que la valeur affichée est celle que vous avez configurée.
 
-    Get-TransportAgent "Connection Filtering Agent" | Format-List Enabled
+```powershell
+Get-TransportAgent "Connection Filtering Agent" | Format-List Enabled
+```
 
 ## Procédures de configuration des listes d’adresses IP bloquées
 
@@ -83,17 +91,23 @@ Pour afficher la configuration de la liste d’adresses IP bloquées, exécutez 
 
 Pour désactiver la liste d’adresses IP bloquées, exécutez la commande suivante :
 
-    Set-IPBlockListConfig -Enabled $false
+```powershell
+Set-IPBlockListConfig -Enabled $false
+```
 
 Pour activer la liste d’adresses IP bloquées, exécutez la commande suivante :
 
-    Set-IPBlockListConfig -Enabled $true
+```powershell
+Set-IPBlockListConfig -Enabled $true
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien activé ou désactivé la liste d’adresses IP bloquées, exécutez la commande suivante et assurez-vous que la valeur affichée est celle que vous avez configurée.
 
-    Get-IPBlockListConfig | Format-List Enabled
+```powershell
+Get-IPBlockListConfig | Format-List Enabled
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer la liste d’adresses IP bloquées
 
@@ -123,17 +137,23 @@ Pour vérifier que vous avez bien configuré la liste d’adresses IP bloquées,
 
 Pour afficher toutes les entrées de liste d’adresses IP bloquées, exécutez la commande suivante :
 
-    Get-IPBlockListEntry
+```powershell
+Get-IPBlockListEntry
+```
 
 Notez que chaque entrée de liste d’adresses IP bloquées est identifiée par un nombre entier. Ce numéro d’identification est attribuée dans l’ordre croissant à mesure que vous ajoutez des entrées à la liste d’adresses IP bloquées et à la liste d’adresses IP autorisées.
 
 Pour afficher une entrée de liste d’adresses IP bloquées spécifique, utilisez la syntaxe suivante :
 
-    Get-IPBlockListEntry <-Identity IdentityInteger | -IPAddress IPAddress>
+```powershell
+Get-IPBlockListEntry <-Identity IdentityInteger | -IPAddress IPAddress>
+```
 
 Par exemple, pour afficher l’entrée de liste d’adresses IP bloquées qui contient l’adresse IP 192.168.1.13, exécutez la commande suivante :
 
-    Get-IPBlockListEntry -IPAddress 192.168.1.13
+```powershell
+Get-IPBlockListEntry -IPAddress 192.168.1.13
+```
 
 > [!NOTE]
 > Lorsque vous utilisez le paramètre <em>IPAddress</em>, l’entrée de liste d’adresses IP bloquées obtenue peut être une adresse IP individuelle, une plage d’adresses IP ou une adresse IP de routage CIDR (Classless InterDomain Routing). Pour utiliser le paramètre <em>Identity</em>, vous devez indiquer le nombre entier attribué à l’entrée de la liste d’adresses IP bloquées.
@@ -147,33 +167,45 @@ Pour ajouter des entrées de liste d’adresses IP bloquées, exécutez la comma
 
 L’exemple de code suivant permet d’ajouter l’entrée de liste d’adresses IP bloquées correspondant à la plage d’adresses IP 192.168.1.10 à 192.168.1.15 et de définir la date d’expiration de l’entrée sur le 4 juillet 2014 à 15h00.
 
-    Add-IPBlockListEntry -IPRange 192.168.1.10-192.168.1.15 -ExpirationTime "7/4/2014 15:00"
+```powershell
+Add-IPBlockListEntry -IPRange 192.168.1.10-192.168.1.15 -ExpirationTime "7/4/2014 15:00"
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien ajouté l’entrée de liste d’adresses IP bloquées, exécutez la commande suivante et assurez-vous que la nouvelle entrée est bien affichée.
 
-    Get-IPBlockListEntry
+```powershell
+Get-IPBlockListEntry
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour supprimer des entrées de liste d’adresses IP bloquées
 
 Pour supprimer des entrées de liste d’adresses IP bloquées, utilisez la syntaxe suivante :
 
-    Remove-IPBlockListEntry <IdentityInteger>
+```powershell
+Remove-IPBlockListEntry <IdentityInteger>
+```
 
 L’exemple de code suivant permet de supprimer l’entrée de liste d’adresses IP bloquées portant la valeur d’*Identity* 3.
 
-    Remove-IPBlockListEntry 3
+```powershell
+Remove-IPBlockListEntry 3
+```
 
 L’exemple de code suivant permet de supprimer l’entrée de liste d’adresses IP bloquées qui contient l’adresse IP 192.168.1.12 sans utiliser la valeur d’*Identity*. Notez que l’entrée de liste d’adresses IP bloquées peut être une adresse IP individuelle ou une plage d’adresses IP.
 
-    Get-IPBlockListEntry -IPAddress 192.168.1.12 | Remove-IPBlockListEntry
+```powershell
+Get-IPBlockListEntry -IPAddress 192.168.1.12 | Remove-IPBlockListEntry
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien supprimé l’entrée de liste d’adresses IP bloquées, exécutez la commande suivante et assurez-vous que l’entrée que vous avez supprimée n’apparaît plus.
 
-    Get-IPBlockListEntry
+```powershell
+Get-IPBlockListEntry
+```
 
 ## Procédures de configuration des fournisseurs de listes d’adresses IP bloquées
 
@@ -191,17 +223,23 @@ Pour afficher la façon dont le filtrage des connexions utilise l’ensemble des
 
 Pour désactiver tous les fournisseurs de listes d’adresses IP bloquées, exécutez la commande suivante :
 
-    Set-IPBlockListProvidersConfig -Enabled $false
+```powershell
+Set-IPBlockListProvidersConfig -Enabled $false
+```
 
 Pour activer tous les fournisseurs de listes d’adresses IP bloquées, exécutez la commande suivante :
 
-    Set-IPBlockListProvidersConfig -Enabled $true
+```powershell
+Set-IPBlockListProvidersConfig -Enabled $true
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien activé ou désactivé tous les fournisseurs de listes d’adresses IP bloquées, exécutez la commande suivante et assurez-vous que la valeur affichée est celle que vous avez configurée.
 
-    Get-IPBlockListProvidersConfig | Format-List Enabled
+```powershell
+Get-IPBlockListProvidersConfig | Format-List Enabled
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer tous les fournisseurs de listes d’adresses IP bloquées
 
@@ -231,11 +269,15 @@ Pour vérifier que vous avez bien configuré tous les fournisseurs de listes d�
 
 Pour afficher une liste récapitulative de tous les fournisseurs de listes d’adresses IP bloquées, exécutez la commande suivante :
 
-    Get-IPBlockListProvider
+```powershell
+Get-IPBlockListProvider
+```
 
 Pour afficher les détails d’un fournisseur spécifique, utilisez la syntaxe suivante :
 
-    Get-IPBlockListProvider <IPBlockListProviderIdentity>
+```powershell
+Get-IPBlockListProvider <IPBlockListProviderIdentity>
+```
 
 L’exemple de code suivant permet d’afficher des informations relatives au fournisseur nommé « Contoso IP Block List Provider ».
 
@@ -267,27 +309,37 @@ Pour plus d’informations, voir [Add-IPBlockListProvider](https://technet.micro
 
 Pour vérifier que vous avez bien ajouté un fournisseur de listes d’adresses IP bloquées, exécutez la commande suivante et assurez-vous que le nouveau fournisseur de listes d’adresses IP bloquées apparaît.
 
-    Get-IPBlockListProvider
+```powershell
+Get-IPBlockListProvider
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour activer ou désactiver un fournisseur de listes d’adresses IP bloquées
 
 Pour activer ou désactiver un fournisseur de listes d’adresses IP bloquées spécifique, utilisez la syntaxe suivante :
 
-    Set-IPBlockListProvider <IPBlockListProviderIdentity> -Enabled <$true | $false>
+```powershell
+Set-IPBlockListProvider <IPBlockListProviderIdentity> -Enabled <$true | $false>
+```
 
 L’exemple de code suivant permet de désactiver le fournisseur de listes d’adresses IP bloquées nommé Contoso IP Block List Provider.
 
-    Set-IPBlockListProvider "Contoso IP Block List Provider" -Enabled $false
+```powershell
+Set-IPBlockListProvider "Contoso IP Block List Provider" -Enabled $false
+```
 
 L’exemple de code suivant permet de activer le fournisseur de listes d’adresses IP bloquées nommé Contoso IP Block List Provider.
 
-    Set-IPBlockListProvider "Contoso IP Block List Provider" -Enabled $true
+```powershell
+Set-IPBlockListProvider "Contoso IP Block List Provider" -Enabled $true
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien activé ou désactivé un fournisseur de listes d’adresses IP bloquées, exécutez la commande suivante et assurez-vous que la valeur affichée est celle que vous avez configurée.
 
-    Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List Enabled
+```powershell
+Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List Enabled
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer un fournisseur de listes d’adresses IP bloquées
 
@@ -299,7 +351,9 @@ Pour configurer un fournisseur de listes d’adresses IP bloquées existant, uti
 
 Par exemple, pour ajouter le code d’état d’adresse IP 127.0.0.1 à la liste des codes d’état existants pour le fournisseur nommé Contoso IP Block List Provider, exécutez la commande suivante :
 
-    Set-IPBlockListProvider "Contoso IP Block List Provider" -IPAddressesMatch @{Add="127.0.0.1"}
+```powershell
+Set-IPBlockListProvider "Contoso IP Block List Provider" -IPAddressesMatch @{Add="127.0.0.1"}
+```
 
 Pour plus d’informations, voir [Set-IPBlockListProvider](https://technet.microsoft.com/fr-fr/library/bb124979\(v=exchg.150\)).
 
@@ -307,33 +361,45 @@ Pour plus d’informations, voir [Set-IPBlockListProvider](https://technet.micro
 
 Pour vérifier que vous avez bien configuré un fournisseur de listes d’adresses IP bloquées, exécutez la commande suivante et assurez-vous que les valeurs affichées sont celles que vous avez configurées.
 
-    Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List
+```powershell
+Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour tester un fournisseur de listes d’adresses IP bloquées
 
 Pour tester un fournisseur de listes d’adresses IP bloquées, utilisez la syntaxe suivante.
 
-    Test-IPBlockListProvider <IPBlockListProviderIdentity> -IPAddress <IPAddressToTest>
+```powershell
+Test-IPBlockListProvider <IPBlockListProviderIdentity> -IPAddress <IPAddressToTest>
+```
 
 L’exemple de code suivant permet de tester le fournisseur de listes d’adresses IP bloquées nommé Contoso IP Block List Provider en vérifiant l’adresse IP 192.168.1.1.
 
-    Test-IPBlockListProvider "Contoso IP Block List Provider" -IPAddress 192.168.1.1
+```powershell
+Test-IPBlockListProvider "Contoso IP Block List Provider" -IPAddress 192.168.1.1
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour supprimer un fournisseur de listes d’adresses IP bloquées
 
 Pour supprimer un fournisseur de listes d’adresses IP bloquées, utilisez la syntaxe suivante :
 
-    Remove-IPBlockListProvider <IPBlockListProviderIdentity>
+```powershell
+Remove-IPBlockListProvider <IPBlockListProviderIdentity>
+```
 
 L’exemple de code suivant permet de supprimer le fournisseur de listes d’adresses IP bloquées nommé Contoso IP Block List Provider.
 
-    Remove-IPBlockListProvider "Contoso IP Block list Provider"
+```powershell
+Remove-IPBlockListProvider "Contoso IP Block list Provider"
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien supprimé un fournisseur de listes d’adresses IP bloquées, exécutez la commande suivante et assurez-vous que le fournisseur de listes d’adresses IP bloquées que vous avez supprimé n’apparaît plus.
 
-    Get-IPBlockListProvider
+```powershell
+Get-IPBlockListProvider
+```
 
 ## Procédure de configuration des listes d’adresses IP autorisées
 
@@ -351,17 +417,23 @@ Pour afficher la configuration de la liste d’adresses IP autorisées, exécute
 
 Pour désactiver la liste d’adresses IP autorisées, exécutez la commande suivante :
 
-    Set-IPAllowListConfig -Enabled $false
+```powershell
+Set-IPAllowListConfig -Enabled $false
+```
 
 Pour activer la liste d’adresses IP autorisées, exécutez la commande suivante :
 
-    Set-IPAllowListConfig -Enabled $true
+```powershell
+Set-IPAllowListConfig -Enabled $true
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien activé ou désactivé la liste d’adresses IP autorisées, exécutez la commande suivante et assurez-vous que la valeur affichée est celle que vous avez configurée.
 
-    Get-IPAllowListConfig | Format-List Enabled
+```powershell
+Get-IPAllowListConfig | Format-List *Enabled
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer la liste d’adresses IP autorisées
 
@@ -371,7 +443,9 @@ Pour configurer la liste d’adresses IP autorisées, utilisez la syntaxe suivan
 
 Cet exemple de code permet de configurer la liste d’adresses IP autorisées pour filtrer les connexions entrantes issues de serveurs de messagerie internes et externes. Par défaut, seules les connexions issues de serveurs de messagerie externes sont filtrées (*ExternalMailEnabled* est défini sur `$true` et *InternalMailEnabled* sur `$false`). Les connexions authentifiées et non authentifiées issues de partenaires externes sont considérées comme des connexions externes.
 
-    Set-IPAllowListConfig -InternalMailEnabled $true
+```powershell
+Set-IPAllowListConfig -InternalMailEnabled $true
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -383,17 +457,23 @@ Pour vérifier que vous avez bien configuré la liste d’adresses IP autorisée
 
 Pour afficher toutes les entrées de liste d’adresses IP autorisées, exécutez la commande suivante :
 
-    Get-IPAllowListEntry
+```powershell
+Get-IPAllowListEntry
+```
 
 Notez que chaque entrée de liste d’adresses IP autorisées est identifiée par un nombre entier. Ce numéro d’identification est attribuée dans l’ordre croissant à mesure que vous ajoutez des entrées à la liste d’adresses IP bloquées et à la liste d’adresses IP autorisées.
 
 Pour afficher une entrée de liste d’adresses IP autorisées spécifique, utilisez la syntaxe suivante :
 
-    Get-IPAllowListEntry <-Identity IdentityInteger | -IPAddress IPAddress>
+```powershell
+Get-IPAllowListEntry <-Identity IdentityInteger | -IPAddress IPAddress>
+```
 
 Par exemple, pour afficher l’entrée de liste d’adresses IP autorisées qui contient l’adresse IP 192.168.1.13, exécutez la commande suivante :
 
-    Get-IPAllowListEntry -IPAddress 192.168.1.13
+```powershell
+Get-IPAllowListEntry -IPAddress 192.168.1.13
+```
 
 > [!NOTE]
 > Lorsque vous utilisez le paramètre <em>IPAddress</em>, l’entrée de liste d’adresses IP autorisées obtenue peut être une adresse IP individuelle, une plage d’adresses IP ou une adresse IP de routage CIDR (Classless InterDomain Routing). Pour utiliser le paramètre <em>Identity</em>, vous devez indiquer de nombre entier attribué à l’entrée de la liste d’adresses IP autorisées.
@@ -407,33 +487,45 @@ Pour ajouter des entrées de liste d’adresses IP autorisées, exécutez la com
 
 Cet exemple de code permet d’ajouter l’entrée de liste d’adresses IP autorisées correspondant à la plage d’adresses IP 192.168.1.10 à 192.168.1.15 et de définir la date d’expiration de l’entrée sur le 4 juillet 2014 à 15h00.
 
-    Add-IPAllowListEntry -IPRange 192.168.1.10-192.168.1.15 -ExpirationTime "7/4/2014 15:00"
+```powershell
+Add-IPAllowListEntry -IPRange 192.168.1.10-192.168.1.15 -ExpirationTime "7/4/2014 15:00"
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien ajouté l’entrée de liste d’adresses IP autorisées, exécutez la commande suivante et assurez-vous que la nouvelle entrée est bien affichée.
 
-    Get-IPAllowListEntry
+```powershell
+Get-IPAllowListEntry
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour supprimer des entrées de liste d’adresses IP autorisées
 
 Pour supprimer des entrées de liste d’adresses IP autorisées, exécutez la commande suivante :
 
-    Remove-IPAllowListEntry <IdentityInteger>
+```powershell
+Remove-IPAllowListEntry <IdentityInteger>
+```
 
 L’exemple de code suivant permet de supprimer l’entrée de liste d’adresses IP autorisées portant la valeur d’*Identity* 3.
 
-    Remove-IPAllowListEntry 3
+```powershell
+Remove-IPAllowListEntry 3
+```
 
 Cet exemple de code permet de supprimer l’entrée de liste d’adresses IP autorisées qui contient l’adresse IP 192.168.1.12 sans utiliser la valeur d’*Identity*. Notez que l’entrée de liste d’adresses IP autorisées peut être une adresse IP individuelle ou une plage d’adresses IP.
 
-    Get-IPAllowListEntry -IPAddress 192.168.1.12 | Remove-IPAllowListEntry
+```powershell
+Get-IPAllowListEntry -IPAddress 192.168.1.12 | Remove-IPAllowListEntry
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien supprimé l’entrée de liste d’adresses IP autorisées, exécutez la commande suivante et assurez-vous que l’entrée que vous avez supprimée n’apparaît plus.
 
-    Get-IPAllowListEntry
+```powershell
+Get-IPAllowListEntry
+```
 
 ## Procédures de configuration des fournisseurs de listes d’adresses IP autorisées
 
@@ -451,17 +543,23 @@ Pour voir la façon dont le filtrage des connexions utilise tous les fournisseur
 
 Pour désactiver tous les fournisseurs de listes d’adresses IP autorisées, exécutez la commande suivante :
 
-    Set-IPAllowListProvidersConfig -Enabled $false
+```powershell
+Set-IPAllowListProvidersConfig -Enabled $false
+```
 
 Pour activer tous les fournisseurs de listes d’adresses IP autorisées, exécutez la commande suivante :
 
-    Set-IPAllowListProvidersConfig -Enabled $true
+```powershell
+Set-IPAllowListProvidersConfig -Enabled $true
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien activé ou désactivé tous les fournisseurs de listes d’adresses IP autorisées, exécutez la commande suivante et assurez-vous que la valeur affichée est celle que vous avez configurée.
 
-    Get-IPAllowListProvidersConfig | Format-List Enabled
+```powershell
+Get-IPAllowListProvidersConfig | Format-List *Enabled
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer tous les fournisseurs de listes d’adresses IP autorisées
 
@@ -471,7 +569,9 @@ Pour configurer la façon dont le filtrage des connexions utilise tous les fourn
 
 Cet exemple de code permet de configurer tous les fournisseurs de listes d’adresses IP autorisées pour filtrer les connexions entrantes issues de serveurs de messagerie internes et externes. Par défaut, seules les connexions issues de serveurs de messagerie externes sont filtrées (*ExternalMailEnabled* est défini sur `$true` et *InternalMailEnabled* sur `$false`). Les connexions authentifiées et non authentifiées issues de partenaires externes sont considérées comme des connexions externes.
 
-    Set-IPAllowListProvidersConfig -InternalMailEnabled $true
+```powershell
+Set-IPAllowListProvidersConfig -InternalMailEnabled $true
+```
 
 Pour plus d’informations, voir [Set-IPBlockListProvidersConfig](https://technet.microsoft.com/fr-fr/library/aa998543\(v=exchg.150\)).
 
@@ -485,11 +585,15 @@ Pour vérifier que vous avez bien configuré tous les fournisseurs de listes d�
 
 Pour afficher une liste récapitulative de tous les fournisseurs de listes d’adresses IP autorisées, exécutez la commande suivante :
 
-    Get-IPAllowListProvider
+```powershell
+Get-IPAllowListProvider
+```
 
 Pour afficher les détails d’un fournisseur spécifique, utilisez la syntaxe suivante :
 
-    Get-IPAllowListProvider <IPAllowListProviderIdentity>
+```powershell
+Get-IPAllowListProvider <IPAllowListProviderIdentity>
+```
 
 Cet exemple de code permet d’afficher des informations relatives au fournisseur nommé « Contoso IP Allow List Provider ».
 
@@ -521,27 +625,37 @@ Pour plus d’informations, voir [Add-IPBlockListProvider](https://technet.micro
 
 Pour vérifier que vous avez bien ajouté le fournisseur de listes d’adresses IP autorisées, exécutez la commande suivante et assurez-vous que le nouveau fournisseur de listes d’adresses IP autorisées s’affiche.
 
-    Get-IPAllowListProvider
+```powershell
+Get-IPAllowListProvider
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour activer ou désactiver un fournisseur de listes d’adresses IP autorisées
 
 Pour activer ou désactiver un fournisseur de listes d’adresses IP autorisées spécifique, utilisez la syntaxe suivante :
 
-    Set-IPAllowListProvider <IPAllowListProviderIdentity> -Enabled <$true | $false>
+```powershell
+Set-IPAllowListProvider <IPAllowListProviderIdentity> -Enabled <$true | $false>
+```
 
 L’exemple de code suivant permet de désactiver le fournisseur de listes d’adresses IP autorisées nommé Contoso IP Allow List Provider.
 
-    Set-IPAllowListProvider "Contoso IP Allow List Provider" -Enabled $false
+```powershell
+Set-IPAllowListProvider "Contoso IP Allow List Provider" -Enabled $false
+```
 
 L’exemple de code suivant permet d’activer le fournisseur de listes d’adresses IP autorisées nommé Contoso IP Allow List Provider.
 
-    Set-IPAllowListProvider "Contoso IP Allow List Provider" -Enabled $true
+```powershell
+Set-IPAllowListProvider "Contoso IP Allow List Provider" -Enabled $true
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien activé ou désactivé un fournisseur de listes d’adresses IP autorisées, exécutez la commande suivante et assurez-vous que la valeur affichée est celle que vous avez configurée.
 
-    Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List Enabled
+```powershell
+Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List Enabled
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer un fournisseur de listes d’adresses IP autorisées
 
@@ -553,7 +667,9 @@ Pour configurer un fournisseur de listes d’adresses IP autorisées, utilisez l
 
 Par exemple, pour ajouter le code d’état de l’adresse IP 127.0.0.1 à la liste des codes d’état existants pour le fournisseur de listes d’adresses IP autorisées nommé Contoso IP Allow List Provider, exécutez la commande suivante :
 
-    Set-IPAllowListProvider "Contoso IP Allow List Provider" -IPAddressesMatch @{Add="127.0.0.1"}
+```powershell
+Set-IPAllowListProvider "Contoso IP Allow List Provider" -IPAddressesMatch @{Add="127.0.0.1"}
+```
 
 Pour plus d’informations, voir [Set-IPBlockListProvider](https://technet.microsoft.com/fr-fr/library/bb124979\(v=exchg.150\)).
 
@@ -561,31 +677,43 @@ Pour plus d’informations, voir [Set-IPBlockListProvider](https://technet.micro
 
 Pour vérifier que vous avez bien configuré un fournisseur de listes d’adresses IP autorisées, exécutez la commande suivante et assurez-vous que les valeurs affichées sont celles que vous avez configurées.
 
-    Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List
+```powershell
+Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour tester un fournisseur de listes d’adresses IP autorisées
 
 Pour tester un fournisseur de listes d’adresses IP autorisées, utilisez la syntaxe suivante :
 
-    Test-IPAllowListProvider <IPAllowListProviderIdentity> -IPAddress <IPAddressToTest>
+```powershell
+Test-IPAllowListProvider <IPAllowListProviderIdentity> -IPAddress <IPAddressToTest>
+```
 
 L’exemple de code suivant permet de tester le fournisseur de listes d’adresses IP autorisées nommé Contoso IP Allow List Provider en vérifiant l’adresse IP 192.168.1.1.
 
-    Test-IPAllowListProvider "Contoso IP Allow List Provider" -IPAddress 192.168.1.1
+```powershell
+Test-IPAllowListProvider "Contoso IP Allow List Provider" -IPAddress 192.168.1.1
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour supprimer un fournisseur de listes d’adresses IP autorisées
 
 Pour supprimer un fournisseur de listes d’adresses IP autorisées, utilisez la syntaxe suivante :
 
-    Remove-IPAllowListProvider <IPAllowListProviderIdentity>
+```powershell
+Remove-IPAllowListProvider <IPAllowListProviderIdentity>
+```
 
 L’exemple de code suivant permet de supprimer le fournisseur de listes d’adresses IP autorisées nommé Contoso IP Allow List Provider.
 
-    Remove-IPAllowListProvider "Contoso IP Allow List Provider"
+```powershell
+Remove-IPAllowListProvider "Contoso IP Allow List Provider"
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien supprimé le fournisseur de listes d’adresses IP autorisées, exécutez la commande suivante et assurez-vous que le fournisseur de listes d’adresses IP autorisées que vous avez supprimé n’apparaît plus.
 
-    Get-IPAllowListProvider
+```powershell
+Get-IPAllowListProvider
+```
 

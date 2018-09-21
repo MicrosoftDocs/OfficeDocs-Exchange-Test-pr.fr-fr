@@ -71,7 +71,9 @@ Dans de nombreux déploiements Exchange, créer une stratégie d’adresses de m
 
 Si les destinataires de cette unité d’organisation ne partagent aucune propriété commune par laquelle vous pouvez la filtrer, comme un département ou un emplacement, vous pouvez renseigner l’un des attributs personnalisés avec une valeur commune, comme illustré dans l’exemple.
 
-    Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
+```powershell
+Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
+```
 
 Maintenant, vous pouvez créer une stratégie d’adresse de messagerie pour tous les destinataires ayant la propriété *CustomAttribute1* égale à SalesOU, comme illustré dans l’exemple.
 
@@ -93,7 +95,9 @@ Cet exemple crée un groupe de distribution dynamique basé sur les destinataire
 
 Dans cet exemple, le paramètre *ExtensionCustomAttribute1* de la boîte aux lettres de Kweku sera mis à jour pour refléter son inscription aux formations suivantes : MATH307, ECON202 et ENGL300.
 
-    Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
+```powershell
+Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
+```
 
 Ensuite, un groupe de distribution dynamique pour tous les étudiants inscrits à MATH307 est créé à l’aide du paramètre *RecipientFilter* où *ExtensionCustomAttribute1* est égal à MATH307. Lorsque vous utilisez les paramètres *ExtentionCustomAttributes*, vous pouvez utiliser l’opérateur `-eq` au lieu de l’opérateur `-like`.
 
@@ -101,5 +105,7 @@ Ensuite, un groupe de distribution dynamique pour tous les étudiants inscrits �
 
 Dans cet exemple, les valeurs *ExtensionCustomAttribute1* de Kweku sont mises à jour pour refléter son ajout de la formation ENGL210 et son retrait de la formation ECON202.
 
-    Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 @{Add="ENGL210"; Remove="ECON202"}
+```powershell
+Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 @{Add="ENGL210"; Remove="ECON202"}
+```
 

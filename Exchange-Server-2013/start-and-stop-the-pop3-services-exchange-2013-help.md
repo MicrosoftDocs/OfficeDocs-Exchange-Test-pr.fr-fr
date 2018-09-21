@@ -57,21 +57,29 @@ Pour démarrer les services POP3 :
 
 1.  Sur l'ordinateur qui exécute le rôle serveur d'accès au client, à partir de l'environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour démarrer le service Microsoft Exchange POP3.
     
-        Start-service MSExchangePOP3
+    ```powershell
+Start-service MSExchangePOP3
+```
 
 2.  Sur l'ordinateur qui exécute le rôle serveur de boîtes aux lettres, à partir de l'environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour démarrer le service de serveur principal Microsoft Exchange POP3.
     
-        Start-service MSExchangePOP3BE
+    ```powershell
+Start-service MSExchangePOP3BE
+```
 
 Pour arrêter les services POP3 :
 
 1.  Sur l'ordinateur qui exécute le rôle serveur d'accès au client, à partir de l'environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour arrêter le service Microsoft Exchange POP3.
     
-        Stop-service MSExchangePOP3
+    ```powershell
+Stop-service MSExchangePOP3
+```
 
 2.  Sur l'ordinateur qui exécute le rôle serveur de boîtes aux lettres, à partir de l'environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour arrêter le service de serveur principal Microsoft Exchange POP3.
     
-        Stop-service MSExchangePOP3BE
+    ```powershell
+Stop-service MSExchangePOP3BE
+```
 
 ## Utiliser la commande net start pour démarrer ou arrêter les services POP3
 
@@ -79,21 +87,29 @@ Pour démarrer les services POP3 :
 
 1.  Sur l'ordinateur qui exécute le rôle serveur d'accès au client, depuis l'invite de commandes, exécutez la commande suivante pour démarrer le service Microsoft Exchange POP3.
     
-        Net Start msExchangePOP3
+    ```powershell
+Net Start msExchangePOP3
+```
 
 2.  Sur l'ordinateur qui exécute le rôle serveur de boîtes aux lettres, depuis l'invite de commandes, exécutez la commande suivante pour démarrer le service de serveur principal Microsoft Exchange POP3.
     
-        Net Start msExchangePOP3BE
+    ```powershell
+Net Start msExchangePOP3BE
+```
 
 Pour arrêter les services POP3 :
 
 1.  Sur l'ordinateur qui exécute le rôle serveur d'accès au client, depuis l'invite de commandes, exécutez la commande suivante pour arrêter le service Microsoft Exchange POP3.
     
-        Net Stop MSExchangePOP3
+    ```powershell
+Net Stop MSExchangePOP3
+```
 
 2.  Sur l'ordinateur qui exécute le rôle serveur de boîtes aux lettres, depuis l'invite de commandes, exécutez la commande suivante pour arrêter le service de serveur principal Microsoft Exchange POP3.
     
-        Net Stop MSExchangePOP3BE
+    ```powershell
+Net Stop MSExchangePOP3BE
+```
 
 ## Comment savoir si cela a fonctionné ?
 

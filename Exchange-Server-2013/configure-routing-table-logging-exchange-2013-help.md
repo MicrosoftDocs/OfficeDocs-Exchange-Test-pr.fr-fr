@@ -75,15 +75,21 @@ Pour vérifier que vous avez correctement configuré la journalisation de table 
 
 1.  Dans une fenêtre d'invite de commandes, ouvrez le fichier de configuration d'application EdgeTransport.exe.config dans le Bloc-notes en exécutant la commande suivante :
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  Modifiez la clé suivante dans la section `<appSettings>`.
     
-        <add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
+    ```command line
+<add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
+```
     
     Par exemple, pour changer l'intervalle de recalcul automatique de la table de routage sur 10 heures, utilisez la valeur suivante :
     
-        <add key="RoutingConfigReloadInterval" value="10:00:00" />
+    ```command line
+<add key="RoutingConfigReloadInterval" value="10:00:00" />
+```
 
 3.  Lorsque vous avez terminé, enregistrez et fermez le fichier EdgeTransport.exe.config.
 

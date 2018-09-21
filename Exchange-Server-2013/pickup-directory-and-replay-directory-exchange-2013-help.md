@@ -158,7 +158,9 @@ Les champs d'en-tête X décrits dans la liste suivante sont obligatoires pour l
 
   - **X-Sender**   Cet en-tête X remplace le champ d'en-tête de message `From` obligatoire dans un message SMTP classique. Au moins un champ `X-Sender` doit contenir une adresse de messagerie. Le répertoire de relecture ignore le champ d'en-tête de message `From` s'il est présent, même si le client de messagerie du destinataire affiche la valeur du champ d'en-tête `From` comme expéditeur du message. D'autres paramètres figurent généralement dans le champ `X-Sender`, comme le montre l'exemple suivant.
     
-        X-Sender: <bob@fabrikam.com> BODY=7bit RET=HDRS ENVID=12345ABCD auth=<someAuth>
+    ```powershell
+X-Sender: <bob@fabrikam.com> BODY=7bit RET=HDRS ENVID=12345ABCD auth=<someAuth>
+```
     
     > [!NOTE]
     > Ces paramètres sont des valeurs d'enveloppe de message habituellement générées par le serveur d'envoi. Les fichiers de messages exportés contiennent des paramètres semblables.
@@ -167,7 +169,9 @@ Les champs d'en-tête X décrits dans la liste suivante sont obligatoires pour l
 
   - **X-Receiver**   Cet en-tête X remplace le champ d'en-tête de message `To` obligatoire dans un message SMTP classique. Au moins un champ `X-Receiver` doit contenir une adresse de messagerie. Plusieurs champs d'en-tête `X-Receiver` sont autorisés pour plusieurs destinataires. Le répertoire de relecture ignore les champs d'en-tête de message `To` s'ils sont présents, même si le client de messagerie du destinataire affiche les valeurs des champs d'en-tête de message `To` comme expéditeurs du message. D'autres paramètres facultatifs peuvent figurer dans les champs `X-Receiver`, comme le montre l'exemple suivant.
     
-        X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+    ```powershell
+X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+```
     
     > [!NOTE]
     > Ces paramètres sont des valeurs d'enveloppe de message habituellement générées par le serveur d'envoi. Les fichiers de messages exportés contiennent des paramètres semblables. Ces paramètres sont liés aux messages de notification d'état de remise (DNS), comme décrit dans la spécification RFC 1891.
@@ -190,7 +194,9 @@ Les champs d'en-tête X décrits dans la liste suivante sont facultatifs pour le
 
 Cet exemple présente un message au format texte brut qui utilise une mise en forme valide pour le répertoire de relecture.
 
-    X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+```powershell
+X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+```
     X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345AB auth=<someAuth>
     Subject: Optional message subject
     
@@ -198,7 +204,9 @@ Cet exemple présente un message au format texte brut qui utilise une mise en fo
 
 Le contenu MIME est également pris en charge pour les fichiers de messages du répertoire de relecture. Le standard MIME définit une part importante du contenu du message, notamment les langues qui ne peuvent pas être représentées sous forme de texte ASCII 7 bits, HTML ou d'autre contenu multimédia. La présente rubrique n'a pas pour but de fournir une description détaillée du standard MIME et de ses spécifications. Cet exemple présente un message MIME simple qui utilise une mise en forme valide pour le répertoire de relecture.
 
-    X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+```powershell
+X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+```
     X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345ABCD auth=<someAuth>
     To: mary@contoso.com
     From: bob@fabrikam.com

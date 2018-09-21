@@ -93,11 +93,15 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour afficher les détails d'une entrée de rôle, utilisez la syntaxe suivante.
 
-    Get-ManagementRoleEntry <role name>\<cmdlet name> | Format-List
+```powershell
+Get-ManagementRoleEntry <role name>\<cmdlet name> | Format-List
+```
 
 Cet exemple extrait les détails de l'entrée de rôle **Set-Mailbox** sur le rôle `Recipient Administrators`.
 
-    Get-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" | Format-List
+```powershell
+Get-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" | Format-List
+```
 
 S'il n'est pas possible d'afficher tous les paramètres d'une entrée de rôle à l'aide de la cmdlet **Format-List**, voir « Afficher les paramètres d'une entrée de rôle » plus bas dans cette rubrique.
 

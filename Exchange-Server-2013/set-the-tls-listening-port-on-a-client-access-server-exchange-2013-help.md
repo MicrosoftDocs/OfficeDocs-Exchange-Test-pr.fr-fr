@@ -65,5 +65,7 @@ Pour découvrir des tâches supplémentaires relatives à la messagerie unifiée
 
 Cet exemple définit le port d'écoute TLS du serveur d'accès au client `MyClientAccessServer` sur 5561.
 
-    Set-UMCallRouterSettings -Server MyClientAccessServer -SipTlsListeningPort 5561
+```powershell
+Set-UMCallRouterSettings -Server MyClientAccessServer -SipTlsListeningPort 5561
+```
 

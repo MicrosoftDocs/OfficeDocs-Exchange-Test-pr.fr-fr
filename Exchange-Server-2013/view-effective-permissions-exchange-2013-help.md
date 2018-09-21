@@ -49,11 +49,15 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives à la gestion 
 
 Pour dresser la liste de tous les utilisateurs qui bénéficient des autorisations fournies par un rôle de gestion, utilisez la syntaxe suivante.
 
-    Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers
+```
 
 Cet exemple répertorie tous les utilisateurs qui bénéficient des autorisations fournies par le rôle Mail Recipients.
 
-    Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
+```
 
 Pour modifier les propriétés qui sont renvoyées dans la liste ou pour exporter la liste dans un fichier de valeurs séparées par une virgule (.csv), voir Utiliser l'environnement de ligne de commande Exchange Management Shell pour personnaliser la sortie et l'afficher plus loin dans cette rubrique.
 
@@ -81,7 +85,9 @@ Pour connaître tous les rôles par lesquels un utilisateur reçoit des autorisa
 
 Cet exemple recherche toutes les attributions de rôle qui accordent des autorisations à l'utilisateur Kim Akers.
 
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "Kim Akers" }
+```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where {     Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "Kim Akers" }.EffectiveUserName -Eq "Kim Akers" }
+```
 
 Si vous souhaitez modifier les propriétés qui sont renvoyées dans la liste ou l’exporter dans un fichier CSV, voir Utiliser l'environnement de ligne de commande Exchange Management Shell pour personnaliser la sortie et l'afficher ultérieurement dans cette rubrique.
 

@@ -33,19 +33,27 @@ Pour plus d’informations sur les objets, voir [Données structurées](https://
 
 La procédure de modification d’une propriété à valeurs multiples diffère légèrement de la procédure de modification d’une propriété n’acceptant qu’une valeur. Lorsque vous modifiez une propriété qui n’accepte qu’une valeur, vous pouvez lui affecter directement une valeur, comme dans la commande suivante.
 
-    Set-TransportConfig -MaxSendSize 12MB
+```powershell
+Set-TransportConfig -MaxSendSize 12MB
+```
 
 Lorsque vous utilisez cette commande pour fournir une nouvelle valeur à la propriété **MaxSendSize**, la valeur stockée est remplacée. Cela ne pose aucun problème avec les propriétés n’acceptant qu’une valeur, ce n’est, en revanche, pas le cas avec les propriétés à valeurs multiples. Supposons par exemple que la propriété **BlockedRecipients** de l’objet **RecipientFilterConfig** est configurée pour recevoir les trois valeurs indiquées dans la section précédente. Lorsque vous exécutez la commande `Get-RecipientFilterConfig | Format-List BlockedRecipients`, le résultat suivant s’affiche.
 
-    BlockedRecipients : {david@adatum.com, kim@northwindtraders.com, john@contoso.com}
+```powershell
+BlockedRecipients : {david@adatum.com, kim@northwindtraders.com, john@contoso.com}
+```
 
 Supposons maintenant que vous avez reçu une demande pour ajouter une nouvelle adresse SMTP à la liste des destinataires bloqués. Vous devez exécuter la commande suivante pour ajouter la nouvelle adresse SMTP.
 
-    Set-RecipientFilterConfig -BlockedRecipients chris@contoso.com
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients chris@contoso.com
+```
 
 Lorsque vous exécutez de nouveau la commande `Get-RecipientFilterConfig | Format-List BlockedRecipients`, vous obtenez ce qui suit.
 
-    BlockedRecipients : {chris@contoso.com}
+```powershell
+BlockedRecipients : {chris@contoso.com}
+```
 
 Ce n’est pas ce que vous attendiez. Vous souhaitiez ajouter la nouvelle adresse SMTP à la liste existante de destinataires bloqués, mais celle-ci a été remplacée par la nouvelle adresse SMTP. Ce résultat inattendu montre à titre d’exemple comment la modification de propriétés à valeurs multiples diffère de celle des propriétés qui n’acceptent qu’une seule valeur. Lorsque vous modifiez une propriété à valeurs multiples, vous devez veiller à ajouter ou supprimer les valeurs et non pas remplacer l’ensemble de la liste de valeurs. Les sections suivantes vous indiquent comment procéder.
 
@@ -81,15 +89,21 @@ La modification des propriétés à valeurs multiples suit le même processus qu
 
 La syntaxe que vous choisissez dans le tableau de syntaxe des propriétés à valeurs multiples est précisée sous la forme d’une valeur de paramètre dans une cmdlet. Par exemple, la commande suivante ajoute plusieurs valeurs à une propriété à valeurs multiples :
 
-    Set-ExampleCmdlet -Parameter @{Add="Red", "Blue", "Green"}
+```powershell
+Set-ExampleCmdlet -Parameter @{Add="Red", "Blue", "Green"}
+```
 
 Lorsque vous utilisez cette syntaxe, les valeurs que vous spécifiez sont ajoutées ou supprimées de la liste des valeurs déjà présentes dans la propriété. Prenons l’exemple **BlockedRecipients** présenté plus haut dans cette rubrique : nous pouvons désormais ajouter l’utilisateur chris@contoso.com sans remplacer les valeurs restantes dans cette propriété à l’aide de la commande suivante :
 
-    Set-RecipientFilterConfig -BlockedRecipients @{Add="chris@contoso.com"}
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients @{Add="chris@contoso.com"}
+```
 
 Si vous souhaitiez supprimer david@adatum.com de la liste des valeurs, vous utiliseriez cette commande :
 
-    Set-RecipientFilterConfig -BlockedRecipients @{Remove="david@adatum.com"}
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients @{Remove="david@adatum.com"}
+```
 
 Des combinaisons plus complexes peuvent être utilisées, notamment en ajoutant ou en supprimant simultanément des éléments dans une propriété. Pour ce faire, insérez un point-virgule (`;`) entre les actions `Add` et `Remove`. Par exemple :
 

@@ -67,7 +67,9 @@ La commande suivante active le point de terminaison du proxy MRS sur un serveur 
 
 La commande suivante active le point de terminaison du proxy MRS sur tous les serveurs d'accès au client au sein de votre organisation Exchange.
 
-    Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
+```powershell
+Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
+```
 
 > [!IMPORTANT]  
 > Comme indiqué précédemment, le point de terminaison du proxy MRS doit être activé sur chaque serveur d'accès au client au sein de votre organisation. Après avoir ajouté un serveur d'accès au client à votre organisation, exécutez la commande précédente.
@@ -87,7 +89,9 @@ Ou
 
 Exécutez la commande suivante dans l'environnement de ligne de commande :
 
-    Get-WebServicesVirtualDirectory | FL Identity,MRSProxyEnabled
+```powershell
+Get-WebServicesVirtualDirectory | FL Identity,MRSProxyEnabled
+```
 
 Vérifiez que le paramètre *MRSProxyEnabled* est défini sur `True`.
 
@@ -95,7 +99,9 @@ Une autre manière de vérifier que le point de terminaison du proxy MRS est act
 
 L'exemple suivant montre comment tester la connexion au serveur dans la forêt corp.contoso.com.
 ```
-    $Credentials = Get-Credential
+```powershell
+$Credentials = Get-Credential
+```
 ```
 ```
     Test-MigrationServerAvailability -ExchangeRemoteMove -Autodiscover -EmailAddress administrator@corp.contoso.com -Credentials $Credentials

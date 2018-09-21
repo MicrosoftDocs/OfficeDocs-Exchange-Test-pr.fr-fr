@@ -299,7 +299,9 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Cet exemple supprime la stratégie de boîte aux lettres de dossier géré et tous les dossiers gérés de la boîte aux lettres de Ken Kwok. Les dossiers gérés contenant des messages ne sont pas supprimés.
 
-    Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
+```powershell
+Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
+```
 
 ## Étape 4 : Application de la stratégie de rétention aux boîtes aux lettres utilisateur
 
@@ -311,7 +313,9 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Cet exemple montre comment appliquer la stratégie de rétention nouvellement créée RP-Corp à l'utilisateur de boîte aux lettres Ken Kwok.
 
-    Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
+```powershell
+Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)).
 
@@ -329,5 +333,7 @@ Pour vérifier la réussite de la migration des dossiers gérés vers les strat�
     
     Cette commande extrait les balises de rétention réellement appliquées à la boîte aux lettres d’April Stewart.
     
-        Get-RetentionPolicyTag -Mailbox astewart
+    ```powershell
+Get-RetentionPolicyTag -Mailbox astewart
+```
 

@@ -75,7 +75,9 @@ Après avoir utilisé la cmdlet **New-MailboxSearch** pour créer une recherche 
 
 Par exemple, vous devez exécuter la commande suivante pour lancer une recherche de découverte automatique nommée *Fabrikam Investigation* et copier les résultats de la recherche vers la boîte aux lettres de découverte spécifiée.
 
-    Start-MailboxSearch "Fabrikam Investigation"
+```powershell
+Start-MailboxSearch "Fabrikam Investigation"
+```
 
 Si vous avez utilisé le commutateur *EstimateOnly* pour obtenir une estimation des résultats de la recherche, vous devez le supprimer pour pouvoir copier ces derniers. Vous devez également indiquer une boîte aux lettres de découverte vers laquelle copier les résultats de la recherche. Par exemple, supposons que vous ayez créé une recherche à des fins d’estimation uniquement à l’aide de la commande suivante :
 
@@ -86,7 +88,9 @@ Pour copier les résultats de cette recherche vers une boîte aux lettres de dé
     Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
 ```
 ```
-    Start-MailboxSearch "FY13 Q2 Financial Results"
+```powershell
+Start-MailboxSearch "FY13 Q2 Financial Results"
+```
 ```
 
 ## Plus d’informations sur la copie des résultats de la recherche

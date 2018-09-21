@@ -59,7 +59,9 @@ Dans cette étape, déterminez les bases de données à inclure dans l’étendu
 
 Utilisez une liste de bases de données pour définir une liste statique de bases de données de boîtes aux lettres à inclure dans cette étendue. Pour créer une étendue de liste de bases de données, utilisez la syntaxe suivante.
 
-    New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```
 
 Dans cet exemple, on crée une étendue qui s’applique uniquement aux bases de données Base de données 1, Base de données 2 et Base de données 3.
 
@@ -75,7 +77,9 @@ Pour obtenir une liste des propriétés de base de données pouvant être filtr�
 
 Pour créer une étendue de filtre de base de données, utilisez la syntaxe suivante.
 
-    New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```
 
 Dans cet exemple, on crée une étendue qui inclut toutes les bases de données contenant la chaîne « ACCT » dans la propriété **Name** de la base de données.
 

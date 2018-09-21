@@ -118,7 +118,9 @@ Pour vérifier que vous avez correctement créé une boîte aux lettres liée, p
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les informations sur la nouvelle boîte aux lettres liée.
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+    ```powershell
+Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+```
 
 ## Modifier les propriétés de la boîte aux lettres liée
 
@@ -374,5 +376,7 @@ Pour vérifier que vous avez correctement modifié les propriétés d’une boî
     
     Dans l’exemple ci-dessus, où le compte principal lié a été modifié, exécutez la commande suivante pour vérifier la nouvelle valeur.
     
-        Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+    ```powershell
+Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+```
 

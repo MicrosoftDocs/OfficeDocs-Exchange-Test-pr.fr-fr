@@ -83,7 +83,9 @@ Pour plus d’informations sur la création d’une stratégie de partage, voir 
 
   - Cet exemple modifie la stratégie de partage Contoso pour contoso.com, qui est un domaine extérieur à votre organisation. Cette stratégie permet aux utilisateurs dans le domaine Contoso de voir de simples informations de disponibilité.
     
-        Set-SharingPolicy -Identity Contoso -Domains 'sales.contoso.com: CalendarSharingFreeBusySimple'
+    ```powershell
+Set-SharingPolicy -Identity Contoso -Domains 'sales.contoso.com: CalendarSharingFreeBusySimple'
+```
 
   - Cet exemple ajoute un second domaine à la stratégie de partage Contoso. Lorsque vous ajoutez un domaine à une stratégie existante, vous devez inclure tous les domaines précédemment inclus.
     
@@ -91,20 +93,28 @@ Pour plus d’informations sur la création d’une stratégie de partage, voir 
 
   - Cet exemple définit la stratégie de partage Contoso comme stratégie de partage par défaut.
     
-        Set-SharingPolicy -Identity Contoso -Default $True
+    ```powershell
+Set-SharingPolicy -Identity Contoso -Default $True
+```
 
   - Cet exemple désactive la stratégie de partage Contoso.
     
-        Set-SharingPolicy -Identity "Contoso" -Enabled $False
+    ```powershell
+Set-SharingPolicy -Identity "Contoso" -Enabled $False
+```
 
   - Le premier exemple supprime la stratégie de partage Contoso. Le second exemple supprime la stratégie de partage Contoso et supprime la confirmation de suppression de la stratégie.
     
        ```
-            Remove-SharingPolicy -Identity Contoso
+        ```powershell
+Remove-SharingPolicy -Identity Contoso
+```
        ```    
     
        ```
-            Remove-SharingPolicy -Identity Contoso -Confirm
+        ```powershell
+Remove-SharingPolicy -Identity Contoso -Confirm
+```
        ```    
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Set-SharingPolicy](https://technet.microsoft.com/fr-fr/library/dd297931\(v=exchg.150\)) et [Remove-SharingPolicy](https://technet.microsoft.com/fr-fr/library/dd351071\(v=exchg.150\)).

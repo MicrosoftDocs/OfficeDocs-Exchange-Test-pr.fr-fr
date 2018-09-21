@@ -315,7 +315,9 @@ Pour plus d'informations sur les URL internes et externes des répertoires virtu
 
 2.  Stockez le nom d'hôte de votre serveur d'accès au client dans une variable qui sera utilisée à l'étape suivante. Par exemple, Ex2013CAS.
     
-        $HostName = "Ex2013CAS"
+    ```powershell
+$HostName = "Ex2013CAS"
+```
 
 3.  Exécutez chacune des commandes suivantes dans l'environnement de ligne de commande Exchange Management Shell pour configurer chaque URL interne de sorte à ce qu'elle soit identique à l'URL externe du répertoire virtuel.
     

@@ -51,7 +51,9 @@ Pour les autres tâches de gestion relatives aux approbations de fédération, c
 
 Cet exemple illustre la suppression de l’approbation de fédération.
 
-    Remove-FederationTrust
+```powershell
+Remove-FederationTrust
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-FederationTrust](https://technet.microsoft.com/fr-fr/library/dd351153\(v=exchg.150\)).
 
@@ -63,7 +65,9 @@ Pour vérifier que vous avez bien supprimé l’approbation de fédération, eff
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour vérifier que les informations relatives à l’approbation de fédération ne sont pas renvoyées pour votre organisation Exchange.
     
-        Get-FederationTrust
+    ```powershell
+Get-FederationTrust
+```
     
     Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-FederationTrust](https://technet.microsoft.com/fr-fr/library/dd351262\(v=exchg.150\)).
 

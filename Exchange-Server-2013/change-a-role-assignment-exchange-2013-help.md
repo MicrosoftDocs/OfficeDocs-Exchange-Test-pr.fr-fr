@@ -49,15 +49,21 @@ Les attributions de rôles sont activées par défaut, impliquant que le rôle a
 
 Pour activer une attribution de rôle, utilisez la syntaxe suivante.
 
-    Set-ManagementRoleAssignment <role assignment> -Enabled $true
+```powershell
+Set-ManagementRoleAssignment <role assignment> -Enabled $true
+```
 
 Pour désactiver une attribution de rôle, utilisez la syntaxe suivante.
 
-    Set-ManagementRoleAssignment <role assignment> -Enabled $false
+```powershell
+Set-ManagementRoleAssignment <role assignment> -Enabled $false
+```
 
 Cet exemple montre comment désactiver l’attribution de rôle Attribution Support technique.
 
-    Set-ManagementRoleAssignment "Help Desk Assignment" -Enabled $false
+```powershell
+Set-ManagementRoleAssignment "Help Desk Assignment" -Enabled $false
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335173\(v=exchg.150\)).
 
@@ -81,7 +87,9 @@ Pour modifier ou ajouter une étendue prédéfinie sur une attribution de rôle,
 
 Cet exemple montre comment modifier l’étendue prédéfinie sur l’attribution du rôle de gestion Attribution de John sur MesGroupesDistribution.
 
-    Set-ManagementRoleAssignment "John's Assignment" - RecipientRelativeWriteScope MyDistributionGroups
+```powershell
+Set-ManagementRoleAssignment "John's Assignment" - RecipientRelativeWriteScope MyDistributionGroups
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335173\(v=exchg.150\)).
 
@@ -107,7 +115,9 @@ Vous pouvez soit spécifier une nouvelle étendue de configuration de filtre ou 
 
 Pour spécifier une nouvelle étendue de configuration ou en remplacer une existante, utilisez la syntaxe suivante.
 
-    Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```
 
 Cet exemple ajoute ou modifie l’étendue de configuration aux serveurs de Redmond.
 
@@ -123,11 +133,15 @@ Vous pouvez soit spécifier une nouvelle étendue de configuration de filtre ou 
 
 Pour spécifier une nouvelle étendue de configuration ou en remplacer une existante, utilisez la syntaxe suivante.
 
-    Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```
 
 Cet exemple ajoute ou modifie l’étendue de configuration aux bases de données de Redmond.
 
-    Set-ManagementRoleAssignment "Redmond Database Admins" -CustomConfigWriteScope "Redmond Databases"
+```powershell
+Set-ManagementRoleAssignment "Redmond Database Admins" -CustomConfigWriteScope "Redmond Databases"
+```
 
 Si vous souhaitez conserver la même étendue de configuration qui est appliquée à l’attribution de rôle mais que vous souhaitez modifier le filtre de base de données ou la liste des bases de données sur l’étendue, vous devez modifier l’étendue de configuration elle-même. Pour plus d’informations sur la manière de modifier les étendues, voir [Modifier l’étendue d’un rôle](change-a-role-scope-exchange-2013-help.md).
 
@@ -139,7 +153,9 @@ Vous pouvez soit ajouter une nouvelle unité d’organisation soit modifier une 
 
 Pour modifier ou ajouter une nouvelle unité d’organisation sur une attribution de rôle, utilisez la syntaxe suivante.
 
-    Set-ManagementRoleAssignment <assignment name> -RecipientOrganizationalUnitScope <OU>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -RecipientOrganizationalUnitScope <OU>
+```
 
 Cet exemple ajoute l’unité d’organisation Engineering\\Users au domaine contoso.com sur l’attribution de rôle Support technique Engineering.
 

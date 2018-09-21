@@ -81,7 +81,9 @@ Pour plus d’informations sur les filtres d’étendue de gestion et pour obten
 
 Utilisez la syntaxe suivante pour créer une étendue de filtre de serveur.
 
-    New-ManagementScope -Name <scope name> -ServerRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -ServerRestrictionFilter <filter query>
+```
 
 Dans cet exemple, une étendue qui inclut tous les serveurs au sein du site AD (Active Directory) 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' est créée.
 
@@ -95,11 +97,15 @@ Les étendues de configuration basées sur la liste de serveurs sont créées à
 
 Utilisez la syntaxe suivante pour créer une étendue basée sur une liste de serveurs.
 
-    New-ManagementScope -Name <scope name> -ServerList <server 1>, <server 2...>
+```powershell
+New-ManagementScope -Name <scope name> -ServerList <server 1>, <server 2...>
+```
 
 Cet exemple crée une étendue qui s'applique uniquement aux serveurs MBX1, MBX3 et MBX5.
 
-    New-ManagementScope -Name "Mailbox servers" -ServerList MBX1,MBX3,MBX5
+```powershell
+New-ManagementScope -Name "Mailbox servers" -ServerList MBX1,MBX3,MBX5
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementScope](https://technet.microsoft.com/fr-fr/library/dd335137\(v=exchg.150\)).
 
@@ -115,7 +121,9 @@ Pour plus d’informations sur les filtres d’étendue de gestion et pour obten
 
 Utilisez la syntaxe suivante pour créer un filtre de restriction appliqué à la base de données.
 
-    New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```
 
 Cet exemple crée une étendue qui inclut toutes les bases de données contenant la chaîne « Executive » dans la propriété **Name** de la base de données.
 
@@ -133,11 +141,15 @@ Les étendues de configuration basées sur une liste de bases de données sont c
 
 Utilisez la syntaxe suivante pour créer une étendue de liste de bases de données.
 
-    New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```
 
 Cet exemple crée une étendue qui s'applique uniquement aux bases de données Database 1, Database 2 et Database 3.
 
-    New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```powershell
+New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementScope](https://technet.microsoft.com/fr-fr/library/dd335137\(v=exchg.150\)).
 

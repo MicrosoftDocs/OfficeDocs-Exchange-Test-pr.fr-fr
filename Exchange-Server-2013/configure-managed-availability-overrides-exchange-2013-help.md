@@ -111,7 +111,9 @@ Cet exemple ajoute une substitution globale qui désactive le répondeur `Storag
 
 Pour vérifier que vous avez bien créé une substitution globale, utilisez la cmdlet **Get-GlobalMonitoringOverride** pour afficher la liste des substitutions globales :
 
-    Get-GlobalMonitoringOverride
+```powershell
+Get-GlobalMonitoringOverride
+```
 
 La substitution doit apparaître dans la liste.
 
@@ -129,7 +131,9 @@ Cet exemple supprime la substitution globale existante de la propriété `Extens
 
 Pour vérifier que vous avez bien supprimé une substitution globale, utilisez la cmdlet **Get-GlobalMonitoringOverride** pour afficher la liste des substitutions globales :
 
-    Get-GlobalMonitoringOverride
+```powershell
+Get-GlobalMonitoringOverride
+```
 
 La substitution supprimée ne doit pas apparaître dans la liste.
 

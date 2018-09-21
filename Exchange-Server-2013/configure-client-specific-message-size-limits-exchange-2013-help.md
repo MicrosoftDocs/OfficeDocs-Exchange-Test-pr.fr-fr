@@ -250,7 +250,9 @@ Pour toutes les limites de taille de message, vous devez définir des valeurs su
 
 4.  Redémarrez les services Internet (IIS) en exécutant la commande suivante :
     
-        IISReset /noforce
+    ```powershell
+IISReset /noforce
+```
 
 ## Configurer des limites de taille de message spécifiques pour les clients à partir de la ligne de commande
 

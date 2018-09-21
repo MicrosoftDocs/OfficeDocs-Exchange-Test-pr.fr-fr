@@ -69,11 +69,15 @@ Après avoir défini les paramètres de l’adresse IP et du port pour POP3, vou
 
 Cet exemple définit le port et l'adresse IP à utiliser pour communiquer avec Exchange via le service POP3 avec chiffrement SSL (Secure Sockets Layer).
 
-    Set-PopSettings -SSLBindings: IPaddress:Port
+```powershell
+Set-PopSettings -SSLBindings: IPaddress:Port
+```
 
 Cet exemple définit le port et l'adresse IP à utiliser pour communiquer avec Exchange via le service POP3 sans chiffrement ou chiffrement TLS (Transport Layer Security).
 
-    Set-PopSettings -UnencryptedOrTLSBindings IPaddress:Port
+```powershell
+Set-PopSettings -UnencryptedOrTLSBindings IPaddress:Port
+```
 
 Après avoir défini les paramètres de l’adresse IP et du port pour POP3, vous devez redémarrer le service POP3 pour que les paramètres prennent effet. Pour plus d’informations sur le redémarrage du service POP3, voir [Démarrage et arrêt des services POP3](start-and-stop-the-pop3-services-exchange-2013-help.md).
 
@@ -85,7 +89,9 @@ Procédez comme suit pour vérifier que les paramètres de l’adresse IP POP3 e
 
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
-        Get-PopSettings | format-list
+    ```powershell
+Get-PopSettings | format-list
+```
 
 2.  Vérifiez que les paramètres *UnencryptedOrTLSBindings* et *SSLBindings* sont corrects.
 
@@ -119,7 +125,9 @@ Après avoir défini les paramètres de l’adresse IP et du port pour IMAP4, vo
 
 Cet exemple définit le port et l'adresse IP à utiliser pour communiquer avec Exchange via le service IMAP4.
 
-    Set-ImapSettings -SSLBindings: IPaddress:Port
+```powershell
+Set-ImapSettings -SSLBindings: IPaddress:Port
+```
 
 Cet exemple définit le port et l'adresse IP à utiliser pour communiquer avec Exchange via le service IMAP4 sans chiffrement ou chiffrement TLS (Transport Layer Security).
 
@@ -135,7 +143,9 @@ Procédez comme suit pour vérifier que les paramètres de l’adresse IP IMAP4 
 
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
-        Get-ImapSettings | format-list
+    ```powershell
+Get-ImapSettings | format-list
+```
 
 2.  Vérifiez que les paramètres *UnencryptedOrTLSBindings* et *SSLBindings* sont corrects.
 

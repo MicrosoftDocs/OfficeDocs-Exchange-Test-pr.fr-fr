@@ -39,11 +39,15 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux rôles ? 
 
 Si vous connaissez le nom de l’attribution de rôle à supprimer, utilisez la syntaxe suivante.
 
-    Remove-ManagementRoleAssignment <assignment name>
+```powershell
+Remove-ManagementRoleAssignment <assignment name>
+```
 
 Par exemple, pour supprimer l’attribution de rôle « Tier 2 Help Desk Assignment », utilisez la commande suivante.
 
-    Remove-ManagementRoleAssignment "Tier 2 Help Desk Assignment"
+```powershell
+Remove-ManagementRoleAssignment "Tier 2 Help Desk Assignment"
+```
 
 Si vous ne connaissez pas le nom de l’attribution de rôle à supprimer, utilisez la syntaxe suivante.
 

@@ -37,7 +37,9 @@ Souhaitez-vous rechercher d’autres tâches de gestion liées aux bases de donn
 
 Cet exemple montre comment créer la base de données de récupération RDB1 sur le serveur de boîtes aux lettres MBX2.
 
-    New-MailboxDatabase -Recovery -Name RDB1 -Server MBX2
+```powershell
+New-MailboxDatabase -Recovery -Name RDB1 -Server MBX2
+```
 
 Cet exemple montre comment créer la base de données de récupération RDB2 sur le serveur de boîtes aux lettres MBX1 à l’aide d’un chemin d’accès personnalisé au fichier de la base de données et au dossier du journal.
 
@@ -51,7 +53,9 @@ Pour vérifier que vous avez bien créé une base de données de récupération,
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les informations de configuration de la base de données de récupération :
     
-        Get-MailboxDatabase <RecoveryDatabaseName> | Format-List
+    ```powershell
+Get-MailboxDatabase <RecoveryDatabaseName> | Format-List
+```
 
 ## Autres tâches
 

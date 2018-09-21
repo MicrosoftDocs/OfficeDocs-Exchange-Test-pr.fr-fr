@@ -59,7 +59,9 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux copies de 
 
 Dans cet exemple, nous supprimons une copie de base de données de boîtes aux lettres DB1 dans le serveur de boîtes aux lettres MBX1.
 
-    Remove-MailboxDatabaseCopy -Identity DB1\MBX1 -Confirm:$False
+```powershell
+Remove-MailboxDatabaseCopy -Identity DB1\MBX1 -Confirm:$False
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -69,7 +71,9 @@ Pour vérifier que vous avez bien supprimé une copie de base de données de bo�
 
   - Dans l’environnement de ligne de commande Exchange Management, exécutez la commande suivante pour vérifier la suppression de la copie.
     
-        Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
+    ```powershell
+Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
+```
     
     La copie passive supprimée n'est plus répertoriée.
 

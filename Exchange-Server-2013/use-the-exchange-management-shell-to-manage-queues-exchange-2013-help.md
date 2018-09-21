@@ -312,7 +312,9 @@ Les paramètres de filtrage et de tri disponibles pour la cmdlet **Get-QueueDige
 
 Cet exemple renvoie toutes les files d'attente externes non vides présentes sur les serveurs de boîtes aux lettres Exchange 2013 nommés Mailbox01, Mailbox02 et Mailbox03.
 
-    Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
+```powershell
+Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
+```
 
 Retour au début
 

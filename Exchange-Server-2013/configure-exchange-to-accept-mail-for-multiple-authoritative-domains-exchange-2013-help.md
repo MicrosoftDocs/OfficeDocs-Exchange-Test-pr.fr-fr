@@ -129,11 +129,15 @@ Par exemple, supposons que la stratégie d'adresse de messagerie de votre organi
 
 Pour appliquer la stratégie d'adresse de messagerie mise à jour à des destinataires, utilisez la syntaxe suivante.
 
-    Update-EmailAddressPolicy <EamilAddressPolicyIdentity>
+```powershell
+Update-EmailAddressPolicy <EamilAddressPolicyIdentity>
+```
 
 Par exemple, pour appliquer la stratégie d'adresse de messagerie mise à jour nommée « Default Policy », exécutez la commande suivante :
 
-    Update-EmailAddressPolicy "Default Policy"
+```powershell
+Update-EmailAddressPolicy "Default Policy"
+```
 
 ## Remplacement de l'adresse de messagerie principale pour un ensemble filtré de destinataires
 
@@ -191,7 +195,9 @@ Cet exemple montre comment créer une stratégie d'adresse de messagerie nommée
 
 Pour appliquer la nouvelle stratégie d'adresse de messagerie aux destinataires concernés, exécutez la commande suivante :
 
-    Update-EmailAddressPolicy "Fourth Coffee Recipients"
+```powershell
+Update-EmailAddressPolicy "Fourth Coffee Recipients"
+```
 
 ## Comment savoir si cette étape a fonctionné ?
 

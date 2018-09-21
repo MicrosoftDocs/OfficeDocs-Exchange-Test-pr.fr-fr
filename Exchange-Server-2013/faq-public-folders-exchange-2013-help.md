@@ -53,7 +53,9 @@ Le fichier .csv est utilisé pour déterminer le mappage entre la hiérarchie so
 
 Vous pouvez forcer une synchronisation Delta finale avant la finalisation (avant de verrouiller la source) en exécutant la commande Shell suivante :
 
-    Resume-PublicFolderMigrationRequest \PublicFolderMigration
+```powershell
+Resume-PublicFolderMigrationRequest \PublicFolderMigration
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Resume-PublicFolderMigrationRequest](https://technet.microsoft.com/fr-fr/library/jj218689\(v=exchg.150\)).
 
@@ -101,7 +103,9 @@ Pour plus d’informations sur les limites de stockage de dossier public, consul
 
 Exécutez la commande suivante :
 
-    Get-OrganizationConfig | Format-List RootPublicFolderMailbox
+```powershell
+Get-OrganizationConfig | Format-List RootPublicFolderMailbox
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Get-OrganizationConfig](https://technet.microsoft.com/fr-fr/library/aa997571\(v=exchg.150\)).
 
@@ -109,7 +113,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Exécutez la commande suivante pour créer la première boîte aux lettres de dossier public de la hiérarchie principale et les boîtes aux lettres de la hiérarchie secondaire.
 
-    New-Mailbox -PublicFolder -Name <name of public folder>
+```powershell
+New-Mailbox -PublicFolder -Name <name of public folder>
+```
 
 Pour plus d’informations, consultez la rubrique [Créer un dossier public](https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/create-public-folder).
 
@@ -145,7 +151,9 @@ Tout comme les versions précédentes d’Exchange, vous pouvez définir des lim
 
 Dans Exchange 2007 et Exchange 2010, vous pouvez spécifier les utilisateurs ayant eu accès à des dossiers publics spécifiques. Dans Exchange 2013, vous pouvez définir la boîte aux lettres de dossier public par défaut pour chaque utilisateur. Pour cela, exécutez la cmdlet [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)) en association avec le paramètre *DefaultPublicFolderMailbox*.
 
-    Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"
+```powershell
+Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"
+```
 
 ## Si la hiérarchie principale n’est plus disponible, quel impact cela a-t-il sur l’utilisateur ?
 

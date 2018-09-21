@@ -43,7 +43,9 @@ Pour pouvoir partager des calendriers avec une autre organisation, vous devez co
 
 Cet exemple supprime la relation d'organisation Contoso de l'organisation Exchange
 
-    Remove-OrganizationRelationship -Identity "Contoso"
+```powershell
+Remove-OrganizationRelationship -Identity "Contoso"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Remove-OrganizationRelationship](https://technet.microsoft.com/fr-fr/library/ee332362\(v=exchg.150\)).
 
@@ -55,7 +57,9 @@ Pour vérifier que la suppression a été effectuée correctement, procédez com
 
   - Exécutez la commande de l'environnement de ligne de commande suivante pour vérifier que les informations sur la relation d'organisation ont été supprimées.
     
-        Get-OrganizationRelationship | Format-List
+    ```powershell
+Get-OrganizationRelationship | Format-List
+```
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.

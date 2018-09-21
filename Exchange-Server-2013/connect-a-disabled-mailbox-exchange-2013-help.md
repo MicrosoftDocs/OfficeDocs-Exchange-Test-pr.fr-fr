@@ -81,7 +81,9 @@ Dans l’environnement de ligne de commande Exchange Management Shell, utilisez 
 
 Dans cet exemple, nous connectons une boîte aux lettres utilisateur. Le paramètre *Identity* spécifie la boîte aux lettres déconnectée dans la base de données Exchange. Le paramètre *User* indique le compte utilisateur Active Directory auquel la boîte aux lettres doit être reconnectée.
 
-    Connect-Mailbox -Identity "Jeffrey Zeng" -Database MBXDB01 -User "Jeffrey Zeng"
+```powershell
+Connect-Mailbox -Identity "Jeffrey Zeng" -Database MBXDB01 -User "Jeffrey Zeng"
+```
 
 Cet exemple connecte une boîte aux lettres liée. Le paramètre *Identity* spécifie la boîte aux lettres déconnectée dans la base de données Exchange. Le paramètre *LinkedMasterAccount* indique le compte utilisateur Active Directory dans la forêt de comptes auquel vous voulez reconnecter la boîte aux lettres. Le paramètre *Alias* spécifie l’alias, il s’agit de la partie de l’adresse de messagerie qui apparaît à gauche du symbole (@), for la boîte aux lettres reconnectée.
 
@@ -107,7 +109,9 @@ Pour vérifier qu’une boîte aux lettres désactivée a bien été connectée 
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-User <identity>
+    ```powershell
+Get-User <identity>
+```
     
     La valeur **UserMailbox** pour la propriété *RecipientType* indique que le compte utilisateur et la boîte aux lettres sont connectés. Vous pouvez également exécuter la cmdlet **Get-Mailbox** pour vérifier que la boîte aux lettres existe.
 

@@ -81,11 +81,15 @@ Vous pouvez à présent exécuter cette opération en toute sécurité, car l’
 
 1.  Rechercher les valeurs nécessaires pour l’enregistrement TXT requis en exécutant la commande suivante dans l’Environnement de ligne de commande Exchange Management Shell :
     
-        Get-FederatedDomainProof -DomainName <Domain> | Format-List Thumbprint,Proof
+    ```powershell
+Get-FederatedDomainProof -DomainName <Domain> | Format-List Thumbprint,Proof
+```
     
     Par exemple, si votre domaine fédéré est contoso.com, exécutez la commande suivante :
     
-        Get-FederatedDomainProof -DomainName contoso.com | Format-List Thumbprint,Proof
+    ```powershell
+Get-FederatedDomainProof -DomainName contoso.com | Format-List Thumbprint,Proof
+```
     
     Le résultat de la commande ressemble à ceci :
     
@@ -115,7 +119,9 @@ Pour utiliser l’Environnement de ligne de commande Exchange Management Shell a
 
 Pour utiliser l’Environnement de ligne de commande Exchange Management Shell afin d’activer le nouveau certificat de fédération, exécutez la commande suivante :
 
-    Set-FederationTrust -Identity "Microsoft Federation Gateway" -PublishFederationCertificate
+```powershell
+Set-FederationTrust -Identity "Microsoft Federation Gateway" -PublishFederationCertificate
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-FederationTrust](https://technet.microsoft.com/fr-fr/library/dd298034\(v=exchg.150\)).
 
@@ -135,7 +141,9 @@ Pour vérifier que vous avez correctement mis à jour l’approbation de fédér
 
   - Dans l’Environnement de ligne de commande Exchange Management Shell, remplacez *\<user's email address\>* par l’adresse e-mail d’un utilisateur de votre organisation et exécutez la commande suivante pour vérifier que l’approbation de fédération fonctionne :
     
-        Test-FederationTrust -UserIdentity <user's email address>
+    ```powershell
+Test-FederationTrust -UserIdentity <user's email address>
+```
 
 ## Remplacer un certificat de fédération expiré
 
@@ -143,21 +151,29 @@ Si le certificat de fédération a déjà expiré, vous devez supprimer tous les
 
 1.  Si vous avez plusieurs domaines fédérés, vous devez repérer le principal domaine partagé pour le supprimer en dernier. Pour utiliser l’Environnement de ligne de commande Exchange Management Shell afin de trouver le domaine partagé principal et l’ensemble des domaines fédérés, exécutez la commande suivante :
     
-        Get-FederatedOrganizationIdentifier | Format-List AccountNamespace,Domains
+    ```powershell
+Get-FederatedOrganizationIdentifier | Format-List AccountNamespace,Domains
+```
     
     La valeur de la propriété **AccountNamespace** contient le domaine partagé principal au format `FYDIBOHF25SPDLT<primary shared domain>`. Par exemple, dans la valeur `FYDIBOHF25SPDLT.contoso.com`, contoso.com est le domaine partagé principal.
 
 2.  Supprimez chaque domaine fédéré qui n’est pas le domaine partagé principal en exécutant la commande suivante dans l’Environnement de ligne de commande Exchange Management Shell :
     
-        Remove-FederatedDomain -DomainName <domain> -Force
+    ```powershell
+Remove-FederatedDomain -DomainName <domain> -Force
+```
 
 3.  Une fois que vous avez supprimé tous les autres domaines fédérés, supprimez le domaine partagé principal en exécutant la commande suivante dans l’Environnement de ligne de commande Exchange Management Shell :
     
-        Remove-FederatedDomain -DomainName <domain> -Force
+    ```powershell
+Remove-FederatedDomain -DomainName <domain> -Force
+```
 
 4.  Supprimer l’approbation de fédération en exécutant la commande suivante dans l’Environnement de ligne de commande Exchange Management Shell :
     
-        Remove-FederationTrust "Microsoft Federation Gateway"
+    ```powershell
+Remove-FederationTrust "Microsoft Federation Gateway"
+```
 
 5.  Recréez l’approbation de fédération. Pour plus d’informations, voir [Créer une approbation de fédération](https://technet.microsoft.com/fr-fr/library/dd335198\(v=exchg.150\)).
 

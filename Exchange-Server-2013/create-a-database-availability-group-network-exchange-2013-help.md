@@ -69,7 +69,9 @@ Pour vérifier que vous avez bien créé un réseau de groupe de disponibilité 
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour vérifier que le réseau DAG a bien été créé et pour afficher les informations de configuration du réseau DAG :
     
-        Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```powershell
+Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+```
 
 ## Pour plus d'informations
 

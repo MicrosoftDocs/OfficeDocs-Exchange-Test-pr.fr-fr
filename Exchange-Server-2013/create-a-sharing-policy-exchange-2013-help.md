@@ -107,7 +107,9 @@ Vous pouvez modifier la stratégie de partage par défaut pour permettre à tous
 
   - Cet exemple crée la stratégie de partage Contoso pour le domaine externe fédéré contoso.com. Cette stratégie permet aux utilisateurs du domaine contoso.com de consulter en détail les informations de disponibilité de calendrier (disponible/occupé) de votre utilisateur. Par défaut, cette stratégie est activée.
     
-        New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+    ```powershell
+New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+```
 
   - Cet exemple crée la stratégie de partage ContosoWoodgrove pour deux domaines fédérés différents (contoso.com et woodgrovebank.com) avec des actions de partage spécifiques configurées pour chaque domaine. La stratégie est désactivée.
     
@@ -117,7 +119,9 @@ Vous pouvez modifier la stratégie de partage par défaut pour permettre à tous
     
     1.  Définissez l’URL du proxy Web pour MAIL01.
         
-            Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
+        ```powershell
+Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
+```
     
     2.  Activez le répertoire virtuel de publication sur CAS01.
         
@@ -139,7 +143,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Pour vérifier que la création de la stratégie de partage s’est effectuée correctement, exécutez la commande de l’environnement de ligne de commande Exchange Management Shell suivante et vérifiez les informations relatives à la stratégie de partage.
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.

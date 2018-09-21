@@ -64,7 +64,9 @@ Exécutez les commandes suivantes :
     $reqfile = New-ExchangeCertificate -GenerateRequest -SubjectName "C=US,o=Contoso,cn=contosotocert" -DomainName "contoso.com" -PrivateKeyExportable $true
 ```
 ```
-    $reqfile | out-file c:\certreq.txt
+```powershell
+$reqfile | out-file c:\certreq.txt
+```
 ```    
 
 ## Comment savoir si cela a fonctionné ?

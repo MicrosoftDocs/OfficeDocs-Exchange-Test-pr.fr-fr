@@ -107,11 +107,15 @@ Avant de commencer la migration, exécutez les étapes préalables suivantes.
     
       - Exécutez la commande suivante pour prendre un instantané de la structure du dossier source d’origine :
         
-            Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Legacy_PFStructure.xml
+        ```powershell
+Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Legacy_PFStructure.xml
+```
     
       - Exécutez la commande suivante pour prendre un instantané des statistiques du dossier public (nombre d’éléments, taille, et propriétaire) :
         
-            Get-PublicFolderStatistics | Export-CliXML C:\PFMigration\Legacy_PFStatistics.xml
+        ```powershell
+Get-PublicFolderStatistics | Export-CliXML C:\PFMigration\Legacy_PFStatistics.xml
+```
     
       - Exécutez la commande suivante pour prendre un instantané des autorisations :
         
@@ -131,19 +135,25 @@ Avant de commencer la migration, exécutez les étapes préalables suivantes.
     
     3.  Si des dossiers publics sont renvoyés, vous pouvez les renommer en exécutant la commande suivante :
         
-            Set-PublicFolder -Identity <public folder identity> -Name <new public folder name>
+        ```powershell
+Set-PublicFolder -Identity <public folder identity> -Name <new public folder name>
+```
 
 3.  Vérifiez qu’il n’existe aucun autre enregistrement d’une migration réussie.
     
     1.  L’exemple suivant vérifie l’état de la migration des dossiers publics.
         
-            Get-OrganizationConfig | Format-List PublicFoldersLockedforMigration, PublicFolderMigrationComplete
+        ```powershell
+Get-OrganizationConfig | Format-List PublicFoldersLockedforMigration, PublicFolderMigrationComplete
+```
         
         S’il y a eu une migration précédente, la valeur des propriétés *PublicFoldersLockedforMigration* ou *PublicFolderMigrationComplete* est `$true`. Utilisez la commande de l’étape 3b pour définir la valeur sur `$false`. Si la valeur est définie sur `$true`, votre demande de migration échoue.
     
     2.  Si l’état de la propriété *PublicFoldersLockedforMigration* ou *PublicFolderMigrationComplete* a la valeur `$true`, exécutez la commande suivante pour définir la valeur sur `$false` :
         
-            Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
+        ```powershell
+Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
+```
     
     > [!WARNING]
     > Après avoir redéfini ces propriétés, attendez qu’Exchange détecte les nouveaux paramètres. Cela peut prendre jusqu’à deux heures.
@@ -180,7 +190,9 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
     
     L’exemple suivant supprime toutes les demandes de migration en série de dossiers publics.
     
-        Get-PublicFolderMigrationRequest | Remove-PublicFolderMigrationRequest
+    ```powershell
+Get-PublicFolderMigrationRequest | Remove-PublicFolderMigrationRequest
+```
     
     L’exemple suivant permet de détecter toute demande de migration par lots.
     
@@ -188,7 +200,9 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
     
     L’exemple suivant supprime toutes les demandes de migration par lots de dossiers publics.
     
-        $batch | Remove-MigrationBatch -Confirm:$false
+    ```powershell
+$batch | Remove-MigrationBatch -Confirm:$false
+```
 
 2.  Vérifiez qu’aucun dossier public ou boîte aux lettres de dossiers publics n’existe sur les serveurs Exchange 2013.
     
@@ -198,7 +212,9 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
     
     2.  Si la commande n’a pas renvoyé de boîte aux lettres de dossiers publics, passez à l’Step 3: Generate the CSV files. Si la commande a renvoyé des dossiers publics, exécutez la commande suivante pour voir s’il existe des dossiers publics :
         
-            Get-PublicFolder
+        ```powershell
+Get-PublicFolder
+```
     
     3.  Si vous avez des dossiers publics, exécutez les commandes PowerShell suivantes pour les supprimer. Assurez-vous que vous avez enregistré les informations présentes dans les dossiers publics.
         
@@ -208,7 +224,9 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
             Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
         ```
         ```
-            Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+        ```powershell
+Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+```
         ```
 Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubriques suivantes :
 
@@ -287,7 +305,9 @@ Les étapes de migration des dossiers publics Exchange 2007 sont différentes d
 
 3.  Lancez la migration à l’aide de la commande suivante :
     
-        Start-MigrationBatch PFMigration
+    ```powershell
+Start-MigrationBatch PFMigration
+```
 
 **Migration des dossiers publics Exchange 2010**
 
@@ -299,7 +319,9 @@ Les étapes de migration des dossiers publics Exchange 2007 sont différentes d
 
 2.  Lancez la migration à l’aide de la commande suivante :
     
-        Start-MigrationBatch PFMigration
+    ```powershell
+Start-MigrationBatch PFMigration
+```
     
     Ou :
     
@@ -339,7 +361,9 @@ Avant d’exécuter la commande `PublicFoldersLockedForMigration` comme décrit 
 
 Sur le serveur Exchange hérité, exécutez la commande suivante pour verrouiller les dossiers publics hérités le temps que la migration s’achève.
 
-    Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
+```powershell
+Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
+```
 
 > [!NOTE]
 > Si, pour une raison quelconque, le fichier de commandes de migration n’est pas finalisé (<strong>PublicFolderMigrationComplete</strong> affiche <strong>False</strong>), redémarrez la banque d’informations (IS) sur le serveur hérité.
@@ -353,11 +377,15 @@ Si votre organisation possède plusieurs bases de données de dossiers publics, 
 
 Commencez par exécuter la cmdlet suivante pour remplacer le type de déploiement Exchange 2013 par **Remote** :
 
-    Set-OrganizationConfig -PublicFoldersEnabled Remote
+```powershell
+Set-OrganizationConfig -PublicFoldersEnabled Remote
+```
 
 Vous pouvez ensuite effectuer la migration de dossier public en exécutant la commande suivante :
 
-    Complete-MigrationBatch PublicFolderMigration
+```powershell
+Complete-MigrationBatch PublicFolderMigration
+```
 
 Ou, dans le CAE, vous pouvez effectuer la migration en cliquant sur **Terminer ce lot de migration**.
 
@@ -383,7 +411,9 @@ Une fois la migration des dossiers publics finalisée, vous devez exécuter le t
 
 3.  Si vous rencontrez des problèmes, consultez la section Roll back the migration plus loin dans cette rubrique. Si le contenu et la hiérarchie des dossiers publics sont acceptables et fonctionnent comme prévu, exécutez la commande suivante pour déverrouiller les dossiers publics pour l’ensemble des autres utilisateurs.
     
-        Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
+    ```powershell
+Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
+```
     
     > [!IMPORTANT]
     > N’utilisez pas le paramètre <em>IsExcludedFromServingHierarchy</em> après la validation de la migration initiale, car ce paramètre est utilisé par le service de gestion automatisée du stockage pour Exchange Online.
@@ -391,11 +421,15 @@ Une fois la migration des dossiers publics finalisée, vous devez exécuter le t
 
 4.  Sur le serveur Exchange hérité, exécutez la commande suivante pour indiquer que la migration de dossiers publics est terminée :
     
-        Set-OrganizationConfig -PublicFolderMigrationComplete:$true
+    ```powershell
+Set-OrganizationConfig -PublicFolderMigrationComplete:$true
+```
 
 5.  Une fois que vous avez vérifié que la migration est terminée, exécutez la commande suivante :
     
-        Set-OrganizationConfig -PublicFoldersEnabled Local
+    ```powershell
+Set-OrganizationConfig -PublicFoldersEnabled Local
+```
 
 6.  Enfin, si vous souhaitez que les expéditeurs externes puissent envoyer des messages vers des dossiers publics migrés à extension messagerie, l’utilisateur **Anonyme** doit disposer au moins de l’autorisation **Création d’éléments**. Dans le cas contraire, les expéditeurs externes recevront une notification d’échec de remise et les messages ne seront pas transmis au dossier public migré à extension messagerie.
     
@@ -407,7 +441,9 @@ Une fois la migration des dossiers publics finalisée, vous devez exécuter le t
 
 1.  Exécutez la commande suivante pour prendre un instantané de la nouvelle structure de dossiers.
     
-        Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Cloud_PFStructure.xml
+    ```powershell
+Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Cloud_PFStructure.xml
+```
 
 2.  Exécutez la commande suivante pour prendre un instantané des statistiques de dossiers publics, telles que le nombre d’éléments, la taille et le propriétaire :
     
@@ -435,15 +471,21 @@ Si vous rencontrez des problèmes en relation avec la migration et devez réacti
 
 1.  Sur le serveur Exchange hérité, exécutez la commande suivante pour déverrouiller les dossiers publics Exchange hérités. Ce processus peut prendre plusieurs heures.
     
-        Set-OrganizationConfig -PublicFoldersLockedForMigration:$False
+    ```powershell
+Set-OrganizationConfig -PublicFoldersLockedForMigration:$False
+```
 
 2.  Sur le serveur Exchange 2013, exécutez les commandes suivantes pour supprimer les boîtes aux lettres de dossiers publics.
     
         Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
         
-        Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+    ```powershell
+Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+```
 
 3.  Sur le serveur Exchange hérité, exécutez la commande suivante pour régler l’indicateur `PublicFolderMigrationComplete` sur `$false`.
     
-        Set-OrganizationConfig -PublicFolderMigrationComplete:$False
+    ```powershell
+Set-OrganizationConfig -PublicFolderMigrationComplete:$False
+```
 

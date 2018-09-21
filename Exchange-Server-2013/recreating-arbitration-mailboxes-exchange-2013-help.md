@@ -95,11 +95,15 @@ Pour recréer la boîte aux lettres d’arbitrage FederatedEmail.4c1f4d8b-8179-4
 
 1.  Si des boîtes aux lettres d’arbitrage sont manquantes, exécutez la commande suivante :
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+.\Setup /preparead /IAcceptExchangeServerLicenseTerms
+```
 
 2.  Dans Environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante :
     
-        Enable-Mailbox -Arbitration -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042"
+    ```powershell
+Enable-Mailbox -Arbitration -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042"
+```
 
 ## Recréation de la boîte aux lettres Assistant Approbation Microsoft Exchange
 
@@ -107,7 +111,9 @@ Pour recréer la boîte aux lettres d’arbitrage SystemMailbox{1f05a927-9350-4e
 
 1.  Si des boîtes aux lettres d’arbitrage sont manquantes, exécutez la commande suivante :
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+.\Setup /preparead /IAcceptExchangeServerLicenseTerms
+```
 
 2.  Dans Environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante :
     
@@ -119,15 +125,21 @@ Pour recréer la boîte aux lettres d’arbitrage Migration.8f3e7716-2011-43e4-9
 
 1.  Si des boîtes aux lettres d’arbitrage sont manquantes, exécutez la commande suivante :
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+.\Setup /preparead /IAcceptExchangeServerLicenseTerms
+```
 
 2.  Dans Environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante :
     
-        Enable-Mailbox -Arbitration -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136"
+    ```powershell
+Enable-Mailbox -Arbitration -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136"
+```
 
 3.  Dans Environnement de ligne de commande Exchange Management Shell, définissez les fonctionnalités persistantes (msExchCapabilityIdentifiers) en exécutant la commande suivante :
     
-        Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management:$True -Force
+    ```powershell
+Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management:$True -Force
+```
 
 ## Recréation de la boîte aux lettres système Découverte Microsoft Exchange
 
@@ -135,7 +147,9 @@ Pour recréer la boîte aux lettres d’arbitrage SystemMailbox{e0dc1c29-89c3-40
 
 1.  Exécutez la commande suivante :
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+.\Setup /preparead /IAcceptExchangeServerLicenseTerms
+```
 
 ## Recréation de la boîte aux lettres d’organisation Microsoft Exchange pour les carnets d’adresses en mode hors connexion
 
@@ -143,11 +157,15 @@ Pour recréer la boîte aux lettres d’arbitrage SystemMailbox{bb558c35-97f1-4c
 
 1.  Si des boîtes aux lettres d’arbitrage sont manquantes, exécutez la commande suivante :
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+.\Setup /preparead /IAcceptExchangeServerLicenseTerms
+```
 
 2.  Dans Environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante :
     
-        Enable-Mailbox -Arbitration -Identity "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}"
+    ```powershell
+Enable-Mailbox -Arbitration -Identity "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}"
+```
 
 3.  Dans Environnement de ligne de commande Exchange Management Shell, définissez les fonctionnalités persistantes (msExchCapabilityIdentifiers) en exécutant la commande suivante :
     
@@ -161,7 +179,9 @@ Lorsque vous avez terminé, si vous exécutez la commande `$OABMBX = Get-Mailbox
 
 Pour vérifier que vous avez bien recréé la boîte aux lettres d’arbitrage, utilisez la cmdlet **Get-Mailbox** avec le commutateur *Arbitration* pour récupérer les boîtes aux lettres système.
 
-    Get-Mailbox -Arbitration | Format-Table Name, DisplayName
+```powershell
+Get-Mailbox -Arbitration | Format-Table Name, DisplayName
+```
 
 Affichez les résultats de la commande pour vérifier que la boîte aux lettres système appropriée a été recréée soit par nom, soit par nom d’affichage dans le tableau ci-dessus.
 

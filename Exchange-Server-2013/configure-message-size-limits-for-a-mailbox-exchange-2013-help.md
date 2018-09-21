@@ -61,7 +61,9 @@ Pour connaître les tâches de gestion supplémentaires relatives aux boîtes au
 
 Dans cet exemple, nous établissons la taille maximale pour des messages envoyés à 25 Mo et la taille maximale pour des messages reçus à 35 Mo pour la boîte aux lettres de Debra Garcia.
 
-    Set-Mailbox "Debra Garcia" -MaxSendSize 25mb -MaxReceiveSize 35mb
+```powershell
+Set-Mailbox "Debra Garcia" -MaxSendSize 25mb -MaxReceiveSize 35mb
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)).
 
@@ -81,5 +83,7 @@ Ou
 
 Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
 
-    Get-Mailbox <identity> | fl MaxSendSize,MaxReceiveSize
+```powershell
+Get-Mailbox <identity> | fl MaxSendSize,MaxReceiveSize
+```
 

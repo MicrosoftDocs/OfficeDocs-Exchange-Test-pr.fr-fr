@@ -55,7 +55,9 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 2.  **Vérifier la configuration de la base de données de boîtes aux lettres**   Le paramètre *IndexEnabled* est-il défini à true (activé) pour la base de données de boîtes aux lettres de l’utilisateur ? Si oui, allez à l’étape 3. Si non, exécutez la commande suivante dans l’environnement de ligne de commande Shell pour vérifier que l’indicateur *IndexEnabled* est défini à true (activé).
     
-        Get-MailboxDatabase | Format-Table Name,IndexEnabled
+    ```powershell
+Get-MailboxDatabase | Format-Table Name,IndexEnabled
+```
     
     Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Get-MailboxDatabase](https://technet.microsoft.com/fr-fr/library/bb124924\(v=exchg.150\)).
 
@@ -89,7 +91,9 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 5.  **Exécuter la cmdlet Test-ExchangeSearch**   Si la base de données de boîte aux lettres a déjà été recherchée, vous pouvez exécuter la cmdlet **Test-ExchangeSearch** pour la base de données de boîtes aux lettres ou pour une boîte aux lettres spécifique.
     
-        Test-ExchangeSearch -Identity AlanBrewer@contoso.com
+    ```powershell
+Test-ExchangeSearch -Identity AlanBrewer@contoso.com
+```
     
     Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Test-ExchangeSearch](https://technet.microsoft.com/fr-fr/library/bb124733\(v=exchg.150\)).
 

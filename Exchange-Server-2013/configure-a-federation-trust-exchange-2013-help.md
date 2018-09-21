@@ -59,7 +59,9 @@ Pour les autres tâches de gestion relatives à la fédération, voir [Procédur
     
     Nous recommandons que toutes les organisations Exchange utilisent l’instance professionnelle du système d’authentification Azure AD pour les approbations de fédération. Avant de configurer le partage fédéré entre les deux organisations Exchange, vous devez déterminer l’instance du système d’authentification Azure AD que chaque organisation Exchange utilise pour les approbations de fédération existantes. Pour déterminer l’instance du système d’authentification Azure AD utilisée par une organisation Exchange pour une approbation de fédération existante, exécutez la commande d’environnement Exchange Management Shell suivante.
     
-        Get-FederationInformation -DomainName <hosted Exchange domain namespace>
+    ```powershell
+Get-FederationInformation -DomainName <hosted Exchange domain namespace>
+```
     
     L’instance professionnelle renvoie la valeur `<uri:federation:MicrosoftOnline>` pour le paramètre *TokenIssuerURIs*.
     
@@ -127,11 +129,15 @@ Pour les autres tâches de gestion relatives à la fédération, voir [Procédur
 
 4.  Cette syntaxe permet de renvoyer la preuve de l’appartenance de domaine enregistrement TXT qui est requis pour tous les domaines que vous allez configurer pour l’approbation de fédération.
     
-        Get-FederatedDomainProof -DomainName <domain>
+    ```powershell
+Get-FederatedDomainProof -DomainName <domain>
+```
     
     Cet exemple renvoie la preuve de l’appartenance de domaine enregistrement TXT qui est requis pour le domaine partagé principal de contoso.com.
     
-        Get-FederatedDomainProof -DomainName contoso.com
+    ```powershell
+Get-FederatedDomainProof -DomainName contoso.com
+```
     
     **Remarques** :
     
@@ -143,7 +149,9 @@ Pour les autres tâches de gestion relatives à la fédération, voir [Procédur
 
 6.  Exécutez cette commande pour extraire les métadonnées et le certificat de Azure AD:
     
-        Set-FederationTrust -RefreshMetadata -Identity "Azure AD authentication"
+    ```powershell
+Set-FederationTrust -RefreshMetadata -Identity "Azure AD authentication"
+```
 
 7.  Utilisez cette syntaxe pour configurer le domaine partagé principal pour l’approbation de fédération que vous avez créé à l’étape 3. Le domaine que vous spécifiez permet de configurer l’identificateur d’organisation (OrgID) pour l’approbation de fédération. Pour plus d’informations sur le OrgID, reportez-vous à la section [identificateur d’organisation fédérée](federation-exchange-2013-help.md).
     
@@ -155,11 +163,15 @@ Pour les autres tâches de gestion relatives à la fédération, voir [Procédur
 
 8.  Pour ajouter d’autres domaines de l’approbation de fédération, utilisez la syntaxe suivante :
     
-        Add-FederatedDomain -DomainName <AdditionalDomain>
+    ```powershell
+Add-FederatedDomain -DomainName <AdditionalDomain>
+```
     
     Cet exemple ajoute le sous-domaine sales.contoso.com l’approbation fédérée, utilisateurs avec adresses de messagerie dans le domaine sales.contoso.com nécessitant des fonctionnalités de partage fédérées.
     
-        Add-FederatedDomain -DomainName sales.contoso.com
+    ```powershell
+Add-FederatedDomain -DomainName sales.contoso.com
+```
     
     N’oubliez pas que n’importe quel domaine ou du sous-domaine que vous ajoutez à l’approbation de fédération nécessite une preuve de propriété de domaine enregistrement TXT,
 
@@ -173,11 +185,15 @@ Pour vérifier que vous avez correctement créé et configuré l’approbation d
 
 1.  Exécutez la commande de l’environnement de ligne de commande suivante pour vérifier les informations d’approbation de la fédération.
     
-        Get-FederationTrust | Format-List
+    ```powershell
+Get-FederationTrust | Format-List
+```
 
 2.  Remplacez *\<PrimarySharedDomain\>* avec votre principal de domaine partagé et exécutez la commande Shell suivante pour vérifier que les informations de fédération peuvent être récupérées à partir de votre organisation.
     
-        Get-FederationInformation -DomainName <PrimarySharedDomain>
+    ```powershell
+Get-FederationInformation -DomainName <PrimarySharedDomain>
+```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Get-FederationTrust](https://technet.microsoft.com/fr-fr/library/dd351262\(v=exchg.150\)) et [Get-FederationInformation](https://technet.microsoft.com/fr-fr/library/dd351221\(v=exchg.150\)).
 

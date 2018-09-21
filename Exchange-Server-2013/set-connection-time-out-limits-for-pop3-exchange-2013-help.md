@@ -59,11 +59,15 @@ Après avoir défini les limites de délai de connexion pour POP3, vous devez re
 
 Cet exemple définit la limite de délai de connexion pour les connexions authentifiées inactives.
 
-    Set -PopSettings -Identity CAS01 -AuthenticatedConnectionTimeout TimeValue
+```powershell
+Set -PopSettings -Identity CAS01 -AuthenticatedConnectionTimeout TimeValue
+```
 
 Cet exemple définit la limite de délai de connexion pour les connexions non authentifiées inactives.
 
-    Set -PopSettings -Identity CAS01 -PreAuthenticatedConnectionTimeout TimeValue
+```powershell
+Set -PopSettings -Identity CAS01 -PreAuthenticatedConnectionTimeout TimeValue
+```
 
 Après avoir défini les limites de délai de connexion pour POP3, vous devez redémarrer les services POP3 afin que les paramètres prennent effet. Pour plus d’informations sur le redémarrage des services POP3, consultez la rubrique [Démarrage et arrêt des services POP3](start-and-stop-the-pop3-services-exchange-2013-help.md).
 
@@ -87,7 +91,9 @@ Ou
 
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
-        Get-PopSettings | format-list
+    ```powershell
+Get-PopSettings | format-list
+```
 
 2.  Vérifiez que les paramètres de connexion sont corrects.
 

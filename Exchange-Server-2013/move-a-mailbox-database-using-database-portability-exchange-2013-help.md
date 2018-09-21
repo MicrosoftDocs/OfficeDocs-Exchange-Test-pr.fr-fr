@@ -40,7 +40,9 @@ Vous pouvez utiliser la fonctionnalité de portabilité de base de données pour
     
     Pour valider tous les fichiers journaux non validés dans la base de données, à partir d'une invite de commandes, exécutez la commande suivante :
     
-        ESEUTIL /R <Enn>
+    ```powershell
+ESEUTIL /R <Enn>
+```
     
     > [!NOTE]
     > Les lettres &lt;E<em>nn</em>&gt; spécifient le préfixe de fichier journal pour la base de données dans laquelle vous voulez relire les fichiers journaux. Le préfixe de fichier journal spécifié par &lt;E<em>nn</em>&gt; est un paramètre obligatoire pour Eseutil /r.
@@ -52,13 +54,17 @@ Vous pouvez utiliser la fonctionnalité de portabilité de base de données pour
 
 3.  Définissez l’attribut *This database can be over written by restore* à l’aide de la syntaxe suivante :
     
-        Set-MailboxDatabase <DatabaseName> -AllowFileRestore $true
+    ```powershell
+Set-MailboxDatabase <DatabaseName> -AllowFileRestore $true
+```
 
 4.  Déplacez les fichiers de base de données d’origine (fichier.edb, fichiers journaux et catalogue de recherche Exchange) dans le dossier de base de données que vous avez spécifié lorsque vous avez créé la base de données ci-dessus.
 
 5.  Montez la base de données à l’aide de la syntaxe suivante :
     
-        Mount-Database <DatabaseName>
+    ```powershell
+Mount-Database <DatabaseName>
+```
 
 6.  Une fois la base de données montée, modifiez les paramètres du compte d'utilisateur avec la cmdlet [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)) de façon à ce que le compte pointe vers la boîte aux lettres sur le nouveau serveur de boîtes aux lettres. Pour déplacer l'ensemble des utilisateurs de l'ancienne base de données vers la nouvelle base de données, utilisez la syntaxe suivante :
     
@@ -66,7 +72,9 @@ Vous pouvez utiliser la fonctionnalité de portabilité de base de données pour
 
 7.  Déclenchez la remise de tous les messages restants dans les files d’attente à l’aide de la syntaxe suivante.
     
-        Get-Queue <QueueName> | Retry-Queue -Resubmit $true
+    ```powershell
+Get-Queue <QueueName> | Retry-Queue -Resubmit $true
+```
 
 Une fois la réplication Active Directory terminée, tous les utilisateurs peuvent accéder à leurs boîtes aux lettres sur le nouveau serveur Exchange. La plupart des clients sont redirigés via la découverte automatique. Les utilisateurs de Microsoft Office Outlook Web App sont également automatiquement redirigés.
 

@@ -70,7 +70,9 @@ Pour les autres tâches de gestion liées à la Gestion des droits relatifs à l
 
   - Pour créer une règle de protection de transport, vous devez avoir des modèles RMS existants dans votre déploiement AD RMS. Cet exemple extrait les modèles disponibles à partir de votre cluster AD RMS.
     
-        Get-RMSTemplate | format-list
+    ```powershell
+Get-RMSTemplate | format-list
+```
     
     Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-RMSTemplate](https://technet.microsoft.com/fr-fr/library/dd297960\(v=exchg.150\)).
 

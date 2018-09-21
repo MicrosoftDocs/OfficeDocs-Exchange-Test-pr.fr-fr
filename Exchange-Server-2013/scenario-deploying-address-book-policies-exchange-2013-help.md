@@ -309,7 +309,9 @@ Quand vous créez le carnet d'adresses en mode hors connexion, vous devez inclur
 
 Cet exemple crée le carnet d'adresses en mode hors connexion OAB\_FAB pour Fabrikam.
 
-    New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
+```powershell
+New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
+```
 
 Pour plus d'informations, consultez la rubrique [Création d’un carnet d’adresses en mode hors connexion](https://docs.microsoft.com/fr-fr/exchange/address-books/offline-address-books/create-offline-address-book).
 

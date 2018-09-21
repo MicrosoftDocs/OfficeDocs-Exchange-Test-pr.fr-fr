@@ -57,7 +57,9 @@ Après avoir créé la nouvelle stratégie d’attribution, vous devez lui affec
 
 Pour créer une stratégie d'attribution explicite qui peut être affectée manuellement à des boîtes aux lettres, utilisez la syntaxe suivante.
 
-    New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign>
+```powershell
+New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign>
+```
 
 Cet exemple crée la stratégie d’attribution explicite « Limited Mailbox Configuration » et lui attribue les rôles `MyBaseOptions`, `MyAddressInformation` et `MyDisplayName`.
 
@@ -69,7 +71,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour créer une stratégie d'attribution par défaut à affecter aux nouvelles boîtes aux lettres, utilisez la syntaxe suivante.
 
-    New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign> -IsDefault
+```powershell
+New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign> -IsDefault
+```
 
 Cet exemple crée la stratégie d’attribution par défaut « Limited Mailbox Configuration » et lui attribue les rôles `MyBaseOptions`, `MyAddressInformation` et `MyDisplayName`.
 
@@ -99,11 +103,15 @@ Si vous n'avez plus besoin d'une stratégie d'attribution de rôle de gestion, v
 
 Pour supprimer une stratégie d'attribution, utilisez la syntaxe suivante.
 
-    Remove-RoleAssignmentPolicy <role assignment policy>
+```powershell
+Remove-RoleAssignmentPolicy <role assignment policy>
+```
 
 Cet exemple supprime la stratégie d'attribution New York Temporary Users.
 
-    Remove-RoleAssignmentPolicy "New York Temporary Users"
+```powershell
+Remove-RoleAssignmentPolicy "New York Temporary Users"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-RoleAssignmentPolicy](https://technet.microsoft.com/fr-fr/library/dd638190\(v=exchg.150\)).
 
@@ -131,15 +139,21 @@ Cette procédure décrit l’utilisation du pipelining et de la cmdlet **Format-
 
 Pour retourner la liste de toutes les stratégies d’attribution de votre organisation, utilisez la commande suivante.
 
-    Get-RoleAssignmentPolicy
+```powershell
+Get-RoleAssignmentPolicy
+```
 
 Pour retourner une liste de propriétés spécifiques de l’ensemble des stratégies d’attribution de votre organisation, vous pouvez transférer les résultats à la cmdlet **Format-Table** et indiquez les propriétés que vous souhaitez dans la liste des résultats. Utilisez la syntaxe suivante.
 
-    Get-RoleAssignmentPolicy | Format-Table <property 1>, <property 2...>
+```powershell
+Get-RoleAssignmentPolicy | Format-Table <property 1>, <property 2...>
+```
 
 Cet exemple renvoie la liste de toutes les stratégies d’attribution de votre organisation et inclut les propriétés **Name** et **IsDefault**.
 
-    Get-RoleAssignmentPolicy | Format-Table Name, IsDefault
+```powershell
+Get-RoleAssignmentPolicy | Format-Table Name, IsDefault
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123685\(v=exchg.150\)) ou [Get-RoleAssignmentPolicy](https://technet.microsoft.com/fr-fr/library/dd638195\(v=exchg.150\)).
 
@@ -155,11 +169,15 @@ Cette procédure décrit l’utilisation du pipelining et de la cmdlet **Format-
 
 Pour afficher les détails d’une stratégie d’attribution spécifique, utilisez la syntaxe suivante.
 
-    Get-RoleAssignmentPolicy <assignment policy name> | Format-List
+```powershell
+Get-RoleAssignmentPolicy <assignment policy name> | Format-List
+```
 
 Cet exemple affiche les détails de la stratégie d’attribution Redmond Users - no Text Messaging.
 
-    Get-RoleAssignmentPolicy "Redmond Users - no Text Messaging" | Format-List
+```powershell
+Get-RoleAssignmentPolicy "Redmond Users - no Text Messaging" | Format-List
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123685\(v=exchg.150\)) ou [Get-RoleAssignmentPolicy](https://technet.microsoft.com/fr-fr/library/dd638195\(v=exchg.150\)).
 
@@ -175,7 +193,9 @@ Cette procédure décrit l’utilisation du pipelining et de la cmdlet **Where**
 
 Cet exemple retourne la stratégie d’attribution par défaut.
 
-    Get-RoleAssignmentPolicy | Where { $_.IsDefault -eq $True }
+```powershell
+Get-RoleAssignmentPolicy | Where {     Get-RoleAssignmentPolicy | Where { $_.IsDefault -eq $True }.IsDefault -eq $True }
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123685\(v=exchg.150\)) ou [Get-RoleAssignmentPolicy](https://technet.microsoft.com/fr-fr/library/dd638195\(v=exchg.150\)).
 
@@ -191,11 +211,15 @@ Cette procédure décrit l’utilisation du pipelining et de la cmdlet **Where**
 
 Utilisez la syntaxe suivante.
 
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<role assignment policy>" }
+```powershell
+Get-Mailbox | Where {     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<role assignment policy>" }.RoleAssignmentPolicy -Eq "<role assignment policy>" }
+```
 
 Cet exemple montre comment rechercher toutes les boîtes aux lettres auxquelles est affectée la stratégie Vancouver End Users.
 
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Vancouver End Users" }
+```powershell
+Get-Mailbox | Where {     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Vancouver End Users" }.RoleAssignmentPolicy -Eq "Vancouver End Users" }
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123685\(v=exchg.150\)) ou [Get-RoleAssignmentPolicy](https://technet.microsoft.com/fr-fr/library/dd638195\(v=exchg.150\)).
 
@@ -211,11 +235,15 @@ Vous pouvez modifier la stratégie d'attribution de rôle de gestion qui est app
 
 Pour modifier la stratégie d'attribution par défaut, utilisez la syntaxe suivante.
 
-    Set-RoleAssignmentPolicy <assignment policy name> -IsDefault
+```powershell
+Set-RoleAssignmentPolicy <assignment policy name> -IsDefault
+```
 
 Cet exemple définit la stratégie d'attribution « Vancouver End Users » comme stratégie d'attribution par défaut.
 
-    Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
+```powershell
+Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
+```
 
 > [!IMPORTANT]
 > La stratégie d'attribution par défaut est appliquée aux nouvelles boîtes aux lettres, même si aucun rôle de gestion n'a été affecté à la stratégie. Les stratégies d’attribution pour les boîtes aux lettres sans rôle de gestion affecté ne peuvent pas accéder aux fonctions de configuration des boîtes aux lettres dans Microsoft Outlook Web App.

@@ -43,15 +43,21 @@ Pour découvrir d’autres tâches de gestion relatives au dépannage de la mess
 
 Cet exemple teste la capacité de la passerelle IP de messagerie unifiée à écouter les requêtes SIP sur le port TCP 4060.
 
-    Test-UMConnectivity -ListenPort 5060 -UMIPGateway MyIPGateway
+```powershell
+Test-UMConnectivity -ListenPort 5060 -UMIPGateway MyIPGateway
+```
 
 Cet exemple teste la capacité du serveur de boîtes aux lettres local à utiliser une connexion TCP (Transmission Control Protocol) non sécurisée au lieu d’une connexion MTLS (Mutual Transport Layer Security) sécurisée pour établir un appel via une passerelle IP de messagerie unifiée nommée `MyUMIPGateway` à l’aide du numéro de téléphone 56780.
 
-    Test-UMConnectivity -UMIPGateway MyUMIPGateway -Phone 56780 -Secured $false
+```powershell
+Test-UMConnectivity -UMIPGateway MyUMIPGateway -Phone 56780 -Secured $false
+```
 
 Cet exemple teste le numéro Outlook Voice Access dans un plan de numérotation à l’aide d’un URI SIP. Cet exemple peut être utilisé dans un environnement qui inclut Lync Server.
 
-    Test-UMConnectivity -UMIPGateway OCSGateway1 -Phone "sip:SIPdialplan.contoso.com@contoso.com"
+```powershell
+Test-UMConnectivity -UMIPGateway OCSGateway1 -Phone "sip:SIPdialplan.contoso.com@contoso.com"
+```
 
 > [!NOTE]
 > Vous pouvez définir ce paramètre <code>-Timeout</code> avec une valeur inférieure à 5 secondes. Il est toutefois recommandé de toujours configurer ce paramètre avec une valeur minimale de 5 secondes. Utilisez le mode 2 lorsque le paramètre <code>­UMIPGateway</code> est spécifié dans la syntaxe de ligne de commande.

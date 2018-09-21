@@ -253,7 +253,9 @@ Dans Exchange 2010, la mise à jour corrective de pages n’était pas disponib
 
 Le comportement de lecture de copie retardée est désactivé par défaut, mais peut être activé en exécutant la commande suivante :
 
-    Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```powershell
+Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```
 
 Une fois activée, la lecture a lieu lorsque le nombre de copies est inférieur à trois. Vous pouvez modifier la valeur 3 par défaut en changeant la valeur de registre DWORD suivante :
 

@@ -45,11 +45,15 @@ Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives a
 
 Cet exemple désactive l’identificateur d’organisation, ainsi que la fédération et le partage fédéré de l’organisation Exchange.
 
-    Set-FederatedOrganizationIdentifier -Enabled $false
+```powershell
+Set-FederatedOrganizationIdentifier -Enabled $false
+```
 
 Cet exemple active l’identificateur d’organisation, et réactive la fédération et le partage fédéré de l’organisation Exchange.
 
-    Set-FederatedOrganizationIdentifier -Enabled $true
+```powershell
+Set-FederatedOrganizationIdentifier -Enabled $true
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-FederatedOrganizationIdentifier](https://technet.microsoft.com/fr-fr/library/dd351037\(v=exchg.150\)).
 
@@ -59,7 +63,9 @@ L’exécution réussie de la cmdlet **Set-OrganizationIdentifier** sera le prem
 
 Pour confirmer que la réussite de l’opération, exécutez la commande de l’environnement de ligne de commande Exchange Management Shell et vérifiez la valeur renvoyée pour le paramètre *Enabled*
 
-    Get-FederatedOrganizationIdentifier
+```powershell
+Get-FederatedOrganizationIdentifier
+```
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.

@@ -114,5 +114,7 @@ Pour vérifier que vous avez réussi à modifier une stratégie de boîte aux le
 
 2.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-CASMailbox -Identity tony@contoso.com
+    ```powershell
+Get-CASMailbox -Identity tony@contoso.com
+```
 

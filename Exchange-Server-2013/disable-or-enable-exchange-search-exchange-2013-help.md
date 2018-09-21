@@ -84,16 +84,24 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Exécutez les commandes suivantes pour arrêter et désactiver le service Microsoft Exchange Search.
 ```
-    Stop-Service MSExchangeFastSearch
+```powershell
+Stop-Service MSExchangeFastSearch
 ```
 ```
-    Set-Service MSExchangeFastSearch -StartupType Disabled
+```
+```powershell
+Set-Service MSExchangeFastSearch -StartupType Disabled
+```
 ```
 
 Exécutez les commandes suivantes pour configurer le service de recherche Exchange de sorte qu’il démarre automatiquement et démarrer ensuite le service.
 ```
-    Set-Service MSExchangeFastSearch -StartupType Automatic
+```powershell
+Set-Service MSExchangeFastSearch -StartupType Automatic
 ```
 ```
-    Start-Service MSExchangeFastSearch
+```
+```powershell
+Start-Service MSExchangeFastSearch
+```
 ```

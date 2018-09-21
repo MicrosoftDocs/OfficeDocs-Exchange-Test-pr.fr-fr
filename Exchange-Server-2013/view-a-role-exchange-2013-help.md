@@ -51,11 +51,15 @@ Vous pouvez afficher les détails d’un rôle spécifique en récupérant un r�
 
 Pour afficher les détails d’un rôle spécifique, utilisez la syntaxe suivante.
 
-    Get-ManagementRole <role name> | Format-List
+```powershell
+Get-ManagementRole <role name> | Format-List
+```
 
 Cet exemple indique comment récupérer les détails du rôle de gestion Destinataires de messagerie.
 
-    Get-ManagementRole "Mail Recipients" | Format-List
+```powershell
+Get-ManagementRole "Mail Recipients" | Format-List
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRole](https://technet.microsoft.com/fr-fr/library/dd351125\(v=exchg.150\)).
 
@@ -65,11 +69,15 @@ Vous pouvez afficher la liste de tous les rôles de gestion de votre organisatio
 
 Cet exemple renvoie une liste de tous les rôles de votre organisation.
 
-    Get-ManagementRole
+```powershell
+Get-ManagementRole
+```
 
 Pour renvoyer une liste des propriétés spécifiques à tous les rôles de votre organisation, vous pouvez canaliser les résultats de la cmdlet **Format-Table** et spécifier les propriétés de votre choix dans la liste des résultats. Utilisez la syntaxe suivante.
 
-    Get-ManagementRole | Format-Table <property 1>, <property 2...>
+```powershell
+Get-ManagementRole | Format-Table <property 1>, <property 2...>
+```
 
 Cet exemple renvoie la liste de tous les rôles de votre organisation et comprend la propriété **Name** ainsi que toute propriété contenant le mot **Implicit** au début de son nom.
 
@@ -83,11 +91,15 @@ Vous pouvez renvoyer la liste des rôles contenant un cmdlet que vous indiquez �
 
 Pour renvoyer la liste des rôles contenant la cmdlet que vous indiquez, utilisez la syntaxe suivante.
 
-    Get-ManagementRole -Cmdlet <cmdlet>
+```powershell
+Get-ManagementRole -Cmdlet <cmdlet>
+```
 
 Cet exemple indique comment renvoyer la liste de rôles contenant la cmdlet **New-Mailbox**.
 
-    Get-ManagementRole -Cmdlet New-Mailbox
+```powershell
+Get-ManagementRole -Cmdlet New-Mailbox
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRole](https://technet.microsoft.com/fr-fr/library/dd351125\(v=exchg.150\)).
 
@@ -103,11 +115,15 @@ Pour renvoyer la liste des rôles contenant les paramètres que vous indiquez, u
 
 Cet exemple renvoie la liste des rôles contenant les paramètres *Database* et *Server*, indépendamment de la cmdlet à laquelle ils sont associés.
 
-    Get-ManagementRole -CmdletParameters Database, Server
+```powershell
+Get-ManagementRole -CmdletParameters Database, Server
+```
 
 Cet exemple renvoie la liste des rôles lorsque le paramètre *EmailAddresses* est uniquement spécifié dans la cmdlet **Set-Mailbox**.
 
-    Get-ManagementRole -Cmdlet Set-Mailbox -CmdletParameters EmailAddresses
+```powershell
+Get-ManagementRole -Cmdlet Set-Mailbox -CmdletParameters EmailAddresses
+```
 
 Vous pouvez également utiliser le caractère générique (\*) avec le paramètre *Cmdlet* ou *CmdletParameters* pour faire correspondre les noms partiels de cmdlet ou de paramètre.
 
@@ -119,11 +135,15 @@ Vous pouvez renvoyer la liste des rôles en fonction d’un type de rôle donné
 
 Pour renvoyer la liste des rôles correspondant au type de rôle que vous indiquez, utilisez la syntaxe suivante.
 
-    Get-ManagementRole -RoleType <roletype>
+```powershell
+Get-ManagementRole -RoleType <roletype>
+```
 
 Cet exemple indique comment renvoyer une liste de rôles en fonction du type de rôle `UmMailboxes`.
 
-    Get-ManagementRole -RoleType UmMailboxes
+```powershell
+Get-ManagementRole -RoleType UmMailboxes
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRole](https://technet.microsoft.com/fr-fr/library/dd351125\(v=exchg.150\)).
 
@@ -133,11 +153,15 @@ Vous pouvez renvoyer la liste des rôles qui sont les enfants immédiats d’un 
 
 Pour renvoyer la liste des rôles enfants immédiats d’un rôle parent, utilisez la syntaxe suivante.
 
-    Get-ManagementRole <parent role name> -GetChildren
+```powershell
+Get-ManagementRole <parent role name> -GetChildren
+```
 
 Cet exemple présente le renvoi d’une liste d’enfants immédiats du rôle Récupération après sinistre.
 
-    Get-ManagementRole "Disaster Recovery" -GetChildren
+```powershell
+Get-ManagementRole "Disaster Recovery" -GetChildren
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRole](https://technet.microsoft.com/fr-fr/library/dd351125\(v=exchg.150\)).
 
@@ -147,11 +171,15 @@ Vous pouvez renvoyer la liste de la chaîne complète de rôles, d’un rôle pa
 
 Dans cet exemple, la liste de tous les rôles enfants d’un rôle parent est renvoyée.
 
-    Get-ManagementRole <parent role name> -Recurse
+```powershell
+Get-ManagementRole <parent role name> -Recurse
+```
 
 Cet exemple présente le renvoi de tous les rôles enfants du rôle Destinataires de messagerie.
 
-    Get-ManagementRole "Mail Recipients" -Recurse
+```powershell
+Get-ManagementRole "Mail Recipients" -Recurse
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRole](https://technet.microsoft.com/fr-fr/library/dd351125\(v=exchg.150\)).
 

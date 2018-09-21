@@ -49,7 +49,9 @@ Pour plus d'informations sur le déplacement de boîtes aux lettres, consultez l
 
 Cet exemple utilise le commutateur *WhatIf* pour tester la boîte aux lettres de Tony Smith et savoir si elle est prête à être déplacée vers la nouvelle base de données DB01 et si la commande renvoie des erreurs. Lorsque vous utilisez le commutateur *WhatIf*, le système effectue des vérifications sur la boîte aux lettres. Si la boîte aux lettres n'est pas prête à être déplacée, vous recevez un message d'erreur.
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase DB01 -WhatIf
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase DB01 -WhatIf
+```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [New-MigrationBatch](https://technet.microsoft.com/fr-fr/library/jj219166\(v=exchg.150\)) et [New-MoveRequest](https://technet.microsoft.com/fr-fr/library/dd351123\(v=exchg.150\)).
 
@@ -79,7 +81,9 @@ Pour vérifier que vous avez terminé avec succès la migration, procédez comme
 
   - À partir du Shell, exécutez la commande suivante pour récupérer les informations de déplacement des boîtes aux lettres.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](https://technet.microsoft.com/fr-fr/library/jj218695\(v=exchg.150\)).
 
@@ -106,7 +110,9 @@ Cet exemple crée un lot de migration pour un déplacement local, dans lequel le
     New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"
 ```
 ```
-    Start-MigrationBatch -Identity LocalMove1
+```powershell
+Start-MigrationBatch -Identity LocalMove1
+```
 ```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [New-MigrationBatch](https://technet.microsoft.com/fr-fr/library/jj219166\(v=exchg.150\)) et [Start-MigrationBatch](https://technet.microsoft.com/fr-fr/library/jj219165\(v=exchg.150\)).
@@ -119,7 +125,9 @@ Pour vérifier que vous avez terminé avec succès la migration, procédez comme
 
   - À partir du Shell, exécutez la commande suivante pour récupérer les informations de déplacement des boîtes aux lettres.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](https://technet.microsoft.com/fr-fr/library/jj218695\(v=exchg.150\)).
 
@@ -141,7 +149,9 @@ Pour obtenir un exemple d'utilisation de l'environnement de ligne de commande Ex
 
 Cet exemple déplace uniquement la boîte aux lettres principale de Tony Smith vers la base de données DB01. L'archive n'est pas déplacée.
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase "DB01"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase "DB01"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-MoveRequest](https://technet.microsoft.com/fr-fr/library/dd351123\(v=exchg.150\)).
 
@@ -153,7 +163,9 @@ Pour vérifier que vous avez terminé avec succès la migration, procédez comme
 
   - À partir du Shell, exécutez la commande suivante pour récupérer les informations de déplacement des boîtes aux lettres.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](https://technet.microsoft.com/fr-fr/library/jj218695\(v=exchg.150\)).
 
@@ -182,7 +194,9 @@ Pour vérifier que vous avez terminé avec succès la migration, procédez comme
 
   - À partir du Shell, exécutez la commande suivante pour récupérer les informations de déplacement des boîtes aux lettres.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](https://technet.microsoft.com/fr-fr/library/jj218695\(v=exchg.150\)).
 
@@ -200,7 +214,9 @@ Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](ht
 
 Cet exemple déplace uniquement la boîte aux lettres d'archivage de Tony Smith vers la base de données DB03. La boîte aux lettres principale n'est pas déplacée.
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetDatabase "DB03"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetDatabase "DB03"
+```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [New-MigrationBatch](https://technet.microsoft.com/fr-fr/library/jj219166\(v=exchg.150\)) et [New-MoveRequest](https://technet.microsoft.com/fr-fr/library/dd351123\(v=exchg.150\)).
 
@@ -210,7 +226,9 @@ Pour vérifier que vous avez terminé avec succès la migration, procédez comme
 
   - À partir du Shell, exécutez la commande suivante pour récupérer les informations de déplacement des boîtes aux lettres.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](https://technet.microsoft.com/fr-fr/library/jj218695\(v=exchg.150\)).
 
@@ -228,7 +246,9 @@ Pour vérifier que vous avez terminé avec succès la migration, procédez comme
 
   - À partir du Shell, exécutez la commande suivante pour récupérer les informations de déplacement des boîtes aux lettres.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](https://technet.microsoft.com/fr-fr/library/jj218695\(v=exchg.150\)).
 
@@ -258,7 +278,9 @@ Pour vérifier que vous avez terminé avec succès la migration, procédez comme
 
   - À partir du Shell, exécutez la commande suivante pour récupérer les informations de déplacement des boîtes aux lettres.
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+```
 
 Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](https://technet.microsoft.com/fr-fr/library/jj218695\(v=exchg.150\)).
 

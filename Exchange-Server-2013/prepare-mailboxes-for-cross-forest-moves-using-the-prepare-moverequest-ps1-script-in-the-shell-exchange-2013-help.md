@@ -182,7 +182,9 @@ Cet exemple prend en charge le traitement en pipeline si vous fournissez une lis
 
 1.  Exécutez la commande suivante.
     
-        $UserCredentials = Get-Credential
+    ```powershell
+$UserCredentials = Get-Credential
+```
 
 2.  Exécutez la commande suivante pour transmettre les informations d’identification au paramètre *RemoteForestCredential* dans le script Prepare-MoveRequest.ps1.
     
@@ -206,7 +208,9 @@ Cet exemple appelle un fichier .csv pour créer en bloc les utilisateurs à exte
 
 1.  Exécutez la commande suivante permettant d’obtenir les informations d’identification pour la forêt distante.
     
-        $UserCredentials = Get-Credential
+    ```powershell
+$UserCredentials = Get-Credential
+```
 
 2.  Exécutez la commande suivante pour transmettre les informations d’identification au paramètre *RemoteForestCredential* dans le script Prepare-MoveRequest.ps1.
     

@@ -55,11 +55,15 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Vous pouvez afficher les détails d’une attribution de rôle en transférant les résultats de la cmdlet **Get-ManagementRoleAssignment** sur la cmdlet **Format-List**. Utilisez la syntaxe suivante.
 
-    Get-ManagementRoleAssignment <assignment name> | Format-List
+```powershell
+Get-ManagementRoleAssignment <assignment name> | Format-List
+```
 
 Cet exemple montre comment récupérer les détails de l’attribution de rôle Attribution Help Desk.
 
-    Get-ManagementRoleAssignment "Help Desk Assignment" | Format-List
+```powershell
+Get-ManagementRoleAssignment "Help Desk Assignment" | Format-List
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd351024\(v=exchg.150\)).
 
@@ -67,11 +71,15 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour afficher la liste des attributions de rôle associées à un groupe de rôles de gestion, à un rôle ou à une stratégie d’attribution de rôle, ou bien associées à un utilisateur ou à un groupe de sécurité universel, utilisez la syntaxe suivante.
 
-    Get-ManagementRoleAssignment -RoleAssignee <role assignee name>
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <role assignee name>
+```
 
 Cet exemple récupère toutes les attributions de rôle associées au groupe de rôle Gestion du serveur.
 
-    Get-ManagementRoleAssignment -RoleAssignee "Server Management"
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Server Management"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd351024\(v=exchg.150\)).
 
@@ -81,11 +89,15 @@ Chaque rôle peut avoir plusieurs attributions de rôle. Vous pouvez utiliser la
 
 Pour afficher la liste des attributions de rôle associées à un rôle spécifié, utilisez la syntaxe suivante.
 
-    Get-ManagementRoleAssignment -Role <role name>
+```powershell
+Get-ManagementRoleAssignment -Role <role name>
+```
 
 Cet exemple récupère toutes les attributions de rôle associées au groupe de rôle Destinataires des messages.
 
-    Get-ManagementRoleAssignment -Role "Mail Recipients"
+```powershell
+Get-ManagementRoleAssignment -Role "Mail Recipients"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd351024\(v=exchg.150\)).
 
@@ -97,7 +109,9 @@ Pour afficher la liste des attributions de rôle qui utilisent une portée spéc
 
 Cet exemple récupère toutes les attributions de rôle associées à la portée prédéfinie Organisation.
 
-    Get-ManagementRoleAssignment -RecipientWriteScope Organization
+```powershell
+Get-ManagementRoleAssignment -RecipientWriteScope Organization
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd351024\(v=exchg.150\)).
 
@@ -105,7 +119,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour afficher la liste des attributions de rôle qui ont été étendues vers une unité d’organisation spécifique, utilisez la syntaxe suivante.
 
-    Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope <OU>
+```powershell
+Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope <OU>
+```
 
 Cet exemple extrait toutes les attributions de rôles qui ont été étendues à l’unité d’organisation Amérique du Nord\\Ingénierie\\Utilisateurs dans le domaine contoso.com.
 
@@ -129,11 +145,15 @@ La syntaxe est identique pour chaque paramètre. Spécifiez le nom de la portée
 
 Cet exemple récupère toutes les attributions de rôle qui utilisent la portée prédéfinie Destinataires Vancouver.
 
-    Get-ManagementRoleAssignment -CustomRecipientWriteScope "Vancouver Recipients"
+```powershell
+Get-ManagementRoleAssignment -CustomRecipientWriteScope "Vancouver Recipients"
+```
 
 Cet exemple récupère toutes les attributions de rôle qui utilisent la portée de configuration exclusive Site AD Seattle.
 
-    Get-ManagementRoleAssignment -ExclusiveConfigWriteScope "Seattle AD Site"
+```powershell
+Get-ManagementRoleAssignment -ExclusiveConfigWriteScope "Seattle AD Site"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd351024\(v=exchg.150\)).
 
@@ -141,15 +161,21 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour afficher la liste des attributions de rôle exclusives ou ordinaires, utilisez la syntaxe suivante.
 
-    Get-ManagementRoleAssignment -Exclusive < $True | $False >
+```powershell
+Get-ManagementRoleAssignment -Exclusive < $True | $False >
+```
 
 Par exemple, pour afficher la liste des portées exclusives, exécutez la commande suivante :
 
-    Get-ManagementRoleAssignment -Exclusive $True
+```powershell
+Get-ManagementRoleAssignment -Exclusive $True
+```
 
 Cet exemple récupère la liste des portées ordinaires sans portée exclusive.
 
-    Get-ManagementRoleAssignment -Exclusive $False
+```powershell
+Get-ManagementRoleAssignment -Exclusive $False
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd351024\(v=exchg.150\)).
 
@@ -159,7 +185,9 @@ Pour afficher la liste des attributions de rôle pouvant modifier un destinatair
 
 Cet exemple récupère la liste de toutes les attributions de rôle pouvant modifier le destinataire Bob.
 
-    Get-ManagementRoleAssignment -WritableRecipient "Brian"
+```powershell
+Get-ManagementRoleAssignment -WritableRecipient "Brian"
+```
 
 Vous pouvez associer les paramètres *WritableRecipient* et *WritableServer* à d’autres paramètres tels que le paramètre *RoleAssignee* et le commutateur *GetEffectiveUsers* pour affiner votre requête et développer des groupes de rôles ou des groupes de sécurité universels. Cet exemple récupère tous les utilisateurs pouvant modifier le serveur EX02 et qui sont attribués au groupe de rôle Gestion du serveur.
 
@@ -171,11 +199,15 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour afficher la liste des utilisateurs qui reçoivent les autorisations d’une attribution de rôle, utilisez la syntaxe suivante.
 
-    Get-ManagementRoleAssignment <assignment name> -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment <assignment name> -GetEffectiveUsers
+```
 
 Cet exemple montre comment récupérer la liste des utilisateurs de l’attribution de rôle Help Desk Assignment.
 
-    Get-ManagementRoleAssignment "Help Desk Assignment" -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment "Help Desk Assignment" -GetEffectiveUsers
+```
 
 Vous pouvez aussi associer le commutateur *GetEffectiveUsers* avec plusieurs autres paramètres sur la cmdlet **Get-ManagementRoleAssignment** pour développer les groupes de rôle et les groupes de sécurité universels auxquels les attributions de rôle sont affectées. Pour obtenir un exemple d’utilisation du commutateur *GetEffectiveUsers* avec d’autres paramètres, consultez la section « Afficher qui peut modifier un destinataire ou un serveur spécifique » précédemment dans cette rubrique.
 
@@ -185,11 +217,15 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour afficher la liste des attributions de rôle activées ou désactivées, utilisez la syntaxe suivante.
 
-    Get-ManagementRoleAssignment -Enabled < $True | $False >
+```powershell
+Get-ManagementRoleAssignment -Enabled < $True | $False >
+```
 
 Cet exemple montre comment récupérer la liste des attributions de rôle désactivées.
 
-    Get-ManagementRoleAssignment -Enabled $False
+```powershell
+Get-ManagementRoleAssignment -Enabled $False
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd351024\(v=exchg.150\)).
 

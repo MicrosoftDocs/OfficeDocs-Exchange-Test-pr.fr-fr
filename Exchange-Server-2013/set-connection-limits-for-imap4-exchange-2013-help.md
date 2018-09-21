@@ -65,19 +65,27 @@ Après avoir défini les limites de connexion, vous devez redémarrer les servic
 
 Cet exemple définit la limite de connexion pour un serveur.
 
-    Set-ImapSettings -Identity CAS01 -MaxConnections Value
+```powershell
+Set-ImapSettings -Identity CAS01 -MaxConnections Value
+```
 
 Cet exemple définit la limite de connexion pour une adresse IP.
 
-    Set-ImapSettings -Identity CAS01 -MaxConnectionsFromSingleIP Value
+```powershell
+Set-ImapSettings -Identity CAS01 -MaxConnectionsFromSingleIP Value
+```
 
 Cet exemple définit la limite de connexion pour un utilisateur.
 
-    Set-ImapSettings -MaxConnectionsPerUser Value
+```powershell
+Set-ImapSettings -MaxConnectionsPerUser Value
+```
 
 Dans cet exemple, nous définissons la taille de commande maximale.
 
-    Set-ImapSettings -MaxCommandSize Value
+```powershell
+Set-ImapSettings -MaxCommandSize Value
+```
 
 Après avoir défini les limites de connexion, vous devez redémarrer les services IMAP4. Pour plus d’informations sur le redémarrage des services IMAP4, voir [Démarrer et arrêter les services IMAP4](start-and-stop-the-imap4-services-exchange-2013-help.md).
 
@@ -101,7 +109,9 @@ Ou
 
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
-        Get-ImapSettings | format-list
+    ```powershell
+Get-ImapSettings | format-list
+```
 
 2.  Vérifiez que les paramètres de connexion sont correctes.
 

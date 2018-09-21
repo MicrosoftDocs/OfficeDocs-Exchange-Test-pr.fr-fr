@@ -47,11 +47,15 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux autorisati
 
 Pour modifier la stratégie d’attribution qui est affectée à une boîte aux lettres, utilisez la syntaxe suivante.
 
-    Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
+```powershell
+Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
+```
 
 Cet exemple définit la stratégie d’attribution aux utilisateurs de messagerie unifiée sur la boîte aux lettres de Fabrice.
 
-    Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
+```powershell
+Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
+```
 
 ## Utilisez l’environnement de ligne de commande Exchange Management Shell pour modifier la stratégie d’attribution sur un groupe de boîtes aux lettres pour lesquelles une stratégie d’attribution spécifique a été affectée
 

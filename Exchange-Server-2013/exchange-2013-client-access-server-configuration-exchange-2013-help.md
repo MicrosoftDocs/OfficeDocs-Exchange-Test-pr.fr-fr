@@ -71,10 +71,14 @@ Vous devrez exécuter les commandes suivantes pour configurer les répertoires v
     
     À l'invite de commande, exécutez les commandes suivantes une fois que vous avez défini le répertoire virtuel Outlook Web App.
     ```
-        Net stop IISAdmin /y
+    ```powershell
+Net stop IISAdmin /y
+```
     ```
     ```
-        Net start W3SVC
+    ```powershell
+Net start W3SVC
+```
     ```
 2.  Pour configurer l'accès externe au CAE, exécutez la commande suivante dans Exchange Management Shell.
     

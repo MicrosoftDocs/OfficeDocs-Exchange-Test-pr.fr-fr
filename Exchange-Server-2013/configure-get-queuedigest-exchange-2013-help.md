@@ -59,7 +59,9 @@ Par défaut, les files d’attente de remise ayant l’état Actif, Connexion, P
 
 1.  Dans une fenêtre d’invite de commandes, ouvrez le fichier EdgeTransport.exe.config dans le Bloc-notes en exécutant la commande suivante :
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  Ajoutez l’une ou les deux clés suivantes dans la section `<appSettings>`.
     
@@ -79,11 +81,15 @@ Par défaut, les files d’attente de remise ayant l’état Actif, Connexion, P
 
 5.  Pour modifier la valeur du paramètre *QueueDiagnosticsAggregationInterval* dans l’environnement de ligne de commande Exchange Management Shell, utilisez la syntaxe suivante :
     
-        Set-TransportConfig -QueueDiagnosticsAggregationInterval <hh:mm:ss>
+    ```powershell
+Set-TransportConfig -QueueDiagnosticsAggregationInterval <hh:mm:ss>
+```
     
     Par exemple, pour modifier la valeur sur 30 secondes, exécutez la commande suivante :
     
-        Set-TransportConfig -QueueDiagnosticsAggregationInterval 00:00:30
+    ```powershell
+Set-TransportConfig -QueueDiagnosticsAggregationInterval 00:00:30
+```
 
 ## Comment savoir si cela a fonctionné ?
 

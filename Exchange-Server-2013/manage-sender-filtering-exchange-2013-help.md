@@ -43,11 +43,15 @@ Lorsque la fonctionnalité de filtrage des expéditeurs est activée sur un serv
 
 Pour désactiver le filtrage des expéditeurs, exécutez la commande suivante :
 
-    Set-SenderFilterConfig -Enabled $false
+```powershell
+Set-SenderFilterConfig -Enabled $false
+```
 
 Pour activer le filtrage des expéditeurs, exécutez la commande suivante :
 
-    Set-SenderFilterConfig -Enabled $true
+```powershell
+Set-SenderFilterConfig -Enabled $true
+```
 
 > [!NOTE]
 > Quand vous désactivez le filtrage des expéditeurs, l'agent de filtrage des expéditeurs sous-jacent reste activé. Pour désactiver l'agent de filtrage des expéditeurs, exécutez la commande suivante : <code>Disable-TransportAgent &quot;Sender Filter Agent&quot;</code>.
@@ -59,7 +63,9 @@ Pour vérifier que vous avez bien activé ou désactivé le filtrage des expédi
 
 1.  Exécutez la commande suivante :
     
-        Get-SenderFilterConfig | Format-List Enabled
+    ```powershell
+Get-SenderFilterConfig | Format-List Enabled
+```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 
@@ -95,7 +101,9 @@ Pour vérifier que vous avez bien configuré le blocage des expéditeurs, procé
 
 1.  Exécutez la commande suivante :
     
-        Get-SenderFilterConfig | Format-List BlockedSenders,BlockedDomains,BlockedDomainsAndSubdomains
+    ```powershell
+Get-SenderFilterConfig | Format-List BlockedSenders,BlockedDomains,BlockedDomainsAndSubdomains
+```
 
 2.  Vérifiez que les valeurs affichées sont les valeurs que vous avez configurées.
 
@@ -103,11 +111,15 @@ Pour vérifier que vous avez bien configuré le blocage des expéditeurs, procé
 
 Pour activer ou désactiver le blocage des messages à expéditeurs vierges, exécutez la commande suivante :
 
-    Set-SenderFilterConfig -BlankSenderBlockingenabled <$true | $false>
+```powershell
+Set-SenderFilterConfig -BlankSenderBlockingenabled <$true | $false>
+```
 
 Dans cet exemple, l'agent de filtrage des expéditeurs est configuré de manière à bloquer les messages qui n'indiquent pas d'expéditeur dans l'en-tête de commande SMTP MAIL FROM:
 
-    Set-SenderFilterConfig -BlankSenderBlockingEnabled $true
+```powershell
+Set-SenderFilterConfig -BlankSenderBlockingEnabled $true
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -115,7 +127,9 @@ Pour vérifier que vous avez bien activé ou désactivé le blocage des messages
 
 1.  Exécutez la commande suivante :
     
-        Get-SenderFilterConfig | Format-List BlankSenderBlockingEnabled
+    ```powershell
+Get-SenderFilterConfig | Format-List BlankSenderBlockingEnabled
+```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 

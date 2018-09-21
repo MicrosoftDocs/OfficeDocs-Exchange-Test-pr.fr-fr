@@ -47,7 +47,9 @@ Vous rencontrez des difficultés ? Demandez de l’aide en participant aux foru
 
 Cet exemple obtient des statistiques de dossiers du dossier Éléments récupérables de Soumya Singhi et affiche le résultat sous forme de liste.
 
-    Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-List
+```powershell
+Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-List
+```
 
 Cet exemple obtient les statistiques de dossiers du dossier Éléments récupérables de 'oumya Singhi et affiche le nom et le chemin d'accès du dossier, le nombre d'éléments qu'il contient et sa taille sous forme de tableau.
 

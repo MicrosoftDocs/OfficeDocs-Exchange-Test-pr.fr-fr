@@ -110,11 +110,15 @@ Utilisez la procédure suivante pour activer la prise en charge des agents de tr
 
 1.  Dans une fenêtre d'invite de commandes, sur le serveur Exchange 2013 sur lequel vous souhaitez configurer la prise en charge de l'agent de transport hérité, ouvrez le fichier de configuration de l'application dans le Bloc-notes en exécutant la commande suivante :
     
-        Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
+```
     
     Par exemple, pour ouvrir le fichier EdgeTransport.exe.config sur un serveur de boîtes aux lettres, exécutez la commande suivante :
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  Localisez la clé *\</configuration\>* à la fin du fichier et collez les clés suivantes avant la clé *\</configuration\>* :
     

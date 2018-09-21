@@ -123,5 +123,7 @@ Pour vérifier que vous avez bien modifié une stratégie de boîte aux lettres 
 
 2.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+    ```powershell
+Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+```
 

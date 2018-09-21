@@ -43,7 +43,9 @@ Pour les autres tâches de gestion relatives à la gestion des enregistrements d
 
 Dans cet exemple, on configure l’Assistant Dossier géré pour traiter toutes les boîtes aux lettres en une journée.
 
-    Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+```powershell
+Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-MailboxServer](https://technet.microsoft.com/fr-fr/library/aa998651\(v=exchg.150\)).
 
@@ -59,7 +61,9 @@ Cette commande récupère tous les serveurs de boîtes aux lettres de l'organisa
 
 Cet exemple déclenche l’Assistant Dossier géré pour traiter immédiatement la boîte aux lettres de Morris Cornejo.
 
-    Start-ManagedFolderAssistant -Identity morris.cornejo@contoso.com
+```powershell
+Start-ManagedFolderAssistant -Identity morris.cornejo@contoso.com
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Start-ManagedFolderAssistant](https://technet.microsoft.com/fr-fr/library/aa998864\(v=exchg.150\)).
 

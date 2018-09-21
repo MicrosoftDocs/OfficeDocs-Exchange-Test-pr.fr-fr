@@ -45,7 +45,9 @@ La cmdlet **New-MoveRequest** permet de mettre en file d'attente la boîte aux l
 
 Cet exemple commence la demande de déplacement pour la boîte aux lettres de dossiers publics PF\_SanFrancisco vers la base de données de boîtes aux lettres MBX\_DB01.
 
-    New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01
+```powershell
+New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-MoveRequest](https://technet.microsoft.com/fr-fr/library/dd351123\(v=exchg.150\)).
 
@@ -55,19 +57,25 @@ Au cours de l'étape finale de la demande de déplacement, lors de la phase `Com
 
 Cet exemple commence la demande de déplacement pour la boîte aux lettres de dossiers publics PF\_SanFrancisco vers la base de données de boîtes aux lettres MBX\_DB01, et l'interrompt lorsqu'elle est prête à être effectuée.
 
-    New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01 -SuspendWhenReadyToComplete
+```powershell
+New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01 -SuspendWhenReadyToComplete
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-MoveRequest](https://technet.microsoft.com/fr-fr/library/dd351123\(v=exchg.150\)).
 
 Cet exemple récupère l'état du déplacement de boîte aux lettres en cours pour la boîte aux lettres de dossiers publics PF\_SanFrancisco.
 
-    Get-MoveRequest -Identity "PF_SanFrancisco"
+```powershell
+Get-MoveRequest -Identity "PF_SanFrancisco"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Get-MoveRequest](https://technet.microsoft.com/fr-fr/library/dd335227\(v=exchg.150\)).
 
 Quand la demande de déplacement atteint l'état Suspendu, vous pouvez reprendre la demande. Cet exemple reprend la demande de déplacement associée à la boîte aux lettres de dossiers publics PF\_SanFrancisco.
 
-    Resume-MoveRequest -Identity "PF_SanFrancisco"
+```powershell
+Resume-MoveRequest -Identity "PF_SanFrancisco"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Resume-MoveRequest](https://technet.microsoft.com/fr-fr/library/ee332320\(v=exchg.150\)).
 
@@ -75,7 +83,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Pour vérifier que la demande de déplacement a bien été créée, exécutez la commande suivante :
 
-    Get-MoveRequestStatistics -Identity PF_SanFrancisco | Format-List Status
+```powershell
+Get-MoveRequestStatistics -Identity PF_SanFrancisco | Format-List Status
+```
 
 L'état `Completed` indique que la demande de déplacement a réussi.
 

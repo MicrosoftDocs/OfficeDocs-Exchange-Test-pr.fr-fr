@@ -41,7 +41,9 @@ Pour plus d’informations sur la mise à niveau vers Exchange 2013, consultez 
 
   - Exécutez la commande suivante dans Exchange 2013 pour obtenir l’identité et la version des serveurs Exchange et des bases de données de boîtes aux lettres qui contiennent les boîtes aux lettres système dans votre organisation.
     
-        Get-Mailbox -Arbitration | FL Name,DisplayName,ServerName,Database,AdminDisplayVersion
+    ```powershell
+Get-Mailbox -Arbitration | FL Name,DisplayName,ServerName,Database,AdminDisplayVersion
+```
     
     La propriété **AdminDisplayVersion** indique la version d’Exchange que le serveur exécute. La valeur `Version 14.x` indique Exchange 2010 ; la valeur `Version 15.x` indique Exchange 2013.
 
@@ -81,7 +83,9 @@ Pour plus d’informations sur la mise à niveau vers Exchange 2013, consultez 
 
 Tout d’abord, exécutez la commande suivante dans Exchange 2013 pour obtenir les noms et les versions de toutes les bases de données de boîtes aux lettres de votre organisation.
 
-    Get-MailboxDatabase -IncludePreExchange2013 | FL Name,Server,AdminDisplayVersion
+```powershell
+Get-MailboxDatabase -IncludePreExchange2013 | FL Name,Server,AdminDisplayVersion
+```
 
 Après avoir identifié le nom des bases de données de boîtes aux lettres dans votre organisation, exécutez la commande suivante dans Exchange 2013 pour déplacer la boîte aux lettres système Microsoft Exchange vers une base de données de boîtes aux lettres située sur un serveur Exchange 2013.
 

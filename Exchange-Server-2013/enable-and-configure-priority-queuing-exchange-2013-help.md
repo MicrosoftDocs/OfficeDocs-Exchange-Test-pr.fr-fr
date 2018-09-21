@@ -41,7 +41,9 @@ La *priorité de mise en file d'attente* est une fonctionnalité de Microsoft Ex
 
 1.  Dans une fenêtre d'invite de commandes, ouvrez le fichier de configuration de l'application EdgeTransport.exe.config dans le Bloc-notes en exécutant la commande suivante :
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  Recherchez les clés suivantes dans la section `<appSettings>`.
     
@@ -59,7 +61,9 @@ La *priorité de mise en file d'attente* est une fonctionnalité de Microsoft Ex
     
     Pour activer la priorité de mise en file d'attente dans le service de transport sur le serveur de boîtes aux lettres, utilisez la valeur suivante :
     
-        <add key="PriorityQueuingEnabled" value="true" />
+    ```command line
+<add key="PriorityQueuingEnabled" value="true" />
+```
     
     Configurez les valeurs de priorité de mise en file d'attente restantes ou conservez les valeurs par défaut.
 

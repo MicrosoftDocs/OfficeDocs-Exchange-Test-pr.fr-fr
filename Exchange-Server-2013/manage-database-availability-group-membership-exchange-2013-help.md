@@ -61,15 +61,21 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
 
 Cet exemple ajoute le serveur de boîte aux lettres MBX1 au DAG DAG1.
 
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```powershell
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```
 
 Cet exemple supprime le serveur de boîte aux lettres MBX1 du groupe de disponibilité de base de données (DAG) DAG3. Avant d'exécuter cette commande, assurez-vous qu'il n'existe aucune base de données répliquée sur le serveur de boîtes aux lettres.
 
-    Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```powershell
+Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```
 
 Cet exemple supprime les paramètres de configuration du serveur de boîte aux lettres nommé MBX4 à partir du DAG DAG2. MBX4 devrait être hors connexion pendant une période prolongée ; sa configuration est donc supprimée du groupe de disponibilité de base de données (DAG) pendant qu’il est hors connexion, afin d’établir le quorum avec les membres restants du groupe de disponibilité de base de données (DAG) qui sont en ligne.
 
-    Remove-DatabaseAvailabilityGroupServer -Identity DAG2 -MailboxServer MBX4 -ConfigurationOnly
+```powershell
+Remove-DatabaseAvailabilityGroupServer -Identity DAG2 -MailboxServer MBX4 -ConfigurationOnly
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -79,7 +85,9 @@ Pour vérifier que vous avez correctement géré l’appartenance à un groupe d
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les informations d’appartenance au groupe de disponibilité de base de données (DAG) :
     
-        Get-DatabaseAvailabilityGroup <DAGName> | Format-List Servers
+    ```powershell
+Get-DatabaseAvailabilityGroup <DAGName> | Format-List Servers
+```
 
 ## Pour plus d’informations
 

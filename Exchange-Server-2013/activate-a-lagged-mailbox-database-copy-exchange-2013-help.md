@@ -65,7 +65,9 @@ Vous recherchez des informations supplémentaires sur les copies retardées de b
 
 5.  Cet exemple utilise la commande Eseutil pour effectuer l'opération de récupération.
     
-        Eseutil.exe /r eXX /a
+    ```powershell
+Eseutil.exe /r eXX /a
+```
     
     > [!NOTE]
     > Dans l'exemple précédent, e<em>XX</em> est le préfixe de génération du journal pour la base de données (par exemple, E00, E01, E02, etc.).
@@ -78,7 +80,9 @@ Vous recherchez des informations supplémentaires sur les copies retardées de b
 
 7.  Suite au processus de récupération, cet exemple reprend la réplication de la base de données qui a été utilisée dans le cadre de l'opération de récupération.
     
-        Resume-MailboxDatabaseCopy DB1\EX3
+    ```powershell
+Resume-MailboxDatabaseCopy DB1\EX3
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd351074\(v=exchg.150\)) et [Resume-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd335220\(v=exchg.150\)).
 
@@ -98,7 +102,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 2.  Cet exemple active la copie de base de données de boîtes aux lettres retardée en utilisant la cmdlet [Move-ActiveMailboxDatabase](https://technet.microsoft.com/fr-fr/library/dd298068\(v=exchg.150\)) avec le paramètre *SkipLagChecks*.
     
-        Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
+    ```powershell
+Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
+```
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour activer une copie de base de données de boîtes aux lettres retardée à l'aide de la fonctionnalité de récupération SafetyNet
 
@@ -116,7 +122,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 2.  Déterminez les journaux requis pour la copie de base de données retardée en recherchant la valeur « Log required: » (Journal requis) dans la sortie de l'en-tête de base de données ESEUTIL
     
-        Eseutil /mh <DBPath> | findstr /c:"Log Required"
+    ```powershell
+Eseutil /mh <DBPath> | findstr /c:"Log Required"
+```
     
     Notez les numéros hexadécimaux entre parenthèses. Le premier numéro correspond à la génération requise la plus faible (désignée par LowGeneration) et le deuxième numéro à la génération requise la plus élevée (désignée par HighGeneration). Déplacez tous les fichiers de génération de journaux dont la séquence de génération est supérieure à HighGeneration vers un autre emplacement, afin qu'ils ne soient pas relus dans la base de données.
 
@@ -136,5 +144,7 @@ Pour vérifier que vous avez bien activé une copie de base de données de boît
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les informations d’état pour une copie de base de données.
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```powershell
+Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+```
 

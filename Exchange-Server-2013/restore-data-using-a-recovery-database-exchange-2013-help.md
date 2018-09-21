@@ -41,11 +41,15 @@ Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives a
 
 2.  Utilisez Eseutil pour mettre cette base de données dans un état d’arrêt correct. Dans l’exemple précédent, EXX est le préfixe de génération de journal (par exemple E00, E01, E02, etc.).
     
-        Eseutil /R EXX /l <RDBLogFilePath> /d <RDBEdbFolder>
+    ```powershell
+Eseutil /R EXX /l <RDBLogFilePath> /d <RDBEdbFolder>
+```
     
     L’exemple suivant illustre le préfixe de génération de journal E01, la base de données de récupération et le chemin d’accès aux fichiers journaux E:\\Databases\\RDB1 :
     
-        Eseutil /R E01 /l E:\Databases\RDB1 /d E:\Databases\RDB1
+    ```powershell
+Eseutil /R E01 /l E:\Databases\RDB1 /d E:\Databases\RDB1
+```
 
 3.  Créer une base de données de récupération. Attribuez un nom unique à la base de données de récupération, mais utilisez le nom et le chemin d’accès du fichier de base de données pour le paramètre EdbFilePath, et l’emplacement des fichiers journaux récupérés pour le paramètre LogFolderPath.
     
@@ -57,15 +61,21 @@ Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives a
 
 4.  Redémarrez le service de banque d’informations Microsoft Exchange :
     
-        Restart-Service MSExchangeIS
+    ```powershell
+Restart-Service MSExchangeIS
+```
 
 5.  Montez la base de données de récupération :
     
-        Mount-database <RDBName>
+    ```powershell
+Mount-database <RDBName>
+```
 
 6.  Vérifiez que la base de données montée contient les boîtes aux lettres que vous voulez restaurer :
     
-        Get-MailboxStatistics -Database <RDBName> | ft -auto
+    ```powershell
+Get-MailboxStatistics -Database <RDBName> | ft -auto
+```
 
 7.  Utilisez la cmdlet New-MailboxRestoreRequest pour restaurer une boîte aux lettres ou des éléments de la base de données de récupération vers une boîte aux lettres de production.
     
@@ -81,7 +91,9 @@ Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives a
     
     Lorsque l’état de la restauration est Terminé, supprimez la demande de restauration à l’aide de la cmdlet [Remove-MailboxRestoreRequest](https://technet.microsoft.com/fr-fr/library/ff829910\(v=exchg.150\)). Par exemple :
     
-        Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
+    ```powershell
+Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
+```
 
 ## Comment savoir si cela a fonctionné ?
 

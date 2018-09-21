@@ -83,7 +83,9 @@ Cet exemple utilise le script `Move-PublicFolderBranch.ps1` pour déplacer une b
 
 Pour vérifier que la demande de déplacement de dossier public a bien été effectuée, exécutez la commande suivante :
 
-    Get-PublicFolderMoveRequest | Format-List Status
+```powershell
+Get-PublicFolderMoveRequest | Format-List Status
+```
 
 L'état `Completed` indique que la demande de déplacement a réussi.
 

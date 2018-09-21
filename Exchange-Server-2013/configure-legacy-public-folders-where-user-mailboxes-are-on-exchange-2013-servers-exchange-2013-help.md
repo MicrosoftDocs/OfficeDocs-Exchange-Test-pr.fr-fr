@@ -43,7 +43,9 @@ Les utilisateurs dont les boîtes aux lettres sont sur Exchange Server 2013 ou 2
     
     Pour Exchange 2007, exécutez la commande suivante :
     
-        New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+    ```powershell
+New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+```
     
     > [!NOTE]  
     > Nous vous recommandons d’ajouter à cette base de données uniquement la boîte aux lettres proxy que vous allez créer à l’étape 3. Aucune autre boîte aux lettres ne devrait être créée dans cette base de données de boîtes aux lettres.
@@ -54,12 +56,16 @@ Les utilisateurs dont les boîtes aux lettres sont sur Exchange Server 2013 ou 2
         New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs> 
     ```
     ```
-        Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+    ```powershell
+Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+```
     ```
 
 4.  Pour Exchange 2010, activez la découverte automatique de façon à ce qu’elle renvoie les boîtes aux lettres de dossiers publics proxy. Cette étape n’est pas nécessaire pour Exchange 2007.
     
-        Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+    ```powershell
+Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+```
 
 5.  Répétez les étapes précédentes pour chaque serveur de dossiers publics au sein de votre organisation.
 

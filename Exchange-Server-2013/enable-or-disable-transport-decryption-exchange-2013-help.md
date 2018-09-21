@@ -57,7 +57,9 @@ Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives �
 
 Cet exemple active le déchiffrement de transport pour l’organisation Exchange 2013. Les messages qui ne peuvent pas être déchiffrés sont rejetés et un rapport de non-remise est renvoyé à l’expéditeur.
 
-    Set-IRMConfiguration -TransportDecryptionSetting Mandatory
+```powershell
+Set-IRMConfiguration -TransportDecryptionSetting Mandatory
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-IRMConfiguration](https://technet.microsoft.com/fr-fr/library/dd979792\(v=exchg.150\)).
 
@@ -65,7 +67,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Cet exemple désactive le déchiffrement de transport pour l’organisation Exchange 2013.
 
-    Set-IRMConfiguration -TransportDecryptionSetting Disabled
+```powershell
+Set-IRMConfiguration -TransportDecryptionSetting Disabled
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-IRMConfiguration](https://technet.microsoft.com/fr-fr/library/dd979792\(v=exchg.150\)).
 

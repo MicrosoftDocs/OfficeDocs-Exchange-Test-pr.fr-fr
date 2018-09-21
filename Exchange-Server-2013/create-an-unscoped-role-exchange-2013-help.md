@@ -61,11 +61,15 @@ Voici les étapes à suivre pour créer un rôle de niveau supérieur non délim
 
 Les rôles de niveau supérieur non délimités n’ont pas de rôle parent. Pour créer un rôle sans parent, vous devez spécifier le commutateur *UnscopedTopLevel*. Utilisez la syntaxe suivante pour créer le nouveau rôle.
 
-    New-ManagementRole <name of new role> -UnscopedTopLevel
+```powershell
+New-ManagementRole <name of new role> -UnscopedTopLevel
+```
 
 Cet exemple crée le rôle de niveau supérieur non délimité de scripts informatiques.
 
-    New-ManagementRole "IT Scripts" -UnscopedTopLevel
+```powershell
+New-ManagementRole "IT Scripts" -UnscopedTopLevel
+```
 
 Après sa création, le rôle est vide jusqu’à ce que vous y ajoutiez des scripts ou des cmdlets non Exchange.
 
@@ -145,7 +149,9 @@ Utilisez la syntaxe suivante pour créer le nouveau rôle.
 
 Cet exemple copie le rôle Scripts informatiques globaux et ses entrées de rôle de gestion dans le rôle Scripts informatiques diagnostics.
 
-    New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
+```powershell
+New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementRole](https://technet.microsoft.com/fr-fr/library/dd298073\(v=exchg.150\)).
 

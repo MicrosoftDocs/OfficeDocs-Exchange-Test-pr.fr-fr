@@ -61,7 +61,9 @@ Pour rechercher des entrées correspondant à des événements spécifiques dans
 
 Pour afficher les 1 000 entrées du journal de suivi des messages les plus récentes sur le serveur, exécutez la commande suivante :
 
-    Get-MessageTrackingLog
+```powershell
+Get-MessageTrackingLog
+```
 
 Cet exemple recherche dans les journaux de suivi des messages sur le serveur local toutes les entrées enregistrées entre le 28/03/2013 à 8h et le 28/03/2013 à 17h pour tous les événements **FAIL** envoyés par pat@contoso.com.
 

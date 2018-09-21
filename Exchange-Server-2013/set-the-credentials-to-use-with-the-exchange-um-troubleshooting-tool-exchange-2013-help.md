@@ -55,7 +55,9 @@ Par défaut, lorsque vous exécutez l’outil de dépannage de la messagerie uni
 
 2.  À l’invite de la fenêtre **Outil de dépannage de la messagerie unifiée Microsoft Exchange 2010**, saisissez ce qui suit, puis appuyez sur la touche Entrée.
     
-        $cred=Get-Credential
+    ```powershell
+$cred=Get-Credential
+```
 
 3.  Dans la fenêtre **Demande d’informations d’identification Windows PowerShell**, saisissez un nom d’utilisateur/de domaine et un mot de passe, puis cliquez sur **OK**.
 

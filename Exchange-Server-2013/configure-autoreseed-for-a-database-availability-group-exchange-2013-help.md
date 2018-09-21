@@ -49,11 +49,15 @@ La première étape exige la configuration des répertoires racine pour les base
 
 Cet exemple montre comment configurer le chemin d'accès racine pour les bases de données.
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabasesRootFolderPath "C:\ExchDbs"
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabasesRootFolderPath "C:\ExchDbs"
+```
 
 Cet exemple montre comment configurer le chemin d'accès racine pour les volumes de stockage.
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
+```
 
 ## Comment savoir si cette étape a fonctionné ?
 
@@ -69,7 +73,9 @@ Configurez ensuite le nombre de bases de données par volume (*AutoDagDatabaseCo
 
 Cet exemple montre comment configurer ce paramètre AutoReseed pour un groupe de disponibilité de base de données configuré avec 4 bases de données par volume.
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
+```
 
 ## Comment savoir si cette étape a fonctionné ?
 
@@ -91,7 +97,9 @@ Créez ensuite les répertoires correspondant aux répertoires racine configuré
 
 Pour vérifier que vous avez bien configuré les répertoires racine des bases de données et des volumes, exécutez la commande suivante :
 
-    Dir C:\
+```powershell
+Dir C:\
+```
 
 Les répertoires créés devraient apparaître dans la liste des résultats.
 
@@ -111,7 +119,9 @@ Le nom des dossiers montés peut être n’importe quel nom de dossier, tant que
 
 Pour vérifier que vous avez bien monté les dossiers de volume, exécutez la commande suivante :
 
-    Dir C:\
+```powershell
+Dir C:\
+```
 
 Les dossiers montés devraient apparaître dans la liste des résultats.
 
@@ -119,23 +129,33 @@ Les dossiers montés devraient apparaître dans la liste des résultats.
 
 Ensuite, créez les répertoires de base de données sous le chemin d'accès racine C:\\ExchangeDatabases. Cet exemple montre comment créer des répertoires pour une configuration de stockage avec 4 bases de données sur chaque volume.
 ```
-    md c:\ExchangeDatabases\db001
+```powershell
+md c:\ExchangeDatabases\db001
 ```
 ```
-    md c:\ExchangeDatabases\db002
+```
+```powershell
+md c:\ExchangeDatabases\db002
 ```
 ```
-    md c:\ExchangeDatabases\db003
+```
+```powershell
+md c:\ExchangeDatabases\db003
 ```
 ```
-    md c:\ExchangeDatabases\db004
+```
+```powershell
+md c:\ExchangeDatabases\db004
+```
 ```
 
 ## Comment savoir si cette étape a fonctionné ?
 
 Pour vérifier que vous avez bien monté les dossiers de base de données, exécutez la commande suivante :
 
-    Dir C:\ExchangeDatabases
+```powershell
+Dir C:\ExchangeDatabases
+```
 
 Les répertoires créés devraient apparaître dans la liste des résultats.
 
@@ -149,7 +169,9 @@ Créez les points de montage pour chaque base de données et reliez le point de 
 
 Pour vérifier que vous avez bien créé les points de montage pour la base de données, exécutez la commande suivante :
 
-    Mountvol.exe C:\ExchangeDatabases\db001 /L
+```powershell
+Mountvol.exe C:\ExchangeDatabases\db001 /L
+```
 
 Le volume monté doit apparaître dans la liste des points de montage.
 
@@ -163,28 +185,44 @@ C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.log
 
 Cet exemple montre comment créer des répertoires pour 4 bases de données qui seront stockées sur le volume 1 :
 ```
-    md c:\ExchangeDatabases\db001\db001.db
+```powershell
+md c:\ExchangeDatabases\db001\db001.db
 ```
 ```
-    md c:\ExchangeDatabases\db001\db001.log
+```
+```powershell
+md c:\ExchangeDatabases\db001\db001.log
 ```
 ```
-    md c:\ExchangeDatabases\db002\db002.db
+```
+```powershell
+md c:\ExchangeDatabases\db002\db002.db
 ```
 ```
-    md c:\ExchangeDatabases\db002\db002.log
+```
+```powershell
+md c:\ExchangeDatabases\db002\db002.log
 ```
 ```
-    md c:\ExchangeDatabases\db003\db003.db
+```
+```powershell
+md c:\ExchangeDatabases\db003\db003.db
 ```
 ```
-    md c:\ExchangeDatabases\db003\db003.log
+```
+```powershell
+md c:\ExchangeDatabases\db003\db003.log
 ```
 ```
-    md c:\ExchangeDatabases\db004\db004.db
+```
+```powershell
+md c:\ExchangeDatabases\db004\db004.db
 ```
 ```
-    md c:\ExchangeDatabases\db004\db004.log
+```
+```powershell
+md c:\ExchangeDatabases\db004\db004.log
+```
 ```
 
 Répétez les commandes précédentes pour les bases de données sur chaque volume.
@@ -193,7 +231,9 @@ Répétez les commandes précédentes pour les bases de données sur chaque volu
 
 Pour vérifier que vous avez bien créé la structure de répertoires de base de données, exécutez la commande suivante :
 
-    Dir C:\ExchangeDatabases /s
+```powershell
+Dir C:\ExchangeDatabases /s
+```
 
 Les répertoires créés devraient apparaître dans la liste des résultats.
 
@@ -221,9 +261,13 @@ Pour vérifier que vous avez bien configuré AutoReseed pour un groupe de dispon
 
 2.  Exécutez la commande suivante pour vérifier que la structure de répertoires est configurée correctement (vous trouverez ci-dessous les chemins d'accès par défaut ; si nécessaire, remplacez les chemins d'accès par ceux que vous utilisez).
     ```
-        Dir c:\ExchangeDatabases /s
+    ```powershell
+Dir C:\ExchangeDatabases /s
+```
     ```
     ```
-        Dir c:\ExchangeVolumes /s
+    ```powershell
+Dir c:\ExchangeVolumes /s
+```
     ```    
 

@@ -69,7 +69,9 @@ Retour au début
 
 Dans cet exemple, la boîte aux lettres bsuneja@contoso.com est placée en conservation pour litige. Les éléments de la boîte aux lettres sont conservés indéfiniment ou jusqu’à ce que la conservation soit supprimée.
 
-    Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true
+```powershell
+Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true
+```
 
 > [!NOTE]
 > Lorsque vous placez une boîte aux lettres en conservation pour litige indéfiniment (en ne spécifiant aucune durée), la valeur de la propriété de boîte aux lettres <em>LitigationHoldDuration</em> est définie sur <code>Unlimited</code>.
@@ -79,7 +81,9 @@ Dans cet exemple, la boîte aux lettres bsuneja@contoso.com est placée en conse
 
 Dans cet exemple, la boîte aux lettres bsuneja@contoso.com est placée en conservation pour litige et les éléments sont conservés pendant 2 555 jours (environ 7 ans).
 
-    Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true -LitigationHoldDuration 2555
+```powershell
+Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true -LitigationHoldDuration 2555
+```
 
 ## Utilisation de l’environnement de ligne de commande Exchange Management Shell pour placer toutes les boîtes aux lettres en conservation pour litige pour une durée spécifiée
 
@@ -99,7 +103,9 @@ Consultez la section Plus d’informations pour obtenir des exemples d’utilisa
 
 Dans cet exemple, la conservation pour litige de la boîte aux lettres bsuneja@contoso.com est supprimée.
 
-    Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
+```powershell
+Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
+```
 
 Retour au début
 

@@ -212,11 +212,15 @@ Dans cet exemple, le nombre de colonnes est fixé à quatre à l’aide du param
 
 La cmdlet **Out-Host** est une cmdlet invisible par défaut à la fin du pipeline. Après l’application de toute mise en forme, la cmdlet **Out-Host** envoie la sortie finale à la fenêtre de la console pour affichage. Il n’est pas nécessaire d’appeler explicitement la cmdlet **Out-Host** car il s’agit de la sortie par défaut. Vous pouvez réécrire l’envoi de la sortie vers la fenêtre de la console en appelant la cmdlet **Out-File** comme dernière cmdlet de la commande. La cmdlet **Out-File** écrit alors la sortie dans le fichier que vous spécifiez dans la commande, comme dans l’exemple suivant :
 
-    Get-ChildItem | Format-Wide -Column 4 | Out-File c:\OutputFile.txt
+```powershell
+Get-ChildItem | Format-Wide -Column 4 | Out-File c:\OutputFile.txt
+```
 
 Dans cet exemple, la cmdlet **Out-File** écrit les informations affichées dans la commande **Get-ChildItem | Format-Wide -Column 4** dans un fichier nommé `OutputFile.txt`. Vous pouvez également rediriger la sortie du pipeline vers un fichier en utilisant l’opérateur de redirection, à savoir le signe plus grand que ( `>` ). Pour ajouter la sortie du pipeline d’une commande à un fichier existant sans remplacer le fichier original, utilisez deux signes plus grand que ( `>>` ), comme dans l’exemple suivant :
 
-    Get-ChildItem | Format-Wide -Column 4 >> C:\OutputFile.txt
+```powershell
+Get-ChildItem | Format-Wide -Column 4 >> C:\OutputFile.txt
+```
 
 Dans cet exemple, la sortie de la cmdlet **Get-Childitem** est canalisée vers la cmdlet **Format-Wide** à des fins de mise en forme, puis écrit dans le fichier `OutputFile.txt`. Notez que si le fichier `OutputFile.txt` n’existait pas, l’utilisation des deux signes plus grand que ( `>>` ) entraîne la création du fichier.
 
@@ -247,7 +251,9 @@ Pour utiliser ce script, sauvegardez-le dans le répertoire `C:\Program Files\Mi
 
 Le script `Out-Ie` suppose que les données reçues sont dans un code HTML valide. Pour convertir les données à afficher en HTML, vous devez canaliser les résultats de votre commande vers la cmdlet **ConvertTo-Html**. Vous pouvez alors canaliser les résultats de cette commande vers le script `Out-Ie`. L’exemple suivant montre comment afficher une liste de répertoires dans une fenêtre d’Internet Explorer :
 
-    Get-ChildItem | Select Name,Length | ConvertTo-Html | Out-Ie
+```powershell
+Get-ChildItem | Select Name,Length | ConvertTo-Html | Out-Ie
+```
 
 ## Procédure de filtrage de données
 

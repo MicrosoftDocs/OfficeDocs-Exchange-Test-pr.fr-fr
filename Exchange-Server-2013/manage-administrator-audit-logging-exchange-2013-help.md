@@ -111,7 +111,9 @@ Vous pouvez spécifier le nombre de jours, d'heures, de minutes et de secondes p
 
 Cet exemple spécifie une durée de vie de deux ans et six mois.
 
-    Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913.00:00:00
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913.00:00:00
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-AdminAuditLogConfig](https://technet.microsoft.com/fr-fr/library/dd298169\(v=exchg.150\)).
 
@@ -121,11 +123,15 @@ Les cmdlets qui commencent par le verbe **Test** ne sont pas enregistrées par d
 
 Cette commande active l'enregistrement des cmdlets de **Test**.
 
-    Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $True
+```powershell
+Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $True
+```
 
 Cette commande désactive l'enregistrement des cmdlets de **Test**.
 
-    Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $False
+```powershell
+Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $False
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-AdminAuditLogConfig](https://technet.microsoft.com/fr-fr/library/dd298169\(v=exchg.150\)).
 
@@ -133,17 +139,23 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Pour désactiver la journalisation d'audit de l'administrateur, exécutez la commande suivante :
 
-    Set-AdminAuditLogConfig -AdminAuditLogEnabled $False
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogEnabled $False
+```
 
 ## Activer l'enregistrement d'audit administrateur
 
 Pour activer la journalisation d'audit de l'administrateur, exécutez la commande suivante :
 
-    Set-AdminAuditLogConfig -AdminAuditLogEnabled $True
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogEnabled $True
+```
 
 ## Affichage des paramètres de journalisation d'audit de l'administrateur
 
 Pour afficher les paramètres de journalisation d'audit de l'administrateur que vous avez configurés pour votre organisation, exécutez la commande suivante :
 
-    Get-AdminAuditLogConfig
+```powershell
+Get-AdminAuditLogConfig
+```
 

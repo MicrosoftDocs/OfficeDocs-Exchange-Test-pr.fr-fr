@@ -71,7 +71,9 @@ Pour vérifier que vous avez bien activé ou désactivé la réécriture d’adr
 
 1.  Exécutez la commande suivante :
     
-        Get-TransportAgent
+    ```powershell
+Get-TransportAgent
+```
 
 2.  Vérifiez que les valeurs de la propriété **Enabled** pour l’agent de réécriture d’adresses pour les messages entrants et l’agent de réécriture d’adresses pour les messages sortants correspondent aux valeurs configurées.
 
@@ -79,15 +81,21 @@ Pour vérifier que vous avez bien activé ou désactivé la réécriture d’adr
 
 Pour afficher la liste récapitulative de toutes les entrées de réécriture d’adresses, exécutez la commande suivante :
 
-    Get-AddressRewriteEntry
+```powershell
+Get-AddressRewriteEntry
+```
 
 Pour afficher les détails d’une entrée de réécriture d’adresses, utilisez la syntaxe suivante.
 
-    Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
+```powershell
+Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
+```
 
 L’exemple suivant affiche les détails de l’entrée de réécriture d’adresses nommée « Rewrite Contoso.com to Northwindtraders.com » (réécrire Contoso.com en Northwindtraders.com) :
 
-    Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-List
+```powershell
+Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-List
+```
 
 ## Utiliser l’environnement Exchange Management Shell pour créer des entrées de réécriture d’adresses
 
@@ -169,7 +177,9 @@ Pour modifier une entrée de réécriture d’adresses qui réécrit les adresse
 
 L’exemple suivant modifie la valeur d’adresse interne de l’entrée de réécriture d’adresses de domaine unique nommée « Northwind Traders to Contoso ».
 
-    Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwindtraders.net
+```powershell
+Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwindtraders.net
+```
 
 ## Modification d’entrées de réécriture d’adresses pour des destinataires dans plusieurs sous-domaines
 
@@ -207,11 +217,15 @@ Pour vérifier que vous avez bien modifié une entrée de réécriture d’adres
 
 Pour supprimer une entrée de réécriture d’adresses unique, utilisez la syntaxe suivante :
 
-    Remove-AddressRewriteEntry <AddressRewriteEntryIdentity>
+```powershell
+Remove-AddressRewriteEntry <AddressRewriteEntryIdentity>
+```
 
 L’exemple suivant supprime l’entrée de réécriture d’adresses nommée « Contoso.com to Northwindtraders.com » :
 
-    Remove-AddressRewriteEntry "Contoso.com to Northwindtraders.com"
+```powershell
+Remove-AddressRewriteEntry "Contoso.com to Northwindtraders.com"
+```
 
 Pour modifier plusieurs entrées de réécriture d’adresses, utilisez la syntaxe suivante :
 
@@ -219,7 +233,9 @@ Pour modifier plusieurs entrées de réécriture d’adresses, utilisez la synta
 
 L’exemple suivant supprime toutes les entrées de réécriture d’adresses :
 
-    Get-AddressRewriteEntry | Remove-AddressRewriteEntry
+```powershell
+Get-AddressRewriteEntry | Remove-AddressRewriteEntry
+```
 
 L’exemple suivant simule la suppression des entrées de réécriture d’adresses qui contiennent le texte « to contoso.com » dans leur nom. Le commutateur *WhatIf* vous permet d’afficher un aperçu du résultat en n’effectuant aucune modification.
 

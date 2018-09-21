@@ -93,7 +93,9 @@ Pour configurer les autorisations fractionnées RBAC, procédez comme suit :
     
     1.  Désactivez les autorisations fractionnées Active Directory en exécutant la commande suivante à partir du support d’installation d’Exchange 2013.
         
-            setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+        ```powershell
+setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+```
     
     2.  Redémarrez les serveurs Exchange 2013 de l’entreprise ou attendez que le jeton d’accès Active Directory soit répliqué sur tous vos serveurs Exchange 2013.
         
@@ -117,11 +119,15 @@ Pour configurer les autorisations fractionnées RBAC, procédez comme suit :
     
     3.  Ajoutez des membres au nouveau groupe de rôles à l’aide de la commande suivante.
         
-            Add-RoleGroupMember "Active Directory Administrators" -Member <user to add>
+        ```powershell
+Add-RoleGroupMember "Active Directory Administrators" -Member <user to add>
+```
     
     4.  Remplacez la liste des délégués dans le nouveau groupe de rôles, de sorte que seuls les membres du groupe de rôles peuvent ajouter ou supprimer des membres.
         
-            Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
+        ```powershell
+Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
+```
         
         > [!IMPORTANT]
         > Les membres du groupe de rôles Gestion de l’organisation, ou ceux auxquels est attribué le rôle de gestion des rôles, soit directement soit via un autre groupe de rôles ou groupe de sécurité universelle, peuvent ignorer ce contrôle de sécurité des délégués. Si vous souhaitez empêcher tout administrateur Exchange de s’ajouter au nouveau groupe de rôles, vous devez supprimer l’attribution de rôle entre le rôle de gestion des rôles et les administrateurs Exchange, puis l’attribuer à un autre groupe.
@@ -132,7 +138,9 @@ Pour configurer les autorisations fractionnées RBAC, procédez comme suit :
     
     6.  À l’aide de la commande suivante, supprimez toutes les attributions de rôle ordinaire et de délégation concernant le rôle Création du destinataire de messagerie qui ne sont pas associées au nouveau groupe de rôle ou à tout autre groupe de rôle, groupe de sécurité universelle ou attribution directe que vous souhaitez conserver.
         
-            Remove-ManagementRoleAssignment <Mail Recipient Creation role assignment to remove>
+        ```powershell
+Remove-ManagementRoleAssignment <Mail Recipient Creation role assignment to remove>
+```
         
         > [!NOTE]
         > Pour supprimer l’ensemble des attributions de rôle ordinaire et de délégation du rôle Création du destinataire de messagerie dont dispose un utilisateur de rôle autre que le groupe des administrateurs Active Directory, exécutez la commande suivante. Le commutateur <em>WhatIf</em> vous permet d’afficher les attributions de rôles qui seront supprimées. Supprimez le commutateur <em>WhatIf</em> et réexécutez la commande pour supprimer les attributions de rôles.
@@ -207,7 +215,9 @@ Pour basculer des autorisations partagées ou fractionnées RBAC vers les autori
 
 1.  Dans une invite de commandes Windows, exécutez la commande suivante du support d’installation d’Exchange 2013 pour activer les autorisations fractionnées Active Directory.
     
-        setup.exe /PrepareAD /ActiveDirectorySplitPermissions:true
+    ```powershell
+setup.exe /PrepareAD /ActiveDirectorySplitPermissions:true
+```
 
 2.  Si votre organisation dispose de plusieurs domaines Active Directory, vous devez exécuter `setup.exe /PrepareDomain` dans chacun des domaines enfant contenant des serveurs ou des objets Exchange ou exécuter `setup.exe /PrepareAllDomains` à partir d’un site disposant d’un serveur Active Directory pour chacun des domaines.
 

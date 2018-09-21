@@ -53,11 +53,15 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
 
 2.  Supprimez les copies de bases de données de boîtes aux lettres se trouvant sur le serveur en cours de récupération à l’aide de la cmdlet [Remove-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd335119\(v=exchg.150\)).
     
-        Remove-MailboxDatabaseCopy DB1\MBX1
+    ```powershell
+Remove-MailboxDatabaseCopy DB1\MBX1
+```
 
 3.  Supprimez la configuration du serveur en panne du groupe de disponibilité de base de données à l’aide de la cmdlet [Remove-DatabaseAvailabilityGroupServer](https://technet.microsoft.com/fr-fr/library/dd297956\(v=exchg.150\)).
     
-        Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+    ```powershell
+Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```
     
     > [!NOTE]
     > Si le membre du groupe de disponibilité de base de données supprimé est hors connexion et s’il ne peut pas être mis en ligne, vous devez ajouter le paramètre <em>ConfigurationOnly</em> à la commande précédente. Si vous utilisez le commutateur <em>ConfigurationOnly</em>, vous devez également expulser manuellement le nœud du cluster.
@@ -67,11 +71,15 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
 
 5.  Ouvrez une fenêtre d’invite de commandes. À l’aide du support d’installation d’origine, exécutez la commande suivante :
     
-        Setup /m:RecoverServer
+    ```powershell
+Setup /m:RecoverServer
+```
 
 6.  Lorsque le processus de récupération d’installation est terminé, ajoutez le serveur récupéré au groupe de disponibilité de base de données à l’aide de la cmdlet [Add-DatabaseAvailabilityGroupServer](https://technet.microsoft.com/fr-fr/library/dd298049\(v=exchg.150\)).
     
-        Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+    ```powershell
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```
 
 7.  Une fois que le serveur est ajouté au groupe de disponibilité de base de données, reconfigurez les copies de bases de données de boîtes aux lettres à l’aide de la cmdlet [Add-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd298105\(v=exchg.150\)). Si des copies de bases de données déjà ajoutées ont un délai d’attente de relecture ou de troncation supérieur à 0, utilisez les paramètres *ReplayLagTime* et *TruncationLagTime* de la cmdlet [Add-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd298105\(v=exchg.150\)) pour reconfigurer ces paramètres.
     
@@ -86,11 +94,15 @@ Pour vérifier que vous avez bien récupéré le membre du groupe de disponibili
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour vérifier l’intégrité et le statut du membre du groupe de disponibilité de base de données restauré.
     
        ```
-           Test-ReplicationHealth <ServerName>
+       ```powershell
+Test-ReplicationHealth <ServerName>
+```
        ```
 
        ```   
-           Get-MailboxDatabaseCopyStatus -Server <ServerName>
+       ```powershell
+Get-MailboxDatabaseCopyStatus -Server <ServerName>
+```
        ```   
     
     L'ensemble des tests d'intégrité de réplication doivent réussir et le statut des bases de données et leurs index de contenu doivent être intègres.

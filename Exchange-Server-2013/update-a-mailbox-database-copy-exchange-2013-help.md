@@ -93,45 +93,63 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux copies de 
 
 Dans cet exemple, nous montrons comment amorcer une copie de la base de données DB1 sur MBX1.
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1
+```
 
 Dans cet exemple, nous montrons comment amorcer une copie de la base de données DB1 sur MBX1 avec MBX2 comme serveur de boîtes aux lettres source pour l’amorçage.
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2
+```
 
 Dans cet exemple, nous montrons comment amorcer une copie de la base de données DB1 sur MBX1 sans amorçage du catalogue d’indexation de contenu.
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -DatabaseOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -DatabaseOnly
+```
 
 Dans cet exemple, nous montrons comment amorcer le catalogue d’indexation de contenu pour la copie de la base de données DB1 sur MBX1 sans amorcer le fichier de base de données.
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```
 
 ## Copier manuellement une base de données hors connexion
 
 1.  Si l'enregistrement circulaire est activé pour la base de données, il doit être désactivé avant de poursuivre. Vous pouvez désactiver l'enregistrement circulaire pour une base de données de boîtes aux lettres à l'aide de la cmdlet [Set-MailboxDatabase](https://technet.microsoft.com/fr-fr/library/bb123971\(v=exchg.150\)), comme illustré dans l'exemple suivant.
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```powershell
+Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+```
 
 2.  Démontez la base de données. Vous pouvez utiliser la cmdlet [Dismount-Database](https://technet.microsoft.com/fr-fr/library/bb124936\(v=exchg.150\)), comme illustré dans cet exemple.
     
-        Dismount-Database DB1 -Confirm $false
+    ```powershell
+Dismount-Database DB1 -Confirm $false
+```
 
 3.  Copier manuellement les fichiers de base de données (le fichier de base de données et tous les fichiers journaux) sur un autre emplacement, tel qu'un lecteur de disque externe ou un partage réseau.
 
 4.  Montez la base de données. Vous pouvez utiliser la cmdlet [Mount-Database](https://technet.microsoft.com/fr-fr/library/aa998871\(v=exchg.150\)), comme illustré dans cet exemple.
     
-        Mount-Database DB1
+    ```powershell
+Mount-Database DB1
+```
 
 5.  Sur le serveur qui hébergera la copie, copiez les fichiers de base de données à partir du lecteur externe ou du partage réseau vers le même chemin d'accès que la copie de la base de données active. Par exemple, si le chemin d’accès à la copie de la base de données active est D:\\BDD1\\BDD1.edb et que le chemin d’accès aux fichiers journaux est D:\\BDD1, vous devrez alors copier les fichiers de base de données sur D:\\BDD1 sur le serveur qui doit héberger la copie.
 
 6.  Ajoutez la copie de la base de données de boîtes aux lettres à l'aide de la cmdlet [Add-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd298105\(v=exchg.150\)) avec le paramètre *SeedingPostponed*, comme illustré dans l'exemple suivant.
     
-        Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -SeedingPostponed
+    ```powershell
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -SeedingPostponed
+```
 
 7.  Si l'enregistrement circulaire est activé pour la base de données, réactivez-le à l'aide de la cmdlet [Set-MailboxDatabase](https://technet.microsoft.com/fr-fr/library/bb123971\(v=exchg.150\)), comme illustré dans l'exemple suivant.
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```powershell
+Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -141,7 +159,9 @@ Pour vérifier que l’amorçage de la copie de base de données de boîtes aux 
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour vérifier que la copie de la base de données de boîtes aux lettres a bien été amorcée et est saine.
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```powershell
+Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+```
     
     Le statut et l'état de l'index de contenu doivent être sains.
 

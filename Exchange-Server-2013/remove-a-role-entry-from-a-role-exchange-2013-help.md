@@ -43,11 +43,15 @@ Lorsque vous supprimez une entrée de rôle d'un rôle, les utilisateurs associ�
 
 Utilisez la syntaxe suivante pour supprimer une entrée de rôle de gestion d'un rôle.
 
-    Remove-ManagementRoleEntry <management role>\<management role entry>
+```powershell
+Remove-ManagementRoleEntry <management role>\<management role entry>
+```
 
 Cet exemple supprime la cmdlet **Enable-MailUser** du rôle « Seattle Server Administrators ».
 
-    Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
+```powershell
+Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-ManagementRoleEntry](https://technet.microsoft.com/fr-fr/library/dd351187\(v=exchg.150\)).
 

@@ -89,7 +89,9 @@ Pour activer ou désactiver l'enregistrement dans le journal de protocole sur un
 
 Cet exemple active l'enregistrement dans le journal de protocole pour le connecteur de réception nommé Connection de Contoso.com.
 
-    Set-ReceiveConnector "Connection from Contoso.com" -ProtocolLoggingLevel Verbose
+```powershell
+Set-ReceiveConnector "Connection from Contoso.com" -ProtocolLoggingLevel Verbose
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -97,7 +99,9 @@ Pour vérifier que vous avez bien activé ou désactivé l'enregistrement dans l
 
 1.  Dans l'environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante :
     
-        <Get-SendConnector |Get-ReceiveConnector> | Format-List Name,ProtocolLoggingLevel
+    ```command line
+<Get-SendConnector |Get-ReceiveConnector> | Format-List Name,ProtocolLoggingLevel
+```
 
 2.  Vérifiez que les valeurs affichées sont les valeurs que vous avez configurées.
 
@@ -109,7 +113,9 @@ Pour activer ou désactiver l'enregistrement dans le journal de protocole sur le
 
 Cet exemple active l'enregistrement dans un journal de protocole sur le connecteur d'envoi intra-organisationnel dans le service de transport sur un serveur de boîtes aux lettres nommé Mailbox01.
 
-    Set-TransportService Mailbox01 -IntraOrgConnectorProtocolLoggingLevel Verbose
+```powershell
+Set-TransportService Mailbox01 -IntraOrgConnectorProtocolLoggingLevel Verbose
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -125,11 +131,15 @@ Pour vérifier que vous avez bien activé ou désactivé l'enregistrement dans l
 
 Pour activer ou désactiver l'enregistrement dans le journal de protocole sur le connecteur d'envoi de remise de boîte aux lettres implicite et invisible qui existe dans le service de transport de boîte aux lettres sur un serveur de boîtes aux lettres, exécutez la commande suivante :
 
-    Set-MailboxTransportService -MailboxDeliveryConnectorProtocolLoggingLevel <Verbose | None>
+```powershell
+Set-MailboxTransportService -MailboxDeliveryConnectorProtocolLoggingLevel <Verbose | None>
+```
 
 Cet exemple active l'enregistrement dans un journal de protocole sur le connecteur de réception de remise de boîte aux lettres dans le service de transport de boîte aux lettres sur un serveur de boîtes aux lettres nommé Mailbox01.
 
-    Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLevel Verbose
+```powershell
+Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLevel Verbose
+```
 
 ## Comment savoir si cela a fonctionné ?
 

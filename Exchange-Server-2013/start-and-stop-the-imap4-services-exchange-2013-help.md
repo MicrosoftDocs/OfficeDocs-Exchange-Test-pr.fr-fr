@@ -57,21 +57,29 @@ Pour démarrer les services IMAP4 :
 
 1.  Sur l'ordinateur exécutant le rôle de serveur d'accès au client, à partir du Shell, exécutez la commande suivante pour démarrer le service Microsoft Exchange IMAP4.
     
-        Start-service msExchangeIMAP4
+    ```powershell
+Start-service msExchangeIMAP4
+```
 
 2.  Sur l'ordinateur exécutant le rôle de serveur de boîtes aux lettres, à partir du Shell, exécutez la commande suivante pour démarrer le service IMAP4 principal de Microsoft Exchange.
     
-        Start-service msExchangeIMAP4BE
+    ```powershell
+Start-service msExchangeIMAP4BE
+```
 
 Pour arrêter les services IMAP4 :
 
 1.  Sur l'ordinateur exécutant le rôle de serveur d'accès au client, à partir du Shell, exécutez la commande suivante pour arrêter le service Microsoft Exchange IMAP4.
     
-        Stop-service msExchangeIMAP4
+    ```powershell
+Stop-service msExchangeIMAP4
+```
 
 2.  Sur l'ordinateur exécutant le rôle de serveur de boîtes aux lettres, à partir du Shell, exécutez la commande suivante pour arrêter le service IMAP4 principal de Microsoft Exchange.
     
-        Stop-service msExchangeIMAP4BE
+    ```powershell
+Stop-service msExchangeIMAP4BE
+```
 
 ## Utiliser la commande net start pour démarrer ou arrêter les services IMAP4
 
@@ -79,21 +87,29 @@ Pour démarrer les services IMAP4 :
 
 1.  Sur l'ordinateur exécutant le rôle de serveur d'accès au client, depuis l’invite de commandes, exécutez la commande suivante pour démarrer le service Microsoft Exchange IMAP4.
     
-        net start msExchangeIMAP4
+    ```powershell
+net start msExchangeIMAP4
+```
 
 2.  Sur l'ordinateur exécutant le rôle de serveur de boîtes aux lettres, depuis l’invite de commandes, exécutez la commande suivante pour démarrer le service IMAP4 principal de Microsoft Exchange.
     
-        net start msExchangeIMAP4BE
+    ```powershell
+net start msExchangeIMAP4BE
+```
 
 Pour arrêter les services IMAP4 :
 
 1.  Sur l'ordinateur exécutant le rôle de serveur d'accès au client, depuis l’invite de commandes, exécutez la commande suivante pour arrêter le service Microsoft Exchange IMAP4.
     
-        Net Stop MSExchangeIMAP4
+    ```powershell
+Net Stop MSExchangeIMAP4
+```
 
 2.  Sur l'ordinateur exécutant le rôle de serveur de boîtes aux lettres, depuis l’invite de commandes, exécutez la commande suivante pour arrêter le service IMAP4 principal de Microsoft Exchange.
     
-        Net Stop MSExchangeIMAP4BE
+    ```powershell
+Net Stop MSExchangeIMAP4BE
+```
 
 ## Comment savoir si cela a fonctionné ?
 

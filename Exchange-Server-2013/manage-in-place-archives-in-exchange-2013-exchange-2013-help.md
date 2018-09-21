@@ -116,7 +116,9 @@ Vous pouvez également créer des archives pour les utilisateurs existants qui o
 
 Cet exemple active l’archive de la boîte aux lettres de Tony Smith.
 
-    Enable-Mailbox "Tony Smith" -Archive
+```powershell
+Enable-Mailbox "Tony Smith" -Archive
+```
 
 Cet exemple récupère les boîtes aux lettres de la base de données DB01 qui n’ont pas d’archive locale ou en nuage activée ou dont le nom ne commence pas par DiscoverySearchMailbox. Il redirige le résultat vers la cmdlet **Enable-Mailbox** afin d’activer l’archive pour toutes les boîtes aux lettres sur la base de données de boîtes aux lettres DB01.
 
@@ -162,7 +164,9 @@ Pour reconnecter l’archive locale à cette boîte aux lettres, vous pouvez uti
 
 Cet exemple illustre la désactivation de l’archive pour la boîte aux lettres de Chris Ashton. Il n’indique pas comment désactiver la boîte aux lettres.
 
-    Disable-Mailbox -Identity "Chris Ashton" -Archive
+```powershell
+Disable-Mailbox -Identity "Chris Ashton" -Archive
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Disable-Mailbox](https://technet.microsoft.com/fr-fr/library/aa997210\(v=exchg.150\)).
 

@@ -104,7 +104,9 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
 
 4.  Récupérez la configuration de cycle de fonctionnement de l’Assistant Dossier géré actuel. Assurez-vous de noter ces paramètres pour une utilisation ultérieure.
     
-        Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
+    ```powershell
+Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
+```
 
 5.  Désactivez l’accès du client à la boîte aux lettres pour vous assurer qu’aucune modification ne peut être effectuée sur les données de boîte aux lettres pour la durée de cette procédure.
     
@@ -116,7 +118,9 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
 
 7.  Désactivez l’Assistant Dossier géré sur le serveur de boîte aux lettres.
     
-        Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
+    ```powershell
+Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
+```
     
     > [!IMPORTANT]
     > Si la boîte aux lettres se trouve sur une base de données de boîtes aux lettres dans un groupe de disponibilité de base de données, vous devez désactiver l’Assistant Dossier géré sur chaque membre du groupe de disponibilité de base de données qui héberge une copie de la base de données. Si la base de données échoue sur un autre serveur, cela empêche l’Assistant Dossier géré sur ce serveur de supprimer les données de la boîte aux lettres.
@@ -124,7 +128,9 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
 
 8.  Désactivez la récupération d’élément unique et supprimez la conservation pour litige de la boîte aux lettres.
     
-        Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
+    ```powershell
+Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
+```
     
     > [!IMPORTANT]
     > Après exécution de cette commande, il faut parfois une heure pour désactiver la récupération d’élément unique ou la conservation pour litige. Nous vous recommandons d’effectuer la prochaine étape uniquement après écoulement de cette période.
@@ -144,7 +150,9 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
 
 10. Si la boîte aux lettres a été placée en conservation pour litige ou si la récupération d’élément unique a été préalablement activée, activez à nouveau ces fonctionnalités.
     
-        Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
+    ```powershell
+Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
+```
     
     > [!IMPORTANT]
     > Après exécution de cette commande, il faut parfois une heure pour activer la récupération d’élément unique ou la conservation pour litige. Nous vous recommandons d’activer l’Assistant Dossier géré et d’autoriser l’accès au client (étapes 11 et 12) uniquement après écoulement de cette période.
@@ -172,7 +180,9 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
 
 12. Activez l’Assistant Dossier géré en redéfinissant le cycle de travail à la valeur indiquée à l’étape 4. Cet exemple définit le cycle de travail à un jour.
     
-        Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+    ```powershell
+Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+```
 
 13. Activez l’accès au client.
     

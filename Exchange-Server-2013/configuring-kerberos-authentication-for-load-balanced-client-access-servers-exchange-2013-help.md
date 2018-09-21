@@ -49,7 +49,9 @@ Lorsque vous configurez le compte ASA, gardez ces recommandations à l’esprit
     
     Utilisez la cmdlet **Import-Module** pour importer le module Active Directory.
     
-        Import-Module ActiveDirectory
+    ```powershell
+Import-Module ActiveDirectory
+```
 
 2.  Utilisez la cmdlet **New-ADComputer** pour créer un compte d’ordinateur Active Directory en suivant la syntaxe de cette cmdlet :
     
@@ -67,7 +69,9 @@ Lorsque vous configurez le compte ASA, gardez ces recommandations à l’esprit
     
     **Exemple :** 
     
-        Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
+    ```powershell
+Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
+```
     
     Où *EXCH2013ASA* est le nom du compte, et où l’attribut à modifier est *msDS-SupportedEncryptionTypes* avec une valeur décimale de 28, qui permet de réaliser les chiffrements suivants : RC4-HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96.
 
@@ -290,11 +294,15 @@ Avant d’associer les SPN au compte ASA, vous devez vérifier que les SPN cibl
 
 2.  Depuis l’invite de commandes, entrez la commande suivante :
     
-        setspn -F -Q <SPN>
+    ```powershell
+setspn -F -Q <SPN>
+```
     
     Où \<SPN\> est le SPN que vous souhaitez associer au compte ASA. Par exemple :
     
-        setspn -F -Q http/mail.corp.tailspintoys.com
+    ```powershell
+setspn -F -Q http/mail.corp.tailspintoys.com
+```
     
     La commande ne doit retourner aucune donnée. Si elle renvoie des données, cela signifie qu’un autre compte est déjà associé au SPN. Répétez une fois cette étape pour chaque SPN que vous souhaitez associer au compte ASA.
 
@@ -304,11 +312,15 @@ Avant d’associer les SPN au compte ASA, vous devez vérifier que les SPN cibl
 
 2.  Depuis l’invite de commandes, entrez la commande suivante :
     
-        setspn -S <SPN> <Account>$
+    ```powershell
+setspn -S <SPN> <Account>$
+```
     
     Où \<SPN\> est le SPN que vous souhaitez associer aux informations d’identification du compte ASA et \<Account\> est le compte associé aux informations d’identification du compte ASA. Par exemple :
     
-        setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2013ASA$
+    ```powershell
+setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2013ASA$
+```
     
     Exécutez une fois la commande suivante pour chaque SPN que vous souhaitez associer aux informations d’identification du compte ASA.
 
@@ -318,11 +330,15 @@ Avant d’associer les SPN au compte ASA, vous devez vérifier que les SPN cibl
 
 2.  Depuis l’invite de commandes, entrez la commande suivante :
     
-        setspn -L <Account>$
+    ```powershell
+setspn -L <Account>$
+```
     
     Où \<Account\> est le compte associé au compte ASA. Par exemple :
     
-        setspn -L tailspin\EXCH2013ASA$
+    ```powershell
+setspn -L tailspin\EXCH2013ASA$
+```
     
     Vous ne devez exécuter cette commande qu’une seule fois.
 
@@ -384,7 +400,9 @@ Pour configurer votre serveur d’accès au client afin qu’il n’utilise pas 
 
 1.  Ouvrez l'environnement de ligne de commande Exchange Management Shell sur un serveur Exchange 2013 et exécutez la commande suivante :
     
-        Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
+    ```powershell
+Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
+```
 
 2.  Bien que vous n’ayez pas à le faire immédiatement, vous devrez dans tous les cas redémarrer tous les ordinateurs clients pour effacer le cache de ticket Kerberos de l’ordinateur.
 

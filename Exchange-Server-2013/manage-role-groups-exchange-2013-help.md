@@ -93,7 +93,9 @@ Si vous disposez d’un groupe de rôles qui contient les autorisations que vous
 
 1.  Stockez le groupe de rôles que vous souhaitez copier dans une variable à l’aide de la commande suivante.
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+$RoleGroup = Get-RoleGroup <name of role group to copy>
+```
 
 2.  Créez le groupe de rôles et ajoutez aussi des membres à ce groupe, puis indiquez les noms des utilisateurs pouvant déléguer le nouveau groupe de rôles à d'autres utilisateurs. Pour ce faire, utilisez la syntaxe suivante.
     
@@ -112,7 +114,9 @@ Pour des informations détaillées sur la syntaxe et les paramètres, consultez 
 
 1.  Stockez le groupe de rôles que vous souhaitez copier dans une variable à l’aide de la commande suivante.
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+$RoleGroup = Get-RoleGroup <name of role group to copy>
+```
 
 2.  Créez le nouveau groupe de rôles avec une portée personnalisée à l’aide de la syntaxe suivante.
     
@@ -133,7 +137,9 @@ Pour des informations détaillées sur la syntaxe et les paramètres, consultez 
 
 1.  Stockez le groupe de rôles que vous souhaitez copier dans une variable à l’aide de la commande suivante.
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+$RoleGroup = Get-RoleGroup <name of role group to copy>
+```
 
 2.  Créez le nouveau groupe de rôles avec une portée personnalisée à l’aide de la syntaxe suivante.
     
@@ -214,11 +220,15 @@ Vous pouvez créer une attribution de rôle sans aucune portée entre un rôle e
 
 Utilisez la syntaxe suivante pour attribuer un rôle sans aucune portée à un groupe de rôles. Un nom d’attribution de rôle est créé automatiquement si vous n’en spécifiez pas un.
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name>
+```
 
 Cet exemple attribue le rôle de gestion Transport Rules au groupe de rôles Seattle Compliance.
 
-    New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335193\(v=exchg.150\)).
 
@@ -437,7 +447,9 @@ Pour modifier l’étendue d’une attribution de rôle entre un groupe de rôle
 
 1.  Pour rechercher les noms de toutes les attributions de rôle sur un groupe de rôles, utilisez la commande suivante. En transmettant les attributions de rôle de gestion à la cmdlet **Format-List**, vous pouvez afficher le nom complet de l’attribution.
     
-        Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
+    ```powershell
+Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
+```
 
 2.  Recherchez le nom de l’attribution de rôle que vous souhaitez modifier. Utilisez le nom de l'attribution de rôle dans l'étape suivante.
 
@@ -489,7 +501,9 @@ Pour modifier la liste des délégués sur un groupe de rôles, vous utilisez le
 
 1.  Stockez le groupe de rôles dans une variable à l’aide de la commande suivante.
     
-        $RoleGroup = Get-RoleGroup <role group name>
+    ```powershell
+$RoleGroup = Get-RoleGroup <role group name>
+```
 
 2.  Ajoutez le délégué au groupe de rôles stocké dans la variable à l’aide de la commande suivante.
     
@@ -503,7 +517,9 @@ Pour modifier la liste des délégués sur un groupe de rôles, vous utilisez le
 
 4.  Appliquez la nouvelle liste de délégués au groupe de rôles réel à l’aide de la commande suivante.
     
-        Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```powershell
+Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+```
 
 Cet exemple illustre l’ajout de l’utilisateur David Strome comme délégué du groupe de rôles Gestion de l’organisation.
 
@@ -519,7 +535,9 @@ Pour modifier la liste des délégués sur un groupe de rôles, vous utilisez le
 
 1.  Stockez le groupe de rôles dans une variable à l’aide de la commande suivante.
     
-        $RoleGroup = Get-RoleGroup <role group name>
+    ```powershell
+$RoleGroup = Get-RoleGroup <role group name>
+```
 
 2.  Supprimez le délégué du groupe de rôles stocké dans la variable à l’aide de la commande suivante.
     
@@ -533,7 +551,9 @@ Pour modifier la liste des délégués sur un groupe de rôles, vous utilisez le
 
 4.  Appliquez la nouvelle liste de délégués au groupe de rôles réel à l’aide de la commande suivante.
     
-        Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```powershell
+Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+```
 
 Cet exemple illustre la suppression de l’utilisateur David Strome comme délégué du groupe de rôles Gestion de l’organisation.
 
@@ -549,7 +569,9 @@ Pour vérifier que vous avez bien modifié la liste des délégués d'un groupe 
 
 1.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-RoleGroup <role group name> | Format-List ManagedBy
+    ```powershell
+Get-RoleGroup <role group name> | Format-List ManagedBy
+```
 
 2.  Vérifiez que les délégués répertoriés au niveau de la propriété *ManagedBy* incluent uniquement les délégués qui devraient être en mesure de gérer le groupe de rôles.
 

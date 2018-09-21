@@ -51,11 +51,15 @@ Vous pouvez afficher les détails d’une étendue en transférant la sortie de 
 
 Pour afficher les détails d’une étendue spécifique, utilisez la syntaxe suivante.
 
-    Get-ManagementScope <scope name> | Format-List
+```powershell
+Get-ManagementScope <scope name> | Format-List
+```
 
 Cet exemple montre comment récupérer les détails de l’étendue de serveurs de Seattle.
 
-    Get-ManagementScope "Seattle Servers" | Format-List
+```powershell
+Get-ManagementScope "Seattle Servers" | Format-List
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementScope](https://technet.microsoft.com/fr-fr/library/dd298180\(v=exchg.150\)).
 
@@ -63,7 +67,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Cet exemple récupère une liste des étendues de votre organisation.
 
-    Get-ManagementScope
+```powershell
+Get-ManagementScope
+```
 
 Cette cmdlet récupère les étendues exclusives et normales. Si vous désirez uniquement renvoyer des étendues exclusives ou normales, consultez la section « Afficher l’ensemble des étendues exclusives ou normales uniquement » ultérieurement dans cette rubrique.
 
@@ -75,7 +81,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Cet exemple récupère la liste des étendues orphelines.
 
-    Get-ManagementScope -Orphan
+```powershell
+Get-ManagementScope -Orphan
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementScope](https://technet.microsoft.com/fr-fr/library/dd298180\(v=exchg.150\)).
 
@@ -83,15 +91,21 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Par défaut, la cmdlet **Get-ManagementScope** renvoie la liste des étendues qui contiennent des étendues exclusives et normales à la fois. Si vous désirez uniquement renvoyer des étendues exclusives ou normales, utilisez la syntaxe suivante.
 
-    Get-ManagementScope -Exclusive < $true | $false >
+```powershell
+Get-ManagementScope -Exclusive < $true | $false >
+```
 
 Cet exemple montre comment renvoyer uniquement des étendues exclusives.
 
-    Get-ManagementScope -Exclusive $true
+```powershell
+Get-ManagementScope -Exclusive $true
+```
 
 Cet exemple montre comment renvoyer uniquement une liste d’étendues normales.
 
-    Get-ManagementScope -Exclusive $false
+```powershell
+Get-ManagementScope -Exclusive $false
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementScope](https://technet.microsoft.com/fr-fr/library/dd298180\(v=exchg.150\)).
 

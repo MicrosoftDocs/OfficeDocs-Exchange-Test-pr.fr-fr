@@ -61,11 +61,15 @@ Pour supprimer des messages des files d'attente, utilisez la syntaxe suivante :
 
 Cet exemple supprime les messages dont l'objet est « Win Big » dans les files d'attente sans envoyer de rapport de non-remise.
 
-    Remove-Message -Filter {Subject -eq "Win Big"} -WithNDR $false
+```powershell
+Remove-Message -Filter {Subject -eq "Win Big"} -WithNDR $false
+```
 
 Cet exemple supprime le message portant l'ID de message 3 de la file d'attente inaccessible sur le serveur Mailbox01 et envoie un rapport de non-remise.
 
-    Remove-Message -Identity Mailbox01\Unreachable\3 -WithNDR $true
+```powershell
+Remove-Message -Identity Mailbox01\Unreachable\3 -WithNDR $true
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -103,7 +107,9 @@ Vous pouvez reprendre un message dont l'état est Suspendu. En reprenant un mess
 
 Pour reprendre des messages, utilisez la syntaxe suivante :
 
-    Resume-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```powershell
+Resume-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```
 
 Cet exemple indique comment reprendre tous les messages envoyés par un expéditeur faisant partie du domaine Contoso.com.
 
@@ -111,7 +117,9 @@ Cet exemple indique comment reprendre tous les messages envoyés par un expédit
 
 Cet exemple montre comment reprendre le message avec l'ID 3 dans la file d'attente inaccessible sur le serveur Hub01.
 
-    Resume-Message -Identity Hub01\Unreachable\3
+```powershell
+Resume-Message -Identity Hub01\Unreachable\3
+```
 
 Pour renvoyer des messages de la file d'attente de messages incohérents, procédez comme suit :
 
@@ -145,7 +153,9 @@ Un message en cours d'envoi à plusieurs destinataires pourrait se trouver dans 
 
 Pour suspendre des messages, utilisez la syntaxe suivante :
 
-    Suspend-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```powershell
+Suspend-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```
 
 Cet exemple montre comment suspendre tous les messages des files d'attente provenant d'un expéditeur du domaine contoso.com.
 
@@ -153,7 +163,9 @@ Cet exemple montre comment suspendre tous les messages des files d'attente prove
 
 Cet exemple montre comment suspendre le message avec l'ID 3 dans la file d'attente inaccessible sur le serveur Mailbox01 :
 
-    Suspend-Message -Identity Mailbox01\Unreachable\3
+```powershell
+Suspend-Message -Identity Mailbox01\Unreachable\3
+```
 
 ## Comment savoir si cela a fonctionné ?
 

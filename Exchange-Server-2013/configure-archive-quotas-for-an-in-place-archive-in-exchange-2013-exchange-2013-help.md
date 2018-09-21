@@ -59,7 +59,9 @@ Pour plus d’informations sur les archivages locaux, consultez la rubrique [Arc
 
 Dans cet exemple, nous définissons le quota d’archivage de la boîte aux lettres de Chris Ashton à 10 gigaoctet (Go) et à partir de quel moment l’utilisateur doit recevoir un message d’avertissement signalant que l’archivage local est plein et qu’il ne sera plus possible de déplacer des éléments vers l’archivage. Dans cet exemple, nous définissons également le quota d’avertissement d’archivage à 9,5 Go et à quel moment l’utilisateur doit recevoir un message d’avertissement signalant que l’archivage local est presque plein.
 
-    Set-Mailbox -Identity "Chris Ashton" -ArchiveQuota 10GB -ArchiveWarningQuota 9.5GB
+```powershell
+Set-Mailbox -Identity "Chris Ashton" -ArchiveQuota 10GB -ArchiveWarningQuota 9.5GB
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)).
 

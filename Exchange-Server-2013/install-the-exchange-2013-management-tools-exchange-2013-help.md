@@ -125,7 +125,9 @@ Pour des informations supplémentaires sur la gestion d'Exchange 2013, consulte
     > [!IMPORTANT]  
     > Si le contrôle de compte d'utilisateur est activé, vous devez exécuter<code>Setup.exe</code> à partir d'une invite de commandes élevée.
     
-        Setup.exe /Role:ManagementTools /IAcceptExchangeServerLicenseTerms
+    ```powershell
+Setup.exe /Role:ManagementTools /IAcceptExchangeServerLicenseTerms
+```
 
 Pour plus d'informations, consultez la rubrique [Installation d’Exchange 2013 en mode sans assistance](install-exchange-2013-using-unattended-mode-exchange-2013-help.md).
 

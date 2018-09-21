@@ -256,5 +256,7 @@ Cet exemple vous indique comment utiliser le script pour distribuer les informat
 
 Vous devez mettre à jour les informations d'identification ASA avant que le serveur d'accès au client reçoive le trafic. Pour ce faire, copiez les informations ASA partagées depuis n’importe quel serveur d’accès au client dont la configuration est correcte. Par exemple, si les informations d’identification ASA d’un serveur A sont actives et que vous venez d’ajouter un serveur B dans le groupe, vous pouvez utiliser le script pour copier les informations d’identification (y compris le mot de passe) du serveur A sur le serveur B. Cette possibilité est utile si le serveur B était en panne ou ne faisait pas encore partie du groupe lors de la dernière réinitialisation du mot de passe.
 
-    .\RollAlternateServiceAccountPassword.ps1 -CopyFrom ServerA -ToSpecificServers ServerB -Verbose
+```powershell
+.\RollAlternateServiceAccountPassword.ps1 -CopyFrom ServerA -ToSpecificServers ServerB -Verbose
+```
 

@@ -79,7 +79,9 @@ Cet exemple utilise la cmdlet **set-ExchangeServer** pour saisir la clé de prod
 > Vous pouvez réexécuter cette commande sur le même serveur pour le mettre à niveau de la licence Standard Edition à la licence Enterprise Edition.
 
 
-    Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa
+```powershell
+Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ExchangeServer](https://technet.microsoft.com/fr-fr/library/bb123716\(v=exchg.150\)).
 

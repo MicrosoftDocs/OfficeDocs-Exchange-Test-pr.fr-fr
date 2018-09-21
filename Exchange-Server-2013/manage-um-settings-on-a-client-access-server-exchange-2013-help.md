@@ -45,11 +45,15 @@ Pour découvrir des tâches supplémentaires relatives à la messagerie unifiée
 
 Cet exemple supprime un serveur d'accès au client nommé `MyClientAccessServer` de tous les plans de numérotation SIP (Session Initiation Protocol).
 
-    Set-UMCallRouterSettings -DialPlans $null - Server MyClientAccessServer
+```powershell
+Set-UMCallRouterSettings -DialPlans $null - Server MyClientAccessServer
+```
 
 Cet exemple ajoute un serveur d'accès au client nommé `MyClientAccessServer` à un plan de numérotation SIP nommé `MySIPDialPlan` et définit le nombre maximal d'appels vocaux entrants.
 
-    Set-UMCallRouterSettings -DialPlans MySIPDialPlan -MaxCalls 150 -Server MyClientAccessServer
+```powershell
+Set-UMCallRouterSettings -DialPlans MySIPDialPlan -MaxCalls 150 -Server MyClientAccessServer
+```
 
 Cet exemple définit le port d'écoute TCP SIP sur 5077 et le mode de démarrage Double sur un serveur d'accès au client nommé `MyClientAccessServer`.
 
@@ -59,9 +63,13 @@ Cet exemple définit le port d'écoute TCP SIP sur 5077 et le mode de démarrage
 
 Cet exemple montre comment afficher une liste de tous les serveurs d'accès au client.
 
-    Get-UMCallRouterSettings
+```powershell
+Get-UMCallRouterSettings
+```
 
 Cet exemple montre comment afficher une liste formatée des propriétés pour le serveur d'accès au client.
 
-    Get-UMCallRouterSettings | Format-List
+```powershell
+Get-UMCallRouterSettings | Format-List
+```
 

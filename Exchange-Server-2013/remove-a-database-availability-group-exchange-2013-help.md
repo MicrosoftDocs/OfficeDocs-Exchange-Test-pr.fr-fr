@@ -49,7 +49,9 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
 
 Cet exemple montre comment supprimer le groupe de disponibilité de base de données DAG1.
 
-    Remove-DatabaseAvailabilityGroup -Identity DAG1
+```powershell
+Remove-DatabaseAvailabilityGroup -Identity DAG1
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -59,7 +61,9 @@ Pour vérifier que vous avez bien supprimé le groupe de disponibilité de base 
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour voir si le DAG existe toujours :
     
-        Get-DatabaseAvailabilityGroup <DAGName>
+    ```powershell
+Get-DatabaseAvailabilityGroup <DAGName>
+```
     
     Si le DAG a été correctement supprimé, un message d’erreur indiquant que l’objet est introuvable s’affiche lorsque vous exécutez la commande précédente.
 

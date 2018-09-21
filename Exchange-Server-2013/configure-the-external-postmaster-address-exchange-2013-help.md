@@ -51,15 +51,21 @@ Par défaut, la valeur du paramètre d'adresse de l'administrateur externe est v
 
 Pour configurer l'adresse d'administrateur externe, utilisez la syntaxe suivante.
 
-    Set-TransportConfig -ExternalPostmasterAddress <postmaster address>
+```powershell
+Set-TransportConfig -ExternalPostmasterAddress <postmaster address>
+```
 
 Par exemple, pour définir l'adresse d'administrateur externe sur `postmaster@contoso.com`, exécutez la commande suivante :
 
-    Set-TransportConfig -ExternalPostmasterAddress postmaster@contoso.com
+```powershell
+Set-TransportConfig -ExternalPostmasterAddress postmaster@contoso.com
+```
 
 Pour renvoyer l'adresse d'administrateur externe par défaut, exécutez la commande suivante :
 
-    Set-TransportConfig -ExternalPostmasterAddress $null
+```powershell
+Set-TransportConfig -ExternalPostmasterAddress $null
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -67,7 +73,9 @@ Pour vérifier que vous avez bien configuré l'adresse d'administrateur externe,
 
 1.  Exécutez la commande suivante sur un serveur de boîtes aux lettres pour vérifier la valeur de l'adresse d'administrateur externe :
     
-        Get-TransportConfig | Format-List ExternalPostmasterAddress
+    ```powershell
+Get-TransportConfig | Format-List ExternalPostmasterAddress
+```
 
 2.  À partir d'un compte de messagerie externe, envoyez un message à votre organisation Exchange qui générera une notification d'état de remise. Par exemple, vous pouvez configurer une règle de transport chargée d'envoyer une notification d'échec de remise pour un message en provenance de cet expéditeur qui contient des mots clés spécifiques. Vérifiez que l'adresse de messagerie de l'expéditeur dans la notification d'état de remise correspond à la valeur que vous avez spécifiée.
 

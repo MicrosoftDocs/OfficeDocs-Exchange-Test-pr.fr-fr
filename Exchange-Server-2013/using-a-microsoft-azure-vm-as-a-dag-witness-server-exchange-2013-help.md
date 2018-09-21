@@ -313,7 +313,9 @@ Enfin, vous devez configurer votre DAG pour utiliser le nouveau serveur témoin.
 
 2.  Exécutez la commande suivante pour configurer le serveur témoin pour vos DAG.
     
-        Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
+    ```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
+```
 
 Pour plus d'informations, consultez les sections suivantes :
 
@@ -333,11 +335,15 @@ Pour plus d'informations, consultez les sections suivantes :
 
 2.  Si le DAG comporte un nombre pair de nœuds, le témoin de partage de fichiers est configuré. Validez le paramètre de témoin de partage de fichiers dans les propriétés de cluster en exécutant la commande suivante. La valeur du paramètre *SharePath* doit pointer vers le serveur de fichiers et afficher le chemin d'accès correct.
     
-        Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
+    ```powershell
+Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
+```
 
 3.  Ensuite, vérifiez l'état de la ressource de cluster « Témoin de partage de fichiers » en exécutant la commande suivante. L'*State* de la ressource de cluster doit afficher **Online**.
     
-        Get-ClusterResource -Cluster MBX1
+    ```powershell
+Get-ClusterResource -Cluster MBX1
+```
 
 4.  Enfin, vérifiez que le partage est créé sur le serveur de fichiers en analysant le dossier dans l'Explorateur de fichiers et les partages dans le Gestionnaire de serveur.
 

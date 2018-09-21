@@ -47,7 +47,9 @@ Pour d'autres tâches de gestion relatives aux serveurs de messagerie unifiée e
 
 Cet exemple illustre la suppression du serveur de boîtes aux lettres `MyMailboxServer` de tous les plans de numérotation SIP (Session Initiation Protocol).
 
-    Set-UMService -Identity MyMailboxServer -DialPlans $null
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans $null
+```
 
 Cet exemple illustre l'ajout du serveur de boîtes aux lettres `MyMailboxServer` au plan de numérotation SIP de messagerie unifiée `MySIPDialPlanName` et la définition du nombre maximal d'appels vocaux entrants.
 
@@ -61,9 +63,13 @@ Cet exemple illustre la définition du mode de démarrage double pour le serveur
 
 Cet exemple illustre l'affichage d'une liste de tous les serveurs de boîtes aux lettres.
 
-    Get-UMService
+```powershell
+Get-UMService
+```
 
 Cet exemple illustre l'affichage d'une liste de propriétés mise en forme pour le serveur de boîtes aux lettres `MyMailboxServer`.
 
-    Get-UMService -Identity MyMailboxServer | Format-List
+```powershell
+Get-UMService -Identity MyMailboxServer | Format-List
+```
 

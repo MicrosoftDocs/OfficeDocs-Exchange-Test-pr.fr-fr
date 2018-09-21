@@ -57,17 +57,23 @@ Cet exemple permet de créer la stratégie de mise en service par défaut SM\_Pr
 
 Cet exemple renvoie des informations détaillées sur toutes les stratégies de mise en service de boîtes aux lettres de site de votre organisation.
 
-    Get-SiteMailboxProvisioningPolicy | Format-List
+```powershell
+Get-SiteMailboxProvisioningPolicy | Format-List
+```
 
 Cet exemple renvoie toutes les stratégies de votre organisation, mais n'affiche que les informations `IsDefault` pour identifier la stratégie par défaut.
 
-    Get-SiteMailboxProvisioningPolicy | Format-List IsDefault
+```powershell
+Get-SiteMailboxProvisioningPolicy | Format-List IsDefault
+```
 
 ## Apporter des modifications à une stratégie de mise en service de boîte aux lettres de site existante
 
 Cet exemple modifie la stratégie d'approvisionnement de boîte aux lettres de site nommée par défaut pour permettre la réception des messages électroniques d'une taille maximale de 25 Mo par la boîte aux lettres de site. (Quand vous installez Exchange, une stratégie de mise en service est créée avec le nom **Par défaut**.)
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
+```
 
 Cet exemple modifie le quota d'avertissement à 9,5 Go et le quota d'interdiction d'envoi et de réception à 10 Go.
 
@@ -97,7 +103,9 @@ Cet exemple permet de modifier la stratégie de mise en service par défaut et d
 
 Cet exemple supprime la stratégie de boîte aux lettres de site par défaut créée lors de l'installation d'Exchange.
 
-    Remove-SiteMailboxProvisioningPolicy -Identity Default
+```powershell
+Remove-SiteMailboxProvisioningPolicy -Identity Default
+```
 
 > [!IMPORTANT]
 > Vous devez commencer par créer et désigner une autre stratégie par défaut avant de pouvoir supprimer la stratégie <strong>Par défaut</strong>.

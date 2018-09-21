@@ -88,7 +88,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Cet exemple montre comment définir le compte d'organisation sur l'objet de configuration de disponibilité pour configurer le niveau d'accès pour des informations de disponibilité dans la forêt cible.
 
-    Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
+```powershell
+Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
+```
 
 Cet exemple montre comment ajouter l'objet de configuration de l'espace d'adressage de disponibilité pour la forêt source.
 

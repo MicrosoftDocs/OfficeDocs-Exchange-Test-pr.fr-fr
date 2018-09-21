@@ -79,11 +79,15 @@ Cet exemple définit les paramètres de journal de suivi des messages suivants s
 
 Cet exemple désactive la journalisation des objets des messages dans le journal de suivi des messages sur le serveur de boîtes aux lettres intitulé Mailbox01 :
 
-    Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
+```
 
 Cet exemple désactive le suivi des messages sur le serveur de boîtes aux lettres intitulé Mailbox01 :
 
-    Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
+```
 
 ## Comment savoir si cela a fonctionné ?
 

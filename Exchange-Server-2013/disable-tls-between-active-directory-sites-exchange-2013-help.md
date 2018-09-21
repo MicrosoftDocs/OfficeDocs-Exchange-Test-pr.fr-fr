@@ -47,11 +47,15 @@ Cette rubrique explique pas à pas comment configurer le service de transport da
 
 Pour configurer le service de transport sur un serveur de boîtes aux lettres afin d'utiliser l'authentification rétrogradée d'Exchange Server, exécutez la commande suivante :
 
-    Set-TransportService <ServerIdentity> -UseDowngradedExchangeServerAuth $true
+```powershell
+Set-TransportService <ServerIdentity> -UseDowngradedExchangeServerAuth $true
+```
 
 Cet exemple montre comment modifier cette configuration sur le serveur nommé Mailbox01.
 
-    Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
+```powershell
+Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
+```
 
 ## Étape 2 : Créer un connecteur de réception dédié sur le serveur de boîtes aux lettres pour le site Active Directory cible
 
@@ -83,39 +87,53 @@ Cet exemple montre comment créer le connecteur de réception nommé WAN sur un 
 
 <!-- end list -->
 
-    New-ReceiveConnector -Name WAN -Server Hub01 -RemoteIPRanges 10.0.2.0/24 -Internal
+```powershell
+New-ReceiveConnector -Name WAN -Server Hub01 -RemoteIPRanges 10.0.2.0/24 -Internal
+```
 
 ## Étape 3 : Utiliser l'environnement de ligne de commande pour désactiver l'authentification TLS sur le connecteur de réception dédié
 
 Pour désactiver l'authentification TLS sur le connecteur de réception, exécutez la commande suivante :
 
-    Set-ReceiveConnector <ReceiveConnectorIdentity> -SuppressXAnonymousTLS $true
+```powershell
+Set-ReceiveConnector <ReceiveConnectorIdentity> -SuppressXAnonymousTLS $true
+```
 
 Cet exemple montre comment désactiver l'authentification TLS sur le connecteur de réception nommé WAN sur le serveur de boîtes aux lettres nommé Mailbox01.
 
-    Set-ReceiveConnector Mailbox01\WAN -SuppressXAnonymousTLS $true
+```powershell
+Set-ReceiveConnector Mailbox01\WAN -SuppressXAnonymousTLS $true
+```
 
 ## Étape 4 : Utiliser l'environnement de ligne de commande pour désigner les sites Active Directory comme sites hub
 
 Pour désigner un site Active Directory en tant que site hub, exécutez la commande suivante :
 
-    Set-AdSite <ADSiteIdentity> -HubSiteEnabled $true
+```powershell
+Set-AdSite <ADSiteIdentity> -HubSiteEnabled $true
+```
 
 Vous devez effectuer cette procédure une fois dans chaque site Active Directory incluant des serveurs de boîtes aux lettres participant à un trafic non-chiffré.
 
 Cet exemple montre comment configurer le site Active Directory nommé Central Office Site 1 comme site hub.
 
-    Set-AdSite "Central Office Site 1" -HubSiteEnabled $true
+```powershell
+Set-AdSite "Central Office Site 1" -HubSiteEnabled $true
+```
 
 ## Étape 5 : Utiliser l'environnement de ligne de commande pour configurer l'itinéraire de routage le moins coûteux via la connexion WAN
 
 Selon la configuration des coûts du lien de sites IP dans Active Directory, cette étape n'est peut-être pas nécessaire. Vous devez vérifier que la liaison réseau avec les périphériques WOC se trouve dans l'itinéraire de routage le moins coûteux. Pour afficher les coûts de lien de sites Active Directory et les coûts de lien de sites spécifiques d'Exchange, exécutez la commande suivante :
 
-    Get-AdSiteLink
+```powershell
+Get-AdSiteLink
+```
 
 Si la liaison réseau avec les périphériques WOC déployés ne figure pas sur l'itinéraire de routage le moins coûteux, vous devez attribuer un coût spécifique d'Exchange au lien de sites IP concerné pour être certain que les messages soient routés correctement. Pour plus d'informations sur ce problème particulier, consultez la section « Configuration des coûts de lien de sites Active Directory spécifiques d'Exchange » de la rubrique [Scénario : configuration d'Exchange pour prendre en charge les contrôleurs d'optimisation de réseau étendu](scenario-configure-exchange-to-support-wan-optimization-controllers-exchange-2013-help.md).
 
 Cet exemple montre comment configurer un coût 15 spécifique d'Exchange pour le lien de sites IP nommé Branch Office 2-Branch Office 1.
 
-    Set-AdSiteLink "Branch Office 2-Branch Office 1" -ExchangeCost 15
+```powershell
+Set-AdSiteLink "Branch Office 2-Branch Office 1" -ExchangeCost 15
+```
 

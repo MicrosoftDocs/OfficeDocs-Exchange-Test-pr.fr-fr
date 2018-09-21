@@ -95,7 +95,9 @@ Dans l’environnement de ligne de commande Exchange Management Shell, utilisez 
 
 Cet exemple montre comment connecter une boîte aux lettres utilisateur. Le paramètre *Identity* indique le nom complet de la boîte aux lettres supprimée qui est conservée dans la base de données de boîtes aux lettres MBXDB01. Le paramètre *User* indique le compte d'utilisateur Active Directory auquel connecter la boîte aux lettres.
 
-    Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
+```powershell
+Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
+```
 
 > [!NOTE]
 > Vous pouvez également utiliser les valeurs des propriétés <code>LegacyDN</code> ou <code>MailboxGuid</code> pour identifier la boîte aux lettres supprimée.
@@ -133,7 +135,9 @@ Pour vérifier qu’une boîte aux lettres supprimée a bien été connectée à
 
   - Dans l'environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-User <identity>
+    ```powershell
+Get-User <identity>
+```
     
     La valeur **UserMailbox** de la propriété *RecipientType* indique que le compte d'utilisateur et la boîte aux lettres sont connectés. Vous pouvez également exécuter la commande **Get-Mailbox \<identité\>** pour vérifier que la boîte aux lettres a été connectée.
 
@@ -171,7 +175,9 @@ Vous aurez besoin du GUID de la boîte aux lettres de dossiers publics supprimé
 
 1.  Obtenir le nom de domaine complet (FQDN) du contrôleur de domaine et de forêt Active Directory en exécutant la cmdlet suivante :
     
-        Get-OrganizationConfig | fl OriginatingServer
+    ```powershell
+Get-OrganizationConfig | fl OriginatingServer
+```
 
 2.  Avec les informations renvoyées par l’étape 1, recherchez dans le conteneur Objets supprimés dans Active Directory le GUID de la boîte aux lettres de dossiers publics et le GUID ou le nom de la base de données de boîtes aux lettres dans laquelle la boîte aux lettres de dossiers publics supprimée était contenue.
     

@@ -51,7 +51,9 @@ Vous pouvez ajouter des modules linguistiques de messagerie unifiée à l'aide d
 
 Cet exemple utilise la commande setup.exe pour installer le module linguistique de messagerie unifiée (ja-JP).
 
-    setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```powershell
+setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 ## Étape 2 : déplacement des messages d'accueil, annonces, menus et invites Exchange 2007 personnalisés vers la boîte aux lettres système Exchange 2013
 
@@ -61,11 +63,15 @@ Par défaut, les boîtes aux lettres système sont invisibles dans le Centre d'a
 
 Cette commande renvoie la liste de toutes les boîtes aux lettres système.
 
-    Get-Mailbox -Arbitration
+```powershell
+Get-Mailbox -Arbitration
+```
 
 Cette commande renvoie la liste des boîtes aux lettres système et de leurs propriétés ou paramètres individuels.
 
-    Get-Mailbox -Arbitration |fl
+```powershell
+Get-Mailbox -Arbitration |fl
+```
 
 Lorsque vous importez des messages d'accueil, annonces, menus et invites personnalisés à partir d'Exchange 2007 dans Exchange 2013, vous devez utiliser le script MigrateUMCustomPrompts.ps1. Vous pouvez importer des messages d'accueil, annonces, menus et invites personnalisés à l'aide du CAE. Le script MigrateUMCustomPrompts.ps1 migre une copie de tous les messages d'accueil, annonces, menus et invites personnalisés de messagerie unifiée Exchange Server 2007 vers la messagerie unifiée Exchange 2013. Par défaut, le script MigrateUMCustomPrompts.ps1 se trouve dans le dossier *\<Program Files\>*\\Microsoft\\Exchange Server\\V15\\Scripts sur un serveur de boîtes aux lettres Exchange 2013 et doit être exécuté à partir d'un serveur de boîtes aux lettres Exchange 2013. Pour exécuter le script :
 
@@ -172,7 +178,9 @@ Si vous utilisez des plans de numérotation de type Sécurisé ou Sécurisé SIP
 
 À l'aide du CAE, configurez le mode de démarrage de messagerie unifiée sur un serveur d'accès au client Exchange 2013 en exécutant la commande suivante dans l'environnement de ligne de commande.
 
-    Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupMode Dual
+```powershell
+Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupMode Dual
+```
 
 ## Étape 5 : configuration du mode de démarrage de messagerie unifiée sur tous les serveurs de boîtes aux lettres Exchange 2013
 
@@ -232,7 +240,9 @@ Si nécessaire, vous pouvez créer un plan de numérotation de messagerie unifi�
 
 Si nécessaire, vous pouvez créer un plan de numérotation de messagerie unifiée en exécutant la commande suivante dans l'environnement de ligne de commande.
 
-    New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -VoIPSecurity Secured
+```powershell
+New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -VoIPSecurity Secured
+```
 
 Si nécessaire, vous pouvez configurer un plan de numérotation de messagerie unifiée existant à l'aide du CAE :
 
@@ -276,7 +286,9 @@ Si nécessaire, vous pouvez créer une passerelle IP de messagerie unifiée à l
 
 Si nécessaire, vous pouvez créer une passerelle IP de messagerie unifiée en exécutant la commande suivante dans l'environnement de ligne de commande.
 
-    New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
+```powershell
+New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
+```
 
 Si nécessaire, vous pouvez configurer une passerelle IP de messagerie unifiée à l'aide du CAE:
 
@@ -384,7 +396,9 @@ Si nécessaire, vous pouvez créer une stratégie de boîte aux lettres de messa
 
 Si nécessaire, vous pouvez créer une stratégie de boîte aux lettres de messagerie unifiée dans l'environnement de ligne de commande en exécutant la commande suivante.
 
-    New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
+```powershell
+New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
+```
 
 Si nécessaire, vous pouvez configurer une stratégie de boîte aux lettres de messagerie unifiée à l'aide du CAE:
 
@@ -422,7 +436,9 @@ Pour déplacer une boîte aux lettres Exchange 2007 vers un serveur de boîtes a
 
 Pour déplacer une boîte aux lettres Exchange 2007 vers un serveur de boîtes aux lettres Exchange 2013 à l'aide de l'environnement de ligne de commande, exécutez la commande suivante.
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
+```
 
 ## Étape 12 : activation de nouveaux utilisateurs pour la messagerie unifiée ou configuration des paramètres pour un utilisateur à extension messagerie unifiée existant
 
@@ -528,7 +544,9 @@ Pour désactiver la messagerie unifiée sur un serveur de messagerie unifiée Ex
 
 Pour désactiver la messagerie unifiée sur un serveur de messagerie unifiée Exchange 2007 à l'aide de l'environnement de ligne de commande, exécutez la commande suivante :
 
-    Disable-UMServer -Identity MyUMServer -Immediate $true
+```powershell
+Disable-UMServer -Identity MyUMServer -Immediate $true
+```
 
 > [!TIP]
 > Pour désactiver la réponse aux appels, vous pouvez utiliser la cmdlet <strong>Disable-UMServer</strong> d'un serveur de messagerie unifiée Exchange 2007 ou la cmdlet <strong>Disable-UMService</strong> d'un serveur de boîtes aux lettres Exchange 2013.
@@ -561,11 +579,15 @@ Pour supprimer un serveur de messagerie unifiée Exchange 2007 d'un plan de num�
 
 Dans cet exemple, il y a trois plans de numérotation URI SIP : SipDP1, SipDP2 et SipDP3. Cet exemple supprime le serveur de messagerie unifiée nommé `MyUMServer` du plan de numérotation SipDP3.
 
-    Set-UMServer -id MyUMServer -DialPlans SipDP1,SipDP2
+```powershell
+Set-UMServer -id MyUMServer -DialPlans SipDP1,SipDP2
+```
 
 Dans cet exemple, il y a deux plans de numérotation URI SIP : SipDP1 et SipDP2. Cet exemple supprime le serveur de messagerie unifiée nommé `MyUMServer` du plan de numérotation SipDP2.
 
-    Set-UMServer -id MyUMServer -DialPlans SipDP1
+```powershell
+Set-UMServer -id MyUMServer -DialPlans SipDP1
+```
 
 > [!TIP]
 > Pour supprimer un serveur de messagerie unifiée Exchange 2007 d'un ou plusieurs plans de numérotation, vous pouvez utiliser la cmdlet <strong>Set-UMServer</strong> dans l'environnement de ligne de commande sur un serveur de messagerie unifiée Exchange 2007, ou la cmdlet <strong>Set-UMService</strong> cmdlet sur un serveur de boîtes aux lettres Exchange 2013. Par exemple, pour supprimer un serveur de messagerie unifiée de tous les plans de numérotation, exécutez la commande suivante : <code>Set-UMServer -identity MyUMServer -DialPlan $null</code>

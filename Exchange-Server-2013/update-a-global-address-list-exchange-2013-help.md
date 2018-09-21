@@ -45,7 +45,9 @@ Cet exemple montre comment mettre à jour une liste d'adresses globale pour l'en
 > L'exécution de cette commande démarre uniquement le processus de mise à jour. La mise à jour de la LAG peut prendre plusieurs heures.
 
 
-    Update-GlobalAddressList -Identity "Fourth Coffee"
+```powershell
+Update-GlobalAddressList -Identity "Fourth Coffee"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Update-GlobalAddressList](https://technet.microsoft.com/fr-fr/library/aa998806\(v=exchg.150\)).
 

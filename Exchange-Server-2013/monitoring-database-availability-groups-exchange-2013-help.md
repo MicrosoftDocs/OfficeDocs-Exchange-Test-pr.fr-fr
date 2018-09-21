@@ -113,15 +113,21 @@ Les exemples suivants utilisent la cmdlet **Get-MailboxDatabaseCopyStatus**. Cha
 
 Cet exemple renvoie les informations relatives à l’état de toutes les copies de la base de données nommée DB2.
 
-    Get-MailboxDatabaseCopyStatus -Identity DB2 | Format-List
+```powershell
+Get-MailboxDatabaseCopyStatus -Identity DB2 | Format-List
+```
 
 Cet exemple renvoie l’état de toutes les copies de base de données sur le serveur de boîtes aux lettres nommé MBX2.
 
-    Get-MailboxDatabaseCopyStatus -Server MBX2 | Format-List
+```powershell
+Get-MailboxDatabaseCopyStatus -Server MBX2 | Format-List
+```
 
 Cet exemple renvoie l’état de toutes les copies de base de données sur le serveur de boîtes aux lettres local.
 
-    Get-MailboxDatabaseCopyStatus -Local | Format-List
+```powershell
+Get-MailboxDatabaseCopyStatus -Local | Format-List
+```
 
 Pour plus d’informations sur l’utilisation de la cmdlet **Get-MailboxDatabaseCopyStatus**, voir [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/fr-fr/library/dd298044\(v=exchg.150\)).
 
@@ -225,7 +231,9 @@ La cmdlet **Test-ReplicationHealth** a été conçue pour l’analyse proactive 
 
 Cet exemple utilise la cmdlet **Test-ReplicationHealth** pour tester l’intégrité de la réplication pour le serveur de boîtes aux lettres MBX1.
 
-    Test-ReplicationHealth -Identity MBX1
+```powershell
+Test-ReplicationHealth -Identity MBX1
+```
 
 ## Journalisation des événements du canal Crimson
 
@@ -448,7 +456,9 @@ Le script CollectReplicationMetrics.ps1 prend en charge des paramètres qui vous
 
 L’exemple suivant illustre la collecte des données sur une période d’une heure, et à des intervalles d’une minute, à partir de tous les serveurs du groupe de disponibilité de base de données DAG1, puis génère un rapport récapitulatif. Le paramètre *ReportPath* est également utilisé pour que le script place tous les fichiers dans le répertoire actuel.
 
-    CollectReplicationMetrics.ps1 -DagName DAG1 -Duration "01:00:00" -Frequency "00:01:00" -ReportPath
+```powershell
+CollectReplicationMetrics.ps1 -DagName DAG1 -Duration "01:00:00" -Frequency "00:01:00" -ReportPath
+```
 
 L’exemple suivant illustre la lecture des données de tous les fichiers correspondant à CounterData\*, puis génère un rapport récapitulatif.
 

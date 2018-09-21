@@ -67,7 +67,9 @@ Vous pouvez avoir besoin d'afficher les règles et actions d'une stratégie DLP
 
 Dans cet exemple, des informations sur la stratégie DLP fictive nommée Employee Numbers sont renvoyées. La commande est canalisée vers la commande **Format-List** pour afficher la configuration détaillée de la stratégie de transport spécifiée.
 
-    Get-DlpPolicy "Employee Numbers" | Format-List
+```powershell
+Get-DlpPolicy "Employee Numbers" | Format-List
+```
 
 Pour obtenir des informations sur la syntaxe et les paramètres, consultez la rubrique [Get-DlpPolicy](https://technet.microsoft.com/fr-fr/library/jj215752\(v=exchg.150\)).
 
@@ -97,7 +99,9 @@ Vous pouvez modifier une stratégie DLP en modifiant son nom ou les règles qui
 
 Vous pouvez préciser le niveau de notification et d'action d'une stratégie via l'environnement de ligne de commande Exchange Management Shell. Dans cet exemple, le mode d'une stratégie DLP fictive nommée Employee Numbers est défini pour que les actions ne soient pas appliquées et que les messages de notification ne s'affichent pas.
 
-    Set-DlpPolicy "Employee Numbers" -Mode Audit
+```powershell
+Set-DlpPolicy "Employee Numbers" -Mode Audit
+```
 
 Pour obtenir des informations sur la syntaxe et les paramètres, consultez la rubrique [Set-DlpPolicy](https://technet.microsoft.com/fr-fr/library/jj215778\(v=exchg.150\)).
 
@@ -117,7 +121,9 @@ Vous pouvez aussi choisir de configurer le mode ou l'état opérationnel d'une s
 
 Cet exemple décrit la suppression de la stratégie DLP fictive nommée Employee Numbers.
 
-    Remove-DlpPolicy "Employee Numbers"
+```powershell
+Remove-DlpPolicy "Employee Numbers"
+```
 
 Pour obtenir des informations sur la syntaxe et les paramètres, consultez la rubrique [Remove-DlpPolicy](https://technet.microsoft.com/fr-fr/library/jj215677\(v=exchg.150\)).
 

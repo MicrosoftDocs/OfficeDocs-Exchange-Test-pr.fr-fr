@@ -37,7 +37,9 @@ Vous pouvez utiliser l’environnement de ligne de commande Exchange Management 
 
 Utilisez la cmdlet **Set-OrganizationConfig** pour activer ou désactiver les infos-courrier dans votre organisation. Les infos-courrier sont activées par défaut lorsque vous installez une nouvelle organisation Exchange. Cet exemple montre comment activer les infos-courrier dans votre organisation.
 
-    Set-OrganizationConfig -MailTipsAllTipsEnabled $true
+```powershell
+Set-OrganizationConfig -MailTipsAllTipsEnabled $true
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-OrganizationConfig](https://technet.microsoft.com/fr-fr/library/aa997443\(v=exchg.150\)).
 

@@ -29,7 +29,9 @@ Lorsque vous utilisez les paramètres *ToEntireForest* ou *ToArrayMembers* avec 
 
 Vérifiez que les serveurs que le script ciblera sont bien tous les serveurs requis à l’aide de la cmdlet **Get-ClientAccessArray**, comme dans l’exemple suivant.
 
-    Get-ClientAccessArray | fl members
+```powershell
+Get-ClientAccessArray | fl members
+```
 
 Si le serveur dont la mise à jour échoue est membre du groupe d'accès au client et qu'il n'est toujours pas mis à jour correctement, exécutez de nouveau le programme d'installation Exchange et ajoutez de nouveau le rôle de serveur d'accès au client au serveur. Vous pouvez également spécifier des serveurs individuels à cibler à l'aide du paramètre *ToSpecificServers*.
 
@@ -55,7 +57,9 @@ Pour résoudre ce problème, supprimez le serveur de votre déploiement à l'aid
 
 Si le serveur est hors service pendant une courte durée seulement et que vous ne souhaitez pas supprimer définitivement Exchange, vous pouvez ajuster le script pour qu'il soit exécuté sur des serveurs spécifiques à l'aide du paramètre *ToSpecificServers* afin que seuls les serveurs actifs soient ciblés. Vous pouvez supprimer le service d'accès au client RPC à partir de l'objet Active Directory du serveur qui ne répond pas à l'aide de la cmdlet **Remove-ClientAccessArray**, comme indiqué dans l'exemple suivant.
 
-    Remove-RPCClientAccess -Server Server.Contoso.com
+```powershell
+Remove-RPCClientAccess -Server Server.Contoso.com
+```
 
 Après la suppression du service d’accès au client RPC, le serveur se sera pas renvoyé comme membre du groupe par [Get-ClientAccessArray](https://technet.microsoft.com/fr-fr/library/dd297976\(v=exchg.150\)) et le script ne le ciblera pas. Dès que le serveur est à nouveau fonctionnel, vous pouvez rajouter le service d’accès au client RPC à l’aide de la cmdlet **New-RpcClientAccess**. Lorsque vous aurez rajouté le service d’accès au client RPC, assurez-vous de redémarrer le service Carnet d’adresses Microsoft Exchange sur le serveur concerné.
 

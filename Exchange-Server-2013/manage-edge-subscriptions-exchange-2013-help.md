@@ -71,19 +71,27 @@ Après avoir supprimé l’abonnement Edge, la synchronisation des informations
 
 1.  Pour supprimer l’abonnement Edge du serveur de transport Edge, utilisez la syntaxe suivante.
     
-        Remove-EdgeSubscription <EdgeTransportServerIdentity>
+    ```powershell
+Remove-EdgeSubscription <EdgeTransportServerIdentity>
+```
     
     Par exemple, pour supprimer l’abonnement Edge sur le serveur de transport Edge nommé Edge01, exécutez la commande suivante.
     
-        Remove-EdgeSubscription Edge01
+    ```powershell
+Remove-EdgeSubscription Edge01
+```
 
 2.  Pour supprimer l’abonnement Edge du serveur de boîtes aux lettres, utilisez la syntaxe suivante.
     
-        Remove-EdgeSubscription <MailboxServerIdentity>
+    ```powershell
+Remove-EdgeSubscription <MailboxServerIdentity>
+```
     
     Par exemple, pour supprimer l’abonnement Edge sur le serveur de boîtes aux lettres nommé Mailbox01, exécutez la commande suivante.
     
-        Remove-EdgeSubscription Mailbox01
+    ```powershell
+Remove-EdgeSubscription Mailbox01
+```
 
 Vous devrez supprimer l’abonnement Edge si :
 
@@ -151,7 +159,9 @@ L’exemple suivant démarre EdgeSync avec les options suivantes :
 
 <!-- end list -->
 
-    Start-EdgeSynchronization -Server Mailbox01
+```powershell
+Start-EdgeSynchronization -Server Mailbox01
+```
 
 Cet exemple démarre EdgeSync avec les options suivantes :
 
@@ -163,7 +173,9 @@ Cet exemple démarre EdgeSync avec les options suivantes :
 
 <!-- end list -->
 
-    Start-EdgeSynchronization -TargetServer Edge03 -ForceFullSync
+```powershell
+Start-EdgeSynchronization -TargetServer Edge03 -ForceFullSync
+```
 
 ## Vérifier les résultats EdgeSync
 
@@ -177,11 +189,15 @@ Le paramètre *ExcludeRecipientTest* utilisé sur la cmdlet **Test-EdgeSynchroni
 
 Pour vérifier les résultats EdgeSync pour un destinataire unique, utilisez la syntaxe suivante sur un serveur de boîtes aux lettres dans le site Active Directory abonné.
 
-    Test-EdgeSynchronization -VerifyRecipient <emailaddress>
+```powershell
+Test-EdgeSynchronization -VerifyRecipient <emailaddress>
+```
 
 Cet exemple vérifie les résultats EdgeSync pour l’utilisateur kate@contoso.com.
 
-    Test-EdgeSynchronization -VerifyRecipient kate@contoso.com
+```powershell
+Test-EdgeSynchronization -VerifyRecipient kate@contoso.com
+```
 
 Retour au début
 

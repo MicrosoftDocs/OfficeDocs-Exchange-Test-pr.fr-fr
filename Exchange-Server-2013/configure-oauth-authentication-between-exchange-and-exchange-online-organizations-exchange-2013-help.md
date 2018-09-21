@@ -85,7 +85,9 @@ Dans cette étape, vous devez exécuter un script PowerShell pour exporter le ce
 
 2.  Dans Exchange PowerShell dans votre organisation Exchange locale, exécutez le script PowerShell que vous avez créé à l’étape précédente. Par exemple :
     
-        .\ExportAuthCert.ps1
+    ```powershell
+.\ExportAuthCert.ps1
+```
 
 ## Étape 4 : télécharger le certificat d’autorisation local vers le service ACS de Windows Azure Active Directory
 
@@ -115,7 +117,9 @@ Ensuite, vous devez utiliser Windows PowerShell pour télécharger le certificat
 
 3.  Exécutez le script PowerShell que vous avez créé à l’étape précédente. Par exemple :
     
-        .\UploadAuthCert.ps1
+    ```powershell
+.\UploadAuthCert.ps1
+```
 
 4.  Une fois le script lancé, une boîte de dialogue d’informations d’identification s’affiche. Entrez les informations d’identification du compte d’administrateur client de votre organisation Microsoft Online Azure AD. Après avoir exécuté le script, laissez la session Windows PowerShell pour Azure AD ouverte. Vous l’utiliserez pour exécuter un script PowerShell à l’étape suivante.
 
@@ -125,7 +129,9 @@ Dans cette étape, vous devez exécuter le script pour chaque point de terminais
 
 Si vous avez des doutes concernant les points de terminaison Exchange externes de votre organisation Exchange locale, vous pouvez obtenir une liste des points de terminaison de services web configurés externes en exécutant la commande suivante dans Exchange PowerShell, dans votre organisation Exchange locale :
 
-    Get-WebServicesVirtualDirectory | FL ExternalUrl
+```powershell
+Get-WebServicesVirtualDirectory | FL ExternalUrl
+```
 
 > [!NOTE]
 > Pour que le script suivant soit correctement exécuté, Windows PowerShell pour Azure Active Directory doit être connecté à votre client Azure AD, comme expliqué à l’étape 4 de la section précédente.
@@ -146,7 +152,9 @@ Si vous avez des doutes concernant les points de terminaison Exchange externes d
 
 2.  Dans Windows PowerShell pour Azure Active Directory, exécutez le script Windows PowerShell que vous avez créé à l’étape précédente. Par exemple :
     
-        .\RegisterEndpoints.ps1
+    ```powershell
+.\RegisterEndpoints.ps1
+```
 
 ## Étape 6 : créer un connecteur intra-organisationnel à partir de votre organisation locale vers Office 365
 
@@ -202,7 +210,9 @@ Avant d’effectuer l’étape suivante, vérifiez que :
 
 Un paramètre *AvailabilityAddressSpace* doit être configuré sur les serveurs d’accès au client antérieurs à Exchange 2013 pointant vers le point de terminaison des services web Exchange de vos serveurs d’accès au client Exchange 2013 SP1 locaux. Ce point de terminaison est le même que celui précédemment décrit à l’étape 5 ou peut être déterminé par l’exécution de la cmdlet suivante sur votre serveur d’accès au client Exchange 2013 SP1 local :
 
-    Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
+```powershell
+Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
+```
 
 > [!NOTE]
 > Si des informations de répertoire virtuel sont renvoyées par plusieurs serveurs, assurez-vous que vous utilisez le point de terminaison renvoyé pour le serveur d’accès au client Exchange 2013 SP1. Cela affichera une valeur égale ou supérieure à 15.0 (build 847.32) pour le paramètre <em>AdminDisplayVersion</em>.

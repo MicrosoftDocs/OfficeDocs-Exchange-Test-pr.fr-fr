@@ -25,7 +25,9 @@ Voici la réponse par défaut reçue par un serveur de messagerie SMTP distant 
 
 Quand vous spécifiez une valeur personnalisée pour la bannière SMTP sur un connecteur de réception, un serveur de messagerie SMTP distant qui se connecte à ce connecteur de réception SMTP reçoit la réponse suivante.
 
-    220 <Banner Text>
+```powershell
+220 <Banner Text>
+```
 
 Vous pouvez modifier la bannière SMTP des connecteurs de réception SMTP accédant à Internet afin que le nom du serveur et le logiciel de serveur de messagerie ne soient pas divulgués par la bannière SMTP.
 
@@ -49,15 +51,21 @@ Vous pouvez modifier la bannière SMTP des connecteurs de réception SMTP acc�
 
 Exécutez la commande suivante :
 
-    Set-ReceiveConnector <ConnectorIdentity> -Banner "220 <Banner Text>"
+```powershell
+Set-ReceiveConnector <ConnectorIdentity> -Banner "220 <Banner Text>"
+```
 
 Cet exemple modifie la bannière SMTP sur le serveur de connexion existant From the Internet pour que la bannière SMTP affiche `220 Contoso Corporation`.
 
-    Set-ReceiveConnector "From the Internet" -Banner "220 Contoso Corporation"
+```powershell
+Set-ReceiveConnector "From the Internet" -Banner "220 Contoso Corporation"
+```
 
 Cet exemple supprime la bannière SMTP personnalisée sur le connecteur de réception From the Internet, qui renvoie la bannière SMTP à la valeur par défaut.
 
-    Set-ReceiveConnector "From the Internet" -Banner $null
+```powershell
+Set-ReceiveConnector "From the Internet" -Banner $null
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -65,7 +73,9 @@ Pour vérifier que vous avez bien modifié la bannière SMTP sur un connecteur 
 
 1.  Ouvrez un client Telnet sur un ordinateur qui peut accéder au connecteur de réception, et exécutez la commande suivante :
     
-        open <Connector FQDN or IP address> <Port>
+    ```powershell
+open <Connector FQDN or IP address> <Port>
+```
 
 2.  Vérifiez que la réponse du connecteur de réception contient la bannière SMTP que vous avez configurée.
 

@@ -43,11 +43,15 @@ L’Agent d’analyse de protocole fournit la réputation de l'expéditeur. La r
 
 Cet exemple désactive la réputation de l'expéditeur.
 
-    Set-SenderReputationConfig -Enabled $false
+```powershell
+Set-SenderReputationConfig -Enabled $false
+```
 
 Cet exemple active la réputation de l'expéditeur.
 
-    Set-SenderReputationConfig -Enabled $true
+```powershell
+Set-SenderReputationConfig -Enabled $true
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -55,7 +59,9 @@ Pour vérifier que la réputation de l'expéditeur est activée ou désactivée,
 
 1.  Exécutez la commande suivante pour vérifier que l'agent d’analyse de protocole est installé et activé :
     
-        Get-TransportAgent
+    ```powershell
+Get-TransportAgent
+```
 
 2.  Exécutez la commande suivante pour vérifier les valeurs de réputation de l'expéditeur que vous configurées :
     
@@ -67,19 +73,27 @@ Par défaut, la réputation de l'expéditeur est activée pour les messages exte
 
 Pour désactiver la fonctionnalité de réputation de l'expéditeur pour des messages externes, exécutez la commande suivante :
 
-    Set-SenderReputationConfig -ExternalMailEnabled $false
+```powershell
+Set-SenderReputationConfig -ExternalMailEnabled $false
+```
 
 Pour activer la fonctionnalité de réputation de l'expéditeur pour des messages externes, exécutez la commande suivante :
 
-    Set-SenderReputationConfig -ExternalMailEnabled $true
+```powershell
+Set-SenderReputationConfig -ExternalMailEnabled $true
+```
 
 Pour désactiver la fonctionnalité de réputation de l'expéditeur pour des messages internes, exécutez la commande suivante :
 
-    Set-SenderReputationConfig -InternalMailEnabled $false
+```powershell
+Set-SenderReputationConfig -InternalMailEnabled $false
+```
 
 Pour activer la fonctionnalité de réputation de l'expéditeur pour des messages internes, exécutez la commande suivante :
 
-    Set-SenderReputationConfig -InternalMailEnabled $true
+```powershell
+Set-SenderReputationConfig -InternalMailEnabled $true
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -95,11 +109,15 @@ Pour vérifier que la réputation de l'expéditeur est activée ou désactivée 
 
 Pour configurer les propriétés de la réputation de l'expéditeur, exécutez la commande suivante :
 
-    Set-SenderReputationConfig -SrlBlockThreshold <Value> -SenderBlockingPeriod <Hours>
+```powershell
+Set-SenderReputationConfig -SrlBlockThreshold <Value> -SenderBlockingPeriod <Hours>
+```
 
 Cet exemple définit le seuil de blocage de niveau de réputation de l’expéditeur (SRL) avec la valeur 6 et configure la réputation de l’expéditeur pour ajouter des expéditeurs incriminés à la liste rouge IP pendant 36 heures :
 
-    Set-SenderReputationConfig -SrlBlockThreshold 6 -SenderBlockingPeriod 36
+```powershell
+Set-SenderReputationConfig -SrlBlockThreshold 6 -SenderBlockingPeriod 36
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -107,7 +125,9 @@ Pour vérifier que les propriétés de la réputation de l'expéditeur sont corr
 
 1.  Exécutez la commande suivante :
     
-        Get-SenderReputationConfig
+    ```powershell
+Get-SenderReputationConfig
+```
 
 2.  Vérifiez que les valeurs affichées correspondent aux valeurs que vous avez configurées.
 

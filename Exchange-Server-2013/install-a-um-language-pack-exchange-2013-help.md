@@ -63,7 +63,9 @@ Pour les tâches supplémentaires concernant les modules linguistiques de messag
 
 Cet exemple installe le module linguistique de messagerie unifiée Japonais (ja-JP) qui a été téléchargé dans le dossier D:\\Exchange\\UMLanguagePacks sur un serveur de boîtes aux lettres.
 
-    setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```powershell
+setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 Cet exemple installe les modules linguistiques de messagerie unifiée Espagnol mexicain (es-MX) et Allemand (de-DE) qui ont été téléchargés dans le dossier D:\\Exchange\\UMLanguagePacks sur un serveur de boîtes aux lettres.
 

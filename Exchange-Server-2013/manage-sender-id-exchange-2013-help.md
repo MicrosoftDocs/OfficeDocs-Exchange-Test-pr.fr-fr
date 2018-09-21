@@ -41,11 +41,15 @@ La fonctionnalité d’ID de l’expéditeur est fournie par l’agent d’ID de
 
 Pour désactiver l'ID de l'expéditeur, exécutez la commande suivante :
 
-    Set-SenderIDConfig -Enabled $false
+```powershell
+Set-SenderIDConfig -Enabled $false
+```
 
 Pour activer l'ID de l'expéditeur, exécutez la commande suivante :
 
-    Set-SenderIDConfig -Enabled $true
+```powershell
+Set-SenderIDConfig -Enabled $true
+```
 
 > [!NOTE]
 > Lorsque vous désactivez l’ID de l’expéditeur, l’agent d’ID de l’expéditeur sous-jacent est toujours activé. Pour désactiver l’agent d’ID de l’expéditeur, exécutez la commande : <code>Disable-TransportAgent &quot;Sender ID Agent&quot;</code>.
@@ -57,7 +61,9 @@ Pour vérifier que vous avez correctement activé ou désactivé l’ID de l’e
 
 1.  Exécutez la commande suivante :
     
-        Get-SenderIDConfig | Format-List Enabled
+    ```powershell
+Get-SenderIDConfig | Format-List Enabled
+```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 
@@ -65,11 +71,15 @@ Pour vérifier que vous avez correctement activé ou désactivé l’ID de l’e
 
 Pour configurer l’action d’ID de l’expéditeur pour les messages usurpés, exécutez la commande suivante :
 
-    Set-SenderIDConfig -SpoofedDomainAction <StampStatus | Reject | Delete>
+```powershell
+Set-SenderIDConfig -SpoofedDomainAction <StampStatus | Reject | Delete>
+```
 
 Cet exemple configure l’agent d’ID de l’expéditeur pour rejeter tous les messages dont l’adresse IP du serveur d’envoi n’est pas répertoriée comme serveur d’envoi SMTP faisant autorité dans l’enregistrement Sender Policy Framework (SPF) DNS pour le domaine d’envoi.
 
-    Set-SenderIDConfig -SpoofedDomainAction Reject
+```powershell
+Set-SenderIDConfig -SpoofedDomainAction Reject
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -77,7 +87,9 @@ Pour vérifier que vous avez configuré l’action de l’ID de l’expéditeur 
 
 1.  Exécutez la commande suivante :
     
-        Get-SenderIDConfig | Format-List SpoofedDomainAction
+    ```powershell
+Get-SenderIDConfig | Format-List SpoofedDomainAction
+```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 
@@ -85,11 +97,15 @@ Pour vérifier que vous avez configuré l’action de l’ID de l’expéditeur 
 
 Pour configurer l’action d’ID de l’expéditeur pour les erreurs temporaires, exécutez la commande suivante :
 
-    Set-SenderIDConfig -TempErrorAction <StampStatus | Reject | Delete>
+```powershell
+Set-SenderIDConfig -TempErrorAction <StampStatus | Reject | Delete>
+```
 
 Dans cet exemple, l’agent d’ID de l’expéditeur est configuré afin de marquer les messages dans le cas où l’état d’ID de l’expéditeur ne peut pas être déterminé, en raison d’une erreur temporaire du serveur DNS. Le message sera traité par d'autres agents de blocage du courrier indésirable, tandis que l'agent de filtrage de contenu utilisera la marque lors de la détermination de la valeur de seuil de probabilité de courrier indésirable pour le message.
 
-    Set-SenderIDConfig -TempErrorAction StampStatus
+```powershell
+Set-SenderIDConfig -TempErrorAction StampStatus
+```
 
 Notez bien que `StampStatus` est la valeur par défaut pour le paramètre *TempErrorAction*.
 
@@ -99,7 +115,9 @@ Pour vérifier que vous avez configuré l’action de l’ID de l’expéditeur 
 
 1.  Exécutez la commande suivante :
     
-        Get-SenderIDConfig | Format-List TempErrorAction
+    ```powershell
+Get-SenderIDConfig | Format-List TempErrorAction
+```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 
@@ -133,7 +151,9 @@ Pour vérifier que vous avez correctement configuré les exceptions de domaine d
 
 1.  Exécutez la commande suivante :
     
-        Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
+    ```powershell
+Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
+```
 
 2.  Vérifiez que les valeurs affichées sont les valeurs que vous avez configurées.
 

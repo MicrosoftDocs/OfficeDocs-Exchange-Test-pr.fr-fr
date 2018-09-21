@@ -61,7 +61,9 @@ L’utilisateur de messagerie est supprimé de la liste de contacts.
 
 Cet exemple montre comment désactiver la messagerie pour l’utilisateur de messagerie Yan Li.
 
-    Disable-MailUser -Identity "Yan Li"
+```powershell
+Disable-MailUser -Identity "Yan Li"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Disable-MailUser](https://technet.microsoft.com/fr-fr/library/aa998578\(v=exchg.150\)).
 
@@ -75,13 +77,17 @@ Pour vérifier que vous avez bien désactivé la messagerie pour un utilisateur 
 
 3.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-MailUser
+    ```powershell
+Get-MailUser
+```
     
     L’utilisateur de messagerie pour lequel vous avez désactivé la messagerie électronique ne sera pas renvoyé dans les résultats car cette cmdlet ne renvoie que les utilisateurs à extension messagerie.
 
 4.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-User
+    ```powershell
+Get-User
+```
     
     L’utilisateur de messagerie pour lequel vous avez désactivé la messagerie est renvoyé dans les résultats car cette cmdlet renvoie tous les objets utilisateur Active Directory.
 
@@ -93,7 +99,9 @@ La cmdlet **Enable-MailUser** permet d’activer la messagerie des utilisateurs 
 
 Cet exemple montre comment activer la messagerie pour l’utilisateur Sanjay Shah. Vous devez saisir une adresse de messagerie externe.
 
-    Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys.com
+```powershell
+Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys.com
+```
 
 ## Activation de la messagerie pour plusieurs utilisateurs à l’aide de l’environnement de ligne de commande Exchange Management Shell et d’un fichier CSV
 
@@ -155,5 +163,7 @@ Pour vérifier que vous avez bien activé la messagerie des utilisateurs Active 
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher des informations sur les nouveaux utilisateurs de messagerie :
     
-        Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```powershell
+Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+```
 

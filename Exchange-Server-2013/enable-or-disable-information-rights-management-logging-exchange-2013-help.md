@@ -51,7 +51,9 @@ Si vous souhaitez rechercher des tâches de gestion supplémentaires relatives �
 
 Cet exemple active le journal IRM sur un serveur de boîtes aux lettres.
 
-    Set-TransportService -Identity EXCH01 -IRMLogEnabled $true
+```powershell
+Set-TransportService -Identity EXCH01 -IRMLogEnabled $true
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-TransportService](https://technet.microsoft.com/fr-fr/library/jj215682\(v=exchg.150\)).
 
@@ -59,7 +61,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Cet exemple désactive l’enregistrement IRM sur un serveur de boîtes aux lettres.
 
-    Set-TransportService -Identity EXCH01 -IRMLogEnabled $false
+```powershell
+Set-TransportService -Identity EXCH01 -IRMLogEnabled $false
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-TransportService](https://technet.microsoft.com/fr-fr/library/jj215682\(v=exchg.150\)).
 

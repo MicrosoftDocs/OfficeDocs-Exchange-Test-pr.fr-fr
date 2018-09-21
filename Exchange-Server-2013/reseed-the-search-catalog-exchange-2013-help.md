@@ -70,7 +70,9 @@ Utilisez l’une des procédures suivantes si la base de données de boîtes aux
 
 Cet exemple réamorce le catalogue d’indexation de contenu pour la copie de base de données DB1 sur le serveur de boîtes aux lettres MBX1 à partir de n’importe quel serveur source du DAG qui dispose d’une copie de base de données.
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Update-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd335201\(v=exchg.150\)).
 
@@ -78,7 +80,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Cet exemple réamorce le catalogue d'indexation de contenu pour la copie de base de données DB1 sur le serveur de boîte aux lettres MBX1 à partir du serveur de boîte aux lettres MBX2 qui dispose également d'une copie de la base de données.
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2 -CatalogOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2 -CatalogOnly
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Update-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd335201\(v=exchg.150\)).
 
@@ -89,11 +93,15 @@ S’il existe une seule copie de la base de données de boîtes aux lettres, vou
 1.  Exécutez les commandes suivantes pour arrêter la recherche Microsoft Exchange et les services du contrôleur de l’hôte de la recherche Microsoft Exchange.
     
     ```
-        Stop-Service MSExchangeFastSearch
+    ```powershell
+Stop-Service MSExchangeFastSearch
+```
     ```
     
     ```
-        Stop-Service HostControllerService
+    ```powershell
+Stop-Service HostControllerService
+```
     ```
 
 2.  Supprimez, déplacez ou renommez le dossier qui contient le catalogue d’indexation de contenu Exchange. Le nom de ce dossier est `%ExchangeInstallPath\Mailbox\<name of mailbox database>_Catalog\<GUID>12.1.Single`. Par exemple, vous pouvez renommer le dossier `C:\Program Files\Microsoft\Exchange Server\V15\Mailbox\Mailbox Database 0657134726_Catalog\F0627A72-9F1D-494A-839A-D7C915C279DB12.1.Single_OLD`.
@@ -105,10 +113,14 @@ S’il existe une seule copie de la base de données de boîtes aux lettres, vou
 3.  Exécutez les commandes suivantes pour redémarrer la recherche Microsoft Exchange et les services du contrôleur de l’hôte de la recherche Microsoft Exchange.
     
     ```
-        Start-Service MSExchangeFastSearch
+    ```powershell
+Start-Service MSExchangeFastSearch
+```
     ```    
     ```
-        Start-Service HostControllerService
+    ```powershell
+Start-Service HostControllerService
+```
     ```
     Après le redémarrage de ces services, la recherche Exchange recrée le catalogue d’indexation de contenu.
 

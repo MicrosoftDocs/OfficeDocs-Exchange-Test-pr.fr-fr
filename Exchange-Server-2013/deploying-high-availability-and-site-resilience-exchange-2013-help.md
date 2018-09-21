@@ -138,11 +138,15 @@ Comme le montrait le tableau précédent, les cartes des réseaux de réplicatio
 
 Pour configurer le routage des cartes de réseau de réplication sur MBX1 et MBX2, la commande suivante a été exécutée sur chaque serveur.
 
-    netsh interface ipv4 add route 10.0.2.0/24 <NetworkName> 10.0.1.254
+```powershell
+netsh interface ipv4 add route 10.0.2.0/24 <NetworkName> 10.0.1.254
+```
 
 Pour configurer le routage des cartes de réseau de réplication sur MBX3 et MBX4, la commande suivante a été exécutée sur chaque serveur.
 
-    netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
+```powershell
+netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
+```
 
 Les paramètres réseau supplémentaires suivants ont également été configurés :
 
@@ -187,7 +191,9 @@ La commande précédente configure DAG1 pour qu’il utilise un serveur témoin 
 
 Les commandes précédentes ajoutent chaque serveur de boîtes aux lettres au groupe de disponibilité de base de données, un par un. Elles installent également le composant Clustering avec basculement Windows sur chaque serveur de boîtes aux lettres (s’il n’est pas encore installé), créent un cluster de basculement et rattachent chaque serveur de boîtes aux lettres au nouveau cluster.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```
 
 La commande précédente active le mode DAC pour le groupe de disponibilité de base de données.
 

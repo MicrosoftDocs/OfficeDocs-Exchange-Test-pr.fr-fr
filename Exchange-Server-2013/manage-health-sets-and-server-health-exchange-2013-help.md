@@ -47,7 +47,9 @@ Vous pouvez utiliser le Shell pour obtenir un résumé de l’intégrité d’un
 
 Exécutez l’une des commandes suivantes pour afficher les indicateurs d’intégrité et les informations d’intégrité sur un serveur exécutant Exchange 2013.
 ```
-    Get-HealthReport -Identity <ServerName>
+```powershell
+Get-HealthReport -Identity <ServerName>
+```
 ```
 ```
     Get-ServerHealth -Identity <ServerName> | Format-Table Server,CurrentHealthSetState,Name,HealthSetName,AlertValue,HealthGroupName -Auto
@@ -55,10 +57,14 @@ Exécutez l’une des commandes suivantes pour afficher les indicateurs d’int�
 
 Exécutez l’une des commandes suivantes pour afficher les indicateurs d’intégrité sur un serveur ou un groupe de disponibilité de base de données exécutant Exchange 2013.
 ```
-    Get-ExchangeServer | Get-HealthReport -RollupGroup
+```powershell
+Get-ExchangeServer | Get-HealthReport -RollupGroup
 ```
 ```
-    Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
+```
+```powershell
+Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
+```
 ```
 ```
     (Get-DatabaseAvailabiltyGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
@@ -72,7 +78,9 @@ Un indicateur d’intégrité est un groupe de sondes, d’analyses et de répon
 
 Exécutez la commande suivante pour afficher les indicateurs d’intégrité sur un serveur exécutant Exchange 2013.
 
-    Get-HealthReport -Server <ServerName>
+```powershell
+Get-HealthReport -Server <ServerName>
+```
 
 ## Afficher les sondes, les moniteurs et les répondeurs pour un indicateur d’intégrité
 

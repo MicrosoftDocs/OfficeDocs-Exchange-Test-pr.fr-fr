@@ -130,7 +130,9 @@ Vous pouvez utiliser le CAE pour sélectionner jusqu’à 500 boîtes aux lettr
        ```
 
        ```
-        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
+    ```powershell
+Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
+```
        ```
 
        ```
@@ -142,7 +144,9 @@ Vous pouvez utiliser le CAE pour sélectionner jusqu’à 500 boîtes aux lettr
        ```
 
        ```
-        Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+    ```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+```
        ```
 
     

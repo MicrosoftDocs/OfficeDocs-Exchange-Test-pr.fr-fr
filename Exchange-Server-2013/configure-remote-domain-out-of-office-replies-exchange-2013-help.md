@@ -39,9 +39,13 @@ Vous pouvez utiliser la cmdlet **Set-RemoteDomain** pour configurer les proprié
 
 Cet exemple désactive les messages d’absence du bureau pour le domaine distant Contoso.
 
-    Set-RemoteDomain Contoso -AllowedOOFType None
+```powershell
+Set-RemoteDomain Contoso -AllowedOOFType None
+```
 
 Il autorise uniquement les messages externes de notification d'absence du bureau.
 
-    Set-RemoteDomain Contoso -AllowedOOFType External
+```powershell
+Set-RemoteDomain Contoso -AllowedOOFType External
+```
 

@@ -41,7 +41,9 @@ Pour configurer le nombre de tentatives suite à un problème de file d'attente,
 
 1.  Dans une fenêtre d'invite de commandes sur le serveur de boîtes aux lettres ou le serveur de transport Edge, ouvrez le fichier EdgeTransport.exe.config dans Bloc-notes en exécutant la commande suivante :
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  Recherchez les clés suivantes dans la section `<appSettings>`.
     
@@ -139,11 +141,15 @@ Par défaut, l’intervalle avant nouvelle tentative de message est `00:15:00` o
 
 Pour définir l'intervalle de nouvelle tentative de message, utilisez la syntaxe suivante.
 
-    Set-TransportService <ServerIdentity> -MessageRetryInterval <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -MessageRetryInterval <dd.hh:mm:ss>
+```
 
 Cet exemple montre la procédure de modification de l’intervalle avant nouvelle tentative de message sur 20 minutes sur le serveur de boîtes aux lettres Mailbox01.
 
-    Set-TransportService Mailbox01 -MessageRetryInterval 00:20:00
+```powershell
+Set-TransportService Mailbox01 -MessageRetryInterval 00:20:00
+```
 
 ## Configurer les paramètres d'expiration de notification d'état de remise retardée
 
@@ -165,11 +171,15 @@ Vous pouvez utiliser le CAE ou l'environnement de ligne de commande pour configu
 
 Pour définir l'intervalle de nouvelle tentative de message, utilisez la syntaxe suivante.
 
-    Set-TransportService <ServerIdentity> -DelayNotificationTimeout <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -DelayNotificationTimeout <dd.hh:mm:ss>
+```
 
 Cet exemple montre comment modifier le délai d'attente avant l'envoi d'un message de notification d'état de remise retardée sur 6 heures sur le serveur de boîtes aux lettres nommé Mailbox01.
 
-    Set-TransportService Mailbox01 -DelayNotificationTimeout 06:00:00
+```powershell
+Set-TransportService Mailbox01 -DelayNotificationTimeout 06:00:00
+```
 
 ## Utiliser l'environnement de ligne de commande pour activer ou désactiver l'envoi de messages de notification d'état de remise retardée à des expéditeurs de messages internes et externes
 
@@ -179,11 +189,15 @@ Pour configurer les paramètres de notification DSN retardée, utilisez la synta
 
 Cet exemple montre comment empêcher l'envoi de messages de notification d'état de remise retardée à des expéditeurs externes.
 
-    Set-TransportConfig -ExternalDelayDSNEnabled $false
+```powershell
+Set-TransportConfig -ExternalDelayDSNEnabled $false
+```
 
 Cet exemple montre comment empêcher l'envoi de messages de notification d'état de remise retardée à des expéditeurs internes.
 
-    Set-TransportConfig -InternalDelayDSNEnabled $false
+```powershell
+Set-TransportConfig -InternalDelayDSNEnabled $false
+```
 
 ## Configurer le délai d'expiration des messages
 
@@ -199,9 +213,13 @@ Cet exemple montre comment empêcher l'envoi de messages de notification d'état
 
 Pour configurer le délai d'expiration des messages, utilisez la syntaxe suivante.
 
-    Set-TransportService <ServerIdentity> -MessageExpirationTimeout <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -MessageExpirationTimeout <dd.hh:mm:ss>
+```
 
 Cet exemple montre comment modifier le délai d'expiration des messages sur 4 jours sur un serveur Exchange nommé Mailbox01.
 
-    Set-TransportService Mailbox01 -MessageExpirationTimeout 4.00:00:00
+```powershell
+Set-TransportService Mailbox01 -MessageExpirationTimeout 4.00:00:00
+```
 

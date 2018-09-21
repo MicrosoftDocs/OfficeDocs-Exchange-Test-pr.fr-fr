@@ -39,7 +39,9 @@ Lorsque vous exécutez une commande avec le commutateur *WhatIf*, vous placez le
 
 Lorsque vous exécutez cet exemple de commande, le texte suivant est retourné par le Shell :
 
-    What if: Creating Accepted Domain "Contoso Domain" with domain name "contoso.com".
+```powershell
+What if: Creating Accepted Domain "Contoso Domain" with domain name "contoso.com".
+```
 
 ## Commutateur Confirm
 
@@ -67,7 +69,9 @@ Lorsqu’une cmdlet qui n’a aucun de ces verbes est exécutée, le Shell arrê
 
 Lorsque vous appliquez manuellement le commutateur *Confirm* à une commande, incluez-le à la fin de la commande, comme dans l'exemple suivant :
 
-    Get-JournalRule | Enable-JournalRule -Confirm
+```powershell
+Get-JournalRule | Enable-JournalRule -Confirm
+```
 
 Lorsque vous exécutez cet exemple de commande, la boîte de dialogue suivante est retournée par le Shell :
 
@@ -93,7 +97,9 @@ La boîte de dialogue de confirmation fournit les options suivantes:
 
 Si vous souhaitez annuler le comportement par défaut de l'environnement Exchange Management Shell et supprimer la demande de confirmation pour les cmdlets auxquelles elle est automatiquement appliquée, vous pouvez inclure le commutateur *Confirm* avec la valeur `$False`, comme dans l'exemple suivant :
 
-    Get-JournalRule | Disable-JournalRule -Confirm:$False
+```powershell
+Get-JournalRule | Disable-JournalRule -Confirm:$False
+```
 
 Dans ce cas, aucune boîte de dialogue de confirmation n’est affichée.
 

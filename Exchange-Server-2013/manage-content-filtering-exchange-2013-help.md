@@ -41,11 +41,15 @@ L’agent de filtrage du contenu permet de filtrer du contenu. Il filtre tous le
 
 Pour désactiver le filtrage du contenu, exécutez la commande suivante :
 
-    Set-ContentFilterConfig -Enabled $false
+```powershell
+Set-ContentFilterConfig -Enabled $false
+```
 
 Pour activer le filtrage du contenu, exécutez la commande suivante :
 
-    Set-ContentFilterConfig -Enabled $true
+```powershell
+Set-ContentFilterConfig -Enabled $true
+```
 
 > [!NOTE]
 > Lorsque vous désactivez le filtrage du contenu, l’agent de filtrage du contenu sous-jacent est toujours activé. Pour désactiver l’agent de filtrage du contenu, exécutez la commande suivante : <code>Disable-TransportAgent &quot;Content Filter Agent&quot;</code>.
@@ -57,7 +61,9 @@ Pour savoir si vous avez réussi à activer ou désactiver le filtrage du conten
 
 1.  Exécutez la commande suivante :
     
-        Get-ContentFilterConfig | Format-List Enabled
+    ```powershell
+Get-ContentFilterConfig | Format-List Enabled
+```
 
 2.  Vérifiez la valeur de la propriété *Enabled* affichée.
 
@@ -67,11 +73,15 @@ Par défaut, la fonctionnalité de filtrage du contenu est activée pour les mes
 
 Pour désactiver le filtrage du contenu dans les messages externes, exécutez la commande suivante :
 
-    Set-ContentFilterConfig -ExternalMailEnabled $false
+```powershell
+Set-ContentFilterConfig -ExternalMailEnabled $false
+```
 
 Pour activer le filtrage du contenu dans les messages externes, exécutez la commande suivante :
 
-    Set-ContentFilterConfig -ExternalMailEnabled $true
+```powershell
+Set-ContentFilterConfig -ExternalMailEnabled $true
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -79,7 +89,9 @@ Pour savoir si vous avez réussi à activer ou désactiver le filtrage du conten
 
 1.  Exécutez la commande suivante :
     
-        Get-ContentFilterConfig | Format-List ExternalMailEnabled
+    ```powershell
+Get-ContentFilterConfig | Format-List ExternalMailEnabled
+```
 
 2.  Vérifiez la valeur de la propriété *ExternalMailEnabled* affichée.
 
@@ -89,11 +101,15 @@ Il est conseillé de ne pas filtrer les messages provenant de partenaires approu
 
 Pour activer le filtrage du contenu dans les messages internes, exécutez la commande suivante :
 
-    Set-ContentFilterConfig -InternalMailEnabled $true
+```powershell
+Set-ContentFilterConfig -InternalMailEnabled $true
+```
 
 Pour désactiver le filtrage du contenu dans les messages internes, exécutez la commande suivante :
 
-    Set-ContentFilterConfig -InternalMailEnabled $false
+```powershell
+Set-ContentFilterConfig -InternalMailEnabled $false
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -101,7 +117,9 @@ Pour savoir si vous avez réussi à activer ou désactiver le filtrage du conten
 
 1.  Exécutez la commande suivante :
     
-        Get-ContentFilterConfig | Format-List InternalMailEnabled
+    ```powershell
+Get-ContentFilterConfig | Format-List InternalMailEnabled
+```
 
 2.  Vérifiez la valeur de la propriété *InternalMailEnabled* affichée.
 
@@ -159,19 +177,27 @@ Pour ajouter des expressions et des mots autorisés et bloqués, exécutez la co
 
 Dans cet exemple, tous les messages contenant l’expression « customer feedback » sont autorisés.
 
-    Add-ContentFilterPhrase -Influence GoodWord -Phrase "customer feedback"
+```powershell
+Add-ContentFilterPhrase -Influence GoodWord -Phrase "customer feedback"
+```
 
 Dans cet exemple, tous les messages contenant l’expression « stock tip » sont bloqués.
 
-    Add-ContentFilterPhrase -Influence BadWord -Phrase "stock tip"
+```powershell
+Add-ContentFilterPhrase -Influence BadWord -Phrase "stock tip"
+```
 
 Pour supprimer les expressions autorisées ou bloquées, exécutez la commande suivante :
 
-    Remove-ContentFilterPhrase -Phrase <Phrase>
+```powershell
+Remove-ContentFilterPhrase -Phrase <Phrase>
+```
 
 Dans cet exemple, l’expression « stock tip » est supprimée :
 
-    Remove-ContentFilterPhrase -Phrase "stock tip"
+```powershell
+Remove-ContentFilterPhrase -Phrase "stock tip"
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -179,7 +205,9 @@ Pour savoir si vous avez réussi à configurer les expressions autorisées et bl
 
 1.  Exécutez la commande suivante :
     
-        Get-ContentFilterPhrase | Format-List Influence,Phrase
+    ```powershell
+Get-ContentFilterPhrase | Format-List Influence,Phrase
+```
 
 2.  Vérifiez si les valeurs affichées correspondent aux paramètres spécifiés.
 
@@ -221,7 +249,9 @@ Lorsque l’action de rejet est activée, vous pouvez personnaliser la réponse 
 
 Pour configurer une réponse de rejet personnalisée, exécutez la commande suivante :
 
-    Set-ContentFilterConfig -RejectionResponse "<Custom Text>"
+```powershell
+Set-ContentFilterConfig -RejectionResponse "<Custom Text>"
+```
 
 L’exemple suivant permet de configurer l’agent de filtrage du contenu afin qu’il envoie une réponse de rejet personnalisée.
 
@@ -243,11 +273,15 @@ La validation du *cachet électronique Outlook* est une preuve de calcul que Mic
 
 Pour désactiver le cachet électronique Outlook, exécutez la commande suivante :
 
-    Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $false
+```powershell
+Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $false
+```
 
 Pour activer le cachet électronique Outlook, exécutez la commande suivante :
 
-    Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $true
+```powershell
+Set-ContentFilterConfig -OutlookEmailPostmarkValidationEnabled $true
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -255,7 +289,9 @@ Pour savoir si vous avez réussi à configurer le cachet électronique Outlook, 
 
 1.  Exécutez la commande suivante :
     
-        Get-ContentFilterConfig | Format-List OutlookEmailPostmarkValidationEnabled
+    ```powershell
+Get-ContentFilterConfig | Format-List OutlookEmailPostmarkValidationEnabled
+```
 
 2.  Vérifiez si la valeur affichée correspond au paramètre spécifié.
 

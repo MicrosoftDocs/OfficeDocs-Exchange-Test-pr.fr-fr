@@ -39,11 +39,15 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives à la journali
 
 Cet exemple illustre la désactivation de la journalisation des messages vocaux et des notifications d’appel en absence via le réglage du paramètre *VoicemailJournalingEnabled* sur la valeur `$false`.
 
-    Set-TransportConfig -VoicemailJournalingEnabled $false
+```powershell
+Set-TransportConfig -VoicemailJournalingEnabled $false
+```
 
 Cet exemple illustre l’activation de la journalisation des messages vocaux et des notifications d’appel en absence via le réglage du même paramètre sur `$true`.
 
-    Set-TransportConfig -VoicemailJournalingEnabled $true
+```powershell
+Set-TransportConfig -VoicemailJournalingEnabled $true
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-TransportConfig](https://technet.microsoft.com/fr-fr/library/bb124151\(v=exchg.150\)).
 

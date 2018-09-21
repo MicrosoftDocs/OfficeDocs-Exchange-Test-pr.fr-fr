@@ -51,11 +51,15 @@ l’entrée Des autorisations doivent vous être attribuées avant de pouvoir ex
 
 Cet exemple effectue un basculement de serveur pour le serveur MBX1. Le système sélectionne automatiquement le serveur de boîtes aux lettres le mieux adapté à chaque base de données active sur MBX1.
 
-    Move-ActiveMailboxDatabase -Server MBX1
+```powershell
+Move-ActiveMailboxDatabase -Server MBX1
+```
 
 Cet exemple effectue un basculement de serveur pour le serveur de boîtes aux lettres MBX4. Une fois la commande exécutée, MBX5 héberge la copie active des bases de données précédemment actives sur MBX4.
 
-    Move-ActiveMailboxDatabase -Server MBX4 -ActivateOnServer MBX5
+```powershell
+Move-ActiveMailboxDatabase -Server MBX4 -ActivateOnServer MBX5
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Move-ActiveMailboxDatabase](https://technet.microsoft.com/fr-fr/library/dd298068\(v=exchg.150\)).
 

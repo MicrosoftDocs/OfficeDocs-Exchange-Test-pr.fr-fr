@@ -71,7 +71,9 @@ Vous pouvez cesser l'application d'une stratégie de rétention à une boîte au
 
 Cet exemple d'environnement de ligne de commande montre comment supprimer la stratégie de rétention de la boîte aux lettres jpeoples.
 
-    Set-Mailbox jpeoples -RetentionPolicy $null.
+```powershell
+Set-Mailbox jpeoples -RetentionPolicy $null.
+```
 
 Cet exemple d'environnement de ligne de commande illustre la suppression de la stratégie de rétention de toutes les boîtes aux lettres de l'organisation Exchange.
 
@@ -109,7 +111,9 @@ Cet exemple supprime toutes les balises de rétention à l'exception de la balis
 
 Cette commande supprime la stratégie de rétention Corp-Users d'une organisation Exchange.
 
-    Remove-RetentionPolicy Corp-Users
+```powershell
+Remove-RetentionPolicy Corp-Users
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques suivantes :
 

@@ -117,7 +117,9 @@ Dans cet exemple, les valeurs suivantes sont utilisées :
 
 8.  Tapez **DATA**, puis appuyez sur Entrée. Vous recevez une réponse similaire à ce qui suit :
     
-        354 Start mail input; end with <CLRF>.<CLRF>
+    ```powershell
+354 Start mail input; end with <CLRF>.<CLRF>
+```
 
 9.  Tapez **Subject: Test depuis Contoso**, puis appuyez sur ENTRÉE.
 
@@ -127,11 +129,15 @@ Dans cet exemple, les valeurs suivantes sont utilisées :
 
 12. Appuyez sur Entrée, tapez un point ( **.** ), puis appuyez sur Entrée. Vous recevez une réponse similaire à ce qui suit :
     
-        250 2.6.0 <GUID> Queued mail for delivery
+    ```powershell
+250 2.6.0 <GUID> Queued mail for delivery
+```
 
 13. Pour vous déconnecter du serveur SMTP de destination, tapez **QUIT**, puis appuyez sur Entrée. Vous recevez une réponse similaire à ce qui suit :
     
-        221 2.0.0 Service closing transmission channel
+    ```powershell
+221 2.0.0 Service closing transmission channel
+```
 
 14. Pour fermer la session Telnet, tapez **quit**, puis appuyez sur Entrée.
 

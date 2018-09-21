@@ -81,7 +81,9 @@ Lorsque vous êtes prêt, effectuez les opérations suivantes pour étendre votr
 
 3.  Exécutez la commande suivante pour étendre le schéma :
     
-        Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+    ```powershell
+Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+```
 
 Une fois l’extension du schéma terminée, vous devez attendre que Active Directory réplique les modifications apportées à l’ensemble de vos contrôleurs de domaine. Si vous souhaitez vérifier l’état de la réplication, vous pouvez utiliser l’outil `repadmin`. `Repadmin` qui est inclus dans le cadre de la fonction des Outils de service de domaine Active Directory dans Windows Server 2012 R2, Windows Server 2012 et Windows Server 2008 R2. Pour plus d’informations sur son utilisation, consultez la rubrique [Repadmin](https://go.microsoft.com/fwlink/p/?linkid=257879).
 
@@ -143,7 +145,9 @@ Lorsque vous êtes prêt, procédez comme suit pour préparer tous les domaines 
 
 2.  Exécutez la commande suivante :
     
-        Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+    ```powershell
+Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+```
 
 ## Me laisser choisir les domaines Active Directory que je souhaite préparer
 

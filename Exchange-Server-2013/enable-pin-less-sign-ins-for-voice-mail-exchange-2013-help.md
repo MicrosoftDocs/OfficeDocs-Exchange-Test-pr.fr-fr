@@ -63,11 +63,15 @@ Pour d'autres tâches relatives aux boîtes aux lettres de messagerie unifiée, 
 
 Cet exemple illustre l'activation de l'accès sans code confidentiel à la messagerie vocale, dans une stratégie de boîte aux lettres de messagerie unifiée appelée `MyUMMailboxPolicy`, pour les utilisateurs associés à la stratégie de boîte aux lettres qui se connectent (par appel) à Outlook Voice Access.
 
-    Set-UMMailboxPolicy -id MyUMMailboxPolicy -AllowPinlessVoiceMailAccess $true
+```powershell
+Set-UMMailboxPolicy -id MyUMMailboxPolicy -AllowPinlessVoiceMailAccess $true
+```
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour activer l'accès sans code confidentiel à la messagerie vocale sur la boîte aux lettres d'un utilisateur à extension messagerie unifiée
 
 Cet exemple illustre l'activation d'un accès sans code confidentiel à la messagerie vocale pour un utilisateur qui se connecte (par appel) à Outlook Voice Access pour atteindre la boîte aux lettres appelée `tonys@contoso.com`.
 
-    Set-UMMailbox -id tonys@contoso.com -PinlessAccessToVoiceMailEnabled $true
+```powershell
+Set-UMMailbox -id tonys@contoso.com -PinlessAccessToVoiceMailEnabled $true
+```
 
