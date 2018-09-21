@@ -21,7 +21,7 @@ Le Centre d’administration Exchange (EAC) et l’environnement de ligne de com
 
 Gardez à l'esprit que, dans une organisation Exchange, il existe d’autres paramètres qui permettent de déterminer la taille maximale de message qu’une boîte aux lettres peut envoyer et recevoir (par exemple, la taille maximale de message configurée sur un serveur de boîtes aux lettres). Pour en savoir plus sur les restrictions de taille de message dans Exchange, notamment les types de limites de tailles de messages, leur portée et l’ordre de priorité, voir [Tailles limites des messages](message-size-limits-exchange-2013-help.md).
 
-Pour connaître les tâches de gestion supplémentaires relatives aux boîtes aux utilisateur, consultez la rubrique [Gestion des boîtes aux lettres utilisateur](manage-user-mailboxes-exchange-2013-help.md).
+Pour connaître les tâches de gestion supplémentaires relatives aux boîtes aux utilisateur, consultez la rubrique [Gestion des boîtes aux lettres utilisateur](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
 
 > [!NOTE]
 > Vous pouvez également contrôler la taille des messages envoyés et reçus par des utilisateurs de messagerie et provenant de boîtes aux lettres partagées.

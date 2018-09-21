@@ -266,7 +266,7 @@ Pour faciliter la création de filtres des destinataires pour les groupes de dis
 
   - Conteneur de destinataires
 
-Vous pouvez également spécifier des conditions en fonction de propriétés de destinataire autres que celles répertoriées précédemment. L'environnement de ligne de commande permet de créer une requête personnalisée pour le groupe de distribution dynamique. N’oubliez pas que les paramètres de filtre et de condition pour les groupes de distribution dynamiques dotés de filtres de destinataires personnalisés ne peuvent être gérés qu’à l’aide de l’environnement de ligne de commande Exchange Management Shell. Pour obtenir un exemple de création d'un groupe de distribution dynamique à l'aide d'une requête personnalisée, consultez la rubrique [Gérer des groupes de distribution dynamiques](manage-dynamic-distribution-groups-exchange-2013-help.md).
+Vous pouvez également spécifier des conditions en fonction de propriétés de destinataire autres que celles répertoriées précédemment. L'environnement de ligne de commande permet de créer une requête personnalisée pour le groupe de distribution dynamique. N’oubliez pas que les paramètres de filtre et de condition pour les groupes de distribution dynamiques dotés de filtres de destinataires personnalisés ne peuvent être gérés qu’à l’aide de l’environnement de ligne de commande Exchange Management Shell. Pour obtenir un exemple de création d'un groupe de distribution dynamique à l'aide d'une requête personnalisée, consultez la rubrique [Gérer des groupes de distribution dynamiques](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups).
 
 ## Contacts de messagerie
 
@@ -326,7 +326,7 @@ Le tableau suivant contient des liens vers des rubriques qui vous aideront à d�
 <td><p>Apprendre à créer des boîtes aux lettres d’utilisateur à l’aide du centre d’administration Exchange ou de l’environnement de ligne de commande Exchange Management Shell.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-user-mailboxes-exchange-2013-help.md">Gestion des boîtes aux lettres utilisateur</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes">Gestion des boîtes aux lettres utilisateur</a></p></td>
 <td><p>Apprendre à créer des boîtes aux lettres utilisateur, modifier les propriétés de boîte aux lettres et modifier en bloc des propriétés sélectionnées pour plusieurs boîtes aux lettres.</p></td>
 </tr>
 <tr class="odd">
@@ -334,31 +334,31 @@ Le tableau suivant contient des liens vers des rubriques qui vous aideront à d�
 <td><p>Découvrir les exigences des boîtes aux lettres liées, comment créer et lier ces dernières à un compte principal et changer les propriétés des boîtes aux lettres liées.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="create-and-manage-distribution-groups-exchange-2013-help.md">Création et gestion de groupes de distribution</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups">Création et gestion de groupes de distribution</a></p></td>
 <td><p>Apprendre à créer et gérer des groupes de distribution et créer une stratégie de noms de groupes pour votre organisation.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="manage-mail-enabled-security-groups-exchange-2013-help.md">Gérer les groupes de sécurité à extension de messagerie</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups">Gérer les groupes de sécurité à extension de messagerie</a></p></td>
 <td><p>Apprendre à créer et gérer des groupes de sécurité à extension messagerie.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-dynamic-distribution-groups-exchange-2013-help.md">Gérer des groupes de distribution dynamiques</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups">Gérer des groupes de distribution dynamiques</a></p></td>
 <td><p>Apprendre à créer des groupes de distribution dynamique et gérer des propriétés de groupe de distribution dynamique, par exemple, à l’aide d’attributs personnalisés et autres propriétés pour déterminer l’appartenance au groupe.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="manage-mail-contacts-exchange-2013-help.md">Gérer les contacts de messagerie</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-mail-contacts">Gérer les contacts de messagerie</a></p></td>
 <td><p>Apprendre à créer et gérer des contacts de messagerie.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-mail-users-exchange-2013-help.md">Gérer les utilisateurs de messagerie</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-mail-users">Gérer les utilisateurs de messagerie</a></p></td>
 <td><p>Apprendre à créer et gérer des utilisateurs de messagerie.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="create-and-manage-room-mailboxes-exchange-2013-help.md">Créer et gérer des boîtes aux lettres de salle</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-room-mailboxes">Créer et gérer des boîtes aux lettres de salle</a></p></td>
 <td><p>Apprendre à créer des boîtes aux lettres de salle et gérer des propriétés de boîte aux lettres de salle, comme l’activation des réunions périodiques et la configuration des options de planification et de réservation.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-equipment-mailboxes-exchange-2013-help.md">Gérer les boîtes aux lettres d’équipement</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-equipment-mailboxes">Gérer les boîtes aux lettres d’équipement</a></p></td>
 <td><p>Apprendre à créer des boîtes aux lettres d’équipement, configurer les options de planification et de réservation, et gérer d’autres propriétés de boîte aux lettres.</p></td>
 </tr>
 <tr class="odd">
@@ -374,7 +374,7 @@ Le tableau suivant contient des liens vers des rubriques qui vous aideront à d�
 <td><p>Apprendre à utiliser des filtres prédéfinis ou personnalisés avec des commandes pour filtrer un ensemble de destinataires.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-permissions-for-recipients-exchange-online-help.md">Gestion des autorisations des destinataires</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Gestion des autorisations des destinataires</a></p></td>
 <td><p>Apprendre à utiliser le CAE ou l’environnement de ligne de commande pour attribuer des autorisations aux utilisateurs et aux groupes.</p></td>
 </tr>
 <tr class="odd">

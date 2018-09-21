@@ -105,7 +105,7 @@ Vous pouvez également créer des boîtes aux lettres utilisateur pour les utili
         
         Pour plus d'informations, consultez la rubrique [Archivage inaltérable dans Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md).
     
-      - **Stratégie de carnet d'adresses**   Cette option permet de spécifier une stratégie de carnet d'adresses pour la boîte aux lettres. Les stratégies de carnet d'adresses contiennent une liste d'adresses globale (LAG), un carnet d'adresses en mode hors connexion, une liste de salles et un ensemble de listes d'adresses. Quand elle est appliquée à des utilisateurs de boîtes aux lettres, une stratégie de carnet d'adresses leur fournit l'accès à une liste d'adresses globale personnalisée dans Outlook et Outlook Web App. Pour plus d'informations, consultez la rubrique [Stratégies de carnet d’adresses](address-book-policies-exchange-2013-help.md).
+      - **Stratégie de carnet d'adresses**   Cette option permet de spécifier une stratégie de carnet d'adresses pour la boîte aux lettres. Les stratégies de carnet d'adresses contiennent une liste d'adresses globale (LAG), un carnet d'adresses en mode hors connexion, une liste de salles et un ensemble de listes d'adresses. Quand elle est appliquée à des utilisateurs de boîtes aux lettres, une stratégie de carnet d'adresses leur fournit l'accès à une liste d'adresses globale personnalisée dans Outlook et Outlook Web App. Pour plus d'informations, consultez la rubrique [Stratégies de carnet d’adresses](https://docs.microsoft.com/fr-fr/exchange/address-books/address-book-policies/address-book-policies).
         
         Dans la liste déroulante, sélectionnez la stratégie à associer à cette boîte aux lettres.
 
@@ -179,7 +179,7 @@ Vous pouvez également créer des boîtes aux lettres utilisateur pour les utili
         
         Pour plus d'informations, consultez la rubrique [Archivage inaltérable dans Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md).
     
-      - **Stratégie de carnet d'adresses**   Cette option permet de spécifier une stratégie de carnet d'adresses pour la boîte aux lettres. Les stratégies de carnet d'adresses contiennent une liste d'adresses globale (LAG), un carnet d'adresses en mode hors connexion, une liste de salles et un ensemble de listes d'adresses. Quand elle est appliquée à des utilisateurs de boîtes aux lettres, une stratégie de carnet d'adresses leur fournit l'accès à une liste d'adresses globale personnalisée dans Outlook et Outlook Web App. Pour plus d'informations, consultez la rubrique [Stratégies de carnet d’adresses](address-book-policies-exchange-2013-help.md).
+      - **Stratégie de carnet d'adresses**   Cette option permet de spécifier une stratégie de carnet d'adresses pour la boîte aux lettres. Les stratégies de carnet d'adresses contiennent une liste d'adresses globale (LAG), un carnet d'adresses en mode hors connexion, une liste de salles et un ensemble de listes d'adresses. Quand elle est appliquée à des utilisateurs de boîtes aux lettres, une stratégie de carnet d'adresses leur fournit l'accès à une liste d'adresses globale personnalisée dans Outlook et Outlook Web App. Pour plus d'informations, consultez la rubrique [Stratégies de carnet d’adresses](https://docs.microsoft.com/fr-fr/exchange/address-books/address-book-policies/address-book-policies).
         
         Dans la liste déroulante, sélectionnez la stratégie à associer à cette boîte aux lettres.
 

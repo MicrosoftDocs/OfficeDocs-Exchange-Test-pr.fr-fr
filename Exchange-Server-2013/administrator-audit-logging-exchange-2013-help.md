@@ -141,11 +141,11 @@ Chaque entrée de journal d'audit contient les informations décrites dans le ta
 </tr>
 <tr class="even">
 <td><p><code>CmdletParameters</code></p></td>
-<td><p>Ce champ contient les paramètres spécifiés lorsque la cmdlet dans le champ <code>CmdletName</code> a été exécutée. La valeur spécifiée avec le paramètre est également stockée dans ce champ, mais invisible dans la sortie par défaut, le cas échéant. Pour plus d'informations sur l'accès aux informations supplémentaires dans ce champ, consultez la rubrique <a href="search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md">Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur</a>.</p></td>
+<td><p>Ce champ contient les paramètres spécifiés lorsque la cmdlet dans le champ <code>CmdletName</code> a été exécutée. La valeur spécifiée avec le paramètre est également stockée dans ce champ, mais invisible dans la sortie par défaut, le cas échéant. Pour plus d'informations sur l'accès aux informations supplémentaires dans ce champ, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes">Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><code>ModifiedProperties</code></p></td>
-<td><p>Ce champ contient les propriétés modifiées sur l'objet dans le champ <code>ObjectModified</code>. L'ancienne valeur de la propriété et la nouvelle valeur stockée sont également stockées dans ce champ, mais sont invisibles dans la sortie par défaut. Pour plus d'informations sur l'accès aux informations supplémentaires dans ce champ, consultez la rubrique <a href="search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md">Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur</a>.</p>
+<td><p>Ce champ contient les propriétés modifiées sur l'objet dans le champ <code>ObjectModified</code>. L'ancienne valeur de la propriété et la nouvelle valeur stockée sont également stockées dans ce champ, mais sont invisibles dans la sortie par défaut. Pour plus d'informations sur l'accès aux informations supplémentaires dans ce champ, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes">Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur</a>.</p>
 
 > [!IMPORTANT]  
 > Ce champ est uniquement renseigné si le paramètre <em>LogLevel</em> de la cmdlet <strong>Set-AdminAuditLogConfig</strong> est défini sur <code>Verbose</code>.
@@ -198,9 +198,9 @@ La page **Audit** du CAE contient plusieurs rapports qui fournissent des informa
 
   - **Journal d'audit de l'administrateur**   Ce rapport vous permet d'exporter les entrées de journal d'audit enregistrées au cours d'une période spécifiée vers un fichier XML, puis d'envoyer ce dernier par courrier électronique à un destinataire donné. Pour plus d'informations sur le contenu du fichier XML, consultez la rubrique [Structure du journal d’audit de l’administrateur](administrator-audit-log-structure-exchange-2013-help.md).
 
-Pour plus d'informations sur l'utilisation de ces rapports, consultez la rubrique [Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md).
+Pour plus d'informations sur l'utilisation de ces rapports, consultez la rubrique [Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes).
 
-Pour plus d'informations sur les autres rapports inclus dans la page **Audit**, consultez la rubrique [Rapports d’audit Exchange](exchange-auditing-reports-exchange-2013-help.md).
+Pour plus d'informations sur les autres rapports inclus dans la page **Audit**, consultez la rubrique [Rapports d’audit Exchange](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports).
 
 ## Cmdlet Search-AdminAuditLog
 
@@ -222,7 +222,7 @@ Lorsque vous exécutez la cmdlet **Search-AdminAuditLog**, toutes les entrées d
 
 Chaque entrée de journal d'audit renvoyée contient les informations décrites dans le tableau dans Audit Log Contents. Par défaut, seules les 1 000 premières entrées de journal qui correspondent aux critères que vous spécifiez sont renvoyées. Cependant, vous pouvez annuler cette valeur par défaut et renvoyer plus ou moins d'entrées à l'aide du paramètre *ResultSize*. Vous pouvez spécifier une valeur de `Unlimited` avec le paramètre *ResultSize* pour renvoyer toutes les entrées de journal correspondant aux critères spécifiés.
 
-Pour obtenir des informations sur l'utilisation de la cmdlet **Search-AdminAuditLog**, consultez la rubrique [Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md).
+Pour obtenir des informations sur l'utilisation de la cmdlet **Search-AdminAuditLog**, consultez la rubrique [Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes).
 
 ## Cmdlet New-AdminAuditLogSearch
 
@@ -236,7 +236,7 @@ Après exécution de la cmdlet **New-AdminAuditLogSearch**, Exchange peut prend
 > Outlook Web App ne vous permet pas d’ouvrir des pièces jointes au format XML par défaut. Vous pouvez soit configurer Exchange de façon à autoriser l’affichage des pièces jointes au format XML à l’aide d’Outlook Web App, soit utiliser un autre client de messagerie électronique, tel que Microsoft Outlook, de façon à afficher la pièce jointe. Pour plus d’informations sur la configuration d’Outlook Web App afin de permettre l’affichage d’une pièce jointe au format XML, consultez la rubrique <a href="view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md">Affichage ou configuration des répertoires virtuels d’Outlook Web App</a>.
 
 
-Pour des informations sur l'utilisation de la cmdlet **New-AdminAuditLogSearch**, consultez la rubrique [Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md).
+Pour des informations sur l'utilisation de la cmdlet **New-AdminAuditLogSearch**, consultez la rubrique [Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes).
 
 Retour au début
 
@@ -254,7 +254,7 @@ En plus d'enregistrer les cmdlets Exchange lorsqu'elles sont exécutées, Exchan
 
 Vous pouvez extraire les entrées de journal d'audit manuelles de la même manière que n'importe quelle autre entrée à l'aide de la page **Audit** du Centre d'administration Exchange ou de la cmdlet **Search-AdminAuditLog** ou **New-AdminAuditLogSearch**.
 
-Pour afficher le contenu du paramètre *Comment* sur la cmdlet **Write-AdminAuditLog** dans une entrée de journal d'audit manuelle, consultez la rubrique [Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md).
+Pour afficher le contenu du paramètre *Comment* sur la cmdlet **Write-AdminAuditLog** dans une entrée de journal d'audit manuelle, consultez la rubrique [Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes).
 
 ## Réplication Active Directory
 

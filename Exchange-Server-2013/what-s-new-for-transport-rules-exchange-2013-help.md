@@ -23,9 +23,9 @@ Dans Microsoft Exchange Server 2013, plusieurs améliorations ont été apport�
 
 Dans Exchange 2013, les fonctionnalités DLP peuvent aider les organisations à ne plus divulguer accidentellement de données sensibles. Les règles de transport ont été mises à jour pour prendre en charge la création de règles qui accompagnent et mettent en œuvre les stratégies DLP. Pour en savoir plus sur la prise en charge DLP dans les règles de transport, consultez les rubriques suivantes :
 
-[Intégration des règles d'informations sensibles aux règles de transport](integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md)
+[Intégration des règles d'informations sensibles aux règles de transport](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)
 
-[Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[Protection contre la perte de données](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 ## Nouveaux prédicats et actions
 

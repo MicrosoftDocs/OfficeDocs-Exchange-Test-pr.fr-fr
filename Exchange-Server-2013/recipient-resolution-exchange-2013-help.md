@@ -102,7 +102,7 @@ Le tableau suivant décrit les objets destinataires trouvés dans Active Directo
 </tr>
 <tr class="even">
 <td><p>DynamicDistributionGroup</p></td>
-<td><p>Objet ayant la classe Active Directory <strong>msExchDynamicDistributionList</strong>. Pour plus d'informations, consultez la rubrique <a href="manage-dynamic-distribution-groups-exchange-2013-help.md">Gérer des groupes de distribution dynamiques</a>.</p></td>
+<td><p>Objet ayant la classe Active Directory <strong>msExchDynamicDistributionList</strong>. Pour plus d'informations, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups">Gérer des groupes de distribution dynamiques</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Mailbox</p></td>
@@ -110,11 +110,11 @@ Le tableau suivant décrit les objets destinataires trouvés dans Active Directo
 </tr>
 <tr class="even">
 <td><p>MailUser</p></td>
-<td><p>Objet utilisateur ayant une adresse de messagerie sans paramètre <em>Database</em> défini. Pour plus d'informations, consultez la rubrique <a href="manage-mail-users-exchange-2013-help.md">Gérer les utilisateurs de messagerie</a>.</p></td>
+<td><p>Objet utilisateur ayant une adresse de messagerie sans paramètre <em>Database</em> défini. Pour plus d'informations, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-mail-users">Gérer les utilisateurs de messagerie</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>MailContact</p></td>
-<td><p>Objet contact ayant une adresse de messagerie. Généralement, un contact de messagerie est utilisé pour des destinataires situés à l'extérieur de l'organisation Exchange. Un contact de messagerie est également utilisé dans des environnements Exchange inter-forêts. Pour plus d'informations, consultez la rubrique <a href="manage-mail-contacts-exchange-2013-help.md">Gérer les contacts de messagerie</a>.</p></td>
+<td><p>Objet contact ayant une adresse de messagerie. Généralement, un contact de messagerie est utilisé pour des destinataires situés à l'extérieur de l'organisation Exchange. Un contact de messagerie est également utilisé dans des environnements Exchange inter-forêts. Pour plus d'informations, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-mail-contacts">Gérer les contacts de messagerie</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>MailPublicFolder</p></td>

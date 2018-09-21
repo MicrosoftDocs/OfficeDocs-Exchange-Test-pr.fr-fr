@@ -23,23 +23,23 @@ Cet article décrit les composants des règles de flux de messagerie et leur fon
 
 Pour plus d’informations sur les règles de flux de messagerie dans Exchange Online, consultez la rubrique [Règles de flux de messagerie (règles de transport) dans Exchange Online](https://technet.microsoft.com/fr-fr/library/jj919238\(v=exchg.150\)). Pour plus d’informations sur les règles de flux de messagerie dans Exchange Online Protection, consultez la rubrique [Règles de flux de messagerie (règles de transport) dans Exchange Online Protection](https://technet.microsoft.com/fr-fr/library/dn271424\(v=exchg.150\)).
 
-Vous pouvez utiliser le Centre d’administration Exchange (CAE) ou Environnement de ligne de commande Exchange Management Shell pour gérer les règles de flux de messagerie. Pour savoir comment gérer les règles de transport, reportez-vous à la rubrique [Gestion de règles de flux de messagerie](manage-mail-flow-rules-exchange-2013-help.md).
+Vous pouvez utiliser le Centre d’administration Exchange (CAE) ou Environnement de ligne de commande Exchange Management Shell pour gérer les règles de flux de messagerie. Pour savoir comment gérer les règles de transport, reportez-vous à la rubrique [Gestion de règles de flux de messagerie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
 
-Pour chaque règle, vous avez la possibilité de l’appliquer, de la tester ou bien de la tester et d’avertir l’expéditeur. Pour plus d’informations sur les options de test, voir [Tester une règle de flux de messagerie](test-a-mail-flow-rule-exchange-2013-help.md) et [Conseils de stratégie](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md).
+Pour chaque règle, vous avez la possibilité de l’appliquer, de la tester ou bien de la tester et d’avertir l’expéditeur. Pour plus d’informations sur les options de test, voir [Tester une règle de flux de messagerie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) et [Conseils de stratégie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/policy-tips).
 
 Pour mettre en œuvre des stratégies de messagerie spécifiques à l’aide de règles de flux de messagerie, consultez ces rubriques :
 
   - [Utiliser des règles de transport pour analyser les pièces jointes des messages](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md)
 
-  - [Scénarios courants de blocage de pièce jointe](common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md)
+  - [Scénarios courants de blocage de pièce jointe](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)
 
   - [Clauses d’exclusion de responsabilité, signatures, pieds de page ou en-têtes à l’échelle de l’organisation](organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md)
 
-  - [Utiliser des règles de flux de messagerie afin que les messages puissent contourner le courrier non trié](use-mail-flow-rules-so-messages-can-bypass-clutter-exchange-2013-help.md)
+  - [Utiliser des règles de flux de messagerie afin que les messages puissent contourner le courrier non trié](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/use-rules-to-bypass-clutter)
 
-  - [Utiliser des règles de flux de messagerie pour acheminer le courrier électronique en fonction d’une liste de mots, d’expressions ou de modèles](use-mail-flow-rules-to-route-email-based-on-a-list-of-words-phrases-or-patterns-exchange-2013-help.md)
+  - [Utiliser des règles de flux de messagerie pour acheminer le courrier électronique en fonction d’une liste de mots, d’expressions ou de modèles](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email)
 
-  - [Scénarios courants d’approbation des messages](common-message-approval-scenarios-exchange-2013-help.md)
+  - [Scénarios courants d’approbation des messages](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios)
 
 ## Composants de règle de flux de messagerie
 
@@ -131,14 +131,14 @@ Le tableau suivant décrit les propriétés de règle qui sont disponibles dans 
 <td><p>Indique l’ordre dans lequel les règles sont appliquées aux messages. La priorité par défaut est définie en fonction de la date de création de la règle (les règles plus anciennes ont une priorité plus élevée que les règles plus récentes et les règles haute priorité sont traitées avant les règles basse priorité).</p>
 <p>Vous modifiez la priorité de la règle dans le CAE en la déplaçant vers le haut ou le bas de la liste des règles. Dans l’PowerShell, vous définissez le numéro de priorité (0 représente la priorité la plus élevée).</p>
 <p>Par exemple, si vous disposez d’une règle qui rejette les messages dans lesquels figure un numéro de carte de crédit et d’une autre règle qui exige une approbation, vous voudrez certainement que la règle de rejet soit appliquée en premier et que les autres règles ne s’appliquent pas.</p>
-<p>Pour plus d’informations, voir <a href="manage-mail-flow-rules-exchange-2013-help.md">Définir la priorité des règles de flux de messagerie</a>.</p></td>
+<p>Pour plus d’informations, voir <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules">Définir la priorité des règles de flux de messagerie</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Mode</strong></p></td>
 <td><p><em>Mode</em></p></td>
 <td><p>Vous pouvez spécifier si vous souhaitez que la règle commence immédiatement le traitement des messages ou si vous souhaitez tester les règles sans affecter la remise du message (avec ou sans prévention contre la perte de données ou conseils de stratégie DLP).</p>
-<p>Les conseils de stratégie affichent une courte note dans Outlook ou Outlook sur le web afin d’avertir une personne créant un message de possibles violations de stratégie. Pour plus d’informations, consultez la rubrique <a href="technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md">Conseils de stratégie</a>.</p>
-<p>Pour plus d’informations sur les modes, voir <a href="test-a-mail-flow-rule-exchange-2013-help.md">Tester une règle de flux de messagerie</a>.</p></td>
+<p>Les conseils de stratégie affichent une courte note dans Outlook ou Outlook sur le web afin d’avertir une personne créant un message de possibles violations de stratégie. Pour plus d’informations, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/policy-tips">Conseils de stratégie</a>.</p>
+<p>Pour plus d’informations sur les modes, voir <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules">Tester une règle de flux de messagerie</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Activer cette règle à la date suivante</strong></p>
@@ -259,7 +259,7 @@ Les règles de flux de messagerie que vous créez et configurez sur les serveurs
 
   - Chaque serveur de boîte aux lettres met en cache des groupes de distribution développés afin d’éviter de répéter les requêtes Active Directory pour déterminer l’appartenance d’un groupe. Par défaut, les entrées dans le cache de groupes développés expirent toutes les quatre heures. Par conséquent, les modifications apportées aux membres du groupe ne sont pas détectées par les règles de flux de messagerie tant que le cache des groupes développé n’est pas mis à jour. Pour forcer une mise à jour immédiate du cache sur un serveur de boîte aux lettres, redémarrez le service de transport Microsoft Exchange. Vous devez redémarrer le service sur chaque serveur de boîte aux lettres sur lequel vous souhaitez forcer la mise à jour du cache.
 
-Les règles de flux de messagerie que vous créez et configurez sur les serveurs de Transport Edge sont stockées dans l’instance locale d’AD LDS sur le serveur. Aucune réplication automatisée des règles de flux de messagerie ne se produit sur les serveurs de transport Edge. Les règles créées sur le serveur de transport Edge s’appliquent uniquement aux messages qui transitent par le serveur local. Si vous devez appliquer le même ensemble de règles de flux de messagerie sur plusieurs serveurs de transport Edge, vous pouvez cloner la configuration du serveur de transport Edge ou exporter et importer les règles de flux de messagerie. Pour plus d’informations, reportez-vous à [Configuration clonée de serveur de transport Edge](edge-transport-server-cloned-configuration-exchange-2013-help.md) et à [Importer ou exporter un regroupement de règles de flux de messagerie](manage-mail-flow-rules-exchange-2013-help.md).
+Les règles de flux de messagerie que vous créez et configurez sur les serveurs de Transport Edge sont stockées dans l’instance locale d’AD LDS sur le serveur. Aucune réplication automatisée des règles de flux de messagerie ne se produit sur les serveurs de transport Edge. Les règles créées sur le serveur de transport Edge s’appliquent uniquement aux messages qui transitent par le serveur local. Si vous devez appliquer le même ensemble de règles de flux de messagerie sur plusieurs serveurs de transport Edge, vous pouvez cloner la configuration du serveur de transport Edge ou exporter et importer les règles de flux de messagerie. Pour plus d’informations, reportez-vous à [Configuration clonée de serveur de transport Edge](edge-transport-server-cloned-configuration-exchange-2013-help.md) et à [Importer ou exporter un regroupement de règles de flux de messagerie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
 
 Chaque fois que le service de transport d’un serveur de boîte aux lettres ou d’un serveur de transport Edge détecte une règle de flux de messagerie modifiée, un événement est enregistré dans le journal d’application dans l’observateur d’événements (ID d’événement 4002 sur des serveurs de boîte aux lettres et ID d’événement 16028 sur les serveurs de transport Edge).
 
@@ -285,7 +285,7 @@ Il existe deux scénarios communs d’environnement mixte dans Exchange 2013 :
 
 ## Pour plus d'informations
 
-[Gestion de règles de flux de messagerie](manage-mail-flow-rules-exchange-2013-help.md)
+[Gestion de règles de flux de messagerie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
 
 [Conditions de règles de transport (prédicats)](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)
 

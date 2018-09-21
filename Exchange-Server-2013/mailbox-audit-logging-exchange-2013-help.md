@@ -29,7 +29,7 @@ Les journaux d’audit des boîtes aux lettres sont générés pour chaque boît
 
 Par défaut, les entrées du journal d’audit des boîtes aux lettres sont conservées pendant 90 jours dans la boîte aux lettres, puis supprimées. Vous pouvez modifier cette période de rétention en utilisant le paramètre *AuditLogAgeLimit* avec la cmdlet [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)). Si une boîte aux lettres est en conservation inaltérable ou en conservation pour litige, les entrées du journal d’audit sont seulement conservées jusqu’à la fin de la période de rétention de journal d’audit de la boîte aux lettres. Pour conserver les entrées du journal d’audit plus longtemps, vous devez augmenter la période de rétention en modifiant la valeur du paramètre *AuditLogAgeLimit*. Vous pouvez également exporter les entrées du journal d’audit avant la fin de la période de rétention. Pour plus d'informations, consultez les rubriques suivantes :
 
-  - [Exporter les journaux d’audit de boîte aux lettres](export-mailbox-audit-logs-exchange-2013-help.md)
+  - [Exporter les journaux d’audit de boîte aux lettres](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 
   - [Créer une recherche dans le journal d’audit de la boîte aux lettres](create-a-mailbox-audit-log-search-exchange-2013-help.md)
 
@@ -159,9 +159,9 @@ Vous pouvez faire appel aux méthodes suivantes pour effectuer une recherche dan
 
   - **Utiliser des rapports d’audit dans le Centre d’administration Exchange (CAE)**   Vous pouvez utiliser l’onglet **Audit** du CAE pour exécuter un rapport d’accès non propriétaire à la boîte aux lettres ou pour exporter les entrées du journal d’audit de la boîte aux lettres. Pour obtenir des informations détaillées, voir :
     
-      - [Exécuter un rapport d’accès aux boîtes aux lettres par des non-propriétaires](run-a-non-owner-mailbox-access-report-exchange-online-help.md)
+      - [Exécuter un rapport d’accès aux boîtes aux lettres par des non-propriétaires](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
     
-      - [Exporter les journaux d’audit de boîte aux lettres](export-mailbox-audit-logs-exchange-2013-help.md)
+      - [Exporter les journaux d’audit de boîte aux lettres](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 
 ## Entrées de journal d’audit de boîte aux lettres
 
@@ -336,7 +336,7 @@ Le tableau suivant décrit les champs enregistrés dans une entrée de journal d
 
   - **Accès administrateur aux boîtes aux lettres**   On considère qu’un administrateur peut accéder à une boîte aux lettres uniquement dans les situations suivantes :
     
-      - La [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md) est utilisée pour effectuer une recherche dans une boîte aux lettres.
+      - La [Découverte électronique locale](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) est utilisée pour effectuer une recherche dans une boîte aux lettres.
     
       - La cmdlet [New-MailboxExportRequest](https://technet.microsoft.com/fr-fr/library/ff607299\(v=exchg.150\)) est utilisée pour exporter une boîte aux lettres.
     

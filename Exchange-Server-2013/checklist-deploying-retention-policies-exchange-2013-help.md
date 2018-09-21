@@ -19,9 +19,9 @@ _**Dernière rubrique modifiée :** 2016-12-09_
 
 Utilisez cette liste de vérification pour déployer des stratégies de rétention dans votre organisation Microsoft Exchange Server 2013. Avant de commencer avec cette liste de vérification, assurez-vous d’avoir bien assimilé les concepts présentés dans les rubriques suivantes :
 
-  - [Gestion des enregistrements de messagerie](messaging-records-management-exchange-2013-help.md)
+  - [Gestion des enregistrements de messagerie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
 
-  - [Balises et stratégies de rétention](retention-tags-and-retention-policies-exchange-2013-help.md)
+  - [Balises et stratégies de rétention](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
 
 ## Liste de vérification pour le déploiement de stratégies de rétention
 
@@ -43,7 +43,7 @@ Utilisez cette liste de vérification pour déployer des stratégies de rétenti
 <tr class="odd">
 <td><p> </p></td>
 <td><p>Évaluer les exigences relatives à la gestion des enregistrements de messagerie (MRM) pour différents groupes d’utilisateurs.</p></td>
-<td><p><a href="messaging-records-management-exchange-2013-help.md">Gestion des enregistrements de messagerie</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/messaging-records-management">Gestion des enregistrements de messagerie</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>
@@ -53,27 +53,27 @@ Utilisez cette liste de vérification pour déployer des stratégies de rétenti
 <tr class="odd">
 <td><p> </p></td>
 <td><p>Créer des balises de rétention.</p></td>
-<td><p><a href="create-a-retention-policy-exchange-2013-help.md">Créer une stratégie de rétention</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">Créer une stratégie de rétention</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>Créer des stratégies de rétention.</p></td>
-<td><p><a href="create-a-retention-policy-exchange-2013-help.md">Créer une stratégie de rétention</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">Créer une stratégie de rétention</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
 <td><p>Ajouter des balises de rétention aux stratégies de rétention.</p></td>
-<td><p><a href="add-retention-tags-to-or-remove-retention-tags-from-a-retention-policy-exchange-2013-help.md">Ajouter ou supprimer des balises de rétention à partir d’une stratégie de rétention</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/add-or-remove-retention-tags">Ajouter ou supprimer des balises de rétention à partir d’une stratégie de rétention</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>Activer le blocage de rétention des boîtes aux lettres.</p></td>
-<td><p><a href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">Placer une boîte aux lettres en blocage de rétention</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold">Placer une boîte aux lettres en blocage de rétention</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
 <td><p>Appliquer une stratégie de rétention à une seule boîte aux lettres aux fins de test.</p></td>
-<td><p><a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">Appliquer une stratégie de rétention aux boîtes aux lettres</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">Appliquer une stratégie de rétention aux boîtes aux lettres</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>
@@ -88,7 +88,7 @@ Utilisez cette liste de vérification pour déployer des stratégies de rétenti
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>Appliquer la stratégie de rétention aux boîtes aux lettres supplémentaires.</p></td>
-<td><p><a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">Appliquer une stratégie de rétention aux boîtes aux lettres</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">Appliquer une stratégie de rétention aux boîtes aux lettres</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
@@ -98,7 +98,7 @@ Utilisez cette liste de vérification pour déployer des stratégies de rétenti
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>À la date d’échéance, désactiver le blocage de rétention des boîtes aux lettres.</p></td>
-<td><p><a href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">Placer une boîte aux lettres en blocage de rétention</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold">Placer une boîte aux lettres en blocage de rétention</a></p></td>
 </tr>
 </tbody>
 </table>

@@ -27,7 +27,7 @@ Pour plus d'informations, consultez les rubriques suivantes :
 
   - [Dossier Éléments récupérables](recoverable-items-folder-exchange-2013-help.md)
 
-  - [Conservation inaltérable et conservation pour litige](in-place-hold-and-litigation-hold-exchange-2013-help.md)
+  - [Conservation inaltérable et conservation pour litige](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-and-litigation-holds)
 
 ## Ce qu'il faut savoir avant de commencer
 

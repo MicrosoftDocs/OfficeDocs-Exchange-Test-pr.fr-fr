@@ -27,7 +27,7 @@ Les quotas de stockage vous permettent de contrôler la taille des boîtes aux l
 
 Des quotas de stockage sont généralement configurés pour chaque base de données. Autrement dit, les quotas configurés pour une base de données de boîtes aux lettres s’appliquent à toutes les boîtes aux lettres de cette base de données. Pour plus d’informations sur la gestion des paramètres de boîtes aux lettres pour chaque base de données, consultez la rubrique [Gestion des bases de données de boîtes aux lettres dans Exchange 2013](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md).
 
-Cette rubrique vous explique comment personnaliser les paramètres de stockage d’une boîte aux lettres spécifique au lieu d’utiliser les paramètres de stockage de la base de données de boîtes aux lettres. Pour connaître les tâches de gestion supplémentaires relatives aux boîtes aux lettres utilisateur, consultez la rubrique [Gestion des boîtes aux lettres utilisateur](manage-user-mailboxes-exchange-2013-help.md).
+Cette rubrique vous explique comment personnaliser les paramètres de stockage d’une boîte aux lettres spécifique au lieu d’utiliser les paramètres de stockage de la base de données de boîtes aux lettres. Pour connaître les tâches de gestion supplémentaires relatives aux boîtes aux lettres utilisateur, consultez la rubrique [Gestion des boîtes aux lettres utilisateur](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
 
 ## Ce qu’il faut savoir avant de commencer
 

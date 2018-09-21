@@ -123,7 +123,7 @@ Pour obtenir des informations sur la syntaxe et les paramètres, consultez la ru
 
 ## Pour plus d'informations
 
-[Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[Protection contre la perte de données](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
-[Conseils de stratégie](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)
+[Conseils de stratégie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/policy-tips)
 

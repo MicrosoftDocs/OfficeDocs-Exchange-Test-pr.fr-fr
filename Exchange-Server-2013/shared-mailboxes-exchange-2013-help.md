@@ -51,5 +51,5 @@ Vous pouvez utiliser les autorisations suivantes avec une boîte aux lettres par
 
 ## Conversion de boîtes aux lettres partagées
 
-Dans les versions précédentes d'Exchange, vous pouvez utiliser une boîte aux lettres normale en tant que boîte aux lettres déléguée. Si vous disposez de boîtes aux lettres déléguées, vous pouvez utiliser l'environnement de ligne de commande Exchange Management Shell pour convertir ces boîtes aux lettres déléguées en boîtes aux lettres partagées. Pour plus d'informations, consultez la rubrique [Convertir une boîte aux lettres](convert-a-mailbox-exchange-2013-help.md).
+Dans les versions précédentes d'Exchange, vous pouvez utiliser une boîte aux lettres normale en tant que boîte aux lettres déléguée. Si vous disposez de boîtes aux lettres déléguées, vous pouvez utiliser l'environnement de ligne de commande Exchange Management Shell pour convertir ces boîtes aux lettres déléguées en boîtes aux lettres partagées. Pour plus d'informations, consultez la rubrique [Convertir une boîte aux lettres](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-user-mailboxes/convert-a-mailbox).
 

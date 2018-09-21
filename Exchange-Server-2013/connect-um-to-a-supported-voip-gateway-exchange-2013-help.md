@@ -43,7 +43,7 @@ Lorsque vous déployez des serveurs Exchange dans votre organisation, vous pouve
 
 ## Étape 2 : Créer et configurer un plan de numérotation de messagerie unifiée
 
-Après avoir installé les serveurs requis, vous devez commencer par créer un plan de numérotation de messagerie unifiée. Un plan de numérotation de messagerie unifiée contient les paramètres de configuration permettant de se connecter à votre réseau de téléphonie au moyen d'une liaison à une ou plusieurs passerelles IP de messagerie unifiée. Une passerelle IP de messagerie unifiée et un groupement de postes de messagerie unifiée sont directement liés à un plan de numérotation de messagerie unifiée et sont également requis. Pour plus d'informations, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](create-a-um-dial-plan-exchange-2013-help.md).
+Après avoir installé les serveurs requis, vous devez commencer par créer un plan de numérotation de messagerie unifiée. Un plan de numérotation de messagerie unifiée contient les paramètres de configuration permettant de se connecter à votre réseau de téléphonie au moyen d'une liaison à une ou plusieurs passerelles IP de messagerie unifiée. Une passerelle IP de messagerie unifiée et un groupement de postes de messagerie unifiée sont directement liés à un plan de numérotation de messagerie unifiée et sont également requis. Pour plus d'informations, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
 
 Un plan de numérotation de messagerie unifiée établit une liaison entre le numéro de poste téléphonique d'un utilisateur et sa boîte aux lettres à extension messagerie unifiée. Lorsque vous créez un plan de numérotation de messagerie unifiée, vous pouvez configurer le nombre de chiffres composant les numéros de postes, le type d'URI (Uniform Resource Identifier) et les paramètres de sécurité VoIP pour le plan de numérotation.
 
@@ -63,13 +63,13 @@ La messagerie unifiée Exchange prend en charge différents fournisseurs de pass
 
 Pour plus d'informations sur les passerelles VoIP, consultez les rubriques suivantes :
 
-  - [Créer une passerelle IP de messagerie unifiée](create-a-um-ip-gateway-exchange-2013-help.md)
+  - [Créer une passerelle IP de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway)
 
-  - [Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  - [Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
   - [Connexion d’une passerelle VoIP, d’un IP PBX ou d’un contrôleur SBC à la messagerie unifiée](connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md)
 
-Pour plus d'informations, consultez la rubrique [Connexion de votre système de messagerie vocale à votre réseau téléphonique](connect-your-voice-mail-system-to-your-telephone-network-exchange-2013-help.md).
+Pour plus d'informations, consultez la rubrique [Connexion de votre système de messagerie vocale à votre réseau téléphonique](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system).
 
 ## Étape 4 : Créer un groupement de postes de messagerie unifiée (si nécessaire)
 
@@ -79,5 +79,5 @@ Les groupements de postes de messagerie unifiée reflètent en tout point les gr
 
 Selon la manière dont vous créez votre passerelle IP de messagerie unifiée, vous devez peut-être créer un ou plusieurs groupements de postes de messagerie unifiée. Si vous ne liez pas de passerelle IP de messagerie unifiée à un plan de numérotation lors de la création d'une passerelle IP de messagerie unifiée, un groupement de postes de messagerie unifiée unique est alors créé par défaut. Si vous liez une passerelle IP de messagerie unifiée à un plan de numérotation de messagerie unifiée lorsque vous créez une passerelle IP de messagerie unifiée, tous les appels entrants sont envoyés par le biais de la passerelle IP de messagerie unifiée et ces appels sont acceptés par des serveurs d'accès au client et de boîtes aux lettres. Si vous ne liez pas de passerelle IP de messagerie unifiée à un plan de numérotation de messagerie unifiée lors de la création d'une passerelle IP de messagerie unifiée, vous devez créer un groupement de postes de messagerie unifiée avec l'identificateur de pilote approprié pour que les appels entrants puissent être transmis de la passerelle IP de messagerie unifiée à un plan de numérotation.
 
-Si vous disposez de plusieurs numéros Outlook Voice Access et de standard automatique et avez lié une passerelle IP de messagerie unifiée à un plan de numérotation, vous devez supprimer le groupement de postes de messagerie unifiée créé par défaut, puis créer plusieurs groupements de postes de messagerie unifiée. Pour plus d'informations sur la création d'un groupement de postes de messagerie unifiée, consultez la rubrique [Créer un groupement de postes de messagerie unifiée](create-a-um-hunt-group-exchange-2013-help.md).
+Si vous disposez de plusieurs numéros Outlook Voice Access et de standard automatique et avez lié une passerelle IP de messagerie unifiée à un plan de numérotation, vous devez supprimer le groupement de postes de messagerie unifiée créé par défaut, puis créer plusieurs groupements de postes de messagerie unifiée. Pour plus d'informations sur la création d'un groupement de postes de messagerie unifiée, consultez la rubrique [Créer un groupement de postes de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-hunt-group).
 

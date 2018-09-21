@@ -17,25 +17,25 @@ _**Sapplique à :** Exchange Online, Exchange Server 2013, Exchange Server 2016
 
 _**Dernière rubrique modifiée :** 2013-04-16_
 
-[Créer un plan de numérotation de messagerie unifiée](create-a-um-dial-plan-exchange-2013-help.md)
+[Créer un plan de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)
 
-[Gestion d'un plan de numérotation de messagerie unifiée](manage-a-um-dial-plan-exchange-2013-help.md)
+[Gestion d'un plan de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan)
 
 [Ajouter des serveurs de boîtes aux lettres et accès au Client à un plan de numérotation URI SIP](add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md)
 
 [Supprimer des serveurs de boîtes aux lettres et accès au Client à partir d'un plan de numérotation URI SIP](remove-mailbox-and-client-access-servers-from-a-sip-uri-dial-plan-exchange-2013-help.md)
 
-[Modifier le codec audio](change-the-audio-codec-exchange-2013-help.md)
+[Modifier le codec audio](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/change-audio-codec)
 
-[Configurer la durée d’appel maximale](configure-the-maximum-call-duration-exchange-2013-help.md)
+[Configurer la durée d’appel maximale](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-call-duration)
 
-[Configurer la durée maximale d'enregistrement](configure-the-maximum-recording-duration-exchange-2013-help.md)
+[Configurer la durée maximale d'enregistrement](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-recording-duration)
 
-[Configurez la valeur de délai d'inactivité d'enregistrement](configure-the-recording-idle-time-out-value-exchange-2013-help.md)
+[Configurez la valeur de délai d'inactivité d'enregistrement](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-recording-idle-time-out)
 
-[Configuration du paramètre de sécurité VoIP](configure-the-voip-security-setting-exchange-2013-help.md)
+[Configuration du paramètre de sécurité VoIP](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-voip-security-setting)
 
-[Configuration d’un plan de numérotation pour des utilisateurs dont les noms sont similaires](configure-a-dial-plan-for-users-who-have-similar-names-exchange-2013-help.md)
+[Configuration d’un plan de numérotation pour des utilisateurs dont les noms sont similaires](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-dial-plan-for-users-with-similar-names)
 
-[Supprimer un plan de numérotation de messagerie unifiée](delete-a-um-dial-plan-exchange-2013-help.md)
+[Supprimer un plan de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-dial-plan)
 

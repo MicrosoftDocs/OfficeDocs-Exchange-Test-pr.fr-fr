@@ -243,7 +243,7 @@ Retour au début
 
 ## Configuration de la télécopie
 
-Par défaut, lorsque vous installez le rôle serveur de boîtes aux lettres, le serveur n’est pas configuré pour permettre le traitement des appels de télécopie entrants ou leur remise à un utilisateur à extension messagerie unifiée. Pour configurer la messagerie unifiée avec un serveur du partenaire de télécopie, vous devez configurer la stratégie de boîte aux lettres de messagerie unifiée et configurer l’authentification entre le serveur de boîtes aux lettres et le serveur du partenaire de télécopie. Pour plus d’informations, voir [Configuration des télécopies entrantes](setting-up-incoming-faxing-exchange-2013-help.md).
+Par défaut, lorsque vous installez le rôle serveur de boîtes aux lettres, le serveur n’est pas configuré pour permettre le traitement des appels de télécopie entrants ou leur remise à un utilisateur à extension messagerie unifiée. Pour configurer la messagerie unifiée avec un serveur du partenaire de télécopie, vous devez configurer la stratégie de boîte aux lettres de messagerie unifiée et configurer l’authentification entre le serveur de boîtes aux lettres et le serveur du partenaire de télécopie. Pour plus d’informations, voir [Configuration des télécopies entrantes](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-incoming-faxing).
 
 Retour au début
 
@@ -277,7 +277,7 @@ Retour au début
 
 ## Plusieurs numéros de téléphone DID
 
-Lorsque vous activez un utilisateur pour la messagerie unifiée, vous devez entrer au moins un numéro de poste pour cet utilisateur. Vous pouvez ajouter plusieurs numéros de poste pour un utilisateur à extension messagerie unifiée en utilisant le Centre d’administration Exchange (CAE). Pour plus d’informations, voir [Ajouter un numéro de poste](add-an-extension-number-exchange-2013-help.md).
+Lorsque vous activez un utilisateur pour la messagerie unifiée, vous devez entrer au moins un numéro de poste pour cet utilisateur. Vous pouvez ajouter plusieurs numéros de poste pour un utilisateur à extension messagerie unifiée en utilisant le Centre d’administration Exchange (CAE). Pour plus d’informations, voir [Ajouter un numéro de poste](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number).
 
 L’ajout de plusieurs numéros de poste est utile quand un utilisateur à extension messagerie unifiée :
 
@@ -291,7 +291,7 @@ L’ajout de plusieurs postes est plus complexe que l’utilisation d’un poste
 
 L’avantage de l’utilisation de plusieurs numéros de téléphone DID est que l’utilisateur à extension messagerie unifiée reçoit les appels vocaux sur un seul numéro de poste DID, et les appels de télécopie sur un autre. L’utilisation de numéros DID distincts pour les appels vocaux et de télécopie est plus facile pour l’utilisateur.
 
-Si vous configurez deux numéros de poste DID pour un utilisateur spécifique, les numéros de poste DID peuvent être associés à des plans de numérotation de messagerie unifiée distincts. Pour utiliser deux numéros DID, vous pouvez créer un plan de numérotation et utiliser un serveur de boîtes aux lettres comme serveur dédié à la réception des appels de télécopie et au transfert des messages de télécopie aux utilisateurs. Pour plus d’informations, voir [Créer un plan de numérotation de messagerie unifiée](create-a-um-dial-plan-exchange-2013-help.md).
+Si vous configurez deux numéros de poste DID pour un utilisateur spécifique, les numéros de poste DID peuvent être associés à des plans de numérotation de messagerie unifiée distincts. Pour utiliser deux numéros DID, vous pouvez créer un plan de numérotation et utiliser un serveur de boîtes aux lettres comme serveur dédié à la réception des appels de télécopie et au transfert des messages de télécopie aux utilisateurs. Pour plus d’informations, voir [Créer un plan de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
 
 Les options de configuration de plusieurs numéros de poste DID pour des utilisateurs à extension messagerie unifiée sont les suivantes :
 

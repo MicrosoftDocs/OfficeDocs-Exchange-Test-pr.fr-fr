@@ -57,7 +57,7 @@ Pour créer une boîte aux lettres dédiée à la mise en quarantaine du courrie
 
   - **Créer une boîte aux lettres et un compte d'utilisateur dédiés**   Nous vous recommandons de créer une boîte aux lettres et un compte d'utilisateur Active Directory dédiés pour la boîte aux lettres de mise en quarantaine du courrier indésirable. Pour plus d'informations, consultez la rubrique [Création de boîtes aux lettres utilisateur](create-user-mailboxes-exchange-2013-help.md).
     
-    Vous pouvez appliquer des stratégies de destinataire, comme la gestion des enregistrements de messagerie, des quotas de boîte aux lettres et des droits de délégation, en fonction des stratégies de conformité et des besoins de votre organisation. Pour plus d'informations, consultez la rubrique [Gestion des enregistrements de messagerie](messaging-records-management-exchange-2013-help.md).
+    Vous pouvez appliquer des stratégies de destinataire, comme la gestion des enregistrements de messagerie, des quotas de boîte aux lettres et des droits de délégation, en fonction des stratégies de conformité et des besoins de votre organisation. Pour plus d'informations, consultez la rubrique [Gestion des enregistrements de messagerie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/messaging-records-management).
     
     > [!NOTE]
     > Si un message mis en quarantaine est rejeté à cause d'un quota de stockage, ce message est perdu. Exchange ne génère pas de notifications d'échec de remise pour les messages mis en quarantaine, car ceux-ci sont inclus dans des rapports d'échec de remise.

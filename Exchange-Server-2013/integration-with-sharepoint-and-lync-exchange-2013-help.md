@@ -37,9 +37,9 @@ Exchange 2013 permet à SharePoint 2013 de rechercher du contenu dans une boî
 
 Pour plus d’informations, consultez les rubriques suivantes :
 
-  - [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md)
+  - [Découverte électronique locale](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
-  - [Conservation inaltérable et conservation pour litige](in-place-hold-and-litigation-hold-exchange-2013-help.md)
+  - [Conservation inaltérable et conservation pour litige](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-and-litigation-holds)
 
   - [Configurer eDiscovery dans SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=257727)
 

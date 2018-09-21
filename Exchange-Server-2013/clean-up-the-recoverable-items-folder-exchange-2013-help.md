@@ -33,7 +33,7 @@ La méthode de nettoyage du dossier Éléments récupérables de la boîte aux l
 
   - Si la boîte aux lettres est placée en conservation pour litige ou inaltérable, ou si la récupération d’élément unique est activée, il est important de protéger les données de la boîte aux lettres jusqu’à la suppression de la conservation ou l’activation de la récupération d’élément unique. Dans ce cas, vous devez exécuter des étapes plus détaillées pour le nettoyage du dossier Éléments récupérables.
 
-Pour en savoir plus sur la conservation pour litige ou inaltérable, voir [Conservation inaltérable et conservation pour litige](in-place-hold-and-litigation-hold-exchange-2013-help.md). Pour plus d’informations sur la récupération d’élément unique, voir la rubrique « Récupération d’élément unique » dans [Dossier Éléments récupérables](recoverable-items-folder-exchange-2013-help.md).
+Pour en savoir plus sur la conservation pour litige ou inaltérable, voir [Conservation inaltérable et conservation pour litige](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-and-litigation-holds). Pour plus d’informations sur la récupération d’élément unique, voir la rubrique « Récupération d’élément unique » dans [Dossier Éléments récupérables](recoverable-items-folder-exchange-2013-help.md).
 
 Pour plus d’informations sur le dossier Éléments récupérables, voir [Dossier Éléments récupérables](recoverable-items-folder-exchange-2013-help.md).
 
@@ -139,7 +139,7 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
         Search-Mailbox -Identity "Gurinder Singh" -SearchQuery "Subject:'Your bank statement'" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
     
     > [!NOTE]
-    > Il n’est pas nécessaire de copier les éléments dans la boîte aux lettres de détection. Vous pouvez copier des messages dans toute boîte aux lettres. Cependant, pour empêcher l’accès aux données de boîtes aux lettres éventuellement sensibles, nous vous recommandons de copier les messages dans une boîte aux lettres dont l’accès est limité aux responsables d’enregistrements autorisés. Par défaut, l’accès à la boîte aux lettres de détection par défaut est limité aux membres du groupe de rôles Gestion de la découverte. Pour plus d’informations, consultez la rubrique <a href="in-place-ediscovery-exchange-2013-help.md">Découverte électronique locale</a>.
+    > Il n’est pas nécessaire de copier les éléments dans la boîte aux lettres de détection. Vous pouvez copier des messages dans toute boîte aux lettres. Cependant, pour empêcher l’accès aux données de boîtes aux lettres éventuellement sensibles, nous vous recommandons de copier les messages dans une boîte aux lettres dont l’accès est limité aux responsables d’enregistrements autorisés. Par défaut, l’accès à la boîte aux lettres de détection par défaut est limité aux membres du groupe de rôles Gestion de la découverte. Pour plus d’informations, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">Découverte électronique locale</a>.
 
 
 10. Si la boîte aux lettres a été placée en conservation pour litige ou si la récupération d’élément unique a été préalablement activée, activez à nouveau ces fonctionnalités.

@@ -27,7 +27,7 @@ Sélectionnez une rubrique ci-dessous pour commencer :
 
 [Configurer des dossiers publics locaux hérités dans le cadre d’un déploiement hybride](configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)
 
-[Configurer les dossiers publics Exchange 2013 pour un déploiement hybride](configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)
+[Configurer les dossiers publics Exchange 2013 pour un déploiement hybride](https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders)
 
 [Configurer les dossiers publics Exchange Online pour un déploiement hybride](configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)
 

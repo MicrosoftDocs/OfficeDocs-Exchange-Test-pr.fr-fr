@@ -399,9 +399,9 @@ Retour au début
 
 [Domaines distants dans Exchange Online](https://technet.microsoft.com/fr-fr/library/jj966211\(v=exchg.150\))
 
-[Gérer les utilisateurs de messagerie](manage-mail-users-exchange-2013-help.md)
+[Gérer les utilisateurs de messagerie](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-mail-users)
 
-[Gérer les contacts de messagerie](manage-mail-contacts-exchange-2013-help.md)
+[Gérer les contacts de messagerie](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-mail-contacts)
 
 [Modifier le format des messages dans Outlook](https://go.microsoft.com/fwlink/p/?linkid=397890)
 

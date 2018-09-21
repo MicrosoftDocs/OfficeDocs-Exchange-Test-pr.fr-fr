@@ -63,7 +63,7 @@ Le tableau suivant contient des liens vers des rubriques qui vous permettront de
 <td><p>Découvrez Outlook Web App, qui permet aux utilisateurs d’accéder à leur boîte aux lettres Exchange 2013 via un navigateur Web.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="mailtips-exchange-2013-help.md">MailTips</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips">MailTips</a></p></td>
 <td><p>Découvrez les infos-courrier, messages d’information qui s’affichent lorsque les utilisateurs composent un message.</p></td>
 </tr>
 </tbody>

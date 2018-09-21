@@ -21,17 +21,17 @@ _**Dernière rubrique modifiée :** 2012-10-12_
 
 [Mettre à jour une liste d'adresses](update-an-address-list-exchange-2013-help.md)
 
-[Création d’une liste d’adresses à l’aide de filtres de destinataires](create-an-address-list-by-using-recipient-filters-exchange-2013-help.md)
+[Création d’une liste d’adresses à l’aide de filtres de destinataires](https://docs.microsoft.com/fr-fr/exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list)
 
 [Déplacer une liste d'adresses](move-an-address-list-exchange-2013-help.md)
 
 [Supprimer une liste d'adresses](remove-an-address-list-exchange-2013-help.md)
 
-[Création d’une liste d’adresses globale](create-a-global-address-list-exchange-2013-help.md)
+[Création d’une liste d’adresses globale](https://docs.microsoft.com/fr-fr/exchange/address-books/address-lists/create-global-address-list)
 
-[Configuration des propriétés d'une liste d'adresses globale](configure-global-address-list-properties-exchange-2013-help.md)
+[Configuration des propriétés d'une liste d'adresses globale](https://docs.microsoft.com/fr-fr/exchange/address-books/address-lists/configure-global-address-list-properties)
 
-[Suppression d'une liste d'adresses globale](remove-a-global-address-list-exchange-2013-help.md)
+[Suppression d'une liste d'adresses globale](https://docs.microsoft.com/fr-fr/exchange/address-books/address-lists/remove-a-global-address-list)
 
 [Mise à jour d’une liste d’adresses globale](update-a-global-address-list-exchange-2013-help.md)
 

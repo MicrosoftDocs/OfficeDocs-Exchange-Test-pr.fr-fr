@@ -46,7 +46,7 @@ La gestion des modèles personnalisés et leurs stratégies connexes est semblab
 
 2.  Importez votre modèle personnalisé. Pour en savoir plus, consultez la rubrique [Importer un modèle de stratégie DLP personnalisé à partir d’un fichier](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md).
 
-3.  Créez une stratégie DLP basée sur votre modèle personnalisé. Pour en savoir plus, consultez la rubrique [Création d'une stratégie DLP à partir d'un modèle](how-to-new-dlp-data-loss-prevention-policy-template.md).
+3.  Créez une stratégie DLP basée sur votre modèle personnalisé. Pour en savoir plus, consultez la rubrique [Création d'une stratégie DLP à partir d'un modèle](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template).
 
 4.  Mettez à jour votre modèle personnalisé en répétant les étapes 1 et 2.
 
@@ -80,7 +80,7 @@ Les règles d'*affinité* sont ciblées sur un certain type de document (ex. ét
 
 ## Pour plus d'informations
 
-[Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[Protection contre la perte de données](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [Importer un modèle de stratégie DLP personnalisé à partir d’un fichier](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)
 

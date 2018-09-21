@@ -51,7 +51,7 @@ Le tableau suivant offre un aperçu des fonctionnalités de stratégie et de con
 <li><p>Tous les messages doivent-ils être conservés pendant la même durée ?</p></li>
 </ul>
 <p>Exchange 2013 contient des fonctionnalités MRM qui vous permettent de mettre en œuvre les stratégies de cycle de vie de la messagerie électronique de votre organisation. MRM vous permet d'appliquer des paramètres de rétention uniformes à tous les messages, d'utiliser des stratégies de rétention personnalisées pour appliquer un paramètre de rétention de base pour la boîte aux lettres et de permettre, de manière facultative, aux utilisateurs de classer les messages afin qu'ils puissent être conservés pendant une durée spécifiée.</p></td>
-<td><p><a href="messaging-records-management-exchange-2013-help.md">Gestion des enregistrements de messagerie</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/messaging-records-management">Gestion des enregistrements de messagerie</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Archivage local</p></td>
@@ -61,12 +61,12 @@ Le tableau suivant offre un aperçu des fonctionnalités de stratégie et de con
 <tr class="odd">
 <td><p>Blocage local</p></td>
 <td><p>Lorsqu’une situation de litige est vraisemblablement à craindre, les organisations ont pour obligation de conserver les informations pertinentes qui sont stockées électroniquement (ESI), y compris la messagerie. Le blocage sur place vous permet de rechercher et de conserver les messages correspondant à des paramètres de requête. Les messages sont protégés contre la suppression, la modification et la falsification et peuvent être préservés indéfiniment ou pendant une période donnée.</p></td>
-<td><p><a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">Conservation inaltérable et conservation pour litige</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-and-litigation-holds">Conservation inaltérable et conservation pour litige</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Découverte électronique locale</p></td>
 <td><p>La découverte électronique sur place vous permet de rechercher des données de boîtes aux lettres dans votre organisation Exchange, de prévisualiser des résultats de recherche et de les copier dans une boîte aux lettres de découverte.</p></td>
-<td><p><a href="in-place-ediscovery-exchange-2013-help.md">Découverte électronique locale</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">Découverte électronique locale</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Journalisation</p></td>
@@ -81,7 +81,7 @@ Le tableau suivant offre un aperçu des fonctionnalités de stratégie et de con
 <tr class="odd">
 <td><p>Prévention des pertes de données (DLP)</p></td>
 <td><p>Les fonctionnalités DLP vous aident à protéger vos données sensibles et informent les utilisateurs de vos stratégies et règlementations. DLP peut également vous permettre d'éviter aux utilisateur d'envoyer par erreur des informations sensibles à des personnes non autorisées. Lors de la configuration des stratégies DLP, vous pouvez identifier et protéger les données sensibles en analysant le contenu de votre système de messagerie, qui comprend de nombreux types de fichiers associés. Les modèles de stratégies DLP fournis dans Exchange 2013 sont fondés sur des normes règlementaires telles que les informations d'identification personnelle et les normes de sécurité des données industrielles des cartes de paiement (PCI-DSS). L'extensibilité de DLP permet d'inclure d'autres stratégies importantes pour votre organisation. De plus, la nouvelle fonctionnalité de conseils de stratégie vous permet d'informer les utilisateurs des violations de stratégies avant l'envoi des données sensibles.</p></td>
-<td><p><a href="technical-overview-of-dlp-data-loss-prevention-in-exchange.md">Protection contre la perte de données</a></p></td>
+<td><p><a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention">Protection contre la perte de données</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Gestion des droits relatifs à l’information (IRM)</p></td>
@@ -97,7 +97,7 @@ Le tableau suivant offre un aperçu des fonctionnalités de stratégie et de con
 <td><p>Enregistrement d’audit dans les boîtes aux lettres</p></td>
 <td><p>Les boîtes aux lettres étant susceptibles de renfermer des informations confidentielles, des informations ayant un impact significatif sur l’activité et des informations d’identification personnelle, il est important de connaître le nom des personnes qui se connectent aux boîtes aux lettres de votre organisation et les actions qui sont effectuées. Ceci est particulièrement important si les utilisateurs qui se connectent ne sont pas les propriétaires des boîtes aux lettres (nommés utilisateurs délégués). Grâce à l’enregistrement d’audit des boîtes aux lettres, vous pouvez enregistrer l’accès aux boîtes aux lettres par les propriétaires des boîtes aux lettres, les délégués (notamment les administrateurs disposant d’autorisations d'accès total aux boîtes aux lettres) et les administrateurs.</p></td>
 <td><p><a href="mailbox-audit-logging-exchange-2013-help.md">Enregistrement d’audit dans les boîtes aux lettres</a></p>
-<p><a href="exchange-auditing-reports-exchange-2013-help.md">Rapports d’audit Exchange</a></p></td>
+<p><a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports">Rapports d’audit Exchange</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Connexion au service d’audit administrateur</p></td>

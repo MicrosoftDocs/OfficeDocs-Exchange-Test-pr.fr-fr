@@ -19,7 +19,7 @@ _**Dernière rubrique modifiée :** 2015-04-08_
 
 Dans Microsoft Exchange Server 2013, lorsque vous créez une règle de journal sur les messages électroniques échangés entre des destinataires et des expéditeurs dans une organisation Exchange, les notifications d’appel en absence ou de la messagerie vocale générées par le service de messagerie unifiée sont incluses. Utilisez les procédures de la présente rubrique pour activer ou désactiver cette fonction pour votre organisation en entier.
 
-Souhaitez-vous rechercher les autres tâches de gestion relatives à la journalisation ? Consultez la rubrique [Gérer la journalisation](manage-journaling-exchange-2013-help.md).
+Souhaitez-vous rechercher les autres tâches de gestion relatives à la journalisation ? Consultez la rubrique [Gérer la journalisation](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/journaling/manage-journaling).
 
 ## Ce qu’il faut savoir avant de commencer ?
 
@@ -51,5 +51,5 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 [Journalisation](journaling-exchange-2013-help.md)
 
-[Gérer la journalisation](manage-journaling-exchange-2013-help.md)
+[Gérer la journalisation](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/journaling/manage-journaling)
 

@@ -21,7 +21,7 @@ Par défaut, le service de recherche Exchange est activé pour toutes les nouvel
 
 > [!CAUTION]  
 > La désactivation du service de recherche Exchange influe sur les fonctionnalités et performances des recherches de texte intégral effectuées par vos utilisateurs utilisant Outlook en mode en ligne ou des appareils Windows Mobile.
-> La fonctionnalité <a href="in-place-ediscovery-exchange-2013-help.md">Découverte électronique locale</a> s'appuie également sur le service de recherche Exchange. Si vous désactivez le service de recherche Exchange pour une base de données ou un serveur de boîtes aux lettres, les recherches eDiscovery sur place ne retourneront pas de messages de la base de données ou du serveur.
+> La fonctionnalité <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">Découverte électronique locale</a> s'appuie également sur le service de recherche Exchange. Si vous désactivez le service de recherche Exchange pour une base de données ou un serveur de boîtes aux lettres, les recherches eDiscovery sur place ne retourneront pas de messages de la base de données ou du serveur.
 
 
 Pour les autres tâches de gestion relatives au service de recherche Exchange, consultez la rubrique [Procédures relatives au service de recherche Exchange](exchange-search-procedures-exchange-2013-help.md).

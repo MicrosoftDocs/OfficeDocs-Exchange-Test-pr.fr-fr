@@ -17,11 +17,11 @@ _**Sapplique à :** Exchange Server 2013_
 
 _**Dernière rubrique modifiée :** 2012-10-11_
 
-[Création d’une stratégie de carnet d’adresses](create-an-address-book-policy-exchange-2013-help.md)
+[Création d’une stratégie de carnet d’adresses](https://docs.microsoft.com/fr-fr/exchange/address-books/address-book-policies/create-an-address-book-policy)
 
-[Attribuer une stratégie de carnet d’adresses à des utilisateurs de messagerie](assign-an-address-book-policy-to-mail-users-exchange-2013-help.md)
+[Attribuer une stratégie de carnet d’adresses à des utilisateurs de messagerie](https://docs.microsoft.com/fr-fr/exchange/address-books/address-book-policies/assign-an-address-book-policy-to-mail-users)
 
-[Modifier les paramètres d’une stratégie de carnet d’adresses](change-the-settings-of-an-address-book-policy-exchange-2013-help.md)
+[Modifier les paramètres d’une stratégie de carnet d’adresses](https://docs.microsoft.com/fr-fr/exchange/address-books/address-book-policies/change-the-settings-of-an-address-book-policy)
 
-[Supprimer une stratégie de carnet d’adresses](remove-an-address-book-policy-exchange-2013-help.md)
+[Supprimer une stratégie de carnet d’adresses](https://docs.microsoft.com/fr-fr/exchange/address-books/address-book-policies/remove-an-address-book-policy)
 
