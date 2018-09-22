@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Éléments recherchés par les types d’informations sensibles dans Exchange'
 TOCTitle: Éléments recherchés par les types d’informations sensibles
 ms:assetid: 98b81f9c-87bb-4905-8e53-04621c3ae74d
@@ -1059,13 +1059,11 @@ La protection contre la perte de données (DLP) dans Exchange inclut 80 types d
 <td><p>Format</p></td>
 <td><p>Registro Geral (ancien format)</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>Neuf chiffres</p>
 </dd>
 </dl>
 <p>Registro de Identidade (RIC) (nouveau format)</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>11 chiffres</p>
 </dd>
 </dl></td>
@@ -3654,13 +3652,11 @@ La protection contre la perte de données (DLP) dans Exchange inclut 80 types d
 <td><p>Format</p></td>
 <td><p>Depuis le 1er novembre 2010</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>Neuf lettres et chiffres</p>
 </dd>
 </dl>
 <p>Du 1er avril 1987 au 31 octobre 2010</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>10 chiffres</p>
 </dd>
 </dl></td>
@@ -4252,7 +4248,6 @@ La protection contre la perte de données (DLP) dans Exchange inclut 80 types d
 </ul>
 <p>Le format pour chaque pays est légèrement différent. Le type d’informations sensibles IBAN recouvre ces 60 pays :</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk, sm, tn, tr, vg</p>
 </dd>
 </dl></td>
@@ -4392,13 +4387,11 @@ La protection contre la perte de données (DLP) dans Exchange inclut 80 types d
 <td><p>Format</p></td>
 <td><p>Ancien format (jusqu’au 31 décembre 2012)</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>Sept chiffres suivis de 1 ou 2 lettres</p>
 </dd>
 </dl>
 <p>Nouveau format (à partir du 1er janvier 2013)</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>Sept chiffres suivis de deux lettres</p>
 </dd>
 </dl></td>
@@ -6494,13 +6487,11 @@ La protection contre la perte de données (DLP) dans Exchange inclut 80 types d
 <td><p>Format</p></td>
 <td><p>Numéro de passeport biométrique</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>Neuf chiffres</p>
 </dd>
 </dl>
 <p>Numéro de passeport non biométrique</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>Neuf chiffres</p>
 </dd>
 </dl></td>
