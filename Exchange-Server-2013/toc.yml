@@ -695,7 +695,7 @@
       - name: Exporter les résultats de la recherche électronique vers un fichier PST
         href: export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md
       - name: Propriétés de message et opérateurs de recherche pour la découverte électronique inaltérable
-        href: message-properties-and-search-operators-for-https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery
+        href: https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/message-properties-and-search-operators
       - name: Créer une boîte aux lettres de découverte
         href: https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox
       - name: Lancement ou arrêt d’une recherche de découverte électronique inaltérable
@@ -756,14 +756,14 @@
           - name: Migration à partir de dossiers gérés
             href: migrate-from-managed-folders-exchange-2013-help.md
           - name: Désactivation ou suspension de la gestion des enregistrements de messagerie
-            href: turn-off-or-suspend-https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/messaging-records-management
+            href: turn-off-or-suspend-messaging-records-management-exchange-2013-help.md
       - name: Gestion des enregistrements de messagerie de la surveillance
-        href: monitoring-https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/messaging-records-management
+        href: monitoring-messaging-records-management-exchange-2013-help.md
         items:
         - name: Afficher les compteurs de performances pour la gestion des enregistrements de messagerie
-          href: view-performance-counters-for-https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/messaging-records-management
+          href: view-performance-counters-for-messaging-records-management-exchange-2013-help.md
         - name: Compteurs de performance pour la gestion des enregistrements de messagerie
-          href: performance-counters-for-https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/messaging-records-management
+          href: performance-counters-for-messaging-records-management-exchange-2013-help.md
         - name: Événements et erreurs de gestion des enregistrements de messagerie
           href: messaging-records-management-errors-and-events-exchange-2013-help.md
     - name: Journalisation
@@ -895,7 +895,7 @@
         - name: Activer ou désactiver le déchiffrement du transport
           href: enable-or-disable-transport-decryption-exchange-2013-help.md
         - name: Configurer IRM pour la recherche et la découverte locale dans Exchange
-          href: configure-irm-for-exchange-search-and-https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery
+          href: configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md
         - name: Activer ou désactiver le cryptage de rapport de journal
           href: enable-or-disable-journal-report-decryption-exchange-2013-help.md
         - name: Activer ou désactiver la gestion des droits relatifs à l’information (IRM) sur les serveurs d’accès au client
@@ -1415,7 +1415,7 @@
       href: https://docs.microsoft.com/fr-fr/exchange/address-books/address-book-policies/address-book-policies
       items:
       - name: 'Scénario : Déploiement de stratégies de carnet d’adresses'
-        href: scenario-deploying-https://docs.microsoft.com/fr-fr/exchange/address-books/address-book-policies/address-book-policies
+        href: scenario-deploying-address-book-policies-exchange-2013-help.md
       - name: Procédures des stratégies de carnet d’adresses
         href: address-book-policy-procedures-exchange-2013-help.md
         items:
@@ -1502,7 +1502,7 @@
       href: https://docs.microsoft.com/fr-fr/exchange/address-books/hierarchical-address-books/hierarchical-address-books
       items:
       - name: Activation ou désactivation des carnets d’adresses hiérarchiques
-        href: enable-or-disable-https://docs.microsoft.com/fr-fr/exchange/address-books/hierarchical-address-books/hierarchical-address-books
+        href: https://docs.microsoft.com/fr-fr/exchange/address-books/hierarchical-address-books/enable-or-disable-hierarchical-address-books
   - name: Partage
     href: sharing-exchange-2013-help.md
     items:
@@ -1688,7 +1688,7 @@
       href: https://docs.microsoft.com/fr-fr/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips
       items:
       - name: Activer ou désactiver les infos-courrier
-        href: enable-or-disable-https://docs.microsoft.com/fr-fr/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips
+        href: enable-or-disable-mailtips-exchange-2013-help.md
       - name: Configurer la taille du large public pour votre organisation
         href: https://docs.microsoft.com/fr-fr/exchange/clients-and-mobile-in-exchange-online/mailtips/configure-large-audience-size
       - name: Configurer les infos-courrier personnalisées pour les destinataires
@@ -1699,7 +1699,7 @@
         - name: Gérer les infos-courrier pour les relations de l’organisation
           href: https://docs.microsoft.com/fr-fr/exchange/clients-and-mobile-in-exchange-online/mailtips/manage-mailtips-for-organization-relationships
       - name: Mesures de groupe et les infos-courrier
-        href: group-metrics-and-https://docs.microsoft.com/fr-fr/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips
+        href: group-metrics-and-mailtips-exchange-2013-help.md
         items:
         - name: Configuration des mesures de groupe
           href: configure-group-metrics-exchange-2013-help.md
@@ -2113,9 +2113,9 @@
           href: https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-make-calls-procedures
           items:
           - name: Activer les appels sortants sur les passerelles IP de messagerie unifiée
-            href: enable-outgoing-calls-on-https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways
+            href: https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-outgoing-calls-on-um-ip-gateways
           - name: Désactiver les appels sortants sur les passerelles IP de messagerie unifiée
-            href: disable-outgoing-calls-on-https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways
+            href: https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-outgoing-calls-on-um-ip-gateways
           - name: Configurer les codes de numérotation
             href: https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-dial-codes
           - name: Créer des règles de numérotation pour les utilisateurs
