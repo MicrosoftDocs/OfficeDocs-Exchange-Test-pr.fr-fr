@@ -120,7 +120,7 @@ Souhaitez-vous rechercher des tâches de gestion relatives aux journaux d’audi
 <td><p>Cette balise contient toutes les propriétés modifiées par la cmdlet exécutée. La balise <code>Property</code> est un enfant de cette balise.</p>
 <p>Il existe une balise <code>ModifiedProperties</code> par balise <code>Event</code>.</p>
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Cette balise n’est renseignée que si le paramètre <em>LogLevel</em> de la cmdlet <strong>Set-AdminAuditLogConfig</strong> est défini à <code>Verbose</code>.
 
 </td>
@@ -173,17 +173,19 @@ Vous trouverez ci-dessous un exemple type d’entrée de journal d’audit. Selo
 
 <!-- end list -->
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <SearchResults>
-    
-      <Event Caller="corp.e15a.contoso.com/Users/Administrator" Cmdlet="Set-Mailbox" ObjectModified="corp.e15a.contoso.com/Users/david" RunDate="2012-10-18T15:48:15-07:00" Succeeded="true" Error="None" OriginatingServer="WIN8MBX (15.00.0516.032)">
-        <CmdletParameters>
-          <Parameter Name="Identity" Value="david" />
-          <Parameter Name="ProhibitSendReceiveQuota" Value="10 GB (10,737,418,240 bytes)" />
-        </CmdletParameters>
-        <ModifiedProperties>
-          <Property Name="ProhibitSendReceiveQuota" OldValue="35 GB (37,580,963,840 bytes)" NewValue="10 GB (10,737,418,240 bytes)" />
-        </ModifiedProperties>
-      </Event>
-    </SearchResults>
+  ```XML
+  <?xml version="1.0" encoding="utf-8"?>
+  <SearchResults>
+  
+    <Event Caller="corp.e15a.contoso.com/Users/Administrator" Cmdlet="Set-Mailbox" ObjectModified="corp.e15a.contoso.com/Users/david" RunDate="2012-10-18T15:48:15-07:00" Succeeded="true" Error="None" OriginatingServer="WIN8MBX (15.00.0516.032)">
+      <CmdletParameters>
+        <Parameter Name="Identity" Value="david" />
+        <Parameter Name="ProhibitSendReceiveQuota" Value="10 GB (10,737,418,240 bytes)" />
+      </CmdletParameters>
+      <ModifiedProperties>
+        <Property Name="ProhibitSendReceiveQuota" OldValue="35 GB (37,580,963,840 bytes)" NewValue="10 GB (10,737,418,240 bytes)" />
+      </ModifiedProperties>
+    </Event>
+  </SearchResults>
+  ```
 

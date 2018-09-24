@@ -24,7 +24,7 @@ Comment faire pour permettre aux utilisateurs d’Exchange 2013 ou Exchange 2016
 Les utilisateurs dont les boîtes aux lettres sont sur Exchange Server 2013 ou 2016 d’Exchange Server ne pourront pas accéder aux dossiers publics hérités à partir d’Outlook Web App, Outlook sur le web ou Outlook pour Mac. Les étapes décrites dans cet article fonctionnent pour Exchange 2013 et 2016 d’Exchange.
 
 > [!NOTE]  
-> Les utilisateurs d’Outlook 2016 pour Mac peuvent accéder aux dossiers publics hérités après avoir suivi les étapes décrites dans cet article. Si les clients de votre organisation utilisent Outlook 2016 pour Mac, assurez-vous qu’ils ont installé la mise à jour d’avril 2016. Dans le cas contraire, ces utilisateurs ne seront pas en mesure d’accéder aux dossiers publics dans une coexistence ou une topologie hybride. Pour plus d’informations, voir <a href="accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md">Accès aux dossiers publics avec Outlook 2016 pour Mac</a>.
+> Les utilisateurs d’Outlook 2016 pour Mac peuvent accéder aux dossiers publics hérités après avoir suivi les étapes décrites dans cet article. Si les clients de votre organisation utilisent Outlook 2016 pour Mac, assurez-vous qu’ils ont installé la mise à jour d’avril 2016. Dans le cas contraire, ces utilisateurs ne seront pas en mesure d’accéder aux dossiers publics dans une coexistence ou une topologie hybride. Pour plus d’informations, voir <a href="https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac">Accès aux dossiers publics avec Outlook 2016 pour Mac</a>.
 
 
 ## Étape 1 : rendre les dossiers publics Exchange 2010 détectables
@@ -39,27 +39,35 @@ Les utilisateurs dont les boîtes aux lettres sont sur Exchange Server 2013 ou 2
     
     Pour Exchange 2010, exécutez la commande suivante : Cette commande exclut la base de données de boîtes aux lettres du programme d’équilibrage de la charge pour l’ajout de boîtes aux lettres. Cela évite l'ajout automatique de nouvelles boîtes aux lettres à cette base de données.
     
-        New-MailboxDatabase -Server <PFServerName_with_CASRole> -Name <NewMDBforPFs> -IsExcludedFromProvisioning $true 
+    ```powershell
+    New-MailboxDatabase -Server <PFServerName_with_CASRole> -Name <NewMDBforPFs> -IsExcludedFromProvisioning $true 
+    ```
     
     Pour Exchange 2007, exécutez la commande suivante :
     
-        New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+    ```powershell
+    New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+    ```
     
     > [!NOTE]  
     > Nous vous recommandons d’ajouter à cette base de données uniquement la boîte aux lettres proxy que vous allez créer à l’étape 3. Aucune autre boîte aux lettres ne devrait être créée dans cette base de données de boîtes aux lettres.
 
 
 3.  Créez une boîte aux lettres proxy à l'intérieur de la nouvelle base de données de boîtes aux lettres, puis masquez-la dans le carnet d'adresses. Le SMTP de cette boîte aux lettres sera renvoyé par la découverte automatique comme SMTP *DefaultPublicFolderMailbox*, de sorte qu'en résolvant ce SMTP, le client pourrait atteindre le serveur Exchange hérité pour l'accès aux dossiers publics.
+
+    ```powershell
+    New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs> 
     ```
-        New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs> 
-    ```
-    ```
-        Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+
+    ```powershell
+    Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
     ```
 
 4.  Pour Exchange 2010, activez la découverte automatique de façon à ce qu’elle renvoie les boîtes aux lettres de dossiers publics proxy. Cette étape n’est pas nécessaire pour Exchange 2007.
     
-        Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+    ```powershell
+    Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+    ```
 
 5.  Répétez les étapes précédentes pour chaque serveur de dossiers publics au sein de votre organisation.
 
@@ -67,9 +75,11 @@ Les utilisateurs dont les boîtes aux lettres sont sur Exchange Server 2013 ou 2
 
 La dernière étape de cette procédure consiste à configurer les boîtes aux lettres des utilisateurs afin d'autoriser l'accès aux dossiers publics locaux hérités.
 
-Autorisez les utilisateurs sur site d’Exchange Server 2013 à accéder aux dossiers publics hérités. Vous allez pointer vers toutes les boîtes aux lettres de dossiers publics proxy que vous avez créées à l'[Step 2: Make remote public folders discoverable](configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md). Exécutez la commande suivante à partir d’un serveur Exchange 2013 disposant de la mise à jour cumulative 5 ou d’une mise à jour ultérieure.
+Autorisez les utilisateurs sur site d’Exchange Server 2013 à accéder aux dossiers publics hérités. Vous allez pointer vers toutes les boîtes aux lettres de dossiers publics proxy que vous avez créées à l'[Step 2: Make remote public folders discoverable](https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders). Exécutez la commande suivante à partir d’un serveur Exchange 2013 disposant de la mise à jour cumulative 5 ou d’une mise à jour ultérieure.
 
-    Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3
+```powershell
+Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3
+```
 
 > [!NOTE]  
 > Pour voir les modifications, vous devez attendre que la synchronisation ActiveDirectory soit terminée. Ce processus peut prendre plusieurs heures.

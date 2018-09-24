@@ -264,15 +264,21 @@ La cmdlet **Get-AgentLog** et le script **Get-AntiSpamFilteringReport.ps1** perm
 
 Le script **Get-AntiSpamFilteringReport.ps1** se situe dans `%ExchangeInstallPath%Scripts`. Vous devez exécuter le script dans l'environnement de ligne de commande Exchange Management Shell à partir du dossier Scripts. Pour modifier votre emplacement dans l'environnement de ligne de commande Exchange Management Shell pour le dossier Scripts, exécutez la commande suivante :
 
-    Cd $env:ExchangeInstallPath\Scripts
+```powershell
+Cd $env:ExchangeInstallPath\Scripts
+```
 
 Pour exécuter le script dans le dossier Scripts, utilisez la syntaxe suivante :
 
-    .\Get-AntiSpamFilteringReport.ps1 -report <ReportValue> [<OptionalParameters>]
+```powershell
+.\Get-AntiSpamFilteringReport.ps1 -report <ReportValue> [<OptionalParameters>]
+```
 
 Pour obtenir plus d'informations sur l'utilisation du script, exécutez la commande suivante :
 
-    Get-Help -Detailed .\Get-AntiSpamFilteringReport.ps1
+```powershell
+Get-Help -Detailed .\Get-AntiSpamFilteringReport.ps1
+```
 
 Retour au début
 

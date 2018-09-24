@@ -47,9 +47,7 @@ Pour d'autres tâches de gestion relatives aux stratégies d'adresse de messager
 
 2.  Dans l'affichage Liste, sélectionnez la stratégie d'adresse de messagerie à modifier, puis cliquez sur **Modifier**![Icône Modifier](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Icône Modifier").
 
-3.  
-    
-    Dans **Stratégie d'adresse de messagerie**, cliquez sur **Appliquer à** et modifiez les paramètres.
+3.  Dans **Stratégie d'adresse de messagerie**, cliquez sur **Appliquer à** et modifiez les paramètres.
 
 ## Utiliser le CAE pour modifier la priorité de la stratégie d'adresse de messagerie
 
@@ -63,7 +61,9 @@ Un utilisateur peut avoir plusieurs adresses de messagerie proxy pour le même c
 
 Cet exemple modifie la stratégie d'adresse de messagerie des bureaux de la région Sud-est qui inclut les destinataires basés en Géorgie, en Alabama et en Louisiane afin d'y ajouter également les destinataires basés au Texas.
 
-    Set-EmailAddressPolicy -Identity "South East Offices" -ConditionalStateorProvince "Georgia","Alabama","Louisiana","Texas"
+```powershell
+Set-EmailAddressPolicy -Identity "South East Offices" -ConditionalStateorProvince "Georgia","Alabama","Louisiana","Texas"
+```
 
 > [!NOTE]
 > Bien que la stratégie d'adresse de messagerie soit déjà appliquée aux destinataires basés en Géorgie, en Alabama et en Louisiane, vous devez les inclure au paramètre, car celui-ci remplace les valeurs. En effet, il n'ajoute pas de valeurs à celles existantes.

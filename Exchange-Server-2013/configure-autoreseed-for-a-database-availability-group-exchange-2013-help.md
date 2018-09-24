@@ -49,17 +49,23 @@ La première étape exige la configuration des répertoires racine pour les base
 
 Cet exemple montre comment configurer le chemin d'accès racine pour les bases de données.
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabasesRootFolderPath "C:\ExchDbs"
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabasesRootFolderPath "C:\ExchDbs"
+```
 
 Cet exemple montre comment configurer le chemin d'accès racine pour les volumes de stockage.
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
+```
 
 ## Comment savoir si cette étape a fonctionné ?
 
 Pour vérifier que vous avez bien configuré les chemins d'accès racine pour les bases de données et les volumes, exécutez la commande suivante :
 
-    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+```powershell
+Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+```
 
 Le résultat pour *AutoDagDatabasesRootFolderPath* et *AutoDagVolumesRootFolderPath* doit refléter les chemins configurés.
 
@@ -69,13 +75,17 @@ Configurez ensuite le nombre de bases de données par volume (*AutoDagDatabaseCo
 
 Cet exemple montre comment configurer ce paramètre AutoReseed pour un groupe de disponibilité de base de données configuré avec 4 bases de données par volume.
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
+```
 
 ## Comment savoir si cette étape a fonctionné ?
 
 Pour vérifier que vous avez bien configuré le nombre de bases de données par volume, exécutez la commande suivante :
 
-    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+```powershell
+Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+```
 
 Le résultat pour *AutoDagDatabaseCopiesPerVolume* doit refléter la valeur configurée.
 
@@ -83,15 +93,19 @@ Le résultat pour *AutoDagDatabaseCopiesPerVolume* doit refléter la valeur conf
 
 Créez ensuite les répertoires correspondant aux répertoires racine configurés à l'étape 1. Cet exemple montre comment créer les répertoires par défaut à l'aide de l'invite de commandes.
 
-    md C:\ExchangeDatabases
-    md C:\ExchangeVolumes
+```powershell
+md C:\ExchangeDatabases
+md C:\ExchangeVolumes
+```
    
 
 ## Comment savoir si cette étape a fonctionné ?
 
 Pour vérifier que vous avez bien configuré les répertoires racine des bases de données et des volumes, exécutez la commande suivante :
 
-    Dir C:\
+```powershell
+Dir C:\
+```
 
 Les répertoires créés devraient apparaître dans la liste des résultats.
 
@@ -111,31 +125,43 @@ Le nom des dossiers montés peut être n’importe quel nom de dossier, tant que
 
 Pour vérifier que vous avez bien monté les dossiers de volume, exécutez la commande suivante :
 
-    Dir C:\
+```powershell
+Dir C:\
+```
 
 Les dossiers montés devraient apparaître dans la liste des résultats.
 
 ## Étape 5 : Créer les dossiers de base de données
 
 Ensuite, créez les répertoires de base de données sous le chemin d'accès racine C:\\ExchangeDatabases. Cet exemple montre comment créer des répertoires pour une configuration de stockage avec 4 bases de données sur chaque volume.
+
+```powershell
+md c:\ExchangeDatabases\db001
 ```
-    md c:\ExchangeDatabases\db001
+
+
+```powershell
+md c:\ExchangeDatabases\db002
 ```
+
+
+```powershell
+md c:\ExchangeDatabases\db003
 ```
-    md c:\ExchangeDatabases\db002
+
+
+```powershell
+md c:\ExchangeDatabases\db004
 ```
-```
-    md c:\ExchangeDatabases\db003
-```
-```
-    md c:\ExchangeDatabases\db004
-```
+
 
 ## Comment savoir si cette étape a fonctionné ?
 
 Pour vérifier que vous avez bien monté les dossiers de base de données, exécutez la commande suivante :
 
-    Dir C:\ExchangeDatabases
+```powershell
+Dir C:\ExchangeDatabases
+```
 
 Les répertoires créés devraient apparaître dans la liste des résultats.
 
@@ -143,13 +169,17 @@ Les répertoires créés devraient apparaître dans la liste des résultats.
 
 Créez les points de montage pour chaque base de données et reliez le point de montage au bon volume. Par exemple, le dossier monté pour db001 devra être sur C:\\ExchangeDatabases\\db001. Pour ce faire, vous pouvez utiliser diskmgmt.msc ou mountvol.exe. Cet exemple montre comment monter db001 sur C:\\ExchangeDatabases\\db001 à l'aide de mountvol.exe.
 
-    Mountvol.exe c:\ExchangeDatabases\db001 \\?\Volume (GUID)
+```powershell
+Mountvol.exe c:\ExchangeDatabases\db001 \\?\Volume (GUID)
+```
 
 ## Comment savoir si cette étape a fonctionné ?
 
 Pour vérifier que vous avez bien créé les points de montage pour la base de données, exécutez la commande suivante :
 
-    Mountvol.exe C:\ExchangeDatabases\db001 /L
+```powershell
+Mountvol.exe C:\ExchangeDatabases\db001 /L
+```
 
 Le volume monté doit apparaître dans la liste des points de montage.
 
@@ -162,30 +192,39 @@ C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.db
 C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.log
 
 Cet exemple montre comment créer des répertoires pour 4 bases de données qui seront stockées sur le volume 1 :
+
+```powershell
+md c:\ExchangeDatabases\db001\db001.db
 ```
-    md c:\ExchangeDatabases\db001\db001.db
+
+```powershell
+md c:\ExchangeDatabases\db001\db001.log
 ```
+
+```powershell
+md c:\ExchangeDatabases\db002\db002.db
 ```
-    md c:\ExchangeDatabases\db001\db001.log
+
+```powershell
+md c:\ExchangeDatabases\db002\db002.log
 ```
+
+```powershell
+md c:\ExchangeDatabases\db003\db003.db
 ```
-    md c:\ExchangeDatabases\db002\db002.db
+
+```powershell
+md c:\ExchangeDatabases\db003\db003.log
 ```
+
+```powershell
+md c:\ExchangeDatabases\db004\db004.db
 ```
-    md c:\ExchangeDatabases\db002\db002.log
+
+```powershell
+md c:\ExchangeDatabases\db004\db004.log
 ```
-```
-    md c:\ExchangeDatabases\db003\db003.db
-```
-```
-    md c:\ExchangeDatabases\db003\db003.log
-```
-```
-    md c:\ExchangeDatabases\db004\db004.db
-```
-```
-    md c:\ExchangeDatabases\db004\db004.log
-```
+
 
 Répétez les commandes précédentes pour les bases de données sur chaque volume.
 
@@ -193,7 +232,9 @@ Répétez les commandes précédentes pour les bases de données sur chaque volu
 
 Pour vérifier que vous avez bien créé la structure de répertoires de base de données, exécutez la commande suivante :
 
-    Dir C:\ExchangeDatabases /s
+```powershell
+Dir C:\ExchangeDatabases /s
+```
 
 Les répertoires créés devraient apparaître dans la liste des résultats.
 
@@ -201,13 +242,17 @@ Les répertoires créés devraient apparaître dans la liste des résultats.
 
 Créez des bases de données avec les chemins d'accès de base de données et de journal configurés avec les dossiers appropriés. Cet exemple montre comment créer une base de données stockée dans le répertoire et la structure de points de montage nouvellement créés.
 
-    New-MailboxDatabase -Name db001 -Server MBX1 -LogFolderPath C:\ExchangeDatabases\db001\db001.log -EdbFilePath C:\ExchangeDatabases\db001\db001.db\db001.edb
+```powershell
+New-MailboxDatabase -Name db001 -Server MBX1 -LogFolderPath C:\ExchangeDatabases\db001\db001.log -EdbFilePath C:\ExchangeDatabases\db001\db001.db\db001.edb
+```
 
 ## Comment savoir si cette étape a fonctionné ?
 
 Pour vérifier que vous avez bien créé les bases de données dans le dossier approprié, exécutez la commande suivante :
 
-    Get-MailboxDatabase db001 | Format List *path*
+```powershell
+Get-MailboxDatabase db001 | Format List *path*
+```
 
 Les propriétés de la base de données renvoyées doivent indiquer que le fichier de la base de données et les fichiers journaux sont stockés dans les fichiers susmentionnés.
 
@@ -217,13 +262,18 @@ Pour vérifier que vous avez bien configuré AutoReseed pour un groupe de dispon
 
 1.  Exécutez la commande suivante pour vérifier que le groupe de disponibilité de base de données est configuré correctement :
     
-        Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+    ```powershell
+    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+    ```
 
 2.  Exécutez la commande suivante pour vérifier que la structure de répertoires est configurée correctement (vous trouverez ci-dessous les chemins d'accès par défaut ; si nécessaire, remplacez les chemins d'accès par ceux que vous utilisez).
+    
+    ```powershell
+    Dir C:\ExchangeDatabases /s
     ```
-        Dir c:\ExchangeDatabases /s
+    
+    ```powershell
+    Dir c:\ExchangeVolumes /s
     ```
-    ```
-        Dir c:\ExchangeVolumes /s
-    ```    
+    
 

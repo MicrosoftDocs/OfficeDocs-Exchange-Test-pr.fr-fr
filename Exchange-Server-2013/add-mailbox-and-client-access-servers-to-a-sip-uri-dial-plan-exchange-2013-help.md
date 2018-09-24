@@ -29,7 +29,7 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
 
   - Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Plans de numérotation de messagerie unifiée » dans la rubrique [Autorisations de messagerie unifiée](unified-messaging-permissions-exchange-2013-help.md).
 
-  - Avant d'effectuer ces procédures, vérifiez qu'un plan de numérotation de messagerie unifiée SIP URI a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](create-a-um-dial-plan-exchange-2013-help.md).
+  - Avant d'effectuer ces procédures, vérifiez qu'un plan de numérotation de messagerie unifiée SIP URI a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
@@ -55,7 +55,9 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
 
 Cet exemple ajoute le serveur de boîtes aux lettres `MyMailboxServer` à un plan de numérotation URI SIP nommé `MySIPDialPlan` et l'empêche d'accepter de nouveaux appels. Il montre également comment définir le mode de démarrage sur Double pour que le serveur de messagerie unifiée accepte les demandes TCP et TLS.
 
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan -Status Disabled -UMStartupMode Dual
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan -Status Disabled -UMStartupMode Dual
+```
 
 Cet exemple ajoute le serveur de boîtes aux lettres `MyMailboxServer` à deux plans de numérotation SIP nommés `MySIPDialPlan` et `MySIPDialPlan2` et définit la configuration suivante :
 
@@ -67,7 +69,9 @@ Cet exemple ajoute le serveur de boîtes aux lettres `MyMailboxServer` à deux p
 
 <!-- end list -->
 
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -MaxCallsAllowed 50 -SipAccessService northamerica.lyncpoolna.contoso.com
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -MaxCallsAllowed 50 -SipAccessService northamerica.lyncpoolna.contoso.com
+```
 
 ## Utiliser le Centre d'administration Exchange (CAE) pour ajouter un serveur d'accès au client à un plan de numérotation URI SIP
 
@@ -85,9 +89,13 @@ Cet exemple ajoute le serveur de boîtes aux lettres `MyMailboxServer` à deux p
 
 Cet exemple ajoute le serveur d'accès au client `MyClientAccessServer` à un plan de numérotation URI SIP nommé `MySIPDialPlan`. Il montre également comment définir le mode de démarrage sur Double pour que le serveur d'accès au client accepte les demandes TCP et TLS.
 
-    Set-UMCallRouterSettings -DialPlans MySIPDialPlan -Server MyClientAccessServer -UMStartupMode Dual
+```powershell
+Set-UMCallRouterSettings -DialPlans MySIPDialPlan -Server MyClientAccessServer -UMStartupMode Dual
+```
 
 Cet exemple ajoute le serveur d'accès au client `MyClientAccessServer` à deux plans de numérotation SIP nommés `MySIPDialPlan` et `MySIPDialPlan2`, et permet au serveur d'utiliser les adresses IPv4 et IPv6.
 
-    Set-UMCallRouterSettings -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -Server MyClientAccessServer
+```powershell
+Set-UMCallRouterSettings -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -Server MyClientAccessServer
+```
 

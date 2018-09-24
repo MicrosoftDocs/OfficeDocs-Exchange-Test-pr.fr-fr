@@ -75,10 +75,12 @@ Pour savoir comment les utilisateurs peuvent accéder aux boîtes aux lettres pa
 Cet exemple crée la boîte aux lettres partagée Sales Department et octroie les autorisations Full Access (Accès total) et Send on Behalf (Envoyer de la part de) au groupe de sécurité MarketingSG. Les autorisations d'accès à la boîte aux lettres seront accordées aux utilisateurs membres du groupe de sécurité.
 
 > [!NOTE]
-> Cet exemple suppose que vous avez déjà créé le groupe de sécurité MarketingSG et que ce dernier est à extension messagerie. Consultez la rubrique <a href="manage-mail-enabled-security-groups-exchange-2013-help.md">Gérer les groupes de sécurité à extension de messagerie</a>.
+> Cet exemple suppose que vous avez déjà créé le groupe de sécurité MarketingSG et que ce dernier est à extension messagerie. Consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups">Gérer les groupes de sécurité à extension de messagerie</a>.
 
 
-    New-Mailbox -Shared -Name "Sales Department" -DisplayName "Sales Department" -Alias Sales | Set-Mailbox -GrantSendOnBehalfTo MarketingSG | Add-MailboxPermission -User MarketingSG -AccessRights FullAccess -InheritanceType All
+```powershell
+New-Mailbox -Shared -Name "Sales Department" -DisplayName "Sales Department" -Alias Sales | Set-Mailbox -GrantSendOnBehalfTo MarketingSG | Add-MailboxPermission -User MarketingSG -AccessRights FullAccess -InheritanceType All
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-Mailbox](https://technet.microsoft.com/fr-fr/library/aa997663\(v=exchg.150\)).
 

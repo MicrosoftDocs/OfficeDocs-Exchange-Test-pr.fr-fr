@@ -45,15 +45,21 @@ Lorsque vous activez ou désactivez l’agent de filtrage des pièces jointes, l
 
 Pour désactiver le filtrage des pièces jointes, exécutez la commande suivante :
 
-    Disable-TransportAgent "Attachment Filtering Agent"
+```powershell
+Disable-TransportAgent "Attachment Filtering Agent"
+```
 
 Pour activer le filtrage des pièces jointes, exécutez la commande suivante :
 
-    Enable-TransportAgent "Attachment Filtering Agent"
+```powershell
+Enable-TransportAgent "Attachment Filtering Agent"
+```
 
 Après avoir activé ou désactivé le filtrage des pièces jointes, redémarrez le service de transport Microsoft Exchange en exécutant la commande suivante :
 
-    Restart-Service MSExchangeTransport
+```powershell
+Restart-Service MSExchangeTransport
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -61,7 +67,9 @@ Pour vérifier que vous avez bien activé ou désactivé le filtrage des pièces
 
 1.  Exécutez la commande suivante :
     
-        Get-TransportAgent "Attachment Filtering Agent"
+    ```powershell
+    Get-TransportAgent "Attachment Filtering Agent"
+    ```
 
 2.  Si la valeur de **Enabled** est `True`, le filtrage des pièces jointes est activé. Si la valeur est `False`, le filtrage des pièces jointes est désactivé.
 
@@ -69,41 +77,59 @@ Pour vérifier que vous avez bien activé ou désactivé le filtrage des pièces
 
 Les entrées de filtrage des pièces jointes définissent les pièces jointes de messages que vous voulez empêcher d’entrer dans votre organisation. Pour afficher les entrées de filtrage des pièces jointes utilisées par l’agent de filtrage des pièces jointes, exécutez la commande suivante :
 
-    Get-AttachmentFilterEntry | Format-Table
+```powershell
+Get-AttachmentFilterEntry | Format-Table
+```
 
 Pour afficher une entrée de type de contenu MIME spécifique, utilisez la syntaxe suivante :
 
-    Get-AttachmentFilteringEntry ContentType:<MIMEContentType>
+```powershell
+Get-AttachmentFilteringEntry ContentType:<MIMEContentType>
+```
 
 Par exemple, pour afficher l’entrée de type de contenu pour les images JPEG, exécutez la commande suivante :
 
-    Get-AttachmentFilteringEntry ContentType:image/jpeg
+```powershell
+Get-AttachmentFilteringEntry ContentType:image/jpeg
+```
 
 Pour afficher une entrée de nom de fichier ou d’extension de nom de fichier spécifique, utilisez la syntaxe suivante :
 
-    Get-AttachmentFilteringEntry FileName:<FileName or FileNameExtension>
+```powershell
+Get-AttachmentFilteringEntry FileName:<FileName or FileNameExtension>
+```
 
 Par exemple, pour afficher l’entrée d’extension de nom de fichier pour les pièces jointes au format JPEG, exécutez la commande suivante :
 
-    Get-AttachmentFilteringEntry FileName:*.jpg
+```powershell
+Get-AttachmentFilteringEntry FileName:*.jpg
+```
 
 ## Utiliser l’environnement Exchange Management Shell pour ajouter des entrées de filtrage des pièces jointes
 
 Pour ajouter une entrée de filtrage des pièces jointes qui filtre les pièces jointes par type de contenu MIME, utilisez la syntaxe suivante :
 
-    Add-AttachmentFilterEntry -Name <MIMEContentType> -Type ContentType
+```powershell
+Add-AttachmentFilterEntry -Name <MIMEContentType> -Type ContentType
+```
 
 L’exemple suivant ajoute une entrée de type de contenu MIME qui permet de filtrer les images JPEG.
 
-    Add-AttachmentFilterEntry -Name image/jpeg -Type ContentType
+```powershell
+Add-AttachmentFilterEntry -Name image/jpeg -Type ContentType
+```
 
 Pour ajouter une entrée de filtrage des pièces jointes qui filtre les pièces jointes par nom de fichier ou extension de nom de fichier, utilisez la syntaxe suivante :
 
-    Add-AttachmentFilterEntry -Name <FileName or FileNameExtension> -Type FileName
+```powershell
+Add-AttachmentFilterEntry -Name <FileName or FileNameExtension> -Type FileName
+```
 
 L’exemple suivant filtre les pièces jointes portant l’extension de nom de fichier .jpg.
 
-    Add-AttachmentFilterEntry -Name *.jpg -Type FileName
+```powershell
+Add-AttachmentFilterEntry -Name *.jpg -Type FileName
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -111,7 +137,9 @@ Pour vérifier que vous avez bien ajouté une entrée de filtrage des pièces jo
 
 1.  Exécutez la commande suivante pour vérifier que l’entrée de filtrage existe.
     
-        Get-AttachmentFilterEntry | Format-Table
+    ```powershell
+    Get-AttachmentFilterEntry | Format-Table
+    ```
 
 2.  Envoyez un message de test contenant une pièce jointe interdite à un destinataire interne à partir d’une boîte aux lettres externe et vérifiez que le message a bien été rejeté ou supprimé.
 
@@ -119,19 +147,27 @@ Pour vérifier que vous avez bien ajouté une entrée de filtrage des pièces jo
 
 Pour supprimer une entrée de filtrage des pièces jointes qui filtre les pièces jointes par type de contenu MIME, utilisez la syntaxe suivante :
 
-    Remove-AttachmentFilterEntry ContentType:<ContentType>
+```powershell
+Remove-AttachmentFilterEntry ContentType:<ContentType>
+```
 
 L’exemple suivant supprime l’entrée de type de contenu MIME pour les images JPEG.
 
-    Remove-AttachmentFilterEntry ContentType:image/jpeg
+```powershell
+Remove-AttachmentFilterEntry ContentType:image/jpeg
+```
 
 Pour supprimer une entrée de filtrage des pièces jointes qui filtre les pièces jointes par nom de fichier ou extension de nom de fichier, utilisez la syntaxe suivante :
 
-    Remove-AttachmentFilterEntry FileName:<FileName or FileNameExtension>
+```powershell
+Remove-AttachmentFilterEntry FileName:<FileName or FileNameExtension>
+```
 
 L’exemple suivant supprime l’entrée de nom de fichier pour l’extension de nom de fichier .jpg.
 
-    Remove-AttachmentFilterEntry FileName:*.jpg
+```powershell
+Remove-AttachmentFilterEntry FileName:*.jpg
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -139,7 +175,9 @@ Pour vérifier que vous avez bien supprimé une entrée de filtrage des pièces 
 
 1.  Exécutez la commande suivante pour vérifier que l’entrée de filtrage a bien été supprimée.
     
-        Get-AttachmentFilterEntry | Format-Table
+    ```powershell
+    Get-AttachmentFilterEntry | Format-Table
+    ```
 
 2.  Envoyez un message de test contenant une pièce jointe autorisée à un destinataire interne à partir d’une boîte aux lettres externe et vérifiez que le message a bien été reçu avec la pièce jointe.
 
@@ -147,13 +185,17 @@ Pour vérifier que vous avez bien supprimé une entrée de filtrage des pièces 
 
 Pour afficher l’action de filtrage des pièces jointes utilisée lors de la détection d’une pièce jointe interdite dans un message, exécutez la commande suivante :
 
-    Get-AttachmentFilterListConfig
+```powershell
+Get-AttachmentFilterListConfig
+```
 
 ## Utiliser l’environnement Exchange Management Shell pour configurer l’action de filtrage des pièces jointes
 
 Pour configurer l’action de filtrage des pièces jointes à appliquer lors de la détection d’une pièce jointe interdite dans un message, utilisez la syntaxe suivante :
 
-    Set-AttachmentFilterListConfig [-Action <Reject | Strip | SilentDelete>] [-RejectResponse "<Message text>"] [-AdminMessage "<Replacement file text>"] [-ExceptionConnectors <ConnectorGUID>]
+```powershell
+Set-AttachmentFilterListConfig [-Action <Reject | Strip | SilentDelete>] [-RejectResponse "<Message text>"] [-AdminMessage "<Replacement file text>"] [-ExceptionConnectors <ConnectorGUID>]
+```
 
 Cet exemple apporte les modifications suivantes à la configuration du filtrage des pièces jointes :
 
@@ -163,7 +205,9 @@ Cet exemple apporte les modifications suivantes à la configuration du filtrage 
 
 <!-- end list -->
 
-    Set-AttachmentFilterListConfig -Action Reject -RejectResponse "This message contains a prohibited attachment. Your message can't be delivered. Please resend the message without the attachment."
+```powershell
+Set-AttachmentFilterListConfig -Action Reject -RejectResponse "This message contains a prohibited attachment. Your message can't be delivered. Please resend the message without the attachment."
+```
 
 Pour plus d’informations, consultez la rubrique [Set-AttachmentFilterListConfig](https://technet.microsoft.com/fr-fr/library/bb123483\(v=exchg.150\)).
 

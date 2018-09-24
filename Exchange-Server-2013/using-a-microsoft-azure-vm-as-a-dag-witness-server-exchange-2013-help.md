@@ -177,27 +177,31 @@ Le portail de gestion Azure ne vous permet pas actuellement de configurer un VPN
 
 Ouvrez le fichier que vous avez exporté dans un éditeur XML. Les connexions de passerelle à vos sites locaux sont répertoriées dans la section « ConnectionsToLocalNetwork ». Recherchez ce terme dans le fichier XML pour localiser la section. Cette section du fichier de configuration ressemblera à ceci (en supposant que le nom de site que vous avez créé pour votre site local est « Site A »).
 
-    <ConnectionsToLocalNetwork>
+```powershell
+<ConnectionsToLocalNetwork>
     
         <LocalNetworkSiteRef name="Site A">
     
             <Connection type="IPsec" />
     
     </LocalNetworkSiteRef>
+```
 
 Pour configurer votre deuxième site, ajoutez une autre section « LocalNetworkSiteRef » sous la section « ConnectionsToLocalNetwork ». La section dans le fichier de configuration mis à jour se présentera comme suit (en supposant que le nom du site de votre deuxième site local est « Site B »).
 
-    <ConnectionsToLocalNetwork>
-    
-        <LocalNetworkSiteRef name="Site A">
-    
-            <Connection type="IPsec" />
-    
-        <LocalNetworkSiteRef name="Site B">
-    
-            <Connection type="IPsec" />
-    
-    </LocalNetworkSiteRef>
+```powershell
+<ConnectionsToLocalNetwork>
+
+    <LocalNetworkSiteRef name="Site A">
+
+        <Connection type="IPsec" />
+
+    <LocalNetworkSiteRef name="Site B">
+
+        <Connection type="IPsec" />
+
+</LocalNetworkSiteRef>
+```
 
 Enregistrez le fichier de paramètres de configuration mis à jour.
 
@@ -215,9 +219,13 @@ Vous devez utiliser PowerShell pour obtenir les clés pré-partagées. Si vous n
 
 Utilisez la cmdlet [Get-AzureVNetGatewayKey](http://msdn.microsoft.com/fr-fr/library/azure/dn495198.aspx) pour extraire les clés pré-partagées. Exécutez cette cmdlet une fois pour chaque tunnel. L'exemple suivant illustre les commandes que vous devez exécuter pour extraire les clés pour des tunnels entre le réseau virtuel « Site Azure » et les sites « Site A » et « Site B ». Dans cet exemple, les résultats sont enregistrés dans des fichiers distincts. Vous pouvez également mettre ces clés en pipeline avec d'autres cmdlets PowerShell ou les utiliser dans un script.
 
-    Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site A" > C:\Keys\KeysForTunnelToSiteA.txt 
+```powershell
+Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site A" > C:\Keys\KeysForTunnelToSiteA.txt 
+```
     
-    Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site B" > C:\Keys\KeysForTunnelToSiteB.txt
+```powershell
+Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site B" > C:\Keys\KeysForTunnelToSiteB.txt
+```
 
 ## Configurer des périphériques VPN locaux
 
@@ -253,17 +261,21 @@ D'autres périphériques peuvent nécessiter des vérifications supplémentaires
 
 À ce stade, vos deux sites sont connectés à votre réseau virtuel Azure via les passerelles VPN. Vous pouvez valider l'état du VPN multisite en exécutant la commande suivante dans PowerShell.
 
-    Get-AzureVnetConnection -VNetName "Azure Site" | Format-Table LocalNetworkSiteName, ConnectivityState
+```powershell
+Get-AzureVnetConnection -VNetName "Azure Site" | Format-Table LocalNetworkSiteName, ConnectivityState
+```
 
 Si les deux tunnels sont en cours d'exécution, la sortie de cette commande ressemble à la suivante.
 
-    LocalNetworkSiteName    ConnectivityState
-    
-    --------------------    -----------------
-    
-    Site A                  Connected
-    
-    Site B                  Connected
+```powershell
+LocalNetworkSiteName    ConnectivityState
+
+--------------------    -----------------
+
+Site A                  Connected
+
+Site B                  Connected
+```
 
 Vous pouvez également vérifier la connectivité en consultant le tableau de bord de réseau virtuel dans le portail de gestion Azure. La colonne **État** pour les deux sites affiche **Connecté**.
 
@@ -279,9 +291,13 @@ Vous devez créer au moins deux machines virtuelles dans Microsoft Azure pour ce
 
 2.  Spécifiez les adresses IP préférées pour le contrôleur de domaine et le serveur de fichiers à l'aide d'Azure PowerShell. Lorsque vous spécifiez une adresse IP préférée pour une machine virtuelle, elle doit être mise à jour, ce qui nécessite le redémarrage de la machine virtuelle. L'exemple suivant définit les adresses IP pour Azure-DC et Azure-FSW sur 10.0.0.10 et 10.0.0.11, respectivement.
     
-        Get-AzureVM Azure-DC | Set-AzureStaticVNetIP -IPAddress 10.0.0.10 | Update-AzureVM
+    ```powershell
+    Get-AzureVM Azure-DC | Set-AzureStaticVNetIP -IPAddress 10.0.0.10 | Update-AzureVM
+    ```
         
-        Get-AzureVM Azure-FSW | Set-AzureStaticVNetIP -IPAddress 10.0.0.11 | Update-AzureVM
+    ```powershell
+    Get-AzureVM Azure-FSW | Set-AzureStaticVNetIP -IPAddress 10.0.0.11 | Update-AzureVM
+    ```
     
     > [!NOTE]
     > Une machine virtuelle avec une adresse IP préférée tentera d'utiliser cette adresse. Toutefois, si cette adresse a été attribuée à une machine virtuelle différente, la machine virtuelle avec la configuration d'adresse IP préférée ne démarrera pas. Pour éviter cette situation, assurez-vous que l'adresse IP que vous utilisez n'est pas affectée à une autre machine virtuelle. Consultez <a href="http://msdn.microsoft.com/fr-fr/library/azure/dn630228.aspx">Configuration d'une adresse IP interne statique pour une machine virtuelle</a> pour plus d'informations.
@@ -313,7 +329,9 @@ Enfin, vous devez configurer votre DAG pour utiliser le nouveau serveur témoin.
 
 2.  Exécutez la commande suivante pour configurer le serveur témoin pour vos DAG.
     
-        Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
+    ```powershell
+    Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
+    ```
 
 Pour plus d'informations, consultez les sections suivantes :
 
@@ -327,17 +345,23 @@ Pour plus d'informations, consultez les sections suivantes :
 
 1.  Validez la configuration DAG en exécutant la commande suivante.
     
-        Get-DatabaseAvailabilityGroup -Identity DAG1 -Status | Format-List Name, WitnessServer, WitnessDirectory, WitnessShareInUse
+    ```powershell
+    Get-DatabaseAvailabilityGroup -Identity DAG1 -Status | Format-List Name, WitnessServer, WitnessDirectory, WitnessShareInUse
+    ```
     
     Vérifiez que le paramètre *WitnessServer* est défini sur le serveur de fichiers sur Azure, que le paramètre *WitnessDirectory* est défini sur le chemin d'accès correct et que le paramètre *WitnessShareInUse* affiche **Primary**.
 
 2.  Si le DAG comporte un nombre pair de nœuds, le témoin de partage de fichiers est configuré. Validez le paramètre de témoin de partage de fichiers dans les propriétés de cluster en exécutant la commande suivante. La valeur du paramètre *SharePath* doit pointer vers le serveur de fichiers et afficher le chemin d'accès correct.
     
-        Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
+    ```powershell
+    Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
+    ```
 
 3.  Ensuite, vérifiez l'état de la ressource de cluster « Témoin de partage de fichiers » en exécutant la commande suivante. L'*State* de la ressource de cluster doit afficher **Online**.
     
-        Get-ClusterResource -Cluster MBX1
+    ```powershell
+    Get-ClusterResource -Cluster MBX1
+    ```
 
 4.  Enfin, vérifiez que le partage est créé sur le serveur de fichiers en analysant le dossier dans l'Explorateur de fichiers et les partages dans le Gestionnaire de serveur.
 

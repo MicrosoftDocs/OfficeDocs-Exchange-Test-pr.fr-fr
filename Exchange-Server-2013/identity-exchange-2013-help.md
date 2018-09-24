@@ -35,12 +35,16 @@ Le paramètre *Identity* est également considéré comme paramètre positionnel
 
 L’exemple suivant illustre l’utilisation du paramètre *Identity* en utilisant la valeur unique du paramètre *Name* du connecteur de réception. Cet exemple montre également comment omettre le nom de paramètre *Identity*, car le paramètre *Identity* est un paramètre positionnel.
 
-    Get-ReceiveConnector -Identity "From the Internet"
-    Get-ReceiveConnector "From the Internet"
+```powershell
+Get-ReceiveConnector -Identity "From the Internet"
+Get-ReceiveConnector "From the Internet"
+```
 
 Comme tous les objets dans Exchange 2013, ce connecteur de réception peut également être désigné par son GUID unique. Par exemple, si le connecteur de réception nommé `"From the Internet"` est également associé au GUID `63d64005-42c5-4f8f-b310-14f6cb125bf3`, vous pouvez extraire le connecteur de réception à l’aide de la commande suivante :
 
-    Get-ReceiveConnector 63d64005-42c5-4f8f-b310-14f6cb125bf3
+```powershell
+Get-ReceiveConnector 63d64005-42c5-4f8f-b310-14f6cb125bf3
+```
 
 Retour au début
 
@@ -66,11 +70,15 @@ Les exemples décrits dans cette rubrique montrent comment le paramètre *Identi
 
 Les exemples fournis dans cette section font référence aux messages de notification d’état de remise (DSN) que vous pouvez configurer dans une organisation Exchange 2013. Le premier exemple montre comment extraire DSN 5.4.1 à l’aide de la cmdlet **Get-SystemMessage**. Dans la cmdlet **Get-SystemMessage**, le paramètre *Identity* comporte plusieurs éléments de données configurés sur chaque objet de message DSN. Ces éléments de données indiquent la langue dans laquelle la DSN est écrite, si sa portée est interne ou externe et le code du message DSN comme dans l’exemple suivant :
 
-    Get-SystemMessage en\internal\5.4.1
+```powershell
+Get-SystemMessage en\internal\5.4.1
+```
 
 Vous pouvez également extraire ce message DSN à l’aide de son GUID comme dans l’exemple suivant, car tous les objets dans Exchange 2013 ont un GUID :
 
-    Get-SystemMessage 82ca7bde-1c2d-4aa1-97e1-f298a6f10222
+```powershell
+Get-SystemMessage 82ca7bde-1c2d-4aa1-97e1-f298a6f10222
+```
 
 Pour plus d’informations sur la composition du paramètre *Identity* en cas d’utilisation avec les cmdlets **SystemMessage**, voir [Identité du message DSN](dsn-message-identity-exchange-2013-help.md).
 
@@ -78,19 +86,27 @@ Pour plus d’informations sur la composition du paramètre *Identity* en cas d�
 
 Les exemples de cette section font référence aux entrées de rôle de gestion qui constituent les rôles de gestion dans Exchange 2013. Les rôles de gestion permettent de contrôler les autorisations qui sont accordées aux administrateurs et aux utilisateurs finaux. Les entrées de rôle de gestion sont constituées de deux parties : le rôle de gestion auquel elles sont associées et une cmdlet. Le paramètre Identity est de même constitué du nom du rôle de gestion et du nom de la cmdlet. L’exemple suivant montre l’entrée de rôle pour la cmdlet **Set-Mailbox** sur le rôle `Mail Recipients` :
 
-    Mail Recipients\Set-Mailbox
+```powershell
+Mail Recipients\Set-Mailbox
+```
 
 L’entrée de rôle `Mail Recipients\Set-Mailbox` est l’une des centaines d’entrées pour le rôle `Mail Recipients`. Pour afficher toutes les entrées de rôle pour le rôle `Mail Recipients`, utilisez la commande suivante :
 
-    Get-ManagementRoleEntry "Mail Recipients\*"
+```powershell
+Get-ManagementRoleEntry "Mail Recipients\*"
+```
 
 Pour afficher toutes les entrées de rôle pour le rôle `Mail Recipients` contenant la chaîne « `Mailbox` », utilisez la commande suivante :
 
-    Get-ManagementRoleEntry "Mail Recipients\*Mailbox*"
+```powershell
+Get-ManagementRoleEntry "Mail Recipients\*Mailbox*"
+```
 
 Pour afficher tous les rôles de gestion pour lequel **Set-Mailbox** est l’une des entrées de rôle, utilisez la commande suivante :
 
-    Get-ManagementRoleEntry *\Set-Mailbox
+```powershell
+Get-ManagementRoleEntry *\Set-Mailbox
+```
 
 Les entrées de rôle vous permettent d’utiliser le caractère générique (\*) de différentes manières pour rechercher les informations dont vous avez besoin dans Exchange 2013.
 

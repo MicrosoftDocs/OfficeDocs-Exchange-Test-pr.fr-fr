@@ -51,7 +51,9 @@ Vous pouvez ajouter des modules linguistiques de messagerie unifiée à l'aide d
 
 Cet exemple utilise la commande setup.exe pour installer le module linguistique de messagerie unifiée (ja-JP).
 
-    setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```powershell
+setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 ## Étape 2 : déplacement des messages d'accueil, annonces, menus et invites Exchange 2007 personnalisés vers la boîte aux lettres système Exchange 2013
 
@@ -61,11 +63,15 @@ Par défaut, les boîtes aux lettres système sont invisibles dans le Centre d'a
 
 Cette commande renvoie la liste de toutes les boîtes aux lettres système.
 
-    Get-Mailbox -Arbitration
+```powershell
+Get-Mailbox -Arbitration
+```
 
 Cette commande renvoie la liste des boîtes aux lettres système et de leurs propriétés ou paramètres individuels.
 
-    Get-Mailbox -Arbitration |fl
+```powershell
+Get-Mailbox -Arbitration |fl
+```
 
 Lorsque vous importez des messages d'accueil, annonces, menus et invites personnalisés à partir d'Exchange 2007 dans Exchange 2013, vous devez utiliser le script MigrateUMCustomPrompts.ps1. Vous pouvez importer des messages d'accueil, annonces, menus et invites personnalisés à l'aide du CAE. Le script MigrateUMCustomPrompts.ps1 migre une copie de tous les messages d'accueil, annonces, menus et invites personnalisés de messagerie unifiée Exchange Server 2007 vers la messagerie unifiée Exchange 2013. Par défaut, le script MigrateUMCustomPrompts.ps1 se trouve dans le dossier *\<Program Files\>*\\Microsoft\\Exchange Server\\V15\\Scripts sur un serveur de boîtes aux lettres Exchange 2013 et doit être exécuté à partir d'un serveur de boîtes aux lettres Exchange 2013. Pour exécuter le script :
 
@@ -113,12 +119,14 @@ Pour permettre à la messagerie unifiée de chiffrer des données échangées en
     
     6.  Vérifiez que les domaines inclus sont corrects, puis cliquez sur **Terminer**.
     
-    > [!NOTE]
+    > [!IMPORTANT]  
     > Lorsque vous utilisez le CAE pour créer un certificat, vous n’êtes pas invité à activer les services pour ce dernier. Une fois le certificat créé, vous pouvez utiliser le CAE pour activer les services. Pour plus d'informations sur l'activation d'un certificat pour des services, consultez la rubrique <a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assigner un certificat pour les services de messagerie unifiée et de routeur d’appels UM</a>.
     
     Créez un certificat auto-signé Exchange en exécutant la commande suivante dans l'environnement de ligne de commande.
     
-        New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
+    ```powershell
+    New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
+    ```
     
     > [!TIP]
     > Si vous spécifiez les services que vous voulez activer à l'aide du paramètre <em>Services</em>, vous êtes invité à les activer pour le certificat que vous avez créé. Dans cet exemple, vous êtes invité à activer le certificat pour les services de messagerie unifiée et de routeur d'appels de messagerie unifiée. Pour plus d'informations sur l'activation d'un certificat pour des services, consultez la rubrique <a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assigner un certificat pour les services de messagerie unifiée et de routeur d’appels UM</a>.
@@ -136,7 +144,9 @@ Pour permettre à la messagerie unifiée de chiffrer des données échangées en
     
     Activez un certificat auto-signé Exchange en exécutant la commande suivante dans l'environnement de ligne de commande.
     
-        Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+    ```powershell
+    Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+    ```
 
   - Configurez tout plan de numérotation de messagerie unifiée nouveau ou existant comme Sécurisé ou Sécurisé SIP.
 
@@ -172,7 +182,9 @@ Si vous utilisez des plans de numérotation de type Sécurisé ou Sécurisé SIP
 
 À l'aide du CAE, configurez le mode de démarrage de messagerie unifiée sur un serveur d'accès au client Exchange 2013 en exécutant la commande suivante dans l'environnement de ligne de commande.
 
-    Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupMode Dual
+```powershell
+Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupMode Dual
+```
 
 ## Étape 5 : configuration du mode de démarrage de messagerie unifiée sur tous les serveurs de boîtes aux lettres Exchange 2013
 
@@ -198,13 +210,15 @@ Si vous utilisez des plans de numérotation de type Sécurisé ou Sécurisé SI
 
 Configurez le mode de démarrage de messagerie unifiée sur un serveur de boîtes aux lettres Exchange 2013 en exécutant la commande suivante dans l'environnement de ligne de commande:
 
-    Set-UMService -Identity MyUMServer -ExternalHostFqdn host.external.contoso.com -IPAddressFamily Any -UMStartupMode Dual
+```powershell
+Set-UMService -Identity MyUMServer -ExternalHostFqdn host.external.contoso.com -IPAddressFamily Any -UMStartupMode Dual
+```
 
 ## Étape 6 : création ou configuration des plans de numérotation de messagerie unifiée
 
 En fonction de votre déploiement Exchange 2007 existant, il se peut que vous deviez créer ou configurer des plans de numérotation de messagerie unifiée. Un plan de numérotation de messagerie unifiée représente un ensemble de PBX classiques, IP ou compatibles SIP, qui partagent des numéros de poste d'utilisateur communs. Tous les postes d'utilisateur hébergés sur des PBX classiques, IP ou compatibles SIP dans un plan de numérotation contiennent le même nombre de chiffres. Les utilisateurs peuvent appeler les postes d'autres utilisateurs sans ajouter de numéro spécial à leur extension ou composer un numéro de téléphone complet.
 
-Des plans de numérotation de messagerie unifiée sont utilisés dans la messagerie unifiée pour garantir que les postes téléphoniques des utilisateurs sont uniques. Certains réseaux téléphoniques englobent plusieurs PBX classiques, IP ou compatibles SIP. Dans ces réseaux de téléphonie, deux utilisateurs peuvent posséder le même numéro de poste. Les plans de numérotation de messagerie unifiée résolvent cette situation. Placer les deux utilisateurs dans deux plans de numérotation de messagerie unifiée distincts rend leur extension unique. Pour plus d'informations, consultez la rubrique [Plans de numérotation de messagerie unifiée](um-dial-plans-exchange-2013-help.md).
+Des plans de numérotation de messagerie unifiée sont utilisés dans la messagerie unifiée pour garantir que les postes téléphoniques des utilisateurs sont uniques. Certains réseaux téléphoniques englobent plusieurs PBX classiques, IP ou compatibles SIP. Dans ces réseaux de téléphonie, deux utilisateurs peuvent posséder le même numéro de poste. Les plans de numérotation de messagerie unifiée résolvent cette situation. Placer les deux utilisateurs dans deux plans de numérotation de messagerie unifiée distincts rend leur extension unique. Pour plus d'informations, consultez la rubrique [Plans de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-dial-plans).
 
 Si nécessaire, vous pouvez créer un plan de numérotation de messagerie unifiée à l'aide du CAE :
 
@@ -232,7 +246,9 @@ Si nécessaire, vous pouvez créer un plan de numérotation de messagerie unifi�
 
 Si nécessaire, vous pouvez créer un plan de numérotation de messagerie unifiée en exécutant la commande suivante dans l'environnement de ligne de commande.
 
-    New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -VoIPSecurity Secured
+```powershell
+New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -VoIPSecurity Secured
+```
 
 Si nécessaire, vous pouvez configurer un plan de numérotation de messagerie unifiée existant à l'aide du CAE :
 
@@ -244,7 +260,9 @@ Si nécessaire, vous pouvez configurer un plan de numérotation de messagerie un
 
 Si nécessaire, vous pouvez configurer un plan de numérotation de messagerie unifiée existant en exécutant la commande suivante dans l'environnement de ligne de commande.
 
-    Set-UMDialplan -Identity MyDialPlan -AccessTelephoneNumbers 4255551234 -AudioCodec Wma -CallAnsweringRulesEnabled $false -OutsideLineAccessCode 9 -VoIPSecurity SIPSecured
+```powershell
+Set-UMDialplan -Identity MyDialPlan -AccessTelephoneNumbers 4255551234 -AudioCodec Wma -CallAnsweringRulesEnabled $false -OutsideLineAccessCode 9 -VoIPSecurity SIPSecured
+```
 
 Lorsque vous avez déployé la messagerie unifiée Exchange 2007, vous avez dû ajouter un serveur de messagerie unifiée à un plan de numérotation de messagerie unifiée pour qu'il puisse répondre aux appels entrants. Cela n'est plus nécessaire. Dans Exchange 2013, les serveurs d'accès au client et de boîtes aux lettres ne peuvent pas être liés à un plan de numérotation de poste téléphonique ou E.164, mais doivent être liés à des plans de numérotation URI SIP. Les serveurs d'accès au client et de boîtes aux lettres répondent à tous les appels entrants pour tous les types de plans de numérotation.
 
@@ -254,7 +272,7 @@ En fonction de votre déploiement Exchange 2007 existant, il se peut que vous d
 
 Une passerelle IP de messagerie unifiée représente une passerelle VoIP, un PBX IP ou un PBX compatible SIP physiques. Pour pouvoir utiliser une passerelle VoIP, un PBX IP ou un PBX compatible SIP afin de répondre aux appels entrants et d'émettre des appels pour des utilisateurs de messagerie vocale, une passerelle IP de messagerie unifiée doit être créée dans le service d'annuaire.
 
-L'association de la passerelle IP de messagerie unifiée et d'un groupement de postes de messagerie unifiée établit un lien entre une passerelle VoIP, un PBX IP, ou un PBX compatible SIP, et un plan de numérotation de messagerie unifiée. En créant plusieurs groupements de postes de messagerie unifiée, vous pouvez associer une passerelle IP de messagerie unifiée unique à plusieurs plans de numérotation de messagerie unifiée. Pour plus d'informations, consultez la rubrique [Passerelles IP de messagerie unifiée](um-ip-gateways-exchange-2013-help.md).
+L'association de la passerelle IP de messagerie unifiée et d'un groupement de postes de messagerie unifiée établit un lien entre une passerelle VoIP, un PBX IP, ou un PBX compatible SIP, et un plan de numérotation de messagerie unifiée. En créant plusieurs groupements de postes de messagerie unifiée, vous pouvez associer une passerelle IP de messagerie unifiée unique à plusieurs plans de numérotation de messagerie unifiée. Pour plus d'informations, consultez la rubrique [Passerelles IP de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways).
 
 Si nécessaire, vous pouvez créer une passerelle IP de messagerie unifiée à l'aide du CAE comme suit :
 
@@ -276,7 +294,9 @@ Si nécessaire, vous pouvez créer une passerelle IP de messagerie unifiée à l
 
 Si nécessaire, vous pouvez créer une passerelle IP de messagerie unifiée en exécutant la commande suivante dans l'environnement de ligne de commande.
 
-    New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
+```powershell
+New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
+```
 
 Si nécessaire, vous pouvez configurer une passerelle IP de messagerie unifiée à l'aide du CAE:
 
@@ -286,13 +306,15 @@ Si nécessaire, vous pouvez configurer une passerelle IP de messagerie unifiée 
 
 Si nécessaire, vous pouvez configurer une passerelle IP de messagerie unifiée en exécutant la commande suivante dans l'environnement de ligne de commande.
 
-    Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
+```powershell
+Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
+```
 
 ## Étape 8 : création d'un groupement de postes de messagerie unifiée
 
 En fonction de votre déploiement Exchange 2007 existant, il se peut que vous deviez créer des groupements de recherche de messagerie unifiée. Un groupement de postes de téléphonie offre un moyen de répartir des appels téléphoniques à partir d'un numéro unique vers plusieurs postes ou numéros de téléphone. Dans la messagerie unifiée, un groupement de postes de messagerie unifiée constitue une représentation logique d'un groupement de postes de téléphonie et relie une passerelle IP de messagerie unifiée à un plan de numérotation de messagerie unifiée.
 
-Vous devez disposer au moins d'un groupement de postes de messagerie unifiée pour chaque groupement de postes PBX ou PBX IP. Lorsque vous terminez la procédure suivant, un groupement de postes de messagerie unifiée est créé par défaut. Si vous avez plusieurs groupements de postes PBX ou PBX IP, vous devez créer d'autres groupements de postes de messagerie unifiée. Pour plus d'informations sur les groupements de postes de messagerie unifiée, consultez la rubrique [Groupes de recherche de messagerie unifiée](um-hunt-groups-exchange-2013-help.md).
+Vous devez disposer au moins d'un groupement de postes de messagerie unifiée pour chaque groupement de postes PBX ou PBX IP. Lorsque vous terminez la procédure suivant, un groupement de postes de messagerie unifiée est créé par défaut. Si vous avez plusieurs groupements de postes PBX ou PBX IP, vous devez créer d'autres groupements de postes de messagerie unifiée. Pour plus d'informations sur les groupements de postes de messagerie unifiée, consultez la rubrique [Groupes de recherche de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups).
 
 Si nécessaire, vous pouvez créer un groupement de postes de messagerie unifiée à l'aide du CAE :
 
@@ -312,7 +334,9 @@ Si nécessaire, vous pouvez créer un groupement de postes de messagerie unifié
 
 Si nécessaire, vous pouvez créer un plan groupement de postes de messagerie unifiée en exécutant la commande suivante dans l'environnement de ligne de commande.
 
-    New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
+```powershell
+New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
+```
 
 > [!TIP]
 > Vous ne pouvez pas configurer ou modifier des paramètres pour un groupement de postes de messagerie unifiée. Pour modifier les paramètres de configuration d'un groupement de postes de messagerie unifiée, vous devez supprimer ce dernier, puis en ajouter un nouveau avec les paramètres corrects.
@@ -320,7 +344,7 @@ Si nécessaire, vous pouvez créer un plan groupement de postes de messagerie un
 
 ## Étape 9 : création ou configuration des standards automatiques de messagerie unifiée
 
-En fonction de votre déploiement Exchange 2007 existant, il se peut que vous deviez créer des standards automatiques de messagerie unifiée. Vous pouvez utiliser les standards automatiques de messagerie unifiée pour créer un système de menu vocal permettant aux appelants internes et externes de localiser des personnes et des emplacements, ou de transférer des appels vers des utilisateurs ou des départements au sein d'une organisation. Pour plus d'informations, consultez la rubrique [Réponse et routage automatique d'appels entrants](automatically-answer-and-route-incoming-calls-exchange-2013-help.md).
+En fonction de votre déploiement Exchange 2007 existant, il se peut que vous deviez créer des standards automatiques de messagerie unifiée. Vous pouvez utiliser les standards automatiques de messagerie unifiée pour créer un système de menu vocal permettant aux appelants internes et externes de localiser des personnes et des emplacements, ou de transférer des appels vers des utilisateurs ou des départements au sein d'une organisation. Pour plus d'informations, consultez la rubrique [Réponse et routage automatique d'appels entrants](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls).
 
 Dans des déploiements plus petits, vous pouvez déployer uniquement une messagerie unifiée pour permettre aux appelants de laisser des messages vocaux aux utilisateurs. Dans ces déploiements, la création d'un standard automatique n'est pas requise. Toutefois, dans la plupart des cas, les standards automatiques sont très utiles aux appelants externes qui contactent votre organisation.
 
@@ -348,7 +372,9 @@ Si nécessaire, vous pouvez créer un standard automatique de messagerie unifié
 
 Si nécessaire, vous pouvez créer un standard automatique de messagerie unifiée en exécutant la commande suivante dans l'environnement de ligne de commande.
 
-    New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true -Status Enabled
+```powershell
+New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true -Status Enabled
+```
 
 Si nécessaire, vous pouvez configurer un standard automatique de messagerie unifiée à l'aide du CAE:
 
@@ -358,11 +384,13 @@ Si nécessaire, vous pouvez configurer un standard automatique de messagerie uni
 
 Si nécessaire, vous pouvez configurer un standard automatique de messagerie unifiée en exécutant la commande suivante dans l'environnement de ligne de commande.
 
-    Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true -StaroutToDialPlanEnabled $true
+```powershell
+Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true -StaroutToDialPlanEnabled $true
+```
 
 ## Étape 10 : création ou configuration des stratégies de boîte aux lettres de messagerie unifiée
 
-En fonction de votre déploiement Exchange 2007 existant, il se peut que vous deviez créer ou configurer des stratégies de boîte aux lettres de messagerie unifiée. Des stratégies de boîte aux lettres de messagerie unifiée sont requises lorsque vous activez la messagerie unifiée pour des utilisateurs. La boîte aux lettres de chaque utilisateur à extension messagerie unifiée doit être liée à une seule stratégie de boîte aux lettres de messagerie unifiée. Après avoir créé une stratégie de boîte aux lettres de messagerie unifiée, vous devez relier une ou plusieurs boîtes aux lettres de messagerie unifiée à cette stratégie. Cela vous permet de contrôler les paramètres de sécurité du code confidentiel, tels que le nombre minimal de chiffres ou le nombre maximal de tentatives d'ouverture de session pour les utilisateurs à messagerie unifiée qui sont associés à la stratégie de boîte aux lettres de messagerie unifiée. Pour plus d'informations, consultez la rubrique [Stratégies de boîte aux lettres de messagerie unifiée](um-mailbox-policies-exchange-2013-help.md).
+En fonction de votre déploiement Exchange 2007 existant, il se peut que vous deviez créer ou configurer des stratégies de boîte aux lettres de messagerie unifiée. Des stratégies de boîte aux lettres de messagerie unifiée sont requises lorsque vous activez la messagerie unifiée pour des utilisateurs. La boîte aux lettres de chaque utilisateur à extension messagerie unifiée doit être liée à une seule stratégie de boîte aux lettres de messagerie unifiée. Après avoir créé une stratégie de boîte aux lettres de messagerie unifiée, vous devez relier une ou plusieurs boîtes aux lettres de messagerie unifiée à cette stratégie. Cela vous permet de contrôler les paramètres de sécurité du code confidentiel, tels que le nombre minimal de chiffres ou le nombre maximal de tentatives d'ouverture de session pour les utilisateurs à messagerie unifiée qui sont associés à la stratégie de boîte aux lettres de messagerie unifiée. Pour plus d'informations, consultez la rubrique [Stratégies de boîte aux lettres de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies).
 
 Si nécessaire, vous pouvez créer une stratégie de boîte aux lettres de messagerie unifiée à l'aide du CAE :
 
@@ -384,7 +412,9 @@ Si nécessaire, vous pouvez créer une stratégie de boîte aux lettres de messa
 
 Si nécessaire, vous pouvez créer une stratégie de boîte aux lettres de messagerie unifiée dans l'environnement de ligne de commande en exécutant la commande suivante.
 
-    New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
+```powershell
+New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
+```
 
 Si nécessaire, vous pouvez configurer une stratégie de boîte aux lettres de messagerie unifiée à l'aide du CAE:
 
@@ -394,11 +424,13 @@ Si nécessaire, vous pouvez configurer une stratégie de boîte aux lettres de m
 
 Si nécessaire, vous pouvez configurer une stratégie de boîte aux lettres de messagerie unifiée en exécutant la commande suivante dans l'environnement de ligne de commande.
 
-    Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
+```powershell
+Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
+```
 
 ## Étape 11 : déplacement des boîtes aux lettres à extension de messagerie unifiée existantes vers Exchange 2013
 
-Dans la messagerie unifiée Exchange 2007, après avoir autorisé les utilisateurs de l'organisation à utiliser la messagerie vocale, une ensemble par défaut de propriétés de messagerie unifiée sont appliquées aux utilisateurs pour leur permettre d'utiliser les fonctionnalités de messagerie unifiée. Pour plus d'informations, consultez la rubrique [Messagerie vocale pour les utilisateurs](voice-mail-for-users-exchange-2013-help.md).
+Dans la messagerie unifiée Exchange 2007, après avoir autorisé les utilisateurs de l'organisation à utiliser la messagerie vocale, une ensemble par défaut de propriétés de messagerie unifiée sont appliquées aux utilisateurs pour leur permettre d'utiliser les fonctionnalités de messagerie unifiée. Pour plus d'informations, consultez la rubrique [Messagerie vocale pour les utilisateurs](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users).
 
 Durant le processus de mise à niveau, il y a une période durant laquelle la messagerie unifiée est activée pour des boîtes aux lettres sur les serveurs de boîtes aux lettres Exchange 2007 et Exchange 2013. Toutefois, si vous déplacez tous les utilisateurs à extension messagerie unifiée vers des serveurs de boîtes aux lettres Exchange 2013, vous devez utiliser le CAE ou la cmdlet **New-MoveRequest** dans l'environnement de ligne de commande à partir d'un serveur Exchange 2013n afin de conserver l'ensemble des propriétés et paramètres, dont le code confidentiel de l'utilisateur.
 
@@ -422,13 +454,15 @@ Pour déplacer une boîte aux lettres Exchange 2007 vers un serveur de boîtes a
 
 Pour déplacer une boîte aux lettres Exchange 2007 vers un serveur de boîtes aux lettres Exchange 2013 à l'aide de l'environnement de ligne de commande, exécutez la commande suivante.
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
+```
 
 ## Étape 12 : activation de nouveaux utilisateurs pour la messagerie unifiée ou configuration des paramètres pour un utilisateur à extension messagerie unifiée existant
 
-Un utilisateur doit disposer d'une boîte aux lettres avant de pouvoir être activé pour la messagerie unifiée. Toutefois, par défaut, un utilisateur disposant d'une boîte aux lettres n'est pas activé pour la messagerie unifiée. Une fois que l'utilisateur activé pour la messagerie unifiée, vous pouvez gérer, modifier et configurer ses propriétés de messagerie unifiée et ses fonctions de messagerie vocale. Vous pouvez activer un utilisateur pour la messagerie unifiée à l'aide du CAE ou de l'environnement de ligne de commande. Pour plus d'informations, consultez la rubrique [Messagerie vocale pour les utilisateurs](voice-mail-for-users-exchange-2013-help.md).
+Un utilisateur doit disposer d'une boîte aux lettres avant de pouvoir être activé pour la messagerie unifiée. Toutefois, par défaut, un utilisateur disposant d'une boîte aux lettres n'est pas activé pour la messagerie unifiée. Une fois que l'utilisateur activé pour la messagerie unifiée, vous pouvez gérer, modifier et configurer ses propriétés de messagerie unifiée et ses fonctions de messagerie vocale. Vous pouvez activer un utilisateur pour la messagerie unifiée à l'aide du CAE ou de l'environnement de ligne de commande. Pour plus d'informations, consultez la rubrique [Messagerie vocale pour les utilisateurs](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users).
 
-Lorsque vous activez un utilisateur pour la messagerie unifiée, vous devez définir au moins un numéro de poste que la messagerie unifiée peut utiliser en cas de soumission d'un message à la boîte aux lettres de l'utilisateur, et pour permettre à ce dernier d'utiliser Outlook Voice Access. Une fois l'utilisateur activé pour la messagerie unifiée, vous pouvez ajouter des numéros de poste secondaires à sa boîte aux lettres, les modifier ou les supprimer en configurant l'adresse proxy de messagerie unifiée Exchange sur la boîte aux lettres de l'utilisateur, ou ajouter ou supprimer d'autres postes secondaires pour l'utilisateur dans le CAE. Pour ajouter, modifier ou supprimer des numéros de poste, des numéros E.164 ou des adresses SIP, consultez la rubrique [Voix des procédures de l'utilisateur à extension messagerie](voice-mail-enabled-user-procedures-exchange-2013-help.md).
+Lorsque vous activez un utilisateur pour la messagerie unifiée, vous devez définir au moins un numéro de poste que la messagerie unifiée peut utiliser en cas de soumission d'un message à la boîte aux lettres de l'utilisateur, et pour permettre à ce dernier d'utiliser Outlook Voice Access. Une fois l'utilisateur activé pour la messagerie unifiée, vous pouvez ajouter des numéros de poste secondaires à sa boîte aux lettres, les modifier ou les supprimer en configurant l'adresse proxy de messagerie unifiée Exchange sur la boîte aux lettres de l'utilisateur, ou ajouter ou supprimer d'autres postes secondaires pour l'utilisateur dans le CAE. Pour ajouter, modifier ou supprimer des numéros de poste, des numéros E.164 ou des adresses SIP, consultez la rubrique [Voix des procédures de l'utilisateur à extension messagerie](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-enabled-user-procedures).
 
 Pour activer un utilisateur pour la messagerie unifiée à l'aide du CAE :
 
@@ -460,7 +494,9 @@ Pour activer un utilisateur pour la messagerie unifiée à l'aide du CAE :
 
 Pour activer un utilisateur pour la messagerie unifiée dans l'environnement de ligne de commande, exécutez la commande suivante.
 
-    Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -NotifyEmail administrator@contoso.com -PINExpired $true
+```powershell
+Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -NotifyEmail administrator@contoso.com -PINExpired $true
+```
 
 Si nécessaire, vous pouvez configurer un utilisateur activé pour la messagerie unifiée à l’aide du CAE :
 
@@ -490,7 +526,9 @@ Si nécessaire, vous pouvez configurer un utilisateur activé pour la messagerie
 
 Si nécessaire, vous pouvez configurer un utilisateur activé pour la messagerie unifiée dans l’environnement de ligne de commande en exécutant la commande suivante :
 
-    Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
+```powershell
+Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
+```
 
 ## Étape 13 : configuration de vos passerelles VoIP, PBX IP et PBX compatibles SIP pour envoyer tous les appels entrants aux serveurs d'accès au client Exchange 2013
 
@@ -504,9 +542,9 @@ La dernière étape du processus de mise à niveau vers une messagerie unifiée 
 
   -  [Services de messagerie unifiée](um-services-exchange-2013-help.md)
 
-  -  [Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  -  [Notes de configuration pour les passerelles VoIP, les PBX IP et les PBX pris en charge](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
-  -  [Gestionnaire de téléphonie pour Exchange 2013](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+  -  [Gestionnaire de téléphonie pour Exchange 2013](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)
 
 ## Étape 14 : désactivation du répondeur automatique sur un serveur de messagerie unifiée Exchange 2007
 
@@ -528,7 +566,9 @@ Pour désactiver la messagerie unifiée sur un serveur de messagerie unifiée Ex
 
 Pour désactiver la messagerie unifiée sur un serveur de messagerie unifiée Exchange 2007 à l'aide de l'environnement de ligne de commande, exécutez la commande suivante :
 
-    Disable-UMServer -Identity MyUMServer -Immediate $true
+```powershell
+Disable-UMServer -Identity MyUMServer -Immediate $true
+```
 
 > [!TIP]
 > Pour désactiver la réponse aux appels, vous pouvez utiliser la cmdlet <strong>Disable-UMServer</strong> d'un serveur de messagerie unifiée Exchange 2007 ou la cmdlet <strong>Disable-UMService</strong> d'un serveur de boîtes aux lettres Exchange 2013.
@@ -554,18 +594,24 @@ Pour supprimer un serveur de messagerie unifiée Exchange 2007 d'un plan de num�
 
 Pour supprimer un serveur de messagerie unifiée Exchange 2007 d'un plan de numérotation à l'aide de l'environnement de ligne de commande, exécutez la commande suivante :
 
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMServer -id MyUMServer
-    $s.dialplans-=$dp.identity
-    Set-UMServer -id MyUMServer -dialplans:$s.dialplans
+```powershell
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMServer -id MyUMServer
+$s.dialplans-=$dp.identity
+Set-UMServer -id MyUMServer -dialplans:$s.dialplans
+```
 
 Dans cet exemple, il y a trois plans de numérotation URI SIP : SipDP1, SipDP2 et SipDP3. Cet exemple supprime le serveur de messagerie unifiée nommé `MyUMServer` du plan de numérotation SipDP3.
 
-    Set-UMServer -id MyUMServer -DialPlans SipDP1,SipDP2
+```powershell
+Set-UMServer -id MyUMServer -DialPlans SipDP1,SipDP2
+```
 
 Dans cet exemple, il y a deux plans de numérotation URI SIP : SipDP1 et SipDP2. Cet exemple supprime le serveur de messagerie unifiée nommé `MyUMServer` du plan de numérotation SipDP2.
 
-    Set-UMServer -id MyUMServer -DialPlans SipDP1
+```powershell
+Set-UMServer -id MyUMServer -DialPlans SipDP1
+```
 
 > [!TIP]
 > Pour supprimer un serveur de messagerie unifiée Exchange 2007 d'un ou plusieurs plans de numérotation, vous pouvez utiliser la cmdlet <strong>Set-UMServer</strong> dans l'environnement de ligne de commande sur un serveur de messagerie unifiée Exchange 2007, ou la cmdlet <strong>Set-UMService</strong> cmdlet sur un serveur de boîtes aux lettres Exchange 2013. Par exemple, pour supprimer un serveur de messagerie unifiée de tous les plans de numérotation, exécutez la commande suivante : <code>Set-UMServer -identity MyUMServer -DialPlan $null</code>

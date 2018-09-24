@@ -47,19 +47,25 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Cet exemple autorise les paramètres de serveurs POP3 externes à être visualisés par les utilisateurs finaux.
 
-    Set-PopSettings -ExternalConnectionSettings {Dublin01.Contoso.com:995:SSL}
+```powershell
+Set-PopSettings -ExternalConnectionSettings {Dublin01.Contoso.com:995:SSL}
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-PopSettings](https://technet.microsoft.com/fr-fr/library/aa997154\(v=exchg.150\)).
 
 Cet exemple autorise les paramètres de serveurs IMAP4 externes à être visualisés par les utilisateurs finaux.
 
-    Set-ImapSettings -ExternalConnectionSettings {Dublin01.Contoso.com:993:SSL}
+```powershell
+Set-ImapSettings -ExternalConnectionSettings {Dublin01.Contoso.com:993:SSL}
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ImapSettings](https://technet.microsoft.com/fr-fr/library/aa998252\(v=exchg.150\)).
 
 Pour appliquer ces modifications, vous devez redémarrer les services Internet (IIS). Vous n’avez pas besoin de redémarrer les services POP3. Pour redémarrer les services Internet (IIS), dans l’invite de commandes, entrez les éléments suivants :
 
-    iisreset
+```powershell
+iisreset
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -67,7 +73,9 @@ Pour vérifier qu’Exchange a bien été configuré pour permettre à des utili
 
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
-        Get-PopSettings | format-list
+    ```powershell
+    Get-PopSettings | format-list
+    ```
 
 2.  Vérifiez que la propriété *ExternalConnectionSettings* est définie.
 
@@ -75,7 +83,9 @@ Pour vérifier qu’Exchange a bien été configuré pour permettre à des utili
 
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
-        Get-ImapSettings | format-list
+    ```powershell
+    Get-ImapSettings | format-list
+    ```
 
 2.  Vérifiez que la propriété *ExternalConnectionSettings* est définie.
 
@@ -85,7 +95,9 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Dans cet exemple, nous autorisons les utilisateurs à consulter les paramètres de serveur SMTP internes et externes à l’aide de Outlook Web App.
 
-    Get-ReceiveConnector "*Client Frontend*" | Set-ReceiveConnector -Fqdn Server.Contoso.com -AdvertiseClientSettings $true 
+```powershell
+Get-ReceiveConnector "*Client Frontend*" | Set-ReceiveConnector -Fqdn Server.Contoso.com -AdvertiseClientSettings $true 
+```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, voir [Set-ReceiveConnector](https://technet.microsoft.com/fr-fr/library/bb125140\(v=exchg.150\)).
 
@@ -95,7 +107,9 @@ Pour vérifier qu’Exchange a bien été configuré pour permettre à des utili
 
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
-        Get-ReceiveConnector | format-list
+    ```powershell
+    Get-ReceiveConnector | format-list
+    ```
 
 2.  Si la propriété *AdvertiseClientSettings* est définie à `true`, les utilisateurs peuvent afficher leurs paramètres de serveur SMTP dans Outlook Web App. Si *AdvertiseClientSettings* est défini(e) à `false`, les utilisateurs ne peuvent pas afficher leurs paramètres de serveur SMTP dans Outlook Web App.
 

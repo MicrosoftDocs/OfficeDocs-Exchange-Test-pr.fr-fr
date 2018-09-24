@@ -59,7 +59,9 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
 
 Cet exemple montre comment créer le réseau ReplicationDagNetwork02 avec le sous-réseau 10.0.0.0 et le masque de bits 8 dans le groupe de disponibilité de base de données DAG1. La réplication est activée pour le réseau et une description optionnelle du réseau est également ajoutée.
 
-    New-DatabaseAvailabilityGroupNetwork -DatabaseAvailabilityGroup DAG1 -Name ReplicationDagNetwork02 -Description "Replication network 2" -Subnets 10.0.0.0/8 -ReplicationEnabled:$True
+```powershell
+New-DatabaseAvailabilityGroupNetwork -DatabaseAvailabilityGroup DAG1 -Name ReplicationDagNetwork02 -Description "Replication network 2" -Subnets 10.0.0.0/8 -ReplicationEnabled:$True
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -69,7 +71,9 @@ Pour vérifier que vous avez bien créé un réseau de groupe de disponibilité 
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour vérifier que le réseau DAG a bien été créé et pour afficher les informations de configuration du réseau DAG :
     
-        Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```powershell
+    Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```
 
 ## Pour plus d'informations
 

@@ -17,7 +17,7 @@ _**Sapplique à :** Exchange Online, Exchange Server 2013_
 
 _**Dernière rubrique modifiée :** 2016-10-18_
 
-Vous pouvez placer une boîte aux lettres en conservation pour litige pour conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés et les versions originales des éléments modifiés. Lorsque vous placez une conservation pour litige sur la boîte aux lettres d’un utilisateur, le contenu de la boîte aux lettres d’archivage de l’utilisateur (si elle est activée) est également placé en conservation. Les éléments supprimés et modifiés sont conservés pendant une période déterminée, ou jusqu’à ce que vous supprimiez la boîte aux lettres de la conservation pour litige. Tous ces éléments de boîte aux lettres sont renvoyés dans une recherche de [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md).
+Vous pouvez placer une boîte aux lettres en conservation pour litige pour conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés et les versions originales des éléments modifiés. Lorsque vous placez une conservation pour litige sur la boîte aux lettres d’un utilisateur, le contenu de la boîte aux lettres d’archivage de l’utilisateur (si elle est activée) est également placé en conservation. Les éléments supprimés et modifiés sont conservés pendant une période déterminée, ou jusqu’à ce que vous supprimiez la boîte aux lettres de la conservation pour litige. Tous ces éléments de boîte aux lettres sont renvoyés dans une recherche de [Découverte électronique locale](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery).
 
 > [!IMPORTANT]
 > La conservation pour litige conserve les éléments dans le dossier Éléments récupérables de la boîte aux lettres de l’utilisateur. En fonction du nombre et de la taille des éléments supprimés ou modifiés, la taille du dossier Éléments récupérables de la boîte aux lettres peut augmenter rapidement. Le dossier Éléments récupérables est configuré avec un quota élevé par défaut. Dans Exchange Online, ce quota est automatiquement augmenté lorsque vous placez une boîte aux lettres en conservation pour litige. Dans Exchange Server 2013, nous vous recommandons de surveiller chaque semaine les boîtes aux lettres mises en conservation pour litige pour vous assurer qu’elles n’atteignent pas les limites de quotas du dossier Éléments récupérables.
@@ -37,7 +37,7 @@ Vous pouvez placer une boîte aux lettres en conservation pour litige pour conse
 
   - Dans Exchange Online, le quota du dossier Éléments récupérables est automatiquement augmenté jusqu’à 100 Go lorsque vous placez une boîte aux lettres en conservation pour litige. La taille par défaut de ce dossier est de 30 Go.
 
-  - La conservation pour litige conserve les éléments supprimés, ainsi que les versions originales des éléments modifiés jusqu’à ce que la conservation soit supprimée. Vous pouvez éventuellement spécifier une durée d’attente, ce qui permet de conserver un élément de boîte aux lettres pendant la durée spécifiée. Si vous spécifiez une durée d’attente, cette dernière débute à partir de la date de réception d’un message ou de la date de création d’un élément de boîte aux lettres. Pour conserver les éléments qui répondent aux critères spécifiés, utilisez une conservation inaltérable pour créer une conservation *basée sur la requête*. Pour plus d’informations, consultez la rubrique [Créer ou supprimer une conservation inaltérable](create-or-remove-an-in-place-hold-exchange-2013-help.md).
+  - La conservation pour litige conserve les éléments supprimés, ainsi que les versions originales des éléments modifiés jusqu’à ce que la conservation soit supprimée. Vous pouvez éventuellement spécifier une durée d’attente, ce qui permet de conserver un élément de boîte aux lettres pendant la durée spécifiée. Si vous spécifiez une durée d’attente, cette dernière débute à partir de la date de réception d’un message ou de la date de création d’un élément de boîte aux lettres. Pour conserver les éléments qui répondent aux critères spécifiés, utilisez une conservation inaltérable pour créer une conservation *basée sur la requête*. Pour plus d’informations, consultez la rubrique [Créer ou supprimer une conservation inaltérable](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/create-or-remove-in-place-holds).
 
   - Pour utiliser l’environnement de ligne de commande Shell pour placer une boîte aux lettres Exchange Online en conservation inaltérable, vous devez utiliser PowerShell Exchange Online. Pour plus d’informations, consultez la rubrique [Connexion à Exchange Online à l'aide de Remote PowerShell](https://technet.microsoft.com/fr-fr/library/jj984289\(v=exchg.150\)).
 
@@ -69,7 +69,9 @@ Retour au début
 
 Dans cet exemple, la boîte aux lettres bsuneja@contoso.com est placée en conservation pour litige. Les éléments de la boîte aux lettres sont conservés indéfiniment ou jusqu’à ce que la conservation soit supprimée.
 
-    Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true
+```powershell
+Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true
+```
 
 > [!NOTE]
 > Lorsque vous placez une boîte aux lettres en conservation pour litige indéfiniment (en ne spécifiant aucune durée), la valeur de la propriété de boîte aux lettres <em>LitigationHoldDuration</em> est définie sur <code>Unlimited</code>.
@@ -79,7 +81,9 @@ Dans cet exemple, la boîte aux lettres bsuneja@contoso.com est placée en conse
 
 Dans cet exemple, la boîte aux lettres bsuneja@contoso.com est placée en conservation pour litige et les éléments sont conservés pendant 2 555 jours (environ 7 ans).
 
-    Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true -LitigationHoldDuration 2555
+```powershell
+Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true -LitigationHoldDuration 2555
+```
 
 ## Utilisation de l’environnement de ligne de commande Exchange Management Shell pour placer toutes les boîtes aux lettres en conservation pour litige pour une durée spécifiée
 
@@ -87,7 +91,9 @@ Votre organisation peut exiger que toutes les données de boîtes aux lettres so
 
 Dans cet exemple, toutes les boîtes aux lettres d’utilisateurs de l’organisation sont placées en conservation pour litige pendant un an (365 jours).
 
-    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 365
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 365
+```
 
 Dans cet exemple, la cmdlet [Get-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123685\(v=exchg.150\)) est utilisée pour récupérer toutes les boîtes aux lettres de l’organisation, un filtre de destinataire est spécifié pour inclure toutes les boîtes aux lettres d’utilisateurs, puis la liste des boîtes aux lettres est dirigée vers la cmdlet [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)) pour activer la conservation pour litige et la durée de conservation.
 
@@ -99,7 +105,9 @@ Consultez la section Plus d’informations pour obtenir des exemples d’utilisa
 
 Dans cet exemple, la conservation pour litige de la boîte aux lettres bsuneja@contoso.com est supprimée.
 
-    Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
+```powershell
+Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
+```
 
 Retour au début
 
@@ -121,11 +129,15 @@ Pour vérifier que vous avez correctement placé une boîte aux lettres en conse
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez l’une des commandes suivantes :
     
-        Get-Mailbox <name of mailbox> | FL LitigationHold*
+    ```powershell
+    Get-Mailbox <name of mailbox> | FL LitigationHold*
+    ```
     
     ou
     
-        Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | FL Name,LitigationHold*
+    ```powershell
+    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | FL Name,LitigationHold*
+    ```
     
     Si une boîte aux lettres est placée en conservation pour litige indéfiniment, la valeur de la propriété de boîte aux lettres *LitigationHoldDuration* est définie sur `Unlimited`.
 
@@ -145,25 +157,25 @@ Pour vérifier que vous avez correctement placé une boîte aux lettres en conse
     
     Voici quelques exemples d’utilisation des cmdlets **Get-Mailbox** et **Get-Recipient** pour renvoyer un sous-ensemble de boîtes aux lettres sur la base de propriétés de boîte aux lettres ou d’utilisateur courantes. Ces exemples supposent que les propriétés de boîte aux lettres appropriées (telles que *CustomAttributeN* ou *Department*) aient été renseignées.
     		
-       ```
-			Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
-       ```
+    ```powershell
+    Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
+    ```
 
-       ```
-			Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
-       ```
+    ```powershell
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
+    ```
 
-       ```
-			Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
-       ```
+    ```powershell
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
+    ```
 
-       ```
-			Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
-       ```
+    ```powershell
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
+    ```
 
-       ```
-			Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
-	   ```	
+    ```powershell
+    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+    ```	
     
         
     Vous pouvez utiliser d’autres propriétés de boîte aux lettres utilisateur dans un filtre pour inclure ou exclure des boîtes aux lettres. Pour plus d’informations, voir [Propriétés filtrables pour le paramètre -Filter](https://technet.microsoft.com/fr-fr/library/bb738155\(v=exchg.150\)).

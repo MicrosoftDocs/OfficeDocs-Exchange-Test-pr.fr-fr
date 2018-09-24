@@ -84,23 +84,25 @@ Les informations suivantes s’appliquent au rôle serveur de transport Edge Exc
 
 3.  À l'invite de commandes, exécutez la commande applicable à votre organisation.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Si le contrôle de compte d'utilisateur est activé, vous devez exécuter <code>Setup.exe</code> à partir d'une invite de commandes élevée.
     
-        Setup.exe [/Mode:<setup mode>] [/IAcceptExchangeServerLicenseTerms]
-        [/Roles:<server roles to install>] [/InstallWindowsComponents] 
-        [/OrganizationName:<name for the new Exchange organization>] 
-        [/TargetDir:<target directory>] [/SourceDir:<source directory>]
-        [/UpdatesDir:<directory from which to install updates>] 
-        [/DomainController:<FQDN of domain controller>] [/DisableAMFiltering]
-        [/AnswerFile:<filename>] [/DoNotStartTransport] 
-        [/EnableErrorReporting] [/CustomerFeedbackEnabled:<True | False>] 
-        [/AddUmLanguagePack:<UM language pack name>] 
-        [/RemoveUmLanguagePack:<UM language pack name>] 
-        [/NewProvisionedServer:<server>] [/RemoveProvisionedServer:<server>] 
-        [/MdbName:<mailbox database name>] [/DbFilePath:<Edb file path>] 
-        [/LogFolderPath:<log folder path>] [/ActiveDirectorySplitPermissions:<True | False>]
-        [/TenantOrganizationConfig:<path>]
+    ```powershell
+    Setup.exe [/Mode:<setup mode>] [/IAcceptExchangeServerLicenseTerms]
+    [/Roles:<server roles to install>] [/InstallWindowsComponents] 
+    [/OrganizationName:<name for the new Exchange organization>] 
+    [/TargetDir:<target directory>] [/SourceDir:<source directory>]
+    [/UpdatesDir:<directory from which to install updates>] 
+    [/DomainController:<FQDN of domain controller>] [/DisableAMFiltering]
+    [/AnswerFile:<filename>] [/DoNotStartTransport] 
+    [/EnableErrorReporting] [/CustomerFeedbackEnabled:<True | False>] 
+    [/AddUmLanguagePack:<UM language pack name>] 
+    [/RemoveUmLanguagePack:<UM language pack name>] 
+    [/NewProvisionedServer:<server>] [/RemoveProvisionedServer:<server>] 
+    [/MdbName:<mailbox database name>] [/DbFilePath:<Edb file path>] 
+    [/LogFolderPath:<log folder path>] [/ActiveDirectorySplitPermissions:<True | False>]
+    [/TenantOrganizationConfig:<path>]
+    ```
 
 4.  Le programme d'installation copie les fichiers d'installation localement sur l'ordinateur sur lequel vous installez Exchange 2013.
 

@@ -17,16 +17,16 @@ _**Sapplique à :** Exchange Server 2013_
 
 _**Dernière rubrique modifiée :** 2015-04-07_
 
-Dans Microsoft Exchange Server 2013, la gestion des enregistrements de messagerie (MRM) s’effectue à l’aide de balises et de stratégies de rétention. Une stratégie de rétention est un groupe de balises de rétention applicables à une boîte aux lettres. Pour plus d’informations, consultez la rubrique [Balises et stratégies de rétention](retention-tags-and-retention-policies-exchange-2013-help.md). Les dossiers gérés, technologie de la fonctionnalité MRM introduite dans Exchange Server 2007, ne sont pas pris en charge.
+Dans Microsoft Exchange Server 2013, la gestion des enregistrements de messagerie (MRM) s’effectue à l’aide de balises et de stratégies de rétention. Une stratégie de rétention est un groupe de balises de rétention applicables à une boîte aux lettres. Pour plus d’informations, consultez la rubrique [Balises et stratégies de rétention](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies). Les dossiers gérés, technologie de la fonctionnalité MRM introduite dans Exchange Server 2007, ne sont pas pris en charge.
 
 Une boîte aux lettres à laquelle est appliquée une stratégie de boîte aux lettres de dossier géré peut être migrée pour utiliser une stratégie de rétention. Pour ce faire, vous devez créer des balises de rétention équivalentes aux dossiers gérés associés à la stratégie de boîte aux lettres de dossier géré de l'utilisateur.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Avant de migrer des dossiers gérés vers des stratégies de rétention dans votre environnement de production, nous vous recommandons d'essayer le processus dans un environnement de test.
 
 
 > [!TIP]
-> Vous pouvez mettre des boîtes aux lettres en blocage de rétention afin d’arrêter le traitement des stratégies de rétention ou des stratégies de boîte aux lettres de dossier géré. La mise de boîtes aux lettres en blocage de rétention peut être utile dans des scénarios de migration pour éviter de supprimer des messages ou de déplacer des messages vers une archive tant que les paramètres de la nouvelle stratégie n’ont pas été vérifiés sur des boîtes aux lettres de test ou sur un petit nombre de boîtes aux lettres de production. Pour plus d’informations, consultez la rubrique <a href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">Placer une boîte aux lettres en blocage de rétention</a>.
+> Vous pouvez mettre des boîtes aux lettres en blocage de rétention afin d’arrêter le traitement des stratégies de rétention ou des stratégies de boîte aux lettres de dossier géré. La mise de boîtes aux lettres en blocage de rétention peut être utile dans des scénarios de migration pour éviter de supprimer des messages ou de déplacer des messages vers une archive tant que les paramètres de la nouvelle stratégie n’ont pas été vérifiés sur des boîtes aux lettres de test ou sur un petit nombre de boîtes aux lettres de production. Pour plus d’informations, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold">Placer une boîte aux lettres en blocage de rétention</a>.
 
 
 Pour d’autres tâches de gestion associées à la fonctionnalité MRM, voir [Procédures de gestion des enregistrements de messagerie](messaging-records-management-procedures-exchange-2013-help.md).
@@ -147,7 +147,7 @@ Les étapes suivantes permettent de migrer des utilisateurs à partir de cette s
 
 4.  Supprimez la stratégie de boîte aux lettres de dossier géré, puis appliquez la stratégie de rétention aux boîtes aux lettres utilisateur.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Une fois la stratégie de rétention appliquée à un utilisateur et l'Assistant Dossier géré lancé, les dossiers gérés de la boîte aux lettres utilisateur ne sont plus gérés.
 
 
@@ -251,31 +251,35 @@ Pour cette étape, vous pouvez utiliser deux méthodes :
 
 Cet exemple montre comment créer des balises de rétention en fonction des paramètres de contenu géré correspondants affichés dans la stratégie de boîte aux lettres de dossier géré de Contoso.
 
-    New-RetentionPolicyTag Corp-DeletedItems -ManagedFolderToUpgrade Corp-DeletedItems
-    New-RetentionPolicyTag Corp-SentItems -ManagedFolderToUpgrade Corp-SentItems
-    New-RetentionPolicyTag Corp-JunkMail -ManagedFolderToUpgrade Corp-JunkMail
-    New-RetentionPolicyTag Corp-EntireMailbox -ManagedFolderToUpgrade Corp-EntireMailbox
-    New-RetentionPolicyTag 30Days -ManagedFolderToUpgrade 30Days
-    New-RetentionPolicyTag 5Years -ManagedFolderToUpgrade 5Years
-    New-RetentionPolicyTag NeverExpire -ManagedFolderToUpgrade NeverExpire
+```powershell
+New-RetentionPolicyTag Corp-DeletedItems -ManagedFolderToUpgrade Corp-DeletedItems
+New-RetentionPolicyTag Corp-SentItems -ManagedFolderToUpgrade Corp-SentItems
+New-RetentionPolicyTag Corp-JunkMail -ManagedFolderToUpgrade Corp-JunkMail
+New-RetentionPolicyTag Corp-EntireMailbox -ManagedFolderToUpgrade Corp-EntireMailbox
+New-RetentionPolicyTag 30Days -ManagedFolderToUpgrade 30Days
+New-RetentionPolicyTag 5Years -ManagedFolderToUpgrade 5Years
+New-RetentionPolicyTag NeverExpire -ManagedFolderToUpgrade NeverExpire
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-RetentionPolicyTag](https://technet.microsoft.com/fr-fr/library/dd335226\(v=exchg.150\)).
 
 **Créer des balises de rétention manuellement**
 
 > [!NOTE]
-> Vous pouvez également utiliser le CAE pour créer des balises de rétention manuellement (non basées sur les paramètres définis dans les dossiers gérés). Pour plus d’informations, consultez la rubrique <a href="create-a-retention-policy-exchange-2013-help.md">Créer une stratégie de rétention</a>.
+> Vous pouvez également utiliser le CAE pour créer des balises de rétention manuellement (non basées sur les paramètres définis dans les dossiers gérés). Pour plus d’informations, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">Créer une stratégie de rétention</a>.
 
 
 Cet exemple montre comment créer des balises de rétention en fonction des dossiers gérés et des paramètres de contenu géré correspondants affichés dans la stratégie de boîte aux lettres de dossier géré de Contoso. Les paramètres de rétention sont spécifiés manuellement, sans l'aide du paramètre *ManagedFolderToUpgrade*.
 
-    New-RetentionPolicyTag Corp-DeletedItems -Type DeletedItems -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction DeleteAndAllowRecovery
-    New-RetentionPolicyTag Corp-SentItems -Type SentItems -RetentionEnabled $true -AgeLimitforRetention 1825 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag Corp-JunkMail -Type JunkMail -RetentionEnabled $true -AgeLimitforRetention 30 -RetentionAction PermanentlyDelete
-    New-RetentionPolicyTag Corp-EntireMailbox -Type All -RetentionEnabled $true -AgeLimitForRetention 365 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag 30Days -Type Personal -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag 5Years -Type Personal -RetentionEnabled $true -AgeLimitForRetention 1825 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag NeverExpire -Type Personal -RetentionEnabled $false
+```powershell
+New-RetentionPolicyTag Corp-DeletedItems -Type DeletedItems -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction DeleteAndAllowRecovery
+New-RetentionPolicyTag Corp-SentItems -Type SentItems -RetentionEnabled $true -AgeLimitforRetention 1825 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag Corp-JunkMail -Type JunkMail -RetentionEnabled $true -AgeLimitforRetention 30 -RetentionAction PermanentlyDelete
+New-RetentionPolicyTag Corp-EntireMailbox -Type All -RetentionEnabled $true -AgeLimitForRetention 365 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag 30Days -Type Personal -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag 5Years -Type Personal -RetentionEnabled $true -AgeLimitForRetention 1825 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag NeverExpire -Type Personal -RetentionEnabled $false
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-RetentionPolicyTag](https://technet.microsoft.com/fr-fr/library/dd335226\(v=exchg.150\)).
 
@@ -284,12 +288,14 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez entrée « Gestion des enregistrements de messagerie » dans la rubrique [Stratégie de messagerie et autorisations de conformité](messaging-policy-and-compliance-permissions-exchange-2013-help.md).
 
 > [!NOTE]
-> Vous pouvez également utiliser le CAE pour créer une stratégie de rétention et ajouter des balises de rétention à cette dernière. Pour plus d’informations, consultez la rubrique <a href="create-a-retention-policy-exchange-2013-help.md">Créer une stratégie de rétention</a>.
+> Vous pouvez également utiliser le CAE pour créer une stratégie de rétention et ajouter des balises de rétention à cette dernière. Pour plus d’informations, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">Créer une stratégie de rétention</a>.
 
 
 Cet exemple montre comment créer la stratégie de rétention RP-Corp et associer les balises de rétention nouvellement créées à cette stratégie.
 
-    New-RetentionPolicy RP-Corp -RetentionPolicyTagLinks Corp-DeletedItems,Corp-SentItems,Corp-JunkMail,Corp-EntireMailbox,30Days,NeverExpire
+```powershell
+New-RetentionPolicy RP-Corp -RetentionPolicyTagLinks Corp-DeletedItems,Corp-SentItems,Corp-JunkMail,Corp-EntireMailbox,30Days,NeverExpire
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-RetentionPolicy](https://technet.microsoft.com/fr-fr/library/dd297970\(v=exchg.150\)).
 
@@ -299,19 +305,23 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Cet exemple supprime la stratégie de boîte aux lettres de dossier géré et tous les dossiers gérés de la boîte aux lettres de Ken Kwok. Les dossiers gérés contenant des messages ne sont pas supprimés.
 
-    Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
+```powershell
+Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
+```
 
 ## Étape 4 : Application de la stratégie de rétention aux boîtes aux lettres utilisateur
 
 Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez Entrée « Application des stratégies de rétention » dans la rubrique [Stratégie de messagerie et autorisations de conformité](messaging-policy-and-compliance-permissions-exchange-2013-help.md).
 
 > [!NOTE]
-> Vous pouvez également utiliser le CAE pour appliquer une stratégie de rétention à des utilisateurs. Pour plus d’informations, consultez la rubrique <a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">Appliquer une stratégie de rétention aux boîtes aux lettres</a>.
+> Vous pouvez également utiliser le CAE pour appliquer une stratégie de rétention à des utilisateurs. Pour plus d’informations, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">Appliquer une stratégie de rétention aux boîtes aux lettres</a>.
 
 
 Cet exemple montre comment appliquer la stratégie de rétention nouvellement créée RP-Corp à l'utilisateur de boîte aux lettres Ken Kwok.
 
-    Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
+```powershell
+Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)).
 
@@ -323,11 +333,15 @@ Pour vérifier la réussite de la migration des dossiers gérés vers les strat�
     
     Cette commande récupère la stratégie de rétention appliquée à toutes les boîtes aux lettres au sein d’une organisation, ainsi que leur état de blocage de rétention.
     
-        Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*�?} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
+    ```powershell
+    Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*�?} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
+    ```
 
   - Après que l’Assistant Dossier géré a traité la boîte aux lettres avec une stratégie de rétention, utilisez la cmdlet [Get-RetentionPolicyTag](https://technet.microsoft.com/fr-fr/library/dd298009\(v=exchg.150\)) pour extraire les balises de rétention configurées dans la boîte aux lettres utilisateur.
     
     Cette commande extrait les balises de rétention réellement appliquées à la boîte aux lettres d’April Stewart.
     
-        Get-RetentionPolicyTag -Mailbox astewart
+    ```powershell
+    Get-RetentionPolicyTag -Mailbox astewart
+    ```
 

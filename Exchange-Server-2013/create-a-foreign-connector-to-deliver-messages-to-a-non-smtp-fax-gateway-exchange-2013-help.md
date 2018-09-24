@@ -45,7 +45,9 @@ Intéressé par des scénarios où cette procédure est utilisée ? Consultez l
 
 1.  Exécutez la commande suivante pour créer le connecteur étranger :
     
-        New-ForeignConnector -Name "Contoso Foreign Connector" -AddressSpaces "X400:c=US;a=Fabrikam;P=Contoso;5" -SourceTransportServers Hub01,Hub02
+    ```powershell
+    New-ForeignConnector -Name "Contoso Foreign Connector" -AddressSpaces "X400:c=US;a=Fabrikam;P=Contoso;5" -SourceTransportServers Hub01,Hub02
+    ```
     
     Dans cet exemple, Hub01 et Hub02 sont des serveurs sources désignés dans votre organisation pour remettre des messages à un système étranger. L'utilisation de plusieurs serveurs source assure la tolérance de pannes.
 
@@ -55,7 +57,9 @@ Une fois le connecteur étranger créé, vous pouvez configurer les répertoires
 
 Pour vérifier que le connecteur étranger est créé avec succès, exécutez la commande suivante :
 
-    Get-ForeignConnector | Format-List Name
+```powershell
+Get-ForeignConnector | Format-List Name
+```
 
 Vérifiez que le nom pour le connecteur étranger que vous avez créé s'affiche.
 
@@ -67,13 +71,17 @@ Vous créez un répertoire à utiliser comme répertoire de dépôt sur votre sy
 
 1.  Exécutez le script suivant pour spécifier le répertoire de dépôt de votre connecteur étranger (modifiez la valeur du paramètre *DropDirectory* vers un chemin d'accès approprié pour votre environnement) :
     
-        Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
+    ```powershell
+    Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
+    ```
 
 ## Comment savoir si cette étape a fonctionné ?
 
 Pour vérifier que vous avez correctement défini le répertoire de dépôt, vous pouvez exécuter le script de cmdlet et vérifier la valeur du paramètre *DropDirectory* :
 
-    Get-ForeignConnector "Contoso Foreign Connector" | Format-List
+```powershell
+Get-ForeignConnector "Contoso Foreign Connector" | Format-List
+```
 
 Une fois le connecteur étranger créé et le répertoire de dépôt spécifié, vous pouvez envoyer un message au moyen du serveur de boîtes aux lettres dans lequel vous avez créé votre connecteur étranger et vérifier qu'un fichier est remis au répertoire de dépôt.
 
@@ -87,7 +95,9 @@ Pour obtenir des instructions détaillées pour la configuration de votre réper
 
 Pour vérifier que vous avez correctement défini le répertoire de collecte, vous pouvez exécuter la commande suivante et vérifier la valeur du paramètre *PickupDirectoryPath* :
 
-    Get-TransportService | Format-List PickupDirectoryPath
+```powershell
+Get-TransportService | Format-List PickupDirectoryPath
+```
 
 ## Étape 4 : Utilisez le Shell pour configurer le répertoire de relecture pour un service de transport sur un serveur de boîtes aux lettres
 
@@ -99,7 +109,9 @@ Pour obtenir des instructions détaillées pour la configuration de votre réper
 
 Pour vérifier que vous avez correctement défini le répertoire de relecture, vous pouvez exécuter la commande suivante et vérifier la valeur du paramètre *ReplayDirectoryPath* :
 
-    Get-TransportService | Format-List ReplayDirectoryPath
+```powershell
+Get-TransportService | Format-List ReplayDirectoryPath
+```
 
 ## Pour plus d'informations
 

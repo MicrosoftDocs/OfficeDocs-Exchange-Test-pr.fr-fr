@@ -23,7 +23,7 @@ Certaines questions sur des dossiers publics sont-elles restées sans réponses 
 
 ## FAQ sur la migration des dossiers publics
 
-Cette section contient des questions fréquemment posées à propos de la migration de dossiers publics. Pour plus d’informations, consultez [Utiliser la migration par lots pour migrer les dossiers publics vers Exchange 2013 à partir de versions antérieures](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md), [Utilisation de la migration par lot pour migrer des dossiers publics vers Office 365 et Exchange Online](use-batch-migration-to-migrate-legacy-public-folders-to-office-365-and-exchange-online-exchange-online-help.md)ou [Utilisation de la migration par lot pour migrer des dossiers publics Exchange 2013 vers Exchange Online](use-batch-migration-to-migrate-exchange-2013-public-folders-to-exchange-online-exchange-online-help.md).
+Cette section contient des questions fréquemment posées à propos de la migration de dossiers publics. Pour plus d’informations, consultez [Utiliser la migration par lots pour migrer les dossiers publics vers Exchange 2013 à partir de versions antérieures](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md), [Utilisation de la migration par lot pour migrer des dossiers publics vers Office 365 et Exchange Online](https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)ou [Utilisation de la migration par lot pour migrer des dossiers publics Exchange 2013 vers Exchange Online](https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders).
 
 ## Quels sont les scénarios de migration de dossiers publics pris en charge ?
 
@@ -53,7 +53,9 @@ Le fichier .csv est utilisé pour déterminer le mappage entre la hiérarchie so
 
 Vous pouvez forcer une synchronisation Delta finale avant la finalisation (avant de verrouiller la source) en exécutant la commande Shell suivante :
 
-    Resume-PublicFolderMigrationRequest \PublicFolderMigration
+```powershell
+Resume-PublicFolderMigrationRequest \PublicFolderMigration
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Resume-PublicFolderMigrationRequest](https://technet.microsoft.com/fr-fr/library/jj218689\(v=exchg.150\)).
 
@@ -63,7 +65,9 @@ Dans le cadre du processus de migration, un fichier .csv est généré (à l’a
 
 Vous pouvez générer le fichier .csv en entrée en exécutant le script `AggregatePFData.ps1` qui se trouve dans le répertoire \<*Dossier d’installation d’Exchange*\>\\V15\\Scripts. Exécutez le script comme suit :
 
-    .\AggregatePFData.ps1 | Select-Object -property @{Name="FolderName"; Expression = {$_.Identity}}, @{Name="FolderSize"; Expression = {$_.TotalItemSize.Value.ToBytes()}} | Export-CSV -Path <Path followed by the name of the CSV>
+  ```powershell
+  .\AggregatePFData.ps1 | Select-Object -property @{Name="FolderName"; Expression = {$_.Identity}}, @{Name="FolderSize"; Expression = {$_.TotalItemSize.Value.ToBytes()}} | Export-CSV -Path <Path followed by the name of the CSV>
+  ```
 
 ## Est-ce que les autorisations de dossier public migrent ?
 
@@ -101,7 +105,9 @@ Pour plus d’informations sur les limites de stockage de dossier public, consul
 
 Exécutez la commande suivante :
 
-    Get-OrganizationConfig | Format-List RootPublicFolderMailbox
+```powershell
+Get-OrganizationConfig | Format-List RootPublicFolderMailbox
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Get-OrganizationConfig](https://technet.microsoft.com/fr-fr/library/aa997571\(v=exchg.150\)).
 
@@ -109,9 +115,11 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Exécutez la commande suivante pour créer la première boîte aux lettres de dossier public de la hiérarchie principale et les boîtes aux lettres de la hiérarchie secondaire.
 
-    New-Mailbox -PublicFolder -Name <name of public folder>
+```powershell
+New-Mailbox -PublicFolder -Name <name of public folder>
+```
 
-Pour plus d’informations, consultez la rubrique [Créer un dossier public](create-a-public-folder-exchange-2013-help.md).
+Pour plus d’informations, consultez la rubrique [Créer un dossier public](https://docs.microsoft.com/fr-fr/exchange/collaboration-exo/public-folders/create-public-folder).
 
 ## Dans les versions précédentes d’Exchange, une option permettait de spécifier la base de données de dossiers publics de chaque base de données de boîtes aux lettres. Comment cela est-il possible dans Exchange 2013 ?
 
@@ -145,7 +153,9 @@ Tout comme les versions précédentes d’Exchange, vous pouvez définir des lim
 
 Dans Exchange 2007 et Exchange 2010, vous pouvez spécifier les utilisateurs ayant eu accès à des dossiers publics spécifiques. Dans Exchange 2013, vous pouvez définir la boîte aux lettres de dossier public par défaut pour chaque utilisateur. Pour cela, exécutez la cmdlet [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)) en association avec le paramètre *DefaultPublicFolderMailbox*.
 
-    Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"
+```powershell
+Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"
+```
 
 ## Si la hiérarchie principale n’est plus disponible, quel impact cela a-t-il sur l’utilisateur ?
 

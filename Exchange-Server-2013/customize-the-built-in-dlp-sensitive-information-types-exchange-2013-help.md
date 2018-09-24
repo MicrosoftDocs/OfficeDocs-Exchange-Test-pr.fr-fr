@@ -61,17 +61,19 @@ Les cmdlets ci-dessus ont exporté l’ensemble de la *collection de règles*, c
 
 3.  Recherchez **Func\_credit\_card** pour trouver la définition de règle de numéro de carte de crédit. (Dans le langage XML, les noms des règles ne peuvent pas contenir d’espaces, qui sont donc généralement remplacés par des traits de soulignement, et les noms des règles sont parfois abrégés. Par exemple, la règle de numéro de sécurité sociale des États-Unis est abrégée par « SSN ». Le XML de la règle de numéro de carte de crédit doit ressembler à l’exemple de code suivant.
     
-        <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085"
-               patternsProximity="300" recommendedConfidence="85">
-              <Pattern confidenceLevel="85">
-               <IdMatch idRef="Func_credit_card" />
-                <Any minMatches="1">
-                  <Match idRef="Keyword_cc_verification" />
-                  <Match idRef="Keyword_cc_name" />
-                  <Match idRef="Func_expiration_date" />
-                </Any>
-              </Pattern>
-            </Entity>
+```XML
+<Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085"
+    patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
+    <IdMatch idRef="Func_credit_card" />
+    <Any minMatches="1">
+      <Match idRef="Keyword_cc_verification" />
+      <Match idRef="Keyword_cc_name" />
+      <Match idRef="Func_expiration_date" />
+    </Any>
+  </Pattern>
+</Entity>
+```
 
 Maintenant que vous avez localisé la définition de règle de numéro de carte de crédit dans le XML, vous pouvez personnaliser le XML de la règle pour répondre à vos besoins. (Pour un rappel sur les définitions XML, voir Glossaire terminologique à la fin de cette rubrique.)
 
@@ -81,108 +83,116 @@ Tout d’abord, vous devez créer un type d’informations sensibles, car vous n
 
 Toutes les définitions de règle XML sont construites sur le modèle général suivant. Vous devez copier et coller le XML de définition de numéro de carte de crédit dans le modèle, modifier certaines valeurs (remarquez les espaces réservés « . . .” dans l’exemple suivant), puis télécharger le XML modifié en tant que nouvelle règle pouvant être utilisée dans des stratégies.
 
-    <?xml version="1.0" encoding="utf-16"?>
-    <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
-      <RulePack id=". . .">
-        <Version major="1" minor="0" build="0" revision="0" />
-        <Publisher id=". . ." /> 
-        <Details defaultLangCode=". . .">
-          <LocalizedDetails langcode=" . . . ">
-             <PublisherName>. . .</PublisherName>
-             <Name>. . .</Name>
-             <Description>. . .</Description>
-          </LocalizedDetails>
-        </Details>
-      </RulePack>
-      
-     <Rules>
-       <!-- Paste the Credit Card Number rule definition here.--> 
-    
-          <LocalizedStrings>
-             <Resource idRef=". . .">
-               <Name default="true" langcode=" . . . ">. . .</Name>
-               <Description default="true" langcode=". . ."> . . .</Description>
-             </Resource>
-          </LocalizedStrings>
-    
-       </Rules>
-    </RulePackage>
+```XML
+<?xml version="1.0" encoding="utf-16"?>
+<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+  <RulePack id=". . .">
+    <Version major="1" minor="0" build="0" revision="0" />
+    <Publisher id=". . ." /> 
+    <Details defaultLangCode=". . .">
+      <LocalizedDetails langcode=" . . . ">
+          <PublisherName>. . .</PublisherName>
+          <Name>. . .</Name>
+          <Description>. . .</Description>
+      </LocalizedDetails>
+    </Details>
+  </RulePack>
+  
+  <Rules>
+    <!-- Paste the Credit Card Number rule definition here.--> 
+
+      <LocalizedStrings>
+          <Resource idRef=". . .">
+            <Name default="true" langcode=" . . . ">. . .</Name>
+            <Description default="true" langcode=". . ."> . . .</Description>
+          </Resource>
+      </LocalizedStrings>
+
+    </Rules>
+</RulePackage>
+```
 
 Vous obtenez maintenant quelque chose qui ressemble au XML suivant. Étant donné que les packages de règles et les règles sont identifiés par leur GUID unique, vous devez générer deux GUID : un pour le package de règles et un pour remplacer le GUID de la règle de numéro de carte de crédit. (Le GUID pour l’ID d’entité dans l’exemple de code suivant est celui de la définition de notre règle intégrée, que vous devez remplacer.) Il existe plusieurs façons de générer des GUID, mais vous pouvez le faire facilement dans PowerShell en saisissant **\[guid\]::NewGuid()**.
 
-    <?xml version="1.0" encoding="utf-16"?>
-    <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
-      <RulePack id="8aac8390-e99f-4487-8d16-7f0cdee8defc">
-        <Version major="1" minor="0" build="0" revision="0" />
-        <Publisher id="8d34806e-cd65-4178-ba0e-5d7d712e5b66" />
-        <Details defaultLangCode="en">
-          <LocalizedDetails langcode="en">
-            <PublisherName>Contoso Ltd.</PublisherName>
-            <Name>Financial Information</Name>
-            <Description>Modified versions of the Microsoft rule package</Description>
-          </LocalizedDetails>
-        </Details>
-      </RulePack>
-      
-     <Rules>
-        <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f"
-           patternsProximity="300" recommendedConfidence="85">
-          <Pattern confidenceLevel="85">
-            <IdMatch idRef="Func_credit_card" />
-            <Any minMatches="1">
-              <Match idRef="Keyword_cc_verification" />
-              <Match idRef="Keyword_cc_name" />
-              <Match idRef="Func_expiration_date" />
-            </Any>
-          </Pattern>
-        </Entity>
-    
-          <LocalizedStrings>
-             <Resource idRef="db80b3da-0056-436e-b0ca-1f4cf7080d1f"> 
-    <!-- This is the GUID for the preceding Credit Card Number entity because the following text is for that Entity. -->
-               <Name default="true" langcode="en-us">Modified Credit Card Number</Name>
-               <Description default="true" langcode="en-us">Credit Card Number that looks for additional keywords, and another version of Credit Card Number that doesn't require keywords (but has a lower confidence level)</Description>
-             </Resource>
-          </LocalizedStrings>
-    
-       </Rules>
-    </RulePackage>
+```XML
+<?xml version="1.0" encoding="utf-16"?>
+<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+  <RulePack id="8aac8390-e99f-4487-8d16-7f0cdee8defc">
+    <Version major="1" minor="0" build="0" revision="0" />
+    <Publisher id="8d34806e-cd65-4178-ba0e-5d7d712e5b66" />
+    <Details defaultLangCode="en">
+      <LocalizedDetails langcode="en">
+        <PublisherName>Contoso Ltd.</PublisherName>
+        <Name>Financial Information</Name>
+        <Description>Modified versions of the Microsoft rule package</Description>
+      </LocalizedDetails>
+    </Details>
+  </RulePack>
+  
+  <Rules>
+    <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f"
+        patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_credit_card" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_cc_verification" />
+          <Match idRef="Keyword_cc_name" />
+          <Match idRef="Func_expiration_date" />
+        </Any>
+      </Pattern>
+    </Entity>
+
+      <LocalizedStrings>
+          <Resource idRef="db80b3da-0056-436e-b0ca-1f4cf7080d1f"> 
+<!-- This is the GUID for the preceding Credit Card Number entity because the following text is for that Entity. -->
+            <Name default="true" langcode="en-us">Modified Credit Card Number</Name>
+            <Description default="true" langcode="en-us">Credit Card Number that looks for additional keywords, and another version of Credit Card Number that doesn't require keywords (but has a lower confidence level)</Description>
+          </Resource>
+      </LocalizedStrings>
+
+    </Rules>
+</RulePackage>
+```
 
 ## Supprimer l’exigence de preuve crédible d’un type d’informations sensibles
 
 Maintenant que vous disposez d’un nouveau type d’informations sensibles que vous pouvez télécharger vers votre environnement Exchange, la prochaine étape consiste à rendre la règle plus spécifique. Modifiez la règle de sorte qu’elle recherche uniquement un nombre à 16 chiffres qui passe la somme de contrôle, mais qu’elle ne nécessite pas de preuve (crédible) supplémentaire (par exemple, des mots clés). Pour ce faire, vous devez retirer la partie du XML qui recherche la preuve crédible. La preuve crédible est très utile pour réduire les faux positifs car généralement, il existe certains mots clés ou une date d’expiration près du numéro de carte de crédit. Si vous supprimez cette preuve, vous devez également ajuster votre probabilité de trouver un numéro de carte de crédit en abaissant le paramètre **confidenceLevel**, qui est défini sur 85 dans l’exemple.
 
-    <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"
-          <Pattern confidenceLevel="85">
-            <IdMatch idRef="Func_credit_card" />
-          </Pattern>
-        </Entity>
+```XML
+<Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"
+      <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_credit_card" />
+      </Pattern>
+    </Entity>
+```
 
 ## Rechercher des mots clés propres à votre organisation
 
 Vous voulez peut-être exiger des preuves crédibles, mais aussi des mots clés différents ou supplémentaires, et vous voulez aussi peut-être modifier l’endroit où rechercher ces preuves. Vous pouvez ajuster le paramètre **patternsProximity** afin de développer ou réduire la fenêtre pour la preuve probante autour du numéro à 16 chiffres. Pour ajouter vos propres mots clés, vous devez définir une liste de mots clés et la référencer dans votre règle. Le XML suivant ajoute les mots clés « company card » et « Contoso card » de sorte que tous les messages qui contiennent ces expressions au sein des 150 caractères d’un numéro de carte de crédit soient identifiés comme des numéros de carte de crédit.
 
-    <Rules>
-    <! -- Modify the patternsProximity to be "150" rather than "300." -->
-        <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="150" recommendedConfidence="85">
-          <Pattern confidenceLevel="85">
-            <IdMatch idRef="Func_credit_card" />
-            <Any minMatches="1">
-              <Match idRef="Keyword_cc_verification" />
-              <Match idRef="Keyword_cc_name" />
-    <!-- Add the following XML, which references the keywords at the end of the XML sample. -->
-              <Match idRef="My_Additional_Keywords" />
-              <Match idRef="Func_expiration_date" />
-            </Any>
-          </Pattern>
-        </Entity>
-    <!-- Add the following XML, and update the information inside the <Term> tags with the keywords that you want to detect. -->
-        <Keyword id="My_Additional_Keywords">
-          <Group matchStyle="word">
-            <Term caseSensitive="false">company card</Term>
-            <Term caseSensitive="false">Contoso card</Term>
-          </Group>
-        </Keyword>
+```XML
+<Rules>
+<! -- Modify the patternsProximity to be "150" rather than "300." -->
+    <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="150" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_credit_card" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_cc_verification" />
+          <Match idRef="Keyword_cc_name" />
+<!-- Add the following XML, which references the keywords at the end of the XML sample. -->
+          <Match idRef="My_Additional_Keywords" />
+          <Match idRef="Func_expiration_date" />
+        </Any>
+      </Pattern>
+    </Entity>
+<!-- Add the following XML, and update the information inside the <Term> tags with the keywords that you want to detect. -->
+    <Keyword id="My_Additional_Keywords">
+      <Group matchStyle="word">
+        <Term caseSensitive="false">company card</Term>
+        <Term caseSensitive="false">Contoso card</Term>
+      </Group>
+    </Keyword>
+```
 
 ## Télécharger votre règle
 
@@ -259,9 +269,9 @@ Voici les définitions des termes que vous avez rencontrés au cours de cette pr
 
 ## Pour plus d’informations
 
-  - [Application des règles DLP pour évaluer les messages](how-dlp-rules-are-applied-to-evaluate-messages-exchange-2013-help.md)
+  - [Application des règles DLP pour évaluer les messages](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/dlp-rule-application)
 
-  - [Création d'une stratégie personnalisée de protection contre la perte de données (DLP)](create-a-custom-dlp-policy-exchange-2013-help.md)
+  - [Création d'une stratégie personnalisée de protection contre la perte de données (DLP)](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy)
 
   - [Éléments recherchés par les types d’informations sensibles dans Exchange](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md)
 

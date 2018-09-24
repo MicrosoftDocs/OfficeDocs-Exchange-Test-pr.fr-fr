@@ -23,7 +23,7 @@ Une fois Microsoft Exchange Server 2013 installé dans votre organisation, vous
 
 Les étapes de la présente rubrique supposent un déploiement Exchange de base avec un site Active Directory unique et un espace de noms SMTP unique.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Cette rubrique utilise des valeurs d'exemple telles que Ex2013CAS, contoso.com, mail.contoso.com et 172.16.10.11. Remplacez ces valeurs d'exemple par les noms serveurs, noms de domaine complet et adresses IP pour votre organisation.
 
 
@@ -39,7 +39,7 @@ Pour les autres tâches de gestion relatives au flux de messagerie, aux clients 
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-> [!NOTE]
+> [!IMPORTANT]
 > Chaque organisation demande au minimum un serveur d'accès au client et un serveur de boîtes aux lettres dans la forêt Active Directory. De plus, chaque site Active Directory qui contient un serveur de boîtes aux lettres doit également contenir au moins un serveur d'accès au client. Si vous séparez les rôles de vos serveurs, nous vous recommandons d'installer le serveur ayant le rôle de serveur de boîtes aux lettres en premier.
 
 
@@ -91,7 +91,7 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Par défaut, lorsque vous déployez une nouvelle organisation Exchange 2013 dans une forêt Active Directory, Exchange utilise le nom de domaine du domaine Active Directory, où Setup /PrepareAD a été exécuté. Si vous souhaitez que les destinataires reçoivent et envoient des messages vers et depuis un autre domaine, vous devez l'ajouter comme un domaine accepté. Ce domaine est également ajouté comme adresse SMTP principale sur la stratégie d'adresse de messagerie par défaut au cours de la prochaine étape.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Un enregistrement de ressource MX DNS (Domain Name System) public est requis pour chaque domaine SMTP pour lequel vous acceptez des messages électroniques en provenance d'Internet. Chaque enregistrement MX doit se résoudre dans le serveur côté Internet qui reçoit les messages électroniques pour votre organisation.
 
 
@@ -315,25 +315,31 @@ Pour plus d'informations sur les URL internes et externes des répertoires virtu
 
 2.  Stockez le nom d'hôte de votre serveur d'accès au client dans une variable qui sera utilisée à l'étape suivante. Par exemple, Ex2013CAS.
     
-        $HostName = "Ex2013CAS"
+    ```powershell
+    $HostName = "Ex2013CAS"
+    ```
 
 3.  Exécutez chacune des commandes suivantes dans l'environnement de ligne de commande Exchange Management Shell pour configurer chaque URL interne de sorte à ce qu'elle soit identique à l'URL externe du répertoire virtuel.
     
-        Set-EcpVirtualDirectory "$HostName\ECP (Default Web Site)" -InternalUrl ((Get-EcpVirtualDirectory "$HostName\ECP (Default Web Site)").ExternalUrl)
-        
-        Set-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)" -InternalUrl ((get-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)").ExternalUrl)
-        
-        Set-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)" -InternalUrl ((Get-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)").ExternalUrl)
-        
-        Set-OabVirtualDirectory "$HostName\OAB (Default Web Site)" -InternalUrl ((Get-OabVirtualDirectory "$HostName\OAB (Default Web Site)").ExternalUrl)
-        
-        Set-OwaVirtualDirectory "$HostName\OWA (Default Web Site)" -InternalUrl ((Get-OwaVirtualDirectory "$HostName\OWA (Default Web Site)").ExternalUrl)
-        
-        Set-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)" -InternalUrl ((Get-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)").ExternalUrl)
+    ```powershell
+    Set-EcpVirtualDirectory "$HostName\ECP (Default Web Site)" -InternalUrl ((Get-EcpVirtualDirectory "$HostName\ECP (Default Web Site)").ExternalUrl)
+
+    Set-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)" -InternalUrl ((get-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)").ExternalUrl)
+
+    Set-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)" -InternalUrl ((Get-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)").ExternalUrl)
+
+    Set-OabVirtualDirectory "$HostName\OAB (Default Web Site)" -InternalUrl ((Get-OabVirtualDirectory "$HostName\OAB (Default Web Site)").ExternalUrl)
+
+    Set-OwaVirtualDirectory "$HostName\OWA (Default Web Site)" -InternalUrl ((Get-OwaVirtualDirectory "$HostName\OWA (Default Web Site)").ExternalUrl)
+
+    Set-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)" -InternalUrl ((Get-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)").ExternalUrl)
+    ```
 
 4.  Pendant que nous sommes dans l’environnement de ligne de commande Exchange Management Shell, nous allons également configurer le carnet d’adresses en mode hors connexion de sorte que la découverte automatique sélectionne le bon répertoire virtuel pour le distribuer. Pour cela, exécutez les commandes suivantes.
     
-        Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
+    ```powershell
+    Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
+    ```
 
 Après avoir configuré l'URL interne sur les répertoires virtuels du serveur d'accès au client, vous devez configurer vos enregistrements DNS privés pour Outlook Web App (et autres). En fonction de votre configuration, vous devez faire pointer vos enregistrements DNS privés vers l’adresse IP interne ou externe, ou le nom de domaine complet (FQDN) de votre serveur d’accès au client. Voici des exemples d'enregistrements DNS conseillés, à créer pour activer la connexion du client interne.
 
@@ -453,7 +459,9 @@ Pour vous assurer d'avoir configuré correctement vos enregistrements DNS privé
 
 8.  Enfin, vous devez ouvrir l’environnement de ligne de commande Exchange Management Shell et configurer le carnet d’adresses en mode hors connexion de sorte que la découverte automatique sélectionne le bon répertoire virtuel pour distribuer le carnet d’adresses. Pour cela, exécutez les commandes suivantes.
     
-        Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
+    ```powershell
+    Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
+    ```
 
 Après avoir configuré l'URL interne sur les répertoires virtuels du serveur d'accès au client, vous devez configurer vos enregistrements DNS privés pour Outlook Web App (et autres). En fonction de votre configuration, vous devez faire pointer vos enregistrements DNS privés vers l’adresse IP interne ou externe, ou le nom de domaine complet de votre serveur d’accès au client. Voici un exemple d’enregistrement DNS recommandé que vous devez créer pour activer la connectivité du client interne si vous avez configuré vos URL internes de répertoire virtuel pour qu’elles utilisent internal.contoso.com.
 

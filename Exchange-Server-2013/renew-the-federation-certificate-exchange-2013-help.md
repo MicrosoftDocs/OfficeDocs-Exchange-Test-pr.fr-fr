@@ -33,7 +33,9 @@ Pour plus d’informations sur les approbations de fédération et la fédérati
 
   - Pour savoir si votre certificat de fédération a expiré, exécutez la commande suivante dans l’Environnement de ligne de commande Exchange Management Shell :
     
-        Get-ExchangeCertificate -Thumbprint (Get-FederationTrust).OrgCertificate.Thumbprint | Format-Table -Auto Thumbprint,NotAfter
+    ```powershell
+    Get-ExchangeCertificate -Thumbprint (Get-FederationTrust).OrgCertificate.Thumbprint | Format-Table -Auto Thumbprint,NotAfter
+    ```
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
@@ -49,7 +51,9 @@ Si le certificat de fédération n’a pas expiré, vous pouvez le remplacer par
 
 Exécutez la commande suivante dans l’Environnement de ligne de commande Exchange Management Shell pour créer un nouveau certificat de fédération :
 
-    $SKI = [System.Guid]::NewGuid().ToString("N"); New-ExchangeCertificate -DomainName 'Federation' -FriendlyName "Exchange Delegation Federation" -Services Federation -SubjectKeyIdentifier $SKI -PrivateKeyExportable $true
+```powershell
+$SKI = [System.Guid]::NewGuid().ToString("N"); New-ExchangeCertificate -DomainName 'Federation' -FriendlyName "Exchange Delegation Federation" -Services Federation -SubjectKeyIdentifier $SKI -PrivateKeyExportable $true
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-ExchangeCertificate](https://technet.microsoft.com/fr-fr/library/aa998327\(v=exchg.150\)).
 
@@ -65,11 +69,15 @@ Pour les autres procédures de cette rubrique, nous allons utiliser la valeur d�
 
 Pour utiliser l’Environnement de ligne de commande Exchange Management Shell pour configurer le nouveau certificat comme certificat de fédération, utilisez la syntaxe suivante :
 
-    Set-FederationTrust -Identity "Microsoft Federation Gateway" -Thumbprint <Thumbprint> -RefreshMetaData
+```powershell
+Set-FederationTrust -Identity "Microsoft Federation Gateway" -Thumbprint <Thumbprint> -RefreshMetaData
+```
 
 Cet exemple utilise la valeur d’empreinte numérique de certificat `6A99CED2E4F2B5BE96C5D17D662D217EF58B8F73`, obtenue à l’étape 1.
 
-    Set-FederationTrust -Identity "Microsoft Federation Gateway" -Thumbprint 6A99CED2E4F2B5BE96C5D17D662D217EF58B8F73 -RefreshMetaData
+```powershell
+Set-FederationTrust -Identity "Microsoft Federation Gateway" -Thumbprint 6A99CED2E4F2B5BE96C5D17D662D217EF58B8F73 -RefreshMetaData
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-FederationTrust](https://technet.microsoft.com/fr-fr/library/dd298034\(v=exchg.150\)).
 
@@ -81,11 +89,15 @@ Vous pouvez à présent exécuter cette opération en toute sécurité, car l’
 
 1.  Rechercher les valeurs nécessaires pour l’enregistrement TXT requis en exécutant la commande suivante dans l’Environnement de ligne de commande Exchange Management Shell :
     
-        Get-FederatedDomainProof -DomainName <Domain> | Format-List Thumbprint,Proof
+    ```powershell
+    Get-FederatedDomainProof -DomainName <Domain> | Format-List Thumbprint,Proof
+    ```
     
     Par exemple, si votre domaine fédéré est contoso.com, exécutez la commande suivante :
     
-        Get-FederatedDomainProof -DomainName contoso.com | Format-List Thumbprint,Proof
+    ```powershell
+    Get-FederatedDomainProof -DomainName contoso.com | Format-List Thumbprint,Proof
+    ```
     
     Le résultat de la commande ressemble à ceci :
     
@@ -107,7 +119,9 @@ Exchange distribue automatiquement le nouveau certificat de fédération sur tou
 
 Pour utiliser l’Environnement de ligne de commande Exchange Management Shell afin de vérifier la distribution du nouveau certificat de fédération, exécutez la commande suivante :
 
-    $Servers = Get-ExchangeServer; $Servers | foreach {Get-ExchangeCertificate -Server $_ | Where {$_.Services -match 'Federation'}} | Format-List Identity,Thumbprint,Services,Subject
+```powershell
+$Servers = Get-ExchangeServer; $Servers | foreach {Get-ExchangeCertificate -Server $_ | Where {$_.Services -match 'Federation'}} | Format-List Identity,Thumbprint,Services,Subject
+```
 
 **Remarque** : dans Exchange 2010, le résultat de la cmdlet **Test-FederationCertificate** contient le nom des serveurs. Le résultat de la cmdlet dans Exchange 2013 ou version ultérieure n’inclut pas les noms de serveur.
 
@@ -115,7 +129,9 @@ Pour utiliser l’Environnement de ligne de commande Exchange Management Shell a
 
 Pour utiliser l’Environnement de ligne de commande Exchange Management Shell afin d’activer le nouveau certificat de fédération, exécutez la commande suivante :
 
-    Set-FederationTrust -Identity "Microsoft Federation Gateway" -PublishFederationCertificate
+```powershell
+Set-FederationTrust -Identity "Microsoft Federation Gateway" -PublishFederationCertificate
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-FederationTrust](https://technet.microsoft.com/fr-fr/library/dd298034\(v=exchg.150\)).
 
@@ -127,7 +143,9 @@ Pour vérifier que vous avez correctement mis à jour l’approbation de fédér
 
   - Dans l’Environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour vérifier que le nouveau certificat est celui utilisé :
     
-        Get-FederationTrust | Format-List *priv*
+    ```powershell
+    Get-FederationTrust | Format-List *priv*
+    ```
     
       - La propriété **OrgPrivCertificate** doit contenir l’empreinte numérique du nouveau certificat de fédération.
     
@@ -135,7 +153,9 @@ Pour vérifier que vous avez correctement mis à jour l’approbation de fédér
 
   - Dans l’Environnement de ligne de commande Exchange Management Shell, remplacez *\<user's email address\>* par l’adresse e-mail d’un utilisateur de votre organisation et exécutez la commande suivante pour vérifier que l’approbation de fédération fonctionne :
     
-        Test-FederationTrust -UserIdentity <user's email address>
+    ```powershell
+    Test-FederationTrust -UserIdentity <user's email address>
+    ```
 
 ## Remplacer un certificat de fédération expiré
 
@@ -143,21 +163,29 @@ Si le certificat de fédération a déjà expiré, vous devez supprimer tous les
 
 1.  Si vous avez plusieurs domaines fédérés, vous devez repérer le principal domaine partagé pour le supprimer en dernier. Pour utiliser l’Environnement de ligne de commande Exchange Management Shell afin de trouver le domaine partagé principal et l’ensemble des domaines fédérés, exécutez la commande suivante :
     
-        Get-FederatedOrganizationIdentifier | Format-List AccountNamespace,Domains
+    ```powershell
+    Get-FederatedOrganizationIdentifier | Format-List AccountNamespace,Domains
+    ```
     
     La valeur de la propriété **AccountNamespace** contient le domaine partagé principal au format `FYDIBOHF25SPDLT<primary shared domain>`. Par exemple, dans la valeur `FYDIBOHF25SPDLT.contoso.com`, contoso.com est le domaine partagé principal.
 
 2.  Supprimez chaque domaine fédéré qui n’est pas le domaine partagé principal en exécutant la commande suivante dans l’Environnement de ligne de commande Exchange Management Shell :
     
-        Remove-FederatedDomain -DomainName <domain> -Force
+    ```powershell
+    Remove-FederatedDomain -DomainName <domain> -Force
+    ```
 
 3.  Une fois que vous avez supprimé tous les autres domaines fédérés, supprimez le domaine partagé principal en exécutant la commande suivante dans l’Environnement de ligne de commande Exchange Management Shell :
     
-        Remove-FederatedDomain -DomainName <domain> -Force
+    ```powershell
+    Remove-FederatedDomain -DomainName <domain> -Force
+    ```
 
 4.  Supprimer l’approbation de fédération en exécutant la commande suivante dans l’Environnement de ligne de commande Exchange Management Shell :
     
-        Remove-FederationTrust "Microsoft Federation Gateway"
+    ```powershell
+    Remove-FederationTrust "Microsoft Federation Gateway"
+    ```
 
 5.  Recréez l’approbation de fédération. Pour plus d’informations, voir [Créer une approbation de fédération](https://technet.microsoft.com/fr-fr/library/dd335198\(v=exchg.150\)).
 

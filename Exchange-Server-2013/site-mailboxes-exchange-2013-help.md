@@ -91,13 +91,15 @@ Quand l'application Cycle de vie dans SharePoint ferme une boîte aux lettres de
 
 Vous pouvez utiliser la commande suivante pour rechercher et supprimer des boîtes aux lettres de site qui ont été marquées pour suppression.
 
-    Get-Mailbox MDEL:* | ?{$_.RecipientTypeDetails -eq "TeamMailbox"} | Remove-Mailbox -Confirm:$false
+```powershell
+Get-Mailbox MDEL:* | ?{$_.RecipientTypeDetails -eq "TeamMailbox"} | Remove-Mailbox -Confirm:$false
+```
 
 Les boîtes aux lettres de site ne prennent pas en charge la rétention au niveau de l’élément. La rétention s'applique au niveau du projet pour les boîtes aux lettres de site. Par conséquent, quand l'ensemble de la boîte aux lettres de site est supprimé, les éléments conservés le sont aussi.
 
 ## Conformité
 
-À l'aide de la console eDiscovery (découverte électronique) dans SharePoint, les boîtes aux lettres de site peuvent être incluses dans l'étendue de la découverte électronique locale pour que vous puissiez faire des recherches par mots clés dans les boîtes aux lettres d'utilisateur ou de site. En outre, vous pouvez placer une boîte aux lettres de site en suspens pour raisons juridiques. Pour plus d'informations, consultez la rubrique [Découverte électronique locale](in-place-ediscovery-exchange-2013-help.md).
+À l'aide de la console eDiscovery (découverte électronique) dans SharePoint, les boîtes aux lettres de site peuvent être incluses dans l'étendue de la découverte électronique locale pour que vous puissiez faire des recherches par mots clés dans les boîtes aux lettres d'utilisateur ou de site. En outre, vous pouvez placer une boîte aux lettres de site en suspens pour raisons juridiques. Pour plus d'informations, consultez la rubrique [Découverte électronique locale](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery).
 
 > [!NOTE]
 > Pour placer une boîte aux lettres de site en conservation légale dans Office 365, elle doit disposer d’une licence Exchange Online (Plan 2). Si une boîte aux lettres de site dispose d’une licence Exchange Online (Plan 1), vous devez lui attribuer une licence Archivage Exchange Online distincte pour la placer en conservation légale.

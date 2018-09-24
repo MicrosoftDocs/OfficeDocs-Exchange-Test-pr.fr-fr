@@ -51,7 +51,7 @@ Souhaitez-vous rechercher d’autres tâches de gestion relatives aux étendues�
 
 Dans cette étape, déterminez les bases de données à inclure dans l’étendue de base de données. Indiquez également si vous souhaitez spécifier une liste statique de bases de données ou bien créer un filtre de base de données contenant uniquement les bases de données qui correspondent aux critères spécifiés.
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Les attributions de rôle associées aux étendues de base de données s’appliquent uniquement aux utilisateurs qui se connectent à des serveurs dotés de Microsoft Exchange Server 2010 Service Pack 1 (SP1) ou version ultérieure ou d’Exchange 2013. Si un utilisateur auquel est appliquée une attribution de rôle associée à une étendue de base de données se connecte à une version de serveur antérieure à Exchange 2010 SP1, l’attribution de rôle n’est pas appliquée à cet utilisateur et celui-ci ne bénéficiera pas des autorisations octroyées dans le cadre de cette attribution.
 
 
@@ -59,11 +59,15 @@ Dans cette étape, déterminez les bases de données à inclure dans l’étendu
 
 Utilisez une liste de bases de données pour définir une liste statique de bases de données de boîtes aux lettres à inclure dans cette étendue. Pour créer une étendue de liste de bases de données, utilisez la syntaxe suivante.
 
-    New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```
 
 Dans cet exemple, on crée une étendue qui s’applique uniquement aux bases de données Base de données 1, Base de données 2 et Base de données 3.
 
-    New-ManagementScope -Name "Accounting databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```powershell
+New-ManagementScope -Name "Accounting databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```
 
 Pour de plus amples informations sur la syntaxe et les paramètres, consultez la rubrique [New-ManagementScope](https://technet.microsoft.com/fr-fr/library/dd335137\(v=exchg.150\)).
 
@@ -75,11 +79,15 @@ Pour obtenir une liste des propriétés de base de données pouvant être filtr�
 
 Pour créer une étendue de filtre de base de données, utilisez la syntaxe suivante.
 
-    New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```
 
 Dans cet exemple, on crée une étendue qui inclut toutes les bases de données contenant la chaîne « ACCT » dans la propriété **Name** de la base de données.
 
-    New-ManagementScope -Name "Accounting Databases" -DatabaseRestrictionFilter { Name -Like '*ACCT*' }
+```powershell
+New-ManagementScope -Name "Accounting Databases" -DatabaseRestrictionFilter { Name -Like '*ACCT*' }
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementScope](https://technet.microsoft.com/fr-fr/library/dd335137\(v=exchg.150\)).
 
@@ -97,12 +105,16 @@ Utilisez la procédure ci-dessous si vous venez de créer un groupe de rôles au
 
 Pour créer une attribution de rôle entre le rôle de gestion à affecter et le nouveau groupe de rôles à l’aide de la nouvelle étendue de base de données, utilisez la syntaxe suivante.
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <database scope name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <database scope name>
+```
 
 Dans cet exemple, on crée une attribution de rôle entre les rôles Destinataires de messagerie et Création de destinataires de messagerie et le groupe de rôles Administrateurs comptabilité, à l’aide de l’étendue de base de données Bases de données de comptabilité.
 
-    New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipients" -CustomConfigWriteScope "Accounting Databases"
-    New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipient Creation" -CustomConfigWriteScope "Accounting Databases"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipients" -CustomConfigWriteScope "Accounting Databases"
+New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipient Creation" -CustomConfigWriteScope "Accounting Databases"
+```
 
 Pour de plus amples informations sur la syntaxe et les paramètres, consultez la rubrique [New-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335193\(v=exchg.150\)).
 
@@ -114,12 +126,16 @@ Cette procédure utilise le traitement en pipeline. Pour plus d’informations, 
 
 Pour modifier une attribution de rôle entre le rôle de gestion auquel vous souhaitez appliquer l’étendue de base de données et un groupe de rôles existant, utilisez la syntaxe suivante.
 
-    Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> | Set-ManagementRoleAssignment -CustomConfigWriteScope <database scope name>
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> | Set-ManagementRoleAssignment -CustomConfigWriteScope <database scope name>
+```
 
 Dans cet exemple, on ajoute l’étendue de base de données Bases de données comptabilité aux rôles Destinataires de messagerie et Création de destinataires de messagerie affectés au groupe de rôles Administrateurs comptabilité.
 
-    Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipients" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
-    Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipient Creation" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipients" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
+Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipient Creation" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
+```
 
 Pour plus d’informations sur la syntaxe et les paramètres, consultez la rubrique [Get-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd351024\(v=exchg.150\)) ou [Set-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335173\(v=exchg.150\)).
 
@@ -127,7 +143,7 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez la rubri
 
 Si vous souhaitez ajouter des membres à un groupe de rôles, consultez la rubrique [Gérer les membres de groupes de rôles](manage-role-group-members-exchange-2013-help.md).
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Si vous ajoutez des membres à ce groupe de rôles pour limiter les bases de données dans lesquelles il est possible de créer des utilisateurs ou de déplacer des boîtes aux lettres, assurez-vous qu’ils n’appartiennent pas à d’autres groupes de rôles pouvant accorder des autorisations supplémentaires.
 
 

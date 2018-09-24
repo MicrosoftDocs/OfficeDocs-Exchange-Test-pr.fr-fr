@@ -45,9 +45,9 @@ Vous rencontrez des difficultés ? Demandez de l’aide en participant aux foru
 
 Vous pouvez activer le blocage de rétention des boîtes aux lettres pour désactiver temporairement la gestion des enregistrements de messagerie (par exemple, lorsque les utilisateurs sont en congé). Le traitement des stratégies de rétention est alors suspendu pour la boîte aux lettres jusqu'à la désactivation du blocage de rétention. Cette fonctionnalité diffère de l'activation de l'archive permanente ou de la mise en attente pour litige.
 
-Pour plus d'informations sur la procédure d'activation du blocage de rétention d'une boîte aux lettres, consultez la rubrique [Placer une boîte aux lettres en blocage de rétention](place-a-mailbox-on-retention-hold-exchange-2013-help.md).
+Pour plus d'informations sur la procédure d'activation du blocage de rétention d'une boîte aux lettres, consultez la rubrique [Placer une boîte aux lettres en blocage de rétention](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold).
 
-Pour en savoir plus sur l'archive permanente et la mise en attente pour litige, consultez la rubrique [Conservation inaltérable et conservation pour litige](in-place-hold-and-litigation-hold-exchange-2013-help.md).
+Pour en savoir plus sur l'archive permanente et la mise en attente pour litige, consultez la rubrique [Conservation inaltérable et conservation pour litige](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-and-litigation-holds).
 
 ## Suppression de balises de rétention des boîtes aux lettres
 
@@ -57,9 +57,11 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Cet exemple d'environnement de ligne de commande illustre la dissociation de la balise de rétention Supprimer - 3 jours de la stratégie de rétention Corp-Users.
 
-    $tags = (Get-RetentionPolicy "Corp-Users").RetentionPolicyTagLinks
-    $tags -= "Deleted Items - 3 Days"
-    Set-RetentionPolicy "Corp-Users" -RetentionPolicyTagLinks $tags
+```powershell
+$tags = (Get-RetentionPolicy "Corp-Users").RetentionPolicyTagLinks
+$tags -= "Deleted Items - 3 Days"
+Set-RetentionPolicy "Corp-Users" -RetentionPolicyTagLinks $tags
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Get-RetentionPolicy](https://technet.microsoft.com/fr-fr/library/dd298086\(v=exchg.150\)) et [Set-RetentionPolicy](https://technet.microsoft.com/fr-fr/library/dd335196\(v=exchg.150\)).
 
@@ -71,15 +73,21 @@ Vous pouvez cesser l'application d'une stratégie de rétention à une boîte au
 
 Cet exemple d'environnement de ligne de commande montre comment supprimer la stratégie de rétention de la boîte aux lettres jpeoples.
 
-    Set-Mailbox jpeoples -RetentionPolicy $null.
+```powershell
+Set-Mailbox jpeoples -RetentionPolicy $null.
+```
 
 Cet exemple d'environnement de ligne de commande illustre la suppression de la stratégie de rétention de toutes les boîtes aux lettres de l'organisation Exchange.
 
-    Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -ne $null} | Set-Mailbox -RetentionPolicy $null
+```powershell
+Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -ne $null} | Set-Mailbox -RetentionPolicy $null
+```
 
 Cet exemple d'environnement de ligne de commande montre comment supprimer la stratégie de rétention Corp-Finance de tous les utilisateurs de boîtes aux lettres ayant appliqué cette stratégie.
 
-    Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -eq "Corp-Finance"} | Set-Mailbox -RetentionPolicy $null
+```powershell
+Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -eq "Corp-Finance"} | Set-Mailbox -RetentionPolicy $null
+```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)) et [Get-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123685\(v=exchg.150\)).
 
@@ -101,15 +109,21 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Cet exemple supprime toutes les balises de rétention dans une organisation Exchange à l'exception de la balise Ne jamais supprimer, qui est utilisée dans la stratégie ArbitrationMailbox créée par le programme d'installation d'Exchange.
 
-    Get-RetentionPolicyTag | ? {$_.RetentionAction -ne "MoveToArchive" -and $_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```powershell
+Get-RetentionPolicyTag | ? {$_.RetentionAction -ne "MoveToArchive" -and $_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```
 
 Cet exemple supprime toutes les balises de rétention à l'exception de la balise Ne jamais supprimer.
 
-    Get-RetentionPolicyTag | ? {$_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```powershell
+Get-RetentionPolicyTag | ? {$_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```
 
 Cette commande supprime la stratégie de rétention Corp-Users d'une organisation Exchange.
 
-    Remove-RetentionPolicy Corp-Users
+```powershell
+Remove-RetentionPolicy Corp-Users
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques suivantes :
 

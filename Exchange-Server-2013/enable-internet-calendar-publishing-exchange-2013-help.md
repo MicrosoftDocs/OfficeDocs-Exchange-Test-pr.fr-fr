@@ -29,7 +29,7 @@ Le processus d’activation de cette fonctionnalité consiste en trois étapes g
 
 3.  Créer une stratégie de partage dédiée et spécifique de la publication Internet des calendriers ou mettre à jour la stratégie de partage par défaut pour prendre en charge le domaine **Anonyme**. Quelle que soit la méthode employée, celle-ci permet aux utilisateurs de votre organisation Exchange d’inviter d’autres utilisateurs disposant d’un accès Internet à consulter des informations limitées de disponibilité de calendrier via une adresse URL publiée.
 
-> [!NOTE]
+> [!IMPORTANT]
 > À la fin de l’étape 3, les utilisateurs doivent publier leurs calendriers à partir d’Outlook. La publication des calendriers crée des URL que les utilisateurs peuvent donner à des contacts en dehors de leur organisation. Une URL permet aux destinataires de s’abonner à des calendriers à l’aide d’Outlook ou d’Outlook Web App, et l’autre permet aux destinataires d’afficher un calendrier dans un navigateur web. Chaque utilisateur peut contrôler la quantité de détails visibles.
 
 
@@ -64,7 +64,9 @@ Pour connaître les tâches de gestion supplémentaires relatives aux stratégie
 
 Cet exemple configure une URL du proxy Web sur le serveur de boîtes aux lettres MAIL01.
 
-    Set-ExchangeServer -Identity "MAIL01" -InternetWebProxy "<Webproxy URL>"
+```powershell
+Set-ExchangeServer -Identity "MAIL01" -InternetWebProxy "<Webproxy URL>"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ExchangeServer](https://technet.microsoft.com/fr-fr/library/bb123716\(v=exchg.150\)).
 
@@ -72,7 +74,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour vérifier que la configuration de l’adresse URL du proxy Web a été correctement effectuée, exécutez la commande de l’environnement de ligne de commande Exchange Management Shell suivante et vérifiez les informations du paramètre *InternetWebProxy*.
 
-    Get-ExchangeServer | format-list
+```powershell
+Get-ExchangeServer | format-list
+```
 
 ## Étape 2 : Utiliser l’environnement de ligne de commande Exchange Management Shell pour activer le répertoire virtuel de publication
 
@@ -82,7 +86,9 @@ Pour vérifier que la configuration de l’adresse URL du proxy Web a été corr
 
 Cet exemple active le répertoire virtuel de publication sur le serveur d’accès au client CAS01.
 
-    Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<URL for CAS01>" -CalendarEnabled $true
+```powershell
+Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<URL for CAS01>" -CalendarEnabled $true
+```
 
 Où l’identité `CAS01\owa (Default Web Site)` est à la fois le nom du serveur et le répertoire virtuel Outlook Web App.
 
@@ -92,7 +98,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour vérifier que l’activation du répertoire virtuel de publication s’est correctement effectuée, exécutez la commande de l’environnement de ligne de commande Exchange Management Shell suivante et vérifiez les informations du paramètre *ExternalURL*.
 
-    Get-OwaVirtualDirectory | format-list
+```powershell
+Get-OwaVirtualDirectory | format-list
+```
 
 ## Étape 3 : Créer ou configurer une stratégie de partage exclusivement consacrée à la publication Internet de calendriers
 
@@ -134,15 +142,21 @@ Pour créer une stratégie de partage spécifiquement pour la publication Intern
 
 Dans cet exemple, nous créons une stratégie de partage de publication Internet de calendriers intitulée « Internet » et configurons la stratégie afin de partager uniquement les informations de disponibilité. La stratégie est activée.
 
-    New-SharingPolicy -Name "Internet" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```powershell
+New-SharingPolicy -Name "Internet" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```
 
 Cet exemple ajoute la stratégie de partage Internet à la boîte aux lettres d’un utilisateur.
 
-    Set-Mailbox -Identity <user name> -SharingPolicy "Internet"
+```powershell
+Set-Mailbox -Identity <user name> -SharingPolicy "Internet"
+```
 
 Cet exemple ajoute la stratégie de partage Internet à une unité d’organisation.
 
-    Set-Mailbox -OrganizationalUnit <OU name> -SharingPolicy "Internet"
+```powershell
+Set-Mailbox -OrganizationalUnit <OU name> -SharingPolicy "Internet"
+```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [New-SharingPolicy](https://technet.microsoft.com/fr-fr/library/dd298186\(v=exchg.150\)) et [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)).
 
@@ -150,7 +164,9 @@ Pour des informations détaillées sur la syntaxe et les paramètres, consultez 
 
 Pour vérifier que la création de la stratégie de partage s’est effectuée correctement, exécutez la commande de l’environnement de ligne de commande Exchange Management Shell suivante et vérifiez les informations relatives à la stratégie de partage.
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 
 ## Option 2 : Configurer la stratégie de partage par défaut pour la publication des calendriers Internet
 
@@ -182,7 +198,9 @@ Pour configurer la stratégie de partage par défaut pour la publication Interne
 
 Dans cet exemple, nous mettons à jour la stratégie de partage par défaut et configurons la stratégie pour ne partager que des informations de disponibilité. La stratégie est activée.
 
-    Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```powershell
+Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)).
 
@@ -190,5 +208,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour vérifier que la mise à jour de la stratégie de partage par défaut s’est effectuée correctement, exécutez la commande suivante de l’environnement de ligne de commande Exchange Management Shell pour vérifier les informations de la stratégie de partage.
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 

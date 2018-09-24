@@ -41,11 +41,15 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 1.  Exécutez la commande suivante pour vérifier que l'agent de contenu est installé et activé sur le serveur Exchange :
     
-        Get-TransportAgent "Content Filter Agent"
+    ```powershell
+    Get-TransportAgent "Content Filter Agent"
+    ```
 
 2.  Exécutez la commande suivante pour vérifier que le filtrage de contenu est activé :
     
-        Get-ContentFilterConfig | Format-List Enabled
+    ```powershell
+    Get-ContentFilterConfig | Format-List Enabled
+    ```
 
 Pour plus d'informations, consultez la rubrique [Gérer le filtrage du contenu](manage-content-filtering-exchange-2013-help.md).
 
@@ -57,7 +61,7 @@ Pour créer une boîte aux lettres dédiée à la mise en quarantaine du courrie
 
   - **Créer une boîte aux lettres et un compte d'utilisateur dédiés**   Nous vous recommandons de créer une boîte aux lettres et un compte d'utilisateur Active Directory dédiés pour la boîte aux lettres de mise en quarantaine du courrier indésirable. Pour plus d'informations, consultez la rubrique [Création de boîtes aux lettres utilisateur](create-user-mailboxes-exchange-2013-help.md).
     
-    Vous pouvez appliquer des stratégies de destinataire, comme la gestion des enregistrements de messagerie, des quotas de boîte aux lettres et des droits de délégation, en fonction des stratégies de conformité et des besoins de votre organisation. Pour plus d'informations, consultez la rubrique [Gestion des enregistrements de messagerie](messaging-records-management-exchange-2013-help.md).
+    Vous pouvez appliquer des stratégies de destinataire, comme la gestion des enregistrements de messagerie, des quotas de boîte aux lettres et des droits de délégation, en fonction des stratégies de conformité et des besoins de votre organisation. Pour plus d'informations, consultez la rubrique [Gestion des enregistrements de messagerie](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/messaging-records-management/messaging-records-management).
     
     > [!NOTE]
     > Si un message mis en quarantaine est rejeté à cause d'un quota de stockage, ce message est perdu. Exchange ne génère pas de notifications d'échec de remise pour les messages mis en quarantaine, car ceux-ci sont inclus dans des rapports d'échec de remise.
@@ -71,11 +75,15 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Exécutez la commande suivante :
 
-    Set-ContentFilterConfig -QuarantineMailbox <SmtpAddress>
+```powershell
+Set-ContentFilterConfig -QuarantineMailbox <SmtpAddress>
+```
 
 Cet exemple envoie tous les messages qui dépassent le seuil de mise en quarantaine du courrier indésirable à spamQ@contoso.com.
 
-    Set-ContentFilterConfig -QuarantineMailbox spamQ@contoso.com
+```powershell
+Set-ContentFilterConfig -QuarantineMailbox spamQ@contoso.com
+```
 
 ## Comment savoir si cette étape a fonctionné ?
 
@@ -83,7 +91,9 @@ Pour vérifier que vous avez correctement spécifié la boîte aux lettres de mi
 
 1.  Exécutez la commande suivante :
     
-        Get-ContentFilterConfig | Format-List QuarantineMailbox
+    ```powershell
+    Get-ContentFilterConfig | Format-List QuarantineMailbox
+    ```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 
@@ -107,7 +117,7 @@ Lorsque vous gérez votre boîte aux lettres de mise en quarantaine du courrier 
 
   - Utilisez le même profil Outlook pour la récupération des messages mis en quarantaine à partir de la boîte aux lettres de mise en quarantaine du courrier indésirable. L'application d'autorisations à un profil Outlook différent pour la récupération des messages n'est pas prise en charge. Vous ne pouvez pas utiliser un profil Outlook différent pour la récupération ou la diffusion des messages à partir de la boîte aux lettres de mise en quarantaine du courrier indésirable.
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Les NDR qui sont identifiés comme courrier indésirable sont supprimés, même si leur valeur SCL indique qu'ils devraient être mis en quarantaine. Les notifications d'échec de remise ne sont pas remises à la boîte aux lettres de mise en quarantaine du courrier indésirable. Pour détecter de tels messages, utilisez l'enregistrement de l'agent ou le journal de suivi des messages. Pour plus d'informations, consultez la rubrique <a href="anti-spam-agent-logging-exchange-2013-help.md">Journalisation de l’agent anti-courrier indésirable</a>.
 
 

@@ -43,7 +43,9 @@ La journalisation de table de routage enregistre régulièrement un instantané 
 
 Exécutez la commande suivante :
 
-    Set-TransportService <ServerIdentity> -RoutingTableLogMaxAge <dd.hh:mm:ss> -RoutingTableLogMaxDirectorySize <Size>  -RoutingTableLogPath <LocalFilePath>
+```powershell
+Set-TransportService <ServerIdentity> -RoutingTableLogMaxAge <dd.hh:mm:ss> -RoutingTableLogMaxDirectorySize <Size>  -RoutingTableLogPath <LocalFilePath>
+```
 
 Cet exemple définit les paramètres de journal de la table de routage suivants sur le serveur de boîtes aux lettres nommé Mailbox01 :
 
@@ -55,7 +57,9 @@ Cet exemple définit les paramètres de journal de la table de routage suivants 
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -RoutingTableLogPath "D:\Routing Table Log" -RoutingTableLogMaxDirectorySize 70MB -RoutingTableLogMaxAge 45.00:00:00
+```powershell
+Set-TransportService Mailbox01 -RoutingTableLogPath "D:\Routing Table Log" -RoutingTableLogMaxDirectorySize 70MB -RoutingTableLogMaxAge 45.00:00:00
+```
 
 > [!NOTE]
 > La définition du paramètre <em>RoutingTableLogMaxAge</em> sur la valeur <code>00:00:00</code> empêche la suppression automatique des fichiers journaux de table de routage en raison de leur ancienneté.
@@ -67,7 +71,9 @@ Pour vérifier que vous avez correctement configuré la journalisation de table 
 
 1.  Dans l'environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante :
     
-        Get-TransportService <ServerIdentity> | Format-List RoutingTableLog*
+    ```powershell
+    Get-TransportService <ServerIdentity> | Format-List RoutingTableLog*
+    ```
 
 2.  Vérifiez que les valeurs affichées sont les valeurs que vous avez configurées.
 
@@ -75,21 +81,29 @@ Pour vérifier que vous avez correctement configuré la journalisation de table 
 
 1.  Dans une fenêtre d'invite de commandes, ouvrez le fichier de configuration d'application EdgeTransport.exe.config dans le Bloc-notes en exécutant la commande suivante :
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  Modifiez la clé suivante dans la section `<appSettings>`.
     
-        <add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
+    ```command line
+    <add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
+    ```
     
     Par exemple, pour changer l'intervalle de recalcul automatique de la table de routage sur 10 heures, utilisez la valeur suivante :
     
-        <add key="RoutingConfigReloadInterval" value="10:00:00" />
+    ```command line
+    <add key="RoutingConfigReloadInterval" value="10:00:00" />
+    ```
 
 3.  Lorsque vous avez terminé, enregistrez et fermez le fichier EdgeTransport.exe.config.
 
 4.  Redémarrez le service de transport Microsoft Exchange en exécutant la commande suivante :
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 ## Comment savoir si cela a fonctionné ?
 

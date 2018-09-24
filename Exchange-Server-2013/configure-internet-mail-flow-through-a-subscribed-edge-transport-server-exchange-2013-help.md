@@ -45,21 +45,29 @@ Si vous ne souhaitez pas abonner le serveur de transport Edge à un site Active 
 
 1.  Sur le serveur de transport Edge, créez le fichier d’abonnement Edge à l’aide de la syntaxe suivante.
     
-        New-EdgeSubscription -FileName <FileName>.xml [-Force]
+    ```powershell
+    New-EdgeSubscription -FileName <FileName>.xml [-Force]
+    ```
     
     L’exemple suivant crée un fichier d’abonnement Edge nommé EdgeSubscriptionInfo.xml dans le dossier C:\\My Documents. Le paramètre *Force* supprime les invites confirmant que les commandes seront désactivées, ainsi que les avertissements indiquant que les données de configuration seront remplacées sur le serveur de transport Edge.
     
-        New-EdgeSubscription -FileName "C:\My Documents\EdgeSubscriptionInfo.xml" -Force
+    ```powershell
+    New-EdgeSubscription -FileName "C:\My Documents\EdgeSubscriptionInfo.xml" -Force
+    ```
 
 2.  Copiez le fichier d’abonnement Edge créé vers un serveur de boîtes aux lettres dans le site Active Directory auquel vous abonnez le serveur de transport Edge.
 
 3.  Sur le serveur de boîtes aux lettres, pour importer le fichier d’abonnement Edge, utilisez la syntaxe ci-après.
     
-        New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "<FileName>.xml" -Encoding Byte -ReadCount 0)) -Site <SiteName>
+    ```powershell
+    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "<FileName>.xml" -Encoding Byte -ReadCount 0)) -Site <SiteName>
+    ```
     
     Cet exemple importe le fichier d’abonnement Edge nommé EdgeSubscriptionInfo.xml à partir du dossier D:\\Data, et abonne le serveur de transport Edge au site Active Directory nommé « Default-First-Site-Name ».
     
-        New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "D:\Data\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -Site "Default-First-Site-Name"
+    ```powershell
+    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "D:\Data\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -Site "Default-First-Site-Name"
+    ```
     
     > [!NOTE]
     > Vous pouvez utiliser les paramètres <em>CreateInternetSendConnector</em> ou <em>CreateInboundSendConnector</em> pour empêcher la création automatique d’un seul ou des deux connecteurs d’envoi requis. Pour plus d’informations, voir <a href="edge-subscriptions-exchange-2013-help.md">Abonnements Edge</a>.
@@ -67,7 +75,9 @@ Si vous ne souhaitez pas abonner le serveur de transport Edge à un site Active 
 
 4.  Sur le serveur de boîtes aux lettres, exécutez la commande suivante pour démarrer la première synchronisation EdgeSync.
     
-        Start-EdgeSynchronization
+    ```powershell
+    Start-EdgeSynchronization
+    ```
 
 5.  Une fois que vous avez terminé, nous vous recommandons vivement de supprimer le fichier d’abonnement Edge à la fois du serveur de transport Edge et du serveur de boîtes aux lettres. Le fichier d’abonnement Edge contient des informations sur les informations d’identification utilisées lors du processus de communication LDAP.
 

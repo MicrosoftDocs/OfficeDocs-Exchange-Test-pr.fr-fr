@@ -25,9 +25,9 @@ Une fois la recherche de découverte électronique inaltérable créée, vous po
 
   - Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez section « Découverte électronique inaltérable » dans la rubrique [Stratégie de messagerie et autorisations de conformité](messaging-policy-and-compliance-permissions-exchange-2013-help.md).
 
-  - Pour pouvoir copier les résultats de la recherche, vous devez créer une recherche de découverte électronique à l’aide du CAE ou de l’interpréteur de commandes. Pour plus d’informations, voir [Créer une recherche de découverte électronique inaltérable](create-an-in-place-ediscovery-search-exchange-2013-help.md).
+  - Pour pouvoir copier les résultats de la recherche, vous devez créer une recherche de découverte électronique à l’aide du CAE ou de l’interpréteur de commandes. Pour plus d’informations, voir [Créer une recherche de découverte électronique inaltérable](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search).
 
-  - Le programme d’installation d’Exchange 2013 crée une boîte aux lettres de découverte appelée **Boîte aux lettres de découverte** pour copier les résultats de la recherche. La boîte aux lettres de découverte est également créée par défaut dans Exchange Online. Vous pouvez créer des boîtes aux lettres de découverte supplémentaires. Pour plus d’informations, voir [Créer une boîte aux lettres de découverte](create-a-discovery-mailbox-exchange-2013-help.md).
+  - Le programme d’installation d’Exchange 2013 crée une boîte aux lettres de découverte appelée **Boîte aux lettres de découverte** pour copier les résultats de la recherche. La boîte aux lettres de découverte est également créée par défaut dans Exchange Online. Vous pouvez créer des boîtes aux lettres de découverte supplémentaires. Pour plus d’informations, voir [Créer une boîte aux lettres de découverte](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox).
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
@@ -69,29 +69,35 @@ Une fois la recherche de découverte électronique inaltérable créée, vous po
 
 Après avoir utilisé la cmdlet **New-MailboxSearch** pour créer une recherche de découverte électronique inaltérable, vous devez lancer la recherche pour copier les messages dans la boîte aux lettres de découverte que vous avez indiquée dans le paramètre *TargetMailbox*. Pour plus d’informations sur la création de recherches de découverte électronique à l’aide de l’interpréteur de commandes, voir :
 
-  - [Use the Shell to create an In-Place eDiscovery search](create-an-in-place-ediscovery-search-exchange-2013-help.md)
+  - [Use the Shell to create an In-Place eDiscovery search](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)
 
   - [New-MailboxSearch](https://technet.microsoft.com/fr-fr/library/dd298064\(v=exchg.150\))
 
 Par exemple, vous devez exécuter la commande suivante pour lancer une recherche de découverte automatique nommée *Fabrikam Investigation* et copier les résultats de la recherche vers la boîte aux lettres de découverte spécifiée.
 
-    Start-MailboxSearch "Fabrikam Investigation"
+```powershell
+Start-MailboxSearch "Fabrikam Investigation"
+```
 
 Si vous avez utilisé le commutateur *EstimateOnly* pour obtenir une estimation des résultats de la recherche, vous devez le supprimer pour pouvoir copier ces derniers. Vous devez également indiquer une boîte aux lettres de découverte vers laquelle copier les résultats de la recherche. Par exemple, supposons que vous ayez créé une recherche à des fins d’estimation uniquement à l’aide de la commande suivante :
 
-    New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeUnsearchableItems
+```powershell
+New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeUnsearchableItems
+```
 
 Pour copier les résultats de cette recherche vers une boîte aux lettres de découverte, vous devez exécuter les commandes suivantes :
+
+```powershell
+Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
 ```
-    Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
-```
-```
-    Start-MailboxSearch "FY13 Q2 Financial Results"
+
+```powershell
+Start-MailboxSearch "FY13 Q2 Financial Results"
 ```
 
 ## Plus d’informations sur la copie des résultats de la recherche
 
-  - Une fois les résultats de la recherche copiés dans une boîte aux lettres de découverte, vous pouvez les exporter vers un fichier PST. Pour plus d’informations, voir [Exporter les résultats de la recherche électronique vers un fichier PST](export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md).
+  - Une fois les résultats de la recherche copiés dans une boîte aux lettres de découverte, vous pouvez les exporter vers un fichier PST. Pour plus d’informations, voir [Exporter les résultats de la recherche électronique vers un fichier PST](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/export-search-results).
 
   - Pour plus d’informations sur les éléments ne pouvant pas faire l’objet d’une recherche, voir [Éléments impossibles à rechercher dans la découverte électronique Exchange](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md).
 
@@ -103,5 +109,5 @@ Pour copier les résultats de cette recherche vers une boîte aux lettres de dé
     
       - **Prévisualiser les résultats de recherche** : cette option vous permet de prévisualiser les résultats renvoyés par la recherche au lieu d’avoir à les copier vers une boîte aux lettres de découverte pour les afficher. C’est un moyen rapide de déterminer si les résultats de la recherche sont pertinents. Après avoir prévisualisé les résultats, vous pouvez réviser votre requête pour les affiner, puis relancer la recherche. Les éléments de la page d’aperçu correspondent à des versions en lecture seule des résultats réels de la recherche. Par conséquent, vous ne pouvez pas les déplacer, les modifier, les supprimer ni les transférer sur la page d’aperçu.
     
-    Pour plus d’informations, voir [Estimate or preview search results](create-an-in-place-ediscovery-search-exchange-2013-help.md).
+    Pour plus d’informations, voir [Estimate or preview search results](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search).
 

@@ -25,7 +25,7 @@ Après avoir désactivé la messagerie pour un utilisateur de messagerie, vous p
 > Les utilisateurs de messagerie (également appelés <em>utilisateurs à extension messagerie</em>) diffèrent des utilisateurs disposant d’une boîte aux lettres dans votre organisation. La principale différence est que les utilisateurs de messagerie sont ceux qui possèdent une adresse de messagerie externe à votre organisation Exchange. Ils ne possèdent pas de boîte aux lettres dans votre organisation. Pour de plus amples informations sur les différences entre les utilisateurs disposant de boîtes aux lettres dans votre organisation et les utilisateurs de messagerie, consultez la rubrique <a href="recipients-exchange-2013-help.md">Recipients</a>.
 
 
-Pour d’autres tâches de gestion relatives aux utilisateurs de messagerie, consultez la rubrique [Gérer les utilisateurs de messagerie](manage-mail-users-exchange-2013-help.md).
+Pour d’autres tâches de gestion relatives aux utilisateurs de messagerie, consultez la rubrique [Gérer les utilisateurs de messagerie](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-mail-users).
 
 ## Ce qu’il faut savoir avant de commencer ?
 
@@ -61,7 +61,9 @@ L’utilisateur de messagerie est supprimé de la liste de contacts.
 
 Cet exemple montre comment désactiver la messagerie pour l’utilisateur de messagerie Yan Li.
 
-    Disable-MailUser -Identity "Yan Li"
+```powershell
+Disable-MailUser -Identity "Yan Li"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Disable-MailUser](https://technet.microsoft.com/fr-fr/library/aa998578\(v=exchg.150\)).
 
@@ -75,13 +77,17 @@ Pour vérifier que vous avez bien désactivé la messagerie pour un utilisateur 
 
 3.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-MailUser
+    ```powershell
+    Get-MailUser
+    ```
     
     L’utilisateur de messagerie pour lequel vous avez désactivé la messagerie électronique ne sera pas renvoyé dans les résultats car cette cmdlet ne renvoie que les utilisateurs à extension messagerie.
 
 4.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-User
+    ```powershell
+    Get-User
+    ```
     
     L’utilisateur de messagerie pour lequel vous avez désactivé la messagerie est renvoyé dans les résultats car cette cmdlet renvoie tous les objets utilisateur Active Directory.
 
@@ -93,7 +99,9 @@ La cmdlet **Enable-MailUser** permet d’activer la messagerie des utilisateurs 
 
 Cet exemple montre comment activer la messagerie pour l’utilisateur Sanjay Shah. Vous devez saisir une adresse de messagerie externe.
 
-    Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys.com
+```powershell
+Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys.com
+```
 
 ## Activation de la messagerie pour plusieurs utilisateurs à l’aide de l’environnement de ligne de commande Exchange Management Shell et d’un fichier CSV
 
@@ -101,22 +109,26 @@ Lorsque vous activez la messagerie pour un groupe d’utilisateurs, vous exporte
 
 1.  Exécutez la commande suivante pour exporter une liste des utilisateurs existants qui ne sont pas activés pour la messagerie ou ne disposant pas d’une boîte aux lettres dans votre organisation vers un fichier du Bureau de l’administrateur appelé UsersToMailEnable.csv :
     
-        Get-User | Where { $_.RecipientType -eq "User" } | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
+    ```powershell
+    Get-User | Where { $_.RecipientType -eq "User" } | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
+    ```
     
     Le fichier obtenu ressemble à celui-ci :
     
-        Name            RecipientType
-        ----            -------------
-        Guest           User
-        krbtgt          User
-        RMS_SERVICE     User
-        David Pelton    User
-        Kim Akers       User
-        Janet Schorr    User
-        Jeffrey Zang    User
-        Spencer Low     User
-        Toni Poe        User
-        ...
+    ```powershell
+    Name            RecipientType
+    ----            -------------
+    Guest           User
+    krbtgt          User
+    RMS_SERVICE     User
+    David Pelton    User
+    Kim Akers       User
+    Janet Schorr    User
+    Jeffrey Zang    User
+    Spencer Low     User
+    Toni Poe        User
+    ...
+    ```
 
 2.  Apportez les modifications suivantes au fichier CSV :
     
@@ -128,18 +140,22 @@ Lorsque vous activez la messagerie pour un groupe d’utilisateurs, vous exporte
     
     Le fichier CSV mis à jour doit ressembler à celui-ci :
     
-        Name,EmailAddress
-        David Pelton,davidp@contoso.com
-        Kim Akers,kakers@tailspintoys.com
-        Janet Schorr,janet.schorr@adatum.com
-        Jeffrey Zang,jzang@tailspintoys.com
-        Spencer Low,spencerl@fouthcoffee.com
-        Toni Poe,tonip@contoso.com
-        ...
+    ```powershell
+    Name,EmailAddress
+    David Pelton,davidp@contoso.com
+    Kim Akers,kakers@tailspintoys.com
+    Janet Schorr,janet.schorr@adatum.com
+    Jeffrey Zang,jzang@tailspintoys.com
+    Spencer Low,spencerl@fouthcoffee.com
+    Toni Poe,tonip@contoso.com
+    ...
+    ```
 
 3.  Exécutez la commande suivante pour utiliser les données du fichier CSV afin d’activer la messagerie des utilisateurs répertoriés dans le fichier :
     
-        Import-CSV "C:\Users\Administrator\Desktop\UsersToMailEnable.csv" | ForEach-Object {Enable-MailUser -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
+    ```powershell
+    Import-CSV "C:\Users\Administrator\Desktop\UsersToMailEnable.csv" | ForEach-Object {Enable-MailUser -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
+    ```
     
     Les résultats de la commande affichent des informations sur les nouveaux utilisateurs à extension messagerie.
 
@@ -155,5 +171,7 @@ Pour vérifier que vous avez bien activé la messagerie des utilisateurs Active 
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher des informations sur les nouveaux utilisateurs de messagerie :
     
-        Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```powershell
+    Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```
 

@@ -27,7 +27,7 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
 
   - Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Plans de numérotation de messagerie unifiée » dans la rubrique [Autorisations de messagerie unifiée](unified-messaging-permissions-exchange-2013-help.md).
 
-  - Avant d'effectuer ces procédures, vérifiez qu'un plan de numérotation de messagerie unifiée SIP URI a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](create-a-um-dial-plan-exchange-2013-help.md).
+  - Avant d'effectuer ces procédures, vérifiez qu'un plan de numérotation de messagerie unifiée SIP URI a été créé. Pour obtenir la procédure détaillée, consultez la rubrique [Créer un plan de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
@@ -51,22 +51,30 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
 
 Cet exemple supprime le serveur de boîtes aux lettres nommé `MyMailboxServer` d'un plan de numérotation URI SIP nommé `MySIPDialPlan`.
 
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMService MyMailboxServer
-    $s.dialplans-=$dp.identity
-    Set-UMService -id MyMailboxServer -dialplans:$s.dialplans
+```powershell
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMService MyMailboxServer
+$s.dialplans-=$dp.identity
+Set-UMService -id MyMailboxServer -dialplans:$s.dialplans
+```
 
 Dans cet exemple figurent trois plans de numérotation URI SIP : SipDP1, SipDP2 et SipDP3. Cet exemple supprime le serveur de boîtes aux lettres nommé `MyMailboxServer` du plan de numérotation SipDP3.
 
-    Set-UMService -id MyMailboxServer -DialPlans SipDP1,SipDP2
+```powershell
+Set-UMService -id MyMailboxServer -DialPlans SipDP1,SipDP2
+```
 
 Dans cet exemple figurent deux plans de numérotation URI SIP : SipDP1 et SipDP2. Cet exemple supprime le serveur de boîtes aux lettres nommé `MyMailboxServer` du plan de numérotation SipDP2.
 
-    Set-UMService -id MyMailboxServer -DialPlans SipDP1
+```powershell
+Set-UMService -id MyMailboxServer -DialPlans SipDP1
+```
 
 Cet exemple supprime le serveur de boîtes aux lettres nommé `MyMailboxServer` de tous les plans de numérotation SIP.
 
-    Set-UMService -id MyUMServer -DialPlans $null
+```powershell
+Set-UMService -id MyUMServer -DialPlans $null
+```
 
 ## Utiliser le CAE pour supprimer un serveur d'accès au client d'un plan de numérotation URI SIP
 
@@ -82,20 +90,28 @@ Cet exemple supprime le serveur de boîtes aux lettres nommé `MyMailboxServer` 
 
 Cet exemple supprime le serveur d'accès au client nommé `MyClientAccessServer` d'un plan de numérotation URI SIP nommé `MySIPDialPlan`.
 
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMCallRouterSettings MyClientAccessServer
-    $s.dialplans-=$dp.identity
-    Set-UMCallRouterSettings -id MyClientAccessServer -dialplans:$s.dialplans
+```powershell
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMCallRouterSettings MyClientAccessServer
+$s.dialplans-=$dp.identity
+Set-UMCallRouterSettings -id MyClientAccessServer -dialplans:$s.dialplans
+```
 
 Dans cet exemple figurent trois plans de numérotation URI SIP : SipDP1, SipDP2 et SipDP3. Cet exemple supprime le serveur d'accès au client nommé `MyClientAccessServer` du plan de numérotation SipDP3.
 
-    Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans SipDP1,SipDP2
+```powershell
+Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans SipDP1,SipDP2
+```
 
 Dans cet exemple figurent deux plans de numérotation URI SIP : SipDP1 et SipDP2. Cet exemple supprime le serveur d'accès au client nommé `MyClientAccessServer` du plan de numérotation SipDP2.
 
-    Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans SipDP1
+```powershell
+Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans SipDP1
+```
 
 Cet exemple supprime le serveur d'accès au client nommé `MyClientAccessServer` de tous les plans de numérotation SIP.
 
-    Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans $null
+```powershell
+Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans $null
+```
 

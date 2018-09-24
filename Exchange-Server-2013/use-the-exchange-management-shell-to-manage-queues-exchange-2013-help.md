@@ -312,7 +312,9 @@ Les paramètres de filtrage et de tri disponibles pour la cmdlet **Get-QueueDige
 
 Cet exemple renvoie toutes les files d'attente externes non vides présentes sur les serveurs de boîtes aux lettres Exchange 2013 nommés Mailbox01, Mailbox02 et Mailbox03.
 
-    Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
+```powershell
+Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
+```
 
 Retour au début
 
@@ -513,11 +515,15 @@ Vous pouvez spécifier un filtre qui évalue plusieurs expressions à l'aide de 
 
 Cet exemple affiche la liste des files d'attente dont la destination est un domaine SMTP dont le nom de termine par Contoso.com et contenant actuellement plus de 500 messages.
 
-    Get-Queue -Filter {Identity -like "*contoso.com*" -and MessageCount -gt 500}
+```powershell
+Get-Queue -Filter {Identity -like "*contoso.com*" -and MessageCount -gt 500}
+```
 
 Cet exemple affiche la liste des messages envoyés à partir d'une adresse de messagerie du domaine contoso.com, dont le seuil de probabilité de courrier indésirable est supérieur 5.
 
-    Get-Message -Filter {FromAddress -like "*Contoso.com*" -and SCL -gt 5}
+```powershell
+Get-Message -Filter {FromAddress -like "*Contoso.com*" -and SCL -gt 5}
+```
 
 Retour au début
 
@@ -592,15 +598,21 @@ L'exemple suivant utilise des scripts pour récupérer la première page de rés
 
 1.  Ouvrez l'environnement de ligne de commande, puis entrez la commande suivante pour récupérer la première page de résultats.
     
-        $Results=Get-message -Server mailbox01.contoso.com -ResultSize 500 -SortOrder +FromAddress,-Size
+    ```powershell
+    $Results=Get-message -Server mailbox01.contoso.com -ResultSize 500 -SortOrder +FromAddress,-Size
+    ```
 
 2.  Pour définir l'objet signet, entrez la commande suivante pour enregistrer le dernier élément de la première page dans une variable.
     
-        $temp=$results[$results.length-1]
+    ```powershell
+    $temp=$results[$results.length-1]
+    ```
 
 3.  Pour récupérer les 500 objets suivants sur le serveur spécifié en excluant l'objet signet, entrez la commande suivante.
     
-        Get-message -Server mailbox01.contoso.com -BookmarkObject:$temp -IncludeBookmark $False -ResultSize 500 -SortOrder +FromAddress,-Size
+    ```powershell
+    Get-message -Server mailbox01.contoso.com -BookmarkObject:$temp -IncludeBookmark $False -ResultSize 500 -SortOrder +FromAddress,-Size
+    ```
 
 Retour au début
 

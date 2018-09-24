@@ -91,8 +91,7 @@ Vous pouvez utiliser l'Afficheur des files d'attente de la Boîte à outils Exch
     
       - **Nombre de nouvelles tentatives**   Ce champ affiche le nombre de fois que la remise d'un message à une destination a été tentée.
 
-6.  
-    L'onglet **Informations sur le destinataire**affiche les informations détaillées suivantes sur les destinataires du message :
+6.  L'onglet **Informations sur le destinataire**affiche les informations détaillées suivantes sur les destinataires du message :
     
       - **Adresse**   Ce champ affiche l'adresse SMTP du destinataire du message. Cette valeur est extraite de `RCPT TO:` dans l'enveloppe du message.
     
@@ -116,7 +115,9 @@ Vous pouvez utiliser l'Afficheur des files d'attente de la Boîte à outils Exch
 
 La cmdlet **Get-Message** permet d'afficher les propriétés d'un message actuellement en attente de remise. L'exemple suivant tabule l'adresse de l'expéditeur, les destinataires, l'objet et la date de réception pour tous les messages actuellement en état de nouvelle tentative :
 
-    Get-Message -IncludeRecipientInfo -Filter {Status -eq "Retry"} | Format-Table FromAddress,Recipients,Subject,DateReceived
+```powershell
+Get-Message -IncludeRecipientInfo -Filter {Status -eq "Retry"} | Format-Table FromAddress,Recipients,Subject,DateReceived
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Get-Message](https://technet.microsoft.com/fr-fr/library/bb124738\(v=exchg.150\)).
 

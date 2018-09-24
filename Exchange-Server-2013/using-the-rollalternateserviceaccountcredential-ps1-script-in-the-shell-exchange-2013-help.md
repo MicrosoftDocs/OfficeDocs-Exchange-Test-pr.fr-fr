@@ -31,7 +31,9 @@ Pour plus d’informations sur l’utilisation et l’écriture de scripts, cons
 
 ## Syntaxe
 
-    RollAlternateServiceAccountPassword.ps1 -Scope <Object> -Identity <Object> -Source <Object> -
+```powershell
+RollAlternateServiceAccountPassword.ps1 -Scope <Object> -Identity <Object> -Source <Object> -
+```
 
 ## Description détaillée
 
@@ -85,7 +87,9 @@ Nous vous recommandons d’exécuter le script et de vérifier qu’il fonctionn
 
 Le résultat du script exécuté de manière interactive avec l’indicateur -verbose doit indiquer les opérations de script qui ont abouti. Pour vous assurer que les serveurs d’accès au client ont été mis à jour, vous pouvez vérifier la date de dernière mise à jour de l’horodatage dans les informations d’identification ASA. Dans l’exemple suivant, la commande génère une liste de serveurs d’accès au client et indique l’heure de la dernière mise à jour de l’autre compte de service.
 
-    Get-ClientAccessServer -IncludeAlternateServiceAccountCredentialstatus |Fl Name, AlternateServiceAccountConfiguration
+```powershell
+Get-ClientAccessServer -IncludeAlternateServiceAccountCredentialstatus |Fl Name, AlternateServiceAccountConfiguration
+```
 
 Vous pouvez également consulter le journal des événements sur l’ordinateur où le script s’exécute. Les entrées correspondant au script se trouvent dans le journal des événements de l’application et sont issues de la source *MSExchange Management Application*.Le tableau suivant répertorie les événements consignés et indique leur signification.
 
@@ -236,19 +240,25 @@ Dans cet exemple, le script fait passer les informations d’identification lors
 
 Cet exemple permet de générer un nouveau mot de passe pour les informations d’identification ASA d’un compte utilisateur et de le distribuer à tous les membres des groupes de serveurs d’accès au client dont le nom contient \*mailbox\*.
 
-    .\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers *mailbox* -GenerateNewPasswordFor "Contoso\UserAccount" -Verbose
+```powershell
+.\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers *mailbox* -GenerateNewPasswordFor "Contoso\UserAccount" -Verbose
+```
 
 ## Exemple 3
 
 Cet exemple montre comment planifier mensuellement une tâche de réinitialisation de mot de passe automatisée appelée « Exchange-RollAsa ». Elle permet de mettre à jour les informations d’identification ASA pour tous les serveurs d’accès au client de la forêt avec un nouveau mot de passe généré par script. La tâche planifiée est créée, mais le script n’est pas exécuté. Lors de l’exécution de la tâche planifiée, le script s’exécute en mode sans assistance.
 
-    .\RollAlternateServiceAccountPassword.ps1 -CreateScheduledTask "Exchange-RollAsa" -ToEntireForest -GenerateNewPasswordFor 'contoso\computerAccount$'
+```powershell
+.\RollAlternateServiceAccountPassword.ps1 -CreateScheduledTask "Exchange-RollAsa" -ToEntireForest -GenerateNewPasswordFor 'contoso\computerAccount$'
+```
 
 ## Exemple 4
 
 Cet exemple montre comment mettre à jour les informations d’identification ASA pour tous les serveurs d’accès au client du groupe de serveurs correspondant nommé CAS01. Les informations d’identification sont obtenues à partir du compte d’ordinateur Active Directory ServiceAc1 dans le domaine Contoso.
 
-    .\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers "CAS01" -GenerateNewPasswordFor "CONTOSO\ServiceAc1$" 
+```powershell
+.\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers "CAS01" -GenerateNewPasswordFor "CONTOSO\ServiceAc1$" 
+```
 
 ## Exemple 5
 
@@ -256,5 +266,7 @@ Cet exemple vous indique comment utiliser le script pour distribuer les informat
 
 Vous devez mettre à jour les informations d'identification ASA avant que le serveur d'accès au client reçoive le trafic. Pour ce faire, copiez les informations ASA partagées depuis n’importe quel serveur d’accès au client dont la configuration est correcte. Par exemple, si les informations d’identification ASA d’un serveur A sont actives et que vous venez d’ajouter un serveur B dans le groupe, vous pouvez utiliser le script pour copier les informations d’identification (y compris le mot de passe) du serveur A sur le serveur B. Cette possibilité est utile si le serveur B était en panne ou ne faisait pas encore partie du groupe lors de la dernière réinitialisation du mot de passe.
 
-    .\RollAlternateServiceAccountPassword.ps1 -CopyFrom ServerA -ToSpecificServers ServerB -Verbose
+```powershell
+.\RollAlternateServiceAccountPassword.ps1 -CopyFrom ServerA -ToSpecificServers ServerB -Verbose
+```
 

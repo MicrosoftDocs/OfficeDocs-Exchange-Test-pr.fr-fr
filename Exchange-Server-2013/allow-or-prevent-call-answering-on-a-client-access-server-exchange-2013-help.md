@@ -51,9 +51,13 @@ Pour les tâches de gestion supplémentaires relatives aux serveurs d'accès au 
 
 Cet exemple autorise un serveur d'accès au client `UMCallRouter-05x.contoso.com` à répondre à des appels vocaux, de télécopie, de standard automatique et Outlook Voice Access entrants à partir de passerelles VoIP, de PBX IP, de PBX compatibles SIP et de contrôleurs SBC, et écrit les modifications dans le Registre du serveur UMCallRouter-05x.
 
-    Set-ServerComponentState -Component UnifiedMessaging -Identity UMCallRouter-05x.contoso.com -Requester Maintenance -State Active -LocalOnly
+```powershell
+Set-ServerComponentState -Component UnifiedMessaging -Identity UMCallRouter-05x.contoso.com -Requester Maintenance -State Active -LocalOnly
+```
 
 Cet exemple empêche un serveur d'accès au client `UMCallRouter-05x.contoso.com` de répondre à des appels vocaux, de télécopie, de standard automatique et Outlook Voice Access entrants à partir de passerelles VoIP, de PBX IP, de PBX compatibles SIP et de contrôleurs SBC, et écrit les modifications uniquement dans Active Directory.
 
-    Set-ServerComponentState -Component UnifiedMessaging -Identity UMCallRouter-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
+```powershell
+Set-ServerComponentState -Component UnifiedMessaging -Identity UMCallRouter-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
+```
 

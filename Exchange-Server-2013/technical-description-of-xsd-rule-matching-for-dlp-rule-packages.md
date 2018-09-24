@@ -23,23 +23,25 @@ Cette rubrique décrit les techniques permettant de faire correspondre les élé
 
 L'élément `Match` est utilisé dans les éléments `Pattern` et `Evidence` pour représenter le mot clé, l'expression régulière (regex) ou la fonction sous-jacent(e) à mettre en correspondance. La définition de la correspondance même est stockée à l'extérieur de l'élément `Rule` et est référencée via l'attribut obligatoire `idRef`. Vous pouvez inclure plusieurs éléments `Match` dans une définition Pattern. Ils peuvent être inclus directement dans l'élément `Pattern` ou combinés à l'aide de l'élément `Any` pour définir des sémantiques de correspondance.
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <Rules packageId="...">
-            ...
-    <Entity id="...">
-      <Pattern confidenceLevel="85">
-                 <IdMatch idRef="FormattedSSN" />
-                 <Match idRef="USDate" />
-                 <Match idRef="USAddress" />
-      </Pattern>
-    </Entity>
-            ...
-             <Keyword id="FormattedSSN "> ... </Keyword>
-             <Regex id=" USDate "> ... </Regex>
-             <Regex id="USAddress"> ... </Regex>
-            ...
-    
-    </Rules>
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<Rules packageId="...">
+        ...
+<Entity id="...">
+    <Pattern confidenceLevel="85">
+                <IdMatch idRef="FormattedSSN" />
+                <Match idRef="USDate" />
+                <Match idRef="USAddress" />
+    </Pattern>
+</Entity>
+        ...
+            <Keyword id="FormattedSSN "> ... </Keyword>
+            <Regex id=" USDate "> ... </Regex>
+            <Regex id="USAddress"> ... </Regex>
+        ...
+
+</Rules>
+```
 
 ## Définition de correspondances basées sur des mots clés
 
@@ -51,25 +53,27 @@ La mise en correspondance peut être effectué en utilisant une correspondance e
 > Utilisez le style de correspondance à constante au lieu de la correspondance regex pour augmenter l'efficacité et les performances. Utilisez la correspondance regex uniquement dans le cas où les correspondances à constante sont insuffisantes et où les expressions régulières exigent de la souplesse.
 
 
-    <Keyword id="Word_Example">
-        <Group matchStyle="word">
-           <Term>card verification</Term>
-           <Term>cvn</Term>
-           <Term>cid</Term>
-           <Term>cvc2</Term>
-           <Term>cvv2</Term>
-           <Term>pin block</Term>
-           <Term>security code</Term>
-        </Group>
-    </Keyword>
-    ...
-    <Keyword id="String_Example">
-        <Group matchStyle="string">
-           <Term>card</Term>
-           <Term>pin</Term>
-           <Term>security</Term>
-        </Group>
-    </Keyword>
+```XML
+<Keyword id="Word_Example">
+    <Group matchStyle="word">
+        <Term>card verification</Term>
+        <Term>cvn</Term>
+        <Term>cid</Term>
+        <Term>cvc2</Term>
+        <Term>cvv2</Term>
+        <Term>pin block</Term>
+        <Term>security code</Term>
+    </Group>
+</Keyword>
+...
+<Keyword id="String_Example">
+    <Group matchStyle="string">
+        <Term>card</Term>
+        <Term>pin</Term>
+        <Term>security</Term>
+    </Group>
+</Keyword>
+```
 
 ## Définition de correspondances basées sur des expressions régulières
 
@@ -194,17 +198,19 @@ La méthode de correspondance basée sur des expressions régulières est elle a
 
 L'élément Regex a un attribut « id » qui sert de référence dans les règles Entity ou Affinity correspondantes. Un élément Regex peut être référencé dans plusieurs règles Entity et Affinity. L'expression Regex est définie comme la valeur de l'élément Regex.
 
-    <Regex id="CCRegex">
-         \bcc\#\s|\bcc\#\:\s
-    </Regex>
-    ...
-    <Regex id="ItinFormatted">
-        (?:^|[\s\,\:])(?:9\d{2})[- ](?:[78]\d[-       ]\d{4})(?:$|[\s\,]|\.\s)
-    </Regex>
-    ...
-    <Regex id="NorthCarolinaDriversLicenseNumber">
-        (^|\s|\:)(\d{1,8})($|\s|\.\s)
-    </Regex>
+```XML
+<Regex id="CCRegex">
+        \bcc\#\s|\bcc\#\:\s
+</Regex>
+...
+<Regex id="ItinFormatted">
+    (?:^|[\s\,\:])(?:9\d{2})[- ](?:[78]\d[-       ]\d{4})(?:$|[\s\,]|\.\s)
+</Regex>
+...
+<Regex id="NorthCarolinaDriversLicenseNumber">
+    (^|\s|\:)(\d{1,8})($|\s|\.\s)
+</Regex>
+```
 
 ## Combinaison de plusieurs éléments de correspondance
 
@@ -221,30 +227,30 @@ L'attribut facultatif minMatches (valeur par défaut = 1) permet de définir l
 <!-- end list -->
 
    
-   ```
-       <Any minMatches="3" maxMatches="3">
-            <Match idRef="USDate" />
-            <Match idRef="USAddress" />
-            <Match idRef="Name" />
-       </Any>
-   ```    
+```XML
+    <Any minMatches="3" maxMatches="3">
+        <Match idRef="USDate" />
+        <Match idRef="USAddress" />
+        <Match idRef="Name" />
+    </Any>
+```    
 
-   ```
-       <Any maxMatches="0">
-            <Match idRef="USDate" />
-            <Match idRef="USAddress" />
-            <Match idRef="Name" />
-       </Any>
-   ```   
-    
+```XML
+    <Any maxMatches="0">
+        <Match idRef="USDate" />
+        <Match idRef="USAddress" />
+        <Match idRef="Name" />
+    </Any>
+```   
 
-   ```
-       <Any minMatches="1" maxMatches="1">
-            <Match idRef="USDate" />
-            <Match idRef="USAddress" />
-            <Match idRef="Name" />
-       </Any>
-   ```                
+
+```XML
+    <Any minMatches="1" maxMatches="1">
+        <Match idRef="USDate" />
+        <Match idRef="USAddress" />
+        <Match idRef="Name" />
+    </Any>
+```                
 
 ## Augmentation du niveau de confiance avec davantage de preuves
 
@@ -258,32 +264,34 @@ Pour les règles basées sur des entités, il est également possible d'augmente
 
 <!-- end list -->
 
-    <Entity id="..." patternsProximity="300" >
-        <Pattern confidenceLevel="65">
-            <IdMatch idRef="UnformattedSSN" />
-            <Any maxMatches="1">
-                <Match idRef="USDate" />
-                <Match idRef="USAddress" />
-                <Match idRef="Name" />
-            </Any>
-        </Pattern>
-        <Pattern confidenceLevel="75">
-            <IdMatch idRef="UnformattedSSN" />
-            <Any minMatches="2" maxMatches="2">
-                <Match idRef="USDate" />
-                <Match idRef="USAddress" />
-                <Match idRef="Name" />
-            </Any>
-        </Pattern>
-        <Pattern confidenceLevel="85">
-            <IdMatch idRef="UnformattedSSN" />
-            <Any minMatches="3">
-                <Match idRef="USDate" />
-                <Match idRef="USAddress" />
-                <Match idRef="Name" />
-            </Any>
-        </Pattern>
-    </Entity>
+```XML
+<Entity id="..." patternsProximity="300" >
+    <Pattern confidenceLevel="65">
+        <IdMatch idRef="UnformattedSSN" />
+        <Any maxMatches="1">
+            <Match idRef="USDate" />
+            <Match idRef="USAddress" />
+            <Match idRef="Name" />
+        </Any>
+    </Pattern>
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="UnformattedSSN" />
+        <Any minMatches="2" maxMatches="2">
+            <Match idRef="USDate" />
+            <Match idRef="USAddress" />
+            <Match idRef="Name" />
+        </Any>
+    </Pattern>
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="UnformattedSSN" />
+        <Any minMatches="3">
+            <Match idRef="USDate" />
+            <Match idRef="USAddress" />
+            <Match idRef="Name" />
+        </Any>
+    </Pattern>
+</Entity>
+```
 
 ## Exemple : Règle de sécurité sociale aux États-Unis
 
@@ -303,22 +311,24 @@ Cette section commence par une description indiquant comment créer une règle d
 
 Ensuite, convertissez la description en représentation de schéma de règle, comme suit :
 
-    <Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77"
-             patternsProximity="300" RecommendedConfidence="85">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="FormattedSSN" />
-          <Any minMatches="1">
-              <Match idRef="SSNKeywords" />
-              <Match idRef="USDate" />
-              <Match idRef="USAddress" />
-              <Match idRef="Name" />
-          </Any>
-        </Pattern>
-    </Entity>
+```XML
+<Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77"
+            patternsProximity="300" RecommendedConfidence="85">
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="FormattedSSN" />
+        <Any minMatches="1">
+            <Match idRef="SSNKeywords" />
+            <Match idRef="USDate" />
+            <Match idRef="USAddress" />
+            <Match idRef="Name" />
+        </Any>
+    </Pattern>
+</Entity>
+```
 
 ## Pour plus d'informations
 
-[Protection contre la perte de données](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[Protection contre la perte de données](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [Définition de vos modèles DLP et types d'informations](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
 

@@ -163,7 +163,7 @@ Quand une organisation décide de standardiser les méthodes d’accès aux donn
 
 Les stratégies utilisent le contrôle d’autorisation [Nécessite une application cliente approuvée](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference). Il garantit que seules les applications Microsoft qui ont intégré le Kit de développement logiciel (SDK) Intune bénéficient de droits d’accès.
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Pour recourir à des stratégies d’accès conditionnel basées sur l’application, l’application Microsoft Authenticator doit être installée sur les appareils iOS. Pour les appareils Android, c’est le Portail d’entreprise Intune qui est utilisé. Pour en savoir plus, consultez l’article <a href="https://docs.microsoft.com/intune/app-based-conditional-access-intune">Accès conditionnel basé sur l’application avec Intune</a>.
 
 
@@ -171,7 +171,9 @@ Pour empêcher d’autres clients de l’appareil mobile (par exemple, le client
 
 1.  Vous pouvez utiliser les règles d’accès des appareils mobiles Exchange intégrées et empêcher tous les appareils mobiles de se connecter en définissant la commande suivante dans l’environnement de ligne de commande Exchange Management Shell :
     
-        Set-ActiveSyncOrganizationSettings -DefaultAccessLevel Block
+    ```powershell
+    Set-ActiveSyncOrganizationSettings -DefaultAccessLevel Block
+    ```
 
 2.  Vous pouvez utiliser une stratégie d’accès conditionnel local dans Intune après avoir installé le connecteur Exchange local. Pour en savoir plus, consultez l’article [Créer une stratégie d’accès conditionnel pour Exchange sur site et Exchange Online Dedicated hérité](https://docs.microsoft.com/intune/conditional-access-exchange-create#configure-exchange-on-premises-access).
 
@@ -199,7 +201,7 @@ Créez des stratégies de protection des applications Intune pour iOS et Androi
 
 Par ailleurs, songez à déployer des paramètres de stratégie de protection avancée, tels que **Restreindre les opérations Couper, copier et coller avec d’autres applications** pour prévenir les fuites des données d’entreprise. Pour en savoir plus sur les paramètres disponibles, consultez les articles [Paramètres de la stratégie de protection des applications Android dans Microsoft Intune](https://docs.microsoft.com/intune/app-protection-policy-settings-android) et [Paramètres de stratégie de protection d’application iOS](https://docs.microsoft.com/intune/app-protection-policy-settings-ios).
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Pour appliquer les stratégies de protection des applications Intune pour les applications des appareils Android non inscrits dans Intune, l’utilisateur doit également installer le portail d’entreprise Intune. Pour en savoir plus, consultez l’article <a href="https://docs.microsoft.com/fr-fr/intune/app-protection-enabled-apps-android">Ce qui se passe quand votre application Android est gérée par des stratégies de protection d’application</a>.
 
 
@@ -211,13 +213,17 @@ Si vous avez déjà activé l’authentification moderne hybride pour prendre en
 
 1.  Créez une règle d’autorisation d’accès des appareils Exchange pour autoriser Exchange Online à se connecter à votre environnement local à l’aide du protocole ActiveSync :
     
-        If ((Get-ActiveSyncOrganizationSettings).DefaultAccessLevel -ne "Allow") {New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "OutlookService" -AccessLevel Allow}
+      ```powershell
+      If ((Get-ActiveSyncOrganizationSettings).DefaultAccessLevel -ne "Allow") {New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "OutlookService" -AccessLevel Allow}
+      ```
     
     Notez qu’il n’est pas possible de gérer les appareils via le Centre d’administration Exchange local. Pour cela, utilisez Intune.
 
 2.  Créez une règle d’accès des appareils Exchange qui empêche les utilisateurs de se connecter à l’environnement local avec Outlook pour iOS et Android avec l’authentification de base via le protocole Exchange ActiveSync :
     
-        New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
+    ```powershell
+    New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
+    ```
     
     > [!NOTE]
     > Une fois cette règle créée, les utilisateurs qui utilisent Outlook pour iOS et Android avec l’authentification de base sont bloqués.
@@ -345,7 +351,7 @@ Jusqu’à l’expiration du jeton, le client peut essayer d’utiliser le jeton
 
 **R** : Oui, un utilisateur peut contourner la détection automatique à tout moment et configurer manuellement la connexion à l’aide de l’authentification de base via le protocole Exchange ActiveSync. Pour vous assurer que l’utilisateur ne se connecte pas à votre environnement local via un mécanisme qui ne prend pas en charge les stratégies d’accès conditionnel Azure Active Directory ou de protection des applications Intune, l’administrateur Exchange local doit configurer une règle d’accès des appareils Exchange qui bloque la connexion ActiveSync. Pour cela, exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell :
 
-``` 
- New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
+```powershell 
+New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
 ```
 

@@ -69,7 +69,9 @@ Vous créez une stratégie de boîte aux lettres d'appareils mobiles à l'aide d
 
 1.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        New-MobileDeviceMailboxPolicy -Name:"Management" -AllowBluetooth:$true -AllowBrowser:$true -AllowCamera:$true -AllowPOPIMAPEmail:$false -PasswordEnabled:$true -AlphanumericPasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:10 -AllowWiFi:$true -AllowStorageCard:$true -AllowPOPIMAPEmail:$false
+    ```powershell
+    New-MobileDeviceMailboxPolicy -Name:"Management" -AllowBluetooth:$true -AllowBrowser:$true -AllowCamera:$true -AllowPOPIMAPEmail:$false -PasswordEnabled:$true -AlphanumericPasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:10 -AllowWiFi:$true -AllowStorageCard:$true -AllowPOPIMAPEmail:$false
+    ```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -79,7 +81,9 @@ Pour vérifier que vous avez bien créé une stratégie de boîte aux lettres d'
 
 2.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-MobileDeviceMailboxPolicy -Identity <PolicyName> 
+    ```powershell
+    Get-MobileDeviceMailboxPolicy -Identity <PolicyName> 
+    ```
 
 ## Modifier une stratégie existante de boîte aux lettres d'appareils mobiles
 
@@ -113,7 +117,9 @@ Vous pouvez utiliser l'environnement de ligne de commande Exchange Management Sh
 
 1.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Set-MobileDeviceMailboxPolicy -Identity:Default -DevicePasswordEnabled:$true -AlphanumericDevicePasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:ThreeDays -AllowWiFi:$false -AllowStorageCard:$true -AllowPOPIMAPEmail:$false -IsDefault:$true -AllowTextMessaging:$true -Confirm:$true
+    ```powershell
+    Set-MobileDeviceMailboxPolicy -Identity:Default -DevicePasswordEnabled:$true -AlphanumericDevicePasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:ThreeDays -AllowWiFi:$false -AllowStorageCard:$true -AllowPOPIMAPEmail:$false -IsDefault:$true -AllowTextMessaging:$true -Confirm:$true
+    ```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -123,5 +129,7 @@ Pour vérifier que vous avez bien modifié une stratégie de boîte aux lettres 
 
 2.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+    ```powershell
+    Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+    ```
 

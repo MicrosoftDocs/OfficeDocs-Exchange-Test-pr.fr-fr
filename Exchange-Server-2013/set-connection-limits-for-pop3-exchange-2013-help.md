@@ -65,19 +65,27 @@ Après avoir défini les limites de connexion, vous devez redémarrer les servic
 
 Cet exemple définit la limite de connexion pour un serveur.
 
-    Set-PopSettings -Identity CAS01 -MaxConnections Value
+```powershell
+Set-PopSettings -Identity CAS01 -MaxConnections Value
+```
 
 Cet exemple définit la limite de connexion pour une adresse IP.
 
-    Set-PopSettings -Identity CAS01 -MaxConnectionsFromSingleIP Value
+```powershell
+Set-PopSettings -Identity CAS01 -MaxConnectionsFromSingleIP Value
+```
 
 Cet exemple définit la limite de connexion pour un utilisateur.
 
-    Set-PopSettings -MaxConnectionsPerUser Value 
+```powershell
+Set-PopSettings -MaxConnectionsPerUser Value 
+```
 
 Cet exemple montre comment définir la taille maximale d’une commande.
 
-    Set-PopSettings -MaxCommandSize Value
+```powershell
+Set-PopSettings -MaxCommandSize Value
+```
 
 Après avoir défini les limites de connexion, vous devez redémarrer les services POP3. Pour plus d’informations sur le redémarrage des services POP3, consultez la rubrique [Démarrage et arrêt des services POP3](start-and-stop-the-pop3-services-exchange-2013-help.md).
 
@@ -101,7 +109,9 @@ Ou
 
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
-        Get-PopSettings | format-list
+    ```powershell
+    Get-PopSettings | format-list
+    ```
 
 2.  Vérifiez que les paramètres de connexion sont corrects.
 

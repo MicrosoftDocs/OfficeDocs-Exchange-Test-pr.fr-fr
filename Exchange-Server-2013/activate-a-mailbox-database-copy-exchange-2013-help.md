@@ -49,31 +49,45 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux copies de 
 
 Dans cet exemple, une copie de la base de données DB4 hébergée sur MBX3 est activée et montée en tant que nouvelle base de données de boîtes aux lettres active. Avec cette commande, DB4 devient la nouvelle base de données de boîtes aux lettres active et ne remplace pas les paramètres de numérotation de montage de base de données sur MBX3.
 
-    Move-ActiveMailboxDatabase DB4 -ActivateOnServer MBX3 -MountDialOverride:None
+```powershell
+Move-ActiveMailboxDatabase DB4 -ActivateOnServer MBX3 -MountDialOverride:None
+```
 
 Cet exemple exécute un basculement de la base de données DB2 vers le serveur de boîtes aux lettres MBX1. Lorsque la commande est terminée, MBX1 héberge la copie active de DB2. Étant donné que le paramètre *MountDialOverride* est défini sur `None`, MBX1 monte la base de données à l’aide de ses propres paramètres de montage automatique.
 
-    Move-ActiveMailboxDatabase DB2 -ActivateOnServer MBX1 -MountDialOverride:None
+```powershell
+Move-ActiveMailboxDatabase DB2 -ActivateOnServer MBX1 -MountDialOverride:None
+```
 
 Cet exemple exécute un basculement de la base de données DB1 vers le serveur de boîtes aux lettres MBX3. Lorsque la commande est terminée, MBX3 héberge la copie active de DB1. Étant donné que le paramètre *MountDialOverride* est spécifié avec la valeur `Good Availability`, MBX3 monte la base de données avec le paramètre de montage automatique *GoodAvailability*.
 
-    Move-ActiveMailboxDatabase DB1 -ActivateOnServer MBX3 -MountDialOverride:GoodAvailability
+```powershell
+Move-ActiveMailboxDatabase DB1 -ActivateOnServer MBX3 -MountDialOverride:GoodAvailability
+```
 
 Cet exemple exécute un basculement de la base de données DB3 vers le serveur de boîtes aux lettres MBX4. Lorsque la commande est terminée, MBX4 héberge la copie active de DB3. Étant donné que le paramètre *MountDialOverride* n'est pas spécifié, MBX4 monte la base de données avec le paramètre de montage automatique *Lossless*.
 
-    Move-ActiveMailboxDatabase DB3 -ActivateOnServer MBX4
+```powershell
+Move-ActiveMailboxDatabase DB3 -ActivateOnServer MBX4
+```
 
 Cet exemple effectue un basculement de serveur pour le serveur de boîte aux lettres nommé MBX1. Toutes les copies de la base de données de boîtes aux lettres actives sur MBX1 seront activées sur un ou plusieurs autres serveurs de boîtes aux lettres en utilisant des copies intègres des bases de données actives sur MBX1.
 
-    Move-ActiveMailboxDatabase -Server MBX1
+```powershell
+Move-ActiveMailboxDatabase -Server MBX1
+```
 
 Cet exemple exécute un basculement de la base de données DB4 vers le serveur de boîtes aux lettres MBX5. Dans cet exemple, la copie de la base de données sur MBX5 possède une file d'attente de relecture supérieure à 6. Il en résulte que le paramètre *SkipLagChecks* doit être spécifié pour que la copie de la base de données soit activée sur MBX5.
 
-    Move-ActiveMailboxDatabase DB4 MBX5 -SkipLagChecks
+```powershell
+Move-ActiveMailboxDatabase DB4 MBX5 -SkipLagChecks
+```
 
 Cet exemple exécute un basculement de la base de données DB5 vers le serveur de boîtes aux lettres MBX6. Dans cet exemple, la copie de la base de données sur MBX6 possède un paramètre *ContentIndexState* ayant échoué. Il en résulte que le paramètre *SkipClientExperienceChecks* doit être spécifié pour que la copie de la base de données soit activée sur MBX6.
 
-    Move-ActiveMailboxDatabase DB5 MBX6 -SkipClientExperienceChecks
+```powershell
+Move-ActiveMailboxDatabase DB5 MBX6 -SkipClientExperienceChecks
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -83,7 +97,9 @@ Pour vérifier que l’activation de la copie de base de données de boîtes aux
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les informations d’état pour une copie de base de données.
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```powershell
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```
 
 ## Pour plus d'informations
 

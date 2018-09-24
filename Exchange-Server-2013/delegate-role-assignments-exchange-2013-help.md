@@ -21,7 +21,7 @@ La délégation de rôles de gestion permet aux bénéficiaires d'un rôle d'att
 
 Si vous déléguez une attribution de rôle de délégation à un groupe de rôles, les membres de ce groupe de rôles peuvent déléguer le rôle de gestion associé à d'autres utilisateurs.
 
-> [!NOTE]
+> [!IMPORTANT]
 > La délégation d'attributions de rôle n'accorde pas aux bénéficiaires d'un rôle les autorisations octroyées par ce rôle, elle leur permet uniquement d'attribuer le rôle à d'autres. Si vous souhaitez accorder les autorisations octroyées par le rôle au bénéficiaire de ce rôle, vous devez également créer une attribution de rôle normale. Pour créer une attribution de rôle normale, consultez les rubriques suivantes :
 > <a href="manage-role-groups-exchange-2013-help.md">Gérer des groupes de rôles</a>
 > <a href="manage-role-assignment-policies-exchange-2013-help.md">Gérer les stratégies d’attribution des rôles</a>
@@ -64,11 +64,15 @@ Vous pouvez créer des attributions de rôle de délégation à l'aide des même
 
 Cet exemple crée une attribution de rôle de délégation pour permettre aux membres du groupe de rôles Senior Admins d'attribuer le rôle Mail Recipients à un utilisateur dans l'organisation Exchange.
 
-    New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admin - Delegate" -Delegating
+```powershell
+New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admin - Delegate" -Delegating
+```
 
 Cet exemple crée une attribution de rôle de délégation pour permettre aux membres du groupe de rôles Senior Admins d'attribuer le rôle Mail Recipients seulement aux utilisateurs de l'unité d'organisation Sales/Users dans le domaine contoso.com.
 
-    New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admins - Delegate" -RecipientOrganizationalUnitScope contoso.com/sales/users -Delegating
+```powershell
+New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admins - Delegate" -RecipientOrganizationalUnitScope contoso.com/sales/users -Delegating
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335193\(v=exchg.150\)).
 

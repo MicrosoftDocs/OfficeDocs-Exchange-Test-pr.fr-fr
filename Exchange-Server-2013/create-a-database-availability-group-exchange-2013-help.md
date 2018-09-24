@@ -80,23 +80,33 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
 
 Cet exemple illustre la création d’un groupe de disponibilité de base de données nommé DAG1 qui est configuré pour utiliser le serveur témoin FILESRV1 et le répertoire local C:\\DAG1. DAG1 est également configuré pour utiliser le protocole DHCP pour les adresses IP du groupe de disponibilité de base de données.
 
-    New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer FILESRV1 -WitnessDirectory C:\DAG1
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer FILESRV1 -WitnessDirectory C:\DAG1
+```
 
 Cet exemple décrit la création du DAG DAG2. Le système sélectionne automatiquement un serveur d’accès au client dans le site Active Directory local qui ne contient pas le rôle serveur de boîte aux lettres en tant que serveur témoin du DAG. Une adresse IP statique unique est affectée à DAG2 car, dans cet exemple, tous les membres du DAG accèdent au réseau MAPI sur le même sous-réseau.
 
-    New-DatabaseAvailabilityGroup -Name DAG2 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG2 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
+```
 
 Cet exemple crée le DAG DAG3. DAG3 est configuré pour utiliser le serveur témoin MBX2 et le répertoire local C:\\DAG3. Plusieurs adresses IP statiques sont attribuées à DAG3, car les membres du DAG sont sur des sous-réseaux différents du réseau MAPI.
 
-    New-DatabaseAvailabilityGroup -Name DAG3 -WitnessServer MBX2 -WitnessDirectory C:\DAG3 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,192.168.0.8
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG3 -WitnessServer MBX2 -WitnessDirectory C:\DAG3 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,192.168.0.8
+```
 
 Dans cet exemple, nous créons le groupe de disponibilité de base de données DAG4 configuré pour utiliser le protocole DHCP. En outre, le système sélectionne automatiquement le serveur témoin et le répertoire témoin par défaut est créé.
 
-    New-DatabaseAvailabilityGroup -Name DAG4
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG4
+```
 
 Cet exemple crée le DAG DAG5, auquel aucun point d’accès administratif ne sera attribué (valable pour les DAG Windows Server 2012 R2 uniquement). En outre, MBX4 sera utilisé comme serveur témoin pour le DAG, et le répertoire témoin par défaut sera créé.
 
-    New-DatabaseAvailabilityGroup -Name DAG5 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress]::None) -WitnessServer MBX4
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG5 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress]::None) -WitnessServer MBX4
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -106,7 +116,9 @@ Pour vérifier qu’un groupe de disponibilité de base de données a bien été
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour vérifier que le DAG a bien été créé et pour afficher des informations sur ses propriétés.
     
-        Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```powershell
+    Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```
 
 ## Pour plus d’informations
 

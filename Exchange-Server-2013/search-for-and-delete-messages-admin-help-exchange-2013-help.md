@@ -31,11 +31,11 @@ Pour plus de sécurité, vous pouvez d'abord copier les messages vers une autre 
 
   - Vous devez disposer des deux rôles de gestion suivants pour rechercher et supprimer des messages dans les boîtes aux lettres des utilisateurs :
     
-      - **Recherche de boîte aux lettres**   Ce rôle vous permet de rechercher des messages dans plusieurs boîtes aux lettres dans votre organisation. Ce rôle n’est pas attribué par défaut aux administrateurs. Pour vous attribuer vous-même ce rôle afin de pouvoir rechercher les boîtes aux lettres, ajoutez-vous en tant que membre du groupe de rôles Gestion de la découverte. Consultez la rubrique [Attribution d’autorisations eDiscovery dans Exchange](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md).
+      - **Recherche de boîte aux lettres**   Ce rôle vous permet de rechercher des messages dans plusieurs boîtes aux lettres dans votre organisation. Ce rôle n’est pas attribué par défaut aux administrateurs. Pour vous attribuer vous-même ce rôle afin de pouvoir rechercher les boîtes aux lettres, ajoutez-vous en tant que membre du groupe de rôles Gestion de la découverte. Consultez la rubrique [Attribution d’autorisations eDiscovery dans Exchange](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions).
     
       - **Importation/Exportation de boîte aux lettres**   Ce rôle vous autorise à supprimer des messages de la boîte aux lettres d’un utilisateur. Par défaut, ce rôle n’est attribué à aucun groupe de rôles. Pour supprimer des messages des boîtes aux lettres des utilisateurs, vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation. Pour plus d’informations, consultez la section relative à l’ajout d’un rôle à un groupe de rôles dans [Gérer des groupes de rôles](manage-role-groups-exchange-2013-help.md).
 
-  - Si la fonctionnalité de récupération d'élément unique est activée pour la boîte aux lettres dont vous souhaitez supprimer des messages, vous devez d'abord la désactiver. Pour plus d’informations, voir [Activation de la récupération d’élément unique pour une boîte aux lettres](enable-or-disable-single-item-recovery-for-a-mailbox-exchange-2013-help.md).
+  - Si la fonctionnalité de récupération d'élément unique est activée pour la boîte aux lettres dont vous souhaitez supprimer des messages, vous devez d'abord la désactiver. Pour plus d’informations, voir [Activation de la récupération d’élément unique pour une boîte aux lettres](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery).
 
   - Si la boîte aux lettres dont vous souhaitez supprimer des messages est mise en conservation, nous vous recommandons de vous informer préalablement auprès du service de gestion des enregistrements ou juridique avant de désactiver la mise en attente et de supprimer le contenu de la boîte aux lettres. Une fois l’autorisation obtenue, suivez les étapes décrites dans la rubrique [Nettoyer le dossier Éléments récupérables](clean-up-the-recoverable-items-folder-exchange-2013-help.md).
 
@@ -49,11 +49,15 @@ Pour plus de sécurité, vous pouvez d'abord copier les messages vers une autre 
 
 Cet exemple permet d'effectuer une recherche dans la boîte aux lettres d'April Stewart au niveau des messages dont le champ Objet contient l'expression « Your bank statement » (Votre relevé de compte) et de consigner les résultats de la recherche dans le dossier SearchAndDeleteLog de la boîte aux lettres de l'administrateur. Les messages ne sont ni copiés ni supprimés de la boîte aux lettres cible.
 
-    Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
+```powershell
+Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
+```
 
 Cet exemple permet d’effectuer une recherche dans toutes les boîtes aux lettres de l’organisation au niveau des messages comprenant n’importe quel type de fichier joint qui contient le mot « Trojan » dans le nom de fichier et envoie un message de journal à la boîte aux lettres de l’administrateur.
 
-    Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:trojan* -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
+```powershell
+Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:trojan* -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Search-Mailbox](https://technet.microsoft.com/fr-fr/library/dd298173\(v=exchg.150\)).
 
@@ -63,19 +67,25 @@ Revenir en haut de la page
 
 Cet exemple permet d'effectuer une recherche dans la boîte aux lettres d'April Stewart au niveau des messages dont le champ Objet contient l'expression « Your bank statement » et de supprimer les messages de la boîte aux lettres source sans copier les résultats de la recherche dans un autre dossier. Comme expliqué précédemment, le rôle de gestion Importation/Exportation de boîte aux lettres doit vous avoir été attribué pour que vous puissiez supprimer des messages de la boîte aux lettres d’un utilisateur.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Quand vous utilisez la cmdlet <strong>Search-Mailbox</strong> avec le commutateur <em>DeleteContent</em>, les messages sont définitivement supprimés de la boîte aux lettres source. Avant de supprimer définitivement des messages, nous vous conseillons d'utiliser le commutateur <em>LogOnly</em> pour générer un journal des messages identifiés lors de la recherche avant qu'ils ne soient supprimés ou de copier les messages vers une autre boîte aux lettres avant leur suppression de la boîte aux lettres source.
 
 
-    Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -DeleteContent
+```powershell
+Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -DeleteContent
+```
 
 Cet exemple permet d'effectuer une recherche dans la boîte aux lettres d'April Stewart au niveau des messages dont le champ Objet contient l'expression « Your bank statement », de copier les résultats de la recherche dans le dossier AprilStewart-DeletedMessages de la boîte aux lettres BackupMailbox et de supprimer les messages de la boîte aux lettres d'April.
 
-    Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -TargetMailbox "BackupMailbox" -TargetFolder "AprilStewart-DeletedMessages" -LogLevel Full -DeleteContent
+```powershell
+Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -TargetMailbox "BackupMailbox" -TargetFolder "AprilStewart-DeletedMessages" -LogLevel Full -DeleteContent
+```
 
 Cet exemple permet d’effectuer une recherche dans toutes les boîtes aux lettres de l’organisation au niveau des messages ayant pour objet « Download this file » et les supprime définitivement.
 
-    Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery 'Subject:"Download this file"' -DeleteContent
+```powershell
+Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery 'Subject:"Download this file"' -DeleteContent
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Search-Mailbox](https://technet.microsoft.com/fr-fr/library/dd298173\(v=exchg.150\)).
 

@@ -61,11 +61,15 @@ Voici les étapes à suivre pour créer un rôle de niveau supérieur non délim
 
 Les rôles de niveau supérieur non délimités n’ont pas de rôle parent. Pour créer un rôle sans parent, vous devez spécifier le commutateur *UnscopedTopLevel*. Utilisez la syntaxe suivante pour créer le nouveau rôle.
 
-    New-ManagementRole <name of new role> -UnscopedTopLevel
+```powershell
+New-ManagementRole <name of new role> -UnscopedTopLevel
+```
 
 Cet exemple crée le rôle de niveau supérieur non délimité de scripts informatiques.
 
-    New-ManagementRole "IT Scripts" -UnscopedTopLevel
+```powershell
+New-ManagementRole "IT Scripts" -UnscopedTopLevel
+```
 
 Après sa création, le rôle est vide jusqu’à ce que vous y ajoutiez des scripts ou des cmdlets non Exchange.
 
@@ -81,11 +85,15 @@ Le script doit résider dans le répertoire `RemoteScripts` du chemin d’instal
 
 Après que vous ayez copié le script sur les serveurs Exchange 2013 appropriés et décidé quels paramètres de script devraient être utilisés, créez l’entrée de rôle à l’aide de la syntaxe suivante.
 
-    Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
+```
 
 Cet exemple décrit l’ajout du script BulkProvisionUsers.ps1 au rôle de scripts IT Scripts avec les paramètres *Name* et *Location*.
 
-    Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
+```
 
 > [!NOTE]
 > La cmdlet <strong>Add-ManagementRoleEntry</strong> effectue une validation simple pour vous assurer que vous ajoutez uniquement les paramètres qui existent dans le script. Cependant, aucune validation supplémentaire n’est faite après l’ajout de l’entrée de rôle. Si des paramètres sont ultérieurement ajoutés ou supprimés, vous devez manuellement mettre à jour les entrées de rôle qui contiennent le script.
@@ -101,11 +109,15 @@ Si vous ajoutez des cmdlets non Exchange au nouveau rôle, les cmdlets doivent �
 
 Après avoir installé le composant logiciel Windows PowerShell contenant les cmdlets pour les serveurs Exchange 2013 qui conviennent et avoir choisi les paramètres de cmdlet à utiliser, créez l’entrée de rôle utilisant la syntaxe suivante.
 
-    Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+```
 
 Cet exemple vous indique comment ajouter la cmdlet **Set-WidgetConfiguration** dans le composant logiciel enfichable Contoso.Admin.Cmdlets au rôle Widget Cmdlets avec les paramètres *Database* et *Size*.
 
-    Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
+```
 
 > [!NOTE]
 > La cmdlet <strong>Add-ManagementRoleEntry</strong> effectue une validation simple pour vous assurer que vous ajoutez uniquement les paramètres qui existent dans la cmdlet. Cependant, aucune validation supplémentaire n’est faite après l’ajout de l’entrée de rôle. Si la cmdlet est modifiée ultérieurement et que des paramètres sont ajoutés ou supprimés, vous devez manuellement mettre à jour les entrées de rôle qui contiennent la cmdlet.
@@ -115,7 +127,7 @@ Cet exemple vous indique comment ajouter la cmdlet **Set-WidgetConfiguration** d
 
 L’étape finale lorsque vous créez et configurez un rôle consiste à l’attribuer à un utilisateur.
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Les étendues de gestion ne peuvent pas être configurées sur les attributions de rôles qui affectent un rôle non délimité. Lorsque vous choisissez de créer une attribution de rôle pour un groupe de rôles, un utilisateur ou un groupe de sécurité universel, vous devez choisir l’option pour créer une attribution de rôle sans étendue de gestion.
 
 
@@ -141,11 +153,15 @@ Les nouveaux rôles enfants non délimités peuvent être basés sur des rôles 
 
 Utilisez la syntaxe suivante pour créer le nouveau rôle.
 
-    New-ManagementRole -Parent <existing unscoped role to copy> -Name <name of new unscoped role>
+```powershell
+New-ManagementRole -Parent <existing unscoped role to copy> -Name <name of new unscoped role>
+```
 
 Cet exemple copie le rôle Scripts informatiques globaux et ses entrées de rôle de gestion dans le rôle Scripts informatiques diagnostics.
 
-    New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
+```powershell
+New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementRole](https://technet.microsoft.com/fr-fr/library/dd298073\(v=exchg.150\)).
 
@@ -169,7 +185,7 @@ Pour supprimer des entrées de rôles de votre nouveau rôle, voir [Supprimer un
 
 L’étape finale lorsque vous créez et configurez un rôle consiste à l’attribuer à un utilisateur.
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Les étendues de gestion ne peuvent pas être configurées sur les attributions de rôles qui affectent un rôle non délimité. Lorsque vous choisissez de créer une attribution de rôle pour un groupe de rôles, un utilisateur ou un groupe de sécurité universel, vous devez choisir l’option pour créer une attribution de rôle sans étendue de gestion.
 
 

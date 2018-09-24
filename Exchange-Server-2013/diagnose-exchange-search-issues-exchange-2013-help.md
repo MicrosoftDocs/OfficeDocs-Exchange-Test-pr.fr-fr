@@ -33,7 +33,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Vous pouvez utiliser la cmdlet [Get-FailedContentIndexDocuments](https://technet.microsoft.com/fr-fr/library/dd351154\(v=exchg.150\)) pour extraire une liste d’éléments de boîte aux lettres impossibles à rechercher qui n’ont pas pu être indexés par Exchange Search. Vous pouvez exécuter la cmdlet sur un serveur de boîtes aux lettres, une base de données de boîtes aux lettres ou une boîte aux lettres spécifique. La cmdlet renvoie des détails relatifs à chaque élément qui n’a pas pu être recherché. Il existe plusieurs raisons pour lesquelles un élément de boîte aux lettres ne peut pas être recherché ; par exemple, un message électronique peut contenir un type de fichier de pièce jointe qui ne peut pas être indexé pour la recherche ou un filtre de recherche n’est pas installé ou est désactivé. Si un filtre de recherche pour ce type de fichier est disponible, vous pouvez l’installer sur vos serveurs exExchangeNoVersionExchange.
 
-> [!NOTE]
+> [!IMPORTANT]  
 > Les filtres de recherche fournis par Microsoft sont testés et pris en charge par Microsoft. Nous vous recommandons de tester les filtres de recherche tiers dans un environnement de test avant de les installer sur des serveurs exExchangeNoVersionExchange dans un environnement de production.
 
 
@@ -55,7 +55,9 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 2.  **Vérifier la configuration de la base de données de boîtes aux lettres**   Le paramètre *IndexEnabled* est-il défini à true (activé) pour la base de données de boîtes aux lettres de l’utilisateur ? Si oui, allez à l’étape 3. Si non, exécutez la commande suivante dans l’environnement de ligne de commande Shell pour vérifier que l’indicateur *IndexEnabled* est défini à true (activé).
     
-        Get-MailboxDatabase | Format-Table Name,IndexEnabled
+    ```powershell
+    Get-MailboxDatabase | Format-Table Name,IndexEnabled
+    ```
     
     Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Get-MailboxDatabase](https://technet.microsoft.com/fr-fr/library/bb124924\(v=exchg.150\)).
 
@@ -83,13 +85,17 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 4.  **Vérifier l’intégrité de l’indexation de la copie de base de données**   L’index du contenu est-il correct ? Utilisez la cmdlet **Get-MailboxDatabaseCopyStatus** pour vérifier l’intégrité d’indexation du contenu pour une copie de base de données.
     
-        Get-MailboxDatabaseCopyStatus -Server $env:ComputerName | Format-Table Name,Status,ContentIndex* -Auto
+    ```powershell
+    Get-MailboxDatabaseCopyStatus -Server $env:ComputerName | Format-Table Name,Status,ContentIndex* -Auto
+    ```
     
     Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/fr-fr/library/dd298044\(v=exchg.150\)).
 
 5.  **Exécuter la cmdlet Test-ExchangeSearch**   Si la base de données de boîte aux lettres a déjà été recherchée, vous pouvez exécuter la cmdlet **Test-ExchangeSearch** pour la base de données de boîtes aux lettres ou pour une boîte aux lettres spécifique.
     
-        Test-ExchangeSearch -Identity AlanBrewer@contoso.com
+    ```powershell
+    Test-ExchangeSearch -Identity AlanBrewer@contoso.com
+    ```
     
     Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Test-ExchangeSearch](https://technet.microsoft.com/fr-fr/library/bb124733\(v=exchg.150\)).
 

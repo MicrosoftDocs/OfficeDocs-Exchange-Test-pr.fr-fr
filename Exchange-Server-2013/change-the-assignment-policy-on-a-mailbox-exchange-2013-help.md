@@ -47,11 +47,15 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux autorisati
 
 Pour modifier la stratégie d’attribution qui est affectée à une boîte aux lettres, utilisez la syntaxe suivante.
 
-    Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
+```powershell
+Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
+```
 
 Cet exemple définit la stratégie d’attribution aux utilisateurs de messagerie unifiée sur la boîte aux lettres de Fabrice.
 
-    Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
+```powershell
+Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
+```
 
 ## Utilisez l’environnement de ligne de commande Exchange Management Shell pour modifier la stratégie d’attribution sur un groupe de boîtes aux lettres pour lesquelles une stratégie d’attribution spécifique a été affectée
 
@@ -69,15 +73,21 @@ Cette procédure utilise le pipelining, la cmdlet **Where** et le paramètre *Wh
 
 Si vous souhaitez modifier la stratégie d’attribution pour un groupe de boîtes aux lettres pour lesquelles une stratégie spécifique est attribuée, utilisez la syntaxe suivante.
 
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<assignment policy to find>" } | Set-Mailbox -RoleAssignmentPolicy <assignment policy to set>
+```powershell
+Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<assignment policy to find>" } | Set-Mailbox -RoleAssignmentPolicy <assignment policy to set>
+```
 
 Cet exemple recherche toutes les boîtes aux lettres attribuées aux utilisateurs de Redmond. Aucune stratégie d’attribution de messagerie vocale et aucune modification de la stratégie d’attribution aux utilisateurs de Redmond. Messagerie vocale activée.
 
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail" } | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled"
+```powershell
+Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail" } | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled"
+```
 
 Cet exemple inclut le paramètre *WhatIf*. Ainsi, vous pouvez voir toutes les boîtes aux lettres qui seront modifiées sans effectuer de modification.
 
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail" } | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled" -WhatIf
+```powershell
+Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail" } | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled" -WhatIf
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123685\(v=exchg.150\)) et [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)).
 

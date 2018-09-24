@@ -47,11 +47,15 @@ Vous pouvez utiliser l’environnement de ligne de commande Exchange Management
 
 Cet exemple active l’enregistrement d’audit pour la boîte aux lettres de l’utilisateur Ben Smith.
 
-    Set-Mailbox -Identity "Ben Smith" -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditEnabled $true
+```
 
 Cet exemple désactive l’enregistrement d’audit pour la boîte aux lettres de l’utilisateur Ben Smith.
 
-    Set-Mailbox -Identity "Ben Smith" -AuditEnabled $false
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditEnabled $false
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)).
 
@@ -61,15 +65,21 @@ Si l’enregistrement d’audit de boîte aux lettres est activé pour une boît
 
 Cet exemple précise que les actions `SendAs` ou `SendOnBehalf` effectuées par des utilisateurs délégués seront enregistrées pour la boîte aux lettres de Ben Smith.
 
-    Set-Mailbox -Identity "Ben Smith" -AuditDelegate SendAs,SendOnBehalf -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditDelegate SendAs,SendOnBehalf -AuditEnabled $true
+```
 
 Cet exemple précise que les actions `MessageBind` ou `FolderBind` effectuées par des administrateurs seront enregistrées pour la boîte aux lettres de Ben Smith.
 
-    Set-Mailbox -Identity "Ben Smith" -AuditAdmin MessageBind,FolderBind -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditAdmin MessageBind,FolderBind -AuditEnabled $true
+```
 
 Cet exemple précise que l’action `HardDelete` effectuée par le propriétaire de la boîte aux lettres sera enregistrée pour la boîte aux lettres de Ben Smith.
 
-    Set-Mailbox -Identity "Ben Smith" -AuditOwner HardDelete -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditOwner HardDelete -AuditEnabled $true
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)).
 
@@ -79,5 +89,7 @@ Pour vérifier que vous avez bien activé l’enregistrement d’audit des boît
 
 Cet exemple illustre la récupération des paramètres de la boîte aux lettres de Ben Smith et le transfert des paramètres d’audit spécifiés, y compris la limite d’âge du journal d’audit, vers la cmdlet **Format-List**.
 
-    Get-Mailbox "Ben Smith" | Format-List *audit*
+```powershell
+Get-Mailbox "Ben Smith" | Format-List *audit*
+```
 

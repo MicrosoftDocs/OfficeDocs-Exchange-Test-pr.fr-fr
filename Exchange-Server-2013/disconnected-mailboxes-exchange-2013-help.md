@@ -29,18 +29,22 @@ Une *boîte aux lettres déconnectée* est un objet boîte aux lettres de la bas
     
     Les boîtes aux lettres désactivées et supprimées sont conservées dans la base de données de boîtes aux lettres jusqu’à l’expiration de la période de rétention de la boîte aux lettres supprimée, qui est de 30 jours par défaut. À l’expiration de la période de rétention, la boîte aux lettres est définitivement supprimée (ou *vidée*). Si une boîte aux lettres est supprimée à l’aide de la cmdlet **Remove-Mailbox**, elle est également conservée pendant toute la durée de la période de rétention.
     
-    > [!NOTE]
+    > [!IMPORTANT]  
     > Si une boîte aux lettres est supprimée à l’aide de la cmdlet <strong>Remove-Mailbox</strong> et du paramètre <em>Permanent</em> ou <em>StoreMailboxIdentity</em>, elle est immédiatement supprimée de la base de données de boîtes aux lettres.
     
     Pour identifier les boîtes aux lettres désactivées de votre organisation, exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell :
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "Disabled" } | ft DisplayName,Database,DisconnectDate
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "Disabled" } | ft DisplayName,Database,DisconnectDate
+    ```
 
   - **Boîtes aux lettres supprimées (récupérables)**   Lorsqu’une boîte aux lettres est déplacée vers une autre base de données de boîtes aux lettres, Exchange ne supprime pas entièrement la boîte aux lettres de la base de données de boîtes aux lettres source une fois le déplacement terminé. En revanche, la boîte aux lettres qui se trouve dans la base de données de boîtes aux lettres source passe à l’état *supprimé (récupérable)*. Tout comme les boîtes aux lettres désactivées, les boîtes aux lettres supprimées (récupérables) sont conservées dans la base de données source jusqu’à l’expiration de la période de rétention de la boîte aux lettres ou jusqu’au vidage de la boîte aux lettres à l’aide de la cmdlet **Remove-StoreMailbox**.
     
     Exécutez la commande suivante pour identifier les boîtes aux lettres supprimées (récupérables) dans votre organisation :
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | ft DisplayName,Database,DisconnectDate
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | ft DisplayName,Database,DisconnectDate
+    ```
 
 **Contenu de cette rubrique**
 

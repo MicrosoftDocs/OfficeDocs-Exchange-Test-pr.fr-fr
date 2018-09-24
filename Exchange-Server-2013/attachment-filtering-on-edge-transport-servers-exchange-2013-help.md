@@ -29,7 +29,9 @@ Vous pouvez utiliser les types de filtrage des pièces jointes suivants pour con
     
     Pour afficher la liste complète des extensions de nom de fichier et des types de contenu que le filtrage des pièces jointes peut détecter, exécutez la commande suivante sur le serveur de transport Edge :
     
-        Get-AttachmentFilterEntry | Format-List
+    ```powershell
+    Get-AttachmentFilterEntry | Format-List
+    ```
 
 Après avoir défini les fichiers à rechercher, vous pouvez configurer l’action à effectuer sur les messages qui contiennent ces pièces jointes. Vous ne pouvez pas spécifier différentes actions pour différents types de pièces jointes. Vous configurez l’une des actions suivantes pour tous les messages qui correspondent à l’un des filtres de pièces jointes :
 

@@ -85,17 +85,23 @@ Pour les autres tâches de gestion relatives à la fédération, voir [Procédur
 
   - Cet exemple ajoute le nom de domaine service.contoso.com à la relation d’organisation Contoso.
     
-        $domains = (Get-OrganizationRelationship Contoso).DomainNames
-        $domains += 'service.contoso.com'
-        Set-OrganizationRelationship -Identity Contoso -DomainNames $domains
+    ```powershell
+    $domains = (Get-OrganizationRelationship Contoso).DomainNames
+    $domains += 'service.contoso.com'
+    Set-OrganizationRelationship -Identity Contoso -DomainNames $domains
+    ```
 
   - Cet exemple désactive la relation d’organisation Contoso.
     
-        Set-OrganizationRelationship -Identity Contoso -Enabled $false
+    ```powershell
+    Set-OrganizationRelationship -Identity Contoso -Enabled $false
+    ```
 
   - Cet exemple montre comment activer l’accès aux informations de disponibilité du calendrier pour la relation d’organisation WoodgroveBank et définir le niveau d’accès sur `AvailabilityOnly` (informations de disponibilité du calendrier avec les heures de disponibilité uniquement).
     
-        Set-OrganizationRelationship -Identity Contoso -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly
+    ```powershell
+    Set-OrganizationRelationship -Identity Contoso -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly
+    ```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Get-OrganizationRelationship](https://technet.microsoft.com/fr-fr/library/ee332343\(v=exchg.150\)) et [Set-OrganizationRelationship](https://technet.microsoft.com/fr-fr/library/ee332326\(v=exchg.150\)).
 
@@ -103,7 +109,9 @@ Pour des informations détaillées sur la syntaxe et les paramètres, consultez 
 
 Pour vérifier que vous avez correctement mis à jour la relation d’organisation, exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell et vérifiez les informations de la relation d’organisation :
 
-    Get-OrganizationRelationship | format-list
+```powershell
+Get-OrganizationRelationship | format-list
+```
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.

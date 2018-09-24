@@ -45,11 +45,15 @@ Pour d’autres tâches de gestion relatives à la disponibilité gérée, consu
 
 Pour créer une substitution locale pour une durée spécifique, utilisez la syntaxe suivante.
 
-    Add-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertyName> -PropertyValue <Value> -Duration <dd.hh:mm:ss>
+```powershell
+Add-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertyName> -PropertyValue <Value> -Duration <dd.hh:mm:ss>
+```
 
 Pour créer une substitution locale pour une version spécifique d’Exchange, utilisez la syntaxe suivante.
 
-    Add-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertyName> -PropertyValue <Value> -Version <15.01.xxxx.xxx>
+```powershell
+Add-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertyName> -PropertyValue <Value> -Version <15.01.xxxx.xxx>
+```
 
 > [!NOTE]
 > Lorsque vous créez la substitution, les valeurs utilisées dans la paramètre <em>Identity</em> respectent la casse.
@@ -57,13 +61,17 @@ Pour créer une substitution locale pour une version spécifique d’Exchange, u
 
 Cet exemple ajoute une substitution locale qui désactive le répondeur `ActiveDirectoryConnectivityConfigDCServerReboot` sur le serveur nommé EXCH03 pendant 20 jours.
 
-    Add-ServerMonitoringOverride -Server EXCH03 -Identity "AD\ActiveDirectoryConnectivityConfigDCServerReboot" -ItemType Responder -PropertyName Enabled -PropertyValue 0 -Duration 20.00:00:00
+```powershell
+Add-ServerMonitoringOverride -Server EXCH03 -Identity "AD\ActiveDirectoryConnectivityConfigDCServerReboot" -ItemType Responder -PropertyName Enabled -PropertyValue 0 -Duration 20.00:00:00
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien créé une substitution locale, utilisez la cmdlet **Get-ServerMonitoringOverride** pour afficher la liste des substitutions locales :
 
-    Get-ServerMonitoringOverride  -Server <ServerIdentity> | Format-List
+```powershell
+Get-ServerMonitoringOverride  -Server <ServerIdentity> | Format-List
+```
 
 La substitution doit apparaître dans la liste.
 
@@ -71,17 +79,23 @@ La substitution doit apparaître dans la liste.
 
 Pour supprimer une substitution locale, utilisez la syntaxe suivante.
 
-    Remove-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <ExistingItemTypeValue> -PropertyName <PropertytoRemove>
+```powershell
+Remove-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <ExistingItemTypeValue> -PropertyName <PropertytoRemove>
+```
 
 Cet exemple supprime la substitution locale existante du répondeur `ActiveDirectoryConnectivityConfigDCServerReboot` dans le groupe d’intégrité Exchange du serveur EXCH01.
 
-    Remove-ServerMonitoringOverride -Server EXCH01 -Identity Exchange\ActiveDirectoryConnectivityConfigDCServerReboot -ItemType Responder -PropertyName Enabled
+```powershell
+Remove-ServerMonitoringOverride -Server EXCH01 -Identity Exchange\ActiveDirectoryConnectivityConfigDCServerReboot -ItemType Responder -PropertyName Enabled
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien supprimé une substitution locale, utilisez la cmdlet **Get-ServerMonitoringOverride** pour afficher la liste des substitutions locales :
 
-    Get-ServerMonitoringOverride  -Server <ServerIdentity> | Format-List
+```powershell
+Get-ServerMonitoringOverride  -Server <ServerIdentity> | Format-List
+```
 
 La substitution supprimée ne doit pas apparaître dans la liste.
 
@@ -89,11 +103,15 @@ La substitution supprimée ne doit pas apparaître dans la liste.
 
 Pour créer une substitution globale pour une durée spécifique, utilisez la syntaxe suivante.
 
-    Add-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertytoOverride> -PropertyValue <NewPropertyValue> -Duration <dd.hh:mm:ss>
+```powershell
+Add-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertytoOverride> -PropertyValue <NewPropertyValue> -Duration <dd.hh:mm:ss>
+```
 
 Pour créer une substitution globale pour une version spécifique d’Exchange, utilisez la syntaxe suivante.
 
-    Add-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertytoOverride> -PropertyValue <NewPropertyValue> -ApplyVersion <15.01.xxxx.xxx>
+```powershell
+Add-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertytoOverride> -PropertyValue <NewPropertyValue> -ApplyVersion <15.01.xxxx.xxx>
+```
 
 > [!NOTE]
 > Lorsque vous créez la substitution, les valeurs utilisées dans la paramètre <em>Identity</em> respectent la casse.
@@ -101,17 +119,23 @@ Pour créer une substitution globale pour une version spécifique d’Exchange, 
 
 Cet exemple ajoute une substitution globale qui désactive la sonde `OnPremisesInboundProxy` pendant 30 jours.
 
-    Add-GlobalMonitoringOverride -Identity "FrontendTransport\OnPremisesInboundProxy" -ItemType Probe -PropertyName Enabled -PropertyValue 0 -Duration 30.00:00:00
+```powershell
+Add-GlobalMonitoringOverride -Identity "FrontendTransport\OnPremisesInboundProxy" -ItemType Probe -PropertyName Enabled -PropertyValue 0 -Duration 30.00:00:00
+```
 
 Cet exemple ajoute une substitution globale qui désactive le répondeur `StorageLogicalDriveSpaceEscalate` pour tous les serveurs exécutant la version d’Exchange 15.01.0225.042.
 
-    Add-GlobalMonitoringOverride -Identity "MailboxSpace\StorageLogicalDriveSpaceEscalate" -PropertyName Enabled -PropertyValue 0 -ItemType Responder -ApplyVersion "15.01.0225.042"
+```powershell
+Add-GlobalMonitoringOverride -Identity "MailboxSpace\StorageLogicalDriveSpaceEscalate" -PropertyName Enabled -PropertyValue 0 -ItemType Responder -ApplyVersion "15.01.0225.042"
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien créé une substitution globale, utilisez la cmdlet **Get-GlobalMonitoringOverride** pour afficher la liste des substitutions globales :
 
-    Get-GlobalMonitoringOverride
+```powershell
+Get-GlobalMonitoringOverride
+```
 
 La substitution doit apparaître dans la liste.
 
@@ -119,17 +143,23 @@ La substitution doit apparaître dans la liste.
 
 Pour supprimer une substitution globale, utilisez la syntaxe suivante.
 
-    Remove-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <ExistingItemTypeValue> -PropertyName <OverriddenProperty>
+```powershell
+Remove-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <ExistingItemTypeValue> -PropertyName <OverriddenProperty>
+```
 
 Cet exemple supprime la substitution globale existante de la propriété `ExtensionAttributes` de la sonde `OnPremisesInboundProxy` dans le groupe d’intégrité `FrontEndTransport`.
 
-    Remove-GlobalMonitoringOverride -Identity FrontEndTransport\OnPremisesInboundProxy -ItemType Probe -PropertyName ExtensionAttributes
+```powershell
+Remove-GlobalMonitoringOverride -Identity FrontEndTransport\OnPremisesInboundProxy -ItemType Probe -PropertyName ExtensionAttributes
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien supprimé une substitution globale, utilisez la cmdlet **Get-GlobalMonitoringOverride** pour afficher la liste des substitutions globales :
 
-    Get-GlobalMonitoringOverride
+```powershell
+Get-GlobalMonitoringOverride
+```
 
 La substitution supprimée ne doit pas apparaître dans la liste.
 

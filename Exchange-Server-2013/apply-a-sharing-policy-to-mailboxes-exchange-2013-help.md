@@ -63,15 +63,21 @@ Pour en savoir plus sur le partage fédéré, voir [Partage](sharing-exchange-20
 
 Cet exemple applique la stratégie de partage Contoso à une boîte aux lettres unique pour l’utilisateur Barbara.
 
-    Set-Mailbox -Identity Barbara -SharingPolicy "Contoso"
+```powershell
+Set-Mailbox -Identity Barbara -SharingPolicy "Contoso"
+```
 
 Cet exemple indique que toutes les boîtes aux lettres utilisateur du service Marketing utilisent la stratégie de partage Contoso Marketing.
 
-    Get-Mailbox -Filter {Department -eq "Marketing"} | Set-Mailbox -SharingPolicy "Contoso Marketing"
+```powershell
+Get-Mailbox -Filter {Department -eq "Marketing"} | Set-Mailbox -SharingPolicy "Contoso Marketing"
+```
 
 Cet exemple renvoie toutes les boîtes aux lettres à laquelle la stratégie de partage Contoso est appliquée, et trie les utilisateurs dans un tableau qui affiche uniquement leur alias et leurs adresses de messagerie.
 
-    Get-Mailbox -ResultSize unlimited | Where {$_.SharingPolicy -eq "Contoso" } | format-table Alias, EmailAddresses
+```powershell
+Get-Mailbox -ResultSize unlimited | Where {$_.SharingPolicy -eq "Contoso" } | format-table Alias, EmailAddresses
+```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)) et [Get-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123685\(v=exchg.150\)).
 
@@ -83,7 +89,9 @@ Pour vérifier que vous avez bien appliqué la stratégie de partage à une boî
 
   - Exécutez la commande suivante de l’environnement de ligne de commande Exchange Management Shell pour vérifier que la stratégie de partage a été affectée à une boîte aux lettres utilisateur. Vérifiez que la stratégie de partage appropriée est répertoriée dans le paramètre *SharingPolicy*.
     
-        Get-Mailbox <user name> | format-list
+    ```powershell
+    Get-Mailbox <user name> | format-list
+    ```
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.

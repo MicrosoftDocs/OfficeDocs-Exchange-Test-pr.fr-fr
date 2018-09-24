@@ -163,7 +163,9 @@ La mise à jour corrective de pages est disponible pour les copies retardées vi
 
 Le comportement de lecture de copie retardée est désactivé par défaut, mais peut être activé en exécutant la commande suivante :
 
-    Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```powershell
+Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```
 
 Une fois activée, la lecture a lieu lorsque le nombre de copies est inférieur à trois. Vous pouvez modifier la valeur 3 par défaut en changeant la valeur de registre DWORD suivante :
 
@@ -612,15 +614,21 @@ Le tableau suivant répertorie les paramètres disponibles pour le script Redist
 
 Cet exemple illustre la distribution des bases de données actuelles pour un groupe de disponibilité de base de données, notamment la liste de décompte des préférences.
 
-    RedistributeActiveDatabases.ps1 -DagName DAG1 -ShowDatabaseDistributionByServer | Format-Table
+```powershell
+RedistributeActiveDatabases.ps1 -DagName DAG1 -ShowDatabaseDistributionByServer | Format-Table
+```
 
 Cet exemple illustre la redistribution et l’équilibrage des copies de base de données de boîtes aux lettres actives dans un groupe de disponibilité de base de données utilisant la préférence d’activation sans intervention de l’utilisateur.
 
-    RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -Confirm:$False
+```powershell
+RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -Confirm:$False
+```
 
 Cet exemple illustre la redistribution et l’équilibrage des copies de base de données de boîtes aux lettres actives dans un groupe de disponibilité de base de données utilisant la préférence d’activation, ainsi que la création d’un récapitulatif de la distribution.
 
-    RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -ShowFinalDatabaseDistribution
+```powershell
+RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -ShowFinalDatabaseDistribution
+```
 
 ## Surveillance des copies de base de données
 

@@ -73,31 +73,45 @@ Vous pouvez utiliser le Centre d’administration Exchange (CAE) ou l’environn
 
 Cet exemple définit le répertoire témoin sur C:\\DAG1DIR pour un groupe de disponibilité de base de données appelé DAG1.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessDirectory C:\DAG1DIR
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessDirectory C:\DAG1DIR
+```
 
 Cet exemple préconfigure un autre serveur témoin de CAS3 et un autre répertoire témoin de C:\\DAGFileShareWitnesses\\DAG1.contoso.com pour le DAG DAG1.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGFileShareWitnesses\DAG1.contoso.com -AlternateWitnessServer CAS3
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGFileShareWitnesses\DAG1.contoso.com -AlternateWitnessServer CAS3
+```
 
 Cet exemple montre comment configurer le groupe de disponibilité de base de données DAG1 afin d’utiliser DHCP pour obtenir une adresse IP.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 0.0.0.0
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 0.0.0.0
+```
 
 Cet exemple configure un groupe de disponibilité de base de données appelé DAG1 qui utilise une adresse IP statique de 10.0.0.8.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
+```
 
 Cet exemple configure le groupe de disponibilité de base de données de sous-réseaux multiples appelé DAG1 avec plusieurs adresses IP statiques.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,10.0.1.8
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,10.0.1.8
+```
 
 Cet exemple configure le groupe de disponibilité de base de données DAG1 pour son utilisation en mode d’activation du centre de données.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```
 
 Cet exemple montre comment configurer le port de réplication 63132 pour le groupe de disponibilité de base de données DAG1.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -ReplicationPort 63132
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -ReplicationPort 63132
+```
 
 > [!NOTE]
 > Après avoir modifié le port de réplication par défaut d’un DAG, vous devez modifier manuellement les exceptions de pare-feu sur chaque membre du DAG pour autoriser la communication sur le port spécifié.
@@ -109,7 +123,9 @@ Pour vérifier que vous avez bien configuré le groupe de disponibilité de base
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les paramètres de configuration du groupe de disponibilité de base de données et vérifier la bonne configuration du DAG :
     
-        Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```powershell
+    Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```
 
 ## Pour plus d'informations
 

@@ -49,13 +49,17 @@ Pour exécuter les procédures de l'agent de transport décrites dans cette rubr
 
 1.  Sur le serveur d’accès au client, ouvrez Windows PowerShell et exécutez la commande suivante :
     
-        Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+    ```powershell
+    Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+    ```
 
 2.  Exécutez la commande comme cela est indiqué, mais ajoutez-lui la valeur suivante : `-TransportService FrontEnd`.
     
     Par exemple, pour afficher les agents de transport dans le service de transport frontal sur un serveur d'accès au client, exécutez la commande suivante :
     
-        Get-TransportAgent -TransportService FrontEnd
+    ```powershell
+    Get-TransportAgent -TransportService FrontEnd
+    ```
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour installer un agent de transport
 
@@ -67,11 +71,15 @@ Les agents de transport sont installés dans un état désactivé pour éviter q
 
 Utilisez la syntaxe suivante pour installer un agent de transport.
 
-    Install-TransportAgent -Name <TransportAgentIdentity> -TransportAgentFactory <"TransportAgentFactory"> -AssemblyPath <"FilePath">
+```powershell
+Install-TransportAgent -Name <TransportAgentIdentity> -TransportAgentFactory <"TransportAgentFactory"> -AssemblyPath <"FilePath">
+```
 
 Cet exemple installe une application fictive appelée « Agent de transport Contoso » dans le service de transport sur un serveur de boîtes aux lettres.
 
-    Install-TransportAgent -Name "Contoso Transport Agent" -TransportAgentFactory "vendor.exchange.ContosoTransportAgentfactory" -AssemblyPath "C:\Program Files\Vendor\TransportAgent\ContosoTransportAgentFactory.dll"
+```powershell
+Install-TransportAgent -Name "Contoso Transport Agent" -TransportAgentFactory "vendor.exchange.ContosoTransportAgentfactory" -AssemblyPath "C:\Program Files\Vendor\TransportAgent\ContosoTransportAgentFactory.dll"
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -81,11 +89,15 @@ Pour vérifier que vous avez correctement installé l'agent de transport, exécu
 
 Utilisez la syntaxe suivante pour activer un agent de transport.
 
-    Enable-TransportAgent <TransportAgentIdentity>
+```powershell
+Enable-TransportAgent <TransportAgentIdentity>
+```
 
 Cet exemple active l'agent de transport « Agent de transport Contoso » dans le service de transport sur un serveur de boîtes aux lettres.
 
-    Enable-TransportAgent "Contoso Transport Agent"
+```powershell
+Enable-TransportAgent "Contoso Transport Agent"
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -95,11 +107,15 @@ Pour vérifier que vous avez correctement activé un agent de transport, exécut
 
 Utilisez la syntaxe suivante pour désactiver un agent de transport :
 
-    Disable-TransportAgent <TransportAgentIdentity>
+```powershell
+Disable-TransportAgent <TransportAgentIdentity>
+```
 
 Cet exemple désactive l'agent de transport « Agent de transport Fabirkam » dans le service de transport sur un serveur de boîtes aux lettres.
 
-    Disable-TransportAgent "Fabrikam Transport Agent"
+```powershell
+Disable-TransportAgent "Fabrikam Transport Agent"
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -109,15 +125,21 @@ Pour vérifier que vous avez correctement désactivé un agent de transport, ex�
 
 Pour afficher une liste récapitulative de tous les agents de transport, exécutez la commande suivante :
 
-    Get-TransportAgent
+```powershell
+Get-TransportAgent
+```
 
 Pour afficher la configuration détaillée d'un agent de transport particulier, exécutez la commande suivante :
 
-    Get-TransportAgent <TransportAgentIdentity> | Format-List
+```powershell
+Get-TransportAgent <TransportAgentIdentity> | Format-List
+```
 
 Cet exemple fournit la configuration détaillée de l'agent de transport appelé « Agent de règles de transport ».
 
-    Get-TransportAgent "Transport Rule Agent" | Format-List
+```powershell
+Get-TransportAgent "Transport Rule Agent" | Format-List
+```
 
 ## Utiliser l’environnement de ligne de commande pour configurer la priorité d'un agent de transport
 
@@ -125,11 +147,15 @@ Les agents de transport dont la priorité est la plus proche de 0 traitent d’a
 
 Pour modifier la priorité d’un agent de transport existant, exécutez la commande suivante :
 
-    Set-TransportAgent <TransportAgentIdentity> -Priority <Integer>
+```powershell
+Set-TransportAgent <TransportAgentIdentity> -Priority <Integer>
+```
 
 Cet exemple définit la priorité de l'agent de transport « Agent de transport Contoso » avec la valeur 3 dans le service de transport sur un serveur de boîtes aux lettres.
 
-    Set-TransportAgent "Contoso Transport Agent" -Priority 3
+```powershell
+Set-TransportAgent "Contoso Transport Agent" -Priority 3
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -141,11 +167,15 @@ Lorsque l'agent de transport est désinstallé, Exchange annule l'enregistrement
 
 Pour désinstaller un agent de transport, exécutez la commande suivante :
 
-    Uninstall-TransportAgent <TransportAgentIdentity>
+```powershell
+Uninstall-TransportAgent <TransportAgentIdentity>
+```
 
 Cet exemple désinstalle l'agent de transport « Agent de transport Fabrikam » du service de transport sur un serveur de boîtes aux lettres.
 
-    Uninstall-TransportAgent "Fabrikam Transport Agent"
+```powershell
+Uninstall-TransportAgent "Fabrikam Transport Agent"
+```
 
 ## Comment savoir si cela a fonctionné ?
 

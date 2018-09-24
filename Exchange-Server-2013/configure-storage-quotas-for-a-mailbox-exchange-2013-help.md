@@ -27,7 +27,7 @@ Les quotas de stockage vous permettent de contrôler la taille des boîtes aux l
 
 Des quotas de stockage sont généralement configurés pour chaque base de données. Autrement dit, les quotas configurés pour une base de données de boîtes aux lettres s’appliquent à toutes les boîtes aux lettres de cette base de données. Pour plus d’informations sur la gestion des paramètres de boîtes aux lettres pour chaque base de données, consultez la rubrique [Gestion des bases de données de boîtes aux lettres dans Exchange 2013](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md).
 
-Cette rubrique vous explique comment personnaliser les paramètres de stockage d’une boîte aux lettres spécifique au lieu d’utiliser les paramètres de stockage de la base de données de boîtes aux lettres. Pour connaître les tâches de gestion supplémentaires relatives aux boîtes aux lettres utilisateur, consultez la rubrique [Gestion des boîtes aux lettres utilisateur](manage-user-mailboxes-exchange-2013-help.md).
+Cette rubrique vous explique comment personnaliser les paramètres de stockage d’une boîte aux lettres spécifique au lieu d’utiliser les paramètres de stockage de la base de données de boîtes aux lettres. Pour connaître les tâches de gestion supplémentaires relatives aux boîtes aux lettres utilisateur, consultez la rubrique [Gestion des boîtes aux lettres utilisateur](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
 
 ## Ce qu’il faut savoir avant de commencer
 
@@ -55,7 +55,7 @@ Cette rubrique vous explique comment personnaliser les paramètres de stockage d
     
       - **Émettre un avertissement à (Go)**   Ce champ affiche la limite de stockage maximale avant qu’un avertissement ne soit présenté à l’utilisateur. Si la taille de la boîte aux lettres atteint ou dépasse la valeur spécifiée, Exchange envoie un message d’avertissement à l’utilisateur.
         
-        > [!NOTE]
+        > [!IMPORTANT]
         > Le message associé au quota <strong>Émettre un avertissement</strong> ne sera pas envoyé à l’utilisateur, sauf si la valeur de ce paramètre est supérieure à 50 % de la valeur spécifiée dans le quota <strong>Interdire l’envoi</strong>. Si vous définissez par exemple le quota <strong>Interdire l’envoi</strong> sur 8 Mo, vous devez définir le quota <strong>Émettre un avertissement</strong> sur au moins 4 Mo. Dans le cas contraire, le message de quota <strong>Émettre un avertissement</strong> ne sera pas envoyé.
     
       - **Interdire l’envoi à (Go)**   Ce champ affiche la limite d’*interdiction d’envoi* pour la boîte aux lettres. Si la taille de la boîte aux lettres atteint ou dépasse la limite spécifiée, Exchange empêche l’utilisateur d’envoyer de nouveaux messages et affiche un message d’erreur descriptif.
@@ -72,11 +72,15 @@ Cet exemple montre comment définir les quotas d’avertissement, d’interdicti
 > Pour vous assurer que les paramètres personnalisés de la boîte aux lettres sont utilisés à la place des paramètres par défaut de la base de données, vous devez définir le paramètre <em>UseDatabaseQuotaDefaults</em> sur <code>$false</code>.
 
 
-    Set-Mailbox -Identity "Joe Healy" -IssueWarningQuota 24.5gb -ProhibitSendQuota 24.75gb -ProhibitSendReceiveQuota 25gb -UseDatabaseQuotaDefaults $false
+```powershell
+Set-Mailbox -Identity "Joe Healy" -IssueWarningQuota 24.5gb -ProhibitSendQuota 24.75gb -ProhibitSendReceiveQuota 25gb -UseDatabaseQuotaDefaults $false
+```
 
 Cet exemple montre comment définir les quotas d’avertissement, d’interdiction d’envoi et d’interdiction d’envoi et de réception pour la boîte aux lettres d’Ayla Kol sur 900 mégaoctets (Mo), 950 Mo et 1 Go respectivement, et configurer la boîte aux lettres pour utiliser les paramètres personnalisés.
 
-    Set-Mailbox -Identity "Ayla Kol" -IssueWarningQuota 900mb -ProhibitSendQuota 950mb -ProhibitSendReceiveQuota 1gb -UseDatabaseQuotaDefaults $false
+```powershell
+Set-Mailbox -Identity "Ayla Kol" -IssueWarningQuota 900mb -ProhibitSendQuota 950mb -ProhibitSendReceiveQuota 1gb -UseDatabaseQuotaDefaults $false
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)).
 
@@ -98,5 +102,7 @@ Ou
 
 Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
 
-    Get-Mailbox <identity> | fl IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
+```powershell
+Get-Mailbox <identity> | fl IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
+```
 

@@ -96,7 +96,7 @@ La figure suivante décrit la relation entre le compte d’utilisateur lié serv
     
       - **Base de données de boîtes aux lettres**   Cette option permet de spécifier une base de données de boîtes aux lettres au lieu d’autoriser Exchange à choisir une base de données à votre place. Cliquez sur **Parcourir** pour ouvrir la boîte de dialogue **Sélection de base de données de boîtes aux lettres**. Cette boîte de dialogue répertorie toutes les bases de données de boîtes aux lettres au sein de votre organisation Exchange. Par défaut, les bases de données de boîtes aux lettres sont triées par nom. Vous pouvez également cliquer sur le titre de la colonne correspondante pour trier les bases de données par nom ou version de serveur. Sélectionnez la base de données de boîtes aux lettres à utiliser, puis cliquez sur **OK**.
     
-      - **Stratégie de carnet d’adresses**   Cette option permet de spécifier une stratégie de carnet d’adresses pour la boîte aux lettres liée. Les stratégies de carnet d’adresses contiennent une liste d’adresses globale, un carnet d’adresses en mode hors connexion, une liste de salles et un ensemble de listes d’adresses. Lors de l’affectation aux utilisateurs, une stratégie de carnet d’adresses leur fournit l’accès à une liste d’adresses globale personnalisée dans Outlook et Outlook Web App. Pour en savoir plus, voir [Stratégies de carnet d’adresses](address-book-policies-exchange-2013-help.md).
+      - **Stratégie de carnet d’adresses**   Cette option permet de spécifier une stratégie de carnet d’adresses pour la boîte aux lettres liée. Les stratégies de carnet d’adresses contiennent une liste d’adresses globale, un carnet d’adresses en mode hors connexion, une liste de salles et un ensemble de listes d’adresses. Lors de l’affectation aux utilisateurs, une stratégie de carnet d’adresses leur fournit l’accès à une liste d’adresses globale personnalisée dans Outlook et Outlook Web App. Pour en savoir plus, voir [Stratégies de carnet d’adresses](https://docs.microsoft.com/fr-fr/exchange/address-books/address-book-policies/address-book-policies).
         
         Dans la liste déroulante, sélectionnez la règle que vous souhaitez associer à cette boîte aux lettres.
 
@@ -106,7 +106,9 @@ La figure suivante décrit la relation entre le compte d’utilisateur lié serv
 
 Cet exemple crée une boîte aux lettres liée pour Ayla Kol dans la forêt de ressources Exchange CONTOSO. Le domaine FABRIKAM se trouve dans la forêt de comptes. Le compte d’administrateur FABRIKAM \\administrator est utilisé pour accéder au contrôleur de domaine lié.
 
-    New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
+```powershell
+New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
+```
 
 Pour obtenir des informations sur la syntaxe et les paramètres, voir [New-Mailbox](https://technet.microsoft.com/fr-fr/library/aa997663\(v=exchg.150\)).
 
@@ -118,13 +120,15 @@ Pour vérifier que vous avez correctement créé une boîte aux lettres liée, p
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les informations sur la nouvelle boîte aux lettres liée.
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+    ```powershell
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+    ```
 
 ## Modifier les propriétés de la boîte aux lettres liée
 
 Une fois que vous avez créé une boîte aux lettres liée, vous pouvez la modifier et définir des propriétés supplémentaires via le Centre d’administration Exchange (CAE) ou l’environnement de ligne de commande Exchange Management Shell.
 
-Vous pouvez également modifier les propriétés de plusieurs boîtes aux lettres liées en même temps. Pour plus d’informations, voir la section « Modifier en bloc des boîtes aux lettres utilisateur » de la rubrique [Gestion des boîtes aux lettres utilisateur](manage-user-mailboxes-exchange-2013-help.md).
+Vous pouvez également modifier les propriétés de plusieurs boîtes aux lettres liées en même temps. Pour plus d’informations, voir la section « Modifier en bloc des boîtes aux lettres utilisateur » de la rubrique [Gestion des boîtes aux lettres utilisateur](https://docs.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
 
 > [!IMPORTANT]
 > La durée d’exécution estimée pour cette tâche varie selon le nombre de propriétés que vous souhaitez afficher ou modifier.
@@ -240,7 +244,7 @@ Dans la section **Fonctionnalités de boîte aux lettres**, vous pouvez afficher
 
   - **Stratégie de carnet d’adresses**   Cette zone indique la stratégie de carnet d’adresses appliquée à la boîte aux lettres. Une stratégie de carnet d’adresses vous permet de segmenter les utilisateurs dans des groupes spécifiques pour fournir des vues personnalisées du carnet d’adresses. Pour appliquer ou modifier la stratégie de carnet d’adresses appliquée à la boîte aux lettres, sélectionnez-en une dans la liste déroulante.
 
-  - **Messagerie unifiée**   Cette fonctionnalité est désactivée par défaut. Lorsque vous activez la messagerie unifiée, l’utilisateur peut utiliser les fonctionnalités de messagerie unifiée de votre organisation et un ensemble par défaut de propriétés de messagerie unifiée est appliqué à l’utilisateur. Cliquez sur **Activer** pour activer la messagerie unifiée pour la boîte aux lettres. Pour plus d’informations sur la procédure d’activation de la messagerie unifiée, reportez-vous à la rubrique [Activation de la messagerie vocale pour un utilisateur](enable-a-user-for-voice-mail-exchange-2013-help.md).
+  - **Messagerie unifiée**   Cette fonctionnalité est désactivée par défaut. Lorsque vous activez la messagerie unifiée, l’utilisateur peut utiliser les fonctionnalités de messagerie unifiée de votre organisation et un ensemble par défaut de propriétés de messagerie unifiée est appliqué à l’utilisateur. Cliquez sur **Activer** pour activer la messagerie unifiée pour la boîte aux lettres. Pour plus d’informations sur la procédure d’activation de la messagerie unifiée, reportez-vous à la rubrique [Activation de la messagerie vocale pour un utilisateur](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail).
     
     > [!NOTE]
     > Un plan de numérotation de messagerie unifiée et une stratégie de boîte aux lettres de messagerie unifiée doivent exister avant de pouvoir activer la messagerie unifiée.
@@ -352,15 +356,21 @@ Voici quelques exemples d’utilisation de l’environnement de ligne de command
 
 Cet exemple utilise la commande **Get-Mailbox** pour rechercher toutes les boîtes aux lettres liées dans l’organisation.
 
-    Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')}
+```powershell
+Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')}
+```
 
 Cet exemple utilise la commande **Set-Mailbox** pour limiter à 500 le nombre de destinataires autorisé sur les lignes À :, Cc : et Cci : d’un message électronique. Cette limite s’applique à toutes les boîtes aux lettres liées dans l’organisation.
 
-    Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | Set-Mailbox -RecipientLimits 500
+```powershell
+Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | Set-Mailbox -RecipientLimits 500
+```
 
 Cet exemple modifie le compte principal lié dans la forêt de comptes fabrikam.com qui est associée à une boîte aux lettres liée dans une forêt Exchange.
 
-    Set-Mailbox -Identity "Ayla Kol" -LinkedDomainController DC1.fabrikam.com -LinkedMasterAccount "fabrikam\robinw" -LinkedCredential:(Get-Credential fabrikam\administrator)
+```powershell
+Set-Mailbox -Identity "Ayla Kol" -LinkedDomainController DC1.fabrikam.com -LinkedMasterAccount "fabrikam\robinw" -LinkedCredential:(Get-Credential fabrikam\administrator)
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -370,9 +380,13 @@ Pour vérifier que vous avez correctement modifié les propriétés d’une boî
 
   - Dans l’environnement Shell, utilisez la cmdlet **Get-Mailbox** pour vérifier les modifications. L’utilisation de l’environnement de ligne de commande Exchange Management Shell permet notamment d’afficher plusieurs propriétés pour plusieurs boîtes aux lettres liées. Dans l’exemple ci-dessus, où la limite de destinataires a été modifiée, l’exécution de la commande suivante permet de vérifier la nouvelle valeur.
     
-        Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | fl Name,RecipientLimits
+    ```powershell
+    Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | fl Name,RecipientLimits
+    ```
     
     Dans l’exemple ci-dessus, où le compte principal lié a été modifié, exécutez la commande suivante pour vérifier la nouvelle valeur.
     
-        Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+    ```powershell
+    Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+    ```
 

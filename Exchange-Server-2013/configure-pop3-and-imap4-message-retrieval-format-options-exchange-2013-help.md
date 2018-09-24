@@ -69,7 +69,9 @@ Une fois que vous avez défini les paramètres de format de récupération des m
 
 Cet exemple permet de définir l’option de format de récupération des messages sur Texte uniquement pour tous les utilisateurs de POP3 sur le serveur CAS01.
 
-    Set-PopSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+```powershell
+Set-PopSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+```
 
 Vous pouvez choisir l’un des paramètres suivants : Vous pouvez spécifier la valeur du paramètre *MessageRetrievalMimeFormat* à l’aide d’une valeur numérique ou d’une chaîne de texte.
 
@@ -126,7 +128,9 @@ Pour vérifier que vous avez bien défini les paramètres de récupération des 
 
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
-        Get-PopSettings | format-list
+    ```powershell
+    Get-PopSettings | format-list
+    ```
 
 2.  Vérifiez que le paramètre *MessageRetrievalMimeFormat* est correctement défini.
 
@@ -164,7 +168,9 @@ Une fois que vous avez défini les paramètres de format de récupération des m
 
 Cet exemple permet de définir l’option de format de récupération des messages sur Texte uniquement pour tous les utilisateurs d’IMAP4 sur le serveur CAS01.
 
-    Set-ImapSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+```powershell
+Set-ImapSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+```
 
 Vous pouvez choisir l’un des paramètres suivants : Vous pouvez spécifier la valeur du paramètre *MessageRetrievalMimeFormat* à l’aide d’une valeur numérique ou d’une chaîne de texte.
 
@@ -221,7 +227,9 @@ Pour vérifier que vous avez bien défini les paramètres de récupération des 
 
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
-        Get-ImapSettings | format-list
+    ```powershell
+    Get-ImapSettings | format-list
+    ```
 
 2.  Vérifiez que le paramètre *MessageRetrievalMimeFormat* est correctement défini.
 
@@ -231,7 +239,9 @@ Pour vérifier que vous avez bien défini les paramètres de récupération des 
 
 Cet exemple montre comment définir le format de récupération des messages sur Texte uniquement pour l’accès POP3 de l’`USER01`.
 
-    Set-CASMailbox -Identity USER01 -PopMessagesRetrievalMimeFormat TextOnly
+```powershell
+Set-CASMailbox -Identity USER01 -PopMessagesRetrievalMimeFormat TextOnly
+```
 
 Vous pouvez choisir l’un des paramètres suivants : Vous pouvez spécifier la valeur du paramètre *PopMessagesRetrievalMimeFormat* à l’aide d’une valeur numérique ou d’une chaîne de texte.
 
@@ -288,7 +298,9 @@ Pour vérifier que vous avez bien défini les paramètres de récupération des 
 
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
-        Get-CAS Mailbox <identity> | format-list
+    ```powershell
+    Get-CAS Mailbox <identity> | format-list
+    ```
 
 2.  Vérifiez que la valeur du paramètre *PopMessagesRetrievalMimeFormat* est correcte.
 
@@ -298,7 +310,9 @@ Pour vérifier que vous avez bien défini les paramètres de récupération des 
 
 Cet exemple montre comment définir le format de récupération des messages sur Texte uniquement pour l’accès IMAP4 de l’`USER01`.
 
-    Set-CASMailbox -Identity USER01 -ImapMessagesRetrievalMimeFormat TextOnly
+```powershell
+Set-CASMailbox -Identity USER01 -ImapMessagesRetrievalMimeFormat TextOnly
+```
 
 Vous pouvez spécifier la valeur du paramètre *ImapMessagesRetrievalMimeFormat* à l’aide d’une valeur numérique ou d’une chaîne de texte.
 
@@ -355,7 +369,9 @@ Pour vérifier que vous avez bien défini les paramètres de récupération des 
 
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
-        Get-CAS Mailbox <identity> | format-list
+    ```powershell
+    Get-CAS Mailbox <identity> | format-list
+    ```
 
 2.  Vérifiez que la valeur du paramètre *ImapMessagesRetrievalMimeFormat* est correcte.
 

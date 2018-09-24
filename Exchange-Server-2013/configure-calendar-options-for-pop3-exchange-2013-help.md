@@ -37,19 +37,27 @@ Pour plus d’informations sur POP3, voir [POP3 et IMAP4 dans Exchange Server 20
 
 Dans cet exemple, nous permettons à des utilisateurs POP3 d’utiliser la norme iCalendar, il s’agit d’une norme dédiée à l’échange d’informations de calendrier.
 
-    Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+```powershell
+Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+```
 
 Dans cet exemple, nous permettons à des utilisateurs POP3 d’accéder aux informations de calendrier à partir d’un serveur interne.
 
-    Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+```powershell
+Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+```
 
 Cet exemple permet aux utilisateurs POP3 d'accéder aux informations de calendrier à partir d'Internet sur un serveur externe.
 
-    Set-PopSettings -CalendarItemRetrievalOption InternetUrl
+```powershell
+Set-PopSettings -CalendarItemRetrievalOption InternetUrl
+```
 
 Dans cet exemple, nous permettons à des utilisateurs POP3 d’accéder aux informations de calendrier à l’aide d’une adresse URL Outlook Web App directe. Si vous utilisez `Custom`, vous devez spécifier une adresse URL Outlook Web App à l’aide du paramètre *OWAServerUrl*.
 
-    Set-PopSettings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
+```powershell
+Set-PopSettings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
+```
 
 Une fois les options de calendrier spécifiées pour POP3, vous devez redémarrer les services POP3. Pour plus d’informations sur le redémarrage des services POP3, consultez la rubrique [Démarrage et arrêt des services POP3](start-and-stop-the-pop3-services-exchange-2013-help.md).
 
@@ -61,7 +69,9 @@ Pour vérifier que vous avez correctement défini des options de calendrier, pro
 
 Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
 
-    Get-PopSettings | format-list
+```powershell
+Get-PopSettings | format-list
+```
 
 Vérifiez que les paramètres de calendrier sont correctes.
 

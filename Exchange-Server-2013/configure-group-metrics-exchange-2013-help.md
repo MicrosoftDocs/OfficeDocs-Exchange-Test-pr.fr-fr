@@ -17,7 +17,7 @@ _**Sapplique à :** Exchange Server 2013_
 
 _**Dernière rubrique modifiée :** 2015-04-08_
 
-Les infos-courrier qui fournissent des informations sur la taille des groupes de distribution et des groupes de distribution dynamique s'appuient sur des données de mesures de groupe. Les données de mesures de groupe sont générées sur les serveurs de boîtes aux lettres désignés. Pour plus d'informations sur les mesures de groupe, consultez la rubrique [Mesures de groupe et les infos-courrier](group-metrics-and-mailtips-exchange-2013-help.md).
+Les infos-courrier qui fournissent des informations sur la taille des groupes de distribution et des groupes de distribution dynamique s'appuient sur des données de mesures de groupe. Les données de mesures de groupe sont générées sur les serveurs de boîtes aux lettres désignés. Pour plus d'informations sur les mesures de groupe, consultez la rubrique [Mesures de groupe et les infos-courrier](group-metrics-and-https://docs.microsoft.com/fr-fr/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips).
 
 Vous pouvez activer ou désactiver la génération des mesures de groupe sur un serveur de boîtes aux lettres.
 
@@ -27,7 +27,7 @@ Vous pouvez activer ou désactiver la génération des mesures de groupe sur un 
 
   - Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Mesures de groupe » dans la rubrique [Autorisations des destinataires](recipients-permissions-exchange-2013-help.md).
 
-  - Les données de mesures de groupe sont utilisées uniquement pour les infos-courrier. Assurez-vous que les infos-courrier de mesures de groupe sont activées dans votre organisation. Pour obtenir la procédure détaillée, consultez la rubrique [Gérer les infos-courrier pour les relations de l’organisation](manage-mailtips-for-organization-relationships-exchange-2013-help.md).
+  - Les données de mesures de groupe sont utilisées uniquement pour les infos-courrier. Assurez-vous que les infos-courrier de mesures de groupe sont activées dans votre organisation. Pour obtenir la procédure détaillée, consultez la rubrique [Gérer les infos-courrier pour les relations de l’organisation](https://docs.microsoft.com/fr-fr/exchange/clients-and-mobile-in-exchange-online/mailtips/manage-mailtips-for-organization-relationships).
 
   - Vous pouvez uniquement utiliser l'environnement de ligne de commande Exchange Management Shell pour effectuer cette tâche.
 
@@ -45,11 +45,15 @@ Vous pouvez activer ou désactiver la génération des mesures de groupe sur un 
 
 Pour activer ou désactiver la génération des mesures de groupe sur un serveur de boîtes aux lettres, exécutez la commande suivante :
 
-    Set-MailboxServer <ServerIdentity> -ForceGroupMetricsGeneration <$true | $false>
+```powershell
+Set-MailboxServer <ServerIdentity> -ForceGroupMetricsGeneration <$true | $false>
+```
 
 Cet exemple active la génération des mesures de groupe sur le serveur de boîtes aux lettres MBX1.
 
-    Set-MailboxServer MBX1 -ForceGroupMetricsGeneration $true
+```powershell
+Set-MailboxServer MBX1 -ForceGroupMetricsGeneration $true
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -57,7 +61,9 @@ Pour vérifier que vous avez correctement activé ou désactivé la génération
 
 1.  Exécutez la commande suivante :
     
-        Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
+    ```powershell
+    Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
+    ```
 
 2.  Vérifiez que le paramètre affiché est le paramètre que vous avez configuré.
 

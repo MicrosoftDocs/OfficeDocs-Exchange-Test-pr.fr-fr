@@ -37,19 +37,27 @@ Pour de plus amples informations sur IMAP4, consultez la rubrique [POP3 et IMAP4
 
 Cet exemple permet aux utilisateurs IMAP4 d’utiliser la norme iCalendar, une norme d’échange d’informations de calendrier.
 
-    Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+```powershell
+Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+```
 
 Cet exemple permet aux utilisateurs IMAP4 d’accéder aux informations de calendrier à partir d’un serveur interne.
 
-    Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+```powershell
+Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+```
 
 Cet exemple montre comment permettre aux utilisateurs IMAP4 d’accéder aux informations de calendrier à partir d’Internet sur un serveur externe.
 
-    Set-ImapSettings -CalendarItemRetrievalOption InternetUrl
+```powershell
+Set-ImapSettings -CalendarItemRetrievalOption InternetUrl
+```
 
 Cet exemple permet aux utilisateurs IMAP4 d’accéder aux informations de calendrier à l’aide d’une URL Outlook Web App directe. Si vous utilisez `Custom`, vous devez spécifier une URL Outlook Web App à l’aide du paramètre *OWAServerUrl*.
 
-    Set-Imap4Settings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
+```powershell
+Set-Imap4Settings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
+```
 
 Une fois les options de calendrier spécifiées pour IMAP4, vous devez redémarrer les services IMAP4. Pour plus d’informations sur le redémarrage des services IMAP4, consultez la rubrique [Démarrer et arrêter les services IMAP4](start-and-stop-the-imap4-services-exchange-2013-help.md).
 
@@ -61,7 +69,9 @@ Pour vérifier que vous avez bien défini les options de calendrier, procédez c
 
 Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
 
-    Get-ImapSettings | format-list
+```powershell
+Get-ImapSettings | format-list
+```
 
 Vérifiez que les paramètres du calendrier sont corrects.
 

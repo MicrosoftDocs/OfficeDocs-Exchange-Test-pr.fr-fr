@@ -45,7 +45,9 @@ Cette rubrique vous indique comment configurer l'authentification de serveur à 
 
 Exécutez la commande suivante pour créer Exchange 2013 en tant qu'émetteur de jetons de sécurité approuvé dans SharePoint 2013.
 
-    New-SPTrustedSecurityTokenIssuer -Name Exchange -MetadataEndPoint https://<Exchange Server Name or FQDN>/autodiscover/metadata/json/1
+```powershell
+New-SPTrustedSecurityTokenIssuer -Name Exchange -MetadataEndPoint https://<Exchange Server Name or FQDN>/autodiscover/metadata/json/1
+```
 
 ## Étape 2 : Configurer l'authentification de serveur à serveur pour SharePoint 2013 sur un serveur exécutant Exchange 2013
 
@@ -53,12 +55,14 @@ Effectuez cette étape sur un serveur Exchange 2013. Des autorisations doivent 
 
 Exécutez cette commande pour configurer l'application partenaire SharePoint.
 
-    cd c:\'Program Files'\Microsoft\'Exchange Server'\V15\Scripts
-    .\Configure-EnterprisePartnerApplication.ps1 -AuthMetadataUrl <path to SharePoint AuthMetadataUrl> -ApplicationType SharePoint
+```powershell
+cd c:\'Program Files'\Microsoft\'Exchange Server'\V15\Scripts
+.\Configure-EnterprisePartnerApplication.ps1 -AuthMetadataUrl <path to SharePoint AuthMetadataUrl> -ApplicationType SharePoint
+```
 
 ## Étape 3 : Ajouter des utilisateurs autorisés au groupe de rôles Gestion de la découverte
 
-Ajoutez les utilisateurs qui doivent effectuer une recherche de découverte électronique via SharePoint 2013 au groupe de rôles Gestion de la découverte dans Exchange 2013. Pour plus d'informations, consultez la rubrique [Attribution d’autorisations eDiscovery dans Exchange](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md).
+Ajoutez les utilisateurs qui doivent effectuer une recherche de découverte électronique via SharePoint 2013 au groupe de rôles Gestion de la découverte dans Exchange 2013. Pour plus d'informations, consultez la rubrique [Attribution d’autorisations eDiscovery dans Exchange](https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions).
 
 > [!CAUTION]
 > L'ajout d'utilisateurs au groupe de rôles Gestion de la découverte permet à ces utilisateurs d'utiliser la découverte électronique locale pour effectuer une recherche dans toutes les boîtes aux lettres Exchange 2013 et accéder au contenu de messagerie électronique potentiellement sensible dans les boîtes aux lettres des utilisateurs. Par défaut, cette autorisation n’est accordée à aucun utilisateur, y compris aux membres du groupe de rôles Gestion de l’organisation. Avant d’accorder cette autorisation à un utilisateur, contactez le service juridique et le service des ressources humaines de votre organisation.

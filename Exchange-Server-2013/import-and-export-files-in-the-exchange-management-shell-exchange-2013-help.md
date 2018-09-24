@@ -31,7 +31,7 @@ La session distante est la session Windows PowerShell qui est exécutée sur le 
 
 Lorsque vous vous connectez à un serveur Exchange distant, une connexion est établie entre la session locale sur votre ordinateur et la session distante sur le serveur Exchange. Cette connexion vous permet d'exécuter les cmdlets Exchange sur le serveur Exchange distant dans votre session locale même si aucune cmdlet Exchange n'est installée sur votre ordinateur local. Bien que les cmdlets Exchange semblent s’exécuter sur votre ordinateur local, elles sont en réalité exécutées sur le serveur Exchange.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Même si vous ouvrez l'environnement de ligne de commande Exchange Management Shell sur un serveur Exchange 2013, le même processus de connexion a lieu et deux sessions sont créées. En d’autres termes, vous devez utiliser la même nouvelle syntaxe pour importer et exporter des fichiers lorsque vous ouvrez l’environnement de ligne de commande Exchange Management Shell sur un serveur Exchange 2013 ou à partir d’une station de travail client distante.
 
 
@@ -47,11 +47,15 @@ La syntaxe pour importer des fichiers dans Exchange 2013 est utilisée à chaqu
 
 L'environnement de ligne de commande Exchange Management Shell doit savoir quel fichier vous souhaitez envoyer à la cmdlet Exchange 2013 et quel paramètre acceptera les données. Pour cela, utilisez la syntaxe suivante :
 
-    <Cmdlet> -FileData ([Byte[]]$(Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0))
+```powershell
+<Cmdlet> -FileData ([Byte[]]$(Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0))
+```
 
 Par exemple, la commande suivante importe le fichier C:\\MyData.dat dans le paramètre *FileData* sur la cmdlet fictive **Import-SomeData**.
 
-    Import-SomeData -FileData (Byte[]]$(Get-Content -Path "C:\MyData.dat" -Encoding Byte -ReadCount 0))
+```powershell
+Import-SomeData -FileData (Byte[]]$(Get-Content -Path "C:\MyData.dat" -Encoding Byte -ReadCount 0))
+```
 
 Voici ce qui se produit lorsque la commande est exécutée :
 
@@ -69,8 +73,10 @@ Voici ce qui se produit lorsque la commande est exécutée :
 
 Certaines cmdlets utilisent la syntaxe alternative suivante qui accomplit la même chose que la syntaxe précédente.
 
-    [Byte[]]$Data = Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0
+```powershell
+[Byte[]]$Data = Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0
     Import-SomeData -FileData $Data
+```
 
 Le même processus se produit avec cette syntaxe. La seule différence étant qu'au lieu d'effectuer l'opération entière immédiatement, les données récupérées du fichier local sont stockées dans une variable créée à cet effet qui peut ensuite être référencée. La variable est alors utilisée dans la commande d'importation pour transmettre le contenu du fichier local à la cmdlet **Import-SomeData**. Ce processus à deux étapes est utile lorsque vous voulez utiliser les données du fichier local dans plusieurs commandes.
 
@@ -140,7 +146,9 @@ La syntaxe pour exporter les fichiers dans Exchange 2013 est utilisée à chaqu
 
 L'environnement de ligne de commande Exchange Management Shell doit savoir que vous souhaitez enregistrer les données stockées dans la propriété **FileData** sur votre ordinateur local. Pour cela, utilisez la syntaxe suivante :
 
-    <cmdlet> | ForEach { $_.FileData | Add-Content <local path to file> -Encoding Byte }
+```command line
+<cmdlet> | ForEach {     <cmdlet> | ForEach { $_.FileData | Add-Content <local path to file> -Encoding Byte }.FileData | Add-Content <local path to file> -Encoding Byte }
+```
 
 Par exemple, la commande suivante exporte les données stockées dans la propriété **FileData** sur l'objet créé par la cmdlet fictive **Export-SomeData**. Les données exportées sont stockées dans un fichier que vous spécifiez sur l'ordinateur local, dans ce cas MyData.dat.
 
@@ -148,7 +156,9 @@ Par exemple, la commande suivante exporte les données stockées dans la propri�
 > Cette procédure utilise la cmdlet <strong>ForEach</strong>, des objets et le traitement en pipeline. Pour plus d’informations, consultez les rubriques <a href="https://technet.microsoft.com/fr-fr/library/aa998260(v=exchg.150)">Traitement en pipeline</a> et <a href="https://technet.microsoft.com/fr-fr/library/aa996386(v=exchg.150)">Données structurées</a>.
 
 
-    Export-SomeData | ForEach { $_.FileData | Add-Content C:\MyData.dat -Encoding Byte }
+```powershell
+Export-SomeData | ForEach {     Export-SomeData | ForEach { $_.FileData | Add-Content C:\MyData.dat -Encoding Byte }.FileData | Add-Content C:\MyData.dat -Encoding Byte }
+```
 
 Voici ce qui se produit lorsque la commande est exécutée :
 

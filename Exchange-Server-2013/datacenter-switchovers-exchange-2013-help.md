@@ -25,7 +25,7 @@ Une opération de permutation de centre de données s'articule en quatre étapes
 
 1.  **Fermeture d’un centre de données exécuté partiellement**   Cette étape implique l’arrêt des services Exchange dans le centre de données principal, si ces derniers sont toujours en cours d’exécution. Cette étape est particulièrement importante pour le rôle serveur de boîtes aux lettres, car elle utilise un modèle haute disponibilité actif/passif. Si les services d'un centre de données partiellement défaillant ne sont pas arrêtés, il est possible que les problèmes de ce centre aient un impact négatif sur les services lors d'une nouvelle permutation vers le centre de données principal.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > Si la fiabilité du réseau ou de l'infrastructure Active Directory a été compromise suite à une défaillance du centre de données principal, nous vous recommandons d'arrêter tous les services de messagerie jusqu'au rétablissement de l'intégrité de ces dépendances.
 
 
@@ -65,16 +65,22 @@ Lorsque le DAG n'est pas en mode de coordination d'activation de la base de donn
 
 1.  Les membres du DAG du centre de données principal doivent être supprimés du cluster sous-jacent du DAG en exécutant les commandes suivantes sur chaque membre :
     
-        net stop clussvc
-        cluster <DAGName> node <DAGMemberName> /forcecleanup
+    ```powershell
+    net stop clussvc
+    cluster <DAGName> node <DAGMemberName> /forcecleanup
+    ```
 
 2.  Les membres du DAG du deuxième centre de données doivent maintenant être redémarrés, puis utilisés pour effectuer le processus de suppression des serveurs du deuxième centre de données. Arrêtez le service de cluster sur chaque membre du DAG dans le deuxième centre de données en exécutant la commande suivante sur chaque membre :
     
-        net stop clussvc
+    ```powershell
+    net stop clussvc
+    ```
 
 3.  Sur un membre du DAG dans le deuxième centre de données, démarrez le service de cluster en forçant le quorum. Pour cela, exécutez la commande suivante :
     
-        net start clussvc /forcequorum
+    ```powershell
+    net start clussvc /forcequorum
+    ```
 
 4.  Ouvrez l'outil Gestion du cluster de basculement.et connectez-vous au cluster sous-jacent du DAG. Développez le nœud de cluster, puis les **Nœuds**. Cliquez avec le bouton droit sur chaque nœud du centre de données principal, sélectionnez **Actions supplémentaires**, puis **Supprimer**. Lorsque vous supprimez les membres du DAG du centre de données principal, fermez l'outil Gestion du cluster de basculement.
 
@@ -104,23 +110,33 @@ Lorsque le DAG n'est pas en mode DAC, pour terminer l'activation des serveurs de
     
     1.  Si le nombre des membres du DAG est impair, remplacez le modèle de quorum du DAG « Nœud et partage de fichiers majoritaires » par « Nœud majoritaire » en exécutant la commande suivante :
         
-            cluster <DAGName> /quorum /nodemajority
+        ```powershell
+        cluster <DAGName> /quorum /nodemajority
+        ```
     
     2.  Si le nombre des membres du DAG est pair, reconfigurez le serveur témoin et le répertoire témoin en exécutant la commande suivante dans l'environnement de ligne de commande Exchange Management Shell :
         
-            Set-DatabaseAvailabilityGroup <DAGName> -WitnessServer <ServerName>
+        ```powershell
+        Set-DatabaseAvailabilityGroup <DAGName> -WitnessServer <ServerName>
+        ```
 
 2.  Démarrez le service de cluster sur les membres restants du DAG dans le deuxième centre de données en exécutant la commande suivante :
     
-        net start clussvc
+    ```powershell
+    net start clussvc
+    ```
 
 3.  Procédez aux permutations de serveurs pour activer les bases de données de boîtes aux lettres dans le DAG en exécutant la commande suivante pour chaque membre du DAG :
     
-        Move-ActiveMailboxDatabase -Server <DAGMemberinPrimarySite> -ActivateOnServer <DAGMemberinSecondSite>
+    ```powershell
+    Move-ActiveMailboxDatabase -Server <DAGMemberinPrimarySite> -ActivateOnServer <DAGMemberinSecondSite>
+    ```
 
 4.  Montez les bases de données de boîtes aux lettres sur chaque membre du DAG dans le deuxième site en exécutant la commande suivante :
     
-        Get-MailboxDatabase <DAGMemberinSecondSite> | Mount-Database
+    ```powershell
+    Get-MailboxDatabase <DAGMemberinSecondSite> | Mount-Database
+    ```
 
 Retour au début
 
@@ -212,7 +228,7 @@ Le rôle serveur de boîtes aux lettres doit être le premier rôle commuté dan
     
     3.  Une fois les bases de données démontées, les URL du serveur d'accès au client doivent être déplacées du deuxième centre de données vers le centre de données principal. Pour cela, vous devez modifier l'enregistrement DNS des URL afin qu'il pointe vers le serveur d'accès au client ou le groupe de serveurs d'accès au client dans le centre de données principal. Le système réagira comme si un basculement de base de données s'était produit pour chaque base de données déplacée.
         
-        > [!NOTE]
+        > [!IMPORTANT]
         > Ne passez à l'étape suivante qu'une fois que les URL du serveur d'accès au client ont été déplacées et que les entrées du cache DNS et TTL ont expirée. L'activation des bases de données dans le centre de données principal avant le déplacement des URL du serveur d'accès au client vers le centre de données invalidera la configuration (par exemple, une base de données montée ne comportant aucun serveur d'accès au client dans son site Active Directory).
     
     4.  Étant donné que chacune des bases de données du centre de données principal est saine, elles peuvent être activées dans ce dernier en procédant à leur permutation. Cette opération est effectuée à l'aide de la cmdlet [Move-ActiveMailboxDatabase](https://technet.microsoft.com/fr-fr/library/dd298068\(v=exchg.150\)) pour chaque base de données à activer.

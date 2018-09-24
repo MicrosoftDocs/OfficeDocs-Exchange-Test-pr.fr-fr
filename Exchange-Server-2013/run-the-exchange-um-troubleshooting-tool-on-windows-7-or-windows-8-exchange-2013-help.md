@@ -27,11 +27,11 @@ L’outil de dépannage de la messagerie unifiée de Microsoft Exchange 2010 es
 
   - Assurez-vous que votre organisation Exchange 2010 ou Exchange 2013 remplit les conditions suivantes :
     
-      - Un plan de numérotation de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, voir [Créer un plan de numérotation de messagerie unifiée](create-a-um-dial-plan-exchange-2013-help.md).
+      - Un plan de numérotation de messagerie unifiée a été créé. Pour obtenir la procédure détaillée, voir [Créer un plan de numérotation de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan).
     
-      - Une stratégie de boîte aux lettres de messagerie unifiée a été créée. Pour obtenir la procédure détaillée, voir [Créer une stratégie de boîte aux lettres de messagerie unifiée](create-a-um-mailbox-policy-exchange-2013-help.md).
+      - Une stratégie de boîte aux lettres de messagerie unifiée a été créée. Pour obtenir la procédure détaillée, voir [Créer une stratégie de boîte aux lettres de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy).
     
-      - Une passerelle IP de messagerie unifiée a été créée. Pour obtenir la procédure détaillée, voir [Créer une passerelle IP de messagerie unifiée](create-a-um-ip-gateway-exchange-2013-help.md).
+      - Une passerelle IP de messagerie unifiée a été créée. Pour obtenir la procédure détaillée, voir [Créer une passerelle IP de messagerie unifiée](https://docs.microsoft.com/fr-fr/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway).
     
       - Un serveur de messagerie unifiée Exchange 2010 a été ajouté au plan de numérotation de messagerie unifiée. Si vous utilisez Exchange 2013 avec Lync Server, ajoutez tous les serveurs d’accès au client et de boîtes aux lettres aux plans de numérotation URI SIP. Pour obtenir la procédure détaillée, consultez la rubrique [Ajouter un serveur de messagerie unifiée au plan de numérotation](https://go.microsoft.com/fwlink/p/?linkid=313051) ou [Ajouter des serveurs de boîtes aux lettres et accès au Client à un plan de numérotation URI SIP](add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md).
 
@@ -51,7 +51,7 @@ L’outil de dépannage de la messagerie unifiée de Microsoft Exchange 2010 es
     
       - Installez l’outil. Pour plus d’informations, voir [Installer l’outil de dépannage de la messagerie unifiée Exchange](install-the-exchange-um-troubleshooting-tool-exchange-2013-help.md).
         
-        > [!NOTE]
+        > [!IMPORTANT]
         > Si vous envisagez d’utiliser l’outil de dépannage de la messagerie unifiée en mode <code>SIPClient</code>, plusieurs autres conditions doivent être satisfaites concernant Office Communications Server 2007 R2 ou Microsoft Lync Server. Pour plus d’informations, consultez les rubriques <a href="https://go.microsoft.com/fwlink/p/?linkid=311961">Liste de vérification : Déploiement d’Office Communications Server 2007 R2 et d’une messagerie unifiée Exchange 2010</a>.
 
 
@@ -69,21 +69,29 @@ L’outil de dépannage de la messagerie unifiée de Microsoft Exchange 2010 es
 
 3.  À l’invite de commandes Windows PowerShell, accédez au dossier dans lequel vous avez installé l’outil de dépannage de la messagerie unifiée et exécutez la commande ci-après.
     
-        C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -psconsolefile .\Microsoft.Exchange.UM.TroubleshootingToolsnapin.psc1 -noexit -command ". '.\Microsoft.Exchange.UM.TroubleshootingTool.ps1' "
+    ```powershell
+    C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -psconsolefile .\Microsoft.Exchange.UM.TroubleshootingToolsnapin.psc1 -noexit -command ". '.\Microsoft.Exchange.UM.TroubleshootingTool.ps1' "
+    ```
 
 4.  Si vous exécutez l’outil de dépannage de la messagerie unifiée sous Windows Vista, Windows 7 ou Windows 8, à l’invite de commandes Windows PowerShell, exécutez la commande ci-après.
     
-        Set-ExecutionPolicy RemoteSigned
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    ```
 
 5.  À partir du menu **Démarrer**, ouvrez l’**outil de dépannage de la messagerie unifiée Microsoft Exchange 2010**.
 
 6.  À l’invite de la fenêtre **Microsoft Exchange 2010 UM Troubleshooting Tool**, saisissez ce qui suit, puis appuyez sur la touche Entrée.
     
-        $cred=Get-Credential
+    ```powershell
+    $cred=Get-Credential
+    ```
 
 7.  Dans la fenêtre **Demande d’informations d’identification Windows PowerShell**, saisissez un nom d’utilisateur/de domaine et un mot de passe, puis cliquez sur **OK**.
 
 8.  Dans la fenêtre **Microsoft Exchange 2010 UM Troubleshooting Tool**, indiquez les paramètres de cmdlet nécessaires pour tester le flux d’appels. Par exemple :
     
-        Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
+    ```powershell
+    Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
+    ```
 

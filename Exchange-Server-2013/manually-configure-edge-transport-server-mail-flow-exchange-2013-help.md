@@ -65,11 +65,15 @@ Si vous décidez de partitionner le traitement du courrier entrant et sortant en
 
   - Pour le serveur de transport Edge sortant, exécutez la commande suivante sur le serveur de boîtes aux lettres.
     
-        New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $false -CreateInternetSendConnector $true
+    ```powershell
+    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $false -CreateInternetSendConnector $true
+    ```
 
   - Pour le serveur de transport Edge entrant, exécutez la commande suivante sur le serveur de boîtes aux lettres.
     
-        New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $true -CreateInternetSendConnector $false
+    ```powershell
+    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $true -CreateInternetSendConnector $false
+    ```
 
 ## Router le courrier électronique sortant vers un hôte actif
 
@@ -77,15 +81,19 @@ Si votre organisation Exchange route l’ensemble du courrier électronique sort
 
 Exécutez la commande suivante sur le serveur de boîtes aux lettres pour supprimer la création automatique du connecteur d’envoi vers Internet.
 
-    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInternetSendConnector $false
+```powershell
+New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInternetSendConnector $false
+```
 
 À la fin du processus d’abonnement Edge, créez manuellement un connecteur d’envoi vers Internet. Créez le connecteur d’envoi au sein de l’organisation Exchange et sélectionnez l’abonnement Edge comme serveur source pour le connecteur. Sélectionnez le type d’utilisation `Custom` et configurez un ou plusieurs hôtes actifs. Le nouveau connecteur d’envoi est répliqué dans l’instance AD LDS du serveur de transport Edge lors de la prochaine synchronisation des données de configuration par le service EdgeSync. Vous pouvez forcer la synchronisation EdgeSync immédiate en exécutant la cmdlet **Start-EdgeSynchronization** sur un serveur de boîtes aux lettres.
 
 Exemple : utilisation de l’environnement de ligne de commande Exchange Management Shell pour configurer un connecteur d’envoi pour un serveur de transport Edge abonné afin de router les messages vers tous les espaces d’adressage Internet via un hôte actif. Exécutez cette tâche sur un serveur de boîtes aux lettres dans l’organisation Exchange, et non sur le serveur de transport Edge.
 
-    New-SendConnector -Name "EdgeSync - Site-A to Internet" -Usage Custom -AddressSpaces SMTP:*;100 -DNSRoutingEnabled $false -SmartHosts 192.168.10.1 -SmartHostAuthMechanism None -SourceTransportServers EdgeSubscriptionName
+```powershell
+New-SendConnector -Name "EdgeSync - Site-A to Internet" -Usage Custom -AddressSpaces SMTP:*;100 -DNSRoutingEnabled $false -SmartHosts 192.168.10.1 -SmartHostAuthMechanism None -SourceTransportServers EdgeSubscriptionName
+```
 
-> [!NOTE]
+> [!IMPORTANT]
 > Aucun mécanisme d’authentification de l’hôte actif n’est spécifié dans cet exemple. Veillez à configurer le bon mécanisme d’authentification et d’indiquer toutes les informations d’identification nécessaires lors de la création du connecteur d’hôte actif dans votre propre organisation Exchange.
 
 

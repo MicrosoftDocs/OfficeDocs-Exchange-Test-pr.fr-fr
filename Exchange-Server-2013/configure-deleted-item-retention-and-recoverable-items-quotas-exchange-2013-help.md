@@ -63,7 +63,9 @@ Pour plus d’informations sur la rétention des éléments supprimés, le dossi
 
 Cet exemple illustre la configuration de la boîte aux lettres d’April Stewart pour conserver les éléments supprimés pendant 30 jours.
 
-    Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30
+```powershell
+Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)).
 
@@ -75,7 +77,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Cet exemple illustre la configuration d’un quota d’avertissement des éléments récupérables de 12 Go et d’un quota d’éléments récupérables de 15 Go pour la boîte aux lettres d’April Stewart.
 
-    Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -RecoverableItemsQuota 15GB -UseDatabaseQuotaDefaults $false
+```powershell
+Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -RecoverableItemsQuota 15GB -UseDatabaseQuotaDefaults $false
+```
 
 > [!NOTE]
 > Pour configurer une boîte aux lettres pour qu’elle utilise des quotas d’éléments récupérables différents de la base de données de boîtes aux lettres dans laquelle elle réside, vous devez définir le paramètre <em>UseDatabaseQuotaDefaults</em> à <code>$false</code>.
@@ -91,7 +95,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Cet exemple configure une période de rétention d’éléments supprimés de 10 jours pour la base de données de boîtes aux lettres MDB2.
 
-    Set-MailboxDatabase -Identity MDB2 -DeletedItemRetention 10
+```powershell
+Set-MailboxDatabase -Identity MDB2 -DeletedItemRetention 10
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-MailboxDatabase](https://technet.microsoft.com/fr-fr/library/bb123971\(v=exchg.150\)).
 
@@ -103,7 +109,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Cet exemple illustre la configuration d’un quota d’avertissements des éléments récupérables de 15 Go et d’un quota d’éléments récupérables de 20 Go sur la base de données de boîtes aux lettres MDB2.
 
-    Set-MailboxDatabase -Identity MDB2 -RecoverableItemsWarningQuota 15GB -RecoverableItemsQuota 20GB
+```powershell
+Set-MailboxDatabase -Identity MDB2 -RecoverableItemsWarningQuota 15GB -RecoverableItemsQuota 20GB
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-MailboxDatabase](https://technet.microsoft.com/fr-fr/library/bb123971\(v=exchg.150\)).
 

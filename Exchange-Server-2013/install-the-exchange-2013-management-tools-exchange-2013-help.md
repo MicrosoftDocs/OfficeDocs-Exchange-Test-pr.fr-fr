@@ -49,27 +49,19 @@ Pour des informations supplémentaires sur la gestion d'Exchange 2013, consulte
 
 3.  Lancez le Programme d'installation de Exchange 2013 en double-cliquant sur `Setup.exe`
     
-    > [!NOTE]
+    > [!IMPORTANT]  
     > Si le contrôle d'accès des utilisateurs est activé, vous devez cliquer avec le bouton droit sur <code>Setup.exe</code> et sélectionner <strong>Exécuter en tant qu'administrateur</strong>.
 
 
 4.  À la page **Vérifier les mises à jour**, indiquez si vous souhaitez que le Programme d'installation se connecte à Internet et télécharge les mises à jour du produit et de la sécurité pour Exchange 2013. Si vous sélectionnez **Se connecter à Internet et vérifier les mises à jour**, le Programme d'installation téléchargera les mises à jour et les appliquera avant de continuer. Si vous sélectionnez **Ne pas vérifier les mises à jour tout de suite**, vous pouvez télécharger et installer les mises à jour manuellement plus tard. Nous vous recommandons de télécharger et d'installer les mises à jour maintenant. Cliquez sur **Suivant** pour continuer.
 
-5.  
-    
-    La page **Introduction** lance l'installation d'Exchange dans votre organisation. Il vous guide à travers l'installation. Plusieurs liens vers un contenu de déploiement utile sont répertoriés. nous vous recommandons de cliquer sur ces liens avant de poursuivre l'installation. Cliquez sur **Suivant** pour continuer.
+5.  La page **Introduction** lance l'installation d'Exchange dans votre organisation. Il vous guide à travers l'installation. Plusieurs liens vers un contenu de déploiement utile sont répertoriés. nous vous recommandons de cliquer sur ces liens avant de poursuivre l'installation. Cliquez sur **Suivant** pour continuer.
 
-6.  
-    
-    Dans la page **Contrat de licence**, lisez les termes du contrat de licence. Si vous acceptez les termes, sélectionnez **J'accepte les termes du contrat de licence**, puis cliquez sur **Suivant**.
+6.  Dans la page **Contrat de licence**, lisez les termes du contrat de licence. Si vous acceptez les termes, sélectionnez **J'accepte les termes du contrat de licence**, puis cliquez sur **Suivant**.
 
-7.  
-    
-    dans la page **Paramètres recommandés**, indiquez si vous souhaitez utiliser les paramètres recommandés. Si vous sélectionnez l'option **Utiliser les paramètres recommandés**, Exchange enverra automatiquement des rapports d'erreurs et des informations sur votre matériel informatique et l'utilisation de Microsoft Exchange. Si vous sélectionnez l'option **Ne pas utiliser les paramètres recommandés**, ces paramètres restent désactivés. Toutefois, vous pouvez les activer à tout moment une fois l'installation terminée. Pour plus d'informations sur ces paramètres et l'utilisation des informations envoyées à Microsoft, cliquez sur **?**.
+7.  dans la page **Paramètres recommandés**, indiquez si vous souhaitez utiliser les paramètres recommandés. Si vous sélectionnez l'option **Utiliser les paramètres recommandés**, Exchange enverra automatiquement des rapports d'erreurs et des informations sur votre matériel informatique et l'utilisation de Microsoft Exchange. Si vous sélectionnez l'option **Ne pas utiliser les paramètres recommandés**, ces paramètres restent désactivés. Toutefois, vous pouvez les activer à tout moment une fois l'installation terminée. Pour plus d'informations sur ces paramètres et l'utilisation des informations envoyées à Microsoft, cliquez sur **?**.
 
-8.  
-    
-    À la page **Sélection des rôles serveur**, vérifiez que **Outils de gestion** est sélectionné.
+8.  À la page **Sélection des rôles serveur**, vérifiez que **Outils de gestion** est sélectionné.
     
     Sélectionnez **Installer automatiquement les rôles et les fonctionnalités Windows Server requis pour Exchange Server** pour que l'Assistant Installation installe les composants requis de Windows. Il peut s'avérer nécessaire de redémarrer l'ordinateur pour terminer l'installation de certaines fonctionnalités de Windows. Si vous ne sélectionnez pas cette option, vous devez installer les fonctionnalités Windows manuellement.
     
@@ -80,9 +72,7 @@ Pour des informations supplémentaires sur la gestion d'Exchange 2013, consulte
 
 9.  dans la page **Espace et emplacement d'installation**, acceptez l'emplacement d'installation par défaut ou cliquez sur **Parcourir** pour choisir un nouvel emplacement. Assurez-vous que l'emplacement sur lequel vous souhaitez installer Exchange dispose d'un espace disque suffisant. Cliquez sur **Suivant** pour continuer.
 
-10. 
-    
-    Si vous exécutez le programme d'installation d'Exchange 2013 pour la première fois dans votre organisation, entrez le nom de votre organisation Exchange à la page **Organisation Exchange**. Un nom d'organisation Exchange ne peut contenir que les caractères suivants :
+10. Si vous exécutez le programme d'installation d'Exchange 2013 pour la première fois dans votre organisation, entrez le nom de votre organisation Exchange à la page **Organisation Exchange**. Un nom d'organisation Exchange ne peut contenir que les caractères suivants :
     
       - A à Z
     
@@ -104,13 +94,9 @@ Pour des informations supplémentaires sur la gestion d'Exchange 2013, consulte
     
     Cliquez sur **Suivant** pour continuer.
 
-11. 
-    
-    Dans la page **Tests de préparation**, affichez l'état pour déterminer si les contrôles préalables de l'organisation et du rôle serveur ont été accomplis avec succès. Si ce n'est pas le cas, vous devez résoudre les erreurs signalées avant d'installer Exchange 2013. Il n'est pas nécessaire de quitter le programme d'installation lors de la résolution des erreurs relatives aux éléments requis. Une fois qu'une erreur signalée a été résolue, cliquez sur **Précédent**, puis sur **Suivant** pour exécuter à nouveau la vérification préalable. Veillez également à vérifier tous les avertissements signalés. Si tous les contrôles de préparation sont probants, cliquez sur **Suivant** pour installer Exchange 2013.
+11. Dans la page **Tests de préparation**, affichez l'état pour déterminer si les contrôles préalables de l'organisation et du rôle serveur ont été accomplis avec succès. Si ce n'est pas le cas, vous devez résoudre les erreurs signalées avant d'installer Exchange 2013. Il n'est pas nécessaire de quitter le programme d'installation lors de la résolution des erreurs relatives aux éléments requis. Une fois qu'une erreur signalée a été résolue, cliquez sur **Précédent**, puis sur **Suivant** pour exécuter à nouveau la vérification préalable. Veillez également à vérifier tous les avertissements signalés. Si tous les contrôles de préparation sont probants, cliquez sur **Suivant** pour installer Exchange 2013.
 
-12. 
-    
-    Dans la page **Achèvement**, cliquez sur **Terminer**.
+12. Dans la page **Achèvement**, cliquez sur **Terminer**.
 
 13. Redémarrez l'ordinateur une fois l'installation d'Exchange 2013 terminé.
 
@@ -122,10 +108,12 @@ Pour des informations supplémentaires sur la gestion d'Exchange 2013, consulte
 
 3.  Depuis l'invite de commandes, exécutez la commande suivante :
     
-    > [!NOTE]
+    > [!IMPORTANT]  
     > Si le contrôle de compte d'utilisateur est activé, vous devez exécuter<code>Setup.exe</code> à partir d'une invite de commandes élevée.
     
-        Setup.exe /Role:ManagementTools /IAcceptExchangeServerLicenseTerms
+    ```powershell
+    Setup.exe /Role:ManagementTools /IAcceptExchangeServerLicenseTerms
+    ```
 
 Pour plus d'informations, consultez la rubrique [Installation d’Exchange 2013 en mode sans assistance](install-exchange-2013-using-unattended-mode-exchange-2013-help.md).
 

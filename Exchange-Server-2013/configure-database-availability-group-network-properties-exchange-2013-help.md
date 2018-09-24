@@ -53,7 +53,9 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
 
 Cet exemple montre comment ajouter le sous-réseau 10.0.0.0 et le masque de sous-réseau 255.0.0.0 au réseau DAG MapiDagNetwork dans le groupe de disponibilité de base de données DAG1.
 
-    Set-DatabaseAvailabilityGroupNetwork -Subnets 10.0.0.0/8 -Identity DAG1\MapiDagNetwork
+```powershell
+Set-DatabaseAvailabilityGroupNetwork -Subnets 10.0.0.0/8 -Identity DAG1\MapiDagNetwork
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -61,7 +63,9 @@ Pour vérifier que vous avez bien configuré le réseau DAG, procédez comme sui
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les paramètres de configuration du réseau DAG et vérifiez que ce dernier a été correctement configuré :
     
-        Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```powershell
+    Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```
 
 ## Pour plus d'informations
 
