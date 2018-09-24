@@ -72,8 +72,8 @@ Pour vérifier que vous avez bien supprimé une copie de base de données de bo�
   - Dans l’environnement de ligne de commande Exchange Management, exécutez la commande suivante pour vérifier la suppression de la copie.
     
     ```powershell
-Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
-```
+    Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
+    ```
     
     La copie passive supprimée n'est plus répertoriée.
 

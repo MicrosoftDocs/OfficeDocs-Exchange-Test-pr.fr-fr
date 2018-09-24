@@ -231,7 +231,9 @@ Prenez les éléments suivants en considération lors de l'utilisation de strat�
 
   - Le déploiement de stratégies de carnet d'adresses n'empêche pas les utilisateurs d'une organisation virtuelle d'envoyer des courriers électroniques à des utilisateurs d'une autre organisation virtuelle. Si vous voulez empêcher les utilisateurs d'envoyer des courriers électroniques à d'autres organisations, nous vous recommandons de créer une règle de transport. Par exemple, pour créer une règle de transport destinée à empêcher les utilisateurs Contoso de recevoir des messages d’utilisateurs Fabrikam tout en permettant à un cadre supérieur de Fabrikam d’envoyer des messages à des utilisateurs Contoso, exécutez la commande d’environnement Shell suivante :
     
-        New-TransportRule -Name "StopFabrikamtoContosoMail" -FromMemberOf "AllFabrikamEmployees" -SentToMemberOf "AllContosoEmployees" -DeleteMessage -ExceptIfFrom seniorleadership@fabrikam.com
+    ```powershell
+    New-TransportRule -Name "StopFabrikamtoContosoMail" -FromMemberOf "AllFabrikamEmployees" -SentToMemberOf "AllContosoEmployees" -DeleteMessage -ExceptIfFrom seniorleadership@fabrikam.com
+    ```
 
   - Si vous voulez appliquer une fonctionnalité similaire à la stratégie de carnet d'adresses dans le client Lync, vous pouvez définir l'attribut `msRTCSIP-GroupingID` sur des objets utilisateur spécifiques. Pour plus d'informations, consultez la rubrique [PartitionByOU remplacé par msRTCSIP-GroupingID](https://go.microsoft.com/fwlink/p/?linkid=232306).
 
@@ -287,21 +289,29 @@ Quand vous créez les stratégies de carnet d'adresses, vous pouvez créer plusi
 
 Cet exemple concerne la liste d'adresses AL\_TAIL\_Users\_DGs. La liste d'adresses contient tous les utilisateurs et groupes de distribution où CustomAttribute15 est égal à TAIL.
 
-    New-AddressList -Name "AL_TAIL_Users_DGs" -RecipientFilter {((RecipientType -eq 'UserMailbox') -or (RecipientType -eq "MailUniversalDistributionGroup") -or (RecipientType -eq "DynamicDistributionGroup")) -and (CustomAttribute15 -eq "TAIL")}
+```powershell
+New-AddressList -Name "AL_TAIL_Users_DGs" -RecipientFilter {((RecipientType -eq 'UserMailbox') -or (RecipientType -eq "MailUniversalDistributionGroup") -or (RecipientType -eq "DynamicDistributionGroup")) -and (CustomAttribute15 -eq "TAIL")}
+```
 
 Pour plus d'informations sur la création de listes d'adresses à l'aide de filtres de destinataires, consultez la rubrique [Création d’une liste d’adresses à l’aide de filtres de destinataires](https://docs.microsoft.com/fr-fr/exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list).
 
 Afin de créer une stratégie de carnet d'adresses, vous devez fournir une liste d'adresses de salle. Si votre organisation n'a pas de boîtes aux lettres de ressources (par exemple, des boîtes aux lettres de salle ou d'équipement), nous vous recommandons de créer une liste d'adresses de salles vide. L'exemple suivant présente la création d'une liste d'adresses de salles vide, car il n'y a aucune boîte aux lettres de salles dans l'organisation.
 
-    New-AddressList -Name AL_BlankRoom -RecipientFilter {(Alias -ne $null) -and ((RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox'))}
+```powershell
+New-AddressList -Name AL_BlankRoom -RecipientFilter {(Alias -ne $null) -and ((RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox'))}
+```
 
 Toutefois, dans ce scénario, Fabrikam et Contoso ont toutes deux des boîtes aux lettres de salles. Cet exemple crée la liste de salles pour Fabrikam à l'aide d'un filtre de destinataires où CustomAttribute15 est égal à FAB.
 
-    New-AddressList -Name AL_FAB_Room -RecipientFilter {(Alias -ne $null) -and (CustomAttribute15 -eq "FAB")-and (RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox')}
+```powershell
+New-AddressList -Name AL_FAB_Room -RecipientFilter {(Alias -ne $null) -and (CustomAttribute15 -eq "FAB")-and (RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox')}
+```
 
 La liste d'adresses globale utilisée dans une stratégie de carnet d'adresses doit être un sur-ensemble des listes d'adresses. Ne créez pas de liste d'adresses globale contenant moins d'objets que dans une des listes d'adresses de la stratégie de carnet d'adresses ou que dans toutes ces listes. Cet exemple crée la liste d'adresses globale pour Tailspin Toys, qui inclut tous les destinataires existant dans les listes d'adresses et la liste d'adresses de salles.
 
-    New-GlobalAddressList -Name "GAL_TAIL" -RecipientFilter {(CustomAttribute15 -eq "TAIL")}
+```powershell
+New-GlobalAddressList -Name "GAL_TAIL" -RecipientFilter {(CustomAttribute15 -eq "TAIL")}
+```
 
 Pour plus d'informations, consultez la rubrique [Création d’une liste d’adresses globale](https://docs.microsoft.com/fr-fr/exchange/address-books/address-lists/create-global-address-list).
 
@@ -319,7 +329,9 @@ Pour plus d'informations, consultez la rubrique [Création d’un carnet d’adr
 
 Une fois que vous avez créé tous les objets requis, vous pouvez créer la stratégie de carnet d'adresses. Cet exemple crée la stratégie de carnet d'adresses nommée ABP\_TAIL.
 
-    New-AddressBookPolicy -Name "ABP_TAIL" -AddressLists "AL_TAIL_Users_DGs"," AL_TAIL_Contacts" -OfflineAddressBook "\OAB_TAIL" -GlobalAddressList "\GAL_TAIL" -RoomList "\AL_TAIL_Rooms"
+```powershell
+New-AddressBookPolicy -Name "ABP_TAIL" -AddressLists "AL_TAIL_Users_DGs"," AL_TAIL_Contacts" -OfflineAddressBook "\OAB_TAIL" -GlobalAddressList "\GAL_TAIL" -RoomList "\AL_TAIL_Rooms"
+```
 
 Pour plus d'informations, consultez la rubrique [Création d’une stratégie de carnet d’adresses](https://docs.microsoft.com/fr-fr/exchange/address-books/address-book-policies/create-an-address-book-policy).
 
@@ -329,7 +341,9 @@ L'attribution de la stratégie de carnet d'adresses à l'utilisateur est la dern
 
 Cet exemple attribue ABP\_FAB à toutes les boîtes aux lettres où CustomAttribute15 est égal à « FAB ».
 
-    Get-Mailbox -resultsize unlimited | where {$_.CustomAttribute15 -eq "TAIL"} | Set-Mailbox -AddressBookPolicy "ABP_TAIL"
+```powershell
+Get-Mailbox -resultsize unlimited | where {$_.CustomAttribute15 -eq "TAIL"} | Set-Mailbox -AddressBookPolicy "ABP_TAIL"
+```
 
 Pour plus d'informations, consultez la rubrique [Attribuer une stratégie de carnet d’adresses à des utilisateurs de messagerie](https://docs.microsoft.com/fr-fr/exchange/address-books/address-book-policies/assign-an-address-book-policy-to-mail-users).
 

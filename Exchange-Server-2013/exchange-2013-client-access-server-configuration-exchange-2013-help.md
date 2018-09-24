@@ -33,11 +33,15 @@ Vous pouvez configurer plusieurs paramètres dans les répertoires virtuels pour
     
     Pour configurer Outlook Anywhere avec une URL unique pour la connectivité, vous devez indiquer le nom d'hôte, si SSL est requis et un package d'authentification à l'aide de la commande suivante dans Exchange Management Shell :
     
-        Get-OutlookAnywhere | Set-OutlookAnywhere -InternalHostname "internalServer.contoso.com" -InternalClientAuthenticationMethod Ntlm -InternalClientsRequireSsl $true -IISAuthenticationMethods Negotiate,NTLM,Basic
+    ```powershell
+    Get-OutlookAnywhere | Set-OutlookAnywhere -InternalHostname "internalServer.contoso.com" -InternalClientAuthenticationMethod Ntlm -InternalClientsRequireSsl $true -IISAuthenticationMethods Negotiate,NTLM,Basic
+    ```
     
     Vous pouvez également indiquer un point de terminaison accessible en externe en utilisant la commande suivante dans Exchange Management Shell :
     
-        Get-OutlookAnywhere | Set-OutlookAnywhere -InternalHostname "internalServer.contoso.com" -InternalClientAuthenticationMethod Ntlm -InternalClientsRequireSsl $true -ExternalHostname "externalServer.company.com" -ExternalClientAuthenticationMethod Basic -ExternalClientsRequireSsl $true -IISAuthenticationMethods Negotiate,NTLM,Basic
+    ```powershell
+    Get-OutlookAnywhere | Set-OutlookAnywhere -InternalHostname "internalServer.contoso.com" -InternalClientAuthenticationMethod Ntlm -InternalClientsRequireSsl $true -ExternalHostname "externalServer.company.com" -ExternalClientAuthenticationMethod Basic -ExternalClientsRequireSsl $true -IISAuthenticationMethods Negotiate,NTLM,Basic
+    ```
     
     > [!TIP]  
     > Bien qu'Exchange 2013 prenne en charge Negotiate pour l'authentification HTTP Outlook Anywhere, vous ne devez l'utiliser que lorsque tous les serveurs de l'environnement exécutent Exchange 2013.
@@ -45,19 +49,27 @@ Vous pouvez configurer plusieurs paramètres dans les répertoires virtuels pour
 
   - Pour configurer Exchange ActiveSync, exécutez la commande suivante.
     
-        Set-ActiveSyncVirtualDirectory -Identity "<CAS2013>\Microsoft-Server-ActiveSync (Default Web Site)" -ExternalUrl "https://mail.contoso.com/Microsoft-Server-ActiveSync"
+    ```powershell
+    Set-ActiveSyncVirtualDirectory -Identity "<CAS2013>\Microsoft-Server-ActiveSync (Default Web Site)" -ExternalUrl "https://mail.contoso.com/Microsoft-Server-ActiveSync"
+    ```
 
   - Pour configurer le répertoire virtuel des services web Exchange, exécutez la commande suivante.
     
-        Set-WebServicesVirtualDirectory -Identity "<CAS2013>\EWS (Default Web Site)" -ExternalUrl https://mail.contoso.com/EWS/Exchange.asmx
+    ```powershell
+    Set-WebServicesVirtualDirectory -Identity "<CAS2013>\EWS (Default Web Site)" -ExternalUrl https://mail.contoso.com/EWS/Exchange.asmx
+    ```
 
   - Pour configurer le carnet d'adresses en mode hors connexion, exécutez la commande suivante.
     
-        Set-OABVirtualDirectory -Identity "<CAS2013>\OAB (Default Web Site)" -ExternalUrl "https://mail.contoso.com/OAB"
+    ```powershell
+    Set-OABVirtualDirectory -Identity "<CAS2013>\OAB (Default Web Site)" -ExternalUrl "https://mail.contoso.com/OAB"
+    ```
 
   - Pour configurer le point de connexion de service, exécutez la commande suivante.
     
-        Set-ClientAccessServer -Identity <CAS2013> -AutoDiscoverServiceInternalURI https://autodiscover.contoso.com/AutoDiscover/AutoDiscover.xml
+    ```powershell
+    Set-ClientAccessServer -Identity <CAS2013> -AutoDiscoverServiceInternalURI https://autodiscover.contoso.com/AutoDiscover/AutoDiscover.xml
+    ```
 
 ## Mettre à niveau à partir d'un accès client Exchange 2007 et 2010
 
@@ -67,26 +79,28 @@ Vous devrez exécuter les commandes suivantes pour configurer les répertoires v
 
 1.  Pour configurer une URL externe pour Outlook Web App, exécutez la commande suivante dans Exchange Management Shell.
     
-        Set-OwaVirtualDirectory "<CAS2013>\OWA (Default Web Site)" -ExternalUrl https://mail.contoso.com/OWA
+    ```powershell
+    Set-OwaVirtualDirectory "<CAS2013>\OWA (Default Web Site)" -ExternalUrl https://mail.contoso.com/OWA
+    ```
     
     À l'invite de commande, exécutez les commandes suivantes une fois que vous avez défini le répertoire virtuel Outlook Web App.
-    ```
+    
     ```powershell
-Net stop IISAdmin /y
-```
-    ```
-    ```
-    ```powershell
-Net start W3SVC
-```
+    Net stop IISAdmin /y
+    
+    Net start W3SVC
     ```
 2.  Pour configurer l'accès externe au CAE, exécutez la commande suivante dans Exchange Management Shell.
     
-        Set-EcpVirtualDirectory "<CAS2013>\ECP (Default Web Site)" -ExternalUrl https://mail.contoso.com/ECP -InternalURL https://mail.contoso.com/ECP 
+    ```powershell
+    Set-EcpVirtualDirectory "<CAS2013>\ECP (Default Web Site)" -ExternalUrl https://mail.contoso.com/ECP -InternalURL https://mail.contoso.com/ECP 
+    ```
 
 3.  Pour configurer le service de disponibilité, exécutez la commande suivante dans Exchange Management Shell.
     
-        Set-WebServicesVirtualDirectory -Identity "<CAS2013>\EWS (Default Web Site)" -ExternalURL https://mail.contoso.com/EWS/Exchange.asmx
+    ```powershell
+    Set-WebServicesVirtualDirectory -Identity "<CAS2013>\EWS (Default Web Site)" -ExternalURL https://mail.contoso.com/EWS/Exchange.asmx
+    ```
 
 Pour vérifier que l’URL externe a été correctement configurée pour Exchange ActiveSync ou Outlook Web App, vous pouvez utiliser l’analyseur de connectivité à distance, un outil web gratuit fourni par Microsoft. Vous trouverez l’analyseur de connectivité à distance [ici](http://go.microsoft.com/fwlink/?linkid=154308).
 
@@ -100,9 +114,13 @@ Vous devrez exécuter les commandes suivantes pour configurer les répertoires v
 
   - Pour configurer l'URL externe sur le répertoire virtuel Exchange ActiveSync, exécutez la commande suivante dans Exchange Management Shell.
     
-        Set-ActiveSyncVirtualDirectory -Identity "<CAS2007>\Microsoft-Server-ActiveSync (Default Web Site)" -ExternalUrl https://mail.contoso.com/Microsoft-Server-ActiveSync
+    ```powershell
+    Set-ActiveSyncVirtualDirectory -Identity "<CAS2007>\Microsoft-Server-ActiveSync (Default Web Site)" -ExternalUrl https://mail.contoso.com/Microsoft-Server-ActiveSync
+    ```
 
   - Pour configurer l’URL externe sur le répertoire virtuel Outlook Web App, exécutez la commande suivante dans Exchange Management Shell.
     
-        Set-OwaVirtualDirectory -Identity "<CAS2007>\owa (Default Web Site)" -ExternalUrl https://legacy.contoso.com/owa
+    ```powershell
+    Set-OwaVirtualDirectory -Identity "<CAS2007>\owa (Default Web Site)" -ExternalUrl https://legacy.contoso.com/owa
+    ```
 

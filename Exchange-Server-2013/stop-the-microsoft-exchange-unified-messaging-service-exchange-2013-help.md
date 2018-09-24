@@ -54,6 +54,6 @@ Pour d'autres tâches de gestion relatives aux serveurs de boîtes aux lettres, 
 2.  Dans la zone **Ouvrir**, entrez la commande suivante, puis appuyez sur Entrée.
     
     ```powershell
-net stop MSExchangeUM
-```
+    net stop MSExchangeUM
+    ```
 

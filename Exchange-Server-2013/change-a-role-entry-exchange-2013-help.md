@@ -57,11 +57,15 @@ Pour ajouter des paramètres à une entrée de rôle, spécifiez les paramètres
 
 Pour ajouter des paramètres à une entrée de rôle, utilisez la syntaxe suivante.
 
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter
+```powershell
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter
+```
 
 Cet exemple indique comment ajouter les paramètres *EmailAddresses* et *Type* à la cmdlet **Set-Mailbox** du rôle Administrateurs des destinataires.
 
-    Set-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" -Parameters EmailAddresses, Type -AddParameter
+```powershell
+Set-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" -Parameters EmailAddresses, Type -AddParameter
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ManagementRoleEntry](https://technet.microsoft.com/fr-fr/library/dd351162\(v=exchg.150\)).
 
@@ -71,11 +75,15 @@ Pour supprimer des paramètres d’une entrée de rôle, spécifiez les paramèt
 
 Pour supprimer des paramètres d’une entrée de rôle, utilisez la syntaxe suivante.
 
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter
+```powershell
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter
+```
 
 Cet exemple indique comment supprimer les paramètres *Port*, *ProtocolLoggingLevel* et *SmartHostAuthMechanism* de la cmdlet **Set-SendConnector** du rôle Administrateurs de serveur de niveau 1.
 
-    Set-ManagementRoleEntry "Tier 1 Server Administrators\Set-SendConnector" -Parameters Port, ProtocolLoggingLevel, SmartHostAuthMechanism -RemoveParameter
+```powershell
+Set-ManagementRoleEntry "Tier 1 Server Administrators\Set-SendConnector" -Parameters Port, ProtocolLoggingLevel, SmartHostAuthMechanism -RemoveParameter
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ManagementRoleEntry](https://technet.microsoft.com/fr-fr/library/dd351162\(v=exchg.150\)).
 
@@ -91,11 +99,15 @@ La suppression globale des paramètres dans une entrée de rôle est utile si se
 
 Pour supprimer des paramètres d’une entrée de rôle, utilisez la syntaxe suivante.
 
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters $Null 
+```powershell
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters $Null 
+```
 
 Cet exemple indique comment supprimer tous les paramètres de la cmdlet **Set-CASMailbox** du rôle Administrateurs des destinataires.
 
-    Set-ManagementRoleEntry "Recipient Administrators\Set-CASMailbox" -Parameters $Null 
+```powershell
+Set-ManagementRoleEntry "Recipient Administrators\Set-CASMailbox" -Parameters $Null 
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ManagementRoleEntry](https://technet.microsoft.com/fr-fr/library/dd351162\(v=exchg.150\)).
 
@@ -105,11 +117,15 @@ Si vous souhaitez inclure uniquement un ensemble spécifique de paramètres dans
 
 Pour spécifier un ensemble spécifique de paramètres, utilisez la syntaxe suivante.
 
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
+```powershell
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
+```
 
 Cet exemple indique comment inclure uniquement les paramètres *Identity*, *DisplayName*, *MissedCallNotificationEnabled* et *PersonalAuthAttendantEnabled* dans la cmdlet **Set-UMMailbox** du rôle Destinataires à Seattle.
 
-    Set-ManagementRoleEntry "Seattle Mail Recipients\Set-UMMailbox" -Parameters Identity, DisplayName, MissedCallNotificationEnabled, PersonalAutoAttendantEnabled
+```powershell
+Set-ManagementRoleEntry "Seattle Mail Recipients\Set-UMMailbox" -Parameters Identity, DisplayName, MissedCallNotificationEnabled, PersonalAutoAttendantEnabled
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ManagementRoleEntry](https://technet.microsoft.com/fr-fr/library/dd351162\(v=exchg.150\)).
 

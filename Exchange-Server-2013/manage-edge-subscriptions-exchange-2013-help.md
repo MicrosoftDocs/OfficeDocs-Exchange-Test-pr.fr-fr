@@ -72,26 +72,26 @@ Après avoir supprimé l’abonnement Edge, la synchronisation des informations
 1.  Pour supprimer l’abonnement Edge du serveur de transport Edge, utilisez la syntaxe suivante.
     
     ```powershell
-Remove-EdgeSubscription <EdgeTransportServerIdentity>
-```
+    Remove-EdgeSubscription <EdgeTransportServerIdentity>
+    ```
     
     Par exemple, pour supprimer l’abonnement Edge sur le serveur de transport Edge nommé Edge01, exécutez la commande suivante.
     
     ```powershell
-Remove-EdgeSubscription Edge01
-```
+    Remove-EdgeSubscription Edge01
+    ```
 
 2.  Pour supprimer l’abonnement Edge du serveur de boîtes aux lettres, utilisez la syntaxe suivante.
     
     ```powershell
-Remove-EdgeSubscription <MailboxServerIdentity>
-```
+    Remove-EdgeSubscription <MailboxServerIdentity>
+    ```
     
     Par exemple, pour supprimer l’abonnement Edge sur le serveur de boîtes aux lettres nommé Mailbox01, exécutez la commande suivante.
     
     ```powershell
-Remove-EdgeSubscription Mailbox01
-```
+    Remove-EdgeSubscription Mailbox01
+    ```
 
 Vous devrez supprimer l’abonnement Edge si :
 
@@ -147,7 +147,9 @@ Une synchronisation EdgeSync manuelle réinitialise la planification de la synch
 
 Pour exécuter EdgeSync manuellement, utilisez la syntaxe suivante.
 
-    Start-EdgeSynchronization [-Server <MailboxServerIdentity>] [-TargetServer <EdgeTransportServerIdentity> [-ForceFullSync]
+```powershell
+Start-EdgeSynchronization [-Server <MailboxServerIdentity>] [-TargetServer <EdgeTransportServerIdentity> [-ForceFullSync]
+```
 
 L’exemple suivant démarre EdgeSync avec les options suivantes :
 

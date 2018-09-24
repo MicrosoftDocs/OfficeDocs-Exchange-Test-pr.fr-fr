@@ -176,7 +176,9 @@ Cet exemple bloque l’accès à la boîte aux lettres d’un serveur d’accès
 > Les valeurs utilisées avec le paramètre <em>BlockedClientVersions</em> sont des exemples. Vous pouvez déterminer les versions correctes du logiciel client en analysant les fichiers journaux d’accès au client RPC situés dans <code>%ExchangeInstallPath%Logging\RPC Client Access</code>.
 
 
-    Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"
+```powershell
+Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"
+```
 
 Pour obtenir une définition détaillée de la syntaxe et des paramètres, voir [Set-RpcClientAccess](https://technet.microsoft.com/fr-fr/library/dd351072\(v=exchg.150\)).
 

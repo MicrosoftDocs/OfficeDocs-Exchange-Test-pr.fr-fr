@@ -82,8 +82,8 @@ Pour vérifier que vous avez terminé avec succès la migration, procédez comme
   - À partir du Shell, exécutez la commande suivante pour récupérer les informations de déplacement des boîtes aux lettres.
     
     ```powershell
-Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
-```
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](https://technet.microsoft.com/fr-fr/library/jj218695\(v=exchg.150\)).
 
@@ -106,13 +106,10 @@ Connectez-vous au CAE et effectuez les opérations suivantes :
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour créer une demande de déplacement par lot
 
 Cet exemple crée un lot de migration pour un déplacement local, dans lequel les boîtes aux lettres du fichier .csv spécifié sont déplacées vers une base de données de boîtes aux lettres différente. Ce fichier .csv affiche une seule colonne qui contient l'adresse de messagerie de chaque boîte aux lettres à déplacer. L'en-tête de cette colonne doit être nommé **EmailAddress**. Dans cet exemple, le lot de migration doit être démarré manuellement via la cmdlet **Start-MigrationBatch** ou dans le CAE. Sinon, vous pouvez utiliser le paramètre *AutoStart* pour démarrer le lot de migration automatiquement.
-```
-    New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"
-```
-```
+
 ```powershell
+New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"
 Start-MigrationBatch -Identity LocalMove1
-```
 ```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [New-MigrationBatch](https://technet.microsoft.com/fr-fr/library/jj219166\(v=exchg.150\)) et [Start-MigrationBatch](https://technet.microsoft.com/fr-fr/library/jj219165\(v=exchg.150\)).
@@ -126,8 +123,8 @@ Pour vérifier que vous avez terminé avec succès la migration, procédez comme
   - À partir du Shell, exécutez la commande suivante pour récupérer les informations de déplacement des boîtes aux lettres.
     
     ```powershell
-Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
-```
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](https://technet.microsoft.com/fr-fr/library/jj218695\(v=exchg.150\)).
 
@@ -164,20 +161,21 @@ Pour vérifier que vous avez terminé avec succès la migration, procédez comme
   - À partir du Shell, exécutez la commande suivante pour récupérer les informations de déplacement des boîtes aux lettres.
     
     ```powershell
-Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
-```
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](https://technet.microsoft.com/fr-fr/library/jj218695\(v=exchg.150\)).
 
 ## Créer un déplacement inter-forêts à l'aide d'un fichier de lot .csv
 
 Cet exemple permet de configurer le point de terminaison de migration, puis de créer un déplacement par lot inter-forêts de la forêt source à la forêt cible, à l'aide d'un fichier .csv.
+
+```powershell
+New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith) 
+$csvData=[System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\batch.csv")
+New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name FabrikamMerger -SourceEndpoint Fabrikam -TargetDeliveryDomain "mail.contoso.com"
 ```
-    New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith) 
-    
-    $csvData=[System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\batch.csv")
-    New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name FabrikamMerger -SourceEndpoint Fabrikam -TargetDeliveryDomain "mail.contoso.com"
-```
+
 Pour plus d'informations sur la préparation de votre forêt pour des déplacements inter-forêts, consultez les rubriques suivantes :
 
   - [Préparer les boîtes aux lettres pour les demandes de déplacement inter-forêts](prepare-mailboxes-for-cross-forest-move-requests-exchange-2013-help.md)
@@ -195,8 +193,8 @@ Pour vérifier que vous avez terminé avec succès la migration, procédez comme
   - À partir du Shell, exécutez la commande suivante pour récupérer les informations de déplacement des boîtes aux lettres.
     
     ```powershell
-Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
-```
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](https://technet.microsoft.com/fr-fr/library/jj218695\(v=exchg.150\)).
 
@@ -227,8 +225,8 @@ Pour vérifier que vous avez terminé avec succès la migration, procédez comme
   - À partir du Shell, exécutez la commande suivante pour récupérer les informations de déplacement des boîtes aux lettres.
     
     ```powershell
-Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
-```
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](https://technet.microsoft.com/fr-fr/library/jj218695\(v=exchg.150\)).
 
@@ -236,7 +234,9 @@ Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](ht
 
 Cet exemple déplace la boîte aux lettres principale et l'archive d'Ayla vers des bases de données distinctes. La boîte aux lettres principale est déplacée vers la base de données DB01 et l'archive vers la base de données DB03.
 
-    New-MoveRequest -Identity 'ayla@humongousinsurance.com' -TargetDatabase DB01 -ArchiveTargetDatabase -DB03
+```powershell
+New-MoveRequest -Identity 'ayla@humongousinsurance.com' -TargetDatabase DB01 -ArchiveTargetDatabase -DB03
+```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [New-MigrationBatch](https://technet.microsoft.com/fr-fr/library/jj219166\(v=exchg.150\)) et [New-MoveRequest](https://technet.microsoft.com/fr-fr/library/dd351123\(v=exchg.150\)).
 
@@ -247,8 +247,8 @@ Pour vérifier que vous avez terminé avec succès la migration, procédez comme
   - À partir du Shell, exécutez la commande suivante pour récupérer les informations de déplacement des boîtes aux lettres.
     
     ```powershell
-Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
-```
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](https://technet.microsoft.com/fr-fr/library/jj218695\(v=exchg.150\)).
 
@@ -268,7 +268,9 @@ Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](ht
 
 Cet exemple déplace la boîte aux lettres principale de Lisa vers la base de données de boîtes aux lettres DB01 et définit la limite d'éléments incorrects sur `100`. Pour définir une limite élevée d'éléments incorrects, vous devez utiliser le paramètre *AcceptLargeDataLoss*.
 
-    New-MoveRequest -Identity 'Lisa' -PrimaryOnly -TargetDatabase "DB01" -BadItemLimit 100 -AcceptLargeDataLoss
+```powershell
+New-MoveRequest -Identity 'Lisa' -PrimaryOnly -TargetDatabase "DB01" -BadItemLimit 100 -AcceptLargeDataLoss
+```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [New-MigrationBatch](https://technet.microsoft.com/fr-fr/library/jj219166\(v=exchg.150\)) et [New-MoveRequest](https://technet.microsoft.com/fr-fr/library/dd351123\(v=exchg.150\)).
 
@@ -279,8 +281,8 @@ Pour vérifier que vous avez terminé avec succès la migration, procédez comme
   - À partir du Shell, exécutez la commande suivante pour récupérer les informations de déplacement des boîtes aux lettres.
     
     ```powershell
-Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
-```
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 Pour plus d'informations, consultez la rubrique [Get-MigrationUserStatistics](https://technet.microsoft.com/fr-fr/library/jj218695\(v=exchg.150\)).
 

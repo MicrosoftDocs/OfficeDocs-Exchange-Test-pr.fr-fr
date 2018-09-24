@@ -61,7 +61,9 @@ Utilisez la procédure suivante pour importer un modèle de stratégie DLP perso
 
 Cet exemple importe un fichier de modèle de stratégie DLP personnalisé dans le fichier C:\\My Documents\\DLP Backup.xml. Importation d’une collection de stratégies DLP à partir d’un fichier XML, supprime ou remplace toutes les stratégies DLP préexistants qui ont été définis dans votre organisation. Assurez-vous que vous disposez d’une sauvegarde de votre collection de stratégies DLP actuelle avant d’importer et remplacer vos stratégies DLP actuels.
 
-    Import-DlpPolicyCollection -FileData ([Byte[]]$(Get-Content -Path " C:\My Documents\DLP Backup.xml " -Encoding Byte -ReadCount 0))
+```powershell
+Import-DlpPolicyCollection -FileData ([Byte[]]$(Get-Content -Path " C:\My Documents\DLP Backup.xml " -Encoding Byte -ReadCount 0))
+```
 
 ## Pour plus d'informations
 

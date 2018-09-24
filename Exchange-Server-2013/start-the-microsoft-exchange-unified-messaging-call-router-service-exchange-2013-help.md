@@ -56,6 +56,6 @@ Pour les tâches de gestion supplémentaires relatives aux serveurs d'accès au 
 2.  Dans la zone **Ouvrir**, entrez la commande suivante, puis appuyez sur Entrée.
     
     ```powershell
-net start MSExchangeUMCR
-```
+    net start MSExchangeUMCR
+    ```
 

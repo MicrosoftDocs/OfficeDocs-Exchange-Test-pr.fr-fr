@@ -41,7 +41,9 @@ Pour utiliser l’environnement de ligne de commande Exchange Management Shell a
 
 Exécutez la commande suivante.
 
-    Test-OutlookConnectivity -ProbeIdentity 'OutlookMailboxDeepTestProbe' -MailboxId tony@contoso.com -Hostname contoso.com
+```powershell
+Test-OutlookConnectivity -ProbeIdentity 'OutlookMailboxDeepTestProbe' -MailboxId tony@contoso.com -Hostname contoso.com
+```
 
 > [!NOTE]
 > La valeur du paramètre <em>OutlookMailboxDeepTestProbe</em> teste la connectivité à partir du serveur de boîtes aux lettres. Pour tester la connectivité à partir du serveur d’accès au client, utilisez <em>OutlookMailboxCTPProbe</em> pour la valeur du paramètre <em>ProbeIdentity</em>.

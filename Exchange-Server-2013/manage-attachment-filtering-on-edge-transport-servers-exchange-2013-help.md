@@ -68,8 +68,8 @@ Pour vérifier que vous avez bien activé ou désactivé le filtrage des pièces
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-TransportAgent "Attachment Filtering Agent"
-```
+    Get-TransportAgent "Attachment Filtering Agent"
+    ```
 
 2.  Si la valeur de **Enabled** est `True`, le filtrage des pièces jointes est activé. Si la valeur est `False`, le filtrage des pièces jointes est désactivé.
 
@@ -101,7 +101,9 @@ Get-AttachmentFilteringEntry FileName:<FileName or FileNameExtension>
 
 Par exemple, pour afficher l’entrée d’extension de nom de fichier pour les pièces jointes au format JPEG, exécutez la commande suivante :
 
-    Get-AttachmentFilteringEntry FileName:*.jpg
+```powershell
+Get-AttachmentFilteringEntry FileName:*.jpg
+```
 
 ## Utiliser l’environnement Exchange Management Shell pour ajouter des entrées de filtrage des pièces jointes
 
@@ -125,7 +127,9 @@ Add-AttachmentFilterEntry -Name <FileName or FileNameExtension> -Type FileName
 
 L’exemple suivant filtre les pièces jointes portant l’extension de nom de fichier .jpg.
 
-    Add-AttachmentFilterEntry -Name *.jpg -Type FileName
+```powershell
+Add-AttachmentFilterEntry -Name *.jpg -Type FileName
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -134,8 +138,8 @@ Pour vérifier que vous avez bien ajouté une entrée de filtrage des pièces jo
 1.  Exécutez la commande suivante pour vérifier que l’entrée de filtrage existe.
     
     ```powershell
-Get-AttachmentFilterEntry | Format-Table
-```
+    Get-AttachmentFilterEntry | Format-Table
+    ```
 
 2.  Envoyez un message de test contenant une pièce jointe interdite à un destinataire interne à partir d’une boîte aux lettres externe et vérifiez que le message a bien été rejeté ou supprimé.
 
@@ -161,7 +165,9 @@ Remove-AttachmentFilterEntry FileName:<FileName or FileNameExtension>
 
 L’exemple suivant supprime l’entrée de nom de fichier pour l’extension de nom de fichier .jpg.
 
-    Remove-AttachmentFilterEntry FileName:*.jpg
+```powershell
+Remove-AttachmentFilterEntry FileName:*.jpg
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -170,8 +176,8 @@ Pour vérifier que vous avez bien supprimé une entrée de filtrage des pièces 
 1.  Exécutez la commande suivante pour vérifier que l’entrée de filtrage a bien été supprimée.
     
     ```powershell
-Get-AttachmentFilterEntry | Format-Table
-```
+    Get-AttachmentFilterEntry | Format-Table
+    ```
 
 2.  Envoyez un message de test contenant une pièce jointe autorisée à un destinataire interne à partir d’une boîte aux lettres externe et vérifiez que le message a bien été reçu avec la pièce jointe.
 
@@ -187,7 +193,9 @@ Get-AttachmentFilterListConfig
 
 Pour configurer l’action de filtrage des pièces jointes à appliquer lors de la détection d’une pièce jointe interdite dans un message, utilisez la syntaxe suivante :
 
-    Set-AttachmentFilterListConfig [-Action <Reject | Strip | SilentDelete>] [-RejectResponse "<Message text>"] [-AdminMessage "<Replacement file text>"] [-ExceptionConnectors <ConnectorGUID>]
+```powershell
+Set-AttachmentFilterListConfig [-Action <Reject | Strip | SilentDelete>] [-RejectResponse "<Message text>"] [-AdminMessage "<Replacement file text>"] [-ExceptionConnectors <ConnectorGUID>]
+```
 
 Cet exemple apporte les modifications suivantes à la configuration du filtrage des pièces jointes :
 
@@ -197,7 +205,9 @@ Cet exemple apporte les modifications suivantes à la configuration du filtrage 
 
 <!-- end list -->
 
-    Set-AttachmentFilterListConfig -Action Reject -RejectResponse "This message contains a prohibited attachment. Your message can't be delivered. Please resend the message without the attachment."
+```powershell
+Set-AttachmentFilterListConfig -Action Reject -RejectResponse "This message contains a prohibited attachment. Your message can't be delivered. Please resend the message without the attachment."
+```
 
 Pour plus d’informations, consultez la rubrique [Set-AttachmentFilterListConfig](https://technet.microsoft.com/fr-fr/library/bb123483\(v=exchg.150\)).
 

@@ -85,7 +85,9 @@ Pour vérifier que vous avez bien configuré les paramètres du journal de proto
 
 Pour activer ou désactiver l'enregistrement dans le journal de protocole sur un connecteur d'envoi ou de réception, exécutez la commande suivante :
 
-    <Set-SendConnector |Set-ReceiveConnector> <ConnectorIdentity> -ProtocolLoggingLevel <Verbose | None>
+```powershell
+<Set-SendConnector |Set-ReceiveConnector> <ConnectorIdentity> -ProtocolLoggingLevel <Verbose | None>
+```
 
 Cet exemple active l'enregistrement dans le journal de protocole pour le connecteur de réception nommé Connection de Contoso.com.
 
@@ -99,7 +101,7 @@ Pour vérifier que vous avez bien activé ou désactivé l'enregistrement dans l
 
 1.  Dans l'environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante :
     
-    ```command line
+```command line
 <Get-SendConnector |Get-ReceiveConnector> | Format-List Name,ProtocolLoggingLevel
 ```
 
@@ -109,7 +111,9 @@ Pour vérifier que vous avez bien activé ou désactivé l'enregistrement dans l
 
 Pour activer ou désactiver l'enregistrement dans le journal de protocole sur le connecteur d'envoi intra-organisationnel implicite et invisible qui existe dans le service de transport sur un serveur de boîtes aux lettres et dans le service de transport frontal sur un serveur d'accès au client, exécutez la commande suivante :
 
-    <Set-TransportService | Set-FrontEndTransportService> -IntraOrgConnectorProtocolLoggingLevel <Verbose | None>
+```powershell
+<Set-TransportService | Set-FrontEndTransportService> -IntraOrgConnectorProtocolLoggingLevel <Verbose | None>
+```
 
 Cet exemple active l'enregistrement dans un journal de protocole sur le connecteur d'envoi intra-organisationnel dans le service de transport sur un serveur de boîtes aux lettres nommé Mailbox01.
 
@@ -123,7 +127,9 @@ Pour vérifier que vous avez bien activé ou désactivé l'enregistrement dans l
 
 1.  Dans l'environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante :
     
-        <Get-TransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List IntraOrgConnectorProtocolLoggingLevel
+    ```powershell
+    <Get-TransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List IntraOrgConnectorProtocolLoggingLevel
+    ```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 
@@ -147,7 +153,9 @@ Pour vérifier que vous avez bien activé ou désactivé l'enregistrement dans l
 
 1.  Dans l'environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante :
     
-        Get-MailboxTransportService <ServerIdentity> | Format-List MailboxDeliveryConnectorProtocolLoggingLevel
+    ```powershell
+    Get-MailboxTransportService <ServerIdentity> | Format-List MailboxDeliveryConnectorProtocolLoggingLevel
+    ```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 
@@ -155,7 +163,9 @@ Pour vérifier que vous avez bien activé ou désactivé l'enregistrement dans l
 
 Pour configurer les paramètres de journal de protocole, exécutez la commande suivante :
 
-    <Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ReceiveProtocolLogPath <LocalFilePath> -SendProtocolLogPath <LocalFilePath> -ReceiveProtocolLogMaxFileSize <Size> -SendProtocolLogMaxFileSize <Size> -ReceiveProtocolLogMaxDirectorySize <Size> -SendProtocolLogMaxDirectorySize <Size> -ReceiveProtocolLogMaxAge <dd.hh:mm:ss> -SendProtocolLogMaxAge <dd.hh:mm:ss>
+```powershell
+<Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ReceiveProtocolLogPath <LocalFilePath> -SendProtocolLogPath <LocalFilePath> -ReceiveProtocolLogMaxFileSize <Size> -SendProtocolLogMaxFileSize <Size> -ReceiveProtocolLogMaxDirectorySize <Size> -SendProtocolLogMaxDirectorySize <Size> -ReceiveProtocolLogMaxAge <dd.hh:mm:ss> -SendProtocolLogMaxAge <dd.hh:mm:ss>
+```
 
 Cet exemple définit les paramètres de journal de protocole suivants dans le service de transport sur un serveur de boîtes aux lettres nommé Mailbox01 :
 
@@ -169,7 +179,9 @@ Cet exemple définit les paramètres de journal de protocole suivants dans le se
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -ReceiveProtocolLogPath "D:\Hub Receive SMTP Log" -SendProtocolLogPath "D:\Hub Send SMTP Log" -ReceiveProtocolLogMaxFileSize 20MB -SendProtocolLogMaxFileSize 20MB -ReceiveProtocolLogMaxDirectorySize 400MB -SendProtocolLogMaxDirectorySize 400MB -ReceiveProtocolLogMaxAge 45.00:00:00 -SendProtocolLogMaxAge 45.00:00:00
+```powershell
+Set-TransportService Mailbox01 -ReceiveProtocolLogPath "D:\Hub Receive SMTP Log" -SendProtocolLogPath "D:\Hub Send SMTP Log" -ReceiveProtocolLogMaxFileSize 20MB -SendProtocolLogMaxFileSize 20MB -ReceiveProtocolLogMaxDirectorySize 400MB -SendProtocolLogMaxDirectorySize 400MB -ReceiveProtocolLogMaxAge 45.00:00:00 -SendProtocolLogMaxAge 45.00:00:00
+```
 
 > [!NOTE]
 > <ul>
@@ -183,7 +195,9 @@ Pour vérifier que les paramètres de journal de protocole sont configurés corr
 
 1.  Dans l'environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante :
     
-        <Get-TransportService | Get-MailboxTransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List SendConnectorProtocolLog*,ReceiveConnectorProtocolLog*
+    ```powershell
+    <Get-TransportService | Get-MailboxTransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List SendConnectorProtocolLog*,ReceiveConnectorProtocolLog
+    ```
 
 2.  Vérifiez que les valeurs affichées sont les valeurs que vous avez configurées.
 

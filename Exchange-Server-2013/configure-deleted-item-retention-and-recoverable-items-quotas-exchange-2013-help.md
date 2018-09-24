@@ -77,7 +77,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Cet exemple illustre la configuration d’un quota d’avertissement des éléments récupérables de 12 Go et d’un quota d’éléments récupérables de 15 Go pour la boîte aux lettres d’April Stewart.
 
-    Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -RecoverableItemsQuota 15GB -UseDatabaseQuotaDefaults $false
+```powershell
+Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -RecoverableItemsQuota 15GB -UseDatabaseQuotaDefaults $false
+```
 
 > [!NOTE]
 > Pour configurer une boîte aux lettres pour qu’elle utilise des quotas d’éléments récupérables différents de la base de données de boîtes aux lettres dans laquelle elle réside, vous devez définir le paramètre <em>UseDatabaseQuotaDefaults</em> à <code>$false</code>.

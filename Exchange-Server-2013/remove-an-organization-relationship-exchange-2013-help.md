@@ -58,8 +58,8 @@ Pour vérifier que la suppression a été effectuée correctement, procédez com
   - Exécutez la commande de l'environnement de ligne de commande suivante pour vérifier que les informations sur la relation d'organisation ont été supprimées.
     
     ```powershell
-Get-OrganizationRelationship | Format-List
-```
+    Get-OrganizationRelationship | Format-List
+    ```
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.

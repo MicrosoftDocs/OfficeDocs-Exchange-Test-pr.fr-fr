@@ -43,7 +43,9 @@ New-MailboxDatabase -Recovery -Name RDB1 -Server MBX2
 
 Cet exemple montre comment créer la base de données de récupération RDB2 sur le serveur de boîtes aux lettres MBX1 à l’aide d’un chemin d’accès personnalisé au fichier de la base de données et au dossier du journal.
 
-    New-MailboxDatabase -Recovery -Name RDB2 -Server MBX1 -EdbFilePath "C:\Recovery\RDB2\RDB2.EDB" -LogFolderPath "C:\Recovery\RDB2"
+```powershell
+New-MailboxDatabase -Recovery -Name RDB2 -Server MBX1 -EdbFilePath "C:\Recovery\RDB2\RDB2.EDB" -LogFolderPath "C:\Recovery\RDB2"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-MailboxDatabase](https://technet.microsoft.com/fr-fr/library/aa997976\(v=exchg.150\)).
 
@@ -54,8 +56,8 @@ Pour vérifier que vous avez bien créé une base de données de récupération,
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les informations de configuration de la base de données de récupération :
     
     ```powershell
-Get-MailboxDatabase <RecoveryDatabaseName> | Format-List
-```
+    Get-MailboxDatabase <RecoveryDatabaseName> | Format-List
+    ```
 
 ## Autres tâches
 

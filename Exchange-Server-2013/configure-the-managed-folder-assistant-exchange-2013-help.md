@@ -55,7 +55,9 @@ Pour vérifier que vous avez correctement configuré l'Assistant Dossier géré,
 
 Cette commande récupère tous les serveurs de boîtes aux lettres de l'organisation et affiche les propriétés du cycle de travail de l'Assistant Dossier géré de chaque serveur dans un tableau. Le commutateur *Auto* permet d'ajuster automatiquement la largeur de colonne.
 
-    Get-MailboxServer | Format-Table Name,ManagedFolderWorkCycle* -Auto
+```powershell
+Get-MailboxServer | Format-Table Name,ManagedFolderWorkCycle* -Auto
+```
 
 ## Utiliser l'environnement de ligne de commande pour démarrer l'Assistant Dossier géré
 

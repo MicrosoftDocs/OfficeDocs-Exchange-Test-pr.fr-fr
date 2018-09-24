@@ -88,36 +88,40 @@ Les modèles de stratégie DLP sont représentés sous forme de documents XML. U
 
 Les modèles de stratégie DLP sont exprimés comme des documents XML qui adhèrent au schéma suivant. Notez que le code XML respecte la casse. Par exemple, `dlpPolicyTemplates` fonctionnera, mais `DlpPolicyTemplates` ne fonctionnera pas.
 
-    <?xml version="1.0" encoding="UTF-8"?>
-    <dlpPolicyTemplates>
-      <dlpPolicyTemplate id="F7C29AEC-A52D-4502-9670-141424A83FAB" mode="Audit" state="Enabled" version="15.0.2.0">
-        <contentVersion>4</contentVersion>
-        <publisherName>Microsoft</publisherName>
-        <name>
-          <localizedString lang="en">PCI-DSS</localizedString>
-        </name>
-        <description>
-          <localizedString lang="en">Detects the presence of information subject to Payment Card Industry Data Security Standard (PCI-DSS) compliance requirements.</localizedString>
-        </description>
-        <keywords></keywords>
-        <ruleParameters></ruleParameters>
-        <ruleParameters/>
-        <policyCommands>
-          <!-- The contents below are applied/executed as rules directly in PS - -->
-          <commandBlock>
-            <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Outside" -DlpPolicy "%%DlpPolicyName%%" -SentToScope NotInOrganization -SetAuditSeverity High -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } -Comments "Monitors payment card information sent to outside the organization as part of the PCI-DSS DLP Policy."]]>
-          </commandBlock>
-          <commandBlock>
-            <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "%%DlpPolicyName%%" -Comments "Monitors payment card information sent inside the organization as part of the PCI-DSS DLP Policy." -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]>
-          </commandBlock>
-        </policyCommands>
-        <policyCommandsResources></policyCommandsResources>
-      </dlpPolicyTemplate>
-    </dlpPolicyTemplates>
+```XML
+<?xml version="1.0" encoding="UTF-8"?>
+<dlpPolicyTemplates>
+  <dlpPolicyTemplate id="F7C29AEC-A52D-4502-9670-141424A83FAB" mode="Audit" state="Enabled" version="15.0.2.0">
+    <contentVersion>4</contentVersion>
+    <publisherName>Microsoft</publisherName>
+    <name>
+      <localizedString lang="en">PCI-DSS</localizedString>
+    </name>
+    <description>
+      <localizedString lang="en">Detects the presence of information subject to Payment Card Industry Data Security Standard (PCI-DSS) compliance requirements.</localizedString>
+    </description>
+    <keywords></keywords>
+    <ruleParameters></ruleParameters>
+    <ruleParameters/>
+    <policyCommands>
+      <!-- The contents below are applied/executed as rules directly in PS - -->
+      <commandBlock>
+        <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Outside" -DlpPolicy "%%DlpPolicyName%%" -SentToScope NotInOrganization -SetAuditSeverity High -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } -Comments "Monitors payment card information sent to outside the organization as part of the PCI-DSS DLP Policy."]]>
+      </commandBlock>
+      <commandBlock>
+        <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "%%DlpPolicyName%%" -Comments "Monitors payment card information sent inside the organization as part of the PCI-DSS DLP Policy." -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]>
+      </commandBlock>
+    </policyCommands>
+    <policyCommandsResources></policyCommandsResources>
+  </dlpPolicyTemplate>
+</dlpPolicyTemplates>
+```
 
 Si un paramètre inclus dans votre fichier XML pour tout élément comporte un espace, ce paramètre doit être mis entre guillemets pour fonctionner correctement. Dans l'exemple ci-dessous, le paramètre qui suit `-SentToScope` est acceptable et n'est pas entre guillemets car il s'agit d'une chaîne de caractères continue sans espace. En revanche, le paramètre fourni pour –`Comments` n'apparaîtra pas dans le centre d'administration Exchange, car il n'est pas entre guillemets alors qu'il comporte des espaces.
 
-    <CommandBlock><![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "PCI-DSS" -Comments Monitors payment card information sent inside the organization -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]> </CommandBlock>
+```XML
+<CommandBlock><![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "PCI-DSS" -Comments Monitors payment card information sent inside the organization -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]> </CommandBlock>
+```
 
 ## Élément localizedString
 
@@ -225,15 +229,17 @@ Les éléments enfants incluent la séquence d'éléments suivante.
 
 Cette partie du modèle de stratégie contient la liste des commandes Exchange Management Shell utilisées pour instancier la définition de la stratégie. Le processus d'importation exécutera chaque commande dans le cadre du processus d'instanciation. Vous trouverez ici des exemples de commandes de stratégie.
 
-    <PolicyCommands>
-        <!-- The contents below are applied/executed as rules directly in PS - -->
-          <CommandBlock> <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Outside" -DlpPolicy "PCI-DSS" -SentToScope NotInOrganization -SetAuditSeverity High -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } -Comments "Monitors payment card information sent to outside the organization as part of the PCI-DSS DLP policy."]]></CommandBlock>
-          <CommandBlock><![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "PCI-DSS" -Comments "Monitors payment card information sent inside the organization as part of the PCI-DSS DLP policy." -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]> </CommandBlock>
-      </PolicyCommands> 
+```powershell
+<PolicyCommands>
+    <!-- The contents below are applied/executed as rules directly in PS - -->
+      <CommandBlock> <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Outside" -DlpPolicy "PCI-DSS" -SentToScope NotInOrganization -SetAuditSeverity High -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } -Comments "Monitors payment card information sent to outside the organization as part of the PCI-DSS DLP policy."]]></CommandBlock>
+      <CommandBlock><![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "PCI-DSS" -Comments "Monitors payment card information sent inside the organization as part of the PCI-DSS DLP policy." -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]> </CommandBlock>
+  </PolicyCommands>
+  ``` 
 
 Le format des cmdlets correspond à la syntaxe standard des cmdlets Exchange Management Shell pour les cmdlets utilisées. Les commandes sont exécutées dans l'ordre. Chaque nœud de commande peut contenir un bloc de script composé de plusieurs commandes. L'exemple ci-après illustre l'incorporation d'un module de règles de classification à l'intérieur d'un modèle de stratégie DLP, ainsi que l'installation du module de règles dans le cadre du processus de création de stratégie. Le module de règles de classification est incorporé dans le modèle de stratégie, puis transmis en tant que paramètre vers la cmdlet du modèle :
 
-``` 
+```powershell
 <CommandBlock>
   <![CDATA[
 $rulePack = [system.Text.Encoding]::Unicode.GetBytes('<?xml version="1.0" encoding="utf-16"?>
@@ -280,7 +286,6 @@ $rulePack = [system.Text.Encoding]::Unicode.GetBytes('<?xml version="1.0" encodi
 </RulePackage>
 
 ')
-
 
 New-ClassificationRuleCollection -FileData $rulePack 
 New-TransportRule -name "customEntity" -DlpPolicy "%%DlpPolicyName%%" -SentToScope NotInOrganization -MessageContainsDataClassifications @{Name="Confidential Information Rule"} -SetAuditSeverity High]]>

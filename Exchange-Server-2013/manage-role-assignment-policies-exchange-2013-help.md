@@ -63,7 +63,9 @@ New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign>
 
 Cet exemple crée la stratégie d’attribution explicite « Limited Mailbox Configuration » et lui attribue les rôles `MyBaseOptions`, `MyAddressInformation` et `MyDisplayName`.
 
-    New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName
+```powershell
+New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-RoleAssignmentPolicy](https://technet.microsoft.com/fr-fr/library/dd638101\(v=exchg.150\)).
 
@@ -77,7 +79,9 @@ New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign> -IsDe
 
 Cet exemple crée la stratégie d’attribution par défaut « Limited Mailbox Configuration » et lui attribue les rôles `MyBaseOptions`, `MyAddressInformation` et `MyDisplayName`.
 
-    New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName -IsDefault
+```powershell
+New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName -IsDefault
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-RoleAssignmentPolicy](https://technet.microsoft.com/fr-fr/library/dd638101\(v=exchg.150\)).
 
@@ -194,7 +198,8 @@ Cette procédure décrit l’utilisation du pipelining et de la cmdlet **Where**
 Cet exemple retourne la stratégie d’attribution par défaut.
 
 ```powershell
-Get-RoleAssignmentPolicy | Where {     Get-RoleAssignmentPolicy | Where { $_.IsDefault -eq $True }.IsDefault -eq $True }
+Get-RoleAssignmentPolicy | Where { ```powershell
+Get-RoleAssignmentPolicy | Where { $_.IsDefault -eq $True }.IsDefault -eq $True }
 ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123685\(v=exchg.150\)) ou [Get-RoleAssignmentPolicy](https://technet.microsoft.com/fr-fr/library/dd638195\(v=exchg.150\)).
@@ -212,14 +217,17 @@ Cette procédure décrit l’utilisation du pipelining et de la cmdlet **Where**
 Utilisez la syntaxe suivante.
 
 ```powershell
-Get-Mailbox | Where {     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<role assignment policy>" }.RoleAssignmentPolicy -Eq "<role assignment policy>" }
+Get-Mailbox | Where { ```powershell
+Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<role assignment policy>" }.RoleAssignmentPolicy -Eq "<role assignment policy>" }
 ```
 
 Cet exemple montre comment rechercher toutes les boîtes aux lettres auxquelles est affectée la stratégie Vancouver End Users.
 
 ```powershell
-Get-Mailbox | Where {     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Vancouver End Users" }.RoleAssignmentPolicy -Eq "Vancouver End Users" }
+Get-Mailbox | Where { ```powershell
+Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Vancouver End Users" }.RoleAssignmentPolicy -Eq "Vancouver End Users" }
 ```
+
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123685\(v=exchg.150\)) ou [Get-RoleAssignmentPolicy](https://technet.microsoft.com/fr-fr/library/dd638195\(v=exchg.150\)).
 
@@ -267,11 +275,15 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour créer une attribution de rôle de gestion entre un rôle et une stratégie d’attribution, utilisez la syntaxe suivante.
 
-    New-ManagementRoleAssignment -Name <role assignment name> -Role <role name> -Policy <assignment policy name>
+```powershell
+New-ManagementRoleAssignment -Name <role assignment name> -Role <role name> -Policy <assignment policy name>
+```
 
 Cet exemple montre comment créer l’attribution de rôle Utilisateurs de Seattle - Messagerie vocale entre le rôle Ma messagerie vocale et la stratégie d’attribution Utilisateurs de Seattle.
 
-    New-ManagementRoleAssignment -Name "Seattle Users - Voicemail" -Role MyVoicemail -Policy "Seattle Users"
+```powershell
+New-ManagementRoleAssignment -Name "Seattle Users - Voicemail" -Role MyVoicemail -Policy "Seattle Users"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335193\(v=exchg.150\)).
 
@@ -299,11 +311,15 @@ Cette procédure utilise le traitement en pipeline. Pour plus d’informations s
 
 Pour supprimer un rôle d’une stratégie d’attribution, utilisez la syntaxe suivante.
 
-    Get-ManagementRoleAssignment -RoleAssignee <assignment policy name> -Role <role name> | Remove-ManagementRoleAssignment
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <assignment policy name> -Role <role name> | Remove-ManagementRoleAssignment
+```
 
 Cet exemple supprime le rôle de gestion MyVoicemail qui permet aux utilisateurs de gérer les options de leur messagerie vocale, à partir de la stratégie d’attribution Seattle Users.
 
-    Get-ManagementRoleAssignment -RoleAssignee "Seattle Users" -Role MyVoicemail | Remove-ManagementRoleAssignment
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Seattle Users" -Role MyVoicemail | Remove-ManagementRoleAssignment
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd351205\(v=exchg.150\)).
 

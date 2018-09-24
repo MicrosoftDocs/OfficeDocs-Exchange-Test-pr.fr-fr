@@ -29,7 +29,9 @@ Vous pouvez afficher des marquages de courrier indésirable dans Microsoft Outlo
 
 Le rapport de blocage du courrier indésirable est un rapport de synthèse des résultats du filtrage du courrier indésirable qui a été appliqué à un message électronique. L’Agent de filtrage du contenu applique ce marquage à l’enveloppe de message sous la forme d’un en-tête X comme suit.
 
-    X-MS-Exchange-Organization-Antispam-Report: DV:<DATVersion>;CW:CustomList;PCL:PhishingVerdict <verdict>;P100:PhishingBlock;PP:Presolve;SID:SenderIDStatus <status>;TIME:<SendReceiveDelta>;MIME:MimeCompliance 
+```powershell
+X-MS-Exchange-Organization-Antispam-Report: DV:<DATVersion>;CW:CustomList;PCL:PhishingVerdict <verdict>;P100:PhishingBlock;PP:Presolve;SID:SenderIDStatus <status>;TIME:<SendReceiveDelta>;MIME:MimeCompliance
+```
 
 Le tableau suivant décrit les informations de filtre qui peuvent figurer dans un rapport de blocage du courrier indésirable.
 

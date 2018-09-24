@@ -79,7 +79,9 @@ Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessDirectory C:\DAG1DIR
 
 Cet exemple préconfigure un autre serveur témoin de CAS3 et un autre répertoire témoin de C:\\DAGFileShareWitnesses\\DAG1.contoso.com pour le DAG DAG1.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGFileShareWitnesses\DAG1.contoso.com -AlternateWitnessServer CAS3
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGFileShareWitnesses\DAG1.contoso.com -AlternateWitnessServer CAS3
+```
 
 Cet exemple montre comment configurer le groupe de disponibilité de base de données DAG1 afin d’utiliser DHCP pour obtenir une adresse IP.
 
@@ -122,8 +124,8 @@ Pour vérifier que vous avez bien configuré le groupe de disponibilité de base
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les paramètres de configuration du groupe de disponibilité de base de données et vérifier la bonne configuration du DAG :
     
     ```powershell
-Get-DatabaseAvailabilityGroup <DAGName> | Format-List
-```
+    Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```
 
 ## Pour plus d'informations
 

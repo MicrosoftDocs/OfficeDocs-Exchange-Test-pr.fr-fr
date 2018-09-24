@@ -108,18 +108,20 @@ Avant de commencer la migration, exécutez les étapes préalables suivantes.
       - Exécutez la commande suivante pour prendre un instantané de la structure du dossier source d’origine :
         
         ```powershell
-Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Legacy_PFStructure.xml
-```
+        Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Legacy_PFStructure.xml
+        ```
     
       - Exécutez la commande suivante pour prendre un instantané des statistiques du dossier public (nombre d’éléments, taille, et propriétaire) :
         
         ```powershell
-Get-PublicFolderStatistics | Export-CliXML C:\PFMigration\Legacy_PFStatistics.xml
-```
+        Get-PublicFolderStatistics | Export-CliXML C:\PFMigration\Legacy_PFStatistics.xml
+        ```
     
       - Exécutez la commande suivante pour prendre un instantané des autorisations :
         
-            Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML C:\PFMigration\Legacy_PFPerms.xml
+        ```powershell
+        Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML C:\PFMigration\Legacy_PFPerms.xml
+        ```
     
     Enregistrez les informations des commandes précédentes à des fins de comparaison une fois la migration terminée.
 
@@ -127,33 +129,37 @@ Get-PublicFolderStatistics | Export-CliXML C:\PFMigration\Legacy_PFStatistics.xm
     
     1.  Dans Exchange 2010, pour rechercher les dossiers publics dont le nom inclut une barre oblique inverse, exécutez la commande suivante :
         
-            Get-PublicFolderStatistics -ResultSize Unlimited | Where {($_.Name -like "*\*") -or ($_.Name -like "*/*") } | Format-List Name, Identity
+        ```powershell
+        Get-PublicFolderStatistics -ResultSize Unlimited | Where {($_.Name -like "*\*") -or ($_.Name -like "*/*") } | Format-List Name, Identity
+        ```
     
     2.  Dans Exchange 2007, pour rechercher les dossiers publics dont le nom inclut une barre oblique inverse, exécutez la commande suivante :
         
-            Get-PublicFolderDatabase | ForEach {Get-PublicFolderStatistics -Server $_.Server | Where {$_.Name -like "*\*"}}
+        ```powershell
+        Get-PublicFolderDatabase | ForEach {Get-PublicFolderStatistics -Server $_.Server | Where {$_.Name -like "*\*"}}
+        ```
     
     3.  Si des dossiers publics sont renvoyés, vous pouvez les renommer en exécutant la commande suivante :
         
         ```powershell
-Set-PublicFolder -Identity <public folder identity> -Name <new public folder name>
-```
+        Set-PublicFolder -Identity <public folder identity> -Name <new public folder name>
+        ```
 
 3.  Vérifiez qu’il n’existe aucun autre enregistrement d’une migration réussie.
     
     1.  L’exemple suivant vérifie l’état de la migration des dossiers publics.
         
         ```powershell
-Get-OrganizationConfig | Format-List PublicFoldersLockedforMigration, PublicFolderMigrationComplete
-```
+        Get-OrganizationConfig | Format-List PublicFoldersLockedforMigration, PublicFolderMigrationComplete
+        ```
         
         S’il y a eu une migration précédente, la valeur des propriétés *PublicFoldersLockedforMigration* ou *PublicFolderMigrationComplete* est `$true`. Utilisez la commande de l’étape 3b pour définir la valeur sur `$false`. Si la valeur est définie sur `$true`, votre demande de migration échoue.
     
     2.  Si l’état de la propriété *PublicFoldersLockedforMigration* ou *PublicFolderMigrationComplete* a la valeur `$true`, exécutez la commande suivante pour définir la valeur sur `$false` :
         
         ```powershell
-Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
-```
+        Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
+        ```
     
     > [!WARNING]
     > Après avoir redéfini ces propriétés, attendez qu’Exchange détecte les nouveaux paramètres. Cela peut prendre jusqu’à deux heures.
@@ -186,48 +192,55 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
     
     L’exemple suivant permet de détecter les demandes de migration en série existantes.
     
-        Get-PublicFolderMigrationRequest | Get-PublicFolderMigrationRequestStatistics -IncludeReport | Format-List
+    ```powershell
+    Get-PublicFolderMigrationRequest | Get-PublicFolderMigrationRequestStatistics -IncludeReport | Format-List
+    ```
     
     L’exemple suivant supprime toutes les demandes de migration en série de dossiers publics.
     
     ```powershell
-Get-PublicFolderMigrationRequest | Remove-PublicFolderMigrationRequest
-```
+    Get-PublicFolderMigrationRequest | Remove-PublicFolderMigrationRequest
+    ```
     
     L’exemple suivant permet de détecter toute demande de migration par lots.
     
-        $batch = Get-MigrationBatch | ?{$_.MigrationType.ToString() -eq "PublicFolder"}
+    ```powershell
+    $batch = Get-MigrationBatch | ?{$_.MigrationType.ToString() -eq "PublicFolder"}
+    ```
     
     L’exemple suivant supprime toutes les demandes de migration par lots de dossiers publics.
     
     ```powershell
-$batch | Remove-MigrationBatch -Confirm:$false
-```
+    $batch | Remove-MigrationBatch -Confirm:$false
+    ```
 
 2.  Vérifiez qu’aucun dossier public ou boîte aux lettres de dossiers publics n’existe sur les serveurs Exchange 2013.
     
     1.  Exécutez la commande suivante pour déterminer s’il existe des boîtes aux lettres de dossiers publics.
         
-            Get-Mailbox -PublicFolder 
+        ```powershell
+        Get-Mailbox -PublicFolder 
+        ```
     
     2.  Si la commande n’a pas renvoyé de boîte aux lettres de dossiers publics, passez à l’Step 3: Generate the CSV files. Si la commande a renvoyé des dossiers publics, exécutez la commande suivante pour voir s’il existe des dossiers publics :
         
         ```powershell
-Get-PublicFolder
-```
+        Get-PublicFolder
+        ```
     
     3.  Si vous avez des dossiers publics, exécutez les commandes PowerShell suivantes pour les supprimer. Assurez-vous que vous avez enregistré les informations présentes dans les dossiers publics.
         
         > [!NOTE]
         > Toutes les informations contenues dans les dossiers publics sont définitivement effacées lorsque vous les supprimez.
-        ```
-            Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
-        ```
-        ```
+        
         ```powershell
-Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
-```
+        Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
         ```
+        
+        ```powershell
+        Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+        ```
+        
 Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubriques suivantes :
 
   - [Get-MigrationBatch](https://technet.microsoft.com/fr-fr/library/jj219164\(v=exchg.150\))
@@ -252,7 +265,9 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
 
 1.  Sur le serveur Exchange hérité, exécutez le script `Export-PublicFolderStatistics.ps1` pour créer le fichier de mappage de nom de dossier à taille de dossier. Ce script doit être exécuté par un administrateur local. Le fichier contient deux colonnes : **FolderName** et **FolderSize**. Les valeurs de la colonne **FolderSize** s’affichent en octets. Par exemple, **\\PublicFolder01,10000**.
     
-        .\Export-PublicFolderStatistics.ps1  <Folder to size map path> <FQDN of source server>
+    ```powershell
+    .\Export-PublicFolderStatistics.ps1  <Folder to size map path> <FQDN of source server>
+    ```
     
       - *FQDN of source server* correspond au nom de domaine complet du serveur de boîtes aux lettres hébergeant la hiérarchie de dossiers publics.
     
@@ -263,7 +278,9 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
     > [!NOTE]
     > Si le nom d’un dossier public contient une barre oblique inverse <strong>\</strong>, les dossiers publics seront créés dans le dossier public parent. Nous vous recommandons d’examiner le fichier .csv et de modifier les noms contenant une barre oblique inverse.
     
-        .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
+    ```powershell
+    .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
+    ```
     
       - *Maximum mailbox size in bytes* correspond à la taille maximale que vous souhaitez définir pour les nouvelles boîtes aux lettres de dossiers publics. Lors de la définition de ce paramètre, veillez à permettre le développement de la boîte aux lettres de dossiers publics en faisant en sorte qu’elle ait suffisamment d’espace pour augmenter en taille.
     
@@ -275,7 +292,9 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubr
 
 1.  Exécutez la commande suivante pour créer les boîtes aux lettres de dossier public cible. Le script crée une boîte aux lettres cible pour chaque boîte aux lettres dans le fichier .csv que vous avez généré à l’étape 3, en exécutant le script PublicFoldertoMailboxMapGenerator.ps1.
     
-        .\Create-PublicFolderMailboxesForMigration.ps1 -FolderMappingCsv Mapping.csv -EstimatedNumberOfConcurrentUsers:<estimate>
+    ```powershell
+    .\Create-PublicFolderMailboxesForMigration.ps1 -FolderMappingCsv Mapping.csv -EstimatedNumberOfConcurrentUsers:<estimate>
+    ```
     
     *Mapping.csv* est le fichier généré par le script PublicFoldertoMailboxMapGenerator.ps1 à l’étape 3. Le nombre estimé de connexions utilisateur simultanées parcourant une hiérarchie de dossiers publics est généralement inférieur au nombre total d’utilisateurs dans une organisation.
 
@@ -291,37 +310,41 @@ Les étapes de migration des dossiers publics Exchange 2007 sont différentes d
 
 1.  Les dossiers publics système hérités comme OWAScratchPad et la sous-arborescence du dossier racine du schéma dans Exchange 2007 ne seront pas reconnus par Exchange 2013 et seront donc traités comme des éléments « incorrects ». Cela entraînera l’échec de la migration. Dans le cadre de la demande de migration, vous devez spécifier une valeur pour le paramètre `BadItemLimit`. Celle-ci dépend du nombre de bases de données de dossiers publics que vous possédez. Les commandes suivantes déterminent le nombre de bases de données de dossiers publics que vous possédez et calculent la limite `BadItemLimit` pour la demande de migration.
     
-       ```
+       ```powershell
         $PublicFolderDatabasesInOrg = @(Get-PublicFolderDatabase)
        ```
 
-       ```
+       ```powershell
         $BadItemLimitCount = 5 + ($PublicFolderDatabasesInOrg.Count -1)
        ``` 
 
 2.  Sur le serveur Exchange 2013, exécutez la commande suivante :
     
-        New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications> -BadItemLimit $BadItemLimitCount 
+    ```powershell
+    New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications> -BadItemLimit $BadItemLimitCount 
+    ```
 
 3.  Lancez la migration à l’aide de la commande suivante :
     
     ```powershell
-Start-MigrationBatch PFMigration
-```
+    Start-MigrationBatch PFMigration
+    ```
 
 **Migration des dossiers publics Exchange 2010**
 
 1.  Sur le serveur Exchange 2013, exécutez la commande suivante.
     
-        New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications> 
+    ```powershell
+    New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications> 
+    ```
     
     Le paramètre `NotificationEmails` est facultatif.
 
 2.  Lancez la migration à l’aide de la commande suivante :
     
     ```powershell
-Start-MigrationBatch PFMigration
-```
+    Start-MigrationBatch PFMigration
+    ```
     
     Ou :
     
@@ -397,7 +420,9 @@ Une fois la migration des dossiers publics finalisée, vous devez exécuter le t
 
 1.  Dans PowerShell, exécutez la commande suivante pour attribuer des boîtes aux lettres de test et utiliser une boîte aux lettres de dossiers publics récemment migrée comme boîte aux lettres de dossiers publics par défaut.
     
-        Set-Mailbox -Identity <Test User> -DefaultPublicFolderMailbox <Public Folder Mailbox Identity>
+    ```powershell
+    Set-Mailbox -Identity <Test User> -DefaultPublicFolderMailbox <Public Folder Mailbox Identity>
+    ```
 
 2.  Connectez-vous à Outlook 2007 (ou version ultérieure) avec l’utilisateur test identifié à l’étape précédente, puis exécutez les tests de dossiers publics suivants :
     
@@ -412,8 +437,8 @@ Une fois la migration des dossiers publics finalisée, vous devez exécuter le t
 3.  Si vous rencontrez des problèmes, consultez la section Roll back the migration plus loin dans cette rubrique. Si le contenu et la hiérarchie des dossiers publics sont acceptables et fonctionnent comme prévu, exécutez la commande suivante pour déverrouiller les dossiers publics pour l’ensemble des autres utilisateurs.
     
     ```powershell
-Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
-```
+    Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
+    ```
     
     > [!IMPORTANT]
     > N’utilisez pas le paramètre <em>IsExcludedFromServingHierarchy</em> après la validation de la migration initiale, car ce paramètre est utilisé par le service de gestion automatisée du stockage pour Exchange Online.
@@ -422,14 +447,14 @@ Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHier
 4.  Sur le serveur Exchange hérité, exécutez la commande suivante pour indiquer que la migration de dossiers publics est terminée :
     
     ```powershell
-Set-OrganizationConfig -PublicFolderMigrationComplete:$true
-```
+    Set-OrganizationConfig -PublicFolderMigrationComplete:$true
+    ```
 
 5.  Une fois que vous avez vérifié que la migration est terminée, exécutez la commande suivante :
     
     ```powershell
-Set-OrganizationConfig -PublicFoldersEnabled Local
-```
+    Set-OrganizationConfig -PublicFoldersEnabled Local
+    ```
 
 6.  Enfin, si vous souhaitez que les expéditeurs externes puissent envoyer des messages vers des dossiers publics migrés à extension messagerie, l’utilisateur **Anonyme** doit disposer au moins de l’autorisation **Création d’éléments**. Dans le cas contraire, les expéditeurs externes recevront une notification d’échec de remise et les messages ne seront pas transmis au dossier public migré à extension messagerie.
     
@@ -442,16 +467,20 @@ Set-OrganizationConfig -PublicFoldersEnabled Local
 1.  Exécutez la commande suivante pour prendre un instantané de la nouvelle structure de dossiers.
     
     ```powershell
-Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Cloud_PFStructure.xml
-```
+    Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Cloud_PFStructure.xml
+    ```
 
 2.  Exécutez la commande suivante pour prendre un instantané des statistiques de dossiers publics, telles que le nombre d’éléments, la taille et le propriétaire :
     
-        Get-PublicFolderStatistics -ResultSize Unlimited | Export-CliXML C:\PFMigration\Cloud_PFStatistics.xml
+    ```powershell
+    Get-PublicFolderStatistics -ResultSize Unlimited | Export-CliXML C:\PFMigration\Cloud_PFStatistics.xml
+    ```
 
 3.  Pour prendre un instantané des autorisations, exécutez la commande suivante :
     
-        Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML  C:\PFMigration\Cloud_PFPerms.xml
+    ```powershell
+    Get-PublicFolder -Recurse | Get-PublicFolderClientPermission | Select-Object Identity,User -ExpandProperty AccessRights | Export-CliXML  C:\PFMigration\Cloud_PFPerms.xml
+    ```
 
 ## Suppression des bases de données de dossiers publics des serveurs Exchange hérités
 
@@ -472,20 +501,22 @@ Si vous rencontrez des problèmes en relation avec la migration et devez réacti
 1.  Sur le serveur Exchange hérité, exécutez la commande suivante pour déverrouiller les dossiers publics Exchange hérités. Ce processus peut prendre plusieurs heures.
     
     ```powershell
-Set-OrganizationConfig -PublicFoldersLockedForMigration:$False
-```
+    Set-OrganizationConfig -PublicFoldersLockedForMigration:$False
+    ```
 
 2.  Sur le serveur Exchange 2013, exécutez les commandes suivantes pour supprimer les boîtes aux lettres de dossiers publics.
     
-        Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+    ```powershell
+    Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+    ```
         
     ```powershell
-Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
-```
+    Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+    ```
 
 3.  Sur le serveur Exchange hérité, exécutez la commande suivante pour régler l’indicateur `PublicFolderMigrationComplete` sur `$false`.
     
     ```powershell
-Set-OrganizationConfig -PublicFolderMigrationComplete:$False
-```
+    Set-OrganizationConfig -PublicFolderMigrationComplete:$False
+    ```
 

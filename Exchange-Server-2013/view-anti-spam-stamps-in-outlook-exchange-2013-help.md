@@ -40,10 +40,13 @@ Vous pouvez utiliser Microsoft Outlook pour afficher les cachets de blocage du c
 2.  Dans la section **Balises** de la barre d’outils du ruban, cliquez sur l’icône **Options** pour afficher la boîte de dialogue **Propriétés** du message.
 
 3.  Dans la boite de dialogue **Propriétés**, dans la section **En-têtes Internet**, utilisez la barre de défilement pour afficher les cachets de blocage du courrier indésirable comme le montre l’exemple suivant.
-    
-        X-MS-Exchange-Organization-PCL:7
-        X-MS-Exchange-Organization-SCL:6
-        X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
+   
+   ```powershell
+   X-MS-Exchange-Organization-PCL:7
+   X-MS-Exchange-Organization-SCL:6
+   X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;
+   CL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
+   ```
 
 ## Utiliser Outlook 2007 pour afficher les cachets de blocage du courrier indésirable
 
@@ -53,7 +56,9 @@ Vous pouvez utiliser Microsoft Outlook pour afficher les cachets de blocage du c
 
 3.  Dans la boite de dialogue **Options de message**, dans la section **En-têtes Internet**, utilisez la barre de défilement pour afficher les cachets de blocage du courrier indésirable comme le montre l’exemple suivant.
     
-        X-MS-Exchange-Organization-PCL:7
-        X-MS-Exchange-Organization-SCL:6
-        X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
+    ```powershell
+    X-MS-Exchange-Organization-PCL:7
+    X-MS-Exchange-Organization-SCL:6
+    X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
+    ```
 

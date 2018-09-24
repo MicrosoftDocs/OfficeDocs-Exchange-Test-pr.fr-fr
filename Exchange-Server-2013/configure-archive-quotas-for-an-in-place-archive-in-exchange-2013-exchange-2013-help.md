@@ -73,5 +73,7 @@ Pour vérifier l'activation avec succès d'une archive locale avec une boîte au
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher des informations de quota concernant l’archivage.
     
-        Get-Mailbox <Name> | FL Name,Archive*Quota
+    ```powershell
+    Get-Mailbox <Name> | FL Name,Archive*Quota
+    ```
 

@@ -173,17 +173,19 @@ Vous trouverez ci-dessous un exemple type d’entrée de journal d’audit. Selo
 
 <!-- end list -->
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <SearchResults>
-    
-      <Event Caller="corp.e15a.contoso.com/Users/Administrator" Cmdlet="Set-Mailbox" ObjectModified="corp.e15a.contoso.com/Users/david" RunDate="2012-10-18T15:48:15-07:00" Succeeded="true" Error="None" OriginatingServer="WIN8MBX (15.00.0516.032)">
-        <CmdletParameters>
-          <Parameter Name="Identity" Value="david" />
-          <Parameter Name="ProhibitSendReceiveQuota" Value="10 GB (10,737,418,240 bytes)" />
-        </CmdletParameters>
-        <ModifiedProperties>
-          <Property Name="ProhibitSendReceiveQuota" OldValue="35 GB (37,580,963,840 bytes)" NewValue="10 GB (10,737,418,240 bytes)" />
-        </ModifiedProperties>
-      </Event>
-    </SearchResults>
+  ```XML
+  <?xml version="1.0" encoding="utf-8"?>
+  <SearchResults>
+  
+    <Event Caller="corp.e15a.contoso.com/Users/Administrator" Cmdlet="Set-Mailbox" ObjectModified="corp.e15a.contoso.com/Users/david" RunDate="2012-10-18T15:48:15-07:00" Succeeded="true" Error="None" OriginatingServer="WIN8MBX (15.00.0516.032)">
+      <CmdletParameters>
+        <Parameter Name="Identity" Value="david" />
+        <Parameter Name="ProhibitSendReceiveQuota" Value="10 GB (10,737,418,240 bytes)" />
+      </CmdletParameters>
+      <ModifiedProperties>
+        <Property Name="ProhibitSendReceiveQuota" OldValue="35 GB (37,580,963,840 bytes)" NewValue="10 GB (10,737,418,240 bytes)" />
+      </ModifiedProperties>
+    </Event>
+  </SearchResults>
+  ```
 

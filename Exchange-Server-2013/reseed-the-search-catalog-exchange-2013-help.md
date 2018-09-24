@@ -92,17 +92,15 @@ S’il existe une seule copie de la base de données de boîtes aux lettres, vou
 
 1.  Exécutez les commandes suivantes pour arrêter la recherche Microsoft Exchange et les services du contrôleur de l’hôte de la recherche Microsoft Exchange.
     
-    ```
-    ```powershell
-Stop-Service MSExchangeFastSearch
-```
-    ```
     
-    ```
     ```powershell
-Stop-Service HostControllerService
-```
+    Stop-Service MSExchangeFastSearch
     ```
+
+    ```powershell
+    Stop-Service HostControllerService
+    ```
+
 
 2.  Supprimez, déplacez ou renommez le dossier qui contient le catalogue d’indexation de contenu Exchange. Le nom de ce dossier est `%ExchangeInstallPath\Mailbox\<name of mailbox database>_Catalog\<GUID>12.1.Single`. Par exemple, vous pouvez renommer le dossier `C:\Program Files\Microsoft\Exchange Server\V15\Mailbox\Mailbox Database 0657134726_Catalog\F0627A72-9F1D-494A-839A-D7C915C279DB12.1.Single_OLD`.
     
@@ -112,15 +110,12 @@ Stop-Service HostControllerService
 
 3.  Exécutez les commandes suivantes pour redémarrer la recherche Microsoft Exchange et les services du contrôleur de l’hôte de la recherche Microsoft Exchange.
     
-    ```
     ```powershell
-Start-Service MSExchangeFastSearch
-```
-    ```    
+    Start-Service MSExchangeFastSearch
     ```
+
     ```powershell
-Start-Service HostControllerService
-```
+    Start-Service HostControllerService
     ```
     Après le redémarrage de ces services, la recherche Exchange recrée le catalogue d’indexation de contenu.
 
@@ -128,7 +123,9 @@ Start-Service HostControllerService
 
 Le réamorçage du catalogue d’indexation de contenu par la recherche Exchange peut prendre un certain temps. Exécutez la commande suivante pour afficher l’état du processus de réamorçage :
 
-    Get-MailboxDatabaseCopyStatus | FL Name,*Index*
+```powershell
+Get-MailboxDatabaseCopyStatus | FL Name,*Index*
+```
 
 Lorsque le réamorçage du catalogue de recherche est en cours, la valeur de la propriété *ContentIndexState* est **Crawling**. Une fois le réamorçage terminé, la valeur affichée est **Healthy**.
 

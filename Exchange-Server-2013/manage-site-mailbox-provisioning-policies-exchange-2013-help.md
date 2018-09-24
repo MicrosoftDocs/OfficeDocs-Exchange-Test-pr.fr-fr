@@ -51,7 +51,9 @@ Cet exemple permet de créer la stratégie de mise en service par défaut SM\_Pr
 
 <!-- end list -->
 
-    New-SiteMailboxProvisioningPolicy -Name SM_ProvisioningPolicy -IsDefault -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB -MaxReceiveSize 50MB
+```powershell
+New-SiteMailboxProvisioningPolicy -Name SM_ProvisioningPolicy -IsDefault -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB -MaxReceiveSize 50MB
+```
 
 ## Afficher les paramètres d'une stratégie de mise en service de boîte aux lettres de site
 
@@ -77,7 +79,9 @@ Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
 
 Cet exemple modifie le quota d'avertissement à 9,5 Go et le quota d'interdiction d'envoi et de réception à 10 Go.
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB
+```
 
 ## Configurer le préfixe du nom d'une boîte aux lettres de site
 
@@ -85,7 +89,9 @@ Par défaut, lors de la création d'une boîte aux lettres de site, un préfixe 
 
 Cet exemple permet de désactiver l'attribution de préfixe en définissant le paramètre *DefaultAliasPrefixEnabled* sur $false.
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -DefaultAliasPrefixEnabled $false -AliasPrefix $null
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -DefaultAliasPrefixEnabled $false -AliasPrefix $null
+```
 
 Cet exemple permet de modifier la stratégie de mise en service par défaut et de définir le paramètre *AliasPrefix* sur FOREST01.
 
@@ -93,7 +99,9 @@ Cet exemple permet de modifier la stratégie de mise en service par défaut et d
 > Pour des déploiements à plusieurs forêts, nous vous recommandons d'utiliser un préfixe différent dans chaque forêt afin d'éviter les conflits lors de la synchronisation d'objets entre forêts, dans l'éventualité ou les boîtes aux lettres de site auraient été créées avec des noms identiques dans deux forêts ou plus.
 
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -AliasPrefix FOREST01 -DefaultAliasPrefixEnabled $false
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -AliasPrefix FOREST01 -DefaultAliasPrefixEnabled $false
+```
 
 > [!NOTE]
 > Dans le cas d'un déploiement hybride où Exchange est installé en local et dans Office 365, toutes les boîtes aux lettres de site en nuage sont créées avec le préfixe <strong>SMO-</strong>. Les préfixes sont différents dans Office 365 et dans Exchange en local afin que les clients hybrides ne rencontrent pas de conflits si les boîtes aux lettres sont créées dans les deux emplacements et sont synchronisées inter-site. Le paramètre AliasPrefix a la priorité sur le paramètre DefaultAliasPrefixEnabled. Par conséquent, si le paramètre <em>AliasPrefix</em> est défini sur une chaîne valide non Null, cette chaîne est ajoutée devant l'alias de chaque nouvelle boîte aux lettres de site.

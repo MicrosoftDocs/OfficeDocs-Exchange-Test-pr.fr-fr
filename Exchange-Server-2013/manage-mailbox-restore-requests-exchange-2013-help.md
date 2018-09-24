@@ -44,8 +44,8 @@ Pour les autres tâches relatives aux boîtes aux lettres déconnectées, consul
   - Pour afficher la valeur de la propriété *Identity* pour toutes les demandes de restauration de boîtes aux lettres, exécutez la commande suivante.
     
     ```powershell
-Get-MailboxRestoreRequest | Format-Table Identity
-```
+    Get-MailboxRestoreRequest | Format-Table Identity
+    ```
     
     Vous pouvez utiliser cette valeur d’identité pour spécifier une demande spécifique de restauration de boîte aux lettres, si vous exécutez les procédures de cette rubrique.
 
@@ -168,15 +168,21 @@ Get-MailboxRestoreRequestStatistics -Identity danp\MailboxRestore1
 
 Cet exemple renvoie les statistiques relatives à la boîte aux lettres de Dan Park et exporte le rapport dans un fichier .csv.
 
-    Get-MailboxRestoreRequestStatistics -Identity "Dan Park\MailboxRestore" | Export-CSV \\SERVER01\RestoreRequest_Reports\DanPark_Restorestats.csv
+```powershell
+Get-MailboxRestoreRequestStatistics -Identity "Dan Park\MailboxRestore" | Export-CSV \\SERVER01\RestoreRequest_Reports\DanPark_Restorestats.csv
+```
 
 Cet exemple renvoie des informations supplémentaires sur la demande de restauration de la boîte aux lettres de Pilar Pinilla à l’aide du paramètre *IncludeReport* et canalise les résultats vers la cmdlet **Format-List**.
 
-    Get-MailboxRestoreRequestStatistics -Identity "Pilar Pinilla\MailboxRestore" -IncludeReport | Format-List 
+```powershell
+Get-MailboxRestoreRequestStatistics -Identity "Pilar Pinilla\MailboxRestore" -IncludeReport | Format-List 
+```
 
 Cet exemple renvoie des informations supplémentaires sur toutes les demandes de restauration dont l'état est `Failed` à l'aide du paramètre *IncludeReport*, puis enregistre les informations dans le fichier AllRestoreReports.txt à l'emplacement d'exécution de la commande.
 
-    Get-MailboxRestoreRequest -Status Failed | Get-MailboxRestoreRequestStatistics -IncludeReport | Format-List > AllRestoreReports.txt
+```powershell
+Get-MailboxRestoreRequest -Status Failed | Get-MailboxRestoreRequestStatistics -IncludeReport | Format-List > AllRestoreReports.txt
+```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Get-MailboxRestoreRequestStatistics](https://technet.microsoft.com/fr-fr/library/ff829912\(v=exchg.150\)) et [Get-MailboxRestoreRequest](https://technet.microsoft.com/fr-fr/library/ff829907\(v=exchg.150\)).
 
@@ -421,7 +427,9 @@ Set-MailboxRestoreRequest -Identity "Debra Garcia\MailboxRestore1" -BadItemLimit
 
 Cet exemple montre que la demande de restauration MailboxRestore1 pour la boîte aux lettres de Florence Flipo ignore 100 éléments endommagés. Puisque la valeur de *BadItemLimit* est supérieure à 50, le paramètre *AcceptLargeDataLoss* doit être spécifié.
 
-    Set-MailboxRestoreRequest -Identity "Florence Flipo\MailboxRestore1" -BadItemLimit 100 -AcceptLargeDataLoss
+```powershell
+Set-MailboxRestoreRequest -Identity "Florence Flipo\MailboxRestore1" -BadItemLimit 100 -AcceptLargeDataLoss
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-MailboxRestoreRequest](https://technet.microsoft.com/fr-fr/library/ff829909\(v=exchg.150\)).
 
@@ -443,7 +451,9 @@ Suspend-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
 
 Cet exemple montre comment suspendre toutes les demandes de restauration en cours en extrayant toutes les demandes dont l'état est `InProgress`, puis en canalisant la sortie vers la cmdlet **Suspend-MailboxRestoreRequest** tout en ajoutant le commentaire « Resume after FY13Q2 Maintenance » (Reprendre après la maintenance FY13Q2).
 
-    Get-MailboxRestoreRequest -Status InProgress | Suspend-MailboxRestoreRequest -SuspendComment "Resume after FY13Q2 Maintenance"
+```powershell
+Get-MailboxRestoreRequest -Status InProgress | Suspend-MailboxRestoreRequest -SuspendComment "Resume after FY13Q2 Maintenance"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Suspend-MailboxRestoreRequest](https://technet.microsoft.com/fr-fr/library/ff829906\(v=exchg.150\)).
 

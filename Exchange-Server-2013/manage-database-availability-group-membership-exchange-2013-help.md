@@ -86,8 +86,8 @@ Pour vérifier que vous avez correctement géré l’appartenance à un groupe d
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les informations d’appartenance au groupe de disponibilité de base de données (DAG) :
     
     ```powershell
-Get-DatabaseAvailabilityGroup <DAGName> | Format-List Servers
-```
+    Get-DatabaseAvailabilityGroup <DAGName> | Format-List Servers
+    ```
 
 ## Pour plus d’informations
 

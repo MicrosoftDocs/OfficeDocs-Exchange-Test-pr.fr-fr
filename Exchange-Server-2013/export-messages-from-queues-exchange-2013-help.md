@@ -51,35 +51,47 @@ Lorsque vous exportez un message d'une file d'attente vers un fichier, le messag
 
 Pour exporter un message spécifique à partir d'une file d'attente précise, exécutez la commande suivante :
 
-    Export-Message -Identity <MessageIdentity> | AssembleMessage -Path <FilePath>\<FileName>.eml
+```powershell
+Export-Message -Identity <MessageIdentity> | AssembleMessage -Path <FilePath>\<FileName>.eml
+```
 
 Cet exemple indique comment exporter une copie d'un message dont la valeur **InternalMessageID** est 1234 et qui est situé dans la file d'attente de remise contoso.com sur le serveur Mailbox01 vers le fichier intitulé export.eml avec le chemin d'accès D:\\Contoso Export.
 
-    Export-Message -Identity Exchange01\Contoso.com\1234 | AssembleMessage -Path "D:\Contoso Export\export.eml"
+```powershell
+Export-Message -Identity Exchange01\Contoso.com\1234 | AssembleMessage -Path "D:\Contoso Export\export.eml"
+```
 
 ## Utilisation du Shell pour exporter tous les messages à partir d'une file d'attente spécifique
 
 La syntaxe suivante vous permet d'exporter tous les messages d'une file d'attente spécifique et d'utiliser la valeur **InternetMessageID** de chaque message comme nom de fichier :
 
-    Get-Message -Queue <QueueIdentity> | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```powershell
+Get-Message -Queue <QueueIdentity> | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 Notez que la valeur **InternetMessageID** contient des chevrons (\> et \<) qui doivent être supprimés dans la mesure où ils ne sont pas acceptés dans les noms de fichiers.
 
 Cet exemple indique comment exporter une copie de tous les messages de la file d'attente de remise contoso.com sur le serveur Mailbox01 vers le répertoire local D:\\Contoso Export.
 
-    Get-Message -Queue Mailbox01\Contoso.com | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```powershell
+Get-Message -Queue Mailbox01\Contoso.com | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 ## Utilisation du Shell pour exporter des messages spécifiques à partir de toutes les files d'attente d'un serveur
 
 La syntaxe suivante vous permet d'exporter des messages spécifiques de toutes les files d'attente d'un serveur et d'utiliser la valeur **InternetMessageID** de chaque message comme nom de fichier :
 
-    Get-Message -Filter {<MessageFilter>} [-Server <ServerIdentity>] | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```powershell
+Get-Message -Filter {<MessageFilter>} [-Server <ServerIdentity>] | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 Notez que la valeur **InternetMessageID** contient des chevrons (\> et \<) qui doivent être supprimés dans la mesure où ils ne sont pas acceptés dans les noms de fichiers.
 
 Cet exemple indique comment exporter une copie de tous les messages en provenance d'expéditeurs se trouvant dans le domaine contoso.com à partir de toutes les files d'attente sur le serveur Mailbox01 vers le répertoire local D:\\Contoso Export.
 
-    Get-Message -Filter {FromAddress -like "*@contoso.com"} -Server Mailbox01 | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```powershell
+Get-Message -Filter {FromAddress -like "*@contoso.com"} -Server Mailbox01 | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 > [!NOTE]
 > Si vous oubliez le paramètre <em>Server</em>, la commande est exécutée sur le serveur local.

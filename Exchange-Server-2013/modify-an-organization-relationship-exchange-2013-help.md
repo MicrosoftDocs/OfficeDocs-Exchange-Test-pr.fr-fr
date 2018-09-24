@@ -85,19 +85,23 @@ Pour les autres tâches de gestion relatives à la fédération, voir [Procédur
 
   - Cet exemple ajoute le nom de domaine service.contoso.com à la relation d’organisation Contoso.
     
-        $domains = (Get-OrganizationRelationship Contoso).DomainNames
-        $domains += 'service.contoso.com'
-        Set-OrganizationRelationship -Identity Contoso -DomainNames $domains
+    ```powershell
+    $domains = (Get-OrganizationRelationship Contoso).DomainNames
+    $domains += 'service.contoso.com'
+    Set-OrganizationRelationship -Identity Contoso -DomainNames $domains
+    ```
 
   - Cet exemple désactive la relation d’organisation Contoso.
     
     ```powershell
-Set-OrganizationRelationship -Identity Contoso -Enabled $false
-```
+    Set-OrganizationRelationship -Identity Contoso -Enabled $false
+    ```
 
   - Cet exemple montre comment activer l’accès aux informations de disponibilité du calendrier pour la relation d’organisation WoodgroveBank et définir le niveau d’accès sur `AvailabilityOnly` (informations de disponibilité du calendrier avec les heures de disponibilité uniquement).
     
-        Set-OrganizationRelationship -Identity Contoso -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly
+    ```powershell
+    Set-OrganizationRelationship -Identity Contoso -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly
+    ```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Get-OrganizationRelationship](https://technet.microsoft.com/fr-fr/library/ee332343\(v=exchg.150\)) et [Set-OrganizationRelationship](https://technet.microsoft.com/fr-fr/library/ee332326\(v=exchg.150\)).
 

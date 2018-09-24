@@ -44,20 +44,20 @@ _**Dernière rubrique modifiée :** 2014-06-27_
 2.  Utilisez la cmdlet [New-MailboxDatabase](https://technet.microsoft.com/fr-fr/library/aa997976\(v=exchg.150\)) pour créer une base de données de tonalité, comme indiqué dans cet exemple.
     
     ```powershell
-New-MailboxDatabase -Name DTDB1 -EdbFilePath D:\DialTone\DTDB1.EDB
-```
+    New-MailboxDatabase -Name DTDB1 -EdbFilePath D:\DialTone\DTDB1.EDB
+    ```
 
 3.  Utilisez la cmdlet [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)) pour déplacer les boîtes aux lettres des utilisateurs hébergés sur la base de données en cours de récupération, comme indiqué dans cet exemple.
     
     ```powershell
-Get-Mailbox -Database DB1 | Set-Mailbox -Database DTDB1
-```
+    Get-Mailbox -Database DB1 | Set-Mailbox -Database DTDB1
+    ```
 
 4.  Utilisez la cmdlet [Mount-Database](https://technet.microsoft.com/fr-fr/library/aa998871\(v=exchg.150\)) pour monter la base de données afin que les ordinateurs clients puissent accéder à la base de données ainsi qu'envoyer et recevoir des messages, comme indiqué dans cet exemple.
     
     ```powershell
-Mount-Database -Identity DTDB1
-```
+    Mount-Database -Identity DTDB1
+    ```
 
 5.  Créez une base de données de récupération (RDB) et restaurez ou copiez la base de données et les fichiers journaux contenant les données que vous souhaitez récupérer dans la RDB. Pour obtenir la procédure détaillée, consultez la rubrique [Créer une base de données de récupération](create-a-recovery-database-exchange-2013-help.md).
 
@@ -66,50 +66,47 @@ Mount-Database -Identity DTDB1
 7.  Montez la base de données de récupération, puis utilisez la cmdlet [Dismount-Database](https://technet.microsoft.com/fr-fr/library/bb124936\(v=exchg.150\)) pour la démonter, comme indiqué dans cet exemple.
     
     ```powershell
-Mount-Database -Identity RDB1
-```
-        Dismount-Database -Identity RDB1
+    Mount-Database -Identity RDB1
+    Dismount-Database -Identity RDB1
+    ```
 
 8.  Après avoir démonté la base de données de récupération, déplacez la base de données en cours et les fichiers journaux du dossier de base de données de récupération vers un emplacement sûr. Cette opération est effectuée en préparation de l'échange de la base de données récupérée avec la base de données de tonalité.
 
 9.  Démontez la base de données de tonalité, comme illustré dans cet exemple. Notez que vos utilisateurs finaux vont connaître une interruption dans le service lors du démontage de cette base de données.
     
     ```powershell
-Dismount-Database -Identity DTDB1
-```
+    Dismount-Database -Identity DTDB1
+    ```
 
 10. Déplacez la base de données et les fichiers journaux du dossier de base de données de tonalité vers le dossier de base de données de récupération.
 
 11. Déplacez la base de données et les fichiers journaux d'un emplacement sûr contenant la base de données récupérée dans le dossier de base de données de tonalité, puis montez la base de données, comme indiqué dans cet exemple.
     
     ```powershell
-Mount-Database -Identity DTDB1
-```
+    Mount-Database -Identity DTDB1
+    ```
     
     Cela met fin à l'interruption de service pour vos utilisateurs finaux. Ils pourront accéder à leur base de données de production d'origine, puis envoyer et recevoir des messages.
 
 12. Montez la base de données de récupération, comme indiqué dans cet exemple.
     
     ```powershell
-Mount-Database -Identity RDB1
-```
+    Mount-Database -Identity RDB1
+    ```
 
 13. Utilisez les cmdlets [Get-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123685\(v=exchg.150\)) et [New-MailboxRestoreRequest](https://technet.microsoft.com/fr-fr/library/ff829875\(v=exchg.150\)) pour exporter les données de la base de données de récupération et les importer dans la base de données récupérée, comme indiqué dans l'exemple. Cette opération permet d'importer tous les messages envoyés et reçus à l'aide de la base de données de tonalité dans la base de données de production.
     
-       ```
-       ```powershell
-$mailboxes = Get-Mailbox -Database DTDB1
-```
-       ```   
-    
-       ``` 
-          $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
-       ```   
+    ```powershell
+    $mailboxes = Get-Mailbox -Database DTDB1
+    $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
+    ```   
 
 14. Après que l'opération de restauration est terminée, vous pouvez démonter et supprimer la base de données de récupération, comme indiqué dans cet exemple.
     
-        Dismount-Database -Identity RDB1
-        Remove-MailboxDatabase -Identity RDB1
+    ```powershell
+    Dismount-Database -Identity RDB1
+    Remove-MailboxDatabase -Identity RDB1
+    ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques suivantes :
 

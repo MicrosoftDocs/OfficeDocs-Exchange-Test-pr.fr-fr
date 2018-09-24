@@ -53,17 +53,14 @@ Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPol
 
 Il n'est pas nécessaire d'utiliser la cmdlet **Set-ThrottlingPolicyAssociation** pour associer un utilisateur à une stratégie. Les commandes suivantes présentent une nouvelle manière d’associer tonysmith à la stratégie de limitation ITStaffPolicy.
 
-   ```
-    ```powershell
+
+```powershell
 $b = Get-ThrottlingPolicy ITStaffPolicy
 ```
-   ```    
 
-   ```
-    ```powershell
+```powershell
 Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
 ```
-   ```    
 
 Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubriques [New-ThrottlingPolicy](https://technet.microsoft.com/fr-fr/library/dd351045\(v=exchg.150\)) et [Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/fr-fr/library/ff459231\(v=exchg.150\)).
 
@@ -74,24 +71,24 @@ Pour vérifier que la stratégie de limitation Régulier a été correctement cr
 1.  Exécutez la commande suivante.
     
     ```powershell
-Get-ThrottlingPolicy | Format-List
-```
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 2.  Vérifiez que la stratégie de limitation Régulier que vous venez de créer est répertoriée dans la colonne qui affiche l’objet GlobalThrottlingPolicy.
 
 3.  Exécutez la commande suivante.
     
     ```powershell
-Get-ThrottlingPolicy | Format-List
-```
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 4.  Vérifiez que les propriétés associées à la nouvelle stratégie Régulier correspondent à la valeur ou aux valeurs que vous avez configurées.
 
 5.  Exécutez la commande suivante.
     
     ```powershell
-Get-ThrottlingPolicyAssociation
-```
+    Get-ThrottlingPolicyAssociation
+    ```
 
 6.  Vérifiez que la nouvelle stratégie Régulier est bien associée à l’utilisateur ou aux utilisateurs auxquels vous l’avez associée.
 

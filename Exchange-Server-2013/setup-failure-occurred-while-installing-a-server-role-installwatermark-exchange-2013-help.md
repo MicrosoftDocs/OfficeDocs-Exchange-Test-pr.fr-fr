@@ -34,8 +34,8 @@ Pour résoudre ce problème, réinstallez le rôle serveur échoué ou supprimez
 2.  Exécutez la commande suivante :
     
     ```powershell
-Setup /roles:<Failed Server Role>
-```
+    Setup /roles:<Failed Server Role>
+    ```
     
     Sélectionnez un ou plusieurs des rôles suivants dans une liste séparée par des virgules :
     

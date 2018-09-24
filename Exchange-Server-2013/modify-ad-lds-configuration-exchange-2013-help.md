@@ -81,7 +81,9 @@ Les paramètres figurant dans le tableau suivant sont disponibles pour le script
 
 Cet exemple définit le port LDAP utilisé par AD LDS sur 5000. L’esperluette (&) fait partie de la syntaxe de la commande.
 
-    & $env:ExchangeInstallPath\Scripts\ConfigureAdam.ps1 -LdapPort:5000
+```powershell
+& $env:ExchangeInstallPath\Scripts\ConfigureAdam.ps1 -LdapPort:5000
+```
 
 Cet exemple apporte les modifications suivantes à la configuration AD LDS. L’esperluette (&) fait partie de la syntaxe de la commande. Vous remarquerez que le signe deux-points (:) utilisé entre chaque paramètre et sa valeur :
 
@@ -95,5 +97,7 @@ Cet exemple apporte les modifications suivantes à la configuration AD LDS. L�
 
 <!-- end list -->
 
-    & $env:ExchangeInstallPath\Scripts\ConfigureAdam.ps1 -LdapPort:5000 -SslPort:5001 -LogPath:"D:\Exchange Server\Data\ADLDS" -DataPath:"D:\Exchange Server\Data\ADLDS"
+```powershell
+& $env:ExchangeInstallPath\Scripts\ConfigureAdam.ps1 -LdapPort:5000 -SslPort:5001 -LogPath:"D:\Exchange Server\Data\ADLDS" -DataPath:"D:\Exchange Server\Data\ADLDS"
+```
 

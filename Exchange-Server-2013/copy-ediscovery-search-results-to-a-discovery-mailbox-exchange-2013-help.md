@@ -81,16 +81,18 @@ Start-MailboxSearch "Fabrikam Investigation"
 
 Si vous avez utilisé le commutateur *EstimateOnly* pour obtenir une estimation des résultats de la recherche, vous devez le supprimer pour pouvoir copier ces derniers. Vous devez également indiquer une boîte aux lettres de découverte vers laquelle copier les résultats de la recherche. Par exemple, supposons que vous ayez créé une recherche à des fins d’estimation uniquement à l’aide de la commande suivante :
 
-    New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeUnsearchableItems
+```powershell
+New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeUnsearchableItems
+```
 
 Pour copier les résultats de cette recherche vers une boîte aux lettres de découverte, vous devez exécuter les commandes suivantes :
+
+```powershell
+Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
 ```
-    Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
-```
-```
+
 ```powershell
 Start-MailboxSearch "FY13 Q2 Financial Results"
-```
 ```
 
 ## Plus d’informations sur la copie des résultats de la recherche

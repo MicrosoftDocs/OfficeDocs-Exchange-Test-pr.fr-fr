@@ -199,7 +199,9 @@ Vue d’ensemble
 
 L’outil de dépannage de la messagerie unifiée peut être utilisé dans des déploiements locaux ou intersites qui incluent Office Communications Server 2007 R2 ou Microsoft Lync Server lorsque le mode SIPClient est défini. L’exemple suivant utilise le mode SIPClient et teste le flux des appels avec un plan de numérotation de messagerie unifiée sécurisé dans un environnement comprenant des serveurs Office Communications Server 2007 R2 ou Lync Server. Par défaut, lorsque vous exécutez l’outil de dépannage de la messagerie unifiée, il utilise les informations d’identification de l’utilisateur actuellement connecté à l’ordinateur. Lors de l’exécution de l’exemple suivant, vous serez invité à fournir les informations d’identification que vous souhaitez utiliser pour lancer l’outil de dépannage de la messagerie unifiée. Pour plus d’informations, voir [Définir les informations d’identification à utiliser avec l’outil de dépannage de la messagerie unifiée Exchange](set-the-credentials-to-use-with-the-exchange-um-troubleshooting-tool-exchange-2013-help.md).
 
-    Test-ExchangeUMCallFlow -Mode SIPClient -VoIPSecurity Secured -CallingParty tony@contoso.com -CalledParty david@contoso.com -Credential $get
+```powershell
+Test-ExchangeUMCallFlow -Mode SIPClient -VoIPSecurity Secured -CallingParty tony@contoso.com -CalledParty david@contoso.com -Credential $get
+```
 
 ## Installation de l’outil de dépannage de la messagerie unifiée
 

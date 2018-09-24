@@ -81,7 +81,9 @@ Get-ManagementRole | Format-Table <property 1>, <property 2...>
 
 Cet exemple renvoie la liste de tous les rôles de votre organisation et comprend la propriété **Name** ainsi que toute propriété contenant le mot **Implicit** au début de son nom.
 
-    Get-ManagementRole | Format-Table Name, Implicit*
+```powershell
+Get-ManagementRole | Format-Table Name, Implicit*
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRole](https://technet.microsoft.com/fr-fr/library/dd351125\(v=exchg.150\)).
 
@@ -111,7 +113,9 @@ Lorsque vous utilisez le paramètre *CmdletParameters*, vous pouvez choisir d’
 
 Pour renvoyer la liste des rôles contenant les paramètres que vous indiquez, utilisez la syntaxe suivante.
 
-    Get-ManagementRole [-Cmdlet <cmdlet>] -CmdletParameters <parameter 1>, <parameter 2...>
+```powershell
+Get-ManagementRole [-Cmdlet <cmdlet>] -CmdletParameters <parameter 1>, <parameter 2...>
+```
 
 Cet exemple renvoie la liste des rôles contenant les paramètres *Database* et *Server*, indépendamment de la cmdlet à laquelle ils sont associés.
 

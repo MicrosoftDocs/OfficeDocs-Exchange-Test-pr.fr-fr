@@ -45,7 +45,9 @@ La connexion au service d'audit administrateur dans Microsoft Exchange Server 2
 
 Par défaut, la connexion au service d'audit crée une entrée de journal pour chaque cmdlet exécutée. Si vous activez la connexion au service d'audit pour la première fois et que ce comportement vous convient, il n'est pas nécessaire de changer la liste d'audit de cmdlet. Si vous avez indiqué préalablement les cmdlets à auditer et que vous souhaitez maintenant toutes les auditer, vous pouvez le faire en indiquant le caractère générique astérisque (\*) avec le paramètre *AdminAuditLogCmdlets* de la cmdlet **Set-AdminAuditLogConfig**, comme illustré dans la commande suivante :
 
-    Set-AdminAuditLogConfig -AdminAuditLogCmdlets *
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogCmdlets *
+```
 
 Vous pouvez désigner les cmdlets à auditer en fournissant une liste de cmdlets à l'aide du paramètre *AdminAuditLogCmdlets*. Dans cette liste, vous pouvez fournir des cmdlets uniques, des cmdlets avec le caractère générique astérisque (\*) ou un mélange des deux. Chaque entrée dans la liste est séparée par des virgules. Les valeurs suivantes sont toutes valides :
 
@@ -59,7 +61,9 @@ Vous pouvez désigner les cmdlets à auditer en fournissant une liste de cmdlets
 
 Cet exemple audite les cmdlets spécifiées dans la liste précédente.
 
-    Set-AdminAuditLogConfig -AdminAuditLogCmdlets New-Mailbox, *TransportRule, *Management*, Set-Transport*
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogCmdlets New-Mailbox, *TransportRule, *Management*, Set-Transport*
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-AdminAuditLogConfig](https://technet.microsoft.com/fr-fr/library/dd298169\(v=exchg.150\)).
 
@@ -67,7 +71,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Par défaut, la connexion au service d'audit crée une entrée de journal pour chaque cmdlet exécutée, quels que soient les paramètres spécifiés. Si vous activez la connexion au service d'audit pour la première fois et que ce comportement vous convient, il n'est pas nécessaire de changer la liste d'audit des paramètres. Si vous avez indiqué préalablement les paramètres à auditer et que vous souhaitez maintenant tous les auditer, vous pouvez le faire en indiquant le caractère générique astérisque (\*) avec le paramètre *AdminAuditLogParameters* de la cmdlet **Set-AdminAuditLogConfig**, comme illustré dans la commande suivante :
 
-    Set-AdminAuditLogConfig -AdminAuditLogParameters *
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogParameters *
+```
 
 Vous pouvez indiquer les paramètres que vous souhaitez auditer en utilisant le paramètre *AdminAuditLogParameters*. Dans la liste des paramètres à auditer, vous pouvez fournir des paramètres uniques, des paramètres avec le caractère générique astérisque (\*) ou un mélange des deux. Chaque entrée dans la liste est séparée par des virgules. Les valeurs suivantes sont toutes valides :
 
@@ -85,7 +91,9 @@ Vous pouvez indiquer les paramètres que vous souhaitez auditer en utilisant le 
 
 Cet exemple audite les paramètres spécifiés dans la liste précédente.
 
-    Set-AdminAuditLogConfig -AdminAuditLogParameters Database, *Address*, Custom*, *Region
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogParameters Database, *Address*, Custom*, *Region
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-AdminAuditLogConfig](https://technet.microsoft.com/fr-fr/library/dd298169\(v=exchg.150\)).
 

@@ -66,21 +66,21 @@ Lorsque le DAG n'est pas en mode de coordination d'activation de la base de donn
 1.  Les membres du DAG du centre de données principal doivent être supprimés du cluster sous-jacent du DAG en exécutant les commandes suivantes sur chaque membre :
     
     ```powershell
-net stop clussvc
-```
-        cluster <DAGName> node <DAGMemberName> /forcecleanup
+    net stop clussvc
+    cluster <DAGName> node <DAGMemberName> /forcecleanup
+    ```
 
 2.  Les membres du DAG du deuxième centre de données doivent maintenant être redémarrés, puis utilisés pour effectuer le processus de suppression des serveurs du deuxième centre de données. Arrêtez le service de cluster sur chaque membre du DAG dans le deuxième centre de données en exécutant la commande suivante sur chaque membre :
     
     ```powershell
-net stop clussvc
-```
+    net stop clussvc
+    ```
 
 3.  Sur un membre du DAG dans le deuxième centre de données, démarrez le service de cluster en forçant le quorum. Pour cela, exécutez la commande suivante :
     
     ```powershell
-net start clussvc /forcequorum
-```
+    net start clussvc /forcequorum
+    ```
 
 4.  Ouvrez l'outil Gestion du cluster de basculement.et connectez-vous au cluster sous-jacent du DAG. Développez le nœud de cluster, puis les **Nœuds**. Cliquez avec le bouton droit sur chaque nœud du centre de données principal, sélectionnez **Actions supplémentaires**, puis **Supprimer**. Lorsque vous supprimez les membres du DAG du centre de données principal, fermez l'outil Gestion du cluster de basculement.
 
@@ -111,30 +111,32 @@ Lorsque le DAG n'est pas en mode DAC, pour terminer l'activation des serveurs de
     1.  Si le nombre des membres du DAG est impair, remplacez le modèle de quorum du DAG « Nœud et partage de fichiers majoritaires » par « Nœud majoritaire » en exécutant la commande suivante :
         
         ```powershell
-cluster <DAGName> /quorum /nodemajority
-```
+        cluster <DAGName> /quorum /nodemajority
+        ```
     
     2.  Si le nombre des membres du DAG est pair, reconfigurez le serveur témoin et le répertoire témoin en exécutant la commande suivante dans l'environnement de ligne de commande Exchange Management Shell :
         
         ```powershell
-Set-DatabaseAvailabilityGroup <DAGName> -WitnessServer <ServerName>
-```
+        Set-DatabaseAvailabilityGroup <DAGName> -WitnessServer <ServerName>
+        ```
 
 2.  Démarrez le service de cluster sur les membres restants du DAG dans le deuxième centre de données en exécutant la commande suivante :
     
     ```powershell
-net start clussvc
-```
+    net start clussvc
+    ```
 
 3.  Procédez aux permutations de serveurs pour activer les bases de données de boîtes aux lettres dans le DAG en exécutant la commande suivante pour chaque membre du DAG :
     
-        Move-ActiveMailboxDatabase -Server <DAGMemberinPrimarySite> -ActivateOnServer <DAGMemberinSecondSite>
+    ```powershell
+    Move-ActiveMailboxDatabase -Server <DAGMemberinPrimarySite> -ActivateOnServer <DAGMemberinSecondSite>
+    ```
 
 4.  Montez les bases de données de boîtes aux lettres sur chaque membre du DAG dans le deuxième site en exécutant la commande suivante :
     
     ```powershell
-Get-MailboxDatabase <DAGMemberinSecondSite> | Mount-Database
-```
+    Get-MailboxDatabase <DAGMemberinSecondSite> | Mount-Database
+    ```
 
 Retour au début
 

@@ -21,7 +21,9 @@ La *bannière SMTP* est la réponse de la connexion SMTP qu'un serveur de mess
 
 Voici la réponse par défaut reçue par un serveur de messagerie SMTP distant une fois connecté au connecteur de réception :
 
-    220 <Servername> Microsoft ESMTP MAIL service ready at <RegionalDay-Date-24HourTimeFormat> <RegionalTimeZoneOffset>
+```powershell
+220 <Servername> Microsoft ESMTP MAIL service ready at <RegionalDay-Date-24HourTimeFormat> <RegionalTimeZoneOffset>
+```
 
 Quand vous spécifiez une valeur personnalisée pour la bannière SMTP sur un connecteur de réception, un serveur de messagerie SMTP distant qui se connecte à ce connecteur de réception SMTP reçoit la réponse suivante.
 
@@ -74,8 +76,8 @@ Pour vérifier que vous avez bien modifié la bannière SMTP sur un connecteur 
 1.  Ouvrez un client Telnet sur un ordinateur qui peut accéder au connecteur de réception, et exécutez la commande suivante :
     
     ```powershell
-open <Connector FQDN or IP address> <Port>
-```
+    open <Connector FQDN or IP address> <Port>
+    ```
 
 2.  Vérifiez que la réponse du connecteur de réception contient la bannière SMTP que vous avez configurée.
 

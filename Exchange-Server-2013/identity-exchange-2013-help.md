@@ -35,8 +35,10 @@ Le paramètre *Identity* est également considéré comme paramètre positionnel
 
 L’exemple suivant illustre l’utilisation du paramètre *Identity* en utilisant la valeur unique du paramètre *Name* du connecteur de réception. Cet exemple montre également comment omettre le nom de paramètre *Identity*, car le paramètre *Identity* est un paramètre positionnel.
 
-    Get-ReceiveConnector -Identity "From the Internet"
-    Get-ReceiveConnector "From the Internet"
+```powershell
+Get-ReceiveConnector -Identity "From the Internet"
+Get-ReceiveConnector "From the Internet"
+```
 
 Comme tous les objets dans Exchange 2013, ce connecteur de réception peut également être désigné par son GUID unique. Par exemple, si le connecteur de réception nommé `"From the Internet"` est également associé au GUID `63d64005-42c5-4f8f-b310-14f6cb125bf3`, vous pouvez extraire le connecteur de réception à l’aide de la commande suivante :
 
@@ -90,15 +92,21 @@ Mail Recipients\Set-Mailbox
 
 L’entrée de rôle `Mail Recipients\Set-Mailbox` est l’une des centaines d’entrées pour le rôle `Mail Recipients`. Pour afficher toutes les entrées de rôle pour le rôle `Mail Recipients`, utilisez la commande suivante :
 
-    Get-ManagementRoleEntry "Mail Recipients\*"
+```powershell
+Get-ManagementRoleEntry "Mail Recipients\*"
+```
 
 Pour afficher toutes les entrées de rôle pour le rôle `Mail Recipients` contenant la chaîne « `Mailbox` », utilisez la commande suivante :
 
-    Get-ManagementRoleEntry "Mail Recipients\*Mailbox*"
+```powershell
+Get-ManagementRoleEntry "Mail Recipients\*Mailbox*"
+```
 
 Pour afficher tous les rôles de gestion pour lequel **Set-Mailbox** est l’une des entrées de rôle, utilisez la commande suivante :
 
-    Get-ManagementRoleEntry *\Set-Mailbox
+```powershell
+Get-ManagementRoleEntry *\Set-Mailbox
+```
 
 Les entrées de rôle vous permettent d’utiliser le caractère générique (\*) de différentes manières pour rechercher les informations dont vous avez besoin dans Exchange 2013.
 

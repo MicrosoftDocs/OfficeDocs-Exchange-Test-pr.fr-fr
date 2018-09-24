@@ -376,7 +376,9 @@ Les valeurs d’attribut figurant dans le fichier CSV remplacent celles du param
 
 Par exemple, nous allons dire que vous créez un lot dans la Environnement de ligne de commande Exchange Management Shell principal d’un utilisateur inter-forêts entreprise déplacer vers déplacer des boîtes aux lettres d’archive vers la forêt cible avec la commande Environnement de ligne de commande Exchange Management Shell.
 
-    New-MigrationBatch -Name CrossForestBatch1 -SourceEndpoint ForestEndpoint1 -TargetDeliveryDomain forest2.contoso.com -TargetDatabases @(EXCH-MBX-02,EXCH-MBX-03) -TargetArchiveDatabases @(EXCH-MBX-A02,EXCH-MBX-A03) -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\CrossForestBatch1.csv")) -AutoStart
+```powershell
+New-MigrationBatch -Name CrossForestBatch1 -SourceEndpoint ForestEndpoint1 -TargetDeliveryDomain forest2.contoso.com -TargetDatabases @(EXCH-MBX-02,EXCH-MBX-03) -TargetArchiveDatabases @(EXCH-MBX-A02,EXCH-MBX-A03) -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\CrossForestBatch1.csv")) -AutoStart
+```
 
 > [!NOTE]
 > Étant donné que la valeur par défaut est déplacer primaire et d’archiver des boîtes aux lettres, vous n’êtes pas obligé de spécifier explicitement dans la commande Environnement de ligne de commande Exchange Management Shell.
@@ -384,26 +386,32 @@ Par exemple, nous allons dire que vous créez un lot dans la Environnement de li
 
 Une portion du fichier CrossForestBatch1.csv pour ce lot de migration ressemble à ceci :
 
-    EmailAddress,TargetDatabase,TargetArchiveDatabase
-    user1@contoso.com,EXCH-MBX-01,EXCH-MBX-A01
-    user2@contoso.com,,
-    user3@contoso.com,EXCH-MBX-01,
-    ...
+  ```powershell
+  EmailAddress,TargetDatabase,TargetArchiveDatabase
+  user1@contoso.com,EXCH-MBX-01,EXCH-MBX-A01
+  user2@contoso.com,,
+  user3@contoso.com,EXCH-MBX-01,
+  ...
+  ```
 
 Comme les valeurs figurant dans le fichier CSV remplacent celles du lot de migration, les boîtes aux lettres principale et d'archivage de l'utilisateur user1 sont déplacées respectivement vers EXCH-MBX-01 et EXCH-MBX-A01 dans la forêt cible. Les boîtes aux lettres principale et d'archivage de l'utilisateur user2 sont déplacées vers EXCH-MBX-02 ou EXCH-MBX-03. La boîte aux lettres principale de l'utilisateur user3 est déplacée vers EXCH-MBX-01, et sa boîte aux lettres d'archivage vers EXCH-MBX-A02 ou EXCH-MBX-A03.
 
 Dans un autre exemple, imaginons que vous créiez un lot pour une migration de déplacement à distance par embarquement dans un déploiement hybride afin de déplacer des boîtes aux lettres d'archivage vers Exchange Online avec la commande suivante.
 
-    New-MigrationBatch -Name OnBoarding1 -SourceEndpoint RemoteEndpoint1 -TargetDeliveryDomain cloud.contoso.com -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\OnBoarding1.csv")) -MailboxType ArchiveOnly -AutoStart
+```powershell
+New-MigrationBatch -Name OnBoarding1 -SourceEndpoint RemoteEndpoint1 -TargetDeliveryDomain cloud.contoso.com -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\OnBoarding1.csv")) -MailboxType ArchiveOnly -AutoStart
+```
 
 Toutefois, vous pouvez également déplacer les boîtes aux lettres principales d'utilisateurs sélectionnés. Dans ce cas, une portion du fichier OnBoarding1.csv pour ce lot de migration ressemblerait à ceci :
 
-    EmailAddress,MailboxType
-    user1@contoso.com,
-    user2@contoso.com,
-    user3@cloud.contoso.com,PrimaryAndArchive
-    user4@cloud.contoso.com,PrimaryAndArchive
-    ...
+```powershell
+EmailAddress,MailboxType
+user1@contoso.com,
+user2@contoso.com,
+user3@cloud.contoso.com,PrimaryAndArchive
+user4@cloud.contoso.com,PrimaryAndArchive
+...
+```
 
 Comme la valeur du type de boîte aux lettres figurant dans le fichier CSV remplace les valeurs du paramètre *MailboxType* dans la commande de création du lot, seules les boîtes aux lettres d'archivage des utilisateurs user1 et user2 sont migrées vers Exchange Online. En revanche, les boîtes aux lettres principales et d'archivage des utilisateurs user3 et user4 sont déplacées vers Exchange Online.
 

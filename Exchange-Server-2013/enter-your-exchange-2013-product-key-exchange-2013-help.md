@@ -107,9 +107,13 @@ Pour vérifier via l’environnement de ligne de commande Exchange Management 
 
 2.  Exécutez la commande suivante pour afficher l’état de la licence d’un serveur Exchange donné.
     
-        Get-ExchangeServer ExServer01 | Format-Table Edition,*Trial*
+    ```powershell
+    Get-ExchangeServer ExServer01 | Format-Table Edition,*Trial*
+    ```
 
 3.  (Facultatif) Exécutez la commande suivante pour afficher l’état des licences de tous les serveurs Exchange de votre organisation.
     
-        Get-ExchangeServer | Format-Table Name, Edition, *Trial* -Auto
+    ```powershell
+    Get-ExchangeServer | Format-Table Name, Edition, *Trial* -Auto
+    ```
 

@@ -55,12 +55,16 @@ Pour affecter des informations spécifiques d’identification d’authentificat
 
 1.  Exécutez les commandes suivantes pour obtenir les informations d’identification de la forêt locale et de la forêt distante.
     
-        $LocalCredentials = Get-Credential
-        $RemoteCredentials = Get-Credential
+    ```powershell
+    $LocalCredentials = Get-Credential
+    $RemoteCredentials = Get-Credential
+    ```
 
 2.  Exécutez les commandes pour transmettre les informations d’identification aux paramètres *LocalForestCredential* et *RemoteForestCredential* dans le script Prepare-MoveRequest.ps1.
     
-        Prepare-MoveRequest.ps1 -Identity JohnSmith@Fabrikan.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials
+    ```powershell
+    Prepare-MoveRequest.ps1 -Identity JohnSmith@Fabrikan.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials
+    ```
 
 ## Ensemble des paramètres du script
 
@@ -169,12 +173,16 @@ Cet exemple fournit un seul utilisateur à extension messagerie lié dans la for
 
 1.  Exécutez les commandes suivantes pour obtenir les informations d’identification de la forêt locale et de la forêt distante.
     
-        $LocalCredentials = Get-Credential
-        $RemoteCredentials = Get-Credential
+    ```powershell
+    $LocalCredentials = Get-Credential
+    $RemoteCredentials = Get-Credential
+    ```
 
 2.  Exécutez la commande suivante pour transmettre les informations d’identification aux paramètres *LocalForestCredential* et *RemoteForestCredential* dans le script Prepare-MoveRequest.ps1.
     
-        Prepare-MoveRequest.ps1 -Identity JamesAlvord@Contoso.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials -LinkedMailUser 
+    ```powershell
+    Prepare-MoveRequest.ps1 -Identity JamesAlvord@Contoso.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials -LinkedMailUser 
+    ```
 
 ## Exemple : Traitement en pipeline
 
@@ -183,12 +191,14 @@ Cet exemple prend en charge le traitement en pipeline si vous fournissez une lis
 1.  Exécutez la commande suivante.
     
     ```powershell
-$UserCredentials = Get-Credential
-```
+    $UserCredentials = Get-Credential
+    ```
 
 2.  Exécutez la commande suivante pour transmettre les informations d’identification au paramètre *RemoteForestCredential* dans le script Prepare-MoveRequest.ps1.
     
-        "IanP@Contoso.com", "JoeAn@Contoso.com" | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
+    ```powershell
+    "IanP@Contoso.com", "JoeAn@Contoso.com" | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
+    ```
 
 ## Exemple : Utiliser un fichier .csv pour créer en bloc des utilisateurs à extension messagerie
 
@@ -209,12 +219,14 @@ Cet exemple appelle un fichier .csv pour créer en bloc les utilisateurs à exte
 1.  Exécutez la commande suivante permettant d’obtenir les informations d’identification pour la forêt distante.
     
     ```powershell
-$UserCredentials = Get-Credential
-```
+    $UserCredentials = Get-Credential
+    ```
 
 2.  Exécutez la commande suivante pour transmettre les informations d’identification au paramètre *RemoteForestCredential* dans le script Prepare-MoveRequest.ps1.
     
-        Import-Csv Test.csv | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
+    ```powershell
+    Import-Csv Test.csv | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
+    ```
 
 ## Comportement de script par objet cible
 

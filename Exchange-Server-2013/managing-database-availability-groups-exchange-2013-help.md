@@ -616,7 +616,9 @@ Dans la configuration suivante, il existe quatre sous-réseaux configurés dans 
 
 Par défaut, les DAG effectuent une recherche de tous les réseaux détectés et configurés pour utilisation par le cluster sous-jacent. Cela inclut tout réseau iSCSI (Internet SCSI) en cours d’utilisation du fait de l’utilisation du stockage iSCSI pour un ou plusieurs membres du DAG. Il est recommandé que le stockage iSCSI utilise des réseaux dédiés et des cartes réseau. Ces réseaux ne devraient pas être gérés ni par le DAG ni par son cluster ni utilisés comme réseaux de DAG (MAPI ou réplication). Leur utilisation par le DAG devrait au contraire être désactivée manuellement, de manière à ce qu’ils soient dédiés au trafic du stockage iSCSI. Pour que les réseaux iSCSI ne soient plus détectés et utilisés comme réseaux DAG, configurez le DAG pour qu’il ignore tous les réseaux iSCSI détectés à l’aide de la cmdlet [Set-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/fr-fr/library/dd298008\(v=exchg.150\)), comme indiqué dans cet exemple :
 
-    Set-DatabaseAvailabilityGroupNetwork -Identity DAG2\DAGNetwork02 -ReplicationEnabled:$false -IgnoreNetwork:$true
+```powershell
+Set-DatabaseAvailabilityGroupNetwork -Identity DAG2\DAGNetwork02 -ReplicationEnabled:$false -IgnoreNetwork:$true
+```
 
 Cette commande désactive également le réseau pour une utilisation par le cluster. Même si les réseaux iSCSI continuent à apparaître en tant que réseaux DAG, ils ne sont pas utilisés pour le trafic MAPI ou de réplication une fois la commande ci-dessus exécutée.
 

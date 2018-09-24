@@ -96,14 +96,14 @@ Pour recréer la boîte aux lettres d’arbitrage FederatedEmail.4c1f4d8b-8179-4
 1.  Si des boîtes aux lettres d’arbitrage sont manquantes, exécutez la commande suivante :
     
     ```powershell
-.\Setup /preparead /IAcceptExchangeServerLicenseTerms
-```
+    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
 
 2.  Dans Environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante :
     
     ```powershell
-Enable-Mailbox -Arbitration -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042"
-```
+    Enable-Mailbox -Arbitration -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042"
+    ```
 
 ## Recréation de la boîte aux lettres Assistant Approbation Microsoft Exchange
 
@@ -112,12 +112,14 @@ Pour recréer la boîte aux lettres d’arbitrage SystemMailbox{1f05a927-9350-4e
 1.  Si des boîtes aux lettres d’arbitrage sont manquantes, exécutez la commande suivante :
     
     ```powershell
-.\Setup /preparead /IAcceptExchangeServerLicenseTerms
-```
+    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
 
 2.  Dans Environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante :
     
-        Get-User | Where-Object {$_.Name -like "SystemMailbox{1f05a927-7709-4e35-9dbe-d0f608fb781a}"} | Enable-Mailbox -Arbitration
+    ```powershell
+    Get-User | Where-Object {$_.Name -like "SystemMailbox{1f05a927-7709-4e35-9dbe-d0f608fb781a}"} | Enable-Mailbox -Arbitration
+    ```
 
 ## Recréation de la boîte aux lettres Migration Microsoft Exchange
 
@@ -126,20 +128,20 @@ Pour recréer la boîte aux lettres d’arbitrage Migration.8f3e7716-2011-43e4-9
 1.  Si des boîtes aux lettres d’arbitrage sont manquantes, exécutez la commande suivante :
     
     ```powershell
-.\Setup /preparead /IAcceptExchangeServerLicenseTerms
-```
+    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
 
 2.  Dans Environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante :
     
     ```powershell
-Enable-Mailbox -Arbitration -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136"
-```
+    Enable-Mailbox -Arbitration -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136"
+    ```
 
 3.  Dans Environnement de ligne de commande Exchange Management Shell, définissez les fonctionnalités persistantes (msExchCapabilityIdentifiers) en exécutant la commande suivante :
     
     ```powershell
-Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management:$True -Force
-```
+    Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management:$True -Force
+    ```
 
 ## Recréation de la boîte aux lettres système Découverte Microsoft Exchange
 
@@ -148,8 +150,8 @@ Pour recréer la boîte aux lettres d’arbitrage SystemMailbox{e0dc1c29-89c3-40
 1.  Exécutez la commande suivante :
     
     ```powershell
-.\Setup /preparead /IAcceptExchangeServerLicenseTerms
-```
+    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
 
 ## Recréation de la boîte aux lettres d’organisation Microsoft Exchange pour les carnets d’adresses en mode hors connexion
 
@@ -158,22 +160,26 @@ Pour recréer la boîte aux lettres d’arbitrage SystemMailbox{bb558c35-97f1-4c
 1.  Si des boîtes aux lettres d’arbitrage sont manquantes, exécutez la commande suivante :
     
     ```powershell
-.\Setup /preparead /IAcceptExchangeServerLicenseTerms
-```
+    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
 
 2.  Dans Environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante :
     
     ```powershell
-Enable-Mailbox -Arbitration -Identity "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}"
-```
+    Enable-Mailbox -Arbitration -Identity "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}"
+    ```
 
 3.  Dans Environnement de ligne de commande Exchange Management Shell, définissez les fonctionnalités persistantes (msExchCapabilityIdentifiers) en exécutant la commande suivante :
     
-        Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration | Set-Mailbox -Arbitration -UMGrammar:$True -OABGen:$True -GMGen:$True -ClientExtensions:$True -MessageTracking:$True -PstProvider:$True -MaxSendSize 1GB -Force
+    ```powershell
+    Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration | Set-Mailbox -Arbitration -UMGrammar:$True -OABGen:$True -GMGen:$True -ClientExtensions:$True -MessageTracking:$True -PstProvider:$True -MaxSendSize 1GB -Force
+    ```
 
 Lorsque vous avez terminé, si vous exécutez la commande `$OABMBX = Get-Mailbox "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}" -Arbitration (Get-ADUser $OABMBX.SamAccountName -Properties *).msExchCapabilityIdentifiers`, vous verrez que les éléments 46, 47 et 51 sont manquants. Exécutez la commande suivante pour rajouter toutes les fonctionnalités :
 
-    Set-ADUser $OABMBX.SamAccountName -Add @{"msExchCapabilityIdentifiers"="40","42","43","44","47","51","52","46"}
+```powershell
+Set-ADUser $OABMBX.SamAccountName -Add @{"msExchCapabilityIdentifiers"="40","42","43","44","47","51","52","46"}
+```
 
 ## Comment savoir si cela a fonctionné ?
 

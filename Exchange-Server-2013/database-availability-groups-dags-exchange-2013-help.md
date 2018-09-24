@@ -59,17 +59,21 @@ Lors de sa création, le DAG reçoit un nom unique et soit une ou plusieurs adre
 
 Cet exemple montre comment utiliser l’environnement de ligne de commande Exchange Management Shell pour créer un DAG sans point d’accès administratif de cluster qui aura trois serveurs. Deux serveurs (EX1 et EX2) sont sur le même sous-réseau (10.0.0.0) et le troisième (EX3) se trouve sur un autre sous-réseau (192.168.0.0).
 
-    New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer EX4 -DatabaseAvailabilityGroupIPAddresses 10.0.0.5,192.168.0.5
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX1
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX2
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX3
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer EX4 -DatabaseAvailabilityGroupIPAddresses 10.0.0.5,192.168.0.5
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX1
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX2
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX3
+```
 
 Les commandes pour créer un DAG sans point d’accès administratif de cluster sont très similaires :
 
-    New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer EX4 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress])::None
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX1
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX2
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX3
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer EX4 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress])::None
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX1
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX2
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX3
+```
 
 Le cluster pour DAG1 est créé lorsqu'EX1 est ajouté au groupe de disponibilité de base de données. Au cours de la création du cluster, la cmdlet **Add-DatabaseAvailabilityGroupServer** récupère les adresses IP configurées pour le DAG et ignore celles qui ne correspondent à aucun des sous-réseaux trouvés sur EX1. Dans le premier exemple ci-dessus, le cluster pour DAG1 est créé avec l’adresse IP 10.0.0.5 et l’adresse 192.168.0.5 est ignorée. Dans le second exemple ci-dessus, la valeur du paramètre *DatabaseAvailabilityGroupIPAddresses* demande à la tâche de créer un cluster de basculement pour le DAG qui ne dispose pas de point d’accès administratif. Ainsi, le cluster est créé avec une ressource de nom de réseau ou d’adresse IP dans le groupe de ressources de base de cluster.
 

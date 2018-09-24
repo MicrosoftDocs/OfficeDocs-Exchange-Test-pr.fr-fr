@@ -108,28 +108,34 @@ Vous pouvez modifier la stratégie de partage par défaut pour permettre à tous
   - Cet exemple crée la stratégie de partage Contoso pour le domaine externe fédéré contoso.com. Cette stratégie permet aux utilisateurs du domaine contoso.com de consulter en détail les informations de disponibilité de calendrier (disponible/occupé) de votre utilisateur. Par défaut, cette stratégie est activée.
     
     ```powershell
-New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
-```
+    New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+    ```
 
   - Cet exemple crée la stratégie de partage ContosoWoodgrove pour deux domaines fédérés différents (contoso.com et woodgrovebank.com) avec des actions de partage spécifiques configurées pour chaque domaine. La stratégie est désactivée.
     
-        New-SharingPolicy -Name "ContosoWoodgrove" -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'woodgrovebank.com: CalendarSharingFreeBusyDetail -Enabled $false
+    ```powershell
+    New-SharingPolicy -Name "ContosoWoodgrove" -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'woodgrovebank.com: CalendarSharingFreeBusyDetail -Enabled $false
+    ```
 
   - Cet exemple crée la stratégie de partage Anonyme pour une organisation Exchange avec le serveur d’accès au client CAS01 et le serveur de boîtes aux lettres MAIL01, avec l’action de partage configurée pour des informations de disponibilité de calendrier limitées. Cette stratégie permet aux utilisateurs de votre organisation Exchange d’inviter des utilisateurs disposant d’un accès Internet à consulter leurs informations de disponibilité de calendrier en leur envoyant un lien. La stratégie est activée.
     
     1.  Définissez l’URL du proxy Web pour MAIL01.
         
         ```powershell
-Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
-```
+        Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
+        ```
     
     2.  Activez le répertoire virtuel de publication sur CAS01.
         
-            Set-OwaVirtualDirectory -Identity "CAS01" -ExternalURL "<URL for CAS01>" -CalendarPublishingEnabled $true
+        ```powershell
+        Set-OwaVirtualDirectory -Identity "CAS01" -ExternalURL "<URL for CAS01>" -CalendarPublishingEnabled $true
+        ```
     
     3.  Créez la stratégie de partage Anonyme et configurez le partage d’informations de calendrier limitées.
         
-            New-SharingPolicy -Name "Anonymous" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+        ```powershell
+        New-SharingPolicy -Name "Anonymous" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+        ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques suivantes :
 

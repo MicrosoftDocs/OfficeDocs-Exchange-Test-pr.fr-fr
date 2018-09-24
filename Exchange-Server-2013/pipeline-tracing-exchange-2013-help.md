@@ -103,12 +103,14 @@ Vous pouvez ouvrir les fichiers instantanés de message à l'aide de Bloc-notes 
 
 Chaque fichier instantané de message commence par des en-têtes qui sont ajoutés au contenu du message et répertorient l'événement SMTP et l'agent de transport auquel le fichier instantané de message est lié. Ces en-têtes commencent par `X-CreatedBy: MessageSnapshot-Begin injected headers` et se terminent par `X-EndOfInjectedXHeaders: MessageSnapshot-End injected headers`. Ils sont remplacés dans chaque fichier instantané de message par l'agent de transport et l'événement SMTP suivants. Voici un exemple des en-têtes qui sont ajoutés à un fichier de message électronique :
 
-    X-CreatedBy: MessageSnapshot-Begin injected headers
-    X-MessageSnapshot-UTC-Time: 2013-01-23T23:20:18.138Z
-    X-MessageSnapshot-Record-Id: 21474836486
-    X-MessageSnapshot-Source: OnSubmittedMessageX-Sender: michelle@nwtraders.com
-    X-Receiver: chris@contoso.com
-    X-EndOfInjectedXHeaders: MessageSnapshot-End injected headers
+```powershell
+X-CreatedBy: MessageSnapshot-Begin injected headers
+X-MessageSnapshot-UTC-Time: 2013-01-23T23:20:18.138Z
+X-MessageSnapshot-Record-Id: 21474836486
+X-MessageSnapshot-Source: OnSubmittedMessageX-Sender: michelle@nwtraders.com
+X-Receiver: chris@contoso.com
+X-EndOfInjectedXHeaders: MessageSnapshot-End injected headers
+```
 
 Sous les en-têtes de l'instantané de message, le fichier inclut le contenu du message comprenant tous les en-têtes du message d'origine. Si un agent de transport modifie le contenu du message, les modifications sont intégrées au message. Le message étant traité par chaque agent de transport, les modifications apportées par chaque agent sont appliquées au contenu du message. Si un agent de transport ne modifie pas le contenu du message, l'instantané de message créé par cet agent est identique à l'instantané de message créé par l'agent de transport précédent.
 

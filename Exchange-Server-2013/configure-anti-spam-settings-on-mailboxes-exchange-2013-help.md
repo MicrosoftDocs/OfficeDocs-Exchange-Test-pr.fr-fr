@@ -47,7 +47,9 @@ Vous pouvez configurer des paramètres anti-courrier indésirable spécifiques s
 
 Utilisez la syntaxe suivante pour configurer les paramètres anti-courrier indésirable pour une boîte aux lettres unique.
 
-    Set-Mailbox <MailboxIdentity> -AntispamBypassEnabled <$true | $false> -RequireSenderAuthenticationEnabled <$true | $false> -SCLDeleteEnabled <$true | $false | $null> -SCLDeleteThreshold <0-9 | $null> -SCLJunkEnabled <$true | $false | $null > -SCLJunkThreshold <0-9 | $null> -SCLQuarantineEnabled <$true | $false | $null > -SCLQuarantineThreshold <0-9 | $null> -SCLRejectEnabled <$true | $false | $null > -SCLRejectThreshold <0-9 | $null>
+```powershell
+Set-Mailbox <MailboxIdentity> -AntispamBypassEnabled <$true | $false> -RequireSenderAuthenticationEnabled <$true | $false> -SCLDeleteEnabled <$true | $false | $null> -SCLDeleteThreshold <0-9 | $null> -SCLJunkEnabled <$true | $false | $null > -SCLJunkThreshold <0-9 | $null> -SCLQuarantineEnabled <$true | $false | $null > -SCLQuarantineThreshold <0-9 | $null> -SCLRejectEnabled <$true | $false | $null > -SCLRejectThreshold <0-9 | $null>
+```
 
 Dans cet exemple, nous configurons la boîte aux lettres de Jeff Phillips afin qu’elle contourne tous les filtres anti-courrier indésirable et obtienne des messages correspondant ou excédant un seuil SCL de dossier courrier indésirable de 5 indiqué pour son dossier courrier indésirable dans Microsoft Outlook.
 
@@ -61,7 +63,9 @@ Pour vérifier que vous avez correctement configuré les fonctionnalités anti-c
 
 1.  Exécutez la commande suivante :
     
-        Get-Mailbox <MailboxIdentity> | Format-List SCL*,Bypass*,*SenderAuth*
+    ```powershell
+    Get-Mailbox <MailboxIdentity> | Format-List SCL*,Bypass*,*SenderAuth*
+    ```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 
@@ -69,11 +73,15 @@ Pour vérifier que vous avez correctement configuré les fonctionnalités anti-c
 
 Utilisez la syntaxe suivante pour configurer tous les paramètres anti-courrier indésirable pour plusieurs boîtes aux lettres.
 
-    Get-Mailbox [<Filter>]| Set-Mailbox <Anti-Spam Settings>
+```powershell
+Get-Mailbox [<Filter>]| Set-Mailbox <Anti-Spam Settings>
+```
 
 Cet exemple indique comment activer le seuil de mise en quarantaine SCL avec une valeur de 7 sur toutes les boîtes aux lettres du conteneur d’utilisateurs dans le domaine Contoso.com.
 
-    Get-Mailbox -OrganizationalUnit Contoso.com/Users | Set-Mailbox -SCLQuarantineEnabled $true -SCLQuarantineThreshold 7
+```powershell
+Get-Mailbox -OrganizationalUnit Contoso.com/Users | Set-Mailbox -SCLQuarantineEnabled $true -SCLQuarantineThreshold 7
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -81,7 +89,9 @@ Pour vérifier que vous avez correctement configuré les fonctionnalités anti-c
 
 1.  Exécutez la commande suivante :
     
-        Get-Mailbox [<Filter>] | Format-List Name,SCL*,*SenderAuth*
+    ```powershell
+    Get-Mailbox [<Filter>] | Format-List Name,SCL*,*SenderAuth*
+    ```
 
 2.  Vérifiez que les valeurs affichées sont les valeurs que vous avez configurées.
 
@@ -106,8 +116,8 @@ Pour vérifier que vous avez correctement configuré le seuil de courrier indés
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-OrganizationConfig | Format-List SCLJunkThreshold
-```
+    Get-OrganizationConfig | Format-List SCLJunkThreshold
+    ```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 

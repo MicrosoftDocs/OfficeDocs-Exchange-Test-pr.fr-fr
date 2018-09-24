@@ -59,11 +59,15 @@ Pour ajouter des paramètres à une entrée de rôle de haut niveau non délimit
 
 Pour ajouter des paramètres à une entrée de rôle, utilisez la syntaxe suivante.
 
-    Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter -UnscopedTopLevel
+```
 
 Cet exemple montre comment ajouter les paramètres *EmailAddress* et *City* au script **CreateUsers.ps1** sur le rôle non délimité Administrateurs des destinataires.
 
-    Set-ManagementRoleEntry "Recipient Administrators\CreateUsers.ps1" -Parameters EmailAddress, City -AddParameter -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry "Recipient Administrators\CreateUsers.ps1" -Parameters EmailAddress, City -AddParameter -UnscopedTopLevel
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ManagementRoleEntry](https://technet.microsoft.com/fr-fr/library/dd351162\(v=exchg.150\)).
 
@@ -83,11 +87,15 @@ Pour supprimer des paramètres d’une entrée de rôle, vous devez procéder de
 
 Pour supprimer des paramètres d’une entrée de rôle, utilisez la syntaxe suivante.
 
-    Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter -UnscopedTopLevel
+```
 
 Cet exemple montre comment supprimer les paramètres *Delay*, *Force* et *Credential* de la cmdlet **Start-Widget** non-Exchange sur le rôle Administrateurs de serveurs de niveau 1.
 
-    Set-ManagementRoleEntry "Tier 1 Server Administrators\Start-Widget" -Parameters Delay, Force, Credential -RemoveParameter -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry "Tier 1 Server Administrators\Start-Widget" -Parameters Delay, Force, Credential -RemoveParameter -UnscopedTopLevel
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ManagementRoleEntry](https://technet.microsoft.com/fr-fr/library/dd351162\(v=exchg.150\)).
 
@@ -109,11 +117,15 @@ Si vous ne voulez pas qu’un rôle ait accès à un script ou à une cmdlet non
 
 Pour supprimer des paramètres d’une entrée de rôle, utilisez la syntaxe suivante.
 
-    Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters $Null -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters $Null -UnscopedTopLevel
+```
 
 Cet exemple montre comment supprimer tous les paramètres du script FindMailboxesOverQuota.ps1 sur le rôle Administrateurs des destinataires.
 
-    Set-ManagementRoleEntry "Recipient Administrators\FindMailboxesOverQuota.ps1" -Parameters $Null -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry "Recipient Administrators\FindMailboxesOverQuota.ps1" -Parameters $Null -UnscopedTopLevel
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ManagementRoleEntry](https://technet.microsoft.com/fr-fr/library/dd351162\(v=exchg.150\)).
 
@@ -131,11 +143,15 @@ Si vous ne souhaitez inclure qu’un ensemble spécifique de paramètres dans un
 
 Pour spécifier un ensemble spécifique de paramètres, utilisez la syntaxe suivante.
 
-    Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -UnscopedTopLevel
+```
 
 Cet exemple montre comment inclure uniquement les paramètres *Alias*, *DisplayName*, *WidgetConfig* et *Enabled* sur la cmdlet **Set-Widget** sur le rôle Administrateurs de destinataires de messages de Seattle.
 
-    Set-ManagementRoleEntry "Seattle Mail Recipient Admins\Set-UMMailbox" -Parameters Alias, DisplayName, WidgetConfig, Enabled -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry "Seattle Mail Recipient Admins\Set-UMMailbox" -Parameters Alias, DisplayName, WidgetConfig, Enabled -UnscopedTopLevel
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ManagementRoleEntry](https://technet.microsoft.com/fr-fr/library/dd351162\(v=exchg.150\)).
 

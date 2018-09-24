@@ -129,8 +129,8 @@ Pour plus d'informations sur l'installation d'Exchange 2013, consultez la rubri
     2.  Exécutez la commande suivante.
         
         ```powershell
-Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
-```
+        Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+        ```
     
     3.  Exécutez les tâches de gestion des agents de transport comme vous procédez habituellement.
     
@@ -160,7 +160,9 @@ Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
     
     Pour contourner ce problème, vous devez supprimer la méthode d’authentification `Integrated` du connecteur de réception client sur vos serveurs d’accès au client Exchange 2013. Pour supprimer la méthode d’authentification `Integrated` d’un connecteur de réception client, exécutez la commande suivante sur chaque serveur d’accès au client Exchange 2013 qui pourrait recevoir des connexions à partir d’ordinateurs exécutant la cmdlet **Send-MailMessage** :
     
-        Set-ReceiveConnector "<server name>\Client Frontend <server name>" -AuthMechanism Tls, BasicAuth, BasicAuthRequireTLS
+    ```powershell
+    Set-ReceiveConnector "<server name>\Client Frontend <server name>" -AuthMechanism Tls, BasicAuth, BasicAuthRequireTLS
+    ```
 
   - **Le protocole MAPI sur HTTP peut rencontrer des problèmes de performances lors de la mise à niveau vers Exchange 2013 SP1**   Si vous effectuez une mise à niveau à partir d’une mise à jour cumulative Exchange 2013 vers Exchange 2013 SP1 et que vous activez MAPI sur HTTP, les clients qui se connectent à un serveur Exchange 2013 SP1 à l’aide de ce protocole peuvent rencontrer des problèmes de performances. En effet, les paramètres requis ne sont pas configurés lors d’une mise à niveau à partir d’une mise à jour cumulative vers Exchange 2013 SP1. Ce problème ne se produit pas si vous effectuez une mise à niveau vers Exchange 2013 SP1 depuis Exchange 2013 RTM ou si vous installez un nouveau serveur Exchange 2013 SP1 ou versions ultérieures.
     
@@ -171,22 +173,26 @@ Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
     
     1.  Sur les serveurs exécutant le rôle serveur d’accès au client, exécutez les commandes suivantes dans une invite de commandes Windows :
         
-            set AppCmdLocation=%windir%\System32\inetsrv
-            set ExchangeLocation=%ProgramFiles%\Microsoft\Exchange Server\V15
-            
-            %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiFrontEndAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiFrontEndAppPool_CLRConfig.config"
-            %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiFrontEndAppPool"
+      ```powershell
+      set AppCmdLocation=%windir%\System32\inetsrv
+      set ExchangeLocation=%ProgramFiles%\Microsoft\Exchange Server\V15
+      
+      %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiFrontEndAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiFrontEndAppPool_CLRConfig.config"
+      %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiFrontEndAppPool"
+      ```
     
     2.  Sur les serveurs exécutant le rôle serveur de boîtes aux lettres, exécutez les commandes suivantes dans une invite de commandes Windows :
         
-            set AppCmdLocation=%windir%\System32\inetsrv
-            set ExchangeLocation=%ProgramFiles%\Microsoft\Exchange Server\V15
-            
-            %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiMailboxAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiMailboxAppPool_CLRConfig.config"
-            %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiMailboxAppPool"
-            
-            %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiAddressBookAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiAddressBookAppPool_CLRConfig.config"
-            %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiAddressBookAppPool"
+        ```powershell
+        set AppCmdLocation=%windir%\System32\inetsrv
+        set ExchangeLocation=%ProgramFiles%\Microsoft\Exchange Server\V15
+        
+        %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiMailboxAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiMailboxAppPool_CLRConfig.config"
+        %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiMailboxAppPool"
+        
+        %AppCmdLocation%\appcmd.exe SET AppPool "MSExchangeMapiAddressBookAppPool" /CLRConfigFile:"%ExchangeLocation%\bin\MSExchangeMapiAddressBookAppPool_CLRConfig.config"
+        %AppCmdLocation%\appcmd.exe RECYCLE AppPool "MSExchangeMapiAddressBookAppPool"
+        ```
 
 ## Coexistence avec Exchange 2010
 

@@ -44,20 +44,22 @@ Dans la plupart des cas, nous vous recommandons de ne pas modifier le paramètre
 1.  Dans la fenêtre d’invite de commandes, ouvrez le fichier MSExchangeMailboxAssistants.exe.config dans le Bloc-notes en exécutant la commande suivante :
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\MSExchangeMailboxAssistants.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\MSExchangeMailboxAssistants.exe.config
+    ```
 
 2.  Localisez la clé *\</appsettings\>* à la fin du fichier et collez la clé suivante avant la clé *\</appsettings\>* :
     
     ```command line
-<add key="IncludeSafeDomains" value="true" />
-```
+    <add key="IncludeSafeDomains" value="true" />
+    ```
 
 3.  Quand vous avez terminé, enregistrez et fermez le fichier MSExchangeMailboxAssistants.exe.config.
 
 4.  Redémarrez le service Assistants de boîte aux lettres de Microsoft Exchange en exécutant la commande suivante :
     
-        net stop MSExchangeMailboxAssistants && net start MSExchangeMailboxAssistants
+    ```powershell
+    net stop MSExchangeMailboxAssistants && net start MSExchangeMailboxAssistants
+    ```
 
 ## Comment savoir si cela a fonctionné ?
 

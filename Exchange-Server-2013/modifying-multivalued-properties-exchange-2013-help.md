@@ -107,9 +107,13 @@ Set-RecipientFilterConfig -BlockedRecipients @{Remove="david@adatum.com"}
 
 Des combinaisons plus complexes peuvent être utilisées, notamment en ajoutant ou en supprimant simultanément des éléments dans une propriété. Pour ce faire, insérez un point-virgule (`;`) entre les actions `Add` et `Remove`. Par exemple :
 
-    Set-RecipientFilterConfig -BlockedRecipients @{Add="carter@contoso.com", "sam@northwindtraders.com", "brian@adatum.com"; Remove="john@contoso.com"}
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients @{Add="carter@contoso.com", "sam@northwindtraders.com", "brian@adatum.com"; Remove="john@contoso.com"}
+```
 
 Si vous réutilisez la commande `Get-RecipientFilterConfig | Format-List BlockedRecipients`, on constate que les adresses de messagerie de Carter, Sam et Brian ont été ajoutées alors que l’adresse de John a été supprimée.
 
-    BlockedRecipients : {brian@adatum.com, sam@northwindtraders.com, carter@contoso.com, chris@contoso.com, kim@northwindtraders.com}
+```powershell
+BlockedRecipients : {brian@adatum.com, sam@northwindtraders.com, carter@contoso.com, chris@contoso.com, kim@northwindtraders.com}
+```
 

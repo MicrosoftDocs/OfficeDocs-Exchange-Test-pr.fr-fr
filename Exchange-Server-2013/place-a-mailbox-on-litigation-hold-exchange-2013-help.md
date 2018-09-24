@@ -91,7 +91,9 @@ Votre organisation peut exiger que toutes les données de boîtes aux lettres so
 
 Dans cet exemple, toutes les boîtes aux lettres d’utilisateurs de l’organisation sont placées en conservation pour litige pendant un an (365 jours).
 
-    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 365
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 365
+```
 
 Dans cet exemple, la cmdlet [Get-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123685\(v=exchg.150\)) est utilisée pour récupérer toutes les boîtes aux lettres de l’organisation, un filtre de destinataire est spécifié pour inclure toutes les boîtes aux lettres d’utilisateurs, puis la liste des boîtes aux lettres est dirigée vers la cmdlet [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)) pour activer la conservation pour litige et la durée de conservation.
 
@@ -127,11 +129,15 @@ Pour vérifier que vous avez correctement placé une boîte aux lettres en conse
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez l’une des commandes suivantes :
     
-        Get-Mailbox <name of mailbox> | FL LitigationHold*
+    ```powershell
+    Get-Mailbox <name of mailbox> | FL LitigationHold*
+    ```
     
     ou
     
-        Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | FL Name,LitigationHold*
+    ```powershell
+    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | FL Name,LitigationHold*
+    ```
     
     Si une boîte aux lettres est placée en conservation pour litige indéfiniment, la valeur de la propriété de boîte aux lettres *LitigationHoldDuration* est définie sur `Unlimited`.
 
@@ -151,25 +157,25 @@ Pour vérifier que vous avez correctement placé une boîte aux lettres en conse
     
     Voici quelques exemples d’utilisation des cmdlets **Get-Mailbox** et **Get-Recipient** pour renvoyer un sous-ensemble de boîtes aux lettres sur la base de propriétés de boîte aux lettres ou d’utilisateur courantes. Ces exemples supposent que les propriétés de boîte aux lettres appropriées (telles que *CustomAttributeN* ou *Department*) aient été renseignées.
     		
-       ```
-			Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
-       ```
+    ```powershell
+    Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
+    ```
 
-       ```
-			Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
-       ```
+    ```powershell
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
+    ```
 
-       ```
-			Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
-       ```
+    ```powershell
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
+    ```
 
-       ```
-			Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
-       ```
+    ```powershell
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
+    ```
 
-       ```
-			Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
-	   ```	
+    ```powershell
+    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+    ```	
     
         
     Vous pouvez utiliser d’autres propriétés de boîte aux lettres utilisateur dans un filtre pour inclure ou exclure des boîtes aux lettres. Pour plus d’informations, voir [Propriétés filtrables pour le paramètre -Filter](https://technet.microsoft.com/fr-fr/library/bb738155\(v=exchg.150\)).

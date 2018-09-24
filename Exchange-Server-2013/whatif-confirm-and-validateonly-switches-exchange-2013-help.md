@@ -35,7 +35,9 @@ Lorsque le commutateur *WhatIf* est appliqué à une commande, la commande s'ex�
 
 Lorsque vous exécutez une commande avec le commutateur *WhatIf*, vous placez le commutateur *WhatIf* à la fin de la commande, comme dans l’exemple suivant :
 
-    New-AcceptedDomain -Name "Contoso Domain" -DomainName "contoso.com" -WhatIf 
+```powershell
+New-AcceptedDomain -Name "Contoso Domain" -DomainName "contoso.com" -WhatIf 
+```
 
 Lorsque vous exécutez cet exemple de commande, le texte suivant est retourné par le Shell :
 
@@ -75,11 +77,13 @@ Get-JournalRule | Enable-JournalRule -Confirm
 
 Lorsque vous exécutez cet exemple de commande, la boîte de dialogue suivante est retournée par le Shell :
 
-    Confirm
-    Are you sure you want to perform this action?
-    Enabling journal rule "Litigation Journal Rule".
-    [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help
-    (default is "Y"):
+```powershell
+Confirm
+Are you sure you want to perform this action?
+Enabling journal rule "Litigation Journal Rule".
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help
+(default is "Y"):
+```
 
 La boîte de dialogue de confirmation fournit les options suivantes:
 

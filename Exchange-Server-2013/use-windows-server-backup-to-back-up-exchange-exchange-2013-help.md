@@ -81,7 +81,9 @@ Pour vérifier que vous avez correctement sauvegardé les données, procédez co
 
   - Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell pour vérifier que chaque base de données sur les volumes sélectionnés a été correctement sauvegardée :
     
-        Get-MailboxDatabase -Server <ServerName> -Status | fl Name,*FullBackup
+    ```powershell
+    Get-MailboxDatabase -Server <ServerName> -Status | fl Name,*FullBackup
+    ```
     
     Les propriétés *SnapshotLastFullBackup* et *LastFullBackup* de la base de données indiquent quand la dernière sauvegarde réussie a eu lieu, et s’il s’agissait d’une sauvegarde complète VSS.
 
