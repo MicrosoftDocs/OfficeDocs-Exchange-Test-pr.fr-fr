@@ -66,10 +66,12 @@ Pour vous connecter à un serveur SMTP de destination via Telnet sur le port 25
     
     Les données en sortie de la commande sont similaires à ce qui suit :
     
-        fabrikam.com mx preference=10, mail exchanger = mail1.fabrikam.com
-        fabrikam.com mx preference=20, mail exchanger = mail2.fabrikam.com
-        mail1.fabrikam.com internet address = 192.168.1.10
-        mail2 fabrikam.com internet address = 192.168.1.20
+    ```powershell
+    fabrikam.com mx preference=10, mail exchanger = mail1.fabrikam.com
+    fabrikam.com mx preference=20, mail exchanger = mail2.fabrikam.com
+    mail1.fabrikam.com internet address = 192.168.1.10
+    mail2 fabrikam.com internet address = 192.168.1.20
+    ```
     
     Vous pouvez utiliser les noms d'hôte ou adresses IP associés aux enregistrements MX comme serveur SMTP de destination. Une valeur préférée inférieure indique un serveur SMTP préféré. Vous pouvez utiliser plusieurs enregistrements MX et des valeurs préférées différentes pour l'équilibrage de charge et la tolérance de panne.
 
@@ -118,8 +120,8 @@ Dans cet exemple, les valeurs suivantes sont utilisées :
 8.  Tapez **DATA**, puis appuyez sur Entrée. Vous recevez une réponse similaire à ce qui suit :
     
     ```powershell
-354 Start mail input; end with <CLRF>.<CLRF>
-```
+    354 Start mail input; end with <CLRF>.<CLRF>
+    ```
 
 9.  Tapez **Subject: Test depuis Contoso**, puis appuyez sur ENTRÉE.
 
@@ -130,14 +132,14 @@ Dans cet exemple, les valeurs suivantes sont utilisées :
 12. Appuyez sur Entrée, tapez un point ( **.** ), puis appuyez sur Entrée. Vous recevez une réponse similaire à ce qui suit :
     
     ```powershell
-250 2.6.0 <GUID> Queued mail for delivery
-```
+    250 2.6.0 <GUID> Queued mail for delivery
+    ```
 
 13. Pour vous déconnecter du serveur SMTP de destination, tapez **QUIT**, puis appuyez sur Entrée. Vous recevez une réponse similaire à ce qui suit :
     
     ```powershell
-221 2.0.0 Service closing transmission channel
-```
+    221 2.0.0 Service closing transmission channel
+    ```
 
 14. Pour fermer la session Telnet, tapez **quit**, puis appuyez sur Entrée.
 

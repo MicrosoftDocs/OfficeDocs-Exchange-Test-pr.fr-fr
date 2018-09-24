@@ -77,7 +77,9 @@ Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
 
 Maintenant, vous pouvez créer une stratégie d’adresse de messagerie pour tous les destinataires ayant la propriété *CustomAttribute1* égale à SalesOU, comme illustré dans l’exemple.
 
-    New-EmailAddressPolicy -Name "Sales" -RecipientFilter { CustomAttribute1 -eq "SalesOU"} -EnabledEmailAddressTemplates "SMTP:%s%2g@sales.contoso.com"
+```powershell
+New-EmailAddressPolicy -Name "Sales" -RecipientFilter { CustomAttribute1 -eq "SalesOU"} -EnabledEmailAddressTemplates "SMTP:%s%2g@sales.contoso.com"
+```
 
 ## Exemple d’attribut personnalisé utilisant le paramètre ConditionalCustomAttributes
 
@@ -85,7 +87,9 @@ Quand on crée des groupes de distribution dynamique, des stratégies d’adress
 
 Cet exemple crée un groupe de distribution dynamique basé sur les destinataires dont *CustomAttribute1* est défini sur SalesOU.
 
-    New-DynamicDistributionGroup -Name "Sales Users and Contacts" -IncludedRecipients "MailboxUsers,MailContacts" -ConditionalCustomAttribute1 "SalesOU"
+```powershell
+New-DynamicDistributionGroup -Name "Sales Users and Contacts" -IncludedRecipients "MailboxUsers,MailContacts" -ConditionalCustomAttribute1 "SalesOU"
+```
 
 > [!NOTE]
 > Vous devez utiliser le paramètre <em>IncludedRecipients</em> si vous utilisez un paramètre <em>Conditional</em>. En outre, vous ne pouvez pas utiliser de paramètres <em>Conditional</em> si vous utilisez le paramètre <em>RecipientFilter</em>. Si vous désirez des filtres supplémentaires pour créer votre groupe de distribution dynamique, des stratégies d’adresses de messagerie, ou des listes d’adresses, utilisez le paramètre <em>RecipientFilter</em>.
@@ -101,7 +105,9 @@ Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
 
 Ensuite, un groupe de distribution dynamique pour tous les étudiants inscrits à MATH307 est créé à l’aide du paramètre *RecipientFilter* où *ExtensionCustomAttribute1* est égal à MATH307. Lorsque vous utilisez les paramètres *ExtentionCustomAttributes*, vous pouvez utiliser l’opérateur `-eq` au lieu de l’opérateur `-like`.
 
-    New-DynamicDistributionGroup -Name Students_MATH307 -RecipientFilter {ExtensionCustomAttribute1 -eq "MATH307"}
+```powershell
+New-DynamicDistributionGroup -Name Students_MATH307 -RecipientFilter {ExtensionCustomAttribute1 -eq "MATH307"}
+```
 
 Dans cet exemple, les valeurs *ExtensionCustomAttribute1* de Kweku sont mises à jour pour refléter son ajout de la formation ENGL210 et son retrait de la formation ECON202.
 

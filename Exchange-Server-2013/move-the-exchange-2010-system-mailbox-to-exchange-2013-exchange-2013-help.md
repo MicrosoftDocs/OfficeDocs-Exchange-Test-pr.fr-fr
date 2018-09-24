@@ -42,8 +42,8 @@ Pour plus d’informations sur la mise à niveau vers Exchange 2013, consultez 
   - Exécutez la commande suivante dans Exchange 2013 pour obtenir l’identité et la version des serveurs Exchange et des bases de données de boîtes aux lettres qui contiennent les boîtes aux lettres système dans votre organisation.
     
     ```powershell
-Get-Mailbox -Arbitration | FL Name,DisplayName,ServerName,Database,AdminDisplayVersion
-```
+    Get-Mailbox -Arbitration | FL Name,DisplayName,ServerName,Database,AdminDisplayVersion
+    ```
     
     La propriété **AdminDisplayVersion** indique la version d’Exchange que le serveur exécute. La valeur `Version 14.x` indique Exchange 2010 ; la valeur `Version 15.x` indique Exchange 2013.
 
@@ -89,13 +89,17 @@ Get-MailboxDatabase -IncludePreExchange2013 | FL Name,Server,AdminDisplayVersion
 
 Après avoir identifié le nom des bases de données de boîtes aux lettres dans votre organisation, exécutez la commande suivante dans Exchange 2013 pour déplacer la boîte aux lettres système Microsoft Exchange vers une base de données de boîtes aux lettres située sur un serveur Exchange 2013.
 
-    Get-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" | New-MoveRequest -TargetDatabase <name of Exchange 2013 database>
+```powershell
+Get-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" | New-MoveRequest -TargetDatabase <name of Exchange 2013 database>
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez déplacé la boîte aux lettres système Microsoft Exchange vers une base de données de boîtes aux lettres située sur un serveur Exchange 2013, exécutez la commande suivante dans l’environnement Shell.
 
-    Get-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" | FL Database,ServerName,AdminDisplayVersion
+```powershell
+Get-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" | FL Database,ServerName,AdminDisplayVersion
+```
 
 Si la valeur de la propriété **AdminDisplayVersion** est **Version 15.x (Build xxx.x)**, cela confirme que la boîte aux lettres système réside sur une base de données de boîtes aux lettres située sur un serveur Exchange 2013.
 

@@ -54,16 +54,16 @@ Pour vérifier que la stratégie de limitation Organisation a été correctement
 1.  Exécutez la commande suivante.
     
     ```powershell
-Get-ThrottlingPolicy | Format-List
-```
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 2.  Vérifiez que la stratégie de limitation Organisation que vous venez de créer est répertoriée dans la colonne qui affiche l’objet GlobalThrottlingPolicy.
 
 3.  Exécutez la commande suivante.
     
     ```powershell
-Get-ThrottlingPolicy | Format-List
-```
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 4.  Vérifiez que les propriétés associées à la nouvelle stratégie Organisation correspondent à la valeur ou aux valeurs que vous avez configurées.
 

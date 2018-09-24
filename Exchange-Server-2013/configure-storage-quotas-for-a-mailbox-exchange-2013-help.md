@@ -72,11 +72,15 @@ Cet exemple montre comment définir les quotas d’avertissement, d’interdicti
 > Pour vous assurer que les paramètres personnalisés de la boîte aux lettres sont utilisés à la place des paramètres par défaut de la base de données, vous devez définir le paramètre <em>UseDatabaseQuotaDefaults</em> sur <code>$false</code>.
 
 
-    Set-Mailbox -Identity "Joe Healy" -IssueWarningQuota 24.5gb -ProhibitSendQuota 24.75gb -ProhibitSendReceiveQuota 25gb -UseDatabaseQuotaDefaults $false
+```powershell
+Set-Mailbox -Identity "Joe Healy" -IssueWarningQuota 24.5gb -ProhibitSendQuota 24.75gb -ProhibitSendReceiveQuota 25gb -UseDatabaseQuotaDefaults $false
+```
 
 Cet exemple montre comment définir les quotas d’avertissement, d’interdiction d’envoi et d’interdiction d’envoi et de réception pour la boîte aux lettres d’Ayla Kol sur 900 mégaoctets (Mo), 950 Mo et 1 Go respectivement, et configurer la boîte aux lettres pour utiliser les paramètres personnalisés.
 
-    Set-Mailbox -Identity "Ayla Kol" -IssueWarningQuota 900mb -ProhibitSendQuota 950mb -ProhibitSendReceiveQuota 1gb -UseDatabaseQuotaDefaults $false
+```powershell
+Set-Mailbox -Identity "Ayla Kol" -IssueWarningQuota 900mb -ProhibitSendQuota 950mb -ProhibitSendReceiveQuota 1gb -UseDatabaseQuotaDefaults $false
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)).
 
@@ -98,5 +102,7 @@ Ou
 
 Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
 
-    Get-Mailbox <identity> | fl IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
+```powershell
+Get-Mailbox <identity> | fl IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
+```
 

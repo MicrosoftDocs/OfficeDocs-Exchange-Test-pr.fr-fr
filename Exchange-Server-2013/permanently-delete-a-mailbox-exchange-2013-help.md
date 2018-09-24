@@ -76,8 +76,9 @@ Pour vérifier qu’une boîte aux lettres active a été définitivement suppri
 3.  Exécutez la commande suivante pour vérifier que la boîte aux lettres a bien été purgée de la base de données de boîtes aux lettres Exchange.
     
     ```powershell
-Get-MailboxDatabase | Get-MailboxStatistics | Where {         Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }.DisplayName -eq "<display name>" }
-```
+    Get-MailboxDatabase | Get-MailboxStatistics | Where {     ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }.DisplayName -eq "<display name>" }
+    ```
     
     Si la boîte aux lettres a bien été purgée, la commande ne doit renvoyé aucun résultat. Sinon, la commande renvoie des informations sur la boîte aux lettres.
 
@@ -89,13 +90,17 @@ Il existe deux types de boîtes aux lettres déconnectées : désactivé et sup
 
 Exécutez la commande suivante pour déterminer si une boîte aux lettres déconnectée est de type désactivé ou supprimé (récupérable).
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,MailboxGuid,Database,DisconnectReason
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,MailboxGuid,Database,DisconnectReason
+```
 
 La valeur de la propriété *DisconnectReason* pour des boîtes aux lettres déconnectées doit être `Disabled` ou `SoftDeleted`.
 
 Exécuter la commande suivante pour afficher le type de toutes les boîtes aux lettres déconnectées de votre organisation.
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -ne $null } | fl DisplayName,MailboxGuid,Database,DisconnectReason
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -ne $null } | fl DisplayName,MailboxGuid,Database,DisconnectReason
+```
 
 > [!WARNING]
 > Lorsque vous utilisez la cmdlet <strong>Remove-StoreMailbox</strong> pour supprimer définitivement une boîte aux lettres déconnectée, tout son contenu est purgé de la base de données de boîtes aux lettres et la perte des données est définitive.
@@ -103,7 +108,9 @@ Exécuter la commande suivante pour afficher le type de toutes les boîtes aux l
 
 Cet exemple supprime définitivement la boîte aux lettres désactivée portant le GUID 2ab32ce3-fae1-4402-9489-c67e3ae173d3 de la base de données de boîtes aux lettres MBD01.
 
-    Remove-StoreMailbox -Database MBD01 -Identity "2ab32ce3-fae1-4402-9489-c67e3ae173d3" -MailboxState Disabled
+```powershell
+Remove-StoreMailbox -Database MBD01 -Identity "2ab32ce3-fae1-4402-9489-c67e3ae173d3" -MailboxState Disabled
+```
 
 Cet exemple illustre la suppression définitive de la boîte aux lettres supprimée (récupérable) de Dan Jump de la base de données de boîtes aux lettres MBD01.
 
@@ -113,7 +120,9 @@ Remove-StoreMailbox -Database MBD01 -Identity "Dan Jump" -MailboxState SoftDelet
 
 Cet exemple supprime définitivement toutes les boîtes aux lettres supprimées (récupérables) de la base de données de boîtes aux lettres MBD01.
 
-    Get-MailboxStatistics -Database MBD01 | where {$_.DisconnectReason -eq "SoftDeleted"} | ForEach {Remove-StoreMailbox -Database $_.Database -Identity $_.MailboxGuid -MailboxState SoftDeleted}
+```powershell
+Get-MailboxStatistics -Database MBD01 | where {$_.DisconnectReason -eq "SoftDeleted"} | ForEach {Remove-StoreMailbox -Database $_.Database -Identity $_.MailboxGuid -MailboxState SoftDeleted}
+```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Remove-StoreMailbox](https://technet.microsoft.com/fr-fr/library/ff829913\(v=exchg.150\)) et [Get-MailboxStatistics](https://technet.microsoft.com/fr-fr/library/bb124612\(v=exchg.150\)).
 
@@ -122,7 +131,8 @@ Pour des informations détaillées sur la syntaxe et les paramètres, consultez 
 Pour vérifier que la suppression de la boîte aux lettres déconnectée est définitive et qu’elle a bien été purgée de la base de données de boîtes aux lettres Exchange, exécutez la commande suivante.
 
 ```powershell
-Get-MailboxDatabase | Get-MailboxStatistics | Where {     Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }.DisplayName -eq "<display name>" }
+Get-MailboxDatabase | Get-MailboxStatistics | Where { ```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }.DisplayName -eq "<display name>" }
 ```
 
 Si la boîte aux lettres a bien été purgée, la commande ne doit renvoyé aucun résultat. Sinon, la commande renvoie des informations sur la boîte aux lettres.

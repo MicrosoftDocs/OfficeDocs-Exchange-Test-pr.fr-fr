@@ -57,9 +57,11 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Cet exemple d'environnement de ligne de commande illustre la dissociation de la balise de rétention Supprimer - 3 jours de la stratégie de rétention Corp-Users.
 
-    $tags = (Get-RetentionPolicy "Corp-Users").RetentionPolicyTagLinks
-    $tags -= "Deleted Items - 3 Days"
-    Set-RetentionPolicy "Corp-Users" -RetentionPolicyTagLinks $tags
+```powershell
+$tags = (Get-RetentionPolicy "Corp-Users").RetentionPolicyTagLinks
+$tags -= "Deleted Items - 3 Days"
+Set-RetentionPolicy "Corp-Users" -RetentionPolicyTagLinks $tags
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Get-RetentionPolicy](https://technet.microsoft.com/fr-fr/library/dd298086\(v=exchg.150\)) et [Set-RetentionPolicy](https://technet.microsoft.com/fr-fr/library/dd335196\(v=exchg.150\)).
 
@@ -77,11 +79,15 @@ Set-Mailbox jpeoples -RetentionPolicy $null.
 
 Cet exemple d'environnement de ligne de commande illustre la suppression de la stratégie de rétention de toutes les boîtes aux lettres de l'organisation Exchange.
 
-    Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -ne $null} | Set-Mailbox -RetentionPolicy $null
+```powershell
+Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -ne $null} | Set-Mailbox -RetentionPolicy $null
+```
 
 Cet exemple d'environnement de ligne de commande montre comment supprimer la stratégie de rétention Corp-Finance de tous les utilisateurs de boîtes aux lettres ayant appliqué cette stratégie.
 
-    Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -eq "Corp-Finance"} | Set-Mailbox -RetentionPolicy $null
+```powershell
+Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -eq "Corp-Finance"} | Set-Mailbox -RetentionPolicy $null
+```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)) et [Get-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123685\(v=exchg.150\)).
 
@@ -103,11 +109,15 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Cet exemple supprime toutes les balises de rétention dans une organisation Exchange à l'exception de la balise Ne jamais supprimer, qui est utilisée dans la stratégie ArbitrationMailbox créée par le programme d'installation d'Exchange.
 
-    Get-RetentionPolicyTag | ? {$_.RetentionAction -ne "MoveToArchive" -and $_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```powershell
+Get-RetentionPolicyTag | ? {$_.RetentionAction -ne "MoveToArchive" -and $_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```
 
 Cet exemple supprime toutes les balises de rétention à l'exception de la balise Ne jamais supprimer.
 
-    Get-RetentionPolicyTag | ? {$_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```powershell
+Get-RetentionPolicyTag | ? {$_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```
 
 Cette commande supprime la stratégie de rétention Corp-Users d'une organisation Exchange.
 

@@ -57,13 +57,17 @@ Pour activer ou désactiver complètement la réécriture d’adresses, vous dev
 
 Pour désactiver la réécriture d’adresses, exécutez les commandes suivantes :
 
-    Disable-TransportAgent "Address Rewriting Inbound Agent"
-    Disable-TransportAgent "Address Rewriting Outbound Agent"
+```powershell
+Disable-TransportAgent "Address Rewriting Inbound Agent"
+Disable-TransportAgent "Address Rewriting Outbound Agent"
+```
 
 Pour activer la réécriture d’adresses, exécutez les commandes suivantes :
 
-    Enable-TransportAgent "Address Rewriting Inbound Agent"
-    Enable-TransportAgent "Address Rewriting Outbound Agent"
+```powershell
+Enable-TransportAgent "Address Rewriting Inbound Agent"
+Enable-TransportAgent "Address Rewriting Outbound Agent"
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -72,8 +76,8 @@ Pour vérifier que vous avez bien activé ou désactivé la réécriture d’adr
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-TransportAgent
-```
+    Get-TransportAgent
+    ```
 
 2.  Vérifiez que les valeurs de la propriété **Enabled** pour l’agent de réécriture d’adresses pour les messages entrants et l’agent de réécriture d’adresses pour les messages sortants correspondent aux valeurs configurées.
 
@@ -103,39 +107,55 @@ Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-L
 
 Pour réécrire l’adresse de messagerie pour un destinataire unique, utilisez la syntaxe suivante :
 
-    New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress <internal email address> -ExternalAddress <external email address> [-OutboundOnly <$true | $false>]
+```powershell
+New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress <internal email address> -ExternalAddress <external email address> [-OutboundOnly <$true | $false>]
+```
 
 L’exemple suivant réécrit l’adresse de messagerie de tous les messages entrant et sortant de l’organisation Exchange pour le destinataire joe@contoso.com. Les messages sortants sont réécrits de sorte qu’ils semblent provenir de support@northwindtraders.com. L’adresse des messages entrants envoyés à support@northwindtraders.com est réécrite et remplacée par joe@contoso.com afin que ceux-ci soient remis à leur destinataire (le paramètre *OutboundOnly* est défini sur `$false` par défaut).
 
-    New-AddressRewriteEntry -Name "joe@contoso.com to support@northwindtraders.com" -InternalAddress joe@contoso.com -ExternalAddress support@northwindtraders.com
+```powershell
+New-AddressRewriteEntry -Name "joe@contoso.com to support@northwindtraders.com" -InternalAddress joe@contoso.com -ExternalAddress support@northwindtraders.com
+```
 
 ## Réécriture d’adresses de messagerie de destinataires dans un domaine ou un sous-domaine unique
 
 Pour réécrire les adresses de messagerie de destinataires dans un domaine ou sous-domaine unique, utilisez la syntaxe suivante :
 
-    New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress <domain or subdomain> -ExternalAddress <domain> [-OutboundOnly <$true | $false>]
+```powershell
+New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress <domain or subdomain> -ExternalAddress <domain> [-OutboundOnly <$true | $false>]
+```
 
 L’exemple suivant réécrit les adresses de messagerie de tous les messages entrant et sortant de l’organisation Exchange pour les destinataires dans le domaine contoso.com. Les messages sortants sont réécrits de sorte qu’ils semblent provenir du domaine fabrikam.com. Lorsque des messages entrants sont envoyés à des adresses de messagerie dont le domaine est fabrikam.com, celui-ci est réécrit et remplacé par contoso.com pour être remis aux destinataires (le paramètre *OutboundOnly* est `$false` par défaut).
 
-    New-AddressRewriteEntry -Name "Contoso to Fabrikam" -InternalAddress contoso.com -ExternalAddress fabrikam.com
+```powershell
+New-AddressRewriteEntry -Name "Contoso to Fabrikam" -InternalAddress contoso.com -ExternalAddress fabrikam.com
+```
 
 L’exemple suivant réécrit les adresses de messagerie de tous les messages sortant de l’organisation Exchange qui sont envoyés par les utilisateurs du sous-domaine sales.contoso.com. Les domaines des messages sortants sont réécrits de sorte que ces derniers semblent provenir du domaine contoso.com. Les messages entrants envoyés à des adresses de messagerie contoso.com ne sont pas réécrits.
 
-    New-AddressRewriteEntry -Name "sales.contoso.com to contoso.com" -InternalAddress sales.contoso.com -ExternalAddress contoso.com -OutboundOnly $true
+```powershell
+New-AddressRewriteEntry -Name "sales.contoso.com to contoso.com" -InternalAddress sales.contoso.com -ExternalAddress contoso.com -OutboundOnly $true
+```
 
 ## Réécriture d’adresses de messagerie de destinataires dans plusieurs sous-domaines
 
 Pour réécrire les adresses de messagerie de destinataires dans un domaine et tous les sous-domaines, utilisez la syntaxe suivante :
 
-    New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress *.<domain> -ExternalAddress <domain> -OutboundOnly $true [-ExceptionList <domain1,domain2...>]
+```powershell
+New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress *.<domain> -ExternalAddress <domain> -OutboundOnly $true [-ExceptionList <domain1,domain2...>]
+```
 
 L’exemple suivant réécrit les adresses de messagerie de tous les messages sortant de l’organisation Exchange qui sont envoyés par les utilisateurs du domaine contoso.com et de tous les sous-domaines. Les domaines des messages sortants sont réécrits de sorte que ces derniers semblent provenir du domaine contoso.com. Les domaines messages entrants envoyés à des destinataires contoso.com ne peuvent pas être réécrits car un caractère générique est utilisé dans le paramètre *InternalAddress*.
 
-    New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true
+```powershell
+New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true
+```
 
 L’exemple suivant est presque identique à l’exemple précédent, sauf qu’à présent les domaines des messages envoyés par les destinataires dans les sous-domaines legal.contoso.com et corp.contoso.com ne sont jamais réécrits :
 
-    New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains except legal.contoso.com and corp.contoso.com" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true -ExceptionList legal.contoso.com,corp.contoso.com
+```powershell
+New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains except legal.contoso.com and corp.contoso.com" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true -ExceptionList legal.contoso.com,corp.contoso.com
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -155,7 +175,9 @@ Les options de configuration disponibles lors de la modification d’une entrée
 
 Pour modifier une entrée de réécriture d’adresses qui réécrit l’adresse de messagerie d’un destinataire unique, utilisez la syntaxe suivante :
 
-    Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress <internal email address> -ExternalAddress <external email address> -OutboundOnly <$true | $false>
+```powershell
+Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress <internal email address> -ExternalAddress <external email address> -OutboundOnly <$true | $false>
+```
 
 L’exemple suivant modifie les propriétés suivantes de l’entrée de réécriture d’adresses du destinataire unique nommée « joe@contoso.com to support@nortwindtraders.com » :
 
@@ -167,13 +189,17 @@ L’exemple suivant modifie les propriétés suivantes de l’entrée de réécr
 
 <!-- end list -->
 
-    Set-AddressRewriteEntry "joe@contoso.com to support@nortwindtraders.com" -Name "joe@contoso.com to support@northwindtraders.net" -ExternalAddress support@northwindtraders.net -OutboundOnly $true
+```powershell
+Set-AddressRewriteEntry "joe@contoso.com to support@nortwindtraders.com" -Name "joe@contoso.com to support@northwindtraders.net" -ExternalAddress support@northwindtraders.net -OutboundOnly $true
+```
 
 ## Modification d’entrées de réécriture d’adresses pour des destinataires dans des domaines ou sous-domaines uniques
 
 Pour modifier une entrée de réécriture d’adresses qui réécrit les adresses de messagerie des destinataires dans un domaine ou sous-domaine unique, utilisez la syntaxe suivante.
 
-    Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress <domain or subdomain> -ExternalAddress <domain> -OutboundOnly <$true | $false>
+```powershell
+Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress <domain or subdomain> -ExternalAddress <domain> -OutboundOnly <$true | $false>
+```
 
 L’exemple suivant modifie la valeur d’adresse interne de l’entrée de réécriture d’adresses de domaine unique nommée « Northwind Traders to Contoso ».
 
@@ -185,23 +211,33 @@ Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwind
 
 Pour modifier une entrée de réécriture d’adresses qui réécrit l’adresse de messagerie des destinataires dans un domaine et tous les sous-domaines, utilisez la syntaxe suivante.
 
-    Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress *.<domain> -ExternalAddress <domain> -ExceptionList <list of domains>
+```powershell
+Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress *.<domain> -ExternalAddress <domain> -ExceptionList <list of domains>
+```
 
 Pour remplacer les valeurs de la liste des exceptions existantes d’une entrée de réécriture d’adresses de plusieurs sous-domaines, utilisez la syntaxe suivante :
 
-    Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -ExceptionList <domain1,domain2,...>
+```powershell
+Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -ExceptionList <domain1,domain2,...>
+```
 
 L’exemple suivant remplace la liste des exceptions existantes pour l’entrée de réécriture d’adresses de plusieurs sous-domaines nommée « Contoso to Northwind Traders » par les valeurs marketing.contoso.com et legal.contoso.com :
 
-    Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList sales.contoso.com,legal.contoso.com
+```powershell
+Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList sales.contoso.com,legal.contoso.com
+```
 
 Pour ajouter ou supprimer de manière sélective des valeurs de la liste des exceptions d’une entrée de réécriture d’adresses de plusieurs sous-domaines sans modifier les valeurs de la liste des exceptions existantes, utilisez la syntaxe suivante :
 
-    Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -ExceptionList @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```powershell
+Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -ExceptionList @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```
 
 L’exemple suivant ajoute finanace.contoso.com et supprime marketing.contoso.com de la liste des exceptions de l’entrée de réécriture d’adresses de plusieurs sous-domaines nommée « Contoso to Northwind Traders » :
 
-    Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList @{Add="finanace.contoso.com"; Remove="marketing.contoso.com"}
+```powershell
+Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList @{Add="finanace.contoso.com"; Remove="marketing.contoso.com"}
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -229,7 +265,9 @@ Remove-AddressRewriteEntry "Contoso.com to Northwindtraders.com"
 
 Pour modifier plusieurs entrées de réécriture d’adresses, utilisez la syntaxe suivante :
 
-    Get-AddressRewriteEntry [<search criteria>] | Remove-AddressRewriteEntry [-WhatIf]
+```powershell
+Get-AddressRewriteEntry [<search criteria>] | Remove-AddressRewriteEntry [-WhatIf]
+```
 
 L’exemple suivant supprime toutes les entrées de réécriture d’adresses :
 
@@ -239,11 +277,15 @@ Get-AddressRewriteEntry | Remove-AddressRewriteEntry
 
 L’exemple suivant simule la suppression des entrées de réécriture d’adresses qui contiennent le texte « to contoso.com » dans leur nom. Le commutateur *WhatIf* vous permet d’afficher un aperçu du résultat en n’effectuant aucune modification.
 
-    Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry -WhatIf
+```powershell
+Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry -WhatIf
+```
 
 Si vous êtes satisfait du résultat, réexécutez la commande sans le commutateur *WhatIf* pour supprimer les entrées de réécriture d’adresses.
 
-    Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry
+```powershell
+Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry
+```
 
 ## Comment savoir si cela a fonctionné ?
 

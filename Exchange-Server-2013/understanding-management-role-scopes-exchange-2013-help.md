@@ -960,7 +960,9 @@ Certaines cmdlets peuvent utiliser les étendues de configuration qui ne sont pa
 
 Le concept des étendues de base de données a été introduit pour la première fois dans Microsoft Exchange 2010 Service Pack 1 (SP1) et continue d’être pris en charge dans Exchange 2013. Les versions d’Exchange antérieures à Exchange 2010 SP1 prennent en charge uniquement les étendues de destinataire et les étendues de configuration de serveur. Si vous créez une nouvelle étendue de base de données sur un serveur Exchange 2010 SP1 ou ultérieur, vous recevrez l’avertissement suivant :
 
-    WARNING: Database management scopes will only be applied when a user connects to a server running Exchange 2010 SP1 or later. Servers running a version of Exchange prior to Exchange 2010 SP1 won't apply any roles from a role assignment linked to a database scope. Database management scopes also won't be visible to the Get-ManagementScope cmdlet when it's run from a pre-Exchange 2010 SP1 server.
+```powershell
+WARNING: Database management scopes will only be applied when a user connects to a server running Exchange 2010 SP1 or later. Servers running a version of Exchange prior to Exchange 2010 SP1 won't apply any roles from a role assignment linked to a database scope. Database management scopes also won't be visible to the Get-ManagementScope cmdlet when it's run from a pre-Exchange 2010 SP1 server.
+```
 
 Lorsque vous créez une étendue de base de données, elle s’applique uniquement aux utilisateurs se connectant à des serveurs exécutant Exchange 2010 SP1 ou ultérieur. Les utilisateurs qui se connectent à des serveurs exécutant des versions antérieures à Exchange 2010 SP1 ne disposeront d’aucune attribution de rôle associée à des étendues de base de données qui leur sont appliquées. Cela signifie que les autorisations délivrées par ces attributions de rôle ne seront pas accordées aux utilisateurs se connectant à des serveurs exécutant des versions antérieures à Exchange 2010 SP1. Les étendues de base de données ne peuvent pas être créées, supprimées, modifiées ni consultées depuis des serveurs exécutant des versions antérieures à Exchange 2010 SP1.
 

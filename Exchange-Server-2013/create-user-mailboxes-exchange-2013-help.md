@@ -129,7 +129,9 @@ Cet exemple crée un compte d'utilisateur et sa boîte aux lettres pour Pilar Pi
 
 <!-- end list -->
 
-    New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
+```powershell
+New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
+```
 
 Pour obtenir des informations sur la syntaxe et les paramètres, consultez la rubrique [New-Mailbox](https://technet.microsoft.com/fr-fr/library/aa997663\(v=exchg.150\)).
 
@@ -142,8 +144,8 @@ Voici comment vérifier qu'une boîte aux lettres utilisateur a bien été cré�
   - Dans l'environnement de ligne de commande, exécutez la commande suivante pour afficher les informations sur la nouvelle boîte aux lettres utilisateur.
     
     ```powershell
-Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
-```
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```
 
 ## Créer une boîte pour un utilisateur existant
 
@@ -216,8 +218,8 @@ Voici comment vérifier que vous avez bien créé une boîte aux lettres pour un
   - Dans l'environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher des informations sur le nouvel utilisateur dont la boîte à lettres vient d'être activée.
     
     ```powershell
-Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
-```
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```
     
     Notez que la valeur pour la propriété *RecipientTypeDetails* est `UserMailbox`.
 

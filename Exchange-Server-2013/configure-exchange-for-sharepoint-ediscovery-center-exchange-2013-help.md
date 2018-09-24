@@ -45,7 +45,9 @@ Cette rubrique vous indique comment configurer l'authentification de serveur à 
 
 Exécutez la commande suivante pour créer Exchange 2013 en tant qu'émetteur de jetons de sécurité approuvé dans SharePoint 2013.
 
-    New-SPTrustedSecurityTokenIssuer -Name Exchange -MetadataEndPoint https://<Exchange Server Name or FQDN>/autodiscover/metadata/json/1
+```powershell
+New-SPTrustedSecurityTokenIssuer -Name Exchange -MetadataEndPoint https://<Exchange Server Name or FQDN>/autodiscover/metadata/json/1
+```
 
 ## Étape 2 : Configurer l'authentification de serveur à serveur pour SharePoint 2013 sur un serveur exécutant Exchange 2013
 
@@ -53,8 +55,10 @@ Effectuez cette étape sur un serveur Exchange 2013. Des autorisations doivent 
 
 Exécutez cette commande pour configurer l'application partenaire SharePoint.
 
-    cd c:\'Program Files'\Microsoft\'Exchange Server'\V15\Scripts
-    .\Configure-EnterprisePartnerApplication.ps1 -AuthMetadataUrl <path to SharePoint AuthMetadataUrl> -ApplicationType SharePoint
+```powershell
+cd c:\'Program Files'\Microsoft\'Exchange Server'\V15\Scripts
+.\Configure-EnterprisePartnerApplication.ps1 -AuthMetadataUrl <path to SharePoint AuthMetadataUrl> -ApplicationType SharePoint
+```
 
 ## Étape 3 : Ajouter des utilisateurs autorisés au groupe de rôles Gestion de la découverte
 

@@ -47,11 +47,15 @@ La syntaxe pour importer des fichiers dans Exchange 2013 est utilisée à chaqu
 
 L'environnement de ligne de commande Exchange Management Shell doit savoir quel fichier vous souhaitez envoyer à la cmdlet Exchange 2013 et quel paramètre acceptera les données. Pour cela, utilisez la syntaxe suivante :
 
-    <Cmdlet> -FileData ([Byte[]]$(Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0))
+```powershell
+<Cmdlet> -FileData ([Byte[]]$(Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0))
+```
 
 Par exemple, la commande suivante importe le fichier C:\\MyData.dat dans le paramètre *FileData* sur la cmdlet fictive **Import-SomeData**.
 
-    Import-SomeData -FileData (Byte[]]$(Get-Content -Path "C:\MyData.dat" -Encoding Byte -ReadCount 0))
+```powershell
+Import-SomeData -FileData (Byte[]]$(Get-Content -Path "C:\MyData.dat" -Encoding Byte -ReadCount 0))
+```
 
 Voici ce qui se produit lorsque la commande est exécutée :
 
@@ -69,8 +73,10 @@ Voici ce qui se produit lorsque la commande est exécutée :
 
 Certaines cmdlets utilisent la syntaxe alternative suivante qui accomplit la même chose que la syntaxe précédente.
 
-    [Byte[]]$Data = Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0
+```powershell
+[Byte[]]$Data = Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0
     Import-SomeData -FileData $Data
+```
 
 Le même processus se produit avec cette syntaxe. La seule différence étant qu'au lieu d'effectuer l'opération entière immédiatement, les données récupérées du fichier local sont stockées dans une variable créée à cet effet qui peut ensuite être référencée. La variable est alors utilisée dans la commande d'importation pour transmettre le contenu du fichier local à la cmdlet **Import-SomeData**. Ce processus à deux étapes est utile lorsque vous voulez utiliser les données du fichier local dans plusieurs commandes.
 

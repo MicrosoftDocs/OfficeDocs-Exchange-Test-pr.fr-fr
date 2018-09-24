@@ -110,8 +110,8 @@ Ou
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
     ```powershell
-Get-ImapSettings | format-list
-```
+    Get-ImapSettings | format-list
+    ```
 
 2.  Vérifiez que les paramètres de connexion sont correctes.
 

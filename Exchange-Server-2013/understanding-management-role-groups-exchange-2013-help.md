@@ -250,7 +250,9 @@ Pour plus d’informations sur la gestion de l’appartenance au groupe de rôle
 
 Comme mentionné précédemment, un groupe de rôles est constitué de plusieurs couches. Pour vous aider à comprendre ce qui se passe lorsqu’un groupe de rôles est créé, réfléchissez à l’exemple suivant, qui crée un nouveau groupe de rôles.
 
-    New-RoleGroup -Name "Seattle Recipient Management" -Roles "Mail Recipients", "Distribution Groups", "Move Mailboxes", "UM Mailboxes" -CustomRecipientWriteScope "Seattle Users", -ManagedBy "Brian", "David", "Katie" -Members "Ray", "Jenn", "Maria", "Chris", "Maija", "Carter", "Jenny", "Sam", "Lukas", "Isabel", "Katie"
+```powershell
+New-RoleGroup -Name "Seattle Recipient Management" -Roles "Mail Recipients", "Distribution Groups", "Move Mailboxes", "UM Mailboxes" -CustomRecipientWriteScope "Seattle Users", -ManagedBy "Brian", "David", "Katie" -Members "Ray", "Jenn", "Maria", "Chris", "Maija", "Carter", "Jenny", "Sam", "Lukas", "Isabel", "Katie"
+```
 
 Lorsque la commande précédente est exécutée, voici ce qui se produit :
 

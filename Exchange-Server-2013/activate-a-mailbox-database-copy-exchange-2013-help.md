@@ -98,8 +98,8 @@ Pour vérifier que l’activation de la copie de base de données de boîtes aux
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les informations d’état pour une copie de base de données.
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```
 
 ## Pour plus d'informations
 

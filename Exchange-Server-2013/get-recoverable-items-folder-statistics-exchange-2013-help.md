@@ -53,7 +53,9 @@ Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableIt
 
 Cet exemple obtient les statistiques de dossiers du dossier Éléments récupérables de 'oumya Singhi et affiche le nom et le chemin d'accès du dossier, le nombre d'éléments qu'il contient et sa taille sous forme de tableau.
 
-    Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-Table Name,FolderPath,ItemsInFolder,FolderAndSubfolderSize
+```powershell
+Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-Table Name,FolderPath,ItemsInFolder,FolderAndSubfolderSize
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Get-MailboxFolderStatistics](https://technet.microsoft.com/fr-fr/library/aa996762\(v=exchg.150\)).
 
@@ -61,7 +63,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Cet exemple récupère une liste de toutes les boîtes aux lettres en conservation pour litige, ainsi que les statistiques des dossiers des boîtes aux lettres pour le dossier Éléments récupérables et ses sous-dossiers pour chaque boîte aux lettres. Les propriétés **Identity** (identité du dossier de boîte aux lettres) et **FolderAndSubfolderSize** s'affichent sous forme de tableau.
 
-    Get-Mailbox -ResultSize Unlimited -Filter {LitigationHoldEnabled -eq $true} | Get-MailboxFolderStatistics | Format-Table Identity,FolderAndSubfolderSize
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {LitigationHoldEnabled -eq $true} | Get-MailboxFolderStatistics | Format-Table Identity,FolderAndSubfolderSize
+```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Get-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123685\(v=exchg.150\)) et [Get-MailboxFolderStatistics](https://technet.microsoft.com/fr-fr/library/aa996762\(v=exchg.150\)).
 
@@ -69,9 +73,13 @@ Pour des informations détaillées sur la syntaxe et les paramètres, consultez 
 
 Cet exemple affiche le quota et le quota d’avertissement pour le dossier Éléments récupérables de la boîte aux lettres d’un utilisateur. Il récupère également les informations indiquant si une conservation pour litige ou inaltérable est placée sur la boîte aux lettres.
 
-    Get-Mailbox -Identity <identity of mailbox> | Format-List RecoverableItems*,LitigationHoldEnabled,InPlaceHolds
+```powershell
+Get-Mailbox -Identity <identity of mailbox> | Format-List RecoverableItems*,LitigationHoldEnabled,InPlaceHolds
+```
 
 Cet exemple affiche le quota et le quota d’avertissement pour le dossier Éléments récupérables de toutes les boîtes aux lettres des utilisateurs au sein de votre organisation. L’exemple récupère également les informations de conservation.
 
-    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Format-List Name,RecoverableItems*,LitigationHoldEnabled,InPlaceHolds
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Format-List Name,RecoverableItems*,LitigationHoldEnabled,InPlaceHolds
+```
 

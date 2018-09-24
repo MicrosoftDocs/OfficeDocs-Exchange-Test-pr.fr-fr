@@ -41,8 +41,8 @@ Déterminez le nom du lien de site IP Active Directory pour lequel vous voulez d
 
 Pour définir un coût spécifique à Exchange sur un lien de site Active Directory, exécutez la commande suivante :
 
-``` 
- Set-AdSiteLink <ADSiteLinkIdentity> -ExchangeCost <Integer | $null>
+```powershell
+Set-AdSiteLink <ADSiteLinkIdentity> -ExchangeCost <Integer | $null>
 ```
 
 Dans cet exemple, un coût spécifique à Exchange de 10 est défini sur le lien de site IP nommé IPSiteLinkAB.
@@ -64,8 +64,8 @@ Pour vérifier que vous avez bien défini un coût Exchange sur un lien de site 
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-AdSiteLink | Format-List Name,ExchangeCost
-```
+    Get-AdSiteLink | Format-List Name,ExchangeCost
+    ```
 
 2.  Vérifiez que le coût Exchange est configuré sur le lien de site Active Directory.
 
@@ -98,8 +98,8 @@ Pour vérifier que vous avez bien configuré un site Active Directory en tant qu
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-AdSite | Format-List Name,HubSiteEnabled
-```
+    Get-AdSite | Format-List Name,HubSiteEnabled
+    ```
 
 2.  Vérifiez que la valeur de *HubSiteEnabled* est `True` pour le site Active Directory.
 

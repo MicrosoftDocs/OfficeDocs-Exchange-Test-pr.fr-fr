@@ -46,7 +46,9 @@ Pour des questions de sécurité, certaines organisations peuvent souhaiter rest
 
 Cet exemple désactive l'accès au CAE sur le serveur CAS01.
 
-    Set-ECPVirtualDirectory -Identity "CAS01\ecp (default web site)" -AdminEnabled $false
+```powershell
+Set-ECPVirtualDirectory -Identity "CAS01\ecp (default web site)" -AdminEnabled $false
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-EcpVirtualDirectory](https://technet.microsoft.com/fr-fr/library/dd297991\(v=exchg.150\)).
 

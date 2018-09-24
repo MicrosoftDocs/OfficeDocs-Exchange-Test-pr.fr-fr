@@ -64,8 +64,8 @@ Pour vérifier que vous avez bien configuré le réseau DAG, procédez comme sui
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les paramètres de configuration du réseau DAG et vérifiez que ce dernier a été correctement configuré :
     
     ```powershell
-Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
-```
+    Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```
 
 ## Pour plus d'informations
 

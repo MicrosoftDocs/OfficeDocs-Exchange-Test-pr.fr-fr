@@ -89,5 +89,7 @@ Pour vérifier que vous avez bien activé l’enregistrement d’audit des boît
 
 Cet exemple illustre la récupération des paramètres de la boîte aux lettres de Ben Smith et le transfert des paramètres d’audit spécifiés, y compris la limite d’âge du journal d’audit, vers la cmdlet **Format-List**.
 
-    Get-Mailbox "Ben Smith" | Format-List *audit*
+```powershell
+Get-Mailbox "Ben Smith" | Format-List *audit*
+```
 

@@ -51,9 +51,13 @@ Remove-ManagementRoleAssignment "Tier 2 Help Desk Assignment"
 
 Si vous ne connaissez pas le nom de l’attribution de rôle à supprimer, utilisez la syntaxe suivante.
 
-    Get-ManagementRoleAssignment -RoleAssignee <user or USG> -Role <role name> -Delegating <$true | $false> | Remove-ManagementRoleAssignment 
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <user or USG> -Role <role name> -Delegating <$true | $false> | Remove-ManagementRoleAssignment 
+```
 
 Par exemple, si vous souhaitez supprimer l’attribution de rôle standard Destinataires de messagerie, utilisez la commande suivante.
 
-    Get-ManagementRoleAssignment -RoleAssignee davids -Role "Mail Recipients" -Delegating $false | Remove-ManagementRoleAssignment
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee davids -Role "Mail Recipients" -Delegating $false | Remove-ManagementRoleAssignment
+```
 

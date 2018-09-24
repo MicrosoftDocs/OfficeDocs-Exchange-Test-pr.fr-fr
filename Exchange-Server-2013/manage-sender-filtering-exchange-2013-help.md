@@ -64,8 +64,8 @@ Pour vérifier que vous avez bien activé ou désactivé le filtrage des expédi
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-SenderFilterConfig | Format-List Enabled
-```
+    Get-SenderFilterConfig | Format-List Enabled
+    ```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 
@@ -73,15 +73,21 @@ Get-SenderFilterConfig | Format-List Enabled
 
 Pour remplacer les valeurs existantes, exécutez la commande suivante :
 
-    Set-SenderFilterConfig -BlockedSenders <sender1,sender2...> -BlockedDomains <domain1,domain2...> -BlockedDomainsAndSubdomains <domain1,domain2...>
+```powershell
+Set-SenderFilterConfig -BlockedSenders <sender1,sender2...> -BlockedDomains <domain1,domain2...> -BlockedDomainsAndSubdomains <domain1,domain2...>
+```
 
 Dans cet exemple, l'agent de filtrage des expéditeurs est configuré de manière à bloquer les messages de kim@contoso.com et john@contoso.com, ceux provenant du domaine fabrikam.com et ceux provenant du domaine northwindtraders.com et de tous ses sous-domaines.
 
-    Set-SenderFilterConfig -BlockedSenders kim@contoso.com,john@contoso.com -BlockedDomains fabrikam.com -BlockedDomainsAndSubdomains northwindtraders.com
+```powershell
+Set-SenderFilterConfig -BlockedSenders kim@contoso.com,john@contoso.com -BlockedDomains fabrikam.com -BlockedDomainsAndSubdomains northwindtraders.com
+```
 
 Pour ajouter ou supprimer des entrées sans modifier une valeur existante, exécutez la commande suivante :
 
-    Set-SenderFilterConfig -BlockedSenders @{Add="<sender1>","<sender2>"...; Remove="<sender1>","<sender2>"...} -BlockedDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...} -BlockedDomainsAndSubdomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```powershell
+Set-SenderFilterConfig -BlockedSenders @{Add="<sender1>","<sender2>"...; Remove="<sender1>","<sender2>"...} -BlockedDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...} -BlockedDomainsAndSubdomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```
 
 Dans cet exemple, l'agent de filtrage des expéditeurs est configuré avec les informations suivantes :
 
@@ -93,7 +99,9 @@ Dans cet exemple, l'agent de filtrage des expéditeurs est configuré avec les i
 
 <!-- end list -->
 
-    Set-SenderFilterConfig -BlockedSenders @{Add="chris@contoso.com","michelle@contoso.com"} -BlockedDomains @{Remove="tailspintoys.com"} -BlockedDomainsAndSubdomains @{Add="blueyonderairlines.com"}
+```powershell
+Set-SenderFilterConfig -BlockedSenders @{Add="chris@contoso.com","michelle@contoso.com"} -BlockedDomains @{Remove="tailspintoys.com"} -BlockedDomainsAndSubdomains @{Add="blueyonderairlines.com"}
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -102,8 +110,8 @@ Pour vérifier que vous avez bien configuré le blocage des expéditeurs, procé
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-SenderFilterConfig | Format-List BlockedSenders,BlockedDomains,BlockedDomainsAndSubdomains
-```
+    Get-SenderFilterConfig | Format-List BlockedSenders,BlockedDomains,BlockedDomainsAndSubdomains
+    ```
 
 2.  Vérifiez que les valeurs affichées sont les valeurs que vous avez configurées.
 
@@ -128,8 +136,8 @@ Pour vérifier que vous avez bien activé ou désactivé le blocage des messages
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-SenderFilterConfig | Format-List BlankSenderBlockingEnabled
-```
+    Get-SenderFilterConfig | Format-List BlankSenderBlockingEnabled
+    ```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 

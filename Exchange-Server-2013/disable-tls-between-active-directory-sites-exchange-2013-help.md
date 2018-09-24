@@ -77,7 +77,9 @@ Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
 
 Pour créer un connecteur de réception sur le serveur de boîtes aux lettres, exécutez la commande suivante :
 
-    New-ReceiveConnector -Name <Name> -Server <ServerIdentity> -RemoteIPRanges <IPAddressRange> -Internal
+```powershell
+New-ReceiveConnector -Name <Name> -Server <ServerIdentity> -RemoteIPRanges <IPAddressRange> -Internal
+```
 
 Cet exemple montre comment créer le connecteur de réception nommé WAN sur un serveur nommé Mailbox01 avec les paramètres suivants :
 

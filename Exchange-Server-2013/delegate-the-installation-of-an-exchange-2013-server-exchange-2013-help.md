@@ -66,22 +66,22 @@ La commande à utiliser pour configurer le serveur dépend de si vous exécutez 
 3.  Modifiez les répertoires à l’emplacement où vous avez téléchargé et développé les fichiers d’installation Exchange 2013. Si ces fichiers se trouvent dans `C:\Downloads\Exchange 2013`, utilisez la commande suivante.
     
     ```powershell
-CD "C:\Downloads\Exchange 2013"
-```
+    CD "C:\Downloads\Exchange 2013"
+    ```
 
 4.  Choisissez la commande qui correspond à l’emplacement où vous exécutez l’installation :
     
       - **Si vous procédez à l’installation sur l’ordinateur en cours de configuration**, exécutez la commande suivante :
         
         ```powershell
-Setup.exe /NewProvisionedServer /IAcceptExchangeServerLicenseTerms
-```
+        Setup.exe /NewProvisionedServer /IAcceptExchangeServerLicenseTerms
+        ```
     
       - **Si vous procédez à l’installation sur un autre ordinateur**, exécutez la commande suivante :
         
         ```powershell
-Setup.exe /NewProvisionedServer:<ComputerName> /IAcceptExchangeServerLicenseTerms
-```
+        Setup.exe /NewProvisionedServer:<ComputerName> /IAcceptExchangeServerLicenseTerms
+        ```
 
 5.  Après avoir configuré le serveur, vérifiez que vous avez ajouté les utilisateurs qui doivent pouvoir installer Exchange sur les serveurs configurés au groupe de rôles Installation déléguée. Pour savoir comment ajouter des utilisateurs à un groupe de rôles, voir [Add members to a role group](manage-role-group-members-exchange-2013-help.md).
 

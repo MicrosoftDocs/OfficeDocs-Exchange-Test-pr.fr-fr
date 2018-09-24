@@ -51,7 +51,9 @@ Vous recherchez des informations supplémentaires sur les copies retardées de b
 
 1.  Cet exemple interrompt la réplication de la copie retardée en cours d'activation à l'aide de la cmdlet [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd351074\(v=exchg.150\)).
     
-        Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+    ```powershell
+    Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+    ```
 
 2.  De manière facultative (afin de conserver une copie retardée), effectuez une copie de la copie de la base de données et de ses fichiers journaux.
     
@@ -66,8 +68,8 @@ Vous recherchez des informations supplémentaires sur les copies retardées de b
 5.  Cet exemple utilise la commande Eseutil pour effectuer l'opération de récupération.
     
     ```powershell
-Eseutil.exe /r eXX /a
-```
+    Eseutil.exe /r eXX /a
+    ```
     
     > [!NOTE]
     > Dans l'exemple précédent, e<em>XX</em> est le préfixe de génération du journal pour la base de données (par exemple, E00, E01, E02, etc.).
@@ -81,8 +83,8 @@ Eseutil.exe /r eXX /a
 7.  Suite au processus de récupération, cet exemple reprend la réplication de la base de données qui a été utilisée dans le cadre de l'opération de récupération.
     
     ```powershell
-Resume-MailboxDatabaseCopy DB1\EX3
-```
+    Resume-MailboxDatabaseCopy DB1\EX3
+    ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd351074\(v=exchg.150\)) et [Resume-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd335220\(v=exchg.150\)).
 
@@ -92,7 +94,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
     
     1.  Cet exemple interrompt la réplication de la copie retardée en cours d'activation à l'aide de la cmdlet [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd351074\(v=exchg.150\)).
         
-            Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+        ```powershell
+        Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+        ```
     
     2.  De manière facultative (afin de conserver une copie retardée), effectuez une copie de la copie de la base de données et de ses fichiers journaux.
         
@@ -103,8 +107,8 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 2.  Cet exemple active la copie de base de données de boîtes aux lettres retardée en utilisant la cmdlet [Move-ActiveMailboxDatabase](https://technet.microsoft.com/fr-fr/library/dd298068\(v=exchg.150\)) avec le paramètre *SkipLagChecks*.
     
     ```powershell
-Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
-```
+    Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
+    ```
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour activer une copie de base de données de boîtes aux lettres retardée à l'aide de la fonctionnalité de récupération SafetyNet
 
@@ -112,7 +116,9 @@ Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
     
     1.  Cet exemple interrompt la réplication de la copie retardée en cours d'activation à l'aide de la cmdlet [Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd351074\(v=exchg.150\)).
         
-            Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+        ```powershell
+        Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+        ```
     
     2.  De manière facultative (afin de conserver une copie retardée), effectuez une copie de la copie de la base de données et de ses fichiers journaux.
         
@@ -123,8 +129,8 @@ Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
 2.  Déterminez les journaux requis pour la copie de base de données retardée en recherchant la valeur « Log required: » (Journal requis) dans la sortie de l'en-tête de base de données ESEUTIL
     
     ```powershell
-Eseutil /mh <DBPath> | findstr /c:"Log Required"
-```
+    Eseutil /mh <DBPath> | findstr /c:"Log Required"
+    ```
     
     Notez les numéros hexadécimaux entre parenthèses. Le premier numéro correspond à la génération requise la plus faible (désignée par LowGeneration) et le deuxième numéro à la génération requise la plus élevée (désignée par HighGeneration). Déplacez tous les fichiers de génération de journaux dont la séquence de génération est supérieure à HighGeneration vers un autre emplacement, afin qu'ils ne soient pas relus dans la base de données.
 
@@ -132,7 +138,9 @@ Eseutil /mh <DBPath> | findstr /c:"Log Required"
 
 4.  Effectuez un basculement de base de données et activez la copie retardée. Cet exemple active la base de données à l'aide de la cmdlet [Move-ActiveMailboxDatabase](https://technet.microsoft.com/fr-fr/library/dd298068\(v=exchg.150\)) avec différents paramètres.
     
-        Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -MountDialOverride BestEffort -SkipActiveCopyChecks -SkipClientExperienceChecks -SkipHealthChecks -SkipLagChecks
+    ```powershell
+    Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -MountDialOverride BestEffort -SkipActiveCopyChecks -SkipClientExperienceChecks -SkipHealthChecks -SkipLagChecks
+    ```
 
 5.  À ce stade, la base de données est automatiquement montée et demande une nouvelle remise des messages manquants à partir de SafetyNet.
 
@@ -145,6 +153,6 @@ Pour vérifier que vous avez bien activé une copie de base de données de boît
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les informations d’état pour une copie de base de données.
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```
 

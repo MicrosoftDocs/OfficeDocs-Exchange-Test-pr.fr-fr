@@ -60,14 +60,13 @@ Si vous n'avez pas sélectionné de certificat auto-signé, vous devrez envoyer 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour créer une demande de certificat
 
 Exécutez les commandes suivantes :
-```
+```powershell
     $reqfile = New-ExchangeCertificate -GenerateRequest -SubjectName "C=US,o=Contoso,cn=contosotocert" -DomainName "contoso.com" -PrivateKeyExportable $true
 ```
-```
+
 ```powershell
 $reqfile | out-file c:\certreq.txt
 ```
-```    
 
 ## Comment savoir si cela a fonctionné ?
 

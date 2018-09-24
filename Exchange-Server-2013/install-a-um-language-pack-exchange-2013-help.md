@@ -49,13 +49,9 @@ Pour les tâches supplémentaires concernant les modules linguistiques de messag
 
 2.  Double-cliquez sur le fichier UMLanguagePack.*\<CultureCode\>.exe*. Par exemple, pour le module linguistique de messagerie unifiée allemand, vous devez télécharger le fichier nommé UMLanguagePack.de-DE.exe.
 
-3.  
-    
-    Dans l’Assistant Installation Exchange 2013, sur la page **Contrat de licence**, lisez les conditions du contrat, sélectionnez **J’accepte les termes du contrat de licence**, puis cliquez sur **Suivant**.
+3.  Dans l’Assistant Installation Exchange 2013, sur la page **Contrat de licence**, lisez les conditions du contrat, sélectionnez **J’accepte les termes du contrat de licence**, puis cliquez sur **Suivant**.
 
-4.  
-    
-    Dans la page **Module linguistique de messagerie unifiée**, vérifiez que la langue correcte est répertoriée dans la fenêtre **Les modules linguistiques de messagerie unifiée suivants seront installés**, puis cliquez sur **Installer**.
+4.  Dans la page **Module linguistique de messagerie unifiée**, vérifiez que la langue correcte est répertoriée dans la fenêtre **Les modules linguistiques de messagerie unifiée suivants seront installés**, puis cliquez sur **Installer**.
 
 5.  Cliquez sur **Terminer** pour terminer l’installation du module linguistique de messagerie unifiée.
 
@@ -69,7 +65,9 @@ setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchan
 
 Cet exemple installe les modules linguistiques de messagerie unifiée Espagnol mexicain (es-MX) et Allemand (de-DE) qui ont été téléchargés dans le dossier D:\\Exchange\\UMLanguagePacks sur un serveur de boîtes aux lettres.
 
-    setup.exe /AddUmLanguagePack:es-MX,de-DE /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```powershell
+setup.exe /AddUmLanguagePack:es-MX,de-DE /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 > [!WARNING]
 > Si vous n’utilisez pas le paramètre /IAcceptExchangeServerLicenseTerms, vous devez voir l’erreur suivante : Bienvenue dans le programme d’installation sans assistance de Microsoft Exchange Server 2013. Vous devez accepter les termes du contrat de licence pour installer Microsoft Exchange Server 2013. Pour lire le contrat de licence, visitez le site http://go.microsoft.com/fwlink/p/?LinkId=150127. Pour accepter le contrat de licence, ajoutez le paramètre /IAcceptExchangeServerLicenseTerms à la commande exécutée. Pour plus d’informations, exécutez setup /?.

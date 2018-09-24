@@ -57,11 +57,15 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour afficher une liste des entrées de rôle sur un rôle spécifique, utilisez la syntaxe suivante.
 
-    Get-ManagementRoleEntry <role name>\*
+```powershell
+Get-ManagementRoleEntry <role name>\*
+```
 
 Cet exemple extrait toutes les entrées de rôle sur le rôle `Recipient Administrators`.
 
-    Get-ManagementRole "Recipient Administrators\*"
+```powershell
+Get-ManagementRole "Recipient Administrators\*"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRoleEntry](https://technet.microsoft.com/fr-fr/library/dd335210\(v=exchg.150\)).
 
@@ -69,11 +73,15 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour afficher une liste de tous les rôles contenant une entrée de rôle spécifique, utilisez la syntaxe suivante.
 
-    Get-ManagementRoleEntry *\<cmdlet name>
+```powershell
+Get-ManagementRoleEntry *\<cmdlet name>
+```
 
 Cet exemple extrait tous les rôles contenant l'entrée de rôle **Set-Mailbox**.
 
-    Get-ManagementRoleEntry *\Set-Mailbox
+```powershell
+Get-ManagementRoleEntry *\Set-Mailbox
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRoleEntry](https://technet.microsoft.com/fr-fr/library/dd335210\(v=exchg.150\)).
 
@@ -81,11 +89,15 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour afficher une liste des rôles ciblés contenant des cmdlets avec des noms similaires, utilisez la syntaxe suivante.
 
-    Get-ManagementRoleEntry *<partial role name>*\*<partial cmdlet name>*
+```powershell
+Get-ManagementRoleEntry *<partial role name>*\*<partial cmdlet name>*
+```
 
 Cet exemple produit une liste des entrées de rôle contenant la chaîne `Mailbox` et qui sont sur des rôles dont le nom comprend la chaîne `Tier 1`.
 
-    Get-ManagementRoleEntry "*Tier 1*\*Mailbox*"
+```powershell
+Get-ManagementRoleEntry "*Tier 1*\*Mailbox*"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRoleEntry](https://technet.microsoft.com/fr-fr/library/dd335210\(v=exchg.150\)).
 
@@ -113,11 +125,15 @@ Certaines entrées de rôle contiennent plus de paramètres qu'il n'est possible
 
 Pour afficher les paramètres stockés dans la propriété **Parameters** d'un objet d'entrée de rôle, utilisez la syntaxe suivante.
 
-    (Get-ManagementRoleEntry <role name>\<cmdlet name>).Parameters
+```powershell
+(Get-ManagementRoleEntry <role name>\<cmdlet name>).Parameters
+```
 
 Cet exemple extrait les paramètres sur l'entrée de rôle **Set-Mailbox** sur le rôle Mail Recipients.
 
-    (Get-ManagementRoleEntry "Mail Recipients\Set-Mailbox").Parameters
+```powershell
+(Get-ManagementRoleEntry "Mail Recipients\Set-Mailbox").Parameters
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRoleEntry](https://technet.microsoft.com/fr-fr/library/dd335210\(v=exchg.150\)).
 

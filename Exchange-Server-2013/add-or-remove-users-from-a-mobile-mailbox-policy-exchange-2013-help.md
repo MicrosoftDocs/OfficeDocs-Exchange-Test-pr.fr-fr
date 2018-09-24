@@ -63,7 +63,9 @@ Vous pouvez modifier la stratégie de boîtes aux lettres de périphérique mobi
 
 1.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-CASMailbox -Identity tony@contoso.com -ActiveSyncMailboxPolicy "Sales" 
+    ```powershell
+    Get-CASMailbox -Identity tony@contoso.com -ActiveSyncMailboxPolicy "Sales" 
+    ```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -73,7 +75,9 @@ Pour vérifier que vous avez réussi à modifier une stratégie de boîte aux le
 
 2.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-CASMailbox -Identity tony@contoso.com 
+    ```powershell
+    Get-CASMailbox -Identity tony@contoso.com 
+    ```
 
 ## Modifier la stratégie de boîtes aux lettres de périphérique mobile pour plusieurs utilisateurs en même temps
 
@@ -99,8 +103,10 @@ Vous pouvez utiliser le Shell pour modifier la stratégie de boîtes aux lettres
 
 1.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-Mailbox | where { $_.CustomAttribute1 -match "Manager"
-         } | Set-CASMailbox -activesyncmailboxpolicy(Get-ActiveSyncMailboxPolicy "Contoso").Identity
+    ```powershell
+    Get-Mailbox | where { $_.CustomAttribute1 -match "Manager"
+     } | Set-CASMailbox -activesyncmailboxpolicy(Get-ActiveSyncMailboxPolicy "Contoso").Identity
+    ```
     
     > [!NOTE]
     > Vous pouvez substituer <code>CustomAttribute1</code> à n’importe quelle propriété de l’objet <strong>Get-Mailbox</strong>. Pour afficher la liste complète, tapez : <code>Get-Mailbox username |fl</code>.
@@ -115,6 +121,6 @@ Pour vérifier que vous avez réussi à modifier une stratégie de boîte aux le
 2.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
     ```powershell
-Get-CASMailbox -Identity tony@contoso.com
-```
+    Get-CASMailbox -Identity tony@contoso.com
+    ```
 

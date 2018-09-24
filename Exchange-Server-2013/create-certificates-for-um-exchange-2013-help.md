@@ -77,7 +77,9 @@ Pour découvrir d'autres tâches de gestion relatives à la gestion des certific
 
 Cet exemple montre comment créer une demande de certificat Exchange pour un serveur de boîtes aux lettres nommé `MyMailboxServer`, portant le nom convivial de `CertUM`.
 
-    New-ExchangeCertificate -FriendlyName 'CertUM' -GenerateRequest -PrivateKeyExportable $true -KeySize '2048' -DomainName '*.northwindtraders.com' -SubjectName 'C=US,S=wa,L=redmond,O=northwindtraders,OU=servers,CN= northwindtraders.com' -Server 'MyMailboxServer'
+```powershell
+New-ExchangeCertificate -FriendlyName 'CertUM' -GenerateRequest -PrivateKeyExportable $true -KeySize '2048' -DomainName '*.northwindtraders.com' -SubjectName 'C=US,S=wa,L=redmond,O=northwindtraders,OU=servers,CN= northwindtraders.com' -Server 'MyMailboxServer'
+```
 
 ## Utiliser le CAE pour créer un certificat auto-signé pour la messagerie unifiée
 
@@ -101,7 +103,9 @@ Cet exemple montre comment créer une demande de certificat Exchange pour un ser
 
 Cet exemple montre comment créer un certificat auto-signé Exchange pour un serveur de boîtes aux lettres nommé `MyMailboxServer`, portant le nom convivial de `UMCert`.
 
-    New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
+```powershell
+New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
+```
 
 > [!TIP]
 > Lorsque vous spécifiez les services à activer en utilisant le paramètre <em>Services</em> , vous serez invité à affecter ces services. Dans cet exemple, vous devrez faire pour activer le certificat pour les services de messagerie unifiée et de routeur d'appels UM. Pour plus d'informations sur la façon d'activer un certificat pour les services, voir <a href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">Assigner un certificat pour les services de messagerie unifiée et de routeur d’appels UM</a>.

@@ -111,23 +111,25 @@ Utilisez la procédure suivante pour activer la prise en charge des agents de tr
 1.  Dans une fenêtre d'invite de commandes, sur le serveur Exchange 2013 sur lequel vous souhaitez configurer la prise en charge de l'agent de transport hérité, ouvrez le fichier de configuration de l'application dans le Bloc-notes en exécutant la commande suivante :
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
-```
+    Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
+    ```
     
     Par exemple, pour ouvrir le fichier EdgeTransport.exe.config sur un serveur de boîtes aux lettres, exécutez la commande suivante :
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  Localisez la clé *\</configuration\>* à la fin du fichier et collez les clés suivantes avant la clé *\</configuration\>* :
     
-        <startup useLegacyV2RuntimeActivationPolicy="true">
-           <supportedRuntime version="v4.0" />
-           <supportedRuntime version="v3.5" />
-           <supportedRuntime version="v3.0" />
-           <supportedRuntime version="v2.0" />
-        </startup>
+    ```powershell
+    <startup useLegacyV2RuntimeActivationPolicy="true">
+        <supportedRuntime version="v4.0" />
+        <supportedRuntime version="v3.5" />
+        <supportedRuntime version="v3.0" />
+        <supportedRuntime version="v2.0" />
+    </startup>
+    ```
 
 3.  Quand vous avez terminé, enregistrez et fermez le fichier de configuration de l'application.
 
@@ -135,11 +137,15 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 
 5.  Redémarrez le service Windows associé en exécutant la commande suivante :
     
-        net stop <service> && net start <service>
+    ```powershell
+    net stop <service> && net start <service>
+    ```
     
     Par exemple, si vous avez modifié le fichier EdgeTransport.exe.config, vous devez redémarrer le service de transport Microsoft Exchange en exécutant la commande suivante :
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 6.  Répétez l'étape 5 pour redémarrer les services associés aux autres fichiers de configuration de l'application modifiés.
 
@@ -147,5 +153,5 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 
 Vous saurez que cette procédure fonctionne si l'agent de transport hérité s'installe correctement. Si vous essayez d'installer un agent de transport hérité sans suivre les procédures décrites dans cette rubrique, un message d'erreur similaire au suivant s'affiche :
 
-    Mixed mode assembly is built against version '<version>' of the runtime and cannot be loaded in the 4.0 runtime without additional configuration information.
+Mixed mode assembly is built against version '<version>' of the runtime and cannot be loaded in the 4.0 runtime without additional configuration information.
 

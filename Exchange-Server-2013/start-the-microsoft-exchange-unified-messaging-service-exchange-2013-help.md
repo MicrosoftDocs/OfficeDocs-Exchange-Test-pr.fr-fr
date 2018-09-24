@@ -56,6 +56,6 @@ Pour connaître les tâches de gestion supplémentaires relatives aux serveurs d
 2.  Dans la zone **Ouvrir**, entrez la commande suivante, puis appuyez sur Entrée.
     
     ```powershell
-net start MSExchangeUM
-```
+    net start MSExchangeUM
+    ```
 

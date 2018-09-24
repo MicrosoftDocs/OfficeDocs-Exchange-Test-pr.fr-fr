@@ -62,8 +62,8 @@ Pour vérifier que vous avez bien supprimé le groupe de disponibilité de base 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour voir si le DAG existe toujours :
     
     ```powershell
-Get-DatabaseAvailabilityGroup <DAGName>
-```
+    Get-DatabaseAvailabilityGroup <DAGName>
+    ```
     
     Si le DAG a été correctement supprimé, un message d’erreur indiquant que l’objet est introuvable s’affiche lorsque vous exécutez la commande précédente.
 

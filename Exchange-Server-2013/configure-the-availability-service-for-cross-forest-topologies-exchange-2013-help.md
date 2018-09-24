@@ -55,12 +55,16 @@ Pour activer la synchronisation de la liste d’adresses globale, vous créez de
 
 Cet exemple configure le service de disponibilité de sorte à récupérer des informations de disponibilité par utilisateur sur un serveur de boîte aux lettres de la forêt cible.
 
-    Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedrights "ms-Exch-
-    EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```powershell
+Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedrights "ms-Exch-
+EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```
 
 Cet exemple définit la méthode d’accès aux informations de disponibilité utilisée par le service de disponibilité sur le serveur de boîte aux lettres local de la forêt source. Le serveur de boîte aux lettres local est configuré pour accéder aux informations de disponibilité de la forêt ContosoForest.com, par utilisateur. Cet exemple montre comment utiliser le compte de service pour récupérer des informations de disponibilité.
 
-    Add-AvailabilityAddressSpace -Forestname ContosoForest.com -AccessMethod PerUserFB -UseServiceAccount:$true
+```powershell
+Add-AvailabilityAddressSpace -Forestname ContosoForest.com -AccessMethod PerUserFB -UseServiceAccount:$true
+```
 
 > [!NOTE]
 > Pour configurer la disponibilité inter-forêts bidirectionnelle, répétez ces étapes dans la forêt cible.
@@ -72,7 +76,9 @@ Si vous choisissez de configurer une disponibilité inter-forêts avec approbati
 
 Cet exemple montre comment configurer la disponibilité inter-forêts approuvée avec un compte de service.
 
-    Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedright "ms-Exch-EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```powershell
+Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedright "ms-Exch-EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques suivantes :
 
@@ -94,6 +100,8 @@ Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
 
 Cet exemple montre comment ajouter l'objet de configuration de l'espace d'adressage de disponibilité pour la forêt source.
 
-    $a = Get-Credential (Enter the credentials for organization-wide user in Contoso.com domain)
-    Add-AvailabilityAddressspace -Forestname Contoso.com -Accessmethod OrgWideFB -Credential:$a
+```powershell
+$a = Get-Credential (Enter the credentials for organization-wide user in Contoso.com domain)
+Add-AvailabilityAddressspace -Forestname Contoso.com -Accessmethod OrgWideFB -Credential:$a
+```
 

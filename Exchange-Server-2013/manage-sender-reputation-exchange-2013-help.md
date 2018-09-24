@@ -60,12 +60,14 @@ Pour vérifier que la réputation de l'expéditeur est activée ou désactivée,
 1.  Exécutez la commande suivante pour vérifier que l'agent d’analyse de protocole est installé et activé :
     
     ```powershell
-Get-TransportAgent
-```
+    Get-TransportAgent
+    ```
 
 2.  Exécutez la commande suivante pour vérifier les valeurs de réputation de l'expéditeur que vous configurées :
     
-        Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```powershell
+    Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour activer ou désactiver la réputation de l'expéditeur pour les messages internes ou externes
 
@@ -101,7 +103,9 @@ Pour vérifier que la réputation de l'expéditeur est activée ou désactivée 
 
 1.  Exécutez la commande suivante :
     
-        Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```powershell
+    Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```
 
 2.  Vérifiez que les valeurs affichées correspondent aux valeurs que vous avez configurées.
 
@@ -126,8 +130,8 @@ Pour vérifier que les propriétés de la réputation de l'expéditeur sont corr
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-SenderReputationConfig
-```
+    Get-SenderReputationConfig
+    ```
 
 2.  Vérifiez que les valeurs affichées correspondent aux valeurs que vous avez configurées.
 
@@ -166,11 +170,15 @@ Vous devez effectuer des opérations supplémentaires pour permettre à la répu
 
 Pour configurer l’accès sortant pour la détection de serveurs proxy ouverts, exécutez la commande suivante :
 
-    Set-SenderReputationConfig -ProxyServerName <String> -ProxyServerPort <Port> -ProxyServerType <String>
+```powershell
+Set-SenderReputationConfig -ProxyServerName <String> -ProxyServerPort <Port> -ProxyServerType <String>
+```
 
 Cet exemple configure la réputation de l'expéditeur pour utiliser le serveur proxy ouvert nommé SERVER01 qui utilise le protocole HTTP CONNECT sur le port 80.
 
-    Set-SenderReputationConfig - ProxyServerName SERVER01 -ProxyServerPort 80 -ProxyServerType HttpConnect
+```powershell
+Set-SenderReputationConfig - ProxyServerName SERVER01 -ProxyServerPort 80 -ProxyServerType HttpConnect
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -178,7 +186,9 @@ Pour vérifier que l’accès sortant est correctement configuré pour la détec
 
 1.  Exécutez la commande suivante :
     
-        Get-SenderReputationConfig | Format-List ProxyServer*
+    ```powershell
+    Get-SenderReputationConfig | Format-List ProxyServer*
+    ```
 
 2.  Vérifiez que les valeurs affichées sont les valeurs que vous avez configurées.
 

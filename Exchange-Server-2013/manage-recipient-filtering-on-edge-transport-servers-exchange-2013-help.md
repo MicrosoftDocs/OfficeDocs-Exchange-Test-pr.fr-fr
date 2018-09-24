@@ -36,8 +36,8 @@ L'agent de filtrage des destinataires assure le filtrage des destinataires. Lors
   - Le paramètre *AddressBookEnabled* de la cmdlet **Set-AcceptedDomain** active ou désactive le filtrage des destinataires dans un domaine accepté. Par défaut, le filtrage est activé pour les domaines faisant autorité et désactivé pour les domaines de relais internes et externes. Pour afficher l'état du paramètre *AddressBookEnabled* pour les domaines acceptés dans votre organisation, exécutez la commande suivante :
     
     ```powershell
-Get-AcceptedDomain | Format-List Name,AddressBookEnabled
-```
+    Get-AcceptedDomain | Format-List Name,AddressBookEnabled
+    ```
 
   - Si vous désactivez le filtrage des destinataires en utilisant la procédure de cette rubrique, le filtrage est désactivé, mais l'agent sous-jacent de filtrage des destinataires reste activé.
 
@@ -74,8 +74,8 @@ Voici comment vérifier que vous avez bien activé ou désactivé le filtrage de
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-RecipientFilterConfig | Format-List Enabled
-```
+    Get-RecipientFilterConfig | Format-List Enabled
+    ```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 
@@ -100,8 +100,8 @@ Voici comment vérifier que vous avez bien activé ou désactivé la liste des d
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-RecipientFilterConfig | Format-List BlockListEnabled
-```
+    Get-RecipientFilterConfig | Format-List BlockListEnabled
+    ```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 
@@ -121,11 +121,15 @@ Set-RecipientFilterConfig -BlockedRecipients mark@contoso.com,kim@contoso.com
 
 Pour ajouter ou supprimer des entrées sans modifier une valeur existante, exécutez la commande suivante :
 
-    Set-RecipientFilterConfig -BlockedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...}
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...}
+```
 
 Cet exemple montre comment ajouter chris@contoso.com à la liste des destinataires et supprime michelle@contoso.com de la liste des destinataires bloqués :
 
-    Set-RecipientFilterConfig -BlockedRecipients @{Add="chris@contoso.com"; Remove="michelle@contoso.com"}
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients @{Add="chris@contoso.com"; Remove="michelle@contoso.com"}
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -134,8 +138,8 @@ Voici comment vérifier que la liste des destinataires bloqués est correctement
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-RecipientFilterConfig | Format-List BlockedRecipients
-```
+    Get-RecipientFilterConfig | Format-List BlockedRecipients
+    ```
 
 2.  Vérifiez que les valeurs affichées sont les valeurs que vous avez configurées.
 
@@ -160,8 +164,8 @@ Voici comment vérifier que vous avez bien activé ou désactivé la recherche d
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-RecipientFilterConfig | Format-List RecipientValidationEnabled
-```
+    Get-RecipientFilterConfig | Format-List RecipientValidationEnabled
+    ```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 

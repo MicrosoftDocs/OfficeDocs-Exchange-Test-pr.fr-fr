@@ -91,7 +91,9 @@ Quand l'application Cycle de vie dans SharePoint ferme une boîte aux lettres de
 
 Vous pouvez utiliser la commande suivante pour rechercher et supprimer des boîtes aux lettres de site qui ont été marquées pour suppression.
 
-    Get-Mailbox MDEL:* | ?{$_.RecipientTypeDetails -eq "TeamMailbox"} | Remove-Mailbox -Confirm:$false
+```powershell
+Get-Mailbox MDEL:* | ?{$_.RecipientTypeDetails -eq "TeamMailbox"} | Remove-Mailbox -Confirm:$false
+```
 
 Les boîtes aux lettres de site ne prennent pas en charge la rétention au niveau de l’élément. La rétention s'applique au niveau du projet pour les boîtes aux lettres de site. Par conséquent, quand l'ensemble de la boîte aux lettres de site est supprimé, les éléments conservés le sont aussi.
 

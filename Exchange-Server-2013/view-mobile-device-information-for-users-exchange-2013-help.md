@@ -48,6 +48,6 @@ Vous pouvez utiliser la cmdlet Get-MobileDevice pour afficher une liste des pér
 1.  Exécutez la commande suivante.
     
     ```powershell
-Get-MobileDevice -Mailbox useralias
-```
+    Get-MobileDevice -Mailbox useralias
+    ```
 

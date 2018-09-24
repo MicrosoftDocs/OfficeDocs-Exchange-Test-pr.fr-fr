@@ -45,7 +45,9 @@ Intéressé par des scénarios où cette procédure est utilisée ? Consultez l
 
 1.  Exécutez la commande suivante pour créer le connecteur étranger :
     
-        New-ForeignConnector -Name "Contoso Foreign Connector" -AddressSpaces "X400:c=US;a=Fabrikam;P=Contoso;5" -SourceTransportServers Hub01,Hub02
+    ```powershell
+    New-ForeignConnector -Name "Contoso Foreign Connector" -AddressSpaces "X400:c=US;a=Fabrikam;P=Contoso;5" -SourceTransportServers Hub01,Hub02
+    ```
     
     Dans cet exemple, Hub01 et Hub02 sont des serveurs sources désignés dans votre organisation pour remettre des messages à un système étranger. L'utilisation de plusieurs serveurs source assure la tolérance de pannes.
 
@@ -70,8 +72,8 @@ Vous créez un répertoire à utiliser comme répertoire de dépôt sur votre sy
 1.  Exécutez le script suivant pour spécifier le répertoire de dépôt de votre connecteur étranger (modifiez la valeur du paramètre *DropDirectory* vers un chemin d'accès approprié pour votre environnement) :
     
     ```powershell
-Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
-```
+    Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
+    ```
 
 ## Comment savoir si cette étape a fonctionné ?
 

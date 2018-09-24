@@ -64,11 +64,15 @@ Vous pouvez créer des attributions de rôle de délégation à l'aide des même
 
 Cet exemple crée une attribution de rôle de délégation pour permettre aux membres du groupe de rôles Senior Admins d'attribuer le rôle Mail Recipients à un utilisateur dans l'organisation Exchange.
 
-    New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admin - Delegate" -Delegating
+```powershell
+New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admin - Delegate" -Delegating
+```
 
 Cet exemple crée une attribution de rôle de délégation pour permettre aux membres du groupe de rôles Senior Admins d'attribuer le rôle Mail Recipients seulement aux utilisateurs de l'unité d'organisation Sales/Users dans le domaine contoso.com.
 
-    New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admins - Delegate" -RecipientOrganizationalUnitScope contoso.com/sales/users -Delegating
+```powershell
+New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admins - Delegate" -RecipientOrganizationalUnitScope contoso.com/sales/users -Delegating
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335193\(v=exchg.150\)).
 

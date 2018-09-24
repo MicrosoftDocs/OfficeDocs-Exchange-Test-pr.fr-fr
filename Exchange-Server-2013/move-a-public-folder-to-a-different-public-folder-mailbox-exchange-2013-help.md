@@ -51,7 +51,9 @@ Pour découvrir d'autres tâches de gestion associées aux dossiers publics, con
 
 Cet exemple lance la demande de déplacement pour le dossier public \\CustomerEnagagements à partir de la boîte aux lettres de dossiers publics DeveloperReports to DeveloperReports01
 
-    New-PublicFolderMoveRequest -Folders \DeveloperReports\CustomerEngagements -TargetMailbox DeveloperReports01
+```powershell
+New-PublicFolderMoveRequest -Folders \DeveloperReports\CustomerEngagements -TargetMailbox DeveloperReports01
+```
 
 > [!NOTE]
 > La boîte aux lettres de dossiers publics cible est verrouillée pendant que la demande de déplacement est active.
@@ -63,7 +65,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Cet exemple démarre la demande de déplacement des dossiers publics de la branche \\Dev vers la boîte aux lettres de dossiers publics cible DeveloperReports01. Cet exemple ne déplace pas le dossier public \\Dev.
 
-    New-PublicFolderMoveRequest -Folders \Dev\CustomerEngagements,\Dev\RequestsforChange,\Dev\Usability -TargetMailbox DeveloperReports01
+```powershell
+New-PublicFolderMoveRequest -Folders \Dev\CustomerEngagements,\Dev\RequestsforChange,\Dev\Usability -TargetMailbox DeveloperReports01
+```
 
 > [!NOTE]
 > La boîte aux lettres de dossiers publics cible est verrouillée pendant que la demande de déplacement est active.
@@ -75,9 +79,10 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Cet exemple utilise le script `Move-PublicFolderBranch.ps1` pour déplacer une branche de dossiers public. Cela lance la demande de déplacement du dossier public \\Dev et de tous ses sous-dossiers vers la boîte aux lettres de dossiers publics DeveloperReports01. Le script est situé dans le dossier des scripts et doit être exécuté à partir de cet emplacement.
 
-    CD $env:ExchangeInstallPath\scripts
-    
-    .\Move-PublicFolderBranch.ps1 -FolderRoot \Dev -TargetPublicFolderMailbox DeveloperReports01
+```powershell
+CD $env:ExchangeInstallPath\scripts
+.\Move-PublicFolderBranch.ps1 -FolderRoot \Dev -TargetPublicFolderMailbox DeveloperReports01
+```
 
 ## Comment savoir si cela a fonctionné ?
 

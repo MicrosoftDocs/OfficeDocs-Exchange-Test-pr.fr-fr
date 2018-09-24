@@ -626,7 +626,9 @@ RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference 
 
 Cet exemple illustre la redistribution et l’équilibrage des copies de base de données de boîtes aux lettres actives dans un groupe de disponibilité de base de données utilisant la préférence d’activation, ainsi que la création d’un récapitulatif de la distribution.
 
-    RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -ShowFinalDatabaseDistribution
+```powershell
+RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -ShowFinalDatabaseDistribution
+```
 
 ## Surveillance des copies de base de données
 

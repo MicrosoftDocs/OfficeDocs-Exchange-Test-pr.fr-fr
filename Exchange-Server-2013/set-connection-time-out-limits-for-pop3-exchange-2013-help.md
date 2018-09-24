@@ -92,8 +92,8 @@ Ou
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
     ```powershell
-Get-PopSettings | format-list
-```
+    Get-PopSettings | format-list
+    ```
 
 2.  Vérifiez que les paramètres de connexion sont corrects.
 

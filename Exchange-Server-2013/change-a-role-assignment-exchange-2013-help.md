@@ -83,7 +83,9 @@ Vous pouvez modifier ou ajouter une étendue relative prédéfinie sur une attri
 
 Pour modifier ou ajouter une étendue prédéfinie sur une attribution de rôle, utilisez la syntaxe suivante.
 
-    Set-ManagementRoleAssignment <assignment name> -RecipientRelativeWriteScope < MyDistributionGroups | Organization | Self >
+```powershell
+Set-ManagementRoleAssignment <assignment name> -RecipientRelativeWriteScope < MyDistributionGroups | Organization | Self >
+```
 
 Cet exemple montre comment modifier l’étendue prédéfinie sur l’attribution du rôle de gestion Attribution de John sur MesGroupesDistribution.
 
@@ -99,11 +101,15 @@ Vous pouvez soit spécifier une nouvelle étendue de filtre de destinataire soit
 
 Pour spécifier une nouvelle étendue de filtre de destinataire ou en remplacer une existante, utilisez la syntaxe suivante.
 
-    Set-ManagementRoleAssignment <assignment name> -CustomRecipientWriteScope <role scope name>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -CustomRecipientWriteScope <role scope name>
+```
 
 Cet exemple ajoute ou modifie l’étendue de filtre de destinataire sur les destinataires de Redmond.
 
-    Set-ManagementRoleAssignment "Redmond Recipient Administrators Assignment" -CustomRecipientWriteScope "Redmond Recipients"
+```powershell
+Set-ManagementRoleAssignment "Redmond Recipient Administrators Assignment" -CustomRecipientWriteScope "Redmond Recipients"
+```
 
 Si vous souhaitez conserver la même étendue de filtre de destinataire qui est appliquée sur l’attribution de rôle mais que vous souhaitez modifier le filtre de destinataire servant à faire correspondre les objets destinataires, vous devez modifier le filtre destinataire sur l’étendue elle-même. Pour plus d’informations sur la manière de modifier les étendues, voir [Modifier l’étendue d’un rôle](change-a-role-scope-exchange-2013-help.md).
 
@@ -121,7 +127,9 @@ Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role sco
 
 Cet exemple ajoute ou modifie l’étendue de configuration aux serveurs de Redmond.
 
-    Set-ManagementRoleAssignment "Redmond Administrators Assignment" -CustomConfigWriteScope "Redmond Servers"
+```powershell
+Set-ManagementRoleAssignment "Redmond Administrators Assignment" -CustomConfigWriteScope "Redmond Servers"
+```
 
 Si vous souhaitez conserver la même étendue de configuration qui est appliquée à l’attribution de rôle mais que vous souhaitez modifier le filtre de serveur ou la liste des serveurs sur l’étendue, vous devez modifier l’étendue de configuration elle-même. Pour plus d’informations sur la manière de modifier les étendues, voir [Modifier l’étendue d’un rôle](change-a-role-scope-exchange-2013-help.md).
 
@@ -159,7 +167,9 @@ Set-ManagementRoleAssignment <assignment name> -RecipientOrganizationalUnitScope
 
 Cet exemple ajoute l’unité d’organisation Engineering\\Users au domaine contoso.com sur l’attribution de rôle Support technique Engineering.
 
-    Set-ManagementRoleAssignment "Engineering Help Desk" -RecipientOrganizationalUnitScope contoso.com/Engineering/Users
+```powershell
+Set-ManagementRoleAssignment "Engineering Help Desk" -RecipientOrganizationalUnitScope contoso.com/Engineering/Users
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335173\(v=exchg.150\)).
 
@@ -175,7 +185,9 @@ Tout comme avec les étendues de configuration et de destinataire normales, si v
 
 Cet exemple montre comment modifier une étendue d’écriture de destinataire exclusif.
 
-    Set-ManagementRoleAssignment "Exclusive Executive Users" -ExclusiveRecipientWriteScope "Exclusive Executives"
+```powershell
+Set-ManagementRoleAssignment "Exclusive Executive Users" -ExclusiveRecipientWriteScope "Exclusive Executives"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335173\(v=exchg.150\)).
 

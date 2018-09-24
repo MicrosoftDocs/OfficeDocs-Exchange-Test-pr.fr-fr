@@ -117,7 +117,9 @@ Pour plus d’informations sur les comptes ESRA, ainsi que leur utilisation pour
 
 Cet exemple abonne un serveur de transport Edge au site spécifié et crée automatiquement le connecteur d’envoi Internet et le connecteur d’envoi du serveur de transport Edge aux serveurs de boîtes aux lettres créés.
 
-    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
+```powershell
+New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
+```
 
 > [!NOTE]
 > Les valeurs par défaut des paramètres <em>CreateInternetSendConnector</em> et <em>CreateInboundSendConnector</em> sont définies sur <code>$true</code> pour les deux. Elles sont présentées ici uniquement à titre d’illustration.

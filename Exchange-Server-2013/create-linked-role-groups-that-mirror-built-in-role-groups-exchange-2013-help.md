@@ -66,24 +66,32 @@ Pour recréer le groupe de rôles Gestion de l’organisation en tant que groupe
 2.  Stockez les informations d’identification de la forêt Active Directory étrangère dans une variable.
     
     ```powershell
-$ForeignCredential = Get-Credential
-```
+    $ForeignCredential = Get-Credential
+    ```
 
 3.  Enregistrez tous les rôles attribués au groupe de rôles Gestion de l’organisation dans une variable.
     
-        $OrgMgmt  = Get-RoleGroup "Organization Management"
+    ```powershell
+    $OrgMgmt  = Get-RoleGroup "Organization Management"
+    ```
 
 4.  Créez le groupe de rôles lié Gestion de l’organisation et ajoutez les rôles attribués au groupe de rôles intégré Gestion de l’organisation.
     
-        New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
+    ```powershell
+    New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
+    ```
 
 5.  Supprimez toutes les attributions normales entre le nouveau groupe de rôles lié Gestion de l’organisation et les rôles d’utilisateur final My\*.
     
-        Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
+    ```powershell
+    Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
+    ```
 
 6.  Ajoutez les attributions de rôles de délégation entre le nouveau groupe de rôles lié Gestion de l’organisation et tous les rôles de gestion.
     
-        Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization Management - Linked" -Delegating
+    ```powershell
+    Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization Management - Linked" -Delegating
+    ```
 
 Cet exemple part du principe que les valeurs suivantes sont utilisées pour chaque paramètre :
 
@@ -95,11 +103,11 @@ Cet exemple part du principe que les valeurs suivantes sont utilisées pour chaq
 
 ```powershell
 $ForeignCredential = Get-Credential
+$OrgMgmt  = Get-RoleGroup "Organization Management"
+New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup "Organization Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
+Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
+Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization Management - Linked" -Delegating
 ```
-    $OrgMgmt  = Get-RoleGroup "Organization Management"
-    New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup "Organization Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
-    Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
-    Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization Management - Linked" -Delegating
 
 ## Créer tous les autres groupes de rôles liés
 
@@ -110,19 +118,21 @@ Pour recréer les groupes de rôles intégrés (autres que le groupe de rôles G
 2.  Stockez les informations d’identification de la forêt Active Directory étrangère dans une variable. Vous ne devez effectuer cette opération qu’une seule fois.
     
     ```powershell
-$ForeignCredential = Get-Credential
-```
+    $ForeignCredential = Get-Credential
+    ```
 
 3.  Récupérez une liste de groupes de rôles à l’aide de la cmdlet suivante.
     
     ```powershell
-Get-RoleGroup
-```
+    Get-RoleGroup
+    ```
 
 4.  Pour chaque groupe de rôles, autre que le groupe de rôles Gestion de l’organisation, procédez de la façon suivante.
     
         $RoleGroup = Get-RoleGroup <name of role group to re-create>
-        New-RoleGroup "<role group name> - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
+    ```powershell
+    New-RoleGroup "<role group name> - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
+    ```
 
 5.  Répétez l’étape précédente pour chaque groupe de rôles intégré à recréer en tant que groupe de rôles lié.
 
@@ -140,14 +150,12 @@ Cet exemple part du principe que les valeurs suivantes sont utilisées pour chaq
 
 ```powershell
 $ForeignCredential = Get-Credential
-```
-```powershell
 Get-RoleGroup
+$RoleGroup = Get-RoleGroup "Recipient Management"
+New-RoleGroup "Recipient Management - Linked" -LinkedForeignGroup "Recipient Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
+$RoleGroup = Get-RoleGroup "Server Management"
+New-RoleGroup "Server Management - Linked" -LinkedForeignGroup "Server Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
 ```
-    $RoleGroup = Get-RoleGroup "Recipient Management"
-    New-RoleGroup "Recipient Management - Linked" -LinkedForeignGroup "Recipient Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
-    $RoleGroup = Get-RoleGroup "Server Management"
-    New-RoleGroup "Server Management - Linked" -LinkedForeignGroup "Server Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
 
 ## Autres tâches
 

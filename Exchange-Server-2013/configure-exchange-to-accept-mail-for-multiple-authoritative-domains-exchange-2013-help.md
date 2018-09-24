@@ -71,11 +71,15 @@ Les exemples suivants présentent des scénarios dans lesquels votre organisatio
 
 Pour créer un domaine faisant autorisé, utilisez la syntaxe suivante.
 
-    New-AcceptedDomain -Name "<Unique Name>" -DomainName <SMTP domain> -DomainType Authoritative
+```powershell
+New-AcceptedDomain -Name "<Unique Name>" -DomainName <SMTP domain> -DomainType Authoritative
+```
 
 Par exemple, pour créer un domaine faisant autorisé nommé « Fourth Coffee subsidiary » pour le domaine fourthcoffee.com, exécutez la commande suivante :
 
-    New-AcceptedDomain -Name "Fourth Coffee subsidiary" -DomainName fourthcoffee.com -DomainType Authoritative
+```powershell
+New-AcceptedDomain -Name "Fourth Coffee subsidiary" -DomainName fourthcoffee.com -DomainType Authoritative
+```
 
 ## Comment savoir si cette étape a fonctionné ?
 
@@ -117,11 +121,15 @@ Dans l'environnement de ligne de commande, vous utilisez deux commandes : l'une
 
 Pour modifier l'adresse de messagerie principale en conservant l'adresse existante comme adresse proxy, exécutez la commande suivante :
 
-    Set-EmailAddressPolicy <EmailAddressPolicyIdentity> -EnabledEmailAddressTemplates SMTP:<NewPrimaryEmailAddress>,smtp:<OldPrimaryEmailAddress>
+```powershell
+Set-EmailAddressPolicy <EmailAddressPolicyIdentity> -EnabledEmailAddressTemplates SMTP:<NewPrimaryEmailAddress>,smtp:<OldPrimaryEmailAddress>
+```
 
 Par exemple, supposons que la stratégie d'adresse de messagerie de votre organisation utilise le format d'adresse *useralias*`@contoso.com`. Cet exemple montre comment modifier le domaine de l'adresse principale (de réponse) dans la stratégie d'adresse de messagerie nommée « Default Policy » en `@fourthcoffee.com`, en conservant l'adresse de réponse principale existante dans le domaine `@contoso.com` comme adresse secondaire (proxy).
 
-    Set-EmailAddressPolicy "Default Policy" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com,smtp:@contoso.com
+```powershell
+Set-EmailAddressPolicy "Default Policy" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com,smtp:@contoso.com
+```
 
 > [!NOTE]
 > Le qualificateur <code>SMTP</code> en majuscules spécifie l'adresse principale (de réponse). Le qualificateur <code>smtp</code> en minuscules spécifie une adresse secondaire (proxy).
@@ -177,9 +185,7 @@ Pour créer des adresses de messagerie supplémentaires à utiliser comme adress
 
 6.  Cliquez sur **Afficher un aperçu des destinataires auxquels la stratégie s'applique** pour visualiser les destinataires auxquels cette stratégie doit s'appliquer.
 
-7.  
-    
-    Cliquez sur **Enregistrer** pour enregistrer vos modifications et créer la stratégie.
+7.  Cliquez sur **Enregistrer** pour enregistrer vos modifications et créer la stratégie.
 
 8.  Un avertissement apparaît pour vous indiquer que la stratégie d’adresse de messagerie s’appliquera uniquement lorsque vous l’aurez mise à jour. Après sa création, sélectionnez-la puis, dans le volet des détails, cliquez sur **Appliquer**.
 
@@ -187,11 +193,15 @@ Pour créer des adresses de messagerie supplémentaires à utiliser comme adress
 
 Pour remplacer l'adresse de messagerie principale pour un ensemble filtré de destinataires, utilisez la commande suivante :
 
-    New-EmailAddressPolicy -Name <Policy Name> -Priority <Integer> -IncludedRecipients <RecipientTypes> <Conditional Recipient Properties> -EnabledEmailAddressTemplates SMTP:@<NewPrimaryEmailAddress>
+```powershell
+New-EmailAddressPolicy -Name <Policy Name> -Priority <Integer> -IncludedRecipients <RecipientTypes> <Conditional Recipient Properties> -EnabledEmailAddressTemplates SMTP:@<NewPrimaryEmailAddress>
+```
 
 Cet exemple montre comment créer une stratégie d'adresse de messagerie nommée « Fourth Coffee Recipients », attribuer cette stratégie à des utilisateurs de boîtes aux lettres du service Fourth Coffee, et définir la priorité la plus haute pour cette stratégie afin qu'elle s'applique en premier. Notez que l'ancienne adresse de messagerie principale n'est pas conservée pour ces destinataires, de sorte qu'ils ne peuvent plus y recevoir de messages électroniques.
 
-    New-EmailAddressPolicy -Name "Fourth Coffee Recipients" -Priority 1 -IncludedRecipients MailboxUsers -ConditionalDepartment "Fourth Coffee" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com
+```powershell
+New-EmailAddressPolicy -Name "Fourth Coffee Recipients" -Priority 1 -IncludedRecipients MailboxUsers -ConditionalDepartment "Fourth Coffee" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com
+```
 
 Pour appliquer la nouvelle stratégie d'adresse de messagerie aux destinataires concernés, exécutez la commande suivante :
 

@@ -67,11 +67,15 @@ Vous pouvez créer une attribution de rôle sans étendue. Lorsque vous effectue
 
 Utilisez la syntaxe suivante pour attribuer un rôle à un groupe de sécurité universel sans étendue.
 
-    New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup <USG> -Role <role name>
+```powershell
+New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup <USG> -Role <role name>
+```
 
 Cet exemple attribue le rôle « Exchange Servers » (serveurs Exchange) au groupe de sécurité universel SeattleAdmins.
 
-    New-ManagementRoleAssignment -Name "Exchange Servers_SeattleAdmins" -SecurityGroup SeattleAdmins -Role "Exchange Servers"
+```powershell
+New-ManagementRoleAssignment -Name "Exchange Servers_SeattleAdmins" -SecurityGroup SeattleAdmins -Role "Exchange Servers"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335193\(v=exchg.150\)).
 
@@ -81,11 +85,15 @@ Si une étendue relative prédéfinie correspond à vos besoins professionnels, 
 
 Utilisez la syntaxe suivante pour attribuer un rôle à un groupe de sécurité universel avec une étendue prédéfinie.
 
-    New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup < USG> -Role <role name> -RecipientRelativeWriteScope < MyDistributionGroups | Organization | Self >
+```powershell
+New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup < USG> -Role <role name> -RecipientRelativeWriteScope < MyDistributionGroups | Organization | Self >
+```
 
 Cet exemple attribue le rôle « Exchange Servers » au groupe de sécurité universel SeattleAdmins et applique l’étendue prédéfinie Organization.
 
-    New-ManagementRoleAssignment -Name "Exchange Servers_SeattleAdmins" -SecurityGroup SeattleAdmins -Role "Exchange Servers" -RecipientRelativeWriteScope Organization
+```powershell
+New-ManagementRoleAssignment -Name "Exchange Servers_SeattleAdmins" -SecurityGroup SeattleAdmins -Role "Exchange Servers" -RecipientRelativeWriteScope Organization
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335193\(v=exchg.150\)).
 
@@ -97,11 +105,15 @@ Avant de pouvoir ajouter une étendue pour une attribution de rôle, vous devez 
 
 Utilisez la syntaxe suivante pour attribuer un rôle à un groupe de sécurité universel avec une étendue de destinataire basée sur le filtre.
 
-    New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup < USG> -Role <role name> -CustomRecipientWriteScope <role scope name>
+```powershell
+New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup < USG> -Role <role name> -CustomRecipientWriteScope <role scope name>
+```
 
 Cet exemple attribue le rôle Mail Recipients (Destinataires) au groupe de sécurité universel Seattle Recipient Admins (Administrateurs destinataires de Seattle) et applique l’étendue Seattle Recipients (Destinataires de Seattle).
 
-    New-ManagementRoleAssignment -Name "Mail Recipients_Seattle Recipient Admins" -SecurityGroup "Seattle Recipient Admins" -Role "Mail Recipients" -CustomRecipientWriteScope "Seattle Recipients"
+```powershell
+New-ManagementRoleAssignment -Name "Mail Recipients_Seattle Recipient Admins" -SecurityGroup "Seattle Recipient Admins" -Role "Mail Recipients" -CustomRecipientWriteScope "Seattle Recipients"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335193\(v=exchg.150\)).
 
@@ -113,11 +125,15 @@ Avant de pouvoir ajouter une étendue pour une attribution de rôle, vous devez 
 
 Utilisez la syntaxe suivante pour attribuer un rôle à un groupe de sécurité universel avec une étendue de configuration.
 
-    New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup <USG> -Role <role name> -CustomConfigWriteScope <role scope name>
+```powershell
+New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup <USG> -Role <role name> -CustomConfigWriteScope <role scope name>
+```
 
 Cet exemple attribue le rôle « Exchange Servers » au groupe de sécurité universel MailboxAdmins et applique l’étendue Mailbox Servers.
 
-    New-ManagementRoleAssignment -Name "Exchange Servers_MailboxAdmins" -SecurityGroup MailboxAdmins -Role "Exchange Servers" -CustomConfigWriteScope "Mailbox Servers"
+```powershell
+New-ManagementRoleAssignment -Name "Exchange Servers_MailboxAdmins" -SecurityGroup MailboxAdmins -Role "Exchange Servers" -CustomConfigWriteScope "Mailbox Servers"
+```
 
 L'exemple précédent montre comment ajouter une attribution de rôle avec une étendue de configuration de serveur. La syntaxe utilisée pour ajouter une étendue de configuration de base de données est la même. Vous devez préciser le nom d’une étendue de base de données au lieu d’une étendue de serveur.
 
@@ -129,11 +145,15 @@ Si vous souhaitez affecter une étendue d'écriture de rôle à une unité d'org
 
 Utilisez la syntaxe suivante pour attribuer un rôle à un groupe de sécurité universel et limiter l’éténdue d’écriture d’un rôle à une unité d’organisation spécifique.
 
-    New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup <USG> -Role <role name> -RecipientOrganizationalUnitScope <OU>
+```powershell
+New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup <USG> -Role <role name> -RecipientOrganizationalUnitScope <OU>
+```
 
 Cet exemple attribue le rôle Mail Recipients au groupe de sécurité universel SalesRecipientAdmins et définit l’étendue de l’attribution sur l’unité d’organisation « sales/users » dans le domaine contoso.com.
 
-    New-ManagementRoleAssignment -Name "Mail Recipients_SalesRecipientAdmins" -SecurityGroup SalesRecipientAdmins -Role "Mail Recipients" -RecipientOrganizationalUnitScope contoso.com/sales/users
+```powershell
+New-ManagementRoleAssignment -Name "Mail Recipients_SalesRecipientAdmins" -SecurityGroup SalesRecipientAdmins -Role "Mail Recipients" -RecipientOrganizationalUnitScope contoso.com/sales/users
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335193\(v=exchg.150\)).
 
@@ -151,7 +171,9 @@ Vous ne pouvez pas créer d'attribution de rôle avec des étendues à la fois e
 
 Cet exemple attribue le rôle Mail Recipients au groupe de sécurité universel Protected User Admins et applique l’étendue exclusive Protected Users.
 
-    New-ManagementRoleAssignment -Name "Mail Recipients_Protected User Admins" -SecurityGroup "Protected User Admins" -Role "Mail Recipients" -ExclusiveRecipientWriteScope "Protected Users"
+```powershell
+New-ManagementRoleAssignment -Name "Mail Recipients_Protected User Admins" -SecurityGroup "Protected User Admins" -Role "Mail Recipients" -ExclusiveRecipientWriteScope "Protected Users"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335193\(v=exchg.150\)).
 

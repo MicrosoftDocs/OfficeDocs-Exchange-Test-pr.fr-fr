@@ -77,7 +77,9 @@ Set-PopSettings -Identity CAS01 -MaxConnectionsFromSingleIP Value
 
 Cet exemple définit la limite de connexion pour un utilisateur.
 
-    Set-PopSettings -MaxConnectionsPerUser Value 
+```powershell
+Set-PopSettings -MaxConnectionsPerUser Value 
+```
 
 Cet exemple montre comment définir la taille maximale d’une commande.
 
@@ -108,8 +110,8 @@ Ou
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
     ```powershell
-Get-PopSettings | format-list
-```
+    Get-PopSettings | format-list
+    ```
 
 2.  Vérifiez que les paramètres de connexion sont corrects.
 

@@ -42,28 +42,30 @@ La *priorité de mise en file d'attente* est une fonctionnalité de Microsoft Ex
 1.  Dans une fenêtre d'invite de commandes, ouvrez le fichier de configuration de l'application EdgeTransport.exe.config dans le Bloc-notes en exécutant la commande suivante :
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  Recherchez les clés suivantes dans la section `<appSettings>`.
     
-        <add key="PriorityQueuingEnabled" value="false" />
-        <add key="MaxPerDomainHighPriorityConnections" value="3" />
-        <add key="MaxPerDomainNormalPriorityConnections" value="15" />
-        <add key="MaxPerDomainLowPriorityConnections" value="2" />
-        <add key="HighPriorityMessageExpirationTimeout" value="8:00:00" />
-        <add key="NormalPriorityMessageExpirationTimeout" value="2.00:00:00" />
-        <add key="LowPriorityMessageExpirationTimeout" value="2.00:00:00" />
-        <add key="HighPriorityDelayNotificationTimeout" value="00:30:00" />
-        <add key="NormalPriorityDelayNotificationTimeout" value="4:00:00" />
-        <add key="LowPriorityDelayNotificationTimeout" value="8:00:00" />
-        <add key="MaxHighPriorityMessageSize" value="250KB" />
+    ```powershell
+    <add key="PriorityQueuingEnabled" value="false" />
+    <add key="MaxPerDomainHighPriorityConnections" value="3" />
+    <add key="MaxPerDomainNormalPriorityConnections" value="15" />
+    <add key="MaxPerDomainLowPriorityConnections" value="2" />
+    <add key="HighPriorityMessageExpirationTimeout" value="8:00:00" />
+    <add key="NormalPriorityMessageExpirationTimeout" value="2.00:00:00" />
+    <add key="LowPriorityMessageExpirationTimeout" value="2.00:00:00" />
+    <add key="HighPriorityDelayNotificationTimeout" value="00:30:00" />
+    <add key="NormalPriorityDelayNotificationTimeout" value="4:00:00" />
+    <add key="LowPriorityDelayNotificationTimeout" value="8:00:00" />
+    <add key="MaxHighPriorityMessageSize" value="250KB" />
+    ```
     
     Pour activer la priorité de mise en file d'attente dans le service de transport sur le serveur de boîtes aux lettres, utilisez la valeur suivante :
     
     ```command line
-<add key="PriorityQueuingEnabled" value="true" />
-```
+    <add key="PriorityQueuingEnabled" value="true" />
+    ```
     
     Configurez les valeurs de priorité de mise en file d'attente restantes ou conservez les valeurs par défaut.
 
@@ -71,7 +73,9 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 
 4.  Redémarrez le service de transport Microsoft Exchange en exécutant la commande suivante :
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 ## Comment savoir si cela a fonctionné ?
 

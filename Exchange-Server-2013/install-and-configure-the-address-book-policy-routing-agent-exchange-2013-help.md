@@ -45,7 +45,9 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Installez l'agent de routage des stratégies de carnet d'adresses en exécutant la commande suivante. Il s’agit de la commande et de la syntaxe exactes que vous devez utiliser.
 
-    Install-TransportAgent -Name "ABP Routing Agent" -TransportAgentFactory "Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.AddressBookPolicyRoutingAgentFactory" -AssemblyPath $env:ExchangeInstallPath\TransportRoles\agents\AddressBookPolicyRoutingAgent\Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.dll
+```powershell
+Install-TransportAgent -Name "ABP Routing Agent" -TransportAgentFactory "Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.AddressBookPolicyRoutingAgentFactory" -AssemblyPath $env:ExchangeInstallPath\TransportRoles\agents\AddressBookPolicyRoutingAgent\Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.dll
+```
 
 Vous recevrez un avertissement indiquant que le service de transport doit être redémarré pour que vos modifications soient appliquées, mais auparavant, effectuez l’étape 2 de manière à ne redémarrer le service de transport qu’une seule fois.
 
@@ -70,14 +72,14 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 1.  Redémarrez le service de transport en exécutant la commande suivante.
     
     ```powershell
-Restart-Service MSExchangeTransport
-```
+    Restart-Service MSExchangeTransport
+    ```
 
 2.  Après le redémarrage du service, vérifiez que l'agent de routage des stratégies de carnet d'adresses est installé et activé en exécutant la cmdlet suivante.
     
     ```powershell
-Get-TransportAgent
-```
+    Get-TransportAgent
+    ```
     
     Si l'agent de routage des stratégies de carnet d'adresses figure dans la liste, cela signifie qu'il a bien été installé.
 

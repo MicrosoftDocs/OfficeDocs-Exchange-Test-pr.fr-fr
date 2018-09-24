@@ -43,7 +43,9 @@ Le répertoire de collecte et le répertoire de relecture sont utilisés par le 
 
 Pour configurer le répertoire de collecte, utilisez la syntaxe suivante.
 
-    Set-TransportService <ServerIdentity> -PickupDirectoryPath <LocalFilePath> -PickupDirectoryMaxHeaderSize <Size> -PickupDirectoryMaxRecipientsPerMessage <Integer> -PickupDirectoryMaxMessagesPerMinute <Integer>
+```powershell
+Set-TransportService <ServerIdentity> -PickupDirectoryPath <LocalFilePath> -PickupDirectoryMaxHeaderSize <Size> -PickupDirectoryMaxRecipientsPerMessage <Integer> -PickupDirectoryMaxMessagesPerMinute <Integer>
+```
 
 Cet exemple apporte les modifications suivantes au répertoire de collecte situé sur le serveur de boîtes aux lettres qui est nommé Exchange01:
 
@@ -57,7 +59,9 @@ Cet exemple apporte les modifications suivantes au répertoire de collecte situ�
 
 <!-- end list -->
 
-    Set-TransportService Exchange01 -PickupDirectoryPath "D:\Pickup Directory" -PickupDirectoryMaxHeaderSize 96KB -PickupDirectoryMaxRecipientsPerMessage 250 -PickupDirectoryMaxMessagesPerMinute 200
+```powershell
+Set-TransportService Exchange01 -PickupDirectoryPath "D:\Pickup Directory" -PickupDirectoryMaxHeaderSize 96KB -PickupDirectoryMaxRecipientsPerMessage 250 -PickupDirectoryMaxMessagesPerMinute 200
+```
 
 > [!NOTE]
 > <ul>
@@ -68,7 +72,9 @@ Cet exemple apporte les modifications suivantes au répertoire de collecte situ�
 
 Pour configurer le répertoire de relecture, utilisez la syntaxe suivante.
 
-    Set-TransportService <ServerIdentity> -ReplayDirectoryPath "C:\Replay Directory" <LocalFilePath> -PickupDirectoryMaxMessagesPerMinute <Integer>
+```powershell
+Set-TransportService <ServerIdentity> -ReplayDirectoryPath "C:\Replay Directory" <LocalFilePath> -PickupDirectoryMaxMessagesPerMinute <Integer>
+```
 
 Cet exemple apporte les modifications suivantes au répertoire de relecture situé sur le serveur de boîtes aux lettres qui est nommé Exchange01:
 
@@ -78,7 +84,9 @@ Cet exemple apporte les modifications suivantes au répertoire de relecture situ
 
 <!-- end list -->
 
-    Set-TransportService Exchange01 -ReplayDirectoryPath "D:\Replay Directory" -PickupDirectoryMaxMessagesPerMinute 200
+```powershell
+Set-TransportService Exchange01 -ReplayDirectoryPath "D:\Replay Directory" -PickupDirectoryMaxMessagesPerMinute 200
+```
 
 > [!NOTE]
 > <ul>
@@ -91,7 +99,9 @@ Pour vérifier si les répertoires de collecte et de relecture sont configurés 
 
 1.  Exécutez la commande suivante :
     
-        Get-TransportService <ServerIdentity> | Format-List Pickup*,Replay*
+    ```powershell
+    Get-TransportService <ServerIdentity> | Format-List Pickup*,Replay*
+    ```
 
 2.  Vérifiez que les valeurs affichées sont les valeurs que vous avez configurées.
 

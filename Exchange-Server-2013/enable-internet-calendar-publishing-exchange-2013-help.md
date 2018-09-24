@@ -86,7 +86,9 @@ Get-ExchangeServer | format-list
 
 Cet exemple active le répertoire virtuel de publication sur le serveur d’accès au client CAS01.
 
-    Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<URL for CAS01>" -CalendarEnabled $true
+```powershell
+Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<URL for CAS01>" -CalendarEnabled $true
+```
 
 Où l’identité `CAS01\owa (Default Web Site)` est à la fois le nom du serveur et le répertoire virtuel Outlook Web App.
 
@@ -140,7 +142,9 @@ Pour créer une stratégie de partage spécifiquement pour la publication Intern
 
 Dans cet exemple, nous créons une stratégie de partage de publication Internet de calendriers intitulée « Internet » et configurons la stratégie afin de partager uniquement les informations de disponibilité. La stratégie est activée.
 
-    New-SharingPolicy -Name "Internet" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```powershell
+New-SharingPolicy -Name "Internet" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```
 
 Cet exemple ajoute la stratégie de partage Internet à la boîte aux lettres d’un utilisateur.
 
@@ -194,7 +198,9 @@ Pour configurer la stratégie de partage par défaut pour la publication Interne
 
 Dans cet exemple, nous mettons à jour la stratégie de partage par défaut et configurons la stratégie pour ne partager que des informations de disponibilité. La stratégie est activée.
 
-    Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```powershell
+Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123981\(v=exchg.150\)).
 

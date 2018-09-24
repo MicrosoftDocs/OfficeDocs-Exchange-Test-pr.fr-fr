@@ -53,7 +53,9 @@ Que se passe-t-il si vous installez les agents anti-spam disponibles dans le ser
 
 Exécutez la commande suivante :
 
-    & $env:ExchangeInstallPath\Scripts\Install-AntiSpamAgents.ps1
+```powershell
+& $env:ExchangeInstallPath\Scripts\Install-AntiSpamAgents.ps1
+```
 
 ## Comment savoir si cette étape a fonctionné ?
 
@@ -94,8 +96,8 @@ Pour vérifier que vous avez spécifier l'adresse IP avec succès d'au moins un 
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-TransportConfig | Format-List InternalSMTPServers
-```
+    Get-TransportConfig | Format-List InternalSMTPServers
+    ```
 
 2.  Vérifiez que l'adresse IP d'au moins un serveur SMTP interne valide est affiché.
 

@@ -43,7 +43,9 @@ Pour plus d’informations sur les boîtes aux lettres déconnectées et sur l�
 
   - Exécutez la commande suivante pour vérifier que la boîte aux lettres désactivée à laquelle vous voulez connecter un compte utilisateur existe dans la base de données de boîtes aux lettres et qu’il ne s’agit pas d’une boîte aux lettres supprimées (récupérables).
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    ```
     
     Pour pouvoir connecter une boîte aux lettres désactivée, celle-ci doit exister dans la base de données des boîtes aux lettres et la valeur pour la propriété *DisconnectReason* doit être `Disabled`. Si la boîte aux lettres a été purgée de la base de données, la commande ne doit renvoyer aucun résultat.
 
@@ -87,11 +89,15 @@ Connect-Mailbox -Identity "Jeffrey Zeng" -Database MBXDB01 -User "Jeffrey Zeng"
 
 Cet exemple connecte une boîte aux lettres liée. Le paramètre *Identity* spécifie la boîte aux lettres déconnectée dans la base de données Exchange. Le paramètre *LinkedMasterAccount* indique le compte utilisateur Active Directory dans la forêt de comptes auquel vous voulez reconnecter la boîte aux lettres. Le paramètre *Alias* spécifie l’alias, il s’agit de la partie de l’adresse de messagerie qui apparaît à gauche du symbole (@), for la boîte aux lettres reconnectée.
 
-    Connect-Mailbox -Identity "Kai Axford" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount kai.axford@fabrikam.com -Alias kaia
+```powershell
+Connect-Mailbox -Identity "Kai Axford" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount kai.axford@fabrikam.com -Alias kaia
+```
 
 Dans cet exemple, nous connectons une boîte aux lettres partagée.
 
-    Connect-Mailbox -Identity "Corporate Shared Mailbox" -Database "Mailbox Database 03" -User "Corporate Shared Mailbox" -Alias corpshared -Shared
+```powershell
+Connect-Mailbox -Identity "Corporate Shared Mailbox" -Database "Mailbox Database 03" -User "Corporate Shared Mailbox" -Alias corpshared -Shared
+```
 
 > [!NOTE]
 > Si vous n’incluez pas la paramètre <em>Alias</em>, lorsque vous exécutez la cmdlet <strong>Connect-Mailbox</strong>, la valeur spécifiée dans le paramètre <em>User</em> ou <em>LinkedMasterAccount</em> est utilisée pour créer l’alias de l’adresse de messagerie pour la boîte aux lettre reconnectée.
@@ -110,8 +116,8 @@ Pour vérifier qu’une boîte aux lettres désactivée a bien été connectée 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
     ```powershell
-Get-User <identity>
-```
+    Get-User <identity>
+    ```
     
     La valeur **UserMailbox** pour la propriété *RecipientType* indique que le compte utilisateur et la boîte aux lettres sont connectés. Vous pouvez également exécuter la cmdlet **Get-Mailbox** pour vérifier que la boîte aux lettres existe.
 

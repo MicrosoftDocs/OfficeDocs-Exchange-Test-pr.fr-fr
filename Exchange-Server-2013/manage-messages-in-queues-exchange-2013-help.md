@@ -57,7 +57,9 @@ Un message envoyé à plusieurs destinataires pourrait se trouver dans plusieurs
 
 Pour supprimer des messages des files d'attente, utilisez la syntaxe suivante :
 
-    Remove-Message <-Identity MessageIdentity | -Filter {MessageFilter}> -WithNDR <$true | $false>
+```powershell
+Remove-Message <-Identity MessageIdentity | -Filter {MessageFilter}> -WithNDR <$true | $false>
+```
 
 Cet exemple supprime les messages dont l'objet est « Win Big » dans les files d'attente sans envoyer de rapport de non-remise.
 
@@ -113,7 +115,9 @@ Resume-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
 
 Cet exemple indique comment reprendre tous les messages envoyés par un expéditeur faisant partie du domaine Contoso.com.
 
-    Resume-Message -Filter {FromAddress -eq "*contoso.com"}
+```powershell
+Resume-Message -Filter {FromAddress -eq "*contoso.com"}
+```
 
 Cet exemple montre comment reprendre le message avec l'ID 3 dans la file d'attente inaccessible sur le serveur Hub01.
 
@@ -159,7 +163,9 @@ Suspend-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
 
 Cet exemple montre comment suspendre tous les messages des files d'attente provenant d'un expéditeur du domaine contoso.com.
 
-    Suspend-Message -Filter {FromAddress -eq "*contoso.com"}
+```powershell
+Suspend-Message -Filter {FromAddress -eq "*contoso.com"}
+```
 
 Cet exemple montre comment suspendre le message avec l'ID 3 dans la file d'attente inaccessible sur le serveur Mailbox01 :
 

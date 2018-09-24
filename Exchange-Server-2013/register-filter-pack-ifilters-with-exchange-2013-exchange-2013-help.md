@@ -73,8 +73,8 @@ Le déploiement du pack de filtres Office 2010 s’articule en deux étapes prin
 3.  Démarrez l’Éditeur de Registre, puis localisez la sous-clé de Registre suivante :
     
     ```powershell
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
-```
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+    ```
 
 4.  Sous **CLSID**, ajoutez une sous-clé pour les fichiers OneNote comme suit :
     
@@ -103,8 +103,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
 6.  Localisez la clé de Registre suivante :
     
     ```powershell
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
-```
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
+    ```
 
 7.  Sous **Filtres**, ajoutez une sous-clé pour les extensions .one comme suit :
     
@@ -173,8 +173,8 @@ Cette procédure explique comment déployer l’[IFilter Adobe PDF](https://www.
 2.  Démarrez l’Éditeur de Registre, puis localisez la sous-clé suivante :
     
     ```powershell
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
-```
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+    ```
 
 3.  Sous **CLSID**, ajoutez une sous-clé pour les fichiers PDF comme suit :
     
@@ -190,8 +190,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
 4.  Localisez la clé de Registre suivante :
     
     ```powershell
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
-```
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
+    ```
 
 5.  Sous **Filtres**, ajoutez une sous-clé pour les extensions .pdf comme suit :
     

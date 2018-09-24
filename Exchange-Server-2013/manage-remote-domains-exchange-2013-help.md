@@ -57,7 +57,9 @@ New-RemoteDomain -Name Contoso -DomainName contoso.com
 
 Cet exemple crée une entrée de domaine distant pour les messages envoyés au domaine fabrikam.com et à tous les sous-domaines.
 
-    New-RemoteDomain -Name Fabrikam -DomainName *.fabrikam.com
+```powershell
+New-RemoteDomain -Name Fabrikam -DomainName *.fabrikam.com
+```
 
 ## Comment savoir si cela a fonctionné ?
 

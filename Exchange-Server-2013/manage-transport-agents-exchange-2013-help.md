@@ -50,16 +50,16 @@ Pour exécuter les procédures de l'agent de transport décrites dans cette rubr
 1.  Sur le serveur d’accès au client, ouvrez Windows PowerShell et exécutez la commande suivante :
     
     ```powershell
-Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
-```
+    Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+    ```
 
 2.  Exécutez la commande comme cela est indiqué, mais ajoutez-lui la valeur suivante : `-TransportService FrontEnd`.
     
     Par exemple, pour afficher les agents de transport dans le service de transport frontal sur un serveur d'accès au client, exécutez la commande suivante :
     
     ```powershell
-Get-TransportAgent -TransportService FrontEnd
-```
+    Get-TransportAgent -TransportService FrontEnd
+    ```
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour installer un agent de transport
 
@@ -71,11 +71,15 @@ Les agents de transport sont installés dans un état désactivé pour éviter q
 
 Utilisez la syntaxe suivante pour installer un agent de transport.
 
-    Install-TransportAgent -Name <TransportAgentIdentity> -TransportAgentFactory <"TransportAgentFactory"> -AssemblyPath <"FilePath">
+```powershell
+Install-TransportAgent -Name <TransportAgentIdentity> -TransportAgentFactory <"TransportAgentFactory"> -AssemblyPath <"FilePath">
+```
 
 Cet exemple installe une application fictive appelée « Agent de transport Contoso » dans le service de transport sur un serveur de boîtes aux lettres.
 
-    Install-TransportAgent -Name "Contoso Transport Agent" -TransportAgentFactory "vendor.exchange.ContosoTransportAgentfactory" -AssemblyPath "C:\Program Files\Vendor\TransportAgent\ContosoTransportAgentFactory.dll"
+```powershell
+Install-TransportAgent -Name "Contoso Transport Agent" -TransportAgentFactory "vendor.exchange.ContosoTransportAgentfactory" -AssemblyPath "C:\Program Files\Vendor\TransportAgent\ContosoTransportAgentFactory.dll"
+```
 
 ## Comment savoir si cela a fonctionné ?
 

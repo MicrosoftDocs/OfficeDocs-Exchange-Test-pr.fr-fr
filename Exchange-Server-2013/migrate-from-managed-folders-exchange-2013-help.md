@@ -251,13 +251,15 @@ Pour cette étape, vous pouvez utiliser deux méthodes :
 
 Cet exemple montre comment créer des balises de rétention en fonction des paramètres de contenu géré correspondants affichés dans la stratégie de boîte aux lettres de dossier géré de Contoso.
 
-    New-RetentionPolicyTag Corp-DeletedItems -ManagedFolderToUpgrade Corp-DeletedItems
-    New-RetentionPolicyTag Corp-SentItems -ManagedFolderToUpgrade Corp-SentItems
-    New-RetentionPolicyTag Corp-JunkMail -ManagedFolderToUpgrade Corp-JunkMail
-    New-RetentionPolicyTag Corp-EntireMailbox -ManagedFolderToUpgrade Corp-EntireMailbox
-    New-RetentionPolicyTag 30Days -ManagedFolderToUpgrade 30Days
-    New-RetentionPolicyTag 5Years -ManagedFolderToUpgrade 5Years
-    New-RetentionPolicyTag NeverExpire -ManagedFolderToUpgrade NeverExpire
+```powershell
+New-RetentionPolicyTag Corp-DeletedItems -ManagedFolderToUpgrade Corp-DeletedItems
+New-RetentionPolicyTag Corp-SentItems -ManagedFolderToUpgrade Corp-SentItems
+New-RetentionPolicyTag Corp-JunkMail -ManagedFolderToUpgrade Corp-JunkMail
+New-RetentionPolicyTag Corp-EntireMailbox -ManagedFolderToUpgrade Corp-EntireMailbox
+New-RetentionPolicyTag 30Days -ManagedFolderToUpgrade 30Days
+New-RetentionPolicyTag 5Years -ManagedFolderToUpgrade 5Years
+New-RetentionPolicyTag NeverExpire -ManagedFolderToUpgrade NeverExpire
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-RetentionPolicyTag](https://technet.microsoft.com/fr-fr/library/dd335226\(v=exchg.150\)).
 
@@ -269,13 +271,15 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Cet exemple montre comment créer des balises de rétention en fonction des dossiers gérés et des paramètres de contenu géré correspondants affichés dans la stratégie de boîte aux lettres de dossier géré de Contoso. Les paramètres de rétention sont spécifiés manuellement, sans l'aide du paramètre *ManagedFolderToUpgrade*.
 
-    New-RetentionPolicyTag Corp-DeletedItems -Type DeletedItems -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction DeleteAndAllowRecovery
-    New-RetentionPolicyTag Corp-SentItems -Type SentItems -RetentionEnabled $true -AgeLimitforRetention 1825 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag Corp-JunkMail -Type JunkMail -RetentionEnabled $true -AgeLimitforRetention 30 -RetentionAction PermanentlyDelete
-    New-RetentionPolicyTag Corp-EntireMailbox -Type All -RetentionEnabled $true -AgeLimitForRetention 365 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag 30Days -Type Personal -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag 5Years -Type Personal -RetentionEnabled $true -AgeLimitForRetention 1825 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag NeverExpire -Type Personal -RetentionEnabled $false
+```powershell
+New-RetentionPolicyTag Corp-DeletedItems -Type DeletedItems -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction DeleteAndAllowRecovery
+New-RetentionPolicyTag Corp-SentItems -Type SentItems -RetentionEnabled $true -AgeLimitforRetention 1825 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag Corp-JunkMail -Type JunkMail -RetentionEnabled $true -AgeLimitforRetention 30 -RetentionAction PermanentlyDelete
+New-RetentionPolicyTag Corp-EntireMailbox -Type All -RetentionEnabled $true -AgeLimitForRetention 365 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag 30Days -Type Personal -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag 5Years -Type Personal -RetentionEnabled $true -AgeLimitForRetention 1825 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag NeverExpire -Type Personal -RetentionEnabled $false
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-RetentionPolicyTag](https://technet.microsoft.com/fr-fr/library/dd335226\(v=exchg.150\)).
 
@@ -289,7 +293,9 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Cet exemple montre comment créer la stratégie de rétention RP-Corp et associer les balises de rétention nouvellement créées à cette stratégie.
 
-    New-RetentionPolicy RP-Corp -RetentionPolicyTagLinks Corp-DeletedItems,Corp-SentItems,Corp-JunkMail,Corp-EntireMailbox,30Days,NeverExpire
+```powershell
+New-RetentionPolicy RP-Corp -RetentionPolicyTagLinks Corp-DeletedItems,Corp-SentItems,Corp-JunkMail,Corp-EntireMailbox,30Days,NeverExpire
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-RetentionPolicy](https://technet.microsoft.com/fr-fr/library/dd297970\(v=exchg.150\)).
 
@@ -327,13 +333,15 @@ Pour vérifier la réussite de la migration des dossiers gérés vers les strat�
     
     Cette commande récupère la stratégie de rétention appliquée à toutes les boîtes aux lettres au sein d’une organisation, ainsi que leur état de blocage de rétention.
     
-        Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*�?} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
+    ```powershell
+    Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*�?} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
+    ```
 
   - Après que l’Assistant Dossier géré a traité la boîte aux lettres avec une stratégie de rétention, utilisez la cmdlet [Get-RetentionPolicyTag](https://technet.microsoft.com/fr-fr/library/dd298009\(v=exchg.150\)) pour extraire les balises de rétention configurées dans la boîte aux lettres utilisateur.
     
     Cette commande extrait les balises de rétention réellement appliquées à la boîte aux lettres d’April Stewart.
     
     ```powershell
-Get-RetentionPolicyTag -Mailbox astewart
-```
+    Get-RetentionPolicyTag -Mailbox astewart
+    ```
 

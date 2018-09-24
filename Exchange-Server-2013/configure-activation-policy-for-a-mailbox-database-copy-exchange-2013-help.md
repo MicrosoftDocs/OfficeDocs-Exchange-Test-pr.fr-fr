@@ -37,15 +37,11 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux copies de 
 
 ## Utiliser le Centre d’administration Exchange (EAC) pour configurer la stratégie d’activation d’une copie de la base de données de boîtes aux lettres
 
-1.  
-    
-    Dans la CCE, accédez à **Serveurs** \> **Bases de données**.
+1.  Dans la CCE, accédez à **Serveurs** \> **Bases de données**.
 
 2.  Sélectionnez la base de données que vous souhaitez configurer.
 
-3.  
-    
-    Dans le volet d’informations, sous **Copies de base de données**, recherchez la copie de base de données que vous souhaitez configurer, puis cliquez sur **Interrompre**.
+3.  Dans le volet d’informations, sous **Copies de base de données**, recherchez la copie de base de données que vous souhaitez configurer, puis cliquez sur **Interrompre**.
 
 4.  Vous pouvez également ajouter un commentaire et activer la case à cocher **Cette copie peut uniquement être activée manuellement**.
 
@@ -96,12 +92,12 @@ Pour vérifier que vous avez bien configuré la stratégie d’activation, proc�
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour vérifier les paramètres d’activation d’une copie de base de données :
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
+    ```
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour vérifier les paramètres d’activation d’un membre du groupe de disponibilité de base de données :
     
     ```powershell
-Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
-```
+    Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
+    ```
 

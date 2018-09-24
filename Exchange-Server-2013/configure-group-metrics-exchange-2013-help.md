@@ -62,8 +62,8 @@ Pour vérifier que vous avez correctement activé ou désactivé la génération
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
-```
+    Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
+    ```
 
 2.  Vérifiez que le paramètre affiché est le paramètre que vous avez configuré.
 

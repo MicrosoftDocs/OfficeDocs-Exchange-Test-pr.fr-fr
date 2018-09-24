@@ -62,8 +62,8 @@ Pour vérifier que vous avez correctement activé ou désactivé l’ID de l’e
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-SenderIDConfig | Format-List Enabled
-```
+    Get-SenderIDConfig | Format-List Enabled
+    ```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 
@@ -88,8 +88,8 @@ Pour vérifier que vous avez configuré l’action de l’ID de l’expéditeur 
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-SenderIDConfig | Format-List SpoofedDomainAction
-```
+    Get-SenderIDConfig | Format-List SpoofedDomainAction
+    ```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 
@@ -116,8 +116,8 @@ Pour vérifier que vous avez configuré l’action de l’ID de l’expéditeur 
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-SenderIDConfig | Format-List TempErrorAction
-```
+    Get-SenderIDConfig | Format-List TempErrorAction
+    ```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 
@@ -125,15 +125,21 @@ Get-SenderIDConfig | Format-List TempErrorAction
 
 Pour remplacer les valeurs existantes, exécutez la commande suivante :
 
-    Set-SenderIDConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenderDomains <domain1,domain2...>
+```powershell
+Set-SenderIDConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenderDomains <domain1,domain2...>
+```
 
 Cet exemple configure l’agent d’ID de l’expéditeur pour ignorer la vérification de l’ID de l’expéditeur pour les messages envoyés à kim@contoso.com et john@contoso.com et contourner la vérification de l’ID de l’expéditeur pour les messages envoyés à partir du domaine fabrikam.com.
 
-    Set-SenderIDConfig -BypassedRecipients kim@contoso.com,john@contoso.com -BypassedSenderDomains fabrikam.com
+```powershell
+Set-SenderIDConfig -BypassedRecipients kim@contoso.com,john@contoso.com -BypassedSenderDomains fabrikam.com
+```
 
 Pour ajouter ou supprimer des entrées sans modifier une valeur existante, exécutez la commande suivante :
 
-    Set-SenderIDConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```powershell
+Set-SenderIDConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```
 
 Cet exemple configure l’agent d’ID de l’expéditeur avec les informations suivantes :
 
@@ -143,7 +149,9 @@ Cet exemple configure l’agent d’ID de l’expéditeur avec les informations 
 
 <!-- end list -->
 
-    Set-SenderIDConfig -BypassedRecipients @{Add="chris@contoso.com","michelle@contoso.com"} -BypassedSenderDomains @{Remove="tailspintoys.com"}
+```powershell
+Set-SenderIDConfig -BypassedRecipients @{Add="chris@contoso.com","michelle@contoso.com"} -BypassedSenderDomains @{Remove="tailspintoys.com"}
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -152,8 +160,8 @@ Pour vérifier que vous avez correctement configuré les exceptions de domaine d
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
-```
+    Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
+    ```
 
 2.  Vérifiez que les valeurs affichées sont les valeurs que vous avez configurées.
 

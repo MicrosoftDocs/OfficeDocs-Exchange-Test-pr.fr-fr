@@ -136,18 +136,14 @@ Disable-Mailbox <identity>
 Lorsque vous exécutez cette commande, un message s’affiche pour vous demander de confirmer la désactivation de la boîte aux lettres.
 
 Voici quelques exemples de commandes permettant de désactiver les boîtes aux lettres.
-```
+
 ```powershell
 Disable-Mailbox danj
-```
-```
-```
-    Disable-Mailbox "Conf Room 31/1234 (12)"
-```
-```
-```powershell
+
+Disable-Mailbox "Conf Room 31/1234 (12)"
+
 Disable-Mailbox sharedmbx@contoso.com
-```
+
 ```
 
 ## Comment savoir si cela a fonctionné ?
@@ -160,7 +156,9 @@ Pour vérifier que vous avez bien désactivé une boîte aux lettres, procédez 
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisconnectReason,DisconnectDate
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisconnectReason,DisconnectDate
+    ```
     
     La valeur `Disabled` de la propriété *DisconnectReason* indique que la boîte aux lettres est désactivée.
     
@@ -171,8 +169,8 @@ Pour vérifier que vous avez bien désactivé une boîte aux lettres, procédez 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
     ```powershell
-Get-User <identity>
-```
+    Get-User <identity>
+    ```
     
     Notez que la valeur de la propriété *RecipientType* est `User` et non pas `UserMailbox`, qui est la valeur attribuée aux utilisateurs dont les boîtes aux lettres sont activées. Ceci indique également que la boîte aux lettres est désactivée, mais que le compte d’utilisateur est conservé.
 
@@ -203,19 +201,15 @@ Remove-Mailbox <identity>
 Lorsque vous exécutez cette commande, un message vous demande de confirmer la suppression de la boîte aux lettres et du compte d’utilisateur Active Directory correspondant.
 
 Voici quelques exemples de commandes permettant de supprimer des boîtes aux lettres.
-```
+
 ```powershell
 Remove-Mailbox pilarp@contoso.com
-```
-```
-```
-    Remove-Mailbox "Fleet Van (16)"
-```
-```
-```powershell
+
+Remove-Mailbox "Fleet Van (16)"
+
 Remove-Mailbox corpprint
 ```
-```
+
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -229,7 +223,9 @@ Ou
 
 1.  Exécutez la commande suivante pour vérifier que la boîte aux lettres a été supprimée :
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisconnectReason,DisconnectDate
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisconnectReason,DisconnectDate
+    ```
     
     La valeur `Disabled` de la propriété *DisconnectReason* indique que la boîte aux lettres a été supprimée.
     
@@ -240,8 +236,8 @@ Ou
 2.  Exécutez la commande suivante pour vérifier que le compte d’utilisateur Active Directory a été supprimé :
     
     ```powershell
-Get-User <identity>
-```
+    Get-User <identity>
+    ```
     
     La commande renvoie une erreur indiquant que l’utilisateur est introuvable, en s’assurant que le compte a bien été supprimé.
 

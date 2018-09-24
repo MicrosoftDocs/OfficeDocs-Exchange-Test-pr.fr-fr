@@ -67,11 +67,15 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour trouver un utilisateur spécifique ayant reçu les autorisations fournies par un rôle de gestion, vous devez utiliser la cmdlet **Get-ManagementRoleAssignment** pour extraire la liste de tous les utilisateurs effectifs, puis transférer la sortie à la cmdlet **Where**. La cmdlet **Where** filtre la sortie et retourne uniquement l'utilisateur spécifié. Utilisez la syntaxe suivante.
 
-    Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+```powershell
+Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+```
 
 Cet exemple recherche l'utilisateur David Strome sur le rôle Journaling.
 
-    Get-ManagementRoleAssignment -Role Journaling -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" }
+```powershell
+Get-ManagementRoleAssignment -Role Journaling -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" }
+```
 
 Pour modifier les propriétés qui sont renvoyées dans la liste ou exporter cette dernière dans un fichier .csv, voir Utiliser l'environnement de ligne de commande Exchange Management Shell pour personnaliser la sortie et l'afficher ultérieurement dans cette rubrique.
 
@@ -81,12 +85,15 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour connaître tous les rôles par lesquels un utilisateur reçoit des autorisations, vous devez utiliser la cmdlet **Get-ManagementRoleAssignment** pour extraire tous les utilisateurs effectifs sur tous les rôles de gestion, puis transférer la sortie à la cmdlet **Where**. La cmdlet **Where** filtre la sortie et retourne uniquement les attributions de rôle qui accordent les autorisations aux utilisateurs.
 
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+```
 
 Cet exemple recherche toutes les attributions de rôle qui accordent des autorisations à l'utilisateur Kim Akers.
 
 ```powershell
-Get-ManagementRoleAssignment -GetEffectiveUsers | Where {     Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "Kim Akers" }.EffectiveUserName -Eq "Kim Akers" }
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where { ```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "Kim Akers" }.EffectiveUserName -Eq "Kim Akers" }
 ```
 
 Si vous souhaitez modifier les propriétés qui sont renvoyées dans la liste ou l’exporter dans un fichier CSV, voir Utiliser l'environnement de ligne de commande Exchange Management Shell pour personnaliser la sortie et l'afficher ultérieurement dans cette rubrique.
@@ -139,11 +146,15 @@ Pour plus d'informations sur les cmdlets **Format-Table** et**Select-Object**, v
 
 3.  Utilisez la syntaxe suivante pour afficher la liste.
     
-        <command to retrieve list > | Format-Table <property 1>, <property 2>, <property ...>
+    ```powershell
+    <command to retrieve list > | Format-Table <property 1>, <property 2>, <property ...>
+    ```
 
 Cet exemple recherche l’utilisateur Michel Cordani sur tous les rôles et affiche les propriétés `EffectiveUserName`, `Role`, `CustomRecipientWriteScope` et `CustomConfigWriteScope`.
 
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Format-Table EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope
+```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Format-Table EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd351024\(v=exchg.150\)).
 
@@ -163,11 +174,15 @@ Pour exporter la liste au format .csv, vous devez transmettre les résultats de
 
 3.  Utilisez la syntaxe suivante pour exporter la liste dans un fichier .csv.
     
-        <command to retrieve list > | Select-Object <property 1>, <property 2>, <property ...> | Export-CSV <filename>
+    ```powershell
+    <command to retrieve list > | Select-Object <property 1>, <property 2>, <property ...> | Export-CSV <filename>
+    ```
 
 Cet exemple recherche l’utilisateur Michel Cordani sur tous les rôles et affiche les propriétés `EffectiveUserName`, `Role`, `CustomRecipientWriteScope` et `CustomConfigWriteScope`.
 
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Select-Object EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope | Export-CSV c:\output.csv
+```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Select-Object EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope | Export-CSV c:\output.csv
+```
 
 Vous pouvez maintenant visualiser le fichier .csv dans la visionneuse de votre choix.
 

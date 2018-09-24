@@ -39,7 +39,9 @@ La journalisation de l’agent permet d’enregistrer les actions effectuées pa
 
 Exécutez la commande suivante :
 
-    Set-TransportService <ServerIdentity> -AgentLogEnabled <$true | $false> -AgentLogMaxAge <dd.hh:mm:ss> -AgentLogMaxDirectorySize <Size> -AgentLogMaxFileSize <Size> -AgentLogPath <LocalFilePath>
+```powershell
+Set-TransportService <ServerIdentity> -AgentLogEnabled <$true | $false> -AgentLogMaxAge <dd.hh:mm:ss> -AgentLogMaxDirectorySize <Size> -AgentLogMaxFileSize <Size> -AgentLogPath <LocalFilePath>
+```
 
 Cet exemple définit les paramètres de journal d’agent suivants sur un serveur de boîtes aux lettres nommé Mailbox01 :
 
@@ -53,7 +55,9 @@ Cet exemple définit les paramètres de journal d’agent suivants sur un serveu
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -AgentLogPath "D:\Anti-Spam Agent Log" -AgentLogMaxFileSize 20MB -AgentLogMaxDirectorySize 400MB -AgentLogMaxAge 14.00:00:00
+```powershell
+Set-TransportService Mailbox01 -AgentLogPath "D:\Anti-Spam Agent Log" -AgentLogMaxFileSize 20MB -AgentLogMaxDirectorySize 400MB -AgentLogMaxAge 14.00:00:00
+```
 
 > [!NOTE]
 > <ul>
@@ -68,7 +72,9 @@ Pour vérifier que vous avez bien configuré la journalisation de l’agent de b
 
 1.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante :
     
-        Get-TransportService <ServerIdentity> | Format-List AgentLog*
+    ```powershell
+    Get-TransportService <ServerIdentity> | Format-List AgentLog*
+    ```
 
 2.  Vérifiez que les valeurs affichées sont les valeurs que vous avez configurées.
 

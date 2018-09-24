@@ -58,8 +58,8 @@ Pour vérifier que vous avez bien créé une base de données, procédez comme s
   - Dans l'environnement de ligne de commande Exchange Management Shell, vérifiez que la base de données a été créée sur le serveur Mailbox01 en exécutant la commande suivante :
     
     ```powershell
-Get-MailboxDatabase -Server "Mailbox01"
-```
+    Get-MailboxDatabase -Server "Mailbox01"
+    ```
 
 ## Obtenir les propriétés d'une base de données de boîtes aux lettres
 
@@ -150,8 +150,8 @@ Pour vérifier que vous avez bien défini les attributs, procédez comme suit :
   - Dans l'environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour récupérer les propriétés d'une base de données de boîtes aux lettres.
     
     ```powershell
-Get-MailboxDatabase -Identity MailboxDatabase01 -Status | Format-List
-```
+    Get-MailboxDatabase -Identity MailboxDatabase01 -Status | Format-List
+    ```
 
 ## Déplacer un chemin d'accès à la base de données de boîtes aux lettres
 
@@ -184,8 +184,8 @@ Pour vérifier que vous avez bien monté la base de données de boîte aux lettr
   - Dans l'environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour récupérer les propriétés de toutes les bases de données de boîtes aux lettres.
     
     ```powershell
-Get-MailboxDatabase -IncludePreExchange2013
-```
+    Get-MailboxDatabase -IncludePreExchange2013
+    ```
 
 ## Démonter une base de données de boîtes aux lettres
 
@@ -218,8 +218,8 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 1.  Exécutez la commande suivante pour supprimer la base de données de boîtes aux lettres MyDatabase.
     
     ```powershell
-Remove-MailboxDatabase -Identity "MyDatabase"
-```
+    Remove-MailboxDatabase -Identity "MyDatabase"
+    ```
 
 2.  Lorsque vous êtes invité à confirmer l'exécution de cette action, tapez **Y**.
 

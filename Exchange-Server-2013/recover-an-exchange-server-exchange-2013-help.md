@@ -67,8 +67,8 @@ Souhaitez-vous rechercher d’autres tâches de gestion relatives à la sauvegar
 6.  Accédez aux fichiers d’installation d’Exchange 2013, puis exécutez la commande suivante :
     
     ```powershell
-Setup /m:RecoverServer /IAcceptExchangeServerLicenseTerms
-```
+    Setup /m:RecoverServer /IAcceptExchangeServerLicenseTerms
+    ```
 
 7.  Une fois la configuration terminée, mais avant que le serveur récupéré ne soit utilisé, reconfigurez les paramètres personnalisés précédemment présents sur le serveur, puis redémarrez le serveur.
 

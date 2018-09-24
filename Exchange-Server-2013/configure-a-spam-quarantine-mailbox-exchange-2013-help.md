@@ -42,14 +42,14 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 1.  Exécutez la commande suivante pour vérifier que l'agent de contenu est installé et activé sur le serveur Exchange :
     
     ```powershell
-Get-TransportAgent "Content Filter Agent"
-```
+    Get-TransportAgent "Content Filter Agent"
+    ```
 
 2.  Exécutez la commande suivante pour vérifier que le filtrage de contenu est activé :
     
     ```powershell
-Get-ContentFilterConfig | Format-List Enabled
-```
+    Get-ContentFilterConfig | Format-List Enabled
+    ```
 
 Pour plus d'informations, consultez la rubrique [Gérer le filtrage du contenu](manage-content-filtering-exchange-2013-help.md).
 
@@ -92,8 +92,8 @@ Pour vérifier que vous avez correctement spécifié la boîte aux lettres de mi
 1.  Exécutez la commande suivante :
     
     ```powershell
-Get-ContentFilterConfig | Format-List QuarantineMailbox
-```
+    Get-ContentFilterConfig | Format-List QuarantineMailbox
+    ```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 

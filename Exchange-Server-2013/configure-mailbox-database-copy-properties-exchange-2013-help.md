@@ -77,7 +77,9 @@ Set-MailboxDatabaseCopy -Identity DB3\EX3 -ActivationPreference 3
 
 Cet exemple illustre la configuration de la copie de la base de données DB1 hébergée sur Server1 avec un retard de relecture et un retard de troncation de 1 jour et un numéro de préférence d’activation de 2.
 
-    Set-MailboxDatabaseCopy -Identity DB1\Server1 -ReplayLagTime 1.0:0:0 -TruncationLagTime 1.0:0:0 -ActivationPreference 2
+```powershell
+Set-MailboxDatabaseCopy -Identity DB1\Server1 -ReplayLagTime 1.0:0:0 -TruncationLagTime 1.0:0:0 -ActivationPreference 2
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -88,8 +90,8 @@ Pour vérifier que la configuration de la copie de base de données de boîtes a
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les informations de configuration pour une copie de base de données.
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```
 
 ## Pour plus d’informations
 

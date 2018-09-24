@@ -73,5 +73,7 @@ Pour vérifier que vous avez correctement activé ou désactivé l’enregistrem
 
 Cet exemple récupère toutes les propriétés d’enregistrement IRM sur le serveur EXCH01.
 
-    Get-TransportService -Identity EXCH01 | Format-List IRMLog*
+```powershell
+Get-TransportService -Identity EXCH01 | Format-List IRMLog*
+```
 

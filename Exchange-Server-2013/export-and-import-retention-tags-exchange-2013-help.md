@@ -61,8 +61,8 @@ Pour les autres tâches de gestion relatives à la gestion des enregistrements d
 1.  Exécutez cette commande Environnement de ligne de commande Exchange Management Shell pour changer de répertoire dans le sous-répertoire de **Scripts** dans votre chemin d’installation de Exchange.
     
     ```powershell
-Cd $Env:ExchangeInstallPath\Scripts
-```
+    Cd $Env:ExchangeInstallPath\Scripts
+    ```
 
 2.  Exécutez le script Export-RetentionTags.ps1 pour exporter des balises de rétention dans un fichier XML.
     
@@ -70,8 +70,8 @@ Cd $Env:ExchangeInstallPath\Scripts
     > Si vous importez ou exportez des balises de rétention et les règles de rétention à Exchange Online, vous devez vous connecter votre session Windows PowerShell à Exchange Online. Pour plus d’informations, consultez <a href="https://technet.microsoft.com/fr-fr/library/jj984289(v=exchg.150)">Connexion à Exchange Online à l'aide de Remote PowerShell</a>.
     
     ```powershell
-.\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
-```
+    .\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+    ```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -86,8 +86,8 @@ Pour vérifier que les balises et les stratégies de rétention ont bien été e
 1.  Exécutez cette commande Environnement de ligne de commande Exchange Management Shell pour modifier le répertoire dans le sous-répertoire de **Scripts** dans votre chemin d’installation de Exchange.
     
     ```powershell
-Cd $Env:ExchangeInstallPath\Scripts
-```
+    Cd $Env:ExchangeInstallPath\Scripts
+    ```
 
 2.  Exécutez le script Import-RetentionTags.ps1 pour importer les balises de rétention d'un fichier XML précédemment exporté.
     
@@ -98,8 +98,8 @@ Cd $Env:ExchangeInstallPath\Scripts
     > Lorsque vous exécutez ce script sur Exchange Online, vous pouvez être invité à confirmer que vous voulez exécuter le logiciel à partir d’un éditeur non approuvé. Vérifiez que le nom de l’éditeur s’affiche sous la forme <code>CN=Microsoft Corporation, OU=MOPR, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</code>, puis cliquez sur <strong>R</strong> pour permettre le script à exécuter une seule fois ou <strong>A</strong> toujours exécuter.
     
     ```powershell
-.\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
-```
+    .\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+    ```
 
 ## Comment savoir si cela a fonctionné ?
 

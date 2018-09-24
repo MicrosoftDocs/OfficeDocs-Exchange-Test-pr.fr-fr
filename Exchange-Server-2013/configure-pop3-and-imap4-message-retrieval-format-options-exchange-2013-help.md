@@ -129,8 +129,8 @@ Pour vérifier que vous avez bien défini les paramètres de récupération des 
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
     ```powershell
-Get-PopSettings | format-list
-```
+    Get-PopSettings | format-list
+    ```
 
 2.  Vérifiez que le paramètre *MessageRetrievalMimeFormat* est correctement défini.
 
@@ -228,8 +228,8 @@ Pour vérifier que vous avez bien défini les paramètres de récupération des 
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
     ```powershell
-Get-ImapSettings | format-list
-```
+    Get-ImapSettings | format-list
+    ```
 
 2.  Vérifiez que le paramètre *MessageRetrievalMimeFormat* est correctement défini.
 
@@ -299,8 +299,8 @@ Pour vérifier que vous avez bien défini les paramètres de récupération des 
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
     ```powershell
-Get-CAS Mailbox <identity> | format-list
-```
+    Get-CAS Mailbox <identity> | format-list
+    ```
 
 2.  Vérifiez que la valeur du paramètre *PopMessagesRetrievalMimeFormat* est correcte.
 
@@ -370,8 +370,8 @@ Pour vérifier que vous avez bien défini les paramètres de récupération des 
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
     ```powershell
-Get-CAS Mailbox <identity> | format-list
-```
+    Get-CAS Mailbox <identity> | format-list
+    ```
 
 2.  Vérifiez que la valeur du paramètre *ImapMessagesRetrievalMimeFormat* est correcte.
 

@@ -74,8 +74,8 @@ Pour vérifier que vous avez bien configuré l'adresse d'administrateur externe,
 1.  Exécutez la commande suivante sur un serveur de boîtes aux lettres pour vérifier la valeur de l'adresse d'administrateur externe :
     
     ```powershell
-Get-TransportConfig | Format-List ExternalPostmasterAddress
-```
+    Get-TransportConfig | Format-List ExternalPostmasterAddress
+    ```
 
 2.  À partir d'un compte de messagerie externe, envoyez un message à votre organisation Exchange qui générera une notification d'état de remise. Par exemple, vous pouvez configurer une règle de transport chargée d'envoyer une notification d'échec de remise pour un message en provenance de cet expéditeur qui contient des mots clés spécifiques. Vérifiez que l'adresse de messagerie de l'expéditeur dans la notification d'état de remise correspond à la valeur que vous avez spécifiée.
 

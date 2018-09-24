@@ -123,7 +123,9 @@ Si vous utilisez le CAE pour afficher les propriétés d’un répertoire virtue
 
 Cet exemple active l'authentification basée sur des formulaires pour le répertoire virtuel Outlook Web App par défaut sur le serveur nommé Contoso.
 
-    set-OwaVirtualDirectory -Identity "Contoso\owa (default web site)" -FormsAuthentication $true
+```powershell
+set-OwaVirtualDirectory -Identity "Contoso\owa (default web site)" -FormsAuthentication $true
+```
 
 Pour plus d'informations sur la syntaxe et les paramètres, consultez la rubrique [Set-OwaVirtualDirectory](https://technet.microsoft.com/fr-fr/library/bb123515\(v=exchg.150\)).
 
@@ -137,7 +139,9 @@ Get-OWAVirtualDirectory
 
 Cet exemple affiche les propriétés d'un répertoire virtuel Outlook Web App sur le site web IIS par défaut sur le serveur Exchange local.
 
-    Get-OWAVirtualDirectory -identity "<Exchange Server Name>\owa (default web site)"
+```powershell
+Get-OWAVirtualDirectory -identity "<Exchange Server Name>\owa (default web site)"
+```
 
 Cet exemple affiche les propriétés de tous les répertoires virtuels Outlook Web App d'un site web IIS sur un serveur Exchange spécifique.
 

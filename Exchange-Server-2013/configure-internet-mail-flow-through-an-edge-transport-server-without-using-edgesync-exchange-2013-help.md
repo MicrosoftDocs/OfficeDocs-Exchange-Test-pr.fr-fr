@@ -71,7 +71,9 @@ Ce connecteur d’envoi requiert la configuration suivante :
 
 Pour créer un connecteur d’envoi configuré pour l’envoi de messages à Internet, exécutez la commande suivante.
 
-    New-SendConnector -Name "To Internet" -AddressSpaces * -Usage Internet -DNSRoutingEnabled $true
+```powershell
+New-SendConnector -Name "To Internet" -AddressSpaces * -Usage Internet -DNSRoutingEnabled $true
+```
 
 Pour plus d’informations sur la syntaxe et les paramètres, consultez la rubrique [New-SendConnector](https://technet.microsoft.com/fr-fr/library/aa998936\(v=exchg.150\)).
 
@@ -101,8 +103,10 @@ Ce connecteur d’envoi requiert la configuration suivante :
 
 Pour créer un connecteur d’envoi configuré pour l’envoi de messages à l’organisation Exchange, exécutez les commandes suivantes.
 
-    $MailboxCredentials = Get-Credential
-    New-SendConnector -Name "To Internal Org" -Usage Internal -AddressSpaces *.contoso.com -DNSRoutingEnabled $false -SmartHosts mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $MailboxCredentials
+```powershell
+$MailboxCredentials = Get-Credential
+New-SendConnector -Name "To Internal Org" -Usage Internal -AddressSpaces *.contoso.com -DNSRoutingEnabled $false -SmartHosts mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $MailboxCredentials
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-SendConnector](https://technet.microsoft.com/fr-fr/library/aa998936\(v=exchg.150\)).
 
@@ -116,7 +120,9 @@ Vous devez apporter les modifications de configuration suivantes pour le connect
 
 Pour modifier le connecteur de réception par défaut pour accepter uniquement les messages provenant d’Internet, exécutez la commande suivante.
 
-    Set-ReceiveConnector "Default internal Receive connector Edge01" -Name "From Internet" -Bindings 10.1.1.1:25
+```powershell
+Set-ReceiveConnector "Default internal Receive connector Edge01" -Name "From Internet" -Bindings 10.1.1.1:25
+```
 
 Pour plus d’informations sur la syntaxe et les paramètres, consultez la rubrique [Set-ReceiveConnector](https://technet.microsoft.com/fr-fr/library/bb125140\(v=exchg.150\)).
 
@@ -136,7 +142,9 @@ Ce connecteur de réception requiert la configuration suivante :
 
 Pour créer un connecteur de réception configuré pour accepter uniquement les messages provenant de l’organisation Exchange, exécutez la commande suivante.
 
-    New-ReceiveConnector -Name "From Internal Org" -Usage Internal -AuthMechanism TLS,BasicAuth,BasicAuthRequireTLS,ExchangeServer -Bindings 10.1.1.2:25 -RemoteIPRanges 192.168.5.10,192.168.5.20
+```powershell
+New-ReceiveConnector -Name "From Internal Org" -Usage Internal -AuthMechanism TLS,BasicAuth,BasicAuthRequireTLS,ExchangeServer -Bindings 10.1.1.2:25 -RemoteIPRanges 192.168.5.10,192.168.5.20
+```
 
 Pour plus d’informations sur la syntaxe et les paramètres, consultez la rubrique [New-ReceiveConnector](https://technet.microsoft.com/fr-fr/library/bb125139\(v=exchg.150\)).
 
@@ -144,8 +152,12 @@ Pour plus d’informations sur la syntaxe et les paramètres, consultez la rubri
 
 Pour vérifier que vous avez correctement configuré les connecteurs d’envoi et de réception requis, exécutez les commandes suivantes sur le serveur de transport Edge et vérifiez que les valeurs affichées correspondent à celles configurées.
 
-    Get-SendConnector | Format-List Name,Usage,AddressSpaces,SourceTransportServers,DSNRoutingEnabled,SmartHosts,SmartHostAuthMechanism
-    Get-ReceiveConnector | Format-List Name,Usage,AuthMechanism,Bindings,RemoteIPRanges
+```powershell
+Get-SendConnector | Format-List Name,Usage,AddressSpaces,SourceTransportServers,DSNRoutingEnabled,SmartHosts,SmartHostAuthMechanism
+```
+```powershell
+Get-ReceiveConnector | Format-List Name,Usage,AuthMechanism,Bindings,RemoteIPRanges
+```
 
 ## Procédures de serveur de boîtes aux lettres
 
@@ -175,8 +187,10 @@ Ce connecteur d’envoi requiert la configuration suivante :
 
 Pour créer un connecteur d’envoi configuré pour l’envoi de messages sortants vers le serveur de transport Edge, exécutez les commandes suivantes.
 
-    $EdgeCredentials = Get-Credential
-    New-SendConnector -Name "To Edge" -Usage Internal -AddressSpaces * -DNSRoutingEnabled $false -SmartHosts edge01.contoso.com -SourceTransportServers mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $EdgeCredentials
+```powershell
+$EdgeCredentials = Get-Credential
+New-SendConnector -Name "To Edge" -Usage Internal -AddressSpaces * -DNSRoutingEnabled $false -SmartHosts edge01.contoso.com -SourceTransportServers mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $EdgeCredentials
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-SendConnector](https://technet.microsoft.com/fr-fr/library/aa998936\(v=exchg.150\)).
 
@@ -184,5 +198,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour vérifier que vous avez créé un connecteur d’envoi configuré pour l’envoi de messages sortants vers le serveur de transport Edge, exécutez la commande suivante sur un serveur de boîtes aux lettres et vérifiez que les valeurs affichées correspondent à celles configurées.
 
-    Get-SendConnector | Format-List Name,Usage,AddressSpaces,DSNRoutingEnabled,SmartHosts,SourceTransportServers,SmartHostAuthMechanism
+```powershell
+Get-SendConnector | Format-List Name,Usage,AddressSpaces,DSNRoutingEnabled,SmartHosts,SourceTransportServers,SmartHostAuthMechanism
+```
 
