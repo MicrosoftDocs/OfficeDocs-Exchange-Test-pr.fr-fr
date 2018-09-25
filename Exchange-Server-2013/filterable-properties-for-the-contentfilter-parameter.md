@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Propriétés filtrables pour le paramètre -ContentFilter: Exchange 2013 Help'
 TOCTitle: Propriétés filtrables pour le paramètre -ContentFilter
 ms:assetid: cf504a59-1938-489c-bb48-b27b2ac3234e
@@ -103,6 +103,7 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 ```powershell
 -ContentFilter {Category -like '*Blue*'}
 ```
+
 </td>
 </tr>
 <tr class="even">
@@ -118,6 +119,7 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 ```powershell
 -ContentFilter {(CC -eq 'ayla@contoso.com') -or (CC -eq 'tony@contoso.com')}
 ```
+
 </td>
 </tr>
 <tr class="odd">
@@ -129,6 +131,7 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 ```powershell
 -ContentFilter {Expires -lt '01/01/2013'}
 ```
+
 </td>
 </tr>
 <tr class="even">
@@ -141,6 +144,7 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 ```powershell
 -ContentFilter {HasAttachment -eq $true}
 ```
+
 </td>
 </tr>
 <tr class="odd">
@@ -152,9 +156,13 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <td>
 
 ```powershell
--ContentFilter {Importance -eq 'high'}</code></pre>
-<pre><code>-ContentFilter {Importance -eq 2}
+-ContentFilter {Importance -eq 'high'}
 ```
+
+```powershell
+-ContentFilter {Importance -eq 2}
+```
+
 </td>
 </tr>
 <tr class="even">
@@ -179,6 +187,7 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 ```powershell
 -ContentFilter {IsRead -eq $true}
 ```
+
 </td>
 </tr>
 <tr class="even">
@@ -199,9 +208,13 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <td>
 
 ```powershell
--ContentFilter {MessageKind -eq 'Calendar'}</code></pre>
-<pre><code>-ContentFilter {MessageKind -ne 'Email'}
+-ContentFilter {MessageKind -eq 'Calendar'}
 ```
+
+```powershell
+-ContentFilter {MessageKind -ne 'Email'}
+```
+
 </td>
 </tr>
 <tr class="odd">
@@ -211,9 +224,13 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <td>
 
 ```powershell
--ContentFilter {MessageLocale -ne 'en-US'}</code></pre>
-<pre><code>-ContentFilter {MessageLocale -eq 'tr-TR'}
+-ContentFilter {MessageLocale -ne 'en-US'}
 ```
+
+```powershell
+-ContentFilter {MessageLocale -eq 'tr-TR'}
+```
+
 </td>
 </tr>
 <tr class="even">
@@ -229,6 +246,7 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 ```powershell
 -ContentFilter {(Participants -eq 'ayla@contoso.com') -or (Participants -eq 'tony@contoso.com')}
 ```
+
 </td>
 </tr>
 <tr class="odd">
@@ -242,6 +260,7 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 ```powershell
 -ContentFilter {PolicyTag -ne '00000000-0000-0000-0000-000000000000'}
 ```
+
 </td>
 </tr>
 <tr class="even">
@@ -254,6 +273,7 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 -ContentFilter {Received -lt '01/01/2013 9:00'}</code></pre>
 <pre><code>-ContentFilter {(Received -lt '01/01/2013') -and (Received -gt '01/01/2012')}
 ```
+
 </td>
 </tr>
 <tr class="odd">
@@ -269,6 +289,7 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 ```powershell
 ContentFilter {Sender -eq 'tony'}
 ```
+
 </td>
 </tr>
 <tr class="even">
@@ -281,6 +302,7 @@ ContentFilter {Sender -eq 'tony'}
 -ContentFilter {Sent -lt '01/01/2013 9:00'}</code></pre>
 <pre><code>-ContentFilter {(Sent -lt '01/01/2013') -and (Sent -gt '01/01/2012')}
 ```
+
 </td>
 </tr>
 <tr class="odd">
@@ -294,6 +316,7 @@ ContentFilter {Sender -eq 'tony'}
 ```powershell
 -ContentFilter {Size -gt '10KB'}
 ```
+
 </td>
 </tr>
 <tr class="even">
@@ -306,6 +329,7 @@ ContentFilter {Sender -eq 'tony'}
 ```powershell
 -ContentFilter {Subject -like '*meeting*'}
 ```
+
 </td>
 </tr>
 <tr class="odd">
@@ -321,8 +345,8 @@ ContentFilter {Sender -eq 'tony'}
 ```powershell
 -ContentFilter {To -eq 'aylakol'}
 ```
+
 </td>
 </tr>
 </tbody>
 </table>
-
