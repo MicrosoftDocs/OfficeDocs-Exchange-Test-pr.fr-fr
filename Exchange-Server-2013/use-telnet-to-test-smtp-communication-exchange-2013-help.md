@@ -61,7 +61,7 @@ Pour vous connecter à un serveur SMTP de destination via Telnet sur le port 25
 
 4.  Tapez le nom du domaine pour lequel vous voulez rechercher l'enregistrement MX. Par exemple, pour rechercher l'enregistrement MX du domaine fabrikam.com, tapez **fabrikam.com.**, puis appuyez sur Entrée.
     
-    > [!NOTE]
+    > [!NOTE]  
     > Le point final ( <strong>.</strong> ) indique un nom de domaine complet. L'utilisation du point final empêche les suffixes DNS par défaut configurés sur votre réseau d'être ajoutés de façon involontaire au nom de domaine.
     
     Les données en sortie de la commande sont similaires à ce qui suit :
@@ -77,7 +77,7 @@ Pour vous connecter à un serveur SMTP de destination via Telnet sur le port 25
 
 5.  Quand vous êtes prêt à fermer la session Nslookup, tapez **exit**, puis appuyez sur Entrée.
 
-> [!NOTE]
+> [!NOTE]  
 > Les restrictions de pare-feu et de proxy Internet imposées sur le réseau interne de votre organisation peuvent vous empêcher d'utiliser l'outil Nslookup pour interroger les serveurs DNS publics sur Internet.
 
 
@@ -97,11 +97,15 @@ Dans cet exemple, les valeurs suivantes sont utilisées :
 
   - **Corps du message**   Ceci est un message de test
 
-> [!NOTE]
+> [!NOTE]  
 > <ul>
 > <li><p>Les commandes du client Telnet ne tiennent pas compte de la casse. Les verbes de la commande SMTP sont écrits en majuscules par souci de clarté.</p></li>
 > <li><p>Vous ne pouvez pas utiliser la touche Retour arrière après vous être connecté au serveur SMTP de destination dans la session Telnet. En cas d'erreur lors de la saisie d'une commande SMTP, vous devez appuyer sur ENTRÉE puis taper la commande à nouveau. Les commandes SMTP inconnues ou les erreurs de syntaxe entraînent l'affichage d'un message d'erreur similaire à ce qui suit :</p>
-<pre><code>500 5.3.3 Unrecognized command</code></pre></li></ul>
+> </li></ul>
+>
+> ```powershell
+> 500 5.3.3 Unrecognized command
+> ```
 
 1.  À l'invite de commandes, tapez **telnet**, puis appuyez sur Entrée. Cette commande ouvre la session Telnet.
 
@@ -155,7 +159,7 @@ Cette section fournit des informations sur les réponses qui peuvent être gén�
 
   - RCPT TO:kate@fabrikam.com NOTIFY=success,failure
     
-    > [!NOTE]
+    > [!NOTE]  
     > Les codes de réponse SMTP à 3 chiffres définis dans RFC 2821 sont les mêmes pour tous les serveurs de messagerie SMTP. Ces descriptions peuvent légèrement varier pour certains serveurs de messagerie SMTP.
 
 
@@ -185,7 +189,7 @@ Cette section fournit des informations sur les réponses qui peuvent être gén�
 
 **Raisons possibles de l'échec**   Le nom de domaine comporte des caractères non valides. Il peut aussi y avoir des restrictions de connexion sur le serveur SMTP de destination.
 
-> [!NOTE]
+> [!NOTE]  
 > EHLO est le verbe ESMTP (Extended Simple Message Transfer Protocol) défini dans RFC 2821. Les serveurs ESMTP peuvent annoncer leurs capacités lors de la connexion initiale. Ces capacités incluent la taille de message acceptée maximale, ainsi que leurs méthodes d'authentification prises en charge. HELO est l'ancien verbe SMTP défini dans RFC 821. La plupart des serveurs de messagerie SMTP prennent en charge ESMTP et EHLO.
 
 
@@ -208,4 +212,3 @@ Cette section fournit des informations sur les réponses qui peuvent être gén�
 **Réponse en cas d'échec**   `550 5.1.1 User unknown`
 
 **Raisons possibles de l'échec**   Le destinataire spécifié n'existe pas dans l'organisation.
-

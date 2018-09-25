@@ -41,7 +41,7 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-> [!TIP]
+> [!TIP]  
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>..
 
 
@@ -65,7 +65,7 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
     Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
     ```
     
-    > [!NOTE]
+    > [!NOTE]  
     > Si le membre du groupe de disponibilité de base de données supprimé est hors connexion et s’il ne peut pas être mis en ligne, vous devez ajouter le paramètre <em>ConfigurationOnly</em> à la commande précédente. Si vous utilisez le commutateur <em>ConfigurationOnly</em>, vous devez également expulser manuellement le nœud du cluster.
 
 
@@ -85,9 +85,11 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux groupes de
 
 7.  Une fois que le serveur est ajouté au groupe de disponibilité de base de données, reconfigurez les copies de bases de données de boîtes aux lettres à l’aide de la cmdlet [Add-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd298105\(v=exchg.150\)). Si des copies de bases de données déjà ajoutées ont un délai d’attente de relecture ou de troncation supérieur à 0, utilisez les paramètres *ReplayLagTime* et *TruncationLagTime* de la cmdlet [Add-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd298105\(v=exchg.150\)) pour reconfigurer ces paramètres.
     
-        Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX1
-        Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00
-        Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -TruncationLagTime 3.00:00:00
+    ```powershell
+    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX1
+    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00
+    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -TruncationLagTime 3.00:00:00
+    ```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -105,4 +107,3 @@ Pour vérifier que vous avez bien récupéré le membre du groupe de disponibili
     ```
     
     L'ensemble des tests d'intégrité de réplication doivent réussir et le statut des bases de données et leurs index de contenu doivent être intègres.
-

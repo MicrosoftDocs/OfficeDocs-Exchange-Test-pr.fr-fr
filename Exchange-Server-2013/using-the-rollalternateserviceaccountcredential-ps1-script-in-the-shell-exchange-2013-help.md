@@ -234,7 +234,9 @@ Vous pouvez utiliser le journal pour vous assurer que la tâche s’est bien ex�
 
 Dans cet exemple, le script fait passer les informations d’identification lors de la première installation à tous les serveurs d’accès au client présents dans la forêt.
 
-    .\RollAlternateserviceAccountPassword.ps1 -ToEntireForest -GenerateNewPasswordFor "Contoso\ComputerAccount$" -Verbose
+```powershell
+.\RollAlternateserviceAccountPassword.ps1 -ToEntireForest -GenerateNewPasswordFor "Contoso\ComputerAccount$" -Verbose
+```
 
 ## Exemple 2
 
@@ -269,4 +271,3 @@ Vous devez mettre à jour les informations d'identification ASA avant que le ser
 ```powershell
 .\RollAlternateServiceAccountPassword.ps1 -CopyFrom ServerA -ToSpecificServers ServerB -Verbose
 ```
-

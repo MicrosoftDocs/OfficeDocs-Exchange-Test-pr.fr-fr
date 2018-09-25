@@ -66,7 +66,11 @@ Le tableau suivant décrit les informations de filtre qui peuvent figurer dans u
 <li><p><strong>PermError   </strong>L’enregistrement DNS est non valide, tel qu’une erreur dans le format d’enregistrement.</p></li>
 </ul>
 <p>Le marquage d’ID de l’expéditeur s’affiche comme en-tête X dans l’enveloppe du message comme suit :</p>
-<pre><code>X-MS-Exchange-Organization-SenderIdResult:&lt;status&gt;</code></pre>
+
+```powershell
+X-MS-Exchange-Organization-SenderIdResult:<status>
+```
+
 <p>Pour plus d’informations sur l’ID de l’expéditeur, consultez la rubrique <a href="sender-id-exchange-2013-help.md">ID de l'expéditeur</a>.</p></td>
 </tr>
 <tr class="even">
@@ -91,13 +95,21 @@ Le tableau suivant décrit les informations de filtre qui peuvent figurer dans u
 <p>La valeur PCL est comprise entre 1 et 8. Une valeur PCL comprise entre 1 et 3 renvoie un état <code>Neutral</code>. Cela signifie que le contenu du message n’est probablement pas du hameçonnage. Une valeur PCL comprise entre 4 et 8 renvoie à un état <code>Suspicious</code>. Cela signifie que le message n’est probablement pas du hameçonnage.</p>
 <p>Les valeurs sont utilisées pour déterminer l’action prise par Outlook sur les messages. Outlook utilise le marquage PCL pour bloquer le contenu des messages suspects.</p>
 <p>Le marquage PCL s’affiche comme en-tête X dans l’enveloppe du message comme suit :</p>
-<pre><code>X-MS-Exchange-Organization-PCL:&lt;status&gt;</code></pre></td>
+
+```powershell
+X-MS-Exchange-Organization-PCL:<status>
+```
+</td>
 </tr>
 <tr class="even">
 <td><p>SCL</p></td>
 <td><p>Le marquage du seuil de probabilité de courrier indésirable (SCL) du message affiche la valeur du message en fonction de son contenu. L’agent de filtrage du contenu utilise la technologie Microsoft SmartScreen pour évaluer le contenu d’un message et pour attribuer une valeur de contrôle d’accès SCL à chaque message. La valeur SCL est comprise entre 0 et 9, avec 0 pour les messages les moins susceptibles d’être du courrier indésirable et 9 pour les messages les plus susceptibles d’être du courrier indésirable. Les actions qu’Exchange et Outlook exécutent dépendent de vos paramètres de seuil SCL.</p>
 <p>Le marquage SCL s’affiche comme en-tête X dans l’enveloppe du message comme suit :</p>
-<pre><code>X-MS-Exchange-Organization-SCL:&lt;status&gt;</code></pre>
+
+```powershell
+X-MS-Exchange-Organization-SCL:<status>
+```
+
 <p>Pour plus d’informations sur les seuils et les actions SCL, consultez la rubrique <a href="spam-confidence-level-threshold-exchange-2013-help.md">Niveau de confiance du courrier indésirable</a>.</p></td>
 </tr>
 <tr class="odd">
