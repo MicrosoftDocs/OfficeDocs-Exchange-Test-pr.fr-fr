@@ -63,7 +63,9 @@ Si un groupe de distribution a été créé et configuré comme groupe de super 
     
     Cet exemple montre comment ajouter la boîte aux lettres de fédération au groupe de distribution ADRMSSuperUsers.
     
-        Add-DistributionGroupMember ADRMSSuperUsers -Member FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042
+      ```powershell
+      Add-DistributionGroupMember ADRMSSuperUsers -Member FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042
+      ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Add-DistributionGroupMember](https://technet.microsoft.com/fr-fr/library/bb124340\(v=exchg.150\)).
 
@@ -93,10 +95,12 @@ Après avoir utilisé AD RMS pour mettre en place un groupe de super utilisateur
 
   - Exécutez la commande PowerShell suivante sur un serveur AD RMS pour récupérer le groupe de super utilisateurs :
     
-    > [!IMPORTANT]
+    > [!IMPORTANT]  
     > Le module ADRMSAdmin PowerShell est disponible dans Windows Server 2008 R2 et version ultérieure.
     
-        Import-Module ADRMSAdmin
-        New-PSDrive -Name MyRmsAdmin -PsProvider AdRmsAdmin -Root https://localhost 
-        Get-ItemProperty -Path MyRmsAdmin:\SecurityPolicy\SuperUser
+    ```powershell
+    Import-Module ADRMSAdmin
+    New-PSDrive -Name MyRmsAdmin -PsProvider AdRmsAdmin -Root https://localhost 
+    Get-ItemProperty -Path MyRmsAdmin:\SecurityPolicy\SuperUser
+    ```
 

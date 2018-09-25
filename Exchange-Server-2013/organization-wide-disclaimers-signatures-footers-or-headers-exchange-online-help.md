@@ -114,24 +114,48 @@ Voici quelques exemples de conditions et d’exceptions que vous pouvez utiliser
 <td><p>En dehors de votre organisation, si le message d’origine ne comprend pas le texte de votre clause d’exclusion de responsabilité, comme « CONTOSO LEGAL NOTICE »</p></td>
 <td><p>Condition : <strong>Le destinataire est situé</strong> &gt;<strong>À l’extérieur de l’organisation</strong></p>
 <p>Exception : <strong>L’objet ou le corps</strong> &gt;<strong>L’objet ou le corps correspond à ces modèles de texte</strong> &gt;<strong>CONTOSO LEGAL NOTICE</strong></p></td>
-<td><pre><code>-FromScope NotInOrganization -ExceptIf -SubjectOrBodyMatches &quot;CONTOSO LEGAL NOTICE&quot;</code></pre></td>
+<td>
+
+```powershell
+-FromScope NotInOrganization -ExceptIf -SubjectOrBodyMatches "CONTOSO LEGAL NOTICE"
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>Messages entrants comportant des fichiers exécutables en pièce jointe</p></td>
 <td><p>Condition 1 : <strong>L’expéditeur est situé</strong> &gt;<strong>À l’extérieur de l’organisation</strong></p>
 <p>Condition 2 : <strong>Toute pièce jointe</strong> &gt;<strong>contient un exécutable</strong></p></td>
-<td><pre><code>-FromScope NotInOrganization -AttachmentHasExecutableContent</code></pre></td>
+<td>
+
+```powershell
+-FromScope NotInOrganization -AttachmentHasExecutableContent
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>L’expéditeur fait partie du service marketing.</p></td>
 <td><p>Condition : <strong>L’expéditeur</strong> &gt;<strong>est membre de ce groupe</strong> &gt;<strong>group name</strong></p></td>
-<td><pre><code>-FromMemberOf &quot;Marketing Team&quot;</code></pre></td>
+<td>
+
+```powershell
+-FromMemberOf "Marketing Team"
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>Chaque message envoyé par un expéditeur externe au groupe de discussion des ventes</p></td>
 <td><p>Condition 1 : <strong>L’expéditeur est situé</strong> &gt;<strong>À l’extérieur de l’organisation</strong></p>
 <p>Condition 2 : <strong>Le message</strong> &gt;<strong>La zone À ou Cc contient cette personne</strong> &gt;<strong>group name</strong></p></td>
-<td><pre><code>-FromScope NotInOrganization -SentTo &quot;Sales Discussion Group&quot; -PrependSubject &quot;Sent to Sales Discussion Group: &quot;</code></pre></td>
+<td>
+
+```powershell
+-FromScope NotInOrganization -SentTo "Sales Discussion Group" -PrependSubject "Sent to Sales Discussion Group: "
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>Ajouter une annonce publicitaire aux messages sortants pendant un mois</p></td>
@@ -179,7 +203,7 @@ Vous pouvez mettre en forme votre clause d’exclusion de responsabilité en fon
 </tr>
 <tr class="odd">
 <td><p>Ajouter des images</p></td>
-<td><p>Utilisez la balise <code>&lt;IMG&gt;</code> pour pointer vers une image disponible sur Internet. Par exemple, <code>&lt;IMG src=&quot;http://contoso.com/images/companylogo.gif&quot; alt=&quot;Contoso logo&quot;&gt;</code>.</p>
+<td><p>Utilisez la balise <code>&lt;IMG&gt;</code> pour pointer vers une image disponible sur Internet. Par exemple, <code>&lt;IMG src="http://contoso.com/images/companylogo.gif" alt="Contoso logo"&gt;</code>.</p>
 <p>N’oubliez pas que, par défaut, Outlook Web App et Outlook bloquent le contenu web externe, y compris les images. Il est possible que les utilisateurs doivent alors effectuer une action spécifique pour voir le contenu externe bloqué. Cela signifie que les images ajoutées à l’aide de la balise <code>IMG</code> ne seront peut-être pas visibles par défaut. Nous vous recommandons de tester une clause d’exclusion de responsabilité avec des balises <code>IMG</code> sur les clients de messagerie que les destinataires risquent d’utiliser pour vous assurer que l’affichage est correct.</p></td>
 </tr>
 <tr class="even">

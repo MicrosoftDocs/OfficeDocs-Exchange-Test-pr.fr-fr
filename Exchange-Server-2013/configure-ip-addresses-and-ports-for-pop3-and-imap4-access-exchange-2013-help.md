@@ -90,8 +90,8 @@ Procédez comme suit pour vérifier que les paramètres de l’adresse IP POP3 e
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
     ```powershell
-Get-PopSettings | format-list
-```
+    Get-PopSettings | format-list
+    ```
 
 2.  Vérifiez que les paramètres *UnencryptedOrTLSBindings* et *SSLBindings* sont corrects.
 
@@ -131,7 +131,9 @@ Set-ImapSettings -SSLBindings: IPaddress:Port
 
 Cet exemple définit le port et l'adresse IP à utiliser pour communiquer avec Exchange via le service IMAP4 sans chiffrement ou chiffrement TLS (Transport Layer Security).
 
-    Set-ImapSettings -UnencryptedOrTLSBindings IPaddress:Port 
+```powershell
+Set-ImapSettings -UnencryptedOrTLSBindings IPaddress:Port 
+```
 
 Après avoir défini les paramètres de l’adresse IP et du port pour IMAP4, vous devez redémarrer le service IMAP4 pour que les paramètres prennent effet. Pour plus d’informations sur le redémarrage du service IMAP4, voir [Démarrer et arrêter les services IMAP4](start-and-stop-the-imap4-services-exchange-2013-help.md).
 
@@ -144,8 +146,8 @@ Procédez comme suit pour vérifier que les paramètres de l’adresse IP IMAP4 
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
     ```powershell
-Get-ImapSettings | format-list
-```
+    Get-ImapSettings | format-list
+    ```
 
 2.  Vérifiez que les paramètres *UnencryptedOrTLSBindings* et *SSLBindings* sont corrects.
 

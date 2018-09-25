@@ -157,8 +157,8 @@ Pour des informations détaillées sur la syntaxe et les paramètres, consultez 
 
 Par exemple, les commandes suivantes permettent de copier le groupe de rôles Recipient Management et de créer un nouveau groupe appelé Toronto Recipient Management qui permet de gérer uniquement les utilisateurs de l’unité d’organisation Toronto Users.
 
-    $RoleGroup = Get-RoleGroup "Recipient Management"
 ```powershell
+$RoleGroup = Get-RoleGroup "Recipient Management"
 New-RoleGroup "Toronto Recipient Management" -Roles $RoleGroup.Roles -RecipientOrganizationalUnitScope "contoso.com/Toronto Users"
 ```
 

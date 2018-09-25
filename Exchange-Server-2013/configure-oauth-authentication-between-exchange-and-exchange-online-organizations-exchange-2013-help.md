@@ -29,7 +29,7 @@ Le nouveau processus d’authentification OAuth d’Exchange permet actuellemen
 
 Nous recommandons à toutes les organisations Exchange mixtes qui implémentent un déploiement hybride avec Exchange 2013 et Exchange Online de configurer l’authentification OAuth Exchange après la configuration de leur déploiement hybride avec l’Assistant Configuration hybride.
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > Si votre organisation sur site utilise uniquement des serveurs Exchange 2013 avec la mise à jour cumulative 5 ou version ultérieure installée, exécutez l’assistant de déploiement hybride au lieu de suivre les étapes décrites dans cette rubrique.<br />
 Cette fonctionnalité d’Exchange Server 2013 n’est pas entièrement compatible avec les systèmes Office 365 exécutés par 21Vianet en Chine et certaines limitations de fonctionnalités peuvent s’appliquer. Pour plus d’informations, voir <a href="https://go.microsoft.com/fwlink/?linkid=313640">En savoir plus sur Office 365 exécuté par 21Vianet</a>.
 
@@ -55,13 +55,17 @@ Pour cette procédure, vous devez spécifier un domaine vérifié pour votre org
 
 Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell (Exchange PowerShell) dans votre organisation Exchange locale.
 
-    New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<your verified domain>/metadata/json/1
+```powershell
+New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<your verified domain>/metadata/json/1
+```
 
 ## Étape 2 : activer l’application partenaire pour votre organisation Exchange Online
 
 Exécutez la commande suivante dans Exchange PowerShell dans votre organisation Exchange locale.
 
-    Get-PartnerApplication |  ?{$_.ApplicationIdentifier -eq "00000002-0000-0ff1-ce00-000000000000" -and $_.Realm -eq ""} | Set-PartnerApplication -Enabled $true
+```powershell
+Get-PartnerApplication |  ?{$_.ApplicationIdentifier -eq "00000002-0000-0ff1-ce00-000000000000" -and $_.Realm -eq ""} | Set-PartnerApplication -Enabled $true
+```
 
 ## Étape 3 : exporter le certificat d’autorisation local
 
@@ -69,25 +73,27 @@ Dans cette étape, vous devez exécuter un script PowerShell pour exporter le ce
 
 1.  Enregistrez le texte suivant dans un fichier de script PowerShell nommé, par exemple, **ExportAuthCert.ps1**.
     
-        $thumbprint = (Get-AuthConfig).CurrentCertificateThumbprint
-         
-        if((test-path $env:SYSTEMDRIVE\OAuthConfig) -eq $false)
-        {
-            md $env:SYSTEMDRIVE\OAuthConfig
-        }
-        cd $env:SYSTEMDRIVE\OAuthConfig
-         
-        $oAuthCert = (dir Cert:\LocalMachine\My) | where {$_.Thumbprint -match $thumbprint}
-        $certType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
-        $certBytes = $oAuthCert.Export($certType)
-        $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
-        [System.IO.File]::WriteAllBytes($CertFile, $certBytes)
+    ```powershell
+    $thumbprint = (Get-AuthConfig).CurrentCertificateThumbprint
+        
+    if((test-path $env:SYSTEMDRIVE\OAuthConfig) -eq $false)
+    {
+        md $env:SYSTEMDRIVE\OAuthConfig
+    }
+    cd $env:SYSTEMDRIVE\OAuthConfig
+        
+    $oAuthCert = (dir Cert:\LocalMachine\My) | where {$_.Thumbprint -match $thumbprint}
+    $certType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
+    $certBytes = $oAuthCert.Export($certType)
+    $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
+    [System.IO.File]::WriteAllBytes($CertFile, $certBytes)
+    ```
 
 2.  Dans Exchange PowerShell dans votre organisation Exchange locale, exécutez le script PowerShell que vous avez créé à l’étape précédente. Par exemple :
     
     ```powershell
-.\ExportAuthCert.ps1
-```
+    .\ExportAuthCert.ps1
+    ```
 
 ## Étape 4 : télécharger le certificat d’autorisation local vers le service ACS de Windows Azure Active Directory
 
@@ -97,29 +103,31 @@ Ensuite, vous devez utiliser Windows PowerShell pour télécharger le certificat
 
 2.  Enregistrez le texte suivant dans un fichier de script PowerShell nommé, par exemple, **UploadAuthCert.ps1**.
     
-        Connect-MsolService;
-        Import-Module msonlineextended;
-        
-        $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
-        
-        $objFSO = New-Object -ComObject Scripting.FileSystemObject;
-        $CertFile = $objFSO.GetAbsolutePathName($CertFile);
-        
-        $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
-        $cer.Import($CertFile);
-        $binCert = $cer.GetRawCertData();
-        $credValue = [System.Convert]::ToBase64String($binCert);
-        
-        $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
-        
-        $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
-        New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue
+    ```powershell
+    Connect-MsolService;
+    Import-Module msonlineextended;
+    
+    $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
+    
+    $objFSO = New-Object -ComObject Scripting.FileSystemObject;
+    $CertFile = $objFSO.GetAbsolutePathName($CertFile);
+    
+    $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
+    $cer.Import($CertFile);
+    $binCert = $cer.GetRawCertData();
+    $credValue = [System.Convert]::ToBase64String($binCert);
+    
+    $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
+    
+    $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
+    New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue
+    ```
 
 3.  Exécutez le script PowerShell que vous avez créé à l’étape précédente. Par exemple :
     
     ```powershell
-.\UploadAuthCert.ps1
-```
+    .\UploadAuthCert.ps1
+    ```
 
 4.  Une fois le script lancé, une boîte de dialogue d’informations d’identification s’affiche. Entrez les informations d’identification du compte d’administrateur client de votre organisation Microsoft Online Azure AD. Après avoir exécuté le script, laissez la session Windows PowerShell pour Azure AD ouverte. Vous l’utiliserez pour exécuter un script PowerShell à l’étape suivante.
 
@@ -133,28 +141,30 @@ Si vous avez des doutes concernant les points de terminaison Exchange externes d
 Get-WebServicesVirtualDirectory | FL ExternalUrl
 ```
 
-> [!NOTE]
+> [!NOTE]  
 > Pour que le script suivant soit correctement exécuté, Windows PowerShell pour Azure Active Directory doit être connecté à votre client Azure AD, comme expliqué à l’étape 4 de la section précédente.
 
 
 1.  Enregistrez le texte suivant dans un fichier de script PowerShell nommé, par exemple, **RegisterEndpoints.ps1**. Cet exemple utilise un caractère générique pour enregistrer tous les points de terminaison pour contoso.com. Remplacez **contoso.com** par une autorité de nom d’hôte pour votre organisation Exchange locale.
     
-        $externalAuthority="*.contoso.com"
-         
-        $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
-         
-        $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName;
-         
-        $spn = [string]::Format("{0}/{1}", $ServiceName, $externalAuthority);
-        $p.ServicePrincipalNames.Add($spn);
-         
-        Set-MsolServicePrincipal -ObjectID $p.ObjectId -ServicePrincipalNames $p.ServicePrincipalNames;
+    ```powershell
+    $externalAuthority="*.contoso.com"
+        
+    $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
+        
+    $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName;
+        
+    $spn = [string]::Format("{0}/{1}", $ServiceName, $externalAuthority);
+    $p.ServicePrincipalNames.Add($spn);
+        
+    Set-MsolServicePrincipal -ObjectID $p.ObjectId -ServicePrincipalNames $p.ServicePrincipalNames;
+    ```
 
 2.  Dans Windows PowerShell pour Azure Active Directory, exécutez le script Windows PowerShell que vous avez créé à l’étape précédente. Par exemple :
     
     ```powershell
-.\RegisterEndpoints.ps1
-```
+    .\RegisterEndpoints.ps1
+    ```
 
 ## Étape 6 : créer un connecteur intra-organisationnel à partir de votre organisation locale vers Office 365
 
@@ -162,7 +172,9 @@ Vous devez définir une adresse cible pour vos boîtes aux lettres hébergées d
 
 Avec Exchange PowerShell, exécutez la cmdlet suivante dans votre organisation locale :
 
-    New-IntraOrganizationConnector -name ExchangeHybridOnPremisesToOnline -DiscoveryEndpoint https://outlook.office365.com/autodiscover/autodiscover.svc -TargetAddressDomains <your service target address>
+```powershell
+New-IntraOrganizationConnector -name ExchangeHybridOnPremisesToOnline -DiscoveryEndpoint https://outlook.office365.com/autodiscover/autodiscover.svc -TargetAddressDomains <your service target address>
+```
 
 ## Étape 7 : créer un connecteur intra-organisationnel à partir de votre client Office 365 vers votre organisation Exchange locale
 
@@ -174,19 +186,21 @@ Vous devez également définir le point de terminaison de découverte automatiqu
 
   - https://\<votre domaine SMTP principal\>/autodiscover/autodiscover.svc
 
-> [!NOTE]
+> [!NOTE]  
 > Vous pouvez utiliser la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dn551183(v=exchg.150)">Get-IntraOrganizationConfiguration</a> pour vos clients locaux et Office 365 afin de déterminer les valeurs des points de terminaison requises par la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dn551178(v=exchg.150)">New-IntraOrganizationConnector</a>.
 
 
 À l’aide de Windows PowerShell, exécutez la cmdlet suivante :
 
-    $UserCredential = Get-Credential
-    
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    
-    Import-PSSession $Session
-    
-    New-IntraOrganizationConnector -name ExchangeHybridOnlineToOnPremises -DiscoveryEndpoint <your on-premises Autodiscover endpoint> -TargetAddressDomains <your on-premises SMTP domain>
+```powershell
+$UserCredential = Get-Credential
+
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+
+Import-PSSession $Session
+
+New-IntraOrganizationConnector -name ExchangeHybridOnlineToOnPremises -DiscoveryEndpoint <your on-premises Autodiscover endpoint> -TargetAddressDomains <your on-premises SMTP domain>
+```
 
 ## Étape 8 : configurer un objet AvailabilityAddressSpace pour tous les serveurs Exchange de version antérieure à 2013 SP1
 
@@ -204,7 +218,7 @@ Avant d’effectuer l’étape suivante, vérifiez que :
 
   - Tout serveur de boîtes aux lettres et d’accès au client Exchange 2010/2007 existant dispose de la dernière mise à jour cumulative ou du dernier Service Pack (SP).
     
-    > [!NOTE]
+    > [!NOTE]  
     > Les serveurs de boîtes aux lettres Exchange 2010/2007 peuvent continuer à utiliser des serveurs d’accès au client Exchange 2010/2007 pour les serveurs frontaux pour des connexions de fonctionnalités non hybrides. Les demandes de fonctionnalité de déploiement hybride du client Office 365 doivent se connecter aux serveurs Exchange 2013.
 
 
@@ -220,33 +234,39 @@ Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
 
 Pour configurer l’objet *AvailabilityAddressSpace*, utilisez Exchange PowerShell et exécutez l’applet de commande suivante dans votre organisation locale :
 
-    Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl <your on-premises External Web Services URL> -ForestName <your Office 365 service target address> -UseServiceAccount $True
+```powershell
+Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl <your on-premises External Web Services URL> -ForestName <your Office 365 service target address> -UseServiceAccount $True
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Vous pouvez vérifier que l’authentification OAuth est correcte à l’aide de la cmdlet [Test-OAuthConnectivity](https://technet.microsoft.com/fr-fr/library/jj218623\(v=exchg.150\)). Cette cmdlet vérifie que les points de terminaison Exchange et Exchange Online locaux peuvent authentifier correctement les demandes l’un de l’autre.
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > Lors de la connexion à votre organisation Exchange Online avec Remote PowerShell, il se peut que vous deviez utiliser le paramètre <em>AllowClobber</em> avec la cmdlet <strong>Import-PSSession</strong> pour importer les dernières commandes dans la session PowerShell locale.
 
 
 Pour vérifier que votre organisation Exchange locale peut se connecter correctement à Exchange Online, exécutez la commande suivante dans Exchange PowerShell dans votre organisation locale :
 
-    Test-OAuthConnectivity -Service EWS -TargetUri https://outlook.office365.com/ews/exchange.asmx -Mailbox <On-Premises Mailbox> -Verbose | fl
+```powershell
+Test-OAuthConnectivity -Service EWS -TargetUri https://outlook.office365.com/ews/exchange.asmx -Mailbox <On-Premises Mailbox> -Verbose | fl
+```
 
 Pour vérifier que votre organisation Exchange Online peut se connecter correctement à votre organisation Exchange locale, utilisez [Remote PowerShell](https://technet.microsoft.com/fr-fr/library/jj984289\(v=exchg.150\)) pour vous connecter à votre organisation Exchange Online et exécutez la commande suivante :
 
-    Test-OAuthConnectivity -Service EWS -TargetUri <external hostname authority of your Exchange On-Premises deployment>/metadata/json/1 -Mailbox <Exchange Online Mailbox> -Verbose | fl
+```powershell
+Test-OAuthConnectivity -Service EWS -TargetUri <external hostname authority of your Exchange On-Premises deployment>/metadata/json/1 -Mailbox <Exchange Online Mailbox> -Verbose | fl
+```
 
 Par exemple, Test-OAuthConnectivity -Service EWS -TargetUri https://lync.contoso.com/metadata/json/1 -Mailbox ExchangeOnlineBox1 -Verbose | fl
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > Vous pouvez ignorer l’erreur « Aucune boîte aux lettres n’est associée à l’adresse SMTP ». Ce qui importe, c’est que la valeur renvoyée par le paramètre <em>ResultTask</em> soit <strong>Réussite</strong>. Par exemple, la dernière section de la sortie de test doit être :<br />
 > <code>ResultType: Success</code><br />
 > <code>Identity: Microsoft.Exchange.Security.OAuth.ValidationResultNodeId</code><br />
 > <code>IsValid: True</code><br />
 > <code>ObjectState: New</code>
 
-> [!TIP]
+> [!TIP]  
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 

@@ -48,6 +48,7 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <td><p>Chaîne</p>
 <p>Caractère générique</p></td>
 <td>
+
 ```powershell
 -ContentFilter {All -like '*Ayla*'}
 ```
@@ -59,6 +60,7 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <td><p>Chaîne</p>
 <p>Caractère générique</p></td>
 <td>
+
 ```powershell
 -ContentFilter {Attachment -like '*.jpg'}
 ```
@@ -73,6 +75,7 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <p>LegacyDN</p>
 <p>Caractère générique</p></td>
 <td>
+
 ```powershell
 -ContentFilter {(BCC -eq 'ayla@contoso.com') -or (BCC -eq 'tony@contoso.com')}
 ```
@@ -84,6 +87,7 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <td><p>Chaîne</p>
 <p>Caractère générique</p></td>
 <td>
+
 ```powershell
 -ContentFilter {Body -like '*prospectus*'}
 ```
@@ -95,9 +99,11 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <td><p>Chaîne</p>
 <p>Caractère générique</p></td>
 <td>
+
 ```powershell
 -ContentFilter {Category -like '*Blue*'}
 ```
+
 </td>
 </tr>
 <tr class="even">
@@ -109,9 +115,11 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <p>LegacyDN</p>
 <p>Caractère générique</p></td>
 <td>
+
 ```powershell
 -ContentFilter {(CC -eq 'ayla@contoso.com') -or (CC -eq 'tony@contoso.com')}
 ```
+
 </td>
 </tr>
 <tr class="odd">
@@ -119,9 +127,11 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <td><p>Cette propriété renvoie les messages dont la date et l’heure d’expiration sont précisées.</p></td>
 <td><p>Horodatage</p></td>
 <td>
+
 ```powershell
 -ContentFilter {Expires -lt '01/01/2013'}
 ```
+
 </td>
 </tr>
 <tr class="even">
@@ -130,9 +140,11 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <td><p>Booléen</p>
 <p><code>$true</code> ou <code>$false</code></p></td>
 <td>
+
 ```powershell
 -ContentFilter {HasAttachment -eq $true}
 ```
+
 </td>
 </tr>
 <tr class="odd">
@@ -142,14 +154,15 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <p>1 ou « Normal »</p>
 <p>2 ou « Élevé »</p></td>
 <td>
+
 ```powershell
 -ContentFilter {Importance -eq 'high'}
 ```
 
-
 ```powershell
 -ContentFilter {Importance -eq 2}
 ```
+
 </td>
 </tr>
 <tr class="even">
@@ -158,6 +171,7 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <td><p>Booléen</p>
 <p><code>$true</code> ou  <code>$false</code></p></td>
 <td>
+
 ```powershell
 -ContentFilter {IsFlagged -eq $true}
 ```
@@ -169,9 +183,11 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <td><p>Booléen</p>
 <p><code>$true</code> ou  <code>$false</code></p></td>
 <td>
+
 ```powershell
 -ContentFilter {IsRead -eq $true}
 ```
+
 </td>
 </tr>
 <tr class="even">
@@ -190,14 +206,15 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <p>Tâche</p>
 <p>Messagerie vocale</p></td>
 <td>
+
 ```powershell
 -ContentFilter {MessageKind -eq 'Calendar'}
 ```
 
-
 ```powershell
 -ContentFilter {MessageKind -ne 'Email'}
 ```
+
 </td>
 </tr>
 <tr class="odd">
@@ -205,14 +222,15 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <td><p>Cette propriété renvoie des messages munis des paramètres régionaux spécifiés.</p></td>
 <td><p>CultureInfo</p></td>
 <td>
+
 ```powershell
 -ContentFilter {MessageLocale -ne 'en-US'}
 ```
 
-
 ```powershell
 -ContentFilter {MessageLocale -eq 'tr-TR'}
 ```
+
 </td>
 </tr>
 <tr class="even">
@@ -224,9 +242,11 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <p>LegacyDN</p>
 <p>Caractère générique</p></td>
 <td>
+
 ```powershell
 -ContentFilter {(Participants -eq 'ayla@contoso.com') -or (Participants -eq 'tony@contoso.com')}
 ```
+
 </td>
 </tr>
 <tr class="odd">
@@ -236,9 +256,11 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <td><p>Chaîne</p>
 <p>Caractère générique</p></td>
 <td>
+
 ```powershell
 -ContentFilter {PolicyTag -ne '00000000-0000-0000-0000-000000000000'}
 ```
+
 </td>
 </tr>
 <tr class="even">
@@ -246,14 +268,12 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <td><p>Cette propriété renvoie les messages qui ont été reçus par le destinataire aux date et heure de réception précisées.</p></td>
 <td><p>Horodatage</p></td>
 <td>
-```powershell
--ContentFilter {Received -lt '01/01/2013 9:00'}
-```
-
 
 ```powershell
--ContentFilter {(Received -lt '01/01/2013') -and (Received -gt '01/01/2012')}
+-ContentFilter {Received -lt '01/01/2013 9:00'}</code></pre>
+<pre><code>-ContentFilter {(Received -lt '01/01/2013') -and (Received -gt '01/01/2012')}
 ```
+
 </td>
 </tr>
 <tr class="odd">
@@ -265,9 +285,11 @@ Le tableau qui suit contient une liste des propriétés filtrables pour le param
 <p>LegacyDN</p>
 <p>Caractère générique</p></td>
 <td>
+
 ```powershell
 ContentFilter {Sender -eq 'tony'}
 ```
+
 </td>
 </tr>
 <tr class="even">
@@ -275,14 +297,12 @@ ContentFilter {Sender -eq 'tony'}
 <td><p>Cette propriété renvoie les messages qui ont été envoyés par le destinataire aux date et heure d’envoi précisées.</p></td>
 <td><p>Horodatage</p></td>
 <td>
-```powershell
--ContentFilter {Sent -lt '01/01/2013 9:00'}
-```
-
 
 ```powershell
--ContentFilter {(Sent -lt '01/01/2013') -and (Sent -gt '01/01/2012')}
+-ContentFilter {Sent -lt '01/01/2013 9:00'}</code></pre>
+<pre><code>-ContentFilter {(Sent -lt '01/01/2013') -and (Sent -gt '01/01/2012')}
 ```
+
 </td>
 </tr>
 <tr class="odd">
@@ -292,9 +312,11 @@ ContentFilter {Sender -eq 'tony'}
 <p>KB (kilo-octets)</p>
 <p>MB (mégaoctets)</p></td>
 <td>
+
 ```powershell
 -ContentFilter {Size -gt '10KB'}
 ```
+
 </td>
 </tr>
 <tr class="even">
@@ -303,9 +325,11 @@ ContentFilter {Sender -eq 'tony'}
 <td><p>Chaîne</p>
 <p>Caractère générique</p></td>
 <td>
+
 ```powershell
 -ContentFilter {Subject -like '*meeting*'}
 ```
+
 </td>
 </tr>
 <tr class="odd">
@@ -317,11 +341,12 @@ ContentFilter {Sender -eq 'tony'}
 <p>LegacyDN</p>
 <p>Caractère générique</p></td>
 <td>
+
 ```powershell
 -ContentFilter {To -eq 'aylakol'}
 ```
+
 </td>
 </tr>
 </tbody>
 </table>
-

@@ -69,11 +69,15 @@ Pour les autres tâches de gestion relatives aux listes d’adresses, voir [Proc
 
 Dans cet exemple, la liste d’adresses MyAddressList est créée à l’aide du paramètre *RecipientFilter* et contient des destinataires qui sont des utilisateurs de boîte aux lettres, et pour lesquels `StateOrProvince` est défini par `Washington` ou `Oregon`.
 
-    New-AddressList -Name MyAddressList -RecipientFilter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}
+```powershell
+New-AddressList -Name MyAddressList -RecipientFilter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}
+```
 
 Dans cet exemple, la liste d’adresses enfant nommée Building 34 Meeting Rooms est créée dans le conteneur parent All Rooms à l’aide de conditions intégrées.
 
-    New-AddressList -Name "Building 34 Meeting Rooms" -Container "\All Rooms" -IncludedRecipients Resources -ConditionalCustomAttribute1 "Building 34"
+```powershell
+New-AddressList -Name "Building 34 Meeting Rooms" -Container "\All Rooms" -IncludedRecipients Resources -ConditionalCustomAttribute1 "Building 34"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-AddressList](https://technet.microsoft.com/fr-fr/library/aa996912\(v=exchg.150\)).
 

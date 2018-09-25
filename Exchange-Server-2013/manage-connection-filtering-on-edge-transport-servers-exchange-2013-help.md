@@ -85,7 +85,9 @@ Utilisez la cmdlet **IPBlockListConfig** pour voir et modifier la façon dont le
 
 Pour afficher la configuration de la liste d’adresses IP bloquées, exécutez la commande suivante :
 
-    Get-IPBlockListConfig | Format-List *Enabled,*Response
+```powershell
+Get-IPBlockListConfig | Format-List *Enabled,*Response
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour activer ou désactiver la liste d’adresses IP bloquées
 
@@ -113,7 +115,9 @@ Get-IPBlockListConfig | Format-List Enabled
 
 Pour configurer la liste d’adresses IP bloquées, utilisez la syntaxe suivante :
 
-    Set-IPBlockListConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false> -MachineEntryRejectionResponse "<Custom response text>"] [-StaticEntryRejectionResponse "<Custom response text>"]
+```powershell
+Set-IPBlockListConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false> -MachineEntryRejectionResponse "<Custom response text>"] [-StaticEntryRejectionResponse "<Custom response text>"]
+```
 
 Cet exemple de code permet de configurer la liste d’adresses IP bloquées avec les paramètres suivants :
 
@@ -125,13 +129,17 @@ Cet exemple de code permet de configurer la liste d’adresses IP bloquées avec
 
 <!-- end list -->
 
-    Set-IPBlockListConfig -InternalMailEnabled $true -MachineEntryRejectionResponse "Connection from IP address {0} was rejected by sender reputation." -StaticEntryRejectionResponse "Connection from IP address {0} was rejected by connection filtering."
+```powershell
+Set-IPBlockListConfig -InternalMailEnabled $true -MachineEntryRejectionResponse "Connection from IP address {0} was rejected by sender reputation." -StaticEntryRejectionResponse "Connection from IP address {0} was rejected by connection filtering."
+```
 
 ## Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien configuré la liste d’adresses IP bloquées, exécutez la commande suivante et assurez-vous que les valeurs affichées sont celles que vous avez configurées.
 
-    Get-IPBlockListConfig | Format-List *MailEnabled,*Response
+```powershell
+Get-IPBlockListConfig | Format-List *MailEnabled,*Response
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour afficher les entrées de liste d’adresses IP bloquées
 
@@ -163,7 +171,9 @@ Get-IPBlockListEntry -IPAddress 192.168.1.13
 
 Pour ajouter des entrées de liste d’adresses IP bloquées, exécutez la commande suivante :
 
-    Add-IPBlockListEntry <-IPAddress IPAddress | -IPRange IP range or CIDR IP> [-ExpirationTime <DateTime>] [-comment "<Descriptive Comment>"]
+```powershell
+Add-IPBlockListEntry <-IPAddress IPAddress | -IPRange IP range or CIDR IP> [-ExpirationTime <DateTime>] [-comment "<Descriptive Comment>"]
+```
 
 L’exemple de code suivant permet d’ajouter l’entrée de liste d’adresses IP bloquées correspondant à la plage d’adresses IP 192.168.1.10 à 192.168.1.15 et de définir la date d’expiration de l’entrée sur le 4 juillet 2014 à 15h00.
 
@@ -217,7 +227,9 @@ Utilisez la cmdlet **IPBlockListProvidersConfig** pour voir et modifier la faço
 
 Pour afficher la façon dont le filtrage des connexions utilise l’ensemble des fournisseurs de listes d’adresses IP bloquées, exécutez la commande suivante :
 
-    Get-IPBlockListProvidersConfig | Format-List *Enabled,Bypassed*
+```powershell
+Get-IPBlockListProvidersConfig | Format-List *Enabled,Bypassed*
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour activer ou désactiver tous les fournisseurs de listes d’adresses IP bloquées
 
@@ -245,7 +257,9 @@ Get-IPBlockListProvidersConfig | Format-List Enabled
 
 Pour configurer la façon dont le filtrage des connexions utilise l’ensemble des fournisseurs de listes d’adresses IP bloquées, utilisez la syntaxe suivante :
 
-    Set-IPBlockListProvidersConfig [-BypassedRecipients <recipient1,recipient2...>] [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>]
+```powershell
+Set-IPBlockListProvidersConfig [-BypassedRecipients <recipient1,recipient2...>] [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>]
+```
 
 L’exemple de code suivant permet de configurer tous les fournisseurs de listes d’adresses IP bloquées avec les paramètres suivants :
 
@@ -255,7 +269,9 @@ L’exemple de code suivant permet de configurer tous les fournisseurs de listes
 
 <!-- end list -->
 
-    Set-IPBlockListProvidersConfig -BypassedRecipients chris@fabrikam.com,michelle@fabrikam.com -InternalMailEnabled $true
+```powershell
+Set-IPBlockListProvidersConfig -BypassedRecipients chris@fabrikam.com,michelle@fabrikam.com -InternalMailEnabled $true
+```
 
 Pour plus d’informations, voir [Set-IPBlockListProvidersConfig](https://technet.microsoft.com/fr-fr/library/aa998543\(v=exchg.150\)).
 
@@ -263,7 +279,9 @@ Pour plus d’informations, voir [Set-IPBlockListProvidersConfig](https://techne
 
 Pour vérifier que vous avez bien configuré tous les fournisseurs de listes d’adresses IP bloquées, exécutez la commande suivante et assurez-vous que les valeurs affichées sont celles que vous avez configurées.
 
-    Get-IPBlockListProvidersConfig | Format-List *MailEnabled,Bypassed*
+```powershell
+Get-IPBlockListProvidersConfig | Format-List *MailEnabled,Bypassed*
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour afficher les fournisseurs de listes d’adresses IP bloquées
 
@@ -281,13 +299,17 @@ Get-IPBlockListProvider <IPBlockListProviderIdentity>
 
 L’exemple de code suivant permet d’afficher des informations relatives au fournisseur nommé « Contoso IP Block List Provider ».
 
-    Get-IPBlockListProvider "Contoso IP Block List Provider" | Format-List Name,Enabled,Priority,LookupDomain,*Match,*Response
+```powershell
+Get-IPBlockListProvider "Contoso IP Block List Provider" | Format-List Name,Enabled,Priority,LookupDomain,*Match,*Response
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour ajouter un fournisseur de listes d’adresses IP bloquées
 
 Pour ajouter un fournisseur de listes d’adresses IP bloquées, utilisez la syntaxe suivante :
 
-    Add-IPBlockListProvider -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-Enabled <$true | $false>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>] [-RejectionResponse "<Custom Text>"]
+```powershell
+Add-IPBlockListProvider -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-Enabled <$true | $false>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>] [-RejectionResponse "<Custom Text>"]
+```
 
 Cet exemple de code permet de créer un fournisseur de listes d’adresses IP bloquées nommé « Contoso IP Block List Provider » avec les options suivantes :
 
@@ -297,7 +319,9 @@ Cet exemple de code permet de créer un fournisseur de listes d’adresses IP bl
 
 <!-- end list -->
 
-    Add-IPBlockListProvider -Name "Contoso IP Block List Provider" -LookupDomain rbl.contoso.com -BitmaskMatch 127.0.0.1
+```powershell
+Add-IPBlockListProvider -Name "Contoso IP Block List Provider" -LookupDomain rbl.contoso.com -BitmaskMatch 127.0.0.1
+```
 
 > [!NOTE]
 > Lorsque vous ajoutez un nouveau fournisseur de listes d’adresses IP bloquées, il est activé par défaut (la valeur <em>Enabled</em> est <code>$true</code>) et sa valeur de priorité est incrémentée (la valeur <em>Priority</em> de la première entrée est de 1).
@@ -347,7 +371,9 @@ Les options de configuration disponibles dans la cmdlet **Set-IPBlockListProvide
 
 Pour configurer un fournisseur de listes d’adresses IP bloquées existant, utilisez la syntaxe suivante :
 
-    Set-IPBlockListProvider <IPBlockListProviderIdentity> -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>] [-RejectionResponse "<Custom Text>"]
+```powershell
+Set-IPBlockListProvider <IPBlockListProviderIdentity> -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>] [-RejectionResponse "<Custom Text>"]
+```
 
 Par exemple, pour ajouter le code d’état d’adresse IP 127.0.0.1 à la liste des codes d’état existants pour le fournisseur nommé Contoso IP Block List Provider, exécutez la commande suivante :
 
@@ -411,7 +437,9 @@ Utilisez la cmdlet **IPAllowListConfig** pour voir et modifier la façon dont le
 
 Pour afficher la configuration de la liste d’adresses IP autorisées, exécutez la commande suivante :
 
-    Get-IPAllowListConfig | Format-List *Enabled
+```powershell
+Get-IPAllowListConfig | Format-List *Enabled
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour activer ou désactiver la liste d’adresses IP autorisées
 
@@ -439,7 +467,9 @@ Get-IPAllowListConfig | Format-List *Enabled
 
 Pour configurer la liste d’adresses IP autorisées, utilisez la syntaxe suivante :
 
-    Set-IPAllowListConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>
+```powershell
+Set-IPAllowListConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>
+```
 
 Cet exemple de code permet de configurer la liste d’adresses IP autorisées pour filtrer les connexions entrantes issues de serveurs de messagerie internes et externes. Par défaut, seules les connexions issues de serveurs de messagerie externes sont filtrées (*ExternalMailEnabled* est défini sur `$true` et *InternalMailEnabled* sur `$false`). Les connexions authentifiées et non authentifiées issues de partenaires externes sont considérées comme des connexions externes.
 
@@ -451,7 +481,9 @@ Set-IPAllowListConfig -InternalMailEnabled $true
 
 Pour vérifier que vous avez bien configuré la liste d’adresses IP autorisées, exécutez la commande suivante et assurez-vous que les valeurs affichées sont celles que vous avez configurées.
 
-    Get-IPAllowListConfig | Format-List *MailEnabled
+```powershell
+Get-IPAllowListConfig | Format-List *MailEnabled
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour afficher les entrées de liste d’adresses IP autorisées
 
@@ -483,7 +515,9 @@ Get-IPAllowListEntry -IPAddress 192.168.1.13
 
 Pour ajouter des entrées de liste d’adresses IP autorisées, exécutez la commande suivante :
 
-    Add-IPAllowListEntry <-IPAddress IPAddress | -IPRange IP range or CIDR IP> [-ExpirationTime <DateTime>] [-Comment "<Descriptive Comment>"]
+```powershell
+Add-IPAllowListEntry <-IPAddress IPAddress | -IPRange IP range or CIDR IP> [-ExpirationTime <DateTime>] [-Comment "<Descriptive Comment>"]
+```
 
 Cet exemple de code permet d’ajouter l’entrée de liste d’adresses IP autorisées correspondant à la plage d’adresses IP 192.168.1.10 à 192.168.1.15 et de définir la date d’expiration de l’entrée sur le 4 juillet 2014 à 15h00.
 
@@ -537,7 +571,9 @@ Utilisez la cmdlet **IPAllowListProvidersConfig** pour voir et modifier la faço
 
 Pour voir la façon dont le filtrage des connexions utilise tous les fournisseurs de listes d’adresses IP autorisées, exécutez la commande suivante :
 
-    Get-IPAllowListProvidersConfig | Format-List *Enabled
+```powershell
+Get-IPAllowListProvidersConfig | Format-List *Enabled
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour activer ou désactiver tous les fournisseurs de listes d’adresses IP autorisées
 
@@ -565,7 +601,9 @@ Get-IPAllowListProvidersConfig | Format-List *Enabled
 
 Pour configurer la façon dont le filtrage des connexions utilise tous les fournisseurs de listes d’adresses IP autorisées, utilisez la syntaxe suivante :
 
-    Set-IPAllowListProvidersConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>]
+```powershell
+Set-IPAllowListProvidersConfig [-ExternalMailEnabled <$true | $false>] [-InternalMailEnabled <$true | $false>]
+```
 
 Cet exemple de code permet de configurer tous les fournisseurs de listes d’adresses IP autorisées pour filtrer les connexions entrantes issues de serveurs de messagerie internes et externes. Par défaut, seules les connexions issues de serveurs de messagerie externes sont filtrées (*ExternalMailEnabled* est défini sur `$true` et *InternalMailEnabled* sur `$false`). Les connexions authentifiées et non authentifiées issues de partenaires externes sont considérées comme des connexions externes.
 
@@ -579,7 +617,10 @@ Pour plus d’informations, voir [Set-IPBlockListProvidersConfig](https://techne
 
 Pour vérifier que vous avez bien configuré tous les fournisseurs de listes d’adresses IP autorisées, exécutez la commande suivante et assurez-vous que les valeurs affichées sont celles que vous avez configurées.
 
-    Get-IPAllowListProvidersConfig | Format-List *MailEnabled
+```powershell
+Get-IPAllowListProvidersConfig | Format-List *MailEnabled
+```
+
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour afficher les fournisseurs de listes d’adresses IP autorisées
 
@@ -597,13 +638,17 @@ Get-IPAllowListProvider <IPAllowListProviderIdentity>
 
 Cet exemple de code permet d’afficher des informations relatives au fournisseur nommé « Contoso IP Allow List Provider ».
 
-    Get-IPAllowListProvider "Contoso IP Allow List Provider" | Format-List Name,Enabled,Priority,LookupDomain,*Match
+```powershell
+Get-IPAllowListProvider "Contoso IP Allow List Provider" | Format-List Name,Enabled,Priority,LookupDomain,*Match
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour ajouter un fournisseur de listes d’adresses IP autorisées
 
 Pour ajouter un fournisseur de listes d’adresses IP autorisées, utilisez la syntaxe suivante :
 
-    Add-IPAllowListProvider -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-Enabled <$true | $false>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>]
+```powershell
+Add-IPAllowListProvider -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-Enabled <$true | $false>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>]
+```
 
 Cet exemple de code permet de créer un fournisseur de listes d’adresses IP autorisées nommé « Contoso IP Allow List Provider » avec les options suivantes :
 
@@ -613,7 +658,9 @@ Cet exemple de code permet de créer un fournisseur de listes d’adresses IP au
 
 <!-- end list -->
 
-    Add-IPAllowListProvider -Name "Contoso IP Allow List Provider" -LookupDomain allow.contoso.com -BitmaskMatch 127.0.0.1
+```powershell
+Add-IPAllowListProvider -Name "Contoso IP Allow List Provider" -LookupDomain allow.contoso.com -BitmaskMatch 127.0.0.1
+```
 
 > [!NOTE]
 > Lorsque vous ajoutez un nouveau fournisseur de listes d’adresses IP autorisées, il est activé par défaut (la valeur <em>Enabled</em> est <code>$true</code>) et la valeur de priorité est incrémentée (la valeur de <em>Priority</em> de la première entrée est de 1).
@@ -663,7 +710,9 @@ Les options de configuration disponibles dans la cmdlet **Set-IPAllowListProvide
 
 Pour configurer un fournisseur de listes d’adresses IP autorisées, utilisez la syntaxe suivante :
 
-    Set-IPAllowListProvider <IPAllowListProviderIdentity> -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>]
+```powershell
+Set-IPAllowListProvider <IPAllowListProviderIdentity> -Name "<Descriptive Name>" -LookupDomain <FQDN> [-Priority <Integer>] [-AnyMatch <$true | $false>] [-BitmaskMatch <IPAddress>] [-IPAddressesMatch <IPAddressStatusCode1,IPAddressStatusCode2...>]
+```
 
 Par exemple, pour ajouter le code d’état de l’adresse IP 127.0.0.1 à la liste des codes d’état existants pour le fournisseur de listes d’adresses IP autorisées nommé Contoso IP Allow List Provider, exécutez la commande suivante :
 

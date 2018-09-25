@@ -92,8 +92,8 @@ Ou
 1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
     
     ```powershell
-Get-ImapSettings | format-list
-```
+    Get-ImapSettings | format-list
+    ```
 
 2.  Vérifiez que les paramètres de connexion sont corrects.
 
@@ -104,4 +104,3 @@ Après avoir défini les limites de délai d’expiration d’authentification p
 [Activation d’IMAP4 dans Exchange 2016](enable-imap4-in-exchange-2013-exchange-2013-help.md)
 
 [Définir les limites de connexion pour IMAP4](set-connection-limits-for-imap4-exchange-2013-help.md)
-

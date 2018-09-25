@@ -376,9 +376,7 @@ Vous pouvez également créer des approbations de partie de confiance et des rè
 
 ```powershell
 @RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value); 
-```
- 
-```powershell
+
 @RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
 ```
 
@@ -458,7 +456,9 @@ Pour configurer le service de rôle d’application web :
 
 La cmdlet Windows PowerShell suivante effectue les mêmes actions que les étapes précédentes.
 
-    Install-WebApplicationProxy -CertificateThumprint 1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b -FederationServiceName adfs.contoso.com
+```powershell
+Install-WebApplicationProxy -CertificateThumprint 1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b -FederationServiceName adfs.contoso.com
+```
 
 ## Étape 6 – Publier Outlook Web App et le CAE à l’aide du proxy d’application web (facultatif)
 
@@ -551,7 +551,7 @@ Configurer le répertoire virtuel OWA à l’aide d’Exchange Management Shell.
 Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -WindowsAuthentication $false -OAuthAuthentication $false
 ```
 
-> [!NOTE]
+> [!NOTE]  
 > Les commandes Exchange Management Shell précédentes configurer les répertoires virtuels OWA et ECP sur chaque serveur d’accès Client de votre organisation. Si vous ne souhaitez pas appliquer ces paramètres à tous les serveurs d’accès Client, utilisez le paramètre <em>-Identity</em> et spécifiez le serveur d’accès Client. Il est probable que vous souhaitez appliquer ces paramètres uniquement vers les serveurs d’accès Client de votre organisation qui sont Internet en vis-à-vis.
 
 

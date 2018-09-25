@@ -77,11 +77,23 @@ La modification des propriétés à valeurs multiples suit le même processus qu
 <tbody>
 <tr class="odd">
 <td><p>Ajouter une ou plusieurs valeurs à une propriété à valeurs multiples</p></td>
-<td><pre><code>@{Add=&quot;&lt;value1&gt;&quot;, &quot;&lt;value2&gt;&quot;, &quot;&lt;value3&gt;&quot;}</code></pre></td>
+<td>
+
+```powershell
+@{Add="<value1>", "<value2>", "<value3>"}
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>Supprimer une ou plusieurs valeurs d’une propriété à valeurs multiples</p></td>
-<td><pre><code>@{Remove=&quot;&lt;value1&gt;&quot;, &quot;&lt;value2&gt;&quot;, &quot;&lt;value3&gt;&quot;}</code></pre></td>
+<td>
+
+```powershell
+@{Remove="<value1>", "<value2>", "<value3>"}</code></pre>
+```
+
+</td>
 </tr>
 </tbody>
 </table>
