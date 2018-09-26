@@ -72,7 +72,9 @@ Après avoir créé une recherche de découverte électronique locale, vous pouv
 
 Cet exemple modifie la recherche de découverte électronique locale Search-Project Contoso pour rechercher des boîtes aux lettres appartenant à des membres du groupe de distribution DG-ProjectManagers.
 
-    Set-MailboxSearch -Identity "Search-Project Contoso" -SourceMailboxes "DG-ProjectManagers"
+```powershell
+Set-MailboxSearch -Identity "Search-Project Contoso" -SourceMailboxes "DG-ProjectManagers"
+```
 
 ## Comment savoir si cela a fonctionné ?
 

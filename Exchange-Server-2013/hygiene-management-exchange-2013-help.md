@@ -31,7 +31,9 @@ Par défaut, seuls les membres du groupe de rôles Gestion de l’organisation p
 
 Vous pouvez utiliser la commande suivante pour afficher une liste des utilisateurs ou des groupes de sécurité universelle qui sont membres de ce groupe de rôles.
 
-    Get-RoleGroupMember "Hygiene Management"
+```powershell
+Get-RoleGroupMember "Hygiene Management"
+```
 
 Pour plus d'informations sur les membres d'un groupe de rôles, voir la section « Voir les membres d'un groupe de rôles » dans [Gérer les membres de groupes de rôles](manage-role-group-members-exchange-2013-help.md).
 

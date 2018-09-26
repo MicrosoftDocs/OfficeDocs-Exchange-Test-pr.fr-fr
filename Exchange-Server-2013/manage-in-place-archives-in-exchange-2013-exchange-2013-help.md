@@ -77,8 +77,11 @@ L’archivage inaltérable vous permet de reprendre le contrôle des données de
 
 Cet exemple crée l’utilisateur Chris Ashton dans Active Directory, ainsi que la boîte aux lettres dans la base de données de boîtes aux lettres DB01, et active une archive. Le mot de passe doit être réinitialisé à la prochaine ouverture de session. Pour définir la valeur initiale du mot de passe, cet exemple crée une variable ($password), vous invite à entrer un mot de passe et affecte ce mot de passe à la variable en tant qu’objet SecureString.
 
-    $password = Read-Host "Enter password" -AsSecureString
-    New-Mailbox -UserPrincipalName chris@contoso.com -Alias chris -Archive -Database "DB01" -Name ChrisAshton -OrganizationalUnit Users -Password $password -FirstName Chris -LastName Ashton -DisplayName "Chris Ashton" 
+```powershell
+$password = Read-Host "Enter password" -AsSecureString
+
+New-Mailbox -UserPrincipalName chris@contoso.com -Alias chris -Archive -Database "DB01" -Name ChrisAshton -OrganizationalUnit Users -Password $password -FirstName Chris -LastName Ashton -DisplayName "Chris Ashton" 
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-Mailbox](https://technet.microsoft.com/fr-fr/library/aa997663\(v=exchg.150\)).
 
@@ -90,7 +93,9 @@ Pour vérifier que vous avez créé avec succès une boîte aux lettres utilisat
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les informations relatives à la nouvelle boîte aux lettres utilisateur et à l’archive.
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress,*Archive*
+    ```powershell
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress,*Archive*
+    ```
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, utilisez la cmdlet **Test-ArchiveConnectivity** pour tester la connectivité à l’archive. Pour obtenir un exemple de test de la connectivité à l’archive, consultez la section Exemples de la rubrique [Test-ArchiveConnectivity](https://technet.microsoft.com/fr-fr/library/hh529914\(v=exchg.150\)).
 
@@ -116,11 +121,15 @@ Vous pouvez également créer des archives pour les utilisateurs existants qui o
 
 Cet exemple active l’archive de la boîte aux lettres de Tony Smith.
 
-    Enable-Mailbox "Tony Smith" -Archive
+```powershell
+Enable-Mailbox "Tony Smith" -Archive
+```
 
 Cet exemple récupère les boîtes aux lettres de la base de données DB01 qui n’ont pas d’archive locale ou en nuage activée ou dont le nom ne commence pas par DiscoverySearchMailbox. Il redirige le résultat vers la cmdlet **Enable-Mailbox** afin d’activer l’archive pour toutes les boîtes aux lettres sur la base de données de boîtes aux lettres DB01.
 
-    Get-Mailbox -Database DB01 -Filter {ArchiveGuid -Eq $null -AND ArchiveDomain -eq $null -AND Name -NotLike "DiscoverySearchMailbox*"} | Enable-Mailbox -Archive
+```powershell
+Get-Mailbox -Database DB01 -Filter {ArchiveGuid -Eq $null -AND ArchiveDomain -eq $null -AND Name -NotLike "DiscoverySearchMailbox*"} | Enable-Mailbox -Archive
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Enable-Mailbox](https://technet.microsoft.com/fr-fr/library/aa998251\(v=exchg.150\)) et [Get-Mailbox](https://technet.microsoft.com/fr-fr/library/bb123685\(v=exchg.150\)).
 
@@ -132,7 +141,9 @@ Pour vérifier que vous avez activé une archive locale pour une boîte aux lett
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher des informations sur la nouvelle archive.
     
-        Get-Mailbox <Name> | FL Name,*Archive*
+    ```powershell
+    Get-Mailbox <Name> | FL Name,*Archive*
+    ```
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, utilisez la cmdlet **Test-ArchiveConnectivity** pour tester la connectivité à l’archive. Pour obtenir un exemple de test de la connectivité à l’archive, consultez la section Exemples de la rubrique [Test-ArchiveConnectivity](https://technet.microsoft.com/fr-fr/library/hh529914\(v=exchg.150\)).
 
@@ -162,7 +173,9 @@ Pour reconnecter l’archive locale à cette boîte aux lettres, vous pouvez uti
 
 Cet exemple illustre la désactivation de l’archive pour la boîte aux lettres de Chris Ashton. Il n’indique pas comment désactiver la boîte aux lettres.
 
-    Disable-Mailbox -Identity "Chris Ashton" -Archive
+```powershell
+Disable-Mailbox -Identity "Chris Ashton" -Archive
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Disable-Mailbox](https://technet.microsoft.com/fr-fr/library/aa997210\(v=exchg.150\)).
 
@@ -174,7 +187,9 @@ Pour vérifier qu’une archive a bien été désactivée, procédez comme suit�
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour vérifier les propriétés de l’archive de l’utilisateur de la boîte aux lettres.
     
-        Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
+    ```powershell
+    Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
+    ```
     
     Si l’archive est désactivée, les valeurs suivantes sont retournées pour les propriétés associées à l’archive.
     
@@ -227,11 +242,15 @@ Lorsque vous désactivez une boîte aux lettres d’archivage, elle est déconne
 
 1.  Si vous ne connaissez pas le nom de l’archive, vous pouvez l’afficher dans l’environnement de ligne de commande Exchange Management Shell en exécutant la commande suivante. Cet exemple récupère la base de données de boîtes aux lettres DB01, la transmet à la cmdlet **Get-MailboxStatistics** pour récupérer les statistiques de toutes les boîtes aux lettres de la base de données, puis utilise la cmdlet **Where-Object** pour filtrer les résultats et récupérer la liste des archives déconnectées. La commande affiche des informations supplémentaires sur chaque archive, notamment le GUID et le nombre d’éléments.
     
-        Get-MailboxDatabase "DB01" | Get-MailboxStatistics | Where {($_.DisconnectDate -ne $null) -and ($_.IsArchiveMailbox -eq $true)} | Format-List
+    ```powershell
+    Get-MailboxDatabase "DB01" | Get-MailboxStatistics | Where {($_.DisconnectDate -ne $null) -and ($_.IsArchiveMailbox -eq $true)} | Format-List
+    ```
 
 2.  Connectez l’archive à la boîte aux lettres principale. Cet exemple montre comment connecter l’archive de Chris Ashton à sa boîte aux lettres principale et utilise le GUID comme identité de l’archive.
     
-        Enable-Mailbox -ArchiveGuid "8734c04e-981e-4ccf-a547-1c1ac7ebf3e2" -ArchiveDatabase "DB01" -Identity "Chris Ashton"
+    ```powershell
+    Enable-Mailbox -ArchiveGuid "8734c04e-981e-4ccf-a547-1c1ac7ebf3e2" -ArchiveDatabase "DB01" -Identity "Chris Ashton"
+    ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques suivantes :
 
@@ -245,5 +264,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Pour vérifier que vous avez connecté une archive déconnectée à un utilisateur de boîte aux lettres, exécutez la commande Shell suivante pour récupérer les propriétés d’archivage de l’utilisateur de la boîte aux lettres et vérifier les valeurs retournées pour les propriétés *ArchiveGuid* et *ArchiveDatabase* :
 
-    Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
+```powershell
+Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
+```
 

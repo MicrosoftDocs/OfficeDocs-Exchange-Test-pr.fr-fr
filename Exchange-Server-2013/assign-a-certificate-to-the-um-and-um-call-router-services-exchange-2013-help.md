@@ -55,5 +55,7 @@ Pour découvrir d'autres tâches de gestion relatives à la gestion des certific
 
 Cet exemple permet d'attribuer un certificat au service de messagerie unifiée et au service routeur des appels de messagerie unifiée
 
-    Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+```powershell
+Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+```
 

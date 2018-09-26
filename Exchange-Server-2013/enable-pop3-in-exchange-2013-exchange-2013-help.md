@@ -59,19 +59,27 @@ Sur l’ordinateur exécutant le rôle serveur de boîtes aux lettres :
 
 1.  Paramétrez le service Microsoft Exchange POP3 de sorte qu'il démarre automatiquement.
     
-        Set-service msExchangePOP3 -startuptype automatic
+    ```powershell
+    Set-service msExchangePOP3 -startuptype automatic
+    ```
 
 2.  Démarrez le service Microsoft Exchange POP3.
     
-        Start-service msExchangePOP3
+    ```powershell
+    Start-service msExchangePOP3
+    ```
 
 3.  Paramétrez le service Serveur principal Microsoft Exchange POP3 de sorte qu'il démarre automatiquement.
     
-        Set-service msExchangePOP3BE -startuptype automatic
+    ```powershell
+    Set-service msExchangePOP3BE -startuptype automatic
+    ```
 
 4.  Démarrez le service Serveur principal Microsoft Exchange POP3.
     
-        Start-service msExchangePOP3BE
+    ```powershell
+    Start-service msExchangePOP3BE
+    ```
 
 ## Comment savoir si cela a fonctionné ?
 

@@ -51,11 +51,15 @@ Pour des informations sur les raccourcis clavier applicables aux procédures de 
 
 Cet exemple met à jour la liste d’adresses intitulée État de Washington.
 
-    Update-AddressList "Washington State"
+```powershell
+Update-AddressList "Washington State"
+```
 
 Si plusieurs listes d’adresses portent le même nom, vous devez spécifier le chemin d’accès complet à la liste d’adresses que vous souhaitez mettre à jour. Par exemple, pour mettre à jour la liste d’adresses intitulée Ventes sous Amérique du Nord alors qu’il existe une liste d’adresses Ventes sous Europe, utilisez la commande suivante :
 
-    Update-AddressList "North America\Sales"
+```powershell
+Update-AddressList "North America\Sales"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Update-AddressList](https://technet.microsoft.com/fr-fr/library/aa997982\(v=exchg.150\)).
 

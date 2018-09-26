@@ -50,11 +50,15 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Cette commande permet de désactiver le service de recherche Exchange pour une base de données de boîtes aux lettres appelée EXCH01.
 
-    Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $false
+```powershell
+Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $false
+```
 
 Cette commande permet d’activer le service de recherche Exchange pour une base de données de boîtes aux lettres appelée EXCH01.
 
-    Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $true
+```powershell
+Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $true
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-MailboxDatabase](https://technet.microsoft.com/fr-fr/library/bb123971\(v=exchg.150\)).
 
@@ -83,17 +87,17 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 **Utilisation du Shell**
 
 Exécutez les commandes suivantes pour arrêter et désactiver le service Microsoft Exchange Search.
-```
-    Stop-Service MSExchangeFastSearch
-```
-```
-    Set-Service MSExchangeFastSearch -StartupType Disabled
+
+```powershell
+Stop-Service MSExchangeFastSearch
+
+Set-Service MSExchangeFastSearch -StartupType Disabled
 ```
 
 Exécutez les commandes suivantes pour configurer le service de recherche Exchange de sorte qu’il démarre automatiquement et démarrer ensuite le service.
-```
-    Set-Service MSExchangeFastSearch -StartupType Automatic
-```
-```
-    Start-Service MSExchangeFastSearch
+
+```powershell
+Set-Service MSExchangeFastSearch -StartupType Automatic
+
+Start-Service MSExchangeFastSearch
 ```

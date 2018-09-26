@@ -65,11 +65,15 @@ Pour en savoir plus sur la publication Internet de calendriers et les stratégi
 
 Cet exemple illustre la désactivation d’une stratégie de partage de publication des calendriers Internet dédiée nommée **Internet**.
 
-    Set-SharingPolicy -Identity "Internet" -Enabled $false
+```powershell
+Set-SharingPolicy -Identity "Internet" -Enabled $false
+```
 
 Cet exemple illustre la suppression d’une stratégie de partage de publication des calendriers Internet dédiée nommée **Internet**.
 
-    Remove-SharingPolicy -Identity "Internet"
+```powershell
+Remove-SharingPolicy -Identity "Internet"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-SharingPolicy](https://technet.microsoft.com/fr-fr/library/dd297931\(v=exchg.150\)).
 
@@ -77,7 +81,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour vérifier que la suppression ou la mise à jour de la stratégie de partage s’est effectuée correctement, exécutez la commande de l’environnement de ligne de commande Exchange Management Shell suivante et vérifiez les informations relatives à la stratégie de partage.
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 
 Si vous avez supprimé une stratégie de partage de publication des calendriers Internet dédiée, vous ne devez plus voir la stratégie dans les résultats de la cmdlet.
 
@@ -97,7 +103,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Cet exemple illustre la désactivation des fonctions Anonyme pour le répertoire virtuel d’Outlook Web App sur le serveur d’accès au client CAS01.
 
-    Set-OwaVirtualDirectory -Identity "CAS01" - AnonymousFeaturesEnabled -$false
+```powershell
+Set-OwaVirtualDirectory -Identity "CAS01" - AnonymousFeaturesEnabled -$false
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-OwaVirtualDirectory](https://technet.microsoft.com/fr-fr/library/bb123515\(v=exchg.150\)).
 
@@ -105,7 +113,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour vérifier que vous avez correctement désactivé les fonctions Anonyme pour le répertoire virtuel d’Outlook Web App sur le serveur d’accès au client, exécutez la commande de l’environnement de ligne de commande Exchange Management Shell et vérifiez que la valeur du paramètre *AnonymousFeaturesEnabled* est `$false`.
 
-    Get-OwaVirtualDirectory | format-list
+```powershell
+Get-OwaVirtualDirectory | format-list
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-OwaVirtualDirectory](https://technet.microsoft.com/fr-fr/library/aa998588\(v=exchg.150\)).
 

@@ -93,7 +93,9 @@ Pour configurer les autorisations fractionnées RBAC, procédez comme suit :
     
     1.  Désactivez les autorisations fractionnées Active Directory en exécutant la commande suivante à partir du support d’installation d’Exchange 2013.
         
-            setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+        ```powershell
+        setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+        ```
     
     2.  Redémarrez les serveurs Exchange 2013 de l’entreprise ou attendez que le jeton d’accès Active Directory soit répliqué sur tous vos serveurs Exchange 2013.
         
@@ -105,52 +107,74 @@ Pour configurer les autorisations fractionnées RBAC, procédez comme suit :
     
     1.  Créez un groupe de rôles pour les administrateurs Active Directory. Non seulement la commande crée le groupe de rôles, mais elle crée aussi des attributions de rôle ordinaire entre le nouveau groupe de rôles et les rôles Création du destinataire de messagerie et Création du groupe de sécurité et appartenance.
         
-            New-RoleGroup "Active Directory Administrators" -Roles "Mail Recipient Creation", "Security Group Creation and Membership"
+        ```powershell
+        New-RoleGroup "Active Directory Administrators" -Roles "Mail Recipient Creation", "Security Group Creation and Membership"
+        ```
         
         > [!NOTE]
         > Pour que les membres de ce groupe de rôles puissent créer des attributions de rôle, ajoutez le rôle de gestion des rôles. Vous n’avez pas à vous en occuper à ce stade. Toutefois, si vous souhaitez toujours attribuer le rôle Création du destinataire de messagerie ou le rôle Création du groupe de sécurité et appartenance à d’autres utilisateurs de rôle, le rôle de gestion des rôles doit être attribué à ce nouveau groupe de rôles. La procédure ci-après permet de configurer le groupe de rôles des administrateurs Active Directory en tant que seul groupe de rôles habilité à déléguer ces rôles.
     
     2.  Créez les attributions de rôle de délégation entre le nouveau groupe de rôles et les rôles Création du destinataire de messagerie et Création du groupe de sécurité et appartenance en exécutant les commandes suivantes.
         
-            New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Active Directory Administrators" -Delegating
-            New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Active Directory Administrators" -Delegating
+        ```powershell
+        New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Active Directory Administrators" -Delegating
+        ```
+        ```powershell
+        New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Active Directory Administrators" -Delegating
+        ```
     
     3.  Ajoutez des membres au nouveau groupe de rôles à l’aide de la commande suivante.
         
-            Add-RoleGroupMember "Active Directory Administrators" -Member <user to add>
+        ```powershell
+        Add-RoleGroupMember "Active Directory Administrators" -Member <user to add>
+        ```
     
     4.  Remplacez la liste des délégués dans le nouveau groupe de rôles, de sorte que seuls les membres du groupe de rôles peuvent ajouter ou supprimer des membres.
         
-            Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
+        ```powershell
+        Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
+        ```
         
         > [!IMPORTANT]
         > Les membres du groupe de rôles Gestion de l’organisation, ou ceux auxquels est attribué le rôle de gestion des rôles, soit directement soit via un autre groupe de rôles ou groupe de sécurité universelle, peuvent ignorer ce contrôle de sécurité des délégués. Si vous souhaitez empêcher tout administrateur Exchange de s’ajouter au nouveau groupe de rôles, vous devez supprimer l’attribution de rôle entre le rôle de gestion des rôles et les administrateurs Exchange, puis l’attribuer à un autre groupe.
     
     5.  Recherchez toutes les attributions de rôle ordinaire et de délégation concernant le rôle Création du destinataire de messagerie à l’aide de la commande suivante. La commande affiche uniquement le nom (**Name**), le rôle (**Role**) et les propriétés **RoleAssigneeName**.
         
-            Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Format-Table Name, Role, RoleAssigneeName -Auto
+        ```powershell
+        Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Format-Table Name, Role, RoleAssigneeName -Auto
+        ```
     
     6.  À l’aide de la commande suivante, supprimez toutes les attributions de rôle ordinaire et de délégation concernant le rôle Création du destinataire de messagerie qui ne sont pas associées au nouveau groupe de rôle ou à tout autre groupe de rôle, groupe de sécurité universelle ou attribution directe que vous souhaitez conserver.
         
-            Remove-ManagementRoleAssignment <Mail Recipient Creation role assignment to remove>
+        ```powershell
+        Remove-ManagementRoleAssignment <Mail Recipient Creation role assignment to remove>
+        ```
         
         > [!NOTE]
         > Pour supprimer l’ensemble des attributions de rôle ordinaire et de délégation du rôle Création du destinataire de messagerie dont dispose un utilisateur de rôle autre que le groupe des administrateurs Active Directory, exécutez la commande suivante. Le commutateur <em>WhatIf</em> vous permet d’afficher les attributions de rôles qui seront supprimées. Supprimez le commutateur <em>WhatIf</em> et réexécutez la commande pour supprimer les attributions de rôles.
         
-            Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where { $_.RoleAssigneeName -NE "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+        ```powershell
+        Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where { $_.RoleAssigneeName -NE "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+        ```
     
     7.  Recherchez toutes les attributions de rôle ordinaire et de délégation concernant le rôle Création du groupe de sécurité et appartenance à l’aide de la commande suivante. La commande affiche uniquement le nom (**Name**), le rôle (**Role**) et les propriétés **RoleAssigneeName**.
         
-            Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Format-Table Name, Role, RoleAssigneeName -Auto
+        ```powershell
+        Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Format-Table Name, Role, RoleAssigneeName -Auto
+        ```
     
     8.  À l’aide de la commande suivante, supprimez toutes les attributions de rôle ordinaire et de délégation concernant le rôle Création du groupe de sécurité et appartenance qui ne sont pas associées au nouveau groupe de rôle ou à tout autre groupe de rôle, groupe de sécurité universelle ou attribution directe que vous souhaitez conserver.
         
-            Remove-ManagementRoleAssignment <Security Group Creation and Membership role assignment to remove>
+        ```powershell
+        Remove-ManagementRoleAssignment <Security Group Creation and Membership role assignment to remove>
+        ```
         
         > [!NOTE]
         > Vous pouvez utiliser la commande présentée dans la remarque précédente pour supprimer toutes les attributions de rôle ordinaire et de délégation concernant le rôle de création du groupe de sécurité et appartenance associées à tout utilisateur de rôle autre que le groupe de rôle des administrateurs Active Directory, comme indiqué dans l’exemple ci-après.
         
-            Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where { $_.RoleAssigneeName -NE "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+        ```powershell
+        Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where { $_.RoleAssigneeName -NE "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+        ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques suivantes :
 
@@ -207,7 +231,9 @@ Pour basculer des autorisations partagées ou fractionnées RBAC vers les autori
 
 1.  Dans une invite de commandes Windows, exécutez la commande suivante du support d’installation d’Exchange 2013 pour activer les autorisations fractionnées Active Directory.
     
-        setup.exe /PrepareAD /ActiveDirectorySplitPermissions:true
+    ```powershell
+    setup.exe /PrepareAD /ActiveDirectorySplitPermissions:true
+    ```
 
 2.  Si votre organisation dispose de plusieurs domaines Active Directory, vous devez exécuter `setup.exe /PrepareDomain` dans chacun des domaines enfant contenant des serveurs ou des objets Exchange ou exécuter `setup.exe /PrepareAllDomains` à partir d’un site disposant d’un serveur Active Directory pour chacun des domaines.
 

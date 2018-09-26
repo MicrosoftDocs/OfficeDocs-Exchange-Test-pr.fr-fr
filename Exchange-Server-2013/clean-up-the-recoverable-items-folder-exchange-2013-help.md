@@ -55,7 +55,9 @@ Vous rencontrez des difficultés ? Demandez de l’aide en participant aux foru
 
 Cet exemple supprime de manière permanente les éléments du dossier Éléments récupérables de Gurinder Singh et copie également les éléments dans le dossier GurinderSingh-RecoverableItems de la boîte aux lettres de détection (créée par le programme d’installation Exchange).
 
-    Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
+```powershell
+Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
+```
 
 > [!NOTE]
 > Pour supprimer les éléments de la boîte aux lettres sans les copier vers une autre boîte aux lettres, utilisez la commande précédente sans les paramètres <em>TargetMailbox</em> et <em>TargetFolder</em>.
@@ -92,31 +94,45 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
     > [!NOTE]
     > Si le paramètre <em>UseDatabaseQuotaDefaults</em> est défini à <code>$true</code>, les paramètres de quota précédents ne sont pas appliqués. Les paramètres de quota correspondants et configurés sur la base de données de boîte aux lettres sont appliqués, même si des paramètres de boîte aux lettres individuels sont renseignés.
     
-        Get-Mailbox "Gurinder Singh" | Format-List RecoverableItemsQuota, RecoverableItemsWarningQuota, ProhibitSendQuota, ProhibitSendReceiveQuota, UseDatabaseQuotaDefaults, RetainDeletedItemsFor, UseDatabaseRetentionDefaults
+    ```powershell
+    Get-Mailbox "Gurinder Singh" | Format-List RecoverableItemsQuota, RecoverableItemsWarningQuota, ProhibitSendQuota, ProhibitSendReceiveQuota, UseDatabaseQuotaDefaults, RetainDeletedItemsFor, UseDatabaseRetentionDefaults
+    ```
 
 2.  Récupérez les paramètres d’accès de boîte aux lettres relatifs à cette dernière. Assurez-vous de noter ces paramètres pour une utilisation ultérieure.
     
-        Get-CASMailbox "Gurinder Singh" | Format-List EwsEnabled, ActiveSyncEnabled, MAPIEnabled, OWAEnabled, ImapEnabled, PopEnabled
+    ```powershell
+    Get-CASMailbox "Gurinder Singh" | Format-List EwsEnabled, ActiveSyncEnabled, MAPIEnabled, OWAEnabled, ImapEnabled, PopEnabled
+    ```
 
 3.  Récupérez la taille actuelle du dossier Éléments récupérables. Notez la taille afin de pouvoir augmenter les quotas à l’étape 6.
     
-        Get-MailboxFolderStatistics "Gurinder Singh" -FolderScope RecoverableItems | Format-List Name,FolderAndSubfolderSize
+    ```powershell
+    Get-MailboxFolderStatistics "Gurinder Singh" -FolderScope RecoverableItems | Format-List Name,FolderAndSubfolderSize
+    ```
 
 4.  Récupérez la configuration de cycle de fonctionnement de l’Assistant Dossier géré actuel. Assurez-vous de noter ces paramètres pour une utilisation ultérieure.
     
-        Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
+    ```powershell
+    Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
+    ```
 
 5.  Désactivez l’accès du client à la boîte aux lettres pour vous assurer qu’aucune modification ne peut être effectuée sur les données de boîte aux lettres pour la durée de cette procédure.
     
-        Set-CASMailbox "Gurinder Singh" -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
+    ```powershell
+    Set-CASMailbox "Gurinder Singh" -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
+    ```
 
 6.  Pour vous assurer qu’aucun élément n’est supprimé du dossier Éléments récupérables, augmentez le quota d’éléments récupérables, augmentez le quota d’avertissement d’éléments récupérables et définissez la période de rétention des éléments supprimés à une valeur supérieure à la taille actuelle du dossier Éléments récupérables de l’utilisateur. Ceci est particulièrement important pour la conservation de messages de boîtes aux lettres qui sont en conservation pour litige ou inaltérable. Nous vous recommandons d’augmenter ces paramètres en multipliant par deux la taille actuelle.
     
-        Set-Mailbox "Gurinder Singh" -RecoverableItemsQuota 50Gb -RecoverableItemsWarningQuota 50Gb -RetainDeletedItemsFor 3650 -ProhibitSendQuota 50Gb -ProhibitSendRecieveQuota 50Gb -UseDatabaseQuotaDefaults $false -UseDatabaseRetentionDefaults $false
+    ```powershell
+    Set-Mailbox "Gurinder Singh" -RecoverableItemsQuota 50Gb -RecoverableItemsWarningQuota 50Gb -RetainDeletedItemsFor 3650 -ProhibitSendQuota 50Gb -ProhibitSendRecieveQuota 50Gb -UseDatabaseQuotaDefaults $false -UseDatabaseRetentionDefaults $false
+    ```
 
 7.  Désactivez l’Assistant Dossier géré sur le serveur de boîte aux lettres.
     
-        Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
+    ```powershell
+    Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
+    ```
     
     > [!IMPORTANT]
     > Si la boîte aux lettres se trouve sur une base de données de boîtes aux lettres dans un groupe de disponibilité de base de données, vous devez désactiver l’Assistant Dossier géré sur chaque membre du groupe de disponibilité de base de données qui héberge une copie de la base de données. Si la base de données échoue sur un autre serveur, cela empêche l’Assistant Dossier géré sur ce serveur de supprimer les données de la boîte aux lettres.
@@ -124,7 +140,9 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
 
 8.  Désactivez la récupération d’élément unique et supprimez la conservation pour litige de la boîte aux lettres.
     
-        Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
+    ```powershell
+    Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
+    ```
     
     > [!IMPORTANT]
     > Après exécution de cette commande, il faut parfois une heure pour désactiver la récupération d’élément unique ou la conservation pour litige. Nous vous recommandons d’effectuer la prochaine étape uniquement après écoulement de cette période.
@@ -132,11 +150,15 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
 
 9.  Copiez les éléments du dossier Éléments récupérables vers un dossier qui se trouve dans la boîte aux lettres de détection et supprimez le contenu de la boîte aux lettres source.
     
-        Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
+    ```powershell
+    Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
+    ```
     
     Si vous avez besoin de supprimer uniquement les messages qui correspondent aux conditions spécifiées, utilisez le paramètre *SearchQuery* pour spécifier les conditions. Cet exemple supprime les messages qui disposent de la chaîne « Votre relevé de compte » dans le champ **Objet**.
     
-        Search-Mailbox -Identity "Gurinder Singh" -SearchQuery "Subject:'Your bank statement'" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
+    ```powershell
+    Search-Mailbox -Identity "Gurinder Singh" -SearchQuery "Subject:'Your bank statement'" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
+    ```
     
     > [!NOTE]
     > Il n’est pas nécessaire de copier les éléments dans la boîte aux lettres de détection. Vous pouvez copier des messages dans toute boîte aux lettres. Cependant, pour empêcher l’accès aux données de boîtes aux lettres éventuellement sensibles, nous vous recommandons de copier les messages dans une boîte aux lettres dont l’accès est limité aux responsables d’enregistrements autorisés. Par défaut, l’accès à la boîte aux lettres de détection par défaut est limité aux membres du groupe de rôles Gestion de la découverte. Pour plus d’informations, consultez la rubrique <a href="https://docs.microsoft.com/fr-fr/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">Découverte électronique locale</a>.
@@ -144,7 +166,9 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
 
 10. Si la boîte aux lettres a été placée en conservation pour litige ou si la récupération d’élément unique a été préalablement activée, activez à nouveau ces fonctionnalités.
     
-        Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
+    ```powershell
+    Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
+    ```
     
     > [!IMPORTANT]
     > Après exécution de cette commande, il faut parfois une heure pour activer la récupération d’élément unique ou la conservation pour litige. Nous vous recommandons d’activer l’Assistant Dossier géré et d’autoriser l’accès au client (étapes 11 et 12) uniquement après écoulement de cette période.
@@ -168,15 +192,21 @@ Cette procédure copie les éléments du dossier Éléments récupérables de Gu
     
     Dans cet exemple, la boîte aux lettres est supprimée du blocage de rétention, la période de rétention de l’élément supprimé est redéfinie à la valeur par défaut de 14 jours et le quota d’éléments récupérables est configuré pour utiliser la même valeur que pour la base de données de boîte aux lettres. Si les valeurs que vous avez notées à l’étape 1 sont différentes, vous devez utiliser les paramètres précédents pour spécifier chaque valeur et définir le paramètre *UseDatabaseQuotaDefaults* à `$false`. Si les paramètres *RetainDeletedItemsForand UseDatabaseRetentionDefaults* ont été préalablement définis à une valeur différente, vous devez également les rétablir aux valeurs indiquées à l’étape 1.
     
-        Set-Mailbox "Gurinder Singh" -RetentionHoldEnabled $false -RetainDeletedItemsFor 14 -RecoverableItemsQuota unlimited -UseDatabaseQuotaDefaults $true
+    ```powershell
+    Set-Mailbox "Gurinder Singh" -RetentionHoldEnabled $false -RetainDeletedItemsFor 14 -RecoverableItemsQuota unlimited -UseDatabaseQuotaDefaults $true
+    ```
 
 12. Activez l’Assistant Dossier géré en redéfinissant le cycle de travail à la valeur indiquée à l’étape 4. Cet exemple définit le cycle de travail à un jour.
     
-        Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+    ```powershell
+    Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+    ```
 
 13. Activez l’accès au client.
     
-        Set-CASMailbox -ActiveSyncEnabled $true -EwsEnabled $true -MAPIEnabled $true -OWAEnabled $true -ImapEnabled $true -PopEnabled $true
+    ```powershell
+    Set-CASMailbox -ActiveSyncEnabled $true -EwsEnabled $true -MAPIEnabled $true -OWAEnabled $true -ImapEnabled $true -PopEnabled $true
+    ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques suivantes :
 
@@ -202,5 +232,7 @@ Pour vérifier que le nettoyage du dossier Éléments récupérables d’une bo�
 
 Dans cet exemple, nous récupérons la taille du dossier Éléments récupérables et de ses sous-dossiers ainsi qu’un comptage des éléments du dossier et de chacun des sous-dossiers.
 
-    Get-MailboxFolderStatistics -Identity "Gurinder Singh" -FolderScope RecoverableItems | Format-Table Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders -Auto
+```powershell
+Get-MailboxFolderStatistics -Identity "Gurinder Singh" -FolderScope RecoverableItems | Format-Table Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders -Auto
+```
 

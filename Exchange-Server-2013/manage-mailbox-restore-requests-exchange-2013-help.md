@@ -43,7 +43,9 @@ Pour les autres tâches relatives aux boîtes aux lettres déconnectées, consul
 
   - Pour afficher la valeur de la propriété *Identity* pour toutes les demandes de restauration de boîtes aux lettres, exécutez la commande suivante.
     
-        Get-MailboxRestoreRequest | Format-Table Identity
+    ```powershell
+    Get-MailboxRestoreRequest | Format-Table Identity
+    ```
     
     Vous pouvez utiliser cette valeur d’identité pour spécifier une demande spécifique de restauration de boîte aux lettres, si vous exécutez les procédures de cette rubrique.
 
@@ -61,31 +63,43 @@ L'affichage des propriétés d'une demande de restauration de boîte aux lettres
 
 Pour afficher la liste et la valeur de la propriété *Identity* pour toutes les demandes de restauration de boîtes aux lettres, exécutez la commande suivante.
 
-    Get-MailboxRestoreRequest | Format-Table Identity
+```powershell
+Get-MailboxRestoreRequest | Format-Table Identity
+```
 
 Vous pouvez utiliser l'identité pour obtenir des informations sur des demandes spécifiques de restauration de boîtes aux lettres.
 
 Cet exemple renvoie l'état de la demande de restauration « Pilar Pinilla \\MailboxRestore» à l'aide du paramètre *Identity*.
 
-    Get-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore"
+```powershell
+Get-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore"
+```
 
 Cet exemple renvoie toutes les informations concernant la deuxième demande de restauration pour la boîte aux lettres cible de Pilar Pinilla.
 
-    Get-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1" | Format-List
+```powershell
+Get-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1" | Format-List
+```
 
 Cet exemple renvoie l'état des demandes de restauration en cours de traitement à partir de la base de données source MBD01.
 
-    Get-MailboxRestoreRequest -SourceDatabase MBD01
+```powershell
+Get-MailboxRestoreRequest -SourceDatabase MBD01
+```
 
 Cet exemple renvoie toutes les demandes de restauration actuellement en cours.
 
-    Get-MailboxRestoreRequest -Status InProgress
+```powershell
+Get-MailboxRestoreRequest -Status InProgress
+```
 
 D'autres états utiles sont `Queued`, `Completed`, `Suspended` et `Failed`.
 
 Cet exemple renvoie toutes les demandes de restauration suspendues.
 
-    Get-MailboxRestoreRequest -Suspend $true
+```powershell
+Get-MailboxRestoreRequest -Suspend $true
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Get-MailboxRestoreRequest](https://technet.microsoft.com/fr-fr/library/ff829907\(v=exchg.150\)).
 
@@ -148,19 +162,27 @@ L'affichage des statistiques d'une demande de restauration de boîte aux lettres
 
 Cet exemple renvoie les statistiques par défaut de la demande de restauration danp\\MailboxRestore1. Par défaut, les informations renvoyées incluent le nom, la boîte aux lettres, l'état et le pourcentage d'exécution.
 
-    Get-MailboxRestoreRequestStatistics -Identity danp\MailboxRestore1
+```powershell
+Get-MailboxRestoreRequestStatistics -Identity danp\MailboxRestore1
+```
 
 Cet exemple renvoie les statistiques relatives à la boîte aux lettres de Dan Park et exporte le rapport dans un fichier .csv.
 
-    Get-MailboxRestoreRequestStatistics -Identity "Dan Park\MailboxRestore" | Export-CSV \\SERVER01\RestoreRequest_Reports\DanPark_Restorestats.csv
+```powershell
+Get-MailboxRestoreRequestStatistics -Identity "Dan Park\MailboxRestore" | Export-CSV \\SERVER01\RestoreRequest_Reports\DanPark_Restorestats.csv
+```
 
 Cet exemple renvoie des informations supplémentaires sur la demande de restauration de la boîte aux lettres de Pilar Pinilla à l’aide du paramètre *IncludeReport* et canalise les résultats vers la cmdlet **Format-List**.
 
-    Get-MailboxRestoreRequestStatistics -Identity "Pilar Pinilla\MailboxRestore" -IncludeReport | Format-List 
+```powershell
+Get-MailboxRestoreRequestStatistics -Identity "Pilar Pinilla\MailboxRestore" -IncludeReport | Format-List 
+```
 
 Cet exemple renvoie des informations supplémentaires sur toutes les demandes de restauration dont l'état est `Failed` à l'aide du paramètre *IncludeReport*, puis enregistre les informations dans le fichier AllRestoreReports.txt à l'emplacement d'exécution de la commande.
 
-    Get-MailboxRestoreRequest -Status Failed | Get-MailboxRestoreRequestStatistics -IncludeReport | Format-List > AllRestoreReports.txt
+```powershell
+Get-MailboxRestoreRequest -Status Failed | Get-MailboxRestoreRequestStatistics -IncludeReport | Format-List > AllRestoreReports.txt
+```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Get-MailboxRestoreRequestStatistics](https://technet.microsoft.com/fr-fr/library/ff829912\(v=exchg.150\)) et [Get-MailboxRestoreRequest](https://technet.microsoft.com/fr-fr/library/ff829907\(v=exchg.150\)).
 
@@ -399,11 +421,15 @@ Si une demande de restauration de boîte aux lettres échoue, utilisez la cmdlet
 
 Dans cet exemple, il est spécifié que la demande de restauration MailboxRestore1 pour la boîte aux lettres de Debra Garcia doit ignorer 10 éléments de boîte aux lettres endommagés.
 
-    Set-MailboxRestoreRequest -Identity "Debra Garcia\MailboxRestore1" -BadItemLimit 10
+```powershell
+Set-MailboxRestoreRequest -Identity "Debra Garcia\MailboxRestore1" -BadItemLimit 10
+```
 
 Cet exemple montre que la demande de restauration MailboxRestore1 pour la boîte aux lettres de Florence Flipo ignore 100 éléments endommagés. Puisque la valeur de *BadItemLimit* est supérieure à 50, le paramètre *AcceptLargeDataLoss* doit être spécifié.
 
-    Set-MailboxRestoreRequest -Identity "Florence Flipo\MailboxRestore1" -BadItemLimit 100 -AcceptLargeDataLoss
+```powershell
+Set-MailboxRestoreRequest -Identity "Florence Flipo\MailboxRestore1" -BadItemLimit 100 -AcceptLargeDataLoss
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-MailboxRestoreRequest](https://technet.microsoft.com/fr-fr/library/ff829909\(v=exchg.150\)).
 
@@ -419,11 +445,15 @@ Vous pouvez interrompre une demande de restauration à tout moment après avoir 
 
 Dans cet exemple, nous interrompons la demande de restauration MailboxRestore1 de la boîte aux lettres de Pilar Pinilla.
 
-    Suspend-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```powershell
+Suspend-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```
 
 Cet exemple montre comment suspendre toutes les demandes de restauration en cours en extrayant toutes les demandes dont l'état est `InProgress`, puis en canalisant la sortie vers la cmdlet **Suspend-MailboxRestoreRequest** tout en ajoutant le commentaire « Resume after FY13Q2 Maintenance » (Reprendre après la maintenance FY13Q2).
 
-    Get-MailboxRestoreRequest -Status InProgress | Suspend-MailboxRestoreRequest -SuspendComment "Resume after FY13Q2 Maintenance"
+```powershell
+Get-MailboxRestoreRequest -Status InProgress | Suspend-MailboxRestoreRequest -SuspendComment "Resume after FY13Q2 Maintenance"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Suspend-MailboxRestoreRequest](https://technet.microsoft.com/fr-fr/library/ff829906\(v=exchg.150\)).
 
@@ -431,7 +461,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Pour vérifier que la suspension d’une demande de restauration de boîte aux lettres s’est correctement effectuée, exécutez la commande suivante :
 
-    Get-MailboxRestoreRequest <identity> | Format-List Suspend,Status
+```powershell
+Get-MailboxRestoreRequest <identity> | Format-List Suspend,Status
+```
 
 Si la valeur de la propriété *Suspend* est égale à `True`, la demande de restauration a bien été suspendue. De même, une valeur de `Suspended` pour la propriété *Status* indique que la demande de restauration a bien été suspendue.
 
@@ -441,11 +473,15 @@ La cmdlet **Resume-MailboxRestoreRequest** permet de reprendre une demande de re
 
 Cet exemple montre comment reprendre la demande de restauration Pilar Pinilla\\MailboxRestore1.
 
-    Resume-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```powershell
+Resume-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```
 
 Cet exemple montre comment reprendre toutes les demandes de restauration dont l'état est Échec.
 
-    Get-MailboxRestoreRequest -Status Failed | Resume-MailboxRestoreRequest
+```powershell
+Get-MailboxRestoreRequest -Status Failed | Resume-MailboxRestoreRequest
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Resume-MailboxRestoreRequest](https://technet.microsoft.com/fr-fr/library/ff829908\(v=exchg.150\)).
 
@@ -453,7 +489,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Pour vérifier qu'une demande de restauration a bien repris, exécutez la commande suivante.
 
-    Get-MailboxRestoreRequest <identity> | Format-List Suspend,Status
+```powershell
+Get-MailboxRestoreRequest <identity> | Format-List Suspend,Status
+```
 
 Si la valeur de la propriété *Suspend* est égale à `False`, ce la signifie que la demande de restauration a bien été reprise. De même, une valeur de `InProgress` pour la propriété *Status* indique que la demande de restauration a bien été reprise.
 
@@ -467,15 +505,21 @@ La cmdlet **Remove-MailboxRestoreRequest** vous permet de supprimer des demandes
 
 Cet exemple montre comment supprimer la demande de restauration Pilar Pinilla\\MailboxRestore1.
 
-    Remove-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```powershell
+Remove-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```
 
 Cet exemple supprime toutes les demandes de restauration dont l'état est Terminé (Completed).
 
-    Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
+```powershell
+Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
+```
 
 Cet exemple annule la demande de restauration en utilisant le paramètre *RequestGuid* pour une demande stockée sur MBXDB01. Le jeu de paramètres exigeant les paramètres *RequestGuid* et *RequestQueue* n'est utilisé que pour les besoins de débogage du service de réplication Microsoft. N'utilisez ce jeu que sur instruction du service de support technique Microsoft.
 
-    Remove-MailboxRestoreRequest -RequestQueue MBXDB01 -RequestGuid 25e0eaf2-6cc2-4353-b83e-5cb7b72d441f
+```powershell
+Remove-MailboxRestoreRequest -RequestQueue MBXDB01 -RequestGuid 25e0eaf2-6cc2-4353-b83e-5cb7b72d441f
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Remove-MailboxRestoreRequest](https://technet.microsoft.com/fr-fr/library/ff829910\(v=exchg.150\)).
 
@@ -483,7 +527,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Pour vérifier que la suppression d’une demande de restauration de boîte aux lettres s’est correctement effectuée, exécutez la commande suivante :
 
-    Get-MailboxRestoreRequest -Identity <identity of removed restore request>
+```powershell
+Get-MailboxRestoreRequest -Identity <identity of removed restore request>
+```
 
 La commande renvoie une erreur indiquant que la demande de restauration n'existe pas.
 

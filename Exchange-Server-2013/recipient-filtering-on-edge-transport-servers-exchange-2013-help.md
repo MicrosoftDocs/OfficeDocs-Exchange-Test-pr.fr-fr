@@ -69,7 +69,9 @@ Si la répulsion n'est pas configurée, le serveur Exchange retourne immédiatem
 
 Pour configurer le délai d'attente avant que le protocole SMTP ne retourne l'erreur `550 5.1.1 User unknown`, vous définissez l'intervalle de répulsion à l'aide du paramètre *TarpitInterval* sur la cmdlet **Set-ReceiveConnector**. La syntaxe est la suivante :
 
-    Set-ReceiveConnector <Receive Connector> -TarpitInterval <00:00:00 to 00:10:00>
+```powershell
+Set-ReceiveConnector <Receive Connector> -TarpitInterval <00:00:00 to 00:10:00>
+```
 
 La valeur par défaut est `00:00:05`, soit 5 secondes. Le nom du connecteur de réception par défaut sur un serveur de transport Edge est `Default internal receive connector <server name>`.
 

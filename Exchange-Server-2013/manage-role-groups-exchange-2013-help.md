@@ -93,16 +93,22 @@ Si vous disposez d’un groupe de rôles qui contient les autorisations que vous
 
 1.  Stockez le groupe de rôles que vous souhaitez copier dans une variable à l’aide de la commande suivante.
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+    $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```
 
 2.  Créez le groupe de rôles et ajoutez aussi des membres à ce groupe, puis indiquez les noms des utilisateurs pouvant déléguer le nouveau groupe de rôles à d'autres utilisateurs. Pour ce faire, utilisez la syntaxe suivante.
     
-        New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -Members <member1, member2, member3...> -ManagedBy <user1, user2, user3...>
+    ```powershell
+    New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -Members <member1, member2, member3...> -ManagedBy <user1, user2, user3...>
+    ```
 
 Par exemple, les commandes suivantes permettent de copier le groupe de rôles Organization Management, et de nommer le nouveau groupe de rôles « Limited Organization Management ». Les membres Isabelle, Carter et Lukas sont ajoutés et le groupe peut être délégué par Jenny et Katie.
 
-    $RoleGroup = Get-RoleGroup "Organization Management"
-    New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members Isabelle, Carter, Lukas -ManagedBy Jenny, Katie
+```powershell
+$RoleGroup = Get-RoleGroup "Organization Management"
+New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members Isabelle, Carter, Lukas -ManagedBy Jenny, Katie
+```
 
 Une fois que le nouveau groupe de rôles est créé, vous pouvez ajouter ou supprimer des rôles, modifier la portée des affectations sur le rôle, et plus encore.
 
@@ -112,16 +118,22 @@ Pour des informations détaillées sur la syntaxe et les paramètres, consultez 
 
 1.  Stockez le groupe de rôles que vous souhaitez copier dans une variable à l’aide de la commande suivante.
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+    $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```
 
 2.  Créez le nouveau groupe de rôles avec une portée personnalisée à l’aide de la syntaxe suivante.
     
-        New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuraiton scope name>
+    ```powershell
+    New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuraiton scope name>
+    ```
 
 Par exemple, les commandes suivantes permettent de copier le groupe de rôles Organization Management et de créer un nouveau groupe appelé Vancouver Organization Management avec la portée du destinataire Vancouver Users et la portée de configuration Vancouver Servers.
 
-    $RoleGroup = Get-RoleGroup "Organization Management"
-    New-RoleGroup "Vancouver Organization Management" -Roles $RoleGroup.Roles -CustomRecipientWriteScope "Vancouver Users" -CustomConfigWriteScope "Vancouver Servers"
+```powershell
+$RoleGroup = Get-RoleGroup "Organization Management"
+New-RoleGroup "Vancouver Organization Management" -Roles $RoleGroup.Roles -CustomRecipientWriteScope "Vancouver Users" -CustomConfigWriteScope "Vancouver Servers"
+```
 
 Vous pouvez également ajouter des membres au groupe de rôles que vous créez à l’aide du paramètre *Members* comme indiqué dans la section Utiliser l’environnement de ligne de commande pour copier un groupe de rôles sans aucune portée plus haut dans cette rubrique. Pour plus d’informations sur les étendues de gestion, voir [Présentation des portées du rôle de gestion](understanding-management-role-scopes-exchange-2013-help.md).
 
@@ -133,16 +145,22 @@ Pour des informations détaillées sur la syntaxe et les paramètres, consultez 
 
 1.  Stockez le groupe de rôles que vous souhaitez copier dans une variable à l’aide de la commande suivante.
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+    $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```
 
 2.  Créez le nouveau groupe de rôles avec une portée personnalisée à l’aide de la syntaxe suivante.
     
-        New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -RecipientOrganizationalUnitScope <OU name>
+    ```powershell
+    New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -RecipientOrganizationalUnitScope <OU name>
+    ```
 
 Par exemple, les commandes suivantes permettent de copier le groupe de rôles Recipient Management et de créer un nouveau groupe appelé Toronto Recipient Management qui permet de gérer uniquement les utilisateurs de l’unité d’organisation Toronto Users.
 
-    $RoleGroup = Get-RoleGroup "Recipient Management"
-    New-RoleGroup "Toronto Recipient Management" -Roles $RoleGroup.Roles -RecipientOrganizationalUnitScope "contoso.com/Toronto Users"
+```powershell
+$RoleGroup = Get-RoleGroup "Recipient Management"
+New-RoleGroup "Toronto Recipient Management" -Roles $RoleGroup.Roles -RecipientOrganizationalUnitScope "contoso.com/Toronto Users"
+```
 
 Vous pouvez également ajouter des membres au groupe de rôles que vous créez à l’aide du paramètre *Members* comme indiqué dans la section Utiliser l’environnement de ligne de commande pour copier un groupe de rôles sans aucune portée plus haut dans cette rubrique. Pour plus d’informations sur les étendues de gestion, voir [Présentation des portées du rôle de gestion](understanding-management-role-scopes-exchange-2013-help.md).
 
@@ -214,11 +232,15 @@ Vous pouvez créer une attribution de rôle sans aucune portée entre un rôle e
 
 Utilisez la syntaxe suivante pour attribuer un rôle sans aucune portée à un groupe de rôles. Un nom d’attribution de rôle est créé automatiquement si vous n’en spécifiez pas un.
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name>
+```
 
 Cet exemple attribue le rôle de gestion Transport Rules au groupe de rôles Seattle Compliance.
 
-    New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335193\(v=exchg.150\)).
 
@@ -230,11 +252,15 @@ Pour plus d’informations sur les attributions de rôles, consultez la rubrique
 
 Utilisez la syntaxe suivante pour attribuer un rôle à un groupe de rôles avec une portée prédéfinie. Un nom d’attribution de rôle est créé automatiquement si vous n’en spécifiez pas un.
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -RecipientRelativeWriteScope < MyGAL | MyDistributionGroups | Organization | Self >
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -RecipientRelativeWriteScope < MyGAL | MyDistributionGroups | Organization | Self >
+```
 
 Cet exemple attribue le rôle Message Tracking au groupe de rôles Enterprise Support et applique la portée prédéfinie Organization.
 
-    New-ManagementRoleAssignment -SecurityGroup "Enterprise Support" -Role "Message Tracking" -RecipientRelativeWriteScope Organization
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Enterprise Support" -Role "Message Tracking" -RecipientRelativeWriteScope Organization
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335193\(v=exchg.150\)).
 
@@ -252,11 +278,15 @@ Pour plus d’informations sur les attributions de rôle et les étendues, voir 
 
 Utilisez la syntaxe suivante pour attribuer un rôle à un groupe de rôles avec une portée de destinataire filtrée. Un nom d’attribution de rôle est créé automatiquement si vous n’en spécifiez pas un.
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomRecipientWriteScope <role scope name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomRecipientWriteScope <role scope name>
+```
 
 Cet exemple attribue le rôle Message Tracking au groupe de rôles Seattle Recipient Admins et applique la portée Seattle Recipients.
 
-    New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Message Tracking" -CustomRecipientWriteScope "Seattle Recipients"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Message Tracking" -CustomRecipientWriteScope "Seattle Recipients"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335193\(v=exchg.150\)).
 
@@ -274,11 +304,15 @@ Pour plus d’informations sur les attributions de rôle et les étendues de ges
 
 Utilisez la syntaxe suivante pour attribuer un rôle à un groupe de rôles avec une étendue de configuration. Un nom d’attribution de rôle est créé automatiquement si vous n’en spécifiez pas un.
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <role scope name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <role scope name>
+```
 
 Cet exemple attribue le rôle Databases au groupe de rôles Seattle Server Admins et applique la portée Seattle Servers.
 
-    New-ManagementRoleAssignment -SecurityGroup "Seattle Server Admins" -Role "Databases" -CustomConfigWriteScope "Seattle Servers"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Seattle Server Admins" -Role "Databases" -CustomConfigWriteScope "Seattle Servers"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335193\(v=exchg.150\)).
 
@@ -294,11 +328,15 @@ Pour plus d’informations sur les attributions de rôle et les étendues de ges
 
 Utilisez la commande suivante pour attribuer un rôle à un groupe de rôles et réserver la portée d’écriture d’un rôle à une unité d’organisation spécifique. Un nom d’attribution de rôle est créé automatiquement si vous n’en spécifiez pas un.
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -RecipientOrganizationalUnitScope <OU>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -RecipientOrganizationalUnitScope <OU>
+```
 
 Cette exemple attribue le rôle Mail Recipients au groupe de rôles Seattle Recipient Admins et applique la portée de l’attribution à l’unité d’organisation Sales\\Users dans le domaine Contoso.com domain.
 
-    New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Mail Recipients" -RecipientOrganizationalUnitScope contoso.com/sales/users
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Mail Recipients" -RecipientOrganizationalUnitScope contoso.com/sales/users
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335193\(v=exchg.150\)).
 
@@ -343,11 +381,15 @@ Cette procédure utilise le traitement en pipeline. Pour plus d'informations sur
 
 Pour supprimer un rôle d’un groupe de rôles, utilisez la syntaxe suivante.
 
-    Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> -Delegating <$true | $false> | Remove-ManagementRoleAssignment
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> -Delegating <$true | $false> | Remove-ManagementRoleAssignment
+```
 
 Cet exemple permet de supprimer le rôle Groupes de distribution du groupe de rôles des administrateurs des destinataires Seattle, qui autorise les administrateurs à gérer les groupes de distribution. Étant donné que nous souhaitons supprimer l’attribution de rôle qui autorise la gestion des groupes de distribution, le paramètre *Delegating* est configuré sur `$False`, ce qui permet de renvoyer uniquement des attributions de rôles ordinaires.
 
-    Get-ManagementRoleAssignment -RoleAssignee "Seattle Recipient Administrators" -Role "Distribution Groups" -Delegating $false | Remove-ManagementRoleAssignment
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Seattle Recipient Administrators" -Role "Distribution Groups" -Delegating $false | Remove-ManagementRoleAssignment
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd351205\(v=exchg.150\)).
 
@@ -407,11 +449,15 @@ Cette procédure utilise les concepts de traitement en pipeline et le commutateu
 
 Pour définir l’étendue de toutes les attributions de rôle sur un groupe de rôles simultanément, utilisez la syntaxe suivante.
 
-    Get-ManagementRoleAssignment -RoleAssignee <name of role group> | Set-ManagementRoleAssignment -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuration scope name> -RecipientRelativeScopeWriteScope < MyDistributionGroups | Organization | Self> -ExclusiveRecipientWriteScope <exclusive recipient scope name> -ExclusiveConfigWriteScope <exclusive configuration scope name> -RecipientOrganizationalUnitScope <organizational unit>
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <name of role group> | Set-ManagementRoleAssignment -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuration scope name> -RecipientRelativeScopeWriteScope < MyDistributionGroups | Organization | Self> -ExclusiveRecipientWriteScope <exclusive recipient scope name> -ExclusiveConfigWriteScope <exclusive configuration scope name> -RecipientOrganizationalUnitScope <organizational unit>
+```
 
 Vous utilisez uniquement les paramètres dont vous avez besoin pour configurer l’étendue que vous souhaitez utiliser. Par exemple, si vous souhaitez remplacer l’étendue du destinataire pour l’ensemble des attributions de rôle sur le groupe de rôles Gestion des destinataires Ventes par le groupe Employés du service des ventes directes, utilisez la commande suivante.
 
-    Get-ManagementRoleAssignment -RoleAssignee "Sales Recipient Management" | Set-ManagementRoleAssignment -CustomRecipientWriteScope "Direct Sales Employees"
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Sales Recipient Management" | Set-ManagementRoleAssignment -CustomRecipientWriteScope "Direct Sales Employees"
+```
 
 > [!NOTE]
 > Le commutateur <em>WhatIf</em> vous permet de vérifier que seules les attributions de rôle devant être modifiées sont modifiées. Exécutez la commande précédente avec le commutateur <em>WhatIf</em> pour vérifier les résultats, puis supprimez le commutateur <em>WhatIf</em> pour appliquer les modifications.
@@ -437,17 +483,23 @@ Pour modifier l’étendue d’une attribution de rôle entre un groupe de rôle
 
 1.  Pour rechercher les noms de toutes les attributions de rôle sur un groupe de rôles, utilisez la commande suivante. En transmettant les attributions de rôle de gestion à la cmdlet **Format-List**, vous pouvez afficher le nom complet de l’attribution.
     
-        Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
+    ```powershell
+    Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
+    ```
 
 2.  Recherchez le nom de l’attribution de rôle que vous souhaitez modifier. Utilisez le nom de l'attribution de rôle dans l'étape suivante.
 
 3.  Pour définir l’étendue d’une attribution individuelle, utilisez la syntaxe suivante.
     
-        Set-ManagementRoleAssignment <role assignment name> -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuration scope name> -RecipientRelativeScopeWriteScope < MyDistributionGroups | Organization | Self> -ExclusiveRecipientWriteScope <exclusive recipient scope name> -ExclusiveConfigWriteScope <exclusive configuration scope name> -RecipientOrganizationalUnitScope <organizational unit>
+    ```powershell
+    Set-ManagementRoleAssignment <role assignment name> -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuration scope name> -RecipientRelativeScopeWriteScope < MyDistributionGroups | Organization | Self> -ExclusiveRecipientWriteScope <exclusive recipient scope name> -ExclusiveConfigWriteScope <exclusive configuration scope name> -RecipientOrganizationalUnitScope <organizational unit>
+    ```
 
 Vous utilisez uniquement les paramètres dont vous avez besoin pour configurer l’étendue que vous souhaitez utiliser. Par exemple, si vous souhaitez remplacer l’étendue du destinataire de l’attribution de rôle Destinataires des messages\_Destinataires des Ventes par Tous les employés du service des ventes, utilisez la commande suivante.
 
-    Set-ManagementRoleAssignment "Mail Recipients_Sales Recipient Management" -CustomRecipientWriteScope "All Sales Employees"
+```powershell
+Set-ManagementRoleAssignment "Mail Recipients_Sales Recipient Management" -CustomRecipientWriteScope "All Sales Employees"
+```
 
 Pour plus d’informations sur la modification des attributions des rôles de gestion, voir [Modifier une attribution de rôle](change-a-role-assignment-exchange-2013-help.md).
 
@@ -467,7 +519,9 @@ Pour vérifier que vous avez bien modifié l'étendue d'une attribution de rôle
     
     1.  Exécutez la commande suivante dans l’environnement de ligne de commande Exchange Management Shell.
         
-            Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-Table *WriteScope
+        ```powershell
+        Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-Table *WriteScope
+        ```
     
     2.  Vérifiez que l'étendue d'écriture des attributions de rôles a été remplacée par l'étendue que vous avez indiquée.
 
@@ -489,11 +543,15 @@ Pour modifier la liste des délégués sur un groupe de rôles, vous utilisez le
 
 1.  Stockez le groupe de rôles dans une variable à l’aide de la commande suivante.
     
-        $RoleGroup = Get-RoleGroup <role group name>
+    ```powershell
+    $RoleGroup = Get-RoleGroup <role group name>
+    ```
 
 2.  Ajoutez le délégué au groupe de rôles stocké dans la variable à l’aide de la commande suivante.
     
-        $RoleGroup.ManagedBy += (Get-User <user to add>).Identity
+    ```powershell
+    $RoleGroup.ManagedBy += (Get-User <user to add>).Identity
+    ```
     
     > [!NOTE]
     > Utilisez la cmdlet <strong>Get-Group</strong> si vous souhaitez ajouter un groupe de sécurité universel.
@@ -503,13 +561,17 @@ Pour modifier la liste des délégués sur un groupe de rôles, vous utilisez le
 
 4.  Appliquez la nouvelle liste de délégués au groupe de rôles réel à l’aide de la commande suivante.
     
-        Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```powershell
+    Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```
 
 Cet exemple illustre l’ajout de l’utilisateur David Strome comme délégué du groupe de rôles Gestion de l’organisation.
 
-    $RoleGroup = Get-RoleGroup "Organization Management"
-    $RoleGroup.ManagedBy += (Get-User "David Strome").Identity
-    Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
+```powershell
+$RoleGroup = Get-RoleGroup "Organization Management"
+$RoleGroup.ManagedBy += (Get-User "David Strome").Identity
+Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-RoleGroup](https://technet.microsoft.com/fr-fr/library/dd638182\(v=exchg.150\)).
 
@@ -519,11 +581,15 @@ Pour modifier la liste des délégués sur un groupe de rôles, vous utilisez le
 
 1.  Stockez le groupe de rôles dans une variable à l’aide de la commande suivante.
     
-        $RoleGroup = Get-RoleGroup <role group name>
+    ```powershell
+    $RoleGroup = Get-RoleGroup <role group name>
+    ```
 
 2.  Supprimez le délégué du groupe de rôles stocké dans la variable à l’aide de la commande suivante.
     
-        $RoleGroup.ManagedBy -= (Get-User <user to remove>).Identity
+    ```powershell
+    $RoleGroup.ManagedBy -= (Get-User <user to remove>).Identity
+    ```
     
     > [!NOTE]
     > Utilisez la cmdlet <strong>Get-Group</strong> si vous souhaitez supprimer un groupe de sécurité universelle.
@@ -533,13 +599,17 @@ Pour modifier la liste des délégués sur un groupe de rôles, vous utilisez le
 
 4.  Appliquez la nouvelle liste de délégués au groupe de rôles réel à l’aide de la commande suivante.
     
-        Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```powershell
+    Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```
 
 Cet exemple illustre la suppression de l’utilisateur David Strome comme délégué du groupe de rôles Gestion de l’organisation.
 
-    $RoleGroup = Get-RoleGroup "Organization Management"
-    $RoleGroup.ManagedBy -= (Get-User "David Strome").Identity
-    Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
+```powershell
+$RoleGroup = Get-RoleGroup "Organization Management"
+$RoleGroup.ManagedBy -= (Get-User "David Strome").Identity
+Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-RoleGroup](https://technet.microsoft.com/fr-fr/library/dd638182\(v=exchg.150\)).
 
@@ -549,7 +619,9 @@ Pour vérifier que vous avez bien modifié la liste des délégués d'un groupe 
 
 1.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-RoleGroup <role group name> | Format-List ManagedBy
+    ```powershell
+    Get-RoleGroup <role group name> | Format-List ManagedBy
+    ```
 
 2.  Vérifiez que les délégués répertoriés au niveau de la propriété *ManagedBy* incluent uniquement les délégués qui devraient être en mesure de gérer le groupe de rôles.
 

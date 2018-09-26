@@ -61,11 +61,15 @@ Pour plus d’informations sur POP3 et IMAP4, voir [POP3 et IMAP4 dans Exchange 
 
 Cet exemple montre comment activer l’accès POP3 pour l’utilisateur Patrick Colon.
 
-    Set-CASMailbox -Identity "John Smith" -POPEnabled $true
+```powershell
+Set-CASMailbox -Identity "John Smith" -POPEnabled $true
+```
 
 Cet exemple montre comment désactiver l’accès POP3 pour l’utilisateur Patrick Colon.
 
-    Set-CASMailbox -Identity "John Smith" -POPEnabled $false
+```powershell
+Set-CASMailbox -Identity "John Smith" -POPEnabled $false
+```
 
 ## Comment savoir si cela a fonctionné ?
 

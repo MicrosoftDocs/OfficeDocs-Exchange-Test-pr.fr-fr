@@ -45,11 +45,15 @@ Pour d'autres tâches de gestion relatives aux stratégies d'adresse de courriel
 
 Pour créer une stratégie d’adresse de messagerie à l’aide de filtres de destinataires, utilisez la syntaxe suivante.
 
-    New-EmailAddressPolicy -Name <String> -RecipientFilter <String>
+```powershell
+New-EmailAddressPolicy -Name <String> -RecipientFilter <String>
+```
 
 Cet exemple montre la création d'une stratégie d'adresse de messagerie qui s'applique à tous les cadres et pour laquelle la partie locale de l'adresse de messagerie est constituée des deux premières lettres de leur prénom et de leur nom en entier.
 
-    New-EmailAddressPolicy -Name 'Execs' -EnabledEmailAddressTemplates 'SMTP:%2g%s@contoso.com' -RecipientFilter {((RecipientType -eq 'UserMailbox') -and (Title -like 'executive'))}
+```powershell
+New-EmailAddressPolicy -Name 'Execs' -EnabledEmailAddressTemplates 'SMTP:%2g%s@contoso.com' -RecipientFilter {((RecipientType -eq 'UserMailbox') -and (Title -like 'executive'))}
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-EmailAddressPolicy](https://technet.microsoft.com/fr-fr/library/aa996800\(v=exchg.150\)).
 

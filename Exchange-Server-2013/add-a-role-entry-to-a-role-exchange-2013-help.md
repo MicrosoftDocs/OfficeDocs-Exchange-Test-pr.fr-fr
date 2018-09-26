@@ -51,11 +51,15 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux rôles ? 
 
 Vous pouvez ajouter une entrée de rôle à un rôle exactement telle qu’elle apparaît sur le rôle parent à l’aide de la syntaxe suivante.
 
-    Add-ManagementRoleEntry <child role name>\<cmdlet>
+```powershell
+Add-ManagementRoleEntry <child role name>\<cmdlet>
+```
 
 Cet exemple montre comment ajouter la cmdlet **Set-Mailbox** au rôle Administrateurs des destinataires.
 
-    Add-ManagementRoleEntry "Recipient Administrators\Set-Mailbox"
+```powershell
+Add-ManagementRoleEntry "Recipient Administrators\Set-Mailbox"
+```
 
 Cette commande vérifie le rôle parent et si l’entrée de rôle existe, elle l’ajoute au rôle enfant. Si l’entrée de rôle existe sur le rôle enfant, vous pouvez inclure le paramètre *Overwrite* pour écraser l’entrée de rôle existante.
 
@@ -65,11 +69,15 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Si vous souhaitez ajouter une entrée d’un rôle parent, mais souhaitez inclure uniquement des paramètres spécifiques dans l’entrée sur le rôle enfant, utilisez la syntaxe suivante.
 
-    Add-ManagementRoleEntry <child role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
+```powershell
+Add-ManagementRoleEntry <child role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
+```
 
 Cet exemple ajoute la cmdlet **Set-Mailbox** au rôle Support technique, mais inclut uniquement les paramètres *DisplayName* et *EmailAddresses* dans l’entrée sur le rôle enfant.
 
-    Add-ManagementRoleEntry "Help Desk\Set-Mailbox" -Parameters DisplayName, EmailAddresses
+```powershell
+Add-ManagementRoleEntry "Help Desk\Set-Mailbox" -Parameters DisplayName, EmailAddresses
+```
 
 Cette commande vérifie le rôle parent et si l’entrée de rôle existe, elle l’ajoute au rôle enfant. Si l’entrée de rôle existe sur le rôle enfant, vous pouvez inclure le paramètre *Overwrite* pour écraser l’entrée de rôle existante.
 
@@ -81,11 +89,15 @@ Si vous voulez ajouter plusieurs entrées de rôle à un rôle, vous devez récu
 
 Pour ajouter plusieurs entrées d’un rôle parent à un rôle enfant, utilisez la syntaxe suivante.
 
-    Get-ManagementRoleEntry <parent role name>\*<partial cmdlet name>* | Add-ManagementRoleEntry -Role <child role name>
+```powershell
+Get-ManagementRoleEntry <parent role name>\*<partial cmdlet name>* | Add-ManagementRoleEntry -Role <child role name>
+```
 
 Cet exemple montre comment ajouter toutes les entrées de rôle qui contiennent la chaîne `Mailbox` dans le nom de la cmdlet sur le rôle parent Destinataires de message au rôle enfant Destinataires de message de Seattle.
 
-    Get-ManagementRoleEntry "Mail Recipients\*Mailbox*" | Add-ManagementRoleEntry -Role "Seattle Mail Recipients"
+```powershell
+Get-ManagementRoleEntry "Mail Recipients\*Mailbox*" | Add-ManagementRoleEntry -Role "Seattle Mail Recipients"
+```
 
 Si les entrées de rôle existent déjà sur le rôle enfant, vous pouvez inclure le paramètre *Overwrite* pour écraser les entrées de rôle existantes.
 

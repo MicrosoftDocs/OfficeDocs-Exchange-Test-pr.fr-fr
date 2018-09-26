@@ -45,15 +45,21 @@ Le suivi du pipeline capture des copies de messages électroniques pendant qu'il
 
 La syntaxe suivante permet de configurer l'adresse d'expéditeur pour le suivi du pipeline.
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingSenderAddress <SMTPAddress | "<>">
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingSenderAddress <SMTPAddress | "<>">
+```
 
 Cet exemple permet de configurer le suivi du pipeline de manière à capturer des instantanés de tous les messages que l'expéditeur chris@contoso.com a envoyés dans le service de transport sur le serveur de boîtes aux lettres intitulé Mailbox01.
 
-    Set-TransportService Mailbox01 -PipelineTracingSenderAddress chris@contoso.com
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingSenderAddress chris@contoso.com
+```
 
 Cet exemple permet de configurer le suivi du pipeline pour capturer des instantanés de tous les messages générés par le système que le service de transport a reçus sur le serveur de boîtes aux lettres Mailbox02.
 
-    Set-TransportService Mailbox02 -PipelineTracingSenderAddress "<>"
+```powershell
+Set-TransportService Mailbox02 -PipelineTracingSenderAddress "<>"
+```
 
 > [!CAUTION]
 > La configuration du suivi du pipeline de manière à capturer tous les messages que le serveur a générés dans un service de transport peut augmenter la charge sur le serveur et rapidement consommer l'espace disque disponible. Surveillez toujours l'espace disque disponible quand le suivi du pipeline est activé.
@@ -65,11 +71,15 @@ Le dossier de suivi du pipeline par défaut n'existe pas tant que vous n'avez pa
 
 La syntaxe suivante permet de configurer le dossier de suivi du pipeline.
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingPath <LocalFilePath>
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingPath <LocalFilePath>
+```
 
 Cet exemple permet de définir le dossier de suivi du pipeline pour le service de transport du serveur de boîtes aux lettres Mailbox01 sur D:\\Hub\\Pipeline Tracing.
 
-    Set-TransportService Mailbox01 -PipelineTracingPath "D:\Hub\Pipeline Tracing"
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingPath "D:\Hub\Pipeline Tracing"
+```
 
 ## Étape 3 : utiliser l'environnement de ligne de commande Exchange Management Shell pour activer le suivi du pipeline
 
@@ -77,11 +87,15 @@ Par défaut, le suivi du pipeline est désactivé sur tous les serveurs Exchange
 
 La syntaxe suivante permet d'activer le suivi du pipeline.
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $true
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $true
+```
 
 Cet exemple permet d'activer le suivi du pipeline dans le service de transport sur le serveur de boîtes aux lettres Mailbox01.
 
-    Set-TransportService Mailbox01 -PipelineTracingEnabled $true
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingEnabled $true
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -89,7 +103,9 @@ Pour vérifier que vous avez correctement configuré le suivi du pipeline, proc�
 
 1.  Exécutez la commande suivante :
     
-        <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracing*
+    ```powershell
+    <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracing*
+    ```
 
 2.  Vérifiez que les valeurs affichées sont les valeurs que vous avez configurées.
 
@@ -101,11 +117,15 @@ En raison de l'espace disque et des problèmes de sécurité liés au suivi du p
 
 La syntaxe suivante permet de désactiver le suivi du pipeline.
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $false
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $false
+```
 
 Cet exemple permet de désactiver le suivi du pipeline dans le service de transport sur le serveur de boîtes aux lettres Mailbox01.
 
-    Set-TransportService Mailbox01 -PipelineTracingEnabled $false
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingEnabled $false
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -113,7 +133,9 @@ Pour vérifier que vous avez correctement désactivé le suivi du pipeline, proc
 
 1.  Exécutez la commande suivante :
     
-        <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracingEnabled
+    ```powershell
+    <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracingEnabled
+    ```
 
 2.  Vérifiez que le paramètre *PipelineTracingEnabled* a la valeur $false.
 

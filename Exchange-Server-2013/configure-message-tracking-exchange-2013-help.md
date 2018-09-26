@@ -55,7 +55,9 @@ Le suivi des messages enregistre l'activité de transport SMTP de tous les messa
 
 Pour configurer le suivi des messages, exécutez la commande suivante :
 
-    Set-TransportService <ServerIdentity> -MessageTrackingLogEnabled <$true | $false> -MessageTrackingLogMaxAge <dd.hh:mm:ss> -MessageTrackingLogMaxDirectorySize <Size> -MessageTrackingLogMaxFileSize <Size> -MessageTrackingLogPath <LocalFilePath> -MessageTrackingLogSubjectLoggingEnabled <$true|$false>
+```powershell
+Set-TransportService <ServerIdentity> -MessageTrackingLogEnabled <$true | $false> -MessageTrackingLogMaxAge <dd.hh:mm:ss> -MessageTrackingLogMaxDirectorySize <Size> -MessageTrackingLogMaxFileSize <Size> -MessageTrackingLogPath <LocalFilePath> -MessageTrackingLogSubjectLoggingEnabled <$true|$false>
+```
 
 Cet exemple définit les paramètres de journal de suivi des messages suivants sur le serveur de boîtes aux lettres intitulé Mailbox01 :
 
@@ -69,7 +71,9 @@ Cet exemple définit les paramètres de journal de suivi des messages suivants s
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -MessageTrackingLogPath "D:\Hub Message Tracking Log" -MessageTrackingLogMaxFileSize 20MB -MessageTrackingLogMaxDirectorySize 1.5GB -MessageTrackingLogMaxAge 45.00:00:00
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogPath "D:\Hub Message Tracking Log" -MessageTrackingLogMaxFileSize 20MB -MessageTrackingLogMaxDirectorySize 1.5GB -MessageTrackingLogMaxAge 45.00:00:00
+```
 
 > [!NOTE]
 > <ul>
@@ -79,11 +83,15 @@ Cet exemple définit les paramètres de journal de suivi des messages suivants s
 
 Cet exemple désactive la journalisation des objets des messages dans le journal de suivi des messages sur le serveur de boîtes aux lettres intitulé Mailbox01 :
 
-    Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
+```
 
 Cet exemple désactive le suivi des messages sur le serveur de boîtes aux lettres intitulé Mailbox01 :
 
-    Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -91,7 +99,9 @@ Pour vérifier que vous avez correctement configuré le suivi des messages, proc
 
 1.  Dans l'environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante :
     
-        Get-TransportService <ServerIdentity> | Format-List MessageTrackingLog*
+    ```powershell
+    Get-TransportService <ServerIdentity> | Format-List MessageTrackingLog*
+    ```
 
 2.  Vérifiez que les valeurs affichées sont les valeurs que vous avez configurées.
 

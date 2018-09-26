@@ -93,23 +93,31 @@ L'emplacement de la base de données de files d'attente et de ses journaux de tr
 
 2.  Dans une fenêtre d'invite de commandes, ouvrez le fichier EdgeTransport.exe.config dans le Bloc-notes en exécutant la commande suivante :
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 3.  Modifiez les clés suivantes dans la section `<appSettings>`.
     
-        <add key="QueueDatabasePath" value="<LocalPath>" />
-        <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
+    ```powershell
+    <add key="QueueDatabasePath" value="<LocalPath>" />
+    <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
+    ```
     
     Par exemple, pour créer une nouvelle base de données de files d'attente dans D:\\Queue\\QueueDB et de nouveaux journaux de transactions dans D:\\Queue\\QueueLogs, utilisez les valeurs suivantes :
     
-        <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
-        <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
+    ```powershell
+    <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
+    <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
+    ```
 
 4.  Quand vous avez terminé, enregistrez et fermez le fichier EdgeTransport.exe.config.
 
 5.  Redémarrez le service de transport Microsoft Exchange en exécutant la commande suivante :
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -137,23 +145,31 @@ Utilisez la procédure suivante pour déplacer la base de données de files d'at
 
 2.  Dans une fenêtre d'invite de commandes, ouvrez le fichier EdgeTransport.exe.config dans le Bloc-notes en exécutant la commande suivante :
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 3.  Modifiez les clés suivantes dans la section `<appSettings>` :
     
-        <add key="QueueDatabasePath" value="<LocalPath>" />
-        <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
+    ```powershell
+    <add key="QueueDatabasePath" value="<LocalPath>" />
+    <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
+    ```
     
     Par exemple, pour modifier l'emplacement de la base de données de files d'attente pour D:\\Queue\\QueueDB et celui des journaux de transaction pour D:\\Queue\\QueueLogs, utilisez les valeurs suivantes :
     
-        <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
-        <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
+    ```powershell
+    <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
+    <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
+    ```
 
 4.  Quand vous avez terminé, enregistrez et fermez le fichier EdgeTransport.exe.config.
 
 5.  Arrêtez le service de transport Microsoft Exchange en exécutant la commande suivante :
     
-        net stop MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport
+    ```
 
 6.  Déplacez les fichiers de base de données existants Mail.que et Trn.chk de l'emplacement d'origine vers le nouvel emplacement.
 
@@ -161,7 +177,9 @@ Utilisez la procédure suivante pour déplacer la base de données de files d'at
 
 8.  Démarrez le service de transport Microsoft Exchange en exécutant la commande suivante :
     
-        net start MSExchangeTransport
+    ```powershell
+    net start MSExchangeTransport
+    ```
 
 ## Comment savoir si cela a fonctionné ?
 

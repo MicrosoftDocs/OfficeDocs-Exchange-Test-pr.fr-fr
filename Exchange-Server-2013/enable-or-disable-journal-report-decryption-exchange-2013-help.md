@@ -47,7 +47,9 @@ Pour les autres tâches de gestion liées à la Gestion des droits relatifs à l
 
 Cet exemple montre comment activer le déchiffrement du rapport du journal pour l’organisation Exchange.
 
-    Set-IRMConfiguration -JournalReportDecryptionEnabled $true
+```powershell
+Set-IRMConfiguration -JournalReportDecryptionEnabled $true
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-IRMConfiguration](https://technet.microsoft.com/fr-fr/library/dd979792\(v=exchg.150\)).
 
@@ -55,7 +57,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Cet exemple montre comment désactiver le déchiffrement du rapport du journal pour l’organisation Exchange.
 
-    Set-IRMConfiguration -JournalReportDecryptionEnabled $false
+```powershell
+Set-IRMConfiguration -JournalReportDecryptionEnabled $false
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-IRMConfiguration](https://technet.microsoft.com/fr-fr/library/dd979792\(v=exchg.150\)).
 

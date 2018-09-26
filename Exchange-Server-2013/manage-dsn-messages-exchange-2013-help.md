@@ -44,33 +44,47 @@ Microsoft Exchange Server 2013 utilise des notifications d'état de remise (DSN
 
 Pour afficher un résumé de tous les messages DSN intégrés inclus avec Exchange 2013, exécutez la commande suivante :
 
-    Get-SystemMessage -Original
+```powershell
+Get-SystemMessage -Original
+```
 
 Pour afficher une liste récapitulative de tous les messages DSN personnalisés dans votre organisation, exécutez la commande suivante :
 
-    Get-SystemMessage
+```powershell
+Get-SystemMessage
+```
 
 Pour afficher des informations détaillées pour le message DSN personnalisé correspondant au code DSN 5.1.2 envoyé aux expéditeurs internes en anglais, exécutez la commande suivante :
 
-    Get-SystemMessage En\Internal\5.1.2 | Format-List
+```powershell
+Get-SystemMessage En\Internal\5.1.2 | Format-List
+```
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour créer un message DSN personnalisé
 
 Exécutez la commande suivante :
 
-    New-SystemMessage -Internal <$true | $false> -Language <Locale> -DSNCode <x.y.z> -Text "<DSN text>"
+```powershell
+New-SystemMessage -Internal <$true | $false> -Language <Locale> -DSNCode <x.y.z> -Text "<DSN text>"
+```
 
 Cet exemple montre comment créer un message DSN personnalisé en texte brut pour le code DSN 5.1.2 qui est envoyé aux expéditeurs internes en anglais.
 
-    New-SystemMessage -Internal $true -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
+```powershell
+New-SystemMessage -Internal $true -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
+```
 
 Cet exemple montre comment créer un message DSN personnalisé en texte brut correspondant au code DSN 5.1.2 qui est envoyé aux expéditeurs externes en anglais.
 
-    New-SystemMessage -Internal $false -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact your System Administrator for more information."
+```powershell
+New-SystemMessage -Internal $false -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact your System Administrator for more information."
+```
 
 Cet exemple montre comment créer un message DSN personnalisé au format HTML pour le code DSN 5.1.2 qui est envoyé aux expéditeurs internes en anglais.
 
-    New-SystemMessage -DSNCode 5.1.2 -Internal $true -Language En -Text 'You tried to send a message to a <B>disabled</B> mailbox. Please visit <A HREF="http://it.contoso.com">Internal Support</A> or contact &quot;InfoSec&quot; for more information.'
+```powershell
+New-SystemMessage -DSNCode 5.1.2 -Internal $true -Language En -Text 'You tried to send a message to a <B>disabled</B> mailbox. Please visit <A HREF="http://it.contoso.com">Internal Support</A> or contact &quot;InfoSec&quot; for more information.'
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -78,7 +92,9 @@ Pour vérifier que vous avez correctement créé un message DSN personnalisé, p
 
 1.  Exécutez la commande suivante :
     
-        Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
+    ```powershell
+    Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
+    ```
 
 2.  Vérifiez que les valeurs affichées sont celles que vous avez configurées.
 
@@ -88,11 +104,15 @@ Pour vérifier que vous avez correctement créé un message DSN personnalisé, p
 
 Pour modifier le texte d'un message DSN personnalisé, utilisez la commande suivante :
 
-    Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> -Text "<DSN text>"
+```powershell
+Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> -Text "<DSN text>"
+```
 
 Cet exemple montre comment modifier le texte affecté au message DSN personnalisé correspondant au code DSN 5.1.2 qui est envoyé aux expéditeurs internes en anglais.
 
-    Set-SystemMessage En\Internal\5.1.2 -Text "The mailbox you tried to send an e-mail message to is disabled and is no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
+```powershell
+Set-SystemMessage En\Internal\5.1.2 -Text "The mailbox you tried to send an e-mail message to is disabled and is no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -100,7 +120,9 @@ Pour vérifier que vous avez modifié le texte d'un message DSN personnalisé, p
 
 1.  Exécutez la commande suivante : `Get-SystemMessage`.
     
-        Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> | Format-List -Text
+    ```powershell
+    Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> | Format-List -Text
+    ```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 
@@ -108,11 +130,15 @@ Pour vérifier que vous avez modifié le texte d'un message DSN personnalisé, p
 
 Exécutez la commande suivante :
 
-    Remove-SystemMessage <Local>\<Internal | External>\<DSNcode>
+```powershell
+Remove-SystemMessage <Local>\<Internal | External>\<DSNcode>
+```
 
 Cet exemple montre comment supprimer le message DSN personnalisé correspondant au code DSN 5.1.2 qui est envoyé aux expéditeurs internes en anglais.
 
-    Remove-SystemMessage En\Internal\5.1.2
+```powershell
+Remove-SystemMessage En\Internal\5.1.2
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -134,11 +160,15 @@ Pour attribuer une boîte aux lettres au destinataire Exchange, procédez comme 
 
 2.  Exécutez la commande suivante :
     
-        Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient <MailboxIdentity>
+    ```powershell
+    Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient <MailboxIdentity>
+    ```
     
     Par exemple, pour attribuer la boîte aux lettres existante nommée « Boîte aux lettres système de Contoso » au destinataire Exchange, exécutez la commande suivante :
     
-        Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient "Contoso System Mailbox"
+    ```powershell
+    Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient "Contoso System Mailbox"
+    ```
 
 ## Étape 2 : spécifier les codes DSN à surveiller
 
@@ -152,19 +182,27 @@ Pour attribuer une boîte aux lettres au destinataire Exchange, procédez comme 
 
 Pour remplacer les valeurs existantes, exécutez la commande suivante :
 
-    Set-TransportConfig -GenerateCopyOfDSNFor <x.y.z>,<x.y.z>...
+```powershell
+Set-TransportConfig -GenerateCopyOfDSNFor <x.y.z>,<x.y.z>...
+```
 
 Cet exemple montre comment configurer l'organisation Exchange de sorte que tous les messages DSN associés aux codes DSN 5.7.1, 5.7.2 et 5.7.3 sont transférés au destinataire Exchange.
 
-    Set-TransportConfig -GenerateCopyOfDSNFor 5.7.1,5.7.2,5.7.3
+```powershell
+Set-TransportConfig -GenerateCopyOfDSNFor 5.7.1,5.7.2,5.7.3
+```
 
 Pour ajouter ou supprimer des entrées sans modifier une valeur existante, exécutez la commande suivante :
 
-    Set-TransportConfig -GenerateCopyOfDSNFor @{Add="<x.y.z>","<x.y.z>"...; Remove="<x.y.z>","<x.y.z>"...}
+```powershell
+Set-TransportConfig -GenerateCopyOfDSNFor @{Add="<x.y.z>","<x.y.z>"...; Remove="<x.y.z>","<x.y.z>"...}
+```
 
 Cet exemple montre comment ajouter le code DSN 5.7.5 et supprime le code DSN 5.7.1 de la liste existante des messages DSN transmis au destinataire Exchange.
 
-    Set-TransportConfig -GenerateCopyOfDSNFor @{Add="5.7.5"; Remove="5.7.1"}
+```powershell
+Set-TransportConfig -GenerateCopyOfDSNFor @{Add="5.7.5"; Remove="5.7.1"}
+```
 
 ## Comment savoir si cela a fonctionné ?
 

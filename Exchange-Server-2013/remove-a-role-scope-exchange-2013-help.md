@@ -39,9 +39,13 @@ Les étendues des rôles de gestion déterminent les objets à la disposition d'
 
 Pour supprimer une étendue, utilisez la syntaxe suivante.
 
-    Remove-ManagementScope <scope name>
+```powershell
+Remove-ManagementScope <scope name>
+```
 
 Par exemple, pour supprimer l'étendue « Dublin Servers », utilisez la commande suivante.
 
-    Remove-ManagementScope "Dublin Servers"
+```powershell
+Remove-ManagementScope "Dublin Servers"
+```
 

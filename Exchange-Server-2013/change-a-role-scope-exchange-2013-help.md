@@ -49,11 +49,15 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux étendues 
 
 Pour modifier le nom d’une étendue, utilisez la syntaxe suivante.
 
-    Set-ManagementScope <current scope name> -Name <new scope name>
+```powershell
+Set-ManagementScope <current scope name> -Name <new scope name>
+```
 
 Cet exemple indique comment changer l’étendue de serveurs Seattle en serveurs Seattle Exchange.
 
-    Set-ManagementScope "Seattle Servers" -Name "Seattle Exchange Servers"
+```powershell
+Set-ManagementScope "Seattle Servers" -Name "Seattle Exchange Servers"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ManagementScope](https://technet.microsoft.com/fr-fr/library/dd297996\(v=exchg.150\)).
 
@@ -61,11 +65,15 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour modifier le filtre de destinataire sur une étendue, utilisez la syntaxe suivante.
 
-    Set-ManagementScope <scope name> -RecipientRestrictionFilter { <new recipient filter> }
+```powershell
+Set-ManagementScope <scope name> -RecipientRestrictionFilter { <new recipient filter> }
+```
 
 Cet exemple indique comment modifier le filtre de destinataire pour faire correspondre tous les objets destinataire où la propriété **Company** est définie sur contoso.
 
-    Set-ManagementScope "Company Scope" -RecipientRestrictionFilter { Company -eq 'contoso' }
+```powershell
+Set-ManagementScope "Company Scope" -RecipientRestrictionFilter { Company -eq 'contoso' }
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ManagementScope](https://technet.microsoft.com/fr-fr/library/dd297996\(v=exchg.150\)).
 
@@ -75,11 +83,15 @@ Pour en savoir plus sur les filtres de destinataire et afficher la liste des pro
 
 Pour modifier la racine de l’unité d’organisation sur une étendue, utilisez la syntaxe suivante.
 
-    Set-ManagementScope <scope name> -RecipientRoot <OU>
+```powershell
+Set-ManagementScope <scope name> -RecipientRoot <OU>
+```
 
 Cet exemple modifie la racine de l’unité d’organisation pour les utilisateurs du service des ventes en Amérique du Nord sous le domaine contoso.com.
 
-    Set-ManagementScope "Sales Users" -RecipientRoot "contoso.com/North America/Sales"
+```powershell
+Set-ManagementScope "Sales Users" -RecipientRoot "contoso.com/North America/Sales"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ManagementScope](https://technet.microsoft.com/fr-fr/library/dd297996\(v=exchg.150\)).
 
@@ -87,11 +99,15 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour modifier le filtre de serveur sur une étendue, utilisez la syntaxe suivante.
 
-    Set-ManagementScope <scope name> -ServerRestrictionFilter { <new server filter> }
+```powershell
+Set-ManagementScope <scope name> -ServerRestrictionFilter { <new server filter> }
+```
 
 Dans cet exemple, nous modifions le filtre de serveur afin de correspondre à tous les objets serveur dans lesquels la propriété **ServerSite** est définie à 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com'.
 
-    Set-ManagementScope "Company Scope" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
+```powershell
+Set-ManagementScope "Company Scope" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ManagementScope](https://technet.microsoft.com/fr-fr/library/dd297996\(v=exchg.150\)).
 
@@ -113,11 +129,15 @@ Vous ne pouvez pas modifier la liste des serveurs sur une étendue. Si vous avez
 
 Pour modifier le filtre de base de données sur une étendue, utilisez la syntaxe suivante.
 
-    Set-ManagementScope <scope name> -DatabaseRestrictionFilter { <new database filter> }
+```powershell
+Set-ManagementScope <scope name> -DatabaseRestrictionFilter { <new database filter> }
+```
 
 Cet exemple indique comment modifier le filtre de base de données pour faire correspondre tous les objets base de données où la propriété **Name** contient la chaîne « Executive ».
 
-    Set-ManagementScope "Database Executive Scope" -DatabaseRestrictionFilter { Name -Like "*Executive*" }
+```powershell
+Set-ManagementScope "Database Executive Scope" -DatabaseRestrictionFilter { Name -Like "*Executive*" }
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ManagementScope](https://technet.microsoft.com/fr-fr/library/dd297996\(v=exchg.150\)).
 

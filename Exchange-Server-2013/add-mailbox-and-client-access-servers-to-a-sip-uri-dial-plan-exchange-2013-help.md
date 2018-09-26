@@ -55,7 +55,9 @@ Pour les autres tâches de gestion relatives aux plans de numérotation de messa
 
 Cet exemple ajoute le serveur de boîtes aux lettres `MyMailboxServer` à un plan de numérotation URI SIP nommé `MySIPDialPlan` et l'empêche d'accepter de nouveaux appels. Il montre également comment définir le mode de démarrage sur Double pour que le serveur de messagerie unifiée accepte les demandes TCP et TLS.
 
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan -Status Disabled -UMStartupMode Dual
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan -Status Disabled -UMStartupMode Dual
+```
 
 Cet exemple ajoute le serveur de boîtes aux lettres `MyMailboxServer` à deux plans de numérotation SIP nommés `MySIPDialPlan` et `MySIPDialPlan2` et définit la configuration suivante :
 
@@ -67,7 +69,9 @@ Cet exemple ajoute le serveur de boîtes aux lettres `MyMailboxServer` à deux p
 
 <!-- end list -->
 
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -MaxCallsAllowed 50 -SipAccessService northamerica.lyncpoolna.contoso.com
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -MaxCallsAllowed 50 -SipAccessService northamerica.lyncpoolna.contoso.com
+```
 
 ## Utiliser le Centre d'administration Exchange (CAE) pour ajouter un serveur d'accès au client à un plan de numérotation URI SIP
 
@@ -85,9 +89,13 @@ Cet exemple ajoute le serveur de boîtes aux lettres `MyMailboxServer` à deux p
 
 Cet exemple ajoute le serveur d'accès au client `MyClientAccessServer` à un plan de numérotation URI SIP nommé `MySIPDialPlan`. Il montre également comment définir le mode de démarrage sur Double pour que le serveur d'accès au client accepte les demandes TCP et TLS.
 
-    Set-UMCallRouterSettings -DialPlans MySIPDialPlan -Server MyClientAccessServer -UMStartupMode Dual
+```powershell
+Set-UMCallRouterSettings -DialPlans MySIPDialPlan -Server MyClientAccessServer -UMStartupMode Dual
+```
 
 Cet exemple ajoute le serveur d'accès au client `MyClientAccessServer` à deux plans de numérotation SIP nommés `MySIPDialPlan` et `MySIPDialPlan2`, et permet au serveur d'utiliser les adresses IPv4 et IPv6.
 
-    Set-UMCallRouterSettings -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -Server MyClientAccessServer
+```powershell
+Set-UMCallRouterSettings -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -Server MyClientAccessServer
+```
 

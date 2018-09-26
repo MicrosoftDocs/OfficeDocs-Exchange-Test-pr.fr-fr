@@ -41,7 +41,9 @@ Pour personnaliser les paramètres de limitation qui s’appliquent à tous les 
 
 Cet exemple illustre la création d’une stratégie de limitation applicable à tous les utilisateurs de votre organisation. Les paramètres que vous omettez héritent des valeurs de la stratégie de limitation par défaut (GlobalThrottlingPolicy).
 
-    New-ThrottlingPolicy -Name AllUsersEWSPolicy EwsMaxConcurrency 4 -ThrottlingPolicyScope Organization
+```powershell
+New-ThrottlingPolicy -Name AllUsersEWSPolicy EwsMaxConcurrency 4 -ThrottlingPolicyScope Organization
+```
 
 Pour plus d'informations sur la syntaxe et les paramètres, voir [New-ThrottlingPolicy](https://technet.microsoft.com/fr-fr/library/dd351045\(v=exchg.150\)).
 
@@ -51,13 +53,17 @@ Pour vérifier que la stratégie de limitation Organisation a été correctement
 
 1.  Exécutez la commande suivante.
     
-        Get-ThrottlingPolicy | Format-List
+    ```powershell
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 2.  Vérifiez que la stratégie de limitation Organisation que vous venez de créer est répertoriée dans la colonne qui affiche l’objet GlobalThrottlingPolicy.
 
 3.  Exécutez la commande suivante.
     
-        Get-ThrottlingPolicy | Format-List
+    ```powershell
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 4.  Vérifiez que les propriétés associées à la nouvelle stratégie Organisation correspondent à la valeur ou aux valeurs que vous avez configurées.
 

@@ -47,7 +47,9 @@ Pour plus d'informations sur les boîtes aux lettres déconnectées et sur l'ex�
 
   - Pour vérifier que la boîte aux lettres supprimée à laquelle vous voulez connecter un compte utilisateur existe dans la base de données des boîtes aux lettres et qu’elle n’est pas une boîte aux lettres supprimée (récupérable), exécutez la commande suivante.
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    ```
     
     La boîte aux lettres supprimée doit exister dans la base de données des boîtes aux lettres et la valeur de la propriété *DisconnectReason* doit être `Disabled`. Si la boîte aux lettres a été purgée de la base de données, la commande ne renvoie aucun résultat.
 
@@ -95,7 +97,9 @@ Dans l’environnement de ligne de commande Exchange Management Shell, utilisez 
 
 Cet exemple montre comment connecter une boîte aux lettres utilisateur. Le paramètre *Identity* indique le nom complet de la boîte aux lettres supprimée qui est conservée dans la base de données de boîtes aux lettres MBXDB01. Le paramètre *User* indique le compte d'utilisateur Active Directory auquel connecter la boîte aux lettres.
 
-    Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
+```powershell
+Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
+```
 
 > [!NOTE]
 > Vous pouvez également utiliser les valeurs des propriétés <code>LegacyDN</code> ou <code>MailboxGuid</code> pour identifier la boîte aux lettres supprimée.
@@ -103,19 +107,27 @@ Cet exemple montre comment connecter une boîte aux lettres utilisateur. Le para
 
 Cet exemple montre comment connecter une boîte aux lettres liée. Le paramètre *Identity* indique la boîte aux lettres supprimée dans la base de données de boîtes aux lettres MBXDB02. Le paramètre *LinkedMasterAccount* indique le compte d'utilisateur Active Directory dans la forêt de comptes, auquel vous voulez connecter la boîte aux lettres. Le paramètre *LinkedDomainController* indique un contrôleur de domaine dans la forêt de comptes.
 
-    Connect-Mailbox -Identity "Temp User" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount danpark@fabrikam.com -Alias dpark
+```powershell
+Connect-Mailbox -Identity "Temp User" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount danpark@fabrikam.com -Alias dpark
+```
 
 Cet exemple montre comment connecter une boîte aux lettres de salle.
 
-    Connect-Mailbox -Identity "rm2121" -Database "MBXResourceDB" -User "Conference Room 2121" -Alias ConfRm2121 -Room
+```powershell
+Connect-Mailbox -Identity "rm2121" -Database "MBXResourceDB" -User "Conference Room 2121" -Alias ConfRm2121 -Room
+```
 
 Cet exemple montre comment connecter une boîte aux lettres de ressource.
 
-    Connect-Mailbox -Identity "MotorPool01" -Database "MBXResourceDB" -User "Van01 (12 passengers)" -Alias van01 -Equipment
+```powershell
+Connect-Mailbox -Identity "MotorPool01" -Database "MBXResourceDB" -User "Van01 (12 passengers)" -Alias van01 -Equipment
+```
 
 Cet exemple montre comment connecter une boîte aux lettres partagée.
 
-    Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printer Support" -Alias corpprint -Shared
+```powershell
+Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printer Support" -Alias corpprint -Shared
+```
 
 > [!NOTE]
 > Vous pouvez également utiliser les valeurs <code>LegacyDN</code> ou <code>MailboxGuid</code> pour identifier la boîte aux lettres supprimée.
@@ -133,7 +145,9 @@ Pour vérifier qu’une boîte aux lettres supprimée a bien été connectée à
 
   - Dans l'environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-User <identity>
+    ```powershell
+    Get-User <identity>
+    ```
     
     La valeur **UserMailbox** de la propriété *RecipientType* indique que le compte d'utilisateur et la boîte aux lettres sont connectés. Vous pouvez également exécuter la commande **Get-Mailbox \<identité\>** pour vérifier que la boîte aux lettres a été connectée.
 
@@ -151,15 +165,21 @@ Après qu'une demande de restauration de boîte aux lettres a été correctement
 
 Pour créer une demande de restauration de boîte aux lettres, vous devez utiliser le nom complet, le nom unique hérité ou le GUID de la boîte aux lettres supprimée. Utilisez la cmdlet **Get-MailboxStatistics** pour afficher les valeurs des propriétés `DisplayName`, `MailboxGuid` et `LegacyDN` pour la boîte aux lettres supprimée à restaurer. Par exemple, exécutez la commande suivante pour renvoyer ces informations pour toutes les boîtes aux lettres désactivées et supprimées au sein de votre organisation.
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "Disabled"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "Disabled"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```
 
 Cet exemple montre comment restaurer dans la boîte aux lettres cible de Debra Garcia, la boîte aux lettres supprimée identifiée par le paramètre *SourceStoreMailbox* , qui se trouve dans la base de données de boîtes aux lettres MBXDB01. Le paramètre *AllowLegacyDNMismatch* est utilisé de façon à ce que la boîte aux lettres source puisse être restaurée dans une autre boîte aux lettres dont la valeur de nom unique hérité diffère.
 
-    New-MailboxRestoreRequest -SourceStoreMailbox e4890ee7-79a2-4f94-9569-91e61eac372b -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```powershell
+New-MailboxRestoreRequest -SourceStoreMailbox e4890ee7-79a2-4f94-9569-91e61eac372b -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```
 
 Dans cet exemple, nous restaurons la boîte aux lettres d’archive supprimée de Pilar Pinilla dans sa boîte aux lettres d’archive. Le paramètre *AllowLegacyDNMismatch* n’est pas nécessaire, car une boîte aux lettres principale et sa boîte aux lettres d’archivage correspondante comportent le même nom unique hérité.
 
-    New-MailboxRestoreRequest -SourceStoreMailbox "Personal Archive - Pilar Pinilla" -SourceDatabase "MDB01" -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```powershell
+New-MailboxRestoreRequest -SourceStoreMailbox "Personal Archive - Pilar Pinilla" -SourceDatabase "MDB01" -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-MailboxRestoreRequest](https://technet.microsoft.com/fr-fr/library/ff829875\(v=exchg.150\)).
 
@@ -171,7 +191,9 @@ Vous aurez besoin du GUID de la boîte aux lettres de dossiers publics supprimé
 
 1.  Obtenir le nom de domaine complet (FQDN) du contrôleur de domaine et de forêt Active Directory en exécutant la cmdlet suivante :
     
-        Get-OrganizationConfig | fl OriginatingServer
+    ```powershell
+    Get-OrganizationConfig | fl OriginatingServer
+    ```
 
 2.  Avec les informations renvoyées par l’étape 1, recherchez dans le conteneur Objets supprimés dans Active Directory le GUID de la boîte aux lettres de dossiers publics et le GUID ou le nom de la base de données de boîtes aux lettres dans laquelle la boîte aux lettres de dossiers publics supprimée était contenue.
     
@@ -183,15 +205,21 @@ Si vous connaissez le GUID de la boîte aux lettres de dossiers publics supprim�
 
 1.  Créer un nouvel objet Active Directory en exécutant les commandes suivantes (vous pouvez être invité à fournir des informations d’identification appropriées) :
     
-        New-MailUser <mailUserName> -ExternalEmailAddress <emailAddress> 
+    ```powershell
+    New-MailUser <mailUserName> -ExternalEmailAddress <emailAddress> 
+    ```
         
-        Get-MailUser <mailUserName> | Disable-MailUser
+    ```powershell
+    Get-MailUser <mailUserName> | Disable-MailUser
+    ```
     
     Où `<mailUserName>`, `<emailAddress>` et `<mailUserName>` sont des valeurs que vous choisissez. Vous devez utiliser la même valeur `<mailUserName>` à l’étape suivante.
 
 2.  Connectez la boîte aux lettres de dossiers publics supprimée à l’objet Active Directory que vous venez de créer en exécutant la commande suivante :
     
-        Connect-Mailbox -Identity <public folder mailbox GUID> -Database <database name or GUID> -User <mailUserName>
+    ```powershell
+    Connect-Mailbox -Identity <public folder mailbox GUID> -Database <database name or GUID> -User <mailUserName>
+    ```
     
     > [!NOTE]
     > Le paramètre <code>Identity</code> spécifie l’objet de boîte aux lettres dans la base de données Exchange à connecter à un objet utilisateur Active Directory. L’exemple ci-dessus spécifie le GUID pour la boîte aux lettres de dossiers publics, mais vous pouvez également utiliser la valeur de nom d’affichage ou la valeur LegacyExchangeDN.
@@ -199,7 +227,9 @@ Si vous connaissez le GUID de la boîte aux lettres de dossiers publics supprim�
 
 3.  Exécutez `Update-StoreMailboxState` sur la boîte aux lettres de dossiers publics, en fonction de l’exemple suivant :
     
-        Update-StoreMailboxState -Identity <public folder mailbox GUID> -Database <database name or GUID>
+    ```powershell
+    Update-StoreMailboxState -Identity <public folder mailbox GUID> -Database <database name or GUID>
+    ```
     
     Comme à l’étape 2, le paramètre `Identity` acceptera les valeurs GUID, nom d’affichage ou LegacyExchangeDN pour la boîte aux lettres de dossiers publics.
 

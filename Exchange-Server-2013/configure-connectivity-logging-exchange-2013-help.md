@@ -55,7 +55,9 @@ L'enregistrement de la connectivité enregistre l'activité de connexion sortant
 
 Pour activer l'enregistrement de la connectivité, exécutez la commande suivante :
 
-    <Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ConnectivityLogEnabled <$true | $false> -ConnectivityLogMaxAge <dd.hh:mm:ss> -ConnectivityLogMaxDirectorySize <Size> -ConnectivityLogMaxFileSize <Size> -ConnectivityLogPath <LocalFilePath>
+```powershell
+<Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ConnectivityLogEnabled <$true | $false> -ConnectivityLogMaxAge <dd.hh:mm:ss> -ConnectivityLogMaxDirectorySize <Size> -ConnectivityLogMaxFileSize <Size> -ConnectivityLogPath <LocalFilePath>
+```
 
 Cet exemple définit les paramètres du journal de connectivité suivants dans le service de transport sur le serveur de boîtes aux lettres nommé Mailbox01 :
 
@@ -69,7 +71,9 @@ Cet exemple définit les paramètres du journal de connectivité suivants dans l
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -ConnectivityLogPath "D:\Hub Connectivity Log" -ConnectivityLogMaxFileSize 20MB -ConnectivityLogMaxDirectorySize 1.5GB -ConnectivityLogMaxAge 45.00:00:00
+```powershell
+Set-TransportService Mailbox01 -ConnectivityLogPath "D:\Hub Connectivity Log" -ConnectivityLogMaxFileSize 20MB -ConnectivityLogMaxDirectorySize 1.5GB -ConnectivityLogMaxAge 45.00:00:00
+```
 
 > [!NOTE]
 > <ul>
@@ -84,7 +88,9 @@ Pour vérifier que vous avez correctement configuré l'enregistrement de la conn
 
 1.  Dans l'environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante :
     
-        <Get-TransportService | Get-FrontEndTransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List ConnectivityLog*
+    ```powershell
+    <Get-TransportService | Get-FrontEndTransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List ConnectivityLog*
+    ```
 
 2.  Vérifiez que les valeurs affichées sont les valeurs que vous avez configurées.
 

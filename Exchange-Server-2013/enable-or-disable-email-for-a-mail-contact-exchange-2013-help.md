@@ -57,7 +57,9 @@ Le contact de messagerie est supprimé de la liste de contacts.
 
 Dans cet exemple, nous désactivons la messagerie électronique pour le contact de messagerie Neil Black.
 
-    Disable-MailContact -Identity "Neil Black"
+```powershell
+Disable-MailContact -Identity "Neil Black"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Disable-MailContact](https://technet.microsoft.com/fr-fr/library/aa997465\(v=exchg.150\)).
 
@@ -71,13 +73,17 @@ Pour vérifier que la messagerie électronique a bien été désactivée pour un
 
 3.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-MailContact
+    ```powershell
+    Get-MailContact
+    ```
     
     Le contact pour lequel vous avez désactivé la messagerie électronique est absent des résultats parce que cette cmdlet ne renvoie que les contacts à extension messagerie.
 
 4.  Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante.
     
-        Get-Contact
+    ```powershell
+    Get-Contact
+    ```
     
     Le contact pour lequel vous avez désactivé la messagerie électronique figure dans les résultats parce que cette cmdlet renvoie tous les objets de contact Active Directory.
 
@@ -89,7 +95,9 @@ La cmdlet **Enable-MailContact** permet d’activer la messagerie pour des conta
 
 Dans cet exemple, nous activons la messagerie pour le contact Rene Valdes. Vous devez fournir une adresse de messagerie externe.
 
-    Enable-MailContact -Identity "Rene Valdes" -ExternalEmailAddress renev@tailspintoys.com
+```powershell
+Enable-MailContact -Identity "Rene Valdes" -ExternalEmailAddress renev@tailspintoys.com
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell et un fichier CSV pour activer la messagerie pour plusieurs contacts
 
@@ -97,31 +105,39 @@ Lors de l’activation de la messagerie de contacts en bloc, vous devez commence
 
 1.  Exécutez la commande suivante pour exporter la liste des contacts existants qui ne sont pas à extension messagerie dans un fichier du bureau de l’administrateur intitulé Contacts.csv.
     
-        Get-Contact | Where { $_.RecipientType -eq "Contact" } | Out-File "C:\Users\Administrator\Desktop\Contacts.csv"
+    ```powershell
+    Get-Contact | Where { $_.RecipientType -eq "Contact" } | Out-File "C:\Users\Administrator\Desktop\Contacts.csv"
+    ```
     
     Le fichier résultat doit ressembler au fichier suivant :
     
-        Name
-        Walter Harp
-        James Alvord
-        Rainer Witt
-        Susan Burk
-        Ian Tien
-        ...
+    ```powershell
+    Name
+    Walter Harp
+    James Alvord
+    Rainer Witt
+    Susan Burk
+    Ian Tien
+    ...
+    ```
 
 2.  Ajoutez un en-tête de colonne intitulé **EmailAddress**, puis ajoutez une adresse de messagerie électronique pour chaque contact figurant dans le fichier. Le nom et l’adresse de messagerie électronique externe associés à chaque contact doivent être séparés par une virgule. Le fichier CSV mis à jour doit ressembler au fichier suivant.
     
-        Name,EmailAddress
-        James Alvord,james@contoso.com
-        Susan Burk,sburk@tailspintoys.com
-        Walter Harp,wharp@tailspintoys.com
-        Ian Tien,iant@tailspintoys.com
-        Rainer Witt,rainerw@fourthcoffee.com
-        ...
+    ```powershell
+    Name,EmailAddress
+    James Alvord,james@contoso.com
+    Susan Burk,sburk@tailspintoys.com
+    Walter Harp,wharp@tailspintoys.com
+    Ian Tien,iant@tailspintoys.com
+    Rainer Witt,rainerw@fourthcoffee.com
+    ...
+    ```
 
 3.  Exécutez la commande suivante pour utiliser les données du fichier CSV pour activer la messagerie des contacts répertoriés dans le fichier.
     
-        Import-CSV C:\Users\Administrator\Desktop\Contacts.csv | ForEach-Object {Enable-MailContact -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
+    ```powershell
+    Import-CSV C:\Users\Administrator\Desktop\Contacts.csv | ForEach-Object {Enable-MailContact -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
+    ```
     
     Les résultats de la commande affichent les informations relatives aux nouveaux contacts à extension messagerie.
 
@@ -137,5 +153,7 @@ Pour vérifier l’activation de la messagerie des contacts Active Directory s�
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les informations relatives aux nouveaux contacts de messagerie.
     
-        Get-MailContact | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```powershell
+    Get-MailContact | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```
 

@@ -123,7 +123,9 @@ Si vous utilisez le CAE pour afficher les propriétés d’un répertoire virtue
 
 Cet exemple active l'authentification basée sur des formulaires pour le répertoire virtuel Outlook Web App par défaut sur le serveur nommé Contoso.
 
-    set-OwaVirtualDirectory -Identity "Contoso\owa (default web site)" -FormsAuthentication $true
+```powershell
+set-OwaVirtualDirectory -Identity "Contoso\owa (default web site)" -FormsAuthentication $true
+```
 
 Pour plus d'informations sur la syntaxe et les paramètres, consultez la rubrique [Set-OwaVirtualDirectory](https://technet.microsoft.com/fr-fr/library/bb123515\(v=exchg.150\)).
 
@@ -131,19 +133,27 @@ Pour plus d'informations sur la syntaxe et les paramètres, consultez la rubriqu
 
 Cet exemple permet d'afficher les propriétés de tous les répertoires virtuels Outlook Web App de tous les sites web IIS (Internet Information Services) sur tous les ordinateurs dans lesquels le rôle serveur d'accès au client est installé pour une organisation Exchange.
 
-    Get-OWAVirtualDirectory
+```powershell
+Get-OWAVirtualDirectory
+```
 
 Cet exemple affiche les propriétés d'un répertoire virtuel Outlook Web App sur le site web IIS par défaut sur le serveur Exchange local.
 
-    Get-OWAVirtualDirectory -identity "<Exchange Server Name>\owa (default web site)"
+```powershell
+Get-OWAVirtualDirectory -identity "<Exchange Server Name>\owa (default web site)"
+```
 
 Cet exemple affiche les propriétés de tous les répertoires virtuels Outlook Web App d'un site web IIS sur un serveur Exchange spécifique.
 
-    Get-OWAVirtualDirectory -server <Exchange Server Name>
+```powershell
+Get-OWAVirtualDirectory -server <Exchange Server Name>
+```
 
 Cet exemple affiche les valeurs des propriétés de chaque répertoire virtuel Outlook Web App de tous les sites web IIS sur tous les serveurs d'accès au client d'une organisation Exchange.
 
-    Get-OWAVirtualDirectory | format-list
+```powershell
+Get-OWAVirtualDirectory | format-list
+```
 
 Pour plus d'informations sur la syntaxe et les paramètres, consultez la rubrique [Get-OwaVirtualDirectory](https://technet.microsoft.com/fr-fr/library/aa998588\(v=exchg.150\)).
 

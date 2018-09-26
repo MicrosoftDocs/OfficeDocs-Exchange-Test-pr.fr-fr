@@ -43,11 +43,15 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux rôles ? 
 
 Pour supprimer un rôle sans rôle enfant, utilisez la syntaxe suivante.
 
-    Remove-ManagementRole <role name>
+```powershell
+Remove-ManagementRole <role name>
+```
 
 Cet exemple montre comment supprimer le rôle Administrateurs de serveur de Seattle.
 
-    Remove-ManagementRole "Seattle Server Administrators"
+```powershell
+Remove-ManagementRole "Seattle Server Administrators"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-ManagementRole](https://technet.microsoft.com/fr-fr/library/dd351170\(v=exchg.150\)).
 
@@ -61,13 +65,17 @@ Si un rôle que vous désirez supprimer a des rôles enfants, vous devez égalem
 
 Pour vous assurer que vous ne supprimez que les rôles que vous désirez supprimer, utilisez le commutateur *WhatIf* avec votre commande pour le vérifier. Utilisez la syntaxe suivante.
 
-    Remove-ManagementRole <role name> -Recurse -WhatIf
+```powershell
+Remove-ManagementRole <role name> -Recurse -WhatIf
+```
 
 Le commutateur *WhatIf* exécute la commande sans effectuer aucune modification et signale les rôles qu’il aurait supprimés. Pour plus d’informations sur le commutateur *WhatIf*, consultez la rubrique [Commutateurs WhatIf, Confirm et ValidateOnly](whatif-confirm-and-validateonly-switches-exchange-2013-help.md).
 
 Après avoir confirmé que seuls les rôles que vous désirez supprimer seront supprimés, exécutez la même commande sans le commutateur *WhatIf*. Cet exemple montre comment supprimer le rôle d’administrateur de Londres et tous ses rôles enfants.
 
-    Remove-ManagementRole "London Administrators" -Recurse
+```powershell
+Remove-ManagementRole "London Administrators" -Recurse
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-ManagementRole](https://technet.microsoft.com/fr-fr/library/dd351170\(v=exchg.150\)).
 
@@ -75,7 +83,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour supprimer un rôle non délimité, vous pouvez utiliser les mêmes procédures indiquées dans Supprimer un rôle de gestion sans rôle enfant et Supprimer un rôle de gestion avec des rôles enfants précédemment dans cette rubrique. La seule différence étant que lorsque vous supprimez un rôle non délimité, vous devez spécifier le commutateur *UnScopedTopLevel* lorsque vous exécutez la commande. Cet exemple montre comment supprimer un rôle non délimité et tous ses rôles enfants.
 
-    Remove-ManagementRole "Custom IT Scripts" -Recurse -UnScopedTopLevel
+```powershell
+Remove-ManagementRole "Custom IT Scripts" -Recurse -UnScopedTopLevel
+```
 
 Tout comme avec la suppression des autres rôles, vous devez utiliser le commutateur *WhatIf* pour vérifier que vous supprimez les bons rôles.
 

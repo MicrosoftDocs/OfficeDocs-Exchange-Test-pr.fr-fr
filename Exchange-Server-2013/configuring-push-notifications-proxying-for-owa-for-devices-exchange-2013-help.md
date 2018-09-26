@@ -66,71 +66,75 @@ Pour configurer l’authentification de serveur à serveur pour une implémentat
     > [!WARNING]  
     > Copiez et collez le code dans un éditeur de texte comme le Bloc-notes, puis enregistrez-le avec une extension .ps1. Cela facilite l’exécution des scripts Shell.
     
-        # Make sure to update the following $tenantDomain with your Office 365 tenant domain.
-        
-        $tenantDomain = "Fabrikam.com"
-        
-        # Check whether the cert returned from Get-AuthConfig is valid and keysize must be >= 2048
-        
-        $c = Get-ExchangeCertificate | ?{$_.CertificateDomains -eq $env:USERDNSDOMAIN -and $_.Services -ge "SMTP" -and $_.PublicKeySize -ge 2048 -and $_.FriendlyName -match "OAuth"}
-        If ($c.Count -eq 0)
-        {
-            Write-Host "Creating certificate for oAuth..."
-            $ski = [System.Guid]::NewGuid().ToString("N")
-            $friendlyName = "Exchange S2S OAuth"
-            New-ExchangeCertificate -FriendlyName $friendlyName -DomainName $env:USERDNSDOMAIN -Services Federation -KeySize 2048 -PrivateKeyExportable $true -SubjectKeyIdentifier $ski
-            $c = Get-ExchangeCertificate | ?{$_.friendlyname -eq $friendlyName}
-        }
-        ElseIf ($c.Count -gt 1)
-        {
-            $c = $c[0]
-        }
-        
-        $a = $c | ?{$_.Thumbprint -eq (get-authconfig).CurrentCertificateThumbprint}
-        If ($a.Count -eq 0)
-        {
-            Set-AuthConfig -CertificateThumbprint $c.Thumbprint
-        }
-        Write-Host "Configured Certificate Thumbprint is:"(get-authconfig).CurrentCertificateThumbprint
-        
-        # Export the certificate
-        
-        Write-Host "Exporting certificate..."
-        if((test-path $env:SYSTEMDRIVE\OAuthConfig) -eq $false)
-        {
-            md $env:SYSTEMDRIVE\OAuthConfig
-        }
-        cd $env:SYSTEMDRIVE\OAuthConfig
-        
-        $oAuthCert = (dir Cert:\LocalMachine\My) | where {$_.FriendlyName -match "OAuth"}
-        $certType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
-        $certBytes = $oAuthCert.Export($certType)
-        $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
-        [System.IO.File]::WriteAllBytes($CertFile, $certBytes)
-        
-        # Set AuthServer
-        $authServer = Get-AuthServer MicrosoftSts;
-        if ($authServer.Length -eq 0)
-        {
-            Write-Host "Creating AuthServer Config..."
-            New-AuthServer MicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/metadata/json/1/?realm=$tenantDomain
-        }
-        elseif ($authServer.AuthMetadataUrl -ne "https://accounts.accesscontrol.windows.net/metadata/json/1/?realm=$tenantDomain")
-        {
-            Write-Warning "AuthServer config already exists but the AuthMetdataUrl doesn't match the appropriate value. Updating..."
-            Set-AuthServer MicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/metadata/json/1/?realm=$tenantDomain
-        }
-        else
-        {
-            Write-Host "AuthServer Config already exists."
-        }
-        Write-Host "Complete."
+    ```csharp
+    # Make sure to update the following $tenantDomain with your Office 365 tenant domain.
     
+    $tenantDomain = "Fabrikam.com"
+    
+    # Check whether the cert returned from Get-AuthConfig is valid and keysize must be >= 2048
+    
+    $c = Get-ExchangeCertificate | ?{$_.CertificateDomains -eq $env:USERDNSDOMAIN -and $_.Services -ge "SMTP" -and $_.PublicKeySize -ge 2048 -and $_.FriendlyName -match "OAuth"}
+    If ($c.Count -eq 0)
+    {
+        Write-Host "Creating certificate for oAuth..."
+        $ski = [System.Guid]::NewGuid().ToString("N")
+        $friendlyName = "Exchange S2S OAuth"
+        New-ExchangeCertificate -FriendlyName $friendlyName -DomainName $env:USERDNSDOMAIN -Services Federation -KeySize 2048 -PrivateKeyExportable $true -SubjectKeyIdentifier $ski
+        $c = Get-ExchangeCertificate | ?{$_.friendlyname -eq $friendlyName}
+    }
+    ElseIf ($c.Count -gt 1)
+    {
+        $c = $c[0]
+    }
+    
+    $a = $c | ?{$_.Thumbprint -eq (get-authconfig).CurrentCertificateThumbprint}
+    If ($a.Count -eq 0)
+    {
+        Set-AuthConfig -CertificateThumbprint $c.Thumbprint
+    }
+    Write-Host "Configured Certificate Thumbprint is:"(get-authconfig).CurrentCertificateThumbprint
+    
+    # Export the certificate
+    
+    Write-Host "Exporting certificate..."
+    if((test-path $env:SYSTEMDRIVE\OAuthConfig) -eq $false)
+    {
+        md $env:SYSTEMDRIVE\OAuthConfig
+    }
+    cd $env:SYSTEMDRIVE\OAuthConfig
+    
+    $oAuthCert = (dir Cert:\LocalMachine\My) | where {$_.FriendlyName -match "OAuth"}
+    $certType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
+    $certBytes = $oAuthCert.Export($certType)
+    $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
+    [System.IO.File]::WriteAllBytes($CertFile, $certBytes)
+    
+    # Set AuthServer
+    $authServer = Get-AuthServer MicrosoftSts;
+    if ($authServer.Length -eq 0)
+    {
+        Write-Host "Creating AuthServer Config..."
+        New-AuthServer MicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/metadata/json/1/?realm=$tenantDomain
+    }
+    elseif ($authServer.AuthMetadataUrl -ne "https://accounts.accesscontrol.windows.net/metadata/json/1/?realm=$tenantDomain")
+    {
+        Write-Warning "AuthServer config already exists but the AuthMetdataUrl doesn't match the appropriate value. Updating..."
+        Set-AuthServer MicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/metadata/json/1/?realm=$tenantDomain
+    }
+    else
+    {
+        Write-Host "AuthServer Config already exists."
+    }
+    Write-Host "Complete."
+    ```
+
     Le résultat attendu devrait être semblable à la sortie suivante.
     
-        Configured Certificate Thumbprint is: 7595DBDEA83DACB5757441D44899BCDB9911253C
-        Exporting certificate...
-        Complete.
+    ```powershell
+    Configured Certificate Thumbprint is: 7595DBDEA83DACB5757441D44899BCDB9911253C
+    Exporting certificate...
+    Complete.
+    ```
     
     > [!WARNING]  
     > Avant de poursuivre, la cmdlet Module Azure Active Directory pour Windows PowerShell est requise. Si la cmdlet Module Azure Active Directory pour Windows PowerShell (précédemment appelée le module Microsoft Online Services pour Windows PowerShell) n'a pas été installée, vous pouvez l'installer à partir de <a href="http://aka.ms/aadposh">Gérer Azure Active Directory à l’aide de Windows PowerShell</a>.
@@ -138,73 +142,81 @@ Pour configurer l’authentification de serveur à serveur pour une implémentat
 
   - **Étape 2 - Configurer Office 365 pour qu’il communique avec Exchange 2013 sur site.** Configurez le serveur Office 365 qui communiquera avec Exchange Server 2013 en tant qu’application partenaire. Par exemple, si Exchange Server 2013 sur site doit communiquer avec Office 365, vous devez configurer Exchange sur site en tant qu’application partenaire. Une application partenaire est une application avec laquelle Exchange 2013 peut directement échanger des jetons de sécurité, sans avoir à passer par un serveur de jeton de sécurité tiers. Un administrateur Exchange 2103 sur site doit utiliser le script d’environnement de ligne de commande Exchange Management Shell suivant pour configurer le client Office 365 avec lequel Exchange 2013 communiquera en tant qu’application partenaire. Lors de l’exécution, vous serez invité à entrer le nom d’utilisateur et le mot de passe de l’administrateur du domaine client Office 365 (par exemple, administrateur@fabrikam.com). Assurez-vous que vous mettez à jour la valeur de *$CertFile* sur l’emplacement du certificat, si ce dernier n’a pas été créé à partir du script précédent. Pour ce faire, copiez et collez le code suivant.
     
-        # Make sure to update the following $CertFile with the path to the cert if not using the previous script.
-        
-        $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
-        
-        If (Test-Path $CertFile)
-        {
-            $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
-        
-            $objFSO = New-Object -ComObject Scripting.FileSystemObject;
-            $CertFile = $objFSO.GetAbsolutePathName($CertFile);
-        
-            $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
-            $cer.Import($CertFile);
-            $binCert = $cer.GetRawCertData();
-            $credValue = [System.Convert]::ToBase64String($binCert);
-        
-            Write-Host "Please enter the administrator user name and password of the Office 365 tenant domain..."
-        
-            Connect-MsolService;
-            Import-Module msonlineextended;
-        
-            Write-Host "Adding a key to Service Principal..."
-        
-            $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
-            New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue -StartDate $cer.GetEffectiveDateString() -EndDate $cer.GetExpirationDateString()
-        }
-        Else
-        {
-            Write-Error "Cannot find certificate."
-        } 
+    ```csharp
+    # Make sure to update the following $CertFile with the path to the cert if not using the previous script.
     
-    Le résultat attendu doit être comme suit.
+    $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
     
-        Please enter the administrator user name and password of the Office 365 tenant domain...
-        Adding a key to Service Principal...
-        Complete.
+    If (Test-Path $CertFile)
+    {
+        $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
+    
+        $objFSO = New-Object -ComObject Scripting.FileSystemObject;
+        $CertFile = $objFSO.GetAbsolutePathName($CertFile);
+    
+        $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
+        $cer.Import($CertFile);
+        $binCert = $cer.GetRawCertData();
+        $credValue = [System.Convert]::ToBase64String($binCert);
+    
+        Write-Host "Please enter the administrator user name and password of the Office 365 tenant domain..."
+    
+        Connect-MsolService;
+        Import-Module msonlineextended;
+    
+        Write-Host "Adding a key to Service Principal..."
+    
+        $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
+        New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue -StartDate $cer.GetEffectiveDateString() -EndDate $cer.GetExpirationDateString()
+    }
+    Else
+    {
+        Write-Error "Cannot find certificate."
+    } 
+    ```
+
+Le résultat attendu doit être comme suit.
+
+```powershell
+Please enter the administrator user name and password of the Office 365 tenant domain...
+Adding a key to Service Principal...
+Complete.
+```
 
 ## Activer l’envoi par proxy de notifications Push
 
 Une fois l’authentification OAuth correctement configurée grâce aux étapes précédentes, un administrateur sur site doit activer l’envoi par proxy de notifications Push à l’aide du script suivant. Assurez-vous que vous mettez à jour la valeur de *$tenantDomain* pour qu’elle corresponde au nom de votre domaine. Pour ce faire, copiez et collez le code suivant.
 
-    $tenantDomain = "Fabrikam.com"
-    Enable-PushNotificationProxy -Organization:$tenantDomain
+```powershell
+$tenantDomain = "Fabrikam.com"
+Enable-PushNotificationProxy -Organization:$tenantDomain
+```
 
 Le résultat attendu doit être semblable à la sortie suivante.
 
-    RunspaceId        : 4f2eb5cc-b696-482f-92bb-5b254cd19d60
-    DisplayName       : On Premises Proxy app
-    Enabled           : True
-    Organization      : fabrikam.com
-    Uri               : https://outlook.office365.com/PushNotifications
-    Identity          : OnPrem-Proxy
-    IsValid           : True
-    ExchangeVersion   : 0.20 (15.0.0.0)
-    Name              : OnPrem-Proxy
-    DistinguishedName : CN=OnPrem-Proxy,CN=Push Notifications Settings,CN=First Organization,CN=Microsoft
-                        Exchange,CN=Services,CN=Configuration,DC=Domain,DC=extest,DC=microsoft,DC=com
-    Guid              : 8b567958-58a4-403c-a8f0-524d7f1e9279
-    ObjectCategory    : fabrikam.com/Configuration/Schema/ms-Exch-Push-Notifications-App
-    ObjectClass       : {top, msExchPushNotificationsApp}
-    WhenChanged       : 8/27/2013 7:23:47 PM
-    WhenCreated       : 8/14/2013 1:30:27 PM
-    WhenChangedUTC    : 8/28/2013 2:23:47 AM
-    WhenCreatedUTC    : 8/14/2013 8:30:27 PM
-    OrganizationId    :
-    OriginatingServer : server.fabrikam.com
-    ObjectState       : Unchanged
+```powershell
+RunspaceId        : 4f2eb5cc-b696-482f-92bb-5b254cd19d60
+DisplayName       : On Premises Proxy app
+Enabled           : True
+Organization      : fabrikam.com
+Uri               : https://outlook.office365.com/PushNotifications
+Identity          : OnPrem-Proxy
+IsValid           : True
+ExchangeVersion   : 0.20 (15.0.0.0)
+Name              : OnPrem-Proxy
+DistinguishedName : CN=OnPrem-Proxy,CN=Push Notifications Settings,CN=First Organization,CN=Microsoft
+                    Exchange,CN=Services,CN=Configuration,DC=Domain,DC=extest,DC=microsoft,DC=com
+Guid              : 8b567958-58a4-403c-a8f0-524d7f1e9279
+ObjectCategory    : fabrikam.com/Configuration/Schema/ms-Exch-Push-Notifications-App
+ObjectClass       : {top, msExchPushNotificationsApp}
+WhenChanged       : 8/27/2013 7:23:47 PM
+WhenCreated       : 8/14/2013 1:30:27 PM
+WhenChangedUTC    : 8/28/2013 2:23:47 AM
+WhenCreatedUTC    : 8/14/2013 8:30:27 PM
+OrganizationId    :
+OriginatingServer : server.fabrikam.com
+ObjectState       : Unchanged
+```
 
 ## Vérifier le fonctionnement des notifications Push
 
@@ -222,31 +234,35 @@ Une fois les étapes précédentes effectuées, les notifications Push peuvent �
 
   - **Activation du contrôle.** Une autre méthode de test des notifications Push ou de recherche de la raison de l’échec des notifications consiste à activer le contrôle sur un serveur de boîtes aux lettres de votre organisation. Un administrateur du serveur Exchange 2013 sur site doit appeler le contrôle par proxy des notifications Push à l’aide du script suivant. Pour ce faire, copiez et collez le code suivant.
     
-        # Send a push notification to verify connectivity.
-        
-        $s = Get-ExchangeServer | ?{$_.ServerRole -match "Mailbox"}
-        If ($s.Count -gt 1)
-        {
-            $s = $s[0]
-        }
-        If ($s.Count -ne 0)
-        {
-            # Restart the monitoring service to clear the cache from when push was previously disabled.
-            Restart-Service MSExchangeHM
-        
-            # Give the monitoring service enough time to load.
-            Start-Sleep -Seconds:120
-        
-            Invoke-MonitoringProbe PushNotifications.Proxy\PushNotificationsEnterpriseConnectivityProbe -Server:$s.Fqdn | fl ResultType, Error, Exception
-        }
-        Else
-        {
-            Write-Error "Cannot find a Mailbox server in the current site."
-        }
+    ```powershell
+    # Send a push notification to verify connectivity.
+    
+    $s = Get-ExchangeServer | ?{$_.ServerRole -match "Mailbox"}
+    If ($s.Count -gt 1)
+    {
+        $s = $s[0]
+    }
+    If ($s.Count -ne 0)
+    {
+        # Restart the monitoring service to clear the cache from when push was previously disabled.
+        Restart-Service MSExchangeHM
+    
+        # Give the monitoring service enough time to load.
+        Start-Sleep -Seconds:120
+    
+        Invoke-MonitoringProbe PushNotifications.Proxy\PushNotificationsEnterpriseConnectivityProbe -Server:$s.Fqdn | fl ResultType, Error, Exception
+    }
+    Else
+    {
+        Write-Error "Cannot find a Mailbox server in the current site."
+    }
+    ```
     
     Le résultat attendu doit être semblable à la sortie suivante.
     
-        ResultType : Succeeded
-        Error      :
-        Exception  :
+    ```powershell
+    ResultType : Succeeded
+    Error      :
+    Exception  :
+    ```
 

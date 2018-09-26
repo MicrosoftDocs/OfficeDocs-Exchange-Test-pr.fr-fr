@@ -43,11 +43,15 @@ Lorsque vous supprimez une entrée de rôle d'un rôle, les utilisateurs associ�
 
 Utilisez la syntaxe suivante pour supprimer une entrée de rôle de gestion d'un rôle.
 
-    Remove-ManagementRoleEntry <management role>\<management role entry>
+```powershell
+Remove-ManagementRoleEntry <management role>\<management role entry>
+```
 
 Cet exemple supprime la cmdlet **Enable-MailUser** du rôle « Seattle Server Administrators ».
 
-    Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
+```powershell
+Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-ManagementRoleEntry](https://technet.microsoft.com/fr-fr/library/dd351187\(v=exchg.150\)).
 
@@ -57,15 +61,21 @@ Lorsque vous supprimez plusieurs entrées de rôle d'un rôle, les utilisateurs 
 
 Pour supprimer plusieurs entrées de rôle d'un rôle, vous devez récupérer la liste des entrées de rôle à supprimer à l'aide de la cmdlet **Get-ManagementRoleEntry**. Vous devez canaliser la sortie vers la cmdlet **Remove-ManagementRoleEntry**. Vous pouvez utiliser des caractères génériques avec la cmdlet **Get-ManagementRoleEntry** pour établir une correspondance entre plusieurs entrées de rôle. Il est judicieux d'utiliser le commutateur *WhatIf* pour vérifier que vous supprimez les entrées de rôle correctes. Utilisez la syntaxe suivante.
 
-    Get-ManagementRoleEntry <management role>\<role entry with wildcard character> | Remove-ManagementRoleEntry -WhatIf
+```powershell
+Get-ManagementRoleEntry <management role>\<role entry with wildcard character> | Remove-ManagementRoleEntry -WhatIf
+```
 
 Cet exemple supprime toutes les entrées de rôle qui contiennent le mot « journal » du rôle « Seattle Server Administrators ».
 
-    Get-ManagementRoleEntry "Seattle Server Administrators\*Journal*" | Remove-ManagementRoleEntry -WhatIf
+```powershell
+Get-ManagementRoleEntry "Seattle Server Administrators\*Journal*" | Remove-ManagementRoleEntry -WhatIf
+```
 
 Lorsque vous exécutez la commande avec le commutateur *WhatIf*, la cmdlet retourne la liste de toutes les entrées de rôle devant être supprimées. Si la liste semble correcte, exécutez à nouveau la commande sans le commutateur *WhatIf* pour supprimer les entrées de rôle.
 
-    Get-ManagementRoleEntry "Seattle Server Administrators\*Journal*" | Remove-ManagementRoleEntry
+```powershell
+Get-ManagementRoleEntry "Seattle Server Administrators\*Journal*" | Remove-ManagementRoleEntry
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-ManagementRoleEntry](https://technet.microsoft.com/fr-fr/library/dd335210\(v=exchg.150\)) et [Remove-ManagementRoleEntry](https://technet.microsoft.com/fr-fr/library/dd351187\(v=exchg.150\)).
 
@@ -75,11 +85,15 @@ Lorsque vous supprimez des paramètres d'une entrée de rôle d'un rôle, les ut
 
 Utilisez la syntaxe suivante pour supprimer des paramètres d'une entrée de rôle.
 
-    Set-ManagementRoleEntry <management role>\<role entry> -Parameters <parameter 1>,<parameter 2...> -RemoveParameter
+```powershell
+Set-ManagementRoleEntry <management role>\<role entry> -Parameters <parameter 1>,<parameter 2...> -RemoveParameter
+```
 
 Cet exemple supprime les paramètres *MaxSafeSenders*, *MaxSendSize*, *SecondaryAddress* et *UseDatabaseQuotaDefaults* de l'entrée de rôle **Set-Mailbox** sur le rôle « Seattle Server Administrators ».
 
-    Set-ManagementRoleEntry "Seattle Server Administrators\Set-Mailbox" -Parameters MaxSafeSenders,MaxSendSize,SecondaryAddress,UseDatabaseQuotaDefaults -RemoveParameter
+```powershell
+Set-ManagementRoleEntry "Seattle Server Administrators\Set-Mailbox" -Parameters MaxSafeSenders,MaxSendSize,SecondaryAddress,UseDatabaseQuotaDefaults -RemoveParameter
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ManagementRoleEntry](https://technet.microsoft.com/fr-fr/library/dd351162\(v=exchg.150\)).
 

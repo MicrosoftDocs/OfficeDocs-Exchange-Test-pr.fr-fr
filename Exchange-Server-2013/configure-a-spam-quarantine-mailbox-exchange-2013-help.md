@@ -41,11 +41,15 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 1.  Exécutez la commande suivante pour vérifier que l'agent de contenu est installé et activé sur le serveur Exchange :
     
-        Get-TransportAgent "Content Filter Agent"
+    ```powershell
+    Get-TransportAgent "Content Filter Agent"
+    ```
 
 2.  Exécutez la commande suivante pour vérifier que le filtrage de contenu est activé :
     
-        Get-ContentFilterConfig | Format-List Enabled
+    ```powershell
+    Get-ContentFilterConfig | Format-List Enabled
+    ```
 
 Pour plus d'informations, consultez la rubrique [Gérer le filtrage du contenu](manage-content-filtering-exchange-2013-help.md).
 
@@ -71,11 +75,15 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Exécutez la commande suivante :
 
-    Set-ContentFilterConfig -QuarantineMailbox <SmtpAddress>
+```powershell
+Set-ContentFilterConfig -QuarantineMailbox <SmtpAddress>
+```
 
 Cet exemple envoie tous les messages qui dépassent le seuil de mise en quarantaine du courrier indésirable à spamQ@contoso.com.
 
-    Set-ContentFilterConfig -QuarantineMailbox spamQ@contoso.com
+```powershell
+Set-ContentFilterConfig -QuarantineMailbox spamQ@contoso.com
+```
 
 ## Comment savoir si cette étape a fonctionné ?
 
@@ -83,7 +91,9 @@ Pour vérifier que vous avez correctement spécifié la boîte aux lettres de mi
 
 1.  Exécutez la commande suivante :
     
-        Get-ContentFilterConfig | Format-List QuarantineMailbox
+    ```powershell
+    Get-ContentFilterConfig | Format-List QuarantineMailbox
+    ```
 
 2.  Vérifiez que la valeur affichée est la valeur que vous avez configurée.
 

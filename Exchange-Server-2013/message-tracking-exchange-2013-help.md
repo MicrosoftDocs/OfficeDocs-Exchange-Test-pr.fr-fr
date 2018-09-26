@@ -553,16 +553,18 @@ Un message sans événement échangé entre deux utilisateurs génère plusieurs
 
 Ceci est un exemple condensé des entrées du journal de suivi des messages créées lorsque l'utilisateur chris@contoso.com envoie avec succès un message de test à l'utilisateur michelle@contoso.com. Les deux utilisateurs ont des boîtes aux lettres sur le même serveur.
 
-    EventId    Source      Sender            Recipients             MessageSubject
-    -------    ------      ------            ----------             --------------
-    NOTIFYMAPI STOREDRIVER                   {}
-    RECEIVE    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
-    SUBMIT     STOREDRIVER chris@contoso.com {michelle@contoso.com} test
-    HAREDIRECT SMTP        chris@contoso.com {michelle@contoso.com} test
-    RECEIVE    SMTP        chris@contoso.com {michelle@contoso.com} test
-    AGENTINFO  AGENT       chris@contoso.com {michelle@contoso.com} test
-    SEND       SMTP        chris@contoso.com {michelle@contoso.com} test
-    DELIVER    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
+```powershell
+EventId    Source      Sender            Recipients             MessageSubject
+-------    ------      ------            ----------             --------------
+NOTIFYMAPI STOREDRIVER                   {}
+RECEIVE    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
+SUBMIT     STOREDRIVER chris@contoso.com {michelle@contoso.com} test
+HAREDIRECT SMTP        chris@contoso.com {michelle@contoso.com} test
+RECEIVE    SMTP        chris@contoso.com {michelle@contoso.com} test
+AGENTINFO  AGENT       chris@contoso.com {michelle@contoso.com} test
+SEND       SMTP        chris@contoso.com {michelle@contoso.com} test
+DELIVER    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
+```
 
 Retour au début
 

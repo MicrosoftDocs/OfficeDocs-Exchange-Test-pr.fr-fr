@@ -39,15 +39,21 @@ Les administrateurs de Microsoft Exchange Server 2013 peuvent télécharger man
 
 Pour télécharger les mises à jour du moteur et des définitions, exécutez la commande suivante :
 
-    & $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity <FQDN of server>
+```powershell
+& $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity <FQDN of server>
+```
 
 Dans cet exemple, nous téléchargeons les mises à jour du moteur et des définitions sur un serveur nommé mailbox01.contoso.com :
 
-    & $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com
+```powershell
+& $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com
+```
 
 Vous pouvez également spécifier le paramètre –EngineUpdatePath qui vous permet de télécharger les mises à jour à partir d’un emplacement autre que celui par défaut de http://forefrontdl.microsoft.com/server/scanengineupdate. Il peut s’agir d’une adresse HTTP ou d’un chemin d’accès UNC ; s’il s’agit de ce dernier, le service réseau doit avoir accès au chemin d’accès. Dans cet exemple, nous téléchargeons les mises à jour du moteur et des définitions à partir d’un répertoire local sur un serveur nommé mailbox01.contoso.com :
 
-    & $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com -EngineUpdatePath \\Server\sharename
+```powershell
+& $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com -EngineUpdatePath \\Server\sharename
+```
 
 ## Comment savoir si cela a fonctionné ?
 

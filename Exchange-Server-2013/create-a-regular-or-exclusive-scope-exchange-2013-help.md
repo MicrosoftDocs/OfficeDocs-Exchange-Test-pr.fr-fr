@@ -61,11 +61,15 @@ Pour plus d’informations sur les filtres d’étendue de gestion, voir [Prése
 
 Utilisez la syntaxe suivante pour créer une étendue de filtre de restriction de domaine avec une unité d'organisation de base.
 
-    New-ManagementScope -Name <scope name> -RecipientRestrictionFilter <filter query> [-RecipientRoot <OU>]
+```powershell
+New-ManagementScope -Name <scope name> -RecipientRestrictionFilter <filter query> [-RecipientRoot <OU>]
+```
 
 Cet exemple crée une étendue qui inclut toutes les boîtes aux lettres de l'unité d'organisation contoso.com/Sales.
 
-    New-ManagementScope -Name "Mailboxes in Sales OU" -RecipientRestrictionFilter { RecipientType -eq 'UserMailbox' } -RecipientRoot "contoso.com/Sales OU"
+```powershell
+New-ManagementScope -Name "Mailboxes in Sales OU" -RecipientRestrictionFilter { RecipientType -eq 'UserMailbox' } -RecipientRoot "contoso.com/Sales OU"
+```
 
 > [!NOTE]
 > Vous pouvez omettre le paramètre <em>RecipientRoot</em> si vous souhaitez que le filtre s'applique à toute l'étendue de lecture implicite du rôle de gestion et non simplement à une unité d'organisation spécifique.
@@ -81,11 +85,15 @@ Pour plus d’informations sur les filtres d’étendue de gestion et pour obten
 
 Utilisez la syntaxe suivante pour créer une étendue de filtre de serveur.
 
-    New-ManagementScope -Name <scope name> -ServerRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -ServerRestrictionFilter <filter query>
+```
 
 Dans cet exemple, une étendue qui inclut tous les serveurs au sein du site AD (Active Directory) 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' est créée.
 
-    New-ManagementScope -Name "Servers in Seattle AD site" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
+```powershell
+New-ManagementScope -Name "Servers in Seattle AD site" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementScope](https://technet.microsoft.com/fr-fr/library/dd335137\(v=exchg.150\)).
 
@@ -95,11 +103,15 @@ Les étendues de configuration basées sur la liste de serveurs sont créées à
 
 Utilisez la syntaxe suivante pour créer une étendue basée sur une liste de serveurs.
 
-    New-ManagementScope -Name <scope name> -ServerList <server 1>, <server 2...>
+```powershell
+New-ManagementScope -Name <scope name> -ServerList <server 1>, <server 2...>
+```
 
 Cet exemple crée une étendue qui s'applique uniquement aux serveurs MBX1, MBX3 et MBX5.
 
-    New-ManagementScope -Name "Mailbox servers" -ServerList MBX1,MBX3,MBX5
+```powershell
+New-ManagementScope -Name "Mailbox servers" -ServerList MBX1,MBX3,MBX5
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementScope](https://technet.microsoft.com/fr-fr/library/dd335137\(v=exchg.150\)).
 
@@ -115,11 +127,15 @@ Pour plus d’informations sur les filtres d’étendue de gestion et pour obten
 
 Utilisez la syntaxe suivante pour créer un filtre de restriction appliqué à la base de données.
 
-    New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```
 
 Cet exemple crée une étendue qui inclut toutes les bases de données contenant la chaîne « Executive » dans la propriété **Name** de la base de données.
 
-    New-ManagementScope -Name "Executive Databases" -DatabaseRestrictionFilter { Name -Like '*Executive*' }
+```powershell
+New-ManagementScope -Name "Executive Databases" -DatabaseRestrictionFilter { Name -Like '*Executive*' }
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementScope](https://technet.microsoft.com/fr-fr/library/dd335137\(v=exchg.150\)).
 
@@ -133,11 +149,15 @@ Les étendues de configuration basées sur une liste de bases de données sont c
 
 Utilisez la syntaxe suivante pour créer une étendue de liste de bases de données.
 
-    New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```
 
 Cet exemple crée une étendue qui s'applique uniquement aux bases de données Database 1, Database 2 et Database 3.
 
-    New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```powershell
+New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementScope](https://technet.microsoft.com/fr-fr/library/dd335137\(v=exchg.150\)).
 
@@ -151,11 +171,15 @@ Toute étendue créée à l'aide de la cmdlet **New-ManagementScope** peut être
 
 Cet exemple crée une étendue exclusive basée sur un filtre destinataire qui correspond à tout utilisateur du département Executives.
 
-    New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive
+```powershell
+New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive
+```
 
 Par défaut, lorsque vous créez une étendue exclusive, vous devez reconnaître que vous avez créé une étendue exclusive et que vous êtes conscient de l’impact que peut avoir cette étendue exclusive sur des attributions de rôle non exclusives existantes. Si vous souhaitez supprimer l'avertissement, vous pouvez utiliser le commutateur *Force*. Cet exemple crée la même étendue que dans l'exemple précédent, mais sans avertissement.
 
-    New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive -Force
+```powershell
+New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive -Force
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementScope](https://technet.microsoft.com/fr-fr/library/dd335137\(v=exchg.150\)).
 

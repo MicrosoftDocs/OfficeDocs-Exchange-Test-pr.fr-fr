@@ -43,7 +43,9 @@ Pour en savoir plus sur le CAE, consultez la rubrique [Centre d’administration
 
 Cet exemple renvoie le nom du répertoire virtuel de l'ECP, une URL interne et une URL externe dans une liste mise en forme.
 
-    Get-ECPVirtualDirectory | Format-List Name,InternalURL,ExternalURL
+```powershell
+Get-ECPVirtualDirectory | Format-List Name,InternalURL,ExternalURL
+```
 
 Quand la commande a été exécutée, utilisez les valeurs *InternalURL* ou *ExternalURL* dans votre navigateur Internet pour lancer le CAE.
 

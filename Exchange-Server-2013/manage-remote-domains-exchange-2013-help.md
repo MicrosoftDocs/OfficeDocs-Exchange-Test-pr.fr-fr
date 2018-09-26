@@ -45,15 +45,21 @@ Si vous supprimez une entrée de domaine distant, les paramètres de transfert d
 
 Pour créer une nouvelle entrée de domaine distant, utilisez la syntaxe suivante.
 
-    New-RemoteDomain -Name <Descriptive Name> -DomainName <SMTP address space>
+```powershell
+New-RemoteDomain -Name <Descriptive Name> -DomainName <SMTP address space>
+```
 
 Cet exemple crée une entrée de domaine distant pour les messages envoyés au domaine contoso.com.
 
-    New-RemoteDomain -Name Contoso -DomainName contoso.com
+```powershell
+New-RemoteDomain -Name Contoso -DomainName contoso.com
+```
 
 Cet exemple crée une entrée de domaine distant pour les messages envoyés au domaine fabrikam.com et à tous les sous-domaines.
 
-    New-RemoteDomain -Name Fabrikam -DomainName *.fabrikam.com
+```powershell
+New-RemoteDomain -Name Fabrikam -DomainName *.fabrikam.com
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -79,11 +85,15 @@ Pour configurer les domaines distants pour des scénarios spécifiques, consulte
 
 Pour supprimer une entrée de domaine distant, utilisez la syntaxe suivante.
 
-    Remove-RemoteDomain <RemoteDomainName>
+```powershell
+Remove-RemoteDomain <RemoteDomainName>
+```
 
 Cet exemple supprime l'entrée de domaine distant appelée Contoso.
 
-    Remove-RemoteDomain Contoso
+```powershell
+Remove-RemoteDomain Contoso
+```
 
 ## Comment savoir si cela a fonctionné ?
 

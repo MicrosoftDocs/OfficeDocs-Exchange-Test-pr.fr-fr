@@ -69,21 +69,29 @@ L’outil de dépannage de la messagerie unifiée de Microsoft Exchange 2010 es
 
 3.  À l’invite de commandes Windows PowerShell, accédez au dossier dans lequel vous avez installé l’outil de dépannage de la messagerie unifiée et exécutez la commande ci-après.
     
-        C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -psconsolefile .\Microsoft.Exchange.UM.TroubleshootingToolsnapin.psc1 -noexit -command ". '.\Microsoft.Exchange.UM.TroubleshootingTool.ps1' "
+    ```powershell
+    C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -psconsolefile .\Microsoft.Exchange.UM.TroubleshootingToolsnapin.psc1 -noexit -command ". '.\Microsoft.Exchange.UM.TroubleshootingTool.ps1' "
+    ```
 
 4.  Si vous exécutez l’outil de dépannage de la messagerie unifiée sous Windows Vista, Windows 7 ou Windows 8, à l’invite de commandes Windows PowerShell, exécutez la commande ci-après.
     
-        Set-ExecutionPolicy RemoteSigned
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    ```
 
 5.  À partir du menu **Démarrer**, ouvrez l’**outil de dépannage de la messagerie unifiée Microsoft Exchange 2010**.
 
 6.  À l’invite de la fenêtre **Microsoft Exchange 2010 UM Troubleshooting Tool**, saisissez ce qui suit, puis appuyez sur la touche Entrée.
     
-        $cred=Get-Credential
+    ```powershell
+    $cred=Get-Credential
+    ```
 
 7.  Dans la fenêtre **Demande d’informations d’identification Windows PowerShell**, saisissez un nom d’utilisateur/de domaine et un mot de passe, puis cliquez sur **OK**.
 
 8.  Dans la fenêtre **Microsoft Exchange 2010 UM Troubleshooting Tool**, indiquez les paramètres de cmdlet nécessaires pour tester le flux d’appels. Par exemple :
     
-        Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
+    ```powershell
+    Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
+    ```
 

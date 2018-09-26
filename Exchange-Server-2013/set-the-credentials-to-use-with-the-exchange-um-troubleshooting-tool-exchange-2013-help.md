@@ -55,11 +55,15 @@ Par défaut, lorsque vous exécutez l’outil de dépannage de la messagerie uni
 
 2.  À l’invite de la fenêtre **Outil de dépannage de la messagerie unifiée Microsoft Exchange 2010**, saisissez ce qui suit, puis appuyez sur la touche Entrée.
     
-        $cred=Get-Credential
+    ```powershell
+    $cred=Get-Credential
+    ```
 
 3.  Dans la fenêtre **Demande d’informations d’identification Windows PowerShell**, saisissez un nom d’utilisateur/de domaine et un mot de passe, puis cliquez sur **OK**.
 
 4.  Dans la fenêtre de l’**outil de dépannage de la messagerie unifiée de Microsoft Exchange 2010**, indiquez les paramètres de cmdlet nécessaires pour tester le flux d’appels. Par exemple :
     
-        Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
+    ```powershell
+    Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
+    ```
 

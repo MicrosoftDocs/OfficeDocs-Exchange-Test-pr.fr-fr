@@ -45,11 +45,15 @@ Vous pouvez afficher la liste de tous les agents de transport activés qui ont r
 
 Pour utiliser l'environnement de ligne de commande pour afficher une liste d'agents de transport dans le pipeline de transport sur un serveur Exchange, exécutez la commande suivante :
 
-    Get-TransportPipeline | Format-List
+```powershell
+Get-TransportPipeline | Format-List
+```
 
 Pour exporter les résultats vers un fichier texte nommé C:\\My Documents\\Transport Agents.txt, exécutez la commande suivante :
 
-    Get-TransportPipeline | Format-List > "C:\My Documents\Transport Agents.txt"
+```powershell
+Get-TransportPipeline | Format-List > "C:\My Documents\Transport Agents.txt"
+```
 
 ## Comment savoir si cela a fonctionné ?
 

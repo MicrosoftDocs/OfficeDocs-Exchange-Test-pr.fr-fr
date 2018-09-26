@@ -63,11 +63,15 @@ Le choix du serveur d'accès au client sur lequel activer le point de terminaiso
 
 La commande suivante active le point de terminaison du proxy MRS sur un serveur d'accès au client nommé EXCH-SRV-01.
 
-    Set-WebServicesVirtualDirectory -Identity "EXCH-SRV-01\EWS (Default Web Site)" -MRSProxyEnabled $true
+```PowerShell
+Set-WebServicesVirtualDirectory -Identity "EXCH-SRV-01\EWS (Default Web Site)" -MRSProxyEnabled $true
+```
 
 La commande suivante active le point de terminaison du proxy MRS sur tous les serveurs d'accès au client au sein de votre organisation Exchange.
 
-    Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
+```powershell
+Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
+```
 
 > [!IMPORTANT]  
 > Comme indiqué précédemment, le point de terminaison du proxy MRS doit être activé sur chaque serveur d'accès au client au sein de votre organisation. Après avoir ajouté un serveur d'accès au client à votre organisation, exécutez la commande précédente.
@@ -87,18 +91,23 @@ Ou
 
 Exécutez la commande suivante dans l'environnement de ligne de commande :
 
-    Get-WebServicesVirtualDirectory | FL Identity,MRSProxyEnabled
+```powershell
+Get-WebServicesVirtualDirectory | FL Identity,MRSProxyEnabled
+```
 
 Vérifiez que le paramètre *MRSProxyEnabled* est défini sur `True`.
 
 Une autre manière de vérifier que le point de terminaison du proxy MRS est activé consiste à utiliser la cmdlet **Test-MigrationServerAvailability** pour tester la capacité de communiquer avec le serveur distant hébergeant les boîtes aux lettres à déplacer ou, en cas de débarquement de boîtes aux lettres Exchange Online dans votre organisation locale, avec un serveur au sein de votre organisation locale. Pour plus d'informations, consultez la rubrique [Test-MigrationServerAvailability](https://technet.microsoft.com/fr-fr/library/jj219169\(v=exchg.150\)).
 
 L'exemple suivant montre comment tester la connexion au serveur dans la forêt corp.contoso.com.
+
+```PowerShell
+$Credentials = Get-Credential
 ```
-    $Credentials = Get-Credential
+
+```PowerShell
+Test-MigrationServerAvailability -ExchangeRemoteMove -Autodiscover -EmailAddress administrator@corp.contoso.com -Credentials $Credentials
 ```
-```
-    Test-MigrationServerAvailability -ExchangeRemoteMove -Autodiscover -EmailAddress administrator@corp.contoso.com -Credentials $Credentials
-```
+
 Pour que l'exécution de cette commande réussisse, le point de terminaison du proxy MRS soit être activé.
 

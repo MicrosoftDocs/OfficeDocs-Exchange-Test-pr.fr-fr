@@ -47,11 +47,15 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux copies de 
 
 1.  Notez les paramètres d’attente de relecture et de troncation de toutes les copies de la base de données de boîtes aux lettres en cours de déplacement. Vous pouvez obtenir ces informations par le biais de la cmdlet [Get-MailboxDatabase](https://technet.microsoft.com/fr-fr/library/bb124924\(v=exchg.150\)), comme illustré dans l’exemple suivant.
     
-        Get-MailboxDatabase DB1 | Format-List *lag*
+    ```powershell
+    Get-MailboxDatabase DB1 | Format-List *lag*
+    ```
 
 2.  Si l’enregistrement circulaire est activé pour la base de données, il doit être désactivé avant de poursuivre. Vous pouvez désactiver l’enregistrement circulaire pour une base de données de boîtes aux lettres à l’aide de la cmdlet [Set-MailboxDatabase](https://technet.microsoft.com/fr-fr/library/bb123971\(v=exchg.150\)), comme illustré dans l’exemple suivant.
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```powershell
+    Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```
 
 3.  Supprimez toutes les copies de la base de données en cours de déplacement. Pour obtenir la procédure détaillée, voir [Supprimer une copie de base de données de boîtes aux lettres](remove-a-mailbox-database-copy-exchange-2013-help.md). Une fois toutes les copies supprimées, conservez la base de données et les fichiers journaux des transactions de chaque serveur duquel la copie de la base de données a été supprimée en les déplaçant. Ces fichiers sont conservés de façon que les copies de la base de données ne nécessitent aucun réamorçage après leur rajout.
 
@@ -69,16 +73,22 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux copies de 
 
 8.  Sur chaque serveur qui contient une copie de la base de données de boîtes aux lettres en cours de déplacement, exécutez les commandes suivantes pour arrêter et redémarrer les services d’indexation du contenu.
     
-        Net stop MSExchangeFastSearch
-        Net start MSExchangeFastSearch
+    ```powershell
+    Net stop MSExchangeFastSearch
+    Net start MSExchangeFastSearch
+    ```
 
 9.  Vous pouvez éventuellement activer l’enregistrement circulaire à l’aide de la cmdlet [Set-MailboxDatabase](https://technet.microsoft.com/fr-fr/library/bb123971\(v=exchg.150\)), comme illustré dans l’exemple suivant.
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```powershell
+    Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```
 
 10. Reconfigurez toutes les valeurs déjà définies pour le délai d’attente de relecture et le délai d’attente de troncation par le biais de la cmdlet [Set-MailboxDatabaseCopy](https://technet.microsoft.com/fr-fr/library/dd298104\(v=exchg.150\)), comme illustré dans l’exemple suivant.
     
-        Set-MailboxDatabaseCopy DB1\MBX2 -ReplayLagTime 00:15:00
+    ```powershell
+    Set-MailboxDatabaseCopy DB1\MBX2 -ReplayLagTime 00:15:00
+    ```
 
 11. Comme chaque copie doit être ajoutée, il est conseillé de vérifier l’intégrité et l’état d’une copie avant d’ajouter la copie suivante. Vous pouvez vérifier l’intégrité et l’état en :
     
@@ -108,7 +118,9 @@ Pour vérifier que vous avez bien déplacé le chemin d’accès d’une copie d
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour vérifier que la base de données de boîtes aux lettres a bien été créée et qu’elle est intègre :
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```powershell
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```
     
     Le statut et l'état de l'index de contenu doivent être sains.
 

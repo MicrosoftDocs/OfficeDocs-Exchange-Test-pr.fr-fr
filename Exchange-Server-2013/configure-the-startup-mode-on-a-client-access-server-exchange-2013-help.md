@@ -63,9 +63,13 @@ Pour découvrir d'autres tâches de gestion relatives aux serveurs de messagerie
 
 Cet exemple définit le mode Double comme mode de démarrage pour un serveur d'accès au client nommé `UMCallRouter1`.
 
-    Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode Dual
+```powershell
+Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode Dual
+```
 
 Cet exemple définit le mode TLS comme mode de démarrage pour un serveur d'accès au client nommé `UMCallRouter1`.
 
-    Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode TLS
+```powershell
+Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode TLS
+```
 

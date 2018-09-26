@@ -129,7 +129,9 @@ Cet exemple crée un compte d'utilisateur et sa boîte aux lettres pour Pilar Pi
 
 <!-- end list -->
 
-    New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
+```powershell
+New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
+```
 
 Pour obtenir des informations sur la syntaxe et les paramètres, consultez la rubrique [New-Mailbox](https://technet.microsoft.com/fr-fr/library/aa997663\(v=exchg.150\)).
 
@@ -141,7 +143,9 @@ Voici comment vérifier qu'une boîte aux lettres utilisateur a bien été cré�
 
   - Dans l'environnement de ligne de commande, exécutez la commande suivante pour afficher les informations sur la nouvelle boîte aux lettres utilisateur.
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```powershell
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```
 
 ## Créer une boîte pour un utilisateur existant
 
@@ -189,13 +193,17 @@ Vous pouvez également créer des boîtes aux lettres utilisateur pour les utili
 
 Cet exemple permet de créer une boîte aux lettres pour l'utilisateur existant estherv@contoso.com dans la base de données Exchange appelée UsersMailboxDatabase.
 
-    Enable-Mailbox estherv@contoso.com -Database UsersMailboxDatabase
+```powershell
+Enable-Mailbox estherv@contoso.com -Database UsersMailboxDatabase
+```
 
 La cmdlet **Enable-Mailbox** permet d'activer la messagerie de plusieurs utilisateurs. Pour ce faire, il faut envoyer les résultats de la cmdlet **Get-User** vers la cmdlet **Enable-Mailbox**. Lorsque vous exécutez la cmdlet **Get-User**, vous devez renvoyer uniquement les utilisateurs pour lesquels la messagerie n'est pas activée. Pour ce faire, vous devez spécifier la valeur User avec le paramètre *RecipientTypeDetails*. Vous pouvez également limiter les résultats renvoyés à l'aide du paramètre *Filter* pour demander uniquement les utilisateurs répondant aux critères spécifiés. Vous canalisez ensuite les résultats vers la cmdlet **Enable-Mailbox**.
 
 Par exemple, la commande suivante active une boîte aux lettres pour des utilisateurs qui n'en possèdent pas et dont la propriété **UserPrincipalName** possède une valeur. Cela permet de s'assurer qu'un compte système n'est pas converti par inadvertance en boîte aux lettres.
 
-    Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | Enable-Mailbox
+```powershell
+Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | Enable-Mailbox
+```
 
 Pour obtenir des informations sur la syntaxe et les paramètres, consultez les rubriques [Enable-Mailbox](https://technet.microsoft.com/fr-fr/library/aa998251\(v=exchg.150\)) et [Get-User](https://technet.microsoft.com/fr-fr/library/aa996896\(v=exchg.150\)).
 
@@ -209,7 +217,9 @@ Voici comment vérifier que vous avez bien créé une boîte aux lettres pour un
 
   - Dans l'environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher des informations sur le nouvel utilisateur dont la boîte à lettres vient d'être activée.
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```powershell
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```
     
     Notez que la valeur pour la propriété *RecipientTypeDetails* est `UserMailbox`.
 

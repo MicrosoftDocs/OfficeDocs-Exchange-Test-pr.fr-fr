@@ -53,7 +53,9 @@ Pour d'autres tâches de gestion relatives aux stratégies d'adresse de messager
 
 Cet exemple supprime la stratégie d'adresse de messagerie South East Offices.
 
-    Remove-EmailAddressPolicy -Identity "South East Offices"
+```powershell
+Remove-EmailAddressPolicy -Identity "South East Offices"
+```
 
 Tapez **Y** pour confirmer la suppression de la stratégie, puis appuyez sur ENTRÉE.
 

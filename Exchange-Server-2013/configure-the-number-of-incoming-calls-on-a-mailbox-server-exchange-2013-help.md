@@ -51,5 +51,7 @@ Pour d'autres tâches relatives aux serveurs de messagerie unifiée et de boîte
 
 Cet exemple définit le nombre d'appels vocaux, Outlook Voice Access et de télécopie entrants qui peuvent être acceptés par un serveur de boîtes aux lettres nommé `MyMailboxServer1` sur 50.
 
-    Set-UMService -Identity MyMailboxServer1 -MaxCallsAllowed 50
+```powershell
+Set-UMService -Identity MyMailboxServer1 -MaxCallsAllowed 50
+```
 

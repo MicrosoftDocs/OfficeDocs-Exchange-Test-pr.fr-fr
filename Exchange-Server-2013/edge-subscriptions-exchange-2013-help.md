@@ -117,7 +117,9 @@ Pour plus d’informations sur les comptes ESRA, ainsi que leur utilisation pour
 
 Cet exemple abonne un serveur de transport Edge au site spécifié et crée automatiquement le connecteur d’envoi Internet et le connecteur d’envoi du serveur de transport Edge aux serveurs de boîtes aux lettres créés.
 
-    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
+```powershell
+New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
+```
 
 > [!NOTE]
 > Les valeurs par défaut des paramètres <em>CreateInternetSendConnector</em> et <em>CreateInboundSendConnector</em> sont définies sur <code>$true</code> pour les deux. Elles sont présentées ici uniquement à titre d’illustration.
@@ -125,7 +127,9 @@ Cet exemple abonne un serveur de transport Edge au site spécifié et crée aut
 
 Cet exemple exporte un fichier d’abonnement Edge.
 
-    New-EdgeSubscription -FileName "C:\EdgeSubscriptionInfo.xml"
+```powershell
+New-EdgeSubscription -FileName "C:\EdgeSubscriptionInfo.xml"
+```
 
 > [!NOTE]
 > Lorsque la cmdlet <strong>New-EdgeSubscription</strong> est exécutée sur le serveur de transport Edge, vous êtes invité à confirmer les commandes qui seront désactivées et la configuration qui sera remplacée sur le serveur de transport Edge. Pour contourner cette confirmation, vous devez utiliser le paramètre <em>Force</em>. Ce paramètre est utile lorsque vous scriptez la cmdlet <strong>New-EdgeSubscription</strong>. Le paramètre <em>Force</em> permet également de remplacer un fichier existant portant le même nom que le fichier que vous créez lorsque vous réabonnez un serveur de transport Edge.

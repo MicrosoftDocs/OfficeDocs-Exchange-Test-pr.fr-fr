@@ -39,9 +39,13 @@ Vous pouvez utiliser la cmdlet **Set-RemoteDomain** pour configurer les proprié
 
 Cet exemple désactive les rapports de remise dans le domaine distant appelé Contoso. Ce paramètre est activé par défaut.
 
-    Set-RemoteDomain Contoso -DeliveryReportEnabled $false
+```powershell
+Set-RemoteDomain Contoso -DeliveryReportEnabled $false
+```
 
 Dans cet exemple la notification d’échec de remise au domaine distant est désactivée. Ce paramètre est activé par défaut.
 
-    Set-RemoteDomain Contoso -NDREnabled $false
+```powershell
+Set-RemoteDomain Contoso -NDREnabled $false
+```
 

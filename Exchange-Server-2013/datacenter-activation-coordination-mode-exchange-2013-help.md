@@ -61,7 +61,9 @@ L’exécution d’une permutation de centre de données pour les groupes de dis
 
 Le mode de coordination de l’activation du centre de données peut être activé uniquement à l’aide de l’environnement de ligne de commande Exchange Management Shell. Plus spécifiquement, vous pouvez utiliser la cmdlet [Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/fr-fr/library/dd297934\(v=exchg.150\)) pour activer le mode de coordination de l’activation du centre de données, comme illustré dans l’exemple suivant.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG2 -DatacenterActivationMode DagOnly
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG2 -DatacenterActivationMode DagOnly
+```
 
 Dans l’exemple précédent, DAG2 est activé pour le mode de coordination d’activation du centre de données.
 

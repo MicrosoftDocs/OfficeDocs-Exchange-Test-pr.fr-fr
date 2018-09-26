@@ -65,7 +65,9 @@ Pour découvrir d'autres tâches de gestion relatives à la gestion des certific
 
 Cet exemple exporte le certificat possédant l'empreinte numérique A36DE2B9B62980A717EBD0C3052F5F0B08FBFFCC dans un fichier après vous avoir invité à entrer un nom d'utilisateur et un mot de passe
 
-    $file = Export-ExchangeCertificate -Thumbprint A36DE2B9B62980A717EBD0C3052F5F0B08FBFFCC -BinaryEncoded:$true -Password (Get-Credential).password
+```powershell
+$file = Export-ExchangeCertificate -Thumbprint A36DE2B9B62980A717EBD0C3052F5F0B08FBFFCC -BinaryEncoded:$true -Password (Get-Credential).password
+```
 
 Cet exemple effectue les opérations suivantes :
 
@@ -76,12 +78,12 @@ Cet exemple effectue les opérations suivantes :
 3.  Sortie du certificat dans un fichier après avoir entré le nom d'utilisateur et le mot de passe.
 
 <!-- end list -->
+
+```powershell
+$file = Get-ExchangeCertificate -DomainName umcorp.northwindtraders.com | Export-ExchangeCertificate -BinaryEncoded:$true -Password (Get-Credential).password
+Set-Content -Path "d:\umcerts\selfsigned.pfx" -Value $file.FileData =Encoding Byte
 ```
-    $file = Get-ExchangeCertificate -DomainName umcorp.northwindtraders.com | Export-ExchangeCertificate -BinaryEncoded:$true -Password (Get-Credential).password
-```
-```
-    Set-Content -Path "d:\umcerts\selfsigned.pfx" -Value $file.FileData =Encoding Byte
-```
+
 
 ## Utiliser le Centre d'administration Exchange (CAE) pour importer un certificat
 
@@ -95,5 +97,7 @@ Cet exemple effectue les opérations suivantes :
 
 Cet exemple importe un certificat à partir du fichier de certificat d:\\certificates\\exchange\\SelfSignedUMCert.pfx après avoir entré un nom d'utilisateur et un mot de passe.
 
-    Import-ExchangeCertificate -FileData ([Byte[]]$(Get-Content -Path d:\certificates\exchange\SelfSignedUMCert.pfx -Encoding Byte -ReadCount 0)) -Password:(Get-Credential).password
+```powershell
+Import-ExchangeCertificate -FileData ([Byte[]]$(Get-Content -Path d:\certificates\exchange\SelfSignedUMCert.pfx -Encoding Byte -ReadCount 0)) -Password:(Get-Credential).password
+```
 

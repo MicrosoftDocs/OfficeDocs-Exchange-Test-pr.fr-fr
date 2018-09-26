@@ -154,11 +154,15 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 
 Cet exemple bloque toutes les versions d’Outlook antérieures à la version 11.8010.8036.
 
-    Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions "-11.8010.8036"
+```powershell
+Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions "-11.8010.8036"
+```
 
 Cet exemple restaure l’accès à une boîte aux lettres bloquée par une version d’Outlook.
 
-    Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions $null
+```powershell
+Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions $null
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-CASMailbox](https://technet.microsoft.com/fr-fr/library/bb125264\(v=exchg.150\)).
 
@@ -172,7 +176,9 @@ Cet exemple bloque l’accès à la boîte aux lettres d’un serveur d’accès
 > Les valeurs utilisées avec le paramètre <em>BlockedClientVersions</em> sont des exemples. Vous pouvez déterminer les versions correctes du logiciel client en analysant les fichiers journaux d’accès au client RPC situés dans <code>%ExchangeInstallPath%Logging\RPC Client Access</code>.
 
 
-    Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"
+```powershell
+Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"
+```
 
 Pour obtenir une définition détaillée de la syntaxe et des paramètres, voir [Set-RpcClientAccess](https://technet.microsoft.com/fr-fr/library/dd351072\(v=exchg.150\)).
 

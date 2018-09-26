@@ -49,7 +49,9 @@ Pour plus d’informations sur les modèles de détails, consultez la rubrique [
 
 Dans cet exemple, nous montrons comment restaurer le modèle de détails United States English contacts (contacts anglais États-Unis).
 
-    Restore-DetailsTemplate -Identity "en-US\Contact"
+```powershell
+Restore-DetailsTemplate -Identity "en-US\Contact"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Restore-DetailsTemplate](https://technet.microsoft.com/fr-fr/library/bb125188\(v=exchg.150\)).
 

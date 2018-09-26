@@ -59,19 +59,27 @@ Sur l’ordinateur exécutant le rôle serveur de boîtes aux lettres :
 
 1.  Définissez le service Microsoft Exchange IMAP4 pour qu’il démarre automatiquement.
     
-        Set-service msExchangeIMAP4 -startuptype automatic
+    ```powershell
+    Set-service msExchangeIMAP4 -startuptype automatic
+    ```
 
 2.  Démarrez le service Microsoft Exchange IMAP4.
     
-        Start-service msExchangeIMAP4
+    ```powershell
+    Start-service msExchangeIMAP4
+    ```
 
 3.  Définissez le service du serveur principal de Microsoft Exchange IMAP4 pour qu’il démarre automatiquement.
     
-        Set-service msExchangeIMAP4BE -startuptype automatic
+    ```powershell
+    Set-service msExchangeIMAP4BE -startuptype automatic
+    ```
 
 4.  Démarrez le service du serveur principal Microsoft Exchange IMAP4.
     
-        Start-service msExchangeIMAP4BE
+    ```powershell
+    Start-service msExchangeIMAP4BE
+    ```
 
 ## Comment savoir si cela a fonctionné ?
 

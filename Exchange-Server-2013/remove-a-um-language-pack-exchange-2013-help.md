@@ -39,7 +39,9 @@ Pour les tâches supplémentaires concernant les modules linguistiques de messag
 
 Depuis une invite de commandes, exécutez la commande suivante.
 
-    Setup.exe /RemoveUmLanguagePack:<UmLanguagePackName>
+```powershell
+Setup.exe /RemoveUmLanguagePack:<UmLanguagePackName>
+```
 
 Dans la commande précédente, *\<UmLanguagePackName\>* est le nom du module linguistique de messagerie unifiée ; par exemple, fr-FR.
 

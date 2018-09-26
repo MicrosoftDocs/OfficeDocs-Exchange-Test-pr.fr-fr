@@ -63,21 +63,29 @@ Souhaitez-vous rechercher les autres tâches de gestion relatives aux copies de 
 
 Dans cet exemple, nous suspendons la réplication en continue pour la copie de la base de données DB1 hébergée sur le serveur MBX1. Un commentaire facultatif a également été spécifié.
 
-    Suspend-MailboxDatabaseCopy -Identity DB1\MBX1 -SuspendComment "Maintenance on MBX1" -Confirm:$False
+```powershell
+Suspend-MailboxDatabaseCopy -Identity DB1\MBX1 -SuspendComment "Maintenance on MBX1" -Confirm:$False
+```
 
 Dans cet exemple, nous suspendons l’activation pour la copie de la base de données DB2 hébergée sur le serveur MBX2.
 
-    Suspend-MailboxDatabaseCopy -Identity DB2\MBX2 -ActivationOnly -Confirm:$False
+```powershell
+Suspend-MailboxDatabaseCopy -Identity DB2\MBX2 -ActivationOnly -Confirm:$False
+```
 
 ## Utiliser l’environnement de ligne de commande pour reprendre une copie de base de données de boîtes aux lettres
 
 Dans cet exemple, nous reprenons la copie de la base de données DB1 sur le serveur MBX1.
 
-    Resume-MailboxDatabaseCopy -Identity DB1\MBX1
+```powershell
+Resume-MailboxDatabaseCopy -Identity DB1\MBX1
+```
 
 Dans cet exemple, nous reprenons la copie de la base de données DB2 sur le serveur MBX2 pour la réplication uniquement.
 
-    Resume-MailboxDatabaseCopy -Identity DB2\MBX2 -ReplicationOnly
+```powershell
+Resume-MailboxDatabaseCopy -Identity DB2\MBX2 -ReplicationOnly
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -87,5 +95,7 @@ Pour vérifier que vous avez réussi à suspendre ou reprendre la copie d’une 
 
   - Dans l’environnement de ligne de commande Exchange Management Shell, exécutez la commande suivante pour afficher les informations d’état pour une copie de base de données.
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```powershell
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```
 

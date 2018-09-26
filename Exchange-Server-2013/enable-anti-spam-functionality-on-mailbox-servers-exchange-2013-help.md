@@ -53,7 +53,9 @@ Que se passe-t-il si vous installez les agents anti-spam disponibles dans le ser
 
 Exécutez la commande suivante :
 
-    & $env:ExchangeInstallPath\Scripts\Install-AntiSpamAgents.ps1
+```powershell
+& $env:ExchangeInstallPath\Scripts\Install-AntiSpamAgents.ps1
+```
 
 ## Comment savoir si cette étape a fonctionné ?
 
@@ -63,7 +65,9 @@ Vous savez que cette étape fonctionne lorsque le script s'exécute sans erreur 
 
 Exécutez la commande suivante :
 
-    Restart-Service MSExchangeTransport
+```powershell
+Restart-Service MSExchangeTransport
+```
 
 ## Comment savoir si cette étape a fonctionné ?
 
@@ -75,11 +79,15 @@ Vous devez spécifier les adresses IP de tous les serveurs SMTP internes qui doi
 
 Pour ajouter des adresses IP des serveurs SMTP internes sans affecter aucune valeur existante, exécutez la commande suivante :
 
-    Set-TransportConfig -InternalSMTPServers @{Add="<ip address1>","<ip address2>"...}
+```powershell
+Set-TransportConfig -InternalSMTPServers @{Add="<ip address1>","<ip address2>"...}
+```
 
 Cet exemple montre comment ajouter les adresses 10.0.1.10 et 10.0.1.11 d’un serveur SMTP interne à la configuration de transport de votre organisation.
 
-    Set-TransportConfig -InternalSMTPServers @{Add="10.0.1.10","10.0.1.11"}
+```powershell
+Set-TransportConfig -InternalSMTPServers @{Add="10.0.1.10","10.0.1.11"}
+```
 
 ## Comment savoir si cette étape a fonctionné ?
 
@@ -87,7 +95,9 @@ Pour vérifier que vous avez spécifier l'adresse IP avec succès d'au moins un 
 
 1.  Exécutez la commande suivante :
     
-        Get-TransportConfig | Format-List InternalSMTPServers
+    ```powershell
+    Get-TransportConfig | Format-List InternalSMTPServers
+    ```
 
 2.  Vérifiez que l'adresse IP d'au moins un serveur SMTP interne valide est affiché.
 

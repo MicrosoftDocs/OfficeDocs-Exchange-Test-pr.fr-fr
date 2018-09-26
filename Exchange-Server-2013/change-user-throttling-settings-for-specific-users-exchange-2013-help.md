@@ -41,21 +41,26 @@ Pour personnaliser des paramètres de limitation à appliquer à des utilisateur
 
 Cet exemple illustre la création d’une stratégie de limitation utilisateur, autre que celle définie par défaut, intitulée ITStaffPolicy qui peut être associée à des utilisateurs spécifiques. Les paramètres que vous omettez héritent des valeurs de la stratégie de limitation par défaut (GlobalThrottlingPolicy). Lorsque vous créez cette stratégie, vous devez l'associer à des utilisateurs spécifiques.
 
-    New-ThrottlingPolicy -Name ITStaffPolicy -EwsMaxConcurrency 4 -ThrottlingPolicyScope Regular
+```powershell
+New-ThrottlingPolicy -Name ITStaffPolicy -EwsMaxConcurrency 4 -ThrottlingPolicyScope Regular
+```
 
 Dans cet exemple, nous associons un utilisateur dont le nom d’utilisateur est tonysmith à la stratégie de limitation ITStaffPolicy (dont les limites sont plus élevées).
 
-    Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPolicy
+```powershell
+Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPolicy
+```
 
 Il n'est pas nécessaire d'utiliser la cmdlet **Set-ThrottlingPolicyAssociation** pour associer un utilisateur à une stratégie. Les commandes suivantes présentent une nouvelle manière d’associer tonysmith à la stratégie de limitation ITStaffPolicy.
 
-   ```
-        $b = Get-ThrottlingPolicy ITStaffPolicy
-   ```    
 
-   ```
-        Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
-   ```    
+```powershell
+$b = Get-ThrottlingPolicy ITStaffPolicy
+```
+
+```powershell
+Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
+```
 
 Pour plus d’informations sur la syntaxe et les paramètres, consultez les rubriques [New-ThrottlingPolicy](https://technet.microsoft.com/fr-fr/library/dd351045\(v=exchg.150\)) et [Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/fr-fr/library/ff459231\(v=exchg.150\)).
 
@@ -65,19 +70,25 @@ Pour vérifier que la stratégie de limitation Régulier a été correctement cr
 
 1.  Exécutez la commande suivante.
     
-        Get-ThrottlingPolicy | Format-List
+    ```powershell
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 2.  Vérifiez que la stratégie de limitation Régulier que vous venez de créer est répertoriée dans la colonne qui affiche l’objet GlobalThrottlingPolicy.
 
 3.  Exécutez la commande suivante.
     
-        Get-ThrottlingPolicy | Format-List
+    ```powershell
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 4.  Vérifiez que les propriétés associées à la nouvelle stratégie Régulier correspondent à la valeur ou aux valeurs que vous avez configurées.
 
 5.  Exécutez la commande suivante.
     
-        Get-ThrottlingPolicyAssociation
+    ```powershell
+    Get-ThrottlingPolicyAssociation
+    ```
 
 6.  Vérifiez que la nouvelle stratégie Régulier est bien associée à l’utilisateur ou aux utilisateurs auxquels vous l’avez associée.
 

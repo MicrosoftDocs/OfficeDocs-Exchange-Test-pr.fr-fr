@@ -47,7 +47,9 @@ Lorsque vous activez un agent d’extension de cmdlet dans Exchange 2013, l’a
 
 Cet exemple montre comment activer un agent d’extension de cmdlet à l’aide de la cmdlet **Enable-CmdletExtensionAgent**. Vous devez indiquer le nom de l’agent à activer lorsque vous exécutez la cmdlet. Avant d’activer le `Scripting Agent`, assurez-vous d’avoir bien déployé le fichier de configuration `ScriptingAgentConfig.xml` sur tous les serveurs de votre organisation. Si vous ne commencez pas par déployer le fichier de configuration et que vous activez le `Scripting``Agent`, toutes les cmdlets non-**Get** échoueront lors de leur exécution. Cet exemple montre comment activer le `Scripting Agent`.
 
-    Enable-CmdletExtensionAgent "Scripting Agent"
+```powershell
+Enable-CmdletExtensionAgent "Scripting Agent"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Enable-CmdletExtensionAgent](https://technet.microsoft.com/fr-fr/library/dd335192\(v=exchg.150\)).
 
@@ -61,7 +63,9 @@ Lorsque vous désactivez un agent d’extension de cmdlet dans Exchange 2013, l
 
 Pour désactiver un agent d'extension de cmdlet, utilisez la cmdlet **Disable-CmdletExtensionAgent**. Lorsque vous exécutez la cmdlet, indiquez le nom de l'agent que vous voulez désactiver. Cet exemple désactive l'agent `Scripting Agent`.
 
-    Disable-CmdletExtensionAgent "Scripting Agent"
+```powershell
+Disable-CmdletExtensionAgent "Scripting Agent"
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Disable-CmdletExtensionAgent](https://technet.microsoft.com/fr-fr/library/dd298132\(v=exchg.150\)).
 
@@ -75,11 +79,15 @@ L’affichage des agents d’extension de cmdlet vous permet de voir les agents 
 
 Cet exemple indique les détails d’un agent d’extension de cmdlet spécifique à l’aide de la cmdlet **Get-CmdletExtensionAgent**. Dans cet exemple, les détails de `Mailbox Permissions Agent` sont renvoyés.
 
-    Get-CmdletExtensionAgent "Mailbox Permissions Agent"
+```powershell
+Get-CmdletExtensionAgent "Mailbox Permissions Agent"
+```
 
 Dans cet exemple, nous récupérons plusieurs agents d’extension de cmdlet à l’aide de la cmdlet **Get-CmdletExtensionAgent**, puis canalisons la sortie vers la cmdlet **Format-Table**. Cet exemple affiche une liste de tous les agents d’extension de cmdlet, et en utilisant la cmdlet **Format-Table**, les propriétés **Name**, **Enabled** et **Priority** de chaque agent sont affichées dans un tableau.
 
-    Get-CmdletExtensionAgent | Format-Table Name, Enabled, Priority
+```powershell
+Get-CmdletExtensionAgent | Format-Table Name, Enabled, Priority
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-CmdletExtensionAgent](https://technet.microsoft.com/fr-fr/library/dd297946\(v=exchg.150\)).
 
@@ -95,7 +103,9 @@ Le classement des agents va de zéro au nombre maximal d’agents. Plus l’agen
 
 Cet exemple montre comment modifier la priorité d’un agent d’extension de cmdlet à l’aide de la cmdlet **Set-CmdletExtensionAgent**. Dans cet exemple, la priorité de l’`Scripting Agent` est passée à 3.
 
-    Set-CmdletExtensionAgent "Scripting Agent" -Priority 3
+```powershell
+Set-CmdletExtensionAgent "Scripting Agent" -Priority 3
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-CmdletExtensionAgent](https://technet.microsoft.com/fr-fr/library/dd335175\(v=exchg.150\)).
 

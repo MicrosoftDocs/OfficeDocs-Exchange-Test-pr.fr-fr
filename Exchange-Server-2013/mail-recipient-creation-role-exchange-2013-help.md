@@ -45,7 +45,9 @@ Ce rôle est attribué à un ou plusieurs groupes de rôles par défaut. Pour pl
 
 Si vous souhaitez afficher une liste de groupes de rôles, d’utilisateurs ou de groupes de sécurité universels attribués à ce rôle, utilisez la commande suivante.
 
-    Get-ManagementRoleAssignment -Role "<role name>"
+```powershell
+Get-ManagementRoleAssignment -Role "<role name>"
+```
 
 ## Attributions de rôles normales et de délégation
 

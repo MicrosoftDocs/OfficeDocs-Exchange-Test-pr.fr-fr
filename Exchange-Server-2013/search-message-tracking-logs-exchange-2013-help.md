@@ -57,21 +57,29 @@ La cmdlet **Get-MessageTrackingLog** dans l'environnement de ligne de commande E
 
 Pour rechercher des entrées correspondant à des événements spécifiques dans le journal de suivi des messages, utilisez la syntaxe suivante :
 
-    Get-MessageTrackingLog [-Server <ServerIdentity.] [-ResultSize <Integer> | Unlimited] [-Start <DateTime>] [-End <DateTime>] [-EventId <EventId>] [-InternalMessageId <InternalMessageId>] [-MessageId <MessageId>] [-MessageSubject <Subject>] [-Recipients <RecipientAddress1,RecipientAddress2...>] [-Reference <Reference>] [-Sender <SenderAddress>]
+```powershell
+Get-MessageTrackingLog [-Server <ServerIdentity.] [-ResultSize <Integer> | Unlimited] [-Start <DateTime>] [-End <DateTime>] [-EventId <EventId>] [-InternalMessageId <InternalMessageId>] [-MessageId <MessageId>] [-MessageSubject <Subject>] [-Recipients <RecipientAddress1,RecipientAddress2...>] [-Reference <Reference>] [-Sender <SenderAddress>]
+```
 
 Pour afficher les 1 000 entrées du journal de suivi des messages les plus récentes sur le serveur, exécutez la commande suivante :
 
-    Get-MessageTrackingLog
+```powershell
+Get-MessageTrackingLog
+```
 
 Cet exemple recherche dans les journaux de suivi des messages sur le serveur local toutes les entrées enregistrées entre le 28/03/2013 à 8h et le 28/03/2013 à 17h pour tous les événements **FAIL** envoyés par pat@contoso.com.
 
-    Get-MessageTrackingLog -ResultSize Unlimited -Start "3/28/2013 8:00AM" -End "3/28/2013 5:00PM" -EventId "Fail" -Sender "pat@contoso.com"
+```powershell
+Get-MessageTrackingLog -ResultSize Unlimited -Start "3/28/2013 8:00AM" -End "3/28/2013 5:00PM" -EventId "Fail" -Sender "pat@contoso.com"
+```
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour contrôler la sortie d'une recherche dans le journal de suivi des messages
 
 Utilisez la syntaxe suivante.
 
-    Get-MessageTrackingLog <SearchFilters> | <Format-Table | Format-List> [<FieldNames>] [<OutputFileOptions>]
+```powershell
+Get-MessageTrackingLog <SearchFilters> | <Format-Table | Format-List> [<FieldNames>] [<OutputFileOptions>]
+```
 
 Cet exemple effectue une recherche dans les journaux de suivi des messages à l'aide des critères de recherche suivants :
 
@@ -85,7 +93,9 @@ Cet exemple effectue une recherche dans les journaux de suivi des messages à l'
 
 <!-- end list -->
 
-    Get-MessageTrackingLog -EventId Send | Format-List Send*,Recipient* > "D:\Send Search.txt"
+```powershell
+Get-MessageTrackingLog -EventId Send | Format-List Send*,Recipient* > "D:\Send Search.txt"
+```
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour rechercher dans les journaux de suivi des messages les entrées de messages sur plusieurs serveurs
 
@@ -93,7 +103,9 @@ Généralement, la valeur dans le champ d'en-tête **MessageID:**  demeure const
 
 Pour rechercher toutes les entrées des journaux de suivi des messages correspondant à un message spécifique sur tous les serveurs de boîtes aux lettres, utilisez la syntaxe suivante :
 
-    Get-ExchangeServer | where {$_.isHubTransportServer -eq $true -or $_.isMailboxServer -eq $true} | Get-MessageTrackingLog -MessageId <MessageID> | Select-Object <CommaSeparatedFieldNames> | Sort-Object -Property <FieldName>
+```powershell
+Get-ExchangeServer | where {$_.isHubTransportServer -eq $true -or $_.isMailboxServer -eq $true} | Get-MessageTrackingLog -MessageId <MessageID> | Select-Object <CommaSeparatedFieldNames> | Sort-Object -Property <FieldName>
+```
 
 Cet exemple recherche dans les journaux de suivi des messages sur tous les serveurs de boîtes aux lettres Exchange 2013 à l'aide des critères de recherche suivants :
 
@@ -105,7 +117,9 @@ Cet exemple recherche dans les journaux de suivi des messages sur tous les serve
 
 <!-- end list -->
 
-    Get-ExchangeServer | where {$_.isHubTransportServer -eq $true -or $_.isMailboxServer -eq $true} | Get-MessageTrackingLog -MessageId ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com | Select-Object Timestamp,ServerHostname,ClientHostname,Source,EventId,Recipients | Sort-Object -Property Timestamp
+```powershell
+Get-ExchangeServer | where {$_.isHubTransportServer -eq $true -or $_.isMailboxServer -eq $true} | Get-MessageTrackingLog -MessageId ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com | Select-Object Timestamp,ServerHostname,ClientHostname,Source,EventId,Recipients | Sort-Object -Property Timestamp
+```
 
 ## Utiliser le Centre d'administration Exchange (CAE) pour rechercher dans les journaux de suivi des messages
 

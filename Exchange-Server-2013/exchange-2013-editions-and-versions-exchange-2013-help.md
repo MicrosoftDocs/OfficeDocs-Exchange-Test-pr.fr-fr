@@ -37,7 +37,9 @@ Pour obtenir une liste des versions Exchange 2013 et des informations sur le t�
 
 Pour afficher le numéro de version de la version de Microsoft Exchange 2013 que vous exécutez, exécutez la commande ci-après dans l’environnement de ligne de commande Exchange Management Shell.
 
-    Get-ExchangeServer | fl name,edition,admindisplayversion
+```powershell
+Get-ExchangeServer | fl name,edition,admindisplayversion
+```
 
 ## Types de licence Exchange 2013
 

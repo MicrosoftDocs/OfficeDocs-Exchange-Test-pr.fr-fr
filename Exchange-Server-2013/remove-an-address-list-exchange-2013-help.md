@@ -49,7 +49,9 @@ Pour les autres tâches de gestion relatives aux listes d’adresses, consultez 
 
 Cet exemple supprime la liste d’adresses Sales Department, qui ne contient pas de listes d’adresses enfant.
 
-    Remove-AddressList -Identity "Sales Department"
+```powershell
+Remove-AddressList -Identity "Sales Department"
+```
 
 Tapez **Y** pour confirmer la suppression de cette liste d’adresses, puis appuyez sur ENTRÉE.
 
@@ -59,7 +61,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Cet exemple supprime la liste d’adresses parent Departments et toutes ses listes d’adresses enfant.
 
-    Remove-AddressList -Identity Departments -Recursive
+```powershell
+Remove-AddressList -Identity Departments -Recursive
+```
 
 Tapez **Y** pour confirmer la suppression de la liste d’adresses parent et de ses listes d’adresses enfant, puis appuyez sur ENTRÉE.
 

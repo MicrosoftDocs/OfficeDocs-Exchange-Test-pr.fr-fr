@@ -63,9 +63,13 @@ Pour d'autres tâches de gestion relatives aux serveurs de messagerie unifiée e
 
 Cet exemple définit le mode de démarrage d'un serveur de boîtes aux lettres nommé `MyUMServer1` sur Double.
 
-    Set-UMService -Identity MyUMServer1 -UMStartUpMode Dual
+```powershell
+Set-UMService -Identity MyUMServer1 -UMStartUpMode Dual
+```
 
 Cet exemple définit le mode de démarrage d'un serveur de boîtes aux lettres nommé `MyUMServer1` sur TLS.
 
-    Set-UMService -Identity MyUMServer1 -UMStartUpMode TLS
+```powershell
+Set-UMService -Identity MyUMServer1 -UMStartUpMode TLS
+```
 

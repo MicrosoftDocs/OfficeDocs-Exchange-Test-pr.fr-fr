@@ -51,9 +51,13 @@ Pour d'autres tâches de gestion relatives aux serveurs de boîtes aux lettres, 
 
 Cet exemple autorise un serveur de boîtes aux lettres `UMMBXr-05x.contoso.com` à répondre à des appels vocaux, de télécopie, de standard automatique et Outlook Voice Access entrants à partir de passerelles VoIP, de PBX IP, de PBX compatibles SIP et de contrôleurs SBC, et à écrire les modifications dans le Registre du serveur UMMBX-05x.
 
-    Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Active -LocalOnly
+```powershell
+Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Active -LocalOnly
+```
 
 Cet exemple empêche un serveur de boîtes aux lettres `UMMBX-05x.contoso.com` de répondre à des appels vocaux, de télécopie, de standard automatique et Outlook Voice Access entrants à partir de passerelles VoIP, de PBX IP, de PBX compatibles SIP et de contrôleurs SBC, et d'écrire les modifications uniquement dans Active Directory.
 
-    Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
+```powershell
+Set-ServerComponentState -Component UnifiedMessaging -Identity UMMBX-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
+```
 

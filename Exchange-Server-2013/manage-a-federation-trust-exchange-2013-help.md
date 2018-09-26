@@ -77,11 +77,15 @@ Pour connaître les autres tâches de gestion relatives à la fédération, cons
 
 1.  Cet exemple permet de supprimer le domaine service.contoso.com de l’approbation de fédération.
     
-        Remove-FederatedDomain -DomainName service.contoso.com
+    ```powershell
+    Remove-FederatedDomain -DomainName service.contoso.com
+    ```
 
 2.  Cet exemple permet d’ajouter le domaine marketing.contoso.com à l’approbation de fédération.
     
-        Add-FederatedDomain -DomainName marketing.contoso.com
+    ```powershell
+    Add-FederatedDomain -DomainName marketing.contoso.com
+    ```
 
 Pour des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques [Remove-FederatedDomain](https://technet.microsoft.com/fr-fr/library/dd298128\(v=exchg.150\)) et [Add-FederatedDomain](https://technet.microsoft.com/fr-fr/library/dd351208\(v=exchg.150\)).
 
@@ -91,31 +95,41 @@ Exécutez les commandes d’environnement suivantes pour gérer d’autres aspec
     
     Cet exemple affiche l’OrgID fédéré de l’organisation Exchange et les informations connexes, comme les domaines fédérés et l’état.
     
-        Get-FederatedOrganizationIdentifier
+    ```powershell
+    Get-FederatedOrganizationIdentifier
+    ```
 
 2.  **Afficher les certificats de l’approbation de fédération**
     
     Cet exemple affiche les certificats précédent, actuel et suivant utilisés par l’approbation de fédération « Authentification Azure AD ».
     
-        Get-FederationTrust "Azure AD authentication" | Select Org*certificate
+    ```powershell
+    Get-FederationTrust "Azure AD authentication" | Select Org*certificate
+    ```
 
 3.  **Vérifier l’état des certificats de fédération**
     
     Cet exemple affiche l’état des certificats de fédération sur tous les serveurs de boîtes aux lettres et d’accès au client dans l’organisation.
     
-        Test-FederationTrustCertificate
+    ```powershell
+    Test-FederationTrustCertificate
+    ```
 
 4.  **Configurer l'approbation de fédération pour utiliser un certificat comme certificat suivant**
     
     Cet exemple configure l’approbation de fédération « Authentification Azure AD » de sorte qu’elle utilise le certificat doté d’une empreinte comme certificat suivant. Une fois le certificat déployé sur l’ensemble des serveurs Exchange de l’organisation, vous pouvez utiliser le commutateur *PublishCertificate* pour configurer l’approbation de fédération afin qu’elle utilise ce certificat comme certificat actuel.
     
-        Set-FederationTrust "Azure AD authentication" -Thumbprint AC00F35CBA8359953F4126E0984B5CCAFA2F4F17
+    ```powershell
+    Set-FederationTrust "Azure AD authentication" -Thumbprint AC00F35CBA8359953F4126E0984B5CCAFA2F4F17
+    ```
 
 5.  **Configurer l'approbation de fédération pour utiliser le certificat suivant comme certificat actuel**
     
     Cet exemple configure l’approbation de fédération « Authentification Azure AD » de sorte qu’elle utilise le certificat suivant comme certificat actuel et la publie dans le système d’authentification Azure AD.
     
-        Set-FederationTrust "Azure AD authentication" -PublishFederationCertificate
+    ```powershell
+    Set-FederationTrust "Azure AD authentication" -PublishFederationCertificate
+    ```
     
     > [!CAUTION]
     > Avant de configurer l’approbation de fédération afin qu’elle utilise le certificat suivant comme certificat de fédération actuel, assurez-vous que le certificat est déployé sur tous les serveurs Exchange de votre organisation. Utilisez la cmdlet <a href="https://technet.microsoft.com/fr-fr/library/dd335228(v=exchg.150)">Test-FederationTrustCertificate</a> pour vérifier l’état de déploiement du certificat.
@@ -125,7 +139,9 @@ Exécutez les commandes d’environnement suivantes pour gérer d’autres aspec
     
     Cet exemple actualise le certificat et les métadonnées de fédération du système d’authentification Azure AD pour l’approbation de fédération « Authentification Azure AD ».
     
-        Set-FederationTrust "Azure AD authentication" -RefreshMetadata
+    ```powershell
+    Set-FederationTrust "Azure AD authentication" -RefreshMetadata
+    ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez les rubriques suivantes :
 
@@ -145,11 +161,15 @@ Pour le vérifier, procédez comme suit :
 
 1.  Exécutez la commande de l’environnement de ligne de commande suivante pour vérifier les informations d’approbation de la fédération.
     
-        Get-FederationTrust | format-list
+    ```powershell
+    Get-FederationTrust | format-list
+    ```
 
 2.  Exécutez la commande de l’environnement de ligne de commande suivante pour vérifier si les informations de la fédération peuvent être récupérées à partir de votre organisation. Par exemple, vérifiez que les domaines sales.contoso.com et marketing.contoso.com sont renvoyés dans le paramètre *DomainNames*.
     
-        Get-FederationInformation -DomainName <your primary sharing domain>
+    ```powershell
+    Get-FederationInformation -DomainName <your primary sharing domain>
+    ```
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.

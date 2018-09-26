@@ -49,11 +49,15 @@ Pour plus de sécurité, vous pouvez d'abord copier les messages vers une autre 
 
 Cet exemple permet d'effectuer une recherche dans la boîte aux lettres d'April Stewart au niveau des messages dont le champ Objet contient l'expression « Your bank statement » (Votre relevé de compte) et de consigner les résultats de la recherche dans le dossier SearchAndDeleteLog de la boîte aux lettres de l'administrateur. Les messages ne sont ni copiés ni supprimés de la boîte aux lettres cible.
 
-    Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
+```powershell
+Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
+```
 
 Cet exemple permet d’effectuer une recherche dans toutes les boîtes aux lettres de l’organisation au niveau des messages comprenant n’importe quel type de fichier joint qui contient le mot « Trojan » dans le nom de fichier et envoie un message de journal à la boîte aux lettres de l’administrateur.
 
-    Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:trojan* -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
+```powershell
+Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:trojan* -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Search-Mailbox](https://technet.microsoft.com/fr-fr/library/dd298173\(v=exchg.150\)).
 
@@ -67,15 +71,21 @@ Cet exemple permet d'effectuer une recherche dans la boîte aux lettres d'April�
 > Quand vous utilisez la cmdlet <strong>Search-Mailbox</strong> avec le commutateur <em>DeleteContent</em>, les messages sont définitivement supprimés de la boîte aux lettres source. Avant de supprimer définitivement des messages, nous vous conseillons d'utiliser le commutateur <em>LogOnly</em> pour générer un journal des messages identifiés lors de la recherche avant qu'ils ne soient supprimés ou de copier les messages vers une autre boîte aux lettres avant leur suppression de la boîte aux lettres source.
 
 
-    Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -DeleteContent
+```powershell
+Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -DeleteContent
+```
 
 Cet exemple permet d'effectuer une recherche dans la boîte aux lettres d'April Stewart au niveau des messages dont le champ Objet contient l'expression « Your bank statement », de copier les résultats de la recherche dans le dossier AprilStewart-DeletedMessages de la boîte aux lettres BackupMailbox et de supprimer les messages de la boîte aux lettres d'April.
 
-    Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -TargetMailbox "BackupMailbox" -TargetFolder "AprilStewart-DeletedMessages" -LogLevel Full -DeleteContent
+```powershell
+Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -TargetMailbox "BackupMailbox" -TargetFolder "AprilStewart-DeletedMessages" -LogLevel Full -DeleteContent
+```
 
 Cet exemple permet d’effectuer une recherche dans toutes les boîtes aux lettres de l’organisation au niveau des messages ayant pour objet « Download this file » et les supprime définitivement.
 
-    Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery 'Subject:"Download this file"' -DeleteContent
+```powershell
+Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery 'Subject:"Download this file"' -DeleteContent
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Search-Mailbox](https://technet.microsoft.com/fr-fr/library/dd298173\(v=exchg.150\)).
 

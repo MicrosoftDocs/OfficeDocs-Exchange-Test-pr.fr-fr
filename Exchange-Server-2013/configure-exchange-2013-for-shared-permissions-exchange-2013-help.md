@@ -79,8 +79,10 @@ Pour configurer les autorisations partagées dans le groupe de rôles Gestion de
 
 1.  Ajoutez les attributions de rôle de délégation des rôles Création du destinataire de messagerie et Création du groupe de sécurité et appartenance au groupe de rôles Gestion de l’organisation en exécutant les commandes suivantes.
     
-        New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Organization Management" -Delegating
-        New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management" -Delegating
+    ```powershell
+    New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Organization Management" -Delegating
+    New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management" -Delegating
+    ```
     
     > [!NOTE]
     > Le rôle de gestion des rôles doit être attribué au groupe de rôles (dans cette procédure, le groupe de rôle des administrateurs Active Directory) qui dispose des attributions de rôle de délégation pour les rôles Création du destinataire de messagerie et Création du groupe de sécurité et appartenance au groupe de rôles pour qu’il puisse exécuter la cmdlet <strong>New-ManagementRoleAssignment</strong>. L’utilisateur de rôle autorisé à déléguer le rôle de gestion des rôles doit attribuer ce rôle au groupe de rôles des administrateurs Active Directory.
@@ -88,12 +90,16 @@ Pour configurer les autorisations partagées dans le groupe de rôles Gestion de
 
 2.  Ajoutez les attributions de rôle ordinaire du rôle Création du destinataire de messagerie aux groupes de rôles Gestion de l’organisation et Gestion des destinataires en exécutant les commandes suivantes.
     
-        New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Organization Management"
-        New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Recipient Management"
+    ```powershell
+    New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Organization Management"
+    New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Recipient Management"
+    ```
 
 3.  Ajoutez une attribution de rôle ordinaire du rôle Création du groupe de sécurité et appartenance au groupe de rôles Gestion de l’organisation en exécutant la commande suivante.
     
-        New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
+    ```powershell
+    New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
+    ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ManagementRoleAssignment](https://technet.microsoft.com/fr-fr/library/dd335193\(v=exchg.150\)).
 
@@ -109,11 +115,15 @@ Pour supprimer les autorisations fractionnées liées à Exchange des administra
 
 1.  Au moyen de la commande suivante, supprimez les attributions de rôle ordinaire et de rôle de délégation qui attribuent le rôle Création du destinataire de messagerie au groupe de rôles ou au groupe de sécurité universelle qui contient comme membres les administrateurs Active Directory. Cette commande utilise le groupe de rôles des administrateurs Active Directory à titre d’exemple. Le commutateur *WhatIf* vous permet d’afficher les attributions de rôles qui seront supprimées. Supprimez le commutateur *WhatIf*, puis réexécutez la commande pour supprimer les attributions de rôles.
     
-        Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where { $_.RoleAssigneeName -EQ "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+    ```powershell
+    Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where { $_.RoleAssigneeName -EQ "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+    ```
 
 2.  A l’aide de la commande suivante, supprimez les attributions de rôle ordinaire et de rôle de délégation qui attribuent le rôle Création du groupe de sécurité et appartenance au groupe de rôles ou au groupe de sécurité universelle qui contient comme membres les administrateurs Active Directory. Cette commande utilise le groupe de rôles des administrateurs Active Directory à titre d’exemple. Le commutateur *WhatIf* vous permet d’afficher les attributions de rôles qui seront supprimées. Supprimez le commutateur *WhatIf*, puis réexécutez la commande pour supprimer les attributions de rôles.
     
-        Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where { $_.RoleAssigneeName -EQ "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+    ```powershell
+    Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where { $_.RoleAssigneeName -EQ "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+    ```
 
 3.  Facultatif. Pour supprimer l’ensemble des autorisations Exchange associées aux administrateurs Active Directory, vous pouvez supprimer le groupe de rôles ou le groupe de sécurité universelle dont ils sont membres. Pour plus d’informations sur la suppression d’un groupe de rôles, voir [Gérer des groupes de rôles](manage-role-groups-exchange-2013-help.md).
 
@@ -133,13 +143,17 @@ Pour passer des autorisations fractionnées Active Directory aux autorisations p
 
 1.  Dans une invite de commandes Windows, exécutez la commande suivante du support d’installation d’Exchange 2013 pour désactiver les autorisations fractionnées Active Directory.
     
-        setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+    ```powershell
+    setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+    ```
 
 2.  Depuis l’environnement de ligne de commande Exchange Management Shell, exécutez les commandes suivantes pour ajouter des attributions de rôles ordinaires entre les rôles Création du destinataire de messagerie et Création du groupe de sécurité et gestion et les groupes de rôles Gestion de l’organisation et Gestion des destinataires.
     
-        New-ManagementRoleAssignment "Mail Recipient Creation_Organization Management" -Role "Mail Recipient Creation" -SecurityGroup "Organization Management"
-        New-ManagementRoleAssignment "Security Group Creation and Membership_Org Management" -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
-        New-ManagementRoleAssignment "Mail Recipient Creation_Recipient Management" -Role "Mail Recipient Creation" -SecurityGroup "Recipient Management"
+    ```powershell
+    New-ManagementRoleAssignment "Mail Recipient Creation_Organization Management" -Role "Mail Recipient Creation" -SecurityGroup "Organization Management" 
+    New-ManagementRoleAssignment "Security Group Creation and Membership_Org Management" -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
+    New-ManagementRoleAssignment "Mail Recipient Creation_Recipient Management" -Role "Mail Recipient Creation" -SecurityGroup "Recipient Management"
+    ```
 
 3.  Redémarrez les serveurs Exchange 2013 dans votre organisation.
     

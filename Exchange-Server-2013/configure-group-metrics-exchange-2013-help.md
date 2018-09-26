@@ -45,11 +45,15 @@ Vous pouvez activer ou désactiver la génération des mesures de groupe sur un 
 
 Pour activer ou désactiver la génération des mesures de groupe sur un serveur de boîtes aux lettres, exécutez la commande suivante :
 
-    Set-MailboxServer <ServerIdentity> -ForceGroupMetricsGeneration <$true | $false>
+```powershell
+Set-MailboxServer <ServerIdentity> -ForceGroupMetricsGeneration <$true | $false>
+```
 
 Cet exemple active la génération des mesures de groupe sur le serveur de boîtes aux lettres MBX1.
 
-    Set-MailboxServer MBX1 -ForceGroupMetricsGeneration $true
+```powershell
+Set-MailboxServer MBX1 -ForceGroupMetricsGeneration $true
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -57,7 +61,9 @@ Pour vérifier que vous avez correctement activé ou désactivé la génération
 
 1.  Exécutez la commande suivante :
     
-        Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
+    ```powershell
+    Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
+    ```
 
 2.  Vérifiez que le paramètre affiché est le paramètre que vous avez configuré.
 

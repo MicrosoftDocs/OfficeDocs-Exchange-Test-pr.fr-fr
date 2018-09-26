@@ -45,11 +45,15 @@ Vous pouvez configurer le nombre maximum d’expéditeurs approuvés et d’exp�
 
 Pour configurer le nombre maximum d’expéditeurs approuvés et d’expéditeurs bloqués, exécutez la commande suivante :
 
-    Set-Mailbox <MailboxIdentity> -MaxSafeSenders <Integer> -MaxBlockedSenders <Integer>
+```powershell
+Set-Mailbox <MailboxIdentity> -MaxSafeSenders <Integer> -MaxBlockedSenders <Integer>
+```
 
 Cet exemple configure la boîte aux lettres john@contoso.com avec 2 000 expéditeurs approuvés et 200 expéditeurs bloqués.
 
-    Set-Mailbox john@contoso.com -MaxSafeSenders 2000 -MaxBlockedSenders 200
+```powershell
+Set-Mailbox john@contoso.com -MaxSafeSenders 2000 -MaxBlockedSenders 200
+```
 
 ## Comment savoir si cela a fonctionné ?
 
@@ -57,7 +61,9 @@ Pour vérifier que vous avez bien configuré les limites de collection des liste
 
 1.  Exécutez la commande suivante :
     
-        Get-Mailbox <Identity> | Format-List Name,Max*Senders
+    ```powershell
+    Get-Mailbox <Identity> | Format-List Name,Max*Senders
+    ```
 
 2.  Vérifiez que les valeurs affichées correspondent aux valeurs que vous avez configurées.
 
@@ -67,7 +73,9 @@ Dans Exchange 2013, l’agrégation de listes fiables est exécutée automatiqu
 
 Cet exemple de code écrit la liste des expéditeurs approuvés pour la boîte aux lettres john@contoso.com sur Active Directory.
 
-    Update-Safelist john@contoso.com -Type SafeSenders
+```powershell
+Update-Safelist john@contoso.com -Type SafeSenders
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Update-SafeList](https://technet.microsoft.com/fr-fr/library/bb125034\(v=exchg.150\)).
 
@@ -79,11 +87,15 @@ Pour vérifier que vous avez bien configuré l’agrégation de listes fiables, 
 
 1.  Exécutez la commande suivante :
     
-        Get-ContentFilterConfig | Format-List Enabled
+    ```powershell
+    Get-ContentFilterConfig | Format-List Enabled
+    ```
 
 2.  Si la sortie indique le paramètre *Enabled* est défini sur `True`, le filtrage de contenu est activé. Dans le cas contraire, exécutez la commande suivante pour activer le filtrage du contenu et l’agent de filtrage du contenu sur le serveur Exchange :
     
-        Set-ContentFilterConfig -Enabled $true
+    ```powershell
+    Set-ContentFilterConfig -Enabled $true
+    ```
 
 ## Étape 2 : (Facultatif) Utilisez l’Éditeur ADSI pour vérifier la réplication des données d’agrégation de listes fiables sur les serveurs de transport Edge
 

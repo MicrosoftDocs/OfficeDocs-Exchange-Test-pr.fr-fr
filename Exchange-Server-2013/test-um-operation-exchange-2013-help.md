@@ -45,15 +45,21 @@ Pour d’autres tâches de gestion relatives aux serveurs d’accès au client e
 
 Cet exemple exécute des tests de connectivité et de fonctionnement sur le serveur de boîtes aux lettres local, puis affiche les informations de connectivité VoIP (Voice over IP).
 
-    Test-UMConnectivity
+```powershell
+Test-UMConnectivity
+```
 
 Cet exemple indique comment tester la capacité d’un serveur d’accès au client local à écouter les requêtes SIP entrantes non chiffrées sur le port TCP 5060.
 
-    Test-UMConnectivity -ListenPort 5060
+```powershell
+Test-UMConnectivity -ListenPort 5060
+```
 
 Cet exemple indique comment tester la capacité d’un serveur d’accès au client local à écouter les requêtes SIP entrantes chiffrées sur le port TCP 5061.
 
-    Test-UMConnectivity -ListenPort 5061
+```powershell
+Test-UMConnectivity -ListenPort 5061
+```
 
 > [!NOTE]
 > Utilisez le mode 1 lorsque le paramètre <code>-UMIPGateway</code> n’est pas spécifié.

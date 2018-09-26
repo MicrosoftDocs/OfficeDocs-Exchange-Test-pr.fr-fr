@@ -49,11 +49,15 @@ Pour plus d’informations sur la journalisation circulaire et la CRCL, consulte
 
 Cet exemple active la journalisation circulaire de la base de données DB1.
 
-    Set-MailboxDatabase DB1 -CircularLoggingEnabled $True
+```powershell
+Set-MailboxDatabase DB1 -CircularLoggingEnabled $True
+```
 
 Cet exemple désactive la journalisation circulaire de la base de données DB1.
 
-    Set-MailboxDatabase DB1 -CircularLoggingEnabled $False
+```powershell
+Set-MailboxDatabase DB1 -CircularLoggingEnabled $False
+```
 
 Voir [Set-MailboxDatabase](https://technet.microsoft.com/fr-fr/library/bb123971\(v=exchg.150\)) pour découvrir les autres paramètres de base de données de boîte aux lettres que vous pouvez configurer.
 

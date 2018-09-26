@@ -61,23 +61,30 @@ Pour les autres tâches de gestion relatives aux standards automatiques de messa
 
 Cet exemple importe le fichier de message d'accueil welcomegreeting.wav à partir de d:\\UMPrompts dans le plan de numérotation de messagerie unifiée `MyUMDialPlan`.
 
-    [byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
-    Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```powershell
+[byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
+Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```
 
 Cet exemple importe le fichier de message d'accueil welcomegreeting.wav à partir de d:\\UMPrompts dans le standard automatique de messagerie unifiée `MyUMAutoAttendant`.
 
-    [byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
-    Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```powershell
+[byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
+Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```
 
 ## Utiliser l'environnement de ligne de commande Exchange Management Shell pour exporter des messages d'accueil, des annonces, des menus et des invites personnalisés à partir de plans de numérotation et de standards automatiques de messagerie unifiée
 
 Cet exemple exporte le message d'accueil du plan de numérotation de messagerie unifiée `MyUMDialPlan` et l'enregistre en tant que fichier welcomegreeting.wav.
 
-    $prompt = Export-UMPrompt -PromptFileName "customgreeting.wav�? -UMDialPlan MyUMDialPlan
-    set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```powershell
+$prompt = Export-UMPrompt -PromptFileName "customgreeting.wav�? -UMDialPlan MyUMDialPlan
+set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```
 
 Cet exemple exporte le message d'accueil pendant les heures d'ouverture utilisé pour le standard automatique de messagerie unifiée `MYUMAutoAttendant` et l'enregistre en tant que fichier BusinessHoursWelcomeGreeting.wav.
 
-    $prompt = Export-UMPrompt -BusinessHoursWelcomeGreeting -UMAutoAttendant MyUMAutoAttendant
-    set-content -Path "d:\UMPrompts\BusinessHoursWelcomeGreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```powershell$prompt = Export-UMPrompt -BusinessHoursWelcomeGreeting -UMAutoAttendant MyUMAutoAttendant
+set-content -Path "d:\UMPrompts\BusinessHoursWelcomeGreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```
 

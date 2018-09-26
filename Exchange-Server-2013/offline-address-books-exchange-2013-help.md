@@ -41,7 +41,9 @@ Considérations relatives aux carnets d’adresses en mode hors connexion
 
 Dans Exchange 2007 et Exchange 2010, utilisez la cmdlet **Move-OfflineAddressBook** pour déplacer la génération de carnet d’adresses en mode hors connexion vers un autre serveur de messagerie. Exchange 2013 ne prend en charge que le carnet d’adresses en mode hors connexion (version 4). Il s’agit de la même version de carnet d’adresses en mode hors connexion qui était la valeur par défaut dans Exchange 2010. Vous ne pouvez pas configurer Exchange 2013 pour générer d’autres versions de carnet d’adresses en mode hors connexion et la génération de carnet d’adresses en mode hors connexion intervient sur ​​le serveur de boîtes aux lettres dans lequel réside la boîte aux lettres de l’organisation. En conséquence, pour déplacer la génération de carnet d’adresses en mode hors connexion dans Exchange 2013, vous devez déplacer la boîte aux lettres de l’organisation. Vous ne pouvez déplacer la génération de carnet d'adresses en mode hors connexion vers une autre base de données de boîte aux lettres Exchange 2013. Vous ne pouvez déplacer la génération de carnet d'adresses en mode hors connexion vers une version antérieure d'Exchange. Pour trouver la boîte aux lettres de l’organisation du carnet d’adresses en mode hors connexion Exchange 2013, exécutez la commande suivante de l’environnement de ligne de commande Exchange Management Shell :
 
-    Get-Mailbox -Arbitration | where {$_.PersistedCapabilities -like "*oab*"}
+```powershell
+Get-Mailbox -Arbitration | where {$_.PersistedCapabilities -like "*oab*"}
+```
 
 Vous pouvez ensuite utiliser les cmdlets **MoveRequest** pour déplacer la boîte aux lettres.
 

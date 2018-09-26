@@ -61,21 +61,23 @@ Pour vous connecter à un serveur SMTP de destination via Telnet sur le port 25
 
 4.  Tapez le nom du domaine pour lequel vous voulez rechercher l'enregistrement MX. Par exemple, pour rechercher l'enregistrement MX du domaine fabrikam.com, tapez **fabrikam.com.**, puis appuyez sur Entrée.
     
-    > [!NOTE]
+    > [!NOTE]  
     > Le point final ( <strong>.</strong> ) indique un nom de domaine complet. L'utilisation du point final empêche les suffixes DNS par défaut configurés sur votre réseau d'être ajoutés de façon involontaire au nom de domaine.
     
     Les données en sortie de la commande sont similaires à ce qui suit :
     
-        fabrikam.com mx preference=10, mail exchanger = mail1.fabrikam.com
-        fabrikam.com mx preference=20, mail exchanger = mail2.fabrikam.com
-        mail1.fabrikam.com internet address = 192.168.1.10
-        mail2 fabrikam.com internet address = 192.168.1.20
+    ```powershell
+    fabrikam.com mx preference=10, mail exchanger = mail1.fabrikam.com
+    fabrikam.com mx preference=20, mail exchanger = mail2.fabrikam.com
+    mail1.fabrikam.com internet address = 192.168.1.10
+    mail2 fabrikam.com internet address = 192.168.1.20
+    ```
     
     Vous pouvez utiliser les noms d'hôte ou adresses IP associés aux enregistrements MX comme serveur SMTP de destination. Une valeur préférée inférieure indique un serveur SMTP préféré. Vous pouvez utiliser plusieurs enregistrements MX et des valeurs préférées différentes pour l'équilibrage de charge et la tolérance de panne.
 
 5.  Quand vous êtes prêt à fermer la session Nslookup, tapez **exit**, puis appuyez sur Entrée.
 
-> [!NOTE]
+> [!NOTE]  
 > Les restrictions de pare-feu et de proxy Internet imposées sur le réseau interne de votre organisation peuvent vous empêcher d'utiliser l'outil Nslookup pour interroger les serveurs DNS publics sur Internet.
 
 
@@ -95,11 +97,16 @@ Dans cet exemple, les valeurs suivantes sont utilisées :
 
   - **Corps du message**   Ceci est un message de test
 
-> [!NOTE]
+> [!NOTE]  
 > <ul>
 > <li><p>Les commandes du client Telnet ne tiennent pas compte de la casse. Les verbes de la commande SMTP sont écrits en majuscules par souci de clarté.</p></li>
 > <li><p>Vous ne pouvez pas utiliser la touche Retour arrière après vous être connecté au serveur SMTP de destination dans la session Telnet. En cas d'erreur lors de la saisie d'une commande SMTP, vous devez appuyer sur ENTRÉE puis taper la commande à nouveau. Les commandes SMTP inconnues ou les erreurs de syntaxe entraînent l'affichage d'un message d'erreur similaire à ce qui suit :</p>
-<pre><code>500 5.3.3 Unrecognized command</code></pre></li></ul>
+>
+> ```powershell
+> 500 5.3.3 Unrecognized command
+> ```
+> </LI></UL>
+
 
 1.  À l'invite de commandes, tapez **telnet**, puis appuyez sur Entrée. Cette commande ouvre la session Telnet.
 
@@ -117,7 +124,9 @@ Dans cet exemple, les valeurs suivantes sont utilisées :
 
 8.  Tapez **DATA**, puis appuyez sur Entrée. Vous recevez une réponse similaire à ce qui suit :
     
-        354 Start mail input; end with <CLRF>.<CLRF>
+    ```powershell
+    354 Start mail input; end with <CLRF>.<CLRF>
+    ```
 
 9.  Tapez **Subject: Test depuis Contoso**, puis appuyez sur ENTRÉE.
 
@@ -127,11 +136,15 @@ Dans cet exemple, les valeurs suivantes sont utilisées :
 
 12. Appuyez sur Entrée, tapez un point ( **.** ), puis appuyez sur Entrée. Vous recevez une réponse similaire à ce qui suit :
     
-        250 2.6.0 <GUID> Queued mail for delivery
+    ```powershell
+    250 2.6.0 <GUID> Queued mail for delivery
+    ```
 
 13. Pour vous déconnecter du serveur SMTP de destination, tapez **QUIT**, puis appuyez sur Entrée. Vous recevez une réponse similaire à ce qui suit :
     
-        221 2.0.0 Service closing transmission channel
+    ```powershell
+    221 2.0.0 Service closing transmission channel
+    ```
 
 14. Pour fermer la session Telnet, tapez **quit**, puis appuyez sur Entrée.
 
@@ -147,7 +160,7 @@ Cette section fournit des informations sur les réponses qui peuvent être gén�
 
   - RCPT TO:kate@fabrikam.com NOTIFY=success,failure
     
-    > [!NOTE]
+    > [!NOTE]  
     > Les codes de réponse SMTP à 3 chiffres définis dans RFC 2821 sont les mêmes pour tous les serveurs de messagerie SMTP. Ces descriptions peuvent légèrement varier pour certains serveurs de messagerie SMTP.
 
 
@@ -177,7 +190,7 @@ Cette section fournit des informations sur les réponses qui peuvent être gén�
 
 **Raisons possibles de l'échec**   Le nom de domaine comporte des caractères non valides. Il peut aussi y avoir des restrictions de connexion sur le serveur SMTP de destination.
 
-> [!NOTE]
+> [!NOTE]  
 > EHLO est le verbe ESMTP (Extended Simple Message Transfer Protocol) défini dans RFC 2821. Les serveurs ESMTP peuvent annoncer leurs capacités lors de la connexion initiale. Ces capacités incluent la taille de message acceptée maximale, ainsi que leurs méthodes d'authentification prises en charge. HELO est l'ancien verbe SMTP défini dans RFC 821. La plupart des serveurs de messagerie SMTP prennent en charge ESMTP et EHLO.
 
 
@@ -200,4 +213,3 @@ Cette section fournit des informations sur les réponses qui peuvent être gén�
 **Réponse en cas d'échec**   `550 5.1.1 User unknown`
 
 **Raisons possibles de l'échec**   Le destinataire spécifié n'existe pas dans l'organisation.
-

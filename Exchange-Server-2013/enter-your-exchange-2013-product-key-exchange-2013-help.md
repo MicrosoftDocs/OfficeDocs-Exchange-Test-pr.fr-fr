@@ -79,7 +79,9 @@ Cet exemple utilise la cmdlet **set-ExchangeServer** pour saisir la clé de prod
 > Vous pouvez réexécuter cette commande sur le même serveur pour le mettre à niveau de la licence Standard Edition à la licence Enterprise Edition.
 
 
-    Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa
+```powershell
+Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-ExchangeServer](https://technet.microsoft.com/fr-fr/library/bb123716\(v=exchg.150\)).
 
@@ -105,9 +107,13 @@ Pour vérifier via l’environnement de ligne de commande Exchange Management 
 
 2.  Exécutez la commande suivante pour afficher l’état de la licence d’un serveur Exchange donné.
     
-        Get-ExchangeServer ExServer01 | Format-Table Edition,*Trial*
+    ```powershell
+    Get-ExchangeServer ExServer01 | Format-Table Edition,*Trial*
+    ```
 
 3.  (Facultatif) Exécutez la commande suivante pour afficher l’état des licences de tous les serveurs Exchange de votre organisation.
     
-        Get-ExchangeServer | Format-Table Name, Edition, *Trial* -Auto
+    ```powershell
+    Get-ExchangeServer | Format-Table Name, Edition, *Trial* -Auto
+    ```
 

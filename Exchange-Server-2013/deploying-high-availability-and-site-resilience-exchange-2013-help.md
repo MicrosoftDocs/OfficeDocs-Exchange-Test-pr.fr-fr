@@ -138,11 +138,15 @@ Comme le montrait le tableau précédent, les cartes des réseaux de réplicatio
 
 Pour configurer le routage des cartes de réseau de réplication sur MBX1 et MBX2, la commande suivante a été exécutée sur chaque serveur.
 
-    netsh interface ipv4 add route 10.0.2.0/24 <NetworkName> 10.0.1.254
+```powershell
+netsh interface ipv4 add route 10.0.2.0/24 <NetworkName> 10.0.1.254
+```
 
 Pour configurer le routage des cartes de réseau de réplication sur MBX3 et MBX4, la commande suivante a été exécutée sur chaque serveur.
 
-    netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
+```powershell
+netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
+```
 
 Les paramètres réseau supplémentaires suivants ont également été configurés :
 
@@ -168,11 +172,15 @@ L’administrateur a décidé de créer un script d’interface de ligne de comm
 
 Les commandes utilisées dans le script sont les suivantes :
 
-    New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer CAS1 -WitnessDirectory C:\DAGWitness\DAG1.contoso.com -DatabaseAvailabilityGroupIPAddresses 192.168.1.8,192.168.2.8
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer CAS1 -WitnessDirectory C:\DAGWitness\DAG1.contoso.com -DatabaseAvailabilityGroupIPAddresses 192.168.1.8,192.168.2.8
+```
 
 La commande précédente crée le groupe de disponibilité de base de données DAG1, configure CAS1 comme serveur témoin, configure un répertoire témoin spécifique (C:\\DAGWitness\\DAG1.contoso.com), puis définit deux adresses IP pour le groupe de disponibilité de base de données (une pour chaque sous-réseau du réseau MAPI).
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGWitness\DAG1.contoso.com -AlternateWitnessServer CAS4
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGWitness\DAG1.contoso.com -AlternateWitnessServer CAS4
+```
 
 La commande précédente configure DAG1 pour qu’il utilise un serveur témoin de remplacement de CAS4, ainsi qu’un répertoire témoin de remplacement sur CAS4 qui utilise le même chemin d’accès que celui configuré sur CAS1.
 
@@ -180,14 +188,18 @@ La commande précédente configure DAG1 pour qu’il utilise un serveur témoin 
 > L’utilisation d’un chemin d’accès identique n’est pas obligatoire. Contoso a choisi cette option pour standardiser la configuration de son organisation.
 
 
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX3
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX2
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX4
+```powershell
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX3
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX2
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX4
+```
 
 Les commandes précédentes ajoutent chaque serveur de boîtes aux lettres au groupe de disponibilité de base de données, un par un. Elles installent également le composant Clustering avec basculement Windows sur chaque serveur de boîtes aux lettres (s’il n’est pas encore installé), créent un cluster de basculement et rattachent chaque serveur de boîtes aux lettres au nouveau cluster.
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```
 
 La commande précédente active le mode DAC pour le groupe de disponibilité de base de données.
 
@@ -209,39 +221,47 @@ Pour créer cette configuration, l’administrateur exécute plusieurs commandes
 
 Sur MBX1, exécutez les commandes suivantes :
 
-    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX2
-    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX4
-    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -ReplayLagTime 3.00:00:00 -SeedingPostponed
-    Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -SuspendComment "Seed from MBX4" -Confirm:$False
-    Update-MailboxDatabaseCopy -Identity DB1\MBX3 -SourceServer MBX4
-    Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -ActivationOnly
+```powershell
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX2
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX4
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -ReplayLagTime 3.00:00:00 -SeedingPostponed
+Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -SuspendComment "Seed from MBX4" -Confirm:$False
+Update-MailboxDatabaseCopy -Identity DB1\MBX3 -SourceServer MBX4
+Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -ActivationOnly
+```
 
 Sur MBX2, exécutez les commandes suivantes :
 
-    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX1
-    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX3
-    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ReplayLagTime 3.00:00:00 -SeedingPostponed
-    Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -SuspendComment "Seed from MBX3" -Confirm:$False
-    Update-MailboxDatabaseCopy -Identity DB2\MBX4 -SourceServer MBX3
-    Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -ActivationOnly
+```powershell
+Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX1
+Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX3
+Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ReplayLagTime 3.00:00:00 -SeedingPostponed
+Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -SuspendComment "Seed from MBX3" -Confirm:$False
+Update-MailboxDatabaseCopy -Identity DB2\MBX4 -SourceServer MBX3
+Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -ActivationOnly
+```
 
 Sur MBX3, exécutez les commandes suivantes :
 
-    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX4
-    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX2
-    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -SeedingPostponed
-    Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -SuspendComment "Seed from MBX2" -Confirm:$False
-    Update-MailboxDatabaseCopy -Identity DB3\MBX1 -SourceServer MBX2
-    Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -ActivationOnly
+```powershell
+Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX4
+Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX2
+Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -SeedingPostponed
+Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -SuspendComment "Seed from MBX2" -Confirm:$False
+Update-MailboxDatabaseCopy -Identity DB3\MBX1 -SourceServer MBX2
+Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -ActivationOnly
+```
 
 Sur MBX4, exécutez les commandes suivantes :
 
-    Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX3
-    Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX1
-    Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX2 -ReplayLagTime 3.00:00:00 -SeedingPostponed
-    Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -SuspendComment "Seed from MBX1" -Confirm:$False
-    Update-MailboxDatabaseCopy -Identity DB4\MBX2 -SourceServer MBX1
-    Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -ActivationOnly
+```powershell
+Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX3
+Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX1
+Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX2 -ReplayLagTime 3.00:00:00 -SeedingPostponed
+Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -SuspendComment "Seed from MBX1" -Confirm:$False
+Update-MailboxDatabaseCopy -Identity DB4\MBX2 -SourceServer MBX1
+Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -ActivationOnly
+```
 
 Dans les exemples précédents de la cmdlet **Add-MailboxDatabaseCopy**, le paramètre *ActivationPreference* n’était pas spécifié. La tâche incrémente automatiquement le numéro de préférences d’activation à chaque copie ajoutée. Le numéro de préférence 1 est toujours attribué à la base de données d’origine. Le numéro de préférence 2 est attribué automatiquement à la première copie ajoutée par la cmdlet **Add-MailboxDatabaseCopy**. Si aucune copie n’est supprimée, le numéro de préférence 3 est automatiquement attribué à la prochaine copie ajoutée, et ainsi de suite. Dans les exemples précédents, le numéro de préférence 2 est donc attribué à la copie passive dans le même centre de données que la copie active ; le numéro de préférence 3 est attribué à la copie passive non retardée dans le centre de données distant et le numéro de préférence 4 est attribué à la copie passive retardée dans le centre de données distant.
 

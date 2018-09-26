@@ -73,7 +73,9 @@ Une fois votre connecteur d'envoi créé, créez un connecteur d'envoi dans la s
 
 Cet exemple utilise le script Enable-CrossForestConnector.ps1 dans l'environnement de ligne de commande Exchange Management Shell pour définir des autorisations sur le connecteur d'envoi à utiliser dans une topologie inter-forêts.
 
-    .\Enable-CrossForestConnector.ps1 -Connector "Cross-Forest" -user "ANONYMOUS LOGON"
+```powershell
+.\Enable-CrossForestConnector.ps1 -Connector "Cross-Forest" -user "ANONYMOUS LOGON"
+```
 
 ## Comment savoir si cela a fonctionné ?
 

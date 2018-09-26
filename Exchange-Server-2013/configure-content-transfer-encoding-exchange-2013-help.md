@@ -105,21 +105,29 @@ Pour plus d’informations sur les domaines distants, consultez la rubrique [Dom
 
 Pour configurer la méthode de codage de transfert de contenu pour l’organisation, exécutez la commande suivante :
 
-    Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets <Integer>
+```powershell
+Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets <Integer>
+```
 
 Par exemple, pour définir la méthode de codage de transfert à Base64, exécutez la commande suivante :
 
-    Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets 2
+```powershell
+Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets 2
+```
 
 ## Utiliser l’environnement de ligne de commande Exchange Management Shell pour configurer la méthode de codage de transfert de contenu pour un domaine distant
 
 Pour configurer la méthode de codage de transfert de contenu pour l’ensemble des destinataires dans un domaine distant, exécutez la commande suivante :
 
-    Set-RemoteDomain -ByteEncoderTypeFor7BitCharsets <Value>
+```powershell
+Set-RemoteDomain -ByteEncoderTypeFor7BitCharsets <Value>
+```
 
 Par exemple, pour définir la méthode de codage de transfert à Base64, exécutez la commande suivante :
 
-    Set- RemoteDomain -ByteEncoderTypeFor7BitCharsets UseBase64
+```powershell
+Set- RemoteDomain -ByteEncoderTypeFor7BitCharsets UseBase64
+```
 
 ## Comment savoir si cela a fonctionné ?
 

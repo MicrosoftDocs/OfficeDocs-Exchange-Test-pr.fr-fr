@@ -41,13 +41,17 @@ Pour en savoir plus sur les boîtes aux lettres supprimées (récupérables) et 
 
   - Exécutez la commande suivante pour vérifier que la boîte aux lettres supprimée (récupérable) à laquelle vous souhaitez connecter un compte d’utilisateur existe toujours dans la base de données de boîtes aux lettres et qu’elle n’est pas désactivée :
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,DisconnectReason,DisconnectDate
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,DisconnectReason,DisconnectDate
+    ```
     
     La boîte aux lettres supprimée (récupérable) doit exister dans la base de données de boîtes aux lettres et la valeur de la propriété *DisconnectReason* doit être `SoftDeleted`. Si la boîte aux lettres a été purgée de la base de données, la commande ne renvoie aucun résultat.
     
     Vous pouvez également exécuter la commande suivante pour afficher toutes les boîtes aux lettres supprimées (récupérables) de votre organisation :
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | fl DisplayName,DisconnectReason,DisconnectDate
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | fl DisplayName,DisconnectReason,DisconnectDate
+    ```
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
@@ -61,15 +65,21 @@ Une fois que vous avez restauré une boîte aux lettres supprimée (récupérabl
 
 Pour créer une demande de restauration de boîte aux lettres, vous devez utiliser le nom complet, le GUID de la boîte aux lettres ou le nom unique hérité de la boîte aux lettres supprimée (récupérable). Utilisez la cmdlet **Get-MailboxStatistics** pour afficher les valeurs des propriétés **DisplayName**, **MailboxGuid** et **LegacyDN** de la boîte aux lettres supprimée (récupérable) à restaurer. Par exemple, exécutez la commande suivante pour renvoyer ces informations sur toutes les boîtes aux lettres désactivées et supprimées (récupérables) de votre organisation :
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "SoftDeleted"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "SoftDeleted"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```
 
 Cet exemple montre comment restaurer une boîte aux lettres supprimée (récupérable), qui est identifiée par le nom complet dans le paramètre *SourceStoreMailbox* et située dans la base de données de boîtes aux lettres MBXDB01, dans la boîte aux lettres cible appelée Debra Garcia. Le paramètre *AllowLegacyDNMismatch* est utilisé de sorte à pouvoir restaurer la boîte aux lettres source dans une boîte aux lettres ne possédant pas la même valeur de nom unique hérité que celle de la boîte aux lettres supprimée (récupérable).
 
-    New-MailboxRestoreRequest -SourceStoreMailbox "Debra Garcia" -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```powershell
+New-MailboxRestoreRequest -SourceStoreMailbox "Debra Garcia" -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```
 
 Cet exemple montre comment restaurer la boîte aux lettres d’archivage supprimée (récupérable) de Pilar Pinilla, identifiée par le GUID de boîte aux lettres, dans sa boîte aux lettres d’archivage actuelle. Le paramètre *AllowLegacyDNMismatch* n’est pas nécessaire, car une boîte aux lettres principale et sa boîte aux lettres d’archivage correspondante comportent le même nom unique hérité.
 
-    New-MailboxRestoreRequest -SourceStoreMailbox dc35895a-a628-4bba-9aa9-650f5cdb9ae7 -SourceDatabase MBXDB02 -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```powershell
+New-MailboxRestoreRequest -SourceStoreMailbox dc35895a-a628-4bba-9aa9-650f5cdb9ae7 -SourceDatabase MBXDB02 -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-MailboxRestoreRequest](https://technet.microsoft.com/fr-fr/library/ff829875\(v=exchg.150\)).
 
