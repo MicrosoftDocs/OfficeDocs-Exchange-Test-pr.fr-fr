@@ -225,7 +225,7 @@ Pour toutes les limites de taille de message, vous devez définir des valeurs su
 
   - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013[Raccourcis clavier dans le Centre d’administration Exchange](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md).
 
-> [!TIP]
+> [!TIP]  
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages <a href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</a>, et <a href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</a>.
 
 
@@ -233,8 +233,10 @@ Pour toutes les limites de taille de message, vous devez définir des valeurs su
 
 1.  Ouvrez les fichiers web.config appropriés dans le bloc-notes. Par exemple, pour ouvrir les fichiers web.config pour les clients Services Web Exchange, exécutez les commandes suivantes :
     
-        Notepad %ExchangeInstallPath%ClientAccess\exchweb\ews\web.config
-        Notepad %ExchangeInstallPath%FrontEnd\HttpProxy\ews\web.config
+    ```powershell
+    Notepad %ExchangeInstallPath%ClientAccess\exchweb\ews\web.config
+    Notepad %ExchangeInstallPath%FrontEnd\HttpProxy\ews\web.config
+    ```
 
 2.  Recherchez les clés pertinentes dans les fichiers web.config appropriés, comme décrit dans les tableaux présentés plus haut dans la rubrique. Par exemple, pour les clients Services Web Exchange, recherchez la clé *maxAllowedContentLength* dans les deux fichiers, ainsi que les 14 instances de la valeur `maxReceivedMessageSize="67108864"` dans le fichier `web.config` sur les serveurs de boîte aux lettres.
     

@@ -129,7 +129,10 @@ Pour recréer les groupes de rôles intégrés (autres que le groupe de rôles G
 
 4.  Pour chaque groupe de rôles, autre que le groupe de rôles Gestion de l’organisation, procédez de la façon suivante.
     
+    ```powershell
         $RoleGroup = Get-RoleGroup <name of role group to re-create>
+    ```    
+    
     ```powershell
     New-RoleGroup "<role group name> - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
     ```
